@@ -141,8 +141,16 @@ jobs:
           if not locales or locales[0] != 'en':
               raise SystemExit('Expected en to be the first Docusaurus locale')
 
-          chunks = [{'chunk': '00-en', 'locales': 'en'}]
           translated_locales = locales[1:]
+          default_chunk_locales = ['en']
+          # Docusaurus treats a single --locale build as a standalone-domain
+          # build and does not add locale segments to generated alternate URLs.
+          # Include one translated locale with English so the default pages keep
+          # working language-switcher and hreflang links in the assembled site.
+          if translated_locales:
+              default_chunk_locales.append(translated_locales.pop(0))
+
+          chunks = [{'chunk': '00-en', 'locales': ' '.join(default_chunk_locales)}]
           for index in range(0, len(translated_locales), chunk_size):
               chunk_number = (index // chunk_size) + 1
               chunk_locales = translated_locales[index:index + chunk_size]
