@@ -4,7 +4,7 @@ title: مەشغۇلات - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# مەشغۇلات: update_network {#action-updatenetwork}
+# مەشغۇلات: update_network
 
 مەۋجۇت تور يېڭىلانغاندىن كېيىن ئىجرا بولىدۇ.
 

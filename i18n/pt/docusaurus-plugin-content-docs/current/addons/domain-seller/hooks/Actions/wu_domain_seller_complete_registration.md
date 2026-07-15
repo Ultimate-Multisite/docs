@@ -4,7 +4,7 @@ title: Ação - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Ação: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Ação: wu_domain_seller_complete_registration
 
 Dispara quando um pagamento transita para um estado que deve acionar o registo do domínio.
 

@@ -4,7 +4,7 @@ title: Filter - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 క్రాస్-డోమైన్ సింగిల్-సైన్-ఆన్ (single-sign-on) సామర్థ్యాన్ని ఎనేబుల్/డిసేబుల్ చేయడానికి ఉపయోగిస్తారు.
 

@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Szűrő: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Szűrő: wu_post_count_statuses
 
 Ez a szűrő lehetővé teszi a plugin fejlesztők számára, hogy megváltoztassák, hogy melyik poszt státuszt kell számolni. Alapértelmezés szerint a közzétett és a magán posztokat számolja.
 

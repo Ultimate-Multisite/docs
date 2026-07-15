@@ -3,7 +3,7 @@ title: Produk Domain dan Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk Domain dan Harga {#domain-products-and-pricing}
+# Produk Domain dan Harga
 
 Produk domain adalah cara Anda mengontrol penetapan harga, TLD, privasi WHOIS, dan pemilihan penyedia. Setiap produk domain adalah produk standar Ultimate Multisite dengan tab tambahan **Pengaturan Domain** (Domain Settings).
 

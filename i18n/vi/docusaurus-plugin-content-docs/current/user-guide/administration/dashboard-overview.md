@@ -3,7 +3,7 @@ title: Tổng quan Bảng điều khiển
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Tổng quan về Dashboard {#dashboard-overview}
+# Tổng quan về Dashboard
 
 Ultimate Multisite có một **Dashboard** riêng nằm trong menu Ultimate Multisite, đồng thời cũng thêm các widget vào Network Dashboard. Bài viết này sẽ giới thiệu những gì bạn sẽ thấy ở cả hai nơi.
 

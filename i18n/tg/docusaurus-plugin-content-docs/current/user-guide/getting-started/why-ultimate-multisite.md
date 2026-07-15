@@ -3,7 +3,7 @@ title: Чӣ тавр Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Азчаи Ultimate Multisite {#why-ultimate-multisite}
+# Азчаи Ultimate Multisite
 
 Агар шумо ба ин мақола омада шудан, эҳтимол мехоҳед ки ин плагин метавонад ҳалли мушкилоти шумо бошад ва ғайра. Мо ин матн охир аз ҷониби шумо ба ҷавобҳои лозимӣ расонида шавад.
 

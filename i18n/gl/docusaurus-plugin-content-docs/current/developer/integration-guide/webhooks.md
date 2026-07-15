@@ -3,7 +3,7 @@ title: Xestión de webhooks
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Xestión de webhooks {#webhook-handling}
+# Xestión de webhooks
 
 Crea puntos de conexión de webhook personalizados para recibir eventos de servizos externos e sincronizar datos con Ultimate Multisite.
 

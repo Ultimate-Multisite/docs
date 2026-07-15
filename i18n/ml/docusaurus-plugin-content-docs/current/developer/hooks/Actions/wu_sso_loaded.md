@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded {#action-wussoloaded}
+# Action: wu_sso_loaded
 
 ആവശ്യമെങ്കിൽ പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് അധിക ഹുക്കുകൾ (hooks) ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

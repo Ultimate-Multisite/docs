@@ -3,7 +3,7 @@ title: 'Összeépítés 13.: Skálázás'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesson 13: Skálázás {#lesson-13-scaling-up}
+# Lesson 13: Skálázás
 
 Egy működő platformot és fizetős ügyfeleket tartunk. Ez a rész a következőképpen mutatja be, hogyan lehet egy kis vállalkozást fenntartható üzletre növelni – az infrastruktúra skálázása, az üzemeltetés automatizálása és a befizetett bevétel növelése az ügyfél pereme.
 

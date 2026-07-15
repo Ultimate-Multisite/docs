@@ -3,7 +3,7 @@ title: Socruithe Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Socruithe Gratis AI Agent {#gratis-ai-agent-settings}
+# Socruithe Gratis AI Agent
 
 Soláthraíonn an scáileán **Socruithe → Ardleibhéal** in Gratis AI Agent cumraíocht ar leibhéal riarthóra le haghaidh comhtháthuithe inneall cúil. Déanann an leathanach seo doiciméadú ar chur ar aghaidh aiseolais, eochracha soláthraithe cuardaigh, socrú seirbhíse bainistithe Superdav, rialtáin Google Calendar, socruithe SMS TextBee, agus bratacha gnéithe ar fud an líonra.
 

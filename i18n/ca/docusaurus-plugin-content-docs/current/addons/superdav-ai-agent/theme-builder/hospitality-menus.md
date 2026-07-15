@@ -3,7 +3,7 @@ title: Menús d'hospitalitat
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menús de Hostaleria {#hospitality-menus}
+# Menús de Hostaleria
 
 La característica **Hospitality Menus** te permite al Theme Builder generar e incrustar pàgines de menús estructurades de comida y bebida directament en el teu site WordPress.
 

@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Filter: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Filter: wu_get_migration_steps
 
 ഡെവലപ്പർമാർക്കും ആഡ്-ഓണുകൾക്കും പുതിയ മൈഗ്രേഷൻ സ്റ്റെപ്പുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

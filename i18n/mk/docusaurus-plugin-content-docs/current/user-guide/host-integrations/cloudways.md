@@ -3,7 +3,7 @@ title: Интеграција со Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Интеграција со Cloudways {#cloudways-integration}
+# Интеграција со Cloudways
 
 ## Преглед {#overview}
 Cloudways е управување облачно хостинг платформа која ви овозможува да го разместите WordPress сайтовите на различни облачни провајдери како DigitalOcean, AWS, Google Cloud и повеќе. Ова интегрира автоматско синхронизирање на домените и управување со SSL сертификатите помеѓу Ultimate Multisite и Cloudways.

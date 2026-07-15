@@ -3,7 +3,7 @@ title: Agallamh Lorgaidh
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Agallamh Lorgachaidh {#discovery-interview}
+# Agallamh Lorgachaidh
 
 Is e an **Agallamh Lorgachaidh** a’ chiad cheum ann am pròiseas dealbhaidh Theme Builder. Cruinnichidh e fiosrachadh mun làrach agad, mun ghnìomhachas agad, agus mu na roghainnean dealbhaidh agad gus theme phearsanta a chruthachadh.
 

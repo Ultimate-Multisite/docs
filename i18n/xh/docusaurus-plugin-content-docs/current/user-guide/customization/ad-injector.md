@@ -3,7 +3,7 @@ title: Isifaki seeNtengiso
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ukubeka iintengiso kuthungelwano lwakho nge-Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ukubeka iintengiso kuthungelwano lwakho nge-Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector yi-**add-on yasimahla** ekunika izixhobo zokubeka iintengiso kwiiplani zakho ngqo kwiphepha lazo lokuhlela.
 

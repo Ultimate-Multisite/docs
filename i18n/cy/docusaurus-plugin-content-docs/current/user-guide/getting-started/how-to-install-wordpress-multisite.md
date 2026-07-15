@@ -3,7 +3,7 @@ title: Sutaliad yr WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Sut yn Installio WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Sut yn Installio WordPress Multisite?
 
 Mae WordPress Multisite yn sylwch i'n gael rheol o wefan ar gyfer ystod unig. Mae hyn yn ffeithau wedi'i cyfathoghio, ond nid yw'n weithredol yn ddefnyddiol yn ddefnyddiol yn ddefnyddiol.
 

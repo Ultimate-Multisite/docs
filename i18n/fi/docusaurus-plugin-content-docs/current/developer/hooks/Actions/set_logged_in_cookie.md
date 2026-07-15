@@ -4,7 +4,7 @@ title: Toiminto - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Toiminto: set_logged_in_cookie {#action-setloggedincookie}
+# Toiminto: set_logged_in_cookie
 
 Käynnistyy välittömästi ennen kuin sisäänkirjautuneen todennuseväste asetetaan.
 

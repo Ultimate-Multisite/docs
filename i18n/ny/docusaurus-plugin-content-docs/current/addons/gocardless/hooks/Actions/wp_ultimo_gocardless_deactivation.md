@@ -4,7 +4,7 @@ title: Zochita - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Chochita: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Chochita: wp_ultimo_gocardless_deactivation
 
 Lolani mbali zina za pulagini kulumikiza machitidwe awo ochotsa kuyatsa
 

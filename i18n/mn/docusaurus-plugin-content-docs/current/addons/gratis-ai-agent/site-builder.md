@@ -3,7 +3,7 @@ title: Сайт бүтээгчийн зохион удирдлага v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0-д танилцуулагдсан) нь олон алхамт вэбсайт бүтээхийг ажиллуулдаг хөдөлгүүр юм. Та agent-аас "ресторантын вэбсайт бүтээ" эсвэл "блогтой портфолио үүсгэ" гэж хүсэхэд, orchestrator нь тэр өндөр түвшний зорилгыг бүтэцтэй **төлөвлөгөө** болгон задалж, түүнийг биелүүлэхэд хэрэгтэй plugin-уудыг илрүүлж, алхам бүрийг дарааллаар нь гүйцэтгэн, явцыг хянаж, алдаанаас бие даан сэргэдэг.
 

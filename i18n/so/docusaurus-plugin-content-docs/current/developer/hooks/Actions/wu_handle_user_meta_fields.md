@@ -4,7 +4,7 @@ title: Fal - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Ficil: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Ficil: wu_handle_user_meta_fields
 
 U oggolow horumariyeyaasha plugin inay xogta meta ee isticmaale u kaydiyaan siyaabo kala duwan haddii ay u baahdaan.
 

@@ -4,7 +4,7 @@ title: Harakat - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Amal: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Amal: wp_ultimo_gocardless_load
 
 Barcha bog‘liqliklar yuklanganda ishga tushadi
 

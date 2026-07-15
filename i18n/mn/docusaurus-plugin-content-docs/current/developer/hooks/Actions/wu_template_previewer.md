@@ -4,7 +4,7 @@ title: Үйлдэл - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Үйлдэл: wu_template_previewer {#action-wutemplatepreviewer}
+# Үйлдэл: wu_template_previewer
 
 Загвар урьдчилан харагчийн контекст дотор байх үед ажиллана.
 

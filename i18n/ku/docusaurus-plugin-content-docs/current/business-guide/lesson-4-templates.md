@@ -3,7 +3,7 @@ title: 'Ders 4: Avakirina Şablonên Nişeyê'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ders 4: Avakirina Şablonên Nîş {#lesson-4-building-niche-templates}
+# Ders 4: Avakirina Şablonên Nîş
 
 Şablon navenda pêşniyara nirxa nîşa te ne. Xwediyê stûdyoyek fitness ku qeyd dibe û malperek dibîne ku jixwe wek malperek fitness dixuye -- bi demjimêrên dersan, profîlên rahêneran, û wêneyên rast -- pir zêdetir îhtîmal e ku bimîne, ji kesê ku kenaveke vala dibîne.
 

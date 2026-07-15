@@ -3,7 +3,7 @@ title: Gestionarea e-mailurilor de sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestionarea emailurilor de sistem {#managing-system-emails}
+# Gestionarea emailurilor de sistem
 
 Ultimate Multisite trimite diverse emailuri de sistem pentru evenimente precum confirmările de înregistrare, chitanțele de plată și modificările abonamentului. Poți personaliza aceste șabloane de email pentru a se potrivi cu brandul tău.
 

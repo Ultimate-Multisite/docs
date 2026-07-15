@@ -3,7 +3,7 @@ title: Ìṣàwárí àti Rípò Aifọwọyi nínú Àwọn Template Ojúlé
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ṣíṣe Àwárí àti Ríròpo Laifọwọyi nínú Àwọn Template Site (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Ṣíṣe Àwárí àti Ríròpo Laifọwọyi nínú Àwọn Template Site (v2)
 
 _**Ìkọ́ni yìí nílò WP UItimo ẹ̀yà 2.x.**_
 

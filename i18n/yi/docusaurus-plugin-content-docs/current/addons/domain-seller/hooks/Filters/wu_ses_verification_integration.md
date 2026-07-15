@@ -4,7 +4,7 @@ title: פֿילטער - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# פֿילטער: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# פֿילטער: wu_ses_verification_integration
 
 פֿילטער: דערלויבט אַנדערן קאָד צו צושטעלן דעם SES אינטעגראַציע־אָביעקט.
 

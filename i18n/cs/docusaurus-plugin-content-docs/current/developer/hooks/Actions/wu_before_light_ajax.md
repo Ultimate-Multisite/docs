@@ -4,7 +4,7 @@ title: Akce - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Akce: wu_before_light_ajax {#action-wubeforelightajax}
+# Akce: wu_before_light_ajax
 
 V některých případech budeme potřebovat dočíst další funkcionalitu k zpracování akcí.
 

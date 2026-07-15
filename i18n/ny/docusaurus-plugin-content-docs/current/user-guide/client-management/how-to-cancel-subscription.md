@@ -3,7 +3,7 @@ title: Mwayi kuya kufamba ndi subscription?
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Mwayi ndikuphunzira kuti ndikayesera? {#how-can-i-cancel-my-subscription}
+# Mwayi ndikuphunzira kuti ndikayesera?
 
 Ngati muli ndi Ultimate Multisite license, muli ndi ulimi wopereka kuwamba kwawo monga mukuphunzira nthawi yomwe mukuphunzira. Kodi mukuphunzira monga mukuphunzira monga mukuphunzira monga mukuphunzira?
 

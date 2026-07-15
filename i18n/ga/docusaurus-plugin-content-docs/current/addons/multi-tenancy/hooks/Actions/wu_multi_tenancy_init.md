@@ -4,7 +4,7 @@ title: Gníomh - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Gníomh: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Gníomh: wu_multi_tenancy_init
 
 Spreagtar é tar éis don bhreiseán Multi-Tenancy a bheith tosaithe go hiomlán.
 

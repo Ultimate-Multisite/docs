@@ -4,7 +4,7 @@ title: Iragazkia - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Iragazkia: secure_auth_cookie {#filter-secureauthcookie}
+# Iragazkia: secure_auth_cookie
 
 Auth cookie-a HTTPS bidez bakarrik bidali behar den ala ez iragazten du.
 

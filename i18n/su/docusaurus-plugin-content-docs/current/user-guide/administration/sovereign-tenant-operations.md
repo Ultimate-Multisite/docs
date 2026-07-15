@@ -3,7 +3,7 @@ title: Operasi Penyewa Berdaulat
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operasi Tenant Berdaulat (Sovereign) {#sovereign-tenant-operations}
+# Operasi Tenant Berdaulat (Sovereign)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nambahin alat operasional kanggo tenant berdaulat (sovereign): subsites sing jalan nganggo database dhewe, filesystem root dhewe, lan konteks routing dhewe, nanging tetep bisa ditemokake dening admin jaringan.
 

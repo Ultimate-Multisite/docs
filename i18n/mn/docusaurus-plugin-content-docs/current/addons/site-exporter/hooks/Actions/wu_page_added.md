@@ -4,7 +4,7 @@ title: Үйлдэл - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Үйлдэл: wu_page_added {#action-wupageadded}
+# Үйлдэл: wu_page_added
 
 Хуудас бүртгэгдэх үед plugin хөгжүүлэгчдэд нэмэлт зүйлс ажиллуулах боломж олгоно.
 

@@ -3,7 +3,7 @@ title: ଆଡଅନ୍ Sunrise ଫାଇଲ୍ ଲୋଡର୍
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# ଆଡ଼ଅନ୍ sunrise ଫାଇଲ୍ ଲୋଡର୍ {#addon-sunrise-file-loader}
+# ଆଡ଼ଅନ୍ sunrise ଫାଇଲ୍ ଲୋଡର୍
 
 Ultimate Multisite 2.8.0 ଆଡ଼ଅନ୍ ଏବଂ କଷ୍ଟମ MU-plugin ସମନ୍ୱୟ ପାଇଁ ଏକ sunrise ବିସ୍ତାର ଲୋଡର୍ ଯୋଡ଼େ। ଏହାମାନଙ୍କୁ ତିଆରି ହୋଇଥିବା `wp-content/sunrise.php` ଫାଇଲ୍ ସମ୍ପାଦନା ନକରି WordPress sunrise ବୁଟସ୍ଟ୍ରାପିଂ ସମୟରେ ଚାଲିବାକୁ ପଡ଼େ।
 

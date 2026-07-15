@@ -3,7 +3,7 @@ title: Domen xaritalashni qanday sozlash mumkin
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domen xaritalashni qanday sozlash kerak (v2) {#how-to-configure-domain-mapping-v2}
+# Domen xaritalashni qanday sozlash kerak (v2)
 
 _**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 

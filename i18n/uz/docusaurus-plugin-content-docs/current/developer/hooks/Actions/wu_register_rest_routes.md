@@ -4,7 +4,7 @@ title: Amal - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Amal: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Amal: wu_register_rest_routes
 
 Qo‘shimcha marshrutlarni ro‘yxatdan o‘tkazishga ruxsat beradi.
 

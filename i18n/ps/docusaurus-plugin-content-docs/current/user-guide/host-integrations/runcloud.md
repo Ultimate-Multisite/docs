@@ -3,7 +3,7 @@ title: RunCloud 통합
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## مروری (Overview) {#overview}
 RunCloud یو کلاود-بیسه سرور مدیریت پلتفۆرمەیە کە ڕێگە دەدات بە ئاسان دابنێ و بەڕێوە بهێنیت Web applications لەسەر سێرڤەرەکانی خۆت. ئەم یەکگرتووکارییە ڕێنوێنیی ئۆتۆماتیکی بۆ domain syncing و بەڕێوەبردنی SSL certificate نێوان Ultimate Multisite و RunCloud دەدات.

@@ -3,7 +3,7 @@ title: 'Leasan 7: Ga dhèanamh leatsa'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leasan 7: Ga dhèanamh nad chuid fhèin {#lesson-7-making-it-yours}
+# Leasan 7: Ga dhèanamh nad chuid fhèin
 
 Cha bu chòir do luchd-ceannach a bhith a’ faireachdainn gu bràth gu bheil iad a’ cleachdadh "plugin WordPress air choreigin." Bu chòir dhaibh a bhith a’ faireachdainn gu bheil iad a’ cleachdadh FitSite -- àrd-ùrlar a chaidh a thogail airson a’ ghnìomhachais aca. Tha an leasan seo a’ còmhdach branndadh, white-labeling, agus mar a bheir thu air an àrd-ùrlar faireachdainn mar thoradh.
 

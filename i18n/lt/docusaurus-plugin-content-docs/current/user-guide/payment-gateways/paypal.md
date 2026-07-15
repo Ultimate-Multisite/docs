@@ -3,7 +3,7 @@ title: PayPal nustatymas
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal bramkų nustatymas (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal bramkų nustatymas (v2)
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 

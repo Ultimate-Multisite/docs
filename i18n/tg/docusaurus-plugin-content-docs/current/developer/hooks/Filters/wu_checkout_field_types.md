@@ -4,7 +4,7 @@ title: Филтр - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Филтр: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Филтр: wu_checkout_field_types
 
 API-ҳои мо барои илова кардани намудҳои нави майдонҳо ба ин ҷо пайваст мешаванд.
 

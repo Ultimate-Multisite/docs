@@ -3,7 +3,7 @@ title: Integrasyon sa Multi-Tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrasyon sa Multi-Tenancy {#multi-tenancy-integration}
+# Integrasyon sa Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nag-usab sa daghang punto sa integrasyon alang sa mga soberanong tenant, beripikasyon sa migrasyon, ug awtomasyon sa lifecycle sa tenant.
 

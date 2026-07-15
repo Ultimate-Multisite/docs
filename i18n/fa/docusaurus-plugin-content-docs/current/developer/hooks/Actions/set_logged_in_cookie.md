@@ -4,7 +4,7 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# اکشن: set_logged_in_cookie {#action-setloggedincookie}
+# اکشن: set_logged_in_cookie
 
 بلافاصله قبل از اینکه کوکی احراز هویت ورود (logged-in authentication cookie) تنظیم شود، اجرا می‌شود.
 

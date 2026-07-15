@@ -3,7 +3,7 @@ title: Fomba Fifandraisana ho an'ny Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Fomba Fanaovana Form Contact ao an-tserasera (Site Builder) {#site-builder-contact-forms}
+# Fomba Fanaovana Form Contact ao an-tserasera (Site Builder)
 
 Ny Superdav AI Agent v1.10.0 dia manampy ny fahaizana mamorona form contact mivantana avy amin'ny chat interface iantsoana ny Site Builder agent. Izany dia ahafahanao manampy form contact tena miasa amin'ny pejy rehetra tsy mila miala amin'ny chat.
 

@@ -3,7 +3,7 @@ title: Urang Sering Nanya
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Pertanyaan yang Sering Diajukan {#frequently-asked-questions}
+# Pertanyaan yang Sering Diajukan
 
 Ieu sababaraha **Pertanyaan yang Sering Diajukan** anu mindeng datang dina permintaan dukungan.
 

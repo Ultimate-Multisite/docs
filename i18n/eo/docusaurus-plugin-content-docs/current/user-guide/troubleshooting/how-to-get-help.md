@@ -3,7 +3,7 @@ title: Kiel akcepti helpon?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kiel helpi alvi {#how-to-get-help}
+# Kiel helpi alvi
 
 Vi havas vian valid Licencon la, kaj al tiu estas alvokado de nia ekipo por helpi vin ressolvi problemojn, kiujn vi povus en ili fari dum via tempo montri Ultimate Multisite.
 

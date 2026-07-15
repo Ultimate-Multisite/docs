@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Chosankhira Chiyankhulo
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Mbiri ya Kusintha kwa Chosankhira Chiyankhulo {#language-selector-changelog}
+# Mbiri ya Kusintha kwa Chosankhira Chiyankhulo
 
 Mtundu: 1.1.3 - Wotulutsidwa pa 2026-05-05
 * Kukonza: Zosintha zolowetsedwa tsopano zimayeretsedwa ndipo mayina a hook apadera amaikidwa prefix kuti apewe mikangano ndi ma plugin a anthu ena

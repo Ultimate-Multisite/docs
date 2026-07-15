@@ -3,7 +3,7 @@ title: Diridda Iimayllada iyo Baahinta
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Dirista Emails iyo Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Dirista Emails iyo Broadcasts (v2)
 
 _**QORAAL MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 

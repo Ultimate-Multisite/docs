@@ -3,7 +3,7 @@ title: Qasja në faqen e llogarisë
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Si mund të aksesoj faqen e kontos sime për herë të parë? {#how-can-i-access-my-account-page-for-the-first-time}
+# Si mund të aksesoj faqen e kontos sime për herë të parë?
 
 Mirë se jeni mirë se jeni në Ultimate Multisite!
 

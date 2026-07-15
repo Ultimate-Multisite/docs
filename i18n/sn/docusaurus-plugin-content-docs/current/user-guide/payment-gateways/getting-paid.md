@@ -3,7 +3,7 @@ title: Kubhadharwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kubhadharwa (v2) {#getting-paid-v2}
+# Kubhadharwa (v2)
 
 _**CHERECHEDZO CHINOKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite version 2.x.**_
 

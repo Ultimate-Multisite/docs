@@ -3,7 +3,7 @@ title: Iphutha Lefayela Lokuphuma Kwelanga
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Iphutha Ekufakeni Ifayela le-Sunrise {#error-installing-the-sunrise-file}
+# Iphutha Ekufakeni Ifayela le-Sunrise
 
 Ifayela le-sunrise.php liyifayela elikhethekile WordPress elilibhekayo ngesikhathi iziqalisa. Ukuze WordPress ikwazi ukuthola ifayela le-sunrise.php, kudingeka libe ngaphakathi kwe-**ifolda ye-wp-content**.
 

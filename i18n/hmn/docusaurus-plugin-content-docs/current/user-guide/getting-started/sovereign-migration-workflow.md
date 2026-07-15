@@ -3,7 +3,7 @@ title: Qig tau txhaum tshiab hmoov
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow {#sovereign-migration-workflow}
+# Sovereign Migration Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-ээр нь standard subsite-a sovereign tenant infrastructure-t nuam teeb (migration) verification gates-u laikin.
 

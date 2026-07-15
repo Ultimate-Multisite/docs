@@ -3,7 +3,7 @@ title: Mengelola Pembayaran dan Faktur
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Mengelola Pembayaran dan Faktur {#managing-payments-and-invoices}
+# Mengelola Pembayaran dan Faktur
 
 ## Pengaturan Pembayaran {#payment-settings}
 

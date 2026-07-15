@@ -3,7 +3,7 @@ title: Hesap Sayfasına Erişim
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Hesap sayfama ilk kez nasıl erişebilirim? {#how-can-i-access-my-account-page-for-the-first-time}
+# Hesap sayfama ilk kez nasıl erişebilirim?
 
 Ultimate Multisite'a hoş geldiniz!
 

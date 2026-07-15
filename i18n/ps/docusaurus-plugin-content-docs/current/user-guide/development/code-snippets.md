@@ -3,7 +3,7 @@ title: کودې قطعات
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets بۆ v2 {#code-snippets-for-v2}
+# Code Snippets بۆ v2
 
 په اساس، **WordPress** لپاره د کد سنيپټونه هغه ځانګړت کارونه کولو لپاره کارول کیږي چې نور شاید باید یو کوچنی ځانګړي plugin وي. دا ډول کد سنيپټونه په WordPress اصلي یا Theme فایلونو (لکه معمولاً د ستونتون functions.php) کې ځای پر ځای کیږي او دوی یې MU plugin هم کارول کیری شي.
 

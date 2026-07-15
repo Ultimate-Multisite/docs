@@ -3,7 +3,7 @@ title: Záznam zmien synchronizácie obsahu
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Zoznam zmien Content Sync {#content-sync-changelog}
+# Zoznam zmien Content Sync
 
 ### Verzia 1.1.0 - Vydané 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nové: Podpora synchronizácie všetkých typov príspevkov (príspevky, stránky, vlastné typy príspevkov)

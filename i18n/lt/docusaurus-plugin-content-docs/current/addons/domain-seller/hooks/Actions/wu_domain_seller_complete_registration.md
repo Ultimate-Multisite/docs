@@ -4,7 +4,7 @@ title: Veiksmas - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Veiksmas: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Veiksmas: wu_domain_seller_complete_registration
 
 Suveikia, kai mokėjimas pereina į būseną, kuri turėtų inicijuoti domeno registraciją.
 

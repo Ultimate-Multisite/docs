@@ -4,7 +4,7 @@ title: Ação - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Ação: wu_page_after_render {#action-wupageafterrender}
+# Ação: wu_page_after_render
 
 Permite que os programadores de plugin adicionem conteúdo adicional depois de imprimirmos a página
 

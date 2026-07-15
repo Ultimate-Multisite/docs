@@ -3,7 +3,7 @@ title: Egyedi átjáró fejlesztése
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Egyéni fizetési átjáró fejlesztése {#custom-gateway-development}
+# Egyéni fizetési átjáró fejlesztése
 
 Egyéni fizetési átjárókat hozhatsz létre a `Base_Gateway` osztály kiterjesztésével.
 

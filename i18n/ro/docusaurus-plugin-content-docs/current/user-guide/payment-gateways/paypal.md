@@ -3,7 +3,7 @@ title: Configurarea PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurarea gateway-ului PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Configurarea gateway-ului PayPal (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

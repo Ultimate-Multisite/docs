@@ -3,7 +3,7 @@ title: ''
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Requirements {#ultimate-multisite-requirements}
+# Ultimate Multisite Requirements
 
 Die erste Frage, die Sie sich vor dem Kauf von Ultimate Multisite stellen könnten, ist, welche Anforderungen es gibt, um unser Plugin auszuführen. Glücklicherweise gibt es nur wenige grundlegende Anforderungen für die Ausführung von Ultimate Multisite: ein **Domainname**, ein guter **Hosting-Anbieter** und eine WordPress **Multisite**-Installation. Das ist alles, was Sie brauchen!
 

@@ -3,7 +3,7 @@ title: Установка плагина Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Установка Ultimate Multisite {#installing-ultimate-multisite}
+# Установка Ultimate Multisite
 
 :::note
 В этом руководстве предполагается, что у вас уже установлена и настроена система WordPress Multisite. Чтобы узнать, как это сделать, ознакомьтесь с [этим руководством](https://www.wpbeginner.com/glossary/multisite/) от WP Beginner.

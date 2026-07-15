@@ -4,7 +4,7 @@ title: फिल्टर - wu_mcp_include_ability
 sidebar_label: wu_mcp_include_ability
 _i18n_hash: 5925d523ccf0a8d9477e873ec3d891c0
 ---
-# Filter: wu_mcp_include_ability {#filter-wumcpincludeability}
+# Filter: wu_mcp_include_ability
 
 MCP (Multi-Capability Plugin) ची ability समाविष्ट करण्याची (include) निर्णयावर परिणाम करण्यासाठी वापरला जाणारा फिल्टर.
 

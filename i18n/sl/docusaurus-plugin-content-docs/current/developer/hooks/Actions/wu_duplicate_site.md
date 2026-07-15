@@ -4,7 +4,7 @@ title: Dejanje - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Dejanje: wu_duplicate_site {#action-wuduplicatesite}
+# Dejanje: wu_duplicate_site
 
 Omogoča razvijalcem, da se priklopijo po podvajanju spletnega mesta.
 

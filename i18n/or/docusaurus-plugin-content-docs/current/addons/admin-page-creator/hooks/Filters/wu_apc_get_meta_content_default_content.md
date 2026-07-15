@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# ଫିଲ୍ଟର: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
+# ଫିଲ୍ଟର: wu_apc_get_meta_content_default_content
 
 ଡିଭେଲପରମାନଙ୍କୁ default ମୂଲ୍ୟଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରିବାକୁ ଦିଅନ୍ତୁ
 

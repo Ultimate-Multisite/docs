@@ -3,7 +3,7 @@ title: Fanehoana ny Fanehoan'ny Mpanjifa sy ny Tatitra Olana
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Famaran'ny Mpanjifa sy Fanambarana Olana {#customer-feedback--issue-reporting}
+# Famaran'ny Mpanjifa sy Fanambarana Olana
 
 Ny Gratis AI Agent v1.5.0 dia manolotra rafitra fanambarana val fianarana (feedback) sy fanambarana olana mialoha izay ahafahana ny mpampiasa fahefana manamarina ireo valin-teny tsy nahomby sy manambara olana mivantana avy amin'ny interface chat. Ity rafitra ity dia ahitana fitantanana fankatoavana (consent management), baiko fanambarana ho azy, ary fandinihana (triage) an'ny AI any aoriana.
 

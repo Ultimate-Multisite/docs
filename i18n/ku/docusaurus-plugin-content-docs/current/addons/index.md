@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Pêvekên Ultimate Multisite {#ultimate-multisite-addons}
+# Pêvekên Ultimate Multisite
 
 Pêvek Ultimate Multisite bi taybetmendî û entegrasyonên zêde fireh dikin. Piraniya pêvekan bi pere ne û dikarin ji [ultimatemultisite.com](https://ultimatemultisite.com) bên kirîn.
 

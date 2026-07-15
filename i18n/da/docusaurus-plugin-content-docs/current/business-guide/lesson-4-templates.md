@@ -3,7 +3,7 @@ title: 'Lektion 4: Opbygning af niche-templer'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lektion 4: Opbygning af Niche-templer {#lesson-4-building-niche-templates}
+# Lektion 4: Opbygning af Niche-templer
 
 Templer er kernen i jeres niche-værdiudbud. En ejer af et fitnessstudio, der tilmelder sig og ser en side, der allerede ligner en fitnesshjemmeside – med klassetider, trænerprofiler og de rigtige billeder – er langt mere tilbøjelig til at blive end en, der ser et blankt lærred.
 

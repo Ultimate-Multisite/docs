@@ -4,7 +4,7 @@ title: アクション - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# アクション: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# アクション: wu_enqueue_extra_hooks
 
 プラグイン開発者が追加のフックを追加できるようにします。
 

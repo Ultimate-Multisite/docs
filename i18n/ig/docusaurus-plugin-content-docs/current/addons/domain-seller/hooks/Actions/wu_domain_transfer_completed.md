@@ -4,7 +4,7 @@ title: Omume - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Omume: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Omume: wu_domain_transfer_completed
 
 Na-arụ ọrụ mgbe emechara mbufe domain.
 

@@ -3,7 +3,7 @@ title: 'Lekcija 5: Projektovanje Vaših Planova'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcija 5: Dizajniranje vaših planova {#lesson-5-designing-your-plans}
+# Lekcija 5: Dizajniranje vaših planova
 
 Razine vaših planova nisu samo cjenovne kategorije — one odražavaju kako vaše nišne mušterije zapravo posluju. U ovoj lekciji dizajniraćete razine proizvoda koje odgovaraju stvarnim potrebama fitness poslova u različitim fazama.
 

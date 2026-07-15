@@ -3,7 +3,7 @@ title: Site Builder İletişim Formları
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Oluşturucu İletişim Formları {#site-builder-contact-forms}
+# Site Oluşturucu İletişim Formları
 
 Superdav AI Agent v1.10.0, Site Oluşturucu (Site Builder) agent'ını kullanarak sohbet arayüzünden doğrudan iletişim formu oluşturma yeteneği ekler. Bu sayede sohbetten ayrılmadan herhangi bir sayfaya tam işlevli iletişim formları ekleyebilirsiniz.
 

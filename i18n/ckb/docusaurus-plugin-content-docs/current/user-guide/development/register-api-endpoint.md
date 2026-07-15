@@ -3,7 +3,7 @@ title: Registers API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint-a API register-i nî Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint-a API register-i nî Ultimate Multisite
 
 Li vê dersê, ji bo fیدی کارکردna endpoint-a API /register a Ultimate Multisite ji bo nirxandina pûr a pêvajoya başyandina mînalî ya nû ji bo mînalîyek nû di neteweyekê de û çawa ji Zapier bi wê dike.
 

@@ -3,7 +3,7 @@ title: Konektè AI Ultim pou Pwen Final Konpatib Jounal chanjman
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector pou Chanjman Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector pou Chanjman Compatible Endpoints
 
 ## Vèsyon 2.0.0 — Lage 2026-04-24 {#version-200--released-on-2026-04-24}
 

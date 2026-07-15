@@ -4,7 +4,7 @@ title: Филтр - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Филтр: wu_current_set_site {#filter-wucurrentsetsite}
+# Филтр: wu_current_set_site
 
 Ба таҳиягарон иҷозат медиҳад, ки рафтори пешфарзро тағйир диҳанд ва сайти ҷориро ба тарзи дигар таъин кунанд.
 

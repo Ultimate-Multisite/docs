@@ -4,7 +4,7 @@ title: تصفية - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# عامل التصفية: wu_plan_product_types {#filter-wuplanproducttypes}
+# عامل التصفية: wu_plan_product_types
 
 تصفية أنواع المنتجات التي يجب معالجتها كخطط.
 

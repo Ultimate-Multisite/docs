@@ -4,7 +4,7 @@ title: Tacewa - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Tacewa: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Tacewa: wu_apc_should_display_admin_menu
 
 Ba wa admins damar ɓoye shafukan menu na admin, idan sun gama tsarin gyare-gyare.
 

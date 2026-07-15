@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# फ़िल्टर: wu_current_set_site {#filter-wucurrentsetsite}
+# फ़िल्टर: wu_current_set_site
 
 डेवलपर्स को डिफ़ॉल्ट व्यवहार को संशोधित करने और वर्तमान साइट को अलग तरह से सेट करने की अनुमति देता है।
 

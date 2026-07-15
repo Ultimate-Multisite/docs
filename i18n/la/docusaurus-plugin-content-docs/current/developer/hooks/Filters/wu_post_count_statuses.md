@@ -4,7 +4,7 @@ title: Filtrum - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtrum: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtrum: wu_post_count_statuses
 
 Sine ut plugin evolutores mutare possint quis status post numerandus sit. Per defectionem, editi et privati post numerantur
 

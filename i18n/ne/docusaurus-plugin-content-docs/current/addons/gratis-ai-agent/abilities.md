@@ -3,7 +3,7 @@ title: क्षमताहरूको सन्दर्भ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# क्षमताहरूको सन्दर्भ {#abilities-reference}
+# क्षमताहरूको सन्दर्भ
 
 क्षमताहरू Gratis AI Agent ले तपाईंको WordPress स्थापनामा आह्वान गर्न सक्ने परमाणु कार्यहरू हुन्। प्रत्येक क्षमता दर्ता गरिएको PHP class हो जसले JSON schema उजागर गर्छ — agent ले runtime मा यो schema पढेर कुन parameters आवश्यक छन् र क्षमताले के फर्काउँछ भन्ने बुझ्छ।
 

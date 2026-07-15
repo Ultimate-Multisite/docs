@@ -3,7 +3,7 @@ title: Registrovat koncový bod API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Koncový bod Ultimate Multisite /register API {#the-ultimate-multisite-register-api-endpoint}
+# Koncový bod Ultimate Multisite /register API
 
 V tomto tutoriálu se naučíte, jak použít koncový bod Ultimate Multisite /register API k vytvoření celého procesu onboardingu pro nového zákazníka ve vaší síti a jak to udělat pomocí Zapier.
 

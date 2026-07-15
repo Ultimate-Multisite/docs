@@ -3,7 +3,7 @@ title: Zahlungen erhalten
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Bezahlt werden (v2) {#getting-paid-v2}
+# Bezahlt werden (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

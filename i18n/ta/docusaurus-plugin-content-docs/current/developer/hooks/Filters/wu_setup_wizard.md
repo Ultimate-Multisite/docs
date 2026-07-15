@@ -4,7 +4,7 @@ title: Filter - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard {#filter-wusetupwizard}
+# Filter: wu_setup_wizard
 
 டெவலப்பர்கள் கூடுதல் செட்டப் விஸார்ட் (setup wizard) படிநிலைகளைச் சேர்க்க இது அனுமதிக்கிறது.
 

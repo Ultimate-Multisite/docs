@@ -3,7 +3,7 @@ title: Site Specificatie Vaardigheid
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specificatie Vaardigheid {#site-specification-skill}
+# Site Specificatie Vaardigheid
 
 De **Site Specificatie vaardigheid** is een gestructureerde aanpak om de doelen, de doelgroep en de merkidentiteit van je site vast te leggen. Deze informatie wordt opgeslagen in je **site_brief** geheugen, dat agenten gebruiken tijdens verschillende sessies om consistente, contextgerichte hulp te bieden.
 

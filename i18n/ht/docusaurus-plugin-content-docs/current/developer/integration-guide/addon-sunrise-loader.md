@@ -3,7 +3,7 @@ title: Chajè fichye Sunrise pou ekstansyon
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 ajoute yon chajè ekstansyon sunrise pou add-ons ak entegrasyon MU-plugin pèsonalize ki bezwen kouri pandan demaraj sunrise WordPress san modifye fichye `wp-content/sunrise.php` ki jenere a.
 

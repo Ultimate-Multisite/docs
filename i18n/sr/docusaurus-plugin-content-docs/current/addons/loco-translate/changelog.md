@@ -3,7 +3,7 @@ title: Loco Translate дневник измена
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Дневник измена за Loco Translate {#loco-translate-changelog}
+# Дневник измена за Loco Translate
 
 ### 1.0.1 {#101}
 * Побољшана компатибилност са најновијом верзијом Loco Translate

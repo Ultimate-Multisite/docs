@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Action: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
+# Action: wu_domain_seller_register_capabilities
 
 ಇತರ ಪ್ಲಗ್ಇನ್‌ಗಳು ಹೆಚ್ಚುವರಿ ಡೊಮೇನ್ ಮಾರಾಟ ಸಾಮರ್ಥ್ಯಗಳನ್ನು (domain selling capabilities) ನೋಂದಾಯಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

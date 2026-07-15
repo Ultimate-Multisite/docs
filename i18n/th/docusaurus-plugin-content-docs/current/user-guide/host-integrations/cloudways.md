@@ -3,7 +3,7 @@ title: การผสานรวม Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# การผสานการทำงานกับ Cloudways {#cloudways-integration}
+# การผสานการทำงานกับ Cloudways
 
 ## ภาพรวม {#overview}
 Cloudways เป็นแพลตฟอร์มโฮสติ้งคลาวด์แบบมีการจัดการที่ช่วยให้คุณปรับใช้ไซต์ WordPress บนผู้ให้บริการคลาวด์ต่าง ๆ เช่น DigitalOcean, AWS, Google Cloud และอื่น ๆ ได้ การผสานการทำงานนี้ช่วยให้ซิงก์โดเมนอัตโนมัติและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite และ Cloudways ได้

@@ -4,7 +4,7 @@ title: Гамәл - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Гамәл: wu_template_previewer {#action-wutemplatepreviewer}
+# Гамәл: wu_template_previewer
 
 Калыпны алдан карау контекстында булганда эшли.
 

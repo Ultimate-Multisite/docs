@@ -3,7 +3,7 @@ title: 'Lição 6: A Experiência de Inscrição'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lição 6: A experiência de cadastro {#lesson-6-the-signup-experience}
+# Lição 6: A experiência de cadastro
 
 O fluxo de finalização de compra é onde o interesse se transforma em receita. Um processo de cadastro confuso ou genérico perde clientes. Um fluxo específico para o nicho, que fala a língua deles e parece simples, converte-os.
 

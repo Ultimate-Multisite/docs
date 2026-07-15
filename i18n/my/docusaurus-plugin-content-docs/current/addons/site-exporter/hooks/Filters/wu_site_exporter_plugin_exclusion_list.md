@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_site_exporter_plugin_exclusion_
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filter: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Filter: wu_site_exporter_plugin_exclusion_list
 
 Developer များအနေဖြင့် ဖန်တီးထုတ်ပေးမည့် zip ဖိုင်မှ ချန်လှပ်လိုသည့် plugin စာရင်းများကို စီမံခန့်ခွဲနိုင်စေရန် ဤ filter ကို အသုံးပြုပါသည်။
 

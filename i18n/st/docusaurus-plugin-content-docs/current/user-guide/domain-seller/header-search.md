@@ -3,7 +3,7 @@ title: Patlo ea Domain ea Sehlooho
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Patlo ya Domain ya Header {#header-domain-search}
+# Patlo ya Domain ya Header
 
 Sebedisa tlhophiso ena ha o batla foromo e nyane ya header e qalang patlo ya domain, ebe e dumella moreki ho kgetha ho tswa ho di-domain tse fumanehang ka hare ho tefo ya Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Izolace v rámci více nájemníků
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolace mezi tenancymi {#multi-tenancy-isolation}
+# Izolace mezi tenancymi
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 podporuje izolaci databáze a souborového systému pro suverénní tenancy (tenants). To zajišťuje, že data jednotlivých klientů zůstávají oddělená, zatímco se zachovají síťové konfigurace, fakturace a správa.
 

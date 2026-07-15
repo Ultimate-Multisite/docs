@@ -3,7 +3,7 @@ title: Upravljanje sistemnih e-poštnih sporočil
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Upravljanje sistemskimi e-mailimi {#managing-system-emails}
+# Upravljanje sistemskimi e-mailimi
 
 Ultimate Multisite pošilja različne sistemske e-mailove za dogodke, kot so potrdbe registracije, potrdbe plačil in spremembe članstva. Te e-mail template lahko prilagodite svoji marki.
 

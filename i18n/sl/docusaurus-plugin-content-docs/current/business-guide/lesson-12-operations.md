@@ -3,7 +3,7 @@ title: 'Lekcija 12: Vodenje podjetja'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcija 12: Vodenje posla {#lesson-12-running-the-business}
+# Lekcija 12: Vodenje posla
 
 Platforma ni projekt, ki ga dokončate -- je posel, ki ga vodite. Ta lekcija obravnava vsakodnevno delovanje upravljanja FitSite: podporo, obračunavanje, vzdrževanje in skrb za zadovoljstvo strank.
 

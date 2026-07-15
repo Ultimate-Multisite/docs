@@ -3,7 +3,7 @@ title: Designretning
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Designretning {#design-direction}
+# Designretning
 
 Trinnet **Designretning** giver dig mulighed for at gennemgå, forfine og færdiggøre dit temas visuelle design, før Theme Builder genererer det komplette tema.
 

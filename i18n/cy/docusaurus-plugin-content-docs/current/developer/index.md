@@ -3,7 +3,7 @@ title: Doc y ddefnyddiwr
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasi Arweinydd Defnyddwyr {#developer-documentation}
+# Dokumentasi Arweinydd Defnyddwyr
 
 Mae'r cyfarwyddyd hwn yn rhoi bob amser sydd angen i ddynion ddefnyddwyr i gysylltu â, gyfaddelu neu ddatblygu addonau ar gyfer Ultimate Multisite. Mae Ultimate Multisite yn transformio rheol WordPress Multisite i ffurfwr Gwefan-as-a-Service (WaaS).
 

@@ -3,7 +3,7 @@ title: Operes yaMene M'moyo Wopulimbe
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Kuwamba kwa Operesheni ya Wajenzi wa Uhuru (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Kuwamba kwa Operesheni ya Wajenzi wa Uhuru (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imeweka zana za utendaji kwa ajili ya wajenzi wa uhuru (sovereign tenants): subsites ambazo zinakimbia na database yake, mizizi ya mfumo wa faili (filesystem root), na muktadha wa routing wake wenyewe huku zikibaki wazi kwa msimamizi wa mtandao.
 

@@ -3,7 +3,7 @@ title: Upravljanje spletnih strani
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Upravljanje strani {#managing-sites}
+# Upravljanje strani
 
 Strani (ali subsitji) so srce vaše WaaS poslovne. Ultimate Multisite ima 3 vrste stran:
 

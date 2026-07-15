@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 जेव्हा चेकआउट पूर्ण झाल्यानंतर डोमेन खरेदीची प्रक्रिया चालू असते, तेव्हा हे ॲक्शन कार्यान्वित होते.
 

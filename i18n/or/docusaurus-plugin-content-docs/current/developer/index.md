@@ -3,7 +3,7 @@ title: ବିକାଶକାରୀ ଦଲିଲପତ୍ର
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ଡିଭେଲପର ଡକ୍ୟୁମେଣ୍ଟେସନ {#developer-documentation}
+# ଡିଭେଲପର ଡକ୍ୟୁମେଣ୍ଟେସନ
 
 ଏହି ଗାଇଡ୍ ଡିଭେଲପରମାନଙ୍କୁ Ultimate Multisite ସହିତ ଏକତ୍ର କରିବା, ବିସ୍ତାର କରିବା, କିମ୍ବା ଏହା ପାଇଁ ଆଡଅନ ତିଆରି କରିବାରେ ଆବଶ୍ୟକ ସମସ୍ତ କଥା ଦିଏ। Ultimate Multisite ଏକ WordPress Multisite ନେଟୱର୍କକୁ Website-as-a-Service (WaaS) ପ୍ଲାଟଫର୍ମରେ ପରିଣତ କରେ।
 

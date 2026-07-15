@@ -3,7 +3,7 @@ title: Dnevnik sprememb Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Dnevnik sprememb Loco Translate {#loco-translate-changelog}
+# Dnevnik sprememb Loco Translate
 
 ### 1.0.1 {#101}
 * Izboljšana združljivost z najnovejšo različico Loco Translate

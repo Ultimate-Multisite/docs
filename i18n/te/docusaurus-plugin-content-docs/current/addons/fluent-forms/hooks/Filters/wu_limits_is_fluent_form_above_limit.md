@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 ఇచ్చిన ఫారం రకం ఈ ప్లాన్‌లో అనుమతించబడిందో లేదో ఇది చెక్ చేస్తుంది. ప్లాగిన్ డెవలపర్‌లు రిటర్న్ విలువను ఫిల్టర్ చేయడానికి దీనిని అనుమతిస్తుంది.
 

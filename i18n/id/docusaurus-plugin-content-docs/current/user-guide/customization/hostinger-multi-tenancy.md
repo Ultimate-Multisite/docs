@@ -3,7 +3,7 @@ title: Multi-Tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-Tenancy Hostinger {#hostinger-multi-tenancy}
+# Multi-Tenancy Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 menambahkan kemampuan multi-tenancy Hostinger sehingga domain yang dihosting dapat berpartisipasi dalam penyediaan tenant kedaulatan (sovereign tenant provisioning) bersama dengan integrasi pemetaan domain Hostinger yang sudah ada.
 

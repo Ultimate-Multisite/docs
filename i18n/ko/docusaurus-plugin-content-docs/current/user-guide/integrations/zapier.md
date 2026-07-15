@@ -3,7 +3,7 @@ title: Zapier 통합
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite를 Zapier와 통합하기 {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite를 Zapier와 통합하기
 
 한 문서에서 [Webhooks](webhooks.md)에 대해 논의했고, 이를 사용해 타사 애플리케이션과 통합하는 방법을 살펴보았습니다.
 

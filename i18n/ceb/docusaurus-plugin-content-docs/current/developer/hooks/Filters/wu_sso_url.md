@@ -4,7 +4,7 @@ title: Salain - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Salà: wu_sso_url {#filter-wussourl}
+# Salà: wu_sso_url
 
 Mosala sa namugna nga mga SSO URL sa wala pa kini ibalik para sa cross-domain nga mga aksiyon sa kustomer.
 

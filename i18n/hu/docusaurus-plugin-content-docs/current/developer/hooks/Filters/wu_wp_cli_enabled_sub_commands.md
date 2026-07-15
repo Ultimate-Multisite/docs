@@ -4,7 +4,7 @@ title: Filter - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Szűrő: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Szűrő: wu_wp_cli_enabled_sub_commands
 
 Ez a szűrő határozza meg, hogy mely alt-parancsok (sub_commands) vannak engedélyezve az adott entitás számára.
 

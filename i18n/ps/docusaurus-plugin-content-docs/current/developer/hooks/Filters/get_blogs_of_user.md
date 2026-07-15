@@ -4,7 +4,7 @@ title: فلټر - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# فلټر: get_blogs_of_user {#filter-getblogsofuser}
+# فلټر: get_blogs_of_user
 
 دلته اصلي WP فلټر د احتیاط له مخې بیا جوړوي.
 

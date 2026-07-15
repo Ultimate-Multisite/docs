@@ -3,7 +3,7 @@ title: RunCloud Integration
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrasyon ng RunCloud {#runcloud-integration}
+# Integrasyon ng RunCloud
 
 ## Pangkalahatang-tanaw {#overview}
 Ang RunCloud ay isang cloud-based na platform para sa pamamahala ng server na nagbibigay-daan sa iyo na madaling mag-deploy at mamahala ng mga web application sa sarili mong mga cloud server. Ang integrasyon na ito ay nag-e-enable ng automatic na pag-sync ng domain at pamamahala ng SSL certificate sa pagitan ng Ultimate Multisite at RunCloud.

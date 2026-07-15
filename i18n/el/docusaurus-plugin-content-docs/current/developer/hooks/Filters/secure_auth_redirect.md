@@ -4,7 +4,7 @@ title: Φίλτρο - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Φίλτρο: secure_auth_redirect {#filter-secureauthredirect}
+# Φίλτρο: secure_auth_redirect
 
 Ελέγχει αν πρέπει να χρησιμοποιηθεί μια ασφαλής επανακατεύθυνση ταυτοποίησης.
 

@@ -3,7 +3,7 @@ title: Hestia کنٹرول پینل انٹیگریشن
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel انٹیگریشن {#hestia-control-panel-integration}
+# Hestia Control Panel انٹیگریشن
 
 اس گائیڈ میں بتایا گیا ہے کہ Ultimate Multisite Hestia انٹیگریشن کو کیسے ترتیب دیں تاکہ آپ کے نیٹ ورک میں میپ کیے گئے ڈومینز خود بخود Hestia میں Web Domain Aliases کے طور پر شامل (اور ہٹائے) جا سکیں۔
 

@@ -4,7 +4,7 @@ title: Gnìomh - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Gnìomh: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Gnìomh: wu_enqueue_extra_hooks
 
 Leig le luchd-leasachaidh plugin dubhain a bharrachd a chur ris
 

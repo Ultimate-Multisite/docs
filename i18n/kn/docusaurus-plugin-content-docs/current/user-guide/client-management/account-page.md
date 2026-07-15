@@ -3,7 +3,7 @@ title: ಗ್ರಾಹಕ Account ಪುಟ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# ನಿಮ್ಮ ಕ್ಲೈಂಟ್‌ನ Account ಪುಟ (v2) {#your-clients-account-page-v2}
+# ನಿಮ್ಮ ಕ್ಲೈಂಟ್‌ನ Account ಪುಟ (v2)
 
 _**ಮುಖ್ಯ ಸೂಚನೆ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಅನ್ನು ಉಲ್ಲೇಖಿಸುತ್ತದೆ.**_
 

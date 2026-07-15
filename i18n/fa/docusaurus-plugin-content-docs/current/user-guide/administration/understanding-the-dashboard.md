@@ -3,7 +3,7 @@ title: درک داشبورد
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# آشنایی با داشبورد Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# آشنایی با داشبورد Ultimate Multisite
 
 پیش از آن‌که به گزینه‌های پیکربندی پیشرفته و جنبه‌های عملیاتی Ultimate Multisite بپردازیم، بیایید نگاهی به داشبورد بیندازیم.
 

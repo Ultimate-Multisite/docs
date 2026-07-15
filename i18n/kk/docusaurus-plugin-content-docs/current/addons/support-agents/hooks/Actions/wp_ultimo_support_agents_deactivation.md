@@ -4,7 +4,7 @@ title: Әрекет - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Әрекет: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Әрекет: wp_ultimo_support_agents_deactivation
 
 Плагиннің басқа бөліктеріне өшіру үшін өз рәсімдерін тіркеуге мүмкіндік береді
 

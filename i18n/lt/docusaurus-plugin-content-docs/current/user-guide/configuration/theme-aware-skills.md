@@ -3,7 +3,7 @@ title: Tema-atsižvelgiant į įgūdžius
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Temas atsižiau {#theme-aware-skills}
+# Temas atsižiau
 
 Superdav AI Agent v1.10.0 įdaro naujas, automatiškai pritaikomi tema-atsižiavimo (theme-aware) įtraukimai, kurie automatine būdinga jūsų aktyviai naudojamajam WordPress temui. Šie įtraukimai suteikia specializuotą pagalbos ir galimybes, kurios yra atitinka jūsų temas architektūrą ir funkcijas.
 

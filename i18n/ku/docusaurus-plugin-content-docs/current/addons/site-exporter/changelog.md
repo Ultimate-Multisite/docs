@@ -3,7 +3,7 @@ title: Tomara guhertinan a Derxistînerê Malperê
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Guherînên Eksportkerê Malperê {#site-exporter-changelog}
+# Guherînên Eksportkerê Malperê
 
 Version: 1.0.6 - Derket di 2026-05-11 de
 * Nû: Eksportên malperê niha index.php-ek xwe-destpêker di nav de digirin, da ku ZIP bêyî sazkirina pluginekê cuda li ser hostekî nû were saz kirin

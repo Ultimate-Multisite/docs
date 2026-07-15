@@ -4,7 +4,7 @@ title: Filter - wu_checkout_validation_rules
 sidebar_label: wu_checkout_validation_rules
 _i18n_hash: 7b765499f6f7d4b9b5337981302e2331
 ---
-# 過濾器：wu_checkout_validation_rules {#filter-wucheckoutvalidationrules}
+# 過濾器：wu_checkout_validation_rules
 
 允許外掛開發者過濾驗證規則。
 

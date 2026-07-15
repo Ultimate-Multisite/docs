@@ -3,7 +3,7 @@ title: Orchestrácia tvorcu stránok v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orchestrácia tvorby stránok v2 {#site-builder-orchestration-v2}
+# Orchestrácia tvorby stránok v2
 
 Orchestrácia tvorby stránok v2 (uvedená v Gratis AI Agent v1.4.0) je engine, ktorý poháňa viac-krokovú tvorbu webových stránok. Keď požiadate agenta, aby „vytvoril webovú stránku reštaurácie“ alebo „vytvoril portfólio s blogom“, orchestrator rozdelí tento vysokoúrovňový cieľ na štruktúrovaný **plán**, zistí pluginy potrebné na jeho splnenie, vykoná každý krok v poradí, sleduje priebeh a autonómne sa zotaví z chýb.
 

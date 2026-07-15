@@ -4,7 +4,7 @@ title: Filtru - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filtru: wu_country_get_cities {#filter-wucountrygetcities}
+# Filtru: wu_country_get_cities
 
 Jirritorna l-lista ta' bliet għal stat f'pajjiż.
 

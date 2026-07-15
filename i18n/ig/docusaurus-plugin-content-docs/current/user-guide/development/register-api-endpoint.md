@@ -3,7 +3,7 @@ title: Ịtụrụ API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API Endpoint Registration Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API Endpoint Registration Ultimate Multisite
 
 Ntutorial này, bạn sẽ học cách dùng endpoint API /register của Ultimate Multisite để tạo toàn bộ quy trình tiếp nhận khách hàng mới trong mạng lưới của bạn và làm điều đó với Zapier.
 

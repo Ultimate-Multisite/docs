@@ -4,7 +4,7 @@ title: אַקציע - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# אַקציע: wu_page_before_render {#action-wupagebeforerender}
+# אַקציע: wu_page_before_render
 
 דערלויבן plugin־אַנטוויקלערס צוצולייגן נאָך אינהאַלט איידער מיר דרוקן די בלאַט.
 

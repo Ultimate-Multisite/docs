@@ -3,7 +3,7 @@ title: Zoznam zmien meraných plánov
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Zoznam zmien Metered Plans {#metered-plans-changelog}
+# Zoznam zmien Metered Plans
 
 Verzia 1.1.0 – vydané 2026-05-05
 - Nové: Účtovanie AI tokenov pre multisite podstránky — sledujte a účtujte používanie AI tokenov naprieč zákazníckymi stránkami s konfigurovateľnými sadzbami za token

@@ -3,7 +3,7 @@ title: Kohandatud registripidaja integratsiooni loomine
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kohandatud registripidaja integratsiooni loomine {#building-a-custom-registrar-integration}
+# Kohandatud registripidaja integratsiooni loomine
 
 Domain Seller addon kasutab **Integration Registry** mustrit. Iga registripidaja on PHP klass, mis rakendab `Domain_Selling_Capability` ja registreerib end `wu_domain_seller_register_capabilities` action hooki kaudu.
 

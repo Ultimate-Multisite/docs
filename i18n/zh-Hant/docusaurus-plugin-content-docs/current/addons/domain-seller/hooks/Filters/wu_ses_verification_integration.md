@@ -4,7 +4,7 @@ title: 篩選器 - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# 篩選器：wu_ses_verification_integration {#filter-wusesverificationintegration}
+# 篩選器：wu_ses_verification_integration
 
 篩選器：允許其他程式碼提供 SES 整合物件。
 

@@ -3,7 +3,7 @@ title: 'Lekcija 4: Izrada nišnih predložaka'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcija 4: Izrada nišnih predložaka {#lesson-4-building-niche-templates}
+# Lekcija 4: Izrada nišnih predložaka
 
 Predlošci su srž vaše nišne vrijednosne ponude. Vlasnik fitness studija koji se prijavi i vidi web-mjesto koje već izgleda kao fitness web-mjesto -- s rasporedima treninga, profilima trenera i odgovarajućim slikama -- mnogo je vjerojatnije da će ostati nego onaj koji vidi prazno platno.
 

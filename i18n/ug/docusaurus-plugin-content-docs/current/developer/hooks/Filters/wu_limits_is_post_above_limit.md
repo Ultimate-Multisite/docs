@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 بېرىلگەن يازما تۈرىنىڭ بۇ پىلاندا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى تەكشۈرىدۇ. plugin ئىجادكارلىرىنىڭ قايتۇرۇلغان قىممەتنى سۈزۈشىگە رۇخسەت قىلىدۇ
 

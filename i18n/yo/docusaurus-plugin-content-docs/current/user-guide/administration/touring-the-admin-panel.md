@@ -3,7 +3,7 @@ title: Ìrìnàjò kiri Pánẹ́lì Alábójútó
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ṣíṣàbẹ̀wò Panel Admin {#touring-the-admin-panel}
+# Ṣíṣàbẹ̀wò Panel Admin
 
 Ultimate Multisite fẹ́ jẹ́ rọrùn àti kedere bí ó ti ṣeé ṣe tó, ṣùgbọ́n pẹ̀lú irinṣẹ́ tó lágbára báyìí, ìrìnàjò ìtọ́nisọ́nà lè ràn ọ́ lọ́wọ́. Ẹ jẹ́ ká rìn kọjá àwọn ojúewé admin láti ràn ọ́ lọ́wọ́ láti mọ ibi tí o wà.
 

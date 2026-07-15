@@ -3,7 +3,7 @@ title: פאָדערונגען
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite פֿאָדערונגען {#ultimate-multisite-requirements}
+# Ultimate Multisite פֿאָדערונגען
 
 די ערשטע זאַך וואָס איר קענט זיך פֿרעגן איידער איר קויפֿט Ultimate Multisite איז וואָס זענען די פֿאָדערונגען כּדי צו לויפֿן אונדזער plugin. נו, צום גליק, זענען דאָ בלויז אַ פּאָר גרונטלעכע פֿאָדערונגען פֿאַרן לויפֿן Ultimate Multisite: אַ **domain name** , אַ גוטער **hosting provider** און אַ WordPress **Multisite** אינסטאַלאַציע. דאָס איז אַלץ וואָס איר דאַרפֿט!
 

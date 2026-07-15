@@ -4,7 +4,7 @@ title: Toiminto - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Toiminto: wu_before_light_ajax {#action-wubeforelightajax}
+# Toiminto: wu_before_light_ajax
 
 Joissakin tapauksissa meidän täytyy ladata lisäresursseja toimintojen käsittelemiseksi.
 

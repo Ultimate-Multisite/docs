@@ -3,7 +3,7 @@ title: 'Lliçó 12: Gestionar l''empresa'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Aula 12: Gestionar l'Empresa {#lesson-12-running-the-business}
+# Aula 12: Gestionar l'Empresa
 
 Una plataforma no és un projecte que es termini; és un negoci que es dirigeix. Aquesta aula cobreix les operacions del dia a dia per gestionar FitSite: suport, facturació, manteniment i mantenir els clients contents.
 

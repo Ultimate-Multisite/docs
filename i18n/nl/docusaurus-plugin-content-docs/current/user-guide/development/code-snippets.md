@@ -3,7 +3,7 @@ title: Codefragmenten
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Codefragmenten voor v2 {#code-snippets-for-v2}
+# Codefragmenten voor v2
 
 In principe worden codefragmenten voor **WordPress** gebruikt om bepaalde acties uit te voeren waarvoor anders mogelijk een aparte kleinere plugin nodig zou zijn. Zulke codefragmenten worden geplaatst in een van de WordPress-core- of theme-bestanden (meestal het functions.php-bestand van je theme) of ze kunnen worden gebruikt als MU plugin.
 

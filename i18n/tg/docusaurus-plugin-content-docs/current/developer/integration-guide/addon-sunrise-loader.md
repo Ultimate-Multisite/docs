@@ -3,7 +3,7 @@ title: Боркунандаи файли Sunrise барои илова
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Боркунандаи файли Sunrise-и addon {#addon-sunrise-file-loader}
+# Боркунандаи файли Sunrise-и addon
 
 Ultimate Multisite 2.8.0 барои addon-ҳо ва ҳамгироиҳои фармоишии MU-plugin, ки бояд ҳангоми bootstrap-и sunrise-и WordPress бидуни таҳрири файли тавлидшудаи `wp-content/sunrise.php` иҷро шаванд, боркунандаи васеъшавии sunrise илова мекунад.
 

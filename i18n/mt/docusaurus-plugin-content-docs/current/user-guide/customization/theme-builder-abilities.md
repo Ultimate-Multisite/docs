@@ -3,7 +3,7 @@ title: Abilità tal-Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Abilità tal-Theme Builder: Scaffold u Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Abilità tal-Theme Builder: Scaffold u Block Themes
 
 Superdav AI Agent v1.12.0 jiddu żewġ abilità prominenti li jagħlek b'possibilità ta genera u issaħħa custom block themes direttament mill-interface tal-chat.
 

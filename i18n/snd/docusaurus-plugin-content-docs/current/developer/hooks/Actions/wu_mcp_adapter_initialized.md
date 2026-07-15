@@ -4,7 +4,7 @@ title: عمل - wu_mcp_adapter_initialized
 sidebar_label: wu_mcp_adapter_initialized
 _i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
 ---
-# عمل: wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
+# عمل: wu_mcp_adapter_initialized
 
 MCP adapter جي شروعات ٿيڻ کان پوءِ هلندو آهي.
 

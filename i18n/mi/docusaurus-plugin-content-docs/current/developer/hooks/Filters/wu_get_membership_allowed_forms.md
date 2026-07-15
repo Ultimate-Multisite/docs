@@ -4,7 +4,7 @@ title: Tātari - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Tātari: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Tātari: wu_get_membership_allowed_forms
 
 Tukua ngā kaiwhakawhanake kia tāpiri i ngā slug puka hou hei hipa i tēnei whanonga.
 

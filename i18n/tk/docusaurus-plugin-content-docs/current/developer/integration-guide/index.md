@@ -3,7 +3,7 @@ title: Integrasiýa gollanmasy
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrasiýa gollanmasy {#integration-guide}
+# Integrasiýa gollanmasy
 
 Bu gollanma Ultimate Multisite bilen umumy integrasiýa nusgalaryny öz içine alýar, şol sanda daşarky hyzmatlara birikmek, ýörite töleg gateway-lerini gurmak we webhook-lary dolandyrmak.
 

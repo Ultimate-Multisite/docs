@@ -3,7 +3,7 @@ title: V1 से माइग्रेट करना
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 से माइग्रेशन {#migrating-from-v1}
+# V1 से माइग्रेशन
 
 ## Ultimate Multisite अपने मूल 1.x रिलीज़ फैमिली से 2.x रिलीज़ फैमिली में बदल गया है। {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

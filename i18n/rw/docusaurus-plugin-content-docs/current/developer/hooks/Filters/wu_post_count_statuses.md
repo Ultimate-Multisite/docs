@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Muyunguruzi: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Muyunguruzi: wu_post_count_statuses
 
 Emerera abategura imigereka guhindura imiterere y’inyandiko igomba kubarwa. Ku busanzwe, inyandiko zatangajwe n’izigenga ni zo zibarwa
 

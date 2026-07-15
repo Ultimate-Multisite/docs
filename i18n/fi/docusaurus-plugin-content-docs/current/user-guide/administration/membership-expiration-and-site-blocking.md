@@ -3,7 +3,7 @@ title: Jäsenyyden päättyminen ja sivuston estäminen
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Jäsenyyden vanhentuminen ja sivustojen estäminen {#membership-expiration-and-site-blocking}
+# Jäsenyyden vanhentuminen ja sivustojen estäminen
 
 Tämä opas selittää, miten Ultimate Multisite hoitaa jäsenyyksien vanhentumisen, kokeiden päättymisen ja etusivun sivustojen estämisen. Se kattaa jäsenyden elinkaaren aktiivisesta vanhentuneeseen, niitä hallitsevat asetukset sekä mitä tarkistaa, jos sivustot pysyvät käytettävinä jäsenyyden vanhentumisen jälkeen.
 

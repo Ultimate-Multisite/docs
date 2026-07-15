@@ -3,7 +3,7 @@ title: ServerPilot İntegrasiyası
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot İntegrasiyası {#serverpilot-integration}
+# ServerPilot İntegrasiyası
 
 ## Ümumi Baxış {#overview}
 ServerPilot, WordPress və digər PHP saytlarını DigitalOcean, Amazon, Google və ya istənilən digər server provayderində serverlərdə host etmək üçün bulud xidmətidir. Bu inteqrasiya Ultimate Multisite və ServerPilot arasında avtomatik domen sinxronizasiyası və SSL sertifikatları idarəetməsinə imkan verir.

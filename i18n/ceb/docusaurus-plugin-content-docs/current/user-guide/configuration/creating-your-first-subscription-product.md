@@ -3,7 +3,7 @@ title: Pagmugna sa Imong Una nga Produkto sa Subscription
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Paghimo sa Imong Una nga Subscription Product (v2) {#creating-your-first-subscription-product-v2}
+# Paghimo sa Imong Una nga Subscription Product (v2)
 
 _**MAHINUNGOD NGA PAHIBALO: Kini nga article para lang sa mga Ultimate Multisite version 2.x users. Kung gamiton nimo ang version 1.x,**_ **_kita kini nga article**_**.
 

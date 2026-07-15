@@ -3,7 +3,7 @@ title: デザインの方向性
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# デザインの方向性 {#design-direction}
+# デザインの方向性
 
 **デザインの方向性**のステップでは、Theme Builderがテーマ全体を生成する前に、テーマのビジュアルデザインをレビュー、洗練、最終決定することができます。
 

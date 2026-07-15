@@ -4,7 +4,7 @@ title: Azzjoni - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Azzjoni: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
+# Azzjoni: wp_ultimo_ptm_page_edit_after_title
 
 Jippermetti lill-iżviluppaturi tal-estensjonijiet iżidu buttuni addizzjonali mal-paġni tal-editjar
 

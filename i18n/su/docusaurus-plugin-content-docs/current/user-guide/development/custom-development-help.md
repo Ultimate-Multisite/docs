@@ -3,7 +3,7 @@ title: Bantuan Pengembangan Kustom
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kumaha Ngajadi Bantuan Pengembangan Kustom ti Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Kumaha Ngajadi Bantuan Pengembangan Kustom ti Codeable?
 
 Kadang-kadang, urang mah butuh kustomisasi anu saé pisan sangkan alur jaringan urang bisa pas siga nu dipikahoy. Lamun éta nu dicari, kami rekomendasikeun [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), hiji tempat di mana anjeun bisa nempo developer berpengalaman anu ahli dina Ultimate Multisite.
 

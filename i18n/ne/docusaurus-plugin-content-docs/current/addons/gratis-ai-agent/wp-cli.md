@@ -3,7 +3,7 @@ title: WP-CLI सन्दर्भ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI सन्दर्भ {#wp-cli-reference}
+# WP-CLI सन्दर्भ
 
 Gratis AI Agent ले एजेन्टको बेन्चमार्क गर्न, क्षमताहरू व्यवस्थापन गर्न, र कमाण्ड लाइनबाट एजेन्टको स्थिति सोध्न `wp gratis-ai-agent` कमाण्ड परिवार उपलब्ध गराउँछ। सबै कमाण्डहरूलाई WP-CLI 2.0 वा उच्च आवश्यक पर्छ।
 

@@ -3,7 +3,7 @@ title: 高级代码示例
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 高级代码示例 {#advanced-code-examples}
+# 高级代码示例
 
 这些示例演示了与 Ultimate Multisite 的高级集成模式。
 

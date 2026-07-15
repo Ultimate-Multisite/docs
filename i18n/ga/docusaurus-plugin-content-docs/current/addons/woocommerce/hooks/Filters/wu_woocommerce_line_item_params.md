@@ -4,7 +4,7 @@ title: Scagaire - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Scagaire: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Scagaire: wu_woocommerce_line_item_params
 
 Scag na paraiméadair a úsáidtear chun na míreanna líne a chruthú ar an WooCommerce Cart, sula n-atreoraítear an custaiméir chuig an WooCommerce checkout.
 

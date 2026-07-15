@@ -3,7 +3,7 @@ title: Expiració de membresia i blocatge de site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiració de membresia i blocatge del lloc web {#membership-expiration-and-site-blocking}
+# Expiració de membresia i blocatge del lloc web
 
 Aquesta guia explica com Ultimate Multisite gestiona l'expiració de membresdies, la finalització de proves i el blocatge del lloc web al frontend. Cobre el cicle vital d'una membresia, des de activa fins a expirada, les configuracions que controlen si els llocs es bloquegen i què compro quan els llocs encara són accessibles després que una membresia ha expirat.
 

@@ -3,7 +3,7 @@ title: 'Leçon 8 : Intégration client'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Leçon 8 : Intégration des clients (Onboarding) {#lesson-8-customer-onboarding}
+# Leçon 8 : Intégration des clients (Onboarding)
 
 Amener un client à s'inscrire n'est que la moitié du travail. S'il se connecte, se sent dépassé et ne revient jamais, vous l'avez perdu. Cette leçon conçoit l'expérience qui transforme une nouvelle inscription en un client actif et engagé.
 

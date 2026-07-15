@@ -3,7 +3,7 @@ title: V1 မှ ပြောင်းရွှေ့ခြင်း
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 မှ ပြောင်းရွှေ့ခြင်း {#migrating-from-v1}
+# V1 မှ ပြောင်းရွှေ့ခြင်း
 
 ## Ultimate Multisite သည် မူလ 1.x ဗားရှင်းများမှ 2.x ဗားရှင်းများသို့ ပြောင်းလဲသွားပါပြီ။ {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

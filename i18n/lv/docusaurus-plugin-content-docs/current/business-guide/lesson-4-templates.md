@@ -3,7 +3,7 @@ title: '4. nodarbība: Nišas veidņu veidošana'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# 4. nodarbība: Nišas veidņu izveide {#lesson-4-building-niche-templates}
+# 4. nodarbība: Nišas veidņu izveide
 
 Veidnes ir jūsu nišas vērtības piedāvājuma kodols. Fitnesa studijas īpašnieks, kurš reģistrējas un redz vietni, kas jau izskatās kā fitnesa tīmekļa vietne -- ar nodarbību grafikiem, treneru profiliem un atbilstošiem attēliem -- daudz biežāk paliks nekā tas, kurš redz tukšu audeklu.
 

@@ -4,7 +4,7 @@ title: ფილტრი - wu_cart_get_subtotal
 sidebar_label: wu_cart_get_subtotal
 _i18n_hash: b4c83b261d6009edfbb17c6f27f6ae60
 ---
-# ფილტრი: wu_cart_get_subtotal {#filter-wucartgetsubtotal}
+# ფილტრი: wu_cart_get_subtotal
 
 ფილტრავს „საწყისი თანხის“ ჯამს.
 

@@ -3,7 +3,7 @@ title: PayPal സജ്ജീകരിക്കൽ
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal ഗേറ്റ്‌വേ സജ്ജീകരിക്കൽ (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal ഗേറ്റ്‌വേ സജ്ജീകരിക്കൽ (v2)
 
 _**പ്രധാന കുറിപ്പ്: ഈ ലേഖനം Ultimate Multisite പതിപ്പ് 2.x-നെ കുറിച്ചുള്ളതാണ്.**_
 

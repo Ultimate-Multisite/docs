@@ -3,7 +3,7 @@ title: Installation och leverantörskonfiguration
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: installation och leverantörskonfiguration {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: installation och leverantörskonfiguration
 
 Domain Seller addon levereras med en guidad installationsguide som leder dig genom varje obligatoriskt steg. Den här sidan beskriver guideflödet och hur du konfigurerar eller konfigurerar om leverantörer efteråt.
 

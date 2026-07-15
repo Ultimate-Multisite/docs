@@ -3,7 +3,7 @@ title: Skráningarpóstur
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms eru einfaldleg og nýttar hátt að prófa út ólíkar nálgunar þegar þú reynir að breyta nýjum viðskiptavinum.
 

@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# 액션: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# 액션: wu_page_\{$this->id\}_load
 
 플러그인 개발자가 우리 페이지에 추가 훅을 추가할 수 있도록 허용합니다.
 

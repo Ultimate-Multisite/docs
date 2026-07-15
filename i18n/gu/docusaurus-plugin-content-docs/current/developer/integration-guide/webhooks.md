@@ -3,7 +3,7 @@ title: વેબહૂક સંચાલન
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# વેબહૂક હેન્ડલિંગ {#webhook-handling}
+# વેબહૂક હેન્ડલિંગ
 
 બહારની સર્વિસમાંથી ઇવેન્ટ્સ મેળવવા અને Ultimate Multisite સાથે ડેટા sync કરવા માટે કસ્ટમ વેબહૂક એન્ડપોઇન્ટ્સ બનાવો.
 

@@ -3,7 +3,7 @@ title: Мүлтік сайт орнату wizard-ы
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Нақты Құрылымды Орнату Жоспары {#multisite-setup-wizard}
+# Multisite Нақты Құрылымды Орнату Жоспары
 
 Ultimate Multisite-та стандартты WordPress орнатысын автоматты түрде WordPress Multisite желісіне айналдыратын кіріктірілген жоспар (wizard) бар. Бұл `wp-config.php` файлына қолмен өзгерту немесе базалық деректерді командалар жүргізу қажеттілігін жояды.
 

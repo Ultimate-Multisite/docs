@@ -4,7 +4,7 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 field တစ်ခုသည် အလိုအလျောက် တင်နိုင်သည့် (auto-submittable) အခြေအနေဖြစ်ပါက စစ်ဆေးမှု (check) ကို ကျော်လွန်စေရန် developer များအား ခွင့်ပြုပါသည်။
 

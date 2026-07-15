@@ -4,7 +4,7 @@ title: వడపోత - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item {#filter-wurestgetitem}
+# Filter: wu_rest_get_item
 
 ఈ ఫిల్టర్, రిక్వెస్ట్‌ను ముందుకు తీసుకెళ్లడానికి అనుమతి ఉందో లేదో నిర్ణయిస్తుంది.
 

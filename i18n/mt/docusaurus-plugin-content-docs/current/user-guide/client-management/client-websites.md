@@ -3,7 +3,7 @@ title: Websites tal-klijenti
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Il-Sitji tal-Www siti tat-Klient (v2) {#your-clients-websites-v2}
+# Il-Sitji tal-Www siti tat-Klient (v2)
 
 Wara li ti tiskru fuq nnetzwerk tieħek, il-klientijiet jistgħu jidħol għall-dashboard tagħhom.
 

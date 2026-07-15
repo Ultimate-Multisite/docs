@@ -3,7 +3,7 @@ title: Eklenti Geliştirmeye Başlarken
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Eklenti Geliştirme {#addon-development}
+# Eklenti Geliştirme
 
 ## Eklenti Yapısı {#addon-structure}
 

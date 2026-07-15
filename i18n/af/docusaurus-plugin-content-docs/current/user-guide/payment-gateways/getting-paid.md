@@ -3,7 +3,7 @@ title: Betaal word
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Word Betaal (v2) {#getting-paid-v2}
+# Word Betaal (v2)
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

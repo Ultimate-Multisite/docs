@@ -3,7 +3,7 @@ title: 'Leasan 11: A’ lorg luchd-ceannach'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leasan 11: A’ Lorg Luchd-ceannach {#lesson-11-finding-customers}
+# Leasan 11: A’ Lorg Luchd-ceannach
 
 Chan eil àrd-ùrlar sgoinneil gun luchd-ceannach ach na chur-seachad. Tha an leasan seo a’ còmhdach mar a gheibh thu luchd-ceannach ann an raon niche dìreach -- ro-innleachdan a dh’obraicheas gu sònraichte seach gu bheil thu ag amas air aon ghnìomhachas.
 

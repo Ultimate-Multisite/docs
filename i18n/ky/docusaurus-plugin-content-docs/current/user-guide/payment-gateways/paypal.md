@@ -3,7 +3,7 @@ title: PayPal-ды орнотуу
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal шлюзунду орнотуу (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal шлюзунду орнотуу (v2)
 
 _**МААЛЫМДАР КӨРҮЗҮҮ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү._**_
 

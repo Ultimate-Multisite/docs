@@ -3,7 +3,7 @@ title: Advanced Code Examples
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples {#advanced-code-examples}
+# Advanced Code Examples
 
 یہ مثالیں Ultimate Multisite کے ساتھ ایڈوانس انٹیگریشن پیٹرن (advanced integration patterns) کو ظاہر کرتی ہیں۔
 

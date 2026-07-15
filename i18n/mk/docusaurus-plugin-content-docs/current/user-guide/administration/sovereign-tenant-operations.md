@@ -3,7 +3,7 @@ title: Операции на суврен лонент
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Операции со суверенными арендаторами (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Операции со суверенными арендаторами (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 додаде алати алатки за алакативни арендатори (sovereign tenants): поддоминиуми кои работат со своја база на податоци, корен на файловата система и контекст на рутингот, додека остануваат видливи од администраторот на мрежата.
 

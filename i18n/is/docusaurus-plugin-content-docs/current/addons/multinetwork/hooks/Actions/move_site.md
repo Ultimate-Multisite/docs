@@ -4,7 +4,7 @@ title: Aðgerð - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Aðgerð: move_site {#action-movesite}
+# Aðgerð: move_site
 
 Keyrist eftir að vefur hefur verið færður yfir á nýtt net.
 

@@ -3,7 +3,7 @@ title: 광고 ඇතුළත් කරන්නා
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# ඔබේ ජාලයේ දැන්වීම් තැබීම Ultimate Multisite සමඟ: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# ඔබේ ජාලයේ දැන්වීම් තැබීම Ultimate Multisite සමඟ: Ad Injector
 
 Ultimate Multisite: Ad Injector කියන්නේ **නිදහස් add-on එකක්** වන අතර, ඒ හරහා ඔබට ඔබේ සැලසුම්වල (plans) සංස්කරණ පිටුවෙන්ම දැන්වීම් තැබීමට අවශ්‍ය මෙවලම් ලබා දෙනවා.
 

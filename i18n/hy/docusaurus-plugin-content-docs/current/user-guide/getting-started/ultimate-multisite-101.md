@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite એવો વર્ડપ્રેસ મલ્ટીસાઇટ પ્લગઇન છે જે તમને ગ્રાહકોને WaaS અથવા વેબસાઇટ્સ as a Service ઓફર કરવાની સક્ષમ બનાવે છે. તેમાં ડૂબકી લગાવતા પહેલા અને Ultimate Multisite તમારા વ્યવસાય અને ગ્રાહકોને કેવી રીતે મદદ કરી શકે તે શીખવા માટે, આપણને કેટલીક મૂળભૂત જાણકારી મેળવવાની જરૂર છે.
 

@@ -3,7 +3,7 @@ title: កំណត់ត្រាការចេញផ្សាយ
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# မှတ်တမ်းបោះពុម្ពផ្សាយ (Release Notes) {#release-notes}
+# မှတ်တမ်းបោះពុម្ពផ្សាយ (Release Notes)
 
 ## កំណែ ២.១៣.០ — បោះពុម្ពផ្សាយនៅថ្ងៃទី ៥ ខែមិថុនា ឆ្នាំ ២០២៦ {#version-2130--released-on-2026-06-05}
 

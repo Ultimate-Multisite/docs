@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filter: wu_rest_get_items {#filter-wurestgetitems}
+# Filter: wu_rest_get_items
 
 တောင်းဆိုမှု (request) ကို ဆက်လက်လုပ်ဆောင်ခွင့်ရှိမရှိ စစ်ဆေးပေးတဲ့ နေရာ (filter) ဖြစ်ပါတယ်။
 

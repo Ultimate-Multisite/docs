@@ -3,7 +3,7 @@ title: Wizard għall-Istitwixxi Multitesse
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite jidda un wizard mhux huwa built-in li jidda WordPress, li jidda jidda WordPress standard biex jidda networks WordPress. Dan jidda l-esigenza ta li tġib manualment għal edit tal-`wp-config.php` jew li tgħmli komandi tal-database.
 

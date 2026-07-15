@@ -3,7 +3,7 @@ title: Özel Bir Kayıtçı Entegrasyonu Geliştirme
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Özel Bir Kayıt Kuruluşu Entegrasyonu Oluşturma {#building-a-custom-registrar-integration}
+# Özel Bir Kayıt Kuruluşu Entegrasyonu Oluşturma
 
 Domain Seller eklentisi, bir **Entegrasyon Kayıt Defteri** (Integration Registry) kalıbı kullanır. Her kayıt kuruluşu, `Domain_Selling_Capability` arayüzünü uygulayan ve `wu_domain_seller_register_capabilities` action hook'u aracılığıyla kendini kaydeden bir PHP sınıfıdır.
 

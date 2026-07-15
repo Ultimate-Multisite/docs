@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Допълнителни модули за Ultimate Multisite {#ultimate-multisite-addons}
+# Допълнителни модули за Ultimate Multisite
 
 Допълнителните модули (Addons) разширяват функционалността на Ultimate Multisite с допълнителни функции и интеграции. Повечките модули са платени и могат да бъдат закупени от [ultimatemultisite.com](https://ultimatemultisite.com).
 

@@ -3,7 +3,7 @@ title: 기능 참조
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities 참조 {#abilities-reference}
+# Abilities 참조
 
 Abilities는 Gratis AI Agent가 사용자의 WordPress 설치에서 호출할 수 있는 원자적 작업입니다. 각 ability는 JSON 스키마를 노출하는 등록된 PHP 클래스입니다. agent는 런타임에 이 스키마를 읽어 어떤 매개변수가 필요한지, ability가 무엇을 반환하는지 이해합니다.
 

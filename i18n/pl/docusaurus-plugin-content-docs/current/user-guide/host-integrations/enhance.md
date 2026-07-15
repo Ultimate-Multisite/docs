@@ -3,7 +3,7 @@ title: Ulepsz integrację Panelu sterowania
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Integracja z Panelem Enhance {#enhance-control-panel-integration}
+# Integracja z Panelem Enhance
 
 ## Przegląd {#overview}
 Enhance to nowoczesny panel sterowania oferujący zaawansowane możliwości automatyzacji i zarządzania hostingiem. Ta integracja umożliwia automatyczną synchronizację domen i zarządzanie certyfikatami SSL między Ultimate Multisite a Panelem Enhance.

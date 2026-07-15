@@ -3,7 +3,7 @@ title: Festlegen der Sunrise-Konstante auf Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Setzen der Sunrise-Konstante auf true bei Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Setzen der Sunrise-Konstante auf true bei Closte
 
 Einige Host-Anbieter sperren die wp-config.php aus Sicherheitsgründen. Das bedeutet, dass Ultimate Multisite die Datei nicht automatisch bearbeiten kann, um die notwendigen Konstanten einzufügen, damit Domain-Mapping und andere Funktionen funktionieren. Closte ist ein solcher Host.
 

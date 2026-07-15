@@ -3,7 +3,7 @@ title: CyberPanel అనుసంధానం
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 ఈ గైడ్ Ultimate Multisite CyberPanel ఇంటిగ్రేషన్‌ను ఎలా కాన్ఫిగర్ చేయాలో వివరిస్తుంది, తద్వారా మీ నెట్‌వర్క్‌లోని మ్యాప్ చేయబడిన డొమైన్‌లు CyberPanelలో వర్చువల్ హోస్ట్‌లుగా ఆటోమేటిక్‌గా జోడించబడతాయి (మరియు తొలగించబడతాయి). దీనితో పాటు, Let's Encrypt ద్వారా ఆప్షనల్ ఆటో-SSL ప్రొవిజనింగ్ కూడా అందుబాటులో ఉంటుంది.
 

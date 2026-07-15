@@ -3,7 +3,7 @@ title: Opret din første abonnementsprodukt
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Oprettelse af dit Første Abonnementsprodukt (v2) {#creating-your-first-subscription-product-v2}
+# Oprettelse af dit Første Abonnementsprodukt (v2)
 
 _**VIGTIG BEMÆRK: Denne artikel er kun til brugere af Ultimate Multisite version 2.x. Hvis du bruger version 1.x,**_ **_se denne artikel**_**.
 

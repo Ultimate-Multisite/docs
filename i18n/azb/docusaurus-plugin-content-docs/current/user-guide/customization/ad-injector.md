@@ -3,7 +3,7 @@ title: Reklam Enjektörü
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite ile Ağınızda Reklam Yerleştirme: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite ile Ağınızda Reklam Yerleştirme: Ad Injector
 
 Ultimate Multisite: Ad Injector, planlarınızın doğrudan düzenleme sayfasından reklam yerleştirmenizi sağlayan bir **ücretsiz eklentidir**.
 

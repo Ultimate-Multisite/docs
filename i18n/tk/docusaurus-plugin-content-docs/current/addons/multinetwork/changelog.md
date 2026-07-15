@@ -3,7 +3,7 @@ title: Köp torly üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network üýtgeşmeler sanawy {#multi-network-changelog}
+# Multi-Network üýtgeşmeler sanawy
 
 ### 1.3.0 {#130}
 * Täze: Tor şablonyny öňünden görüji — satyn almazdan öň janly panel bilen tor şablonlaryny gözden geçiriň we öňünden görüň.

@@ -3,7 +3,7 @@ title: Uru Aka Aka Cliente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Akụna Akaunt Nyi Gị Kliyent (v2) {#your-clients-account-page-v2}
+# Akụna Akaunt Nyi Gị Kliyent (v2)
 
 _**NOTA E CHỊU RỊ: Ati dịkọrị a na Ultimate Multisite phiên bản 2.x.**_
 

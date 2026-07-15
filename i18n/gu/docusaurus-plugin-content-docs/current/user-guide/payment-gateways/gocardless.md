@@ -3,7 +3,7 @@ title: GoCardless ગેટવે
 sidebar_position: 8
 _i18n_hash: dbf9269ae462e506432cf441e86b9647
 ---
-# GoCardless ગેટવે {#gocardless-gateway}
+# GoCardless ગેટવે
 
 આ ફીચર **GoCardless** એડઓન દ્વારા પ્રદાન કરવામાં આવે છે.
 

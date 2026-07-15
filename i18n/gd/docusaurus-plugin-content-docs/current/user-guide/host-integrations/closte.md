@@ -3,7 +3,7 @@ title: Còmhlaidais Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration {#closte-integration}
+# Closte Integration
 
 ## Aims (Overview) {#overview}
 Closte is a platform airson WordPress a tha a th'annachdaidh Google Cloud infrastructure. Tha an tòisich seo a' bheachd a' chluichdachadh domhainn (domain syncing) agus leithid an SSL certificate gu sònraichte air a' chluichdachadh a' mheasdaidh Ultimate Multisite agus Closte.

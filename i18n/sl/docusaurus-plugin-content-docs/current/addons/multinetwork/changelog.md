@@ -3,7 +3,7 @@ title: Dnevnik sprememb za več omrežij
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Dnevnik sprememb Multi-Network {#multi-network-changelog}
+# Dnevnik sprememb Multi-Network
 
 ### 1.3.0 {#130}
 * Novo: Predogledovalnik omrežnih predlog — brskajte po omrežnih predlogah in si jih oglejte v predogledu z živim panelom pred nakupom.

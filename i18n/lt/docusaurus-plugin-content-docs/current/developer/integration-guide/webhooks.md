@@ -3,7 +3,7 @@ title: Webhook apdorojimas
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook apdorojimas {#webhook-handling}
+# Webhook apdorojimas
 
 Sukurkite pasirinktinius webhook galinius taškus, kad gautumėte įvykius iš išorinių paslaugų ir sinchronizuotumėte duomenis su Ultimate Multisite.
 

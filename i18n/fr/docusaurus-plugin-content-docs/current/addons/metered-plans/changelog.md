@@ -3,7 +3,7 @@ title: Journal des modifications des forfaits facturés à l’usage
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Journal des modifications de Metered Plans {#metered-plans-changelog}
+# Journal des modifications de Metered Plans
 
 Version 1.1.0 - Publiée le 2026-05-05
 - Nouveau : facturation des tokens AI pour les sous-sites multisite — suivez et facturez l’utilisation des tokens AI sur les sites clients avec des tarifs configurables par token

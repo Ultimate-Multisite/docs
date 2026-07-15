@@ -3,7 +3,7 @@ title: Åtkomst till Kontosidan
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Hur kommer jag åt mitt konto för första gången? {#how-can-i-access-my-account-page-for-the-first-time}
+# Hur kommer jag åt mitt konto för första gången?
 
 Välkommen till Ultimate Multisite!
 

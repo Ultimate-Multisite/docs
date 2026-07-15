@@ -3,7 +3,7 @@ title: Захиалгат Gateway хөгжүүлэлт
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway хөгжүүлэлт {#custom-gateway-development}
+# Custom Gateway хөгжүүлэлт
 
 Та `Base_Gateway` классыг өргөтгөн custom төлбөрийн gateway үүсгэж болно.
 

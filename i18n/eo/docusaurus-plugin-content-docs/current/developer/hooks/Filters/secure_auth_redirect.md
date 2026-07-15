@@ -4,7 +4,7 @@ title: Filtrilo - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtrilo: secure_auth_redirect {#filter-secureauthredirect}
+# Filtrilo: secure_auth_redirect
 
 Filtras ĉu uzi sekuran aŭtentikigan alidirekton.
 

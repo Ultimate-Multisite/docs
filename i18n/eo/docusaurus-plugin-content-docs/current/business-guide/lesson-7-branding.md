@@ -3,7 +3,7 @@ title: 'Leciono 7: Igi ĝin via'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leciono 7: Fari Ĝin Via {#lesson-7-making-it-yours}
+# Leciono 7: Fari Ĝin Via
 
 Viaj klientoj neniam devus senti, ke ili uzas "ian WordPress kromprogramon." Ili devus senti, ke ili uzas FitSite -- platformon konstruitan por ilia industrio. Ĉi tiu leciono pritraktas markigon, blankmarkigon, kaj kiel igi la platformon sentiĝi kiel produkto.
 

@@ -3,7 +3,7 @@ title: Ho Seta Litefo tsa Matsoho
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ho Hloma Ditefo tsa Ka Letsoho (v2) {#setting-up-manual-payments-v2}
+# Ho Hloma Ditefo tsa Ka Letsoho (v2)
 
 _**TEMOSO YA BOHLOKWA: Sehlooho sena se bua ka mofuta wa Ultimate Multisite 2.x.**_
 

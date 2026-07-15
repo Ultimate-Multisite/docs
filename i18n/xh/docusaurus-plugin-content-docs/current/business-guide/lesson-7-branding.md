@@ -3,7 +3,7 @@ title: 'Isifundo 7: Ukuyenza ibe yeyakho'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Isifundo 7: Ukwenza Ibe Yeyakho {#lesson-7-making-it-yours}
+# Isifundo 7: Ukwenza Ibe Yeyakho
 
 Abathengi bakho mabangaze bazive ngathi basebenzisa "iplagi ethile ye-WordPress." Kufuneka bazive ngathi basebenzisa i-FitSite -- iqonga elakhelwe ishishini labo. Esi sifundo sigubungela ukubeka uphawu, i-white-labeling, nokwenza iqonga livakale njengemveliso.
 

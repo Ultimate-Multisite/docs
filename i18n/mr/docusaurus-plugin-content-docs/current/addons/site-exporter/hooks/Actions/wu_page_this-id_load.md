@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# Action: wu_page_\{$this->id\}_load
 
 प्लगइन डेव्हलपर्सना विशिष्ट पानावर अतिरिक्त हुक्स (hooks) जोडण्याची परवानगी देते.
 

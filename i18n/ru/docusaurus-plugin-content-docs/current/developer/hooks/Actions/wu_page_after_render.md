@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Действие: wu_page_after_render {#action-wupageafterrender}
+# Действие: wu_page_after_render
 
 Позволяет разработчикам плагинов добавлять дополнительный контент после того, как мы выводим страницу
 

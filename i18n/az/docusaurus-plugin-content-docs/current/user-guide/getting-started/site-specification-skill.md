@@ -3,7 +3,7 @@ title: Sayt Spesifikasiya Bacarığı
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sayt Təsviri Bacarığı {#site-specification-skill}
+# Sayt Təsviri Bacarığı
 
 **Sayt Təsviri bacarığı**, saytınızın məqsədlərini, auditoriyasını və brend kimliyini ələ keçirmək üçün strukturlaşdırılmış bir yanaşmadır. Bu məlumat **site_brief** yaddaşınızda saxlanılır və agentlər bu məlumatı sessiyalar boyunca istifadə edərək tutarlı, kontekstə uyğun kömək göstərir.
 

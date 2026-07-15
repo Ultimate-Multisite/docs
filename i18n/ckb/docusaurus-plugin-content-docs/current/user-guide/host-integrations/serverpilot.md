@@ -3,7 +3,7 @@ title: یەکگرتووکردنی ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Entegrasyonê bi ServerPilot {#serverpilot-integration}
+# Entegrasyonê bi ServerPilot
 
 ## Overwate {#overview}
 

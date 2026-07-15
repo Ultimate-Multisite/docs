@@ -3,7 +3,7 @@ title: Hook-en erreferentzia
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks erreferentzia {#hooks-reference}
+# Hooks erreferentzia
 
 Ultimate Multisite-ko **59 ekintza** eta **118 iragazki** guztien automatikoki sortutako dokumentazioa.
 

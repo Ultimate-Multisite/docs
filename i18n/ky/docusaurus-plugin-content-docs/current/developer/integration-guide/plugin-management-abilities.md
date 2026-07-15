@@ -3,7 +3,7 @@ title: Плагиндерди башкаруу мүмкүнчүлүктөрү
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Плагинди башкаруу мүмкүнчүлүктөрү {#plugin-management-abilities}
+# Плагинди башкаруу мүмкүнчүлүктөрү
 
 Gratis AI Agent v1.5.0 сүйлөшүү учурунда AI жардамчы чакыра ала турган **плагинди башкаруунун 7 мүмкүнчүлүгү** менен келет. Бул мүмкүнчүлүктөр [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) аркылуу орнотулган WordPress плагиндерин программалык түрдө башкарууну камсыздайт.
 

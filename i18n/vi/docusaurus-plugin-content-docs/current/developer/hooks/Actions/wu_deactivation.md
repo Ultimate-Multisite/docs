@@ -4,7 +4,7 @@ title: Hành động - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 Cho phép các thành phần khác của plugin gắn các logic cần chạy khi plugin bị vô hiệu hóa (deactivation).
 

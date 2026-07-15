@@ -3,7 +3,7 @@ title: چۆنی چۆنی WordPress Multisite دامەزرێنیت
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# چۆن WordPress Multisite دامەسازم؟ {#how-do-i-install-wordpress-multisite}
+# چۆن WordPress Multisite دامەسازم؟
 
 WordPress Multisite به شما اجازه دەدات یەک جۆر لە سایتەکان لەسەر جێبەجێکردنی تاکێک هەبێت. ئەمە تایبەتمەندییەکی ناوخۆییە، بەڵام بە شێوەی پیش‌تەکی چالاک نییە.
 

@@ -3,7 +3,7 @@ title: የበይነመረብ ፍለጋ
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# የኢንተርኔት ፍለጋ {#internet-search}
+# የኢንተርኔት ፍለጋ
 
 Gratis AI Agent v1.5.0 በውይይት ወቅት ከዌብ ላይ ወቅታዊ መረጃዎችን እንዲሰበስብ የሚያስችል **የኢንተርኔት ፍለጋ** ችሎታን ይጨምራል። ይህ ችሎታ የሚንቀሳቀሰው በ[Brave Search API](https://brave.com/search/api/) ወይም በ[Tavily API](https://tavily.com/) ነው።
 

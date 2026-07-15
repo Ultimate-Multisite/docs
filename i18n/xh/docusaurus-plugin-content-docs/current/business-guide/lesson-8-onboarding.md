@@ -3,7 +3,7 @@ title: 'Isifundo 8: Ukuqhelaniswa kwabathengi'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Isifundo 8: Ukwamkelwa nokuqaliswa kwabathengi {#lesson-8-customer-onboarding}
+# Isifundo 8: Ukwamkelwa nokuqaliswa kwabathengi
 
 Ukwenza umthengi abhalise sisiqingatha kuphela somsebenzi. Ukuba bangena, bazive begqithiselwe zizinto ezininzi, baze bangaphindi babuye, sele ubalahlekile. Esi sifundo siyila amava aguqula ukubhalisa okutsha kube ngumthengi osebenzayo nonomdla.
 

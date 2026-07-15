@@ -3,7 +3,7 @@ title: Færslustöðu á Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Innleiðingarprosessi {#theme-builder-onboarding-flow}
+# Theme Builder Innleiðingarprosessi
 
 Superdav AI Agent v1.12.0 býður upp á stjórnað **innleiðingarprosess** fyrir Theme Builder, sem hjálpar þér að skapa sérsniðna blokkþema í fyrsta uppsetningu. Þetta erskýr því gamla Site Builder modli og er meiri hlutverkssamræmi með hjálp af agenti.
 

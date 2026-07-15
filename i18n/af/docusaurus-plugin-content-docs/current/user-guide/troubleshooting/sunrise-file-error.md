@@ -3,7 +3,7 @@ title: Sunrise Bestand Fout
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fout by die Installeer van die Sunrise-lêr {#error-installing-the-sunrise-file}
+# Fout by die Installeer van die Sunrise-lêr
 
 Die sunrise.php lêr is 'n spesiale lêr wat WordPress soek wanneer dit self opblaas (bootstraps). Vir WordPress om die sunrise.php lêr te kan opspoor, moet dit binne die **wp-content-maatskappy** gevind word.
 

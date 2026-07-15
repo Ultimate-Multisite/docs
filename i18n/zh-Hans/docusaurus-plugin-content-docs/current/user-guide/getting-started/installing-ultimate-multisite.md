@@ -3,7 +3,7 @@ title: 安装 Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# 安装 Ultimate Multisite {#installing-ultimate-multisite}
+# 安装 Ultimate Multisite
 
 :::note
 本教程假设您已经安装并配置了 WordPress 多站点。要了解如何操作，请查看 WP Beginner 的 [这篇教程](https://www.wpbeginner.com/glossary/multisite/)。

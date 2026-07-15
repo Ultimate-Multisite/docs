@@ -4,7 +4,7 @@ title: Аракет - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Аракет: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Аракет: wu_multi_tenancy_init
 
 Көп ижаралуулук кошумчасы толук инициализациялангандан кийин иштейт.
 

@@ -4,7 +4,7 @@ title: Dejanje - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Dejanje: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Dejanje: wu_domain_mapping_register_filters
 
 Nekateri plugin-i bodo shranili URL, preden je bila preslikava aktivna, ali pa bodo URL-je zgradili na drugačen način, ki ni vključen v zgornje filtre.
 

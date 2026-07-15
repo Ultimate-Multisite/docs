@@ -3,7 +3,7 @@ title: Mga Template ng Site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Mga Site Templates (v2) {#site-templates-v2}
+# Mga Site Templates (v2)
 
 _**TANDAAN: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x. Kung gumagamit ka ng version 1.x,**_ **tingnan ang artikulong ito** _**.**_
 

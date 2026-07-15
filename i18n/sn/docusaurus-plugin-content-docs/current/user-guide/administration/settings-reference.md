@@ -3,7 +3,7 @@ title: Chinongedzo cheZvirongwa
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Chirevo cheZvirongwa {#settings-reference}
+# Chirevo cheZvirongwa
 
 Peji rino rinotevera zvirongwa zvinokanganisa manejimendi ezuva nezuva uye shanduko dzichangobva kuitika mumaitiro muUltimate Multisite.
 

@@ -3,7 +3,7 @@ title: Shigarwar ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Shigarwa na Haɗin Kai (ServerPilot Integration) {#serverpilot-integration}
+# Shigarwa na Haɗin Kai (ServerPilot Integration)
 
 ## Bayani {#overview}
 ServerPilot wuri ne na kayan a cikin cloud don samar da WordPress da wasu shafukan PHP a kan server-server kamar DigitalOcean, Amazon, Google, ko wani girmamawa na server. Wannan haɗin kai yana ba damar daidaita domain-saukar (domain syncing) da kuma sarrafa sertifika SSL tsakanin Ultimate Multisite da ServerPilot ta hanyar kawai.

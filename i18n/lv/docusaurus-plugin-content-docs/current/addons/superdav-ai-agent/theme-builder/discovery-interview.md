@@ -3,7 +3,7 @@ title: Izpētes intervija
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Izzināšanas intervija {#discovery-interview}
+# Izzināšanas intervija
 
 **Izzināšanas intervija** ir pirmais solis Theme Builder dizaina procesā. Tā apkopo informāciju par jūsu vietni, uzņēmumu un dizaina vēlmēm, lai izveidotu personalizētu tēmu.
 

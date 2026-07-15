@@ -3,7 +3,7 @@ title: تحسين تكامل لوحة التحكم
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# تكامل لوحة تحكم Enhance {#enhance-control-panel-integration}
+# تكامل لوحة تحكم Enhance
 
 ## نظرة عامة {#overview}
 Enhance هي لوحة تحكم حديثة توفر قدرات أتمتة واستضافة قوية وإدارة. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite ولوحة تحكم Enhance.

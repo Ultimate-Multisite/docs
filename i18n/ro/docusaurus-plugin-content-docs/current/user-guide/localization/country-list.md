@@ -3,7 +3,7 @@ title: Lista țărilor
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Reordonarea listei de țări din Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Reordonarea listei de țări din Ultimate Multisite
 
 Lista derulantă pentru selectarea unei țări este ordonată alfabetic pe baza denumirilor în limba engleză. Asta înseamnă că, uneori, țara de origine a companiei tale și/sau a majorității clienților tăi poate fi îngropată undeva la mijlocul unei liste imense de țări.
 

@@ -4,7 +4,7 @@ title: Suodatin - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Suodatin: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Suodatin: wu_should_create_domain_record_for_site
 
 Suodattaa, pitäisikö Ultimate Multisite luoda verkkotunnustietue vastikään luodulle sivustolle.
 

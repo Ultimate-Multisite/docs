@@ -3,7 +3,7 @@ title: Zapier സംയോജനം
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite-നെ Zapier-ുമായി സംയോജിപ്പിക്കൽ {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite-നെ Zapier-ുമായി സംയോജിപ്പിക്കൽ
 
 ഒരു ലേഖനത്തിൽ, [Webhooks](webhooks.md) കുറിച്ചും 3rd party അപ്ലിക്കേഷനുകളുമായി സംയോജിപ്പിക്കാൻ അവ എങ്ങനെ ഉപയോഗിക്കാമെന്നും ഞങ്ങൾ ചർച്ച ചെയ്തിരുന്നു.
 

@@ -4,7 +4,7 @@ title: តម្រង - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# តម្រង: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# តម្រង: wu_membership_renewal_expiration_date
 
 តម្រងកាលបរិច្ឆេទផុតកំណត់ដែលបានគណនា ដើម្បីកំណត់បន្ទាប់ពីការបន្ត។
 

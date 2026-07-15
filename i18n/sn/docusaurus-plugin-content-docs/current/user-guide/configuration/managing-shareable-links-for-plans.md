@@ -3,7 +3,7 @@ title: Kugadzira Link dzineva kune Plani
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Kuramba Kuti Linki Rino Kutiwe {#managing-shareable-links-for-plans}
+# Kuramba Kuti Linki Rino Kutiwe
 
 Ultimate Multisite inakupa chokwadi kuti unoshereva link dzako rine share (shareable links) zvakaita kuti uone kuita nekuvaka nekuda kwezvakazi vako. Iyi nzira, enda kuiri panyaya dzekutanga dzeplan yako uye ndigadzirwa "Click to copy the Shareable Link" button.
 

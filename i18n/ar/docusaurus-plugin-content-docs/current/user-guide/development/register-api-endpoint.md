@@ -3,7 +3,7 @@ title: سجل نقطة النهاية للواجهة البرمجية
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# نقطة النهاية API لتسجيل Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# نقطة النهاية API لتسجيل Ultimate Multisite
 
 في هذا الدرس، ستتعلم كيفية استخدام نقطة النهاية API /register الخاصة بـ Ultimate Multisite لإنشاء عملية الانضمام الكاملة لعميل جديد في شبكتك وكيفية القيام بذلك باستخدام Zapier.
 

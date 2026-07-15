@@ -4,7 +4,7 @@ title: Sía - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Sía: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Sía: mu_migration/export/user/headers
 
 Síar sjálfgefna safnið af hausum notenda sem á að flytja út/inn.
 

@@ -4,7 +4,7 @@ title: پاڵێوەر - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# فلتەر: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# فلتەر: wu_magic_link_enforce_user_agent
 
 فلتەر بکە کە ئایا پشتڕاستکردنەوەی user agent جێبەجێ بکرێت یان نا.
 

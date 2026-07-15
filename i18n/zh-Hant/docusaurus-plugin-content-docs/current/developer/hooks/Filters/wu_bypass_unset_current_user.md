@@ -4,7 +4,7 @@ title: 過濾器 - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# 篩選器：wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# 篩選器：wu_bypass_unset_current_user
 
 讓開發人員能夠繞過清除目前登入使用者（unset current user）的程式碼。
 

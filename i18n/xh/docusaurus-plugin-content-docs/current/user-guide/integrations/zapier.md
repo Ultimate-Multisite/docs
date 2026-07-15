@@ -3,7 +3,7 @@ title: Udibaniso lwe-Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ukudibanisa Ultimate Multisite ne Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ukudibanisa Ultimate Multisite ne Zapier
 
 Kwelinye lamanqaku, sixoxe nge [Webhooks](webhooks.md) nendlela enokusetyenziswa ngayo ukudibanisa nezicelo zamaqela esithathu.
 

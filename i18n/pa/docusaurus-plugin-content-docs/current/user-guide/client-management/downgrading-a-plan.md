@@ -3,7 +3,7 @@ title: ਕਿਸੇ ਯੋਜਨਾ ਨੂੰ ਡਾਊਨਗ੍ਰੇਡ ਕਰ
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# ਯੋਜਨਾ ਨੂੰ ਡਾਊਨਗ੍ਰੇਡ ਕਰਨਾ (v2) {#downgrading-a-plan-v2}
+# ਯੋਜਨਾ ਨੂੰ ਡਾਊਨਗ੍ਰੇਡ ਕਰਨਾ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ।**_
 

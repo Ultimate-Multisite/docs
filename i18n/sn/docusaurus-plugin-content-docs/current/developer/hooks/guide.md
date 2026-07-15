@@ -3,7 +3,7 @@ title: Gwaro Rekushandisa Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gwaro reKushandisa Hooks {#hooks-usage-guide}
+# Gwaro reKushandisa Hooks
 
 Ultimate Multisite inopa 200+ action hooks uye 280+ filter hooks. Peji rino rinofukidza hooks dzinonyanya kushandiswa nemienzaniso inoshanda. Kuti uwane referensi yakazara inogadzirwa otomatiki, tarisa mamwe mapeji muchikamu chino.
 

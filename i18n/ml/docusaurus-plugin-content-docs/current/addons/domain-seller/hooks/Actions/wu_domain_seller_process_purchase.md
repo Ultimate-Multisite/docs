@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 ചെക്ക്ഔട്ട് പൂർത്തിയാക്കിയ ശേഷം ഒരു ഡൊമെയ്ൻ വാങ്ങൽ പ്രോസസ്സ് ചെയ്യുമ്പോൾ ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

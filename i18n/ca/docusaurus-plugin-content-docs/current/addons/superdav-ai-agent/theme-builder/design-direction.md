@@ -3,7 +3,7 @@ title: Direcció de disseny
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direcció de Disseny {#design-direction}
+# Direcció de Disseny
 
 El pas de la **Direcció de Disseny** et permet revisar, refinar i finalitzar el disseny visual del teu tema abans que Theme Builder generi el tema complet.
 

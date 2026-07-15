@@ -3,7 +3,7 @@ title: سجّل Account عبر Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# الحدث: تسجيل Account عبر Zapier {#event-register-an-account-via-zapier}
+# الحدث: تسجيل Account عبر Zapier
 
 في المقالة [دمج Ultimate Multisite مع Zapier](zapier.md)، ناقشنا كيفية استخدام Zapier لتنفيذ إجراءات مختلفة داخل Ultimate Multisite بناءً على المشغلات والأحداث. في هذه المقالة، سنوضح كيف يمكنك دمج تطبيقات طرف ثالث. سنستخدم Google Sheets كمصدر للبيانات ونرسل المعلومات إلى Ultimate Multisite لتسجيل Account.
 

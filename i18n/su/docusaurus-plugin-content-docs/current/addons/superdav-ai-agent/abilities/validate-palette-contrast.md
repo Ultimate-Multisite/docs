@@ -3,7 +3,7 @@ title: Validasi Kontras Palét
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validasi Kontras Palét {#validate-palette-contrast}
+# Validasi Kontras Palét
 
 Kamampuh **Validasi Kontras Palét** mariksa pasangan warna dina palét desain anjeun pikeun kasaluyuan jeung WCAG (Web Content Accessibility Guidelines) saméméh dilarapkeun kana téma anjeun.
 

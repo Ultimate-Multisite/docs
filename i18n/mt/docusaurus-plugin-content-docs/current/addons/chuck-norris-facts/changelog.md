@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet tal-Fatti ta' Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Reġistru tal-bidliet tal-Fatti ta' Chuck Norris {#chuck-norris-facts-changelog}
+# Reġistru tal-bidliet tal-Fatti ta' Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Miżjud: Funzjonalità ta' aġġornament awtomatiku permezz tas-server tal-aġġornamenti ta' Ultimate Multisite

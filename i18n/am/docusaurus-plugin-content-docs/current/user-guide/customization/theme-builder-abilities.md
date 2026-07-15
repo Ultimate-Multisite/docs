@@ -3,7 +3,7 @@ title: ንድፍ ገንቢ አቅሞች
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# የንድፍ አቅራቢ ችሎታዎች፡ ብሎክ ንድፎችን መቅረጽ እና ማንቃት {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# የንድፍ አቅራቢ ችሎታዎች፡ ብሎክ ንድፎችን መቅረጽ እና ማንቃት
 
 Superdav AI Agent v1.12.0 ሁለት ኃይለኛ ችሎታዎችን በማቅረብ፣ ከቻት በይነገጽ በቀጥታ የራሳቸውን ብሎክ ንድፎች (block themes) እንዲፈጥሩ እና እንዲሰማሩ ያስችላል።
 

@@ -3,7 +3,7 @@ title: Ayyukan Mai Gida na Musamman
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Ammalin Kayanin (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Ammalin Kayanin (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yana ƙarin kayan aiki ga masu amfani da ikon sarauta (sovereign tenants): waɗannan subsites suna aiki da database, tsarin fayiloli (filesystem root), da bayanin wajen hanyar motsi (routing context) na kansu yayin da suke riƙe nuna daga ma'aikacin shaidar shaidar (network admin).
 

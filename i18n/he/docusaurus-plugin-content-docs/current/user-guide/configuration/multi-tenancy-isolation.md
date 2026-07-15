@@ -3,7 +3,7 @@ title: בידוד מולטי-טננטי
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# בידוד רב-שכירות (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# בידוד רב-שכירות (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 תומך בבידוד של מסד נתונים ומערכת קבצים לכל סאב-אתר עבור שוכרים בעלי ריבונות (sovereign tenants). זה שומר על נתוני השוכרים מופרדים תוך שמירה על אספקת רשת, חיוב וניהול ברמת הרשת.
 

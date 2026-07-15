@@ -3,7 +3,7 @@ title: Nhoroondo yeshanduko dzeMutengesi weDomaini
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Nhoroondo yeshanduko yeMutengesi weDomain {#domain-seller-changelog}
+# Nhoroondo yeshanduko yeMutengesi weDomain
 
 Version 1.3.0 - Yakaburitswa musi wa2026-06-02
 - Zvitsva: Yakawedzera yambiro ye network-admin kana bharanzi remutengesi zvakare weHostAfrica radzikira zvakanyanya

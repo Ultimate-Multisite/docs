@@ -3,7 +3,7 @@ title: د پراختیاکوونکي مستندات
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# د پراختیاکوونکي اسناد {#developer-documentation}
+# د پراختیاکوونکي اسناد
 
 دا لارښود پراختیاکوونکو ته هر هغه څه برابروي چې له Ultimate Multisite سره د یوځای کولو، غځولو، یا د هغې لپاره د اضافو جوړولو لپاره اړین دي. Ultimate Multisite د WordPress Multisite شبکه په د وېبپاڼې-د-خدمت-په-توګه (WaaS) پلاتفورم بدلوي.
 

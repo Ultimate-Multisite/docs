@@ -3,7 +3,7 @@ title: Izveidot atlaides kodu
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Izvēlnos kodu (v2) {#creating-discount-codes-v2}
+# Izvēlnos kodu (v2)
 
 _**SVARĪTIE PIEMĒRUMS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

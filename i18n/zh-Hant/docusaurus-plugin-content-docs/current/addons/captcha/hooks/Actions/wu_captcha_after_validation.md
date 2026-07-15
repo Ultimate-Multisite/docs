@@ -4,7 +4,7 @@ title: 動作 - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Action: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# Action: wu_captcha_after_validation
 
 在驗證驗證碼之後觸發。
 

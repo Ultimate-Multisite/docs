@@ -3,7 +3,7 @@ title: Pregled kontrolne table
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pregled Kontrolne tablice {#dashboard-overview}
+# Pregled Kontrolne tablice
 
 Ultimate Multisite ima namjenski **Dashboard** (Kontrolnu tablu) pod menijem Ultimate Multisite, a takođe dodaje widgete na Network Dashboard. U ovom članku ćemo pogledati šta ćete vidjeti na oba mjesta.
 

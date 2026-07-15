@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Action: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Action: wu_domain_seller_complete_registration
 
 చెల్లింపు (payment) ఒక స్థితికి మారినప్పుడు, అది డొమైన్ రిజిస్ట్రేషన్‌ను ట్రిగ్గర్ చేయవలసి వచ్చినప్పుడు ఇది పనిచేస్తుంది.
 

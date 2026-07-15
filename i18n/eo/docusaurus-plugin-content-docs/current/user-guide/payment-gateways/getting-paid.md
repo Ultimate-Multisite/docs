@@ -3,7 +3,7 @@ title: Ricevado de pagoj
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ricevi pagon (v2) {#getting-paid-v2}
+# Ricevi pagon (v2)
 
 _**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 

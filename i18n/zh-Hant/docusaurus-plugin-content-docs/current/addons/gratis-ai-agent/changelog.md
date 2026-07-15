@@ -3,7 +3,7 @@ title: 更新日誌
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# 更新日誌 {#changelog}
+# 更新日誌
 
 ## 1.9.0 — 發布於 2026-04-28 {#190--released-on-2026-04-28}
 

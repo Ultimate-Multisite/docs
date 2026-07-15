@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 କୌଣସି କ୍ଷେତ୍ର ସ୍ୱୟଂ-ଦାଖଲଯୋଗ୍ୟ ହେଲେ, ଯାଞ୍ଚକୁ ଏଡ଼ାଇବା ପାଇଁ ଡେଭେଲପର୍ମାନଙ୍କୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

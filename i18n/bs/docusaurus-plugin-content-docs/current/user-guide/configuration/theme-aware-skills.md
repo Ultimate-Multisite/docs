@@ -3,7 +3,7 @@ title: Tema-svjestane vještine
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tematski Svjestne Vještine {#theme-aware-skills}
+# Tematski Svjestne Vještine
 
 Superdav AI Agent v1.10.0 dolazi sa četiri nove ugrađene tematski svjestne vještine koje se automatski prilagođavaju vašoj aktivnoj WordPress temi. Ove vještine pružaju specijalizovano vođstvo i mogućnosti prilagođene arhitekturi i značajkama vaše teme.
 

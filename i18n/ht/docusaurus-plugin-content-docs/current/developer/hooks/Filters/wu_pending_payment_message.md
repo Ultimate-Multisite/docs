@@ -4,7 +4,7 @@ title: Filtre - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filtre: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filtre: wu_pending_payment_message
 
 Pèmèt itilizatè a chanje mesaj sou peman ki annatant yo.
 

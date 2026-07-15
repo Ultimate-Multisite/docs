@@ -3,7 +3,7 @@ title: Mailster Àkọsílẹ̀ Ìyípadà
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Àkọsílẹ̀ Àyípadà Mailster {#mailster-changelog}
+# Àkọsílẹ̀ Àyípadà Mailster
 
 ### 1.0.0 {#100}
 * Ìtújáde àkọ́kọ́

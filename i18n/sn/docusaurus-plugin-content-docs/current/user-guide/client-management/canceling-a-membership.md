@@ -3,7 +3,7 @@ title: Kupanga Uingombwe
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Kuitira Membershipi (v2) {#canceling-a-membership-v2}
+# Kuitira Membershipi (v2)
 
 _**CHINDIRA CHINDIRA: Iriweyi iri rinorefererwa ku Ultimate Multisite v2.x.**_
 

@@ -4,7 +4,7 @@ title: 필터 - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# 필터: get_blogs_of_user {#filter-getblogsofuser}
+# 필터: get_blogs_of_user
 
 원본 WP 필터를 여기서 복제합니다, 좋은 측정값을 위해.
 

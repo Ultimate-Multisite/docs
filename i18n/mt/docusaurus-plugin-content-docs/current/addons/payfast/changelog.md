@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet ta’ PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Reġistru tal-bidliet ta' PayFast {#payfast-changelog}
+# Reġistru tal-bidliet ta' PayFast
 
 Verżjoni: 1.0.2 - Maħruġa fl-2025-09-28
 

@@ -3,7 +3,7 @@ title: Tarihin canje-canje na Ultimate AI Connector don Endpoints masu jituwa
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector don Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector don Compatible Endpoints Changelog
 
 ## Siga 2.0.0 — An saki a 2026-04-24 {#version-200--released-on-2026-04-24}
 

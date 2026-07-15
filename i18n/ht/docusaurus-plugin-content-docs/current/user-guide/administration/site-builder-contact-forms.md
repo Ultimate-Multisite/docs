@@ -3,7 +3,7 @@ title: Fòm Kontak Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Fòms Kontak Site Builder {#site-builder-contact-forms}
+# Fòms Kontak Site Builder
 
 Superdav AI Agent v1.10.0 ajoute la kapasite de kreye fòm kontak dirèkt nan entèfas chat la itilize agent Site Builder. Sa pèmèt ou ajoute fòm kontak ki fonksyone byen sou nenpòt paj san ou pa kite chat la.
 

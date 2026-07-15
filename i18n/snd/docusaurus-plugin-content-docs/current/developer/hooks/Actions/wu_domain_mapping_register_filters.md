@@ -4,7 +4,7 @@ title: عمل - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 ڪجهه plugins URL کي mapping فعال ٿيڻ کان اڳ محفوظ ڪندا يا URLs کي اهڙي مختلف طريقي سان ٺاهيندا جيڪو مٿين filters ۾ شامل ناهي.
 

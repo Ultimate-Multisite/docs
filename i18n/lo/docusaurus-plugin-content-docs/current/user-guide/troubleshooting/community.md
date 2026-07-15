@@ -3,7 +3,7 @@ title: ຊຸມຊົນ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# ວິທີເຂົ້າຮ່ວມຊຸມຊົນ Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# ວິທີເຂົ້າຮ່ວມຊຸມຊົນ Ultimate Multisite
 
 Ultimate Multisite Community ແມ່ນບ່ອນທີ່ທ່ານສາມາດຕິດຕໍ່ກັບຜູ້ໃຊ້ Ultimate Multisite ອື່ນໆ ແລະ ແລກປ່ຽນຄຳແນະນຳ, ປະສົບການ ແລະ ສິ່ງຕ່າງໆ. ເພື່ອເຂົ້າເຖິງ Ultimate Multisite Community ກະລຸນາໄປທີ່ https://community.ultimatemultisite.com/home.
 

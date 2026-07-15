@@ -3,7 +3,7 @@ title: Kugadzira Zvinhaka uye Zvinotora
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Kurudzera neKufamba kweZvinovhu {#managing-payments-and-invoices}
+# Kurudzera neKufamba kweZvinovhu
 
 ## Zvinhanganiso zveKutanga KweMhando {#payment-settings}
 

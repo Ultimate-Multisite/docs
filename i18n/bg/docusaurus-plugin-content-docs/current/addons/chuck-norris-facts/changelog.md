@@ -3,7 +3,7 @@ title: Журнал на промените на Фактите за Чак Но
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Журнал на промените на Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Журнал на промените на Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Добавено: Автоматична функционалност за актуализация чрез сървъра за актуализации на Ultimate Multisite

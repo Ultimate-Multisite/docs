@@ -3,7 +3,7 @@ title: Forma Kontakt për Ndërtues Shtëpisë
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formularitë për Kontakt në Site Builder {#site-builder-contact-forms}
+# Formularitë për Kontakt në Site Builder
 
 Superdav AI Agent v1.10.0 shton aftësinë të krijoni formularë kontaktje direkt nga interfejsi i bisedës duke përdorur agentin e Site Builder. Kjo ju lejon të shtoni formularë kontaktje plotësisht funksionalë në çdo faqe pa u larguar nga biseda.
 

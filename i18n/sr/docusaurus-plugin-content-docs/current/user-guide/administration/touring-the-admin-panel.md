@@ -3,7 +3,7 @@ title: Pregled Administracije
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Pregledavanje admin panela {#touring-the-admin-panel}
+# Pregledavanje admin panela
 
 Ultimate Multisite tebe cilja da bude što jednostavniji i samoprocetljiviji, ali s toliko moćnim alatom može pomoći u vođenju vodiča kroz njega. Prođimo kroz admin stranice kako bismo ti pomogli da se smestiš.
 

@@ -3,7 +3,7 @@ title: Khuaws Integrasi
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Tổng quan (Overview) {#overview}
 Cloudways هو platform hosting cloud management, णू allows you to deploy WordPress sites on various cloud providers like DigitalOcean, AWS, Google Cloud, and more. Integration นี้ทำให้การซิงค์ domain อัตโนมัติและการจัดการ SSL certificate ระหว่าง Ultimate Multisite กับ Cloudways เป็นไปได้

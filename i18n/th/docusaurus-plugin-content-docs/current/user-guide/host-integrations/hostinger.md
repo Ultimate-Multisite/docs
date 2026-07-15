@@ -3,7 +3,7 @@ title: การเชื่อมต่อกับ Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# การเชื่อมต่อกับ Hostinger (hPanel) {#hostinger-hpanel-integration}
+# การเชื่อมต่อกับ Hostinger (hPanel)
 
 ## ภาพรวม {#overview}
 

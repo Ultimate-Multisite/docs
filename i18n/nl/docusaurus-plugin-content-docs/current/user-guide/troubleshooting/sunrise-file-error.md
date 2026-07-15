@@ -3,7 +3,7 @@ title: Sunrise-bestandsfout
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fout bij het installeren van het Sunrise-bestand {#error-installing-the-sunrise-file}
+# Fout bij het installeren van het Sunrise-bestand
 
 Het sunrise.php-bestand is een speciaal bestand waar WordPress naar zoekt terwijl het zichzelf opstart. Om WordPress het sunrise.php-bestand te laten detecteren, moet het zich in de **wp-content-map** bevinden.
 

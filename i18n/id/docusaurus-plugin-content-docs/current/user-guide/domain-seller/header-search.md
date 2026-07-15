@@ -3,7 +3,7 @@ title: Pencarian Domain Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pencarian Domain Header {#header-domain-search}
+# Pencarian Domain Header
 
 Gunakan pengaturan ini saat Anda menginginkan formulir header kecil yang memulai pencarian domain, lalu memungkinkan pelanggan memilih dari domain yang tersedia di dalam checkout Ultimate Multisite.
 

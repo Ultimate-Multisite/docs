@@ -3,9 +3,9 @@ title: एडऑन टेम्पलेट
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template {#addon-template}
+# Addon Template
 
-{{ADDON_DESCRIPTION}}
+एडऑन टेम्पलेट — Ultimate Multisite.
 
 ## Requirements {#requirements}
 

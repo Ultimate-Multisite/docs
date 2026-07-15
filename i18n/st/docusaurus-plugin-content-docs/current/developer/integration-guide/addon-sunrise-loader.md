@@ -3,7 +3,7 @@ title: Sesebelisoa sa Keketso sa ho Kenya Faele ea Sunrise
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Sejarolli sa Faele sa Sunrise sa Addon {#addon-sunrise-file-loader}
+# Sejarolli sa Faele sa Sunrise sa Addon
 
 Ultimate Multisite 2.8.0 e eketsa sejarolli sa katoloso ya sunrise bakeng sa di-add-on le dikopanyo tsa MU-plugin tse ikgethileng tse hlokang ho sebetsa nakong ya WordPress sunrise bootstrapping ntle le ho hlophisa faele e hlahisitsweng ya `wp-content/sunrise.php`.
 

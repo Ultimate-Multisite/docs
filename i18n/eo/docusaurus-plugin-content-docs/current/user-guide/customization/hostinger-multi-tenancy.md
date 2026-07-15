@@ -3,7 +3,7 @@ title: Hostinger Multitenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 donas uma kapasite de multi-tenancy Hostinger, ki domeno ospresentil povas partoprenui en provizio de tenanto sovraj (sovereign tenant) koin kun la ekzista integriĝo de mapado de domen Hostinger.
 

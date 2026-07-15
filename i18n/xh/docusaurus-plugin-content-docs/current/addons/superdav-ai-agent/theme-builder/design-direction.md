@@ -3,7 +3,7 @@ title: Umkhombandlela woyilo
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Icala Loyilo {#design-direction}
+# Icala Loyilo
 
 Inyathelo le-**Design Direction** likuvumela ukuba uphonononge, uphucule, kwaye ugqibezele uyilo olubonakalayo lwe-theme yakho phambi kokuba Theme Builder ivelise i-theme epheleleyo.
 

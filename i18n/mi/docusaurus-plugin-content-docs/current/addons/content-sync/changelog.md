@@ -3,7 +3,7 @@ title: Rangitaki Huringa Tukutahi Ihirangi
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Rangitaki Panonitanga Tukutahi Ihirangi {#content-sync-changelog}
+# Rangitaki Panonitanga Tukutahi Ihirangi
 
 ### Putanga 1.1.0 - I tukuna i te 2025-12-31 {#version-110---released-on-2025-12-31}
 * Hou: Tautoko mō te tukutahi i ngā momo whakairinga katoa (ngā whakairinga, ngā whārangi, ngā momo whakairinga ritenga)

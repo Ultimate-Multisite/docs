@@ -3,7 +3,7 @@ title: 'Pelajaran 3: Mengatur Jaringan Anda'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Pelajaran 3: Menyiapkan Network Anda {#lesson-3-setting-up-your-network}
+# Pelajaran 3: Menyiapkan Network Anda
 
 Saatnya membangun. Di pelajaran ini, Anda akan menginstal Ultimate Multisite dan mengonfigurasi fondasi network FitSite. Setiap keputusan di sini dibuat dengan mempertimbangkan ceruk pasar (niche) kebugaran.
 

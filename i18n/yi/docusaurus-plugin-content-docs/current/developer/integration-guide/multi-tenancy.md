@@ -3,7 +3,7 @@ title: אינטעגראַציע פֿון מולטי־טענאַנסי
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy אינטעגראַציע {#multi-tenancy-integration}
+# Multi-Tenancy אינטעגראַציע
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ענדערט עטלעכע אינטעגראַציע־רירפּונקטן פֿאַר זעלבסטשטענדיקע לאָקאַטאָרן, מיגראַציע־וועריפֿיקאַציע, און אויטאָמאַציע פֿון לאָקאַטאָר־לעבנסציקל.
 

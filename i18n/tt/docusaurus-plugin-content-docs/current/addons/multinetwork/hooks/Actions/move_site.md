@@ -4,7 +4,7 @@ title: Гамәл - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Гамәл: move_site {#action-movesite}
+# Гамәл: move_site
 
 Сайт яңа челтәргә күчерелгәннән соң эшли.
 

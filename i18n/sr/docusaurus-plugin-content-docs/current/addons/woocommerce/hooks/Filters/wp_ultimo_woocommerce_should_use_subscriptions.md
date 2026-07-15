@@ -4,7 +4,7 @@ title: Филтер - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Филтер: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Филтер: wp_ultimo_woocommerce_should_use_subscriptions
 
 Омогућава програмерима да принудно укључе коришћење WooCommerce Subscriptions.
 

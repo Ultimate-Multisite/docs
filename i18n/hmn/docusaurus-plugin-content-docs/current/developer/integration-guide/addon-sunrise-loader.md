@@ -3,7 +3,7 @@ title: Tus Thauj Ntaub Ntawv Sunrise Rau Khoom Ntxiv
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 ntxiv ib lub sunrise extension loader rau cov add-ons thiab cov kev txuas custom MU-plugin uas yuav tsum khiav thaum WordPress sunrise bootstrapping yam tsis tas kho cov ntaub ntawv `wp-content/sunrise.php` uas tsim tawm lawm.
 

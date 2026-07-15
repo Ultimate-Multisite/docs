@@ -4,7 +4,7 @@ title: ક્રિયા - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Action: add_network {#action-addnetwork}
+# Action: add_network
 
 જ્યારે કોઈ નવું નેટવર્ક ઉમેરવામાં આવે છે, ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

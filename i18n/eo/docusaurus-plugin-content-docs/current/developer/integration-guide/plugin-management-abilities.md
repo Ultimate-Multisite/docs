@@ -3,7 +3,7 @@ title: Kapabloj pri mastrumado de kromprogramoj
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kapabloj pri Administrado de Kromprogramoj {#plugin-management-abilities}
+# Kapabloj pri Administrado de Kromprogramoj
 
 Gratis AI Agent v1.5.0 liveriĝas kun **7 kapabloj pri administrado de kromprogramoj**, kiujn la AI-asistanto povas alvoki dum konversacio. Tiuj kapabloj provizas programeblan kontrolon super WordPress-kromprogramoj instalitaj per la [Kromprograma Konstruilo kaj Sablokesta Sistemo](../../user-guide/administration/plugin-builder-and-sandbox).
 

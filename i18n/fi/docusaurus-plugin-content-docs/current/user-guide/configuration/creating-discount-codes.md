@@ -3,7 +3,7 @@ title: Alennuskoodien luominen
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Alennin luominen alennuskoodeja (v2) {#creating-discount-codes-v2}
+# Alennin luominen alennuskoodeja (v2)
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 

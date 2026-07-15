@@ -4,7 +4,7 @@ title: アクション - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# アクション: wu_flush_known_caches {#action-wuflushknowncaches}
+# アクション: wu_flush_known_caches
 
 追加のクリーンアップへのフック
 

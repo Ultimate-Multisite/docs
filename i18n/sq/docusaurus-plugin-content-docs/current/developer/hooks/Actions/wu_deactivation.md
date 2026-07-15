@@ -4,7 +4,7 @@ title: Veprim - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Veprim: wu_deactivation {#action-wudeactivation}
+# Veprim: wu_deactivation
 
 Lejo pjesë të tjera të plugin-it të bashkëngjisin rutinat e tyre për çaktivizim
 

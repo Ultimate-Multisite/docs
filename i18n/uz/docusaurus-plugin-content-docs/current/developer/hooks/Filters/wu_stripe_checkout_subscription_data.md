@@ -4,7 +4,7 @@ title: Filtr - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filtr: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filtr: wu_stripe_checkout_subscription_data
 
 Stripe Subscription ma’lumotlarini filtrlaydi. success_url yoki cancel_url qiymatini qayta belgilashi mumkin.
 

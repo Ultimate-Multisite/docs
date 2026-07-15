@@ -3,7 +3,7 @@ title: بۆچی Ultimate Multisite؟
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# بۆچی Ultimate Multisite {#why-ultimate-multisite}
+# بۆچی Ultimate Multisite
 
 ئەگەر تا ئێستا ئەم بابەتان لەبەرچاو کردووە، ئەوا ڕەنگە گوێی دەدات کە پلاتینی ئێمە چارەسەرەکەی بۆ ئەوەیە کە بیرۆکەی کارپێچوونەکەت بە ڕاستی بێت. هیوا دەکەین لە کۆتایی ئەم بابەتە ئەو وەڵامان پێ بدەن کە پێویستن.
 

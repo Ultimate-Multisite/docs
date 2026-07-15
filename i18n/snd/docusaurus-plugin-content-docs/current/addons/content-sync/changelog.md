@@ -3,7 +3,7 @@ title: مواد هم وقت سازي تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync تبديلي لاگ {#content-sync-changelog}
+# Content Sync تبديلي لاگ
 
 ### ورزن 1.1.0 - 2025-12-31 تي جاري ڪيو ويو {#version-110---released-on-2025-12-31}
 * نئون: سڀني پوسٽ قسمن کي sync ڪرڻ لاءِ سهائتا (پوسٽون، صفحا، custom post types)

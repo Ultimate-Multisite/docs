@@ -3,7 +3,7 @@ title: 主權遷移驗證
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# 主權遷移驗證 {#sovereign-migration-verification}
+# 主權遷移驗證
 
 Ultimate Multisite：多租戶系統 1.2.0 內建了用於主權租戶遷移的 WP-CLI 驗證指令。當租戶遷移、SSO 訪問或獨立安裝沒有按預期運作時，請使用這些指令進行檢查。
 

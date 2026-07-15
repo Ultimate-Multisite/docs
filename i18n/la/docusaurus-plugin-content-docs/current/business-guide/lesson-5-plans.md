@@ -3,7 +3,7 @@ title: 'Lectio 5: Consilia tua designare'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lectio 5: Consilia Tua Designare {#lesson-5-designing-your-plans}
+# Lectio 5: Consilia Tua Designare
 
 Gradus consiliorum tuorum non sunt tantum gradus pretii -- sunt imago modi quo clientes tui proprii revera operantur. In hac lectione designabis gradus productorum qui veris necessitatibus negotiorum exercitationis corporis in diversis statibus respondeant.
 

@@ -4,7 +4,7 @@ title: පෙරහන - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 මුරපදවල විශේෂ අක්ෂර අවශ්‍යද යන්න පෙරන්න.
 

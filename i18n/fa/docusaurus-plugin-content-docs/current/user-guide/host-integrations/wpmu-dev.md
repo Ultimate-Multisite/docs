@@ -3,7 +3,7 @@ title: یکپارچه‌سازی WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# یکپارچه‌سازی با WPMU DEV {#wpmu-dev-integration}
+# یکپارچه‌سازی با WPMU DEV
 
 ## نمای کلی {#overview}
 WPMU DEV یک پلتفرم جامع وردپرس است که خدمات هاستینگ، افزونه‌ها و سرویس‌های مختلفی را برای سایت‌های وردپرسی ارائه می‌دهد. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و هاستینگ WPMU DEV فراهم می‌کند.

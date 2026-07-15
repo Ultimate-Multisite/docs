@@ -4,7 +4,7 @@ title: வடிப்பான் - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 சரிபார்க்க வேண்டிய திட்டத்தின் (plan) ID-ஐ இது வடிகட்டுகிறது. இது இருந்தால், புதிய சந்தா இந்தத் திட்டத்தையே பயன்படுத்தும்.
 

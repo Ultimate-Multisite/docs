@@ -3,7 +3,7 @@ title: WP Engine انٽيغريشن
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integration {#wp-engine-integration}
+# WP Engine Integration
 
 ## جائزہ (Overview) {#overview}
 WP Engine هڪ پریميم مانيجڊ ورڊپريس هاستينگ پليٽ فارم آهي جيڪو ورڊپريس سائٽن لاءِ بهترين پرفارمنس، سيڪيورٽي ۽ سڪيليبلٽي فراهم ڪري ٿو. هي ان انٽيغريشن جي مدد سان Ultimate Multisite ۽ WP Engine جو آڊين سمڪڻ (domain syncing) خود بخود ٿئي ٿو.

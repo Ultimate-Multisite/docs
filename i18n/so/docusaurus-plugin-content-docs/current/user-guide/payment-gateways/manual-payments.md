@@ -3,7 +3,7 @@ title: Dejinta Lacag-bixinnada Gacanta
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Dejinta Lacag-bixinno Gacan-ku-samays ah (v2) {#setting-up-manual-payments-v2}
+# Dejinta Lacag-bixinno Gacan-ku-samays ah (v2)
 
 _**OGEYSIIS MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 

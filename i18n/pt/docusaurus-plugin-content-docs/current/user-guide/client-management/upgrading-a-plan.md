@@ -3,7 +3,7 @@ title: Atualizando um Plano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Atualizando um Plano (v2) {#upgrading-a-plan-v2}
+# Atualizando um Plano (v2)
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 

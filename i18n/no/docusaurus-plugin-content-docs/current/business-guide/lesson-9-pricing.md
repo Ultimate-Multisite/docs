@@ -3,7 +3,7 @@ title: 'Leksjon 9: Prissetting for profitt'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leksjon 9: Prissetting for profitt {#lesson-9-pricing-for-profit}
+# Leksjon 9: Prissetting for profitt
 
 I Leksjon 5 satte vi de første prisene for FitSite-planene. Nå forfiner vi prissettingen med teknikker som øker inntektene, oppmuntrer til oppgraderinger og reduserer frafall.
 

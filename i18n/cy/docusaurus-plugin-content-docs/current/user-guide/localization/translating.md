@@ -3,7 +3,7 @@ title: Cyfieithu Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Cyfieithu Ultimate Multisite {#translating-ultimate-multisite}
+# Cyfieithu Ultimate Multisite
 
 Mae Ultimate Multisite wedi'i ddatblygu yn Gymraeg, ond mae'r plugin yn llawn i ddarlledu ac yn chaelwnn cyfrannau darlledu yn ddiogel.
 

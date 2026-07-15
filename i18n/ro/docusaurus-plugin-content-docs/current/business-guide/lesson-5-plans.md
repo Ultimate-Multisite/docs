@@ -3,7 +3,7 @@ title: 'Lecția 5: Proiectarea Planurilor Tale'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lecția 5: Crearea Nivelurilor de Plan {#lesson-5-designing-your-plans}
+# Lecția 5: Crearea Nivelurilor de Plan
 
 Nivelurile de plan pe care le creezi nu sunt doar simple niveluri de preț — ele reflectă modul în care clienții tăi de nișă funcționează cu adevărat. În această lecție, vei proiecta pachete de produse care să se potrivească nevoilor reale ale afacerilor din domeniul fitness, indiferent de etapa în care se află.
 

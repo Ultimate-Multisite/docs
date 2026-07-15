@@ -3,7 +3,7 @@ title: Amakuru
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Amakuru ya Ultimate Multisite {#ultimate-multisite-requirements}
+# Amakuru ya Ultimate Multisite
 
 Icyo ugiye kugenda mbere y'uko wumva ko hari iki cyo gukoresha plugin yetwe Ultimate Multisite? Murakoze, hari ibyerekezo byiza by'ingenzi gukoresha Ultimate Multisite: **domain name**, umuyobozi mwiza (hosting provider) n'ikoreshwa ya WordPress y'Umuvugizi (Multisite). Icyo ni cyose ukwibona!
 

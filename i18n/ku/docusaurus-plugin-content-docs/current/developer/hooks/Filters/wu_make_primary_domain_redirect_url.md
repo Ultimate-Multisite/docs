@@ -4,7 +4,7 @@ title: Parzûn - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Parzûn: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Parzûn: wu_make_primary_domain_redirect_url
 
 URL-ya vegerandinê piştî ku domain wekî sereke tê kirin parzûn dike.
 

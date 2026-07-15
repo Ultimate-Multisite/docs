@@ -3,7 +3,7 @@ title: 'Leksjon 5: Designe dine planer'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leksjon 5: Designe Planene Dine {#lesson-5-designing-your-plans}
+# Leksjon 5: Designe Planene Dine
 
 Plan-nivåene dine er ikke bare prispunkter – de er en refleksjon av hvordan dine nisje-kunder faktisk opererer. I denne leksjonen skal du designe produktnivåer som matcher de virkelige behovene til treningsbedrifter i ulike faser.
 

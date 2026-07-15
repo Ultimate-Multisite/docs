@@ -3,7 +3,7 @@ title: Ketidakcocokan yang Diketahui
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Ketidakcocokan yang Diketahui dengan Plugin Lain {#known-incompatibilities-with-other-plugins}
+# Ketidakcocokan yang Diketahui dengan Plugin Lain
 
 Setelah menginstal dan mengaktifkan Ultimate Multisite, Anda mungkin menemui masalah akibat ketidakcocokan dengan plugin lain yang belum teratasi.
 

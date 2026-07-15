@@ -3,7 +3,7 @@ title: API エンドポイントを登録
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API エンドポイント {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API エンドポイント
 
 このチュートリアルでは、Ultimate Multisite /register API エンドポイントを使用して、ネットワーク内の新規顧客のオンボーディングプロセス全体を作成し、Zapierでそれを実行する方法を学びます。
 

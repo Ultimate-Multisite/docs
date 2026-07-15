@@ -4,7 +4,7 @@ title: ક્રિયા - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 જ્યારે ચેકઆઉટ પૂર્ણ થયા પછી ડોમેન ખરીદીની પ્રક્રિયા થઈ રહી હોય ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

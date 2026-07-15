@@ -3,7 +3,7 @@ title: Al'umma
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# چکار کنیم که به برادری Ultimate Multisite ملحق شویم {#how-to-join-ultimate-multisite-community}
+# چکار کنیم که به برادری Ultimate Multisite ملحق شویم
 
 برادری Ultimate Multisite جایی است که شما می‌توانید با سایر کاربران Ultimate Multisite در ارتباط باشید و نکات، تجربیات و موارد دیگر را به اشتراک بگذارید. برای دسترسی به برادری Ultimate Multisite به آدرس https://community.ultimatemultisite.com/home بروید.
 

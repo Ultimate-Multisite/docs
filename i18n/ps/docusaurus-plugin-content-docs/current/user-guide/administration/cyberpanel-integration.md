@@ -3,7 +3,7 @@ title: سایبرپینل همغږي
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 دا راهنما توضیح ورکړم چې څنګه Ultimate Multisite CyberPanel integration تنظیم کړئ ترڅو د شبکې ته په موندل شوي دومینहरू (mapped domains) په CyberPanel کې د مجازی میزبانونو (virtual hosts) په توګه د خودکار اضافه کولو او اخیستنې لپاره تنظیم شي، او اختیاريweise له Let's Encrypt له لارې خودکار SSL ورکولو هم ممکن دی.
 

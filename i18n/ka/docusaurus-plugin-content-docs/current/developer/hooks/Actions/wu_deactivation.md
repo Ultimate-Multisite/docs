@@ -4,7 +4,7 @@ title: მოქმედება - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# მოქმედება: wu_deactivation {#action-wudeactivation}
+# მოქმედება: wu_deactivation
 
 საშუალება მიეცით plugin-ის სხვა ნაწილებს, მიამაგრონ თავიანთი რუტინები დეაქტივაციისთვის
 

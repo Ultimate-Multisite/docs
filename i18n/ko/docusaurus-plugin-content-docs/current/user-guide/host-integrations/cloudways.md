@@ -3,7 +3,7 @@ title: Cloudways 통합
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways 통합 {#cloudways-integration}
+# Cloudways 통합
 
 ## 개요 {#overview}
 Cloudways는 DigitalOcean, AWS, Google Cloud 등 다양한 클라우드 제공업체에 WordPress 사이트를 배포할 수 있게 해주는 관리형 클라우드 호스팅 플랫폼입니다. 이 통합은 Ultimate Multisite와 Cloudways 간의 자동 도메인 동기화 및 SSL 인증서 관리를 가능하게 합니다.

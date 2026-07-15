@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# ක්‍රියාව: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# ක්‍රියාව: wu_admin_pages_extra_metaboxes
 
 ප්ලගින සංවර්ධකයන්ට නව මෙටා පෙට්ටි විකල්ප එක් කිරීමට ඉඩ දෙයි =)
 

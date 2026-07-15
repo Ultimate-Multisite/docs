@@ -3,7 +3,7 @@ title: Kohandatud arendusabi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kuidas saada oma eritihteise arendusabi? {#how-to-get-custom-development-help-from-codeable}
+# Kuidas saada oma eritihteise arendusabi?
 
 Mõnikord meil on vaja tõesti hästi kohandatud lahendusi, et meie võrereklaid täpselt nii nagu me soovisime. Kui otsite mida, siis soovitamme [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), kus leiate kogemustatud arendajad Ultimate Multisite ekspertiididega.
 

@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog {#action-addusertoblog}
+# Action: add_user_to_blog
 
 အသုံးပြုသူတစ်ဦးကို ဝဘ်ဆိုဒ်တစ်ခုသို့ ထည့်လိုက်သည်နှင့် ချက်ချင်း အလုပ်လုပ်ပါသည်။
 

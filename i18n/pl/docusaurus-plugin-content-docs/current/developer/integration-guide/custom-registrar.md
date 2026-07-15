@@ -3,7 +3,7 @@ title: Tworzenie niestandardowej integracji rejestratora
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Tworzenie niestandardowej integracji rejestratora {#building-a-custom-registrar-integration}
+# Tworzenie niestandardowej integracji rejestratora
 
 Addon Domain Seller wykorzystuje wzorzec **Rejestru Integracji** (Integration Registry). Każdy rejestrator to klasa PHP, która implementuje `Domain_Selling_Capability` i rejestruje się za pomocą hooka akcji `wu_domain_seller_register_capabilities`.
 

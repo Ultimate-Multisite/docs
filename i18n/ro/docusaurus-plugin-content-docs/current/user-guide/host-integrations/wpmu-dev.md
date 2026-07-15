@@ -3,7 +3,7 @@ title: Integrare WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrarea WPMU DEV {#wpmu-dev-integration}
+# Integrarea WPMU DEV
 
 ## Prezentare generală {#overview}
 WPMU DEV este o platformă completă pentru WordPress care oferă găzduire, plugin-uri și servicii pentru site-uri WordPress. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și găzduirea WPMU DEV.

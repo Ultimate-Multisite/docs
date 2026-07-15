@@ -3,7 +3,7 @@ title: Site Exporter Changelog
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# ਸਾਈਟ ਐਕਸਪੋਰਟਰ ਚੇਂਜਲੌਗ {#site-exporter-changelog}
+# ਸਾਈਟ ਐਕਸਪੋਰਟਰ ਚੇਂਜਲੌਗ
 
 Version: 1.0.6 - ਜਾਰੀ ਹੋਇਆ 2026-05-11
 * ਨਵਾਂ: ਸਾਈਟ ਐਕਸਪੋਰਟ ਹੁਣ ਇੱਕ ਆਪ-ਸ਼ੁਰੂ ਹੋਣ ਵਾਲਾ index.php ਨਾਲ ਪਾਉਂਦੇ ਹਨ, ਤਾਂ ਜੋ ZIP ਨੂੰ ਕਿਸੇ ਨਵੇਂ ਹੋਸਟ 'ਤੇ ਵੱਖਰੇ plugin ਇੰਸਟਾਲ ਕੀਤੇ ਬਿਨਾਂ ਲਗਾ ਸਕਿਆ ਜਾ ਸਕੇ।

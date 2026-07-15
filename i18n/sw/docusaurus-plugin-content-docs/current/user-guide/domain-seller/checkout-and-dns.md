@@ -3,7 +3,7 @@ title: Sehemu ya Malipo na DNS ya Mteja
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Uwanja wa Malipo na Usimamizi wa DNS wa Wateja {#checkout-field-and-customer-dns-management}
+# Uwanja wa Malipo na Usimamizi wa DNS wa Wateja
 
 ## Uwanja wa malipo wa Uteuzi wa Kikoa {#the-domain-selection-checkout-field}
 

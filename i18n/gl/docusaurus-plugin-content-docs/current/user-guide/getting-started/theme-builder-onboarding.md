@@ -3,7 +3,7 @@ title: Flujo de incorporación del Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxo de Onboarding do Theme Builder {#theme-builder-onboarding-flow}
+# Fluxo de Onboarding do Theme Builder
 
 O Superdav AI Agent v1.12.0 introduce un **fluxo guiado de onboarding do Theme Builder** que axuda a crear un tema de bloco personalizado durante a súa configuración inicial. Isto substitú o modo Site Builder antigo por unha forma máis flexible e asistida por agente.
 

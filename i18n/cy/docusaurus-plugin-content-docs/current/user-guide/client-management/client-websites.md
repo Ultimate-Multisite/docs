@@ -3,7 +3,7 @@ title: Gwefan Cliention
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Mae'r Gweithredoeddau Cyflenwyr (v2) {#your-clients-websites-v2}
+# Mae'r Gweithredoeddau Cyflenwyr (v2)
 
 Ar ôl cael eich cyfrannu ar gyfer y rheol, gall y gallu eich cleientau cyffredin i'w dashboard.
 

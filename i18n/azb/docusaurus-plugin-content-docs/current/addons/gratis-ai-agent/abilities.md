@@ -3,7 +3,7 @@ title: Qabiliyyə Referansı
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities Reference {#abilities-reference}
+# Abilities Reference
 
 Abilities are those küçük eylemlerdir ki Gratis AI Agent sizin WordPress kurulumunuzda kullanabilir. Her bir ability, JSON schema'yı açan kayıtlı bir PHP sınıfıdır; ajan bu şemayı çalışma anında okuyarak hangi parametrelerin gerektiğini ve ability'nin ne döndüreceğini anlar.
 

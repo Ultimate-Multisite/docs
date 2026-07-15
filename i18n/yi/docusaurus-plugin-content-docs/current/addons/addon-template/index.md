@@ -3,9 +3,9 @@ title: צוגאב־מוסטער
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# אַדאָן מוסטער {#addon-template}
+# אַדאָן מוסטער
 
-{{ADDON_DESCRIPTION}}
+צוגאב־מוסטער — Ultimate Multisite.
 
 ## פֿאָדערונגען {#requirements}
 

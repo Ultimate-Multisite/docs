@@ -3,7 +3,7 @@ title: سولانی مستو کارونه
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operations {#sovereign-tenant-operations}
+# Sovereign Tenant Operations
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 د دې لپاره عملیاتي ابزارونه اضافه کړل چې ساروقي (sovereign) مستأجرانو لپاره کارول شي: زیرمجموعې سایتونه چې خپل ځانګړی ډیتابیس، فایل سیسټको ریشه، او روټینګ سیاقته لري، پداسې حال کې چې د شبکه مدیرونو له لوري ښکاره وي.
 

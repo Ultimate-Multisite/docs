@@ -3,7 +3,7 @@ title: Kufunsa Kufuna Design System Aesthetics Skills
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kufunso Kufunso kwa Design System Aesthetics Skill {#design-system-aesthetics-skill}
+# Kufunso Kufunso kwa Design System Aesthetics Skill
 
 **Design System Aesthetics skill** ndi njira yomwe imaperekera kuti mupereke chithunzi cha sitini chanu. Imapandukira kuti mupeza zolembedwa za mpira wopanga (typography), miyambo ya chinthu (color), kusunga m'malo (spacing), ndi zolemba za kutayira (motion tokens) zomwe zimapanga design system yanu.
 

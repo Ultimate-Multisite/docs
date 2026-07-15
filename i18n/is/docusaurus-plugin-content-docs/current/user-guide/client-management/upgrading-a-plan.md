@@ -3,7 +3,7 @@ title: Uppgrunnding staðar
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Uppgradering ein Plan (v2) {#upgrading-a-plan-v2}
+# Uppgradering ein Plan (v2)
 
 _**VIKTIG MERKNAD: Þessi grein er aðalmenningurinn fyrir Ultimate Multisite v2.x.**_
 

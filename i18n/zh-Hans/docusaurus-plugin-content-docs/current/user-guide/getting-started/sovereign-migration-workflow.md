@@ -3,7 +3,7 @@ title: 主权迁移工作流程
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# 主权迁移工作流程 {#sovereign-migration-workflow}
+# 主权迁移工作流程
 
 Ultimate Multisite 1.2.0 版本为将标准子站点迁移到主权租户基础设施增加了迁移验证关卡。
 

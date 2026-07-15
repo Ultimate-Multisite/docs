@@ -4,7 +4,7 @@ title: მოქმედება - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# მოქმედება: move_site {#action-movesite}
+# მოქმედება: move_site
 
 გაეშვება მას შემდეგ, რაც საიტი ახალ ქსელში გადაინაცვლებს.
 

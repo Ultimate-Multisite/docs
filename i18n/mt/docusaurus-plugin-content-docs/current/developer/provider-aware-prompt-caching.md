@@ -3,7 +3,7 @@ title: Ħażna fil-cache tal-Prompt Konxja mill-Fornitur
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching ta' prompts konxju tal-fornitur {#provider-aware-prompt-caching}
+# Caching ta' prompts konxju tal-fornitur
 
 Superdav AI Agent v1.12.0 jintroduċi **caching ta' prompts konxju tal-fornitur**, li jottimizza l-ispejjeż tal-API u l-latenza billi jaħżen prompts fil-cache bejn fornituri LLM differenti. Kull fornitur għandu mekkaniżmi u konfigurazzjonijiet differenti ta' caching.
 

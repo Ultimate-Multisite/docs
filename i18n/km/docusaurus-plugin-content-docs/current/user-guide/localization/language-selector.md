@@ -3,7 +3,7 @@ title: អ្នកជ្រើសរើសភាសា
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# ឧបករណ៍ជ្រើសរើសភាសា (Language Selector) {#language-selector}
+# ឧបករណ៍ជ្រើសរើសភាសា (Language Selector)
 
 មុខងារនេះត្រូវបានផ្តល់ដោយ Addon ឈ្មោះ **Language Selector**។
 

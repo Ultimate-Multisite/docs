@@ -4,7 +4,7 @@ title: 过滤器 - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# 过滤器: send_auth_cookies {#filter-sendauthcookies}
+# 过滤器: send_auth_cookies
 
 允许防止身份验证 cookie 实际发送给客户端。
 

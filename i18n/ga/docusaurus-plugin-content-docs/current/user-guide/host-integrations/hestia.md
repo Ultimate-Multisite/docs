@@ -3,7 +3,7 @@ title: Cothromadh na Panel Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Intégráid na Control Panel Hestia {#hestia-control-panel-integration}
+# Intégráid na Control Panel Hestia
 
 Linn é seo ainsíonn an cur chuimne seo conairt an intégráid Ultimate Multisite Hestia chun domáin a bh'fhéidir (mapped domains) i ar chuid deamach agat ag cur isteach i gceoladh (and removed) mar Aliases Web Domain i Hestia.
 

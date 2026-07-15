@@ -3,7 +3,7 @@ title: Checkout-skjemaer
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Betalingsskjemaer {#checkout-forms}
+# Betalingsskjemaer
 
 Betalingsskjemaer er en enkel og fleksibel måte å eksperimentere med ulike tilnærminger på når du prøver å konvertere nye kunder.
 

@@ -3,7 +3,7 @@ title: Sito ekspo
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sito Exportado {#site-export}
+# Sito Exportado
 
 La pagu WordPress **Site Export** (Export de Sitio) permet admin de rede paketatu un sito, aŭ la tuta retoj en arkivo descargablaj por migrado, backup, aŭ labor de transdonado.
 

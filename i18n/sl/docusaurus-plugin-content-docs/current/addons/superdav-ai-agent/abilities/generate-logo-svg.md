@@ -3,7 +3,7 @@ title: Ustvari logotip SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ustvari SVG logotipa {#generate-logo-svg}
+# Ustvari SVG logotipa
 
 Zmožnost **Ustvari SVG logotipa** omogoča Theme Builderju, da ustvari in vgradi prilagojene SVG-je logotipov neposredno v vaše WordPress spletno mesto z avtomatsko sanitizacijo, varno za imenske prostore.
 

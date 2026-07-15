@@ -3,7 +3,7 @@ title: Mwongozo wa Matumizi ya Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Mwongozo wa Kutumia Hooks {#hooks-usage-guide}
+# Mwongozo wa Kutumia Hooks
 
 Ultimate Multisite inatoa zaidi ya hooks za matukio (action hooks) 200 na hooks za kuchuja (filter hooks) 280. Ukurasa huu unazunguka hooks zinazotumika zaidi kwa mifano halisi. Kwa rejea kamili inayojitengeneza kiotomatiki, tembelea kurasa zingine katika sehemu hii.
 

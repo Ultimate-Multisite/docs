@@ -3,7 +3,7 @@ title: Pangita sa Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search {#internet-search}
+# Internet Search
 
 Ang Gratis AI Agent v1.5.0 naghatag og abilidad nga **Internet Search** nga nagtugot sa AI assistant nga mangon og bag-ong impormasyon gikan sa web atol sa usa ka panag-istoryahanay. Kini gi-power pinaagi sa [Brave Search API](https://brave.com/search/api/) o [Tavily API](https://tavily.com/).
 

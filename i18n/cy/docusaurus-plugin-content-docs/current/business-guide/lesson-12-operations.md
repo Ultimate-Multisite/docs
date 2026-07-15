@@ -3,7 +3,7 @@ title: 'Dysgu 12: Gwarchod y Busnes'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leses 12: Mae'r Busnes yn Rhanu {#lesson-12-running-the-business}
+# Leses 12: Mae'r Busnes yn Rhanu
 
 Mae platform nid yw prosiect sydd wedi cael ei gwblhau -- mae'n busnes sydd wedi cael ei rhanu. Mae’r les hon yn gwmpasu y gweithredoedd dyddiol o ddefnyddio FitSite: cefnogaeth, cyfathrebu, chynllunio, a chofio'r cleiention yn hapus.
 

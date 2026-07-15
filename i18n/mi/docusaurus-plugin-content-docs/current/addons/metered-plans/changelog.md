@@ -3,7 +3,7 @@ title: Rangitaki Huringa o Ngā Mahere Ine
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Rangitaki Panonitanga mō ngā Mahere Ine {#metered-plans-changelog}
+# Rangitaki Panonitanga mō ngā Mahere Ine
 
 Putanga 1.1.0 - I tukuna i te 2026-05-05
 - Hou: nama tohu AI mō ngā pae-iti multisite — aroturuki, nama hoki i te whakamahinga tohu AI puta noa i ngā pae kiritaki me ngā reiti ia-tohu ka taea te whirihora

@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Personalizimi i Paneli të Administratorit me PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Personalizimi i Paneli të Administratorit me PRO Theme
 
 Shpesh kur bëjmë punë për klientët, kemi nevojën t'u ofrojmë një përvojë të personalizuar në dashboard-in e WordPress. Nëse kërkoni një pamje dhe ndjeshmëri më profesionale, PRO Theme mund t'ju ndihmojë.
 

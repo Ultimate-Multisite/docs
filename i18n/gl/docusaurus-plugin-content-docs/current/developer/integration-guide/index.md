@@ -3,7 +3,7 @@ title: Guía de integración
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guía de integración {#integration-guide}
+# Guía de integración
 
 Esta guía abrangue patróns habituais de integración con Ultimate Multisite, incluída a conexión con servizos externos, a creación de pasarelas de pagamento personalizadas e a xestión de webhooks.
 

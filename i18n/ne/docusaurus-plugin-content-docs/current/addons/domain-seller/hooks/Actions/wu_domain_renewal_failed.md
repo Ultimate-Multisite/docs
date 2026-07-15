@@ -4,7 +4,7 @@ title: कार्य - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# कार्य: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# कार्य: wu_domain_renewal_failed
 
 डोमेन नवीकरण प्रयास असफल भएपछि चल्छ।
 

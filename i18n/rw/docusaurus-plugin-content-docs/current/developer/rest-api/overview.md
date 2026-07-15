@@ -3,7 +3,7 @@ title: Incamake ya REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Indango ya REST API {#rest-api-reference}
+# Indango ya REST API
 
 ## Iboneza Shingiro {#base-configuration}
 

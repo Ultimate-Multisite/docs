@@ -4,7 +4,7 @@ title: Àlẹ̀mọ́ - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Àlẹmọ: send_auth_cookies {#filter-sendauthcookies}
+# Àlẹmọ: send_auth_cookies
 
 Gba laaye fífi dènà kí cookies ìfàṣẹsí má ṣe rán sí client ní gidi.
 

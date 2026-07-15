@@ -3,7 +3,7 @@ title: Kungani Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kungani Ultimate Multisite {#why-ultimate-multisite}
+# Kungani Ultimate Multisite
 
 Uma ufike kulesi sihloko, kungenzeka uzwile ukuthi isandiso sethu singaba yisixazululo sokwenza umqondo wakho webhizinisi ufezeke. Sithemba ukuthi uzoba nezimpendulo ozidingayo ekupheleni kwalesi siqephu.
 

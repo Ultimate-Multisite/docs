@@ -4,7 +4,7 @@ title: Գործողություն - տեղափոխել կայքը
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Գործողություն՝ move_site {#action-movesite}
+# Գործողություն՝ move_site
 
 Գործարկվում է այն բանից հետո, երբ կայքը տեղափոխվել է նոր ցանց։
 

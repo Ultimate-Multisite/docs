@@ -3,7 +3,7 @@ title: Automatisk søgning og erstatning i sidtempler
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk søgning og erstatning i sidtempler (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatisk søgning og erstatning i sidtempler (v2)
 
 _**Denne tutorial kræver WP UItimo version 2.x.**_
 

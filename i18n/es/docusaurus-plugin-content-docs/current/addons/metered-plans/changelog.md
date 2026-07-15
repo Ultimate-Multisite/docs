@@ -3,7 +3,7 @@ title: Registro de cambios de los planes medidos
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Registro de cambios de planes medidos {#metered-plans-changelog}
+# Registro de cambios de planes medidos
 
 Versión 1.1.0 - Publicada el 2026-05-05
 - Nuevo: Facturación de tokens de AI para subsitios multisite — rastrea y factura el uso de tokens de AI en sitios de clientes con tarifas configurables por token

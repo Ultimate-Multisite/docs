@@ -3,7 +3,7 @@ title: Referenca e Hook-eve
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenca e hooks {#hooks-reference}
+# Referenca e hooks
 
 Dokumentacion i gjeneruar automatikisht për të gjitha **59 veprimet** dhe **118 filtrat** në Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Nkwado Ụdị Nkwado Design System Aesthetic
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Nkanọta Aesthetics Design System Skill {#design-system-aesthetics-skill}
+# Nkanọta Aesthetics Design System Skill
 
 **Design System Aesthetics skill** na ebe ọ dimaka ịgba ọkụ (refine) ihe nkwado site-nwa gị. Ọ ga-eme ka ị chụrụ ihe ndị dị mma maka typography, ajụjụ (color), spacing, na motion tokens nke mere anọchịrịka sistem design system gị.
 

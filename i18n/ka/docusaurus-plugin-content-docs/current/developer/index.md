@@ -3,7 +3,7 @@ title: დეველოპერის დოკუმენტაცია
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# დეველოპერის დოკუმენტაცია {#developer-documentation}
+# დეველოპერის დოკუმენტაცია
 
 ეს სახელმძღვანელო დეველოპერებს აწვდის ყველაფერს, რაც საჭიროა Ultimate Multisite-თან ინტეგრაციისთვის, მისი გაფართოებისთვის ან მისთვის დამატებების შესაქმნელად. Ultimate Multisite WordPress Multisite ქსელს Website-as-a-Service (WaaS) პლატფორმად გარდაქმნის.
 

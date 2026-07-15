@@ -3,7 +3,7 @@ title: Hestia Control Panel Integration
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# การเชื่อมต่อกับ Hestia Control Panel {#hestia-control-panel-integration}
+# การเชื่อมต่อกับ Hestia Control Panel
 
 คู่มือนี้อธิบายวิธีตั้งค่าการเชื่อมต่อ Hestia กับ Ultimate Multisite เพื่อให้โดเมนที่แมปในเครือข่ายของคุณถูกเพิ่ม (และลบ) เป็น Web Domain Alias ใน Hestia โดยอัตโนมัติ
 

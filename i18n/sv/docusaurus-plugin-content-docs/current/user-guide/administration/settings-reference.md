@@ -3,7 +3,7 @@ title: Inställningsreferens
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Inställningsreferens {#settings-reference}
+# Inställningsreferens
 
 Den här sidan följer inställningar som påverkar den dagliga administrationen och senaste beteendeförändringar i Ultimate Multisite.
 

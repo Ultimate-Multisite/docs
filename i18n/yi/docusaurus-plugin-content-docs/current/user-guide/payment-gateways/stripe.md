@@ -3,7 +3,7 @@ title: איינריכטן Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# אויפֿשטעלן דעם Stripe צאָלונג־טויער (v2) {#setting-up-the-stripe-gateway-v2}
+# אויפֿשטעלן דעם Stripe צאָלונג־טויער (v2)
 
 _**וויכטיקע באַמערקונג: דער אַרטיקל באַציט זיך צו Ultimate Multisite ווערסיע 2.x.**_
 

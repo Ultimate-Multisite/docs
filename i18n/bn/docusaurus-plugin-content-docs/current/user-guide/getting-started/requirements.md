@@ -3,7 +3,7 @@ title: প্রয়োজনীয়তা
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite-এর প্রয়োজনীয়তা {#ultimate-multisite-requirements}
+# Ultimate Multisite-এর প্রয়োজনীয়তা
 
 Ultimate Multisite কেনার আগে আপনি প্রথম যে প্রশ্ন করতে পারেন তা হলো—আমাদের প্লাগইন চালাতে কী কী প্রয়োজন। সুখবর হলো, Ultimate Multisite চালানোর জন্য খুব বেশি কিছু লাগে না: একটি **ডোমেইন নাম**, একটি ভালো **হোস্টিং প্রোভাইডার** এবং একটি WordPress **Multisite** ইনস্টলেশন। ব্যস, এটুকুই!
 

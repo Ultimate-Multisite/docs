@@ -3,7 +3,7 @@ title: Cache de Prompts Sensível ao Provedor
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cache de prompts com reconhecimento de fornecedor {#provider-aware-prompt-caching}
+# Cache de prompts com reconhecimento de fornecedor
 
 Superdav AI Agent v1.12.0 introduz **cache de prompts com reconhecimento de fornecedor**, que otimiza os custos de API e a latência ao armazenar prompts em cache entre diferentes fornecedores de LLM. Cada fornecedor tem mecanismos e configurações de cache diferentes.
 

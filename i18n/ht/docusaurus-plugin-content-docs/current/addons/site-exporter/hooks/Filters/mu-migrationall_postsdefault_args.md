@@ -4,7 +4,7 @@ title: Filtre - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filtè: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filtè: mu-migration/all_posts/default_args
 
 Filtre agiman default yo pou fè rekèt atik yo nan metòd all_posts la.
 

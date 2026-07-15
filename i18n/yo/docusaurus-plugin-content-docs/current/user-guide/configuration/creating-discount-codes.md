@@ -3,7 +3,7 @@ title: Ṣíṣẹda Àwọn Kóòdù Ẹdinwo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ṣíṣẹ̀dá Àwọn Koodu Ẹdinwo (v2) {#creating-discount-codes-v2}
+# Ṣíṣẹ̀dá Àwọn Koodu Ẹdinwo (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 

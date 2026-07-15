@@ -3,7 +3,7 @@ title: Ορατότητα Ικανοτήτων
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ορατότητα Ικανοτήτων (Ability Visibility) {#ability-visibility}
+# Ορατότητα Ικανοτήτων (Ability Visibility)
 
 Το Superdav AI Agent v1.12.0 εισάγει τους ελέγχους **Ορατότητας Ικανοτήτων (Ability Visibility)** που καθορίζουν ποιες επιφάνειες εκθέτουν κάθε ικανότητα. Αυτό επιτρέπει στους διαχειριστές να προσαρμόσουν με ακρίβεια ποιες δυνατότητες των agents είναι διαθέσιμες μέσω REST APIs, MCP servers, ενσωμαρώσεων WooCommerce και άλλων διεπαφών.
 

@@ -3,7 +3,7 @@ title: 鉤子使用指南
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# 鉤子使用指南 {#hooks-usage-guide}
+# 鉤子使用指南
 
 Ultimate Multisite 提供了超過 200 個 action hooks 和超過 280 個 filter hooks。本頁面涵蓋了最常用到的鉤子，並附有實用範例。若需要完整的自動生成參考資料，請瀏覽本區的其他頁面。
 

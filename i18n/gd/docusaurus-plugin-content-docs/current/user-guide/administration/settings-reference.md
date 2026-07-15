@@ -3,7 +3,7 @@ title: Iomradh nan roghainnean
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Iomradh nan roghainnean {#settings-reference}
+# Iomradh nan roghainnean
 
 Tha an duilleag seo a’ cumail sùil air roghainnean a bheir buaidh air rianachd làitheil agus atharrachaidhean giùlain o chionn ghoirid ann an Ultimate Multisite.
 

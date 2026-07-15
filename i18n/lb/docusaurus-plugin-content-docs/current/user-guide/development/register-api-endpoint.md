@@ -3,7 +3,7 @@ title: API-Endpunkt registriere
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# De API-Endpunkt vo de Ultimate Multisite Registrierig {#the-ultimate-multisite-register-api-endpoint}
+# De API-Endpunkt vo de Ultimate Multisite Registrierig
 
 In dë Tutorial lerne Dir, wéi Dir d'Ultimate Multisite /register API-Endpunkt bruche kënnt, um de ganz Onboarding-Prozess fir en neie Kunde i Ier Netz z'schaffe, und wéi Dir dat mit Zapier chunt.
 

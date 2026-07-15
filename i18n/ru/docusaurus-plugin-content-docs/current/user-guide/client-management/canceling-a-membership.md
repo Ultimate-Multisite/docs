@@ -3,7 +3,7 @@ title: Отмена членства
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Отмена членства (v2) {#canceling-a-membership-v2}
+# Отмена членства (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 

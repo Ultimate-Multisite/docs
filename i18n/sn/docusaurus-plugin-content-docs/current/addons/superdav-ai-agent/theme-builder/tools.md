@@ -3,7 +3,7 @@ title: Zvishandiso uye Kumisikidza
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zvishandiso uye Kugadzirisa {#tools-and-configuration}
+# Zvishandiso uye Kugadzirisa
 
 Theme Builder inoshandisa seti yezvishandiso kuongorora, kudhizaina, uye kuvaka site yako yeWordPress. Mushanduro 1.16.0, **sd-ai-agent/site-scrape yava chishandiso cheTier 1**, ichiita kuti chiwanikwe nekusarudzika muTheme Builder. Superdav AI Agent v1.18.0 inounzawo pasuru yeAdvanced companion inogoverwa yakaparadzana yemafambisirwo ebasa evagadziri vanovimbwa; zvishandiso izvozvo hazvisi chikamu chepasuru huru yeWordPress.org uye zvinofanira kuiswa uye kupihwa mvumo zvakasiyana.
 

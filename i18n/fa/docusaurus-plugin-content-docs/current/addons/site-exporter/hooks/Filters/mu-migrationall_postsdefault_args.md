@@ -4,7 +4,7 @@ title: فیلتر - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# فیلتر: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# فیلتر: mu-migration/all_posts/default_args
 
 آرگومان‌های پیش‌فرض (default args) مورد استفاده برای کوئری گرفتن پست‌ها در متد `all_posts` را فیلتر می‌کند.
 

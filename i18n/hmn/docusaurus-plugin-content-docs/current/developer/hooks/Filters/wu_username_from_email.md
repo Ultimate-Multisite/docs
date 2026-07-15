@@ -4,7 +4,7 @@ title: Lim - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Lim: wu_username_from_email {#filter-wuusernamefromemail}
+# Lim: wu_username_from_email
 
 Lim username tshiab rau tus neeg yuav khoom.
 

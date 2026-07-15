@@ -4,7 +4,7 @@ title: Actio - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# Actio: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# Actio: wp_ultimo_captcha_activation
 
 Sinat alias partes additamenti suas rationes ad activationem adiungere
 

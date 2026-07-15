@@ -3,7 +3,7 @@ title: Stripe の設定
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway の設定（v2） {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway の設定（v2）
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

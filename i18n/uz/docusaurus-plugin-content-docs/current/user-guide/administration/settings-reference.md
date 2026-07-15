@@ -3,7 +3,7 @@ title: Sozlamalar ma’lumotnomasi
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sozlamalar ma’lumotnomasi {#settings-reference}
+# Sozlamalar ma’lumotnomasi
 
 Ushbu sahifa Ultimate Multisite’da kundalik boshqaruvga ta’sir qiladigan sozlamalar va yaqindagi xatti-harakat o‘zgarishlarini kuzatadi.
 

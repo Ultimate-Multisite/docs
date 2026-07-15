@@ -3,7 +3,7 @@ title: صفحه Account مشتری
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# صفحه Account مشتری شما (نسخه ۲) {#your-clients-account-page-v2}
+# صفحه Account مشتری شما (نسخه ۲)
 
 _**نکته مهم: این مقاله به Ultimate Multisite نسخه 2.x اشاره دارد.**_
 

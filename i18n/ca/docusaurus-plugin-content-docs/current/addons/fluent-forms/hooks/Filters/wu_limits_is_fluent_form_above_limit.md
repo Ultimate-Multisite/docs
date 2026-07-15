@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filtre: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filtre: wu_limits_is_fluent_form_above_limit
 
 Comprova si un tipus de formulari donat està permès en aquest pla. Permet als desenvolupadors de plugins filtrar el valor que es retorna.
 

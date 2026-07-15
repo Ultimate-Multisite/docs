@@ -3,7 +3,7 @@ title: Avancerade kodexempel
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Avancerade kodexempel {#advanced-code-examples}
+# Avancerade kodexempel
 
 Dessa exempel visar avancerade integrationsmönster med Ultimate Multisite.
 

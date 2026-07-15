@@ -3,7 +3,7 @@ title: Kreiranje Prve Abonentske Proizvodne Kreacije
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreiranje Prvog Pretplate Proizvoda (v2) {#creating-your-first-subscription-product-v2}
+# Kreiranje Prvog Pretplate Proizvoda (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak je namenjen isključivo korisnicima Ultimate Multisite verzije 2.x. Ako koristite verziju 1.x,**_ **_pročitajte ovaj članak**_**.
 

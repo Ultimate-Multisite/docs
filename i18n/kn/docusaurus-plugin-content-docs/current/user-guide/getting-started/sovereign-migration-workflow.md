@@ -3,7 +3,7 @@ title: ಸಾರ್ವಭೌಮ ವಲಿಕasyon ಕಾರ್ಯವಿಧಾನ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# ಸಾರ್ವಭೌಮ ವಲಿಕಾ ಕಾರ್ಯವಿಧಾನ (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# ಸಾರ್ವಭೌಮ ವಲಿಕಾ ಕಾರ್ಯವಿಧಾನ (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ನಲ್ಲಿ ಸ್ಟ್ಯಾಂಡರ್ಡ್サブಸೈಟ್ ಅನ್ನು ಸಾರ್ವಭೌಮ ಟೆನೆಂಟ್ ಮೂಲಸೌಕರ್ಯಕ್ಕೆ ವರ್ಗಾಯಿಸುವಾಗ ಮೈಗ್ರೇಷನ್ ಪರಿಶೀಲನಾ ಗೇಟ್‌ಗಳನ್ನು (migration verification gates) ಸೇರಿಸಲಾಗಿದೆ.
 

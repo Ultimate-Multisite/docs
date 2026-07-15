@@ -4,7 +4,7 @@ title: 過濾器 - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# 篩選器：wu_page_get_title_links {#filter-wupagegettitlelinks}
+# 篩選器：wu_page_get_title_links
 
 讓外掛開發者，以及我們自己，能夠在編輯頁面新增操作連結。
 

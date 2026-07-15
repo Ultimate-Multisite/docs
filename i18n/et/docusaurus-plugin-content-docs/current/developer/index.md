@@ -3,7 +3,7 @@ title: Arendaja dokumentatsioon
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Arendaja dokumentatsioon {#developer-documentation}
+# Arendaja dokumentatsioon
 
 See juhend annab arendajatele kõik vajaliku Ultimate Multisite’iga integreerimiseks, selle laiendamiseks või sellele lisamoodulite arendamiseks. Ultimate Multisite muudab WordPress Multisite võrgu Website-as-a-Service (WaaS) platvormiks.
 

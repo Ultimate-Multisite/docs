@@ -3,7 +3,7 @@ title: Các vấn đề không tương thích đã biết
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Các vấn đề không tương thích đã biết với Plugin khác {#known-incompatibilities-with-other-plugins}
+# Các vấn đề không tương thích đã biết với Plugin khác
 
 Sau khi cài đặt và kích hoạt Ultimate Multisite, bạn có thể gặp một số vấn đề do chưa khắc phục được sự không tương thích với các plugin khác.
 

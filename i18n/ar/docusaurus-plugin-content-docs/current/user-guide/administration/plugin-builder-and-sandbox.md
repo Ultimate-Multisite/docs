@@ -3,7 +3,7 @@ title: منشئ المكونات الإضافية ومنطقة الاختبار
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# مُنشئ الإضافات ومساحة الاختبار (Plugin Builder & Sandbox) {#plugin-builder--sandbox}
+# مُنشئ الإضافات ومساحة الاختبار (Plugin Builder & Sandbox)
 
 يقدم Gratis AI Agent v1.5.0 **نظام مُنشئ الإضافات ومساحة الاختبار (Plugin Builder & Sandbox System)**، الذي يسمح للمساعد الذكي بإنشاء وتفعيل وإدارة إضافات WordPress على شبكتك بالكامل — وكل ذلك من خلال بيئة اختبار آمنة ومعزولة.
 

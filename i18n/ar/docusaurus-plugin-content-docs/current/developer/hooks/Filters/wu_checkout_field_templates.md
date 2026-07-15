@@ -4,7 +4,7 @@ title: فلتر - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# مرشح: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# مرشح: wu_checkout_field_templates
 
 توفر واجهات برمجة التطبيقات الخاصة بنا لإضافة قوالب حقول جديدة نقطة اتصال هنا.
 

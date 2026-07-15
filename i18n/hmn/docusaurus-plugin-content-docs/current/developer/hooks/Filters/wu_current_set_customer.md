@@ -4,7 +4,7 @@ title: Lim - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Lim: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Lim: wu_current_set_customer
 
 Tso cai rau cov developers hloov tus cwj pwm default thiab teeb tus customer tam sim no txawv.
 

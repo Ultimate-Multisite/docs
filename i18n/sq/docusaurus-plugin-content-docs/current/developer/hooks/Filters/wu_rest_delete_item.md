@@ -4,7 +4,7 @@ title: Filtër - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filtri: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filtri: wu_rest_delete_item
 
 Filtron nëse lejohet të vazhdohet me kërkesën apo jo.
 

@@ -3,7 +3,7 @@ title: Dashbordoversikt
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashbord-oversikt {#dashboard-overview}
+# Dashbord-oversikt
 
 Ultimate Multisite har et eget **Dashbord** under Ultimate Multisite-menyen, og legger også til widgeter på Nettverksdashbordet. Denne artikkelen dekker hva du finner begge steder.
 

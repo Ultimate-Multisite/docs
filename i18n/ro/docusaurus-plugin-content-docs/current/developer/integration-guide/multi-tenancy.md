@@ -3,7 +3,7 @@ title: Integrare multi-tenant
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrare Multi-Tenancy {#multi-tenancy-integration}
+# Integrare Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 modifică mai multe puncte de integrare pentru chiriași suverani, verificarea migrării și automatizarea ciclului de viață al chiriașilor.
 

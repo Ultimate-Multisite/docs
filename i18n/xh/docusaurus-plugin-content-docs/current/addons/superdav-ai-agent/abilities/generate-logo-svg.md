@@ -3,7 +3,7 @@ title: Yenza i-Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Yenza i-Logo SVG {#generate-logo-svg}
+# Yenza i-Logo SVG
 
 Isakhono se-**Generate Logo SVG** sivumela i-Theme Builder ukuba yenze kwaye ifake ii-logo SVG ezenzelwe wena ngqo kwi-WordPress site yakho ngokucocwa okuzenzekelayo okukhuselekileyo kwi-namespace.
 

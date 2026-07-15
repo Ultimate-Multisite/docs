@@ -4,7 +4,7 @@ title: Ago - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Ago: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Ago: wu_domain_seller_complete_registration
 
 Ekfunkcias kiam pago transiras al stato kiu devus ekigi domajnan registradon.
 

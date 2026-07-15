@@ -3,7 +3,7 @@ title: 'Mësimi 14: Çfarë vjen më pas'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Mësimi 14: Çfarë Vjen Më Pas {#lesson-14-what-comes-next}
+# Mësimi 14: Çfarë Vjen Më Pas
 
 Keni ndërtuar një platformë website-sh niche nga e para. FitSite është live, u shërben studiove të fitness-it dhe gjeneron të ardhura të përsëritura. Ky mësim i fundit shqyrton se ku të shkoni prej këtu.
 

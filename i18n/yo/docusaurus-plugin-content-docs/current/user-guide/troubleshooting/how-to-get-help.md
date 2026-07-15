@@ -3,7 +3,7 @@ title: Bí o ṣe lè rí ìrànlọ́wọ́
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Bí o ṣe lè gba ìrànlọ́wọ́ {#how-to-get-help}
+# Bí o ṣe lè gba ìrànlọ́wọ́
 
 O ti gba License key rẹ tó wúlò, àti pé ohun tí ó so mọ́ ọn ni ìráyè sí ẹgbẹ́ wa láti ràn ọ́ lọ́wọ́ láti yanjú àwọn ìṣòro tí o lè bá pàdé nígbà tí o ń ṣètò Ultimate Multisite.
 

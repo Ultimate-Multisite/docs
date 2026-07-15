@@ -3,7 +3,7 @@ title: Qoraallo koodka
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets oo v2 {#code-snippets-for-v2}
+# Code Snippets oo v2
 
 Guud, code snippets-ka **WordPress** waxaa loo isticmaalaa in lagu sameeyo waxyaabo gaar ah oo laga yaabo inay u baahan yihiin plugin yar oo gaar ah. Code snippets-kan waxaa lagu dhejin karaa mid ka mid ah faylasha asalka (core) ee WordPress ama theme-kaaga (guud ahaan faylka functions.php ee theme-kaaga), ama waxaad isticmaali kartaa inay noqdaan MU plugin.
 

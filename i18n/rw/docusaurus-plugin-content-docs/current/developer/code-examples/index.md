@@ -3,7 +3,7 @@ title: Ingero za kode ziteye imbere
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ingero za Code Ziteye Imbere {#advanced-code-examples}
+# Ingero za Code Ziteye Imbere
 
 Izi ngero zigaragaza uburyo bwo guhuza ibintu buteye imbere na Ultimate Multisite.
 

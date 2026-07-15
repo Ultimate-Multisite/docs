@@ -3,7 +3,7 @@ title: Daim Ntawv Qhia Txog Cov Peev Xwm
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Daim Ntawv Siv Abilities {#abilities-reference}
+# Daim Ntawv Siv Abilities
 
 Abilities yog cov kev ua me me uas Gratis AI Agent hu tau rau hauv koj lub WordPress installation. Txhua ability yog ib PHP class uas tau sau npe thiab tso tawm ib JSON schema — tus agent nyeem schema no thaum khiav haujlwm kom nkag siab tias yuav tsum muaj parameter twg thiab ability ntawd xa rov qab dab tsi.
 

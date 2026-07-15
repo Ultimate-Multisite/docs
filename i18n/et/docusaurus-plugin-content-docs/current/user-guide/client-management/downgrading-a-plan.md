@@ -3,7 +3,7 @@ title: Plani allundamine
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plaani alla liigutamine (v2) {#downgrading-a-plan-v2}
+# Plaani alla liigutamine (v2)
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 

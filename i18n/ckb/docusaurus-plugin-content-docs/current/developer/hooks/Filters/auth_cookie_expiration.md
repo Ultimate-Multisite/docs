@@ -4,7 +4,7 @@ title: فلتەر - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# پاڵێوەر: auth_cookie_expiration {#filter-authcookieexpiration}
+# پاڵێوەر: auth_cookie_expiration
 
 ماوەی کۆتاییهاتنی cookieی پشتڕاستکردنەوە دیاری دەکات.
 

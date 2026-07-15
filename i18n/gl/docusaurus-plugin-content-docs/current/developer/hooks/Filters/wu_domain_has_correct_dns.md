@@ -4,7 +4,7 @@ title: Filtro - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtro: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filtro: wu_domain_has_correct_dns
 
 Permite aos desenvolvedores de plugins engadir novas comprobacións para definir os resultados.
 

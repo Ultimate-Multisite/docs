@@ -4,7 +4,7 @@ title: Kev nqis tes - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Kev ua: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Kev ua: wu_page_enqueue_scripts
 
 Ntxiv ib qho kev ua tshwj xeeb ntawm no kom peb muaj ib qho chaw los enqueue cov scripts thiab styles raws li xav tau\ thiab xyuas kom lawv tsuas raug load rau cov nplooj ntawv raug xwb
 

@@ -3,7 +3,7 @@ title: CyberPanel integrācija
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrācija {#cyberpanel-integration}
+# CyberPanel Integrācija
 
 Šis ceļvedis iepina, kā konfigurēt Ultimate Multisite CyberPanel integrāciju, lai automātiski pievienotu (un atņemtu) mapeotus domēnus jūsu tīklā kā virtuālos hostus CyberPanel, ar iespējamo auto-SSL sniegšanu ar Let's Encrypt.
 

@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# សកម្មភាព: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# សកម្មភាព: wp_ultimo_ptm_page_edit_footer
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍ plugin បន្ថែមស្គ្រីបទៅផ្នែកខាងក្រោមនៃទំព័រ
 

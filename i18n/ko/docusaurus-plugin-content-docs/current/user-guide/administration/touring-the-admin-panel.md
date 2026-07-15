@@ -3,7 +3,7 @@ title: 관리자 패널 둘러보기
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel 둘러보기 {#touring-the-admin-panel}
+# Admin Panel 둘러보기
 
 Ultimate Multisite는 최대한 간단하고 직관적으로 설계되었지만, 이처럼 강력한 도구는 안내 투어가 있으면 도움이 됩니다. Admin 페이지를 함께 살펴보며 익숙해져 보겠습니다.
 

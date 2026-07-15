@@ -3,7 +3,7 @@ title: 'Lección 11: Encontrando Clientes'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lección 11: Cómo encontrar clientes {#lesson-11-finding-customers}
+# Lección 11: Cómo encontrar clientes
 
 Una gran plataforma sin clientes es solo un pasatiempo. Esta lección cubre cómo adquirir clientes en un nicho vertical: estrategias que funcionan específicamente porque te enfocas en una sola industria.
 

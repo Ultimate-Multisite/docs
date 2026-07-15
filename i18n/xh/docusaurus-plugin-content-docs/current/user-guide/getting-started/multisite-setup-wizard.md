@@ -3,7 +3,7 @@ title: Iwizadi Yokuseta i-Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Umncedisi Wokumisela i-Multisite {#multisite-setup-wizard}
+# Umncedisi Wokumisela i-Multisite
 
 Ultimate Multisite iquka umncedisi owakhelweyo oguqula ngokuzenzekelayo ufakelo oluqhelekileyo lwe-WordPress lube yinethiwekhi ye-WordPress Multisite. Oku kuphelisa imfuneko yokuhlela ngesandla `wp-config.php` okanye ukuqhuba imiyalelo yedatabase.
 

@@ -4,7 +4,7 @@ title: Azzjoni - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Azzjoni: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Azzjoni: wp_ultimo_vat_deactivation
 
 Ħalli partijiet oħra tal-plugin iwaħħlu r-rutini tagħhom għad-diżattivazzjoni
 

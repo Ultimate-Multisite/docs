@@ -3,7 +3,7 @@ title: ප්‍රධාන දත්ත පුවරුව දළ විශ්
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# දත්ත පුවරුවේ දළ විශ්ලේෂණය (Dashboard Overview) {#dashboard-overview}
+# දත්ත පුවරුවේ දළ විශ්ලේෂණය (Dashboard Overview)
 
 Ultimate Multisite එකේ මෙනුව යට **Dashboard** එකක් තිබෙනවා, ඒ වගේම Network Dashboard එකට widgets ද එකතු කරනවා. මේ ලිපියෙන් දෙකෙහිම ඔබට මොනවද බලන්නේ කියලා අපි බලමු.
 

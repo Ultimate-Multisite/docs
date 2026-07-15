@@ -3,7 +3,7 @@ title: Menù per l'ospitalità
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu per la Ristorazione {#hospitality-menus}
+# Menu per la Ristorazione
 
 La funzione **Hospitality Menus** consente a Theme Builder di generare e incorporare pagine di menu strutturate per cibo e bevande direttamente nel tuo sito WordPress.
 

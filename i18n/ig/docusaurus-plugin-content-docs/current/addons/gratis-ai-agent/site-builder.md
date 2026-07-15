@@ -3,7 +3,7 @@ title: Nhazi ọrụ Onye nrụpụta Saịtị v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Nhazi Site Builder v2 {#site-builder-orchestration-v2}
+# Nhazi Site Builder v2
 
 Nhazi Site Builder v2 (e webatara na Gratis AI Agent v1.4.0) bụ injin na-enye ike n'ịmepụta webụsaịtị nwere ọtụtụ nzọụkwụ. Mgbe ị jụrụ onye nnọchiọrụ ahụ ka ọ "rụọ webụsaịtị ụlọ nri" ma ọ bụ "mepụta pọtụfoliyo nwere blọgụ", onye nhazi ahụ na-ekewa ebumnuche dị elu ahụ ka ọ bụrụ **atụmatụ** ahaziri ahazi, chọpụta mgbakwunye ndị achọrọ iji mezuo ya, mee nzọụkwụ ọ bụla n'usoro, soro ọganihu, ma gbakee site na njehie n'onwe ya.
 

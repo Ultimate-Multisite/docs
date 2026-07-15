@@ -4,7 +4,7 @@ title: فلٹر - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# فلٹر: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# فلٹر: wu_element_block_types_to_check
 
 ہو سکتا ہے کہ ہمیں بعد میں مزید بلاکس شامل کرنے کی ضرورت پڑے۔
 

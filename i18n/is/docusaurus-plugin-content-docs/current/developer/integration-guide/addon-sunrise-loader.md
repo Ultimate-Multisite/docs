@@ -3,7 +3,7 @@ title: Hleðari fyrir Sunrise-skrá viðbótar
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Sunrise-skráarhleðari fyrir viðbót {#addon-sunrise-file-loader}
+# Sunrise-skráarhleðari fyrir viðbót
 
 Ultimate Multisite 2.8.0 bætir við sunrise-viðbótahleðara fyrir viðbætur og sérsniðnar MU plugin-samþættingar sem þurfa að keyra á meðan WordPress sunrise-ræsingu stendur, án þess að breyta mynduðu `wp-content/sunrise.php` skránni.
 

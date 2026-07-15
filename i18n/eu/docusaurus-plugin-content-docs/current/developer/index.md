@@ -3,7 +3,7 @@ title: Dokumentazioa desarrollador artealeak
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Desarrollapurri Dokumentazioa {#developer-documentation}
+# Desarrollapurri Dokumentazioa
 
 Hau gure gure gizartean Ultimate Multisite-arekin integratzea, hobetzea edo addon-ak datu behar dituzten guztia ematen da. Ultimate Multisite-ak WordPress Multisite network bat Website-as-a-Service (WaaS) platform batean funtziatzen du.
 

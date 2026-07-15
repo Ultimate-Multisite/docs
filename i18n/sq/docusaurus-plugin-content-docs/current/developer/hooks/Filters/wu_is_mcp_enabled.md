@@ -4,7 +4,7 @@ title: Filtër - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filtër: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filtër: wu_is_mcp_enabled
 
 Lejon zhvilluesit e plugin-eve të detyrojnë një gjendje të caktuar për përshtatësin MCP.
 

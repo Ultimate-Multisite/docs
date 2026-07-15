@@ -3,7 +3,7 @@ title: Paglipat gikan sa V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrating gikan sa V1 {#migrating-from-v1}
+# Migrating gikan sa V1
 
 ## Ang Ultimate Multisite nag-usab na gikan sa iyang orihinal nga 1.x family sa mga release ngadto sa 2.x family sa mga release. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

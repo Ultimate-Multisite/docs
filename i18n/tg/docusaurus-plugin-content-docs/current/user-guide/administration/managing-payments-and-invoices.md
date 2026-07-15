@@ -3,7 +3,7 @@ title: Идоракунӣ аз ҳисобот ва инвойсҳо
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Идоракунии Пардаровиши ва Инвойсҳо {#managing-payments-and-invoices}
+# Идоракунии Пардаровиши ва Инвойсҳо
 
 ## Настдони Пардаровиши Масолатнома (Payment Settings) {#payment-settings}
 

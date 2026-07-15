@@ -3,7 +3,7 @@ title: Material WP Üýtgeşmeler taryhy
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP üýtgeşmeler taryhy {#material-wp-changelog}
+# Material WP üýtgeşmeler taryhy
 
 Wersiýa 1.1.15 - 01/26/2026
 * Gowulandyryldy: Kod stili we formatlama;

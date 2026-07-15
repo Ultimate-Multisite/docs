@@ -3,7 +3,7 @@ title: अपना पहला सदस्यता उत्पाद बन
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# अपना पहला Subscription Product बनाना (v2) {#creating-your-first-subscription-product-v2}
+# अपना पहला Subscription Product बनाना (v2)
 
 _**महत्वपूर्ण नोट: यह लेख केवल Ultimate Multisite version 2.x उपयोगकर्ताओं के लिए है। यदि आप version 1.x का उपयोग कर रहे हैं,**_ **_**यह लेख देखें**_**.
 

@@ -3,7 +3,7 @@ title: 'Dərslik 7: Özünə Uyğunlaşdırmaq'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Dərs 7: Özünüzün Etmək {#lesson-7-making-it-yours}
+# Dərs 7: Özünüzün Etmək
 
 Müştərilərinizin heç vaxt "bir WordPress plugin-indən" istifadə etdiklərini hiss etməmələri lazımdır. Onlar FitSite istifadə etdiklərini, yəni öz sənayələri üçün hazırlanmış bir platformadan istifadə etdiklərini hiss etməlidirlər. Bu dərs markalaşdırma, white-labeling (markanı özün əlavə etmə) və platformanı bir məhsul kimi hiss etdirməyi əhatə edir.
 

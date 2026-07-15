@@ -4,7 +4,7 @@ title: Aksi - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Aksi: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Aksi: wp_ultimo_captcha_deactivation
 
 Ngidinan bagian séjén tina plugin ngalampirkeun rutin maranéhna pikeun dinonaktipkeun
 

@@ -3,7 +3,7 @@ title: Pagsabot sa Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Pag-intindihan ang Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Pag-intindihan ang Ultimate Multisite Dashboard
 
 Sa dili pa kita magkalusot sa mas advanced nga mga opsyon sa configuration ug sa operasyon sa Ultimate Multisite, tan-awon nato una ang dashboard.
 

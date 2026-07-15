@@ -3,7 +3,7 @@ title: Eskupidetzearen erabilera
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Aplikazioaren Ezkutzeko Erabiltasuna (Ability Visibility) {#ability-visibility}
+# Aplikazioaren Ezkutzeko Erabiltasuna (Ability Visibility)
 
 Superdav AI Agent v1.12.0-ek **Aplikazioaren Ezkutzeko Erabiltasuna** kontrolak introduzio dira, zein erabilera (ability) zein eskuratzen duen erabakit. Horrek administurietan zein agent funtzioak REST API, MCP serverrak, WooCommerce integrazioak eta beste interfaze hauek arraketen daiteke kontrolatzeko aukera ematen du.
 

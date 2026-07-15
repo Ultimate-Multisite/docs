@@ -3,7 +3,7 @@ title: Udibaniso lwe-Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Udibaniso lwe-Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Udibaniso lwe-Hostinger (hPanel)
 
 ## Isishwankathelo {#overview}
 

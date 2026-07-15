@@ -4,7 +4,7 @@ title: Filtrilo - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filtrilo: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filtrilo: mu_migration/export/user/data
 
 Filtras la defaŭltan aron de uzantaj datumoj eksportotaj/importotaj.
 

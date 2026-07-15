@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Action: wu_domain_mapping_load {#action-wudomainmappingload}
+# Action: wu_domain_mapping_load
 
 ကျွန်တော်တို့ရဲ့ အဓိက Domain Mapping ကို load လုပ်ပြီးတဲ့အခါမှာ အလုပ်လုပ်တဲ့ hook တစ်ခုပါ။
 

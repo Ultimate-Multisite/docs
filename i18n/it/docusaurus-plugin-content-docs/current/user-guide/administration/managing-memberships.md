@@ -3,7 +3,7 @@ title: Gestione degli abbonamenti
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gestire le membership {#managing-memberships}
+# Gestire le membership
 
 In Ultimate Multisite puoi gestire le membership e accedere a tutte le subscription sulla tua rete. Controlla e modifica i dettagli della subscription, come piani e prodotti, il numero di siti, l’importo e la frequenza di fatturazione, la cronologia dei pagamenti e i timestamp.
 

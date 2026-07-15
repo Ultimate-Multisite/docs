@@ -3,7 +3,7 @@ title: Saýt eksport edijiniň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Saýt Exporter üýtgeşmeler žurnaly {#site-exporter-changelog}
+# Saýt Exporter üýtgeşmeler žurnaly
 
 Wersiýa: 1.0.6 - 2026-05-11 senesinde çykaryldy
 * Täze: Saýt eksportlary indi öz-özünden işe düşýän index.php faýlyny bilelikde gaplaýar, şonuň üçin ZIP aýratyn plugin gurmazdan täze hostda gurnalyp bilýär

@@ -3,7 +3,7 @@ title: Exportare Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportarea Site-ului {#site-export}
+# Exportarea Site-ului
 
 Pagina de administrare **Site Export** vă permite administratorilor de rețea să încapsuleze un singur site sau întreaga rețea într-un arhivă descărcabilă, pentru migrare, backup sau predare către un alt utilizator.
 

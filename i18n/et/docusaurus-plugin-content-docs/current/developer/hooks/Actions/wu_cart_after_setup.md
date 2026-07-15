@@ -4,7 +4,7 @@ title: Tegevus - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Toiming: wu_cart_after_setup {#action-wucartaftersetup}
+# Toiming: wu_cart_after_setup
 
 Võimaldab arendajatel teha checkout-objektis täiendavaid muudatusi.
 

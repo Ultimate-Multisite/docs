@@ -3,7 +3,7 @@ title: Céadtaíocht CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Intégráisiú CyberPanel {#cyberpanel-integration}
+# Intégráisiú CyberPanel
 
 Is gníomh sé an t-eolas seo a chur ar fáil gur féidir leat a chuidaithe (agus a bhaint/a bhaint) domáin a bhaineann i gceolais chomh maidir le CyberPanel, mar virtual hosts ag cur isteach go mbeidh siad sa net. Is é sin ag cur isteach an t-eolas seo ar fáil, agus is féidir leis an t-eolas SSL authaite (auto-SSL) a bheith agat trí Let's Encrypt.
 

@@ -3,7 +3,7 @@ title: Multi-netwerk-veranderingslog
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network-veranderingslogboek {#multi-network-changelog}
+# Multi-Network-veranderingslogboek
 
 ### 1.3.0 {#130}
 * Nuut: Netwerk-sjabloonvoorskouer — blaai deur en voorskou netwerk-sjablone met ’n lewendige paneel voordat jy aankoop.

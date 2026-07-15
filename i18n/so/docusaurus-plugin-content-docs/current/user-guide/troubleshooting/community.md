@@ -3,7 +3,7 @@ title: Bulshada
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# sida Maxayso Bulshada Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# sida Maxayso Bulshada Ultimate Multisite
 
 Ultimate Multisite Community waa meel aad la kulmi karto isticmaalayaasha kale ee Ultimate Multisite oo aad wadaagto talooyin, waayo-aragnimo iyo waxyaabo kale. Si aad u gaarto Ultimate Multisite Community, tag https://community.ultimatemultisite.com/home.
 

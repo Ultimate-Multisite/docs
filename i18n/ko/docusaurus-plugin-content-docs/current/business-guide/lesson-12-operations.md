@@ -3,7 +3,7 @@ title: '제12과: 사업 운영'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lesson 12: 비즈니스 운영하기 {#lesson-12-running-the-business}
+# Lesson 12: 비즈니스 운영하기
 
 플랫폼은 완성하는 프로젝트가 아니라, 운영하는 비즈니스입니다. 이 레슨에서는 FitSite를 관리하는 일상적인 운영 방식—지원, 결제, 유지보수, 그리고 고객 만족 유지—에 대해 다룹니다.
 

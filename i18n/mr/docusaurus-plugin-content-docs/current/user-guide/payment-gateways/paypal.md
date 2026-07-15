@@ -3,7 +3,7 @@ title: PayPal सेट अप करणे
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal गेटवे सेट करणे (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal गेटवे सेट करणे (v2)
 
 _**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 

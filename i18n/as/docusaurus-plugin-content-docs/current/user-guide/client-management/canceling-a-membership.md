@@ -3,7 +3,7 @@ title: সদস্যপদ বাতিল কৰা
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# মেম্বৰশ্বিপ বাতিল কৰা (v2) {#canceling-a-membership-v2}
+# মেম্বৰশ্বিপ বাতিল কৰা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই প্ৰবন্ধটোৱে Ultimate Multisiteৰ ২.x সংস্কৰণৰ কথা কয়।**_
 

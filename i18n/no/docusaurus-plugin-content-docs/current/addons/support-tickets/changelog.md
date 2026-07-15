@@ -3,7 +3,7 @@ title: Support Tickets Endringslogg
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Endringslogg for Support Tickets {#support-tickets-changelog}
+# Endringslogg for Support Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Forbedret: Fjernet `vendor/`-mappen fra Git-sporing (dette dekkes allerede av `.gitignore`), noe som reduserer størrelsen på repositoryet.

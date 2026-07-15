@@ -3,9 +3,9 @@ title: Chimiro chewedzero
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Template yeWedzero {#addon-template}
+# Template yeWedzero
 
-{{ADDON_DESCRIPTION}}
+Chimiro chewedzero — Ultimate Multisite.
 
 ## Zvinodiwa {#requirements}
 

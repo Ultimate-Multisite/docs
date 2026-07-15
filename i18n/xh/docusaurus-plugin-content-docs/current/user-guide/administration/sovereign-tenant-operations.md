@@ -3,7 +3,7 @@ title: Imisebenzi yoMqeshi Ozimeleyo
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Imisebenzi Yomqeshi Ozimeleyo {#sovereign-tenant-operations}
+# Imisebenzi Yomqeshi Ozimeleyo
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yongeza izixhobo zokusebenza kubaqeshi abazimeleyo: iisayithi ezingaphantsi ezisebenza ngedatabase yazo, ingcambu yefayile-system yazo, kunye nomxholo wokuhambisa, ngoxa zisabonakala kumlawuli wenethiwekhi.
 

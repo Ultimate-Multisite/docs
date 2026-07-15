@@ -3,7 +3,7 @@ title: Por qué Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Por qué Ultimate Multisite {#why-ultimate-multisite}
+# Por qué Ultimate Multisite
 
 Si llegaste a este artículo, probablemente hayas escuchado que nuestro plugin podría ser la solución para hacer realidad tu idea de negocio. Esperamos que tengas las respuestas que necesitas al final de este artículo.
 

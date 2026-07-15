@@ -4,7 +4,7 @@ title: کردار - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# کردار: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
+# کردار: mu_migration/import/user/custom_data_after
 
 دوای هەناردەکردنی داتای تایبەتی بەکارهێنەر کاردەکات.
 

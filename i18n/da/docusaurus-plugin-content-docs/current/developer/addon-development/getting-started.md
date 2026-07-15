@@ -3,7 +3,7 @@ title: Kom i gang med Addon-udvikling
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Udvikling af tilføjelser {#addon-development}
+# Udvikling af tilføjelser
 
 ## Tilføjelsesstruktur {#addon-structure}
 

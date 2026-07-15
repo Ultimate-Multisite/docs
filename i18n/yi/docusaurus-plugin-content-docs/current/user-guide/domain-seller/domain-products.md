@@ -3,7 +3,7 @@ title: דאָמיין־פּראָדוקטן און פּרײַזן
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain פּראָדוקטן און פּרײַזן {#domain-products-and-pricing}
+# Domain פּראָדוקטן און פּרײַזן
 
 Domain פּראָדוקטן זענען דער אופֿן ווי איר קאָנטראָלירט פּרײַזן, TLDs, WHOIS פּריוואַטקייט, און אויסקלײַב פֿון צושטעלער. יעדער Domain פּראָדוקט איז אַ סטאַנדאַרטער Ultimate Multisite פּראָדוקט מיט אַן עקסטרע **Domain Settings** קוויטל.
 

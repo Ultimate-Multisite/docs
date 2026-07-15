@@ -4,7 +4,7 @@ title: 動作 - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 讓外掛開發者可以在我們渲染頁面之後，加入額外的內容。
 

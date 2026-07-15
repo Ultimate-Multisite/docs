@@ -3,7 +3,7 @@ title: Nhungamiro yekubatanidza
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gwaro Rekubatanidza {#integration-guide}
+# Gwaro Rekubatanidza
 
 Gwaro iri rinofukidza maitiro akajairika ekubatanidza neUltimate Multisite, kusanganisira kubatanidza kumasevhisi ekunze, kuvaka payment gateways dzakagadziridzwa, uye kubata webhooks.
 

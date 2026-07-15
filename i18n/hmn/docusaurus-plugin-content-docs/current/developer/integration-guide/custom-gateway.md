@@ -3,7 +3,7 @@ title: Kev Tsim Kho Qhov Rooj Txuas Raws Li Xav Tau
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Kev Tsim Custom Gateway {#custom-gateway-development}
+# Kev Tsim Custom Gateway
 
 Koj tuaj yeem tsim custom payment gateways los ntawm kev txuas ntxiv chav kawm `Base_Gateway`.
 

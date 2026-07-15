@@ -3,7 +3,7 @@ title: Formularis de finalització de compra
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularis de pagament {#checkout-forms}
+# Formularis de pagament
 
 Els formularis de pagament són una manera fàcil i flexible d’experimentar amb diferents enfocaments quan intentes convertir clients nous.
 

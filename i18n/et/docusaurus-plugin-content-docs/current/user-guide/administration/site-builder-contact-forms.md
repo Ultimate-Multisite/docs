@@ -3,7 +3,7 @@ title: Siti ehitija kontaktiformid
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Veebilund kontaktformid {#site-builder-contact-forms}
+# Veebilund kontaktformid
 
 Superdav AI Agent v1.10.0 annab võimaluse luua kontaktforme otse chatti interface'i abil Site Builder agentiga. See võimalus võimaldab lisada täielikult toimivaid kontaktforme igale lehel ilma chatti lahkumata.
 

@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Action: wu_magic_link_login {#action-wumagiclinklogin}
+# Action: wu_magic_link_login
 
 magic link මඟින් පරිශීලකයෙකු ප්‍රවේශ වූ පසු ක්‍රියාත්මක වේ.
 

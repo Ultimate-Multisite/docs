@@ -3,7 +3,7 @@ title: Hükümdar Kirýetji Operasiýalary
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operasiýalary {#sovereign-tenant-operations}
+# Sovereign Tenant Operasiýalary
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 özüniňde hakyky özerk (sovereign) kiramlary üçin operasion guralary goşdirýär: bu subsite-ler özleri bilen öz bazasyny, dosya ulgamyny we ýol görkezijini işleýärler, ýöne ulgamanyň administratory tarapyndan ulanylyp görüp bilnerler.
 

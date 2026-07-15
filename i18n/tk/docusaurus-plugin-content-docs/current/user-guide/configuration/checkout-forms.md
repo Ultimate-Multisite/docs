@@ -3,7 +3,7 @@ title: Sipariş Formları
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms, yeni müşterileri dönüştürmek için farklı yolları denemek istediğinizde çok kolay ve esnek bir yoldur.
 

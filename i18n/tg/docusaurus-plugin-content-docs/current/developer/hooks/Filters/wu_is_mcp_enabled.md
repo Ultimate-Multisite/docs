@@ -4,7 +4,7 @@ title: Филтр - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Филтр: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Филтр: wu_is_mcp_enabled
 
 Ба таҳиягарони плагин иҷозат медиҳад, ки барои адаптери MCP ҳолати додашударо маҷбурӣ таъин кунанд.
 

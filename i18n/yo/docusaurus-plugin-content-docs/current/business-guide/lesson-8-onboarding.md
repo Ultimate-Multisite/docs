@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 8: Ìmú Oníbàárà Wọlé'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Ẹ̀kọ́ 8: Ìtọ́sọ́nà Oníbàárà Tuntun {#lesson-8-customer-onboarding}
+# Ẹ̀kọ́ 8: Ìtọ́sọ́nà Oníbàárà Tuntun
 
 Mímú oníbàárà forúkọsílẹ̀ jẹ́ ìdajì iṣẹ́ nìkan. Bí wọ́n bá wọlé, tí ohun gbogbo bá dà bí ó ti pọ̀ jù fún wọn, tí wọn kò sì padà mọ́, o ti pàdánù wọn. Ẹ̀kọ́ yìí ṣe àpẹrẹ ìrírí tí yóò yí ìforúkọsílẹ̀ tuntun padà sí oníbàárà tó ń ṣiṣẹ́, tó sì ní ìfarapa.
 

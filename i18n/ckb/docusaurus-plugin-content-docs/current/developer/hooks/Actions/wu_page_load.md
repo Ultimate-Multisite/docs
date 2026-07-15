@@ -4,7 +4,7 @@ title: کردار - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# کردار: wu_page_load {#action-wupageload}
+# کردار: wu_page_load
 
 ڕێگە بە پەرەپێدەرانی plugin بدە بۆ زیادکردنی hookی زیاتر بۆ پەڕەکانمان.
 

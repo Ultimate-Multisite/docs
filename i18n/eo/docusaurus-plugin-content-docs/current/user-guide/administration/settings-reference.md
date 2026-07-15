@@ -3,7 +3,7 @@ title: Referenco pri agordoj
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Agordoj-Referenco {#settings-reference}
+# Agordoj-Referenco
 
 Ĉi tiu paĝo spuras agordojn kiuj influas ĉiutagan administradon kaj lastatempajn kondutŝanĝojn en Ultimate Multisite.
 

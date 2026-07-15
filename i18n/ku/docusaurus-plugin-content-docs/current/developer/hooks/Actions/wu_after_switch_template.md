@@ -4,7 +4,7 @@ title: Çalakî - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Çalakî: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Çalakî: wu_after_switch_template
 
 Destûrê dide pêşdebirên plugin ku piştî ku bikarhênerek an super admin şablona malperê diguherîne, fonksiyonan girê bidin
 

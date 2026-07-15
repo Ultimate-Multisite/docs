@@ -3,7 +3,7 @@ title: WP-CLI 參考資料
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI 參考資料 {#wp-cli-reference}
+# WP-CLI 參考資料
 
 Gratis AI Agent 提供一個 `wp gratis-ai-agent` 指令群組，用於從命令列執行基準測試（benchmarking）代理程式、管理能力（abilities）和查詢代理程式狀態。所有指令都需要 WP-CLI 2.0 或更高版本。
 

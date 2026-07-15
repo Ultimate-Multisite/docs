@@ -3,7 +3,7 @@ title: Kundfeedback och felrapportering
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Återkoppling och felrapportering från användare {#customer-feedback--issue-reporting}
+# Återkoppling och felrapportering från användare
 
 Gratis AI Agent v1.5.0 introducerar ett inbyggt system för återkoppling och felrapportering som låter slutanvändare flagga svar som inte var hjälpsamma och rapportera problem direkt från chattgränssnittet. Detta system inkluderar hantering av samtycke, ett automatiserat rapporteringskommando och AI-assisterad sortering i bakgrunden.
 

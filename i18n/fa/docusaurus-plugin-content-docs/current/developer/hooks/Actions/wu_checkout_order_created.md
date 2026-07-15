@@ -4,7 +4,7 @@ title: عمل - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# اکشن: wu_checkout_order_created {#action-wucheckoutordercreated}
+# اکشن: wu_checkout_order_created
 
 این اکشن پس از اینکه سفارش پرداخت (checkout order) به طور کامل آماده شد، فعال می‌شود.
 

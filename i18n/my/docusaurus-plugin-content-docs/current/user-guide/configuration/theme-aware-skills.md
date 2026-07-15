@@ -3,7 +3,7 @@ title: Theme-Aware စွမ်းရည်
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills (အပြင်အဆင်အလိုက် အသိရှိသော စွမ်းရည်များ) {#theme-aware-skills}
+# Theme-Aware Skills (အပြင်အဆင်အလိုက် အသိရှိသော စွမ်းရည်များ)
 
 Superdav AI Agent v1.10.0 တွင် သင့်လက်ရှိ WordPress theme နှင့် အလိုအလျောက် လိုက်လျောညီထွေဖြစ်သည့် theme-aware built-in skills လေးခုကို ထည့်သွင်းပေးထားပါသည်။ ဤစွမ်းရည်များသည် သင့် theme ၏ ဖွဲ့စည်းပုံနှင့် အင်္ဂါရပ်များအလိုက် အထူးပြု လမ်းညွှန်မှုများနှင့် စွမ်းဆောင်ရည်များကို ပေးစွမ်းပါသည်။
 

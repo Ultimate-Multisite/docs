@@ -3,7 +3,7 @@ title: Məlum Uyğunsuzluqlar
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Digər Pluginlərlə Bilinən Uyğunsuzluqlar {#known-incompatibilities-with-other-plugins}
+# Digər Pluginlərlə Bilinən Uyğunsuzluqlar
 
 Ultimate Multisite-ı quraşdırıb aktivasiya etdikdən sonra, digər pluginlərlə həll edilməmiş uyğunsuzluqlar səbəbindən problemlərlə qarşılaşa bilərsiniz.
 

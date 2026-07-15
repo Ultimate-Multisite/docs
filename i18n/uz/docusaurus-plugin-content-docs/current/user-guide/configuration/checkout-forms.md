@@ -3,7 +3,7 @@ title: To'lov shakllari
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms — bu yangi mijozlarni jalb qilish uchun turli yondashuvlar bilan tajriba o'tkazishda oson va moslashuvchan usuldir.
 

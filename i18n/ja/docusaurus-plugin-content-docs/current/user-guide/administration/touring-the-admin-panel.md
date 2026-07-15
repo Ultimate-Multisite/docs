@@ -3,7 +3,7 @@ title: 管理パネルを見て回る
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# 管理パネルのツアー {#touring-the-admin-panel}
+# 管理パネルのツアー
 
 Ultimate Multisite は、できる限りシンプルで分かりやすいことを目指していますが、これほど強力なツールではガイド付きツアーが役立ちます。管理ページを一緒に見て、全体像を把握しましょう。
 

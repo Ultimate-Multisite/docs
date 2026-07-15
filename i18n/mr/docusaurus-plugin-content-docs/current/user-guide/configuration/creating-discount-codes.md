@@ -3,7 +3,7 @@ title: सवलत कोड तयार करणे
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Codes तयार करणे (v2) {#creating-discount-codes-v2}
+# Discount Codes तयार करणे (v2)
 
 _**महत्त्वाची नोंद: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 

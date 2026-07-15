@@ -3,7 +3,7 @@ title: Pagkansela ng Miyembro
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Pagkansela ng Membership (v2) {#canceling-a-membership-v2}
+# Pagkansela ng Membership (v2)
 
 _**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 

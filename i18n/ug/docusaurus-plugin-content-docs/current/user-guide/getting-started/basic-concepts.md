@@ -3,7 +3,7 @@ title: Асосий таخشилар
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Асосий Тушунлар {#basic-concepts}
+# Асосий Тушунлар
 
 WordPress bilen işlemek üçin birnäçe asosiy tushuntirishlar beraman. Bu narlar siz WordPress bilen qanday ishlatingi düşunmaniz üçin kömek eder.
 
@@ -19,7 +19,7 @@ Bu makalede WordPress'teki bir nevi asosiy tushunchalarni belgilab va tushuntiri
 
 WordPress **Multisite**, bu bir WordPress kurma tipidir. Bu sayede tek bir WordPress paneli (dashboard) üzerinden birden fazla web sitesi oluşturabilir ve yönetebilirsiniz. Sitenin sayısını, özelliklerini, temalarını ve kullanıcı rollerini dahil olmak üzere her şeyi yönetebilirsiniz. Yüzlerce hatta binlerce siteyi yönetmek mümkün olur.
 
-# Şebeke (Network) {#network}
+# Şebeke (Network)
 
 WordPress'te "Şebeke" (Network) dediğimiz şey, genellikle sitenizin farklı kısımları arasındaki bağlantıyı veya birden fazla web sitesini tek bir yönetim altında tutma fikrini ifade eder. Bu konu biraz teknik gelebilir ama hiç merak etmeyin, size basitçe anlatacağım.
 
@@ -66,7 +66,7 @@ _wp_2_options_ - иkinji alt sayt өчен опциялар таблицасы
 
 Web hosting sağlayıcısı, işletmelerin ve bireylerin kendi web sitelerini Dünya Veb-i geniş ağı (World Wide Web) üzerinden erişilebilir hale getirmelerine olanak tanıyan bir şirkettir. Web barındırma sağlayıcılarının sunduğu hizmetler değişse de genellikle web sitesi tasarımı, sunucuda depolama alanı ve İnternet bağlantısı gibi şeyler içerir.
 
-# โดเมน (Domain) {#hosting-provider}
+# โดเมน (Domain)
 
 โดเมน म्हणजे तुमच्या वेबसाइटचे नाव असते. हे असे समजा की तुम्ही इंटरनेटवर एक घर शोधत आहात, तर डोमेन हे त्या घराचा पत्ता आहे. जेव्हा लोक तुमच्या वेबसाइटला भेट देण्यासाठी ब्राउझरमध्ये टाइप करतात, तेव्हा ते नेमके कोणत्या ठिकाणी जावे हे डोमेन ठरवते.
 
@@ -158,7 +158,7 @@ WordPress Multisite'ta pluginler va theme'ler faqat Super Admin (Süper Administ
 
 Bu deməkdir ki siz bir asosiy (base) sayt yarata bilersiniz, müxtəlif pluginləri aktivləşdirə bilərsiniz, aktiv tema seçə bilərsiniz və onu istədiyiniz şəkildə özünüz uyğunlaşdıra bilərsiniz. Sonra, müştəriniz yeni hesab yaratdıqda, o, mənasız məzmunu olmayan standart bir WordPress saytı əvəzinə, bütün uyğunlaşdırmalarınız və məzmunlarınız artıq yerləşdirilmiş asosiy saytın bir nüsxəsini alır.
 
-# โดเมนแนปปิ้ง (Domain Mapping) {#site-template}
+# โดเมนแนปปิ้ง (Domain Mapping)
 
 โดเมนแนปปิ้งとは、ウェブサイトの特定のドメイン（例: `www.example.com`）を、別の場所やシステムに紐づける作業のことです。簡単に言うと、「この住所（ドメイン）は、あの部屋（新しい場所）につながっているよ」と設定するイメージです。
 

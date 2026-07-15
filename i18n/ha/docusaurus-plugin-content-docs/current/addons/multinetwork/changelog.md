@@ -3,7 +3,7 @@ title: Tarihin canje-canje na hanyoyin sadarwa da yawa
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Tarihin Canje-canje na Multi-Network {#multi-network-changelog}
+# Tarihin Canje-canje na Multi-Network
 
 ### 1.3.0 {#130}
 * Sabo: Mai duba samfurin network — bincika kuma duba samfuran network tare da panel mai rai kafin saye.

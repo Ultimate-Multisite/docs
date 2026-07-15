@@ -3,7 +3,7 @@ title: Gestion des e-mails système
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestion des emails système {#managing-system-emails}
+# Gestion des emails système
 
 Ultimate Multisite envoie divers emails système pour des événements tels que les confirmations d’inscription, les reçus de paiement et les changements d’abonnement. Vous pouvez personnaliser ces modèles d’email pour qu’ils correspondent à votre marque.
 

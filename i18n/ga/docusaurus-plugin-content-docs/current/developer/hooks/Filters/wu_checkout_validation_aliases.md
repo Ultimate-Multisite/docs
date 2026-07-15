@@ -4,7 +4,7 @@ title: Scagaire - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Scagaire: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Scagaire: wu_checkout_validation_aliases
 
 Ceadaíonn sé d’fhorbróirí breiseán ailiasanna saincheaptha a chur leis sa bhailíochtóir foirme.
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite-ի տեղադրում
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-ի տեղադրում {#installing-ultimate-multisite}
+# Ultimate Multisite-ի տեղադրում
 
 :::note
 Այս հրահանգը ենթադրում է, որ դուք արդեն ունեք WordPress Multisite-ի տեղադրված և կազմաձևված տարբերակ: Ավելի մանրամասն ինֆորմացիայի համար այցելե՛ք WP Beginner-ի [այս հղումը](https://www.wpbeginner.com/glossary/multisite/)։

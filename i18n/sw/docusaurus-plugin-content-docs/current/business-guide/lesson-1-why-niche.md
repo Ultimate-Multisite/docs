@@ -3,7 +3,7 @@ title: 'Somo la 1: Kwa nini Niche inashinda'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Somo la 1: Kwa Niche Ndio Ushindi {#lesson-1-why-niche-wins}
+# Somo la 1: Kwa Niche Ndio Ushindi
 
 Kabla hata hatuoguse programu yoyote, lazima uelewe kwa nini kujenga kwa ajili ya hadhira maalum ndio uamuzi muhimu zaidi utakaofanya.
 

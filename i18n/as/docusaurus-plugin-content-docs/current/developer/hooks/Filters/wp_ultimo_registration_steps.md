@@ -4,7 +4,7 @@ title: ছাঁকনি - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# Filter: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# Filter: wp_ultimo_registration_steps
 
 ফিল্টাৰৰ জৰিয়তে অধিক পদক্ষেপ যোগ কৰক
 

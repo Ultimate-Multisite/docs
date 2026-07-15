@@ -3,7 +3,7 @@ title: Fhòcas Mòradh a' Chàrdainn
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow a' Chàrachadh Sovereigne {#sovereign-migration-workflow}
+# Workflow a' Chàrachadh Sovereigne
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 a sgilean gealltasan (migration verification gates) airson a' chàrachadh sgeulachda (subsite) a' chàrachadh gu strànaidh (sovereign tenant infrastructure).
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite అనువాదం
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ను అనువదించడం {#translating-ultimate-multisite}
+# Ultimate Multisite ను అనువదించడం
 
 Ultimate Multisite ఆంగ్లంలో అభివృద్ధి చేయబడింది, కానీ ఈ plugin పూర్తిగా అనువదించదగినది మరియు మేము అనువాద సహకారాలను చురుకుగా స్వాగతిస్తున్నాము.
 

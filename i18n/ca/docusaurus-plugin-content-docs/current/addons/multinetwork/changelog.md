@@ -3,7 +3,7 @@ title: Cambiar de xarxa (Multi-Network) Changelog
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Diari de canvis de Multi-Xarxa {#multi-network-changelog}
+# Diari de canvis de Multi-Xarxa
 
 ### 1.3.0 {#130}
 * Nou: Visualitzador de plantilles de xarxa — navega i previsualitza plantilles de xarxa amb un panell en directe abans de comprar.

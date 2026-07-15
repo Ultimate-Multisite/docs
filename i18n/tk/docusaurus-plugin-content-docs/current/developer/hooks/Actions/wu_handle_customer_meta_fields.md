@@ -4,7 +4,7 @@ title: Hereket - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Hereket: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Hereket: wu_handle_customer_meta_fields
 
 Plugin döredijilerine zerur bolsa meta maglumatlaryny dürli usullar bilen saklamaga mümkinçilik beriň.
 

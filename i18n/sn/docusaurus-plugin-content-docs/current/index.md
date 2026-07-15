@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Zvinyorwa zveUltimate Multisite {#ultimate-multisite-documentation}
+# Zvinyorwa zveUltimate Multisite
 
 Tikugashirei kuzvinyorwa zveUltimate Multisite. Ultimate Multisite inoshandura WordPress Multisite kuita chikuva chakazara cheWebsite as a Service (WaaS).
 

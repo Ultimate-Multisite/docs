@@ -3,7 +3,7 @@ title: 'Lektion 12: Das Geschäft führen'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lektion 12: Das Geschäft führen {#lesson-12-running-the-business}
+# Lektion 12: Das Geschäft führen
 
 Eine Plattform ist kein Projekt, das man abschließt – sie ist ein Geschäft, das man betreibt. In dieser Lektion behandeln wir den täglichen Betrieb von FitSite: Support, Abrechnung, Wartung und die Zufriedenheit der Kunden.
 

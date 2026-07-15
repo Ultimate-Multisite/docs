@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_get_post_types
 sidebar_label: wu_get_post_types
 _i18n_hash: 7e9a849e187bc1b15e63e024b42d7593
 ---
-# ଫିଲ୍ଟର: wu_get_post_types {#filter-wugetposttypes}
+# ଫିଲ୍ଟର: wu_get_post_types
 
 କେଉଁ ପୋଷ୍ଟ ପ୍ରକାର ଦେଖାଯିବ, ତାହା ବାଛିବାକୁ ବିକାଶକାରୀମାନଙ୍କୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

@@ -4,7 +4,7 @@ title: 'Acción - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Acción: wu_\{$this->id\}_scripts {#action-wuthis-idscripts}
+# Acción: wu_\{$this->id\}_scripts
 
 Dispara el gancho enqueue scripts.
 

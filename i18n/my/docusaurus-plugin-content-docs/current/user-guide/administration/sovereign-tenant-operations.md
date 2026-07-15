@@ -3,7 +3,7 @@ title: အချုပ်အခြာအာဏာရှိ အငှားနေ
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operations {#sovereign-tenant-operations}
+# Sovereign Tenant Operations
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 မှာ စူဗာရင် (sovereign) သီးသန့် အသုံးပြုသူတွေအတွက် လုပ်ငန်းလည်ပတ်မှုဆိုင်ရာ ကိရိယာတွေကို ထပ်ထည့်ပေးထားပါတယ် - ဒါဟာ သူတို့ကိုယ်ပိုင် database၊ filesystem root နဲ့ routing context တွေနဲ့ လည်ပတ်နေတဲ့ subsites တွေ ဖြစ်ပြီး network admin ဆီကနေ မြင်နိုင်စွမ်း ရှိနေမှာပါ။
 

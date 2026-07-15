@@ -3,7 +3,7 @@ title: Γνωστές Ασυμβατότητες
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Γνωστές ασυμβατότητες με άλλα Plugins {#known-incompatibilities-with-other-plugins}
+# Γνωστές ασυμβατότητες με άλλα Plugins
 
 Μετά την εγκατάσταση και ενεργοποίηση του Ultimate Multisite, ενδέχεται να αντιμετωπίσετε προβλήματα λόγω ασυμβατοτήτων με άλλα plugins που δεν έχουν ακόμη επιλυθεί.
 

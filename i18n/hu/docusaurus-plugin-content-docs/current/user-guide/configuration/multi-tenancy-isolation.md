@@ -3,7 +3,7 @@ title: Multi-tenancy izoláció
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isoláció {#multi-tenancy-isolation}
+# Multi-Tenancy Isoláció
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 támogatja az autonóm (sovereign) kedvezményezett számára per-subsite adatbázis és fájlszervezés izolációt. Ez tartja a kedvezményezett adatokat külön, miközben megőrzi a hálózati szintű biztosítást, számlázást és kezelést.
 

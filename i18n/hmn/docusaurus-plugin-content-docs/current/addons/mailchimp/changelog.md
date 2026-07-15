@@ -3,7 +3,7 @@ title: Mailchimp Keeb kwm kev hloov tshiab
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Keeb kwm hloov tshiab {#mailchimp-changelog}
+# Mailchimp Keeb kwm hloov tshiab
 
 Version: 1.1.1 - Tso tawm rau 2025-09-28
 

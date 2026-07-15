@@ -3,7 +3,7 @@ title: Mga Batakang Konsepto
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Mga Batakang Konsepto {#basic-concepts}
+# Mga Batakang Konsepto
 
 Para sa bag-o nga user sa WordPress Multisite ug kinsa nagsugod pa lang gamiton ang Ultimate Multisite, daghan gyud og bag-ong mga pulong ug phrase nga kinahanglan imong masagutan una. Importante ni kay kinahanglan nimo masabtan kung unsaon paggana ang platform ug unsaon kini sa tibuok.
 

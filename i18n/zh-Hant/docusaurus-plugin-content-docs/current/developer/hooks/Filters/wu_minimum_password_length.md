@@ -4,7 +4,7 @@ title: 過濾器 - wu_minimum_password_length
 sidebar_label: wu_minimum_password_length
 _i18n_hash: 02317f8ab8200551a9d2112b8ba4b7a8
 ---
-# 過濾器：wu_minimum_password_length {#filter-wuminimumpasswordlength}
+# 過濾器：wu_minimum_password_length
 
 用來過濾設定最短密碼長度。
 

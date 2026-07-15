@@ -3,7 +3,7 @@ title: Qhuas tsim phoj rau Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0-ന് ඔයාට මුලින්ම සකස් කරන වෙලාවට කස්ටම් බ්ලොක් තේම් එකක් හදන්න උදව් කරන **Theme Builder onboarding flow** එකක් හඳුන්වා දෙනවා. මේක කලින් තිබුණු Site Builder mode එක වෙනුවට, වඩාත් නම්‍යශීලී, agent එකෙන් උදව් ගන්න පුළුවන් ක්‍රමයක්.
 

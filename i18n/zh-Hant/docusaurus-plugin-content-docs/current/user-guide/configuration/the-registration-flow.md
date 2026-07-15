@@ -3,7 +3,7 @@ title: 註冊流程
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# 註冊流程（v2） {#the-registration-flow-v2}
+# 註冊流程（v2）
 
 _**重要注意事項：本文適用於 Ultimate Multisite 2.x 版本。**_
 

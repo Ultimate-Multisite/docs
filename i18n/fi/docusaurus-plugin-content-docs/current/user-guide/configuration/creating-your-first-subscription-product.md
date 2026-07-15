@@ -3,7 +3,7 @@ title: Ensimmäisen tilauskohtaisen tuotteen luominen
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ensimmäisen tilauskohteen luominen (v2) {#creating-your-first-subscription-product-v2}
+# Ensimmäisen tilauskohteen luominen (v2)
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli on tarkoitettu vain Ultimate Multisite -versio 2.x käyttäjille. Jos käytät versiota 1.x,**_ **katso tätä artikkelia.**
 

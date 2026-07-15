@@ -4,7 +4,7 @@ title: Shaandhee - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Shaandheeye: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Shaandheeye: wu_element_block_types_to_check
 
 Waxaa laga yaabaa inaan u baahanno inaan ku darno blocks dheeraad ah mar dambe.
 

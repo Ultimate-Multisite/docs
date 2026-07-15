@@ -3,7 +3,7 @@ title: 결제 양식
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# 결제 양식 {#checkout-forms}
+# 결제 양식
 
 결제 양식은 새 고객으로 전환하려고 할 때 다양한 접근 방식을 실험할 수 있는 쉽고 유연한 방법입니다.
 

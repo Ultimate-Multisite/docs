@@ -3,7 +3,7 @@ title: Potok migracije Sovereigna
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migracijski Postopek {#sovereign-migration-workflow}
+# Sovereign Migracijski Postopek
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje vratar za verifikacijo migracije pri premisu standardnega subsite v infrastrukturo sovrenskega najemnika (sovereign tenant).
 

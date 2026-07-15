@@ -3,7 +3,7 @@ title: Cloudflare ಏಕೀಕರಣ
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ಏಕೀಕರಣ {#cloudflare-integration}
+# Cloudflare ಏಕೀಕರಣ
 
 ## ಅವಲೋಕನ {#overview}
 Cloudflare ಒಂದು ಪ್ರಮುಖ ವಿಷಯ ವಿತರಣಾ ಜಾಲ (CDN) ಮತ್ತು ಭದ್ರತಾ ಪೂರೈಕೆದಾರವಾಗಿದ್ದು, ಜಾಲತಾಣಗಳನ್ನು ರಕ್ಷಿಸಲು ಮತ್ತು ವೇಗಗೊಳಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಈ ಏಕೀಕರಣವು Ultimate Multisite ಮತ್ತು Cloudflare ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ, ವಿಶೇಷವಾಗಿ ಉಪಡೊಮೇನ್ Multisite ಸ್ಥಾಪನೆಗಳಿಗಾಗಿ.

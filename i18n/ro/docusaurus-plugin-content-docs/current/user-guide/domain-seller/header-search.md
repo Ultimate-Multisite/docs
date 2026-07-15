@@ -3,7 +3,7 @@ title: Căutare domeniu în antet
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Căutare de domeniu în antet {#header-domain-search}
+# Căutare de domeniu în antet
 
 Folosiți această configurare când doriți un formular mic în antet care pornește o căutare de domeniu, apoi îi permite clientului să aleagă dintre domeniile disponibile în finalizarea comenzii Ultimate Multisite.
 

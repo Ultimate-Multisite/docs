@@ -3,7 +3,7 @@ title: डिझाइन दिशा
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# डिझाईन दिशा (Design Direction) {#design-direction}
+# डिझाईन दिशा (Design Direction)
 
 **डिझाईन दिशा** या टप्प्यात तुम्हाला Theme Builder द्वारे संपूर्ण थीम तयार करण्यापूर्वी, तुमच्या थीमच्या व्हिज्युअल डिझाईनचे पुनरावलोकन (review), सुधारणा (refine) आणि अंतिम रूप (finalize) देता येते.
 

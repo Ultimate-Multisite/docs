@@ -3,7 +3,7 @@ title: ຕົວຢ່າງໂຄດຂັ້ນສູງ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ຕົວຢ່າງໂຄດຂັ້ນສູງ {#advanced-code-examples}
+# ຕົວຢ່າງໂຄດຂັ້ນສູງ
 
 ຕົວຢ່າງເຫຼົ່ານີ້ສະແດງຮູບແບບການເຊື່ອມປະສານຂັ້ນສູງກັບ Ultimate Multisite.
 

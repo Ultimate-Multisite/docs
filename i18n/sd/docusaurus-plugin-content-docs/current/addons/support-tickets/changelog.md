@@ -3,7 +3,7 @@ title: سپورٽ ٽڪيٽن جو تبديلين جو لاگ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets تبديلي نامو {#support-tickets-changelog}
+# Support Tickets تبديلي نامو
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * بهتر ڪيو ويو: Git ٽريڪنگ مان vendor/ ڊائريڪٽري هٽائي وئي (.gitignore اڳ ئي ڍڪي چڪو هو)، repository جو سائيز گهٽايو ويو

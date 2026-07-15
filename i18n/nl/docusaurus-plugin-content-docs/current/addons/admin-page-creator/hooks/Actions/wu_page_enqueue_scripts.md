@@ -4,7 +4,7 @@ title: Actie - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Actie: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Actie: wu_page_enqueue_scripts
 
 Hier voegen we een aangepaste actie toe, zodat we een plek hebben om de scripts en styles indien nodig te enqueuen\ en ervoor te zorgen dat ze alleen op de juiste pagina's worden geladen
 

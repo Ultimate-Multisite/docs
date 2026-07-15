@@ -3,7 +3,7 @@ title: Onboarding-Flow vom Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 füeiert en gefüehrt **Theme Builder onboarding flow** i, wo dir hilft, e eigene block-theme während dinere erschte Irichtig z'erstelle. Das ersetzt de alte Site Builder Modus dur en flexiblere, agent-unterstützte Aasatz.
 

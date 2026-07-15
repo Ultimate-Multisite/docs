@@ -3,7 +3,7 @@ title: Postup registráции
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registračný tok (v2) {#the-registration-flow-v2}
+# Registračný tok (v2)
 
 _**DÔLEŽITÉU POZNÁMKA: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 

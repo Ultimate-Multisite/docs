@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Àlẹmọ: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Àlẹmọ: wu_wp_config_reference_hook_line_patterns
 
 A máa ṣàyẹwo àwọn àpẹẹrẹ mẹ́ta nígbà tí a bá ń gbìyànjú láti mọ ibi tí a ti lè fi àwọn iye aláìyípadà wa sí:
 

@@ -3,7 +3,7 @@ title: 'Dysgu 11: Chwilio amgylcheddwyr'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leses 11: Gwriadau Cliention {#lesson-11-finding-customers}
+# Leses 11: Gwriadau Cliention
 
 Mae ffurfwrda'n dda heb unrhyw gwriadau yn rhywbeth o ddefnydd. Mae’r les hon yn gwmpasu sut i gael gwriadau mewn cyfderiad penodol – strategaid sydd yn weithio yn benodol oherwydd bod chi wedi sefylltu ar un dyfodol.
 

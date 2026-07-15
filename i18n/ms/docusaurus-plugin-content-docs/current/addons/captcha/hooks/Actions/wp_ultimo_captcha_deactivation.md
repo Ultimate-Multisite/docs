@@ -4,7 +4,7 @@ title: Tindakan - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Tindakan: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Tindakan: wp_ultimo_captcha_deactivation
 
 Membenarkan bahagian lain dalam plugin untuk menyambungkan rutin mereka untuk proses penyahaktifan
 

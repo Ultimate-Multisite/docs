@@ -3,7 +3,7 @@ title: ପ୍ରବେଶ ପ୍ରକ୍ରିୟା
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# రిజిస్ట్రేషన్ ఫ్లో (v2) {#the-registration-flow-v2}
+# రిజిస్ట్రేషన్ ఫ్లో (v2)
 
 _**ముఖ్య గమనిక: ఈ ఆర్టికల్ Ultimate Multisite వెర్షన్ 2.x ను సూచిస్తుంది.**_
 

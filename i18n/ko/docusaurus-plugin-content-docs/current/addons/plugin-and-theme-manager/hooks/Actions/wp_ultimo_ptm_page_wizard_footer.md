@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# 액션: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# 액션: wp_ultimo_ptm_page_wizard_footer
 
 플러그인 개발자가 페이지 하단에 스크립트를 추가할 수 있도록 허용합니다
 

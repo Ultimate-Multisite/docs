@@ -3,7 +3,7 @@ title: WP Engine ինտեգրում
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Ինտեգրում {#wp-engine-integration}
+# WP Engine Ինտեգրում
 
 ## Ընդհանուր տեսքը {#overview}
 WP Engine-ը պրեմիում կառավարվող WordPress հոස්թինգային հարթակ է, որը մատուցում է օպտիմալ արագություն, անվտանգություն և մասշտաբայնություն WordPress սայթերի համար։ Այս ինտեգրումը թույլ է տալիս ավտոմատ դոմենի սինխրոնիզացիա Ultimate Multisite-ի և WP Engine-ի միջև։

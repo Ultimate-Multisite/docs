@@ -3,7 +3,7 @@ title: Dizaina sistēmas estētikas prasme
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizaina sistēmas estētika prasmes {#design-system-aesthetics-skill}
+# Dizaina sistēmas estētika prasmes
 
 **Dizaina sistēmas estētikas prasmes** ir ceļvedisks pieeju, kas palīdz jums uzlabot vietnes vizuālo identitāti. Tas palīdz jums veikt vienotus lēmumus par tipografiju, krāsām, atstarpēm un motora tokeniem, kas definē jūsu dizaina sistēmu.
 

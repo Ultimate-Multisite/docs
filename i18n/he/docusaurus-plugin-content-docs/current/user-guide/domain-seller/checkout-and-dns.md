@@ -3,7 +3,7 @@ title: שדה תשלום ו-DNS של לקוח
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# ניהול שדה התשלום ו-DNS של לקוחות {#checkout-field-and-customer-dns-management}
+# ניהול שדה התשלום ו-DNS של לקוחות
 
 ## שדה התשלום לבחירת דומיין {#the-domain-selection-checkout-field}
 

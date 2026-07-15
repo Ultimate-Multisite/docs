@@ -3,7 +3,7 @@ title: Tataiso ea Moralo
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Tataiso ea Moralo {#design-direction}
+# Tataiso ea Moralo
 
 Mohato oa **Tataiso ea Moralo** o u lumella ho hlahloba, ho ntlafatsa, le ho phethela moralo oa pono oa theme ea hao pele Theme Builder e hlahisa theme e feletseng.
 

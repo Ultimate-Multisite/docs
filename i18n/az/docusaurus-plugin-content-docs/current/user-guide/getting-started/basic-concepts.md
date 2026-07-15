@@ -3,7 +3,7 @@ title: Əsas Konsepsiyalar
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Əsas Konsepsiyalar {#basic-concepts}
+# Əsas Konsepsiyalar
 
 Yeni bir WordPress Multisite istifadəçisi və ya Ultimate Multisite-dan istifadə etməyə yeni başlayan bir şəxs üçün ilk növbədə öyrəniləcək çox sayda yeni söz və ifadə ola bilər. Onları öyrənmək vacib bir məsələdir, çünki platformanı və onun ümumilikdə necə işlədiyini anlamaq lazım gələcək.
 

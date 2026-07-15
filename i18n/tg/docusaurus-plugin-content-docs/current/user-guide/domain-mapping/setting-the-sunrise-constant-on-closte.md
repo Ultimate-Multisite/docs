@@ -3,7 +3,7 @@ title: Муайян кардани константа Sunrise дар Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Муартиб кардани константа Sunrise ба true дар Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Муартиб кардани константа Sunrise ба true дар Closte
 
 Баъзе хостҳо барои омилҳои аманӣ файл `wp-config.php` -ро қатъ мекунанд. Ин маънои онро дорад, ки Ultimate Multisite наметавонад мустақилона файлро тағир диҳад ва константаҳои зарурӣ барои кор кардани маппинг домен ва дигар хусусиятҳо ба вуҷуд оварда шаванд. Closte яке аз чунин хостҳо аст.
 

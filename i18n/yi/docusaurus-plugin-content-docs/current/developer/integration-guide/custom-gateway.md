@@ -3,7 +3,7 @@ title: קאַסטאַם Gateway אַנטוויקלונג
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# אַנטוויקלונג פֿון אַ מנהג־Gateway {#custom-gateway-development}
+# אַנטוויקלונג פֿון אַ מנהג־Gateway
 
 איר קענט שאַפֿן מנהג־צאָלונג־gateways דורך אויסברייטערן די `Base_Gateway` קלאַס.
 

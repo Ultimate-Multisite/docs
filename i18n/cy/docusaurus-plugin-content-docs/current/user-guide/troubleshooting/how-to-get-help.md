@@ -3,7 +3,7 @@ title: Sutaliad i help
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Sut i gael y help {#how-to-get-help}
+# Sut i gael y help
 
 Mae eich llapiad Licens iawn yn gywir, ac mae gan ei ddaliad cyffredinol i'r tîm ein i helpu chi i ddefnyddio'r pwoblau allanig sy gallwch dod o hyd yn ystod y cyfnod eich cyflwyno Ultimate Multisite.
 

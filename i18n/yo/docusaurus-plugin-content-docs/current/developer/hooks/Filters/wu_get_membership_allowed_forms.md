@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Àlẹmọ: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Àlẹmọ: wu_get_membership_allowed_forms
 
 Fàyè gba àwọn olùgbéejáde láti ṣàfikún àwọn slug fọọmu tuntun láti kọjá ìhùwàsí yìí.
 

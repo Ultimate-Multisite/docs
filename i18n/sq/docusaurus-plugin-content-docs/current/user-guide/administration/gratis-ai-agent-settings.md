@@ -3,7 +3,7 @@ title: Cilësimet e Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Cilësimet e Gratis AI Agent {#gratis-ai-agent-settings}
+# Cilësimet e Gratis AI Agent
 
 Ekrani **Settings → Advanced** në Gratis AI Agent ofron konfigurim të nivelit të administratorit për integrimet backend. Kjo faqe dokumenton përcjelljen e feedback-ut, çelësat e ofruesve të kërkimit, konfigurimin e shërbimit të menaxhuar Superdav, kontrollet e Google Calendar, cilësimet e SMS-ve TextBee dhe feature flags në nivel rrjeti.
 

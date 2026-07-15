@@ -4,7 +4,7 @@ title: Tātari - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Tātari: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Tātari: wu_woocommerce_line_item_params
 
 Tātaria ngā tawhā e whakamahia ana hei waihanga i ngā tūemi rārangi i runga i te kete WooCommerce, i mua i te tukuna anō o te kiritaki ki te utu-whakamutunga WooCommerce.
 

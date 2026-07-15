@@ -3,7 +3,7 @@ title: افزونه گلیشدیرمه‌یه باشلاماق
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# افزونه گلیشدیرمه‌سی {#addon-development}
+# افزونه گلیشدیرمه‌سی
 
 ## افزونه قورولوشو {#addon-structure}
 

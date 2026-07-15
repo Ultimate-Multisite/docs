@@ -3,7 +3,7 @@ title: บันทึกการเปลี่ยนแปลง Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# บันทึกการเปลี่ยนแปลง Captcha {#captcha-changelog}
+# บันทึกการเปลี่ยนแปลง Captcha
 
 Version: 1.5.0 - เผยแพร่เมื่อ 2026-05-22
 * ใหม่: ตัวจำกัดอัตราแบบหยุดเด็ดขาด (Hard-stop rate limiter) — นับทุกการร้องขอ GET และ POST ที่เกิดขึ้นบนหน้าจอที่ป้องกันด้วย captcha (เช่น wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) และตอบกลับด้วย HTTP 429 พร้อม header `Retry-After` และการหน่วงเวลาแบบสุ่ม (tarpit sleep) (1–5 วินาที โดยจำกัดสูงสุดที่ 15 วินาที)

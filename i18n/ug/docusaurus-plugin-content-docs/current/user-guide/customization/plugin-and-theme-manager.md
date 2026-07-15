@@ -3,7 +3,7 @@ title: Плагин ва Тема Менеджеры
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# Плагин ва Тема Менеджери (Plugin and Theme Manager) {#plugin-and-theme-manager}
+# Плагин ва Тема Менеджери (Plugin and Theme Manager)
 
 Бу функция **Плагин ва Тема Менеджер** аддон томонидан таъминланади.
 

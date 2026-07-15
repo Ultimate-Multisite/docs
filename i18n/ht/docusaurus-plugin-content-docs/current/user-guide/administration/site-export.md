@@ -3,7 +3,7 @@ title: Eksport Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport Site {#site-export}
+# Eksport Site
 
 La page d'administration **Site Export** pèmèt les administrateur rétoye koneksyon pake yon sèl site, oswa tout rezo a, anba fòma yon archive ki ka telechaje pou migrasyon, backup, oubyen travay transfer.
 

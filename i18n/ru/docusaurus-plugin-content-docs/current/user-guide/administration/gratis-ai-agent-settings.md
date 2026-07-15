@@ -3,7 +3,7 @@ title: Настройки Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Настройки Gratis AI Agent {#gratis-ai-agent-settings}
+# Настройки Gratis AI Agent
 
 Экран **Settings → Advanced** в Gratis AI Agent предоставляет конфигурацию уровня администратора для серверных интеграций. На этой странице описаны пересылка обратной связи, ключи поставщиков поиска, настройка управляемого сервиса Superdav, элементы управления Google Calendar, настройки TextBee SMS и сетевые флаги функций.
 

@@ -3,7 +3,7 @@ title: 'Isifundo 13: Ukwandisa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Isifundo 13: Ukukhula Ngomlinganiselo {#lesson-13-scaling-up}
+# Isifundo 13: Ukukhula Ngomlinganiselo
 
 Unendawo esebenzayo enabathengi abahlawulayo. Esi sifundo sigubungela indlela yokukhula ukusuka kumsebenzi omncinci uye kwishishini elizinzileyo -- ukwandisa iziseko zobugcisa, ukwenza imisebenzi ngokuzenzekelayo, nokunyusa ingeniso kumthengi ngamnye.
 

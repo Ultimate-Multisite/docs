@@ -3,7 +3,7 @@ title: Uhamisho wa Hali ya Upande Tatu
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Uhamisho wa Hali ya Nje ya Tatu {#third-party-mode-migration}
+# Uhamisho wa Hali ya Nje ya Tatu
 
 Superdav AI Agent v1.12.0 inabadilisha jinsi uwezo wa nje ya tatu (third-party abilities) unavyoshughulikiwa. **Hali ya Nje ya Tatu sasa inaanza kwa 'auto' (kiotomatiki)**, ikiruhusu kuunganishwa na API ya Uwezo ya WordPress (WordPress Abilities API) moja kwa moja kwenye WordPress 7.0+ bila kuhitaji mipangilio ya mikono.
 

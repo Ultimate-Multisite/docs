@@ -4,7 +4,7 @@ title: Criathrag - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0b11e9dd91ab7c817aae511e044f8d33
 ---
-# Criathrag: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Criathrag: wp_ultimo_skip_network_active_check
 
 Leig le luchd-leasachaidh an sgrùdadh seo a ghearradh goirid.
 

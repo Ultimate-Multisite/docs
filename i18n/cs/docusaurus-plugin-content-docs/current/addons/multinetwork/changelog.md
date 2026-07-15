@@ -3,7 +3,7 @@ title: Změnový deník pro více sítí
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Změnový deník Multi-Network {#multi-network-changelog}
+# Změnový deník Multi-Network
 
 ### 1.3.0 {#130}
 * Nové: Předzíchovník šablon sítě — procházejte a předzobrazte šablony sítě na živém panelu před nákupem.

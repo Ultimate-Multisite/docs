@@ -3,7 +3,7 @@ title: ロゴSVGを生成
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# ロゴSVGの生成 {#generate-logo-svg}
+# ロゴSVGの生成
 
 **ロゴSVGの生成**機能を使用すると、テーマビルダーからカスタムのロゴSVGを生成し、WordPressサイトに直接埋め込むことができます。この際、自動的に名前空間を考慮したサニタイズ処理が施されます。
 

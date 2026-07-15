@@ -3,7 +3,7 @@ title: Cyfrifau cod
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ar v2 {#code-snippets-for-v2}
+# Code Snippets ar v2
 
 Ynysby, mae code snippets ar **WordPress** yn cael eu defnyddio i wneud rhywbeth penodol sydd e potential i'rhaid iddo'rhanbarth plugin bach. Mae'r code snippets hyn wedi'i leoli mewn un o fyliau core WordPress neu thymau (yn y cyfider, fylch `functions.php` y thymau eich site). Neu gallwch hefyd ei ddefnyddio fel MU plugin.
 

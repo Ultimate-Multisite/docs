@@ -4,7 +4,7 @@ title: Filtrum - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filtrum: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filtrum: wu_password_require_special
 
 Filtra utrum characteres speciales in tesseris requirendi sint.
 

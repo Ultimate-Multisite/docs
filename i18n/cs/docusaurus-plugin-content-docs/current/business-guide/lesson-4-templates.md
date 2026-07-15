@@ -3,7 +3,7 @@ title: 'Lekce 4: Vytváření nišových šablon'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekce 4: Vytváření nišových šablon {#lesson-4-building-niche-templates}
+# Lekce 4: Vytváření nišových šablon
 
 Šablony tvoří jádro vaší nišové nabídky. Vlastník fitness studia, který se zaregistruje a uvidí web, který vypadá jako web fitness studia – se jízdnými rozvrhy, profilem trenérů a správnou grafikou – má mnohem vyšší pravděpodobnost, že zůstane, než ten, který uvidí prázmný plátno.
 

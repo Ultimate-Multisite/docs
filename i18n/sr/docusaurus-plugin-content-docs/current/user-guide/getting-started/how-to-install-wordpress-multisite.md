@@ -3,7 +3,7 @@ title: Kako instalirati WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kako instalirati WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kako instalirati WordPress Multisite?
 
 WordPress Multisite omogućava da imate mrežu sajtova na jednoj instalaciji. Ovo je ugrađena funkcija, ali nije aktivna podrazumevano.
 

@@ -4,7 +4,7 @@ title: පෙරහන - wu_cap_captcha_config
 sidebar_label: wu_cap_captcha_config
 _i18n_hash: 4b2098b3e8b83cdcca2c6b5098059305
 ---
-# පෙරහන: wu_cap_captcha_config {#filter-wucapcaptchaconfig}
+# පෙරහන: wu_cap_captcha_config
 
 Cap Captcha වින්‍යාසය පෙරහන් කරයි.
 

@@ -3,7 +3,7 @@ title: Operasyon Tanant Souverain
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Opération des Locataires Souverains {#sovereign-tenant-operations}
+# Opération des Locataires Souverains
 
 Ultimate Multisite : Multi-Tenancy 1.2.0 ajoute des outils opérationnels pour les locataires souverains : des subsites qui fonctionnent avec leur propre base de données, racine de système de fichiers et contexte de routage, tout en restant visibles par l'administrateur réseau.
 

@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# ຕົວກອງ: wu_current_set_site {#filter-wucurrentsetsite}
+# ຕົວກອງ: wu_current_set_site
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບປ່ຽນພຶດຕິກຳເລີ່ມຕົ້ນ ແລະກຳນົດເວັບໄຊປັດຈຸບັນໃນແບບທີ່ແຕກຕ່າງ.
 

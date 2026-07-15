@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Àlẹmọ: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Àlẹmọ: wu_minimum_password_strength
 
 Ṣe àlẹmọ agbára ọ̀rọ̀ aṣínà tó kéré jù lọ tí a nílò (àmì zxcvbn).
 

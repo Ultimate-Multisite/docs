@@ -3,7 +3,7 @@ title: Sisällön synkronoinnin muutosloki
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync -muutosloki {#content-sync-changelog}
+# Content Sync -muutosloki
 
 ### Versio 1.1.0 - Julkaistu 2025-12-31 {#version-110---released-on-2025-12-31}
 * Uutta: Tuki kaikkien artikkelityyppien synkronoinnille (artikkelit, sivut, mukautetut artikkelityypit)

@@ -3,7 +3,7 @@ title: Fedezőinterjú
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Fedezési Interjú {#discovery-interview}
+# Fedezési Interjú
 
 A **Fedezési Interjú** az első lépés a Theme Builder tervezési folyamatában. Gyűjti össze az információkat az oldaláról, vállalkozásáról és tervezési preferenciáidról, hogy egy személyre szabott témát hozhasson létre.
 

@@ -4,7 +4,7 @@ title: کړنه - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# کړنه: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# کړنه: wp_ultimo_ptm_page_wizard_footer
 
 د پلگین جوړوونکو ته اجازه ورکوي چې د پاڼې په ښکته برخه کې سکرېپټونه زیات کړي
 

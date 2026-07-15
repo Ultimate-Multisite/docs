@@ -3,7 +3,7 @@ title: දෘශ්‍ය හැකියාව
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# හැකියාව දෘශ්‍යතාව (Ability Visibility) {#ability-visibility}
+# හැකියාව දෘශ්‍යතාව (Ability Visibility)
 
 Superdav AI Agent v1.12.0 හි **Ability Visibility** පාලන හඳුන්වා දී ඇත. මේවා එක් එක් හැකියාව කුමන මතුපිටවල් (surfaces) වලට ප්‍රදර්ශනය කළ යුතුද යන්න පාලනය කරයි. මෙයින් පරිපාලකයින්ට REST API, MCP සේවාදායකයන්, WooCommerce ඒකාබද්ධ කිරීම් සහ වෙනත් අතුරුමුහුණත් හරහා කුමන ඇගන්තුම් හැකියාවන් (agent capabilities) ලබා ගත හැකිද යන්න සියුම් ලෙස සැකසිය හැක.
 

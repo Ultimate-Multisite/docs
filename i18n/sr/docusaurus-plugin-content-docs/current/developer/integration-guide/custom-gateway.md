@@ -3,7 +3,7 @@ title: Развој прилагођеног гејтвеја
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Развој прилагођеног Gateway-а {#custom-gateway-development}
+# Развој прилагођеног Gateway-а
 
 Можете креирати прилагођене payment gateway-е проширивањем класе `Base_Gateway`.
 

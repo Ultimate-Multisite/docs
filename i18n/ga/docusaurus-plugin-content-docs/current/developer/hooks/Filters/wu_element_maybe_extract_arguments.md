@@ -4,7 +4,7 @@ title: Scagaire - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Scagaire: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Scagaire: wu_element_maybe_extract_arguments
 
 Cuireann sé scagaire ginearálta leis chun ligean d’fhorbróirí an parsálaí seo a leathnú chun déileáil le tógálaithe nó plugins breise.
 

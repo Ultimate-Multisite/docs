@@ -3,7 +3,7 @@ title: बहु-टेनेन्सी एकीकरण
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# बहु-भाडेदारी एकीकरण {#multi-tenancy-integration}
+# बहु-भाडेदारी एकीकरण
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ले सार्वभौम भाडेदारहरू, माइग्रेसन प्रमाणीकरण, र भाडेदार जीवनचक्र स्वचालनका लागि धेरै एकीकरण सम्पर्क-बिन्दुहरू परिवर्तन गर्छ।
 

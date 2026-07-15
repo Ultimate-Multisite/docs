@@ -3,7 +3,7 @@ title: გადახდის ფორმები
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms არის მარტივი და მოქნილი გზა ახალი მომხმარებლების კონვერტაციისთვის სხვადასხვა მიდგომების ექსპერიმენტებისთვის.
 

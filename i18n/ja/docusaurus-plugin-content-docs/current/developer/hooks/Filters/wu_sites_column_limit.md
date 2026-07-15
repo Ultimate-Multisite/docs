@@ -4,7 +4,7 @@ title: フィルタ - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# フィルタ: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# フィルタ: wu_sites_column_limit
 
 ネットワーク内の get pluginssites の値を変更するためのフィルタです。
 

@@ -1062,7 +1062,12 @@ function applySourceHeadingIds(sourceMarkdown, translatedMarkdown) {
 			continue;
 		}
 		if (inCodeBlock) continue;
-		if (!/^(#{1,6})\s+(.+?)\s*$/.test(line)) continue;
+		const headingMatch = line.match(/^(#{1,6})\s+(.+?)\s*$/);
+		if (!headingMatch) continue;
+		if (headingMatch[1].length === 1) {
+			headingIndex++;
+			continue;
+		}
 		const sourceHeadingId = sourceHeadingIds[headingIndex++];
 		if (!sourceHeadingId || /\s\{#[A-Za-z0-9_-]+\}\s*$/.test(line)) continue;
 		lines[i] = `${line.replace(/[\t ]+$/u, '')} {#${sourceHeadingId}}`;

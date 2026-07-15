@@ -3,7 +3,7 @@ title: Cloudflare ఇంటిగ్రేషన్
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare సమీకరణ {#cloudflare-integration}
+# Cloudflare సమీకరణ
 
 ## అవలోకనం {#overview}
 Cloudflare అనేది వెబ్‌సైట్‌లను రక్షించడంలో, వేగవంతం చేయడంలో సహాయపడే ప్రముఖ content delivery network (CDN) మరియు భద్రతా ప్రదాత. ఈ సమీకరణ Ultimate Multisite మరియు Cloudflare మధ్య ఆటోమేటిక్ డొమైన్ నిర్వహణను ప్రారంభిస్తుంది, ముఖ్యంగా సబ్‌డొమైన్ మల్టీసైట్ ఇన్‌స్టాలేషన్‌ల కోసం.

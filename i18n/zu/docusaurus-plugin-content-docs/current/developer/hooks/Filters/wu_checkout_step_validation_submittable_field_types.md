@@ -4,7 +4,7 @@ title: Isihlungi - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Isihlungi: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Isihlungi: wu_checkout_step_validation_submittable_field_types
 
 Vumela abathuthukisi badlule ukuhlola uma inkambu ikwazi ukuzithumela ngokuzenzakalelayo.
 

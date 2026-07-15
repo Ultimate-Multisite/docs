@@ -3,7 +3,7 @@ title: การค้นหาบนอินเทอร์เน็ต
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# การค้นหาบนอินเทอร์เน็ต {#internet-search}
+# การค้นหาบนอินเทอร์เน็ต
 
 Gratis AI Agent v1.5.0 เพิ่มความสามารถ **การค้นหาบนอินเทอร์เน็ต** ซึ่งช่วยให้ผู้ช่วย AI สามารถดึงข้อมูลล่าสุดจากเว็บได้ระหว่างการสนทนา ความสามารถนี้ขับเคลื่อนโดย [Brave Search API](https://brave.com/search/api/) หรือ [Tavily API](https://tavily.com/)
 

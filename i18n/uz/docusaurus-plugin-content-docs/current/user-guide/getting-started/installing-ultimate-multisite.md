@@ -3,7 +3,7 @@ title: Ultimate Multisite-ni o'rnatish
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite ni o'rnatish {#installing-ultimate-multisite}
+# Ultimate Multisite ni o'rnatish
 
 :::note
 Ushbu qo'llanmada sizda WordPress Multisite allaqachon o'rnatilgan va sozlangan deb taxmin qilinadi. Buni qanday qilishni bilish uchun WP Beginner tomonidan tayyorlangan [shu qo'llanmani](https://www.wpbeginner.com/glossary/multisite/) ko'rib chiqing.

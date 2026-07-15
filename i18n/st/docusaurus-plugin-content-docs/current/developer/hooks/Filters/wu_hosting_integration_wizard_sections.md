@@ -4,7 +4,7 @@ title: Sefe - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Sefe: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Sefe: wu_hosting_integration_wizard_sections
 
 E sefa dikarolo tsa wizard bakeng sa ho seta kopanyo ya hosting.
 

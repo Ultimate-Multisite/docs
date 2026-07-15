@@ -3,7 +3,7 @@ title: Integrazzjoni ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integrazzjoni ma' ServerPilot {#serverpilot-integration}
+# Integrazzjoni ma' ServerPilot
 
 ## Panoramika {#overview}
 ServerPilot huwa servizz cloud għall host ta WordPress u siti PHP oħra fuq serveri tal-DigitalOcean, Amazon, Google, jew provider oħra. Dan l-integrazzjoni tfilu sincronizzazzjoni automatika tal-domain u it-tġib sertifikat SSL bejn Ultimate Multisite u ServerPilot.

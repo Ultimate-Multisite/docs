@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Gníomh: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Gníomh: wp_ultimo_payfast_activation
 
 Lig do chodanna eile den plugin a ngnáthaimh a cheangal le haghaidh gníomhachtaithe
 

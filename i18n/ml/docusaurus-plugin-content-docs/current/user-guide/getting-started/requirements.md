@@ -3,7 +3,7 @@ title: ആവശ്യകതകൾ
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite ആവശ്യകതകൾ {#ultimate-multisite-requirements}
+# Ultimate Multisite ആവശ്യകതകൾ
 
 Ultimate Multisite വാങ്ങുന്നതിന് മുമ്പ് നിങ്ങൾ ആദ്യം ചോദിച്ചേക്കാവുന്ന കാര്യം, ഞങ്ങളുടെ plugin പ്രവർത്തിപ്പിക്കാൻ എന്തൊക്കെ ആവശ്യകതകൾ വേണമെന്നാണ്. ഭാഗ്യവശാൽ, Ultimate Multisite പ്രവർത്തിപ്പിക്കാൻ ചില അടിസ്ഥാന ആവശ്യകതകൾ മാത്രമേ വേണ്ടൂ: ഒരു **domain name**, ഒരു നല്ല **hosting provider**, ഒരു WordPress **Multisite** ഇൻസ്റ്റലേഷൻ. ഇത്രയും മതി!
 

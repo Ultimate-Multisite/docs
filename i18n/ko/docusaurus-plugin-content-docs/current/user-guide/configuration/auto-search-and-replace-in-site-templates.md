@@ -3,7 +3,7 @@ title: 사이트 템플릿에서 자동 검색 및 바꾸기
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# 사이트 템플릿에서 자동 검색 및 바꾸기 (v2) {#auto-search-and-replace-in-site-templates-v2}
+# 사이트 템플릿에서 자동 검색 및 바꾸기 (v2)
 
 _**이 튜토리얼에는 WP UItimo 버전 2.x가 필요합니다.**_
 

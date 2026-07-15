@@ -3,7 +3,7 @@ title: Ṣẹda Mẹnu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Ṣẹda Akojọ aṣayan {#create-menu}
+# Ṣẹda Akojọ aṣayan
 
 Agbara **Ṣẹda Akojọ aṣayan** n ṣẹda awọn akojọ aṣayan ìtọ́sọ́nà WordPress pẹlu atilẹyin fun awọn aami ìtọ́sọ́nà ọtọ̀tọ̀ ti o yàtọ̀ si awọn akọle oju-iwe.
 

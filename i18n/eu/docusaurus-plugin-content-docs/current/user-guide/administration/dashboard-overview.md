@@ -3,7 +3,7 @@ title: Panelaren zerbitzua ikuspegiak
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Deskurtso {#dashboard-overview}
+# Dashboard Deskurtso
 
 Ultimate Multisite-ek **Dashboard** daingoa menuku Ultimate Multisite-an ondare dago, eta Network Dashboard-ra widget-ak gehiago ez du. Hau artikulu horiek bat daude daude erabiliko horietan.
 

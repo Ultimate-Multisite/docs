@@ -4,7 +4,7 @@ title: Sifee - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Shaandheeye: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# Shaandheeye: wu_search_models_functions
 
 U oggolow horumariyeyaasha kordhinta inay ku daraan hawlo moodello raadin oo dheeraad ah.
 

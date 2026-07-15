@@ -3,7 +3,7 @@ title: 'Piwulang 7: Ndadekake Iku Duwekmu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Piwulang 7: Nggawé Dadi Duwèkmu {#lesson-7-making-it-yours}
+# Piwulang 7: Nggawé Dadi Duwèkmu
 
 Pelangganmu aja nganti rumangsa lagi nganggo "sawijining WordPress plugin." Dheweke kudu rumangsa lagi nganggo FitSite -- platform sing dibangun kanggo indhustriné. Piwulang iki nyakup branding, white-labeling, lan nggawé platform krasa kaya produk.
 

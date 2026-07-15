@@ -3,7 +3,7 @@ title: Plantilles de lloc
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Plantilles de lloc (v2) {#site-templates-v2}
+# Plantilles de lloc (v2)
 
 _**NOTA: Aquest article fa referència a Ultimate Multisite versió 2.x. Si feu servir la versió 1.x,**_ **vegeu aquest article** _**.**_
 

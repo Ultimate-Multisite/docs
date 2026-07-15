@@ -3,7 +3,7 @@ title: 이메일 및 브로드캐스트 보내기
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# 이메일 및 Broadcast 보내기 (v2) {#sending-emails-and-broadcasts-v2}
+# 이메일 및 Broadcast 보내기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 관한 것입니다.**_
 

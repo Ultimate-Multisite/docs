@@ -3,7 +3,7 @@ title: Site Exporter Endringslogg
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Endringslogg {#site-exporter-changelog}
+# Site Exporter Endringslogg
 
 Versjon: 1.0.6 - Utgitt den 2026-05-11
 * Nytt: Site-eksport pakker nå med en selvstartende index.php, slik at ZIP-filen kan installeres på en ny vert uten separat plugin-installasjon

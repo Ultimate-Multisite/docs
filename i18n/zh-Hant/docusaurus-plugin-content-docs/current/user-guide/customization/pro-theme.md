@@ -3,7 +3,7 @@ title: PRO 佈景主題
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# 使用 PRO Theme 自訂你的管理面板 {#customizing-your-admin-panel-with-pro-theme}
+# 使用 PRO Theme 自訂你的管理面板
 
 在接案工作中，我們經常需要為客戶打造專屬的 WordPress 管理後台體驗。如果你正在尋找更專業的外觀和操作感受，PRO Theme 或許能幫上忙。
 

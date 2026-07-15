@@ -4,7 +4,7 @@ title: Aðgerð - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Aðgerð: wu_deactivation {#action-wudeactivation}
+# Aðgerð: wu_deactivation
 
 Leyfðu öðrum hlutum pluginsins að tengja sínar aðgerðir fyrir afvirkjun
 

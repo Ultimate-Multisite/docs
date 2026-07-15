@@ -3,7 +3,7 @@ title: Konfiguracja i ustawienia dostawcy
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: konfiguracja i konfiguracja dostawcy {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: konfiguracja i konfiguracja dostawcy
 
 Dodatek Domain Seller zawiera prowadzony kreator konfiguracji, który przeprowadza Cię przez każdy wymagany krok. Ta strona omawia przebieg kreatora oraz sposób późniejszej konfiguracji lub ponownej konfiguracji dostawców.
 

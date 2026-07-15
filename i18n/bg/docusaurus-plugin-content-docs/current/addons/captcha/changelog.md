@@ -3,7 +3,7 @@ title: Промени в лога на Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Промени в лога на Captcha {#captcha-changelog}
+# Промени в лога на Captcha
 
 Версия: 1.5.0 - Публикувана на 2026-05-22
 * Ново: Хардкоден ограничителен лимитер на заявки (rate limiter) — брои всяка GET и POST заявка към защитени от Captcha места (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) и отговаря с HTTP 429, заглавie `Retry-After` и рандомизиран спинг (tarpit sleep) (1–5 сек., с максимално ограничение от 15 сек.).

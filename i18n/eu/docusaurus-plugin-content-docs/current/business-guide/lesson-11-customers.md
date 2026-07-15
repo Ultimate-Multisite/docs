@@ -3,7 +3,7 @@ title: 'Lezioa 11: Klientzak aurkitzea'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lehen 11: Klientakut aurkitzea {#lesson-11-finding-customers}
+# Lehen 11: Klientakut aurkitzea
 
 Kunde ez dagoen platfortea zerbait hobekoa da. Hau lehenaren testu hau irudi duon klienteak aurkitzeko moduan (niche) aukerak gisa jakinarazten ditu -- estrategiak eta horiek funtzionatzen dute zehatziki hori bat industriari fokua duen bitartean.
 

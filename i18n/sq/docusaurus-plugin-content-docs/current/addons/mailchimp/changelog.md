@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Regjistri i ndryshimeve të Mailchimp {#mailchimp-changelog}
+# Regjistri i ndryshimeve të Mailchimp
 
 Versioni: 1.1.1 - Publikuar më 2025-09-28
 

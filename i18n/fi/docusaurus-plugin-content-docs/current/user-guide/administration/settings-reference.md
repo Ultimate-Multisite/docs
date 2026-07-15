@@ -3,7 +3,7 @@ title: Asetusten viite
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Asetusten viite {#settings-reference}
+# Asetusten viite
 
 Tämä sivu seuraa asetuksia, jotka vaikuttavat päivittäiseen ylläpitoon ja viimeaikaisiin käyttäytymismuutoksiin Ultimate Multisite -palvelussa.
 

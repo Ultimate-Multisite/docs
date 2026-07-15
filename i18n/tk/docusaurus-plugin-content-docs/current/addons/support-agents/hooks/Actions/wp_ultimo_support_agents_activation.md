@@ -4,7 +4,7 @@ title: Hereket - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Hereket: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Hereket: wp_ultimo_support_agents_activation
 
 Plugin-iň beýleki böleklerine aktivleşdirmek üçin öz düzgünlerini birikdirmäge mümkinçilik berýär
 

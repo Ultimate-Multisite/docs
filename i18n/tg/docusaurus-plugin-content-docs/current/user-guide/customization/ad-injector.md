@@ -3,7 +3,7 @@ title: Инжектор реклама
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Эътимоди рекламаро дар шабакаи худ бо Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Эътимоди рекламаро дар шабакаи худ бо Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector як **дохили бепул** аст, ки ба шумо воситаҳои ҷойгир кардани рекламаҳо дар сатҳи тасвири онҳо иҷозат медиҳад.
 

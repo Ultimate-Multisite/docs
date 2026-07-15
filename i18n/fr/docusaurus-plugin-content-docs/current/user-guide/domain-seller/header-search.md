@@ -3,7 +3,7 @@ title: Recherche de domaine dans l’en-tête
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Recherche de domaine dans l’en-tête {#header-domain-search}
+# Recherche de domaine dans l’en-tête
 
 Utilisez cette configuration lorsque vous voulez un petit formulaire d’en-tête qui lance une recherche de domaine, puis permet au client de choisir parmi les domaines disponibles dans le checkout Ultimate Multisite.
 

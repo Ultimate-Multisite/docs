@@ -3,7 +3,7 @@ title: സSovereign മൈഗ്രേഷൻ വർക്ക്ഫ്ലോ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# സൊവർיין മൈഗ്രേഷൻ വർക്ക്ഫ്ലോ {#sovereign-migration-workflow}
+# സൊവർיין മൈഗ്രേഷൻ വർക്ക്ഫ്ലോ
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ഒരു സാധാരണ സബ്സൈറ്റിനെ സൊവർיין ടെനന്റ് ഇൻഫ്രാസ്ട്രക്ചറിലേക്ക് മാറ്റുന്നതിന് മൈഗ്രേഷൻ വെരിഫിക്കേഷൻ ഗേറ്റുകൾ ചേർക്കുന്നു.
 

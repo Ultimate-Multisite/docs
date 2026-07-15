@@ -3,7 +3,7 @@ title: Rexistro de cambios de Fluent Forms
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Rexistro de cambios de Fluent Forms {#fluent-forms-changelog}
+# Rexistro de cambios de Fluent Forms
 
 Versión: 2.0.1 - Publicada o 2025-09-28
 

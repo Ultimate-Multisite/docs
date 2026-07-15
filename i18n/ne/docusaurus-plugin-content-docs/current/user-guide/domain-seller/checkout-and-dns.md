@@ -3,7 +3,7 @@ title: चेकआउट फिल्ड र ग्राहक डीएनए
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# चेकआउट फिल्ड र ग्राहक DNS व्यवस्थापन {#checkout-field-and-customer-dns-management}
+# चेकआउट फिल्ड र ग्राहक DNS व्यवस्थापन
 
 ## डोमेन चयन चेकआउट फिल्ड {#the-domain-selection-checkout-field}
 

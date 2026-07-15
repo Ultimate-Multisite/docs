@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Azione: wu_page_{$this->id}_after_render {#action-wupagethis-idafterrender}
+# Azione: wu_page_{$this->id}_after_render
 
 Consenti agli sviluppatori di plugin di aggiungere contenuti aggiuntivi dopo aver stampato la pagina
 

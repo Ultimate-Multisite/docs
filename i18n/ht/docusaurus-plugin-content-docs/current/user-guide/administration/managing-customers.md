@@ -3,7 +3,7 @@ title: Jere Kliyan yo
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Jere Mantnen Kliyan (Customers) {#managing-customers}
+# Jere Mantnen Kliyan (Customers)
 
 Pajyan **Customers** a montre lis moun ki nan rezo ou a ranje yo. Pajyan sa a montre enfòmasyon batatik itilizat lajan tankou non, adrès imèl, dènye fwa li te konekte, ak yon link **switch to** ki pèmèt ou log in nan subsite itilizat la kòm yon administrateur sit.
 

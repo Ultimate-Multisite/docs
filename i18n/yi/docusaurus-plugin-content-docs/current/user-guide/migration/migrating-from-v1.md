@@ -3,7 +3,7 @@ title: מיגרירן פֿון V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# מיגרירן פֿון V1 {#migrating-from-v1}
+# מיגרירן פֿון V1
 
 ## Ultimate Multisite האָט איבערגעביטן פֿון זײַן אָריגינעלער 1.x משפּחה פֿון אַרויסגאַבעס צו דער 2.x משפּחה פֿון אַרויסגאַבעס. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

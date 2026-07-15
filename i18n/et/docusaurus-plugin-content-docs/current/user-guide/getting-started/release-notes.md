@@ -3,7 +3,7 @@ title: Uusjuhendid
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Versioon 2.13.0 — Valmistatud 2026-06-05 {#release-notes}
+# Versioon 2.13.0 — Valmistatud 2026-06-05
 
 * Uued: Lisatud suvereense tenantide tuent (sovereign-tenant) klienti kontoile, ostukusprotsedidele, lahendustele, faktuuritele, šabloni ülemine ja domeenimappimise protsessidele, et tenantide võrked saaksid kliente juhatada tagasi peale site'ile haldeta toimingute jaoks.
 * Uued: Lisatud uuesti kinnituse kontrollid korduvate jälgenduste jaoks, et veebilehed (gateways) võisid auto-uudutust välja lülitada, kui puudub salvestatud faktuuriseheloole, jälgenduse või vault tokeni.

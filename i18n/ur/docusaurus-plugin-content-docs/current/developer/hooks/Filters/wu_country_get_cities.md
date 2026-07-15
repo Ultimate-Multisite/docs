@@ -4,7 +4,7 @@ title: فلٹر - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities {#filter-wucountrygetcities}
+# Filter: wu_country_get_cities
 
 یہ ایک ملک میں کسی ریاست کے شہروں کی فہرست واپس کرتا ہے۔
 

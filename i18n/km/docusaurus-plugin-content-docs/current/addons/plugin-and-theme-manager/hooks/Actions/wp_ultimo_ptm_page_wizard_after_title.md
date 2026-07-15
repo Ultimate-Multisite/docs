@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# សកម្មភាព: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# សកម្មភាព: wp_ultimo_ptm_page_wizard_after_title
 
 អនុញ្ញាត​ឱ្យ​អ្នក​អភិវឌ្ឍន៍ plugin បន្ថែម​ប៊ូតុង​បន្ថែម​ទៅ​ទំព័រ​បញ្ជី
 

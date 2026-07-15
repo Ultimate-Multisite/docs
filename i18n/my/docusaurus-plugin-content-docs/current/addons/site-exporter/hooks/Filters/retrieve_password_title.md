@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Filter: retrieve_password_title {#filter-retrievepasswordtitle}
+# Filter: retrieve_password_title
 
 စကားဝှက် ပြန်လည်သတ်မှတ်ခြင်း (password reset) အီးမေးလ်ရဲ့ ခေါင်းစဉ် (subject) ကို ပြင်ဆင်ပေးတဲ့ filter တစ်ခု ဖြစ်ပါတယ်။
 

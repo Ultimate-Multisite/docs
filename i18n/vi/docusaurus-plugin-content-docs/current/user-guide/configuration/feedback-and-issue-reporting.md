@@ -3,7 +3,7 @@ title: Phản hồi và Báo cáo Sự cố của Khách hàng
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Phản hồi và Báo cáo Sự cố của Khách hàng {#customer-feedback--issue-reporting}
+# Phản hồi và Báo cáo Sự cố của Khách hàng
 
 Gratis AI Agent v1.5.0 giới thiệu hệ thống phản hồi và báo cáo sự cố tích hợp, cho phép người dùng cuối đánh dấu các phản hồi không hữu ích và báo cáo các vấn đề trực tiếp từ giao diện chat. Hệ thống này bao gồm quản lý sự đồng ý (consent management), lệnh báo cáo tự động, và phân loại sự cố (triage) bằng AI ở phía backend.
 

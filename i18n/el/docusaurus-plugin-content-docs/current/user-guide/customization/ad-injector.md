@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Τοποθέτηση διαφημίσεων στο δίκτυό σας με το Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Τοποθέτηση διαφημίσεων στο δίκτυό σας με το Ultimate Multisite: Ad Injector
 
 Το Ultimate Multisite: Ad Injector είναι ένα **δωρεάν πρόσθετο** που σας δίνει τα εργαλεία για να τοποθετείτε διαφημίσεις στα πλάνα σας απευθείας από τη σελίδα επεξεργασίας τους.
 

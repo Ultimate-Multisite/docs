@@ -3,7 +3,7 @@ title: Gurallar we konfigurasiýa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Gurallar we konfigurasiýa {#tools-and-configuration}
+# Gurallar we konfigurasiýa
 
 Theme Builder WordPress saýtňyzy seljermek, dizaýn etmek we gurmak üçin gurallar toplumyny ulanýar. 1.16.0 wersiýasynda **sd-ai-agent/site-scrape indi Tier 1 guraldyr**, şonuň üçin ol Theme Builder-de deslapdan elýeterlidir. Superdav AI Agent v1.18.0 ynamdar işläp düzüji iş akymlary üçin aýratyn paýlanylýan Advanced ýoldaş paketini hem hödürleýär; bu gurallar WordPress.org esasy paketiniň bölegi däldir we aýratyn gurnalmaly hem-de ygtyýarlandyrylmaly.
 

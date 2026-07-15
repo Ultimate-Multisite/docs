@@ -3,7 +3,7 @@ title: Txhua koom
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# འཇུག་པའི་ Ultimate Multisite Community-tshai {#how-to-join-ultimate-multisite-community}
+# འཇུག་པའི་ Ultimate Multisite Community-tshai
 
 Ultimate Multisite Community chu ne, tam chu Ultimate Multisite users nu rincin tshaj, tips, experience, thiab muaj tseem ceeb zoo li ntawd qhiaj los. Tam chu Ultimate Multisite Community ruav mus https://community.ultimatemultisite.com/home thiaj tshawj laj.
 

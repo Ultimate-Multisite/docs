@@ -4,7 +4,7 @@ title: Azzjoni - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Azzjoni: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Azzjoni: wu_captcha_before_field
 
 Jiskatta qabel ma l-qasam captcha jiġi rrendjat.
 

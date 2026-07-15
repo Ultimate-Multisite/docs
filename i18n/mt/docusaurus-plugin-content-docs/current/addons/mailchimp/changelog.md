@@ -3,7 +3,7 @@ title: Mailchimp Reġistru tal-Bidliet
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Reġistru tal-bidliet ta' Mailchimp {#mailchimp-changelog}
+# Reġistru tal-bidliet ta' Mailchimp
 
 Verżjoni: 1.1.1 - Maħruġa fit-2025-09-28
 

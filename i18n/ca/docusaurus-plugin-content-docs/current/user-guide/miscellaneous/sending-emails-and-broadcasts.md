@@ -3,7 +3,7 @@ title: Enviament de correus electrònics i difusions
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviament de correus electrònics i difusions (v2) {#sending-emails-and-broadcasts-v2}
+# Enviament de correus electrònics i difusions (v2)
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 

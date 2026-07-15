@@ -3,7 +3,7 @@ title: Kugabanya Urugero
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kumenya uburyo (v2) {#downgrading-a-plan-v2}
+# Kumenya uburyo (v2)
 
 _**Urugero Uburyo: Icyo cyacu cyerekana kuri Ultimate Multisite version 2.x.**_
 

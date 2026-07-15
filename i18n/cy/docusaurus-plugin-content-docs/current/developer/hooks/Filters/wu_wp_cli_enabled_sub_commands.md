@@ -4,7 +4,7 @@ title: Hidlydd - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Hidlydd: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Hidlydd: wu_wp_cli_enabled_sub_commands
 
 Yn hidlo pa sub_commands sydd wedi’u galluogi ar gyfer yr endid hwn.
 

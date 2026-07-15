@@ -3,7 +3,7 @@ title: 'Lekcija 7: Učinite ga svojim'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekcija 7: Učinite ga svojim {#lesson-7-making-it-yours}
+# Lekcija 7: Učinite ga svojim
 
 Vaši kupci nikada ne bi trebali imati osjećaj da koriste "neki WordPress plugin." Trebali bi imati osjećaj da koriste FitSite -- platformu izgrađenu za njihovu industriju. Ova lekcija obrađuje brendiranje, white-labeling i kako postići da platforma djeluje kao proizvod.
 

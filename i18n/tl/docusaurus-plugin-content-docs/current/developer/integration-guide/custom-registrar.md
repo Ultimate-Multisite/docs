@@ -3,7 +3,7 @@ title: Pagbuo ng Pasadyang Integrasyon ng Registrar
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pagbuo ng Custom na Integrasyon ng Registrar {#building-a-custom-registrar-integration}
+# Pagbuo ng Custom na Integrasyon ng Registrar
 
 Gumagamit ang Domain Seller addon ng pattern na **Integration Registry**. Ang bawat registrar ay isang PHP class na nagpapatupad ng `Domain_Selling_Capability` at nirerehistro ang sarili nito sa pamamagitan ng `wu_domain_seller_register_capabilities` action hook.
 

@@ -4,7 +4,7 @@ title: 过滤器 - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filter: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filter: wu_view_override_replaceable_views
 
 允许开发者向可替换列表添加额外文件夹。
 

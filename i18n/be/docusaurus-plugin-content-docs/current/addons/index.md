@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Аданы Ultimate Multisite {#ultimate-multisite-addons}
+# Аданы Ultimate Multisite
 
 Аданы пашыраюць Ultimate Multisite, дадаўшы наступныя функцыі і інтыгрэйцыі. Большасць аднаў патрабуюць платы і іх можна купіць на [ultimatemultisite.com](https://ultimatemultisite.com).
 

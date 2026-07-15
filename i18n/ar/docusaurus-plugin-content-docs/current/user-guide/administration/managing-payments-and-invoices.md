@@ -3,7 +3,7 @@ title: إدارة المدفوعات والفواتير
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# إدارة المدفوعات والفواتير {#managing-payments-and-invoices}
+# إدارة المدفوعات والفواتير
 
 ## إعدادات الدفع {#payment-settings}
 

@@ -4,7 +4,7 @@ title: Filtrs - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filtrs: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Filtrs: wu_make_primary_domain_redirect_url
 
 Filtrē novirzīšanas URL pēc domēna padarīšanas par primāro.
 

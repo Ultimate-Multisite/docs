@@ -3,7 +3,7 @@ title: Vue d'ensemble du tableau de bord
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Vue d'ensemble du tableau de bord {#dashboard-overview}
+# Vue d'ensemble du tableau de bord
 
 Ultimate Multisite dispose d'un **Tableau de bord** dédié dans le menu Ultimate Multisite, et ajoute également des widgets au Tableau de bord réseau. Cet article couvre ce que vous verrez dans les deux endroits.
 

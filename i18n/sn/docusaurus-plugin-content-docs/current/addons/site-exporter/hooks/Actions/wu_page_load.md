@@ -4,7 +4,7 @@ title: Chiito - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Chiito: wu_page_load {#action-wupageload}
+# Chiito: wu_page_load
 
 Bvumira vagadziri veplugin kuwedzera mamwe mahook kumapeji edu.
 

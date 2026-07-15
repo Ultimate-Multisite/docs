@@ -4,7 +4,7 @@ title: Φίλτρο - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Φίλτρο: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Φίλτρο: wu_is_development_mode
 
 Επιτρέπει στους developers plugins να προσθέτουν επιπλέον δοκιμασίες για τη λειτουργία του development mode.
 

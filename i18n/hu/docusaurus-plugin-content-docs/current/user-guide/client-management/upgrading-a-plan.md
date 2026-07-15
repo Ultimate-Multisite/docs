@@ -3,7 +3,7 @@ title: Csomag frissítése
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Csomag frissítése (v2) {#upgrading-a-plan-v2}
+# Csomag frissítése (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 

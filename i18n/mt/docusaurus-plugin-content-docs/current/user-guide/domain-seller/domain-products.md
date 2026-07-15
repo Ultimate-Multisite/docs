@@ -3,7 +3,7 @@ title: Produkti Domini u Prezzijiet
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Prodotti e Prezzi di Dominio {#domain-products-and-pricing}
+# Prodotti e Prezzi di Dominio
 
 I prodotti di dominio ti permettono di controllare i prezzi, i TLD (Top-Level Domains), la privacy WHOIS e la selezione del provider. Ogni prodotto di dominio è un prodotto Ultimate Multisite standard con una scheda extra **Domain Settings**.
 

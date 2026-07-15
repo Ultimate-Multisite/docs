@@ -4,7 +4,7 @@ title: Filtro - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filtro: wu_rest_get_items {#filter-wurestgetitems}
+# Filtro: wu_rest_get_items
 
 Filtra si se permite continuar con la solicitud o no.
 

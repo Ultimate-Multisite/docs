@@ -3,7 +3,7 @@ title: 'Leksjon 14: Hva kommer etterpå'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leksjon 14: Hva skjer videre {#lesson-14-what-comes-next}
+# Leksjon 14: Hva skjer videre
 
 Du har bygget en nisje-nettsideplattform fra bunnen av. FitSite er live, betjener treningsstudioer, og genererer gjentakende inntekter. Denne avsluttende leksjonen ser på hvor du kan ta det videre.
 

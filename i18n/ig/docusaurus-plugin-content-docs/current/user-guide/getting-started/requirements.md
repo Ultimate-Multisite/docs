@@ -3,7 +3,7 @@ title: Nduzi
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Yêu Cầu Cho Ultimate Multisite {#ultimate-multisite-requirements}
+# Yêu Cầu Cho Ultimate Multisite
 
 Điều đầu tiên bạn có thể tự hỏi trước khi mua Ultimate Multisite là những yêu cầu gì để chạy plugin của chúng tôi. May mắn thay, chỉ có một vài yêu cầu cơ bản để chạy Ultimate Multisite: một **tên miền** , một **nhà cung cấp hosting** tốt và một cài đặt WordPress **Multisite**. Đó là tất cả những gì bạn cần!
 

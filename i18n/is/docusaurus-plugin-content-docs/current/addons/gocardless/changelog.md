@@ -3,7 +3,7 @@ title: GoCardless breytingaskrá
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless breytingaskrá {#gocardless-changelog}
+# GoCardless breytingaskrá
 
 Útgáfa: 1.0.3 - Gefin út 2026-05-05
 * Lagfært: Yfirgefnar síður í bið eru nú hreinsaðar upp þegar GoCardless-aðild er felld niður á meðan hún er í bið eða í biðstöðu

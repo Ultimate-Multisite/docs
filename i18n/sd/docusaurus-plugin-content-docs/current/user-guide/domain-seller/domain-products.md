@@ -3,7 +3,7 @@ title: ڊومين پروڊڪٽس ۽ پرائسنگ
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# ডোমেইন প্রোডাক্ট আৰু মূল্য নিৰ্ধাৰণ {#domain-products-and-pricing}
+# ডোমেইন প্রোডাক্ট আৰু মূল্য নিৰ্ধাৰণ
 
 ডোমেইন প্রোডাক্টবোৰে আপোনাক মূল্য, TLDs (Top-Level Domains), WHOIS গোপনীয়তা, আৰু প্ৰোভাইডার বা চুইচ কৰা সকলো দিশ নিয়ন্ত্ৰণ কৰিবলৈ সহায় কৰে। প্ৰতিটো ডোমেইন প্রোডাক্ট এটা standard Multisite Ultimate প্রোডাক্ট হ'ব য'ত এটা extra **Domain Settings** ট্যাব থাকিব।
 

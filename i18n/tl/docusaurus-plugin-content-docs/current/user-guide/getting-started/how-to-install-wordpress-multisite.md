@@ -3,7 +3,7 @@ title: Paano Mag-install ng WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Paano Mag-install ng WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Paano Mag-install ng WordPress Multisite?
 
 Ang WordPress Multisite ay nagpapahintulot sa iyo na magkaroon ng isang network ng mga site sa iisang installation. Ito ay isang built-in feature, pero hindi ito naka-activate nang default.
 

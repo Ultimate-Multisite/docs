@@ -3,7 +3,7 @@ title: Akwụkwọ ntuziaka Onye nrụpụta
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Akwụkwọ Nduzi Ndị Mmepe {#developer-documentation}
+# Akwụkwọ Nduzi Ndị Mmepe
 
 Nduzi a na-enye ndị mmepe ihe niile achọrọ iji jikọta na Ultimate Multisite, gbasaa ya, ma ọ bụ mepụta mgbakwunye maka ya. Ultimate Multisite na-agbanwe netwọkụ WordPress Multisite ka ọ bụrụ ikpo okwu Website-as-a-Service (WaaS).
 

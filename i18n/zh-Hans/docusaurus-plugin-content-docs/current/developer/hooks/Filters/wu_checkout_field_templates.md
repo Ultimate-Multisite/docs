@@ -4,7 +4,7 @@ title: 过滤器 - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# 过滤器: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# 过滤器: wu_checkout_field_templates
 
 我们用于添加新字段模板的 API 在此处挂钩。
 

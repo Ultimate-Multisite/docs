@@ -4,7 +4,7 @@ title: Ação - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Ação: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Ação: inpsyde.search_and_replace.error
 
 Ignora que este hook não está registado pelo WP Ultimo.
 

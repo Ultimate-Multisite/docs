@@ -3,7 +3,7 @@ title: Manazartar Saituna
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Bayanin Saituna {#settings-reference}
+# Bayanin Saituna
 
 Wannan shafi yana bin diddigin saitunan da ke shafar gudanarwa ta yau da kullum da sauye-sauyen halayya na baya-bayan nan a cikin Ultimate Multisite.
 

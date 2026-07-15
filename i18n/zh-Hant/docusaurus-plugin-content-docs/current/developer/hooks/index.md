@@ -3,7 +3,7 @@ title: 掛鉤參考
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks 參考 {#hooks-reference}
+# Hooks 參考
 
 Ultimate Multisite 中所有 **59 個動作**與 **118 個篩選器**的自動產生文件。
 

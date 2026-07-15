@@ -3,7 +3,7 @@ title: Kontakt formuláře pro Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktní formuláře v Site Builderu {#site-builder-contact-forms}
+# Kontaktní formuláře v Site Builderu
 
 Superdav AI Agent v1.10.0 přidává možnost vytvářet kontaktní formuláře přímo z chatovacího rozhraní pomocí agenta Site Builder. To vám umožňuje přidat plně funkční kontaktní formuláře na jakoukoli stránku, aniž byste opouštěli chat.
 

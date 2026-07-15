@@ -4,7 +4,7 @@ title: Filtrum - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filtrum: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filtrum: mu-migration/all_posts/default_args
 
 Filtrat argumenta praedefinita ad articulos quaerendos in methodo all_posts.
 

@@ -3,7 +3,7 @@ title: Note di rilascio
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note di rilascio {#release-notes}
+# Note di rilascio
 
 ## Versione 2.13.0 — Rilasciata il 2026-06-05 {#version-2130--released-on-2026-06-05}
 

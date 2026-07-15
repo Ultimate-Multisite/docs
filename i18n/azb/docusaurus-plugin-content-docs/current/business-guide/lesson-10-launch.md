@@ -3,7 +3,7 @@ title: 'Lekson 10: Uthkri Day'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ders 10: Lansman Günü {#lesson-10-launch-day}
+# Ders 10: Lansman Günü
 
 Her şey hazır. Kapıları açmadan önce, bu ders hiçbir şeyin bozuk, eksik veya utanç verici olmadığından emin olmak için ön lansman kontrol listesini inceliyor.
 

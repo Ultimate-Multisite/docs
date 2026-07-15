@@ -3,7 +3,7 @@ title: Pangerésan Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Tinjauan Dashboard {#dashboard-overview}
+# Tinjauan Dashboard
 
 Ultimate Multisite punya **Dashboard** khusus di bawah menu Ultimate Multisite, dan juga nambah widget di Network Dashboard. Artikel ieu ngajelaskeun naon anu bakal anjeun tingali di dua tempat éta.
 

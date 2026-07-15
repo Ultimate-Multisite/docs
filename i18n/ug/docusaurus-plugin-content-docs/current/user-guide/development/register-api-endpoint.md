@@ -3,7 +3,7 @@ title: API uç noktasını kaydet
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite سجل API конектир {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite سجل API конектир
 
 Bu dərslikdə siz Ultimate Multisite /register API конеktörünü necə istifadə edib, şəbəkənizdə yeni bir müştəri üçün tam giriş prosesini necə yaratacağınızı və bunu Zapier ilə necə etə biləcəyinizi öyrənəcəksiniz.
 

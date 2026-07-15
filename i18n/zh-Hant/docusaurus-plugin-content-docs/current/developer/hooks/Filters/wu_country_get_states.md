@@ -4,7 +4,7 @@ title: 篩選器 - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# 過濾器：wu_country_get_states {#filter-wucountrygetstates}
+# 過濾器：wu_country_get_states
 
 返回此國家的州列表。
 

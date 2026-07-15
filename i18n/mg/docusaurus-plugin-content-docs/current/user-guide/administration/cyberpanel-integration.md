@@ -3,7 +3,7 @@ title: Fampidirana CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Ity toromarika ity toromarika momba ny fomba fanaovana fametrahana (configuration) ny integration Ultimate Multisite CyberPanel mba hahafahana manampy sy mamoaka ho virtual host ao amin'ny CyberPanel ireo domain voafidy (mapped domains) ao amin'ny tambajotra anareo aho, ary azo atao koa ny fanomezana auto-SSL amin'ny alalan'i Let's Encrypt.
 

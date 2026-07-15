@@ -3,7 +3,7 @@ title: Konfigurera PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigurera PayPal-gatewayen (v2) {#setting-up-the-paypal-gateway-v2}
+# Konfigurera PayPal-gatewayen (v2)
 
 _**VIKTIGT MEDDELANDE: Den här artikeln gäller Ultimate Multisite version 2.x.**_
 

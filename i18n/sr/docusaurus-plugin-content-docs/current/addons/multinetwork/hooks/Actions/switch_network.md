@@ -4,7 +4,7 @@ title: Акција - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Радња: switch_network {#action-switchnetwork}
+# Радња: switch_network
 
 Покреће се када се тренутни контекст мреже промени.
 

@@ -3,7 +3,7 @@ title: Ειδοποίηση Αφαίρεσης Λειτουργίας Site Build
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Αφαίρεση της λειτουργίας Site Builder {#site-builder-mode-removal-notice}
+# Αφαίρεση της λειτουργίας Site Builder
 
 **Η λειτουργία Site Builder αφαιρέθηκε στην έκδοση Superdav AI Agent v1.12.0.** Εάν χρησιμοποιούσατε τη λειτουργία Site Builder, πρέπει να μεταβείτε στον **agent Setup Assistant** για τη δημιουργία θέματος και τη ρύθμιση του site.
 

@@ -3,7 +3,7 @@ title: Dizajnové smerovanie
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Smer dizajnu {#design-direction}
+# Smer dizajnu
 
 Krok **Smer dizajnu** vám umožňuje skontrolovať, doladiť a finalizovať vizuálny dizajn vašej témy predtým, ako Theme Builder vygeneruje kompletnú tému.
 

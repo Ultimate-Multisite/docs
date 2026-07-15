@@ -3,7 +3,7 @@ title: Тартуу процесси
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Регистрация (v2) {#the-registration-flow-v2}
+# Регистрация (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: Эта статья относится к Ultimate Multisite версии 2.x.**_
 

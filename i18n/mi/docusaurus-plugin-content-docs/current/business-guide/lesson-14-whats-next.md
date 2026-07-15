@@ -3,7 +3,7 @@ title: 'Akoranga 14: He Aha ka Whai Ake'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Akoranga 14: He Aha Ka Whai Ake {#lesson-14-what-comes-next}
+# Akoranga 14: He Aha Ka Whai Ake
 
 Kua hangaia e koe tētahi tūāpapa paetukutuku mākete motuhake mai i te tīmatanga. Kei te ora a FitSite, e mahi ana ki ngā whare whakakori tinana, ā, e whakaputa ana i te moni whiwhi auau. Ka tirohia e tēnei akoranga whakamutunga te ara hei whai atu i konei.
 

@@ -3,7 +3,7 @@ title: Eksport ak Impor
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksport & Impor {#export--import}
+# Eksport & Impor
 
 Ultimate Multisite 2.9.0 ajoute yon zouti **Export & Import** pou yon sèl sit anba **Tools > Export & Import**. It sèvi ak li lè ou bezwen pake yon sit WordPress kòm yon fichye ZIP, restaure ZIP la, oswa deplase yon sit ant enstalasyon Ultimate Multisite ak single-site WordPress ki koresponn.
 

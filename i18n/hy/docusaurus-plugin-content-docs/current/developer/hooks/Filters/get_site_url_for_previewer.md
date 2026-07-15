@@ -4,7 +4,7 @@ title: Զտիչ - ստանալ կայքի URL-ը նախադիտողի համար
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Ֆիլտր: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Ֆիլտր: get_site_url_for_previewer
 
 Թույլ է տալիս plugin մշակողներին զտել previewer-ում օգտագործվող URL-ը
 

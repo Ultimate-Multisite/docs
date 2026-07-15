@@ -3,7 +3,7 @@ title: ਖਾਤਾ ਪੰਨੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨਾ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# ਮੈਂ ਪਹਿਲੀ ਵਾਰ ਆਪਣੇ ਖਾਤੇ ਦੇ ਪੇਜ ਨੂੰ ਕਿਵੇਂ ਐਕਸੈਸ ਕਰ ਸਕਦਾ/ਸਕਦੀ ਹਾਂ? {#how-can-i-access-my-account-page-for-the-first-time}
+# ਮੈਂ ਪਹਿਲੀ ਵਾਰ ਆਪਣੇ ਖਾਤੇ ਦੇ ਪੇਜ ਨੂੰ ਕਿਵੇਂ ਐਕਸੈਸ ਕਰ ਸਕਦਾ/ਸਕਦੀ ਹਾਂ?
 
 Ultimate Multisite ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ!
 

@@ -3,7 +3,7 @@ title: Ukuphathwa kwe-Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ukuphathwa kwee-webhook {#webhook-handling}
+# Ukuphathwa kwee-webhook
 
 Yenza iziphelo ze-webhook ezenzelwe wena ukuze ufumane iziganeko ezivela kwiinkonzo zangaphandle uze ungqamanise idatha ne-Ultimate Multisite.
 

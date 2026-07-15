@@ -3,7 +3,7 @@ title: 创建您的第一个订阅产品
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# 创建你的第一个订阅产品 (v2) {#creating-your-first-subscription-product-v2}
+# 创建你的第一个订阅产品 (v2)
 
 _**重要说明：本文仅适用于 Ultimate Multisite 版本 2.x 用户。如果你使用的是版本 1.x，**_ **_**请参阅这篇文章**_**。
 

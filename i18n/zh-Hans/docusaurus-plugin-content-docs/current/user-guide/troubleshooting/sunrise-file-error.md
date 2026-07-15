@@ -3,7 +3,7 @@ title: Sunrise 文件错误
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# 安装 Sunrise 文件时出错 {#error-installing-the-sunrise-file}
+# 安装 Sunrise 文件时出错
 
 sunrise.php 文件是 WordPress 在自举启动时会查找的一个特殊文件。为了让 WordPress 能够检测到 sunrise.php 文件，它需要位于 **wp-content 文件夹** 内。
 

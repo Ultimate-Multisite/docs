@@ -3,7 +3,7 @@ title: Site-export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export {#site-export}
+# Site Export
 
 De adminpagina **Site Export** stelt netwerkbeheerders in staat om één site, of het hele netwerk, te verpakken in een downloadbaar archief voor migratie, back-up of overdracht.
 

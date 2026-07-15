@@ -4,7 +4,7 @@ title: Çalakî - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Çalakî: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Çalakî: wp_ultimo_affiliatewp_activation
 
 Bihêle beşên din ên plugin rutinên xwe yên ji bo çalakkirinê pê ve girê bidin
 

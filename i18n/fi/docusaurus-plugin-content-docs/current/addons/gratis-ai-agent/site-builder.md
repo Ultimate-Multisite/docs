@@ -3,7 +3,7 @@ title: Sivustonrakentajan orkestrointi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Sivuston rakentamisen orkestrointi v2 {#site-builder-orchestration-v2}
+# Sivuston rakentamisen orkestrointi v2
 
 Sivuston rakentamisen orkestrointi v2 (esitelty Gratis AI Agent v1.4.0:ssa) on moottori, joka mahdollistaa monivaiheisen verkkosivustojen luomisen. Kun pyydät agenttia "rakentamaan ravintolasivuston" tai "luomaan portfolion blogilla", orkestroija pilkkoo tämän korkean tason tavoitteen rakenteiseksi **suunnitelmaksi**, löytää sen toteuttamiseen tarvittavat pluginit, suorittaa jokaisen vaiheen järjestyksessä, seuraa edistymistä ja palautuu virheistä itsenäisesti.
 

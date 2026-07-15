@@ -3,7 +3,7 @@ title: Gratis AI Agent Ayarları
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Ayarları {#gratis-ai-agent-settings}
+# Gratis AI Agent Ayarları
 
 Gratis AI Agent içindeki **Settings → Advanced** ekranı, backend entegrasyonları için yönetici düzeyinde yapılandırma sağlar. Bu sayfa geri bildirim yönlendirmeyi, arama sağlayıcısı anahtarlarını, yönetilen Superdav hizmeti kurulumunu, Google Calendar kontrollerini, TextBee SMS ayarlarını ve ağ genelindeki özellik bayraklarını belgeler.
 

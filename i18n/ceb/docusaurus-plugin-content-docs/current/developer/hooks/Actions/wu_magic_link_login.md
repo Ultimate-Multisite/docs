@@ -4,7 +4,7 @@ title: Aksyon - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Aksyon: wu_magic_link_login {#action-wumagiclinklogin}
+# Aksyon: wu_magic_link_login
 
 Moandar human ma-login ang usa ka user pinaagi sa magic link.
 

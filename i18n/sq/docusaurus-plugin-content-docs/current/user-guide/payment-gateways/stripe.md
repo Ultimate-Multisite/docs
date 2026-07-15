@@ -3,7 +3,7 @@ title: Konfigurimi i Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfigurimi i Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Konfigurimi i Stripe Gateway (v2)
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 

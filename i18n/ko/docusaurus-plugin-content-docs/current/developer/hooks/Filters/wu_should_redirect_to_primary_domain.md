@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filter: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Filter: wu_should_redirect_to_primary_domain
 
 개발자가 리디렉션을 단축하여 발생을 방지할 수 있도록 합니다.
 

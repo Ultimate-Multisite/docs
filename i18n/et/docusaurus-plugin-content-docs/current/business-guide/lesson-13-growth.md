@@ -3,7 +3,7 @@ title: 'Õppetund 13: Mastaabi suurendamine'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Õppetund 13: Mastaabi suurendamine {#lesson-13-scaling-up}
+# Õppetund 13: Mastaabi suurendamine
 
 Sul on toimiv platvorm maksvate klientidega. See õppetund käsitleb, kuidas kasvada väikesest tegevusest jätkusuutlikuks äriks -- taristu skaleerimine, tegevuste automatiseerimine ja kliendipõhise tulu suurendamine.
 

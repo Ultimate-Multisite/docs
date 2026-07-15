@@ -4,7 +4,7 @@ title: Фильтр - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Чыпка: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Чыпка: signup_get_available_languages
 
 Алдыңкы бөлүктөгү сайтка катталуулар үчүн жеткиликтүү тилдердин тизмесин чыпкалайт.
 

@@ -3,7 +3,7 @@ title: Mengelola Tautan yang Dapat Dibagikan untuk Paket
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Mengelola Tautan yang Dapat Dibagikan untuk Paket {#managing-shareable-links-for-plans}
+# Mengelola Tautan yang Dapat Dibagikan untuk Paket
 
 Ultimate Multisite menyediakan opsi untuk membagikan tautan paket langsung kepada klien Anda. Untuk melakukannya, buka halaman edit salah satu paket Anda dan klik tombol _Klik untuk menyalin Tautan yang Dapat Dibagikan_.
 

@@ -3,7 +3,7 @@ title: Тохируулгын хуудсууд
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms гэдэг нь шинэ хэрэглэгчдийг худалдан авагчаар оруулах арга барилыг туршиж үзэхэд хялбар бөгөөд уян хатан арга юм.
 

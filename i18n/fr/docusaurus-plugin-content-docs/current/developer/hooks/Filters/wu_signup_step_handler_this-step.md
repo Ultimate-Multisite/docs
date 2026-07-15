@@ -4,7 +4,7 @@ title: 'Filter - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# Filtre: wu_signup_step_handler_\{$this->step\} {#filter-wusignupstephandlerthis-step}
+# Filtre: wu_signup_step_handler_\{$this->step\}
 
 Permet la réécriture du gestionnaire
 

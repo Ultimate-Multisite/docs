@@ -3,7 +3,7 @@ title: התאמה אישית של טופס ההרשמה שלך
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# התאמת טופס ההרשמה שלך {#customizing-your-registration-form}
+# התאמת טופס ההרשמה שלך
 
 כדי לגרום לרשת שלך להיראות ייחודית מכל שאר שירותי ה-SaaS שנבנו על פלטפורמת WordPress,‏ Ultimate Multisite מאפשר לך להתאים אישית את עמודי ההרשמה וההתחברות שלך באמצעות תכונת **טופסי Checkout** שלנו.
 

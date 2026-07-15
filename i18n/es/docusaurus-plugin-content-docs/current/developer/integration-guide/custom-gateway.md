@@ -3,7 +3,7 @@ title: Desarrollo de pasarela personalizada
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Desarrollo de pasarelas personalizadas {#custom-gateway-development}
+# Desarrollo de pasarelas personalizadas
 
 Puedes crear pasarelas de pago personalizadas extendiendo la clase `Base_Gateway`.
 

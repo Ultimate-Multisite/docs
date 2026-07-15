@@ -3,7 +3,7 @@ title: Miten peruuttaa tilaus
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Miten voin peruuttaa tilaukseni? {#how-can-i-cancel-my-subscription}
+# Miten voin peruuttaa tilaukseni?
 
 Jos sinulla on Ultimate Multisite -lisenssi, voit perua sen uusiutuksen milloin tahansa haluat. Noudata vain alla olevia vaiheita:
 

@@ -3,7 +3,7 @@ title: Instalación y configuración del proveedor
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: configuración inicial y configuración del proveedor {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: configuración inicial y configuración del proveedor
 
 El addon Domain Seller incluye un asistente de configuración guiado que te guía por cada paso requerido. Esta página cubre el flujo del asistente y cómo configurar o reconfigurar proveedores después.
 

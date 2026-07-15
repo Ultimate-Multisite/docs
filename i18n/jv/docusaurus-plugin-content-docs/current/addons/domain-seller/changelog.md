@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Panyade Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Cathetan Owah-owahan Domain Seller {#domain-seller-changelog}
+# Cathetan Owah-owahan Domain Seller
 
 Versi 1.3.0 - Dirilis ing 2026-06-02
 - Anyar: Nambahake pepeling network-admin nalika saldo reseller HostAfrica dadi kakehan sithik

@@ -3,7 +3,7 @@ title: Requisits
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisits d'Ultimate Multisite {#ultimate-multisite-requirements}
+# Requisits d'Ultimate Multisite
 
 La primera cosa que podràs preguntar-te abans de comprar Ultimate Multisite és quins són els requisits per executar el nostre plugin. Bé, per sort, només hi ha uns requisits bàsics per executar Ultimate Multisite: un **nom de domini**, un bon **provedor d'hosting** i una instal·lació de **Multisite** de WordPress. És tot el que necessites!
 

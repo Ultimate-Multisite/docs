@@ -3,7 +3,7 @@ title: Rexistro de cambios de Mailster
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Rexistro de cambios de Mailster {#mailster-changelog}
+# Rexistro de cambios de Mailster
 
 ### 1.0.0 {#100}
 * Lanzamento inicial

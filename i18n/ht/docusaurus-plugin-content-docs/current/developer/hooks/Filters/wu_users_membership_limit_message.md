@@ -4,7 +4,7 @@ title: Filtre - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filtè: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
+# Filtè: wu_users_membership_limit_message
 
 Pèmèt devlopè yo chanje mesaj sou limit itilizatè membership yo
 

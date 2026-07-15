@@ -3,7 +3,7 @@ title: Hostinger Ìgbàlejò-Pupọ̀
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ṣafikun agbára Hostinger multi-tenancy kí àwọn domains tí a gbàlejò lè kópa nínú sovereign tenant provisioning pẹ̀lú Hostinger domain-mapping integration tó wà tẹ́lẹ̀.
 

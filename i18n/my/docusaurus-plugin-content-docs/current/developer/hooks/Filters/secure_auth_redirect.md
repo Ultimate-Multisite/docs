@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 လုံခြုံတဲ့ အထောက်အထား စစ်ဆေးမှု ပြန်လည်ညွှန်းပေးခြင်းကို အသုံးပြုမလားဆိုတာကို စစ်ထုတ်ပေးတဲ့ Filter တစ်ခု ဖြစ်ပါတယ်။
 

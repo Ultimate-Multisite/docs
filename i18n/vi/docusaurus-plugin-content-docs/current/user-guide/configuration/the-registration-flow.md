@@ -3,7 +3,7 @@ title: Luồng đăng ký
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Luồng đăng ký (v2) {#the-registration-flow-v2}
+# Luồng đăng ký (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

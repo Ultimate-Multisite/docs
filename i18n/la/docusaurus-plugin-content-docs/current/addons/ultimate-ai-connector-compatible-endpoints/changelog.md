@@ -3,7 +3,7 @@ title: Commentarius mutationum Coniunctoris AI Ultimi pro finibus compatibilibus
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector pro Finibus Compatibilibus Index Mutationum {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector pro Finibus Compatibilibus Index Mutationum
 
 ## Versio 2.0.0 — Edita die 2026-04-24 {#version-200--released-on-2026-04-24}
 

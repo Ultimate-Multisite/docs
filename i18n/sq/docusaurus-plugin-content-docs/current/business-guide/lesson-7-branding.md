@@ -3,7 +3,7 @@ title: 'Mësimi 7: Bëjeni tuajin'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Mësimi 7: Duke e bërë tuajën {#lesson-7-making-it-yours}
+# Mësimi 7: Duke e bërë tuajën
 
 Klientët tuaj nuk duhet të ndihen kurrë sikur po përdorin "ndonjë plugin WordPress." Ata duhet të ndihen sikur po përdorin FitSite -- një platformë e ndërtuar për industrinë e tyre. Ky mësim mbulon branding, white-labeling dhe bërjen e platformës të ndihet si një produkt.
 

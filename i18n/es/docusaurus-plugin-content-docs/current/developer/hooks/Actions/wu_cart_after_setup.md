@@ -4,7 +4,7 @@ title: Acción - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Acción: wu_cart_after_setup {#action-wucartaftersetup}
+# Acción: wu_cart_after_setup
 
 Permite a los desarrolladores realizar cambios adicionales al objeto de pago.
 

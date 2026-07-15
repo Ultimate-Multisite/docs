@@ -3,9 +3,9 @@ title: ແມ່ແບບສ່ວນເສີມ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# ແມ່ແບບສ່ວນເສີມ {#addon-template}
+# ແມ່ແບບສ່ວນເສີມ
 
-{{ADDON_DESCRIPTION}}
+ແມ່ແບບສ່ວນເສີມ — Ultimate Multisite.
 
 ## ຂໍ້ກຳນົດ {#requirements}
 

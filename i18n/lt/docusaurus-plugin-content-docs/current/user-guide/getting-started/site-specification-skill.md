@@ -3,7 +3,7 @@ title: Svetimo specifikacija įgūdžiai
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill: Site Specification {#site-specification-skill}
+# Skill: Site Specification
 
 **Site Specification** yra struktūrinis būdas suformuoti jūsų svetainės tikslus, vartotojus ir preikės identitetą. Ši informacija saugoma jūsų **site\_brief** (svetainės aprašymas) sąlygos, kurios agentai naudoja tarp sesijų, kad pateiktų pagal kontekstą informavimą.
 

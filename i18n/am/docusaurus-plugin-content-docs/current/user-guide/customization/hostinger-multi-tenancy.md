@@ -3,7 +3,7 @@ title: የሆስቲንግር ማልቲ-ቴነንሲ
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 မှာ Hostinger multi-tenancy စွမ်းဆောင်ရည်အသစ်တစ်ခု ထည့်သွင်းပေးထားပါတယ်။ ဒါက ရှိပြီးသား Hostinger domain-mapping integration နဲ့အတူ သီးခြားလွတ်လပ်တဲ့ tenant တွေအတွက် လိုအပ်တဲ့ provisioning လုပ်ငန်းစဉ်တွေကို ပါဝင်လာစေပါတယ်။
 

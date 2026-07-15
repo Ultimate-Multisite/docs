@@ -3,7 +3,7 @@ title: 'Aralin 1: Bakit Panalo ang Niche'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: Bakit Mas Maganda ang Niche {#lesson-1-why-niche-wins}
+# Lesson 1: Bakit Mas Maganda ang Niche
 
 Bago tayo tumukoy sa anumang software, kailangan mong maintindihan kung bakit ang pagbuo ng produkto para sa isang tiyak na grupo ng tao (niche) ang pinakamahalagang desisyon na gagawin mo.
 

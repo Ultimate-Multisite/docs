@@ -3,7 +3,7 @@ title: WP-CLI حوالو
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI حوالو {#wp-cli-reference}
+# WP-CLI حوالو
 
 Gratis AI Agent حڪمي لڪير مان ايجنٽ جي benchmark ڪرڻ، صلاحيتون سنڀالڻ، ۽ ايجنٽ جي حالت پڇڻ لاءِ `wp gratis-ai-agent` حڪمن جو خاندان مهيا ڪري ٿو. سڀني حڪمن لاءِ WP-CLI 2.0 يا ان کان مٿي گهربل آهي.
 

@@ -4,7 +4,7 @@ title: פֿילטער - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# פֿילטער: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# פֿילטער: wu_page_get_title_links
 
 דערלויבן פּלוגין־דעוועלאָפּערס, און אונדז אַליין, צוצולייגן אַקציע־לינקס צו אונדזערע רעדאַקטיר־בלעטער
 

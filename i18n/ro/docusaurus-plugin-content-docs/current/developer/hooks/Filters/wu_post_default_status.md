@@ -4,7 +4,7 @@ title: Filtru - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 Filtrează datele obiectului înainte de a fi stocate în bază de date.
 

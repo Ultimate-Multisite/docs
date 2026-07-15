@@ -3,7 +3,7 @@ title: Pluginlarni boshqarish imkoniyatlari
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin boshqaruvi imkoniyatlari {#plugin-management-abilities}
+# Plugin boshqaruvi imkoniyatlari
 
 Gratis AI Agent v1.5.0 suhbat davomida AI yordamchi chaqira oladigan **7 ta plugin boshqaruvi imkoniyati** bilan yetkazib beriladi. Bu imkoniyatlar [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) orqali o‘rnatilgan WordPress pluginlari ustidan dasturiy boshqaruvni ta’minlaydi.
 

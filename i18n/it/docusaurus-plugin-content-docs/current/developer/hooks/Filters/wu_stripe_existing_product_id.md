@@ -4,7 +4,7 @@ title: Filtro - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Filtro: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Filtro: wu_stripe_existing_product_id
 
 Filtra l'ID del prodotto da verificare. Se esiste, la nuova sottoscrizione utilizzerà questo prodotto.
 

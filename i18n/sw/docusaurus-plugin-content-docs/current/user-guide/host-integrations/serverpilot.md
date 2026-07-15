@@ -3,7 +3,7 @@ title: Muunganiko wa ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Kuunganisha ServerPilot {#serverpilot-integration}
+# Kuunganisha ServerPilot
 
 ## Muhtasari {#overview}
 ServerPilot ni huduma ya wingu kwa kuhost tovuti za WordPress na tovuti nyingine za PHP kwenye seva za DigitalOcean, Amazon, Google, au mtoa huduma mwingine yeyote wa seva. Uunganishaji huu unawezesha usawazishaji wa moja kwa moja wa domain na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na ServerPilot.

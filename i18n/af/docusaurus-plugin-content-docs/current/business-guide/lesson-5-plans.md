@@ -3,7 +3,7 @@ title: 'Les 5: Ontwerp van Jou Planne'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Les 5: Die Ontwerp van Jou Planne {#lesson-5-designing-your-plans}
+# Les 5: Die Ontwerp van Jou Planne
 
 Jou planverdiepings is meer as net prysniveaus – dit is 'n weerspieëling van hoe jou niche-kliënte eintlik funksioneer. In hierdie les gaan jy produkverdiepings ontwerp wat die werklike behoeftes van fiksheidsbesighede op verskillende vlakke bymekaar bring.
 

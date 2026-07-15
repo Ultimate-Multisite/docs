@@ -4,7 +4,7 @@ title: Filtrum - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filtrum: wu_current_set_site {#filter-wucurrentsetsite}
+# Filtrum: wu_current_set_site
 
 Sinite evolutores mores praedefinitos mutare et situm currentem aliter statuere.
 

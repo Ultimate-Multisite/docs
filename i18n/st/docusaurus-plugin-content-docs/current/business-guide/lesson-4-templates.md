@@ -3,7 +3,7 @@ title: 'Thuto ea 4: Ho aha dithempleite tse ikhethileng'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Thuto 4: Ho Aha Dithempleite tsa Lekala le Ikgethileng {#lesson-4-building-niche-templates}
+# Thuto 4: Ho Aha Dithempleite tsa Lekala le Ikgethileng
 
 Dithempleite ke motheo wa boleng boo o bo tshepisang lekaleng la hao le ikgethileng. Mong wa studio ya boikoetliso ya ingodisang mme a bona saete e seng e shebahala jwalo ka websaete ya boikoetliso -- e nang le mananeo a dithuto, diprofaele tsa bakoetlisi, le ditshwantsho tse nepahetseng -- o ka nna a dula haholo ho feta ya bonang sebaka se se nang letho.
 

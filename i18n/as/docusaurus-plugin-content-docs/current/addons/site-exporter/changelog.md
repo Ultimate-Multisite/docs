@@ -3,7 +3,7 @@ title: Site Exporterৰ পৰিৱৰ্তনৰ তালিকা
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporterৰ Changelog {#site-exporter-changelog}
+# Site Exporterৰ Changelog
 
 Version: 1.0.6 - মুকলি কৰা হৈছিল 2026-05-11
 * নতুন: সাইট এক্সপৰ্টসমূহে এতিয়া এটা নিজকে আৰম্ভ কৰা index.php সংগ্ৰহ কৰে, যাৰ ফলত ZIP ফাইলটো এটা নতুন হোষ্টত পৃথক plugin install নকৰাকৈ install কৰিব পাৰি।

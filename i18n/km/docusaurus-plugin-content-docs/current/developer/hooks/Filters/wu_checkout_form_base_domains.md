@@ -4,7 +4,7 @@ title: តម្រង - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Filter: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Filter: wu_checkout_form_base_domains
 
 ច្រោះដែនមូលដ្ឋានរួមរបស់ទម្រង់បង់ប្រាក់ ដែលមិនគួរក្លាយជាកំណត់ត្រាដែនដែលបានភ្ជាប់។
 

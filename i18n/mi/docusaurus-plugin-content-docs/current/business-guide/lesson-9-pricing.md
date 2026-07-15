@@ -3,7 +3,7 @@ title: 'Akoranga 9: Te whakatau utu kia whai hua'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Akoranga 9: Te Whakarite Utu mō te Hua {#lesson-9-pricing-for-profit}
+# Akoranga 9: Te Whakarite Utu mō te Hua
 
 I te Akoranga 5 i whakaritea e tātou ngā utu tuatahi mō ngā mahere FitSite. Inaianei ka whakapai ake tātou i te rautaki utu mā ngā tikanga e whakapiki ana i te whiwhinga moni, e akiaki ana i ngā whakahōunga, ā, e whakaiti ana i te whakakore kiritaki.
 

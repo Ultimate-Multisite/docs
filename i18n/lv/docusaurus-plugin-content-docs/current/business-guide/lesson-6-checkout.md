@@ -3,7 +3,7 @@ title: '6. nodarbība: Reģistrēšanās pieredze'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Nodarbība 6: Reģistrēšanās pieredze {#lesson-6-the-signup-experience}
+# Nodarbība 6: Reģistrēšanās pieredze
 
 Norēķinu plūsma ir vieta, kur interese kļūst par ieņēmumiem. Mulsinošs vai pārāk vispārīgs reģistrēšanās process zaudē klientus. Nišai pielāgota plūsma, kas runā viņu valodā un šķiet vienkārša, pārvērš viņus par klientiem.
 

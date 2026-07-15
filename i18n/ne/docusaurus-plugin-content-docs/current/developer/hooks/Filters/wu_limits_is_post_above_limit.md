@@ -4,7 +4,7 @@ title: फिल्टर - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 दिइएको पोस्ट प्रकार यस प्लानमा अनुमति छ कि छैन जाँच्छ Plugin विकासकर्ताहरूलाई फर्काइने मान फिल्टर गर्न अनुमति दिन्छ
 

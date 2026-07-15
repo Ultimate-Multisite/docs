@@ -3,7 +3,7 @@ title: Goobta lacagta iyo DNS-ka Macmiilka
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Maareynta Meelka Lacagta Bixinta iyo DNS-ka Macmiilka {#checkout-field-and-customer-dns-management}
+# Maareynta Meelka Lacagta Bixinta iyo DNS-ka Macmiilka
 
 ## Meelka Lacagta Bixinta (Checkout) Field-ka Doorka Domain-ka {#the-domain-selection-checkout-field}
 

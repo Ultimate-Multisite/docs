@@ -3,7 +3,7 @@ title: Stworzenie biznesu na niszy internetowej
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Budowanie biznesu stron niszowych z Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Budowanie biznesu stron niszowych z Ultimate Multisite
 
 Większość osób, które próbują sprzedawać strony internetowe, konkuruje ceną z Wixem, Squarespace i tysiącami freelancerów. I przegrywają. Ci, którzy wygrywają, wybierają konkretną grupę docelową, tworzą rozwiązanie dopasowane do tej grupy i pobierają opłatę za wartość, jaką dostarczają.
 

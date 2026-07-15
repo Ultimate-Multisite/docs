@@ -4,7 +4,7 @@ title: 過濾器 - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# 篩選器：wu_country_get_cities {#filter-wucountrygetcities}
+# 篩選器：wu_country_get_cities
 
 用於根據國家和州，回傳該州下的城市列表。
 

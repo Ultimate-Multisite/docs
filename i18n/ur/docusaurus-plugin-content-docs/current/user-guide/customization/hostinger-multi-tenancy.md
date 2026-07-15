@@ -3,7 +3,7 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# ہوسٹنگر ملٹی ٹیننسی {#hostinger-multi-tenancy}
+# ہوسٹنگر ملٹی ٹیننسی
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 میں ایک Hostinger ملٹی ٹیننسی کی صلاحیت شامل کی گئی ہے تاکہ ہوسٹڈ ڈومینز موجودہ Hostinger ڈومین میپنگ کے ساتھ ساتھ خودمختار ٹینٹنٹ پروویژن (sovereign tenant provisioning) میں حصہ لے سکیں۔
 

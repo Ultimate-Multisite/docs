@@ -3,7 +3,7 @@ title: Agordoj de Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Agordoj {#gratis-ai-agent-settings}
+# Gratis AI Agent Agordoj
 
 La ekrano **Agordoj → Altnivela** en Gratis AI Agent provizas administrant-nivelan agordon por backend-integriĝoj. Ĉi tiu paĝo dokumentas plusendadon de reagoj, ŝlosilojn de serĉprovizantoj, agordon de administrata Superdav-servo, regilojn de Google Calendar, SMS-agordojn de TextBee, kaj tutretajn funkciajn flagojn.
 

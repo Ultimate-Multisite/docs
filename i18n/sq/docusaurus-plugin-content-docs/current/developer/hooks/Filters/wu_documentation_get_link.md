@@ -4,7 +4,7 @@ title: Filtër - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Filtër: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Filtër: wu_documentation_get_link
 
 Lejoni zhvilluesit e plugin të filtrojnë lidhjet.
 

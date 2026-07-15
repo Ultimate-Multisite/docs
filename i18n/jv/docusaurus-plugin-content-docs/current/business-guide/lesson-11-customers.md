@@ -3,7 +3,7 @@ title: 'Piwulang 11: Nggoleki Pelanggan'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Piwulang 11: Nggoleki Pelanggan {#lesson-11-finding-customers}
+# Piwulang 11: Nggoleki Pelanggan
 
 Platform sing apik nanging ora nduwé pelanggan mung dadi hobi. Piwulang iki nyakup carané ngolehake pelanggan ing vertikal ceruk -- strategi sing bisa mlaku khusus amarga sampeyan fokus ing siji industri.
 

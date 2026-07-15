@@ -4,7 +4,7 @@ title: Action - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# చర్య: wu_page_load {#action-wupageload}
+# చర్య: wu_page_load
 
 ప్లగిన్ డెవలపర్‌లు మా పేజీలకు అదనపు హుక్స్ (hooks) జోడించడానికి ఇది వీలు కల్పిస్తుంది.
 

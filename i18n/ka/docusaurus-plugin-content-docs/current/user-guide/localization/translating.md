@@ -3,7 +3,7 @@ title: Ultimate Multisite-ის თარგმნა
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-ის თარგმნა {#translating-ultimate-multisite}
+# Ultimate Multisite-ის თარგმნა
 
 Ultimate Multisite ინგლისურად არის შექმნილი, მაგრამ პლაგინი სრულად ითარგმნება და ჩვენ აქტიურად ვიღებთ თარგმანების წვლილის შეტანას.
 

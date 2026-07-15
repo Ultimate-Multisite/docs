@@ -3,7 +3,7 @@ title: Bhalisa i-API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Isiphelo se-API se-Register se-Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Isiphelo se-API se-Register se-Ultimate Multisite
 
 Kule tutorial, uza kufunda indlela yokusebenzisa isiphelo se-API se-Ultimate Multisite /register ukuze udale yonke inkqubo yokungenisa umthengi omtsha kwinethiwekhi yakho, kunye nendlela yokwenza oko nge-Zapier.
 

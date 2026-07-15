@@ -4,7 +4,7 @@ title: フィルター - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url {#filter-wussourl}
+# Filter: wu_sso_url
 
 クロスドメインの顧客操作のために返される前に、生成された SSO URL をフィルタリングします。
 

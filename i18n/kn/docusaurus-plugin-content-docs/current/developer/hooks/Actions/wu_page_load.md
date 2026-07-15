@@ -4,7 +4,7 @@ title: ಕಾರ್ಯ - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Action: wu_page_load {#action-wupageload}
+# Action: wu_page_load
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳಿಗೆ ನಮ್ಮ ಪುಟಗಳಿಗೆ ಹೆಚ್ಚುವರಿ hooks ಸೇರಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

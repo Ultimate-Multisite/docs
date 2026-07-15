@@ -3,7 +3,7 @@ title: Yim txhais tau txog kuv txhua lub hom phiaj uas yuav tiv thaiv.
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# ང་གིས་ unsubscribe (subscription) ག་རེ་བསྒྲུབ་ཡོད། {#how-can-i-cancel-my-subscription}
+# ང་གིས་ unsubscribe (subscription) ག་རེ་བསྒྲུབ་ཡོད།
 
 ཁྱེད་ཀྱིས་ Ultimate Multisite license ཡོད་ན་, ཁྱེད་རང་གི་ renewal (ໃໝ່བྱེད་རྒྱུ་) ག་ཚད་ ཞུས་ནས་ བཅོལ་ཆོག་པའི་སྐབས་ ག་ཚད་ བཅོལ་ཆོག་པ་ལྟར་ བཅོལ་ཆོག་ཐུབ་တယ်။ འདི་ལྟར་ ခြေလှမ်းརིམ་ཁ་གཉིས་ཀྱི་རིམ་པ་བསྟན་ན།
 

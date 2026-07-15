@@ -3,7 +3,7 @@ title: Cuplikan GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Cara nggunakake snippet Ultimate Multisite ing repositori GitHub kita {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Cara nggunakake snippet Ultimate Multisite ing repositori GitHub kita
 
 Ana kode potongan (code snippets) sing ana ing repositori GitHub sing kerep ditakoni dening pengguna Ultimate Multisite sing arep nambah fungsi cilik kaya nambah script Google Analytics ing halaman pendaftaran utawa nyembunyikake meta box saka admin dashboard.
 
@@ -19,7 +19,7 @@ Ana 2 cara kanggo nambahake kode kuwi:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Cara nambah snippet ing file functions.php tema sampeyan. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Cara nambah snippet ing file functions.php tema sampeyan.
 
   1. Masuk menyang admin dashboard WordPress Network lan tindakake Themes > Theme Editor (Lihat screenshot ing ngisor iki).
 
@@ -29,7 +29,7 @@ Ana 2 cara kanggo nambahake kode kuwi:
 
 <!-- Screenshot ora tersedia: WordPress Theme Editor nuduhake editing file functions.php -->
 
-# Cara nggawe Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Cara nggawe Must-Use Plugins (mu-plugins)
 
 WordPress duwe fitur sing bisa menehi sampeyan kanggo muatake fungsi khusus diarani "Must-Use Plugins", utawa "mu-plugins" cekak.
 

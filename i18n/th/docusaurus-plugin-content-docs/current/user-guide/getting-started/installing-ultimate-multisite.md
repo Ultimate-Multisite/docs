@@ -3,7 +3,7 @@ title: กำลังติดตั้ง Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# การติดตั้ง Ultimate Multisite {#installing-ultimate-multisite}
+# การติดตั้ง Ultimate Multisite
 
 :::note
 คู่มือนี้สมมติว่าคุณได้ติดตั้งและกำหนดค่า WordPress Multisite ไว้แล้ว หากต้องการเรียนรู้วิธีการ ให้ดู [คู่มือนี้](https://www.wpbeginner.com/glossary/multisite/) จาก WP Beginner

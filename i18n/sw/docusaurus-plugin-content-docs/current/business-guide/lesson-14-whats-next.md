@@ -3,7 +3,7 @@ title: 'Somada 14: Nini kitafuata'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Somo la 14: Nini Kinakuja Baadaye {#lesson-14-what-comes-next}
+# Somo la 14: Nini Kinakuja Baadaye
 
 Umejenga jukwaa la tovuti la niche tangu mwanzo. FitSite limeanza kufanya kazi, likitumiwa na studio za mazoezi, na linazalisha mapato yanayojirudia. Somo hili la mwisho linatazama wapi pa kwenda kutoka hapa.
 

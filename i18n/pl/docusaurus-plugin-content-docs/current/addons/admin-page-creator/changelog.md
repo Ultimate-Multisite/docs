@@ -3,7 +3,7 @@ title: Dziennik zmian Twórcy Strony Administracyjnej
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Zmiany w Admin Page Creator {#admin-page-creator-changelog}
+# Zmiany w Admin Page Creator
 
 ### Wersja 1.9.0 - Wydana 2026-01-18 {#version-190---released-on-2026-01-18}
 

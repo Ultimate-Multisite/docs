@@ -3,7 +3,7 @@ title: Kev khaws lus qhia cia rau cache uas paub txog tus muab kev pab
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
+# Provider-Aware Prompt Caching
 
 Superdav AI Agent v1.12.0 qhia **provider-aware prompt caching**, uas pab txo API tus nqi thiab latency los ntawm kev khaws prompts cia siv tau thoob ntau tus LLM providers. Txhua tus provider muaj lawv txoj kev caching thiab kev teeb tsa sib txawv.
 

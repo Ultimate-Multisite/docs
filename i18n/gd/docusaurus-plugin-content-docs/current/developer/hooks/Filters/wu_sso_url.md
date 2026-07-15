@@ -4,7 +4,7 @@ title: Criathrag - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Criathrag: wu_sso_url {#filter-wussourl}
+# Criathrag: wu_sso_url
 
 Criathraichidh e SSO URLs a chaidh a ghineadh mus tèid an tilleadh airson gnìomhan luchd-ceannach thar-àrainnean.
 

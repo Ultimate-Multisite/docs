@@ -3,7 +3,7 @@ title: Référence des paramètres
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Référence des réglages {#settings-reference}
+# Référence des réglages
 
 Cette page suit les réglages qui affectent l’administration quotidienne et les changements récents de comportement dans Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Isakhono seNkcukacha zeSiza
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Isakhono seNkcazelo yeSayithi {#site-specification-skill}
+# Isakhono seNkcazelo yeSayithi
 
 **Isakhono seNkcazelo yeSayithi** yindlela ecwangcisiweyo yokubamba iinjongo zesayithi yakho, abaphulaphuli, kunye nesazisi sophawu. Olu lwazi lugcinwa kwimemori yakho ye-**site_brief**, ethi ii-agent zibhekise kuyo kwiiseshoni ukuze zinike uncedo olungaguquguqukiyo, olunolwazi ngomxholo.
 

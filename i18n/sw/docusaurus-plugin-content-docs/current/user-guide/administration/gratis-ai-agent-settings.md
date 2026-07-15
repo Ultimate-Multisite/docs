@@ -3,7 +3,7 @@ title: Mipangilio ya Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Mipangilio ya Gratis AI Agent {#gratis-ai-agent-settings}
+# Mipangilio ya Gratis AI Agent
 
 Skrini ya **Mipangilio → Ya Kina** katika Gratis AI Agent hutoa usanidi wa kiwango cha msimamizi kwa miunganisho ya backend. Ukurasa huu unaelezea utumaji mbele wa maoni, funguo za watoa huduma wa utafutaji, usanidi wa huduma ya Superdav inayosimamiwa, vidhibiti vya Google Calendar, mipangilio ya SMS ya TextBee, na alama za vipengele za mtandao mzima.
 

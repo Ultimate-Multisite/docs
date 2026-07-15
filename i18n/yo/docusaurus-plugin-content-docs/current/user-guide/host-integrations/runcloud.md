@@ -3,7 +3,7 @@ title: Ìṣepọ̀ RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Ìṣepọ̀ RunCloud {#runcloud-integration}
+# Ìṣepọ̀ RunCloud
 
 ## Àkótán {#overview}
 RunCloud jẹ́ pẹpẹ ìṣàkóso server tó dá lórí cloud tí ó jẹ́ kí o lè fi àwọn ìṣàfilọ́lẹ̀ web ránṣẹ́ àti ṣàkóso wọn rọrùn lórí àwọn server cloud tirẹ. Ìṣepọ̀ yìí ń jẹ́ kí ìmúdọ́gba domain laifọwọyi àti ìṣàkóso SSL certificate wà láàárín Ultimate Multisite àti RunCloud.

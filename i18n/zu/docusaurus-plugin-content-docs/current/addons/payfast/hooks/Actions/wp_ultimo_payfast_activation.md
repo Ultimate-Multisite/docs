@@ -4,7 +4,7 @@ title: Isenzo - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Isenzo: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Isenzo: wp_ultimo_payfast_activation
 
 Vumela ezinye izingxenye ze-plugin zinamathisele izinqubo zazo zokuvula
 

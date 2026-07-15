@@ -3,7 +3,7 @@ title: Hestijas kontrolpanelas integrācija
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrācija ar Hestia kontroli paneļiem {#hestia-control-panel-integration}
+# Integrācija ar Hestia kontroli paneļiem
 
 Šis ceids iepina, kā konfigurēt Ultimate Multisite Hestia integrāciju, lai automātiski pievienotu (un atņemtu) jūsu tīklā mapejas domēnus kā Web Domain Aliases Hestia.
 

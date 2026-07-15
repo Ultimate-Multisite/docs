@@ -3,7 +3,7 @@ title: Loco Translate Reġistru tal-Bidliet
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate Reġistru tal-Bidliet {#loco-translate-changelog}
+# Loco Translate Reġistru tal-Bidliet
 
 ### 1.0.1 {#101}
 * Kompatibbiltà mtejba mal-aħħar verżjoni ta’ Loco Translate

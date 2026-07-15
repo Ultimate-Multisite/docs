@@ -4,7 +4,7 @@ title: Action - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Action: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
+# Action: mu_migration/import/user/custom_data_after
 
 কাস্টম ব্যবহারকারীর ডেটা এক্সপোর্ট করার পরে এটি কার্যকর হয়।
 

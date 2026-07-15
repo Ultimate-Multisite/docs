@@ -4,7 +4,7 @@ title: Гамәл - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Гамәл: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Гамәл: wp_ultimo_host_providers_load
 
 Эшләүчеләргә үзләренең хост провайдер интеграцияләрен wp плагиннары аша өстәргә мөмкинлек бирә.
 

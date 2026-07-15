@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 5: Ṣíṣe àpẹrẹ àwọn ètò rẹ'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ẹ̀kọ́ 5: Ṣíṣe Àwọn Eto Rẹ {#lesson-5-designing-your-plans}
+# Ẹ̀kọ́ 5: Ṣíṣe Àwọn Eto Rẹ
 
 Àwọn ipele eto rẹ kì í ṣe ipele owó nìkan -- wọ́n jẹ́ àfihàn bí àwọn oníbàárà niche rẹ ṣe ń ṣiṣẹ́ gangan. Nínú ẹ̀kọ́ yìí, ìwọ yóò ṣe àwọn ipele ọjà tí ó bá àwọn àìní gidi ti àwọn ilé iṣẹ́ fitness mu ní àwọn ipele ìdàgbàsókè ọ̀tọ̀ọ̀tọ̀.
 

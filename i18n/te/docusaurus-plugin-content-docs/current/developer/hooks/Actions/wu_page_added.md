@@ -4,7 +4,7 @@ title: చర్య - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 ప్లగిన్ డెవలపర్‌లు పేజీలను రిజిస్టర్ చేసినప్పుడు అదనపు పనులు చేయగలిగేలా చేస్తుంది.
 

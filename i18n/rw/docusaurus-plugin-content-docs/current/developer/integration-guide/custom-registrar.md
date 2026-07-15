@@ -3,7 +3,7 @@ title: Kubaka ihuzwa ryihariye ry’umwanditsi w’amazina ya domaine
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kubaka Ihuzwa rya Registrar Ryihariye {#building-a-custom-registrar-integration}
+# Kubaka Ihuzwa rya Registrar Ryihariye
 
 Addon ya Domain Seller ikoresha imiterere ya **Integration Registry**. Buri registrar ni class ya PHP ishyira mu bikorwa `Domain_Selling_Capability` kandi ikiyandikisha binyuze kuri action hook ya `wu_domain_seller_register_capabilities`.
 

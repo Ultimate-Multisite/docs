@@ -3,7 +3,7 @@ title: GoCardless Ndekọ mgbanwe
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog {#gocardless-changelog}
+# GoCardless Changelog
 
 Version: 1.0.3 - E wepụtara na 2026-05-05
 * Mmezi: A na-ehichapụzi saịtị ndị na-echere na-enweghị njikọ mgbe a kagburu GoCardless membership mgbe ọ nọ na ọnọdụ na-echere ma ọ bụ on-hold

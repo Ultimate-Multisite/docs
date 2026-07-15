@@ -3,7 +3,7 @@ title: Mailchimp تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp تبديلي نامو {#mailchimp-changelog}
+# Mailchimp تبديلي نامو
 
 نسخو: 1.1.1 - 2025-09-28 تي جاري ٿيو
 

@@ -3,7 +3,7 @@ title: ଉନ୍ନତ କୋଡ୍ ଉଦାହରଣ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ଉନ୍ନତ Code ଉଦାହରଣ {#advanced-code-examples}
+# ଉନ୍ନତ Code ଉଦାହରଣ
 
 ଏହି ଉଦାହରଣଗୁଡ଼ିକ Ultimate Multisite ସହ ଉନ୍ନତ ଏକୀକରଣ ଢାଞ୍ଚା ଦେଖାଏ।
 

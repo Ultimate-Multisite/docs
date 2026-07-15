@@ -3,7 +3,7 @@ title: Tsoom API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# ຕፅໜັງສື API ເພື່ອລົງທະບຽນ Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# ຕፅໜັງສື API ເພື່ອລົງທະບຽນ Ultimate Multisite
 
 ໃນຄູ່ມືນີ້, ທ່ານຈະໄດ້ຮຽນຮູ້ວິທີໃຊ້ Ultimate Multisite /register API endpoint ເພື່ອສ້າງຂັ້ນຕອນການຕ້ອນຮັບ (onboarding process) ທັງໝົດໃຫ້ກັບລູກຄ້າໃໝ່ໃນເຄືອຂ່າຍຂອງທ່ານ ແລະ ວິທີເຮັດແບບນັ້ນຜ່ານ Zapier.
 

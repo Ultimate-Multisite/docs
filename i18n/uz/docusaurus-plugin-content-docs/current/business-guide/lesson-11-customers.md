@@ -3,7 +3,7 @@ title: '11-dars: Mijozlarni topish'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# 11-dars: Mijozlarni topish {#lesson-11-finding-customers}
+# 11-dars: Mijozlarni topish
 
 Mijozlarsiz ajoyib platforma shunchaki sevimli mashg‘ulotdir. Bu dars niche vertikalda mijozlarni qanday jalb qilishni qamrab oladi -- aynan bitta sohaga e’tibor qaratganingiz uchun ishlaydigan strategiyalar.
 

@@ -3,7 +3,7 @@ title: An t-saoghaladh a tha a' chluainteach
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# An tòr fhaisg an t-registeradh (v2) {#the-registration-flow-v2}
+# An tòr fhaisg an t-registeradh (v2)
 
 _**NOTE CRUCIAL: Tha an tòr seo a' tuairt do chuid Ultimate Multisite version 2.x.**_
 

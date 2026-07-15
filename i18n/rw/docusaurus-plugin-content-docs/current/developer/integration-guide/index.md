@@ -3,7 +3,7 @@ title: Imfashanyigisho yo Guhuza
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Amabwiriza yo Guhuza {#integration-guide}
+# Amabwiriza yo Guhuza
 
 Aya mabwiriza asobanura uburyo busanzwe bwo guhuza na Ultimate Multisite, harimo kwihuza na serivisi zo hanze, kubaka payment gateways zihariye, no gucunga webhooks.
 

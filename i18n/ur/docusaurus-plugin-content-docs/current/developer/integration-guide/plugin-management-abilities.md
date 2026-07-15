@@ -3,7 +3,7 @@ title: پلاگ ان مینجمنٹ کی صلاحیتیں
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities (پلاگ ان مینجمنٹ کی صلاحیتیں) {#plugin-management-abilities}
+# Plugin Management Abilities (پلاگ ان مینجمنٹ کی صلاحیتیں)
 
 Gratis AI Agent v1.5.0 کے ساتھ **7 پلاگ ان مینجمنٹ کی صلاحیتیں** (plugin management abilities) آتی ہیں جنہیں AI اسسٹنٹ بات چیت کے دوران استعمال کر سکتا ہے۔ یہ صلاحیتیں [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) کے ذریعے انسٹال کردہ WordPress پلاگ انز پر پروگرامنگ کے ذریعے کنٹرول فراہم کرتی ہیں۔
 

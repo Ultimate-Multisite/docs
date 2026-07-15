@@ -3,7 +3,7 @@ title: Whakawātea Whakaritenga
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Whakarongo Incompatibilities me Pākehā Plugin {#known-incompatibilities-with-other-plugins}
+# Whakarongo Incompatibilities me Pākehā Plugin
 
 Iha i roto i te whakatairanga me te whakamahi Ultimate Multisite, he mea e taea ana akorua ki te pēnei i ngā pētranga (plugins) kia whai i ngā tino pai i roto i te mahi.
 

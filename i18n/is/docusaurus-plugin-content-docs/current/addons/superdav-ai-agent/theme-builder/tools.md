@@ -3,7 +3,7 @@ title: Verkfæri og stillingar
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Verkfæri og stillingar {#tools-and-configuration}
+# Verkfæri og stillingar
 
 Theme Builder notar sett af verkfærum til að greina, hanna og byggja WordPress vefinn þinn. Í útgáfu 1.16.0 er **sd-ai-agent/site-scrape nú Tier 1 verkfæri**, sem gerir það sjálfgefið aðgengilegt í Theme Builder. Superdav AI Agent v1.18.0 kynnir einnig Advanced fylgipakka sem er dreift sérstaklega fyrir traust vinnuferli þróunaraðila; þessi verkfæri eru ekki hluti af WordPress.org kjarnapakkanum og þarf að setja þau upp og heimila sérstaklega.
 

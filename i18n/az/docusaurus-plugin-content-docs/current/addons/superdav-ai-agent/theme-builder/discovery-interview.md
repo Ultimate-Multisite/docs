@@ -3,7 +3,7 @@ title: Kəşfiyyat Müsahibəsi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Kəşfiyyat Müsahibəsi {#discovery-interview}
+# Kəşfiyyat Müsahibəsi
 
 **Kəşfiyyat Müsahibəsi** (Discovery Interview), Theme Builder-in dizayn prosesindəki ilk addımdır. Bu müsahibə saytınız, biznesiniz və dizayn üstünlükləriniz haqqında məlumat toplamaq üçün hazırlanmışdır ki, sizə xas bir tema yaradılsın.
 

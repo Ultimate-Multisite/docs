@@ -3,7 +3,7 @@ title: Administrere delbare lenker for planer
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Administrere delbare lenker for abonnementer {#managing-shareable-links-for-plans}
+# Administrere delbare lenker for abonnementer
 
 Ultimate Multisite gir deg muligheten til å dele abonnementslenker direkte med kundene dine. For å gjøre dette går du til redigeringssiden for et av abonnementene dine og klikker på knappen _Klikk for å kopiere den delbare lenken_.
 

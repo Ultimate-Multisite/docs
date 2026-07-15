@@ -3,7 +3,7 @@ title: Postavljanje i konfiguracija pružaoca usluga
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodavač domena: Postavljanje i konfiguracija provajdera {#domain-seller-setup-and-provider-configuration}
+# Prodavač domena: Postavljanje i konfiguracija provajdera
 
 Dodatak Prodavač domena dolazi s vođenim čarobnjakom za postavljanje koji vas vodi kroz svaki obavezni korak. Ova stranica pokriva tok čarobnjaka i kako naknadno konfigurirati ili ponovno konfigurirati provajdere.
 

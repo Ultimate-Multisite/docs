@@ -4,7 +4,7 @@ title: کړنه - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# عمل: set_auth_cookie {#action-setauthcookie}
+# عمل: set_auth_cookie
 
 سمدستي مخکې له دې فعالېږي چې د تصدیق کوکي وټاکل شي.
 

@@ -3,7 +3,7 @@ title: Pangurusan Pajeg
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pangurusan Pajeg {#tax-handling}
+# Pangurusan Pajeg
 
 Ultimate Multisite nduwèni modul panglumpukan pajeg sing wis dibangun ing plugin inti kita, dadi yen panjenengan perlu nglumpukaké pajeg dodolan kanggo rencana, paket, lan layanan panjenengan, panjenengan bisa nindakake kanthi gampang tanpa kudu masang add-ons apa wae.
 

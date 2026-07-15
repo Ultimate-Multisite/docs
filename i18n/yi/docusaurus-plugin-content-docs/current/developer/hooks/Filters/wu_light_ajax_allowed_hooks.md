@@ -4,7 +4,7 @@ title: פֿילטער - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# פֿילטער: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# פֿילטער: wu_light_ajax_allowed_hooks
 
 צוליב זיכערהייט־סיבות באַגרענעצן מיר די צאָל אַקציעס וואָס זענען בנימצא פֿאַר אַרײַנהאַקן זיך. דער פֿילטער לאָזט אַנטוויקלערס אויסברייטערן יענע רשימה אויב נייטיק.
 

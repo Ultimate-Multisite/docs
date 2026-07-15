@@ -3,7 +3,7 @@ title: Ngamimitkeun Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ngamimitahan Ultimate Multisite {#installing-ultimate-multisite}
+# Ngamimitahan Ultimate Multisite
 
 :::note
 Tutorial ieu nyangka yén anjeun parantos ngamimitahan sareng ngonpigurasikeun WordPress Multisite. Pikeun diajar kumaha, tingali [tutorial ieu](https://www.wpbeginner.com/glossary/multisite/) ku WP Beginner.

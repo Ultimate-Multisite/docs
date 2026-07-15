@@ -3,7 +3,7 @@ title: Mailster የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# የMailster የለውጥ መዝገብ {#mailster-changelog}
+# የMailster የለውጥ መዝገብ
 
 ### 1.0.0 {#100}
 * የመጀመሪያ ስሪት

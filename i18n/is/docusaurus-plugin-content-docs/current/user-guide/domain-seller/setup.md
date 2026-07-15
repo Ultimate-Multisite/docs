@@ -3,7 +3,7 @@ title: Uppsetning og vinnara-samþættingar
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domén Séljar: Uppsetning og Leiðandi Stjórnunarinnar {#domain-seller-setup-and-provider-configuration}
+# Domén Séljar: Uppsetning og Leiðandi Stjórnunarinnar
 
 Domén Séljar (Domain Seller) add-oninn fer með sér leiðandi uppsetningarpylsan sem leysir þig í gegnum alla nauðsynleg skref. Þessi síða dektar ferli pylsansins og hvernig þú getur sett upp eða breytt leiðandi stjórnunarannferðara (providers) eftir.
 

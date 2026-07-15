@@ -4,7 +4,7 @@ title: Фильтр - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Фильтр: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Фильтр: wu_wp_cli_enabled_sub_commands
 
 Бул объект үчүн кайсы sub_commands иштетилерин чыпкалайт.
 

@@ -4,7 +4,7 @@ title: Akcja - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Akcja: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# Akcja: wu_captcha_after_validation
 
 Wyzwala się po pomyślnej walidacji captcha.
 

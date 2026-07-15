@@ -3,7 +3,7 @@ title: Domeno Produktaj kaj Precoj
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeno Produktaj kaj Precoj {#domain-products-and-pricing}
+# Domeno Produktaj kaj Precoj
 
 Domeno produktaj estas la maniero, kiel vi kontrolas precojn, TLD-ojn (Top-Level Domain), WHOIS-privancon kaj proveedor selekton. Ĉiu domeno produkto estas standarda Ultimate Multisite produkto kun ekstrema **Domain Settings** tabo.
 

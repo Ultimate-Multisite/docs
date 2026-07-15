@@ -4,7 +4,7 @@ title: Filtro - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filtro: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Filtro: get_site_url_for_previewer
 
 Permitir a los desarrolladores de plugins filtrar la URL utilizada en el visor
 

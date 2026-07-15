@@ -3,7 +3,7 @@ title: Gratis AI Agent ਸੈਟਿੰਗਾਂ
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent ਸੈਟਿੰਗਾਂ {#gratis-ai-agent-settings}
+# Gratis AI Agent ਸੈਟਿੰਗਾਂ
 
 Gratis AI Agent ਵਿੱਚ **Settings → Advanced** ਸਕ੍ਰੀਨ ਬੈਕਐਂਡ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਲਈ ਪ੍ਰਸ਼ਾਸਕ-ਪੱਧਰ ਦੀ ਸੰਰਚਨਾ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ। ਇਹ ਸਫ਼ਾ ਫੀਡਬੈਕ ਫਾਰਵਰਡਿੰਗ, ਖੋਜ ਪ੍ਰਦਾਤਾ ਕੁੰਜੀਆਂ, ਪ੍ਰਬੰਧਿਤ Superdav ਸੇਵਾ ਸੈੱਟਅੱਪ, Google Calendar ਕੰਟਰੋਲ, TextBee SMS ਸੈਟਿੰਗਾਂ, ਅਤੇ ਨੈੱਟਵਰਕ-ਵਿਆਪੀ ਵਿਸ਼ੇਸ਼ਤਾ ਝੰਡਿਆਂ ਦਾ ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਕਰਦਾ ਹੈ।
 

@@ -3,7 +3,7 @@ title: 'Isifundo 10: Usuku Lokwethula'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Isifundo 10: Usuku Lokwethula {#lesson-10-launch-day}
+# Isifundo 10: Usuku Lokwethula
 
 Konke sekwakhiwe. Ngaphambi kokuba uvule iminyango, lesi sifundo sidlula ohlwini lokuhlola lwangaphambi kokwethula ukuze uqinisekise ukuthi akukho okuphukile, okushodayo, noma okuhlazisayo.
 

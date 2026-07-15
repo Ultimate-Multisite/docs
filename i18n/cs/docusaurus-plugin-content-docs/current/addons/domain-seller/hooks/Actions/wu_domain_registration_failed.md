@@ -4,7 +4,7 @@ title: Akce - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Akce: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Akce: wu_domain_registration_failed
 
 Spustí se, když selže pokus o registraci domény.
 

@@ -3,7 +3,7 @@ title: ग्राहकों का प्रबंधन
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# ग्राहक प्रबंधन {#managing-customers}
+# ग्राहक प्रबंधन
 
 **Customers** पेज आपके network में registered सदस्यों की सूची दिखाता है। इस पेज पर उपयोगकर्ता की बुनियादी जानकारी जैसे नाम, ईमेल पता, last login, और एक **switch to** लिंक दिखाई देता है जिससे आप site administrator के रूप में उपयोगकर्ता की subsite में लॉगिन कर सकते हैं।
 

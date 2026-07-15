@@ -3,7 +3,7 @@ title: Tomara guhertinan a Hilbijêrê Ziman
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Tomara guhertinên Hilbijêrê Ziman {#language-selector-changelog}
+# Tomara guhertinên Hilbijêrê Ziman
 
 Guherto: 1.1.3 - Di 2026-05-05 de hat weşandin
 * Çareserî: Guhêrbarên têketinê niha têne paqijkirin û navên hook ên taybet bi pêşgir têne danîn da ku pevçûn bi pluginên aliyê sêyem re neyê

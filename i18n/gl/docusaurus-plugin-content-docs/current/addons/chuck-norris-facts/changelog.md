@@ -3,7 +3,7 @@ title: Rexistro de cambios de Feitos de Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Rexistro de cambios de Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Rexistro de cambios de Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Engadido: funcionalidade de actualización automática a través do servidor de actualizacións de Ultimate Multisite

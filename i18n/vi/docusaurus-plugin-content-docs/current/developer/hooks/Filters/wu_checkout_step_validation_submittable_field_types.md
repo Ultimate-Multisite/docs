@@ -4,7 +4,7 @@ title: Bộ lọc - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 Cho phép các nhà phát triển bỏ qua kiểm tra nếu một trường (field) được tự động gửi đi (auto-submittable).
 

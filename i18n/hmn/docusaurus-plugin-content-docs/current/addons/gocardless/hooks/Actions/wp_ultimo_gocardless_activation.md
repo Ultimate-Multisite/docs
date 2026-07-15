@@ -4,7 +4,7 @@ title: Kev nqis tes - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Kev ua: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Kev ua: wp_ultimo_gocardless_activation
 
 Cia lwm feem ntawm lub plugin txuas lawv cov txheej txheem rau kev activation
 

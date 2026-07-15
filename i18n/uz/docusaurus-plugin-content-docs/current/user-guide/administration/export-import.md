@@ -3,7 +3,7 @@ title: Eksport va import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksport va Import {#export--import}
+# Eksport va Import
 
 Ultimate Multisite 2.9.0 da **Tools > Export & Import** (Asboblar > Eksport va Import) bo'zim ostida bitta sayt uchun **Export & Import** vositasi qo'shildi. Siz bittaki WordPress saytini ZIP fayli sifatida paketlash, uni tiklash yoki mos keladigan Ultimate Multisite va single-site WordPress o'rnatmalar orasida saytni ko'chirish kerak bo'lganda undan foydalanishingiz mumkin.
 

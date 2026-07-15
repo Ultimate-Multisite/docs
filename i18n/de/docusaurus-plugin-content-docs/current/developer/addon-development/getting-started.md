@@ -3,7 +3,7 @@ title: Erste Schritte mit der Add-on-Entwicklung
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Add-on-Entwicklung {#addon-development}
+# Add-on-Entwicklung
 
 ## Add-on-Struktur {#addon-structure}
 

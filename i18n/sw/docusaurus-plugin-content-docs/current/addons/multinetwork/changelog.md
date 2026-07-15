@@ -3,7 +3,7 @@ title: Historia ya Mabadiliko ya Mtandao Mwingi
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Kumbukumbu za Mabadiliko za Multi-Network {#multi-network-changelog}
+# Kumbukumbu za Mabadiliko za Multi-Network
 
 ### 1.3.0 {#130}
 * Kipya: Muonyeshaji wa muundo wa mtandao (Network template previewer) — angalia na uonyeshe muundo wa mtandao kwa panel ya moja kwa moja kabla ya kununua.

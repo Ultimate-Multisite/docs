@@ -4,7 +4,7 @@ title: Sefa - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Sefa: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Sefa: wu_stripe_checkout_subscription_data
 
 Sefa deta ya Stripe Subscription. Itha kusintha success_url kapena cancel_url.
 

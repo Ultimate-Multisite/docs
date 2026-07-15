@@ -3,7 +3,7 @@ title: Uluntu
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Indlela yokujoyina uluntu lwe-Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Indlela yokujoyina uluntu lwe-Ultimate Multisite
 
 Uluntu lwe-Ultimate Multisite yindawo apho unokunxibelelana nabanye abasebenzisi be-Ultimate Multisite uze wabelane ngeengcebiso, amava nokunye. Ukufikelela kuluntu lwe-Ultimate Multisite yiya ku-https://community.ultimatemultisite.com/home.
 

@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 9: Ìṣètò owó fún èrè'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ẹ̀kọ́ 9: Ìṣètò Owo fún Èrè {#lesson-9-pricing-for-profit}
+# Ẹ̀kọ́ 9: Ìṣètò Owo fún Èrè
 
 Ní Ẹ̀kọ́ 5 a ṣètò àwọn owo ìbẹ̀rẹ̀ fún àwọn ètò FitSite. Ní báyìí a tún ìlànà ìṣètò owo náà ṣe pẹ̀lú àwọn ọ̀nà tó máa ń pọ̀ sí owó-wíwọlé, gba àwọn oníbàárà níyànjú láti ṣe àgbéga, kí ó sì dín ìfagilé kù.
 

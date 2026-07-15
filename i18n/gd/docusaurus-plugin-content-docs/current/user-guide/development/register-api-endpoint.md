@@ -3,7 +3,7 @@ title: Ráidh an API endpoint aistadh
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# An API endpoint a' Chàir a' Chùlchnaich (The Ultimate Multisite Register API endpoint) {#the-ultimate-multisite-register-api-endpoint}
+# An API endpoint a' Chàir a' Chùlchnaich (The Ultimate Multisite Register API endpoint)
 
 Dug an tòradh seo, thuill thu le feuchain a' sgrùdadh a' chùlchnaich API Endpoint a' Chùlchnaich (Ultimate Multisite /register API endpoint) airson a' creachadh a' chùlchnaich fahuineach airson ùr-chùlchnaich ùr anns a' chùlchnaich agad agus faic a' sgrùdadh sin le Zapier.
 

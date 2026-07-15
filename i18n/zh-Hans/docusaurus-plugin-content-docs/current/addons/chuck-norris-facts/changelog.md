@@ -3,7 +3,7 @@ title: 查克·诺里斯事实变更日志
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris 事实更新日志 {#chuck-norris-facts-changelog}
+# Chuck Norris 事实更新日志
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * 已添加: 自动更新功能通过 Ultimate Multisite 更新服务器

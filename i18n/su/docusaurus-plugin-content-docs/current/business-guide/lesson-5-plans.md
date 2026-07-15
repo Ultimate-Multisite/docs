@@ -3,7 +3,7 @@ title: 'Palajaran 5: Ngarancang Rencana Anjeun'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Palajaran 5: Ngararancang Rencana Anjeun {#lesson-5-designing-your-plans}
+# Palajaran 5: Ngararancang Rencana Anjeun
 
 Tingkat rencana anjeun lain ngan saukur tingkat harga -- éta téh gambaran kumaha palanggan dina niche anjeun sabenerna beroperasi. Dina palajaran ieu anjeun bakal ngarancang tingkat produk anu saluyu jeung kabutuhan nyata usaha kabugaran dina rupa-rupa tahap.
 

@@ -3,7 +3,7 @@ title: Öryggisfullt multisítandi
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Öryggingur á Ultimate Multisite {#translating-ultimate-multisite}
+# Öryggingur á Ultimate Multisite
 
 Ultimate Multisite er byggð í ensku, en pluginin er fullt þýðileg og við velgast aktivt þýðingar.
 

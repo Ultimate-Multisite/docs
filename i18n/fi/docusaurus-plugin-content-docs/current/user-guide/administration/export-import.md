@@ -3,7 +3,7 @@ title: Vienti ja tuonti
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Tiedoston vienti ja vienti {#export--import}
+# Tiedoston vienti ja vienti
 
 Ultimate Multisite 2.9.0 tuo uuden yksittäisen sivuston **Export & Import** -työkalun kohtaan **Tools > Export & Import**. Käytä sitä, kun tarvitset yhtä WordPress-sivustoa ZIP-tiedostona pakkaamaan, palauttaaksesi kyseisen ZIP-tiedoston tai siirtää sivustoa yhteensopivissa Ultimate Multisite- ja yksittäisissä WordPress-asennuksissa.
 

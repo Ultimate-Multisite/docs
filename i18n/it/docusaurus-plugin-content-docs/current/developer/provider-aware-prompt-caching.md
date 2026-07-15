@@ -3,7 +3,7 @@ title: Memorizzazione dei Prompt Consapevole del Fornitore
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching dei Prompt Consapevole del Provider {#provider-aware-prompt-caching}
+# Caching dei Prompt Consapevole del Provider
 
 Superdav AI Agent v1.12.0 introduce il **caching dei prompt consapevole del provider**, che ottimizza i costi e la latenza dell'API memorizzando i prompt tra diversi provider LLM. Ogni provider ha meccanismi e configurazioni di caching diversi.
 

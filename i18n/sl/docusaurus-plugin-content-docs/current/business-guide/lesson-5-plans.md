@@ -3,7 +3,7 @@ title: 'Lekcija 5: Oblikovanje vaših paketov'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcija 5: Oblikovanje vaših paketov {#lesson-5-designing-your-plans}
+# Lekcija 5: Oblikovanje vaših paketov
 
 Vaše ravni paketov niso samo cenovne ravni -- so odraz tega, kako vaše nišne stranke dejansko delujejo. V tej lekciji boste oblikovali ravni izdelkov, ki ustrezajo resničnim potrebam fitnes podjetij v različnih fazah.
 

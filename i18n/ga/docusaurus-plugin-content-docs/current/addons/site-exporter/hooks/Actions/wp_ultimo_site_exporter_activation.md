@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Gníomh: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Gníomh: wp_ultimo_site_exporter_activation
 
 Lig do chodanna eile den plugin a ngnáthaimh le haghaidh gníomhachtaithe a cheangal.
 

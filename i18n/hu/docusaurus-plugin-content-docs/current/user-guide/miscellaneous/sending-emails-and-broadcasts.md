@@ -3,7 +3,7 @@ title: E-mailek és körlevelek küldése
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mailek és Broadcasts küldése (v2) {#sending-emails-and-broadcasts-v2}
+# E-mailek és Broadcasts küldése (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 

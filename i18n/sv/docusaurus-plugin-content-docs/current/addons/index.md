@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Tillägg {#ultimate-multisite-addons}
+# Ultimate Multisite Tillägg
 
 Tilläggen utökar Ultimate Multisite med ytterligare funktioner och integrationer. De flesta tilläggen är betalda och kan köpas från [ultimatemultisite.com](https://ultimatemultisite.com).
 

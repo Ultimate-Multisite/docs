@@ -3,7 +3,7 @@ title: Қаррамақ кодлар ясау
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Code Oluşturma (v2) {#creating-discount-codes-v2}
+# Discount Code Oluşturma (v2)
 
 _**ÖNEMLİ QAYDALI: Bu maqale Ultimate Multisite versiyası 2.x haqida ma'lumot beriladi.**_
 

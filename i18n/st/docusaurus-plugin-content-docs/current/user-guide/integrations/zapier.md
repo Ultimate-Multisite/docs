@@ -3,7 +3,7 @@ title: Ho fana'a le ho fetola
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ho Hlahopa Ultimate Multisite le Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ho Hlahopa Ultimate Multisite le Zapier
 
 Morero ka ntlha ya sehlopha, re ne re buisana ka [Webhooks](webhooks.md) le hore na leba ba ka fetola ho fanaena le bonnum le bonnum le ba nang le bonnum ba lina.
 

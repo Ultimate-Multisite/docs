@@ -3,7 +3,7 @@ title: Fàilbreachd a' chluaintean agus a' sgrùdadh earrachdaireach
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback a Chùiridh agus Sealladh Earrachdaichean {#customer-feedback--issue-reporting}
+# Feedback a Chùiridh agus Sealladh Earrachdaichean
 
 Gratis AI Agent v1.5.0 a thann sin a tha deàtaichean sealladh agus sealladh earrachdaichean a tha a' chluainteachd, a leum nas fhaighinn na nàdarachdheanan a tha a' tòrraidh agus a sealladh problidhean gu sònraich frith air an chluainte. Tha an sistem seo a' tòrraidh comhionadh, amaidheachais sealladh, agus AI-aistriú ar an leathanach a tha a' tòrraidh.
 

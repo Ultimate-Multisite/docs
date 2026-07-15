@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# ක්‍රියාව: wu_page_before_render {#action-wupagebeforerender}
+# ක්‍රියාව: wu_page_before_render
 
 අපි පිටුව මුද්‍රණය කිරීමට පෙර අමතර අන්තර්ගතයක් එක් කිරීමට ප්ලගිනය සංවර්ධකයන්ට ඉඩ දෙයි.
 

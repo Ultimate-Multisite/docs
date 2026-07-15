@@ -3,7 +3,7 @@ title: PayPal સેટ અપ કરવું
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway સેટ અપ કરવું (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal Gateway સેટ અપ કરવું (v2)
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite version 2.x ને સંદર્ભિત કરે છે.**_
 

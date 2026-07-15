@@ -4,7 +4,7 @@ title: Гамәл - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Гамәл: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Гамәл: wu_handle_user_meta_fields
 
 Плагин эшләүчеләргә, кирәк булса, кулланучы мета мәгълүматларын төрле ысуллар белән сакларга мөмкинлек бирә.
 

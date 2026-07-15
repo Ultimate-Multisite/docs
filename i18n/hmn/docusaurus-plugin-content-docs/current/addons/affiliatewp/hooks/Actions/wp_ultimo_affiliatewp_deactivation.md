@@ -4,7 +4,7 @@ title: Kev nqis tes - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Kev nqis tes: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Kev nqis tes: wp_ultimo_affiliatewp_deactivation
 
 Cia lwm feem ntawm plugin txuas lawv cov routine rau kev deactivation
 

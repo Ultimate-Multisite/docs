@@ -3,7 +3,7 @@ title: Шөнийн файл алдаа
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Файл Угтгах Алдаа {#error-installing-the-sunrise-file}
+# Sunrise Файл Угтгах Алдаа
 
 sunrise.php файл нь WordPress өөрийгөө ажиллуулах үед хайж буй тусгай файл юм. WordPress-ийн sunrise.php файлыг олж чадахын тулд тэр файл **wp-content** фолдер дотор байх шаардлагатай.
 

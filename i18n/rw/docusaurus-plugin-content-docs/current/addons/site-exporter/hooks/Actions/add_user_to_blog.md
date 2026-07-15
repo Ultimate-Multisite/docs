@@ -4,7 +4,7 @@ title: Igikorwa - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Igikorwa: add_user_to_blog {#action-addusertoblog}
+# Igikorwa: add_user_to_blog
 
 Gihita gikora umukoresha akimara kongerwa ku rubuga.
 

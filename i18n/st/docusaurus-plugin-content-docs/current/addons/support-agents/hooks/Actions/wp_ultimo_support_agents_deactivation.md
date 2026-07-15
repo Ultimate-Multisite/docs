@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Ketso: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Ketso: wp_ultimo_support_agents_deactivation
 
 Lumella likarolo tse ling tsa plugin ho hokela mekhoa ea tsona bakeng sa ho tima
 

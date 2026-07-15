@@ -3,7 +3,7 @@ title: Taisceadh Promtaí atá Feasach ar Sholáthraithe
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Taisceadh Leideanna atá Feasach ar Sholáthraithe {#provider-aware-prompt-caching}
+# Taisceadh Leideanna atá Feasach ar Sholáthraithe
 
 Tugann Superdav AI Agent v1.12.0 isteach **taisceadh leideanna atá feasach ar sholáthraithe**, a bharrfheabhsaíonn costais API agus foighne trí leideanna a thaisceadh thar sholáthraithe LLM éagsúla. Tá meicníochtaí agus cumraíochtaí taiscthe éagsúla ag gach soláthraí.
 

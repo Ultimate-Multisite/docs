@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Ngubah Panel Admin je PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Ngubah Panel Admin je PRO Theme
 
 Seringkali pas lagi ngerjain kerja klien, kita butuh kasih pengalaman yang lebih keren di dashboard WordPress klien. Munuhunkeun tampilan anu leuwih profesional mah, PRO Theme bisa ngabantosan anjeun.
 

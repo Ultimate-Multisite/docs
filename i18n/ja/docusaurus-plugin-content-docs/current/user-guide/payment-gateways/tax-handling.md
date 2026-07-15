@@ -3,7 +3,7 @@ title: 税金処理
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# 税の取り扱い {#tax-handling}
+# 税の取り扱い
 
 Ultimate Multisite には、コア plugin に税徴収モジュールが組み込まれています。そのため、プラン、パッケージ、サービスで売上税を徴収する必要がある場合でも、add-on をインストールせずに簡単に対応できます。
 

@@ -4,7 +4,7 @@ title: Hành động - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Action: wu_page_load {#action-wupageload}
+# Action: wu_page_load
 
 Cho phép các nhà phát triển plugin thêm các hook bổ sung vào các trang của chúng ta.
 

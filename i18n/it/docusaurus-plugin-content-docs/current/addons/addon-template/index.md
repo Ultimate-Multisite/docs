@@ -3,9 +3,9 @@ title: Modello Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Modello di Addon {#addon-template}
+# Modello di Addon
 
-{{ADDON_DESCRIPTION}}
+Modello Addon — Ultimate Multisite.
 
 ## Requisiti {#requirements}
 

@@ -3,7 +3,7 @@ title: Başlykdaky domen gözlegi
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Sözbaşy domen gözlegi {#header-domain-search}
+# Sözbaşy domen gözlegi
 
 Bu sazlamany, domen gözlegini başlaýan kiçi sözbaşy formasyny isläniňizde, soňra müşderä Ultimate Multisite töleg tamamlaýyş sahypasynyň içinde elýeterli domenlerden saýlamaga mümkinçilik bermek üçin ulanyň.
 

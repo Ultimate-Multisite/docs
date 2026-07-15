@@ -3,7 +3,7 @@ title: 'Isifundo 10: Usuku Lokuphehlelelwa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Isifundo 10: Usuku Lokuphehlelela {#lesson-10-launch-day}
+# Isifundo 10: Usuku Lokuphehlelela
 
 Yonke into yakhiwe. Ngaphambi kokuba uvule iingcango, esi sifundo sihamba kuluhlu lokuhlola ngaphambi kokuphehlelela ukuqinisekisa ukuba akukho nto yonakeleyo, ilahlekileyo, okanye ehlazisayo.
 

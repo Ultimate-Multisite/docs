@@ -3,7 +3,7 @@ title: ヘッダードメイン検索
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Ultimate Multisite の checkout 内で、利用可能なドメインから顧客が選べるようにしつつ、小さなヘッダーフォームからドメイン検索を開始したい場合は、この設定を使用します。
 

@@ -3,7 +3,7 @@ title: Prívodný tok Theme Builderu
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Onboarding prechádzajúca cesta Theme Builderu {#theme-builder-onboarding-flow}
+# Onboarding prechádzajúca cesta Theme Builderu
 
 Superdav AI Agent v1.12.0 predstavuje pramenú **onboardingovú cestu Theme Builderu**, ktorá vám pomáha vytvoriť vlastný blokový tému počas vašej počiatočnej konfigurácie. Toto nahradia starý režim Site Builder s flexibilnejšou, agentom asistovanej metodou.
 

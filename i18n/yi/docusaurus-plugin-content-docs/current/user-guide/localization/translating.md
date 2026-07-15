@@ -3,7 +3,7 @@ title: איבערזעצן Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# איבערזעצן Ultimate Multisite {#translating-ultimate-multisite}
+# איבערזעצן Ultimate Multisite
 
 Ultimate Multisite ווערט אנטוויקלט אויף ענגליש, אָבער דער plugin איז פולשטענדיק איבערזעצלעך, און מיר באַגריסן אַקטיוו בײַשטײַערונגען צו איבערזעצונגען.
 

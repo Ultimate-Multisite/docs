@@ -3,7 +3,7 @@ title: WP Engine integracija
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integracja z WP Engine {#wp-engine-integration}
+# Integracja z WP Engine
 
 ## Przegląd {#overview}
 WP Engine to premium platform hostingu WordPress zarządzanego, która zapewnia zoptymalizowane wydajność, bezpieczeństwo i skalowalność dla stron WordPress. Ta integracja umożliwia automatyczne synchronizowanie domen między Ultimate Multisite a WP Engine.

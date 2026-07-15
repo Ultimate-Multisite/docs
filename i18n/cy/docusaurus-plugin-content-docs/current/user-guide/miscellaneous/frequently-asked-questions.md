@@ -3,7 +3,7 @@ title: Cwestiynau Cyffredinol
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Pytnodi Cyffredinol {#frequently-asked-questions}
+# Pytnodi Cyffredinol
 
 Dyma rai **Pytnodi Cyffredinol** sy'n cyffredinol yn dod o hyd yn aml yn ystod gyflwyniadau cefnogaeth.
 

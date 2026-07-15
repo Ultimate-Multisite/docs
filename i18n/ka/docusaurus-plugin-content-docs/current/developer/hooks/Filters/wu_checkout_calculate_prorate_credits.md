@@ -4,7 +4,7 @@ title: ფილტრი - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# ფილტრი: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# ფილტრი: wu_checkout_calculate_prorate_credits
 
 მიეცით plugin-ის დეველოპერებს კრედიტის მნიშვნელობაში ჩარევის საშუალება.
 

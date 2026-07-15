@@ -4,7 +4,7 @@ title: Filtras - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filtras: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filtras: wu_password_require_special
 
 Filtruoja, ar reikalauti specialiųjų simbolių slaptažodžiuose.
 

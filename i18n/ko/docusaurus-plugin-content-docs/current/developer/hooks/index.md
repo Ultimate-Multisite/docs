@@ -3,7 +3,7 @@ title: 훅 참조
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks 참조 {#hooks-reference}
+# Hooks 참조
 
 Ultimate Multisite의 모든 **59개 actions** 및 **118개 filters**에 대해 자동 생성된 문서입니다.
 

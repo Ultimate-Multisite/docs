@@ -3,7 +3,7 @@ title: Neurtutako planen aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Neurtutako planen aldaketen erregistroa {#metered-plans-changelog}
+# Neurtutako planen aldaketen erregistroa
 
 1.1.0 bertsioa - 2026-05-05ean argitaratua
 - Berria: AI tokenen fakturazioa multisite azpiguneetarako — jarraitu eta fakturatu AI tokenen erabilera bezeroen guneetan, token bakoitzeko tarifa konfiguragarriekin

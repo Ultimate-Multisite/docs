@@ -3,7 +3,7 @@ title: Ngā whakamārama o te whakatū
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Tāhuhu o te Checkout Forms (Checkout Forms) {#checkout-forms}
+# Tāhuhu o te Checkout Forms (Checkout Forms)
 
 He wahi ātaheke me tino whiriwhiri ki te whai i whakamārama atu i āhua haere atu i roto i te whakawhanaungatanga hou me ngā mea wāhi.
 

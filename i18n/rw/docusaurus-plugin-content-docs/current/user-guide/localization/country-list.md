@@ -3,7 +3,7 @@ title: Urugero rw'ubwoko bw'ibigo
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Guhererere u gukoresha listi ya nteriyemo y'Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Guhererere u gukoresha listi ya nteriyemo y'Ultimate Multisite
 
 Icyo cyo kumenya ko dropdown w'ubwoko bwo gukoresha nteriyemo (country) igarikiye ku buryo bwa amagambo y'inguranye mu Kinyarwanda. Ibi byashobora kwerekana ko, ibyo bishobora kuba ari uko uburyo bwiza bwo kubyara umuryango wako cyangwa abakoresha babuze bishobora kuba bafite inyandiko z'ubwoko mu gice cyane mu gice cyo gukoresha nteriyemo.
 

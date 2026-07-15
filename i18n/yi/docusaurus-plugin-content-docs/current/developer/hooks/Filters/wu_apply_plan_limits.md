@@ -4,7 +4,7 @@ title: פֿילטער - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# פֿילטער: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+# פֿילטער: wu_apply_plan_limits
 
 דערלויבן צוגעב־אַנטוויקלערס צו איבערשפּרינגען די באַגרענעצונגען.
 

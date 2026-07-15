@@ -3,7 +3,7 @@ title: 'Lektion 14: Hvad kommer næste'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lektion 14: Hvad Nu? {#lesson-14-what-comes-next}
+# Lektion 14: Hvad Nu?
 
 Du har bygget en niche-websideplatform fra bunden. FitSite er live, betjener fitnessstudier og genererer gentagne indtægter. Denne sidste lektion kigger på, hvad der kommer efter.
 

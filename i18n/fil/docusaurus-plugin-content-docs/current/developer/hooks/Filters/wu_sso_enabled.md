@@ -4,7 +4,7 @@ title: Filter - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 Pag-e-enable o pag-disable ng kakayahan ng single-sign-on (SSO) sa iba't ibang domain.
 

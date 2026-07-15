@@ -3,7 +3,7 @@ title: Klantfeedback en probleemrapportage
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback van Gebruikers en Probleemrapportage {#customer-feedback--issue-reporting}
+# Feedback van Gebruikers en Probleemrapportage
 
 Gratis AI Agent v1.5.0 introduceert een ingebouwd systeem voor feedback en probleemrapportage waarmee eindgebruikers onjuiste antwoorden kunnen markeren en problemen direct vanuit de chatinterface kunnen melden. Dit systeem omvat toestemmingsbeheer, een geautomatiseerde rapportagecommando en AI-ondersteunde triage op de backend.
 

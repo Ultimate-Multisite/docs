@@ -4,7 +4,7 @@ title: Филтер - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Филтер: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Филтер: wu_mt_syncable_user_meta_keys
 
 Филтрира листу meta кључева корисника који треба да се синхронизују са удаљеним чворовима.
 

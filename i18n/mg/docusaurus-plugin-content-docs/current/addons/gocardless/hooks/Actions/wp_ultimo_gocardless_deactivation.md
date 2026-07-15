@@ -4,7 +4,7 @@ title: Hetsika - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Hetsika: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Hetsika: wp_ultimo_gocardless_deactivation
 
 Avelao ny ampahany hafa amin'ny plugin hampifandray ny routine-ny ho an'ny deactivation
 

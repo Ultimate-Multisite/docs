@@ -4,7 +4,7 @@ title: Handling - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# Handling: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
+# Handling: wu_page_centered_after_title
 
 Tillad plugin-udviklere at tilføje ekstra knapper.
 

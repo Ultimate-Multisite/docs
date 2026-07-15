@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Filter: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Filter: wu_minimum_password_strength
 
 જરૂરી ન્યૂનતમ પાસવર્ડ મજબૂતી (zxcvbn સ્કોર) ફિલ્ટર કરો.
 

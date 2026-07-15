@@ -3,7 +3,7 @@ title: Referenca e aftësive
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenca e Aftësive {#abilities-reference}
+# Referenca e Aftësive
 
 Aftësitë janë veprimet atomike që Gratis AI Agent mund të thërrasë në instalimin tuaj WordPress. Çdo aftësi është një klasë PHP e regjistruar që ekspozon një skemë JSON — agjenti e lexon këtë skemë gjatë ekzekutimit për të kuptuar cilët parametra kërkohen dhe çfarë kthen aftësia.
 

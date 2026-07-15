@@ -3,7 +3,7 @@ title: Hestia Control Panel ውህደት
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# የHestia Control Panel ውህደት {#hestia-control-panel-integration}
+# የHestia Control Panel ውህደት
 
 ይህ መመሪያ በUltimate Multisite ውስጥ ካሉ የዶሜን ኔትወርክ (mapped domains) ዶሜኖች በHestia ውስጥ እንደ Web Domain Aliases በራስ-ሰር እንዴት እንደሚጨመሩ (እና እንደሚወገዱ) የHestia ውህደትን (integration) እንዴት ማዋቀር እንደሚቻል ያብራራል።
 

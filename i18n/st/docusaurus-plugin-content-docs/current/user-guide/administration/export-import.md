@@ -3,7 +3,7 @@ title: Ho fanaetsa le ho fanaetsa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Ho Hloboha le Ho Fetola (Export & Import) {#export--import}
+# Ho Hloboha le Ho Fetola (Export & Import)
 
 Kea re bua ka hore o fetolela le ho hloba data. Kea se tsoalo kae e le eng, ke tla go reka ka lina le lina.
 

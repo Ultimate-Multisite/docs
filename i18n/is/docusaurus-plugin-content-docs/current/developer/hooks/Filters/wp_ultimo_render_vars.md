@@ -4,7 +4,7 @@ title: Sía - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Sía: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Sía: wp_ultimo_render_vars
 
 Leyfir plugin-hönnuðum að bæta aukabreytu við render-samhengið á heimsvísu.
 

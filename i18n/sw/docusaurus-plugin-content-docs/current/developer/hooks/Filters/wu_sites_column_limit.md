@@ -4,7 +4,7 @@ title: Kichujio - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filter: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Filter: wu_sites_column_limit
 
 Filter hii inakuruhusu kubadilisha thamani inayopatikana kwa kutumia `get_pluginssites` ndani ya mtandao (network).
 

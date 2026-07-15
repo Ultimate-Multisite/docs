@@ -3,7 +3,7 @@ title: Integració WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integració amb WP Engine {#wp-engine-integration}
+# Integració amb WP Engine
 
 ## Resum {#overview}
 

@@ -4,7 +4,7 @@ title: Tace - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Tace: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Tace: wp_ultimo_woocommerce_should_use_subscriptions
 
 Ba masu haɓakawa damar tilasta amfani da WooCommerce Subscriptions.
 

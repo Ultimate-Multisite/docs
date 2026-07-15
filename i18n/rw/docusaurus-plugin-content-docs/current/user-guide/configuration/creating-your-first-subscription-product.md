@@ -3,7 +3,7 @@ title: Gukora Icyemezo Cyako Cy'ibanze
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Gukora Icyemezo Cyako Cy'Uruhuriro (v2) {#creating-your-first-subscription-product-v2}
+# Gukora Icyemezo Cyako Cy'Uruhuriro (v2)
 
 _**IKUNDI KUGUCUZE: Urugero uyu ari ukwiko kwisi Ultimate Multisite version 2.x. Uziyo ugiye n'version 1.x,**_ **__gukora uyu wese***_ **._
 

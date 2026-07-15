@@ -4,7 +4,7 @@ title: Toiming - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Tegevus: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Tegevus: wu_after_switch_template
 
 Võimaldab plugina arendajatel siduda funktsioone pärast seda, kui kasutaja või super admin vahetab saidi malli
 

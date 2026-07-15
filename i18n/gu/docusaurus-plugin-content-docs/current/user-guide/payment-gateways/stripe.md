@@ -3,7 +3,7 @@ title: Stripe સેટ કરવું
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe ગેટવે સેટઅપ કરવું (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe ગેટવે સેટઅપ કરવું (v2)
 
 _**મહત્વની નોંધ: આ લેખ Ultimate Multisite version 2.x માટે છે.**_
 

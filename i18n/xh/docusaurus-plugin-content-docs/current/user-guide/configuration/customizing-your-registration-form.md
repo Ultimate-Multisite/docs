@@ -3,7 +3,7 @@ title: Ukwenza ngokwezifiso ifomu yakho yobhaliso
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ukwenza iRegistration Form yakho ibe yeyakho {#customizing-your-registration-form}
+# Ukwenza iRegistration Form yakho ibe yeyakho
 
 Ukuze wenze inethiwekhi yakho ibonakale yahlukile kuzo zonke ezinye ii-SaaS ezakhiwe kwiqonga le-WordPress, Ultimate Multisite ikuvumela ukuba wenze amaphepha akho okubhalisa nawokungena abe ngawe usebenzisa uphawu lwethu lwe-**Checkout Forms**.
 

@@ -4,7 +4,7 @@ title: Acțiune - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Acțiune: auth_redirect {#action-authredirect}
+# Acțiune: auth_redirect
 
 Se declanșează înainte de redirecționarea de autentificare.
 

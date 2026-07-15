@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ Mai
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# កំណត់ហេតុផ្លាស់ប្តូរ Mailster {#mailster-changelog}
+# កំណត់ហេតុផ្លាស់ប្តូរ Mailster
 
 ### 1.0.0 {#100}
 * ការចេញផ្សាយដំបូង

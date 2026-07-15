@@ -4,7 +4,7 @@ title: Filter - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
+# Filter: retrieve_password_message
 
 စကားဝှက် ပြန်လည်သတ်မှတ်ခြင်း အီးမေးလ်၏ မက်ဆေ့ခ်ျကိုယ်ထည်ကို စစ်ထုတ်ပေးသည့် (filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။
 

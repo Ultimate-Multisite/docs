@@ -3,7 +3,7 @@ title: Ekspor & Impor
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Ekspor & Impor {#export--import}
+# Ekspor & Impor
 
 Ultimate Multisite 2.9.0 nambahan alat **Ekspor & Impor** satu situs di bawah **Tools > Export & Import**. Gunake éta lamun anjeun peryogi ngemas hiji situs WordPress jadi file ZIP, ngrestore ZIP éta, atawa ngalihkeun situs antara instalasi Ultimate Multisite je single-site WordPress anu kompatibel.
 

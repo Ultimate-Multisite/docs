@@ -3,7 +3,7 @@ title: قابلیت‌های مدیریت افزونه
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# قابلیت‌های مدیریت پلاگین {#plugin-management-abilities}
+# قابلیت‌های مدیریت پلاگین
 
 Gratis AI Agent v1.5.0 با **۷ قابلیت مدیریت پلاگین** عرضه می‌شود که دستیار هوش مصنوعی می‌تواند در طول مکالمه از آن‌ها استفاده کند. این قابلیت‌ها کنترل برنامه‌ریزی شده‌ای بر پلاگین‌های نصب شده از طریق [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) فراهم می‌کنند.
 

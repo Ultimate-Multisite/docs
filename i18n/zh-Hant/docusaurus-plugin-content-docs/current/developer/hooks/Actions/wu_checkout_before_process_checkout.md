@@ -4,7 +4,7 @@ title: 動作 - wu_checkout_before_process_checkout
 sidebar_label: wu_checkout_before_process_checkout
 _i18n_hash: 7d37900d450aaae15aba34a9a2f50ff5
 ---
-# 動作：wu_checkout_before_process_checkout {#action-wucheckoutbeforeprocesscheckout}
+# 動作：wu_checkout_before_process_checkout
 
 在我們開始處理結帳流程之前執行。
 

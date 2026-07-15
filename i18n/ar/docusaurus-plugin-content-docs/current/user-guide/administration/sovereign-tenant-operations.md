@@ -3,7 +3,7 @@ title: عمليات المستأجر السيادي
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# عمليات المستأجر السيادي (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# عمليات المستأجر السيادي (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 تضيف أدوات تشغيلية للمستأجرين السياديين (sovereign tenants): وهي المواقع الفرعية التي تعمل بقاعدة بيانات جذر نظام ملفات خاص بها وسياق توجيه (routing context) مستقل، مع بقائها مرئية من قبل مسؤول الشبكة.
 

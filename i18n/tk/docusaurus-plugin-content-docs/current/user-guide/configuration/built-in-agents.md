@@ -3,7 +3,7 @@ title: Içindäki agentler
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Içinde bar bolan agentler {#built-in-agents}
+# Içinde bar bolan agentler
 
 Gratis AI Agent v1.9.0 bäş sany içinde bar bolan agent bilen gelýär; olaryň hersi belli bir gurallar toplumy, ýöriteleşdirilen system prompt we şol ugurdaky umumy wezipelere laýyk başlangyç teklipler bilen öňünden sazlanan. Agentleriň arasynda geçmek kömekçiniň näme edip bilýändigini we nähili jogap berýändigini üýtgedýär — siziň tarapyňyzdan hiç hili sazlama gerek bolmazdan. Superdav AI Agent v1.18.0 degişli integrasiýalar sazlananda bu iş akymlaryna meýilnama bilen baglanyşykly gurallary, ýatlatma ýazgylaryny, tassyklama derwezelerini we SMS habarnamalaryny goşup biler.
 

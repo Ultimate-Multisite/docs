@@ -4,7 +4,7 @@ title: Szűrő - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Szűrő: wu_plan_product_types {#filter-wuplanproducttypes}
+# Szűrő: wu_plan_product_types
 
 Ez a szűrő meghatározza azokat a termék típusokat, amelyeket tervként kell kezelni.
 

@@ -4,7 +4,7 @@ title: Omume - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Ụfọdụ plugin ga-echekwa URL tupu mapping arụ ọrụ ma ọ bụ wuo URLs n'ụzọ dị iche nke adịghị n'ime filters dị n'elu.
 

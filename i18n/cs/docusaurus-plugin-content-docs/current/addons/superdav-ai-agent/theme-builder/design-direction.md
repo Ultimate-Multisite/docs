@@ -3,7 +3,7 @@ title: Směr návrhu
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Směr designu {#design-direction}
+# Směr designu
 
 Krok **Směr designu** vám umožňuje zkontrolovat, vylepšit a dokončit vizuální design vašeho tématu, než Theme Builder vygeneruje celé téma.
 

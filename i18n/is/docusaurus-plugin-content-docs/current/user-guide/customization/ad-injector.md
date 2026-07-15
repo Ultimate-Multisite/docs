@@ -3,7 +3,7 @@ title: Ad Injektor
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Setir annons á netverk þinn með Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Setir annons á netverk þinn með Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector er **frétt viðbót** sem gefur þér hlutverk til að setja annons á planunum þínum jafnvel frá endurskráningu þeirra.
 

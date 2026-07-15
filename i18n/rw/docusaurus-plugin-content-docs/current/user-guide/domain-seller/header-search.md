@@ -3,7 +3,7 @@ title: Gushakisha Indangarubuga mu Mutwe
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Gushaka Domain mu Mutwe w'Urupapuro {#header-domain-search}
+# Gushaka Domain mu Mutwe w'Urupapuro
 
 Koresha iyi setup igihe ushaka form nto yo mu mutwe w'urupapuro itangiza gushaka domain, hanyuma ikareka umukiriya guhitamo muri domain ziboneka imbere muri checkout ya Ultimate Multisite.
 

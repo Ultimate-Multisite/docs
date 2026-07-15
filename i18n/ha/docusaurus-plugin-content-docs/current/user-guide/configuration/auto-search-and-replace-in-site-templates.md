@@ -3,7 +3,7 @@ title: Bincike da Sauya a Wurin Shagwar Wurin Gida
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace a cikin Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace a cikin Site Templates (v2)
 
 _**Wannan tutorial yana buƙatar amfani da WP UItimo versiyon 2.x.**_
 

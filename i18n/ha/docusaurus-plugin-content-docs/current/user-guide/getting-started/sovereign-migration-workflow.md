@@ -3,7 +3,7 @@ title: Tsarin Tafiya na Mulki
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# کارکرد ديال انتقال حكومت (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# کارکرد ديال انتقال حكومت (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 اضافة بوابات تحقق للانتقال باش تنقل موقع فرعي عادي إلى بنية مستأجر سيادي (sovereign tenant infrastructure).
 

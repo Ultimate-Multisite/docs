@@ -3,7 +3,7 @@ title: 'Darasi na 10: Ranar ƙaddamarwa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Darasi na 10: Ranar Kaddamarwa {#lesson-10-launch-day}
+# Darasi na 10: Ranar Kaddamarwa
 
 An gina komai. Kafin ka buɗe ƙofofi, wannan darasi zai bi ta jerin abubuwan dubawa kafin kaddamarwa don tabbatar da cewa babu abin da ya lalace, ya ɓace, ko zai jawo kunya.
 

@@ -3,7 +3,7 @@ title: '12. nodarbība: Uzņēmuma vadīšana'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Nodarbība 12: Uzņēmuma vadīšana {#lesson-12-running-the-business}
+# Nodarbība 12: Uzņēmuma vadīšana
 
 Platforma nav projekts, ko pabeidz -- tas ir uzņēmums, ko vadi. Šī nodarbība aptver FitSite pārvaldības ikdienas darbības: atbalstu, norēķinus, uzturēšanu un klientu apmierinātības uzturēšanu.
 

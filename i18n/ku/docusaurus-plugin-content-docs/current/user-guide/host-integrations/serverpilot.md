@@ -3,7 +3,7 @@ title: Integrasiی ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integration-a ServerPilot {#serverpilot-integration}
+# Integration-a ServerPilot
 
 ## گشتی (Overview) {#overview}
 ServerPilot بری WordPress و دیترال اوشن، آمازون، گوگل یان هەر سێرڤەر پرافایدریاسەکاندا PHP وێنە دابنێتی. ئەم integrationەکە ڕێنوێنیی ئۆتۆماتیکی دامێنی و بەڕێوەبردنی گوازمەی SSL لە نێوان Ultimate Multisite و ServerPilot دەدات.

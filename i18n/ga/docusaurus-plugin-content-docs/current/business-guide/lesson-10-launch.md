@@ -3,7 +3,7 @@ title: 'Ceacht 10: Lá an tSeolta'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ceacht 10: Lá an tSeolta {#lesson-10-launch-day}
+# Ceacht 10: Lá an tSeolta
 
 Tá gach rud tógtha. Sula n-osclaíonn tú na doirse, téann an ceacht seo tríd an seicliosta réamhsheolta chun a chinntiú nach bhfuil aon rud briste, in easnamh, ná náireach.
 

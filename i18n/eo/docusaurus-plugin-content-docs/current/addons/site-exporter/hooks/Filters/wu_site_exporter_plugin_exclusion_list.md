@@ -4,7 +4,7 @@ title: Filtro - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filtrilo: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Filtrilo: wu_site_exporter_plugin_exclusion_list
 
 Permesas al programistoj administri kromprograman liston kiu eble estu ekskludita el la generita zip.
 

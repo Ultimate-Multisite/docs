@@ -3,7 +3,7 @@ title: I-validate ang Kontraste ng Paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Pag-validate ng Contrast ng Kulay (Validate Palette Contrast) {#validate-palette-contrast}
+# Pag-validate ng Contrast ng Kulay (Validate Palette Contrast)
 
 Ang kakayahan na **Validate Palette Contrast** ay sumusuri sa mga pares ng kulay sa iyong design palette para sa pagsunod sa WCAG (Web Content Accessibility Guidelines) bago ito ilapat sa iyong theme.
 

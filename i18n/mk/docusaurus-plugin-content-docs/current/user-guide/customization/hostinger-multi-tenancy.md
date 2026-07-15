@@ -3,7 +3,7 @@ title: Хостинг со многу најводители
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 додаваат капацитетот за многонајдење (multi-tenancy) на Hostinger, па хостираните домени можат да учествуваат во провизијата на суверени тененти заедно со постоечката интеграција за мапирање на domeni од Hostinger.
 

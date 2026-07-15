@@ -3,7 +3,7 @@ title: Multi-Network Changelog
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Talaan ng Pagbabago ng Multi-Network {#multi-network-changelog}
+# Talaan ng Pagbabago ng Multi-Network
 
 ### 1.3.0 {#130}
 * New: Network template previewer — makapag-browse at makapag-preview ng network templates sa isang live panel bago bumili.

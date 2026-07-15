@@ -3,7 +3,7 @@ title: Integracja z ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integracja z ServerPilot {#serverpilot-integration}
+# Integracja z ServerPilot
 
 ## Przegląd {#overview}
 ServerPilot to usługa w chmurze do hostowania stron WordPress i innych witryn PHP na serwerach DigitalOcean, Amazon, Google lub dowolnego innego dostawcy. Ta integracja umożliwia automatyczną synchronizację domen i zarządzanie certyfikatami SSL między Ultimate Multisite a ServerPilot.

@@ -3,7 +3,7 @@ title: Qo‘shimcha ishlab chiqishni boshlash
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Qo‘shimcha ishlab chiqish {#addon-development}
+# Qo‘shimcha ishlab chiqish
 
 ## Qo‘shimcha tuzilmasi {#addon-structure}
 

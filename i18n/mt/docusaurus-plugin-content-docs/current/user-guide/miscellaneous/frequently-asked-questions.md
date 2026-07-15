@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Aspititajiet Frequenti (FAQ) {#frequently-asked-questions}
+# Aspititajiet Frequenti (FAQ)
 
 Hawn humi xi qediem **Aspititajiet Frequenti** li spiddu ħafna fl-istechjin ta support.
 

@@ -3,9 +3,9 @@ title: Cithakan Tambahan
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Cithakan Tambahan {#addon-template}
+# Cithakan Tambahan
 
-{{ADDON_DESCRIPTION}}
+Cithakan Tambahan — Ultimate Multisite.
 
 ## Syarat {#requirements}
 

@@ -3,7 +3,7 @@ title: Krav
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Systemkrav för Ultimate Multisite {#ultimate-multisite-requirements}
+# Systemkrav för Ultimate Multisite
 
 Det första du kanske frågar dig innan du köper Ultimate Multisite är vilka krav som finns för att köra vårt plugin. Som tur är finns det bara några få grundläggande krav för att köra Ultimate Multisite: ett **domännamn**, en bra **webbhotellsleverantör** och en WordPress **Multisite**-installation. Det är allt du behöver!
 

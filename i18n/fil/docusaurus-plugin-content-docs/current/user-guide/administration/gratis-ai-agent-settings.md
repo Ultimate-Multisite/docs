@@ -3,7 +3,7 @@ title: Mga Setting ng Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Mga Setting ng Gratis AI Agent {#gratis-ai-agent-settings}
+# Mga Setting ng Gratis AI Agent
 
 Ang screen na **Settings → Advanced** sa Gratis AI Agent ay nagbibigay ng pang-administrator na configuration para sa mga backend integration. Idinodokumento ng pahinang ito ang pagpapasa ng feedback, mga key ng search provider, setup ng pinamamahalaang Superdav service, mga kontrol ng Google Calendar, mga setting ng TextBee SMS, at mga feature flag sa buong network.
 

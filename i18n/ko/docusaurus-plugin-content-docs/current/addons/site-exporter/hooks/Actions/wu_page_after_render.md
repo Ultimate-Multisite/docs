@@ -4,7 +4,7 @@ title: 액션 - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# 액션: wu_page_after_render {#action-wupageafterrender}
+# 액션: wu_page_after_render
 
 페이지가 렌더링된 후에 실행됩니다.
 

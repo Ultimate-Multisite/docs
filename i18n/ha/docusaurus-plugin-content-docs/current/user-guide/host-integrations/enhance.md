@@ -3,7 +3,7 @@ title: Ƙara haɗin wajen Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# باشقايان ديال تكامل لوحة التحكم {#enhance-control-panel-integration}
+# باشقايان ديال تكامل لوحة التحكم
 
 ## نظرة عامة {#overview}
 Enhance هي لوحة تحكم حديثة كتوفر إمكانيات قوية لأتمتة وإدارة الاستضافة. هاد التكامل كيسمح بالمزامنة التلقائية للنطاقات (domains) وإدارة شهادات SSL بين Ultimate Multisite و Enhance Control Panel.
@@ -90,7 +90,7 @@ https://your-enhance-panel.com/api/
 
 ثابت‌های زیر را در فایل `wp-config.php` خود اضافه کنید:
 
-# شمول دادن با پنل کنترلی (Enhance Control Panel Integration) {#setup-via-integration-wizard}
+# شمول دادن با پنل کنترلی (Enhance Control Panel Integration)
 
 ```php
 // افزایش یکپارچگی پنل کنترل

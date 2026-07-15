@@ -4,7 +4,7 @@ title: ფილტრი - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# ფილტრი: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# ფილტრი: wu_bypass_unset_current_user
 
 დეველოპერებს საშუალებას აძლევს, გვერდი აუარონ მიმდინარე მომხმარებლის unset კოდს.
 

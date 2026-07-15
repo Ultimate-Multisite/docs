@@ -3,7 +3,7 @@ title: Journal des modifications de l’intégration WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Journal des modifications de l’intégration WooCommerce {#woocommerce-integration-changelog}
+# Journal des modifications de l’intégration WooCommerce
 
 Version 2.2.0 - Publiée le 2026-07-01
 * Nouveau : les montants de taxes Ultimate Multisite apparaissent désormais comme des lignes de frais WooCommerce séparées lors du checkout, ce qui rend les totaux de taxes plus clairs avant le paiement.

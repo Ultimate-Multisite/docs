@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c2622b55e1ff656ba579f3ee25646584
 ---
-# Action: wu_page_\{$this->id\}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_\{$this->id\}_before_render
 
 একটি নির্দিষ্ট পেজ রেন্ডার করার আগে এটি কার্যকর হয়।
 

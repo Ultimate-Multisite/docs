@@ -3,7 +3,7 @@ title: یەکگرتووکردنی WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrationê bi WP Engine {#wp-engine-integration}
+# Integrationê bi WP Engine
 
 ## Pêşkerinî (Overview) {#overview}
 WP Engine platforma yon sèvis hosting WordPress ki gen kalite pwofi, sekirite, ak kapasite pou grandi pou sit WordPress ou. Entegrasyon sa a pèmèt sincronizasyon otomatik nan domèn yo ant Ultimate Multisite ak WP Engine.

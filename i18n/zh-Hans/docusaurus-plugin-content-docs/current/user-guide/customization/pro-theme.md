@@ -3,7 +3,7 @@ title: PRO 主题
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# 使用 PRO Theme 自定义你的管理面板 {#customizing-your-admin-panel-with-pro-theme}
+# 使用 PRO Theme 自定义你的管理面板
 
 在为客户工作时，我们经常需要在 WordPress 的管理 Dashboard 中为客户提供自定义体验。如果你正在寻找更专业的外观与体验，PRO Theme 可能会帮到你。
 

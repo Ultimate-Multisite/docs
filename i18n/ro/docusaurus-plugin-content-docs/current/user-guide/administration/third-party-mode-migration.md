@@ -3,7 +3,7 @@ title: Migrare în Modul Terță Parte
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrarea în Modul de Terță Parte {#third-party-mode-migration}
+# Migrarea în Modul de Terță Parte
 
 Superdav AI Agent v1.12.0 modifică modul în care sunt gestionate abilitățile de terță parte. **Modul de Terță Parte (Third-party mode) folosește acum implicit setarea "auto"**, permițând integrarea nativă cu Abilities API în WordPress pe versiunile 7.0+ fără configurare manuală.
 

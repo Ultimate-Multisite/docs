@@ -4,7 +4,7 @@ title: Ação - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Ação: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# Ação: wu_mcp_abilities_registered
 
 Dispara depois de as capacidades MCP serem registadas para uma entidade.
 

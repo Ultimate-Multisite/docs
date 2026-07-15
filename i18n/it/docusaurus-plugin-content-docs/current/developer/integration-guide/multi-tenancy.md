@@ -3,7 +3,7 @@ title: Integrazione multi-tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrazione Multi-Tenancy {#multi-tenancy-integration}
+# Integrazione Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 modifica diversi punti di integrazione per tenant sovrani, verifica della migrazione e automazione del ciclo di vita dei tenant.
 

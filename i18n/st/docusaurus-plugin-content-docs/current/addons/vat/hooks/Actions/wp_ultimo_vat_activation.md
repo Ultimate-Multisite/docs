@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Ketso: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Ketso: wp_ultimo_vat_activation
 
 Dumella dikarolo tse ding tsa plugin ho hokela ditsamaiso tsa tsona bakeng sa activation
 

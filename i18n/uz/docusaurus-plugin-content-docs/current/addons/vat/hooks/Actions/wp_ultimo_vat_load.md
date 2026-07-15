@@ -4,7 +4,7 @@ title: Amal - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Amal: wp_ultimo_vat_load {#action-wpultimovatload}
+# Amal: wp_ultimo_vat_load
 
 Barcha bog‘liqliklar yuklanganda ishga tushadi
 

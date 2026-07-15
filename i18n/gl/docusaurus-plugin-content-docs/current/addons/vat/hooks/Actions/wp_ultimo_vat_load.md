@@ -4,7 +4,7 @@ title: Acción - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Acción: wp_ultimo_vat_load {#action-wpultimovatload}
+# Acción: wp_ultimo_vat_load
 
 Actívase cando se cargaron todas as dependencias
 

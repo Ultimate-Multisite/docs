@@ -3,7 +3,7 @@ title: 'Ders 8: Müşteri Başlangıç Süreci'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Ders 8: Müşteri Oryantasyonu {#lesson-8-customer-onboarding}
+# Ders 8: Müşteri Oryantasyonu
 
 Bir müşteriyi kaydolmaya ikna etmek işin sadece yarısıdır. Eğer giriş yaparsa, bunalmış hisseder ve bir daha geri gelmezse, onu kaybetmişsiniz demektir. Bu ders, yeni bir kaydı aktif ve ilgili bir müşteriye dönüştüren deneyimi tasarlıyor.
 

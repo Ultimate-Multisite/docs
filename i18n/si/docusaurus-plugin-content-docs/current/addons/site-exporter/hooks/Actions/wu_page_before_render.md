@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# ක්‍රියාව: wu_page_before_render {#action-wupagebeforerender}
+# ක්‍රියාව: wu_page_before_render
 
 පිටුවක් render කිරීමට පෙර ක්‍රියාත්මක වේ.
 

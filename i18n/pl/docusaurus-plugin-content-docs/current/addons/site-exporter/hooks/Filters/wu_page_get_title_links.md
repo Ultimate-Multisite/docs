@@ -4,7 +4,7 @@ title: Filtry - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filtr: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filtr: wu_page_get_title_links
 
 Pozwala deweloperom pluginów, a także nam, dodawać linki akcji na nasze strony edycji.
 

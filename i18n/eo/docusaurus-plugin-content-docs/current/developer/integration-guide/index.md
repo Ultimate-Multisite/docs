@@ -3,7 +3,7 @@ title: Gvidilo pri Integriĝo
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gvidilo pri Integrado {#integration-guide}
+# Gvidilo pri Integrado
 
 Ĉi tiu gvidilo kovras oftajn integriĝajn ŝablonojn kun Ultimate Multisite, inkluzive de konektiĝo al eksteraj servoj, konstruado de propraj pagaj gateways, kaj traktado de webhooks.
 

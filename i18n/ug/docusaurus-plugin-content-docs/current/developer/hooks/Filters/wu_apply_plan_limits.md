@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# سۈزگۈچ: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+# سۈزگۈچ: wu_apply_plan_limits
 
 قىستۇرما ئىجادكارلىرىغا چەكلىمىلەرنى قىسقا يول بىلەن ئايلىنىپ ئۆتۈشكە يول قويىدۇ.
 

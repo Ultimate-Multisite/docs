@@ -4,7 +4,7 @@ title: Шүүлтүүр - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Шүүлтүүр: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Шүүлтүүр: wp_ultimo_skip_network_active_check
 
 Хөгжүүлэгчдэд сүлжээний идэвхжүүлэлтийн шалгалтыг шууд алгасах боломж олгоно.
 

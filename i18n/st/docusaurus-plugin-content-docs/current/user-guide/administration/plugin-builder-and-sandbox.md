@@ -3,7 +3,7 @@ title: Mopolo ea ho hlalosa le ho fana ka tsela e ntlha
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 e le **Plugin Builder & Sandbox System**, seo e le AI assistant e fa, e fa, e fa WordPress plugins mo le network o lo e tatau — se fa mo le auala safe, e fa, e fa sandbox environment.
 

@@ -4,7 +4,7 @@ title: Action - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Action: wu_handle_customer_meta_fields
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳಿಗೆ ಅಗತ್ಯವಿದ್ದರೆ, ಅವರು ಮೆಟಾ ಡೇಟಾವನ್ನು ವಿಭಿನ್ನ ವಿಧಾನಗಳಲ್ಲಿ ಉಳಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

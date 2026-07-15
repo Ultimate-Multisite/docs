@@ -3,7 +3,7 @@ title: 'Sapak 11: Müşderileri tapmak'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Sapak 11: Müşderileri tapmak {#lesson-11-finding-customers}
+# Sapak 11: Müşderileri tapmak
 
 Müşderisiz ajaýyp platforma diňe bir güýmenjedir. Bu sapakda niche vertical içinde müşderileri nädip gazanmalydygy -- bir pudaga ünsüňizi jemläniňiz üçin aýratyn gowy işleýän strategiýalar barada gürrüň berilýär.
 

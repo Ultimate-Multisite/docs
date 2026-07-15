@@ -3,7 +3,7 @@ title: Документация для разработчиков
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Документация для разработчиков {#developer-documentation}
+# Документация для разработчиков
 
 Это руководство предоставляет разработчикам всё необходимое для интеграции с Ultimate Multisite, его расширения или разработки дополнений для него. Ultimate Multisite превращает сеть WordPress Multisite в платформу Website-as-a-Service (WaaS).
 

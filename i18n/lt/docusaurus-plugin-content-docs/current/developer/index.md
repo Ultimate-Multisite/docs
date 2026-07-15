@@ -3,7 +3,7 @@ title: Kūrėjo dokumentacija
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Kūrėjų dokumentacija {#developer-documentation}
+# Kūrėjų dokumentacija
 
 Šis vadovas suteikia kūrėjams viską, ko reikia norint integruotis su Ultimate Multisite, jį išplėsti arba kurti jam priedus. Ultimate Multisite paverčia WordPress Multisite tinklą Website-as-a-Service (WaaS) platforma.
 

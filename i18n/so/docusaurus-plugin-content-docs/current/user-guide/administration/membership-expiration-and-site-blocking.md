@@ -3,7 +3,7 @@ title: Wax-soo-gaalka Xubnaha iyo Ka-duubista Goobta
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Dhammaan Bixinta Xogta iyo Ka-dhacista Website-ka {#membership-expiration-and-site-blocking}
+# Dhammaan Bixinta Xogta iyo Ka-dhacista Website-ka
 
 Tani hagaha wuxuu sharxayaa sida Ultimate Multisite u maamulo dhimaadda bixintii (membership expiration), dhammaadka trial-yada, iyo ka-dhacista website-ka hore (frontend site blocking). Waa in la fahmo nolosha bixinta oo ka bilaabta hawl-qabashada ilaa dhamaadkiisa, dejimaha xakameeya in ma aha website-yada la ka hor istaagayo, iyo waxa la eego marka website-yadu weli la heli karo ka dib markii bixinta ay dhammaatay.
 

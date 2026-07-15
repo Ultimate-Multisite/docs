@@ -3,7 +3,7 @@ title: Hooks-ийн лавлагаа
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook-уудын лавлах {#hooks-reference}
+# Hook-уудын лавлах
 
 Ultimate Multisite дахь бүх **59 үйлдэл** болон **118 шүүлтүүр**-ийн автоматаар үүсгэсэн баримтжуулалт.
 

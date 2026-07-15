@@ -3,7 +3,7 @@ title: Trang Account của khách hàng
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Trang Account của khách hàng của bạn (v2) {#your-clients-account-page-v2}
+# Trang Account của khách hàng của bạn (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

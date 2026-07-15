@@ -3,7 +3,7 @@ title: 'Összefoglaló 12: Az üzlet működtetése'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 12. Tanulmány: Az Üzlet Vitekítése {#lesson-12-running-the-business}
+# 12. Tanulmány: Az Üzlet Vitekítése
 
 Egy platform nem egy projekt, amit befejezel – hanem egy üzlet, amit működtetnek. Ez a tanulmány a FitSite mindennapi működését fogja lefedni: a támogatás, a számlázás, a karbantartás és a vásárlók elégedettségének fenntartása.
 

@@ -3,7 +3,7 @@ title: Ujumuishaji wa WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Uunganisho wa WPMU DEV {#wpmu-dev-integration}
+# Uunganisho wa WPMU DEV
 
 ## Muhtasari {#overview}
 WPMU DEV ni jukwaa kamili la WordPress linalotoa huduma za hosting, plugins, na huduma nyingine za tovuti za WordPress. Uunganisho huu unawezesha usawazishaji wa kikoa kiotomatiki na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na hosting ya WPMU DEV.

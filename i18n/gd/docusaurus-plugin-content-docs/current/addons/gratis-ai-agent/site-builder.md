@@ -3,7 +3,7 @@ title: Orcastradh Neach-togail Làraich v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orcastradh Togail Làraich v2 {#site-builder-orchestration-v2}
+# Orcastradh Togail Làraich v2
 
 Is e Orcastradh Togail Làraich v2 (a chaidh a thoirt a-steach ann an Gratis AI Agent v1.4.0) an einnsean a tha a’ cumhachdachadh cruthachadh làraichean-lìn ioma-cheumach. Nuair a dh’iarras tu air an agent “làrach-lìn taigh-bìdh a thogail” no “portfolio le blog a chruthachadh”, brisidh an t-orcastraiche an t-amas àrd-ìre sin sìos gu **plana** structaraichte, lorgaidh e na plugins a tha a dhìth gus a choileanadh, cuiridh e gach ceum an gnìomh ann an òrdugh, cumaidh e sùil air adhartas, agus gheibh e seachad air mearachdan gu fèin-obrachail.
 

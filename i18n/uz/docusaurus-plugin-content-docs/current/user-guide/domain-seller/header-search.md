@@ -3,7 +3,7 @@ title: Sarlavha domen qidiruvi
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header domen qidiruvi {#header-domain-search}
+# Header domen qidiruvi
 
 Ultimate Multisite checkout ichida mijoz mavjud domenlardan tanlashi uchun avval domen qidiruvini boshlaydigan kichik header form kerak bo‘lganda ushbu sozlamadan foydalaning.
 

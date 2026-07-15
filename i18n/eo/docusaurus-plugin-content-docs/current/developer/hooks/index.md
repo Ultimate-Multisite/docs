@@ -3,7 +3,7 @@ title: Referenco pri Hokoj
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenco pri hokoj {#hooks-reference}
+# Referenco pri hokoj
 
 Aŭtomate generita dokumentaro por ĉiuj **59 agoj** kaj **118 filtriloj** en Ultimate Multisite.
 

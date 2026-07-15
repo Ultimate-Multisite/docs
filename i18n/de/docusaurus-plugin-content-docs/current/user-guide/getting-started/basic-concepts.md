@@ -3,7 +3,7 @@ title: Grundlagen
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Grundlegende Konzepte {#basic-concepts}
+# Grundlegende Konzepte
 
 Für einen neuen WordPress Multisite-Benutzer und jemanden, der gerade mit Ultimate Multisite angefangen hat, kann es anfangs viele neue Wörter und Begriffe geben, die man aufnehmen muss. Sie zu lernen ist eine wichtige Aufgabe, weil Sie die Plattform und ihre Funktionsweise als Ganzes verstehen müssen.
 

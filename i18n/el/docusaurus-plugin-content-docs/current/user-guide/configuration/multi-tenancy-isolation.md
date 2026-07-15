@@ -3,7 +3,7 @@ title: Απομόνωση Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Απομόνωση σε Πολυ-Ενοικίαση (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Απομόνωση σε Πολυ-Ενοικίαση (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 υποστηρίζει απομόνωση βάσης δεδομένων και συστήματος αρχείων ανά subdomain για κυρίαρχους ενοικιαστές (tenants). Αυτό διατηρεί τα δεδομένα του ενοικιαστή ξεχωριστά, ενώ διατηρεί την παροχή δικτύου, τη στοίβαξη λογαριασμών (billing) και την διαχείριση.
 

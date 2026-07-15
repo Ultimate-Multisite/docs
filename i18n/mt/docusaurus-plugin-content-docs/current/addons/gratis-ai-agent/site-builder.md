@@ -3,7 +3,7 @@ title: Orkestrazzjoni tal-Bennej tas-Sit v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrazzjoni tal-Bennej tas-Sit v2 {#site-builder-orchestration-v2}
+# Orkestrazzjoni tal-Bennej tas-Sit v2
 
 Site Builder Orchestration v2 (introdotta f'Gratis AI Agent v1.4.0) hija l-magna li tħaddem il-ħolqien ta' websajts f'diversi passi. Meta titlob lill-agent biex "jibni websajt ta' restorant" jew "joħloq portfolio b'blog", l-orkestratur jaqsam dak l-għan ta' livell għoli fi **pjan** strutturat, jiskopri l-plugins meħtieġa biex iwettqu, jeżegwixxi kull pass f'sekwenza, isegwi l-progress, u jirkupra minn żbalji b'mod awtonomu.
 

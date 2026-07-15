@@ -3,7 +3,7 @@ title: Mga Bagay na Kaalaman ni Chuck Norris Changelog
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Talaan ng Pagbabago ng Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Talaan ng Pagbabago ng Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Nagdagdag: Kakayahang mag-update nang awtomatiko sa pamamagitan ng Ultimate Multisite update server

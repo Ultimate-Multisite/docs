@@ -3,7 +3,7 @@ title: Txhua qhov kev tso cai
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms णू customer mới thử nghiệm các cách khác nhau khi muốn chuyển đổi khách hàng mới một cách dễ dàng và linh hoạt.
 

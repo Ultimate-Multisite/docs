@@ -4,7 +4,7 @@ title: Фільтр - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Фільтр: wu_current_set_site {#filter-wucurrentsetsite}
+# Фільтр: wu_current_set_site
 
 Дозволяє розробникам змінити стандартну поведінку та встановити поточний сайт вручну.
 

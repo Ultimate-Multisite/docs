@@ -4,7 +4,7 @@ title: فلتر - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 يتحقق مما إذا كان نوع منشور معين مسموحًا به في هذه الخطة. يتيح مطورو الإضافات تصفية قيمة الإرجاع
 

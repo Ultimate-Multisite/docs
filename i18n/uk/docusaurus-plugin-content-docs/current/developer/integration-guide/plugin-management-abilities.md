@@ -3,7 +3,7 @@ title: Здібності керування плагінами
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Можливості керування плагінами {#plugin-management-abilities}
+# Можливості керування плагінами
 
 Gratis AI Agent v1.5.0 має **7 можливостей керування плагінами**, які AI-асистент може викликати під час розмови. Ці можливості забезпечують програмний контроль над плагінами WordPress, встановленими через [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

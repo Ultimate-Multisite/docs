@@ -3,7 +3,7 @@ title: Təkmil Kod Nümunələri
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# İrəli Kod Nümunələri {#advanced-code-examples}
+# İrəli Kod Nümunələri
 
 Bu nümunələr Ultimate Multisite ilə irəli inteqrasiya modellərini göstərir.
 

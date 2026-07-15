@@ -3,7 +3,7 @@ title: Müştəri Saytları
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Müştərinizin Saytları (v2) {#your-clients-websites-v2}
+# Müştərinizin Saytları (v2)
 
 Şəbəkənizdə qeydiyyatdan keçdikdən sonra müştəriləriniz öz dashboardlarına daxil ola biləcəklər.
 

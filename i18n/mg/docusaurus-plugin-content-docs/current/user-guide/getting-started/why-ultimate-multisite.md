@@ -3,7 +3,7 @@ title: Nahoana ny Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Nahoana ny Ultimate Multisite {#why-ultimate-multisite}
+# Nahoana ny Ultimate Multisite
 
 Raha tonga amin'ity lahatsoratra ity ianao, dia mety nandre fa azo inoana fa vahaolana ho an'ny fanatanterahana hevitry ny fandraharahanao no ilay plugin nataontsika. Manantena izahay fa hahita ny valiny ilainareo amin'ny faran'ity lahatsoratra ity ianao.
 

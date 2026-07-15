@@ -3,7 +3,7 @@ title: ਥੀਮ ਬਿਲਡਰ ਸਮਰੱਥਾਵਾਂ
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder ਦੀਆਂ ਸਮਰੱਥਾਵਾਂ: Scaffold ਅਤੇ Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder ਦੀਆਂ ਸਮਰੱਥਾਵਾਂ: Scaffold ਅਤੇ Activate Block Themes
 
 Superdav AI Agent v1.12.0 ਦੋ ਸ਼ਕਤੀਸ਼ਾਲੀ ਸਮਰੱਥਾਵਾਂ ਪੇਸ਼ ਕਰਦਾ ਹੈ ਜੋ ਤੁਹਾਨੂੰ ਚੈਟ ਇੰਟਰਫੇਸ ਤੋਂ ਸਿੱਧੇ ਕਸਟਮ ਬਲਾਕ تھیਮ ਬਣਾਉਣ ਅਤੇ ਲਾਗੂ ਕਰਨ (deploy) ਦੀ ਆਗਿਆ ਦਿੰਦੀਆਂ ਹਨ।
 

@@ -3,7 +3,7 @@ title: دليل التكامل
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# دليل التكامل {#integration-guide}
+# دليل التكامل
 
 يغطي هذا الدليل أنماط التكامل الشائعة مع Ultimate Multisite، بما في ذلك الاتصال بخدمات خارجية، وبناء بوابات دفع مخصصة، والتعامل مع webhooks.
 

@@ -4,7 +4,7 @@ title: Filter - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 Permitir a los administradores ocultar las páginas del menú de administración, si han terminado el proceso de personalización.
 

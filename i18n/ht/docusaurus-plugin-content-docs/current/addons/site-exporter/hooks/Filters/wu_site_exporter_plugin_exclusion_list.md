@@ -4,7 +4,7 @@ title: Filt - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filtè: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Filtè: wu_site_exporter_plugin_exclusion_list
 
 Pèmèt devlopè yo jere yon lis ekstansyon ki ka eskli nan zip ki jenere a.
 

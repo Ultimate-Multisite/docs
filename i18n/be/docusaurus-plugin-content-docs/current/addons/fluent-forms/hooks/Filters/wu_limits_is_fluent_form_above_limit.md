@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Фільтр: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Фільтр: wu_limits_is_fluent_form_above_limit
 
 Паطلعяе, ці дазваляецца ўказаны тып формы на гэтым плане. Дазваляе раробнікам плагінаў фільтраваць павернутую каштоўнасць.
 

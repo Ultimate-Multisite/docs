@@ -4,7 +4,7 @@ title: 動作 - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network {#action-updatenetwork}
+# Action: update_network
 
 當現有的網路已更新後觸發。
 

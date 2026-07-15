@@ -3,7 +3,7 @@ title: Integrazzjoni WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrà WP Engine {#wp-engine-integration}
+# Integrà WP Engine
 
 ## Panoramika {#overview}
 WP Engine huwa piattaforma di hosting WordPress gestita premium li fornisce prestazzjoni ottimizzati, sigurtà u scalabilità għall-sites ta WordPress. Dan l-integrà tismella s-sinc (sync) tal-domain automatic between Ultimate Multisite u WP Engine.

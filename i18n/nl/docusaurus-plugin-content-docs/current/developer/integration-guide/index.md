@@ -3,7 +3,7 @@ title: Integratiegids
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratiegids {#integration-guide}
+# Integratiegids
 
 Deze gids behandelt veelvoorkomende integratiepatronen met Ultimate Multisite, waaronder het verbinden met externe diensten, het bouwen van aangepaste payment gateways en het afhandelen van webhooks.
 

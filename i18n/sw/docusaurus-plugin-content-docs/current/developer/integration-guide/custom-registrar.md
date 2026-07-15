@@ -3,7 +3,7 @@ title: Kuunda Uunganisho wa Usajili Maalum
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kuunda Uunganishaji wa Usajili Maalum {#building-a-custom-registrar-integration}
+# Kuunda Uunganishaji wa Usajili Maalum
 
 Addon ya Domain Seller inatumia mfumo wa **Integration Registry**. Kila registrar ni class ya PHP ambayo inatekeleza `Domain_Selling_Capability` na kujisajili kupitia action hook ya `wu_domain_seller_register_capabilities`.
 

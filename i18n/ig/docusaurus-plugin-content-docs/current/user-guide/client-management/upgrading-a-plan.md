@@ -3,7 +3,7 @@ title: Nche Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ndemu Plan (v2) {#upgrading-a-plan-v2}
+# Ndemu Plan (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

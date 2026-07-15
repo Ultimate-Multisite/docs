@@ -3,7 +3,7 @@ title: Vytváření vlastní integrace s registrarovým systémem
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Vytváření vlastní integrace pro registrátory {#building-a-custom-registrar-integration}
+# Vytváření vlastní integrace pro registrátory
 
 Addon Domain Seller používá vzor **Integration Registry**. Každý registrátor je třída PHP, která implementuje `Domain_Selling_Capability` a registruje se pomocí akčního hooku `wu_domain_seller_register_capabilities`.
 

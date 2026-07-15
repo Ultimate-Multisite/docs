@@ -4,7 +4,7 @@ title: Aiki - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Aiki: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Aiki: inpsyde.search_and_replace.error
 
 Yana yin watsi da wannan hook; WP Ultimo bai yi rajistarsa ba.
 

@@ -3,7 +3,7 @@ title: Ntụziaka Nhazi
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Ntuziaka Nhazi {#design-direction}
+# Ntuziaka Nhazi
 
 Nzọụkwụ **Ntuziaka Nhazi** na-enye gị ohere inyocha, meziwanye, ma mechaa nhazi anya nke theme gị tupu Theme Builder emepụta theme zuru ezu.
 

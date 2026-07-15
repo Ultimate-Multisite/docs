@@ -3,7 +3,7 @@ title: Produkty domenowe i ceny
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produkty domenowe i ceny {#domain-products-and-pricing}
+# Produkty domenowe i ceny
 
 Produkty domenowe pozwalają kontrolować ceny, TLD-e, prywatność WHOIS oraz wybór dostawcy. Każdy produkt domenowy to standardowy produkt Multisite Ultimate z dodatkową zakładką **Domain Settings**.
 

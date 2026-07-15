@@ -3,7 +3,7 @@ title: 如何安装 WordPress 多站点
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# 如何安装 WordPress 多站点？ {#how-do-i-install-wordpress-multisite}
+# 如何安装 WordPress 多站点？
 
 WordPress 多站点允许你在单个安装中拥有一个站点网络。这是一个内置功能，但默认并未启用。
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

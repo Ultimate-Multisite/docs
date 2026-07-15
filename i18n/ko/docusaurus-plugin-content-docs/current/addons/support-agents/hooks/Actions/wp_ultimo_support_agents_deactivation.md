@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# 액션: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# 액션: wp_ultimo_support_agents_deactivation
 
 플러그인의 다른 부분이 비활성화 루틴을 연결하도록 허용합니다.
 

@@ -4,7 +4,7 @@ title: Tātari - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Tātari: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Tātari: wu_page_get_title_links
 
 Tukua ngā kaiwhakawhanake monomai, me mātou anō, ki te tāpiri hononga mahi ki ā mātou whārangi whakatika.
 

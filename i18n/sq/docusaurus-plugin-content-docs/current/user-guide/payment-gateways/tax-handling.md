@@ -3,7 +3,7 @@ title: Trajtimi i taksave
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Trajtimi i taksave {#tax-handling}
+# Trajtimi i taksave
 
 Ultimate Multisite ka një modul për mbledhjen e taksave të integruar në plugin-in tonë kryesor, kështu që nëse ju duhet të mblidhni taksa shitjeje për planet, paketat dhe shërbimet tuaja, mund ta bëni lehtësisht pa pasur nevojë të instaloni add-ons.
 

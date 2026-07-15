@@ -3,7 +3,7 @@ title: Kako otkazati pretplatu
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kako mogu otkazati pretplatu? {#how-can-i-cancel-my-subscription}
+# Kako mogu otkazati pretplatu?
 
 Ako imate Ultimate Multisite licencu, možete otkazati obnavljanje bilo kada želite. Samo pratite ove korake:
 

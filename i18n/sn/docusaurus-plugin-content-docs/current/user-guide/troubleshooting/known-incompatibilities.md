@@ -3,7 +3,7 @@ title: Zvinogona kuva nekudzera
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Zvinovhu zvakasiitika nePlugin chinotevera {#known-incompatibilities-with-other-plugins}
+# Zvinovhu zvakasiitika nePlugin chinotevera
 
 Panguva unenge uchivhara uye utaichirudzirwa (install) nekutevera Ultimate Multisite, unogona kuona matambudziko kubva paunenge uine zvinotevera (incompatibilities) nezvinhasi (plugins) zvakasiitika.
 

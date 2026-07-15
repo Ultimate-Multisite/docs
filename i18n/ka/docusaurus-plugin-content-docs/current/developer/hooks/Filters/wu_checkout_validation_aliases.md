@@ -4,7 +4,7 @@ title: ფილტრი - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# ფილტრი: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# ფილტრი: wu_checkout_validation_aliases
 
 საშუალებას აძლევს პლაგინის დეველოპერებს, დაამატონ მორგებული ფსევდონიმები ფორმის ვალიდატორში.
 

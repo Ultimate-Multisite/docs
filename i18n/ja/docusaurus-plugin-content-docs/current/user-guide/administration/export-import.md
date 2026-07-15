@@ -3,7 +3,7 @@ title: エクスポート＆インポート
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# エクスポートとインポート {#export--import}
+# エクスポートとインポート
 
 Ultimate Multisite 2.9.0では、**ツール > エクスポートとインポート** の場所に、単一サイト用の**エクスポートとインポート**ツールが追加されました。このツールは、WordPressサイト全体をZIPファイルとしてパッケージ化したり、そのZIPファイルを復元したり、互換性のあるUltimate Multisiteと単一サイトのWordPressインストール間でサイトを移行する必要がある場合に使用します。
 

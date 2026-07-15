@@ -5,7 +5,7 @@ title: |+
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Planaren eskaintzeko (v2) {#upgrading-a-plan-v2}
+# Planaren eskaintzeko (v2)
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite bertsio 2.x-eraari referentzia egiten du.**_
 

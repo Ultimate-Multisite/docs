@@ -3,7 +3,7 @@ title: Capacități de Construcție a Temelor
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacitățile de Construcție a Temelor: Crearea și Activarea Temelor de Bloc {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Capacitățile de Construcție a Temelor: Crearea și Activarea Temelor de Bloc
 
 Superdav AI Agent v1.12.0 introduce două capacități puternice care vă permit să generați și să implementați teme de bloc personalizate direct din interfața de chat.
 

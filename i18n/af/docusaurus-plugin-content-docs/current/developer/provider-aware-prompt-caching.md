@@ -3,7 +3,7 @@ title: Provider-Bewuste Prompte-Kassering
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Verskaffer-Bewus Prompt-Caching {#provider-aware-prompt-caching}
+# Verskaffer-Bewus Prompt-Caching
 
 Superdav AI Agent v1.12.0 stel **verskaffer-bewus prompt-caching** bekend, wat API-koste en latensie optimaliseer deur prompts oor verskillende LLM-verskaffers te cache. Elke verskaffer het verskillende caching-meganismes en -konfigurasies.
 

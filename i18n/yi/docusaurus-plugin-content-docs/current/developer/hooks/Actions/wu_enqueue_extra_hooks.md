@@ -4,7 +4,7 @@ title: האַנדלונג - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# אַקציע: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# אַקציע: wu_enqueue_extra_hooks
 
 דערלויבט פּלוגין־אנטוויקלער צוצולייגן נאָך הוקס
 

@@ -3,7 +3,7 @@ title: Změnový deník pro vytvoření administrace
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Changelog pro Admin Page Creator {#admin-page-creator-changelog}
+# Changelog pro Admin Page Creator
 
 ### Verze 1.9.0 - Vydáno 2026-01-18 {#version-190---released-on-2026-01-18}
 

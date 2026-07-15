@@ -3,7 +3,7 @@ title: Site Exporter மாற்றப் பட்டியல்
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Changelog {#site-exporter-changelog}
+# Site Exporter Changelog
 
 Version: 1.0.6 - Released on 2026-05-11
 * புதியது: Site exports இப்போது ஒரு self-booting index.php-ஐ இணைத்து வழங்குகிறது. இதனால் ZIP கோப்பை தனிப்பட்ட plugin நிறுவல் இல்லாமல் புதிய host-ல் நிறுவ முடியும்.

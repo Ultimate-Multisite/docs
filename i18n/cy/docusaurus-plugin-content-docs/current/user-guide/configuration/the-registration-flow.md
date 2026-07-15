@@ -3,7 +3,7 @@ title: Y Ffylchion Cyflwyniad
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Y Ffylgyrchu (v2) {#the-registration-flow-v2}
+# Y Ffylgyrchu (v2)
 
 _**NOTIADOLIA CRYTÔ: Mae'r ail nghydig hwn yn cyfeiriad i Ultimate Multisite versio 2.x.**_
 

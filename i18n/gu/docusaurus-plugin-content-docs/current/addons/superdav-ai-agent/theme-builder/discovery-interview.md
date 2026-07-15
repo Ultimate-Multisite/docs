@@ -3,7 +3,7 @@ title: શોધ ઇન્ટરવ્યૂ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# શોધ ઇન્ટરવ્યૂ (Discovery Interview) {#discovery-interview}
+# શોધ ઇન્ટરવ્યૂ (Discovery Interview)
 
 **શોધ ઇન્ટરવ્યૂ** એ Theme Builder ની ડિઝાઇન પ્રક્રિયામાં પહેલું પગલું છે. તે તમારા સાઇટ, વ્યવસાય અને ડિઝાઇન પસંદગીઓ વિશે માહિતી એકત્રિત કરે છે જેથી એક વ્યક્તિગત થીમ બનાવી શકાય.
 

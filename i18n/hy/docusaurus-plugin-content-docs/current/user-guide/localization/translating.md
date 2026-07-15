@@ -3,7 +3,7 @@ title: Ultimate Multisite-ը թարգմանում է
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-ի թարգմանություն {#translating-ultimate-multisite}
+# Ultimate Multisite-ի թարգմանություն
 
 Ultimate Multisite-ը ստեղծված է անգլերենով, բայց պլագինը լիովին թարգմանելի է և մենք ակտիվորեն հաճախորդների կողմից ներդրումներ են ընդունում։
 

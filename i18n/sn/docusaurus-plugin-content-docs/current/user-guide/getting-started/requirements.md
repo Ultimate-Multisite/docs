@@ -3,7 +3,7 @@ title: Zvinoremedzo
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Zvinoro Ruzivo re Ultimate Multisite {#ultimate-multisite-requirements}
+# Zvinoro Ruzivo re Ultimate Multisite
 
 Chii chiri chinogona kuunhu pfungwa pfungwa pfungwa pfungwa munenge wako chinokumbira pamba uchigara Ultimate Multisite? Ndatenda, kune zvinhu zvishoma chete zvinoregeredza kuti Ultimate Multisite inenge inenge yakatarwa. Zvinodiwa: **domain name**, **hosting provider** yakagutsa, uye **WordPress Multisite** installation. Iyi ndiyo zako!
 

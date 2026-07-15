@@ -3,7 +3,7 @@ title: Konfigurimi i pagesave manuale
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurimi i pagesave manuale (v2) {#setting-up-manual-payments-v2}
+# Konfigurimi i pagesave manuale (v2)
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 

@@ -3,7 +3,7 @@ title: Ọchụchọ Ngalaba Isi
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Ọchụchọ Ngalaba n'Isi Peeji {#header-domain-search}
+# Ọchụchọ Ngalaba n'Isi Peeji
 
 Jiri nhazi a mgbe ịchọrọ obere fọm n'isi peeji nke na-amalite ọchụchọ ngalaba, wee hapụ onye ahịa ka ọ họrọ n'ime ngalaba ndị dị n'ime ịkwụ ụgwọ Ultimate Multisite.
 

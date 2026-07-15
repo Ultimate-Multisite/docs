@@ -3,7 +3,7 @@ title: Sajili API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint ya API ya usajili ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint ya API ya usajili ya Ultimate Multisite
 
 Katika mafunzo haya, utajifunza jinsi ya kutumia endpoint ya API ya Ultimate Multisite /register kuunda mchakato mzima wa kumkaribisha mteja mpya katika mtandao wako na jinsi ya kufanya hivyo kwa Zapier.
 

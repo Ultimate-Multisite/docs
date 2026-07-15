@@ -3,7 +3,7 @@ title: मल्टीसाइट सेटअप विज़ार्ड
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite सेटअप विज़ार्ड {#multisite-setup-wizard}
+# Multisite सेटअप विज़ार्ड
 
 Ultimate Multisite में एक built-in विज़ार्ड है जो एक standard WordPress installation को अपने आप WordPress Multisite network में बदल देता है। इससे आपको `wp-config.php` को manually edit करने या database commands चलाने की ज़रूरत नहीं पड़ती।
 

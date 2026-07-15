@@ -3,7 +3,7 @@ title: Panduan Integrasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Panduan Integrasi {#integration-guide}
+# Panduan Integrasi
 
 Panduan ini merangkumi corak integrasi biasa dengan Ultimate Multisite, termasuk menyambung kepada perkhidmatan luaran, membina gerbang pembayaran tersuai, dan mengendalikan webhook.
 

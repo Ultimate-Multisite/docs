@@ -3,7 +3,7 @@ title: Informoj de klientaj recenzoj kaj problemo-raportado
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundenfeedback & Problemberichte {#customer-feedback--issue-reporting}
+# Kundenfeedback & Problemberichte
 
 Gratis AI Agent v1.5.0 introduziert en integri sistem für Feedback und Problemberichte, wo Endbenutzer unhilfsvolli antworten markiere und Problem direkt us de Chat-Schnittstell melde chön. Sies system beinhaltet Zuestimmigswirt, en automatisierti Meld-Befehl und AI-unterstützte Sortierig im Backend.
 

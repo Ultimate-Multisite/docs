@@ -4,7 +4,7 @@ title: Isenzo - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Isenzo: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
+# Isenzo: wu_domain_seller_register_capabilities
 
 Ivumela ezinye ii-plugin ukuba zibhalise izakhono ezongezelelweyo zokuthengisa iidomain.
 

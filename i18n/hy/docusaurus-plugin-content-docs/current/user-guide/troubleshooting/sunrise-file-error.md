@@ -3,7 +3,7 @@ title: Sunrise ֆայլի սխալ
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Ֆայլը Տեղադրելիս Սխալ {#error-installing-the-sunrise-file}
+# Sunrise Ֆայլը Տեղադրելիս Սխալ
 
 `sunrise.php` ֆայլը հատուկ ֆայլ է, որը WordPress-ը փորձում է գտնել՝ իր սեփականությունը սկսելիս։ WordPress-ի համար `sunrise.php` ֆայլը հայտնաբերելու համար այն պետք է գտնվի **wp-content** թղթապանակի ներսում։
 

@@ -4,7 +4,7 @@ title: فلتەر - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# پاڵێوەر: secure_logged_in_cookie {#filter-secureloggedincookie}
+# پاڵێوەر: secure_logged_in_cookie
 
 پاڵێوە دەکات کە ئایا cookieی چوونەژوورەوە تەنها پێویستە لەسەر HTTPS بنێردرێت.
 

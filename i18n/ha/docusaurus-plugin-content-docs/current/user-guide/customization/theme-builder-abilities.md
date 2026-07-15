@@ -3,7 +3,7 @@ title: Iyakoki na Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Khayyalwarin Kayayyakin: Scaffold da Amsa Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Khayyalwarin Kayayyakin: Scaffold da Amsa Block Themes
 
 Superdav AI Agent v1.12.0 yana baƙin gwiwar biyu na musamman wa ku wajaba su don samar da block themes na musamman da kuma ajiye su kai tsaye daga interface na tattaunawa (chat).
 

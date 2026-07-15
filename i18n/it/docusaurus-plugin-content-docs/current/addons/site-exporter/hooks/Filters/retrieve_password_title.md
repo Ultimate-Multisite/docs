@@ -4,7 +4,7 @@ title: 'Per favore, inviami il contenuto del file Markdown/MDX che desideri trad
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Filtro: retrieve_password_title {#filter-retrievepasswordtitle}
+# Filtro: retrieve_password_title
 
 Filtra l'oggetto dell'email di reimpostazione della password.
 

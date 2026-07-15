@@ -3,7 +3,7 @@ title: PayFast ପରିବର୍ତ୍ତନ ତାଲିକା
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast ପରିବର୍ତ୍ତନ ତାଲିକା {#payfast-changelog}
+# PayFast ପରିବର୍ତ୍ତନ ତାଲିକା
 
 ସଂସ୍କରଣ: 1.0.2 - 2025-09-28 ରେ ମୁକ୍ତିଲାଭ
 

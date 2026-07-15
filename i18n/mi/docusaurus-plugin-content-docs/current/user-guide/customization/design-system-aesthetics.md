@@ -3,7 +3,7 @@ title: Te Whakawāhi Aotūroa o Te Whānau Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kōrero mō Te Whakawhanaungatanga o te Design System Aesthetics Skill {#design-system-aesthetics-skill}
+# Kōrero mō Te Whakawhanaungatanga o te Design System Aesthetics Skill
 
 He **Skill o te Design System Aesthetics** he wahi ā-tūnga hei whai i te whakamārama ki te whakahaere i te whakaora o te whānau whānau o te wera o te waka (visual identity) o tō site. He tino mārama ana i te pēke nui mō te typography, rangi, whakatutuki, me ngā token o te motion (whakamutunga/whakawhiti) e tino whakamahi atu ana i tō design system.
 

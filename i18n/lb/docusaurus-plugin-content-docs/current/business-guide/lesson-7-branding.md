@@ -3,7 +3,7 @@ title: 'Lektioun 7: Et zu Ärem maachen'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lektioun 7: Maacht et zu Ärem Eegenen {#lesson-7-making-it-yours}
+# Lektioun 7: Maacht et zu Ärem Eegenen
 
 Är Clientë sollten ni d'Gefill hunn, datt si "iergendee WordPress Plugin" benotzen. Si sollten d'Gefill hunn, datt si FitSite benotzen -- eng Plattform, déi fir hir Branche gebaut ass. Dës Lektioun behandelt Branding, White-Labeling, an wéi d'Plattform sech wéi e Produkt ufillt.
 

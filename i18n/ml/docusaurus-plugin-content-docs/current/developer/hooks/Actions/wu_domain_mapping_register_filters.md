@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 ചില പ്ലഗിനുകൾ മാപ്പിംഗ് സജീവമാകുന്നതിന് മുമ്പുള്ള യൂആർഎല്ലുകൾ സേവ് ചെയ്യുകയോ അല്ലെങ്കിൽ മുകളിൽ പറഞ്ഞ ഫിൽട്ടറുകളിൽ ഉൾപ്പെടാത്ത രീതിയിൽ യൂആർഎല്ലുകൾ നിർമ്മിക്കുകയോ ചെയ്യാം.
 

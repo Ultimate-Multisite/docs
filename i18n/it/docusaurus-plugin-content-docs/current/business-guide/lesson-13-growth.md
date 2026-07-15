@@ -3,7 +3,7 @@ title: 'Lezione 13: Scalare'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lezione 13: Scalare {#lesson-13-scaling-up}
+# Lezione 13: Scalare
 
 Hai una piattaforma funzionante con clienti paganti. Questa lezione copre come passare da un'attività piccola a un'impresa sostenibile: scalare l'infrastruttura, automatizzare le operazioni e aumentare il ricavo per cliente.
 

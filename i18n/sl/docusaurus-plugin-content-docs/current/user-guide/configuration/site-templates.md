@@ -3,7 +3,7 @@ title: Štiri za spletne strani
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site šabloni (v2) {#site-templates-v2}
+# Site šabloni (v2)
 
 _**OPOMENKA: Ta članek se nanaša na Ultimate Multisite verzijo 2.x. Če uporabljate verzijo 1.x,**_ **pogledajte ta članek.**_
 

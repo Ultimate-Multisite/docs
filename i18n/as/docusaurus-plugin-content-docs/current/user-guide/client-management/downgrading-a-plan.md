@@ -3,7 +3,7 @@ title: পлан হ্ৰাস কৰা
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# এটা প্লেন ডাউনগ্রেড কৰা (v2) {#downgrading-a-plan-v2}
+# এটা প্লেন ডাউনগ্রেড কৰা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টি Ultimate Multisiteৰ version 2.x লৈ বৰ্ণনা কৰে।**_
 

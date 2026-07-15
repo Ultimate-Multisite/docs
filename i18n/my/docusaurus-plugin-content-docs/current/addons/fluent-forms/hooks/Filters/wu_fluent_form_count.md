@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count {#filter-wufluentformcount}
+# Filter: wu_fluent_form_count
 
 ပလပ်အင် developer များအနေဖြင့် ဖောင်အရေအတွက် စုစုပေါင်းကို ပြောင်းလဲနိုင်စေရန် ခွင့်ပြုပါသည်။
 

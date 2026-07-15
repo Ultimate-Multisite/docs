@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# କାର୍ଯ୍ୟ: wu_page_load {#action-wupageload}
+# କାର୍ଯ୍ୟ: wu_page_load
 
 plugin ବିକାଶକାରୀମାନଙ୍କୁ ଆମ ପୃଷ୍ଠାଗୁଡ଼ିକରେ ଅତିରିକ୍ତ ହୁକ୍ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

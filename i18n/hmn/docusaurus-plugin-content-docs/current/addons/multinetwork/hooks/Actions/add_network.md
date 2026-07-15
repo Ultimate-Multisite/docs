@@ -4,7 +4,7 @@ title: Kev nqis tes - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Kev ua: add_network {#action-addnetwork}
+# Kev ua: add_network
 
 Khiav tom qab tau ntxiv ib lub network tshiab lawm.
 

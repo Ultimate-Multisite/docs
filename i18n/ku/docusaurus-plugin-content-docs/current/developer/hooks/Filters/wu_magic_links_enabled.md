@@ -4,7 +4,7 @@ title: Parzûn - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Parzûn: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Parzûn: wu_magic_links_enabled
 
 Parzûn bike ka girêdanên magic çalak in an na.
 

@@ -3,7 +3,7 @@ title: Dizaino kryptis
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizaino kryptis {#design-direction}
+# Dizaino kryptis
 
 Žingsnis **Dizaino kryptis** leidžia peržiūrėti, patobulinti ir užbaigti jūsų temos vizualinį dizainą prieš Theme Builder sugeneruojant visą temą.
 

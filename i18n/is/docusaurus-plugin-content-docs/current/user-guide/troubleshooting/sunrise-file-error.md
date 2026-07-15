@@ -3,7 +3,7 @@ title: Áferrsfélum á fileu
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Villum við innreiðslu á Sunrise-fileinn {#error-installing-the-sunrise-file}
+# Villum við innreiðslu á Sunrise-fileinn
 
 `sunrise.php`-fileinn er sérstakt fileinn sem WordPress leitar eftir þegar það byrjar að uppsetja sig sjálft. Til að WordPress geti tekið fyrir `sunrise.php`-fileinn, þarf hann að finna hann í **wp-content** forli.
 

@@ -4,7 +4,7 @@ title: வடிகட்டி - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filter: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Filter: mu_migration/export/user/headers
 
 ஏற்றுமதி செய்யப்படவுள்ள அல்லது உள்வாங்கப்படவுள்ள இயல்பான பயனர் தலைப்புகளை (user headers) இது வடிகட்டுகிறது.
 

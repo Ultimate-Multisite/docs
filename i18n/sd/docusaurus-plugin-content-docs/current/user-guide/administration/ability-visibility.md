@@ -3,7 +3,7 @@ title: دکھڻ جي صلاحيت
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# صلاحيت کی نظر آنا (Ability Visibility) {#ability-visibility}
+# صلاحيت کی نظر آنا (Ability Visibility)
 
 Superdav AI Agent v1.12.0 ۾ **Ability Visibility** ڪن ڪنٽرول شامل ڪيا آهن جيڪي اهو منظم ڪندا ته ڪهڙا سرفيسز هر صلاحيت کي ڏسڻ (expose) گهرجي. ان سان ڊيزاينرز (administrators) اهڙي طرح ayarlڪار ڪري سگهن ٿا ته ڪهڙا ايجنت جي صلاحيتون REST APIs، MCP سرورن، WooCommerce انتظام (integrations)، ۽ ٻين رابطن تروتاز طريقن ذريعي موجود هجن.
 

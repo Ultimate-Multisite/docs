@@ -3,7 +3,7 @@ title: பி Plugin நிர்வாக திறன்கள்
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin நிர்வாக திறன்கள் {#plugin-management-abilities}
+# Plugin நிர்வாக திறன்கள்
 
 Gratis AI Agent v1.5.0 ஆனது, உரையாடலின் போது AI உதவியாளர் பயன்படுத்தக்கூடிய **7 plugin நிர்வாக திறன்களைக்** கொண்டுள்ளது. இந்தத் திறன்கள், [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) மூலம் நிறுவப்பட்ட WordPress plugin-களை நிரல்வழி முறையில் கட்டுப்படுத்த உதவுகின்றன.
 

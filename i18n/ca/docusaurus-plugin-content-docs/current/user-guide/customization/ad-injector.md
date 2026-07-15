@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Col·locar anuncis a la teva xarxa amb Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Col·locar anuncis a la teva xarxa amb Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector és un **complement gratuït** que et proporciona els mitjans per col·locar anuncis als teus plans, directament des de la seva pàgina d'edició.
 

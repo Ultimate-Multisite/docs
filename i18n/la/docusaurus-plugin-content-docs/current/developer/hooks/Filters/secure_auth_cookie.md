@@ -4,7 +4,7 @@ title: Filtrum - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filtrum: secure_auth_cookie {#filter-secureauthcookie}
+# Filtrum: secure_auth_cookie
 
 Filtrat utrum auth cookie solum per HTTPS mitti debeat.
 

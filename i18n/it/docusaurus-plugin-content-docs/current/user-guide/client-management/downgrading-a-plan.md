@@ -3,7 +3,7 @@ title: Effettuare il downgrade di un piano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Effettuare il downgrade di un piano (v2) {#downgrading-a-plan-v2}
+# Effettuare il downgrade di un piano (v2)
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 

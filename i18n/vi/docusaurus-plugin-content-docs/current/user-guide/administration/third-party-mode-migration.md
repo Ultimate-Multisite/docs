@@ -3,7 +3,7 @@ title: Di chuyển Chế độ Bên thứ Ba
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Di chuyển sang Chế độ Bên thứ Ba {#third-party-mode-migration}
+# Di chuyển sang Chế độ Bên thứ Ba
 
 Superdav AI Agent v1.12.0 đã thay đổi cách xử lý các khả năng (abilities) bên thứ ba. **Chế độ bên thứ ba hiện mặc định là tự động (auto)**, cho phép tích hợp API Abilities gốc của WordPress trên WordPress 7.0+ mà không cần cấu hình thủ công.
 

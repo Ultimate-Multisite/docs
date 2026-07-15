@@ -4,7 +4,7 @@ title: Mahi - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Mahi: add_network {#action-addnetwork}
+# Mahi: add_network
 
 Ka whakakāngia i muri i te tāpiritanga o tētahi whatunga hou.
 

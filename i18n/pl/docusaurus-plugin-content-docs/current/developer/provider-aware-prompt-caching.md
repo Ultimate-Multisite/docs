@@ -3,7 +3,7 @@ title: Buforowanie Promptów Dostawczo-Świadome
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Buforowanie Promptów Zależne od Dostawcy {#provider-aware-prompt-caching}
+# Buforowanie Promptów Zależne od Dostawcy
 
 Superdav AI Agent v1.12.0 wprowadza **buforowanie promptów zależne od dostawcy** (provider-aware prompt caching), co optymalizuje koszty API i opóźnienia, buforując prompty w różnych dostawcach LLM. Każdy dostawca ma inne mechanizmy i konfiguracje buforowania.
 

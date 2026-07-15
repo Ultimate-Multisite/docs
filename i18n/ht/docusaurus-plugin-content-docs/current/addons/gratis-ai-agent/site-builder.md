@@ -3,7 +3,7 @@ title: Òkestrasyon Konstriksyon Sit v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Òkestrasyon Site Builder v2 {#site-builder-orchestration-v2}
+# Òkestrasyon Site Builder v2
 
 Site Builder Orchestration v2 (ki te prezante nan Gratis AI Agent v1.4.0) se motè ki alimante kreyasyon sit entènèt an plizyè etap. Lè ou mande agent la pou "bati yon sit entènèt restoran" oswa "kreye yon pòtfolyo ak yon blog", orchestrator la divize objektif wo nivo sa a an yon **plan** estriktire, li dekouvri plugins ki nesesè pou reyalize li, li egzekite chak etap youn apre lòt, li swiv pwogrè, epi li rekipere apre erè poukont li.
 

@@ -3,7 +3,7 @@ title: Capacidades de xestión de plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capacidades de xestión de complementos {#plugin-management-abilities}
+# Capacidades de xestión de complementos
 
 Gratis AI Agent v1.5.0 inclúe **7 capacidades de xestión de complementos** que o asistente de IA pode invocar durante unha conversa. Estas capacidades proporcionan control programático sobre os complementos de WordPress instalados a través do [Sistema de creación de complementos e sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

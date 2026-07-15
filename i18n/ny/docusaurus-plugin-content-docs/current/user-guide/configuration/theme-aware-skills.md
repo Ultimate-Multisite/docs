@@ -3,7 +3,7 @@ title: Kufunso kwa Mwayi
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Zikondi ndi Theme {#theme-aware-skills}
+# Skills Zikondi ndi Theme
 
 Superdav AI Agent v1.10.0 imapereka m’malo obwino (built-in skills) osatuwo omwe amagwirizana ndi theme yanu ya WordPress yomwe ikulimbikira. M’malo owi zimapereka chithandizo ndi ulemu wosonyeza zomwe zikuyenera kwambiri kwa mwayi wanu wamene (theme's architecture) ndi zinthu zina za theme yanu.
 

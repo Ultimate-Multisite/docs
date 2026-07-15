@@ -4,7 +4,7 @@ title: Филтър - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Филтър: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Филтър: wu_post_count_statuses
 
 Позволява на разработчиците на плагини да променят кои статуси на публикации трябва да бъдат пресчитани. По подразбиране се брои публикациите със статуси "published" (публикувани) и "private" (частни).
 

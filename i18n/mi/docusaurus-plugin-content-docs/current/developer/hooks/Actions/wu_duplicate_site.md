@@ -4,7 +4,7 @@ title: Hohenga - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Mahi: wu_duplicate_site {#action-wuduplicatesite}
+# Mahi: wu_duplicate_site
 
 Tukua ngā kaiwhakawhanake kia tūhono i muri i te tāruatanga o tētahi pae.
 

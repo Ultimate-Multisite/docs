@@ -3,7 +3,7 @@ title: የፕልጊን አስተዳደር አቅሞች
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# የፕልጊን አስተዳደር አቅሞች {#plugin-management-abilities}
+# የፕልጊን አስተዳደር አቅሞች
 
 Gratis AI Agent v1.5.0 ከ**7 የፕልጊን አስተዳደር አቅሞች** ጋር ይመጣል፤ እነዚህ አቅሞች AI ረዳቱ በውይይት ወቅት ሊጠቀምባቸው የሚችል ሲሆን። እነዚህ አቅሞች በ[Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) በኩል በተጫኑ WordPress plugins ላይ ፕሮግራማዊ ቁጥጥር ይሰጣሉ።
 

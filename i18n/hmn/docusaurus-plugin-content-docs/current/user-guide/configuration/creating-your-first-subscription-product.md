@@ -3,7 +3,7 @@ title: Tsim hauv qauv tsim hauv qauv pib nrhiav txhais tau
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# ຕັ້ງຄ່າຜະລິດຕະພັນສະໝັກສະມາຊິກທໍາອິດຂອງທ່ານ (v2) {#creating-your-first-subscription-product-v2}
+# ຕັ້ງຄ່າຜະລິດຕະພັນສະໝັກສະມາຊິກທໍາອິດຂອງທ່ານ (v2)
 
 _**ຂໍ້ສັງເກດສຳຄັນ: ບົດຄວາມນີ້ແມ່ນສຳລັບຜູ້ໃຊ້ Ultimate Multisite ເພື່ອໃຊ້ເວີຊັນ 2.x ເທົ່ານັ້ນ. ຖ້າທ່ານກຳລັງໃຊ້ເວີຊັນ 1.x,**_ **_ເບິ່ງບົດຄວາມນີ້ເລີຍ**_।
 

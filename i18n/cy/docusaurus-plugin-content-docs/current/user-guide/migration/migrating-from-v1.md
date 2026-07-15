@@ -3,7 +3,7 @@ title: Migru o V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migru from V1 {#migrating-from-v1}
+# Migru from V1
 
 ## Mae Ultimate Multisite wedi gwahanodd o'i ffamiriad cyntafol 1.x i ffamiriad 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

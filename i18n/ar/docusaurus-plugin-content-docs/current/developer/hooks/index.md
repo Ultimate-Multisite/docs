@@ -3,7 +3,7 @@ title: مرجع الخطافات
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# مرجع الخطافات {#hooks-reference}
+# مرجع الخطافات
 
 توثيق مُنشأ تلقائيًا لجميع **59 إجراءً** و**118 مرشحًا** في Ultimate Multisite.
 

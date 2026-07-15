@@ -3,7 +3,7 @@ title: Theme Builder-ийн анхны хөтөлгөх зам
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder-ийн Оршил Процесс (Onboarding Flow) {#theme-builder-onboarding-flow}
+# Theme Builder-ийн Оршил Процесс (Onboarding Flow)
 
 Superdav AI Agent v1.12.0 нь таны анхны тохируулгын үед өөрийн өвөрмөц блоктэй сэдэв (custom block theme) бүтээхэд туслах **Theme Builder-ийн оршил процессыг** нэвтрүүлсэн. Энэ нь хуучин Site Builder модыг илүү уян хатан, агент туслалтай аргаар солино.
 

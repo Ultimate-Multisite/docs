@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 ਪਲੱਗਇਨ ਡਿਵੈਲਪਰਜ਼ ਨੂੰ ਇਹ ਬਦਲਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ ਕਿ ਕਿਹੜੇ ਪੋਸਟ ਸਟੇਸਸ ਨੂੰ ਗਿਣਿਆ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ। ਡਿਫਾਲਟ ਤੌਰ 'ਤੇ, ਪਬਲਿਸ਼ਡ ਅਤੇ ਪ੍ਰਾਈਵੇਟ ਪੋਸਟਾਂ ਨੂੰ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ।
 

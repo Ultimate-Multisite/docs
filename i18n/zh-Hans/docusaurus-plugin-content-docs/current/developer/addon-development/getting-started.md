@@ -3,7 +3,7 @@ title: 附加组件开发入门
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# 附加组件开发 {#addon-development}
+# 附加组件开发
 
 ## 附加组件结构 {#addon-structure}
 

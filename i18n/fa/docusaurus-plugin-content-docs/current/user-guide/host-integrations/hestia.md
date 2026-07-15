@@ -3,7 +3,7 @@ title: ادغام پنل کنترل Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# یکپارچه‌سازی با کنترل پنل Hestia {#hestia-control-panel-integration}
+# یکپارچه‌سازی با کنترل پنل Hestia
 
 این راهنما نحوه پیکربندی یکپارچه‌سازی Ultimate Multisite با Hestia را توضیح می‌دهد تا دامنه‌های نگاشت‌شده در شبکه شما به‌صورت خودکار به عنوان Web Domain Alias در Hestia اضافه (و حذف) شوند.
 

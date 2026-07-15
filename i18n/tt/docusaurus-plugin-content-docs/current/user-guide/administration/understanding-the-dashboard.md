@@ -3,7 +3,7 @@ title: Панельканы түшмүчеләрне аңлау
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Paneli Anlaması {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Paneli Anlaması
 
 Ultimate Multisite'ın daha gelişmiş yapılandırma seçeneklerine ve Ultimate Multisite'ın çalışma yönlerine dalmadan önce, paneli inceleyelim.
 

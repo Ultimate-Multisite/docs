@@ -3,7 +3,7 @@ title: የአቅም ታይነት
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# የችሎታ መታየት ሁኔታ (Ability Visibility) {#ability-visibility}
+# የችሎታ መታየት ሁኔታ (Ability Visibility)
 
 Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibility)** ቁጥጥሮችን አስተዋውቋል፤ እነዚህም እያንዳንዱን ችሎታ በየትኞቹ ክፍሎች (surfaces) እንደሚታይ ይቆጣጠራሉ። ይህ አድሚኒስትራተሮች የትኞቹ የኤጀንት አቅሞች በREST APIs፣ በMCP servers፣ በWooCommerce integrations እና በሌሎች መገናኛዎች (interfaces) ምን ያህል መገኘት እንዳለባቸው በጥንቃቄ እንዲያስተካክሉ ያስችላቸዋል።
 

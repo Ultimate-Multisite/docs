@@ -3,7 +3,7 @@ title: 'Aralin 4: Pagbuo ng mga Template para sa Partikular na Larangan'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Aralin 4: Pagbuo ng mga Niche Template {#lesson-4-building-niche-templates}
+# Aralin 4: Pagbuo ng mga Niche Template
 
 Ang mga template ang pinakapuso ng iyong niche value proposition. Ang may-ari ng fitness studio na nag-sign up at nakakita ng site na mukhang fitness website na agad -- may mga iskedyul ng klase, profile ng trainer, at tamang imagery -- ay mas malamang na manatili kaysa sa makakakita ng blank canvas.
 

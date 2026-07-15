@@ -3,7 +3,7 @@ title: שילוב RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# אינטגרציה עם RunCloud {#runcloud-integration}
+# אינטגרציה עם RunCloud
 
 ## סקירה כללית {#overview}
 RunCloud היא פלטפורמה מבוססת ענן לניהול שרתים, המאפשרת להתקין ולנהל בקלות יישומי ווב על שרתי הענן שלכם. אינטגרציה זו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite לבין RunCloud.

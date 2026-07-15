@@ -3,7 +3,7 @@ title: Kev taw qhia tsim qauv
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Kev Coj Qhia Tsim {#design-direction}
+# Kev Coj Qhia Tsim
 
 Kauj ruam **Kev Coj Qhia Tsim** cia koj tshuaj xyuas, kho kom zoo, thiab ua kom tiav koj theme qhov kev tsim pom kev ua ntej Theme Builder tsim tawm tag nrho theme.
 

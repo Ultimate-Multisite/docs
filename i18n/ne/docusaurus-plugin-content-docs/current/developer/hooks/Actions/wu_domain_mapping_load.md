@@ -4,7 +4,7 @@ title: कार्य - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# कार्य: wu_domain_mapping_load {#action-wudomainmappingload}
+# कार्य: wu_domain_mapping_load
 
 हाम्रो मुख्य डोमेन म्यापिङ लोड भएपछि चल्छ
 

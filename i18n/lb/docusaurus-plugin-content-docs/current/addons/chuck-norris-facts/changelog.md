@@ -3,7 +3,7 @@ title: Chuck-Norris-Fakten Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck-Norris-Fakten Ännerungsprotokoll {#chuck-norris-facts-changelog}
+# Chuck-Norris-Fakten Ännerungsprotokoll
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Derbäigesat: Automatesch Update-Funktionalitéit iwwer den Ultimate Multisite Update-Server

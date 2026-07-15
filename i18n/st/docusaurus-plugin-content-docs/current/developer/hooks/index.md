@@ -3,7 +3,7 @@ title: Tshupiso ea Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tshupiso ya di-Hooks {#hooks-reference}
+# Tshupiso ya di-Hooks
 
 Ditokomane tse iketseditsweng bakeng sa **liketso tse 59** tsohle le **difeilthara tse 118** ho Ultimate Multisite.
 

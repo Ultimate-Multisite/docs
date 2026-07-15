@@ -3,7 +3,7 @@ title: Postavljanje Stripe-a
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Postavljanje Stripe Gatewaya (v2) {#setting-up-the-stripe-gateway-v2}
+# Postavljanje Stripe Gatewaya (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 

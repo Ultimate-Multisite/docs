@@ -3,7 +3,7 @@ title: 'Lezione 4: Costruire Modelli di Nicchia'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lezione 4: Creare Template di Nicchia {#lesson-4-building-niche-templates}
+# Lezione 4: Creare Template di Nicchia
 
 I template sono il cuore della tua proposta di valore di nicchia. Un proprietario di uno studio fitness che si iscrive e vede un sito che assomiglia già a un sito di fitness — con orari delle lezioni, profili degli istruttori e le immagini giuste — è molto più propenso a rimanere che uno che vede una tela bianca.
 

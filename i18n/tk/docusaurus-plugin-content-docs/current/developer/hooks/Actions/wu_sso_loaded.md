@@ -4,7 +4,7 @@ title: Hereket - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Hereket: wu_sso_loaded {#action-wussoloaded}
+# Hereket: wu_sso_loaded
 
 Goşmaça döredijilere zerur bolsa goşmaça hook-lary goşmaga mümkinçilik beriň.
 

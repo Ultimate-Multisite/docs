@@ -3,7 +3,7 @@ title: การรวม GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# การผสานการทำงานกับ GridPane {#gridpane-integration}
+# การผสานการทำงานกับ GridPane
 
 ## ภาพรวม {#overview}
 GridPane เป็นแผงควบคุมโฮสติ้ง WordPress ที่ออกแบบมาโดยเฉพาะสำหรับผู้เชี่ยวชาญด้าน WordPress การผสานการทำงานนี้ช่วยให้สามารถซิงค์โดเมนและจัดการใบรับรอง SSL โดยอัตโนมัติระหว่าง Ultimate Multisite และ GridPane

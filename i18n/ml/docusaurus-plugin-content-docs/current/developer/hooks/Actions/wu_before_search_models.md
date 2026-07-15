@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# ആക്ഷൻ: wu_before_search_models {#action-wubeforesearchmodels}
+# ആക്ഷൻ: wu_before_search_models
 
 സെർച്ച് റിക്വസ്റ്റ് പ്രോസസ്സ് ചെയ്യുന്നതിന് മുമ്പ് ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

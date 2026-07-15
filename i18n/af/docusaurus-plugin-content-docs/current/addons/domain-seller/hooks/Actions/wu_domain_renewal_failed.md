@@ -4,7 +4,7 @@ title: Action - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Aksie: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Aksie: wu_domain_renewal_failed
 
 Word geaktiveer nadat 'n poging tot domeinvernying misluk.
 

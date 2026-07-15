@@ -4,7 +4,7 @@ title: Action - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Action: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Action: wp_ultimo_vat_activation
 
 പ്ലഗിൻ-ի മറ്റ് ഭാഗങ്ങൾ ആക്ടിവേഷനുവേണ്ടിയുള്ള അവയുടെ പ്രവർത്തനങ്ങൾ (routines) ഇതിലേക്ക് ബന്ധിപ്പിക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

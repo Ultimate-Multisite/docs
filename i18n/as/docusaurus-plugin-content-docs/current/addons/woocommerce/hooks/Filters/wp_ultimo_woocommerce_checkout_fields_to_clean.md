@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 ডেভেলপাৰসকলক ডিফল্ট WooCommerce বিলিং এড্ৰես ফিল্ডসমূহ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
 

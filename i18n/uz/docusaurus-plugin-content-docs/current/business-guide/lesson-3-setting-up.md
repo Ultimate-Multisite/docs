@@ -3,7 +3,7 @@ title: '3-dars: Tarmog‘ingizni sozlash'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# 3-dars: Tarmog‘ingizni sozlash {#lesson-3-setting-up-your-network}
+# 3-dars: Tarmog‘ingizni sozlash
 
 Qurish vaqti keldi. Bu darsda siz Ultimate Multisite’ni o‘rnatasiz va FitSite tarmog‘ining poydevorini sozlaysiz. Bu yerdagi har bir qaror fitness yo‘nalishini hisobga olgan holda qabul qilinadi.
 

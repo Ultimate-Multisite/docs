@@ -3,7 +3,7 @@ title: CyberPanel Integratsiyasi
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integratsiyasi {#cyberpanel-integration}
+# CyberPanel Integratsiyasi
 
 Bu qo'llanma Ultimate Multisite CyberPanel integratsiyasini qanday sozlashni tushuntiradi, shunda sizning tarmoqdagi xaritalangan domenlar avtomatik ravishda CyberPanelda virtual host sifatida qo'shiladi (va olib tashlanadi), Let's Encrypt orqali ixtiyoriy avtomatik SSL proviziyungslanishi bilan.
 

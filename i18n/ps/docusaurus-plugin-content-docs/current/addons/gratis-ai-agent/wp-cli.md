@@ -3,7 +3,7 @@ title: WP-CLI ماخذ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ماخذ {#wp-cli-reference}
+# WP-CLI ماخذ
 
 Gratis AI Agent د `wp gratis-ai-agent` قوماندو کورنۍ وړاندې کوي، چې د agent د بنچمارک کولو، وړتیاوو د مدیریت، او له قوماندې کرښې څخه د agent حالت پوښتلو لپاره ده. ټولې قوماندې WP-CLI 2.0 یا تر هغه لوړې نسخې ته اړتیا لري.
 

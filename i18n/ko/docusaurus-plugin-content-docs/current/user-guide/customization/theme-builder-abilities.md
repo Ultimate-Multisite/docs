@@ -3,7 +3,7 @@ title: 테마 빌더 기능
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# 테마 빌더 기능: 블록 테마 뼈대 생성 및 활성화 {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# 테마 빌더 기능: 블록 테마 뼈대 생성 및 활성화
 
 Superdav AI Agent v1.12.0은 채팅 인터페이스에서 사용자 지정 블록 테마를 생성하고 배포할 수 있는 두 가지 강력한 기능을 도입했습니다.
 

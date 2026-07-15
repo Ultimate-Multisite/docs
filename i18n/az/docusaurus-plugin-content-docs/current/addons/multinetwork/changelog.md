@@ -3,7 +3,7 @@ title: Çoxşəbəkə Dəyişikliklərinin Qeydi
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Şəbəkə Değişiklik Qeydi {#multi-network-changelog}
+# Multi-Şəbəkə Değişiklik Qeydi
 
 ### 1.3.0 {#130}
 * Yeni: Şəbəkə şablonu önizləyicisi — satın almadan əvvəl canlı panel ilə şəbəkə şablonlarını gəzin və önizləyin.

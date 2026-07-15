@@ -3,7 +3,7 @@ title: Kreye Premye Pwodwi Abònman ou
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreye ou Premye Deza Abonman An Premye (v2) {#creating-your-first-subscription-product-v2}
+# Kreye ou Premye Deza Abonman An Premye (v2)
 
 _**NOTE KRITIK: Sa tèks sa a sèlman pou moun ki itilize Ultimate Multisite v2.x. Si ou ap itilize v1.x,**_ **_tande tèks sa a**_ .
 

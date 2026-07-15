@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite документациясе {#ultimate-multisite-documentation}
+# Ultimate Multisite документациясе
 
 Ultimate Multisite документациясенә рәхим итегез. Ultimate Multisite WordPress Multisite-ны тулы Website as a Service (WaaS) платформасына әйләндерә.
 

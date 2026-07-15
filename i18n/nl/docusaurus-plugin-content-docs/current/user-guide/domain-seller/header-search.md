@@ -3,7 +3,7 @@ title: Header domein zoeken
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header-domeinzoekopdracht {#header-domain-search}
+# Header-domeinzoekopdracht
 
 Gebruik deze setup wanneer je een klein header-formulier wilt dat een domeinzoekopdracht start en de klant daarna laat kiezen uit beschikbare domeinen binnen de Ultimate Multisite checkout.
 

@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow ya Mofuta oa Sovereign {#sovereign-migration-workflow}
+# Workflow ya Mofuta oa Sovereign
 
 Ultimate Multisite 1.2.0 e ntse le gate tsa ho tsamaisa migration ho fana ka ho fana ka infrastructure ea mofuta o hlakileng (sovereign tenant).
 

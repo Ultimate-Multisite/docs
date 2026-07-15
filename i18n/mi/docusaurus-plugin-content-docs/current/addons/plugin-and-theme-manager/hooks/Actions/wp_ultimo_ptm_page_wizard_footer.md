@@ -4,7 +4,7 @@ title: Hohenga - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# Hohenga: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# Hohenga: wp_ultimo_ptm_page_wizard_footer
 
 Whakaaetia ngā kaiwhakawhanake plugin kia tāpiri scripts ki raro o te whārangi
 

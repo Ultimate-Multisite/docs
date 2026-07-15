@@ -3,7 +3,7 @@ title: ගිණුම් පිටුවට පිවිසීම
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# මගේ ගිණුම් පිටුවට පළමු වතාවේ මට පිවිසෙන්නේ කොහොමද? {#how-can-i-access-my-account-page-for-the-first-time}
+# මගේ ගිණුම් පිටුවට පළමු වතාවේ මට පිවිසෙන්නේ කොහොමද?
 
 Ultimate Multisite වෙත ඔබව සාදරයෙන් පිළිගනිමු!
 

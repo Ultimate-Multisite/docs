@@ -3,7 +3,7 @@ title: 'Dərslik 11: Müştəriləri Tapmaq'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Dərs 11: Müştəri Tapmaq {#lesson-11-finding-customers}
+# Dərs 11: Müştəri Tapmaq
 
 Müştəri olmayan böyük bir platforma sadəcə bir hobbidir. Bu dərs niş bir sahədə müştəri necə əldə ediləcəyini öyrədir — yəni, yalnız bir sənayəyə fokuslandığınız üçün işləyən strategiyalar.
 

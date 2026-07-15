@@ -3,7 +3,7 @@ title: Maklum Balas Pelanggan & Pelaporan Isu
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Maklum Balas Pelanggan & Pelaporan Isu {#customer-feedback--issue-reporting}
+# Maklum Balas Pelanggan & Pelaporan Isu
 
 Gratis AI Agent v1.5.0 memperkenalkan sistem maklum balas dan pelaporan isu terbina dalam yang membolehkan pengguna akhir menandakan respons yang kurang membantu dan melaporkan masalah terus dari antara muka sembang (chat interface). Sistem ini merangkumi pengurusan persetujuan (consent management), arahan pelaporan automatik, dan triaj (triage) berasaskan AI di bahagian belakang (backend).
 

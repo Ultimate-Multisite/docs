@@ -3,7 +3,7 @@ title: Tələblər
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Tələbləri {#ultimate-multisite-requirements}
+# Ultimate Multisite Tələbləri
 
 Ultimate Multisite-ı almaqdan əvvəl özünüzə ilk sual "Bu plugin-i işlətmək üçün nə tələblər var?" ola bilər. Xoşbəxt ki, Ultimate Multisite-ı işlətmək üçün yalnız bir neçə əsas tələb var: bir **domain adı**, yaxşı bir **hosting provayderi** və bir WordPress **Multisite** quraşdırması. Bu, hər şeydir!
 

@@ -4,7 +4,7 @@ title: Salain - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filter: wu_domain_has_correct_dns
 
 Payagan ang mga tagapagpaunlad ng karugtong na magdagdag ng mga bagong pagsusuri upang tukuyin ang mga resulta.
 

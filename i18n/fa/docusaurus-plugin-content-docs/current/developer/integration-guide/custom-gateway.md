@@ -3,7 +3,7 @@ title: توسعه درگاه سفارشی
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# توسعه درگاه سفارشی {#custom-gateway-development}
+# توسعه درگاه سفارشی
 
 می‌توانید با گسترش کلاس `Base_Gateway` درگاه‌های پرداخت سفارشی ایجاد کنید.
 

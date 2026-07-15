@@ -4,7 +4,7 @@ title: ფილტრი - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# ფილტრი: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# ფილტრი: wu_password_require_lowercase
 
 ფილტრავს, საჭიროა თუ არა პაროლებში პატარა ასოების მოთხოვნა.
 

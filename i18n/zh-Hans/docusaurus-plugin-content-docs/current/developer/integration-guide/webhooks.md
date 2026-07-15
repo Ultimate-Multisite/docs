@@ -3,7 +3,7 @@ title: Webhook 处理
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook 处理 {#webhook-handling}
+# Webhook 处理
 
 Create custom webhook endpoints to receive events from external services and sync data with Ultimate Multisite.
 

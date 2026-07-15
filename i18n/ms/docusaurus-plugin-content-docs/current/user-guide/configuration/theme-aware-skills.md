@@ -3,7 +3,7 @@ title: Kemahiran Sedar Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kemahiran Berdasarkan Tema (Theme-Aware Skills) {#theme-aware-skills}
+# Kemahiran Berdasarkan Tema (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 memperkenalkan empat kemahiran terbina dalam baharu yang peka tema (theme-aware). Kemahiran ini secara automatik menyesuaikan diri dengan tema WordPress anda yang sedang aktif. Kemahiran ini menyediakan panduan dan keupayaan khusus yang disesuaikan dengan seni bina dan ciri tema anda.
 

@@ -3,7 +3,7 @@ title: Operações de Inquilino Soberano
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operações de Tenant Soberano {#sovereign-tenant-operations}
+# Operações de Tenant Soberano
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adiciona ferramentas operacionais para tenants soberanos: subsites que rodam com seu próprio banco de dados, raiz do sistema de arquivos e contexto de roteamento, mantendo-se visíveis para o administrador da rede.
 

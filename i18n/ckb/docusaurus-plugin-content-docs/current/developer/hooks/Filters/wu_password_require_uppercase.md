@@ -4,7 +4,7 @@ title: پاڵاوتن - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# فلتەر: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# فلتەر: wu_password_require_uppercase
 
 فلتەر بکە کە ئایا پێویستە وشەی نهێنی پیتی گەورەی تێدا بێت یان نا.
 

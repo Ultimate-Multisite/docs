@@ -3,7 +3,7 @@ title: Pse Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Pse pse Ultimate Multisite {#why-ultimate-multisite}
+# Pse pse Ultimate Multisite
 
 Nëse jeni shkuar në këtë artikull, mund të keni dëgjuar se ky plugin i mund të jetë zgjidhja për të realizuar ide biznesit tuaj. Ne shpresojmë që të keni përgjigjet që ju nevojiten në fund të kësaj shprehje.
 

@@ -3,7 +3,7 @@ title: An t-aonráin agus an chuidí oibríochta
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Seller Domáin: Set-up agus Coinníollacha Anailís {#domain-seller-setup-and-provider-configuration}
+# Seller Domáin: Set-up agus Coinníollacha Anailís
 
 Tá an Addon Domain Seller ag cur le chéile ar fáil le seomra set-up a bhfaidh tú tréimhse ar chuid deatach a thaispeánann go léir gach áit ag cur le chéile. Cuireann an cur chuimne seo an t-amach agus conas a chur in áit nó a athchruinneáil na cungaitheoirí (providers) tar éis.
 

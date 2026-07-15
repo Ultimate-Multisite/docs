@@ -3,7 +3,7 @@ title: Registrazio-fluxua
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registrazioen Fluxu (v2) {#the-registration-flow-v2}
+# Registrazioen Fluxu (v2)
 
 _**IMPORTANTE NOTA: Lezkatu testu hau Ultimate Multisite 2.x-ean referentzia egiten du.**_
 

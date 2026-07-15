@@ -4,7 +4,7 @@ title: Action - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# ድርጊት: move_site {#action-movesite}
+# ድርጊት: move_site
 
 አንድ ድረ-ገጽ ወደ አዲስ ኔትወርክ ከተዛወረ በኋላ ይሰራል።
 

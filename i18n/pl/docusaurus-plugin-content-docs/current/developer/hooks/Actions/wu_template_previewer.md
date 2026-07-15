@@ -4,7 +4,7 @@ title: Akcja - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Akcja: wu_template_previewer {#action-wutemplatepreviewer}
+# Akcja: wu_template_previewer
 
 Wywoływana, gdy jesteśmy w kontekście podglądu szablonu.
 

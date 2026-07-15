@@ -3,7 +3,7 @@ title: Loga atharrachaidhean Ultimate AI Connector airson puingean-crìche co-ch
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector airson Endpoints cho-fhreagarrach Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector airson Endpoints cho-fhreagarrach Changelog
 
 ## Tionndadh 2.0.0 — Air fhoillseachadh air 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: Đa thuê Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Đa thuê (Multi-Tenancy) của Hostinger {#hostinger-multi-tenancy}
+# Đa thuê (Multi-Tenancy) của Hostinger
 
 Ultimate Multisite: Multi-Tenancy phiên bản 1.2.0 đã bổ sung tính năng đa thuê của Hostinger, cho phép các tên miền được lưu trữ tham gia vào việc cấp phát tenant chủ quyền (sovereign tenant provisioning) song song với tích hợp ánh xạ tên miền (domain-mapping integration) hiện có của Hostinger.
 

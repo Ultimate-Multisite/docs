@@ -3,7 +3,7 @@ title: Jana Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Jana Logo SVG {#generate-logo-svg}
+# Jana Logo SVG
 
 Keupayaan **Generate Logo SVG** membolehkan Theme Builder mencipta dan menyematkan logo SVG tersuai terus ke laman WordPress anda dengan sanitasi automatik yang selamat ruang nama.
 

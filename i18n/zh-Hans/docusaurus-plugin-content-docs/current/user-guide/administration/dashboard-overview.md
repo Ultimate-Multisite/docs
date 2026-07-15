@@ -3,7 +3,7 @@ title: 仪表盘概览
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# 仪表盘概览 {#dashboard-overview}
+# 仪表盘概览
 
 Ultimate Multisite 在 Ultimate Multisite 菜单下有一个专用的 **仪表盘**，并且还向网络仪表盘添加了小部件。本文介绍了你在这两个位置会看到的内容。
 

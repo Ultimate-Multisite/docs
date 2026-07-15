@@ -4,7 +4,7 @@ title: Parzûn - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filter: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Filter: wu_membership_update_forms
 
 Destûr dide pêşdebirvanan ku slugên nû yên forma nûkirinê lê zêde bikin.
 

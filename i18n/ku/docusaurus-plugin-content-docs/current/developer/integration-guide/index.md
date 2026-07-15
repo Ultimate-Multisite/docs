@@ -3,7 +3,7 @@ title: Rêbernameya Entegrasyonê
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Rêbernameya Integration {#integration-guide}
+# Rêbernameya Integration
 
 Ev rêbername şêweyên hevpar ên integration bi Ultimate Multisite vedigire, di nav de girêdana bi xizmetên derveyî re, avakirina dergehên dravdanê yên taybet, û rêvebirina webhookan.
 

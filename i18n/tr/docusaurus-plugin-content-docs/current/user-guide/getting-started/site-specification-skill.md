@@ -3,7 +3,7 @@ title: Site Özellik Becerisi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Spesifikasyonu Yeteneği {#site-specification-skill}
+# Site Spesifikasyonu Yeteneği
 
 **Site Spesifikasyonu yeteneği**, sitenizin hedeflerini, hedef kitlesini ve marka kimliğini yakalamak için yapılandırılmış bir yaklaşımdır. Bu bilgiler, **site_brief** belleğinizde saklanır ve ajanlar, tutarlı, bağlama duyarlı yardım sağlamak için oturumlar boyunca bu belleğe başvurur.
 

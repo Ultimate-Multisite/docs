@@ -4,7 +4,7 @@ title: فیلتر - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# فیلتر: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# فیلتر: wu_bypass_checkout_form
 
 به توسعه‌دهندگان اجازه می‌دهد خروجی را دور بزنند (bypass) و خروجی جدیدی تعیین کنند.
 

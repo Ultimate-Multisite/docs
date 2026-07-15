@@ -3,7 +3,7 @@ title: Vstavaní agenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Vstavaní agenti {#built-in-agents}
+# Vstavaní agenti
 
 Gratis AI Agent v1.9.0 obsahuje päť vstavaných agentov, každý je predkonfigurovaný so zameranou sadou nástrojov, prispôsobeným systémovým promptom a úvodnými návrhmi zodpovedajúcimi bežným úlohám v danej oblasti. Prepínanie medzi agentmi mení to, čo môže asistent robiť a ako odpovedá — bez akejkoľvek konfigurácie z vašej strany. Superdav AI Agent v1.18.0 môže do týchto pracovných postupov pridať nástroje zohľadňujúce rozvrh, záznamy pripomienok, schvaľovacie brány a SMS upozornenia, keď sú nakonfigurované súvisiace integrácie.
 

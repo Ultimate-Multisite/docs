@@ -4,7 +4,7 @@ title: कृती - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Action: wu_before_light_ajax {#action-wubeforelightajax}
+# Action: wu_before_light_ajax
 
 काही वेळा, ॲक्शन (actions) हाताळण्यासाठी आपल्याला अतिरिक्त कार्यक्षमता (extra juice) लोड करण्याची गरज पडेल.
 

@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Gníomh: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Gníomh: wp_ultimo_gocardless_load
 
 Spreagtar é nuair a lódáladh na spleáchais go léir
 

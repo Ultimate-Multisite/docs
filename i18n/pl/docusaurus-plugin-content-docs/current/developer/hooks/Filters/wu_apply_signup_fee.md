@@ -4,7 +4,7 @@ title: Filtr - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filtr: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Filtr: wu_apply_signup_fee
 
 Określa, czy opłata za rejestrację ma być naliczana.
 

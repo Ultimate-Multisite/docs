@@ -4,7 +4,7 @@ title: Aðgerð - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Aðgerð: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Aðgerð: wp_ultimo_affiliatewp_deactivation
 
 Leyfðu öðrum hlutum pluginsins að tengja sínar rútínur fyrir afvirkjun
 

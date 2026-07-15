@@ -3,7 +3,7 @@ title: Multi-hálózatos változtathatatoló lista
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network Kiadásló Napló {#multi-network-changelog}
+# Multi-Network Kiadásló Napló
 
 ### 1.3.0 {#130}
 * Új: Hálózat sablon előnézője — vásárlás előtt böngészhet és előnézheti a hálózat sablonokat egy élő panelen.

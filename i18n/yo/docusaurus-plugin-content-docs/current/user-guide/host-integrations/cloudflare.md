@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Ìṣepọ̀ Cloudflare {#cloudflare-integration}
+# Ìṣepọ̀ Cloudflare
 
 ## Àkótán {#overview}
 Cloudflare jẹ́ nẹ́tíwọ́ọ̀kì ìfijiṣẹ akoonu (CDN) àti olupèsè ààbò tó gbajúmọ̀ tó ń ràn wẹ́ẹ̀bù lọ́wọ́ láti dáàbò bo ara wọn àti láti yára sí i. Ìṣepọ̀ yìí ń jẹ́ kí iṣakoso domain láàárín Ultimate Multisite àti Cloudflare ṣẹlẹ̀ laifọwọyi, pàápàá fún àwọn fifi sori multisite subdomain.

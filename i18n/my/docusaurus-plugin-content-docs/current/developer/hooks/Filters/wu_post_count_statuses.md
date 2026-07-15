@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Plugin developer များအနေဖြင့် မည်သည့် post status များကို ရေတွက်သင့်သည်ကို ပြောင်းလဲခွင့်ပေးပါသည်။ ပုံမှန်အားဖြင့် published နှင့် private post များကို ရေတွက်ပါသည်။
 

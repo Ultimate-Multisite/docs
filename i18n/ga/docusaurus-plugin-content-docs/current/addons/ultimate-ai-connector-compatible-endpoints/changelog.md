@@ -3,7 +3,7 @@ title: Nascóir AI Uachtarach do Chríochphointí Comhoiriúnacha Log Athruithe
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Loga Athruithe Ultimate AI Connector for Chríochphointí Comhoiriúnacha {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Loga Athruithe Ultimate AI Connector for Chríochphointí Comhoiriúnacha
 
 ## Leagan 2.0.0 — Eisithe ar 2026-04-24 {#version-200--released-on-2026-04-24}
 

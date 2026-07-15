@@ -3,7 +3,7 @@ title: 'Lesona 7: Ataovy ho anao'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lesona 7: Ataovy Ho Anao Manokana {#lesson-7-making-it-yours}
+# Lesona 7: Ataovy Ho Anao Manokana
 
 Tsy tokony hahatsapa mihitsy ny mpanjifanao fa mampiasa "plugin WordPress sasantsasany" izy ireo. Tokony hahatsapa izy ireo fa mampiasa FitSite -- sehatra iray naorina ho an'ny indostrian'izy ireo. Ity lesona ity dia miresaka marika, white-labeling, ary ny fomba hahatonga ilay sehatra ho toy ny vokatra.
 

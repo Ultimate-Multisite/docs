@@ -4,7 +4,7 @@ title: Ֆիլտր - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Զտիչ՝ wu_pre_save_settings {#filter-wupresavesettings}
+# Զտիչ՝ wu_pre_save_settings
 
 Թույլ է տալիս մշակողներին զտել կարգավորումները նախքան Ultimate Multisite-ի կողմից պահպանումը։
 

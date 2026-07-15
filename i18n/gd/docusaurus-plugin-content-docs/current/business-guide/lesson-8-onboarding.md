@@ -3,7 +3,7 @@ title: 'Leasan 8: Inntrigeadh Luchd-ceannach'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Leasan 8: Cur Luchd-ceannach air Bhonn {#lesson-8-customer-onboarding}
+# Leasan 8: Cur Luchd-ceannach air Bhonn
 
 Chan eil toirt air neach-ceannach clàradh ach leth na h-obrach. Ma logas iad a-steach, ma bhios iad fo bhrùthadh, agus mura till iad gu bràth, tha thu air an call. Tha an leasan seo a’ dealbhadh na h-eòlas a thionndaidheas clàradh ùr gu neach-ceannach gnìomhach, an sàs.
 

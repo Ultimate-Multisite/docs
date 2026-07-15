@@ -3,7 +3,7 @@ title: Datblygu Porth wedi’i Deilwra
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Datblygu Gateway Personol {#custom-gateway-development}
+# Datblygu Gateway Personol
 
 Gallwch greu pyrth talu personol drwy ymestyn y dosbarth `Base_Gateway`.
 

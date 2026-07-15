@@ -3,7 +3,7 @@ title: Інтыграцыя з панэлі Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Інтеграцыя з Hestia Control Panel {#hestia-control-panel-integration}
+# Інтеграцыя з Hestia Control Panel
 
 Гутэе паказана, як накіраваць і ўсталяваць інтэграцыю Ultimate Multisite з Hestia, каб мапіраваныя домены ў вашай сетцы аўтаматычна дадаваліся (і выдаляліся) як Web Domain Aliases у Hestia.
 

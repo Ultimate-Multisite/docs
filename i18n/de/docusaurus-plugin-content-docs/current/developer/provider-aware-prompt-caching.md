@@ -3,7 +3,7 @@ title: Provider-Aware Prompt Caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
+# Provider-Aware Prompt Caching
 
 Superdav AI Agent v1.12.0 führt **provider-aware prompt caching** ein. Dies optimiert die API-Kosten und die Latenz, indem Prompts über verschiedene LLM-Provider hinweg zwischengespeichert werden. Jeder Provider hat unterschiedliche Caching-Mechanismen und Konfigurationen.
 

@@ -3,7 +3,7 @@ title: 커뮤니티
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community 가입 방법 {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Community 가입 방법
 
 Ultimate Multisite Community는 다른 Ultimate Multisite 사용자들과 소통하고 팁, 경험 등을 공유할 수 있는 공간입니다. Ultimate Multisite Community에 접속하려면 https://community.ultimatemultisite.com/home 로 이동하세요.
 

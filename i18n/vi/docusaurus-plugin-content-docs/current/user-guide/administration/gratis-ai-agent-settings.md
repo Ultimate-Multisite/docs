@@ -3,7 +3,7 @@ title: Cài đặt Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Cài đặt Gratis AI Agent {#gratis-ai-agent-settings}
+# Cài đặt Gratis AI Agent
 
 Màn hình **Settings → Advanced** trong Gratis AI Agent cung cấp cấu hình cấp quản trị viên cho các tích hợp backend. Trang này ghi lại việc chuyển tiếp phản hồi, khóa nhà cung cấp tìm kiếm, thiết lập dịch vụ Superdav được quản lý, điều khiển Google Calendar, cài đặt SMS TextBee và các cờ tính năng trên toàn mạng.
 

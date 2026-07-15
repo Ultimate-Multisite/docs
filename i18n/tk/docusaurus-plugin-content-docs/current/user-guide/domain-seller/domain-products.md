@@ -3,7 +3,7 @@ title: Alanlar we narapdaşlyk
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Alanlar Ürünleri we Narahatlik (Pricing) {#domain-products-and-pricing}
+# Alanlar Ürünleri we Narahatlik (Pricing)
 
 Alanlar ürünleri, narahatlik (pricing), TLD'ler (Top-Level Domains), WHOIS gizliliği we provayderini saýlaýan usullar barada size kontrol bermegi üçündir. Her bir alanlar ürünü standart Multisite Ultimate ürünü bolup, ona **Domain Settings** tabyny hasaplaýan ek tab aşakdaky ýaly.
 

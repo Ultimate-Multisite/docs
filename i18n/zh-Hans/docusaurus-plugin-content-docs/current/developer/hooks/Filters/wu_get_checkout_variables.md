@@ -4,7 +4,7 @@ title: 过滤器 - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# 过滤器：wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# 过滤器：wu_get_checkout_variables
 
 允许插件开发者过滤结账页面的预设值。
 

@@ -4,7 +4,7 @@ title: ფილტრი - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# ფილტრი: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# ფილტრი: wu_stripe_existing_product_id
 
 ფილტრავს იმ პროდუქტის ID-ს, რომლის შემოწმებაც უნდა მოხდეს. თუ ის არსებობს, ახალი გამოწერა ამ პროდუქტს გამოიყენებს.
 

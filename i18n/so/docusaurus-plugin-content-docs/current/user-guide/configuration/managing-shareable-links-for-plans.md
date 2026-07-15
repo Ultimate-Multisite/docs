@@ -3,7 +3,7 @@ title: Maareynta Xiriirka Laagaha Lagu Waraabixin Karo ee Qorshayaasha
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Maareynta Xiriirka La Bixiya ee Qorshayaasha (Plans) {#managing-shareable-links-for-plans}
+# Maareynta Xiriirka La Bixiya ee Qorshayaasha (Plans)
 
 Ultimate Multisite wuxuu si aad u oggolaanayaa inaad xiriirka qorshahaas si toos ah ugu qaybiso macaamiishaada. Si aad u samayso, tag mid ka mid ah bogga wax-soo-jeedinta (edit pages) ee qorshayaashiiaga oo riix badhanka "_Click to copy the Shareable Link_" (Riix si aad u nuquldo Xiriirka La Bixiya).
 

@@ -3,7 +3,7 @@ title: 'Lectio 1: Cur mercatus specialis vincit'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lectio 1: Cur segmentum speciale vincat {#lesson-1-why-niche-wins}
+# Lectio 1: Cur segmentum speciale vincat
 
 Antequam ullum software tangamus, intellegere debes cur aedificare pro auditorio certo sit una gravissima sententia quam facturus es.
 

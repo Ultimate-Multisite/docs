@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# عمل: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# عمل: wp_ultimo_vat_deactivation
 
 پلگ اِن جي ٻين حصن کي غيرفعال ڪرڻ لاءِ پنهنجون روٽينون ڳنڍڻ ڏيو
 

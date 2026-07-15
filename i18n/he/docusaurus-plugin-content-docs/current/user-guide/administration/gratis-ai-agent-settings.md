@@ -3,7 +3,7 @@ title: הגדרות Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# הגדרות Gratis AI Agent {#gratis-ai-agent-settings}
+# הגדרות Gratis AI Agent
 
 מסך **Settings → Advanced** ב-Gratis AI Agent מספק תצורה ברמת מנהל עבור אינטגרציות צד שרת. עמוד זה מתעד העברת משוב, מפתחות ספקי חיפוש, הגדרת שירות Superdav מנוהל, בקרות Google Calendar, הגדרות SMS של TextBee ודגלי תכונות ברמת הרשת.
 

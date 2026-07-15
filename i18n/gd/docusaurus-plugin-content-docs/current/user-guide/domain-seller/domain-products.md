@@ -3,7 +3,7 @@ title: Produin agus prìsan domhainn
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Productine agus Prìsan {#domain-products-and-pricing}
+# Productine agus Prìsan
 
 Tha productine domain is am fhaighinn air a tha thu a' tuilleadh ar prìsan, TLDs (Top-Level Domains), privacy WHOIS, agus choinnachadh an t-saobar. Tha chada productine domain mar product Ultimate Multisite a tha deàrraidhach le tab **Domain Settings** a tha fhaighinn air.
 

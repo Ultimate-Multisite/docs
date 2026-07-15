@@ -3,7 +3,7 @@ title: Igitabo cyifashishwa cy’Ubushobozi
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Igitabo cy'Ubushobozi {#abilities-reference}
+# Igitabo cy'Ubushobozi
 
 Ubushobozi ni ibikorwa fatizo Gratis AI Agent ishobora gukoresha ku ishyirwaho ryawe rya WordPress. Buri bushobozi ni PHP class yanditswe igaragaza JSON schema — agent isoma iyi schema mu gihe cyo gukora kugira ngo yumve parameter zisabwa n'ibyo ubushobozi bugarura.
 

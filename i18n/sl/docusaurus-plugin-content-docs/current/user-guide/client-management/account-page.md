@@ -3,7 +3,7 @@ title: Stranica računa stranke
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Vaša stran za stranke (v2) {#your-clients-account-page-v2}
+# Vaša stran za stranke (v2)
 
 _**POMEMBEN OPOMENJEV: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 

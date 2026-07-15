@@ -4,7 +4,7 @@ title: စစ်ထုတ်မှု - wu_maybe_redirect_to_admin_panel_exclusi
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Filter: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Filter: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 အလိုအလျောက် လမ်းကြောင်းပြောင်းခြင်းကို တားမြစ်မည့် parameters များ စာရင်းကို ဖန်တီးပေးသည်။
 

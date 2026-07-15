@@ -3,7 +3,7 @@ title: Tham khảo Khả năng
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tham chiếu Abilities {#abilities-reference}
+# Tham chiếu Abilities
 
 Abilities là các hành động nguyên tử mà Gratis AI Agent có thể gọi trên bản cài đặt WordPress của bạn. Mỗi ability là một lớp PHP đã đăng ký, hiển thị một schema JSON — agent đọc schema này lúc chạy để hiểu những tham số nào là bắt buộc và ability trả về gì.
 

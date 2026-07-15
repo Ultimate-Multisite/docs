@@ -4,7 +4,7 @@ title: Hohenga - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Mahi: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Mahi: wp_ultimo_support_agents_activation
 
 Tukua ētahi atu wāhanga o te monomai kia tāpiri i ā rātou tukanga mō te whakahohe
 

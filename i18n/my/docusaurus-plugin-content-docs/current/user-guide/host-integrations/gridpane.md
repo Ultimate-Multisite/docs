@@ -3,7 +3,7 @@ title: GridPane ပေါင်းစည်းမှု
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ပေါင်းစည်းခြင်း {#gridpane-integration}
+# GridPane ပေါင်းစည်းခြင်း
 
 ## ခြုံငုံသုံးသပ်ချက် {#overview}
 GridPane သည် ကျွမ်းကျင်သော WordPress ပရော်ဖက်ရှင်နယ်များအတွက် အထူးတည်ဆောက်ထားသော WordPress hosting control panel တစ်ခုဖြစ်သည်။ ဤပေါင်းစည်းခြင်းသည် Ultimate Multisite နှင့် GridPane အကြား domain များကို အလိုအလျောက် sync လုပ်ခြင်းနှင့် SSL certificate စီမံခန့်ခွဲခြင်းတို့ကို လုပ်ဆောင်နိုင်စေပါသည်။

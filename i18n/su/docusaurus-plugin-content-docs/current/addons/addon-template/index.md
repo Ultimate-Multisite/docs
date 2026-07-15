@@ -3,9 +3,9 @@ title: Citakan Tambihan
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Citakan Addon {#addon-template}
+# Citakan Addon
 
-{{ADDON_DESCRIPTION}}
+Citakan Tambihan — Ultimate Multisite.
 
 ## Sarat {#requirements}
 

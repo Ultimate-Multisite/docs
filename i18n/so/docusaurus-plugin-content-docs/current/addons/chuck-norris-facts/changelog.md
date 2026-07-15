@@ -3,7 +3,7 @@ title: Diiwaanka isbeddellada Xaqiiqooyinka Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Diiwaanka isbeddellada Xaqiiqooyinka Chuck Norris {#chuck-norris-facts-changelog}
+# Diiwaanka isbeddellada Xaqiiqooyinka Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Lagu daray: Shaqeynta cusboonaysiinta otomaatiga ah iyada oo loo marayo server-ka cusboonaysiinta Ultimate Multisite

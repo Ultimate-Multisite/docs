@@ -3,7 +3,7 @@ title: 附加元件 Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 為外掛（add-ons）和需要於 WordPress 啟動（sunrise bootstrapping）期間運行自訂 MU-plugin 整合的用戶提供了「Sunrise 擴充檔案載入器」。這樣可以避免直接修改生成的 `wp-content/sunrise.php` 檔案。
 

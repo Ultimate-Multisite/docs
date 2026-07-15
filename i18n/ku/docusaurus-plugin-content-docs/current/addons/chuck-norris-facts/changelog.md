@@ -3,7 +3,7 @@ title: Têketina Guherandinan a Rastiyên Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Guhertinên Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Guhertinên Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Hate zêdekirin: Karbarê nûkirina xweber bi rêya Ultimate Multisite update server

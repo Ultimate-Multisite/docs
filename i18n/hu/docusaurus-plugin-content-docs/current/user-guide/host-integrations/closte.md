@@ -3,7 +3,7 @@ title: Closte integráció
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte integráció {#closte-integration}
+# Closte integráció
 
 ## Áttekintés {#overview}
 A Closte egy menedzselt WordPress hosting platform, amely a Google Cloud infrastruktúrájára épül. Ez az integráció lehetővé teszi az automatikus domain szinkronizálást és SSL tanúsítvány kezelést az Ultimate Multisite és a Closte között.

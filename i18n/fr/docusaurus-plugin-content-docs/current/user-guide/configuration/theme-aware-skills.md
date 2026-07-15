@@ -3,7 +3,7 @@ title: Compétences adaptées au thème
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Fonctionnalités adaptées au thème {#theme-aware-skills}
+# Fonctionnalités adaptées au thème
 
 Superdav AI Agent v1.10.0 inclut quatre nouvelles fonctionnalités intégrées adaptées au thème, qui s'ajustent automatiquement à votre thème WordPress actif. Ces fonctionnalités fournissent des conseils et des capacités spécialisés, adaptés à l'architecture et aux fonctionnalités de votre thème.
 

@@ -4,7 +4,7 @@ title: Toiminto - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Toiminto: wu_domain_mapping_load {#action-wudomainmappingload}
+# Toiminto: wu_domain_mapping_load
 
 Suoritetaan sen jälkeen, kun ydintason verkkotunnusten kartoitus on ladattu
 

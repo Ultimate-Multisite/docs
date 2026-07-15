@@ -4,7 +4,7 @@ title: 抱歉，我没有收到要翻译的具体内容。请提供该 Markdown/
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# 过滤器: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# 过滤器: wu_apc_process_page_content
 
 允许开发者修改最终内容
 

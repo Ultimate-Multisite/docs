@@ -3,7 +3,7 @@ title: 플랜의 공유 가능한 링크 관리
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# 요금제의 공유 가능한 링크 관리 {#managing-shareable-links-for-plans}
+# 요금제의 공유 가능한 링크 관리
 
 Ultimate Multisite는 고객과 요금제 링크를 직접 공유할 수 있는 옵션을 제공합니다. 이렇게 하려면 요금제의 편집 페이지 중 하나로 이동하여 _공유 가능한 링크를 복사하려면 클릭_ 버튼을 클릭하세요.
 

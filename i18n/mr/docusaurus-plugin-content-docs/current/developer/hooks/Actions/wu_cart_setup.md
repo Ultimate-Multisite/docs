@@ -4,7 +4,7 @@ title: कृती - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# कृती: wu_cart_setup {#action-wucartsetup}
+# कृती: wu_cart_setup
 
 डेव्हलपर्सना चेकआउट ऑब्जेक्टमध्ये अतिरिक्त बदल करण्याची संधी मिळते.
 

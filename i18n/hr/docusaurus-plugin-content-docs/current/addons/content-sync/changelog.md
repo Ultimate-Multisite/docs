@@ -3,7 +3,7 @@ title: Dnevnik promjena sinkronizacije sadržaja
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Dnevnik promjena za Content Sync {#content-sync-changelog}
+# Dnevnik promjena za Content Sync
 
 ### Verzija 1.1.0 - Objavljeno 2025-12-31 {#version-110---released-on-2025-12-31}
 * Novo: Podrška za sinkronizaciju svih vrsta objava (objave, stranice, prilagođene vrste objava)

@@ -3,7 +3,7 @@ title: Uppsetning á Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Uppsetning á Ultimate Multisite {#installing-ultimate-multisite}
+# Uppsetning á Ultimate Multisite
 
 :::note
 Þessi kennsluefni gerir ráð fyrir að þú hafir þegar sett upp og stillt WordPress Multisite. Til að læra hvernig, skoðaðu [þetta kennsluefni](https://www.wpbeginner.com/glossary/multisite/) frá WP Beginner.

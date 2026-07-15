@@ -4,7 +4,7 @@ title: Parzûn - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Parzûn: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Parzûn: wu_checkout_step_validation_submittable_field_types
 
 Destûrê dide pêşdebirên ku venêrînê derbas bikin heke qadek bixweber şandbar be.
 

@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 தரவுத்தளத்தில் (database) தரவு சேமிக்கப்படுவதற்கு முன், ஆப்ஜெக்ட் தரவை (object data) இது வடிகட்டுகிறது.
 

@@ -3,7 +3,7 @@ title: Whakarite i te Constant Sunrise ki te Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Whakaritenga i te constant Sunrise ki 'true' i te Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Whakaritenga i te constant Sunrise ki 'true' i te Closte
 
 Kei ngā pūtaiao (host providers) mōhio, e whakawāke ana te wp-config.php mō āhuatanga āhuatanga me te whaiaro. He tino mea e hoki ai ki te Ultimate Multisite kia whakaaahi i te file akorua (file) ki te whai constants (constant) e pēnei i te domain mapping me ngā āhuatanga katoa kia maha atu. Ko Closte he pūtaiao mōhio.
 

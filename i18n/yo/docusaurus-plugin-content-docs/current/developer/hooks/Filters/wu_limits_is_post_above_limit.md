@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Ṣàyẹ̀wò bóyá post type kan pato ni a gba laaye lori plan yìí Gba àwọn olùdàgbàsókè plugin laaye láti ṣe àlẹ̀mọ́ iye tí a dá padà
 

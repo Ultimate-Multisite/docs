@@ -3,7 +3,7 @@ title: Gestió de Pagaments i Factures
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestion de Pagaments i Factures {#managing-payments-and-invoices}
+# Gestion de Pagaments i Factures
 
 ## Configuració de Pagaments {#payment-settings}
 

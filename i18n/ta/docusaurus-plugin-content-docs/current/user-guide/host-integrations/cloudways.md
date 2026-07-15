@@ -3,7 +3,7 @@ title: Cloudways ஒருங்கிணைப்பு
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ஒருங்கிணைப்பு {#cloudways-integration}
+# Cloudways ஒருங்கிணைப்பு
 
 ## கண்ணோட்டம் {#overview}
 Cloudways என்பது நிர்வகிக்கப்படும் cloud hosting தளம். இது DigitalOcean, AWS, Google Cloud போன்ற பல cloud வழங்குநர்களில் WordPress தளங்களை அமைக்க உதவுகிறது. இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் Cloudways இடையே தானியங்கி domain ஒத்திசைவு மற்றும் SSL சான்றிதழ் மேலாண்மையைச் செயல்படுத்துகிறது.

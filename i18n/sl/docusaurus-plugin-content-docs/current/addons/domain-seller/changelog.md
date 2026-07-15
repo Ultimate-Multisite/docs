@@ -3,7 +3,7 @@ title: Dnevnik sprememb prodajalca domen
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Dnevnik sprememb Domain Seller {#domain-seller-changelog}
+# Dnevnik sprememb Domain Seller
 
 Različica 1.3.0 - Izdano 2026-06-02
 - Novo: Dodano opozorilo za network-admin, ko stanje preprodajalca HostAfrica pade prenizko

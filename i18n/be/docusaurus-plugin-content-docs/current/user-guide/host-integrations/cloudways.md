@@ -3,7 +3,7 @@ title: Інтыграцыя Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Інтеграцыя з Cloudways {#cloudways-integration}
+# Інтеграцыя з Cloudways
 
 ## Агляд {#overview}
 Cloudways — гэта платформа кіраванага хэастынгу ў «блакавым» (cloud) стылі, якая дазваляе вам размяшчаць сайты WordPress на розных пастаўшчыках хэастынгу, такіх як DigitalOcean, AWS, Google Cloud і інш. Гэтая інтэграцыя дазваляе аўтаматычна синхронізаваць домены і кіраваць сертыфікамі SSL паміж Ultimate Multisite і Cloudways.

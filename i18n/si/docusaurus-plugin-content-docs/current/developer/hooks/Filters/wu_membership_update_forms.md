@@ -4,7 +4,7 @@ title: පෙරහන - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# පෙරහන: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# පෙරහන: wu_membership_update_forms
 
 නව යාවත්කාලීන පෝරම slug එක් කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
 

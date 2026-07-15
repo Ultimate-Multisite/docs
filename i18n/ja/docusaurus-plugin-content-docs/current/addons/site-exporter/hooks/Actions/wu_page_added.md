@@ -4,7 +4,7 @@ title: アクション - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# アクション: wu_page_added {#action-wupageadded}
+# アクション: wu_page_added
 
 プラグイン開発者がページが登録されたときに追加の処理を実行できるようにします。
 

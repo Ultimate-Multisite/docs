@@ -4,7 +4,7 @@ title: Parzûn - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Parzûn: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Parzûn: wu_password_require_number
 
 Parzûn bike ka di şîfreyan de hejmara pêwîst be yan na.
 

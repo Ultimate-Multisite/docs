@@ -3,7 +3,7 @@ title: L-installazzjoni ta' Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installazzjoni ta' Ultimate Multisite {#installing-ultimate-multisite}
+# Installazzjoni ta' Ultimate Multisite
 
 :::note
 Dan it-tutorjal jassumi li diġà għandek WordPress Multisite installat u konfigurata. Biex titgħallem kif, iċċekkja [dan it-tutorjal](https://www.wpbeginner.com/glossary/multisite/) minn WP Beginner.

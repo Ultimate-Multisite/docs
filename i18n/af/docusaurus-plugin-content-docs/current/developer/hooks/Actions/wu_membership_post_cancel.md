@@ -4,7 +4,7 @@ title: Action - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Aksie: wu_membership_post_cancel {#action-wumembershippostcancel}
+# Aksie: wu_membership_post_cancel
 
 Word geaktiveer nadat die lidmaatskap gekanselleer is.
 

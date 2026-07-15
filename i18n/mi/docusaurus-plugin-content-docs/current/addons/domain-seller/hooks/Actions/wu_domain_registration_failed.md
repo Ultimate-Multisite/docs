@@ -4,7 +4,7 @@ title: Mahi - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Mahi: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Mahi: wu_domain_registration_failed
 
 Ka whakaohohia i muri i te rahunga o tētahi nganatanga rēhita domain.
 

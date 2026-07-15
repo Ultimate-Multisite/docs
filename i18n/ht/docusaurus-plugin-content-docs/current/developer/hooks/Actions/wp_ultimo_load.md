@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Aksyon: wp_ultimo_load {#action-wpultimoload}
+# Aksyon: wp_ultimo_load
 
 Deklanche lè tout depandans yo te chaje
 

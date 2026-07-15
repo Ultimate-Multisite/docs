@@ -3,7 +3,7 @@ title: שפר את אינטגרציית לוח הבקרה
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# אינטגרציה עם לוח הבקרה Enhance {#enhance-control-panel-integration}
+# אינטגרציה עם לוח הבקרה Enhance
 
 ## סקירה כללית {#overview}
 Enhance הוא לוח בקרה מודרני המספק יכולות אוטומציה וניהול אירוח חזקות. האינטגרציה הזו מאפשרת סנכרון דומיינים אוטומטי וניהול תעודות SSL בין Ultimate Multisite ללוח הבקרה של Enhance.

@@ -3,7 +3,7 @@ title: Créer un menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Créer un menu {#create-menu}
+# Créer un menu
 
 La capacité **Créer un menu** permet de créer des menus de navigation WordPress avec la possibilité de définir des libellés de navigation distincts des titres de page.
 

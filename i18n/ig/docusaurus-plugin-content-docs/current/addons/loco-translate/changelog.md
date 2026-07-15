@@ -3,7 +3,7 @@ title: Loco Translate Ndekọ mgbanwe
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Ndekọ mgbanwe Loco Translate {#loco-translate-changelog}
+# Ndekọ mgbanwe Loco Translate
 
 ### 1.0.1 {#101}
 * Meziwanye ndakọrịta na ụdị Loco Translate kacha ọhụrụ

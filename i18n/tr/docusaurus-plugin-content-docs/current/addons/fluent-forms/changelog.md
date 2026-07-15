@@ -3,7 +3,7 @@ title: Fluent Forms Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms Değişiklik Günlüğü {#fluent-forms-changelog}
+# Fluent Forms Değişiklik Günlüğü
 
 Sürüm: 2.0.1 - Yayınlanma Tarihi: 2025-09-28
 

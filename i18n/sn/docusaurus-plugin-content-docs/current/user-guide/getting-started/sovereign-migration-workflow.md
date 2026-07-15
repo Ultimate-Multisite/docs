@@ -3,7 +3,7 @@ title: Mavhango ekugadzirwa kweSovereign Migration
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Yekuruwe Sovereign {#sovereign-migration-workflow}
+# Workflow Yekuruwe Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inenge kuita vhizha zvekuviri (migration verification gates) kuti mupedzisira unenge uri kuita migration kubva kune subsite yakachengetedza ku infrastructure ya sovereign tenant.
 

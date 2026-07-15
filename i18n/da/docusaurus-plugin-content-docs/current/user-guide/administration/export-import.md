@@ -3,7 +3,7 @@ title: Eksport & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportér & Importer {#export--import}
+# Eksportér & Importer
 
 Ultimate Multisite 2.9.0 tilføjer et enkelt single-site **Eksportér & Importer** værktøj under **Værktøjer > Eksportér & Importer**. Brug det, når du skal pakke én WordPress-side som en ZIP-fil, gendanne den ZIP, eller flytte en side mellem kompatible Ultimate Multisite og single-site WordPress-installationer.
 

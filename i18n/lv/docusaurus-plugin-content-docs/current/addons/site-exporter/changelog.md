@@ -3,7 +3,7 @@ title: Vietnes eksportētāja izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter izmaiņu žurnāls {#site-exporter-changelog}
+# Site Exporter izmaiņu žurnāls
 
 Versija: 1.0.6 - Izlaista 2026-05-11
 * Jauns: Vietņu eksporti tagad iekļauj pašpalaižamu index.php, lai ZIP varētu instalēt uz jauna hosta bez atsevišķas plugin instalēšanas

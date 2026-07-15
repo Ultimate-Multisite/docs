@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Acțiune: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Acțiune: wp_ultimo_captcha_deactivation
 
 Permite altor părți ale plugin-ului să își atașeze rutinele pentru dezactivare.
 

@@ -3,7 +3,7 @@ title: ايڊآن جي ترقي سان شروعات ڪرڻ
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon ترقي {#addon-development}
+# Addon ترقي
 
 ## Addon جو ڍانچو {#addon-structure}
 

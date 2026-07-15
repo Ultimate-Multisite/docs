@@ -4,7 +4,7 @@ title: ఫిల్టర్ - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filter: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Filter: wu_get_checkout_variables
 
 చెక్అవుట్ పేజీ యొక్క ప్రీ-సెట్‌లను ఫిల్టర్ చేయడానికి ప్లగిన్ డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
 

@@ -3,7 +3,7 @@ title: Fluent Forms Diarium mutationum
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms Index Mutationum {#fluent-forms-changelog}
+# Fluent Forms Index Mutationum
 
 Versio: 2.0.1 - Edita die 2025-09-28
 

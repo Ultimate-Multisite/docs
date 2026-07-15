@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Àlẹmọ: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Àlẹmọ: wu_checkout_field_types
 
 Àwọn API wa láti fi àwọn iru field tuntun kún un wọlé síbí.
 

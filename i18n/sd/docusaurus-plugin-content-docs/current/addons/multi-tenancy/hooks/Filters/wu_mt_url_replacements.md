@@ -4,7 +4,7 @@ title: فلٽر - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# فلٽر: wu_mt_url_replacements {#filter-wumturlreplacements}
+# فلٽر: wu_mt_url_replacements
 
 URL مٽاسٽا جا جوڙا فلٽر ڪريو.
 

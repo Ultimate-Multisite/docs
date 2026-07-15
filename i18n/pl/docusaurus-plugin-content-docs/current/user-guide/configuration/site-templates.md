@@ -3,7 +3,7 @@ title: Szablony witryn
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Szablony witryn (v2) {#site-templates-v2}
+# Szablony witryn (v2)
 
 _**UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x. Jeśli używasz wersji 1.x,**_ **zobacz ten artykuł** _**.**_
 

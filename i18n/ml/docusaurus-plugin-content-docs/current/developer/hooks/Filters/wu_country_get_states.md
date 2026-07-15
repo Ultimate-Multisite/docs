@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states {#filter-wucountrygetstates}
+# Filter: wu_country_get_states
 
 ഈ രാജ്യത്തിൻ്റെ സംസ്ഥാനങ്ങളുടെ ലിസ്റ്റ് നൽകുന്നു.
 

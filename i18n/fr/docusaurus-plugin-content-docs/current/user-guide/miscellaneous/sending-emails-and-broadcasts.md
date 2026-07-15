@@ -3,7 +3,7 @@ title: Envoi d’e-mails et de diffusions
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Envoi d’e-mails et de diffusions (v2) {#sending-emails-and-broadcasts-v2}
+# Envoi d’e-mails et de diffusions (v2)
 
 _**NOTE IMPORTANTE : cet article concerne Ultimate Multisite version 2.x.**_
 

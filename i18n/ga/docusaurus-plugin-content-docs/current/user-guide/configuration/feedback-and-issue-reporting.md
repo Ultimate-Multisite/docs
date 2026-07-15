@@ -3,7 +3,7 @@ title: Féidhm Ógreachais agus Déanamh Rincí Gaelach
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback Óglaigh agus Déanamh Roinnítíochta Eolas {#customer-feedback--issue-reporting}
+# Feedback Óglaigh agus Déanamh Roinnítíochta Eolas
 
 Is é AI Agent grátis v1.5.0 ag cur isteach ró-ghníomhú (feedback) agus déanamh roinnítíochta eolas a bhaineann leat, a leas do chuidaithe end-users a chur in áit na héifeachtach ar na tapa agus a chur ar fáil próiseanna go díreach ó chuid chat interface. Is é an raon seo ag cur iad ar bhealach chun cur isteach (consent management), command roinnítíochta automatach, agus triage le feidhm AI ar an seachtain.
 

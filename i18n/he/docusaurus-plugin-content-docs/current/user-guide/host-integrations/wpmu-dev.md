@@ -3,7 +3,7 @@ title: שילוב WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# אינטגרציה עם WPMU DEV {#wpmu-dev-integration}
+# אינטגרציה עם WPMU DEV
 
 ## סקירה כללית {#overview}
 WPMU DEV היא פלטפורמת WordPress מקיפה שמציעה אחסון, תוספים ושירותים לאתרי WordPress. האינטגרציה הזו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite לאחסון WPMU DEV.

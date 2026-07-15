@@ -3,7 +3,7 @@ title: 域名产品与定价
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# 域名产品和定价 {#domain-products-and-pricing}
+# 域名产品和定价
 
 域产品是您用来控制定价、TLD、WHOIS隐私和提供商选择的方式。每个域产品都是一个标准的 Ultimate Multisite 产品，但会额外增加一个 **域名设置 (Domain Settings)** 标签页。
 

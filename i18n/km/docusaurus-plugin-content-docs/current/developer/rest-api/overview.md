@@ -3,7 +3,7 @@ title: ទិដ្ឋភាពទូទៅនៃ REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# ឯកសារយោង REST API {#rest-api-reference}
+# ឯកសារយោង REST API
 
 ## ការកំណត់រចនាសម្ព័ន្ធមូលដ្ឋាន {#base-configuration}
 

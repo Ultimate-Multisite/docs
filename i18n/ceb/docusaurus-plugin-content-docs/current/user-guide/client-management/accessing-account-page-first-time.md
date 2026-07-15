@@ -3,7 +3,7 @@ title: Pag-access sa Pahina sa Account
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Unsaon nako pag-access sa akong account page sa unang higayon? {#how-can-i-access-my-account-page-for-the-first-time}
+# Unsaon nako pag-access sa akong account page sa unang higayon?
 
 Welcome sa Ultimate Multisite!
 

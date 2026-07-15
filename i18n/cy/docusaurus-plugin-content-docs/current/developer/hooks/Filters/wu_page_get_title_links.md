@@ -4,7 +4,7 @@ title: Hidlydd - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Hidlydd: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Hidlydd: wu_page_get_title_links
 
 Caniatáu i ddatblygwyr plugin, ac i ni ein hunain, ychwanegu dolenni gweithredu at ein tudalennau golygu
 

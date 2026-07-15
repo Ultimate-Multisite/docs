@@ -4,7 +4,7 @@ title: 过滤器 - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# 过滤器: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# 过滤器: wu_pending_payment_message
 
 允许用户更改关于待付款的消息。
 

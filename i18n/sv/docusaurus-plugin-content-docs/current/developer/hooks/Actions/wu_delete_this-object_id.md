@@ -4,7 +4,7 @@ title: 'Action - wu_delete_{$this->object_id}'
 sidebar_label: 'wu_delete_{$this->object_id}'
 _i18n_hash: 8525ca1e747ac6a29314c90b0a52b3bb
 ---
-# Åtgärd: wu_delete_{$this->object_id} {#action-wudeletethis-objectid}
+# Åtgärd: wu_delete_{$this->object_id}
 
 Gör det möjligt för utvecklare av plugins att lägga till åtgärder i raderingsprocessen.
 

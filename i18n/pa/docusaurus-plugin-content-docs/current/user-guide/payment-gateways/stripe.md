@@ -3,7 +3,7 @@ title: Stripe ਸੈੱਟ ਅੱਪ ਕਰਨਾ
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway ਸੈੱਟਅੱਪ ਕਰਨਾ (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway ਸੈੱਟਅੱਪ ਕਰਨਾ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜ਼ਨ 2.x ਬਾਰੇ ਹੈ।**_
 

@@ -3,7 +3,7 @@ title: Personigo de via registriĝa formularo
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Agordi vian Registriĝan Formularon {#customizing-your-registration-form}
+# Agordi vian Registriĝan Formularon
 
 Por ke via reto aspektu unika kompare kun ĉiuj aliaj SaaS konstruitaj sur WordPress platformo, Ultimate Multisite permesas al vi agordi viajn registriĝajn kaj ensalutajn paĝojn per nia funkcio **Checkout Forms**.
 

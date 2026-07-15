@@ -3,7 +3,7 @@ title: کلوسټ همغږي
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# دمج کلست (Closte Integration) {#closte-integration}
+# دمج کلست (Closte Integration)
 
 ## مروری (Overview) {#overview}
 کلست (Closte) یوگل کلاؤڈ انفراسٹرکچر پر بنا شده ایک مینیجڈ ورڈپریس ہوسٹنگ پلیٹ فارم ہے۔ یہ انٹیگریشن Ultimate Multisite اور Closte کے درمیان ڈومین سنکنگ اور SSL سرٹیفکیٹ مینجمنٹ کے لیے خودکار سیٹنگز کو ممکن بناتا ہے۔

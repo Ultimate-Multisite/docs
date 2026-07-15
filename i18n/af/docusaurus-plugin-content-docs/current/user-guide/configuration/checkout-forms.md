@@ -3,7 +3,7 @@ title: Betaalvorms
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Betaalvorms {#checkout-forms}
+# Betaalvorms
 
 Betaalvorms is ’n maklike en buigsame manier om met verskillende benaderings te eksperimenteer wanneer jy probeer om nuwe kliënte te omskep.
 

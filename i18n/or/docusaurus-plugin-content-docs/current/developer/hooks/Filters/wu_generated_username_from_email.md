@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# ଫିଲ୍ଟର: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
+# ଫିଲ୍ଟର: wu_generated_username_from_email
 
 ସୃଷ୍ଟି ହୋଇଥିବା ଗ୍ରାହକ ବ୍ୟବହାରକାରୀନାମ ଫିଲ୍ଟର କରନ୍ତୁ।
 

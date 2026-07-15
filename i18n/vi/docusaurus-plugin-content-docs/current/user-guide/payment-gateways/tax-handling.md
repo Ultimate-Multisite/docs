@@ -3,7 +3,7 @@ title: Xử lý thuế
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Xử lý thuế {#tax-handling}
+# Xử lý thuế
 
 Ultimate Multisite có một mô-đun thu thuế được tích hợp trong plugin lõi của chúng tôi, vì vậy nếu bạn cần thu thuế bán hàng trên các gói, gói dịch vụ và dịch vụ của mình, bạn có thể dễ dàng thực hiện mà không cần cài đặt bất kỳ tiện ích bổ sung nào.
 

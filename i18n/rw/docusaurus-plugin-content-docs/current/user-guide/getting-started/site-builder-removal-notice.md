@@ -3,7 +3,7 @@ title: Urugero rw'Urugero rwo Gusubiza Uburyo bwo Gutegura Icyemezo
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Urugero ku Gukoresha Site Builder Mode {#site-builder-mode-removal-notice}
+# Urugero ku Gukoresha Site Builder Mode
 
 **Site Builder mode yashyemo mu Superdav AI Agent v1.12.0.** Iyo wari uri gukoresha Site Builder mode, ugomba kwihagarira **Setup Assistant agent** kugira ngo utandire theme n'uburyo bwo gutangira site.
 

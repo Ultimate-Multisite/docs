@@ -3,7 +3,7 @@ title: Ìfitónilétí Yíyọ Ipo Akọ́lé Ojúlé Kúrò
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Ìfitónilétí Yíyọ Ipo Olùkọ́ Ojúlé Kúrò {#site-builder-mode-removal-notice}
+# Ìfitónilétí Yíyọ Ipo Olùkọ́ Ojúlé Kúrò
 
 **A ti yọ ipo Olùkọ́ Ojúlé kúrò nínú Superdav AI Agent v1.12.0.** Tí o bá ń lo ipo Olùkọ́ Ojúlé, ó yẹ kí o ṣí lọ sí **Setup Assistant agent** fún ṣíṣẹ̀dá akori àti ṣíṣètò ojúlé.
 

@@ -3,7 +3,7 @@ title: Cách Cài Đặt WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Làm thế nào để cài đặt WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Làm thế nào để cài đặt WordPress Multisite?
 
 WordPress Multisite cho phép bạn có một mạng lưới các trang web trên cùng một bản cài đặt. Đây là tính năng có sẵn, nhưng không được kích hoạt mặc định.
 
@@ -61,7 +61,7 @@ Và đoạn code này (cũng do WordPress cung cấp) vào file _**.htaccess**_ 
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# thêm dấu gạch chéo vào cuối /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# thêm dấu gạch chéo vào cuối /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

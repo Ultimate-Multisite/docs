@@ -3,7 +3,7 @@ title: Inkomba yama-Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Inkomba yama-Hooks {#hooks-reference}
+# Inkomba yama-Hooks
 
 Imibhalo ekhiqizwe ngokuzenzakalelayo yawo wonke **59 actions** kanye **118 filters** ku-Ultimate Multisite.
 

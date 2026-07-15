@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Action: auth_redirect {#action-authredirect}
+# Action: auth_redirect
 
 အကောင့်ဝင်ခြင်း ပြန်လည်ညွှန်းပေးခြင်း မလုပ်ခင်မှာ အလုပ်လုပ်တဲ့ Action တစ်ခု ဖြစ်ပါတယ်။
 

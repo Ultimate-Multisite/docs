@@ -3,7 +3,7 @@ title: Cum să instalezi WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Cum instalez WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Cum instalez WordPress Multisite?
 
 WordPress Multisite îți permite să ai o rețea de site-uri într-o singură instalare. Aceasta este o funcție integrată, dar nu este activă în mod implicit.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# adaugă un slash la sfârșitul /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# adaugă un slash la sfârșitul /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

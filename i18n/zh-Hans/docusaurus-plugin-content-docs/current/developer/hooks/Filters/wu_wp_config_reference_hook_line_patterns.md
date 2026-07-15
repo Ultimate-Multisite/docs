@@ -4,7 +4,7 @@ title: 过滤器 - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# 过滤器: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# 过滤器: wu_wp_config_reference_hook_line_patterns
 
 我们检查三种模式，以确定在哪里可以注入我们的常量：
 

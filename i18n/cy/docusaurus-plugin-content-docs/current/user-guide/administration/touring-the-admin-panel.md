@@ -3,7 +3,7 @@ title: Am gwylio'r Panel Administr
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ymchyrchu'r Panel Administracion {#touring-the-admin-panel}
+# Ymchyrchu'r Panel Administracion
 
 Mae Ultimate Multisite yn ceisio fod yn einfal a ddefnyddiol yn llawn, ond gyda thrafod sydd yn bwrpasol hwnnw, gallai ei helpu i gael tour cyfarwyddiadol. Gallwch ymlaen trwy'r peidiadau administracio i helpu chi i gael eich cyflwyniad.
 

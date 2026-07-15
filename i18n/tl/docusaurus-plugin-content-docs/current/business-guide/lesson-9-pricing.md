@@ -3,7 +3,7 @@ title: 'Aralin 9: Pagpepresyo para sa Kita'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Aralin 9: Pagpepresyo para sa Kita {#lesson-9-pricing-for-profit}
+# Aralin 9: Pagpepresyo para sa Kita
 
 Sa Aralin 5 itinakda natin ang mga paunang presyo para sa mga plano ng FitSite. Ngayon, pinapahusay natin ang estratehiya sa pagpepresyo gamit ang mga teknik na nagpapataas ng kita, naghihikayat ng mga upgrade, at nagpapababa ng churn.
 

@@ -4,7 +4,7 @@ title: Aktioun - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# Aktioun: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# Aktioun: wp_ultimo_payfast_load
 
 Gëtt ausgeléist, wann all Ofhängegkeete geluede goufen
 

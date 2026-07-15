@@ -4,7 +4,7 @@ sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
 
-# דער Ultimate Multisite Register API ענדפּוינט {#the-ultimate-multisite-register-api-endpoint}
+# דער Ultimate Multisite Register API ענדפּוינט
 
 אין דעם טוטאָריאַל וועט איר זיך אויסלערנען ווי צו ניצן דעם Ultimate Multisite /register API ענדפּוינט צו שאַפֿן דעם גאַנצן אָנבאָרדינג־פּראָצעס פֿאַר אַ נײַעם קונה אין אייער נעץ, און ווי אַזוי דאָס צו טאָן מיט Zapier.
 

@@ -3,7 +3,7 @@ title: Shigarwar WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# شمولیت با WP Engine (WP Engine Integration) {#wp-engine-integration}
+# شمولیت با WP Engine (WP Engine Integration)
 
 ## مروری کلی {#overview}
 WP Engine یک پلتفرم میزبانی وردپرس مدیریت شده و ممتاز است که عملکرد بهینه، امنیت و مقیاس‌پذیری را برای سایت‌های وردپرسی فراهم می‌کند. این اتصال امکان همگام‌سازی خودکار دامنه بین Ultimate Multisite و WP Engine را فعال می‌سازد.

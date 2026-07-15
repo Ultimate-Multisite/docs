@@ -4,7 +4,7 @@ title: فلټر - د مخکتونکي لپاره د سایټ URL ترلاسه ک
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# فلټر: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# فلټر: get_site_url_for_previewer
 
 plugin جوړوونکو ته اجازه ورکوي چې هغه URL فلټر کړي چې په previewer کې کارېږي
 

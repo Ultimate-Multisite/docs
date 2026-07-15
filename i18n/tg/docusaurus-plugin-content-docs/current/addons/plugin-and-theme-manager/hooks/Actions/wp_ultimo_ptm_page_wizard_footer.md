@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# Амал: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# Амал: wp_ultimo_ptm_page_wizard_footer
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки скриптҳоро ба поёни саҳифа илова кунанд
 

@@ -4,7 +4,7 @@ title: פֿילטער - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# פֿילטער: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# פֿילטער: wp_ultimo_registration_steps
 
 לייגט צו נאָך שריט דורך פֿילטערס
 

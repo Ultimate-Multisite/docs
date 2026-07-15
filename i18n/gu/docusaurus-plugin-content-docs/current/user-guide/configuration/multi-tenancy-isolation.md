@@ -3,7 +3,7 @@ title: મલ્ટી-ટેનન્સી આઇસોલેશન
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# મલ્ટિ-ટેનન્સી આઇસોલેશન (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# મલ્ટિ-ટેનન્સી આઇસોલેશન (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 હવે સાર્વભૌમ ટેનન્ટ્સ માટે પ્રતિ-સબ-સાઇટ ડેટાબેઝ અને ફાઇલ સિસ્ટમ આઇસોલેશનને સપોર્ટ કરે છે. આનાથી નેટવર્ક-સ્તરની પ્રોવિઝનિંગ, બિલિંગ અને એડમિનિસ્ટ્રેશન જાળવી રાખતી વખતે ટેનન્ટ ડેટા અલગ રહે છે.
 

@@ -3,7 +3,7 @@ title: Fifi Ultimate Multisite sori ẹrọ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Fifi Ultimate Multisite sori ẹrọ {#installing-ultimate-multisite}
+# Fifi Ultimate Multisite sori ẹrọ
 
 :::note
 Ẹ̀kọ́ yìí ro pé o ti fi WordPress Multisite sori ẹrọ tẹ́lẹ̀, o sì ti ṣètò rẹ̀. Láti kọ́ bí a ṣe ń ṣe é, wo [ẹ̀kọ́ yìí](https://www.wpbeginner.com/glossary/multisite/) láti ọwọ́ WP Beginner.

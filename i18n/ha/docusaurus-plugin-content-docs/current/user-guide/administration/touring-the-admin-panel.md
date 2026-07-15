@@ -3,7 +3,7 @@ title: Bayanin Wurin Gudanarwa
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Gano Wajen da Admin Panel {#touring-the-admin-panel}
+# Gano Wajen da Admin Panel
 
 Ultimate Multisite yana koyarwa ta zama mai sauƙi kuma mai bayani kai tsaye kamar yadda ake so, amma tare da wata hanya mai ƙarfi kamar wannan, za mu iya ba shi wani shiri na ne. Bari mu tafiya a kan wasu hanyoyin admin don taimaka muku karkawa.
 

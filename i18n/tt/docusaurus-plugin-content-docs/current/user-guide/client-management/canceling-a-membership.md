@@ -3,7 +3,7 @@ title: Участиеданыдан болымыт
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Членства отменять (v2) {#canceling-a-membership-v2}
+# Членства отменять (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: Эта статья относится к Ultimate Multisite версии 2.x.**_
 

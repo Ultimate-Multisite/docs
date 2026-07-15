@@ -3,7 +3,7 @@ title: Soliqlarni boshqarish
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Soliqlarni boshqarish {#tax-handling}
+# Soliqlarni boshqarish
 
 Ultimate Multisite asosiy pluginimizga o‘rnatilgan soliq yig‘ish moduliga ega, shuning uchun rejalaringiz, paketlaringiz va xizmatlaringiz uchun savdo soliqlarini yig‘ishingiz kerak bo‘lsa, buni hech qanday qo‘shimchalar o‘rnatmasdan osonlik bilan amalga oshirishingiz mumkin.
 

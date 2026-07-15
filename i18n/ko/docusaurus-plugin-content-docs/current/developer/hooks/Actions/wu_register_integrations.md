@@ -4,7 +4,7 @@ title: 액션 - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# 액션: wu_register_integrations {#action-wuregisterintegrations}
+# 액션: wu_register_integrations
 
 통합이 자신을 등록할 수 있도록 트리거됩니다.
 

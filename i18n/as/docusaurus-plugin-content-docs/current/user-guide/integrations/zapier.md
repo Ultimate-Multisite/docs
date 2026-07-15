@@ -3,7 +3,7 @@ title: Zapier একত্ৰীকৰণ
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite-ৰ সৈতে Zapier সংহতি কৰা {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite-ৰ সৈতে Zapier সংহতি কৰা
 
 লেখাসমূহৰ এটাত, আমি [Webhooks](webhooks.md) আৰু সেইবোৰ কেনেকৈ 3rd party application-ৰ সৈতে সংহতি কৰিবলৈ ব্যৱহাৰ কৰিব পাৰি, সেই বিষয়ে আলোচনা কৰিছিলোঁ।
 

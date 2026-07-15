@@ -3,7 +3,7 @@ title: 'Lekcja 2: Wybieranie swojej niszy'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekcja 2: Wybór niszy {#lesson-2-picking-your-niche}
+# Lekcja 2: Wybór niszy
 
 W Lekcji 1 ustaliliśmy, dlaczego nisza jest lepsza niż ogólne podejście. Teraz musisz wybrać swoją. Ta lekcja dostarczy Ci ramy do znalezienia i walidacji niszy, zanim zainwestujesz czas w jej budowanie.
 

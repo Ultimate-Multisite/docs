@@ -4,7 +4,7 @@ title: عمل - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# عمل: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# عمل: wu_handle_customer_meta_fields
 
 plugin جوړوونکو ته اجازه ورکړئ چې که اړتیا ولري، meta data په بېلابېلو لارو خوندي کړي.
 

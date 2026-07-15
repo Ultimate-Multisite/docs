@@ -3,7 +3,7 @@ title: Gukoresha API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint ya registration ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint ya registration ya Ultimate Multisite
 
 Mu gihe ulihagarira uko uburyo bwo gukora urugero rwose rwa kumenya umuntu w'umukoresha w'umuryango wawe (new customer) mu muryango wanyu, kandi nuko uba urugero bwo gukora ibi bikorwa na Zapier.
 

@@ -4,7 +4,7 @@ title: Scagaire - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Scagaire: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Scagaire: wu_current_set_customer
 
 Ligeann sé d'fhorbróirí an t-iompar réamhshocraithe a mhodhnú agus an custaiméir reatha a shocrú ar bhealach difriúil.
 

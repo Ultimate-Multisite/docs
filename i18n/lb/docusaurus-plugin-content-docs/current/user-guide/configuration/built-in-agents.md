@@ -3,7 +3,7 @@ title: Agebaute Agenten
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agebaute Agents {#built-in-agents}
+# Agebaute Agents
 
 Gratis AI Agent v1.9.0 liwwert fënnef agebaute Agents, jidderee virkonfiguréiert mat engem fokusséierte Set u Tools, engem ugepasste System-Prompt, an Ufanksvirschléi, déi op heefeg Aufgaben an deem Beräich ofgestëmmt sinn. Tëscht Agents wiesselen ännert, wat den Assistant maache kann a wéi en äntwert — ouni iergendeng Konfiguratioun vun Ärer Säit. Superdav AI Agent v1.18.0 kann dëse Workflows zäitplangbewosst Tools, Erënnerungsrecords, Geneemegungspaarten an SMS-Benoriichtegungen dobäisetzen, wann déi verbonne Integratioune konfiguréiert sinn.
 

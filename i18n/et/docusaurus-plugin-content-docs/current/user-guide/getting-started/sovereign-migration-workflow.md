@@ -3,7 +3,7 @@ title: Võimendliku migratsiooni töövoori
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Suvereenne migratsioonivõtme töövoori {#sovereign-migration-workflow}
+# Suvereenne migratsioonivõtme töövoori
 
 Ultimate Multisite versioon 1.2.0 lisab migratsiooni kinnituse portale, kui siit standard subsite'i viemine suvereense tenant-infrastruktuuri sisse.
 

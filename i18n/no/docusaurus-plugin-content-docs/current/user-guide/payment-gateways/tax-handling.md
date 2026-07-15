@@ -3,7 +3,7 @@ title: Avgiftshåndtering
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Avgiftshåndtering {#tax-handling}
+# Avgiftshåndtering
 
 Ultimate Multisite har en modul for innkreving av avgifter innebygd i vår kjerne-plugin, så hvis du trenger å kreve inn salgsavgifter på planene, pakkene og tjenestene dine, kan du enkelt gjøre det uten å måtte installere noen tillegg.
 

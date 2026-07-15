@@ -3,7 +3,7 @@ title: Ismert inkompatibilitások
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Ismert összeférhetetlenségek más bővítményekkel {#known-incompatibilities-with-other-plugins}
+# Ismert összeférhetetlenségek más bővítményekkel
 
 Az Ultimate Multisite telepítése és aktiválása után előfordulhat, hogy problémákba ütközöl más bővítményekkel való összeférhetetlenség miatt.
 

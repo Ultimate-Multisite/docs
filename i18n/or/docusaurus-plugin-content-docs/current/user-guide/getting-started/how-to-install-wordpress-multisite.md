@@ -3,7 +3,7 @@ title: WordPress Multisite କିପରି ଇନଷ୍ଟଲ୍ କରିବ?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# ମୁଁ କିପରି WordPress Multisite ଇନଷ୍ଟଲ କରିବି? {#how-do-i-install-wordpress-multisite}
+# ମୁଁ କିପରି WordPress Multisite ଇନଷ୍ଟଲ କରିବି?
 
 WordPress Multisite ଆପଣଙ୍କୁ ଏକ ସମୟରେ ଅନେକ ସାଇଟ୍‌ର ନେଟୱାର୍କ (network) ରଖିବାକୁ ଅନୁମତି ଦିଏ। ଏହା ଏକ built-in feature, କିନ୍ତୁ ଡିଫାଉଟଲି ଭାବରେ ଏହା ଆକ୍ଟିଭ ହୋଇଥାଏ ନାହିଁ।
 

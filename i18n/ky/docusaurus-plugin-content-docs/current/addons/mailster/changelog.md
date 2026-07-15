@@ -3,7 +3,7 @@ title: Mailster өзгөртүүлөр журналы
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster өзгөрүүлөр журналы {#mailster-changelog}
+# Mailster өзгөрүүлөр журналы
 
 ### 1.0.0 {#100}
 * Баштапкы чыгарылыш

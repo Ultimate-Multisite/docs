@@ -3,7 +3,7 @@ title: හැකියාවන් යොමුව
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# හැකියා යොමුව {#abilities-reference}
+# හැකියා යොමුව
 
 හැකියා යනු Gratis AI Agent ඔබගේ WordPress ස්ථාපනය මත කැඳවිය හැකි මූලික ක්‍රියා වේ. සෑම හැකියාවක්ම JSON schema එකක් නිරාවරණය කරන ලියාපදිංචි PHP class එකකි — agent ධාවන වේලාවේදී මෙම schema එක කියවා අවශ්‍ය parameters මොනවාද සහ හැකියාව ලබාදෙන්නේ මොනවාද යන්න තේරුම් ගනී.
 

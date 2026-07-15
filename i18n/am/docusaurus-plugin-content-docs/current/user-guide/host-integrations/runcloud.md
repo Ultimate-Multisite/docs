@@ -3,7 +3,7 @@ title: RunCloud Integration
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud መዋሃድ {#runcloud-integration}
+# RunCloud መዋሃድ
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 RunCloud በክላውድ ላይ የተመሰረተ የሰርቨር አስተዳደር መድረክ (cloud-based server management platform) ሲሆን፣ በዚህ አማካኝነት በራሳቸው ክላውድ ሰርቨሮች ላይ የዌብ አፕሊኬሽኖችን በቀላሉ ማስጀመር እና ማስተዳደር ይችላሉ። ይህ መዋሃድ (integration) በUltimate Multisite እና በRunCloud መካከል የዶሜይን ሲንክ (domain syncing) እና የSSL ሰርቲፊኬት አስተዳደርን በራስ-ሰር ያደርጋል።

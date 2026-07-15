@@ -4,7 +4,7 @@ title: فلٽر - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# فلٽر: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# فلٽر: wu_is_development_mode
 
 plugin ڊولپرز کي ترقياتي موڊ لاءِ اضافي ٽيسٽون شامل ڪرڻ جي اجازت ڏيو.
 

@@ -3,7 +3,7 @@ title: Validate Contrastul Paletei
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validarea Contrastului Paletei {#validate-palette-contrast}
+# Validarea Contrastului Paletei
 
 Abilitatea **Validarea Contrastului Paletei** verifică perechile de culori din paleta de design pentru conformitatea cu WCAG (Ghidurile de Accesibilitate pentru Conținut Web) înainte de a le aplica temei tale.
 

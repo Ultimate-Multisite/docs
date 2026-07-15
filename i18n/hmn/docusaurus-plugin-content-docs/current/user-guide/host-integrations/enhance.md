@@ -3,7 +3,7 @@ title: Kev txawv Control Panel integration zoo siab tsis txhob ua.
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# ປັບປຸງການເຊື່ອມຕໍ່ Control Panel {#enhance-control-panel-integration}
+# ປັບປຸງການເຊື່ອມຕໍ່ Control Panel
 
 ## ພາບລວມ {#overview}
 Enhance ເປັນ control panel ແບບທັນສະໄໝທີ່ໃຫ້ຄວາມສາມາດໃນການເຮັດວຽກອັດຕະໂນມັດ ແລະ ການຈັດການ hosting ທີ່ຊົງພະລັງ. ການເຊື່ອມຕໍ່ນີ້ຈະເຮັດໃຫ້ການ đồng bộ domain ອັດຕະໂນມັດ ແລະ ການຈັດການ SSL certificate ລະຫວ່າງ Ultimate Multisite ແລະ Enhance Control Panel ເຮັດໄດ້ງ່າຍຂຶ້ນ.

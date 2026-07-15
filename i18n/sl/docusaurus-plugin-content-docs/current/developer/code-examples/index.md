@@ -3,7 +3,7 @@ title: Napredni primeri kode
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Napredni primeri kode {#advanced-code-examples}
+# Napredni primeri kode
 
 Ti primeri prikazujejo napredne vzorce integracije z Ultimate Multisite.
 

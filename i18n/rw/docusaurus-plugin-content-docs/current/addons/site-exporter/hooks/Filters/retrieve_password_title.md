@@ -4,7 +4,7 @@ title: Akayunguruzo - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Akayunguruzo: retrieve_password_title {#filter-retrievepasswordtitle}
+# Akayunguruzo: retrieve_password_title
 
 Kayungurura umutwe w'ubutumwa bwa email bwo gusubizaho ijambo ry'ibanga.
 

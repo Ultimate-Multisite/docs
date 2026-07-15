@@ -3,7 +3,7 @@ title: Wawancara Penemuan
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wawancara Penemuan {#discovery-interview}
+# Wawancara Penemuan
 
 **Wawancara Penemuan** adalah langkah pertama dalam proses desain Theme Builder. Ini mengumpulkan informasi tentang situs web, bisnis, dan preferensi desain Anda untuk membuat tema yang dipersonalisasi.
 

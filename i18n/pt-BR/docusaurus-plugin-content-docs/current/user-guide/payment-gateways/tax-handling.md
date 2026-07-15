@@ -3,7 +3,7 @@ title: Tratamento de impostos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tratamento de impostos {#tax-handling}
+# Tratamento de impostos
 
 Ultimate Multisite tem um módulo de coleta de impostos integrado ao nosso plugin principal, então, se você precisa coletar impostos sobre vendas em seus planos, pacotes e serviços, pode fazer isso facilmente sem recorrer à instalação de quaisquer complementos.
 

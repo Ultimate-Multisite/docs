@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Амал: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Амал: wp_ultimo_payfast_activation
 
 Ба қисмҳои дигари plugin иҷозат диҳед, ки равандҳои худро барои фаъолсозӣ пайваст кунанд
 

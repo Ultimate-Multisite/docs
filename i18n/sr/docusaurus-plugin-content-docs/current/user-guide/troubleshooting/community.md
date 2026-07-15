@@ -3,7 +3,7 @@ title: Zagora
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kako se pridružiti Ultimate Multisite Zajednici {#how-to-join-ultimate-multisite-community}
+# Kako se pridružiti Ultimate Multisite Zajednici
 
 Ultimate Multisite Community je prostor gde možete komunicirati sa drugim korisnicima Ultimate Multisite i deliti savete, iskustva i još mnogo toga. Da biste pristupili Ultimate Multisite Community-ju, posetite https://community.ultimatemultisite.com/home.
 

@@ -4,7 +4,7 @@ title: Sefa - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Sefa: wu_post_default_status {#filter-wupostdefaultstatus}
+# Sefa: wu_post_default_status
 
 Imasefa deta ya chinthu isanayikidwe mu database.
 

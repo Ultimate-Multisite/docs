@@ -3,7 +3,7 @@ title: Rok za članstvo in blokiranje spletnega mesta
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Končanje članstva in blokiranje spletnih strani {#membership-expiration-and-site-blocking}
+# Končanje članstva in blokiranje spletnih strani
 
 Ta vodič pojasnjuje, kako Ultimate Multisite obravnava potek končanja članskih obdobij, konca vprašanj za probne obdobja in blokiranja spletnih strani na fron end. Pokriva celotno življenjsko obdobje članstva od aktivnega do izteklega, nastavitve, ki kontrolirajo, ali so strani blokirane, ter kaj preveriti, če strani ostajajo dostopne po končanju članskega obdobja.
 

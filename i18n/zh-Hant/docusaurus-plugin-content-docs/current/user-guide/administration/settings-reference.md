@@ -3,7 +3,7 @@ title: 設定參考
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# 設定參考 {#settings-reference}
+# 設定參考
 
 此頁面追蹤會影響 Ultimate Multisite 日常管理與近期行為變更的設定。
 

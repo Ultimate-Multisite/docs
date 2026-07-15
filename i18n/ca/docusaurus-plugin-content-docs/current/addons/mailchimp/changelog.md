@@ -3,7 +3,7 @@ title: Diari de novetats de Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Diari de canvis de Mailchimp {#mailchimp-changelog}
+# Diari de canvis de Mailchimp
 
 Versió: 1.1.1 - Publicat el 2025-09-28
 

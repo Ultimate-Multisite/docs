@@ -4,7 +4,7 @@ title: アクション - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# アクション: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# アクション: wu_mcp_abilities_registered
 
 エンティティに対してMCP 能力が登録された後に発火します。
 

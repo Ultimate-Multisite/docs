@@ -3,7 +3,7 @@ title: Verwaltung vo Zahle und Rechnige
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Bezahlig und Rechnige verwalte {#managing-payments-and-invoices}
+# Bezahlig und Rechnige verwalte
 
 ## Zahlungseinstellungen {#payment-settings}
 

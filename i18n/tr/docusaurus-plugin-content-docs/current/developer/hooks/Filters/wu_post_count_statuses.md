@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtre: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtre: wu_post_count_statuses
 
 Eklenti geliştiricilerinin hangi gönderi durumunun sayılması gerektiğini değiştirmesine izin verir. Varsayılan olarak, yayınlanmış ve özel gönderiler sayılır.
 

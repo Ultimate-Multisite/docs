@@ -3,7 +3,7 @@ title: Kancalar Referansı
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook Referansı {#hooks-reference}
+# Hook Referansı
 
 Ultimate Multisite içindeki tüm **59 action** ve **118 filter** için otomatik oluşturulmuş dokümantasyon.
 

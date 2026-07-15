@@ -3,7 +3,7 @@ title: Zpracování daní
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Práce s daněmi {#tax-handling}
+# Práce s daněmi
 
 Ultimate Multisite má modul pro výběr daní zabudovaný v našem hlavním pluginu, takže pokud potřebujete vybírat prodejní daně u svých plánů, balíčků a služeb, můžete to snadno udělat bez nutnosti instalovat jakékoli doplňky.
 

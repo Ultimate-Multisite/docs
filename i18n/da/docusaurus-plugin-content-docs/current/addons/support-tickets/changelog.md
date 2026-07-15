@@ -3,7 +3,7 @@ title: Support Tickets ændringslog
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ændringslog for support tickets {#support-tickets-changelog}
+# Ændringslog for support tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Forbedret: Fjernede vendor/-mappen fra Git-sporing (allerede dækket af .gitignore), hvilket reducerer repository-størrelsen

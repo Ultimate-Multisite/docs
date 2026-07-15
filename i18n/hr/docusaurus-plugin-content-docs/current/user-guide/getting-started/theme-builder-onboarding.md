@@ -3,7 +3,7 @@ title: Proces uvodne konfiguracije Theme Buildersa
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Proces za podešavanje Theme Buildera {#theme-builder-onboarding-flow}
+# Proces za podešavanje Theme Buildera
 
 Superdav AI Agent v1.12.0 uvodio je vodič kroz **Proces podešavanja Theme Buildera** koji vam pomaže da kreirate prilagođeni blok temelj (custom block theme) tokom početne postavke. Ovo zamenjuje staru način rada Site Buildera sa fleksibilnijim pristupom podržanim agentom.
 

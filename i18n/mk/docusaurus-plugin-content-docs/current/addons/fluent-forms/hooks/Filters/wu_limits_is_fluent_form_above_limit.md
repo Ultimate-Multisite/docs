@@ -4,7 +4,7 @@ title: Филтер - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Филтер: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Филтер: wu_limits_is_fluent_form_above_limit
 
 Проверува дали даден тип на формулар е дозволен на овој план. Им овозможува на развивачите на plugin да ја филтрираат повратната вредност
 

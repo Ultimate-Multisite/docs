@@ -3,7 +3,7 @@ title: Mpampiditra Rakitra Sunrise Fanampiny
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 dia manampy mpamaky fanitarana sunrise ho an’ny add-ons sy fampidirana MU-plugin namboarina manokana izay mila mandeha mandritra ny WordPress sunrise bootstrapping nefa tsy manitsy ny rakitra `wp-content/sunrise.php` novokarina.
 

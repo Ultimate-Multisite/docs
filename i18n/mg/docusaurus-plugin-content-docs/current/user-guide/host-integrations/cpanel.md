@@ -3,7 +3,7 @@ title: Fampifandraisana cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Fandahana amin'ny cPanel {#cpanel-integration}
+# Fandahana amin'ny cPanel
 
 ## Famarahabana (Overview) {#overview}
 Ny cPanel dia iray amin'ireo panel fitantanana web hosting malaza indrindra ampiasain'ny mpamatsy hosting maro, na ireo manome hosting manokana. Ity fampifandraisana ity dia mamela ny fametrahana automatique an'ny domain syncing eo amin'ny Ultimate Multisite sy cPanel, izay ahafahanao manampy alias domain sy subdomain ho azy ao amin'ny kaontinao cPanel.

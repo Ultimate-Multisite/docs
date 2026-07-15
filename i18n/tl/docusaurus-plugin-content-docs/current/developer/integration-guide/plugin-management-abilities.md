@@ -3,7 +3,7 @@ title: Mga Kakayahan sa Pamamahala ng Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Mga Kakayahan sa Pamamahala ng Plugin {#plugin-management-abilities}
+# Mga Kakayahan sa Pamamahala ng Plugin
 
 Ang Gratis AI Agent v1.5.0 ay may kasamang **7 kakayahan sa pamamahala ng plugin** na maaaring tawagin ng AI assistant habang nasa isang pag-uusap. Nagbibigay ang mga kakayahang ito ng programmatic na kontrol sa mga WordPress plugin na naka-install sa pamamagitan ng [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

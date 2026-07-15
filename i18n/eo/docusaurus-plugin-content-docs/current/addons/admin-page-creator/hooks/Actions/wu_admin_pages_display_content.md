@@ -4,7 +4,7 @@ title: Ago - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Ago: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# Ago: wu_admin_pages_display_content
 
 Montri proprajn redaktilajn enhavojn.
 

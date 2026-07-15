@@ -3,7 +3,7 @@ title: AffiliateWP Zoznam zmien
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Zoznam zmien AffiliateWP {#affiliatewp-changelog}
+# Zoznam zmien AffiliateWP
 
 Verzia: 2.0.1 - Vydané 2025-09-28
 

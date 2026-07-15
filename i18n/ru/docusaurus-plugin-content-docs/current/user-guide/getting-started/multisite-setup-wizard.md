@@ -3,7 +3,7 @@ title: Мастер установки мультисайта
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Мастер настройки Multisite {#multisite-setup-wizard}
+# Мастер настройки Multisite
 
 Ultimate Multisite включает встроенный мастер, который автоматически преобразует стандартную установку WordPress в сеть WordPress Multisite. Это устраняет необходимость вручную редактировать `wp-config.php` или выполнять команды базы данных.
 

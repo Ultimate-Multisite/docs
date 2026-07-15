@@ -4,7 +4,7 @@ title: Scagaire - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# Scagaire: wu_magic_link_url {#filter-wumagiclinkurl}
+# Scagaire: wu_magic_link_url
 
 Scag URL an naisc draíochta ginte.
 

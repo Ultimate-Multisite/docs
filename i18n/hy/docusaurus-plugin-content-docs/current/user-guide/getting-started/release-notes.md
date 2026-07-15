@@ -3,7 +3,7 @@ title: Տեղեկություններ թարմացումների մասին
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Հայտարարության նշումներ (Release Notes) {#release-notes}
+# Հայտարարության նշումներ (Release Notes)
 
 ## Տարբերակ 2.13.0 — Հրապարակվել է 2026-06-05-ին {#version-2130--released-on-2026-06-05}
 

@@ -4,7 +4,7 @@ title: Actie - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# Actie: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# Actie: wp_ultimo_site_exporter_load
 
 Activeert wanneer alle afhankelijkheden zijn geladen.
 

@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filter: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Filter: wu_site_exporter_plugin_exclusion_list
 
 ฟิลเตอร์นี้ช่วยให้นักพัฒนาสามารถจัดการรายการปลั๊กอินที่ต้องการยกเว้นไม่ให้ถูกรวมอยู่ในไฟล์ zip ที่สร้างขึ้นได้
 

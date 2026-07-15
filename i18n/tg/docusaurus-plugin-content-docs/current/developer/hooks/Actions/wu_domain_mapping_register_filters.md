@@ -4,7 +4,7 @@ title: Амал - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Амал: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Амал: wu_domain_mapping_register_filters
 
 Баъзе plugin-ҳо URL-ро пеш аз фаъол шудани mapping захира мекунанд ё URL-ҳоро ба тарзе дигар месозанд, ки ба filter-ҳои боло дохил намешавад.
 

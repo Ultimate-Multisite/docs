@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_add_menu_page_slug_url
 sidebar_label: wu_add_menu_page_slug_url
 _i18n_hash: 8f4d638285fc2ad67313b1b730e776f6
 ---
-# ตัวกรอง: wu_add_menu_page_slug_url {#filter-wuaddmenupageslugurl}
+# ตัวกรอง: wu_add_menu_page_slug_url
 
 ตัวกรองนี้ช่วยให้นักพัฒนาสามารถปรับเปลี่ยน (filter) URL ได้ตามต้องการ
 

@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# ໃສ່ໂຄສະນາໃນເຄືອຂ່າຍຂອງທ່ານດ້ວຍ Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# ໃສ່ໂຄສະນາໃນເຄືອຂ່າຍຂອງທ່ານດ້ວຍ Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector ແມ່ນ **add-on ຟຣີ** ທີ່ໃຫ້ເຄື່ອງມືແກ້ໄຂໂຄສະນາໃນແຜນການຕ່າງໆໄດ້ໂດຍກົງຈາກໜ້າແກ້ໄຂຂອງມັນ.
 

@@ -3,7 +3,7 @@ title: मल्टी-टेनन्सी आयसोलेशन
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# मल्टी-टेनन्सी आयसोलेशन (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# मल्टी-टेनन्सी आयसोलेशन (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 आता आहे, जो सॉवरेन टेनंट्ससाठी प्रति-सबसाइट डेटाबेस आणि फाईलसिस्टम आयसोलेशनला समर्थन देतो. यामुळे नेटवर्क-स्तरीय प्रोव्हिजनिंग, बिलिंग आणि प्रशासनाचे स्वरूप कायम राहते, तर टेनंट डेटा वेगळा ठेवता येतो.
 

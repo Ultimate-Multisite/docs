@@ -3,7 +3,7 @@ title: Rexistro de cambios de AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Rexistro de cambios de AffiliateWP {#affiliatewp-changelog}
+# Rexistro de cambios de AffiliateWP
 
 Versión: 2.0.1 - Publicada o 2025-09-28
 

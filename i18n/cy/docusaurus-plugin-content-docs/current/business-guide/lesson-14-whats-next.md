@@ -3,7 +3,7 @@ title: 'Dysgu 14: Beth sydd ar y cyntaf'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesiad 14: Beth yw' y nesaf {#lesson-14-what-comes-next}
+# Lesiad 14: Beth yw' y nesaf
 
 Mae chi wedi bod yn llwybr ffurf wefan ar gyfer niche. Mae FitSite yn gweithio, yn gwasanaethu studioau fith, ac yn cyflwyno cyfrannau allweddol. Mae’r lesen hon yn gwellwch ymlaen i ddarganfod lle ydyw.
 

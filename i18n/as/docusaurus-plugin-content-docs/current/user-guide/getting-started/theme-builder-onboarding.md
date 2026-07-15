@@ -3,7 +3,7 @@ title: থীম বিল্ডাৰ অনবৰ্ডিং ফ্লো
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 এ এটা গাইড কৰা **Theme Builder onboarding flow** (থিম বিল্ডাৰৰ প্ৰৱেশ প্ৰক্ৰিয়া) মুৰব্বী কৰি আনিছে, যিয়ে আপোনাক আৰম্ভণিৰ সময়তে এটা কাস্টম ব্লক থিম (custom block theme) বনাওঁত সহায় কৰে। ই আগৰ Site Builder মোডটোৰ সলনি হৈ এটা অধিক নমনীয়, এজন সহায়ক (agent)-সহায়িত পদ্ধতি।
 

@@ -4,7 +4,7 @@ title: ຕົວກັ່ນຕອງ - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# ຕົວກັ່ນຕອງ: secure_logged_in_cookie {#filter-secureloggedincookie}
+# ຕົວກັ່ນຕອງ: secure_logged_in_cookie
 
 ກັ່ນຕອງວ່າຄຸກກີທີ່ເຂົ້າລະບົບແລ້ວຄວນຖືກສົ່ງຜ່ານ HTTPS ເທົ່ານັ້ນຫຼືບໍ່.
 

@@ -3,7 +3,7 @@ title: Chidwe cha file chifukwa kwa kudzera
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Kufungula Kufungula File la Sunrise {#error-installing-the-sunrise-file}
+# Kufungula Kufungula File la Sunrise
 
 File la sunrise.php ndi file iliyonse la WordPress iliyofuna kukhala m'moyo walo pamene imapulogera (bootstraps) yake. Ili WordPress liyesangalala kuti likumbukire file la sunrise.php, linenera likho m'moyo wa **wp-content folder**.
 

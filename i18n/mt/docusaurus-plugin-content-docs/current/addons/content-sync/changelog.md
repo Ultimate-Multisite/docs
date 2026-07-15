@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet tas-Sinkronizzazzjoni tal-Kontenut
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Reġistru tal-Bidliet ta' Content Sync {#content-sync-changelog}
+# Reġistru tal-Bidliet ta' Content Sync
 
 ### Verżjoni 1.1.0 - Rilaxxata fil-2025-12-31 {#version-110---released-on-2025-12-31}
 * Ġdid: Appoġġ għas-sinkronizzazzjoni tat-tipi kollha ta' posts (posts, paġni, tipi ta' posts personalizzati)

@@ -3,7 +3,7 @@ title: 'سبق 3: اپنا نیٹ ورک سیٹ اپ کرنا'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: Setting Up Your Network {#lesson-3-setting-up-your-network}
+# Lesson 3: Setting Up Your Network
 
 اب وقت ہے تعمیر کرنے کا۔ اس سبق میں آپ Ultimate Multisite انسٹال کریں گے اور FitSite نیٹ ورک کی بنیاد کو ترتیب دیں گے۔ یہاں لیا گیا ہر فیصلہ فٹنس کے شعبے (fitness niche) کو ذہن میں رکھ کر کیا گیا ہے۔
 

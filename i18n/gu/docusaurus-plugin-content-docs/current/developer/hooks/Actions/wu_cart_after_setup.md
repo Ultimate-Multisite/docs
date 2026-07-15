@@ -4,7 +4,7 @@ title: ક્રિયા - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup {#action-wucartaftersetup}
+# Action: wu_cart_after_setup
 
 ડેવલપર્સને ચેકઆઉટ ઓબ્જેક્ટમાં વધારાના ફેરફારો કરવાની મંજૂરી આપે છે.
 

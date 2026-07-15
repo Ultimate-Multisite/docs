@@ -3,7 +3,7 @@ title: 기본 개념
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# 기본 개념 {#basic-concepts}
+# 기본 개념
 
 새로운 WordPress Multisite 사용자와 Ultimate Multisite를 막 사용하기 시작한 사람에게는 처음에 익숙해져야 할 새로운 단어와 문구가 많을 수 있습니다. 이들을 배우는 것은 플랫폼과 전체적인 작동 방식을 이해해야 하기 때문에 중요한 과제입니다.
 

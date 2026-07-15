@@ -3,7 +3,7 @@ title: Журнал на промените на Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Журнал на промените на Site Exporter {#site-exporter-changelog}
+# Журнал на промените на Site Exporter
 
 Version: 1.0.6 - Публикувано на 2026-05-11
 * Ново: Износовете на сайта сега включват самозареждащ се index.php, така че ZIP архивът може да бъде инсталиран на нов хостинг без нужда от отделна инсталация на plugin

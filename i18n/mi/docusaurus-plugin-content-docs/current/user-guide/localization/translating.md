@@ -3,7 +3,7 @@ title: Whakawātea Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Whakawhanaungatanga me Ultimate Multisite {#translating-ultimate-multisite}
+# Whakawhanaungatanga me Ultimate Multisite
 
 He whakawhanake mai i Pākehā, engari ko te plugin he tino whai whakamaumahara (translatable) ahau, ā, e tino mōhio mātou ana ki te whai whakaaro i ngā whakataunga o te whakawhanaungatanga.
 

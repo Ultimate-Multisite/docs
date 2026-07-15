@@ -3,7 +3,7 @@ title: Способности на Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Способности на Theme Builder: Scaffold и Активирање Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Способности на Theme Builder: Scaffold и Активирање Block Themes
 
 Superdav AI Agent v1.12.0 уводи две моќни способности кои ви овозможуваат да генерирате и доставите кастомни block themes директно од чат интерфејсот.
 

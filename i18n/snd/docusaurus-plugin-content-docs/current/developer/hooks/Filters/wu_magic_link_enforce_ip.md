@@ -4,7 +4,7 @@ title: فلٽر - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# فلٽر: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# فلٽر: wu_magic_link_enforce_ip
 
 فلٽر ڪري ٿو ته IP پتي جي تصديق لاڳو ڪئي وڃي يا نه.
 

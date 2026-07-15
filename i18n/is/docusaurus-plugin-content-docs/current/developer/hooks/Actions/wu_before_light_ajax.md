@@ -4,7 +4,7 @@ title: Aðgerð - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Aðgerð: wu_before_light_ajax {#action-wubeforelightajax}
+# Aðgerð: wu_before_light_ajax
 
 Í sumum tilvikum þurfum við að hlaða inn aukakrafti til að meðhöndla aðgerðir.
 

@@ -3,7 +3,7 @@ title: የStripe ዝግጅት
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# የStripe Gateway መቼት (v2) {#setting-up-the-stripe-gateway-v2}
+# የStripe Gateway መቼት (v2)
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 

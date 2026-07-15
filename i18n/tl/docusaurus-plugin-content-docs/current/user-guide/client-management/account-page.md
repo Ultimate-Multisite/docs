@@ -3,7 +3,7 @@ title: Pahina ng Akaw ng Kliyente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pahina ng Account ng Iyong Kliyente (v2) {#your-clients-account-page-v2}
+# Pahina ng Account ng Iyong Kliyente (v2)
 
 _**MAHALAGANG PAUNAWA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 

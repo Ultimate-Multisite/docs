@@ -3,7 +3,7 @@ title: Mailchimp Jounal chanjman
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Jounal chanjman Mailchimp {#mailchimp-changelog}
+# Jounal chanjman Mailchimp
 
 Vèsyon: 1.1.1 - Lage 2025-09-28
 

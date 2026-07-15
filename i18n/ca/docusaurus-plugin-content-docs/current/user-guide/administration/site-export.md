@@ -3,7 +3,7 @@ title: Exportació de site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportació de lloc {#site-export}
+# Exportació de lloc
 
 La pàgina d'administració **Exportació de lloc** permet als administradors de xarxa empaquetar un lloc, o tota la xarxa, en un arxiu de descàrrega per a migració, còpia de seguretat o transferència.
 

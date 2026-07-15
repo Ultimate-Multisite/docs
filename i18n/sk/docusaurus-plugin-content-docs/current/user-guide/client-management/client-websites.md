@@ -3,7 +3,7 @@ title: Weby klientov
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Vaše klientov webové stránky (v2) {#your-clients-websites-v2}
+# Vaše klientov webové stránky (v2)
 
 Po registrácii do vašej siete si vaši zákazníci môžu prístupť k svojmu dashboardu.
 

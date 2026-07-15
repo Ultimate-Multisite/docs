@@ -3,7 +3,7 @@ title: Krei Mempon Vian Unan Subskriban Produkton
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreiere sian Unvenan Abonament Produk (v2) {#creating-your-first-subscription-product-v2}
+# Kreiere sian Unvenan Abonament Produk (v2)
 
 _**IMPORTANTE NOTA: Ĉi tiu artikolo estas nur por uzantoj de Ultimate Multisite versio 2.x. Se vi uzas version 1.x,**_ **_**vidu ĉi tiun artikolon**_**.
 

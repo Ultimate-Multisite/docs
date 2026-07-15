@@ -3,9 +3,9 @@ title: Qauv khoom ntxiv
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Tus Qauv Addon {#addon-template}
+# Tus Qauv Addon
 
-{{ADDON_DESCRIPTION}}
+Qauv khoom ntxiv — Ultimate Multisite.
 
 ## Yam Yuav Tsum Muaj {#requirements}
 

@@ -3,7 +3,7 @@ title: Süsteemi e-postide haldamine
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Süsteemailide seadistamine {#managing-system-emails}
+# Süsteemailide seadistamine
 
 Ultimate Multisite lähetab erineva süsteememailid sündmustel nagu registreerimise kinnitused, maksukinnitused ja liitmise muutused. Saate neid e-posti mallid oma brändile vastavalt kohandada.
 

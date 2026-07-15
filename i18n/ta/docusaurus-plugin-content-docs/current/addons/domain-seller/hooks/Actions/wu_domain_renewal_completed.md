@@ -4,7 +4,7 @@ title: Action - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Action: wu_domain_renewal_completed
 
 ஒரு டொமைன் வெற்றிகரமாக புதுப்பிக்கப்பட்ட பிறகு இது இயங்கும்.
 

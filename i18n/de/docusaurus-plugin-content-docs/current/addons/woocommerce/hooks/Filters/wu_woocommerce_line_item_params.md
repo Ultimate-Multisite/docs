@@ -4,7 +4,7 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 Filter die Parameter, die zur Erstellung der Zeilenartikel im WooCommerce-Warenkorb verwendet werden, bevor der Kunde zum WooCommerce-Checkout weitergeleitet wird.
 

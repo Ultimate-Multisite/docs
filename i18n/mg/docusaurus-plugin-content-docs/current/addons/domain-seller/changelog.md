@@ -3,7 +3,7 @@ title: Lisitry ny fanovan'ny Mpivarotra Sehatra
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Tantaran'ny fiovan'ny Domain Seller {#domain-seller-changelog}
+# Tantaran'ny fiovan'ny Domain Seller
 
 Version 1.3.0 - Navoaka tamin'ny 2026-06-02
 - Vaovao: Nampiana fampitandremana ho an'ny network-admin rehefa ambany loatra ny sandan'ny mpivarotra indray HostAfrica

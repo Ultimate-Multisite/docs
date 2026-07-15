@@ -3,7 +3,7 @@ title: बहु-नेटवर्क परिवर्तन विवरण
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network परिवर्तन अभिलेख {#multi-network-changelog}
+# Multi-Network परिवर्तन अभिलेख
 
 ### 1.3.0 {#130}
 * नयाँ: Network टेम्प्लेट पूर्वावलोकनकर्ता — खरिद गर्नुअघि प्रत्यक्ष प्यानलसहित Network टेम्प्लेटहरू ब्राउज र पूर्वावलोकन गर्नुहोस्।

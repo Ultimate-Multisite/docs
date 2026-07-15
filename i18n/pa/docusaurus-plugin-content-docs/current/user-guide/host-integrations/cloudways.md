@@ -3,7 +3,7 @@ title: Cloudways ਏਕੀਕਰਨ
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#cloudways-integration}
+# Cloudways ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 
 ## ਝਲਕ {#overview}
 Cloudways ਇੱਕ managed cloud hosting ਪਲੇਟਫਾਰਮ ਹੈ ਜੋ ਤੁਹਾਨੂੰ DigitalOcean, AWS, Google Cloud, ਅਤੇ ਹੋਰ ਵਰਗੇ ਵੱਖ-ਵੱਖ cloud providers ਉੱਤੇ WordPress ਸਾਈਟਾਂ deploy ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ। ਇਹ ਇੰਟੀਗ੍ਰੇਸ਼ਨ Ultimate Multisite ਅਤੇ Cloudways ਵਿਚਕਾਰ ਆਟੋਮੈਟਿਕ ਡੋਮੇਨ ਸਿੰਕਿੰਗ ਅਤੇ SSL ਸਰਟੀਫਿਕੇਟ ਪ੍ਰਬੰਧਨ ਯੋਗ ਬਣਾਉਂਦਾ ਹੈ।

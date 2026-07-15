@@ -4,7 +4,7 @@ title: Филтер - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Филтер: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Филтер: wu_bypass_unset_current_user
 
 Дозволува на програмерите да го заобиколат кодот за unset на тековниот корисник.
 

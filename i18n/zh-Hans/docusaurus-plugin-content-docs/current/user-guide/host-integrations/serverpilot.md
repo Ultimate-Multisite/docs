@@ -3,7 +3,7 @@ title: ServerPilot 集成
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot 集成 {#serverpilot-integration}
+# ServerPilot 集成
 
 ## 概述 {#overview}
 ServerPilot 是一个云服务，用于在 DigitalOcean、Amazon、Google 或任何其他服务器提供商的服务器上托管 WordPress 和其他 PHP 网站。此集成实现了 Ultimate Multisite 与 ServerPilot 之间的自动域名同步和 SSL 证书管理。

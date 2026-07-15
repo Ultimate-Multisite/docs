@@ -3,7 +3,7 @@ title: Skráðu þig í reikning með Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Árangur: Skráðu þig í reikning með Zapier {#event-register-an-account-via-zapier}
+# Árangur: Skráðu þig í reikning með Zapier
 
 Í greininni [Integrating Ultimate Multisite with Zapier](zapier.md) sem við ræfumum hvernig nota Zapier til að framkvæma ólíka aðgerðir í Ultimate Multisite eftir áhuga og viðburði. Í þessari greininni sýnamlegum við hvernig þú getur tengt yfirburðar app-ir (3rd party applications). Við munum nota Google Sheets sem kjelda upplýsinganna og sendast upp í Ultimate Multisite til að skrá sig.
 

@@ -3,7 +3,7 @@ title: 'Dars 12: Biznesni Yuritish'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ders 12: İşletmeyi Yürütmek {#lesson-12-running-the-business}
+# Ders 12: İşletmeyi Yürütmek
 
 Bir platform, bitirilecek bir proje değildir; yönetilmesi gereken bir işletmedir. Bu ders, FitSite'ı yönetmenin günlük operasyonlarını ele alıyor: destek, faturalandırma, bakım ve müşterileri mutlu tutmak.
 

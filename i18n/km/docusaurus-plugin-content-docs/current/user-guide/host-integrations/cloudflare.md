@@ -3,7 +3,7 @@ title: ការរួមបញ្ចូល Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# ការតភ្ជាប់ជាមួយ Cloudflare {#cloudflare-integration}
+# ការតភ្ជាប់ជាមួយ Cloudflare
 
 ## ទិដ្ឋភាពទូទៅ {#overview}
 Cloudflare គឺជាអ្នកផ្តល់សេវាបណ្តាញចែកចាយមាតិកា (CDN) និងសុវត្ថិភាពឈានមុខគេមួយ ដែលជួយការពារ និងបង្កើនល្បឿនគេហទំព័រ។ ការតភ្ជាប់នេះអនុញ្ញាតឱ្យមានការគ្រប់គ្រងដែនដោយស្វ័យប្រវត្តិរវាង Ultimate Multisite និង Cloudflare ជាពិសេសសម្រាប់ការដំឡើង subdomain multisite។

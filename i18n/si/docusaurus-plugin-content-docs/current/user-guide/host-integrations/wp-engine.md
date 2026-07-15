@@ -3,7 +3,7 @@ title: WP Engine ඒකාබද්ධ කිරීම
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine සමඟ ඒකාබද්ධ කිරීම (Integration) {#wp-engine-integration}
+# WP Engine සමඟ ඒකාබද්ධ කිරීම (Integration)
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 WP Engine කියන්නේ WordPress වෙබ් අඩවි සඳහා ප්‍රශස්ත කාර්ය සාධනය, ආරක්ෂාව සහ පරිමාණය (scalability) ලබා දෙන ප්‍රමුඛ පෙළේ කළමනාකරණය කරන ලද WordPress hosting වේදිකාවකි. මේ ඒකාබද්ධ කිරීමෙන් Ultimate Multisite සහ WP Engine අතර ඩොමේන් ස්වයංක්‍රීයව සමමුහුර්ත කිරීමට (sync) හැකියාව ලැබේ.

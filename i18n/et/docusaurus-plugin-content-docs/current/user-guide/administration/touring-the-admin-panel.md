@@ -3,7 +3,7 @@ title: Administratsiooni üle vaia
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Administratsiooni ülevaade {#touring-the-admin-panel}
+# Administratsiooni ülevaade
 
 Ultimate Multisite on lihtne ja selgitav võimalikult võimalik olema, kuid nii võimlik tööriistiga saab ka abiks suunatud külastuse. Läjavõtame administrati lehekülendi läbi, et aidata teid asuma.
 

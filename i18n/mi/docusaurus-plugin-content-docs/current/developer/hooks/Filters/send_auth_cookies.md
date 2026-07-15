@@ -4,7 +4,7 @@ title: Tātari - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Tātari: send_auth_cookies {#filter-sendauthcookies}
+# Tātari: send_auth_cookies
 
 Ka āhei ki te aukati i ngā pihikete whakamana kia kaua e tino tukuna ki te kiritaki.
 

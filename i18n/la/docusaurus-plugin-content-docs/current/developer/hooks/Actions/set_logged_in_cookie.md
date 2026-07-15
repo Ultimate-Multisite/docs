@@ -4,7 +4,7 @@ title: Actio - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Actio: set_logged_in_cookie {#action-setloggedincookie}
+# Actio: set_logged_in_cookie
 
 Fit statim antequam crustulum authenticationis in-sessionis statutum est.
 

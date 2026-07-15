@@ -3,7 +3,7 @@ title: אשף הגדרת Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# אשף הגדרת Multisite {#multisite-setup-wizard}
+# אשף הגדרת Multisite
 
 Ultimate Multisite כולל אשף מובנה שממיר באופן אוטומטי התקנת WordPress רגילה לרשת WordPress Multisite. זה מייתר את הצורך לערוך ידנית את הקובץ `wp-config.php` או להריץ פקודות בבסיס הנתונים.
 

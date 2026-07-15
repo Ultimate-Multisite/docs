@@ -3,7 +3,7 @@ title: Operationes Proprietatis Tenentis
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operatio Tenantorum Sovranorum {#sovereign-tenant-operations}
+# Operatio Tenantorum Sovranorum
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 addeat instrumenta operationalia pro tenantibus solebranibus: subsites quae operant cum proprio database, radice systematis et contextu routae propria, dum tamen visibili sunt administratore network.
 

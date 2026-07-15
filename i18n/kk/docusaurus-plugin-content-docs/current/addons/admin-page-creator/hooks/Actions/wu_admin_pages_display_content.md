@@ -4,7 +4,7 @@ title: Әрекет - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Әрекет: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# Әрекет: wu_admin_pages_display_content
 
 Пайдаланушы редактор мазмұнын көрсету.
 

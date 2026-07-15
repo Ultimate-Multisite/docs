@@ -3,7 +3,7 @@ title: 'Isifundo 6: Okuhlangenwe nakho kokubhalisa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Isifundo 6: Isipiliyoni Sokubhalisa {#lesson-6-the-signup-experience}
+# Isifundo 6: Isipiliyoni Sokubhalisa
 
 Ukugeleza kokukhokha yilapho intshisekelo iba yingeniso. Inqubo yokubhalisa edidayo noma ejwayelekile ilahlekelwa amakhasimende. Ukugeleza okuqondene nemakethe ethile, okukhuluma ulimi lwabo futhi okuzwakala kulula, kuyabaguqula.
 

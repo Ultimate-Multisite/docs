@@ -4,7 +4,7 @@ title: Igikorwa - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Igikorwa: update_network {#action-updatenetwork}
+# Igikorwa: update_network
 
 Gikora nyuma y’uko urusobe rusanzwe ruvuguruwe.
 

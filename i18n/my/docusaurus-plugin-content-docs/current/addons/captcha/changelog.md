@@ -3,7 +3,7 @@ title: Captcha ပြောင်းလဲမှု မှတ်တမ်း
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha ပြောင်းလဲမှု မှတ်တမ်း {#captcha-changelog}
+# Captcha ပြောင်းလဲမှု မှတ်တမ်း
 
 Version: 1.5.0 - 2026-05-22 နေ့တွင် ထုတ်ဝေခဲ့သည်
 * အသစ်: Hard-stop rate limiter — captcha-ကာကွယ်ထားသည့် နေရာများ (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ပေါ်ရှိ GET နှင့် POST အားလုံးကို ရေတွက်ပြီး HTTP 429၊ `Retry-After` header နှင့် ကျပန်း အချိန်နှောင့်နှေးမှု (tarpit sleep) (၁–၅ စက္ကန့်၊ အမြင့်ဆုံး ၁၅ စက္ကန့်) ဖြင့် ပြန်လည်ဖြေကြားပါသည်။

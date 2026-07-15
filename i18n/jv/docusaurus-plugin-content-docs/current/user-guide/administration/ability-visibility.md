@@ -3,7 +3,7 @@ title: Keterlihatan Kemampuan
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilitas Kemampuan (Ability Visibility) {#ability-visibility}
+# Visibilitas Kemampuan (Ability Visibility)
 
 Superdav AI Agent v1.12.0 nggawa kontrol **Ability Visibility** sing ngatur kemampuan apa wae sing bakal krosokake saben permukaan (surface). Iki menehi kesempatan marang administrator kanggo ngatur kanthi teliti kemampuan agent piye sing bisa diakses liwat REST API, MCP servers, integrasi WooCommerce, lan antarmuka liyane.
 

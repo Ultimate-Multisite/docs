@@ -3,7 +3,7 @@ title: Tema-aware skills
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Aware Skills {#theme-aware-skills}
+# Tema-Aware Skills
 
 Superdav AI Agent v1.10.0 lanzatzen da hiru eskila berriak, tema-aware (tema-eriketa-du) eskila hauek, zehatz WordPress tema aktiboan aukeratzen dira. Hau eskilak ematen dute espezialbidegitura garrantzitsu eta funtzionalitate batzuk, diseinuaren eta funtzioiaduen bidez onartutakoa.
 

@@ -3,7 +3,7 @@ title: Gestión de impuestos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestión de impuestos {#tax-handling}
+# Gestión de impuestos
 
 Ultimate Multisite tiene un módulo de recaudación de impuestos integrado en nuestro plugin principal, así que si necesitas recaudar impuestos sobre ventas en tus planes, paquetes y servicios, puedes hacerlo fácilmente sin recurrir a instalar ningún complemento.
 

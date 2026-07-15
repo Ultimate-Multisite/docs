@@ -3,7 +3,7 @@ title: PRO téma
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Az adminisztrációs panel testreszabása a PRO Theme segítségével {#customizing-your-admin-panel-with-pro-theme}
+# Az adminisztrációs panel testreszabása a PRO Theme segítségével
 
 Ügyfélmunkák során gyakran felmerül az igény, hogy egyedi élményt nyújtsunk ügyfeleinknek a WordPress admin felületén. Ha professzionálisabb megjelenést és használati élményt keresel, a PRO Theme segíthet ebben.
 

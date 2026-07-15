@@ -4,7 +4,7 @@ title: Penapis - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Penapis: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Penapis: wu_should_create_domain_record_for_site
 
 Menapis sama ada Ultimate Multisite patut mencipta rekod domain untuk site yang baru dicipta.
 

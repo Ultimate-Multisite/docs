@@ -3,7 +3,7 @@ title: Alapfogalmak
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Alapfogalmak {#basic-concepts}
+# Alapfogalmak
 
 Ha most kezded használni a WordPress Multisite-ot és az Ultimate Multisite-ot, sok új szóval és kifejezéssel találkozhatsz az elején. Fontos megismerni ezeket, mert csak így értheted meg igazán a platformot és annak működését.
 

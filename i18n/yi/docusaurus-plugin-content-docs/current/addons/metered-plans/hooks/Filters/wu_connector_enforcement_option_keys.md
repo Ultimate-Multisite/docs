@@ -4,7 +4,7 @@ title: פֿילטער - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# פֿילטער: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# פֿילטער: wu_connector_enforcement_option_keys
 
 פֿילטערט די רשימה פֿון AI provider אָפּציע־שליסלען וואָס ווערן דורכגעצוווּנגען פֿון דער הויפּט־וועבזײַט.
 

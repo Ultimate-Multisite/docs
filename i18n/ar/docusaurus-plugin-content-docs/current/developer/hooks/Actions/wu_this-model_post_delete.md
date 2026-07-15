@@ -4,7 +4,7 @@ title: 'الإجراء - wu_{$this->model}_post_delete'
 sidebar_label: 'wu_{$this->model}_post_delete'
 _i18n_hash: 723d566c67fd82808273b2eb42c96d73
 ---
-# الإجراء: wu_\{$this->model\}_post_delete {#action-wuthis-modelpostdelete}
+# الإجراء: wu_\{$this->model\}_post_delete
 
 يتم إطلاقه بعد تخزين كائن في قاعدة البيانات.
 

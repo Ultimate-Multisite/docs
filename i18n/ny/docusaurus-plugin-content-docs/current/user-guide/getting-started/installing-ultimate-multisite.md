@@ -3,7 +3,7 @@ title: Kuyika Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kuyika Ultimate Multisite {#installing-ultimate-multisite}
+# Kuyika Ultimate Multisite
 
 :::note
 Mungachite mantha muli ndi WordPress Multisite yomwe ilipo ndipo ikonzedwa kale. Kuti muzidziwe momwe mungachitire, yang'anani [kuchokera](https://www.wpbeginner.com/glossary/multisite/) kuchokera ku WP Beginner.

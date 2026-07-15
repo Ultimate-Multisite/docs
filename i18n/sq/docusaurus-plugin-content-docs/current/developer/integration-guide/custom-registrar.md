@@ -3,7 +3,7 @@ title: Ndërtimi i një integrimi të personalizuar me regjistruesin
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ndërtimi i një integrimi të personalizuar të regjistruesit {#building-a-custom-registrar-integration}
+# Ndërtimi i një integrimi të personalizuar të regjistruesit
 
 Shtesa Domain Seller përdor një model **Integration Registry**. Çdo regjistrues është një klasë PHP që implementon `Domain_Selling_Capability` dhe regjistrohet vetë përmes action hook `wu_domain_seller_register_capabilities`.
 

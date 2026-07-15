@@ -4,7 +4,7 @@ title: Bộ lọc - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Bộ lọc: auth_redirect_scheme {#filter-authredirectscheme}
+# Bộ lọc: auth_redirect_scheme
 
 Bộ lọc này dùng để tùy chỉnh cơ chế chuyển hướng xác thực.
 

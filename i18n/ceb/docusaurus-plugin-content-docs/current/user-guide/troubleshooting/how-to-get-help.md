@@ -3,7 +3,7 @@ title: Unsaon pagpangita og tabang
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Unsaon Pagpangita og Tabang {#how-to-get-help}
+# Unsaon Pagpangita og Tabang
 
 Naa kay valid License key, ug konektado ni niana ang access sa among team para motabang nimo sa mga problema nga mahimong mosulod samtang nag-set up ka sa Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: Զտիչ - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Զտիչ: wu_country_get_cities {#filter-wucountrygetcities}
+# Զտիչ: wu_country_get_cities
 
 Վերադարձնում է երկրի որևէ նահանգի քաղաքների ցանկը։
 

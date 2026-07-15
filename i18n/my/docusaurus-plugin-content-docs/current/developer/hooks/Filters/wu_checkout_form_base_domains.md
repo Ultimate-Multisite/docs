@@ -4,7 +4,7 @@ title: စစ်ထုတ်ကိရိယာ - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# စစ်ထုတ်ကိရိယာ: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# စစ်ထုတ်ကိရိယာ: wu_checkout_form_base_domains
 
 မျှဝေသုံးသော ငွေပေးချေမှုဖောင် အခြေခံဒိုမိန်းများကို mapped-domain မှတ်တမ်းများအဖြစ် မဖြစ်စေရန် စစ်ထုတ်သည်။
 

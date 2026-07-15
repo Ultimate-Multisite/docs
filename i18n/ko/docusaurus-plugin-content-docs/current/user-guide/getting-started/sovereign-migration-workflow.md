@@ -3,7 +3,7 @@ title: 주권 마이그레이션 워크플로우
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# 주권 마이그레이션 워크플로우 {#sovereign-migration-workflow}
+# 주권 마이그레이션 워크플로우
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 버전에서는 표준 서브사이트를 주권 테넌트 인프라로 이전할 때 마이그레이션 검증 게이트가 추가되었습니다.
 

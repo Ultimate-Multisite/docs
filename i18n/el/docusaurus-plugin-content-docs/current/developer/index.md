@@ -3,7 +3,7 @@ title: Τεκμηρίωση για Developers
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Τεκμηρίωση για Developers {#developer-documentation}
+# Τεκμηρίωση για Developers
 
 Αυτό το εγχειρίδιο παρέχει στους developers όλα τα απαραίτητα για να ενσωματώσουν, να επεκτείνουν ή να αναπτύξουν addons για το Ultimate Multisite. Το Ultimate Multisite μετατρέπει ένα WordPress Multisite network σε μια πλατφόρμα Website-as-a-Service (WaaS).
 

@@ -4,7 +4,7 @@ title: Isenzo - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Isenzo: set_auth_cookie {#action-setauthcookie}
+# Isenzo: set_auth_cookie
 
 Kuqala ngokushesha ngaphambi kokuthi ikhukhi yokuqinisekisa isethwe.
 

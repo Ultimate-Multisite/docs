@@ -3,7 +3,7 @@ title: ダშბორდის მიმოხილვა
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# დეშბორდის მიმოხილვა {#dashboard-overview}
+# დეშბორდის მიმოხილვა
 
 Ultimate Multisite-ს აქვს სპეციალური **Dashboard** (დეშბორდი) Ultimate Multisite მენიუს ქვეშ, ასევე ამატებს ვიჯეტებს Network Dashboard-ზე. ეს სტატია განიხილავს, თუ რა დაინახავთ ორივე ადგილას.
 

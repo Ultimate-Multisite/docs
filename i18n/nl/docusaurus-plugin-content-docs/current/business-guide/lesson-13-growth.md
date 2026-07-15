@@ -3,7 +3,7 @@ title: 'Les 13: Opschalen'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Les 13: Opschalen {#lesson-13-scaling-up}
+# Les 13: Opschalen
 
 Je hebt een werkende platform met betalende klanten. Deze les gaat over hoe je van een kleine operatie kunt groeien naar een duurzaam bedrijf – door de infrastructuur op te schalen, processen te automatiseren en de inkomsten per klant te verhogen.
 

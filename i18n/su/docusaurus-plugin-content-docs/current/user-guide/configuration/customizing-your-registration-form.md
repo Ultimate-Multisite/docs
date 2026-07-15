@@ -3,7 +3,7 @@ title: Nyaluyukeun Formulir Pendaptaran Anjeun
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Nyaluyukeun Formulir Pendaptaran anjeun {#customizing-your-registration-form}
+# Nyaluyukeun Formulir Pendaptaran anjeun
 
 Pikeun ngajadikeun jaringan anjeun katingali unik dibandingkeun jeung SaaS séjén anu diwangun dina platform WordPress, Ultimate Multisite ngamungkinkeun anjeun nyaluyukeun kaca pendaptaran jeung login ku fitur **Checkout Forms** kami.
 

@@ -3,7 +3,7 @@ title: Produinntacha domáin agus prisiúchán
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produidíocht Donáin agus Prísaí {#domain-products-and-pricing}
+# Produidíocht Donáin agus Prísaí
 
 Tá produidí donáin an cur chun cinn a bhfuil tú ag cur rath ar prísaí, TLDs (Top-Level Domains), privacy WHOIS, agus seilbhís cungaithe. Tá méid sảnraithe Multisite Ultimate deacairt le tab éifeachtach **Domain Settings** (Céadtaí Donáin).
 

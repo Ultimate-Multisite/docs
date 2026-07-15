@@ -4,7 +4,7 @@ title: Filtre - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filtre: wu_rest_get_item {#filter-wurestgetitem}
+# Filtre: wu_rest_get_item
 
 İsteğin devam edip edemeyeceğini filtreler.
 

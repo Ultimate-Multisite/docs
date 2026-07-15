@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Memasang Iklan di Jaringan Anda dengan Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Memasang Iklan di Jaringan Anda dengan Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector adalah **add-on gratis** yang memberikan Anda alat untuk memasang iklan pada paket langganan langsung dari halaman editnya.
 

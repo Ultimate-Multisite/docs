@@ -3,7 +3,7 @@ title: Änderungsprotokoll für verbrauchsabhängige Tarife
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Changelog für nutzungsabhängige Tarife {#metered-plans-changelog}
+# Changelog für nutzungsabhängige Tarife
 
 Version 1.1.0 - Veröffentlicht am 2026-05-05
 - Neu: AI-Token-Abrechnung für Multisite-Subsites — AI-Token-Nutzung über Kundenseiten hinweg verfolgen und mit konfigurierbaren Raten pro Token abrechnen

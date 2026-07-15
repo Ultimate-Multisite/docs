@@ -3,7 +3,7 @@ title: Einen Tarif herabstufen
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Einen Plan herabstufen (v2) {#downgrading-a-plan-v2}
+# Einen Plan herabstufen (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

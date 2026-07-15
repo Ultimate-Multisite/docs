@@ -3,7 +3,7 @@ title: Intégration Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Intégration {#closte-integration}
+# Closte Intégration
 
 ## Aperçu {#overview}
 Closte est une plateforme d'hébergement WordPress gérée construite sur l'infrastructure Google Cloud.

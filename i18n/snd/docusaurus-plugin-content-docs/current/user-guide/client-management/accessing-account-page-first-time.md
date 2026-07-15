@@ -3,7 +3,7 @@ title: اکاؤنٽ پيچ ڏسڻ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# توهان پنهنجو اڪاؤنٽ پيجهو ڪيئن پهريون دفعا وصول ڪري سگهو ٿا؟ {#how-can-i-access-my-account-page-for-the-first-time}
+# توهان پنهنجو اڪاؤنٽ پيجهو ڪيئن پهريون دفعا وصول ڪري سگهو ٿا؟
 
 Ultimate Multisiteء ۾ خوش آمديد!
 

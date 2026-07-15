@@ -3,7 +3,7 @@ title: Isdhexgalka Kiraystayaal Badan
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Isdhexgalka Multi-Tenancy {#multi-tenancy-integration}
+# Isdhexgalka Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 waxay beddeshaa dhowr meelood oo isdhexgal ah oo loogu talagalay kiraystayaasha madax-bannaan, xaqiijinta guurista, iyo otomaatigga wareegga-nolosha kiraystaha.
 

@@ -3,7 +3,7 @@ title: Integration ntawm WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# ការរួមបញ្ចូលជាមួយ WP Engine {#wp-engine-integration}
+# ការរួមបញ្ចូលជាមួយ WP Engine
 
 ## ພາບລວມ {#overview}
 WP Engine ເປັນເວທີໂຮດ WordPress ທີ່ຈັດການແບບພຣີມຽມ (premium managed) ທີ່ໃຫ້ປະສິດທິພາບ, ຄວາມປອດໄພ, ແລະ ສາມາດຂະຫຍາຍໄດ້ດີສຳລັບເວັບໄຊ WordPress. ການເຊື່ອມຕໍ່ນີ້ຈະເຮັດໃຫ້ການ đồng bộ domain ອັດຕະໂນມັດລະຫວ່າງ Ultimate Multisite ແລະ WP Engine ເຮັດໄດ້.

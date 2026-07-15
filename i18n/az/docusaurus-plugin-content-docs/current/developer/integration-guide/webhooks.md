@@ -3,7 +3,7 @@ title: Webhook Emalı
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhooklarla İşləmək {#webhook-handling}
+# Webhooklarla İşləmək
 
 Xarici xidmətlərdən gələn hadisələri qəbul etmək və məlumatları Ultimate Multisite ilə sinxronlaşdırmaq üçün özəl webhook nöqtələri (endpoints) yaradın.
 

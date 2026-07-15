@@ -3,7 +3,7 @@ title: Gidans Enstite Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite genyen yon wizard ki vini avan pou konvèti yon enstalasyon WordPress estanda an rezo WordPress Multisite otomatikman. Sa elimine bezwen ou edite `wp-config.php` oswa eseye komand baz done (database commands) menm jan an.
 

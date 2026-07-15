@@ -3,7 +3,7 @@ title: Yardym almagyň nädip?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Nasıl Yardım Alınır {#how-to-get-help}
+# Nasıl Yardım Alınır
 
 Geçerli Lisans anahtarınız var ve bu anahtara sahip olduğunuz için, Ultimate Multisite'ı kurarken karşılaşabileceğiniz sorunları çözmenize yardımcı olmak için ekibimizle iletişime geçme erişiminiz de bulunmaktadır.
 

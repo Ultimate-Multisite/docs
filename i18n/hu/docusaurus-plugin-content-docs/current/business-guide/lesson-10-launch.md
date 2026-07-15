@@ -3,7 +3,7 @@ title: 'Összhang 10: Indítási nap'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# 10. Lesson: Az elindítás napja {#lesson-10-launch-day}
+# 10. Lesson: Az elindítás napja
 
 Mindent felépítettünk. Mielőtt megnyitnákuk az ajtókat, ez a lesson áttekinti az elindítás előtti ellenőrzőlistát, hogy biztos benne, hogy semmi sem törött, hiányzik vagy szégyenemes.
 

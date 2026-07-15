@@ -3,7 +3,7 @@ title: Ad Injektoro
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Anjokado Reklamojn al Viajanon per Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Anjokado Reklamojn al Viajanon per Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector estas **libra ekstensiva**, kiu donas al vi la instrumenton por ploti reklamojn sur viajnajn planojn direkt de iliaj redigado paĝo.
 

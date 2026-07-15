@@ -3,7 +3,7 @@ title: 'Phunziro 3: Kukonza Netiweki Yanu'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Phunziro 3: Kukhazikitsa Netiweki Yanu {#lesson-3-setting-up-your-network}
+# Phunziro 3: Kukhazikitsa Netiweki Yanu
 
 Nthawi yomanga yafika. Mu phunziro ili mudzayika Ultimate Multisite ndi kukonza maziko a netiweki ya FitSite. Chisankho chilichonse pano chimapangidwa poganizira msika wa masewera olimbitsa thupi.
 

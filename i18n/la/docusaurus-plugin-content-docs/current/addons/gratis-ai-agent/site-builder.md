@@ -3,7 +3,7 @@ title: Orchestratio Constructoris Situs v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (introductum in Gratis AI Agent v1.4.0) est machina quae creationem situs interretialis pluribus gradibus sustentat. Cum rogas agentem ut "situm interretialem popinae aedificet" vel "collectionem operum cum diario creet", orchestrator illud propositum summi gradus in **consilium** structum dividit, plugins necessarios ad id perficiendum reperit, quemque gradum ordine exsequitur, progressum observat, atque ab erroribus sua sponte se recipit.
 

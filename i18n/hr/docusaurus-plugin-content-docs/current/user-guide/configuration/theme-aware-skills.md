@@ -3,7 +3,7 @@ title: Vještine s obzirom na temu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Vještine s obzirom na temu {#theme-aware-skills}
+# Vještine s obzirom na temu
 
 Superdav AI Agent v1.10.0 dolazi s četiri nova ugrađena vještina koje se prilagođavaju vašem trenutnom WordPress temi. Ove vještine pružaju specijalizirano vođenje i mogućnosti prilagođene arhitekturi i značajkama vaše teme.
 

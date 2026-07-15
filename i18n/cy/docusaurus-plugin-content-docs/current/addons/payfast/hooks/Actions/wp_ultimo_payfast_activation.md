@@ -4,7 +4,7 @@ title: Gweithred - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Gweithred: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Gweithred: wp_ultimo_payfast_activation
 
 Gadael i rannau eraill o'r plugin atodi eu harferion ar gyfer actifadu
 

@@ -4,7 +4,7 @@ title: Chosefera - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Fyuluta: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Fyuluta: wu_captcha_whitelisted
 
 Fyuluta ngati wogwiritsa ntchito/pempho lapano liyenera kuikidwa pa mndandanda wololedwa.
 

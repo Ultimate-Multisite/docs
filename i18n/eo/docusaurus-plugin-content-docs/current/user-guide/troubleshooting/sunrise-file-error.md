@@ -3,7 +3,7 @@ title: Errare de Sunrise Dosilo
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Erro Instalado de Sunrise File {#error-installing-the-sunrise-file}
+# Erro Instalado de Sunrise File
 
 La carpeta `sunrise.php` es un archivo especial que WordPress busca mientras se inicia (bootstraps). Para que WordPress pueda detectar el archivo `sunrise.php`, necesita estar ubicado dentro de la carpeta **wp-content**.
 

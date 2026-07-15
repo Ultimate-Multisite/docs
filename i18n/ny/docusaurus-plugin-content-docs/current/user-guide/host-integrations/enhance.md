@@ -64,7 +64,7 @@ title: >-
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kufuna Kufunsa Control Panel {#enhance-control-panel-integration}
+# Kufuna Kufunsa Control Panel
 
 ## Mwayi (Overview) {#overview}
 Enhance ndi control panel yomodate yomwe imapereka ulemu wopereka hosting automation ndi kuwunika. Izi zinthu zimapereka kukhazikitsa m'mwayi wosonyeza domain ndi kusunga SSL certificate m'mwayi wopereka kwa Ultimate Multisite ndi Enhance Control Panel.

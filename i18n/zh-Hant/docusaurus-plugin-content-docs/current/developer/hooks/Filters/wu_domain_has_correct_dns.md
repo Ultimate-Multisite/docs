@@ -4,7 +4,7 @@ title: 過濾器 - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# 篩選器：wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# 篩選器：wu_domain_has_correct_dns
 
 允許外掛開發者新增檢查，以定義結果。
 

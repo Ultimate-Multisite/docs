@@ -4,7 +4,7 @@ title: फिल्टर - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies {#filter-sendauthcookies}
+# Filter: send_auth_cookies
 
 auth cookies वास्तवमै क्लाइन्टलाई पठाइनबाट रोक्न अनुमति दिन्छ।
 

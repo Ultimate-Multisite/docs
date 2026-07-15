@@ -3,7 +3,7 @@ title: Traduci Ultima Multsite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Traduko de Ultimate Multisite {#translating-ultimate-multisite}
+# Traduko de Ultimate Multisite
 
 Ultimate Multisite estas sviluppita en angla, sed la plugin estas plene tradukebla kaj ni 활venas aktive traduko kontribuojn.
 

@@ -3,7 +3,7 @@ title: Sunrise 파일 오류
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise 파일 설치 오류 {#error-installing-the-sunrise-file}
+# Sunrise 파일 설치 오류
 
 sunrise.php 파일은 WordPress가 자체적으로 부트스트랩하는 동안 찾는 특수 파일입니다. WordPress가 sunrise.php 파일을 감지할 수 있으려면 **wp-content 폴더** 안에 위치해야 합니다.
 

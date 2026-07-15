@@ -3,7 +3,7 @@ title: Upravljanje članstev
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Upravljanje članstev {#managing-memberships}
+# Upravljanje članstev
 
 V Ultimate Multisite lahko upravljate članstvi in vsi predskupine na svoji mreži. Pregledajte in uredite podatke o predskupu, kot so načrti in izdelki, število spletnikov, računski iznos in frekvenca, historijo plačil in časovne oznake.
 

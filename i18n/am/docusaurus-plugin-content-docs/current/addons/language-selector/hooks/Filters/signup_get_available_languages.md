@@ -4,7 +4,7 @@ title: መለያ መክፈቻ - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# ማጣሪያ፡ signup_get_available_languages {#filter-signupgetavailablelanguages}
+# ማጣሪያ፡ signup_get_available_languages
 
 የፊት ለፊት (front-end) የድር ጣቢያዎች መመዝገቢያ የሚደረጉበትን የሚገኙ ቋንቋዎች ዝርዝር ማጣራት።
 

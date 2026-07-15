@@ -3,7 +3,7 @@ title: Kugadzirwa neHosteringer (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrasyon Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Integrasyon Hostinger (hPanel)
 
 ## Genel Bakış {#overview}
 

@@ -3,7 +3,7 @@ title: Eng personaliséiert Registrar-Integratioun opbauen
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Eng personaliséiert Registrar-Integratioun bauen {#building-a-custom-registrar-integration}
+# Eng personaliséiert Registrar-Integratioun bauen
 
 Den Domain Seller-Addon benotzt en **Integration Registry**-Muster. All Registrar ass eng PHP-Klass, déi `Domain_Selling_Capability` implementéiert a sech selwer iwwer den `wu_domain_seller_register_capabilities` Action Hook registréiert.
 

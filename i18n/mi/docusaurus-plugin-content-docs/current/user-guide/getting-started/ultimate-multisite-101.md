@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite he i te WordPress Multisite plugin, e tino whaiaroa ana ki ahau hei tino whakamahi ai ngā WaaS (Website as a Service) me Websites mō ngā mea wahi. I roto i te whakawhanake mātou ko te pūrere kua tino pai, he mea nui te mōhaka tūnga e tātou kua whakarite ake mō. I roto i te whakatika ki te whakamārama ahau i te waiata ko Ultimate Multisite ka tino whakamohahau ai i tō mahi me ngā mea wahi, he mea nui te mōhaka tūnga e tātou kua whakarite ake mō.
 

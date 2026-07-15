@@ -3,7 +3,7 @@ title: 자주 묻는 질문
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# 자주 묻는 질문 {#frequently-asked-questions}
+# 자주 묻는 질문
 
 지원 요청 중 자주 나오는 **자주 묻는 질문**은 다음과 같습니다.
 

@@ -3,7 +3,7 @@ title: د چک نوریس حقایقو بدلون‌لیک
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# د Chuck Norris حقایقو بدلون‌لیک {#chuck-norris-facts-changelog}
+# د Chuck Norris حقایقو بدلون‌لیک
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * زیات شو: د Ultimate Multisite اوسمهالولو سرور له لارې د اتومات اوسمهالولو وړتیا

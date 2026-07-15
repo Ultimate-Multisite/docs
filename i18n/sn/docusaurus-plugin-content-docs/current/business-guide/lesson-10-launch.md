@@ -3,7 +3,7 @@ title: 'Chidzidzo 10: Zuva Rekuparura'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Chidzidzo 10: Zuva Rekutangisa {#lesson-10-launch-day}
+# Chidzidzo 10: Zuva Rekutangisa
 
 Zvese zvavakwa. Usati wavhura mikova, chidzidzo ichi chinopfuura nepachinyorwa chekutarisa chisati chatangisa kuti uve nechokwadi chekuti hapana chakaputsika, chiri kushaikwa, kana chinonyadzisa.
 

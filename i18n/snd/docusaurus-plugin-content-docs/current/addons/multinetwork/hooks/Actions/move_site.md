@@ -4,7 +4,7 @@ title: عمل - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# عمل: move_site {#action-movesite}
+# عمل: move_site
 
 تڏهن هلندو آهي جڏهن ڪا سائيٽ نئين نيٽورڪ ڏانهن منتقل ڪئي وئي هجي.
 

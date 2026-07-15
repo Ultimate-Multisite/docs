@@ -3,7 +3,7 @@ title: Ενσωμάτωση Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Ενσωμάτωση με τον Πίνακα Ελέγχου Hestia {#hestia-control-panel-integration}
+# Ενσωμάτωση με τον Πίνακα Ελέγχου Hestia
 
 Αυτός ο οδηγός εξηγεί πώς να ρυθμίσετε την ενσωμάτωση του Ultimate Multisite με το Hestia, ώστε τα αντιστοιχισμένα domains στο δίκτυό σας να προστίθενται (και να αφαιρούνται) αυτόματα ως Web Domain Aliases στο Hestia.
 

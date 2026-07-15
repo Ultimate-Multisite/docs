@@ -3,7 +3,7 @@ title: Index mutationum Factorum de Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Index Mutationum Factorum Chuck Norris {#chuck-norris-facts-changelog}
+# Index Mutationum Factorum Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Additum: Functionalis renovatio automatica per Ultimate Multisite update server

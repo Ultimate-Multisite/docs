@@ -3,7 +3,7 @@ title: Hurukuro Yekutsvaga
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Hurukuro yeKutsvaga Ruzivo {#discovery-interview}
+# Hurukuro yeKutsvaga Ruzivo
 
 **Hurukuro yeKutsvaga Ruzivo** ndiyo nhanho yekutanga muhurongwa hwekugadzira hweTheme Builder. Inounganidza ruzivo nezvesaiti yako, bhizinesi, uye zvaunofarira pakugadzira kuti igadzire theme yakagadzirirwa iwe.
 

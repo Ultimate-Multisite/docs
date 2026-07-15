@@ -4,7 +4,7 @@ title: Acció - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Aquesta acció: wu_template_previewer {#action-wutemplatepreviewer}
+# Aquesta acció: wu_template_previewer
 
 S'executa quan estàs dins del context del visualizador de plantilles (template previewer).
 

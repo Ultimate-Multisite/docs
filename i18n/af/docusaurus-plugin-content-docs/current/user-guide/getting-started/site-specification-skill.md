@@ -3,7 +3,7 @@ title: Webwerf Spesifikasie Vaardigheid
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Webwerf-spesifikasie Vaardigheid {#site-specification-skill}
+# Webwerf-spesifikasie Vaardigheid
 
 Die **Webwerf-spesifikasie vaardigheid** is 'n gestruktureerde benadering om jou webwerf se doelwitte, gehoor en handelsmerkbewustheid vas te vang. Hierdie inligting word in jou **site_brief** geheue gestoor, wat agents oor sessies verwys om konsekwente, konteksbewuste hulp te bied.
 

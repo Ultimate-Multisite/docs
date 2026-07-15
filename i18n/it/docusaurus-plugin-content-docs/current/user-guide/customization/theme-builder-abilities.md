@@ -3,7 +3,7 @@ title: Funzionalità del Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Funzionalità del Theme Builder: Strutturare e Attivare i Block Theme {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Funzionalità del Theme Builder: Strutturare e Attivare i Block Theme
 
 Superdav AI Agent v1.12.0 introduce due potenti funzionalità che ti permettono di generare e implementare block theme personalizzati direttamente dall'interfaccia chat.
 

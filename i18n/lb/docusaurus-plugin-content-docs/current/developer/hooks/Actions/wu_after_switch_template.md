@@ -4,7 +4,7 @@ title: Aktioun - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Aktioun: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Aktioun: wu_after_switch_template
 
 Erlaabt plugin-Entwéckler, Funktiounen ze hooken, nodeems e Benotzer oder super admin d'site-Schabloun wiesselt
 

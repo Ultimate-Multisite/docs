@@ -3,7 +3,7 @@ title: 'Dərslik 6: Qeydiyyat Təcrübəsi'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Dərs 6: Qeydiyyat Təcrübəsi {#lesson-6-the-signup-experience}
+# Dərs 6: Qeydiyyat Təcrübəsi
 
 Ödəniş axını (checkout flow) marağın gəlirə çevrildiyi yerdir. Qarışıq və ya ümumi bir qeydiyyat prosesi müştəriləri itirir. Onların dilində danışan və asan gələn bir nişəyə xas axın (flow) onları müştəriyə çevirir.
 

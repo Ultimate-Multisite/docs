@@ -3,7 +3,7 @@ title: Conceptes bàsics
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Conceptes bàsics {#basic-concepts}
+# Conceptes bàsics
 
 Per a un nou usuarí de WordPress Multisite o per a qualsevol persona que estigui acabant de començar a utilitzar Ultimate Multisite, hi ha moltíssimes paraules i frases noves que absorbir al principi. Aprender-les és una tasca important perquè ha deis entendre la plataforma i com funciona en totalitat.
 

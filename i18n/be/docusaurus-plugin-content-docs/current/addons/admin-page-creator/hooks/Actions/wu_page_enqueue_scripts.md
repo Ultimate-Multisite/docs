@@ -4,7 +4,7 @@ title: Дзеяванне - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Дзеяванне: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Дзеяванне: wu_page_enqueue_scripts
 
 Дадае кастомнае дзеяванне, каб нам было месца для завантажвання (enqueue) сцэнарыяў і стыляў па меры неабходнасці, і каб гарантаваць, што яны загружаюцца толькі на правільных адмін-страніцах.
 

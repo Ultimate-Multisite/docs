@@ -3,7 +3,7 @@ title: Entegrasyon Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Konbine Ultimate Multisite ak Zapier {#integrating-ultimate-multisite-with-zapier}
+# Konbine Ultimate Multisite ak Zapier
 
 Nan yon tèks, nou te pale de [Webhooks](webhooks.md) e kijan yo ka itilize pou konekte ak aplikasyon ki pa nan sistèm ou an.
 

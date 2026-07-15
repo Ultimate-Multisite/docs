@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# ଫିଲ୍ଟର: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# ଫିଲ୍ଟର: get_site_url_for_previewer
 
 ପ୍ଲଗଇନ୍ ବିକାଶକାରୀମାନଙ୍କୁ ପୂର୍ବାବଲୋକନକାରୀରେ ବ୍ୟବହୃତ URL କୁ ଫିଲ୍ଟର କରିବାକୁ ଦିଅନ୍ତୁ
 

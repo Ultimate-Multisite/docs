@@ -3,7 +3,7 @@ title: Tūhono AI Ultimate mō ngā Pito Mutunga Hototahi Rārangi Panonitanga
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector mō Compatible Endpoints Rangitaki Panonitanga {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector mō Compatible Endpoints Rangitaki Panonitanga
 
 ## Putanga 2.0.0 — I tukuna i te 2026-04-24 {#version-200--released-on-2026-04-24}
 

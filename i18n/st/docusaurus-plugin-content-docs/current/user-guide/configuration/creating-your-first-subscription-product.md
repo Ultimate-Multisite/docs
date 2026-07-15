@@ -3,13 +3,13 @@ title: Ho hlola mo morao wa ho fana ka tšhobo ea hau e liti
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ho Hlobo ea Seboho sehle (v2) {#creating-your-first-subscription-product-v2}
+# Ho Hlobo ea Seboho sehle (v2)
 
 _**SEBO HO KOTSI: Le nako ena e fana ka Ultimate Multisite v2.x fapaneng. Ha u sebelisa v1.x,**_ **_ha u le tla hlalosa seboho sehle.**_
 
 Ho fana ka ho fana le nnete ea hau le ho fana ka ho fana ka litšepo tse fapaneng tsa subscription. O fana ka ho fetola litšepo tse fapaneng? Litšepo tse kang fa o ka ho fana ka? Ka lenyalo ena, re tla ba le leboholo le sebotso sa tsela e tsoang ea litšepo.
 
-# Tlhopha ea Sehlopha {#product-type}
+# Tlhopha ea Sehlopha
 
 **Tlhahlobo:** Ke sehlopha sefapaneng sa ho ba le ka lebaka la hore na le kae e fana ka.
 

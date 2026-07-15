@@ -6,7 +6,7 @@ title: >-
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Azione: move_site {#action-movesite}
+# Azione: move_site
 
 Si attiva dopo che un sito è stato spostato in una nuova rete.
 

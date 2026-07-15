@@ -3,7 +3,7 @@ title: אינטגרציית GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# אינטגרציה עם GridPane {#gridpane-integration}
+# אינטגרציה עם GridPane
 
 ## סקירה כללית {#overview}
 GridPane היא לוח בקרה לאירוח WordPress שתוכנן במיוחד עבור אנשי מקצוע רציניים בתחום WordPress. האינטגרציה הזו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite לבין GridPane.

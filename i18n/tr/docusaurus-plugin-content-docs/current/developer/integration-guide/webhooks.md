@@ -3,7 +3,7 @@ title: Webhook İşleme
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook İşlemleri {#webhook-handling}
+# Webhook İşlemleri
 
 Harici servislerden gelen olayları almanız ve verileri Ultimate Multisite ile senkronize etmeniz için özel webhook uç noktaları oluşturun.
 

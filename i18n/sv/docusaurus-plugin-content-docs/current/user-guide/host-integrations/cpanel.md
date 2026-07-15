@@ -3,7 +3,7 @@ title: cPanel-integration
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel-integration {#cpanel-integration}
+# cPanel-integration
 
 ## Översikt {#overview}
 cPanel är en av de mest populära kontrollpanelerna för webbhotell och används av många delade och dedikerade hostingleverantörer. Den här integrationen möjliggör automatisk domänsynkronisering mellan Ultimate Multisite och cPanel, vilket låter dig automatiskt lägga till domänalias och subdomäner till ditt cPanel-konto.

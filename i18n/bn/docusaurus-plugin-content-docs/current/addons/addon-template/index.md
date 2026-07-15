@@ -3,9 +3,9 @@ title: অ্যাডঅন টেমপ্লেট
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# অ্যাডন টেমপ্লেট {#addon-template}
+# অ্যাডন টেমপ্লেট
 
-{{ADDON_DESCRIPTION}}
+অ্যাডঅন টেমপ্লেট — Ultimate Multisite.
 
 ## প্রয়োজনীয়তা (Requirements) {#requirements}
 

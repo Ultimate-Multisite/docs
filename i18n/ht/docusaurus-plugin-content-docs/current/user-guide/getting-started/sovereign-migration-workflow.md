@@ -3,7 +3,7 @@ title: Flèch Migrasyon Souverain
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow de Migration Souveraine {#sovereign-migration-workflow}
+# Workflow de Migration Souveraine
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ajoute des portes de vérification de migration pour déplacer un sous-site standard vers une infrastructure de locataire souverain.
 

@@ -3,7 +3,7 @@ title: Kupanga Mpemba
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kufunga Plan (v2) {#upgrading-a-plan-v2}
+# Kufunga Plan (v2)
 
 _**KUFUNDA MUWENYE UMA: Iyi article iyi ifi Ultimate Multisite version 2.x.**_
 

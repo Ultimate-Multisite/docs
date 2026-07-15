@@ -4,7 +4,7 @@ title: Gnìomh - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Gnìomh: wu_model_post_save {#action-wumodelpostsave}
+# Gnìomh: wu_model_post_save
 
 Thèid a chur an gnìomh às dèidh nì a stòradh san stòr-dàta.
 

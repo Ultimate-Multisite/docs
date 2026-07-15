@@ -3,7 +3,7 @@ title: Ýörite Registrar integrasiýasyny gurmak
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Custom Registrar integrasiýasyny gurmak {#building-a-custom-registrar-integration}
+# Custom Registrar integrasiýasyny gurmak
 
 Domain Seller addon **Integration Registry** nusgasyny ulanýar. Her registrar `Domain_Selling_Capability` amala aşyrýan we `wu_domain_seller_register_capabilities` action hook arkaly özüni hasaba alýan PHP klassydyr.
 

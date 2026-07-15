@@ -3,7 +3,7 @@ title: 会员资格过期和网站封锁
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# 会员资格过期和网站封禁 {#membership-expiration-and-site-blocking}
+# 会员资格过期和网站封禁
 
 本指南解释了 Ultimate Multisite 如何处理会员资格过期、试用期结束和前端网站封禁。它涵盖了会员资格从“活跃”到“过期”的整个生命周期，介绍了控制网站是否被封禁的设置，以及在会员资格过期后网站仍可访问时需要检查哪些内容。
 

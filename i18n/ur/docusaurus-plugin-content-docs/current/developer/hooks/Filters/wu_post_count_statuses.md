@@ -4,7 +4,7 @@ title: فلٹر - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 پلگ ان بنانے والوں کو یہ سہولت ملتی ہے کہ وہ یہ طے کر سکیں کہ کون سی پوسٹ کی حیثیت (post status) گنی جائے۔ بنیادی طور پر، پبلش شدہ (published) اور پرائیویٹ (private) پوسٹس کو گنا جاتا ہے۔
 

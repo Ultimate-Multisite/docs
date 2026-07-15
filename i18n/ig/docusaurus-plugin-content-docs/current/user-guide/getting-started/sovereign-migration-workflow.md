@@ -3,7 +3,7 @@ title: Nkwado Migratory Workflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Migration Sovereign {#sovereign-migration-workflow}
+# Workflow Migration Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nwere nkwado verification gates (verification gates) na ịnwale site ọ bụla (subsite) standard do infrastructure nke sovereign tenant.
 

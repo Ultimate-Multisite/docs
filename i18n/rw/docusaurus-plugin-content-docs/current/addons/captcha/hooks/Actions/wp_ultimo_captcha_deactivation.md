@@ -4,7 +4,7 @@ title: Igikorwa - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Igikorwa: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Igikorwa: wp_ultimo_captcha_deactivation
 
 Reka ibindi bice bya plugin bihuze imikorere yabyo yo gukuraho gukora
 

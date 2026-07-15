@@ -3,7 +3,7 @@ title: Создавање кодове за попуст
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Создавање Кодови за Офрт (v2) {#creating-discount-codes-v2}
+# Создавање Кодови за Офрт (v2)
 
 _**ВАЖНА ЗАБЕЛЕЖКА: Ова приложување се однесува на Ultimate Multisite верзија 2.x.**_
 

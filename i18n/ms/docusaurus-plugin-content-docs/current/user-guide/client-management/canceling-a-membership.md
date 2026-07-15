@@ -3,7 +3,7 @@ title: Membatalkan Keahlian
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membatalkan Keahlian (v2) {#canceling-a-membership-v2}
+# Membatalkan Keahlian (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 

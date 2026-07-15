@@ -3,7 +3,7 @@ title: 'Leçon 9 : Tarification pour le profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leçon 9 : Tarification pour la rentabilité {#lesson-9-pricing-for-profit}
+# Leçon 9 : Tarification pour la rentabilité
 
 Dans la Leçon 5, nous avons défini les prix initiaux pour les plans FitSite. Maintenant, nous allons affiner la stratégie de tarification avec des techniques qui augmentent les revenus, encouragent les mises à niveau et réduisent le taux de désabonnement.
 

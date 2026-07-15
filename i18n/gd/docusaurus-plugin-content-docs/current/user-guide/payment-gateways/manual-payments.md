@@ -3,7 +3,7 @@ title: A’ cur pàighidhean làimhe air dòigh
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# A’ stèidheachadh phàighidhean làimhe (v2) {#setting-up-manual-payments-v2}
+# A’ stèidheachadh phàighidhean làimhe (v2)
 
 _**NOTA CUDROMACH: Tha an t-artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 

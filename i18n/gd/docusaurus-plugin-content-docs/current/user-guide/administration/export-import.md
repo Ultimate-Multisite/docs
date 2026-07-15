@@ -3,7 +3,7 @@ title: Eaith agus aithreachadh
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 ma ùr a tool **Export & Import** de sin-site (single-site) a chùlna an **Tools > Export & Import**. Usaimh echan thu tha thu leat WordPress air ZIP file, a rian seo a stiù, air a leat site a' chùlna air WordPress leat compatible.
 

@@ -3,7 +3,7 @@ title: جیاواکاریی مۆڵتی-تەنیسی
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# جزیاته‌کردنی چند مستأجری (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# جزیاته‌کردنی چند مستأجری (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 پشتیبانی از جداسازی پایگاه داده و فایل سیستم برای هر زیرمجموعه سایت به عنوان مستأجران حاکمیتی (sovereign tenants) را دارد. این قابلیت باعث می‌شود داده‌های مستأجرها از هم جدا بمانند در حالی که تنظیمات شبکه، صورت‌حساب (billing) و مدیریت همچنان حفظ شود.
 

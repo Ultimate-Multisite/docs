@@ -3,7 +3,7 @@ title: సైట్ బిల్డర్ మోడ్ తొలగింపు 
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# సైట్ బిల్డర్ మోడ్ తొలగింపు నోటీసు {#site-builder-mode-removal-notice}
+# సైట్ బిల్డర్ మోడ్ తొలగింపు నోటీసు
 
 **Superdav AI Agent v1.12.0 లో Site Builder mode తొలగించబడింది.** మీరు Site Builder mode వాడుతున్నట్లయితే, థీమ్ సృష్టి మరియు సైట్ సెటప్ కోసం మీరు **Setup Assistant agent** కి మారాలి.
 

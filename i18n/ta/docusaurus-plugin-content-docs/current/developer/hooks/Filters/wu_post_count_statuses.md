@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 பிளக்இன் உருவாக்குநர்கள் எந்தெந்த பதிவின் நிலைகளை (post status) கணக்கிட வேண்டும் என்பதை மாற்ற இது அனுமதிக்கிறது. இயல்பாகவே, 'published' மற்றும் 'private' என்ற நிலைகளுடைய பதிவுகள் கணக்கிடப்படும்.
 

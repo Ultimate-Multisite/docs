@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Dodatki Ultimate Multisite {#ultimate-multisite-addons}
+# Dodatki Ultimate Multisite
 
 Dodatki rozszerzają funkcjonalność Ultimate Multisite, dodając nowe cechy i integracje. Większość dodatków jest płatna i można je kupić na [ultimatemultisite.com](https://ultimatemultisite.com).
 

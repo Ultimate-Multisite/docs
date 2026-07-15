@@ -4,7 +4,7 @@ title: Action - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# অ্যাকশন: wu_domain_became_primary {#action-wudomainbecameprimary}
+# অ্যাকশন: wu_domain_became_primary
 
 যখন কোনো ডোমেইন একটি সাইটের প্রাইমারি ডোমেইন হয়ে যায়, তখন এটি ট্রিগার হয়।
 

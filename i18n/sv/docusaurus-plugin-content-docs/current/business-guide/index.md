@@ -3,7 +3,7 @@ title: Bygg ett nischwebbplatsföretag
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bygg ett nischwebbplatsföretag med Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Bygg ett nischwebbplatsföretag med Ultimate Multisite
 
 De flesta som försöker sälja webbplatser konkurrerar på pris med Wix, Squarespace och tusentals frilansare. De förlorar. De som lyckas väljer istället en specifik målgrupp, bygger en lösning anpassad för den målgruppen och tar betalt för det värde de levererar.
 

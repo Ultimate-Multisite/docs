@@ -3,7 +3,7 @@ title: 发布说明
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# 发布说明 {#release-notes}
+# 发布说明
 
 ## 版本 2.13.0 — 发布于 2026-06-05 {#version-2130--released-on-2026-06-05}
 

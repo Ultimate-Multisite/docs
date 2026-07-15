@@ -4,7 +4,7 @@ title: Szűrő - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Szűrő: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Szűrő: wu_domain_has_correct_dns
 
 Lehetővé teszi a plugin fejlesztőknek új ellenőrzések hozzáadását, amelyek alapján meghatározható a találat.
 

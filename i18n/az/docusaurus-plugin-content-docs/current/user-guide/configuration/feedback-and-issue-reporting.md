@@ -3,7 +3,7 @@ title: Müştəri Rəy və Problemlərin Hesabat Verilməsi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Müştəri Geri Bildirişi və Problemlərin Hesabat Edilməsi {#customer-feedback--issue-reporting}
+# Müştəri Geri Bildirişi və Problemlərin Hesabat Edilməsi
 
 Gratis AI Agent v1.5.0, son istifadəçilərin kömək etməyən cavablara işarə edə biləcəyi və problemləri birbaşa chat interfeysindən hesabat edə biləcəyi daxili bir geri bildiriş və problem hesabat sistemi ilə təqdim olunur. Bu sistem konsentasiya (razılıq) idarəetməsinə, avtomatik hesabat əmrinə və arxa tərəfdə AI-köməkli təsnifat (triage) funksionallığı daxildir.
 

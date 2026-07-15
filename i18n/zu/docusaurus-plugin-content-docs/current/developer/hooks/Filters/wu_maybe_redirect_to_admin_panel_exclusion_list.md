@@ -4,7 +4,7 @@ title: Isihlungi - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Isihlungi: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Isihlungi: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 Dala uhlu lokukhishwa lwamapharamitha avimbela ukuqondisa kabusha okuzenzakalelayo.
 

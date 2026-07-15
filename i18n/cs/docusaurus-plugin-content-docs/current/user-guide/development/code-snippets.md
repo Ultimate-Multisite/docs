@@ -3,7 +3,7 @@ title: Úryvky kódu
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Ukázky kódu pro v2 {#code-snippets-for-v2}
+# Ukázky kódu pro v2
 
 Ukázky kódu pro **WordPress** se v zásadě používají k provádění určitých akcí, které by jinak vyžadovaly samostatný menší plugin. Takové ukázky kódu se vkládají do jednoho ze souborů jádra WordPressu nebo šablony (obvykle do souboru functions.php vaší šablony), nebo je lze použít jako MU plugin.
 

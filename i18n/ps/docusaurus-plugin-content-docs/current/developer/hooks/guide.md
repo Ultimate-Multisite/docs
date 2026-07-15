@@ -3,7 +3,7 @@ title: د Hooks کارونې لارښود
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# د Hooks کارولو لارښود {#hooks-usage-guide}
+# د Hooks کارولو لارښود
 
 Ultimate Multisite له ۲۰۰ څخه زیات action hooks او له ۲۸۰ څخه زیات filter hooks برابروي. دا پاڼه تر ټولو ډېر کارېدونکي hooks له عملي بېلګو سره پوښي. د بشپړ، په اتومات ډول جوړ شوي مرجع لپاره، په دې برخه کې نورې پاڼې وګورئ.
 

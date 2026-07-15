@@ -3,7 +3,7 @@ title: Маълумотномаи ҳукҳо
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Маълумотномаи hooks {#hooks-reference}
+# Маълумотномаи hooks
 
 Ҳуҷҷатҳои ба таври худкор тавлидшуда барои ҳамаи **59 амал** ва **118 филтр** дар Ultimate Multisite.
 

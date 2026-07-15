@@ -3,7 +3,7 @@ title: 'Öségnapok 7: A saját stílusod kialakítása'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7. Lesson: Ahhoz, hogy a sajátjuknak érezhető legyen {#lesson-7-making-it-yours}
+# 7. Lesson: Ahhoz, hogy a sajátjuknak érezhető legyen
 
 A vásárlóknak soha nem szabad úgy érezniük, mintha "valami WordPress plugin-ot" használnának. Úgy kell érezniük, mintha a FitSite-ot használnák – egy platformot, amelyet az ő iparájukra építettünk. Ez a lecke a márkázásra, a fehér címkézésre (white-labeling) és arra, hogy a platform egy terméknek tűnjön.
 

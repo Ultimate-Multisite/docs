@@ -4,7 +4,7 @@ title: Filter - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 వినియోగదారుడు అడ్మినిస్ట్రేటర్‌గా ఉన్న నెట్‌వర్క్‌లను ఫిల్టర్ చేస్తుంది, తద్వారా ప్రాసెస్‌ను త్వరగా పూర్తి చేయడానికి (short-circuit).
 

@@ -4,7 +4,7 @@ title: Omume - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Omume: move_site {#action-movesite}
+# Omume: move_site
 
 Na-arụ ọrụ mgbe ebugharịrị saịtị gaa na netwọkụ ọhụrụ.
 

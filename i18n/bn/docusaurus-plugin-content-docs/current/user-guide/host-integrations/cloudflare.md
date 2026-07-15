@@ -3,7 +3,7 @@ title: Cloudflare ইন্টিগ্রেশন
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ইন্টিগ্রেশন {#cloudflare-integration}
+# Cloudflare ইন্টিগ্রেশন
 
 ## সারসংক্ষেপ {#overview}
 Cloudflare একটি শীর্ষস্থানীয় কনটেন্ট ডেলিভারি নেটওয়ার্ক (CDN) ও নিরাপত্তা প্রদানকারী, যা ওয়েবসাইট সুরক্ষিত ও দ্রুত করতে সাহায্য করে। এই ইন্টিগ্রেশন Ultimate Multisite এবং Cloudflare-এর মধ্যে স্বয়ংক্রিয় ডোমেইন ব্যবস্থাপনা চালু করে, বিশেষ করে সাবডোমেইন মাল্টিসাইট ইনস্টলেশনের জন্য।

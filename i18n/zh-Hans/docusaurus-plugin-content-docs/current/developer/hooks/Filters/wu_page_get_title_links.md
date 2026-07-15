@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 允许插件开发者以及我们自己向我们的编辑页面添加操作链接
 

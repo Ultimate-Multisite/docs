@@ -3,7 +3,7 @@ title: Ntaub Ntawv Teev Kev Hloov ntawm Tus Xa Tawm Site
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Changelog {#site-exporter-changelog}
+# Site Exporter Changelog
 
 Version: 1.0.6 - Tso tawm rau 2026-05-11
 * Tshiab: Site exports tam sim no ntim nrog ib qho index.php uas pib nws tus kheej kom ZIP thiaj nruab tau rau ntawm tus host tshiab yam tsis tas nruab plugin cais

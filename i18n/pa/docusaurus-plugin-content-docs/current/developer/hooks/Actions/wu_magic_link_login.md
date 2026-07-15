@@ -4,7 +4,7 @@ title: ਕਾਰਵਾਈ - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Action: wu_magic_link_login {#action-wumagiclinklogin}
+# Action: wu_magic_link_login
 
 ਇਹ ਕੰਮ ਕਰਦਾ ਹੈ ਜਦੋਂ ਕੋਈ ਯੂਜ਼ਰ ਮੈਜਿਕ ਲਿੰਕ ਰਾਹੀਂ ਲੌਗਇਨ ਕਰਦਾ ਹੈ।
 

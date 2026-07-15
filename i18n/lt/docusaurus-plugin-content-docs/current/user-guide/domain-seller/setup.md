@@ -3,7 +3,7 @@ title: Nustatymai ir tiekėjo konfigūracija
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domenų pardavėjas: Įdiegimas ir tiekėjo konfigūracija {#domain-seller-setup-and-provider-configuration}
+# Domenų pardavėjas: Įdiegimas ir tiekėjo konfigūracija
 
 Domain Seller addon siunamas su gautiniu įdiegimo vadovu, kuris pabaigo visus reikiamus veiksmus. Šiame puslapyje aprašome vadovo veikimą ir kaip saugoti ar pakeisti tiekėjų (providerių) konfigūraciją po to.
 

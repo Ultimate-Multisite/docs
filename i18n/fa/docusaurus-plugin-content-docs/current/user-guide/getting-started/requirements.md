@@ -3,7 +3,7 @@ title: الزامات
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# پیش‌نیازهای Ultimate Multisite {#ultimate-multisite-requirements}
+# پیش‌نیازهای Ultimate Multisite
 
 اولین سوالی که احتمالاً قبل از خرید Ultimate Multisite از خودتان می‌پرسید این است که برای اجرای افزونه ما چه پیش‌نیازهایی لازم است. خوشبختانه، فقط چند پیش‌نیاز ساده برای اجرای Ultimate Multisite وجود دارد: یک **نام دامنه**، یک **میزبان وب** مناسب و یک نصب WordPress **Multisite**. همین و بس!
 

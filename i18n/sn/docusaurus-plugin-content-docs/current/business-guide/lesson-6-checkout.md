@@ -3,7 +3,7 @@ title: 'Chidzidzo 6: Chiitiko cheKunyoresa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Chidzidzo 6: Chiitiko cheKunyoresa {#lesson-6-the-signup-experience}
+# Chidzidzo 6: Chiitiko cheKunyoresa
 
 Mafambiro echeckout ndipo panoshanduka kufarira kuva mari. Maitiro ekunyoresa anovhiringidza kana akajairika anorasisa vatengi. Mafambiro akanangana neboka rako, anotaura mutauro wavo uye anonzwa ari nyore, anoshandura vanhu kuva vatengi.
 

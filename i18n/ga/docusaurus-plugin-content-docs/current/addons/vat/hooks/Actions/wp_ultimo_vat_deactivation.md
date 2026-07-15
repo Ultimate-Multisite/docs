@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Gníomh: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Gníomh: wp_ultimo_vat_deactivation
 
 Lig do chodanna eile den plugin a ngnáthaimh a cheangal le haghaidh díghníomhachtaithe
 

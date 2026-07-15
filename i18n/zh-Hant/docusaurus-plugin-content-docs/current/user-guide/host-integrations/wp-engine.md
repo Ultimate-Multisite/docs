@@ -3,7 +3,7 @@ title: WP Engine 整合
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine 整合 {#wp-engine-integration}
+# WP Engine 整合
 
 ## 概述 {#overview}
 WP Engine 是一個頂級的 WordPress 託管服務平台，為 WordPress 網站提供最佳化的效能、安全性和擴展性。這項整合功能可讓 Ultimate Multisite 與 WP Engine 之間自動同步網域。

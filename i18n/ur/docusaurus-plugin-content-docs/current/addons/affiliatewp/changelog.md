@@ -3,7 +3,7 @@ title: AffiliateWP کی تبدیلیوں کی فہرست
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP کی تبدیلیاں (Changelog) {#affiliatewp-changelog}
+# AffiliateWP کی تبدیلیاں (Changelog)
 
 ورژن: 2.0.1 - ریلیز ہوا 2025-09-28
 

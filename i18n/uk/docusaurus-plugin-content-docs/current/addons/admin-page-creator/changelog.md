@@ -3,7 +3,7 @@ title: Журнал змін Admin Page Creator
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Changelog Admin Page Creator {#admin-page-creator-changelog}
+# Changelog Admin Page Creator
 
 ### Версія 1.9.0 - Випущено 2026-01-18 {#version-190---released-on-2026-01-18}
 

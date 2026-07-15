@@ -4,7 +4,7 @@ title: 필터 - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# 필터: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# 필터: wu_apc_process_page_content
 
 개발자가 최종 콘텐츠를 조작할 수 있도록 허용
 

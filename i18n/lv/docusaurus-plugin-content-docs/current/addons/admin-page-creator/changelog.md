@@ -3,7 +3,7 @@ title: Administratora lapas veidotāja izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin lapu izveidotāja izmaiņu žurnāls {#admin-page-creator-changelog}
+# Admin lapu izveidotāja izmaiņu žurnāls
 
 ### Versija 1.9.0 - Izlaista 2026-01-18 {#version-190---released-on-2026-01-18}
 

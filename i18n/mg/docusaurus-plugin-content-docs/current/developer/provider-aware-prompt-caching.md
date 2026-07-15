@@ -3,7 +3,7 @@ title: Fitahirizana Cache Prompt Mahafantatra ny Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching ny Prompt Mahafantatra Provider {#provider-aware-prompt-caching}
+# Caching ny Prompt Mahafantatra Provider
 
 Superdav AI Agent v1.12.0 dia mampiditra **caching ny prompt mahafantatra provider**, izay manatsara ny vidin’ny API sy ny latency amin’ny alalan’ny caching ny prompts manerana ireo provider LLM samihafa. Samy manana mekanisma sy fikirakirana caching samihafa ny provider tsirairay.
 

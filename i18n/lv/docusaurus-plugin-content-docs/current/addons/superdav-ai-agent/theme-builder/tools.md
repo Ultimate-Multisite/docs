@@ -3,7 +3,7 @@ title: Rīki un konfigurācija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Rīki un konfigurācija {#tools-and-configuration}
+# Rīki un konfigurācija
 
 Theme Builder izmanto rīku kopu, lai analizētu, projektētu un izveidotu jūsu WordPress vietni. Versijā 1.16.0 **sd-ai-agent/site-scrape tagad ir 1. līmeņa rīks**, padarot to pēc noklusējuma pieejamu Theme Builder. Superdav AI Agent v1.18.0 arī ievieš atsevišķi izplatītu Advanced pavadošo pakotni uzticamām izstrādātāju darbplūsmām; šie rīki nav daļa no WordPress.org pamata pakotnes un ir jāinstalē un jāautorizē atsevišķi.
 

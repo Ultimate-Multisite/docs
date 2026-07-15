@@ -3,7 +3,7 @@ title: سجل تغييرات WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# سجل تغييرات تكامل WooCommerce {#woocommerce-integration-changelog}
+# سجل تغييرات تكامل WooCommerce
 
 الإصدار 2.2.0 - صدر في 2026-07-01
 * جديد: تظهر مبالغ ضرائب Ultimate Multisite الآن كسطور رسوم WooCommerce منفصلة عند إتمام الشراء، مما يجعل إجماليات الضرائب أوضح قبل الدفع.

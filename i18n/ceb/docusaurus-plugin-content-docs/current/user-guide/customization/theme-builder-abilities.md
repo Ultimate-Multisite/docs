@@ -3,7 +3,7 @@ title: Mga Abilidad sa Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Mga Abilidad sa Theme Builder: Scaffold ug I-activate ang Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Mga Abilidad sa Theme Builder: Scaffold ug I-activate ang Block Themes
 
 Ang Superdav AI Agent v1.12.0 nagpaila og duha ka gamhanan nga abilidad nga makatabang nimo maghimo ug mag-deploy og custom block themes direkta gikan sa chat interface.
 

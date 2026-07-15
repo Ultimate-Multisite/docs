@@ -4,7 +4,7 @@ title: Isihlungi - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# Isihlungi: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
+# Isihlungi: wp_should_rescue_orphaned_sites
 
 Sihlunga ukuthi amasayithi ayizintandane kufanele yini atakulwe.
 

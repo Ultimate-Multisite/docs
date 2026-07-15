@@ -4,7 +4,7 @@ title: Acción - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Acción: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Acción: wu_domain_registration_failed
 
 Se dispara después de que un intento de registro de dominio falla.
 

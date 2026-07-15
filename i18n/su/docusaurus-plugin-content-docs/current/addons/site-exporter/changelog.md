@@ -3,7 +3,7 @@ title: Catetan Parobahan Pangékspor Situs
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Catetan Parobahan Site Exporter {#site-exporter-changelog}
+# Catetan Parobahan Site Exporter
 
 Vérsi: 1.0.6 - Dirilis dina 2026-05-11
 * Anyar: Ékspor site ayeuna ngagabungkeun index.php anu bisa boot sorangan supaya ZIP bisa dipasang dina host anyar tanpa masang plugin misah

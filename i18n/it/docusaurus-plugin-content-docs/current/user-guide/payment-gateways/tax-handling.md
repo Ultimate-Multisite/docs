@@ -3,7 +3,7 @@ title: Gestione delle imposte
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestione delle imposte {#tax-handling}
+# Gestione delle imposte
 
 Ultimate Multisite ha un modulo di riscossione delle imposte integrato nel nostro core plugin, quindi se devi riscuotere imposte sulle vendite sui tuoi piani, pacchetti e servizi, puoi farlo facilmente senza ricorrere all'installazione di add-on.
 

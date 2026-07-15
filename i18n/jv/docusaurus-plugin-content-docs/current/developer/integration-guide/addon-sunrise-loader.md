@@ -3,7 +3,7 @@ title: Pamuat Berkas Sunrise Tambahan
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Pamuat Berkas Sunrise Addon {#addon-sunrise-file-loader}
+# Pamuat Berkas Sunrise Addon
 
 Ultimate Multisite 2.8.0 nambahake pamuat ekstensi sunrise kanggo tambahan lan integrasi MU-plugin kustom sing perlu mlaku nalika bootstrapping sunrise WordPress tanpa nyunting berkas `wp-content/sunrise.php` sing digawé.
 

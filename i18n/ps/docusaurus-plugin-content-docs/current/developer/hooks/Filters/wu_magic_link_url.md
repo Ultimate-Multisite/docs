@@ -4,7 +4,7 @@ title: فلټر - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# فلټر: wu_magic_link_url {#filter-wumagiclinkurl}
+# فلټر: wu_magic_link_url
 
 جوړ شوی magic link URL فلټر کړئ.
 

@@ -4,7 +4,7 @@ title: Զտիչ - wu_upgrade_to_unlock_url
 sidebar_label: wu_upgrade_to_unlock_url
 _i18n_hash: 3398ef4bc9e288f0173a859844fbb25c
 ---
-# Ֆիլտր՝ wu_upgrade_to_unlock_url {#filter-wuupgradetounlockurl}
+# Ֆիլտր՝ wu_upgrade_to_unlock_url
 
 Թույլ է տալիս մշակողներին փոխել ապակողպելու համար թարմացման URL-ը
 

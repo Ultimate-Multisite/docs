@@ -3,7 +3,7 @@ title: Treballs de codi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Treball de codi per a v2 {#code-snippets-for-v2}
+# Treball de codi per a v2
 
 En resum, els treballs de codi per **WordPress** es fan servir per realitzar certes accions que de forma altament tècnica podrien requerir un plugin més petit i dedicat. Aquests treballs de codi es poden incorporar en un dels fitxers principals de WordPress (generalment el fitxer `functions.php` del teu tema) o es poden utilitzar com a plugin MU.
 

@@ -4,7 +4,7 @@ title: Gweithred - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Cam Gweithredu: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Cam Gweithredu: wp_ultimo_vat_deactivation
 
 Gadewch i rannau eraill o'r plugin atodi eu harferion ar gyfer dadactifadu
 

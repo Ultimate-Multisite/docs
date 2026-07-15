@@ -3,7 +3,7 @@ title: Падрабязнае разуменне Панелі кіравання
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Зразумеласць панэлі Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Зразумеласць панэлі Ultimate Multisite
 
 Перш чым занурынне ў больш прасунутыя канфігурацыйныя магчымасці і аперацыйныя аспекты Ultimate Multisite, прайдзімся па панэлі.
 

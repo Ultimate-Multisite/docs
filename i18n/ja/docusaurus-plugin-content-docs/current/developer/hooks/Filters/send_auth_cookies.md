@@ -4,7 +4,7 @@ title: フィルタ - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies {#filter-sendauthcookies}
+# Filter: send_auth_cookies
 
 認証クッキーが実際にクライアントに送信されるのを防止することを許可します。
 

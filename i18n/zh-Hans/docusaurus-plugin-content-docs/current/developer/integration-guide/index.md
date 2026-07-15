@@ -3,7 +3,7 @@ title: 集成指南
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 集成指南 {#integration-guide}
+# 集成指南
 
 本指南涵盖与 Ultimate Multisite 的常见集成模式，包括连接到外部服务、构建自定义支付网关，以及处理 webhooks。
 

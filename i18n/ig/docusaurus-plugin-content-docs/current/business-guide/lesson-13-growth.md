@@ -3,7 +3,7 @@ title: 'Nkuzi 13: Ịgbasa Elu'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ihe Ọmụmụ 13: Ịgbasawanye {#lesson-13-scaling-up}
+# Ihe Ọmụmụ 13: Ịgbasawanye
 
 Ị nwere platform na-arụ ọrụ nke nwere ndị ahịa na-akwụ ụgwọ. Ihe ọmụmụ a na-akọwa otu esi eto site na obere ọrụ gaa n’azụmahịa ga-adigide -- ịgbasawanye infrastructure, ime ka operations rụọ ọrụ na-akpaghị aka, na ịbawanye ego a na-enweta n’aka onye ahịa ọ bụla.
 

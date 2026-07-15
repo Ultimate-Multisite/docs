@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# ການເຊື່ອມຕໍ່ Closte {#closte-integration}
+# ການເຊື່ອມຕໍ່ Closte
 
 ## ພາບລວມ {#overview}
 Closte ແມ່ນເວທີໂຮດ WordPress ທີ່ຖືກຈັດການ (managed) ແລະ ສ້າງຂຶ້ນເທິງພື້ນຖານ Google Cloud. ການເຊື່ອມຕໍ່ນີ້ຊ່ວຍໃຫ້ສາມາດ đồng bộ ຊື່ໂດເມນ (domain syncing) ແລະ ການຈັດການໃບຢັ້ງຢືນ SSL រវាង Ultimate Multisite ແລະ Closte ໄດ້ໂດຍອັດຕະໂນມັດ.

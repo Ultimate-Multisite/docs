@@ -4,7 +4,7 @@ title: Tātari - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Tātari: wu_rest_update_item {#filter-wurestupdateitem}
+# Tātari: wu_rest_update_item
 
 Ka tātari mēnā ka whakaaetia kia haere tonu te tono, kāore rānei.
 

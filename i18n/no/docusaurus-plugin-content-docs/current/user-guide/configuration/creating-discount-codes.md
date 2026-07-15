@@ -3,7 +3,7 @@ title: Opprette rabattkoder
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Opprette rabattkoder (v2) {#creating-discount-codes-v2}
+# Opprette rabattkoder (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 

@@ -3,7 +3,7 @@ title: 'Pelajaran 13: Peningkatan Skala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesson 13: Memperkembangkan Skala {#lesson-13-scaling-up}
+# Lesson 13: Memperkembangkan Skala
 
 Anda sudah mempunyai platform yang berfungsi dengan pelanggan yang membayar. Pelajaran ini akan menerangkan cara untuk membesar daripada operasi kecil menjadi perniagaan yang mampan — dengan memperkembangkan infrastruktur, mengautomasikan operasi, dan meningkatkan pendapatan setiap pelanggan.
 

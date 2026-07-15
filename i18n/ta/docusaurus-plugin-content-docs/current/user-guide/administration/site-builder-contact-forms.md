@@ -3,7 +3,7 @@ title: Site Builder தொடர்பு படிவங்கள்
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder தொடர்பு படிவங்கள் {#site-builder-contact-forms}
+# Site Builder தொடர்பு படிவங்கள்
 
 Superdav AI Agent v1.10.0, Site Builder agent-ஐப் பயன்படுத்தி, Chat interface-ல் இருந்தே தொடர்பு படிவங்களை (contact forms) உருவாக்கும் திறனைச் சேர்க்கிறது. இதன் மூலம், Chat-ஐ விட்டு வெளியேறாமல், எந்தப் பக்கத்திலும் முழுமையாகச் செயல்படும் தொடர்பு படிவங்களை நீங்கள் சேர்க்க முடியும்.
 

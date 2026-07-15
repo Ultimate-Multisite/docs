@@ -4,7 +4,7 @@ title: Igikorwa - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Igikorwa: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Igikorwa: wu_handle_customer_meta_fields
 
 Emerera abategura plugin kubika amakuru meta mu buryo butandukanye niba babikeneye.
 

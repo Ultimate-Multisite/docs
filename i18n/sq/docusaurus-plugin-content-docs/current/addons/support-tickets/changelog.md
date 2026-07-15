@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve të biletave të mbështetjes
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Changelog i biletave të mbështetjes {#support-tickets-changelog}
+# Changelog i biletave të mbështetjes
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Përmirësuar: U hoq drejtoria vendor/ nga gjurmimi i Git (tashmë e mbuluar nga .gitignore), duke zvogëluar madhësinë e repos

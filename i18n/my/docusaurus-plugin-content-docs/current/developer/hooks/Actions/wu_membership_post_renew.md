@@ -4,7 +4,7 @@ title: Action - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Action: wu_membership_post_renew {#action-wumembershippostrenew}
+# Action: wu_membership_post_renew
 
 အဖွဲ့ဝင်အသစ်သက်တမ်းတိုးပြီးနောက် အလုပ်လုပ်စေသည့် လုပ်ဆောင်ချက်။
 

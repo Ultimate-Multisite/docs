@@ -4,7 +4,7 @@ title: Filtro - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filtro: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Filtro: wp_ultimo_render_vars
 
 Permetti agli sviluppatori di plugin di aggiungere una variabile extra al contesto di rendering a livello globale.
 

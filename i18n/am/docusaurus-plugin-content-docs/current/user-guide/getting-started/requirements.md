@@ -3,7 +3,7 @@ title: መስፈርቶች
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite የሚያስፈልጉ ነገሮች {#ultimate-multisite-requirements}
+# Ultimate Multisite የሚያስፈልጉ ነገሮች
 
 Ultimate Multisite ከመግዛትዎ በፊት ሊጠይቁት የሚችሉት የመጀመሪያው ጥያቄ "ፕለጊኑን ለማስኬድ ምን የሚያስፈልጉ ነገሮች አሉኝ?" ይሆናል። ደስተኛ ነዎት፣ Ultimate Multisiteን ለማስኬድ ጥቂት መሰረታዊ ነገሮች ብቻ ናቸው የሚያስፈልጉት፡ **የዶሜን ስም**፣ ጥሩ **የሆስቲንግ አገልግሎት ሰጪ** እና የWordPress **Multisite** መጫን። ያ ብቻ ነው የሚያስፈልግዎ!
 

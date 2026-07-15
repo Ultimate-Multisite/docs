@@ -3,7 +3,7 @@ title: Shigarwar Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# همگرایی کلست (Closte Integration) {#closte-integration}
+# همگرایی کلست (Closte Integration)
 
 ## مروری کلی {#overview}
 کلست (Closte) یک پلتفرم میزبانی وردپرس مدیریت شده است که بر روی زیرساخت گوگل کلاد ساخته شده است. این همگرایی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و Closte فراهم می‌کند.

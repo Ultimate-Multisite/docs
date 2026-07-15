@@ -3,7 +3,7 @@ title: Administratīvo paneļa apmeklēšana
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Administrācijas paneļa apmeklēšana {#touring-the-admin-panel}
+# Administrācijas paneļa apmeklēšana
 
 Ultimate Multisite mērķis ir būt vis vienkāršākai un izpratīgākai, bet ar šo spēcīgu rīku tas var palīdzēt veikt vadītu apgalvojumu. Atgriezosies adminu lapām, lai jums palīdzētu iepazīties ar sistēmu.
 

@@ -3,7 +3,7 @@ title: Rekisteröitymislomakkeen mukauttaminen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Rekisteröintilomakkeen mukauttaminen {#customizing-your-registration-form}
+# Rekisteröintilomakkeen mukauttaminen
 
 Jotta verkostosi näyttäisi ainutlaatuiselta verrattuna kaikkiin muihin WordPress-alustalle rakennettuihin SaaS-palveluihin, Ultimate Multisite antaa sinun mukauttaa rekisteröinti- ja kirjautumissivujasi **Checkout Forms** -ominaisuudellamme.
 

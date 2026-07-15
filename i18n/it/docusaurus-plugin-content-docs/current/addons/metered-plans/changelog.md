@@ -3,7 +3,7 @@ title: Registro delle modifiche dei piani a consumo
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Changelog dei piani a consumo {#metered-plans-changelog}
+# Changelog dei piani a consumo
 
 Versione 1.1.0 - Rilasciata il 2026-05-05
 - Nuovo: fatturazione dei token AI per i sottositi multisito — monitora e fattura l'utilizzo dei token AI nei siti dei clienti con tariffe per token configurabili

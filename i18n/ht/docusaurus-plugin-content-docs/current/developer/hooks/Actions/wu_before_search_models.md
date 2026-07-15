@@ -4,7 +4,7 @@ title: Aksyon - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Aksyon: wu_before_search_models {#action-wubeforesearchmodels}
+# Aksyon: wu_before_search_models
 
 Lanse anvan tretman demann rechèch la.
 

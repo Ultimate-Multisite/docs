@@ -3,7 +3,7 @@ title: Configurazione iniziale e configurazione del provider
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: configurazione iniziale e configurazione dei provider {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: configurazione iniziale e configurazione dei provider
 
 L'addon Domain Seller include una procedura guidata di configurazione che ti accompagna in ogni passaggio richiesto. Questa pagina copre il flusso della procedura guidata e come configurare o riconfigurare i provider in seguito.
 

@@ -4,7 +4,7 @@ title: Filtè - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Filtè: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Filtè: wu_stripe_existing_product_id
 
 Filtre ID pwodwi pou verifye a. Si sa egziste, nouvo abònman an ap itilize pwodwi sa a.
 

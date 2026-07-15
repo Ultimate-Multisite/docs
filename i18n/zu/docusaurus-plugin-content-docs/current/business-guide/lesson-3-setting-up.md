@@ -3,7 +3,7 @@ title: 'Isifundo 3: Ukusetha Inethiwekhi Yakho'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Isifundo 3: Ukusetha Inethiwekhi Yakho {#lesson-3-setting-up-your-network}
+# Isifundo 3: Ukusetha Inethiwekhi Yakho
 
 Sekuyisikhathi sokwakha. Kulesi sifundo uzofaka i-Ultimate Multisite futhi ulungise isisekelo senethiwekhi ye-FitSite. Zonke izinqumo lapha zenziwa kucatshangelwa umkhakha wokuzivocavoca.
 

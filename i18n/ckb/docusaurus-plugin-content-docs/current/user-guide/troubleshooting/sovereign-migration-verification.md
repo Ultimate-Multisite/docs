@@ -3,7 +3,7 @@ title: پراچكردنی میگریشن سوورین
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# تایید مهاجرت حاکمیتی (Sovereign Migration Verification) {#sovereign-migration-verification}
+# تایید مهاجرت حاکمیتی (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 شامل دستورات تأیید WP-CLI برای مهاجرات مستأجران حاکمیتی است. از این دستورات زمانی استفاده کنید که یک مهاجرت مستأجر، بازدید SSO یا نصب ایزوله مطابق انتظار عمل نکند.
 

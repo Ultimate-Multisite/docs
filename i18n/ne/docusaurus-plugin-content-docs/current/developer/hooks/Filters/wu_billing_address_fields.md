@@ -4,7 +4,7 @@ title: फिल्टर - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# फिल्टर: wu_billing_address_fields {#filter-wubillingaddressfields}
+# फिल्टर: wu_billing_address_fields
 
 plugin विकासकर्ताहरूलाई बिलिङ ठेगानाका क्षेत्रहरू फिल्टर गर्न अनुमति दिनुहोस्।
 

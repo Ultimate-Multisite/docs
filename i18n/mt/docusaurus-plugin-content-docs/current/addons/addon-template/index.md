@@ -3,9 +3,9 @@ title: Mudell taż-Żieda
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Mudell ta' Estensjoni {#addon-template}
+# Mudell ta' Estensjoni
 
-{{ADDON_DESCRIPTION}}
+Mudell taż-Żieda — Ultimate Multisite.
 
 ## Rekwiżiti {#requirements}
 

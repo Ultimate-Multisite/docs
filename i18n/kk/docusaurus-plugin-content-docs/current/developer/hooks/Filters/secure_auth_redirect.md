@@ -4,7 +4,7 @@ title: Сүзгі - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Сүзгі: secure_auth_redirect {#filter-secureauthredirect}
+# Сүзгі: secure_auth_redirect
 
 Қауіпсіз аутентификация қайта бағыттауын қолдану-қолданбауды сүзеді.
 

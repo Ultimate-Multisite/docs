@@ -3,7 +3,7 @@ title: Menu Perhotelan
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Hospitality {#hospitality-menus}
+# Menu Hospitality
 
 Fitur **Hospitality Menus** memungkinkan Theme Builder untuk membuat dan menyematkan halaman menu makanan dan minuman yang terstruktur langsung ke situs WordPress Anda.
 

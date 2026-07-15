@@ -3,7 +3,7 @@ title: Ilogi yotshintsho yoMdali wePhepha loMlawuli
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Ingxelo yotshintsho ye-Admin Page Creator {#admin-page-creator-changelog}
+# Ingxelo yotshintsho ye-Admin Page Creator
 
 ### Inguqulelo 1.9.0 - Ikhutshwe ngo-2026-01-18 {#version-190---released-on-2026-01-18}
 

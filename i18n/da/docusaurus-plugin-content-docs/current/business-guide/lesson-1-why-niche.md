@@ -3,7 +3,7 @@ title: 'Lektion 1: Hvorfor niche vinder'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lektion 1: Hvorfor Niche Vinder {#lesson-1-why-niche-wins}
+# Lektion 1: Hvorfor Niche Vinder
 
 Før du rører noget software, skal du forstå, hvorfor det er den vigtigste beslutning, du vil træffe: at bygge for en specifik målgruppe.
 

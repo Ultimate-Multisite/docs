@@ -3,7 +3,7 @@ title: Forme za plačilo
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout forme {#checkout-forms}
+# Checkout forme
 
 Checkout Forms so ti je enostavno in fleksibilno način za eksperimentiranje z različnimi pristopi, ko poskušate novih strank spremeniti v kupce.
 

@@ -3,7 +3,7 @@ title: Interviu de descoperire
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Interviu de Descoperire {#discovery-interview}
+# Interviu de Descoperire
 
 **Interviul de Descoperire** este primul pas în procesul de design al Theme Builder. Colectează informații despre site-ul tău, afacerea și preferințele de design pentru a crea un tema personalizată.
 

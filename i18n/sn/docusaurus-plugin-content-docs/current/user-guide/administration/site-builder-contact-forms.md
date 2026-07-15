@@ -3,7 +3,7 @@ title: Mavandzo ekutanga kuita contact forms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Contact Forms dzine {#site-builder-contact-forms}
+# Contact Forms dzine
 
 Superdav AI Agent v1.10.0 inogona kuita kuti uingane contact forms zvakadzama kubva munzira yakaita chat interface cheSite Builder agent. Izvi zvinokubvira kuti uingane contact forms dzakadzama panyapiro dzinobva munzira yakaita chat.
 

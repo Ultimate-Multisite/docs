@@ -3,7 +3,7 @@ title: Maizter anitzeko integrazioa
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integrazioa {#multi-tenancy-integration}
+# Multi-Tenancy integrazioa
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 bertsioak hainbat integrazio-puntu aldatzen ditu maizter subiranoetarako, migrazio-egiaztapenerako eta maizterren bizi-zikloaren automatizaziorako.
 

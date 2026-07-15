@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Шүүлтүүр: wu_setup_wizard {#filter-wusetupwizard}
+# Шүүлтүүр: wu_setup_wizard
 
 Хөгжүүлэгчдэд setup wizard-ийн нэмэлт алхмууд нэмэх боломж олгоно.
 

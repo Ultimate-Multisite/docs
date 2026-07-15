@@ -3,7 +3,7 @@ title: 'પાઠ ૬: નોંધણીનો અનુભવ'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: The Signup Experience {#lesson-6-the-signup-experience}
+# Lesson 6: The Signup Experience
 
 ચેકઆઉટ ફ્લો એ જગ્યા છે જ્યાં રસ આવક (revenue) માં ફેરવાય છે. જો સાઇનઅપ પ્રક્રિયા ગૂંચવણભરી કે સામાન્ય હશે, તો ગ્રાહકો દૂર થઈ જશે. એક ચોક્કસ ક્ષેત્ર આધારિત (niche-specific) ફ્લો જે તેમની ભાષા બોલે અને સરળ લાગે, તે ગ્રાહકોને કન્વર્ટ કરે છે.
 

@@ -3,7 +3,7 @@ title: Ukugcinwa kweePrompt kwikheshi okuQondayo uMboneleli
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Ukugcinwa kwee-Prompt kwi-Cache okuQaphela uMboneleli {#provider-aware-prompt-caching}
+# Ukugcinwa kwee-Prompt kwi-Cache okuQaphela uMboneleli
 
 Superdav AI Agent v1.12.0 yazisa **ukugcinwa kwee-prompt kwi-cache okuqaphela umboneleli**, okulungiselela iindleko ze-API kunye nokulibaziseka ngokugcina ii-prompt kwi-cache kubaboneleli be-LLM abohlukeneyo. Umboneleli ngamnye uneendlela kunye noqwalaselo lokugcina kwi-cache olwahlukileyo.
 

@@ -4,7 +4,7 @@ title: നടപടി - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup {#action-wucartaftersetup}
+# Action: wu_cart_after_setup
 
 ഡെവലപ്പർമാർക്ക് ചെക്ക്ഔട്ട് ഒബ്ജക്റ്റിൽ അധിക മാറ്റങ്ങൾ വരുത്താൻ ഇത് അവസരം നൽകുന്നു.
 

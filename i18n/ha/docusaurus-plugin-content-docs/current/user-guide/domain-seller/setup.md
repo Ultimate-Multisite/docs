@@ -3,7 +3,7 @@ title: Wajara da Tsarin Gudanarwa
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# فروندار دامن: تنظیم و پیکربندی ارائه‌دهنده {#domain-seller-setup-and-provider-configuration}
+# فروندار دامن: تنظیم و پیکربندی ارائه‌دهنده
 
 افزونه Domain Seller با یک راهنمای تنظیم هدایت شده عرضه می‌شود که شما را از تمام مراحل مورد نیاز عبور می‌دهد. این صفحه در مورد جریان این wizard و نحوه پیکربندی یا تنظیم مجدد ارائه‌دهندگان بعد از آن توضیح می‌دهد.
 

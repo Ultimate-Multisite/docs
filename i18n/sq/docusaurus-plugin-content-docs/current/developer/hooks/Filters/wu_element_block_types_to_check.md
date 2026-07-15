@@ -4,7 +4,7 @@ title: Filtër - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Filtër: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Filtër: wu_element_block_types_to_check
 
 Mund të na duhet të shtojmë blloqe shtesë më vonë.
 

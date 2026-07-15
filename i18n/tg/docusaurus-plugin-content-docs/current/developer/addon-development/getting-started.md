@@ -3,7 +3,7 @@ title: Оғози кор бо таҳияи аддон
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Таҳияи илова {#addon-development}
+# Таҳияи илова
 
 ## Сохтори илова {#addon-structure}
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Żidiet ta' Ultimate Multisite {#ultimate-multisite-addons}
+# Żidiet ta' Ultimate Multisite
 
 Iż-żidiet jestendu Ultimate Multisite b'karatteristiċi u integrazzjonijiet addizzjonali. Il-biċċa l-kbira taż-żidiet huma bi ħlas u jistgħu jinxtraw minn [ultimatemultisite.com](https://ultimatemultisite.com).
 

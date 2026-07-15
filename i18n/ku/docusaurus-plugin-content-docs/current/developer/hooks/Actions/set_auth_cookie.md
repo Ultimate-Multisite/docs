@@ -4,7 +4,7 @@ title: Çalakî - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Çalakî: set_auth_cookie {#action-setauthcookie}
+# Çalakî: set_auth_cookie
 
 Rast berî ku cookie-ya piştrastkirinê were danîn tê xebitandin.
 

@@ -3,7 +3,7 @@ title: Exportálás és Importálás
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportálás és Importálás {#export--import}
+# Exportálás és Importálás
 
 Az Ultimate Multisite 2.9.0 egy egysiteszt **Exportálás és Importálás** eszközt ad hozzá a **Tools > Export & Import** alatt. Használja akkor, ha egy WordPress oldalt szeretne ZIP fájlba csomagolni, visszaállítani, vagy egy kompatibilis Ultimate Multisite és egysiteszt WordPress telepítés között áthelyezni.
 

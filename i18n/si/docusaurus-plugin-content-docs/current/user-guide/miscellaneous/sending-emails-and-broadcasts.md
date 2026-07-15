@@ -3,7 +3,7 @@ title: ඊමේල් සහ විකාශන යැවීම
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ඊමේල් සහ විකාශන යැවීම (v2) {#sending-emails-and-broadcasts-v2}
+# ඊමේල් සහ විකාශන යැවීම (v2)
 
 _**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite අනුවාදය 2.x සඳහා අදාළ වේ.**_
 

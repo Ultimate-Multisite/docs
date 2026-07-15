@@ -3,7 +3,7 @@ title: ಶೀರ್ಷಿಕೆ ಡೊಮೇನ್ ಹುಡುಕಾಟ
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# ಹೆಡರ್ Domain ಹುಡುಕಾಟ {#header-domain-search}
+# ಹೆಡರ್ Domain ಹುಡುಕಾಟ
 
 Ultimate Multisite checkout ಒಳಗೆ ಲಭ್ಯವಿರುವ Domain‌ಗಳಿಂದ ಗ್ರಾಹಕರು ಆಯ್ಕೆ ಮಾಡಲು, ಮೊದಲು Domain ಹುಡುಕಾಟ ಆರಂಭಿಸುವ ಸಣ್ಣ ಹೆಡರ್ ಫಾರ್ಮ್ ಬೇಕಿದ್ದಾಗ ಈ ಸೆಟಪ್ ಬಳಸಿ.
 

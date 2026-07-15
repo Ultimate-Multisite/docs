@@ -3,7 +3,7 @@ title: 機能の可視性
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# アビリティの可視性（Ability Visibility） {#ability-visibility}
+# アビリティの可視性（Ability Visibility）
 
 Superdav AI Agent v1.12.0では、どのインターフェースでどのアビリティが公開されるかを制御する**アビリティの可視性（Ability Visibility）**コントロールが導入されました。これにより、管理者は、REST API、MCPサーバー、WooCommerce連携、その他のインターフェースを通じて、どのエージェント機能が利用可能であるかを細かく調整できます。
 

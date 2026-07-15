@@ -4,7 +4,7 @@ title: வடிகட்டி - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# ஃபில்டர்: secure_auth_cookie {#filter-secureauthcookie}
+# ஃபில்டர்: secure_auth_cookie
 
 auth cookie ஆனது HTTPS வழியாக மட்டுமே அனுப்பப்பட வேண்டுமா என்பதை இது ஃபில்டர் செய்கிறது.
 

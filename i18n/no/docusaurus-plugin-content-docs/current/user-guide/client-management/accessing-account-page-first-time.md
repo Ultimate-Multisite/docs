@@ -3,7 +3,7 @@ title: Få tilgang til kontosiden
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Hvordan får jeg tilgang til kontosiden min for første gang? {#how-can-i-access-my-account-page-for-the-first-time}
+# Hvordan får jeg tilgang til kontosiden min for første gang?
 
 Velkommen til Ultimate Multisite!
 

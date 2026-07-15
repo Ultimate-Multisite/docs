@@ -3,7 +3,7 @@ title: 註冊 API 端點
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API 端點 {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API 端點
 
 在這篇教學中，你將學習如何使用 Ultimate Multisite 的 /register API 端點，為你網路中的新客戶建立完整的註冊流程，以及如何透過 Zapier 來實現這個功能。
 

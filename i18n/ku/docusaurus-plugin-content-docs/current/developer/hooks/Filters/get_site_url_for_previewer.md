@@ -4,7 +4,7 @@ title: Parzûn - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Parzûn: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Parzûn: get_site_url_for_previewer
 
 Destûrê bide pêşdebirên pêvekan ku URL-a ku di previewer de tê bikaranîn parzûn bikin
 

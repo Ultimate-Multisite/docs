@@ -3,7 +3,7 @@ title: Ko'p ijarali ajratish
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ko'prikli (Multi-Tenancy) Ajralanishi {#multi-tenancy-isolation}
+# Ko'prikli (Multi-Tenancy) Ajralanishi
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 so'zlash uchun mustaqil loyihalar (per-subsite) ma'lumotlar bazasi va fayl tizimi ajralishini qo'llab-quvvatlaydi, bu hukmron loyihalarning (sovereign tenants) o'zaro ma'lumotlarini alohida saqlash imkonini beradi. Bu tarmoq darajasidagi taqsimot, hisob-kitob va boshqaruvni saqlab qolgan holda mijozlar ma'lumotlarini ajratib turishga yordam beradi.
 

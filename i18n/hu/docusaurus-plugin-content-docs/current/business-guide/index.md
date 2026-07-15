@@ -3,7 +3,7 @@ title: Egy Niche Weboldal Üzletének Felépítése
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Hogyan építs egy Nisza Weboldal Üzletét az Ultimate Multisite-tal {#build-a-niche-website-business-with-ultimate-multisite}
+# Hogyan építs egy Nisza Weboldal Üzletét az Ultimate Multisite-tal
 
 Azok a legtöbb ember, akik weboldal eladásával próbálnak pénzt keresni, áron versenyzik a Wix, Squarespace és az ezeres független fejlesztőkkel szemben. És vesznek. Azok, akik sikeresek, egy konkrét közönséget választanak, egy olyan megoldást építenek, ami erre a közönségre szabva, és az értékért számolnak.
 

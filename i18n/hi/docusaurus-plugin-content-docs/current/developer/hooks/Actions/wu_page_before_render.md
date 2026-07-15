@@ -4,7 +4,7 @@ title: कार्य - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 यह प्लगइन डेवलपर्स को पेज को दिखाने (प्रिंट करने) से पहले अतिरिक्त सामग्री जोड़ने की अनुमति देता है।
 

@@ -3,7 +3,7 @@ title: Captcha-Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Änderungsprotokoll {#captcha-changelog}
+# Captcha Änderungsprotokoll
 
 Version: 1.5.0 - Veröffentlicht am 2026-05-22
 * Neu: Hard-Stop-Rate-Limiter — zählt jedes GET und POST auf Captcha-geschützten Oberflächen (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) und antwortet mit HTTP 429, einem `Retry-After` header und einem randomisierten Tarpit-Sleep (1–5 s, hart auf 15 s begrenzt).

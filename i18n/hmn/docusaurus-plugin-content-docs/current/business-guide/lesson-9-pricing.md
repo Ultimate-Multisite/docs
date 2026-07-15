@@ -3,7 +3,7 @@ title: 'Zaj Kawm 9: Kev Teev Nqi Kom Tau Nyiaj Paj'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Zaj Kawm 9: Kev Teev Nqi Kom Tau Nyiaj Tshaj {#lesson-9-pricing-for-profit}
+# Zaj Kawm 9: Kev Teev Nqi Kom Tau Nyiaj Tshaj
 
 Hauv Zaj Kawm 5 peb tau teev cov nqi pib rau FitSite cov plan. Tam sim no peb yuav kho kom zoo dua txoj kev teev nqi nrog cov tswv yim uas pab nce nyiaj tau los, txhawb kom cov neeg siv upgrade, thiab txo churn.
 

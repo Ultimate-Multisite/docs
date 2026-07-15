@@ -4,7 +4,7 @@ title: Filtre - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filtre : wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filtre : wu_checkout_field_types
 
 Nos API pour ajouter de nouveaux types de champs se déclenchent ici.
 

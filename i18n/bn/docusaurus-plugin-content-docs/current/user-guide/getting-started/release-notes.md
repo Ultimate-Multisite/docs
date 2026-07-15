@@ -3,7 +3,7 @@ title: রিলিজ নোট
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# রিলিজ নোট {#release-notes}
+# রিলিজ নোট
 
 ## সংস্করণ 2.13.0 — 2026-06-05 তারিখে রিলিজ হয়েছে {#version-2130--released-on-2026-06-05}
 

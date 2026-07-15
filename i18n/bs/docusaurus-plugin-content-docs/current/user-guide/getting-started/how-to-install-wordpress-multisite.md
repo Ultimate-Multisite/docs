@@ -3,7 +3,7 @@ title: Kako instalirati WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kako instalirati WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kako instalirati WordPress Multisite?
 
 WordPress Multisite vam omogućava da imate mrežu sajtova na jednoj instalaciji. Ovo je ugrađena značajka, ali nije aktivna po defaultu.
 
@@ -61,7 +61,7 @@ I ovaj kod, takođe dostavljen od strane WordPressa, u vaš _**.htaccess**_ fajl
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

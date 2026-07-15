@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 2: Yíyan Ààyè Amọ̀ja Rẹ'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ẹ̀kọ́ 2: Yíyan Niche Rẹ {#lesson-2-picking-your-niche}
+# Ẹ̀kọ́ 2: Yíyan Niche Rẹ
 
 Nínú Ẹ̀kọ́ 1 a fi idi rẹ̀ múlẹ̀ pé niche dára ju ohun gbogbo-gbogbogbò lọ. Ní báyìí o nílò láti yan tìrẹ. Ẹ̀kọ́ yìí fún ọ ní framework fún wíwá àti fífi niche kan dájú kí o tó fi àkókò sí kíkọ́ nkan fún un.
 

@@ -3,7 +3,7 @@ title: Kuweka Constant ya Sunrise kwenye Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Kuweka Kiwango cha Sunrise kuwa true kwenye Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Kuweka Kiwango cha Sunrise kuwa true kwenye Closte
 
 Baadhi ya watoa huduma za hosting hufunga faili ya wp-config.php kwa sababu za usalama. Hii inamaanisha kuwa Ultimate Multisite haiwezi kuhariri faili hiyo moja kwa moja ili kuongeza constants zinazohitajika kufanya domain mapping na vipengele vingine vifanye kazi. Closte ni moja ya watoa huduma kama hao.
 

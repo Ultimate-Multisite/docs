@@ -4,7 +4,7 @@ title: Filtras - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Filtras: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Filtras: wu_documentation_get_link
 
 Leidžia plugin kūrėjams filtruoti nuorodas.
 

@@ -3,7 +3,7 @@ title: Uwezo wa Usimamizi wa Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Uwezo wa Kusimamia Plugins {#plugin-management-abilities}
+# Uwezo wa Kusimamia Plugins
 
 Gratis AI Agent v1.5.0 inakuja na **uwezo 7 wa kusimamia plugins** ambavyo msaidizi wa AI anaweza kuzitumia wakati wa mazungumzo. Uwezo huu unatoa udhibiti wa ki-programu juu ya plugins za WordPress zilizosakinishwa kupitia [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

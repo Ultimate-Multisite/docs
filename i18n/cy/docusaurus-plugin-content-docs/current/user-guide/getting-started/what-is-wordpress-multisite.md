@@ -3,7 +3,7 @@ title: Beth yw WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Beth yw WordPress Multisite? {#what-is-wordpress-multisite}
+# Beth yw WordPress Multisite?
 
 Yn y cyd-fydd, mae WordPress yn rhoi ffeithau gyda'r enw ‘Multisite’ sydd â'i gynhyrchydd i 2010 gyda lansio WordPress 3.0. Oethau pan fydd wedi cael amrywiadau am ystod hynny i chynllun newid ffeithiau newydd a sicrwydd wella.
 

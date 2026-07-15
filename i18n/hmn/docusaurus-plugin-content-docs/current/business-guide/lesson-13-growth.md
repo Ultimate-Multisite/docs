@@ -3,7 +3,7 @@ title: 'Loj 13: Kev tsim neeg txawv'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesson 13: ការពង្រីក (Scaling Up) {#lesson-13-scaling-up}
+# Lesson 13: ការពង្រីក (Scaling Up)
 
 ເຈົ້າມີແພລັດຟອມທີ່ເຮັດວຽກຢູ່ ແລະ ມີລູກຄ້າຈ່າຍເງິນແລ້ວ. ບົດຮຽນນີ້ຈະສອນວິທີການເຕີບໂຕຈາກການດໍາເນີນງານຂະໜາດນ້ອຍໄປສູ່ທຸລະກິດທີ່ຍືນຍົງ — ການເພີ່ມໂຄງພື້ນຖານ (scaling infrastructure), ການເຮັດໃຫ້ການດໍາເນີນງານເປັນອັດຕະໂນມັດ (automating operations), ແລະ ການເພີ່ມລາຍຮັບຕໍ່ລູກຄ້າ.
 

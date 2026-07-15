@@ -3,7 +3,7 @@ title: Ag Tosú le Forbairt Breiseán
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Forbairt Bhreiseáin {#addon-development}
+# Forbairt Bhreiseáin
 
 ## Struchtúr an Bhreiseáin {#addon-structure}
 

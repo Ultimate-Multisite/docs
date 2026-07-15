@@ -3,7 +3,7 @@ title: Tema-Barlarynda Beceriler
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Aware Skills {#theme-aware-skills}
+# Tema-Aware Skills
 
 Superdav AI Agent v1.10.0 dört täze tema-aware built-in skillleri ýazyryp çykaryýar, olar siziň aktif WordPress temasy bilen awtomatiki taýynlanýar. Bu skiller siziň temanyň arhitekturasyna we funksiýalaryna laýyklaşdyrylan iňlisden howa goşawlary we ukyplary berýär.
 

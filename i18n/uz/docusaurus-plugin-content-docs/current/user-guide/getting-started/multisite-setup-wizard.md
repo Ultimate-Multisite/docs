@@ -3,7 +3,7 @@ title: Multisite Sozlamasi Asistenti
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Sozlash Vazirasi {#multisite-setup-wizard}
+# Multisite Sozlash Vazirasi
 
 Ultimate Multisite ichida standart WordPress o'rnatmasini avtomatik ravishda WordPress Multisite tarmog'iga aylantiradigan ichki vazifani (wizard) mavjud. Bu sizdan `wp-config.php` faylini qo'lda tahrirlash yoki ma'lumotlar bazasi buyruqlarini ishga tushirish zaruriyatini yo'q qiladi.
 

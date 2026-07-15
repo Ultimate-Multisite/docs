@@ -3,7 +3,7 @@ title: 'Palajaran 11: Milarian Palanggan'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Pangajaran 11: Manggihan Palanggan {#lesson-11-finding-customers}
+# Pangajaran 11: Manggihan Palanggan
 
 Platform anu hébat tanpa palanggan mah ngan saukur hobi. Pangajaran ieu ngabahas kumaha meunangkeun palanggan dina vertical niche -- strategi anu jalan hususna sabab anjeun museur kana hiji industri.
 

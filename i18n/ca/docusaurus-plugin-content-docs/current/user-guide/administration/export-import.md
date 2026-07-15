@@ -3,7 +3,7 @@ title: Exportar i Importar
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportar i Importar {#export--import}
+# Exportar i Importar
 
 Ultimate Multisite 2.9.0 afegeix una eina d'**Exportació i Importació** de site únic dins de **Tools > Export & Import**. Utilitza aquesta eina quan necessites empaquetar un site de WordPress com a fitxer ZIP, restaurar aquest ZIP, o moure un site entre instal·lacions compatibles de Ultimate Multisite i WordPress de site únic.
 

@@ -4,7 +4,7 @@ title: Filtro - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filtro: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filtro: signup_get_available_languages
 
 Filtra la lista de idiomas disponibles para los registros de sitios en el front-end.
 

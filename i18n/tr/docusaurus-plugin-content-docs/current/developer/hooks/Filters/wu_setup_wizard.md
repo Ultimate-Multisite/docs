@@ -4,7 +4,7 @@ title: Filter - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filtre: wu_setup_wizard {#filter-wusetupwizard}
+# Filtre: wu_setup_wizard
 
 Geliştiricilerin ek kurulum sihirbazı adımları eklemesine olanak tanır.
 

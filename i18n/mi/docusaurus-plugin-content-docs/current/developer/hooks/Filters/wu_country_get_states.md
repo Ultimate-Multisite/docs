@@ -4,7 +4,7 @@ title: Tātari - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Tātari: wu_country_get_states {#filter-wucountrygetstates}
+# Tātari: wu_country_get_states
 
 Whakahoki ana i te rārangi o ngā state mō tēnei whenua.
 

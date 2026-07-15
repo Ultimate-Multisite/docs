@@ -3,7 +3,7 @@ title: 'Lektion 13: Skalning'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lektion 13: Skalning {#lesson-13-scaling-up}
+# Lektion 13: Skalning
 
 Du har en fungerande plattform med betalande kunder. Denna lektion handlar om hur du växer från en liten verksamhet till ett hållbart företag – genom att skala upp infrastrukturen, automatisera driften och öka intäkterna per kund.
 

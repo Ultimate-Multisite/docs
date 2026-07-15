@@ -3,7 +3,7 @@ title: Beállítás és szolgáltató konfigurációja
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Beállítás és szolgáltatói konfiguráció {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Beállítás és szolgáltatói konfiguráció
 
 A Domain Seller addon egy vezetett beállítási varázslót tartalmaz, amely végigvezet minden szükséges lépésen. Ez az oldal a varázsló folyamatát, valamint a szolgáltatók későbbi konfigurálását vagy újrakonfigurálását ismerteti.
 

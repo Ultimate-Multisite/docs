@@ -4,7 +4,7 @@ title: Szűrő - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Szűrő: wu_admin_notices {#filter-wuadminnotices}
+# Szűrő: wu_admin_notices
 
 Ez a szűrő lehetővé teszi a fejlesztők számára, hogy Ultimate Multisite által hozzáadott admin értesítéseket szűrjenek.
 

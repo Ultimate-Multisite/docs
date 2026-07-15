@@ -3,7 +3,7 @@ title: Ultimate Multisite ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ {#translating-ultimate-multisite}
+# Ultimate Multisite ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ
 
 Ultimate Multisite ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਬਣਾਈ ਗਈ ਹੈ, ਪਰ ਇਸ plugin ਦਾ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅਨੁਵਾਦ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ ਅਤੇ ਅਸੀਂ ਅਨੁਵਾਦ ਯੋਗਦਾਨਾਂ ਦਾ ਦਿਲੋਂ ਸਵਾਗਤ ਕਰਦੇ ਹਾਂ।
 

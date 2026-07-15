@@ -4,7 +4,7 @@ title: Filtru - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filtru: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filtru: wu_bypass_unset_current_user
 
 Jippermetti lill-iżviluppaturi jevitaw il-kodiċi li jneħħi l-utent attwali.
 

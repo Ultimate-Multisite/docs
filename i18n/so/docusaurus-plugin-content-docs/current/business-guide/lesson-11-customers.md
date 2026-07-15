@@ -3,7 +3,7 @@ title: 'Casharka 11: Helitaanka Macaamiisha'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Casharka 11: Helidda Macaamiisha {#lesson-11-finding-customers}
+# Casharka 11: Helidda Macaamiisha
 
 Madal weyn oo aan lahayn macaamiil waa hiwaayad keliya. Casharkani wuxuu daboolayaa sida macaamiil looga helo qayb gaar ah oo niche ah -- xeelado si gaar ah u shaqeeya sababtoo ah waxaad diiradda saaraysaa hal warshad.
 

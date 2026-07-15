@@ -3,7 +3,7 @@ title: Cruthaich SVG suaicheantais
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Cruthaich Suaicheantas SVG {#generate-logo-svg}
+# Cruthaich Suaicheantas SVG
 
 Leigidh comas **Cruthaich Suaicheantas SVG** le Theme Builder suaicheantasan SVG gnàthaichte a chruthachadh agus a neadachadh gu dìreach san làrach WordPress agad le glanadh fèin-obrachail a tha sàbhailte a thaobh namespace.
 

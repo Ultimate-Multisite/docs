@@ -3,7 +3,7 @@ title: Pangembangan Gerbang Kustom
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pangembangan Gateway Kustom {#custom-gateway-development}
+# Pangembangan Gateway Kustom
 
 Sampeyan bisa nggawe gateway pembayaran kustom kanthi ngembangake kelas `Base_Gateway`.
 

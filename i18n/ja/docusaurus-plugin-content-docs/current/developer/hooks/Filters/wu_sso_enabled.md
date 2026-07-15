@@ -4,7 +4,7 @@ title: フィルタ - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 クロスドメイン単一サインオン機能を有効/無効にします。
 

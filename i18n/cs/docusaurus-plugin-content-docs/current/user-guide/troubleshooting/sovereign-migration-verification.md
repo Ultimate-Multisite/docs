@@ -3,7 +3,7 @@ title: Ověření suverénní migrace
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Ověření migrace suverénního prostředí {#sovereign-migration-verification}
+# Ověření migrace suverénního prostředí
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 obsahuje příkazy pro ověření WP-CLI pro migrace suverénních tenantů. Používejte je, pokud se migrace tenantu, návštěva SSO nebo izolovaná instalace neověří tak, jak by se očekávalo.
 

@@ -3,7 +3,7 @@ title: Closte 整合
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte 整合 {#closte-integration}
+# Closte 整合
 
 ## 概覽 {#overview}
 Closte 是一個建構在 Google Cloud 基礎架構上的 WordPress 託管平台。這個整合功能可以在 Ultimate Multisite 和 Closte 之間自動同步網域並管理 SSL 憑證。

@@ -3,7 +3,7 @@ title: Viditeľnosť schopnosti
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Viditeľnosť schopností (Ability Visibility) {#ability-visibility}
+# Viditeľnosť schopností (Ability Visibility)
 
 Superdav AI Agent v1.12.0 spúšťa novú funkciu **Viditeľnosť schopností** (Ability Visibility), ktorá určuje, ktoré rozhranie (surfaces) zobrazia každú schopnosť. To umožňuje administrátorom do finálnej nastavenia, aké schopnosti agentov sú prístupné cez REST API, MCP server, integrácie s WooCommerce a iné rozhranie.
 

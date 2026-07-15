@@ -3,7 +3,7 @@ title: Участиеnin Sona Ermesi we Sayt Bloklaması
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Участие Срока Действия Членства и Блокировка Сайта {#membership-expiration-and-site-blocking}
+# Участие Срока Действия Членства и Блокировка Сайта
 
 Этот раздел объясняет, как работает автоматическое прекращение членства (membership expiration) и что происходит с сайтом, если у пользователя истекает срок действия его подписки.
 
@@ -64,7 +64,7 @@ Ultimate Multisite'tәmde барлык участорыңның әр хәзер 
 :::note Бесплатные членства являются бессрочными
 Бесплатные членства не истекают автоматически. Ultimate Multisite рассматривает их как доступ на всю жизнь, поэтому они не включаются в проверки на истечение срока действия, если администратор не изменит их статус или не переведет клиента на другой продукт.
 
-# WordPress Documentation Translation {#block-frontend-access}
+# WordPress Documentation Translation
 
 ## Getting Started with Ultimate Multisite {#configuring-the-setting}
 

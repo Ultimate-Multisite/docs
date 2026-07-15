@@ -3,7 +3,7 @@ title: 'Ceacht 9: Praghsáil ar mhaithe le Brabús'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ceacht 9: Praghsáil ar mhaithe le Brabús {#lesson-9-pricing-for-profit}
+# Ceacht 9: Praghsáil ar mhaithe le Brabús
 
 I gCeacht 5 shocraíomar praghsanna tosaigh do phleananna FitSite. Anois déanaimid an straitéis praghsála a bheachtú le teicnící a mhéadaíonn ioncam, a spreagann uasghráduithe, agus a laghdaíonn tréigean.
 

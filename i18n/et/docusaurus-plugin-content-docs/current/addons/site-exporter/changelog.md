@@ -3,7 +3,7 @@ title: Saidi eksportija muudatuste logi
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter muudatuste logi {#site-exporter-changelog}
+# Site Exporter muudatuste logi
 
 Versioon: 1.0.6 - avaldatud 2026-05-11
 * Uus: site ekspordid sisaldavad nüüd isekäivituvat index.php, nii et ZIP-i saab paigaldada värskesse hosti ilma eraldi plugini paigalduseta

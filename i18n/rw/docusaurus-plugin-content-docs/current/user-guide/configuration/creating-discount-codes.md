@@ -3,7 +3,7 @@ title: Gukora Discount Codes
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Gukoresha Discount Codes (v2) {#creating-discount-codes-v2}
+# Gukoresha Discount Codes (v2)
 
 _**Urugero Muhere: Iyiwe ari mu Ultimate Multisite version 2.x.**_
 

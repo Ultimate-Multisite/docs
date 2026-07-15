@@ -3,7 +3,7 @@ title: Svetingumo meniu
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Svetingumo meniu {#hospitality-menus}
+# Svetingumo meniu
 
 **Svetingumo meniu** funkcija leidžia Theme Builder generuoti ir įterpti struktūruotus maisto ir gėrimų meniu puslapius tiesiai į jūsų WordPress svetainę.
 

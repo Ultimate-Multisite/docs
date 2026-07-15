@@ -4,7 +4,7 @@ title: வடிகட்டி - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# ஃபில்டர்: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
+# ஃபில்டர்: wp_should_rescue_orphaned_sites
 
 கைவிடப்பட்ட தளங்களை மீட்டெடுக்க வேண்டுமா என்பதை இது வடிகட்டுகிறது.
 

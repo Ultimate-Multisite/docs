@@ -3,7 +3,7 @@ title: Sukurkite nišinių svetainių verslą
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Sukurkite nišinį svetainių verslą su Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Sukurkite nišinį svetainių verslą su Ultimate Multisite
 
 Dauguma žmonių, bandančių parduoti svetaines, konkuruoja kaina su Wix, Squarespace ir tūkstančiais laisvai samdomų specialistų. Jie pralaimi. Laimi tie, kurie pasirenka konkrečią auditoriją, sukuria tai auditorijai pritaikytą sprendimą ir ima mokestį už suteikiamą vertę.
 

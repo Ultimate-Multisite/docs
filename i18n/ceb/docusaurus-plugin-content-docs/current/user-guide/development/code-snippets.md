@@ -3,7 +3,7 @@ title: Mga Code Snippet
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Mga Code Snippets para sa v2 {#code-snippets-for-v2}
+# Mga Code Snippets para sa v2
 
 Sa laktod, ang mga code snippets para sa **WordPress** ginagamit para himuon ang pipila ka mga aksyon nga basin kinahanglan pa og usa ka mas gamay nga plugin. Ang mga code snippet kining gipangita sa usa sa core files o theme file sa WordPress (kasagaran ang functions.php sa imong theme) o mahimong gamiton isip MU plugin.
 

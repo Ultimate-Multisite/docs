@@ -3,7 +3,7 @@ title: Cloudflare integreerimine
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integreerimine {#cloudflare-integration}
+# Cloudflare Integreerimine
 
 ## Üldine ülevaade {#overview}
 Cloudflare on juhtiv sisuületunduse ja turvalise teenus, mis aitab veebisaite kaitsta ja kiirendada. See integreerimine võimaldab automaatselt domeeni haldamist Ultimate Multisite'i ja Cloudflare'i vahel, eriti subdomiin-multisaitide installatsioonide puhul.

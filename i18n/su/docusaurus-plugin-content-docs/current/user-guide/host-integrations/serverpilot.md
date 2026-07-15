@@ -3,7 +3,7 @@ title: Integrasi ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integrasi ServerPilot {#serverpilot-integration}
+# Integrasi ServerPilot
 
 ## Gambaran Umum {#overview}
 ServerPilot téh layanan cloud pikeun ngajang WordPress je situs PHP séjén dina server di DigitalOcean, Amazon, Google, atawa penyedia server séjénna. Integrasi ieu ngabantu sinkronisasi domain otomatis je ngaturan sertifikat SSL antara Ultimate Multisite je ServerPilot.

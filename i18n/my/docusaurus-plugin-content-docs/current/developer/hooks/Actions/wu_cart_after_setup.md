@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup {#action-wucartaftersetup}
+# Action: wu_cart_after_setup
 
 Developer များအနေဖြင့် checkout object ကို အပိုဆောင်း ပြောင်းလဲမှုများ ပြုလုပ်နိုင်ရန်အတွက် ဖြစ်ပါသည်။
 

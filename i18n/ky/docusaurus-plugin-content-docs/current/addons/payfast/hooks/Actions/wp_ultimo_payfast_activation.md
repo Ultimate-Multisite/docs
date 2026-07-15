@@ -4,7 +4,7 @@ title: Аракет - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Аракет: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Аракет: wp_ultimo_payfast_activation
 
 pluginдин башка бөлүктөрүнө активдештирүү үчүн өз тартиптерин тиркөөгө мүмкүндүк берет
 

@@ -3,7 +3,7 @@ title: Kërkim në internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Kërkimi në Internet {#internet-search}
+# Kërkimi në Internet
 
 Gratis AI Agent v1.5.0 shton aftësinë e **Kërkimit në Internet**, që lejon asistentin AI të merr informacion aktual nga interneti gjatë një bisede. Kjo funksionohet me [Brave Search API](https://brave.com/search/api/) ose [Tavily API](https://tavily.com/).
 

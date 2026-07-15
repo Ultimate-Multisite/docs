@@ -3,7 +3,7 @@ title: Referanse for ferdigheter
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referanse for evner {#abilities-reference}
+# Referanse for evner
 
 Evner er de atomiske handlingene som Gratis AI Agent kan påkalle i WordPress-installasjonen din. Hver evne er en registrert PHP-klasse som eksponerer et JSON-skjema — agenten leser dette skjemaet ved kjøring for å forstå hvilke parametere som kreves og hva evnen returnerer.
 

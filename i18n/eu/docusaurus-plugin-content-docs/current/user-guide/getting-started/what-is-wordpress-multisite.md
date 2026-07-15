@@ -3,7 +3,7 @@ title: Zer da WordPress Multisite-ak?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Zer da WordPress Multisite-ak? {#what-is-wordpress-multisite}
+# Zer da WordPress Multisite-ak?
 
 WordPress-en bestearen bateneko funtazioa da 'Multisite', eta hori bere lehen erabilera 2010an, WordPress 3.0 iradokizunean dagoela. Horrek indaritzak batzuk hartu du, nahiz eta horiek berri funtazioak introduzi dezaten eta segurtasunaren jarduera hobetzeko.
 

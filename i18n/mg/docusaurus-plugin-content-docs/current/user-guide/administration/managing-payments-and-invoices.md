@@ -3,7 +3,7 @@ title: Fitantanana ny Fandoavam-bola sy ny Nota
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Fitera ny Fandoana Fandoavam-bola sy Taratasy Fandoavam-bola {#managing-payments-and-invoices}
+# Fitera ny Fandoana Fandoavam-bola sy Taratasy Fandoavam-bola
 
 ## Fandrefesana Fandoavam-bola {#payment-settings}
 

@@ -3,7 +3,7 @@ title: Closte ஒருங்கிணைப்பு
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ஒருங்கிணைப்பு {#closte-integration}
+# Closte ஒருங்கிணைப்பு
 
 ## மேலோட்டம் {#overview}
 Closte என்பது Google Cloud உள்கட்டமைப்பில் கட்டமைக்கப்பட்ட ஒரு managed WordPress hosting தளமாகும். இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் Closte இடையே தானியங்கி domain ஒத்திசைவு மற்றும் SSL சான்றிதழ் மேலாண்மையை செயல்படுத்துகிறது.

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# ଫିଲ୍ଟର୍: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# ଫିଲ୍ଟର୍: wu_is_development_mode
 
 ପ୍ଲଗଇନ୍ ବିକାଶକାରୀମାନଙ୍କୁ ବିକାଶ ମୋଡ୍ ପାଇଁ ଅତିରିକ୍ତ ପରୀକ୍ଷା ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

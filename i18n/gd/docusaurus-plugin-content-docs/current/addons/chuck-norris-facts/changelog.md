@@ -3,7 +3,7 @@ title: Log atharrachaidhean Fiosrachadh mu Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Loga Atharrachaidhean Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Loga Atharrachaidhean Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Air a chur ris: Gnìomhachd ùrachaidh fèin-obrachail tro fhrithealaiche ùrachaidh Ultimate Multisite

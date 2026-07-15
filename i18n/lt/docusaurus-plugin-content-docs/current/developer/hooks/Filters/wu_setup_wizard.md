@@ -4,7 +4,7 @@ title: Filtras - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filtras: wu_setup_wizard {#filter-wusetupwizard}
+# Filtras: wu_setup_wizard
 
 Leidžia kūrėjams pridėti papildomų sąrankos vedlio žingsnių.
 

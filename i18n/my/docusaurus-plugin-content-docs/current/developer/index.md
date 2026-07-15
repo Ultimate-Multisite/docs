@@ -3,7 +3,7 @@ title: developer documentation
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Developer Documentation {#developer-documentation}
+# Developer Documentation
 
 ဒီလမ်းညွှန်က Ultimate Multisite အတွက် Addons တွေနဲ့ ပေါင်းစပ်ဖို့၊ ချဲ့ထွင်ဖို့ ဒါမှမဟုတ် အသစ်တည်ဆောက်ဖို့ လိုအပ်တဲ့ အရာအားလုံးကို developer တွေအတွက် ပေးထားပါတယ်။ Ultimate Multisite ဟာ WordPress Multisite network တစ်ခုလုံးကို Website-as-a-Service (WaaS) platform တစ်ခုအဖြစ် ပြောင်းလဲပေးပါတယ်။
 

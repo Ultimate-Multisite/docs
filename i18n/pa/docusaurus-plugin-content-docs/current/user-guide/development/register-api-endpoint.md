@@ -3,7 +3,7 @@ title: API ਐਂਡਪੁਆਇੰਟ ਰਜਿਸਟਰ ਕਰੋ
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API ਐਂਡਪੁਆਇੰਟ {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API ਐਂਡਪੁਆਇੰਟ
 
 ਇਸ ਟਿਊਟੋਰੀਅਲ ਵਿੱਚ, ਤੁਸੀਂ ਸਿੱਖੋਗੇ ਕਿ Ultimate Multisite /register API ਐਂਡਪੁਆਇੰਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਆਪਣੇ ਨੈੱਟਵਰਕ ਵਿੱਚ ਨਵੇਂ ਗਾਹਕ ਲਈ ਪੂਰੀ ਆਨਬੋਰਡਿੰਗ ਪ੍ਰਕਿਰਿਆ ਕਿਵੇਂ ਬਣਾਉਣੀ ਹੈ ਅਤੇ ਇਹ Zapier ਨਾਲ ਕਿਵੇਂ ਕਰਨਾ ਹੈ।
 

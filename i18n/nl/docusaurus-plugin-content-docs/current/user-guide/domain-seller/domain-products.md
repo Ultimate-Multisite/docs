@@ -3,7 +3,7 @@ title: Domeinproducten en Prijzen
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeinproducten en Prijzen {#domain-products-and-pricing}
+# Domeinproducten en Prijzen
 
 Domeinproducten waarmee u de prijzen, TLD's, WHOIS-privacy en de providerselectie beheert. Elk domeinproduct is een standaard Ultimate Multisite product met een extra tabblad **Domeineinstellungen**.
 

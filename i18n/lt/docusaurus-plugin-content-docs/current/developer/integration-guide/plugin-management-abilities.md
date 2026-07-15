@@ -3,7 +3,7 @@ title: Įskiepių valdymo galimybės
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Įskiepių valdymo gebėjimai {#plugin-management-abilities}
+# Įskiepių valdymo gebėjimai
 
 Gratis AI Agent v1.5.0 pateikiamas su **7 įskiepių valdymo gebėjimais**, kuriuos AI asistentas gali iškviesti pokalbio metu. Šie gebėjimai suteikia programinį WordPress įskiepių, įdiegtų per [Įskiepių kūrimo ir Sandbox sistemą](../../user-guide/administration/plugin-builder-and-sandbox), valdymą.
 

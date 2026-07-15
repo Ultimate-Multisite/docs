@@ -3,7 +3,7 @@ title: Напредни примери на код
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Напредни примери на код {#advanced-code-examples}
+# Напредни примери на код
 
 Овие примери демонстрираат напредни обрасци за интеграција со Ultimate Multisite.
 

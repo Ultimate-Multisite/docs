@@ -3,7 +3,7 @@ title: Xác minh Di chuyển Chủ quyền
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Xác minh Di chuyển Chủ quyền (Sovereign Migration) {#sovereign-migration-verification}
+# Xác minh Di chuyển Chủ quyền (Sovereign Migration)
 
 Ultimate Multisite phiên bản 1.2.0 đã bao gồm các lệnh kiểm tra WP-CLI cho việc di chuyển khách thuê chủ quyền (sovereign tenant migrations). Hãy sử dụng chúng khi quá trình di chuyển khách thuê, truy cập SSO hoặc cài đặt biệt lập không hoạt động như mong đợi.
 

@@ -3,7 +3,7 @@ title: Zaawansowane przykłady kodu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Zaawansowane Przykłady Kodów {#advanced-code-examples}
+# Zaawansowane Przykłady Kodów
 
 Te przykłady demonstrują zaawansowane wzorce integracji z Ultimate Multisite.
 

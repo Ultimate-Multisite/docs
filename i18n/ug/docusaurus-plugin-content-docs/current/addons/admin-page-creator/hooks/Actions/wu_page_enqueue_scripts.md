@@ -4,7 +4,7 @@ title: مەشغۇلات - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# ھەرىكەت: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# ھەرىكەت: wu_page_enqueue_scripts
 
 بۇ يەرگە خاس ھەرىكەت قوشۇلىدۇ، شۇنداق بولغاندا ئېھتىياجغا قاراپ scripts ۋە styles نى enqueue قىلىدىغان جايىمىز بولىدۇ ھەمدە ئۇلارنىڭ پەقەت توغرا بەتلەردىلا يۈكلىنىشىگە كاپالەتلىك قىلىنىدۇ
 

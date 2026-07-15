@@ -3,7 +3,7 @@ title: Zana na Usanidi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zana na Usanidi {#tools-and-configuration}
+# Zana na Usanidi
 
 Theme Builder hutumia seti ya zana kuchanganua, kubuni, na kujenga tovuti yako ya WordPress. Katika toleo 1.16.0, **sd-ai-agent/site-scrape sasa ni zana ya Tier 1**, hivyo inapatikana kwa chaguo-msingi katika Theme Builder. Superdav AI Agent v1.18.0 pia inaleta kifurushi cha Advanced companion kinachosambazwa kando kwa mtiririko wa kazi wa wasanidi wanaoaminika; zana hizo si sehemu ya kifurushi cha msingi cha WordPress.org na lazima zisakinishwe na kuidhinishwa kando.
 

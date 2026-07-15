@@ -3,7 +3,7 @@ title: Ukuthuthukiswa Kwesango Ngokwezifiso
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ukuthuthukiswa Kwesango Ngokwezifiso {#custom-gateway-development}
+# Ukuthuthukiswa Kwesango Ngokwezifiso
 
 Ungakha amasango okukhokha ngokwezifiso ngokwelula ikilasi le-`Base_Gateway`.
 

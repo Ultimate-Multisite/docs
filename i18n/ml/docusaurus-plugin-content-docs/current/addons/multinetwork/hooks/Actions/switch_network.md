@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Action: switch_network {#action-switchnetwork}
+# Action: switch_network
 
 നിലവിലെ നെറ്റ്വർക്ക് സന്ദർഭം (network context) മാറുമ്പോൾ ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

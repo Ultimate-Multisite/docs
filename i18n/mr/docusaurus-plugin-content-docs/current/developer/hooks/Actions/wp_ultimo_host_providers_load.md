@@ -4,7 +4,7 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Action: wp_ultimo_host_providers_load
 
 डेव्हलपर्सना wp प्लगइन्सद्वारे स्वतःचे होस्ट प्रदाता इंटिग्रेशन्स (host provider integrations) जोडण्याची परवानगी देते.
 

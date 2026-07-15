@@ -4,7 +4,7 @@ title: Sefa - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Sefa: wu_plan_product_types {#filter-wuplanproducttypes}
+# Sefa: wu_plan_product_types
 
 Sefa mhando dzezvigadzirwa dzinofanira kutorwa sezvirongwa.
 

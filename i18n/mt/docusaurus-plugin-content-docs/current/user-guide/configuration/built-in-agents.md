@@ -3,7 +3,7 @@ title: Aġenti integrati
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Inkorporati {#built-in-agents}
+# Agents Inkorporati
 
 Gratis AI Agent v1.9.0 jiġi b'ħames agents inkorporati, kull wieħed ikkonfigurat minn qabel b'sett iffukat ta' għodod, system prompt imfassal apposta, u suġġerimenti tal-bidu mqabbla ma' kompiti komuni f'dak il-qasam. Meta taqleb bejn agents jinbidel dak li l-assistent jista' jagħmel u kif jirrispondi — mingħajr ebda konfigurazzjoni min-naħa tiegħek. Superdav AI Agent v1.18.0 jista' jżid għodod konxji tal-iskeda, rekords ta' tfakkiriet, approval gates, u notifiki SMS ma' dawn il-flussi tax-xogħol meta l-integrazzjonijiet relatati jkunu kkonfigurati.
 

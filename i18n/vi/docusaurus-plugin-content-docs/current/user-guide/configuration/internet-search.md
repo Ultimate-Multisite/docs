@@ -3,7 +3,7 @@ title: Tìm kiếm trên Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Tìm kiếm Internet {#internet-search}
+# Tìm kiếm Internet
 
 Gratis AI Agent v1.5.0 bổ sung khả năng **Tìm kiếm Internet** (Internet Search), cho phép trợ lý AI truy xuất các thông tin cập nhật từ web trong quá trình trò chuyện. Tính năng này được cung cấp bởi [Brave Search API](https://brave.com/search/api/) hoặc [Tavily API](https://tavily.com/).
 

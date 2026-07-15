@@ -4,7 +4,7 @@ title: Filtre - wu_get_post_types
 sidebar_label: wu_get_post_types
 _i18n_hash: 7e9a849e187bc1b15e63e024b42d7593
 ---
-# Filtre: wu_get_post_types {#filter-wugetposttypes}
+# Filtre: wu_get_post_types
 
 Permet aux développeurs de sélectionner les types de publication à afficher.
 

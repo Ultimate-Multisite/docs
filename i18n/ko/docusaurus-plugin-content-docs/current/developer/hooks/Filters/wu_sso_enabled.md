@@ -4,7 +4,7 @@ title: 필터 - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# 필터: wu_sso_enabled {#filter-wussoenabled}
+# 필터: wu_sso_enabled
 
 교차 도메인 싱글 사인온 기능을 활성화/비활성화합니다.
 

@@ -4,7 +4,7 @@ title: Actio - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# Actio: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
+# Actio: wu_captcha_integrations_init
 
 Excitatur postquam omnes integrationes initializatae sunt.
 

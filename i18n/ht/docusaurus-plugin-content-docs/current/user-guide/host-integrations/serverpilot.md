@@ -3,7 +3,7 @@ title: Entegrasyon ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Entegrasyon akòz ServerPilot {#serverpilot-integration}
+# Entegrasyon akòz ServerPilot
 
 ## Aperçu {#overview}
 ServerPilot se yon sèvis nivo klè (cloud service) pou bay wèb WordPress ak lòt sit PHP sou mwayèn server yo nan DigitalOcean, Amazon, Google, oswa nenpòt lòt pwoyèv. Entegrasyon sa a pèmèt senkronizasyon domèn otomatik epi jere sertifikat SSL ant Ultimate Multisite ak ServerPilot la.

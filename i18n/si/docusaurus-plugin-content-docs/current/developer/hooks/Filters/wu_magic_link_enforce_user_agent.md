@@ -4,7 +4,7 @@ title: පෙරහන - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# පෙරහන: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# පෙරහන: wu_magic_link_enforce_user_agent
 
 පරිශීලක නියෝජිත සත්‍යාපනය බලාත්මක කළ යුතුද යන්න පෙරහන්න.
 

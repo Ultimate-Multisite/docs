@@ -3,7 +3,7 @@ title: Domeinprodukte en Prysing
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeinprodukte en Prysgstelling {#domain-products-and-pricing}
+# Domeinprodukte en Prysgstelling
 
 Domeinprodukte is hoe jy prysgstelling, TLD's, WHOIS-privaatheid en verskafferkeuse beheer. Elke domeinproduk is 'n standaard Multisite Ultimate produk met 'n ekstra **Domeininstellings**-tabblad.
 

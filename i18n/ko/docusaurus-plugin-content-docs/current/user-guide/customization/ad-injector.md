@@ -3,7 +3,7 @@ title: 광고 삽입기
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite로 네트워크에 광고 배치하기: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite로 네트워크에 광고 배치하기: Ad Injector
 
 Ultimate Multisite: Ad Injector는 플랜 편집 페이지에서 바로 플랜에 광고를 배치할 수 있는 도구를 제공하는 **무료 add-on**입니다.
 

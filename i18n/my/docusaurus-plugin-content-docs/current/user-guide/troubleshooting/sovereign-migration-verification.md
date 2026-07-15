@@ -3,7 +3,7 @@ title: အချုပ်အခြာအာဏာဆိုင်ရာ ပြေ
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration စစ်ဆေးခြင်း {#sovereign-migration-verification}
+# Sovereign Migration စစ်ဆေးခြင်း
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 မှာ sovereign tenant များအတွက် WP-CLI verification commands ပါဝင်ပါတယ်။ Tenant ပြောင်းရွှေ့တာ၊ SSO နဲ့ ဝင်ကြည့်တာ ဒါမှမဟုတ် သီးခြား install လုပ်တဲ့အခါတွေမှာ အရင်ကလို မလုပ်ဆောင်နိုင်တော့ဘူးဆိုရင် ဒီ command တွေကို အသုံးပြုနိုင်ပါတယ်။
 

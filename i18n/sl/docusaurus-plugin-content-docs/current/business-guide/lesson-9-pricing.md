@@ -3,7 +3,7 @@ title: 'Lekcija 9: Oblikovanje cen za dobiček'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcija 9: Oblikovanje cen za dobiček {#lesson-9-pricing-for-profit}
+# Lekcija 9: Oblikovanje cen za dobiček
 
 V lekciji 5 smo določili začetne cene za pakete FitSite. Zdaj bomo izpopolnili cenovno strategijo s tehnikami, ki povečajo prihodke, spodbujajo nadgradnje in zmanjšajo odlive.
 

@@ -4,7 +4,7 @@ title: Filter - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filter: wu_contains_element {#filter-wucontainselement}
+# Filter: wu_contains_element
 
 Memungkinkan developer untuk mengubah hasil pencarian awal.
 

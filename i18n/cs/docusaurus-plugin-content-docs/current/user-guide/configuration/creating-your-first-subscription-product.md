@@ -3,7 +3,7 @@ title: Vytvoření prvního produktu s předplatným
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Vytvoření vašeho prvního produktu s předplatným (v2) {#creating-your-first-subscription-product-v2}
+# Vytvoření vašeho prvního produktu s předplatným (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek je určen pouze pro uživatele Ultimate Multisite verze 2.x. Pokud používáte verzi 1.x,**_ **_**přečtěte si tento článek**_**.
 

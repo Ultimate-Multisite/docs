@@ -3,7 +3,7 @@ title: ნახვის შესაძლებლობა
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# შესაძლებლობის ხილვადობა (Ability Visibility) {#ability-visibility}
+# შესაძლებლობის ხილვადობა (Ability Visibility)
 
 Superdav AI Agent v1.12.0-ის დანერგვისას შემოვიდა **Ability Visibility** კონტროლი, რომელიც განსაზღვრავს, თუ რომელი ზედაპირები (surfaces) გამოაჩენს თითოეულ შესაძლებლობას. ეს საშუალებას აძლევს ადმინისტრატორებს და finely-tune possano scegliere, რომელ აგენტის შესაძლებლობებს ხელმისაწვდომი ხდის REST API-ის მეშვეობით, MCP სერვერებზე, WooCommerce ინტეგრაციებზე და სხვა ინტერფეისებზე.
 

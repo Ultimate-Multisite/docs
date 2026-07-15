@@ -3,7 +3,7 @@ title: Jieun Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Jieun Logo SVG {#generate-logo-svg}
+# Jieun Logo SVG
 
 Kamampuhan **Jieun Logo SVG** ngamungkinkeun Theme Builder nyieun jeung nyelapkeun SVG logo kustom langsung kana situs WordPress anjeun kalayan sanitisasi otomatis anu aman pikeun namespace.
 

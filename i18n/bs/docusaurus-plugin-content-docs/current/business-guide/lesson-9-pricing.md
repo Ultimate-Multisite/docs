@@ -3,7 +3,7 @@ title: 'Lekcija 9: Cjenovanje za profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcija 9: Cjenovna politika za profit {#lesson-9-pricing-for-profit}
+# Lekcija 9: Cjenovna politika za profit
 
 U Lekciji 5 postavili smo početne cjenovne razrede za FitSite planove. Sada ćemo usavršiti cjenovnu strategiju tehnikama koje povećavaju prihod, potiču nadogradnje i smanjuju otpadak članova.
 

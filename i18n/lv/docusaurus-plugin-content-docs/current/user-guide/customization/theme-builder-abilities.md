@@ -3,7 +3,7 @@ title: Temas izstrādes spējās
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Temas būvums: Bloktemu scaffoldēšana un aktivizācija {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Temas būvums: Bloktemu scaffoldēšana un aktivizācija
 
 Superdav AI Agent v1.12.0 ieviesta divas spēcīgas iespējas, kas ļauj jums tieši no чаta interfeisa izveidot un izvietot personalizētus bloktemas.
 

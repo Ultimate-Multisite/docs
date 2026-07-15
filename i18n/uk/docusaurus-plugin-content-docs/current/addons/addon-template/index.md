@@ -3,9 +3,9 @@ title: Додатковий шаблон
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Шаблон аддону {#addon-template}
+# Шаблон аддону
 
-{{ADDON_DESCRIPTION}}
+Додатковий шаблон — Ultimate Multisite.
 
 ## Вимоги {#requirements}
 

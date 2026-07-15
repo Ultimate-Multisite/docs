@@ -3,7 +3,7 @@ title: Tłumaczenie Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tłumaczenie Ultimate Multisite {#translating-ultimate-multisite}
+# Tłumaczenie Ultimate Multisite
 
 Ultimate Multisite jest rozwijany w języku angielskim, ale wtyczka jest w pełni przetłumaczalna i chętnie przyjmujemy wkład w tłumaczenia.
 

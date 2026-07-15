@@ -3,7 +3,7 @@ title: कस्टम डेव्हलपमेंट मदत
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable कडून कस्टम डेव्हलपमेंट मदत कशी मिळवायची? {#how-to-get-custom-development-help-from-codeable}
+# Codeable कडून कस्टम डेव्हलपमेंट मदत कशी मिळवायची?
 
 कधी कधी, आपल्या नेटवर्क फ्लोज आपल्याला हव्या तशा तंतोतंत बनवण्यासाठी काही खास customization ची गरज असते. जर तुम्ही हेच शोधत असाल, तर आम्ही [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ची शिफारस करतो, जिथे तुम्हाला Ultimate Multisite मध्ये अनुभवी असलेले developers मिळतील.
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite-ی قوروشدورماق
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-ین قورولماسی {#installing-ultimate-multisite}
+# Ultimate Multisite-ین قورولماسی
 
 :::note
 بو دَرسلیک، WordPress Multisite-ین آرتدان قورولدوغونو و تنظیم اولوندوغونو فرض ائدیر. نئجه ائدیلدیگینی اویرنمک اوچون، WP Beginner طرفیندن [بو دَرسلیگه](https://www.wpbeginner.com/glossary/multisite/) باخین.

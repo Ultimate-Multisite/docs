@@ -3,7 +3,7 @@ title: CyberPanel Интеграция
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Интеграция {#cyberpanel-integration}
+# CyberPanel Интеграция
 
 Бул колдонмода Ultimate Multisite CyberPanel интеграциясын кантип конфигурациялоону жана сиздин тармактарыңыздагы карталанган домендерди CyberPanelде автоматтык түрдө виртуал хосттор катары кошууну (жана алып салууну) көрсөтөм. Бул Let's Encrypt аркылуу опционалдуу авто-SSL камсыздоо менен иштеп болот.
 

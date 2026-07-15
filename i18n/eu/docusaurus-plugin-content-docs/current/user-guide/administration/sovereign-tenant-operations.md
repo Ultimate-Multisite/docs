@@ -3,7 +3,7 @@ title: Operazioak Tenantsoaren Soberen
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operazioak {#sovereign-tenant-operations}
+# Sovereign Tenant Operazioak
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-ek has soilikoki (sovereign) tenentak dira: database, filesystem root eta routing context bere oneskin jarraitzen duten subsites; baina network administurari iragatik erabil dauden jakin dituzte.
 

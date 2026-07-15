@@ -3,7 +3,7 @@ title: 'Leasan 14: Dè thig an ath rud'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leasan 14: Dè thig an ath rud {#lesson-14-what-comes-next}
+# Leasan 14: Dè thig an ath rud
 
 Tha thu air àrd-ùrlar làraich-lìn niche a thogail bhon fhìor thoiseach. Tha FitSite beò, a’ frithealadh stiùidiothan fallaineachd, agus a’ gineadh teachd-a-steach ath-chuairteach. Tha an leasan mu dheireadh seo a’ coimhead air càit an tèid thu às an seo.
 

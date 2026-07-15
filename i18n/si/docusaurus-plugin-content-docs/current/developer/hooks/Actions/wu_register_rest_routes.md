@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# ක්‍රියාව: wu_register_rest_routes {#action-wuregisterrestroutes}
+# ක්‍රියාව: wu_register_rest_routes
 
 අමතර මාර්ග ලියාපදිංචි කිරීමට ඉඩ දෙන්න.
 

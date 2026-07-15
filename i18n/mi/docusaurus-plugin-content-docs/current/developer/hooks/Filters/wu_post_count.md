@@ -4,7 +4,7 @@ title: Tātari - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Tātari: wu_post_count {#filter-wupostcount}
+# Tātari: wu_post_count
 
 Whakaaetia ngā kaiwhakawhanake monomai kia huri i te tapeke tatau
 

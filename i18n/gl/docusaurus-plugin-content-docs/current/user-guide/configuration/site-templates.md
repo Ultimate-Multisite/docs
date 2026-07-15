@@ -3,7 +3,7 @@ title: Plantillas do sitio
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Model de Plantillas do Sitio (v2) {#site-templates-v2}
+# Model de Plantillas do Sitio (v2)
 
 _**NOTA: Este artigo refere a Ultimate Multisite versão 2.x. Se estiver a usar a versão 1.x,**_ **ve este artigo** _**.**_
 

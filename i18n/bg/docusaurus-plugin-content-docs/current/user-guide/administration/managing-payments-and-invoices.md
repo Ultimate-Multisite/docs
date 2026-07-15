@@ -3,7 +3,7 @@ title: Управление на плащания и фактури
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Управление на плащания и фактури {#managing-payments-and-invoices}
+# Управление на плащания и фактури
 
 ## Настройки на плащанията {#payment-settings}
 

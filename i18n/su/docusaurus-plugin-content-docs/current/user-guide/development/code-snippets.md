@@ -3,7 +3,7 @@ title: Cuplikan Kode
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Cuplikan Kode pikeun v2 {#code-snippets-for-v2}
+# Cuplikan Kode pikeun v2
 
 Intina, cuplikan kode pikeun **WordPress** dipaké pikeun ngalakukeun sababaraha kagiatan anu biasana butuh plugin leutik khusus. Cuplikan kode saperti kitu dipasang dina salah sahiji file inti WordPress atawa tema (biasana file `functions.php` tina tema anjeun) atawa bisa dipaké salaku MU plugin.
 

@@ -3,7 +3,7 @@ title: Integracija višezakupništva
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integracija više zakupaca {#multi-tenancy-integration}
+# Integracija više zakupaca
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mijenja nekoliko integracijskih dodirnih točaka za suverene zakupce, provjeru migracije i automatizaciju životnog ciklusa zakupca.
 

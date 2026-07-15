@@ -3,7 +3,7 @@ title: Hestia ನಿಯಂತ್ರಣ ಫಲಕ ಏಕೀಕರಣ
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel ಸಂಯೋಜನೆ {#hestia-control-panel-integration}
+# Hestia Control Panel ಸಂಯೋಜನೆ
 
 ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಮ್ಯಾಪ್ ಮಾಡಿದ ಡೊಮೇನ್‌ಗಳನ್ನು Hestia ನಲ್ಲಿ Web Domain Aliases ಆಗಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೇರಿಸಲು (ಮತ್ತು ತೆಗೆದುಹಾಕಲು) Ultimate Multisite Hestia ಸಂಯೋಜನೆಯನ್ನು ಹೇಗೆ ಕಾನ್ಫಿಗರ್ ಮಾಡುವುದು ಎಂದು ಈ ಮಾರ್ಗದರ್ಶಿ ವಿವರಿಸುತ್ತದೆ.
 

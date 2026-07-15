@@ -3,9 +3,9 @@ title: قالب افزونه
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قالب افزونه (Addon Template) {#addon-template}
+# قالب افزونه (Addon Template)
 
-{{ADDON_DESCRIPTION}}
+قالب افزونه — Ultimate Multisite.
 
 ## پیش‌نیازها (Requirements) {#requirements}
 

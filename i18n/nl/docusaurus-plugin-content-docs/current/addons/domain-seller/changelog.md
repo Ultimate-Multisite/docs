@@ -3,7 +3,7 @@ title: Domain Seller Changelog
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller-wijzigingslog {#domain-seller-changelog}
+# Domain Seller-wijzigingslog
 
 Versie 1.3.0 - Uitgebracht op 2026-06-02
 - Nieuw: Een waarschuwing voor de netwerkbeheerder toegevoegd wanneer het HostAfrica reseller-saldo te laag wordt

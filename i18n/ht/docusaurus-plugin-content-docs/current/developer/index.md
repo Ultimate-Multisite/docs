@@ -3,7 +3,7 @@ title: Dokimantasyon pou Devlopè
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokimantasyon pou Devlopè {#developer-documentation}
+# Dokimantasyon pou Devlopè
 
 Gid sa a bay devlopè yo tout sa yo bezwen pou entegre ak Ultimate Multisite, elaji li, oswa devlope ekstansyon pou li. Ultimate Multisite transfòme yon rezo WordPress Multisite an yon platfòm Website-as-a-Service (WaaS).
 

@@ -3,7 +3,7 @@ title: 'Lezione 7: Rendilo tuo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lezione 7: Rendilo Tuo {#lesson-7-making-it-yours}
+# Lezione 7: Rendilo Tuo
 
 I tuoi clienti non dovrebbero mai sentire di usare "un plugin WordPress". Devono sentire di usare FitSite: una piattaforma costruita per il loro settore. Questa lezione copre il branding, il white-labeling e come far sembrare la piattaforma un prodotto autonomo.
 

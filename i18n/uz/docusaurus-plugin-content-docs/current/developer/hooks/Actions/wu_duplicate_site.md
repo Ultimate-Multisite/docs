@@ -4,7 +4,7 @@ title: Amal - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Amal: wu_duplicate_site {#action-wuduplicatesite}
+# Amal: wu_duplicate_site
 
 Dasturchilarga site nusxalanishi sodir bo‘lgandan keyin ulanish imkonini beradi.
 

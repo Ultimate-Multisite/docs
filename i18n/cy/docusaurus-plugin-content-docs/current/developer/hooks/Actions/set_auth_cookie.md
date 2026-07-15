@@ -4,7 +4,7 @@ title: Gweithred - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Gweithred: set_auth_cookie {#action-setauthcookie}
+# Gweithred: set_auth_cookie
 
 Yn tanio yn union cyn i’r cwci dilysu gael ei osod.
 

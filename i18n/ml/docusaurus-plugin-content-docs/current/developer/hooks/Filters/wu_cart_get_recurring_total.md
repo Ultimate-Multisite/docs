@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_cart_get_recurring_total
 sidebar_label: wu_cart_get_recurring_total
 _i18n_hash: 4ced5861259c5b81a288c1f3146f02d3
 ---
-# Filter: wu_cart_get_recurring_total {#filter-wucartgetrecurringtotal}
+# Filter: wu_cart_get_recurring_total
 
 ഇത് "ആവർത്തന തുക" (recurring amount) മൊത്തം തുകയെ ഫിൽട്ടർ ചെയ്യാൻ ഉപയോഗിക്കുന്നു.
 

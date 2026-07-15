@@ -3,7 +3,7 @@ title: WP Engine integreerimine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integreerimine {#wp-engine-integration}
+# WP Engine Integreerimine
 
 ## Üldine ülevaade {#overview}
 WP Engine on premium halitud WordPress hoastamise platvorm, mis pakub WordPress-saitidele optimeeritud jõudluse, turvalisuse ja skaalautuvuse. See integreerimine võimaldab automaatselt domeenid synkronida Ultimate Multisite'i ja WP Enginei vahel.

@@ -4,7 +4,7 @@ title: Gnìomh - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Gnìomh: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Gnìomh: wu_register_rest_routes
 
 Leig le slighean a bharrachd a bhith air an clàradh.
 

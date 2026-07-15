@@ -3,7 +3,7 @@ title: WPMU DEV -integraatio
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Integraatio {#wpmu-dev-integration}
+# WPMU DEV Integraatio
 
 ## Yleiskatsaus {#overview}
 WPMU DEV on kattava WordPress-alusta, joka tarjoaa isännöintiä, plugin-lisäosia ja palveluita WordPress-sivustoille. Tämä integraatio mahdollistaa automaattisen verkkotunnusten synkronoinnin ja SSL-sertifikaattien hallinnan Ultimate Multisiten ja WPMU DEV -isännöinnin välillä.

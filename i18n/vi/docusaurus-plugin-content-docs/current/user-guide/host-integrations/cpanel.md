@@ -3,7 +3,7 @@ title: Tích hợp cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Tích hợp cPanel {#cpanel-integration}
+# Tích hợp cPanel
 
 ## Tổng quan {#overview}
 cPanel là một trong những bảng điều khiển hosting phổ biến nhất, được nhiều nhà cung cấp shared hosting và dedicated hosting sử dụng. Tính năng tích hợp này cho phép đồng bộ tên miền tự động giữa Ultimate Multisite và cPanel, giúp bạn tự động thêm domain alias và subdomain vào tài khoản cPanel của mình.

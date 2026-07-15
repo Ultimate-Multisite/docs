@@ -3,7 +3,7 @@ title: CyberPanel -integraatio
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel -Integraatio {#cyberpanel-integration}
+# CyberPanel -Integraatio
 
 Tämä opas selittää, miten konfiguroidaan Ultimate Multisite CyberPanel -integraatio niin, että verkossasi kartoitettuja domeeneja lisätään (ja poistetaan) automaattisesti virtuaalipalvelimiksi CyberPanelissa, valinnaisella auto-SSL-proviisoinnilla Let's Encryptin kautta.
 

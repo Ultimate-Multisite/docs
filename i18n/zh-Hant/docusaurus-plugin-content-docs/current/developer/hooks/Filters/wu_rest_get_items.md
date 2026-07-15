@@ -4,7 +4,7 @@ title: 過濾器 - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# 過濾器：wu_rest_get_items {#filter-wurestgetitems}
+# 過濾器：wu_rest_get_items
 
 用於判斷是否允許繼續執行此請求。
 

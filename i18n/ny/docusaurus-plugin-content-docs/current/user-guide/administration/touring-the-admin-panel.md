@@ -3,7 +3,7 @@ title: Kuyenda ku Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Kufuna Panel ya Usimamizi (Admin Panel) {#touring-the-admin-panel}
+# Kufuna Panel ya Usimamizi (Admin Panel)
 
 Ultimate Multisite imelenga kuwepesa kuleli na kutofautana kwa njia rahisi, kompyuta inaleta chombo hiki chenye nguvu kidogo, chote kinaweza kukusaidia kupata safari iliyongozwa. Tusianze kwenye kuruka kwenye ukurasa wa usimamizi ili kukusaidia kujisikia nyumbani.
 

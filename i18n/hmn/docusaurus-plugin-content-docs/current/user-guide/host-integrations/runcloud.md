@@ -3,7 +3,7 @@ title: Khuaws cia RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## Tổng quan (Overview) {#overview}
 RunCloud هو platform management server-based cloud, allows you to deploy and manage web applications easily on your own cloud servers. Integration này cho phép đồng bộ tên miền tự động và quản lý SSL certificate giữa Ultimate Multisite và RunCloud.

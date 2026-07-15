@@ -4,7 +4,7 @@ title: చర్య - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 టెంప్లేట్ ప్రివ్యూయర్ సందర్భంలో (template previewer context) ఉన్నప్పుడు ఇది రన్ అవుతుంది.
 

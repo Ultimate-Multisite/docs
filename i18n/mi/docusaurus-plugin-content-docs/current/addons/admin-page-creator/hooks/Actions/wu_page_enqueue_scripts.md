@@ -4,7 +4,7 @@ title: Mahinga - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Hohenga: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Hohenga: wu_page_enqueue_scripts
 
 Te tāpiri i tētahi hohenga ritenga ki konei kia whai wāhi ai tātou hei enqueue i ngā scripts me ngā styles ina hiahiatia\ ā, kia mārama hoki ka utaina anake ki ngā whārangi tika
 

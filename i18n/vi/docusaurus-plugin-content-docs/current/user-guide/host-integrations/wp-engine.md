@@ -3,7 +3,7 @@ title: WP Engine Integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Tích hợp WP Engine {#wp-engine-integration}
+# Tích hợp WP Engine
 
 ## Tổng quan {#overview}
 WP Engine là nền tảng hosting WordPress quản lý cao cấp, cung cấp hiệu suất tối ưu, bảo mật và khả năng mở rộng cho các trang WordPress. Tích hợp này cho phép đồng bộ tên miền tự động giữa Ultimate Multisite và WP Engine.

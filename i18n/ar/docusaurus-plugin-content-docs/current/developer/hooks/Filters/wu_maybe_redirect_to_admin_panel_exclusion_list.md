@@ -4,7 +4,7 @@ title: فلتر - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# الفلتر: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# الفلتر: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 إنشاء قائمة استثناء للمعلمات التي تمنع إعادة التوجيه التلقائي.
 

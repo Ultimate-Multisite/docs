@@ -3,7 +3,7 @@ title: Ailtaethau yn cael eu canol
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Ailta Mewn (v2) {#canceling-a-membership-v2}
+# Ailta Mewn (v2)
 
 _**NOTYN DDAWID: Mae'r ailainau hyn yn cyfeiriad i Ultimate Multisite ffurf 2.x.**_
 

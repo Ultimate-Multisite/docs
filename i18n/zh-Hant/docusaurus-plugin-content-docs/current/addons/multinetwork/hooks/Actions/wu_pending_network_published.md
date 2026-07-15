@@ -4,7 +4,7 @@ title: Action - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# 動作：wu_pending_network_published {#action-wupendingnetworkpublished}
+# 動作：wu_pending_network_published
 
 當一個待處理的網路（pending network）被發佈後會觸發此動作。
 

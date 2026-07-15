@@ -3,7 +3,7 @@ title: 'Les 1: Waarom een niche wint'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Les 1: Waarom een niche wint {#lesson-1-why-niche-wins}
+# Les 1: Waarom een niche wint
 
 Voordat we ook maar één stukje software aanraken, moet je begrijpen waarom het bouwen voor een specifieke doelgroep de allerbelangrijkste beslissing is die je zult nemen.
 

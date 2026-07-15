@@ -3,7 +3,7 @@ title: テーマに合わせたスキル
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# テーマ対応型スキル {#theme-aware-skills}
+# テーマ対応型スキル
 
 Superdav AI Agent v1.10.0 には、アクティブな WordPress テーマに自動的に適応する、4つの新しいテーマ対応型組み込みスキルが搭載されました。これらのスキルは、お使いのテーマの構造や機能に合わせて、専門的なガイダンスと機能を提供します。
 

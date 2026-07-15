@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite isch en WordPress Multisite plugin, wo dir erlaubt, WaaS oder Websites als Service a Chunde anzbiete. Bevor mir tiefer iitauche und lerne, wie Ultimate Multisite dis Gschäft und dini Chunde unterstütze cha, bruche mir e paar grundlegendi Kenntnis, wo mir ufbaue müesse.
 

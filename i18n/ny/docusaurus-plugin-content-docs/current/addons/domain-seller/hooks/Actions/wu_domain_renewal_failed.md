@@ -4,7 +4,7 @@ title: Chochita - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Chochita: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Chochita: wu_domain_renewal_failed
 
 Imayambika pambuyo poti kuyesa kukonzanso domain kwalephera.
 

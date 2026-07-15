@@ -3,7 +3,7 @@ title: چوخ‌مستاجیرلی ادغامی
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy بیرلشمەسی {#multi-tenancy-integration}
+# Multi-Tenancy بیرلشمەسی
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 موستەقیل tenant-لار، کؤچورمه یوخلاماسی، وە tenant یاشام دؤنگوسو اوتوماتلاشدیرماسی اوچون بیر نئچه بیرلشمه نقطه‌سینی دَییشیر.
 

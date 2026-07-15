@@ -3,7 +3,7 @@ title: Integrimi me Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrimi me Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Integrimi me Hostinger (hPanel)
 
 ## Përmbledhje {#overview}
 

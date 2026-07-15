@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Ellenőrzi, hogy egy adott poszttípusot engedélyezett-e ezen a terven. Engedi a plugin fejlesztőknek a visszaadott érték szűrését.
 

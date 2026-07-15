@@ -3,7 +3,7 @@ title: Crear un Negoci de Webs de Nicho
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Crea un Negoci de Webs de Niche amb Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Crea un Negoci de Webs de Niche amb Ultimate Multisite
 
 La majoria de les persones que intenten vendre webs competeixen per preu contra Wix, Squarespace i milers de *freelancers*. I perden. Aquells que guanyen es centren en un públic específic, construeixen una solució adaptada a aquest públic i cobren pel valor que ofereixen.
 

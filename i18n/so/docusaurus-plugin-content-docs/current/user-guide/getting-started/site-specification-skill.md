@@ -3,7 +3,7 @@ title: Astaamaha Goobta Sharciyeedka
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Xirfadda Aqoonsiga Website-ga (Site Specification Skill) {#site-specification-skill}
+# Xirfadda Aqoonsiga Website-ga (Site Specification Skill)
 
 **Xirfadda Aqoonsiga Website-ga (Site Specification skill)** waa hab qaabaysan oo aad ku qorto hadafyada website-kaaga, dadka aad u jeeddo, iyo aqoonsiga calaamadda (brand identity). Macluumaadkaas waxaa lagu kaydyaa xusuusta **site_brief**-kaaga, kaas oo agensi-yadu waxay isticmaalaan dhammaan wixii la soo dhaafay si ay bixiyaan caawimaad isku mid ah oo fahmaya macnaha goobta aad ku jirto.
 

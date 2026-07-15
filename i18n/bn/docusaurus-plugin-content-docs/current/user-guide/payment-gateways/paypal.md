@@ -3,7 +3,7 @@ title: PayPal সেট আপ করা
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway (v2) সেট আপ করা {#setting-up-the-paypal-gateway-v2}
+# PayPal Gateway (v2) সেট আপ করা
 
 _**গুরুত্বপূর্ণ নোট: এই প্রবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কে।**_
 

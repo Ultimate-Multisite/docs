@@ -3,7 +3,7 @@ title: Udliwano-ndlebe lokuFumanisa
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Udliwano-ndlebe Lokufumanisa {#discovery-interview}
+# Udliwano-ndlebe Lokufumanisa
 
 I-**Discovery Interview** linyathelo lokuqala kwinkqubo yoyilo ye-Theme Builder. Liqokelela ulwazi malunga nesayithi yakho, ishishini lakho, kunye nezinto ozikhethayo kuyilo ukuze lenze i-theme elungiselelwe wena.
 

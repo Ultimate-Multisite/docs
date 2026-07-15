@@ -3,7 +3,7 @@ title: Niş Saytı Biznesini Qurmaq
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite ilə Niş Veb Saytı Biznesini Qurmaq {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite ilə Niş Veb Saytı Biznesini Qurmaq
 
 Veb sayt satmaq istəyən əksər insanlar Wix, Squarespace və minlərlə freelance mütəxəssislərlə qiymətə görə rəqabət aparırlar. Onlar uduzmurlar. Uğur qazananlar isə müəyyən bir auditoriya seçir, bu auditoriyaya uyğun bir həll yaradır və verdikləri dəyər üçün ödəniş tələb edirlər.
 

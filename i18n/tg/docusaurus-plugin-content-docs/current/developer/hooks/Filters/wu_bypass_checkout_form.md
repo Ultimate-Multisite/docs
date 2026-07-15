@@ -4,7 +4,7 @@ title: Филтр - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Филтр: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Филтр: wu_bypass_checkout_form
 
 Ба таҳиягарон иҷозат медиҳад, ки натиҷаро гузаранд ва натиҷаи нав таъин кунанд
 

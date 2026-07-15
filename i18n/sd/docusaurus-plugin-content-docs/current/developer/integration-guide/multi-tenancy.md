@@ -3,7 +3,7 @@ title: گهڻ-ڪرائيداري انضمام
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy انٽيگريشن {#multi-tenancy-integration}
+# Multi-Tenancy انٽيگريشن
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 خودمختيار ٽيننٽن، لڏپلاڻ جي تصديق، ۽ ٽيننٽ جي لائيف سائيڪل خودڪارڪاري لاءِ ڪيترن ئي انٽيگريشن رابطن کي تبديل ڪري ٿو.
 

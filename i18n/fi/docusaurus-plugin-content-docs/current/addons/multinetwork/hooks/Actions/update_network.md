@@ -4,7 +4,7 @@ title: Toiminto - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Toiminto: update_network {#action-updatenetwork}
+# Toiminto: update_network
 
 Käynnistyy sen jälkeen, kun olemassa oleva verkko on päivitetty.
 

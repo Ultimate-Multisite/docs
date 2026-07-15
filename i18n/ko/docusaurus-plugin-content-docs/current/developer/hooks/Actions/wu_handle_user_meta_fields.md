@@ -4,7 +4,7 @@ title: 액션 - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 필요한 경우 플러그인 개발자가 사용자 메타 데이터를 다양한 방식으로 저장할 수 있도록 허용합니다.
 

@@ -3,7 +3,7 @@ title: Integracija ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integracija sa ServerPilotom {#serverpilot-integration}
+# Integracija sa ServerPilotom
 
 ## Pregled {#overview}
 ServerPilot je cloud usluga za hostovanje WordPressa i drugih PHP sajtova na serverima kod DigitalOcean, Amazon, Google-a ili bilo kog drugog provajdera servera. Ova integracija omogućava automatsku sinkronizaciju domena i upravljanje SSL certifikatima između Ultimate Multisite-a i ServerPilot-a.

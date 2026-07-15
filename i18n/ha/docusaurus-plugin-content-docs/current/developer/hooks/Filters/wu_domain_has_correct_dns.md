@@ -4,7 +4,7 @@ title: Tace - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Tacewa: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Tacewa: wu_domain_has_correct_dns
 
 Bari masu haɓaka plugin su ƙara sabbin bincike domin ayyana sakamakon.
 

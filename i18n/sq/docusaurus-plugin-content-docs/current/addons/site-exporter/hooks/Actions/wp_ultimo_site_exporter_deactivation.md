@@ -4,7 +4,7 @@ title: Aksion - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Veprim: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Veprim: wp_ultimo_site_exporter_deactivation
 
 Lejoni pjesët e tjera të plugin-it të bashkëngjisin rutinat e tyre për çaktivizim.
 

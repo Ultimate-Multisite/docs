@@ -4,7 +4,7 @@ title: Radnja - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Akcija: wu_page_load {#action-wupageload}
+# Akcija: wu_page_load
 
 Dopustite developerima plugina da dodaju dodatne hookove na naše stranice.
 

@@ -4,7 +4,7 @@ title: کړنه - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# کړنه: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# کړنه: wp_ultimo_host_providers_load
 
 پراختیاکوونکو ته اجازه ورکوي چې د WordPress pluginونو له لارې د خپل کوربه چمتوکوونکي ادغامونه ورزیات کړي.
 

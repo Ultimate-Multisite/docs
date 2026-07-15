@@ -4,7 +4,7 @@ title: Lim - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Lim: wu_rest_get_item {#filter-wurestgetitem}
+# Lim: wu_rest_get_item
 
 Lim seb puas raug tso cai mus txuas ntxiv nrog qhov kev thov los tsis raug.
 

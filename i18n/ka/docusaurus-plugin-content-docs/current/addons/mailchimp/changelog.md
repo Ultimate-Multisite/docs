@@ -3,7 +3,7 @@ title: Mailchimp ცვლილებების ჟურნალი
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp ცვლილებების ჟურნალი {#mailchimp-changelog}
+# Mailchimp ცვლილებების ჟურნალი
 
 ვერსია: 1.1.1 - გამოშვებულია 2025-09-28-ზე
 

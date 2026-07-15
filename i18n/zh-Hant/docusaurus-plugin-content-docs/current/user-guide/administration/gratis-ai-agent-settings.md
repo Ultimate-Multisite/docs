@@ -3,7 +3,7 @@ title: Gratis AI Agent 設定
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent 設定 {#gratis-ai-agent-settings}
+# Gratis AI Agent 設定
 
 Gratis AI Agent 中的 **設定 → 進階** 畫面提供後端整合的管理員層級設定。本頁說明意見回饋轉送、搜尋提供者金鑰、受管理的 Superdav 服務設定、Google Calendar 控制項、TextBee SMS 設定，以及全網路功能旗標。
 

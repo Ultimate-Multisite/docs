@@ -3,7 +3,7 @@ title: Taron Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sarar da Gidaite Wurin Gida (Site Export) {#site-export}
+# Sarar da Gidaite Wurin Gida (Site Export)
 
 Wurin gidaite wuri **Site Export** yana ba masu kula da shafuka na gida (network administrators) damar su riƙa wani wuri ko dukan gida a cikin wani farko mai iya sauke don tura shi, ajiye shi (backup), ko kuma yin aiki na kan shi.
 

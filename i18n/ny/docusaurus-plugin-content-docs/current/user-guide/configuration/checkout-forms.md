@@ -3,7 +3,7 @@ title: Mawu wa Kufunga
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms ndi njira yofunika komanso yofunika kuti muli ndi kuyesa njira zosiyanasiyana pamene mukugwiritse ntchito wamalo watsopano.
 

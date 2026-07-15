@@ -3,7 +3,7 @@ title: GridPane integrācija
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integrācija {#gridpane-integration}
+# GridPane Integrācija
 
 ## Īsszums {#overview}
 GridPane ir īpaši izstrādāta WordPress hostings kontrol panelis, kas paredzēta nopietojamiem WordPress profesionālim. Šī integrācija ļauj automātiskai domēnu sinkronizācijai un SSL sertifikātu pārvaldībai starp Ultimate Multisite un GridPane.

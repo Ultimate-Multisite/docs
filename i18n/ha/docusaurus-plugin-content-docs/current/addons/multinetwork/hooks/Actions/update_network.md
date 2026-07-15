@@ -4,7 +4,7 @@ title: Aiki - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Aiki: update_network {#action-updatenetwork}
+# Aiki: update_network
 
 Yana faruwa bayan an sabunta wata cibiyar sadarwa da take akwai.
 

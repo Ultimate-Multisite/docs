@@ -3,7 +3,7 @@ title: Integrasyon WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration-a WPMU DEV {#wpmu-dev-integration}
+# Integration-a WPMU DEV
 
 ## گشتی (Overview) {#overview}
 WPMU DEV یەک پلاتفۆرمێکی وردی و پڕمایەنی WordPress ییە کە هاستکردن، پلگینەکان و خزمەتگوزئینان بۆ سایتەکانی WordPress پێشکەش دەکات. ئەم یەکگرتووکارییە دەبێت ڕێگە بدات لە هەڵسُوێنانی ئۆمایەن (domain syncing) و بەڕێوەبردنی گوازارکەی SSL لە نێوان Ultimate Multisite و هاستکردنی WPMU DEV ئەنجام بدرێت.

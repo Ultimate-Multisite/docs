@@ -3,7 +3,7 @@ title: Closte-ийн нийлүүлэлт
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Интеграци {#closte-integration}
+# Closte Интеграци
 
 ## Ерөнхий өгүүлэл {#overview}
 Closte бол Google Cloud дээр баригдсан WordPress хостинг платформ юм. Энэхүү интеграци нь Ultimate Multisite болон Closte-ийн хоорондох талбайн синхронизулалт, SSL сертификатын удирдлагыг автоматаар хийгдэх боломжийг олгодог.

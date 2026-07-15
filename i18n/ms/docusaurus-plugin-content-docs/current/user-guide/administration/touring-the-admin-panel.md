@@ -3,7 +3,7 @@ title: Meninjau Panel Pentadbir
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Menjelajah Panel Admin {#touring-the-admin-panel}
+# Menjelajah Panel Admin
 
 Ultimate Multisite bertujuan untuk menjadi sesederhana dan sejelas mungkin, tetapi dengan alat yang sekuat ini, lawatan berpandu boleh membantu. Mari kita telusuri halaman admin untuk membantu anda membiasakan diri.
 

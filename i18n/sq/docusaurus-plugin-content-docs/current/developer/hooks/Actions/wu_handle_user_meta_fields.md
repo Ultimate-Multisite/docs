@@ -4,7 +4,7 @@ title: Veprim - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Veprim: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Veprim: wu_handle_user_meta_fields
 
 Lejoni zhvilluesit e plugin të ruajnë të dhënat meta të përdoruesit në mënyra të ndryshme nëse u nevojitet.
 

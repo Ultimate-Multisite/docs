@@ -3,7 +3,7 @@ title: Nedgradering af en plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedgradering af en plan (v2) {#downgrading-a-plan-v2}
+# Nedgradering af en plan (v2)
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

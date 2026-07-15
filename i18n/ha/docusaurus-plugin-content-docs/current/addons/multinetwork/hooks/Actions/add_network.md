@@ -4,7 +4,7 @@ title: Aiki - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Aiki: add_network {#action-addnetwork}
+# Aiki: add_network
 
 Yana aiki bayan an ƙara sabuwar cibiyar sadarwa.
 

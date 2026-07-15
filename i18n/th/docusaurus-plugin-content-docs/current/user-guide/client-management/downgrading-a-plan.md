@@ -3,7 +3,7 @@ title: การดาวน์เกรดแผน
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# การดาวน์เกรดแผน (v2) {#downgrading-a-plan-v2}
+# การดาวน์เกรดแผน (v2)
 
 _**หมายเหตุสำคัญ: บทความนี้อ้างอิงถึง Ultimate Multisite เวอร์ชัน 2.x**_
 

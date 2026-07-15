@@ -3,7 +3,7 @@ title: Wakiillo ku-dhex-jira
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents-ka Ku-dhex-jira {#built-in-agents}
+# Agents-ka Ku-dhex-jira
 
 Gratis AI Agent v1.9.0 wuxuu la yimaadaa shan agents oo ku-dhex-jira, mid kasta waxaa horay loogu habeeyey qalab diiradda saaraya, system prompt la habeeyey, iyo talooyin bilow ah oo ku habboon hawlaha caadiga ah ee aaggaas. U kala wareegidda agents-ku waxay beddeshaa waxa assistant-ku samayn karo iyo sida uu uga jawaabo — adigoon wax configuration ah samayn. Superdav AI Agent v1.18.0 wuxuu workflows-kan ku dari karaa qalabyo schedule-aware ah, diiwaannada xusuusinta, approval gates, iyo ogeysiisyada SMS marka integrations-ka la xiriira la habeeyo.
 

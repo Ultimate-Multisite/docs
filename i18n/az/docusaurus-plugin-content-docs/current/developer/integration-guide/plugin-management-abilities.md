@@ -3,7 +3,7 @@ title: Plugin İdarəetmə Bacarıqları
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Yönetimi Qabiliyyətləri {#plugin-management-abilities}
+# Plugin Yönetimi Qabiliyyətləri
 
 Gratis AI Agent v1.5.0, AI köməkçisinin söhbət zamanı çağırış edə biləcəyi **7 plugin yönetimi qabiliyyəti** ilə birlikdə gəlir. Bu qabiliyyətlər, [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) vasitəsilə quraşdırılmış WordPress pluginləri üzərində proqramlaşdırılmış nəzarət təmin edir.
 

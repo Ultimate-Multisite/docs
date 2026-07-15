@@ -4,7 +4,7 @@ title: Tindakan - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Tindakan: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Tindakan: wp_ultimo_site_exporter_activation
 
 Biarkan bahagian lain plugin ini menyambungkan rutin mereka untuk pengaktifan.
 

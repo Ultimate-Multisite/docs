@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite jẹ àfikún WordPress Multisite tí ó jẹ́ kí o lè fún àwọn oníbàárà ní WaaS tàbí Websites as a Service. Ṣáájú kí a tó wọ inú rẹ̀ kí a sì kọ́ bí Ultimate Multisite ṣe lè ran iṣẹ́ ajé rẹ àti àwọn oníbàárà lọ́wọ́, ìmọ̀ ìpilẹ̀ kan wà tí a ní láti ní.
 

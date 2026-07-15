@@ -3,7 +3,7 @@ title: ಸೈಟ್ ಸ್ಪೆಸಿಫಿಕೇಶನ್ ಕೌಶಲ್ಯ
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 **Site Specification skill** ಎನ್ನುವುದು ನಿಮ್ಮ ಸೈಟ್‌ನ ಗುರಿಗಳು, ಪ್ರೇಕ್ಷಕರು ಮತ್ತು ಬ್ರ್ಯಾಂಡ್ ಗುರುತನ್ನು ದಾಖಲಿಸಲು ಇರುವ ಒಂದು ರಚನಾತ್ಮಕ ವಿಧಾನ. ಈ ಮಾಹಿತಿಯನ್ನು ನಿಮ್ಮ **site_brief** ನೆನಪಿನಲ್ಲಿ (memory) ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ಏಜೆಂಟ್‌ಗಳು ಈ site_brief ಅನ್ನು ವಿವಿಧ ಸೆಷನ್‌ಗಳಲ್ಲಿ ಉಲ್ಲೇಖಿಸುತ್ತವೆ, ಇದರಿಂದ ಸ್ಥಿರವಾದ ಮತ್ತು ಸಂದರ್ಭಕ್ಕೆ ತಕ್ಕ ಸಹಾಯ ಸಿಗುತ್ತದೆ.
 

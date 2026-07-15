@@ -3,7 +3,7 @@ title: वापर आधारित योजना बदलांचा इ
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Changelog {#metered-plans-changelog}
+# Metered Plans Changelog
 
 Version 1.1.0 - Released on 2026-05-05
 - New: मल्टीसाइट सबसाइट्ससाठी AI टोकन बिलिंग — ग्राहकांच्या साइट्सवर AI टोकनचा वापर ट्रॅक करा आणि बिल करा, ज्यासाठी प्रति-टोकन दर (per-token rates) सेट करता येतात.

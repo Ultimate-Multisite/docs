@@ -3,7 +3,7 @@ title: Tutustumishaastattelu
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery-haastattelu {#discovery-interview}
+# Discovery-haastattelu
 
 **Discovery-haastattelu** on ensimmäinen vaihe Theme Builderin suunnitteluprosessissa. Se kerää tietoja sivustostasi, yrityksestäsi ja suunnittelumieltymyksistäsi personoidun teeman luomiseksi.
 

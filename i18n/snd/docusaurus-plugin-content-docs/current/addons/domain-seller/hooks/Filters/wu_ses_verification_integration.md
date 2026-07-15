@@ -4,7 +4,7 @@ title: فلٽر - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# فلٽر: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# فلٽر: wu_ses_verification_integration
 
 فلٽر: ٻئي ڪوڊ کي SES انٽيگريشن شئي فراهم ڪرڻ جي اجازت ڏيو.
 

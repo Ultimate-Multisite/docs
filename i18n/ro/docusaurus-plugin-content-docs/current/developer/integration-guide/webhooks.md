@@ -3,7 +3,7 @@ title: Gestionarea Webhook-urilor
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gestionarea Webhook-urilor {#webhook-handling}
+# Gestionarea Webhook-urilor
 
 Creați puncte de intrare (endpoints) webhook personalizate pentru a primi evenimente de la servicii externe și pentru a sincroniza datele cu Ultimate Multisite.
 

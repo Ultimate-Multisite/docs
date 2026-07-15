@@ -4,7 +4,7 @@ title: Φίλτρο - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Φίλτρο: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Φίλτρο: wu_should_create_domain_record_for_site
 
 Φιλτράρει αν το Ultimate Multisite θα πρέπει να δημιουργήσει μια εγγραφή domain για έναν νεοδημιουργημένο ιστότοπο.
 

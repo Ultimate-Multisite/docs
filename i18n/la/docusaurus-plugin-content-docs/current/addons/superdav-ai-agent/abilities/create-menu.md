@@ -3,7 +3,7 @@ title: Crea tabulam electionum
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menu Creare {#create-menu}
+# Menu Creare
 
 Facultas **Menu Creare** indices navigationis WordPress creat cum subsidio inscriptionum navigationis distinctarum a titulis paginarum separatarum.
 

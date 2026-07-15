@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Action: wu_domain_ses_verified {#action-wudomainsesverified}
+# Action: wu_domain_ses_verified
 
 ដំណើរការ​នៅពេល SES បញ្ជាក់ថា domain ត្រូវបាន​ផ្ទៀងផ្ទាត់ DKIM។
 

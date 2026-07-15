@@ -3,7 +3,7 @@ title: Carian Domain Pengepala
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Carian Domain Header {#header-domain-search}
+# Carian Domain Header
 
 Gunakan tetapan ini apabila anda mahu borang header kecil yang memulakan carian domain, kemudian membolehkan pelanggan memilih daripada domain yang tersedia dalam checkout Ultimate Multisite.
 

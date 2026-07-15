@@ -3,7 +3,7 @@ title: Webhook ကိုင်တွယ်ခြင်း
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ကို စီမံခန့်ခွဲခြင်း {#webhook-handling}
+# Webhook ကို စီမံခန့်ခွဲခြင်း
 
 အပြင်ဘက် ဝန်ဆောင်မှုများမှ ဖြစ်ပေါ်လာသည့် အဖြစ်အပျက်များကို လက်ခံရယူပြီး Ultimate Multisite နှင့် အချက်အလက်များကို ပေါင်းစပ်ရန်အတွက် custom webhook endpoints များကို ဖန်တီးပါ။
 

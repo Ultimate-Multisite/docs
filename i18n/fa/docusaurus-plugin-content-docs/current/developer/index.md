@@ -3,7 +3,7 @@ title: مستندات توسعه‌دهنده
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# مستندات توسعه‌دهنده {#developer-documentation}
+# مستندات توسعه‌دهنده
 
 این راهنما تمام آنچه را که توسعه‌دهندگان برای ادغام، گسترش یا توسعه افزونه‌های جانبی (addon) برای Ultimate Multisite نیاز دارند، فراهم می‌کند. Ultimate Multisite یک شبکه WordPress Multisite را به یک پلتفرم وب‌سایت به عنوان سرویس (WaaS) تبدیل می‌کند.
 

@@ -3,7 +3,7 @@ title: Veštine s obzirom na temu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Veštine s obzirom na temu (Theme-Aware Skills) {#theme-aware-skills}
+# Veštine s obzirom na temu (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 dolazi sa četiri nove ugrađene veštine koje su prilagođene temi koju trenutno koristite u WordPressu. Ove veštine pružaju specijalizovanov savet i mogućnosti prilagođene arhitekturi i karakteristikama vaše teme.
 

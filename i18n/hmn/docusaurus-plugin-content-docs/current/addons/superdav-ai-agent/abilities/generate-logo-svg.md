@@ -3,7 +3,7 @@ title: Tsim Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Tsim Logo SVG {#generate-logo-svg}
+# Tsim Logo SVG
 
 Lub peev xwm **Tsim Logo SVG** tso cai rau Theme Builder tsim thiab ntxig cov logo SVG uas kho raws koj xav tau ncaj qha rau hauv koj lub WordPress site nrog kev sanitisation uas nyab xeeb rau namespace yam tsis siv tes.
 

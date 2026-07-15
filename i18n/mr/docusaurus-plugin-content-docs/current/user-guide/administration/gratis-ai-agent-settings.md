@@ -3,7 +3,7 @@ title: Gratis AI Agent सेटिंग्ज
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent सेटिंग्ज {#gratis-ai-agent-settings}
+# Gratis AI Agent सेटिंग्ज
 
 Gratis AI Agent मधील **सेटिंग्ज → प्रगत** स्क्रीन backend एकत्रीकरणांसाठी प्रशासक-स्तरीय कॉन्फिगरेशन पुरवते. हे पृष्ठ feedback पुढे पाठवणे, शोध प्रदाता कळा, managed Superdav सेवा सेटअप, Google Calendar नियंत्रण, TextBee SMS सेटिंग्ज, आणि नेटवर्क-व्यापी वैशिष्ट्य ध्वज यांचे दस्तऐवजीकरण करते.
 

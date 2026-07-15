@@ -3,7 +3,7 @@ title: Kutuma Barua Pepe na Matangazo
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kutuma Barua Pepe na Matangazo (v2) {#sending-emails-and-broadcasts-v2}
+# Kutuma Barua Pepe na Matangazo (v2)
 
 _**KUMBUKA MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 

@@ -3,7 +3,7 @@ title: cPanel integreerimine
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integratsioon cPaneliga {#cpanel-integration}
+# Integratsioon cPaneliga
 
 ## Üldine ülevaade {#overview}
 cPanel on üks populaarseid veebihlasterhoone kontrollpaneeleid, mida kasutavad paljud shared ja dedicated hoone pakkujad. See integratsioon võimaldab automaatselt domeenide sünkroonimist Ultimate Multisite'i ja cPanel-i vahel, mis võimaldab teil domeenide aliasid ja subdomeene automaatselt lisada oma cPanel kontole.

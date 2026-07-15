@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Am ystyriedd ar Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Am ystyriedd ar Webhooks (v2)
 
 _**Gofalwg: Rhowdd ystafell honno neu'r ail-gwrnion yw ar gyferau cyflwynoedd uchel.**_
 

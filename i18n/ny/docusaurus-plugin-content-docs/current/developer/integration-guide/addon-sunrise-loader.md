@@ -3,7 +3,7 @@ title: Chowonjezera Chonyamula Fayilo ya Sunrise
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Chotsegulira Fayilo ya Sunrise ya Chowonjezera {#addon-sunrise-file-loader}
+# Chotsegulira Fayilo ya Sunrise ya Chowonjezera
 
 Ultimate Multisite 2.8.0 imawonjezera chotsegulira chowonjezera cha sunrise cha zowonjezera ndi ma integration a MU-plugin okhazikitsidwa mwamakonda omwe ayenera kuyenda pa nthawi ya WordPress sunrise bootstrapping popanda kusintha fayilo ya `wp-content/sunrise.php` yopangidwa.
 

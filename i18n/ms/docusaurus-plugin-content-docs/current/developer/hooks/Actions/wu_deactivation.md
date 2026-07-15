@@ -4,7 +4,7 @@ title: Tindakan - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Tindakan: wu_deactivation {#action-wudeactivation}
+# Tindakan: wu_deactivation
 
 Membenarkan bahagian lain plugin melampirkan fungsi mereka untuk penyahaktifan
 

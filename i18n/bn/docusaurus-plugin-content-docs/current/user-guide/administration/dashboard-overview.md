@@ -3,7 +3,7 @@ title: ড্যাশবোর্ড ওভারভিউ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ড্যাশবোর্ড পরিচিতি {#dashboard-overview}
+# ড্যাশবোর্ড পরিচিতি
 
 Ultimate Multisite-এর নিজস্ব একটি **Dashboard** আছে যা Ultimate Multisite মেনুর অধীনে পাবেন, পাশাপাশি Network Dashboard-এও কিছু উইজেট যোগ করা হয়। এই আর্টিকেলে দুটি জায়গায় কী কী দেখতে পাবেন তা নিয়ে আলোচনা করা হবে।
 

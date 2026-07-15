@@ -4,7 +4,7 @@ title: Aksyon - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Action: wu_after_switch_template
 
 Pahintulutan ang mga developer ng plugin na mag-hook ng mga function pagkatapos lumipat ng template ng site ang isang user o super admin
 

@@ -3,7 +3,7 @@ title: GitHub-fragmenten
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Hoe je Ultimate Multisite snippets gebruikt op onze GitHub repository {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Hoe je Ultimate Multisite snippets gebruikt op onze GitHub repository
 
 Er zijn code snippets beschikbaar in de GitHub repository die vaak worden aangevraagd door Ultimate Multisite-gebruikers die kleine functionaliteiten willen toevoegen, zoals het toevoegen van een Google Analytics-script op aanmeldpagina's of het verbergen van een metabox uit het admin dashboard.
 
@@ -19,7 +19,7 @@ Er zijn 2 manieren om de code toe te voegen
 
   2. Must-Use Plugins (mu-plugins)
 
-# Hoe je de snippet toevoegt aan het functions.php-bestand van je theme. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Hoe je de snippet toevoegt aan het functions.php-bestand van je theme.
 
   1. Log in op je WordPress Network admin dashboard en ga naar Themes >Theme Editor (zie screenshot hieronder).
 
@@ -29,7 +29,7 @@ Er zijn 2 manieren om de code toe te voegen
 
 <!-- Screenshot niet beschikbaar: WordPress Theme Editor die het bewerken van het functions.php-bestand toont -->
 
-# Hoe je Must-Use Plugins (mu-plugins) maakt {#how-to-create-must-use-plugins-mu-plugins}
+# Hoe je Must-Use Plugins (mu-plugins) maakt
 
 WordPress heeft een functie waarmee je aangepaste functionaliteit kunt laden, genaamd "Must-Use Plugins", of kortweg "mu-plugins".
 

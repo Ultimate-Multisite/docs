@@ -3,7 +3,7 @@ title: Domeintoewijzing configureren
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domeinmapping configureren (v2) {#how-to-configure-domain-mapping-v2}
+# Domeinmapping configureren (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

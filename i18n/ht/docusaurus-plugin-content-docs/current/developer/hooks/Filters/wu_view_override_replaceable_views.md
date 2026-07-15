@@ -4,7 +4,7 @@ title: Filtè - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtre: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtre: wu_view_override_replaceable_views
 
 Pèmèt devlopè yo ajoute dosye anplis nan lis ki ka ranplase a.
 

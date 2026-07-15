@@ -4,7 +4,7 @@ title: Gnìomh - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Gnìomh: wu_page_load {#action-wupageload}
+# Gnìomh: wu_page_load
 
 Leig le luchd-leasachaidh plugin dubhan a bharrachd a chur ris na duilleagan againn.
 

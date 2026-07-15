@@ -3,7 +3,7 @@ title: Gukoresha uburyo bwo gushaka ku Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Urugero mu Ubwumwebwe (Internet Search) {#internet-search}
+# Urugero mu Ubwumwebwe (Internet Search)
 
 Gratis AI Agent v1.5.0 yagira ubushobozi bwo gukoresha **Internet Search** (Ubwumwebwe bw'ubwumwebwe) kuko yagira uburyo bwo gutangira umuntu w'ubwumwebwe ku rwego rwa kera mu gihe cy'umuryango. Icyo ni cyitwa n'ubushobozi bwa [Brave Search API](https://brave.com/search/api/) cyangwa [Tavily API](https://tavily.com/).
 

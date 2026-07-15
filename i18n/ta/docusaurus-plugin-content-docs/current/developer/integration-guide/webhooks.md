@@ -3,7 +3,7 @@ title: வெப்ஹூக் கையாளுதல்
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# வெப்ஹூக் கையாளுதல் {#webhook-handling}
+# வெப்ஹூக் கையாளுதல்
 
 வெளிப்புற சேவைகளிலிருந்து (external services) வரும் நிகழ்வுகளை (events) பெறவும், Ultimate Multisite உடன் தரவை ஒத்திசைக்கவும் (sync) தனிப்பயன் வெப்ஹூக் எண்ட்பாயிண்ட்களை உருவாக்கவும்.
 

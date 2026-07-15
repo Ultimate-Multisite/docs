@@ -3,7 +3,7 @@ title: Seznámení s administračním panelem
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Prohlídka panelu správce {#touring-the-admin-panel}
+# Prohlídka panelu správce
 
 Ultimate Multisite se snaží být co nejjednodušší a nejsrozumitelnější, ale u takto výkonného nástroje může pomoci komentovaná prohlídka. Projděme si stránky správy, abyste se zorientovali.
 

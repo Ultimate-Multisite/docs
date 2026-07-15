@@ -3,7 +3,7 @@ title: Wizard Persediaan Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Wizard Persediaan Multisite {#multisite-setup-wizard}
+# Wizard Persediaan Multisite
 
 Ultimate Multisite dilengkapi dengan wizard terbina dalam yang menukar pemasangan WordPress standard kepada rangkaian WordPress Multisite secara automatik. Ini menghapuskan keperluan untuk mengedit `wp-config.php` secara manual atau menjalankan arahan pangkalan data.
 

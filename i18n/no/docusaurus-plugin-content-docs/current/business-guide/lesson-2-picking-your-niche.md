@@ -3,7 +3,7 @@ title: 'Leksjon 2: Velge din nisje'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leksjon 2: Velge din nisje {#lesson-2-picking-your-niche}
+# Leksjon 2: Velge din nisje
 
 I Leksjon 1 etablerte vi hvorfor nisje slår generisk. Nå må du velge din egen. Denne leksjonen gir deg et rammeverk for å finne og validere en nisje før du investerer tid i å bygge for den.
 

@@ -3,7 +3,7 @@ title: Registro de alterações dos Planos medidos
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Changelog dos Planos Medidos {#metered-plans-changelog}
+# Changelog dos Planos Medidos
 
 Versão 1.1.0 - Lançada em 2026-05-05
 - Novo: cobrança de tokens de AI para subsites multisite — acompanhe e cobre o uso de tokens de AI em sites de clientes com tarifas configuráveis por token

@@ -4,7 +4,7 @@ title: Sefa - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Fyuluta: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Fyuluta: wu_element_maybe_extract_arguments
 
 Imawonjezera fyuluta wamba kuti ilole opanga mapulogalamu kukulitsa parser iyi kuti igwire ntchito ndi omanga kapena mapulagini owonjezera.
 

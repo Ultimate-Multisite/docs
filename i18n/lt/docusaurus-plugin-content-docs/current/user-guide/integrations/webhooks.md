@@ -3,7 +3,7 @@ title: Webhookai
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhookai pagrindinis vaizdas (v2) {#a-first-look-on-webhooks-v2}
+# Webhookai pagrindinis vaizdas (v2)
 
 _**PAŽYMĖ: Ši funkcija arba straipsnis skirti pažangos vartotojams.**_
 

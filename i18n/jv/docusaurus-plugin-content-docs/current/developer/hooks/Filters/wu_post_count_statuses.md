@@ -4,7 +4,7 @@ title: Saringan - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Ngidini pangembang piranti tambahan ngganti status kiriman endi sing kudu dietung. Kanthi gawan, kiriman sing wis diterbitake lan kiriman pribadi dietung
 

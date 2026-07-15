@@ -3,7 +3,7 @@ title: WordPress Multisite nireň nädip kurmak?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-i Nasıl Kurulur? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite-i Nasıl Kurulur?
 
 WordPress Multisite, tek bir kurulumda sitelerden oluşan bir ağ oluşturmanıza olanak tanır. Bu, yerleşik bir özelliktir ancak varsayılan olarak aktif değildir.
 
@@ -57,7 +57,7 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index.php$ - [L]
 
-# wp-admin'e sonuna eğik çizgi (trailing slash) ekle {#add-a-trailing-slash-to-wp-admin}
+# wp-admin'e sonuna eğik çizgi (trailing slash) ekle
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

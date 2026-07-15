@@ -3,7 +3,7 @@ title: Wbudowani agenci
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Wbudowani agenci {#built-in-agents}
+# Wbudowani agenci
 
 Gratis AI Agent v1.9.0 zawiera pięciu wbudowanych agentów, z których każdy jest wstępnie skonfigurowany z ukierunkowanym zestawem narzędzi, dopasowanym promptem systemowym oraz sugestiami startowymi odpowiadającymi typowym zadaniom w danym obszarze. Przełączanie między agentami zmienia to, co asystent może zrobić i jak odpowiada — bez żadnej konfiguracji z Twojej strony. Superdav AI Agent v1.18.0 może dodać do tych przepływów pracy narzędzia uwzględniające harmonogram, rekordy przypomnień, bramki zatwierdzania oraz powiadomienia SMS, gdy powiązane integracje są skonfigurowane.
 

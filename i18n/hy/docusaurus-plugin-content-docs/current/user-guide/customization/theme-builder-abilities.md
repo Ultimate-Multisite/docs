@@ -3,7 +3,7 @@ title: Թեմայի կառուցման հնարավորություններ
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder ունակություններ. Block Themes ստեղծում և ակտիվացում {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder ունակություններ. Block Themes ստեղծում և ակտիվացում
 
 Superdav AI Agent v1.12.0-ը ներկայացնում է երկու հզոր ունակություն, որոնք թույլ են տալիս ձեզ ուղղակի չատի միջոցով ստեղծել և տեղադրել սահմանված բլոկային թեմաներ։
 

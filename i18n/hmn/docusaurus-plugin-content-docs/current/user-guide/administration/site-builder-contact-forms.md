@@ -3,7 +3,7 @@ title: Txhua qhov chaw tsim cov ntawv xpost (Site Builder Contact Forms)
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# ຜູ້ສ້າງເວັບໄຊທ໌ແບບຕິດຕໍ່ (Site Builder Contact Forms) {#site-builder-contact-forms}
+# ຜູ້ສ້າງເວັບໄຊທ໌ແບບຕິດຕໍ່ (Site Builder Contact Forms)
 
 Superdav AI Agent v1.10.0 ເພີ່ມຄວາມສາມາດໃນການສ້າງແບບຟອມຕິດຕໍ່ໂດຍກົງຈາກໜ້າສົນທະນາ (chat interface) ໂດຍໃຊ້ Site Builder agent. ນີ້ເຮັດໃຫ້ເຈົ້າສາມາດເພີ່ມແບບຟອມຕິດຕໍ່ທີ່ເຮັດວຽກໄດ້ເຕັມຮູບແບບໃສ່ໜ້າໃດໆໂດຍບໍ່ຕ້ອງອອກຈາກການສົນທະນາເລີຍ.
 

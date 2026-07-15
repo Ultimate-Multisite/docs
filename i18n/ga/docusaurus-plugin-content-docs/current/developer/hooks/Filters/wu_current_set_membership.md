@@ -4,7 +4,7 @@ title: Scagaire - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Scagaire: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Scagaire: wu_current_set_membership
 
 Lig d’fhorbróirí an t-iompar réamhshocraithe a mhodhnú agus an bhallraíocht reatha a shocrú ar bhealach difriúil.
 

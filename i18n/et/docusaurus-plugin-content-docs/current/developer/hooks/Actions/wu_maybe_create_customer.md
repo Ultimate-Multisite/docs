@@ -4,7 +4,7 @@ title: Toiming - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Tegevus: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Tegevus: wu_maybe_create_customer
 
 Võimalda plugina arendajatel teha lisatoiminguid, kui klient lisatakse.
 

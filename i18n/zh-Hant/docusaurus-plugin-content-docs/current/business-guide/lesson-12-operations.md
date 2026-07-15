@@ -3,7 +3,7 @@ title: 第 12 課：經營業務
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 第 12 課：經營業務 {#lesson-12-running-the-business}
+# 第 12 課：經營業務
 
 平台不是一個可以完成的專案，它是一個需要持續經營的業務。本課將涵蓋管理 FitSite 的日常營運工作：支援、帳單、維護，以及如何讓客戶保持滿意。
 

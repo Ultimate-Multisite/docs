@@ -4,7 +4,7 @@ title: Akcja - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Akcja: wu_domain_created {#action-wudomaincreated}
+# Akcja: wu_domain_created
 
 Aktywuje się, gdy dodane zostanie nowe mapowanie domeny.
 

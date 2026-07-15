@@ -3,7 +3,7 @@ title: Ultimate AI Connector per WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Changelog di Ultimate AI Connector per WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Changelog di Ultimate AI Connector per WebLLM
 
 ## Versione 1.1.0 — Rilasciata il 2026-04-09 {#version-110--released-on-2026-04-09}
 

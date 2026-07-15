@@ -4,7 +4,7 @@ title: Filter - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filter: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filter: wu_password_require_uppercase
 
 പാസ്‌വേഡുകളിൽ അപ്പക്കെയ്‌സ് അക്ഷരങ്ങൾ നിർബന്ധമാക്കണോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

@@ -3,7 +3,7 @@ title: Integrációs útmutató
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrációs útmutató {#integration-guide}
+# Integrációs útmutató
 
 Ez az útmutató az Ultimate Multisite gyakori integrációs mintáit mutatja be, beleértve a külső szolgáltatásokhoz való csatlakozást, az egyéni fizetési gateway-ek építését és a webhookok kezelését.
 

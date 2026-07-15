@@ -3,7 +3,7 @@ title: Addon Sunrise вчитувач на датотеки
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 додава вчитувач на sunrise екстензии за додатоци и прилагодени MU-plugin интеграции што треба да се извршуваат за време на WordPress sunrise подигнувањето без уредување на генерираната датотека `wp-content/sunrise.php`.
 

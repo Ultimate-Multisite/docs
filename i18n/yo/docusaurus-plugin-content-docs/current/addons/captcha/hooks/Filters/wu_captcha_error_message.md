@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Àlẹmọ: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# Àlẹmọ: wu_captcha_error_message
 
 Ṣe àlẹmọ ìfiránṣẹ́ àṣìṣe captcha náà.
 

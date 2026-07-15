@@ -4,7 +4,7 @@ title: Զտիչ - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Զտիչ: wu_admin_notices {#filter-wuadminnotices}
+# Զտիչ: wu_admin_notices
 
 Թույլ է տալիս մշակողներին զտել Ultimate Multisite-ի կողմից ավելացված ադմինիստրատորի ծանուցումները։
 

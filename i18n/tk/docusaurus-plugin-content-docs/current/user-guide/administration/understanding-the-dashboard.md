@@ -3,7 +3,7 @@ title: Dashboardyň düşündirilmegi
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboardyňy Bilmek {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboardyňy Bilmek
 
 Ultimate Multisite-yň has amatly weşaralara we işlemek arkaly özüni gurluşlaryna çökdüginden önce, dashboardy baklap boursak.
 

@@ -3,7 +3,7 @@ title: Доступ до сторінки облікового запису
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Як уперше потрапити на сторінку свого акаунта? {#how-can-i-access-my-account-page-for-the-first-time}
+# Як уперше потрапити на сторінку свого акаунта?
 
 Вітаємо в Ultimate Multisite!
 

@@ -4,7 +4,7 @@ title: Филтър - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Филтър: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Филтър: wu_get_migration_steps
 
 Позволява на разработчиците и аддоновете да добавят нови стъпки за миграция
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# เอกสาร Ultimate Multisite {#ultimate-multisite-documentation}
+# เอกสาร Ultimate Multisite
 
 ยินดีต้อนรับสู่เอกสาร Ultimate Multisite. Ultimate Multisite เปลี่ยน WordPress Multisite ให้เป็นแพลตฟอร์ม Website as a Service (WaaS) เต็มรูปแบบ
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 เอกสารอ้างอิงทางเทคนิคสำหรับนักพัฒนาที่ต้องการสร้างระบบบน Ultimate Multisite รวมถึง reference ของ hooks, เอกสาร REST API, และคู่มือการพัฒนา addon
 
-### [Addons](/addons) {#addons}
+### [ส่วนเสริม](/addons) {#addons}
 
 เอกสารสำหรับปลั๊กอิน addon แบบเสียเงิน ที่ช่วยขยายขีดความสามารถของ Ultimate Multisite ด้วยฟีเจอร์เพิ่มเติม เช่น การรวมระบบ WooCommerce, analytics, การขายโดเมน, และอื่น ๆ
 

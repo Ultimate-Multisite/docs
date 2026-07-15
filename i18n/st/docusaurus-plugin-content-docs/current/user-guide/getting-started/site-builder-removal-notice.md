@@ -3,7 +3,7 @@ title: Ho lona le lona la ho fihla haholo
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Lihloboho Ho Morero Ho Site Builder Mode {#site-builder-mode-removal-notice}
+# Lihloboho Ho Morero Ho Site Builder Mode
 
 **Site Builder mode ha a tsela Superdav AI Agent v1.12.0.** Ha u le ba u na le Site Builder mode, u ka na le **Setup Assistant agent** ho ho fana ea ho fetola theme le ho set up site.
 

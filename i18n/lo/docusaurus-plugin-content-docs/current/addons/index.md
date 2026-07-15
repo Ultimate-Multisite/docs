@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# ສ່ວນເສີມ Ultimate Multisite {#ultimate-multisite-addons}
+# ສ່ວນເສີມ Ultimate Multisite
 
 ສ່ວນເສີມຊ່ວຍຂະຫຍາຍ Ultimate Multisite ດ້ວຍຄຸນສົມບັດແລະການເຊື່ອມຕໍ່ເພີ່ມເຕີມ. ສ່ວນເສີມສ່ວນໃຫຍ່ເປັນແບບຈ່າຍເງິນ ແລະສາມາດຊື້ໄດ້ຈາກ [ultimatemultisite.com](https://ultimatemultisite.com).
 

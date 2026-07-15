@@ -4,7 +4,7 @@ title: การดำเนินการ - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Action: wu_duplicate_site {#action-wuduplicatesite}
+# Action: wu_duplicate_site
 
 ใช้สำหรับให้นักพัฒนาสามารถเพิ่มโค้ด (hook) เข้าไปได้ หลังจากที่ระบบทำการทำซ้ำไซต์ (site duplication) เสร็จสมบูรณ์แล้ว
 

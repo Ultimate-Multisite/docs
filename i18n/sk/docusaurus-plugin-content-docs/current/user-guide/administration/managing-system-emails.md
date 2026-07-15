@@ -3,7 +3,7 @@ title: Správa e-mailov systému
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Správa systémových e-mailov {#managing-system-emails}
+# Správa systémových e-mailov
 
 Ultimate Multisite posiela rôzne systémové e-maily pre udalosti ako potvrdenia o registrácii, potvrdenia o platbe a zmeny členstva. Môžete si tieto šablóny e-mailov prispôsobiť na odpoveď vašej značky.
 

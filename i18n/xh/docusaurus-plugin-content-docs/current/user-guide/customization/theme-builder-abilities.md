@@ -3,7 +3,7 @@ title: Izakhono ze-Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Izakhono ze Theme Builder: Ukuseka nokuvula imixholo yeebhloko {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Izakhono ze Theme Builder: Ukuseka nokuvula imixholo yeebhloko
 
 Superdav AI Agent v1.12.0 yazisa izakhono ezimbini ezinamandla ezikuvumela ukuba uvelise kwaye usasaze imixholo yeebhloko eyenzelwe wena ngqo kujongano lwencoko.
 

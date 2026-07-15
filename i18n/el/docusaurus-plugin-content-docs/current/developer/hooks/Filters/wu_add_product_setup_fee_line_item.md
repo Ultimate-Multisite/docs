@@ -4,7 +4,7 @@ title: Φίλτρο - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Φίλτρο: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
+# Φίλτρο: wu_add_product_setup_fee_line_item
 
 Επιτρέπει στους developers να κάνουν αλλαγές στο στοιχείο γραμμής που αφορά το τέλος ρύθμισης.
 

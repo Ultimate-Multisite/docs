@@ -3,7 +3,7 @@ title: Còmhlaid bheachd ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integration le ServerPilot {#serverpilot-integration}
+# Integration le ServerPilot
 
 ## Aims (Overview) {#overview}
 ServerPilot is seilbhleachd cloud service airson hoste WordPress agus e-sitei PHP eile ar serveran de DigitalOcean, Amazon, Google, no bith eile. Tha an sinneadh seo a' toirt am fhaighinn a' chàrach (domain syncing) agus leithid certficatean SSL gu mathdòr beò (SSL certificate management) a' chàrachd air Ultimate Multisite agus ServerPilot.

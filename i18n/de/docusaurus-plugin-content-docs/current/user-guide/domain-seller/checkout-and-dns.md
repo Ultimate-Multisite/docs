@@ -3,7 +3,7 @@ title: Kassenfeld und Kunden-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout-Feld und Kunden-DNS-Verwaltung {#checkout-field-and-customer-dns-management}
+# Checkout-Feld und Kunden-DNS-Verwaltung
 
 ## Das Checkout-Feld Domain-Auswahl {#the-domain-selection-checkout-field}
 

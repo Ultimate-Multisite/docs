@@ -3,7 +3,7 @@ title: Come li tawn abonament
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Comef? Comef il mio abbonament? {#how-can-i-cancel-my-subscription}
+# Comef? Comef il mio abbonament?
 
 Se hai una licenza Ultimate Multisite, puoi annullare il rinnovo in qualsiasi momento tu voglia. Basta seguire questi passaggi:
 

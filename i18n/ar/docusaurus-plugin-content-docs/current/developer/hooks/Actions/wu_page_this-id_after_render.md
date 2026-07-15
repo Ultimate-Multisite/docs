@@ -4,7 +4,7 @@ title: 'الإجراء - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# إجراء: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
+# إجراء: wu_page_\{$this->id\}_after_render
 
 السماح لمطوري الإضافات بإضافة محتوى إضافي بعد طباعة الصفحة
 

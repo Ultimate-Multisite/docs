@@ -3,7 +3,7 @@ title: Costruire un'integrazione di Registrar personalizzata
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Creare un'integrazione di Registrar personalizzata {#building-a-custom-registrar-integration}
+# Creare un'integrazione di Registrar personalizzata
 
 Il plugin Domain Seller utilizza un pattern chiamato **Integration Registry**. Ogni registrar è una classe PHP che implementa `Domain_Selling_Capability` e si registra tramite l'action hook `wu_domain_seller_register_capabilities`.
 

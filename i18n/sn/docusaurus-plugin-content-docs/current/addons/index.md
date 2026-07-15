@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Zvekuwedzera zveUltimate Multisite {#ultimate-multisite-addons}
+# Zvekuwedzera zveUltimate Multisite
 
 Zvekuwedzera zvinowedzera Ultimate Multisite nezvimwe zvinhu uye kubatanidzwa. Zvekuwedzera zvakawanda zvinobhadharwa uye zvinogona kutengwa kubva ku[ultimatemultisite.com](https://ultimatemultisite.com).
 

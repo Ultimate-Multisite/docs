@@ -4,7 +4,7 @@ title: Çalakî - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Çalakî: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Çalakî: wu_domain_registration_failed
 
 Piştî ku hewildana qeydkirina domenê têk diçe, tê xebitandin.
 

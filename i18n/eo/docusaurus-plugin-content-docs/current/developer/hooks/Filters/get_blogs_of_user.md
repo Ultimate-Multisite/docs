@@ -4,7 +4,7 @@ title: Filtrilo - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filtrilo: get_blogs_of_user {#filter-getblogsofuser}
+# Filtrilo: get_blogs_of_user
 
 Reproduktas la originalan WP-filtrilon ĉi tie, por bona mezuro.
 

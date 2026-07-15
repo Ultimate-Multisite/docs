@@ -3,7 +3,7 @@ title: Üyeliğin Sona Ermesi ve Sayt Bloklama
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Üyeliğin Sona Ermesi ve Sayt Bloklanması {#membership-expiration-and-site-blocking}
+# Üyeliğin Sona Ermesi ve Sayt Bloklanması
 
 Bu bölümde, Ultimate Multisite'ta üyeliklerin ne zaman sona ereceğini ve sitenizin nasıl bloke edilebileceğini anlatacağız. Bu ayarları doğru yapmak, hem kullanıcı deneyimi hem de güvenlik açısından çok önemlidir.
 
@@ -62,7 +62,7 @@ Ultimate Multisite'täk her bir üyelikda birinchi quyidagi holatlardan birida b
 
 بێ گۆڕان ئەندامیتە ئازاد بە شێوەیەکی ئۆتۆماتیک وەک کاتی کۆتایی نایگۆڕێن. Ultimate Multisite ئەمە وەک دەستگەیشتنی بۆ ماوەیەکی تەواو (lifetime access) دەبینێت، بۆیە لە کاتی چاککردنەوەی کارکردنەکەدا (expiration checks) یان ئەگەر بەڕێوەبەری ئەو شێوازە بگۆڕیت یان کڕیارەکەت بۆ بەرنامەیەکی دیکە بدەیت، لەو لیستەدا نییە.
 
-# Ultimate Multisite: WordPress Documentation {#block-frontend-access}
+# Ultimate Multisite: WordPress Documentation
 
 ## Introduction {#configuring-the-setting}
 

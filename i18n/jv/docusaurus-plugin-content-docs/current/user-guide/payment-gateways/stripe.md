@@ -3,7 +3,7 @@ title: Ngatur Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ngatur Gateway Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Ngatur Gateway Stripe (v2)
 
 _**CATATAN PENTING: Artikel iki merujuk pada Ultimate Multisite versi 2.x.**_
 

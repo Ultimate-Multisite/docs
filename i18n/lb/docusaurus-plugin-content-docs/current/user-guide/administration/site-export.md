@@ -3,7 +3,7 @@ title: Site-Export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export {#site-export}
+# Site Export
 
 D'Admin-Siite Export-siite laatet Ihnen, e Netzwerkinadministrator chann eis Siite oder s'ganze Netz in en nachladbare Archiv für Migration, Backup oder Übernahmearbeit z'packe.
 

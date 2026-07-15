@@ -3,7 +3,7 @@ title: پنهنجو پهرين سبسکرپشن پروڊڪٽ کي ٺاهڻ
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# توهان جو پہلا سبسکرپشن پروڊڪٽ (v2) ٺاهڻ {#creating-your-first-subscription-product-v2}
+# توهان جو پہلا سبسکرپشن پروڊڪٽ (v2) ٺاهڻ
 
 _**IMPORTANT NOTE: هي مضمون صرف Ultimate Multisite جو version 2.x استعمال ڪندڙن لاءِ آهي. جيڪڏهن توهان version 1.x استعمال ڪري رهيا آهيو،**_ **_هي مضمون ڏسو**_**.
 

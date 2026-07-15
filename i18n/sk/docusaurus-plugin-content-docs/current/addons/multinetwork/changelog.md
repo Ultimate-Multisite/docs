@@ -3,7 +3,7 @@ title: Zoznam zmien pre viacero sietí
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Zoznam zmien Multi-Network {#multi-network-changelog}
+# Zoznam zmien Multi-Network
 
 ### 1.3.0 {#130}
 * Nové: Náhľadávač sieťových šablón — prehliadajte a zobrazujte náhľady sieťových šablón so živým panelom pred nákupom.

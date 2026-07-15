@@ -3,7 +3,7 @@ title: Tema izvēlnes procesa
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 ieviest jums ir vadīts **Theme Builder onboarding flow**, kas palīdz jums izveidot personizētu bloku tēmu pirmajā iestatījumos. Tas aizstāj senā Site Builder režīmu ar vairāk elastīvu, agenta palīdzamais pieeju.
 

@@ -3,7 +3,7 @@ title: Мәгълүмат җирле системаны куллану wizardsы
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Мультисайт Нарды (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Мультисайт Нарды (Multisite Setup Wizard)
 
 Бу документте WordPress-те мультисайтны настройка процессче турында сөйләшәбез. Бу wizards (нардылар) булыргач, сапсы ачыклачак һәм сиздергә тулы ярдәм итәчәк.
 

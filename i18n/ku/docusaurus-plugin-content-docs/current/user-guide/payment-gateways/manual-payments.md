@@ -3,7 +3,7 @@ title: Sazkirina Dayînên Destan
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Sazkirina Dayînên Destî (v2) {#setting-up-manual-payments-v2}
+# Sazkirina Dayînên Destî (v2)
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar derbarê guhertoya Ultimate Multisite 2.x de ye.**_
 

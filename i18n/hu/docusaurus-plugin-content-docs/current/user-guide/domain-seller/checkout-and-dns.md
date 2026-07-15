@@ -3,7 +3,7 @@ title: Pénztármező és ügyfél DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pénztári mező és ügyfél DNS-kezelés {#checkout-field-and-customer-dns-management}
+# Pénztári mező és ügyfél DNS-kezelés
 
 ## A Domain Selection pénztári mező {#the-domain-selection-checkout-field}
 

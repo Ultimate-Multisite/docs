@@ -3,7 +3,7 @@ title: Integrazzjoni Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrazzjon ta Ultimate Multisite مع Zapier {#integrating-ultimate-multisite-with-zapier}
+# Integrazzjon ta Ultimate Multisite مع Zapier
 
 F'una l-artiklu, ناقشنا [Webhooks](webhooks.md) u kif jidma nhammnu għall it-integrazzjoni ma app esterni.
 

@@ -3,7 +3,7 @@ title: Referencia de axustes
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencia de configuración {#settings-reference}
+# Referencia de configuración
 
 Esta páxina rexistra a configuración que afecta á administración diaria e aos cambios recentes de comportamento en Ultimate Multisite.
 

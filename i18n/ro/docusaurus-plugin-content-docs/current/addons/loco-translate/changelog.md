@@ -3,7 +3,7 @@ title: Loco Translate Istoric
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Istoricul Versiunilor Loco Translate {#loco-translate-changelog}
+# Istoricul Versiunilor Loco Translate
 
 ### 1.0.1 {#101}
 * Compatibilitate îmbunătățită cu cea mai recentă versiune a Loco Translate

@@ -4,7 +4,7 @@ title: Parzûn - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Fîltre: auth_redirect_scheme {#filter-authredirectscheme}
+# Fîltre: auth_redirect_scheme
 
 Şemaya vegerandina piştrastkirinê fîltre dike.
 

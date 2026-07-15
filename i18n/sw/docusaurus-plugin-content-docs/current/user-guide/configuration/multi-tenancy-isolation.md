@@ -3,7 +3,7 @@ title: Utengaji wa Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Kutengan kwa Wateja Wengi (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Kutengan kwa Wateja Wengi (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inasaidia kutenga database na mfumo wa faili kwa kila subsiti ili wateja wakowe huru kabisa. Hii inahakikisha data ya mteja yamehifadhiwa tofauti huku ikihifadhi uwezo wa kuandaa mtandao, malipo, na usimamizi.
 

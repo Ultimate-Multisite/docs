@@ -4,7 +4,7 @@ title: 动作 - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# 动作: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# 动作: wp_ultimo_captcha_deactivation
 
 让插件的其他部分为停用附加它们的例程
 

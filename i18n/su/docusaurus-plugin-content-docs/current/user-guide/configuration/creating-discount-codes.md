@@ -3,7 +3,7 @@ title: Ngadamel Kode Diskon
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ngadiran Kode Diskon (v2) {#creating-discount-codes-v2}
+# Ngadiran Kode Diskon (v2)
 
 _**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
 

@@ -3,7 +3,7 @@ title: 개발자 문서
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# 개발자 문서 {#developer-documentation}
+# 개발자 문서
 
 이 가이드는 개발자에게 Ultimate Multisite와 통합하거나, 이를 확장하거나, Ultimate Multisite용 애드온을 개발하는 데 필요한 모든 것을 제공합니다. Ultimate Multisite는 WordPress Multisite 네트워크를 Website-as-a-Service(WaaS) 플랫폼으로 변환합니다.
 

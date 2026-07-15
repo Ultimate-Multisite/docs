@@ -3,7 +3,7 @@ title: Integrimi i Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrimi me Panel Kontrolli Hestia {#hestia-control-panel-integration}
+# Integrimi me Panel Kontrolli Hestia
 
 Ky udhëzues ju shpjegohet se si të konfigurojini integrimin e Ultimate Multisite Hestia, që automatikisht shtojnë (dhe heqin) domenët e mapuar në rrjetin tuaj si Alias Web Domeni në Hestia.
 

@@ -3,7 +3,7 @@ title: Menguruskan Laman
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Mengurus Laman {#managing-sites}
+# Mengurus Laman
 
 Laman (atau sublaman) adalah teras perniagaan WaaS anda. Ultimate Multisite mempunyai 3 jenis laman:
 

@@ -3,7 +3,7 @@ title: 'Bài học 1: Tại sao thị trường ngách lại chiến thắng'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Bài học 1: Tại sao nên tập trung vào thị trường ngách (Niche) {#lesson-1-why-niche-wins}
+# Bài học 1: Tại sao nên tập trung vào thị trường ngách (Niche)
 
 Trước khi chúng ta đi sâu vào bất kỳ phần mềm nào, bạn cần hiểu rằng việc xây dựng sản phẩm cho một đối tượng cụ thể là quyết định quan trọng nhất bạn sẽ đưa ra.
 

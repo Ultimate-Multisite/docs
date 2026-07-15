@@ -3,7 +3,7 @@ title: Ingxelo yotshintsho yoMthengisi weeDomeyini
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Ilogi yotshintsho yoMthengisi weeDomain {#domain-seller-changelog}
+# Ilogi yotshintsho yoMthengisi weeDomain
 
 Version 1.3.0 - Ikhutshwe nge-2026-06-02
 - Entsha: Kongezwe isilumkiso somlawuli-wenethiwekhi xa ibhalansi yomthengisi kwakhona we-HostAfrica isihla kakhulu

@@ -3,7 +3,7 @@ title: 'Leson 3: Konfigire rezo ou a'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Leson 3: Mete Rezo Ou An Plas {#lesson-3-setting-up-your-network}
+# Leson 3: Mete Rezo Ou An Plas
 
 Lè pou konstwi. Nan leson sa a ou pral enstale Ultimate Multisite epi konfigire baz rezo FitSite la. Chak desizyon isit la fèt ak nich kondisyon fizik la nan tèt.
 

@@ -3,7 +3,7 @@ title: Narima Bayaran
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Meunang Bayaran (v2) {#getting-paid-v2}
+# Meunang Bayaran (v2)
 
 _**CATETAN PENTING: Artikel ieu ngarujuk kana Ultimate Multisite vérsi 2.x.**_
 

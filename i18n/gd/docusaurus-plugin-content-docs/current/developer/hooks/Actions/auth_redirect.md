@@ -4,7 +4,7 @@ title: Gnìomh - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Gnìomh: auth_redirect {#action-authredirect}
+# Gnìomh: auth_redirect
 
 Thèid a chur an gnìomh mus tachair ath-stiùireadh dearbhaidh.
 

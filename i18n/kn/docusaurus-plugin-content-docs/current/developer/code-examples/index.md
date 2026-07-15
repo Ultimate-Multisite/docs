@@ -3,7 +3,7 @@ title: ಉನ್ನತ ಕೋಡ್ ಉದಾಹರಣೆಗಳು
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples {#advanced-code-examples}
+# Advanced Code Examples
 
 ಈ ಉದಾಹರಣೆಗಳು Ultimate Multisite ನೊಂದಿಗೆ ಅತ್ಯಾಧುನಿಕ (advanced) integration patterns ಅನ್ನು ಹೇಗೆ ಬಳಸಬೇಕೆಂದು ತೋರಿಸುತ್ತವೆ.
 

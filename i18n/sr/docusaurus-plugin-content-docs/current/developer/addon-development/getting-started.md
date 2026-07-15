@@ -3,7 +3,7 @@ title: Почетак развоја Addon-а
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Развој додатака {#addon-development}
+# Развој додатака
 
 ## Структура додатка {#addon-structure}
 

@@ -3,7 +3,7 @@ title: Khai mlooj txhais txhua yam uas hluas tau txais txhais
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 에는 sovereign tenant migration-ന് WP-CLI verification commands 들이 포함되어 있습니다. 테넌트 마이그레이션, SSO 방문, 또는 격리된 설치가 예상대로 작동하지 않을 때 이 명령어들을 사용하세요.
 

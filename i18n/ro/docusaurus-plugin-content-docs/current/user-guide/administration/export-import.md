@@ -3,7 +3,7 @@ title: Export și Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export și Import {#export--import}
+# Export și Import
 
 Ultimate Multisite 2.9.0 adaugă un instrument de **Export & Import** pentru un singur site, accesibil sub **Tools > Export & Import**. Folosiți acest instrument atunci când trebuie să pachetați un site WordPress într-un fișier ZIP, să restaurați acel ZIP sau să mutați un site între instalări compatibile Ultimate Multisite și WordPress pentru un singur site.
 

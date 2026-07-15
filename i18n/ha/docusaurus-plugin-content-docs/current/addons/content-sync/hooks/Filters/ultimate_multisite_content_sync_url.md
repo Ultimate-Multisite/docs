@@ -4,7 +4,7 @@ title: Tace - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Tacewa: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
+# Tacewa: ultimate_multisite_content_sync_url
 
 Yana ba masu haɓakawa damar sarrafa hanyar da take dangane da tushen plugin.
 

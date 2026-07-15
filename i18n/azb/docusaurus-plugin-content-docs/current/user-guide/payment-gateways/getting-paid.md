@@ -3,7 +3,7 @@ title: پول آلماق
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# اؤدنیش آلماق (v2) {#getting-paid-v2}
+# اؤدنیش آلماق (v2)
 
 _**اؤنه‌ملی قئید: بو مقاله Ultimate Multisite نسخه 2.x-ه آیددیر.**_
 

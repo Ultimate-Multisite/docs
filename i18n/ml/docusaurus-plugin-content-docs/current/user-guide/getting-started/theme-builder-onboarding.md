@@ -3,7 +3,7 @@ title: Theme Builder Onboarding Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 ഒരു ഗൈഡഡ് ആയ **Theme Builder onboarding flow** അവതരിപ്പിക്കുന്നു. ഇത് നിങ്ങളുടെ ആദ്യ സജ്ജീകരണ സമയത്ത് ഒരു കസ്റ്റം ബ്ലോക്ക് തീം ഉണ്ടാക്കാൻ നിങ്ങളെ സഹായിക്കുന്നു. ഇത് പഴയ Site Builder മോഡിന് പകരമായി, കൂടുതൽ വഴക്കമുള്ളതും agent-ന്റെ സഹായം ലഭിക്കുന്നതുമായ ഒരു സമീപനമാണ്.
 

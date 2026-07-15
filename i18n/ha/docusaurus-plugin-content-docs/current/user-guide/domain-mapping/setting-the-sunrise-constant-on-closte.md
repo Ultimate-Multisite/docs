@@ -3,7 +3,7 @@ title: Sanya ƙaramin ƙaramin Rana a Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Shiga constant-yi a gaskiya a Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Shiga constant-yi a gaskiya a Closte
 
 Wasu wasu na masu gudanar da sabon wurare (host providers) suna ƙona fayil <code>wp-config.php</code> don tsaro. Wannan yana nufin Ultimate Multisite ba zai iya gyara wannan fayil ne kai tsaye don shigar da ƙa'idodin da ake bukata don samar da haske na domain (domain mapping) da wasu ƙarin ƙwarewa su ya yi aiki. Closte ɗaya daga cikin waɗannan masu gudanarwa ne.
 

@@ -3,7 +3,7 @@ title: ॲडमिन पेज क्रिएटर चेंजलॉग
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# ॲडमिन पेज क्रिएटर बदलांचा इतिहास {#admin-page-creator-changelog}
+# ॲडमिन पेज क्रिएटर बदलांचा इतिहास
 
 ### Version 1.9.0 - Released on 2026-01-18 {#version-190---released-on-2026-01-18}
 

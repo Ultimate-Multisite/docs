@@ -3,7 +3,7 @@ title: कस्टम गेटवे विकास
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# सानुकूल गेटवे विकास {#custom-gateway-development}
+# सानुकूल गेटवे विकास
 
 `Base_Gateway` class विस्तारून तुम्ही सानुकूल पेमेंट गेटवे तयार करू शकता.
 

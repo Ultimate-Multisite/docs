@@ -3,7 +3,7 @@ title: የዶሜይን ማፒንግን እንዴት ማዋቀር እንደሚቻ
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# የዶሜይን ማዛመድን እንዴት ማዋቀር እንደሚቻል (v2) {#how-to-configure-domain-mapping-v2}
+# የዶሜይን ማዛመድን እንዴት ማዋቀር እንደሚቻል (v2)
 
 _**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ የUltimate Multisite ስሪት 2.xን ይመለከታል።**_
 

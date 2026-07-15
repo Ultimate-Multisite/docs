@@ -3,7 +3,7 @@ title: ସାଇଟ୍ ବିଲ୍ଡର ମୋଡ୍ ଉପରେ ନୋଟି
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# সাইট বিল্ডার মোড সরানোর বিজ্ঞপ্তি {#site-builder-mode-removal-notice}
+# সাইট বিল্ডার মোড সরানোর বিজ্ঞপ্তি
 
 **Superdav AI Agent v1.12.0-এ Site Builder mode সরিয়ে ফেলা হয়েছে।** আপনি যদি Site Builder mode ব্যবহার করতেন, তবে থিম তৈরি এবং সাইট সেটআপের জন্য **Setup Assistant agent** এ স্থানান্তরিত হওয়া উচিত।
 

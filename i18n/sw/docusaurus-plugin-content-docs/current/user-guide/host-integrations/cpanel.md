@@ -3,7 +3,7 @@ title: Uunganishaji wa cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Uunganishaji wa cPanel {#cpanel-integration}
+# Uunganishaji wa cPanel
 
 ## Muhtasari {#overview}
 cPanel ni mojawapo ya paneli maarufu zaidi za kudhibiti huduma za hosting zinazotumiwa na watoa huduma wengi wa shared na dedicated hosting. Uunganishaji huu unawezesha usawazishaji wa kiotomatiki wa domains kati ya Ultimate Multisite na cPanel, kukuruhusu kuongeza domain aliases na subdomains kwenye akaunti yako ya cPanel kiotomatiki.

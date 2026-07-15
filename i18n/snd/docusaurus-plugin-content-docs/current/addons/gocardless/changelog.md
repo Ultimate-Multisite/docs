@@ -3,7 +3,7 @@ title: GoCardless تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless تبديلي لاگ {#gocardless-changelog}
+# GoCardless تبديلي لاگ
 
 Version: 1.0.3 - 2026-05-05 تي جاري ٿيو
 * درستگي: يتيم التوا ۾ پيل سائيٽون هاڻي صاف ڪيون وڃن ٿيون جڏهن GoCardless رڪنيت التوا ۾ يا روڪيل حالت ۾ هجڻ دوران رد ڪئي وڃي

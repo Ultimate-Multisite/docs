@@ -3,7 +3,7 @@ title: Mehmondo‘stlik menyulari
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Mehmondo‘stlik menyulari {#hospitality-menus}
+# Mehmondo‘stlik menyulari
 
 **Hospitality Menus** funksiyasi Theme Builder-ga tuzilmali taom va ichimlik menyu sahifalarini bevosita WordPress saytingizga yaratish va joylashtirish imkonini beradi.
 

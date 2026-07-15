@@ -3,7 +3,7 @@ title: Tohu Whakairo Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 pātata te **Plugin Builder & Sandbox System**, e tino kitea i te AI assistant ki te whakarataki, te whakamahi, me te whakamaoritanga o mga plugin WordPress mo te wāhi moe (network) mo te oe — he katoa i roto i te mōhiamo, ā, i te whare pātaka (sandbox environment) e haere mai.
 

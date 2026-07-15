@@ -4,7 +4,7 @@ title: Filtro - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filtro: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Filtro: wu_membership_update_forms
 
 Permite que programadores adicionem novos slugs de formulário de atualização.
 

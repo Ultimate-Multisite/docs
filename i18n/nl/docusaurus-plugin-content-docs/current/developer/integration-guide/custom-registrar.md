@@ -3,7 +3,7 @@ title: Een aangepaste registrar-integratie bouwen
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Een Aangepaste Registrar Integratie Bouwen {#building-a-custom-registrar-integration}
+# Een Aangepaste Registrar Integratie Bouwen
 
 De Domain Seller addon gebruikt een patroon genaamd **Integration Registry**. Elke registrar is een PHP-klasse die `Domain_Selling_Capability` implementeert en zichzelf registreert via de `wu_domain_seller_register_capabilities` action hook.
 

@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Шүүлтүүр: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Шүүлтүүр: wu_checkout_field_templates
 
 Шинэ талбарын загвар нэмэх манай APIs энд hook хийнэ.
 

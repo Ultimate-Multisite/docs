@@ -3,7 +3,7 @@ title: Ìṣàkóso Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ìmúlò Webhook {#webhook-handling}
+# Ìmúlò Webhook
 
 Dá àwọn ibi-opin webhook àdáni láti gba àwọn ìṣẹ̀lẹ̀ láti àwọn iṣẹ́ òde àti láti mú dátà bá Ultimate Multisite mu.
 

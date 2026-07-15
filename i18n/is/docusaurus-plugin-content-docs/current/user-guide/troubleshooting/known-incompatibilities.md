@@ -3,7 +3,7 @@ title: Viðskiptiöndunarferli
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Kjendur óskumblir með övrum pluginum {#known-incompatibilities-with-other-plugins}
+# Kjendur óskumblir með övrum pluginum
 
 Eft sem þú hefur hlað og aktivert Ultimate Multisite, gæti þér verið að koma í vanda vegna ólögunni við övrum pluginum sem ekki er lausna.
 

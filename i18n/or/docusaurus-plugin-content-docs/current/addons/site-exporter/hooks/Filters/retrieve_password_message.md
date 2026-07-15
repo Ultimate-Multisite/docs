@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# ଫିଲ୍ଟର: retrieve_password_message {#filter-retrievepasswordmessage}
+# ଫିଲ୍ଟର: retrieve_password_message
 
 ପାସୱାର୍ଡ ପୁନଃସେଟ୍ ମେଲ୍‌ର ସନ୍ଦେଶ ଅଂଶକୁ ଫିଲ୍ଟର କରେ।
 

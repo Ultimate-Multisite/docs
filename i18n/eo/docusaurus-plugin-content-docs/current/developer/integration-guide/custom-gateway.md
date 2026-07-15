@@ -3,7 +3,7 @@ title: Disvolvado de laŭmenda pagpordego
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Propra pagopordega disvolvado {#custom-gateway-development}
+# Propra pagopordega disvolvado
 
 Vi povas krei proprajn pagopordegojn per etendo de la klaso `Base_Gateway`.
 

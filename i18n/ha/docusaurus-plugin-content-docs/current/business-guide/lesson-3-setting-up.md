@@ -3,7 +3,7 @@ title: 'Darasi na 3: Saita Hanyar Sadarwarka'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Darasi na 3: Saita Network ɗinka {#lesson-3-setting-up-your-network}
+# Darasi na 3: Saita Network ɗinka
 
 Lokaci ya yi na gina. A wannan darasin za ka shigar da Ultimate Multisite kuma ka saita tushen FitSite network. Duk shawarar da aka yanke a nan an yi ta ne da fannin motsa jiki a rai.
 

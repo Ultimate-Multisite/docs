@@ -3,7 +3,7 @@ title: 'Ukázka 13: Rozšíření škálování'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekce 13: Jak růst {#lesson-13-scaling-up}
+# Lekce 13: Jak růst
 
 Máte funkční platformu s placenými zákazníky. Tato lekce se zabývá tím, jak růstnout z malého podnikání do udržitelného byznysu – škálování infrastruktury, automatizace provozu a zvyšování příjmů na zákazníka.
 

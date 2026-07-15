@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Gníomh: wp_ultimo_load {#action-wpultimoload}
+# Gníomh: wp_ultimo_load
 
 Spreagtar é nuair a bhí na spleáchais uile luchtaithe
 

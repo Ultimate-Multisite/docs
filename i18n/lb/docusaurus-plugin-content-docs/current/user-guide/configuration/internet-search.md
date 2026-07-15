@@ -3,7 +3,7 @@ title: Internet-Suche
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Such {#internet-search}
+# Internet Such
 
 Gratis AI Agent v1.5.0 füegt e Fähigkeit vo **Internet Such** bi, wo de KI-Assistent erlaubt, aktuelli Informatione us em Web während em Gspräch z'hole. Das wird dur d' [Brave Search API](https://brave.com/search/api/) oder d' [Tavily API](https://tavily.com/) aagtriibe.
 

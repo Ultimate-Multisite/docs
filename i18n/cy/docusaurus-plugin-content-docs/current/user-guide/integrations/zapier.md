@@ -3,7 +3,7 @@ title: Ymddygiad Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ymddio'r Ultimate Multisite gyda Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ymddio'r Ultimate Multisite gyda Zapier
 
  mewn un o'r anghylchenau, ddebethau ni ddysgwylch [Webhooks](webhooks.md) ac sut gallai eu defnyddio i gysylltu â ffurfau allweddol (3rd party applications).
 

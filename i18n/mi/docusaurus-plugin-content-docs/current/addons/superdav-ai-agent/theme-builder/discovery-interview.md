@@ -3,7 +3,7 @@ title: Uiuitanga Tūhura
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Uiuinga Tūhura {#discovery-interview}
+# Uiuinga Tūhura
 
 Ko te **Uiuinga Tūhura** te hikoinga tuatahi i roto i te tukanga hoahoa a Theme Builder. Ka kohikohi mōhiohio mō tō pae, tō pakihi, me ō manakohanga hoahoa hei waihanga i tētahi theme kua whakaritea mōu.
 

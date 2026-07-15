@@ -3,7 +3,7 @@ title: Instrumente și configurare
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Instrumente și configurare {#tools-and-configuration}
+# Instrumente și configurare
 
 Theme Builder folosește un set de instrumente pentru a analiza, proiecta și construi site-ul tău WordPress. În versiunea 1.16.0, **sd-ai-agent/site-scrape este acum un instrument Tier 1**, fiind disponibil implicit în Theme Builder. Superdav AI Agent v1.18.0 introduce, de asemenea, un pachet companion Advanced distribuit separat pentru fluxuri de lucru de dezvoltare de încredere; acele instrumente nu fac parte din pachetul core WordPress.org și trebuie instalate și autorizate separat.
 

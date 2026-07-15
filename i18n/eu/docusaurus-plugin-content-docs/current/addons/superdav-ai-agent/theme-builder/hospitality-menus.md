@@ -3,7 +3,7 @@ title: Ostalaritzako menuak
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ostalaritzako menuak {#hospitality-menus}
+# Ostalaritzako menuak
 
 **Ostalaritzako menuak** eginbideak Theme Builder-i janari eta edarien menu-orri egituratuak zuzenean zure WordPress gunean sortu eta txertatzeko aukera ematen dio.
 

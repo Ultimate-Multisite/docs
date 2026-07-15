@@ -3,7 +3,7 @@ title: Birinchi Obunali Mahsulotingizni Yaratish
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Birinchi Obunali Mahsulotingizni Yaratish (v2) {#creating-your-first-subscription-product-v2}
+# Birinchi Obunali Mahsulotingizni Yaratish (v2)
 
 _**MUHIM ESLATMA: Ushbu maqola faqat Ultimate Multisite 2.x versiyasi foydalanuvchilari uchun.**_ Agar siz 1.x versiyasidan foymanatgan bo'lsangiz, _**shu maqolani o'qing**_.
 

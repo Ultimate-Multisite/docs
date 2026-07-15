@@ -3,7 +3,7 @@ title: مدیریت اعضا
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# مدیریت اشتراک‌ها (Managing Memberships) {#managing-memberships}
+# مدیریت اشتراک‌ها (Managing Memberships)
 
 Ultimate Multisite تهتري به تاسو اجازه ورکوي چې د خپل شبکه ټولې سبسکرپشنونه وکاروئ او ورته پام وکړئ. تاسو کولی شئ د پلانونو او محصولاتو تفصیلات، د سایتونو تعداد، د بیا کولو مقدار او دوري، د پیسې اخیستنې تاریخ او وخت ټاپو (timestamps) په څیر بدل کړئ او ویره کړئ.
 

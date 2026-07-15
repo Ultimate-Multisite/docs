@@ -3,7 +3,7 @@ title: Kubika amabwiriza muri cache bishingiye ku mutanga-serivisi
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Kubika Prompt mu Bubiko Hakurikijwe Provider {#provider-aware-prompt-caching}
+# Kubika Prompt mu Bubiko Hakurikijwe Provider
 
 Superdav AI Agent v1.12.0 izana **provider-aware prompt caching**, itunganya ibiciro bya API n’ubukererwe ibika prompts mu bubiko hagati ya LLM providers batandukanye. Buri provider afite uburyo n’igenamiterere bitandukanye byo kubika mu bubiko.
 

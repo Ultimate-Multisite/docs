@@ -4,7 +4,7 @@ title: फिल्टर - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 वापरकर्त्याला कोणत्या नेटवर्कचा प्रशासक (administrator) आहे, याची तपासणी करण्यासाठी वापरले जाणारे फिल्टर आहे. यामुळे प्रक्रिया थेट पूर्ण (short-circuit) करता येते.
 

@@ -3,7 +3,7 @@ title: Dlaczego Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Dlaczego warto wybrać Ultimate Multisite {#why-ultimate-multisite}
+# Dlaczego warto wybrać Ultimate Multisite
 
 Jeśli dotarłeś do tego artykułu, prawdopodobnie słyszałeś, że nasza wtyczka może pomóc w realizacji Twojego pomysłu na biznes. Mamy nadzieję, że po przeczytaniu tego tekstu znajdziesz wszystkie potrzebne odpowiedzi.
 

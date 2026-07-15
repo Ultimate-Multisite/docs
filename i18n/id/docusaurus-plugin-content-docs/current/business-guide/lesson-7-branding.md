@@ -3,7 +3,7 @@ title: 'Pelajaran 7: Menjadikannya Milikmu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Pelajaran 7: Menjadikannya Milik Anda {#lesson-7-making-it-yours}
+# Pelajaran 7: Menjadikannya Milik Anda
 
 Pelanggan Anda tidak boleh merasa seperti mereka menggunakan "plugin WordPress sembarangan." Mereka harus merasa seperti menggunakan FitSite—sebuah platform yang dibangun khusus untuk industri mereka. Pelajaran ini akan membahas *branding*, *white-labeling*, dan cara membuat platform ini terasa seperti produk yang utuh.
 

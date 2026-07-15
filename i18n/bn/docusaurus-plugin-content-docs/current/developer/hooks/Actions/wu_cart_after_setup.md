@@ -4,7 +4,7 @@ title: Action - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# অ্যাকশন: wu_cart_after_setup {#action-wucartaftersetup}
+# অ্যাকশন: wu_cart_after_setup
 
 ডেভেলপারদের চেকআউট অবজেক্টে অতিরিক্ত পরিবর্তন করার সুযোগ দেয়।
 

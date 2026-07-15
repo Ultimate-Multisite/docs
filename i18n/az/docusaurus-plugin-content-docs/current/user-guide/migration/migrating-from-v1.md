@@ -3,7 +3,7 @@ title: V1-dən köçürmə
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-dən Köçürmə {#migrating-from-v1}
+# V1-dən Köçürmə
 
 ## Ultimate Multisite öz ilkin 1.x nəşr seriyasından 2.x nəşr seriyasına keçib. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

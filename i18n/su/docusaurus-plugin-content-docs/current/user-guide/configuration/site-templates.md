@@ -3,7 +3,7 @@ title: Template Situs
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**CATATAN: Artikel ieu merujuk kana Ultimate Multisite versi 2.x. Upami anjeun masih nganggo versi 1.x,**_ **mangga tingali artikel ieu.**_
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite-i quraşdyrmaq
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-iň gurulmagy {#installing-ultimate-multisite}
+# Ultimate Multisite-iň gurulmagy
 
 :::note
 Bu okuw materialy, WordPress Multisite-iň ýaýdan hem-de gurnama diliniň özleşdirilendigini çaklaýar. Görnüşini öwrenmek üçin, WP Beginner-iň [şu okuw materialyna](https://www.wpbeginner.com/glossary/multisite/) seredip geçiň.

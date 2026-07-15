@@ -3,7 +3,7 @@ title: 'Lekcija 14: Što slijedi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekcija 14: Što slijedi {#lesson-14-what-comes-next}
+# Lekcija 14: Što slijedi
 
 Izgradili ste platformu za niche web-stranice od nule. FitSite je aktivan, služi fitness studijima i generira ponavljajući prihod. Ova završna lekcija razmatra kamo dalje.
 

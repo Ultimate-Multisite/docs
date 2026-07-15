@@ -3,7 +3,7 @@ title: Eklenti Yönetim Yetenekleri
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Eklenti Yönetim Yetenekleri {#plugin-management-abilities}
+# Eklenti Yönetim Yetenekleri
 
 Gratis AI Agent v1.5.0, yapay zeka asistanının bir konuşma sırasında çağırabileceği **7 eklenti yönetim yeteneği** ile geliyor. Bu yetenekler, [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) üzerinden kurulan WordPress eklentileri üzerinde programatik kontrol sağlar.
 

@@ -3,7 +3,7 @@ title: Üzvlük Müddətinin Bitməsi və Saytın Bloklanması
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Üçüncü Tərəf Üçün Heyətlərin Bitməsi və Saytın Bloklanması {#membership-expiration-and-site-blocking}
+# Üçüncü Tərəf Üçün Heyətlərin Bitməsi və Saytın Bloklanması
 
 Bu bələdçi Ultimate Multisite-ın heyətlərin bitməsini, sınaq müddətlərinin sona çatmasını və frontend saytın bloklanmasını necə idarə etdiyini izah edir. Heyətlərin aktiv və bitmiş vəziyyətləri arasındakı dövrünü, saytların bloklanmasını idarə edən parametrləri və heyətlərin bitməsindən sonra saytların niyə hələ də əlçatan olduğunu yoxlamaq üçün nə etməli olduğunuzu əhatə edir.
 

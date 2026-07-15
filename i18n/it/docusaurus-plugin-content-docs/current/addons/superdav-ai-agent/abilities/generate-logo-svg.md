@@ -3,7 +3,7 @@ title: Generare Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Genera Logo SVG {#generate-logo-svg}
+# Genera Logo SVG
 
 La funzionalità **Genera Logo SVG** consente a Theme Builder di creare e incorporare SVG di logo personalizzati direttamente nel tuo sito WordPress, con una sanificazione automatica sicura per lo spazio dei nomi (namespace-safe).
 

@@ -3,7 +3,7 @@ title: Ngatur Email Sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ngatur Email Sistem {#managing-system-emails}
+# Ngatur Email Sistem
 
 Ultimate Multisite ngirim sababaraha email sistem pikeun acara saperti konfirmasi pendaftar, bukti bayar, jeung ganti anggota. Anjeun bisa ngubah template email ieu sangkan cocog jeung *brand* anjeun.
 

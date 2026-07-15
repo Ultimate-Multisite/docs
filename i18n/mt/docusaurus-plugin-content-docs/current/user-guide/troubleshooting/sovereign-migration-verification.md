@@ -3,7 +3,7 @@ title: Verifika Migrazzjoni Sovrana
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifika Migrazzjon Sovran {#sovereign-migration-verification}
+# Verifika Migrazzjon Sovran
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inclúi komandi verifikazzjoni WP-CLI għall migrazzjonijiet ta tenant sovran. Użahom meta migrazzjoni ta tenant, żiżita SSO, jew installazzjoni isolata ma jaffarix b'mod attesa.
 

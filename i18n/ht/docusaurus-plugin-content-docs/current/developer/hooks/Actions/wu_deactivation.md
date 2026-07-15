@@ -4,7 +4,7 @@ title: Aksyon - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Aksyon: wu_deactivation {#action-wudeactivation}
+# Aksyon: wu_deactivation
 
 Pèmèt lòt pati nan plugin nan atache woutin yo pou dezaktivasyon
 

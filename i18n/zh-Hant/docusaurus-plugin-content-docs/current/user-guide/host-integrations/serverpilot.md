@@ -3,7 +3,7 @@ title: ServerPilot 整合
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot 整合 {#serverpilot-integration}
+# ServerPilot 整合
 
 ## 概述 {#overview}
 ServerPilot 是一項雲端服務，可在 DigitalOcean、Amazon、Google 或任何其他伺服器供應商上託管 WordPress 及其他 PHP 網站。此整合功能可讓 Ultimate Multisite 與 ServerPilot 之間自動同步網域並管理 SSL 憑證。

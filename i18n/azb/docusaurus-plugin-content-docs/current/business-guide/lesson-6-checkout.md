@@ -3,7 +3,7 @@ title: 'Dars 6: Tajriba-ye-Naw-kard'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Ders 6: Kayıt Olma Deneyimi {#lesson-6-the-signup-experience}
+# Ders 6: Kayıt Olma Deneyimi
 
 Ödeme (checkout) akışı, ilgiyi gelire dönüştürdüğünüz yerdir. Karmaşık veya genel bir kayıt süreci, müşterileri kaçırır. Müşterinin dilini konuşan ve zahmetsiz hissettiren niş odaklı bir akış ise onları dönüştürür.
 

@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 ડેવલપર્સને આ આઉટપુટને બાયપાસ કરવાની અને તેની જગ્યાએ નવું આઉટપુટ સેટ કરવાની મંજૂરી આપે છે.
 

@@ -4,7 +4,7 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 စစ်ဆေးရန်အတွက် plan ရဲ့ ID ကို စစ်ထုတ်ပေးပါတယ်။ ဒါရှိနေရင်၊ စာရင်းပေးသွင်းမှုအသစ်က ဒီ plan ကို အသုံးပြုမှာ ဖြစ်ပါတယ်။
 

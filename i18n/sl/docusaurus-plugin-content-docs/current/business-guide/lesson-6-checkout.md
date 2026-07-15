@@ -3,7 +3,7 @@ title: 'Lekcija 6: Izkušnja registracije'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcija 6: Izkušnja registracije {#lesson-6-the-signup-experience}
+# Lekcija 6: Izkušnja registracije
 
 Potek nakupa je mesto, kjer se zanimanje spremeni v prihodek. Zmeden ali generičen postopek registracije izgublja stranke. Nišno specifičen potek, ki govori njihov jezik in deluje brez napora, jih pretvori v kupce.
 

@@ -3,7 +3,7 @@ title: سولانی مهاجرت کی تصدیق
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 کې د سۆڤرین تانټنټ (sovereign tenant) مېګريشن لپاره WP-CLI verification команди شتون لري. کله چې یو تانټنټ مېګريشن، SSO وزمنه مراجعه، یا انفرادی هم設置 نه کار کوي، نو دا命令ونه प्रयोग کړئ.
 

@@ -3,7 +3,7 @@ title: Pagamentak eta fakturak eskaintzea
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagamendu eta Kontabilitateak Eskatzea {#managing-payments-and-invoices}
+# Pagamendu eta Kontabilitateak Eskatzea
 
 ## Pagamendu Kontseilua {#payment-settings}
 

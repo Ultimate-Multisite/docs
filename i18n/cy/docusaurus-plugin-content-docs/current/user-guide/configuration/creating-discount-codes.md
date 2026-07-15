@@ -3,7 +3,7 @@ title: Creu codau cadw |
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creu Codau Diskontau (v2) {#creating-discount-codes-v2}
+# Creu Codau Diskontau (v2)
 
 _**NOTI'RHYD: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite versio 2.x.**_
 

@@ -4,7 +4,7 @@ title: Sivana - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Sivana: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Sivana: wu_should_redirect_to_primary_domain
 
 Mamela ny developers hanapaka mialoha ny redirection, mba hisorohana azy tsy hitranga.
 

@@ -3,7 +3,7 @@ title: سوویرین مائگریشن تصدیق
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# سوبیرین مائگریشن کی تصدیق (Sovereign Migration Verification) {#sovereign-migration-verification}
+# سوبیرین مائگریشن کی تصدیق (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 میں سوبیرین ٹینٹنٹ مائگریشن کے لیے WP-CLI تصدیقی کمانڈز شامل ہیں۔ جب کوئی ٹینٹنٹ مائگریشن، SSO وزٹ، یا الگ انسٹال جیسا رویہ نہ کرے تو ان کا استعمال کریں۔
 

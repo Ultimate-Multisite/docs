@@ -3,7 +3,7 @@ title: Integrare GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integrarea cu GridPane {#gridpane-integration}
+# Integrarea cu GridPane
 
 ## Prezentare generală {#overview}
 GridPane este un panou de control pentru găzduire WordPress creat special pentru profesioniștii WordPress. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și GridPane.

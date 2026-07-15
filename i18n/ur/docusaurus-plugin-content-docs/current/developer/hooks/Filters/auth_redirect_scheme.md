@@ -4,7 +4,7 @@ title: فلٹر - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# فلٹر: auth_redirect_scheme {#filter-authredirectscheme}
+# فلٹر: auth_redirect_scheme
 
 یہ تصدیق (authentication) کے ریڈائریکٹ اسکیم کو فلٹر کرتا ہے۔
 

@@ -3,7 +3,7 @@ title: Trường thanh toán và DNS của khách hàng
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Trường thanh toán và quản lý DNS của khách hàng {#checkout-field-and-customer-dns-management}
+# Trường thanh toán và quản lý DNS của khách hàng
 
 ## Trường thanh toán Lựa chọn tên miền {#the-domain-selection-checkout-field}
 

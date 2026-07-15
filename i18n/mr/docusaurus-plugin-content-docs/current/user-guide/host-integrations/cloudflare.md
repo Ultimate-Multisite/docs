@@ -3,7 +3,7 @@ title: Cloudflare एकत्रीकरण
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare एकत्रीकरण {#cloudflare-integration}
+# Cloudflare एकत्रीकरण
 
 ## विहंगावलोकन {#overview}
 Cloudflare हे एक आघाडीचे content delivery network (CDN) आणि सुरक्षा प्रदाता आहे, जे वेबसाइट्सचे संरक्षण आणि वेग वाढविण्यास मदत करते. हे एकत्रीकरण Ultimate Multisite आणि Cloudflare यांच्यात स्वयंचलित डोमेन व्यवस्थापन सक्षम करते, विशेषतः उपडोमेन मल्टिसाइट स्थापनेसाठी.

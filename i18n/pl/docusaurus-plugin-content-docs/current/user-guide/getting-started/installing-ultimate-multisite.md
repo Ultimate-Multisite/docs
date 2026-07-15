@@ -3,7 +3,7 @@ title: Instalacja wtyczki Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalacja Ultimate Multisite {#installing-ultimate-multisite}
+# Instalacja Ultimate Multisite
 
 :::note
 Niniejszy samouczek zakłada, że masz już zainstalowany i skonfigurowany WordPress Multisite. Aby dowiedzieć się, jak to zrobić, zapoznaj się z tym poradnikiem [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) autorstwa WP Beginner.

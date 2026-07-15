@@ -3,7 +3,7 @@ title: ڈسکاؤنٹ کوڈز کڻڻ
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ڈسکاؤنٹ کوڈز بنانا (v2) {#creating-discount-codes-v2}
+# ڈسکاؤنٹ کوڈز بنانا (v2)
 
 _**اہم نوٹ: یہ آرٹیکل Ultimate Multisite کے ورژن 2.x کا حوالہ دیتا ہے۔**_
 

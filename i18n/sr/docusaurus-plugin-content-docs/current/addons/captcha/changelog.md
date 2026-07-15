@@ -3,7 +3,7 @@ title: Дневник измена за CAPTCHA
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Дневник измена за Captcha {#captcha-changelog}
+# Дневник измена за Captcha
 
 Верзија: 1.5.0 - Објављено 2026-05-22
 * Ново: Строги ограничавач стопе — броји сваки GET и POST на captcha-заштићеним површинама (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) и одговара са HTTP 429, `Retry-After` header-ом и насумичним tarpit чекањем (1–5s, строго ограничено на 15s).

@@ -3,7 +3,7 @@ title: Txhim kho Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kev Txhim Kho Ultimate Multisite {#installing-ultimate-multisite}
+# Kev Txhim Kho Ultimate Multisite
 
 :::note
 Cov lus qhia no xav tias koj twb tau txhim kho thiab teeb tsa WordPress Multisite lawm. Yog xav paub yuav ua li cas, saib [cov lus qhia no](https://www.wpbeginner.com/glossary/multisite/) los ntawm WP Beginner.

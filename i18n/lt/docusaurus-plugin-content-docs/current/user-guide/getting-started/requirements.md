@@ -3,7 +3,7 @@ title: Reikalavimai
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Reikalavimai Ultimate Multisite {#ultimate-multisite-requirements}
+# Reikalavimai Ultimate Multisite
 
 Pirmiausia, ką galite pasiteikti prieš pirkdami Ultimate Multisite, yra tai, kokie reikalavimai reikia, kad mūsų plėkštį galėtumėte naudoti. Naudojant jautraus, Ultimate Multisite reikalauja tik kelis pagrindinius dalykus: **domenio pavadinimą**, gausią **hostingu paslaugų teikėją** ir WordPress **Multisite** instalaciją. Tai viskas, ką jums reikia!
 

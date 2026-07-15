@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 ഡെവലപ്പർമാർക്ക് ഔട്ട്പുട്ട് ഒഴിവാക്കാനും പകരം മറ്റൊന്ന് സജ്ജീകരിക്കാനും ഇത് അനുവദിക്കുന്നു.
 

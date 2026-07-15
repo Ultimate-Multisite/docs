@@ -3,7 +3,7 @@ title: Seadete viide
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Seadete viide {#settings-reference}
+# Seadete viide
 
 See leht jälgib seadeid, mis mõjutavad igapäevast haldust ja hiljutisi käitumismuudatusi Ultimate Multisite’is.
 

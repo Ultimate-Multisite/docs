@@ -3,7 +3,7 @@ title: 'Leksyon 3: Pag-set up sa Imong Network'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: Pag-set up sa Imong Network {#lesson-3-setting-up-your-network}
+# Lesson 3: Pag-set up sa Imong Network
 
 Oras na aron magtukod. Sa lesson ni, i-install nimo ang Ultimate Multisite ug i-configure ang pundasyon sa FitSite network. Ang matag desisyon dinhi gihunahuna ang fitness niche.
 

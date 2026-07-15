@@ -4,7 +4,7 @@ title: Գործողություն - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Գործողություն: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Գործողություն: wu_multi_tenancy_init
 
 Գործարկվում է այն բանից հետո, երբ Բազմավարձակալության հավելումը ամբողջությամբ սկզբնավորվել է։
 

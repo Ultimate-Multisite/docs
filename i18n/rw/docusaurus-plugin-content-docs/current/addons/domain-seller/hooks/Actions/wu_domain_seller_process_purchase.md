@@ -4,7 +4,7 @@ title: Igikorwa - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Igikorwa: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Igikorwa: wu_domain_seller_process_purchase
 
 Gitangira iyo kugura indangarubuga biri gutunganywa nyuma yo kurangiza checkout.
 

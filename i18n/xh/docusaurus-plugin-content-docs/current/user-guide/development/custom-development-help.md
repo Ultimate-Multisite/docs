@@ -3,7 +3,7 @@ title: Uncedo loPhuhliso oluLungiselelweyo
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ungalufumana Njani Uncedo Lophuhliso Olulungiselelweyo ku-Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Ungalufumana Njani Uncedo Lophuhliso Olulungiselelweyo ku-Codeable?
 
 Ngamanye amaxesha, siyakufuna ngokwenene ulungiselelo oluhle kakhulu ukuze senze inethiwekhi yethu ihambe kanye ngendlela esiyifunayo. Ukuba yiloo nto uyikhangelayo, sicebisa [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), indawo apho unokufumana abaphuhlisi abanamava ngobungcali be-Ultimate Multisite.
 

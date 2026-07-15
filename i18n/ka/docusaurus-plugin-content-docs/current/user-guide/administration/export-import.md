@@ -3,7 +3,7 @@ title: ექსპორტი და იმპორტი
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ექსპორტი და იმპორტი {#export--import}
+# ექსპორტი და იმპორტი
 
 Ultimate Multisite 2.9.0-ის მეორე დონეზე, **Tools > Export & Import**-ის ქვეშ დაემატა ერთი-საიტური ინსტრუმენტი **Export & Import**. გამოიყენეთ ის მაშინ, როდესაც გჭირდებათ ერთი WordPress საიტის შეფუთვა ZIP ფაილად, ამ ZIP-ის აღდგენა ან საიტის გადატანა თავსებადი Ultimate Multisite და სინგლ-საიტური WordPress ინს stallაციებს შორის.
 

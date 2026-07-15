@@ -4,7 +4,7 @@ title: Gnìomh - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Gnìomh: wu_deactivation {#action-wudeactivation}
+# Gnìomh: wu_deactivation
 
 Leig le pàirtean eile den phlugan na ruitinean aca airson dì-ghnìomhachadh a cheangal ris
 

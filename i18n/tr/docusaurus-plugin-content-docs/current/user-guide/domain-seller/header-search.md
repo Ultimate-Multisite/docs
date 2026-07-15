@@ -3,7 +3,7 @@ title: Üstbilgi Alan Adı Araması
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Ultimate Multisite checkout içinde müşterinin uygun domainlerden seçim yapmasına izin verdikten sonra domain araması başlatan küçük bir header formu istediğinizde bu kurulumu kullanın.
 

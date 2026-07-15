@@ -3,7 +3,7 @@ title: REST API ಅವಲೋಕನ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ಉಲ್ಲೇಖ {#rest-api-reference}
+# REST API ಉಲ್ಲೇಖ
 
 ## ಮೂಲ ಸಂರಚನೆ {#base-configuration}
 

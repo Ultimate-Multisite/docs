@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# କାର୍ଯ୍ୟ: add_user_to_blog {#action-addusertoblog}
+# କାର୍ଯ୍ୟ: add_user_to_blog
 
 ଜଣେ ବ୍ୟବହାରକାରୀଙ୍କୁ ସାଇଟରେ ଯୋଡ଼ାଯିବା ପରେ ତୁରନ୍ତ ଚାଲୁ ହୁଏ।
 

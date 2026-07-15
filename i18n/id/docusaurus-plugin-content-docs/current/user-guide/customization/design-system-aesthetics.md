@@ -3,7 +3,7 @@ title: Keterampilan Estetika Sistem Desain
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Keahlian Estetika Design System {#design-system-aesthetics-skill}
+# Keahlian Estetika Design System
 
 **Keahlian Estetika Design System** adalah pendekatan terpandu untuk menyempurnakan identitas visual situs Anda. Keahlian ini membantu Anda membuat keputusan yang konsisten mengenai tipografi, warna, spasi, dan *motion tokens* yang mendefinisikan *design system* Anda.
 

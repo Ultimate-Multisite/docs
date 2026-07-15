@@ -3,7 +3,7 @@ title: Khwiv txhua txoj tshiab uaws lub cai
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# ຄວາມສາມາດຂອງ Theme Builder: Scaffold ແລະ Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# ຄວາມສາມາດຂອງ Theme Builder: Scaffold ແລະ Activate Block Themes
 
 Superdav AI Agent v1.12.0 ໃໝ່ໄດ້ເພີ່ມຄວາມສາມາດສອງຢ່າງທີ່ຊົງພະລັງ ເຊິ່ງເຮັດໃຫ້ເຈົ້າສາມາດສ້າງ ແລະ ຕິດຕັ້ງ block themes ຕາມຄວາມຕ້ອງການໂດຍກົງຈາກການສົນທະນາໃນ chat interface.
 

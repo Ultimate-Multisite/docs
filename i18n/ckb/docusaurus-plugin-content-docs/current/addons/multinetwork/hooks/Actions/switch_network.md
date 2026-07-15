@@ -4,7 +4,7 @@ title: کردار - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# کردار: switch_network {#action-switchnetwork}
+# کردار: switch_network
 
 کاتێک دەستپێدەکات کە دەوروبەری تۆڕی ئێستا دەگۆڕدرێت.
 

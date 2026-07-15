@@ -4,7 +4,7 @@ title: فلټر - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# فلټر: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# فلټر: wu_current_set_customer
 
 پراختیاکوونکو ته اجازه ورکوي چې تلوالي چلند بدل کړي او اوسنی پېرېدونکی په بېله توګه وټاکي.
 

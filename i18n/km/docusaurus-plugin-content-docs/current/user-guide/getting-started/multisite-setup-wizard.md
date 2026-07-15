@@ -3,7 +3,7 @@ title: កម្មវិធីជំនួយការរៀបចំ Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# ការណែនាំការដំឡើង Multisite {#multisite-setup-wizard}
+# ការណែនាំការដំឡើង Multisite
 
 Ultimate Multisite មានកម្មវិធីជំនួយ (wizard) ដែលភ្ជាប់មកជាមួយ ដែលនឹងបំប្លែងការដំឡើង WordPress បែបស្តង់ដារ ទៅជាបណ្តាញ WordPress Multisite ដោយស្វ័យប្រវត្តិ។ វាជួយលុបបំបាត់តម្រូវការក្នុងការកែសម្រួលឯកសារ `wp-config.php` ឬដំណើរការបញ្ជាមូលដ្ឋានទិន្នន័យដោយដៃ។
 

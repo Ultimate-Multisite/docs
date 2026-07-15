@@ -3,7 +3,7 @@ title: AffiliateWP Integratsiyasi
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# AffiliateWP Integratsiyasi {#affiliatewp-integration}
+# AffiliateWP Integratsiyasi
 
 Bu funksiya **AffiliateWP** qo'shimchasi tomonidan taqdim etiladi.
 

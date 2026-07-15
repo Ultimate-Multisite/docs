@@ -3,7 +3,7 @@ title: Tema-Mütəxəssis Bacarıqlar
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Əsaslı Bacarıqlar {#theme-aware-skills}
+# Tema-Əsaslı Bacarıqlar
 
 Superdav AI Agent v1.10.0, aktiv WordPress temanıza avtomatik uyğunlaşan dörd yeni tema-əsaslı daxili bacarıq təqdim edir. Bu bacarıqlar, temanızın arxitekturasına və xüsusiyyətlərinə uyğunlaşdırılmış ixtisaslaşdırılmış bələdçilik və imkanlar təmin edir.
 

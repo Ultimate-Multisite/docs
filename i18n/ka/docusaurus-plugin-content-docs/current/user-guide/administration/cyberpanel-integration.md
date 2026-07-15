@@ -3,7 +3,7 @@ title: CyberPanel ინტეგრაცია
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ინტეგრაცია {#cyberpanel-integration}
+# CyberPanel ინტეგრაცია
 
 ეს გზამი აგიხსნით, როგორ დავაყენოთ Ultimate Multisite-ის CyberPanel ინტეგრაცია, რომ თქვენს ქსელში მაცნობილი დომეინები ავტომატურად დაემატოს (და მოიხსნას) როგორც ვირტუალური ჰოსტები CyberPanel-ში, ოპციონალურად Let's Encrypt-ის მეშვეობით ავტომატური SSL-ის მომწოდებით.
 

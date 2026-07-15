@@ -3,7 +3,7 @@ title: Creare un'attività di Niche Website
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Costruire un'attività di siti web di nicchia con Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Costruire un'attività di siti web di nicchia con Ultimate Multisite
 
 La maggior parte delle persone che cerca di vendere siti web compete sul prezzo con Wix, Squarespace e migliaia di freelance. E perde. Coloro che vincono scelgono un pubblico specifico, creano una soluzione su misura per quel pubblico e addebitano un costo basato sul valore che forniscono.
 

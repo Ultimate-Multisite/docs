@@ -3,7 +3,7 @@ title: 'Phunziro 5: Kupanga Mapulani Anu'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Phunziro 5: Kupanga Mapulani Anu {#lesson-5-designing-your-plans}
+# Phunziro 5: Kupanga Mapulani Anu
 
 Magawo a mapulani anu si milingo ya mitengo yokha -- ndi chisonyezo cha mmene makasitomala anu a niche amagwirira ntchito kwenikweni. Mu phunziro ili mudzapanga magawo a zinthu zogulitsa omwe amafanana ndi zosowa zenizeni za mabizinesi a fitness pa magawo osiyanasiyana.
 

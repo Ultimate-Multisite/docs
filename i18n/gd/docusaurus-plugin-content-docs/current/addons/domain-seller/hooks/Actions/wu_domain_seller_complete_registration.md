@@ -4,7 +4,7 @@ title: Gnìomh - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Gnìomh: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Gnìomh: wu_domain_seller_complete_registration
 
 Thèid a chur an gnìomh nuair a ghluaiseas pàigheadh gu inbhe a bu chòir clàradh àrainn a bhrosnachadh.
 

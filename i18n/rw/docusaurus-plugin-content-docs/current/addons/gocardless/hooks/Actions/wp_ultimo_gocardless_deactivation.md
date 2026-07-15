@@ -4,7 +4,7 @@ title: Igikorwa - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Igikorwa: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Igikorwa: wp_ultimo_gocardless_deactivation
 
 Reka ibindi bice bya plugin bihuze ibikorwa byabyo byo guhagarika
 

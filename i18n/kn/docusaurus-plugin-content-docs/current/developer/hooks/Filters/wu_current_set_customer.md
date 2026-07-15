@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Filter: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Filter: wu_current_set_customer
 
 ಡೆವಲಪರ್‌ಗಳು ಡೀಫಾಲ್ಟ್ ನಡವಳಿಕೆಯನ್ನು ಬದಲಾಯಿಸಲು ಮತ್ತು ಪ್ರಸ್ತುತ ಗ್ರಾಹಕರನ್ನು (current customer) ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಸೆಟ್ ಮಾಡಲು ಇದನ್ನು ಬಳಸಬಹುದು.
 

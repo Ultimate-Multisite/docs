@@ -4,7 +4,7 @@ title: 过滤器 - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# 过滤器: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# 过滤器: wu_is_development_mode
 
 允许插件开发者为开发模式添加额外的测试。
 

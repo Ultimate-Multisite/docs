@@ -4,7 +4,7 @@ title: Chiito - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Chiito: set_logged_in_cookie {#action-setloggedincookie}
+# Chiito: set_logged_in_cookie
 
 Chinotangwa pakarepo cookie yekusimbisa munhu apinda isati yaiswa.
 

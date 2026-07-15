@@ -4,7 +4,7 @@ title: Филтер - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Филтер: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Филтер: wu_should_redirect_to_primary_domain
 
 Омогућава програмерима да заобиђу преусмеравање, спречавајући да се оно догоди.
 

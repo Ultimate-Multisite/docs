@@ -3,7 +3,7 @@ title: Сторінка Account клієнта
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Сторінка Account вашого клієнта (v2) {#your-clients-account-page-v2}
+# Сторінка Account вашого клієнта (v2)
 
 _**ВАЖЛИВА ПРИМІТКА: ця стаття стосується Ultimate Multisite версії 2.x.**_
 

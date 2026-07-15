@@ -3,7 +3,7 @@ title: Konfigurimi dhe Konfigurimi i Proveuesit
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vërtetues i Domenit: Konfigurimi dhe Providuesi {#domain-seller-setup-and-provider-configuration}
+# Vërtetues i Domenit: Konfigurimi dhe Providuesi
 
 Addon-i "Domain Seller" vjen me një mburesh manual (wizard) që ju udhëheq në çdo hap të nevojshëm. Kjo faqe mbulon rrjedhën e këtij wizard dhe mënyrën se si ta konfigurosh ose rikonfigurosh providuesit pas kësaj.
 

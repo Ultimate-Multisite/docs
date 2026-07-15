@@ -3,7 +3,7 @@ title: Dokumentasyon sa Developer
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasyon para sa Developer {#developer-documentation}
+# Dokumentasyon para sa Developer
 
 Kining giya naghatag sa mga developer og tanan nga kinahanglan aron makakonekta, makapalapad, o makamugna og mga addon alang sa Ultimate Multisite. Ang Ultimate Multisite nagbag-o sa usa ka WordPress Multisite network ngadto sa usa ka Website-as-a-Service (WaaS) platform.
 

@@ -4,7 +4,7 @@ title: Isihluzi - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Isihluzi: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Isihluzi: wu_mt_syncable_user_meta_keys
 
 Sihluza uluhlu lwezitshixo ze-meta zomsebenzisi ekufuneka zingqanyaniswe kwiindawo ezikude.
 

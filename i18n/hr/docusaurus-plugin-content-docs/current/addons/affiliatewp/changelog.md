@@ -3,7 +3,7 @@ title: AffiliateWP dnevnik promjena
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP dnevnik promjena {#affiliatewp-changelog}
+# AffiliateWP dnevnik promjena
 
 Verzija: 2.0.1 - Objavljeno 2025-09-28
 

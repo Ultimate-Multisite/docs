@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# କାର୍ଯ୍ୟ: add_network {#action-addnetwork}
+# କାର୍ଯ୍ୟ: add_network
 
 ନୂତନ ନେଟୱର୍କ ଯୋଡ଼ାଯାଇବା ପରେ ଚାଲୁ ହୁଏ।
 

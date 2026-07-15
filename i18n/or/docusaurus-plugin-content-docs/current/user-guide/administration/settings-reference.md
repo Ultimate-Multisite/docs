@@ -3,7 +3,7 @@ title: ସେଟିଂସ୍ ସନ୍ଦର୍ଭ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# ସେଟିଂସ୍ ସନ୍ଦର୍ଭ {#settings-reference}
+# ସେଟିଂସ୍ ସନ୍ଦର୍ଭ
 
 ଏହି ପୃଷ୍ଠା Ultimate Multisite ରେ ଦୈନନ୍ଦିନ ପ୍ରଶାସନ ଏବଂ ସମ୍ପ୍ରତିର ଆଚରଣ ପରିବର୍ତ୍ତନକୁ ପ୍ରଭାବିତ କରୁଥିବା ସେଟିଂସ୍‌କୁ ଟ୍ରାକ୍ କରେ।
 

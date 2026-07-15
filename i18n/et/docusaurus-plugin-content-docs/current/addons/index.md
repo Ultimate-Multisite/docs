@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite lisad {#ultimate-multisite-addons}
+# Ultimate Multisite lisad
 
 Lisad laiendavad Ultimate Multisite’i täiendavate funktsioonide ja integratsioonidega. Enamik lisasid on tasulised ja neid saab osta saidilt [ultimatemultisite.com](https://ultimatemultisite.com).
 

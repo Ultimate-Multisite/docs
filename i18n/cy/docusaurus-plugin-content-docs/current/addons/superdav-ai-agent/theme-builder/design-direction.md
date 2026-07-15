@@ -3,7 +3,7 @@ title: Cyfeiriad Dylunio
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Cyfeiriad Dylunio {#design-direction}
+# Cyfeiriad Dylunio
 
 Mae cam **Cyfeiriad Dylunio** yn eich galluogi i adolygu, mireinio, a chwblhau dyluniad gweledol eich theme cyn i Theme Builder gynhyrchu'r theme cyflawn.
 

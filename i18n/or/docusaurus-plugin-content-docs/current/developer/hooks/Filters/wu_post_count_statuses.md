@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 ପ୍ଲଗଇନ ବିକାଶକାରୀମାନଙ୍କୁ କେଉଁ ପୋଷ୍ଟ ସ୍ଥିତି ଗଣାଯିବ ତାହା ବଦଳାଇବାକୁ ଦିଏ। ଡିଫଲ୍ଟ ଭାବେ, ପ୍ରକାଶିତ ଓ ନିଜସ୍ୱ ପୋଷ୍ଟଗୁଡ଼ିକ ଗଣାଯାଏ
 

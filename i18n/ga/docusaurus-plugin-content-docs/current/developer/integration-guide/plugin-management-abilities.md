@@ -3,7 +3,7 @@ title: Cumais Bhainistíochta Breiseán
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Cumais Bhainistíochta Breiseán {#plugin-management-abilities}
+# Cumais Bhainistíochta Breiseán
 
 Tagann Gratis AI Agent v1.5.0 le **7 gcumas bainistíochta breiseán** ar féidir leis an gcúntóir IS iad a agairt le linn comhrá. Soláthraíonn na cumais seo rialú ríomhchláraithe ar bhreiseáin WordPress atá suiteáilte tríd an [Córas Tógálaí Breiseán & Bosca Gainimh](../../user-guide/administration/plugin-builder-and-sandbox).
 

@@ -4,7 +4,7 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਇਹ ਚੈੱਕ (check) ਨੂੰ ਛੱਡਣ (bypass) ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ ਜੇਕਰ ਕੋਈ ਫੀਲਡ ਆਪਣੇ ਆਪ ਜਮ੍ਹਾਂ ਹੋਣਯੋਗ (auto-submittable) ਹੈ।
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Action: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Action: wp_ultimo_captcha_deactivation
 
 ပလပ်အင်ရဲ့ တခြားအပိုင်းတွေက ဒီ plugin ကို ပိတ်သိမ်းတဲ့အခါ လုပ်ဆောင်ရမယ့် လုပ်ငန်းစဉ်တွေကို ဒီနေရာမှာ ချိတ်ဆက်နိုင်ပါတယ်။
 

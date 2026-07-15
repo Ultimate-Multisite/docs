@@ -3,7 +3,7 @@ title: Mawu omwe onamukondwa
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Matanka Zikomo (Frequently Asked Questions) {#frequently-asked-questions}
+# Matanka Zikomo (Frequently Asked Questions)
 
 Ndi zikomo zokhawo zomwe zimeneza m'moyo pa zolemba za chidziwika.
 

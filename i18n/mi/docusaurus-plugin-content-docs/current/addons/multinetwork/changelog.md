@@ -3,7 +3,7 @@ title: Rārangi Huringa Whatunga-maha
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Rangitaki Huringa Multi-Network {#multi-network-changelog}
+# Rangitaki Huringa Multi-Network
 
 ### 1.3.0 {#130}
 * Hou: Kaitirotiro tauira whatunga — tirotirohia, arokitehia hoki ngā tauira whatunga mā tētahi paewhiri ora i mua i te hoko.

@@ -3,7 +3,7 @@ title: Tohutoro Tautuhinga
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tohutoro Tautuhinga {#settings-reference}
+# Tohutoro Tautuhinga
 
 Ka aroturuki tēnei whārangi i ngā tautuhinga e pā ana ki te whakahaere o ia rā, me ngā panonitanga whanonga hou i Ultimate Multisite.
 

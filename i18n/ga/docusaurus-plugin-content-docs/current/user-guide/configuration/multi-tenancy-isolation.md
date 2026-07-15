@@ -3,7 +3,7 @@ title: Isoláisiú Multi-tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolúidhríocht Multi-Tenancy {#multi-tenancy-isolation}
+# Isolúidhríocht Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 síosúidhríonn aisíon (isolation) deatach ar an dbhaine agus ar an fháil (filesystem) do chontail sobhraíolla. Is é seo an t-aonach a dhéanann na chontail ag teachtais, féachracha, agus rialúchán leat, gan a bheith data chontail ag cur isteach ar ais.
 

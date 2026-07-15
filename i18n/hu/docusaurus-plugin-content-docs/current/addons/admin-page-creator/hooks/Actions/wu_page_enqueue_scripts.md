@@ -4,7 +4,7 @@ title: Akció - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Akció: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Akció: wu_page_enqueue_scripts
 
 Egy böngészőben (action) adunk hozzá egy saját akciót, így lesz egy helyünk a szkriptek és stílusok betöltésére (enqueue), ahogy szükség van rájuk, és biztosítjuk, hogy csak a megfelelő oldalakon töltődjenek be.
 

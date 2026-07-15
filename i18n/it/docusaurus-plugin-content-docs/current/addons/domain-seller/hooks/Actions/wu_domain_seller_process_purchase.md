@@ -4,7 +4,7 @@ title: Azione - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Azione: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Azione: wu_domain_seller_process_purchase
 
 Si attiva quando viene elaborato l'acquisto di un dominio dopo il completamento del checkout.
 

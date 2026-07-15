@@ -3,7 +3,7 @@ title: Lenane la liphetoho la Litekete tsa Tšehetso
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Lenane la Liphetoho la Litekete tsa Tšehetso {#support-tickets-changelog}
+# Lenane la Liphetoho la Litekete tsa Tšehetso
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ntlafalitsoe: Ho tlositsoe bukana ea vendor/ ho tsoa ho lateleng ha Git (e se e koahetsoe ke .gitignore), ho fokotsa boholo ba polokelo

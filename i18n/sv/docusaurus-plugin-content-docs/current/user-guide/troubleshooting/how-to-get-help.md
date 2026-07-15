@@ -3,7 +3,7 @@ title: Hur man får hjälp
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Så får du hjälp {#how-to-get-help}
+# Så får du hjälp
 
 Du har fått din giltiga licensnyckel, och med den följer tillgång till vårt team som kan hjälpa dig lösa problem du kan stöta på när du sätter upp Ultimate Multisite.
 

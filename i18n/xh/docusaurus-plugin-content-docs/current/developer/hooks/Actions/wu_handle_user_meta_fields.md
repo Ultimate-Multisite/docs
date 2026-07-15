@@ -4,7 +4,7 @@ title: Isenzo - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Isenzo: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Isenzo: wu_handle_user_meta_fields
 
 Vumela abaphuhlisi be-plugin ukuba bagcine idatha ye-meta yomsebenzisi ngeendlela ezahlukeneyo ukuba bayayidinga.
 

@@ -3,7 +3,7 @@ title: Mailster Diari de canvis
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Diari de canvis de Mailster {#mailster-changelog}
+# Diari de canvis de Mailster
 
 ### 1.0.0 {#100}
 * Llançament inicial

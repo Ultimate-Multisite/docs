@@ -3,7 +3,7 @@ title: Özelleştirme ishlari uchun yordam
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-den Custom Development Yordamini Qanday Olinsa? {#how-to-get-custom-development-help-from-codeable}
+# Codeable-den Custom Development Yordamini Qanday Olinsa?
 
 Bazen bizning tarmoq oqimlarimizni aynan xohlagan holda qilish uchun juda ajoyib sozlamalarga ehtiyoj sezamiz. Agar siz shunday narsani qidirsangiz, biz [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ni tavsiya qilamiz, bu yerda Ultimate Multisite bo'yicha tajribali dasturchilarni topishingiz mumkin.
 

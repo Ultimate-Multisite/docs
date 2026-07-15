@@ -4,7 +4,7 @@ title: Действие - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Действие: wu_site_created {#action-wusitecreated}
+# Действие: wu_site_created
 
 Изстрелва, когато сайтът бъде създаден за първи път.
 

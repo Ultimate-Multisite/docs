@@ -3,7 +3,7 @@ title: コントロールパネル統合の強化
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel Integration {#enhance-control-panel-integration}
+# Enhance Control Panel Integration
 
 ## Overview {#overview}
 Enhance は、強力なホスティング自動化と管理機能を提供するモダンなコントロールパネルです。この統合により、Ultimate Multisite と Enhance Control Panel の間で自動ドメイン同期と SSL 証明書管理が可能になります。

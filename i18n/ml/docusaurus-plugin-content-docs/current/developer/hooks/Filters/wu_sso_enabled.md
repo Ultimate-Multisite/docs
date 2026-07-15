@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 ക്രോസ്-ഡൊമെയ്ൻ സിംഗിൾ-സൈൻ-ഓൺ (single-sign-on) പ്രവർത്തനം പ്രവർത്തനക്ഷമമാക്കാനും പ്രവർത്തനരഹിതമാക്കാനും ഇത് സഹായിക്കുന്നു.
 

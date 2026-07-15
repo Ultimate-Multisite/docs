@@ -3,7 +3,7 @@ title: Hestia 控制面板集成
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia 控制面板集成 {#hestia-control-panel-integration}
+# Hestia 控制面板集成
 
 本指南说明如何配置 Ultimate Multisite Hestia 集成，使您网络中映射的域名能够自动作为 Web 域名别名添加（并删除）到 Hestia。
 

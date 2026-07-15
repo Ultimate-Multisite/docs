@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Membership Expiration and Site Blocking {#membership-expiration-and-site-blocking}
+# Membership Expiration and Site Blocking
 
 Kuv ua le fa'amatalaga fa'amau o le Ultimate Multisite i le fa'amaonia o le membership expiration, trial endings, ma le site blocking o le frontend. O lona fa'amatalaga e fa'amalosia le fa'aopoopo o le membership uma o le active i le expired, o le mga setting e fa'amalosia lava o le mga site, ma o le mea e talano ai pe a ua mafa'aopoopo o le mga site i le fa'aopoopo pa ua mafa'aopoopo o le membership.
 

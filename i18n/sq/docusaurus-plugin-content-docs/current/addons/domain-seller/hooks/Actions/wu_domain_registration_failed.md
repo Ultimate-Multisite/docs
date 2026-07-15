@@ -4,7 +4,7 @@ title: Veprim - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Veprimi: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Veprimi: wu_domain_registration_failed
 
 Niset pasi dështon një përpjekje për regjistrimin e një domain-i.
 

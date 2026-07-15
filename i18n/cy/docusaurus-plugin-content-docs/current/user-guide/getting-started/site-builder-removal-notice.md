@@ -3,7 +3,7 @@ title: Cyflwyniad Aros y Mod Gweithredwr Safon
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Mae Tystyrchu Moddoliad {#site-builder-mode-removal-notice}
+# Mae Tystyrchu Moddoliad
 
 **Mae moddoliad Site Builder wedi cael ei aros yn Superdav AI Agent v1.12.0.** Os ydych chi'n defnyddio moddoliad Site Builder, rhaid i chi ddilyn y **Setup Assistant agent** ar gyfer creu thymau ac amgylchynu y safle.
 

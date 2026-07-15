@@ -3,7 +3,7 @@ title: Установка ва провайдер конфигурация
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Satıcı: Kurulum ve Sağlayıcı Yapılandırması {#domain-seller-setup-and-provider-configuration}
+# Domain Satıcı: Kurulum ve Sağlayıcı Yapılandırması
 
 Domain Seller eklentisi, sizi her bir gerekli adımda yönlendiren rehberli bir kurulum sihirbazıyla birlikte gelir. Bu sayfa sihirbaz akışını ve sonrasında sağlayıcıları nasıl yapılandıracağınızı veya yeniden yapılandıracağınızı anlatıyor.
 

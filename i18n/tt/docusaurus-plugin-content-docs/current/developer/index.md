@@ -3,7 +3,7 @@ title: Эшләүчеләр өчен документация
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Эшләүчеләр өчен документация {#developer-documentation}
+# Эшләүчеләр өчен документация
 
 Бу кулланма эшләүчеләргә Ultimate Multisite белән интеграцияләү, аны киңәйтү яки аның өчен addonнар эшләү өчен кирәкле барлык мәгълүматны бирә. Ultimate Multisite WordPress Multisite челтәрен Website-as-a-Service (WaaS) платформасына әйләндерә.
 

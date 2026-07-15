@@ -3,7 +3,7 @@ title: Fandaharan'ny Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite sy Zapier mifandray {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite sy Zapier mifandray
 
 Ao an'ny lahatsoratra iray, nolazainay ny momba ireo [Webhooks](webhooks.md) ary ny fomba azo ampiasaina amin'ny fampifandraisana amin'ny rindrambaiko hafa.
 

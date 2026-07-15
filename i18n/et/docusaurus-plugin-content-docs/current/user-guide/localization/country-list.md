@@ -3,7 +3,7 @@ title: Maailmakoode
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ühna Multisite riikude nime järjekorra muutmine {#re-ordering-the-ultimate-multisite-country-list}
+# Ühna Multisite riikude nime järjekorra muutmine
 
 Riigi valimiseks kasutatav drop-down on järjestatud abalkoni inglise keeles olevate riikude nimetega. See võib tähendada, et mõnikord teie ettevõtte või/kõige teie klientide kodriik on haudunud suurte riikude nime loendiga keskel.
 

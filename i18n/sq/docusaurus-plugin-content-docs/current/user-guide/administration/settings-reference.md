@@ -3,7 +3,7 @@ title: Referenca e cilësimeve
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenca e Settings {#settings-reference}
+# Referenca e Settings
 
 Kjo faqe ndjek Settings që ndikojnë në administrimin e përditshëm dhe ndryshimet e fundit të sjelljes në Ultimate Multisite.
 

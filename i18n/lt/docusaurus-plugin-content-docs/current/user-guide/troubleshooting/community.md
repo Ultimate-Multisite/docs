@@ -3,7 +3,7 @@ title: Bendrugumas
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kaip prisijungti Ultimate Multisite bendruomeni {#how-to-join-ultimate-multisite-community}
+# Kaip prisijungti Ultimate Multisite bendruomeni
 
 Ultimate Multisite Community yra vieta, kurio per metus galite susisiekti su kitais Ultimate Multisite vartotojai ir pasidalinti patarimais, patirtimi ir kitais dalyklais. Norėdami prieiti į Ultimate Multisite Community, eikite į https://community.ultimatemultisite.com/home.
 

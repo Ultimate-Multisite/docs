@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# କାର୍ଯ୍ୟ: wp_ultimo_ptm_page_wizard_footer
 
 plugin ବିକାଶକମାନଙ୍କୁ ପୃଷ୍ଠାର ତଳେ ସ୍କ୍ରିପ୍ଟ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଏ
 

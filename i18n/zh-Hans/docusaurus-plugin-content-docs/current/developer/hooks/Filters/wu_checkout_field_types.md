@@ -4,7 +4,7 @@ title: 过滤器 - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# 过滤器: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# 过滤器: wu_checkout_field_types
 
 我们的 API 用于添加新字段类型的钩子在此处。
 

@@ -3,7 +3,7 @@ title: 'Ders 10: Roja Weşandinê'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ders 10: Roja Destpêkirinê {#lesson-10-launch-day}
+# Ders 10: Roja Destpêkirinê
 
 Her tişt hatiye avakirin. Berî ku deriyan vekî, ev ders lîsteya kontrolê ya berî-destpêkirinê derbas dike da ku tu tişt şikestî, kêm, an şermker nebe.
 

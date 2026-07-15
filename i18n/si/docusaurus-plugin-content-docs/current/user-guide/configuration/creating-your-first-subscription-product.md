@@ -3,7 +3,7 @@ title: ඔබේ පළමු දායකත්ව නිෂ්පාදනය 
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# ඔබේ පළමු දායකත්ව නිෂ්පාදනය නිර්මාණය කිරීම (v2) {#creating-your-first-subscription-product-v2}
+# ඔබේ පළමු දායකත්ව නිෂ්පාදනය නිර්මාණය කිරීම (v2)
 
 _**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite version 2.x භාවිතා කරන්නන් සඳහා පමණි. ඔබ version 1.x භාවිතා කරන්නේ නම්,**_ **මෙම ලිපිය බලන්න**_**.
 

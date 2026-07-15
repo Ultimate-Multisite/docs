@@ -3,7 +3,7 @@ title: Pencatat Perubahan Ultimate AI Connector untuk Endpoint Serasi
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Senarai Perubahan Ultimate AI Connector untuk Endpoint Serasi {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Senarai Perubahan Ultimate AI Connector untuk Endpoint Serasi
 
 ## Versi 2.0.0 — Dikeluarkan pada 2026-04-24 {#version-200--released-on-2026-04-24}
 

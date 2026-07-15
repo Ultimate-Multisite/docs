@@ -3,7 +3,7 @@ title: ပြောင်းလဲမှုမှတ်တမ်း
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# ပြောင်းလဲမှုမှတ်တမ်း (Changelog) {#changelog}
+# ပြောင်းလဲမှုမှတ်တမ်း (Changelog)
 
 ## 1.9.0 — ၂၀၂၆-၀၄-၂၈ တွင် ထုတ်ဝေခဲ့သည် {#190--released-on-2026-04-28}
 

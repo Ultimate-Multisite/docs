@@ -3,7 +3,7 @@ title: 콘텐츠 동기화 변경 로그
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# 콘텐츠 동기화 변경 로그 {#content-sync-changelog}
+# 콘텐츠 동기화 변경 로그
 
 ### 버전 1.1.0 - 2025-12-31에 출시 {#version-110---released-on-2025-12-31}
 * New: 모든 포스트 유형(게시물, 페이지, 사용자 정의 포스트 유형)의 동기화 지원

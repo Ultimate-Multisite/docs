@@ -3,7 +3,7 @@ title: Настройване на PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Настройване на PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
+# Настройване на PayPal Gateway (v2)
 
 _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до Ultimate Multisite версия 2.x.**_
 

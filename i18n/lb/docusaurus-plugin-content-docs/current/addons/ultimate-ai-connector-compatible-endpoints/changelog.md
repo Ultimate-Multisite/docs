@@ -3,7 +3,7 @@ title: Ultimate AI Connector fir kompatibel Endpunkten Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for kompatibel Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector for kompatibel Endpoints Changelog
 
 ## Versioun 2.0.0 — Verëffentlecht den 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# ການກະທຳ: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# ການກະທຳ: wu_page_enqueue_scripts
 
 ເພີ່ມ custom action ຢູ່ບ່ອນນີ້ ເພື່ອໃຫ້ພວກເຮົາມີບ່ອນສຳລັບ enqueue scripts ແລະ styles ຕາມທີ່ຈຳເປັນ\ ແລະໃຫ້ແນ່ໃຈວ່າພວກມັນຖືກໂຫຼດສະເພາະໃນໜ້າທີ່ຖືກຕ້ອງເທົ່ານັ້ນ
 

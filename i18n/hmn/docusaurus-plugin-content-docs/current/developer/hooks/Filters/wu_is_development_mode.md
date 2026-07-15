@@ -4,7 +4,7 @@ title: Lim - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Lim: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Lim: wu_is_development_mode
 
 Tso cai rau cov neeg tsim qhov txuas ntxiv ntxiv cov kev kuaj ntxiv rau hom kev tsim kho.
 

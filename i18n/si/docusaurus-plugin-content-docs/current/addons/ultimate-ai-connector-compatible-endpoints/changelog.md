@@ -3,7 +3,7 @@ title: අනුකූල අන්ත ලක්ෂ්‍ය සඳහා Ultima
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# අනුකූල අන්ත ලක්ෂ්‍ය සඳහා Ultimate AI Connector වෙනස්කම් සටහන {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# අනුකූල අන්ත ලක්ෂ්‍ය සඳහා Ultimate AI Connector වෙනස්කම් සටහන
 
 ## අනුවාදය 2.0.0 — 2026-04-24 දින නිකුත් කරන ලදී {#version-200--released-on-2026-04-24}
 

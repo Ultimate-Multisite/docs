@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Diiwaanka Isbeddellada {#gocardless-changelog}
+# GoCardless Diiwaanka Isbeddellada
 
 Nooca: 1.0.3 - La sii daayay 2026-05-05
 * Hagaajin: sites sugaya oo agoonsan ayaa hadda la nadiifiyaa marka GoCardless membership la joojiyo iyadoo ku jirta xaalad sugitaan ama on-hold

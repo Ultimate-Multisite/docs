@@ -3,7 +3,7 @@ title: 基本概念
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Basic Concepts {#basic-concepts}
+# Basic Concepts
 
 For a new WordPress Multisite user and someone who just started using Ultimate Multisite, there can be a lot of new words and phrases to take on board at first. Learning them is an important task because you’ll need to understand the platform and how it works as a whole.
 

@@ -4,7 +4,7 @@ title: Scagaire - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Scagaire: wu_sso_enabled {#filter-wussoenabled}
+# Scagaire: wu_sso_enabled
 
 Cumasaigh/díchumasaigh cumas single-sign-on trasfhearainn.
 

@@ -3,7 +3,7 @@ title: RannCloud Intighneachadh
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integras {#runcloud-integration}
+# RunCloud Integras
 
 ## Aims {#overview}
 RunCloud is un platform airson sàbhailtean serveran a tha air a thabhail agus a leige sinn a' chlàradh agus a' sgrùdadh àitean web ar eadar. A tha an sinneachadh seo a' toirt sealladh ùr (domain syncing) agus sgrùdadh certficatean SSL gu sònraich air a' chlàradh Ultimate Multisite agus RunCloud.

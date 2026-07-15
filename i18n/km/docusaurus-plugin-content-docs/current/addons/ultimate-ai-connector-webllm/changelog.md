@@ -3,7 +3,7 @@ title: កំណត់ហេតុផ្លាស់ប្តូរ Ultimate AI 
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# កំណត់ហេតុការផ្លាស់ប្តូរ Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# កំណត់ហេតុការផ្លាស់ប្តូរ Ultimate AI Connector for WebLLM
 
 ## កំណែ 1.1.0 — ចេញផ្សាយនៅ 2026-04-09 {#version-110--released-on-2026-04-09}
 

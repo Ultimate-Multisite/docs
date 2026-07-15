@@ -4,7 +4,7 @@ title: Hidlydd - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Hidlydd: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Hidlydd: wu_password_require_special
 
 Hidlo a ddylid mynnu nodau arbennig mewn cyfrineiriau.
 

@@ -4,7 +4,7 @@ title: Kev nqis tes - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Kev ua: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Kev ua: wu_after_switch_template
 
 Tso cai rau cov neeg tsim plugin los txuas cov function tom qab ib tug neeg siv lossis tus thawj tswj loj hloov lub vev xaib tus qauv
 

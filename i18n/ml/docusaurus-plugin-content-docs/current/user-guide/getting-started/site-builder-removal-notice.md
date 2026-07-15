@@ -3,7 +3,7 @@ title: Site Builder Mode Removal Notice
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# സൈറ്റ് ബിൽഡർ മോഡ് നീക്കം ചെയ്യുന്നതിനെക്കുറിച്ചുള്ള അറിയിപ്പ് {#site-builder-mode-removal-notice}
+# സൈറ്റ് ബിൽഡർ മോഡ് നീക്കം ചെയ്യുന്നതിനെക്കുറിച്ചുള്ള അറിയിപ്പ്
 
 **Superdav AI Agent v1.12.0-ൽ സൈറ്റ് ബിൽഡർ മോഡ് (Site Builder mode) നീക്കം ചെയ്തിരിക്കുന്നു.** നിങ്ങൾ സൈറ്റ് ബിൽഡർ മോഡ് ഉപയോഗിക്കുകയാണെങ്കിൽ, തീം ഉണ്ടാക്കുന്നതിനും സൈറ്റ് സെറ്റപ്പ് ചെയ്യുന്നതിനും നിങ്ങൾ **Setup Assistant ഏജന്റിനൊപ്പം** (Setup Assistant agent) മാറണം.
 

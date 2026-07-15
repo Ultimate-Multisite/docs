@@ -3,7 +3,7 @@ title: Memoria de Cache de Prompts Conegut per el Proveïdor
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cacheo de Prompts Conscient del Proveïdor {#provider-aware-prompt-caching}
+# Cacheo de Prompts Conscient del Proveïdor
 
 Superdav AI Agent v1.12.0 presenta el **cacheo de prompts conscient del proveïdor**, que optimitza els costos i la latència de l'API cacheant prompts en diversos proveïdors de LLM. Cada proveïdor té mecanismes i configuracions de cache diferents.
 

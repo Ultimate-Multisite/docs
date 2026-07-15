@@ -3,7 +3,7 @@ title: GitHub स्निपेट्स
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# GitHub repository पर Ultimate Multisite snippets का उपयोग कैसे करें {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# GitHub repository पर Ultimate Multisite snippets का उपयोग कैसे करें
 
 GitHub repository में कुछ code snippets उपलब्ध हैं जो Ultimate Multisite users द्वारा अक्सर मांगे जाते हैं। ये users छोटी-छोटी functionalities जोड़ना चाहते हैं, जैसे sign-up pages पर Google Analytics script लगाना या admin dashboard से किसी meta box को छुपाना।
 
@@ -19,7 +19,7 @@ Code जोड़ने के 2 तरीके हैं
 
   2. Must-Use Plugins (mu-plugins)
 
-# अपनी theme की functions.php file में snippet कैसे जोड़ें {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# अपनी theme की functions.php file में snippet कैसे जोड़ें
 
   1. अपने WordPress Network admin dashboard में login करें और Themes > Theme Editor पर जाएं (नीचे screenshot देखें)।
 
@@ -29,7 +29,7 @@ Code जोड़ने के 2 तरीके हैं
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins (mu-plugins) कैसे बनाएं {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins (mu-plugins) कैसे बनाएं
 
 WordPress में एक feature है जो आपको custom functionality load करने की सुविधा देता है, इसे "Must-Use Plugins" या संक्षेप में "mu-plugins" कहते हैं।
 

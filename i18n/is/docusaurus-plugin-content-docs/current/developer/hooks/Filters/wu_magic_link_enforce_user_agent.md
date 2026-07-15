@@ -4,7 +4,7 @@ title: Sía - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Sía: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# Sía: wu_magic_link_enforce_user_agent
 
 Sía hvort eigi að framfylgja sannprófun á user agent.
 

@@ -4,7 +4,7 @@ title: 过滤器 - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# 过滤器: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# 过滤器: wp_ultimo_registration_steps
 
 通过过滤器添加额外步骤
 

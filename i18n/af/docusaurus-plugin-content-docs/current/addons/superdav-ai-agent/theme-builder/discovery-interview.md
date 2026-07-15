@@ -3,7 +3,7 @@ title: Ontdekkingsonderhoud
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ontdekkingsonderhoud {#discovery-interview}
+# Ontdekkingsonderhoud
 
 Die **Ontdekkingsonderhoud** is die eerste stap in Theme Builder se ontwerpproses. Dit versamel inligting oor u webwerf, besigheid en ontwerpvoorkeure om 'n gepersonaliseerde tema te skep.
 

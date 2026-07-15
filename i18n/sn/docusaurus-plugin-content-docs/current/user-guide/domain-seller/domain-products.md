@@ -3,7 +3,7 @@ title: Zvinhira dziri dzeNkhani dzakare uye Mhando dzemakore
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Zvinodi Kurumbira neKupedzisira {#domain-products-and-pricing}
+# Zvinodi Kurumbira neKupedzisira
 
 Domain products ndiyo nzira unogona kuva uri wauri kurumbidza upfungundu, TLDs (Top-Level Domains), WHOIS privacy, uye uchigadzirisa vanopenyu. Chikonzero chakanaka, munzvimbo dzese dzinogona kubva panguva yakakwana ya Ultimate Multisite netabu inotodzidzira **Domain Settings**.
 

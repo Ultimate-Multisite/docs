@@ -3,7 +3,7 @@ title: Ultimate Multisite-ты аудару
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite аудармасы {#translating-ultimate-multisite}
+# Ultimate Multisite аудармасы
 
 Ultimate Multisite ағылшын тілінде дайындалған, бірақ плагин толық аударылуға мүмкіндік береді және біз аудармаларға белсенді қабылдаймыз.
 

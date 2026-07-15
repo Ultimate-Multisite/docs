@@ -4,7 +4,7 @@ title: Kev nqis tes - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Kev ua: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Kev ua: wu_domain_renewal_completed
 
 Khiav tom qab ib lub domain tau rov txuas sijhawm tiav lawm.
 

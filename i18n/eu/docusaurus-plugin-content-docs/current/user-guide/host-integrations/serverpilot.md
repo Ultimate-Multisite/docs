@@ -3,7 +3,7 @@ title: ServerPilot Integrazioa
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integrazioa {#serverpilot-integration}
+# ServerPilot Integrazioa
 
 ## Deskuntzura {#overview}
 ServerPilot da cloud serwisu bat da WordPress eta beste PHP websteileak hostatzeko DigitalOcean, Amazon, Google edo beste server provedore batzuken serveretan. Horrek Ultimate Multisite eta ServerPilot-aren arteko domainio automatikoinarekin sinxetzea eta SSL sertifikatua administrazioa gogoratzen du.

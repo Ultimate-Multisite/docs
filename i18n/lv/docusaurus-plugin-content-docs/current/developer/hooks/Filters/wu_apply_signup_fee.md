@@ -4,7 +4,7 @@ title: Filtrs - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filtrs: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Filtrs: wu_apply_signup_fee
 
 Filtrē, vai piemērot reģistrēšanās maksu.
 

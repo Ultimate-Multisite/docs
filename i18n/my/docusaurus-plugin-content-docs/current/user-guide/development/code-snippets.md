@@ -3,7 +3,7 @@ title: ကုဒ်အပိုင်းအစများ
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 အတွက် Code Snippets များ {#code-snippets-for-v2}
+# v2 အတွက် Code Snippets များ
 
 အခြေခံအားဖြင့်၊ **WordPress** အတွက် code snippets များကို သီးခြား plugin ငယ်တစ်ခု လိုအပ်နိုင်သည့် အလုပ်များကို လုပ်ဆောင်ရန် အသုံးပြုပါသည်။ ထို code snippets များကို WordPress core သို့မဟုတ် theme ဖိုင်များထဲတွင် (များသောအားဖြင့် သင့် theme ၏ functions.php ဖိုင်တွင်) ထည့်သွင်းနိုင်ပြီး MU plugin အဖြစ်လည်း အသုံးပြုနိုင်ပါသည်။
 

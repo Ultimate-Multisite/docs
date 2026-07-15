@@ -3,7 +3,7 @@ title: בניית עסק מאתר נישה
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# בניית עסק לאתרי נישה עם Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# בניית עסק לאתרי נישה עם Ultimate Multisite
 
 רוב האנשים שמנסים למכור אתרים מתחרים על מחיר מול Wix, Squarespace, ואלפי פרילנסרים. והם מפסידים. אלה שמצליחים בוחרים קהל יעד ספציפי, בונים פתרון המותאם לקהל הזה, וגובים תשלום על הערך שהם מספקים.
 

@@ -3,7 +3,7 @@ title: Sispann yon Manmship
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Annileman yon Manm (v2) {#canceling-a-membership-v2}
+# Annileman yon Manm (v2)
 
 _**NOTI ENPÒTAN: Artikel sa a refere a Ultimate Multisite v2.x.**_
 

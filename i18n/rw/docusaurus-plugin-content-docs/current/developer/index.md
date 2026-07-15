@@ -3,7 +3,7 @@ title: Inyandiko z’abateza imbere porogaramu
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Inyandiko z’Abateza imbere {#developer-documentation}
+# Inyandiko z’Abateza imbere
 
 Uyu muyoboro uha abateza imbere ibikenewe byose kugira ngo bahuze na Ultimate Multisite, bayagure, cyangwa bateze imbere addons zayo. Ultimate Multisite ihindura urusobe rwa WordPress Multisite rukaba urubuga rwa Website-as-a-Service (WaaS).
 

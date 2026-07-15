@@ -3,7 +3,7 @@ title: Invio di email e comunicazioni di massa
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Invio di email e comunicazioni (v2) {#sending-emails-and-broadcasts-v2}
+# Invio di email e comunicazioni (v2)
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 

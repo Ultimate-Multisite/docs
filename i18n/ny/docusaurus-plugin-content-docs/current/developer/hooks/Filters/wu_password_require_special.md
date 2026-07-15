@@ -4,7 +4,7 @@ title: Sefa - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Fyuluta: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Fyuluta: wu_password_require_special
 
 Fyulutani ngati zilembo zapadera ziyenera kufunika m'mapasiwedi.
 

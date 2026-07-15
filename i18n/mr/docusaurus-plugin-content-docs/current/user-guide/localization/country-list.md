@@ -3,7 +3,7 @@ title: देशांची यादी
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite देश यादीचा क्रम बदलणे {#re-ordering-the-ultimate-multisite-country-list}
+# Ultimate Multisite देश यादीचा क्रम बदलणे
 
 देश निवडण्यासाठीची ड्रॉपडाउन यादी इंग्रजी देशांच्या नावांवर आधारित अक्षरानुक्रमे (alphabetically) मांडलेली असते. त्यामुळे कधीकधी तुमच्या कंपनीचा किंवा बहुतांश ग्राहकांचा देश मोठ्या यादीत मध्येच कुठेतरी दडलेला असतो.
 

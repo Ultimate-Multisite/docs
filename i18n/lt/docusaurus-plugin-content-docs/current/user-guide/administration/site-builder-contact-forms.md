@@ -3,7 +3,7 @@ title: Svetbuotojo kontaktiniai formai
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformatai weboldalépítő eszközökkel {#site-builder-contact-forms}
+# Kontaktformatai weboldalépítő eszközökkel
 
 Superdav AI Agent v1.10.0 lehetővé teszi kontaktformációk létrehozania direkt czatfelületen Site Builder agent segítségével. Ez lehetővé teszi, hogy bármilyen oldalon teljesen működő kontaktformációkat létrehozzonunk anélkül, hogy elhagyanánk a czatot.
 

@@ -4,7 +4,7 @@ title: Scagaire - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Scagaire: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Scagaire: wu_pending_payment_message
 
 Lig don úsáideoir an teachtaireacht faoi na híocaíochtaí ar feitheamh a athrú.
 

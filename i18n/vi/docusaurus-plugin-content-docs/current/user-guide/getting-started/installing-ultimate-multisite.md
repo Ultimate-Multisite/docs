@@ -3,7 +3,7 @@ title: Cài đặt Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Cài đặt Ultimate Multisite {#installing-ultimate-multisite}
+# Cài đặt Ultimate Multisite
 
 :::note
 Hướng dẫn này giả định rằng bạn đã cài đặt và cấu hình WordPress Multisite. Để tìm hiểu cách thực hiện, hãy xem [hướng dẫn này](https://www.wpbeginner.com/glossary/multisite/) của WP Beginner.

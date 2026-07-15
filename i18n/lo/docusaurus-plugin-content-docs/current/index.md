@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# ເອກະສານ Ultimate Multisite {#ultimate-multisite-documentation}
+# ເອກະສານ Ultimate Multisite
 
 ຍິນດີຕ້ອນຮັບສູ່ເອກະສານ Ultimate Multisite. Ultimate Multisite ປ່ຽນ WordPress Multisite ໃຫ້ເປັນແພລດຟອມເວັບໄຊເປັນບໍລິການ (WaaS) ຢ່າງຄົບຖ້ວນ.
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 ຂໍ້ມູນອ້າງອີງທາງເຕັກນິກສຳລັບນັກພັດທະນາທີ່ສ້າງຕໍ່ຍອດບົນ Ultimate Multisite. ປະກອບມີຂໍ້ມູນອ້າງອີງ hooks, ເອກະສານ REST API, ແລະຄູ່ມືການພັດທະນາ addon.
 
-### [Addons](/addons) {#addons}
+### [ສ່ວນເສີມ](/addons) {#addons}
 
 ເອກະສານສຳລັບ plugin addon ແບບຊຳລະເງິນທີ່ຂະຫຍາຍ Ultimate Multisite ດ້ວຍຄຸນສົມບັດເພີ່ມເຕີມ ເຊັ່ນ ການເຊື່ອມລວມ WooCommerce, ການວິເຄາະ, ການຂາຍໂດເມນ, ແລະອື່ນໆ.
 

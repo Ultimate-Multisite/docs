@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count {#filter-wupostcount}
+# Filter: wu_post_count
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് എണ്ണം ആകെത്തുക മാറ്റാൻ ഇത് അനുവദിക്കുന്നു.
 

@@ -3,7 +3,7 @@ title: Kỹ năng Đặc tả Trang web
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Thiết lập thông số trang web {#site-specification-skill}
+# Thiết lập thông số trang web
 
 **Kỹ năng Thiết lập thông số trang web** là một phương pháp có cấu trúc để ghi lại các mục tiêu, đối tượng và nhận diện thương hiệu của trang web bạn. Thông tin này được lưu trữ trong bộ nhớ **site_brief** của bạn, nơi các agent (trợ lý AI) tham chiếu qua các phiên làm việc để cung cấp sự hỗ trợ nhất quán và nhận biết ngữ cảnh.
 

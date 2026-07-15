@@ -3,7 +3,7 @@ title: ክፍያ መቀበል
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ክፍያ መቀበል (v2) {#getting-paid-v2}
+# ክፍያ መቀበል (v2)
 
 _**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ የUltimate Multisite ስሪት 2.xን ይመለከታል።**_
 

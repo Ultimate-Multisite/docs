@@ -3,7 +3,7 @@ title: Menu pro ubytování
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronómie menu {#hospitality-menus}
+# Gastronómie menu
 
 Funkce **Gastronómie menu** (Hospitality Menus) umožňuje Theme Builder vytvářet a vkládat strukturovaná menu pro jídlo a nápoje přímo na váš WordPress web.
 

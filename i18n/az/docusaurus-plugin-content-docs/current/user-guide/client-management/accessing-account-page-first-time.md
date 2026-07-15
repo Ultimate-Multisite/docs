@@ -3,7 +3,7 @@ title: Hesab Səhifəsinə Daxil Olmaq
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# İlk dəfə hesab səhifəminə necə daxil ola bilərəm? {#how-can-i-access-my-account-page-for-the-first-time}
+# İlk dəfə hesab səhifəminə necə daxil ola bilərəm?
 
 Ultimate Multisite-ə xoş gəlmisiniz!
 

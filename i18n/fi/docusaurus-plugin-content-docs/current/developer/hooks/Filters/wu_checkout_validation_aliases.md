@@ -4,7 +4,7 @@ title: Suodatin - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Suodatin: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Suodatin: wu_checkout_validation_aliases
 
 Salli plugin-kehittäjien lisätä mukautettuja aliaksia lomakkeen validaattoriin.
 

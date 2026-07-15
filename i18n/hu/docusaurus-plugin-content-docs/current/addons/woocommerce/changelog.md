@@ -3,7 +3,7 @@ title: WooCommerce integráció változásnapló
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration változásnapló {#woocommerce-integration-changelog}
+# WooCommerce Integration változásnapló
 
 2.2.0 verzió - Megjelent: 2026-07-01
 * Új: Az Ultimate Multisite adóösszegei mostantól külön WooCommerce díjtételként jelennek meg a checkout során, így az adóösszesítések fizetés előtt áttekinthetőbbek.

@@ -3,7 +3,7 @@ title: Dizaina virziens
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizaina virziens {#design-direction}
+# Dizaina virziens
 
 **Design Direction** solis ļauj jums pārskatīt, precizēt un pabeigt jūsu tēmas vizuālo dizainu, pirms Theme Builder ģenerē pilnu tēmu.
 

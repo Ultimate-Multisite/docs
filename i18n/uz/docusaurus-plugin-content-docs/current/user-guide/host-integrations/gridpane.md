@@ -3,7 +3,7 @@ title: GridPane Integratsiyasi
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integratsiyasi {#gridpane-integration}
+# GridPane Integratsiyasi
 
 ## Umumiy ko'rinish {#overview}
 GridPane bu jiddiy WordPress professionalari uchun mo'ljallangan maxsus hosting boshqaruv paneli (control panel). Bu integratsiya Ultimate Multisite va GridPane o'rtasida domenlarni avtomatik sinxronlash va SSL sertifikatlarini boshqarish imkonini beradi.

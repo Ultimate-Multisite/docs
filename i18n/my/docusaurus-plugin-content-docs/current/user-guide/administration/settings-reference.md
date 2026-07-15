@@ -3,7 +3,7 @@ title: ဆက်တင်များ ကိုးကားချက်
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings ရည်ညွှန်းချက် {#settings-reference}
+# Settings ရည်ညွှန်းချက်
 
 ဤစာမျက်နှာသည် Ultimate Multisite တွင် နေ့စဉ် စီမံခန့်ခွဲမှုနှင့် မကြာသေးမီ အပြုအမူပြောင်းလဲမှုများကို သက်ရောက်စေသော settings များကို မှတ်တမ်းတင်ထားသည်။
 

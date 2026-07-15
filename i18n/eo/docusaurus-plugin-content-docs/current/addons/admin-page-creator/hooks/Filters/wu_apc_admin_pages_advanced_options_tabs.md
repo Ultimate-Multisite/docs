@@ -4,7 +4,7 @@ title: Filtro - wu_apc_admin_pages_advanced_options_tabs
 sidebar_label: wu_apc_admin_pages_advanced_options_tabs
 _i18n_hash: 7b1560b02ed7effca5b4a1af86a50092
 ---
-# Filtrilo: wu_apc_admin_pages_advanced_options_tabs {#filter-wuapcadminpagesadvancedoptionstabs}
+# Filtrilo: wu_apc_admin_pages_advanced_options_tabs
 
 Langetoj
 

@@ -4,7 +4,7 @@ title: Sía - wu_cart_get_recurring_total
 sidebar_label: wu_cart_get_recurring_total
 _i18n_hash: 4ced5861259c5b81a288c1f3146f02d3
 ---
-# Sía: wu_cart_get_recurring_total {#filter-wucartgetrecurringtotal}
+# Sía: wu_cart_get_recurring_total
 
 Síar heildarupphæð „endurtekinnar upphæðar“.
 

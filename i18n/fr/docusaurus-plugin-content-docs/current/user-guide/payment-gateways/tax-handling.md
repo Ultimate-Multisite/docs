@@ -3,7 +3,7 @@ title: Gestion des taxes
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestion des taxes {#tax-handling}
+# Gestion des taxes
 
 Ultimate Multisite intègre un module de collecte des taxes dans notre plugin principal ; ainsi, si vous devez collecter des taxes de vente sur vos plans, forfaits et services, vous pouvez le faire facilement sans recourir à l’installation d’extensions.
 

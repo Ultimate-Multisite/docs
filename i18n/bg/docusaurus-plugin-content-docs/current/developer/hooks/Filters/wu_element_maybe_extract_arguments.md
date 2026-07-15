@@ -4,7 +4,7 @@ title: Филтър - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Филтър: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Филтър: wu_element_maybe_extract_arguments
 
 Добавя общ филтър, който позволява на разработчиците да разширят този парсър, за да работи с допълнителни билдъри или плагини.
 

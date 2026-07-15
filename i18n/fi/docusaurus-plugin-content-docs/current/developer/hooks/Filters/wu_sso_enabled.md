@@ -4,7 +4,7 @@ title: Suodatin - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Suodatin: wu_sso_enabled {#filter-wussoenabled}
+# Suodatin: wu_sso_enabled
 
 Ota käyttöön / poista käytöstä toimialueiden välinen single-sign-on-ominaisuus.
 

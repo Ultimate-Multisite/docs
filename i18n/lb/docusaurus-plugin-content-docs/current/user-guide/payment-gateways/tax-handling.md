@@ -3,7 +3,7 @@ title: Steierbehandlung
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Steierbehandlung {#tax-handling}
+# Steierbehandlung
 
 Ultimate Multisite huet e Modul fir d'Steiererhiewung an eisem Core plugin agebaut, sou datt wann Dir Verkafssteieren op Äre Pläng, Packagen a Servicer erhiewe musst, Dir dat einfach maache kënnt, ouni iergendwellech Add-ons installéieren ze mussen.
 

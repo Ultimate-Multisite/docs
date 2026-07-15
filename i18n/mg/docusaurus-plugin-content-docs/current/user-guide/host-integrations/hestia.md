@@ -3,7 +3,7 @@ title: Fampidirana Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Fandahana ny Fampidirana ao amin'ny Control Panel Hestia {#hestia-control-panel-integration}
+# Fandahana ny Fampidirana ao amin'ny Control Panel Hestia
 
 Ity toromarika ity dia manazava ny fomba fanaovana "configuration" an'ny integration Ultimate Multisite Hestia mba hampidirana (sy hamoahana) ho aliases Web Domain ireo domain voafidy ao amin'ny tambajotra iainanao.
 

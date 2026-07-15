@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Шүүлтүүр: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Шүүлтүүр: wu_checkout_step_validation_submittable_field_types
 
 Хэрэв талбар автоматаар илгээх боломжтой бол шалгалтыг алгасахыг хөгжүүлэгчдэд зөвшөөрнө.
 

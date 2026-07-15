@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# କାର୍ଯ୍ୟ: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# କାର୍ଯ୍ୟ: wu_captcha_after_validation
 
 captcha ସତ୍ୟାପନ ପରେ ଚାଲୁହୁଏ।
 

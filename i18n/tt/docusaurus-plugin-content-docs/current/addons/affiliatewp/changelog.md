@@ -3,7 +3,7 @@ title: AffiliateWP үзгәрешләр журналы
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP үзгәрешләр журналы {#affiliatewp-changelog}
+# AffiliateWP үзгәрешләр журналы
 
 Версия: 2.0.1 - 2025-09-28 чыгарылды
 

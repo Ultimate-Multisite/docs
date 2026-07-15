@@ -4,7 +4,7 @@ title: Azzjoni - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Azzjoni: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Azzjoni: wu_domain_seller_process_purchase
 
 Jitħaddem meta xiri ta' domain ikun qed jiġi pproċessat wara t-tlestija taċ-checkout.
 

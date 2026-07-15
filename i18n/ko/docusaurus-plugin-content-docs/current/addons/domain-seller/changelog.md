@@ -3,7 +3,7 @@ title: 도메인 판매자 변경 내역
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller 변경 로그 {#domain-seller-changelog}
+# Domain Seller 변경 로그
 
 버전 1.3.0 - 2026-06-02에 릴리스됨
 - 신규: HostAfrica 리셀러 잔액이 너무 낮아질 때 network-admin 경고 추가

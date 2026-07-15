@@ -3,7 +3,7 @@ title: Hestia Control Panel ඒකාබද්ධ කිරීම
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel එක සමඟ සම්බන්ධ කිරීම {#hestia-control-panel-integration}
+# Hestia Control Panel එක සමඟ සම්බන්ධ කිරීම
 
 මෙම මාර්ගෝපදේශය මගින් Ultimate Multisite Hestia integration එක සකස් කරන්නේ කෙසේද යන්න පැහැදිලි කරයි. එවිට ඔබේ ජාලයේ ඇති mapped domains (සිතියම් කරන ලද වෙබ් ડોමේන්) ස්වයංක්‍රීයව Hestia හි Web Domain Aliases ලෙස එකතු කිරීම (සහ ඉවත් කිරීම) සිදු වේ.
 

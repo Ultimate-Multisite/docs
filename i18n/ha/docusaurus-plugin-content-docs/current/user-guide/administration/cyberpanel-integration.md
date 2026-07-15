@@ -3,7 +3,7 @@ title: Shigarwar CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Shigarwarin CyberPanel Integration {#cyberpanel-integration}
+# Shigarwarin CyberPanel Integration
 
 Wannan hanyar da ke bayanin yadda za a tsara Ultimate Multisite CyberPanel integration don in domain-domain da aka haska a cikin shahararku su a ƙara (da kuma a cire) a matsayin virtual hosts a CyberPanel, tare da damar samar da auto-SSL ta Let's Encrypt.
 

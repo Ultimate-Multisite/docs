@@ -3,7 +3,7 @@ title: Tasu saamine
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Tasu saamine (v2) {#getting-paid-v2}
+# Tasu saamine (v2)
 
 _**OLULINE MÄRKUS: see artikkel käsitleb Ultimate Multisite versiooni 2.x.**_
 

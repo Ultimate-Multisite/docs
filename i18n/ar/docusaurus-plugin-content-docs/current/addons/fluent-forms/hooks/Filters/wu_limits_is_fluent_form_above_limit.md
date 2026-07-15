@@ -4,7 +4,7 @@ title: فلتر - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# عامل التصفية: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# عامل التصفية: wu_limits_is_fluent_form_above_limit
 
 يفحص ما إذا كان نوع النموذج المعطى مسموحًا به في هذه الخطة، ويسمح لمطوري الإضافات بتصفية قيمة الإرجاع
 

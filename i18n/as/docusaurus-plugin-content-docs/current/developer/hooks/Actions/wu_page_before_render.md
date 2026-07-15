@@ -4,7 +4,7 @@ title: কাৰ্য - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 প্লাগইন ডেভেলপাৰসকলক আমি পৃষ্ঠাখন প্ৰিন্ট কৰাৰ আগতে অতিৰিক্ত বিষয়বস্তু যোগ কৰিবলৈ অনুমতি দিয়ে।
 

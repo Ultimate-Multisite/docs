@@ -3,7 +3,7 @@ title: 'Les 7: Maak Dit Joune'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Les 7: Maak Dit Joune {#lesson-7-making-it-yours}
+# Les 7: Maak Dit Joune
 
 Jou kliënte moet nooit voel of hulle "net 'n WordPress plugin" gebruik nie. Hulle moet voel of hulle FitSite gebruik – 'n platform wat gebou is vir hul bedryf. Hierdie les dek branding, white-labeling, en hoe om die platform te laat voel soos 'n eie produk.
 

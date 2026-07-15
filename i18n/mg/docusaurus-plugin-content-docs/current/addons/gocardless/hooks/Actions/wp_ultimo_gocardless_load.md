@@ -4,7 +4,7 @@ title: Hetsika - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Hetsika: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Hetsika: wp_ultimo_gocardless_load
 
 Miteraka rehefa voaload daholo ny dependencies rehetra
 

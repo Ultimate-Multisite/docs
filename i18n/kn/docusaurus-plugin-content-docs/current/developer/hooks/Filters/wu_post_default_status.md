@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 ಇದು ಆಬ್ಜೆಕ್ಟ್ ಡೇಟಾವನ್ನು ಡೇಟಾಬೇಸ್‌ಗೆ ಸ್ಟೋರ್ ಮಾಡುವ ಮೊದಲು ಫಿಲ್ಟರ್ (filter) ಮಾಡುತ್ತದೆ.
 

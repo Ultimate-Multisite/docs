@@ -3,7 +3,7 @@ title: Elementu-gunearen hobekuntza-gainak
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Tema Builder Funtsioak: Block Temakakoa eta Aktibatu {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Tema Builder Funtsioak: Block Temakakoa eta Aktibatu
 
 Superdav AI Agent v1.12.0 iruditzen du bi funtzioa garrantzitsuak, zehandizko chat interface-n handiaren (block themes) generatzea eta desplokeatzea erabilizten.
 

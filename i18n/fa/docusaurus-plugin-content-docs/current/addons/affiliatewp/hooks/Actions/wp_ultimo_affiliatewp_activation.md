@@ -4,7 +4,7 @@ title: Action - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# اکشن: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# اکشن: wp_ultimo_affiliatewp_activation
 
 به بخش‌های دیگر پلاگین اجازه می‌دهد تا روتین‌های مربوط به فعال‌سازی خود را به این اکشن متصل کنند.
 

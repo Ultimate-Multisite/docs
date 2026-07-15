@@ -3,7 +3,7 @@ title: Integrasiی GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration with GridPane {#gridpane-integration}
+# Integration with GridPane
 
 ## گشتی (Overview) {#overview}
 GridPane یەک پۆلێکی تایبەت بۆ کۆنترۆڵکردنی هاستکردنی WordPress دروستکراوە کە بۆ پیشەنگان جدیی وۆردپریزی کار دەکەیت. ئەم یەکپارچوونە ڕێنوێنیی ئۆتۆماتیکی گۆڕینی دامێنی (domain syncing) و بەڕێوەبردنی پڕۆتۆکۆڵی SSL لە نێوان Ultimate Multisite و GridPane دەدات.

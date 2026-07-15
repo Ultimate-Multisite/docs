@@ -4,7 +4,7 @@ title: Mahi - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Mahinga: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Mahinga: wu_domain_renewal_failed
 
 Ka whakakāngia i muri i te rahunga o tētahi nganatanga whakahou ingoa rohe.
 

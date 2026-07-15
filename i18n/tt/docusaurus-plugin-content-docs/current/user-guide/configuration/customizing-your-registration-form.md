@@ -3,7 +3,7 @@ title: Теркәлү формагызны көйләү
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Теркәлү формасын көйләү {#customizing-your-registration-form}
+# Теркәлү формасын көйләү
 
 WordPress платформасында төзелгән башка SaaSлардан челтәрегез үзенчәлекле күренсен өчен, Ultimate Multisite сезгә **Checkout Forms** мөмкинлеге аша теркәлү һәм керү битләрен көйләргә мөмкинлек бирә.
 

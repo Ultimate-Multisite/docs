@@ -3,7 +3,7 @@ title: '10-dars: Ishga tushirish kuni'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Dars 10: Ishga tushirish kuni {#lesson-10-launch-day}
+# Dars 10: Ishga tushirish kuni
 
 Hammasi qurildi. Eshiklarni ochishdan oldin, bu dars ishga tushirishdan oldingi nazorat ro‘yxati orqali o‘tib, hech narsa buzilmagan, yetishmayotgan yoki noqulay holatga olib kelmasligiga ishonch hosil qiladi.
 

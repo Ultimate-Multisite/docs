@@ -4,7 +4,7 @@ title: Filtrum - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filtrum: wu_rest_get_items {#filter-wurestgetitems}
+# Filtrum: wu_rest_get_items
 
 Filtrat utrum procedere cum petitione liceat necne.
 

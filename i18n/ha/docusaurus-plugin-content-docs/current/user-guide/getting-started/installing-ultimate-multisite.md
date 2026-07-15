@@ -3,7 +3,7 @@ title: Sanya Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Shigar da Ultimate Multisite {#installing-ultimate-multisite}
+# Shigar da Ultimate Multisite
 
 :::note
 Wannan koyawa tana ɗauka cewa an riga an shigar da kuma tsara WordPress Multisite. Don koyon yadda ake yi, duba wannan koyawa [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) daga WP Beginner.

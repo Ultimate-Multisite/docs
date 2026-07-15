@@ -3,7 +3,7 @@ title: Плагин Билдер ва Сандбокс
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# پلاتین Builder & Sandbox (ساخت و آزمایش محیط) {#plugin-builder--sandbox}
+# پلاتین Builder & Sandbox (ساخت و آزمایش محیط)
 
 Gratis AI Agent v1.5.0-ی با سیستم **Plugin Builder & Sandbox System** رو معرفی می‌کنه که به شما اجازه می‌ده هوش مصنوعی، افزونه‌های وردپرس رو توی یک محیط ایزوله و امن روی شبکه خودتون بسازه، فعال کنه و مدیریت کنه.
 

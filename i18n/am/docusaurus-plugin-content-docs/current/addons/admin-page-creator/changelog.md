@@ -3,7 +3,7 @@ title: የአስተዳዳሪ ገጽ ፈጣሪ የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# የአስተዳዳሪ ገጽ ፈጣሪ የለውጥ መዝገብ {#admin-page-creator-changelog}
+# የአስተዳዳሪ ገጽ ፈጣሪ የለውጥ መዝገብ
 
 ### ስሪት 1.9.0 - የተለቀቀበት ቀን 2026-01-18 {#version-190---released-on-2026-01-18}
 

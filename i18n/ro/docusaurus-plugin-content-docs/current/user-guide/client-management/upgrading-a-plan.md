@@ -3,7 +3,7 @@ title: Actualizarea unui plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Actualizarea unui plan (v2) {#upgrading-a-plan-v2}
+# Actualizarea unui plan (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

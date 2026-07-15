@@ -3,7 +3,7 @@ title: Ko'p Beriladigan Savollar
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Tez-tez beriladigan savollar {#frequently-asked-questions}
+# Tez-tez beriladigan savollar
 
 Bu, texnik yordam so'rovlari paytida ko'pincha uchraydigan ba'zi **Tez-tez beriladigan savollardir**.
 

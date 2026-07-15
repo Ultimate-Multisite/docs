@@ -3,7 +3,7 @@ title: ຄວາມສາມາດຂອງ Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# ความสามารถของ Theme Builder: การสร้างโครงร่างและเปิดใช้งาน Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# ความสามารถของ Theme Builder: การสร้างโครงร่างและเปิดใช้งาน Block Themes
 
 Superdav AI Agent v1.12.0 มีความสามารถที่ทรงพลังสองอย่าง ที่ช่วยให้คุณสามารถสร้างและติดตั้ง block themes แบบกำหนดเองได้โดยตรงจากหน้าแชทเลยครับ
 

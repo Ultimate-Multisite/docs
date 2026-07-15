@@ -4,7 +4,7 @@ title: Filtre - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filtre: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filtre: wu_post_default_status
 
 Filtra les dades de l’objecte abans que s’emmagatzemin a la base de dades.
 

@@ -3,7 +3,7 @@ title: Abilități de Management al Plugin-urilor
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capabilități de Management al Plugin-urilor {#plugin-management-abilities}
+# Capabilități de Management al Plugin-urilor
 
 Gratis AI Agent v1.5.0 vine echipat cu **7 capacități de management al plugin-urilor** pe care asistentul AI le poate apela în timpul unei conversații. Aceste capacități oferă control programatic asupra plugin-urilor WordPress instalate prin [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

@@ -4,7 +4,7 @@ title: Aðgerð - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Aðgerð: set_logged_in_cookie {#action-setloggedincookie}
+# Aðgerð: set_logged_in_cookie
 
 Keyrir strax áður en logged-in auðkenningar-kakan er sett.
 

@@ -3,7 +3,7 @@ title: Veebilehtspesifikatsioon oskus
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Veebilete spetsivskil {#site-specification-skill}
+# Veebilete spetsivskil
 
 **Veebilete spetsivskil** on struktureeritud lähenemine veebisaite eesmärkide, publiku ja brändi identiteedi dokumenteerimiseks. See teave on salvestatud teie **site_brief** memori, mida agentid kasutavad erinevate sessioonide jooksul ühtlustamiseks ja kontekstiärilist abiks olema.
 

@@ -4,7 +4,7 @@ title: Gweithred - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Gweithred: set_logged_in_cookie {#action-setloggedincookie}
+# Gweithred: set_logged_in_cookie
 
 Yn tanio yn syth cyn i’r cwci dilysu mewngofnodedig gael ei osod.
 

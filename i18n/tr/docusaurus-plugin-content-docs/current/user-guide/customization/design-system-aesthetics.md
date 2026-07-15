@@ -3,7 +3,7 @@ title: Tasarım Sistemi Estetik Becerisi
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Tasarım Sistemi Estetiği Beceri Seti {#design-system-aesthetics-skill}
+# Tasarım Sistemi Estetiği Beceri Seti
 
 **Tasarım Sistemi Estetiği beceri seti**, sitenizin görsel kimliğini iyileştirmek için rehberli bir yaklaşımdır. Tasarım sisteminizi tanımlayan tipografi, renk, boşluk ve hareket tokenları hakkında tutarlı kararlar almanıza yardımcı olur.
 

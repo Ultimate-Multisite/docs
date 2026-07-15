@@ -3,7 +3,7 @@ title: Postavka i konfiguracija provajdera
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodavatel domena: Postavka i konfiguracija provajdera {#domain-seller-setup-and-provider-configuration}
+# Prodavatel domena: Postavka i konfiguracija provajdera
 
 Dodatak Domain Seller dolazi s vodičem za postavljanje koji vas vodi kroz svaki potreban korak. Ova stranica objašnjava tok tog vodiča te kako postaviti ili ponovo konfigurisati provajdere nakon toga.
 

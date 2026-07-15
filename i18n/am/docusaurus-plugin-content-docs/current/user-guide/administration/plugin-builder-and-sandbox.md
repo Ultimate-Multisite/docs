@@ -3,7 +3,7 @@ title: ፕልጊን ገንቢ እና የሙከራ አካባቢ
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder እና Sandbox {#plugin-builder--sandbox}
+# Plugin Builder እና Sandbox
 
 Gratis AI Agent v1.5.0 በ**Plugin Builder & Sandbox System** አዲስ ስሪት ቀርቧል። ይህ ሲስተም AI ረዳት በኔትዎርክዎ ላይ የWordPress plugins እንዲፈጥር፣ እንዲያነቃቃ እና እንዲያስተዳድር ያስችላል። ይህ ሁሉ በደህንነት የተጠበቀ እና የተገለለ (sandbox) አካባቢ ውስጥ ይከናወናል።
 

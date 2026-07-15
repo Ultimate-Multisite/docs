@@ -3,7 +3,7 @@ title: V1 ৰ পৰা স্থানান্তৰণ কৰা
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 ৰ পৰা মাইগ্ৰেট কৰা {#migrating-from-v1}
+# V1 ৰ পৰা মাইগ্ৰেট কৰা
 
 ## Ultimate Multisite, ইয়াৰ মূল ১.x ৰ পৰা ২.x ৰ সংস্কৰণীৰ পৰিয়াললৈ স্থানান্তৰ কৰিছে। {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

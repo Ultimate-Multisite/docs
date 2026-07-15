@@ -3,7 +3,7 @@ title: प्रगत कोड उदाहरणे
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples {#advanced-code-examples}
+# Advanced Code Examples
 
 या उदाहरणांमध्ये Ultimate Multisite सोबतचे प्रगत इंटिग्रेशन पॅटर्न (advanced integration patterns) दाखवले आहेत.
 

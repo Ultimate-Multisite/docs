@@ -3,7 +3,7 @@ title: Leiðarvísir um notkun króka
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Leiðarvísir um notkun hooks {#hooks-usage-guide}
+# Leiðarvísir um notkun hooks
 
 Ultimate Multisite býður upp á 200+ action hooks og 280+ filter hooks. Þessi síða fjallar um algengustu hooks með hagnýtum dæmum. Fyrir fullkomna sjálfvirkt útbúna tilvísun skaltu skoða hinar síðurnar í þessum hluta.
 

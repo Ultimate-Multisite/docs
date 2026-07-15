@@ -3,7 +3,7 @@ title: Ujumuishaji wa Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Kuunganisha na Hestia Control Panel {#hestia-control-panel-integration}
+# Kuunganisha na Hestia Control Panel
 
 Mwongozo huu unaeleza jinsi ya kusanidi uunganisho wa Ultimate Multisite na Hestia ili domain zilizounganishwa kwenye mtandao wako ziongezwe (na kuondolewa) kiotomatiki kama Web Domain Aliases kwenye Hestia.
 

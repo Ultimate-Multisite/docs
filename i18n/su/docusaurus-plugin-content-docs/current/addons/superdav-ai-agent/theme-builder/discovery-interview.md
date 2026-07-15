@@ -3,7 +3,7 @@ title: Wawancara Papanggihan
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wawancara Panalungtikan {#discovery-interview}
+# Wawancara Panalungtikan
 
 **Wawancara Panalungtikan** nyaéta léngkah munggaran dina prosés desain Theme Builder. Ieu ngumpulkeun inpormasi ngeunaan situs, bisnis, jeung karesep desain anjeun pikeun nyieun theme anu dipersonalisasi.
 

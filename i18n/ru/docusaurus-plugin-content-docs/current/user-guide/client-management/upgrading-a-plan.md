@@ -3,7 +3,7 @@ title: Повышение тарифа
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Повышение плана (v2) {#upgrading-a-plan-v2}
+# Повышение плана (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 

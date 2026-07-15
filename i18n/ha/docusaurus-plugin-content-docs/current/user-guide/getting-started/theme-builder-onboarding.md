@@ -3,7 +3,7 @@ title: Dalilin shiga Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# جریان شروع Theme Builder {#theme-builder-onboarding-flow}
+# جریان شروع Theme Builder
 
 Superdav AI Agent v1.12.0 شما را با یک **جریان راهنمای Theme Builder onboarding** آشنا می‌کند که در تنظیمات اولیه شما به ساختن یک قالب بلوکی سفارشی کمک می‌کند. این روش جایگزین حالت قدیمی Site Builder شده و رویکردی انعطاف‌پذیرتر است که توسط عامل (agent) کمک می‌شود.
 

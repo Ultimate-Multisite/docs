@@ -3,7 +3,7 @@ title: 'Phunziro 13: Kukulitsa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Phunziro 13: Kukulitsa {#lesson-13-scaling-up}
+# Phunziro 13: Kukulitsa
 
 Muli ndi nsanja yomwe ikugwira ntchito yokhala ndi makasitomala olipira. Phunziro ili likufotokoza mmene mungakulire kuchokera ku ntchito yaying'ono kupita ku bizinesi yokhazikika -- kukulitsa maziko a ukadaulo, kupanga ntchito zokha, ndi kuwonjezera ndalama pa kasitomala aliyense.
 

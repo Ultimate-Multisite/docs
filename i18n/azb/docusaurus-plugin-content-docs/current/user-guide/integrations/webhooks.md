@@ -3,7 +3,7 @@ title: وب‌هوک‌لار
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) اوستونه ایلک باخیش {#a-first-look-on-webhooks-v2}
+# Webhooks (v2) اوستونه ایلک باخیش
 
 _**دقت: بیلین کی بو اؤزلیک یاخود مقاله ایلیری سوّیه ایشلدنلر اوچوندور.**_
 

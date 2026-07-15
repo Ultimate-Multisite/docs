@@ -3,7 +3,7 @@ title: د طلوع خورشید فایل غلطي
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise File Install کې خطا {#error-installing-the-sunrise-file}
+# Sunrise File Install کې خطا
 
 sunrise.php फाइल یو ځانګړی फाइल دی چې WordPress له شروع کیدو (bootstrap) په وخت کې یې खोज्छ. که WordPress بتواند sunrise.php فایل ته وګوري، باید دا د **wp-content فولډر** په داخلي کې وي.
 

@@ -4,7 +4,7 @@ title: Aksyon - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Aksyon: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Aksyon: wu_domain_mapping_register_filters
 
 Kèk plugin ap sove URL anvan mapping lan te aktif oswa ap konstwi URL yo nan yon fason diferan ki pa enkli nan filters ki anwo yo.
 

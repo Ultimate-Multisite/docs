@@ -3,7 +3,7 @@ title: پنهنجو رجسٽريشن فارم ڪسٽمائيز ڪرڻ
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# پنهنجي Registration Form کي ترتيب ڏيڻ {#customizing-your-registration-form}
+# پنهنجي Registration Form کي ترتيب ڏيڻ
 
 WordPress پليٽفارم تي ٺهيل ٻين سڀني SaaS کان توهان جي نيٽ ورڪ کي منفرد ڏيکارڻ لاءِ، Ultimate Multisite توهان کي اسان جي **Checkout Forms** خاصيت سان پنهنجي رجسٽريشن ۽ لاگ اِن صفحن کي ترتيب ڏيڻ جي اجازت ڏئي ٿو.
 

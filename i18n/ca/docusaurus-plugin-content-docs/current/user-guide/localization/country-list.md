@@ -3,7 +3,7 @@ title: Llista de països
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Reordenar la lista de países de Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Reordenar la lista de países de Ultimate Multisite
 
 El menú desplegable para seleccionar un país se ordena alfabéticamente según las variantes en inglés de los nombres de los países. Esto puede significar que, a veces, el país de tu empresa y/o la mayoría de tus clientes estén escondidos en medio de una lista enorme de nombres de países.
 

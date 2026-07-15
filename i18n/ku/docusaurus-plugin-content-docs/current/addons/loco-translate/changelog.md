@@ -3,7 +3,7 @@ title: Loco Translate Dîroka guhertinan
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Guhertinên Loco Translate {#loco-translate-changelog}
+# Guhertinên Loco Translate
 
 ### 1.0.1 {#101}
 * Lihevhatina bi guhertoya herî dawî ya Loco Translate hat baştir kirin

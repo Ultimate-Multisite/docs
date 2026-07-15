@@ -4,7 +4,7 @@ title: Action - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Action: wu_cart_setup {#action-wucartsetup}
+# Action: wu_cart_setup
 
 Developer များအနေနဲ့ checkout object ကို အပိုဆောင်း ပြောင်းလဲမှုတွေ လုပ်နိုင်အောင် ခွင့်ပြုပါတယ်။
 

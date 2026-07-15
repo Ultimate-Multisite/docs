@@ -3,7 +3,7 @@ title: 'Leçon 13 : Mise à l''échelle'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leçon 13 : Mise à l'échelle {#lesson-13-scaling-up}
+# Leçon 13 : Mise à l'échelle
 
 Vous disposez d'une plateforme fonctionnelle avec des clients payants. Cette leçon explique comment passer d'une petite opération à une entreprise pérenne : mise à l'échelle de l'infrastructure, automatisation des opérations et augmentation du revenu par client.
 

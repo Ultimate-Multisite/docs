@@ -4,7 +4,7 @@ title: Isenzo - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 Vumela abaphuhlisi beplugin ukuba bongeze umxholo owongezelelweyo phambi kokuba siprinte iphepha.
 

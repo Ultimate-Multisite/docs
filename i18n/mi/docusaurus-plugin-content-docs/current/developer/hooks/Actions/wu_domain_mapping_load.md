@@ -4,7 +4,7 @@ title: Mahi - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Mahi: wu_domain_mapping_load {#action-wudomainmappingload}
+# Mahi: wu_domain_mapping_load
 
 Ka whakakāngia i muri i te utanga o tā mātou Domain Mapping matua
 

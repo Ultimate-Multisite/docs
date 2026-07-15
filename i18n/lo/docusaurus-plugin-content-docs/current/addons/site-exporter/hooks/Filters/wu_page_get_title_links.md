@@ -4,7 +4,7 @@ title: ຕົວກັ່ນຕອງ - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# ຕົວກອງ: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# ຕົວກອງ: wu_page_get_title_links
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ແລະພວກເຮົາເອງ ເພີ່ມລິ້ງຄຳສັ່ງໄປຍັງໜ້າແກ້ໄຂຂອງພວກເຮົາ.
 

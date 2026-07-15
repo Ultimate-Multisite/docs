@@ -3,7 +3,7 @@ title: Kugadzirwa neWPMU DEV Integration
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration neWPMU DEV {#wpmu-dev-integration}
+# Integration neWPMU DEV
 
 ## Zvinoro (Overview) {#overview}
 WPMU DEV ndiri platform yakakwana ye WordPress inoshandisa hosting, plugins, uye services kune sites dzine WordPress. Integration iyi inopa kuratidza domain syncing nekugadzirisa SSL certificate zvakaita kuti zvinotenderwa neUltimate Multisite nekubatsira nemhaka wemuhiringiro weWPMU DEV.

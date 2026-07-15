@@ -3,7 +3,7 @@ title: Kiambatisho Kipakaji Faili wa Dhoho
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Msaidizi wa Kufungua Faili ya Sunrise ya Addon {#addon-sunrise-file-loader}
+# Msaidizi wa Kufungua Faili ya Sunrise ya Addon
 
 Ultimate Multisite 2.8.0 inaongeza msaidizi wa kufungua (loader) wa 'sunrise' kwa ajili ya add-ons na viunganisho vya custom MU-plugin ambavyo vinahitaji kuendesha wakati wa mchakato wa kuanzisha (bootstrapping) wa WordPress sunrise bila kuhariri faili ya `wp-content/sunrise.php` iliyoundwa.
 

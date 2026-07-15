@@ -3,7 +3,7 @@ title: Kaip įdėti įvykdyti WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kaip instaluoti WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kaip instaluoti WordPress Multisite?
 
 WordPress Multisite leidžia turėti tinklą svetaini. Tai yra įtrauktas funkcija, bet ji neaktyvuota kaip pagrindinis nustatymas.
 

@@ -3,7 +3,7 @@ title: Integraashada WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Isku-dhaafinta WPMU DEV {#wpmu-dev-integration}
+# Isku-dhaafinta WPMU DEV
 
 ## Guudbixitaanka (Overview) {#overview}
 WPMU DEV waa platform WordPress oo dhammaystiran oo bixiya hosting, plugins, iyo adeegyo loogu talagalay goobaha WordPress. Isku-dhafka (integration) kan wuxuu kuu oggolaanayaa isku-dubbaridda domain-ka (domain syncing) iyo maamulka shahaadada SSL-ka (SSL certificate management) inta badan ka dhexe Ultimate Multisite iyo hosting-ga WPMU DEV.

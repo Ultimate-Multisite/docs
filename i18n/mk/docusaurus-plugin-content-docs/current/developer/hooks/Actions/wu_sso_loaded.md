@@ -4,7 +4,7 @@ title: Дејство - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Акција: wu_sso_loaded {#action-wussoloaded}
+# Акција: wu_sso_loaded
 
 Дозволува на развивачите на приклучоци да додаваат дополнителни hooks, ако е потребно.
 

@@ -4,7 +4,7 @@ title: الإجراء - wu_checkout_after_process_order
 sidebar_label: wu_checkout_after_process_order
 _i18n_hash: 40a5c096f223c5f82a109163c29284d3
 ---
-# الإجراء: wu_checkout_after_process_order {#action-wucheckoutafterprocessorder}
+# الإجراء: wu_checkout_after_process_order
 
 السماح للمطورين بتفعيل نقاط ربط إضافية.
 

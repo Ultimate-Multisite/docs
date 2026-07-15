@@ -3,7 +3,7 @@ title: Kodo kūrimas
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Nuodų kodų kūrimas (v2) {#creating-discount-codes-v2}
+# Nuodų kodų kūrimas (v2)
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 

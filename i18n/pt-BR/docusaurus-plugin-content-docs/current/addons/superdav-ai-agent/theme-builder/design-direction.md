@@ -3,7 +3,7 @@ title: Direção de Design
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direção do Design {#design-direction}
+# Direção do Design
 
 O passo **Direção do Design** permite que você revise, refine e finalize o design visual do seu tema antes que o Theme Builder gere o tema completo.
 

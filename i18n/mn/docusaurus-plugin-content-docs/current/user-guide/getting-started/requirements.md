@@ -3,7 +3,7 @@ title: Шаардлага
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Шаардлага {#ultimate-multisite-requirements}
+# Ultimate Multisite Шаардлага
 
 Ultimate Multisite-ыг худалдаж авахын өмнө та өөртөө дараах зүйлийг асууж үзэх нь чухал: бидний плагиныг ажиллуулах шаардлага юу вэ? Сайн мэдээлэл бол Ultimate Multisite-ыг ажиллуулахад хэдхэн үндсэн шаардлага л байна: **домен нэр** , сайн **хостинг компани** болон WordPress-ийн **Multisite** суулгалт. Энэ бүх зүйл хангалттай!
 

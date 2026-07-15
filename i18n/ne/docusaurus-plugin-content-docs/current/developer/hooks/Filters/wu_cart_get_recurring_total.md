@@ -4,7 +4,7 @@ title: फिल्टर - wu_cart_get_recurring_total
 sidebar_label: wu_cart_get_recurring_total
 _i18n_hash: 4ced5861259c5b81a288c1f3146f02d3
 ---
-# फिल्टर: wu_cart_get_recurring_total {#filter-wucartgetrecurringtotal}
+# फिल्टर: wu_cart_get_recurring_total
 
 "दोहोरिने रकम" कुललाई फिल्टर गर्छ।
 

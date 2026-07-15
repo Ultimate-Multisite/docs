@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# ຕົວກອງ: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# ຕົວກອງ: wu_wp_cli_enabled_sub_commands
 
 ກອງວ່າ sub_commands ໃດຖືກເປີດໃຊ້ສຳລັບເອນທິຕີນີ້.
 

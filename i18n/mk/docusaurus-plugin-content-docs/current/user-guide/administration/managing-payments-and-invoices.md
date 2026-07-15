@@ -3,7 +3,7 @@ title: Управување со плаќања и фактури
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Управу наплати и фактурирање {#managing-payments-and-invoices}
+# Управу наплати и фактурирање
 
 ## Поставки за плаќање {#payment-settings}
 

@@ -3,7 +3,7 @@ title: Ìṣepọ̀ GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ìṣepọ̀ GridPane {#gridpane-integration}
+# Ìṣepọ̀ GridPane
 
 ## Àkótán {#overview}
 GridPane jẹ́ paneli ìṣàkóso ìgbalejo WordPress amọ̀ja tí a kọ́ fún àwọn akosemose WordPress tó ṣe pàtàkì. Ìṣepọ̀ yìí jẹ́ kí ìmúṣiṣẹpọ̀ domain laifọwọyi àti ìṣàkóso ìjẹ́rìí SSL lè ṣẹlẹ̀ láàárín Ultimate Multisite àti GridPane.

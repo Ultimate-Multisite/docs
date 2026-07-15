@@ -4,7 +4,7 @@ title: Aðgerð - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Aðgerð: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Aðgerð: wp_ultimo_affiliatewp_activation
 
 Leyfðu öðrum hlutum pluginsins að tengja sínar rútínur fyrir virkjun
 

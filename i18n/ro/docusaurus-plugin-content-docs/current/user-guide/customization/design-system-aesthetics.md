@@ -3,7 +3,7 @@ title: Abilități în Estetica Sistemului de Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill de Estetică a Sistemului de Design {#design-system-aesthetics-skill}
+# Skill de Estetică a Sistemului de Design
 
 **Skill-ul de Estetică a Sistemului de Design** este o metodă ghidată pentru rafinarea identității vizuale a site-ului tău. Te ajută să iei decizii consistente privind tipografia, culoarea, spațierea și elementele de mișcare (motion tokens) care definesc sistemul tău de design.
 

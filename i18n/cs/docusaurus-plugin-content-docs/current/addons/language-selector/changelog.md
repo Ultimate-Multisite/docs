@@ -3,7 +3,7 @@ title: Výběr jazyka - Změny v logu
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Historie změn pro vyběr jazyka {#language-selector-changelog}
+# Historie změn pro vyběr jazyka
 
 Version: 1.1.3 - Released on 2026-05-05
 * Oprava: Vstupní proměnné jsou nyní očištěné a názvy vlastních hooků jsou předponovány, aby se zabránilo konfliktům s pluginy třetích stran.

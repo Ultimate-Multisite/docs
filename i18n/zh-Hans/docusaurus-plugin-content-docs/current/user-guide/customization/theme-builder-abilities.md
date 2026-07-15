@@ -3,7 +3,7 @@ title: 主题构建能力
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# 主题构建功能：搭建和激活区块主题 {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# 主题构建功能：搭建和激活区块主题
 
 Superdav AI Agent v1.12.0 引入了两个强大的功能，允许您直接通过聊天界面生成和部署自定义区块主题。
 

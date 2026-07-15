@@ -3,7 +3,7 @@ title: Lenane la liphetoho
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Lenane la diphetoho {#changelog}
+# Lenane la diphetoho
 
 ## 1.18.0 — E lokollotswe ka 2026-06-29 {#1180--released-on-2026-06-29}
 

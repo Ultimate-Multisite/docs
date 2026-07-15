@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i Menaxherit të Shtojcave dhe Temave
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Regjistri i ndryshimeve i Menaxherit të shtojcave dhe temave {#plugin--theme-manager-changelog}
+# Regjistri i ndryshimeve i Menaxherit të shtojcave dhe temave
 
 Versioni: 2.0.8 - Publikuar më 2026-05-05
 * Përmirësuar: Lista e shtojcave tani përdor cache-in e faqes për të reduktuar pyetjet në bazën e të dhënave dhe për të përmirësuar performancën

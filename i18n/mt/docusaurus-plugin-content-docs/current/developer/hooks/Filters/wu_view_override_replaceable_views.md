@@ -4,7 +4,7 @@ title: Filtru - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtru: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtru: wu_view_override_replaceable_views
 
 Jippermetti lill-iżviluppaturi jżidu folders addizzjonali mal-lista sostitwibbli.
 

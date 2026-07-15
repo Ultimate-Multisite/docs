@@ -3,7 +3,7 @@ title: Gweithredoedd Tyn-gwrthyn
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operacioedd Tenantau Sovereigennol {#sovereign-tenant-operations}
+# Operacioedd Tenantau Sovereigennol
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yn ychwanegau o ddefnyddio ar gyfer tenantau souvereniol: subsaites sy'n rhedeg gyda'u hunain db, gwrthdrefn fylfach (filesystem root), a cyd-fyndiad cyflwyniad (routing context) ond yn parhau i fod yn wellgynol gan y admin y rheol.
 

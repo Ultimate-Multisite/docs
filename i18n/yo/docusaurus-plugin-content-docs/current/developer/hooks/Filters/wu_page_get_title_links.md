@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Ajọ: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Ajọ: wu_page_get_title_links
 
 Gba àwọn olùdàgbàsókè afikun, àti àwa fúnra wa, láàyè láti ṣàfikún àwọn ìjápọ̀ ìṣe sí àwọn ojú-iwe àtúnṣe wa
 

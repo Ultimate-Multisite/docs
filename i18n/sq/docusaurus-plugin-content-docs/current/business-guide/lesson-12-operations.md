@@ -3,7 +3,7 @@ title: 'Mësimi 12: Drejtimi i biznesit'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Mësimi 12: Drejtimi i biznesit {#lesson-12-running-the-business}
+# Mësimi 12: Drejtimi i biznesit
 
 Një platformë nuk është një projekt që e përfundon -- është një biznes që e drejton. Ky mësim mbulon operacionet e përditshme të menaxhimit të FitSite: mbështetjen, faturimin, mirëmbajtjen dhe mbajtjen e klientëve të kënaqur.
 

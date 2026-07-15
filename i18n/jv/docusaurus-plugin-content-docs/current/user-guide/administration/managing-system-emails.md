@@ -3,7 +3,7 @@ title: Ngatur Email Sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ngelola Email Sistem {#managing-system-emails}
+# Ngelola Email Sistem
 
 Ultimate Multisite ngirim email sistem kanggo acara-acara kaya konfirmasi pendaftaran, bukti pembayaran, lan perubahan keanggotaan. Sampeyan bisa ngowahi templat email iki supaya cocok karo *brand* sampeyan.
 

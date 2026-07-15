@@ -3,7 +3,7 @@ title: Mofuta wa Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Tšhobo ea Dashboard {#dashboard-overview}
+# Tšhobo ea Dashboard
 
 Ultimate Multisite e na **Dashboard** e teng ho menu ea Ultimate Multisite, le e reka le widgets tsa Network Dashboard. Le lipoti li batla hore o bone le le bothae.
 

@@ -4,7 +4,7 @@ title: Tace - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Tacewa: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Tacewa: wu_billing_address_fields
 
 Ba masu haɓaka ƙari damar tace filayen adireshin biyan kuɗi.
 

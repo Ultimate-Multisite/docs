@@ -3,7 +3,7 @@ title: Camp de finalització de compra i DNS del client
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Camp de checkout i gestió de DNS dels clients {#checkout-field-and-customer-dns-management}
+# Camp de checkout i gestió de DNS dels clients
 
 ## El camp de checkout Domain Selection {#the-domain-selection-checkout-field}
 

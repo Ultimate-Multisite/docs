@@ -3,7 +3,7 @@ title: الآلتميت ملتي سايت
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ترجمو {#translating-ultimate-multisite}
+# Ultimate Multisite ترجمو
 
 Ultimate Multisite ان English ۾ ٺهي آهي، پر هي plugin پوري طرح ترجمي لاءِ کائتو آهي ۽ اسين فعال طور تي ترجمي جو تعاون گهڻو استقبال ڪندون آهيون.
 

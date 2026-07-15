@@ -3,7 +3,7 @@ title: Cambiar a un plan inferior
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Degradar un plan (v2) {#downgrading-a-plan-v2}
+# Degradar un plan (v2)
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 

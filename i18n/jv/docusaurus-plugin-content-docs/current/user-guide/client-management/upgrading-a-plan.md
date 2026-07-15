@@ -3,7 +3,7 @@ title: Ngganti Rencana
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ng-upgrade Rencana (v2) {#upgrading-a-plan-v2}
+# Ng-upgrade Rencana (v2)
 
 _**CATATAN PENTING: Artikel iki merujuk marang Ultimate Multisite versi 2.x.**_
 

@@ -4,7 +4,7 @@ title: wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Bazı eklentiler, eşleme aktif olmadan önce URL'leri kaydedebilir veya yukarıdaki filtrelerde yer almayan farklı bir yöntemle URL oluşturabilir.
 

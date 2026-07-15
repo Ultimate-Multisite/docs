@@ -4,7 +4,7 @@ title: 過濾器 - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filter: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filter: wu_password_require_uppercase
 
 過濾器，用於判斷密碼是否需要包含大寫字母。
 

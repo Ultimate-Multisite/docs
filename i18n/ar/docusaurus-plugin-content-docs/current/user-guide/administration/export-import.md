@@ -3,7 +3,7 @@ title: تصدير واستيراد
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# التصدير والاستيراد {#export--import}
+# التصدير والاستيراد
 
 تضيف Ultimate Multisite 2.9.0 أداة **تصدير واستيراد** (Export & Import) الخاصة بالموقع الواحد تحت **Tools > Export & Import**. استخدم هذه الأداة عندما تحتاج إلى تجميع موقع WordPress واحد في ملف ZIP، أو استعادة هذا الملف المضغوط، أو نقل موقع بين تثبيتات WordPress المتوافقة الخاصة بالموقع الواحد و Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Panoramica della Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview {#dashboard-overview}
+# Dashboard Overview
 
 Ultimate Multisite dispone di un **Dashboard** dedicato nel menu Ultimate Multisite, e aggiunge anche widget al Dashboard di Rete. Questo articolo copre ciò che vedrai in entrambi i luoghi.
 

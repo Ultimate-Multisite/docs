@@ -4,7 +4,7 @@ title: Criathrag - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filter: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filter: wu_bypass_unset_current_user
 
 Leig le luchd-leasachaidh a dhol seachad air a’ chòd a chuireas an cleachdaiche làithreach gu neo-shuidhichte.
 

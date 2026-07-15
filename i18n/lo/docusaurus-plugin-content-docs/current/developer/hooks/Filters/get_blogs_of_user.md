@@ -4,7 +4,7 @@ title: ຕົວກອງ - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# ຕົວກອງ: get_blogs_of_user {#filter-getblogsofuser}
+# ຕົວກອງ: get_blogs_of_user
 
 ຈຳລອງ WP Filter ຕົ້ນສະບັບໄວ້ທີ່ນີ້ ເພື່ອຄວາມຮອບຄອບ.
 

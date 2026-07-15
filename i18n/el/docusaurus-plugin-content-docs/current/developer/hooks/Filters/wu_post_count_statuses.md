@@ -4,7 +4,7 @@ title: Φίλτρο - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Φίλτρο: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Φίλτρο: wu_post_count_statuses
 
 Επιτρέπει στους developers plugins να αλλάξουν ποια status των posts πρέπει να υπολογίζονται. Προε default, υπολογίζονται τα published και τα private posts.
 

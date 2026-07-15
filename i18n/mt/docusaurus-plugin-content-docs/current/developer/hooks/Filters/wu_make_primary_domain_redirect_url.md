@@ -4,7 +4,7 @@ title: Filtru - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filtru: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Filtru: wu_make_primary_domain_redirect_url
 
 Jiffiltra l-URL tar-ridirezzjoni wara li dominju jsir primarju.
 

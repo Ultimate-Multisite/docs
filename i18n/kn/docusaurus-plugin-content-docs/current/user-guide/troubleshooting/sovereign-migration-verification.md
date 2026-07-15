@@ -3,7 +3,7 @@ title: ಸಾರ್ವಭೌಮ ವಲಿಕasyon ಪರಿಶೀಲನೆ
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# ಸಾರ್ವಭೌಮ ವಲಿಕೇಶದ ಪರಿಶೀಲನೆ (Sovereign Migration Verification) {#sovereign-migration-verification}
+# ಸಾರ್ವಭೌಮ ವಲಿಕೇಶದ ಪರಿಶೀಲನೆ (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ನಲ್ಲಿ ಸಾರ್ವಭೌಮ ಟೆಂಟೆಂಟ್ ಮೈಗ್ರೇಷನ್‌ಗಳಿಗಾಗಿ WP-CLI ಪರಿಶೀಲನಾ ಕಮಾಂಡ್‌ಗಳಿವೆ. ಒಂದು ಟೆಂಟೆಂಟ್ ಮೈಗ್ರೇಷನ್, SSO ಭೇಟಿ ಅಥವಾ ಪ್ರತ್ಯೇಕ ಅಳವಡಿಕೆ ನಿರೀಕ್ಷೆಯಂತೆ ಕಾರ್ಯನಿರ್ವಹಿಸದಿದ್ದರೆ ಇವುಗಳನ್ನು ಬಳಸಿ.
 

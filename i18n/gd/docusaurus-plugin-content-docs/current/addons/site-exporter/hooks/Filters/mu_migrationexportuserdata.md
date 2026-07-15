@@ -4,7 +4,7 @@ title: Criathrag - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Criathrag: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Criathrag: mu_migration/export/user/data
 
 Criathraichidh seo an seata bunaiteach de dhàta cleachdaiche ri às-phortadh/ion-phortadh.
 

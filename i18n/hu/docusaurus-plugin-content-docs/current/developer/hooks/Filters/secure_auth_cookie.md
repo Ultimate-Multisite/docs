@@ -4,7 +4,7 @@ title: Szűrő - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Szűrő: secure_auth_cookie {#filter-secureauthcookie}
+# Szűrő: secure_auth_cookie
 
 Megállapítja, hogy az autentikációs sütit (auth cookie) csak HTTPS protokollon kell-e küldeni.
 

@@ -3,7 +3,7 @@ title: Ogłoszenie o usunięciu trybu budowania strony
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Usunięcie trybu Site Builder {#site-builder-mode-removal-notice}
+# Usunięcie trybu Site Builder
 
 **Tryb Site Builder został usunięty w Superdav AI Agent v1.12.0.** Jeśli korzystałeś z trybu Site Builder, powinieneś przenieść się do używania **Setup Assistant agent** do tworzenia motywów i konfiguracji stron.
 

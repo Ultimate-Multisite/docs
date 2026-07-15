@@ -3,7 +3,7 @@ title: Ìtọ́kasí Àwọn Ètò
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Itọkasi Settings {#settings-reference}
+# Itọkasi Settings
 
 Oju-iwe yii n tọpinpin settings ti o kan iṣakoso ojoojumọ ati awọn ayipada ihuwasi aipẹ ninu Ultimate Multisite.
 

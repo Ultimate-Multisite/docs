@@ -4,7 +4,7 @@ title: ফিল্টৰ - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filter: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filter: wu_checkout_field_templates
 
 নতুন ফিল্ড টেমপ্লেট যোগ কৰিবলৈ আমাৰ APIs ইয়াত সংযোগ কৰে।
 

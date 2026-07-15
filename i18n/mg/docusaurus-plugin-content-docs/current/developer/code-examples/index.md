@@ -3,7 +3,7 @@ title: Ohatra kaody avo lenta
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ohatra Kaody Mandroso {#advanced-code-examples}
+# Ohatra Kaody Mandroso
 
 Ireo ohatra ireo dia mampiseho lamina fampifandraisana mandroso miaraka amin'ny Ultimate Multisite.
 

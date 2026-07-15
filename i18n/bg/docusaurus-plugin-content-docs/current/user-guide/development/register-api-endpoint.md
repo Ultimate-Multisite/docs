@@ -3,7 +3,7 @@ title: Регистриране на API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API крайният адрес за регистрация на Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API крайният адрес за регистрация на Ultimate Multisite
 
 В този урок ще научите как да използвате API ендпойнт-а Ultimate Multisite /register, за да създадете цялостния процес на бординг (onboarding) за нов клиент в вашата мрежа и как да го направите с Zapier.
 

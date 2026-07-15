@@ -3,7 +3,7 @@ title: Torolàlana momba ny fampiasana Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Torolalana Fampiasana Hooks {#hooks-usage-guide}
+# Torolalana Fampiasana Hooks
 
 Ultimate Multisite dia manome action hooks 200+ sy filter hooks 280+. Ity pejy ity dia mandrakotra ireo hooks ampiasaina matetika indrindra miaraka amin’ny ohatra azo ampiharina. Ho an’ny fanovozan-kevitra feno novokarina ho azy, tsidiho ireo pejy hafa ato amin’ity fizarana ity.
 

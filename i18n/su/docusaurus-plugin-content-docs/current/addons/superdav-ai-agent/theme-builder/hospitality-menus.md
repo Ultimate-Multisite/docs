@@ -3,7 +3,7 @@ title: Menu Pangalayanan Tamu
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ménu Hospitality {#hospitality-menus}
+# Ménu Hospitality
 
 Fitur **Hospitality Menus** ngamungkinkeun Theme Builder ngahasilkeun jeung nyelapkeun kaca ménu kadaharan jeung inuman anu terstruktur langsung kana situs WordPress anjeun.
 

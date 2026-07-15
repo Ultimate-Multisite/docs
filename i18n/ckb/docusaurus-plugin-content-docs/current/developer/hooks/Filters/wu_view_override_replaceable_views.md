@@ -4,7 +4,7 @@ title: فلتەر - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# فیلتەر: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# فیلتەر: wu_view_override_replaceable_views
 
 ڕێگە بە گەشەپێدەران دەدات بوخچەی زیاتر بۆ لیستی جێگرتنەوە زیاد بکەن.
 

@@ -3,7 +3,7 @@ title: Pag-set Up ng Manu-manong Pagbabayad
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Pag-set Up ng Manual Payments (v2) {#setting-up-manual-payments-v2}
+# Pag-set Up ng Manual Payments (v2)
 
 _**MAHALAGANG TALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 

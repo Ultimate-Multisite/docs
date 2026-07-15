@@ -3,7 +3,7 @@ title: Halaman Account Klien
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Halaman Account Pelanggan Anda (v2) {#your-clients-account-page-v2}
+# Halaman Account Pelanggan Anda (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 

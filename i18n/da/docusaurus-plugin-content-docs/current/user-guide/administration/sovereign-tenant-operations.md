@@ -3,7 +3,7 @@ title: Suveræn lejerdrift
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Driftsovereign Tenant Drift {#sovereign-tenant-operations}
+# Driftsovereign Tenant Drift
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 tilføjer operationelle værktøjer til suveræne lejere (sovereign tenants): subsites, der kører med deres egen database, filsystemrod og routingkontekst, mens de forbliver synlige for netværksadministratoren.
 

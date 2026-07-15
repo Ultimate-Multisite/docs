@@ -3,7 +3,7 @@ title: Zapier एकत्रीकरण
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ला Zapier सोबत एकत्रित करणे {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite ला Zapier सोबत एकत्रित करणे
 
 एका लेखात, आपण [वेबहुक्स](webhooks.md) बद्दल चर्चा केली आणि 3rd party अनुप्रयोगांशी एकत्रीकरणासाठी त्यांचा कसा वापर करता येतो ते पाहिले.
 

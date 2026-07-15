@@ -4,7 +4,7 @@ title: ማጣሪያ - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# ፊልተር፡ wu_rest_update_item {#filter-wurestupdateitem}
+# ፊልተር፡ wu_rest_update_item
 
 ይህ ፊልተር ጥያቄው እንዲቀጥል መፈቀድ አለመፈቀዱን ይቆጣጠራል።
 

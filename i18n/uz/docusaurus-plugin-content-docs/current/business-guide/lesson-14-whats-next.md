@@ -3,7 +3,7 @@ title: '14-dars: Keyin nima bo‘ladi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Dars 14: Keyin nima bo‘ladi {#lesson-14-what-comes-next}
+# Dars 14: Keyin nima bo‘ladi
 
 Siz noldan boshlab maxsus yo‘nalishdagi veb-sayt platformasini qurdingiz. FitSite ishga tushgan, fitness studiyalariga xizmat ko‘rsatmoqda va takroriy daromad keltirmoqda. Ushbu yakuniy dars endi qayerga borish haqida.
 

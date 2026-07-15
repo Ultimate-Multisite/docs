@@ -3,7 +3,7 @@ title: Hestia Control Panel Integrazioa
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Integrazioa {#hestia-control-panel-integration}
+# Hestia Control Panel Integrazioa
 
 Haugiakoki irudien dokumentuaren espezioa da Ultimate Multisite Hestia integrazioa konfiguratzeko, denbora erdatu (mapped) domain-ek network-an dagoen ari dira automatikoki Hestia-ren Web Domain Aliases gisa jodezkatzen (eta haurtzen) duela.
 

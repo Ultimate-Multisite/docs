@@ -3,7 +3,7 @@ title: İnternet gözlemi
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# İnternet Arama {#internet-search}
+# İnternet Arama
 
 Gratis AI Agent v1.5.0, sohbet sırasında yapay zeka asistanının webden güncel bilgi almasını sağlayan bir **İnternet Araması** özelliğini ekler. Bu özellik [Brave Search API](https://brave.com/search/api/) veya [Tavily API](https://tavily.com/) ile desteklenir.
 

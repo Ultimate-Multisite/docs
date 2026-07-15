@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# سۈزگۈچ: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# سۈزگۈچ: wu_checkout_step_validation_submittable_field_types
 
 ئىجادكارلارغا field ئاپتوماتىك يوللىنىدىغان بولسا تەكشۈرۈشتىن ئاتلاپ ئۆتۈشكە يول قويىدۇ.
 

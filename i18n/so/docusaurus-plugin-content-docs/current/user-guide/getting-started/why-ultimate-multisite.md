@@ -3,7 +3,7 @@ title: Maxay tahay sababta Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Maxaybaha Ujeedka Ultimate Multisite {#why-ultimate-multisite}
+# Maxaybaha Ujeedka Ultimate Multisite
 
 Haddii aad gaartay maqaalkan, waxaad u badan tahay inaad maqashay in plugin-keenna uu yahay xalka ah inuu hawsha ganacsigaaga la qabto. Waxaan rajaynaynaa inaad hesho jawaabaha aad u baahan tahay dhammaadka qoraalka.
 

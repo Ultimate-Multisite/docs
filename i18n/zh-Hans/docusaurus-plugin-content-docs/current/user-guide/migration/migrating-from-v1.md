@@ -3,7 +3,7 @@ title: 从 V1 迁移
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# 从 V1 迁移 {#migrating-from-v1}
+# 从 V1 迁移
 
 ## Ultimate Multisite 已从最初的 1.x 版本系列切换到 2.x 版本系列。 {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

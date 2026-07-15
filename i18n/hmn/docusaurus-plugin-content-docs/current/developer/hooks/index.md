@@ -3,7 +3,7 @@ title: Kev Siv Qhia Txog Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Phau ntawv siv Hooks {#hooks-reference}
+# Phau ntawv siv Hooks
 
 Ntaub ntawv tsim cia rau tag nrho **59 actions** thiab **118 filters** hauv Ultimate Multisite.
 

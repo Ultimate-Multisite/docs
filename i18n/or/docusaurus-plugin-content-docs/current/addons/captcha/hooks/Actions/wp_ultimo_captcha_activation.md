@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_captcha_activation
 
 pluginର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ସକ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କର routine ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

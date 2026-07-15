@@ -4,7 +4,7 @@ title: 篩選器 - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url {#filter-wussourl}
+# Filter: wu_sso_url
 
 在跨網域客戶動作傳回產生的 SSO URL 之前進行篩選。
 

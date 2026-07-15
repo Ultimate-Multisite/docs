@@ -3,7 +3,7 @@ title: Komünikasiýa
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Topluyunda Näme Edip Bilerisiz {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Topluyunda Näme Edip Bilerisiz
 
 Ultimate Multisite Community, bu ýerde başga Ultimate Multisite ulanyjylary bilen habarlaşyp bilýärsiňiz we maslahatlaryňyzy, tajribeleriňizi we beýleki zatlary paýlaşyp bilersiňiz. Ultimate Multisite Community-ye girmezlik üçin https://community.ultimatemultisite.com/home adresine gitdiň.
 

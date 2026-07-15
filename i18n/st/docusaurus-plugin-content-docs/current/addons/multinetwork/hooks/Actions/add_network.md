@@ -4,7 +4,7 @@ title: Ketso - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Ketso: add_network {#action-addnetwork}
+# Ketso: add_network
 
 E sebetsa ka mor'a hore network e ncha e eketsoe.
 

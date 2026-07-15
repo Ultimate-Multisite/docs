@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Action: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Action: wu_captcha_before_field
 
 കാപ്‌ചാ ഫീൽഡ് റെൻഡർ ചെയ്യുന്നതിന് മുമ്പ് ഇത് പ്രവർത്തിക്കുന്നു.
 

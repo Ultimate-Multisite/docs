@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Action: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Action: wp_ultimo_ptm_page_wizard_after_title
 
 Tugoti ang mga developer sa plugin nga makadugang og dugang nga mga button sa mga panid sa lista
 

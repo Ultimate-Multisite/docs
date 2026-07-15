@@ -3,7 +3,7 @@ title: ਥੀਮ-ਜਾਗਰੂਕ ਹੁਨਰ
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills {#theme-aware-skills}
+# Theme-Aware Skills
 
 Superdav AI Agent v1.10.0 ਚਾਰ ਨਵੇਂ theme-aware ਬਿਲਟ-ਇਨ ਸਕਿੱਲਜ਼ ਨਾਲ ਆਇਆ ਹੈ ਜੋ ਆਪਣੇ ਆਪ ਤੁਹਾਡੇ ਸਰਗਰਮ WordPress theme ਦੇ ਅਨੁਕੂਲ ਹੋ ਜਾਂਦੇ ਹਨ। ਇਹ ਸਕਿੱਲਜ਼ ਤੁਹਾਡੇ theme ਦੇ ਆਰਕੀਟੈਕਚਰ ਅਤੇ ਫੀਚਰਾਂ ਦੇ ਅਨੁਸਾਰ ਵਿਸ਼ੇਸ਼ ਮਾਰਗਦਰਸ਼ਨ ਅਤੇ ਸਮਰੱਥਾ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਨ।
 

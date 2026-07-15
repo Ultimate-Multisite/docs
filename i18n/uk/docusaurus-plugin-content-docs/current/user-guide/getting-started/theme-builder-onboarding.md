@@ -3,7 +3,7 @@ title: Потік онбордингу Конструктора тем
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Процес онбордингу Theme Builder {#theme-builder-onboarding-flow}
+# Процес онбордингу Theme Builder
 
 Superdav AI Agent v1.12.0 запроваджує керований **процес онбордингу Theme Builder**, який допоможе вам створити кастомну блочну тему під час першого налаштування. Це замінює застарілий режим Site Builder на більш гнучкий підхід із допомогою agent.
 

@@ -3,7 +3,7 @@ title: Referenční dokumentace schopností
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Reference schopností {#abilities-reference}
+# Reference schopností
 
 Schopnosti jsou atomární akce, které Gratis AI Agent může provést na vaší instalaci WordPressu. Každá schopnost je zaregistrovaná PHP třída, která vystavuje JSON schématický popis (schema) — agent tento schéma čte během běhu programu, abych pochopil, jaké parametry jsou vyžadovány a co schopnost vrátí.
 

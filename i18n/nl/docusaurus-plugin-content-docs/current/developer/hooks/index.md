@@ -3,7 +3,7 @@ title: Hooks-referentie
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks-referentie {#hooks-reference}
+# Hooks-referentie
 
 Automatisch gegenereerde documentatie voor alle **59 acties** en **118 filters** in Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Олон байрлалын тохируулгын үйлдэл
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Полигоор тохируулах үйлдэл (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Полигоор тохируулах үйлдэл (Multisite Setup Wizard)
 
 Ultimate Multisite нь стандарт WordPress суулгалтаа автоматаар WordPress Multisite сүлжээ болгон хувиргадаг доторх үйлдлийг агуулсан үйлдэл (wizard) байна. Энэ нь таны `wp-config.php`-ийг гараар засах эсвэл өгөгдлийн сангийн команд ажиллуулах шаардлагыг арилгаж өгнө.
 

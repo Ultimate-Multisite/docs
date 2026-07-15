@@ -3,7 +3,7 @@ title: ลงทะเบียนบัญชีผ่าน Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# เหตุการณ์: ลงทะเบียนบัญชีผ่าน Zapier {#event-register-an-account-via-zapier}
+# เหตุการณ์: ลงทะเบียนบัญชีผ่าน Zapier
 
 ในบทความ [การรวม Ultimate Multisite กับ Zapier](zapier.md) เราได้พูดถึงวิธีการใช้ Zapier เพื่อทำสิ่งต่างๆ ภายใน Ultimate Multisite โดยอิงจากตัวกระตุ้น (triggers) และเหตุการณ์ (events) ในบทความนี้ เราจะแสดงให้ดูว่าคุณสามารถเชื่อมต่อแอปพลิเคชันภายนอกเข้ามาได้อย่างไร เราจะใช้ Google Sheets เป็นแหล่งข้อมูลและส่งข้อมูลไปยัง Ultimate Multisite เพื่อลงทะเบียนบัญชี
 

@@ -3,7 +3,7 @@ title: Integracija s Cloudwaysom
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integracija s Cloudways {#cloudways-integration}
+# Integracija s Cloudways
 
 ## Pregled {#overview}
 Cloudways je upravljiva platforma za hosting u oblaku koja vam omogućuje da razvijete WordPress site na različitim cloud provajderima kao što su DigitalOcean, AWS, Google Cloud i više. Ova integracija omogućuje automatsku sinhronizaciju domena i upravljanje SSL sertifikatima između Ultimate Multisite i Cloudways.

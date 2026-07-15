@@ -3,7 +3,7 @@ title: Pagmugna og mga Discount Code
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Paghimo og Discount Codes (v2) {#creating-discount-codes-v2}
+# Paghimo og Discount Codes (v2)
 
 _**MAHINUNGAN: Kini nga article nagrefer sa Ultimate Multisite version 2.x.**_
 

@@ -3,7 +3,7 @@ title: Fampidirana rafitra mpanofa maro
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Fampidirana Multi-Tenancy {#multi-tenancy-integration}
+# Fampidirana Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manova teboka fifandraisana maromaro ho an’ny tenant mahaleo tena, fanamarinana fifindra-monina, ary automatique amin’ny tsingerim-piainan’ny tenant.
 

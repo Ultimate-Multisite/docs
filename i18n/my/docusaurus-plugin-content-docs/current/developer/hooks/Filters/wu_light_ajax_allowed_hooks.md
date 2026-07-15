@@ -4,7 +4,7 @@ title: စစ်ထုတ်မှု - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Filter: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Filter: wu_light_ajax_allowed_hooks
 
 လုံခြုံရေးအရ၊ hook လုပ်ရန်အတွက် ရရှိနိုင်သည့် action အရေအတွက်ကို ကန့်သတ်ထားပါသည်။ ဤ filter သည် လိုအပ်ပါက developer များအနေဖြင့် ထိုစာရင်းကို ချဲ့ထွင်နိုင်စေရန် ခွင့်ပြုပါသည်။
 

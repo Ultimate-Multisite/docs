@@ -3,7 +3,7 @@ title: Araçlar ve Yapılandırma
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Araçlar ve Yapılandırma {#tools-and-configuration}
+# Araçlar ve Yapılandırma
 
 Theme Builder, WordPress sitenizi analiz etmek, tasarlamak ve oluşturmak için bir dizi araç kullanır. 1.16.0 sürümünde, **sd-ai-agent/site-scrape artık Tier 1 araçtır**; bu da Theme Builder içinde varsayılan olarak kullanılabilir olduğu anlamına gelir. Superdav AI Agent v1.18.0 ayrıca güvenilir geliştirici iş akışları için ayrı dağıtılan bir Advanced yardımcı paketi sunar; bu araçlar WordPress.org çekirdek paketinin parçası değildir ve ayrıca kurulup yetkilendirilmelidir.
 

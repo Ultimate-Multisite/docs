@@ -4,7 +4,7 @@ title: Чыпка - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Фильтр: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Фильтр: wu_is_development_mode
 
 Плагин иштеп чыгуучуларына иштеп чыгуу режими үчүн кошумча текшерүүлөрдү кошууга мүмкүндүк берет.
 

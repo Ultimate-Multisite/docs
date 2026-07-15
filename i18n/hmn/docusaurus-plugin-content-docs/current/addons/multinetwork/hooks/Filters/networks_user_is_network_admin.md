@@ -4,7 +4,7 @@ title: Lim - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Lim: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
+# Lim: networks_user_is_network_admin
 
 Lim cov network uas ib tus neeg siv yog tus thawj tswj hwm.
 

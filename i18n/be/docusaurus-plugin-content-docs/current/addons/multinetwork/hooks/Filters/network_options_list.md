@@ -4,7 +4,7 @@ title: Фільтр - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Фільтр: network_options_list {#filter-networkoptionslist}
+# Фільтр: network_options_list
 
 Фільтруе спіс сеткавых напрамленняў (options), якія залегіяць ад домену і шляху сеткі.
 

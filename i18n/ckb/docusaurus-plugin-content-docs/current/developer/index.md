@@ -3,7 +3,7 @@ title: دۆکومێنتە دۆزەرەوەکان
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Documentation për Zhvillues {#developer-documentation}
+# Documentation për Zhvillues
 
 Ky udhëzues i jaben zhvilluesit gjithçka që duhet për integrim, zgjerim ose zhvillimin e addon-ve për Ultimate Multisite. Ultimate Multisite shndërron një rrjet WordPress Multisite në një platformë Website-as-a-Service (WaaS).
 

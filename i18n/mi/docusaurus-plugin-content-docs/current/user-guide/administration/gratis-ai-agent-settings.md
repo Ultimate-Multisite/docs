@@ -3,7 +3,7 @@ title: Ngā Tautuhinga Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Tautuhinga Gratis AI Agent {#gratis-ai-agent-settings}
+# Tautuhinga Gratis AI Agent
 
 Ko te mata **Tautuhinga → Arā Atu Anō** i Gratis AI Agent e whakarato ana i te whirihoranga taumata-kaiwhakahaere mō ngā whakaurunga tuarongo. Ka tuhi tēnei whārangi i te tuku whakamua urupare, ngā kī kaiwhakarato rapu, te whakarite ratonga Superdav whakahaerehia, ngā mana Google Calendar, ngā tautuhinga SMS TextBee, me ngā haki āhuatanga puta noa i te whatunga.
 

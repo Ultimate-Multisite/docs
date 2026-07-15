@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Paglalagay ng Ads sa Iyong Network gamit ang Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Paglalagay ng Ads sa Iyong Network gamit ang Ultimate Multisite: Ad Injector
 
 Ang Ultimate Multisite: Ad Injector ay isang **libreng add-on** na nagbibigay sa iyo ng mga tool para maglagay ng ads sa iyong mga plan direkta mula sa kanilang edit page.
 

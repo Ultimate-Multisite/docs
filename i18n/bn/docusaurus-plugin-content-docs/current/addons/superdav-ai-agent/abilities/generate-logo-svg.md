@@ -3,7 +3,7 @@ title: লোগো SVG তৈরি করুন
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generate Logo SVG {#generate-logo-svg}
+# Generate Logo SVG
 
 **Generate Logo SVG** সুবিধাটি থিম বিল্ডারকে আপনার ওয়ার্ডপ্রেস সাইটে কাস্টম লোগো SVG তৈরি করতে এবং এমবেড করতে সাহায্য করে। এটি স্বয়ংক্রিয়ভাবে নেমস্পেস-নিরাপদ স্যানিটাইজেশন (sanitisation) করে।
 

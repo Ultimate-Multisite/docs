@@ -3,7 +3,7 @@ title: Domēnu pārdevēja izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domēnu pārdevēja izmaiņu žurnāls {#domain-seller-changelog}
+# Domēnu pārdevēja izmaiņu žurnāls
 
 Versija 1.3.0 - Izlaista 2026-06-02
 - Jauns: Pievienots tīkla administratora brīdinājums, kad HostAfrica tālākpārdevēja atlikums kļūst pārāk zems

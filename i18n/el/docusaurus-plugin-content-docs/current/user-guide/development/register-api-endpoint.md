@@ -3,7 +3,7 @@ title: Καταχώρηση Τελικού Σημείου API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Το API endpoint /register του Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Το API endpoint /register του Ultimate Multisite
 
 Σε αυτό το tutorial, θα μάθετε πώς να χρησιμοποιείτε το API endpoint /register του Ultimate Multisite για να δημιουργήσετε ολόκληρη τη διαδικασία εγγραφής ενός νέου πελάτη στο δίκτυό σας, καθώς και πώς να το κάνετε με το Zapier.
 

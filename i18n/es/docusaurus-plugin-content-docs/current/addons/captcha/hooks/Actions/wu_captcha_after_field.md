@@ -4,7 +4,7 @@ title: Acción - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Action: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Action: wu_captcha_after_field
 
 Se dispara después de que se renderiza el campo captcha.
 

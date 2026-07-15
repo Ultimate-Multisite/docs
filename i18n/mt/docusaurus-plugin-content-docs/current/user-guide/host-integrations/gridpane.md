@@ -3,7 +3,7 @@ title: Integrazzjoni GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integrazzjoni ma' GridPane {#gridpane-integration}
+# Integrazzjoni ma' GridPane
 
 ## Panoramika {#overview}
 GridPane huwa panel kontroll hosting speċjalizzati għall-WordPress biex jipprofessjonali serju. Dan l-integrazzjoni tismella sincronizzazzjoni awtomatika tal-domain u il-ġestjoni ta sertifikat SSL bejn Ultimate Multisite u GridPane.

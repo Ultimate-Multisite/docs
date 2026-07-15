@@ -3,7 +3,7 @@ title: Cloudways एकीकरण
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways एकीकरण {#cloudways-integration}
+# Cloudways एकीकरण
 
 ## अवलोकन {#overview}
 Cloudways एक managed cloud hosting platform है, जो आपको DigitalOcean, AWS, Google Cloud आदि जैसे विभिन्न cloud providers पर WordPress साइटें deploy करने देता है। यह एकीकरण Ultimate Multisite और Cloudways के बीच automatic domain syncing और SSL certificate प्रबंधन सक्षम करता है।

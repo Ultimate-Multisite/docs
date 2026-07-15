@@ -3,7 +3,7 @@ title: Izicwangciso ze-Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Iisetingi ze-Gratis AI Agent {#gratis-ai-agent-settings}
+# Iisetingi ze-Gratis AI Agent
 
 Isikrini se-**Iisetingi → Ezihambele phambili** kwi-Gratis AI Agent sinika ulungiselelo lwenqanaba lomlawuli kudibaniso lwangasemva. Eli phepha lichaza ukuthunyelwa kwengxelo, izitshixo zababoneleli bokukhangela, useto lwenkonzo ye-Superdav elawulwayo, ulawulo lwe-Google Calendar, iisetingi ze-TextBee SMS, kunye neeflegi zeempawu kwinethiwekhi yonke.
 

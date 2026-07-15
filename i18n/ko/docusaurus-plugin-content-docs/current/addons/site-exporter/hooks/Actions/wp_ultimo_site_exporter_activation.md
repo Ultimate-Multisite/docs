@@ -4,7 +4,7 @@ title: 작업 - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# 액션: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# 액션: wp_ultimo_site_exporter_activation
 
 plugin의 다른 부분이 활성화를 위한 루틴을 연결할 수 있도록 합니다.
 

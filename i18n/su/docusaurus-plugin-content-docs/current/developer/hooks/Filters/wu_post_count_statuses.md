@@ -4,7 +4,7 @@ title: Saringan - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Saringan: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Saringan: wu_post_count_statuses
 
 Ngidinan pamekar plugin ngarobah status tulisan mana anu kudu diitung. Sacara standar, tulisan anu diterbitkeun jeung pribadi diitung
 

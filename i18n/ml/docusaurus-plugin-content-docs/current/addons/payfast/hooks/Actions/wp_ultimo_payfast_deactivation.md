@@ -4,7 +4,7 @@ title: Action - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# Action: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# Action: wp_ultimo_payfast_deactivation
 
 പ്ലഗിൻ-ന്റെ മറ്റ് ഭാഗങ്ങൾ ഡിആക്ടിവേഷനുവേണ്ടിയുള്ള അവയുടെ പ്രവർത്തനങ്ങൾ ഇതിലൂടെ കൂട്ടിച്ചേർക്കാൻ അനുവദിക്കുന്നു.
 

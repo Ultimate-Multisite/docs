@@ -3,7 +3,7 @@ title: Zapier経由でAccountを登録
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# イベント: Zapier で Account を登録する {#event-register-an-account-via-zapier}
+# イベント: Zapier で Account を登録する
 
 記事 [Ultimate Multisite と Zapier の連携](zapier.md) では、トリガーやイベントに基づいて Ultimate Multisite 内でさまざまな操作を実行するために Zapier を使う方法を説明しました。この記事では、サードパーティアプリケーションを連携する方法を紹介します。データの取得元として Google スプレッドシートを使い、その情報を Ultimate Multisite に送信して Account を登録します。
 

@@ -3,7 +3,7 @@ title: Përshtatja e Formularit Tuaj të Regjistrimit
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Përshtatja e Formularit tuaj të Regjistrimit {#customizing-your-registration-form}
+# Përshtatja e Formularit tuaj të Regjistrimit
 
 Për ta bërë rrjetin tuaj të duket unik nga të gjitha SaaS-et e tjera të ndërtuara mbi platformën WordPress, Ultimate Multisite ju lejon të përshtatni faqet tuaja të regjistrimit dhe hyrjes me veçorinë tonë **Formularët e Checkout-it**.
 

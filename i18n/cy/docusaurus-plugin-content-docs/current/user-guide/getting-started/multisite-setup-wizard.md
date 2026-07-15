@@ -3,7 +3,7 @@ title: Gweidiad y Cyfarwyddyd Gweithredol Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Gwyrchu'r Cyfathreithiad Multisite {#multisite-setup-wizard}
+# Gwyrchu'r Cyfathreithiad Multisite
 
 Mae Ultimate Multisite yn cynnwys gwyrchu (wizard) sy'n cael ei ddefnyddio i chysylltu'r y cyfluniad WordPress arbenigol i rheol WordPress Multisite. Mae hyn yn tynnu angen i redig manual `wp-config.php` neu gyflwyno adferiadau datab.
 

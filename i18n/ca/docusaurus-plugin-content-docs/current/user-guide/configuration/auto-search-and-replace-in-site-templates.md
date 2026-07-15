@@ -3,7 +3,7 @@ title: Cerca i substitució automàtiques a les plantilles del lloc
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Cerca i substitució automàtiques a les plantilles de lloc (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Cerca i substitució automàtiques a les plantilles de lloc (v2)
 
 _**Aquest tutorial requereix WP UItimo versió 2.x.**_
 

@@ -3,7 +3,7 @@ title: Izakhono eziqonda umxholo
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Izakhono Eziqonda Umxholo {#theme-aware-skills}
+# Izakhono Eziqonda Umxholo
 
 Superdav AI Agent v1.10.0 iza nezakhono ezine ezintsha ezakhelwe ngaphakathi eziqonda umxholo, ezizilungelelanisa ngokuzenzekelayo nomxholo wakho osebenzayo we-WordPress. Ezi zakhono zibonelela ngesikhokelo esikhethekileyo kunye namandla alungiselelwe uyilo kunye neempawu zomxholo wakho.
 

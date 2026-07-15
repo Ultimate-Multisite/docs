@@ -4,7 +4,7 @@ title: Filtras - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filtras: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filtras: wu_apc_should_display_admin_menu
 
 Leidžia administratoriams paslėpti administratoriaus meniu puslapius, jei jie baigė tinkinimo procesą.
 

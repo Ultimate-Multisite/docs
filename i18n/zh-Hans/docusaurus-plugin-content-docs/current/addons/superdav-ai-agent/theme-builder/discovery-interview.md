@@ -3,7 +3,7 @@ title: 发现访谈
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# 调研访谈 {#discovery-interview}
+# 调研访谈
 
 **调研访谈 (Discovery Interview)** 是 Theme Builder 设计流程的第一步。它会收集关于您的网站、业务和设计偏好等信息，从而为您打造一个个性化的主题。
 

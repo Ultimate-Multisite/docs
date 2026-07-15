@@ -3,7 +3,7 @@ title: விளம்பர உட்செலுத்தி
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector மூலம் உங்கள் நெட்வொர்க்கில் விளம்பரங்களை வைத்தல் {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector மூலம் உங்கள் நெட்வொர்க்கில் விளம்பரங்களை வைத்தல்
 
 Ultimate Multisite: Ad Injector என்பது ஒரு **இலவச add-on** ஆகும், இது உங்கள் plans-ன் edit page-லிருந்தே விளம்பரங்களை வைக்க தேவையான கருவிகளை வழங்குகிறது.
 

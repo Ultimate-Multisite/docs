@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Gníomh: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Gníomh: wp_ultimo_affiliatewp_activation
 
 Lig do chodanna eile den plugin a ngnáthaimh le haghaidh gníomhachtaithe a cheangal
 

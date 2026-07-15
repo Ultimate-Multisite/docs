@@ -3,7 +3,7 @@ title: Pamamahala ng mga Email ng Sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Pamamahala ng Mga System Email {#managing-system-emails}
+# Pamamahala ng Mga System Email
 
 Nagpapadala ang Ultimate Multisite ng iba't ibang system email para sa mga kaganapan tulad ng mga kumpirmasyon sa signup, mga resibo ng bayad, at mga pagbabago sa membership. Maaari mong i-customize ang mga email template na ito upang tumugma sa iyong brand.
 

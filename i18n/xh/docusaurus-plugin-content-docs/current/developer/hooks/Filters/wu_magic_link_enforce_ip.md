@@ -4,7 +4,7 @@ title: Isihluzi - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Isihluzi: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# Isihluzi: wu_magic_link_enforce_ip
 
 Hluza ukuba kuqinisekiswe na idilesi ye-IP.
 

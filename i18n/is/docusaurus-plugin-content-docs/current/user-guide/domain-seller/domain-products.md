@@ -3,7 +3,7 @@ title: Vöru og verðsetning dómanna
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenar og prísir {#domain-products-and-pricing}
+# Domenar og prísir
 
 Domenar er hvernig þú stýrir prís, TLD-e (top-level domains), WHOIS skjulsréttindi og val á viðbótum. Hvert domenprodukt er almenn Multisite Ultimate produkt með extra **Domain Settings** tab.
 

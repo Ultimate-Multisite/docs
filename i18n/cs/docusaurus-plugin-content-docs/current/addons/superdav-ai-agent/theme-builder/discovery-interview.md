@@ -3,7 +3,7 @@ title: Rozhovor o objevování
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Rozhovor k definování konceptu (Discovery Interview) {#discovery-interview}
+# Rozhovor k definování konceptu (Discovery Interview)
 
 **Rozhovor k definování konceptu** je první krok v procesu návrhu Theme Builderu. Shromáždí informace o vašem webu, vašem podnikání a vašich návrhových preferencích, aby vytvořil personalizovaný vzhled.
 

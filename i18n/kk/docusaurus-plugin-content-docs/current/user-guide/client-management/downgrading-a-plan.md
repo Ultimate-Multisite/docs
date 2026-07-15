@@ -3,7 +3,7 @@ title: Планды төмендету
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Жобаны планын төмендету (v2) {#downgrading-a-plan-v2}
+# Жобаны планын төмендету (v2)
 
 _**МАҢЫЗДЫ ЕТІНДІ: Бұл мақала Ultimate Multisite 2.x нұсқасына қатысты.**_
 

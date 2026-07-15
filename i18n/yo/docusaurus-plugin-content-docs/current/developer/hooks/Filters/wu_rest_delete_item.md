@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Ajọ: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Ajọ: wu_rest_delete_item
 
 Ó ń ṣe àyẹ̀wò bóyá a gba láàyè láti tẹ̀síwájú pẹ̀lú ìbéèrè náà tàbí bẹ́ẹ̀ kọ́.
 

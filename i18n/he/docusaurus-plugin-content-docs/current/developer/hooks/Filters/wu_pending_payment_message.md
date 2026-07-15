@@ -4,7 +4,7 @@ title: מסנן - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# מסנן: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# מסנן: wu_pending_payment_message
 
 מאפשר למשתמש לשנות את ההודעה לגבי התשלומים הממתינים.
 

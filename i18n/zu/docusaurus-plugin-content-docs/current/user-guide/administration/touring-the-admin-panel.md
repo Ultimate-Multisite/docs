@@ -3,7 +3,7 @@ title: Ukuhlola Iphaneli Yokuphatha
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ukuvakasha ku-Admin Panel {#touring-the-admin-panel}
+# Ukuvakasha ku-Admin Panel
 
 Ultimate Multisite ihlose ukuba lula futhi izichaze ngokwayo ngangokunokwenzeka, kodwa ngethuluzi elinamandla kangaka kungasiza ukuba nokuvakasha okuqondisiwe. Ake sihambe emakhasini okuphatha ukuze sikusize ujwayele indawo.
 

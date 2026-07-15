@@ -4,7 +4,7 @@ title: Handling - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Handling: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Handling: wp_ultimo_site_exporter_deactivation
 
 Lad andre dele af pluginet tilknytte deres rutiner for deaktivering.
 

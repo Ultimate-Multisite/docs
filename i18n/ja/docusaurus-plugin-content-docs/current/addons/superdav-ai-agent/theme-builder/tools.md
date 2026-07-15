@@ -3,7 +3,7 @@ title: ツールと設定
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# ツールと設定 {#tools-and-configuration}
+# ツールと設定
 
 Theme Builder は、一連のツールを使って WordPress サイトを分析、設計、構築します。バージョン 1.16.0 では、**sd-ai-agent/site-scrape が Tier 1 ツールになり**、Theme Builder で標準利用できるようになりました。Superdav AI Agent v1.18.0 では、信頼できる開発者ワークフロー向けに別配布の Advanced companion package も導入されています。これらのツールは WordPress.org のコアパッケージには含まれず、別途インストールして承認する必要があります。
 

@@ -3,7 +3,7 @@ title: Bwydlenni Lletygarwch
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Bwydlenni Lletygarwch {#hospitality-menus}
+# Bwydlenni Lletygarwch
 
 Mae’r nodwedd **Bwydlenni Lletygarwch** yn caniatáu i Theme Builder gynhyrchu ac ymgorffori tudalennau bwydlenni bwyd a diod strwythuredig yn uniongyrchol i’ch safle WordPress.
 

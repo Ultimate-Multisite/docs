@@ -4,7 +4,7 @@ title: Filtrilo - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filtrilo: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Filtrilo: wu_apc_get_meta
 
 Permesas al programistoj filtri la finajn valorojn, kaj aldoni novajn prilaborajn kazojn.
 

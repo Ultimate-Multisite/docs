@@ -3,7 +3,7 @@ title: שדרוג תוכנית
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# שדרוג תוכנית (v2) {#upgrading-a-plan-v2}
+# שדרוג תוכנית (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
 

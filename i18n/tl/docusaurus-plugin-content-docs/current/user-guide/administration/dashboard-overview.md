@@ -3,7 +3,7 @@ title: Pangkalahatang-ideya ng Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pangkalahatang-tingin sa Dashboard {#dashboard-overview}
+# Pangkalahatang-tingin sa Dashboard
 
 Ang Ultimate Multisite ay may nakalaang **Dashboard** sa ilalim ng Ultimate Multisite menu, at nagdaragdag din ito ng mga widget sa Network Dashboard. Tatalakayin sa artikulong ito kung ano ang makikita mo sa parehong lugar.
 

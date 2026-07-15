@@ -3,7 +3,7 @@ title: Șabloane de site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Șabloane de site (v2) {#site-templates-v2}
+# Șabloane de site (v2)
 
 _**NOTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x. Dacă folosești versiunea 1.x,**_ **vezi acest articol** _**.**_
 

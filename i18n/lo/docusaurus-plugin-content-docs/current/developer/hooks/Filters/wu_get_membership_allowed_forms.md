@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# ຕົວກັ່ນຕອງ: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# ຕົວກັ່ນຕອງ: wu_get_membership_allowed_forms
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາເພີ່ມ slug ແບບຟອມໃໝ່ເພື່ອຂ້າມພຶດຕິກຳນີ້.
 

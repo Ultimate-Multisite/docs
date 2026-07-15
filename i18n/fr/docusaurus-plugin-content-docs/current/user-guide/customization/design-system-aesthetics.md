@@ -3,7 +3,7 @@ title: Compétences en esthétique des systèmes de conception
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Maîtriser l'esthétique du système de design {#design-system-aesthetics-skill}
+# Maîtriser l'esthétique du système de design
 
 La **compétence Esthétique du système de design** est une approche guidée pour affiner l'identité visuelle de votre site. Elle vous aide à prendre des décisions cohérentes concernant la typographie, la couleur, l'espacement et les *tokens* de mouvement qui définissent votre système de design.
 

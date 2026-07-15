@@ -4,7 +4,7 @@ title: Ketso - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Ketso: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Ketso: wu_magic_link_invalid_token
 
 E sebetsa ha token ya magic link e sa sebetseng e kopana le yona.
 

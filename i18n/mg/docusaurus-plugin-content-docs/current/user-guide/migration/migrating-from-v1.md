@@ -3,7 +3,7 @@ title: Mifindra avy amin'ny V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Manova avy amin'ny V1 {#migrating-from-v1}
+# Manova avy amin'ny V1
 
 ## Nova ny Ultimate Multisite avy amin'ny fianakaviany voalohany 1.x mankany amin'ny fianakaviana 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

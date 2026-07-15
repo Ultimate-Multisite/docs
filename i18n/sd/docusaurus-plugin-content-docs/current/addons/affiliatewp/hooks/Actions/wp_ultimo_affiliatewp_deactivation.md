@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# عمل: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# عمل: wp_ultimo_affiliatewp_deactivation
 
 plugin جي ٻين حصن کي deactivation لاءِ پنهنجا routines ڳنڍڻ ڏيو
 

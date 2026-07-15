@@ -3,7 +3,7 @@ title: Inhlolokhono Yokuthola Ulwazi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ingxoxo Yokuthola Ulwazi {#discovery-interview}
+# Ingxoxo Yokuthola Ulwazi
 
 I-**Ingxoxo Yokuthola Ulwazi** iyisinyathelo sokuqala enqubweni yokuklama ye-Theme Builder. Iqoqa ulwazi mayelana nesayithi lakho, ibhizinisi lakho, nezintandokazi zakho zokuklama ukuze kwakhiwe itimu eyenzelwe wena.
 

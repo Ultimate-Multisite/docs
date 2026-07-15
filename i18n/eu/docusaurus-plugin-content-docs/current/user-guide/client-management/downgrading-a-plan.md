@@ -3,7 +3,7 @@ title: Planaren eskaintzen edo zerbait jarraitzen azaltzea
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan batketa (v2) {#downgrading-a-plan-v2}
+# Plan batketa (v2)
 
 _**IMPORTANTE NOTA: Hego kalpo Ultimate Multisite 2.x-ean referentzia da.**_
 

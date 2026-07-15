@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Action: wu_page_load {#action-wupageload}
+# Action: wu_page_load
 
 ပလပ်အင် developer တွေအနေနဲ့ ကျွန်တော်တို့ရဲ့ စာမျက်နှာတွေမှာ အပို hook တွေ ထည့်သွင်းနိုင်အောင် လုပ်ပေးပါတယ်။
 

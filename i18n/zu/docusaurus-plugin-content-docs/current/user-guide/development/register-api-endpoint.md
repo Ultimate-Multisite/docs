@@ -3,7 +3,7 @@ title: Bhalisa iphoyinti lokugcina le-API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# I-Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# I-Ultimate Multisite Register API endpoint
 
 Kulesi sifundo, uzofunda ukuthi ungayisebenzisa kanjani i-Ultimate Multisite /register API endpoint ukuze udale yonke inqubo yokwamukela ikhasimende elisha kunethiwekhi yakho nokuthi ungakwenza kanjani lokho nge-Zapier.
 

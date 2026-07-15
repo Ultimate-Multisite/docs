@@ -4,7 +4,7 @@ title: Saringan - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Saringan: wu_fluent_form_count {#filter-wufluentformcount}
+# Saringan: wu_fluent_form_count
 
 Ngidinan pamekar plugin pikeun ngarobah total jumlah formulir
 

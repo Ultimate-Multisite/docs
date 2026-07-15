@@ -3,7 +3,7 @@ title: Spēju atsauce
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Iespēju uzziņa {#abilities-reference}
+# Iespēju uzziņa
 
 Iespējas ir atomāras darbības, ko Gratis AI Agent var izsaukt jūsu WordPress instalācijā. Katra iespēja ir reģistrēta PHP klase, kas atklāj JSON shēmu — aģents šo shēmu nolasa izpildlaikā, lai saprastu, kādi parametri ir nepieciešami un ko iespēja atgriež.
 

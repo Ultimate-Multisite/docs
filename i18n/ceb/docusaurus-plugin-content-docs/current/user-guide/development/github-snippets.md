@@ -3,7 +3,7 @@ title: Mga GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Unsaon paggamit sa Ultimate Multisite snippets sa among GitHub repositoryo {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Unsaon paggamit sa Ultimate Multisite snippets sa among GitHub repositoryo
 
 Naa'y mga code snippets sa GitHub repository nga kanunay gipangayo sa mga Ultimate Multisite users nga gusto magdugang og gagmay nga mga functionality sama sa pag-add og Google Analytics script sa sign-up pages o pagtago og meta box gikan sa admin dashboard.
 
@@ -19,7 +19,7 @@ Naa'y 2 ka paagi para magdugang og code
 
   2. Must-Use Plugins (mu-plugins)
 
-# Unsaon pag-add sa snippet sa imong theme's functions.php file. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Unsaon pag-add sa snippet sa imong theme's functions.php file.
 
   1. Log in sa imong WordPress Network admin dashboard ug adto sa Themes > Theme Editor (Tan-awa ang screenshot sa ubos).
 
@@ -29,7 +29,7 @@ Naa'y 2 ka paagi para magdugang og code
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Unsaon paghimo og Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Unsaon paghimo og Must-Use Plugins (mu-plugins)
 
 Naa'y feature sa WordPress nga nagtugot kanimo sa pag-load og custom functionality nga gitawag og "Must-Use Plugins", o "mu-plugins" para mubo.
 

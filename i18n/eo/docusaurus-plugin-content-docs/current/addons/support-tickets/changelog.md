@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de Subtenaj Biletoj
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ŝanĝprotokolo de Subtenaj Biletoj {#support-tickets-changelog}
+# Ŝanĝprotokolo de Subtenaj Biletoj
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Plibonigita: Forigis la dosierujon vendor/ el Git-spurado (jam kovrita de .gitignore), reduktante la deponejan grandecon

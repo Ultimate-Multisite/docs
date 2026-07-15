@@ -3,7 +3,7 @@ title: Wax-soo-gaarsiinta Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Wax-sareyntaaya ee Stripe Gateway-ga (v2) {#setting-up-the-stripe-gateway-v2}
+# Wax-sareyntaaya ee Stripe Gateway-ga (v2)
 
 _**Fadlan o daran: Maqaalkan wuxuu la xiriira Ultimate Multisite noortii 2.x.**_
 

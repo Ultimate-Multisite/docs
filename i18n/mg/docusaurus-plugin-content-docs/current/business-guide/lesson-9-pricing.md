@@ -3,7 +3,7 @@ title: 'Lesona 9: Fametrahana vidiny hahazoana tombony'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesona 9: Fanomezana vidiny hahazoana tombom-barotra {#lesson-9-pricing-for-profit}
+# Lesona 9: Fanomezana vidiny hahazoana tombom-barotra
 
 Tamin'ny Lesona 5 dia nametraka ny vidiny voalohany ho an'ny drafitra FitSite isika. Ankehitriny dia hatsaraintsika ny paikady fanomezana vidiny amin'ny teknika mampitombo ny vola miditra, mamporisika ny fanavaozana drafitra, ary mampihena ny fialan'ny mpanjifa.
 

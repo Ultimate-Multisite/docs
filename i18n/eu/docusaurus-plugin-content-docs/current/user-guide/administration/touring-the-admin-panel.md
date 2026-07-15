@@ -3,7 +3,7 @@ title: Administrazio panelaren ikusiak
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Administrazioa eta Ekinak {#touring-the-admin-panel}
+# Administrazioa eta Ekinak
 
 Ultimate Multisite-ak gurean lehen eta erantzutzeko modua izango da, baina baita oso potentziala duen herramienta bat dela, irudi egindako bidez guia edo "tour" bat emateko laguntzen du. Administrazio zehalduetan jartzeko aukera hartu dezagun.
 

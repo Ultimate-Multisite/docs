@@ -3,7 +3,7 @@ title: 'Leksyon 13: Pagpalapad'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekson 13: Pagdako pa {#lesson-13-scaling-up}
+# Lekson 13: Pagdako pa
 
 Aduna ka nang naglihok nga platform nga adunay mga kustomer nga nagbayad. Kini nga leksyon naghisgot unsaon pagpadako gikan sa gamay nga operasyon ngadto sa usa ka malampuson ug malungtarong negosyo — pagpalapad sa imprastraktura, pag-automate sa mga operasyon, ug pagpataas sa kita kada kustomer.
 

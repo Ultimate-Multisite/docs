@@ -3,7 +3,7 @@ title: ڪلاڊويز انٽيغريشن
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## خلاصہ (Overview) {#overview}
 Cloudways هڪ مانيجڊ ڪلاؤڈ هوستنگ پليٽ فارم آهي جيڪو توهان کي مختلف ڪلاؤڈ پروائيڊرز جهڙوڪ DigitalOcean، AWS، Google Cloud ۽ ٻين تي WordPress سائٽس پوسٽ ڪرڻ جي اجازت ڏئي ٿو. هي ان انٽيغريشن سان Ultimate Multisite ۽ Cloudways بابت آٽومويڪ ايميل سنڪرينگ ۽ SSL سرٽيفڪيٽ جو انتظام خود بخود ٿيندو آهي.

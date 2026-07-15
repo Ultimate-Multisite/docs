@@ -3,7 +3,7 @@ title: Дашбордди жалпы көзөмөл
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Панелька Überblick (Dashboard Overview) {#dashboard-overview}
+# Панелька Überblick (Dashboard Overview)
 
 Ultimate Multisite менюсунда **Dashboard** деп атайт жана ошондой эле Network Dashboard'го виджеттерди кошот. Бул макалада сиз бул жерлерде эмнени көрө турганыңызды баяндап беребиз.
 

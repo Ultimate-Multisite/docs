@@ -4,7 +4,7 @@ title: 過濾器 - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# 篩選器：get_blogs_of_user {#filter-getblogsofuser}
+# 篩選器：get_blogs_of_user
 
 此處重現了原始的 WP Filter，以確保功能完整。
 

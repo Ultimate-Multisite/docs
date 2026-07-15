@@ -3,7 +3,7 @@ title: Eziokwu gbasara Chuck Norris Ndekọ mgbanwe
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Ndekọ Mgbanwe Eziokwu Chuck Norris {#chuck-norris-facts-changelog}
+# Ndekọ Mgbanwe Eziokwu Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Agbakwunyere: Ọrụ mmelite akpaka site na sava mmelite Ultimate Multisite

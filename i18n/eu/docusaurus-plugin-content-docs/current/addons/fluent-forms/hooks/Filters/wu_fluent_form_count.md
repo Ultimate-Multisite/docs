@@ -4,7 +4,7 @@ title: Iragazkia - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Iragazkia: wu_fluent_form_count {#filter-wufluentformcount}
+# Iragazkia: wu_fluent_form_count
 
 Plugin garatzaileei inprimakien guztizko kopurua aldatzeko aukera ematen die
 

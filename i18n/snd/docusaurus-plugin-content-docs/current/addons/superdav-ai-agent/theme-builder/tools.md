@@ -3,7 +3,7 @@ title: اوزار ۽ ترتيبات
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# اوزار ۽ Configuration {#tools-and-configuration}
+# اوزار ۽ Configuration
 
 Theme Builder توهان جي WordPress سائيٽ جو تجزيو ڪرڻ، ڊيزائن ڪرڻ، ۽ ٺاهڻ لاءِ اوزارن جو هڪ سيٽ استعمال ڪري ٿو. ورزن 1.16.0 ۾، **sd-ai-agent/site-scrape هاڻي هڪ Tier 1 اوزار آهي**، جنهن سان اهو Theme Builder ۾ ڊفالٽ طور موجود آهي. Superdav AI Agent v1.18.0 ڀروسي لائق ڊولپر ڪم جي وهڪرن لاءِ الڳ ورهايل Advanced ساٿي پيڪيج پڻ متعارف ڪرائي ٿو؛ اهي اوزار WordPress.org بنيادي پيڪيج جو حصو ناهن ۽ الڳ طور انسٽال ۽ اختيار ڏيڻا پوندا.
 

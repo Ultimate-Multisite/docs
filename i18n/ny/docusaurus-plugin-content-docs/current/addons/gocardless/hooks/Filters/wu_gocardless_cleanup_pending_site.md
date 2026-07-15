@@ -4,7 +4,7 @@ title: Sefa - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Fyuluta: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Fyuluta: wu_gocardless_cleanup_pending_site
 
 Imayambitsidwa musanachotse site yoyembekezera yosiyidwa ya umembala wa GoCardless womwe waletsedwa.
 

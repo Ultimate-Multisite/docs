@@ -3,7 +3,7 @@ title: Awoodda Theme Builderka
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Awooddaalinta Qalabka Theme Builder: Scaffold and Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Awooddaalinta Qalabka Theme Builder: Scaffold and Activate Block Themes
 
 Superdav AI Agent v1.12.0 waxay soo bandhigtay laba awood oo xooggan oo kuu oggolaanaya inaad theme-yada block-ka gaarka ah (custom) si toos ah uga sameyso oo u soo dejisid interface-ka wada hadalka (chat).
 

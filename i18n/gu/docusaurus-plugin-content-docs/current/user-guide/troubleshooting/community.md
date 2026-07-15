@@ -3,7 +3,7 @@ title: સમુદાય
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community માં કેવી રીતે જોડાવું {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Community માં કેવી રીતે જોડાવું
 
 Ultimate Multisite Community એક એવી જગ્યા છે જ્યાં તમે અન્ય Ultimate Multisite વપરાશકર્તાઓ સાથે સંપર્કમાં રહી શકો છો અને ટિપ્સ, અનુભવો અને ઘણું બધું શેર કરી શકો છો. Ultimate Multisite Community ને એક્સેસ કરવા માટે https://community.ultimatemultisite.com/home પર જાઓ.
 

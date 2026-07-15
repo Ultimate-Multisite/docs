@@ -3,7 +3,7 @@ title: Migration till tredjepartsläge
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration till Third-Party Mode {#third-party-mode-migration}
+# Migration till Third-Party Mode
 
 Superdav AI Agent v1.12.0 ändrar hur tredjepartskapaciteter hanteras. **Third-party mode är nu standardinställningen (auto)**, vilket möjliggör inbyggd integration med WordPress Abilities API på WordPress 7.0+ utan manuell konfiguration.
 

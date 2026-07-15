@@ -4,7 +4,7 @@ title: عمل - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# عمل: wu_page_before_render {#action-wupagebeforerender}
+# عمل: wu_page_before_render
 
 پلگ اِن جي ترقي ڪندڙن کي اجازت ڏيو ته اسان صفحو پرنٽ ڪرڻ کان اڳ اضافي مواد شامل ڪن.
 

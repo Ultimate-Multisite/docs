@@ -3,7 +3,7 @@ title: Site Exporter Changelog
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Değişiklik Günlüğü {#site-exporter-changelog}
+# Site Exporter Değişiklik Günlüğü
 
 Sürüm: 1.0.6 - Yayınlandı: 2026-05-11
 * Yeni: Site dışa aktarımları artık kendi kendini başlatan bir index.php dosyası içeriyor. Böylece ZIP dosyasını ayrı bir plugin kurmadan yeni bir sunucuya yükleyebilirsiniz.

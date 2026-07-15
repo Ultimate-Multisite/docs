@@ -4,7 +4,7 @@ title: '過濾器 - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
+# Filter: wu_\{$this->model\}_meta_pre_save
 
 在資料元數據（meta data）被序列化並儲存到資料庫之前，會過濾這些資料。
 

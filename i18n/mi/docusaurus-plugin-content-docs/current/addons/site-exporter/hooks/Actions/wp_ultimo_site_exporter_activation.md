@@ -4,7 +4,7 @@ title: Hohenga - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Mahi: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Mahi: wp_ultimo_site_exporter_activation
 
 Tukua ētahi atu wāhanga o te plugin kia tāpiri i ā rātou mahinga mō te whakahohe.
 

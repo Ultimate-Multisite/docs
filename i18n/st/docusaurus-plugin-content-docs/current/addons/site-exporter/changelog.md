@@ -3,7 +3,7 @@ title: Lenane la liphetoho la Moromelli oa Sebaka
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Lenane la diphetoho {#site-exporter-changelog}
+# Site Exporter Lenane la diphetoho
 
 Mofuta: 1.0.6 - E lokollotswe ka 2026-05-11
 * E ntjha: Diyantle tsa saete jwale di phuthela index.php e ithomang ka boyona hore ZIP e kgone ho kenngwa ho host e ntjha ntle le ho kenya plugin e arohaneng

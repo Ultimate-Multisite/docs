@@ -3,7 +3,7 @@ title: Ukusesha nokushintsha okuzenzakalelayo Kuzifanekiso Zamasayithi
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ukusesha Nokushintsha Okuzenzakalelayo Kuma-template Esayithi (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Ukusesha Nokushintsha Okuzenzakalelayo Kuma-template Esayithi (v2)
 
 _**Lesi sifundo sidinga i-WP UItimo inguqulo 2.x.**_
 

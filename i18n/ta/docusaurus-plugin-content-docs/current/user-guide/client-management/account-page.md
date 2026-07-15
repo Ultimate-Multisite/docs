@@ -3,7 +3,7 @@ title: வாடிக்கையாளர் Account பக்கம்
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# உங்கள் கிளையண்டின் Account பக்கம் (v2) {#your-clients-account-page-v2}
+# உங்கள் கிளையண்டின் Account பக்கம் (v2)
 
 _**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐக் குறிக்கிறது.**_
 

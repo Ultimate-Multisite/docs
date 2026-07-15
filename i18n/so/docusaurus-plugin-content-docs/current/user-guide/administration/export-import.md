@@ -3,7 +3,7 @@ title: Wax-soo-saar & Soo-saar
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 waxay ku daraysaa qalab hal-site ah oo loo yaqaano **Export & Import** oo ku jira **Tools > Export & Import**. Waxaad isticmaali kartaa haddii aad u baahan tahay inaad hal WordPress site u qaaddo fayl ZIP, aad dib u soo celiso (restore) ZIP-kaas, ama aad u wareejiso site ka dhexeeya install Ultimate Multisite iyo single-site WordPress oo la isku dhafan.
 

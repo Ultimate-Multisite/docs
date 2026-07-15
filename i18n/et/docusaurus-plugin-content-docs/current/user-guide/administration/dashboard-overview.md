@@ -3,7 +3,7 @@ title: Paneeli ülevaade
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Paneel ülevaade {#dashboard-overview}
+# Paneel ülevaade
 
 Ultimate Multisite on oma menüü all eraldatud **Dashboard** ja lisab ka widget'e Network Dashboardile. See artiklit käsitleb, mida teid mõlemast paigast näha.
 

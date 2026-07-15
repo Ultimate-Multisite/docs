@@ -3,7 +3,7 @@ title: Txhawm Hauv Tsim Website (Site Builder Mode) Txhawm
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# ការជូនដំណឹងអំពីការលុប Site Builder Mode {#site-builder-mode-removal-notice}
+# ការជូនដំណឹងអំពីការលុប Site Builder Mode
 
 **Site Builder mode ត្រូវបានលុបចេញនៅក្នុង Superdav AI Agent v1.12.0។** បើអ្នកធ្លាប់ប្រើ Site Builder mode អ្នកគួរតែផ្លាស់ប្តូរទៅប្រើ **Setup Assistant agent** សម្រាប់ការបង្កើត theme និងការរៀបចំ site។
 

@@ -4,7 +4,7 @@ title: Azione - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Azione: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Azione: wu_after_switch_template
 
 Consenti agli sviluppatori di plugin di agganciare funzioni dopo che un utente o un super amministratore cambia il modello del sito
 

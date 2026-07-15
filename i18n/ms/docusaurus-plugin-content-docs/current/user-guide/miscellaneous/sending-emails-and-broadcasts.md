@@ -3,7 +3,7 @@ title: Menghantar E-mel dan Siaran
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Menghantar E-mel dan Siaran (v2) {#sending-emails-and-broadcasts-v2}
+# Menghantar E-mel dan Siaran (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 

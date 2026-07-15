@@ -4,7 +4,7 @@ title: 動作 - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 讓外掛開發者可以在我們輸出頁面內容之前，加入額外的內容。
 

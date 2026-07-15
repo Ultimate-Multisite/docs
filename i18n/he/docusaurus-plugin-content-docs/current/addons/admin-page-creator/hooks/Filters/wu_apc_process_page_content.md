@@ -4,7 +4,7 @@ title: פילטר - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# מסנן: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# מסנן: wu_apc_process_page_content
 
 מאפשר למפתחים לשנות את התוכן הסופי.
 

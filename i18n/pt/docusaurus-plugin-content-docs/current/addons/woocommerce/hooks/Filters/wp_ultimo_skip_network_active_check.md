@@ -4,7 +4,7 @@ title: Filtro - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Filtro: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Filtro: wp_ultimo_skip_network_active_check
 
 Permite que programadores façam curto-circuito à verificação de ativação de rede.
 

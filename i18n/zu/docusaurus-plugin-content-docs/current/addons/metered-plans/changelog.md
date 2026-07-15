@@ -3,7 +3,7 @@ title: Irekhodi lezinguquko lezinhlelo ezikhokhiswa ngokusetshenziswa
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Umlando Wezinguquko Wezinhlelo Ezikalwayo {#metered-plans-changelog}
+# Umlando Wezinguquko Wezinhlelo Ezikalwayo
 
 Inguqulo 1.1.0 - Ikhishwe ngo-2026-05-05
 - Okusha: Ukukhokhisa ama-AI token kuma-subsite e-multisite — landela futhi ukhokhise ukusetshenziswa kwama-AI token kuwo wonke amasayithi amakhasimende ngamareyithi alungisekayo ngetoken ngayinye

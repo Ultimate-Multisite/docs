@@ -3,7 +3,7 @@ title: Preklicanje načrta
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Prehod na nižji paket (v2) {#downgrading-a-plan-v2}
+# Prehod na nižji paket (v2)
 
 _**POMEMBNE OPOMENJE: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 

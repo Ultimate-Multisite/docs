@@ -3,7 +3,7 @@ title: Formijiet tal-checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formuli Checkout {#checkout-forms}
+# Formuli Checkout
 
 Formuli Checkout hu mod kifli u flessibbli biex tixegħu dwar approċċi differenti meta tgħrossa klienti ewlenin.
 

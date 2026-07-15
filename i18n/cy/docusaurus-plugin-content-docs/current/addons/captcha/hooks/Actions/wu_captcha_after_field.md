@@ -4,7 +4,7 @@ title: Gweithred - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Gweithred: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Gweithred: wu_captcha_after_field
 
 Yn tanio ar ôl i'r maes captcha gael ei rendro.
 

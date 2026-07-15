@@ -3,7 +3,7 @@ title: Zapier 集成
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# 将 Ultimate Multisite 与 Zapier 集成 {#integrating-ultimate-multisite-with-zapier}
+# 将 Ultimate Multisite 与 Zapier 集成
 
 在其中一篇文章中，我们讨论了 [Webhook](webhooks.md)，以及它们如何用于与第三方应用程序集成。
 

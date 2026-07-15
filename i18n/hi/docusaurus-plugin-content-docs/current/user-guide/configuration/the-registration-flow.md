@@ -3,7 +3,7 @@ title: पंजीकरण प्रवाह
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# पंजीकरण प्रवाह (v2) {#the-registration-flow-v2}
+# पंजीकरण प्रवाह (v2)
 
 _**महत्वपूर्ण टिप्पणी: यह लेख Ultimate Multisite संस्करण 2.x के बारे में है।**_
 

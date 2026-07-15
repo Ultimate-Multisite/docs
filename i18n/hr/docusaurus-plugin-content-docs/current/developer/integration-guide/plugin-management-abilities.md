@@ -3,7 +3,7 @@ title: Mogućnosti upravljanja dodacima
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Mogućnosti upravljanja dodacima {#plugin-management-abilities}
+# Mogućnosti upravljanja dodacima
 
 Gratis AI Agent v1.5.0 isporučuje se sa **7 mogućnosti upravljanja dodacima** koje AI asistent može pozvati tijekom razgovora. Te mogućnosti pružaju programsku kontrolu nad WordPress dodacima instaliranima putem [Sustava za izradu dodataka i sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

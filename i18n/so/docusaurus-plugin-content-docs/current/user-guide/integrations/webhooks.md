@@ -3,7 +3,7 @@ title: Webhook-yada
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Aragti hore oo ku saabsan Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Aragti hore oo ku saabsan Webhooks (v2)
 
 _**Xusuusin: Fiiro gaar ah inuu fursadta ama maqaalka tani u yahay isticmaalayaasha horumarsan.**_
 

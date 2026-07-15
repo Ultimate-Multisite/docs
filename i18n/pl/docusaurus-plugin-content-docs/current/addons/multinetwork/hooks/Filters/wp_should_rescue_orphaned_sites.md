@@ -4,7 +4,7 @@ title: Filter - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# Filtr: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
+# Filtr: wp_should_rescue_orphaned_sites
 
 Określa, czy należy ratować (odzyskiwać) porzucone witryny.
 

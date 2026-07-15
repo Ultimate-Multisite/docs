@@ -3,7 +3,7 @@ title: Gawe Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ngasilake Logo SVG {#generate-logo-svg}
+# Ngasilake Logo SVG
 
 Kabisan **Ngasilake Logo SVG** ngidini Theme Builder nggawe lan masang SVG logo kustom langsung menyang situs WordPress sampeyan nganggo sanitasi otomatis sing aman kanggo namespace.
 

@@ -3,7 +3,7 @@ title: Theme Builder Onboarding Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Kurulum Süreci {#theme-builder-onboarding-flow}
+# Theme Builder Kurulum Süreci
 
 Superdav AI Agent v1.12.0, ilk kurulumunuz sırasında size özel bir blok teması oluşturmanıza yardımcı olan rehberli bir **Theme Builder kurulum süreci** getiriyor. Bu özellik, eski Site Builder modunun yerini daha esnek, yapay zeka destekli bir yaklaşımla alıyor.
 

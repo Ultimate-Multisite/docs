@@ -3,7 +3,7 @@ title: డెవలపర్ డాక్యుమెంటేషన్
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# డెవలపర్ డాక్యుమెంటేషన్ {#developer-documentation}
+# డెవలపర్ డాక్యుమెంటేషన్
 
 Ultimate Multisite తో ఇంటిగ్రేట్ చేయడానికి, ఎక్స్‌టెండ్ చేయడానికి లేదా అడాన్‌లను డెవలప్ చేయడానికి అవసరమైన అన్ని విషయాలను ఈ గైడ్ డెవలపర్‌లకు అందిస్తుంది. Ultimate Multisite అనేది ఒక WordPress Multisite నెట్‌వర్క్‌ను Website-as-a-Service (WaaS) ప్లాట్‌ఫామ్‌గా మారుస్తుంది.
 

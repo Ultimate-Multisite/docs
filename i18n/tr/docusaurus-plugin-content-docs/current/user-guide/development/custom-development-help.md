@@ -3,7 +3,7 @@ title: Özel Geliştirme Yardımı
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable'dan Özel Geliştirme Desteği Nasıl Alınır? {#how-to-get-custom-development-help-from-codeable}
+# Codeable'dan Özel Geliştirme Desteği Nasıl Alınır?
 
 Bazen ağ akışlarımızı tam istediğimiz gibi yapılandırmak için harika özelleştirmelere ihtiyaç duyarız. Eğer aradığınız buysa, Ultimate Multisite konusunda deneyimli geliştiricileri bulabileceğiniz [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) platformunu öneriyoruz.
 

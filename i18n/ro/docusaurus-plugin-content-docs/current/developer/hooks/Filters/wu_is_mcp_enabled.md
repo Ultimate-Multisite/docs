@@ -4,7 +4,7 @@ title: Filtru - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filter: wu_is_mcp_enabled
 
 Permite dezvoltatorilor de plugin să stabilească o stare specifică pentru adaptorul MCP.
 

@@ -3,7 +3,7 @@ title: Tusaalooyin Koodh Sare
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Tusaalooyin Code oo Horumarsan {#advanced-code-examples}
+# Tusaalooyin Code oo Horumarsan
 
 Tusaalooyinkan waxay muujinayaan qaabab isdhexgal oo horumarsan oo lala adeegsado Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Müşteri Hasaby Sahypasy
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Müşteriniň Hasaby Sahypasy (v2) {#your-clients-account-page-v2}
+# Müşteriniň Hasaby Sahypasy (v2)
 
 _**ÖNEMLİ ÝAZGYCHY: Bu makale Ultimate Multisite 2.x versiyasyna aýdylýar.**_
 

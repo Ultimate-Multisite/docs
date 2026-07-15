@@ -3,7 +3,7 @@ title: Przegląd REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Dokumentacja REST API {#rest-api-reference}
+# Dokumentacja REST API
 
 ## Konfiguracja bazowa {#base-configuration}
 

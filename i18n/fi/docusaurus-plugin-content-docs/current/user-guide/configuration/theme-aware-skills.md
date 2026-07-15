@@ -3,7 +3,7 @@ title: Teemavetoiset taidot
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Teemästyne taitot {#theme-aware-skills}
+# Teemästyne taitot
 
 Superdav AI Agent v1.10.0 sisältää neljä uutta teemäkohteen tietoon perustuvaa (theme-aware) sisäänrakennettua taitoa, jotka sopeutuvat automaattisesti aktiiviseen WordPress-teemaasi. Nämä taidot tarjoavat erikoistunutta ohjausta ja kykyjä, jotka on räätälöity teeman arkkitehtuuriin ja ominaisuuksiin.
 

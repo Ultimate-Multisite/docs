@@ -3,7 +3,7 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ریفرنس {#wp-cli-reference}
+# WP-CLI ریفرنس
 
 Gratis AI Agent، ایجنٹ کو Benchmarking کرنے، Abilities کو Manage کرنے، اور Command Line سے ایجنٹ کی Status کو Query کرنے کے لیے `wp gratis-ai-agent` کمانڈ فیملی فراہم کرتا ہے۔ تمام کمانڈز کے لیے WP-CLI 2.0 یا اس سے زیادہ ورژن درکار ہے۔
 

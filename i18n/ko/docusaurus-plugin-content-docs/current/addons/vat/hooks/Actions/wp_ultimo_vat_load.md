@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# 액션: wp_ultimo_vat_load {#action-wpultimovatload}
+# 액션: wp_ultimo_vat_load
 
 모든 종속성이 로드되었을 때 트리거됩니다.
 

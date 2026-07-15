@@ -3,7 +3,7 @@ title: Webbplats-/sitetekniska kunskaper
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification-förmågan {#site-specification-skill}
+# Site Specification-förmågan
 
 **Site Specification-förmågan** är ett strukturerat sätt att fånga din webbplats mål, målgrupp och varumärkesidentitet. Denna information sparas i ditt **site_brief**-minne, som agenter refererar till under olika sessioner för att ge konsekvent och kontextmedveten hjälp.
 

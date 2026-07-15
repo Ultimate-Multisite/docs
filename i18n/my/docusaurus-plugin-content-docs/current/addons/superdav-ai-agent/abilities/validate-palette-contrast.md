@@ -3,7 +3,7 @@ title: အရောင်အသွေး ကွာခြားမှုကို
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# အရောင်အစုံ ကွာခြားမှု စစ်ဆေးခြင်း {#validate-palette-contrast}
+# အရောင်အစုံ ကွာခြားမှု စစ်ဆေးခြင်း
 
 **Validate Palette Contrast** စွမ်းရည်သည် သင့်ဒီဇိုင်းအရောင်အစုံရှိ အရောင်အတွဲများကို သင့် theme ပေါ်တွင် အသုံးပြုမည့် အချိန်မတိုင်မီ WCAG (Web Content Accessibility Guidelines) စံနှုန်းများနှင့် ကိုက်ညီမှုရှိမရှိ စစ်ဆေးပေးပါသည်။
 

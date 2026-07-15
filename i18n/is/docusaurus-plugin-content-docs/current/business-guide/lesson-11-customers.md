@@ -3,7 +3,7 @@ title: 'Læoni 11: Finna viðskiptavini'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Læoni 11: Finna viðskiptavini {#lesson-11-finding-customers}
+# Læoni 11: Finna viðskiptavini
 
 Ein glínn platta með engum viðskiptavinum er bara hlutverks. Þessi læonið hefur að segja þér hvernig á að ná viðskiptavinum í sérstakri hluti – stefnur sem virka sérstaklega þegar þú ert að foka á eina brúðarhlut.
 

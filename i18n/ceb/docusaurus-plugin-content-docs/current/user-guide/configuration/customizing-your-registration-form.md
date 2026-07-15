@@ -3,7 +3,7 @@ title: Pagpasibo sa Imong Form sa Pagparehistro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pag-customize sa imong Form sa Pagparehistro {#customizing-your-registration-form}
+# Pag-customize sa imong Form sa Pagparehistro
 
 Aron mahimong talagsaon ang hitsura sa imong network kumpara sa tanang ubang SaaS nga gitukod sa WordPress platform, gitugotan ka sa Ultimate Multisite nga i-customize ang imong mga panid sa pagparehistro ug pag-login gamit ang among **Mga Form sa Pag-checkout** nga feature.
 

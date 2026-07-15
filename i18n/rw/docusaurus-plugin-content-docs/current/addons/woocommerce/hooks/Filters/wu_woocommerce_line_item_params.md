@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Muyunguruzo: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Muyunguruzo: wu_woocommerce_line_item_params
 
 Yungurura ibipimo bikoreshwa mu kurema ibintu byo ku mirongo mu gitebo cya WooCommerce, mbere yo kohereza umukiriya ku gikorwa cyo kwishyura cya WooCommerce.
 

@@ -4,7 +4,7 @@ title: Actio - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Actio: wu_page_added {#action-wupageadded}
+# Actio: wu_page_added
 
 Sinite effectores plugin res additas agere cum paginae describuntur.
 

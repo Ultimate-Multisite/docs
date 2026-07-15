@@ -3,7 +3,7 @@ title: Mmepe Ọnụ ụzọ Ahaziri Ahazi
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Mmepe Custom Gateway {#custom-gateway-development}
+# Mmepe Custom Gateway
 
 Ị nwere ike ịmepụta custom payment gateways site n’ịgbatị class `Base_Gateway`.
 

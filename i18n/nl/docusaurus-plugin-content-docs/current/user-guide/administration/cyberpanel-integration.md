@@ -3,7 +3,7 @@ title: CyberPanel Integratie
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integratie {#cyberpanel-integration}
+# CyberPanel Integratie
 
 Deze handleiding legt uit hoe u de Ultimate Multisite CyberPanel-integratie configureert, zodat gemapte domeinen in uw netwerk automatisch worden toegevoegd (en verwijderd) als virtuele hosts in CyberPanel, met optionele auto-SSL provisioning via Let's Encrypt.
 

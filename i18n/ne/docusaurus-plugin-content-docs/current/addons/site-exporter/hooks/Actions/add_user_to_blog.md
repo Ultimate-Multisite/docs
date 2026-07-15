@@ -4,7 +4,7 @@ title: कार्य - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# कार्य: add_user_to_blog {#action-addusertoblog}
+# कार्य: add_user_to_blog
 
 प्रयोगकर्तालाई साइटमा थपिएलगत्तै चल्छ।
 

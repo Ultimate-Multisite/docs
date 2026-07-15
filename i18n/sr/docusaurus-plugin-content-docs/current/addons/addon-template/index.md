@@ -3,9 +3,9 @@ title: Шаблон додатка
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Шаблон додатка {#addon-template}
+# Шаблон додатка
 
-{{ADDON_DESCRIPTION}}
+Шаблон додатка — Ultimate Multisite.
 
 ## Захтеви {#requirements}
 

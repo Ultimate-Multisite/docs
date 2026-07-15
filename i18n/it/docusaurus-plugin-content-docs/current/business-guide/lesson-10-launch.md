@@ -3,7 +3,7 @@ title: 'Lezione 10: Giorno del lancio'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lezione 10: Il Giorno del Lancio {#lesson-10-launch-day}
+# Lezione 10: Il Giorno del Lancio
 
 Tutto è costruito. Prima di aprire le porte, questa lezione ti guiderà attraverso la checklist pre-lancio per assicurarti che nulla sia rotto, mancante o imbarazzante.
 

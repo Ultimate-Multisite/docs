@@ -4,7 +4,7 @@ title: Filtr - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Berilgan post turi ushbu planda ruxsat etilganligini tekshiradi. Plugin ishlab chiquvchilariga qaytariladigan qiymatni filter qilish imkonini beradi
 

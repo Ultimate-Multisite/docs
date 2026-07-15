@@ -4,7 +4,7 @@ title: 動作 - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# 動作：wu_deactivation {#action-wudeactivation}
+# 動作：wu_deactivation
 
 讓插件的其他部分可以在停用時附加它們的執行邏輯。
 

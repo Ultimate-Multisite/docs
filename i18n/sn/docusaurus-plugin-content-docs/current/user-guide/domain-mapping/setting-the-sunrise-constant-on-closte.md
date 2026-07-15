@@ -3,7 +3,7 @@ title: Kutanga Constante ya Sunrise kuCloste
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Kuita const Sunrise kuva neku Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Kuita const Sunrise kuva neku Closte
 
 Vakasi vhaizvo vhaizvo host providers vanhu wp-config.php kune chivimbo chekuti. Izvi zvinore kuti Ultimate Multisite inogone kuenda uye kuwedzera constants dzine kuitira domain mapping uye zvinhu zvose zviri kuitika. Closte ndiyo mupfungwa iyi.
 

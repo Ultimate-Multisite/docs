@@ -3,7 +3,7 @@ title: 'Leasan 10: Latha a’ Chuir air Bhog'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leasan 10: Latha an Fhoillseachaidh {#lesson-10-launch-day}
+# Leasan 10: Latha an Fhoillseachaidh
 
 Tha a h-uile càil air a thogail. Mus fosgail thu na dorsan, bheir an leasan seo thu tron liosta-sgrùdaidh ro-fhoillseachaidh gus dèanamh cinnteach nach eil dad briste, a dhìth, no tàmailteach.
 

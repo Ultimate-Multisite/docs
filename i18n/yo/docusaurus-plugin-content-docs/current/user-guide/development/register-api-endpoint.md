@@ -3,7 +3,7 @@ title: Forúkọsílẹ̀ API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint API ìforúkọsílẹ̀ Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint API ìforúkọsílẹ̀ Ultimate Multisite
 
 Nínú ìkọ́ni yìí, ìwọ yóò kọ́ bí a ṣe ń lo endpoint API /register ti Ultimate Multisite láti dá gbogbo ìlànà onboarding fún oníbàárà tuntun sínú nẹ́tíwọ́ọ̀kì rẹ àti bí a ṣe lè ṣe é pẹ̀lú Zapier.
 

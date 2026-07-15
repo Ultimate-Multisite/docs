@@ -3,7 +3,7 @@ title: Landlys
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Herordening van die Ultimate Multisite landlys {#re-ordering-the-ultimate-multisite-country-list}
+# Herordening van die Ultimate Multisite landlys
 
 Die vervolgkeuse om 'n land te kies, word alfabeties gerangskik op grond van die Engelse variante van die landname. Dit kan beteken dat jou maatskappy se tuisland en/of die tuisland van die meeste van jou kliënte soms in die middel van 'n enorme landnaamlys begrawe is.
 

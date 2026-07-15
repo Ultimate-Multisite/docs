@@ -3,7 +3,7 @@ title: 'Casharka 6: Khibradda Isdiiwaangelinta'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Casharka 6: Khibradda Isdiiwaangelinta {#lesson-6-the-signup-experience}
+# Casharka 6: Khibradda Isdiiwaangelinta
 
 Socodka bixintu waa halka xiisuhu isu beddelo dakhli. Hab isdiiwaangelin oo wareer leh ama guud ah wuxuu lumiyaa macaamiil. Socod u gaar ah niche-ka oo ku hadla luqaddooda una muuqda mid fudud ayaa iyaga u beddela macaamiil.
 

@@ -3,7 +3,7 @@ title: 建立一个利基网站业务
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# 构建利基网站业务：Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# 构建利基网站业务：Ultimate Multisite
 
 大多数尝试销售网站的人都在价格上与 Wix、Squarespace 和成千上万的自由职业者竞争。他们会失败。成功的卖家会选择一个特定的受众群体，为该群体量身打造解决方案，然后根据所提供的价值收费。
 

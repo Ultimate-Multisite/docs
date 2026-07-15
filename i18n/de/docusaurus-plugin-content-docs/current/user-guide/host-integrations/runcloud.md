@@ -3,7 +3,7 @@ title: RunCloud-Integration
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## Überblick {#overview}
 RunCloud ist eine cloudbasierte Serververwaltungsplattform, die es Ihnen ermöglicht, Webanwendungen einfach auf Ihren eigenen Cloud-Servern bereitzustellen und zu verwalten. Diese Integration ermöglicht die automatische Synchronisierung von Domains und die Verwaltung von SSL-Zertifikaten zwischen Ultimate Multisite und RunCloud.

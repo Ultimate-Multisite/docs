@@ -3,7 +3,7 @@ title: Povratne informacije od kupaca i prijavljivanje problema
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Povratne informacije i prijavljivanje problema {#customer-feedback--issue-reporting}
+# Povratne informacije i prijavljivanje problema
 
 Gratis AI Agent v1.5.0 ugrađuje sustav za povratne informacije i prijavljivanje problema koji omogućuje krajnjim korisnicima da označavaju nekorisne odgovore i direktno prijave probleme iz chat sučelja. Ovaj sustav uključuje upravljanje pristankom (consent management), automatsnu naredbu za prijavu i AI-pomoćatni triž (triage) na pozadini.
 

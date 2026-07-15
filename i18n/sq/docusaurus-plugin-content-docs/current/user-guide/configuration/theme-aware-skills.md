@@ -3,7 +3,7 @@ title: Aftësitë e ndjeshme ndaj temës
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Aftë Skills të Ndjeshmërisme ndaj Temës {#theme-aware-skills}
+# Aftë Skills të Ndjeshmërisme ndaj Temës
 
 Superdav AI Agent v1.10.0 merr me vete katër aftësi të reja që janë të ndjeshme ndaj temës dhe automatikisht sekuatojnë temën WordPress aktuale tënde. Këto aftësi ofrojnë udhëzime dhe kapacitete të specializuara të përshtatura me arkitekturën dhe veçoritë e temës suaj.
 

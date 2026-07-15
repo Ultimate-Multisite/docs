@@ -3,7 +3,7 @@ title: رجسٽمين گراؤ
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# رجسٹریشن کا طریقہ کار (v2) {#the-registration-flow-v2}
+# رجسٹریشن کا طریقہ کار (v2)
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite کے ورژن 2.x سے متعلق ہے۔**_
 

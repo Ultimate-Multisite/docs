@@ -4,7 +4,7 @@ title: Criathrag - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Criathrag: wu_pre_save_settings {#filter-wupresavesettings}
+# Criathrag: wu_pre_save_settings
 
 Leig le luchd-leasachaidh roghainnean a chriathradh mus tèid an sàbhaladh le Ultimate Multisite.
 

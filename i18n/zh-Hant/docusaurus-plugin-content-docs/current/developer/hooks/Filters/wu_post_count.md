@@ -4,7 +4,7 @@ title: Filter - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# 過濾器：wu_post_count {#filter-wupostcount}
+# 過濾器：wu_post_count
 
 讓外掛開發者可以更改計數總數
 

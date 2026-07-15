@@ -3,7 +3,7 @@ title: Tworzenie kodów rabatowych
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Tworzenie kodów rabatowych (v2) {#creating-discount-codes-v2}
+# Tworzenie kodów rabatowych (v2)
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 

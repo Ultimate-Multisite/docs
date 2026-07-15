@@ -3,7 +3,7 @@ title: عزل تعدد المستأجرين
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# عزل تعدد المستأجرين (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# عزل تعدد المستأجرين (Multi-Tenancy Isolation)
 
 يدعم Ultimate Multisite الإصدار 1.2.0 العزل الخاص بقاعدة البيانات ونظام الملفات لكل موقع فرعي (subsite) للمستأجرين السياديين (sovereign tenants). هذا يحافظ على فصل بيانات المستأجرين مع الحفاظ على التوفير على مستوى الشبكة، والفواتير، والإدارة.
 

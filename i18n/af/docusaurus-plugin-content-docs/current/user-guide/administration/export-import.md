@@ -3,7 +3,7 @@ title: Ekspoort & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksporteer & Importeer {#export--import}
+# Eksporteer & Importeer
 
 Ultimate Multisite 2.9.0 voeg 'n **Eksporteer & Importeer**-hulpmiddel vir 'n enkele webwerf by onder **Tools > Export & Import**. Gebruik dit wanneer jy een WordPress-webwerf as 'n ZIP-lêer wil verpak, daardie ZIP wil herstel, of 'n webwerf tussen bietekompatibele Ultimate Multisite en enkele-webwerf WordPress-installasies wil skuif.
 

@@ -4,7 +4,7 @@ title: ფილტრი - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 გაფილტრავს პარამეტრებს, რომლებიც გამოიყენება WooCommerce Cart-ში ხაზის ერთეულების შესაქმნელად, სანამ მომხმარებელი WooCommerce checkout-ზე გადამისამართდება.
 

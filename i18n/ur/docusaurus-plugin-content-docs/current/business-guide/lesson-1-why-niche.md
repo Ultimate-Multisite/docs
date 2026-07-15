@@ -3,7 +3,7 @@ title: 'سبق ۱: نِش کیوں جیتتا ہے'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: Why Niche Wins {#lesson-1-why-niche-wins}
+# Lesson 1: Why Niche Wins
 
 کوئی بھی سافٹ ویئر کو چھونے سے پہلے، آپ کو یہ سمجھنا ضروری ہے کہ کسی مخصوص سامعین (specific audience) کے لیے پلیٹ فارم بنانا آپ کا سب سے اہم فیصلہ ہوگا۔
 

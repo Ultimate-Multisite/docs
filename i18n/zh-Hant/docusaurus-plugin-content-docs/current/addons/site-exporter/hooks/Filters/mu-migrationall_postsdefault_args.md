@@ -4,7 +4,7 @@ title: 過濾器 - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filter: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filter: mu-migration/all_posts/default_args
 
 用於過濾 `all_posts` 方法中查詢文章的預設參數。
 

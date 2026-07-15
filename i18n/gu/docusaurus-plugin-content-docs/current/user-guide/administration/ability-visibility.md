@@ -3,7 +3,7 @@ title: ક્ષમતાની દૃશ્યતા
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility {#ability-visibility}
+# Ability Visibility
 
 Superdav AI Agent v1.12.0 માં **Ability Visibility** કંટ્રોલ્સ રજૂ કરવામાં આવ્યા છે, જે નક્કી કરે છે કે કઈ સર્ફસ (surfaces) કઈ ક્ષમતા (ability) ને એક્સપોઝ કરશે. આનાથી એડમિનિસ્ટ્રેટર્સને સચોટ રીતે નિયંત્રિત કરવામાં મદદ મળે છે કે કઈ એજન્ટ ક્ષમતાઓ REST APIs, MCP સર્વર્સ, WooCommerce ઇન્ટિગ્રેશન્સ અને અન્ય ઇન્ટરફેસ દ્વારા ઉપલબ્ધ છે.
 

@@ -4,7 +4,7 @@ title: Филтер - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Филтер: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Филтер: wu_get_checkout_variables
 
 Дозволува програмерите на plugin-и да ги филтрираат претходните поставки на страницата за checkout.
 

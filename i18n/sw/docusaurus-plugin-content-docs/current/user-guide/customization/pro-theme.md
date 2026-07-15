@@ -3,7 +3,7 @@ title: Mandhari ya PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Kubadilisha Paneli yako ya Msimamizi kwa PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Kubadilisha Paneli yako ya Msimamizi kwa PRO Theme
 
 Mara nyingi tunapofanya kazi za wateja tunahitaji kuwapa wateja wetu uzoefu maalum katika dashibodi ya msimamizi ya WordPress. Ikiwa unatafuta muonekano wa kitaalamu zaidi, PRO Theme inaweza kukusaidia.
 

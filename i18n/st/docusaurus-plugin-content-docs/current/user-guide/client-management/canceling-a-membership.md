@@ -3,7 +3,7 @@ title: Ho tloha le Mophatsi
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Go-boetsoho (v2) {#canceling-a-membership-v2}
+# Go-boetsoho (v2)
 
 _**SEKOLOSHO: Le tsela efe seo sefalo sa Ultimate Multisite v2.x.**_
 

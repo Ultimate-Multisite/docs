@@ -4,7 +4,7 @@ title: Фильтр - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Фильтр: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Фильтр: wu_woocommerce_line_item_params
 
 Фильтрует параметры, используемые для создания строк товаров в корзине WooCommerce, перед перенаправлением клиента к оформлению заказа WooCommerce.
 

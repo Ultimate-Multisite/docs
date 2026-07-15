@@ -4,7 +4,7 @@ title: පෙරහන - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# පෙරහන: retrieve_password_title {#filter-retrievepasswordtitle}
+# පෙරහන: retrieve_password_title
 
 මුරපදය යළි සැකසීමේ ඊමේල් එකේ විෂය පෙරහන් කරයි.
 

@@ -3,7 +3,7 @@ title: Panyimpenan Cache Prompt sing Nggatekake Panyedhiya
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cache Prompt sing Ngerti Provider {#provider-aware-prompt-caching}
+# Cache Prompt sing Ngerti Provider
 
 Superdav AI Agent v1.12.0 ngenalake **cache prompt sing ngerti provider**, sing ngoptimalake biaya API lan latensi kanthi nge-cache prompt ing macem-macem provider LLM. Saben provider nduweni mekanisme lan konfigurasi cache sing beda-beda.
 

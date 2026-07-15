@@ -4,7 +4,7 @@ title: Ago - wu_handle_add_new_domain_modal
 sidebar_label: wu_handle_add_new_domain_modal
 _i18n_hash: 77246d387c651043b47e7a466a7e892e
 ---
-# Ago: wu_handle_add_new_domain_modal {#action-wuhandleaddnewdomainmodal}
+# Ago: wu_handle_add_new_domain_modal
 
 Ekfunkcias antaŭ ol trakti la peton de la modala fenestro por aldoni novan domajnon.
 

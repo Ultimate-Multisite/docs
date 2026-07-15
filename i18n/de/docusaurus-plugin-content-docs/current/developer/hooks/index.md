@@ -3,7 +3,7 @@ title: Hooks-Referenz
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook-Referenz {#hooks-reference}
+# Hook-Referenz
 
 Automatisch generierte Dokumentation für alle **59 Aktionen** und **118 Filter** in Ultimate Multisite.
 

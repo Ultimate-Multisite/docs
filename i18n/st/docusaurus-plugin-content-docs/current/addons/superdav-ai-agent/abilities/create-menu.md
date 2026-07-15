@@ -3,7 +3,7 @@ title: Theha Lenane
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Etsa Lenane {#create-menu}
+# Etsa Lenane
 
 Bokhoni ba **Etsa Lenane** bo etsa manane a tsamaiso a WordPress ka tšehetso bakeng sa dileibole tsa tsamaiso tse arohaneng le dihlooho tsa maqephe.
 

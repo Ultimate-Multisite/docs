@@ -3,7 +3,7 @@ title: Sisseehitatud agendid
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Sisseehitatud agendid {#built-in-agents}
+# Sisseehitatud agendid
 
 Gratis AI Agent v1.9.0 sisaldab viit sisseehitatud agenti, millest igaüks on eelkonfigureeritud keskendunud tööriistakomplekti, kohandatud süsteemiviiba ja alustamissoovitustega, mis sobivad selle valdkonna levinud ülesannetega. Agentide vahel vahetamine muudab seda, mida assistent teha saab ja kuidas ta vastab — ilma et peaksid midagi seadistama. Superdav AI Agent v1.18.0 saab neile töövoogudele lisada ajakavaga arvestavaid tööriistu, meeldetuletuste kirjeid, kinnituse väravaid ja SMS-teavitusi, kui seotud integratsioonid on seadistatud.
 

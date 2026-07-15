@@ -3,7 +3,7 @@ title: Id-Diskussjoni tal-Siti
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Aħjar l-Sitji {#managing-sites}
+# Aħjar l-Sitji
 
 Is-sitji (o subsitji) huma l-qalb tal-bizness tiegħek WaaS. Ultimate Multisite għandu 3 tipijiet ta sitji:
 

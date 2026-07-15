@@ -3,7 +3,7 @@ title: Ambrochdachadh a' chàrrpadh a' chàrrpadh
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Ailinn an Control Panel a' chlàradh {#enhance-control-panel-integration}
+# Ailinn an Control Panel a' chlàradh
 
 ## Amasanachadh {#overview}
 Enhance is tòiseachadh leat a tha panel control modern, a tha a thann sinn fòcas air atharrachadh agus amasanachais hosting. A tha seo a' bheachd a' chlàradh domhainn airson synch domain agus amasanachais SSL a' chlàradh beòsaid air Enhance Control Panel agus Ultimate Multisite.

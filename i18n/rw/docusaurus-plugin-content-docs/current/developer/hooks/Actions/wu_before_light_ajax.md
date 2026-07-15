@@ -4,7 +4,7 @@ title: Igikorwa - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Igikorwa: wu_before_light_ajax {#action-wubeforelightajax}
+# Igikorwa: wu_before_light_ajax
 
 Mu bihe bimwe na bimwe, tuzakenera kongeramo imbaraga z’inyongera kugira ngo dukemure ibikorwa.
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 入門指南 {#ultimate-multisite-101}
+# Ultimate Multisite 入門指南
 
 Ultimate Multisite 是一款 WordPress Multisite 外掛，讓你能夠為客戶提供 WaaS（網站即服務）。在深入了解 Ultimate Multisite 如何幫助你的業務和客戶之前，我們需要先掌握一些基礎知識。
 

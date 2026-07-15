@@ -3,7 +3,7 @@ title: Overiť kontrast palety
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Overenie kontrastu palety {#validate-palette-contrast}
+# Overenie kontrastu palety
 
 Schopnosť **Validate Palette Contrast** kontroluje farebné páry vo vašej dizajnovej palete na súlad s WCAG (Web Content Accessibility Guidelines) pred ich použitím vo vašej téme.
 

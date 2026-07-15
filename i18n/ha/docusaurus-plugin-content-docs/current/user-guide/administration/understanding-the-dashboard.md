@@ -3,7 +3,7 @@ title: Fahimtar Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# fahimtar Dashboard na Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# fahimtar Dashboard na Ultimate Multisite
 
 Kafin mu shiga cikin zaɓuɓɓukan tsari masu tasiri da yanayin aiki na Ultimate Multisite, bari mu duba dashboard ɗin.
 

@@ -3,7 +3,7 @@ title: 'Dysgu 13: Mae''n Gynllunio Atal'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Les 13: Mae'r Gwaithu Atal {#lesson-13-scaling-up}
+# Les 13: Mae'r Gwaithu Atal
 
 Mae gennych eich ffurf gweithredol sydd yn gweithio gyda chwaraeon. Mae’r les hon yn gweld sut i drosglau o weithrediad bach i gweithredol busnes – lladdio'r ffurf, awtomatig y gweithgareddau, a gryno'r cyfrifol ar gyfer un chwaraeon.
 

@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Filter: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Filter: wu_wp_config_reference_hook_line_patterns
 
 અમે ક્યાં અમારા કોન્સ્ટન્ટ્સ દાખલ (inject) કરી શકીએ તે જાણવા માટે ત્રણ પૅટર્ન (patterns) તપાસીએ છીએ:
 

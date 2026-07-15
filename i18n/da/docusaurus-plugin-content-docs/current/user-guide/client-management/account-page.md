@@ -3,7 +3,7 @@ title: Kunde konto side
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Din Klientens Konto side (v2) {#your-clients-account-page-v2}
+# Din Klientens Konto side (v2)
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

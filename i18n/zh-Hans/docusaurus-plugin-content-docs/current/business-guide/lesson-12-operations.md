@@ -3,7 +3,7 @@ title: 第12课：商业运营
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 第 12 课：运营业务 {#lesson-12-running-the-business}
+# 第 12 课：运营业务
 
 一个平台不是一个可以完成的项目——它是一个需要持续运营的业务。本课将涵盖管理 FitSite 的日常运营工作：支持、计费、维护以及如何让客户满意。
 

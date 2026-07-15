@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_stripe_checkout_subscription_da
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 Stripe စာရင်းပေးသွင်းမှု အချက်အလက်များကို စစ်ထုတ်ပေးသည့် (filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။ ဤနေရာမှတစ်ဆင့် success_url သို့မဟုတ် cancel_url များကိုလည်း အစားထိုး (override) ပေးနိုင်ပါသည်။
 

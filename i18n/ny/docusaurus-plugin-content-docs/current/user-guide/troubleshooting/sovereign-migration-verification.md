@@ -3,7 +3,7 @@ title: Kufotera Kukhazikira kwa M'moyo Woyamba
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inalimbik ku commands za WP-CLI pa verification pamene m'mita (tenant) ya sovereign. Gumira kuti muli ndi m'mita wamene ukuyendera, muli m'mita wosankha SSO, kapena muli m'mita wosankha kwa m'mita wosangalala osati muli mwayi wopereka.
 

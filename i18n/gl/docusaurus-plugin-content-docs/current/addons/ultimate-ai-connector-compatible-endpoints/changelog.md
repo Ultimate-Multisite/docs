@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Rexistro de cambios de Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Rexistro de cambios de Ultimate AI Connector for Compatible Endpoints
 
 ## Versión 2.0.0 — Publicada o 2026-04-24 {#version-200--released-on-2026-04-24}
 

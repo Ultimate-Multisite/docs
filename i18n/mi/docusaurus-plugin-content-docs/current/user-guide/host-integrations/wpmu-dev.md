@@ -3,7 +3,7 @@ title: Whakawhanaungatanga WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Whakawhanaungatanga me WPMU DEV Integration {#wpmu-dev-integration}
+# Whakawhanaungatanga me WPMU DEV Integration
 
 ## Overview {#overview}
 WPMU DEV heke platforma WordPress mō te whānau, e hune hosting, plugins, me ngā wāhi mō mga site WordPress. Ka taea e tēnei integration te whakawhiti domain automatically me te whakamaoritanga SSL certificate o Ultimate Multisite me te hosting o WPMU DEV.

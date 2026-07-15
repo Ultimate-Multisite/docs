@@ -3,7 +3,7 @@ title: WP-CLI viide
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI viide {#wp-cli-reference}
+# WP-CLI viide
 
 Gratis AI Agent sisaldab käsuperekonda `wp gratis-ai-agent` agendi jõudluse võrdlustestimiseks, võimekuste haldamiseks ja agendi oleku pärimiseks käsurealt. Kõik käsud nõuavad WP-CLI versiooni 2.0 või uuemat.
 

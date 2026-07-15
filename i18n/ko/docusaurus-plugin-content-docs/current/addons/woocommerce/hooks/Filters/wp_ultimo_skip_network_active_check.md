@@ -4,7 +4,7 @@ title: 필터 - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# 필터: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# 필터: wp_ultimo_skip_network_active_check
 
 개발자가 네트워크 활성화 검사를 건너뛸 수 있도록 허용합니다.
 

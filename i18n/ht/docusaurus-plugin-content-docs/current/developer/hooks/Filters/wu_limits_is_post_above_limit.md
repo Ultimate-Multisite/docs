@@ -4,7 +4,7 @@ title: Filtè - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filtè: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filtè: wu_limits_is_post_above_limit
 
 Tcheke si yon kalite piblikasyon bay otorize sou plan sa a Pèmèt devlopè plugin yo filtre valè retounen an
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Action: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Action: wp_ultimo_payfast_activation
 
 ಪ್ಲಗ್ಇನ್‌ನ ಇತರ ಭಾಗಗಳು ಆಕ್ಟಿವೇಷನ್‌ಗಾಗಿ ತಮ್ಮ ಕಾರ್ಯಗಳನ್ನು (routines) ಜೋಡಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

@@ -3,7 +3,7 @@ title: Mawuwozo
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Requirements {#ultimate-multisite-requirements}
+# Ultimate Multisite Requirements
 
 Mwayi wamukondwa mwayi muli pafupi pamene muli kupanga kuti mwayi wanu wosangalala (Ultimate Multisite) ufunika kuti mudzire. Mwayi, mwayi wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga ndi zinthu zingapo. Kuti mudzire, mwayi wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga kuti mudzire. Mwayi, mwayi wosangalala wosangalala (Ultimate Multisite) umunthu wamene ulipanga kuti mudzire.
 

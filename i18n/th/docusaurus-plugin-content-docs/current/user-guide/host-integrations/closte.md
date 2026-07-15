@@ -3,7 +3,7 @@ title: Closte Integration
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# การผสานการทำงานกับ Closte {#closte-integration}
+# การผสานการทำงานกับ Closte
 
 ## ภาพรวม {#overview}
 Closte เป็นแพลตฟอร์ม managed WordPress hosting ที่สร้างบนโครงสร้างพื้นฐานของ Google Cloud การผสานการทำงานนี้ช่วยให้สามารถซิงค์โดเมนและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite และ Closte ได้โดยอัตโนมัติ

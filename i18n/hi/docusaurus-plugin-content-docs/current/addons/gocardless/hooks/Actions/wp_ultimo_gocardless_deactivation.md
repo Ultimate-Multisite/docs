@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# एक्शन: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# एक्शन: wp_ultimo_gocardless_deactivation
 
 यह प्लगइन के अन्य हिस्सों को डीएक्टिवेशन के समय अपने फंक्शन (routines) जोड़ने की अनुमति देता है।
 

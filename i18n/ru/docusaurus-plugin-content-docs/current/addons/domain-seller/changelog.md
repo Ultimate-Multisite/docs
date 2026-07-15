@@ -3,7 +3,7 @@ title: Журнал изменений Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Журнал изменений Domain Seller {#domain-seller-changelog}
+# Журнал изменений Domain Seller
 
 Версия 1.3.0 — выпущена 2026-06-02
 - Новое: Добавлено предупреждение для администратора сети, когда баланс реселлера HostAfrica становится слишком низким

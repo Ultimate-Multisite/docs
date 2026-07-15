@@ -3,7 +3,7 @@ title: Tawm tsi rau V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# ពី V1-twb {#migrating-from-v1}
+# ពី V1-twb
 
 ## Ultimate Multisite ໄດ້ປ່ຽນຈາກຄອບຄົວການປ່ອຍ (releases) ເກົ່າຂອງມັນ 1.x ມາເປັນຄອບຄົວ 2.x ແລ້ວ. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

@@ -3,7 +3,7 @@ title: Hulp met aangepaste ontwikkeling
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hoe om spesiale ontwikkelingshulp van Codeable te kry? {#how-to-get-custom-development-help-from-codeable}
+# Hoe om spesiale ontwikkelingshulp van Codeable te kry?
 
 Soms het ons regtig fantastiese aanpassings nodig om ons netwerk presies so te laat loop hoe ons wil. As dit is wat jy soek, beveel ons [Codeable] aan, 'n plek waar jy ervare ontwikkelaars met Ultimate Multisite-kennis kan vind.
 

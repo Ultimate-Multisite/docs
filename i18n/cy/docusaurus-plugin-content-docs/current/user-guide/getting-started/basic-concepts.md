@@ -3,7 +3,7 @@ title: Cymryddau sylfaenol
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Cysgodau {#basic-concepts}
+# Cysgodau
 Mae'r gweithredol ychwanegol yn WordPress Multisite yw'r fath o gyflwyniad WordPress sy'n sylw'n rhoi'r chaws i chi creu a rheoli cyfathredegau am ychwanegol o webo o'r dashboard unig. Gallwch ddefnyddio'r dashboard hwn i rheoli pob hyn, gan gynnwys y nifer y weboedd, y ffeithiau (features), y themau (themes) a'r rôlau o'r benynolwr (user roles). Mae'n posibilr ystyried cyfathredegau oer oethau.
 
 ## Cwmni (Network) {#wordpress-multisite}

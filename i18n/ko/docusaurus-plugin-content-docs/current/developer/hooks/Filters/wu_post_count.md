@@ -4,7 +4,7 @@ title: 필터 - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# 필터: wu_post_count {#filter-wupostcount}
+# 필터: wu_post_count
 
 플러그인 개발자가 총 게시물 수를 변경할 수 있도록 허용합니다.
 

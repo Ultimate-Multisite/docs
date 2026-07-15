@@ -3,7 +3,7 @@ title: Sunrise File Errora
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise File Instalazioan Erro {#error-installing-the-sunrise-file}
+# Sunrise File Instalazioan Erro
 
 Ez dago `sunrise.php` filea, WordPress-ek berezian (bootstrapping) identifikatzen duen programa bat. WordPress-ek `sunrise.php` filea identifikatu dezake, hori **wp-content** folderaren belurra dagoela beharrezkoa da.
 

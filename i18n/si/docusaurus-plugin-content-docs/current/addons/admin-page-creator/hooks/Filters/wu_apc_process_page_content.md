@@ -4,7 +4,7 @@ title: පෙරහන - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# පෙරහන: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# පෙරහන: wu_apc_process_page_content
 
 අවසාන අන්තර්ගතය සංවර්ධකයන්ට වෙනස් කිරීමට ඉඩ දෙයි
 

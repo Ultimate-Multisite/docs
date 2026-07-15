@@ -3,7 +3,7 @@ title: 如何獲得幫助
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# 如何取得協助 {#how-to-get-help}
+# 如何取得協助
 
 您已取得有效的授權金鑰，隨附的還有我們團隊的支援服務，協助您解決在設定 Ultimate Multisite 過程中可能遇到的問題。
 

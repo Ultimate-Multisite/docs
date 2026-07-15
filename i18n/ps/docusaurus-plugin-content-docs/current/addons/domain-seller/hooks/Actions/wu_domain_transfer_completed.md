@@ -4,7 +4,7 @@ title: عمل - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# کړنه: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# کړنه: wu_domain_transfer_completed
 
 هغه وخت اجرا کېږي کله چې د ډومېن لېږد بشپړ شي.
 

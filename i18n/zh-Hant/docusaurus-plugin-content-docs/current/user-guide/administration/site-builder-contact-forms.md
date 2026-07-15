@@ -3,7 +3,7 @@ title: 網站建構器聯絡表單
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# 網站建立器聯絡表單 {#site-builder-contact-forms}
+# 網站建立器聯絡表單
 
 Superdav AI Agent v1.10.0 新增了透過 Site Builder agent 直接從聊天介面建立聯絡表單的功能。這讓您無需離開聊天介面，就能為任何頁面添加功能完整的聯絡表單。
 

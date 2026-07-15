@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Matikiti Othandizira
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Mbiri ya Zosintha za Matikiti a Thandizo {#support-tickets-changelog}
+# Mbiri ya Zosintha za Matikiti a Thandizo
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Zasinthidwa bwino: Yachotsa chikwatu cha vendor/ mu kutsatira kwa Git (chaphimbidwa kale ndi .gitignore), kuchepetsa kukula kwa repository

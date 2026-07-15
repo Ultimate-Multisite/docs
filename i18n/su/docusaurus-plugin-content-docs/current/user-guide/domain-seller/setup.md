@@ -3,7 +3,7 @@ title: Panataan sareng Konfigurasi Pemasok
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Penjual Domain: Pengaturan dan Konfigurasi Penyedia {#domain-seller-setup-and-provider-configuration}
+# Penjual Domain: Pengaturan dan Konfigurasi Penyedia
 
 Addon Domain Seller dikirim dengan panduan pengaturan (setup wizard) yang akan memandu Anda melalui setiap langkah yang diperlukan. Halaman ini membahas alur wizard dan cara mengkonfigurasi atau mengkonfigurasi ulang penyedia setelahnya.
 

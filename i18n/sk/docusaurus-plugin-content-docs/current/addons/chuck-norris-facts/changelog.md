@@ -3,7 +3,7 @@ title: Zoznam zmien Chuck Norris Facts
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Záznam zmien pre fakty o Chuckovi Norrisovi {#chuck-norris-facts-changelog}
+# Záznam zmien pre fakty o Chuckovi Norrisovi
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Pridané: Funkcionalita automatických aktualizácií cez aktualizačný server Ultimate Multisite

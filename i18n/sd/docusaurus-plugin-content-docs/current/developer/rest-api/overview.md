@@ -3,7 +3,7 @@ title: REST API جو جائزو
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API حوالو {#rest-api-reference}
+# REST API حوالو
 
 ## بنيادي ترتيب {#base-configuration}
 

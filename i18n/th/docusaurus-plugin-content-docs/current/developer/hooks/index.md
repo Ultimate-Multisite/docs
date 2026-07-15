@@ -3,7 +3,7 @@ title: ข้อมูลอ้างอิง Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ข้อมูลอ้างอิง Hooks {#hooks-reference}
+# ข้อมูลอ้างอิง Hooks
 
 เอกสารที่สร้างโดยอัตโนมัติสำหรับ **59 แอ็กชัน** และ **118 ฟิลเตอร์** ทั้งหมดใน Ultimate Multisite
 

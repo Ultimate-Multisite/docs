@@ -3,7 +3,7 @@ title: ダッシュボード概要
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview {#dashboard-overview}
+# Dashboard Overview
 
 Ultimate Multisite には Ultimate Multisite メニューの下に専用の **Dashboard** があり、さらにネットワークダッシュボードにウィジェットを追加します。本記事では、両方の場所で表示される内容を紹介します。
 

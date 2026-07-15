@@ -3,7 +3,7 @@ title: 'Lección 5: Deseñando os teus plans'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lección 5: Deseñar os teus plans {#lesson-5-designing-your-plans}
+# Lección 5: Deseñar os teus plans
 
 Os niveis dos teus plans non son só niveis de prezo -- son un reflexo de como operan realmente os clientes do teu nicho. Nesta lección deseñarás niveis de produto que se axusten ás necesidades reais dos negocios de fitness en diferentes etapas.
 

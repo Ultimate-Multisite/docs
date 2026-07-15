@@ -3,7 +3,7 @@ title: پێکهاتەی داشبۆرد
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# نظۆکی سەرەکی (Dashboard Overview) {#dashboard-overview}
+# نظۆکی سەرەکی (Dashboard Overview)
 
 Ultimate Multisite هەیە **Dashboard** تایبەت بە دەوروبەری منوی Ultimate Multisite، هەروەها وێنەکان بۆ Network Dashboard زیاد دەکات. ئەم بابەتە باس لەوە دەکات کە چی لە هەردوو شوێنەکەدا دەبینیت.
 

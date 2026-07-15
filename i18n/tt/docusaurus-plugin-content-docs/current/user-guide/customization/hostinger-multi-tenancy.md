@@ -3,7 +3,7 @@ title: Хостингер мультиаренда
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 Hostinger multi-tenancy özelliğini ekler. Bu sayede barındırılan alan adları, mevcut Hostinger alan adı eşleştirme entegrasyonunun yanı sıra egemen kiracı (sovereign tenant) sağlama süreçlerine de katılabilir hale gelir.
 

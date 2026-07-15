@@ -3,7 +3,7 @@ title: 'Leksyon 2: Pagpili sa Imong Niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lesson 2: Pagpili sa Imong Niche {#lesson-2-picking-your-niche}
+# Lesson 2: Pagpili sa Imong Niche
 
 Sa Lesson 1, gipaklaro nato nganong mas maayo ang niche kaysa sa general. Karon, kinahanglan na nimo nga pilion ang imo. Kini nga lesson mohatag kanimo og balangkas (framework) aron makakaplag ug makakompirma sa usa ka niche sa dili pa ka mogasto og oras pagtukod niini.
 

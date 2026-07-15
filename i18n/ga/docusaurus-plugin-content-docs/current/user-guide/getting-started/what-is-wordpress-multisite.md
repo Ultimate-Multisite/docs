@@ -3,7 +3,7 @@ title: Cad é an WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Cad é WordPress Multisite? {#what-is-wordpress-multisite}
+# Cad é WordPress Multisite?
 
 Intrínce am WordPress, fornece unha característica chamada ‘Multisite’ que remonta ao ano 2010, no lanzamiento do WordPress 3.0. Desde entonces, ha recibido varias revisiões con o fin de introducir novas características e fortalecer a seguridade.
 

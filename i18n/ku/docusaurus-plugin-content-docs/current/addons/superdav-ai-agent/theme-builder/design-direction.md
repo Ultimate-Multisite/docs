@@ -3,7 +3,7 @@ title: Arasteya Sêwiranê
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arasteya Sêwiranê {#design-direction}
+# Arasteya Sêwiranê
 
 Gava **Arasteya Sêwiranê** dihêle tu sêwirana dîtbarî ya theme-a xwe binirxînî, baştir bikî û dawî bikî berî ku Theme Builder theme-a tevahî çêbike.
 

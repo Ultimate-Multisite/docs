@@ -4,7 +4,7 @@ title: Chochita - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Ntchito: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# Ntchito: wp_ultimo_plugin_and_theme_manager_activation
 
 Lolani magawo ena a plugin alumikize ma routine awo a activation
 

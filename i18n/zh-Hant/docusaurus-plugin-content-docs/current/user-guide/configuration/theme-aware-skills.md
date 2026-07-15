@@ -3,7 +3,7 @@ title: 主題感知技能
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# 主題感知技能 {#theme-aware-skills}
+# 主題感知技能
 
 Superdav AI Agent v1.10.0 內建了四種新的主題感知技能，這些技能會自動適應您目前使用的 WordPress 主題。這些技能提供專門的指導和功能，使其能根據您的主題架構和特性進行客製化。
 

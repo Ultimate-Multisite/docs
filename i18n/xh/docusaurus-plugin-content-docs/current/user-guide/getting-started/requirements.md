@@ -3,7 +3,7 @@ title: Iimfuno
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Iimfuno ze-Ultimate Multisite {#ultimate-multisite-requirements}
+# Iimfuno ze-Ultimate Multisite
 
 Into yokuqala onokuzibuza yona phambi kokuthenga Ultimate Multisite kukuba zithini iimfuno zokuqhuba isongezo sethu. Ewe, ngethamsanqa, kukho kuphela iimfuno ezimbalwa ezisisiseko zokuqhuba Ultimate Multisite: **igama le-domain** , **umboneleli we-hosting** olungileyo kunye nofakelo lwe-WordPress **Multisite**. Yiyo yonke into oyifunayo!
 

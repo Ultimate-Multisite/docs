@@ -3,7 +3,7 @@ title: Ylätunnisteen verkkotunnushaku
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Ylätunnisteen verkkotunnushaku {#header-domain-search}
+# Ylätunnisteen verkkotunnushaku
 
 Käytä tätä asetusta, kun haluat pienen ylätunnistelomakkeen, joka käynnistää verkkotunnushaun ja antaa asiakkaan sitten valita saatavilla olevista verkkotunnuksista Ultimate Multisite checkoutissa.
 

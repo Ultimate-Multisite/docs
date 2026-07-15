@@ -3,7 +3,7 @@ title: Domēna produkti un cenas
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeni produkti un cenām {#domain-products-and-pricing}
+# Domeni produkti un cenām
 
 Domeni produkti ir to, kā jūs kontrolējat cenu, TLD (Top-Level Domain), WHOIS privātumu un pakalpojuma izvēli. Katrs domēns produkts ir standarta Multisite Ultimate produkts ar papildu **Domain Settings** (Domānu iestatījumi) tabu.
 

@@ -3,7 +3,7 @@ title: د اېډان Sunrise فایل لوډوونکی
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# د Addon Sunrise فایل Loader {#addon-sunrise-file-loader}
+# د Addon Sunrise فایل Loader
 
 Ultimate Multisite 2.8.0 د add-ons او دودیزو MU-plugin ادغامونو لپاره د sunrise غځونې Loader زیاتوي چې اړتیا لري د WordPress د sunrise bootstrapping پر مهال، د جوړ شوي `wp-content/sunrise.php` فایل له سمولو پرته، وچلېږي.
 

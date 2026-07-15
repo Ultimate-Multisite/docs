@@ -3,7 +3,7 @@ title: Verkkohaku
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Haku {#internet-search}
+# Internet Haku
 
 Gratis AI Agent v1.5.0 lisää **Internet Haku** -ominaisuuden, joka antaa tekoälyassistentille hakea ajankohtaista tietoa verkosta keskustelun aikana. Tämä toiminto perustuu [Brave Search API](https://brave.com/search/api/) tai [Tavily API](https://tavily.com/).
 

@@ -3,7 +3,7 @@ title: Çok Kiracılılık Entegrasyonu
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy Entegrasyonu {#multi-tenancy-integration}
+# Multi-Tenancy Entegrasyonu
 
 Ultimate Multisite: Multi-Tenancy 1.2.0; sovereign kiracılar, geçiş doğrulaması ve kiracı yaşam döngüsü otomasyonu için çeşitli entegrasyon temas noktalarını değiştirir.
 

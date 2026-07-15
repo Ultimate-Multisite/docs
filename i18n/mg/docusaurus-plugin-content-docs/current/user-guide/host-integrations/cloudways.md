@@ -3,7 +3,7 @@ title: Fampifandraisana Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Fandahana amin'ny Cloudways {#cloudways-integration}
+# Fandahana amin'ny Cloudways
 
 ## Famarahabana (Overview) {#overview}
 Ny Cloudways dia sehatra fampiasam-bola hosting an-tserasera (managed cloud hosting platform) izay ahafahanao mametraka ireo tranonkala WordPress maro samihafa eo amin'ny manome serivisy an-tserasera isan-karazany toy ny DigitalOcean, AWS, Google Cloud ary hafa. Ity fampifandraisana ity dia ahafahana mitazona ny domain sy ny SSL certificate ho voafehy ho azy eo amin'ny Ultimate Multisite sy Cloudways.

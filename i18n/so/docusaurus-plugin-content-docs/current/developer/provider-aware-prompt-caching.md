@@ -3,7 +3,7 @@ title: Kaydinta Prompt-ka ee Ka Warqabta Bixiyaha
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Kaydinta Prompt-ka ee Ka Warqabta Provider-ka {#provider-aware-prompt-caching}
+# Kaydinta Prompt-ka ee Ka Warqabta Provider-ka
 
 Superdav AI Agent v1.12.0 wuxuu soo bandhigayaa **kaydinta prompt-ka ee ka warqabta provider-ka**, taas oo hagaajisa kharashaadka API iyo daahitaanka iyadoo prompts lagu kaydiyo LLM providers kala duwan. Provider kasta wuxuu leeyahay habab kaydin iyo dejinno kala duwan.
 

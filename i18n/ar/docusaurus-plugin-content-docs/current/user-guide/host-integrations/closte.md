@@ -3,7 +3,7 @@ title: Closte Integration
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# تكامل Closte {#closte-integration}
+# تكامل Closte
 
 ## نظرة عامة {#overview}
 Closte هو منصة استضافة WordPress مُدارة مبنية على بنية تحتية من Google Cloud. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite وCloste.

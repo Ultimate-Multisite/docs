@@ -3,7 +3,7 @@ title: Diseinuaren norabidea
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Diseinuaren norabidea {#design-direction}
+# Diseinuaren norabidea
 
 **Diseinuaren norabidea** urratsak zure theme-aren diseinu bisuala berrikusi, findu eta amaitzeko aukera ematen dizu, Theme Builder-ek theme osoa sortu aurretik.
 

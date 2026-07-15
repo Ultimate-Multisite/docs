@@ -3,7 +3,7 @@ title: Urugero rw'Umuco wa RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Urugendo n'Umuco (RunCloud Integration) {#runcloud-integration}
+# Urugendo n'Umuco (RunCloud Integration)
 
 ## Urugero (Overview) {#overview}
 RunCloud ni platform y'uko gukoresha uburyo bwo gutera no gukoresha web applications ku server zawe mu cloud. Iyi gukoresha gishobora guhindura domain (domain syncing) n'ubwumvikane bw'SSL certificate management hagati ya Ultimate Multisite na RunCloud.

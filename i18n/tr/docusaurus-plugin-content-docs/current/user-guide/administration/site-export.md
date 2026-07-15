@@ -3,7 +3,7 @@ title: Site Dışa Aktarma
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Dışa Aktarma {#site-export}
+# Site Dışa Aktarma
 
 **Site Dışa Aktarma** yönetici sayfası, ağ yöneticilerinin bir siteyi veya tüm ağı, taşıma, yedekleme veya devir teslim işlemleri için indirilebilir bir arşiv haline getirmesine olanak tanır.
 

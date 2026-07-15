@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Ychwanegau'r addons yn ymddangos y Ultimate Multisite gyda phrychiadau a chysylltiadau ychwanegol. Mae'r rhaneddau (addons) cyfan yn cael eu cyfathri, ac gallai eu cyfathri o [ultimatemultisite.com](https://ultimatemultisite.com).
 

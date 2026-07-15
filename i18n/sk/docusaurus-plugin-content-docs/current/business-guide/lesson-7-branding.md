@@ -3,7 +3,7 @@ title: 'Lekcia 7: Urobte si to po svojom'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekcia 7: Urobte z toho svoj produkt {#lesson-7-making-it-yours}
+# Lekcia 7: Urobte z toho svoj produkt
 
 Vaši zákazníci by nikdy nemali mať pocit, že používajú „nejaký WordPress plugin“. Mali by mať pocit, že používajú FitSite -- platformu vytvorenú pre ich odvetvie. Táto lekcia sa venuje brandingu, white-labelingu a tomu, ako dosiahnuť, aby platforma pôsobila ako produkt.
 

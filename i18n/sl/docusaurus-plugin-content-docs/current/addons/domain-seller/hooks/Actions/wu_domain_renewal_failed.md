@@ -4,7 +4,7 @@ title: Dejanje - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Dejanje: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Dejanje: wu_domain_renewal_failed
 
 Sproži se, ko poskus podaljšanja domene ne uspe.
 

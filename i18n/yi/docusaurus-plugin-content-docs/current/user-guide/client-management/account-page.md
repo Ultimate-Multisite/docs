@@ -3,7 +3,7 @@ title: קליענט Account זייַט
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# אייער קליענטס Account בלאַט (v2) {#your-clients-account-page-v2}
+# אייער קליענטס Account בלאַט (v2)
 
 _**וויכטיקע באַמערקונג: דער אַרטיקל באַציִט זיך צו Ultimate Multisite ווערסיע 2.x.**_
 

@@ -3,7 +3,7 @@ title: Löggingur á viðskiptavini
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Skýslaður síða fyrir viðskiptavinann þinn (v2) {#your-clients-account-page-v2}
+# Skýslaður síða fyrir viðskiptavinann þinn (v2)
 
 _**VIÐSKIPURLEIKN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 

@@ -3,7 +3,7 @@ title: Ultimately Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite یو ووردپرس嘅 Multisite plugin е چې تاسو ته اجازه ورکوي د WaaS یا Websites as a Service د کليونټانو لپاره وړاندې کړئ. خو پداسې چې موږ پیل کوو او زده کوو چې Ultimate Multisite څنګه ستاسو کاروبار او کليونټانو سره مرسته وکړي، تر دې مخکې باید یو څه بنسټیز معلومات ترلاسه کړو.
 

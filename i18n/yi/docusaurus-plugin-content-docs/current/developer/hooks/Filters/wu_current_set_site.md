@@ -4,7 +4,7 @@ title: פֿילטער - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# פֿילטער: wu_current_set_site {#filter-wucurrentsetsite}
+# פֿילטער: wu_current_set_site
 
 דערלויבט אַנטוויקלער צו טוישן דעם פעליקייַט־אויפֿפֿיר און באַשטימען דעם איצטיקן פּלאַץ אַנדערש.
 

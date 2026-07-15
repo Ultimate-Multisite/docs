@@ -3,7 +3,7 @@ title: Referenca za WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI referenca {#wp-cli-reference}
+# WP-CLI referenca
 
 Gratis AI Agent isporučuje obitelj naredbi `wp gratis-ai-agent` za benchmarking agenta, upravljanje sposobnostima i dohvaćanje statusa agenta iz naredbenog retka. Sve naredbe zahtijevaju WP-CLI 2.0 ili noviji.
 

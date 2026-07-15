@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# ວິທີໃຊ້ Ultimate Multisite snippets ໃນ GitHub repository ຂອງພວກເຮົາ {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# ວິທີໃຊ້ Ultimate Multisite snippets ໃນ GitHub repository ຂອງພວກເຮົາ
 
 GitHub repository ຂອງພວກເຮົາ ມັນມີ code snippets (အပိုင်း代码) ທີ່ຜູ້ໃຊ້ Ultimate Multisite ມັກຂໍໃຊ້ ເພື່ອເພີ່ມຟັງຊັນນ້ອຍໆ ເຊັ່ນ: ການໃສ່ Google Analytics script ໃນໜ້າລົງທະບຽນ ຫຼື ການເຊື່ອງ meta box ອອກຈາກ admin dashboard.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# ວິທີເພີ່ມ snippet ໃນ file functions.php ຂອງ theme ເຈົ້າ {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# ວິທີເພີ່ມ snippet ໃນ file functions.php ຂອງ theme ເຈົ້າ
 
   1. ເຂົ້າສູ່ລະບົບ WordPress Network admin dashboard ຂອງເຈົ້າ ແລ້ວໄປທີ່ Themes > Theme Editor (ເບິ່ງ screenshot ຂ້າງລຸ່ມນີ້).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# ວິທີສ້າງ Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# ວິທີສ້າງ Must-Use Plugins (mu-plugins)
 
 WordPress ມີ feature ຫນຶ່ງທີ່ຊ່ວຍໃຫ້ເຈົ້າສາມາດໂຫຼດ custom functionality ຊື່ວ່າ "Must-Use Plugins" ຫຼື "mu-plugins" ສັ້ນໆ.
 

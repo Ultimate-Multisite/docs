@@ -3,7 +3,7 @@ title: Webhookit
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhookien esikatselu (v2) {#a-first-look-on-webhooks-v2}
+# Webhookien esikatselu (v2)
 
 _**HUOMIO: Huomioi, että tämä ominaisuus tai artikkeli on tarkoitettu edistyneille käyttäjille.**_
 

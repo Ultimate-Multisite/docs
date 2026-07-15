@@ -3,7 +3,7 @@ title: Izgradite poslovni model nišne web stranice
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Izgradite biznis sa nišnim web sajtovima uz Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Izgradite biznis sa nišnim web sajtovima uz Ultimate Multisite
 
 Većina ljudi koji pokušavaju prodavati web sajtove takmiči se na cijeni protiv Wix-a, Squarespace-a i hiljada freelancer-a. I oni gube. Oni koji pobeđuju biraju specifičnu publiku, grade rješenje prilagođeno toj publici i naplaćuju vrijednost koju pružaju.
 

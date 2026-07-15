@@ -3,7 +3,7 @@ title: Yordam qanday olish mumkin
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Yordam qanday olish mumkin {#how-to-get-help}
+# Yordam qanday olish mumkin
 
 Sizning amal qiladigan Litsenziya kalitingiz mavjud va bu sizga Ultimate Multisite'ni sozlash jarayonida duch kelishingiz mumkin bo'lgan muammolarni hal qilishda yordam berish uchun bizning jamoamizga kirish imkonini beradi.
 

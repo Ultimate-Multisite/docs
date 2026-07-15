@@ -4,7 +4,7 @@ title: Gweithred - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Cam gweithredu: wu_model_post_save {#action-wumodelpostsave}
+# Cam gweithredu: wu_model_post_save
 
 Yn tanio ar ôl i wrthrych gael ei storio yn y gronfa ddata.
 

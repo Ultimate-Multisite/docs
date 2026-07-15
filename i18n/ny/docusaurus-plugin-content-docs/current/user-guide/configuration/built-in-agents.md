@@ -3,7 +3,7 @@ title: Ma agent omangidwiramo
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Omangidwira Mkati {#built-in-agents}
+# Agents Omangidwira Mkati
 
 Gratis AI Agent v1.9.0 imabwera ndi agents asanu omangidwira mkati, aliyense wokonzedweratu ndi gulu la zida lolunjika pa ntchito inayake, system prompt yosinthidwa, ndi malingaliro oyambira ogwirizana ndi ntchito zofala m’gawolo. Kusintha pakati pa agents kumasintha zomwe assistant angachite ndi mmene amayankhira — popanda kasinthidwe kalikonse kuchokera kwa inu. Superdav AI Agent v1.18.0 ikhoza kuwonjezera zida zoganizira ndandanda, zolemba za zikumbutso, zipata zovomereza, ndi zidziwitso za SMS ku mayendedwe a ntchito awa pamene ma integrations okhudzana nawo akonzedwa.
 

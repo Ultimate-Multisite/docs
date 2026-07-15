@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ukuhlanganiswa kwe-GridPane {#gridpane-integration}
+# Ukuhlanganiswa kwe-GridPane
 
 ## Uhlolojikelele {#overview}
 I-GridPane iyiphaneli yokulawula i-WordPress hosting ekhethekile eyakhelwe ochwepheshe be-WordPress abazimisele. Lokhu kuhlanganiswa kunika amandla ukuvumelanisa okuzenzakalelayo kwama-domain nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-GridPane.

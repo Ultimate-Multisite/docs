@@ -3,7 +3,7 @@ title: Ngā Wāhi Whakamahi
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mga Tūnga o Ultimate Multisite {#ultimate-multisite-requirements}
+# Mga Tūnga o Ultimate Multisite
 
 Kua te mea whakamua e koe i te whaina Ultimate Multisite he mea nui, ko te mea kua e whakaaro i te tūnga (requirements) ki te whakauru i tō plugin. Ahia, he tino āhua pēnei te tūnga mō te whakamahi Ultimate Multisite: he **domain name**, he **hosting provider** māhinaki, me heke WordPress **Multisite**. He mea katoa e tika ana!
 

@@ -4,7 +4,7 @@ title: Филтер - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Филтер: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Филтер: wu_page_get_title_links
 
 Омогућава програмерима plugin-а, као и нама, да додају везе радњи на наше странице за уређивање.
 

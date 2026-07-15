@@ -4,7 +4,7 @@ title: Sefa - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Fyuluta: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Fyuluta: wu_checkout_field_templates
 
 Ma API athu owonjezera zitsanzo zatsopano za minda amalumikizana apa.
 

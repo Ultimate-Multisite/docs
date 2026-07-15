@@ -3,7 +3,7 @@ title: An t-uisge a' chluarachadh mod an t-uisge site
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notice Removal Mode Site Builder {#site-builder-mode-removal-notice}
+# Notice Removal Mode Site Builder
 
 **Tha mode Site Builder tha wedi a' chlàradh (removed) yn Superdav AI Agent v1.12.0.** Tha thu air a' th'annach Site Builder mode, rinn a' chlàradh do:
 

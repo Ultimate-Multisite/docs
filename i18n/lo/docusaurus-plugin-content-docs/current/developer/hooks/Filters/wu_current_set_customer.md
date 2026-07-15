@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# ຕົວກັ່ນຕອງ: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# ຕົວກັ່ນຕອງ: wu_current_set_customer
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາປັບປ່ຽນພຶດຕິກຳເລີ່ມຕົ້ນ ແລະຕັ້ງຄ່າລູກຄ້າປັດຈຸບັນແຕກຕ່າງອອກໄປ.
 

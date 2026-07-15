@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 WooCommerce-ലെ ഡിഫോൾട്ട് ബില്ലിംഗ് അഡ്രസ്സ് ഫീൽഡുകൾ ഫിൽട്ടർ ചെയ്യാൻ ഇത് ഡെവലപ്പർമാർക്ക് അനുവദിക്കുന്നു.
 

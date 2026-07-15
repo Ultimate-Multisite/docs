@@ -3,7 +3,7 @@ title: Gukoresha Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Gutangura Ultimate Multisite {#translating-ultimate-multisite}
+# Gutangura Ultimate Multisite
 
 Ultimate Multisite yariwe mu Icyongereza, ariko plugin yashobora guhindurwa kandi twari twa kwibanda cyane ku gukoresha uburyo bwo guhindura.
 

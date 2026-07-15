@@ -4,7 +4,7 @@ title: Ketso - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Ketso: wu_page_after_render {#action-wupageafterrender}
+# Ketso: wu_page_after_render
 
 Dumella bahlahisi ba ditlatsetso ho eketsa dikahare tse ding ka mora hore re hatise leqephe
 

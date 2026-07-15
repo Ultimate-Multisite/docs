@@ -4,7 +4,7 @@ title: Sía - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Sía: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Sía: wu_post_count_statuses
 
 Leyfir plugin-hönnuðum að breyta hvaða færslustöður eigi að telja. Sjálfgefið eru birtar og einkafærslur taldar
 

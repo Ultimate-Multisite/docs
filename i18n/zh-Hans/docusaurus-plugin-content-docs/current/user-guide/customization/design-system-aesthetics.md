@@ -3,7 +3,7 @@ title: 设计系统美学技能
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# 设计系统美学技能 {#design-system-aesthetics-skill}
+# 设计系统美学技能
 
 **设计系统美学技能**是一个指导性的方法，用于完善您网站的视觉识别度。它帮助您就定义设计系统的排版、颜色、间距和动效（motion）等设计令牌（tokens）做出一致的决策。
 

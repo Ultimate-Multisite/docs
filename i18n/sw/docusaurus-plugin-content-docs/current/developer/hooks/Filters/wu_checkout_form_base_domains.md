@@ -4,7 +4,7 @@ title: Kichujio - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Kichujio: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Kichujio: wu_checkout_form_base_domains
 
 Huchuja vikoa msingi vya pamoja vya fomu ya malipo ambavyo havipaswi kuwa rekodi za vikoa vilivyopangwa.
 

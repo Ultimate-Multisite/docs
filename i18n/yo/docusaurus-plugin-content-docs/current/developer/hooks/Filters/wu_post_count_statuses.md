@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Gba àwọn olùgbéejáde àfikún láyè láti yí iru ipo àkọsílẹ̀ tí ó yẹ kí a kà padà. Nípa aiyipada, a máa ń ka àwọn àkọsílẹ̀ tí a ti tẹ̀jáde àti ti ikọ̀kọ̀
 

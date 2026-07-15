@@ -3,7 +3,7 @@ title: Domänprodukter och prissättning
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domänprodukter och prissättning {#domain-products-and-pricing}
+# Domänprodukter och prissättning
 
 Domänprodukter är hur du styr prissättning, TLD:er, WHOIS-integritet och val av leverantör. Varje domänprodukt är en standardprodukt i Multisite Ultimate med en extra **Domain Settings**-flik.
 

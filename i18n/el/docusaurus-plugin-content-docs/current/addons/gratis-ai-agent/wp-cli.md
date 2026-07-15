@@ -3,7 +3,7 @@ title: WP-CLI Αναφορά
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Αναφορά WP-CLI {#wp-cli-reference}
+# Αναφορά WP-CLI
 
 Το Gratis AI Agent παρέχει μια οικογένεια εντολών `wp gratis-ai-agent` για benchmarking του agent, διαχείριση ικανοτήτων (abilities) και ανάκτηση της κατάστασης του agent από τη γραμμή εντολών. Όλες οι εντολές απαιτούν WP-CLI 2.0 ή νεότερη έκδοση.
 

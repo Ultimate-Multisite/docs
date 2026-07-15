@@ -4,7 +4,7 @@ title: Filtar - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Filtar: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Filtar: wu_should_create_domain_record_for_site
 
 Filtrira treba li Ultimate Multisite stvoriti zapis domene za novostvorenu web-stranicu.
 

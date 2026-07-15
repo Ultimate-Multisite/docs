@@ -3,7 +3,7 @@ title: ' nõuded'
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite nõuded {#ultimate-multisite-requirements}
+# Ultimate Multisite nõuded
 
 Enne kui Ultimate Multisite ostmine otsustad, saata ennustada endale: mida on vaja meie plugini käivitamiseks? õnneks, Ultimate Multisite käivitamiseks on vaid mõned aluseks olevad nõuded: **domeenname**, hea **hostingu teenuse** ja WordPress **Multisite** installatsioon. See on kõik, mida vajad!
 

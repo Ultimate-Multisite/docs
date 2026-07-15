@@ -4,7 +4,7 @@ title: Isenzo - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Isenzo: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Isenzo: wp_ultimo_support_agents_activation
 
 Vumela ezinye izingxenye ze-plugin zinamathisele izinqubo zazo zokuvula
 

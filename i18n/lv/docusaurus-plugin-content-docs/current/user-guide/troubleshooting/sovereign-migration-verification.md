@@ -3,7 +3,7 @@ title: Sovereīnas migrācijas apstiprināšana
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migrācijas apstiprinājums {#sovereign-migration-verification}
+# Sovereign Migrācijas apstiprinājums
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ietver WP-CLI apstiprinājuma komandas sovereīnu īpašnieku migrācijām. Izmantojiet tos, ja tenantas migrācija, SSO apmeklējums vai izolēta instalācija neiztur esošo uzvedību.
 

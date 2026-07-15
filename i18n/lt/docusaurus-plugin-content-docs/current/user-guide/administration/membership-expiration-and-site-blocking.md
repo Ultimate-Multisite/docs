@@ -3,7 +3,7 @@ title: Membriškumo Apsaukimo ir Sistemos Blokavimas
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Abėgimo laikas ir svetainės blokavimas {#membership-expiration-and-site-blocking}
+# Abėgimo laikas ir svetainės blokavimas
 
 Šis poradnik paaiškinas, kaip Ultimate Multisite tvarko prenumeratų pabaigos, mokymų pabaigos ir svetaini blokavimo. Jis apima prenumeratos gyvybę nuo aktyvios iki pabaigta, nustatymus, kurie kontrolia, ar svetainės bus užblokuotos, ir ką reikia patikrinti, jei svetainės vis dar yra prieiga po prenumeratos pabaigos.
 

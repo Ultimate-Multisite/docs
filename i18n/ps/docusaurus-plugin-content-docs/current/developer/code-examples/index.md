@@ -3,7 +3,7 @@ title: پرمختللي کوډ بېلګې
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# پرمختللي Code بېلګې {#advanced-code-examples}
+# پرمختللي Code بېلګې
 
 دا بېلګې له Ultimate Multisite سره د پرمختللو ادغام بڼې ښيي.
 

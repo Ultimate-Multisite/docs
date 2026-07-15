@@ -3,7 +3,7 @@ title: Referenza tal-Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenza tal-Hooks {#hooks-reference}
+# Referenza tal-Hooks
 
 Dokumentazzjoni ġġenerata awtomatikament għall-**59 actions** u **118 filters** kollha f'Ultimate Multisite.
 

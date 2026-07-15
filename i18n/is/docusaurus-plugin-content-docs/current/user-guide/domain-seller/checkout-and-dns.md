@@ -3,7 +3,7 @@ title: Skráningarfelt og viðskiptavarkennar DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Fél og DNS-stjórnun við viðskipti {#checkout-field-and-customer-dns-management}
+# Checkout Fél og DNS-stjórnun við viðskipti
 
 ## Felturinn fyrir doménvalg {#the-domain-selection-checkout-field}
 

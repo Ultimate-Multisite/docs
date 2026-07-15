@@ -3,7 +3,7 @@ title: מדריך אינטגרציה
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# מדריך אינטגרציה {#integration-guide}
+# מדריך אינטגרציה
 
 מדריך זה מכסה דפוסי אינטגרציה נפוצים עם Ultimate Multisite, כולל חיבור לשירותים חיצוניים, בניית שערי תשלום מותאמים אישית וטיפול ב-webhooks.
 

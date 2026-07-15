@@ -4,7 +4,7 @@ title: Filter - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filter: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Filter: wu_should_redirect_to_primary_domain
 
 डेवलपर्स को रीडायरेक्शन को रोककर (short-circuit करके) उसे होने से रोकने की अनुमति देता है।
 

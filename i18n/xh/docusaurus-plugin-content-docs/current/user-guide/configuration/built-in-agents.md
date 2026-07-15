@@ -3,7 +3,7 @@ title: Ii-arhente ezakhelwe ngaphakathi
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents ezakhelwe ngaphakathi {#built-in-agents}
+# Agents ezakhelwe ngaphakathi
 
 Gratis AI Agent v1.9.0 iza neearhente ezintlanu ezakhelwe ngaphakathi, nganye ilungiselelwe kwangaphambili ngeseti egxininisiweyo yezixhobo, system prompt elungiselelweyo, kunye neengcebiso zokuqalisa ezihambelana nemisebenzi eqhelekileyo kuloo ndawo. Ukutshintsha phakathi kweearhente kutshintsha into anokuyenza umncedisi nendlela aphendula ngayo — ngaphandle kwalo naluphi na uqwalaselo oluvela kuwe. Superdav AI Agent v1.18.0 inokongeza izixhobo eziqonda ishedyuli, iirekhodi zezikhumbuzo, amasango okuvunywa, kunye nezaziso zeSMS kwezi nkqubo xa udibaniso olunxulumeneyo luqwalaselwe.
 

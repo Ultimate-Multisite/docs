@@ -3,7 +3,7 @@ title: RunCloud integrācija
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrācija ar RunCloud {#runcloud-integration}
+# Integrācija ar RunCloud
 
 ## Īsszums {#overview}
 RunCloud ir veltīta serveru pārvaldības platforma, kas ļauj viegli izvietot un pārvaldīt tīmekļa lietojumus savos nuoklāju serverēs. Šī integrācija atrodas automaticās domēnu sinhronizācijas un SSL sertifikātu pārvaldības starp Ultimate Multisite un RunCloud.

@@ -3,7 +3,7 @@ title: 'Aralin 7: Gawin Itong Sa Iyo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Aralin 7: Gawin Itong Sa Iyo {#lesson-7-making-it-yours}
+# Aralin 7: Gawin Itong Sa Iyo
 
 Hindi dapat maramdaman ng iyong mga customer na gumagamit sila ng "ilang WordPress plugin." Dapat nilang maramdaman na gumagamit sila ng FitSite -- isang platform na ginawa para sa kanilang industriya. Saklaw ng araling ito ang pagba-brand, white-labeling, at pagpaparamdam sa platform na parang isang produkto.
 

@@ -3,7 +3,7 @@ title: WordPress Multisite কি?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite কি? {#what-is-wordpress-multisite}
+# WordPress Multisite কি?
 
 WordPress-ৰ মূল অংশত এটা 'Multisite' নামৰ বৈশিষ্ট্য আছে, যাৰ উৎপত্তি ২০১০ চনত WordPress ৩.০ মুকলি কৰাৰ সময়ত হৈছিল। তাৰ পৰাই ই নতুন বৈশিষ্ট্য যোগ কৰা আৰু নিৰাপত্তা বৃদ্ধি কৰাৰ লক্ষ্যৰে বহু সংশোধনৰ অধীনত আছে।
 

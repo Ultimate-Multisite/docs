@@ -3,7 +3,7 @@ title: Suveræn Migrationsworkflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migrations Workflow {#sovereign-migration-workflow}
+# Sovereign Migrations Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 tilføjer migrationsverifikationsporte til flytning af en standard subsite ind i sovereign tenant infrastruktur.
 

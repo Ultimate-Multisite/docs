@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Shabakado Badan
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Diiwaanka Isbeddellada Multi-Network {#multi-network-changelog}
+# Diiwaanka Isbeddellada Multi-Network
 
 ### 1.3.0 {#130}
 * Cusub: Muujiye horudhac template-ka network — baadh oo horay u eeg template-yada network adigoo adeegsanaya guddi toos ah ka hor iibsashada.

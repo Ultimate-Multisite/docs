@@ -3,7 +3,7 @@ title: Créer une entreprise de site de niche
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Créer une entreprise de sites de niche avec Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Créer une entreprise de sites de niche avec Ultimate Multisite
 
 La plupart des gens qui essaient de vendre des sites web rivalisent sur les prix avec Wix, Squarespace et des milliers de freelances. Ils perdent. Ceux qui réussissent choisissent un public spécifique, construisent une solution adaptée à ce public, et facturent la valeur qu'ils apportent.
 

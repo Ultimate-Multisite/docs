@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta’ GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Ġurnal tal-Bidliet ta' GoCardless {#gocardless-changelog}
+# Ġurnal tal-Bidliet ta' GoCardless
 
 Verżjoni: 1.0.3 - Rilaxxata fil-2026-05-05
 * Tiswija: Siti pendenti orfni issa jitnaddfu meta sħubija GoCardless tiġi kkanċellata waqt li tkun fi stat pendenti jew on-hold

@@ -3,7 +3,7 @@ title: Registo de alterações do Exportador de Sites
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Registo de alterações do Site Exporter {#site-exporter-changelog}
+# Registo de alterações do Site Exporter
 
 Versão: 1.0.6 - Lançada em 2026-05-11
 * Novo: As exportações de sites agora incluem um index.php de arranque automático, para que o ZIP possa ser instalado num host novo sem uma instalação separada de plugin

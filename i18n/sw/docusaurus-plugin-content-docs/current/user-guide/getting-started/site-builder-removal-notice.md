@@ -3,7 +3,7 @@ title: Taarifa ya Kuondoa Hali ya Jengo la Tovuti
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Taarifa ya Kuondoa Hali ya Kuunda Tovuti (Site Builder Mode) {#site-builder-mode-removal-notice}
+# Taarifa ya Kuondoa Hali ya Kuunda Tovuti (Site Builder Mode)
 
 **Hali ya Kuunda Tovuti (Site Builder mode) imefutwa katika Superdav AI Agent v1.12.0.** Ikiwa ulikuwa unatumia Site Builder mode, unapaswa kuhama kwenda **agent Msaidizi wa Kuweka (Setup Assistant agent)** kwa ajili ya kuunda mandhari (theme) na kuweka tovuti.
 

@@ -3,7 +3,7 @@ title: Dhana za Msingi
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Dhana za Msingi {#basic-concepts}
+# Dhana za Msingi
 
 Kwa mtumiaji mpya wa WordPress Multisite na mtu ambaye ameanza kutumia Ultimate Multisite, kunaweza kuwa na maneno na misemo mingi mipya ya kuelewa mwanzoni. Kujifunza haya ni kazi muhimu kwa sababu utahitaji kuelewa jukwaa hili na jinsi linavyofanya kazi kwa ujumla.
 

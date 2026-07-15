@@ -3,7 +3,7 @@ title: Feedback dhe Raportimi i Probleve të Klientëve
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback dhe Raportimi i Problemeve të Klientëve {#customer-feedback--issue-reporting}
+# Feedback dhe Raportimi i Problemeve të Klientëve
 
 Gratis AI Agent v1.5.0 prezanton një sistem të integruar për kthim të feedback-it dhe raportimin e problemeve, që lejon përdoruesve final të flagojnë përgjigjet që nuk janë të ndihmuara dhe raportojnë probleme direkt nga interfejsi i bisedës. Ky sistem përfshin menaxhimin e konsentmentit (consent management), një komandë raportimi automatike dhe triazh të mbështetur nga AI në backend.
 

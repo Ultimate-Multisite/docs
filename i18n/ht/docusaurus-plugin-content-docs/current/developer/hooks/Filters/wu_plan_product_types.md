@@ -4,7 +4,7 @@ title: Filtre - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtè: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtè: wu_plan_product_types
 
 Filtre kalite pwodwi yo ki ta dwe trete kòm plan.
 

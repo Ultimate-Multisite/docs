@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 டெம்ப்ளேட் ப்ரீவியூவர் (template previewer) சூழலுக்குள் இது இயங்குகிறது.
 

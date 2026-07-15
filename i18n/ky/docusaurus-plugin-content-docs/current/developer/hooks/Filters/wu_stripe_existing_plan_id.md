@@ -4,7 +4,7 @@ title: Чыпка - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Чыпка: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Чыпка: wu_stripe_existing_plan_id
 
 Текшериле турган пландын IDсин чыпкалайт. Эгер бул бар болсо, жаңы жазылуу ушул планды колдонот.
 

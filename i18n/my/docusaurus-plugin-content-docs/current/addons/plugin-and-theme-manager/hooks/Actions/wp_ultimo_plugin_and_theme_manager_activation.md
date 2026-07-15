@@ -4,7 +4,7 @@ title: Action - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Action: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# Action: wp_ultimo_plugin_and_theme_manager_activation
 
 ပလပ်အင်ရဲ့ တခြားအစိတ်အပိုင်းတွေက ၎င်းရဲ့ အသက်သွင်းမှု (activation) လုပ်ငန်းစဉ်တွေကို ချိတ်ဆက်နိုင်ဖို့အတွက် ဒီ action ကို အသုံးပြုနိုင်ပါတယ်။
 

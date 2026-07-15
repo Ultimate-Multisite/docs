@@ -3,7 +3,7 @@ title: 'Isomo rya 1: Kuki isoko ryihariye ritsinda'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Isomo 1: Impamvu Isoko Ryihariye Ritsinda {#lesson-1-why-niche-wins}
+# Isomo 1: Impamvu Isoko Ryihariye Ritsinda
 
 Mbere y’uko dukora kuri software iyo ari yo yose, ugomba gusobanukirwa impamvu kubaka ugamije abakiriya runaka ari cyo cyemezo kimwe cy’ingenzi kurusha ibindi uzafata.
 

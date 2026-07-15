@@ -3,7 +3,7 @@ title: Klienti konto lehel
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Teie kliendi konto lehekül (v2) {#your-clients-account-page-v2}
+# Teie kliendi konto lehekül (v2)
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 

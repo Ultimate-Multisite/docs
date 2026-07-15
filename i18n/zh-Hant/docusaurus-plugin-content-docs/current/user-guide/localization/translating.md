@@ -3,7 +3,7 @@ title: 翻譯 Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# 翻譯 Ultimate Multisite {#translating-ultimate-multisite}
+# 翻譯 Ultimate Multisite
 
 Ultimate Multisite 以英文開發，但這個 plugin 完全支援翻譯，我們非常歡迎翻譯貢獻。
 

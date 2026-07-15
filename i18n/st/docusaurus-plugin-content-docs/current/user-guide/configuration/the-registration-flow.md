@@ -3,7 +3,7 @@ title: Ho lula la registration
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ho Fikiliso (v2) {#the-registration-flow-v2}
+# Ho Fikiliso (v2)
 
 _**LIPOTSO LIKHLELWE: Le tsela ena e fana ka Ultimate Multisite v2.x.**_
 

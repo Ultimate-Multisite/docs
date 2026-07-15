@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# ଫିଲ୍ଟର: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# ଫିଲ୍ଟର: wu_documentation_get_link
 
 plugin ବିକାଶକାରୀମାନଙ୍କୁ ଲିଙ୍କଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରିବାକୁ ଦିଅନ୍ତୁ।
 

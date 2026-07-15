@@ -3,7 +3,7 @@ title: Ultimate Multisite ସ୍ଥାପନ କରୁଛନ୍ତି
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite ସ୍ଥାପନ କରନ୍ତୁ {#installing-ultimate-multisite}
+# Ultimate Multisite ସ୍ଥାପନ କରନ୍ତୁ
 
 :::note
 ଏହି ଶିକ୍ଷଣଦାନରେ ଆପଣଙ୍କ WordPress Multisite ଏବଂ ଏହାର ବିନ୍ୟାସ ପୂର୍ବରୁ ସ୍ଥାପିତ ହୋଇଛି ବୋଲି ମଧ୍ୟମ କରିଛନ୍ତି। କିଭଳି ସ୍ଥାପନ କରିବେ, ଜାଣିବା ପାଇଁ WP Beginner ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଇଥିବା [ଏହି ଶିକ୍ଷଣଦାନ](https://www.wpbeginner.com/glossary/multisite/) ଦେଖନ୍ତୁ।

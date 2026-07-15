@@ -3,7 +3,7 @@ title: Fluj de migració soberana
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Flui de Migració Soberana {#sovereign-migration-workflow}
+# Flui de Migració Soberana
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 añade portes de verificació de migració per passar un subsite estàndard a infraestructures de tenent soberan.
 

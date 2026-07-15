@@ -3,7 +3,7 @@ title: અદ્યતન કોડ ઉદાહરણો
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# એડવાન્સ્ડ કોડ ઉદાહરણો {#advanced-code-examples}
+# એડવાન્સ્ડ કોડ ઉદાહરણો
 
 આ ઉદાહરણો Ultimate Multisite સાથે એડવાન્સ્ડ ઇન્ટિગ્રેશન પેટર્ન દર્શાવે છે.
 

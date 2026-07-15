@@ -4,7 +4,7 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Фільтр: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Фільтр: wu_element_maybe_extract_arguments
 
 Додає загальний фільтр, який дозволяє розробникам розширити цей парсер для роботи з додатковими конструкторами або плагінами.
 

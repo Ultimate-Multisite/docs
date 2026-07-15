@@ -3,7 +3,7 @@ title: Site Builder Samanvaya v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 मा परिचय কৰা) হৈছে বহু-ধাপৰ ওয়েবসাইট নিৰ্মাণক শক্তি যোগোৱা ইঞ্জিন। যেতিয়া আপুনি এজেণ্টক "এটা ресторанৰ ওয়েবসাইট বনাওক" বা "এটা ব্লগ সহ প’ৰ্টফলিও বনাওক" বুলি ক’লে, তেতিয়া এই অৰকেষ্ট্ৰেটৰ (orchestrator) সেই উচ্চ-স্তৰৰ লক্ষ্যটো এটা সুসংগঠিত **প্ৰিকল্পনা (plan)** ত ভাঙি দিয়ে, ইয়াক পূৰণ কৰিবলৈ প্ৰয়োজনীয় প্লাগইনবোৰ বিচাৰি উলিয়ায়, প্ৰতিটো পদক্ষেপ ক্ৰম অনুসৰি কাৰ্যকৰী কৰে, প্ৰগতিৰ মটৱা কৰে, আৰু নিজে নিজে ভুল শুধৰাই আগুৱাই যায়।
 

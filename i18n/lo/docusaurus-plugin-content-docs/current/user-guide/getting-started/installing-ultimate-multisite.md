@@ -3,7 +3,7 @@ title: ການຕິດຕັ້ງ Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# ການຕິດຕັ້ງ Ultimate Multisite {#installing-ultimate-multisite}
+# ການຕິດຕັ້ງ Ultimate Multisite
 
 :::note
 ຄຳແນະນຳນີ້ສົມມຸດວ່າທ່ານໄດ້ຕິດຕັ້ງ ແລະຕັ້ງຄ່າ WordPress Multisite ແລ້ວ. ເພື່ອຮຽນຮູ້ວິທີການ, ກະລຸນາເບິ່ງ [ຄຳແນະນຳນີ້](https://www.wpbeginner.com/glossary/multisite/) ໂດຍ WP Beginner.

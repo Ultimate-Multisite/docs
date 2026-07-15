@@ -3,7 +3,7 @@ title: Haɓaka Ƙofa ta Musamman
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Gina Custom Gateway {#custom-gateway-development}
+# Gina Custom Gateway
 
 Za ka iya ƙirƙirar custom payment gateways ta hanyar faɗaɗa class ɗin `Base_Gateway`.
 

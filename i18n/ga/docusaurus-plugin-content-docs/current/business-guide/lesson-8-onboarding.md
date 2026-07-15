@@ -3,7 +3,7 @@ title: 'Ceacht 8: Ionduchtú Custaiméirí'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Ceacht 8: Ionduchtú Custaiméirí {#lesson-8-customer-onboarding}
+# Ceacht 8: Ionduchtú Custaiméirí
 
 Níl i gceist le custaiméir a fháil chun clárú ach leath na hoibre. Má logálann siad isteach, má mhothaíonn siad faoi léigear, agus mura dtagann siad ar ais riamh, tá siad caillte agat. Dearann an ceacht seo an t-eispéireas a iompaíonn clárú nua ina chustaiméir gníomhach, rannpháirteach.
 

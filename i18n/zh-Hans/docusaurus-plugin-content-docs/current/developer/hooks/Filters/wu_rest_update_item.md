@@ -4,7 +4,7 @@ title: 过滤器 - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# 过滤器: wu_rest_update_item {#filter-wurestupdateitem}
+# 过滤器: wu_rest_update_item
 
 过滤器用于判断是否允许继续请求。
 

@@ -3,7 +3,7 @@ title: ויסשרײַב־פֿעלד און קונה DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# ויסשרײַב־פֿעלד און קונה DNS־פֿאַרוואַלטונג {#checkout-field-and-customer-dns-management}
+# ויסשרײַב־פֿעלד און קונה DNS־פֿאַרוואַלטונג
 
 ## דאָס דאָמיין־אויסקלייב ויסשרײַב־פֿעלד {#the-domain-selection-checkout-field}
 

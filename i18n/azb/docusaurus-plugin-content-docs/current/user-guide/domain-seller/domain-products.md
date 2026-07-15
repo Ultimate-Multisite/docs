@@ -3,7 +3,7 @@ title: Domain Produk dan Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Ürünleri ve Fiyatlandırma {#domain-products-and-pricing}
+# Domain Ürünleri ve Fiyatlandırma
 
 Domain ürünleri, fiyatlandırmayı, TLD'leri, WHOIS gizliliğini ve sağlayıcı seçimini kontrol ettiğiniz yerdir. Her domain ürünü, ek bir **Domain Ayarları** sekmesi bulunan standart bir Multisite Ultimate ürünüdür.
 

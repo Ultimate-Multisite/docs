@@ -3,7 +3,7 @@ title: WooCommerce ინტეგრაციის ცვლილებებ
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce ინტეგრაციის ცვლილებების ჟურნალი {#woocommerce-integration-changelog}
+# WooCommerce ინტეგრაციის ცვლილებების ჟურნალი
 
 ვერსია 2.2.0 - გამოშვებულია 2026-07-01
 * ახალი: Ultimate Multisite-ის გადასახადის თანხები ახლა checkout-ზე ცალკე WooCommerce საკომისიო ხაზებად ჩანს, რაც გადახდამდე გადასახადების ჯამებს უფრო გასაგებს ხდის.

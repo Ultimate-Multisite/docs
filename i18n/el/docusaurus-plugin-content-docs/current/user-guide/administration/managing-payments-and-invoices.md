@@ -3,7 +3,7 @@ title: Διαχείριση πληρωμών και τιμολογίων
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Διαχείριση πληρωμών και τιμολογίων {#managing-payments-and-invoices}
+# Διαχείριση πληρωμών και τιμολογίων
 
 ## Ρυθμίσεις πληρωμών {#payment-settings}
 

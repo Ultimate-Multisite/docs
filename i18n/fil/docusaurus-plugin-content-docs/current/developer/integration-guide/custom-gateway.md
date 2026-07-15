@@ -3,7 +3,7 @@ title: Pag-develop ng Pasadyang Gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pag-develop ng Custom Gateway {#custom-gateway-development}
+# Pag-develop ng Custom Gateway
 
 Maaari kang gumawa ng mga custom na gateway sa pagbabayad sa pamamagitan ng pag-extend sa class na `Base_Gateway`.
 

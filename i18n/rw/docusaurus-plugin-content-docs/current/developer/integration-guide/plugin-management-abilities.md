@@ -3,7 +3,7 @@ title: Ubushobozi bwo Gucunga Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ubushobozi bwo Gucunga Imigereka {#plugin-management-abilities}
+# Ubushobozi bwo Gucunga Imigereka
 
 Gratis AI Agent v1.5.0 izana **ubushobozi 7 bwo gucunga imigereka** umufasha wa AI ashobora gukoresha mu kiganiro. Ubu bushobozi butanga igenzura rishingiye kuri porogaramu ku migereka ya WordPress yashyizweho binyuze muri [Sisitemu yo Kubaka Imigereka na Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

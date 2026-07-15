@@ -3,7 +3,7 @@ title: Ultimate Multisite'ın Kurulumu
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite'in Kurulumu {#installing-ultimate-multisite}
+# Ultimate Multisite'in Kurulumu
 
 :::note
 Bu eğitim, WordPress Multisite'ın zaten kurulu ve yapılandırılmış olduğunu varsayar. Nasıl yapılacağını öğrenmek için WP Beginner tarafından hazırlanan [bu eğitime](https://www.wpbeginner.com/glossary/multisite/) göz atın.

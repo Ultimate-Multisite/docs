@@ -3,7 +3,7 @@ title: Як наладзіць супастаўленне даменаў
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Як наладзіць супастаўленне даменаў (v2) {#how-to-configure-domain-mapping-v2}
+# Як наладзіць супастаўленне даменаў (v2)
 
 _**ВАЖНАЯ ЗАЎВАГА: гэты артыкул адносіцца да Ultimate Multisite версіі 2.x.**_
 

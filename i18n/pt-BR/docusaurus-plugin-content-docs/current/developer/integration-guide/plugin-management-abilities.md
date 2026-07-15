@@ -3,7 +3,7 @@ title: Habilidades de Gerenciamento de Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Habilidades de Gerenciamento de Plugins {#plugin-management-abilities}
+# Habilidades de Gerenciamento de Plugins
 
 O Gratis AI Agent v1.5.0 vem equipado com **7 habilidades de gerenciamento de plugins** que o assistente de IA pode invocar durante uma conversa. Essas habilidades fornecem controle programático sobre os plugins do WordPress instalados através do [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

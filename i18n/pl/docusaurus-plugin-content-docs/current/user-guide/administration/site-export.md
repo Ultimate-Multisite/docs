@@ -3,7 +3,7 @@ title: Eksport strony
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport witryny {#site-export}
+# Eksport witryny
 
 Strona administracyjna **Eksport witryny** (Site Export) pozwala administratorom sieci pakować jedną witrynę lub całą sieć w plik ZIP do pobrania, co jest przydatne do migracji, tworzenia kopii zapasowych lub przekazywania projektu.
 

@@ -4,7 +4,7 @@ title: Parzûn - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url {#filter-wussourl}
+# Filter: wu_sso_url
 
 SSO URLên çêkirî filter dike berî ku ji bo çalakiyên xerîdar ên di navbera domenan de bên vegerandin.
 

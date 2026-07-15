@@ -3,7 +3,7 @@ title: Entegrasyon milti-lokatè
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Entegrasyon milti-lokatè {#multi-tenancy-integration}
+# Entegrasyon milti-lokatè
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 chanje plizyè pwen kontak entegrasyon pou lokatè souveren, verifikasyon migrasyon, ak otomatizasyon sik lavi lokatè.
 

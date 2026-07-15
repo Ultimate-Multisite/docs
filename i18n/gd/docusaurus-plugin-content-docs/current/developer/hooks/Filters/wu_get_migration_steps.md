@@ -4,7 +4,7 @@ title: Criathrag - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Criathrag: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Criathrag: wu_get_migration_steps
 
 Leig le luchd-leasachaidh agus tuilleadain ceumannan imrich ùra a chur ris
 

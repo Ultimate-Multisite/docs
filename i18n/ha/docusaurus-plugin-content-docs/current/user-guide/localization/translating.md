@@ -3,7 +3,7 @@ title: Fassara Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tarin da Ultimate Multisite {#translating-ultimate-multisite}
+# Tarin da Ultimate Multisite
 
 Ultimate Multisite an ƙirƙira ne cikin harshen Turanci, amma wannan plugin yana iya fassara duka kuma muna nan gaba don karɓar bayanan fassarar.
 

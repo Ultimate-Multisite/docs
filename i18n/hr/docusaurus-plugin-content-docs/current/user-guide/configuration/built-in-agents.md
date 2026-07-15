@@ -3,7 +3,7 @@ title: Ugrađeni agenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ugrađeni agenti {#built-in-agents}
+# Ugrađeni agenti
 
 Gratis AI Agent v1.9.0 isporučuje se s pet ugrađenih agenata, svaki unaprijed konfiguriran s usmjerenim skupom alata, prilagođenim sistemskim promptom i početnim prijedlozima usklađenima s uobičajenim zadacima u tom području. Prebacivanje između agenata mijenja što asistent može učiniti i kako odgovara — bez ikakve konfiguracije s vaše strane. Superdav AI Agent v1.18.0 može dodati alate svjesne rasporeda, zapise podsjetnika, vrata za odobrenje i SMS obavijesti tim tijekovima rada kada su povezane integracije konfigurirane.
 

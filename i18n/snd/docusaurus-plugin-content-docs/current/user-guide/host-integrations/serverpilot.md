@@ -3,7 +3,7 @@ title: سرورپائل انٽيغريشن
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integration {#serverpilot-integration}
+# ServerPilot Integration
 
 ## جائزہ (Overview) {#overview}
 ServerPilot هڪ ڪلاؤڊ سروس آهي جيڪا DigitalOcean، Amazon، Google يا ڪنه به ٻئي سرور پرائڊيئر تي WordPress ۽ ٻين PHP ويب سائٽس کي هوستنگ ڪرڻ لاءِ. هي ان انٽيغريشن سان Ultimate Multisite ۽ ServerPilot بابت آڊمن جي سنڪرينگ (domain syncing) ۽ SSL سرٽيفڪيٽ جو انتظام خود بخود ٿئي ٿو.

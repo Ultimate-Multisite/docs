@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Амал: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Амал: wp_ultimo_ptm_page_list_after_title
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки ба саҳифаҳои рӯйхат тугмаҳои иловагӣ илова кунанд
 

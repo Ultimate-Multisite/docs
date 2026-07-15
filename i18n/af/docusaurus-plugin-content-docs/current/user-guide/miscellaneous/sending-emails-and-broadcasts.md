@@ -3,7 +3,7 @@ title: E-posse en uitsendings stuur
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Stuur e-posse en uitsendings (v2) {#sending-emails-and-broadcasts-v2}
+# Stuur e-posse en uitsendings (v2)
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

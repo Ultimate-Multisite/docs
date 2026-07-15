@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i shitësit të domenit
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Regjistri i ndryshimeve i Domain Seller {#domain-seller-changelog}
+# Regjistri i ndryshimeve i Domain Seller
 
 Version 1.3.0 - Lëshuar më 2026-06-02
 - E re: U shtua një paralajmërim për network-admin kur bilanci i rishitësit HostAfrica bëhet shumë i ulët

@@ -3,7 +3,7 @@ title: Päävalikon yleiskatsaus
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Näkymäpaneelin yleiskatsaus {#dashboard-overview}
+# Näkymäpaneelin yleiskatsaus
 
 Ultimate Multisiteessa on omistettu **Dashboard** -sivu Ultimate Multisite -valikossa, ja se lisää myös widgetteja verkko-dashboardiin (Network Dashboard). Tässä artikkelissa käydään läpi, mitä näet molemmissa paikoissa.
 

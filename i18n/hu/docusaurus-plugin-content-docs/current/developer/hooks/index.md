@@ -3,7 +3,7 @@ title: Hookok referenciája
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hookok referenciája {#hooks-reference}
+# Hookok referenciája
 
 Automatikusan generált dokumentáció az Ultimate Multisite összes **59 műveletéhez** és **118 szűrőjéhez**.
 

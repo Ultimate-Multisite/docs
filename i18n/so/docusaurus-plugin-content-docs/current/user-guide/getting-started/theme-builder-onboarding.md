@@ -3,7 +3,7 @@ title: Habka bilaabidda Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Habaynta-sareedka Theme Builder {#theme-builder-onboarding-flow}
+# Habaynta-sareedka Theme Builder
 
 Superdav AI Agent v1.12.0 wuxuu soo bandhigayaa **habaynta-sareedka Theme Builder** oo kaa caawin doona inaad samayso theme gaar ah (custom block theme) inta aad ku bilaabaysid. Tani waxay beddeshaa habka hore ee Site Builder mode, iyadoo la isticmaalayo hab ka fudud oo ay ka caawiyaan agent-ka.
 

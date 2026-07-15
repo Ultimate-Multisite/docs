@@ -3,7 +3,7 @@ title: קהילה
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# ווי זיך אָנצושליסן צו Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# ווי זיך אָנצושליסן צו Ultimate Multisite Community
 
 Ultimate Multisite Community איז אַ פּלאַץ וווּ איר קענט זיך פֿאַרבינדן מיט אַנדערע Ultimate Multisite באַניצער און טיילן עצות, דערפֿאַרונגען און מער. צו באַקומען צוטריט צו Ultimate Multisite Community גייט צו https://community.ultimatemultisite.com/home.
 

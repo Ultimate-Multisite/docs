@@ -3,7 +3,7 @@ title: מדריך עזר להגדרות
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# הפניית הגדרות {#settings-reference}
+# הפניית הגדרות
 
 עמוד זה עוקב אחר הגדרות שמשפיעות על הניהול היומיומי ועל שינויים אחרונים בהתנהגות ב-Ultimate Multisite.
 

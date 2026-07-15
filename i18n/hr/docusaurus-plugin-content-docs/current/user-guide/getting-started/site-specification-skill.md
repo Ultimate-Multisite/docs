@@ -3,7 +3,7 @@ title: Specifikacija stranice vještina
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Vještina Specifikacija Sajta {#site-specification-skill}
+# Vještina Specifikacija Sajta
 
 **Vještina Specifikacija sajta (Site Specification)** je strukturiran pristup prikupljanju ciljeva vašeg sajta, publike i identiteta brenda. Ove informacije se čuvaju u vašoj memoriji **site_brief**, na koju agensi referiraju kroz sesije kako bi pružile dosljednu pomoć koja razumije kontekst.
 

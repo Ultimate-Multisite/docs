@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addonok {#ultimate-multisite-addons}
+# Ultimate Multisite Addonok
 
 Az Addonok kiegészítik az Ultimate Multisite funkcióit további funkciókkal és integrációkkal. A legtöbb addon fizetős, és [ultimatemultisite.com](https://ultimatemultisite.com)-ről vásárolható.
 

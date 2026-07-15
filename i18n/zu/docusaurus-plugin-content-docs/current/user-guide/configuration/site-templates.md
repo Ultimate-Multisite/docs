@@ -3,7 +3,7 @@ title: Izifanekiso Zesayithi
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Izifanekiso Zamasayithi (v2) {#site-templates-v2}
+# Izifanekiso Zamasayithi (v2)
 
 _**QAPHELA: Lesi sihloko sibhekisa ku-Ultimate Multisite version 2.x. Uma usebenzisa version 1.x,**_ **bheka lesi sihloko** _**.**_
 

@@ -3,7 +3,7 @@ title: Bestuur van Klante
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Bestuur van Klante {#managing-customers}
+# Bestuur van Klante
 
 Die **Klante**-bladsy toon die lys van lede wat in jou netwerk geregistreer is. Hierdie bladsy wys basiese gebruikersinligting insluitend naam, e-posadres, laaste aanmelding, en 'n **skakel na** wat jou toelaat om in die gebruiker se subwerf aan te meld as 'n werfbeheerder.
 

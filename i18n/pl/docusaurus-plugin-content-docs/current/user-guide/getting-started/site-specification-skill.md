@@ -3,7 +3,7 @@ title: Umiejętność specyfikacji stron
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Umiejętność Specyfikacji Strony {#site-specification-skill}
+# Umiejętność Specyfikacji Strony
 
 **Umiejętność Specyfikacji Strony** to ustrukturyzowane podejście do zbierania informacji o celach, docelowej grupie odbiorców i tożsamości marki Twojej strony. Te informacje są zapisywane w Twojej pamięci **site_brief**, do której agentzy odwołują się w różnych sesjach, aby zapewnić spójną i kontekstową pomoc.
 

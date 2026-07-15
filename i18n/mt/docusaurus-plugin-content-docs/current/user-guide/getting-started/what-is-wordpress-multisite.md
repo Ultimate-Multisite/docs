@@ -3,7 +3,7 @@ title: X what huwa WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# X what è WordPress Multisite? {#what-is-wordpress-multisite}
+# X what è WordPress Multisite?
 
 Fornit l-core tiegħu, WordPress joffrirt funtjonalità chiamata ‘Multisite’ li tajjeb i suoi origini fin 2010, meta l-l launch ta WordPress 3.0. Minħabba dan, għandu is-revisioni tal-qasir biex jinkludi funzjonijiet nuovi u jgħatti s-segwità.
 

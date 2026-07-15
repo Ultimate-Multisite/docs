@@ -4,7 +4,7 @@ title: 필터 - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# 필터: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
+# 필터: ultimate_multisite_content_sync_get_option
 
 네트워크 옵션 값을 slugfied 형태로 반환합니다.
 

@@ -3,7 +3,7 @@ title: 'પાઠ ૯: નફા માટે કિંમત નિર્ધા
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesson 9: Profit માટે કિંમત નિર્ધારણ (Pricing for Profit) {#lesson-9-pricing-for-profit}
+# Lesson 9: Profit માટે કિંમત નિર્ધારણ (Pricing for Profit)
 
 Lesson 5 માં આપણે FitSite પ્લાન માટે પ્રારંભિક કિંમતો નક્કી કરી હતી. હવે આપણે કિંમત નિર્ધારણની વ્યૂહરચનાને વધુ મજબૂત બનાવીશું, જે આવક વધારવામાં, અપગ્રેડને પ્રોત્સાહન આપવામાં અને કસ્ટમર ચર્ન (churn) ઘટાડવામાં મદદ કરશે.
 

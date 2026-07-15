@@ -3,7 +3,7 @@ title: Redzamības spējība
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Redzamība redzība (Ability Visibility) {#ability-visibility}
+# Redzamība redzība (Ability Visibility)
 
 Superdav AI Agent v1.12.0 ieviesta **Redzamības kontroles** (Ability Visibility), kas norāda, kuras saskarenības atklāj katru iespēju. Tas ļauj administratoriem precīzi iestatīt, kuras agentu iespējas ir pieejamas REST API, MCP serveriem, WooCommerce integrācijām un citām interfeisām.
 

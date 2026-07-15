@@ -3,7 +3,7 @@ title: গ্রাহকৰ মতামত আৰু সমস্যা প্
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# ग्राहकৰ মতামত আৰু সমস্যা প্ৰতিবেদন {#customer-feedback--issue-reporting}
+# ग्राहकৰ মতামত আৰু সমস্যা প্ৰতিবেদন
 
 Gratis AI Agent v1.5.0-এ এটা অন্তৰ্নিহিত (built-in) মতামত আৰু সমস্যা প্ৰতিবেদন ব্যৱস্থাৰে (feedback and issue reporting system) সাজু কৰি তুলিছে। এই ব্যৱস্থাই শেষ ব্যৱহাৰকাৰীসকলক চ্যাট interfase बाटै সহায় নোহোৱা উত্তৰ চিহ্নিত কৰিবলৈ আৰু সমস্যা প্ৰতিবেদন কৰিবলৈ অনুমতি দিয়ে। এই ব্যৱস্থাত সন্মতি ব্যৱস্থাপনা (consent management), এটা স্বয়ংক্রিয় প্ৰতিবেদন কাৰ্য্য (automated reporting command), আৰু ব্যাকএণ্ডে AI-সহায়িত প্ৰথম স্তৰৰ পৰীক্ষা (AI-assisted triage) অন্তৰ্ভুক্ত।
 

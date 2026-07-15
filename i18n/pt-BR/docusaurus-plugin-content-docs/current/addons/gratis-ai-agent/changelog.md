@@ -3,7 +3,7 @@ title: Registro de alterações
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Registro de Alterações {#changelog}
+# Registro de Alterações
 
 ## 1.9.0 — Lançado em 2026-04-28 {#190--released-on-2026-04-28}
 

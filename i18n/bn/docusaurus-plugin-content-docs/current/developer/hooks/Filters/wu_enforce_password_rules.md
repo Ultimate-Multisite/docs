@@ -4,7 +4,7 @@ title: ফিল্টার - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filter: wu_enforce_password_rules
 
 অতিরিক্ত পাসওয়ার্ড নিয়ম প্রয়োগ করা হবে কিনা তা ফিল্টার করে।
 

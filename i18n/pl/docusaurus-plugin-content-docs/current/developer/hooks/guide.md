@@ -3,7 +3,7 @@ title: Przewodnik po użyciu hooków
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Przewodnik po użyciu hooków {#hooks-usage-guide}
+# Przewodnik po użyciu hooków
 
 Ultimate Multisite udostępnia ponad 200 akcji (action hooks) i ponad 280 filtrów (filter hooks). Ta strona omawia najczęściej używane hooki, podając praktyczne przykłady. Aby zapoznać się z pełnym, wygenerowanym automatycznie zestawieniem, przejdź do innych stron tego działu.
 

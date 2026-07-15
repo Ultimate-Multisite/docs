@@ -4,7 +4,7 @@ title: Filter - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filter: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Filter: wu_billing_address_fields
 
 প্লাগইন ডেভেলপারদের বিলিং অ্যাড্রেসের ফিল্ডগুলো ফিল্টার করার সুযোগ দেয়।
 

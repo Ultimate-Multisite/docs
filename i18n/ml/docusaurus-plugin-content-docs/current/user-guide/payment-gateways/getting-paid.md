@@ -3,7 +3,7 @@ title: പണം ലഭിക്കൽ
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# പണമടയ്ക്കൽ (v2) {#getting-paid-v2}
+# പണമടയ്ക്കൽ (v2)
 
 _**പ്രധാന കുറിപ്പ്: ഈ ലേഖനം Ultimate Multisite പതിപ്പ് 2.x-നെ കുറിച്ചാണ്.**_
 

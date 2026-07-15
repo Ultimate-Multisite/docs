@@ -4,7 +4,7 @@ title: Hohenga - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Mahi: wu_page_added {#action-wupageadded}
+# Mahi: wu_page_added
 
 Tukua ngā kaiwhakawhanake monomai kia whakahaere i ētahi atu mea ina rēhitatia ngā whārangi.
 

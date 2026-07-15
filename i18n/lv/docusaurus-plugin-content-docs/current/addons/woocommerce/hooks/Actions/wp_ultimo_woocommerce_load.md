@@ -4,7 +4,7 @@ title: Darbība - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# Darbība: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# Darbība: wp_ultimo_woocommerce_load
 
 Tiek aktivizēta pēc tam, kad visas add-on atkarības ir ielādētas.
 

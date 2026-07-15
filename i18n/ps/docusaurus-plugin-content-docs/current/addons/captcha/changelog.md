@@ -3,7 +3,7 @@ title: Captcha بدلون‌ليک
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha بدلون‌لیک {#captcha-changelog}
+# Captcha بدلون‌لیک
 
 نسخه: 1.5.0 - په 2026-05-22 خپره شوه
 * نوی: د سخت-درېدنې کچې محدودوونکی — په captcha-ساتل شوو سطحو کې هر GET او POST شمېري (wp-login / register / lost-password / comments، WooCommerce my-account / checkout / pay-for-order، Ultimate Multisite checkout / inline-login) او د HTTP 429، د `Retry-After` header، او تصادفي tarpit ځنډ (۱–۵ ثانیې، په ۱۵ ثانیو سخت محدود) سره ځواب ورکوي.

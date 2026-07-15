@@ -3,7 +3,7 @@ title: ئىلغار كود مىساللىرى
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ئىلغار كود مىساللىرى {#advanced-code-examples}
+# ئىلغار كود مىساللىرى
 
 بۇ مىساللار Ultimate Multisite بىلەن ئىلغار بىرلەشتۈرۈش ئەندىزىلىرىنى كۆرسىتىدۇ.
 

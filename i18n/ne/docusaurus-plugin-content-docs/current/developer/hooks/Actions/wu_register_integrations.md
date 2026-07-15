@@ -4,7 +4,7 @@ title: कार्य - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# कार्य: wu_register_integrations {#action-wuregisterintegrations}
+# कार्य: wu_register_integrations
 
 एकीकरणहरूले आफूलाई दर्ता गर्न सकून् भनेर चलाइन्छ।
 

@@ -4,7 +4,7 @@ title: Chochita - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Chochita: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Chochita: wp_ultimo_vat_deactivation
 
 Lolani magawo ena a plugin alumikize njira zawo zozimitsira
 

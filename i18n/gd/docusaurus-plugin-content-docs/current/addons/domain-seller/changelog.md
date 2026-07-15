@@ -3,7 +3,7 @@ title: Loga atharrachaidhean Neach-reic Àrainnean
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Loga Atharrachaidhean Neach-reic Àrainnean {#domain-seller-changelog}
+# Loga Atharrachaidhean Neach-reic Àrainnean
 
 Tionndadh 1.3.0 - Air fhoillseachadh air 2026-06-02
 - Ùr: Chaidh rabhadh network-admin a chur ris nuair a dh’fhàsas cothromachadh ath-reiceadair HostAfrica ro ìosal

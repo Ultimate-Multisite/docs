@@ -3,7 +3,7 @@ title: Kundwebbplatser
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Din klients webbplatser (v2) {#your-clients-websites-v2}
+# Din klients webbplatser (v2)
 
 Efter registrering i ditt nätverk kan dina kunder komma åt sin Dashboard.
 

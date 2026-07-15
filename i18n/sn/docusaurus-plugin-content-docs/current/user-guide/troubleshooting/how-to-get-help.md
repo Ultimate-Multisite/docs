@@ -3,7 +3,7 @@ title: Ndingapa kuva?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Ndiri kune kuvaidza {#how-to-get-help}
+# Ndiri kune kuvaidza
 
 Unenge neKiti ya License yako inokubatsira, uye inopa upfungulo kubata timwe yedu kuti tichabatsire kuona zvinhu zvakakosha zvinogona kunge zvakaita pakati panzvimbo dzinogona kutaura Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: कार्य - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# कार्य: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# कार्य: wu_mt_providers_registered
 
 पूर्वनिर्धारित प्रदायकहरू दर्ता भएपछि चल्छ।
 

@@ -3,7 +3,7 @@ title: Closte에서 Sunrise 상수 설정하기
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte에서 Sunrise 상수를 true로 설정하기 {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte에서 Sunrise 상수를 true로 설정하기
 
 일부 호스트 제공업체는 보안상의 이유로 wp-config.php를 잠급니다. 이는 Ultimate Multisite가 도메인 매핑과 기타 기능이 작동하는 데 필요한 상수를 포함하도록 파일을 자동으로 편집할 수 없다는 뜻입니다. Closte가 그런 호스트 중 하나입니다.
 

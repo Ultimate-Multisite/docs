@@ -4,7 +4,7 @@ title: فلټر - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# فلټر: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# فلټر: wu_stripe_existing_plan_id
 
 د هغه پلان ID فلټر کوي چې باید وکتل شي. که دا شتون ولري، نو نوی ګډون به همدا پلان وکاروي.
 

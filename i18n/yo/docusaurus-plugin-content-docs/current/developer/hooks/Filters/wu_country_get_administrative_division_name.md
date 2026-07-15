@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Àlẹmọ: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Àlẹmọ: wu_country_get_administrative_division_name
 
 Ó dá orúkọ tó dára ti àwọn ìpín abẹ́ ìṣàkóso orílẹ̀-èdè padà.
 

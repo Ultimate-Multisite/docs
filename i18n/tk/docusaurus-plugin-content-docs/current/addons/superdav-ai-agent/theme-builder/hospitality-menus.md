@@ -3,7 +3,7 @@ title: Myhmansöýerlik menýulary
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Myhmanhanaçylyk menýulary {#hospitality-menus}
+# Myhmanhanaçylyk menýulary
 
 **Myhmanhanaçylyk menýulary** aýratynlygy Theme Builder-e gurluşly iýmit we içgi menýu sahypalaryny göni WordPress saýtyňyza döretmäge we ýerleşdirmäge mümkinçilik berýär.
 

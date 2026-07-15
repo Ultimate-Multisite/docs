@@ -3,7 +3,7 @@ title: Alətlər və konfiqurasiya
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Alətlər və Konfiqurasiya {#tools-and-configuration}
+# Alətlər və Konfiqurasiya
 
 Theme Builder WordPress saytınızı təhlil etmək, dizayn etmək və qurmaq üçün bir sıra alətlərdən istifadə edir. 1.16.0 versiyasında **sd-ai-agent/site-scrape artıq Tier 1 alətidir**, bu da onu Theme Builder-də standart olaraq əlçatan edir. Superdav AI Agent v1.18.0 həmçinin etibarlı developer iş axınları üçün ayrıca paylanan Advanced köməkçi paketini təqdim edir; bu alətlər WordPress.org əsas paketinin bir hissəsi deyil və ayrıca quraşdırılmalı və avtorizasiya edilməlidir.
 

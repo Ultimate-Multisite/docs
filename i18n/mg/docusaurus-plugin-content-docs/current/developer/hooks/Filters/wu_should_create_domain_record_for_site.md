@@ -4,7 +4,7 @@ title: Sivana - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Sivana: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Sivana: wu_should_create_domain_record_for_site
 
 Manivana raha tokony hamorona firaketana domain ho an’ny tranonkala vao noforonina ny Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities {#filter-wucountrygetcities}
+# Filter: wu_country_get_cities
 
 နိုင်ငံတစ်ခုရဲ့ ပြည်နယ်တစ်ခုအတွက် မြို့တွေစာရင်းကို ပြန်ပေးပါတယ်။
 

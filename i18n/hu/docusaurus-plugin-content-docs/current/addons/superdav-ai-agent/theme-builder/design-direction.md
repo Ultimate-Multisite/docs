@@ -3,7 +3,7 @@ title: Tervezési irány
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction {#design-direction}
+# Design Direction
 
 A **Design Direction** (Tervezési irány) lépés lehetővé teszi, hogy áttekintse, finomítsa és véglegesítse a témájának vizuális dizájnját, mielőtt a Theme Builder generálja a teljes témát.
 

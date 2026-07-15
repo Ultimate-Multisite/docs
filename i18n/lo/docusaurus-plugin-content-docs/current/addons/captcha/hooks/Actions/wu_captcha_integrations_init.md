@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# ການກະທຳ: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
+# ການກະທຳ: wu_captcha_integrations_init
 
 ຖືກເອີ້ນໃຊ້ຫຼັງຈາກການເຊື່ອມຕໍ່ທັງໝົດຖືກເລີ່ມຕົ້ນແລ້ວ.
 

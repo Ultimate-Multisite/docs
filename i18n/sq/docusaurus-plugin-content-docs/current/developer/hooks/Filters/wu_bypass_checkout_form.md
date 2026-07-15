@@ -4,7 +4,7 @@ title: Filtër - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filtër: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filtër: wu_bypass_checkout_form
 
 Lejoni zhvilluesit të anashkalojnë daljen dhe të vendosin një të re
 

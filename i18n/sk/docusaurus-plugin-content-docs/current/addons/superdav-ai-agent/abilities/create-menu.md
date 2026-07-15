@@ -3,7 +3,7 @@ title: Vytvoriť menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Vytvoriť menu {#create-menu}
+# Vytvoriť menu
 
 Schopnosť **Vytvoriť menu** vytvára navigačné menu WordPress s podporou odlišných navigačných štítkov oddelených od názvov stránok.
 

@@ -4,7 +4,7 @@ title: 'गाळणी - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# Filter: wu_\{$id\}_form_fields
 
 फॉर्मवरील फील्ड्स फिल्टर करतो. फॉर्मची ओळख फिल्टरच्या नावात दिलेल्या ID द्वारे होते.
 

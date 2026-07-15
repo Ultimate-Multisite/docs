@@ -3,7 +3,7 @@ title: Funksjonalitet for plugin-administrasjon
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities {#plugin-management-abilities}
+# Plugin Management Abilities
 
 Gratis AI Agent v1.5.0 kommer med **7 plugin management abilities** som AI-assistenten kan kalle på under en samtale. Disse abilities gir programmatisk kontroll over WordPress-plugins installert gjennom [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

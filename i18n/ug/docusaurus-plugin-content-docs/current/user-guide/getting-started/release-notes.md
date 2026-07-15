@@ -3,7 +3,7 @@ title: Харакат нотлары
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# نِشْيَارِي يَاخْتَار (Release Notes) {#release-notes}
+# نِشْيَارِي يَاخْتَار (Release Notes)
 
 ## نسخه ۲.۱۳.۰ — منتشر شده در ۲۰۲۶-۰۶-۰۵ {#version-2130--released-on-2026-06-05}
 

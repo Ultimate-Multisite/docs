@@ -3,7 +3,7 @@ title: Sunrise Fayl Xatosi
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Faylni O'rnatish Xatosi {#error-installing-the-sunrise-file}
+# Sunrise Faylni O'rnatish Xatosi
 
 `sunrise.php` fayli bu WordPress o'zini ishga tushirish (bootstrapping) jarayonida qidiradigan maxsus fayldir. WordPress `sunrise.php` faylini aniqlashi uchun u **wp-content papkasining** ichida joylashgan bo'lishi kerak.
 

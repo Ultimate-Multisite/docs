@@ -4,7 +4,7 @@ title: Eylem - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Aksiyon: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Aksiyon: wu_domain_renewal_failed
 
 Bir alan adı yenileme girişimi başarısız olduktan sonra tetiklenir.
 

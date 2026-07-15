@@ -3,7 +3,7 @@ title: Müəllifliklərini İdarə Etmək
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Üzvlükləri İdarə Etmək {#managing-memberships}
+# Üzvlükləri İdarə Etmək
 
 Ultimate Multisite-də üzvlükləri idarə edə və şəbəkənizdəki bütün abunəliklərə daxil ola bilərsiniz. Planlar və məhsullar kimi abunəlik detallarını, sayt sayı, hesablaşma məbləği və tezliyi, ödəniş tarixi və zaman qeydlərini nəzərdən keçirə və redaktə edə bilərsiniz.
 

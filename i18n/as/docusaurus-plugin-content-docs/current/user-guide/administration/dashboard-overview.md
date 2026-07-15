@@ -3,7 +3,7 @@ title: ড্যাশবৰ্ড বিৱৰণ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview {#dashboard-overview}
+# Dashboard Overview
 
 Ultimate Multisite-ৰ Ultimate Multisite মেনুৰ তলত এটা নিৰ্দিষ্ট **Dashboard** থাকে, আৰু ই Network Dashboard তও কিছুমান widget যোগ কৰে। এই article-টোৱে আপুনি দুয়োটা ঠাইতে কি কি দেখিব পাৰিব, তাৰ বিষয়ে কওঁ।
 

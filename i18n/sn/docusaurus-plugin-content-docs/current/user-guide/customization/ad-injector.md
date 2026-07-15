@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Kupa Ads kuunyuva paita munzvimbo neUltimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Kupa Ads kuunyuva paita munzvimbo neUltimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector ndiri **add-on wose** inoshanda zvinhu zvinokupa kuti upa ads pamapfano ako mune edit page yavo.
 

@@ -3,7 +3,7 @@ title: 'Leçon 12 : Gérer l''entreprise'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leçon 12 : Gérer l'entreprise {#lesson-12-running-the-business}
+# Leçon 12 : Gérer l'entreprise
 
 Une plateforme n'est pas un projet que l'on termine ; c'est une entreprise que l'on gère. Cette leçon couvre les opérations quotidiennes de gestion de FitSite : le support, la facturation, la maintenance et le maintien de la satisfaction des clients.
 

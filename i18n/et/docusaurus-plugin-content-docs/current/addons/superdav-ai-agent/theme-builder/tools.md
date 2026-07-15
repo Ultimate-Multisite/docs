@@ -3,7 +3,7 @@ title: Tööriistad ja konfiguratsioon
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Tööriistad ja konfiguratsioon {#tools-and-configuration}
+# Tööriistad ja konfiguratsioon
 
 Theme Builder kasutab tööriistade komplekti, et analüüsida, kujundada ja ehitada sinu WordPress saiti. Versioonis 1.16.0 on **sd-ai-agent/site-scrape nüüd Tier 1 tööriist**, mistõttu on see Theme Builderis vaikimisi saadaval. Superdav AI Agent v1.18.0 tutvustab ka eraldi levitatavat Advanced kaaspaketti usaldusväärsete arendajate töövoogude jaoks; need tööriistad ei kuulu WordPress.org põhipaketti ning need tuleb eraldi installida ja autoriseerida.
 

@@ -3,7 +3,7 @@ title: CyberPanel একীকরণ
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ইন্টিগ্ৰেচন {#cyberpanel-integration}
+# CyberPanel ইন্টিগ্ৰেচন
 
 এই গাইডটোৱে কেনেকৈ Ultimate Multisite CyberPanel ইন্টিগ্ৰেচন কনফিগাৰ কৰিব লাগে, তাৰ বিষয়ে ব্যাখ্যা কৰে। ইয়াৰ জৰিয়তে আপোনাৰ নেটৱৰ্কৰ ম্যাপ কৰা ডোমেইনবোৰ স্বয়ংক্রিয়ভাৱে (auto) CyberPanel-ত virtual hosts হিচাপে যোগ কৰা (আৰু আঁতৰ কৰা) হ'ব, আৰু Let's Encryptৰ জৰিয়তে ঐচ্ছিক auto-SSL provisioning पनि কৰিব পাৰিব।
 

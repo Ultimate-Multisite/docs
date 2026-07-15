@@ -3,7 +3,7 @@ title: 'سبق 2: اپنی نیچ کا انتخاب'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# سبق 2: اپنا Niche منتخب کرنا {#lesson-2-picking-your-niche}
+# سبق 2: اپنا Niche منتخب کرنا
 
 سبق 1 میں ہم نے یہ بات طے کی کہ Niche کا faida hamesha general (generic) cheezon se zyada hota hai. اب آپ کو اپنا Niche منتخب کرنا ہے۔ یہ سبق آپ کو ایک ایسا دَنچہ (framework) فراہم کرتا ہے جس سے آپ وقت لگانے سے پہلے کسی Niche کو ڈھونڈ اور اس کی تصدیق (validate) کر سکتے ہیں۔
 

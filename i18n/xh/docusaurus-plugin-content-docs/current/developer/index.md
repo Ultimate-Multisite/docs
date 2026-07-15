@@ -3,7 +3,7 @@ title: Amaxwebhu oMphuhlisi
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Amaxwebhu oPhuhlisi {#developer-documentation}
+# Amaxwebhu oPhuhlisi
 
 Esi sikhokelo sibonelela abaphuhlisi ngayo yonke into efunekayo ukudibanisa nayo, ukuyandisa, okanye ukuphuhlisa ii-addon ze Ultimate Multisite. Ultimate Multisite iguqula inethiwekhi ye WordPress Multisite ibe liqonga le Website-as-a-Service (WaaS).
 

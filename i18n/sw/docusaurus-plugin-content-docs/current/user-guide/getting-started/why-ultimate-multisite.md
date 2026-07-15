@@ -3,7 +3,7 @@ title: Kwa Nini Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kwa Nini Ultimate Multisite {#why-ultimate-multisite}
+# Kwa Nini Ultimate Multisite
 
 Ikiwa umefika kwenye makala hii, labda umesikia kuwa plugin yetu inaweza kuwa suluhisho la kufanikisha wazo lako la biashara. Tunatumai utapata majibu unayohitaji kufikia mwisho wa makala hii.
 

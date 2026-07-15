@@ -3,7 +3,7 @@ title: Ilg‘or kod namunalari
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Kengaytirilgan Code namunalari {#advanced-code-examples}
+# Kengaytirilgan Code namunalari
 
 Ushbu namunalarda Ultimate Multisite bilan kengaytirilgan integratsiya andozalari ko‘rsatiladi.
 

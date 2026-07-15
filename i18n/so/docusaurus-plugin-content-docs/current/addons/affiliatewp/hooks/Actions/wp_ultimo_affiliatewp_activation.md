@@ -4,7 +4,7 @@ title: Tallaabo - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Ficil: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Ficil: wp_ultimo_affiliatewp_activation
 
 U oggolow qaybaha kale ee plugin-ka inay ku xiraan hawlahooda kicinta
 

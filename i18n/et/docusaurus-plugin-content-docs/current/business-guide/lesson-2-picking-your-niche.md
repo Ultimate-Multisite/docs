@@ -3,7 +3,7 @@ title: 'Õppetund 2: oma niši valimine'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Õppetund 2: Oma niši valimine {#lesson-2-picking-your-niche}
+# Õppetund 2: Oma niši valimine
 
 Õppetunnis 1 tegime selgeks, miks nišš on parem kui üldine lähenemine. Nüüd pead valima enda oma. See õppetund annab sulle raamistiku niši leidmiseks ja valideerimiseks enne, kui investeerid aega selle jaoks ehitamisse.
 

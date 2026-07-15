@@ -3,7 +3,7 @@ title: Təchizatçıya Uyğun Prompt Keşləmə
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Providerə Uyğun Prompt Cacheləmə {#provider-aware-prompt-caching}
+# Providerə Uyğun Prompt Cacheləmə
 
 Superdav AI Agent v1.12.0, müxtəlif LLM (Böyük Dil Modeli) providerları arasında promptları cacheləyərək API xərclərini və gecikməni (latency) optimallaşdıran **providerə uyğun prompt cacheləmə** funksionallığını təqdim edir. Hər bir providerun özünəməxsus cacheləmə mexanizmləri və konfiqurasiyaları var.
 

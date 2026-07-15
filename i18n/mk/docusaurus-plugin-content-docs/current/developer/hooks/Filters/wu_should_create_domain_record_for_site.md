@@ -4,7 +4,7 @@ title: Филтер - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Филтер: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Филтер: wu_should_create_domain_record_for_site
 
 Филтрира дали Ultimate Multisite треба да создаде запис за домен за новосоздадена страница.
 

@@ -3,7 +3,7 @@ title: Generate Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG Oluşturma {#generate-logo-svg}
+# Logo SVG Oluşturma
 
 **Logo SVG Oluşturma** özelliği, Theme Builder'ın özel logo SVG'lerini otomatik namespace-safe sanitizasyon ile doğrudan WordPress sitenize oluşturmasına ve gömmesine olanak tanır.
 

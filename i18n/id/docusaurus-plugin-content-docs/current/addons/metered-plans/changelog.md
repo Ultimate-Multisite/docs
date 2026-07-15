@@ -3,7 +3,7 @@ title: Catatan Perubahan Rencana Berbayar
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Catatan Perubahan Paket Berbasis Meteran {#metered-plans-changelog}
+# Catatan Perubahan Paket Berbasis Meteran
 
 Versi 1.1.0 - Dirilis pada 2026-05-05
 - Baru: Penagihan token AI untuk subsites multisite — lacak dan tagih penggunaan token AI di berbagai situs pelanggan dengan tarif per token yang dapat dikonfigurasi.

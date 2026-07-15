@@ -4,7 +4,7 @@ title: Mahi - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Mahi: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Mahi: wu_enqueue_extra_hooks
 
 Tukua ngā kaiwhakawhanake monomai kia tāpiri i ētahi atu hook
 

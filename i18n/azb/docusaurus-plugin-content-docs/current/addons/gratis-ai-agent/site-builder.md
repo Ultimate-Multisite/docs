@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 ile tanıtıldı) çok adımlı web sitesi oluşturma sürecini yöneten ana motordur. Agent'a "bir restoran web sitesi oluştur" veya "bir blog'lu portfolyo yap" dediğinizde, orkestratör bu genel hedefi yapılandırılmış bir **plan** haline getirir, bunu gerçekleştirmek için gereken plugin'leri bulur, her adımı sırayla çalıştırır, ilerlemeyi takip eder ve hatalardan bağımsız olarak kurtulur.
 

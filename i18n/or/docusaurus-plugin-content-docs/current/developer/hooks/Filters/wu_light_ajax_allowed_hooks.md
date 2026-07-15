@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# ଫିଲ୍ଟର: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# ଫିଲ୍ଟର: wu_light_ajax_allowed_hooks
 
 ସୁରକ୍ଷା କାରଣରୁ, ଆମେ ହୁକ୍ କରିପାରିବା କାର୍ଯ୍ୟ ସଂଖ୍ୟାକୁ ସୀମିତ କରୁଛୁ। ଆବଶ୍ୟକ ହେଲେ, ଏହି ଫିଲ୍ଟର ଡେଭେଲପରମାନଙ୍କୁ ସେହି ତାଲିକାକୁ ବଢ଼ାଇବାକୁ ଦିଏ।
 

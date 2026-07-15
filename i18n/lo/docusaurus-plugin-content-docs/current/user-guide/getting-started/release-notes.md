@@ -3,7 +3,7 @@ title: ບັນທຶກການປ່ອຍ
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# บันทึกการออกเวอร์ชัน (Release Notes) {#release-notes}
+# บันทึกการออกเวอร์ชัน (Release Notes)
 
 ## เวอร์ชัน 2.13.0 — เปิดตัวเมื่อวันที่ 2026-06-05 {#version-2130--released-on-2026-06-05}
 

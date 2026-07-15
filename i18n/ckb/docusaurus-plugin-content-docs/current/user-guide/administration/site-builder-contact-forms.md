@@ -3,7 +3,7 @@ title: فۆرمەکانی پەیوەندی بۆ دروستکردنی شوێن
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms Kontaktir (Contact Forms) {#site-builder-contact-forms}
+# Forms Kontaktir (Contact Forms)
 
 Superdav AI Agent v1.10.0 تێدروستی دەبێت بۆ دروستکردنی فۆرمەکانی پەیوەندی ڕاستەوخۆ لە ناو پڕۆسەی چات بە بەکارهێنانی Site Builder agent. ئەمەش وەک ئەوەیە کە بتوانید فۆرمەکان بە تەواوی کارکەر بن بۆ هەر پەڕەیەکی یەکێک لە چاتەکەدا بدون ئەوەی لە چاتەکە بگەڕێیتەوە.
 

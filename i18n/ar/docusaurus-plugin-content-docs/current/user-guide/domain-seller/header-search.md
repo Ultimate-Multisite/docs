@@ -3,7 +3,7 @@ title: بحث النطاق في الرأس
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# بحث النطاق من Header {#header-domain-search}
+# بحث النطاق من Header
 
 استخدم هذا الإعداد عندما تريد نموذجًا صغيرًا في Header يبدأ بحثًا عن نطاق، ثم يتيح للعميل الاختيار من النطاقات المتاحة داخل checkout الخاص بـ Ultimate Multisite.
 

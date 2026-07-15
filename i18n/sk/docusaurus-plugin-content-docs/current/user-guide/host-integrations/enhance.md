@@ -3,7 +3,7 @@ title: Vylepšenie integrácie s kontrolným panelom
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Vylepšenie integrácie s Control Panel {#enhance-control-panel-integration}
+# Vylepšenie integrácie s Control Panel
 
 ## Úvod {#overview}
 Enhance je moderná kontrolná panela, ktorá poskytuje výkonné možnosti automatizácie a správy hostingu. Táto integrácia umožňuje automatické synchronizovanie domén a správu SSL certifikátov medzi Ultimate Multisite a Enhance Control Panel.

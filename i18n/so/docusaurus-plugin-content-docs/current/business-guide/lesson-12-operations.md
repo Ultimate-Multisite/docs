@@ -3,7 +3,7 @@ title: 'Casharka 12: Maamulidda Ganacsiga'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Casharka 12: Maamulidda Ganacsiga {#lesson-12-running-the-business}
+# Casharka 12: Maamulidda Ganacsiga
 
 Madal ma aha mashruuc aad dhammayso -- waa ganacsi aad maamusho. Casharkani wuxuu daboolayaa hawlgallada maalinlaha ah ee maamulidda FitSite: taageero, biil-bixin, dayactir, iyo in macaamiisha lagu hayo farxad.
 

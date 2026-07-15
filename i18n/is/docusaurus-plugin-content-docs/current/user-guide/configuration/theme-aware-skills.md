@@ -3,7 +3,7 @@ title: Skilfandi áhættum
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skilur við tema {#theme-aware-skills}
+# Skilur við tema
 
 Superdav AI Agent v1.10.0 hefur sett fór fyrstu fjór nýjar, tema-vísandi innbyggðar skilur sem sjálfstösum sér að því að passa til aktivum WordPress themanum þínum. Þessar skilur veita sérhæfð leiðurstof og möguleika sem eru sniðin að arkitektúr og eiginleikum themans þíns.
 

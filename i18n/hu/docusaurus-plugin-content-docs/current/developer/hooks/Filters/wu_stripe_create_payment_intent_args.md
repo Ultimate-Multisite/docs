@@ -4,7 +4,7 @@ title: Szűrő - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# Szűrő: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
+# Szűrő: wu_stripe_create_payment_intent_args
 
 A fizetési szándék (payment intent) argumentusait szűrőként állítja be.
 

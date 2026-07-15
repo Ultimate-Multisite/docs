@@ -3,7 +3,7 @@ title: Kakayahan sa Pagtukoy ng Site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 Ang **Site Specification skill** ay isang structured approach para ma-capture ang mga layunin, target audience, at brand identity ng inyong site. Ang impormasyong ito ay naka-store sa inyong **site_brief** memory, na ginagamit ng mga agents sa iba't ibang session para makapagbigay ng consistent at context-aware na tulong.
 

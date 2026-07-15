@@ -3,7 +3,7 @@ title: Menyu z’Ubwakiranyi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus za Hospitality {#hospitality-menus}
+# Menus za Hospitality
 
 Ikiranga cya **Hospitality Menus** cyemerera Theme Builder gukora no gushyira amapaji ya menus y'ibiribwa n'ibinyobwa afite imiterere itunganyijeho, ako kanya muri site yawe ya WordPress.
 

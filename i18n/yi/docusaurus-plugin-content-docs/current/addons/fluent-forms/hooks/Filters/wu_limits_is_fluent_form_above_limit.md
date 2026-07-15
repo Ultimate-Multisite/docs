@@ -4,7 +4,7 @@ title: פֿילטער - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# פילטער: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# פילטער: wu_limits_is_fluent_form_above_limit
 
 קאָנטראָלירט צי אַ געוויסער פאָרם־טיפּ איז ערלויבט אויף דעם פּלאַן. ערלויבט plugin־אַנטוויקלערס צו פֿילטערן דעם צוריקקער־ווערט
 

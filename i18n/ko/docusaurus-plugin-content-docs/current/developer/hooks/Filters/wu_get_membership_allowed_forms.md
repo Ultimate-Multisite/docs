@@ -4,7 +4,7 @@ title: 필터 - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# 필터: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# 필터: wu_get_membership_allowed_forms
 
 개발자가 이 동작을 우회하도록 새 폼 슬러그를 추가할 수 있도록 허용합니다.
 

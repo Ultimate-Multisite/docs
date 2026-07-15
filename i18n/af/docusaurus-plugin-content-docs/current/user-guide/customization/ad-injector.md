@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Plaas Advertensies op jou netwerk met Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Plaas Advertensies op jou netwerk met Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector is 'n **gratis bykomende funksie** wat jou die gereedskap gee om advertensies op jou planne te plaas direk vanaf hul redigeerblad.
 

@@ -4,7 +4,7 @@ title: 過濾器 - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# 篩選器：wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# 篩選器：wu_checkout_step_validation_submittable_field_types
 
 允許開發人員在欄位是自動提交類型時，繞過驗證檢查。
 

@@ -3,7 +3,7 @@ title: ຂໍ້ກຳນົດ
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# ข้อกำหนดของ Ultimate Multisite {#ultimate-multisite-requirements}
+# ข้อกำหนดของ Ultimate Multisite
 
 สิ่งแรกที่คุณอาจจะถามตัวเองก่อนซื้อ Ultimate Multisite ก็คือ ต้องมีข้อกำหนดอะไรบ้างในการใช้งานปลั๊กอินของเรา? โชคดีนะ มีข้อกำหนดพื้นฐานไม่กี่อย่างสำหรับการใช้งาน Ultimate Multisite คือ **ชื่อโดเมน** (domain name), **ผู้ให้บริการโฮสติ้ง** (hosting provider) ที่ดี และการติดตั้ง WordPress **Multisite**
 

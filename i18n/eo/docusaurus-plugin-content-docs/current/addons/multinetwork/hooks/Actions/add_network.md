@@ -4,7 +4,7 @@ title: Ago - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Ago: add_network {#action-addnetwork}
+# Ago: add_network
 
 Ekfunkcias post kiam nova reto estis aldonita.
 

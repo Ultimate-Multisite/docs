@@ -3,7 +3,7 @@ title: Kayıt Formunuzu Özelleştirme
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kayıt Formunuzu Özelleştirme {#customizing-your-registration-form}
+# Kayıt Formunuzu Özelleştirme
 
 Ağınızın WordPress platformu üzerine inşa edilmiş diğer tüm SaaS’lerden benzersiz görünmesini sağlamak için Ultimate Multisite, **Checkout Forms** özelliğimizle kayıt ve giriş sayfalarınızı özelleştirmenize olanak tanır.
 

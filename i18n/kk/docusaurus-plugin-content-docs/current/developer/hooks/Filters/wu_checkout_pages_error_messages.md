@@ -4,7 +4,7 @@ title: Сүзгі - wu_checkout_pages_error_messages
 sidebar_label: wu_checkout_pages_error_messages
 _i18n_hash: 513f1f012abbaedc950e0d12f4fc01f4
 ---
-# Сүзгі: wu_checkout_pages_error_messages {#filter-wucheckoutpageserrormessages}
+# Сүзгі: wu_checkout_pages_error_messages
 
 Қате хабарларын сүзеді.
 

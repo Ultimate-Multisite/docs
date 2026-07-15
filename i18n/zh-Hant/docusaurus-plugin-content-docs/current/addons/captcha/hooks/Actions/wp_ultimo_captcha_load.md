@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# 動作：wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# 動作：wp_ultimo_captcha_load
 
 當所有依賴項載入完成時觸發。
 

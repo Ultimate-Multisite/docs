@@ -3,7 +3,7 @@ title: Tsoom tsoom thiaj li kuv tsoom txog Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# ལག་བསികལམའི་དཔྱད་རིམ་ (Touring the Admin Panel) {#touring-the-admin-panel}
+# ལག་བསികལམའི་དཔྱད་རིམ་ (Touring the Admin Panel)
 
 Ultimate Multisite ньང་ཚོ་གཞན་ལ་ཤེས་ཐུབ་པ་དང་འགྲོ་བ་སླ་བར་བྱེད་ཀྱི་ཡོད་པ་རེད། ཡིན་ནའང་,  මෙལོང་ཆེ་တဲ့ ឧបករណ៍ཅིག་ཡག་པོ་ཡོད་པས་ཁྱེད་རང་ལ་ག导བསྐྱོད་ (guided tour) བྱེད་ཐུབ་တယ်။  administrate page ཚོ་ལ་ལམ་བར་སྟོན་བྱེད་རྒྱུ་ནི་ཁྱེད་རང་ལ་འགྲོ་བའི་སྐབས་དེ་ལ help བྱེད་ཆོག་པ་རེད།
 

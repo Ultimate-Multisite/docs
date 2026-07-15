@@ -3,7 +3,7 @@ title: بەربرێژکردنی سایتەکان
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Manage Sites {#managing-sites}
+# Manage Sites
 
 Sites (یان یا subsites) هستی اصلی کسب و کار WaaS شماست. Ultimate Multisite سه نوع سایت دارد:
 

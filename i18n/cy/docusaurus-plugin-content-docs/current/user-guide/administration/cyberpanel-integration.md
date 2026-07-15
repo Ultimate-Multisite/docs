@@ -3,7 +3,7 @@ title: Ychwanegiad CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Ymddianol CyberPanel Integration {#cyberpanel-integration}
+# Ymddianol CyberPanel Integration
 
 Mae'r cyfarwyddyd hwn yn esbonio sut i sicrhau eich bod yn llwybr y cyfathrebu (configure) y cyfathrebu Ultimate Multisite CyberPanel felly fod y domenau a ddarlangwyd (mapped domains) yn eich rheol yn cael eu cytuno (add) a'u cael eu talybo (remove) fel hostiau virtual yn CyberPanel, gyda chyd-fyddio auto-SSL sydd yn wybili drwy Let's Encrypt.
 

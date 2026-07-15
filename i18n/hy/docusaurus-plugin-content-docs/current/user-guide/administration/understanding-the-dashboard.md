@@ -3,7 +3,7 @@ title: Վիճակագրական տախտակի հասկանալը
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard-ի Ընդհանրացումը {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard-ի Ընդհանրացումը
 
 Ultimate Multisite-ի ပိုမိုရှုပ်ထွေးတဲ့ စနစ်ပိုင်းဆိုင်ရာ တည်ဆောက်မှုရွေးချယ်စရာတွေနဲ့ လုပ်ငန်းလည်ပတ်မှု အချက်အလက်တွေကို မစတင်ခင်မှာ ဒီ dashboard ကို တစ်ချက်ကြည့်လိုက်ရအောင်။
 

@@ -3,7 +3,7 @@ title: Ujumuishaji wa Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Muunganisho wa Closte {#closte-integration}
+# Muunganisho wa Closte
 
 ## Muhtasari {#overview}
 Closte ni jukwaa la hosting ya WordPress linalodhibitiwa lililojengwa kwenye miundombinu ya Google Cloud. Muunganisho huu unawezesha usawazishaji wa kiotomatiki wa vikoa na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na Closte.

@@ -4,7 +4,7 @@ title: Criathrag - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Criathrag: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# Criathrag: wu_membership_renewal_expiration_date
 
 Criathraich an ceann-latha crìochnachaidh àireamhaichte a thèid a shuidheachadh às dèidh an ath-nuadhachaidh.
 

@@ -4,7 +4,7 @@ title: Sivana - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Sivana: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Sivana: wu_billing_address_fields
 
 Mamela ny mpamorona plugin hanivana ny saha adiresy faktiora.
 

@@ -3,7 +3,7 @@ title: Bailíochtaigh Codarsnacht an Phailéid
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Codarsnacht Pailéid a Bhailíochtú {#validate-palette-contrast}
+# Codarsnacht Pailéid a Bhailíochtú
 
 Seiceálann an cumas **Codarsnacht Pailéid a Bhailíochtú** péirí dathanna i do phailéad dearaidh le haghaidh chomhlíonadh WCAG (Treoirlínte Inrochtaineachta Ábhair Gréasáin) sula gcuirtear i bhfeidhm iad ar do théama.
 

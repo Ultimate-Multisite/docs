@@ -3,7 +3,7 @@ title: ຂັ້ນຕອນການຍົກຍ້າຍອຳນາດ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# กระบวนการย้ายข้อมูลแบบ Sovereign Migration {#sovereign-migration-workflow}
+# กระบวนการย้ายข้อมูลแบบ Sovereign Migration
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ได้เพิ่มขั้นตอนการตรวจสอบการย้ายข้อมูล (migration verification gates) สำหรับการย้ายเว็บไซต์ย่อยมาตรฐานไปยังโครงสร้างพื้นฐานของเทนเนนต์แบบ sovereign
 

@@ -3,7 +3,7 @@ title: Integrace WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrace s WPMU DEV {#wpmu-dev-integration}
+# Integrace s WPMU DEV
 
 ## Přehled {#overview}
 WPMU DEV je komplexní WordPress platforma nabízející hosting, pluginy a služby pro WordPress weby. Tato integrace umožňuje automatickou synchronizaci domén a správu SSL certifikátů mezi Ultimate Multisite a WPMU DEV hostingem.

@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# ການເຊື່ອມຕໍ່ RunCloud {#runcloud-integration}
+# ການເຊື່ອມຕໍ່ RunCloud
 
 ## ພາບລວມ {#overview}
 RunCloud ແມ່ນແພລັດຟອມຈັດການເຊີເວີໃນຄລາວ (cloud-based server management platform) ເຊິ່ງເຮັດໃຫ້ທ່ານສາມາດຕິດຕັ້ງ ແລະ ຈັດການ web applications ຂອງທ່ານໄດ້ງ່າຍໆ ຢູ່ເທິງເຊີເວີຄລາວຂອງຕົນເອງ. ການເຊື່ອມຕໍ່ນີ້ຈະເຮັດໃຫ້ເກີດການສັງເກດໂດເມນ (domain syncing) ອັດຕະໂນມັດ ແລະ ການຈັດການໃບຢັ້ງຢືນ SSL (SSL certificate management) ລະຫວ່າງ Ultimate Multisite ແລະ RunCloud.

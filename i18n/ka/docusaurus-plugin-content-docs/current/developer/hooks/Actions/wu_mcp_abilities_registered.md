@@ -4,7 +4,7 @@ title: ქმედება - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# მოქმედება: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# მოქმედება: wu_mcp_abilities_registered
 
 იძახება მას შემდეგ, რაც MCP შესაძლებლობები დარეგისტრირდება ერთეულისთვის.
 

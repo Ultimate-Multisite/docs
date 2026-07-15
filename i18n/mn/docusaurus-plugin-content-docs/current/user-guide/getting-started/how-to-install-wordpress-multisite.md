@@ -3,7 +3,7 @@ title: WordPress Multisite-ийг хэрхэн суулгах вэ?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-ийг хэрхэн суулгах вэ? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite-ийг хэрхэн суулгах вэ?
 
 WordPress Multisite нь нэг талбарт олон сайтын сүлжээг үүсгэх боломжийг олгодог. Энэ нь системд заавал ирж байдаг функц боловч анх стандарт тохиргоогүй байна.
 

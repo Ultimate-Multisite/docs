@@ -4,7 +4,7 @@ title: Toiminto - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Toiminto: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Toiminto: wu_enqueue_extra_hooks
 
 Salli plugin-kehittäjien lisätä lisäkoukkuja.
 

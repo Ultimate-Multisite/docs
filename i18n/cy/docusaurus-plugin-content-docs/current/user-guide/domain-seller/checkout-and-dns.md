@@ -3,7 +3,7 @@ title: Fael y Cyflwyniad a DNS Cwmiwr
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gweithioedd y Cyflwyniad a Gwarlo DNS o'r Clientwr {#checkout-field-and-customer-dns-management}
+# Gweithioedd y Cyflwyniad a Gwarlo DNS o'r Clientwr
 
 ## Y field Dechlinio Ddwyllian (Domain Selection) {#the-domain-selection-checkout-field}
 

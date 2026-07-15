@@ -3,7 +3,7 @@ title: Support-Ticketen Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support-Ticketen-Ännerungsprotokoll {#support-tickets-changelog}
+# Support-Ticketen-Ännerungsprotokoll
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Verbessert: `vendor/`-Verzeechnes aus dem Git-Tracking ewechgeholl (schonn duerch `.gitignore` ofgedeckt), wat d'Gréisst vum Repository reduzéiert

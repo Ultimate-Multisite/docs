@@ -3,7 +3,7 @@ title: Afrekenveld en Kliënt-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Betaalproses-veld en kliënt-DNS-bestuur {#checkout-field-and-customer-dns-management}
+# Betaalproses-veld en kliënt-DNS-bestuur
 
 ## Die Domeinkeuse-betaalprosesveld {#the-domain-selection-checkout-field}
 

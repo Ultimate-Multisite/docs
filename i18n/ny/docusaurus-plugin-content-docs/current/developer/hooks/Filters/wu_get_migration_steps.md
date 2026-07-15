@@ -4,7 +4,7 @@ title: Sefa - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Fyuluta: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Fyuluta: wu_get_migration_steps
 
 Lolani opanga ndi add-ons kuwonjezera masitepe atsopano osamukira
 

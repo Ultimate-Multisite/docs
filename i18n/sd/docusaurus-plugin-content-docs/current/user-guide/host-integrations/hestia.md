@@ -3,7 +3,7 @@ title: هستيا ڪنٽرول پینل انٽيغريشن
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Integration {#hestia-control-panel-integration}
+# Hestia Control Panel Integration
 
 এই গাইডটি ব্যাখ্যা করে কিভাবে আপনার নেটওয়ার্কের ম্যাপ করা ডোমেইনগুলিকে স্বয়ংক্রিয়ভাবে Hestia-তে ওয়েব ডোমেইন উপনাম (Web Domain Aliases) হিসাবে যোগ (এবং সরিয়ে ফেলা) করার জন্য Ultimate Multisite Hestia ইন্টিগ্রেশন কনফিগার করতে হয়।
 

@@ -4,7 +4,7 @@ title: Filter - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 Admins nu admin menu de pages chupa sakne de mauke deta hai, je oh customization da amal pura kar chuke hon.
 

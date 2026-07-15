@@ -3,7 +3,7 @@ title: 'Oppitunti 12: Yrityksen pyörittäminen'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Oppitunti 12: Liiketoiminnan pyörittäminen {#lesson-12-running-the-business}
+# Oppitunti 12: Liiketoiminnan pyörittäminen
 
 Alusta ei ole projekti, jonka saat valmiiksi -- se on liiketoiminta, jota pyörität. Tämä oppitunti käsittelee FitSiten hallinnan päivittäisiä toimintoja: tukea, laskutusta, ylläpitoa ja asiakkaiden tyytyväisenä pitämistä.
 

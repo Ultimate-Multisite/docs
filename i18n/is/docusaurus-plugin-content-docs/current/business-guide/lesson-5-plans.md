@@ -3,7 +3,7 @@ title: 'Læoni 5: Design þessar planir yours'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Læoni 5: Design á Planum þínum {#lesson-5-designing-your-plans}
+# Læoni 5: Design á Planum þínum
 
 Þínar planstegir eru ekki bara verðlaunshættir – þær er einkennir hvernig sérstakliðir þínar viðskiptavinir ná inn. Í þessri læoni munurðu gera design á vöru-stegum sem passar við raunverulega þörf fítness viðskiptaferlisins á öllum stigi.
 

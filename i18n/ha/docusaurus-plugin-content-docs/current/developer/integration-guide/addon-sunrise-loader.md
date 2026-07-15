@@ -3,7 +3,7 @@ title: Mai Loda Fayil ɗin Sunrise na Ƙari
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Mai Loda Fayil ɗin Addon Sunrise {#addon-sunrise-file-loader}
+# Mai Loda Fayil ɗin Addon Sunrise
 
 Ultimate Multisite 2.8.0 yana ƙara mai loda faɗaɗa sunrise don add-ons da haɗe-haɗen MU-plugin na musamman da suke buƙatar gudana yayin WordPress sunrise bootstrapping ba tare da gyara fayil ɗin `wp-content/sunrise.php` da aka samar ba.
 

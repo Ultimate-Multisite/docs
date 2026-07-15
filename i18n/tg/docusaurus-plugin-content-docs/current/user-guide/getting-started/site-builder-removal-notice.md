@@ -3,7 +3,7 @@ title: Эълони бартараф кардани режими сохтани 
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Эътимобилеи Назорати Дарёшӣ (Site Builder Mode) - Эътибор ба Назорат {#site-builder-mode-removal-notice}
+# Эътимобилеи Назорати Дарёшӣ (Site Builder Mode) - Эътибор ба Назорат
 
 **Эътимобилеи Site Builder дар Superdav AI Agent v1.12.0 аз навсозӣ шудааст.** Агар шумо аз модаи Site Builder истифода мекардед, бояд барои таҳияи тема ва таъсири сайт ба **Setup Assistant agent** гузаред.
 

@@ -4,7 +4,7 @@ title: Filter - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Filter: wu_ses_verification_integration
 
 ఈ ఫిల్టర్: ఇతర కోడ్ ద్వారా SES ఇంటిగ్రేషన్ ఆబ్జెక్ట్‌ను అందించడానికి అనుమతిస్తుంది.
 

@@ -4,7 +4,7 @@ title: Filter - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Filter: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Filter: wu_minimum_password_strength
 
 ন্যূনতম পাসওয়ার্ড শক্তি (zxcvbn স্কোর) কত হওয়া দরকার, তা ফিল্টার করে।
 

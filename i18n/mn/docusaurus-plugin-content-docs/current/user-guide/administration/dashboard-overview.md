@@ -3,7 +3,7 @@ title: Тавцангийн ерөнхий харалт
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Дашбордын өгляд {#dashboard-overview}
+# Дашбордын өгляд
 
 Ultimate Multisite-д Ultimate Multisite меню доор тусгай **Дашборд** байдаг бөгөөд мөн Network Dashboard руу виджетүүдийг нэмдэг. Энэ нийтлэл нь эдгээр хоёр газраас юу харахыг тайлбарладаг.
 

@@ -3,7 +3,7 @@ title: Thumela ngaphandle & Ngenisa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 yongeza isixhobo se-site enye **Export & Import** phantsi kwe-**Tools > Export & Import**. Sisebenzise xa kufuneka upakishe i-WordPress site enye njengefayile ye-ZIP, ubuyisele loo ZIP, okanye uhambise i-site phakathi kofakelo oluhambelanayo lwe-Ultimate Multisite kunye ne-WordPress ye-site enye.
 

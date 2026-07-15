@@ -4,7 +4,7 @@ title: عمل - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# عمل: wu_after_switch_template {#action-wuafterswitchtemplate}
+# عمل: wu_after_switch_template
 
 د plugin جوړوونکو ته اجازه ورکوي چې د کارن یا super admin له خوا د سایټ د template تر بدلولو وروسته functions hook کړي
 

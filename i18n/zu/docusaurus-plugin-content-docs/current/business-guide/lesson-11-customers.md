@@ -3,7 +3,7 @@ title: 'Isifundo 11: Ukuthola amakhasimende'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Isifundo 11: Ukuthola Amakhasimende {#lesson-11-finding-customers}
+# Isifundo 11: Ukuthola Amakhasimende
 
 Inkundla enhle engenamakhasimende iyinto yokuzilibazisa nje. Lesi sifundo sichaza indlela yokuthola amakhasimende emkhakheni oqondile we-niche -- amasu asebenza ngokukhethekile ngoba ugxile embonini eyodwa.
 

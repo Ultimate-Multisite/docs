@@ -3,7 +3,7 @@ title: Ultimate Multisite 번역
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite 번역 {#translating-ultimate-multisite}
+# Ultimate Multisite 번역
 
 Ultimate Multisite는 영어로 개발되었지만, 플러그인은 완전히 번역 가능하며 번역 기여를 적극적으로 환영합니다.
 

@@ -3,7 +3,7 @@ title: 'Liçona 6: L''experiència d''inscripció'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Aula 6: L'Experiència de Registre {#lesson-6-the-signup-experience}
+# Aula 6: L'Experiència de Registre
 
 El process de pagament és on l'interès es converte en rendiment. Un procés de registre confús o genèric fa perdre clients. Un flux específic del sector que parli el seu idioma i que es senti fàcil converte'ls.
 

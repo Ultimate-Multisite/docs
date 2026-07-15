@@ -4,7 +4,7 @@ title: Lim - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Lim: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Lim: wu_apc_should_display_admin_menu
 
 Tso cai rau cov admin zais cov nplooj admin menu, yog tias lawv twb ua tiav txoj kev customization lawm.
 

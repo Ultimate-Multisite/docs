@@ -3,7 +3,7 @@ title: Kio estas WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kion estas WordPress Multisite? {#what-is-wordpress-multisite}
+# Kion estas WordPress Multisite?
 
 En sia ĝia core, WordPress donas funkcion nomitan ‘Multisite’, kiu rastas sin origino al 2010 kiam WordPress 3.0 elanĝis. Desde ti, ĝi ricevis plurajn reviziojn orientajn al introdukti novajn funkciojn kaj plibonigi sekurecon.
 

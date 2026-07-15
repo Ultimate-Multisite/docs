@@ -3,7 +3,7 @@ title: Biểu mẫu thanh toán
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms là một cách dễ dàng và linh hoạt để thử nghiệm các phương pháp khác nhau khi cố gắng chuyển đổi khách hàng mới.
 

@@ -4,7 +4,7 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 Developers کو یہ سہولت ملتی ہے کہ وہ اس چیک کو نظر انداز کر سکیں اگر کوئی فیلڈ خودکار طور پر جمع کرایا جا سکے (auto-submittable) ہو۔
 

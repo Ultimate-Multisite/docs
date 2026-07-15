@@ -3,7 +3,7 @@ title: Ultimate Multisite පරිවර්තනය කිරීම
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite පරිවර්තනය කිරීම {#translating-ultimate-multisite}
+# Ultimate Multisite පරිවර්තනය කිරීම
 
 Ultimate Multisite කියන්නේ ඉංග්‍රීසියෙන් දියුණු කළ ප්ලගිනක් වුණත්, ඒක සම්පූර්ණයෙන්ම පරිවර්තනය කරන්න පුළුවන් ហើយ අපි පරිවර්තන සඳහා සහභාගී වීම ගැන සතුටු වෙනවා.
 

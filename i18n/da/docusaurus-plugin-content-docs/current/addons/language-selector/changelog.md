@@ -3,7 +3,7 @@ title: Sprogvælger ændringslog
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Ændringslog for sprogvælger {#language-selector-changelog}
+# Ændringslog for sprogvælger
 
 Version: 1.1.3 - Udgivet den 2026-05-05
 * Rettelse: Inputvariabler bliver nu renset, og brugerdefinerede hook-navne får præfiks for at forhindre konflikter med tredjepartsplugins

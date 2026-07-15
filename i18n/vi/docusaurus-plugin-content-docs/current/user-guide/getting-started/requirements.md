@@ -3,7 +3,7 @@ title: Yêu cầu
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Yêu cầu hệ thống cho Ultimate Multisite {#ultimate-multisite-requirements}
+# Yêu cầu hệ thống cho Ultimate Multisite
 
 Điều đầu tiên bạn có thể tự hỏi trước khi mua Ultimate Multisite là plugin của chúng tôi cần những yêu cầu gì để hoạt động. May mắn thay, chỉ có một vài yêu cầu cơ bản để chạy Ultimate Multisite: một **tên miền**, một **nhà cung cấp hosting** tốt và một bản cài đặt WordPress **Multisite**. Đó là tất cả những gì bạn cần!
 

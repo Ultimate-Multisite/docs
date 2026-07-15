@@ -3,7 +3,7 @@ title: లోగో SVG రూపొందించండి
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# లోగో SVGని రూపొందించడం {#generate-logo-svg}
+# లోగో SVGని రూపొందించడం
 
 **Generate Logo SVG** సామర్థ్యం (ability) ద్వారా, Theme Builder మీ WordPress సైట్‌లోకి కస్టమ్ లోగో SVGలను ఆటోమేటిక్ నేమ్‌స్పేస్-సేఫ్ శుభ్రపరచడంతో (sanitisation) నేరుగా సృష్టించి, పొందుపరచగలదు.
 

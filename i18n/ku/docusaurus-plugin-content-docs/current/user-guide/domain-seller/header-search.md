@@ -3,7 +3,7 @@ title: Lêgerîna Domaina Headerê
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Lêgerîna Domain a Header {#header-domain-search}
+# Lêgerîna Domain a Header
 
 Vê sazkirinê bikar bîne dema ku tu dixwazî formeke biçûk a header hebe ku lêgerîna domain dest pê bike, paşê bihêle ku kiryar ji nav domainên berdest di nav checkout a Ultimate Multisite de hilbijêre.
 

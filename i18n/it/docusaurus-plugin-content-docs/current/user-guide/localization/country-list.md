@@ -3,7 +3,7 @@ title: Elenco dei Paesi
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Riordinare l’elenco dei paesi di Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Riordinare l’elenco dei paesi di Ultimate Multisite
 
 Il menu a discesa per selezionare un paese è ordinato alfabeticamente in base alle varianti inglesi dei nomi dei paesi. Ciò potrebbe significare che, a volte, il paese di origine della tua azienda e/o la maggior parte dei tuoi clienti è nascosto in mezzo a un enorme elenco di nomi di paesi.
 

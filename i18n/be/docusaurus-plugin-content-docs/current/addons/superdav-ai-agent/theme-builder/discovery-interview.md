@@ -3,7 +3,7 @@ title: Інтер адкрыцця
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Інтэрв'ю для выяўлення ідэй (Discovery Interview) {#discovery-interview}
+# Інтэрв'ю для выяўлення ідэй (Discovery Interview)
 
 **Інтэрв'ю для выяўлення ідэй (Discovery Interview)** — гэта першы этап працэсу Theme Builder. Яно збірае інфармацыю пра ваш сайт, бізнес і задаваныя патрабаванні да дызайну, каб стварыць унікальны тэма.
 

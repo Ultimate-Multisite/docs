@@ -3,7 +3,7 @@ title: Generi SVG de emblemo
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generi Logo SVG {#generate-logo-svg}
+# Generi Logo SVG
 
 La kapablo **Generi Logo SVG** permesas al Theme Builder krei kaj enkorpigi proprajn emblemajn SVG-ojn rekte en vian WordPress-ejon kun aŭtomata nomspac-sekura purigado.
 

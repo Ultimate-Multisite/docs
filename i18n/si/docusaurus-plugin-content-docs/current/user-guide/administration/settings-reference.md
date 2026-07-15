@@ -3,7 +3,7 @@ title: සැකසුම් යොමුව
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# සැකසුම් යොමුව {#settings-reference}
+# සැකසුම් යොමුව
 
 මෙම පිටුව Ultimate Multisite හි දෛනික පරිපාලනයට සහ මෑත හැසිරීම් වෙනස්කම්වලට බලපාන සැකසුම් අනුගමනය කරයි.
 

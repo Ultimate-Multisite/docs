@@ -3,7 +3,7 @@ title: Päise domeeniotsing
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Headeri domeeniotsing {#header-domain-search}
+# Headeri domeeniotsing
 
 Kasuta seda seadistust, kui soovid väikest headeri vormi, mis alustab domeeniotsingut ja laseb seejärel kliendil valida saadaolevate domeenide seast Ultimate Multisite checkoutis.
 

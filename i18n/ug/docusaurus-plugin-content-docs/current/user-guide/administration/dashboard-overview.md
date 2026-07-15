@@ -3,7 +3,7 @@ title: داشبورد نәظرة
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# داشبورد بازنگری (Dashboard Overview) {#dashboard-overview}
+# داشبورد بازنگری (Dashboard Overview)
 
 Ultimate Multisite در منوی Ultimate Multisite یک **داشبورد** اختصاصی دارد و همچنین ویجت‌هایی را به داشبورد شبکه اضافه می‌کند. این مقاله توضیح می‌دهد که شما در هر دو مکان چه چیزی خواهید دید.
 

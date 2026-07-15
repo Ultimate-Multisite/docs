@@ -3,7 +3,7 @@ title: Ultimate Multisite کا ترجمہ
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite کا ترجمہ {#translating-ultimate-multisite}
+# Ultimate Multisite کا ترجمہ
 
 Ultimate Multisite انگریزی میں تیار کیا گیا ہے، لیکن یہ plugin مکمل طور پر قابل ترجمہ ہے اور ہم ترجمہ میں تعاون کرنے والوں کا کھلے دل سے خیرمقدم کرتے ہیں۔
 

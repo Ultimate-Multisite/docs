@@ -4,7 +4,7 @@ title: Aktioun - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Hei gëtt eng personaliséiert Action derbäigesat, fir datt mir eng Plaz hunn, wou mir d’Scripts an d’Styles no Bedarf an d’Waardeschlaang setzen an sécherstellen, datt se nëmmen op de richtege Säite geluede ginn
 

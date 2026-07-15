@@ -3,7 +3,7 @@ title: Shigarwa ta cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# شمول‌کردن با cPanel {#cpanel-integration}
+# شمول‌کردن با cPanel
 
 ## مروری کلی {#overview}
 cPanel یکی از محبوب‌ترین پنل‌های کنترل هاست وب است که توسط بسیاری از ارائه‌دهندگان هاست اشتراکی و اختصاصی استفاده می‌شود. این اتصال به شما اجازه می‌دهد تا همگام‌سازی خودکار دامنه بین Ultimate Multisite و cPanel را فعال کنید، که باعث می‌شود آدرس‌های جایگزین (aliases) و زیردامنه (subdomains) را به طور خودکار به حساب cPanel خود اضافه کنید.

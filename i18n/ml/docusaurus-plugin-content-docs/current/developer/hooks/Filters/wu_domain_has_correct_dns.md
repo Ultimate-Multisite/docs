@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filter: wu_domain_has_correct_dns
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ഫലങ്ങൾ നിർവചിക്കുന്നതിനായി പുതിയ പരിശോധനകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

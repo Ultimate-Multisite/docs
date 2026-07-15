@@ -3,7 +3,7 @@ title: سوویرین مائگریشن ورک فلو
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# سوبیرین مائگریشن ورک فلو {#sovereign-migration-workflow}
+# سوبیرین مائگریشن ورک فلو
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 نے ایک معیاری سب سائٹ کو سوبیرین ٹینٹ انفراسٹرکچر میں منتقل کرنے کے لیے مائگریشن کی تصدیق کے گیٹس شامل کر دیے ہیں۔
 

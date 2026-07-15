@@ -4,7 +4,7 @@ title: Filter - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filter: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
+# Filter: wu_generated_username_from_email
 
 ജനറേറ്റ് ചെയ്ത കസ്റ്റമർ യൂസർനെയിം ഫിൽട്ടർ ചെയ്യാൻ ഉപയോഗിക്കുന്നു.
 

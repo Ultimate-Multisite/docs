@@ -3,7 +3,7 @@ title: የቁጥጥር ፓነል ውህደትን ማሻሻል
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# የቁጥጥር ፓነልን (Control Panel) አቅም ማሳደግ {#enhance-control-panel-integration}
+# የቁጥጥር ፓነልን (Control Panel) አቅም ማሳደግ
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 Enhance ኃይለኛ የሆስቲንግ አውቶሜሽን እና የአስተዳደር አቅም የሚያቀርብ ዘመናዊ የቁጥጥር ፓነል ነው። ይህ ውህደት (integration) Ultimate Multisite እና Enhance Control Panel መካከል የዶሜን ስም (domain) መመሳሰልን (syncing) እና የSSL ሰርተፍኬት አስተዳደርን በራስ-ሰር ያደርጋል።

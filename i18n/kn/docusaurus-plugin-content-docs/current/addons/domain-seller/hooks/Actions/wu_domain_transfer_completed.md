@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Action: wu_domain_transfer_completed
 
 ಡೊಮೇನ್ ವರ್ಗಾವಣೆ (domain transfer) ಪೂರ್ಣಗೊಂಡ ನಂತರ ಈ ಆಕ್ಷನ್ (action) ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
 

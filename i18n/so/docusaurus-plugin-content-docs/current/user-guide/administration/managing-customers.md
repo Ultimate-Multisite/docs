@@ -3,7 +3,7 @@ title: Maareynta Macaamiisha
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Maareynta Macaami (Managing Customers) {#managing-customers}
+# Maareynta Macaami (Managing Customers)
 
 Bogga **Customers**-ka waxay muujinaysaa liiska xubnaha oo ku shaqeeya shirkaddaada. Boggan wuxuu soo bandhigayaa macluumaadka asaasiga ah ee isticmaalayaasha sida magaca, email-ka, markii ugu dambaysay la galay (last login), iyo xiriir **switch to** oo kuu oggolaanaya inaad si administrator oo website-ga qofkaas u galo.
 

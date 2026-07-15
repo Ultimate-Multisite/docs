@@ -3,7 +3,7 @@ title: Stripe ကို စီမံခြင်း
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway ပြင်ဆင်ခြင်း (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway ပြင်ဆင်ခြင်း (v2)
 
 _**အရေးကြီးသော မှတ်ချက်: ဤဆောင်းပါးသည် Ultimate Multisite version 2.x အတွက် ဖြစ်ပါသည်။**_
 

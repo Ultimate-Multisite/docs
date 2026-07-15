@@ -3,7 +3,7 @@ title: تكامل WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# تكامل WP Engine {#wp-engine-integration}
+# تكامل WP Engine
 
 ## نظرة عامة {#overview}
 WP Engine هو منصة استضافة WordPress مدارة متميزة توفر أداءً محسنًا، أمانًا، وقابلية توسيع للمدونات على WordPress. يتيح هذا التكامل مزامنة النطاقات تلقائيًا بين Ultimate Multisite و WP Engine.

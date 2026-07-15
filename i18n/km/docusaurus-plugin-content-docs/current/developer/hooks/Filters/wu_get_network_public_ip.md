@@ -4,7 +4,7 @@ title: តម្រង - wu_get_network_public_ip
 sidebar_label: wu_get_network_public_ip
 _i18n_hash: 129b6c2423c8d5af9f4314cc35715281
 ---
-# តម្រង: wu_get_network_public_ip {#filter-wugetnetworkpublicip}
+# តម្រង: wu_get_network_public_ip
 
 មើលបន្ថែមអំពីតម្រងនេះខាងក្រោម នៅក្នុង method ដូចគ្នានេះ។
 

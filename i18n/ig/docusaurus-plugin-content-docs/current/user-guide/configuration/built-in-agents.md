@@ -3,7 +3,7 @@ title: Ndị nnọchi anya arụnyere n'ime
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents e wuru n’ime {#built-in-agents}
+# Agents e wuru n’ime
 
 Gratis AI Agent v1.9.0 na-ebute agents ise e wuru n’ime, nke ọ bụla akwadoro tupu oge ya na otu ngwaọrụ lekwasịrị anya, system prompt ahaziri ya, na aro mmalite kwekọrọ na ọrụ a na-ahụkarị n’akụkụ ahụ. Ịgbanwe n’etiti agents na-agbanwe ihe assistant nwere ike ime na otu o si aza — na-enweghị nhazi ọ bụla n’aka gị. Superdav AI Agent v1.18.0 nwere ike itinye ngwaọrụ maara usoro oge, ndekọ ncheta, ọnụ ụzọ nkwado, na ozi SMS na workflows ndị a mgbe ahaziri integrations metụtara ha.
 

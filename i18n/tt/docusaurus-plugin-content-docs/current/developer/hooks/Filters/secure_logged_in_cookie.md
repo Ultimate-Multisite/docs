@@ -4,7 +4,7 @@ title: Фильтр - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Сөзгеч: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Сөзгеч: secure_logged_in_cookie
 
 Кергән кулланучы кукие бары тик HTTPS аша гына җибәрелергә тиешме-юкмы икәнен сөзә.
 

@@ -3,7 +3,7 @@ title: 管理计划的共享链接
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# 管理计划的可共享链接 {#managing-shareable-links-for-plans}
+# 管理计划的可共享链接
 
 Ultimate Multisite 为您提供直接与客户共享计划链接的选项。要执行此操作，请转到任何计划的编辑页面并点击 _点击复制可共享链接_ 按钮。
 

@@ -3,7 +3,7 @@ title: Zerbitzazio produktuaren lehenak sortzea
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Itzurearen Lehen Abonazio Produkzioa (v2) {#creating-your-first-subscription-product-v2}
+# Itzurearen Lehen Abonazio Produkzioa (v2)
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite 2.x bertsio erabiltzaileak dira. Bertsio 1.x erabiltzen ari zete,**_ **_hau artikuluari jartu_**.
 

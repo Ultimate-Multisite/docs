@@ -3,7 +3,7 @@ title: 'Lição 11: Encontrando Clientes'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lição 11: Encontrando Clientes {#lesson-11-finding-customers}
+# Lição 11: Encontrando Clientes
 
 Uma ótima plataforma sem clientes é apenas um hobby. Esta lição aborda como adquirir clientes em um nicho vertical — estratégias que funcionam especificamente porque você está focado em uma única área de atuação.
 

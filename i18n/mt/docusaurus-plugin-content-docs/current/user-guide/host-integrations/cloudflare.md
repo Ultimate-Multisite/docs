@@ -3,7 +3,7 @@ title: Integrazzjoni Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integrazzjoni ma' Cloudflare {#cloudflare-integration}
+# Integrazzjoni ma' Cloudflare
 
 ## Panoramika {#overview}
 Cloudflare hija network ta preżentament kontent (CDN) u fornitur ta sigurtà li jgħinu bitt protezzjoni u accelerazzjoni tal-websites. Dan l-integrazzjoni tismella l-ġestjoni awtomatika tad-domain bejn Ultimate Multisite u Cloudflare, partikolar għall-installazzjonijiet ta subdomain multisite.

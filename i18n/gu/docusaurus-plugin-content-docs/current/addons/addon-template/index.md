@@ -3,9 +3,9 @@ title: એડ-ઓન ટેમ્પલેટ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# એડન ટેમ્પલેટ {#addon-template}
+# એડન ટેમ્પલેટ
 
-{{ADDON_DESCRIPTION}}
+એડ-ઓન ટેમ્પલેટ — Ultimate Multisite.
 
 ## જરૂરીયાતો {#requirements}
 

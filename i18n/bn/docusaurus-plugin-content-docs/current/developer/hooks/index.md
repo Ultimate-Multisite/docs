@@ -3,7 +3,7 @@ title: হুকসমূহের রেফারেন্স
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks রেফারেন্স {#hooks-reference}
+# Hooks রেফারেন্স
 
 Ultimate Multisite-এর সব **59টি action** এবং **118টি filter**-এর জন্য স্বয়ংক্রিয়ভাবে তৈরি ডকুমেন্টেশন।
 

@@ -3,7 +3,7 @@ title: Cloudflare Интеграция
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Entegratsiyasi {#cloudflare-integration}
+# Cloudflare Entegratsiyasi
 
 ## Жалпы ақпарат {#overview}
 Cloudflare — бұл веб-сайттарды қорғау және жылдамдатуға көмектесетін жетекші контент жеткізу желісі (CDN) және қауіпсіздік провайдегі. Бұл интеграция Ultimate Multisite мен Cloudflare арасындағы автоматты доменді басқаруды, әсіресе поддомен мультисайт орнатулары үшін мүмкін етеді.

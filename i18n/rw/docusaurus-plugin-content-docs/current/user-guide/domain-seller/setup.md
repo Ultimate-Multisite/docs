@@ -3,7 +3,7 @@ title: Gukoresha no Gukoresha Umuhoodwa n'Umuhoodwa w'Ubutabera
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Mwanditsi wa Domain: Urugero n'Urugero mu gukoresha Provider {#domain-seller-setup-and-provider-configuration}
+# Mwanditsi wa Domain: Urugero n'Urugero mu gukoresha Provider
 
 Addon ya Domain Seller itangira na uburyo bwo gutanga (guided setup wizard) witeguye ukugera ku buryo bwose bwo kubyara. Iyi rubuga ririmo ibyo mu buryo bwo gukora iyo wizard, no uko ugomba guhindura cyangwa gukoresha provider nyuma.
 

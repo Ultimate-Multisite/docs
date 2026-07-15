@@ -4,7 +4,7 @@ title: 过滤器 - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# 过滤：wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# 过滤：wu_minimum_password_strength
 
 过滤所需的最小密码强度（zxcvbn 分数）。
 

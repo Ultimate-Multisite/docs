@@ -4,7 +4,7 @@ title: Tacewa - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Tacewa: wu_rest_get_items {#filter-wurestgetitems}
+# Tacewa: wu_rest_get_items
 
 Yana tace ko an yarda a ci gaba da buƙatar ko a’a.
 

@@ -3,7 +3,7 @@ title: Ilog yotshintsho yeeNethiwekhi ezininzi
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Ingxelo yotshintsho yeenethiwekhi ezininzi {#multi-network-changelog}
+# Ingxelo yotshintsho yeenethiwekhi ezininzi
 
 ### 1.3.0 {#130}
 * Entsha: Isibonisi sangaphambili setemplate yenethiwekhi — khangela uze ubone kwangaphambili iitemplate zenethiwekhi ngephaneli ephilayo ngaphambi kokuthenga.

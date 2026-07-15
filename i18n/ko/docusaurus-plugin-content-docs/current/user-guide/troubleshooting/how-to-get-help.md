@@ -3,7 +3,7 @@ title: 도움 받는 방법
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# 도움 받는 방법 {#how-to-get-help}
+# 도움 받는 방법
 
 유효한 라이선스 키를 받으셨으며, 그와 함께 우리 팀에 접근할 수 있는 권한이 부여되어, Ultimate Multisite를 설정하는 동안 발생할 수 있는 문제를 해결하도록 도와드립니다.
 

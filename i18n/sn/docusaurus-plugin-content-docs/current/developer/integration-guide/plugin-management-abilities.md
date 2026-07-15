@@ -3,7 +3,7 @@ title: Kugona Kutarisira maPlugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Zvikwanisiro zveKutarisira Mawedzero {#plugin-management-abilities}
+# Zvikwanisiro zveKutarisira Mawedzero
 
 Gratis AI Agent v1.5.0 inouya ne **zvikwanisiro 7 zvekutarisira mawedzero** izvo mubatsiri weAI anogona kushandisa panguva yehurukuro. Zvikwanisiro izvi zvinopa kudzora kwechirongwa pamusoro pemaWordPress wedzero akaiswa kuburikidza ne [Sisitimu yeKuvaka Mawedzero neSandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

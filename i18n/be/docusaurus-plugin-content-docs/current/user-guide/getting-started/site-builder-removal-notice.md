@@ -3,7 +3,7 @@ title: Паведамленне пра выдаленне рэжыму "Site Bui
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Паведамленне пра адключэнне рэжыму Site Builder {#site-builder-mode-removal-notice}
+# Паведамленне пра адключэнне рэжыму Site Builder
 
 **Рэжым Site Builder адключаны ў Superdav AI Agent v1.12.0.** Калі вы выкарыстоўвалі рэжым Site Builder, вам трэба пераходзіць на **Setup Assistant agent** для стварэння тэмаў і наладзіцыі сайта.
 

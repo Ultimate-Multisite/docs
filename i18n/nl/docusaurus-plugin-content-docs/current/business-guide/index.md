@@ -3,7 +3,7 @@ title: Bouw een Niche Website Bedrijf
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bouw een Niche Website Bedrijf met Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Bouw een Niche Website Bedrijf met Ultimate Multisite
 
 De meeste mensen die proberen websites te verkopen, concurreren op prijs met Wix, Squarespace en duizenden freelancers. En ze verliezen. Degenen die winnen, kiezen een specifieke doelgroep, bouwen een oplossing die op maat is gemaakt voor die doelgroep, en rekenen de waarde die ze leveren.
 

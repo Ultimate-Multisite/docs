@@ -3,7 +3,7 @@ title: ડિસ્કાઉન્ટ કોડ્સ બનાવવું
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ડિસ્કાઉન્ટ કોડ બનાવવું (v2) {#creating-discount-codes-v2}
+# ડિસ્કાઉન્ટ કોડ બનાવવું (v2)
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite version 2.x માટે છે.**_
 

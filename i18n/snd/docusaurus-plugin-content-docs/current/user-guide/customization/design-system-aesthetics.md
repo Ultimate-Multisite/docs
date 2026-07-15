@@ -3,7 +3,7 @@ title: ڊيزائن سسٽم جمالياتي ڪلناڪ
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# ڈیزائن سسٹم کی خوبصورتی کا ہنر (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
+# ڈیزائن سسٹم کی خوبصورتی کا ہنر (Design System Aesthetics Skill)
 
 **ڈیزائن سسٹم کی خوبصورتی کا ہنر (Design System Aesthetics skill)** آپ کی سائٹ کی بصری شناخت کو بہتر بنانے کے لیے ایک رہنمائی کرنے والا طریقہ ہے۔ یہ آپ کو اپنی ڈیزائن سسٹم کو متعین کرنے والے ٹائپوگرافی، رنگ، جگہ اور حرکت کے ٹوکنز کے بارے میں مستقل فیصلے کرنے میں مدد کرتا ہے۔
 

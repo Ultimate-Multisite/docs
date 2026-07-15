@@ -3,7 +3,7 @@ title: Mailchimp Changelog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp മാറ്റങ്ങളുടെ രേഖ (Changelog) {#mailchimp-changelog}
+# Mailchimp മാറ്റങ്ങളുടെ രേഖ (Changelog)
 
 Version: 1.1.1 - 2025-09-28 ന് പുറത്തിറക്കി
 

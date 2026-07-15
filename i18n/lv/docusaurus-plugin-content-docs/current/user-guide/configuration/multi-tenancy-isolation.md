@@ -3,7 +3,7 @@ title: Datu izolācija multi-tenantu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Vadu-tenantu izolācija {#multi-tenancy-isolation}
+# Vadu-tenantu izolācija
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 atbalsta subsites datubāzes un failkristiju izolāciju soverētiem īpašiem klientiem. Tas saglabā klienta datus atšķirīgus, nodrošinot tieši tīkla līmeņa sniegšanu, fakturēšanu un administrāciju.
 

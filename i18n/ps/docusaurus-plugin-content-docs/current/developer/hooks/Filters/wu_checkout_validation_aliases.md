@@ -4,7 +4,7 @@ title: فلټر - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# فلټر: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# فلټر: wu_checkout_validation_aliases
 
 plugin جوړوونکو ته اجازه ورکوي چې په فورم اعتبارسنجوونکي کې دودیز aliases زیات کړي.
 

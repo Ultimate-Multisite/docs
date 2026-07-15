@@ -3,7 +3,7 @@ title: 'Thuto ea 3: Ho Seta Netweke ea Hao'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Thuto 3: Ho Hlophisa Marang-rang a Hao {#lesson-3-setting-up-your-network}
+# Thuto 3: Ho Hlophisa Marang-rang a Hao
 
 Ke nako ya ho aha. Thutong ena o tla kenya Ultimate Multisite mme o lokise motheo wa marang-rang a FitSite. Qeto e nngwe le e nngwe mona e etswa ho nahannwe ka lekala la boikoetliso.
 

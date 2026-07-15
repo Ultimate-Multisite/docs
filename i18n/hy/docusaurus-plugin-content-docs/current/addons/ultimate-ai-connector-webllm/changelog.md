@@ -3,7 +3,7 @@ title: Ultimate AI Connector WebLLM-ի համար փոփոխություններ
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM փոփոխությունների մատյան {#ultimate-ai-connector-for-webllm-changelog}
+# Ultimate AI Connector for WebLLM փոփոխությունների մատյան
 
 ## Տարբերակ 1.1.0 — Թողարկվել է 2026-04-09-ին {#version-110--released-on-2026-04-09}
 

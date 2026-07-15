@@ -3,7 +3,7 @@ title: Curmhaíochta le Linkí Sháirbhla do Pláannacha
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Déanamh ar Linkí Shareable do Plananna {#managing-shareable-links-for-plans}
+# Déanamh ar Linkí Shareable do Plananna
 
 Caithfidh Ultimate Multisite leat an fáil an tairiscint a bheith agat chun linkí plananna a chur ar fáil díreach do do chliantacht. Chun cheannach, rag thar éiteach ar aon dearcais plananna agus cliceáil ar an nútair _Click to copy the Shareable Link_.
 

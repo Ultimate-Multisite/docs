@@ -3,7 +3,7 @@ title: Manazartar Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Manazartar Hooks {#hooks-reference}
+# Manazartar Hooks
 
 Takardun da aka samar ta atomatik don duk **ayyuka 59** da **filters 118** a cikin Ultimate Multisite.
 

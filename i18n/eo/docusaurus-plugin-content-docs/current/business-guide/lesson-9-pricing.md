@@ -3,7 +3,7 @@ title: 'Leciono 9: Prezado por Profito'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leciono 9: Prezigado por Profito {#lesson-9-pricing-for-profit}
+# Leciono 9: Prezigado por Profito
 
 En Leciono 5 ni starigis komencajn prezojn por FitSite-planoj. Nun ni rafinas la prezigan strategion per teknikoj kiuj pliigas enspezon, instigas ĝisdatigojn, kaj reduktas foriron.
 

@@ -3,7 +3,7 @@ title: Khái niệm cơ bản
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Các khái niệm cơ bản {#basic-concepts}
+# Các khái niệm cơ bản
 
 Đối với người mới sử dụng WordPress Multisite và mới bắt đầu làm quen với Ultimate Multisite, ban đầu có khá nhiều thuật ngữ và khái niệm mới cần tìm hiểu. Việc nắm vững những khái niệm này rất quan trọng vì bạn cần hiểu rõ nền tảng và cách thức hoạt động tổng thể của nó.
 

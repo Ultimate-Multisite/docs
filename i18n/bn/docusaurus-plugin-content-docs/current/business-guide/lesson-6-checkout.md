@@ -3,7 +3,7 @@ title: 'পাঠ ৬: সাইনআপ অভিজ্ঞতা'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: The Signup Experience {#lesson-6-the-signup-experience}
+# Lesson 6: The Signup Experience
 
 চেকআউট ফ্লো হলো সেই জায়গা, যেখানে আগ্রহকে আয়ে পরিণত করা হয়। একটি বিভ্রান্তিকর বা সাধারণ সাইনআপ প্রক্রিয়া গ্রাহকদের হারায়। একটি নির্দিষ্ট (niche-specific) ফ্লো যা তাদের ভাষা বোঝে এবং স্বচ্ছন্দ মনে হয়, তা গ্রাহকদের কনভার্ট করে।
 

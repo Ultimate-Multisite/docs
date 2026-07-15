@@ -3,7 +3,7 @@ title: Järjestelmän sähköpostien hallinta
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Järjestelmän sähköpostien hallinta {#managing-system-emails}
+# Järjestelmän sähköpostien hallinta
 
 Ultimate Multisite lähettää erilaisia järjestelmän sähköposteja tapahtumista, kuten rekisteröitymisvahvistuksista, maksutodistuksista ja jäsenyysmuutoksista. Voit muokata näitä sähköpostimalotteja sopimaan brändisi kanssa.
 

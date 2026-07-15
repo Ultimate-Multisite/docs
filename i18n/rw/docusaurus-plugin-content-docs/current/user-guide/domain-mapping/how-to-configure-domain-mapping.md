@@ -3,7 +3,7 @@ title: Uko washyiraho Domain Mapping
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Uko Wagena Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
+# Uko Wagena Domain Mapping (v2)
 
 _**ICYITONDERWA CY’INGENZI: Iyi ngingo ivuga kuri Ultimate Multisite verisiyo 2.x.**_
 

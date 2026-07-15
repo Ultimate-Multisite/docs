@@ -4,7 +4,7 @@ title: Actie - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Actie: add_network {#action-addnetwork}
+# Actie: add_network
 
 Wordt uitgevoerd nadat een nieuw netwerk is toegevoegd.
 

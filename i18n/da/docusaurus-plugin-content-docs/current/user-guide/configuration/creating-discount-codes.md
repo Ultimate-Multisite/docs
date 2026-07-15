@@ -3,7 +3,7 @@ title: Oprettelse af rabatkoder
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Oprettelse af rabatkoder (v2) {#creating-discount-codes-v2}
+# Oprettelse af rabatkoder (v2)
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

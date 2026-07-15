@@ -3,7 +3,7 @@ title: Kubatanidzwa kwekushandiswa nevazhinji
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Kubatanidza Multi-Tenancy {#multi-tenancy-integration}
+# Kubatanidza Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inoshandura nzvimbo dzinoverengeka dzekubatanidza dzevaridzi vakazvimirira, kusimbisa kutamiswa, uye otomatiki yehupenyu hwemuridzi.
 

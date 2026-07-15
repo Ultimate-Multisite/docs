@@ -3,7 +3,7 @@ title: Maniĝo de Pagoj kaj Fakturaj
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagamentoj kaj Fakturoj Administrado {#managing-payments-and-invoices}
+# Pagamentoj kaj Fakturoj Administrado
 
 ## Pagamentaj Rekonfiguradoj {#payment-settings}
 

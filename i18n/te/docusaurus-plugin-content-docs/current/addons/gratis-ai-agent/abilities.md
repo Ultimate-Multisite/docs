@@ -3,7 +3,7 @@ title: సామర్థ్యాల సూచిక
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# సామర్థ్యాల సూచిక {#abilities-reference}
+# సామర్థ్యాల సూచిక
 
 సామర్థ్యాలు అనేవి Gratis AI Agent మీ WordPress ఇన్‌స్టాలేషన్‌లో అమలు చేయగల మూల చర్యలు. ప్రతి సామర్థ్యం JSON schemaను అందించే నమోదు చేసిన PHP class. runtimeలో agent ఈ schemaను చదివి ఏ parameters అవసరమో, సామర్థ్యం ఏమి తిరిగి ఇస్తుందో అర్థం చేసుకుంటుంది.
 

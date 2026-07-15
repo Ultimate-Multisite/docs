@@ -3,7 +3,7 @@ title: Adókezelés
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Adókezelés {#tax-handling}
+# Adókezelés
 
 Az Ultimate Multisite rendelkezik egy, a core pluginunkba beépített adóbeszedési modullal, így ha forgalmi adót kell beszedned a csomagjaid, csomagajánlataid és szolgáltatásaid után, ezt könnyedén megteheted bármilyen add-on telepítése nélkül.
 

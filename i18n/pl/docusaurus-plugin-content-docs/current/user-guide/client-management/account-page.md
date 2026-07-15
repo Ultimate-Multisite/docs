@@ -3,7 +3,7 @@ title: Strona Account klienta
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Strona Account Twojego klienta (v2) {#your-clients-account-page-v2}
+# Strona Account Twojego klienta (v2)
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 

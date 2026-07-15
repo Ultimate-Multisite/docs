@@ -3,7 +3,7 @@ title: Interneta meklēšana
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Interneta meklēšana {#internet-search}
+# Interneta meklēšana
 
 Gratis AI Agent v1.5.0 dod iespēju **Interneta meklēšanu**, kas ļauj AI asistentam saņemties aktuলাস informācijas no interneta mūsu sarunas laikā. Šo funkciju palieca [Brave Search API](https://brave.com/search/api/) vai [Tavily API](https://tavily.com/).
 

@@ -3,7 +3,7 @@ title: Fragmente de cod
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmente de cod pentru v2 {#code-snippets-for-v2}
+# Fragmente de cod pentru v2
 
 În principiu, fragmentele de cod pentru **WordPress** sunt folosite pentru a realiza anumite acțiuni care altfel ar necesita un plugin dedicat mai mic. Astfel de fragmente de cod sunt plasate într-unul dintre fișierele de bază ale WordPress sau ale temei (de obicei fișierul functions.php al temei tale) sau pot fi folosite ca MU plugin.
 

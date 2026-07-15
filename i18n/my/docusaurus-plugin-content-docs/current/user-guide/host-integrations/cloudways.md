@@ -3,7 +3,7 @@ title: Cloudways ပေါင်းစည်းမှု
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ပေါင်းစည်းမှု {#cloudways-integration}
+# Cloudways ပေါင်းစည်းမှု
 
 ## အနှစ်ချုပ် {#overview}
 Cloudways သည် DigitalOcean, AWS, Google Cloud စသည့် cloud provider များအပါအဝင် အမျိုးမျိုးသော cloud provider များပေါ်တွင် WordPress ဆိုက်များကို ဖြန့်ချိနိုင်စေသည့် စီမံထားသော cloud hosting ပလက်ဖောင်းတစ်ခုဖြစ်သည်။ ဤပေါင်းစည်းမှုသည် Ultimate Multisite နှင့် Cloudways အကြား domain အလိုအလျောက် ချိန်ကိုက်ခြင်းနှင့် SSL certificate စီမံခန့်ခွဲခြင်းကို လုပ်ဆောင်နိုင်စေသည်။

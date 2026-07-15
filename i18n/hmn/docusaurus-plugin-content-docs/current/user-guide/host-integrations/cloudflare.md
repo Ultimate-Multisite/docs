@@ -3,7 +3,7 @@ title: Integration Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Ổng-tso (Overview) {#overview}
 Cloudflare нь сайтнуудыг хамгаалж, хурдасгах гол контент хүргэх сүлжээ (CDN) болон аюулгүй байдлын үйлчилгээ юм. Энэхүү integration нь Ultimate Multisite болон Cloudflare хоорондын домен удирдлагыг автоматаар хийж өгнө, ялангуяа subdomain-тай multisite суулгалт хийхэд ашигтай байдаг.

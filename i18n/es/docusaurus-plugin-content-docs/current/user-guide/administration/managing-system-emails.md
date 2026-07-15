@@ -3,7 +3,7 @@ title: Gestión de correos electrónicos del sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestionar correos electrónicos del sistema {#managing-system-emails}
+# Gestionar correos electrónicos del sistema
 
 Ultimate Multisite envía varios correos electrónicos del sistema para eventos como confirmaciones de registro, recibos de pago y cambios de membresía. Puedes personalizar estas plantillas de correo electrónico para que coincidan con tu marca.
 

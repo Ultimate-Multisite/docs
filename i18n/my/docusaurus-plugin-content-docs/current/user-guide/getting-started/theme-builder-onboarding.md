@@ -3,7 +3,7 @@ title: Theme Builder Onboarding Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder စတင်အသုံးပြုမှု လမ်းညွှန်မှု {#theme-builder-onboarding-flow}
+# Theme Builder စတင်အသုံးပြုမှု လမ်းညွှန်မှု
 
 Superdav AI Agent v1.12.0 မှာ စတင်အသုံးပြုတဲ့အခါ စိတ်ကြိုက် block theme တစ်ခု ဖန်တီးနိုင်ဖို့ လမ်းညွှန်ပေးတဲ့ **Theme Builder စတင်အသုံးပြုမှု လမ်းညွှန်မှု (onboarding flow)** ကို မိတ်ဆက်ပေးထားပါတယ်။ ဒါဟာ ယခင် Site Builder ပုံစံကို ပိုပြီး ပြောင်းလွယ်ပြင်လွယ်ရှိတဲ့၊ agent အကူအညီနဲ့ လုပ်ဆောင်တဲ့ ပုံစံသစ်တစ်ခုနဲ့ အစားထိုးလိုက်တာ ဖြစ်ပါတယ်။
 

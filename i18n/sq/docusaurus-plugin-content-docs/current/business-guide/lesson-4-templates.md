@@ -3,7 +3,7 @@ title: 'Mësimi 4: Ndërtimi i shablloneve për nisha'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Mësimi 4: Ndërtimi i shablloneve për segmente specifike {#lesson-4-building-niche-templates}
+# Mësimi 4: Ndërtimi i shablloneve për segmente specifike
 
 Shabllonet janë thelbi i propozimit tënd të vlerës për segmentin specifik. Një pronar studioje fitnesi që regjistrohet dhe sheh një sajt që tashmë duket si faqe interneti fitnesi -- me orare klasash, profile trajnerësh dhe imazhet e duhura -- ka shumë më tepër gjasa të qëndrojë sesa dikush që sheh një kanavacë bosh.
 

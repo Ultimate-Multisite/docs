@@ -3,7 +3,7 @@ title: বহু-ভাড়াটীয়া একত্ৰীকৰণ
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy সংহতি {#multi-tenancy-integration}
+# Multi-Tenancy সংহতি
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-এ স্বাধীন টেনেণ্ট, মাইগ্ৰেশ্যন যাচাই, আৰু টেনেণ্ট জীৱনচক্ৰ স্বয়ংক্ৰিয়কৰণৰ বাবে কেইবাটাও সংহতি স্পৰ্শবিন্দু সলনি কৰা হৈছে।
 

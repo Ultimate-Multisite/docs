@@ -3,7 +3,7 @@ title: 'Ders 5: Sêwirandina Planên Xwe'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ders 5: Sêwirandina Planên Xwe {#lesson-5-designing-your-plans}
+# Ders 5: Sêwirandina Planên Xwe
 
 Astên planên te tenê astên bihayê nînin -- ew nîşana awayê rastîn ê xebata xerîdarên nişeya te ne. Di vê dersê de tu dê astên berhemê sêwirînî ku bi hewcedariyên rastîn ên karsaziyên fitnessê di qonaxên cuda de li hev bikin.
 

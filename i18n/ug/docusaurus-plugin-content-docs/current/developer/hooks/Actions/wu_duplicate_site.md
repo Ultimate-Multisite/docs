@@ -4,7 +4,7 @@ title: ھەرىكەت - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# مەشغۇلات: wu_duplicate_site {#action-wuduplicatesite}
+# مەشغۇلات: wu_duplicate_site
 
 تور بېكەت كۆپەيتىش يۈز بەرگەندىن كېيىن ئاچقۇچىلارنىڭ hook قىلىشىغا يول قويىدۇ.
 

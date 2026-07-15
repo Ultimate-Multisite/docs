@@ -3,7 +3,7 @@ title: RunCloud انٽيغريشن
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## جائزہ (Overview) {#overview}
 RunCloud هڪ ڪلاڊ-بيل سرور مانيجمنٽ پليٽ فارم آهي جيڪو توهان کي آساني سان پنهنجي ڪلاڊ سرورن تي ويب ايپليڪيشنز کي نصب ڪرڻ ۽ منظم ڪرڻ جي اجازت ڏئي ٿو. هي ان انٽيغريتي Ultimate Multisite ۽ RunCloud بابت آٽومويڪ اڊين سمڪينگ (domain syncing) ۽ SSL سرٽيفڪيٽ مانيجمنٽ کي خود بخود ڪندي فراهم ڪري ٿي.

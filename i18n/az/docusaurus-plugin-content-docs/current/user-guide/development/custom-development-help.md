@@ -3,7 +3,7 @@ title: Xüsusi İnkişaf Dəstəyi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-dan Xüsusi İnkişaf Dəstəyi Necə Alınır? {#how-to-get-custom-development-help-from-codeable}
+# Codeable-dan Xüsusi İnkişaf Dəstəyi Necə Alınır?
 
 Bəzən şəbəkənin (network) axışını tam istədiyimiz kimi etmək üçün həqiqətən də güclü özəlləşdirməyə ehtiyac duyuruq. Əgər axtardığınız şey budursa, sizə [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-ni tövsiyə edirik. Bu platformada Ultimate Multisite təcrübəsi olan peşəkar developerlər tapa bilərsiniz.
 

@@ -3,7 +3,7 @@ title: Prasības
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Uzlabo multisaitas prasības {#ultimate-multisite-requirements}
+# Uzlabo multisaitas prasības
 
 Pirmo jautājuma, ko varat uzdot savam pirms iepirkumu Ultimate Multisite, ir, kas prasības mūsu plāksmes veikšanai? Labi, laipnieku, Ultimate Multisite veikt spēk vai tikai dažas pamata prasības: **domēns**, laba **hostings pakalpojuma sniedzēja** un WordPress **Multisaitas** instalācija. Tas ir viss, kas jums nepieciešams!
 

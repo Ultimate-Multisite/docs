@@ -3,7 +3,7 @@ title: ウェブフック
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) の概要 {#a-first-look-on-webhooks-v2}
+# Webhooks (v2) の概要
 
 _**注意: この機能または記事は上級ユーザー向けです。**_
 

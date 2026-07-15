@@ -3,7 +3,7 @@ title: Журнал змяненняў інтэграцыі WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Журнал змен інтэграцыі WooCommerce {#woocommerce-integration-changelog}
+# Журнал змен інтэграцыі WooCommerce
 
 Версія 2.2.0 - Выпушчана 2026-07-01
 * Новае: сумы падаткаў Ultimate Multisite цяпер паказваюцца як асобныя радкі збораў WooCommerce пры афармленні замовы, што робіць агульныя сумы падаткаў больш зразумелымі перад аплатай.

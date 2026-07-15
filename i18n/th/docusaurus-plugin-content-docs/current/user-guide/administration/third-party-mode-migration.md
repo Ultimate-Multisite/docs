@@ -3,7 +3,7 @@ title: การย้ายโหมดบุคคลที่สาม
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# การย้ายโหมดสำหรับ Third-Party Mode {#third-party-mode-migration}
+# การย้ายโหมดสำหรับ Third-Party Mode
 
 Superdav AI Agent v1.12.0 ได้ปรับเปลี่ยนวิธีการจัดการความสามารถ (abilities) ของ third-party ใหม่ **Third-party mode จะตั้งค่าเริ่มต้นเป็น auto** ทำให้สามารถผสานรวมกับ WordPress Abilities API แบบ native บน WordPress 7.0+ ได้โดยไม่ต้องตั้งค่าด้วยตนเอง
 

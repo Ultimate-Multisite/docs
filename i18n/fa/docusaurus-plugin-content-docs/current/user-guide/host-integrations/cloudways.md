@@ -3,7 +3,7 @@ title: یکپارچه‌سازی Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# یکپارچه‌سازی Cloudways {#cloudways-integration}
+# یکپارچه‌سازی Cloudways
 
 ## نمای کلی {#overview}
 Cloudways یک پلتفرم میزبانی ابری مدیریت‌شده است که به شما اجازه می‌دهد سایت‌های WordPress را روی ارائه‌دهندگان ابری مختلف مانند DigitalOcean، AWS، Google Cloud و موارد دیگر مستقر کنید. این یکپارچه‌سازی همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و Cloudways فعال می‌کند.

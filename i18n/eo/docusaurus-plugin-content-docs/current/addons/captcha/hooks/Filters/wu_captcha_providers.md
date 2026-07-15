@@ -4,7 +4,7 @@ title: Filtro - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Filtro: wu_captcha_providers {#filter-wucaptchaproviders}
+# Filtro: wu_captcha_providers
 
 Filtras la disponeblajn captcha-provizantojn.
 

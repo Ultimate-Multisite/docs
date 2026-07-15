@@ -3,7 +3,7 @@ title: GitHub-viipaleet
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kuinka käyttää Ultimate Multisite -nappia GitHub-repositoristosi avulla {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Kuinka käyttää Ultimate Multisite -nappia GitHub-repositoristosi avulla
 
 GitHub-repositoristossa on saatavilla koodinappia, joita Ultimate Multisite -käyttäjät pyytävät usein lisättäkseen pieniä toimintoja, kuten Google Analytics -skriptin lisäämisen rekisteröitymissivuille tai meta-laatikon piilottamisen hallintapaneelista.
 
@@ -19,7 +19,7 @@ Koodin lisäämiseen on kaksi tapaa:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Kuinka lisätä nappi teeman functions.php -tiedostoon {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Kuinka lisätä nappi teeman functions.php -tiedostoon
 
   1. Kirjaudu sisään WordPress Network admin -paneeliin ja siirry Themes > Theme Editoriin (Katso alla olevaa kuvaa).
 
@@ -29,7 +29,7 @@ Koodin lisäämiseen on kaksi tapaa:
 
 <!-- Kuvakaavaa ei ole saatavilla: WordPress Theme Editor näyttää functions.php -tiedoston muokkaamisen -->
 
-# Kuinka luoda Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Kuinka luoda Must-Use Plugins (mu-plugins)
 
 WordPressissä on ominaisuus, jolla voit ladata räätälöityä toiminnallisuutta nimellä "Must-Use Plugins" tai lyhyemmin "mu-plugins".
 

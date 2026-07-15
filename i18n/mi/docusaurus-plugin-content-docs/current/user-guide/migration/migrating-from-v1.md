@@ -3,7 +3,7 @@ title: Te whaihi i te V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrating mō V1 {#migrating-from-v1}
+# Migrating mō V1
 
 ## He whakahoki o Ultimate Multisite ihi no whānau 1.x ki te whānau 2.x o whakahoki {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

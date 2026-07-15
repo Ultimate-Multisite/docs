@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dokimantasyon Ultimate Multisite {#ultimate-multisite-documentation}
+# Dokimantasyon Ultimate Multisite
 
 Byenveni nan dokimantasyon Ultimate Multisite la. Ultimate Multisite transfòme WordPress Multisite an yon platfòm Website as a Service (WaaS) konplè.
 
@@ -18,7 +18,7 @@ Tout sa ou bezwen pou mete sou pye, konfigire, epi jere platfòm WaaS ou a. Li k
 
 Referans teknik pou devlopè k ap konstwi sou Ultimate Multisite. Li enkli referans hooks, dokimantasyon REST API, ak gid devlopman addon.
 
-### [Addons](/addons) {#addons}
+### [Modil siplemantè](/addons) {#addons}
 
 Dokimantasyon pou plugins addon peye ki pwolonje Ultimate Multisite ak fonksyonalite adisyonèl tankou entegrasyon WooCommerce, analiz, vann domèn, ak plis ankò.
 

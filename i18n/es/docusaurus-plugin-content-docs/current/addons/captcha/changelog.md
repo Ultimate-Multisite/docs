@@ -3,7 +3,7 @@ title: Registro de cambios de Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Registro de cambios de Captcha {#captcha-changelog}
+# Registro de cambios de Captcha
 
 Versión: 1.5.0 - Publicada el 2026-05-22
 * Nuevo: Limitador de tasa de detención total — cuenta cada GET y POST en superficies protegidas por captcha (wp-login / registro / contraseña perdida / comentarios, WooCommerce my-account / checkout / pay-for-order, checkout / inline-login de Ultimate Multisite) y responde con HTTP 429, un `Retry-After` header y una espera tarpit aleatorizada (1–5 s, con límite estricto de 15 s).

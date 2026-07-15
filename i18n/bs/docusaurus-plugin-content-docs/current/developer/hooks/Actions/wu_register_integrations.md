@@ -4,7 +4,7 @@ title: Akcija - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Akcija: wu_register_integrations {#action-wuregisterintegrations}
+# Akcija: wu_register_integrations
 
 Pokreće se kako bi integracije mogle da se registruju same.
 

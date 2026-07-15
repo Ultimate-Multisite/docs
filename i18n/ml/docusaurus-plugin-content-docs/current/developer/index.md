@@ -3,7 +3,7 @@ title: വികസിത്തாளர் രേഖകൾ
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ഡെവലപ്പർ ഡോക്യുമെന്റേഷൻ {#developer-documentation}
+# ഡെവലപ്പർ ഡോക്യുമെന്റേഷൻ
 
 Ultimate Multisite-മായി സംയോജിപ്പിക്കാനും, വികസിപ്പിക്കാനും, അല്ലെങ്കിൽ അതിനുള്ള ആഡ്-ഓണുകൾ നിർമ്മിക്കാനും ആവശ്യമായ എല്ലാ കാര്യങ്ങളും ഈ ഗൈഡ് ഡെവലപ്പർമാർക്ക് നൽകുന്നു. Ultimate Multisite ഒരു WordPress Multisite network-നെ ഒരു Website-as-a-Service (WaaS) പ്ലാറ്റ്‌ഫോമായി മാറ്റുന്നു.
 

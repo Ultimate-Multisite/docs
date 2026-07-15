@@ -3,7 +3,7 @@ title: د ډشټبورډ په پوهې کول
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard ته فهم {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard ته فهم
 
 پہلے ہم Ultimate Multisite کی مزید جدید ترتیب اور کام کرنے کے طریقوں میں ڈوبنے سے پہلے، آئیے اس ڈیش بورڈ کو دیکھتے ہیں۔
 

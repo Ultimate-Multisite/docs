@@ -3,7 +3,7 @@ title: Fisana ho an'ny Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Fandriana (Isolation) ho an-teny {#multi-tenancy-isolation}
+# Fandriana (Isolation) ho an-teny
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manome fizarana database sy filesystem isaky ny mpanjifa izay mitaky fizarana data lalina kokoa, toerana fitahirizana filesystem manokana, na faritra host hafa. Izany dia miantoka fa mijanona ho misaraka ny data an'ny mpanjifa (tenant) ianao, fa mitazona ny fanomezana rafitra tambajotra (network-level provisioning), ny fandoavam-bola (billing), ary ny fitantanana.
 

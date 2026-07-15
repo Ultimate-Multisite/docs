@@ -4,7 +4,7 @@ title: Filter - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# 필터: wu_rest_update_item {#filter-wurestupdateitem}
+# 필터: wu_rest_update_item
 
 요청을 진행할 수 있는지 여부를 필터링합니다.
 

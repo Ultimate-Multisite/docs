@@ -3,7 +3,7 @@ title: Onborgo de la Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 introducitas una **Theme Builder onboarding flow** gvidita kiu helpas vi krei temon bloko personala dum via va nia inicial konfiguracio. Ĝi estas substituo de la malnova Site Builder modo per alpa pli fleksabla, agenta-asistita alproach.
 

@@ -3,7 +3,7 @@ title: კლოსტის ინტეგრაცია
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# ინტეგრაცია Closte-ის {#closte-integration}
+# ინტეგრაცია Closte-ის
 
 ## მიმოხილვა {#overview}
 Closte არის მართული WordPress ჰოსტინგ პლატფორმა, რომელიც აგებულია Google Cloud-ის ინფრასტრუქტურაზე. ეს ინტეგრაცია უზრუნველყოფს დომეინის ავტომატურ სინქრონიზაციას და SSL სერტიფიკატების მართვას Ultimate Multisite-სა და Closte-ს შორის.

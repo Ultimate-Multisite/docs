@@ -4,7 +4,7 @@ title: Action - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Action: wu_membership_post_cancel {#action-wumembershippostcancel}
+# Action: wu_membership_post_cancel
 
 അംഗത്വം റദ്ദാക്കിയ ശേഷം ഇത് പ്രവർത്തിപ്പിക്കുന്നു (Triggers).
 

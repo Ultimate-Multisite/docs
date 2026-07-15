@@ -3,7 +3,7 @@ title: 'Oppitunti 2: Oman markkinaraon valitseminen'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Oppitunti 2: Oman niche-alueen valitseminen {#lesson-2-picking-your-niche}
+# Oppitunti 2: Oman niche-alueen valitseminen
 
 Oppitunnissa 1 määritimme, miksi niche voittaa geneerisen. Nyt sinun täytyy valita omasi. Tämä oppitunti antaa sinulle viitekehyksen niche-alueen löytämiseen ja validoimiseen ennen kuin investoit aikaa sen rakentamiseen.
 

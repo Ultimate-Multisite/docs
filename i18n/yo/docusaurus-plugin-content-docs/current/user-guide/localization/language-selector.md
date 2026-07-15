@@ -3,7 +3,7 @@ title: Olùyan Èdè
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Ayanfẹ́ Èdè {#language-selector}
+# Ayanfẹ́ Èdè
 
 Àbùdá yìí ni addon **Language Selector** pèsè.
 

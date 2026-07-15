@@ -3,7 +3,7 @@ title: Ude Sites
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ịgba Sites (Sites) {#managing-sites}
+# Ịgba Sites (Sites)
 
 Sites (hoặc subsites) là cốt lõi của kinh doanh WaaS của bạn. Ultimate Multisite có 3 loại site:
 

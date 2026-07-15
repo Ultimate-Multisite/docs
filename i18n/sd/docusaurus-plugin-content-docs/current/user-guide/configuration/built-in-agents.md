@@ -3,7 +3,7 @@ title: اندروني طور شامل ايجنٽس
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# بلٽ-اِن Agents {#built-in-agents}
+# بلٽ-اِن Agents
 
 Gratis AI Agent v1.9.0 پنج بلٽ-اِن agents سان اچي ٿو، هر هڪ کي اوزارن جي مرڪوز سيٽ، ترتيب ڏنل system prompt، ۽ انهي علائقي جي عام ڪمن سان ملندڙ شروعاتي تجويزن سان اڳواٽ ترتيب ڏنو ويو آهي. agents جي وچ ۾ مٽاسٽا ڪرڻ سان assistant ڇا ڪري سگهي ٿو ۽ ڪيئن جواب ڏئي ٿو، اهو بدلجي ٿو — توهان جي طرفان ڪنهن به configuration کان سواءِ. Superdav AI Agent v1.18.0 انهن workflows ۾ schedule-aware اوزار، reminder records، approval gates، ۽ SMS notifications شامل ڪري سگهي ٿو جڏهن لاڳاپيل integrations ترتيب ڏنل هجن.
 

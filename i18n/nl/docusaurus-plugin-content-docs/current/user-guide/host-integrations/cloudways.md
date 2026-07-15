@@ -3,7 +3,7 @@ title: Cloudways-integratie
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways-integratie {#cloudways-integration}
+# Cloudways-integratie
 
 ## Overzicht {#overview}
 Cloudways is een beheerd cloudhostingplatform waarmee je WordPress-sites kunt implementeren bij verschillende cloudproviders zoals DigitalOcean, AWS, Google Cloud en meer. Deze integratie maakt automatische domeinsynchronisatie en beheer van SSL-certificaten mogelijk tussen Ultimate Multisite en Cloudways.

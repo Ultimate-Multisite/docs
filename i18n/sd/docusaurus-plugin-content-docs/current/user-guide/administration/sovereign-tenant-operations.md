@@ -3,7 +3,7 @@ title: ساروقي تنينٽ ايپريشنز
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operations {#sovereign-tenant-operations}
+# Sovereign Tenant Operations
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ سارون تيئن (sovereign tenants) لاءِ ڪم ڪندڙ اوزار شامل ڪيو آهي: اهي سبساائٽس جيڪي پنهنجو پنهنجو ڊيٽا بيس، فائل سسٽم جو رুট، ۽ راؤٽنگ ڪنٽيڪس سان چلون ٿا پر نتيجي ۾ رابطي ڪري سگهجن وڃن.
 

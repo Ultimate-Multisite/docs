@@ -4,7 +4,7 @@ title: Filtr - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Süzgüç: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Süzgüç: wu_magic_links_enabled
 
 Magic linkleriň işledilendigini ýa-da işledilmändigini süzgüçden geçirýär.
 

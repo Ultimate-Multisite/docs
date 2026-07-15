@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# Filter: wu_ai_token_rates {#filter-wuaitokenrates}
+# Filter: wu_ai_token_rates
 
 AI ടോക്കൺ ബില്ലിംഗ് നിരക്കുകൾ ഫിൽട്ടർ ചെയ്യാൻ ഉപയോഗിക്കുന്നു.
 

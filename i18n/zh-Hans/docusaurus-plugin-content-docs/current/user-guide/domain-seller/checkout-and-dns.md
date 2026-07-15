@@ -3,7 +3,7 @@ title: 结账字段和客户 DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout 字段和客户 DNS 管理 {#checkout-field-and-customer-dns-management}
+# Checkout 字段和客户 DNS 管理
 
 ## Domain Selection Checkout 字段 {#the-domain-selection-checkout-field}
 

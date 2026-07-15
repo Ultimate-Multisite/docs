@@ -3,7 +3,7 @@ title: ការស្វែងរក និងជំនួសដោយស្វ
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# ការស្វែងរកដោយស្វ័យប្រវត្តិ និងការជំនួសនៅក្នុង Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# ការស្វែងរកដោយស្វ័យប្រវត្តិ និងការជំនួសនៅក្នុង Site Templates (v2)
 
 _**មគ្គុទ្ទេសក៍នេះទាមទារ WP UItimo version 2.x។**_
 

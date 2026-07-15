@@ -3,7 +3,7 @@ title: Azb-kontrolni anlash
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard'ı Anlamak {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard'ı Anlamak
 
 Ultimate Multisite'ın daha gelişmiş yapılandırma seçeneklerine ve operasyonel yönlerine dalmadan önce, dashboard'a bir göz atalım.
 

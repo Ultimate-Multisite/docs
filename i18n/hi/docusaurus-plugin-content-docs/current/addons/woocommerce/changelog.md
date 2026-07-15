@@ -3,7 +3,7 @@ title: WooCommerce एकीकरण बदलाव लॉग
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce एकीकरण परिवर्तन लॉग {#woocommerce-integration-changelog}
+# WooCommerce एकीकरण परिवर्तन लॉग
 
 संस्करण 2.2.0 - 2026-07-01 को जारी किया गया
 * नया: Ultimate Multisite कर राशियाँ अब चेकआउट पर अलग WooCommerce शुल्क पंक्तियों के रूप में दिखाई देती हैं, जिससे भुगतान से पहले कर कुल अधिक स्पष्ट होते हैं।

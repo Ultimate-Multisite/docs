@@ -3,7 +3,7 @@ title: Dnevnik promjena tiketa za podršku
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dnevnik promjena tiketa podrške {#support-tickets-changelog}
+# Dnevnik promjena tiketa podrške
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Poboljšano: Uklonjen direktorij vendor/ iz Git praćenja (već obuhvaćeno s .gitignore), čime je smanjena veličina repozitorija

@@ -3,7 +3,7 @@ title: AffiliateWP تبديلين جو لاگ
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP تبديلي نامو {#affiliatewp-changelog}
+# AffiliateWP تبديلي نامو
 
 نسخو: 2.0.1 - 2025-09-28 تي جاري ڪيو ويو
 

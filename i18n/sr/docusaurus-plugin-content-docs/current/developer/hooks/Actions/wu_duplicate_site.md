@@ -4,7 +4,7 @@ title: Радња - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Акција: wu_duplicate_site {#action-wuduplicatesite}
+# Акција: wu_duplicate_site
 
 Омогућава програмерима да се закаче након што се деси дуплирање сајта.
 

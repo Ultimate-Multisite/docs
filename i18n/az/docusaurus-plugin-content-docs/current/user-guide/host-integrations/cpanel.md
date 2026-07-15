@@ -3,7 +3,7 @@ title: cPanel İntegrasiyası
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel İntegrasiyası {#cpanel-integration}
+# cPanel İntegrasiyası
 
 ## Ümumi Baxış {#overview}
 cPanel, bir çox shared və dedicated hosting provayerdləri tərəfindən istifadə edilən ən populyar veb hosting idarəetmə panellərindən biridir. Bu inteqrasiya Ultimate Multisite ilə cPanel arasında avtomatik domen sinxronizasiyası təmin edir, bu da sizə domen aliaslarını və alt domenləri cPanel hesabınıza avtomatik əlavə etməyə imkan verir.

@@ -3,7 +3,7 @@ title: Reģistrācijas veidlapas pielāgošana
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Reģistrācijas veidlapas pielāgošana {#customizing-your-registration-form}
+# Reģistrācijas veidlapas pielāgošana
 
 Lai jūsu tīkls izskatītos unikāls salīdzinājumā ar visiem pārējiem SaaS, kas veidoti uz WordPress platformas, Ultimate Multisite ļauj pielāgot reģistrācijas un pieteikšanās lapas ar mūsu **Checkout Forms** funkciju.
 

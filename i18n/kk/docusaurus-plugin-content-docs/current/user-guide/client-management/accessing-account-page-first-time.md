@@ -3,7 +3,7 @@ title: Аккаунт парақшасына қол жеткізу
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Мені есептік парақшама бірінші рет қалай кіруге болады? {#how-can-i-access-my-account-page-for-the-first-time}
+# Мені есептік парақшама бірінші рет қалай кіруге болады?
 
 Ultimate Multisite-қа қош келдіңіз!
 

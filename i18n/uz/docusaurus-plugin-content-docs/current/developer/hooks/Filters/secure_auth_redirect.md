@@ -4,7 +4,7 @@ title: Filtr - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtr: secure_auth_redirect {#filter-secureauthredirect}
+# Filtr: secure_auth_redirect
 
 Xavfsiz autentifikatsiya yo‘naltirishidan foydalanish yoki foydalanmaslikni filtrlaydi.
 

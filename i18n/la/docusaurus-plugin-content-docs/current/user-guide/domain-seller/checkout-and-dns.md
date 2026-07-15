@@ -3,7 +3,7 @@ title: Campo de pago y DNS del cliente
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Campo de Pago y Gestión DNS del Cliente {#checkout-field-and-customer-dns-management}
+# Campo de Pago y Gestión DNS del Cliente
 
 ## El campo de selección de dominio en el checkout {#the-domain-selection-checkout-field}
 

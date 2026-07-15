@@ -3,7 +3,7 @@ title: WooCommerce بیرلشدیرمه دَییشیکلیک‌لر قایدی
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce بیرلشدیرمه‌سی ده‌ییشیکلیک گونده‌لیگی {#woocommerce-integration-changelog}
+# WooCommerce بیرلشدیرمه‌سی ده‌ییشیکلیک گونده‌لیگی
 
 نسخه 2.2.0 - 2026-07-01 تاریخینده آزاد ائدیلدی
 * یئنی: Ultimate Multisite وئرگی میقدارلاری ایندی اؤده‌مه‌دن قاباق جمع وئرگی‌لری داها آیدین ائتمک اوچون، checkout-دا آیری WooCommerce خَرج سطیرلری کیمی گؤرونور.

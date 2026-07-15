@@ -3,7 +3,7 @@ title: চাহিদা
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite-ৰ প্ৰয়োজনীয়তা {#ultimate-multisite-requirements}
+# Ultimate Multisite-ৰ প্ৰয়োজনীয়তা
 
 Ultimate Multisite কিনি ল'বৰ আগতে আপুনি নিজকে প্ৰশ্ন কৰিব পাৰে যে এই plugin টো চলিবলৈ কি কি প্ৰয়োজনীয়তা আছে। ভাল খবৰ হ'ল যে Ultimate Multisite চলোৱাৰ বাবে কেৱল কিছুমান মৌলিক প্ৰয়োজনীয়তা আছে: এটা **domain name**, এটা ভাল **hosting provider**, আৰু এটা WordPress **Multisite** installation। ইমানহে লাগে!
 

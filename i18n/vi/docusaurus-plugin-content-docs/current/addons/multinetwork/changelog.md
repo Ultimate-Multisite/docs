@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Đa mạng
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Nhật ký thay đổi Multi-Network {#multi-network-changelog}
+# Nhật ký thay đổi Multi-Network
 
 ### 1.3.0 {#130}
 * Mới: Trình xem trước mẫu mạng (Network template previewer) — cho phép duyệt và xem trước các mẫu mạng bằng bảng điều khiển trực tiếp trước khi mua.

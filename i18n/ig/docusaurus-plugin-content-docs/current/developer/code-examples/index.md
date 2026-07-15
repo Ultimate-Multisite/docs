@@ -3,7 +3,7 @@ title: Ihe Atụ Koodu Dị Elu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ihe Nlereanya Code Dị Elu {#advanced-code-examples}
+# Ihe Nlereanya Code Dị Elu
 
 Ihe nlereanya ndị a na-egosi ụkpụrụ njikọta dị elu na Ultimate Multisite.
 

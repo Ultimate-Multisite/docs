@@ -3,7 +3,7 @@ title: Keterampilan Estetika Sistem Desain
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Keterampilan Estetika Design System {#design-system-aesthetics-skill}
+# Keterampilan Estetika Design System
 
 **Keterampilan Estetika Design System** nya teh cara pandang yang dipandu pikeun ngarapi tampilan visual situs anjeun. Ieu ngabantosan anjeun mutuskeun hal-hal konsisten ngeunaan tipografi, warna, jarak (spacing), jeung token gerak (motion tokens) anu ngawangun design system anjeun.
 

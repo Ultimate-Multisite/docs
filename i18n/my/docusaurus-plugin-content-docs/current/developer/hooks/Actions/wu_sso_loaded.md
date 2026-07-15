@@ -4,7 +4,7 @@ title: Action - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded {#action-wussoloaded}
+# Action: wu_sso_loaded
 
 လိုအပ်ပါက plugin developer များအနေဖြင့် အပိုဆောင်း hook များကို ထည့်သွင်းနိုင်စေရန်။
 

@@ -3,7 +3,7 @@ title: Rujukan Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Rujukan Hooks {#hooks-reference}
+# Rujukan Hooks
 
 Dokumentasi yang dijana secara automatik untuk semua **59 tindakan** dan **118 penapis** dalam Ultimate Multisite.
 

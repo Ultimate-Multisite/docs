@@ -3,7 +3,7 @@ title: Pembaruan Log Sinkronisasi Kandungan
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Log Perubahan Content Sync {#content-sync-changelog}
+# Log Perubahan Content Sync
 
 ### Versi 1.1.0 - Dikeluarkan pada 2025-12-31 {#version-110---released-on-2025-12-31}
 * Baru: Sokongan untuk menyegerakkan semua jenis pos (posts, pages, custom post types)

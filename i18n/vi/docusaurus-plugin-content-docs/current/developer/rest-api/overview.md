@@ -3,7 +3,7 @@ title: Tổng quan REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tài liệu tham khảo REST API {#rest-api-reference}
+# Tài liệu tham khảo REST API
 
 ## Cấu hình cơ sở {#base-configuration}
 

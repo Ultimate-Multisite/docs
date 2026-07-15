@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Log ng Pagbabago ng GoCardless {#gocardless-changelog}
+# Log ng Pagbabago ng GoCardless
 
 Version: 1.0.3 - Inilabas noong 2026-05-05
 * Inayos: Kapag kinansela ang membership ng GoCardless habang nasa *pending* o *on-hold* state, nililinis na ngayon ang mga *orphaned* (walang-ari) na *pending sites*.

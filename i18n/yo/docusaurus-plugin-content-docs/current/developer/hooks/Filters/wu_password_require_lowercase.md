@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Àlẹmọ: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Àlẹmọ: wu_password_require_lowercase
 
 Ṣe àlẹmọ bóyá kí a béèrè fún àwọn lẹ́tà kékeré nínú àwọn ọrọ igbaniwọle.
 

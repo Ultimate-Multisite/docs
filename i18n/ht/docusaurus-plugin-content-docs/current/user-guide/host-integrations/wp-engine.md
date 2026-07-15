@@ -3,7 +3,7 @@ title: Entegrasyon WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Entegrasyon ak WP Engine {#wp-engine-integration}
+# Entegrasyon ak WP Engine
 
 ## Aperçu {#overview}
 WP Engine se yon platfòm wè WordPress ki gen kalite (premium managed hosting) ki bay pèfòmans optimize, sekirite, epi kapasite pou grandi pou sit WordPress ou. Entegrasyon sa a pèmèt senkronizasyon nan domèn otomatik ant Ultimate Multisite ak WP Engine.

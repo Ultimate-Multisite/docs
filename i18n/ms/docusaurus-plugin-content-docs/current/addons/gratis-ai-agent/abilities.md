@@ -3,7 +3,7 @@ title: Rujukan Keupayaan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Rujukan Keupayaan {#abilities-reference}
+# Rujukan Keupayaan
 
 Keupayaan ialah tindakan atomik yang boleh dipanggil oleh Gratis AI Agent pada pemasangan WordPress anda. Setiap keupayaan ialah kelas PHP berdaftar yang mendedahkan skema JSON — agent membaca skema ini pada masa jalanan untuk memahami parameter yang diperlukan dan apa yang dipulangkan oleh keupayaan tersebut.
 

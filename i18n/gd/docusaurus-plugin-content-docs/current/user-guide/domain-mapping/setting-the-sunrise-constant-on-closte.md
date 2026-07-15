@@ -3,7 +3,7 @@ title: A' chlàradh an Constant Sunrise ar Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-a 'Sunrise' constant a 'true' ar Closte-a {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-a 'Sunrise' constant a 'true' ar Closte-a
 
 Tha stiùrchean (host providers) gu neachd a' chuidh an wp-config.php airson sealladh. Tha seo a' tòiseachadh gun Ultimate Multisite e na stiùrchean a' leicid a' sgaidh airson sealladh, mar a tha e a' leicid a' fhaighinn daoine a' chàrach agus beagail eile a' sgaidh. Closte is am sin.
 

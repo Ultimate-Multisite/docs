@@ -3,7 +3,7 @@ title: டெவலப்பர் ஆவணங்கள்
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# டெவலப்பர் ஆவணங்கள் {#developer-documentation}
+# டெவலப்பர் ஆவணங்கள்
 
 Ultimate Multisite உடன் ஒருங்கிணைக்கவும், நீட்டிக்கவும் அல்லது அதற்கான Addons-களை உருவாக்கவும் தேவையான அனைத்தையும் இந்த வழிகாட்டி டெவலப்பர்களுக்கு வழங்குகிறது. Ultimate Multisite என்பது ஒரு WordPress Multisite network-ஐ Website-as-a-Service (WaaS) தளமாக மாற்றி அமைக்கிறது.
 

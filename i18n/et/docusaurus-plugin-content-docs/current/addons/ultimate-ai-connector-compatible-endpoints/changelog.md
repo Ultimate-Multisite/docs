@@ -3,7 +3,7 @@ title: Ülim AI-ühendaja ühilduvate lõpp-punktide muudatuste logi
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector ühilduvate lõpp-punktide muudatuste logi {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector ühilduvate lõpp-punktide muudatuste logi
 
 ## Versioon 2.0.0 — avaldatud 2026-04-24 {#version-200--released-on-2026-04-24}
 

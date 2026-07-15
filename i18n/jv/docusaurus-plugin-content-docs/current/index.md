@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dokumentasi Ultimate Multisite {#ultimate-multisite-documentation}
+# Dokumentasi Ultimate Multisite
 
 Sugeng rawuh ing dokumentasi Ultimate Multisite. Ultimate Multisite ngowahi WordPress Multisite dadi platform Website as a Service (WaaS) lengkap.
 
@@ -18,7 +18,7 @@ Kabeh sing sampeyan butuhake kanggo nyetel, ngonfigurasi, lan ngatur platform Wa
 
 Referensi teknis kanggo developer sing mbangun ing Ultimate Multisite. Kalebu referensi hooks, dokumentasi REST API, lan pandhuan pangembangan addon.
 
-### [Addons](/addons) {#addons}
+### [Tambahan](/addons) {#addons}
 
 Dokumentasi kanggo plugin addon mbayar sing nggedhekake Ultimate Multisite nganggo fitur tambahan kaya integrasi WooCommerce, analytics, dodolan domain, lan liya-liyane.
 

@@ -3,7 +3,7 @@ title: Ịwụnye Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ntinye nke Ultimate Multisite {#installing-ultimate-multisite}
+# Ntinye nke Ultimate Multisite
 
 :::note
 Ntụziaka a na-ekwu na ị enyela WordPress Multisite ma mee ya ka ọ rụọ ọrụ. Ka ị mụta otú e si eme ya, lelee [ntụziaka a](https://www.wpbeginner.com/glossary/multisite/) nke WP Beginner.

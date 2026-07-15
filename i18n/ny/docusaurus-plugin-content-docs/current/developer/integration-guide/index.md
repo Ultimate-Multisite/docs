@@ -3,7 +3,7 @@ title: Kalozera wa Kuphatikiza
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Kalozera wa Kuphatikiza {#integration-guide}
+# Kalozera wa Kuphatikiza
 
 Kalozerayu akufotokoza njira zofala zophatikizira ndi Ultimate Multisite, kuphatikizapo kulumikiza ku mautumiki akunja, kupanga ma payment gateway anu, ndi kusamalira ma webhook.
 

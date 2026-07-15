@@ -3,7 +3,7 @@ title: 'Lekcija 6: Iskustvo registracije'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcija 6: Iskustvo prijave {#lesson-6-the-signup-experience}
+# Lekcija 6: Iskustvo prijave
 
 Checkout tok je mjesto gdje interes postaje prihod. Zbunjujući ili generički proces prijave gubi klijente. Niche-specifičan tok koji govori njihovim jezikom i koji se čini nezahtjevan konvertira ih.
 

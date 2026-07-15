@@ -3,7 +3,7 @@ title: WP-CLI 参考
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI 参考手册 {#wp-cli-reference}
+# WP-CLI 参考手册
 
 Gratis AI Agent 提供了一个 `wp gratis-ai-agent` 命令家族，用于从命令行执行代理（agent）基准测试、管理能力（abilities）和查询代理状态。所有命令都需要 WP-CLI 2.0 或更高版本。
 

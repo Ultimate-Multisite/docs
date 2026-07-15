@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# کردار: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# کردار: wp_ultimo_captcha_deactivation
 
 ڕێگە بدە بە بەشەکانی تری plugin کە ڕووتینەکانیان بۆ ناچالاککردن پەیوەست بکەن
 

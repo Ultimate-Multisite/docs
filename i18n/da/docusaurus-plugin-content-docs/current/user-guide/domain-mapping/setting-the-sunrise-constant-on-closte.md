@@ -3,7 +3,7 @@ title: Indstilling af Sunrise Constant på Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Indstilling af konstanten Sunrise til sand på Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Indstilling af konstanten Sunrise til sand på Closte
 
 Nogle hostingudbydere låser wp-config.php for sikkerhedens skyld. Det betyder, at Ultimate Multisite ikke automatisk kan redigere filen for at inkludere de nødvendige konstanter til at få domænemapping og andre funktioner til at virke. Closte er en sådan udbyder.
 

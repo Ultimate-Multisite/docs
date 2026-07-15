@@ -4,7 +4,7 @@ title: مرشح - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# المرشح: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# المرشح: wu_stripe_existing_plan_id
 
 يُرشح معرّف الخطة للتحقق منها. إذا كان موجودًا، ستستخدم الاشتراك الجديد هذه الخطة.
 

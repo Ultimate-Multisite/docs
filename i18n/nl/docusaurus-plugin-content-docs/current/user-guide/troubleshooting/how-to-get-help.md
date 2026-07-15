@@ -3,7 +3,7 @@ title: Hoe hulp te krijgen
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Hoe hulp te krijgen {#how-to-get-help}
+# Hoe hulp te krijgen
 
 Je hebt je geldige Licentiesleutel, en daarmee is toegang tot ons team beschikbaar om je te helpen bij het oplossen van problemen die je kunt tegenkomen tijdens het opzetten van Ultimate Multisite.
 

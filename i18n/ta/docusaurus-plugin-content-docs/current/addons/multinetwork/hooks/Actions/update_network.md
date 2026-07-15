@@ -4,7 +4,7 @@ title: செயல் - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network {#action-updatenetwork}
+# Action: update_network
 
 ஏற்கனவே உள்ள ஒரு நெட்வொர்க் (network) புதுப்பிக்கப்பட்ட பிறகு இது இயங்கும்.
 

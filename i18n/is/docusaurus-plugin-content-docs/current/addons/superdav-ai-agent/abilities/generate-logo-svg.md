@@ -3,7 +3,7 @@ title: Búa til SVG-lógó
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Búa til Logo SVG {#generate-logo-svg}
+# Búa til Logo SVG
 
 Getan **Generate Logo SVG** gerir Theme Builder kleift að búa til og fella sérsniðin logo SVG beint inn á WordPress vefinn þinn með sjálfvirkri hreinsun sem er örugg gagnvart nafnrýmum.
 

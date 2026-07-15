@@ -3,7 +3,7 @@ title: Mwongozo wa Ujumuishaji
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Mwongozo wa Uunganishaji {#integration-guide}
+# Mwongozo wa Uunganishaji
 
 Mwongozo huu unashughulikia mifumo ya kawaida ya uunganishaji na Ultimate Multisite, ikijumuisha kuunganisha na huduma za nje, kujenga payment gateways maalum, na kushughulikia webhooks.
 

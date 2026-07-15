@@ -3,7 +3,7 @@ title: Dokumentacja ustawień
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Dokumentacja ustawień {#settings-reference}
+# Dokumentacja ustawień
 
 Ta strona śledzi ustawienia, które wpływają na codzienną administrację oraz ostatnie zmiany zachowania w Ultimate Multisite.
 

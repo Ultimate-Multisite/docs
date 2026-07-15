@@ -3,7 +3,7 @@ title: Översikt över instrumentpanelen
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Översikt över kontrollpanelen {#dashboard-overview}
+# Översikt över kontrollpanelen
 
 Ultimate Multisite har en dedikerad **kontrollpanel** under Ultimate Multisite-menyn och lägger även till widgetar i nätverkets kontrollpanel. Den här artikeln går igenom vad du hittar på båda ställena.
 

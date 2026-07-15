@@ -3,7 +3,7 @@ title: Feedback și Raportare a Problemelor
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback de la Clienți și Raportarea Incidentelor {#customer-feedback--issue-reporting}
+# Feedback de la Clienți și Raportarea Incidentelor
 
 Gratis AI Agent v1.5.0 introduce un sistem nativ de feedback și raportare a incidentelor care permite utilizatorilor finali să semnaleze răspunsuri inutile și să raporteze probleme direct din interfața de chat. Acest sistem include gestionarea consimțământului, o comandă automatizată de raportare și o triaj asistat de AI în backend.
 

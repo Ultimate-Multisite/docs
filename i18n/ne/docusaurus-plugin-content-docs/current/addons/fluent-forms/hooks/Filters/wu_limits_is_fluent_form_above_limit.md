@@ -4,7 +4,7 @@ title: फिल्टर - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# फिल्टर: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# फिल्टर: wu_limits_is_fluent_form_above_limit
 
 दिइएको फारम प्रकार यो plan मा अनुमति छ कि छैन जाँच गर्छ। plugin developers लाई फर्काइने मान फिल्टर गर्न अनुमति दिन्छ
 

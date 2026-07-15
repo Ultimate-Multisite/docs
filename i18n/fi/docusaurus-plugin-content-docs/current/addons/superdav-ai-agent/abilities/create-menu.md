@@ -3,7 +3,7 @@ title: Luo valikko
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Luo valikko {#create-menu}
+# Luo valikko
 
 **Luo valikko** -ominaisuus luo WordPress-navigointivalikoita ja tukee erillisiä navigointitekstejä, jotka eroavat sivujen otsikoista.
 

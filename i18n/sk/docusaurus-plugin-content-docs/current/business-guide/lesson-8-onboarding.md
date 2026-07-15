@@ -3,7 +3,7 @@ title: 'Lekcia 8: Zaškolenie zákazníkov'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lekcia 8: Onboarding zákazníkov {#lesson-8-customer-onboarding}
+# Lekcia 8: Onboarding zákazníkov
 
 Získať zákazníka, aby sa zaregistroval, je len polovica práce. Ak sa prihlási, cíti sa zahltený a už sa nikdy nevráti, stratili ste ho. Táto lekcia navrhuje skúsenosť, ktorá premení novú registráciu na aktívneho, zapojeného zákazníka.
 

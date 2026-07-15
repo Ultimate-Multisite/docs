@@ -3,7 +3,7 @@ title: Còmhlaidachd WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration WPMU DEV {#wpmu-dev-integration}
+# Integration WPMU DEV
 
 ## Aims (Overview) {#overview}
 WPMU DEV is platform a WordPress le fada a tha oferf hosting, plugin, agus seòl airson sitean WordPress. Tha an sin eadar-dhealaidh a' bheachd a' ginealach a' chàrach agus a' sgrùdadh certfeid SSL air a' chàrach (SSL certificate management) buntainneach air a' chàrach Ultimate Multisite agus hosting WPMU DEV.

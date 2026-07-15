@@ -3,7 +3,7 @@ title: Aboneliyi Necə Ləğv Etmək
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Abunəliyimi necə ləğv edə bilərəm? {#how-can-i-cancel-my-subscription}
+# Abunəliyimi necə ləğv edə bilərəm?
 
 Əgər Ultimate Multisite lisenziyanız varsa, onun yenilənməsini istədiyiniz vaxt ləğv edə bilərsiniz. Sadəcə aşağıdakı addımları izləyin:
 

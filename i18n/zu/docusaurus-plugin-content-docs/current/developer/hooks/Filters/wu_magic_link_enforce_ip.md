@@ -4,7 +4,7 @@ title: Isihlungi - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Isihlungi: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# Isihlungi: wu_magic_link_enforce_ip
 
 Hlunga ukuthi kuqiniswe yini ukuqinisekiswa kwekheli le-IP.
 

@@ -3,7 +3,7 @@ title: Internet Qidiruvi
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Qidiruvi {#internet-search}
+# Internet Qidiruvi
 
 Gratis AI Agent v1.5.0 ning yangi funksiyasi bo'lgan **Internet Qidiruvi** (Internet Search) qo'shildi. Bu orqali sun'iy yordamchi suhbat davomida veb-saytlardan eng yangi ma'lumotlarni olish imkonini beradi. Bu [Brave Search API](https://brave.com/search/api/) yoki [Tavily API](https://tavily.com) orqali ishlaydi.
 

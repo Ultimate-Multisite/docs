@@ -3,7 +3,7 @@ title: Nhoroondo yeshanduko yeUltimate AI Connector yeEndpoints Dzinoenderana
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector yeCompatible Endpoints Nhoroondo yeshanduko {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector yeCompatible Endpoints Nhoroondo yeshanduko
 
 ## Shanduro 2.0.0 — Yakaburitswa musi wa2026-04-24 {#version-200--released-on-2026-04-24}
 

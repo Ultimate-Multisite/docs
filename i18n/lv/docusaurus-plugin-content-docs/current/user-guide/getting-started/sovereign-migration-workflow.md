@@ -3,7 +3,7 @@ title: Sovereīno migrācijas veidrojums
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign migrācijas veidota darbības sekva {#sovereign-migration-workflow}
+# Sovereign migrācijas veidota darbības sekva
 
 Ultimate Multisite 1.2.0 dod migrācijas apstiprinājuma vārti (verification gates) pārejam standartsubsaites infrastruktūrā, kas ir sovereigņa īpašniecības sistēmā.
 

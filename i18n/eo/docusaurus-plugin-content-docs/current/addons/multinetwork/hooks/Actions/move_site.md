@@ -4,7 +4,7 @@ title: Ago - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Ago: move_site {#action-movesite}
+# Ago: move_site
 
 Ekfunkcias post kiam retejo estis movita al nova reto.
 

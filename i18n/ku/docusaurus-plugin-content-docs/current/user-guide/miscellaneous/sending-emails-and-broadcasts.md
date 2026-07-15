@@ -3,7 +3,7 @@ title: Şandina E-nameyan û Weşanên Giştî
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Şandina E-nameyan û Weşanên Giştî (v2) {#sending-emails-and-broadcasts-v2}
+# Şandina E-nameyan û Weşanên Giştî (v2)
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x e.**_
 

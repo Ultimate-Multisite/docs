@@ -4,7 +4,7 @@ title: Гамәл - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Гамәл: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Гамәл: wu_page_enqueue_scripts
 
 Кирәк булганда скриптларны һәм стильләрне чиратка кую өчен монда махсус гамәл өстәлә\ һәм аларның бары тик тиешле битләрдә генә йөкләнүен тәэмин итә
 

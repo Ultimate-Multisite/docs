@@ -3,7 +3,7 @@ title: د دودیز راجسترار ادغام جوړول
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# د دودیز راجسترار ادغام جوړول {#building-a-custom-registrar-integration}
+# د دودیز راجسترار ادغام جوړول
 
 د ډومېن پلورونکي اضافي برخه د **ادغام ثبت‌لړ** بڼه کاروي. هر راجسترار د PHP یو کلاس دی چې `Domain_Selling_Capability` پلي کوي او ځان د `wu_domain_seller_register_capabilities` د عمل hook له لارې ثبتوي.
 

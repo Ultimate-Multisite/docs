@@ -3,7 +3,7 @@ title: ການສ້າງລະຫັດສ່ວນຫຼຸດ
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ການສ້າງລະຫັດສ່ວນຫຼຸດ (v2) {#creating-discount-codes-v2}
+# ການສ້າງລະຫັດສ່ວນຫຼຸດ (v2)
 
 _**ຂໍ້ຄວນຈື່: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite ເພື່ອໃຊ້ໃນເວີຊັນ 2.x.**_
 

@@ -3,7 +3,7 @@ title: 'Mësimi 13: Shkallëzimi'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Mësimi 13: Rritja në shkallë {#lesson-13-scaling-up}
+# Mësimi 13: Rritja në shkallë
 
 Ke një platformë funksionale me klientë që paguajnë. Ky mësim mbulon si të rritesh nga një operacion i vogël në një biznes të qëndrueshëm -- duke zgjeruar infrastrukturën, automatizuar operacionet dhe rritur të ardhurat për klient.
 

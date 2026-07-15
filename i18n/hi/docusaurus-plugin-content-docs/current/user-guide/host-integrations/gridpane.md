@@ -3,7 +3,7 @@ title: GridPane इंटीग्रेशन
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integration {#gridpane-integration}
+# GridPane Integration
 
 ## अवलोकन {#overview}
 GridPane एक विशेष WordPress hosting control panel है जो पेशेवर WordPress डेवलपर्स के लिए बनाया गया है। यह integration Ultimate Multisite और GridPane के बीच automatic domain syncing और SSL certificate management को सक्षम करता है।

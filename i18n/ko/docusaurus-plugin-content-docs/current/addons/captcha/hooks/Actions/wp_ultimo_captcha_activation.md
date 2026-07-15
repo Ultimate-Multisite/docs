@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# 액션: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# 액션: wp_ultimo_captcha_activation
 
 플러그인의 다른 부분이 활성화 루틴을 연결하도록 허용합니다.
 

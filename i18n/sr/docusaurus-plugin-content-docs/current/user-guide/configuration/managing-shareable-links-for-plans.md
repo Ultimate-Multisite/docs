@@ -3,7 +3,7 @@ title: Upravljanje deljivim linkovima za planove
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Upravljanje linkovima za deljenje planova {#managing-shareable-links-for-plans}
+# Upravljanje linkovima za deljenje planova
 
 Ultimate Multisite vam nudi opciju da direktno delite linkove planova sa svojim klijentima. Da biste to uradili, idite na bilo koju stranicu uređivanja vašeg plana i kliknite dugme _Click to copy the Shareable Link_ (Kliknite za kopiranje linka za deljenje).
 

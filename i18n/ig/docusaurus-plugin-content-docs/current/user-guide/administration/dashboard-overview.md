@@ -3,7 +3,7 @@ title: Nkwado Nkwado
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Overwàda Dashboard Overview {#dashboard-overview}
+# Overwàda Dashboard Overview
 
 Ultimate Multisite na ọkụ **Dashboard** nwere ike ịrụ ọrụ n'ime menyu Ultimate Multisite, ma ọ bụrụ na ị chọrọ widget ndị dị n'ime Network Dashboard ahụ, ị nwere ike ịchukwu (add) widget-ahụ. Atụkọ a na-eji ịgbagba ihe ị ga ịhụ n'ebe obere ahụ.
 

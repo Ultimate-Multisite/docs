@@ -4,7 +4,7 @@ title: فلټر - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# فلټر: secure_logged_in_cookie {#filter-secureloggedincookie}
+# فلټر: secure_logged_in_cookie
 
 فلټر کوي چې ایا د ننوتلي کارن کوکي باید یوازې د HTTPS له لارې واستول شي.
 

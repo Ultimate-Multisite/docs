@@ -3,7 +3,7 @@ title: Ülke Listesi
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite ülkesi listesini yeniden düzenleme {#re-ordering-the-ultimate-multisite-country-list}
+# Ultimate Multisite ülkesi listesini yeniden düzenleme
 
 Ülke seçimi için kullanılan açılır menü, ülke isimlerinin İngilizce versiyonlarına göre alfabetik olarak sıralanır. Bu durum, bazen şirketinizin veya müşterilerinizin çoğunluğunun bulunduğu ana ülkenin, çok uzun bir ülke listesinin ortasında kalmasına neden olabilir.
 

@@ -3,7 +3,7 @@ title: ພາບລວມ REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# ອ້າງອີງ REST API {#rest-api-reference}
+# ອ້າງອີງ REST API
 
 ## ການກຳນົດຄ່າພື້ນຖານ {#base-configuration}
 

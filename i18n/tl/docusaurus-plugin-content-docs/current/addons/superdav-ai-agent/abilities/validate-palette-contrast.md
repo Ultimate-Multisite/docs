@@ -3,7 +3,7 @@ title: Patunayan ang Kontrast ng Paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# I-validate ang Contrast ng Palette {#validate-palette-contrast}
+# I-validate ang Contrast ng Palette
 
 Sinusuri ng kakayahang **Validate Palette Contrast** ang mga pares ng kulay sa iyong design palette para sa pagsunod sa WCAG (Web Content Accessibility Guidelines) bago ilapat ang mga ito sa iyong theme.
 

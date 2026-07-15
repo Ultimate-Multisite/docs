@@ -3,7 +3,7 @@ title: Izila Ndu-Ndu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolation Multi-Tenancy {#multi-tenancy-isolation}
+# Isolation Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ndụzi (version) support database na filesystem isolation ọ bụla maka tenants ndị nwere sovereign. A na-agbanwe data tenant dị n'ebe dị n'ọchị, onaghị agbanwe provisioning network, billing, na administration.
 

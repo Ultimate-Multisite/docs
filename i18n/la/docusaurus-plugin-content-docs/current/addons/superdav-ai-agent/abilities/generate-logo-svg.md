@@ -3,7 +3,7 @@ title: Genera logotypum SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generare Insigne SVG {#generate-logo-svg}
+# Generare Insigne SVG
 
 Facultas **Generare Insigne SVG** sinit Theme Builder creare et inserere insignia SVG propria directe in situm tuum WordPress cum purgatione automatica spatiis nominum tuta.
 

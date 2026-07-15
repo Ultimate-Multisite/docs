@@ -3,7 +3,7 @@ title: Domain Mapping 구성 방법
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# 도메인 매핑 구성 방법(v2) {#how-to-configure-domain-mapping-v2}
+# 도메인 매핑 구성 방법(v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 기준으로 합니다.**_
 

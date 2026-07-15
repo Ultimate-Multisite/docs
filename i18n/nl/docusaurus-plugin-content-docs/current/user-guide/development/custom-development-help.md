@@ -3,7 +3,7 @@ title: Hulp bij maatwerkontwikkeling
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hoe krijg je hulp bij maatwerkontwikkeling van Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Hoe krijg je hulp bij maatwerkontwikkeling van Codeable?
 
 Soms hebben we echt geweldige aanpassingen nodig om ons netwerk precies te laten verlopen zoals we dat willen. Als dat is waar je naar op zoek bent, raden we [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) aan, een plek waar je ervaren ontwikkelaars met Ultimate Multisite-expertise kunt vinden.
 

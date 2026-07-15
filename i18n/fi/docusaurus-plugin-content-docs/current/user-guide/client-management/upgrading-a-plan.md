@@ -3,7 +3,7 @@ title: Suunnitelman päivittäminen
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Suunnitelman päivittäminen (v2) {#upgrading-a-plan-v2}
+# Suunnitelman päivittäminen (v2)
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 

@@ -4,7 +4,7 @@ title: 'Filter - wu_get_pricing_table_lines_{$this->id}'
 sidebar_label: 'wu_get_pricing_table_lines_{$this->id}'
 _i18n_hash: 3b494479aaa9d638a7bd1824c1ec0daf
 ---
-# 过滤器: wu_get_pricing_table_lines_{$this->id} {#filter-wugetpricingtablelinesthis-id}
+# 过滤器: wu_get_pricing_table_lines_{$this->id}
 
 返回行，支持过滤
 

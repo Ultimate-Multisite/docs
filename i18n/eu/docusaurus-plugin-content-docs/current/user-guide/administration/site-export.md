@@ -3,7 +3,7 @@ title: Site Exporta
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Saila Exportazioa {#site-export}
+# Saila Exportazioa
 
 Ez dago **Site Export** administrazio lapen, zeinetarri administurietara eskuratu da site bat edo bulego guztia download egin dezaket migrazioa, backup edo hand-off (transferentzia) eragiketa duten arkibio bat.
 

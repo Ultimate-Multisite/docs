@@ -3,7 +3,7 @@ title: CyberPanel Birlashmasi
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 این راهنما توضیح می‌دهد که Ultimate Multisite CyberPanel integration را چگونه تنظیم کنید تا دامنه‌های نگاشت شده در شبکه شما به صورت خودکار (و با حذف) به عنوان هاست‌های مجازی در CyberPanel اضافه و حذف شوند، همچنین امکان دریافت گواهی SSL خودکار از طریق Let's Encrypt وجود دارد.
 

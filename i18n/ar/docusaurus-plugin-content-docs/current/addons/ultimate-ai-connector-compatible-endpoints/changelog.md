@@ -3,7 +3,7 @@ title: سجل التغييرات لموصل الذكاء الاصطناعي ال
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# سجل التغييرات لـ Ultimate AI Connector لنقاط النهاية المتوافقة {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# سجل التغييرات لـ Ultimate AI Connector لنقاط النهاية المتوافقة
 
 ## الإصدار 2.0.0 — صدر في 2026-04-24 {#version-200--released-on-2026-04-24}
 

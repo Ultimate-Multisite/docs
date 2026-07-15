@@ -3,7 +3,7 @@ title: 'Oppitunti 9: Kannattava hinnoittelu'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Oppitunti 9: Hinnoittelu voittoa varten {#lesson-9-pricing-for-profit}
+# Oppitunti 9: Hinnoittelu voittoa varten
 
 Oppitunnilla 5 asetimme FitSite-paketeille alkuhinnat. Nyt hiomme hinnoittelustrategiaa tekniikoilla, jotka kasvattavat liikevaihtoa, kannustavat päivittämään laajempaan pakettiin ja vähentävät asiakaspoistumaa.
 

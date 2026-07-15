@@ -4,7 +4,7 @@ title: פעולה - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# פעולה: auth_redirect {#action-authredirect}
+# פעולה: auth_redirect
 
 מופעל לפני ההפניה לאימות.
 

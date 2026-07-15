@@ -3,7 +3,7 @@ title: Webhook-ҳо
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Навруишӣ ба Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Навруишӣ ба Webhooks (v2)
 
 _**ЭТО АГАР: Диққат доред, ки ин хусусият ё мақола барои корбарони пешрафта аст.**_
 

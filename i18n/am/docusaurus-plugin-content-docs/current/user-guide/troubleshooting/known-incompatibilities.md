@@ -3,7 +3,7 @@ title: የሚታወቁ አለመጣጣሞች
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# ከሌሎች ፕልጊኖች ጋር የሚታወቁ አለመጣጣሞች {#known-incompatibilities-with-other-plugins}
+# ከሌሎች ፕልጊኖች ጋር የሚታወቁ አለመጣጣሞች
 
 Ultimate Multisiteን ከጫኑ እና ከaktyivate (activating) በኋላ፣ ያልተስተካከሉ አለመጣጣሞች ምክንያት ችግር ሊያጋጥምዎት ይችላል።
 

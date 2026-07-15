@@ -3,7 +3,7 @@ title: Chikwera ya Mwana wa M'moyo ndi Kufotokozera Nkhani za M'moyo
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kufumbutso ndi Kufotokoza Masomo (Customer Feedback & Issue Reporting) {#customer-feedback--issue-reporting}
+# Kufumbutso ndi Kufotokoza Masomo (Customer Feedback & Issue Reporting)
 
 Gratis AI Agent v1.5.0 imaperekera monga system ya kufotokoza masomo ndi kupotsa mato (feedback and issue reporting) yomwe imaphatikizira anthu omwe ali ndi mfundo kuti apotsere mavuto ndi kuteteza zinthu zomwe si zofunika, ndipo imapotsa mavuto monga momwe muli m'chat interface. System imeneyi imapambana ndi ulamulira (consent management), komando la kupotsa lomaliza bwino (automated reporting command), ndi kukhazikitsa kwa AI pa backend.
 

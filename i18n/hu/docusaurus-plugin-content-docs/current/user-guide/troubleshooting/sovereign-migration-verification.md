@@ -3,7 +3,7 @@ title: Souveréns migráció ellenőrzése
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Szouverén migráció ellenőrzése {#sovereign-migration-verification}
+# Szouverén migráció ellenőrzése
 
 Az Ultimate Multisite: Multi-Tenancy 1.2.0 tartalmaz WP-CLI ellenőrzési parancsokat szouverén (sovereign) tenyészmigrációkhoz. Ha egy tenyészmigráció, SSO látogatás vagy izolált telepítés nem viselkedik úgy, ahogy várható, használja ezeket a parancsokat.
 

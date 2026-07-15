@@ -4,7 +4,7 @@ title: Akcija - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Akcija: set_logged_in_cookie {#action-setloggedincookie}
+# Akcija: set_logged_in_cookie
 
 Pokreće se odmah prije nego što se postavi kolačić za autentifikaciju za prijavljenog korisnika.
 

@@ -3,7 +3,7 @@ title: 'Leçon 1 : Pourquoi la niche gagne'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Leçon 1 : Pourquoi la niche est un atout majeur {#lesson-1-why-niche-wins}
+# Leçon 1 : Pourquoi la niche est un atout majeur
 
 Avant de parler de logiciel, vous devez comprendre que construire une solution pour un public spécifique est la décision la plus importante que vous prendrez.
 

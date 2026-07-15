@@ -3,7 +3,7 @@ title: Integrasi WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrasi WPMU DEV {#wpmu-dev-integration}
+# Integrasi WPMU DEV
 
 ## Gambaran Keseluruhan {#overview}
 WPMU DEV ialah platform WordPress yang menyeluruh, menawarkan hosting, plugin, dan pelbagai perkhidmatan untuk laman WordPress. Integrasi ini membolehkan penyegerakan domain secara automatik serta pengurusan sijil SSL antara Ultimate Multisite dan hosting WPMU DEV.

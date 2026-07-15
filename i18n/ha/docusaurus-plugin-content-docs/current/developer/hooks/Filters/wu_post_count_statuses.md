@@ -4,7 +4,7 @@ title: Tace - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Ba wa masu haɓaka plugin damar canja wane halin post ya kamata a ƙirga. Ta tsohuwa, ana ƙirga posts da aka buga da na private
 

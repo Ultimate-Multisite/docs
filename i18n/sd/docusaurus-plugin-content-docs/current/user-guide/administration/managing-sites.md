@@ -3,7 +3,7 @@ title: سائٽس جو انتظام
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# سائٹس کا انتظام کرنا {#managing-sites}
+# سائٹس کا انتظام کرنا
 
 سائٹس (یا سب سائٹس) آپ کے WaaS بزنس کی بنیاد ہیں۔ Ultimate Multisite میں 3 قسم کی سائٹس ہوتی ہیں:
 

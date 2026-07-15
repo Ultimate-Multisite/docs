@@ -3,7 +3,7 @@ title: የፕላን ደረጃን ዝቅ ማድረግ
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planን መቀነስ (v2) {#downgrading-a-plan-v2}
+# Planን መቀነስ (v2)
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 

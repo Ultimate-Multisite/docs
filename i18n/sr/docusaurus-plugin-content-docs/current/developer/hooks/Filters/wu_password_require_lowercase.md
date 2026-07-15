@@ -4,7 +4,7 @@ title: Филтер - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Филтер: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Филтер: wu_password_require_lowercase
 
 Филтрира да ли треба захтевати мала слова у лозинкама.
 

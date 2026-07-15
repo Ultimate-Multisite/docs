@@ -3,7 +3,7 @@ title: API endpoint-ийг бүртгэх
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# The Ultimate Multisite Register API endpoint
 
 Энэхүү тусламжтай материалд та Ultimate Multisite /register API endpoint-ийг ашиглан өөрийн сүлжээнд шинэ хэрэглэгч бүрт оруулах бүх анхан шатны үйл явцыг яаж хийхийг, мөн Zapier-ээр хэрхэн хийхийг сурч үзэх болно.
 

@@ -3,7 +3,7 @@ title: Nhật ký thay đổi của Yêu cầu Hỗ trợ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Nhật ký thay đổi Support Tickets {#support-tickets-changelog}
+# Nhật ký thay đổi Support Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Cải tiến: Loại bỏ thư mục `vendor/` khỏi việc theo dõi của Git (vì đã được bao gồm trong `.gitignore`), giúp giảm kích thước kho lưu trữ.

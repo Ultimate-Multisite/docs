@@ -3,7 +3,7 @@ title: Ingxelo yabaThengi & Ukuxela iiNgxaki
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Ingxelo yabathengi kunye nokuxela iingxaki {#customer-feedback--issue-reporting}
+# Ingxelo yabathengi kunye nokuxela iingxaki
 
 Gratis AI Agent v1.5.0 izisa inkqubo eyakhelwe ngaphakathi yengxelo kunye nokuxela iingxaki evumela abasebenzisi bokugqibela ukuba baphawule iimpendulo ezingeloncedo baze baxele iingxaki ngqo kujongano lwencoko. Le nkqubo iquka ulawulo lwemvume, umyalelo wokuxela ngokuzenzekelayo, kunye nokuhlelwa koncedo nge-AI kwi-backend.
 

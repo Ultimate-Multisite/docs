@@ -3,7 +3,7 @@ title: PayFast ცვლილებების ჟურნალი
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast-ის ცვლილებების ჟურნალი {#payfast-changelog}
+# PayFast-ის ცვლილებების ჟურნალი
 
 ვერსია: 1.0.2 - გამოშვებულია 2025-09-28
 

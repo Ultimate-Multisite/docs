@@ -3,7 +3,7 @@ title: هوڪس جي استعمال جي رهنمائي
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks استعمال جي رهنمائي {#hooks-usage-guide}
+# Hooks استعمال جي رهنمائي
 
 Ultimate Multisite 200+ action hooks ۽ 280+ filter hooks مهيا ڪري ٿو. هي صفحو عملي مثالن سان سڀ کان وڌيڪ عام طور استعمال ٿيندڙ hooks کي ڍڪي ٿو. مڪمل پاڻمرادو ٺهيل حوالو لاءِ، هن حصي ۾ ٻيا صفحا ڏسو.
 

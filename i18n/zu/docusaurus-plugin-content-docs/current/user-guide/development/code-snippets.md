@@ -3,7 +3,7 @@ title: Izingcezu Zekhodi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Izingcezu zekhodi ze-v2 {#code-snippets-for-v2}
+# Izingcezu zekhodi ze-v2
 
 Empeleni, izingcezu zekhodi ze-**WordPress** zisetshenziselwa ukwenza izenzo ezithile ebezingase zidinge isandiso esincane esizinikele. Izingcezu ezinjalo zekhodi zifakwa kwelinye lamafayela ayisisekelo e-WordPress noma e-theme (ngokuvamile ifayela le-functions.php le-theme yakho) noma zingasetshenziswa njenge-MU plugin.
 

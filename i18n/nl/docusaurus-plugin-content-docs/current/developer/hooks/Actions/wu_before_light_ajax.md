@@ -4,7 +4,7 @@ title: Actie - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Actie: wu_before_light_ajax {#action-wubeforelightajax}
+# Actie: wu_before_light_ajax
 
 In sommige gevallen moeten we extra energie laden om acties te verwerken.
 

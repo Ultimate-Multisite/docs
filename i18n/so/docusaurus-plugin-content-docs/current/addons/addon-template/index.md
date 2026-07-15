@@ -3,9 +3,9 @@ title: Qaabka Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Qaab-dhismeedka Addon {#addon-template}
+# Qaab-dhismeedka Addon
 
-{{ADDON_DESCRIPTION}}
+Qaabka Addon — Ultimate Multisite.
 
 ## Shuruudaha {#requirements}
 

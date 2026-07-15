@@ -4,7 +4,7 @@ title: فلٹر - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# فلٹر: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# فلٹر: wu_checkout_form_base_domains
 
 مشترک checkout فارم کے بنیادی ڈومینز کو فلٹر کرتا ہے جنہیں mapped-domain ریکارڈز نہیں بننا چاہیے۔
 

@@ -3,7 +3,7 @@ title: Opret menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Opret menu {#create-menu}
+# Opret menu
 
 **Opret menu**-evnen opretter WordPress-navigationsmenuer med understøttelse af separate navigationsetiketter, der adskiller sig fra sidetitler.
 

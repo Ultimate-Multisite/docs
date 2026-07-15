@@ -4,7 +4,7 @@ title: Φίλτρο - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Φίλτρο: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Φίλτρο: wu_page_get_title_links
 
 Επιτρέπει στους developers plugins, και κι αυτόν, να προσθέτουν συνδέσμους ενέργειας (action links) στις σελίδες επεξεργασίας μας.
 

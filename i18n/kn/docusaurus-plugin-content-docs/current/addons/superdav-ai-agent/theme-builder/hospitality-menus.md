@@ -3,7 +3,7 @@ title: ಆತಿಥ್ಯ ಮೆನುಗಳು
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# ಆತಿಥ್ಯ ಮೆನುಗಳು (Hospitality Menus) {#hospitality-menus}
+# ಆತಿಥ್ಯ ಮೆನುಗಳು (Hospitality Menus)
 
 **ಆತಿಥ್ಯ ಮೆನುಗಳು** ವೈಶಿಷ್ಟ್ಯವು Theme Builder ಅನ್ನು ಬಳಸಿಕೊಂಡು ನಿಮ್ಮ WordPress ಸೈಟ್‌ಗೆ ನೇರವಾಗಿ ರಚನಾತ್ಮಕ ಆಹಾರ ಮತ್ತು ಪಾನೀಯ ಮೆನು ಪುಟಗಳನ್ನು ರಚಿಸಲು ಮತ್ತು ಅಳವಡಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.
 

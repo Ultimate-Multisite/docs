@@ -3,7 +3,7 @@ title: Mjetet dhe konfigurimi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Mjetet dhe konfigurimi {#tools-and-configuration}
+# Mjetet dhe konfigurimi
 
 Theme Builder përdor një grup mjetesh për të analizuar, dizajnuar dhe ndërtuar sajtin tuaj WordPress. Në versionin 1.16.0, **sd-ai-agent/site-scrape tani është një mjet i Nivelit 1**, duke e bërë të disponueshëm si parazgjedhje në Theme Builder. Superdav AI Agent v1.18.0 prezanton gjithashtu një paketë shoqëruese Advanced të shpërndarë veçmas për rrjedha pune të besuara zhvilluesish; këto mjete nuk janë pjesë e paketës bazë WordPress.org dhe duhet të instalohen dhe autorizohen veçmas.
 

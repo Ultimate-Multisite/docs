@@ -3,7 +3,7 @@ title: 'Õppetund 8: Kliendi sisseelamine'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Õppetund 8: Klientide sisseelamine {#lesson-8-customer-onboarding}
+# Õppetund 8: Klientide sisseelamine
 
 Kliendi registreeruma saamine on vaid pool tööst. Kui ta logib sisse, tunneb end ülekoormatuna ega tule kunagi tagasi, oled ta kaotanud. See õppetund kavandab kogemuse, mis muudab uue registreeruja aktiivseks ja kaasatud kliendiks.
 

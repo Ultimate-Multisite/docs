@@ -4,7 +4,7 @@ title: Hidlydd - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# Hidlydd: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# Hidlydd: wp_ultimo_registration_steps
 
 Ychwanegwch gamau ychwanegol drwy hidlyddion
 

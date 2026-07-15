@@ -3,7 +3,7 @@ title: 'Lección 13: Escalado'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lección 13: Escalar {#lesson-13-scaling-up}
+# Lección 13: Escalar
 
 Tes unha plataforma funcionando con clientes de pago. Esta lección cobre como medrar desde unha pequena operación ata un negocio sostible: escalar a infraestrutura, automatizar operacións e aumentar os ingresos por cliente.
 

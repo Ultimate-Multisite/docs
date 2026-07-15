@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର୍ - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# ଫିଲ୍ଟର: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
+# ଫିଲ୍ଟର: networks_user_is_network_admin
 
 ଜଣେ ବ୍ୟବହାରକାରୀ ପ୍ରଶାସକ ଥିବା ନେଟୱର୍କଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରେ।
 

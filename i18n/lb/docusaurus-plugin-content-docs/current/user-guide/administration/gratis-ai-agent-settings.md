@@ -3,7 +3,7 @@ title: Gratis AI Agent Astellungen
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Astellungen {#gratis-ai-agent-settings}
+# Gratis AI Agent Astellungen
 
 Den **Astellungen → Erweidert**-Écran am Gratis AI Agent bitt Konfiguratioun op Administrateursniveau fir Backend-Integratiounen. Dës Säit dokumentéiert d'Weiderleedung vu Feedback, Schlëssele fir Sichubidder, d'Ariichtung vum verwaltete Superdav-Service, Google Calendar-Kontrollen, TextBee SMS-Astellungen an netzwäit Funktiouns-Flags.
 

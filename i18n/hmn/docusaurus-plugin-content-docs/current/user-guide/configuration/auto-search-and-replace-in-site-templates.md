@@ -3,7 +3,7 @@ title: Khai Thov thiab Tswj Tsis Tau Hau Nws Txog Sites Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# 自动搜尋和替換在網站範本中 (v2) {#auto-search-and-replace-in-site-templates-v2}
+# 自动搜尋和替換在網站範本中 (v2)
 
 _**這個教學需要 Ultimate Multisite 版本 2.x。**_
 

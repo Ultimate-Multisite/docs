@@ -4,7 +4,7 @@ title: පෙරහන - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# පෙරහන්: secure_auth_redirect {#filter-secureauthredirect}
+# පෙරහන්: secure_auth_redirect
 
 ආරක්ෂිත සත්‍යාපන යළි-යොමු කිරීමක් භාවිත කළ යුතුදැයි පෙරහන් කරයි.
 

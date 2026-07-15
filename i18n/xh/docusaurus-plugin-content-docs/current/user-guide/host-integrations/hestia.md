@@ -3,7 +3,7 @@ title: Umdibaniso ne-Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Udibaniso lwe-Hestia Control Panel {#hestia-control-panel-integration}
+# Udibaniso lwe-Hestia Control Panel
 
 Esi sikhokelo sichaza indlela yokumisela udibaniso lwe-Ultimate Multisite Hestia ukuze iidomeyini ezimephiweyo kwinethiwekhi yakho zongezwe ngokuzenzekelayo (kwaye zisuswe) njenge-Web Domain Aliases e-Hestia.
 

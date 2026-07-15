@@ -3,9 +3,9 @@ title: 애드온 템플릿
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# 애드온 템플릿 {#addon-template}
+# 애드온 템플릿
 
-{{ADDON_DESCRIPTION}}
+애드온 템플릿 — Ultimate Multisite.
 
 ## 요구 사항 {#requirements}
 

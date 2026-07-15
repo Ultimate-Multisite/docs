@@ -3,7 +3,7 @@ title: Web Search
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# İnternet Araması {#internet-search}
+# İnternet Araması
 
 Gratis AI Agent v1.5.0, konuşma sırasında yapay zeka asistanının web'den güncel bilgi almasını sağlayan bir **İnternet Araması** özelliği ekliyor. Bu özellik, [Brave Search API](https://brave.com/search/api/) veya [Tavily API](https://tavily.com/) kullanılarak güçlendirilmiştir.
 

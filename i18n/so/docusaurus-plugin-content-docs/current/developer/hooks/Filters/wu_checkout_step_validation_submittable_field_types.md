@@ -4,7 +4,7 @@ title: Shaandheeye - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Shaandheeye: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Shaandheeye: wu_checkout_step_validation_submittable_field_types
 
 U oggolow horumariyeyaasha inay ka gudbaan hubinta haddii field uu yahay mid si otomaatig ah loo gudbin karo.
 

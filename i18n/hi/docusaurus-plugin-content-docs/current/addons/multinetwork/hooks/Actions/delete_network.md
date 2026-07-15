@@ -4,7 +4,7 @@ title: कार्य - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# एक्शन: delete_network {#action-deletenetwork}
+# एक्शन: delete_network
 
 यह एक्शन तब फायर होता है जब एक नेटवर्क को डिलीट किया जाता है।
 

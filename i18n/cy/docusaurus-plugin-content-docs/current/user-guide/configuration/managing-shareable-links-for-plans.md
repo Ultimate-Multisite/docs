@@ -3,7 +3,7 @@ title: Cyfathrebu Linciau Cyffredinol ar gyfer Planau
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Rheoliad y Llwybrion Cynlluniau Arallt {#managing-shareable-links-for-plans}
+# Rheoliad y Llwybrion Cynlluniau Arallt
 
 Mae Ultimate Multisite yn rhoi'ch opsiwn i rhannu llwybrion cynlluniau'n dros y cyflwyniad gyda'ch cleiention yn uniongyrchol. I wneud hyn, myndwch i unrhyw un o gyfathredu eich planau a chrywbwch ar y butwn _Click to copy the Shareable Link_.
 

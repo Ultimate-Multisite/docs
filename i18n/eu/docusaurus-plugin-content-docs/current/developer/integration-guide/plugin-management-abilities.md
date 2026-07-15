@@ -3,7 +3,7 @@ title: Pluginak kudeatzeko gaitasunak
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Pluginak kudeatzeko gaitasunak {#plugin-management-abilities}
+# Pluginak kudeatzeko gaitasunak
 
 Gratis AI Agent v1.5.0 bertsioak **pluginak kudeatzeko 7 gaitasun** dakartza, AI laguntzaileak elkarrizketa batean dei ditzakeenak. Gaitasun hauek [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) bidez instalatutako WordPress pluginen gaineko kontrol programatikoa ematen dute.
 

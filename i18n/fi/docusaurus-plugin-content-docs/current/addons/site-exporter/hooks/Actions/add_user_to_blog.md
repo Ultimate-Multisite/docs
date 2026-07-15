@@ -4,7 +4,7 @@ title: Toiminto - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Toiminto: add_user_to_blog {#action-addusertoblog}
+# Toiminto: add_user_to_blog
 
 Käynnistyy välittömästi sen jälkeen, kun käyttäjä on lisätty sivustolle.
 

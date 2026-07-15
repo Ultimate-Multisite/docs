@@ -3,7 +3,7 @@ title: Tema Bouer Onboarding Vloei
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Proses {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Proses
 
 Superdav AI Agent v1.12.0 stel 'n begeleide **Theme Builder onboarding-proses** bekend wat jou help om 'n aangepaste bloktema te skep tydens jou aanvanklike opstelling. Dit vervang die ou Site Builder-modus met 'n meer buigsame, agent-geassisteerde benadering.
 

@@ -3,7 +3,7 @@ title: সামঞ্জস্যপূর্ণ এন্ডপয়েন্
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints পরিবর্তন লগ {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector for Compatible Endpoints পরিবর্তন লগ
 
 ## Version 2.0.0 — প্রকাশিত হয়েছে 2026-04-24 {#version-200--released-on-2026-04-24}
 

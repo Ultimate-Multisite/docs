@@ -3,7 +3,7 @@ title: Phát triển cổng tùy chỉnh
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Phát triển Gateway tùy chỉnh {#custom-gateway-development}
+# Phát triển Gateway tùy chỉnh
 
 Bạn có thể tạo các gateway thanh toán tùy chỉnh bằng cách mở rộng class `Base_Gateway`.
 

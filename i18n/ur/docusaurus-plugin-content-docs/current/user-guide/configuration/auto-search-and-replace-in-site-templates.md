@@ -3,7 +3,7 @@ title: Site Templates میں خودکار تلاش اور تبدیلی
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# سائٹ ٹیمپلیٹس میں خودکار تلاش اور تبدیلی (v2) {#auto-search-and-replace-in-site-templates-v2}
+# سائٹ ٹیمپلیٹس میں خودکار تلاش اور تبدیلی (v2)
 
 _**اس ٹیوٹوریل کے لیے WP UItimo ورژن 2.x درکار ہے۔**_
 

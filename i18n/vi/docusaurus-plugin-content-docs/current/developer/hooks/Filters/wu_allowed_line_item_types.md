@@ -4,7 +4,7 @@ title: Bộ lọc - wu_allowed_line_item_types
 sidebar_label: wu_allowed_line_item_types
 _i18n_hash: 146f74ff1fa7d78b381b767bff2dc699
 ---
-# Bộ lọc: wu_allowed_line_item_types {#filter-wuallowedlineitemtypes}
+# Bộ lọc: wu_allowed_line_item_types
 
 Bây giờ, chúng ta sẽ xử lý tất cả các loại.
 

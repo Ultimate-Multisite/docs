@@ -3,7 +3,7 @@ title: Ekspor Situs
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Ekspor Situs {#site-export}
+# Ekspor Situs
 
 Halaman admin **Site Export** ngidini administrator jaringan kanggo ngemas siji situs, utawa sak jaringan kabeh, dadi arsip sing bisa diunduh kanggo migrasi, backup, utawa kerja serah terima.
 

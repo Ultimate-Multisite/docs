@@ -4,7 +4,7 @@ title: Igikorwa - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Igikorwa: wu_cart_setup {#action-wucartsetup}
+# Igikorwa: wu_cart_setup
 
 Emerera abategura porogaramu gukora impinduka z’inyongera kuri checkout object.
 

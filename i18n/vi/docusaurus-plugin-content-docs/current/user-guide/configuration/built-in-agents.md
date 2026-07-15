@@ -3,7 +3,7 @@ title: Tác nhân tích hợp sẵn
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Tác nhân tích hợp sẵn {#built-in-agents}
+# Tác nhân tích hợp sẵn
 
 Gratis AI Agent v1.9.0 đi kèm năm tác nhân tích hợp sẵn, mỗi tác nhân được cấu hình sẵn với một bộ công cụ tập trung, một system prompt được điều chỉnh riêng, và các gợi ý khởi đầu phù hợp với những tác vụ phổ biến trong lĩnh vực đó. Việc chuyển đổi giữa các tác nhân sẽ thay đổi những gì trợ lý có thể làm và cách trợ lý phản hồi — mà bạn không cần cấu hình gì cả. Superdav AI Agent v1.18.0 có thể bổ sung các công cụ nhận biết lịch trình, bản ghi nhắc nhở, cổng phê duyệt, và thông báo SMS vào các quy trình làm việc này khi các tích hợp liên quan được cấu hình.
 

@@ -3,7 +3,7 @@ title: リリースノート
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# リリースノート {#release-notes}
+# リリースノート
 
 ## Version 2.13.0 — 2026-06-05 リリース {#version-2130--released-on-2026-06-05}
 

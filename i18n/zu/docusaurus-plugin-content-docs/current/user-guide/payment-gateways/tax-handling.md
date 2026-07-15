@@ -3,7 +3,7 @@ title: Ukuphathwa Kwentela
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ukuphathwa Kwentela {#tax-handling}
+# Ukuphathwa Kwentela
 
 Ultimate Multisite inemojuli yokuqoqwa kwentela eyakhelwe ku-plugin yethu eyinhloko, ngakho uma udinga ukuqoqa izintela zokuthengisa ezinhlelweni, emaphakhejini nasezinsizeni zakho, ungakwenza kalula ngaphandle kokuphendukela ekufakeni noma yimaphi ama-add-ons.
 

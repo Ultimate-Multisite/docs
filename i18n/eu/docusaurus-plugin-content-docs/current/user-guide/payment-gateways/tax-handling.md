@@ -3,7 +3,7 @@ title: Zergen kudeaketa
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Zergen kudeaketa {#tax-handling}
+# Zergen kudeaketa
 
 Ultimate Multisite-k zergak biltzeko modulu bat dauka gure core plugin-ean integratuta; beraz, zure plan, pakete eta zerbitzuetan salmenta-zergak bildu behar badituzu, erraz egin dezakezu hori inolako add-on instalatu beharrik gabe.
 

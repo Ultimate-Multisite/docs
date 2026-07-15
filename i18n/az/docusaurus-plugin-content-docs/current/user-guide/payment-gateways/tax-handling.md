@@ -3,7 +3,7 @@ title: Vergilərin idarə olunması
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Vergi İdarəetməsi {#tax-handling}
+# Vergi İdarəetməsi
 
 Ultimate Multisite əsas plugin-imizə daxil edilmiş vergi toplama moduluna malikdir, buna görə planlarınız, paketləriniz və xidmətləriniz üzrə satış vergilərini toplamalısınızsa, bunu heç bir add-on quraşdırmağa müraciət etmədən asanlıqla edə bilərsiniz.
 

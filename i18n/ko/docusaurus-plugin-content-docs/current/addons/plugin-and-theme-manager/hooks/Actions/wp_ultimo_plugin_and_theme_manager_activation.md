@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# 액션: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# 액션: wp_ultimo_plugin_and_theme_manager_activation
 
 플러그인의 다른 부분이 활성화 루틴을 연결하도록 허용합니다.
 

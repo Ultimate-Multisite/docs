@@ -3,7 +3,7 @@ title: Registrar una Account mediante Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Evento: Registrar un Account mediante Zapier {#event-register-an-account-via-zapier}
+# Evento: Registrar un Account mediante Zapier
 
 En el artículo [Integrar Ultimate Multisite con Zapier](zapier.md), hablamos sobre cómo usar Zapier para realizar diferentes acciones dentro de Ultimate Multisite según activadores y eventos. En este artículo, mostraremos cómo puedes integrar aplicaciones de terceros. Usaremos Google Sheets como fuente de datos y enviaremos la información a Ultimate Multisite para registrar un Account.
 

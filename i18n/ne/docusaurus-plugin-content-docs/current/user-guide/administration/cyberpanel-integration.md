@@ -3,7 +3,7 @@ title: साइबरप्यानल एकीकरण
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel एकीकरण {#cyberpanel-integration}
+# CyberPanel एकीकरण
 
 यो गाइडले अल्टीमेट मल्टिसिट साइबरप्यानल (Ultimate Multisite CyberPanel) एकीकरण कसरी कन्फिगर गर्ने भन्ने बारे बताउँछ ताकि तपाईंको नेटवर्कमा नक्सा गरिएका डोमेनहरूलाई स्वचालित रूपमा (वाirtual होस्टको रूपमा) CyberPanel मा थप्ने र हटाउने गरी, Let's Encrypt मार्फत वैकल्पिक ऑटो-SSL प्रविधिको माध्यमबाट SSL पनि उपलब्ध गराउन सकिन्छ।
 

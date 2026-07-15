@@ -4,7 +4,7 @@ title: Isihluzi - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Isihluzo: send_auth_cookies {#filter-sendauthcookies}
+# Isihluzo: send_auth_cookies
 
 Ivumela ukuthintela ii-auth cookies ekubeni zithunyelwe ngokwenene kwi-client.
 

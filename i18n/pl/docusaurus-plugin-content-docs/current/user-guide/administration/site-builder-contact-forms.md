@@ -3,7 +3,7 @@ title: Formularze kontaktowe w Site Builderze
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formularze kontaktowe w Site Builderze {#site-builder-contact-forms}
+# Formularze kontaktowe w Site Builderze
 
 Superdav AI Agent v1.10.0 dodaje możliwość tworzenia formularzy kontaktowych bezpośrednio z interfejsu czatu za pomocą agenta Site Builder. Dzięki temu możesz dodać w pełni funkcjonalne formularze kontaktowe na dowolną stronę, nie opuszczając czatu.
 

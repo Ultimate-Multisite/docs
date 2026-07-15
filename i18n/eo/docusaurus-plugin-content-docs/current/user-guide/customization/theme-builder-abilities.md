@@ -3,7 +3,7 @@ title: Abilitoj de Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Kapableite: Scaffoldado kaj Aktivado de Bloko Temoj {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Kapableite: Scaffoldado kaj Aktivado de Bloko Temoj
 
 Superdav AI Agent v1.12.0 introducis du potempaj kapableite, kiuj pervasivas vi generi kaj deplopi personalajn bloko temojn direkten per la chataj interfacoj.
 

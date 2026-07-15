@@ -3,7 +3,7 @@ title: Igenamiterere rya Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Igenamiterere {#gratis-ai-agent-settings}
+# Gratis AI Agent Igenamiterere
 
 Ekrani ya **Settings → Advanced** muri Gratis AI Agent itanga igenamiterere ryo ku rwego rw’umuyobozi ku bw’imikoranire ya backend. Uru rupapuro rusobanura kohereza feedback, imfunguzo z’abatanga ishakisha, igenamigambi rya serivisi ya Superdav icungwa, igenzura rya Google Calendar, igenamiterere rya TextBee SMS, n’ibirango by’imikorere bikora kuri network yose.
 

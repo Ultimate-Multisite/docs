@@ -3,7 +3,7 @@ title: Closte تي سارائس کانسٹينٽ کي ترتیب ڏيڻ
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte تي ڪن ۾ sunrise constant کي true ڪرڻ {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte تي ڪن ۾ sunrise constant کي true ڪرڻ
 
 ڪجهه هاستنگ فراهميون (host providers) سيكيورٽي جي ڪري wp-config.php کي لاک ڪري ڇڏين ٿيون. ان جو مطلب اهو آهي ته Ultimate Multisite خود بخاري طور تي فائل ۾ ضروري constants شامل نه ڪري سگهي ٿو جنهن سان domain mapping ۽ ٻيا خاص ڪم ڪم کام ڪندا. Closte ان ماڻهن مان هڪ آهي.
 

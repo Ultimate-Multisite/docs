@@ -3,7 +3,7 @@ title: Abuurista Code-yada Discountka
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Abuuristaan Koodyada Discount (v2) {#creating-discount-codes-v2}
+# Abuuristaan Koodyada Discount (v2)
 
 _**Fadlan oogu ogow: Maqaalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
 

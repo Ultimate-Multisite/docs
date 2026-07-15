@@ -4,7 +4,7 @@ title: Parzûn - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Fîlter: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Fîlter: wu_is_mcp_enabled
 
 Destûr bide pêşvebirên pêvekan ku ji bo MCP adapter rewşeke diyarkirî bi zorê saz bikin.
 

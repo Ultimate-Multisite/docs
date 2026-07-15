@@ -4,7 +4,7 @@ title: Filtrs - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtrs: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtrs: wu_post_count_statuses
 
 Ļauj plugin izstrādātājiem mainīt, kurš ziņas statuss jāskaita. Pēc noklusējuma tiek skaitītas publicētās un privātās ziņas
 

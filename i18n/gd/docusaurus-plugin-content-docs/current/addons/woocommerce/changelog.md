@@ -3,7 +3,7 @@ title: Loga atharrachaidhean Amalachadh WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Clàr-atharrachaidhean Amalachaidh WooCommerce {#woocommerce-integration-changelog}
+# Clàr-atharrachaidhean Amalachaidh WooCommerce
 
 Tionndadh 2.2.0 - Air fhoillseachadh air 2026-07-01
 * Ùr: Tha suimean cìse Ultimate Multisite a-nis a’ nochdadh mar loidhnichean cìse WooCommerce fa leth aig checkout, a’ dèanamh iomlanan cìse nas soilleire mus tèid pàigheadh.

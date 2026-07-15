@@ -3,7 +3,7 @@ title: Kubaka ubucuruzi bw’urubuga rwihariye
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Kubaka Ubucuruzi bwa Website y'Umwihariko ukoresheje Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Kubaka Ubucuruzi bwa Website y'Umwihariko ukoresheje Ultimate Multisite
 
 Abantu benshi bagerageza kugurisha websites bahangana ku giciro na Wix, Squarespace, hamwe n'abakozi bigenga ibihumbi. Baratsindwa. Abatsinda bahitamo itsinda ry'abantu runaka, bakubaka igisubizo cyagenewe iryo tsinda, maze bakishyuza agaciro batanga.
 

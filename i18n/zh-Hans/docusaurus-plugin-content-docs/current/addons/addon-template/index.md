@@ -3,9 +3,9 @@ title: 插件模板
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# 插件模板 {#addon-template}
+# 插件模板
 
-{{ADDON_DESCRIPTION}}
+插件模板 — Ultimate Multisite.
 
 ## 需求 {#requirements}
 

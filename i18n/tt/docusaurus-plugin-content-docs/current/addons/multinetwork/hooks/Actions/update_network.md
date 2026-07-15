@@ -4,7 +4,7 @@ title: Гамәл - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Гамәл: update_network {#action-updatenetwork}
+# Гамәл: update_network
 
 Булган челтәр яңартылганнан соң эшли.
 

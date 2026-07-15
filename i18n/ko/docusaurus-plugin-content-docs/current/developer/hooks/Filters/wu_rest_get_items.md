@@ -4,7 +4,7 @@ title: 필터 - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# 필터: wu_rest_get_items {#filter-wurestgetitems}
+# 필터: wu_rest_get_items
 
 요청을 진행할 수 있는지 여부를 필터링합니다.
 

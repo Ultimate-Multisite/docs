@@ -4,7 +4,7 @@ title: Scagaire - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Scagaire: wu_plan_product_types {#filter-wuplanproducttypes}
+# Scagaire: wu_plan_product_types
 
 Scag na cineálacha táirge ba chóir a láimhseáil mar phleananna.
 

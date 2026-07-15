@@ -3,7 +3,7 @@ title: PayPal ஐ அமைத்தல்
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway (v2) அமைத்தல் {#setting-up-the-paypal-gateway-v2}
+# PayPal Gateway (v2) அமைத்தல்
 
 _**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐ குறிக்கிறது.**_
 

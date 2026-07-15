@@ -3,9 +3,9 @@ title: Samfurin Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Samfurin Addon {#addon-template}
+# Samfurin Addon
 
-{{ADDON_DESCRIPTION}}
+Samfurin Addon — Ultimate Multisite.
 
 ## Bukatu {#requirements}
 

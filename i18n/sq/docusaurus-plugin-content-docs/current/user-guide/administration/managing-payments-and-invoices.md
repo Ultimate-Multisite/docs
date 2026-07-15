@@ -3,7 +3,7 @@ title: Menaxhimi i pagesave dhe fakturave
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Menaxhimi i Pagesave dhe Fakturave {#managing-payments-and-invoices}
+# Menaxhimi i Pagesave dhe Fakturave
 
 ## Caktimet e Pagesave {#payment-settings}
 

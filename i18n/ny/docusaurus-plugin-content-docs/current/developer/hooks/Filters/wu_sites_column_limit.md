@@ -4,7 +4,7 @@ title: Sefa - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Fyuluta: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Fyuluta: wu_sites_column_limit
 
 Fyuluta yosinthira mtengo wa get pluginssites mkati mwa netiweki.
 

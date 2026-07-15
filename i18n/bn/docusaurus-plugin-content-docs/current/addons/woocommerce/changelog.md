@@ -3,7 +3,7 @@ title: WooCommerce ইন্টিগ্রেশন পরিবর্তনল
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce ইন্টিগ্রেশন পরিবর্তন-লগ {#woocommerce-integration-changelog}
+# WooCommerce ইন্টিগ্রেশন পরিবর্তন-লগ
 
 Version 2.2.0 - 2026-07-01-এ প্রকাশিত
 * নতুন: Ultimate Multisite করের পরিমাণ এখন checkout-এ আলাদা WooCommerce fee line হিসেবে দেখা যায়, ফলে payment-এর আগে করের মোট পরিমাণ আরও স্পষ্ট হয়।

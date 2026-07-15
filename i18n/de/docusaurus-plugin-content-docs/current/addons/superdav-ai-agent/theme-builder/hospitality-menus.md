@@ -3,7 +3,7 @@ title: Gastronomie-Menüs
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronomie-Karten {#hospitality-menus}
+# Gastronomie-Karten
 
 Die Funktion **Gastronomie-Karten** ermöglicht es Theme Builder, strukturierte Speise- und Getränkekarten direkt in Ihre WordPress-Seite zu generieren und einzubetten.
 

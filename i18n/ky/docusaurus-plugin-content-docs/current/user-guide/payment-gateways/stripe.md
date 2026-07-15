@@ -3,7 +3,7 @@ title: Stripe-ты орнотуу
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway'ди Орнотуу (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway'ди Орнотуу (v2)
 
 _**МААЛЫМДАР ҮЧҮН ЭСКАРТЫ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү._**_
 

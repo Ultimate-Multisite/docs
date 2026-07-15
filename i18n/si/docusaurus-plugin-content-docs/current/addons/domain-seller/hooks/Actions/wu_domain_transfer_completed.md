@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# ක්‍රියාව: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# ක්‍රියාව: wu_domain_transfer_completed
 
 වසම් මාරුවක් සම්පූර්ණ වූ පසු ක්‍රියාත්මක වේ.
 

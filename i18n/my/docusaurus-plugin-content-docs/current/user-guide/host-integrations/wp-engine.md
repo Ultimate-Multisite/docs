@@ -3,7 +3,7 @@ title: WP Engine ပေါင်းစပ်ခြင်း
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ပေါင်းစည်းမှု {#wp-engine-integration}
+# WP Engine ပေါင်းစည်းမှု
 
 ## အကျဉ်းချုပ် {#overview}
 WP Engine သည် WordPress ဆိုက်များအတွက် ပိုမိုကောင်းမွန်သော စွမ်းဆောင်ရည်၊ လုံခြုံရေးနှင့် တိုးချဲ့နိုင်မှုတို့ကို ပေးစွမ်းသော premium managed WordPress hosting platform တစ်ခုဖြစ်သည်။ ဤပေါင်းစည်းမှုသည် Ultimate Multisite နှင့် WP Engine အကြား domain များကို အလိုအလျောက် sync လုပ်နိုင်စေပါသည်။

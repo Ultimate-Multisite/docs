@@ -4,7 +4,7 @@ title: Pagsala - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 9061f073ee77c38afc3cecfabe5edb50
 ---
-# Pagsala: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Pagsala: wp_ultimo_skip_network_active_check
 
 Tugoti ang mga developer nga i-short-circuit kini nga pagsusi.
 

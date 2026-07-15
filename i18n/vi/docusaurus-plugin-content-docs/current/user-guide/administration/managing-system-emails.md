@@ -3,7 +3,7 @@ title: Quản lý email hệ thống
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Quản lý Email hệ thống {#managing-system-emails}
+# Quản lý Email hệ thống
 
 Ultimate Multisite gửi nhiều email hệ thống cho các sự kiện như xác nhận đăng ký, biên lai thanh toán và thay đổi tư cách thành viên. Bạn có thể tùy chỉnh các mẫu email này để phù hợp với thương hiệu của mình.
 

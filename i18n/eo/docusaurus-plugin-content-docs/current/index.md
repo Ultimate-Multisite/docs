@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Dokumentaro {#ultimate-multisite-documentation}
+# Ultimate Multisite Dokumentaro
 
 Bonvenon al la dokumentaro de Ultimate Multisite. Ultimate Multisite transformas WordPress Multisite en plenan platformon Website as a Service (WaaS).
 
@@ -18,7 +18,7 @@ Bonvenon al la dokumentaro de Ultimate Multisite. Ultimate Multisite transformas
 
 Teknika referenco por programistoj konstruantaj sur Ultimate Multisite. Inkluzivas referencon pri hooks, dokumentaron pri REST API, kaj gvidilojn por addon-disvolvado.
 
-### [Addons](/addons) {#addons}
+### [Aldonaĵoj](/addons) {#addons}
 
 Dokumentaro por pagataj addon plugins kiuj etendas Ultimate Multisite per aldonaj funkcioj kiel WooCommerce-integriĝo, analiziloj, domajna vendado, kaj pli.
 

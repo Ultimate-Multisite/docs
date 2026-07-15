@@ -3,7 +3,7 @@ title: Configuratio et Configuratio Provisorii
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Venditor de Domene: Configuración e Instalación del Proveedor {#domain-seller-setup-and-provider-configuration}
+# Venditor de Domene: Configuración e Instalación del Proveedor
 
 El addon Domain Seller se entrega con un asistente guiado que te guía a través de cada paso necesario. Esta página cubre el flujo del asistente y cómo configurar o reconfigurar los proveedores después.
 

@@ -3,7 +3,7 @@ title: Podobné pojmy
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Základné pojmy {#basic-concepts}
+# Základné pojmy
 
 Pre nového používateľa WordPress Multisite a pre toho, kto sa len začína používať Ultimate Multisite, na začiatku môže byť veľa nových slov a fráz, ktoré musíte pochopiť. Učenie ich je dôležitá úloha, pretože budete musieť pochopiť platformu a ako ona funguje celkom.
 

@@ -3,7 +3,7 @@ title: Registreeri konto Zapieri abil
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Tõste: Konto registreerida Zapier abil {#event-register-an-account-via-zapier}
+# Tõste: Konto registreerida Zapier abil
 
 Artikkelis [Ultimate Multisite integreerimise Zapieriga](zapier.md) käsitlesime, kuidas zapieri kasutades Ultimate Multisite'i abil erinevaid tegevusi käivitajaid ja sündmusi (triggers and events) põhjal teha. Selle artiklis näitame, kuidas saate kolmandate osaliste rakendusi integreerida. Kasutame Google Sheets-i andmeallikat ja ületame teavet Ultimate Multisite'ile konto registreerimiseks.
 

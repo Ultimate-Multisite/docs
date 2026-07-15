@@ -3,7 +3,7 @@ title: Creator Paginae Administratoriae Commentarius Mutationum
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Creator Paginarum Administratoriarum Commentarius Mutationum {#admin-page-creator-changelog}
+# Creator Paginarum Administratoriarum Commentarius Mutationum
 
 ### Versio 1.9.0 - Emissa die 2026-01-18 {#version-190---released-on-2026-01-18}
 

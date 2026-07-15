@@ -3,7 +3,7 @@ title: Kammalawa da Karshewar Bijarwa da Baka Iduk Wurin
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Faiye da Awashewa da Baka Wurin Gida {#membership-expiration-and-site-blocking}
+# Faiye da Awashewa da Baka Wurin Gida
 
 Wannan hoto yana bayanin yadda Ultimate Multisite ke kula da ƙarewar samun kuɗi (membership expiration), ƙarshen gwaji (trial endings), da kuma hana wajen gidan sarai (frontend site blocking). Yana nuna duk rayuwancin samun kuɗi daga matsayi na aiki zuwa na ƙarewa, tsarin da ke sarrafa ko za a hana wuraren gida, da abubuwan da ya kamata a bincika idan wuraren gida suna nan ba bayan ƙarewar samun kuɗi.
 

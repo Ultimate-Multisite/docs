@@ -4,7 +4,7 @@ title: Фильтр - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Фильтр: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Фильтр: wu_make_primary_domain_redirect_url
 
 Фильтрует URL перенаправления после того, как домен сделан основным.
 

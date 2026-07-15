@@ -3,7 +3,7 @@ title: Nkwado CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 A-gụm này na-eme ihe na-eme ka ịse Ultimate Multisite CyberPanel integration, ọ gba domain ndị nwere ike ịle (mapped domains) na mmekọrịta tupu (virtual hosts) na CyberPanel, nke a ga-anọchịrị (and removed) ma ọ bụ site n'ụzọ dị mma (optional auto-SSL provisioning) via Let's Encrypt.
 

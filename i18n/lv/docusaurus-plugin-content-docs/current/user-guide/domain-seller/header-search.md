@@ -3,7 +3,7 @@ title: Galvenes domēna meklēšana
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header domēna meklēšana {#header-domain-search}
+# Header domēna meklēšana
 
 Izmantojiet šo iestatījumu, ja vēlaties nelielu header formu, kas sāk domēna meklēšanu un pēc tam ļauj klientam izvēlēties no pieejamajiem domēniem Ultimate Multisite checkout ietvaros.
 

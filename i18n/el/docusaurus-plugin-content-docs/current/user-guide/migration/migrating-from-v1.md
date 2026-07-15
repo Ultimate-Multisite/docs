@@ -3,7 +3,7 @@ title: Μετάβαση από το V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Μετάβαση από την Έκδοση 1 {#migrating-from-v1}
+# Μετάβαση από την Έκδοση 1
 
 ## Το Ultimate Multisite έχει αλλάξει από την αρχική σειρά εκδόσεων 1.x στη σειρά εκδόσεων 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

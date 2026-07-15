@@ -3,7 +3,7 @@ title: Dashboard Übersicht
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Überblick {#dashboard-overview}
+# Dashboard Überblick
 
 Ultimate Multisite het **Dashboard** unter em Ultimate Multisite Menü und füegt au Widgets zum Network Dashboard hinzu. Dä Artikel behandelt, was Sie an beidne Ort gsehnd.
 

@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_plugin_and_theme_manager_deactivation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_deactivation
 _i18n_hash: 30fcaefc2b8a8393e8ac0ff38193ed26
 ---
-# Ìṣe: wp_ultimo_plugin_and_theme_manager_deactivation {#action-wpultimopluginandthememanagerdeactivation}
+# Ìṣe: wp_ultimo_plugin_and_theme_manager_deactivation
 
 Jẹ́ kí àwọn apá míì ti àfikún náà so àwọn ìlànà wọn mọ́ fún pípàá ṣiṣẹ́
 

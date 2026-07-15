@@ -3,7 +3,7 @@ title: Urugero rw'Inyandiko mu GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Uburyo u snippet's ya Ultimate Multisite ku repository ya GitHub yetu {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Uburyo u snippet's ya Ultimate Multisite ku repository ya GitHub yetu
 
 Hari ko dushobozi zikoresha code snippets muri GitHub repository zishobora kubyitwa cyane na abantu bashobora gukoresha Ultimate Multisite, bafite ibyo babaye mu gihe bafite uburyo bwo gukoresha ibintu myiza nk'ubwumvikane nko gukoresha script ya Google Analytics ku mga muryango y'ibyo bishobora kubyitwa cyangwa gukoresha meta box mu dashboard ya admin.
 
@@ -19,7 +19,7 @@ Hari uburyo runaka 2 bwo gukoresha code
 
   2. Must-Use Plugins (mu-plugins)
 
-# Uburyo bwo gukoresha snippet ku file ya functions.php ya theme yawe. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Uburyo bwo gukoresha snippet ku file ya functions.php ya theme yawe.
 
   1. Gukoresha account ya admin ya WordPress Network yawe kandi ugenda kuri Themes > Theme Editor (Bona screenshot hasi).
 
@@ -29,7 +29,7 @@ Hari uburyo runaka 2 bwo gukoresha code
 
 <!-- Screenshot hasi itarimo: WordPress Theme Editor ikoresha functions.php file editing -->
 
-# Uburyo bwo gukora Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Uburyo bwo gukora Must-Use Plugins (mu-plugins)
 
 WordPress yari yashyira uburyo rwa gukoresha ibintu myiza cyangwa "Must-Use Plugins", cyangwa mu gihe cy'ubwumvikane "mu-plugins".
 

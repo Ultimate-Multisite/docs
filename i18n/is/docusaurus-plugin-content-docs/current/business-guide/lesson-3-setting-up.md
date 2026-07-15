@@ -3,7 +3,7 @@ title: 'Læoni 3: Uppsetning netanna þín'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Læoni 3: Uppsetning Netkunna {#lesson-3-setting-up-your-network}
+# Læoni 3: Uppsetning Netkunna
 
 Tíminn er komið að byggja. Í þessum læoni munurðu installa Ultimate Multisite og sett upp grunnstökka netkunna FitSite. Hvert hugmynd sem kemur fram hér er byggt á fagsviði fitness.
 

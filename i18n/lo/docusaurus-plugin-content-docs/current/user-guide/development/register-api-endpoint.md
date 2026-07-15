@@ -3,7 +3,7 @@ title: ลงทะเบียน API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# จุดเชื่อมต่อ API สำหรับลงทะเบียน Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# จุดเชื่อมต่อ API สำหรับลงทะเบียน Ultimate Multisite
 
 ในคู่มือนี้ คุณจะได้เรียนรู้วิธีใช้ endpoint API ของ Ultimate Multisite /register เพื่อสร้างกระบวนการเริ่มต้นใช้งานทั้งหมดสำหรับลูกค้าใหม่ในเครือข่ายของคุณ และวิธีการทำสิ่งนั้นด้วย Zapier ด้วยครับ
 

@@ -3,7 +3,7 @@ title: स्ट्राइप सेट अप गर्ने
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# स्ट्राइप गेटवे सेटअप गर्ने (v2) {#setting-up-the-stripe-gateway-v2}
+# स्ट्राइप गेटवे सेटअप गर्ने (v2)
 
 _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite संस्करण २.x मा आधारित छ।**_
 

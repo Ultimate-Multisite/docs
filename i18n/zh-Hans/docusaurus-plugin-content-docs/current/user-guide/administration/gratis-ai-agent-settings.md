@@ -3,7 +3,7 @@ title: Gratis AI Agent 设置
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent 设置 {#gratis-ai-agent-settings}
+# Gratis AI Agent 设置
 
 Gratis AI Agent 中的 **设置 → 高级** 屏幕为后端集成提供管理员级配置。本页面说明反馈转发、搜索提供商密钥、托管 Superdav 服务设置、Google Calendar 控制、TextBee SMS 设置，以及全网络功能标志。
 

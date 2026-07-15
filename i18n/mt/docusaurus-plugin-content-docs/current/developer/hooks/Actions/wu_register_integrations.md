@@ -4,7 +4,7 @@ title: Azzjoni - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Azzjoni: wu_register_integrations {#action-wuregisterintegrations}
+# Azzjoni: wu_register_integrations
 
 Tiskatta biex tippermetti lill-integrazzjonijiet jirreġistraw lilhom infushom.
 

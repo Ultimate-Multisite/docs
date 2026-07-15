@@ -4,7 +4,7 @@ title: 過濾器 - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# 過濾器：wu_post_default_status {#filter-wupostdefaultstatus}
+# 過濾器：wu_post_default_status
 
 用於在物件資料儲存到資料庫之前進行過濾。
 

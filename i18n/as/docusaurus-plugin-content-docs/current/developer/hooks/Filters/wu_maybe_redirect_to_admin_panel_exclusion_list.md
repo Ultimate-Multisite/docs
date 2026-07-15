@@ -4,7 +4,7 @@ title: ফিল্টাৰ - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Filter: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Filter: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 স্বয়ংক্রিয় পুনৰ-নিৰ্দেশ (auto-redirect) নহ'বলৈ কিছুমান parameters-ৰ বৰ্জন তালিকা (exclusion list) সৃষ্টি কৰে।
 

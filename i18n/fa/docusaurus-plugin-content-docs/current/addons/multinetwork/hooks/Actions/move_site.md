@@ -4,7 +4,7 @@ title: عملیات - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# اکشن: move_site {#action-movesite}
+# اکشن: move_site
 
 پس از اینکه یک سایت به یک شبکه جدید منتقل شد، این اکشن فعال می‌شود.
 

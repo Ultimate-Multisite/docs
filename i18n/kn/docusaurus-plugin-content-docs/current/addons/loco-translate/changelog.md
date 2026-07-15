@@ -3,7 +3,7 @@ title: Loco Translate ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate ಬದಲಾವಣೆಗಳ ವಿವರ {#loco-translate-changelog}
+# Loco Translate ಬದಲಾವಣೆಗಳ ವಿವರ
 
 ### 1.0.1 {#101}
 * ಇತ್ತೀಚest Loco Translate ಆವೃತ್ತಿಯೊಂದಿಗೆ ಹೊಂದಾಣಿಕೆ ಸುಧಾರಣೆ

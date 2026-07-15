@@ -3,7 +3,7 @@ title: API конектирди каттаруу
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Регистрация API конечная точка {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Регистрация API конечная точка
 
 Бул турооданда сиз Ultimate Multisite /register API конечную точкун кантип колдонуп, сенин тармагыңдагы жаңы кардар үчүн бүтүндөй интеграция процессин кантип түзө ашаары жана аны Zapier аркылуу кантип жасоону үйрөнөсүз.
 

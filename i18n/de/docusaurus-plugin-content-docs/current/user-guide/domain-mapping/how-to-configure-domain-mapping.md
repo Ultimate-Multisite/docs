@@ -3,7 +3,7 @@ title: So konfigurieren Sie die Domain-Zuordnung
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# So konfigurierst du Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
+# So konfigurierst du Domain Mapping (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

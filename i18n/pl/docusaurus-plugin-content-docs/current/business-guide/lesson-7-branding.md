@@ -3,7 +3,7 @@ title: 'Lekcja 7: Personalizacja'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekcja 7: Nadanie mu własnego charakteru {#lesson-7-making-it-yours}
+# Lekcja 7: Nadanie mu własnego charakteru
 
 Twoi klienci nigdy nie mogą mieć wrażenia, że używają „jakiegoś pluginu WordPressa”. Powinni czuć, że korzystają z FitSite – platformy stworzonej specjalnie dla ich branży. Ta lekcja porusza tematykę brandingu, white-labelingu i sprawienia, że platforma będzie wyglądać jak gotowy produkt.
 

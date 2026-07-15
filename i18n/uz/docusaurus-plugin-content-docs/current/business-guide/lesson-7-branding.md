@@ -3,7 +3,7 @@ title: '7-dars: Uni o‘zingizniki qilish'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7-dars: Uni o'zingizniki qilish {#lesson-7-making-it-yours}
+# 7-dars: Uni o'zingizniki qilish
 
 Mijozlaringiz hech qachon "qandaydir WordPress plaginidan" foydalanayotgandek his qilmasligi kerak. Ular FitSite'dan -- o'z sohasi uchun qurilgan platformadan foydalanayotgandek his qilishi kerak. Bu dars brendlash, white-label qilish va platformani mahsulotdek his qildirishni qamrab oladi.
 

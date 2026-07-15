@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons অতিরিক্ত ফিচার এবং ইন্টিগ্রেশন দিয়ে Ultimate Multisite-কে আরও উন্নত করে। বেশিরভাগ অ্যাডঅন পেইড এবং [ultimatemultisite.com](https://ultimatemultisite.com) থেকে কেনা যায়।
 

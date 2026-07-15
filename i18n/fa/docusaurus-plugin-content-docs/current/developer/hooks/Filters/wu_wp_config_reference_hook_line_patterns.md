@@ -4,7 +4,7 @@ title: فیلتر - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# فیلتر: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# فیلتر: wu_wp_config_reference_hook_line_patterns
 
 ما برای پیدا کردن محلی که می‌توانیم ثابت‌های (constants) خود را در آن تزریق کنیم، سه الگو (pattern) را بررسی می‌کنیم:
 

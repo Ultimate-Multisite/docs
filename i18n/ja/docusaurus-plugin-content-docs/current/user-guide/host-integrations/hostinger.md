@@ -3,7 +3,7 @@ title: Hostinger (hPanel) 連携
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) 連携 {#hostinger-hpanel-integration}
+# Hostinger (hPanel) 連携
 
 ## 概要 {#overview}
 

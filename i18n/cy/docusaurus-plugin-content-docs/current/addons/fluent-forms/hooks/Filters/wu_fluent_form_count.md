@@ -4,7 +4,7 @@ title: Hidlydd - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Hidlydd: wu_fluent_form_count {#filter-wufluentformcount}
+# Hidlydd: wu_fluent_form_count
 
 Caniatáu i ddatblygwyr plugin newid cyfanswm cyfrif y ffurflenni
 

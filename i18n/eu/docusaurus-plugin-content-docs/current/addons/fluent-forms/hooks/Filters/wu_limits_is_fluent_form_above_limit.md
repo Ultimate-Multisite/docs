@@ -4,7 +4,7 @@ title: Iragazkia - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Iragazkia: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Iragazkia: wu_limits_is_fluent_form_above_limit
 
 Egiaztatzen du emandako inprimaki mota bat plan honetan baimenduta dagoen. Plugin garatzaileei itzulerako balioa iragazteko aukera ematen die
 

@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 ပလပ်အင် (plugin) တည်ဆောက်သူများအနေဖြင့် စာမျက်နှာကို ပြသပြီးနောက် အပိုအကြောင်းအရာများကို ထပ်မံထည့်သွင်းနိုင်ရန် ခွင့်ပြုပါသည်။
 

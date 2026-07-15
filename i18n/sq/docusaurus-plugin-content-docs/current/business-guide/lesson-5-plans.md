@@ -3,7 +3,7 @@ title: 'Mësimi 5: Dizajnimi i planeve tuaja'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Mësimi 5: Dizajnimi i Planeve Tuaja {#lesson-5-designing-your-plans}
+# Mësimi 5: Dizajnimi i Planeve Tuaja
 
 Nivelet e planeve tuaja nuk janë thjesht nivele çmimesh -- ato janë pasqyrim i mënyrës se si klientët e niches suaj funksionojnë realisht. Në këtë mësim do të dizajnoni nivele produktesh që përputhen me nevojat reale të bizneseve të fitness në faza të ndryshme.
 

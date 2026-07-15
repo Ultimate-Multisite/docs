@@ -3,7 +3,7 @@ title: Error de fitxer Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Error al instal·lar el fitxer Sunrise {#error-installing-the-sunrise-file}
+# Error al instal·lar el fitxer Sunrise
 
 El fitxer `sunrise.php` és un fitxer especial que WordPress busca mentre s'inicia. Per poder detectar el fitxer `sunrise.php`, ha de trobarse dins de la carpeta **wp-content**.
 

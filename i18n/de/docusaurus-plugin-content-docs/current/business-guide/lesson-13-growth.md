@@ -3,7 +3,7 @@ title: 'Lektion 13: Skalieren'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lektion 13: Skalierung {#lesson-13-scaling-up}
+# Lektion 13: Skalierung
 
 Du hast eine funktionierende Plattform mit zahlenden Kunden. Diese Lektion behandelt, wie du von einem kleinen Betrieb zu einem nachhaltigen Unternehmen wachsen kannst – von der Skalierung der Infrastruktur, der Automatisierung von Abläufen und der Steigerung des Umsatzes pro Kunde.
 

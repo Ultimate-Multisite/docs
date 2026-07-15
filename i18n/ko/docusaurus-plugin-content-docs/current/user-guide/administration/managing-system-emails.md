@@ -3,7 +3,7 @@ title: 시스템 이메일 관리
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# 시스템 이메일 관리 {#managing-system-emails}
+# 시스템 이메일 관리
 
 Ultimate Multisite는 가입 확인, 결제 영수증, 멤버십 변경과 같은 이벤트에 대해 다양한 시스템 이메일을 보냅니다. 이러한 이메일 템플릿을 브랜드에 맞게 사용자 지정할 수 있습니다.
 

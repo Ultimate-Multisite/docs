@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite ඇඩෝන {#ultimate-multisite-addons}
+# Ultimate Multisite ඇඩෝන
 
 ඇඩෝන, අමතර විශේෂාංග සහ ඒකාබද්ධ කිරීම් සමඟ Ultimate Multisite පුළුල් කරයි. බොහෝ ඇඩෝන ගෙවිය යුතු ඒවා වන අතර [ultimatemultisite.com](https://ultimatemultisite.com) වෙතින් මිලදී ගත හැක.
 

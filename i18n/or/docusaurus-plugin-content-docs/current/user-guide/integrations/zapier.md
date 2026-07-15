@@ -3,7 +3,7 @@ title: ଜାପିର୍ ଇଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ને Zapier સાથે જોડવું {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite ને Zapier સાથે જોડવું
 
 એક લેખમાં, આપણે [Webhooks](webhooks.md) વિશે ચર્ચા કરી હતી અને તે કેવી રીતે થર્ડ પાર્ટી એપ્લિકેશન્સ સાથે જોડાવા માટે ઉપયોગી થઈ શકે છે તેના વિશે વાત કરી હતી.
 

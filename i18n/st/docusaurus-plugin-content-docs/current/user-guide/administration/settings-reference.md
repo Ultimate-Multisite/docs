@@ -3,7 +3,7 @@ title: Tšupiso ea Litlhophiso
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tshupiso ya Disetting {#settings-reference}
+# Tshupiso ya Disetting
 
 Leqephe lena le latela disetting tse amang tsamaiso ya letsatsi le letsatsi le diphetoho tsa moraorao tsa boitshwaro ho Ultimate Multisite.
 

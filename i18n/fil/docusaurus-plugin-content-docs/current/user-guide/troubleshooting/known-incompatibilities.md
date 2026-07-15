@@ -3,7 +3,7 @@ title: Mga Kilalang Hindi Pagkakatugma
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Mga Kilalang Hindi Tugma sa Ibang Plugin {#known-incompatibilities-with-other-plugins}
+# Mga Kilalang Hindi Tugma sa Ibang Plugin
 
 Pagkatapos i-install at i-activate ang Ultimate Multisite, maaaring makaranas ka ng mga problema dahil sa mga hindi pa naaayos na incompatibility sa ibang mga plugin.
 

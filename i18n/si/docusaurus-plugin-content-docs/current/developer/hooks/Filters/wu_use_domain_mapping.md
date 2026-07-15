@@ -4,7 +4,7 @@ title: පෙරහන - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# පෙරහන: wu_use_domain_mapping {#filter-wuusedomainmapping}
+# පෙරහන: wu_use_domain_mapping
 
 මැපිං එකක් භාවිත කළ යුතුද යන්න තීරණය කරන්න
 

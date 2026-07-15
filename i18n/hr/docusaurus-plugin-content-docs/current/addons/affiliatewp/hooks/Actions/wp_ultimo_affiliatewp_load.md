@@ -4,7 +4,7 @@ title: Radnja - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# Radnja: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# Radnja: wp_ultimo_affiliatewp_load
 
 Pokreće se kada su sve ovisnosti učitane
 

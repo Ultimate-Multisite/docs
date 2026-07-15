@@ -3,7 +3,7 @@ title: 멀티 테넌트 격리
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# 다중 테넌트 격리 {#multi-tenancy-isolation}
+# 다중 테넌트 격리
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 버전에서는 주권 테넌트를 위해 개별 서브사이트 데이터베이스 및 파일 시스템 격리를 지원합니다. 이를 통해 테넌트 데이터를 분리하면서도 네트워크 수준의 프로비저닝, 청구 및 관리는 유지할 수 있습니다.
 

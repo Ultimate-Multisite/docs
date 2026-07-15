@@ -3,7 +3,7 @@ title: অন্তর্নির্মিত এজেন্টসমূহ
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Built-in Agents {#built-in-agents}
+# Built-in Agents
 
 Gratis AI Agent v1.9.0-এ পাঁচটি Built-in agent থাকে। প্রতিটিতে নির্দিষ্ট কাজের জন্য প্রস্তুত করা tools, উপযোগী system prompt, এবং সেই এলাকার সাধারণ কাজের সঙ্গে মিল থাকা starter suggestions আগে থেকেই সেট করা আছে। Agent বদলালে assistant কী করতে পারে এবং কীভাবে উত্তর দেয় তা বদলায় — আপনার দিক থেকে কোনো configuration দরকার নেই। সংশ্লিষ্ট integrations configured থাকলে Superdav AI Agent v1.18.0 এই workflows-এ schedule-aware tools, reminder records, approval gates, এবং SMS notifications যোগ করতে পারে।
 

@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Action: wu_domain_mapping_load {#action-wudomainmappingload}
+# Action: wu_domain_mapping_load
 
 எங்கள் அடிப்படை Domain Mapping ஏற்றப்பட்ட பிறகு இது தூண்டப்படுகிறது (Fired).
 

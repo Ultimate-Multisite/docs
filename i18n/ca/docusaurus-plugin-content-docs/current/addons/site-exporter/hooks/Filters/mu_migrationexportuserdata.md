@@ -4,7 +4,7 @@ title: Filtre - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filtre: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filtre: mu_migration/export/user/data
 
 Filtra el conjunt predeterminat de dades d'usuari que s'exporten o s'importen.
 

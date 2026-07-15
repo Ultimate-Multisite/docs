@@ -3,7 +3,7 @@ title: 'ਸਬਕ 12: ਕਾਰੋਬਾਰ ਚਲਾਉਣਾ'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lesson 12: Business Chalana (Running the Business) {#lesson-12-running-the-business}
+# Lesson 12: Business Chalana (Running the Business)
 
 ਇੱਕ ਪਲੇਟਫਾਰਮ ਕੋਈ ਅਜਿਹਾ ਪ੍ਰੋਜੈਕਟ ਨਹੀਂ ਹੁੰਦਾ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਖਤਮ ਕਰ ਦਿਓ—ਇਹ ਇੱਕ ਕਾਰੋਬਾਰ ਹੈ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਚਲਾਉਂਦੇ ਹੋ। ਇਹ ਲੈਸਨ FitSite ਨੂੰ ਮੈਨੇਜ ਕਰਨ ਦੇ ਰੋਜ਼ਾਨਾ ਕੰਮਾਂ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ: ਸਪੋਰਟ, ਬਿਲਿੰਗ, ਮੇਨਟੇਨੈਂਸ, ਅਤੇ ਗਾਹਕਾਂ ਨੂੰ ਖੁਸ਼ ਰੱਖਣਾ।
 

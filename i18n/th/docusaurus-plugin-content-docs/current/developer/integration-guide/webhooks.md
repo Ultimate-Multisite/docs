@@ -3,7 +3,7 @@ title: การจัดการ Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Handling {#webhook-handling}
+# Webhook Handling
 
 สร้าง endpoint webhooks แบบกำหนดเองเพื่อรับเหตุการณ์ (events) จากบริการภายนอก และซิงค์ข้อมูลกับ Ultimate Multisite
 

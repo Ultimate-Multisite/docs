@@ -3,7 +3,7 @@ title: ドメイン製品と価格設定
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# ドメイン製品と価格設定 {#domain-products-and-pricing}
+# ドメイン製品と価格設定
 
 ドメイン製品は、価格設定、TLD、WHOISプライバシー、プロバイダーの選択を管理するための仕組みです。各ドメイン製品は、標準のUltimate Multisite製品に、追加の**ドメイン設定**タブが組み込まれたものです。
 

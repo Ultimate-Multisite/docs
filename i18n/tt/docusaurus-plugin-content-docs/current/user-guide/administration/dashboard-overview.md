@@ -3,7 +3,7 @@ title: Панель управления общие сведения
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Панель управления обзором {#dashboard-overview}
+# Панель управления обзором
 
 Ultimate Multisite у вас есть специальная **Dashboard** в меню Ultimate Multisite, а также добавляет виджеты на Общую панель администратора сети (Network Dashboard). В этой статье мы рассмотрим, что вы увидите в обоих местах.
 

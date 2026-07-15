@@ -3,7 +3,7 @@ title: Integriteco Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integation {#cloudways-integration}
+# Cloudways Integation
 
 ## Aperçu {#overview}
 Cloudways estas platformo de alojado cloud gérée kiu permiĉas al vi deplopi sita WordPress sur diversaj cloud providendoj kiel DigitalOcean, AWS, Google Cloud kaj pli. Ĉi tiu integriĝo permesas aŭtomatan domeno sincronigon kaj SSL-sertifikatoj manĝestion inter Ultimate Multisite kaj Cloudways.

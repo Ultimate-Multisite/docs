@@ -3,7 +3,7 @@ title: پیمانيدن ۽ انوائسز جو انتظام
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ادائیگیوں اور انوائسز کا انتظام کرنا {#managing-payments-and-invoices}
+# ادائیگیوں اور انوائسز کا انتظام کرنا
 
 ## ادائیگی کی سیٹنگز {#payment-settings}
 

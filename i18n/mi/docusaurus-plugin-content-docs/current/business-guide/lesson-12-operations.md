@@ -3,7 +3,7 @@ title: 'Akoranga 12: Te Whakahaere i te Pakihi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Akoranga 12: Te Whakahaere i te Pakihi {#lesson-12-running-the-business}
+# Akoranga 12: Te Whakahaere i te Pakihi
 
 Ehara te tūāpapa i te kaupapa ka oti i a koe -- he pakihi kē ka whakahaerehia e koe. Ka kapi i tēnei akoranga ngā whakahaere o ia rā mō te whakahaere i a FitSite: te tautoko, te nama, te tiaki, me te pupuri kia hari ngā kiritaki.
 

@@ -3,7 +3,7 @@ title: แบบฟอร์มติดต่อสำหรับ Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# แบบฟอร์มติดต่อด้วย Site Builder {#site-builder-contact-forms}
+# แบบฟอร์มติดต่อด้วย Site Builder
 
 Superdav AI Agent v1.10.0 เพิ่มความสามารถในการสร้างแบบฟอร์มติดต่อได้โดยตรงจากหน้าต่างแชท โดยใช้ Site Builder agent ทำให้คุณสามารถเพิ่มแบบฟอร์มติดต่อที่ใช้งานได้จริงลงในหน้าใดก็ได้โดยไม่ต้องออกจากหน้าแชท
 

@@ -3,7 +3,7 @@ title: ડિઝાઇન દિશા
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction (ડિઝાઇન દિશા) {#design-direction}
+# Design Direction (ડિઝાઇન દિશા)
 
 **Design Direction** સ્ટેપ તમને તમારા થીમના વિઝ્યુઅલ ડિઝાઇનને રિવ્યૂ કરવા, સુધારવા અને ફાઇનલ કરવા દે છે, જે થીમ બિલ્ડર દ્વારા સંપૂર્ણ થીમ જનરેટ થાય તે પહેલાં જરૂરી છે.
 

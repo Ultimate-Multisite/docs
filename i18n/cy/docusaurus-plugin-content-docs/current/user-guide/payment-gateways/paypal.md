@@ -3,7 +3,7 @@ title: Cyfluniad PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ymddio'r Gweithro PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Ymddio'r Gweithro PayPal (v2)
 
 _**NOTIADOLIA CRYTICA: Mae'r ail ddefnyddiol hwn yn cyfeiriad Ultimate Multisite ffurf 2.x.**_
 

@@ -3,7 +3,7 @@ title: Kifizetések fogadása
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kifizetések fogadása (v2) {#getting-paid-v2}
+# Kifizetések fogadása (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 

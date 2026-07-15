@@ -4,7 +4,7 @@ title: 필터 - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# 필터: wu_current_set_site {#filter-wucurrentsetsite}
+# 필터: wu_current_set_site
 
 개발자가 기본 동작을 수정하고 현재 사이트를 다르게 설정할 수 있도록 허용합니다.
 

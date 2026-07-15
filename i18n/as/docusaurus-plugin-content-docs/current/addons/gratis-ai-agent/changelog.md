@@ -3,7 +3,7 @@ title: পরিবর্তন তালিকা
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# পৰিৱৰ্তনৰ তালিকা (Changelog) {#changelog}
+# পৰিৱৰ্তনৰ তালিকা (Changelog)
 
 ## ১.৯.০ — মুকলি কৰা হৈ: ২০২৬-০৪-২৮ {#190--released-on-2026-04-28}
 

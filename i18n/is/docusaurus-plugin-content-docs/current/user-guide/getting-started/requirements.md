@@ -3,7 +3,7 @@ title: Krav
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Kræftir fyrir Ultimate Multisite {#ultimate-multisite-requirements}
+# Kræftir fyrir Ultimate Multisite
 
 Fyrst sem þú gætir fundið í sér áður en þú kaupir Ultimate Multisite er hvaða kröfur sem eru til að nota við þennan plugin. Vel, það er þó bara nokkrar grunnkröfur til að nota Ultimate Multisite: ein **vöndna náttúru** (domain name), góð **þjónustu fyrir vefsítanum** (hosting provider) og einn WordPress **Multisite** uppsetning. Það er allt sem þú þarft!
 

@@ -3,7 +3,7 @@ title: 'Akoranga 7: Te Hanga kia Māu Ake'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Akoranga 7: Kia Riro Māu {#lesson-7-making-it-yours}
+# Akoranga 7: Kia Riro Māu
 
 Kaua rawa ō kiritaki e whakaaro kei te whakamahi rātou i "tētahi WordPress mono tāpiri." Me whakaaro kē rātou kei te whakamahi rātou i FitSite -- he tūāpapa i hangaia mō tō rātou ahumahi. Ka kapi i tēnei akoranga te waitohutanga, te white-labeling, me te whakakite i te tūāpapa hei hua.
 

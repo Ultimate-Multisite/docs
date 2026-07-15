@@ -3,7 +3,7 @@ title: Nastavenie manuálnych platieb
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Nastavenie manuálnych platieb (v2) {#setting-up-manual-payments-v2}
+# Nastavenie manuálnych platieb (v2)
 
 _**DÔLEŽITÁ POZNÁMKA: Tento článok sa vzťahuje na Ultimate Multisite verzie 2.x.**_
 

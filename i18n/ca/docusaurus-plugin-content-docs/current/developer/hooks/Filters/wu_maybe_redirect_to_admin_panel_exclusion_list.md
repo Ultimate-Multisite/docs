@@ -4,7 +4,7 @@ title: Filtre - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Filtre: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Filtre: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 Crea una llista d’exclusió de paràmetres que impedeixen la redirecció automàtica.
 

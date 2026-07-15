@@ -4,7 +4,7 @@ title: Akcija - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Akcija: wu_cart_setup {#action-wucartsetup}
+# Akcija: wu_cart_setup
 
 Omogućava programerima da izvrše dodatne promjene na objektu za naplatu (checkout object).
 

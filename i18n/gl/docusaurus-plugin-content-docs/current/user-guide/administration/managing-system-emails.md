@@ -3,7 +3,7 @@ title: Xestión de correos do sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gerenciamento de E-mails do Sistema {#managing-system-emails}
+# Gerenciamento de E-mails do Sistema
 
 O Ultimate Multisite envia vários e-mails do sistema para eventos como confirmações de inscrição, recibos de pagamento e alterações de associação. Você pode personalizar esses modelos de e-mail para combinar com a sua marca.
 

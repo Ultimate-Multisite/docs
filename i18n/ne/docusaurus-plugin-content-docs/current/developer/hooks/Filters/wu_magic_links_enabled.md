@@ -4,7 +4,7 @@ title: फिल्टर - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# फिल्टर: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# फिल्टर: wu_magic_links_enabled
 
 जादुई लिंकहरू सक्षम छन् कि छैनन् भन्ने फिल्टर गर्छ।
 

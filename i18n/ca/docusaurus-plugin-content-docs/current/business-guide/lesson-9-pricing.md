@@ -3,7 +3,7 @@ title: 'Lliçó 9: Prebació per profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Aula 9: Preu per a generar beneficis {#lesson-9-pricing-for-profit}
+# Aula 9: Preu per a generar beneficis
 
 A l'Aula 5 vam establir els preus inicials per als plans de FitSite. Ara, refinejem l'estratègia de preus amb tècniques que augmenten els ingressos, incentiven les actualitzacions i redueixen l'abandó (churn).
 

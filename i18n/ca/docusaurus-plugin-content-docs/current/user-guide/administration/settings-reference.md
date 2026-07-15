@@ -3,7 +3,7 @@ title: Referència de configuració
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referència de configuració {#settings-reference}
+# Referència de configuració
 
 Aquesta pàgina fa el seguiment de la configuració que afecta l’administració del dia a dia i els canvis recents de comportament a Ultimate Multisite.
 

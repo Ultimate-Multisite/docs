@@ -3,7 +3,7 @@ title: Innstillingar fyrir Sunrise Constant á Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Skráning Sunrise konstantar í Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Skráning Sunrise konstantar í Closte
 
 Notanirnar þínar geta lokað `wp-config.php` vegna öryggisþátta. Þetta þýðir að Ultimate Multisite nefnast ekki sjálfskipta að breyta textanum til að innihalda nauðsynlegar konstantur fyrir mappa-myndun og övrutt eiginleika. Closte er einn slíkar notanirnar.
 

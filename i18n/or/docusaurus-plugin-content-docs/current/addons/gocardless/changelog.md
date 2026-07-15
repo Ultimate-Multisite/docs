@@ -3,7 +3,7 @@ title: GoCardless ପରିବର୍ତ୍ତନ ଲଗ୍
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless ପରିବର୍ତ୍ତନ ତାଲିକା {#gocardless-changelog}
+# GoCardless ପରିବର୍ତ୍ତନ ତାଲିକା
 
 ସଂସ୍କରଣ: 1.0.3 - 2026-05-05 ରେ ପ୍ରକାଶିତ
 * ସୁଧାର: ଏକ GoCardless membership pending କିମ୍ବା on-hold ଅବସ୍ଥାରେ ଥିବାବେଳେ ବାତିଲ୍ ହେଲେ, ଅନାଥ pending ସାଇଟ୍‌ଗୁଡ଼ିକୁ ଏବେ ସଫା କରାଯାଏ

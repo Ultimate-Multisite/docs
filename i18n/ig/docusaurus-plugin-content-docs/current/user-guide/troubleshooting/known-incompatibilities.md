@@ -3,7 +3,7 @@ title: Ndu na-akụzụrụ
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Incompatibilities Known with Other Plugins {#known-incompatibilities-with-other-plugins}
+# Incompatibilities Known with Other Plugins
 
 Depois de instalar e ativar Ultimate Multisite, bạn có thể gặp vấn đề vì nó không tương thích với một số plugin khác mà chưa được khắc phục.
 

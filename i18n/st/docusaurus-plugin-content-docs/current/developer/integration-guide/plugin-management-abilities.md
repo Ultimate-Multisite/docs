@@ -3,7 +3,7 @@ title: Bokhoni ba Tsamaiso ea Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Bokgoni ba Taolo ya Dikatoloso {#plugin-management-abilities}
+# Bokgoni ba Taolo ya Dikatoloso
 
 Gratis AI Agent v1.5.0 e tla le **bokgoni ba 7 ba taolo ya dikatoloso** boo mothusi wa AI a ka bo bitsang nakong ya puisano. Bokgoni bona bo fana ka taolo ya mananeo hodima dikatoloso tsa WordPress tse kentsweng ka [Sistimi ya Sehahi sa Dikatoloso le Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

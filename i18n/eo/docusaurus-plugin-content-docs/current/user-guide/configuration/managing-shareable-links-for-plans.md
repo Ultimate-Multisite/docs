@@ -3,7 +3,7 @@ title: Maniĝo de partaj linkoj por planoj
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# La gere de linkoj partajebli por planojn {#managing-shareable-links-for-plans}
+# La gere de linkoj partajebli por planojn
 
 Ultimate Multisite donas al vi la opcion de partaji linkojn de planojn direkte kun via voslat. Por ti fari tion, rajdu al iu ajpas de voslo planoj kaj kliku la butonon "_Click to copy the Shareable Link_" (Kliknu por kopii la Partajeblan Linko).
 

@@ -3,7 +3,7 @@ title: Multisite-Usetzigsassistent
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite beinhaltet en eingebauten wizard, wo eifach e normale WordPress-Installation automatisch in es WordPress Multisite Netzwerk umwandlet. Das heisst, du muesch nöd manuell `wp-config.php` bearbeite oder Datenbankbefehl usfüehre.
 

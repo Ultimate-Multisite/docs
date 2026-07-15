@@ -4,7 +4,7 @@ title: Filter - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# فلٹر: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# فلٹر: wu_is_development_mode
 
 پلگ ان ڈویلپرز کو ڈویلپمنٹ موڈ کے لیے اضافی ٹیسٹ شامل کرنے کی اجازت دیتا ہے۔
 

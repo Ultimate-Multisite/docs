@@ -4,7 +4,7 @@ title: Bộ lọc - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Bộ lọc: secure_auth_cookie {#filter-secureauthcookie}
+# Bộ lọc: secure_auth_cookie
 
 Bộ lọc này xác định xem cookie xác thực có nên chỉ được gửi qua HTTPS hay không.
 

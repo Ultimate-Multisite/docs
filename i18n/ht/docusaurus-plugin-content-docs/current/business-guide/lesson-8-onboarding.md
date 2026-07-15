@@ -3,7 +3,7 @@ title: 'Leson 8: Entegrasyon kliyan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Leson 8: Entegrasyon Kliyan {#lesson-8-customer-onboarding}
+# Leson 8: Entegrasyon Kliyan
 
 Fè yon kliyan enskri se sèlman mwatye travay la. Si yo konekte, yo santi yo depase, epi yo pa janm retounen, ou pèdi yo. Leson sa a konsevwa eksperyans ki fè yon nouvo enskripsyon tounen yon kliyan aktif, angaje.
 

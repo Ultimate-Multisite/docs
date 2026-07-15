@@ -4,7 +4,7 @@ title: Eylem - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Eylem: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Eylem: wu_domain_seller_process_purchase
 
 Alan adı satın alımı, ödeme tamamlandıktan sonra işlenirken tetiklenir.
 

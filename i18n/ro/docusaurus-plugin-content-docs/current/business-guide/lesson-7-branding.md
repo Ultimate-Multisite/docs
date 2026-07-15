@@ -3,7 +3,7 @@ title: 'Lecția 7: Personalizarea'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lecția 7: Să-l faci să fie al tău {#lesson-7-making-it-yours}
+# Lecția 7: Să-l faci să fie al tău
 
 Clienții tăi nu trebuie să aibă niciodată senzația că folosesc „un plugin WordPress”. Ar trebui să simtă că folosesc FitSite — o platformă construită pentru industria lor. Această lecție acoperă branding-ul, white-labeling-ul și cum să faci ca platforma să pară un produs propriu.
 

@@ -3,7 +3,7 @@ title: Skrá API-endur
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API-endurinn register API-endurinn {#the-ultimate-multisite-register-api-endpoint}
+# API-endurinn register API-endurinn
 
 Í þessum leiðbeiningum lærir þú hvernig nota upphafs- og skilgreiningar API-endurinn í Ultimate Multisite til að skapa heildar innleifingarprosessi fyrir nýja viðskipti í netinu þínu og hvernig þú getur gerð þess með Zapier.
 

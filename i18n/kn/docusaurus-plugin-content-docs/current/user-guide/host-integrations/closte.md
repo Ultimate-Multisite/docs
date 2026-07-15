@@ -3,7 +3,7 @@ title: Closte ಏಕೀಕರಣ
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ಏಕೀಕರಣ {#closte-integration}
+# Closte ಏಕೀಕರಣ
 
 ## ಅವಲೋಕನ {#overview}
 Closte ಎಂಬುದು Google Cloud ಮೂಲಸೌಕರ್ಯದ ಮೇಲೆ ನಿರ್ಮಿಸಲಾದ ನಿರ್ವಹಿತ WordPress ಹೋಸ್ಟಿಂಗ್ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಆಗಿದೆ. ಈ ಏಕೀಕರಣವು Ultimate Multisite ಮತ್ತು Closte ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ಸಿಂಕ್ ಮತ್ತು SSL ಪ್ರಮಾಣಪತ್ರ ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.

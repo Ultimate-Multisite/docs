@@ -4,7 +4,7 @@ title: Action - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Action: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Action: wu_mt_providers_registered
 
 જ્યારે ડિફોલ્ટ પ્રોવાઇડર્સ રજીસ્ટર થઈ જાય છે, ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

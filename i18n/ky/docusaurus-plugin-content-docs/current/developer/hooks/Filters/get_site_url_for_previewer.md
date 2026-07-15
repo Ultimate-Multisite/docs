@@ -4,7 +4,7 @@ title: Чыпка - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Фильтр: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Фильтр: get_site_url_for_previewer
 
 Plugin иштеп чыгуучуларына previewer ичинде колдонулган URL'ди чыпкалоого мүмкүндүк берет
 

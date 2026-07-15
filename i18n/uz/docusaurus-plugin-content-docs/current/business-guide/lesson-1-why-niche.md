@@ -3,7 +3,7 @@ title: 'Dars 1: Nega nisha g‘olib bo‘ladi'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# 1-dars: Nega tor yo‘nalish yutadi {#lesson-1-why-niche-wins}
+# 1-dars: Nega tor yo‘nalish yutadi
 
 Har qanday softwarega tegishdan oldin, nima uchun aniq auditoriya uchun qurish siz qabul qiladigan eng muhim qaror ekanini tushunishingiz kerak.
 

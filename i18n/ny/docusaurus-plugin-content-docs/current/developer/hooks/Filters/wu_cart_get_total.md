@@ -4,7 +4,7 @@ title: Fyuluta - wu_cart_get_total
 sidebar_label: wu_cart_get_total
 _i18n_hash: 72d9429a9eaa08472baafef395dd7138
 ---
-# Sefa: wu_cart_get_total {#filter-wucartgettotal}
+# Sefa: wu_cart_get_total
 
 Sefani ndalama zonse za "ndalama yoyambirira".
 

@@ -4,7 +4,7 @@ title: Ficil - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Ficil: set_logged_in_cookie {#action-setloggedincookie}
+# Ficil: set_logged_in_cookie
 
 Wuxuu dhacaa isla markiiba ka hor inta aan la dejin cookie-ga xaqiijinta ee logged-in.
 

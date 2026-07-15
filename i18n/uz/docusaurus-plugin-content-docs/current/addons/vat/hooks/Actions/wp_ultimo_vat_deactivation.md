@@ -4,7 +4,7 @@ title: Amal - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Harakat: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Harakat: wp_ultimo_vat_deactivation
 
 pluginning boshqa qismlariga o‘chirish uchun o‘z tartiblarini ulashga ruxsat beradi
 

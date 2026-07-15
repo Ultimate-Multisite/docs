@@ -3,7 +3,7 @@ title: Фаҳмидани дашборд
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Фаҳми корторҷи Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Фаҳми корторҷи Ultimate Multisite Dashboard
 
 Пеш аз он ки ба танзимотҳои мураккаби интихобҳо ва ҷанбаҳои амалии Ultimate Multisite ворид шавем, биёвед ба дашборӣ назар кунем.
 

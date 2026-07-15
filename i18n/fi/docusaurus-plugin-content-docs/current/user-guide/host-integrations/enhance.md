@@ -3,7 +3,7 @@ title: Paranna hallintapaneelin integrointia
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Hallitse hallintapaneelin integrointi {#enhance-control-panel-integration}
+# Hallitse hallintapaneelin integrointi
 
 ## Yleiskatsaus {#overview}
 Enhance on moderni hallintapaneeli, joka tarjoaa tehokkaita isännöinnin automaatiota ja hallintamahdollisuuksia. Tämä integrointi mahdollistaa verkkotunnusten automaattisen synkronoinnin sekä SSL-sertifikaattien hallinnan Ultimate Multisite -järjestelmän ja Enhance Control Panel -palvelimen välillä.

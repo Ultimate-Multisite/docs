@@ -4,7 +4,7 @@ title: Ìṣe - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Ṣíṣe àfikún action àdáni níbí kí a lè ní ibi láti enqueue scripts àti styles bí ó ṣe nílò\ kí a sì rí dájú pé wọ́n máa ń kojú sórí àwọn ojúewé tó tọ́ nìkan
 

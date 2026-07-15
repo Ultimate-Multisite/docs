@@ -3,7 +3,7 @@ title: 'Lezzjoni 6: L-Esperjenza tar-Reġistrazzjoni'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lezzjoni 6: L-Esperjenza tar-Reġistrazzjoni {#lesson-6-the-signup-experience}
+# Lezzjoni 6: L-Esperjenza tar-Reġistrazzjoni
 
 Il-fluss tal-ħlas huwa fejn l-interess isir dħul. Proċess ta' reġistrazzjoni konfuż jew ġeneriku jitlef il-klijenti. Fluss speċifiku għan-niċċa li jitkellem bil-lingwa tagħhom u jinħass bla tbatija jikkonvertihom.
 

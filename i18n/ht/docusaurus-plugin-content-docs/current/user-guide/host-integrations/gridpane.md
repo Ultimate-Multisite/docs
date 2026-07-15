@@ -3,7 +3,7 @@ title: Entegrasyon GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Intégrasyon GridPane {#gridpane-integration}
+# Intégrasyon GridPane
 
 ## Aperçu {#overview}
 GridPane separe yon panèl kontwòl wèb WordPress ki espesyalize pou pwofesyonèl WordPress ki seri. Entegrasyon sa a pèmèt senkronizasyon domèn otomatik ak jere sertifikat SSL ant Ultimate Multisite ak GridPane.

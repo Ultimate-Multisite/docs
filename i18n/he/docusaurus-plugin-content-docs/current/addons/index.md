@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# תוספי Ultimate Multisite {#ultimate-multisite-addons}
+# תוספי Ultimate Multisite
 
 תוספים מרחיבים את Ultimate Multisite עם תכונות ואינטגרציות נוספות. רוב התוספים בתשלום וניתן לרכוש אותם מ-[ultimatemultisite.com](https://ultimatemultisite.com).
 

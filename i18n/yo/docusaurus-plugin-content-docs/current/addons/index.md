@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Àwọn Àfikún Ultimate Multisite {#ultimate-multisite-addons}
+# Àwọn Àfikún Ultimate Multisite
 
 Àwọn àfikún ń faagun Ultimate Multisite pẹ̀lú àwọn àfikún ẹ̀yà àti ìṣepọ̀. Ọ̀pọ̀lọpọ̀ àfikún ni wọ́n sanwó fún, a sì lè rà wọ́n láti [ultimatemultisite.com](https://ultimatemultisite.com).
 

@@ -3,7 +3,7 @@ title: Поле оформления заказа и DNS клиента
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Поле оформления заказа и управление DNS клиента {#checkout-field-and-customer-dns-management}
+# Поле оформления заказа и управление DNS клиента
 
 ## Поле оформления заказа «Выбор домена» {#the-domain-selection-checkout-field}
 

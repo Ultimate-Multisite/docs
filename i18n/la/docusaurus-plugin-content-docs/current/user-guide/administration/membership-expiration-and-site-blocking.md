@@ -3,7 +3,7 @@ title: Expiratio Memoris et Bloqueus Situs
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiratio Membrum et Bloccium Situs {#membership-expiration-and-site-blocking}
+# Expiratio Membrum et Bloccium Situs
 
 Hoc opus te docet quomodo Ultimate Multisite maneat expirationes membrorum, finitiones probationum et blocationem sitorum in frontend. Hoc dicit omnia de vita membrorum a activa ad expiratum, de statibus quae sita bloccanda regunt, et quod debet examinari cum sita manent accessibilia post expiration membrorum.
 

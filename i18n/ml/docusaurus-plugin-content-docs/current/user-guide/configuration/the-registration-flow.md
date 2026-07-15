@@ -3,7 +3,7 @@ title: രജിസ്ട്രേഷൻ പ്രക്രിയ
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# രജിസ്ട്രേഷൻ പ്രക്രിയ (v2) {#the-registration-flow-v2}
+# രജിസ്ട്രേഷൻ പ്രക്രിയ (v2)
 
 _**പ്രധാന കുറിപ്പ്: ഈ ലേഖനം Ultimate Multisite പതിപ്പ് 2.x-നെക്കുറിച്ചാണ്.**_
 

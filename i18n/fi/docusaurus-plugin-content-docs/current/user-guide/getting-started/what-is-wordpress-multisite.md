@@ -3,7 +3,7 @@ title: Mitä WordPress Multisite on?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mitä WordPress Multisite on? {#what-is-wordpress-multisite}
+# Mitä WordPress Multisite on?
 
 WordPressin ytimessä on ominaisuus nimeltään ‘Multisite’, jonka juuret ulottuvat vuoteen 2010, jolloin WordPress 3.0 lanseeratti. Sen jälkeen se on saanut useita versioita, joilla on tavoitteena tuoda uusia ominaisuuksia ja parantaa turvallisuutta.
 

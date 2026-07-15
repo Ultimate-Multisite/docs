@@ -4,7 +4,7 @@ title: Radnja - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# Radnja: wu_mt_migration_completed {#action-wumtmigrationcompleted}
+# Radnja: wu_mt_migration_completed
 
 Pokreće se kada je migracija dovršena.
 

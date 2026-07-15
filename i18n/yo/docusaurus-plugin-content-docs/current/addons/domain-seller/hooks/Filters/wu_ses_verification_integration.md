@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Àlẹmọ: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Àlẹmọ: wu_ses_verification_integration
 
 Àlẹmọ: gba kóòdù míràn láàyè láti pèsè object ìṣepọ̀ SES.
 

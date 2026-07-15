@@ -3,7 +3,7 @@ title: Header-Domain-Sich
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Benotzt dëse Setup, wann Dir e klenge Header-Formulaire wëllt, deen eng Domain-Sich start an de Client duerno aus verfügbare Domains am Ultimate Multisite Checkout auswiele léisst.
 

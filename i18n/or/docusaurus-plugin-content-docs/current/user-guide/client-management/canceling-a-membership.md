@@ -3,7 +3,7 @@ title: ସଦସ୍ୟତା ରୁ ବାଦ ଦେବା
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# ମେମ୍ବରସିପ୍ (Membership) ବାତିଲ କରିବା (v2) {#canceling-a-membership-v2}
+# ମେମ୍ବରସିପ୍ (Membership) ବାତିଲ କରିବା (v2)
 
 _**ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ନୋଟ: ଏହି ଆଇକଣିକ ବିଷୟଟି Ultimate Multisite version 2.x-କୁ ସମ୍ବନ୍ଧିତ।**_
 

@@ -3,7 +3,7 @@ title: ការកំណត់ Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent ការកំណត់ {#gratis-ai-agent-settings}
+# Gratis AI Agent ការកំណត់
 
 អេក្រង់ **Settings → Advanced** នៅក្នុង Gratis AI Agent ផ្តល់ការកំណត់កម្រិតអ្នកគ្រប់គ្រង សម្រាប់ការរួមបញ្ចូល backend។ ទំព័រនេះពន្យល់អំពីការបញ្ជូន feedback បន្ត, key របស់អ្នកផ្តល់សេវាស្វែងរក, ការរៀបចំសេវា Superdav ដែលគ្រប់គ្រង, ការគ្រប់គ្រង Google Calendar, ការកំណត់ TextBee SMS និង feature flags ទូទាំងបណ្តាញ។
 

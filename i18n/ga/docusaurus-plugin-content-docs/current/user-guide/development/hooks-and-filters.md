@@ -3,7 +3,7 @@ title: Cuimhneacháin agus Filtí
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks agus Filters {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Hooks agus Filters
 
 Is é an Ultimate Multisite bhí ag cur le chéile de fhoinne agus de chuid ar chuid dáta. Tá iad ag cur le chéile hook agus filter a bheidh agat chun code nua a chur i ngníomh le fuinne sin atá ag obair.
 

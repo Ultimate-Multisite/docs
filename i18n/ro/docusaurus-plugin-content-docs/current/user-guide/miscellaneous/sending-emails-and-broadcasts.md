@@ -3,7 +3,7 @@ title: Trimiterea e-mailurilor și a difuzărilor
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Trimiterea de emailuri și Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Trimiterea de emailuri și Broadcasts (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

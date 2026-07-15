@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# Filter: wp_ultimo_site_exporter_get_option
 
 ಇದು ಸ್ಲಗ್ ರೂಪದಲ್ಲಿರುವ ನೆಟ್‌ವರ್ಕ್ ಆಪ್ಷನ್ ಮೌಲ್ಯವನ್ನು ಮರಳಿ ನೀಡುತ್ತದೆ.
 

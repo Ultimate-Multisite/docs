@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Ukuhlanganiswa kwe-WP Engine {#wp-engine-integration}
+# Ukuhlanganiswa kwe-WP Engine
 
 ## Ukubuka konke {#overview}
 I-WP Engine iyinkundla esezingeni eliphezulu yokusingatha i-WordPress ephethwe, enikeza ukusebenza okuthuthukisiwe, ukuphepha, nokukhula kwamasayithi e-WordPress. Lokhu kuhlanganiswa kwenza ukuvumelanisa okuzenzakalelayo kwamadomeyini phakathi kwe-Ultimate Multisite ne-WP Engine.

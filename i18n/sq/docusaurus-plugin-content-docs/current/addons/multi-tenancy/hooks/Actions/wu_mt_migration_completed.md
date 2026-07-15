@@ -4,7 +4,7 @@ title: Veprim - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# Veprimi: wu_mt_migration_completed {#action-wumtmigrationcompleted}
+# Veprimi: wu_mt_migration_completed
 
 Aktivizohet kur përfundon një migrim.
 

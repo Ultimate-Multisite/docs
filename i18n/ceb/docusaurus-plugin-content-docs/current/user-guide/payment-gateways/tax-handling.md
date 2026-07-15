@@ -3,7 +3,7 @@ title: Pagdumala sa Buhis
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pagdumala sa Buhis {#tax-handling}
+# Pagdumala sa Buhis
 
 Ang Ultimate Multisite adunay module sa pagkolekta og buhis nga gitukod sulod sa among core plugin, busa kung kinahanglan nimo mangolekta og sales taxes sa imong mga plan, package ug serbisyo, dali ra nimo kining mahimo nga dili kinahanglan mag-install og bisan unsang add-ons.
 

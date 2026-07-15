@@ -3,7 +3,7 @@ title: Nhoroondo yeshanduko dzeMutumiri Kunze weSaiti
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Nhoroondo yeshanduko {#site-exporter-changelog}
+# Site Exporter Nhoroondo yeshanduko
 
 Shanduro: 1.0.6 - Yakaburitswa musi wa2026-05-11
 * Zvitsva: Kutumira kunze site ikozvino kunosanganisa index.php inozvitangisa kuitira kuti ZIP iiswe pa host itsva pasina kuisa plugin yakaparadzana

@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 చెక్అవుట్ పూర్తయిన తర్వాత డొమైన్ కొనుగోలు ప్రాసెస్ అవుతున్నప్పుడు ఇది ట్రిగ్గర్ అవుతుంది.
 

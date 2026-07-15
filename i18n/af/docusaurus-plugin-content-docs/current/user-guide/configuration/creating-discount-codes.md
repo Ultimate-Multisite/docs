@@ -3,7 +3,7 @@ title: Skep Afslagkodes
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Skep Kortingskodes (v2) {#creating-discount-codes-v2}
+# Skep Kortingskodes (v2)
 
 _**BELANGRIKKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

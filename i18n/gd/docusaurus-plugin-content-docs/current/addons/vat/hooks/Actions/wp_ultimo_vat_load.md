@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Gnìomh: wp_ultimo_vat_load {#action-wpultimovatload}
+# Gnìomh: wp_ultimo_vat_load
 
 Thèid a bhrosnachadh nuair a chaidh na h-uile eisimeileachdan a luchdadh
 

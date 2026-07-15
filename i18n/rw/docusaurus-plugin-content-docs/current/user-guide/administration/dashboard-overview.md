@@ -3,7 +3,7 @@ title: Uburyo bwo gukoresha Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Uburyo mu Dashboard {#dashboard-overview}
+# Uburyo mu Dashboard
 
 Ultimate Multisite yashobora uba na **Dashboard** ikomeye kandi ku menu ya Ultimate Multisite, kandi yashobora guhuza widgets ku Network Dashboard. Iyi ndokuriye itangira ibyo wumva muri ubwonko bwo mu gihe cyose.
 

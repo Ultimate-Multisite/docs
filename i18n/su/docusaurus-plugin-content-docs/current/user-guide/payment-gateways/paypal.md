@@ -3,7 +3,7 @@ title: Ngajantenkeun PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ngaturkeun Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Ngaturkeun Gateway PayPal (v2)
 
 _**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
 

@@ -3,7 +3,7 @@ title: ایک کسٹم رجسٹرار انٹیگریشن بنانا
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# ایک کسٹم رجسٹرار انٹیگریشن بنانا {#building-a-custom-registrar-integration}
+# ایک کسٹم رجسٹرار انٹیگریشن بنانا
 
 Domain Seller addon ایک **Integration Registry** پیٹرن استعمال کرتا ہے۔ ہر رجسٹرار ایک PHP کلاس ہوتی ہے جو `Domain_Selling_Capability` کو نافذ (implement) کرتی ہے اور `wu_domain_seller_register_capabilities` action hook کے ذریعے خود کو رجسٹر کرتی ہے۔
 

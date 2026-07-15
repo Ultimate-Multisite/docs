@@ -3,9 +3,9 @@ title: Papildinio šablonas
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Priedo šablonas {#addon-template}
+# Priedo šablonas
 
-{{ADDON_DESCRIPTION}}
+Papildinio šablonas — Ultimate Multisite.
 
 ## Reikalavimai {#requirements}
 

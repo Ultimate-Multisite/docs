@@ -3,7 +3,7 @@ title: Sivuston rakentamisen tilan poistominen ilmoitus
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Sivustiedonrakennusmuodon poistomääräys {#site-builder-mode-removal-notice}
+# Sivustiedonrakennusmuodon poistomääräys
 
 **Sivustotiedonrakennusmalli on poistettu Superdav AI Agent v1.12.0:ssa.** Jos käytit sivustotiedonrakennusmallia, sinun tulee siirtyä **Setup Assistant -agenttiin** teemojen luomiseen ja sivuston asetteluun.
 

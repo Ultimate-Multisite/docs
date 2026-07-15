@@ -3,7 +3,7 @@ title: Að sérsníða skráningareyðublaðið þitt
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Sérsníða skráningareyðublaðið þitt {#customizing-your-registration-form}
+# Sérsníða skráningareyðublaðið þitt
 
 Til að láta netið þitt líta einstakt út miðað við öll önnur SaaS sem byggð eru á WordPress-vettvanginum, gerir Ultimate Multisite þér kleift að sérsníða skráningar- og innskráningarsíðurnar þínar með **Checkout Forms** eiginleikanum okkar.
 

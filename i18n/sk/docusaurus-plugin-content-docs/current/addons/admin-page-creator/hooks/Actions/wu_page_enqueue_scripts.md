@@ -4,7 +4,7 @@ title: Akcia - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Pridáva sa sem vlastná akcia, aby sme mali miesto na zaradenie skriptov a štýlov podľa potreby\ a zabezpečili, že sa načítajú iba na správnych stránkach
 

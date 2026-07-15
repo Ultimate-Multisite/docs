@@ -4,7 +4,7 @@ title: Filter - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filter: wu_pending_payment_message
 
 वापरकर्त्याला प्रलंबित पेमेंटबद्दलचा संदेश बदलण्याची परवानगी देतो.
 

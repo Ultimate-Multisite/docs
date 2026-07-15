@@ -4,7 +4,7 @@ title: Sefe - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Sefe: wu_username_from_email {#filter-wuusernamefromemail}
+# Sefe: wu_username_from_email
 
 Sefa lebitso la mosebedisi la moreki e motjha.
 

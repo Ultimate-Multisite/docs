@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Шүүлтүүр: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Шүүлтүүр: wu_element_block_types_to_check
 
 Бид дараа нь нэмэлт блокууд нэмэх шаардлагатай байж магадгүй.
 

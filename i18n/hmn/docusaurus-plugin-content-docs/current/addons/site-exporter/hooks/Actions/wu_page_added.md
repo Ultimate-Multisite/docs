@@ -4,7 +4,7 @@ title: Kev ua - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Kev ua: wu_page_added {#action-wupageadded}
+# Kev ua: wu_page_added
 
 Tso cai rau cov neeg tsim plugin khiav tej yam ntxiv thaum cov nplooj ntawv raug sau npe.
 

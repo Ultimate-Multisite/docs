@@ -3,7 +3,7 @@ title: Opsætning og udbyderkonfiguration
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domæne sælger: Opsætning og udbyderkonfiguration {#domain-seller-setup-and-provider-configuration}
+# Domæne sælger: Opsætning og udbyderkonfiguration
 
 Domain Seller addon leveres med en vejledende opsætningsassistent, der guider dig gennem hvert nødvendigt trin. Denne side dækker flowet i assistenten samt hvordan du konfigurerer eller genkonfigurerer udbydere derefter.
 

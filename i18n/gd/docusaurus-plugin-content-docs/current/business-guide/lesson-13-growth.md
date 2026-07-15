@@ -3,7 +3,7 @@ title: 'Leasan 13: A’ sgèileadh suas'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leasan 13: A’ Meudachadh {#lesson-13-scaling-up}
+# Leasan 13: A’ Meudachadh
 
 Tha àrd-ùrlar obrachail agad le luchd-ceannach a tha a’ pàigheadh. Tha an leasan seo a’ còmhdach mar a dh’fhàsas tu bho obrachadh beag gu gnìomhachas seasmhach -- a’ meudachadh bun-structair, a’ fèin-obrachadh obrachaidhean, agus a’ meudachadh teachd-a-steach gach neach-ceannach.
 

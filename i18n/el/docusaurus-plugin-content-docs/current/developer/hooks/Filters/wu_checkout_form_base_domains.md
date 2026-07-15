@@ -4,7 +4,7 @@ title: Φίλτρο - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Φίλτρο: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Φίλτρο: wu_checkout_form_base_domains
 
 Φιλτράρει τα κοινόχρηστα βασικά domains της φόρμας checkout που δεν πρέπει να γίνουν εγγραφές mapped-domain.
 

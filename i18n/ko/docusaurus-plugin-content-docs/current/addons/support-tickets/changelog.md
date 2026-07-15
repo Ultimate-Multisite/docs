@@ -3,7 +3,7 @@ title: 지원 티켓 변경 로그
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets 변경 로그 {#support-tickets-changelog}
+# Support Tickets 변경 로그
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * 개선: Git 추적에서 vendor/ 디렉터리를 제거했습니다(.gitignore에서 이미 처리됨). 저장소 크기를 줄였습니다

@@ -3,7 +3,7 @@ title: Η ροή εγγραφής
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Η Ροή Εγγραφής (v2) {#the-registration-flow-v2}
+# Η Ροή Εγγραφής (v2)
 
 _**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτό το άρθρο αναφέρεται στην έκδοση 2.x του Ultimate Multisite.**_
 

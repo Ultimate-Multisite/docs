@@ -4,7 +4,7 @@ title: Acción - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Acción: wu_before_search_models {#action-wubeforesearchmodels}
+# Acción: wu_before_search_models
 
 Se ejecuta antes del procesamiento de la solicitud de búsqueda.
 

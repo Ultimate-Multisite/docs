@@ -3,7 +3,7 @@ title: Administracijos panelio apžiūra
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Administracijos panel vizitas {#touring-the-admin-panel}
+# Administracijos panel vizitas
 
 Ultimate Multisite stebiui yra kuo greičiau ir aiškiau, kokiu, bet su tokia galingu įrankiu jis gali padėti turėti vadovotiną ekskursiją. Pateikime perskaičiamas adminų puslapis, kad jums labiau pasitiktumė.
 

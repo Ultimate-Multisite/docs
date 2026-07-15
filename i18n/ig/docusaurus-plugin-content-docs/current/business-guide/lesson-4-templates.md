@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 4: Iwulite ndebiri maka ngalaba pụrụ iche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ihe Ọmụmụ 4: Iwulite Template Niche {#lesson-4-building-niche-templates}
+# Ihe Ọmụmụ 4: Iwulite Template Niche
 
 Template bụ isi nke nkwupụta uru niche gị. Onye nwe studio mgbatị ahụ debanyere aha ma hụ saịtị nke dịlarị ka webụsaịtị mgbatị ahụ -- nwere usoro klas, profaịlụ ndị nkuzi, na onyonyo kwesịrị ekwesị -- nwere ike ịnọgide karịa onye hụrụ ebe efu.
 

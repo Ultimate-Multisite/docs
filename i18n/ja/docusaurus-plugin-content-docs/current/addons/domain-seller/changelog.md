@@ -3,7 +3,7 @@ title: Domain Seller 変更履歴
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller 変更履歴 {#domain-seller-changelog}
+# Domain Seller 変更履歴
 
 Version 1.3.0 - 2026-06-02 リリース
 - New: HostAfrica reseller の残高が低くなりすぎたときの network-admin 警告を追加

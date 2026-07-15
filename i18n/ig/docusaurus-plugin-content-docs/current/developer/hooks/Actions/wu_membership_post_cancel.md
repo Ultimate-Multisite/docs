@@ -4,7 +4,7 @@ title: Omume - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Omume: wu_membership_post_cancel {#action-wumembershippostcancel}
+# Omume: wu_membership_post_cancel
 
 Ọ na-akpalite mgbe a kagbuchara ịbụ onye otu ahụ.
 

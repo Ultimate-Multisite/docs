@@ -3,7 +3,7 @@ title: เริ่มต้นพัฒนาส่วนเสริม
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# การพัฒนาส่วนเสริม {#addon-development}
+# การพัฒนาส่วนเสริม
 
 ## โครงสร้างส่วนเสริม {#addon-structure}
 

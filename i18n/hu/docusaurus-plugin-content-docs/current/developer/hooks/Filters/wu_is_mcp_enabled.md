@@ -4,7 +4,7 @@ title: Filter - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Szűrő: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Szűrő: wu_is_mcp_enabled
 
 Ez a szűrő lehetővé teszi a plugin fejlesztők számára, hogy kötelező állapottá tegyék az MCP adapter számára egy adott értéket.
 

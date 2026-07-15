@@ -3,7 +3,7 @@ title: Ngirim Email lan Siaran
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ngirim Email lan Broadcast (v2) {#sending-emails-and-broadcasts-v2}
+# Ngirim Email lan Broadcast (v2)
 
 _**CATETAN PENTING: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
 

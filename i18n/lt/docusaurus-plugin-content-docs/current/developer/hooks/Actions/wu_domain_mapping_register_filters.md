@@ -4,7 +4,7 @@ title: Veiksmas - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Veiksmas: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Veiksmas: wu_domain_mapping_register_filters
 
 Kai kurie įskiepiai išsaugos URL prieš tai, kai susiejimas buvo aktyvus, arba kurs URL kitu būdu, kuris neįtrauktas į pirmiau nurodytus filtrus.
 

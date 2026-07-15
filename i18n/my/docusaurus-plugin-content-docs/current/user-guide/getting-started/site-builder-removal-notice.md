@@ -3,7 +3,7 @@ title: Site Builder Mode ဖယ်ရှားခြင်း အကြောင
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode ကို ဖယ်ရှားခြင်းဆိုင်ရာ အသိပေးချက် {#site-builder-mode-removal-notice}
+# Site Builder Mode ကို ဖယ်ရှားခြင်းဆိုင်ရာ အသိပေးချက်
 
 **Superdav AI Agent v1.12.0 တွင် Site Builder mode ကို ဖယ်ရှားလိုက်ပါပြီ။** Site Builder mode ကို အသုံးပြုနေခဲ့သူများအနေဖြင့် theme ဖန်တီးခြင်းနှင့် site စနစ်တကျ တည်ဆောက်ခြင်းများအတွက် **Setup Assistant agent** သို့ ပြောင်းရွှေ့အသုံးပြုသင့်ပါသည်။
 

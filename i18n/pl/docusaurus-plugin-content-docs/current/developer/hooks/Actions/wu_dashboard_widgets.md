@@ -4,7 +4,7 @@ title: Akcja - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Akcja: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Akcja: wu_dashboard_widgets
 
 Pozwala deweloperom pluginów dodawać widżety do Panelu Pulpitu Sieci.
 

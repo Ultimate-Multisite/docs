@@ -3,7 +3,7 @@ title: Gushyiraho Kwishyura mu buryo bwa Manual
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Gushyiraho Ubwishyu Bukorwa N'intoki (v2) {#setting-up-manual-payments-v2}
+# Gushyiraho Ubwishyu Bukorwa N'intoki (v2)
 
 _**ICYITONDERWA CY'INGENZI: Iyi nyandiko ireba Ultimate Multisite version 2.x.**_
 

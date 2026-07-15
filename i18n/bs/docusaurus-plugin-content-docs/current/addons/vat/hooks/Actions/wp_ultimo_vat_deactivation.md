@@ -4,7 +4,7 @@ title: Action - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Akcija: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Akcija: wp_ultimo_vat_deactivation
 
 Omogućava drugim dijelovima plugin-a da pokrenu svoje funkcije prilikom deaktivacije
 

@@ -3,7 +3,7 @@ title: Āķu atsauce
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Āķu atsauce {#hooks-reference}
+# Āķu atsauce
 
 Automātiski ģenerēta dokumentācija visām **59 darbībām** un **118 filtriem** Ultimate Multisite.
 

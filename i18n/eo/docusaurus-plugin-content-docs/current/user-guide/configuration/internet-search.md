@@ -3,7 +3,7 @@ title: Internet-serĉo
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# İnternet-Søk {#internet-search}
+# İnternet-Søk
 
 Gratis AI Agent v1.5.0 donas **Internet-Søk**-kapabelon, kiu per permetti al la AI asistento reteni informojn ĝis la nunaj de la web dum konversacio. Ĉi tio estas provista per la [Brave Search API](https://brave.com/search/api/) aŭ la [Tavily API](https://tavily.com/).
 

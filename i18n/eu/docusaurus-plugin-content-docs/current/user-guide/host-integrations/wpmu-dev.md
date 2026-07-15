@@ -3,7 +3,7 @@ title: WPMU DEV Integrazioa
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrazioa WPMU DEV-ekin {#wpmu-dev-integration}
+# Integrazioa WPMU DEV-ekin
 
 ## Deskuntzua {#overview}
 WPMU DEV da WordPress webstei bere lanak, pluginak eta serbisioak ematen platforma bat da. Hau integrazioak Ultimate Multisite eta WPMU DEV hosting-aren arteko domainerare automatikoki sinkronizazioa eta SSL sertifikatua administrazioa gogoratzen du.

@@ -3,7 +3,7 @@ title: Keširanje prompta s obzirom na provajdera
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Keširanje prompta s obzirom na provajdera {#provider-aware-prompt-caching}
+# Keširanje prompta s obzirom na provajdera
 
 Superdav AI Agent v1.12.0 uvodi **keširanje prompta s obzirom na provajdera** (provider-aware prompt caching), što optimizira troškove API-ja i latenciju keširanjem promptova preko različitih LLM provajdera. Svaki provajder ima različite mehanizme i konfiguracije keširanja.
 

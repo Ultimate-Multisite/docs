@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# ක්‍රියාව: wu_page_added {#action-wupageadded}
+# ක්‍රියාව: wu_page_added
 
 පිටු ලියාපදිංචි කරන විට අමතර දේවල් ක්‍රියාත්මක කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
 

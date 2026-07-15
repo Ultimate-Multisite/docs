@@ -3,7 +3,7 @@ title: Хөгжүүлэгчийн баримт бичиг
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Хөгжүүлэгчийн баримтжуулалт {#developer-documentation}
+# Хөгжүүлэгчийн баримтжуулалт
 
 Энэхүү гарын авлага нь Ultimate Multisite-тэй нэгтгэх, өргөтгөх, эсвэл түүнд зориулсан addon хөгжүүлэхэд шаардлагатай бүхнийг хөгжүүлэгчдэд өгнө. Ultimate Multisite нь WordPress Multisite сүлжээг Website-as-a-Service (WaaS) платформ болгон хувиргадаг.
 

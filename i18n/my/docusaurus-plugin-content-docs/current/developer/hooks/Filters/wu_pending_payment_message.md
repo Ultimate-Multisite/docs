@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filter: wu_pending_payment_message
 
 ပေးချေမှု မပြီးသေးတဲ့ ငွေပေးချေမှုတွေနဲ့ ပတ်သက်တဲ့ မက်ဆေ့ခ်ျကို အသုံးပြုသူများ ပြောင်းလဲနိုင်စေရန် ခွင့်ပြုပါသည်။
 

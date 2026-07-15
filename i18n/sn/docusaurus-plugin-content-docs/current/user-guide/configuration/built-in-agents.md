@@ -3,7 +3,7 @@ title: MaAgent akavakirwa-mukati
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Akavakirwa-mukati {#built-in-agents}
+# Agents Akavakirwa-mukati
 
 Gratis AI Agent v1.9.0 inouya neagents vashanu vakavakirwa-mukati, mumwe nemumwe akagadzirirwa kare neseti yakatariswa yezvishandiso, system prompt yakagadziridzwa, uye mazano ekutanga anoenderana nemabasa akajairika munzvimbo iyoyo. Kuchinja pakati peagents kunochinja zvinogona kuitwa nemubatsiri uye mapinduriro ainoita — pasina chero kugadzirisa kwaunofanira kuita. Superdav AI Agent v1.18.0 inogona kuwedzera zvishandiso zvinoziva schedule, marekodhi ezviyeuchidzo, magedhi emvumo, uye zviziviso zveSMS kuma workflows aya kana ma integrations ane chekuita nazvo agadziriswa.
 

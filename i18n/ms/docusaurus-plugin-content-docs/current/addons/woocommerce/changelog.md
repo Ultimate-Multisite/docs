@@ -3,7 +3,7 @@ title: Log Perubahan Integrasi WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Log Perubahan Integrasi WooCommerce {#woocommerce-integration-changelog}
+# Log Perubahan Integrasi WooCommerce
 
 Versi 2.2.0 - Dikeluarkan pada 2026-07-01
 * Baharu: Jumlah cukai Ultimate Multisite kini muncul sebagai baris yuran WooCommerce yang berasingan semasa checkout, menjadikan jumlah cukai lebih jelas sebelum pembayaran.

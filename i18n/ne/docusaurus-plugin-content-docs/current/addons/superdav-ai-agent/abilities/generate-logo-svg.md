@@ -3,7 +3,7 @@ title: लोगो SVG उत्पन्न गर्नुहोस्
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG उत्पन्न गर्नुहोस् {#generate-logo-svg}
+# Logo SVG उत्पन्न गर्नुहोस्
 
 **Generate Logo SVG** क्षमताले Theme Builder लाई स्वचालित namespace-सुरक्षित sanitisation सहित तपाईंको WordPress साइटमा custom logo SVGहरू सिधै सिर्जना र embed गर्न दिन्छ।
 

@@ -3,7 +3,7 @@ title: Thibitisha Tofauti ya Rangi ya Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Thibitisha Tofauti ya Rangi ya Paleti {#validate-palette-contrast}
+# Thibitisha Tofauti ya Rangi ya Paleti
 
 Uwezo wa **Thibitisha Tofauti ya Rangi ya Paleti** unachangia kuangalia rangi wanazojiridhia katika paleti yako ya usanifu ili kuhakikisha inazingatia kanuni za WCAG (Mwongozo wa Upatikanaji wa Maudhui ya Tovuti) kabla ya kuzitumia kwenye mandhari yako.
 

@@ -3,7 +3,7 @@ title: ຂໍ້ຜິດພາດ Sunrise File
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# កំហុសក្នុងការដំឡើង Sunrise File {#error-installing-the-sunrise-file}
+# កំហុសក្នុងការដំឡើង Sunrise File
 
 ឯកសារ sunrise.php គឺជាឯកសារពិសេសមួយដែល WordPress ស្វែងរកពេលវាចាប់ផ្តើមដំណើរការ។ ដើម្បីឱ្យ WordPress អាចរកឃើញឯកសារ sunrise.php បាន វាត្រូវតែស្ថិតនៅក្នុងថត **wp-content**។
 

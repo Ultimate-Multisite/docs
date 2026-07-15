@@ -3,7 +3,7 @@ title: 'Dərslik 10: Başlanma Günü'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Dərs 10: Başlama Günü {#lesson-10-launch-day}
+# Dərs 10: Başlama Günü
 
 Hər şey quruldu. Qapıları açmadan əvvəl, bu dərs pre-launch (başlanma əvvəlki) yoxlama siyahısı ilə keçir və heç nəyin pozulmadığından, çatışmadığından və ya utandırıcı olmadığından əmin olur.
 

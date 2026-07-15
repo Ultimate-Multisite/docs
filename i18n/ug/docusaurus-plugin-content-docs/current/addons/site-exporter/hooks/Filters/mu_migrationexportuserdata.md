@@ -4,7 +4,7 @@ title: سۈزگۈچ - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# سۈزگۈچ: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# سۈزگۈچ: mu_migration/export/user/data
 
 چىقىرىلىدىغان/ئەكىرىلىدىغان كۆڭۈلدىكى ئىشلەتكۈچى سانلىق مەلۇماتلىرى توپلىمىنى سۈزۈپ بېرىدۇ.
 

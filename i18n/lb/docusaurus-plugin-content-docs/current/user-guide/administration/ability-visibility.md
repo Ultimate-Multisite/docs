@@ -3,7 +3,7 @@ title: Aafälligkeit vo de Sichtbarkeit
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Fähigkeits-Sichtbarkeit (Ability Visibility) {#ability-visibility}
+# Fähigkeits-Sichtbarkeit (Ability Visibility)
 
 Superdav AI Agent v1.12.0 füecht **Ability Visibility**-Steuerige hinzu, wo dës festlegt, welchi Oberflächen (surfaces) jede Fähigkeit zeige. Das erlaubt Administratore, genau z'steme, welchi Agent-Fähigkeite über REST APIs, MCP-Server, WooCommerce-Integrationen und anderi Schnittstelle zur Verfüegung stöhnd.
 

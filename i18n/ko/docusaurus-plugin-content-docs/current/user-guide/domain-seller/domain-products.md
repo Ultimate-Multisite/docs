@@ -3,7 +3,7 @@ title: 도메인 제품 및 가격 책정
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# 도메인 상품 및 가격 책정 {#domain-products-and-pricing}
+# 도메인 상품 및 가격 책정
 
 도메인 상품은 가격 책정, TLD, WHOIS 개인정보 보호, 제공업체 선택 등을 관리하는 방법입니다. 각 도메인 상품은 추가 **도메인 설정** 탭이 있는 표준 Ultimate Multisite 상품입니다.
 

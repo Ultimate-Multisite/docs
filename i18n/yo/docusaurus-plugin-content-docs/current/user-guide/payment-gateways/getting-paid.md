@@ -3,7 +3,7 @@ title: Gbigba Owó Sísan
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Gbigba Owo Sisan (v2) {#getting-paid-v2}
+# Gbigba Owo Sisan (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 

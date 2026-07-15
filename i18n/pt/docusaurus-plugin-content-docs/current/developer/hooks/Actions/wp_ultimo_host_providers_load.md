@@ -4,7 +4,7 @@ title: Ação - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Ação: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Ação: wp_ultimo_host_providers_load
 
 Permite que os developers adicionem as suas próprias integrações de fornecedor de alojamento via plugins do WordPress.
 

@@ -3,7 +3,7 @@ title: Gratis AI Agent の設定
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent 設定 {#gratis-ai-agent-settings}
+# Gratis AI Agent 設定
 
 Gratis AI Agent の **設定 → Advanced** 画面では、バックエンド連携の管理者レベル設定を行えます。このページでは、フィードバック転送、検索プロバイダーのキー、管理対象の Superdav サービス設定、Google Calendar コントロール、TextBee SMS 設定、ネットワーク全体の機能フラグについて説明します。
 

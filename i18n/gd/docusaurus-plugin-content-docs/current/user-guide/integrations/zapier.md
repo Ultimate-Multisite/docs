@@ -3,7 +3,7 @@ title: Còmhlaidachd Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# A' Chluainteachadh le Ultimate Multisite agus Zapier {#integrating-ultimate-multisite-with-zapier}
+# A' Chluainteachadh le Ultimate Multisite agus Zapier
 
 Duis a' chluainteach, rinn am ceann de na stiùirichean a' sgrùdadh [Webhooks](webhooks.md) agus faic a tha iad a lasachadh le app-eichemhan a tha a' chluainteachd.
 

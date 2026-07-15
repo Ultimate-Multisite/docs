@@ -3,7 +3,7 @@ title: Rejalarning Paylashiladigan Linklarini Boshqarish
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Paketлар uchun Baham ko'rish (Shareable Links)ni Boshqarish {#managing-shareable-links-for-plans}
+# Paketлар uchun Baham ko'rish (Shareable Links)ni Boshqarish
 
 Ultimate Multisite sizga paket havolalarini bevosita mijozlaringiz bilan baham qilishingiz imkonini beradi. Buni qilish uchun har qanday paketning tahrirlash sahifasiga o‘ting va "_Click to copy the Shareable Link_" tugmasini bosing.
 

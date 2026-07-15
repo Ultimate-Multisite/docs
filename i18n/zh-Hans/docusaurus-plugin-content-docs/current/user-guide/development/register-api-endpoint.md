@@ -3,7 +3,7 @@ title: 注册 API 端点
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite 注册 API 端点 {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite 注册 API 端点
 
 在本教程中，您将学习如何使用 Ultimate Multisite /register API 端点为网络中的新客户创建完整的入职流程，并了解如何使用 Zapier 实现此功能。
 

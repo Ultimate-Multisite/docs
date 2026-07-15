@@ -3,7 +3,7 @@ title: လိုဂို SVG ဖန်တီးပါ
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# လိုဂို SVG ဖန်တီးခြင်း {#generate-logo-svg}
+# လိုဂို SVG ဖန်တီးခြင်း
 
 **လိုဂို SVG ဖန်တီးခြင်း** စွမ်းရည်ကို အသုံးပြုခြင်းဖြင့် Theme Builder မှ သင့် WordPress ဝက်ဘ်ဆိုက်တွင် စိတ်ကြိုက်လိုဂို SVG များကို အလိုအလျောက် namespace-safe sanitisation လုပ်ကာ တိုက်ရိုက်ဖန်တီးထည့်သွင်းနိုင်ပါသည်။
 

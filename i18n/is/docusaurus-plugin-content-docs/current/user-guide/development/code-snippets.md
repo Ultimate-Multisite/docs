@@ -3,7 +3,7 @@ title: Kódar
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodarmiðir fyrir v2 {#code-snippets-for-v2}
+# Kodarmiðir fyrir v2
 
 Í grunninn eru code snippets fyrir **WordPress** notaðir til að gera sérstaka aðgerðir sem átt við þurfa sérstaklega sjálfan plugin. Þessar code snippets eru staðsett í einum af kjarnafylgjum WordPress eða þema (almennt í `functions.php` fylkim þíns þema) eða þeir geta verið notað sem MU plugin.
 

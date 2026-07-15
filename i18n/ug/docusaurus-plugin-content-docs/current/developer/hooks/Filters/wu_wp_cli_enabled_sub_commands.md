@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# سۈزگۈچ: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# سۈزگۈچ: wu_wp_cli_enabled_sub_commands
 
 بۇ entity ئۈچۈن قايسى sub_commands قوزغىتىلىدىغانلىقىنى سۈزۈپ بېرىدۇ.
 

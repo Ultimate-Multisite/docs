@@ -3,7 +3,7 @@ title: Krijimi i Kodit Ulëvizës
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Krijimi Kodit Discount (v2) {#creating-discount-codes-v2}
+# Krijimi Kodit Discount (v2)
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 

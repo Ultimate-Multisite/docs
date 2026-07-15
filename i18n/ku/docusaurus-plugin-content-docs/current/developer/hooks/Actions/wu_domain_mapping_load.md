@@ -4,7 +4,7 @@ title: Çalakî - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Çalakî: wu_domain_mapping_load {#action-wudomainmappingload}
+# Çalakî: wu_domain_mapping_load
 
 Piştî ku Domain Mapping ya bingehîn a me hatiye barkirin tê şandin
 

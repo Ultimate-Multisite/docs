@@ -3,7 +3,7 @@ title: Postavljanje ručnih plaćanja
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Postavljanje ručnih plaćanja (v2) {#setting-up-manual-payments-v2}
+# Postavljanje ručnih plaćanja (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 

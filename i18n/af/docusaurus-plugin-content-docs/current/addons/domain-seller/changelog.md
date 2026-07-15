@@ -3,7 +3,7 @@ title: Domeinverkoper-veranderingslogboek
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller-veranderingslog {#domain-seller-changelog}
+# Domain Seller-veranderingslog
 
 Weergawe 1.3.0 - Vrygestel op 2026-06-02
 - Nuut: Het ’n network-admin-waarskuwing bygevoeg wanneer HostAfrica-herverkoperbalans te laag raak

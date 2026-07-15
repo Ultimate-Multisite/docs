@@ -3,7 +3,7 @@ title: ڊومين ميپنگ کي ڪيئن ترتيب ڏجي
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# ڊومين ميپنگ ڪيئن ترتيب ڏجي (v2) {#how-to-configure-domain-mapping-v2}
+# ڊومين ميپنگ ڪيئن ترتيب ڏجي (v2)
 
 _**اهم نوٽ: هي مضمون Ultimate Multisite ورزن 2.x بابت آهي.**_
 

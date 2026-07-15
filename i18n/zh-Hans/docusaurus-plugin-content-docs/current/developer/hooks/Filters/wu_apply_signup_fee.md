@@ -4,7 +4,7 @@ title: 过滤器 - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# 过滤器: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# 过滤器: wu_apply_signup_fee
 
 过滤器决定是否应收取注册费。
 

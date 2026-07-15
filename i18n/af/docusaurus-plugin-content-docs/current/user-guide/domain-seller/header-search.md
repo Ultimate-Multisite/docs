@@ -3,7 +3,7 @@ title: Opskrif vir domeinsoektog
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Gebruik hierdie opstelling wanneer jy ’n klein kopvorm wil hê wat ’n domeinsoektog begin, en dan die kliënt uit beskikbare domeine binne die Ultimate Multisite-betaalproses laat kies.
 

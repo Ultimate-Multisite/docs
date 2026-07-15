@@ -3,7 +3,7 @@ title: Belastinghantering
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Belastinghantering {#tax-handling}
+# Belastinghantering
 
 Ultimate Multisite het ’n belastinginvorderingsmodule ingebou in ons kern-plugin, so as jy verkoopsbelasting op jou planne, pakkette en dienste moet invorder, kan jy dit maklik doen sonder om enige add-ons te installeer.
 

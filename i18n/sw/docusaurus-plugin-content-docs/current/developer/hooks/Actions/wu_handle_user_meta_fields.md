@@ -4,7 +4,7 @@ title: Kitendo - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 Inaruhusu watengenezaji wa plugin kuhifadhi data ya meta ya mtumiaji kwa njia tofauti ikiwa wanahitaji.
 

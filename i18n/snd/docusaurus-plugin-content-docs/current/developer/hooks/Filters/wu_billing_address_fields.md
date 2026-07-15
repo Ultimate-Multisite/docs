@@ -4,7 +4,7 @@ title: فلٽر - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# فلٽر: wu_billing_address_fields {#filter-wubillingaddressfields}
+# فلٽر: wu_billing_address_fields
 
 پلگ ان ڊولپرز کي بلنگ پتي جا فيلڊز فلٽر ڪرڻ جي اجازت ڏيو.
 

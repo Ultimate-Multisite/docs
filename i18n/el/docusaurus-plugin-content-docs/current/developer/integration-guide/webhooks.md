@@ -3,7 +3,7 @@ title: Χειρισμός Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Διαχείριση Webhook {#webhook-handling}
+# Διαχείριση Webhook
 
 Δημιουργήστε προσαρμοσμένα endpoints webhook για να λαμβάνετε γεγονότα (events) από εξωτερικές υπηρεσίες και να συγχρονίζετε δεδομένα με το Ultimate Multisite.
 

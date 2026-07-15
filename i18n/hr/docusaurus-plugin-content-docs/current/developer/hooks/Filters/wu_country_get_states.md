@@ -4,7 +4,7 @@ title: Filtar - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filtar: wu_country_get_states {#filter-wucountrygetstates}
+# Filtar: wu_country_get_states
 
 Vraća popis saveznih država za ovu zemlju.
 

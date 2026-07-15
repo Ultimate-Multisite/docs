@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# ایکشن: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# ایکشن: wp_ultimo_gocardless_load
 
 جب تمام dependencies لوڈ ہو چکی ہوں تو متحرک ہوتا ہے
 

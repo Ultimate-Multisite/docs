@@ -4,7 +4,7 @@ title: Scagaire - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Scagaire: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Scagaire: wu_element_block_types_to_check
 
 B’fhéidir go mbeidh orainn bloic bhreise a chur leis níos déanaí.
 

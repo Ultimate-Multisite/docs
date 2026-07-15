@@ -3,7 +3,7 @@ title: Ketidakserasian yang Diketahui
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Ketidakserasian yang diketahui dengan Plugin lain {#known-incompatibilities-with-other-plugins}
+# Ketidakserasian yang diketahui dengan Plugin lain
 
 Selepas memasang dan mengaktifkan Ultimate Multisite, anda mungkin menghadapi masalah disebabkan ketidakserasian yang belum diselesaikan dengan plugin lain.
 

@@ -3,7 +3,7 @@ title: Sabyşdyrmak we Içeport etmek
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0-da **Tools > Export & Import** (Araçlar > Dışa beriş we içe çekiş) başlyğynda bir tek site üçin **Export & Import** (Dışa beriş we içe çekiş) aracı ýazylmadyr. Bu arany size bir WordPress saytyny ZIP fayl hökmünde paketlemek, şonuňdan ZIP-i geri almagyň ýa-da onu degişli Ultimate Multisite we single-site WordPress kuramagyndan birine geçirmegiň zerur bolan wagtda peýdaly bolar.
 

@@ -4,7 +4,7 @@ title: Филтр - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Филтр: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Филтр: wu_hosting_integration_wizard_sections
 
 Бахшҳои устодро барои танзими ҳамгироии ҳостинг филтр мекунад.
 

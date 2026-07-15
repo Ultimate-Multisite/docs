@@ -3,7 +3,7 @@ title: Dashboard ကို နားလည်ခြင်း
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard ကို နားလည်ခြင်း {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard ကို နားလည်ခြင်း
 
 Ultimate Multisite ရဲ့ အဆင့်မြင့် ပြင်ဆင်မှု ရွေးချယ်စရာတွေနဲ့ လည်ပတ်မှုဆိုင်ရာ အချက်အလက်တွေကို စေ့စေ့လေ့လာမယ့်အရင် dashboard ကို အရင်ကြည့်ရအောင်။
 

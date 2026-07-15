@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 ਇਹ ਜਾਂਚ ਕਰਦਾ ਹੈ ਕਿ ਕੀ ਕੋਈ ਦਿੱਤਾ ਗਿਆ ਪੋਸਟ ਟਾਈਪ ਇਸ ਪਲਾਨ 'ਤੇ允许 ਹੈ। ਪਲੱਗਇਨ ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਰਿਟਰਨ ਵ্যালੂ ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 

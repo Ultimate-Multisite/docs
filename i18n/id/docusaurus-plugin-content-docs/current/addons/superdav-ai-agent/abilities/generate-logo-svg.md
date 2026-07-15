@@ -3,7 +3,7 @@ title: Hasilkan Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Membuat Logo SVG {#generate-logo-svg}
+# Membuat Logo SVG
 
 Kemampuan **Membuat Logo SVG** memungkinkan Theme Builder untuk membuat dan menyematkan logo SVG kustom langsung ke situs WordPress Anda dengan sanitasi otomatis yang aman dari *namespace*.
 

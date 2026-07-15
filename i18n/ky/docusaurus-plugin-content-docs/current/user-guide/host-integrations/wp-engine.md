@@ -3,7 +3,7 @@ title: WP Engine Интеграциясы
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Интеграция {#wp-engine-integration}
+# WP Engine Интеграция
 
 ## Жалпы маалымат (Overview) {#overview}
 WP Engine — бул WordPress сайттары үчүн оптималдаштырылган аткарууну, коопсуздугун жана көлөмдөөнү камсыз кылган 프리миум башкарылган WordPress хостинг платформасы. Бул интеграция Ultimate Multisite менен WP Engine ортосунда домендерди автоматтык түрдө синхролоону мүмкүн кылат.

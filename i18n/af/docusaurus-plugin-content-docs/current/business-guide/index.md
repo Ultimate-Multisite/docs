@@ -3,7 +3,7 @@ title: Bou 'n Niche Webwerkgewysigheid Besigheid
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bou 'n Niche Webwerkgewig met Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Bou 'n Niche Webwerkgewig met Ultimate Multisite
 
 Die meeste mense wat probeer om webwerkgewig te verkoop, wed op prys teen Wix, Squarespace en duisende freelancers. Hulle verloor. Diegene wat wen, kies 'n spesifieke gehoor, bou 'n oplossing wat spesifiek vir daardie gehoor geskep is, en vra vir die waarde wat hulle lewer.
 

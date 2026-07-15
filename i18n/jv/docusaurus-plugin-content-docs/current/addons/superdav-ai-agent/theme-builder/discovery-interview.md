@@ -3,7 +3,7 @@ title: Wawancara Panemuan
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wawancara Discovery {#discovery-interview}
+# Wawancara Discovery
 
 **Wawancara Discovery** yaiku langkah pisanan ing proses desain Theme Builder. Iki nglumpukake informasi babagan situs, bisnis, lan pilihan desain sampeyan kanggo nggawe tema sing dipersonalisasi.
 

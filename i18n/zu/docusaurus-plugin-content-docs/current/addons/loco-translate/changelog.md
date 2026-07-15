@@ -3,7 +3,7 @@ title: Loco Translate Umlando wezinguquko
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Ilogu yezinguquko ye-Loco Translate {#loco-translate-changelog}
+# Ilogu yezinguquko ye-Loco Translate
 
 ### 1.0.1 {#101}
 * Ukuthuthukiswa kokuhambisana nenguqulo yakamuva ye-Loco Translate

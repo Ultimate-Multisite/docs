@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ultimate Multisite snippet-ууд GitHub репозиторийг хэрхэн ашиглах вэ {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Ultimate Multisite snippet-ууд GitHub репозиторийг хэрхэн ашиглах вэ
 
 Ultimate Multisite ашигладаг хүмүүс ихээр хүссэн, жижиг функцууд (жишээлбэл, бүртгэл хийх хуудас дээр Google Analytics скрипт нэмэх эсвэл администратор дашбортоос мета боксыг нуух) зэрэг нэмэлт үйлдлүүдийг хийхэд хэрэгтэй кодны жишээ (snippets) GitHub репозиторийг дотор байдаг.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# Theme-ийн functions.php файл дээр snippet-ийг хэрхэн нэмэх вэ. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Theme-ийн functions.php файл дээр snippet-ийг хэрхэн нэмэх вэ.
 
   1. WordPress Network admin dashboard руу логин хийгээд Themes > Theme Editor рүү орно (доорх скриншотыг үзнэ үү).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Скриншот харагдахгүй: WordPress Theme Editor дээр functions.php файлыг засварлах -->
 
-# Must-Use Plugins (mu-plugins)-ыг хэрхэн үүсгэх вэ {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins (mu-plugins)-ыг хэрхэн үүсгэх вэ
 
 WordPress-д "Must-Use Plugins" эсвэл ху축чилсан нэрээр "mu-plugins" гэж нэрлэсэн, өөрийн тохируулгын функцүүдийг ачаалах боломжтой онцлог байна.
 

@@ -4,7 +4,7 @@ title: Action - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Action: add_network {#action-addnetwork}
+# Action: add_network
 
 जब कोई नया नेटवर्क जोड़ा जाता है, तो यह ट्रिगर होता है।
 

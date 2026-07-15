@@ -3,7 +3,7 @@ title: Мүмкіндіктер анықтамалығы
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities анықтамалығы {#abilities-reference}
+# Abilities анықтамалығы
 
 Abilities — Gratis AI Agent сіздің WordPress орнатылымыңызда шақыра алатын атомдық әрекеттер. Әрбір ability — JSON схемасын ұсынатын тіркелген PHP класы; агент бұл схеманы орындау уақытында оқып, қандай параметрлер қажет екенін және ability нені қайтаратынын түсінеді.
 

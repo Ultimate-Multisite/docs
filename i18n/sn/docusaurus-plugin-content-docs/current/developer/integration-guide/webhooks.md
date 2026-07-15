@@ -3,7 +3,7 @@ title: Kubata Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kugadzirisa Webhook {#webhook-handling}
+# Kugadzirisa Webhook
 
 Gadzira nzvimbo dzekugumira dzewebhook dzetsika kuti ugamuchire zviitiko kubva kumasevhisi ekunze uye uwiriranise ruzivo neUltimate Multisite.
 

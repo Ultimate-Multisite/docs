@@ -3,7 +3,7 @@ title: پێکهاتەی داشبۆرد
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# پێداچوونەوەی داشبۆرد (Dashboard Overview) {#dashboard-overview}
+# پێداچوونەوەی داشبۆرد (Dashboard Overview)
 
 Ultimate Multisite لەناو مینیوی Ultimate Multisite، **داشبۆردێکی تایبەت** هەیە و هەروەها بۆ داشبۆردی تۆڕەکە (Network Dashboard) ویجێتکێتی (widgets) زیاد دەکات. ئەم بابەتە دەبینیت چی لە هەردوو شوێنەکەدا دەبینیت.
 

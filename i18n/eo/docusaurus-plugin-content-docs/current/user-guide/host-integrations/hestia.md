@@ -3,7 +3,7 @@ title: Integrado de Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integraĵo kun Hestia Control Panel {#hestia-control-panel-integration}
+# Integraĵo kun Hestia Control Panel
 
 Ĉi tiu gvidado klarigas, kiel konfigurigi la integrajon de Ultimate Multisite Hestia, por ke la domeno-mapitaj en via rano aŭtomate estas aldatita (kaj forigita) kiel Web Domain Aliases en Hestia.
 

@@ -4,7 +4,7 @@ title: Darbība - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Darbība: move_site {#action-movesite}
+# Darbība: move_site
 
 Tiek palaista pēc tam, kad vietne ir pārvietota uz jaunu tīklu.
 

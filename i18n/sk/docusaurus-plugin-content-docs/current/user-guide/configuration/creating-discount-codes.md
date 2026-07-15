@@ -3,7 +3,7 @@ title: Vytváranie kódu zľavy
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Vytváranie zľavných kódov (v2) {#creating-discount-codes-v2}
+# Vytváranie zľavných kódov (v2)
 
 _**DÁVAJTE DOPÔRADNUTE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 

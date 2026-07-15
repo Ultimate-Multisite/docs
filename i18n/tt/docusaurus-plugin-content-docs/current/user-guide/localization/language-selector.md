@@ -3,7 +3,7 @@ title: Язык seçicisi
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Языковой селектор {#language-selector}
+# Языковой селектор
 
 Эта функция предоставляется аддоном **Language Selector**.
 

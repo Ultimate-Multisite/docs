@@ -3,9 +3,9 @@ title: 外掛範本
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# 外掛範本 {#addon-template}
+# 外掛範本
 
-{{ADDON_DESCRIPTION}}
+外掛範本 — Ultimate Multisite.
 
 ## 需求 {#requirements}
 

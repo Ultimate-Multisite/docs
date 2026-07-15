@@ -4,7 +4,7 @@ title: Aksyon - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Aksyon: wu_before_light_ajax {#action-wubeforelightajax}
+# Aksyon: wu_before_light_ajax
 
 Nan kèk ka, n ap bezwen chaje resous anplis pou jere aksyon yo.
 

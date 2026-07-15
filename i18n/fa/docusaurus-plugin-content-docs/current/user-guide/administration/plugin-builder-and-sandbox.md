@@ -3,7 +3,7 @@ title: سازنده و محیط آزمایشی افزونه
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder و Sandbox {#plugin-builder--sandbox}
+# Plugin Builder و Sandbox
 
 Gratis AI Agent v1.5.0 با معرفی **سیستم Plugin Builder و Sandbox**، به دستیار هوش مصنوعی اجازه می‌دهد تا افزونه‌های وردپرس را در شبکه شما تولید، فعال و مدیریت کند؛ و این کار همگی از طریق یک محیط Sandbox ایزوله و امن انجام می‌شود.
 

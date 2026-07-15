@@ -3,7 +3,7 @@ title: ଗ୍ରାହକ ଆକାଉଣ୍ଟ ପୃଷ୍ଠା
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# ଆପଣଙ୍କ କ୍ଲାଏଣ୍ଟର ଆକାଉଣ୍ଟ ପେଜ (v2) {#your-clients-account-page-v2}
+# ଆପଣଙ୍କ କ୍ଲାଏଣ୍ଟର ଆକାଉଣ୍ଟ ପେଜ (v2)
 
 _**ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ନୋଟ: ଏହି ଆଇକାଣିକଟି Ultimate Multisite version 2.x-କୁ ସମ୍ବନ୍ଧିତ।**_
 

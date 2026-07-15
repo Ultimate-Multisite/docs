@@ -4,7 +4,7 @@ title: Фильтр - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Фильтр: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Фильтр: wu_minimum_password_strength
 
 Фильтрует минимальную требуемую силу пароля (оценка zxcvbn).
 

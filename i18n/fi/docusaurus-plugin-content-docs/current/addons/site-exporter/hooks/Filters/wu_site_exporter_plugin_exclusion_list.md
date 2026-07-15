@@ -4,7 +4,7 @@ title: Suodatin - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Suodatin: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Suodatin: wu_site_exporter_plugin_exclusion_list
 
 Antaa kehittäjien hallita plugin-luetteloa, joka voidaan jättää pois luodusta zip-tiedostosta.
 

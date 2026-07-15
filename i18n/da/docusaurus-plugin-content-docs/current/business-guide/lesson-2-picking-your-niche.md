@@ -3,7 +3,7 @@ title: 'Lektion 2: Vælg din niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lektion 2: Vælg din niche {#lesson-2-picking-your-niche}
+# Lektion 2: Vælg din niche
 
 I Lektion 1 har vi etableret, hvorfor en niche vinder over generiske tilgange. Nu skal du vælge din egen. Denne lektion giver dig et rammeværk til at finde og validere en niche, før du investerer tid i at bygge noget for den.
 

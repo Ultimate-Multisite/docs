@@ -3,7 +3,7 @@ title: Clàran-bìdh Aoigheachd
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Clàran-bìdh Aoigheachd {#hospitality-menus}
+# Clàran-bìdh Aoigheachd
 
 Leigidh feart **Clàran-bìdh Aoigheachd** le Theme Builder duilleagan clàr-bìdh structaraichte airson biadh is deochan a ghineadh agus a chur a-steach gu dìreach dhan làrach WordPress agad.
 

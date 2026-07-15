@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# ಫಿಲ್ಟರ್: wu_sso_url {#filter-wussourl}
+# ಫಿಲ್ಟರ್: wu_sso_url
 
 ಕ್ರಾಸ್-ಡೊಮೇನ್ ಗ್ರಾಹಕ ಕ್ರಿಯೆಗಳಿಗಾಗಿ ಹಿಂತಿರುಗಿಸುವ ಮೊದಲು ರಚಿಸಲಾದ SSO URLಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 

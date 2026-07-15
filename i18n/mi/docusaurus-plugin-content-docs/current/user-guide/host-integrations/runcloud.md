@@ -3,7 +3,7 @@ title: Whakawhanaungatanga RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Whakawhanaungatanga me RunCloud {#runcloud-integration}
+# Whakawhanaungatanga me RunCloud
 
 ## Whakataki {#overview}
 RunCloud he tāmata whare (cloud-based) mō te whakamaoritanga me te whakamaumahara i server ahau, e hiahia ana ki te whakamahi i āuna mārie mō te whakahaere me te whakamaoritanga o ngā web applications mo āna servere cloud. Ko te whakatika (integration) này he tino nui mō te whakaora i te domain automatically me te whakamaumahara i SSL certificates i waenga i Ultimate Multisite me RunCloud.

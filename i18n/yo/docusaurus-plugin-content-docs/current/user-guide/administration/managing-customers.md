@@ -3,7 +3,7 @@ title: Ṣíṣàkóso àwọn oníbàárà
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Ṣíṣàkóso Àwọn Oníbàárà {#managing-customers}
+# Ṣíṣàkóso Àwọn Oníbàárà
 
 Ojú-ewé **Customers** ń fi àtòjọ àwọn ọmọ ẹgbẹ́ tí a forúkọ sílẹ̀ nínú nẹ́tíwọ́ọ̀kì rẹ hàn. Ojú-ewé yìí ń ṣàfihàn ìwífún ìpìlẹ̀ ti aṣàmúlò, pẹ̀lú orúkọ, àdírẹ́sì ímeèlì, ìwọlé tó kẹ́yìn, àti ìjápọ̀ **switch to** tí ó jẹ́ kí o wọlé sí subsite aṣàmúlò gẹ́gẹ́ bí alábòójútó site.
 

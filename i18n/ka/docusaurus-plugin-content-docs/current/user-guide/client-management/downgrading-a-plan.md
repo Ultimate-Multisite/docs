@@ -3,7 +3,7 @@ title: გეგმის დაწევა
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Плана понижение (v2) {#downgrading-a-plan-v2}
+# Плана понижение (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: Эта статья относится к Ultimate Multisite версии 2.x.**_
 

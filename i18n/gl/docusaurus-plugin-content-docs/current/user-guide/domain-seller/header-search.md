@@ -3,7 +3,7 @@ title: Busca de dominios na cabeceira
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Busca de dominio na cabeceira {#header-domain-search}
+# Busca de dominio na cabeceira
 
 Usa esta configuración cando queiras un pequeno formulario na cabeceira que inicie unha busca de dominio e logo permita ao cliente escoller entre os dominios dispoñibles dentro do checkout de Ultimate Multisite.
 

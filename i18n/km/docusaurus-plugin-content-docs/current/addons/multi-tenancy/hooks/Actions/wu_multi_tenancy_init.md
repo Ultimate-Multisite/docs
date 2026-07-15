@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Action: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Action: wu_multi_tenancy_init
 
 ដំណើរការបន្ទាប់ពី addon Multi-Tenancy ត្រូវបានចាប់ផ្តើមពេញលេញ។
 

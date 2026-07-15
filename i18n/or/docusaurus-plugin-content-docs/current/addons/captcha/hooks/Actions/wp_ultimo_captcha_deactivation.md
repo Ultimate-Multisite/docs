@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_captcha_deactivation
 
 pluginର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ନିଷ୍କ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କର ପ୍ରକ୍ରିୟାଗୁଡ଼ିକ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

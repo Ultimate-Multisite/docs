@@ -4,7 +4,7 @@ title: តម្រង - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Filter: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Filter: wu_captcha_whitelisted
 
 Filter ថាតើ​អ្នកប្រើប្រាស់/សំណើបច្ចុប្បន្នគួរត្រូវបានដាក់ក្នុងបញ្ជីអនុញ្ញាតឬអត់។
 

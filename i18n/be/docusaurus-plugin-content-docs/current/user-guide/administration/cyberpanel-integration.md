@@ -3,7 +3,7 @@ title: Інтыграцыя CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Інтеграцыя з CyberPanel {#cyberpanel-integration}
+# Інтеграцыя з CyberPanel
 
 Гайд паказвае, як накіраваць і накіраваць інстыляцыю Ultimate Multisite з CyberPanel, каб доменныя імя, якія ў вашай сетцы, аўтаматычна дадаваліся (і выдаляліся) як віртуальныя хосты ў CyberPanel, з магчымасцю аўтаматычнага правайдання SSL праз Let's Encrypt.
 

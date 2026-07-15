@@ -4,7 +4,7 @@ title: Salain - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Salain: wu_sso_enabled {#filter-wussoenabled}
+# Salain: wu_sso_enabled
 
 I-enable/i-disable ang kapabilidad nga cross-domain single-sign-on.
 

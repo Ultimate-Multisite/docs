@@ -3,7 +3,7 @@ title: Multi-Netzwierk Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network Changelog {#multi-network-changelog}
+# Multi-Network Changelog
 
 ### 1.3.0 {#130}
 * Nei: Network-Schabloune-Virschau — duerchsicht a kuck Network-Schabloune mat engem Live-Panel virum Kaf un.

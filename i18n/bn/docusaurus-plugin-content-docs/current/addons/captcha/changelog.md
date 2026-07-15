@@ -3,7 +3,7 @@ title: Captcha Changelog
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog {#captcha-changelog}
+# Captcha Changelog
 
 সংস্করণ: 1.5.0 - প্রকাশের তারিখ: 2026-05-22
 * নতুন: হার্ড-স্টপ রেট লিমিটার — এটি captcha-সুরক্ষিত সব জায়গায় (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) প্রতিটি GET এবং POST গণনা করে এবং HTTP 429, একটি `Retry-After` হেডার, এবং একটি র‍্যান্ডমাইজড ট্যারপিট স্লিপ (১–৫ সেকেন্ড, সর্বোচ্চ ১৫ সেকেন্ড) দিয়ে উত্তর দেয়।

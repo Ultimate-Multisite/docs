@@ -4,7 +4,7 @@ title: Filtro - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filtro: network_options_list {#filter-networkoptionslist}
+# Filtro: network_options_list
 
 Filtra a lista de opcións de rede que dependen do dominio e da ruta dunha rede.
 

@@ -4,7 +4,7 @@ title: Фильтр - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Фильтр: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Фильтр: wu_checkout_field_templates
 
 Наши API для добавления новых шаблонов полей подключаются сюда.
 

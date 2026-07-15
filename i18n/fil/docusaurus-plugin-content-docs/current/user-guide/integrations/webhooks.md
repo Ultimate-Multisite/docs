@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Unang Pagtingin sa Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Unang Pagtingin sa Webhooks (v2)
 
 _**PAALALA: Tandaan na ang feature o artikulong ito ay para sa advanced users.**_
 

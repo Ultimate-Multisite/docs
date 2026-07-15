@@ -4,7 +4,7 @@ title: Hetsika - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Hetsika: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Hetsika: wp_ultimo_vat_activation
 
 Avelao ny ampahany hafa amin'ilay fanampy hamatotra ny fomba fiasany amin'ny fampandehanana
 

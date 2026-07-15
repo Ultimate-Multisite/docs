@@ -3,7 +3,7 @@ title: Maniĝo de Sistemo-emiloj
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistemo-E-Mails Administri {#managing-system-emails}
+# Sistemo-E-Mails Administri
 
 Ultimate Multisite send multaj sistemo e-mailajn por evenoj kiel konfirmacio de registri, ricevanto de pagoj kaj ŝanĝoj de aĉetantaro. Vi povas personalizi ĉi tijn e-maila modelojn, tiel iliaŭvoni vian markon.
 

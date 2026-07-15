@@ -3,7 +3,7 @@ title: Kuyankhulana Kopeza Zambiri
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Mafunso Oyamba Ozindikira {#discovery-interview}
+# Mafunso Oyamba Ozindikira
 
 **Mafunso Oyamba Ozindikira** ndi sitepe yoyamba mu njira yopangira mapangidwe ya Theme Builder. Amasonkhanitsa zambiri zokhudza site yanu, bizinesi yanu, ndi zokonda zanu za kapangidwe kuti apange theme yokonzedwa mwapadera kwa inu.
 

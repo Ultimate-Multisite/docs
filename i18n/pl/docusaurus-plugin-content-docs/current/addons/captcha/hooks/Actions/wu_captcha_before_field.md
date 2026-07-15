@@ -4,7 +4,7 @@ title: Action - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Akcja: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Akcja: wu_captcha_before_field
 
 Wyzwala się przed wyświetleniem pola z captcha.
 

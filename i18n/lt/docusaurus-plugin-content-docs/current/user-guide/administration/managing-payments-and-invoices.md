@@ -3,7 +3,7 @@ title: Mokėjimo ir paskolos valdymo<channel|>
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Apmontų ir įsipareigojimų valdymas {#managing-payments-and-invoices}
+# Apmontų ir įsipareigojimų valdymas
 
 ## Mokyklos nustatymai {#payment-settings}
 

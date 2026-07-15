@@ -4,7 +4,7 @@ title: Igikorwa - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Igikorwa: wu_page_before_render {#action-wupagebeforerender}
+# Igikorwa: wu_page_before_render
 
 Emerera abategura plugin kongeramo ibindi bikubiyemo mbere y’uko dusohora paji.
 

@@ -4,7 +4,7 @@ title: פילטער - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# פֿילטער: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# פֿילטער: wu_pending_payment_message
 
 דערלויבן דעם באַניצער צו טוישן דעם אָנזאָג וועגן די אויסשטייענדיקע צאָלונגען.
 

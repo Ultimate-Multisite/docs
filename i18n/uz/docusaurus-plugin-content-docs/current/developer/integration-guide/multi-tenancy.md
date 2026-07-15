@@ -3,7 +3,7 @@ title: Ko‘p ijarachilik integratsiyasi
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integratsiyasi {#multi-tenancy-integration}
+# Multi-Tenancy integratsiyasi
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suveren ijarachilar, migratsiyani tekshirish va ijarachi hayotiy siklini avtomatlashtirish uchun bir nechta integratsiya nuqtalarini o‘zgartiradi.
 

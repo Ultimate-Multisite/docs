@@ -3,7 +3,7 @@ title: पेपेल सेटअप गर्ने
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# पेपैल गेटवे सेट अप गर्ने (v2) {#setting-up-the-paypal-gateway-v2}
+# पेपैल गेटवे सेट अप गर्ने (v2)
 
 _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite संस्करण 2.x मा आधारित छ।**_
 

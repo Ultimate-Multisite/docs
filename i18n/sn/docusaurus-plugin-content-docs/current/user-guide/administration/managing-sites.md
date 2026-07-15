@@ -3,7 +3,7 @@ title: Kugara Mabhizimiso
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Kuratira Sites {#managing-sites}
+# Kuratira Sites
 
 Sites (kana subsites) ndiyo chinangwa chekuchengetedza business yako ye WaaS. Ultimate Multisite inengei matsviki anonyanya:
 

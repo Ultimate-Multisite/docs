@@ -3,7 +3,7 @@ title: Ukuphatha Ama-imeyili Esistimu
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ukuphatha Ama-imeyili Esistimu {#managing-system-emails}
+# Ukuphatha Ama-imeyili Esistimu
 
 Ultimate Multisite ithumela ama-imeyili esistimu ahlukahlukene ngeziganeko ezifana nokuqinisekisa ukubhalisa, amarisidi okukhokha, nezinguquko zobulungu. Ungazenza ngokwezifiso lezi zifanekiso zama-imeyili ukuze zihambisane nomkhiqizo wakho.
 

@@ -3,7 +3,7 @@ title: සර්වොජන් මාරුව සත්‍යාපනය
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# ආධිපත්‍ය මාරුවීම් තහවුරු කිරීම (Sovereign Migration Verification) {#sovereign-migration-verification}
+# ආධිපත්‍ය මාරුවීම් තහවුරු කිරීම (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 හි ස්වෛරී කුලීකරුවන් (sovereign tenant) මාරු කිරීම් සඳහා WP-CLI තහවුරු කිරීමේ විධාන ඇතුළත් වේ. කුලීකුවක් මාරු කිරීම, SSO පිවිසුමක් හෝ වෙනම ස්ථාපනයක් අපේක්ෂිත පරිදි ක්‍රියා නොකරන්නේ නම් ඒවා භාවිතා කරන්න.
 

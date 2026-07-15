@@ -3,7 +3,7 @@ title: Jounal chanjman Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Jounal chanjman Captcha {#captcha-changelog}
+# Jounal chanjman Captcha
 
 Version: 1.5.0 - Pibliye nan 2026-05-22
 * Nouvo: Limiteur pousantaj ak arè total — konte chak GET ak POST sou sifas ki pwoteje ak captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) epi li reponn ak HTTP 429, yon header `Retry-After`, ak yon dòmi tarpit owaza (1–5s, limite di a 15s).

@@ -4,7 +4,7 @@ title: 'Aktion - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Aktion: wu_\{$this->id\}_scripts {#action-wuthis-idscripts}
+# Aktion: wu_\{$this->id\}_scripts
 
 Löst den enqueue scripts Hook aus.
 

@@ -3,7 +3,7 @@ title: Түләү алу
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Түләүләр алу (v2) {#getting-paid-v2}
+# Түләүләр алу (v2)
 
 _**МӨҺИМ ИСКӘРМӘ: Бу мәкалә Ultimate Multisite 2.x версиясенә карый.**_
 

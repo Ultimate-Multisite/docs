@@ -3,7 +3,7 @@ title: Appoġġ għall-Applikazzjoni Personalizzata
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Comeċċa għall-għajnuna taċ-ċedenda diżviluppo kustomi mill-Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Comeċċa għall-għajnuna taċ-ċedenda diżviluppo kustomi mill-Codeable?
 
 Malgħa, tal-wejjaħed, nħobbna bżonn xi personalizzazzjoni fantastiku biex nippurru l-flowijiet tal-network tagħna esattamente kif li nħobbna. Jekk dan huwa l-li qed tixgħel, nġgħandu fuq [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), post li tista' tgħall-developer esperti b'esperti fil-Ultimate Multisite.
 

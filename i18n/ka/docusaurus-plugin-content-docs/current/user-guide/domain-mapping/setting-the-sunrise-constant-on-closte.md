@@ -3,7 +3,7 @@ title: Sunrise-ის კონსტანტის დაყენება Cl
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Sunrise константы Closte-ზე დაყენება {#setting-the-sunrise-constant-to-true-on-closte}
+# Sunrise константы Closte-ზე დაყენება
 
 ზოგიერთი ჰოსტინგის პროვაიდერი უსაფრთხოების მიზეზებით ბლოკავს wp-config.php ფაილს. ეს ნიშნავს, რომ Ultimate Multisite-მა ვერ შეძლებს ამ ფაილის ავტომატურ რედაქტირებას საჭირო კონსტანტების ჩასმისთვის დომეინის മാპინგისა და სხვა ფუნქციონალების მუშაობისთვის. Closte არის ასეთი ჰოსტერი.
 

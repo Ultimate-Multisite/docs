@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_pre_delete'
 sidebar_label: 'wu_{$this->model}_pre_delete'
 _i18n_hash: 12d965c5aed740f08dba9a3d9cbfb2b5
 ---
-# Azione: wu_\{$this->model\}_pre_delete {#action-wuthis-modelpredelete}
+# Azione: wu_\{$this->model\}_pre_delete
 
 Si attiva dopo che un oggetto è stato memorizzato nel database.
 

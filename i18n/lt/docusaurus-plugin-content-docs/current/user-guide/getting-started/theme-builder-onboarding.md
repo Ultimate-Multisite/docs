@@ -3,7 +3,7 @@ title: Tema buvimo įsigijimo procesas
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Przepływ Onboardingu Theme Builder {#theme-builder-onboarding-flow}
+# Przepływ Onboardingu Theme Builder
 
 Superdav AI Agent v1.12.0 wprowadza przewodzący **przepływ onboardingu Theme Builder**, który pomoże Ci stworzyć własny motyw blokowy podczas początkowej konfiguracji. Zastępuje on stary tryb Site Builder bardziej elastycznym podejściem wspomaganym przez agenta.
 

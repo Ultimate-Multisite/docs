@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ Àwọn Ìyípadà Olùtajáde Ojúlé
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Akọọlẹ Àyípadà Site Exporter {#site-exporter-changelog}
+# Akọọlẹ Àyípadà Site Exporter
 
 Ẹ̀yà: 1.0.6 - Tú jáde ní 2026-05-11
 * Tuntun: Àwọn export site báyìí ń kó index.php tó lè bẹ̀rẹ̀ fúnra rẹ̀ pọ̀, kí ZIP lè fi sori host tuntun láìsí fifi plugin lọ́tọ̀ síi

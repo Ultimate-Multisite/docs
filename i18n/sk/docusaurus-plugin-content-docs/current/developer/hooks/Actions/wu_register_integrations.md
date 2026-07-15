@@ -4,7 +4,7 @@ title: Akcia - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Akcia: wu_register_integrations {#action-wuregisterintegrations}
+# Akcia: wu_register_integrations
 
 Spustí sa, aby umožnila integráciám zaregistrovať sa.
 

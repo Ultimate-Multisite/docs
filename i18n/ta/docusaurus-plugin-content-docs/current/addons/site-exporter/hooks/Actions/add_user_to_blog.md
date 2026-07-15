@@ -4,7 +4,7 @@ title: செயல்பாடு - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog {#action-addusertoblog}
+# Action: add_user_to_blog
 
 ஒரு பயனர் ஒரு தளத்தில் சேர்க்கப்பட்ட உடனேயே இது இயங்கும்.
 

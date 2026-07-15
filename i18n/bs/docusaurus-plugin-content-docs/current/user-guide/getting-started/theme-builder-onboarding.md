@@ -3,7 +3,7 @@ title: Uvodni tok za Theme Builder-a
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Proces uvođenja Theme Builder-a {#theme-builder-onboarding-flow}
+# Proces uvođenja Theme Builder-a
 
 Superdav AI Agent v1.12.0 uvodi vođeni **proces uvođenja Theme Builder-a** koji vam pomaže da kreirate custom block theme tokom prvog podešavanja. Ovo zamjenjuje stari Site Builder način rada fleksibilnijim pristupom koji je asistiran agentom.
 

@@ -3,9 +3,9 @@ title: Teamplaid Tuilleadain
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Teamplaid Tuilleadain {#addon-template}
+# Teamplaid Tuilleadain
 
-{{ADDON_DESCRIPTION}}
+Teamplaid Tuilleadain — Ultimate Multisite.
 
 ## Riatanasan {#requirements}
 

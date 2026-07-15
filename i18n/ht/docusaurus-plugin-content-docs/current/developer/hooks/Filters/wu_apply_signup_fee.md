@@ -4,7 +4,7 @@ title: Filtre - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filtè: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Filtè: wu_apply_signup_fee
 
 Filtre si frè enskripsyon an ta dwe aplike oswa non.
 

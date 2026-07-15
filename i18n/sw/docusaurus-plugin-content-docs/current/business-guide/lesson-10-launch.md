@@ -3,7 +3,7 @@ title: 'Somo la 10: Siku ya Uzinduzi'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Somo la 10: Siku ya Kutangaza {#lesson-10-launch-day}
+# Somo la 10: Siku ya Kutangaza
 
 Kila kitu kimejengwa. Kabla ya kufungua milango, somo hili linakupitia orodha ya vifaa kabla ya kuanzisha ili kuhakikisha hakuna kitu kilichovunjika, kimepotea, au kinachoweza kuwapotosha wateja.
 

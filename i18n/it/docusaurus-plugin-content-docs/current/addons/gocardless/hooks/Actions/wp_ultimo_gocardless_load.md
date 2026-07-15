@@ -4,7 +4,7 @@ title: Azione - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Azione: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Azione: wp_ultimo_gocardless_load
 
 Si attiva quando tutte le dipendenze sono state caricate
 

@@ -4,7 +4,7 @@ title: フィルター - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# フィルター: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# フィルター: wu_ses_verification_integration
 
 フィルター: 他のコードに SES インテグレーションオブジェクトを提供させます。
 

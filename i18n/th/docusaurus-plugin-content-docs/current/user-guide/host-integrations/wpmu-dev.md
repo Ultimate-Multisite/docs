@@ -3,7 +3,7 @@ title: การผสานรวม WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# การเชื่อมต่อกับ WPMU DEV {#wpmu-dev-integration}
+# การเชื่อมต่อกับ WPMU DEV
 
 ## ภาพรวม {#overview}
 WPMU DEV เป็นแพลตฟอร์ม WordPress ครบวงจรที่ให้บริการ hosting, plugins และบริการต่างๆ สำหรับเว็บไซต์ WordPress การเชื่อมต่อนี้ช่วยให้สามารถซิงค์โดเมนและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite และ WPMU DEV hosting ได้โดยอัตโนมัติ

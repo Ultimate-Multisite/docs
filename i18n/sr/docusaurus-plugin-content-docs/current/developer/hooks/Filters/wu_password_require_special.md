@@ -4,7 +4,7 @@ title: Филтер - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Филтер: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Филтер: wu_password_require_special
 
 Филтрира да ли треба захтевати специјалне знакове у лозинкама.
 

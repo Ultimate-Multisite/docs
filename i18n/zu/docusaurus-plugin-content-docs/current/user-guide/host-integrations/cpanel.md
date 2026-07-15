@@ -3,7 +3,7 @@ title: Ukuhlanganiswa ne-cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ukuhlanganiswa kwe-cPanel {#cpanel-integration}
+# Ukuhlanganiswa kwe-cPanel
 
 ## Uhlolojikelele {#overview}
 I-cPanel ingelinye lamaphaneli okulawula ukusingathwa kwewebhu athandwa kakhulu asetshenziswa abahlinzeki abaningi bokusingatha okwabiwe nokuzinikele. Lokhu kuhlanganiswa kwenza ukuvumelanisa izizinda ngokuzenzakalelayo phakathi kwe-Ultimate Multisite ne-cPanel, kukuvumela ukuthi wengeze ngokuzenzakalelayo ama-alias ezizinda nama-subdomain ku-Account yakho ye-cPanel.

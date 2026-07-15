@@ -3,7 +3,7 @@ title: Pamamahala ng mga Shareable Link para sa mga Plan
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Pamamahala ng Shareable Links para sa mga Plan {#managing-shareable-links-for-plans}
+# Pamamahala ng Shareable Links para sa mga Plan
 
 Binibigyan ka ng Ultimate Multisite ng opsyon na ibahagi ang mga plan link nang direkta sa iyong mga kliyente. Para magawa ito, pumunta sa edit page ng alinman sa iyong mga plan at i-click ang _Click to copy the Shareable Link_ button.
 

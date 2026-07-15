@@ -3,7 +3,7 @@ title: Chuck Norris Facts 更新日誌
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts 更新日誌 {#chuck-norris-facts-changelog}
+# Chuck Norris Facts 更新日誌
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * 新增：透過 Ultimate Multisite 更新伺服器實現自動更新功能

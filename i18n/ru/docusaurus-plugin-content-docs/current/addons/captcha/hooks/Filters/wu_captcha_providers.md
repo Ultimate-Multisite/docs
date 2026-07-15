@@ -4,7 +4,7 @@ title: Фильтр - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Фильтруйте доступных провайдеров капчи {#filter-wucaptchaproviders}
+# Фильтруйте доступных провайдеров капчи
 
 Фильтруйте доступных провайдеров капчи.
 

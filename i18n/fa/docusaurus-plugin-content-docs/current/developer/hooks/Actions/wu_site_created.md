@@ -4,7 +4,7 @@ title: عملیات - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# اکشن: wu_site_created {#action-wusitecreated}
+# اکشن: wu_site_created
 
 این اکشن زمانی اجرا می‌شود که یک سایت برای اولین بار ایجاد شود.
 

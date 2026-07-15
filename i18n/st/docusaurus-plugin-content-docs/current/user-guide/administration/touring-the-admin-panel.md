@@ -3,7 +3,7 @@ title: Ho lula le Morero ea Litso
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Hohoho hoho Admin Panel le hohoho {#touring-the-admin-panel}
+# Hohoho hoho Admin Panel le hohoho
 
 Ultimate Multisite e batla ho ba le ho hohoho hohoho, emakoe ho hohoho hohoho hohoho, emakoe ho hohoho hohoho. Le tsela e ntse a fana ka seka, emakoe ho hohoho hohoho hohoho, emakoe ho hohoho hohoho. Re tla fana ka lefa le fa ba le admin pages ho ba le bone.
 

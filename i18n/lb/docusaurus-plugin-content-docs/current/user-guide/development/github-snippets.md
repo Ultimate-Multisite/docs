@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Wie mer d'Ultimate Multisite snippets uf üsem GitHub repository bruche chönd {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Wie mer d'Ultimate Multisite snippets uf üsem GitHub repository bruche chönd
 
 Es git Code-Snippets im GitHub repository, wo vo Ultimate Multisite Benutzer sehr oft gfrogt wärde, wenn sie chliini Funktionalitäte wie zum Bischpil s'Hinzuefüge vom Google Analytics Script uf Registrierigs-Sitte oder d'Versteckig vo eme Meta Box us em Admin Dashboard wend.
 
@@ -19,7 +19,7 @@ Es git 2 Wäg, wie Sie de Code hinzufüge chönd:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Wie mer de Snippet i d'Functions.php File vom Theme füege {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Wie mer de Snippet i d'Functions.php File vom Theme füege
 
   1. Logged Sie sich i Ihr WordPress Network Admin Dashboard ii und gönd zu Themes > Theme Editor (Luege Sie sich de Screenshot obe a).
 
@@ -29,7 +29,7 @@ Es git 2 Wäg, wie Sie de Code hinzufüge chönd:
 
 <!-- Screenshot nöd verfügbar: WordPress Theme Editor zeigt Funktionen.php File Bearbeitig -->
 
-# Wie mer Must-Use Plugins (mu-plugins) erstelle {#how-to-create-must-use-plugins-mu-plugins}
+# Wie mer Must-Use Plugins (mu-plugins) erstelle
 
 WordPress het e Funktion, wo Ihne erlaubt, benutzerdefinierti Funktionalität z'lade, wo "Must-Use Plugins" oder kurz "mu-plugins" gnannt wird.
 

@@ -3,7 +3,7 @@ title: Osnovni koncepti
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Osnovni koncepti {#basic-concepts}
+# Osnovni koncepti
 
 Za novega uporabnika WordPress Multisite in tisto, ki se le začne uporablati Ultimate Multisite, je na prvi pogled veliko novih besed in fraz. Učenje teh je pomembna naloga, ker boste morali razumeti platformo in kako ona deluje kot celotno.
 

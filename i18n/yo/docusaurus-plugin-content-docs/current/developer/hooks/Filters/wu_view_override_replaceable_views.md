@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Ajọ: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Ajọ: wu_view_override_replaceable_views
 
 Ó jẹ́ kí àwọn olùdàgbàsókè lè ṣàfikún àwọn folda míì sí àtòjọ àwọn ohun tí a lè rọ́pò.
 

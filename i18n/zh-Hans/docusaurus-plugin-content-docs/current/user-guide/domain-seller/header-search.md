@@ -3,7 +3,7 @@ title: 页眉域名搜索
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header 域名搜索 {#header-domain-search}
+# Header 域名搜索
 
 当你需要一个小型 Header 表单来启动域名搜索，然后让客户在 Ultimate Multisite 结账中从可用域名里选择时，请使用此设置。
 

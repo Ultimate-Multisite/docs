@@ -4,7 +4,7 @@ title: Omume - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Omume: wu_membership_post_renew {#action-wumembershippostrenew}
+# Omume: wu_membership_post_renew
 
 Ọ na-akpalite mgbe emegharịrị ndebanye onye otu.
 

@@ -4,7 +4,7 @@ title: Сүзгі - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Сүзгі: wu_admin_notices {#filter-wuadminnotices}
+# Сүзгі: wu_admin_notices
 
 Әзірлеушілерге Ultimate Multisite қосқан әкімші хабарламаларын сүзуге мүмкіндік береді.
 

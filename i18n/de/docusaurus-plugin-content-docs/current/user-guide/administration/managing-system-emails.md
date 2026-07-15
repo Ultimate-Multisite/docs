@@ -3,7 +3,7 @@ title: System-E-Mails verwalten
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# System-E-Mails verwalten {#managing-system-emails}
+# System-E-Mails verwalten
 
 Ultimate Multisite versendet verschiedene System-E-Mails für Ereignisse wie Registrierungsbestätigungen, Zahlungsbelege und Änderungen der Mitgliedschaft. Du kannst diese E-Mail-Vorlagen an deine Marke anpassen.
 

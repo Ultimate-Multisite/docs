@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Đồng bộ hóa Nội dung
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Nhật ký thay đổi của Content Sync {#content-sync-changelog}
+# Nhật ký thay đổi của Content Sync
 
 ### Phiên bản 1.1.0 - Phát hành vào 2025-12-31 {#version-110---released-on-2025-12-31}
 * Mới: Hỗ trợ đồng bộ hóa tất cả các loại bài viết (posts, pages, custom post types).

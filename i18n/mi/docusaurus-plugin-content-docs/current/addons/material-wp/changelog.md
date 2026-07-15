@@ -3,7 +3,7 @@ title: Rārangi Panonitanga Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Rangitaki Panoni Material WP {#material-wp-changelog}
+# Rangitaki Panoni Material WP
 
 Putanga 1.1.15 - 01/26/2026
 * Kua whakapai ake: Kāhua waehere me te whakahōputu;

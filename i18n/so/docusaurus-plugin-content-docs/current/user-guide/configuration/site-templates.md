@@ -3,7 +3,7 @@ title: Qaab-dhismeedyada goobta
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**Fadlan: Qoraal: Tusaale:**_ **Maqaalkani wuxuu la xiriira Ultimate Multisite version 2.x. Haddii aad isticmaalayso version 1.x,** _**eeg qoraalka kan.**_
 

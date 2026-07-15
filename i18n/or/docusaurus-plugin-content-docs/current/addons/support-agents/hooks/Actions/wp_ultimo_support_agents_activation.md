@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_support_agents_activation
 
 pluginର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ସକ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କ ରୁଟିନ୍‌ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

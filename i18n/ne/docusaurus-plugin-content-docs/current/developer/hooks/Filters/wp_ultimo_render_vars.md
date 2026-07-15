@@ -4,7 +4,7 @@ title: फिल्टर - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# फिल्टर: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# फिल्टर: wp_ultimo_render_vars
 
 प्लगइन विकासकर्ताहरूलाई विश्वव्यापी रूपमा render context मा अतिरिक्त variable थप्न अनुमति दिन्छ।
 

@@ -4,7 +4,7 @@ title: Filter - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Filter: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
+# Filter: networks_user_is_network_admin
 
 এই ফিল্টাৰে সেই ব্যৱমসমূহ (networks) ফিল্টাৰ কৰে যিজন ব্যৱমকাৰীয়ে (user) প্ৰশাসক (administrator) হিচাপে থাকে।
 

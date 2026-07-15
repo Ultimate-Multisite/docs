@@ -3,7 +3,7 @@ title: GridPane samþætting
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration með GridPane {#gridpane-integration}
+# Integration með GridPane
 
 ## Översiktur {#overview}
 GridPane er sérhæfð WordPress hosting stjórnunarstafn sem byggist á því að hjálpa alvarlegum WordPress fagfólum. Þessi tenging gerir mögulega fyrir sjálfsvinnandi samræmi domæna og stjórnun SSL-tækja milli Ultimate Multisite og GridPane.

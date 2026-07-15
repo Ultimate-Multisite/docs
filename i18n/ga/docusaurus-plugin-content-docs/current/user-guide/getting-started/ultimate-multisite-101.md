@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Is Ultimate Multisite un plugin de WordPress a fáilte duit a bheith ag cur isteach WaaS (Websites as a Service) nó Websites do chuidiúite. Le linn an t-am chun a bheith ag iarraidh a bheith ag éifeachtach ar an gúram agus ar na chuidiúite, bíonn caomhadhnéis atá ag cur isteach a bheith ag fáilte agam.
 

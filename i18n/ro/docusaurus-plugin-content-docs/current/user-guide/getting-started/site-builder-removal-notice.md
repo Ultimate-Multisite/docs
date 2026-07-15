@@ -3,7 +3,7 @@ title: Notificare de eliminare a modului Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Eliminarea modului Site Builder {#site-builder-mode-removal-notice}
+# Eliminarea modului Site Builder
 
 **Modul Site Builder a fost eliminat în Superdav AI Agent v1.12.0.** Dacă foloseați Modul Site Builder, ar trebui să migrați la **agentul Setup Assistant** pentru crearea temelor și configurarea site-ului.
 

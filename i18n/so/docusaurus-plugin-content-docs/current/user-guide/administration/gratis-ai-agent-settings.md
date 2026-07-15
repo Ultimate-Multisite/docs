@@ -3,7 +3,7 @@ title: Dejinta Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Settings {#gratis-ai-agent-settings}
+# Gratis AI Agent Settings
 
 Shaashadda **Settings → Advanced** ee Gratis AI Agent waxay bixisaa habayn heer-maamuleed oo loogu talagalay isku-xirnaanta backend. Boggan wuxuu diiwaangeliyaa gudbinta feedback, furayaasha bixiyaha raadinta, dejinta adeegga Superdav la maamulo, kontaroollada Google Calendar, dejinta TextBee SMS, iyo feature flags-ka shabakadda oo dhan.
 

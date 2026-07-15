@@ -3,7 +3,7 @@ title: Stiùireadh Cleachdaidh Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Iùl Cleachdaidh Hooks {#hooks-usage-guide}
+# Iùl Cleachdaidh Hooks
 
 Tha Ultimate Multisite a’ toirt seachad 200+ action hooks agus 280+ filter hooks. Tha an duilleag seo a’ còmhdach nan hooks as cumanta le eisimpleirean practaigeach. Airson iomradh coileanta fèin-ghinte, rùraich na duilleagan eile san earrann seo.
 

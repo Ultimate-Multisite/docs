@@ -3,7 +3,7 @@ title: 고객 피드백 및 문제 보고
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# 사용자 피드백 및 문제 신고 {#customer-feedback--issue-reporting}
+# 사용자 피드백 및 문제 신고
 
 Gratis AI Agent v1.5.0에는 사용자가 도움이 되지 않는 답변을 표시하고 채팅 인터페이스에서 직접 문제를 신고할 수 있는 내장 피드백 및 문제 신고 시스템이 추가되었습니다. 이 시스템에는 동의 관리, 자동 신고 명령어, 그리고 백엔드에서의 AI 기반 분류(triage) 기능이 포함되어 있습니다.
 

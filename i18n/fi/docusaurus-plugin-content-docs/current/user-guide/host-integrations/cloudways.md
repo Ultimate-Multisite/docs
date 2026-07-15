@@ -3,7 +3,7 @@ title: Cloudways-integraatio
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways -Integraatio {#cloudways-integration}
+# Cloudways -Integraatio
 
 ## Yleiskatsaus {#overview}
 Cloudways on pilvipohjainen hallittu palvelin alusta, joka mahdollistaa WordPress-sivustojen käyttämisen monenlaisten pilvipalveluntarjoajien, kuten DigitalOcean, AWS ja Google Cloud, kautta. Tämä integraatio mahdollistaa automaattisen verkkotunnusten synkronoinnin sekä SSL-sertifikaattien hallinnan Ultimate Multisite:n ja Cloudwaysin välillä.

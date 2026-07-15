@@ -3,7 +3,7 @@ title: Ultimate Multisite-ың тағылması
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-иң Түсирдәлештер {#translating-ultimate-multisite}
+# Ultimate Multisite-иң Түсирдәлештер
 
 Ultimate Multisite англисче әраб ясалган, әмма плагин толуп түсирдәлешле һәм без актив булган түсирдәлешләрне кабул итәбез.
 

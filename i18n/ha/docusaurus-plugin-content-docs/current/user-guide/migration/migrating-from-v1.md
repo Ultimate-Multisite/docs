@@ -3,7 +3,7 @@ title: Tawale daga V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Gaba da Shiga daga V1 {#migrating-from-v1}
+# Gaba da Shiga daga V1
 
 ## Ultimate Multisite ya canza daga yaron farkinsa na 1.x zuwa yaron 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

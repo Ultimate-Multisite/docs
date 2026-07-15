@@ -3,7 +3,7 @@ title: Creachadh an t-uisgeachd ùr-ùla agad
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# A Chruinnadh Sealladh Cuimhneachaidh Chanach (v2) {#creating-your-first-subscription-product-v2}
+# A Chruinnadh Sealladh Cuimhneachaidh Chanach (v2)
 
 _**NOTE CRUCIAL: An tairgile seo cheannach do uisge Ultimate Multisite 2.x. Má tá thuig a'r 1.x a'le,**_ **_**fàinig an tairgile seo**_**.
 

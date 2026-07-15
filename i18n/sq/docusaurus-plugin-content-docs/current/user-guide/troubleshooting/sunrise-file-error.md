@@ -3,7 +3,7 @@ title: Gabim i skurtjes Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Gabimi Instalimin e File Sunrise {#error-installing-the-sunrise-file}
+# Gabimi Instalimin e File Sunrise
 
 Fili `sunrise.php` është një file i veçantë që WordPress kërkon kur fillon të funksionoj (bootstraps). Për që WordPress të mund ta gjejë filin `sunrise.php`, ai duhet të jetë i vendosur brenda folderit **wp-content**.
 

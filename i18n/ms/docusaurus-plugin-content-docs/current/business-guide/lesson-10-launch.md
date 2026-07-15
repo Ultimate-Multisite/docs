@@ -3,7 +3,7 @@ title: 'Pelajaran 10: Hari Pelancaran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Pelajaran 10: Hari Pelancaran {#lesson-10-launch-day}
+# Pelajaran 10: Hari Pelancaran
 
 Semuanya sudah siap. Sebelum anda membuka pintu, pelajaran ini akan membimbing anda melalui senarai semak pra-pelancaran untuk memastikan tiada apa yang rosak, tertinggal, atau memalukan.
 

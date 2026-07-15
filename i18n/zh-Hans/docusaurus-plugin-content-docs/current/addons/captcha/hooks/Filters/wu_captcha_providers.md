@@ -4,7 +4,7 @@ title: 过滤器 - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# 过滤: wu_captcha_providers {#filter-wucaptchaproviders}
+# 过滤: wu_captcha_providers
 
 过滤可用的验证码提供商。
 

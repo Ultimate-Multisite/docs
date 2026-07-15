@@ -3,7 +3,7 @@ title: Meðhöndlun skatta
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Meðhöndlun skatta {#tax-handling}
+# Meðhöndlun skatta
 
 Ultimate Multisite er með einingu fyrir innheimtu skatta innbyggða í kjarnaplugin okkar, þannig að ef þú þarft að innheimta söluskatta af áætlunum þínum, pökkum og þjónustu geturðu auðveldlega gert það án þess að þurfa að setja upp nein viðbót.
 

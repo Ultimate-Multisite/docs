@@ -3,7 +3,7 @@ title: צוגאב Sunrise טעקע־לאָדער
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise טעקע־לאָדער {#addon-sunrise-file-loader}
+# Addon Sunrise טעקע־לאָדער
 
 Ultimate Multisite 2.8.0 לייגט צו אַ sunrise־פֿאַרברייטערונג־לאָדער פֿאַר add-ons און אייגענע MU-plugin אינטעגראַציעס וואָס דאַרפֿן לויפֿן בעת WordPress sunrise־אָנהייב־לאָדן אָן רעדאַקטירן די גענערירטע `wp-content/sunrise.php` טעקע.
 

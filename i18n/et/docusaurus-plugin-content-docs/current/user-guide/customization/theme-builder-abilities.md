@@ -3,7 +3,7 @@ title: Teema ehitamise võimalused
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Teemaehundlikud võimalused: Bloki teemide rakendamine ja aktiveerimine {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Teemaehundlikud võimalused: Bloki teemide rakendamine ja aktiveerimine
 
 Superdav AI Agent v1.12.0 sisaldab kaks võimasid võimalust, mis võimaldavad teil luua ja lahendada oma isiklikud blokteemad otse chati paigutuse kaudu.
 

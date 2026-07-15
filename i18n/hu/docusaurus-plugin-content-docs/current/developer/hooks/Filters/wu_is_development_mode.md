@@ -4,7 +4,7 @@ title: Szűrő - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Szűrő: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Szűrő: wu_is_development_mode
 
 Ez a szűrő lehetővé teszi a plugin-fejlesztők számára, hogy további teszteket adjanak hozzá a fejlesztői módhoz.
 

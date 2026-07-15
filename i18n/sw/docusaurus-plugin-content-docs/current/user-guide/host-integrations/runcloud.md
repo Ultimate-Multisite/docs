@@ -3,7 +3,7 @@ title: Ushirikiano wa RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Uunganishaji wa RunCloud {#runcloud-integration}
+# Uunganishaji wa RunCloud
 
 ## Muhtasari {#overview}
 RunCloud ni jukwaa la usimamizi wa seva linalofanya kazi kwenye wingu ambalo linakuwezesha kupeleka na kusimamia programu za wavuti kwenye seva zako za wingu kwa urahisi. Uunganishaji huu unawezesha usawazishaji wa kiotomatiki wa vikoa na usimamizi wa vyeti vya SSL kati ya Ultimate Multisite na RunCloud.

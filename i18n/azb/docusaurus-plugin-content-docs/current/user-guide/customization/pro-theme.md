@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme ile Admin Panel'inizi Özelleştirme {#customizing-your-admin-panel-with-pro-theme}
+# PRO Theme ile Admin Panel'inizi Özelleştirme
 
 Müşteri projeleri yaparken, bazen müşterilerimize WordPress admin dashboard'unda özel bir deneyim sunmamız gerekebiliyor. Daha profesyonel bir görünüm ve his arıyorsanız, PRO Theme size yardımcı olabilir.
 

@@ -4,7 +4,7 @@ title: Nzacha - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Nyocha: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Nyocha: wu_billing_address_fields
 
 Kwe ka ndị mmepe plugin nyochaa mpaghara adreesị ịkwụ ụgwọ.
 

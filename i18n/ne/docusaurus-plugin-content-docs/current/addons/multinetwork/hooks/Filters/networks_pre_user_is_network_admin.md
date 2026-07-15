@@ -4,7 +4,7 @@ title: फिल्टर - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 प्रक्रियालाई छोट्याउन, प्रयोगकर्ता प्रशासक भएका networks लाई फिल्टर गर्छ।
 

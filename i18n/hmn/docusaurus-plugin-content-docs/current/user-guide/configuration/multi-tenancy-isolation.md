@@ -3,7 +3,7 @@ title: Txhua Kws Tsis Muaj Qhia
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# ការបែងចែកការប្រើប្រាស់ច្រើន (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# ការបែងចែកការប្រើប្រាស់ច្រើន (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 គាំទ្រការបែងចែកមូលដ្ឋានទិន្នន័យ និងឯកសារសម្រាប់អ្នកប្រើប្រាស់ម្នាក់ៗ (per-subsite database and filesystem isolation) ដើម្បីរក្សាភាពឯករាជ្យរបស់អ្នកប្រើប្រាស់។ វាធ្វើឱ្យទិន្នន័យរបស់ tenant នីមួយៗនៅដាច់ពីគ្នា ខណៈពេលដែលនៅតែរក្សាការផ្តល់សេវាបណ្តាញ ការគិតថ្លៃ និងការគ្រប់គ្រង។
 

@@ -3,7 +3,7 @@ title: Жолиб мешавандаи мигратсияи ҳукмронӣ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Жолиби миграцияи ҳуҷҷатҳо {#sovereign-migration-workflow}
+# Жолиби миграцияи ҳуҷҷатҳо
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 барои гузариш аз як подмони стандарт ба инфрасорори лойхатҳои суверени (sovereign tenant) варори тасдиқи миграцияро мегирад.
 

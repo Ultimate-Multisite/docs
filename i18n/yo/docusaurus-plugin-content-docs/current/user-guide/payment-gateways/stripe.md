@@ -3,7 +3,7 @@ title: Ṣíṣètò Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ṣíṣe Àgbékalẹ̀ Ẹnu-ọna Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Ṣíṣe Àgbékalẹ̀ Ẹnu-ọna Stripe (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀dà 2.x.**_
 

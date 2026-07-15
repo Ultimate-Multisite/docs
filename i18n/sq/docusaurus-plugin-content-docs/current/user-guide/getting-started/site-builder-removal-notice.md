@@ -3,7 +3,7 @@ title: Njoftim për heqjen e Modit të Ndërtuesit të Siti
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Njoftimi i Heqimit të Modeve të Ndërtimit të Siti {#site-builder-mode-removal-notice}
+# Njoftimi i Heqimit të Modeve të Ndërtimit të Siti
 
 **Mode Ndërtimi i Siti është hequr në Superdav AI Agent v1.12.0.** Nëse po përdornit mode Ndërtimi të Siti, duhet të migroni te **Setup Assistant agent** për krijimin e temave dhe konfigurimin e shitjes së faqes (site setup).
 

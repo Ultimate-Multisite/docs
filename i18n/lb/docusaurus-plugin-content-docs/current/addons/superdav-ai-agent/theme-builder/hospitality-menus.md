@@ -3,7 +3,7 @@ title: Gaaschtgewerbe-Menüen
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality-Menüen {#hospitality-menus}
+# Hospitality-Menüen
 
 D'Feature **Hospitality Menus** erlaabt Theme Builder, strukturéiert Säite fir Iess- a Gedrénksmenüen direkt an deng WordPress-Säit ze generéieren an anzebannen.
 

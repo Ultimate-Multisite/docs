@@ -3,7 +3,7 @@ title: Ultimate Multisite instalēšana
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite instalēšana {#installing-ultimate-multisite}
+# Ultimate Multisite instalēšana
 
 :::note
 Šī apmācība pieņem, ka jums jau ir instalēts un konfigurēts WordPress Multisite. Lai uzzinātu, kā to izdarīt, apskatiet šo WP Beginner apmācību: [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/).

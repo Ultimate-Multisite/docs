@@ -4,7 +4,7 @@ title: Tātari - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Tātari: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# Tātari: wu_apc_process_page_content
 
 Tukuna ngā kaiwhakawhanake kia raweke i te ihirangi whakamutunga
 

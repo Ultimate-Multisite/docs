@@ -3,7 +3,7 @@ title: WooCommerce ਏਕੀਕਰਨ ਤਬਦੀਲੀਆਂ ਦਾ ਲੌਗ
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਤਬਦੀਲੀ ਲਾਗ {#woocommerce-integration-changelog}
+# WooCommerce ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਤਬਦੀਲੀ ਲਾਗ
 
 ਵਰਜਨ 2.2.0 - 2026-07-01 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
 * ਨਵਾਂ: Ultimate Multisite ਟੈਕਸ ਰਕਮਾਂ ਹੁਣ checkout 'ਤੇ ਵੱਖਰੀਆਂ WooCommerce ਫੀਸ ਲਾਈਨਾਂ ਵਜੋਂ ਦਿਖਾਈ ਦਿੰਦੀਆਂ ਹਨ, ਜਿਸ ਨਾਲ ਭੁਗਤਾਨ ਤੋਂ ਪਹਿਲਾਂ ਟੈਕਸ ਕੁੱਲ ਹੋਰ ਸਪਸ਼ਟ ਹੋ ਜਾਂਦੇ ਹਨ।

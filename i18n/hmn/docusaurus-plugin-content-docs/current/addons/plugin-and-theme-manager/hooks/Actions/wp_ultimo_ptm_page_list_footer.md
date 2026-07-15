@@ -4,7 +4,7 @@ title: Kev ua - wp_ultimo_ptm_page_list_footer
 sidebar_label: wp_ultimo_ptm_page_list_footer
 _i18n_hash: c8edc4bfa483f65f5e01a3f06b735f5d
 ---
-# Kev ua: wp_ultimo_ptm_page_list_footer {#action-wpultimoptmpagelistfooter}
+# Kev ua: wp_ultimo_ptm_page_list_footer
 
 Tso cai rau cov developer ntawm plugin ntxiv scripts rau hauv qab ntawm nplooj ntawv
 

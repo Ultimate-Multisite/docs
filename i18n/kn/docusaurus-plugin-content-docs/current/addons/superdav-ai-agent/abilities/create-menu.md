@@ -3,7 +3,7 @@ title: ಮೆನು ರಚಿಸಿ
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# ಮೆನುವನ್ನು ರಚಿಸಿ {#create-menu}
+# ಮೆನುವನ್ನು ರಚಿಸಿ
 
 **Create Menu** ಸಾಮರ್ಥ್ಯವು WordPress ನ್ಯಾವಿಗೇಷನ್ ಮೆನುವನ್ನು ರಚಿಸುತ್ತದೆ. ಇದರಲ್ಲಿ page titles ಗಿಂತ ಭಿನ್ನವಾದ (distinct) navigation labels ಅನ್ನು ಬಳಸಲು ಬೆಂಬಲವಿದೆ.
 

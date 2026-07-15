@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Goşmaçalary {#ultimate-multisite-addons}
+# Ultimate Multisite Goşmaçalary
 
 Goşmaçalar Ultimate Multisite-i goşmaça aýratynlyklar we integrasiýalar bilen giňeldýär. Goşmaçalaryň köpüsi töleglidir we [ultimatemultisite.com](https://ultimatemultisite.com) saýtyndan satyn alyp bolýar.
 

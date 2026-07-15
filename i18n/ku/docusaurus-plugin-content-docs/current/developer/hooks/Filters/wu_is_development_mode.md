@@ -4,7 +4,7 @@ title: Parzûn - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Parzûn: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Parzûn: wu_is_development_mode
 
 Destûrê dide pêşdebirên plugin ku ceribandinên zêde ji bo moda pêşvebirinê lê zêde bikin.
 

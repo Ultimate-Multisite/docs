@@ -3,7 +3,7 @@ title: Төлқинлар ва ҳисоб-китобларни бошқариш
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödeme ve Fatura Yönetimi {#managing-payments-and-invoices}
+# Ödeme ve Fatura Yönetimi
 
 ## Ödeme Ayarları {#payment-settings}
 

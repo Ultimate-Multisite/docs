@@ -4,7 +4,7 @@ title: Bộ lọc - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Bộ lọc: wu_pre_save_settings {#filter-wupresavesettings}
+# Bộ lọc: wu_pre_save_settings
 
 Bộ lọc này cho phép các nhà phát triển tùy chỉnh (lọc) các cài đặt trước khi chúng được lưu lại bởi Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: 필터 - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Filter: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Filter: wu_light_ajax_allowed_hooks
 
 보안상의 이유로, 훅에 연결할 수 있는 액션 수를 제한합니다. 이 필터는 필요에 따라 해당 목록을 확장할 수 있도록 해줍니다.
 

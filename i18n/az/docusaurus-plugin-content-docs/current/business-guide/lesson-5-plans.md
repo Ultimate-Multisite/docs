@@ -3,7 +3,7 @@ title: 'Dərs 5: Planlarınızı Dizayn Etmək'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Dərs 5: Planlarınızı Qurmaq {#lesson-5-designing-your-plans}
+# Dərs 5: Planlarınızı Qurmaq
 
 Plan səviyyələriniz sadəcə qiymətləndirmə səviyyələri deyil — onlar niş müştərilərinizin həqiqətən necə fəaliyyət göstərdiyinin əksidir. Bu dərslikdə, müxtəlif mərhələlərdəki fitness bizneslərinin real ehtiyaclarına uyğun məhsul səviyyələri quracaqsınız.
 

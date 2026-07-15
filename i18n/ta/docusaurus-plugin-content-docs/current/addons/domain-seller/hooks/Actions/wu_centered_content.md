@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Action: wu_centered_content {#action-wucenteredcontent}
+# Action: wu_centered_content
 
 Plugin உருவாக்குநர்கள் (developers) மையப்படுத்தப்பட்ட நிரல் பகுதிக்குள் (centered column) கூடுதல் உள்ளடக்கத்தைச் சேர்க்க இந்த செயல்பாடு அனுமதிக்கிறது.
 

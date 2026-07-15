@@ -4,7 +4,7 @@ title: Chochita - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Zochita: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Zochita: wp_ultimo_vat_activation
 
 Lolani magawo ena a plugin kulumikiza machitidwe awo a activation
 

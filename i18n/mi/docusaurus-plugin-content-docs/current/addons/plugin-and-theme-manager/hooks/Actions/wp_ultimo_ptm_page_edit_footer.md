@@ -4,7 +4,7 @@ title: Hohenga - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# Mahi: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# Mahi: wp_ultimo_ptm_page_edit_footer
 
 Tukua ngā kaiwhakawhanake plugin kia tāpiri i ngā hōtuhi ki raro o te whārangi
 

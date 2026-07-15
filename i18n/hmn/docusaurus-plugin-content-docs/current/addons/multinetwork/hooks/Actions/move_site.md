@@ -4,7 +4,7 @@ title: Kev ua - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Kev ua: move_site {#action-movesite}
+# Kev ua: move_site
 
 Tshwm sim tom qab ib lub site tau raug txav mus rau ib lub network tshiab.
 

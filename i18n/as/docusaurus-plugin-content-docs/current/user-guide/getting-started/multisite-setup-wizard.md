@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite-ত এটা বিল্ট-ইন Wizard আছে, যিয়ে এটা সাধাৰণ WordPress installation-ক স্বয়ংক্রিয়ভাৱে এটা WordPress Multisite network-ত পৰিৱৰ্তন কৰে। ইয়াৰ ফলত আপুনি `wp-config.php` হাতেৰে সম্পাদনা কৰিবলগীয়া নহয় বা ডেটাবেছ কমাণ্ড (database commands) চলাইবলগীয়া নহয়।
 

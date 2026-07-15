@@ -3,7 +3,7 @@ title: Aċċess għall-Pagħha tal-Kontu
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Come tf issa l-account page għall-ikuża l-ewwel ħaġa? {#how-can-i-access-my-account-page-for-the-first-time}
+# Come tf issa l-account page għall-ikuża l-ewwel ħaġa?
 
 Ben għal Ultimate Multisite!
 

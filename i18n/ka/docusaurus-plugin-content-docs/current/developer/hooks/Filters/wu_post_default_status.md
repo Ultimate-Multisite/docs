@@ -4,7 +4,7 @@ title: ფილტრი - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# ფილტრი: wu_post_default_status {#filter-wupostdefaultstatus}
+# ფილტრი: wu_post_default_status
 
 ფილტრავს ობიექტის მონაცემებს, სანამ ის მონაცემთა ბაზაში შეინახება.
 

@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Reġistru tal-bidliet {#changelog}
+# Reġistru tal-bidliet
 
 ## 1.9.0 — Maħruġ fit-2026-04-28 {#190--released-on-2026-04-28}
 

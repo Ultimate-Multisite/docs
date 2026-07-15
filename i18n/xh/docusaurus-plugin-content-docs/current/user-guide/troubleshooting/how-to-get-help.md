@@ -3,7 +3,7 @@ title: Indlela yokufumana uncedo
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Indlela yokufumana uncedo {#how-to-get-help}
+# Indlela yokufumana uncedo
 
 Ufumene i-License key yakho esemthethweni, kwaye enxulumene nayo kukho ukufikelela kwiqela lethu ukuze likuncede ukusombulula iingxaki onokudibana nazo ngexesha lakho lokuseta Ultimate Multisite.
 

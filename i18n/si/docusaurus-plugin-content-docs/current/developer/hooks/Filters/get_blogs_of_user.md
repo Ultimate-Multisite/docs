@@ -4,7 +4,7 @@ title: පෙරහන - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# පෙරහන: get_blogs_of_user {#filter-getblogsofuser}
+# පෙරහන: get_blogs_of_user
 
 ආරක්ෂාවට, මෙහි මුල් WP පෙරහන නැවත ක්‍රියාත්මක කරයි.
 

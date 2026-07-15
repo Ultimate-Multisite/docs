@@ -4,7 +4,7 @@ title: Аракет - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Аракет: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
+# Аракет: wu_domain_seller_register_capabilities
 
 Башка плагиндерге домен сатуу боюнча кошумча мүмкүнчүлүктөрдү каттоого мүмкүндүк берет.
 

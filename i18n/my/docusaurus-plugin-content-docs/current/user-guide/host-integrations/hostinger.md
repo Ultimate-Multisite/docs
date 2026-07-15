@@ -3,7 +3,7 @@ title: Hostinger (hPanel) ချိတ်ဆက်မှု
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) ပေါင်းစပ်မှု {#hostinger-hpanel-integration}
+# Hostinger (hPanel) ပေါင်းစပ်မှု
 
 ## အကျဉ်းချုပ် {#overview}
 

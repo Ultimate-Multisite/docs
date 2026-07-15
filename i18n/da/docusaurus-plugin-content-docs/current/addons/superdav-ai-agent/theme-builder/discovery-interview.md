@@ -3,7 +3,7 @@ title: Opdagelsesinterview
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery-interview {#discovery-interview}
+# Discovery-interview
 
 **Discovery-interviewet** er det første trin i Theme Builder's designproces. Det indsamler oplysninger om dit site, din virksomhed og dine designpræferencer for at skabe et personligt theme.
 

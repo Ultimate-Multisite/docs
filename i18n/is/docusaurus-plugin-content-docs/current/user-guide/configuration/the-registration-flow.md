@@ -3,7 +3,7 @@ title: Skráningarprosessi
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registrasjonarferlið (v2) {#the-registration-flow-v2}
+# Registrasjonarferlið (v2)
 
 _**VIÐVÖGUN: Þessi grein er tengd Ultimate Multisite útgáfu 2.x.**_
 

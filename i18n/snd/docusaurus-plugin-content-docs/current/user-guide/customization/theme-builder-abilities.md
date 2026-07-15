@@ -3,7 +3,7 @@ title: تھیم بلڊر جي صلاحيتون
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: Scaffold and Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Abilities: Scaffold and Activate Block Themes
 
 Superdav AI Agent v1.12.0 ۾ ٻه طاقتور صلاحيتون شامل ڪيون آهن جيڪي توهان کي چیٽ انٽر فيس جي مستند طور تي ڪاسٽم بلاڪ ٿيمين (block themes) جنريٽ ڪرڻ ۽ پليمنتي ڪرڻ جو موقع ڏين ٿيون.
 

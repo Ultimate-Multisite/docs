@@ -4,7 +4,7 @@ title: Акција - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Радња: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# Радња: wp_ultimo_captcha_load
 
 Покреће се када су све зависности учитане.
 

@@ -3,7 +3,7 @@ title: 'Lesiad 1: Pamodau Pamodau'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesiad 1: Pam beth ychwaneg yn gwneud {#lesson-1-why-niche-wins}
+# Lesiad 1: Pam beth ychwaneg yn gwneud
 
 Trước na'r hyn o ddefnyddio unrhyw software, rydych chi angen gwrdd i ddeall pam mae adeiladu ar gyfer ddefnyddwyr penodol yn penderfyniad cyffredinol mwyaf hanfodol y byddwch yn ei wneud.
 

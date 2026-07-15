@@ -4,7 +4,7 @@ title: 액션 - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# 액션: wu_register_rest_routes {#action-wuregisterrestroutes}
+# 액션: wu_register_rest_routes
 
 추가 경로를 등록할 수 있도록 허용합니다.
 

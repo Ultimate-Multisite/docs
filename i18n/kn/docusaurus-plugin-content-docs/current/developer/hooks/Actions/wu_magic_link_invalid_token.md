@@ -4,7 +4,7 @@ title: Action - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Action: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Action: wu_magic_link_invalid_token
 
 ಯಾವಾಗ ಅಮಾನ್ಯ ಮ್ಯಾಜಿಕ್ ಲಿಂಕ್ ಟೋಕನ್ (invalid magic link token) ಎದುರಾಗುತ್ತದೆ, ಆಗ ಈ ಆಕ್ಷನ್ (Action) ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
 

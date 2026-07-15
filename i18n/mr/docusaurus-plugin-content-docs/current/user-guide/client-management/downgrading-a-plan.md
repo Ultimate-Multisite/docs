@@ -3,7 +3,7 @@ title: Plan डाउनग्रेड करणे
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# योजना डाउनग्रेड करणे (v2) {#downgrading-a-plan-v2}
+# योजना डाउनग्रेड करणे (v2)
 
 _**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 

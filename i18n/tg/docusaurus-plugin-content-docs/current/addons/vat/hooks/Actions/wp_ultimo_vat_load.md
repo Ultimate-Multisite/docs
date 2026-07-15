@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Амал: wp_ultimo_vat_load {#action-wpultimovatload}
+# Амал: wp_ultimo_vat_load
 
 Вақте фаъол мешавад, ки ҳамаи вобастагиҳо бор карда шуданд
 

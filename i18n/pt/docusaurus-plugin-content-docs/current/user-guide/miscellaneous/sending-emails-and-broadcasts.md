@@ -3,7 +3,7 @@ title: Envio de e-mails e transmissões
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviar Emails e Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Enviar Emails e Broadcasts (v2)
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 

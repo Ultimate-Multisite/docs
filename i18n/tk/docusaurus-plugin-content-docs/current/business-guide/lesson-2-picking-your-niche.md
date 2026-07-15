@@ -3,7 +3,7 @@ title: '2-nji sapak: Öz ugruňy saýlamak'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Sapak 2: Öz nişaňy saýlamak {#lesson-2-picking-your-niche}
+# Sapak 2: Öz nişaňy saýlamak
 
 1-nji sapakda nişaň umumy çözgütden näme üçin üstün gelýändigini kesgitledik. Indi özüňkini saýlamaly. Bu sapak, onuň üçin gurmaga wagt sarp etmezden öň nişany tapmak we tassyklamak üçin size çarçuwa berýär.
 

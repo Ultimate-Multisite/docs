@@ -3,7 +3,7 @@ title: Cov cuab yeej thiab kev teeb tsa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Cov Cuab Yeej thiab Kev Teeb Tsa {#tools-and-configuration}
+# Cov Cuab Yeej thiab Kev Teeb Tsa
 
 Theme Builder siv ib pawg cuab yeej los tshuaj xyuas, tsim qauv, thiab tsim koj lub WordPress site. Hauv version 1.16.0, **sd-ai-agent/site-scrape tam sim no yog cuab yeej Qib 1**, ua rau nws muaj siv tau ua ntej hauv Theme Builder. Superdav AI Agent v1.18.0 kuj qhia ib pob Advanced companion uas faib tawm nyias rau cov txheej txheem ua haujlwm ntawm developer uas ntseeg tau; cov cuab yeej ntawd tsis yog ib feem ntawm WordPress.org core package thiab yuav tsum muab nruab thiab tso cai siv nyias.
 

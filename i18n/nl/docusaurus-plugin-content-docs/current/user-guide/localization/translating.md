@@ -3,7 +3,7 @@ title: Vertalen van Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Translating Ultimate Multisite {#translating-ultimate-multisite}
+# Translating Ultimate Multisite
 
 Ultimate Multisite is ontwikkeld in het Engels, maar de plugin is volledig vertaalbaar en we verwelkomen actief vertaalbijdragen.
 

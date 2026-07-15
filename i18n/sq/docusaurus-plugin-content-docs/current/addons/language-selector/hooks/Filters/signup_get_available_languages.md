@@ -4,7 +4,7 @@ title: Filtër - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filtri: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filtri: signup_get_available_languages
 
 Filtron listën e gjuhëve të disponueshme për regjistrimet e site në front-end.
 

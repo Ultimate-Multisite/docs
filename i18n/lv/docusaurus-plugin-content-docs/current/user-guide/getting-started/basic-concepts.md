@@ -3,7 +3,7 @@ title: Pamatojoties uz pamata koncepcijas
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Pamato koncepcijas {#basic-concepts}
+# Pamato koncepcijas
 
 Ja jauns WordPress Multisite lietotājs un kāds, kurš tikai sāk izmantot Ultimate Multisite, var būt daudz jaunas vārdu un frāzju, kas jāiejas. Tās mācīšana ir svarīga darba loma, jo jums būs nepieciešams saprast platformu un to darbību kā visumu.
 

@@ -4,7 +4,7 @@ title: Filtru - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filtru: auth_redirect_scheme {#filter-authredirectscheme}
+# Filtru: auth_redirect_scheme
 
 Jiffiltra l-iskema tar-redirect tal-awtentikazzjoni.
 

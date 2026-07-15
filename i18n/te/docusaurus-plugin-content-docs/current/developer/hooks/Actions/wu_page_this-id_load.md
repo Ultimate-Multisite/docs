@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
+# Action: wu_page_{$this->id}_load
 
 ప్లగిన్ డెవలపర్‌లు తమ పేజీలకు అదనపు హుక్స్ (hooks) జోడించడానికి ఇది అవకాశం ఇస్తుంది.
 

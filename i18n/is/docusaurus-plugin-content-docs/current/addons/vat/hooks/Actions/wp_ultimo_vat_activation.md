@@ -4,7 +4,7 @@ title: Aðgerð - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Aðgerð: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Aðgerð: wp_ultimo_vat_activation
 
 Leyfir öðrum hlutum viðbótarinnar að tengja sínar keyrslur við virkjun
 

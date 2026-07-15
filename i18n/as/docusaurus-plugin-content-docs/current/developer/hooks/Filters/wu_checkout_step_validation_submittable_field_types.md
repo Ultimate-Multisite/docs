@@ -4,7 +4,7 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 ডেভেলপাৰসকলক যদি কোনো ফিল্ড স্বয়ং-প্ৰৱেশ্য (auto-submittable) হয়, তেন্তে সেই পৰীক্ষাটো এৰাই যাবলৈ অনুমতি দিয়ে।
 

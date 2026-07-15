@@ -3,7 +3,7 @@ title: Грешка со датоте Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Грешка при инсталирање Sunrise фајла {#error-installing-the-sunrise-file}
+# Грешка при инсталирање Sunrise фајла
 
 Файл `sunrise.php` е посебен файл што WordPress го бара додека се покренува (bootstraps) сам за себе. За да може WordPress да го пронајде `sunrise.php` файлот, тој мора да биде направено во папката **wp-content**.
 

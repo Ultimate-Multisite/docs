@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite اضافې {#ultimate-multisite-addons}
+# Ultimate Multisite اضافې
 
 اضافې Ultimate Multisite د اضافي ځانګړنو او ادغامونو سره غځوي. ډېری اضافې پیسې غواړي او له [ultimatemultisite.com](https://ultimatemultisite.com) څخه اخیستل کېدای شي.
 

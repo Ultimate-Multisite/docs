@@ -3,7 +3,7 @@ title: Migrering til tredjepartsmodus
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrering til tredjepartsmodus {#third-party-mode-migration}
+# Migrering til tredjepartsmodus
 
 Superdav AI Agent v1.12.0 endrer måten tredjepartsfunksjoner (abilities) håndteres på. **Tredjepartsmodus er nå standard satt til auto**, noe som muliggjør integrasjon med native WordPress Abilities API på WordPress 7.0+ uten manuell konfigurasjon.
 

@@ -3,7 +3,7 @@ title: Journal des modifications du créateur de page d'administration
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Créateur de pages d'administration Journal des modifications {#admin-page-creator-changelog}
+# Créateur de pages d'administration Journal des modifications
 
 ### Version 1.9.0 - Publié le 2026-01-18 {#version-190---released-on-2026-01-18}
 

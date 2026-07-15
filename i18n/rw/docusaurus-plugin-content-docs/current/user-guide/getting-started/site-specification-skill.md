@@ -3,7 +3,7 @@ title: Uburyo bwo gukora Site Specification
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kỹ năng Xác định Yêu cầu Trang web (Site Specification Skill) {#site-specification-skill}
+# Kỹ năng Xác định Yêu cầu Trang web (Site Specification Skill)
 
 Kỹ năng **Site Specification** là một cách tiếp cận có cấu trúc để ghi lại các mục tiêu, đối tượng và bản sắc thương hiệu của trang web của bạn. Thông tin này được lưu trữ trong bộ nhớ **site_brief** của bạn, mà các agent sẽ tham khảo qua các phiên làm việc để cung cấp sự hỗ trợ nhất quán và hiểu ngữ cảnh.
 

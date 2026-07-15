@@ -3,7 +3,7 @@ title: Integration WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# ការរួមបញ្ចូលជាមួយ WPMU DEV {#wpmu-dev-integration}
+# ការរួមបញ្ចូលជាមួយ WPMU DEV
 
 ## ພາບລວມ {#overview}
 WPMU DEV ແມ່ນເວທີ WordPress ທີ່ຄົບວົງຈອນ ເຊິ່ງມີການໃຫ້ບໍລິການໃນດ້ານ hosting, plugins, ແລະ ບໍລິການຕ່າງໆສຳລັບເວັບໄຊທ໌ WordPress. ການເຊື່ອມຕໍ່ນີ້ຈະເຮັດໃຫ້ການ đồng bộ domain ອັດຕະໂນມັດ ແລະ ການຈັດການ SSL certificate ລະຫວ່າງ Ultimate Multisite ແລະ hosting ຂອງ WPMU DEV ເປັນໄປໄດ້.

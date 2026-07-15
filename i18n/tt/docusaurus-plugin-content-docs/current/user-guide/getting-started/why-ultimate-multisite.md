@@ -3,7 +3,7 @@ title: Чөнки Ultimate Multisite ни?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Почему Ultimate Multisite {#why-ultimate-multisite}
+# Почему Ultimate Multisite
 
 Если вы дошли до этой статьи, то, скорее всего, вы слышали, что наш плагин может стать решением для воплощения вашей бизнес-идеи в жизнь. Мы надеемся, что к концу этого текста у вас появятся все нужные ответы.
 

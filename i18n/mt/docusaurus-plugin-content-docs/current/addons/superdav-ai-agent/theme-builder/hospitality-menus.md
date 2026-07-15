@@ -3,7 +3,7 @@ title: Menijiet tal-Ospitalità
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus tal-Ospitalità {#hospitality-menus}
+# Menus tal-Ospitalità
 
 Il-funzjoni **Hospitality Menus** tippermetti lil Theme Builder jiġġenera u jdaħħal paġni strutturati ta’ menus tal-ikel u x-xorb direttament fis-sit WordPress tiegħek.
 

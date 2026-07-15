@@ -3,7 +3,7 @@ title: Txhawm txhawm qhov plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgrading a plan (v2) {#downgrading-a-plan-v2}
+# Downgrading a plan (v2)
 
 _**NOTE สำคัญ: ບົດຄວາມນີ້ເວົ້າເຖິງ Ultimate Multisite version 2.x.**_
 

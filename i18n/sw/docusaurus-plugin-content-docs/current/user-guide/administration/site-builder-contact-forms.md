@@ -3,7 +3,7 @@ title: Fomu za Mawasiliano za Jengo la Tovuti
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Contact Forms za Site Builder {#site-builder-contact-forms}
+# Contact Forms za Site Builder
 
 Superdav AI Agent v1.10.0 imeongeza uwezo wa kuunda fomu za mawasiliano moja kwa moja kutoka kwenye chat interface kwa kutumia Site Builder agent. Hii inakuwezesha kuongeza fomu za mawasiliano zenye utendaji kamili kwenye ukurasa wowote bila kuondoka kwenye chat.
 

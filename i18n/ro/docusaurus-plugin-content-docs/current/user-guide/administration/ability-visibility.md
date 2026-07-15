@@ -3,7 +3,7 @@ title: Vizibilitatea abilităților
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Vizibilitatea Abilităților {#ability-visibility}
+# Vizibilitatea Abilităților
 
 Superdav AI Agent v1.12.0 introduce controale de **Vizibilitate a Abilităților** care determină pe ce interfețe va fi expusă fiecare abilitate. Acest lucru permite administratorilor să își ajusteze detaliile în ceea ce privește capacitățile agenților care sunt disponibile prin REST API-uri, servere MCP, integrari WooCommerce și alte interfețe.
 

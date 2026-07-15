@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Gníomh: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Gníomh: wp_ultimo_ptm_page_list_after_title
 
 Lig d’fhorbróirí plugin cnaipí breise a chur le leathanaigh liosta
 

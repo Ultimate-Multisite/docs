@@ -3,7 +3,7 @@ title: Loco Translate ئۆزگىرىش خاتىرىسى
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate ئۆزگىرىش خاتىرىسى {#loco-translate-changelog}
+# Loco Translate ئۆزگىرىش خاتىرىسى
 
 ### 1.0.1 {#101}
 * ئەڭ يېڭى Loco Translate نەشرى بىلەن ماسلىشىشچانلىقى ياخشىلاندى

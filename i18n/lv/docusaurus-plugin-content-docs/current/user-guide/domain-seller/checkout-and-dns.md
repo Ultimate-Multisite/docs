@@ -3,7 +3,7 @@ title: Pārdošanas lauka un klienta DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout laukums un domēna pārvaldība {#checkout-field-and-customer-dns-management}
+# Checkout laukums un domēna pārvaldība
 
 ## Domānas izvēles lauks {#the-domain-selection-checkout-field}
 

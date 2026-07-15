@@ -3,7 +3,7 @@ title: Hookien viiteopas
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook-viite {#hooks-reference}
+# Hook-viite
 
 Automaattisesti luotu dokumentaatio kaikille Ultimate Multisite -laajennuksen **59 actionille** ja **118 filterille**.
 

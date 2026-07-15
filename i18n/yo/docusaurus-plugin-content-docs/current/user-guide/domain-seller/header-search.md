@@ -3,7 +3,7 @@ title: Ìṣàwárí Domain Akọsori
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Ìṣàwárí Domain ní Header {#header-domain-search}
+# Ìṣàwárí Domain ní Header
 
 Lo ìṣètò yìí nígbà tí o bá fẹ́ form kékeré ní header tí ó bẹ̀rẹ̀ ìṣàwárí domain, lẹ́yìn náà kí ó jẹ́ kí oníbàárà yan lára àwọn domain tó wà nínú Ultimate Multisite checkout.
 

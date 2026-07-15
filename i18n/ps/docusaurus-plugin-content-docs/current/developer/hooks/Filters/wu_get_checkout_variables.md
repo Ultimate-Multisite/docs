@@ -4,7 +4,7 @@ title: فلټر - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filter: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Filter: wu_get_checkout_variables
 
 د plugin جوړوونکو ته اجازه ورکوي چې د پیسو ورکولو پاڼې مخکې ټاکل شوي ارزښتونه filter کړي.
 

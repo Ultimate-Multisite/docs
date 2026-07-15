@@ -4,7 +4,7 @@ title: Fyuluta - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Sefa: send_auth_cookies {#filter-sendauthcookies}
+# Sefa: send_auth_cookies
 
 Imalola kuletsa auth cookies kuti zisatumizidwe kwenikweni kwa client.
 

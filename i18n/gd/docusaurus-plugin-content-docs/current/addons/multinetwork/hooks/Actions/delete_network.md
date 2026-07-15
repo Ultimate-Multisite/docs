@@ -4,7 +4,7 @@ title: Gnìomh - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Gnìomh: delete_network {#action-deletenetwork}
+# Gnìomh: delete_network
 
 Thèid a chur an gnìomh às dèidh lìonra a bhith air a sguabadh às.
 

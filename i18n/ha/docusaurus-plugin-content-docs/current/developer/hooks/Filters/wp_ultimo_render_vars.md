@@ -4,7 +4,7 @@ title: Tacewa - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Tacewa: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Tacewa: wp_ultimo_render_vars
 
 Bai wa masu haɓaka plugin damar ƙara ƙarin variable zuwa yanayin render a duniya baki ɗaya.
 

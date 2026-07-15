@@ -4,7 +4,7 @@ title: Gníomh - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Gníomh: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Gníomh: wu_enqueue_extra_hooks
 
 Lig d’fhorbróirí breiseán crúcaí breise a chur leis
 

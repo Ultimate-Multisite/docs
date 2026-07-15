@@ -4,7 +4,7 @@ title: Sivana - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Sivana: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Sivana: wu_woocommerce_line_item_params
 
 Sivano ny masontsivana ampiasaina hamoronana ireo singa andalana ao amin’ny WooCommerce Cart, alohan’ny hamindrana ny mpanjifa mankany amin’ny WooCommerce checkout.
 

@@ -3,7 +3,7 @@ title: 計費方案變更日誌
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# 計費方案更新日誌 {#metered-plans-changelog}
+# 計費方案更新日誌
 
 版本 1.1.0 - 發布日期 2026-05-05
 - 新增：針對多站點子站的 AI Token 計費功能 — 可以追蹤並根據可配置的每 Token 費率對客戶站點的 AI Token 用量進行計費。

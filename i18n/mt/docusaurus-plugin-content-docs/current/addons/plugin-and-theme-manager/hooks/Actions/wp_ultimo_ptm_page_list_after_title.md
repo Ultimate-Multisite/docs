@@ -4,7 +4,7 @@ title: Azzjoni - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Azzjoni: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Azzjoni: wp_ultimo_ptm_page_list_after_title
 
 Ħalli lill-iżviluppaturi tal-plugin iżidu buttuni addizzjonali mal-paġni tal-listi
 

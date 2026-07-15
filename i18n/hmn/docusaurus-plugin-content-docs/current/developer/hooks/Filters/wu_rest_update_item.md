@@ -4,7 +4,7 @@ title: Lim - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Lim: wu_rest_update_item {#filter-wurestupdateitem}
+# Lim: wu_rest_update_item
 
 Lim seb puas tso cai kom ua qhov kev thov mus ntxiv los tsis tso cai.
 

@@ -3,7 +3,7 @@ title: WP-CLI Sanggunian
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Sanggunian {#wp-cli-reference}
+# WP-CLI Sanggunian
 
 Ang Gratis AI Agent naghatag og usa ka pamilya sa mga command nga `wp gratis-ai-agent` para sa pag-benchmark sa agent, pagdumala sa iyang mga abilidad (abilities), ug pagpangutana sa kahimtang sa agent gikan sa command line. Kinahanglan ang tanang command nga WP-CLI 2.0 o mas taas pa.
 

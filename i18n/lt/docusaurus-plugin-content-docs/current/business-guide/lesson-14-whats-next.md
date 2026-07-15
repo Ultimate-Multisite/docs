@@ -3,7 +3,7 @@ title: '14 pamoka: Kas toliau'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# 14 pamoka: Kas toliau {#lesson-14-what-comes-next}
+# 14 pamoka: Kas toliau
 
 Jūs nuo nulio sukūrėte nišinę svetainių platformą. FitSite veikia, aptarnauja fitneso studijas ir generuoja pasikartojančias pajamas. Šioje paskutinėje pamokoje aptariama, kur judėti toliau.
 

@@ -3,7 +3,7 @@ title: Chingira Kufamba neKupatsanana kweControl Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kufamba Kuenzanisa Control Panel {#enhance-control-panel-integration}
+# Kufamba Kuenzanisa Control Panel
 
 ## Zvinoreva {#overview}
 Enhance ndiyo control panel yakakwana inosimbisa zvinokosha dze hosting uye management. Izvi zvinhu zvinoita kuti domain syncing (kugadzirisa domain) uye SSL certificate management zvizere zvichitonga pakati pe Ultimate Multisite ne Enhance Control Panel.

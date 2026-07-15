@@ -3,7 +3,7 @@ title: Fanomezana ny Sunrise Constant amin'ny Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Manampiana ny constant Sunrise ho marina amin'ny Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Manampiana ny constant Sunrise ho marina amin'ny Closte
 
 Misy manome hosting sasany mampitony (lock) ny `wp-config.php` noho antony fiarovana. Midika izany fa tsy afaka manova azy ho automatique ny Ultimate Multisite mba hampidirana ireo constant ilaina mba hiara-miasa ny mapping an'ny domain sy ny fahaizana hafa. Ny Closte dia iray amin'ireo hosting ireo.
 

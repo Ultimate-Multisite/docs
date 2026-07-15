@@ -3,7 +3,7 @@ title: GitHub 代码片段
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# 如何在我们的 GitHub 仓库中使用 Ultimate Multisite 代码片段 {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# 如何在我们的 GitHub 仓库中使用 Ultimate Multisite 代码片段
 
 GitHub 仓库中提供了一些代码片段，这些代码片段经常被 Ultimate Multisite 用户请求使用，他们希望添加一些小功能，例如在注册页面添加 Google Analytics 脚本，或从管理 Dashboard 中隐藏一个元框。
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# 如何将代码片段添加到你的 theme 的 functions.php 文件中。 {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# 如何将代码片段添加到你的 theme 的 functions.php 文件中。
 
   1. 登录你的 WordPress Network 管理 Dashboard，并前往 Themes >Theme Editor（见下方截图）。
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# 如何创建 Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# 如何创建 Must-Use Plugins (mu-plugins)
 
 WordPress 有一项功能，允许你加载名为“Must-Use Plugins”的自定义功能，简称“mu-plugins”。
 

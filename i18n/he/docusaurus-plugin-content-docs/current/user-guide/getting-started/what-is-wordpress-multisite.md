@@ -3,7 +3,7 @@ title: מה זה WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# מהו WordPress Multisite? {#what-is-wordpress-multisite}
+# מהו WordPress Multisite?
 
 בליבה של WordPress קיימת תכונה בשם 'Multisite' (רב-אתרים), שמקורותיה מגיעים לשנת 2010, עם השקת WordPress 3.0. מאז היא עברה מספר עדכונים שנועדו להוסיף תכונות חדשות ולחזק את האבטחה.
 

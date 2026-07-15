@@ -3,7 +3,7 @@ title: Webhook-oj
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Un Prima Vizu de Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Un Prima Vizu de Webhooks (v2)
 
 _**ATTENCO: Notu ki ĉi tiu funkcio aŭ artikolo estas por avantaŭaj uzantoj.**_
 

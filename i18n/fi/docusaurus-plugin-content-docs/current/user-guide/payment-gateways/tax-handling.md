@@ -3,7 +3,7 @@ title: Verojen käsittely
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Verojen käsittely {#tax-handling}
+# Verojen käsittely
 
 Ultimate Multisite sisältää verojen keräysmoduulin ydinpluginissamme, joten jos sinun täytyy kerätä myyntiveroja paketeistasi, kokonaisuuksistasi ja palveluistasi, voit tehdä sen helposti ilman lisäosien asentamista.
 

@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# Filter: wu_apc_process_page_content
 
 അന്തിമ ഉള്ളടക്കത്തിൽ മാറ്റങ്ങൾ വരുത്താൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

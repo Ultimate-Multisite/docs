@@ -4,7 +4,7 @@ title: Aktioun - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Aktioun: wu_before_light_ajax {#action-wubeforelightajax}
+# Aktioun: wu_before_light_ajax
 
 A verschiddene Fäll musse mir extra Kraaft lueden, fir Aktiounen ze behandelen.
 

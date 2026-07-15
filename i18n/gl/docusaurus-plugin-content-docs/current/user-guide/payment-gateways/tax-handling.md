@@ -3,7 +3,7 @@ title: Xestión de impostos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Xestión de impostos {#tax-handling}
+# Xestión de impostos
 
 Ultimate Multisite ten un módulo de recadación de impostos integrado no noso plugin principal, polo que se necesitas recadar impostos sobre vendas nos teus plans, paquetes e servizos, podes facelo facilmente sen recorrer á instalación de ningún complemento.
 

@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# ක්‍රියාව: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# ක්‍රියාව: wu_mt_providers_registered
 
 පෙරනිමි providers ලියාපදිංචි කිරීමෙන් පසු ක්‍රියාත්මක වේ.
 

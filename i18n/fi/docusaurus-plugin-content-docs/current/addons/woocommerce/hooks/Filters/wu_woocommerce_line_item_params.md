@@ -4,7 +4,7 @@ title: Suodatin - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Suodatin: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Suodatin: wu_woocommerce_line_item_params
 
 Suodata parametreja, joita käytetään rivikohtien luomiseen WooCommerce-ostoskorissa ennen asiakkaan uudelleenohjaamista WooCommerce checkoutiin.
 

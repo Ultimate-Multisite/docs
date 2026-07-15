@@ -4,7 +4,7 @@ title: Aksyon - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Aksyon: wu_activation {#action-wuactivation}
+# Aksyon: wu_activation
 
 Pèmèt lòt pati nan ekstansyon an atache woutin yo pou aktivasyon
 

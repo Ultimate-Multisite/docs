@@ -4,7 +4,7 @@ title: Filtër - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtër: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Filtër: wu_country_get_administrative_division_name
 
 Kthen emrin e rregullt të nënndarjeve administrative të vendit.
 

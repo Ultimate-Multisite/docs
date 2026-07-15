@@ -4,7 +4,7 @@ title: Զտիչ - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# Ֆիլտր՝ wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Ֆիլտր՝ wp_ultimo_skip_network_active_check
 
 Թույլ է տալիս մշակողներին կարճ միացումով շրջանցել այս ստուգումը։
 

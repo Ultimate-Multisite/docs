@@ -3,7 +3,7 @@ title: Kwishyurwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kwishyurwa (v2) {#getting-paid-v2}
+# Kwishyurwa (v2)
 
 _**ICYITONDERWA CY'INGENZI: Iyi ngingo ivuga kuri Ultimate Multisite verisiyo 2.x.**_
 

@@ -3,7 +3,7 @@ title: Mailchimp Changelog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp کی تبدیلیوں کی فہرست {#mailchimp-changelog}
+# Mailchimp کی تبدیلیوں کی فہرست
 
 Version: 1.1.1 - جاری کیا گیا: 2025-09-28
 

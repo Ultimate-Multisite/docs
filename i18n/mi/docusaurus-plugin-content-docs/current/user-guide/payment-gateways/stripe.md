@@ -3,7 +3,7 @@ title: Whakawhanainga Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Whakawhanaungatanga me te Gateway o Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Whakawhanaungatanga me te Gateway o Stripe (v2)
 
 _**Tohutohu WAIPA: Ko tēnei litanau e tino whakamahinga i Ultimate Multisite v2.x.**_
 

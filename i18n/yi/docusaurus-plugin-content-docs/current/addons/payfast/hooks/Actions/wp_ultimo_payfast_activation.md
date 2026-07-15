@@ -4,7 +4,7 @@ title: אַקציע - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# אַקציע: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# אַקציע: wp_ultimo_payfast_activation
 
 לאָזט אַנדערע טיילן פונעם plugin צוהענגען זייערע רוטינען פֿאַר אַקטיוואַציע
 

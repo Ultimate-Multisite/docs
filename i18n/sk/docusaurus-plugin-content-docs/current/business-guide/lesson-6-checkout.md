@@ -3,7 +3,7 @@ title: 'Lekcia 6: Skúsenosť s registráciou'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcia 6: Skúsenosť s registráciou {#lesson-6-the-signup-experience}
+# Lekcia 6: Skúsenosť s registráciou
 
 Proces checkoutu je miesto, kde sa záujem mení na príjem. Mätúci alebo všeobecný proces registrácie stráca zákazníkov. Špecifický proces pre danú niku, ktorý hovorí ich jazykom a pôsobí jednoducho, ich konvertuje.
 

@@ -3,7 +3,7 @@ title: Fanaovana ny vokatra fandraisana vola voalohany anao
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Fanaovana vokatra fandraisana vola voalohany (v2) {#creating-your-first-subscription-product-v2}
+# Fanaovana vokatra fandraisana vola voalohany (v2)
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia ho an'ny mpampiasa Ultimate Multisite v2.x ihany. Raha mampiasa dika 1.x ianao,**_ **_jereo ity lahatsoratra ity**_.
 

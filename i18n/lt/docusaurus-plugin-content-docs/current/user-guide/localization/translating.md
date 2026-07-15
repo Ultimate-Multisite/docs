@@ -3,7 +3,7 @@ title: Vertinimas Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite Tautrinimas {#translating-ultimate-multisite}
+# Ultimate Multisite Tautrinimas
 
 Ultimate Multisite yra pateikta anglų kalba, tačiau šis plugin yra visiškai vertinamas ir mes aktyviai sveikinam vertimo įnašus.
 

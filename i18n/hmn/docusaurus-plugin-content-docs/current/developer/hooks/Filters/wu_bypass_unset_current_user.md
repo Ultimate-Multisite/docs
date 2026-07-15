@@ -4,7 +4,7 @@ title: Lim - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Lim: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Lim: wu_bypass_unset_current_user
 
 Tso cai rau cov developers hla tau code uas unset current user.
 

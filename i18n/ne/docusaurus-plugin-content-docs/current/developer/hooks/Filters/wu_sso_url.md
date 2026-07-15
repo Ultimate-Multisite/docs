@@ -4,7 +4,7 @@ title: फिल्टर - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# फिल्टर: wu_sso_url {#filter-wussourl}
+# फिल्टर: wu_sso_url
 
 क्रस-डोमेन ग्राहक कार्यहरूका लागि फर्काइनुअघि उत्पन्न गरिएका SSO URLहरू फिल्टर गर्छ।
 

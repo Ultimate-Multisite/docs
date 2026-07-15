@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_get_network_public_ip
 sidebar_label: wu_get_network_public_ip
 _i18n_hash: 129b6c2423c8d5af9f4314cc35715281
 ---
-# Àlẹmọ: wu_get_network_public_ip {#filter-wugetnetworkpublicip}
+# Àlẹmọ: wu_get_network_public_ip
 
 Wo diẹ sii nipa àlẹmọ yii ni isalẹ, lori method kanna yii.
 

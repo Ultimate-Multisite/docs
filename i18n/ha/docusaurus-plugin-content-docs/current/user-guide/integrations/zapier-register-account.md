@@ -3,7 +3,7 @@ title: Raddade Akun da Shiga ta hanyar Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# دعوة: حساب خود را از طریق Zapier ثبت کنید {#event-register-an-account-via-zapier}
+# دعوة: حساب خود را از طریق Zapier ثبت کنید
 
 در مقاله [ادغام Ultimate Multisite با Zapier](zapier.md)، ما در مورد نحوه استفاده از Zapier برای انجام کارهای مختلف در Ultimate Multisite بر اساس محرک‌ها و رویدادها صحبت کردیم. در این مقاله، به شما نشان خواهیم داد که چگونه می‌توانید برنامه‌های شخص ثالث را ادغام کنید. ما از Google Sheets به عنوان منبع داده استفاده خواهیم کرد و اطلاعات را برای ثبت یک حساب کاربری در Ultimate Multisite ارسال می‌کنیم.
 

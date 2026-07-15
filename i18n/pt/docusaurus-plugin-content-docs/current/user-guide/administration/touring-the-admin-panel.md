@@ -3,7 +3,7 @@ title: Passeando pelo Painel de Administração
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Conhecendo o Painel de Administração {#touring-the-admin-panel}
+# Conhecendo o Painel de Administração
 
 O Ultimate Multisite visa ser o mais simples e autoexplicativo possível, mas com uma ferramenta tão poderosa, ele pode ajudar a ter um tour guiado. Vamos percorrer as páginas de administração para te ajudar a se situar.
 

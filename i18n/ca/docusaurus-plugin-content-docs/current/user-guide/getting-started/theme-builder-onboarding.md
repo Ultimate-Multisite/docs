@@ -3,7 +3,7 @@ title: Flot de benvinguda del Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flux de Benvinguda del Constructor de Temes {#theme-builder-onboarding-flow}
+# Flux de Benvinguda del Constructor de Temes
 
 Superdav AI Agent v1.12.0 presenta un **flux de benvinguda del Constructor de Temes** guiat que et ajuda a crear un tema de blocs personalitzat durant la teva configuració inicial. Això substitueix el mode Site Builder (Constructor de Lloc) anterior per un enfoque més flexible i assistit per agent.
 

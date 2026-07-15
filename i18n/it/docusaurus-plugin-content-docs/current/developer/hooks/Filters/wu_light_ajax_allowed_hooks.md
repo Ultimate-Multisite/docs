@@ -4,7 +4,7 @@ title: Filtro - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Filtro: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Filtro: wu_light_ajax_allowed_hooks
 
 Per motivi di sicurezza, limitiamo il numero di azioni disponibili per l'hooking. Questo filtro consente agli sviluppatori di espandere tale elenco se necessario.
 

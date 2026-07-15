@@ -4,7 +4,7 @@ title: Филтър - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Филтър: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Филтър: wu_pending_payment_message
 
 Позволява на потребителя да промени съобщението, което се показва за изчакваните плащания.
 

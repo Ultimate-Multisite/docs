@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i Eksportuesit të sajtit
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Regjistri i ndryshimeve i Site Exporter {#site-exporter-changelog}
+# Regjistri i ndryshimeve i Site Exporter
 
 Version: 1.0.6 - Publikuar më 2026-05-11
 * E re: Eksportet e site tani përfshijnë një index.php vetë-nisës, që ZIP të mund të instalohet në një host të ri pa instalim të veçantë të plugin

@@ -3,7 +3,7 @@ title: Site Builder Режимінен Шығару Хабарламасы
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Сайт Құрастыру Режимінен Ажырату Хабарламасы {#site-builder-mode-removal-notice}
+# Сайт Құрастыру Режимінен Ажырату Хабарламасы
 
 **Site Builder режимі Superdav AI Agent v1.12.0-де жойылды.** Егер сіз Site Builder режимін қолдансаңыз, стиль жасау және сайтты орнату үшін **Setup Assistant agent**-ке көшіруіңіз керек.
 

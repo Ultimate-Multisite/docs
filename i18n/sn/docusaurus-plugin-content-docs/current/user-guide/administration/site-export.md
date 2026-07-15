@@ -3,7 +3,7 @@ title: Kupfuura Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Kusarera Kwesaiti (Site Export) {#site-export}
+# Kusarera Kwesaiti (Site Export)
 
 Peji readmin **Site Export** inabva admin page inabva kune administrators ve network kuti vapaone site imwe, kana nzvimbo yese ye network yakaiwa ku archive inogona kutorera kupenyu yekutanga (migration), backup, kana kunge kubatsirwa.
 

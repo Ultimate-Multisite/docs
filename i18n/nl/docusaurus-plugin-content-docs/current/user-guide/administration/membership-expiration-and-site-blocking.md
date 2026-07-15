@@ -3,7 +3,7 @@ title: Lidmaatschap verlopen en site blokkeren
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiratie van lidmaatschappen en blokkeren van de site {#membership-expiration-and-site-blocking}
+# Expiratie van lidmaatschappen en blokkeren van de site
 
 Deze handleiding legt uit hoe Ultimate Multisite omgaat met de expiratie van lidmaatschappen, het aflopen van proefperiodes en het blokkeren van de site op de frontend. Het behandelt de levenscyclus van een lidmaatschap, van actief naar verlopen, de instellingen die bepalen of sites worden geblokkeerd, en wat u moet controleren als sites toegankelijk blijven nadat een lidmaatschap is verlopen.
 

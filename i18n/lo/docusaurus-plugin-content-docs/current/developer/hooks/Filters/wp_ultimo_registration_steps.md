@@ -4,7 +4,7 @@ title: ຕົວກອງ - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# ຕົວກັ່ນຕອງ: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# ຕົວກັ່ນຕອງ: wp_ultimo_registration_steps
 
 ເພີ່ມຂັ້ນຕອນເພີ່ມເຕີມຜ່ານຕົວກັ່ນຕອງ
 

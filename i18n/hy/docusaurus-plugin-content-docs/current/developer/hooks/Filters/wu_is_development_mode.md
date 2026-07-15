@@ -4,7 +4,7 @@ title: Ֆիլտր - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Ֆիլտր՝ wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Ֆիլտր՝ wu_is_development_mode
 
 Թույլ է տալիս plugin մշակողներին ավելացնել լրացուցիչ ստուգումներ զարգացման ռեժիմի համար։
 

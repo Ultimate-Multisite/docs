@@ -27,7 +27,7 @@ title: |
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# 过滤器：retrieve_password_message {#filter-retrievepasswordmessage}
+# 过滤器：retrieve_password_message
 
 过滤密码重置邮件的正文。
 

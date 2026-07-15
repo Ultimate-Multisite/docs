@@ -3,7 +3,7 @@ title: '6강: 가입 경험'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: 가입 경험 구축 {#lesson-6-the-signup-experience}
+# Lesson 6: 가입 경험 구축
 
 결제 과정은 관심이 수익으로 바뀌는 지점입니다. 혼란스럽거나 일반적인 가입 과정은 고객을 놓치게 만듭니다. 고객의 언어로 말하고 손쉽게 느껴지는, 특정 분야에 특화된 흐름이 고객을 전환시킵니다.
 

@@ -4,7 +4,7 @@ title: Filter - wu_add_new_domain_modal_fields
 sidebar_label: wu_add_new_domain_modal_fields
 _i18n_hash: 82538b8033ce3cb1a2d4e59881ac1358
 ---
-# Filter: wu_add_new_domain_modal_fields {#filter-wuaddnewdomainmodalfields}
+# Filter: wu_add_new_domain_modal_fields
 
 ဒိုမိန်းအသစ်ထည့်ရန် ပေါ်လာသည့် (modal) ကွက်လပ်များကို စစ်ထုတ်ပေးသည့် (filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။
 

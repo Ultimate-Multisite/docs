@@ -4,7 +4,7 @@ title: Sivana - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Sivana: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Sivana: wu_apc_should_display_admin_menu
 
 Avelao ny admins hanafina ny pejy menu admin, raha efa nahavita ny fizotry ny fanamboarana izy ireo.
 

@@ -4,7 +4,7 @@ title: פֿילטער - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# פילטער: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# פילטער: wu_checkout_calculate_prorate_credits
 
 דערלויבט plugin־אַנטוויקלער זיך אַרײַנצומישן מיטן קרעדיט־ווערט.
 

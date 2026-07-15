@@ -3,7 +3,7 @@ title: Ukuthekelisa Isayithi
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Ukuthekelisa Isayithi {#site-export}
+# Ukuthekelisa Isayithi
 
 Ikhasi lomlawuli le-**Site Export** livumela abalawuli benethiwekhi ukuthi bapakishe isayithi elilodwa, noma yonke inethiwekhi, libe i-archive elandekayo yokuthutha, ukwenza isipele, noma umsebenzi wokudlulisela komunye.
 

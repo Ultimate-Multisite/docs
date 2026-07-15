@@ -3,7 +3,7 @@ title: 'Thuto ea 7: Ho e etsa ea hao'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Thuto 7: Ho e Etsa ea Hao {#lesson-7-making-it-yours}
+# Thuto 7: Ho e Etsa ea Hao
 
 Bareki ba hao ha baa lokela ho ikutlwa eka ba sebedisa "katoloso e nngwe ya WordPress." Ba lokela ho ikutlwa eka ba sebedisa FitSite -- sethala se ahilweng bakeng sa indasteri ya bona. Thuto ena e akaretsa ho aha lebitso, white-labeling, le ho etsa hore sethala se ikutlwe jwalo ka sehlahiswa.
 

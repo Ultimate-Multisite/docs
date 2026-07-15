@@ -3,7 +3,7 @@ title: 'Lesona 10: Andro fandefasana'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesona 10: Andro fandefasana {#lesson-10-launch-day}
+# Lesona 10: Andro fandefasana
 
 Vita avokoa ny zava-drehetra. Alohan'ny hanokafanao ny varavarana, ity lesona ity dia mandalo ny lisitra fanamarinana alohan'ny fandefasana mba hahazoana antoka fa tsy misy simba, tsy ampy, na mahamenatra.
 

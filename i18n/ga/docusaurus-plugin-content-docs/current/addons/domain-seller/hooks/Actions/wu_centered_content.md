@@ -4,7 +4,7 @@ title: Gníomh - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Gníomh: wu_centered_content {#action-wucenteredcontent}
+# Gníomh: wu_centered_content
 
 Lig d’fhorbróirí plugin ábhar breise a chur leis taobh istigh den cholún lárnaithe.
 

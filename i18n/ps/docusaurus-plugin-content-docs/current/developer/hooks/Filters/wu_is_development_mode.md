@@ -4,7 +4,7 @@ title: فلټر - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# فلټر: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# فلټر: wu_is_development_mode
 
 د پلګین جوړوونکو ته اجازه ورکوي چې د پرمختیايي حالت لپاره اضافي ازموینې ورزیاتې کړي.
 

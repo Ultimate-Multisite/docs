@@ -4,7 +4,7 @@ title: 過濾器 - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# 過濾器：wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# 過濾器：wu_stripe_webhook_membership
 
 用於過濾與此 webhook 相關的會籍記錄。
 

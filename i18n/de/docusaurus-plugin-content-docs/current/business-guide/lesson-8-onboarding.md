@@ -3,7 +3,7 @@ title: 'Lektion 8: Kunden-Onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lektion 8: Kunden-Onboarding {#lesson-8-customer-onboarding}
+# Lektion 8: Kunden-Onboarding
 
 Einen Kunden zum Anmelden zu bewegen, ist nur die halbe Miete. Wenn er sich einloggt, sich überfordert fühlt und nie wiederkommt, haben Sie ihn verloren. Diese Lektion gestaltet das Erlebnis, das eine neue Anmeldung in einen aktiven, engagierten Kunden verwandelt.
 

@@ -4,7 +4,7 @@ title: Sefa - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Fyuluta: wu_sso_enabled {#filter-wussoenabled}
+# Fyuluta: wu_sso_enabled
 
 Yatsani/zimitsani kuthekera kwa kulowa kamodzi pa ma domain osiyanasiyana.
 

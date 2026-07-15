@@ -3,7 +3,7 @@ title: PRO-thema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Je Admin Panel aanpassen met PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Je Admin Panel aanpassen met PRO Theme
 
 Vaak hebben we bij klantwerk de behoefte om onze klanten een aangepaste ervaring te bieden in het admin dashboard van WordPress. Als je op zoek bent naar een professionelere look-and-feel, kan PRO Theme je helpen.
 

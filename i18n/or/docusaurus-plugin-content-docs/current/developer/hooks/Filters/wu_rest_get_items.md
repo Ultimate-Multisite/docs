@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# ଫିଲ୍ଟର: wu_rest_get_items {#filter-wurestgetitems}
+# ଫିଲ୍ଟର: wu_rest_get_items
 
 ଅନୁରୋଧ ସହ ଆଗକୁ ବଢ଼ିବାକୁ ଅନୁମତି ଅଛି କି ନାହିଁ, ତାହା ଫିଲ୍ଟର କରେ।
 

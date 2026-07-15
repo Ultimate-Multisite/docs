@@ -3,7 +3,7 @@ title: ශීර්ෂක වසම් සෙවීම
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Ultimate Multisite checkout තුළ ඇති ලබාගත හැකි domains අතරින් පාරිභෝගිකයාට තෝරාගැනීමට ඉඩ දෙමින්, domain සෙවීමක් ආරම්භ කරන කුඩා header form එකක් අවශ්‍ය විට මෙම සැකසුම භාවිත කරන්න.
 

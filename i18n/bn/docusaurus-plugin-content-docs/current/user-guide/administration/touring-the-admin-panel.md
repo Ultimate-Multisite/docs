@@ -3,7 +3,7 @@ title: অ্যাডমিন প্যানেল ঘুরে দেখা
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel ঘুরে দেখা {#touring-the-admin-panel}
+# Admin Panel ঘুরে দেখা
 
 Ultimate Multisite যতটা সম্ভব সহজ ও স্বয়ংব্যাখ্যামূলক হতে চায়, তবে এত শক্তিশালী একটি টুলের ক্ষেত্রে নির্দেশিত ভ্রমণ সহায়ক হতে পারে। আপনাকে পরিচিত করতে চলুন admin পাতাগুলো দেখে নেওয়া যাক।
 

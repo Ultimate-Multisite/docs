@@ -3,7 +3,7 @@ title: 管理系统电子邮件
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# 管理系统邮件 {#managing-system-emails}
+# 管理系统邮件
 
 Ultimate Multisite 会针对注册确认、付款收据和会员资格变更等事件发送各种系统邮件。你可以自定义这些邮件模板，使其符合你的品牌。
 

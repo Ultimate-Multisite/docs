@@ -3,7 +3,7 @@ title: Hangaia tētahi Pakihi Paetukutuku Motuhake
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Hangaia he Pakihi Pae Tukutuku Kōhanga me Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Hangaia he Pakihi Pae Tukutuku Kōhanga me Ultimate Multisite
 
 Ko te nuinga o te hunga e ngana ana ki te hoko pae tukutuku ka whakataetae i runga i te utu ki a Wix, Squarespace, me ngā mano tini freelancer. Ka hinga rātou. Ko te hunga ka toa, ka kōwhiri i tētahi hunga mātakitaki motuhake, ka hanga i tētahi otinga kua whakahāngaitia ki taua hunga, ā, ka tono utu mō te uara ka tukuna e rātou.
 

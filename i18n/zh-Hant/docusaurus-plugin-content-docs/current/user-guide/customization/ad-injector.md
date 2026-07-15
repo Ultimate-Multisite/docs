@@ -3,7 +3,7 @@ title: 廣告注入器
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# 使用 Ultimate Multisite: Ad Injector 在你的網路上放置廣告 {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# 使用 Ultimate Multisite: Ad Injector 在你的網路上放置廣告
 
 Ultimate Multisite: Ad Injector 是一個**免費附加元件**，讓你可以直接從方案編輯頁面在各個方案中放置廣告。
 

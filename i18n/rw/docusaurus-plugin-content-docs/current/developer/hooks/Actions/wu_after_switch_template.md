@@ -4,7 +4,7 @@ title: Igikorwa - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Igikorwa: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Igikorwa: wu_after_switch_template
 
 Emerera abategura ama-plugin guhuza functions nyuma y’uko umukoresha cyangwa super admin ahinduye template y’urubuga
 

@@ -3,7 +3,7 @@ title: Ukulawula abathengi
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Ukulawula Abathengi {#managing-customers}
+# Ukulawula Abathengi
 
 Iphepha le-**Customers** libonisa uluhlu lwamalungu abhaliswe kwinethiwekhi yakho. Eli phepha libonisa ulwazi olusisiseko lomsebenzisi, kuquka igama, idilesi ye-imeyile, ukungena kokugqibela, kunye nekhonkco elithi **switch to** elikuvumela ukuba ungene kwisiza esingaphantsi somsebenzisi njengomlawuli wesiza.
 

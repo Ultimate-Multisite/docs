@@ -3,7 +3,7 @@ title: การผสานรวม CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# การผสานรวมกับ CyberPanel {#cyberpanel-integration}
+# การผสานรวมกับ CyberPanel
 
 คู่มือนี้จะอธิบายวิธีการตั้งค่าการผสานรวม Ultimate Multisite กับ CyberPanel เพื่อให้โดเมนที่แมปในเครือข่ายของคุณถูกเพิ่ม (และลบ) เป็น virtual host ใน CyberPanel โดยมีตัวเลือกในการตั้งค่า auto-SSL ผ่าน Let's Encrypt
 

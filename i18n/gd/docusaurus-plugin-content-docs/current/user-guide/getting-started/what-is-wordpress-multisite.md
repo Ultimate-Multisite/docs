@@ -3,7 +3,7 @@ title: Cè a tha WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mij è WordPress Multisite? {#what-is-wordpress-multisite}
+# Mij è WordPress Multisite?
 
 An t-amhair, WordPress a tha de dhèanamh seàllaidh 'Multisite', a tha a' tòiseachadh air 2010 ag tòiseachadh de WordPress 3.0. San sin, tha e wedi cael mòran de ràths airson ùraichean a thabhairt agus sgìthadh a chlàradh.
 

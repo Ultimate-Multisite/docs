@@ -3,7 +3,7 @@ title: Mengelola Email Sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Mengelola Email Sistem {#managing-system-emails}
+# Mengelola Email Sistem
 
 Ultimate Multisite mengirim berbagai email sistem untuk peristiwa seperti konfirmasi pendaftaran, tanda terima pembayaran, dan perubahan membership. Anda dapat menyesuaikan template email ini agar sesuai dengan brand Anda.
 

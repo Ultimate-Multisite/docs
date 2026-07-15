@@ -4,7 +4,7 @@ title: តម្រង - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# តម្រង: wu_password_require_special {#filter-wupasswordrequirespecial}
+# តម្រង: wu_password_require_special
 
 តម្រងថាតើត្រូវទាមទារតួអក្សរពិសេសនៅក្នុងពាក្យសម្ងាត់ឬអត់។
 

@@ -4,7 +4,7 @@ title: Радња - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Радња: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Радња: wp_ultimo_captcha_deactivation
 
 Омогућава другим деловима plugin-а да прикаче своје рутине за деактивацију
 

@@ -4,7 +4,7 @@ title: Tātari - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Tātari: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Tātari: wu_apc_should_display_admin_menu
 
 Tukua ngā kaiwhakahaere kia huna i ngā whārangi tahua kaiwhakahaere, mēnā kua oti i a rātou te tukanga whakarite.
 

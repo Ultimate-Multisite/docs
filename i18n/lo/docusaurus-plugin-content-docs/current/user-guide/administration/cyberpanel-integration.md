@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# การเชื่อมต่อ CyberPanel {#cyberpanel-integration}
+# การเชื่อมต่อ CyberPanel
 
 คู่มือนี้จะอธิบายวิธีการตั้งค่าการเชื่อมต่อ Ultimate Multisite CyberPanel เพื่อให้โดเมนที่ถูกแมปในเครือข่ายของคุณถูกเพิ่ม (และลบ) เป็น virtual host ใน CyberPanel โดยอัตโนมัติ พร้อมตัวเลือกในการเตรียม SSL อัตโนมัติผ่าน Let's Encrypt
 

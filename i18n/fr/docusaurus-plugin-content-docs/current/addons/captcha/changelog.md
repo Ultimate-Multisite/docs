@@ -3,7 +3,7 @@ title: Journal des modifications de Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Journal des modifications de Captcha {#captcha-changelog}
+# Journal des modifications de Captcha
 
 Version : 1.5.0 - Publiée le 2026-05-22
 * Nouveau : limiteur de débit avec arrêt strict — compte chaque GET et POST sur les surfaces protégées par captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) et répond avec HTTP 429, un `Retry-After` header, et une mise en attente tarpit aléatoire (1–5 s, plafonnée strictement à 15 s).

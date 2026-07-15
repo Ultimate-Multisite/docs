@@ -4,7 +4,7 @@ title: Filtro - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtro: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Filtro: wu_country_get_administrative_division_name
 
 Retorna o nome amigável das subdivisões administrativas do país.
 

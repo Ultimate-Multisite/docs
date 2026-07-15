@@ -3,7 +3,7 @@ title: Céad Míneamh agus Déan ar Teampála Síti
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search agus Rinnúint i Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search agus Rinnúint i Site Templates (v2)
 
 _**Is curteoir seo ag iarraidh WP UItimo version 2.x.**_
 

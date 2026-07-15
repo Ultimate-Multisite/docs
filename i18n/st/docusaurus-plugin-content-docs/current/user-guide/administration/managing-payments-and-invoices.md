@@ -3,7 +3,7 @@ title: Ho na le ho tsoela le ho fana ka tšhobo le li-invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ho Morero Le Tlhaloso Le Tlhaloso {#managing-payments-and-invoices}
+# Ho Morero Le Tlhaloso Le Tlhaloso
 
 ## Setso Sa Tlhaloso {#payment-settings}
 

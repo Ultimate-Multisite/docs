@@ -3,7 +3,7 @@ title: Integração WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integração WPMU DEV {#wpmu-dev-integration}
+# Integração WPMU DEV
 
 ## Visão geral {#overview}
 WPMU DEV é uma plataforma WordPress abrangente que oferece hospedagem, plugins e serviços para sites WordPress.  

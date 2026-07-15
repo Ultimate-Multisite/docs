@@ -3,7 +3,7 @@ title: Interbyu sa Pagdiskobre
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 Ang **Discovery Interview** mao ang unang lakang sa proseso sa disenyo sa Theme Builder. Nangolekta kini og impormasyon mahitungod sa imong site, negosyo, ug mga gusto sa disenyo aron makahimo og personalized nga theme.
 

@@ -4,7 +4,7 @@ title: Isihluzi - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Isihluzi: wu_admin_notices {#filter-wuadminnotices}
+# Isihluzi: wu_admin_notices
 
 Vumela abaphuhlisi ukuba bahluze izaziso ze-admin ezongezwe yi-Ultimate Multisite.
 

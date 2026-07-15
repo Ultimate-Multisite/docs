@@ -3,7 +3,7 @@ title: የቋንቋ መምረጥ
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# የቋንቋ መምረጫ (Language Selector) {#language-selector}
+# የቋንቋ መምረጫ (Language Selector)
 
 ይህ ባህሪ የሚሰጠው በ **Language Selector** addon ነው።
 

@@ -4,7 +4,7 @@ title: Handling - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Handling: wu_domain_created {#action-wudomaincreated}
+# Handling: wu_domain_created
 
 Udløses, når en ny domænetilknytning tilføjes.
 

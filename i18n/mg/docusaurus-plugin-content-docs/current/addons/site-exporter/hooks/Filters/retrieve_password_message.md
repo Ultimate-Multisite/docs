@@ -4,7 +4,7 @@ title: Sivana - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Sivana: retrieve_password_message {#filter-retrievepasswordmessage}
+# Sivana: retrieve_password_message
 
 Manivana ny vatan’ny hafatry ny mailaka famerenana tenimiafina.
 

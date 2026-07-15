@@ -3,7 +3,7 @@ title: 'Lezzjoni 14: X''Jiġi Wara'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lezzjoni 14: X'Jiġi Wara {#lesson-14-what-comes-next}
+# Lezzjoni 14: X'Jiġi Wara
 
 Bnejt pjattaforma ta' websajts għal niċċa mill-bidu nett. FitSite huwa live, qed jaqdi studios tal-fitness, u qed jiġġenera dħul rikorrenti. Din l-aħħar lezzjoni tħares lejn fejn tista' tmur minn hawn.
 

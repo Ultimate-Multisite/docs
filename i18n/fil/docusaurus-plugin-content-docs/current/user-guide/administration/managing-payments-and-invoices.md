@@ -3,7 +3,7 @@ title: Pamamahala ng mga Pagbabayad at Invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pamamahala ng mga Pagbabayad at Invoice {#managing-payments-and-invoices}
+# Pamamahala ng mga Pagbabayad at Invoice
 
 ## Mga Setting ng Pagbabayad {#payment-settings}
 

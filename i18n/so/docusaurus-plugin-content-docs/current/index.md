@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dukumentiga Ultimate Multisite {#ultimate-multisite-documentation}
+# Dukumentiga Ultimate Multisite
 
 Ku soo dhawoow dukumentiga Ultimate Multisite. Ultimate Multisite wuxuu WordPress Multisite u beddelaa madal Website as a Service (WaaS) oo dhamaystiran.
 
@@ -18,7 +18,7 @@ Wax kasta oo aad u baahan tahay si aad u dejiso, u habayso, una maamusho madasha
 
 Tixraac farsamo oo loogu talagalay horumariyeyaasha wax ku dhisaya Ultimate Multisite. Waxaa ku jira tixraaca hooks, dukumentiga REST API, iyo hagayaasha horumarinta addon.
 
-### [Addons](/addons) {#addons}
+### [Kordhino](/addons) {#addons}
 
 Dukumenti loogu talagalay addon plugins lacag leh oo Ultimate Multisite ku kordhiya astaamo dheeraad ah sida isdhexgalka WooCommerce, falanqaynta, iibinta domain, iyo wax ka badan.
 

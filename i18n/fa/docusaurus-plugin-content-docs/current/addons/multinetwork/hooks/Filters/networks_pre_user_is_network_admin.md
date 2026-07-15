@@ -4,7 +4,7 @@ title: فیلتر - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 این فیلتر، شبکه‌هایی را که یک کاربر مدیر آن‌ها است، فیلتر می‌کند تا فرآیند را میان‌بُر کند.
 

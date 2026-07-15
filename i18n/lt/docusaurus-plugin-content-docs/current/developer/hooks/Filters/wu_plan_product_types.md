@@ -4,7 +4,7 @@ title: Filtras - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtras: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtras: wu_plan_product_types
 
 Filtruoja produkto tipus, kurie turėtų būti laikomi planais.
 

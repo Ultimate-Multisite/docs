@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 এইটো পৰীক্ষা কৰে যে এটা দিয়া পোষ্ট টাইপ (post type) এই প্লেনত অনুমতি আছে নে। ই প্লাগইন ডেভেলপাৰসকলক রিটার্ন ভ্যালুট ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
 

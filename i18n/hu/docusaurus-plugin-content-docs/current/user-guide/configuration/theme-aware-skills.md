@@ -3,7 +3,7 @@ title: Témaérzékeny készségek
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Témához Igazított Készségek {#theme-aware-skills}
+# Témához Igazított Készségek
 
 A Superdav AI Agent v1.10.0 négy új, témához igazított, alapvető készséget tartalmaz, amelyek automatikusan alkalmazkodnak az aktív WordPress témájához. Ezek a készségek specializált útmutatást és képességeket biztosítanak, amelyek a témájának architektúrájára és funkcióira szabva.
 

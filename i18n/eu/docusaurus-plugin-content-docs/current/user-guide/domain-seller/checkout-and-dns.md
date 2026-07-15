@@ -3,7 +3,7 @@ title: Checkout Field eta Klientelaren DNS-a
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field eta DNS-aren Kontsumari Nagusiaketa {#checkout-field-and-customer-dns-management}
+# Checkout Field eta DNS-aren Kontsumari Nagusiaketa
 
 ## Domainako Alegia lekuen leku {#the-domain-selection-checkout-field}
 

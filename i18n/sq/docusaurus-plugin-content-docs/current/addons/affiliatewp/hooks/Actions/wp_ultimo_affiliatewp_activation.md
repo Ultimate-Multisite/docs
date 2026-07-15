@@ -4,7 +4,7 @@ title: Veprim - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Veprim: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Veprim: wp_ultimo_affiliatewp_activation
 
 Lejoni pjesë të tjera të plugin-it të bashkëngjisin rutinat e tyre për aktivizim
 

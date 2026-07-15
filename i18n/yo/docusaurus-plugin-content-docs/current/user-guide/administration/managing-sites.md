@@ -3,7 +3,7 @@ title: Ṣíṣàkóso Àwọn Saiti
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ṣíṣàkóso Àwọn Ojúlé {#managing-sites}
+# Ṣíṣàkóso Àwọn Ojúlé
 
 Àwọn ojúlé (tàbí àwọn ojúlé abẹ́) ni ọkàn pàtàkì ti iṣowo WaaS rẹ. Ultimate Multisite ní irú ojúlé mẹ́ta:
 

@@ -3,7 +3,7 @@ title: Liikmepäranduse lõppmine ja veebisaidi blokeerimine
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Liikmesriku lõppmine ja veebisaite blokeerimine {#membership-expiration-and-site-blocking}
+# Liikmesriku lõppmine ja veebisaite blokeerimine
 
 See juhend selgitab, kuidas Ultimate Multisite haldab liikmesriikude lõppmine, proovivõtud perioodide lõppmine ja veebisaite esile jäämist. See käsitleb liikmesriiku elukorra aktiivsetest lõppenudeni, sellele kontrolli oleva seadistusi ning mida kontrollida, kui veebisaid jääb pääsuraks pärast liikmesriikude lõppmine.
 

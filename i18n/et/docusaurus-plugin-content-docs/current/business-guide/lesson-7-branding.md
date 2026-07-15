@@ -3,7 +3,7 @@ title: 'Õppetund 7: Selle enda omaks tegemine'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Õppetund 7: Tee see enda omaks {#lesson-7-making-it-yours}
+# Õppetund 7: Tee see enda omaks
 
 Sinu kliendid ei tohiks kunagi tunda, et nad kasutavad „mingit WordPressi pistikprogrammi“. Nad peaksid tundma, et nad kasutavad FitSite’i -- oma valdkonna jaoks loodud platvormi. See õppetund käsitleb brändingut, white-label-lahendust ja seda, kuidas panna platvorm tunduma tootena.
 

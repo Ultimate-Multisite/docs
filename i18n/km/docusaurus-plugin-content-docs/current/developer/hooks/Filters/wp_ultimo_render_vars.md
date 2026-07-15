@@ -4,7 +4,7 @@ title: តម្រង - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Filter: wp_ultimo_render_vars
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍ plugin បន្ថែមអថេរបន្ថែមទៅក្នុងបរិបទ render ជាសកល។
 

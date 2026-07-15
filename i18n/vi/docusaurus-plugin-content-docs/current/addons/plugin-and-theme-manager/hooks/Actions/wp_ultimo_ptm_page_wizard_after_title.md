@@ -4,7 +4,7 @@ title: Hành động - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Action: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Action: wp_ultimo_ptm_page_wizard_after_title
 
 Giúp các nhà phát triển plugin có thể thêm các nút tùy chỉnh vào trang danh sách.
 

@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ Flu
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# កំណត់ហេតុបម្លែង Fluent Forms {#fluent-forms-changelog}
+# កំណត់ហេតុបម្លែង Fluent Forms
 
 កំណែ៖ 2.0.1 - ចេញផ្សាយនៅ 2025-09-28
 

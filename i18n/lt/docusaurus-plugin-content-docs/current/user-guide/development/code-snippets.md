@@ -3,7 +3,7 @@ title: Kodų fragmentai
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodų fragmentai v2 {#code-snippets-for-v2}
+# Kodų fragmentai v2
 
 Pagrindinis požiūris yra tas, kad **WordPress** kodų fragmentai naudojami atlikti įvairius veiksmus, kuriems gali reikėti veikt specializuotas mažas pluginas. Šiuos kodų fragmentus galima pateikti viename WordPress core ar temo failu (bendriai jūsų temo `functions.php` failui) arba jie gali būti naudojami kaip MU pluginas.
 

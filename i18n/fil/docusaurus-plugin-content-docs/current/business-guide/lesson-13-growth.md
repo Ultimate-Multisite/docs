@@ -3,7 +3,7 @@ title: 'Aralin 13: Pagpapalaki'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesson 13: Pagpapalaki (Scaling Up) {#lesson-13-scaling-up}
+# Lesson 13: Pagpapalaki (Scaling Up)
 
 Mayroon ka nang gumaganang platform na may mga nagbabayad na customer. Tatalakayin ng araling ito kung paano kayo lalaki mula sa isang maliit na operasyon patungo sa isang matatag na negosyo—pagpapalaki ng imprastraktura, pag-o-automate ng operasyon, at pagpapataas ng kita bawat customer.
 

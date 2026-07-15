@@ -3,7 +3,7 @@ title: Ho Hlahlobo le WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Le Tšhobo le WPMU DEV Integration {#wpmu-dev-integration}
+# Le Tšhobo le WPMU DEV Integration
 
 ## Le Litlhahlo (Overview) {#overview}
 WPMU DEV ke platforme ya WordPress e le fetoga le fela, e e nthela ho numala (hosting), plugins, le litlhoko tsa sites tsa WordPress. Ho dira integration ena e ntho ho sebopeho sa domain le ho dula (SSL certificate management) ho tloha ho Ultimate Multisite le hosting la WPMU DEV.

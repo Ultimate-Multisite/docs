@@ -4,7 +4,7 @@ title: Isihlungi - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Isihlungi: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Isihlungi: wu_password_require_special
 
 Hlunga ukuthi kudingeke yini izinhlamvu ezikhethekile kumaphasiwedi.
 

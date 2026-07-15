@@ -4,7 +4,7 @@ title: Acció - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Aquesta acció: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Aquesta acció: wu_maybe_create_customer
 
 Permet als desenvolupadors de plugins fer coses addicionals quan es crea un client.
 

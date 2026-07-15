@@ -3,7 +3,7 @@ title: 'Lección 2: Eligiendo tu nicho'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lección 2: Eligiendo tu Nicho {#lesson-2-picking-your-niche}
+# Lección 2: Eligiendo tu Nicho
 
 En la Lección 1 establecimos por qué el nicho supera a lo genérico. Ahora necesitas elegir el tuyo. Esta lección te proporciona un marco de trabajo para encontrar y validar un nicho antes de invertir tiempo en construir para él.
 

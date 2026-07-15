@@ -3,7 +3,7 @@ title: Capacitats del Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacitats de Theme Builder: Estructurar i Activar Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Capacitats de Theme Builder: Estructurar i Activar Block Themes
 
 Superdav AI Agent v1.12.0 presenta dues capacitats potents que et permeten generar i desplegar block themes personalitzats directament des de l'interfície de xat.
 

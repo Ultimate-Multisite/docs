@@ -3,7 +3,7 @@ title: Material WP Àkọsílẹ̀ Àyípadà
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Àkọọlẹ Ìyípadà Material WP {#material-wp-changelog}
+# Àkọọlẹ Ìyípadà Material WP
 
 Ẹya 1.1.15 - 01/26/2026
 * Ti mú dara si: Ara kóòdù àti ìṣètò rẹ;

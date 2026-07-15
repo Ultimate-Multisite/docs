@@ -3,7 +3,7 @@ title: Krijo menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Krijo Menu {#create-menu}
+# Krijo Menu
 
 Aftësia **Krijo Menu** krijon menu navigimi në WordPress me mbështetje për etiketa të dallueshme navigimi, të ndara nga titujt e faqeve.
 

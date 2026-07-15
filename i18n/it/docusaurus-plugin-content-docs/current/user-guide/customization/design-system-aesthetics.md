@@ -3,7 +3,7 @@ title: Competenza Estetica del Sistema di Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill Estetica del Design System {#design-system-aesthetics-skill}
+# Skill Estetica del Design System
 
 Lo **Skill Estetica del Design System** è un approccio guidato per affinare l'identità visiva del tuo sito. Ti aiuta a prendere decisioni coerenti su tipografia, colore, spaziatura e i *token* di movimento che definiscono il tuo design system.
 

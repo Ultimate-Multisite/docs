@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Шүүлтүүр: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Шүүлтүүр: wu_checkout_form_base_domains
 
 Хуваалцсан checkout-формын суурь домэйнүүдийг mapped-domain бичлэг болохоос сэргийлэн шүүнэ.
 

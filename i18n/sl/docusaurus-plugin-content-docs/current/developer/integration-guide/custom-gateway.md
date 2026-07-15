@@ -3,7 +3,7 @@ title: Razvoj plačilnega prehoda po meri
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Razvoj Custom Gateway {#custom-gateway-development}
+# Razvoj Custom Gateway
 
 Ustvarite lahko prilagojene plačilne prehode z razširitvijo razreda `Base_Gateway`.
 

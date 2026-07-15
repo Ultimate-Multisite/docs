@@ -3,7 +3,7 @@ title: ચુકવણી મેળવવી
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ચૂકવણી મેળવવી (v2) {#getting-paid-v2}
+# ચૂકવણી મેળવવી (v2)
 
 _**મહત્ત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite આવૃત્તિ 2.x વિશે છે.**_
 

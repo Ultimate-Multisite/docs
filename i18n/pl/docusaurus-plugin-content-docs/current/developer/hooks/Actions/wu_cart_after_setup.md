@@ -4,7 +4,7 @@ title: Akcja - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Akcja: wu_cart_after_setup {#action-wucartaftersetup}
+# Akcja: wu_cart_after_setup
 
 Pozwala deweloperom wprowadzić dodatkowe zmiany do obiektu koszyka (checkout object).
 

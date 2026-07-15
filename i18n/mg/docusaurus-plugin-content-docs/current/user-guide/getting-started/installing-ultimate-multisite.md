@@ -3,7 +3,7 @@ title: Mametraka ny Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Fametrahana ny Ultimate Multisite {#installing-ultimate-multisite}
+# Fametrahana ny Ultimate Multisite
 
 :::note
 Ity torolalana ity dia mifanaraka amin'ny fepetra fa efa napetraka sy namboarina ny WordPress Multisite. Raha te hianatra ny fomba, jereo [ity torolalana ity](https://www.wpbeginner.com/glossary/multisite/) avy any WP Beginner.

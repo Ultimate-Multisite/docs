@@ -3,7 +3,7 @@ title: 'Dərslik 2: Nişinizi Seçmək'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Dərs 2: Nişinizi Seçmək {#lesson-2-picking-your-niche}
+# Dərs 2: Nişinizi Seçmək
 
 Dərs 1-də nişin ümumi olmaqdan daha yaxşı olduğunu öyrəndik. İndi isə öz nişinizi seçməlisiniz. Bu dərs sizə vaxt sərf etməzdən əvvəl bir niş tapmaq və onu təsdiqləmək üçün bir çərçivə verir.
 

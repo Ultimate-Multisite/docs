@@ -3,7 +3,7 @@ title: Tsoom hais thiab txhais rau tsim thiab provider configuration
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: ຕັ້ງຄ່າ ແລະ ການຕັ້ງຄ່າຜູ້ໃຫ້ບໍລິການ (Provider Configuration) {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: ຕັ້ງຄ່າ ແລະ ການຕັ້ງຄ່າຜູ້ໃຫ້ບໍລິການ (Provider Configuration)
 
 Addon Domain Seller ມາພ້ອມກັບເຄື່ອງມືຊ່ວຍຕັ້ງຄ່າທີ່ພາເຈົ້າຜ່ານທຸກຂັ້ນຕອນທີ່ຕ້ອງການ. ໜ້າພ这 ນີ້ຈະອະທິບາຍເຖິງການເຮັດວຽກຂອງ wizard ແລະ ວິທີການຕັ້ງຄ່າ ຫຼື ຕັ້ງຄ່າໃໝ່ໃຫ້ກັບ provider ຫຼັງຈາກນັ້ນ.
 

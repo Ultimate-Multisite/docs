@@ -3,7 +3,7 @@ title: भुक्तानी र बिल व्यवस्थापन
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# भुक्तानी र इनभ्वाइस व्यवस्थापन गर्ने {#managing-payments-and-invoices}
+# भुक्तानी र इनभ्वाइस व्यवस्थापन गर्ने
 
 ## भुक्तानी सेटिङहरू {#payment-settings}
 

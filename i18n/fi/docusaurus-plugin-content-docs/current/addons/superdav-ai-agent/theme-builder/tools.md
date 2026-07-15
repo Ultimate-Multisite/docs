@@ -3,7 +3,7 @@ title: Työkalut ja määritykset
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Työkalut ja määritys {#tools-and-configuration}
+# Työkalut ja määritys
 
 Theme Builder käyttää joukkoa työkaluja WordPress-sivustosi analysointiin, suunnitteluun ja rakentamiseen. Versiossa 1.16.0 **sd-ai-agent/site-scrape on nyt tason 1 työkalu**, joten se on oletuksena käytettävissä Theme Builderissa. Superdav AI Agent v1.18.0 tuo myös erikseen jaeltavan Advanced-kumppanipaketin luotettuihin kehittäjätyönkulkuihin; nämä työkalut eivät ole osa WordPress.org-ydinpakettia, ja ne on asennettava ja valtuutettava erikseen.
 

@@ -3,7 +3,7 @@ title: সেটিংসের রেফারেন্স
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings রেফারেন্স {#settings-reference}
+# Settings রেফারেন্স
 
 এই পৃষ্ঠাটি Ultimate Multisite-এ দৈনন্দিন প্রশাসনকে প্রভাবিত করে এমন settings এবং সাম্প্রতিক আচরণগত পরিবর্তনগুলো অনুসরণ করে।
 

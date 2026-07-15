@@ -3,7 +3,7 @@ title: Aniqlash intervyusi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery intervyu {#discovery-interview}
+# Discovery intervyu
 
 **Discovery intervyu** Theme Builder dizayn jarayonidagi birinchi qadamdir. U shaxsiylashtirilgan theme yaratish uchun saytingiz, biznesingiz va dizayn afzalliklaringiz haqida ma'lumot to'playdi.
 

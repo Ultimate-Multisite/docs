@@ -3,7 +3,7 @@ title: Webhook-lary işlemek
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook dolandyryşy {#webhook-handling}
+# Webhook dolandyryşy
 
 Daşarky hyzmatlardan wakalary almak we maglumatlary Ultimate Multisite bilen sinhronlamak üçin ýörite webhook ahyrky nokatlaryny dörediň.
 

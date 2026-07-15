@@ -4,7 +4,7 @@ title: Szűrő - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Szűrő: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Szűrő: wu_should_create_domain_record_for_site
 
 Szűri, hogy az Ultimate Multisite létrehozzon-e domainrekordot egy újonnan létrehozott webhelyhez.
 

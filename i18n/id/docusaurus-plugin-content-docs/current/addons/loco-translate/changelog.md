@@ -3,7 +3,7 @@ title: Catatan Perubahan Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Catatan Perubahan Loco Translate {#loco-translate-changelog}
+# Catatan Perubahan Loco Translate
 
 ### 1.0.1 {#101}
 * Peningkatan kompatibilitas dengan versi Loco Translate terbaru

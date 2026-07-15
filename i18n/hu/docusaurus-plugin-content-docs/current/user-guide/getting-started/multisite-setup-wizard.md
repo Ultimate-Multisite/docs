@@ -3,7 +3,7 @@ title: Multisite beállítási varázsló
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite telepítővarázsló {#multisite-setup-wizard}
+# Multisite telepítővarázsló
 
 Az Ultimate Multisite tartalmaz egy beépített varázslót, amely automatikusan átalakítja a hagyományos WordPress telepítést WordPress Multisite hálózattá. Ezzel kiküszöbölheted a `wp-config.php` manuális szerkesztését és az adatbázis-parancsok futtatását.
 

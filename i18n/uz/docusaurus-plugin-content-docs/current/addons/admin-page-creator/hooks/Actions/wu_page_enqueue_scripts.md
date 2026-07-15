@@ -4,7 +4,7 @@ title: Amal - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Amal: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Amal: wu_page_enqueue_scripts
 
 Bu yerga maxsus amal qo‘shilmoqda, shunda kerak bo‘lganda skriptlar va uslublarni navbatga qo‘yish uchun joyimiz bo‘ladi\ hamda ular faqat kerakli sahifalarda yuklanishiga ishonch hosil qilinadi
 

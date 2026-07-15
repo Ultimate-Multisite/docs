@@ -3,7 +3,7 @@ title: cPanel ସମନ୍ୱୟ
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ସହିତ ଏକତ୍ରୀକରଣ (Integration) {#cpanel-integration}
+# cPanel ସହିତ ଏକତ୍ରୀକରଣ (Integration)
 
 ## ଦୃଷ୍ଟିକୋଣ (Overview) {#overview}
 cPanel ହେଉଛି ଅନେକ ସେୟାର୍ଡ୍ ଏବଂ ଡେଡିକେଟ୍ ହୋଷ୍ଟିଂ ପ୍ରଦାତାମାନଙ୍କ ଦ୍ୱାରା ବ୍ୟବହୃତ ସବୁଠାରୁ ପ୍ରସିଦ୍ଧ ୱେବ ହୋଷ୍ଟିଂ କଣ୍ଟ୍ରୋଲ୍ ପ୍ୟାନେଲ୍‌ ମଧ୍ୟରୁ ଅନ୍ୟତମ। ଏହି ଏକତ୍ରୀକରଣ Ultimate Multisite ଏବଂ cPanel ମଧ୍ୟରେ ଅଟୋମାଟିକ୍ ଡୋमेन ସିଙ୍କିଙ୍ଗ (domain syncing)କୁ ସମ୍ଭବ କରିଥାଏ, ଯାହା ଆପଣଙ୍କୁ ଆପଣଙ୍କ cPanel ଆକାଉଣ୍ଟରେ ଡୋमेन ଆଲିଆସ ଏବଂ ସବ୍-ଡୋमेन ଅଟୋମାଟିକ୍ ଭାବେ ଯୋଗ କରିବାକୁ ଅନୁମତି ଦିଏ।

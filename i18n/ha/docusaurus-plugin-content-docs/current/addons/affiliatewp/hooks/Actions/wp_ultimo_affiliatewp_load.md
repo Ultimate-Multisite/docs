@@ -4,7 +4,7 @@ title: Aiki - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# Action: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# Action: wp_ultimo_affiliatewp_load
 
 Yana faruwa lokacin da aka loda dukkan dependencies
 

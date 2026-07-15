@@ -3,7 +3,7 @@ title: Integrasyon sa cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrasyon sa cPanel {#cpanel-integration}
+# Integrasyon sa cPanel
 
 ## Overview {#overview}
 Ang cPanel isa sa pinakasikat nga web hosting control panel nga gigamit sa daghang shared ug dedicated hosting providers. Kini nga integrasyon nagtugot sa awtomatikong pag-sync sa domain tali sa Ultimate Multisite ug cPanel, nga maghatag kanimo og awtomatiko nga pagdaghan og domain aliases ug subdomains sa imong cPanel account.

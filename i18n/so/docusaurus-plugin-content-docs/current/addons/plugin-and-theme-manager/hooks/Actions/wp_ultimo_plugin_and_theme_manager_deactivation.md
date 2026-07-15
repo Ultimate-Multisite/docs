@@ -4,7 +4,7 @@ title: Ficil - wp_ultimo_plugin_and_theme_manager_deactivation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_deactivation
 _i18n_hash: 30fcaefc2b8a8393e8ac0ff38193ed26
 ---
-# Ficil: wp_ultimo_plugin_and_theme_manager_deactivation {#action-wpultimopluginandthememanagerdeactivation}
+# Ficil: wp_ultimo_plugin_and_theme_manager_deactivation
 
 U oggolow qaybaha kale ee fidinta inay ku lifaaqaan hawlahooda joojinta
 

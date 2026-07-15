@@ -3,7 +3,7 @@ title: Cloudways 統合
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways 連携 {#cloudways-integration}
+# Cloudways 連携
 
 ## 概要 {#overview}
 Cloudways は、DigitalOcean、AWS、Google Cloud など、さまざまなクラウドプロバイダー上に WordPress サイトを展開できるマネージドクラウドホスティングプラットフォームです。この連携により、Ultimate Multisite と Cloudways の間で、ドメインの自動同期と SSL 証明書管理が可能になります。

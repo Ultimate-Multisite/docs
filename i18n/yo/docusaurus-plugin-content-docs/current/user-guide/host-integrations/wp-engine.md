@@ -3,7 +3,7 @@ title: Ìṣepọ̀ WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Ìṣepọ̀ WP Engine {#wp-engine-integration}
+# Ìṣepọ̀ WP Engine
 
 ## Àkótán {#overview}
 WP Engine jẹ́ pẹpẹ ìgbàlejò WordPress tí a ń ṣàkóso, tó ní ìpele gíga, tó ń pèsè iṣẹ́ tó dára jù, ààbò, àti agbára láti gbooro fún àwọn ojúlé WordPress. Ìṣepọ̀ yìí ń jẹ́ kí ìmúdọ́gba domeni láìfọwọ́ṣe wà láàárín Ultimate Multisite àti WP Engine.

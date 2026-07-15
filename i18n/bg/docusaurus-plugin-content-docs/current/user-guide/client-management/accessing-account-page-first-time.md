@@ -3,7 +3,7 @@ title: Достъп до страницата на профила
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Как мога да достъпя страницата си за профил за първи път? {#how-can-i-access-my-account-page-for-the-first-time}
+# Как мога да достъпя страницата си за профил за първи път?
 
 Добре дошли в Ultimate Multisite!
 

@@ -4,7 +4,7 @@ title: Аракет - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Аракет: wu_deactivation {#action-wudeactivation}
+# Аракет: wu_deactivation
 
 Плагиндин башка бөлүктөрүнө өчүрүү үчүн өз тартиптерин тиркөөгө мүмкүндүк берет
 

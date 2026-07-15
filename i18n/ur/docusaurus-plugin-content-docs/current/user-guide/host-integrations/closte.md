@@ -3,7 +3,7 @@ title: Closte انضمام
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte انضمام {#closte-integration}
+# Closte انضمام
 
 ## جائزہ {#overview}
 Closte ایک منظم WordPress ہوسٹنگ پلیٹ فارم ہے جو Google Cloud انفراسٹرکچر پر بنایا گیا ہے۔ یہ انضمام Ultimate Multisite اور Closte کے درمیان خودکار ڈومین مطابقت پذیری اور SSL سرٹیفکیٹ کے انتظام کو ممکن بناتا ہے۔

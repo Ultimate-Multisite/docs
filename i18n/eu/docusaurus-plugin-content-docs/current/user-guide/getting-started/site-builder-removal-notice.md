@@ -3,7 +3,7 @@ title: Site Builder Moduaren Eraboligunea Iraitzia
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Moduaren Ezabatzea Batzagarria {#site-builder-mode-removal-notice}
+# Site Builder Moduaren Ezabatzea Batzagarria
 
 **Site Builder modua daude Superdav AI Agent v1.12.0-an arautzen.** Site Builder modua erabiltzen duten dela, tema dezazteko eta site bat argiatzeko **Setup Assistant agent**-era migraatu behar duzu.
 

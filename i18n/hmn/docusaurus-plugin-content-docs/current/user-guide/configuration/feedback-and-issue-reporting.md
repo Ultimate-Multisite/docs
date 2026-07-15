@@ -3,7 +3,7 @@ title: Txhua tus neeg raug lus thiab tswv txog kev txaus thiab kev hluav tswv
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Customer Feedback & Issue Reporting {#customer-feedback--issue-reporting}
+# Customer Feedback & Issue Reporting
 
 Gratis AI Agent v1.5.0 에는 사용자들이 도움이 되지 않는 답변을 표시하고 채팅 인터페이스에서 직접 문제를 보고할 수 있도록 내장된 피드백 및 문제 보고 시스템이 추가되었습니다. 이 시스템은 동의 관리, 자동 보고 명령어, 그리고 백엔드에서의 AI 지원 분류(triage) 기능을 포함합니다.
 

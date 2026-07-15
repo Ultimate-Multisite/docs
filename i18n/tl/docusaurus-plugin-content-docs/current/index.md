@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dokumentasyon ng Ultimate Multisite {#ultimate-multisite-documentation}
+# Dokumentasyon ng Ultimate Multisite
 
 Maligayang pagdating sa dokumentasyon ng Ultimate Multisite. Ginagawang ganap na Website as a Service (WaaS) platform ng Ultimate Multisite ang WordPress Multisite.
 

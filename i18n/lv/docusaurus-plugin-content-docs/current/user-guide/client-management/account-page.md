@@ -3,7 +3,7 @@ title: Klienta konta lapas
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Jūsu Klienta Konta Lapa (v2) {#your-clients-account-page-v2}
+# Jūsu Klienta Konta Lapa (v2)
 
 _**SVIRTIE ATMIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

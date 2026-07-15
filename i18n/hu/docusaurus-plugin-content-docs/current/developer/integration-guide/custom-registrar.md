@@ -3,7 +3,7 @@ title: Egy Saját Regisztrátor Integrációépítése
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Saját Regisztrátor Integrációépítés {#building-a-custom-registrar-integration}
+# Saját Regisztrátor Integrációépítés
 
 A Domain Seller addon egy **Integration Registry** (Integrációs Regisztrátor) mintát használja. Minden regisztrátor egy PHP osztály, amely implementálja a `Domain_Selling_Capability`-t, és a `wu_domain_seller_register_capabilities` action hook segítségével regisztrálja magát.
 

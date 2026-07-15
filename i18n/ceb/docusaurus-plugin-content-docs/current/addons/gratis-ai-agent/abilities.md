@@ -3,7 +3,7 @@ title: Mga Referensya sa mga Kakayahan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Mga Abilidad nga Reference {#abilities-reference}
+# Mga Abilidad nga Reference
 
 Ang mga ability kay ang mga atomic nga lihok (actions) nga mahimong tawgon sa Gratis AI Agent sa imong WordPress installation. Ang matag ability usa ka registered nga PHP class nga nagpakita og JSON schema — ang agent nagbasa niining schema samtang nag-runtime aron masabtan kung unsa nga mga parameters ang gikinahanglan ug unsa ang ibalik sa ability.
 

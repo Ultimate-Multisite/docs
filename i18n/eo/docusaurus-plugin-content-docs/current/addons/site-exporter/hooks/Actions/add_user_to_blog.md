@@ -4,7 +4,7 @@ title: Ago - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Ago: add_user_to_blog {#action-addusertoblog}
+# Ago: add_user_to_blog
 
 Ekfunkcias tuj post kiam uzanto estas aldonita al retejo.
 

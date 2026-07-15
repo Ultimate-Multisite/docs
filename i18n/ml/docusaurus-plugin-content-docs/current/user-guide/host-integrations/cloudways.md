@@ -3,7 +3,7 @@ title: Cloudways സംയോജനം
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways സംയോജനം {#cloudways-integration}
+# Cloudways സംയോജനം
 
 ## അവലോകനം {#overview}
 DigitalOcean, AWS, Google Cloud തുടങ്ങിയ വിവിധ ക്ലൗഡ് ദാതാക്കളിൽ WordPress സൈറ്റുകൾ വിന്യസിക്കാൻ അനുവദിക്കുന്ന managed cloud hosting പ്ലാറ്റ്ഫോമാണ് Cloudways. ഈ സംയോജനം Ultimate Multisite-നും Cloudways-നും ഇടയിൽ സ്വയമേവയുള്ള ഡൊമെയ്ൻ സമന്വയവും SSL സർട്ടിഫിക്കറ്റ് മാനേജ്മെന്റും സാധ്യമാക്കുന്നു.

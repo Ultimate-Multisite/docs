@@ -3,7 +3,7 @@ title: Ibisobanuro by'Igenamiterere
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Reba ku Miterere {#settings-reference}
+# Reba ku Miterere
 
 Uru rupapuro rukurikirana imiterere igira ingaruka ku micungire ya buri munsi n’impinduka ziheruka mu myitwarire muri Ultimate Multisite.
 

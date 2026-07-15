@@ -3,7 +3,7 @@ title: Catatan Perubahan PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Catatan Perubahan PayFast {#payfast-changelog}
+# Catatan Perubahan PayFast
 
 Versi: 1.0.2 - Dirilis pada 2025-09-28
 

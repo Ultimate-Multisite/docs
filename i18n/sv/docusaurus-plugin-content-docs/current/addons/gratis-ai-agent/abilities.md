@@ -3,7 +3,7 @@ title: Förmågereferens
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referens för förmågor {#abilities-reference}
+# Referens för förmågor
 
 Förmågor är de atomära åtgärder som Gratis AI Agent kan anropa på din WordPress-installation. Varje förmåga är en registrerad PHP-klass som exponerar ett JSON-schema — agenten läser detta schema vid körning för att förstå vilka parametrar som krävs och vad förmågan returnerar.
 

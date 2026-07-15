@@ -3,7 +3,7 @@ title: 'Leson 14: Ki sa k ap vini apre'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leson 14: Sa k vini apre {#lesson-14-what-comes-next}
+# Leson 14: Sa k vini apre
 
 Ou bati yon platfòm sit entènèt nich depi nan zewo. FitSite an liy, li ap sèvi estidyo fizik, epi li ap jenere revni renouvlab. Dènye leson sa a gade ki kote pou ale apati isit la.
 

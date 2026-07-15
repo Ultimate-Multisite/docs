@@ -3,7 +3,7 @@ title: Recherche et remplacement automatiques dans les modèles de site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Recherche et remplacement automatiques dans les modèles de site (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Recherche et remplacement automatiques dans les modèles de site (v2)
 
 _**Ce tutoriel nécessite WP UItimo version 2.x.**_
 

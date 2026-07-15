@@ -4,7 +4,7 @@ title: Filtar - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Omogućuje developerima pluginova promjenu toga koji status objave treba biti prebrojan. Prema zadanim postavkama prebrojavaju se objavljene i privatne objave
 

@@ -4,7 +4,7 @@ title: Isihluzi - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Isihluzi: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Isihluzi: mu_migration/export/user/headers
 
 Sihluza iseti emiselweyo yezihloko zomsebenzisi eziza kuthunyelwa ngaphandle/zingeniswe ngaphakathi.
 

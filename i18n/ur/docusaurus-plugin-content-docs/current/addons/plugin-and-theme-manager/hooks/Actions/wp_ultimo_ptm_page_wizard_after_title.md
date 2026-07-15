@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Action: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Action: wp_ultimo_ptm_page_wizard_after_title
 
 پلاگ ان بنانے والوں کو صفحات کی فہرست میں اضافی بٹن شامل کرنے کی اجازت دیتا ہے۔
 

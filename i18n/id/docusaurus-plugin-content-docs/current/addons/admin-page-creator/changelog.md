@@ -3,7 +3,7 @@ title: Catatan Perubahan Admin Page Creator
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Catatan Perubahan Admin Page Creator {#admin-page-creator-changelog}
+# Catatan Perubahan Admin Page Creator
 
 ### Versi 1.9.0 - Dirilis pada 2026-01-18 {#version-190---released-on-2026-01-18}
 

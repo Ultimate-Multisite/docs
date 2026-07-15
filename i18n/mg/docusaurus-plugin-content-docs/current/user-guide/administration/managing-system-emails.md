@@ -3,7 +3,7 @@ title: Fitantanana ny Mail an'ny Rafitra
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Fitera ny Mail an-tserasera {#managing-system-emails}
+# Fitera ny Mail an-tserasera
 
 Ny Ultimate Multisite dia mandefa maila maro ho an'ny zavatra samihafa toy ny fanamaorana fidirana, famindrana vola, ary fiovana amin'ny fandraisana anjara. Afaka manova ireo modely maila ireo mba hifanaraka amin'ny marika (brand) anareo ianao.
 

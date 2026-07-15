@@ -3,7 +3,7 @@ title: 'Leasan 3: A’ stèidheachadh an lìonra agad'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Leasan 3: A’ stèidheachadh an lìonra agad {#lesson-3-setting-up-your-network}
+# Leasan 3: A’ stèidheachadh an lìonra agad
 
 Àm togail. San leasan seo stàlaichidh tu Ultimate Multisite agus rèitichidh tu bun-stèidh lìonra FitSite. Tha gach co-dhùnadh an seo air a dhèanamh leis an nìse fallaineachd san amharc.
 

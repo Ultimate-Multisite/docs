@@ -3,7 +3,7 @@ title: 互联网搜索
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# 互联网搜索 {#internet-search}
+# 互联网搜索
 
 Gratis AI Agent v1.5.0 新增了 **互联网搜索** 功能，让 AI 助手能够在对话过程中从网络上检索最新的信息。此功能由 [Brave Search API](https://brave.com/search/api/) 或 [Tavily API](https://tavily.com/) 提供支持。
 

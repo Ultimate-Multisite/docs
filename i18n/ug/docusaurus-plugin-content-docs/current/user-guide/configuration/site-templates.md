@@ -3,7 +3,7 @@ title: Sayt şablonları
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# سايت قالبleri (v2) {#site-templates-v2}
+# سايت قالبleri (v2)
 
 _**UYARI: Bu makale Ultimate Multisite sürüm 2.x'i ifade eder. Eğer siz 1.x sürümünü kullanıyorsanız,**_ **bu makaleye bakın.**_
 

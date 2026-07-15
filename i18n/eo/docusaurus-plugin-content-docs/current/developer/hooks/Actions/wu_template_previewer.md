@@ -4,7 +4,7 @@ title: Ago - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Ago: wu_template_previewer {#action-wutemplatepreviewer}
+# Ago: wu_template_previewer
 
 Ruliĝas kiam ene de la kunteksto de la ŝablona antaŭrigardilo.
 

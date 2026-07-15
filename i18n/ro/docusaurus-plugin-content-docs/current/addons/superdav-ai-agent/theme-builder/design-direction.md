@@ -3,7 +3,7 @@ title: Direcția de design
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direcția de Design {#design-direction}
+# Direcția de Design
 
 Pasul **Direcția de Design** vă permite să revizuiți, să rafinați și să finalizați designul vizual al temei, înainte ca Theme Builder să genereze tema completă.
 

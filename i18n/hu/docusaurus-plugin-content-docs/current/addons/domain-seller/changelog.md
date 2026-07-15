@@ -3,7 +3,7 @@ title: Doménértékesítő változásnaplója
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller változásnapló {#domain-seller-changelog}
+# Domain Seller változásnapló
 
 1.3.0 verzió - Kiadva: 2026-06-02
 - Új: Hálózati adminisztrátori figyelmeztetés hozzáadva, amikor a HostAfrica viszonteladói egyenleg túl alacsonyra csökken

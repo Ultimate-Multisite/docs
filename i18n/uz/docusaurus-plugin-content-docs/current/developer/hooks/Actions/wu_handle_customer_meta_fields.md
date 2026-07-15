@@ -4,7 +4,7 @@ title: Amal - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Harakat: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Harakat: wu_handle_customer_meta_fields
 
 Plagin ishlab chiquvchilariga kerak bo‘lsa, meta ma’lumotlarni turli usullarda saqlashga ruxsat beradi.
 

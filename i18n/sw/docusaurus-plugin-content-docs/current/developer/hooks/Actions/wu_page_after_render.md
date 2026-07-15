@@ -4,7 +4,7 @@ title: Action - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 Inaruhusu watengenezaji wa plugin kuongeza maudhui zaidi baada ya kuonyesha ukurasa.
 

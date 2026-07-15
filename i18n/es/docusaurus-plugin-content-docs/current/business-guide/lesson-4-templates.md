@@ -3,7 +3,7 @@ title: 'Lección 4: Creación de plantillas de nicho'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lección 4: Creando Plantillas de Nicho {#lesson-4-building-niche-templates}
+# Lección 4: Creando Plantillas de Nicho
 
 Las plantillas son el núcleo de tu propuesta de valor para el nicho. Un dueño de estudio de fitness que se registra y ve un sitio que ya parece un sitio web de fitness —con horarios de clases, perfiles de entrenadores y la imaginería adecuada— tiene muchas más probabilidades de quedarse que uno que ve un lienzo en blanco.
 

@@ -3,7 +3,7 @@ title: Иштеп чыгуучулар үчүн документтер
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Иштеп чыгуучунун документациясы {#developer-documentation}
+# Иштеп чыгуучунун документациясы
 
 Бул колдонмо иштеп чыгуучуларга Ultimate Multisite менен интеграциялануу, аны кеңейтүү же ага addon'дорду иштеп чыгуу үчүн керектүүнүн баарын берет. Ultimate Multisite WordPress Multisite тармагын Website-as-a-Service (WaaS) платформасына айландырат.
 

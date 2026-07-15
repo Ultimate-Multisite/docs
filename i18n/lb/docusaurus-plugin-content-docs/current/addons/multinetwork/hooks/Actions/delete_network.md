@@ -4,7 +4,7 @@ title: Aktioun - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Aktioun: delete_network {#action-deletenetwork}
+# Aktioun: delete_network
 
 Gëtt ausgeléist, nodeems en Netzwierk geläscht gouf.
 

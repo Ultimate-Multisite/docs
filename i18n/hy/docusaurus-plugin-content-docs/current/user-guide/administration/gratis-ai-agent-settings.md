@@ -3,7 +3,7 @@ title: Gratis AI Agent-ի կարգավորումներ
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent-ի կարգավորումներ {#gratis-ai-agent-settings}
+# Gratis AI Agent-ի կարգավորումներ
 
 **Settings → Advanced** էկրանը Gratis AI Agent-ում տրամադրում է ադմինիստրատորի մակարդակի կազմաձևում backend ինտեգրումների համար։ Այս էջը փաստաթղթավորում է feedback-ի փոխանցումը, որոնման մատակարարի բանալիները, կառավարվող Superdav ծառայության կարգավորումը, Google Calendar-ի կառավարիչները, TextBee SMS-ի կարգավորումները և ամբողջ ցանցի գործառույթների դրոշակները։
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# एक्शन: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# एक्शन: wp_ultimo_woocommerce_load
 
 यह तब ट्रिगर होता है जब सभी ऐड-ऑन निर्भरताएं (dependencies) लोड हो जाती हैं।
 

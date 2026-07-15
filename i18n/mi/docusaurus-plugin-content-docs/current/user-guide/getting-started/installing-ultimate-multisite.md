@@ -3,7 +3,7 @@ title: Te whakauru Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Te Whakaurunga o te Ultimate Multisite {#installing-ultimate-multisite}
+# Te Whakaurunga o te Ultimate Multisite
 
 :::note
 Ka whakaarohia e tēnei akoranga kua whakaurua, kua whakaritea rānei e koe te WordPress Multisite. Hei ako mō tēnei, tirohia [tēnei akoranga](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner.

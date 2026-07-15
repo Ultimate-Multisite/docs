@@ -3,7 +3,7 @@ title: Afsendelse af e-mails og udsendelser
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Afsendelse af e-mails og broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Afsendelse af e-mails og broadcasts (v2)
 
 _**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

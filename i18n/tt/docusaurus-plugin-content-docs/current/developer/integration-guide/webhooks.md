@@ -3,7 +3,7 @@ title: Webhook эшкәртү
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook эшкәртү {#webhook-handling}
+# Webhook эшкәртү
 
 Тышкы хезмәтләрдән вакыйгалар кабул итү һәм мәгълүматны Ultimate Multisite белән синхронлау өчен махсус webhook нокталары булдырыгыз.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Επεκτάσεις Ultimate Multisite {#ultimate-multisite-addons}
+# Επεκτάσεις Ultimate Multisite
 
 Οι επεκτάσεις (Addons) εμπλουτίζουν το Ultimate Multisite με επιπλέον λειτουργίες και ενσωματώσεις. Οι περισσότερες επεκτάσεις είναι επί πληρωμή και μπορούν να αγοραστούν από το [ultimatemultisite.com](https://ultimatemultisite.com).
 

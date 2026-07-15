@@ -3,7 +3,7 @@ title: Mga Kinahanglanon
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mga Kinahanglanon sa Ultimate Multisite {#ultimate-multisite-requirements}
+# Mga Kinahanglanon sa Ultimate Multisite
 
 Ang una nga butang nga mahimong pangutana nimo sa dili pa mogasto para sa Ultimate Multisite kay unsa ang mga kinahanglanon aron ma-run nato ang plugin. Sa maayo, gamay ra gyud ang basic requirements para sa pag-run og Ultimate Multisite: usa ka **domain name**, usa ka maayong **hosting provider** ug usa ka WordPress **Multisite** installation. Mao na lang ang kinahanglan nimo!
 

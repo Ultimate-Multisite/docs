@@ -3,7 +3,7 @@ title: अकाउंट पेज तक पहुँचना
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# पहली बार अपने अकाउंट पेज को कैसे एक्सेस करें? {#how-can-i-access-my-account-page-for-the-first-time}
+# पहली बार अपने अकाउंट पेज को कैसे एक्सेस करें?
 
 Ultimate Multisite में आपका स्वागत है!
 

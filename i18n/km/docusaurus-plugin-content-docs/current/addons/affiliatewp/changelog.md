@@ -3,7 +3,7 @@ title: ប្រវត្តិការផ្លាស់ប្តូរ Affili
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# កំណត់ហេតុផ្លាស់ប្តូរ AffiliateWP {#affiliatewp-changelog}
+# កំណត់ហេតុផ្លាស់ប្តូរ AffiliateWP
 
 កំណែ: 2.0.1 - ចេញផ្សាយនៅ 2025-09-28
 

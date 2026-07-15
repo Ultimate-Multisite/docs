@@ -3,7 +3,7 @@ title: Мүшеликке аяктоо
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Чыгармалыкты (Membership) Абаюуну Жоюу (v2) {#canceling-a-membership-v2}
+# Чыгармалыкты (Membership) Абаюуну Жоюу (v2)
 
 _**МААЛЫЙ ЭСАС КӨРҮЗҮ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү.**_
 

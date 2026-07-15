@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Ketso: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Ketso: wp_ultimo_site_exporter_activation
 
 Lumella likarolo tse ling tsa plugin ho hokela mekhoa ea tsona bakeng sa activation.
 

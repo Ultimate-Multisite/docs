@@ -4,7 +4,7 @@ title: Ketso - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Ketso: wu_page_added {#action-wupageadded}
+# Ketso: wu_page_added
 
 Lumella baetsi ba dikatoloso ho tsamaisa dintho tse ding ha maqephe a ngodiswa.
 

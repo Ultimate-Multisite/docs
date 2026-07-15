@@ -3,7 +3,7 @@ title: Dziennik zmian Eksportatora Strony
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Dziennik zmian Site Exporter {#site-exporter-changelog}
+# Dziennik zmian Site Exporter
 
 Wersja: 1.0.6 - Wydano dnia 2026-05-11
 * Nowość: Eksporty witryny teraz pakują samodzielnie uruchamiany plik index.php, dzięki czemu plik ZIP można zainstalować na świeżym hostingu bez konieczności osobnej instalacji pluginu.

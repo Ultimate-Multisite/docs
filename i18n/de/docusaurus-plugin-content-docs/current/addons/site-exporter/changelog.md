@@ -3,7 +3,7 @@ title: Änderungsprotokoll des Website-Exporters
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Änderungsprotokoll {#site-exporter-changelog}
+# Site Exporter Änderungsprotokoll
 
 Version: 1.0.6 - Veröffentlicht am 2026-05-11
 * Neu: Site-Exporte bündeln jetzt eine selbststartende index.php, sodass die ZIP auf einem neuen Host ohne separate Plugin-Installation installiert werden kann

@@ -4,7 +4,7 @@ title: Aksi - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# Aksi: wu_mt_migration_failed {#action-wumtmigrationfailed}
+# Aksi: wu_mt_migration_failed
 
 Dipicu ketika proses migrasi gagal.
 

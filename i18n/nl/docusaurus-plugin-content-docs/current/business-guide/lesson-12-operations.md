@@ -3,7 +3,7 @@ title: 'Les 12: Het Bedrijf Runnen'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Les 12: Het Bedrijf Runnen {#lesson-12-running-the-business}
+# Les 12: Het Bedrijf Runnen
 
 Een platform is geen project dat je afwerkt; het is een bedrijf dat je draaiende houdt. In deze les behandelen we de dagelijkse bedrijfsvoering van FitSite: ondersteuning, facturatie, onderhoud en het tevreden houden van klanten.
 

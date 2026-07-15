@@ -4,7 +4,7 @@ title: Chiito - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Chiito: wu_deactivation {#action-wudeactivation}
+# Chiito: wu_deactivation
 
 Rega zvimwe zvikamu zve plugin zvibatanidze maitiro azvo ekudzima kushanda
 

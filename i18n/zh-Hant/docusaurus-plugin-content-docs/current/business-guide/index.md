@@ -3,7 +3,7 @@ title: 建立利基網站業務
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# 打造一個利基網站業務：Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# 打造一個利基網站業務：Ultimate Multisite
 
 大多數想販售網站的人，都會在價格上與 Wix、Squarespace 以及成千上萬的自由工作者競爭。他們會輸掉。真正成功的，都是鎖定一個特定的受眾，為這個受眾量身打造解決方案，然後根據所提供的價值來收費。
 

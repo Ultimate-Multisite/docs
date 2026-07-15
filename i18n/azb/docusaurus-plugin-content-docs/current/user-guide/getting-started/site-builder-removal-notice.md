@@ -3,7 +3,7 @@ title: Site Builder Mode Removal Notice
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode Kaldırma Bildirimi {#site-builder-mode-removal-notice}
+# Site Builder Mode Kaldırma Bildirimi
 
 **Site Builder mode, Superdav AI Agent v1.12.0 sürümünde kaldırılmıştır.** Eğer Site Builder mode kullanıyorsanız, tema oluşturma ve site kurulumu için **Setup Assistant agent**'a geçiş yapmanız gerekir.
 

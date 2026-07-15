@@ -3,7 +3,7 @@ title: Fanondroana ny fahaiza-manao
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Fanondroana Abilities {#abilities-reference}
+# Fanondroana Abilities
 
 Ny Abilities dia asa fototra azon'ny Gratis AI Agent antsoina ao amin'ny fametrahana WordPress anao. Ny ability tsirairay dia kilasy PHP voasoratra anarana izay mampiseho JSON schema — mamaky ity schema ity amin'ny runtime ny agent mba hahatakatra izay parameters ilaina sy izay averin'ilay ability.
 

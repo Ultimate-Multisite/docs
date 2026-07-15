@@ -3,7 +3,7 @@ title: Creant el teu primer product de subscripció
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creació del teu primer producte de subscripció (v2) {#creating-your-first-subscription-product-v2}
+# Creació del teu primer producte de subscripció (v2)
 
 _**NOTA IMPORTANT:** Aquest article és només per a usuaris de Ultimate Multisite versió 2.x. Si utilitzeu la versió 1.x,**_ **_**mireu aquest article**_**.
 

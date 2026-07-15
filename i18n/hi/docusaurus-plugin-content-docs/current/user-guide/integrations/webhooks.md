@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) पर पहली नज़र {#a-first-look-on-webhooks-v2}
+# Webhooks (v2) पर पहली नज़र
 
 _**ध्यान दें: यह सुविधा या लेख उन्नत उपयोगकर्ताओं के लिए है।**_
 

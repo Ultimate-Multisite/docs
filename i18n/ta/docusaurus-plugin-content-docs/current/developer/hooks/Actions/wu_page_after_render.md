@@ -4,7 +4,7 @@ title: செயல் - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 நாம் பக்கத்தை (page) காண்பித்த பிறகு, கூடுதல் உள்ளடக்கத்தைச் சேர்க்க plugin உருவாக்குநர்களுக்கு இது வாய்ப்பளிக்கிறது.
 

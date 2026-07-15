@@ -4,7 +4,7 @@ title: Filter - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 အသုံးပြုသူတစ်ဦးသည် အုပ်ချုပ်သူဖြစ်သည့် ကွန်ရက်များကို စစ်ထုတ်ပေးခြင်းဖြစ်ပြီး၊ ဤလုပ်ငန်းစဉ်ကို အတိုချုံ့စေရန် အသုံးပြုပါသည်။
 

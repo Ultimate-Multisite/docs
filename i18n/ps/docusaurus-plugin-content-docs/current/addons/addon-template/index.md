@@ -3,9 +3,9 @@ title: د اضافې کينډۍ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# د اضافې کينډۍ {#addon-template}
+# د اضافې کينډۍ
 
-{{ADDON_DESCRIPTION}}
+د اضافې کينډۍ — Ultimate Multisite.
 
 ## اړتیاوې {#requirements}
 

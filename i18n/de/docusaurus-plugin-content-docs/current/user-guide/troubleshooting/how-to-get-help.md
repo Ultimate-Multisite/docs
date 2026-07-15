@@ -3,7 +3,7 @@ title: So erhalten Sie Hilfe
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Wie man Hilfe bekommt {#how-to-get-help}
+# Wie man Hilfe bekommt
 
 Sie haben Ihren gültigen Lizenzschlüssel erhalten, und damit haben Sie Zugang zu unserem Team, das Ihnen bei Problemen hilft, die Sie während der Einrichtung von Ultimate Multisite möglicherweise erleben.
 

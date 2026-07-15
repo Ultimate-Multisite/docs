@@ -3,7 +3,7 @@ title: Tala ng Pagbabago ng Mga Ticket ng Suporta
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Tala ng Pagbabago ng Mga Ticket ng Suporta {#support-tickets-changelog}
+# Tala ng Pagbabago ng Mga Ticket ng Suporta
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Pinahusay: Inalis ang direktoryong vendor/ mula sa pagsubaybay ng Git (sakop na ng .gitignore), na nagpapababa sa laki ng repository

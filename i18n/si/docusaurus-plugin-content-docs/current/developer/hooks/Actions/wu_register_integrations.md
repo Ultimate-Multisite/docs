@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# ක්‍රියාව: wu_register_integrations {#action-wuregisterintegrations}
+# ක්‍රියාව: wu_register_integrations
 
 සම්බන්ධකරණයන් තමන්ම ලියාපදිංචි කරගැනීමට ඉඩ දීමට ක්‍රියාත්මක වේ.
 

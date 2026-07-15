@@ -3,7 +3,7 @@ title: Kassaformulär
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Kassformulär {#checkout-forms}
+# Kassformulär
 
 Kassformulär är ett enkelt och flexibelt sätt att experimentera med olika metoder när du försöker konvertera nya kunder.
 

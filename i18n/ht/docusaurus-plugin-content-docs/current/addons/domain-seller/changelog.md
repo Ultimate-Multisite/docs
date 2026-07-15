@@ -3,7 +3,7 @@ title: Jounal chanjman Vandè Domèn
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog Domain Seller {#domain-seller-changelog}
+# Changelog Domain Seller
 
 Vèsyon 1.3.0 - Lage 2026-06-02
 - Nouvo: Ajoute yon avètisman network-admin lè balans revandè HostAfrica vin twò ba

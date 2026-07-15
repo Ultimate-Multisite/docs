@@ -4,7 +4,7 @@ title: Gweithred - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Gweithred: update_network {#action-updatenetwork}
+# Gweithred: update_network
 
 Yn tanio ar ôl i rwydwaith presennol gael ei ddiweddaru.
 

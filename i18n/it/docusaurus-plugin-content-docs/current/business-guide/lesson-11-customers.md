@@ -3,7 +3,7 @@ title: 'Lezione 11: Trovare Clienti'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lezione 11: Trovare Clienti {#lesson-11-finding-customers}
+# Lezione 11: Trovare Clienti
 
 Una piattaforma fantastica senza clienti è solo un hobby. Questa lezione copre come acquisire clienti in un settore di nicchia specifico: strategie che funzionano perché sei focalizzato su un unico ambito industriale.
 

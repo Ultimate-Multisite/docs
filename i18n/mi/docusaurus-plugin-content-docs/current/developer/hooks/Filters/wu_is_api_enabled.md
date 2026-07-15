@@ -4,7 +4,7 @@ title: Tātari - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Tātari: wu_is_api_enabled {#filter-wuisapienabled}
+# Tātari: wu_is_api_enabled
 
 Tukua ngā kaiwhakawhanake mono kia whakaū i tētahi āhua kua tohua mō te API.
 

@@ -3,7 +3,7 @@ title: Orkestrasi Pambangun Situs v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrasi Panggawe Situs v2 {#site-builder-orchestration-v2}
+# Orkestrasi Panggawe Situs v2
 
 Orkestrasi Panggawe Situs v2 (dikenalake ing Gratis AI Agent v1.4.0) yaiku mesin sing nguwasani panggawe situs web kanthi pirang-pirang langkah. Nalika sampeyan njaluk agen kanggo "nggawe situs web restoran" utawa "nggawe portofolio nganggo blog", orkestrator mecah tujuan tingkat dhuwur kuwi dadi **rencana** terstruktur, nemokake tambahan sing dibutuhake kanggo ngrampungake, nglakokake saben langkah kanthi urut, nglacak kemajuan, lan mulihake saka kasalahan kanthi otonom.
 

@@ -3,7 +3,7 @@ title: Mailster बदलांचा इतिहास
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster बदलांचा इतिहास {#mailster-changelog}
+# Mailster बदलांचा इतिहास
 
 ### 1.0.0 {#100}
 * पहिली आवृत्ती (Initial release)

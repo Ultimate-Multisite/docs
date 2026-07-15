@@ -3,7 +3,7 @@ title: Хостингер олон хуульчлалт
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 нь Hostinger multi-tenancy чадварыг нэмж оруулсан бөгөөд энэ нь хостлагдсан доменүүдийг одоо байгаа Hostinger domain-mapping интеграцийн хамт өөрийн тусгай багц (sovereign tenant) үйлчилгээ үзүүлэх боломжийг олгодог.
 

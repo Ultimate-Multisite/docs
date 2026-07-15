@@ -3,7 +3,7 @@ title: Müşteri Geri Bildirimi ve Sorun Bildirimi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Müşteri Geri Bildirimi ve Sorun Bildirimi {#customer-feedback--issue-reporting}
+# Müşteri Geri Bildirimi ve Sorun Bildirimi
 
 Gratis AI Agent v1.5.0, son kullanıcıların yardımcı olmayan yanıtları işaretlemesine ve sorunları doğrudan sohbet arayüzünden bildirmesine olanak tanıyan yerleşik bir geri bildirim ve sorun bildirim sistemi sunuyor. Bu sistem; onay yönetimi, otomatik bir bildirim komutu ve arka uçta yapay zeka destekli ön eleme (triage) içerir.
 

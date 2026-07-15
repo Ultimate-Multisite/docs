@@ -4,7 +4,7 @@ title: តម្រង - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# តម្រង៖ network_options_list {#filter-networkoptionslist}
+# តម្រង៖ network_options_list
 
 ត្រងបញ្ជីជម្រើសបណ្តាញ ដែលអាស្រ័យលើដែន និងផ្លូវរបស់បណ្តាញមួយ។
 

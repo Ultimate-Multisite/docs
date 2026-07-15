@@ -4,7 +4,7 @@ title: Filtrilo - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Filtrilo: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Filtrilo: wu_stripe_existing_product_id
 
 Filtras la ID de la produkto por kontroli ĝin. Se ĉi tio ekzistas, la nova abono uzos ĉi tiun produkton.
 

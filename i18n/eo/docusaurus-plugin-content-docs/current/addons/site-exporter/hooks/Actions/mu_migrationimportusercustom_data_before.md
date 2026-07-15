@@ -4,7 +4,7 @@ title: Ago - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Ago: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Ago: mu_migration/import/user/custom_data_before
 
 Ekfunkcias antaŭ eksportado de la propraj uzantdatenoj.
 

@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 இல் அறிமுகப்படுத்தப்பட்டது) என்பது பல-படி (multi-step) வலைத்தளத்தை உருவாக்கும் சக்தியாகும். நீங்கள் ஏஜென்ட்டிடம் "ஒரு உணவக வலைத்தளத்தை உருவாக்கவும்" அல்லது "ஒரு வலைப்பதிவுடன் கூடிய போர்ட்ஃபோலியோவை உருவாக்கவும்" என்று கேட்டால், இந்த ஒருங்கிணைப்பாளர் (orchestrator) அந்த உயர் மட்ட இலக்கை ஒரு கட்டமைக்கப்பட்ட **திட்டமாக (plan)** பிரித்து, அதை நிறைவேற்றத் தேவையான plugins-களைக் கண்டறிந்து, ஒவ்வொரு படியையும் வரிசையாகச் செயல்படுத்தி, முன்னேற்றத்தைக் கண்காணித்து, பிழைகளிலிருந்து தானாகவே மீண்டு வரும்.
 

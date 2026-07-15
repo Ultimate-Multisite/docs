@@ -3,7 +3,7 @@ title: زپیئر همغږي
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite-و زپیر (Zapier) هم آمیختن {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite-و زپیر (Zapier) هم آمیختن
 
 په یو له مقاله کې، موږ په [Webhooks](webhooks.md) درته خبره کړې چې څنګه دوی کولی شي د üçüncü اړخ کے اپلیکیشنونو سره مرسته وکړي.
 

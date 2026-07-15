@@ -3,7 +3,7 @@ title: 제어판 통합 강화
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel Integration {#enhance-control-panel-integration}
+# Enhance Control Panel Integration
 
 ## 개요 {#overview}
 Enhance는 강력한 호스팅 자동화 및 관리 기능을 제공하는 최신 컨트롤 패널입니다. 이 통합은 Ultimate Multisite와 Enhance Control Panel 간에 자동 도메인 동기화 및 SSL 인증서 관리를 가능하게 합니다.

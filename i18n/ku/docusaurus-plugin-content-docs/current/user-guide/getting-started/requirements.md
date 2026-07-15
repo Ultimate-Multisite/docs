@@ -3,7 +3,7 @@ title: پێویستییەکان
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# پێداویستیەکانی Ultimate Multisite {#ultimate-multisite-requirements}
+# پێداویستیەکانی Ultimate Multisite
 
 پێش ئەوەی کە Ultimate Multisite بخوێنیت، یەکەم شتێک کە دەتوانیت لەسەر بیر بکەیتەوە ئەوەیە چیت پێویستە بۆ ئەوەی ئەم پڵۆگە بەکاربهێنیت. بەبێ دڵنیایی، تەنها پێویستییەکی بنەڕەتی هەیە بۆ کارکردنی Ultimate Multisite: **ناوەکانی دامێنی (domain name)**، **پایبەرووێکی باش بۆ هاستکردن (hosting provider)** و **ناردنی WordPress Multisite**. ئەمە هەموو ئەو شتانەن کە پێویستیت!
 

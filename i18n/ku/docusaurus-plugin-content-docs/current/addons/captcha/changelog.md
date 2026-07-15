@@ -3,7 +3,7 @@ title: Dîroka guhertinên Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Guhertinên Captcha {#captcha-changelog}
+# Guhertinên Captcha
 
 Guhertoy: 1.5.0 - Di 2026-05-22 de hat weşandin
 * Nû: Sînordarkerê rêjeyê yê rawestana hişk — her GET û POST li ser rûyên bi captcha-parastî (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) dihejêre û bi HTTP 429, sernivîseke `Retry-After`, û razana tarpit a tesadufî (1–5s, bi sînora hişk 15s) bersiv dide.

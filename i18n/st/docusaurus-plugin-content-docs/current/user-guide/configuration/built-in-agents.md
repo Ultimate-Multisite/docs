@@ -3,7 +3,7 @@ title: Baemeli ba hahelletsoeng ka hare
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents tse Ahiloeng ka Hare {#built-in-agents}
+# Agents tse Ahiloeng ka Hare
 
 Gratis AI Agent v1.9.0 e tla le agents tse hlano tse ahiloeng ka hare, e nngwe le e nngwe e se e hlophisitswe esale pele ka sete e shebaneng ya disebediswa, system prompt e ikgethileng, le ditlhahiso tsa qalo tse tsamaellanang le mesebetsi e tlwaelehileng sebakeng seo. Ho fetola agents ho fetola seo mothusi a ka se etsang le kamoo a arabelang kateng — ntle le tlhophiso efe kapa efe ka lehlakoreng la hao. Superdav AI Agent v1.18.0 e ka eketsa disebediswa tse elang hloko kemiso, direkoto tsa dikgopotso, dikgoro tsa tumello, le ditsebiso tsa SMS ho mekgatlo ena ya mosebetsi ha dikopanyo tse amanang le tsona di hlophisitswe.
 

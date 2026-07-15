@@ -3,7 +3,7 @@ title: Pole kasy i DNS klienta
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pole realizacji zakupu i zarządzanie DNS klientów {#checkout-field-and-customer-dns-management}
+# Pole realizacji zakupu i zarządzanie DNS klientów
 
 ## Pole realizacji zakupu Wybór domeny {#the-domain-selection-checkout-field}
 

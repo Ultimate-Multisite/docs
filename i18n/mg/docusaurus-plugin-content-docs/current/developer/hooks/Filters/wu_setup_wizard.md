@@ -4,7 +4,7 @@ title: Sivana - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Sivana: wu_setup_wizard {#filter-wusetupwizard}
+# Sivana: wu_setup_wizard
 
 Mamela ny mpamorona hanampy dingana fanampiny amin'ny setup wizard.
 

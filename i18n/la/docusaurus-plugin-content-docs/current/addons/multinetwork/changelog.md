@@ -3,7 +3,7 @@ title: Commentarius Mutationum Plurium Retium
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Commentarius Mutationum Multi-Network {#multi-network-changelog}
+# Commentarius Mutationum Multi-Network
 
 ### 1.3.0 {#130}
 * Novum: Praevisor formarum retis — percurre et praevide formas retis cum tabula viva ante emptionem.

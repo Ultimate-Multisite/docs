@@ -3,7 +3,7 @@ title: Staðfesting á sjálfstæðum migrasjóði
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 hefur inn verifiseringar WP-CLI kommandofer til migrasjonar fyrir suverene leigum. Notaðu þau þegar leigummigra migrasjon, SSO-visiting eða ísolated install ekki virka eins og væntan.
 

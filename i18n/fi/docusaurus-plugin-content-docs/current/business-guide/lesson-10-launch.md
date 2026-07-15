@@ -3,7 +3,7 @@ title: 'Oppitunti 10: Julkaisupäivä'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Oppitunti 10: Julkaisupäivä {#lesson-10-launch-day}
+# Oppitunti 10: Julkaisupäivä
 
 Kaikki on rakennettu. Ennen kuin avaat ovet, tämä oppitunti käy läpi julkaisua edeltävän tarkistuslistan, jotta mikään ei ole rikki, puutu tai aiheuta noloa tilannetta.
 

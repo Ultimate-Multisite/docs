@@ -3,7 +3,7 @@ title: Còmhraidhean
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Aighrimean Eirbhleachd Ultimate Multisite {#ultimate-multisite-requirements}
+# Aighrimean Eirbhleachd Ultimate Multisite
 
 Tha am bith sin as fheàrr a gEachaidh agad air a bhith a' chlàradh Ultimate Multisite? Tha am fhirinn as beag gu cunbhalach airson a bhith ag obair sinn le earrachda seo: **teann-nàme (domain name)**, **còmhlaidheachd (hosting provider)** gu mhath, agus seachnaidhean WordPress **Multisite**. Tha sin gu tric a' chiallachadh!
 

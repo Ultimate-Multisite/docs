@@ -3,7 +3,7 @@ title: Multisite-oppsettsveiviser
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Veiviser for oppsett av Multisite {#multisite-setup-wizard}
+# Veiviser for oppsett av Multisite
 
 Ultimate Multisite inkluderer en innebygd veiviser som automatisk konverterer en standard WordPress-installasjon til et WordPress Multisite-nettverk. Dette gjør at du slipper å redigere `wp-config.php` manuelt eller kjøre databasekommandoer.
 

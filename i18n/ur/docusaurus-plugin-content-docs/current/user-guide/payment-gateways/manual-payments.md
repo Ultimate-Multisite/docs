@@ -3,7 +3,7 @@ title: دستی ادائیگیوں کو ترتیب دینا
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Payments کی ترتیب (v2) {#setting-up-manual-payments-v2}
+# Manual Payments کی ترتیب (v2)
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔**_
 

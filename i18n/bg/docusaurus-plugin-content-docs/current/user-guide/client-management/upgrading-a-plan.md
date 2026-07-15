@@ -3,7 +3,7 @@ title: Повишаване на план
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Повишаване на план (v2) {#upgrading-a-plan-v2}
+# Повишаване на план (v2)
 
 _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до Ultimate Multisite версия 2.x.**_
 

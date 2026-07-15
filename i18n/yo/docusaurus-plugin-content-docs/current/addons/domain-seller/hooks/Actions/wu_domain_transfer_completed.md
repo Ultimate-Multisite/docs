@@ -4,7 +4,7 @@ title: Ìṣe - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Ìgbésẹ: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Ìgbésẹ: wu_domain_transfer_completed
 
 Ó máa ń ṣiṣẹ́ lẹ́yìn tí gbigbe domain bá ti parí.
 

@@ -3,7 +3,7 @@ title: Pagdumala sa Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Pagdumala sa Webhook {#webhook-handling}
+# Pagdumala sa Webhook
 
 Paghimo ug pinasahi nga mga kataposang punto sa webhook aron modawat og mga panghitabo gikan sa gawasnong mga serbisyo ug ipatugma ang datos sa Ultimate Multisite.
 

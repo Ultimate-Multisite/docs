@@ -3,7 +3,7 @@ title: Gehigarrien garapenarekin hasteko
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Gehigarriaren garapena {#addon-development}
+# Gehigarriaren garapena
 
 ## Gehigarriaren egitura {#addon-structure}
 

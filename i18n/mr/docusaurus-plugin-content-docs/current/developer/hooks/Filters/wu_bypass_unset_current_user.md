@@ -4,7 +4,7 @@ title: गाळणी - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filter: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filter: wu_bypass_unset_current_user
 
 डेव्हलपर्सना सध्याच्या वापरकर्त्याला अनसेट (unset) करण्याची प्रक्रिया बायपास करण्याची परवानगी देतो.
 

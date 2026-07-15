@@ -3,7 +3,7 @@ title: Operacioj de Sovena Tenantoj
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operaciaj de Tenant Soverein {#sovereign-tenant-operations}
+# Operaciaj de Tenant Soverein
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adonas instrumenta operaciajn por tenant'o souveren: subsitite ki funkcias per sian propran bazebas, radroks root de faysil sistemo kaj routado konteksto, kiel ili restas vizibaj de la administristro de la retoj.
 

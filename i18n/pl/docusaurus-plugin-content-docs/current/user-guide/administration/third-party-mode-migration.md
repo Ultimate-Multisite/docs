@@ -3,7 +3,7 @@ title: Migracja trybu zewnętrznego
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migracja do Trybu Stron Trzecich {#third-party-mode-migration}
+# Migracja do Trybu Stron Trzecich
 
 Superdav AI Agent v1.12.0 zmienia sposób obsługi możliwości (abilities) pochodzących ze stron trzecich. **Tryb stron trzecich domyślnie przechodzi w tryb automatyczny (auto)**, co umożliwia integrację z natywnym API Możliwości WordPress na WordPress 7.0+ bez konieczności ręcznej konfiguracji.
 

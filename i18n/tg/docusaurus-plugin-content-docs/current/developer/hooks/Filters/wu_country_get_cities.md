@@ -4,7 +4,7 @@ title: Филтр - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Филтр: wu_country_get_cities {#filter-wucountrygetcities}
+# Филтр: wu_country_get_cities
 
 Рӯйхати шаҳрҳоро барои як иёлат дар як кишвар бармегардонад.
 

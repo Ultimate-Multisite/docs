@@ -4,7 +4,7 @@ title: Hereket - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Hereket: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# Hereket: wu_admin_pages_extra_metaboxes
 
 Plugin döredijilerine täze metabox sazlamalaryny goşmaga mümkinçilik berýär =)
 

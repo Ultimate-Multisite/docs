@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 ပလပ်အင်ရဲ့ အခြားအစိတ်အပိုင်းတွေက ၎င်းကို ပယ်ဖျက်တဲ့အခါ လုပ်ဆောင်ရမယ့် အရာတွေကို ချိတ်ဆက်နိုင်ဖို့အတွက် ဖြစ်ပါတယ်။
 

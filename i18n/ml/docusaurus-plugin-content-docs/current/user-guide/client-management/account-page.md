@@ -3,7 +3,7 @@ title: ഉപഭോക്തൃ Account പേജ്
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# നിങ്ങളുടെ ക്ലയന്റിന്റെ Account പേജ് (v2) {#your-clients-account-page-v2}
+# നിങ്ങളുടെ ക്ലയന്റിന്റെ Account പേജ് (v2)
 
 _**പ്രധാന കുറിപ്പ്: ഈ ലേഖനം Ultimate Multisite പതിപ്പ് 2.x-നെക്കുറിച്ചാണ്.**_
 

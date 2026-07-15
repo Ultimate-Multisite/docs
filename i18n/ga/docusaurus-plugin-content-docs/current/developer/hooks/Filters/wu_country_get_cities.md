@@ -4,7 +4,7 @@ title: Scagaire - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Scagaire: wu_country_get_cities {#filter-wucountrygetcities}
+# Scagaire: wu_country_get_cities
 
 Filleann sé liosta na gcathracha do stát i dtír.
 

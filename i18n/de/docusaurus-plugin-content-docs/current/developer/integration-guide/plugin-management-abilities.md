@@ -3,7 +3,7 @@ title: Fähigkeiten im Plugin-Management
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities {#plugin-management-abilities}
+# Plugin Management Abilities
 
 Gratis AI Agent v1.5.0 verfügt über **7 Plugin-Management-Fähigkeiten**, die der KI-Assistent während eines Gesprächs aufrufen kann. Diese Fähigkeiten ermöglichen eine programmatische Steuerung der WordPress-Plugins, die über das [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) installiert werden.
 

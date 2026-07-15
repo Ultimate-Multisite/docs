@@ -3,7 +3,7 @@ title: Orchestration du Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orchestration du Site Builder v2 {#site-builder-orchestration-v2}
+# Orchestration du Site Builder v2
 
 Site Builder Orchestration v2 (introduit avec Gratis AI Agent v1.4.0) est le moteur qui alimente la création de sites web en plusieurs étapes. Lorsque vous demandez à l'agent de « créer un site de restaurant » ou de « réaliser un portfolio avec un blog », l'orchestrateur décompose cet objectif général en un **plan** structuré, découvre les plugins nécessaires pour le réaliser, exécute chaque étape séquentiellement, suit la progression et se rétablit de manière autonome en cas d'erreur.
 
@@ -160,7 +160,7 @@ Retourne l'état d'exécution actuel d'un plan de site.
 |---|---|---|---|
 | `plan_id` | string | Oui | ID du plan à interroger |
 
-**Retourne** l'objet de progression décrit dans [Suivi de la progression](#4-suivi-de-la-progression) ci-dessus.
+**Retourne** l'objet de progression décrit dans [Suivi de la progression](#4-progress-tracking) ci-dessus.
 
 ---
 

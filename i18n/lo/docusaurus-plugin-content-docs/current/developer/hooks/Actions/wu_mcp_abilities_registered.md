@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# ການກະທຳ: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# ການກະທຳ: wu_mcp_abilities_registered
 
 ຖືກເອີ້ນໃຊ້ຫຼັງຈາກ MCP abilities ຖືກລົງທະບຽນສຳລັບ entity ໜຶ່ງ.
 

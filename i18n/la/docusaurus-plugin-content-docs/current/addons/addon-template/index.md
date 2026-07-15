@@ -3,9 +3,9 @@ title: Exemplar Additamenti
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Additamenti Formula {#addon-template}
+# Additamenti Formula
 
-{{ADDON_DESCRIPTION}}
+Exemplar Additamenti — Ultimate Multisite.
 
 ## Requisita {#requirements}
 

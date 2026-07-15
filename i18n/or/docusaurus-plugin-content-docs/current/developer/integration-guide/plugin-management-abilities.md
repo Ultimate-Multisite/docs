@@ -3,7 +3,7 @@ title: ପ୍ଲଗଇନ୍ ପରିଚାଳନା କ୍ଷମତା
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# ପ୍ଲଗିନ ପରିଚାଳନା କ୍ଷମତା {#plugin-management-abilities}
+# ପ୍ଲଗିନ ପରିଚାଳନା କ୍ଷମତା
 
 Gratis AI Agent v1.5.0 ସହିତ **୭ଟି ପ୍ଲଗିନ ପରିଚାଳନା କ୍ଷମତା** ଆସେ, ଯାହାକୁ AI ସହାୟକ କଥୋପକଥନ ସମୟରେ ଆହ୍ୱାନ କରିପାରେ। ଏହି କ୍ଷମତାଗୁଡ଼ିକ [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) ମାଧ୍ୟମରେ ସ୍ଥାପିତ WordPress ପ୍ଲଗିନଗୁଡ଼ିକ ଉପରେ ପ୍ରୋଗ୍ରାମ ମାଧ୍ୟମରେ ନିୟନ୍ତ୍ରଣ ଦିଏ।
 

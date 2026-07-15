@@ -4,7 +4,7 @@ title: 過濾器 - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# 篩選器：wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# 篩選器：wu_pending_payment_message
 
 允許使用者修改關於待處理付款的訊息內容。
 

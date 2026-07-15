@@ -3,7 +3,7 @@ title: Ukugcinwa kunqolobane kwama-prompt okuqaphela umhlinzeki
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Ukugcinwa Kunqolobane Kwemiyalezo Okuqaphela Umhlinzeki {#provider-aware-prompt-caching}
+# Ukugcinwa Kunqolobane Kwemiyalezo Okuqaphela Umhlinzeki
 
 Superdav AI Agent v1.12.0 yethula **ukugcinwa kunqolobane kwemiyalezo okuqaphela umhlinzeki**, okuthuthukisa izindleko ze-API nokulibaziseka ngokugcina imiyalezo kunqolobane kubahlinzeki be-LLM abahlukene. Umhlinzeki ngamunye unezindlela zokugcina kunqolobane nezilungiselelo ezahlukene.
 

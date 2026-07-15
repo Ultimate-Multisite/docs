@@ -3,7 +3,7 @@ title: 'Lekcia 13: Škálovanie'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekcia 13: Škálovanie {#lesson-13-scaling-up}
+# Lekcia 13: Škálovanie
 
 Máte funkčnú platformu s platiacimi zákazníkmi. Táto lekcia sa venuje tomu, ako vyrásť z malej prevádzky na udržateľný biznis -- škálovanie infraštruktúry, automatizácia prevádzky a zvyšovanie príjmu na zákazníka.
 

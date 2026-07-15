@@ -3,7 +3,7 @@ title: Gratis AI Agent அமைப்புகள்
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent அமைப்புகள் {#gratis-ai-agent-settings}
+# Gratis AI Agent அமைப்புகள்
 
 Gratis AI Agent இல் உள்ள **Settings → Advanced** திரை, பின்தள ஒருங்கிணைப்புகளுக்கான நிர்வாக நிலை உள்ளமைவை வழங்குகிறது. இந்தப் பக்கம் கருத்து அனுப்புதல், தேடல் வழங்குநர் keys, நிர்வகிக்கப்படும் Superdav சேவை அமைப்பு, Google Calendar கட்டுப்பாடுகள், TextBee SMS அமைப்புகள், மற்றும் வலையமைப்பு முழுவதற்குமான அம்சக் கொடிகளை ஆவணப்படுத்துகிறது.
 

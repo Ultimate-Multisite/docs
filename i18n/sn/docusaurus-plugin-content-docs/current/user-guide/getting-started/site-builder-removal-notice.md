@@ -3,7 +3,7 @@ title: Kufamba Kuti Kuondesha Modyu ya Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Kufungurwa Kwemabasa YeMabasa (Site Builder Mode) {#site-builder-mode-removal-notice}
+# Kufungurwa Kwemabasa YeMabasa (Site Builder Mode)
 
 **Kufungurwa kwemabasa yeMabasa (Site Builder mode) kwanenge vachivayo mu Superdav AI Agent v1.12.0.** Kana wakaendera ku Site Builder mode, unofanira kutamba ku **Setup Assistant agent** kuti uingine umakwana kwe theme nekuvaka site.
 

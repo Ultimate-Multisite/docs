@@ -3,7 +3,7 @@ title: Tạo Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Tạo Logo SVG {#generate-logo-svg}
+# Tạo Logo SVG
 
 Tính năng **Tạo Logo SVG** cho phép Theme Builder tạo và nhúng các logo SVG tùy chỉnh trực tiếp vào trang WordPress của bạn, kèm theo quá trình làm sạch (sanitisation) tự động và an toàn namespace.
 

@@ -3,7 +3,7 @@ title: 대금 받기
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# 결제 받기 (v2) {#getting-paid-v2}
+# 결제 받기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite version 2.x를 기준으로 합니다.**_
 

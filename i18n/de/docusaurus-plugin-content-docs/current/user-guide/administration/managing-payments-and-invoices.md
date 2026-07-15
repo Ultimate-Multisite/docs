@@ -3,7 +3,7 @@ title: Zahlungen und Rechnungen verwalten
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Zahlungen und Rechnungen verwalten {#managing-payments-and-invoices}
+# Zahlungen und Rechnungen verwalten
 
 ## Zahlungseinstellungen {#payment-settings}
 

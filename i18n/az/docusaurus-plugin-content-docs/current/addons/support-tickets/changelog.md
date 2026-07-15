@@ -3,7 +3,7 @@ title: Dəstək Tiketləri Changelog
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dəstək Tiketləri Yeniləmə Qeydi {#support-tickets-changelog}
+# Dəstək Tiketləri Yeniləmə Qeydi
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Təkmilləşdirildi: `vendor/` qovluğundan Git izləməsindən çıxarıldı (bu artıq `.gitignore` ilə əhatə olunur), bu da repozitoriya ölçüsünü azaldır.

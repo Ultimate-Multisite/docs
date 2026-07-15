@@ -3,7 +3,7 @@ title: 'Nkuzi 6: Ahụmịhe ndebanye aha'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Ihe Ọmụmụ 6: Ahụmịhe Ndebanye Aha {#lesson-6-the-signup-experience}
+# Ihe Ọmụmụ 6: Ahụmịhe Ndebanye Aha
 
 Usoro ịkwụ ụgwọ bụ ebe mmasị na-aghọ ego. Usoro ndebanye aha na-agbagwoju anya ma ọ bụ nke nkịtị na-eme ka ndị ahịa pụọ. Usoro e mere kpọmkwem maka niche nke na-asụ asụsụ ha ma dị mfe na-eme ka ha ghọọ ndị ahịa.
 

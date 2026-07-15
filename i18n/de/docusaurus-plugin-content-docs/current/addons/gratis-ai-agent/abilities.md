@@ -3,7 +3,7 @@ title: Fähigkeiten-Referenz
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Fähigkeiten-Referenz {#abilities-reference}
+# Fähigkeiten-Referenz
 
 Fähigkeiten sind die atomaren Aktionen, die der Gratis AI Agent auf Ihrer WordPress-Installation ausführen kann. Jede Fähigkeit ist eine registrierte PHP-Klasse, die ein JSON-Schema bereitstellt – der Agent liest dieses Schema zur Laufzeit aus, um zu verstehen, welche Parameter erforderlich sind und was die Fähigkeit zurückgibt.
 

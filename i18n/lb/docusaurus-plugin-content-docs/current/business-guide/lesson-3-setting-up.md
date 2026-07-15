@@ -3,7 +3,7 @@ title: 'Lektioun 3: Däin Netzwierk ariichten'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lektioun 3: Däin Netzwierk ariichten {#lesson-3-setting-up-your-network}
+# Lektioun 3: Däin Netzwierk ariichten
 
 Zäit fir ze bauen. An dëser Lektioun installéiers du Ultimate Multisite a konfiguréiers d’Grondlag vum FitSite-Netzwierk. All Entscheedung hei gëtt mat der Fitness-Nisch am Kapp getraff.
 

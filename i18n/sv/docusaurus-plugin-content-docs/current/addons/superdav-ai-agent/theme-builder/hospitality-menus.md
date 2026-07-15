@@ -3,7 +3,7 @@ title: Restaurangmenyer
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronomiska menyer {#hospitality-menus}
+# Gastronomiska menyer
 
 Funktionen **Gastronomiska menyer** låter Theme Builder generera och bädda in strukturerade menyer för mat och dryck direkt på din WordPress-sajt.
 

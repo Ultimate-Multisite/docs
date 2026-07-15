@@ -3,7 +3,7 @@ title: Gudanar da Samun Shawara
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# مدیریت اعضا (Managing Memberships) {#managing-memberships}
+# مدیریت اعضا (Managing Memberships)
 
 در Ultimate Multisite شما می‌توانید عضویت‌ها و دسترسی به تمام اشتراک‌های شبکه خود را مدیریت کنید. جزئیات اشتراک مانند طرح‌ها و محصولات، تعداد سایت‌ها، مبلغ صورتحساب و تناوب، سوابق پرداخت و زمان ثبت را مرور و ویرایش کنید.
 

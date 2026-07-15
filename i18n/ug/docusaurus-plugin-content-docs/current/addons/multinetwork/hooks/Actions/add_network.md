@@ -4,7 +4,7 @@ title: ھەرىكەت - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# مەشغۇلات: add_network {#action-addnetwork}
+# مەشغۇلات: add_network
 
 يېڭى تور قوشۇلغاندىن كېيىن ئىجرا بولىدۇ.
 

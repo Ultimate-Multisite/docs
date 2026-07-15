@@ -3,7 +3,7 @@ title: Isdhaafidda Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Iskuulka Closte-ka Laanshaha (Closte Integration) {#closte-integration}
+# Iskuulka Closte-ka Laanshaha (Closte Integration)
 
 ## Guudbixitaanka (Overview) {#overview}
 Closte waa platform hosting WordPress oo la maamula ah oo lagu dhisay qaabka Google Cloud. Isku-dhafka (integration) kan wuxuu kuu oggolaanaya isku-dubbaridda domain-ka iyo maamulka shahaadada SSL-ka si toos ah u dhexeeya Ultimate Multisite iyo Closte.

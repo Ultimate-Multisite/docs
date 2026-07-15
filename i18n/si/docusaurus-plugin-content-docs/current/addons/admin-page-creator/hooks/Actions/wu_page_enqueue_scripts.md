@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# ක්‍රියාව: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# ක්‍රියාව: wu_page_enqueue_scripts
 
 අවශ්‍ය පරිදි ස්ක්‍රිප්ට් සහ ශෛලීන් පේළියට එක් කිරීමට\ සහ ඒවා නිවැරදි පිටුවල පමණක් පැටවෙන බව සහතික කිරීමට මෙහි අභිරුචි ක්‍රියාවක් එක් කරයි
 

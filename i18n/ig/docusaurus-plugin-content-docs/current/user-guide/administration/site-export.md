@@ -3,7 +3,7 @@ title: Nkwupụta Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportare Site {#site-export}
+# Exportare Site
 
 Página de administração **Site Export** (Exportar Site) cho phép os administradores da rede empacotar um site, ou toda a rede, em um arquivo para download, útil para migração, backup ou trabalhos de transferência.
 

@@ -3,7 +3,7 @@ title: Iifomu zokuHlawula
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Iifomu zokugqibezela ukuthenga {#checkout-forms}
+# Iifomu zokugqibezela ukuthenga
 
 Iifomu zokugqibezela ukuthenga ziyindlela elula neguquguqukayo yokuzama iindlela ezahlukeneyo xa uzama ukuguqula abathengi abatsha.
 

@@ -3,7 +3,7 @@ title: Dnevnik sprememb DDV
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Dnevnik sprememb za DDV {#vat-changelog}
+# Dnevnik sprememb za DDV
 
 Različica 1.0.7 - Izdano 2026-02-03
 

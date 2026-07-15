@@ -4,7 +4,7 @@ title: Tindakan - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Aksi: wp_ultimo_load {#action-wpultimoload}
+# Aksi: wp_ultimo_load
 
 Dipicu apabila semua kebergantungan (dependencies) telah dimuatkan.
 

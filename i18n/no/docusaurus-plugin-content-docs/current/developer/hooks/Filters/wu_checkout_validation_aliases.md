@@ -4,7 +4,7 @@ title: Filter - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filter: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Filter: wu_checkout_validation_aliases
 
 Lar plugin-utviklere legge til egne kallenavn (aliases) i skjema-valideratoren.
 

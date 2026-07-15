@@ -3,7 +3,7 @@ title: Comhoir
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Conaich a Chumaidh Comhoineadh Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Conaich a Chumaidh Comhoineadh Ultimate Multisite
 
 Tha Comhoineadh Ultimate Multisite (Ultimate Multisite Community) là a' chlàradh le eadar liathair ùr-ghnàthach de Ultimate Multisite agus airson tòisichid, sgrùdadh, agus eile. Gus a bhith ag iarraidh fhaighinn air Comhoineadh Ultimate Multisite, cuir gu an cur-chunntas seo: https://community.ultimatemultisite.com/home.
 

@@ -4,7 +4,7 @@ title: Ação - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Ação: wu_cart_after_setup {#action-wucartaftersetup}
+# Ação: wu_cart_after_setup
 
 Permite que os desenvolvedores façam alterações adicionais no objeto de checkout.
 

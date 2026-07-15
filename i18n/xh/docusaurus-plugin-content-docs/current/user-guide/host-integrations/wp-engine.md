@@ -3,7 +3,7 @@ title: Udibaniso lwe-WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Udibaniso lwe-WP Engine {#wp-engine-integration}
+# Udibaniso lwe-WP Engine
 
 ## Isishwankathelo {#overview}
 WP Engine liqonga elikumgangatho ophezulu lokusingathwa kwe-WordPress elilawulwayo, elibonelela ngokusebenza okulungiselelweyo, ukhuseleko, kunye nokukwazi ukwandiswa kwezisayithi ze-WordPress. Olu dibaniso luvumela ukuhambelana ngokuzenzekelayo kweedomeyini phakathi kwe-Ultimate Multisite ne-WP Engine.

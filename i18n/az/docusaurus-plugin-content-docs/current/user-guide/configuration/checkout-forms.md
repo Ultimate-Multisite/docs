@@ -3,7 +3,7 @@ title: Ödəniş formaları
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Ödəniş formaları {#checkout-forms}
+# Ödəniş formaları
 
 Ödəniş formaları yeni müştəriləri çevirməyə çalışarkən müxtəlif yanaşmaları sınaqdan keçirmək üçün asan və çevik üsuldur.
 

@@ -4,7 +4,7 @@ title: Ìṣe - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Ìṣe: wu_page_added {#action-wupageadded}
+# Ìṣe: wu_page_added
 
 Gba àwọn olùdàgbàsókè plugin láàyè láti ṣiṣẹ́ àwọn ohun àfikún nígbà tí a bá forúkọsílẹ̀ àwọn ojú-iwe.
 

@@ -3,7 +3,7 @@ title: 'Lliçó 2: Triar el teu nich'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Aula 2: Triar el teu nich {#lesson-2-picking-your-niche}
+# Aula 2: Triar el teu nich
 
 A la Aula 1 vam establir per què el nich supera el general. Ara has de triar el teu. Aquesta aula et proporciona un marc de treball per trobar i validar un nich abans de dedicar temps a construir-lo.
 

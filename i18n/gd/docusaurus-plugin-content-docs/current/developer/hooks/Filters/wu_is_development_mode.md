@@ -4,7 +4,7 @@ title: Criathrag - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Criathrag: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Criathrag: wu_is_development_mode
 
 Leig le luchd-leasachaidh plugin deuchainnean a bharrachd a chur ris airson modh leasachaidh.
 

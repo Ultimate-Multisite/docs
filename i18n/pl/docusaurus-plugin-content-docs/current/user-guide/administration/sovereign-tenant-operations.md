@@ -3,7 +3,7 @@ title: Operacje Najemcy Suwerennego
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operacje dla Najbardziej Suwerennych Najemców (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Operacje dla Najbardziej Suwerennych Najemców (Sovereign Tenant Operations)
 
 Ultimate Multisite w wersji 1.2.0 wprowadza narzędzia operacyjne dla suwerennych najemców: podstrony działające z własną bazą danych, korzeniem systemu plików i kontekstem routingu, jednocześnie pozostając widoczne dla administratora sieci.
 

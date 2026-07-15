@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# ଫିଲ୍ଟର: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# ଫିଲ୍ଟର: wu_magic_link_enforce_user_agent
 
 ୟୁଜର ଏଜେଣ୍ଟ ଯାଞ୍ଚ ବାଧ୍ୟତାମୂଳକ କରାଯିବ କି ନାହିଁ, ତାହା ଫିଲ୍ଟର କରନ୍ତୁ।
 

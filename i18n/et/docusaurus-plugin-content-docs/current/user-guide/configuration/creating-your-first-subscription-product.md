@@ -3,7 +3,7 @@ title: Esimene subskriptiooniprodukti loomine
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Esimeseabõdu esimene subskriptiooniprodukti (v2) {#creating-your-first-subscription-product-v2}
+# Esimeseabõdu esimene subskriptiooniprodukti (v2)
 
 _**TÄHTIS NOTE: See artikkel on ainult Ultimate Multisite versiooni 2.x kasutajatele. Kui te kasutate versiooni 1.x,**_ **_vaata seda artiklit**_**.
 

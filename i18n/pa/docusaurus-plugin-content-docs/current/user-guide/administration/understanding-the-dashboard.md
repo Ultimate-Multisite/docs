@@ -3,7 +3,7 @@ title: ਡੈਸ਼ਬੋਰਡ ਨੂੰ ਸਮਝਣਾ
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard ਨੂੰ ਸਮਝਣਾ {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard ਨੂੰ ਸਮਝਣਾ
 
 Ultimate Multisite ਦੀਆਂ ਹੋਰ ਐਡਵਾਂਸਡ ਸੈਟਿੰਗਾਂ ਅਤੇ ਕਾਰਜਸ਼ੀਲ ਪਹਿਲੂਆਂ ਵਿੱਚ ਡੂੰਘਾਈ ਨਾਲ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ, ਆਓ dashboard 'ਤੇ ਇੱਕ ਨਜ਼ਰ ਮਾਰੀਏ।
 

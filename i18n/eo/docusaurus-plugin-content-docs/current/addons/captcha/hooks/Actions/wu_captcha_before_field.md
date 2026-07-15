@@ -4,7 +4,7 @@ title: Ago - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Ago: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Ago: wu_captcha_before_field
 
 Ekfunkcias antaŭ ol la captcha-kampo estas bildigita.
 

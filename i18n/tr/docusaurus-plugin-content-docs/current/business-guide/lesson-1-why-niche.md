@@ -3,7 +3,7 @@ title: 'Ders 1: Niş Neden Kazanır'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Ders 1: Niş Neden Kazanır {#lesson-1-why-niche-wins}
+# Ders 1: Niş Neden Kazanır
 
 Herhangi bir yazılıma geçmeden önce, belirli bir kitleye yönelik bir platform oluşturmanın yapacağınız en önemli karar olduğunu anlamanız gerekiyor.
 

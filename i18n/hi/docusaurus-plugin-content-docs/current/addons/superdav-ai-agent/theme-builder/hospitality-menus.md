@@ -3,7 +3,7 @@ title: अतिथि सत्कार मेनू
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# हॉस्पिटैलिटी मेनू {#hospitality-menus}
+# हॉस्पिटैलिटी मेनू
 
 **हॉस्पिटैलिटी मेनू** फीचर Theme Builder को आपकी WordPress साइट में सीधे संरचित (structured) खाद्य और पेय मेनू पेज बनाने और एम्बेड करने की अनुमति देता है।
 

@@ -4,7 +4,7 @@ title: පෙරහන - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# පෙරහන: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# පෙරහන: wp_ultimo_render_vars
 
 plugin සංවර්ධකයන්ට render සන්දර්භයට අමතර විචල්‍යයක් සමස්තව එක් කිරීමට ඉඩ දෙයි.
 

@@ -3,7 +3,7 @@ title: سجل تغييرات بائع النطاقات
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# سجل تغييرات Domain Seller {#domain-seller-changelog}
+# سجل تغييرات Domain Seller
 
 الإصدار 1.3.0 - صدر في 2026-06-02
 - جديد: تمت إضافة تحذير لمسؤول الشبكة عندما يصبح رصيد موزّع HostAfrica منخفضًا جدًا

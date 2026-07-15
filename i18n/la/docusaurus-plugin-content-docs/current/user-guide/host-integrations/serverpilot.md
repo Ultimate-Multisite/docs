@@ -3,7 +3,7 @@ title: Integratio ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integrare ServerPilot {#serverpilot-integration}
+# Integrare ServerPilot
 
 ## Visió {#overview}
 ServerPilot est servitium nubium ad hospedare WordPress et alios webs PHP in serveribus DigitalOcean, Amazon, Google vel aliis providendorum. Hoc integrare permittit sincronizandum automaticam domini et gestionem certificat SSL inter Ultimate Multisite et ServerPilot.

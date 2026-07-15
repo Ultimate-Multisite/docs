@@ -3,7 +3,7 @@ title: Registrovať API bod
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API koniec registračného bodov Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API koniec registračného bodov Ultimate Multisite
 
 V tomto tutoriáli si naučíte, ako použiť API koniec `/register` z Ultimate Multisite na vytvorenie celého procesu onboarding pre nového zákazníka v vašej sieti a ako to urobiť s Zapierom.
 

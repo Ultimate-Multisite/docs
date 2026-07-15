@@ -3,7 +3,7 @@ title: Cách Nhận Trợ Giúp
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Cách nhận hỗ trợ {#how-to-get-help}
+# Cách nhận hỗ trợ
 
 Bạn đã có License key hợp lệ, và đi kèm với đó là quyền truy cập vào đội ngũ của chúng tôi để giúp bạn giải quyết các vấn đề có thể gặp phải trong quá trình thiết lập Ultimate Multisite.
 

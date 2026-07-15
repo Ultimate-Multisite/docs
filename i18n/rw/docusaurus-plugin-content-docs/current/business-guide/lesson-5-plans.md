@@ -3,7 +3,7 @@ title: 'Isomo rya 5: Gutegura Gahunda zawe'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Isomo rya 5: Gushushanya Gahunda Zawe {#lesson-5-designing-your-plans}
+# Isomo rya 5: Gushushanya Gahunda Zawe
 
 Inzego za gahunda zawe si urwego rw'ibiciro gusa -- ni ishusho y'uko abakiriya bo mu cyiciro wibandaho bakora koko. Muri iri somo uzashushanya inzego z'ibicuruzwa zihura n'ibikenewe nyakuri by'ubucuruzi bwa fitness ku byiciro bitandukanye.
 

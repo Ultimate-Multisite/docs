@@ -3,7 +3,7 @@ title: Mengelola Situs
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Mengelola Situs {#managing-sites}
+# Mengelola Situs
 
 Situs (atau subsite) adalah inti dari bisnis WaaS Anda. Ultimate Multisite memiliki 3 jenis situs:
 

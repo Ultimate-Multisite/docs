@@ -3,7 +3,7 @@ title: Form Comharrachadh Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Form Comharrachadh an Site Builder {#site-builder-contact-forms}
+# Form Comharrachadh an Site Builder
 
 Rinn Superdav AI Agent v1.10.0 a' chlàradh achanach airson comharrachdan comharrach (contact forms) gu sònraich a' leat a' chlàradh chat a' leat a' chlàradh Site Builder. Tha seo a' gineadh eadar-dhealaichean comharrachdan fhuilich air aon seòl gu mòr gu mòr, gu h-uile a tha a' leat a' chlàradh chat a' leat a' chlàradh.
 

@@ -3,7 +3,7 @@ title: 提供商感知提示缓存
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# 提供商感知提示词缓存 {#provider-aware-prompt-caching}
+# 提供商感知提示词缓存
 
 Superdav AI Agent v1.12.0 引入了**提供商感知提示词缓存**（provider-aware prompt caching）功能。该功能通过跨不同 LLM 提供商缓存提示词，从而优化 API 成本和延迟。每个提供商都有不同的缓存机制和配置。
 

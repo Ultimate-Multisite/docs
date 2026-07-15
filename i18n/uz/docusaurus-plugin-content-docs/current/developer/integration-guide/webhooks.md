@@ -3,7 +3,7 @@ title: Webhooklarni qayta ishlash
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook bilan ishlash {#webhook-handling}
+# Webhook bilan ishlash
 
 Tashqi xizmatlardan hodisalarni qabul qilish va maʼlumotlarni Ultimate Multisite bilan sinxronlash uchun maxsus webhook endpointlar yarating.
 

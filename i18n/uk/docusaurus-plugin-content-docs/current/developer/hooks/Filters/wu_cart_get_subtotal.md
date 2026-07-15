@@ -4,7 +4,7 @@ title: Фільтр - wu_cart_get_subtotal
 sidebar_label: wu_cart_get_subtotal
 _i18n_hash: b4c83b261d6009edfbb17c6f27f6ae60
 ---
-# Фільтр: wu_cart_get_subtotal {#filter-wucartgetsubtotal}
+# Фільтр: wu_cart_get_subtotal
 
 Фільтрує загальну суму "початкової вартості".
 

@@ -3,7 +3,7 @@ title: Matyti galimybė
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Pasirumo galimybė matyti (Ability Visibility) {#ability-visibility}
+# Pasirumo galimybė matyti (Ability Visibility)
 
 Superdav AI Agent v1.12.0 įdaro **Pasirumo matyti** (Ability Visibility) kontrolges, kurios nurodo, kokie puslapiai atskleidžia kiekvieną galimybę. Tai leidžia administratoriams sukurti tikslines nustatymus dėl to, kokios agentų galimybės yra pasiekiamos REST API, MCP serveriuose, WooCommerce integracijose ir kitose sąsnykyse.
 

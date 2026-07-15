@@ -3,7 +3,7 @@ title: Lula ho nna le lilikong la control panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Goeletsa Ho Letsopeho Control Panel {#enhance-control-panel-integration}
+# Goeletsa Ho Letsopeho Control Panel
 
 ## Leholo (Overview) {#overview}
 Enhance ke control panel e modern se e leba ho fana ka baithang le fetoga ea hosting le management e tšepang. Le fetoga le fetisa le fetoga le fetisa lefetso la domain le certificate SSL ho tloha ho Ultimate Multisite le Enhance Control Panel.

@@ -3,7 +3,7 @@ title: Closte integrācija
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrācija ar Clostē {#closte-integration}
+# Integrācija ar Clostē
 
 ## Īsszums {#overview}
 Closte ir pārvaldīta WordPress hostings platforma, kas izstrādāta uz Google Cloud infrastruktūras. Šī integrācija ļauj automātiskai domēnu sinhronizācijai un SSL sertifikātu pārvaldībai starp Ultimate Multisite un Clostē.

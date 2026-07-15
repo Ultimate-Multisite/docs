@@ -3,7 +3,7 @@ title: Account 페이지에 접근하기
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# 처음으로 내 Account 페이지에 어떻게 접근할 수 있나요? {#how-can-i-access-my-account-page-for-the-first-time}
+# 처음으로 내 Account 페이지에 어떻게 접근할 수 있나요?
 
 Ultimate Multisite에 오신 것을 환영합니다!
 

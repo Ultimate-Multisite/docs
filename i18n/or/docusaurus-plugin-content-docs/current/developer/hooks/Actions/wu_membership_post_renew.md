@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# କାର୍ଯ୍ୟ: wu_membership_post_renew {#action-wumembershippostrenew}
+# କାର୍ଯ୍ୟ: wu_membership_post_renew
 
 membership ନବୀକରଣ ପରେ ଟ୍ରିଗର ହୁଏ।
 

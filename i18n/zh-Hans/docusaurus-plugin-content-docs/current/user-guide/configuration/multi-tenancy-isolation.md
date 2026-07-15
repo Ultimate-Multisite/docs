@@ -3,7 +3,7 @@ title: 多租户隔离
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# 多租户隔离 {#multi-tenancy-isolation}
+# 多租户隔离
 
 Ultimate Multisite 1.2.0 支持为主站点（subsite）提供数据库和文件系统的独立隔离，以实现主权租户的隔离。这可以在保持网络级别配置、计费和管理的便利性的同时，确保租户数据相互独立。
 

@@ -3,7 +3,7 @@ title: Az Ultimate Multisite telepítése
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Az Ultimate Multisite telepítése {#installing-ultimate-multisite}
+# Az Ultimate Multisite telepítése
 
 :::note
 Ez az útmutató feltételezi, hogy már telepítette és konfigurálta a WordPress Multisitet. Ha szeretné megtudni, hogyan kell ezt megtenni, nézze meg ezt az [útmutatót](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner oldalán.

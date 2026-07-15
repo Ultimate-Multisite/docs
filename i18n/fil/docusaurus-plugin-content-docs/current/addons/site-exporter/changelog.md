@@ -3,7 +3,7 @@ title: Changelog ng Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Changelog ng Site Exporter {#site-exporter-changelog}
+# Changelog ng Site Exporter
 
 Version: 1.0.6 - Released on 2026-05-11
 * Bago: Ang mga site export ngayon ay may kasamang self-booting index.php para ang ZIP ay ma-install sa isang bagong host nang hindi nangangailangan ng hiwalay na pag-install ng plugin

@@ -3,7 +3,7 @@ title: ਮੈਂਬਰਸ਼ਿਪ ਰੱਦ ਕਰਨਾ
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# ਮੈਂਬਰਸ਼ਿਪ ਰੱਦ ਕਰਨਾ (v2) {#canceling-a-membership-v2}
+# ਮੈਂਬਰਸ਼ਿਪ ਰੱਦ ਕਰਨਾ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਸੰਸਕਰਣ 2.x ਲਈ ਹੈ।**_
 

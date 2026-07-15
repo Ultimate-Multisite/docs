@@ -3,7 +3,7 @@ title: 'Somada ya 9: Kuweka Bei kwa Faida'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Somo la 9: Bei kwa Faida {#lesson-9-pricing-for-profit}
+# Somo la 9: Bei kwa Faida
 
 Katika Somo la 5, tuloweka bei za awali kwa mipango ya FitSite. Sasa tutarekebisha mkakati wa bei kwa kutumia mbinu zinazoongeza mapato, kuchochea kuboresha huduma (upgrades), na kupunguza wateja kuondoka (churn).
 

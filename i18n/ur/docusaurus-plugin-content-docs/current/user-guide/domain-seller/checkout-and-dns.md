@@ -3,7 +3,7 @@ title: چیک آؤٹ فیلڈ اور کسٹمر DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# چیک آؤٹ فیلڈ اور کسٹمر DNS انتظام {#checkout-field-and-customer-dns-management}
+# چیک آؤٹ فیلڈ اور کسٹمر DNS انتظام
 
 ## ڈومین انتخاب کا چیک آؤٹ فیلڈ {#the-domain-selection-checkout-field}
 

@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# تخصيص لوحة الإدارة الخاصة بك مع قالب PRO {#customizing-your-admin-panel-with-pro-theme}
+# تخصيص لوحة الإدارة الخاصة بك مع قالب PRO
 
 غالبًا ما نحتاج عند العمل مع العملاء إلى توفير تجربة مخصصة لهم في لوحة تحكم WordPress. إذا كنت تبحث عن مظهر أكثر احترافية، قد يساعدك قالب PRO.
 

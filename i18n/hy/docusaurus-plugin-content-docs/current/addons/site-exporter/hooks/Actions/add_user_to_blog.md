@@ -4,7 +4,7 @@ title: Գործողություն - ավելացնել օգտատիրոջը բլ
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Գործողություն՝ add_user_to_blog {#action-addusertoblog}
+# Գործողություն՝ add_user_to_blog
 
 Գործարկվում է անմիջապես այն բանից հետո, երբ օգտատերը ավելացվում է կայքին։
 

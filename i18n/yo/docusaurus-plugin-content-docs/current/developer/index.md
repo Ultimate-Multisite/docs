@@ -3,7 +3,7 @@ title: Ìwé ìtọ́nisọ́nà fún Olùdàgbàsókè
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Ìwé Ìtọ́nisọ́nà Olùdàgbàsókè {#developer-documentation}
+# Ìwé Ìtọ́nisọ́nà Olùdàgbàsókè
 
 Ìtọ́nisọ́nà yìí fún àwọn olùdàgbàsókè ní gbogbo ohun tí wọ́n nílò láti ṣepọ̀ mọ́, faagun, tàbí dá àwọn àfikún sílẹ̀ fún Ultimate Multisite. Ultimate Multisite ń yí nẹ́tíwọ́ọ̀kì WordPress Multisite padà sí pèpéle Ìkànnì-ayelujara-gẹ́gẹ́-bi-Iṣẹ́ (WaaS).
 

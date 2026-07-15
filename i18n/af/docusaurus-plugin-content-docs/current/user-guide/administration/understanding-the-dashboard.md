@@ -3,7 +3,7 @@ title: Die Dashboard verstaan
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Begrip van die Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Begrip van die Ultimate Multisite Dashboard
 
 Voordat ons ons fokus op meer gevorderde konfigurasieopsies en die operasionele aspekte van Ultimate Multisite, kyk ons eers na die dashboard.
 

@@ -3,7 +3,7 @@ title: 내보내기 및 가져오기
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# 내보내기 및 가져오기 {#export--import}
+# 내보내기 및 가져오기
 
 Ultimate Multisite 2.9.0에서는 **도구 > 내보내기 및 가져오기** 메뉴에 단일 사이트 **내보내기 및 가져오기** 도구가 추가되었습니다. 이 도구는 하나의 WordPress 사이트를 ZIP 파일로 패키징하거나, 해당 ZIP 파일을 복원하거나, 호환되는 Ultimate Multisite 및 단일 사이트 WordPress 설치 간에 사이트를 이동해야 할 때 사용합니다.
 

@@ -3,7 +3,7 @@ title: रनक्लाउड एकीकरण
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud एकीकरण (Integration) {#runcloud-integration}
+# RunCloud एकीकरण (Integration)
 
 ## अवलोकन (Overview) {#overview}
 RunCloud एउटा क्लाउड-आधारित सर्भर व्यवस्थापन प्लेटफर्म हो जसले तपाईंलाई आफ्नै क्लाउड सर्भरहरूमा वेब एपहरू सजिलै डिप्लोय गर्न र व्यवस्थापन गर्न अनुमति दिन्छ। यो एकीकरणले Ultimate Multisite र RunCloud बीच स्वचालित डोमेन सिङ्क्रोनाइजेसन (syncing) र SSL प्रमाणपत्र व्यवस्थापन सक्षम गर्दछ।

@@ -3,7 +3,7 @@ title: بلٹ اِن ایجنٹس
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# بلٹ اِن Agents {#built-in-agents}
+# بلٹ اِن Agents
 
 Gratis AI Agent v1.9.0 پانچ بلٹ اِن agents کے ساتھ آتا ہے، ہر ایک کو ایک مرکوز tools کے مجموعے، ایک مخصوص system prompt، اور اس شعبے کے عام کاموں سے مطابقت رکھنے والی ابتدائی تجاویز کے ساتھ پہلے سے configure کیا گیا ہے۔ agents کے درمیان تبدیل کرنے سے یہ بدل جاتا ہے کہ assistant کیا کر سکتا ہے اور کیسے جواب دیتا ہے — آپ کی طرف سے کسی configuration کے بغیر۔ Superdav AI Agent v1.18.0 ان workflows میں schedule-aware tools، reminder records، approval gates، اور SMS notifications شامل کر سکتا ہے جب متعلقہ integrations configure ہوں۔
 

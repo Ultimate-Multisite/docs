@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_upgrade_to_unlock_url
 sidebar_label: wu_upgrade_to_unlock_url
 _i18n_hash: 3398ef4bc9e288f0173a859844fbb25c
 ---
-# Шүүлтүүр: wu_upgrade_to_unlock_url {#filter-wuupgradetounlockurl}
+# Шүүлтүүр: wu_upgrade_to_unlock_url
 
 Хөгжүүлэгчдэд түгжээг тайлахын тулд шинэчлэх URL-ийг өөрчлөх боломж олгоно
 

@@ -3,7 +3,7 @@ title: Dziennik zmian sprzedawcy domen
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Dziennik zmian Domain Seller {#domain-seller-changelog}
+# Dziennik zmian Domain Seller
 
 Wersja 1.3.0 - Wydana 2026-06-02
 - Nowe: Dodano ostrzeżenie network-admin, gdy saldo resellera HostAfrica staje się zbyt niskie

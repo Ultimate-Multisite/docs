@@ -3,7 +3,7 @@ title: Introduzione allo sviluppo di componenti aggiuntivi
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Sviluppo di addon {#addon-development}
+# Sviluppo di addon
 
 ## Struttura dell'addon {#addon-structure}
 

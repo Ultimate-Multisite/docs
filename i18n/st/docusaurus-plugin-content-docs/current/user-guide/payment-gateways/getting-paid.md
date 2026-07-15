@@ -3,7 +3,7 @@ title: Ho Lefshoa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ho Lefshoa (v2) {#getting-paid-v2}
+# Ho Lefshoa (v2)
 
 _**TLHOKOMELISO EA BOHLOKOA: Sengoloa sena se bua ka Ultimate Multisite mofuta oa 2.x.**_
 

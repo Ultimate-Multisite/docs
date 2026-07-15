@@ -3,7 +3,7 @@ title: Whakawātea API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Te Endpoint Register API o Whānau Whānui (Multisite) {#the-ultimate-multisite-register-api-endpoint}
+# Te Endpoint Register API o Whānau Whānui (Multisite)
 
 I roto i tēnei tutorial, i whakaritea atu koe ki te whakamahi i te Ultimate Multisite /register API endpoint kia whakatō i te tino whaiaro (onboarding process) mō te mea hou i te whānau o koe ā, me te whakaahuatanga ahau i te whakamahi Zapier.
 

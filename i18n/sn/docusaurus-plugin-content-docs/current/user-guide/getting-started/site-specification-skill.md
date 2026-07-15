@@ -3,7 +3,7 @@ title: Zvinorero Rupa ya Site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Ndekorera Kufanana NeSite Specification {#site-specification-skill}
+# Ndekorera Kufanana NeSite Specification
 
 **Skill ya Site Specification** ndiyo nzira yakajeka yekubatanidza zvakaita kuti uingane nemakore aino, vanhu vanogona kuenda pano (audience), uye chiri chete chendo chekugadzirisa kwako (brand identity). Ndivo kunoita munzvimbo yenyu **site_brief** memory, inoshandiswa neagents kuti vone zvinhu zvinobatanidza kudzera mazuva ose.
 

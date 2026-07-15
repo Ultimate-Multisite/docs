@@ -3,7 +3,7 @@ title: Export & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 dia mampiditra fita **Export & Import** iray (single-site) eo ambanin ny **Tools > Export & Import**. Ampiasao izany rehefa mila manamboatra (package) toerana WordPress iray ho ZIP file, mamerina an'io ZIP io, na manova toerana misy an'io WordPress eo amin'ny fampiasana Ultimate Multisite sy single-site mifandray.
 

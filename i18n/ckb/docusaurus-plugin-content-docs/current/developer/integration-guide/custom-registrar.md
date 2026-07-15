@@ -3,7 +3,7 @@ title: دروستکردنی یەکخستنی تۆمارکەری تایبەت
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# دروستکردنی تێکەڵکردنی تۆمارکەرێکی تایبەت {#building-a-custom-registrar-integration}
+# دروستکردنی تێکەڵکردنی تۆمارکەرێکی تایبەت
 
 پێوەکراوی فرۆشی دۆمەین شێوازی **تۆماری تێکەڵکردن** بەکاردەهێنێت. هەر تۆمارکەرێک classـێکی PHP ـە کە `Domain_Selling_Capability` جێبەجێ دەکات و خۆی لە ڕێگەی action hook ـی `wu_domain_seller_register_capabilities` تۆمار دەکات.
 

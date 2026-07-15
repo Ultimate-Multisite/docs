@@ -4,7 +4,7 @@ title: Ago - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Ago: wu_cart_setup {#action-wucartsetup}
+# Ago: wu_cart_setup
 
 Permesas al programistoj fari pliajn ŝanĝojn al la checkout objekto.
 

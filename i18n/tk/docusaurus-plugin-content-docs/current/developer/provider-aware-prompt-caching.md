@@ -3,7 +3,7 @@ title: Üpjin edijini göz öňünde tutýan prompt keşlemesi
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-den habarly prompt keşleme {#provider-aware-prompt-caching}
+# Provider-den habarly prompt keşleme
 
 Superdav AI Agent v1.12.0 **provider-den habarly prompt keşlemegi** hödürleýär; ol dürli LLM provider-leriniň arasynda promptlary keşlemek arkaly API çykdajylaryny we gijikmäni optimallaşdyrýar. Her provider-iň keşleme mehanizmleri we konfigurasiýalary tapawutlanýar.
 

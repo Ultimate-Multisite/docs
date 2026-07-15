@@ -3,7 +3,7 @@ title: Progressio Portae ad Mensuram
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Explicatio Portae Consuetudinariae {#custom-gateway-development}
+# Explicatio Portae Consuetudinariae
 
 Portas solutionis consuetudinarias creare potes extendendo classem `Base_Gateway`.
 

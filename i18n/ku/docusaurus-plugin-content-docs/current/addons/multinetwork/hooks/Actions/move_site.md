@@ -4,7 +4,7 @@ title: Çalakî - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Çalakî: move_site {#action-movesite}
+# Çalakî: move_site
 
 Piştî ku malperek ji bo torêke nû hatibe veguhastin tê xebitandin.
 

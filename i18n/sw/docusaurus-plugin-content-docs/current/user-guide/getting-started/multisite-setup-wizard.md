@@ -3,7 +3,7 @@ title: Mchawi wa Usanidi wa Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Mwongozo wa Kusanidi Multisite {#multisite-setup-wizard}
+# Mwongozo wa Kusanidi Multisite
 
 Ultimate Multisite inajumuisha mwongozo wa ndani ambao hubadilisha kiotomatiki usakinishaji wa kawaida wa WordPress kuwa mtandao wa WordPress Multisite. Hii inaondoa haja ya kuhariri `wp-config.php` kwa mkono au kuendesha amri za database.
 

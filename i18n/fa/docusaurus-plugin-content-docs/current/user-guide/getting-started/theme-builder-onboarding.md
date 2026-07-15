@@ -3,7 +3,7 @@ title: جریان آشناسازی سازنده قالب
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# جریان آشناسازی Theme Builder {#theme-builder-onboarding-flow}
+# جریان آشناسازی Theme Builder
 
 Superdav AI Agent v1.12.0 یک **جریان آشناسازی Theme Builder** راهنمای تعاملی معرفی می‌کند که به شما کمک می‌کند در مرحله راه‌اندازی اولیه، یک قالب بلاک (block theme) سفارشی بسازید. این ویژگی، حالت قدیمی Site Builder را با رویکردی منعطف‌تر و مبتنی بر دستیار هوش مصنوعی جایگزین می‌کند.
 

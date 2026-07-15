@@ -3,7 +3,7 @@ title: Реклама инжектору
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Сетьдеревеңизге рекламаларды Ultimate Multisite аркылуу орнотуу: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Сетьдеревеңизге рекламаларды Ultimate Multisite аркылуу орнотуу: Ad Injector
 
 Ultimate Multisite: Ad Injector — бул сиздин планларыңыздагы жарнамаларды атайында редакциялоо баракчадан эле орнотууга мүмкүндүк берген **белөөлөнө турган (free) плагин**.
 

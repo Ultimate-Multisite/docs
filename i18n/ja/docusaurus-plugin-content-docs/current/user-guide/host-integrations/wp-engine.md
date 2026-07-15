@@ -3,7 +3,7 @@ title: WP Engine 統合
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine 統合 {#wp-engine-integration}
+# WP Engine 統合
 
 ## 概要 {#overview}
 WP Engine は、WordPress サイトの最適化されたパフォーマンス、セキュリティ、スケーラビリティを提供するプレミアムマネージド WordPress ホスティングプラットフォームです。この統合により、Ultimate Multisite と WP Engine の間で自動ドメイン同期が可能になります。

@@ -3,7 +3,7 @@ title: Pridėti įrinktą priežiūrą
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kaip pritaikyti savo projektą su Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Kaip pritaikyti savo projektą su Codeable?
 
 Kai kurtai mums reikalinga puiki individualizavimas, kad mūsų tinklo srautai būtų tikėtiai taip, kaip mes norime. Jei tai yra tas, kas jums reikia, mes siunčiame [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), vietą, kur galite rasti patirties turiančius programavimus specialistus su Ultimate Multisite patirtimi.
 

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# ଫିଲ୍ଟର: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# ଫିଲ୍ଟର: signup_get_available_languages
 
 ସାମ୍ନା-ଭାଗର ସାଇଟ ପଞ୍ଜୀକରଣ ପାଇଁ ଉପଲବ୍ଧ ଭାଷାର ତାଲିକାକୁ ଫିଲ୍ଟର କରେ।
 

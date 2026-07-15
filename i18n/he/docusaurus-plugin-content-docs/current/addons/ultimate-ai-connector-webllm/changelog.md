@@ -3,7 +3,7 @@ title: מחבר ה-AI האולטימטיבי עבור WebLLM - יומן שינו
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# יומן השינויים של Ultimate AI Connector עבור WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# יומן השינויים של Ultimate AI Connector עבור WebLLM
 
 ## גרסה 1.1.0 — שוחררה ב-2026-04-09 {#version-110--released-on-2026-04-09}
 

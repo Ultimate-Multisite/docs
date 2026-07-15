@@ -3,7 +3,7 @@ title: Hjelp til tilpasset utvikling
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hvordan få hjelp til tilpasset utvikling fra Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Hvordan få hjelp til tilpasset utvikling fra Codeable?
 
 Noen ganger trenger vi virkelig litt kul tilpasning for å få nettverksflytene våre til å fungere akkurat slik vi ønsker. Hvis det er det du leter etter, anbefaler vi [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), et sted hvor du kan finne erfarne utviklere med ekspertise på Ultimate Multisite.
 

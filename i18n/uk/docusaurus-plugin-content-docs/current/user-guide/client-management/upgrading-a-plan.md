@@ -3,7 +3,7 @@ title: Оновлення тарифного плану
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Оновлення плану (v2) {#upgrading-a-plan-v2}
+# Оновлення плану (v2)
 
 _**ВАЖЛИВА ПРИМІТКА: ця стаття стосується Ultimate Multisite версії 2.x.**_
 

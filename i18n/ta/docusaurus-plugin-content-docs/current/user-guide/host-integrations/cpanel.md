@@ -3,7 +3,7 @@ title: cPanel ஒருங்கிணைப்பு
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ஒருங்கிணைப்பு {#cpanel-integration}
+# cPanel ஒருங்கிணைப்பு
 
 ## மேலோட்டம் {#overview}
 cPanel என்பது பல shared மற்றும் dedicated hosting வழங்குநர்களால் பயன்படுத்தப்படும் மிகவும் பிரபலமான web hosting control panel ஆகும். இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் cPanel இடையே தானியங்கு domain ஒத்திசைவை செயல்படுத்துகிறது, இது உங்கள் cPanel கணக்கில் domain aliases மற்றும் subdomains-ஐ தானாகவே சேர்க்க உதவுகிறது.

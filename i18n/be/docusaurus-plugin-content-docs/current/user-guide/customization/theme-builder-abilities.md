@@ -3,7 +3,7 @@ title: Здольнасці пабудавальні тэмаў
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Зdolności Theme Builder: Сфарміраванне і актывацыя Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Зdolności Theme Builder: Сфарміраванне і актывацыя Block Themes
 
 Superdav AI Agent v1.12.0 прадстаўляе дзве магутныя здольнасці, якія дазваляюць вам ствараць і размяшчаць кастомныя block themes непасрэдна з чат-інтерфейсу.
 

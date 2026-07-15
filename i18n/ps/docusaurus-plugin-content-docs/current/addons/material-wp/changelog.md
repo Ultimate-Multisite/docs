@@ -3,7 +3,7 @@ title: Material WP د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP د بدلونونو لړلیک {#material-wp-changelog}
+# Material WP د بدلونونو لړلیک
 
 Version 1.1.15 - 01/26/2026
 * ښه شوی: د code سبک او بڼه؛

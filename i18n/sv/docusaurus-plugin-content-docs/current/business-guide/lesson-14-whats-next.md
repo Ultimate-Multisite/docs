@@ -3,7 +3,7 @@ title: 'Lektion 14: Vad händer härnäst'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lektion 14: Vad händer härnäst {#lesson-14-what-comes-next}
+# Lektion 14: Vad händer härnäst
 
 Du har byggt en nischwebbplatsplattform från grunden. FitSite är igång, betjänar träningsstudior och genererar återkommande intäkter. Denna sista lektion tittar på vart du kan ta det härifrån.
 

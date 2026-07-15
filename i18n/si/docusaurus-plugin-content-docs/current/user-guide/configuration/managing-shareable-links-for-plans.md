@@ -3,7 +3,7 @@ title: සැලසුම් සඳහා බෙදාගත හැකි සබ
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# සැලසුම් සඳහා බෙදාගත හැකි සබැඳි කළමනාකරණය කිරීම {#managing-shareable-links-for-plans}
+# සැලසුම් සඳහා බෙදාගත හැකි සබැඳි කළමනාකරණය කිරීම
 
 Ultimate Multisite ඔබට ඔබේ ප්ලෑන් (plan) සබැඳි සෘජුවම ඔබේ පාරිභෝගිකයින් සමඟ බෙදා ගැනීමට විකල්පයක් ලබා දෙයි. මෙය කිරීමට, ඔබගේ ඕනෑම ප්ලෑන් එකක සංස්කරණ පිටුවට ගොස් '_Shareable Link එක පිටපත් කරන්න' (Click to copy the Shareable Link) බොත්තම ක්ලික් කරන්න.
 

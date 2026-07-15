@@ -4,7 +4,7 @@ title: Sía - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Sía: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Sía: secure_logged_in_cookie
 
 Síar hvort innskráningarkakan eigi aðeins að vera send yfir HTTPS.
 

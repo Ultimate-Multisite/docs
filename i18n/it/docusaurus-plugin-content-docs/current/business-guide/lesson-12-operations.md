@@ -3,7 +3,7 @@ title: 'Lezione 12: Gestire l''azienda'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lezione 12: Gestire l'attività {#lesson-12-running-the-business}
+# Lezione 12: Gestire l'attività
 
 Una piattaforma non è un progetto che si finisce, ma un'attività che si gestisce. Questa lezione copre le operazioni quotidiane per gestire FitSite: supporto, fatturazione, manutenzione e come mantenere felici i clienti.
 

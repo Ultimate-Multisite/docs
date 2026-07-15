@@ -3,7 +3,7 @@ title: Zida ndi Masinthidwe
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zida ndi Kasinthidwe {#tools-and-configuration}
+# Zida ndi Kasinthidwe
 
 Theme Builder imagwiritsa ntchito zida zingapo kusanthula, kupanga kapangidwe, ndi kumanga site yanu ya WordPress. Mu mtundu wa 1.16.0, **sd-ai-agent/site-scrape tsopano ndi chida cha Gawo 1**, zomwe zimachititsa kuti chipezeke mwachisawawa mu Theme Builder. Superdav AI Agent v1.18.0 imayambitsanso phukusi lapamwamba lothandizira lomwe limagawidwa padera la mayendedwe a ntchito a opanga odalirika; zida zimenezo si gawo la phukusi loyambira la WordPress.org ndipo ziyenera kukhazikitsidwa ndi kuvomerezedwa padera.
 

@@ -3,7 +3,7 @@ title: 제3자 모드 마이그레이션
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Third-Party Mode 마이그레이션 {#third-party-mode-migration}
+# Third-Party Mode 마이그레이션
 
 Superdav AI Agent v1.12.0에서는 third-party abilities를 처리하는 방식이 변경되었습니다. **Third-party mode가 이제 기본값으로 auto로 설정**되어, 수동 설정 없이 WordPress 7.0+에서 네이티브 WordPress Abilities API 통합이 가능해졌습니다.
 

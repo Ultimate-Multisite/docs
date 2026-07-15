@@ -4,7 +4,7 @@ title: اقدام - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# اکشن: wu_domain_mapping_load {#action-wudomainmappingload}
+# اکشن: wu_domain_mapping_load
 
 این اکشن پس از بارگذاری نگاشت دامنه اصلی ما فعال می‌شود.
 

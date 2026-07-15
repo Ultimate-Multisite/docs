@@ -3,7 +3,7 @@ title: අභිරුචි සංවර්ධන සහාය
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable වෙතින් කස්ටම් සංවර්ධන සහාය ලබා ගන්නේ කෙසේද? {#how-to-get-custom-development-help-from-codeable}
+# Codeable වෙතින් කස්ටම් සංවර්ධන සහාය ලබා ගන්නේ කෙසේද?
 
 සමහර වෙලාවට, අපේ ජාල ප්‍රවාහයන් හරියටම අප කැමති ආකාරයට වෙනස් කිරීමට අපට විශිෂ්ට අනුවර්තනයන් අවශ්‍ය විය හැකියි. ඔබට එය සොයන්නේ නම්, Ultimate Multisite පිළිබඳ විශේෂඥ සංවර්ධකයින් සිටින තැනක් වන [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) අපි නිර්දේශ කරමු.
 

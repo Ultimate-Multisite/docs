@@ -4,7 +4,7 @@ title: פילטר - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# מסנן: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# מסנן: wu_get_migration_steps
 
 מאפשר למפתחים ולתוספים להוסיף שלבי מיגרציה חדשים
 

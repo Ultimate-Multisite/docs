@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta' Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Reġistru tal-Bidliet ta' Site Exporter {#site-exporter-changelog}
+# Reġistru tal-Bidliet ta' Site Exporter
 
 Verżjoni: 1.0.6 - Maħruġa fl-2026-05-11
 * Ġdid: L-esportazzjonijiet tas-sit issa jinkludu index.php li jibda waħdu sabiex iż-ZIP ikun jista' jiġi installat fuq host ġdid mingħajr installazzjoni separata ta' plugin

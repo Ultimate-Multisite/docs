@@ -3,7 +3,7 @@ title: Help kun personala desarbo
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kiel ak vi alti devlopi help de Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Kiel ak vi alti devlopi help de Codeable?
 
 Gare foje, ni vi tre necese jaka bon personalizajnaj por fari niaj retoj la esakite la manko. Se tio estas tio, ni rekomendas Codeable (https://codeable.io/partners/wpultimo/?ref=7wHwE), loko kie vi povas trovi ekspertajn devlopantojn kun Ultimate Multisite ekspertizo.
 

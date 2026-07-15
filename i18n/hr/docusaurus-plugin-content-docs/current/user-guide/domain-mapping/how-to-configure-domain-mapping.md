@@ -3,7 +3,7 @@ title: Kako konfigurirati mapiranje domena
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kako konfigurirati mapiranje domena (v2) {#how-to-configure-domain-mapping-v2}
+# Kako konfigurirati mapiranje domena (v2)
 
 _**VAŽNA NAPOMENA: Ovaj se članak odnosi na Ultimate Multisite verziju 2.x.**_
 

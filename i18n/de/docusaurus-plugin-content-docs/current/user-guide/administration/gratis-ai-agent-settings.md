@@ -3,7 +3,7 @@ title: Gratis AI Agent Einstellungen
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent-Einstellungen {#gratis-ai-agent-settings}
+# Gratis AI Agent-Einstellungen
 
 Der Bildschirm **Settings → Advanced** in Gratis AI Agent bietet Konfiguration auf Administratorebene für Backend-Integrationen. Diese Seite dokumentiert Feedback-Weiterleitung, Schlüssel für Suchanbieter, Einrichtung des verwalteten Superdav-Dienstes, Google Calendar-Steuerungen, TextBee-SMS-Einstellungen und netzwerkweite Feature-Flags.
 

@@ -3,7 +3,7 @@ title: Ayitèl Devlopman Konpayi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kijan ou ka jwenn èdiksyon devlopman espesyal nan Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Kijan ou ka jwenn èdiksyon devlopman espesyal nan Codeable?
 
 Parfois, nou bezwen yon kòmansman espesyal pou fè flò nou yo egzak jan nou vle yo. Si se sa ou ap chèche, nou rekòmande [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), yon kote ou ka jwenn devlopè ki gen eksperyans ak espesyalizasyon Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Site Şablonlarında Otomatik Ara ve Değiştir
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Site Şablonlarında Otomatik Arama ve Değiştirme (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Site Şablonlarında Otomatik Arama ve Değiştirme (v2)
 
 _**Bu eğitim WP UItimo version 2.x gerektirir.**_
 

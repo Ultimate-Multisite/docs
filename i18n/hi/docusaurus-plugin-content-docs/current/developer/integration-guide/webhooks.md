@@ -3,7 +3,7 @@ title: वेबहूक हैंडलिंग
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook को संभालना (Webhook Handling) {#webhook-handling}
+# Webhook को संभालना (Webhook Handling)
 
 बाहरी सेवाओं से इवेंट प्राप्त करने और डेटा को Ultimate Multisite के साथ सिंक करने के लिए कस्टम वेबहुक एंडपॉइंट बनाएं।
 

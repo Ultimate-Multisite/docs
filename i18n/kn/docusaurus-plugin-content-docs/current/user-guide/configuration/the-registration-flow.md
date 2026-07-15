@@ -3,7 +3,7 @@ title: ನೋಂದಣಿ ಹರಿವು
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# ನೋಂದಣಿ ಹರಿವು (v2) {#the-registration-flow-v2}
+# ನೋಂದಣಿ ಹರಿವು (v2)
 
 _**ಮುಖ್ಯ ಸೂಚನೆ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಗೆ ಸಂಬಂಧಿಸಿದೆ.**_
 

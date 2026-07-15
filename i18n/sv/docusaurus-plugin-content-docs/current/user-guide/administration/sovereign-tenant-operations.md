@@ -3,7 +3,7 @@ title: Suverän hyresgästdrift
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Hantering av suveräna hyresgäster (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Hantering av suveräna hyresgäster (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lägger till verktyg för hantering av suveräna hyresgäster: undersidor som körs med sin egen databas, filsystemrot och routningskontext samtidigt som de är synliga för nätverksadministratören.
 

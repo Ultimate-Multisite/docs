@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe nke Onye Mbupụ Saịtị
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Ndekọ Mgbanwe Site Exporter {#site-exporter-changelog}
+# Ndekọ Mgbanwe Site Exporter
 
 Ụdị: 1.0.6 - Ewepụtara na 2026-05-11
 * Ọhụrụ: Mbupụ saịtị ugbu a na-agbakọta index.php na-amalite onwe ya ka ZIP wee nwee ike itinye na host ọhụrụ na-enweghị itinye plugin iche

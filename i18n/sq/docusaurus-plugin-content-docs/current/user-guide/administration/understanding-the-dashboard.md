@@ -3,7 +3,7 @@ title: Kuptimi i Paneli Ekzistues
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Kuptimi i Dashboard-it Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Kuptimi i Dashboard-it Ultimate Multisite
 
 Para se zhytim në opsione më të avancuara konfigurimi dhe aspekt operativë të Ultimate Multisite, le të shikojmë dashboard-in.
 

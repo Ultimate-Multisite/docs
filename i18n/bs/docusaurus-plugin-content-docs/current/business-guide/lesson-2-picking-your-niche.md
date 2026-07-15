@@ -3,7 +3,7 @@ title: 'Lekcija 2: Odabir niše'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekcija 2: Izbor Niše {#lesson-2-picking-your-niche}
+# Lekcija 2: Izbor Niše
 
 U Lekciji 1 utvrdili smo zašto je niša bolja od opšteg pristupa. Sada je vaša zadaća da odaberete svoju nišu. Ova lekcija vam daje okvir za pronalaženje i validiranje niše prije nego što uložite vrijeme u izradu platforme za nju.
 

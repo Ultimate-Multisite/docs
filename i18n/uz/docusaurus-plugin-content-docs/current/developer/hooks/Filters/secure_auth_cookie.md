@@ -4,7 +4,7 @@ title: Filtr - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filtr: secure_auth_cookie {#filter-secureauthcookie}
+# Filtr: secure_auth_cookie
 
 Auth cookie faqat HTTPS orqali yuborilishi kerakligini filtrlaydi.
 

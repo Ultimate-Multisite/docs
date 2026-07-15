@@ -3,7 +3,7 @@ title: Whakawhitiwhiti o te Whakamahi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Orakau o te Dashboard {#dashboard-overview}
+# Orakau o te Dashboard
 
 He **Dashboard** whakamahinga ana i te Ultimate Multisite di te menue o Ultimate Multisite, ā, e hoki i widget's ki te Network Dashboard. Ka whakataki tēnei tikanga i te mea e kitea i onua-onua iwi-iwi (both places).
 

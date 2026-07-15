@@ -3,7 +3,7 @@ title: સાઇટ સ્પેસિફિકેશન કૌશલ્ય
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 **Site Specification skill** એ તમારા સાઇટના લક્ષ્યો, ઓડિયન્સ અને બ્રાન્ડની ઓળખને એક વ્યવસ્થિત રીતે કેપ્ચર કરવાની એક રીત છે. આ માહિતી તમારી **site_brief** મેમરીમાં સ્ટોર થાય છે, જે એજન્ટ્સ સેશન્સ દરમિયાન સંદર્ભ તરીકે ઉપયોગ કરે છે જેથી સતત અને સંદર્ભને સમજતી મદદ આપી શકાય.
 

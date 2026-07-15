@@ -4,7 +4,7 @@ title: Azzjoni - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Azzjoni: wu_before_search_models {#action-wubeforesearchmodels}
+# Azzjoni: wu_before_search_models
 
 Jiġi attivat qabel l-ipproċessar tat-talba tat-tiftix.
 

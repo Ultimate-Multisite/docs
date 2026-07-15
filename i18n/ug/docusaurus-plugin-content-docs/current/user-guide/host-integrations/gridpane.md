@@ -3,7 +3,7 @@ title: GridPane bilan integratsiya
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integration {#gridpane-integration}
+# GridPane Integration
 
 ## Обшумат (Overview) {#overview}
 GridPane هي لوحة تحكم استضافة ووردبريس متخصصة ومصممة للمحترفين الجادين في ووردبريس. هذا التكامل يتيح المزامنة التلقائية للنطاقات وإدارة شهادات SSL بين Ultimate Multisite و GridPane.

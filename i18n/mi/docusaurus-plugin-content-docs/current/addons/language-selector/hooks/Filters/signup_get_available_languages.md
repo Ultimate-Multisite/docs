@@ -4,7 +4,7 @@ title: Tātari - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Tātari: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Tātari: signup_get_available_languages
 
 Ka tātari i te rārangi o ngā reo e wātea ana mō ngā rēhitatanga pae pito-mua.
 

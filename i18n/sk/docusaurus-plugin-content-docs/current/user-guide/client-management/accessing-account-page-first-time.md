@@ -3,7 +3,7 @@ title: Prístup na stránku účtu
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Ako môžem prvej ukážku prístupu do svojho účtu? {#how-can-i-access-my-account-page-for-the-first-time}
+# Ako môžem prvej ukážku prístupu do svojho účtu?
 
 Vitajte v Ultimate Multisite!
 

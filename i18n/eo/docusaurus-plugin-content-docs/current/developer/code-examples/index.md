@@ -3,7 +3,7 @@ title: Altnivelaj kodekzemploj
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Altnivelaj Kodaj Ekzemploj {#advanced-code-examples}
+# Altnivelaj Kodaj Ekzemploj
 
 Ĉi tiuj ekzemploj demonstras altnivelajn integrigajn ŝablonojn kun Ultimate Multisite.
 

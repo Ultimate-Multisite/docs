@@ -3,7 +3,7 @@ title: WP Engine ஒருங்கிணைப்பு
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ஒருங்கிணைப்பு {#wp-engine-integration}
+# WP Engine ஒருங்கிணைப்பு
 
 ## மேலோட்டம் {#overview}
 WP Engine என்பது WordPress தளங்களுக்கு உகந்த செயல்திறன், பாதுகாப்பு மற்றும் அளவிடுதல் திறனை வழங்கும் ஒரு பிரீமியம் நிர்வகிக்கப்படும் WordPress hosting தளமாகும். இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் WP Engine இடையே தானியங்கி domain ஒத்திசைவை செயல்படுத்துகிறது.

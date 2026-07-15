@@ -3,7 +3,7 @@ title: Պահանջներ
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite လိုအပ်ချက်များ {#ultimate-multisite-requirements}
+# Ultimate Multisite လိုအပ်ချက်များ
 
 Ultimate Multisite ဝယ်ယူဖို့ မလုပ်ခင် ကိုယ့်ကိုယ်ကို မေးသင့်တဲ့ ပထမဆုံးအရာကတော့ ကျွန်တော်တို့ရဲ့ plugin ကို အသုံးပြုဖို့ ဘာတွေလိုအပ်လဲဆိုတာပဲ။ ကံကောင်းစွာနဲ့ပဲ၊ Ultimate Multisite ကို run ဖို့အတွက် အခြေခံ လိုအပ်ချက် အနည်းငယ်ပဲ ရှိပါတယ်- **domain name** တစ်ခု၊ ကောင်းမွန်တဲ့ **hosting provider** နဲ့ WordPress **Multisite** တည်ဆောက်မှုတစ်ခုပေါ့။ ဒါတွေတင် လုံလောက်ပါတယ်!
 

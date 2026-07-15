@@ -3,7 +3,7 @@ title: Hasaba alyş formaňyzy sazlamak
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Hasaba alyş formaňyzy sazlamak {#customizing-your-registration-form}
+# Hasaba alyş formaňyzy sazlamak
 
 WordPress platformasynda gurlan beýleki SaaS-laryň ählisinden tapawutly görünmegi üçin, Ultimate Multisite size **Töleg formalary** aýratynlygymyz bilen hasaba alyş we giriş sahypalaryňyzy sazlamaga mümkinçilik berýär.
 

@@ -3,7 +3,7 @@ title: Mijoz fikri va muammo hisobotlash
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Mijozlarning fikri va muammolarni hisobot berishi {#customer-feedback--issue-reporting}
+# Mijozlarning fikri va muammolarni hisobot berishi
 
 Gratis AI Agent v1.5.0 end-user'lar uchun foydalanuvchilarning yordamsiz javoblarni belgilash va muammolarni chat interfeysidan bevosita hisobot berish imkonini beradigan ichki fikr va muammo hisobot tizimini joriy etadi. Bu tizimda rozilikni boshqarish, avtomatlashtirilgan hisobot buyrug'i va backendda AI yordamida tasniflash (triage) funksiyalari mavjud.
 

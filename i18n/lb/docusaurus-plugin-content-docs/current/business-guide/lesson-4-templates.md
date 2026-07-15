@@ -3,7 +3,7 @@ title: 'Lektioun 4: Nisch-Virlagen erstellen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lektioun 4: Nisch-Schabloune bauen {#lesson-4-building-niche-templates}
+# Lektioun 4: Nisch-Schabloune bauen
 
 Schabloune sinn de Kär vun denger Nisch-Wäertpropositioun. E Fitnessstudio-Besëtzer, dee sech umellt an eng Websäit gesäit, déi schonn ausgesäit wéi eng Fitness-Websäit -- mat Kurspläng, Trainerprofiller an de richtege Biller -- bleift vill méi wahrscheinlech wéi een, deen eng eidel Fläch gesäit.
 

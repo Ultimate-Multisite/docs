@@ -3,7 +3,7 @@ title: Làimhseachadh chìsean
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Làimhseachadh Chìsean {#tax-handling}
+# Làimhseachadh Chìsean
 
 Tha modal cruinneachaidh chìsean aig Ultimate Multisite air a thogail a-steach don phrìomh plugin againn, mar sin ma dh’fheumas tu cìsean reic a chruinneachadh air na planaichean, pacaidean agus seirbheisean agad, faodaidh tu sin a dhèanamh gu furasta gun a bhith a’ stàladh tuilleadain sam bith.
 

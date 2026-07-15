@@ -3,7 +3,7 @@ title: 'Lecția 13: Scalarea în sus'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lecția 13: Scalarea Afacerii {#lesson-13-scaling-up}
+# Lecția 13: Scalarea Afacerii
 
 Aveți o platformă funcțională cu clienți plătiți. Această lecție vă explică cum să treceți de la o operațiune mică la o afacere sustenabilă — prin scalarea infrastructurii, automatizarea operațiunilor și creșterea veniturilor pe client.
 

@@ -4,7 +4,7 @@ title: Фильтр - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Сөзгеч: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Сөзгеч: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 Автоматик юнәлтүне булдырмый торган параметрларның төшереп калдыру исемлеген төзегез.
 

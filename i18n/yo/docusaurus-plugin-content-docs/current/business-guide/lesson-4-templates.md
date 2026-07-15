@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 4: Ṣíṣe àwọn àwòṣe àkànṣe'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ẹ̀kọ́ 4: Kíkọ Àwọn Àwoṣe Niche {#lesson-4-building-niche-templates}
+# Ẹ̀kọ́ 4: Kíkọ Àwọn Àwoṣe Niche
 
 Àwọn àwoṣe ni ìpìlẹ̀ ìlérí iye niche rẹ. Olówó studio amọdájú-ara kan tó forúkọ sílẹ̀ tó sì rí ojúlé kan tó ti dàbí wẹẹbu amọdájú-ara tẹ́lẹ̀ -- pẹ̀lú àwọn àkókò kilasi, profaili àwọn olùkọ́ni, àti àwòrán tó yẹ -- ó ṣeé ṣe kó dúró ju ẹni tó rí ojú òfo lọ.
 

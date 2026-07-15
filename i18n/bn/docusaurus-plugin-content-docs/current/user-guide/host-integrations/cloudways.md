@@ -3,7 +3,7 @@ title: Cloudways ইন্টিগ্রেশন
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ইন্টিগ্রেশন {#cloudways-integration}
+# Cloudways ইন্টিগ্রেশন
 
 ## সংক্ষিপ্ত বিবরণ {#overview}
 Cloudways একটি পরিচালিত ক্লাউড হোস্টিং প্ল্যাটফর্ম, যা আপনাকে DigitalOcean, AWS, Google Cloud এবং আরও নানা ক্লাউড প্রদানকারীতে WordPress সাইট ডিপ্লয় করতে দেয়। এই ইন্টিগ্রেশন Ultimate Multisite এবং Cloudways-এর মধ্যে স্বয়ংক্রিয় ডোমেইন সিঙ্কিং এবং SSL সার্টিফিকেট ব্যবস্থাপনা সক্ষম করে।

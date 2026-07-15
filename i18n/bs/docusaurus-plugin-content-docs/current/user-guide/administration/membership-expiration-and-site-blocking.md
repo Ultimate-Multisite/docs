@@ -3,7 +3,7 @@ title: Istek članstva i blokiranje sajta
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Istek članstva i blokiranje stranice {#membership-expiration-and-site-blocking}
+# Istek članstva i blokiranje stranice
 
 Ovaj vodič objašnjava kako Ultimate Multisite upravlja istekom članstva, završetkom probnog perioda i blokiranjem stranice na prednjoj strani (frontend). Pokriva životni ciklus članstva, od aktivnog do isteka, postavke koje kontrolišu da li su stranice blokirane, i šta provjeriti kada su stranice i dalje dostupne nakon isteka članstva.
 

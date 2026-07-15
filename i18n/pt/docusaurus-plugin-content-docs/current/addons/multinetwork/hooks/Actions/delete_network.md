@@ -4,7 +4,7 @@ title: Ação - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Ação: delete_network {#action-deletenetwork}
+# Ação: delete_network
 
 Disparada depois de uma rede ter sido eliminada.
 

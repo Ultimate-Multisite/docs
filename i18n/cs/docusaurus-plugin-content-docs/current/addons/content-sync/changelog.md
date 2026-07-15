@@ -3,7 +3,7 @@ title: Změny v synchronizaci obsahu
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Změnový deník Content Sync {#content-sync-changelog}
+# Změnový deník Content Sync
 
 ### Verze 1.1.0 - Vydáno 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nové: Podpora synchronizace všech typů příspěvků (posts, pages, vlastní typy příspěvků)

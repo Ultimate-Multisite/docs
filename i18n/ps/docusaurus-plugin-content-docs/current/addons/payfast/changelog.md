@@ -3,7 +3,7 @@ title: PayFast د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# د PayFast بدلونلیک {#payfast-changelog}
+# د PayFast بدلونلیک
 
 نسخه: 1.0.2 - په 2025-09-28 خپره شوه
 

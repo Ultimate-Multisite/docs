@@ -3,7 +3,7 @@ title: Logo SVG generálása
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG Generálása {#generate-logo-svg}
+# Logo SVG Generálása
 
 Az **Logo SVG Generálása** képessége lehetővé teszi a Theme Builder számára, hogy olyan festőleges, testreszabható logo SVG-eket hozz létre és emelje be közvetlenül az Ön WordPress oldalára, automatikus, névterület-biztonságos tisztítással.
 

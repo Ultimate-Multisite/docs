@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ailinnachadh diughan ar adairtean ar ealaiannach agad le Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ailinnachadh diughan ar adairtean ar ealaiannach agad le Ultimate Multisite: Ad Injector
 
 Is e **add-on fada** a tha Ultimate Multisite: Ad Injector, a tha a' tola do chruinneachadh airson adairtean ar ealaiannach agad gu sùile a' chlàradh de luchd air a' thar.
 

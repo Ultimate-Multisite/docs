@@ -3,7 +3,7 @@ title: Pengendalian Cukai
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pengendalian Cukai {#tax-handling}
+# Pengendalian Cukai
 
 Ultimate Multisite mempunyai modul kutipan cukai yang terbina dalam plugin teras kami, jadi jika anda perlu mengutip cukai jualan pada pelan, pakej dan perkhidmatan anda, anda boleh melakukannya dengan mudah tanpa perlu memasang sebarang tambahan.
 

@@ -3,7 +3,7 @@ title: Vodnik za uporabo kavljev
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Vodnik za uporabo hooks {#hooks-usage-guide}
+# Vodnik za uporabo hooks
 
 Ultimate Multisite ponuja več kot 200 action hooks in več kot 280 filter hooks. Ta stran obravnava najpogosteje uporabljene hooks s praktičnimi primeri. Za popoln samodejno ustvarjen referenčni pregled prebrskajte druge strani v tem razdelku.
 

@@ -4,7 +4,7 @@ title: Iragazkia - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Iragazkia: wu_rest_get_items {#filter-wurestgetitems}
+# Iragazkia: wu_rest_get_items
 
 Eskaerarekin jarraitzea baimentzen den ala ez iragazten du.
 

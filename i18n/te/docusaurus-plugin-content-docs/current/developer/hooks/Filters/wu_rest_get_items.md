@@ -4,7 +4,7 @@ title: ఫిల్టర్ - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filter: wu_rest_get_items {#filter-wurestgetitems}
+# Filter: wu_rest_get_items
 
 ఈ రిక్వెస్ట్‌ను కొనసాగించడానికి అనుమతించబడుతుందో లేదో ఇది ఫిల్టర్ చేస్తుంది.
 

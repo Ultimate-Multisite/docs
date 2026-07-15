@@ -3,7 +3,7 @@ title: Üyelik Süresi Dolması ve Site Engelleme
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Üyelik Süresi Dolması ve Site Engelleme {#membership-expiration-and-site-blocking}
+# Üyelik Süresi Dolması ve Site Engelleme
 
 Bu rehber, Ultimate Multisite'ın üyelik süresi dolmasını, deneme süresi bitimini ve ön yüz (frontend) site engellemelerini nasıl yönettiğini açıklıyor. Bir üyeliğin aktif durumdan süresi dolmuş duruma geçiş yaşam döngüsünü, sitelerin engellenip engellenmeyeceğini kontrol eden ayarları ve bir üyelik süresi dolduktan sonra sitelerin neden hala erişilebilir kaldığını kontrol etmeniz gereken durumları ele alıyor.
 

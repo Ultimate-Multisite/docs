@@ -4,7 +4,7 @@ title: Filtè - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Filtè: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# Filtè: wu_checkout_calculate_prorate_credits
 
 Pèmèt devlopè ekstansyon yo modifye valè kredi a.
 

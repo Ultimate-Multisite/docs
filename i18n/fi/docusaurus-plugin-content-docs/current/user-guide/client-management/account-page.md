@@ -3,7 +3,7 @@ title: Asiakkaan tili-sivu
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Asiakkaan tili-sivu (v2) {#your-clients-account-page-v2}
+# Asiakkaan tili-sivu (v2)
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 

@@ -3,7 +3,7 @@ title: 'Akoranga 13: Te Whakarahi Ake'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Akoranga 13: Te Whakawhānui Ake {#lesson-13-scaling-up}
+# Akoranga 13: Te Whakawhānui Ake
 
 He tūāpapa mahi tōu me ngā kiritaki utu. Ka kapi i tēnei akoranga me pēhea te tipu mai i tētahi whakahaere iti ki tētahi pakihi toitū -- te whakawhānui i te hanganga, te whakaaunoa i ngā whakahaere, me te whakapiki i te whiwhinga moni mō ia kiritaki.
 

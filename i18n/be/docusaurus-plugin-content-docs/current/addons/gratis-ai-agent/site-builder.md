@@ -3,7 +3,7 @@ title: Orkestryванне Konstruktora Saitov v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (введены ў Gratis AI Agent v1.4.0) — гэта рухавік, які працуе над стварэннем сайта ў некалькі крокаў. Калі вы просіце агента "пабудаваць сайт рэстарану" або "створыць портфель з блогом", оркестратар распадае гэтую агульную мэту на структураваны **план**, выяўляе plugins, неабходныя для яго выканання, выконвае кожны крок па сланцы, адсочвае прагрэс і самастойна аднаўляецца ў выпадку памылак.
 

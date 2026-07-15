@@ -3,7 +3,7 @@ title: 'Sapak 13: Masştaby ulaltmak'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Sapak 13: Giňeltmek {#lesson-13-scaling-up}
+# Sapak 13: Giňeltmek
 
 Sizde töleg edýän müşderileri bolan işleýän platforma bar. Bu sapak kiçi amaldan durnukly işe çenli nädip ösmegi öz içine alýar -- infrastruktura giňeltmek, amallary awtomatlaşdyrmak we her müşderiden gelýän girdejini artdyrmak.
 

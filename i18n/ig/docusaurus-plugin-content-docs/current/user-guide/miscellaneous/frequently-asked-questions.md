@@ -3,7 +3,7 @@ title: Esiejụ Ọzọ
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Perguntas Frequentes {#frequently-asked-questions}
+# Perguntas Frequentes
 
 Ehere ada ba **Perguntas Frequentes** na so dị, na ọ bụrụ mgbe ndị nwere nsogbu support.
 

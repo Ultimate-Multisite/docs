@@ -3,9 +3,9 @@ title: ଅତିରିକ୍ତ ଯୋଗାଂଶ ଢାଞ୍ଚା
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# ଆଡଅନ୍ ଛାଞ୍ଚ {#addon-template}
+# ଆଡଅନ୍ ଛାଞ୍ଚ
 
-{{ADDON_DESCRIPTION}}
+ଅତିରିକ୍ତ ଯୋଗାଂଶ ଢାଞ୍ଚା — Ultimate Multisite.
 
 ## ଆବଶ୍ୟକତା {#requirements}
 

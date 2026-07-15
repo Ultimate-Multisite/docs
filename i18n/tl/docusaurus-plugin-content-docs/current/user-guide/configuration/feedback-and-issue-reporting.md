@@ -3,7 +3,7 @@ title: Feedback ng Customer at Pag-uulat ng Isyu
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback at Customer & Isyu Reporting {#customer-feedback--issue-reporting}
+# Feedback at Customer & Isyu Reporting
 
 Ang Gratis AI Agent v1.5.0 ay may kasamang sistema para sa pag-report ng feedback at isyu na pinapayagan ang mga end user na mag-flag ng hindi nakakatulong na sagot at mag-report ng problema nang direkta mula sa chat interface. Kasama sa sistemang ito ang consent management, isang automated reporting command, at AI-assisted triage sa backend.
 

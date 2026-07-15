@@ -4,7 +4,7 @@ title: Sefa - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Zosefera: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Zosefera: networks_pre_user_is_network_admin
 
 Imasefa ma netiweki omwe wogwiritsa ntchito ali woyang'anira wake, kuti idumphitse ndondomekoyi.
 

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# ଫିଲ୍ଟର: wu_setup_wizard {#filter-wusetupwizard}
+# ଫିଲ୍ଟର: wu_setup_wizard
 
 ବିକାଶକମାନଙ୍କୁ ଅତିରିକ୍ତ ସେଟଅପ୍ ୱିଜାର୍ଡ ପଦକ୍ଷେପ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ।
 

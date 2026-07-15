@@ -3,7 +3,7 @@ title: 构建自定义注册商集成
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# 构建自定义注册商集成 {#building-a-custom-registrar-integration}
+# 构建自定义注册商集成
 
 Domain Seller 附加组件使用了 **集成注册表** (Integration Registry) 模式。每个注册商都是一个实现了 `Domain_Selling_Capability` 接口的 PHP 类，并通过 `wu_domain_seller_register_capabilities` action hook 进行注册。
 

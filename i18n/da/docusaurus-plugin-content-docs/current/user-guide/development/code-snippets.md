@@ -3,7 +3,7 @@ title: Kodeudsnit
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodeudsnip til v2 {#code-snippets-for-v2}
+# Kodeudsnip til v2
 
 Grundlæggende bruges kodeudsnit til **WordPress** til at udføre bestemte handlinger, som ellers må kræve en dedikeret mindre plugin. Sådan kode placeres i et af WordPress kernefiler eller temaets `functions.php` fil (generelt), eller den kan bruges som en MU plugin.
 

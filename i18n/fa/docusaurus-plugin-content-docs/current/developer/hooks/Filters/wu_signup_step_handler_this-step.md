@@ -4,7 +4,7 @@ title: 'فیلتر - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# فیلتر: wu_signup_step_handler_{$this->step} {#filter-wusignupstephandlerthis-step}
+# فیلتر: wu_signup_step_handler_{$this->step}
 
 اجازه می‌دهد تا هندلر (handler) بازنویسی شود.
 

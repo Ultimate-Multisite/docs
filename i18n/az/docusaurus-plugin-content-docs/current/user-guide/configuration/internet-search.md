@@ -3,7 +3,7 @@ title: İnternet Axtarışı
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# İnternet Axtarışı {#internet-search}
+# İnternet Axtarışı
 
 Gratis AI Agent v1.5.0, söhbət zamanı AI asistentinin vebdən müasir məlumatları əldə etməsinə imkan verən bir **İnternet Axtarışı** funksionallığı əlavə edir. Bu funksiya [Brave Search API](https://brave.com/search/api/) və ya [Tavily API](https://tavily.com/) vasitəsilə işləyir.
 

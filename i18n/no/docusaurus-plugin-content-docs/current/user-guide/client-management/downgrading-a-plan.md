@@ -3,7 +3,7 @@ title: Nedgradering av et abonnement
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedgradere et abonnement (v2) {#downgrading-a-plan-v2}
+# Nedgradere et abonnement (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
 

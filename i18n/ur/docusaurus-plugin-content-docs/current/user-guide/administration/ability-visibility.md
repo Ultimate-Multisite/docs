@@ -3,7 +3,7 @@ title: صلاحیت کی مرئیت
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# قابلیت کی ظاہری حیثیت (Ability Visibility) {#ability-visibility}
+# قابلیت کی ظاہری حیثیت (Ability Visibility)
 
 Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Ability Visibility)** کنٹرولز متعارف کرائے ہیں جو یہ طے کرتے ہیں کہ کون سی خصوصیت (ability) کن-کن جگہوں پر ظاہر ہوگی۔ اس سے ایڈمنسٹریٹرز کو یہ بہتر طریقے سے ایڈجسٹ کرنے کی اجازت ملتی ہے کہ کون سی ایجنٹ کی صلاحیتیں REST APIs، MCP سرورز، WooCommerce انٹیگریشنز، اور دیگر انٹرفیسز کے ذریعے دستیاب ہوں گی۔
 

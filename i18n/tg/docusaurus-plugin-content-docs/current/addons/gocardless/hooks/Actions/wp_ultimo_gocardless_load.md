@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Амал: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Амал: wp_ultimo_gocardless_load
 
 Вақте оғоз мешавад, ки ҳамаи вобастагиҳо бор карда шуданд
 

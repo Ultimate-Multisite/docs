@@ -4,7 +4,7 @@ title: ფილტრი - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# ფილტრი: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# ფილტრი: wu_should_create_domain_record_for_site
 
 ფილტრავს, უნდა შექმნას თუ არა Ultimate Multisite-მა დომენის ჩანაწერი ახლად შექმნილი საიტისთვის.
 

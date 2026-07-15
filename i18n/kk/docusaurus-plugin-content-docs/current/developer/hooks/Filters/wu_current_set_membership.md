@@ -4,7 +4,7 @@ title: Сүзгі - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Сүзгі: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Сүзгі: wu_current_set_membership
 
 Әзірлеушілерге әдепкі әрекетті өзгертуге және ағымдағы мүшелікті басқаша орнатуға мүмкіндік береді.
 

@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Action: wu_duplicate_site {#action-wuduplicatesite}
+# Action: wu_duplicate_site
 
 ഒരു സൈറ്റ് ഡ്യൂപ്ലിക്കേഷൻ (site duplication) നടന്നതിന് ശേഷം ഡെവലപ്പർമാർക്ക് ഒരു hook ഉപയോഗിക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

@@ -3,7 +3,7 @@ title: Fandaharam-potoana fampianarana Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fandramba Fandramba (Onboarding Flow an'ny Loatra) {#theme-builder-onboarding-flow}
+# Fandramba Fandramba (Onboarding Flow an'ny Loatra)
 
 Ny Superdav AI Agent v1.12.0 dia manolotra **Theme Builder onboarding flow** izay manampy anao hahazo mamorona theme mifanaraka amin'ny zavatra tianao mandritra ny fanombohanao. Izany dia manolo ny Site Builder mode taloha amin'ny fomba mora kokoa sy miaraka amin'ny agent.
 

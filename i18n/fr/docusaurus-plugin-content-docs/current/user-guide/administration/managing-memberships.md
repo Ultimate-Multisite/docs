@@ -3,7 +3,7 @@ title: Gestion des adhésions
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gestion des adhésions {#managing-memberships}
+# Gestion des adhésions
 
 Dans Ultimate Multisite, vous pouvez gérer les adhésions et accéder à tous les abonnements de votre réseau. Consultez et modifiez les détails des abonnements tels que les plans et les produits, le nombre de sites, le montant et la fréquence de facturation, l’historique des paiements et les horodatages.
 

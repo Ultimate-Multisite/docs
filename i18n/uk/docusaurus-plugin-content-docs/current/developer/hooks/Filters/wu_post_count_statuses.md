@@ -4,7 +4,7 @@ title: Фільтр - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Фільтр: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Фільтр: wu_post_count_statuses
 
 Дозволяє розробникам плагінів змінювати, які статуси публікацій мають бути враховані. За замовчуванням рахуються публічні та приватні записи.
 

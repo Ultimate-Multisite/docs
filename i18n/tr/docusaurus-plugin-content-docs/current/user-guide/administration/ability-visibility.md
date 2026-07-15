@@ -3,7 +3,7 @@ title: Yetenek Görünürlüğü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Yetenek Görünürlüğü {#ability-visibility}
+# Yetenek Görünürlüğü
 
 Superdav AI Agent v1.12.0, hangi yüzeylerin hangi yeteneği göstereceğini yöneten **Yetenek Görünürlüğü** kontrollerini getiriyor. Bu, yöneticilerin hangi agent yeteneklerinin REST API'ler, MCP sunucuları, WooCommerce entegrasyonları ve diğer arayüzler aracılığıyla kullanılabilirliğini detaylıca ayarlamasına olanak tanır.
 

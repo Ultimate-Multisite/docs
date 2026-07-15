@@ -4,7 +4,7 @@ title: Filtrum - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filtrum: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filtrum: wu_stripe_checkout_subscription_data
 
 Filtrat data Subscriptionis Stripe. Potest success_url vel cancel_url superare.
 

@@ -3,7 +3,7 @@ title: Mokotso o lebo ea ho setso oa multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Setso ea Hohoho ho Multisite {#multisite-setup-wizard}
+# Setso ea Hohoho ho Multisite
 
 Kea leboha la setso (Setup Wizard) sa tloha.
 

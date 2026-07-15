@@ -3,7 +3,7 @@ title: WP-CLI ma’lumotnomasi
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ma’lumotnomasi {#wp-cli-reference}
+# WP-CLI ma’lumotnomasi
 
 Gratis AI Agent agentni benchmark qilish, qobiliyatlarni boshqarish va agent holatini buyruq qatoridan so‘rash uchun `wp gratis-ai-agent` buyruqlar oilasi bilan birga keladi. Barcha buyruqlar WP-CLI 2.0 yoki undan yuqori versiyani talab qiladi.
 

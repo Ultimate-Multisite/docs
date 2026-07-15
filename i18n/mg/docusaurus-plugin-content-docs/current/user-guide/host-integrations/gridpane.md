@@ -3,7 +3,7 @@ title: Fampidirana GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Fandahana ao GridPane {#gridpane-integration}
+# Fandahana ao GridPane
 
 ## Famarahaba (Overview) {#overview}
 Ny GridPane dia fitaovana manokana ho an'ny fanaraha-maso ny WordPress izay natao ho an'ireo matihanina amin'ny WordPress. Ity fandrindrana ity dia ahafahana mifandray mivantana ny domain sy ny fitantanana ny SSL certificate eo amin'i Ultimate Multisite sy GridPane.

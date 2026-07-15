@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Mae Ultimate Multisite yn plugin WordPress Multisite sy'n gynnig i chi gynnig WaaS neu Gweithredinolau ar gyfer ystodau. Trước y byth i ddarganoch a ddysgu sut gallai Ultimate Multisite helpu eich busnes a'r cyddeeion, mae angen i niid gwneud ychwanegiadau cyning ti'n cael eu cyflwyno.
 

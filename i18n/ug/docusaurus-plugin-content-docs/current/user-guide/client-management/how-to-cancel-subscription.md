@@ -3,7 +3,7 @@ title: اشتراكني سۆزقنى كى كى قايل؟
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# اشتراکımı nasıl iptal edebilirim? {#how-can-i-cancel-my-subscription}
+# اشتراکımı nasıl iptal edebilirim?
 
 Eğer bir Ultimate Multisite lisansınız varsa, yenilemeyi istediğiniz zaman iptal edebilirsiniz. Sadece aşağıdaki adımları takip edin:
 

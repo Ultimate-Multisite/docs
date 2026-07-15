@@ -3,7 +3,7 @@ title: Irekhodi Lezinguquko Lokuvumelanisa Okuqukethwe
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# I-Changelog Yokuvumelanisa Okuqukethwe {#content-sync-changelog}
+# I-Changelog Yokuvumelanisa Okuqukethwe
 
 ### Inguqulo 1.1.0 - Ikhishwe ngo-2025-12-31 {#version-110---released-on-2025-12-31}
 * Okusha: Ukusekelwa kokuvumelanisa zonke izinhlobo zokuthunyelwe (okuthunyelwe, amakhasi, izinhlobo zokuthunyelwe ezenziwe ngokwezifiso)

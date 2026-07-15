@@ -4,7 +4,7 @@ title: Ekintza - wu_mt_migration_cancelled
 sidebar_label: wu_mt_migration_cancelled
 _i18n_hash: 315390b7190dab27f6ca16a6eff5e407
 ---
-# Ekintza: wu_mt_migration_cancelled {#action-wumtmigrationcancelled}
+# Ekintza: wu_mt_migration_cancelled
 
 Migrazio bat bertan behera uzten denean abiarazten da.
 

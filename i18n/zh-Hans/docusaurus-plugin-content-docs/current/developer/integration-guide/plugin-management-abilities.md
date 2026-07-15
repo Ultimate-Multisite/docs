@@ -3,7 +3,7 @@ title: 插件管理能力
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities {#plugin-management-abilities}
+# Plugin Management Abilities
 
 Gratis AI Agent v1.5.0 提供了 **7 个插件管理能力**，AI 助手可以在对话过程中调用这些能力。这些能力为通过 [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) 安装的 WordPress 插件提供了程序化控制。
 

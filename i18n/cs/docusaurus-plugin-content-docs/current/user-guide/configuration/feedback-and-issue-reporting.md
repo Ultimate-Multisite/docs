@@ -3,7 +3,7 @@ title: Zpětná vazba zákazníků a hlášení problémů
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Zpětná vazba a hlášení problémů zákazníků {#customer-feedback--issue-reporting}
+# Zpětná vazba a hlášení problémů zákazníků
 
 Gratis AI Agent v1.5.0 zavádí vestavěný systém pro sběr zpětné vazby a hlášení problémů, který uživatelům umožní označit neuspokojivé odpovědi a hlášit problémy přímo z chatového rozhraní. Tento systém zahrnuje správu souhlasu, automatizovaný příkaz pro hlášení a asistovanou třídění (triage) na backendu.
 

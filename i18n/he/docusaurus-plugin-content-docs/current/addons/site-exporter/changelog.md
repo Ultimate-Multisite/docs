@@ -3,7 +3,7 @@ title: יומן שינויים של מייצא האתר
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# יומן שינויים של Site Exporter {#site-exporter-changelog}
+# יומן שינויים של Site Exporter
 
 Version: 1.0.6 - שוחרר ב-2026-05-11
 * חדש: ייצוא אתר כולל כעת קובץ index.php שמפעיל את עצמו, כך שניתן להתקין את קובץ ה-ZIP על שרת חדש מבלי להתקין plugin נפרד.

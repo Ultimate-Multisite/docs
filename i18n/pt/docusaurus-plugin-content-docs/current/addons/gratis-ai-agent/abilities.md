@@ -3,7 +3,7 @@ title: Referência de capacidades
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referência de Abilities {#abilities-reference}
+# Referência de Abilities
 
 Abilities são as ações atómicas que Gratis AI Agent pode invocar na sua instalação WordPress. Cada ability é uma classe PHP registada que expõe um esquema JSON — o agente lê este esquema em tempo de execução para compreender que parâmetros são necessários e o que a ability devolve.
 

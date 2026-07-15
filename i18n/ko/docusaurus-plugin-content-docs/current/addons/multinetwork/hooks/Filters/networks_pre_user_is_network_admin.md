@@ -4,7 +4,7 @@ title: 필터 - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# 필터: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# 필터: networks_pre_user_is_network_admin
 
 사용자가 관리자인 네트워크를 필터링하여 프로세스를 단축합니다.
 

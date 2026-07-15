@@ -3,7 +3,7 @@ title: Administrare emails systematis.
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestionem Email Systematis {#managing-system-emails}
+# Gestionem Email Systematis
 
 Ultimate Multisite envía varios correos electrónicos del sistema para eventos como confirmaciones de registro, recibos de pago y cambios de membresía. Puedes personalizar estas plantillas de correo electrónico para que coincidan con tu marca.
 

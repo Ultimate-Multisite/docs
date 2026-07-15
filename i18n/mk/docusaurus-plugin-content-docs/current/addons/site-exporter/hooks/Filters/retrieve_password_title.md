@@ -4,7 +4,7 @@ title: Филтер - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Филтер: retrieve_password_title {#filter-retrievepasswordtitle}
+# Филтер: retrieve_password_title
 
 Го филтрира предметот на е-пораката за ресетирање на лозинка.
 

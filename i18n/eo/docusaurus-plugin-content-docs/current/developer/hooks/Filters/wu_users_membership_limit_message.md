@@ -4,7 +4,7 @@ title: Filtrilo - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filtro: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
+# Filtro: wu_users_membership_limit_message
 
 Permesas al programistoj ŝanĝi la mesaĝon pri la limo de uzantoj de membreco
 

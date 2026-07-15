@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 కొన్ని ప్లగిన్‌లు మ్యాపింగ్ యాక్టివ్‌గా లేనప్పుడు URL ని సేవ్ చేస్తాయి లేదా పైన చెప్పిన ఫిల్టర్‌లలో చేర్చని వేరే విధంగా URL లను నిర్మిస్తాయి.
 

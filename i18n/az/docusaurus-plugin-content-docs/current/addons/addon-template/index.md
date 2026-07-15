@@ -3,9 +3,9 @@ title: Addon Şablonu
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Şablonu {#addon-template}
+# Addon Şablonu
 
-{{ADDON_DESCRIPTION}}
+Addon Şablonu — Ultimate Multisite.
 
 ## Tələblər {#requirements}
 

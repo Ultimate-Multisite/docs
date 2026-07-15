@@ -4,7 +4,7 @@ title: ଛାଣନ୍ତୁ - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# ଫିଲ୍ଟର: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# ଫିଲ୍ଟର: wu_checkout_field_templates
 
 ନୂତନ କ୍ଷେତ୍ର ଟେମ୍ପଲେଟ୍ ଯୋଡ଼ିବାକୁ ଆମର APIs ଏଠାରେ ସଂଯୁକ୍ତ ହୁଏ।
 

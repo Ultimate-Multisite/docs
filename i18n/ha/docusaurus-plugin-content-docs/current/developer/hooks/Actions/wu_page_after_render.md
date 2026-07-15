@@ -4,7 +4,7 @@ title: Aiki - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Aiki: wu_page_after_render {#action-wupageafterrender}
+# Aiki: wu_page_after_render
 
 Ba wa masu haɓaka plugin damar ƙara ƙarin abun ciki bayan mun buga shafin
 

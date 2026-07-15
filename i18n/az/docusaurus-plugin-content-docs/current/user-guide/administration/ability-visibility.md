@@ -3,7 +3,7 @@ title: İşləmə Görünürlüyü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Qabiliyyət Görünürlüyü {#ability-visibility}
+# Qabiliyyət Görünürlüyü
 
 Superdav AI Agent v1.12.0, hansı qabiliyyətlərin hansı interfeyslərdə görünəcəyini tənzimləyən **Qabiliyyət Görünürlüyü** (Ability Visibility) kontrollerlərini təqdim edir. Bu, administratorlara hansı agent funksionallıqlarının REST API-lər, MCP serverləri, WooCommerce inteqrasiyaları və digər interfeyslər vasitəsilə mövcud olacağını dəqiqləşdirməyə imkan verir.
 

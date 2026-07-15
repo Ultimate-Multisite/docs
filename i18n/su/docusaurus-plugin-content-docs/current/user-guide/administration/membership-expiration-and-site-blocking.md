@@ -3,7 +3,7 @@ title: Kadaluwarsa Keanggotaan jeung Pemblokiran Situs
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kedaluwarsa Keanggotaan dan Pemblokiran Situs {#membership-expiration-and-site-blocking}
+# Kedaluwarsa Keanggotaan dan Pemblokiran Situs
 
 Panduan ini menjelaskan bagaimana Ultimate Multisite menangani kedaluwarsa keanggotaan, berakhirnya masa percobaan (trial), dan pemblokiran situs di bagian depan (frontend). Ini mencakup siklus hidup keanggotaan dari aktif sampai kedaluwarsa, pengaturan yang mengontrol apakah situs diblokir atau tidak, dan apa yang harus diperiksa jika situs masih bisa diakses setelah keanggotaan kedaluwarsa.
 

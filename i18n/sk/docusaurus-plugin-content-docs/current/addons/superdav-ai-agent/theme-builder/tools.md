@@ -3,7 +3,7 @@ title: Nástroje a konfigurácia
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Nástroje a konfigurácia {#tools-and-configuration}
+# Nástroje a konfigurácia
 
 Theme Builder používa súbor nástrojov na analýzu, návrh a vytvorenie vašej WordPress stránky. Vo verzii 1.16.0 je **sd-ai-agent/site-scrape teraz nástroj Tier 1**, vďaka čomu je predvolene dostupný v Theme Builder. Superdav AI Agent v1.18.0 zároveň zavádza samostatne distribuovaný Advanced sprievodný balík pre dôveryhodné vývojárske pracovné postupy; tieto nástroje nie sú súčasťou základného balíka WordPress.org a musia byť nainštalované a autorizované samostatne.
 

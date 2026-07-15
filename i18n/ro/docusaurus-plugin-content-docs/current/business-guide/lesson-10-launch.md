@@ -3,7 +3,7 @@ title: 'Lecția 10: Ziua Lansării'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lecția 10: Ziua Lansării {#lesson-10-launch-day}
+# Lecția 10: Ziua Lansării
 
 Totul este construit. Înainte de a deschide ușile, această lecție vă ghidează prin lista de verificare pre-lansare pentru a vă asigura că nu există nimic rupt, lipsă sau de rușine.
 

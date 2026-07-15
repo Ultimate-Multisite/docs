@@ -3,7 +3,7 @@ title: Domena proizvodi i cene
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeni proizvodi i cene {#domain-products-and-pricing}
+# Domeni proizvodi i cene
 
 Domeni proizvodi su način na koji kontrolišete cene, TLD-ove (top-level domen ime), privatnost WHOIS-a i izbor dobavljača. Svaki domen proizvod je standardni Ultimate Multisite proizvod sa dodatnom karticom **Domain Settings**.
 

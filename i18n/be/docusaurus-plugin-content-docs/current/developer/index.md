@@ -3,7 +3,7 @@ title: Дакументацыя для праграметнікаў
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Дакументацыя для праграмістаў {#developer-documentation}
+# Дакументацыя для праграмістаў
 
 Гэўды дапамагае праграмістам збіраць усе, што патрэбна для інтэграцыі, пашырэння або распрацоўкі аддонак для Ultimate Multisite. Ultimate Multisite пераўтварае сетку WordPress Multisite ў платформу Website-as-a-Service (WaaS).
 

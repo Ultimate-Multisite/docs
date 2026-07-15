@@ -3,7 +3,7 @@ title: ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅವಲೋಕನ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅವಲೋಕನ {#dashboard-overview}
+# ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಅವಲೋಕನ
 
 Ultimate Multisite ನಲ್ಲಿ Ultimate Multisite ಮೆನು ಅಡಿಯಲ್ಲಿ ಪ್ರತ್ಯೇಕ **Dashboard** ಇದೆ, ಮತ್ತು Network Dashboard ಗೆ ವಿಜೆಟ್‌ಗಳನ್ನು ಸಹ ಸೇರಿಸುತ್ತದೆ. ಈ ಲೇಖನದಲ್ಲಿ ಎರಡೂ ಸ್ಥಳಗಳಲ್ಲಿ ನೀವು ಏನನ್ನು ನೋಡುತ್ತೀರಿ ಎಂಬುದನ್ನು ವಿವರಿಸಲಾಗಿದೆ.
 

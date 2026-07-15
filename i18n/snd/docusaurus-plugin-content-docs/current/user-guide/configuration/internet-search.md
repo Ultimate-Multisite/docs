@@ -3,7 +3,7 @@ title: انټرنی سرچ
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# انٹرنیٹ سرچ (Internet Search) {#internet-search}
+# انٹرنیٹ سرچ (Internet Search)
 
 Gratis AI Agent v1.5.0 ۾ هڪ **انٽرنيٽ سرچ** جي صلاحيت شامل ڪئي آهي جيڪا AI اسسٽن کي گهڻي وقت جي گفتگو دوران ويب کان تازو معلومات حاصل ڪرڻ جو موقع ڏئي ٿي. هي [Brave Search API](https://brave.com/search/api/) يا [Tavily API](https://tavily.com/) سان چلائي ٿو.
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_list_footer
 sidebar_label: wp_ultimo_ptm_page_list_footer
 _i18n_hash: c8edc4bfa483f65f5e01a3f06b735f5d
 ---
-# 動作：wp_ultimo_ptm_page_list_footer {#action-wpultimoptmpagelistfooter}
+# 動作：wp_ultimo_ptm_page_list_footer
 
 允許外掛開發者在頁面底部新增腳本。
 

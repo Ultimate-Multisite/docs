@@ -3,7 +3,7 @@ title: Ultimate Multisite ١٠١
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite ١٠١ {#ultimate-multisite-101}
+# Ultimate Multisite ١٠١
 
 Ultimate Multisite پلاگینی WordPress Multisite ییه که به شما اجازه می‌ده مشتریانتون رویا WaaS یا Websites as a Service ارائه بدین. قبلش که بریم و یاد بگیریم چطور Ultimate Multisite می‌تونه به کسب‌وکار و مشتریانتون کمک کنه، باید یه سری دانش پایه‌ای هم کسب کنیم.
 

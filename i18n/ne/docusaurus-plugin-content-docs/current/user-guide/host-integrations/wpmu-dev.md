@@ -3,7 +3,7 @@ title: WPMU DEV एकीकरण
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV एकीकरण (Integration) {#wpmu-dev-integration}
+# WPMU DEV एकीकरण (Integration)
 
 ## अवलोकन (Overview) {#overview}
 WPMU DEV एक व्यापक वर्डप्रेस प्लेटफर्म हो जहाँ वर्डप्रेस साइटहरूका लागि होस्टिङ, प्लगइन र सेवाहरू उपलब्ध छन्। यो एकीकरणले Ultimate Multisite र WPMU DEV होस्टिङबीच डोमेन सिङ्क्रनाइजेसन र SSL प्रमाणपत्र व्यवस्थापनलाई स्वचालित बनाउँछ।

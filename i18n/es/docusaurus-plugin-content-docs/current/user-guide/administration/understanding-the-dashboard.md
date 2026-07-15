@@ -3,7 +3,7 @@ title: Entendiendo el Panel de Control
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Comprendiendo el Panel de Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Comprendiendo el Panel de Ultimate Multisite
 
 Antes de sumergirnos en opciones de configuración más avanzadas y los aspectos operativos de Ultimate Multisite, echemos un vistazo al panel.
 

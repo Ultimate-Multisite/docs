@@ -4,7 +4,7 @@ title: عمل - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# عمل: wu_domain_created {#action-wudomaincreated}
+# عمل: wu_domain_created
 
 تڏهن شروع ٿئي ٿو جڏهن نئين domain mapping شامل ڪئي وڃي ٿي.
 

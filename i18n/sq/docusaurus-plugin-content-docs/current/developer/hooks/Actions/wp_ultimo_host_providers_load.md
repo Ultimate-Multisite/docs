@@ -4,7 +4,7 @@ title: Veprim - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Veprimi: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Veprimi: wp_ultimo_host_providers_load
 
 Lejon zhvilluesit të shtojnë integrimet e tyre të ofruesve të host-it përmes WordPress plugins.
 

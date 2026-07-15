@@ -3,7 +3,7 @@ title: Entegrasyon Kılavuzu
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Entegrasyon Kılavuzu {#integration-guide}
+# Entegrasyon Kılavuzu
 
 Bu kılavuz, harici hizmetlere bağlanma, özel ödeme ağ geçitleri oluşturma ve webhook’ları işleme dahil olmak üzere Ultimate Multisite ile yaygın entegrasyon kalıplarını kapsar.
 

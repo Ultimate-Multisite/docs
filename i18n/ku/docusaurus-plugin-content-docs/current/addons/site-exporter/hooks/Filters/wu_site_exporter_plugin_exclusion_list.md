@@ -4,7 +4,7 @@ title: Parzûn - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Parzûn: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Parzûn: wu_site_exporter_plugin_exclusion_list
 
 Destûr dide pêşdebirên ku lîsteya pêvekan birêve bibin ku dibe ji pelê zip-a çêkirî were derxistin.
 

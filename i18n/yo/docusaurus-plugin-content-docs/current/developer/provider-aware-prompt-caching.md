@@ -3,7 +3,7 @@ title: Ìfipamọ́ ìtọ́nisọ́nà sínú cache tó mọ olupèsè
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt Caching Tó Mọ Provider {#provider-aware-prompt-caching}
+# Prompt Caching Tó Mọ Provider
 
 Superdav AI Agent v1.12.0 ṣàgbékalẹ̀ **prompt caching tó mọ provider**, èyí tó ń mú iye owó API àti latency dara sí nípa fífi prompts pamọ́ kọjá àwọn provider LLM oriṣiriṣi. Provider kọọkan ní àwọn ọ̀nà caching àti àwọn ìṣètò tó yàtọ̀.
 

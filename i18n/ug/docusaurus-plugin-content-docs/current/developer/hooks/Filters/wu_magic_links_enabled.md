@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# سۈزگۈچ: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# سۈزگۈچ: wu_magic_links_enabled
 
 سېھىرلىك ئۇلانمىلارنىڭ قوزغىتىلغان-قوزغىتىلمىغانلىقىنى سۈزۈش.
 

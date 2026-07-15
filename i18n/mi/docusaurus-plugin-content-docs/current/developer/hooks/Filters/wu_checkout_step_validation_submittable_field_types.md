@@ -4,7 +4,7 @@ title: Tātari - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Tātari: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Tātari: wu_checkout_step_validation_submittable_field_types
 
 Tukua ngā kaiwhakawhanake kia hipa i te arowhai mēnā he āhei-tuku-aunoa tētahi āpure.
 

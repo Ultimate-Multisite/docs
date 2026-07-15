@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Àlẹmọ: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Àlẹmọ: wu_get_checkout_variables
 
 Gba àwọn olùdàgbàsókè plugin láàyè láti ṣe àlẹmọ àwọn ìṣètò-tẹ́lẹ̀ ti ojúewé ìsanwó.
 

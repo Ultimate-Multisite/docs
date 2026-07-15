@@ -3,7 +3,7 @@ title: 'Somada ya 7: Kuifanya iwe yako'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Somo la 7: Kuifanya iwe Yako {#lesson-7-making-it-yours}
+# Somo la 7: Kuifanya iwe Yako
 
 Wateja wako hawawezi kuwahi kuhisi kama wanatumia "plugin yoyote ya WordPress." Wanapaswa kuhisi wanatumia FitSite — jukwaa lililojengwa kwa ajili ya sekta yao. Somo hili linazungumzia jinsi ya kuweka chapa (branding), kuifanya ionekane kama chapa yako (white-labeling), na kuifanya hii platform ionekane kama bidhaa halisi.
 

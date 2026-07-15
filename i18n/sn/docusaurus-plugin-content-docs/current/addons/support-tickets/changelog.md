@@ -3,7 +3,7 @@ title: Chinyorwa cheshanduko cheMatikiti eRutsigiro
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Nhoroondo yeShanduko dzeSupport Tickets {#support-tickets-changelog}
+# Nhoroondo yeShanduko dzeSupport Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Yakavandudzwa: Yakabvisa dhairekitori re vendor/ kubva mukuteverwa neGit (rakatofukidzwa ne .gitignore), zvichideredza saizi yerepository

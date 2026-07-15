@@ -3,7 +3,7 @@ title: Kutanga neKugadzira Zviwedzerwa
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kugadzirwa kweAddon {#addon-development}
+# Kugadzirwa kweAddon
 
 ## Chimiro cheAddon {#addon-structure}
 

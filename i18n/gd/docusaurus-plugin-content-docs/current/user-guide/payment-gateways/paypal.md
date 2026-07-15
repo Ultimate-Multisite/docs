@@ -3,7 +3,7 @@ title: A' chlàradh PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# A' Chlàradhach an Gathairt a'n PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# A' Chlàradhach an Gathairt a'n PayPal (v2)
 
 _**NOTE CRUCIAL: Tha an article seo fhaighinn air Ultimate Multisite version 2.x.**_
 

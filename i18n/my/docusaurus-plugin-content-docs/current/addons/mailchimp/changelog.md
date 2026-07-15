@@ -3,7 +3,7 @@ title: Mailchimp အပြောင်းအလဲ မှတ်တမ်း
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp ပြောင်းလဲမှုမှတ်တမ်း {#mailchimp-changelog}
+# Mailchimp ပြောင်းလဲမှုမှတ်တမ်း
 
 ဗားရှင်း- ၁.၁.၁ - ၂၀၂၅-၀၉-၂၈ တွင် ထုတ်ဝေခဲ့သည်
 

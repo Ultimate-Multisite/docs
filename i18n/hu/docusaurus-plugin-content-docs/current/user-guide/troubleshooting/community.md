@@ -3,7 +3,7 @@ title: Közösség
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Hogyan csatlakozhatsz az Ultimate Multisite közösséghez {#how-to-join-ultimate-multisite-community}
+# Hogyan csatlakozhatsz az Ultimate Multisite közösséghez
 
 Az Ultimate Multisite közösség egy olyan tér, ahol kapcsolatba léphetsz más Ultimate Multisite felhasználókkal, és megoszthattok egymással tippeket, tapasztalatokat és még sok mást. Az Ultimate Multisite közösség eléréséhez látogass el a https://community.ultimatemultisite.com/home oldalra.
 

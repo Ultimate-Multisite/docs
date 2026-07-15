@@ -4,7 +4,7 @@ title: Sìoltachan - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Criathrag: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Criathrag: mu-migration/all_posts/default_args
 
 Criathraich na h-argamaidean bunaiteach airson puist a cheasnachadh sa mhodh all_posts.
 

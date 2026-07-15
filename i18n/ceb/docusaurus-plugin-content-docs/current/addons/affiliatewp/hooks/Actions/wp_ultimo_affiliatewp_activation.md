@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Aksyon: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Aksyon: wp_ultimo_affiliatewp_activation
 
 Tugoti ang ubang mga bahin sa plugin nga ikabit ang ilang mga rutina para sa activation
 

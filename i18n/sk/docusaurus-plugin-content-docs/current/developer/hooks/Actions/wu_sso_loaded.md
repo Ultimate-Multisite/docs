@@ -4,7 +4,7 @@ title: Akcia - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Akcia: wu_sso_loaded {#action-wussoloaded}
+# Akcia: wu_sso_loaded
 
 Umožňuje vývojárom doplnkov pridať ďalšie hooky, ak je to potrebné.
 

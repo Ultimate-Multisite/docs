@@ -3,7 +3,7 @@ title: איינשטעלונגען־רעפֿערענץ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings רעפֿערענץ {#settings-reference}
+# Settings רעפֿערענץ
 
 די זײַט נאָכפֿאָלגט אײַנשטעלונגען וואָס ווירקן אויף טאָג־טעגלעכער אַדמיניסטראַציע און לעצטע ענדערונגען אין אויפֿפֿירונג אין Ultimate Multisite.
 

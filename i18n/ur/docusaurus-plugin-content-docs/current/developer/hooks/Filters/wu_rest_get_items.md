@@ -4,7 +4,7 @@ title: فلٹر - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# فلٹر: wu_rest_get_items {#filter-wurestgetitems}
+# فلٹر: wu_rest_get_items
 
 یہ فلٹر چیک کرتا ہے کہ کیا درخواست (request) کو آگے بڑھنے کی اجازت ہے یا نہیں۔
 

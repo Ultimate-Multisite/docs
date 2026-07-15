@@ -3,7 +3,7 @@ title: Medlemskapets utgång och blockering av webbplatsen
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Medlemskapets utgång och blockering av webbplats {#membership-expiration-and-site-blocking}
+# Medlemskapets utgång och blockering av webbplats
 
 Den här guiden förklarar hur Ultimate Multisite hanterar utgång av medlemskap, provperioders slut och blockering av webbplatsen på frontenden. Den täcker medlemmskapets livscykel från aktivt till utgånget, inställningarna som styr om webbplatser blockeras, och vad du ska kontrollera om webbplatser förblir åtkomliga efter att ett medlemskap har gått ut.
 

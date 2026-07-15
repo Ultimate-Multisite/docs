@@ -3,7 +3,7 @@ title: Kukonza CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Iyi nkhani limene limenewo lili nkhulupirira bwanji kuti mwezi wanu wa Ultimate Multisite CyberPanel iye yomwezi wanu wamapangidwa (mapped domains) ali ndi kukhala kwa virtual hosts m'CyberPanel, ndipo monga m'auto-SSL (auto-SSL) monga m'Let's Encrypt.
 

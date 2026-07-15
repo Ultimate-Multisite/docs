@@ -3,7 +3,7 @@ title: 'Darasi na 7: Mai da Shi Naka'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Darasi na 7: Mayar da Shi Naka {#lesson-7-making-it-yours}
+# Darasi na 7: Mayar da Shi Naka
 
 Kada abokan cinikinka su taba jin kamar suna amfani da "wani kari na WordPress." Ya kamata su ji kamar suna amfani da FitSite -- dandali da aka gina domin masana'antarsu. Wannan darasin ya ƙunshi alama, sanya alamar kamfaninka, da sa dandali ya ji kamar samfur.
 

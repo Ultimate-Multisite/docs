@@ -4,7 +4,7 @@ title: Action - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# 動作：wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# 動作：wp_ultimo_affiliatewp_activation
 
 讓插件的其他部分可以在啟動時附加它們的執行程序
 

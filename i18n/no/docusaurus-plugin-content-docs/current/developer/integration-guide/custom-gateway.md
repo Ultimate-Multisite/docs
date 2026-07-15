@@ -3,7 +3,7 @@ title: Utvikling av tilpasset betalingsgateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Utvikling av tilpasset gateway {#custom-gateway-development}
+# Utvikling av tilpasset gateway
 
 Du kan opprette tilpassede betalingsgateways ved å utvide klassen `Base_Gateway`.
 

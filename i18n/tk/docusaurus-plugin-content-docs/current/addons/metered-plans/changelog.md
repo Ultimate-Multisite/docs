@@ -3,7 +3,7 @@ title: Ölçegli meýilnamalaryň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ölçegli planlaryň üýtgeşmeler žurnaly {#metered-plans-changelog}
+# Ölçegli planlaryň üýtgeşmeler žurnaly
 
 Wersiýa 1.1.0 - 2026-05-05 senesinde çykaryldy
 - Täze: multisite aşaky saýtlary üçin AI token hasaplaşygy — müşderi saýtlary boýunça AI token ulanylyşyny sazlap bolýan her-token nyrhlary bilen yzarlaň we hasaplaşyň

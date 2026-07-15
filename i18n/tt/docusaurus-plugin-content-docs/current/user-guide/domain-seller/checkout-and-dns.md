@@ -3,7 +3,7 @@ title: Касса Учур и Клиентский DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Alanı ve Müşteri DNS Yönetimi {#checkout-field-and-customer-dns-management}
+# Checkout Alanı ve Müşteri DNS Yönetimi
 
 ## Alan Seçim Checkout alanı {#the-domain-selection-checkout-field}
 

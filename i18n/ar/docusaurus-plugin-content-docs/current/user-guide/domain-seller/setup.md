@@ -3,7 +3,7 @@ title: إعداد وتهيئة المزوّد
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: الإعداد وتكوين المزوّد {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: الإعداد وتكوين المزوّد
 
 تأتي إضافة Domain Seller بمعالج إعداد إرشادي يرشدك خلال كل خطوة مطلوبة. تغطي هذه الصفحة تدفق المعالج وكيفية تكوين المزوّدين أو إعادة تكوينهم لاحقًا.
 

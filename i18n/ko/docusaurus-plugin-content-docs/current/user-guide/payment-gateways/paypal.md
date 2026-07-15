@@ -3,7 +3,7 @@ title: PayPal 설정하기
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal 게이트웨이 설정하기 (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal 게이트웨이 설정하기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 관한 것입니다.**_
 

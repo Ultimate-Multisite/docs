@@ -3,7 +3,7 @@ title: ڈومین پروڈکٹس اور قیمتیں
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Products اور Pricing {#domain-products-and-pricing}
+# Domain Products اور Pricing
 
 Domain products وہ طریقے ہیں جن کے ذریعے آپ پرائسنگ، TLDs، WHOIS privacy، اور provider selection کو کنٹرول کرتے ہیں۔ ہر domain product ایک standard Multisite Ultimate product ہوتا ہے جس میں ایک اضافی **Domain Settings** ٹیب ہوتا ہے۔
 

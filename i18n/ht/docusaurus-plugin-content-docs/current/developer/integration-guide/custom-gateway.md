@@ -3,7 +3,7 @@ title: Devlopman Pasrèl Pèsonalize
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Devlopman Gateway Pèsonalize {#custom-gateway-development}
+# Devlopman Gateway Pèsonalize
 
 Ou ka kreye gateway peman pèsonalize lè ou pwolonje klas `Base_Gateway` la.
 

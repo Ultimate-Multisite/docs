@@ -3,7 +3,7 @@ title: Site Builder Kontakvorms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Kontakvorms {#site-builder-contact-forms}
+# Site Builder Kontakvorms
 
 Superdav AI Agent v1.10.0 voeg die vermoë by om kontakvorms direk vanaf die chat-koppelvlak te skep met die Site Builder agent. Dit laat jou toe om volkome funksionele kontakvorms by enige bladsy te voeg sonder om die chat te verlaat.
 

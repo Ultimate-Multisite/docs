@@ -3,7 +3,7 @@ title: RunCloud-integraatio
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud -Integraatio {#runcloud-integration}
+# RunCloud -Integraatio
 
 ## Yleiskatsaus {#overview}
 RunCloud on pilvipohjainen palvelinhallintalaitteisto, joka mahdollistaa verkkosovellusten helpon käyttöönoton ja hallinnan omilla pilvipalvelimillasi. Tämä integraatio mahdollistaa automaattisen domeen synkronoinnin ja SSL-sertifikaattien hallinnan Ultimate Multisiten ja RunCloud välillä.

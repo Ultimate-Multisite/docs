@@ -3,7 +3,7 @@ title: PayFast Rangitaki Panonitanga
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Rangitaki huringa PayFast {#payfast-changelog}
+# Rangitaki huringa PayFast
 
 Putanga: 1.0.2 - I tukuna i 2025-09-28
 

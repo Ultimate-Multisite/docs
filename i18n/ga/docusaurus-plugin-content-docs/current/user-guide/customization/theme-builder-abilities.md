@@ -3,7 +3,7 @@ title: Chuidiúirí an Tíme
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Aibhileacht na Teamaí: Scaffold agus Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Aibhileacht na Teamaí: Scaffold agus Activate Block Themes
 
 Taispeántacht Superdav AI Agent v1.12.0 leat curte ag duine a bheith iad do chuid fáilteach agus a chur in áit teamaí block a bhaint as an chat interface.
 

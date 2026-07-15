@@ -3,7 +3,7 @@ title: Hestia 控制面板整合
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia 控制面板整合 {#hestia-control-panel-integration}
+# Hestia 控制面板整合
 
 本指南說明如何設定 Ultimate Multisite 的 Hestia 整合功能，讓網路中對應的網域能自動在 Hestia 中新增（或移除）為 Web Domain Alias。
 

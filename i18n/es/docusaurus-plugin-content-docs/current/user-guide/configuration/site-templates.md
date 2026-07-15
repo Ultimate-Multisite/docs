@@ -3,7 +3,7 @@ title: Plantillas de sitio
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Plantillas de sitio (v2) {#site-templates-v2}
+# Plantillas de sitio (v2)
 
 _**NOTA: Este artículo se refiere a Ultimate Multisite versión 2.x. Si estás usando la versión 1.x,**_ **consulta este artículo** _**.**_
 

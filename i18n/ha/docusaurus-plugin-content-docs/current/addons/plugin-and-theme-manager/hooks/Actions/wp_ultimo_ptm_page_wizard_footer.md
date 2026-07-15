@@ -4,7 +4,7 @@ title: Aiki - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# Aiki: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# Aiki: wp_ultimo_ptm_page_wizard_footer
 
 Ba masu haɓaka kari damar ƙara scripts a ƙasan shafin
 

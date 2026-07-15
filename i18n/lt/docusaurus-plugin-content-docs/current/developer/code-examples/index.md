@@ -3,7 +3,7 @@ title: Pažangūs kodo pavyzdžiai
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Išplėstiniai kodo pavyzdžiai {#advanced-code-examples}
+# Išplėstiniai kodo pavyzdžiai
 
 Šie pavyzdžiai demonstruoja išplėstinius integracijos modelius su Ultimate Multisite.
 

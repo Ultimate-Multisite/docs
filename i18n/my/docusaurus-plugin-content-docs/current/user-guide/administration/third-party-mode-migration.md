@@ -3,7 +3,7 @@ title: တတိယအဖွဲ့အစည်းပုံစံ ရွှေ့
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Third-Party Mode ပြောင်းရွှေ့ခြင်း {#third-party-mode-migration}
+# Third-Party Mode ပြောင်းရွှေ့ခြင်း
 
 Superdav AI Agent v1.12.0 သည် third-party စွမ်းရည်များကို ကိုင်တွယ်ပုံကို ပြောင်းလဲထားပါသည်။ **Third-party mode သည် ယခုအခါ အလိုအလျောက် (auto) အဖြစ် သတ်မှတ်ထားပြီး**၊ WordPress 7.0+ တွင် manual configuration မလိုဘဲ native WordPress Abilities API integration ကို အသုံးပြုနိုင်ပြီ ဖြစ်ပါသည်။
 

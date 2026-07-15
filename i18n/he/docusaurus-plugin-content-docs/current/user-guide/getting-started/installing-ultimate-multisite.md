@@ -3,7 +3,7 @@ title: התקנת Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# התקנת Ultimate Multisite {#installing-ultimate-multisite}
+# התקנת Ultimate Multisite
 
 :::note
 מדריך זה מניח שכבר התקנת והגדרת את WordPress Multisite. כדי ללמוד כיצד לעשות זאת, עיין ב[מדריך זה](https://www.wpbeginner.com/glossary/multisite/) של WP Beginner.

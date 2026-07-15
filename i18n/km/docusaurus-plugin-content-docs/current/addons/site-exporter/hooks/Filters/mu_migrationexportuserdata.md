@@ -4,7 +4,7 @@ title: តម្រង - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# តម្រង: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# តម្រង: mu_migration/export/user/data
 
 តម្រងសំណុំលំនាំដើមនៃទិន្នន័យអ្នកប្រើប្រាស់ដែលត្រូវនាំចេញ/នាំចូល។
 

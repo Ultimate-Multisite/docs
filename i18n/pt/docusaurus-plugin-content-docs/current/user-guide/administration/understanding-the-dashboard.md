@@ -3,7 +3,7 @@ title: Entendendo o Painel
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Entendendo o Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Entendendo o Dashboard Ultimate Multisite
 
 Antes de mergulharmos em opções de configuração mais avançadas e nos aspectos operacionais do Ultimate Multisite, vamos dar uma olhada no dashboard.
 

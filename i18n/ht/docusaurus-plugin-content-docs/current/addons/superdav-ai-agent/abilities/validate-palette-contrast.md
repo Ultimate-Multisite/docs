@@ -3,7 +3,7 @@ title: Valide kontras palèt la
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valide Kontras Palèt {#validate-palette-contrast}
+# Valide Kontras Palèt
 
 Kapasite **Validate Palette Contrast** la tcheke pè koulè nan palèt konsepsyon ou pou konfòmite ak WCAG (Web Content Accessibility Guidelines) anvan li aplike yo sou theme ou.
 

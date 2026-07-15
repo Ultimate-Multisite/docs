@@ -3,7 +3,7 @@ title: د کنټرول پینل همغږي ښه کړئ
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# دایرکتوري پینل همکارۍ کي وڌاري {#enhance-control-panel-integration}
+# دایرکتوري پینل همکارۍ کي وڌاري
 
 ## مروری {#overview}
 Enhance یو عصري کنټرول پینل دی چې قوي هاستنگ خودکارسازی او مدیریت توانې ورکوي. دا همکارۍ Ultimate Multisite او Enhance Control Panel ترمنځ د د ډومینونو د خودکار سنکرونیز کولو او SSL سرتیفیکټ مدیریت لپاره اجازه ورکوي.
@@ -90,7 +90,7 @@ https://your-enhance-panel.com/api/
 
 ثابت‌های زیر را در فایل `wp-config.php` خود اضافه کنید:
 
-# همکارۍ د کنټرول پینل سره ښه کول (Enhance Control Panel Integration) {#setup-via-integration-wizard}
+# همکارۍ د کنټرول پینل سره ښه کول (Enhance Control Panel Integration)
 
 ```php
 // Enhance Control Panel Integration

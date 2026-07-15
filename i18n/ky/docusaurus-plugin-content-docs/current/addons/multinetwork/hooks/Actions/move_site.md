@@ -4,7 +4,7 @@ title: Аракет - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Аракет: move_site {#action-movesite}
+# Аракет: move_site
 
 Сайт жаңы тармакка көчүрүлгөндөн кийин иштейт.
 

@@ -3,7 +3,7 @@ title: Axentes integrados
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Axentes integrados {#built-in-agents}
+# Axentes integrados
 
 Gratis AI Agent v1.9.0 inclúe cinco axentes integrados, cada un preconfigurado cun conxunto específico de ferramentas, un prompt de sistema adaptado e suxestións iniciais axustadas ás tarefas habituais nesa área. Cambiar entre axentes modifica o que o asistente pode facer e como responde, sen ningunha configuración pola túa parte. Superdav AI Agent v1.18.0 pode engadir ferramentas sensibles á programación, rexistros de recordatorios, portas de aprobación e notificacións por SMS a estes fluxos de traballo cando as integracións relacionadas están configuradas.
 

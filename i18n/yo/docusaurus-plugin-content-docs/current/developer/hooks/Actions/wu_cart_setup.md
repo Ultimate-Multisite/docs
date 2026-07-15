@@ -4,7 +4,7 @@ title: Ìṣe - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Ìṣe: wu_cart_setup {#action-wucartsetup}
+# Ìṣe: wu_cart_setup
 
 Jẹ́ kí àwọn olùdàgbàsókè ṣe àwọn àtúnṣe àfikún sí ohun ìsanwó-jáde náà.
 

@@ -3,7 +3,7 @@ title: Kachaj prompt ki konsyan de founisè a
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Kach Prompt ki Konsyan de Provider {#provider-aware-prompt-caching}
+# Kach Prompt ki Konsyan de Provider
 
 Superdav AI Agent v1.12.0 prezante **kach prompt ki konsyan de provider**, ki optimize depans API ak latans lè li mete prompt yo an kach atravè diferan provider LLM. Chak provider gen mekanis ak konfigirasyon kach diferan.
 

@@ -3,7 +3,7 @@ title: 수동 결제 설정
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Payments 설정하기 (v2) {#setting-up-manual-payments-v2}
+# Manual Payments 설정하기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 해당합니다.**_
 

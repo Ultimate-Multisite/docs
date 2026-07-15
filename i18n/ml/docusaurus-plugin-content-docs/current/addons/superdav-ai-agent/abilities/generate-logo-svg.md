@@ -3,7 +3,7 @@ title: ലോഗോ SVG സൃഷ്ടിക്കുക
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# ലോഗോ SVG സൃഷ്ടിക്കൽ {#generate-logo-svg}
+# ലോഗോ SVG സൃഷ്ടിക്കൽ
 
 **Generate Logo SVG** എന്ന കഴിവ് (ability) ഉപയോഗിച്ച്, Theme Builder വഴി കസ്റ്റം ലോഗോ SVG-കൾ നിങ്ങളുടെ WordPress സൈറ്റിൽ നേരിട്ട് സൃഷ്ടിക്കാനും ഉൾപ്പെടുത്താനും സാധിക്കും. ഇതിനൊപ്പം ഓട്ടോമാറ്റിക് namespace-safe sanitisation-ഉം ലഭിക്കുന്നു.
 

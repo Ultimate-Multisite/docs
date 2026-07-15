@@ -3,7 +3,7 @@ title: Supporttickets changelog
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Supporttickets-changelog {#support-tickets-changelog}
+# Supporttickets-changelog
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Verbeterd: vendor/-directory verwijderd uit Git-tracking (al gedekt door .gitignore), waardoor de repositorygrootte is verminderd

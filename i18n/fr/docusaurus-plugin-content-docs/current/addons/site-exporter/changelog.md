@@ -3,7 +3,7 @@ title: Journal des modifications de l’exportateur de site
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Journal des modifications de Site Exporter {#site-exporter-changelog}
+# Journal des modifications de Site Exporter
 
 Version : 1.0.6 - Publiée le 2026-05-11
 * Nouveau : Les exportations de site incluent désormais un index.php auto-amorçable afin que le ZIP puisse être installé sur un nouvel hébergeur sans installation séparée de plugin

@@ -3,7 +3,7 @@ title: Záznam zmien Predajcu domén
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Záznam zmien Domain Seller {#domain-seller-changelog}
+# Záznam zmien Domain Seller
 
 Verzia 1.3.0 - Vydané 2026-06-02
 - Nové: Pridané upozornenie pre network-admin, keď je zostatok predajcu HostAfrica príliš nízky

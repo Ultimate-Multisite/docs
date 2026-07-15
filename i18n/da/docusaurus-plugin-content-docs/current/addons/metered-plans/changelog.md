@@ -3,7 +3,7 @@ title: Ændringslog for forbrugsafregnede planer
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Changelog {#metered-plans-changelog}
+# Metered Plans Changelog
 
 Version 1.1.0 - Udgivet den 2026-05-05
 - Nyt: AI-tokenfakturering for multisite-undersider — spor og fakturér AI-tokenforbrug på tværs af kunders sites med konfigurerbare satser pr. token

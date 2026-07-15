@@ -3,7 +3,7 @@ title: Urugero rwa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Gutang Ultimate Multisite na Zapier {#integrating-ultimate-multisite-with-zapier}
+# Gutang Ultimate Multisite na Zapier
 
 Mu gihe mu ndaga kuri article runaka, twabwiye ku [Webhooks](webhooks.md) kandi uko bisobanura uburyo bwo gukoresha uburyo bwa webhooks kugira ngo utangire ubushobozi n'ibindi by'umuryango (3rd party applications).
 

@@ -3,7 +3,7 @@ title: Aratohu Whakamahi Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Aratohu Whakamahi Hooks {#hooks-usage-guide}
+# Aratohu Whakamahi Hooks
 
 E whakarato ana a Ultimate Multisite i te 200+ action hooks me te 280+ filter hooks. Ka kapi i tēnei whārangi ngā hook e whakamahia nuitia ana, me ngā tauira whaihua. Mō tētahi tohutoro katoa kua hanga-aunoa, tirohia ērā atu whārangi i tēnei wāhanga.
 

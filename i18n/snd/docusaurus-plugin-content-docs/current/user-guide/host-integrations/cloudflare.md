@@ -3,7 +3,7 @@ title: کلاڊفليئر انٽيغريشن
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## جائزہ (Overview) {#overview}
 Cloudflare هڪ وڏي ڪنٽينٽ ڊليوري نيو ورڪڪ (CDN) ۽ سيڪيورٽي فراهم ڪرڻ وارو هيٺ ڏنل آهي جيڪو ويب سائيٽ کي بچائڻ ۽ گهرجي رفتار ڏيڻ ۾ مدد ڪري ٿو. هي ان انٽيغريشن جو مطلب آهي ته Ultimate Multisite ۽ Cloudflare جي وچ ۾ خودکار ڊومين مانيجمنٽ (domain management) ڪئي ويندي، خاص طور تي سوبڊومين ملٽي سائيٽن جي تنصيب لاءِ.

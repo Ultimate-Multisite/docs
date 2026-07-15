@@ -3,7 +3,7 @@ title: Àwọn àjákù Kóòdù
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Àwọn Àpẹẹrẹ Kóòdù fún v2 {#code-snippets-for-v2}
+# Àwọn Àpẹẹrẹ Kóòdù fún v2
 
 Ní pàtàkì, àwọn àpẹẹrẹ kóòdù fún **WordPress** ni a máa ń lò láti ṣe àwọn ìṣe kan tí ó lè máa béèrè plugin kékeré pàtó bí kò bá rí bẹ́ẹ̀. Irú àwọn àpẹẹrẹ kóòdù bẹ́ẹ̀ ni a máa ń fi sí ọ̀kan lára àwọn fáìlì core WordPress tàbí fáìlì theme (ní gbogbogbòò fáìlì functions.php ti theme rẹ) tàbí a lè lò wọ́n gẹ́gẹ́ bí MU plugin.
 

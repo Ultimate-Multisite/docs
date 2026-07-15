@@ -3,7 +3,7 @@ title: Integrasi Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ngintegrasikan Ultimate Multisite dengan Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ngintegrasikan Ultimate Multisite dengan Zapier
 
 Dalam salah satu artikel, kita sudah bahas tentang [Webhooks](webhooks.md) dan gimana cara menggunakannya buat nyambungin sama aplikasi pihak ketiga.
 

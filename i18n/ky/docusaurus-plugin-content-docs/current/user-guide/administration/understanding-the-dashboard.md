@@ -3,7 +3,7 @@ title: Дашборду түшүнүү
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Панелинин Бараарын Түшүнүү {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Панелинин Бараарын Түшүнүү
 
 Ultimate Multisite-тын дагы терең конфигурация опцияларына жана операциялык аспекттерине батып кирүүгө чейин, биз панелди карап көрөлү.
 

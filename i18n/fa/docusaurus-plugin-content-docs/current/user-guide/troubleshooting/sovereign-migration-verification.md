@@ -3,7 +3,7 @@ title: تأیید مهاجرت حاکمیتی
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# تأیید مهاجرت حاکمیتی (Sovereign Migration Verification) {#sovereign-migration-verification}
+# تأیید مهاجرت حاکمیتی (Sovereign Migration Verification)
 
 Ultimate Multisite نسخه 1.2.0 شامل دستورات تأیید WP-CLI برای مهاجرات مستأجران حاکمیتی است. از این دستورات زمانی استفاده کنید که یک مهاجرت مستأجر، بازدید SSO یا نصب ایزوله به درستی کار نکند.
 

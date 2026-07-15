@@ -4,7 +4,7 @@ title: 過濾器 - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# 過濾器：wu_captcha_providers {#filter-wucaptchaproviders}
+# 過濾器：wu_captcha_providers
 
 用來過濾可用的驗證碼提供者。
 

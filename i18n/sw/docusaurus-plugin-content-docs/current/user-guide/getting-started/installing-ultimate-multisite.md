@@ -3,7 +3,7 @@ title: Kusakinisha Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kusakinisha Ultimate Multisite {#installing-ultimate-multisite}
+# Kusakinisha Ultimate Multisite
 
 :::note
 Mwongozo huu unadhani tayari umesakinisha na kusanidi WordPress Multisite. Ili kujifunza jinsi ya kufanya hivyo, angalia [mwongozo huu](https://www.wpbeginner.com/glossary/multisite/) kutoka WP Beginner.

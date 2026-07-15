@@ -4,7 +4,7 @@ title: Ago - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Ago: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Ago: wp_ultimo_ptm_page_wizard_after_title
 
 Permesas al plugin-programistoj aldoni aldonajn butonojn al listaj paĝoj
 

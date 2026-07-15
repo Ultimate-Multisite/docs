@@ -3,7 +3,7 @@ title: Opinie klientów i zgłaszanie problemów
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Informacja zwrotna i zgłaszanie problemów {#customer-feedback--issue-reporting}
+# Informacja zwrotna i zgłaszanie problemów
 
 Gratis AI Agent v1.5.0 wprowadza wbudowany system zbierania informacji zwrotnych i zgłaszania problemów, który pozwala użytkownikom końcowym oznaczać nieprzydatne odpowiedzi oraz zgłaszać problemy bezpośrednio z interfejsu czatu. System ten obejmuje zarządzanie zgodą, automatyczne polecenie zgłoszenia oraz wstępną kategoryzację (triage) wspomaganą przez AI na backendzie.
 

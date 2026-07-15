@@ -4,7 +4,7 @@ title: Filtru - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtru: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtru: wu_plan_product_types
 
 Iffiltra t-tipi ta' prodotti li għandhom jiġu ttrattati bħala pjanijiet.
 

@@ -3,7 +3,7 @@ title: ინტერნეტ ძებნა
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# ინტერნეტით ძებნა (Internet Search) {#internet-search}
+# ინტერნეტით ძებნა (Internet Search)
 
 Gratis AI Agent v1.5.0-ს ახლავს **ინტერნეტის ძებნის** შესაძლებლობა, რომელიც ხელოვნურ ინტელექტს საშუალებას აძლევს საუბრის განმავლობაში ვებგვერდებიდან უახლეს ინფორმაციას მოიპოვოს. ეს ფუნქცია მუშაობს [Brave Search API]-ზე (https://brave.com/search/api/) ან [Tavily API]-ზე (https://tavily.com/).
 

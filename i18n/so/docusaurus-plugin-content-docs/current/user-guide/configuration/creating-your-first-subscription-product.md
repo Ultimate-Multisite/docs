@@ -3,7 +3,7 @@ title: Abuurista Qorshahaaga Subscription-ka Koowaad
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Abuuristaaga Koowaad ee Subscription-kaaga (v2) {#creating-your-first-subscription-product-v2}
+# Abuuristaaga Koowaad ee Subscription-kaaga (v2)
 
 _**Fadlan ogeysiis muhiim ah: Maqaalkan wuxuu u jeedaa isticmaalayaasha Ultimate Multisite nooca 2.x. Haddii aad isticmaalayso nooca 1.x,**_ **__oo eeg maqaalkan kale**_ .
 

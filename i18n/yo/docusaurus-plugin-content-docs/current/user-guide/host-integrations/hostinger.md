@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Ìṣepọ̀ Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Ìṣepọ̀ Hostinger (hPanel)
 
 ## Àkótán {#overview}
 

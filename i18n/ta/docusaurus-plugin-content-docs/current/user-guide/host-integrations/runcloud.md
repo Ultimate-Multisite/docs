@@ -3,7 +3,7 @@ title: RunCloud ஒருங்கிணைப்பு
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud ஒருங்கிணைப்பு {#runcloud-integration}
+# RunCloud ஒருங்கிணைப்பு
 
 ## கண்ணோட்டம் {#overview}
 RunCloud என்பது cloud அடிப்படையிலான server மேலாண்மை தளமாகும், இது உங்கள் சொந்த cloud servers-ல் web applications-ஐ எளிதாக deploy செய்து நிர்வகிக்க உதவுகிறது. இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் RunCloud இடையே தானியங்கி domain syncing மற்றும் SSL certificate மேலாண்மையை செயல்படுத்துகிறது.

@@ -3,7 +3,7 @@ title: Stripe se pealt
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Vebliuti (v2) konfiguratsioonide seadistamine {#setting-up-the-stripe-gateway-v2}
+# Stripe Vebliuti (v2) konfiguratsioonide seadistamine
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 

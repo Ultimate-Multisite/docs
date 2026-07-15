@@ -4,7 +4,7 @@ title: Действие - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 Позволява на разработчиците на плагини да изпълнят допълнителна логика, когато страниците бъдат регистрирани.
 

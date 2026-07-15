@@ -4,7 +4,7 @@ title: Dejanje - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Dejanje: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Dejanje: wu_captcha_before_field
 
 Sproži se, preden je polje captcha izrisano.
 

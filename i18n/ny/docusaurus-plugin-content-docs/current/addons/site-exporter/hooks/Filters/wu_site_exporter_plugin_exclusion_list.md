@@ -4,7 +4,7 @@ title: Fyuluta - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Fyuluta: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Fyuluta: wu_site_exporter_plugin_exclusion_list
 
 Imalola opanga kusamalira mndandanda wa mapulagini omwe mwina angachotsedwe mu fayilo ya zip yomwe yapangidwa.
 

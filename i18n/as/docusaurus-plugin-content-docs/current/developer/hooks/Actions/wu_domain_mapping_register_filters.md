@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 কিছুমান প্লাগইন এনেদৰে ইউৰেল সেভ কৰিব পাৰে যে ম্যাপিং (mapping) актив হোৱাৰ আগতে কৰা হৈছিল, অথবা তেওঁলোকে ইউৰেল ভিন্ন উপায়েৰে নিৰ্মাণ কৰিব পাৰে, যিটো ওপৰত দিয়া ফিল্টাৰসমূহত অন্তৰ্ভুক্ত নহয়।
 

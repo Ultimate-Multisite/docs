@@ -3,7 +3,7 @@ title: Gestionar emails del sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestionar els emails del sistema {#managing-system-emails}
+# Gestionar els emails del sistema
 
 Ultimate Multisite envia diversos emails del sistema per esdeveniments com la confirmació d'inscripció, les recepcions de pagament i els canvis de membres. Pots personalitzar aquests templates d'emails per que esdevenin coherents amb la teva marca.
 

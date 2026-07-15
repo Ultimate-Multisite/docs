@@ -3,7 +3,7 @@ title: 'Isomo rya 6: Uko kwiyandikisha bigenda'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Isomo rya 6: Uburambe bwo Kwiyandikisha {#lesson-6-the-signup-experience}
+# Isomo rya 6: Uburambe bwo Kwiyandikisha
 
 Inzira yo kwishyura ni ho inyungu ihinduka amafaranga yinjira. Uburyo bwo kwiyandikisha buteye urujijo cyangwa busanzwe cyane butuma utakaza abakiriya. Inzira yihariye ku cyiciro runaka, ivuga ururimi rwabo kandi yumvikana nk’iyoroshye, irabahindura abakiriya bishyura.
 

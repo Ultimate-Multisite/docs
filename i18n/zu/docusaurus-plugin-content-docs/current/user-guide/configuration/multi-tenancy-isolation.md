@@ -3,7 +3,7 @@ title: Ukuhlukaniswa kokuqashisa kwabaningi
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ukuhlukaniswa kwe-Multi-Tenancy {#multi-tenancy-isolation}
+# Ukuhlukaniswa kwe-Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 isekela ukuhlukaniswa kwe-database ne-filesystem nge-subsite ngayinye kumatenanti azimele. Lokhu kugcina idatha yethenanti ihlukene kuyilapho kugcinwa ukuhlinzekwa, ukukhokhisa, nokuphatha ezingeni lenethiwekhi.
 

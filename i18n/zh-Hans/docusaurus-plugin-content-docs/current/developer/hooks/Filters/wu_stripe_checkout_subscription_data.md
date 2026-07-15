@@ -4,7 +4,7 @@ title: 过滤器 - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 过滤 Stripe 订阅数据。可以覆盖 success_url 或 cancel_url。
 

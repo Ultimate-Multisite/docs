@@ -3,7 +3,7 @@ title: Maareynta Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Maareynta Webhook {#webhook-handling}
+# Maareynta Webhook
 
 Abuur baro webhook oo gaar ah si aad dhacdooyin uga hesho adeegyo dibadeed oo aad xogta ula waafajiso Ultimate Multisite.
 

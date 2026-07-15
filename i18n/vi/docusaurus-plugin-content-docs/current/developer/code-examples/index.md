@@ -3,7 +3,7 @@ title: Các Ví Dụ Mã Nâng Cao
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ví dụ Mã Nâng Cao {#advanced-code-examples}
+# Ví dụ Mã Nâng Cao
 
 Các ví dụ này minh họa các mẫu tích hợp nâng cao với Ultimate Multisite.
 

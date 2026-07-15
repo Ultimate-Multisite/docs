@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Ukuhlanganiswa kwe-ServerPilot {#serverpilot-integration}
+# Ukuhlanganiswa kwe-ServerPilot
 
 ## Ukubuka konke {#overview}
 ServerPilot iyisevisi ye-cloud yokusingatha WordPress namanye amawebhusayithi e-PHP kumaseva aku-DigitalOcean, Amazon, Google, noma kunoma yimuphi omunye umhlinzeki weseva. Lokhu kuhlanganiswa kunika amandla ukuvumelanisa okuzenzakalelayo kwamadomain nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-ServerPilot.

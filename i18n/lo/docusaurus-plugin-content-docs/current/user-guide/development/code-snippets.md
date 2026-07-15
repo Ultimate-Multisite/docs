@@ -3,7 +3,7 @@ title: ບ່ອນຂຽນລະຫັດ
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ສຳລັບ v2 {#code-snippets-for-v2}
+# Code Snippets ສຳລັບ v2
 
 ໂດຍພື້ນຖານແລ້ວ, code snippets ສຳລັບ **WordPress** ແມ່ນໃຊ້ເພື່ອເຮັດການກະທຳບາງຢ່າງທີ່ອາດຈະຕ້ອງການ plugin ຂະໜາດນ້ອຍສະເພາະ. ມັນສາມາດໃສ່ໃນໄຟລ໌ຫຼັກຂອງ WordPress ຫຼື theme (ໂດຍປົກກະຕິແມ່ນໄຟລ໌ functions.php ຂອງ theme ຂອງທ່ານ) ຫຼື ສາມາດໃຊ້ເປັນ MU plugin ກໍໄດ້.
 

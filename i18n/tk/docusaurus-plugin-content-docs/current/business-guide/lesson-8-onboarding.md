@@ -3,7 +3,7 @@ title: '8-nji sapak: Müşderileri başlangyç ugrukdyrmak'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Sapak 8: Müşderini başlangyçdan geçirmek {#lesson-8-customer-onboarding}
+# Sapak 8: Müşderini başlangyçdan geçirmek
 
 Müşderini hasaba ýazylmaga getirmek işiň diňe ýarysy. Eger olar girip, özüni aljyraňňy duýup, hiç haçan gaýdyp gelmese, siz olary ýitirdiňiz. Bu sapak täze hasaba ýazylany işjeň we gyzyklanýan müşderä öwürýän tejribäni dizaýn edýär.
 

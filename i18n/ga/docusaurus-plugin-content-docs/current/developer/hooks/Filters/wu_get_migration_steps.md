@@ -4,7 +4,7 @@ title: Scagaire - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Scagaire: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Scagaire: wu_get_migration_steps
 
 Lig d’fhorbróirí agus do bhreiseáin céimeanna imirce nua a chur leis
 

@@ -4,7 +4,7 @@ title: Фильтр - wp_ultimo_redirect_url_after_signup
 sidebar_label: wp_ultimo_redirect_url_after_signup
 _i18n_hash: d2a07f6531164addf017a8b58bb860a1
 ---
-# Фильтр: wp_ultimo_redirect_url_after_signup {#filter-wpultimoredirecturlaftersignup}
+# Фильтр: wp_ultimo_redirect_url_after_signup
 
 Юнәлтү URL-ен билгеләгез.
 

@@ -3,7 +3,7 @@ title: Pénztár űrlapok
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fizetési űrlapok {#checkout-forms}
+# Fizetési űrlapok
 
 A fizetési űrlapok egyszerű és rugalmas módot kínálnak arra, hogy különböző megközelítésekkel kísérletezz, amikor új ügyfeleket próbálsz konvertálni.
 

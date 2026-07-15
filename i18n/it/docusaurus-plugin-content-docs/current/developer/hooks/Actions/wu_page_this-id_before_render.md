@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Azione: wu_page_${this->id}_before_render {#action-wupagethis-idbeforerender}
+# Azione: wu_page_${this->id}_before_render
 
 Consenti agli sviluppatori di plugin di aggiungere contenuti aggiuntivi prima di stampare la pagina.
 

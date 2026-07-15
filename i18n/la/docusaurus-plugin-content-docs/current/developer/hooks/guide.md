@@ -3,7 +3,7 @@ title: Ductorium Usus Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Dux Usus Hooks {#hooks-usage-guide}
+# Dux Usus Hooks
 
 Ultimate Multisite praebet plus quam 200 action hooks et plus quam 280 filter hooks. Haec pagina tractat hooks frequentissime adhibitos cum exemplis practicis. Ad completam relationem automatice generatam, alias paginas in hac sectione perlege.
 

@@ -3,7 +3,7 @@ title: Kukonza RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## Kufunso (Overview) {#overview}
 RunCloud ndi platform yomwe imapulogera pa cloud yomwe imaphatikiza kuti mupulogera ndi kupanga ndi kuwunika web applications pa server zanu za cloud. Izi imaphatikiza kupangira domain kwa m'maka (automatic domain syncing) ndi upatanirano wa SSL certificate pakati pa Ultimate Multisite ndi RunCloud.

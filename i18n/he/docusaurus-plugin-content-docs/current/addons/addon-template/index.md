@@ -3,9 +3,9 @@ title: תבנית תוסף
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# תבנית Addon {#addon-template}
+# תבנית Addon
 
-{{ADDON_DESCRIPTION}}
+תבנית תוסף — Ultimate Multisite.
 
 ## דרישות {#requirements}
 

@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints өөрчлөлтийн тэмдэглэл {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector for Compatible Endpoints өөрчлөлтийн тэмдэглэл
 
 ## Хувилбар 2.0.0 — 2026-04-24-нд гарсан {#version-200--released-on-2026-04-24}
 

@@ -4,7 +4,7 @@ title: フィルタ - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# フィルタ: wu_current_set_site {#filter-wucurrentsetsite}
+# フィルタ: wu_current_set_site
 
 開発者がデフォルトの動作を変更し、現在のサイトを別の方法で設定できるようにします。
 

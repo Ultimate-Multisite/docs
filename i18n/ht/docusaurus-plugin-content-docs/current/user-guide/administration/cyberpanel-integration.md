@@ -3,7 +3,7 @@ title: Entegrasyon CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Entegrasyon CyberPanel {#cyberpanel-integration}
+# Entegrasyon CyberPanel
 
 Ki gidans sa ki jan pou configure entegrasyon Ultimate Multisite CyberPanel ou pou domèn ki mapé nan rezo ou yo otomatikman ajoute (e retire) kòm virtual host nan CyberPanel, ak opsyon pou bay auto-SSL atravè Let's Encrypt.
 

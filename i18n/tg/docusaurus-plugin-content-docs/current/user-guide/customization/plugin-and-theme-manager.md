@@ -3,7 +3,7 @@ title: Менеҷма ва Темаи Намуна
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# Дираи плагин ва тема {#plugin-and-theme-manager}
+# Дираи плагин ва тема
 
 Ин хусуси аз ҷониби аддон **Плагин ва Тема Менежер (Plugin & Theme Manager)** пешниҳод мешавад.
 

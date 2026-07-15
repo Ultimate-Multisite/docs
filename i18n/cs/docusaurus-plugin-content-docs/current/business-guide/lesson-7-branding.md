@@ -3,7 +3,7 @@ title: 'Lekce 7: Jak to udělat svým'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekce 7: Jak to udělat svým {#lesson-7-making-it-yours}
+# Lekce 7: Jak to udělat svým
 
 Vaši zákazníci by nikdy neměli pocit, že používají „jakýkoli WordPress plugin“. Měli by pocit, že používají FitSite – platformu navrženou pro jejich obor. Tato lekce pokrývá značkování, white-labeling a to, jak udělat z platformy pocit skutečného produktu.
 

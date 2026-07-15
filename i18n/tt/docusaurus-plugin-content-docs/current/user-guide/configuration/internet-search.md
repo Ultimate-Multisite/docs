@@ -3,7 +3,7 @@ title: Интернет-поиск
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Интернет Поиск {#internet-search}
+# Интернет Поиск
 
 Gratis AI Agent v1.5.0 добавляет возможность **Интернет Поиска**, которая позволяет ИИ-помощнику получать самую свежую информацию из сети во время разговора. Это работает на основе [Brave Search API](https://brave.com/search/api/) или [Tavily API](https://tavily.com/).
 

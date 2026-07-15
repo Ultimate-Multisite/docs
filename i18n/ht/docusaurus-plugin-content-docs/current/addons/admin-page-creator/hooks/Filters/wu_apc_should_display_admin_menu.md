@@ -4,7 +4,7 @@ title: Filtè - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filtè: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filtè: wu_apc_should_display_admin_menu
 
 Pèmèt administratè yo kache paj meni admin yo, si yo fini pwosesis pèsonalizasyon an.
 

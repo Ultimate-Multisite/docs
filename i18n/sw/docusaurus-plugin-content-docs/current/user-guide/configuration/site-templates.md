@@ -3,7 +3,7 @@ title: Violezo vya Tovuti
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Violezo vya Tovuti (v2) {#site-templates-v2}
+# Violezo vya Tovuti (v2)
 
 _**KUMBUKA: Makala hii inahusu Ultimate Multisite toleo la 2.x. Ikiwa unatumia toleo la 1.x,**_ **tazama makala hii** _**.**_
 

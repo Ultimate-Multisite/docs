@@ -3,7 +3,7 @@ title: সামূহিক
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community ত কেনেকৈ যোগ দিব {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Community ত কেনেকৈ যোগ দিব
 
 Ultimate Multisite Community হৈছে এনে এটা ঠাই য'ত আপুনি আন Ultimate Multisite ব্যৱহাৰকাৰীসকলৰ সৈতে যোগাযোগ কৰিব পাৰে আৰু টিপছ, অভিজ্ঞতা আদি ভাগ কৰি ল'ব পাৰে। Ultimate Multisite Community লৈ যাবলৈ এই লিংকটো ব্যৱহাৰ কৰক: https://community.ultimatemultisite.com/home।
 

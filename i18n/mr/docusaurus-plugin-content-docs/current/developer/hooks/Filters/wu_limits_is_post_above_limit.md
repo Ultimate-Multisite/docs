@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 दिलेला पोस्ट प्रकार (post type) या प्लॅनवर (plan) वापरण्यास परवानगी आहे की नाही हे तपासते. प्लगइन डेव्हलपर्सना (plugin developers) या फंक्शनच्या रिटर्न व्हॅल्यूवर (return value) फिल्टर करण्याची परवानगी देते.
 

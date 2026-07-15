@@ -3,7 +3,7 @@ title: Kijan pou jwenn èd
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kijan pou jwenn èdiksyon {#how-to-get-help}
+# Kijan pou jwenn èdiksyon
 
 Ou gen kle lisans ou ki valide, epi li bay aksè nan ekip nou an pou ede w rezoud pwoblèm ou ka rankontre pandan tan ou ap configure Ultimate Multisite la.
 

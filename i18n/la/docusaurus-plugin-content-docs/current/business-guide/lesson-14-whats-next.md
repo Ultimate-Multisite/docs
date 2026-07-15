@@ -3,7 +3,7 @@ title: 'Lectio 14: Quid deinde sequitur'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lectio 14: Quid Deinde Sequatur {#lesson-14-what-comes-next}
+# Lectio 14: Quid Deinde Sequatur
 
 Suggestum situs interretialis angusti mercatus a nihilo aedificavisti. FitSite iam vivit, studiis exercitationis corporis inservit, et reditum recurrentem generat. Haec ultima lectio spectat quo hinc eundum sit.
 

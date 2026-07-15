@@ -3,7 +3,7 @@ title: Валідацыя кантрасту палітра
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Праверка кантрасту палітра (Validate Palette Contrast) {#validate-palette-contrast}
+# Праверка кантрасту палітра (Validate Palette Contrast)
 
 Функцыя **Паверка кантрасту палітра** праверяе пары колераў у вашай палітрай дызайну на адпаведнасць паказальнікам даступнасці веба-кантэнту WCAG (Web Content Accessibility Guidelines) да яго прымянення ў тэме.
 

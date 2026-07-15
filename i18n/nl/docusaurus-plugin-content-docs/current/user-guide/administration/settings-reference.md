@@ -3,7 +3,7 @@ title: Referentie voor instellingen
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Instellingenreferentie {#settings-reference}
+# Instellingenreferentie
 
 Deze pagina houdt instellingen bij die van invloed zijn op dagelijkse administratie en recente gedragswijzigingen in Ultimate Multisite.
 

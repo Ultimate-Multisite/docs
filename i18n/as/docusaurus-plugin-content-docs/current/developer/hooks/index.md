@@ -3,7 +3,7 @@ title: হুকসমূহৰ তথ্যসূত্ৰ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks সন্দৰ্ভ {#hooks-reference}
+# Hooks সন্দৰ্ভ
 
 Ultimate Multisite-ৰ সকলো **59টা actions** আৰু **118টা filters**-ৰ বাবে স্বয়ংক্ৰিয়ভাৱে সৃষ্টি কৰা নথিপত্ৰ।
 

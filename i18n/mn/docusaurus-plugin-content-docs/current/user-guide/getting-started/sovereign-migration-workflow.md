@@ -3,7 +3,7 @@ title: Байгалийн шилжилт үйлдвэрлэх аргачлал
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Өөрийн шиг шилжих ажлын урсгал {#sovereign-migration-workflow}
+# Өөрийн шиг шилжих ажлын урсгал
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 нь ердийн дэдсайт-ыг өөрийн төрийн (sovereign) багцын дэдсайт руу шилжүүлэх үед шалгах цэгүүдийг нэмсэн.
 

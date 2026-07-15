@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 5: Ịchepụta atụmatụ gị'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ihe Ọmụmụ 5: Ịmepụta Atụmatụ Gị {#lesson-5-designing-your-plans}
+# Ihe Ọmụmụ 5: Ịmepụta Atụmatụ Gị
 
 Ọkwa atụmatụ gị abụghị naanị ọkwa ọnụahịa -- ha bụ ngosipụta nke otú ndị ahịa niche gị si arụ ọrụ n'ezie. N'ime ihe ọmụmụ a, ị ga-emepụta ọkwa ngwaahịa kwekọrọ na mkpa eziokwu nke azụmahịa mmega ahụ n'ọkwa dị iche iche.
 

@@ -4,7 +4,7 @@ title: مرشح - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# المرشح: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# المرشح: wu_bypass_unset_current_user
 
 السماح للمطورين بتجاوز كود إلغاء تعيين المستخدم الحالي.
 

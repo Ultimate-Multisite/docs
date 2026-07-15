@@ -3,7 +3,7 @@ title: WPMU DEV אינטעגראַציע
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV אינטעגראַציע {#wpmu-dev-integration}
+# WPMU DEV אינטעגראַציע
 
 ## איבערבליק {#overview}
 WPMU DEV איז אַ פולשטענדיקע WordPress פּלאַטפאָרמע וואָס אָפפערט האָסטינג, plugins, און באַדינונגען פֿאַר WordPress וועבזײַטן. די אינטעגראַציע ערמעגלעכט אויטאָמאַטישע דאָמיין־סינכראָניזאַציע און SSL סערטיפיקאַט־פֿאַרוואַלטונג צווישן Ultimate Multisite און WPMU DEV האָסטינג.

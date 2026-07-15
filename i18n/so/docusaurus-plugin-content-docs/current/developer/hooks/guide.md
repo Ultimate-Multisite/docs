@@ -3,7 +3,7 @@ title: Hagaha Isticmaalka Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hagaha Isticmaalka Hooks {#hooks-usage-guide}
+# Hagaha Isticmaalka Hooks
 
 Ultimate Multisite wuxuu bixiyaa 200+ action hooks iyo 280+ filter hooks. Boggan wuxuu daboolayaa hooks-ka inta badan la isticmaalo oo wata tusaalooyin wax ku ool ah. Tixraac dhammaystiran oo si otomaatig ah loo abuuray, ka dhex baadh bogagga kale ee qaybtan.
 

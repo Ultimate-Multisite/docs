@@ -3,7 +3,7 @@ title: Ihuzwa ry’imikode myinshi
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Ihuzwa rya Multi-Tenancy {#multi-tenancy-integration}
+# Ihuzwa rya Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ihindura ahantu henshi ho guhuriza ibikorwa ku bakodesha bigenga, igenzura ryimurwa, n’iyikora ry’ubuzima bw’umukodesha.
 

@@ -3,7 +3,7 @@ title: Sayt ko'rsatmalari ko'nikmasi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sayt Spesifikatsiyasi Ko'nikmasi {#site-specification-skill}
+# Sayt Spesifikatsiyasi Ko'nikmasi
 
 **Sayt Spesifikatsiyasi ko'nikmasi** — bu saytingizning maqsadlarini, auditoriyasini va brend identifikatsiyasini aniqlash uchun tuzilgan yondashuvdir. Bu ma'lumotlar sizning **site_brief** xotirangizda saqlanadi; agentlar har bir sessiyada doimiy, kontekstli yordam berish uchun shu yerga murojaat qiladilar.
 

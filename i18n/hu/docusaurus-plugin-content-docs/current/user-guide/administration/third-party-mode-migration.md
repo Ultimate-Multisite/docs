@@ -3,7 +3,7 @@ title: Háttérrendszeri mód migráció
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Harmónikus (Third-Party) Mód Migrációja {#third-party-mode-migration}
+# Harmónikus (Third-Party) Mód Migrációja
 
 A Superdav AI Agent v1.12.0 frissítése megváltoztatja, hogyan kezeljük a harmónikus (third-party) képességeket. **A harmónikus mód alapértelmezett értéke most az "auto"**, így a WordPress 7.0+ verziókon natív WordPress Abilities API integrációt biztosít kézi konfiguráció nélkül.
 

@@ -3,7 +3,7 @@ title: Bati yon biznis sit entènèt nich
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bati yon biznis sit entènèt pou yon nich ak Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Bati yon biznis sit entènèt pou yon nich ak Ultimate Multisite
 
 Pifò moun ki eseye vann sit entènèt fè konpetisyon sou pri kont Wix, Squarespace, ak plizyè milye travayè endepandan. Yo pèdi. Moun ki genyen yo chwazi yon odyans espesifik, bati yon solisyon ki adapte ak odyans sa a, epi fè moun peye pou valè yo bay la.
 

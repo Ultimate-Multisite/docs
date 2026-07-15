@@ -3,7 +3,7 @@ title: ஹூக்கள் குறிப்பு
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks குறிப்பு {#hooks-reference}
+# Hooks குறிப்பு
 
 Ultimate Multisite-இல் உள்ள அனைத்து **59 actions** மற்றும் **118 filters** க்கான தானாக உருவாக்கப்பட்ட ஆவணம்.
 

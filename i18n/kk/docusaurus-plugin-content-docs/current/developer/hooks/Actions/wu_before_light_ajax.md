@@ -4,7 +4,7 @@ title: Әрекет - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Әрекет: wu_before_light_ajax {#action-wubeforelightajax}
+# Әрекет: wu_before_light_ajax
 
 Кейбір жағдайларда әрекеттерді өңдеу үшін қосымша қуат жүктеуіміз қажет болады.
 

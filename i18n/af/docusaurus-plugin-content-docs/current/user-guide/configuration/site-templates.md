@@ -3,7 +3,7 @@ title: Werftemplate
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Werfsjablone (v2) {#site-templates-v2}
+# Werfsjablone (v2)
 
 _**LET WEL: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x. As jy weergawe 1.x gebruik,**_ **sien hierdie artikel** _**.**_
 

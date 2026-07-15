@@ -4,7 +4,7 @@ title: តម្រង - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# តម្រង: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# តម្រង: wu_bypass_unset_current_user
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍រំលង code ដែលលុបការកំណត់អ្នកប្រើបច្ចុប្បន្ន។
 

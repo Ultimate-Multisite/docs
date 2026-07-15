@@ -3,7 +3,7 @@ title: Olùkọ́ Plugin & Àyíká Ìdánwò
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Olùkọ́ Àfikún & Ààyè Ìdánwò Ààbò {#plugin-builder--sandbox}
+# Olùkọ́ Àfikún & Ààyè Ìdánwò Ààbò
 
 Gratis AI Agent v1.5.0 ṣàgbékalẹ̀ **Ètò Olùkọ́ Àfikún & Ààyè Ìdánwò Ààbò**, èyí tí ó jẹ́ kí olùrànlọ́wọ́ AI ṣẹ̀dá, muu ṣiṣẹ́, kí ó sì ṣàkóso àwọn àfikún WordPress lórí nẹ́tíwọ́ọ̀kì rẹ — gbogbo rẹ̀ nípasẹ̀ ààyè ìdánwò ààbò tí ó dá wà, tí ó sì ní ààbò.
 

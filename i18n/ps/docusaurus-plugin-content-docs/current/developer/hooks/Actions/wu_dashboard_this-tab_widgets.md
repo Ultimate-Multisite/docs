@@ -4,7 +4,7 @@ title: 'عمل - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_\{$this->tab\}_widgets
 
 د پلاګین جوړوونکو ته اجازه ورکړئ چې Network Dashboard پینل ته ویجټونه ورزیات کړي.
 

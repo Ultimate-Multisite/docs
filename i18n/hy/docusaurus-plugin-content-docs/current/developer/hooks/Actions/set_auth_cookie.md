@@ -4,7 +4,7 @@ title: Գործողություն - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Գործողություն՝ set_auth_cookie {#action-setauthcookie}
+# Գործողություն՝ set_auth_cookie
 
 Գործարկվում է անմիջապես նախքան նույնականացման cookie-ի սահմանվելը։
 

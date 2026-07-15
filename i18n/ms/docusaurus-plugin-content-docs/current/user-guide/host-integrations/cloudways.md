@@ -3,7 +3,7 @@ title: Integrasi Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrasi Cloudways {#cloudways-integration}
+# Integrasi Cloudways
 
 ## Gambaran Keseluruhan {#overview}
 Cloudways ialah platform pengehosan awan terurus yang membolehkan anda melaksanakan tapak WordPress pada pelbagai penyedia awan seperti DigitalOcean, AWS, Google Cloud, dan banyak lagi. Integrasi ini membolehkan penyegerakan domain automatik dan pengurusan sijil SSL antara Ultimate Multisite dan Cloudways.

@@ -4,7 +4,7 @@ title: Suodatin - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Suodatin: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Suodatin: wu_documentation_get_link
 
 Salli plugin-kehittäjien suodattaa linkkejä.
 

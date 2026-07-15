@@ -3,7 +3,7 @@ title: ڪسٽم گيٽ وي جي ترقي
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ڪسٽم گيٽ وي ترقي {#custom-gateway-development}
+# ڪسٽم گيٽ وي ترقي
 
 توهان `Base_Gateway` ڪلاس کي وڌائي ڪسٽم ادائيگي گيٽ ويز ٺاهي سگهو ٿا.
 

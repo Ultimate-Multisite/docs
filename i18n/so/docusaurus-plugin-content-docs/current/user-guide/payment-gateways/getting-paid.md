@@ -3,7 +3,7 @@ title: Lacag qaadashada
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Lacag Helid (v2) {#getting-paid-v2}
+# Lacag Helid (v2)
 
 _**XUSUUSIN MUHIIM AH: Maqaalkani wuxuu khuseeyaa Ultimate Multisite nooca 2.x.**_
 

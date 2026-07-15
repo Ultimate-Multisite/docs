@@ -3,7 +3,7 @@ title: שילוב לוח הבקרה Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# אינטגרציה עם לוח הבקרה Hestia {#hestia-control-panel-integration}
+# אינטגרציה עם לוח הבקרה Hestia
 
 מדריך זה מסביר כיצד להגדיר את האינטגרציה של Ultimate Multisite עם Hestia, כך שדומיינים ממופים ברשת שלכם יתווספו (ויוסרו) באופן אוטומטי כ-Web Domain Aliases ב-Hestia.
 

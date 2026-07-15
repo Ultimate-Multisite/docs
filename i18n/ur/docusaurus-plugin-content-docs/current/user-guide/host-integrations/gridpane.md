@@ -3,7 +3,7 @@ title: GridPane انضمام
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane انٹیگریشن {#gridpane-integration}
+# GridPane انٹیگریشن
 
 ## جائزہ {#overview}
 GridPane ایک مخصوص WordPress ہوسٹنگ کنٹرول پینل ہے جو پیشہ ور WordPress ماہرین کے لیے بنایا گیا ہے۔ یہ انٹیگریشن Ultimate Multisite اور GridPane کے درمیان خودکار ڈومین سنکنگ اور SSL سرٹیفکیٹ مینجمنٹ کو فعال کرتی ہے۔

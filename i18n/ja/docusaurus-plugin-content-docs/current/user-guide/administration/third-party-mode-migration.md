@@ -3,7 +3,7 @@ title: サードパーティモード移行
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# サードパーティモードの移行 {#third-party-mode-migration}
+# サードパーティモードの移行
 
 Superdav AI Agent v1.12.0では、サードパーティの機能（アビリティ）の取り扱い方法が変更されました。**サードパーティモードはデフォルトで「自動（auto）」になりました**。これにより、手動での設定なしに、WordPress 7.0以降でネイティブなWordPress Abilities APIの統合が可能になりました。
 

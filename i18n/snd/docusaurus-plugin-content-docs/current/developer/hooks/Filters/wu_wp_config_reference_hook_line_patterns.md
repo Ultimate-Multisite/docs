@@ -4,7 +4,7 @@ title: فلٽر - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# فلٽر: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# فلٽر: wu_wp_config_reference_hook_line_patterns
 
 اسان ٽي نمونا چيڪ ڪريون ٿا جڏهن اهو معلوم ڪرڻ جي ڪوشش ڪريون ٿا ته اسان پنهنجون ثابتون ڪٿي داخل ڪري سگهون ٿا:
 

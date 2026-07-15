@@ -3,7 +3,7 @@ title: Integrácia multitenantnosti
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrácia multi-tenancy {#multi-tenancy-integration}
+# Integrácia multi-tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mení viaceré integračné styčné body pre suverénnych tenantov, overovanie migrácie a automatizáciu životného cyklu tenantov.
 

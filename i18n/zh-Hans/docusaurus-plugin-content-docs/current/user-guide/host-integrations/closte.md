@@ -3,7 +3,7 @@ title: Closte 集成
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte 集成 {#closte-integration}
+# Closte 集成
 
 ## 概述 {#overview}
 Closte 是一个托管的 WordPress 托管平台，构建在 Google Cloud 基础设施上。此集成实现了 Ultimate Multisite 与 Closte 之间的自动域名同步和 SSL 证书管理。

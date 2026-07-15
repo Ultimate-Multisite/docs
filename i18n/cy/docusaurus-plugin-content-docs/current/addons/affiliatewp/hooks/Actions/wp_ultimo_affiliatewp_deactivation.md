@@ -4,7 +4,7 @@ title: Gweithred - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Gweithred: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Gweithred: wp_ultimo_affiliatewp_deactivation
 
 Gadewch i rannau eraill o'r plugin atodi eu harferion ar gyfer dadactifadu
 

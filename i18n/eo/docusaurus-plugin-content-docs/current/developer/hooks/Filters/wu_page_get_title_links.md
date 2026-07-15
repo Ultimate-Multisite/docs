@@ -4,7 +4,7 @@ title: Filtrilo - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filtrilo: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filtrilo: wu_page_get_title_links
 
 Permesu al plugin-programistoj, kaj al ni mem, aldoni agajn ligilojn al niaj redaktaj paĝoj
 

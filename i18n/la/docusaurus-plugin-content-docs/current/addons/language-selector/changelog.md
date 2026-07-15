@@ -3,7 +3,7 @@ title: Index mutationum Selectoris Linguarum
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Index Mutationum Selectoris Linguarum {#language-selector-changelog}
+# Index Mutationum Selectoris Linguarum
 
 Versio: 1.1.3 - Emissa die 2026-05-05
 * Correctum: Variabiles input nunc purgantur et nomina hamorum custom praefiguntur, ut conflictus cum pluginibus tertiarum partium vitentur

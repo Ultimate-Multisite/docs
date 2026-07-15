@@ -3,7 +3,7 @@ title: 'Lesona 6: Ny Traikefa amin''ny Fisoratana anarana'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesona 6: Ny Traikefa Fisoratana Anarana {#lesson-6-the-signup-experience}
+# Lesona 6: Ny Traikefa Fisoratana Anarana
 
 Ny fizotry ny fividianana no toerana iovan'ny fahalianana ho vola miditra. Ny dingana fisoratana anarana manahiran-tsaina na ankapobeny loatra dia mampiala mpanjifa. Ny fizotra natokana ho an'ny sehatra manokana, izay miteny amin'ny fitenin'izy ireo ary tsapa ho mora, no mampivadika azy ireo ho mpanjifa.
 

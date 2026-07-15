@@ -4,7 +4,7 @@ title: Igikorwa - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Igikorwa: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Igikorwa: wu_domain_renewal_failed
 
 Gikora nyuma y’uko igerageza ryo kongera igihe cya domain rinaniranye.
 

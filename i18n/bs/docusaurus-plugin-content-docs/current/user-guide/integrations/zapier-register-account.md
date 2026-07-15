@@ -3,7 +3,7 @@ title: Registrirajte Account putem Zapier-a
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Događaj: Registrirajte Account putem Zapier {#event-register-an-account-via-zapier}
+# Događaj: Registrirajte Account putem Zapier
 
 U članku [Integracija Ultimate Multisite sa Zapier](zapier.md), razgovarali smo o tome kako koristiti Zapier za izvršavanje različitih radnji unutar Ultimate Multisite na osnovu okidača i događaja. U ovom članku ćemo pokazati kako možete integrisati aplikacije trećih strana. Koristit ćemo Google Sheets kao izvor podataka i poslati informacije u Ultimate Multisite za registraciju Accounta.
 

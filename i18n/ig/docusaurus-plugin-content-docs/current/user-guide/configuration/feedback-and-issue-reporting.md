@@ -3,7 +3,7 @@ title: Feedback Ọnụrụ Ụta na Ihe Ọ dị Ọzọ
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback & Báo Cáo Vấn Đề Khách Hàng {#customer-feedback--issue-reporting}
+# Feedback & Báo Cáo Vấn Đề Khách Hàng
 
 Gratis AI Agent v1.5.0 mang đến một hệ thống báo cáo phản hồi và vấn đề tích hợp sẵn, cho phép người dùng cuối đánh dấu những câu trả lời không hữu ích và báo cáo các sự cố trực tiếp từ giao diện trò chuyện. Hệ thống này bao gồm quản lý sự đồng ý (consent management), lệnh báo cáo tự động, và phân loại ưu tiên bằng AI ở phía sau (backend).
 

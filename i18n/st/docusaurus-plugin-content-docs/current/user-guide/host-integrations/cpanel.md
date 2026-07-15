@@ -3,7 +3,7 @@ title: Ho fana'a le cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ho Lihlelo le cPanel {#cpanel-integration}
+# Ho Lihlelo le cPanel
 
 Ho fana ka tsela efe ho ba le sehlopha sa cPanel.
 

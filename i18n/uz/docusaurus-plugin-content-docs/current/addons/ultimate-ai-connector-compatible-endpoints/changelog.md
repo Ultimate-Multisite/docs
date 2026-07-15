@@ -3,7 +3,7 @@ title: Mos endpointlar uchun Ultimate AI Connector o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Mos keluvchi endpointlar uchun Ultimate AI Connector o‘zgarishlar jurnali {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Mos keluvchi endpointlar uchun Ultimate AI Connector o‘zgarishlar jurnali
 
 ## Versiya 2.0.0 — 2026-04-24 da chiqarilgan {#version-200--released-on-2026-04-24}
 

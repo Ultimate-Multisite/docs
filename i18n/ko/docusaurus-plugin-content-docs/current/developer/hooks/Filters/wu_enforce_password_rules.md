@@ -4,7 +4,7 @@ title: 필터 - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# 필터: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# 필터: wu_enforce_password_rules
 
 추가 비밀번호 규칙을 적용할지 여부를 필터링합니다.  
 true일 경우 최소 길이 및 문자 요구 사항을 적용합니다. 'Super Strong' 설정이거나 Defender Pro의 Strong Password 기능이 활성화된 경우 자동으로 활성화됩니다.

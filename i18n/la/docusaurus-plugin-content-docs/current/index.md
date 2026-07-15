@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Documentatio Ultimate Multisite {#ultimate-multisite-documentation}
+# Documentatio Ultimate Multisite
 
 Salve in documentatione Ultimate Multisite. Ultimate Multisite WordPress Multisite in plenam suggestum Website as a Service (WaaS) transformat.
 
@@ -18,7 +18,7 @@ Omnia quae tibi opus sunt ad suggestum tuum WaaS instituendum, configurandum, et
 
 Relatio technica developeribus qui super Ultimate Multisite aedificant. Relatio hooks, documentatio REST API, et duces evolutionis addon comprehenduntur.
 
-### [Addons](/addons) {#addons}
+### [Additamenta](/addons) {#addons}
 
 Documentatio pro pluginis addon solutis quae Ultimate Multisite proprietatibus additis extendunt, sicut integratione WooCommerce, analyticis, venditione dominiorum, et pluribus.
 

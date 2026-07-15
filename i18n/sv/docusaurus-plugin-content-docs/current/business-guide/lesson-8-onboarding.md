@@ -3,7 +3,7 @@ title: 'Lektion 8: Kundonboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lektion 8: Kundintroduktion (Onboarding) {#lesson-8-customer-onboarding}
+# Lektion 8: Kundintroduktion (Onboarding)
 
 Att få en kund att registrera sig är bara halva jobbet. Om de loggar in, känner sig överväldigade och aldrig kommer tillbaka, har du förlorat dem. Denna lektion designar upplevelsen som förvandlar en ny registrering till en aktiv, engagerad kund.
 

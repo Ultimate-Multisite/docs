@@ -3,7 +3,7 @@ title: Reperensiya sa Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Pakisayran sa Hooks {#hooks-reference}
+# Pakisayran sa Hooks
 
 Awtomatikong gihimong dokumentasyon para sa tanang **59 ka aksyon** ug **118 ka filter** sa Ultimate Multisite.
 

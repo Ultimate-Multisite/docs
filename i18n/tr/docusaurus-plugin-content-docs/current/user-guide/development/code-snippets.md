@@ -3,7 +3,7 @@ title: Kod Parçacıkları
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 için Kod Parçacıkları {#code-snippets-for-v2}
+# v2 için Kod Parçacıkları
 
 **WordPress** için kod parçacıkları, normalde küçük bir eklenti gerektiren belirli işlemleri gerçekleştirmek amacıyla kullanılır. Bu tür kod parçacıkları WordPress çekirdek dosyalarından birine veya tema dosyalarına (genellikle temanızın functions.php dosyasına) yerleştirilir ya da MU eklentisi olarak kullanılabilir.
 

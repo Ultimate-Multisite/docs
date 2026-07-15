@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Action: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# Action: wp_ultimo_captcha_load
 
 လိုအပ်တဲ့ အစိတ်အပိုင်းအားလုံး (dependencies) စတင်ပြီးတဲ့အခါမှာ အလုပ်လုပ်တဲ့ အက်ရှင်တစ်ခု ဖြစ်ပါတယ်။
 

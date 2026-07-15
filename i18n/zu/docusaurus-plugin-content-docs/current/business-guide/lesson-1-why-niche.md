@@ -3,7 +3,7 @@ title: 'Isifundo 1: Kungani Ukugxila Emkhakheni Okhethekile Kuphumelela'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Isifundo 1: Kungani I-Niche Iwina {#lesson-1-why-niche-wins}
+# Isifundo 1: Kungani I-Niche Iwina
 
 Ngaphambi kokuthi sithinte noma iyiphi isoftware, kudingeka uqonde ukuthi kungani ukwakhela izethameli ezithile kuyisinqumo esisodwa esibaluleke kakhulu ozosithatha.
 

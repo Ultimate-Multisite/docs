@@ -3,7 +3,7 @@ title: Mindandanda ya Zakudya Zochereza Alendo
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ma Menyu a Malo Ochereza {#hospitality-menus}
+# Ma Menyu a Malo Ochereza
 
 Mbali ya **Ma Menyu a Malo Ochereza** imalola Theme Builder kupanga ndi kuyika masamba a menyu okonzedwa bwino a chakudya ndi zakumwa mwachindunji mu tsamba lanu la WordPress.
 

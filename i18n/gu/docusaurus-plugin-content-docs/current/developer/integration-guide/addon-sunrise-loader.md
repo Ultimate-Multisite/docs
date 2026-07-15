@@ -3,7 +3,7 @@ title: એડઓન સૂર્યોદય ફાઇલ લોડર
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 એ add-ons અને custom MU-plugin integrations માટે એક sunrise extension loader ઉમેર્યું છે. આ loader એવા add-ons માટે છે જેને WordPress ના sunrise bootstrapping દરમિયાન ચાલવાની જરૂર હોય, અને આ માટે તમારે `wp-content/sunrise.php` ફાઇલ એડિટ કરવાની જરૂર નથી.
 

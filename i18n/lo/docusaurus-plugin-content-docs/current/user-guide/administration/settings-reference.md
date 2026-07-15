@@ -3,7 +3,7 @@ title: ອ້າງອີງການຕັ້ງຄ່າ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# ອ້າງອີງ Settings {#settings-reference}
+# ອ້າງອີງ Settings
 
 ໜ້ານີ້ຕິດຕາມ Settings ທີ່ມີຜົນຕໍ່ການບໍລິຫານປະຈຳວັນ ແລະການປ່ຽນແປງພຶດຕິກຳຫຼ້າສຸດໃນ Ultimate Multisite.
 

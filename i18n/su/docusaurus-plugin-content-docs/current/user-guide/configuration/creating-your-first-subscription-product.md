@@ -3,7 +3,7 @@ title: Ngadamel Produk Langganan Kahiji Anjeun
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ngadiri Produk Langganan Pertama Anjeun (v2) {#creating-your-first-subscription-product-v2}
+# Ngadiri Produk Langganan Pertama Anjeun (v2)
 
 _**CATATAN PENTING: Artikel ieu ngan ukur pikeun pangguna Ultimate Multisite versi 2.x. Upami anjeun keur nganggo versi 1.x,**_ **_**coba baca artikel ieu**_**.
 

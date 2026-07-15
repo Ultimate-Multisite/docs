@@ -3,7 +3,7 @@ title: WooCommerce integracijos keitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce integracijos pakeitimų žurnalas {#woocommerce-integration-changelog}
+# WooCommerce integracijos pakeitimų žurnalas
 
 Versija 2.2.0 - išleista 2026-07-01
 * Nauja: Ultimate Multisite mokesčių sumos dabar rodomos kaip atskiros WooCommerce mokesčių eilutės atsiskaitymo metu, todėl mokesčių sumos prieš mokėjimą tampa aiškesnės.

@@ -4,7 +4,7 @@ title: פילטר - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# מסנן: wu_sso_enabled {#filter-wussoenabled}
+# מסנן: wu_sso_enabled
 
 מאפשר הפעלה או כיבוי של יכולת Single Sign-On (SSO) חוצת דומיינים.
 

@@ -4,7 +4,7 @@ title: फिल्टर - wu_core_installer_install_sunrise
 sidebar_label: wu_core_installer_install_sunrise
 _i18n_hash: 9750f0fbfe9f02249e4e1d17e585bdb6
 ---
-# फिल्टर: wu_core_installer_install_sunrise {#filter-wucoreinstallerinstallsunrise}
+# फिल्टर: wu_core_installer_install_sunrise
 
 होस्ट प्रदायकहरूलाई कन्स्ट्यान्ट फरक तरिकाले install गर्न अनुमति दिनुहोस्।
 

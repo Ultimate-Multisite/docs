@@ -3,7 +3,7 @@ title: 'Dars 7: Ki Yek-e Khod-et'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Ders 7: Kendi Markanla Yapmak {#lesson-7-making-it-yours}
+# Ders 7: Kendi Markanla Yapmak
 
 Müşterileriniz asla "bir WordPress eklentisi" kullanıyor gibi hissetmemeli. FitSite kullanıyor gibi hissetmeliler; sanki bu platform, onların sektörüne özel olarak inşa edilmiş gibi. Bu derste markalama (branding), beyaz etiketleme (white-labeling) ve platformu bir ürün gibi hissettirme konularını ele alacağız.
 

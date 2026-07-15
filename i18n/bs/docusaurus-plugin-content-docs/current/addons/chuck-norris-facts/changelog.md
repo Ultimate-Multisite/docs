@@ -3,7 +3,7 @@ title: Chuck Norris Facts Changelog
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Izmjene za Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Izmjene za Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Dodato: Funkcionalnost automatskog ažuriranja putem Ultimate Multisite update servera

@@ -3,7 +3,7 @@ title: 'Aralin 10: Araw ng Paglulunsad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day {#lesson-10-launch-day}
+# Lesson 10: Launch Day
 
 Kumpleto na ang lahat. Bago mo buksan ang mga pinto, ang lesson na ito ay magdadala sa iyo sa pre-launch checklist para masigurong walang sira, nawawala, o nakakahiya.
 

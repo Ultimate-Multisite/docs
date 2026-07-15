@@ -4,7 +4,7 @@ title: Action - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Action: wu_handle_customer_meta_fields
 
 প্লাগইন ডেভেলপাৰসকলক যদি তেওঁলোকক প্ৰয়োজন হয়, তেন্তে মেটা ডেটা বিভিন্ন ধৰণে সেভ কৰিবলৈ এই অ্যাকশনটোৱে অনুমতি দিয়ে।
 

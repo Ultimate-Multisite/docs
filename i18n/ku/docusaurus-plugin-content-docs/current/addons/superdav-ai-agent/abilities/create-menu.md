@@ -3,7 +3,7 @@ title: Menuyê çêbike
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Pêşek Çêbike {#create-menu}
+# Pêşek Çêbike
 
 Şiyana **Pêşek Çêbike** pêşekên rêveberiyê yên WordPress çêdike û piştgirî dide nîşanên rêveberiyê yên cuda ji sernavên rûpelan.
 

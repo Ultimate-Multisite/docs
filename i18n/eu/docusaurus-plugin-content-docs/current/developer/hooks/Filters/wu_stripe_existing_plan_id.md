@@ -4,7 +4,7 @@ title: Iragazkia - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Iragazkia: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Iragazkia: wu_stripe_existing_plan_id
 
 Egiaztatu beharreko planaren IDa iragazten du. Hau badago, harpidetza berriak plan hau erabiliko du.
 

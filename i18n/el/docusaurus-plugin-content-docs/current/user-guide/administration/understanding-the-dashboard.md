@@ -3,7 +3,7 @@ title: Κατανόηση του Πίνακα Ελέγχου
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Κατανόηση του Πίνακα Ελέγχου του Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Κατανόηση του Πίνακα Ελέγχου του Ultimate Multisite
 
 Πριν εμβαθύνουμε στις πιο προχωρημένες επιλογές διαμόρφωσης και τις λειτουργικές πτυχές του Ultimate Multisite, ας ρίξουμε μια ματιά στον πίνακα ελέγχου.
 

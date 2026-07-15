@@ -3,7 +3,7 @@ title: Přehled nástěnky
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Přehled nástěnky {#dashboard-overview}
+# Přehled nástěnky
 
 Ultimate Multisite má vlastní **Nástěnku** v menu Ultimate Multisite a také přidává widgety do Nástěnky sítě. V tomto článku se podíváme na to, co najdete na obou místech.
 

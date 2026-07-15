@@ -3,7 +3,7 @@ title: 'Læoni 6: Skráningarnar upplifun'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Læoni 6: Signup-upplifunni {#lesson-6-the-signup-experience}
+# Læoni 6: Signup-upplifunni
 
 Kaupferlið er þar sem áhuga orðast í fjármuni. Óskýr eða algeng skráningarprosessi missir viðskiptavini. Einangrað ferli sem talar þeirra tungumli og finnst eins og engin ákostur, breytur þeim til betalande viðskiptavina.
 

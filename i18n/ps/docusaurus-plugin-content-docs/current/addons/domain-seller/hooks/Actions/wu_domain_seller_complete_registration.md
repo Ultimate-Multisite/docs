@@ -4,7 +4,7 @@ title: عمل - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# کړنه: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# کړنه: wu_domain_seller_complete_registration
 
 هغه وخت فعالېږي چې یوه تادیه داسې حالت ته واوړي چې باید د ډومېن ثبت پیل کړي.
 

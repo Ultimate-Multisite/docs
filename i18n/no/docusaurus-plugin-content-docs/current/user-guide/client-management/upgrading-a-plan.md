@@ -3,7 +3,7 @@ title: Oppgradere et abonnement
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Oppgradering av en plan (v2) {#upgrading-a-plan-v2}
+# Oppgradering av en plan (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 

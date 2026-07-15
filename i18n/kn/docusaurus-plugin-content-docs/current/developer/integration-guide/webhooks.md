@@ -3,7 +3,7 @@ title: Webhook ನಿರ್ವಹಣೆ
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# ವೆಬ್‌ಹುಕ್ ನಿರ್ವಹಣೆ (Webhook Handling) {#webhook-handling}
+# ವೆಬ್‌ಹುಕ್ ನಿರ್ವಹಣೆ (Webhook Handling)
 
 ಬಾಹ್ಯ ಸೇವೆಗಳಿಂದ (external services) ಘಟನೆಗಳನ್ನು (events) ಸ್ವೀಕರಿಸಲು ಮತ್ತು Ultimate Multisite ಜೊತೆ ಡೇಟಾವನ್ನು ಸಿಂಕ್ (sync) ಮಾಡಲು ಕಸ್ಟಮ್ ವೆಬ್‌ಹುಕ್ ಎಂಡ್‌ಪಾಯಿಂಟ್‌ಗಳನ್ನು ರಚಿಸಿ.
 

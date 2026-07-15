@@ -3,7 +3,7 @@ title: Ikhasi le-Account Leklayenti
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ikhasi le-Account Leklayenti Lakho (v2) {#your-clients-account-page-v2}
+# Ikhasi le-Account Leklayenti Lakho (v2)
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite version 2.x.**_
 

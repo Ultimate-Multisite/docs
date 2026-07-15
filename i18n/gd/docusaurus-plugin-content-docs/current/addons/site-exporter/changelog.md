@@ -3,7 +3,7 @@ title: Clàr nan atharrachaidhean airson Às-phortaiche Làraich
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Loga-atharrachaidhean Site Exporter {#site-exporter-changelog}
+# Loga-atharrachaidhean Site Exporter
 
 Tionndadh: 1.0.6 - Air fhoillseachadh air 2026-05-11
 * Ùr: Tha às-mhalairtean làraich a-nis a’ pasgadh index.php fèin-thòiseachail gus an urrainnear an ZIP a stàladh air aoigheachd ùr gun stàladh plugin air leth

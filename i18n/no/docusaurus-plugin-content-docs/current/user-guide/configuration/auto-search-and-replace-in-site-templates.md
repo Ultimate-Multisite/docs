@@ -3,7 +3,7 @@ title: Automatisk søk og erstatt i nettstedsmaler
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk søk og erstatt i nettstedsmaler (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatisk søk og erstatt i nettstedsmaler (v2)
 
 _**Denne veiledningen krever WP UItimo versjon 2.x.**_
 

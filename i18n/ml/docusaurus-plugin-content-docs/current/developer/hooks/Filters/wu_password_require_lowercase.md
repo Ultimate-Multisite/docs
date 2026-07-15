@@ -4,7 +4,7 @@ title: Filter - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Filter: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Filter: wu_password_require_lowercase
 
 പാസ്‌വേഡുകളിൽ ചെറിയ അക്ഷരങ്ങൾ (lowercase letters) നിർബന്ധമാക്കണോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

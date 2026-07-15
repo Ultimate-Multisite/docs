@@ -3,7 +3,7 @@ title: Waraka wa Maendeleo
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasi kwa Wataalamu wa Uendelezaji {#developer-documentation}
+# Dokumentasi kwa Wataalamu wa Uendelezaji
 
 Mwongozo huu unatoa wataalamu wa uendelezaji kila kitu kinachohitajika ili kuunganisha (integrate), kupanua (extend), au kuunda *addons* kwa Ultimate Multisite. Ultimate Multisite hubadilisha mtandao wa WordPress Multisite kuwa jukwaa la Website-as-a-Service (WaaS).
 

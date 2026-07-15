@@ -3,7 +3,7 @@ title: 支払いと請求書の管理
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# 支払いと請求書の管理 {#managing-payments-and-invoices}
+# 支払いと請求書の管理
 
 ## 支払い設定 {#payment-settings}
 

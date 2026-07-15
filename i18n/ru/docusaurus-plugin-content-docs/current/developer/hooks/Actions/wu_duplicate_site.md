@@ -6,7 +6,7 @@ title: >-
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Действие: wu_duplicate_site {#action-wuduplicatesite}
+# Действие: wu_duplicate_site
 
 Позволяет разработчикам подключать хуки после дублирования сайта.
 

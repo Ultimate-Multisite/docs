@@ -3,7 +3,7 @@ title: Przegląd panelu administracyjnego
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Zwiedzanie panelu administracyjnego {#touring-the-admin-panel}
+# Zwiedzanie panelu administracyjnego
 
 Ultimate Multisite ma być tak prosty i zrozumiały, jak to możliwe, ale przy tak potężnym narzędziu pomocne może być oprowadzenie. Przejdźmy przez strony administracyjne, aby pomóc Ci się zorientować.
 

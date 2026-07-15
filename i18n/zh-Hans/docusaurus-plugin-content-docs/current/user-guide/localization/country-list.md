@@ -3,7 +3,7 @@ title: 国家列表
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# 重排 Ultimate Multisite 国家列表 {#re-ordering-the-ultimate-multisite-country-list}
+# 重排 Ultimate Multisite 国家列表
 
 下拉菜单按英文国家名称的变体按字母顺序排列。这可能意味着，有时贵公司的总部和/或大多数客户所在的国家会被埋在庞大的国家名称列表中间。
 

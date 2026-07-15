@@ -4,7 +4,7 @@ title: फिल्टर - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Filter: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# Filter: wu_checkout_calculate_prorate_credits
 
 प्लगइन विकासकर्ताहरूलाई क्रेडिट मानसँग छेडछाड गर्न अनुमति दिनुहोस्।
 

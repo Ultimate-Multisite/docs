@@ -3,7 +3,7 @@ title: Me yasa Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Me yadda ake amfani da Ultimate Multisite {#why-ultimate-multisite}
+# Me yadda ake amfani da Ultimate Multisite
 
 Idan ka samu wannan rubutu, yana nan ba zai iya jin cewa wannan plugin na iya zama mafita ga in gina ra'ayarka ta kasuwanci. Mun roƙon ku samun duk abin da kuke bukata da ƙarshen wannan rubutun.
 

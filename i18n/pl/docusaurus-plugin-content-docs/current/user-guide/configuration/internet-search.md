@@ -3,7 +3,7 @@ title: Wyszukiwarka internetowa
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Wyszukiwanie w Internecie {#internet-search}
+# Wyszukiwanie w Internecie
 
 Gratis AI Agent v1.5.0 dodaje możliwość **Wyszukiwania w Internecie** (Internet Search), która pozwala asystentowi AI pobierać aktualne informacje z sieci podczas rozmowy. Funkcja ta działa dzięki [Brave Search API](https://brave.com/search/api/) lub [Tavily API](https://tavily.com/).
 

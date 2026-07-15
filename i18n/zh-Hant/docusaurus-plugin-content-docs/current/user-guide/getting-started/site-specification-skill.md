@@ -3,7 +3,7 @@ title: 網站規格技能
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# 網站規格功能 (Site Specification Skill) {#site-specification-skill}
+# 網站規格功能 (Site Specification Skill)
 
 **網站規格功能**是一種結構化的方法，用於捕捉您網站的目標、受眾和品牌識別度。這些資訊會儲存在您的 **site_brief** 記憶體中，代理（agents）會在不同工作階段參考它，從而提供一致且具備情境意識的協助。
 

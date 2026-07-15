@@ -3,7 +3,7 @@ title: 如何設定網域對應
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# 如何設定網域對應（v2） {#how-to-configure-domain-mapping-v2}
+# 如何設定網域對應（v2）
 
 _**重要注意事項：本文適用於 Ultimate Multisite 2.x 版本。**_
 

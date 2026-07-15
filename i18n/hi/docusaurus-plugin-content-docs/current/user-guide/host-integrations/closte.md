@@ -3,7 +3,7 @@ title: Closte एकीकरण
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte इंटीग्रेशन {#closte-integration}
+# Closte इंटीग्रेशन
 
 ## अवलोकन {#overview}
 Closte एक managed WordPress hosting प्लेटफॉर्म है जो Google Cloud इंफ्रास्ट्रक्चर पर बना है। यह इंटीग्रेशन Ultimate Multisite और Closte के बीच automatic domain syncing और SSL certificate management को संभव बनाता है।

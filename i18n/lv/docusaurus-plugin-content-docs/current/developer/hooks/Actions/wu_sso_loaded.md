@@ -4,7 +4,7 @@ title: Darbība - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Darbība: wu_sso_loaded {#action-wussoloaded}
+# Darbība: wu_sso_loaded
 
 Ļauj plugin izstrādātājiem pievienot papildu āķus, ja nepieciešams.
 

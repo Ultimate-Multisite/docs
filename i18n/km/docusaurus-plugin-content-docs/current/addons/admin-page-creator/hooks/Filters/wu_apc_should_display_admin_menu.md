@@ -4,7 +4,7 @@ title: តម្រង - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 អនុញ្ញាតឱ្យអ្នកគ្រប់គ្រងលាក់ទំព័រម៉ឺនុយគ្រប់គ្រង ប្រសិនបើពួកគេបានបញ្ចប់ដំណើរការកែសម្រួលផ្ទាល់ខ្លួន។
 

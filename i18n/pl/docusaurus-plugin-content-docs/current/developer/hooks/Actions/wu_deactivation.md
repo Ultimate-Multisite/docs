@@ -4,7 +4,7 @@ title: Akcja - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Akcja: wu_deactivation {#action-wudeactivation}
+# Akcja: wu_deactivation
 
 Umożliwia innym częściom wtyczki podłączenie własnych funkcji wywoływanych podczas dezaktywacji.
 

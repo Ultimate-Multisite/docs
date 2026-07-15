@@ -3,7 +3,7 @@ title: Dnevnik promjena kreatora administratorskih stranica
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Dnevnik promjena Kreatora administratorskih stranica {#admin-page-creator-changelog}
+# Dnevnik promjena Kreatora administratorskih stranica
 
 ### Verzija 1.9.0 - Objavljeno 2026-01-18 {#version-190---released-on-2026-01-18}
 

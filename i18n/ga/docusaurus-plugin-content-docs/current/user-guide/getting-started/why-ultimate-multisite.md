@@ -3,7 +3,7 @@ title: Cén fáth Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Cadra Uál Ultimate Multisite {#why-ultimate-multisite}
+# Cadra Uál Ultimate Multisite
 
 Má tá an ardán seo, is féidir leat a bheith ag iarraidh go bhfuil an plugin beag seo an soluín chun do chuid ideanaíú a dhéanamh. Tá sé ar fáil an t-am astair, agus ba mhaith linn go bhfuil an t-amastair atá ag iarraidh an t-amasan seo a fhágáil.
 

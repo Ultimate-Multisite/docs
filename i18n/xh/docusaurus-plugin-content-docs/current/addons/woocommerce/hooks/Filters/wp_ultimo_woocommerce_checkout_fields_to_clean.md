@@ -4,7 +4,7 @@ title: Isihluzo - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Isihluzi: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Isihluzi: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Ivumela abaphuhlisi ukuba bahluze iindawo zedilesi yokubhatala ezisisiseko zeWooCommerce.
 

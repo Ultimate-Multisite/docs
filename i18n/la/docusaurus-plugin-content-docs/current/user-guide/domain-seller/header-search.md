@@ -3,7 +3,7 @@ title: Quaestio dominii in capite
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Investigatio Dominii in Capite {#header-domain-search}
+# Investigatio Dominii in Capite
 
 Utere hac configuratione cum vis parvam formam in capite quae investigationem dominii incipit, deinde emptori sinit ex dominiis praesto intra emptionem Ultimate Multisite eligere.
 

@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Action: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Action: wu_register_rest_routes
 
 கூடுதல் வழித்தடங்களை (routes) பதிவு செய்ய அனுமதிக்கிறது.
 

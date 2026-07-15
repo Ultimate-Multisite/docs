@@ -3,7 +3,7 @@ title: 'Lekcija 12: Vođenje poslovanja'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcija 12: Vođenje poslovanja {#lesson-12-running-the-business}
+# Lekcija 12: Vođenje poslovanja
 
 Platforma nije projekat koji završavate – to je posao koji vodite. Ova lekcija pokriva svakodnevne operacije upravljanja FitSite-om: podršku, naplatu, održavanje i održavanje zadovoljstva kupaca.
 

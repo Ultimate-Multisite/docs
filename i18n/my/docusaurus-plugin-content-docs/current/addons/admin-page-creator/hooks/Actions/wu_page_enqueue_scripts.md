@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 ဒီနေရာမှာ custom action တစ်ခု ထပ်ထည့်တာက၊ လိုအပ်တဲ့ script တွေနဲ့ style တွေကို ပေါင်းထည့်ဖို့ နေရာတစ်ခုရစေပြီး၊ အဲဒီ script တွေနဲ့ style တွေဟာ မှန်ကန်တဲ့ စာမျက်နှာတွေမှာပဲ ပေါ်လာအောင် လုပ်ပေးတာ ဖြစ်ပါတယ်။
 

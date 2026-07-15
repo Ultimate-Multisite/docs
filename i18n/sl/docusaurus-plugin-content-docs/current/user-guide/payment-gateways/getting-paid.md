@@ -3,7 +3,7 @@ title: Prejemanje plačil
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Prejemanje plačil (v2) {#getting-paid-v2}
+# Prejemanje plačil (v2)
 
 _**POMEMBNO OBVESTILO: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 

@@ -4,7 +4,7 @@ title: Әрекет - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Әрекет: wu_page_after_render {#action-wupageafterrender}
+# Әрекет: wu_page_after_render
 
 Бетті шығарғаннан кейін plugin әзірлеушілеріне қосымша мазмұн қосуға мүмкіндік береді
 

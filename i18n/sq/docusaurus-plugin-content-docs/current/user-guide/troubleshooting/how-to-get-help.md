@@ -3,7 +3,7 @@ title: Si të Kërkosh Ndihmë
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Siç si mund të merrni ndihmë {#how-to-get-help}
+# Siç si mund të merrni ndihmë
 
 Keni çelësin tuaj valid dhe me atë keni akses në ekipet tonë për t'ju ndihmuar të zgjidhni probleme që mund të shfaqen gjatë vendosjes së Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: WPMU DEV انٽيغريشن
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Integration {#wpmu-dev-integration}
+# WPMU DEV Integration
 
 ## جائزہ (Overview) {#overview}
 WPMU DEV هڪ جامع WordPress پليٽ فارم آهي جيڪو WordPress سائيٽن لاءِ هاستنگ، پلگينز ۽ سروسز فراهم ڪري ٿو. هي ان انٽيغريشن سان Ultimate Multisite ۽ WPMU DEV هاستنگ جي وچ ۾ ڊومين جو خود بخود سنڪرائس (sync) ڪرڻ ۽ SSL سرٽيفڪيٽ جي انتظام کي آسان بڻائي ٿو.

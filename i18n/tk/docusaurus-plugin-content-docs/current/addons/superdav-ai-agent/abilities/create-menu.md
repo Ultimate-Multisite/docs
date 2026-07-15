@@ -3,7 +3,7 @@ title: Menýu döret
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menýu döretmek {#create-menu}
+# Menýu döretmek
 
 **Menýu döretmek** ukyby, sahypa atlaryndan aýry aýratyn nawigasiýa belliklerini goldamak bilen WordPress nawigasiýa menýularyny döredýär.
 

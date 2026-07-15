@@ -4,7 +4,7 @@ title: පෙරහන - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# පෙරහන: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# පෙරහන: wu_is_development_mode
 
 සංවර්ධන ප්‍රකාරය සඳහා අමතර පරීක්ෂණ එක් කිරීමට ප්ලගින සංවර්ධකයින්ට ඉඩ දෙයි.
 

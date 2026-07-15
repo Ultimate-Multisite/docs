@@ -4,7 +4,7 @@ title: Ago - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Ago: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# Ago: wu_admin_pages_extra_metaboxes
 
 Permesu al plugin-programistoj aldoni novajn metaboxes-opciojn =)
 

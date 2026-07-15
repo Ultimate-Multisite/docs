@@ -4,7 +4,7 @@ title: Sefe - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Sefe: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# Sefe: wu_magic_link_enforce_ip
 
 Sefa hore na ho tiisetsoa netefatso ya aterese ya IP.
 

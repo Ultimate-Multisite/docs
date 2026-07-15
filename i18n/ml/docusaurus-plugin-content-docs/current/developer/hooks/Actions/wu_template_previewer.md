@@ -4,7 +4,7 @@ title: Action - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 ടെംപ്ലേറ്റ് പ്രിവ്യൂവറിൽ (template previewer) ഉള്ള സന്ദർഭത്തിൽ (context) ഇത് പ്രവർത്തിക്കുന്നു.
 

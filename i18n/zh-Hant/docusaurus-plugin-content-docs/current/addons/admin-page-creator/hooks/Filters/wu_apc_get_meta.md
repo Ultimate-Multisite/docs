@@ -4,7 +4,7 @@ title: 過濾器 - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# 篩選器：wu_apc_get_meta {#filter-wuapcgetmeta}
+# 篩選器：wu_apc_get_meta
 
 讓開發人員可以篩選最終的值，並新增處理案例。
 

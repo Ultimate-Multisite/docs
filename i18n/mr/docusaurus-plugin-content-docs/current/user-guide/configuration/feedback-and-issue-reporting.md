@@ -3,7 +3,7 @@ title: ग्राहक अभिप्राय आणि समस्या 
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# ग्राहक अभिप्राय आणि समस्या अहवाल (Customer Feedback & Issue Reporting) {#customer-feedback--issue-reporting}
+# ग्राहक अभिप्राय आणि समस्या अहवाल (Customer Feedback & Issue Reporting)
 
 Gratis AI Agent v1.5.0 मध्ये एक अंगभूत (built-in) अभिप्राय आणि समस्या अहवाल प्रणाली (feedback and issue reporting system) सादर केली आहे. या प्रणालीमुळे अंतिम वापरकर्ते (end users) चॅट इंटरफेसवरूनच अप्रभावी प्रतिसाद (unhelpful responses) आणि समस्या नोंदवू शकतात. या प्रणालीमध्ये संमती व्यवस्थापन (consent management), स्वयंचलित अहवाल कमांड (automated reporting command), आणि बॅकएंडवर AI-सहाय्यित वर्गीकरण (AI-assisted triage) समाविष्ट आहे.
 

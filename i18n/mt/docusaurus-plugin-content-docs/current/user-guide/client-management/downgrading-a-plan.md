@@ -3,7 +3,7 @@ title: Għal-downgrading ta plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgrading a plan (v2) {#downgrading-a-plan-v2}
+# Downgrading a plan (v2)
 
 _**NOTA IMPORTANTI: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
 

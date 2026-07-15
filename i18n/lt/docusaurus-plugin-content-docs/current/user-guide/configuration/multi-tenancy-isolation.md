@@ -3,7 +3,7 @@ title: Multitenantui izoliacija
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolavimas tarpukų (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Izolavimas tarpukų (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 palaiko bazos duomenų ir sistemos failų izolinavimą po subsite'ui, suteikiant suverbiai klientams. Tai užtikrina, kad klientų duomenys būtų atskirti, priedendo同时 tinklo lygio paslaugų, paskirstymo ir administravimo.
 

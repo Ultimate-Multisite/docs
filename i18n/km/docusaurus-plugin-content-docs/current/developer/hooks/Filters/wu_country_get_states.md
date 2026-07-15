@@ -4,7 +4,7 @@ title: តម្រង - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# តម្រង: wu_country_get_states {#filter-wucountrygetstates}
+# តម្រង: wu_country_get_states
 
 ត្រឡប់បញ្ជីរដ្ឋសម្រាប់ប្រទេសនេះ។
 

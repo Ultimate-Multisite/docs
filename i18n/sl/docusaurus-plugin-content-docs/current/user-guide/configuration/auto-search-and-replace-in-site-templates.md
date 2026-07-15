@@ -3,7 +3,7 @@ title: Avtomatizirano iskanje in zamenjava v predloških spletnih strani
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Avtomatizirano iskanje in zamenjava v šabloni spletnih strani (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Avtomatizirano iskanje in zamenjava v šabloni spletnih strani (v2)
 
 _**Ta tutorial zahteva WP Uitimo verzijo 2.x.**_
 

@@ -4,7 +4,7 @@ title: Filtras - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filtras: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Filtras: wu_sites_column_limit
 
 Filtras, skirtas pakeisti get pluginssites reikšmę tinkle.
 

@@ -3,7 +3,7 @@ title: 'Darasi na 2: Zaɓar Fanninka'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Darasi na 2: Zaɓar Kasuwarka ta Musamman {#lesson-2-picking-your-niche}
+# Darasi na 2: Zaɓar Kasuwarka ta Musamman
 
 A Darasi na 1 mun tabbatar da dalilin da ya sa kasuwa ta musamman ta fi ta gama-gari. Yanzu kana buƙatar zaɓar taka. Wannan darasi yana ba ka tsari don gano da tabbatar da kasuwa ta musamman kafin ka saka lokaci wajen gina mata abu.
 

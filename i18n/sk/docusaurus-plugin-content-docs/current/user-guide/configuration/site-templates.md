@@ -3,7 +3,7 @@ title: Šablóny stránok
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Šablóny sítí (v2) {#site-templates-v2}
+# Šablóny sítí (v2)
 
 _**POZNÁMKA: Tento článok sa týka verzie 2.x Ultimate Multisite. Ak používate verziu 1.x,**_ **prejdite na tento článok.**_
 

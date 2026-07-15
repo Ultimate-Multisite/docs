@@ -4,7 +4,7 @@ title: 过滤 - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 在将对象数据存储到数据库之前进行过滤。
 

@@ -4,7 +4,7 @@ title: ფილტრი - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# ფილტრი: wu_setup_wizard {#filter-wusetupwizard}
+# ფილტრი: wu_setup_wizard
 
 დეველოპერებს აძლევს დამატებითი დაყენების ოსტატის ნაბიჯების დამატების საშუალებას.
 

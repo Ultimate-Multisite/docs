@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Ìṣepọ̀ Closte {#closte-integration}
+# Ìṣepọ̀ Closte
 
 ## Àkótán {#overview}
 Closte jẹ́ pẹpẹ hosting WordPress tí a ń ṣàkóso, tí a kọ́ lórí amáyédẹrùn Google Cloud. Ìṣepọ̀ yìí ń jẹ́ kí domain syncing àti ìṣàkóso SSL certificate láàárín Ultimate Multisite àti Closte ṣẹlẹ̀ láìfọwọ́sọ́wọ́.

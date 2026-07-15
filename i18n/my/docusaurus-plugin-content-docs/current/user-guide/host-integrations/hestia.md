@@ -3,7 +3,7 @@ title: Hestia Control Panel ပေါင်းစပ်မှု
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel ပေါင်းစပ်အသုံးပြုခြင်း {#hestia-control-panel-integration}
+# Hestia Control Panel ပေါင်းစပ်အသုံးပြုခြင်း
 
 ဤလမ်းညွှန်တွင် Ultimate Multisite Hestia ပေါင်းစပ်မှုကို ပြင်ဆင်သတ်မှတ်နည်းကို ရှင်းပြထားပါသည်။ သင့် network တွင် map လုပ်ထားသော domain များကို Hestia ရှိ Web Domain Aliases အဖြစ် အလိုအလျောက် ထည့်သွင်းခြင်း (နှင့် ဖယ်ရှားခြင်း) ပြုလုပ်နိုင်မည်ဖြစ်သည်။
 

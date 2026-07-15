@@ -4,7 +4,7 @@ title: Bộ lọc - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 Cho phép nhà phát triển bỏ qua (bypass) kết quả đầu ra mặc định và thiết lập một kết quả tùy chỉnh thay thế.
 

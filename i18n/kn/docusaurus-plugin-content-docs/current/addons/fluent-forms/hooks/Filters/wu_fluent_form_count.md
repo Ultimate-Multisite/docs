@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count {#filter-wufluentformcount}
+# Filter: wu_fluent_form_count
 
 ಪ್ಲಗ್ಇನ್ developers-ಗಳಿಗೆ ಫಾರ್ಮ್ಗಳ ಒಟ್ಟು ಸಂಖ್ಯೆಯನ್ನು ಬದಲಾಯಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.
 

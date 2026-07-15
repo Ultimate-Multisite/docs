@@ -3,7 +3,7 @@ title: Tataiso ea Khokahanyo
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Tataiso ea Kopanyo {#integration-guide}
+# Tataiso ea Kopanyo
 
 Tataiso ena e akaretsa mekhoa e tloaelehileng ea kopanyo le Ultimate Multisite, ho kenyeletsa ho hokela lits'ebeletso tsa kantle, ho haha dikgoro tsa tefo tse ikhethileng, le ho sebetsana le di-webhook.
 

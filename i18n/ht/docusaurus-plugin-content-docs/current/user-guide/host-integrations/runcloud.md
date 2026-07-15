@@ -3,7 +3,7 @@ title: Entegrasyon RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Entegrasyon RunCloud {#runcloud-integration}
+# Entegrasyon RunCloud
 
 ## Aperçu {#overview}
 RunCloud se yon platfòm jere sèvè ki baze sou nivo kloud (cloud-based) ki pèmèt ou depliye epi jere fasil aplikasyon web yo sou sèvè kloud ou tèt ou. Entegrasyon sa a pèmèt senkronizasyon domèn otomatik ak jere sertifikat SSL ant Ultimate Multisite ak RunCloud.

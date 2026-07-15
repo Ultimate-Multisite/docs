@@ -3,7 +3,7 @@ title: Kapaċitajiet ta’ Ġestjoni tal-Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kapaċitajiet ta' Ġestjoni tal-Plugins {#plugin-management-abilities}
+# Kapaċitajiet ta' Ġestjoni tal-Plugins
 
 Gratis AI Agent v1.5.0 jiġi b'**7 kapaċitajiet ta' ġestjoni tal-plugins** li l-assistent AI jista' jsejjaħ waqt konverżazzjoni. Dawn il-kapaċitajiet jipprovdu kontroll programmatiku fuq plugins ta' WordPress installati permezz tas-[Sistema Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

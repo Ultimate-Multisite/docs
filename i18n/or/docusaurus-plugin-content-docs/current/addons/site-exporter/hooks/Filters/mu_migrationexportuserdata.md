@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# ଫିଲ୍ଟର: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# ଫିଲ୍ଟର: mu_migration/export/user/data
 
 ରପ୍ତାନି/ଆମଦାନି ପାଇଁ ଡିଫଲ୍ଟ ବ୍ୟବହାରକାରୀ ତଥ୍ୟ ସେଟ୍‌କୁ ଫିଲ୍ଟର କରେ।
 

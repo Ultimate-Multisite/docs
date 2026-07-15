@@ -4,7 +4,7 @@ title: Ketso - wu_domain_registration_completed
 sidebar_label: wu_domain_registration_completed
 _i18n_hash: 092b475e74f3b937af068c83eeba2e0a
 ---
-# Ketso: wu_domain_registration_completed {#action-wudomainregistrationcompleted}
+# Ketso: wu_domain_registration_completed
 
 E sebetsa ka mor'a hore domain e ngolisoe ka katleho.
 

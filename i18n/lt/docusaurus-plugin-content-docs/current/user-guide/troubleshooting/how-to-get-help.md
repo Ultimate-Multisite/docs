@@ -3,7 +3,7 @@ title: Kaip gauti pagalbos
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kaip gauti pagalbūtį {#how-to-get-help}
+# Kaip gauti pagalbūtį
 
 Jūsų galiojamos licencijos rašyklyje yra pasiekiamos mūsų komandos pasiekimas, kuris padės jums išspręsti problemas, kurias galiu sužmetti laiką nustatant Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: फ़िल्टर - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Filter: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Filter: wp_ultimo_woocommerce_should_use_subscriptions
 
 डेवलपर्स को WooCommerce Subscriptions का उपयोग करने के लिए मजबूर करने की अनुमति देता है।
 

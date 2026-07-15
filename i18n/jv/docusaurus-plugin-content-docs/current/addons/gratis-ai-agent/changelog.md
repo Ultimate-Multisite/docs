@@ -3,7 +3,7 @@ title: Cathetan owah-owahan
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Cathetan Owah-owahan {#changelog}
+# Cathetan Owah-owahan
 
 ## 1.9.0 — Dirilis ing 2026-04-28 {#190--released-on-2026-04-28}
 

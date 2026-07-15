@@ -4,7 +4,7 @@ title: Szűrő - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Szűrő: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Szűrő: wu_bypass_unset_current_user
 
 Ez a szűrő lehetővé teszi a fejlesztők számára, hogy elkerüljék az aktuális felhasználó megsemmisítését.
 

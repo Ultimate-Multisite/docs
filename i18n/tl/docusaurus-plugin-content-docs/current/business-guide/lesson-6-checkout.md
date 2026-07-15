@@ -3,7 +3,7 @@ title: 'Aralin 6: Ang Karanasan sa Pagpaparehistro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Aralin 6: Ang Karanasan sa Pag-signup {#lesson-6-the-signup-experience}
+# Aralin 6: Ang Karanasan sa Pag-signup
 
 Ang daloy ng pagbili ay kung saan nagiging kita ang interes. Nawawalan ng mga customer ang nakalilitong o pangkalahatang proseso ng signup. Ang daloy na partikular sa niche, nagsasalita sa kanilang wika, at magaan sa pakiramdam ay nagko-convert sa kanila.
 

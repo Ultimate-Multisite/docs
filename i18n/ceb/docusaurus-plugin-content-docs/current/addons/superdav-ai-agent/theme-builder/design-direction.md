@@ -3,7 +3,7 @@ title: Direksyon sa Disenyo
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direksyon sa Disenyo {#design-direction}
+# Direksyon sa Disenyo
 
 Ang lakang nga **Direksyon sa Disenyo** nagtugot kanimo sa pagribyu, pagpaayo, ug paghuman sa biswal nga disenyo sa imong theme sa wala pa maghimo ang Theme Builder sa kompleto nga theme.
 

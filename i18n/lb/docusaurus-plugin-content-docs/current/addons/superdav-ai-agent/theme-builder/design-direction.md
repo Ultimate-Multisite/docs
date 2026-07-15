@@ -3,7 +3,7 @@ title: Design-Ausrichtung
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design-Richtung {#design-direction}
+# Design-Richtung
 
 De Schrëtt **Design-Richtung** erlaabt Iech, de visuellen Design vun Ärem Theme ze iwwerpréiwen, ze verfeineren an ofzeschléissen, ier Theme Builder de komplette Theme generéiert.
 

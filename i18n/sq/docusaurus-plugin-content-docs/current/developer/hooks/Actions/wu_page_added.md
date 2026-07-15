@@ -4,7 +4,7 @@ title: Veprim - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Veprimi: wu_page_added {#action-wupageadded}
+# Veprimi: wu_page_added
 
 Lejoni zhvilluesit e plugin-eve të ekzekutojnë gjëra shtesë kur faqet regjistrohen.
 

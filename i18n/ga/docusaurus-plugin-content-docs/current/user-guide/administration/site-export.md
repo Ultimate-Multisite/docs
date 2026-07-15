@@ -3,7 +3,7 @@ title: Airgdh an t-aisle
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exporta an Site {#site-export}
+# Exporta an Site
 
 Leada an pàipe admin **Site Export** a fáilteacht do administratori na ngrú (network administrators) chun site atá ag seachaint, nó an ngrú go léamh, i archeáladh, back-up, nó ar bhealach ábhairt.
 

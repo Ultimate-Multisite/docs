@@ -3,7 +3,7 @@ title: हॉस्पिटॅलिटी मेनू
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# हॉस्पिटॅलिटी मेन्यू (Hospitality Menus) {#hospitality-menus}
+# हॉस्पिटॅलिटी मेन्यू (Hospitality Menus)
 
 **हॉस्पिटॅलिटी मेन्यू** वैशिष्ट्यामुळे Theme Builder ला तुमच्या WordPress साइटवर संरचित (structured) खाद्य आणि पेय मेन्यू पेज तयार करण्याची आणि समाविष्ट करण्याची क्षमता मिळते.
 

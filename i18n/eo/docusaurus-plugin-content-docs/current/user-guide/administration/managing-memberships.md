@@ -3,7 +3,7 @@ title: Maniĝado de Membrioj
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Administriĝo de Membriado {#managing-memberships}
+# Administriĝo de Membriado
 
 En Ultimate Multisite vi povas administri membriado kaj aliri ĉiuj subskribojn sur via retoj. Revizi kaj modifi detalojn de la subskriboj, kiel planoj kaj produktoj, la nombro de sitaĵoj, la fakturita monton kaj frekvencon, historion de pagoj kaj tagojn/instanton.
 

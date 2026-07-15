@@ -3,7 +3,7 @@ title: Menûyên Mêvanperweriyê
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menûyên Mêvanperweriyê {#hospitality-menus}
+# Menûyên Mêvanperweriyê
 
 Taybetmendiya **Menûyên Mêvanperweriyê** dihêle Theme Builder rûpelên menûyên xwarin û vexwarinê yên bi avahiyek rêkûpêk rasterast di malpera te ya WordPress de çêbike û têxe navê.
 

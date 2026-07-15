@@ -4,7 +4,7 @@ title: Filtrilo - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filtro: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filtro: wu_limits_is_fluent_form_above_limit
 
 Kontrolas ĉu donita formulara tipo estas permesita en ĉi tiu plano. Permesas al plugin-programistoj filtri la revenan valoron
 

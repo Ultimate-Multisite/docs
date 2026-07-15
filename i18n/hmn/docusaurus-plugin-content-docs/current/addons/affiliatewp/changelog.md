@@ -3,7 +3,7 @@ title: AffiliateWP Keeb kwm hloov tshiab
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Daim ntawv hloov tshiab {#affiliatewp-changelog}
+# AffiliateWP Daim ntawv hloov tshiab
 
 Version: 2.0.1 - Tso tawm rau 2025-09-28
 

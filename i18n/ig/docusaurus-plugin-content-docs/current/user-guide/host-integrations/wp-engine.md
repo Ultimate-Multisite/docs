@@ -3,7 +3,7 @@ title: Nkwado WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Tích hợp với WP Engine {#wp-engine-integration}
+# Tích hợp với WP Engine
 
 ## Tổng quan {#overview}
 WP Engine là một nền tảng lưu trữ WordPress được quản lý cao cấp, cung cấp hiệu suất tối ưu, bảo mật và khả năng mở rộng cho các trang WordPress. Việc tích hợp này cho phép đồng bộ tên miền tự động giữa Ultimate Multisite và WP Engine.

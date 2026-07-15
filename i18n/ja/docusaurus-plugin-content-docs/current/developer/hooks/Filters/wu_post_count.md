@@ -4,7 +4,7 @@ title: フィルタ - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# フィルタ: wu_post_count {#filter-wupostcount}
+# フィルタ: wu_post_count
 
 プラグイン開発者が合計投稿数を変更できるようにします
 

@@ -4,7 +4,7 @@ title: Ìṣe - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Ìṣe: wu_register_integrations {#action-wuregisterintegrations}
+# Ìṣe: wu_register_integrations
 
 Ó máa ń ṣiṣẹ́ láti gba àwọn ìṣepọ̀ láàyè láti forúkọsílẹ̀ fúnra wọn.
 

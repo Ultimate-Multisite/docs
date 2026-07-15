@@ -3,7 +3,7 @@ title: Producaethau a Prysau y Domenaid
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Producaeddau Domena a Prifyniadau {#domain-products-and-pricing}
+# Producaeddau Domena a Prifyniadau
 
 Mae producaeddau domena yn ddefnyddio i gwneud cyd-deall ar prifyniadau, TLDs (Top-Level Domains), gwarchnad WHOIS, a wybullesu y cyfiderdd. Mae pob producaed domena yn produs Ultimate Multisite standard gyda thlab **Domain Settings** (Cyd-deallau Domena) ychwanegol.
 

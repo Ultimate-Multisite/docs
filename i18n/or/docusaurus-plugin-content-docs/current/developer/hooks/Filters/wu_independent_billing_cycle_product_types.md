@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_independent_billing_cycle_product_types
 sidebar_label: wu_independent_billing_cycle_product_types
 _i18n_hash: 2b9bd3b68a53424272c1c93c6bdc3ef5
 ---
-# ଫିଲ୍ଟର: wu_independent_billing_cycle_product_types {#filter-wuindependentbillingcycleproducttypes}
+# ଫିଲ୍ଟର: wu_independent_billing_cycle_product_types
 
 ସ୍ୱାଧୀନ ବିଲିଂ ଚକ୍ର ଥିବା ଉତ୍ପାଦ ପ୍ରକାରଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରନ୍ତୁ।
 

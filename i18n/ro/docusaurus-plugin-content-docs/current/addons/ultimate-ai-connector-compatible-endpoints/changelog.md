@@ -3,7 +3,7 @@ title: Ultimate AI Connector pentru Endpoint-uri Compatibile Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Jurnal de modificări pentru Ultimate AI Connector pentru puncte de acces compatibile {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Jurnal de modificări pentru Ultimate AI Connector pentru puncte de acces compatibile
 
 ## Versiunea 2.0.0 — Lansat pe 2026-04-24 {#version-200--released-on-2026-04-24}
 

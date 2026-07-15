@@ -3,7 +3,7 @@ title: 'Ders 11: Dîtina Xerîdaran'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Ders 11: Dîtina Mişteriyan {#lesson-11-finding-customers}
+# Ders 11: Dîtina Mişteriyan
 
 Platformek mezin bê mişterî tenê hobiyek e. Ev ders vedibêje ka çawa di vertîkalek taybet de mişterî bi dest bixin -- stratejiyên ku taybetî dixebitin ji ber ku hûn li ser yek pîşesaziyê fokus in.
 

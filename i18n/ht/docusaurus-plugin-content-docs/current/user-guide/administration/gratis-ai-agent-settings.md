@@ -3,7 +3,7 @@ title: Anviwònman Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Anviwònman {#gratis-ai-agent-settings}
+# Gratis AI Agent Anviwònman
 
 Ekran **Settings → Advanced** nan Gratis AI Agent bay konfigirasyon nivo administratè pou entegrasyon backend yo. Paj sa a dokimante voye feedback, kle founisè rechèch, konfigirasyon sèvis Superdav jere, kontwòl Google Calendar, anviwònman SMS TextBee, ak drapo fonksyonalite pou tout rezo a.
 

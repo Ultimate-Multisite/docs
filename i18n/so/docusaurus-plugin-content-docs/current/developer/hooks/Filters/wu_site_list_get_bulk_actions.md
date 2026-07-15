@@ -4,7 +4,7 @@ title: Shaandheeye - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Shaandhee: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
+# Shaandhee: wu_site_list_get_bulk_actions
 
 Shaandhee ficillada tiro-badan ee diyaar u ah goobaha.
 

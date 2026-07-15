@@ -3,7 +3,7 @@ title: ڈیزائن سمت
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# ڈیزائن کی سمت (Design Direction) {#design-direction}
+# ڈیزائن کی سمت (Design Direction)
 
 **ڈیزائن کی سمت** کا مرحلہ آپ کو تھیم کے مکمل تھیم جنریٹ ہونے سے پہلے اس کے بصری ڈیزائن (visual design) کا جائزہ لینے، اسے بہتر بنانے اور حتمی شکل دینے کی اجازت دیتا ہے۔
 

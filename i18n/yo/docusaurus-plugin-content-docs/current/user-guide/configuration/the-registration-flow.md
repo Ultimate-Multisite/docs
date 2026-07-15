@@ -3,7 +3,7 @@ title: Ilana Ìforúkọsílẹ̀
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ìṣàn Ìforúkọsílẹ̀ (v2) {#the-registration-flow-v2}
+# Ìṣàn Ìforúkọsílẹ̀ (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 

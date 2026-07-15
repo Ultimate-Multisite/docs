@@ -4,7 +4,7 @@ title: פילטר - wu_mcp_include_ability
 sidebar_label: wu_mcp_include_ability
 _i18n_hash: 5925d523ccf0a8d9477e873ec3d891c0
 ---
-# מסנן: wu_mcp_include_ability {#filter-wumcpincludeability}
+# מסנן: wu_mcp_include_ability
 
 מסנן זה מאפשר לדרוס את ההחלטה לגבי הכללת יכולת (ability) ב-MCP.
 

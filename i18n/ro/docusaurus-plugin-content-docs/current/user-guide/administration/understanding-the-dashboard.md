@@ -3,7 +3,7 @@ title: Înțelegerea tabloului de bord
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Înțelegerea panoului de control Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Înțelegerea panoului de control Ultimate Multisite
 
 Înainte de a explora opțiunile avansate de configurare și aspectele operaționale ale Ultimate Multisite, hai să aruncăm o privire asupra panoului de control.
 

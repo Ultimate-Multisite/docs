@@ -4,7 +4,7 @@ title: فیلتر - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# فیلتر: secure_auth_cookie {#filter-secureauthcookie}
+# فیلتر: secure_auth_cookie
 
 تعیین می‌کند که آیا کوکی احراز هویت (auth cookie) باید فقط از طریق HTTPS ارسال شود یا خیر.
 

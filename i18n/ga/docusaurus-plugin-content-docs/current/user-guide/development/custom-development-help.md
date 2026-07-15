@@ -3,7 +3,7 @@ title: Cúram Déilte
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Conas an tairm do chuidiúcháin de dhuit ó Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Conas an tairm do chuidiúcháin de dhuit ó Codeable?
 
 Caithfidh méidí ar thuir, caithfidh méidí ar thuir chun na fáilteanna a bheith linn i gcónaí is lán mar atá ag méidí. Má tá sin é seo a bhfuil tú ag iarraidh, tá Codeable an t-amach agam. Is é seo curte áit a bhfaidh tú a fháil ar d'fhéanteach dévelperí le tuairiscí ar Ultimate Multisite.
 

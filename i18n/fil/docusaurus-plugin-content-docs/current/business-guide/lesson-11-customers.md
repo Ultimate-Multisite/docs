@@ -3,7 +3,7 @@ title: 'Aralin 11: Paghahanap ng mga Kustomer'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesson 11: Paghahanap ng mga Customer {#lesson-11-finding-customers}
+# Lesson 11: Paghahanap ng mga Customer
 
 Ang isang magandang platform na walang customer ay parang libangan lang. Tinatalakay ng lesson na ito kung paano makakakuha ng mga customer sa isang *niche vertical*—mga estratehiya na gumagana dahil nakatuon ka sa isang industriya.
 

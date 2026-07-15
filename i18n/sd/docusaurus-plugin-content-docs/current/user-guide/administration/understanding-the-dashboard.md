@@ -3,7 +3,7 @@ title: ڊش بورڊ کي سمجهڻ
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard کي سمجهڻ {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard کي سمجهڻ
 
 انڪي تمام جديد ڪيفيڪيشن (configuration options) ۽ Ultimate Multisite جي عملي طرف ڏسڻ کان اڳ، اچو ته اسان ڊاش بورڊ تي نظر ڪريون.
 

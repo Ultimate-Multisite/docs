@@ -3,7 +3,7 @@ title: Mavhiki ekupedzisira ku Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow yaKuti Kune Theme Builder {#theme-builder-onboarding-flow}
+# Flow yaKuti Kune Theme Builder
 
 Superdav AI Agent v1.12.0 inoratira **Theme Builder onboarding flow** inotora nzira yakagadzirwa inotenderera kuti ndikubatsire kuita theme custom chakanaka panguva unenge uri kuitanisa. Izvi zvinobata chine Site Builder mode ya zamu, zvichipa uye chinoratidza nzira yakagadzirwa nekuita zvikonzero dzakubatsirwa neagent.
 

@@ -4,7 +4,7 @@ title: Ago - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Ago: wu_deactivation {#action-wudeactivation}
+# Ago: wu_deactivation
 
 Lasas aliajn partojn de la plugin alkroĉi siajn rutinojn por malaktivigo
 

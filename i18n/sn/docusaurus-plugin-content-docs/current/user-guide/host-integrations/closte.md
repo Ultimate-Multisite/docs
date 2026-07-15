@@ -3,7 +3,7 @@ title: Kugadzirisa Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integration neCloste {#closte-integration}
+# Integration neCloste
 
 ## Zvinura (Overview) {#overview}
 Closte ndiri platform yekuhost WordPress inotevera Google Cloud infrastructure. Izvi integration inoshandisa kudzidzira zvinhu zvinotevera (automatic domain syncing) uye kuita management we SSL certificates pakati pe Ultimate Multisite neCloste.

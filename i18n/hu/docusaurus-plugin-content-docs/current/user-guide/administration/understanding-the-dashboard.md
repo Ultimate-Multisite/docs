@@ -3,7 +3,7 @@ title: A Vezérlőpult megértése
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Az Ultimate Multisite vezérlőpult bemutatása {#understanding-the-ultimate-multisite-dashboard}
+# Az Ultimate Multisite vezérlőpult bemutatása
 
 Mielőtt belemerülnénk a haladóbb beállítási lehetőségekbe és az Ultimate Multisite működési részleteibe, nézzük meg a vezérlőpultot.
 

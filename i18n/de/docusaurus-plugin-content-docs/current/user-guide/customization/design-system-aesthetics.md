@@ -3,7 +3,7 @@ title: Design System Ästhetik-Fähigkeit
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Ästhetik-Skill {#design-system-aesthetics-skill}
+# Design System Ästhetik-Skill
 
 Der **Design System Ästhetik-Skill** ist ein geführter Ansatz, um die visuelle Identität Ihrer Website zu verfeinern. Er hilft Ihnen, konsistente Entscheidungen bezüglich Typografie, Farbe, Abstände und Bewegungselemente (Motion Tokens) zu treffen, die Ihr Design System definieren.
 

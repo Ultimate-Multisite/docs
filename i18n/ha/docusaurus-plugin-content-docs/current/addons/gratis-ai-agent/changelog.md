@@ -3,7 +3,7 @@ title: Tarihin canje-canje
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Kundin canje-canje {#changelog}
+# Kundin canje-canje
 
 ## 1.9.0 — An fitar a 2026-04-28 {#190--released-on-2026-04-28}
 

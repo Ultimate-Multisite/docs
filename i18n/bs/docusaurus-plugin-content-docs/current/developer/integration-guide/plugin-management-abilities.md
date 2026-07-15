@@ -3,7 +3,7 @@ title: Sposobnosti upravljanja pluginovima
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Funkcionalnosti Upravljanja Pluginima {#plugin-management-abilities}
+# Funkcionalnosti Upravljanja Pluginima
 
 Gratis AI Agent v1.5.0 dolazi sa **7 funkcionalnosti upravljanja pluginima** koje AI asistent može aktivirati tokom razgovora. Ove funkcionalnosti pružaju programski kontrolu nad WordPress pluginovima instaliranim putem [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

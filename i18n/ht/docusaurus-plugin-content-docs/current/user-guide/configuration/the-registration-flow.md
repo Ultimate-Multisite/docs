@@ -3,7 +3,7 @@ title: Flèch Enrejistrasyon an
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Flèy la Fòmasyon Enskripsyon (v2) {#the-registration-flow-v2}
+# Flèy la Fòmasyon Enskripsyon (v2)
 
 _**NOTE KRITIK: Sa tèks sa a refere a Ultimate Multisite v2.x.**_
 

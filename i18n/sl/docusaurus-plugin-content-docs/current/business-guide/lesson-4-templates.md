@@ -3,7 +3,7 @@ title: 'Lekcija 4: Izdelava nišnih predlog'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcija 4: Izdelava nišnih predlog {#lesson-4-building-niche-templates}
+# Lekcija 4: Izdelava nišnih predlog
 
 Predloge so jedro vaše nišne vrednostne ponudbe. Lastnik fitnes studia, ki se prijavi in vidi spletno mesto, ki že izgleda kot fitnes spletno mesto -- z urniki vadb, profili trenerjev in ustreznimi slikami -- bo veliko verjetneje ostal kot tisti, ki vidi prazno platno.
 

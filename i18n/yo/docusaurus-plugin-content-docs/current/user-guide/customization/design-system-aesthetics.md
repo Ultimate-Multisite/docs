@@ -3,7 +3,7 @@ title: Ọgbọn Ẹwa Ètò Apẹrẹ
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ọgbọn Ẹwa Eto Apẹrẹ {#design-system-aesthetics-skill}
+# Ọgbọn Ẹwa Eto Apẹrẹ
 
 **Ọgbọn Ẹwa Eto Apẹrẹ** jẹ ọna itọsọna fun fífi ìdánimọ̀ ojú-wíwo ojúlé rẹ ṣe dáadáa. Ó ràn ọ́ lọ́wọ́ láti ṣe àwọn ìpinnu tó bá ara wọn mu nípa typography, àwọ̀, ààyè, àti àwọn àmi ìṣipopada tó ń ṣàlàyé eto apẹrẹ rẹ.
 

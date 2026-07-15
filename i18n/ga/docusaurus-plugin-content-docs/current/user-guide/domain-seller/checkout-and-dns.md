@@ -3,7 +3,7 @@ title: Fíneán Fhíneamh agus DNS Chláir
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Déanamh ar Fholas agus Ar Chuidí DNS {#checkout-field-and-customer-dns-management}
+# Déanamh ar Fholas agus Ar Chuidí DNS
 
 ## An fáil chun an domáin a chur i bhfolas {#the-domain-selection-checkout-field}
 

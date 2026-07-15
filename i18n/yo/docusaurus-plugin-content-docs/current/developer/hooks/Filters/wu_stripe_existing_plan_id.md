@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Àlẹmọ: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Àlẹmọ: wu_stripe_existing_plan_id
 
 Ó máa ń ṣe àlẹmọ ID ti plan láti ṣàyẹ̀wò. Tí èyí bá wà, subscription tuntun yóò lo plan yìí.
 

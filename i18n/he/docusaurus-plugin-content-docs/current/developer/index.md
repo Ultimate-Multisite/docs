@@ -3,7 +3,7 @@ title: תיעוד מפתחים
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# תיעוד למפתחים {#developer-documentation}
+# תיעוד למפתחים
 
 מדריך זה מספק למפתחים את כל מה שצריך כדי להתממשק עם, להרחיב או לפתח תוספים עבור Ultimate Multisite. Ultimate Multisite הופך רשת WordPress Multisite לפלטפורמת אתר כשירות (WaaS).
 

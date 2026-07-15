@@ -3,7 +3,7 @@ title: Udibaniso lweCloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Uhlanganiso lwe-Cloudflare {#cloudflare-integration}
+# Uhlanganiso lwe-Cloudflare
 
 ## Ushwankathelo {#overview}
 I-Cloudflare yinethiwekhi ekhokelayo yokuhanjiswa komxholo (CDN) kunye nomboneleli wokhuseleko onceda ukukhusela nokukhawulezisa iiwebhusayithi. Olu hlanganiso luvumela ulawulo oluzenzekelayo lwe-domain phakathi kwe-Ultimate Multisite ne-Cloudflare, ngakumbi kufakelo lwe-multisite yee-subdomain.

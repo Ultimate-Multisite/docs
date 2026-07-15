@@ -3,7 +3,7 @@ title: سەرچاوەگرنی سیستەمی چەندین شوێن
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# ڕێبەری دامەزراندنی Multisite {#multisite-setup-wizard}
+# ڕێبەری دامەزراندنی Multisite
 
 Ultimate Multisite یەکێکە لە ئەو ئامێرانەی کە بە شێوەیەکی خۆکار دەگۆڕێت بۆ تۆڕێکی WordPress Multisite. ئەمە پێویستیی ئەوەی هەڵدەستیت `wp-config.php` یەک بەش بکەیت یان لایەنەکانی داتابەیس (database) ڕێک بخەیت لەبیر دەکاتەوە.
 

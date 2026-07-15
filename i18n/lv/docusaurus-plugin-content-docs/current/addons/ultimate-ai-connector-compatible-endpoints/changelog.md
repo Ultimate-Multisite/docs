@@ -3,7 +3,7 @@ title: Ultimate AI Connector savietojamiem galapunktiem izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for saderīgu galapunktu izmaiņu žurnāls {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector for saderīgu galapunktu izmaiņu žurnāls
 
 ## Versija 2.0.0 — Izlaista 2026-04-24 {#version-200--released-on-2026-04-24}
 

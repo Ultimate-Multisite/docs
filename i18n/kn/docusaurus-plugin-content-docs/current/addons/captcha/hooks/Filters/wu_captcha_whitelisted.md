@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Filter: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Filter: wu_captcha_whitelisted
 
 ಪ್ರಸ್ತುತ ಬಳಕೆದಾರರು ಅಥವಾ ರೀಕ್ವೆಸ್ಟ್ ಅನ್ನು ವೈಟ್‌ಲಿಸ್ಟ್ ಮಾಡಬೇಕೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 

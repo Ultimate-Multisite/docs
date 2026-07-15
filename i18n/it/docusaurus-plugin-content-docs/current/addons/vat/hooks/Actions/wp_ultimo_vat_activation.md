@@ -4,7 +4,7 @@ title: Azione - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Azione: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Azione: wp_ultimo_vat_activation
 
 Permetti ad altre parti del plugin di allegare le loro routine per l'attivazione
 

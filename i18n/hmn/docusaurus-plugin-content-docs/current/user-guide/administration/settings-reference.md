@@ -3,7 +3,7 @@ title: Kev Qhia Txog Cov Chaw Teeb Tsa
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Cov Chaw Teeb Tseg Siv Los Saib {#settings-reference}
+# Cov Chaw Teeb Tseg Siv Los Saib
 
 Nplooj ntawv no khaws cov chaw teeb tseg uas cuam tshuam kev tswj txhua hnub thiab cov kev hloov cwj pwm tsis ntev los no hauv Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: የPayPal ዝግጅት
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# የPayPal Gateway ማዋቀር (v2) {#setting-up-the-paypal-gateway-v2}
+# የPayPal Gateway ማዋቀር (v2)
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 

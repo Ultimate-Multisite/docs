@@ -3,7 +3,7 @@ title: યોજનાને અપગ્રેડ કરવી
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# યોજના અપગ્રેડ કરવી (v2) {#upgrading-a-plan-v2}
+# યોજના અપગ્રેડ કરવી (v2)
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite version 2.x વિશે છે.**_
 

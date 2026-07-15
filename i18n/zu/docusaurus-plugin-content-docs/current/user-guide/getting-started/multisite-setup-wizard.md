@@ -3,7 +3,7 @@ title: Isilekeleli Sokusetha Amasayithi Amaningi
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Iwizadi Yokusetha i-Multisite {#multisite-setup-wizard}
+# Iwizadi Yokusetha i-Multisite
 
 Ultimate Multisite ifaka iwizadi eyakhelwe ngaphakathi eguqula ngokuzenzakalelayo ukufakwa okujwayelekile kwe-WordPress kube yinethiwekhi ye-WordPress Multisite. Lokhu kususa isidingo sokuhlela ngesandla `wp-config.php` noma ukusebenzisa imiyalo yedathabheyisi.
 

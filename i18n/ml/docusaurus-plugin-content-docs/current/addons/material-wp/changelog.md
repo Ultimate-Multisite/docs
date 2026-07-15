@@ -3,7 +3,7 @@ title: Material WP മാറ്റങ്ങളുടെ ലോഗ്
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP Changelog {#material-wp-changelog}
+# Material WP Changelog
 
 Version 1.1.15 - 01/26/2026
 * മെച്ചപ്പെടുത്തിയത്: കോഡ് ശൈലി (Code style) അപ്ഡേറ്റ് ചെയ്യുകയും ഫോർമാറ്റിംഗ് മെച്ചപ്പെടുത്തുകയും ചെയ്തു;

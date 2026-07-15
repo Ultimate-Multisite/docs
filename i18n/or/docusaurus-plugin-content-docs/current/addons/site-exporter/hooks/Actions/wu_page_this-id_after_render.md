@@ -4,7 +4,7 @@ title: 'କାର୍ଯ୍ୟ - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 2bdd062afe3dbfa7e50dc5162fba9b99
 ---
-# Action: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
+# Action: wu_page_\{$this->id\}_after_render
 
 ନିର୍ଦ୍ଦିଷ୍ଟ ପୃଷ୍ଠା ଦେଖାଇବା ପରେ ଚାଲେ।
 

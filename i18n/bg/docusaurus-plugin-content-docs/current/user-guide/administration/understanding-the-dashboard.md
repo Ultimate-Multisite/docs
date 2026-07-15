@@ -3,7 +3,7 @@ title: Разбиране на Панела
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Разбиране на Dashboard-а на Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Разбиране на Dashboard-а на Ultimate Multisite
 
 Преди да се потопим в по-напреднали настройки и оперативни аспекти на Ultimate Multisite, нека първо погледнем на dashboard-а.
 

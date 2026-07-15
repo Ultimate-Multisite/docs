@@ -3,7 +3,7 @@ title: Txheeb Xyuas Kev Sib Piv Xim hauv Pawg Xim
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Xyuas Palette Contrast Kom Raug {#validate-palette-contrast}
+# Xyuas Palette Contrast Kom Raug
 
 Lub peev xwm **Xyuas Palette Contrast Kom Raug** xyuas cov khub xim hauv koj lub palette tsim kom ua raws WCAG (Web Content Accessibility Guidelines) ua ntej muab siv rau koj lub theme.
 

@@ -3,7 +3,7 @@ title: การตั้งค่า Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# การตั้งค่า Gratis AI Agent {#gratis-ai-agent-settings}
+# การตั้งค่า Gratis AI Agent
 
 หน้าจอ **การตั้งค่า → ขั้นสูง** ใน Gratis AI Agent มีการกำหนดค่าระดับผู้ดูแลระบบสำหรับการผสานการทำงานฝั่งแบ็กเอนด์ หน้านี้อธิบายการส่งต่อข้อเสนอแนะ คีย์ของผู้ให้บริการค้นหา การตั้งค่าบริการ Superdav แบบจัดการ การควบคุม Google Calendar การตั้งค่า SMS ของ TextBee และแฟล็กฟีเจอร์ทั่วทั้งเครือข่าย
 

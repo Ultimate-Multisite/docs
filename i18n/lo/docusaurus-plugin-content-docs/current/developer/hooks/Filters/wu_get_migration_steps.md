@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# ຕົວກອງ: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# ຕົວກອງ: wu_get_migration_steps
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ ແລະ add-ons ເພີ່ມຂັ້ນຕອນການຍ້າຍຂໍ້ມູນໃໝ່
 

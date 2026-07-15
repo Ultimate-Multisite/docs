@@ -3,7 +3,7 @@ title: क्षमता संदर्भ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# क्षमतांचा संदर्भ {#abilities-reference}
+# क्षमतांचा संदर्भ
 
 क्षमता या Gratis AI Agent तुमच्या WordPress स्थापनेवर वापरू शकणाऱ्या मूलभूत क्रिया आहेत. प्रत्येक क्षमता ही नोंदणीकृत PHP class असते जी JSON schema उघड करते — agent रनटाइमवर हे schema वाचून कोणते parameters आवश्यक आहेत आणि क्षमता काय परत करते हे समजतो.
 

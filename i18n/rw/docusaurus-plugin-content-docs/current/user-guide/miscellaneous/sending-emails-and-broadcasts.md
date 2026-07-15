@@ -3,7 +3,7 @@ title: Kohereza imeyili n’ubutumwa rusange
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Kohereza Emails na Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Kohereza Emails na Broadcasts (v2)
 
 _**ICYITONDERWA CY’INGENZI: Iyi ngingo ireba Ultimate Multisite verisiyo 2.x.**_
 

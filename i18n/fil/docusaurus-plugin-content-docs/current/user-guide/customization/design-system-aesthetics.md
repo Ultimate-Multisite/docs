@@ -3,7 +3,7 @@ title: Kasanayan sa Estetika ng Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kasanayan sa Estetika ng Design System {#design-system-aesthetics-skill}
+# Kasanayan sa Estetika ng Design System
 
 Ang **Design System Aesthetics skill** ay isang gabay na paraan para pagandahin ang visual identity ng iyong site. Tinutulungan ka nitong gumawa ng consistent na desisyon tungkol sa typography, kulay, pagitan (spacing), at motion tokens na siyang nagtatakda ng design system mo.
 

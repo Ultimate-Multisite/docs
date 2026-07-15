@@ -4,7 +4,7 @@ title: Filter - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 సురక్షితమైన ప్రామాణిక ధృవీకరణ రీడైరెక్ట్‌ను ఉపయోగించాలా వద్దా అని నిర్ణయించే ఫిల్టర్ ఇది.
 

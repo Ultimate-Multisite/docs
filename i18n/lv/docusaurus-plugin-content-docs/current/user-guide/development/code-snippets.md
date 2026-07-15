@@ -3,7 +3,7 @@ title: Koda fragmenti
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodu fragmenti v2 {#code-snippets-for-v2}
+# Kodu fragmenti v2
 
 Visbie kodas fragmenti **WordPress** tiek izmantoti noteiktām darbībām, kas, iespējams, būtu nepieciešamas atļautai īpašu mazā pluginam. Šos kodu fragmentus ietver vienā WordPress core vai tēmas failā (parasti jūsu tēmas `functions.php` failā) vai var izmantot kā MU pluginu.
 

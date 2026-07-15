@@ -4,7 +4,7 @@ title: 필터 - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# 필터: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# 필터: wu_make_primary_domain_redirect_url
 
 도메인을 기본으로 설정한 후 리다이렉트 URL을 필터링합니다.
 

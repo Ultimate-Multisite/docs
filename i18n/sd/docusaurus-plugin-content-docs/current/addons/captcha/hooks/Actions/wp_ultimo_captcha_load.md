@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Action: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# Action: wp_ultimo_captcha_load
 
 جڏهن سڀ dependencies لوڊ ڪيون ويون هجن تڏهن trigger ٿئي ٿو.
 

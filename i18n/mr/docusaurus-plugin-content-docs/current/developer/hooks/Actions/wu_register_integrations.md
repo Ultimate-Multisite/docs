@@ -4,7 +4,7 @@ title: कृती - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations {#action-wuregisterintegrations}
+# Action: wu_register_integrations
 
 हे हुक (hook) ट्रिगर होते, जेणेकरून इंटिग्रेशन्सला स्वतःची नोंदणी (register) करण्याची परवानगी मिळते.
 

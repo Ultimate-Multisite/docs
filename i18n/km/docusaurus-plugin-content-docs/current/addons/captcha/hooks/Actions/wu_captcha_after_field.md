@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# សកម្មភាព: wu_captcha_after_field {#action-wucaptchaafterfield}
+# សកម្មភាព: wu_captcha_after_field
 
 ដំណើរការបន្ទាប់ពីវាល captcha ត្រូវបានបង្ហាញ។
 

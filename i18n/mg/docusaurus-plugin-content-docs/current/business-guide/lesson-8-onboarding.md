@@ -3,7 +3,7 @@ title: 'Lesona 8: Fampidirana ny mpanjifa'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesona 8: Fampidirana ny Mpanjifa {#lesson-8-customer-onboarding}
+# Lesona 8: Fampidirana ny Mpanjifa
 
 Ny mampisoratra anarana mpanjifa dia antsasaky ny asa ihany. Raha miditra izy ireo, mahatsiaro ho very hevitra, ary tsy miverina intsony, dia very izy ireo. Ity lesona ity dia mamolavola ny traikefa izay manova fisoratana anarana vaovao ho mpanjifa mavitrika sy mandray anjara.
 

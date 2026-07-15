@@ -3,7 +3,7 @@ title: Disaini süsteemi estetiikakundus
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Disaini süste estetika oskus {#design-system-aesthetics-skill}
+# Disaini süste estetika oskus
 
 **Disaini süste estetika oskus** on juhendatud lähenemine veebilehtide visuaalse identiteedi hoidmise parandamiseks. See aitab teid teha ühtlustatud otsuseid tipograafia, värvid, väljad ja liikumise tokenide kohta, mis määratavad teie disainijärjestust.
 

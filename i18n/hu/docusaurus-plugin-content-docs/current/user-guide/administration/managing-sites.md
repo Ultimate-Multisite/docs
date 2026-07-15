@@ -3,7 +3,7 @@ title: Webhelyek kezelése
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Weboldalak kezelése {#managing-sites}
+# Weboldalak kezelése
 
 A weboldalak (vagy aloldalak) a WaaS vállalkozásod alapját képezik. Az Ultimate Multisite 3 típusú weboldalt különböztet meg:
 

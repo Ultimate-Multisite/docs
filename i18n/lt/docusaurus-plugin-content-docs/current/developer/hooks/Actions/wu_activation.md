@@ -4,7 +4,7 @@ title: Veiksmas - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Veiksmas: wu_activation {#action-wuactivation}
+# Veiksmas: wu_activation
 
 Leiskite kitoms plugin dalims prijungti savo aktyvavimo procedūras
 

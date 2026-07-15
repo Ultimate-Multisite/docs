@@ -3,7 +3,7 @@ title: Ajuda amb desenvolupament personalitzat
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Com obtenir ajuda de desenvolupament personalitzada de Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Com obtenir ajuda de desenvolupament personalitzada de Codeable?
 
 A vegades, realment necessitem una personalització fantàstica per fer que la nostra xarxa flueixi exactament com volem. Si és el que busqueu, recomanem [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), un lloc on podeu trobar desenvolupadors amb experiència en Ultimate Multisite.
 

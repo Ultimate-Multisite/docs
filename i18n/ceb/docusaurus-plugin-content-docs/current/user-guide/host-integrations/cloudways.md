@@ -3,7 +3,7 @@ title: Integrasyon sa Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Overview {#overview}
 Ang Cloudways usa ka managed cloud hosting platform nga nagtugot kanimo sa pag-deploy og WordPress sites sa nagkalain-laing cloud providers sama sa DigitalOcean, AWS, Google Cloud, ug uban pa. Kini nga integration naghatag og automatic domain syncing ug SSL certificate management tali sa Ultimate Multisite ug Cloudways.

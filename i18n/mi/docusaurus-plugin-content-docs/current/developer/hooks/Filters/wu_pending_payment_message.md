@@ -4,7 +4,7 @@ title: Tātari - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Tātari: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Tātari: wu_pending_payment_message
 
 Tukuna te kaiwhakamahi kia huri i te karere mō ngā utu e tārewa ana.
 

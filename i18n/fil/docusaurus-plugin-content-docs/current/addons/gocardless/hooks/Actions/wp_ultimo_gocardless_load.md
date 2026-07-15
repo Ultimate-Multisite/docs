@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Action: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Action: wp_ultimo_gocardless_load
 
 Ito ay tumutugon kapag lahat ng mga kailangan (dependencies) ay na-load na.
 

@@ -3,7 +3,7 @@ title: Prieskumný rozhovor
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Prieskumný rozhovor {#discovery-interview}
+# Prieskumný rozhovor
 
 **Prieskumný rozhovor** je prvým krokom v procese návrhu Theme Builder. Zhromažďuje informácie o vašej lokalite, podnikaní a dizajnových preferenciách, aby vytvoril personalizovanú tému.
 

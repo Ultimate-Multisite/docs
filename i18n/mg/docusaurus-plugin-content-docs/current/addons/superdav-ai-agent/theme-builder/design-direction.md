@@ -3,7 +3,7 @@ title: Tari-dalana momba ny famolavolana
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Torolalan'ny Famolavolana {#design-direction}
+# Torolalan'ny Famolavolana
 
 Ny dingana **Torolalan'ny Famolavolana** dia mamela anao hijery, hanatsara, ary hamarana ny famolavolana hita maso an'ny theme-nao alohan'ny hamoronan'ny Theme Builder ny theme feno.
 

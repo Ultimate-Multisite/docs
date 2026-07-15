@@ -4,7 +4,7 @@ title: Action - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action : wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action : wu_page_enqueue_scripts
 
 Ajout d’une action personnalisée ici afin que nous ayons un endroit pour mettre en file d’attente les scripts et les styles selon les besoins\ et nous assurer qu’ils ne sont chargés que sur les bonnes pages
 

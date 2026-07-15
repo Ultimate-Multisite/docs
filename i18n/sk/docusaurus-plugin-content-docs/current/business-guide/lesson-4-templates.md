@@ -3,7 +3,7 @@ title: 'Lekcia 4: Vytváranie špecializovaných šablón'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcia 4: Tvorba šablón pre niku {#lesson-4-building-niche-templates}
+# Lekcia 4: Tvorba šablón pre niku
 
 Šablóny sú jadrom vašej hodnotovej ponuky pre niku. Majiteľ fitness štúdia, ktorý sa zaregistruje a uvidí web, ktorý už vyzerá ako fitness web -- s rozvrhmi hodín, profilmi trénerov a správnymi obrázkami -- má oveľa väčšiu pravdepodobnosť, že zostane, než ten, ktorý uvidí prázdne plátno.
 

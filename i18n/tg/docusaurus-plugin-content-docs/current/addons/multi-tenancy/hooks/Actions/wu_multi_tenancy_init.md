@@ -4,7 +4,7 @@ title: Амал - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Амал: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Амал: wu_multi_tenancy_init
 
 Пас аз пурра оғоз шудани addon-и Multi-Tenancy иҷро мешавад.
 

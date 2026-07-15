@@ -3,7 +3,7 @@ title: 'שיעור 3: הגדרת הרשת שלך'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# שיעור 3: הגדרת הרשת שלך {#lesson-3-setting-up-your-network}
+# שיעור 3: הגדרת הרשת שלך
 
 הגיע הזמן לבנות. בשיעור זה תתקין את Ultimate Multisite ותגדיר את יסודות רשת FitSite. כל החלטה שאתה מקבל כאן נעשית תוך התחשבות בנישה של כושר.
 

@@ -3,7 +3,7 @@ title: Müstəqil Kiracı Əməliyyatları
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Müstəqil Tenant Əməliyyatları {#sovereign-tenant-operations}
+# Müstəqil Tenant Əməliyyatları
 
 Ultimate Multisite 1.2.0 müstəqil (sovereign) tenantlar üçün əməliyyat alətləri əlavə edir: bu, özünəmxtəlif verilənlər bazası, fayl sisteminin kök nöqtəsi və yönləndirmə konteksti ilə işləyən alt-saytları nəzərdə tutur, lakin onların şəbəkə administrasiyasından görünməsi davam edir.
 

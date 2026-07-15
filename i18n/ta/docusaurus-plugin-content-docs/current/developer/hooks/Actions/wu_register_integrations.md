@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations {#action-wuregisterintegrations}
+# Action: wu_register_integrations
 
 இன்டெகிரேஷன்கள் (integrations) தங்களை பதிவு செய்ய அனுமதிக்க இந்த செயல்பாடு (action) பயன்படுத்தப்படுகிறது.
 

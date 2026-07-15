@@ -3,7 +3,7 @@ title: តម្រូវការ
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# តម្រូវការសម្រាប់ Ultimate Multisite {#ultimate-multisite-requirements}
+# តម្រូវការសម្រាប់ Ultimate Multisite
 
 មុននឹងទិញ Ultimate Multisite អ្នកប្រហែលជាចង់ដឹងថា តើមានតម្រូវការអ្វីខ្លះដើម្បីដំណើរការ plugin របស់យើង។ ជាសំណាងល្អ មានតម្រូវការមូលដ្ឋានតែប៉ុណ្ណោះសម្រាប់ការដំណើរការ Ultimate Multisite៖ **ឈ្មោះដែន (domain name)**, **អ្នកផ្តល់សេវា hosting** ដែលល្អ និងការដំឡើង WordPress **Multisite**។ នោះគឺគ្រប់យ៉ាងដែលអ្នកត្រូវការ!
 

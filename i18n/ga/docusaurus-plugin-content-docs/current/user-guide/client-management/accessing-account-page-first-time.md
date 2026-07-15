@@ -3,7 +3,7 @@ title: Céadreachais ar an curtais Áirítear
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Conas éim féidir liom rud éifeachtúil mo shláin containt a fáil anois? {#how-can-i-access-my-account-page-for-the-first-time}
+# Conas éim féidir liom rud éifeachtúil mo shláin containt a fáil anois?
 
 Fáilte do Ultimate Multisite!
 

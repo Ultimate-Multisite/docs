@@ -3,7 +3,7 @@ title: Migrare a V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# De la V1 a la V2 Migrando {#migrating-from-v1}
+# De la V1 a la V2 Migrando
 
 ## Ultimate Multisite ha cambiado de su familia original de lanzamientos 1.x a la familia 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

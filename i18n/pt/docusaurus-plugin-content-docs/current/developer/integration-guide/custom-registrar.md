@@ -3,7 +3,7 @@ title: Criar uma integração personalizada com um registador
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Criar uma integração personalizada de registrar {#building-a-custom-registrar-integration}
+# Criar uma integração personalizada de registrar
 
 O addon Domain Seller usa um padrão de **Integration Registry**. Cada registrar é uma classe PHP que implementa `Domain_Selling_Capability` e regista-se através do action hook `wu_domain_seller_register_capabilities`.
 

@@ -3,7 +3,7 @@ title: Integratsiya qo‘llanmasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratsiya qo‘llanmasi {#integration-guide}
+# Integratsiya qo‘llanmasi
 
 Ushbu qo‘llanma Ultimate Multisite bilan keng tarqalgan integratsiya andozalarini, jumladan tashqi xizmatlarga ulanish, maxsus to‘lov shlyuzlarini yaratish va webhooklarni qayta ishlashni qamrab oladi.
 

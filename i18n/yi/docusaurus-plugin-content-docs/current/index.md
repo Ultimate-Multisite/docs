@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite דאָקומענטאַציע {#ultimate-multisite-documentation}
+# Ultimate Multisite דאָקומענטאַציע
 
 ברוכים הבאים צו דער Ultimate Multisite דאָקומענטאַציע. Ultimate Multisite פֿאַרוואַנדלט WordPress Multisite אין אַ פולשטענדיקע וועבזייטל־ווי־אַ־דינסט (WaaS) פּלאַטפֿאָרמע.
 

@@ -3,7 +3,7 @@ title: Scealta a bhfuil an talamh chomhartha.
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Aware de Theme {#theme-aware-skills}
+# Skills Aware de Theme
 
 An Superdav AI Agent v1.10.0 chuireann séar nua skills built-in a bhfeolaí, a bhfuil an talamh WordPress atá agat ag obair ar na hionta. Teastaíonn na skills seo curte ag teacht chun cinn go mór agus a bheith ag fáil iarrachtaí agus cúaitheachta áitigh a shonraithe ar chuid ardán agus feichar na hionta.
 

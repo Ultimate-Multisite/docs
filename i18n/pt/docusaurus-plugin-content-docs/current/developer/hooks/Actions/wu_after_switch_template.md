@@ -4,7 +4,7 @@ title: Ação - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Ação: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Ação: wu_after_switch_template
 
 Permite que desenvolvedores de plugins associem funções depois de um utilizador ou super admin mudar o modelo do site
 

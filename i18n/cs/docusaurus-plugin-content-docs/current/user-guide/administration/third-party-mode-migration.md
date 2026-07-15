@@ -3,7 +3,7 @@ title: Migrace do režimu třetí strany
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrace do režimu třetích stran {#third-party-mode-migration}
+# Migrace do režimu třetích stran
 
 Superdav AI Agent v1.12.0 mění způsob, jak jsou zpracovány schopnosti (abilities) třetích stran. **Třetí režim nyní výchozí stav má "auto"**, což umožňuje integraci s nativním WordPress Abilities API na WordPressu 7.0+ bez nutnosti ruční konfigurace.
 

@@ -3,7 +3,7 @@ title: Tattaunawar Ganowa
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Hirar Gano {#discovery-interview}
+# Hirar Gano
 
 **Hirar Gano** ita ce mataki na farko a tsarin zane na Theme Builder. Tana tattara bayanai game da shafinka, kasuwancinka, da abubuwan da ka fi so a zane domin ƙirƙirar theme na musamman.
 

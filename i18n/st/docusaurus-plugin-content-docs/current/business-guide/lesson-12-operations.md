@@ -3,7 +3,7 @@ title: 'Thuto ea 12: Ho tsamaisa Khoebo'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Thuto ya 12: Ho Tsamaisa Khoebo {#lesson-12-running-the-business}
+# Thuto ya 12: Ho Tsamaisa Khoebo
 
 Sethala ha se projeke eo o e qetang -- ke khoebo eo o e tsamaisang. Thuto ena e akaretsa ditshebetso tsa letsatsi le letsatsi tsa ho laola FitSite: tshehetso, ditefiso, tlhokomelo, le ho boloka bareki ba thabile.
 

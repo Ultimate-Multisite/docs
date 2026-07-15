@@ -3,7 +3,7 @@ title: Comhtháthú Ilthionóntachta
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Comhtháthú Il-Tionóntachta {#multi-tenancy-integration}
+# Comhtháthú Il-Tionóntachta
 
 Ultimate Multisite: Athraíonn Il-Tionóntacht 1.2.0 roinnt pointí teagmhála comhtháthaithe do thionóntaí ceannasacha, fíorú imirce, agus uathoibriú shaolré tionóntaí.
 

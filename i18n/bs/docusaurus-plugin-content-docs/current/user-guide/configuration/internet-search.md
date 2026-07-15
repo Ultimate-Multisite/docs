@@ -3,7 +3,7 @@ title: Pretraživanje interneta
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internetski pretraga {#internet-search}
+# Internetski pretraga
 
 Gratis AI Agent v1.5.0 dodaje mogućnost **Internetske pretrage** koja AI asistentu omogućava dohvaćanje ažurnih informacija s web stranice tokom razgovora. Ovo je omogućeno putem [Brave Search API](https://brave.com/search/api/) ili [Tavily API](https://tavily.com/).
 

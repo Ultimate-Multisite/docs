@@ -3,7 +3,7 @@ title: 'Lektioun 2: Deng Nisch auswielen'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lektioun 2: Deng Nisch auswielen {#lesson-2-picking-your-niche}
+# Lektioun 2: Deng Nisch auswielen
 
 An der Lektioun 1 hu mir festgestallt, firwat eng Nisch besser ass wéi eppes Generesches. Elo muss du deng auswielen. Dës Lektioun gëtt dir e Kader, fir eng Nisch ze fannen an ze validéieren, ier s du Zäit investéiers, fir eppes dofir ze bauen.
 

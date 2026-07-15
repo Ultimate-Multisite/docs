@@ -3,7 +3,7 @@ title: 'Phunziro 7: Kuchipanga Kukhala Chanu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Phunziro 7: Kupangitsa Kukhala Kwanu {#lesson-7-making-it-yours}
+# Phunziro 7: Kupangitsa Kukhala Kwanu
 
 Makasitomala anu asamamve ngati akugwiritsa ntchito "plugin inayake ya WordPress." Ayenera kumva ngati akugwiritsa ntchito FitSite -- pulatifomu yomangidwa kwa makampani awo. Phunziroli limafotokoza za branding, white-labeling, ndi kupangitsa pulatifomu kumveka ngati chinthu chathunthu.
 

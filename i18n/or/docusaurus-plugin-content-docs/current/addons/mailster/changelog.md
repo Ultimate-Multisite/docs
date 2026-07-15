@@ -3,7 +3,7 @@ title: Mailster ପରିବର୍ତ୍ତନ ତାଲିକା
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster ପରିବର୍ତ୍ତନ ତାଲିକା {#mailster-changelog}
+# Mailster ପରିବର୍ତ୍ତନ ତାଲିକା
 
 ### 1.0.0 {#100}
 * ପ୍ରାରମ୍ଭିକ ମୁକ୍ତି

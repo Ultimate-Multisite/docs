@@ -4,7 +4,7 @@ title: ການດຳເນີນການ - wu_domain_seller_complete_registra
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# ການກະທຳ: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# ການກະທຳ: wu_domain_seller_complete_registration
 
 ຈະຖືກເອີ້ນເມື່ອການຊຳລະເງິນປ່ຽນໄປສູ່ສະຖານະທີ່ຄວນກະຕຸ້ນການລົງທະບຽນໂດເມນ.
 

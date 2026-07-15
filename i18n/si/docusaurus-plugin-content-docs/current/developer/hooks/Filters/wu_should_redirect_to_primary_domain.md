@@ -4,7 +4,7 @@ title: පෙරහන - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# ෆිල්ටරය: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# ෆිල්ටරය: wu_should_redirect_to_primary_domain
 
 නැවත යොමු කිරීම සිදුවීම වැළැක්වීමට, සංවර්ධකයන්ට එය කෙටි මඟින් නවත්වීමට ඉඩ දෙයි.
 

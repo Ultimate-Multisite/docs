@@ -3,7 +3,7 @@ title: 支払いを受ける
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# 支払いを受け取る（v2） {#getting-paid-v2}
+# 支払いを受け取る（v2）
 
 _**重要な注記: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

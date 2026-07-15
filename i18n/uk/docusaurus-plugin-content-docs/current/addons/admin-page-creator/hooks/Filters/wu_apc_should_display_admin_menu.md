@@ -4,7 +4,7 @@ title: Фільтр - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Фільтр: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Фільтр: wu_apc_should_display_admin_menu
 
 Дозволяє адміністраторам приховувати сторінки адмін-меню, якщо вони завершили процес налаштування.
 

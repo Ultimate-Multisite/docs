@@ -4,7 +4,7 @@ title: Ìgbésẹ̀ - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ìṣe: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Ìṣe: wu_handle_customer_meta_fields
 
 Gba àwọn olùdàgbàsókè àfikún láàyè láti fi data meta pamọ́ ní àwọn ọ̀nà míì tí wọ́n bá nílò rẹ̀.
 

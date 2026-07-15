@@ -3,7 +3,7 @@ title: CyberPanel integreerimine
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integroitum {#cyberpanel-integration}
+# CyberPanel Integroitum
 
 See, kuidas je die Ultimate Multisite CyberPanel integratiewe konfigurer so dat gedefinieerde domeine in jou netwerk outomaties as virtual hosts in CyberPanel byvoeg (en verwyder) met opsionele auto-SSL provisioning via Let's Encrypt.
 

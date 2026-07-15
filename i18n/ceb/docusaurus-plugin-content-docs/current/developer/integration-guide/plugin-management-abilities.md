@@ -3,7 +3,7 @@ title: Mga Abilidad sa Pagdumala sa Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Mga Abilidad sa Pagdumala sa Plugin {#plugin-management-abilities}
+# Mga Abilidad sa Pagdumala sa Plugin
 
 Ang Gratis AI Agent v1.5.0 nagdala og **7 ka abilidad sa pagdumala sa plugin** nga mahimong tawagon sa AI nga katabang panahon sa panag-istorya. Kini nga mga abilidad naghatag og programmatic nga kontrol sa mga WordPress plugin nga gi-install pinaagi sa [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

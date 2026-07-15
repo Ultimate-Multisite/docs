@@ -3,7 +3,7 @@ title: 'Mësimi 6: Përvoja e regjistrimit'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Mësimi 6: Përvoja e regjistrimit {#lesson-6-the-signup-experience}
+# Mësimi 6: Përvoja e regjistrimit
 
 Rrjedha e checkout është vendi ku interesi shndërrohet në të ardhura. Një proces regjistrimi konfuz ose i përgjithshëm humb klientë. Një rrjedhë specifike për një nish, që flet gjuhën e tyre dhe duket e lehtë, i konverton ata.
 

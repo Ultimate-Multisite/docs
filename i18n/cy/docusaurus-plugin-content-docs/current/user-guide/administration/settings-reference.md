@@ -3,7 +3,7 @@ title: Cyfeirnod Gosodiadau
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Cyfeirnod Gosodiadau {#settings-reference}
+# Cyfeirnod Gosodiadau
 
 Mae’r dudalen hon yn olrhain gosodiadau sy’n effeithio ar weinyddu o ddydd i ddydd a newidiadau ymddygiad diweddar yn Ultimate Multisite.
 

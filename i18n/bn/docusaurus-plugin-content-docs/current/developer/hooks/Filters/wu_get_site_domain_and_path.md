@@ -4,7 +4,7 @@ title: ফিল্টার - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# Filter: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# Filter: wu_get_site_domain_and_path
 
 ডেভেলপারদের ডোমেইন/পাথ জোড়া পরিবর্তন করার সুযোগ দেয়।
 

@@ -3,7 +3,7 @@ title: Gabat gelýän ahyrky nokatlar üçin Ultimate AI Connector üýtgeşmele
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Gabat gelýän ahyrky nokatlar üçin Ultimate AI Connector üýtgeşmeler ýazgysy {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Gabat gelýän ahyrky nokatlar üçin Ultimate AI Connector üýtgeşmeler ýazgysy
 
 ## Wersiýa 2.0.0 — 2026-04-24-de çykaryldy {#version-200--released-on-2026-04-24}
 

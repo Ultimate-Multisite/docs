@@ -4,7 +4,7 @@ title: Action - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# యాక్షన్: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# యాక్షన్: wu_multi_tenancy_init
 
 మల్టీ-టెనన్సీ యాడ్‌ఆన్ పూర్తిగా ప్రారంభించబడిన తర్వాత ఇది ట్రిగ్గర్ అవుతుంది.
 

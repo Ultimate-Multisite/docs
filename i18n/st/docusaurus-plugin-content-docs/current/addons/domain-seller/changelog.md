@@ -3,7 +3,7 @@ title: Tlaleho ya Diphetoho ya Morekisi wa Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Lenane la Diphetoho la Morekisi wa Domeine {#domain-seller-changelog}
+# Lenane la Diphetoho la Morekisi wa Domeine
 
 Mofuta 1.3.0 - E lokollotswe ka 2026-06-02
 - E ncha: Ho kentswe temoso ya network-admin ha balanse ya morekisi wa HostAfrica e theoha haholo

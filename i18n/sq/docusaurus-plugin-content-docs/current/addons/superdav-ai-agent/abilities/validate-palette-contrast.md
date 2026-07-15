@@ -3,7 +3,7 @@ title: Verifiko kontrastin e paletës
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Vlerëso kontrastin e paletës {#validate-palette-contrast}
+# Vlerëso kontrastin e paletës
 
 Aftësia **Validate Palette Contrast** kontrollon çiftet e ngjyrave në paletën tënde të dizajnit për përputhshmëri me WCAG (Web Content Accessibility Guidelines) përpara se t’i aplikojë ato në temën tënde.
 

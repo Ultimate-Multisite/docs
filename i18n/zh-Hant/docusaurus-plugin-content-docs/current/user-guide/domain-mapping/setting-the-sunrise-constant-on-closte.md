@@ -3,7 +3,7 @@ title: 在 Closte 上設定 Sunrise 常數
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# 在 Closte 上將 Sunrise 常數設定為 true {#setting-the-sunrise-constant-to-true-on-closte}
+# 在 Closte 上將 Sunrise 常數設定為 true
 
 部分主機供應商基於安全考量會鎖定 wp-config.php 檔案。這表示 Ultimate Multisite 無法自動編輯該檔案來加入必要的常數，導致網域對應及其他功能無法正常運作。Closte 就是這類主機之一。
 

@@ -3,7 +3,7 @@ title: 管理付款與發票
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# 管理付款與發票 {#managing-payments-and-invoices}
+# 管理付款與發票
 
 ## 付款設定 {#payment-settings}
 

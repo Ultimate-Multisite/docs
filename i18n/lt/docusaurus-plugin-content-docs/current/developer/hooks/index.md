@@ -3,7 +3,7 @@ title: Kabliukų žinynas
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook’ų nuoroda {#hooks-reference}
+# Hook’ų nuoroda
 
 Automatiškai sugeneruota dokumentacija visiems **59 veiksmams** ir **118 filtrams** Ultimate Multisite.
 

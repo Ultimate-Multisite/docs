@@ -3,7 +3,7 @@ title: Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Yeteneği {#site-specification-skill}
+# Site Specification Yeteneği
 
 **Site Specification yeteneği**, sitenizin hedeflerini, hedef kitlesini ve marka kimliğini yakalamak için yapılandırılmış bir yaklaşımdır. Bu bilgiler, ajanların oturumlar boyunca tutarlı ve bağlama duyarlı yardım sağlaması için başvurduğu **site_brief** belleğinde saklanır.
 

@@ -3,7 +3,7 @@ title: Özel Ağ Geçidi Geliştirme
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Özel Gateway Geliştirme {#custom-gateway-development}
+# Özel Gateway Geliştirme
 
 `Base_Gateway` sınıfını genişleterek özel ödeme gateway'leri oluşturabilirsiniz.
 

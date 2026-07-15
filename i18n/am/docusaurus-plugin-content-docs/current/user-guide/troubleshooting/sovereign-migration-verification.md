@@ -3,7 +3,7 @@ title: የሉዓላዊነት ማዛወሪያ ማረጋገጫ
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# የሉዓላዊነት ማዛወር ማረጋገጫ (Sovereign Migration Verification) {#sovereign-migration-verification}
+# የሉዓላዊነት ማዛወር ማረጋገጫ (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከራዮች (sovereign tenants) ማዛወሪያ የሚሆኑ WP-CLI ማረጋገጫ ትዕዛዞችን ያካትታል። አንድ ተከራይ መዛወር፣ SSO ጉብኝት ወይም የተገለለ ጭነት (isolated install) እንደተጠበቀ ካልሰራ እነዚህን ትዕዛዞች ይጠቀሙ።
 

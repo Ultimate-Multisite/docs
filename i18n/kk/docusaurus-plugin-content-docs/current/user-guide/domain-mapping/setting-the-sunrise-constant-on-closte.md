@@ -3,7 +3,7 @@ title: Closte-тағы Шығыс тұрақтысын орнату
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Sunrise константасын Closte-те `true` деп орнату {#setting-the-sunrise-constant-to-true-on-closte}
+# Sunrise константасын Closte-те `true` деп орнату
 
 Кейбір хост провайдерлері қауіпсіздік үшін wp-config.php файлына бұғат жасайды. Бұл Ultimate Multisite-тың домен картасы және басқа мүмкіндіктері жұмыс істеу үшін қажетті константаларды қосу үшін файлды автоматты түрде өзгерте алмауына себеп болады. Closte осындай хосттардың бірі.
 

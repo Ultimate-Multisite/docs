@@ -3,7 +3,7 @@ title: Варification sovereign migration
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Праверка міграції суверенних даних {#sovereign-migration-verification}
+# Праверка міграції суверенних даних
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 уключає команди перевірки WP-CLI для міграцій суверенных орендодавців (tenants). Використовуйте їх, коли міграція орендодавця, візит SSO або ізольована установка поводяться не так, як очікувалося.
 

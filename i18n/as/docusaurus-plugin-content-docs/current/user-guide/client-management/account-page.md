@@ -3,7 +3,7 @@ title: গ্ৰাহক Account পৃষ্ঠা
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# আপোনাৰ গ্ৰাহকৰ Account পৃষ্ঠা (v2) {#your-clients-account-page-v2}
+# আপোনাৰ গ্ৰাহকৰ Account পৃষ্ঠা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x-ৰ বিষয়ে।**_
 

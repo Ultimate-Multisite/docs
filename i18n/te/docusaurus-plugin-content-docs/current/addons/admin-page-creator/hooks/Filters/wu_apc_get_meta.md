@@ -4,7 +4,7 @@ title: Filter - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Filter: wu_apc_get_meta
 
 డెవలపర్‌లు ఫైనల్ విలువలను ఫిల్టర్ చేయడానికి, మరియు కొత్త ప్రాసెసింగ్ కేసులను జోడించడానికి ఇది అనుమతిస్తుంది.
 

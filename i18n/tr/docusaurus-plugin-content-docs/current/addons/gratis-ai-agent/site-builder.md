@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Oluşturucu Orkestrasyon v2 {#site-builder-orchestration-v2}
+# Site Oluşturucu Orkestrasyon v2
 
 Site Oluşturucu Orkestrasyon v2 (Gratis AI Agent v1.4.0 ile tanıtıldı), çok adımlı web sitesi oluşturma sürecini yöneten motordur. Ajana "bir restoran web sitesi oluştur" veya "bir blog içeren portfolyo oluştur" dediğinizde, orkestratör bu yüksek seviyeli hedefi yapılandırılmış bir **plan** haline getirir, bunu yerine getirmek için gereken plugin'leri keşfeder, her adımı sırayla yürütür, ilerlemeyi takip eder ve hatalardan özerk bir şekilde kurtulur.
 

@@ -3,7 +3,7 @@ title: რატომ Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# რატომ Ultimate Multisite {#why-ultimate-multisite}
+# რატომ Ultimate Multisite
 
 თუ ამ სტატიაზე აღმოჩნდი, სავარაუდოდ გესმის, რომ ჩვენი პლაგინი შეიძლება იყოს თქვენი ბიზნეს იდეის რეალობაში მოსახვრის გადაწყვეტა. იმედია, ამ ტექსტის ბოლოს დაგჭირდებათ საჭირო პასუხები.
 

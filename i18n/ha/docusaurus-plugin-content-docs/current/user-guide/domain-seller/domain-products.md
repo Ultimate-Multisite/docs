@@ -3,7 +3,7 @@ title: Sanda wa Kayayyakin Dominin da Farashin Suya
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# mahadun-duniya da farashin samun kayan (Domain Products and Pricing) {#domain-products-and-pricing}
+# mahadun-duniya da farashin samun kayan (Domain Products and Pricing)
 
 Kayan domain suna yadda kake sarrafa farashin, TLDs (domain extensions), sirrin WHOIS, da zaɓar gudanarwa. Kowane kayan domain shine wani kayan na standard Ultimate Multisite tare da tab mai ƙarfi **Domain Settings**.
 

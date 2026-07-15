@@ -3,7 +3,7 @@ title: ServerPilot integráció
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot integráció {#serverpilot-integration}
+# ServerPilot integráció
 
 ## Áttekintés {#overview}
 A ServerPilot egy felhőszolgáltatás WordPress és egyéb PHP alapú weboldalak üzemeltetéséhez a DigitalOcean, Amazon, Google vagy bármely más szerverszolgáltató infrastruktúráján. Ez az integráció lehetővé teszi az automatikus domainszinkronizálást és SSL tanúsítványkezelést az Ultimate Multisite és a ServerPilot között.

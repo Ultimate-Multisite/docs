@@ -3,7 +3,7 @@ title: Changelog ng Metered Plans
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# History ng Pagbabago ng Metered Plans {#metered-plans-changelog}
+# History ng Pagbabago ng Metered Plans
 
 Version 1.1.0 - Inilabas noong 2026-05-05
 - New: Pagbabayad batay sa AI token para sa multisite subsites — subaybayan at singilin ang paggamit ng AI token sa iba't ibang site ng customer na may configurable per-token rates

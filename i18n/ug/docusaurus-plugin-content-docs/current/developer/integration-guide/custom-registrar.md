@@ -3,7 +3,7 @@ title: خاس تىزىملىغۇچى بىرلەشتۈرۈشى قۇرۇش
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# خاس تىزىملىغۇچى بىرلەشتۈرۈشى قۇرۇش {#building-a-custom-registrar-integration}
+# خاس تىزىملىغۇچى بىرلەشتۈرۈشى قۇرۇش
 
 Domain Seller addon **بىرلەشتۈرۈش تىزىملىكى** ئەندىزىسىنى ئىشلىتىدۇ. ھەر بىر تىزىملىغۇچى `Domain_Selling_Capability` نى ئەمەلگە ئاشۇرىدىغان ۋە `wu_domain_seller_register_capabilities` action hook ئارقىلىق ئۆزىنى تىزىملىتىدىغان PHP class تۇر.
 

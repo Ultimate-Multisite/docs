@@ -3,7 +3,7 @@ title: ಬಹು-ವ್ಯವಸ್ಥಿತ ಪ್ರತ್ಯೇಕತೆ
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# ಬಹು-ವ್ಯವಸ್ಥಿತ ಪ್ರತ್ಯೇಕತೆ (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# ಬಹು-ವ್ಯವಸ್ಥಿತ ಪ್ರತ್ಯೇಕತೆ (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ಈಗ ಸ್ವಯಂಪ್ರಭುತ್ವದ (sovereign) ಬಳಕೆದಾರರಿಗೆ ಪ್ರತಿ ಉಪ-ಸೈಟ್ ಡೇಟಾಬೇಸ್ ಮತ್ತು ಫೈಲ್ ಸಿಸ್ಟಮ್ ಪ್ರತ್ಯೇಕತೆಯನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ. ಇದು ನೆಟ್‌ವರ್ಕ್-ಮಟ್ಟದ ಪ್ರವೇಶ, ಬಿಲ್ಲಿಂಗ್ ಮತ್ತು ಆಡಳಿತವನ್ನು ಉಳಿಸಿಕೊಂಡು ಬಳಕೆದಾರರ ಡೇಟಾವನ್ನು ಪ್ರತ್ಯೇಕವಾಗಿ ಇರಿಸುತ್ತದೆ.
 

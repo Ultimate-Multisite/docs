@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite एडअनहरू {#ultimate-multisite-addons}
+# Ultimate Multisite एडअनहरू
 
 एडअनहरूले Ultimate Multisite लाई थप सुविधाहरू र एकीकरणहरूसँग विस्तार गर्छन्। धेरैजसो एडअनहरू सशुल्क हुन्छन् र [ultimatemultisite.com](https://ultimatemultisite.com) बाट किन्न सकिन्छ।
 

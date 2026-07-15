@@ -3,7 +3,7 @@ title: افزونه Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# بارگذار فایل Sunrise افزونه {#addon-sunrise-file-loader}
+# بارگذار فایل Sunrise افزونه
 
 Ultimate Multisite 2.8.0 یک بارگذار (loader) افزونه sunrise برای افزونه‌ها و ادغام‌های سفارشی MU-plugin اضافه می‌کند که نیاز دارند در طول بوت‌استرپ (bootstrapping) sunrise وردپرس اجرا شوند، بدون اینکه نیاز باشد فایل `wp-content/sunrise.php` تولید شده را ویرایش کنید.
 

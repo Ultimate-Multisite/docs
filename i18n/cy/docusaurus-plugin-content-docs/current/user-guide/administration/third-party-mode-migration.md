@@ -3,7 +3,7 @@ title: Migracwn Modau Tŵr Trydder
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migracwn i'r Modau Troddori {#third-party-mode-migration}
+# Migracwn i'r Modau Troddori
 
 Mae Superdav AI Agent v1.12.0 yn newid y ffordd y mae cyfyngedigau troddori wedi cael eu gael. **Mae modau troddori yn deallt i "auto"** ar hyn o bryd, gan sylw'r cyfathriadau WordPress Abilities API yn naturiol ar WordPress 7.0+ heb ddefnyddio cyflwyniad manwl.
 

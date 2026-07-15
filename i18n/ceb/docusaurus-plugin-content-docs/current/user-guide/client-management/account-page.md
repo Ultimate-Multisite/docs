@@ -3,7 +3,7 @@ title: Lihok sa Akaw sa Kliyente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ang Account Page sa Imong Kliyente (v2) {#your-clients-account-page-v2}
+# Ang Account Page sa Imong Kliyente (v2)
 
 _**MAHINUNGAN: Kini nga article nagrefer sa Ultimate Multisite version 2.x.**_
 

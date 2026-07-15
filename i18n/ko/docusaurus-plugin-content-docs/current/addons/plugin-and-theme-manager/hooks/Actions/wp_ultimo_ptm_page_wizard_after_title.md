@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# 작업: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# 작업: wp_ultimo_ptm_page_wizard_after_title
 
 plugin 개발자가 목록 페이지에 추가 버튼을 추가할 수 있도록 허용합니다
 

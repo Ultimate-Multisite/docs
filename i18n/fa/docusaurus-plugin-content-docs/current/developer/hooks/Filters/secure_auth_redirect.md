@@ -4,7 +4,7 @@ title: فیلتر - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# فیلتر: secure_auth_redirect {#filter-secureauthredirect}
+# فیلتر: secure_auth_redirect
 
 این فیلتر تعیین می‌کند که آیا باید از یک ریدایرکت احراز هویت امن استفاده شود یا خیر.
 

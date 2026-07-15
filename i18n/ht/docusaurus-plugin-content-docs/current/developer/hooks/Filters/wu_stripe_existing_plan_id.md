@@ -4,7 +4,7 @@ title: Filtre - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filtè: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filtè: wu_stripe_existing_plan_id
 
 Filtre ID plan pou verifye a. Si sa a egziste, nouvo abònman an ap itilize plan sa a.
 

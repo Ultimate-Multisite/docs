@@ -3,7 +3,7 @@ title: डैशबोर्ड अवलोकन
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# डैशबोर्ड का परिचय {#dashboard-overview}
+# डैशबोर्ड का परिचय
 
 Ultimate Multisite के पास Ultimate Multisite मेनू के अंतर्गत एक समर्पित **Dashboard** है, और यह Network Dashboard में भी विजेट्स जोड़ता है। इस लेख में हम देखेंगे कि आपको दोनों जगहों पर क्या मिलेगा।
 

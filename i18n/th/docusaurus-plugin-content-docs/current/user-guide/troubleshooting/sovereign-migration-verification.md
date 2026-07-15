@@ -3,7 +3,7 @@ title: การตรวจสอบการย้าย Sovereign
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# การตรวจสอบการย้ายข้อมูลแบบ Sovereign {#sovereign-migration-verification}
+# การตรวจสอบการย้ายข้อมูลแบบ Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 มีคำสั่งสำหรับ WP-CLI เพื่อตรวจสอบการย้ายข้อมูลของเทนเนนต์แบบ sovereign ให้ใช้คำสั่งเหล่านี้เมื่อการย้ายเทนเนนต์ การเข้าชม SSO หรือการติดตั้งแบบแยกส่วนไม่ทำงานตามที่คาดไว้
 

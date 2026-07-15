@@ -3,7 +3,7 @@ title: 'Lektion 5: Gestaltung Ihrer Pläne'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lektion 5: Gestaltung Ihrer Pläne {#lesson-5-designing-your-plans}
+# Lektion 5: Gestaltung Ihrer Pläne
 
 Ihre Plan-Stufen sind nicht nur Preisniveaus – sie spiegeln wider, wie Ihre Nischenkunden tatsächlich arbeiten. In dieser Lektion gestalten Sie Produkt-Stufen, die den realen Bedürfnissen von Fitness-Unternehmen in verschiedenen Phasen entsprechen.
 

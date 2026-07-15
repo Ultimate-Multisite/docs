@@ -3,7 +3,7 @@ title: Podešavanje konstante Sunčja na Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Podeš li postaviti konstantu Sunrise na true u Closte-u {#setting-the-sunrise-constant-to-true-on-closte}
+# Podeš li postaviti konstantu Sunrise na true u Closte-u
 
 Neki hosting provajderi zaključavaju fajl `wp-config.php` zbog sigurnosnih razloga. To znači da Ultimate Multisite ne može automatski uređivati taj fajl kako bi uključio potrebne konstante za mapiranje domena i druge funkcije da bi radile. Closte je jedan od takvih hostingu.
 

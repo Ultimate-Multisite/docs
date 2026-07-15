@@ -3,7 +3,7 @@ title: דער רעגיסטראַציע־פֿלוס
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# דער רעגיסטראַציע־פֿלוס (v2) {#the-registration-flow-v2}
+# דער רעגיסטראַציע־פֿלוס (v2)
 
 _**וויכטיקע באַמערקונג: דער אַרטיקל באַציִט זיך אויף Ultimate Multisite ווערסיע 2.x.**_
 

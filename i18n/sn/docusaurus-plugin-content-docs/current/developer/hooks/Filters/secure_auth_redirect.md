@@ -4,7 +4,7 @@ title: Sefa - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Sefa: secure_auth_redirect {#filter-secureauthredirect}
+# Sefa: secure_auth_redirect
 
 Inosefa kana kushandisa redirect yakachengeteka yekusimbisa chitupa.
 

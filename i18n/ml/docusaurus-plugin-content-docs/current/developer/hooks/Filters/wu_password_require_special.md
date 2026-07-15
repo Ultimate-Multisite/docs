@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 പാസ്‌വേഡുകളിൽ പ്രത്യേക അക്ഷരങ്ങൾ നിർബന്ധമാക്കണോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

@@ -4,7 +4,7 @@ title: Filter - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# فلټر: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# فلټر: wu_checkout_calculate_prorate_credits
 
 plugin جوړوونکو ته اجازه ورکوي چې د کریډیټ ارزښت سره لاسوهنه وکړي.
 

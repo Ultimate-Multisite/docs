@@ -3,7 +3,7 @@ title: Πρώτα βήματα με την ανάπτυξη πρόσθετων
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ανάπτυξη πρόσθετου {#addon-development}
+# Ανάπτυξη πρόσθετου
 
 ## Δομή πρόσθετου {#addon-structure}
 

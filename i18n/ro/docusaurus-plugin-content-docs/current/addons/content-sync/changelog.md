@@ -3,7 +3,7 @@ title: Changelog Sincronizare Conținut
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Istoric de schimbări pentru Content Sync {#content-sync-changelog}
+# Istoric de schimbări pentru Content Sync
 
 ### Versiunea 1.1.0 - Lansată pe 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nou: Suport pentru sincronizarea tuturor tipurilor de postări (postări, pagini, tipuri de postări personalizate)

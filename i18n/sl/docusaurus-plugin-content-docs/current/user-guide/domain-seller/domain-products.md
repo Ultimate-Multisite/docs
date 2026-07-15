@@ -3,7 +3,7 @@ title: Domena izdelki in cenik
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenični izdelki in cenik {#domain-products-and-pricing}
+# Domenični izdelki in cenik
 
 Domenični izdelki so način, kako kontrolirate cene, TLD-e (top-level domena), zasebnost WHOIS in izbiro ponudnika. Vsak domen izdelek je standardni Multisite Ultimate izdelek z dodatno tabo **Domain Settings**.
 

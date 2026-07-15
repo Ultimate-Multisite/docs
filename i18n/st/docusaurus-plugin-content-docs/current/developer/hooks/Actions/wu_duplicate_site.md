@@ -4,7 +4,7 @@ title: Ketso - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Ketso: wu_duplicate_site {#action-wuduplicatesite}
+# Ketso: wu_duplicate_site
 
 Lumella bahlahisi ho hook kamora hore ho kopitsoa ha site ho etsahale.
 

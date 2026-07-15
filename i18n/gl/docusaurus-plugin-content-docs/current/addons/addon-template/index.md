@@ -3,9 +3,9 @@ title: Modelo de complemento
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Modelo de complemento {#addon-template}
+# Modelo de complemento
 
-{{ADDON_DESCRIPTION}}
+Modelo de complemento — Ultimate Multisite.
 
 ## Requisitos {#requirements}
 

@@ -4,7 +4,7 @@ title: Scagaire - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# Scagaire: wu_use_domain_mapping {#filter-wuusedomainmapping}
+# Scagaire: wu_use_domain_mapping
 
 Cinntigh ar cheart mapáil a úsáid
 

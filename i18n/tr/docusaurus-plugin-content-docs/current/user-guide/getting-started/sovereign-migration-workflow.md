@@ -3,7 +3,7 @@ title: Egemen Taşıma İş Akışı
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Egemen Taşıma İş Akışı {#sovereign-migration-workflow}
+# Egemen Taşıma İş Akışı
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, standart bir alt siteyi egemen kiracı altyapısına taşımak için taşıma doğrulama kapıları ekler.
 

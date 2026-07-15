@@ -3,7 +3,7 @@ title: Multisite Kurulum Sihirbazı
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Çoklu Site Kurulum Sihirbazı {#multisite-setup-wizard}
+# Çoklu Site Kurulum Sihirbazı
 
 Ultimate Multisite, standart bir WordPress kurulumunu otomatik olarak WordPress Multisite ağına dönüştüren yerleşik bir sihirbaz içerir. Bu sayede `wp-config.php` dosyasını manuel olarak düzenlemenize veya veritabanı komutları çalıştırmanıza gerek kalmaz.
 

@@ -3,7 +3,7 @@ title: 'Lektion 4: Erstellen von Nischen-Vorlagen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Building Niche Templates {#lesson-4-building-niche-templates}
+# Lesson 4: Building Niche Templates
 
 Vorlagen sind das Kernstück Ihres Nischen-Alleinstellungsmerkmals. Ein Besitzer eines Fitnessstudios, der sich anmeldet und eine Website sieht, die bereits wie eine Fitness-Website aussieht – mit Kursplänen, Trainerprofilen und den passenden Bildern – bleibt viel eher Kunde als jemand, der vor einer leeren Leinwand steht.
 

@@ -3,7 +3,7 @@ title: 主題建立者入門流程
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder 入門流程 {#theme-builder-onboarding-flow}
+# Theme Builder 入門流程
 
 Superdav AI Agent v1.12.0 引入了引導式的 **Theme Builder 入門流程**，這可以在您首次設定時幫助您建立客製化的區塊主題 (block theme)。這取代了舊版的 Site Builder 模式，採用了更靈活、由 AI Agent 輔助的方式。
 

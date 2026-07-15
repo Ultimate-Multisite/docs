@@ -3,7 +3,7 @@ title: Injetor de Anúncios
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Colocando Anúncios na sua rede com Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Colocando Anúncios na sua rede com Ultimate Multisite: Ad Injector
 
 O Ultimate Multisite: Ad Injector é um **plugin gratuito** que te dá as ferramentas para colocar anúncios nos seus planos diretamente pela página de edição deles.
 

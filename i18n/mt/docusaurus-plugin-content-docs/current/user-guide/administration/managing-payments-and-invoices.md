@@ -3,7 +3,7 @@ title: Id-Dimamjar tal-Pagamenti u l-Fatturi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Aħjar tal-Pagamenti u L-Fatturi {#managing-payments-and-invoices}
+# Aħjar tal-Pagamenti u L-Fatturi
 
 ## Iswitti tal-Iskartament ta Pagamenti {#payment-settings}
 

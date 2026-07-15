@@ -3,7 +3,7 @@ title: Umlando wezinguquko zamaqiniso ngo-Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Umlando wezinguquko wamaqiniso ka-Chuck Norris {#chuck-norris-facts-changelog}
+# Umlando wezinguquko wamaqiniso ka-Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Kwengeziwe: Ukusebenza kokubuyekeza okuzenzakalelayo nge-server yokubuyekeza ye-Ultimate Multisite

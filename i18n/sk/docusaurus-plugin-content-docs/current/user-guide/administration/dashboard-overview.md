@@ -3,7 +3,7 @@ title: Prehľad dosky
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Prehľad o dashboarde {#dashboard-overview}
+# Prehľad o dashboarde
 
 Ultimate Multisite má špecializovaný **Dashboard** v menu Ultimate Multisite a pridáva aj widgety do Network Dashboardu. Tento článok pokrýva, čo uvidíte oboch miestach.
 

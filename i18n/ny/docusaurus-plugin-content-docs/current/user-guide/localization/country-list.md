@@ -3,7 +3,7 @@ title: Mwamba wa nyanja
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Kufuka kwa list ya nchi ya Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Kufuka kwa list ya nchi ya Ultimate Multisite
 
 Dropdown iliyopangwa kuchagua nchi inapangwa kulingana na herufi za alfabeti za majina ya nchi katika Kiingereza. Hii inaweza kumaanisha kwamba, wakati mwingine, nchi ya nyumbani ya kampuni yako na/au wateja wengi wako inaweza kufichwa katikati ya orodha kubwa ya majina ya nchi.
 

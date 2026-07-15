@@ -3,7 +3,7 @@ title: 已知不兼容项
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# 与其他插件的已知不兼容性 {#known-incompatibilities-with-other-plugins}
+# 与其他插件的已知不兼容性
 
 安装并激活 Ultimate Multisite 后，您可能会遇到由于与其他插件存在未解决的不兼容性而导致的问题。
 

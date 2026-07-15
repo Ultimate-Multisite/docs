@@ -3,7 +3,7 @@ title: GitHub šnuptai
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kaip naudoti Ultimate Multisite skriptus jūsų GitHub repozitoriume {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Kaip naudoti Ultimate Multisite skriptus jūsų GitHub repozitoriume
 
 GitHub repozitoriume yra skirti kodų skriptai, kuriuos dažnai prašo Ultimate Multisite vartotojai, norint pridėti mažas funkcijas, pabaigiantis, pavyzdžiui, įdėję Google Analytics script ant registracijos puslapis ar sukleidžiant admin panelio meta box.
 
@@ -19,7 +19,7 @@ Yra dvi būdai pridėti šį kodą:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Kaip pridėti skriptą į jūsų temo functions.php failą. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Kaip pridėti skriptą į jūsų temo functions.php failą.
 
   1. Prisijunkite prie admin panelio jūsų WordPress tinklo ir einkite į Themes > Theme Editor (priežmatas matyti šio paveikslėlyje).
 
@@ -29,7 +29,7 @@ Yra dvi būdai pridėti šį kodą:
 
 <!-- Paveikslas nepateiktas: WordPress Theme Editor rodo functions.php failo redaguojimą -->
 
-# Kaip sukurti Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Kaip sukurti Must-Use Plugins (mu-plugins)
 
 WordPress turi funkciją, leidžiančią įkaltimo pritaikyti funkcijas, kurias vadinami „Must-Use Plugins“ arba skaičiais „mu-plugins“.
 

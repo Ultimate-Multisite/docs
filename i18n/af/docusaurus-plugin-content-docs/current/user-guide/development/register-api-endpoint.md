@@ -3,7 +3,7 @@ title: Registreer API-eindpunt
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Die Ultimate Multisite Register API-eindpunt {#the-ultimate-multisite-register-api-endpoint}
+# Die Ultimate Multisite Register API-eindpunt
 
 In hierdie tutorie sal u leer hoe om die Ultimate Multisite /register API-eindpunt te gebruik om die hele aanmeldingsproses vir 'n nuwe kliënt in u netwerk te skep, en hoe om dit te doen met Zapier.
 

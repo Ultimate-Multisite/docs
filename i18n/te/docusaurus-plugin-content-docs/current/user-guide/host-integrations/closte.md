@@ -3,7 +3,7 @@ title: Closte ఇంటిగ్రేషన్
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ఇంటిగ్రేషన్ {#closte-integration}
+# Closte ఇంటిగ్రేషన్
 
 ## అవలోకనం {#overview}
 Closte అనేది Google Cloud ఇన్‌ఫ్రాస్ట్రక్చర్ పై నిర్మించబడిన మేనేజ్డ్ WordPress హోస్టింగ్ ప్లాట్‌ఫారమ్. ఈ ఇంటిగ్రేషన్ Ultimate Multisite మరియు Closte మధ్య ఆటోమేటిక్ డొమైన్ సింకింగ్ మరియు SSL సర్టిఫికేట్ మేనేజ్‌మెంట్‌ను అనుమతిస్తుంది.

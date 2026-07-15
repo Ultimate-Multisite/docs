@@ -4,7 +4,7 @@ title: Sefe - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Sefe: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Sefe: wu_get_checkout_variables
 
 Dumella bahlahisi ba ditlatsetso ho sefa disete tsa pele tsa leqephe la ho lefa.
 

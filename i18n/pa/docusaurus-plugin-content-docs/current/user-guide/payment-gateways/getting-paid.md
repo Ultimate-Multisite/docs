@@ -3,7 +3,7 @@ title: ਭੁਗਤਾਨ ਪ੍ਰਾਪਤ ਕਰਨਾ
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ਭੁਗਤਾਨ ਪ੍ਰਾਪਤ ਕਰਨਾ (v2) {#getting-paid-v2}
+# ਭੁਗਤਾਨ ਪ੍ਰਾਪਤ ਕਰਨਾ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ।**_
 

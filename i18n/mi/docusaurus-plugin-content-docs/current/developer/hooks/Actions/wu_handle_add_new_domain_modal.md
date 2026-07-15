@@ -4,7 +4,7 @@ title: Hohenga - wu_handle_add_new_domain_modal
 sidebar_label: wu_handle_add_new_domain_modal
 _i18n_hash: 77246d387c651043b47e7a466a7e892e
 ---
-# Mahi: wu_handle_add_new_domain_modal {#action-wuhandleaddnewdomainmodal}
+# Mahi: wu_handle_add_new_domain_modal
 
 Ka whakaohohia i mua i te whakahaere i te tono matapihi modal tāpiri rohe hōu.
 

@@ -3,7 +3,7 @@ title: ຂັ້ນຕອນການลงทะเบียน
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# กระบวนการลงทะเบียน (v2) {#the-registration-flow-v2}
+# กระบวนการลงทะเบียน (v2)
 
 _**ข้อควรระวัง: บทความนี้อ้างถึง Ultimate Multisite เวอร์ชัน 2.x เท่านั้น**_
 

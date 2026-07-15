@@ -3,7 +3,7 @@ title: 'Bài học 10: Ngày ra mắt'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Bài 10: Ngày Ra Mắt {#lesson-10-launch-day}
+# Bài 10: Ngày Ra Mắt
 
 Mọi thứ đã được xây dựng xong. Trước khi mở cửa, bài học này sẽ hướng dẫn bạn qua danh sách kiểm tra trước khi ra mắt để đảm bảo không có gì bị lỗi, thiếu sót hay gây xấu hổ.
 

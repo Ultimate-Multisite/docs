@@ -3,7 +3,7 @@ title: Uthibitishaji wa Migrasi ya Uhuru
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Ukaguzi wa Migrasi ya Sovereign {#sovereign-migration-verification}
+# Ukaguzi wa Migrasi ya Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inajumuisha amri za uthibitishaji (verification commands) za WP-CLI kwa migrasi ya wateja (tenants) wa sovereign. Tumia hizo wakati migrasi ya mteja, ziara ya SSO, au usakinishaji wa kuzungumza (isolated install) haifanyi kama inavyotarajiwa.
 

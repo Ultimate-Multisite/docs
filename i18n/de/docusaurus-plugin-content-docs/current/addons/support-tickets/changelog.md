@@ -3,7 +3,7 @@ title: Support-Tickets-Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support-Tickets-Änderungsprotokoll {#support-tickets-changelog}
+# Support-Tickets-Änderungsprotokoll
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Verbessert: vendor/-Verzeichnis aus der Git-Nachverfolgung entfernt (bereits durch .gitignore abgedeckt), wodurch die Repository-Größe reduziert wird

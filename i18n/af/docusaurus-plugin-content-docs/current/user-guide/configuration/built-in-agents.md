@@ -3,7 +3,7 @@ title: Ingeboude agente
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ingeboude Agente {#built-in-agents}
+# Ingeboude Agente
 
 Gratis AI Agent v1.9.0 word met vyf ingeboude agente gelewer, elk vooraf gekonfigureer met ’n gefokusde stel gereedskap, ’n aangepaste stelselprompt, en beginvoorstelle wat by algemene take in daardie area pas. Om tussen agente te wissel verander wat die assistent kan doen en hoe dit reageer — sonder enige konfigurasie van jou kant af. Superdav AI Agent v1.18.0 kan skedule-bewuste gereedskap, herinneringrekords, goedkeuringshekke, en SMS-kennisgewings by hierdie werkvloeie voeg wanneer die verwante integrasies gekonfigureer is.
 

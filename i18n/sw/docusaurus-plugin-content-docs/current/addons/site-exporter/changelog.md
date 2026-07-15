@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Historia ya Mabadiliko ya Site Exporter {#site-exporter-changelog}
+# Historia ya Mabadiliko ya Site Exporter
 
 Toleo: 1.0.6 - Ili kutolewa tarehe 2026-05-11
 * Jipya: Exporter za site sasa zinajumuisha faili ya index.php inayoweza kuanza mwenyewe, hivyo ZIP inaweza kusakinishwa kwenye hosting mpya bila kusakinisha plugin tofauti

@@ -3,7 +3,7 @@ title: Kuthandiza API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API ya Ultimate Multisite Register {#the-ultimate-multisite-register-api-endpoint}
+# API ya Ultimate Multisite Register
 
 M'mwa m'mwa, mu tutorial uliyipeza kuti muli ndi chifukwa chomwe mudzindikire kuti muli bwanji muli ndi kukhazikira njira yomwe imapangidwa ndi Ultimate Multisite /register API endpoint. Kodi muli bwanji muli ndi Zapier?
 

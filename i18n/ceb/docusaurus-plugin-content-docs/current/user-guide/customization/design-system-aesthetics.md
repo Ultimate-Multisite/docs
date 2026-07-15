@@ -3,7 +3,7 @@ title: Skill sa Estetika sa Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kasan sa Skill sa Design System Aesthetics {#design-system-aesthetics-skill}
+# Kasan sa Skill sa Design System Aesthetics
 
 Ang **Design System Aesthetics skill** usa ka giya nga pamaagi para mapino ang biswal nga pagkakita sa imong website. Gitudlo ni kini kanimo sa paghimo og mga konsistent nga desisyon bahin sa typography, kolor, spacing, ug motion tokens nga naghatag ngalan sa imong design system.
 

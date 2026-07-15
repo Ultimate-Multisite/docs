@@ -3,7 +3,7 @@ title: Zapier ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ਨੂੰ Zapier ਨਾਲ ਇਕੱਠਾ ਕਰਨਾ {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite ਨੂੰ Zapier ਨਾਲ ਇਕੱਠਾ ਕਰਨਾ
 
 ਲੇਖਾਂ ਵਿੱਚੋਂ ਇੱਕ ਵਿੱਚ, ਅਸੀਂ [Webhooks](webhooks.md) ਬਾਰੇ ਚਰਚਾ ਕੀਤੀ ਸੀ ਅਤੇ ਇਹ ਕਿ ਉਨ੍ਹਾਂ ਨੂੰ ਤੀਜੀ ਪੱਖ ਦੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨਾਲ ਇਕੱਠਾ ਕਰਨ ਲਈ ਕਿਵੇਂ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।
 

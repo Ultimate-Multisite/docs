@@ -3,7 +3,7 @@ title: 'Les 13: Opskaal'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Les 13: Opskalering {#lesson-13-scaling-up}
+# Les 13: Opskalering
 
 Jy het 'n werkende platform met betaalende kliënte. Hierdie les dek hoe om van 'n klein operasie tot 'n volhoubare besigheid te groei – die opskalering van infrastruktuur, die outomatisering van operasies, en die verhoging van inkomste per kliënt.
 

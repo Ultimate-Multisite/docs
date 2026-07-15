@@ -3,7 +3,7 @@ title: Qabiliyyət Görünürlüyü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# قابلیت دیدن توانایی‌ها (Ability Visibility) {#ability-visibility}
+# قابلیت دیدن توانایی‌ها (Ability Visibility)
 
 Superdav AI Agent v1.12.0، کنترل‌های **قابلیت دیدن توانایی‌ها (Ability Visibility)** را معرفی می‌کند که تعیین می‌کنند کدام سطوح (surfaces) هر توانایی را نمایش دهند. این کار به مدیران اجازه می‌دهد تنظیم کنند که قابلیت‌های کدام ایجنت از طریق REST APIها، سرورهای MCP، ادغام‌های WooCommerce و سایر رابط‌ها در دسترس باشند.
 

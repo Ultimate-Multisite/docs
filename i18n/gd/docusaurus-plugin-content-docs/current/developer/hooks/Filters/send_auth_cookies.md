@@ -4,7 +4,7 @@ title: Criathrag - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Criathrag: send_auth_cookies {#filter-sendauthcookies}
+# Criathrag: send_auth_cookies
 
 Leigidh e leat casg a chur air auth cookies bho bhith gan cur dha-rìribh chun a’ chliant.
 

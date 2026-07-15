@@ -3,7 +3,7 @@ title: 'Palajaran 10: Poé Peluncuran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Palajaran 10: Poé Peluncuran {#lesson-10-launch-day}
+# Palajaran 10: Poé Peluncuran
 
 Sadayana geus diwangun. Sateuacan anjeun muka panto, palajaran ieu ngalangkungan daptar pariksa saméméh peluncuran pikeun mastikeun euweuh anu ruksak, leungit, atawa matak éra.
 

@@ -3,7 +3,7 @@ title: 'Õppetund 5: oma plaanide kujundamine'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Õppetund 5: oma plaanide kujundamine {#lesson-5-designing-your-plans}
+# Õppetund 5: oma plaanide kujundamine
 
 Sinu plaanitasemed ei ole lihtsalt hinnatasemed -- need peegeldavad seda, kuidas sinu nišikliendid tegelikult tegutsevad. Selles õppetunnis kujundad tootetasemed, mis vastavad eri arenguetappides olevate fitness-ettevõtete tegelikele vajadustele.
 

@@ -3,7 +3,7 @@ title: سائبرپینل انٽيغريشن
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 هي اس گائیڈ بتاتا ہے کہ Ultimate Multisite CyberPanel integration کي ڪيئن configure ڪجي ته جيئن توهان جي network ۾ مپ ٿيل domains کي خود بخود (automatic) طور تي CyberPanel ۾ virtual hosts طور شامل (add) ۽ کين ختم (remove) ڪري سگهجي ٿو، جنهن سان Let's Encrypt جي ذريعي optional auto-SSL provisioning به ڪئي جا سگهجي ٿي.
 

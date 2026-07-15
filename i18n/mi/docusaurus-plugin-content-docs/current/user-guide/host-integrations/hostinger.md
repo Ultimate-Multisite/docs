@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Whakawhanaungatanga me Hostinger (hPanel) Integration {#hostinger-hpanel-integration}
+# Whakawhanaungatanga me Hostinger (hPanel) Integration
 
 ## Whakataki {#overview}
 

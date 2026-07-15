@@ -3,7 +3,7 @@ title: Κατάλογος αλλαγών Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Κατάλογος Αλλαγών Site Exporter {#site-exporter-changelog}
+# Κατάλογος Αλλαγών Site Exporter
 
 Έκδοση: 1.0.6 - Έκβηκε στις 2026-05-11
 * Νέο: Οι εξαγωγές ιστοσελίδων περιλαμβάνουν τώρα ένα index.php που εκκινείται αυτόματα (self-booting), ώστε το ZIP να μπορεί να εγκατασταθεί σε ένα νέο hosting χωρίς να χρειάζεται ξεχωριστή εγκατάσταση plugin.

@@ -3,7 +3,7 @@ title: Poboljšanje integracije kontrolne table
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Poboljšana Integracija Kontrolne Table {#enhance-control-panel-integration}
+# Poboljšana Integracija Kontrolne Table
 
 ## Pregled {#overview}
 Enhance je moderna kontrolna tabla koja pruža moćne mogućnosti automatizacije i upravljanja hostingom. Ova integracija omogućava automatsko sinhronizovanje domena i upravljanje SSL certifikatima između Ultimate Multisite-a i Enhance Control Panel-a.

@@ -3,7 +3,7 @@ title: Habka Ujiidda Qaran
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow-ka Miliddaal (Sovereign Migration) {#sovereign-migration-workflow}
+# Workflow-ka Miliddaal (Sovereign Migration)
 
 Ultimate Multisite 1.2.0 waxay ku daraysaa albaabo xaqiijin (verification gates) si loo hubiyo u guulaysato wareejinta subsite caadi ah oo loo marayo nidaamka qoyska (sovereign tenant infrastructure).
 

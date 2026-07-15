@@ -4,7 +4,7 @@ title: Scagaire - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Scagaire: wu_setup_wizard {#filter-wusetupwizard}
+# Scagaire: wu_setup_wizard
 
 Lig d’fhorbróirí céimeanna breise a chur leis an draoi socraithe.
 

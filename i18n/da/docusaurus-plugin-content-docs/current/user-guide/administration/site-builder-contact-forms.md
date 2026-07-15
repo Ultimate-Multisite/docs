@@ -3,7 +3,7 @@ title: Kontaktformularer til sidebygger
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformularer i Site Builder {#site-builder-contact-forms}
+# Kontaktformularer i Site Builder
 
 Superdav AI Agent v1.10.0 tilføjer muligheden for at oprette kontaktformularer direkte fra chatgrænsefladen ved hjælp af Site Builder agenten. Dette giver dig mulighed for at tilføje fuldt funktionelle kontaktformularer til enhver side uden at skulle forlade chatten.
 

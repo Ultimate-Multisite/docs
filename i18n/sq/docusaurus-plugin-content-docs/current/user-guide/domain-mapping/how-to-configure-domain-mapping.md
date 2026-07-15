@@ -3,7 +3,7 @@ title: Si të konfiguroni hartëzimin e domenit
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Si të konfiguroni hartëzimin e domain-it (v2) {#how-to-configure-domain-mapping-v2}
+# Si të konfiguroni hartëzimin e domain-it (v2)
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 

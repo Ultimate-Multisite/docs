@@ -3,7 +3,7 @@ title: Sut i Ffurfweddu Mapio Parthau
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sut i Ffurfweddu Mapio Parthau (v2) {#how-to-configure-domain-mapping-v2}
+# Sut i Ffurfweddu Mapio Parthau (v2)
 
 _**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 

@@ -3,7 +3,7 @@ title: Stripe సెటప్ చేయడం
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway సెటప్ చేయడం (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway సెటప్ చేయడం (v2)
 
 _**ముఖ్యమైన గమనిక: ఈ ఆర్టికల్ Ultimate Multisite వెర్షన్ 2.x కి సంబంధించినది.**_
 

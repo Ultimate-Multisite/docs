@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Aksyon: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Aksyon: wp_ultimo_vat_deactivation
 
 Pèmèt lòt pati nan plugin nan atache woutin yo pou dezaktivasyon
 

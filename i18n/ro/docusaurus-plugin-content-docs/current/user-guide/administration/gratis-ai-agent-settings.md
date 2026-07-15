@@ -3,7 +3,7 @@ title: Setări Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Setări Gratis AI Agent {#gratis-ai-agent-settings}
+# Setări Gratis AI Agent
 
 Ecranul **Setări → Avansat** din Gratis AI Agent oferă configurare la nivel de administrator pentru integrări backend. Această pagină documentează redirecționarea feedbackului, cheile furnizorilor de căutare, configurarea serviciului Superdav gestionat, controalele Google Calendar, setările SMS TextBee și indicatorii de funcționalități la nivel de rețea.
 

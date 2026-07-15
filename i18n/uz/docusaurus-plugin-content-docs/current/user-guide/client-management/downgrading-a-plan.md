@@ -3,7 +3,7 @@ title: Rejanni tushirish
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plani (subscription) tushirish (v2) {#downgrading-a-plan-v2}
+# Plani (subscription) tushirish (v2)
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 

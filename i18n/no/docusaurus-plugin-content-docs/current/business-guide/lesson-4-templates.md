@@ -3,7 +3,7 @@ title: 'Leksjon 4: Bygge nisjetemater'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leksjon 4: Bygge nisjetemplates {#lesson-4-building-niche-templates}
+# Leksjon 4: Bygge nisjetemplates
 
 Malene er kjernen i din spesialiserte verdi. En eier av et treningsstudio som registrerer seg og ser en nettside som allerede ser ut som en treningsnettside – med timeplaner, trenertilbud og riktig bildemateriale – er langt mer sannsynlig å bli værende enn en som ser et tomt lerret.
 

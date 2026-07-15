@@ -3,7 +3,7 @@ title: Menerjemahkan Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Menerjemahkan Ultimate Multisite {#translating-ultimate-multisite}
+# Menerjemahkan Ultimate Multisite
 
 Ultimate Multisite dikembangkan dalam bahasa Inggris, tapi plugin ini bisa diterjemahkan sepenuhnya dan kami sangat terbuka untuk kontribusi terjemahan.
 

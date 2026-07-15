@@ -4,7 +4,7 @@ title: Radnja - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Akcija: wu_deactivation {#action-wudeactivation}
+# Akcija: wu_deactivation
 
 Omogućuje drugim dijelovima plugin da priključe svoje rutine za deaktivaciju
 

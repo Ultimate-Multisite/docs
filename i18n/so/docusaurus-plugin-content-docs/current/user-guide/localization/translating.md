@@ -3,7 +3,7 @@ title: Turjuma Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tarjuma Ultimate Multisite {#translating-ultimate-multisite}
+# Tarjuma Ultimate Multisite
 
 Ultimate Multisite waa la horumaray English, laakiin plugin-ka waxaa si buuxda loo tarjumi karaa, waxaana si firfircoon ugu dhiirigelinayaa waxyaabaha tarjumidda.
 

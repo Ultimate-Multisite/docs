@@ -3,7 +3,7 @@ title: Tšhobo tsa ho fana ka lefa la site
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms ho Hoho (Contact Forms) {#site-builder-contact-forms}
+# Forms ho Hoho (Contact Forms)
 
 Superdav AI Agent v1.10.0 e ntlha le fa motho ea ho fetola forms ho hoho (contact forms) ka tsela e ntle ka chat interface ka ho sebelisa Site Builder agent. Sena se etsa hore u ka feta forms ho hoho e fanaang ka page efe ka ho tsamaea ka chat.
 

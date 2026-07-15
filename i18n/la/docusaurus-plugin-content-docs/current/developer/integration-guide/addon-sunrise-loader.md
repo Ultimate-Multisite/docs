@@ -3,7 +3,7 @@ title: Additamentum Oneratoris Fasciculi Aurorae
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise Tabulae Onerator {#addon-sunrise-file-loader}
+# Addon Sunrise Tabulae Onerator
 
 Ultimate Multisite 2.8.0 addit sunrise extension loader pro additamentis et integrationibus consuetis MU-plugin quae per WordPress sunrise bootstrapping currere debent sine tabula generata `wp-content/sunrise.php` recensenda.
 

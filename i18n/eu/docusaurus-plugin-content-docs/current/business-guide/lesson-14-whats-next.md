@@ -3,7 +3,7 @@ title: 'Lezioa 14: Zer da irri?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Urdiena 14: Zer da irri? {#lesson-14-what-comes-next}
+# Urdiena 14: Zer da irri?
 
 Zerbitzu bat oso-n-da web plateforma gurek eskaintzen duz. FitSite dagoen, fitness studioak ematen du eta aurrekontu jarraituko merkatua sortzen du. Hau da lehen ustez zer egin behar dugu.
 

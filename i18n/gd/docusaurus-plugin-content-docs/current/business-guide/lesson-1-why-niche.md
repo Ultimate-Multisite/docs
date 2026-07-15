@@ -3,7 +3,7 @@ title: 'Leasan 1: Carson a bhuannaicheas nìs'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Leasan 1: Carson a bhuannaicheas raon sònraichte {#lesson-1-why-niche-wins}
+# Leasan 1: Carson a bhuannaicheas raon sònraichte
 
 Mus suath sinn ri bathar-bog sam bith, feumaidh tu tuigsinn carson is e togail do luchd-èisteachd sònraichte an co-dhùnadh as cudromaiche a nì thu.
 

@@ -3,7 +3,7 @@ title: Manuel Ödemeleri Ayarlama
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuel Ödemeleri Ayarlama (v2) {#setting-up-manual-payments-v2}
+# Manuel Ödemeleri Ayarlama (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüyle ilgilidir.**_
 

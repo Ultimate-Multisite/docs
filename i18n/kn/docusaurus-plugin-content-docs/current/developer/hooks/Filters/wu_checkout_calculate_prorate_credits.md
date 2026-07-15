@@ -4,7 +4,7 @@ title: Filter - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Filter: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# Filter: wu_checkout_calculate_prorate_credits
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳು ಕ್ರೆಡಿಟ್ ಮೌಲ್ಯವನ್ನು ಬದಲಾಯಿಸಲು (modify) ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

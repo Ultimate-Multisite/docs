@@ -4,7 +4,7 @@ title: فیلتر - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# فیلتر: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# فیلتر: wu_checkout_form_base_domains
 
 دامنه‌های پایهٔ مشترک فرم checkout را فیلتر می‌کند که نباید به رکوردهای دامنهٔ نگاشت‌شده تبدیل شوند.
 

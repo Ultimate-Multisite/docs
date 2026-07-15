@@ -3,7 +3,7 @@ title: D'Discountcodes kreiere
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Rabattcodes erstelle (v2) {#creating-discount-codes-v2}
+# Rabattcodes erstelle (v2)
 
 _**WICHTIGE NOTIZ: Dëse Artikel bezieht sich uf Ultimate Multisite version 2.x.**_
 

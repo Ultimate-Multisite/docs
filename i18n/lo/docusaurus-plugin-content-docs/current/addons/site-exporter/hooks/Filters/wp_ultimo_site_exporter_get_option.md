@@ -4,7 +4,7 @@ title: ຕົວກອງ - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# ຕົວກອງ: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# ຕົວກອງ: wp_ultimo_site_exporter_get_option
 
 ສົ່ງຄືນຄ່າຕົວເລືອກເຄືອຂ່າຍທີ່ຖືກແປງເປັນ slug.
 

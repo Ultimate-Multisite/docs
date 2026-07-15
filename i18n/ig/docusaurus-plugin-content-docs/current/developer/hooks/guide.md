@@ -3,7 +3,7 @@ title: Ntuziaka Ojiji Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Ntuziaka Iji Hooks {#hooks-usage-guide}
+# Ntuziaka Iji Hooks
 
 Ultimate Multisite na-enye action hooks karịrị 200 na filter hooks karịrị 280. Peeji a na-akọwa hooks ndị a na-ejikarị eme ihe, tinyere ihe atụ bara uru. Maka ntụaka zuru ezu e mepụtara na-akpaghị aka, chọgharịa peeji ndị ọzọ n’akụkụ a.
 

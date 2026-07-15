@@ -3,7 +3,7 @@ title: Ho lula le Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow a Tlalelelo ea Theme Builder {#theme-builder-onboarding-flow}
+# Flow a Tlalelelo ea Theme Builder
 
 Superdav AI Agent v1.12.0 e ntse le **flow ea onboarding ea Theme Builder** ea ho thusa hau ho fetola theme e tšoa (custom block theme) mme a re kae sa setso se se sehle. Sena se fetola mode ea Site Builder e ntlha le maemo a leboho, a tšoa le ho thusa le agent.
 

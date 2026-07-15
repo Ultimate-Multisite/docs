@@ -3,7 +3,7 @@ title: اشتہار انجيكٽر
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector سان توهان جي نٽويڪ (network) تي اشتہارات وڌائڻ لاءِ {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector سان توهان جي نٽويڪ (network) تي اشتہارات وڌائڻ لاءِ
 
 Ultimate Multisite: Ad Injector هڪ **مفت add-on** آهي جيڪو توهان کي انهن خطه جي edit page کان ئي پنهنجي plans تي اشتہارات وراجيت ڪرڻ جا اوزار ڏئي ٿو.
 

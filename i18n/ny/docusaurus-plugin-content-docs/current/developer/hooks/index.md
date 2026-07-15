@@ -3,7 +3,7 @@ title: Kalozera wa Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Cholozera cha Hooks {#hooks-reference}
+# Cholozera cha Hooks
 
 Zolemba zopangidwa zokha za **59 zochita** ndi **118 zosefera** mu Ultimate Multisite.
 

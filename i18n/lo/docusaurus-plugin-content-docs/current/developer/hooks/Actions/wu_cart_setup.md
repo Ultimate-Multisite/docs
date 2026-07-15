@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# ການກະທຳ: wu_cart_setup {#action-wucartsetup}
+# ການກະທຳ: wu_cart_setup
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາເຮັດການປ່ຽນແປງເພີ່ມເຕີມຕໍ່ອັອບເຈັກ checkout.
 

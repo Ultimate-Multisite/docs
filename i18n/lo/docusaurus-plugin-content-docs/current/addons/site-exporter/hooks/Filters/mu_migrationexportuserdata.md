@@ -4,7 +4,7 @@ title: ຕົວກອງ - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# ຕົວກັ່ນຕອງ: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# ຕົວກັ່ນຕອງ: mu_migration/export/user/data
 
 ກັ່ນຕອງຊຸດຂໍ້ມູນຜູ້ໃຊ້ເລີ່ມຕົ້ນທີ່ຈະຖືກສົ່ງອອກ/ນຳເຂົ້າ.
 

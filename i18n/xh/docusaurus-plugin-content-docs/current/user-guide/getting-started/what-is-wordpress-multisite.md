@@ -3,7 +3,7 @@ title: Yintoni i-WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Yintoni i-WordPress Multisite? {#what-is-wordpress-multisite}
+# Yintoni i-WordPress Multisite?
 
 Embindini wayo, i-WordPress inika uphawu olubizwa ngokuba yi-‘Multisite’ olusuka kwimvelaphi yalo ngo-2010 ekukhululweni kwe-WordPress 3.0. Ukususela ngoko ifumene uhlaziyo oluninzi olujolise ekungeniseni iimpawu ezintsha nasekuqiniseni ukhuseleko.
 

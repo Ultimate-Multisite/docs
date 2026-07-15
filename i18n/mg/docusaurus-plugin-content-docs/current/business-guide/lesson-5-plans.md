@@ -3,7 +3,7 @@ title: 'Lesona 5: Famolavolana ny Drafitrao'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesona 5: Famolavolana ny Drafitrao {#lesson-5-designing-your-plans}
+# Lesona 5: Famolavolana ny Drafitrao
 
 Ny ambaratongan-drafitrao dia tsy haavon’ny vidiny fotsiny -- fa taratry ny fomba fiasan’ny mpanjifa ao amin’ny sehatra kendrenao tokoa. Amin’ity lesona ity dia hamolavola ambaratongam-vokatra mifanaraka amin’ny tena ilain’ny orinasa fitness amin’ny dingana samihafa ianao.
 

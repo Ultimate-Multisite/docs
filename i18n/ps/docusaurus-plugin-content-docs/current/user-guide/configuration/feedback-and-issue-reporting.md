@@ -3,7 +3,7 @@ title: د کارندوی تاثرات او مسائلی اطلاع ورکول
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# بازخورندې او مسائله رپرتینګ (Customer Feedback & Issue Reporting) {#customer-feedback--issue-reporting}
+# بازخورندې او مسائله رپرتینګ (Customer Feedback & Issue Reporting)
 
 Gratis AI Agent v1.5.0 یو درکار سیستم د بازخورونو او مسائلو رپرت کولو نظام راغlere چې پای کارونکي کولی شي له چټ چیټ رابطو څخه ناکام ځوابونه 신고 کړي او مشکلات مستقیم رپورت کړي. دا سیستم شامل سرلیک کی مدیریت (consent management)، یوه خودکار رپرت کولو فرمان، او پښې کور کې د AI سره مرسته وکړئ (AI-assisted triage).
 

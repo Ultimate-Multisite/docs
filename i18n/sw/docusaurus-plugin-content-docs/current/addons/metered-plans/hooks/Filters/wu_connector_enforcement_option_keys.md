@@ -4,7 +4,7 @@ title: Kichujio - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filter: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filter: wu_connector_enforcement_option_keys
 
 Badilisha orodha ya funguo za chaguo za AI provider zinazotawaliwa kutoka kwa tovuti kuu.
 

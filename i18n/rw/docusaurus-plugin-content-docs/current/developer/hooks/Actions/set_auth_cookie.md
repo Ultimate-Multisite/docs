@@ -4,7 +4,7 @@ title: Igikorwa - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Igikorwa: set_auth_cookie {#action-setauthcookie}
+# Igikorwa: set_auth_cookie
 
 Kibaho ako kanya mbere y’uko kuki y’iyemeza mwirondoro ishyirwaho.
 

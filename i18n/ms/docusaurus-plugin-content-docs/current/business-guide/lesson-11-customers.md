@@ -3,7 +3,7 @@ title: 'Pelajaran 11: Mencari Pelanggan'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Pelajaran 11: Mencari Pelanggan {#lesson-11-finding-customers}
+# Pelajaran 11: Mencari Pelanggan
 
 Platform yang hebat tanpa pelanggan ibarat hobi semata-mata. Pelajaran ini akan menerangkan cara mendapatkan pelanggan dalam industri khusus (niche vertical) — strategi yang berfungsi secara spesifik kerana anda fokus pada satu industri sahaja.
 

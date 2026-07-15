@@ -3,7 +3,7 @@ title: 'Oppitunti 6: Rekisteröitymiskokemus'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Oppitunti 6: Rekisteröitymiskokemus {#lesson-6-the-signup-experience}
+# Oppitunti 6: Rekisteröitymiskokemus
 
 Kassaprosessi on kohta, jossa kiinnostus muuttuu tuotoksi. Sekava tai geneerinen rekisteröitymisprosessi menettää asiakkaita. Niche-kohtainen prosessi, joka puhuu heidän kieltään ja tuntuu vaivattomalta, konvertoi heidät.
 

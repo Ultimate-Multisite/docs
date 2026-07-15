@@ -3,7 +3,7 @@ title: 'Isifundo 2: Ukukhetha icandelo lakho elikhethekileyo'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Isifundo 2: Ukukhetha iNiche Yakho {#lesson-2-picking-your-niche}
+# Isifundo 2: Ukukhetha iNiche Yakho
 
 KwiSifundo 1 siqinisekisile ukuba kutheni i-niche igqwesa into ebanzi. Ngoku kufuneka ukhethe eyakho. Esi sifundo sikunika isakhelo sokufumana nokuqinisekisa i-niche ngaphambi kokuba utyale ixesha uyakhela yona.
 

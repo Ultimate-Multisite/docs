@@ -3,7 +3,7 @@ title: Tixraaca WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Tixraaca WP-CLI {#wp-cli-reference}
+# Tixraaca WP-CLI
 
 Gratis AI Agent waxa uu la yimaadaa qoys amarro `wp gratis-ai-agent` ah oo loogu talagalay cabbiridda agent-ka, maareynta awoodaha, iyo weydiinta xaaladda agent-ka laga bilaabo command line. Dhammaan amarradu waxay u baahan yihiin WP-CLI 2.0 ama ka sarreeya.
 

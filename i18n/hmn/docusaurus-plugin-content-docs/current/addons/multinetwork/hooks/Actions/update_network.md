@@ -4,7 +4,7 @@ title: Kev ua - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Kev ua: update_network {#action-updatenetwork}
+# Kev ua: update_network
 
 Khiav tom qab ib lub network uas twb muaj lawm tau raug hloov tshiab.
 

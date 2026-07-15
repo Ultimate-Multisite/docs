@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# سۈزگۈچ: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# سۈزگۈچ: wu_stripe_checkout_subscription_data
 
 Stripe Subscription سانلىق مەلۇماتلىرىنى سۈزۈڭ. success_url ياكى cancel_url نى قاپلىۋېتەلەيدۇ.
 

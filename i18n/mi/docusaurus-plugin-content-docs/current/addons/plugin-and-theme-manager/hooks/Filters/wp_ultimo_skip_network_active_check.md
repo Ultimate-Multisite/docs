@@ -4,7 +4,7 @@ title: Tātari - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0eef99879a6634b6dd604ef90235090e
 ---
-# Tātari: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Tātari: wp_ultimo_skip_network_active_check
 
 Whakaaetia ngā kaiwhakawhanake kia whakakore wawe i tēnei arowhai.
 

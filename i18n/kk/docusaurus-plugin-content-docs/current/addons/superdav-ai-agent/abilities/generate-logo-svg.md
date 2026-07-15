@@ -3,7 +3,7 @@ title: Логотип SVG жасаңыз
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG жасау {#generate-logo-svg}
+# Logo SVG жасау
 
 **Logo SVG жасау** мүмкіндігі Theme Builder-ге автоматты түрде namespace-қауіпсіз тазартумен тікелей WordPress сайтыңызға арнаулы логотип SVG-лерін жасауға және енгізуге мүмкіндік береді.
 

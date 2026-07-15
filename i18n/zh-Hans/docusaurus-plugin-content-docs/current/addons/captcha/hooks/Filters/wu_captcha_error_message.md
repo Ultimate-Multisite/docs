@@ -4,7 +4,7 @@ title: 过滤 - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# 过滤器: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# 过滤器: wu_captcha_error_message
 
 过滤验证码错误信息。
 

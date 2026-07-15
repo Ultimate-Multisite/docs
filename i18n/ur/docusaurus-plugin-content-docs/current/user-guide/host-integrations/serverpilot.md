@@ -3,7 +3,7 @@ title: ServerPilot انٹیگریشن
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot انٹیگریشن {#serverpilot-integration}
+# ServerPilot انٹیگریشن
 
 ## جائزہ {#overview}
 ServerPilot ایک کلاؤڈ سروس ہے جو DigitalOcean، Amazon، Google، یا کسی بھی دوسرے سرور پرووائیڈر پر WordPress اور دیگر PHP ویب سائٹس ہوسٹ کرنے کے لیے استعمال ہوتی ہے۔ یہ انٹیگریشن Ultimate Multisite اور ServerPilot کے درمیان خودکار ڈومین سنکنگ اور SSL سرٹیفکیٹ مینجمنٹ کو فعال کرتی ہے۔

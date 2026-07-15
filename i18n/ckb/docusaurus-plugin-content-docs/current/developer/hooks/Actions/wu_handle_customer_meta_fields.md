@@ -4,7 +4,7 @@ title: کردار - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# کردار: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# کردار: wu_handle_customer_meta_fields
 
 ڕێگە بدە بە پەرەپێدەرانی plugin کە زانیاریی meta بە شێوازە جیاوازەکان پاشەکەوت بکەن ئەگەر پێویستیان پێی هەبوو.
 

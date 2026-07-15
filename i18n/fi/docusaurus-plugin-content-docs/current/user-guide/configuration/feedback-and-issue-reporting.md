@@ -3,7 +3,7 @@ title: Asiakaspalautteet ja ongelmien raportointi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Asiakkaanpalautteet ja ongelmien raportointi {#customer-feedback--issue-reporting}
+# Asiakkaanpalautteet ja ongelmien raportointi
 
 Gratis AI Agent v1.5.0 tuo mukanaan sisäänrakennetun palautteen ja ongelmien raportoinnin järjestelmän, jonka avulla käyttäjät voivat merkitä hyödyttömät vastaukset ja raportoida ongelmia suoraan chatin käyttöliittymästä. Tämä järjestelmä sisältää suostumuksen hallinnan, automaattisen raportointikomennon ja taustajärjestelmän AI-avusteisen priorisoinnin (triage).
 

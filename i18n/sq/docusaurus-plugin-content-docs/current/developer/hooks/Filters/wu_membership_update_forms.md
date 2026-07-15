@@ -4,7 +4,7 @@ title: Filtër - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filtër: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Filtër: wu_membership_update_forms
 
 Lejon zhvilluesit të shtojnë slugs të rinj për formularë përditësimi.
 

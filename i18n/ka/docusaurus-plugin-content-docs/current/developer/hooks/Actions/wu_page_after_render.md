@@ -4,7 +4,7 @@ title: მოქმედება - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# მოქმედება: wu_page_after_render {#action-wupageafterrender}
+# მოქმედება: wu_page_after_render
 
 მიეცით plugin-ის დეველოპერებს საშუალება, დაამატონ დამატებითი კონტენტი მას შემდეგ, რაც გვერდს გამოვიტანთ
 

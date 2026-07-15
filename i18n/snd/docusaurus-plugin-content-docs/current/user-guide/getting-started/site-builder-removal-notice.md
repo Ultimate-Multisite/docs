@@ -3,7 +3,7 @@ title: سائٽ بلڊر موڊ ريمول ڪرڻ جو نوٽيس
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# साइट بلڊر موڊ ختم ڪرڻ جو نوٽيس {#site-builder-mode-removal-notice}
+# साइट بلڊر موڊ ختم ڪرڻ جو نوٽيس
 
 **Superdav AI Agent v1.12.0 ۾ Site Builder mode ختم ڪري ڇڏي ڇڏيو آهي.** جيڪڏهن توهان Site Builder mode استعمال ڪري رهيا هئيو، تنهنجو ميغريٽ **Setup Assistant agent** ڏانهن ڪرڻ گهرجي ٿا ٿيم (theme) جي ٺاهڻ ۽ سائيٽ جو ٺهڻ لاءِ.
 

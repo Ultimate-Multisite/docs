@@ -3,7 +3,7 @@ title: Төлөм алуу
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Төлөм алуу (v2) {#getting-paid-v2}
+# Төлөм алуу (v2)
 
 _**МААНИЛҮҮ ЭСКЕРТҮҮ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү.**_
 

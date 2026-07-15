@@ -4,7 +4,7 @@ title: Filtro - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Filtro: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Filtro: wu_hosting_integration_wizard_sections
 
 Filtra as seccións do asistente para a configuración da integración de aloxamento.
 

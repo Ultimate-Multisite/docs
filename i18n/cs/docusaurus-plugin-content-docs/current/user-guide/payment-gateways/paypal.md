@@ -3,7 +3,7 @@ title: Nastavení PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Nastavení PayPal brány (v2) {#setting-up-the-paypal-gateway-v2}
+# Nastavení PayPal brány (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 

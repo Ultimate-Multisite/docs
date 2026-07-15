@@ -3,7 +3,7 @@ title: 'Lectio 6: Experientia inscriptionis'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lectio 6: Experientia Registrationis {#lesson-6-the-signup-experience}
+# Lectio 6: Experientia Registrationis
 
 Fluxus checkout est ubi studium in reditum vertitur. Processus registrationis confusus aut genericus clientes amittit. Fluxus ad certum genus accommodatus, qui linguam eorum loquitur et facilis videtur, eos convertit.
 

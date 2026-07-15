@@ -6,7 +6,7 @@ title: >-
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Aktion: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Aktion: wu_after_switch_template
 
 Ermöglicht Plugin-Entwicklern, Funktionen nach dem Wechsel des Site-Templates durch einen Benutzer oder Super-Admin zu verknüpfen.
 

@@ -4,7 +4,7 @@ title: فلتر - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# الفلتر: wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# الفلتر: wu_stripe_webhook_membership
 
 يُرشّح سجل العضوية المرتبط بهذا الويب هوك.
 

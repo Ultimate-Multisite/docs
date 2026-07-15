@@ -4,7 +4,7 @@ title: Chochita - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Chochita: wu_page_before_render {#action-wupagebeforerender}
+# Chochita: wu_page_before_render
 
 Lolani opanga ma plugin kuwonjezera zomwe zili zina tisanatulutse tsambali.
 

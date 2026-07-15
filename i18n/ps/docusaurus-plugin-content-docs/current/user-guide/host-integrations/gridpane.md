@@ -3,7 +3,7 @@ title: GridPane 통합
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# دمج GridPane (GridPane Integration) {#gridpane-integration}
+# دمج GridPane (GridPane Integration)
 
 ## مروری (Overview) {#overview}
 GridPane یو ویआरपी پروفیشنلहरूको लागि बनाइएको एउटा विशेष वर्डप्रेस होस्टिङ कन्ट्रोल प्यानल हो। यो इन्टिग्रेशनले अल्टीमेट मल्टिसिट र GridPane बीच डोमेन सिङ्क्रनाइजेसन र SSL सर्टिफिकेट व्यवस्थापनलाई स्वचालित बनाउँछ।

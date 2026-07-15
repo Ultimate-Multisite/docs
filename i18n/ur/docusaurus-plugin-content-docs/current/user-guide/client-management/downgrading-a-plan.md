@@ -3,7 +3,7 @@ title: منصوبے کو کم درجے پر لانا
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# پلان کو ڈاؤن گریڈ کرنا (v2) {#downgrading-a-plan-v2}
+# پلان کو ڈاؤن گریڈ کرنا (v2)
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔**_
 

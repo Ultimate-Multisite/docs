@@ -3,7 +3,7 @@ title: 'Lektioun 10: Startdag'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lektioun 10: Startdag {#lesson-10-launch-day}
+# Lektioun 10: Startdag
 
 Alles ass opgebaut. Ier Dir d'Dieren opmaacht, féiert dës Lektioun Iech duerch d'Pre-Launch-Checklëscht, fir sécherzestellen, datt näischt futti, feelend oder peinlech ass.
 

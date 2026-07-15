@@ -3,7 +3,7 @@ title: ড্যাশবোর্ড বোঝা
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite ড্যাশবোর্ড বুঝে নেওয়া {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite ড্যাশবোর্ড বুঝে নেওয়া
 
 Ultimate Multisite-এর আরও উন্নত কনফিগারেশন অপশন এবং পরিচালনার দিকগুলোতে যাওয়ার আগে, চলুন একবার ড্যাশবোর্ডটা দেখে নিই।
 

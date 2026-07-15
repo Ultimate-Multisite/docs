@@ -4,7 +4,7 @@ title: Hereket - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Hereket: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Hereket: wu_after_switch_template
 
 Plugin düzüjilerine ulanyjy ýa-da super admin saýtyň template-ini çalşandan soň funksiýalary baglamaga mümkinçilik berýär
 

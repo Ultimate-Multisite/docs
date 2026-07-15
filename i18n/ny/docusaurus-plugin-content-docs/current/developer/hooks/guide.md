@@ -3,7 +3,7 @@ title: Kalozera wa Kagwiritsidwe Ntchito ka Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Chitsogozo cha Kugwiritsa Ntchito Hooks {#hooks-usage-guide}
+# Chitsogozo cha Kugwiritsa Ntchito Hooks
 
 Ultimate Multisite imapereka ma action hooks 200+ ndi ma filter hooks 280+. Tsambali likufotokoza ma hooks omwe amagwiritsidwa ntchito kwambiri ndi zitsanzo zothandiza. Kuti muwone buku lathunthu lopangidwa lokha, sakatulani masamba ena mu gawo ili.
 

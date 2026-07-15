@@ -3,7 +3,7 @@ title: Fandrindrana ny Mpanamboatra Tranonkala v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Fandrindrana Site Builder v2 {#site-builder-orchestration-v2}
+# Fandrindrana Site Builder v2
 
 Site Builder Orchestration v2 (nampidirina tao amin'ny Gratis AI Agent v1.4.0) no motera mampandeha ny famoronana tranonkala amin'ny dingana maro. Rehefa mangataka amin'ilay agent ianao hoe "manangana tranonkalan'ny trano fisakafoanana" na "mamorona portfolio misy bilaogy", dia zarain'ilay orchestrator ho **drafitra** voarafitra ilay tanjona ambony, tadiaviny ireo plugins ilaina hanatanterahana azy, tanterahiny misesy ny dingana tsirairay, arahiny ny fandrosoana, ary averiny amin'ny laoniny ho azy rehefa misy hadisoana.
 

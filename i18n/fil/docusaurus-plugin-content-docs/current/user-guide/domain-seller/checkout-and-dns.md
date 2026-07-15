@@ -3,7 +3,7 @@ title: Field sa Pag-checkout at DNS ng Kustomer
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pamamahala ng Checkout Field at Customer DNS {#checkout-field-and-customer-dns-management}
+# Pamamahala ng Checkout Field at Customer DNS
 
 ## Ang checkout field na Pagpili ng Domain {#the-domain-selection-checkout-field}
 

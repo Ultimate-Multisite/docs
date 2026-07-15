@@ -4,7 +4,7 @@ title: Hohenga - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Mahi: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Mahi: wu_admin_pages_editors
 
 Tukua ngā kaiwhakawhanake mono kia tāpiri i ngā kōwhiringa ētita hou =)
 

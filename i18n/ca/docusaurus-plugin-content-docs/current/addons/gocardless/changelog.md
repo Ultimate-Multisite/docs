@@ -3,7 +3,7 @@ title: GoCardless Historial de canvis
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Diari de canvis de GoCardless {#gocardless-changelog}
+# Diari de canvis de GoCardless
 
 Versió: 1.0.3 - Publicat el 2026-05-05
 * Correcció: Els llocs pendents orfànos es netejen ara quan es cancela una membresria de GoCardless en estat pendent o en suspensió.

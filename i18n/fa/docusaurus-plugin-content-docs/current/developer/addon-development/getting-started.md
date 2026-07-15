@@ -3,7 +3,7 @@ title: شروع کار با توسعه Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# توسعه افزونه {#addon-development}
+# توسعه افزونه
 
 ## ساختار افزونه {#addon-structure}
 

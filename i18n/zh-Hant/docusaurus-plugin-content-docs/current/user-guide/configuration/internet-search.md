@@ -3,7 +3,7 @@ title: 網路搜尋
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# 網路搜尋 {#internet-search}
+# 網路搜尋
 
 Gratis AI Agent v1.5.0 新增了 **Internet Search** 功能，讓 AI 助理在對話過程中能夠從網路上檢索最新的資訊。此功能由 [Brave Search API](https://brave.com/search/api/) 或 [Tavily API](https://tavily.com/) 驅動。
 

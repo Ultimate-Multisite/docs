@@ -3,7 +3,7 @@ title: Pag-upgrade ng Plano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Pag-upgrade ng Plano (v2) {#upgrading-a-plan-v2}
+# Pag-upgrade ng Plano (v2)
 
 _**MAHALAGANG TALA: Tumutukoy ang artikulong ito sa Ultimate Multisite version 2.x.**_
 

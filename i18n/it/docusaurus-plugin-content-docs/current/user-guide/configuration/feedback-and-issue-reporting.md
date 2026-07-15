@@ -3,7 +3,7 @@ title: Feedback dei clienti e segnalazione problemi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback dell'Utente e Segnalazione Problemi {#customer-feedback--issue-reporting}
+# Feedback dell'Utente e Segnalazione Problemi
 
 Gratis AI Agent v1.5.0 introduce un sistema integrato per il feedback e la segnalazione problemi che consente agli utenti finali di segnalare risposte poco utili e di riportare problemi direttamente dall'interfaccia chat. Questo sistema include la gestione del consenso, un comando di segnalazione automatizzato e un triage assistito dall'IA sul backend.
 

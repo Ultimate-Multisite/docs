@@ -3,7 +3,7 @@ title: Kugadzira Kodesi dzemakuru
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kuratira Codes (v2) {#creating-discount-codes-v2}
+# Kuratira Codes (v2)
 
 _**CHINDIRA CHINDIRA: Iriro rudo: Iriro rudo: Ultimate Multisite version 2.x.**_
 

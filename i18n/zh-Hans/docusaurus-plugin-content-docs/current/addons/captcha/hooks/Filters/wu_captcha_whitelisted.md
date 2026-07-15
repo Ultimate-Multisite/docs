@@ -4,7 +4,7 @@ title: 过滤 - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# 过滤: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# 过滤: wu_captcha_whitelisted
 
 过滤当前用户/请求是否应被列入白名单。
 

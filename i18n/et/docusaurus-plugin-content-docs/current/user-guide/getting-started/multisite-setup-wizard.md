@@ -3,7 +3,7 @@ title: Multisite seadistusjuhend
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Seadistusju {#multisite-setup-wizard}
+# Multisite Seadistusju
 
 Ultimate Multisite sisaldab sissejuhatavast tööriista, mis automaatselt muudab tavalise WordPress-installatsiooni WordPress Multisite võrku. See elimina vajaduse manuaalselt muuta `wp-config.php` faili või käivitada database käske.
 

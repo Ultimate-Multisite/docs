@@ -3,7 +3,7 @@ title: Rexistro de cambios de Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Rexistro de cambios de Loco Translate {#loco-translate-changelog}
+# Rexistro de cambios de Loco Translate
 
 ### 1.0.1 {#101}
 * Mellorada a compatibilidade coa versión máis recente de Loco Translate

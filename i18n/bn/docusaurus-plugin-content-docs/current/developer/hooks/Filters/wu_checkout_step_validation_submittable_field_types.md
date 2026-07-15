@@ -4,7 +4,7 @@ title: ফিল্টার - wu_checkout_step_validation_submittable_field_typ
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 ডেভেলপারদের সুযোগ দেওয়া যে, যদি কোনো ফিল্ড স্বয়ংক্রিয়ভাবে জমা দেওয়া যায় (auto-submittable) তবে সেই ফিল্ডের ভ্যালিডেশন চেক বাইপাস করা যাবে।
 

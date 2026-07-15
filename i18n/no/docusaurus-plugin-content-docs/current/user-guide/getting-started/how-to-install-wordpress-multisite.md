@@ -3,7 +3,7 @@ title: Hvordan installere WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hvordan installerer jeg WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Hvordan installerer jeg WordPress Multisite?
 
 WordPress Multisite lar deg ha et nettverk av nettsider på én enkelt installasjon. Dette er en innebygd funksjon, men den er ikke aktiv som standard.
 
@@ -61,7 +61,7 @@ Og denne koden, også generert av WordPress, i _**.htaccess**_-filen din:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# legg til en avsluttende skråstrek til /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# legg til en avsluttende skråstrek til /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# Action: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# Action: wp_ultimo_site_exporter_load
 
 అన్ని డిపెండెన్సీలు (dependencies) లోడ్ అయినప్పుడు ఇది ట్రిగ్గర్ అవుతుంది.
 

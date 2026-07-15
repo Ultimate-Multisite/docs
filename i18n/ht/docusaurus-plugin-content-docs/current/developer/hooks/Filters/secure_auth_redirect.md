@@ -4,7 +4,7 @@ title: Filtè - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtè: secure_auth_redirect {#filter-secureauthredirect}
+# Filtè: secure_auth_redirect
 
 Filtre si pou itilize yon redireksyon otantifikasyon sekirize.
 

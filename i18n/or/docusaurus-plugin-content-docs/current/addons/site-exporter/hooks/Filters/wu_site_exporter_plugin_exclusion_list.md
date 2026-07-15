@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# ଫିଲ୍ଟର: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# ଫିଲ୍ଟର: wu_site_exporter_plugin_exclusion_list
 
 ବିକାଶକମାନଙ୍କୁ ଏକ plugin ତାଲିକା ପରିଚାଳନା କରିବାକୁ ଦେଇଥାଏ, ଯାହା ତିଆରି ହୋଇଥିବା zip ରୁ ବାଦ ପଡ଼ିପାରେ।
 

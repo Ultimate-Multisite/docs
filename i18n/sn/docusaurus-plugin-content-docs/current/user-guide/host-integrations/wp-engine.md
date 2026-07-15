@@ -3,7 +3,7 @@ title: Kugadzirwa neWP Engine Integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integration neWP Engine {#wp-engine-integration}
+# Integration neWP Engine
 
 ## Zvinoro (Overview) {#overview}
 WP Engine ndiri platform yechikuru yeWordPress inoteka (hosting) inoteka inoteka WordPress sites. Ino inopa zvinhu zvekuita kuti domain dzine zvinobatsirwa (syncing) zvakaita nekuti Ultimate Multisite neWP Engine.

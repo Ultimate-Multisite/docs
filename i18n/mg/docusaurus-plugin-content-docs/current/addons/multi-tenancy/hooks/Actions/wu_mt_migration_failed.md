@@ -4,7 +4,7 @@ title: Hetsika - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# Hetsika: wu_mt_migration_failed {#action-wumtmigrationfailed}
+# Hetsika: wu_mt_migration_failed
 
 Mitranga rehefa tsy mahomby ny fifindra-monina.
 

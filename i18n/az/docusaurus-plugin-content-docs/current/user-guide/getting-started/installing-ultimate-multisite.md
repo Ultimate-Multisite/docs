@@ -3,7 +3,7 @@ title: Ultimate Multisite-in quraşdırılması
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-in quraşdırılması {#installing-ultimate-multisite}
+# Ultimate Multisite-in quraşdırılması
 
 :::note
 Bu təlimatda, WordPress Multisite-nin artıq quraşdırılmış və konfiqurasiya edilmiş olduğu güman edilir. Nə etmək lazım olduğunu öyrənmək üçün WP Beginner tərəfindən hazırlanmış [bu təlimata](https://www.wpbeginner.com/glossary/multisite/) baxın.

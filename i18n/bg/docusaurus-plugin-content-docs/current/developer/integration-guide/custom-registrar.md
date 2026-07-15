@@ -3,7 +3,7 @@ title: Изграждане на персонализирана интеграц
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Изграждане на персонализирана интеграция с регистратори {#building-a-custom-registrar-integration}
+# Изграждане на персонализирана интеграция с регистратори
 
 Addon за продажба на домейни използва модел, наречен **Integration Registry** (Регистър на интеграции). Всеки регистратор е PHP клас, който имплементира `Domain_Selling_Capability` и се регистрира чрез action hook `wu_domain_seller_register_capabilities`.
 

@@ -3,7 +3,7 @@ title: Demander yon plan anba
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Descente d'un plan (v2) {#downgrading-a-plan-v2}
+# Descente d'un plan (v2)
 
 _**NOTE IMPORTANTE : Sa dokiman refere a Ultimate Multisite version 2.x.**_
 

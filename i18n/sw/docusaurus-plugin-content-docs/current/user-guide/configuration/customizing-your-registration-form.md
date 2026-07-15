@@ -3,7 +3,7 @@ title: Kubinafsisha Fomu Yako ya Usajili
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kubinafsisha Fomu yako ya Usajili {#customizing-your-registration-form}
+# Kubinafsisha Fomu yako ya Usajili
 
 Ili kufanya network yako ionekane ya kipekee tofauti na SaaS nyingine zote zilizojengwa kwenye WordPress platform, Ultimate Multisite hukuruhusu kubinafsisha kurasa zako za usajili na kuingia kwa kutumia kipengele chetu cha **Checkout Forms**.
 

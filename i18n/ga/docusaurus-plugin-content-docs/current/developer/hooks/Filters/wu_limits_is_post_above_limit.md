@@ -4,7 +4,7 @@ title: Scagaire - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Scagaire: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Scagaire: wu_limits_is_post_above_limit
 
 Seiceálann an bhfuil cineál postála ar leith ceadaithe ar an bplean seo. Ligeann sé d’fhorbróirí plugin an luach fillte a scagadh
 

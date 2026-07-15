@@ -4,7 +4,7 @@ title: Filtrum - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filtrum: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filtrum: mu_migration/export/user/data
 
 Filtrat copiam praedefinitam datorum usoris exportandorum/importandorum.
 

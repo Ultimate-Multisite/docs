@@ -3,7 +3,7 @@ title: Ho Fetola Foromo ea Hao ea Ngoliso
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ho iketsetsa Registration Form ya hao {#customizing-your-registration-form}
+# Ho iketsetsa Registration Form ya hao
 
 Ho etsa hore network ya hao e shebahale e ikgetha ho SaaS tse ding tsohle tse ahilweng hodima platform ya WordPress, Ultimate Multisite e o dumella ho iketsetsa maqephe a hao a ngodiso le ho kena ka karolo ya rona ya **Checkout Forms**.
 

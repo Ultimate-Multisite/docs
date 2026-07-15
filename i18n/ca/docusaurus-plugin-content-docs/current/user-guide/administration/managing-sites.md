@@ -3,7 +3,7 @@ title: Gestionar Llocs
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestió de Sites {#managing-sites}
+# Gestió de Sites
 
 Els Sites (o subsites) són el nucli del teu negoci WaaS. Ultimate Multisite té 3 tipus de sites:
 

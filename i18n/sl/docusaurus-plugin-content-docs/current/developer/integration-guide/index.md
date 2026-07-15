@@ -3,7 +3,7 @@ title: Vodnik za integracijo
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Vodnik za integracijo {#integration-guide}
+# Vodnik za integracijo
 
 Ta vodnik obravnava pogoste vzorce integracije z Ultimate Multisite, vključno s povezovanjem z zunanjimi storitvami, izdelavo prilagojenih plačilnih prehodov in obravnavo webhookov.
 

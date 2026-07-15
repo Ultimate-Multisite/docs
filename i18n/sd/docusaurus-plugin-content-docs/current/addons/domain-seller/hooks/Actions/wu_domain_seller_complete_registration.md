@@ -4,7 +4,7 @@ title: عمل - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# عمل: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# عمل: wu_domain_seller_complete_registration
 
 تڏهن هلندو آهي جڏهن ڪا payment اهڙي status ڏانهن منتقل ٿئي جيڪا domain registration شروع ڪرڻ گهرجي.
 

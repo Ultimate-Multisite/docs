@@ -4,7 +4,7 @@ title: कृती - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site {#action-movesite}
+# Action: move_site
 
 जेव्हा एखादी साइट नवीन नेटवर्कवर हलवली जाते, तेव्हा हे कार्यान्वित होते.
 

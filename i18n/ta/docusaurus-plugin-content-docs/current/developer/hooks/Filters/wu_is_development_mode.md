@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filter: wu_is_development_mode
 
 Plugin உருவாக்குநர்கள் (plugin developers) டெவலப்மென்ட் மோடைக்கு (development mode) கூடுதல் சோதனைகளைச் சேர்க்க இதை அனுமதிக்கிறது.
 

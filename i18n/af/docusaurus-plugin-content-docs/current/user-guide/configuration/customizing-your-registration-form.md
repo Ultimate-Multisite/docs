@@ -3,7 +3,7 @@ title: Pas jou registrasievorm aan
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pas jou registrasievorm aan {#customizing-your-registration-form}
+# Pas jou registrasievorm aan
 
 Om jou netwerk uniek te laat lyk teenoor al die ander SaaS wat op die WordPress-platform gebou is, laat Ultimate Multisite jou toe om jou registrasie- en aanmeldbladsye met ons **Afrekenvorms**-funksie aan te pas.
 

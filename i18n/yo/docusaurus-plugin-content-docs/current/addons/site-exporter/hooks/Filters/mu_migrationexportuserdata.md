@@ -4,7 +4,7 @@ title: Àlẹmọ - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Àlẹmọ: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Àlẹmọ: mu_migration/export/user/data
 
 Ó ń ṣe àlẹmọ àkójọpọ̀ dátà olumulo aiyipada tí a máa gbe jáde/gbé wọlé.
 

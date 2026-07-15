@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 ฟิลเตอร์นี้ช่วยให้ผู้ดูแลระบบสามารถซ่อนหน้าเมนูแอดมินได้ เมื่อพวกเขาปรับแต่งทุกอย่างเสร็จเรียบร้อยแล้ว
 

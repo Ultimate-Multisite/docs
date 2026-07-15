@@ -3,7 +3,7 @@ title: Konfigurazioa eta Provedoraren Konfigurazioa
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Konfigurazioa eta Provedioraren Konfigurazioa {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Konfigurazioa eta Provedioraren Konfigurazioa
 
 Domain Seller addon-ek guided setup wizard bat joaten da, zehazki behar dituen guztietan iruditzen du. Lehiakoa (wizard) ereduaren bilakidetza eta ondoren provedioriak konfigurat edo irekitu (reconfigure) gabe dena.
 

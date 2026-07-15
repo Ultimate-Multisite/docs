@@ -3,7 +3,7 @@ title: Bir Planı Düşürme
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Bir planı düşürme (v2) {#downgrading-a-plan-v2}
+# Bir planı düşürme (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x için geçerlidir.**_
 

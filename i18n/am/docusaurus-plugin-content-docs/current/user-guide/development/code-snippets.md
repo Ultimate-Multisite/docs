@@ -3,7 +3,7 @@ title: የኮድ ቁርጥራጮች
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# ለv2 የኮድ ስኒፕበቶች {#code-snippets-for-v2}
+# ለv2 የኮድ ስኒፕበቶች
 
 በመሰረቱ፣ ለ**WordPress** የኮድ ስኒፕበቶች (code snippets) በሌላ መንገድ የተለየ ትንሽ plugin የሚያስፈልጋቸውን አንዳንድ ድርጊቶችን ለማከናወን ያገለግላሉ። እንዲህ ያሉ የኮድ ስኒፕበቶች በWordPress ዋና ፋይሎች ወይም በtheme ፋይሎች (በአጠቃላይ የthemeዎ functions.php ፋይል) ውስጥ ሊቀመጡ ይችላሉ፣ ወይም እንደ MU plugin ሊጠቀሙባቸው ይችላሉ።
 

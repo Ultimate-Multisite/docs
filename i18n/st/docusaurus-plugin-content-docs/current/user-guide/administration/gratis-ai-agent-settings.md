@@ -3,7 +3,7 @@ title: Litlhophiso tsa Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Ditlhophiso tsa Gratis AI Agent {#gratis-ai-agent-settings}
+# Ditlhophiso tsa Gratis AI Agent
 
 Skrine sa **Ditlhophiso → Tse tsoetseng pele** ho Gratis AI Agent se fana ka tlhophiso ya boemo ba motsamaisi bakeng sa dikgokahanyo tsa karolo e ka morao. Leqephe lena le ngola ka ho fetisetsa maikutlo, dinotlolo tsa bafani ba patlo, tlhophiso ya tshebeletso ya Superdav e laolwang, ditaolo tsa Google Calendar, ditlhophiso tsa SMS tsa TextBee, le difolakha tsa ditshebetso tse sebetsang netwekeng yohle.
 

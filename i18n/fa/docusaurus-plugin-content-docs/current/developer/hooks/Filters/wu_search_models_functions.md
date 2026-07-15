@@ -4,7 +4,7 @@ title: فیلتر - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# فیلتر: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# فیلتر: wu_search_models_functions
 
 این فیلتر به توسعه‌دهندگان پلاگین اجازه می‌دهد تا توابع مدل جستجوی بیشتری اضافه کنند.
 

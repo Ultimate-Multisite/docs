@@ -4,7 +4,7 @@ title: Filter - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Bộ lọc: wu_country_get_cities {#filter-wucountrygetcities}
+# Bộ lọc: wu_country_get_cities
 
 Trả về danh sách các thành phố thuộc một tiểu bang trong một quốc gia.
 

@@ -3,7 +3,7 @@ title: Quy trình Onboarding của Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Quy Trình Thiết Lập Theme Builder {#theme-builder-onboarding-flow}
+# Quy Trình Thiết Lập Theme Builder
 
 Superdav AI Agent v1.12.0 giới thiệu **quy trình thiết lập Theme Builder** có hướng dẫn, giúp bạn tạo một theme block tùy chỉnh ngay trong lần thiết lập ban đầu. Tính năng này thay thế chế độ Site Builder cũ bằng một phương pháp tiếp cận linh hoạt hơn, có sự hỗ trợ của agent.
 

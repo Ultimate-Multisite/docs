@@ -3,7 +3,7 @@ title: Ulelelo lula lehleletso la CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Tseka le tsela ea hore o se fihlela hore ho fana'a (and remove) domains tse di fetileng ka network ea hau ho ba le virtual hosts ka CyberPanel, le ho ba le ho fana'a auto-SSL ka Let's Encrypt.
 

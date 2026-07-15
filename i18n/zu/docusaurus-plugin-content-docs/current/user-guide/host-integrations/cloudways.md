@@ -3,7 +3,7 @@ title: Ukuhlanganiswa ne-Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ukuhlanganiswa kwe-Cloudways {#cloudways-integration}
+# Ukuhlanganiswa kwe-Cloudways
 
 ## Uhlolojikelele {#overview}
 I-Cloudways iyinkundla ye-cloud hosting ephethwe ekuvumela ukuthi ufake amasayithi e-WordPress kubahlinzeki be-cloud abahlukene njenge-DigitalOcean, AWS, Google Cloud, nokunye. Lokhu kuhlanganiswa kunika amandla ukuvumelanisa okuzenzakalelayo kwama-domain nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-Cloudways.

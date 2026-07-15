@@ -3,7 +3,7 @@ title: 'Ultimate AI Connector для сумісних кінцевих точо�
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Журнал змін Ultimate AI Connector для сумісних кінцевих точок {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Журнал змін Ultimate AI Connector для сумісних кінцевих точок
 
 ## Версія 2.0.0 — Випущено 2026-04-24 {#version-200--released-on-2026-04-24}
 

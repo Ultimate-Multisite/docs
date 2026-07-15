@@ -4,7 +4,7 @@ title: Action - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Akcja: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Akcja: wp_ultimo_site_exporter_activation
 
 Umożliwia innym częściom wtyczki dodanie własnej logiki/funkcji, która ma zostać wykonana podczas aktywacji.
 

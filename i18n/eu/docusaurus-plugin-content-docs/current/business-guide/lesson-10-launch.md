@@ -3,7 +3,7 @@ title: 'Lezioa 10: Lanbidearen egun'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lehen 10: Eguna {#lesson-10-launch-day}
+# Lehen 10: Eguna
 
 Gure guztia dago. Puertasak lortzeko, lehen aurrera egin baino lehen, hori ez duzu pre-launch checklist-a ikusten duzu, eta ez duzu ez dauden, ez duzu faltatu edo ez duzu inbildatzen duen eduki.
 

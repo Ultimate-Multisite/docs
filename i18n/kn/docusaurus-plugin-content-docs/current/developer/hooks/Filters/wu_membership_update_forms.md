@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filter: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Filter: wu_membership_update_forms
 
 ಡೆವಲಪರ್‌ಗಳಿಗೆ ಹೊಸ ಅಪ್ಡೇಟ್ ಫಾರ್ಮ್ ಸ್ಲಗ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

@@ -3,7 +3,7 @@ title: Greška s datom sunčja
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Greška pri instalaciji Sunrise datoteke {#error-installing-the-sunrise-file}
+# Greška pri instalaciji Sunrise datoteke
 
 Datoteka `sunrise.php` je posebna datoteka koju WordPress traži dok se sam inicijalizira (bootstraps). Da bi WordPress mogao prepoznati tu datoteku, ona mora biti smještena unutar foldera **wp-content**.
 

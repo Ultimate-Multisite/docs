@@ -3,7 +3,7 @@ title: हुक्स संदर्भ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks संदर्भ {#hooks-reference}
+# Hooks संदर्भ
 
 Ultimate Multisite में सभी **59 actions** और **118 filters** के लिए स्वतः-जनित दस्तावेज़।
 

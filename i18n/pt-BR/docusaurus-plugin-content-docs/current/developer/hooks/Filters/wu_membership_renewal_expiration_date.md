@@ -4,7 +4,7 @@ title: Filtro - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filtro: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# Filtro: wu_membership_renewal_expiration_date
 
 Filtra a data de expiração calculada para ser definida após a renovação.
 

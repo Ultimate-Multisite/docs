@@ -4,7 +4,7 @@ title: Filtras - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filtras: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filtras: wu_checkout_field_types
 
 Mūsų API naujiems laukų tipams pridėti prisijungia čia.
 

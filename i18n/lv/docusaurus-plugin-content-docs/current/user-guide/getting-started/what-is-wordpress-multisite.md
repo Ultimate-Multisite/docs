@@ -3,7 +3,7 @@ title: Kas ir WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kāpēc ir WordPress Multisite? {#what-is-wordpress-multisite}
+# Kāpēc ir WordPress Multisite?
 
 WordPress pamata funkcijās ir funkcija, ko vadās nosaukums ‘Multisite’, kas atsaucas uz 2010. gadu WordPress 3.0 lansēšanu. Kopējā laikā tas ir ieguvies vairākas revizijas, kurām mērķis ir ieviekt jaunas funkcijas un uzstādīt drošību.
 

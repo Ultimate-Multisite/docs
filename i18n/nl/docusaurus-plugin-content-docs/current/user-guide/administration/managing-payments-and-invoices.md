@@ -3,7 +3,7 @@ title: Betalingen en facturen beheren
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Betalingen en facturen beheren {#managing-payments-and-invoices}
+# Betalingen en facturen beheren
 
 ## Betalingsinstellingen {#payment-settings}
 

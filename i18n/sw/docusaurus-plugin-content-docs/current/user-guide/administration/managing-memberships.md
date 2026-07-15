@@ -3,7 +3,7 @@ title: Kusimamia Uanachama
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Kusimamia Memberships {#managing-memberships}
+# Kusimamia Memberships
 
 Katika Ultimate Multisite unaweza kusimamia memberships na kufikia subscriptions zote kwenye mtandao wako. Kagua na uhariri maelezo ya subscription kama vile plans na products, idadi ya sites, kiasi na marudio ya billing, historia ya malipo, na timestamps.
 

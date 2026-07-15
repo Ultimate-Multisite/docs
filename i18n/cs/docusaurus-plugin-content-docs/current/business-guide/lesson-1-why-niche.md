@@ -3,7 +3,7 @@ title: 'Lekce 1: Proč vítězí niša'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lekce 1: Proč vítězí Niche {#lesson-1-why-niche-wins}
+# Lekce 1: Proč vítězí Niche
 
 Než se dotkneme jakéhokoli softwaru, musíte pochopit, proč je budování pro specifickou cílovou skupinu nejdůležitější rozhodnutí, které kdy učiníte.
 

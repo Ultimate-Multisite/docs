@@ -3,7 +3,7 @@ title: Entwécklerdokumentatioun
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Entwéckler-Dokumentatioun {#developer-documentation}
+# Entwéckler-Dokumentatioun
 
 Dëse Guide liwwert Entwéckler alles, wat néideg ass, fir mat Ultimate Multisite z'integréieren, et z'erweideren oder Addons dofir z'entwéckelen. Ultimate Multisite transforméiert e WordPress Multisite-Netzwierk an eng Website-as-a-Service (WaaS)-Plattform.
 

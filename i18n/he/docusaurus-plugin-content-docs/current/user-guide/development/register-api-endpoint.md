@@ -3,7 +3,7 @@ title: רשום נקודת קצה API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# נקודת הקצה של Register API ב-Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# נקודת הקצה של Register API ב-Ultimate Multisite
 
 במדריך זה תלמדו כיצד להשתמש בנקודת הקצה /register של Ultimate Multisite כדי ליצור את כל תהליך ההצטרפות ללקוח חדש ברשת שלכם, וכיצד לעשות זאת באמצעות Zapier.
 

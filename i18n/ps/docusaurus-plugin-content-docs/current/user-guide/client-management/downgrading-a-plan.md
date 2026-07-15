@@ -3,7 +3,7 @@ title: د پلان کم کول
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# پلان دایگری (v2) {#downgrading-a-plan-v2}
+# پلان دایگری (v2)
 
 _**مهم نکته: این مقاله Ultimate Multisite نسخه ۲.x را می گوید.**_
 

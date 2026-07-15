@@ -3,7 +3,7 @@ title: Configurare și configurarea furnizorului
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Configurare și setarea furnizorului {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Configurare și setarea furnizorului
 
 Addon-ul Domain Seller vine cu un asistent de configurare ghidată care te conduce prin fiecare pas necesar. Această pagină acoperă fluxul asistentului și modul de configurare sau reconfigurare ulterioară a furnizorilor.
 

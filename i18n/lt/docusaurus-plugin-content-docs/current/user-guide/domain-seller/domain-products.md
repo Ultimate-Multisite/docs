@@ -3,7 +3,7 @@ title: Domino produktai ir kainos
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenų produktai ir kaina {#domain-products-and-pricing}
+# Domenų produktai ir kaina
 
 Domenų produktai yra tai, kaip jūs kontrolijuใจate kainą, TLD (Top-Level Domain), WHOIS privumą ir tiekėjo pasirinkimą. Kiekvienas domenų produktas yra standartinis Ultimate Multisite produktas su papildomu **Domain Settings** (Domenos nustatymai) pakuotė.
 

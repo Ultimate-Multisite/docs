@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Administrator Panel Personalizavimas PRO Temu su Jautra {#customizing-your-admin-panel-with-pro-theme}
+# Administrator Panel Personalizavimas PRO Temu su Jautra
 
 Daugeli atvejų klientų darbui mes turime nustatyti, kad norime suteikti savo klientams pritaikytą patirtį WordPress administravimo panelioje. Jei ieškote profesionalaus vaizdo ir jutimo, PRO Theme gali jums padėti.
 

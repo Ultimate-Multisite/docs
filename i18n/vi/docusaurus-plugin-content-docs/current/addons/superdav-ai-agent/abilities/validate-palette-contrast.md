@@ -3,7 +3,7 @@ title: Kiểm tra độ tương phản bảng màu
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Kiểm tra Độ Tương Phản Bảng Màu {#validate-palette-contrast}
+# Kiểm tra Độ Tương Phản Bảng Màu
 
 Tính năng **Kiểm tra Độ Tương Phản Bảng Màu** sẽ kiểm tra các cặp màu trong bảng màu thiết kế của bạn để đảm bảo tuân thủ WCAG (Hướng dẫn về Khả năng Tiếp cận Nội dung Web) trước khi áp dụng chúng vào theme của bạn.
 

@@ -3,7 +3,7 @@ title: Quraşdırma və provayder konfiqurasiyası
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Quraşdırma və Provayder Konfiqurasiyası {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Quraşdırma və Provayder Konfiqurasiyası
 
 Domain Seller əlavəsi sizi bütün tələb olunan addımlardan keçirən yönləndirilmiş quraşdırma sehrbazı ilə gəlir. Bu səhifə sehrbaz axınını və daha sonra provayderləri necə konfiqurasiya və ya yenidən konfiqurasiya etməyi əhatə edir.
 

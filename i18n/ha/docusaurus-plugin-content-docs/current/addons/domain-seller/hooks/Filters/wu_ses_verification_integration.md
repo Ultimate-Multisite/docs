@@ -4,7 +4,7 @@ title: Tace - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Tacewa: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Tacewa: wu_ses_verification_integration
 
 Tacewa: ba da damar wani code ya samar da SES integration object.
 

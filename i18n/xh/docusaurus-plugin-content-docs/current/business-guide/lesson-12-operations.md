@@ -3,7 +3,7 @@ title: 'Isifundo 12: Ukuqhuba ishishini'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Isifundo 12: Ukuqhuba Ishishini {#lesson-12-running-the-business}
+# Isifundo 12: Ukuqhuba Ishishini
 
 Iqonga ayisiyo projekthi oyigqibayo -- lishishini oliqhubayo. Esi sifundo sigubungela imisebenzi yemihla ngemihla yokulawula i-FitSite: inkxaso, ukuhlawulisa, ulondolozo, nokugcina abathengi bonwabile.
 

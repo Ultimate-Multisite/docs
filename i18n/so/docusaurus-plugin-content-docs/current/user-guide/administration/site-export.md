@@ -3,7 +3,7 @@ title: Wax-soo-dhidda goobta
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Soo Dhaqashada Website-ka (Site Export) {#site-export}
+# Soo Dhaqashada Website-ka (Site Export)
 
 Bogga maamulka **Site Export** wuxuu u oggolaanayaa maamulayaasha shabakadaha inay hal website, ama dhammaan shabakadda oo dhan, ay ku dhex qabaan fayl la soo dejin karo si loo guuriyo (migration), hagaajin (backup), ama in lagu wareejiyo shaqo.
 

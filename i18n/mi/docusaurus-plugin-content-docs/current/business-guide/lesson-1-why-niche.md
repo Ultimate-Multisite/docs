@@ -3,7 +3,7 @@ title: 'Akoranga 1: He aha i toa ai te mākete whāiti'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Akoranga 1: He aha te take ka toa te Niche {#lesson-1-why-niche-wins}
+# Akoranga 1: He aha te take ka toa te Niche
 
 I mua i tā tātou pā ki tētahi pūmanawa, me mārama koe he aha te take ko te hanga mō tētahi hunga mātakitaki motuhake te whakatau tino hira rawa ka mahia e koe.
 

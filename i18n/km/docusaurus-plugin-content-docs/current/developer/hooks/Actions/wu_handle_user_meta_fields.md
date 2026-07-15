@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# សកម្មភាព: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# សកម្មភាព: wu_handle_user_meta_fields
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍ plugin រក្សាទុកទិន្នន័យ​មេតា​របស់​អ្នកប្រើ​តាមវិធីផ្សេងៗ ប្រសិនបើពួកគេត្រូវការ។
 

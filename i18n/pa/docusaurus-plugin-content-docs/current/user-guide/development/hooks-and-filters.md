@@ -3,7 +3,7 @@ title: ਹੁੱਕਸ ਅਤੇ ਫਿਲਟਰਜ਼
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks ਅਤੇ Filters {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Hooks ਅਤੇ Filters
 
 Ultimate Multisite ਬਹੁਤ ਸਾਰੇ functions ਅਤੇ database queries ਨਾਲ ਬਣਿਆ ਹੈ। ਇਸ ਵਿੱਚ hooks ਅਤੇ filters ਹਨ ਜੋ ਤੁਹਾਨੂੰ ਮੌਜੂਦਾ functions ਵਿੱਚ ਬਦਲਾਅ ਕਰਨ ਜਾਂ ਨਵਾਂ code ਜੋੜਨ ਦੀ ਸਹੂਲਤ ਦਿੰਦੇ ਹਨ।
 

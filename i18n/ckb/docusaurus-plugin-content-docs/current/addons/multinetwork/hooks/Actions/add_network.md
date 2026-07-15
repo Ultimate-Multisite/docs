@@ -4,7 +4,7 @@ title: کردار - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# کردار: add_network {#action-addnetwork}
+# کردار: add_network
 
 دوای ئەوەی networkێکی نوێ زیاد کرا، کار دەکات.
 

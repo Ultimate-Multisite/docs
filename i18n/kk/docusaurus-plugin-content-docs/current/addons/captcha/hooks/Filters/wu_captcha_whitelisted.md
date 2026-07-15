@@ -4,7 +4,7 @@ title: Сүзгі - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Сүзгі: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Сүзгі: wu_captcha_whitelisted
 
 Ағымдағы пайдаланушыны/сұрауды ақ тізімге енгізу керек пе екенін сүзеді.
 

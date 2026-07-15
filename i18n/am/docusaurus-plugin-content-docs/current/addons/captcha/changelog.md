@@ -3,7 +3,7 @@ title: Captcha የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# የCaptcha የለውጥ መዝገብ {#captcha-changelog}
+# የCaptcha የለውጥ መዝገብ
 
 Version: 1.5.0 - በ2026-05-22 የወጣ
 * አዲስ: ጠንካራ የፍጥነት ገደብ አጥጋቢ (Hard-stop rate limiter) — በcaptcha የተጠበቁ ገጾች (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ላይ የሚደረጉ እያንዳንዱ GET እና POST ጥያቄዎችን ይቆጥራል፤ HTTP 429፣ `Retry-After` header እና በዘፈቀደ የሚቀየረ የትራፒት እንቅልፍ (1–5 ሰከንዶች፣ ቢበልጥም 15 ሰከንዶች) በመልስ መልስ ይሰጣል።

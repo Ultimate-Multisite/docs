@@ -4,7 +4,7 @@ title: অ্যাকশন - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save {#action-wumodelpostsave}
+# Action: wu_model_post_save
 
 একটি অবজেক্ট ডেটাবেসে সংরক্ষণ করার পরে এটি ট্রিগার হয়।
 

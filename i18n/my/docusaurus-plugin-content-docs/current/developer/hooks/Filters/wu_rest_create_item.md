@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Filter: wu_rest_create_item {#filter-wurestcreateitem}
+# Filter: wu_rest_create_item
 
 ဤ Filter သည် တောင်းဆိုမှု (request) ကို ဆက်လက်လုပ်ဆောင်ခွင့်ပြုမည်လား၊ မပြုမည်လား စစ်ထုတ်ပေးပါသည်။
 

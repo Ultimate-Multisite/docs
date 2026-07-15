@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# การรวมกับ GridPane (GridPane Integration) {#gridpane-integration}
+# การรวมกับ GridPane (GridPane Integration)
 
 ## ภาพรวม {#overview}
 GridPane เป็นแผงควบคุมโฮสติ้ง WordPress ที่ออกแบบมาโดยเฉพาะสำหรับมืออาชีพด้าน WordPress ที่จริงจัง การรวมนี้ช่วยให้สามารถซิงค์โดเมนและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite กับ GridPane ได้โดยอัตโนมัติ

@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# ການເຊື່ອມຕໍ່ Hostinger (hPanel) {#hostinger-hpanel-integration}
+# ການເຊື່ອມຕໍ່ Hostinger (hPanel)
 
 ## ພາບລວມ {#overview}
 

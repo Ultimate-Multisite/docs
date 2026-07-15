@@ -3,7 +3,7 @@ title: Sendado de retpoŝtoj kaj elsendoj
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Sendado de retpoŝtoj kaj elsendaj mesaĝoj (v2) {#sending-emails-and-broadcasts-v2}
+# Sendado de retpoŝtoj kaj elsendaj mesaĝoj (v2)
 
 _**GRAVA NOTO: Ĉi tiu artikolo rilatas al Ultimate Multisite versio 2.x.**_
 

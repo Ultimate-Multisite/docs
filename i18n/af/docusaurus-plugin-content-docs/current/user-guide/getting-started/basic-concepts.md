@@ -3,7 +3,7 @@ title: Basiese Konsepte
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Basiese Konsepte {#basic-concepts}
+# Basiese Konsepte
 
 Vir 'n nuwe WordPress Multisite-gebruiker en iemand wat pas begin met Ultimate Multisite, kan daar baie nuwe woorde en frases wees om aan te neem. Om dit te leer is 'n belangrike taak omdat jy die platform en hoe dit as geheel werk, moet verstaan.
 

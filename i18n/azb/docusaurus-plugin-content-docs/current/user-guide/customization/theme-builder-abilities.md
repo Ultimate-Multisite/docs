@@ -3,7 +3,7 @@ title: Tema Oluşturucu Yetenekleri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Yeterlilikleri: Scaffold ve Activate Block Temaları {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Yeterlilikleri: Scaffold ve Activate Block Temaları
 
 Superdav AI Agent v1.12.0, sohbet arayüzünden doğrudan özel block temaları oluşturmanıza ve dağıtmanıza olanak tanıyan iki güçlü yetenek sunuyor.
 

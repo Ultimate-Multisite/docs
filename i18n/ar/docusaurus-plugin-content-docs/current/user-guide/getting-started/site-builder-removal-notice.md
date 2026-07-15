@@ -3,7 +3,7 @@ title: إشعار إزالة وضع بناء الموقع
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# إشعار إزالة وضع بناء الموقع (Site Builder Mode) {#site-builder-mode-removal-notice}
+# إشعار إزالة وضع بناء الموقع (Site Builder Mode)
 
 **تمت إزالة وضع بناء الموقع (Site Builder mode) في الإصدار Superdav AI Agent v1.12.0.** إذا كنت تستخدم وضع بناء الموقع، فيجب عليك الانتقال إلى **وكيل المساعد في الإعداد (Setup Assistant agent)** لإنشاء القوالب وإعداد الموقع.
 

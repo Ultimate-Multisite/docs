@@ -3,7 +3,7 @@ title: Tohutoro Āheinga
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tohutoro Āheinga {#abilities-reference}
+# Tohutoro Āheinga
 
 Ko ngā āheinga ngā mahi ngota ka taea e Gratis AI Agent te karanga ki tō tāutanga WordPress. He class PHP kua rēhitatia ia āheinga, ā, ka whakaatu i tētahi aronuinga JSON — ka pānui te agent i tēnei aronuinga i te wā whakahaere kia mārama ai he aha ngā tawhā e hiahiatia ana, ā, he aha hoki tā te āheinga e whakahoki mai ai.
 

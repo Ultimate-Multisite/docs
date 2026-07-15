@@ -3,7 +3,7 @@ title: Ìṣepọ̀ WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Ìṣàkóso WPMU DEV {#wpmu-dev-integration}
+# Ìṣàkóso WPMU DEV
 
 ## Àkótán {#overview}
 WPMU DEV jẹ́ pẹpẹ WordPress tó péye tí ó ń pèsè hosting, plugins, àti àwọn iṣẹ́ fún àwọn site WordPress. Ìṣàkóso yìí ń jẹ́ kí ìmúdọ́gba domain aládàáṣiṣẹ́ àti ìṣàkóso SSL certificate ṣiṣẹ́ láàárín Ultimate Multisite àti WPMU DEV hosting.

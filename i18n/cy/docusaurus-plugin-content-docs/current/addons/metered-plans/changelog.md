@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Cynlluniau â Mesurydd
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Cofnod Newidiadau Metered Plans {#metered-plans-changelog}
+# Cofnod Newidiadau Metered Plans
 
 Fersiwn 1.1.0 - Rhyddhawyd ar 2026-05-05
 - Newydd: Bilio tocynnau AI ar gyfer is-wefannau multisite — olrhain a bilio defnydd tocynnau AI ar draws gwefannau cwsmeriaid gyda chyfraddau fesul tocyn ffurfweddadwy

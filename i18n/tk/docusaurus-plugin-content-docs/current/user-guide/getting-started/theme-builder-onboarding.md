@@ -3,7 +3,7 @@ title: Tema Gurluşy Uğurlanmasy
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 sizde ilkin kurulumunuz sırasında özel bir blok teması yaratmanıza yardımcı olacak yönlendirilmiş **Theme Builder onboarding flow** (temadan önce ayar akışı) sunar. Bu, eski Site Builder modunu daha esnek, ajan destekli bir yaklaşımla değiştirir.
 

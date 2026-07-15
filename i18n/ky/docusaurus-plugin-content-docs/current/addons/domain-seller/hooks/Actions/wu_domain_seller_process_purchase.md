@@ -4,7 +4,7 @@ title: Аракет - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Аракет: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Аракет: wu_domain_seller_process_purchase
 
 Домен сатып алуу checkout аяктагандан кийин иштетилип жатканда ишке кирет.
 

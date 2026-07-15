@@ -3,7 +3,7 @@ title: देश सूची
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite देश सूची का क्रम बदलना {#re-ordering-the-ultimate-multisite-country-list}
+# Ultimate Multisite देश सूची का क्रम बदलना
 
 देश चुनने की dropdown अंग्रेज़ी में देश के नामों के अनुसार alphabetical क्रम में लगी होती है। इसका मतलब है कि कभी-कभी आपकी कंपनी का देश या आपके ज़्यादातर ग्राहकों का देश एक लंबी सूची में बीच में कहीं दब जाता है।
 

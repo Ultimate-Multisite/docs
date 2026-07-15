@@ -4,7 +4,7 @@ title: Филтер - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Филтер: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Филтер: mu_migration/export/user/data
 
 Филтрира подразумевани скуп корисничких података за извоз/увоз.
 

@@ -3,7 +3,7 @@ title: Талаптар
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Талаңдар {#ultimate-multisite-requirements}
+# Ultimate Multisite Талаңдар
 
 Ultimate Multisite-ты сатып алгандын алдында өзүңүздө сурап көрө турган биринчи нерсе — бул плагинин иштеши үчүн кандай талаптар бар? Сабырдуу болсоңуз, Ultimate Multisite-ты иштетүү үчүн нече жөнөкөй шарт бар: **домен аты**, жакшы **хостинг провайдери** жана WordPress **Multisite** орнотулган болушу керек. Бул сиздин бардык муктаждыктарыңыз!
 

@@ -3,7 +3,7 @@ title: Ինչպես սկսել հավելման մշակումը
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon-ի մշակում {#addon-development}
+# Addon-ի մշակում
 
 ## Addon-ի կառուցվածք {#addon-structure}
 

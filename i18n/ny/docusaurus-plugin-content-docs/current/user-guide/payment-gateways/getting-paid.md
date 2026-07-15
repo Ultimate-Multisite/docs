@@ -3,7 +3,7 @@ title: Kulipidwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kulipidwa (v2) {#getting-paid-v2}
+# Kulipidwa (v2)
 
 _**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 

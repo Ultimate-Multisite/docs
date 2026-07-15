@@ -3,7 +3,7 @@ title: Plan ufwerten
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan-Upgrade (v2) {#upgrading-a-plan-v2}
+# Plan-Upgrade (v2)
 
 _**WICHTIGE NOTIERE: Dëse Artikel bezieht sich uf Ultimate Multisite version 2.x.**_
 

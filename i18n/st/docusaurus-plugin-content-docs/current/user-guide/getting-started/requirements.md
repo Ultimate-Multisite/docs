@@ -3,7 +3,7 @@ title: Mokhotso
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Tsela la Hoelo la Ultimate Multisite {#ultimate-multisite-requirements}
+# Tsela la Hoelo la Ultimate Multisite
 
 Ke tla re bolela ka tsela e ntle le ho hloekileng ea Ultimate Multisite.
 

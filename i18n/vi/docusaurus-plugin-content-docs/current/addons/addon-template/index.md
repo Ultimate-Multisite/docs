@@ -3,9 +3,9 @@ title: Mẫu Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Mẫu Addon {#addon-template}
+# Mẫu Addon
 
-{{ADDON_DESCRIPTION}}
+Mẫu Addon — Ultimate Multisite.
 
 ## Yêu cầu {#requirements}
 

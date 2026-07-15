@@ -3,7 +3,7 @@ title: Entegrasyon WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Entegrasyon WPMU DEV {#wpmu-dev-integration}
+# Entegrasyon WPMU DEV
 
 ## Aperçu {#overview}
 WPMU DEV se pa platform WordPress ki gen tout bagay pou hosting, plugin, ak sèvis pou sit WordPress ou. Entegrasyon sa a pèmèt sincronizasyon nan domèn otomatik ak jere sertifikat SSL ant Ultimate Multisite ak hosting WPMU DEV la.

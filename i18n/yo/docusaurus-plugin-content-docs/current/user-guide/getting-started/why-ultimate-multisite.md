@@ -3,7 +3,7 @@ title: Kí nìdí Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kí nìdí Ultimate Multisite {#why-ultimate-multisite}
+# Kí nìdí Ultimate Multisite
 
 Tí o bá dé àpilẹ̀kọ yìí, ó ṣeé ṣe kí o ti gbọ́ pé plugin wa lè jẹ́ ojútùú láti mú èrò ìṣòwò rẹ ṣẹ. A nírètí pé ìwọ yóò ní àwọn ìdáhùn tí o nílò ní òpin àpilẹ̀kọ yìí.
 

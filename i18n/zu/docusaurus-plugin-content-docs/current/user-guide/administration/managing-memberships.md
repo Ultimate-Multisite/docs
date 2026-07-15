@@ -3,7 +3,7 @@ title: Ukuphatha ubulungu
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Ukuphatha Ubulungu {#managing-memberships}
+# Ukuphatha Ubulungu
 
 Ku-Ultimate Multisite ungaphatha ubulungu futhi ufinyelele kukho konke okubhaliselwe kunethiwekhi yakho. Buyekeza futhi uhlele imininingwane yokubhaliselwe efana namapulani nemikhiqizo, inani lamasayithi, inani lokukhokha nobuningi bokukhokha, umlando wezinkokhelo, nezitembu zesikhathi.
 

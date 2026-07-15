@@ -3,7 +3,7 @@ title: Designsystem Æstetik færdighed
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Æstetik Færdighed {#design-system-aesthetics-skill}
+# Design System Æstetik Færdighed
 
 **Design System Æstetik færdigheden** er en vejledt tilgang til at finpudse dit sites visuelle identitet. Den hjælper dig med at træffe konsistente beslutninger om typografi, farver, afstanden og motion tokens, som definerer dit design system.
 

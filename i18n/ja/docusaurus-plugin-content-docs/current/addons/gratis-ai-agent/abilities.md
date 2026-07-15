@@ -3,7 +3,7 @@ title: 機能リファレンス
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities リファレンス {#abilities-reference}
+# Abilities リファレンス
 
 Abilities は、Gratis AI Agent があなたの WordPress インストール上で呼び出せる最小単位の操作です。各 ability は登録済みの PHP クラスで、JSON スキーマを公開します。agent は実行時にこのスキーマを読み取り、必要なパラメーターと ability の戻り値を把握します。
 

@@ -3,7 +3,7 @@ title: Ilogi yezinguquko ze-Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Umlando wezinguquko we-Captcha {#captcha-changelog}
+# Umlando wezinguquko we-Captcha
 
 Inguqulo: 1.5.0 - Ikhishwe ngo-2026-05-22
 * Okusha: Isinqamuli sesilinganiso esima ngokuqinile — sibala yonke i-GET ne-POST ezindaweni ezivikelwe nge-captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) futhi siphendula nge-HTTP 429, i-header ethi `Retry-After`, kanye nokulala kwe-tarpit okungahleliwe (1–5s, kunomkhawulo oqinile ku-15s).

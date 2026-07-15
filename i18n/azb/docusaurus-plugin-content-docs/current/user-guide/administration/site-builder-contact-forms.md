@@ -3,7 +3,7 @@ title: Site Builder Contact Forms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktnye formy s Site Builderom {#site-builder-contact-forms}
+# Kontaktnye formy s Site Builderom
 
 Superdav AI Agent v1.10.0 dodal funktsionalnost' sozdaniya kontaktnykh form pryamo iz chata, ispolzuya agent Site Builder. Eto pozvolyaet vam poluchit' funktsional'no rabotayushchiye kontaktnye formy na lyubuyu stranitsu, ne pokavayushsya iz chata.
 

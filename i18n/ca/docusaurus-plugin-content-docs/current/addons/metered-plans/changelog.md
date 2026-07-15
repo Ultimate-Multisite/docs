@@ -3,7 +3,7 @@ title: Diari de canvis dels Plans Mètrics
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Diari de canvis de plans mesurats {#metered-plans-changelog}
+# Diari de canvis de plans mesurats
 
 Versió 1.1.0 - Publicada el 2026-05-05
 - Nou: Cobratge de tokens d'IA per a subsites de multisite — rastreja i cobra l'ús de tokens d'IA en diversos sites clients amb tarifes per token configurables

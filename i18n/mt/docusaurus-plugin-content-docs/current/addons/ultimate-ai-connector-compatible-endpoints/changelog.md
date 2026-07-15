@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta’ Ultimate AI Connector għal Endpoints Kompati
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector għal Endpoints Kompatibbli Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector għal Endpoints Kompatibbli Changelog
 
 ## Verżjoni 2.0.0 — Maħruġa fl-2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -4,7 +4,7 @@ title: Omume - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Omume: wu_deactivation {#action-wudeactivation}
+# Omume: wu_deactivation
 
 Kwe ka akụkụ ndị ọzọ nke mgbakwunye tinye usoro ha maka ime ka ọ kwụsị ọrụ
 

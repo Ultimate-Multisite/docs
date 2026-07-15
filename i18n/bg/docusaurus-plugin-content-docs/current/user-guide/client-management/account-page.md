@@ -3,7 +3,7 @@ title: Страница Account на клиента
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Страницата Account на вашия клиент (v2) {#your-clients-account-page-v2}
+# Страницата Account на вашия клиент (v2)
 
 _**ВАЖНА БЕЛЕЖКА: Тази статия се отнася за Ultimate Multisite версия 2.x.**_
 

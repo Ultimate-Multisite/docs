@@ -3,7 +3,7 @@ title: Whakawhanaungatanga me te Whakamahi Tohu
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Whakawhanaungatanga me Te Whakahaere Pākehā (Setup) {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Whakawhanaungatanga me Te Whakahaere Pākehā (Setup)
 
 He addon o te Domain Seller e hoki ana ki te whakamahi i he mātakitaki whai ara (guided setup wizard) ka whakawhakarite i a koe i ngā mahi katoa e tika ana. Ko tēnei manawa (page) e whakatakotoria i te whakatika o te mātakitaki (wizard flow) me te waiata pēke (configure) he rātou, i roto i te wā i roto i āhuatanga atu.
 

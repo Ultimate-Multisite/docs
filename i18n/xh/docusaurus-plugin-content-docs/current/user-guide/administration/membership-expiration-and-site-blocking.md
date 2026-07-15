@@ -3,7 +3,7 @@ title: Ukuphelelwa kobulungu kunye nokuvalwa kwesayithi
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ukuphelelwa koBulungu nokuValwa kweSayithi {#membership-expiration-and-site-blocking}
+# Ukuphelelwa koBulungu nokuValwa kweSayithi
 
 Esi sikhokelo sichaza indlela Ultimate Multisite ephatha ngayo ukuphelelwa kobulungu, ukuphela kwezilingo, kunye nokuvalwa kwesayithi kwicala langaphambili. Sigubungela umjikelo wobomi bobulungu ukusuka ekubeni busebenzayo ukuya ekubeni buphelelwe, izicwangciso ezilawula ukuba iisayithi zivaliwe na, kunye noko makujongwe xa iisayithi zisafikeleleka emva kokuba ubulungu buphelelwe.
 

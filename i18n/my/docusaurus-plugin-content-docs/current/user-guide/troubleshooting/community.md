@@ -3,7 +3,7 @@ title: အသိုင်းအဝိုင်း
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community သို့ ဝင်ရောက်ပါ {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Community သို့ ဝင်ရောက်ပါ
 
 Ultimate Multisite Community သည် အခြား Ultimate Multisite အသုံးပြုသူများနှင့် ဆက်သွယ်နိုင်ပြီး အကြံဉာဏ်များ၊ အတွေ့အကြုံများနှင့် အခြားအရာများကို မျှဝေနိုင်သော နေရာတစ်ခုဖြစ်ပါသည်။ Ultimate Multisite Community ကို ဝင်ရောက်ရန် https://community.ultimatemultisite.com/home သို့ သွားပါ။
 

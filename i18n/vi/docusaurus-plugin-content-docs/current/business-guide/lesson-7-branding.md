@@ -3,7 +3,7 @@ title: 'Bài học 7: Cá nhân hóa nó'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Bài 7: Cá Nhân Hóa Nền Tảng {#lesson-7-making-it-yours}
+# Bài 7: Cá Nhân Hóa Nền Tảng
 
 Khách hàng của bạn không bao giờ được cảm thấy như họ đang sử dụng "một plugin WordPress nào đó." Họ phải cảm thấy như họ đang sử dụng FitSite — một nền tảng được xây dựng dành riêng cho ngành của họ. Bài học này sẽ đề cập đến việc xây dựng thương hiệu (branding), gắn thương hiệu riêng (white-labeling), và giúp nền tảng của bạn mang lại cảm giác như một sản phẩm hoàn chỉnh.
 

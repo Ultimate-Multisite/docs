@@ -3,7 +3,7 @@ title: Hooks Usage Guide
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hook Kullanım Rehberi {#hooks-usage-guide}
+# Hook Kullanım Rehberi
 
 Ultimate Multisite, 200'den fazla aksiyon hook'u ve 280'den fazla filtre hook'u sunuyor. Bu sayfa, en sık kullanılan hook'ları pratik örneklerle ele alıyor. Eksiksiz, otomatik oluşturulmuş bir referans için bu bölümdeki diğer sayfalara göz atabilirsiniz.
 

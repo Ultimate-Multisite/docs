@@ -3,7 +3,7 @@ title: Internetako bilakidetze
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Hitzakuntza (Internet Search) {#internet-search}
+# Internet Hitzakuntza (Internet Search)
 
 Gratis AI Agent v1.5.0-ek web-a dagoen informazioa zuzenean bilatzen dituen **Internet Search** funtazioa hastertu du, zehatzailuaren (AI assistant) irakaspean galdu eta adierazpen bat ematean internetatik datu onartutako informazioa erabiliz. Horrek [Brave Search API](https://brave.com/search/api/) edo [Tavily API](https://tavily.com/) batekin funtzionatzen du.
 

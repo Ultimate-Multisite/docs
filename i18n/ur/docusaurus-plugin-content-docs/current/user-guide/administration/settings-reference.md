@@ -3,7 +3,7 @@ title: ترتیبات کا حوالہ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings حوالہ {#settings-reference}
+# Settings حوالہ
 
 یہ صفحہ اُن settings کو ٹریک کرتا ہے جو روزمرہ انتظامیہ اور Ultimate Multisite میں حالیہ رویے کی تبدیلیوں کو متاثر کرتی ہیں۔
 

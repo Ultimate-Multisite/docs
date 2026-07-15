@@ -3,7 +3,7 @@ title: Migracija u trećoj strani modifikacije
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Миграција на трећих страна (Third-Party Mode Migration) {#third-party-mode-migration}
+# Миграција на трећих страна (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 мења начин на који се обрађују способности трећих страна. **Трећи режим sada по умолчанию је "auto"**, омогућава интеграцију са WordPress Abilities API-ом унапред на WordPress 7.0+ без ручне конфигурације.
 

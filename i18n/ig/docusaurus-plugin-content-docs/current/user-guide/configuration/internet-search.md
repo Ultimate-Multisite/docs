@@ -3,7 +3,7 @@ title: Nkwado Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Pencarian Internet {#internet-search}
+# Pencarian Internet
 
 Gratis AI Agent v1.5.0 nwere ịrụ **Internet Search** ability nke na-eme ka AI assistant chụrụ ihe ọmụma dị nwere ike ịnwurị n'ụlọ ọrụ (web) mgbe ọ nọ n'ụzọ. O cheba nke [Brave Search API](https://brave.com/search/api/) ma ọ bụ [Tavily API](https://tavily.com/).
 

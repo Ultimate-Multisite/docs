@@ -3,7 +3,7 @@ title: КНС өзгөртүүлөр журналы
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT өзгөрүүлөр журналы {#vat-changelog}
+# VAT өзгөрүүлөр журналы
 
 Version 1.0.7 - 2026-02-03 күнү чыгарылды
 

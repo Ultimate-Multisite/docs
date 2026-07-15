@@ -3,7 +3,7 @@ title: إضافة محمل ملفات شروق
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# محمل ملفات Sunrise للإضافات {#addon-sunrise-file-loader}
+# محمل ملفات Sunrise للإضافات
 
 يضيف Ultimate Multisite 2.8.0 مُحمّل امتدادات Sunrise للإضافات (add-ons) والتكاملات المخصصة لـ MU-plugin التي تحتاج إلى العمل أثناء مرحلة الإقلاع (bootstrapping) في WordPress دون الحاجة إلى تعديل ملف `wp-content/sunrise.php` المُنشأ.
 

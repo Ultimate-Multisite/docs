@@ -3,7 +3,7 @@ title: Penyiapan dan Konfigurasi Penyedia
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Pengaturan dan Konfigurasi Penyedia {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Pengaturan dan Konfigurasi Penyedia
 
 Addon Domain Seller hadir dengan wizard pengaturan terpandu yang memandu Anda melalui setiap langkah yang diperlukan. Halaman ini mencakup alur wizard dan cara mengonfigurasi atau mengonfigurasi ulang penyedia setelahnya.
 

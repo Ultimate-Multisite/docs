@@ -3,7 +3,7 @@ title: Gabay sa Paggamit ng Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gabay sa Paggamit ng Hooks {#hooks-usage-guide}
+# Gabay sa Paggamit ng Hooks
 
 Nagbibigay ang Ultimate Multisite ng 200+ action hooks at 280+ filter hooks. Saklaw ng pahinang ito ang mga pinakakaraniwang ginagamit na hooks na may praktikal na mga halimbawa. Para sa kumpletong awtomatikong nabuong sanggunian, tingnan ang iba pang mga pahina sa seksyong ito.
 

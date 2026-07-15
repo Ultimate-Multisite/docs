@@ -3,7 +3,7 @@ title: Umlando Wezinguquko Wamanethiwekhi Amaningi
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Umlando Wezinguquko Wamanethiwekhi Amaningi {#multi-network-changelog}
+# Umlando Wezinguquko Wamanethiwekhi Amaningi
 
 ### 1.3.0 {#130}
 * Okusha: Isibonisi sokuqala sethempulethi yenethiwekhi — phequlula futhi ubuke kusengaphambili amathempulethi enethiwekhi ngephaneli ebukhoma ngaphambi kokuthenga.

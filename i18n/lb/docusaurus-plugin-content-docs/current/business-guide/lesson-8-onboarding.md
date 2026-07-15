@@ -3,7 +3,7 @@ title: 'Lektioun 8: Aféierung vu Clienten'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lektioun 8: Client-Onboarding {#lesson-8-customer-onboarding}
+# Lektioun 8: Client-Onboarding
 
 E Client dozou ze kréien, sech unzemellen, ass nëmmen d'Hallschent vun der Aarbecht. Wann en sech aloggt, sech iwwerfuerdert fillt an ni méi zeréckkënnt, hutt Dir en verluer. Dës Lektioun designt d'Erfarung, déi eng nei Umeldung an en aktiven, engagéierte Client verwandelt.
 

@@ -4,7 +4,7 @@ title: Isihlungi - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Ihlola ukuthi uhlobo olunikiwe lokuthunyelwe luvunyelwe yini kulolu hlelo Ivumela abathuthukisi be-plugin ukuthi bahlunge inani elibuyiswayo
 

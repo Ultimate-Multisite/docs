@@ -3,7 +3,7 @@ title: GoCardless Журнал змен
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Журнал змены GoCardless {#gocardless-changelog}
+# Журнал змены GoCardless
 
 Версія: 1.0.3 - Выпушчана 2026-05-05
 * Выправілі: Сіты ў стані чакання, якія засталіся (orphaned pending sites), цяпер вычышчаюцца, калі кансалюецца абонентскасць GoCardless, калі яна знаходзіцца ў стані чакання або ўтрымкі.

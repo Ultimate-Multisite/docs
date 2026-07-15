@@ -3,7 +3,7 @@ title: Entretien de découverte
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Entretien de découverte {#discovery-interview}
+# Entretien de découverte
 
 L'**Entretien de découverte** est la première étape du processus de conception de Theme Builder. Il recueille des informations sur votre site, votre activité et vos préférences de design afin de créer un thème personnalisé.
 

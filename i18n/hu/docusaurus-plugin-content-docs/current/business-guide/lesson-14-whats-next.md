@@ -3,7 +3,7 @@ title: 'Összehasonlító tanítás 14: Mi következik'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Tanulmány 14: Mi Következik? {#lesson-14-what-comes-next}
+# Tanulmány 14: Mi Következik?
 
 Egy teljes körű, piaci rétegrendszerű (niche) weboldalt építettél a nulla ponttól. A FitSite működik, fitness stúdióknak szolgálja ki a piacot, és generálja az előfizetős bevételt. Ez az utolsó tanulmány arra néz, hogy mi következik.
 

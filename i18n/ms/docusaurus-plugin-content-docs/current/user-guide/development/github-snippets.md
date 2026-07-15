@@ -3,7 +3,7 @@ title: Coretan GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Cara menggunakan coretan kod Ultimate Multisite dari repositori GitHub kami {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Cara menggunakan coretan kod Ultimate Multisite dari repositori GitHub kami
 
 Terdapat coretan kod yang tersedia di repositori GitHub yang sering diminta oleh pengguna Ultimate Multisite yang ingin menambah fungsi kecil seperti memasukkan skrip Google Analytics pada halaman pendaftaran atau menyembunyikan meta box dari dashboard admin.
 
@@ -19,7 +19,7 @@ Terdapat 2 cara untuk anda menambah kod tersebut
 
   2. Must-Use Plugins (mu-plugins)
 
-# Cara menambah coretan kod pada fail functions.php tema anda. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Cara menambah coretan kod pada fail functions.php tema anda.
 
   1. Log masuk ke dashboard admin WordPress Network anda dan pergi ke Themes > Theme Editor (Lihat tangkapan skrin di bawah).
 
@@ -29,7 +29,7 @@ Terdapat 2 cara untuk anda menambah kod tersebut
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Cara mencipta Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Cara mencipta Must-Use Plugins (mu-plugins)
 
 WordPress mempunyai ciri yang membolehkan anda memuatkan fungsi tersuai yang dipanggil "Must-Use Plugins", atau singkatannya "mu-plugins".
 

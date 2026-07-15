@@ -4,7 +4,7 @@ title: Veiksmas - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Veiksmas: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Veiksmas: wu_magic_link_invalid_token
 
 Suveikia, kai aptinkamas negaliojantis magic link prieigos raktas.
 

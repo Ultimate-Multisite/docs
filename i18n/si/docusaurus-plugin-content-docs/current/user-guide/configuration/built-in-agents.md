@@ -3,7 +3,7 @@ title: ඇතුළත් නියෝජිතයන්
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# අන්තර්ගත Agents {#built-in-agents}
+# අන්තර්ගත Agents
 
 Gratis AI Agent v1.9.0 හි අන්තර්ගත agents පහක් ඇතුළත් වේ. ඒ එක් එකක්ම එම ක්ෂේත්‍රයේ සාමාන්‍ය කාර්යයන්ට ගැළපෙන පරිදි, අවධානය යොමු කළ tools සමූහයකින්, සකස් කළ system prompt එකකින්, සහ ආරම්භක යෝජනාවලින් පෙර-සකසා ඇත. agents අතර මාරුවීමෙන් assistant කළ හැකි දේ සහ එය ප්‍රතිචාර දක්වන ආකාරය වෙනස් වේ — ඔබට කිසිදු configuration කිරීමක් අවශ්‍ය නැත. Superdav AI Agent v1.18.0 හට, අදාළ integrations සකසා ඇති විට, මෙම workflows වෙත කාලසටහන්-සංවේදී tools, reminder records, approval gates, සහ SMS notifications එකතු කළ හැක.
 

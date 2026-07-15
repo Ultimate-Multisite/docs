@@ -3,7 +3,7 @@ title: Cloudflare אינטעגראַציע
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare אינטעגראַציע {#cloudflare-integration}
+# Cloudflare אינטעגראַציע
 
 ## איבערבליק {#overview}
 Cloudflare איז אַ פֿירנדיקער נעצווערק פֿאַר אינהאַלט־צושטעלונג (CDN) און זיכערהייט־צושטעלער וואָס העלפֿט באַשיצן און פֿאַרגיכערן וועבזײַטן. די אינטעגראַציע דערמעגלעכט אויטאָמאַטישע דאָמיין־פֿאַרוואַלטונג צווישן Ultimate Multisite און Cloudflare, באַזונדערס פֿאַר סאָבדאָמיין־Multisite־אינסטאַלאַציעס.

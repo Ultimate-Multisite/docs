@@ -4,7 +4,7 @@ title: Филтр - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Филтр: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Филтр: wu_limits_is_post_above_limit
 
 Месанҷад, ки оё навъи додаи навишта дар ин plan иҷозат дода шудааст. Ба таҳиягарони plugin имкон медиҳад, ки арзиши баргардонидашударо филтр кунанд
 

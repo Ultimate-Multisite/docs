@@ -4,7 +4,7 @@ title: Darbība - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Darbība: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Darbība: mu_migration/import/user/custom_data_before
 
 Tiek palaista pirms pielāgoto lietotāja datu eksportēšanas.
 

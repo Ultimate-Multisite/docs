@@ -3,7 +3,7 @@ title: Jak nakonfigurovat mapování domén
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Jak nakonfigurovat mapování domén (v2) {#how-to-configure-domain-mapping-v2}
+# Jak nakonfigurovat mapování domén (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
 

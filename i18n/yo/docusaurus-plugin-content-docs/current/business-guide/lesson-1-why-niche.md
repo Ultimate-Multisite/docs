@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 1: Ìdí tí ààyè ọjà pàtó fi ń borí'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Ẹ̀kọ́ 1: Ìdí Tí Niche Fi Ń Bori {#lesson-1-why-niche-wins}
+# Ẹ̀kọ́ 1: Ìdí Tí Niche Fi Ń Bori
 
 Kí a tó kan sọfitiwia kankan, o ní láti lóye ìdí tí kíkọ́ fún àwùjọ pàtó kan fi jẹ́ ìpinnu tó ṣe pàtàkì jù lọ tí o máa ṣe.
 

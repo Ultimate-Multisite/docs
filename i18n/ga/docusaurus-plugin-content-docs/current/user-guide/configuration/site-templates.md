@@ -3,7 +3,7 @@ title: Teampad an t-aonail
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Shablóite Site (v2) {#site-templates-v2}
+# Shablóite Site (v2)
 
 _**NOTE: Tá an curte seo ag curte ar Ultimate Multisite version 2.x. Má tá tú ag úsáid version 1.x,**_ **faoi seo a bheith.**_
 

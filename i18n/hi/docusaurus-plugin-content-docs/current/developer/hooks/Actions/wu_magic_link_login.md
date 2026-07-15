@@ -4,7 +4,7 @@ title: Action - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# एक्शन: wu_magic_link_login {#action-wumagiclinklogin}
+# एक्शन: wu_magic_link_login
 
 जब कोई उपयोगकर्ता मैजिक लिंक के माध्यम से लॉग इन हो जाता है, तो यह एक्शन ट्रिगर होता है।
 

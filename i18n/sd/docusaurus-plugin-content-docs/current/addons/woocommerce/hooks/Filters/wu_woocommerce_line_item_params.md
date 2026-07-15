@@ -4,7 +4,7 @@ title: فلٽر - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 WooCommerce Cart تي لائن شين ٺاهڻ لاءِ استعمال ٿيندڙ پيرا ميٽرز کي فلٽر ڪريو، ڪسٽمر کي WooCommerce checkout ڏانهن موڪلڻ کان اڳ.
 

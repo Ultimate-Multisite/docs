@@ -3,7 +3,7 @@ title: थीम बिल्डर अनबोर्डिङ फ्लो
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# थीम बिल्डर ऑनबोर्डिंग फ्लो {#theme-builder-onboarding-flow}
+# थीम बिल्डर ऑनबोर्डिंग फ्लो
 
 Superdav AI Agent v1.12.0 तपाईंलाई सुरुवाती सेटअपको समयमा कस्टम ब्लक थीम बनाउन मद्दत गर्ने एउटा निर्देशित **Theme Builder onboarding flow** प्रस्तुत गर्दछ। यसले पुरानो Site Builder मोडलाई अझ लचिलो, एजेन्ट-सहायता प्राप्त दृष्टिकोणले प्रतिस्थापन गर्दछ।
 

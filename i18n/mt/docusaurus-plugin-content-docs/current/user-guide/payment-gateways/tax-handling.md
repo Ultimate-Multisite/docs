@@ -3,7 +3,7 @@ title: Ġestjoni tat-Taxxa
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ġestjoni tat-Taxxa {#tax-handling}
+# Ġestjoni tat-Taxxa
 
 Ultimate Multisite għandu modulu għall-ġbir tat-taxxa mibni fil-plugin ewlieni tagħna, għalhekk jekk għandek bżonn tiġbor taxxi fuq il-bejgħ fuq il-pjanijiet, il-pakketti u s-servizzi tiegħek, tista’ tagħmel dan faċilment mingħajr ma tirrikorri għall-installazzjoni ta’ xi add-ons.
 

@@ -3,7 +3,7 @@ title: 'Oppitunti 1: Miksi markkinarako voittaa'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Oppitunti 1: Miksi markkinarako voittaa {#lesson-1-why-niche-wins}
+# Oppitunti 1: Miksi markkinarako voittaa
 
 Ennen kuin koskemme mihinkään ohjelmistoon, sinun on ymmärrettävä, miksi tietylle yleisölle rakentaminen on tärkein yksittäinen päätös, jonka teet.
 

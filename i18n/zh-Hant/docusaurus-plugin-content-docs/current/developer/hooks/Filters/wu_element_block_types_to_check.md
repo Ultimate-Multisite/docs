@@ -4,7 +4,7 @@ title: 過濾器 - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# 過濾器：wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# 過濾器：wu_element_block_types_to_check
 
 未來我們可能需要新增其他區塊類型。
 

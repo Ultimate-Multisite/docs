@@ -3,7 +3,7 @@ title: پێکهاتە و نرخەکانی دامێنی
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# پێداویستییە دامێنی و نرخەکان (Domain Products and Pricing) {#domain-products-and-pricing}
+# پێداویستییە دامێنی و نرخەکان (Domain Products and Pricing)
 
 پێدافەوداڵەکانی دامێنی ئەو شێوازانن کە بەڕێوەبردنی نرخ، TLDs (ناونیشانی ناوچەیی)، تایبەتمەندی پنهانکردنی WHOIS، و هەڵبژاردنی پڕۆڤایدر دەکرێت. هەر پێداویستییەکی دامێنی پڕۆدۆکٹێکی ستاندارد Multisite Ultimate بێت کە تابلۆی زیاتری **Domain Settings** (سەرکردایەتیی دامێنی) لەخۆدەگرێت.
 

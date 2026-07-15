@@ -4,7 +4,7 @@ title: Azzjoni - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Azzjoni: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Azzjoni: wp_ultimo_support_agents_deactivation
 
 Ħalli partijiet oħra tal-plugin jehmżu r-rutini tagħhom għad-diżattivazzjoni
 

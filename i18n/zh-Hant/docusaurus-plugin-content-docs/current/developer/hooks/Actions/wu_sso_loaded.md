@@ -4,7 +4,7 @@ title: 動作 - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded {#action-wussoloaded}
+# Action: wu_sso_loaded
 
 允許外掛開發者在需要時新增額外的鉤子。
 

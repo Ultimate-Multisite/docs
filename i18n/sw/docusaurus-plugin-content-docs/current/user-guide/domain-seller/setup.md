@@ -3,7 +3,7 @@ title: Usanidi na Mipangilio ya Mtoa Huduma
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Muuzaji wa Vikoa: Usanidi na Mipangilio ya Watoa Huduma {#domain-seller-setup-and-provider-configuration}
+# Muuzaji wa Vikoa: Usanidi na Mipangilio ya Watoa Huduma
 
 Nyongeza ya Muuzaji wa Vikoa huja na mchawi wa usanidi unaokuongoza kupitia kila hatua inayohitajika. Ukurasa huu unaeleza mtiririko wa mchawi na jinsi ya kusanidi au kusanidi upya watoa huduma baadaye.
 

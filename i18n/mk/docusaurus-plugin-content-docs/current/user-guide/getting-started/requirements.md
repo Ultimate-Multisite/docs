@@ -3,7 +3,7 @@ title: Изисквания
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Изисквания за Ultimate Multisite {#ultimate-multisite-requirements}
+# Изисквания за Ultimate Multisite
 
 Прво што може да се запитате пред да купите Ultimate Multisite е кои се основните барања за да работи нашиот плагин. Добро, среќано, има само неколку основни барања за да работи Ultimate Multisite: **домен име**, добро **хостинг провајдер** и инсталација на WordPress **Multisite**. Тоа е сè што ви треба!
 

@@ -4,7 +4,7 @@ title: 'Filter - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# Filter: wu_\{$id\}_form_fields
 
 ఇది ఒక ఫారమ్‌లోని ఫీల్డ్‌లను ఫిల్టర్ చేస్తుంది. ఫిల్టర్ పేరులోని ID ద్వారా ఆ ఫారం గుర్తించబడుతుంది.
 

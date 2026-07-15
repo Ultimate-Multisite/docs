@@ -4,7 +4,7 @@ title: Akcia - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Akcia: update_network {#action-updatenetwork}
+# Akcia: update_network
 
 Spustí sa po aktualizácii existujúcej siete.
 

@@ -4,7 +4,7 @@ title: Aksie - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Aksie: move_site {#action-movesite}
+# Aksie: move_site
 
 Word geaktiveer nadat 'n webwerf na 'n nuwe netwerk beweeg is.
 

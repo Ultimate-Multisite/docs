@@ -3,7 +3,7 @@ title: Плагин удирдах боломжууд
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Удирдлагын чадварууд {#plugin-management-abilities}
+# Plugin Удирдлагын чадварууд
 
 Gratis AI Agent v1.5.0 нь ярианы явцад AI туслах дуудаж ашиглаж болох **plugin удирдлагын 7 чадвар**-тай ирдэг. Эдгээр чадварууд нь [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox)-ээр дамжуулан суулгасан WordPress plugin-уудыг програмчлалын аргаар удирдах боломж олгодог.
 

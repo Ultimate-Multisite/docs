@@ -3,7 +3,7 @@ title: Loga Athruithe Chomhtháthú WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Loga Athruithe Chomhtháthú WooCommerce {#woocommerce-integration-changelog}
+# Loga Athruithe Chomhtháthú WooCommerce
 
 Leagan 2.2.0 - Eisithe ar 2026-07-01
 * Nua: Taispeántar méideanna cánach Ultimate Multisite anois mar línte táille WooCommerce ar leith ag an checkout, rud a dhéanann iomláin chánach níos soiléire roimh íocaíocht.

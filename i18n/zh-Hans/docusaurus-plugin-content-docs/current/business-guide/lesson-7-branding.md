@@ -3,7 +3,7 @@ title: 第七课：打造属于自己的
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 第 7 课：打造属于你的品牌 {#lesson-7-making-it-yours}
+# 第 7 课：打造属于你的品牌
 
 您的客户不应该觉得他们在使用“某个 WordPress 插件”。他们应该感觉在使用 FitSite——一个专为他们的行业打造的平台。本课将涵盖品牌化、白标（white-labeling）以及如何让整个平台看起来像一个成熟的产品。
 

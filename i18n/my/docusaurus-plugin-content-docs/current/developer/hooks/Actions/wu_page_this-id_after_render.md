@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_{$this->id}_after_render {#action-wupagethis-idafterrender}
+# Action: wu_page_{$this->id}_after_render
 
 ကျွန်ုပ်တို့ စာမျက်နှာကို ပုံနှိပ်ပြီးတဲ့နောက်မှာ ပလပ်အင် (plugin) တည်ဆောက်သူတွေအနေနဲ့ အပိုအကြောင်းအရာတွေ ထပ်ထည့်နိုင်ဖို့ ခွင့်ပြုပါတယ်။
 

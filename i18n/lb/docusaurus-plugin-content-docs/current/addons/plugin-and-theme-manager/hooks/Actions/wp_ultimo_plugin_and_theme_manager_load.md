@@ -4,7 +4,7 @@ title: Aktioun - wp_ultimo_plugin_and_theme_manager_load
 sidebar_label: wp_ultimo_plugin_and_theme_manager_load
 _i18n_hash: 0e231be0e568b6e61700e409039a6b4c
 ---
-# Aktioun: wp_ultimo_plugin_and_theme_manager_load {#action-wpultimopluginandthememanagerload}
+# Aktioun: wp_ultimo_plugin_and_theme_manager_load
 
 Gëtt ausgeléist, wann all d'Ofhängegkeete geluede goufen
 

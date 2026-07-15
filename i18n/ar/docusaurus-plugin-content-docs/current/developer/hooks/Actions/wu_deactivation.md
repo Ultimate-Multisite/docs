@@ -4,7 +4,7 @@ title: الإجراء - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# الإجراء: wu_deactivation {#action-wudeactivation}
+# الإجراء: wu_deactivation
 
 اسمح لأجزاء أخرى من الإضافة بإرفاق إجراءاتها الخاصة بإلغاء التفعيل
 

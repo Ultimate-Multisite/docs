@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite Giriş Rehberi {#ultimate-multisite-101}
+# Ultimate Multisite Giriş Rehberi
 
 Ultimate Multisite, size müşterilere WaaS (Web as a Service) veya Web Siteleri Hizmeti sunmanızı sağlayan bir WordPress Multisite eklentisidir. Bu konuya dalmadan önce ve Ultimate Multisite'ın işinize ve müşterilerinize nasıl yardımcı olabileceğini öğrenmeden önce edinmemiz gereken bazı temel bilgiler var.
 

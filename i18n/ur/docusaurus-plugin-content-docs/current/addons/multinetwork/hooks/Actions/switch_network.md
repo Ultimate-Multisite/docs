@@ -4,7 +4,7 @@ title: عمل - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Action: switch_network {#action-switchnetwork}
+# Action: switch_network
 
 یہ عمل (Action) اس وقت چلتا ہے جب موجودہ نیٹ ورک کا سیاق و سباق (context) تبدیل کیا جاتا ہے۔
 

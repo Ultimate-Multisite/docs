@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Aksiyon: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# Aksiyon: wu_page_\{$this->id\}_load
 
 Bu, eklenti geliştiricilerinin belirli bir sayfaya ek hook'lar eklemesine izin verir.
 

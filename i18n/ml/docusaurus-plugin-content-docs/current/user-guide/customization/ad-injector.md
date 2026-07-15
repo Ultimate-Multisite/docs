@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector ഉപയോഗിച്ച് നിങ്ങളുടെ നെറ്റ്‌വർക്കിൽ പരസ്യങ്ങൾ പ്രദർശിപ്പിക്കുന്നു {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector ഉപയോഗിച്ച് നിങ്ങളുടെ നെറ്റ്‌വർക്കിൽ പരസ്യങ്ങൾ പ്രദർശിപ്പിക്കുന്നു
 
 Ultimate Multisite: Ad Injector ഒരു **സൗജന്യ add-on** ആണ്, ഇത് നിങ്ങളുടെ പ്ലാനുകളുടെ edit page-ൽ നിന്ന് തന്നെ പരസ്യങ്ങൾ പ്രദർശിപ്പിക്കാനുള്ള ടൂളുകൾ നൽകുന്നു.
 

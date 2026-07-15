@@ -4,7 +4,7 @@ title: 過濾器 - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# 篩選器：secure_auth_cookie {#filter-secureauthcookie}
+# 篩選器：secure_auth_cookie
 
 篩選器是否應只透過 HTTPS 傳送認證 Cookie。
 

@@ -3,7 +3,7 @@ title: Ukukhangela kwi-Intanethi
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Ukukhangela kwi-Intanethi {#internet-search}
+# Ukukhangela kwi-Intanethi
 
 Gratis AI Agent v1.5.0 yongeza isakhono se-**Ukukhangela kwi-Intanethi** esivumela umncedisi we-AI ukuba afumane ulwazi oluhlaziyiweyo kwiwebhu ngexesha lencoko. Oku kuxhaswa yi-[Brave Search API](https://brave.com/search/api/) okanye yi-[Tavily API](https://tavily.com/).
 

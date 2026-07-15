@@ -3,7 +3,7 @@ title: תרגום Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# תרגום Ultimate Multisite {#translating-ultimate-multisite}
+# תרגום Ultimate Multisite
 
 Ultimate Multisite פותח באנגלית, אך התוסף ניתן לתרגום מלא ואנחנו מקבלים בשמחה תרומות תרגום.
 

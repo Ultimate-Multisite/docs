@@ -4,7 +4,7 @@ title: వడపోత - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Filter: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
+# Filter: wu_site_list_get_bulk_actions
 
 సైట్‌ల కోసం అందుబాటులో ఉన్న బల్క్ యాక్షన్స్‌ను ఫిల్టర్ చేస్తుంది.
 

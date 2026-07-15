@@ -3,7 +3,7 @@ title: Netefatsa Konterase ea Phalete
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Netefatsa Phapang ya Palette {#validate-palette-contrast}
+# Netefatsa Phapang ya Palette
 
 Bokgoni ba **Validate Palette Contrast** bo lekola dipara tsa mebala ho palette ya moralo wa hao bakeng sa ho ikamahanya le WCAG (Web Content Accessibility Guidelines) pele bo di sebedisa ho theme ya hao.
 

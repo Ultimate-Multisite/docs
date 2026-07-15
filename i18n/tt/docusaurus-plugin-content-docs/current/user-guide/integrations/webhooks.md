@@ -3,7 +3,7 @@ title: Веб-хуки
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooklar Üzerine İlk Bakış (v2) {#a-first-look-on-webhooks-v2}
+# Webhooklar Üzerine İlk Bakış (v2)
 
 _**DİKKAT: Bu özellik veya makale ileri düzey kullanıcılar içindir.**_
 

@@ -4,7 +4,7 @@ title: 필터 - wu_domain_seller_search_delay
 sidebar_label: wu_domain_seller_search_delay
 _i18n_hash: b0871b15059808a847875636d151245f
 ---
-# 필터: wu_domain_seller_search_delay {#filter-wudomainsellersearchdelay}
+# 필터: wu_domain_seller_search_delay
 
 도메인 검색의 디바운스 지연 시간(밀리초)을 필터링합니다.
 

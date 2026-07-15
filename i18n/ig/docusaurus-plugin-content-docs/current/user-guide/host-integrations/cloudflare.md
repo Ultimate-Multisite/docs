@@ -3,7 +3,7 @@ title: Nkwado Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Tổng quan {#overview}
 Cloudflare là một mạng lưới phân phối nội dung (CDN) và nhà cung cấp bảo mật hàng đầu giúp bảo vệ và tăng tốc các trang web. Việc tích hợp này cho phép quản lý tên miền tự động giữa Ultimate Multisite và Cloudflare, đặc biệt là đối với các cài đặt đa trang phụ (subdomain multisite).

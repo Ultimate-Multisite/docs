@@ -3,7 +3,7 @@ title: Famoahana ny toerana
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportation an' Site {#site-export}
+# Exportation an' Site
 
 Ny pejy admin hoe **Site Export**, dia mamela ny administrator an'ny tambajotra (network) mba hampaketrahana site iray, na ny tambajotra manontolo rehetra ho archive azo alaina ho an'ny famindrana (migration), fanatsarana (backup), na asa fanomezana.
 

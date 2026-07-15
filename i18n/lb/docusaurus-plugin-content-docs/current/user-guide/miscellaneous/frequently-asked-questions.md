@@ -3,7 +3,7 @@ title: Häufig gestellti Froge
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Häufig gestellte Fragen (FAQ) {#frequently-asked-questions}
+# Häufig gestellte Fragen (FAQ)
 
 Hier sind e puer **Häufig gestellti Froge**, wo oft bi Support-Aafroge ufchöme.
 

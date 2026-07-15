@@ -4,7 +4,7 @@ title: Filter - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
+# Filter: auth_cookie_expiration
 
 အသုံးပြုသူ အကောင့်ဝင်ခြင်း (authentication) ကွတ်ကီး သက်တမ်းကုန်ဆုံးချိန်ကို စစ်ထုတ်ပေးသည့် (filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။
 

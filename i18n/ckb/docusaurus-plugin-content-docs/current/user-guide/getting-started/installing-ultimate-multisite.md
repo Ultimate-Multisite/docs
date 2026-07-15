@@ -3,7 +3,7 @@ title: سەرنجدان بە Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# دامەزراندنی Ultimate Multisite {#installing-ultimate-multisite}
+# دامەزراندنی Ultimate Multisite
 
 :::note
 ئەم بابەتەکە پێش ئەوەی دەستپێ بکات، باسی ئەوە دەکات کە تۆ پێشتر WordPress Multisite دابەش کردووە و ڕێکخراوتەوە. بۆ فێر بوون لەسەر چۆنێتی، سەردانی [ئەم بابەتە](https://www.wpbeginner.com/glossary/multisite/) بکەن لە WP Beginner.

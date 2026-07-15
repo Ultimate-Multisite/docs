@@ -3,7 +3,7 @@ title: Opprett meny
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Opprett meny {#create-menu}
+# Opprett meny
 
 Funksjonaliteten **Opprett meny** lar deg lage WordPress-navigasjonsmenyer med støtte for separate navigeringsetiketter som skiller seg fra sidetitlene.
 

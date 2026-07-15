@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons yu ua Ultimate Multisite nrog kev tshawb nrhiav thiab muaj kuvv tsim phoj tshiab thiab hais txog qhov uas yuav ua tau. Yog tias muaj addon, nws yuav tsum tsim thiab xith sa los ntawm [ultimatemultisite.com](https://ultimatemultisite.com).
 

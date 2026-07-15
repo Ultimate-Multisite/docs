@@ -3,7 +3,7 @@ title: Integrasiی GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration sa GridPane {#gridpane-integration}
+# Integration sa GridPane
 
 ## Overzicht {#overview}
 GridPane e panel kontrole hosting WordPress-a özeldir, ki për profesionistët seriozë WordPress-a ndërtoar është. Kjo integrim lejon sinkronizimin automatik të domenave dhe menaxhimin e sertifikatëve SSL mes Ultimate Multisite dhe GridPane.

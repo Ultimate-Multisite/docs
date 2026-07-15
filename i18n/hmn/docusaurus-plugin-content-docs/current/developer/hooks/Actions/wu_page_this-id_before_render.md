@@ -4,7 +4,7 @@ title: 'Kev ua - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_\{$this->id\}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_\{$this->id\}_before_render
 
 Tso cai rau cov neeg tsim qhov txuas ntxiv ntxiv cov ntsiab lus ua ntej peb luam nplooj ntawv.
 

@@ -4,7 +4,7 @@ title: Darbība - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Darbība: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Darbība: wu_page_enqueue_scripts
 
 Šeit tiek pievienota pielāgota darbība, lai mums būtu vieta, kur pēc vajadzības rindot skriptus un stilus\ un nodrošināt, ka tie tiek ielādēti tikai pareizajās lapās
 

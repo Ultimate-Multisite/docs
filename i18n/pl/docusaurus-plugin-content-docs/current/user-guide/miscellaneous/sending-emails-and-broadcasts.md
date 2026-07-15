@@ -3,7 +3,7 @@ title: Wysyłanie e-maili i komunikatów
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Wysyłanie e-maili i broadcastów (v2) {#sending-emails-and-broadcasts-v2}
+# Wysyłanie e-maili i broadcastów (v2)
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 

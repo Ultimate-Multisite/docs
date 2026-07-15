@@ -4,7 +4,7 @@ title: Aksie - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Aksie: wu_register_integrations {#action-wuregisterintegrations}
+# Aksie: wu_register_integrations
 
 Word geaktiveer om integrasies te laat registreer.
 

@@ -3,7 +3,7 @@ title: 릴리스 노트
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# 릴리스 노트 {#release-notes}
+# 릴리스 노트
 
 ## 버전 2.13.0 — 2026-06-05에 릴리스됨 {#version-2130--released-on-2026-06-05}
 

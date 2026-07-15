@@ -3,7 +3,7 @@ title: Izmaiņu žurnāls
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Izmaiņu žurnāls {#changelog}
+# Izmaiņu žurnāls
 
 ## 1.18.0 — Izlaists 2026-06-29 {#1180--released-on-2026-06-29}
 

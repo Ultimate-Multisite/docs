@@ -3,7 +3,7 @@ title: 'Les 1: Hoekom Niche Wen'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Les 1: Hoekom 'n Niche Wen {#lesson-1-why-niche-wins}
+# Les 1: Hoekom 'n Niche Wen
 
 Voordat ons enige sagteware aanraak, moet jy verstaan waarom die bou van 'n platform vir 'n spesifieke gehoor die belangrikste besluit is wat jy sal neem.
 

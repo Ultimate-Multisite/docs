@@ -3,7 +3,7 @@ title: Kupanga Malingali Olinse kwa Zina
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Kufunira Link Zoshanidwa kwa Plans {#managing-shareable-links-for-plans}
+# Kufunira Link Zoshanidwa kwa Plans
 
 Ultimate Multisite imakuperekera uliweze ku share plan links monga monga na wateja wako. Ili kufanya hivyo, ndiupatsa kwenye kurasa zoshanidwa za plans yanu ndozani ndi kulemba button ya _Click to copy the Shareable Link_.
 

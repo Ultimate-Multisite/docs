@@ -3,7 +3,7 @@ title: Tàmacan site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Template Sitean (v2) {#site-templates-v2}
+# Template Sitean (v2)
 
 _**NOTE: An tòran seo a' tòiseachadh ar Ultimate Multisite version 2.x. Se sin tha thu a' faighinn air an tòiseachadh seo.**_
 

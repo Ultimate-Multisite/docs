@@ -3,7 +3,7 @@ title: '2-dars: O‘z nishangizni tanlash'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# 2-dars: O‘z Niche’ingizni tanlash {#lesson-2-picking-your-niche}
+# 2-dars: O‘z Niche’ingizni tanlash
 
 1-darsda nima uchun niche umumiy yondashuvdan ustun ekanini aniqladik. Endi o‘zingiznikini tanlashingiz kerak. Bu dars sizga vaqt sarflab uni qurishdan oldin niche topish va tasdiqlash uchun framework beradi.
 

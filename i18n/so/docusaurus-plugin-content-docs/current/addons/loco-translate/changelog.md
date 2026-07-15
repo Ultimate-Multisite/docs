@@ -3,7 +3,7 @@ title: Loco Translate Diiwaanka Isbeddellada
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate Diiwaanka Isbeddellada {#loco-translate-changelog}
+# Loco Translate Diiwaanka Isbeddellada
 
 ### 1.0.1 {#101}
 * La hagaajiyay la jaanqaadka nooca ugu dambeeyay ee Loco Translate

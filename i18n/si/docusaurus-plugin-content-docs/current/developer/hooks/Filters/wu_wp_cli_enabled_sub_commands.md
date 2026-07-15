@@ -4,7 +4,7 @@ title: පෙරහන - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# පෙරහන: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# පෙරහන: wu_wp_cli_enabled_sub_commands
 
 මෙම ඒකකය සඳහා සක්‍රීය කර ඇති sub_commands පෙරහන් කරයි.
 

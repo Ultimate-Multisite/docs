@@ -3,7 +3,7 @@ title: Интеграција со WooCommerce
 sidebar_position: 9
 _i18n_hash: 64e2517a66a209111e1cdb519a920b37
 ---
-# Интеграција со WooCommerce {#woocommerce-integration}
+# Интеграција со WooCommerce
 
 Ова применливо преку дополнителниот пакет **WooCommerce Integration**.
 

@@ -3,7 +3,7 @@ title: Àwọn Àkójọ Oúnjẹ Ìgbàlejò
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Àwọn Mẹ́nu Hospitality {#hospitality-menus}
+# Àwọn Mẹ́nu Hospitality
 
 Ẹ̀ya **Àwọn Mẹ́nu Hospitality** jẹ́ kí Theme Builder lè ṣẹ̀dá kí ó sì fi àwọn ojúewé mẹ́nu oúnjẹ àti ohun mímu tó ní ìṣètò sínú site WordPress rẹ taara.
 

@@ -4,7 +4,7 @@ title: Acción - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Acción: update_network {#action-updatenetwork}
+# Acción: update_network
 
 Dispárase despois de que se actualizase unha rede existente.
 

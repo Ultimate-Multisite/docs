@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# Aksyon: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# Aksyon: wp_ultimo_ptm_page_edit_footer
 
 Pèmèt devlopè plugin yo ajoute script anba paj la
 

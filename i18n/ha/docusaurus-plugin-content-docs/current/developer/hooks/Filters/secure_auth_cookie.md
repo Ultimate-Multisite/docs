@@ -4,7 +4,7 @@ title: Tacewa - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Tace: secure_auth_cookie {#filter-secureauthcookie}
+# Tace: secure_auth_cookie
 
 Yana tace ko ya kamata a aika auth cookie ta HTTPS kawai.
 

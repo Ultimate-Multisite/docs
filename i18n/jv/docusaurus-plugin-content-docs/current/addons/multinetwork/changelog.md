@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Multi-Jaringan
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Cathetan Owah-owahan Multi-Network {#multi-network-changelog}
+# Cathetan Owah-owahan Multi-Network
 
 ### 1.3.0 {#130}
 * Anyar: Pratinjau template jaringan — telusuri lan pratinjau template jaringan nganggo panel langsung sadurunge tuku.

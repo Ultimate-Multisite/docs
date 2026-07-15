@@ -4,7 +4,7 @@ title: Aksyon - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Aksyon: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Aksyon: wu_after_switch_template
 
 Pèmèt devlopè plugin yo branche fonksyon apre yon itilizatè oswa yon sipè administratè chanje modèl sit la
 

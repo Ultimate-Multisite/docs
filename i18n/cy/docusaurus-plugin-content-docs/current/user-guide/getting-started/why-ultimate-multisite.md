@@ -3,7 +3,7 @@ title: Pam mae Ultimate Multisite yn ddefnyddiol?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Pamodol y Ultimate Multisite {#why-ultimate-multisite}
+# Pamodol y Ultimate Multisite
 
 Os ydych chi i'r ail ddeb hon, byddwch yn gwrdd eich bod plugin yn ei ddefnyddio i gwneud eich iddiad busnes yn wir. Rydyn ni'n gosod eich ymatebau sy rydych chi angen ar awr yma.
 

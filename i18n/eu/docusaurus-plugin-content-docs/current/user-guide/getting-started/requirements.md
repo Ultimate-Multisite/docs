@@ -3,7 +3,7 @@ title: Ezaugarriak
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite eskakizunak {#ultimate-multisite-requirements}
+# Ultimate Multisite eskakizunak
 
 Ultimate Multisite-a eritzeko iridian duan aurretik galdetzeko garrantzitsu da, pluginaren eritzeko beharrezko irudiak zerren dira? Irudi ez da, Ultimate Multisite eritzeko oso garrantzitsuak ezren jakin dira: **domain name** bat, ona **hosting provider** bat eta WordPress-en **Multisite** instalazioa. Horrek dugu behar du!
 

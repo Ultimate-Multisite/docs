@@ -4,7 +4,7 @@ title: Scagaire - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Scagaire: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Scagaire: wu_hosting_integration_wizard_sections
 
 Scagann sé rannáin an draoi le haghaidh socrú comhtháthaithe óstála.
 

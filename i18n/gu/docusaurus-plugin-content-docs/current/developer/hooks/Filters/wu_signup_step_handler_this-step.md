@@ -4,7 +4,7 @@ title: 'ફિલ્ટર - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# ફિલ્ટર: wu_signup_step_handler_\{$this->step\} {#filter-wusignupstephandlerthis-step}
+# ફિલ્ટર: wu_signup_step_handler_\{$this->step\}
 
 આ હેન્ડલરને ફરીથી લખવાની (rewrite) મંજૂરી આપે છે.
 

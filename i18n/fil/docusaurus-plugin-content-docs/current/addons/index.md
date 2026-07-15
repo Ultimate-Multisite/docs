@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Mga Addon ng Ultimate Multisite {#ultimate-multisite-addons}
+# Mga Addon ng Ultimate Multisite
 
 Ang mga Addon ay nagpapalawak sa Ultimate Multisite sa pamamagitan ng pagdaragdag ng iba't ibang features at integrations. Karamihan sa mga addon ay may bayad at mabibili sa [ultimatemultisite.com](https://ultimatemultisite.com).
 

@@ -3,7 +3,7 @@ title: Diiwaanka isbeddellada Fluent Forms
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms Diiwaanka Isbeddellada {#fluent-forms-changelog}
+# Fluent Forms Diiwaanka Isbeddellada
 
 Nooca: 2.0.1 - La sii daayay 2025-09-28
 

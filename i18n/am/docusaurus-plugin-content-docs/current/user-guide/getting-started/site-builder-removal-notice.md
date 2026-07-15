@@ -3,7 +3,7 @@ title: የጣቢያ ገንቢ ሁነታ ማስወገጃ ማስታወቂያ
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# የጣቢያ ገንቢ ሁነታ ማስጠንቀቂያ {#site-builder-mode-removal-notice}
+# የጣቢያ ገንቢ ሁነታ ማስጠንቀቂያ
 
 **የጣቢያ ገንቢ ሁነታ (Site Builder mode) በSuperdav AI Agent v1.12.0 ላይ ተሰርዟል።** የጣቢያ ገንቢ ሁነታን እየተጠቀሙ ከሆነ፣ ለንድፍ እና ለጣቢያ ዝግጅት (site setup) ወደ **Setup Assistant agent** መሸጋገር አለብዎት።
 

@@ -3,7 +3,7 @@ title: PayPal iestatīšana
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal integrācijas iestatīšana (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal integrācijas iestatīšana (v2)
 
 _**SVARĪTĀ NOTE: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

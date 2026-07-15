@@ -3,7 +3,7 @@ title: 'Lliurada 11: Troballar clients'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Aula 11: Trobar Clients {#lesson-11-finding-customers}
+# Aula 11: Trobar Clients
 
 Una plataforma fantàstica sense clients és només un passatemps. Aquesta aula cobreix com adquirir clients en un vertical de nich — estratègies que funcionen específicament perquè et centres en una indústria.
 

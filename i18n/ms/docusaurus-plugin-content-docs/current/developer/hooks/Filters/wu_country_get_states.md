@@ -4,7 +4,7 @@ title: Penapis - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filter: wu_country_get_states {#filter-wucountrygetstates}
+# Filter: wu_country_get_states
 
 Mengembalikan senarai negeri untuk negara ini.
 

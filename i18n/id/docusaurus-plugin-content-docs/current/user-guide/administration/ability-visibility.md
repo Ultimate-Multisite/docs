@@ -3,7 +3,7 @@ title: Visibilitas Kemampuan
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilitas Kemampuan {#ability-visibility}
+# Visibilitas Kemampuan
 
 Superdav AI Agent v1.12.0 memperkenalkan kontrol **Ability Visibility** yang mengatur permukaan mana yang menampilkan setiap kemampuan. Ini memungkinkan administrator untuk menyempurnakan kemampuan agen mana yang tersedia melalui REST API, server MCP, integrasi WooCommerce, dan antarmuka lainnya.
 

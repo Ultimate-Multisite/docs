@@ -3,7 +3,7 @@ title: Daftar Negara
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ngatur Ulang Urutan Daftar Negara Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Ngatur Ulang Urutan Daftar Negara Ultimate Multisite
 
 Dropdown pikeun milih negara téh diurutkeun alfabet dumasar variasi basa Inggris tina nami nagara. Ieu bisa jadi, kadang-kadang, nagara rumah perusahaan anjeun jeung/atawa sabagian loba pelanggan anjeun bisa nyumput di tengah daftar nami nagara anu kacida gedéna.
 

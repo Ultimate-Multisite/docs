@@ -4,7 +4,7 @@ title: Bộ lọc - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 Lọc các tham số được sử dụng để tạo các mục dòng (line items) trên giỏ hàng WooCommerce, trước khi chuyển hướng khách hàng đến trang thanh toán (checkout) của WooCommerce.
 

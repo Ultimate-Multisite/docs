@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Ukuhlanganiswa kwe-WPMU DEV {#wpmu-dev-integration}
+# Ukuhlanganiswa kwe-WPMU DEV
 
 ## Uhlolojikelele {#overview}
 I-WPMU DEV iyinkundla ebanzi ye-WordPress enikeza ukusingathwa, ama-plugin, nezinsizakalo zamasayithi e-WordPress. Lokhu kuhlanganiswa kuvumela ukuvumelanisa izizinda ngokuzenzakalelayo nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite nokusingathwa kwe-WPMU DEV.

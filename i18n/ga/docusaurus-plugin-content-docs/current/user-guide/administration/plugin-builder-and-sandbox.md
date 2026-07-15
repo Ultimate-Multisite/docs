@@ -3,7 +3,7 @@ title: An Bhrochtú Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Tá an Gratis AI Agent v1.5.0 ag cur chuig an **Plugin Builder & Sandbox System**, a which leas an ábhair AI a chur ar fáil, a chuid an plugin WordPress a shonraithe, a chuid a chuid a bheith ar fáil agus a chuid a bhaint ar fáil ar do net — go léir tríd ardán sandbox atá caomhogta.
 

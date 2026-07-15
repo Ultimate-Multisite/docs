@@ -4,7 +4,7 @@ title: 액션 - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# 액션: delete_network {#action-deletenetwork}
+# 액션: delete_network
 
 네트워크가 삭제된 후에 발생합니다.
 

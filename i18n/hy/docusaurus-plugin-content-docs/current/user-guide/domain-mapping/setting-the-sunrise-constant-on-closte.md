@@ -3,7 +3,7 @@ title: Sunrise-ի հաստատուն արժեքը Closte-ում սահմանել
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-ում Sunrise constant-ը true անելու համար {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-ում Sunrise constant-ը true անելու համար
 
 일부 хост провайдерներ аюулалт (security) шалтгаалах wp-config.php файлыг хамгаалдаг. Энэ нь Ultimate Multisite-а домен маппинг болон бусад функцууд ажиллахын тулд шаардлагатай constant-уды оруулах шаардлагатай файлы өөрчлөхөө автоматаар хийж чадахгүй гэсэн үг. Closte нь ийм хост юм.
 

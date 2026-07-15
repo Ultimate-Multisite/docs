@@ -3,7 +3,7 @@ title: 'ਪਾਠ 6: ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦਾ ਅਨੁਭਵ'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: Signup Experience {#lesson-6-the-signup-experience}
+# Lesson 6: Signup Experience
 
 Checkout flow ਉਹ جگہ ਹੈ ਜਿੱਥੇ ਦਿਲਚਸਪੀ ਆਮਦਨ ਬਣਦੀ ਹੈ। ਇੱਕ ਗੁੰਝਲਦਾਰ ਜਾਂ ਆਮ ਸਾਈਨਅੱਪ ਪ੍ਰੋਸੈਸ ਗਾਹਕਾਂ ਨੂੰ ਗੁਆ ਦਿੰਦਾ ਹੈ। ਇੱਕ ਖਾਸ ਨਿਸ਼ (niche) ਨਾਲ ਜੁੜਿਆ ਪ੍ਰੋਸੈਸ ਜੋ ਉਨ੍ਹਾਂ ਦੀ ਜ਼ੁਬਾਨ ਵਿੱਚ ਗੱਲ ਕਰਦਾ ਹੈ ਅਤੇ ਆਸਾਨ ਲੱਗਦਾ ਹੈ, ਉਹ ਉਨ੍ਹਾਂ ਨੂੰ ਗਾਹਕ ਬਣਾਉਂਦਾ ਹੈ।
 

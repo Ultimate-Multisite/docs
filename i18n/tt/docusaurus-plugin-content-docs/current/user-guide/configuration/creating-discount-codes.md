@@ -3,7 +3,7 @@ title: Скидка кодоlarını oluşturma
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Скидка кодов oluşturma (v2) {#creating-discount-codes-v2}
+# Скидка кодов oluşturma (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i referans almaktadır.**_
 

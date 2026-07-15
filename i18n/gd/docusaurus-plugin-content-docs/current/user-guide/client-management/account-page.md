@@ -3,7 +3,7 @@ title: Pàirc àite chliant
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Page an Comharrachd Ur-àig an Eòlas (v2) {#your-clients-account-page-v2}
+# Page an Comharrachd Ur-àig an Eòlas (v2)
 
 _**NOTE CRÍTICA: Tha an article seo a' tighinn air Ultimate Multisite version 2.x.**_
 

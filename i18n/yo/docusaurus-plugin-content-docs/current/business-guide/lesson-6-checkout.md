@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 6: Ìrírí Ìforúkọsílẹ̀'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Ẹ̀kọ́ 6: Ìrírí Ìforúkọsílẹ̀ {#lesson-6-the-signup-experience}
+# Ẹ̀kọ́ 6: Ìrírí Ìforúkọsílẹ̀
 
 Ìṣàn checkout ni ibi tí ìfẹ́ ti di owó-wíwọlé. Ilana signup tí ó rú ẹni lójú tàbí tí ó wọ́pọ̀ ju máa ń pàdánù àwọn oníbàárà. Ìṣàn tó dá lórí niche pàtó, tó ń sọ èdè wọn, tí ó sì rọrùn, máa ń yí wọn padà sí oníbàárà.
 

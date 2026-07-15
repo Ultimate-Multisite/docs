@@ -3,7 +3,7 @@ title: Erstellung einer benutzerdefinierten Registrar-Integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ein benutzerdefiniertes Registrar-Integration erstellen {#building-a-custom-registrar-integration}
+# Ein benutzerdefiniertes Registrar-Integration erstellen
 
 Das Domain Seller Addon verwendet ein Muster namens **Integration Registry**. Jeder Registrar ist eine PHP-Klasse, die `Domain_Selling_Capability` implementiert und sich über den Action Hook `wu_domain_seller_register_capabilities` registriert.
 

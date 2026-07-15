@@ -3,7 +3,7 @@ title: Tagairt do Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tagairt Hooks {#hooks-reference}
+# Tagairt Hooks
 
 Doiciméadú uathghinte do gach ceann de na **59 gníomh** agus **118 scagaire** in Ultimate Multisite.
 

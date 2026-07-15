@@ -4,7 +4,7 @@ title: 動作 - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 在這裡新增一個自訂動作，這樣我們就有一個地方可以根據需要載入（enqueue）腳本和樣式，並確保它們只在正確的頁面上載入。
 

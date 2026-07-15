@@ -3,7 +3,7 @@ title: Requisoj
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisitoj la Ultimate Multisite {#ultimate-multisite-requirements}
+# Requisitoj la Ultimate Multisite
 
 La unua cosa ki vi povas diri memu antaŭ ol iachti Ultimate Multisite estas kio bezonas por fari labori kun nia plugino. Behatko, ĝuste ekzistas nur malfortaj rekvizito por fari labori kun Ultimate Multisite: **domeno**, bona **hostaĝo** (hosting provider) kaj WordPress **Multisite** instalita. Tio estas ĉio necese!
 

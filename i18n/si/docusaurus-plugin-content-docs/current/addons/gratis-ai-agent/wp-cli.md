@@ -3,7 +3,7 @@ title: WP-CLI යොමුව
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI යොමුව {#wp-cli-reference}
+# WP-CLI යොමුව
 
 Gratis AI Agent හි `wp gratis-ai-agent` විධාන පවුලක් ඇතුළත් වේ. ඒවා agent එක benchmark කිරීම, හැකියාවන් කළමනාකරණය කිරීම, සහ විධාන රේඛාවෙන් agent තත්ත්වය විමසීම සඳහාය. සියලු විධාන සඳහා WP-CLI 2.0 හෝ ඉහළ අනුවාදයක් අවශ්‍ය වේ.
 

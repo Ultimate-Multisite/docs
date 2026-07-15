@@ -3,7 +3,7 @@ title: 會員資格過期與網站封鎖
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# 會籍到期與網站封鎖 {#membership-expiration-and-site-blocking}
+# 會籍到期與網站封鎖
 
 本指南說明 Ultimate Multisite 如何處理會籍到期、試用期結束以及前端網站封鎖的機制。內容涵蓋了會籍從「活躍」到「到期」的整個生命週期、控制網站是否被封鎖的設定，以及在會籍到期後網站仍可存取時應檢查哪些項目。
 

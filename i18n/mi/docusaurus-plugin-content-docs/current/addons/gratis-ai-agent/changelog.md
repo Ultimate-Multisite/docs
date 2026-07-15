@@ -3,7 +3,7 @@ title: Rangitaki huringa
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Rangitaki Huringa {#changelog}
+# Rangitaki Huringa
 
 ## 1.9.0 — I tukuna i te 2026-04-28 {#190--released-on-2026-04-28}
 

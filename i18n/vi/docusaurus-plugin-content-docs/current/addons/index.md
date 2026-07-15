@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Các Addon của Ultimate Multisite {#ultimate-multisite-addons}
+# Các Addon của Ultimate Multisite
 
 Các Addon giúp mở rộng Ultimate Multisite với các tính năng và khả năng tích hợp bổ sung. Hầu hết các Addon đều là tính năng trả phí và bạn có thể mua chúng tại [ultimatemultisite.com](https://ultimatemultisite.com).
 

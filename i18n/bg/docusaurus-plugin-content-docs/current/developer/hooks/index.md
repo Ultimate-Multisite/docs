@@ -3,7 +3,7 @@ title: Справка за Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Справочник за hooks {#hooks-reference}
+# Справочник за hooks
 
 Автоматично генерирана документация за всички **59 действия** и **118 филтъра** в Ultimate Multisite.
 

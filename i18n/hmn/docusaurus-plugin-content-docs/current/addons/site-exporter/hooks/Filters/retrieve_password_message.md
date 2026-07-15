@@ -4,7 +4,7 @@ title: Lim - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Lim: retrieve_password_message {#filter-retrievepasswordmessage}
+# Lim: retrieve_password_message
 
 Lim cov ntsiab lus ntawm tsab email rov pib dua password.
 

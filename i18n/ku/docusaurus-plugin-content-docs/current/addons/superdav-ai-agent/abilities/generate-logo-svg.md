@@ -3,7 +3,7 @@ title: SVG ya logoyê çêbike
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG çêbike {#generate-logo-svg}
+# Logo SVG çêbike
 
 Karîna **Logo SVG çêbike** dihêle ku Theme Builder logo SVG-yên taybet rasterast di nav malpera te ya WordPress de çêbike û bi paqijkirina otomatîk a ewle ji bo namespace têxe hundir.
 

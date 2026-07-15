@@ -3,7 +3,7 @@ title: Cyfluniad a Cyfathrebu y Cynllunwrth
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Rheoliad a Chwaraeon a Chwaraeon ac Cyflwyniadwr {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Rheoliad a Chwaraeon a Chwaraeon ac Cyflwyniadwr
 
 Mae'r add-on Domain Seller yn cael ei gyflwyno gyda gwyrddiadau cyfarwyddiadol sy'n gweso chi trwy pob cynllun sydd angen. Mae'r dogfennau hwn yn gwrcio'r llwybr y wyrddiadau a sut i sicr ychwanegu neu drosglwyddo'r cyflwyniadwr ar ôl hynny.
 

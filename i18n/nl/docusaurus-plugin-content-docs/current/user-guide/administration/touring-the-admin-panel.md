@@ -3,7 +3,7 @@ title: Rondleiding door het beheerpaneel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Rondleiding door het Admin Panel {#touring-the-admin-panel}
+# Rondleiding door het Admin Panel
 
 Ultimate Multisite streeft ernaar zo eenvoudig en vanzelfsprekend mogelijk te zijn, maar bij zo’n krachtig hulpmiddel kan een rondleiding helpen. Laten we de admin-pagina’s doorlopen om je wegwijs te maken.
 

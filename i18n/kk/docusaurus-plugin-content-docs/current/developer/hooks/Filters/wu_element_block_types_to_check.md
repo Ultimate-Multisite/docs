@@ -4,7 +4,7 @@ title: Сүзгі - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Сүзгі: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Сүзгі: wu_element_block_types_to_check
 
 Кейін қосымша блоктарды қосуымыз қажет болуы мүмкін.
 

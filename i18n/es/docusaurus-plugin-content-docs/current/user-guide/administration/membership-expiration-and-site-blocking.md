@@ -3,7 +3,7 @@ title: Expiración de membresía y bloqueo de sitio
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiración de Membresía y Bloqueo del Sitio {#membership-expiration-and-site-blocking}
+# Expiración de Membresía y Bloqueo del Sitio
 
 Esta guía explica cómo Ultimate Multisite maneja la expiración de membresías, el final de las pruebas gratuitas y el bloqueo del sitio en el frontend. Cubre el ciclo de vida de una membresía, desde activa hasta expirada, la configuración que controla si los sitios se bloquean y qué verificar cuando los sitios siguen siendo accesibles después de que expira una membresía.
 

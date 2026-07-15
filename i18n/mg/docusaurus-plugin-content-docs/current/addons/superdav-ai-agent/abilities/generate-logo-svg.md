@@ -3,7 +3,7 @@ title: Mamorona sary famantarana SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Mamorona Logo SVG {#generate-logo-svg}
+# Mamorona Logo SVG
 
 Ny fahaiza-manao **Generate Logo SVG** dia mamela ny Theme Builder hamorona sy hampiditra logo SVG manokana mivantana ao amin’ny site WordPress-nao miaraka amin’ny fanadiovana mandeha ho azy azo antoka amin’ny namespace.
 

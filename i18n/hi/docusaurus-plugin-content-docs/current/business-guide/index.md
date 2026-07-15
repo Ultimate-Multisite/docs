@@ -3,7 +3,7 @@ title: एक Niche Website Business बनाएँ
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite के साथ एक Niche Website Business कैसे बनाएं {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite के साथ एक Niche Website Business कैसे बनाएं
 
 जो लोग वेबसाइटें बेचना चाहते हैं, उनमें से ज़्यादातर लोग Wix, Squarespace और हज़ारों फ्रीलांसरों के साथ दाम के आधार पर मुकाबला करते हैं। वे हार जाते हैं। जो लोग जीतते हैं, वे एक विशिष्ट दर्शक वर्ग (specific audience) चुनते हैं, उस दर्शक वर्ग के लिए एक समाधान बनाते हैं, और उस मूल्य के लिए चार्ज करते हैं जो वे प्रदान करते हैं।
 

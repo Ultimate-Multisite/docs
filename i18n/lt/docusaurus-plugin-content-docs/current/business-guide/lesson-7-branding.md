@@ -3,7 +3,7 @@ title: '7 pamoka: Pritaikymas sau'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7 pamoka: Pritaikykite tai sau {#lesson-7-making-it-yours}
+# 7 pamoka: Pritaikykite tai sau
 
 Jūsų klientai niekada neturėtų jaustis taip, lyg naudotų „kažkokį WordPress plugin“. Jie turėtų jaustis naudojantys FitSite -- jų industrijai sukurtą platformą. Šioje pamokoje aptariamas prekės ženklo pritaikymas, white-label pritaikymas ir tai, kaip platformai suteikti produkto pojūtį.
 

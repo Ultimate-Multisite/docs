@@ -3,7 +3,7 @@ title: Formuláre na pokladni
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulá na pokladni (Checkout Forms) {#checkout-forms}
+# Formulá na pokladni (Checkout Forms)
 
 Formulá na pokladni sú jednoduchý a flexibilný spôsob, ako experimentovať s rôznymi prístupmi pri konverzi nových zákazníkov.
 

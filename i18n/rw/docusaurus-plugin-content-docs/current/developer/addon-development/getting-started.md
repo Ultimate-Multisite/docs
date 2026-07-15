@@ -3,7 +3,7 @@ title: Gutangira guteza imbere Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Guteza Imbere Inyongera {#addon-development}
+# Guteza Imbere Inyongera
 
 ## Imiterere y’Inyongera {#addon-structure}
 

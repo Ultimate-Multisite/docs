@@ -3,7 +3,7 @@ title: مهاجرت از V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# مهاجرت از نسخه ۱ {#migrating-from-v1}
+# مهاجرت از نسخه ۱
 
 ## Ultimate Multisite از سری نسخه‌های اصلی 1.x به سری نسخه‌های 2.x تغییر کرده است. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

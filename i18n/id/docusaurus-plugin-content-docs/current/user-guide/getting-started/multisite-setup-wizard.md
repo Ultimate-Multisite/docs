@@ -3,7 +3,7 @@ title: Wizard Pengaturan Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Wizard Pengaturan Multisite {#multisite-setup-wizard}
+# Wizard Pengaturan Multisite
 
 Ultimate Multisite dilengkapi dengan wizard bawaan yang secara otomatis mengubah instalasi WordPress standar menjadi jaringan WordPress Multisite. Fitur ini menghilangkan kebutuhan untuk mengedit `wp-config.php` secara manual atau menjalankan perintah database.
 

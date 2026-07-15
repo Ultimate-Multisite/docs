@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 WooCommerce കാർട്ടിലെ ലൈൻ ഐറ്റങ്ങൾ ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്ന പരാമീറ്ററുകൾ, കസ്റ്റമറെ WooCommerce ചെക്കൗട്ടിലേക്ക് റീഡയറക്ട് ചെയ്യുന്നതിന് മുൻപ്, ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

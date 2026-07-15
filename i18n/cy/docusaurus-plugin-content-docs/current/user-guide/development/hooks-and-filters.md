@@ -3,7 +3,7 @@ title: Clyfrion a Ffilterau
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hookau a filtru Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
+# Hookau a filtru Ultimate Multisite
 
 Mae Ultimate Multisite wedi'i gynhyrchu o gyfathrebu o ffrifau a cwestiynau databwriaeth. Mae ganddo hookau a filtru sydd yn sylweddol i'ch gallwch newid neu drosglwyddo code newydd i ffrifau sydd y bydd.
 

@@ -3,7 +3,7 @@ title: Rexistro de cambios de Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Rexistro de cambios de Domain Seller {#domain-seller-changelog}
+# Rexistro de cambios de Domain Seller
 
 Versión 1.3.0 - Publicada o 2026-06-02
 - Novo: Engadiuse unha advertencia de administrador de rede cando o saldo de revendedor de HostAfrica baixa demasiado

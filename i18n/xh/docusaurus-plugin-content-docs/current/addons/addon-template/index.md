@@ -3,9 +3,9 @@ title: Itemplate Yesongezo
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Itemplate yeSongezo {#addon-template}
+# Itemplate yeSongezo
 
-{{ADDON_DESCRIPTION}}
+Itemplate Yesongezo — Ultimate Multisite.
 
 ## Iimfuno {#requirements}
 

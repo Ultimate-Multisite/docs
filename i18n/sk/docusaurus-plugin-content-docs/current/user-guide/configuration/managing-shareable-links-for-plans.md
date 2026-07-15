@@ -3,7 +3,7 @@ title: Správa zdieľateľných odkazov pre plány
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Správa zdieľateľných odkazov pre plány {#managing-shareable-links-for-plans}
+# Správa zdieľateľných odkazov pre plány
 
 Ultimate Multisite vám ponúka možnosť priamo zdieľať odkazy na plány so svojimi klientmi. Aby ste to mohli urobiť, navštívte akýkoľvek editovaciu stránku vášho plánu a kliknite na tlačidlo _Kliknutie na odkaz_ (Click to copy the Shareable Link).
 

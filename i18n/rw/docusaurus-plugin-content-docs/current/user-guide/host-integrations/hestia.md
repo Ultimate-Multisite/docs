@@ -3,7 +3,7 @@ title: Urugero rwo gukoresha Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Uburyo mu Gukoresha Control Panel {#hestia-control-panel-integration}
+# Uburyo mu Gukoresha Control Panel
 
 Iyi gicerwa ni igice cyo gutangira uko ugufata (configure) uburyo bwo gukoresha Ultimate Multisite Hestia integration kugira ngo domain dzishobora kuba zishobora kuboneka muri urugero rwawe (mapped domains) zizera zikurikiranwa (and removed) nk'ibyo mu Hestia.
 

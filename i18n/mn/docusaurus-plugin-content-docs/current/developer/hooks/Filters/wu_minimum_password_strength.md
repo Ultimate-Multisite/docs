@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Шүүлтүүр: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Шүүлтүүр: wu_minimum_password_strength
 
 Шаардагдах нууц үгийн хамгийн бага бат бөхийн түвшнийг шүүнэ (zxcvbn оноо).
 

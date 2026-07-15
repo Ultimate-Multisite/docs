@@ -3,7 +3,7 @@ title: 'Lezzjoni 4: Bini ta'' Mudelli għal Niċeċ'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lezzjoni 4: Nibnu Mudelli tan-Niċċa {#lesson-4-building-niche-templates}
+# Lezzjoni 4: Nibnu Mudelli tan-Niċċa
 
 Il-mudelli huma l-qalba tal-proposta tal-valur tan-niċċa tiegħek. Sid ta’ studio tal-fitness li jirreġistra u jara sit li diġà jidher bħal website tal-fitness -- bi skedi tal-klassijiet, profili ta’ trainers, u l-immaġini t-tajba -- huwa ħafna iktar probabbli li jibqa’ minn wieħed li jara tila vojta.
 

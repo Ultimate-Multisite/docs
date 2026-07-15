@@ -4,7 +4,7 @@ title: Filtru - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Filter: wu_magic_links_enabled
 
 Filtrează dacă link-urile magice sunt activate.
 

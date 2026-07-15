@@ -3,7 +3,7 @@ title: Loco Translate өзгерістер журналы
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate өзгерістер журналы {#loco-translate-changelog}
+# Loco Translate өзгерістер журналы
 
 ### 1.0.1 {#101}
 * Соңғы Loco Translate нұсқасымен үйлесімділік жақсартылды

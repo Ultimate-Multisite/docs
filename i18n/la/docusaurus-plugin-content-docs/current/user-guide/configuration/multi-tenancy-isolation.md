@@ -3,7 +3,7 @@ title: Isolatio Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolația Multi-Tenancy {#multi-tenancy-isolation}
+# Isolația Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 susține izolarea de bază de date și a sistemului de fișiere pentru subsitele suverâne, asigurând o separare completă a datelor în timp ce se păstrează configurarea rețelei, facturarea și administrarea la nivel de rețea.
 

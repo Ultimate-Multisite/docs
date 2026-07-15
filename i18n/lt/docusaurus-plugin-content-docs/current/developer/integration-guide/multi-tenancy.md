@@ -3,7 +3,7 @@ title: Daugiatenantės aplinkos integracija
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integracija {#multi-tenancy-integration}
+# Multi-Tenancy integracija
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 pakeičia kelis integracijos sąlyčio taškus suvereniems nuomininkams, migracijos patikrai ir nuomininko gyvavimo ciklo automatizavimui.
 

@@ -3,7 +3,7 @@ title: 'Ceacht 2: Do nideoige a roghnú'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ceacht 2: Do Nideoige a Roghnú {#lesson-2-picking-your-niche}
+# Ceacht 2: Do Nideoige a Roghnú
 
 I gCeacht 1, dhearbhaíomar cén fáth a mbuaileann nideoige cur chuige cineálach. Anois caithfidh tú do cheann féin a roghnú. Tugann an ceacht seo creat duit chun nideoige a aimsiú agus a bhailíochtú sula n-infheistíonn tú am á tógáil di.
 

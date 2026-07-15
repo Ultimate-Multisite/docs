@@ -3,7 +3,7 @@ title: Como Obter Ajuda
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Como obter ajuda {#how-to-get-help}
+# Como obter ajuda
 
 Você tem sua chave de licença válida, e junto a isso há acesso à nossa equipe para ajudá-lo a resolver problemas que você possa encontrar durante o processo de configuração do Ultimate Multisite.
 

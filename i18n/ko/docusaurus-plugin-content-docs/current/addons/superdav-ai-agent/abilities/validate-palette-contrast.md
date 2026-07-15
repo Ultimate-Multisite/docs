@@ -3,7 +3,7 @@ title: 팔레트 대비 검증
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# 팔레트 대비 검증 {#validate-palette-contrast}
+# 팔레트 대비 검증
 
 **팔레트 대비 검증** 기능은 디자인 팔레트의 색상 조합이 WCAG(웹 콘텐츠 접근성 지침)를 준수하는지 확인하여 테마에 적용하기 전에 검사합니다.
 

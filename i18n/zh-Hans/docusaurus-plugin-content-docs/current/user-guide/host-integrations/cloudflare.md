@@ -3,7 +3,7 @@ title: Cloudflare 集成
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare 集成 {#cloudflare-integration}
+# Cloudflare 集成
 
 ## 概述 {#overview}
 Cloudflare 是领先的内容分发网络（CDN）和安全提供商，可帮助保护并加速网站。此集成可在 Ultimate Multisite 和 Cloudflare 之间实现自动域名管理，尤其适用于子域名多站点安装。

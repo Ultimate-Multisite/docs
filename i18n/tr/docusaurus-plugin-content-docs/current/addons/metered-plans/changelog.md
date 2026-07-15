@@ -3,7 +3,7 @@ title: Ölçümlü Planlar Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ölçümlü Planlar Değişiklik Günlüğü {#metered-plans-changelog}
+# Ölçümlü Planlar Değişiklik Günlüğü
 
 Version 1.1.0 - Yayınlanma Tarihi: 2026-05-05
 - Yeni: Çok siteli (multisite) alt siteler için yapay zeka (AI) jeton faturalandırması — Yapılandırılabilir jeton başına oranlarla müşteri siteleri genelinde AI jeton kullanımını izleme ve faturalandırma.

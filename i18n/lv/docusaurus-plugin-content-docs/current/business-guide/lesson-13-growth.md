@@ -3,7 +3,7 @@ title: '13. nodarbība: Mērogošana'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# 13. nodarbība: Mērogošana {#lesson-13-scaling-up}
+# 13. nodarbība: Mērogošana
 
 Jums ir strādājoša platforma ar maksājošiem klientiem. Šī nodarbība aptver, kā izaugt no nelielas darbības līdz ilgtspējīgam biznesam -- mērogojot infrastruktūru, automatizējot darbības un palielinot ieņēmumus no katra klienta.
 

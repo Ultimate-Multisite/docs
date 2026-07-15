@@ -3,7 +3,7 @@ title: Журнал змін Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Журнал змін Content Sync {#content-sync-changelog}
+# Журнал змін Content Sync
 
 ### Версія 1.1.0 - Випущено 2025-12-31 {#version-110---released-on-2025-12-31}
 * Додано: Підтримка синхронізації всіх типів записів (записи, сторінки, кастомні типи записів).

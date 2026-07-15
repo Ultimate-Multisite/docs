@@ -3,7 +3,7 @@ title: Registro de Alterações de Múltiplas Redes
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Changelog de Multi-Network {#multi-network-changelog}
+# Changelog de Multi-Network
 
 ### 1.3.0 {#130}
 * Novo: Visualizador de modelos de rede — navegue e visualize modelos de rede com um painel ao vivo antes de comprar.

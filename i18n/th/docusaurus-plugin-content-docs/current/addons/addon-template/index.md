@@ -3,9 +3,9 @@ title: แม่แบบส่วนเสริม
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template {#addon-template}
+# Addon Template
 
-{{ADDON_DESCRIPTION}}
+แม่แบบส่วนเสริม — Ultimate Multisite.
 
 ## ข้อกำหนด (Requirements) {#requirements}
 

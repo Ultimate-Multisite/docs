@@ -3,7 +3,7 @@ title: Personalizando seu formulário de cadastro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizando seu formulário de cadastro {#customizing-your-registration-form}
+# Personalizando seu formulário de cadastro
 
 Para fazer sua rede parecer única em comparação com todos os outros SaaS criados na plataforma WordPress, Ultimate Multisite permite que você personalize suas páginas de cadastro e login com nosso recurso **Checkout Forms**.
 

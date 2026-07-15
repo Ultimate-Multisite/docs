@@ -3,7 +3,7 @@ title: Umiejętności świadome tematu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Umiejętności dostosowane do motywu {#theme-aware-skills}
+# Umiejętności dostosowane do motywu
 
 Superdav AI Agent v1.10.0 zawiera cztery nowe, wbudowane umiejętności dostosowane do motywu (theme-aware), które automatycznie adaptują się do aktywnego motywu WordPress. Te umiejętności zapewniają specjalistyczne wskazówki i możliwości dostosowane do architektury i funkcji Twojego motywu.
 

@@ -4,7 +4,7 @@ title: Chochita - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Chochita: wu_register_integrations {#action-wuregisterintegrations}
+# Chochita: wu_register_integrations
 
 Imayambitsidwa kuti ilole integrations kudzilembetsa zokha.
 

@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Cum să folosești fragmentele de cod Ultimate Multisite din repository-ul nostru GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Cum să folosești fragmentele de cod Ultimate Multisite din repository-ul nostru GitHub
 
 În repository-ul GitHub există fragmente de cod solicitate frecvent de utilizatorii Ultimate Multisite care doresc să adauge funcționalități simple, cum ar fi integrarea unui script Google Analytics pe paginile de înregistrare sau ascunderea unei casete meta din dashboard-ul de administrare.
 
@@ -19,7 +19,7 @@ Există 2 modalități de a adăuga codul:
 
   2. Plugin-uri Must-Use (mu-plugins)
 
-# Cum să adaugi fragmentul de cod în fișierul functions.php al temei tale {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Cum să adaugi fragmentul de cod în fișierul functions.php al temei tale
 
   1. Conectează-te la dashboard-ul de administrare al rețelei WordPress și navighează la Teme > Editor temă (vezi captura de ecran de mai jos).
 
@@ -29,7 +29,7 @@ Există 2 modalități de a adăuga codul:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Cum să creezi Plugin-uri Must-Use (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Cum să creezi Plugin-uri Must-Use (mu-plugins)
 
 WordPress dispune de o funcționalitate care îți permite să încarci cod personalizat numit „Plugin-uri Must-Use" sau, pe scurt, „mu-plugins".
 

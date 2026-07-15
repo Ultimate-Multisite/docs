@@ -4,7 +4,7 @@ title: مەشغۇلات - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# مەشغۇلات: delete_network {#action-deletenetwork}
+# مەشغۇلات: delete_network
 
 بىر network ئۆچۈرۈلگەندىن كېيىن قوزغىلىدۇ.
 

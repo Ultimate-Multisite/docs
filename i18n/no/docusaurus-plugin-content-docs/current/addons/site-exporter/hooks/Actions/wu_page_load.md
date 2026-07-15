@@ -4,7 +4,7 @@ title: Action - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Handling: wu_page_load {#action-wupageload}
+# Handling: wu_page_load
 
 Lar plugin-utviklere legge til ekstra hooks på våre sider.
 

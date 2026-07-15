@@ -4,7 +4,7 @@ title: Filtrilo - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filtro: network_options_list {#filter-networkoptionslist}
+# Filtro: network_options_list
 
 Filtras la liston de retaj opcioj kiuj dependas de la domajno kaj vojo de reto.
 

@@ -3,7 +3,7 @@ title: Ho lula le tšepo ea multi-tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ho Lihloboho ho Tlhaloso ea Ho Baola ka Ho Hlahloba (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Ho Lihloboho ho Tlhaloso ea Ho Baola ka Ho Hlahloba (Multi-Tenancy Isolation)
 
 Ho baola ka ho hlahloba (Multi-Tenancy Isolation) ke taba e le sebaka seholo sa WordPress. E re bolela hore o ka baola mofuta o fapaneng oa sekolo se kholo (multi-tenant) ka morao o lehle, jo bolela hore mofuta o fapaneng oa sekolo se kholo ho baola ka tsela e ntle, ho hlahloba, le ho baola ka tsela e ntle.
 

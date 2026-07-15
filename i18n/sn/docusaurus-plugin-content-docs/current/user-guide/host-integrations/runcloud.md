@@ -3,7 +3,7 @@ title: Kugadzirwa neRunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## Oraphorera (Overview) {#overview}
 RunCloud ndiri platformer ya usimamizi wa seva inayotegemea wingu ambayo inakuruhusu kuweka na kusimamia kwa urahisi programu za web kwenye seva zako za wingu. Hii integration inaruhusu usawazishaji wa domain kiotomatiki na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na RunCloud.

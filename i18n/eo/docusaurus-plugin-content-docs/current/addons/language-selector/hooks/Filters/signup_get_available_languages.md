@@ -4,7 +4,7 @@ title: Filtrilo - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filtro: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filtro: signup_get_available_languages
 
 Filtras la liston de disponeblaj lingvoj por antaŭfasadaj retejo-registriĝoj.
 

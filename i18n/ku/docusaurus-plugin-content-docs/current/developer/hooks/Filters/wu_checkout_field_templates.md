@@ -4,7 +4,7 @@ title: Parzûn - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Parzûn: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Parzûn: wu_checkout_field_templates
 
 API-yên me ji bo zêdekirina şablonên nû yên qadê li vir girê didin.
 

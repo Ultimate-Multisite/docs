@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Àlẹmọ: wu_sso_enabled {#filter-wussoenabled}
+# Àlẹmọ: wu_sso_enabled
 
 Mú/pa agbára single-sign-on kọja-domain ṣiṣẹ.
 

@@ -4,7 +4,7 @@ title: فلٽر - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# فلٽر: wu_plan_product_types {#filter-wuplanproducttypes}
+# فلٽر: wu_plan_product_types
 
 انهن پراڊڪٽ قسمن کي فلٽر ڪريو جن کي منصوبن طور ورتو وڃڻ گهرجي.
 

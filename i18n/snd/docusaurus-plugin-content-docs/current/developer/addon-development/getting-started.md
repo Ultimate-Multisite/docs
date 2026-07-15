@@ -3,7 +3,7 @@ title: ايڊآن ڊولپمينٽ سان شروعات ڪرڻ
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# اضافي جي ترقي {#addon-development}
+# اضافي جي ترقي
 
 ## اضافي جو ڍانچو {#addon-structure}
 

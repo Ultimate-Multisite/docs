@@ -3,7 +3,7 @@ title: רעגיסטרירן אַן Account דורך Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# געשעעניש: רעגיסטרירן אַ חשבון דורך Zapier {#event-register-an-account-via-zapier}
+# געשעעניש: רעגיסטרירן אַ חשבון דורך Zapier
 
 אין דעם אַרטיקל [אינטעגרירן Ultimate Multisite מיט Zapier](zapier.md), האָבן מיר באַהאַנדלט ווי צו נוצן Zapier כּדי אויסצופירן פֿאַרשידענע אַקציעס אין Ultimate Multisite לויט טריגערס און געשעענישן. אין דעם אַרטיקל וועלן מיר ווײַזן ווי איר קענט אינטעגרירן אַפּליקאַציעס פֿון דריטע פּאַרטייען. מיר וועלן נוצן Google Sheets ווי דער מקור פֿון דאַטן און שיקן די אינפֿאָרמאַציע צו Ultimate Multisite כּדי צו רעגיסטרירן אַ חשבון.
 

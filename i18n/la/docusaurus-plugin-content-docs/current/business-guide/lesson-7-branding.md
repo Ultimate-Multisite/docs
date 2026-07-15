@@ -3,7 +3,7 @@ title: 'Lectio 7: Fac ut tuum sit'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lectio 7: Id Vestrum Reddere {#lesson-7-making-it-yours}
+# Lectio 7: Id Vestrum Reddere
 
 Clientes vestri numquam sentire debent se "quoddam WordPress additamentum" uti. Sentire debent se FitSite uti -- suggestu ad industriam suam aedificato. Haec lectio tractat notam, alienae notae remotionem, et quomodo suggestum velut productum sentiatur.
 

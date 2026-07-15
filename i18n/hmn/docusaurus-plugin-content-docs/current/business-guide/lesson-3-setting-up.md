@@ -3,7 +3,7 @@ title: 'Loj 3: Tsim Phiaj Txog Lub Kev Muaj Ntsuam'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: ការតំឡើងបណ្តាញរបស់អ្នក (Setting Up Your Network) {#lesson-3-setting-up-your-network}
+# Lesson 3: ការតំឡើងបណ្តាញរបស់អ្នក (Setting Up Your Network)
 
 ដល់ពេលចាប់ផ្តើមបង្កើតហើយ។ ក្នុងមេរៀននេះ អ្នកនឹងដំឡើង Ultimate Multisite ហើយរៀបចំមូលដ្ឋានគ្រឹះនៃបណ្តាញ FitSite។ ការសម្រេចចិត្តគ្រប់យ៉ាងនៅទីនេះគឺគិតទៅលើផ្នែកហាត់ប្រាណ (fitness niche) ជាចម្បង។
 

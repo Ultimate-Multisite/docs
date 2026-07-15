@@ -4,7 +4,7 @@ title: 'Scagaire - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
+# Filter: wu_\{$this->model\}_meta_pre_save
 
 Scagann sé an meta sonraí sula ndéantar é a shraithiú le stóráil sa bhunachar sonraí.
 

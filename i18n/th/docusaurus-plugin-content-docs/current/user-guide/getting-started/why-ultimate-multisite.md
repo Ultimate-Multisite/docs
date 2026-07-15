@@ -3,7 +3,7 @@ title: ทำไมต้อง Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# ทำไมต้อง Ultimate Multisite {#why-ultimate-multisite}
+# ทำไมต้อง Ultimate Multisite
 
 หากคุณมาถึงบทความนี้ คุณอาจเคยได้ยินว่าปลั๊กอินของเราอาจเป็นโซลูชันที่จะทำให้ไอเดียธุรกิจของคุณเป็นจริงได้ เราหวังว่าคุณจะได้คำตอบที่ต้องการเมื่ออ่านบทความนี้จบ
 

@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Kiunganishi cha AI Kamili kwa WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Orodha ya Mabadiliko ya Ultimate AI Connector kwa WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Orodha ya Mabadiliko ya Ultimate AI Connector kwa WebLLM
 
 ## Version 1.1.0 — Iliachishwa tarehe 2026-04-09 {#version-110--released-on-2026-04-09}
 

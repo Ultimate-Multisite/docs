@@ -3,7 +3,7 @@ title: Ukuqalisa ngoPhuhliso lwezongezo
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Uphuhliso lwe-Addon {#addon-development}
+# Uphuhliso lwe-Addon
 
 ## Ulwakhiwo lwe-Addon {#addon-structure}
 

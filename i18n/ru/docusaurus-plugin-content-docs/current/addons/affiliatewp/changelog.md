@@ -3,7 +3,7 @@ title: AffiliateWP журнал изменений
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Журнал изменений AffiliateWP {#affiliatewp-changelog}
+# Журнал изменений AffiliateWP
 
 Версия: 2.0.1 - Выпущено 2025-09-28
 

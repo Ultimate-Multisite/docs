@@ -3,7 +3,7 @@ title: Sistem elektron xatlarni boshqarish
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Система Электрон मेलларини Удириш {#managing-system-emails}
+# Система Электрон मेलларини Удириш
 
 Ultimate Multisite sizga ro'yxatdan o'tish tasdiqlari, to'lov qabul qilganlik uchun rasmiy xat va a'zo bo'lish holatlari kabi voqealar uchun turli tizim elektron xatlarini yuboradi. Bu shablonlarni o'zingizning brendingizga moslash uchun sozlash imkoniyatiga ega bo'lasiz.
 

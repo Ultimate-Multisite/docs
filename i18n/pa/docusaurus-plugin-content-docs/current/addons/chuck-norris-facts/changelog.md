@@ -3,7 +3,7 @@ title: ਚੱਕ ਨਾਰਿਸ ਫੈਕਟਸ ਚੇਂਜਲੌਗ
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# ਚੱਕ ਨੋਰਸ ਫੈਕਟਸ ਚੇਂਜਲੌਗ {#chuck-norris-facts-changelog}
+# ਚੱਕ ਨੋਰਸ ਫੈਕਟਸ ਚੇਂਜਲੌਗ
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * ਜੋੜਿਆ: Ultimate Multisite update server ਰਾਹੀਂ ਆਟੋਮੈਟਿਕ ਅਪਡੇਟ ਕਾਰਜਕੁਸ਼ਲਤਾ।

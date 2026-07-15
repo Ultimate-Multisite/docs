@@ -3,7 +3,7 @@ title: Integrazzjoni ta' Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrazzjoni mal-Hestia Control Panel {#hestia-control-panel-integration}
+# Integrazzjoni mal-Hestia Control Panel
 
 Dan it-dira li tispjega kif tista' tgħallma l-integrazzjoni ta' Ultimate Multisite Hestia biex domini ma mappati fil-network tiegħek jiġu aġġojati (u jipparxu) awtomatik bħala Web Domain Aliases f'Hestia.
 

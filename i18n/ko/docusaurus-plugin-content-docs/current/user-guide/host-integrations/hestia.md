@@ -3,7 +3,7 @@ title: Hestia 컨트롤 패널 통합
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia 컨트롤 패널 통합 {#hestia-control-panel-integration}
+# Hestia 컨트롤 패널 통합
 
 이 가이드는 Ultimate Multisite Hestia 통합을 구성하여 네트워크에서 매핑된 도메인이 Hestia에서 Web Domain Aliases로 자동으로 추가(및 제거)되는 방법을 설명합니다.
 

@@ -3,7 +3,7 @@ title: హుక్స్ సూచన
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks సూచిక {#hooks-reference}
+# Hooks సూచిక
 
 Ultimate Multisite లోని అన్ని **59 చర్యలు** మరియు **118 ఫిల్టర్ల** కోసం స్వయంచాలకంగా రూపొందించిన డాక్యుమెంటేషన్.
 

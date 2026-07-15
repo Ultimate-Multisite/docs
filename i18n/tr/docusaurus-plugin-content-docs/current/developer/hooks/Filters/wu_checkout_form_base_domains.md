@@ -4,7 +4,7 @@ title: Filtre - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Filtre: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Filtre: wu_checkout_form_base_domains
 
 Eşlenmiş alan adı kayıtları haline gelmemesi gereken paylaşılan ödeme formu temel alan adlarını filtreler.
 

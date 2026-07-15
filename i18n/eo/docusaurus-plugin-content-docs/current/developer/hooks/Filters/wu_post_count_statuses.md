@@ -4,7 +4,7 @@ title: Filtrilo - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtrilo: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtrilo: wu_post_count_statuses
 
 Permesas al plugin-programistoj ŝanĝi, kiu stato de afiŝo estu kalkulata. Defaŭlte, publikigitaj kaj privataj afiŝoj estas kalkulataj
 

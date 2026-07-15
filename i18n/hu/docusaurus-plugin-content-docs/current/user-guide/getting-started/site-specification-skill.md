@@ -3,7 +3,7 @@ title: Weboldal specifikációs készség
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Oldal Adatleírás (Site Specification) Képesség {#site-specification-skill}
+# Oldal Adatleírás (Site Specification) Képesség
 
 Az **Oldal Adatleírás (Site Specification) képesség** egy strukturált megközelítés, amely rögzíti az oldal céljait, nézőkörét és márkaidentitását. Ezek az információk az **site_brief** memóriádba kerülnek, amelyet az agentek a tranzakciók során hivatkoznak rá, hogy konzisztens, kontextusérzékeny segítséget nyújtsanak.
 

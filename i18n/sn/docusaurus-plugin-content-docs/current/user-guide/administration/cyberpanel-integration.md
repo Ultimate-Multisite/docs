@@ -3,7 +3,7 @@ title: Kugadzirwa neCyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Iyi ndiri kuunza kune nzira yekuti ungarure (configure) Ultimate Multisite CyberPanel integration kuti domain dzakare mapped mu network yako dzinogone (automatically added and removed) kubva kune virtual hosts mu CyberPanel, uye nekuona auto-SSL kupiwe nekubatsirwa neLet's Encrypt.
 

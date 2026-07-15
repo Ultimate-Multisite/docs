@@ -3,7 +3,7 @@ title: Urururo rw'Umukoresha
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Icyo ya Akaunti ya Mteja (v2) {#your-clients-account-page-v2}
+# Icyo ya Akaunti ya Mteja (v2)
 
 _**KUMBUKA MUHIMU: Hii habari inahusu Ultimate Multisite toleo la 2.x.**_
 

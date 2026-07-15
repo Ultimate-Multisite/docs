@@ -3,7 +3,7 @@ title: Ujumuishaji wa Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Ujumuishaji wa Cloudflare {#cloudflare-integration}
+# Ujumuishaji wa Cloudflare
 
 ## Muhtasari {#overview}
 Cloudflare ni mtandao unaoongoza wa uwasilishaji wa maudhui (CDN) na mtoa huduma za usalama unaosaidia kulinda na kuharakisha tovuti. Ujumuishaji huu unawezesha usimamizi wa kiotomatiki wa domain kati ya Ultimate Multisite na Cloudflare, hasa kwa usakinishaji wa multisite za subdomain.

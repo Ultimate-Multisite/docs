@@ -3,7 +3,7 @@ title: ചെക്ക്ഔട്ട് ഫോമുകൾ
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 പുതിയ ഉപഭോക്താക്കളെ നേടാൻ ശ്രമിക്കുമ്പോൾ വ്യത്യസ്ത സമീപനങ്ങൾ പരീക്ഷിക്കാൻ എളുപ്പവും സൗകര്യപ്രദവുമായ മാർഗമാണ് Checkout Forms.
 

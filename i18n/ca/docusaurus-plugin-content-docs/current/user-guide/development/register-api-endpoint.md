@@ -3,7 +3,7 @@ title: Registrar punt d'acció API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# L'endpoint API de registre d'Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# L'endpoint API de registre d'Ultimate Multisite
 
 En aquest tutorial, aprendreu com utilitzar l'endpoint API `/register` d'Ultimate Multisite per crear tot el procés d'onboarding (incorporació) d'un nou client a la vostra xarxa i com fer-ho amb Zapier.
 

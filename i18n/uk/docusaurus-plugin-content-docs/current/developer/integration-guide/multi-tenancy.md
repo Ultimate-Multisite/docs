@@ -3,7 +3,7 @@ title: Інтеграція мультитенантності
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Інтеграція Multi-Tenancy {#multi-tenancy-integration}
+# Інтеграція Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 змінює кілька точок інтеграції для суверенних тенантів, перевірки міграції та автоматизації життєвого циклу тенанта.
 

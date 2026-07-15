@@ -4,7 +4,7 @@ title: செயல் - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Action: wu_dashboard_widgets
 
 Plugin உருவாக்குநர்கள் (developers) நெட்வொர்க் டாஷ்போர்டு பேனலில் (Network Dashboard Panel) விட்ஜெட்களை (widgets) சேர்க்க இந்த செயல்பாடு அனுமதிக்கிறது.
 

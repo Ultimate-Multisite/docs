@@ -3,7 +3,7 @@ title: Doménové produkty a ceny
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produkty domén a ceny {#domain-products-and-pricing}
+# Produkty domén a ceny
 
 Produkty domén určují, jak spravujete ceny, TLD (top-level domény), soukromí WHOIS a výběr poskytovatelů. Každý produkt domény je standardní produkt Ultimate Multisite s navíc záložkou **Domain Settings** (Nastavení domény).
 

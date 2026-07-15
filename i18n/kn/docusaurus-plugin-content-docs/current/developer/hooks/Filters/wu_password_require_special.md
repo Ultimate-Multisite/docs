@@ -4,7 +4,7 @@ title: Filter - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 ಪಾಸ್‌ವರ್ಡ್‌ಗಳಲ್ಲಿ ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು (special characters) ಕಡ್ಡಾಯಗೊಳಿಸಬೇಕೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 

@@ -3,7 +3,7 @@ title: Jinsi ya Kusanidi Ulinganishaji wa Vikoa
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Jinsi ya Kusanidi Uwekaji Ramani wa Kikoa (v2) {#how-to-configure-domain-mapping-v2}
+# Jinsi ya Kusanidi Uwekaji Ramani wa Kikoa (v2)
 
 _**KUMBUKA MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 

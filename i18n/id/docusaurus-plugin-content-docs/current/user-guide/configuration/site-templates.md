@@ -3,7 +3,7 @@ title: Templat Situs
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Templat Situs (v2) {#site-templates-v2}
+# Templat Situs (v2)
 
 _**CATATAN: Artikel ini merujuk pada Ultimate Multisite versi 2.x. Jika Anda menggunakan versi 1.x,**_ **lihat artikel ini** _**.**_
 

@@ -4,7 +4,7 @@ title: কাৰ্য - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Action: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Action: wu_mt_providers_registered
 
 ডিফল্ট প্ৰোভাইডাৰসমূহ ৰেজিষ্টাৰ হোৱাৰ পিছত এই অ্যাকশনটো ট্ৰিগাৰ হয়।
 

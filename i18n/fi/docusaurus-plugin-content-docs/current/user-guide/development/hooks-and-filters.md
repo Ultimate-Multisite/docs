@@ -3,7 +3,7 @@ title: Hookit ja suodattimet
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite - Hookit ja suodattimet {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite - Hookit ja suodattimet
 
 Ultimate Multisite koostuu valtavasta määrästä funktioita ja tietokantakyselyitä. Siinä on hookkeja ja suodattimia, joiden avulla voit muokata tai lisätä uutta koodia olemassa oleviin funktioihin.
 

@@ -3,7 +3,7 @@ title: Chuck Norris Facts Changelog
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts Módosítási Napló {#chuck-norris-facts-changelog}
+# Chuck Norris Facts Módosítási Napló
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Hozzáadva: Automatikus frissítési funkció Ultimate Multisite update server segítségével

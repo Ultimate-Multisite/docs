@@ -3,7 +3,7 @@ title: ServerPilot ინტეგრაცია
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ინტეგრაცია {#serverpilot-integration}
+# ServerPilot ინტეგრაცია
 
 ## მიმოხილვა {#overview}
 ServerPilot არის ღრუბლოვანი სერვისი, რომელიც საშუალებას გაძლევთ WordPress-ს და სხვა PHP ვებსაიტებს განათავსოთ DigitalOcean-ის, Amazon-ის, Google-ის ან ნებისმიერი სხვა სერვერის上で. ეს ინტეგრაცია უზრუნველყოფს დომეინების ავტომატურ სინქრონიზაციას და SSL სერტიფიკატების მართვას Ultimate Multisite-სა და ServerPilot-ს შორის.

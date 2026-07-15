@@ -4,7 +4,7 @@ title: Omume - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Omume: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Omume: wu_enqueue_extra_hooks
 
 Kwe ka ndị mmepe ngwa mgbakwunye tinye hooks ndị ọzọ
 

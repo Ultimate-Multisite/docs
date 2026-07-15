@@ -3,7 +3,7 @@ title: د ویښتان او واردات
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# داتا اخراج او واردات {#export--import}
+# داتا اخراج او واردات
 
 Ultimate Multisite 2.9.0 ۾ **Tools > Export & Import** جي تحت هڪ واحد سائيٽ جو **Export & Import** اوزار شامل ڪيو آهي. ان جو استعمال تڏهن ڪريو ته جڏهن توهان کي هڪ WordPress سائيٽ کي ZIP فائل جي صورت ۾ پيءَڪ ڪرڻ، ان ZIP کي بحال ڪرڻ يا هڪ سائيٽ کي متناسب Ultimate Multisite ۽ single-site WordPress installation بابت منتقل ڪرڻ گهرجي.
 

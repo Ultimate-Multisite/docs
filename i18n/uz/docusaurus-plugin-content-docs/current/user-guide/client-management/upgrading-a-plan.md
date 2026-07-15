@@ -3,7 +3,7 @@ title: Reja yangilash
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plani yangni yangilash (v2) {#upgrading-a-plan-v2}
+# Plani yangni yangilash (v2)
 
 _**MUHIM MA'LUMOT: Ushbu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 

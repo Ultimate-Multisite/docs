@@ -3,7 +3,7 @@ title: Changelog sa Ultimate AI Connector para sa mga Compatible Endpoints
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector para sa Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector para sa Compatible Endpoints Changelog
 
 ## Bersyon 2.0.0 — Inilabas noong 2026-04-24 {#version-200--released-on-2026-04-24}
 

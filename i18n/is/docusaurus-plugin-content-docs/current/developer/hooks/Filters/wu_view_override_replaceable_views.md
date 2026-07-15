@@ -4,7 +4,7 @@ title: Sía - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Sía: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Sía: wu_view_override_replaceable_views
 
 Leyfir þróunaraðilum að bæta við fleiri möppum á listann yfir það sem hægt er að skipta út.
 

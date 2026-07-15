@@ -4,7 +4,7 @@ title: 'Filter - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# 过滤器: wu_signup_step_handler_\{$this->step\} {#filter-wusignupstephandlerthis-step}
+# 过滤器: wu_signup_step_handler_\{$this->step\}
 
 允许处理程序重写
 

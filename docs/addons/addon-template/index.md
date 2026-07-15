@@ -5,7 +5,7 @@ sidebar_position: 1
 
 # Addon Template
 
-{{ADDON_DESCRIPTION}}
+Template documentation for Ultimate Multisite addon plugins.
 
 ## Requirements
 

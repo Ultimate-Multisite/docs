@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ Chu
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# កំណត់ត្រាកែប្រែ Chuck Norris Facts {#chuck-norris-facts-changelog}
+# កំណត់ត្រាកែប្រែ Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * បានបន្ថែម៖ មុខងារអាប់ដេតដោយស្វ័យប្រវត្តិតាមរយៈម៉ាស៊ីនបម្រើអាប់ដេត Ultimate Multisite

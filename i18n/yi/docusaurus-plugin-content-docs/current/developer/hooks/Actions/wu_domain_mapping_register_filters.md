@@ -4,7 +4,7 @@ title: אַקציע - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 עטלעכע plugins וועלן אָפּהיטן URL איידער די מאַפּירונג איז געווען אַקטיוו, אָדער וועלן בויען URLs אויף אַן אַנדער אופֿן וואָס איז נישט אַרײַנגערעכנט אין די אויבנדערמאָנטע פֿילטערס.
 

@@ -3,7 +3,7 @@ title: Fepetra
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Fepetra an'ny Fandrian'ny Ultimate Multisite {#ultimate-multisite-requirements}
+# Fepetra an'ny Fandrian'ny Ultimate Multisite
 
 Ny zavatra voalohany azonao manontany alohan'ny handefasana ny Ultimate Multisite dia inona no fepetra ilaina mba hampandehanana ny plugin-nao. Tsara kokoa, misy fepetra fototra vitsivitsy ho an'ny fandehanana ny Ultimate Multisite: **anaran-baovao (domain name)**, **mpamatsy hosting** tsara ary **fampiasana WordPress Multisite**. Izany no ilainao!
 

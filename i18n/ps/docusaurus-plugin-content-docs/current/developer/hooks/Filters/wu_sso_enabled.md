@@ -4,7 +4,7 @@ title: فلټر - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# فلټر: wu_sso_enabled {#filter-wussoenabled}
+# فلټر: wu_sso_enabled
 
 د ډومېنونو ترمنځ د واحد ننوتنې وړتیا چالان/بنده کړئ.
 

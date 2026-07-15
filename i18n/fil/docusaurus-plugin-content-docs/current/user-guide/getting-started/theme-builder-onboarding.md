@@ -3,7 +3,7 @@ title: Pagpapakilala sa Theme Builder Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Ipinakilala ng Superdav AI Agent v1.12.0 ang isang ginagabayan na **Theme Builder onboarding flow** na tumutulong sa iyo na gumawa ng custom block theme sa unang pag-setup mo. Pinapalitan nito ang dating Site Builder mode ng mas flexible at agent-assisted na paraan.
 

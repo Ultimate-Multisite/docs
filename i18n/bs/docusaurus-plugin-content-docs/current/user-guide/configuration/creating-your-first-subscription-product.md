@@ -3,7 +3,7 @@ title: Kreiranje vašeg prvog pretplatničkog proizvoda
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreiranje vašeg prvog proizvoda pretplate (v2) {#creating-your-first-subscription-product-v2}
+# Kreiranje vašeg prvog proizvoda pretplate (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak je samo za korisnike Ultimate Multisite verzije 2.x. Ako koristite verziju 1.x,**_ **_**pogledajte ovaj članak**_**.
 

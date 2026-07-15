@@ -3,7 +3,7 @@ title: 'Somada ya 5: Kubuni Mipango Yako'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Somo la 5: Kubuni Miradi Yako {#lesson-5-designing-your-plans}
+# Somo la 5: Kubuni Miradi Yako
 
 Viwango vyako vya mipango si tu viwango vya bei—ni kioo kinachoonyesha jinsi wateja wako wa niche wanavyofanya kazi kweli. Katika somo hili, utabuni viwango vya bidhaa vinavyolingana na mahitaji halisi ya biashara za fitness katika hatua tofauti.
 

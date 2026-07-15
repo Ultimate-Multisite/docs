@@ -3,7 +3,7 @@ title: Multi-Tenancy Isolation
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# ملٹی ٹیننسی آئیزولیشن (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# ملٹی ٹیننسی آئیزولیشن (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 اب خودمختار تنانٹس کے لیے فی سابساাইট ڈیٹا بیس اور فائل سسٹم آئیزولیشن کو سپورٹ کرتا ہے۔ یہ نیٹ ورک لیول پر پروویژننگ، بلنگ اور انتظامیہ برقرار رکھتے ہوئے تنانٹ ڈیٹا کو الگ رکھتا ہے۔
 

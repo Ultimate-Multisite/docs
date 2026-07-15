@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_ptm_edit_page_after_title_input
 sidebar_label: wp_ultimo_ptm_edit_page_after_title_input
 _i18n_hash: 7a4980304b0ebf019e3d4044eb566adc
 ---
-# 액션: wp_ultimo_ptm_edit_page_after_title_input {#action-wpultimoptmeditpageaftertitleinput}
+# 액션: wp_ultimo_ptm_edit_page_after_title_input
 
 플러그인 개발자가 텍스트 입력 아래에 추가 정보를 추가할 수 있도록 허용합니다.
 

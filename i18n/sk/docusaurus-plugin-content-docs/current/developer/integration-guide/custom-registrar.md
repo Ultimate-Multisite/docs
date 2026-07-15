@@ -3,7 +3,7 @@ title: Vytvorenie vlastnej integrácie registrátora
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Vytvorenie vlastnej integrácie registrátora {#building-a-custom-registrar-integration}
+# Vytvorenie vlastnej integrácie registrátora
 
 Doplnok Domain Seller používa vzor **Integration Registry**. Každý registrátor je PHP trieda, ktorá implementuje `Domain_Selling_Capability` a zaregistruje sa cez action hook `wu_domain_seller_register_capabilities`.
 

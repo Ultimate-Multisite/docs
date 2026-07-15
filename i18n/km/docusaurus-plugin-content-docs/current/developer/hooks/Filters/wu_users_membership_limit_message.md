@@ -4,7 +4,7 @@ title: តម្រង - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# តម្រង៖ wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
+# តម្រង៖ wu_users_membership_limit_message
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍ផ្លាស់ប្តូរសារអំពីកម្រិតកំណត់អ្នកប្រើប្រាស់សមាជិកភាព
 

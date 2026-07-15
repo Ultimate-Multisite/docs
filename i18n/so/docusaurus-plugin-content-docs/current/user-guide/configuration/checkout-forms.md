@@ -3,7 +3,7 @@ title: Bixinta Foomamada
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Foomada Checkout (Checkout Forms) {#checkout-forms}
+# Foomada Checkout (Checkout Forms)
 
 Foomada Checkout Forms waa hab fudud oo la qabsan karo inaad isku daydo qaab-dhismeedyo kala duwan marka aad rabto inaad cusub macaamiil u beddesho iibiyey.
 

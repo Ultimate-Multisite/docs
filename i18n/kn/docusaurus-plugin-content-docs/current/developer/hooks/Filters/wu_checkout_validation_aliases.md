@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filter: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Filter: wu_checkout_validation_aliases
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳು ಫಾರ್ಮ್ ವ್ಯಾಲಿಡೇಟರ್‌ನಲ್ಲಿ ಕಸ್ಟಮ್ ಅಲಿಯಾಸ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

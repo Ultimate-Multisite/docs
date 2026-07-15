@@ -4,7 +4,7 @@ title: Acció - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Aquesta acció: wu_deactivation {#action-wudeactivation}
+# Aquesta acció: wu_deactivation
 
 Permet als altres parts del plugin enganxar les seves rutines per a la desactivació.
 

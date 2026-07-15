@@ -3,7 +3,7 @@ title: 'Lesson 12: Pagpapatakbo ng Negosyo'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lesson 12: Pagpapatakbo ng Negosyo {#lesson-12-running-the-business}
+# Lesson 12: Pagpapatakbo ng Negosyo
 
 Ang isang plataporma ay hindi isang proyektong tatapusin—ito ay isang negosyong patakbuhin. Tinatalakay ng araling ito ang pang-araw-araw na operasyon ng pamamahala sa FitSite: suporta, pagbabayad (billing), pagpapanatili (maintenance), at pagpapasaya sa mga customer.
 

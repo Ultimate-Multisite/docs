@@ -4,7 +4,7 @@ title: Hərəkət - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Action: wu_domain_became_primary {#action-wudomainbecameprimary}
+# Action: wu_domain_became_primary
 
 Bir domen sayt üçün əsas domen olduqda işə düşür.
 

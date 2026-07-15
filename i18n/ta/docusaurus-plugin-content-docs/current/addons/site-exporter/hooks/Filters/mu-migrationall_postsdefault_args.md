@@ -4,7 +4,7 @@ title: Filter - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filter: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filter: mu-migration/all_posts/default_args
 
 `all_posts` முறையில் போஸ்ட்களை தேடும்போது பயன்படுத்தப்படும் இயல்புநிலை வாதங்களை (default args) இது வடிகட்டுகிறது.
 

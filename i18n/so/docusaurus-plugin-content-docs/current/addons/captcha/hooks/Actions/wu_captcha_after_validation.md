@@ -4,7 +4,7 @@ title: Ficil - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Ficil: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# Ficil: wu_captcha_after_validation
 
 Waxay dhacdaa kadib xaqiijinta captcha.
 

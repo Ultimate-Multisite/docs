@@ -3,7 +3,7 @@ title: Construir um Negócio de Site de Nicho
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Construa um Negócio de Site de Nicho com Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Construa um Negócio de Site de Nicho com Ultimate Multisite
 
 A maioria das pessoas que tenta vender sites compete por preço contra Wix, Squarespace e milhares de freelancers. E elas perdem. Quem vence escolhe um público específico, constrói uma solução adaptada a esse público e cobra pelo valor que entrega.
 

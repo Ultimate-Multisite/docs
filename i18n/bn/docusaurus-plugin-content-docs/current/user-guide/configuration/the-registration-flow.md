@@ -3,7 +3,7 @@ title: নিবন্ধন প্রক্রিয়া
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# নিবন্ধন প্রবাহ (v2) {#the-registration-flow-v2}
+# নিবন্ধন প্রবাহ (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কে।**_
 

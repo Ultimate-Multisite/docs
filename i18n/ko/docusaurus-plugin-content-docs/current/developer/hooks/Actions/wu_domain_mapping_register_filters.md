@@ -4,7 +4,7 @@ title: 액션 - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 일부 플러그인은 매핑이 활성화되기 전에 URL을 저장하거나 위에 언급된 필터에 포함되지 않은 다른 방식으로 URL을 생성할 수 있습니다.
 

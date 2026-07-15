@@ -4,7 +4,7 @@ title: Shaandhayn - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 U oggolow horumariyeyaasha plugin inay beddelaan xaaladda post ee la tirinayo. Sida caadiga ah, posts la daabacay iyo kuwa private ayaa la tiriyaa
 

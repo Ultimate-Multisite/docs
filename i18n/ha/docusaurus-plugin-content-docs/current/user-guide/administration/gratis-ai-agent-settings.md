@@ -3,7 +3,7 @@ title: Saitunan Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Saitunan Gratis AI Agent {#gratis-ai-agent-settings}
+# Saitunan Gratis AI Agent
 
 Allon **Settings → Advanced** a cikin Gratis AI Agent yana ba da daidaitawar matakin mai gudanarwa don haɗin backend. Wannan shafi yana rubuta tura feedback, maɓallan masu samar da bincike, saitin sabis na Superdav da ake sarrafawa, sarrafawar Google Calendar, saitunan TextBee SMS, da feature flags na dukkan network.
 

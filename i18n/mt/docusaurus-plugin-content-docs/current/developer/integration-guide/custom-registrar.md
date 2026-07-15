@@ -3,7 +3,7 @@ title: Il-Bini ta’ Integrazzjoni ta’ Reġistratur Personalizzata
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bini ta' Integrazzjoni Personalizzata ta' Reġistratur {#building-a-custom-registrar-integration}
+# Bini ta' Integrazzjoni Personalizzata ta' Reġistratur
 
 L-addon Domain Seller juża mudell ta' **Integration Registry**. Kull reġistratur huwa klassi PHP li timplimenta `Domain_Selling_Capability` u tirreġistra lilha nnifisha permezz tal-action hook `wu_domain_seller_register_capabilities`.
 

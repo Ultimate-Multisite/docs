@@ -3,7 +3,7 @@ title: Pagdumala sa mga Site
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Pagdumala sa mga Sites {#managing-sites}
+# Pagdumala sa mga Sites
 
 Ang mga Site (o subsites) mao ang sentro sa imong WaaS business. Ang Ultimate Multisite adunay 3 klase sa sites:
 

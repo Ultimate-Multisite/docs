@@ -3,7 +3,7 @@ title: Ստուգել պալիտրայի հակադրությունը
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Վավերացնել գունապնակի հակադրությունը {#validate-palette-contrast}
+# Վավերացնել գունապնակի հակադրությունը
 
 **Validate Palette Contrast** հնարավորությունը ստուգում է ձեր դիզայնի գունապնակի գունային զույգերը՝ WCAG (Web Content Accessibility Guidelines)-ին համապատասխանությունը գնահատելու համար, նախքան դրանք ձեր theme-ում կիրառելը։
 

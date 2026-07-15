@@ -3,7 +3,7 @@ title: Exportación del sitio
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportación de sitios {#site-export}
+# Exportación de sitios
 
 La página de administración de **Exportación de sitios** permite a los administradores de red empaquetar un sitio completo, o toda la red, en un archivo descargable para migración, respaldo o entrega a terceros.
 

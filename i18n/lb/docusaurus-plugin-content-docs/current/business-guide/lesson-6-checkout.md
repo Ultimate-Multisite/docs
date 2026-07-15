@@ -3,7 +3,7 @@ title: 'Lektioun 6: D''Umeldungserfarung'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lektioun 6: D'Umeldungserfarung {#lesson-6-the-signup-experience}
+# Lektioun 6: D'Umeldungserfarung
 
 De Checkout-Ablaf ass do, wou Interessi zu Recetten gëtt. En duercherneen oder genereschen Umeldungsprozess verléiert Clienten. En nischespezifeschen Ablaf, deen hir Sprooch schwätzt a sech ustrengungslos ufillt, konvertéiert se.
 

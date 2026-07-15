@@ -3,7 +3,7 @@ title: ಜಾಹೀರಾತು ಇಂಜೆಕ್ಟರ್
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector ಬಳಸಿ ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಜಾಹೀರಾತುಗಳನ್ನು ಹಾಕುವುದು {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector ಬಳಸಿ ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಜಾಹೀರಾತುಗಳನ್ನು ಹಾಕುವುದು
 
 Ultimate Multisite: Ad Injector ಒಂದು **ಉಚಿತ add-on** ಆಗಿದ್ದು, ಇದು ನಿಮ್ಮ ಪ್ಲಾನ್‌ಗಳ ಎಡಿಟ್ ಪೇಜ್‌ನಿಂದಲೇ ಜಾಹೀರಾತುಗಳನ್ನು ಹಾಕಲು ಅಗತ್ಯವಿರುವ ಟೂಲ್‌ಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ.
 

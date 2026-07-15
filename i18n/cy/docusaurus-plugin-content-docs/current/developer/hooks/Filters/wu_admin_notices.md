@@ -4,7 +4,7 @@ title: Hidlydd - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Hidlydd: wu_admin_notices {#filter-wuadminnotices}
+# Hidlydd: wu_admin_notices
 
 Caniatáu i ddatblygwyr hidlo hysbysiadau gweinyddol a ychwanegwyd gan Ultimate Multisite.
 

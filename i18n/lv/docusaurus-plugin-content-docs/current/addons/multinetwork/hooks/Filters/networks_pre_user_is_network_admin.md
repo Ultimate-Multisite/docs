@@ -4,7 +4,7 @@ title: Filtrs - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filtrs: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filtrs: networks_pre_user_is_network_admin
 
 Filtrē tīklus, kuros lietotājs ir administrators, lai priekšlaicīgi pārtrauktu procesu.
 

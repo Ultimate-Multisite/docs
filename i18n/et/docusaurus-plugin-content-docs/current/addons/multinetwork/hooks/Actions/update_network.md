@@ -4,7 +4,7 @@ title: Tegevus - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Toiming: update_network {#action-updatenetwork}
+# Toiming: update_network
 
 Käivitatakse pärast olemasoleva võrgu uuendamist.
 

@@ -3,7 +3,7 @@ title: 'Læoni 4: Sköpun nítandi temaplakstur'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Læoni 4: Skráning Nísh-templar {#lesson-4-building-niche-templates}
+# Læoni 4: Skráning Nísh-templar
 
 Templar eru kjarninn í nýsköpunuverðmæti þitt fyrir sérhæfðir viðskiptavini. Stofnun sem er eigandi fítesskóla og sjá síðu sem alveg eins hefur á sig sýn á fítessíðu – með skráningum fyrir tölur, profíllum fyrir trænir og rétt myndum – er mjög meira til að halda enn þann sem sjá blanka skýrslu.
 

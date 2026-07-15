@@ -3,7 +3,7 @@ title: אימות הגירה ריבונית
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# אימות מיגרציה סובריינית (Sovereign Migration Verification) {#sovereign-migration-verification}
+# אימות מיגרציה סובריינית (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 כולל פקודות וריפוי WP-CLI עבור מיגרציות של שוכני סובריין (sovereign tenants). השתמש בהן כאשר מיגרציה של שוכר, ביקור SSO או התקנה מבודדת אינן מתנהגות כמצופה.
 

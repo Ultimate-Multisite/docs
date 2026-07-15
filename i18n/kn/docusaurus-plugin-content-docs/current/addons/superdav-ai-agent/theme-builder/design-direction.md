@@ -3,7 +3,7 @@ title: ವಿನ್ಯಾಸದ ದಿಕ್ಕು
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# ವಿನ್ಯಾಸದ ನಿರ್ದೇಶನ (Design Direction) {#design-direction}
+# ವಿನ್ಯಾಸದ ನಿರ್ದೇಶನ (Design Direction)
 
 **ವಿನ್ಯಾಸದ ನಿರ್ದೇಶನ** ಹಂತವು Theme Builder ಸಂಪೂರ್ಣ ಥೀಮ್ ಅನ್ನು ರಚಿಸುವ ಮೊದಲು, ನಿಮ್ಮ ಥೀಮ್‌ನ ದೃಶ್ಯ ವಿನ್ಯಾಸವನ್ನು (visual design) ಪರಿಶೀಲಿಸಲು, ಉತ್ತಮಗೊಳಿಸಲು ಮತ್ತು ಅಂತಿಮಗೊಳಿಸಲು ನಿಮಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

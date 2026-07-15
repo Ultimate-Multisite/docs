@@ -3,7 +3,7 @@ title: Dnevnik sprememb zahtevkov za podporo
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dnevnik sprememb za podporne zahtevke {#support-tickets-changelog}
+# Dnevnik sprememb za podporne zahtevke
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Izboljšano: Odstranjena mapa vendor/ iz sledenja Git (že zajeto z .gitignore), kar zmanjša velikost repozitorija

@@ -4,7 +4,7 @@ title: Ketso - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Ketso: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Ketso: wu_checkout_order_created
 
 E qala kamora hore odara ya ho phethela theko e bokellwe ka botlalo.
 

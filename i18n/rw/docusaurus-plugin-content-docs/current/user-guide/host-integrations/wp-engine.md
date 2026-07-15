@@ -3,7 +3,7 @@ title: Ubwumvikane bw'WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Urugerer Integration na WP Engine {#wp-engine-integration}
+# Urugerer Integration na WP Engine
 
 ## Umuhiza (Overview) {#overview}
 WP Engine ni platform ya hosting ya WordPress y'ukoza (managed) itenziro ry'umukono (premium) y'WordPress, itanga uburyo bw'ubwujgwa bwo gukora (optimized performance), ubwujgwa bwo kwizera (security), no guhindura (scalability) ku bitenziro bya WordPress. Urugerer uyu rishobora gukora gukoresha domain syncing mu buryo bw'umukono (Ultimate Multisite) n'WP Engine.

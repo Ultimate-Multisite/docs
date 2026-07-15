@@ -3,7 +3,7 @@ title: Eine Mitgliedschaft kündigen
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Kündigung einer Mitgliedschaft (v2) {#canceling-a-membership-v2}
+# Kündigung einer Mitgliedschaft (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

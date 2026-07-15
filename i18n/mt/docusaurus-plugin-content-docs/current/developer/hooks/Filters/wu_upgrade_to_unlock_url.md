@@ -4,7 +4,7 @@ title: Filtru - wu_upgrade_to_unlock_url
 sidebar_label: wu_upgrade_to_unlock_url
 _i18n_hash: 3398ef4bc9e288f0173a859844fbb25c
 ---
-# Filtru: wu_upgrade_to_unlock_url {#filter-wuupgradetounlockurl}
+# Filtru: wu_upgrade_to_unlock_url
 
 Jippermetti lill-iżviluppaturi jibdlu l-URL ta’ upgrade biex jinfetaħ
 

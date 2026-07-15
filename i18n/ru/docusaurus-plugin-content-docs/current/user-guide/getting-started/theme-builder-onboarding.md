@@ -3,7 +3,7 @@ title: Поток адаптации Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Онбординг в Theme Builder {#theme-builder-onboarding-flow}
+# Онбординг в Theme Builder
 
 Superdav AI Agent v1.12.0 представляет управляемый **процесс онбординга Theme Builder**, который поможет вам создать кастомную блочную тему во время первоначальной настройки. Это заменяет устаревший режим Site Builder на более гибкий подход с помощью агента.
 

@@ -3,7 +3,7 @@ title: Fampidirana RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Fandrenana RunCloud {#runcloud-integration}
+# Fandrenana RunCloud
 
 ## Famaritana (Overview) {#overview}
 RunCloud dia sehat ho fita-pitatra (cloud-based server management platform) izay ahafahanao manome sy mitantana ireo web applications amin'ny server anao manokana mora. Ity fandrindrana ity dia mamela ny fametrahana automatique ny domain sy ny fitantanana SSL certificate eo anelanelan'i Ultimate Multisite sy RunCloud.

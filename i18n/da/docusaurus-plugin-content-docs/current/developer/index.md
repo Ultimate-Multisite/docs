@@ -3,7 +3,7 @@ title: Udviklerdokumentation
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Udviklerdokumentation {#developer-documentation}
+# Udviklerdokumentation
 
 Denne guide giver udviklere alt, de har brug for til at integrere med, udvide eller udvikle addons til Ultimate Multisite. Ultimate Multisite omdanner et WordPress Multisite netværk til en Website-as-a-Service (WaaS) platform.
 

@@ -3,7 +3,7 @@ title: Forbedre kontrollpanelintegrasjon
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Integrasjon med Enhance-kontrollpanel {#enhance-control-panel-integration}
+# Integrasjon med Enhance-kontrollpanel
 
 ## Oversikt {#overview}
 Enhance er et moderne kontrollpanel som gir kraftige funksjoner for automatisering og administrasjon av hosting. Denne integrasjonen gjør det mulig å synkronisere domener automatisk og administrere SSL-sertifikater mellom Ultimate Multisite og Enhance-kontrollpanelet.

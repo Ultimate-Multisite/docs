@@ -4,7 +4,7 @@ title: តម្រង - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# តម្រង៖ wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# តម្រង៖ wp_ultimo_woocommerce_checkout_fields_to_clean
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍តម្រងវាលអាសយដ្ឋានវិក្កយបត្រ WooCommerce លំនាំដើម។
 

@@ -4,7 +4,7 @@ title: فلټر - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# فلټر: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# فلټر: mu-migration/all_posts/default_args
 
 د all_posts مېتود کې د لیکنو د پوښتلو لپاره default args فلټر کوي.
 

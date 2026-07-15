@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_domain_registration_complete
 sidebar_label: wu_domain_registration_completed
 _i18n_hash: 092b475e74f3b937af068c83eeba2e0a
 ---
-# Action: wu_domain_registration_completed {#action-wudomainregistrationcompleted}
+# Action: wu_domain_registration_completed
 
 ဒိုမိန်တစ်ခု အောင်မြင်စွာ မှတ်ပုံတင်ပြီးသည့်အခါ အလုပ်လုပ်သည်။
 

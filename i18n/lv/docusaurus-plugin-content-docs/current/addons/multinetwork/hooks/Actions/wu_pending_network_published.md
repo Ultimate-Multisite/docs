@@ -4,7 +4,7 @@ title: Darbība - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Darbība: wu_pending_network_published {#action-wupendingnetworkpublished}
+# Darbība: wu_pending_network_published
 
 Tiek palaista pēc tam, kad gaidošs tīkls ir publicēts.
 

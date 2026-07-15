@@ -3,7 +3,7 @@ title: Auringu faili viga
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise faili installimise {#error-installing-the-sunrise-file}
+# Sunrise faili installimise
 
 sunrise.php fail on eriti file on eriti WordPress otsi otsi, kui see itse bootstráibib. Et WordPress saaks sunrise.php failit tuvastada, tuleb see asukohtada **wp-content** folderi all.
 

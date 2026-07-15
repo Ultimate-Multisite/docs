@@ -3,7 +3,7 @@ title: Tích hợp CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Tích hợp CyberPanel {#cyberpanel-integration}
+# Tích hợp CyberPanel
 
 Hướng dẫn này giải thích cách cấu hình tích hợp Ultimate Multisite với CyberPanel để các tên miền được ánh xạ trong mạng của bạn được tự động thêm (và xóa) dưới dạng virtual host trong CyberPanel, cùng với tính năng tùy chọn tự động cấp SSL qua Let's Encrypt.
 

@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Filter: wp_ultimo_render_vars
 
 ပလပ်အင် developer များအနေဖြင့် render လုပ်သည့် အကြောင်းအရာ (render context) အတွက် variable အပိုများကို ကမ္ဘာလုံးဆိုင်ရာအဆင့်တွင် ထည့်သွင်းနိုင်စေရန်။
 

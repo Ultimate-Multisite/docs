@@ -3,7 +3,7 @@ title: Kodakopiak
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koda-kodak (Code Snippets) v2 {#code-snippets-for-v2}
+# Koda-kodak (Code Snippets) v2
 
 Ezin beti, **WordPress**-eko koda-kodakak erabiltzen da batzuk egin dezake, zein irakurripen edo plugin berezi behar izan jasotzen dirudi. Hau eskinduaren koda-kodak WordPress-en core edo tema file bat (lerregatik, tema-ren functions.php file-a) edo MU plugin bat gisa erabiltzen daiteke.
 

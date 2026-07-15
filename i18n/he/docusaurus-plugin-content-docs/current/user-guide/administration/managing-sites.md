@@ -3,7 +3,7 @@ title: ניהול אתרים
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# ניהול אתרים {#managing-sites}
+# ניהול אתרים
 
 אתרים (או תתי-אתרים) הם הליבה של עסק ה-WaaS שלך. ב-Ultimate Multisite יש 3 סוגי אתרים:
 

@@ -5,7 +5,7 @@ title: |+
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notifika tal-Għaddi tal-Modul ta Bankit (Site Builder Mode) {#site-builder-mode-removal-notice}
+# Notifika tal-Għaddi tal-Modul ta Bankit (Site Builder Mode)
 
 **Il-Modul ta Bankit (Site Builder mode) huwa eliminat f Superdav AI Agent v1.12.0.** Jekk kien qed tistaqsi l-Modul ta Bankit, għandek tmexxi għall- **Setup Assistant agent** biex tgħmli temi u tistabbilixxi siti.
 

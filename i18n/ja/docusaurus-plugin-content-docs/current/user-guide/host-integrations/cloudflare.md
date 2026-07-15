@@ -3,7 +3,7 @@ title: Cloudflare 連携
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare連携 {#cloudflare-integration}
+# Cloudflare連携
 
 ## 概要 {#overview}
 Cloudflareは、Webサイトの保護と高速化を支援する主要なコンテンツ配信ネットワーク（CDN）およびセキュリティプロバイダーです。この連携により、Ultimate MultisiteとCloudflareの間でドメイン管理を自動化できます。特にサブドメイン型のマルチサイト構成に適しています。

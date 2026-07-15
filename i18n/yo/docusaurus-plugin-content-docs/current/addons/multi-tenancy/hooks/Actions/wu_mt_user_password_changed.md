@@ -4,7 +4,7 @@ title: Ìṣe - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Action: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Action: wu_mt_user_password_changed
 
 Action tí a tan nígbà tí a bá yí ọ̀rọ̀ aṣínà olumulo kan padà.
 

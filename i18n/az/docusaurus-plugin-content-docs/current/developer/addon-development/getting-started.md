@@ -3,7 +3,7 @@ title: Addon hazırlanmasına başlama
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Əlavənin hazırlanması {#addon-development}
+# Əlavənin hazırlanması
 
 ## Əlavə strukturu {#addon-structure}
 

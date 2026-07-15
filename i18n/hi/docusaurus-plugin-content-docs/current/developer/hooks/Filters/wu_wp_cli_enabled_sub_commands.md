@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Filter: wu_wp_cli_enabled_sub_commands
 
 यह फ़िल्टर निर्धारित करता है कि इस इकाई (entity) के लिए कौन से सब-कमांड्स सक्षम (enabled) हैं।
 

@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ àwọn ìyípadà Tíkẹ́ẹ̀tì Àtilẹ́yìn
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Àkọọlẹ Ayipada Tikẹti Ìrànlọ́wọ́ {#support-tickets-changelog}
+# Àkọọlẹ Ayipada Tikẹti Ìrànlọ́wọ́
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ti mú dara sí: Yọ vendor/ directory kúrò nínú ìtọ́pa Git (tí .gitignore ti bo tẹ́lẹ̀), ó dín ìwọ̀n repository kù

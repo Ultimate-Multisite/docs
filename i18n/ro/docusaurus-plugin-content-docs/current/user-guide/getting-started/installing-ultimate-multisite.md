@@ -3,7 +3,7 @@ title: Instalarea Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalarea Ultimate Multisite {#installing-ultimate-multisite}
+# Instalarea Ultimate Multisite
 
 :::note
 Acest tutorial presupune că aveți deja WordPress Multisite instalat și configurat. Pentru a afla cum, consultați [acest tutorial](https://www.wpbeginner.com/glossary/multisite/) de la WP Beginner.

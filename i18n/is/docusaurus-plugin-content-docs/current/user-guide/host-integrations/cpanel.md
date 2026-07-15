@@ -3,7 +3,7 @@ title: cPanel samstarf
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Samning við cPanel {#cpanel-integration}
+# Samning við cPanel
 
 ## Áhersla {#overview}
 cPanel er einn af mest þekktum web hostingu stjórnunarbandnum sem mörgum samaðar og sérstök hostingsþjónustilboðum eru notað. Þessi samning skilar sjálfvirkan samningu fyrir domænar á milli Ultimate Multisite og cPanel, sem gerir þér möguleika að bæta domæna-alias og subdomænar í cPanel reikningnum þínum sjálfvirklega viðkomandi.

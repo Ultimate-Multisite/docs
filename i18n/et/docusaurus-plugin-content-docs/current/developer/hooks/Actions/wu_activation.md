@@ -4,7 +4,7 @@ title: Toiming - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Toiming: wu_activation {#action-wuactivation}
+# Toiming: wu_activation
 
 Võimaldab plugina teistel osadel lisada aktiveerimiseks oma rutiine
 

@@ -3,7 +3,7 @@ title: 'Lesona 14: Inona no manaraka'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesona 14: Inona no Manaraka {#lesson-14-what-comes-next}
+# Lesona 14: Inona no Manaraka
 
 Nanangana sehatra tranonkala ho an’ny niche iray avy amin’ny aotra ianao. Efa mandeha mivantana ny FitSite, manompo studio fitness, ary mamokatra vola miditra miverimberina. Ity lesona farany ity dia mijery izay haleha manomboka eto.
 

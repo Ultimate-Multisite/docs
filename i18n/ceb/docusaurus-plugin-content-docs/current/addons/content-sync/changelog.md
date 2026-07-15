@@ -3,7 +3,7 @@ title: Tala sa mga Kausaban sa Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Paglista sa mga Pagbag-o sa Content Sync {#content-sync-changelog}
+# Paglista sa mga Pagbag-o sa Content Sync
 
 ### Bersyon 1.1.0 - Gipagawas niadtong 2025-12-31 {#version-110---released-on-2025-12-31}
 * Bag-o: Suporta sa pag-sync sa tanang post type (posts, pages, custom post types)

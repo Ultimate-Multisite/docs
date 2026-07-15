@@ -4,7 +4,7 @@ title: Lim - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Lim: wu_post_count {#filter-wupostcount}
+# Lim: wu_post_count
 
 Tso cai rau cov neeg tsim plugin hloov tag nrho tus lej suav
 

@@ -4,7 +4,7 @@ title: कार्य - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# कार्य: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# कार्य: wp_ultimo_support_agents_load
 
 सबै निर्भरताहरू लोड भएपछि ट्रिगर हुन्छ
 

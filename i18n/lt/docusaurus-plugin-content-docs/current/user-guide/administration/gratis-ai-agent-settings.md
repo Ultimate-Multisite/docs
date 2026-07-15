@@ -3,7 +3,7 @@ title: Gratis AI Agent nustatymai
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent nustatymai {#gratis-ai-agent-settings}
+# Gratis AI Agent nustatymai
 
 **Settings → Advanced** ekranas Gratis AI Agent suteikia administratoriaus lygio konfigūraciją backend integracijoms. Šiame puslapyje dokumentuojamas feedback persiuntimas, paieškos teikėjo raktai, valdomos Superdav paslaugos sąranka, Google Calendar valdikliai, TextBee SMS nustatymai ir viso tinklo funkcijų vėliavėlės.
 

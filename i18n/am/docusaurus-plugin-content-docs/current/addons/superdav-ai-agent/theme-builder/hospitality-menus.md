@@ -3,7 +3,7 @@ title: የሆቴል የምሳ ሰሌዳዎች
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# የሆስፒታሊቲ ምናባዎች {#hospitality-menus}
+# የሆስፒታሊቲ ምናባዎች
 
 የ**የሆስፒታሊቲ ምናባዎች** (Hospitality Menus) ባህሪ Theme Builder በWordPress ድረ-ገጽዎ ላይ የተደራጁ የምግብ እና የመጠጥ ምናባዎችን (menus) መፍጠር እና ማስገባት ያስችላል።
 

@@ -3,7 +3,7 @@ title: Пачатак працы з распрацоўкай дадаткаў
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Распрацоўка адона {#addon-development}
+# Распрацоўка адона
 
 ## Структура адона {#addon-structure}
 

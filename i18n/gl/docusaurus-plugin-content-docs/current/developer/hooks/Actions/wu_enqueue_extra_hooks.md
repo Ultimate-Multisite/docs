@@ -4,7 +4,7 @@ title: Acción - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Acción: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Acción: wu_enqueue_extra_hooks
 
 Permite aos desenvolvedores de complementos engadir hooks adicionais
 

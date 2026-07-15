@@ -3,7 +3,7 @@ title: Radni tok migracije suverenog sistema
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Рабочий процес миграције суверена {#sovereign-migration-workflow}
+# Рабочий процес миграције суверена
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 додаје верификационе врата за миграцију при прелази од стандардног сабсајта у инфраструктуру сувереног тенанта.
 

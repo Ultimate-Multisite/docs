@@ -4,7 +4,7 @@ title: 필터 - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# 필터: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# 필터: wu_stripe_existing_plan_id
 
 검사할 플랜의 ID를 필터링합니다. 이 ID가 존재하면 새 구독이 이 플랜을 사용합니다.
 

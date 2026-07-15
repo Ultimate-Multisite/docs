@@ -3,7 +3,7 @@ title: 'Liçona 5: Dissenyar els teus plans'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Aula 5: Disseny dels teus plans {#lesson-5-designing-your-plans}
+# Aula 5: Disseny dels teus plans
 
 Els teus nivells de plans no són només nivells de preu; són un reflex de com operen realment els teus clients de niș. En aquesta aula, dissenyaràs nivells de producte que es puguin adaptar a les necessitats reals de les empreses de fitness en diferents etapes.
 

@@ -3,7 +3,7 @@ title: የአባልነት መቋረጥ
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# የአባልነት መቋረጥ (v2) {#canceling-a-membership-v2}
+# የአባልነት መቋረጥ (v2)
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 

@@ -3,7 +3,7 @@ title: Loco Translate Dziennik zmian
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Dziennik zmian Loco Translate {#loco-translate-changelog}
+# Dziennik zmian Loco Translate
 
 ### 1.0.1 {#101}
 * Poprawiona kompatybilność z najnowszą wersją Loco Translate

@@ -3,7 +3,7 @@ title: Մատակարարին հարմարեցված Prompt քեշավորում
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Մատակարարին համապատասխան prompt caching {#provider-aware-prompt-caching}
+# Մատակարարին համապատասխան prompt caching
 
 Superdav AI Agent v1.12.0-ը ներկայացնում է **մատակարարին համապատասխան prompt caching**, որը օպտիմալացնում է API-ի ծախսերն ու ուշացումը՝ տարբեր LLM մատակարարների միջև prompt-երը cache անելով։ Յուրաքանչյուր մատակարար ունի տարբեր cache մեխանիզմներ և կարգավորումներ։
 

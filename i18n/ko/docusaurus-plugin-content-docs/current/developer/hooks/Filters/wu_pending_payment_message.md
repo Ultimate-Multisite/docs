@@ -4,7 +4,7 @@ title: 필터 - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# 필터: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# 필터: wu_pending_payment_message
 
 사용자가 보류 중인 결제에 대한 메시지를 변경할 수 있도록 허용합니다.
 

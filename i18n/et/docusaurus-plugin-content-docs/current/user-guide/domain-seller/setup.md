@@ -3,7 +3,7 @@ title: Seadistamine ja pakkuja konfiguratsioon
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domen müüja: Seadistamine ja teenuse konfiguratsioonid {#domain-seller-setup-and-provider-configuration}
+# Domen müüja: Seadistamine ja teenuse konfiguratsioonid
 
 Domain Seller lisamoodul on kaasas suunatud seadistamise juhend, mis juhendab teid iga vajaliku sammu läbiva. See leht käsitleb juhendi voolu ning seda, kuidas pärast seda konfigurida või uuesti konfigurida teenusepanna (provider).
 

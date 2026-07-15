@@ -3,7 +3,7 @@ title: Integracija sa cPanelom
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integracija sa cPanel-om {#cpanel-integration}
+# Integracija sa cPanel-om
 
 ## Pregled {#overview}
 cPanel je jedan od najpopularnijih kontrolnih panela za web hosting koji koriste mnogi provajderi dijeljenog i posvećenog hostinga. Ova integracija omogućava automatsko sinhronizovanje domena između Ultimate Multisite-a i cPanel-a, što vam omogućava da automatski dodajete aliase domena i poddomene na vaš cPanel račun.

@@ -3,7 +3,7 @@ title: Taybetkirina forma xwe ya qeydkirinê
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Formê Qeydkirinê yê xwe taybet bike {#customizing-your-registration-form}
+# Formê Qeydkirinê yê xwe taybet bike
 
 Ji bo ku tora te ji hemû SaaSên din ên li ser platforma WordPress hatine çêkirin cuda xuya bike, Ultimate Multisite bi taybetmendiya me ya **Formên Checkout** dihêle tu rûpelên qeydkirin û têketinê taybet bikî.
 

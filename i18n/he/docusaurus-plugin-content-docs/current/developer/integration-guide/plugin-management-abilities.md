@@ -3,7 +3,7 @@ title: יכולות ניהול תוספים
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# יכולות ניהול תוספים {#plugin-management-abilities}
+# יכולות ניהול תוספים
 
 Gratis AI Agent v1.5.0 מגיע עם **7 יכולות ניהול תוספים** שהעוזרת ה-AI יכולה להפעיל במהלך שיחה. יכולות אלה מספקות שליטה תכנותית על תוספי WordPress המותקנים דרך [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

@@ -3,7 +3,7 @@ title: سەرچاوەی هۆکەکان
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# سەرچاوەی Hooks {#hooks-reference}
+# سەرچاوەی Hooks
 
 بەڵگەنامەیەکی خۆکار دروستکراو بۆ هەموو **59 کردارەکان** و **118 فلتەرەکان** لە Ultimate Multisite.
 

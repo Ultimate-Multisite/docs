@@ -3,7 +3,7 @@ title: ପେୟଫାଷ୍ଟ ଗେଟୱେୟ
 sidebar_position: 18
 _i18n_hash: 522faa86d920457375203119d78650a7
 ---
-# PayFast ଗେଟୱେ {#payfast-gateway}
+# PayFast ଗେଟୱେ
 
 ଏହି ଅବଶ୍ୟକତାଟି **PayFast** ଆଡଉନ୍ (addon) ଦ୍ୱାରା ପ୍ରଦାନ କରାଯାଇଛି।
 

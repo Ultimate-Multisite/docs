@@ -3,7 +3,7 @@ title: Habilidades conscientes do tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Habilidades Conscientes do Tema {#theme-aware-skills}
+# Habilidades Conscientes do Tema
 
 O Superdav AI Agent v1.10.0 lanza quatro novas habilidades integradas conscientes do tema que se adaptan automáticamente ao seu tema WordPress ativo. Estas habilidades fornecen orientação e capacidades especializadas adaptadas à arquitetura e aos recursos do seu tema.
 

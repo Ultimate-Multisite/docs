@@ -4,7 +4,7 @@ title: Shaandheeye - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Shaandheeye: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Shaandheeye: wu_light_ajax_allowed_hooks
 
 Sababo amni awgood, waxaan xaddidnaa tirada actions ee loo heli karo in lagu xirmo. Shaandheeyahani wuxuu horumariyeyaasha u oggolaanayaa inay ballaariyaan liiskaas haddii loo baahdo.
 

@@ -4,7 +4,7 @@ title: Azzjoni - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Azzjoni: set_auth_cookie {#action-setauthcookie}
+# Azzjoni: set_auth_cookie
 
 Tiskatta immedjatament qabel ma tiġi ssettjata l-cookie tal-awtentikazzjoni.
 

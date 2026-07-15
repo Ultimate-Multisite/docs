@@ -3,7 +3,7 @@ title: Kunde Feedback og Fejlrapportering
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundefeedback og fejlrapportering {#customer-feedback--issue-reporting}
+# Kundefeedback og fejlrapportering
 
 Gratis AI Agent v1.5.0 introducerer et indbygget system til feedback og fejlrapportering, som lader slutbrugere markere unhelpful respons og rapportere problemer direkte fra chatgrænsefladen. Dette system inkluderer samtykkehåndtering, en automatiseret rapporteringskommando og AI-assisteret triage i baggrunden.
 

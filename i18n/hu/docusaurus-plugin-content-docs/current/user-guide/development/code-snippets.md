@@ -3,7 +3,7 @@ title: Kódrészletek
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kódrészletek a v2-höz {#code-snippets-for-v2}
+# Kódrészletek a v2-höz
 
 A **WordPress** kódrészletei alapvetően olyan műveletek végrehajtására szolgálnak, amelyekhez egyébként egy kisebb, dedikált bővítményre lenne szükség. Az ilyen kódrészleteket a WordPress egyik alapfájljába vagy sablonfájljába helyezzük el (általában a sablon functions.php fájljába), de használhatók MU pluginként is.
 

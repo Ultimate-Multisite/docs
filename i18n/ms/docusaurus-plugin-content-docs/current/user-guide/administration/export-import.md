@@ -3,7 +3,7 @@ title: Eksport & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksport & Import {#export--import}
+# Eksport & Import
 
 Ultimate Multisite 2.9.0 menambah alat **Eksport & Import** untuk tapak tunggal di bawah **Tools > Export & Import**. Gunakan alat ini apabila anda perlu membungkus satu tapak WordPress sebagai fail ZIP, memulihkan fail ZIP tersebut, atau memindahkan tapak antara pemasangan WordPress Ultimate Multisite dan tapak tunggal yang serasi.
 

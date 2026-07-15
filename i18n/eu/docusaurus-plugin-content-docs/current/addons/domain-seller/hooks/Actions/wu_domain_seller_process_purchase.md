@@ -4,7 +4,7 @@ title: Ekintza - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Ekintza: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Ekintza: wu_domain_seller_process_purchase
 
 Domeinu-erosketa checkout amaitu ondoren prozesatzen ari denean abiarazten da.
 

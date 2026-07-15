@@ -3,7 +3,7 @@ title: Soevereine Migratie Verificatie
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migratie Verificatie {#sovereign-migration-verification}
+# Sovereign Migratie Verificatie
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 bevat WP-CLI verificatiecommando's voor migraties naar soevereine tenants. Gebruik deze wanneer een tenantmigratie, SSO-bezoek of geïsoleerde installatie niet als verwacht werkt.
 

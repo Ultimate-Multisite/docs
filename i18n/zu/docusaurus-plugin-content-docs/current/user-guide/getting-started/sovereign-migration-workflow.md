@@ -3,7 +3,7 @@ title: Ukugeleza komsebenzi wokufuduka okuzimele
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Ukugeleza Komsebenzi Kokufuduka Okuzimele {#sovereign-migration-workflow}
+# Ukugeleza Komsebenzi Kokufuduka Okuzimele
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yengeza amasango okuqinisekisa ukufuduka lapho kususwa isayithi elincane elijwayelekile lifakwa kungqalasizinda yomqashi ozimele.
 

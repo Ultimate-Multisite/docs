@@ -3,7 +3,7 @@ title: Ricevere pagamenti
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ricevere pagamenti (v2) {#getting-paid-v2}
+# Ricevere pagamenti (v2)
 
 _**NOTA IMPORTANTE: Questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 

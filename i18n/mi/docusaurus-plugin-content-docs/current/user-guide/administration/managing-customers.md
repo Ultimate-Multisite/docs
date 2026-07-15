@@ -3,7 +3,7 @@ title: Kaitiakitanga o ngā mea wāhi
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kia Whakawāhi Kōrero (Managing Customers) {#managing-customers}
+# Kia Whakawāhi Kōrero (Managing Customers)
 
 Ko te puta mai o te puta mai o te **Customers** he whakaatu i te litanga o ngā anggota e whai whakamaoritanga ana i tō whenua. Ko tēnei puta mai e whakaatu i whakamohana mārama o te mea, email address, wā o te whakamoti i runga i te wāhi (last login), me te link **whakaahua ki** (switch to) e kitea i ahau he tino administrator o te subsite o te mea.
 

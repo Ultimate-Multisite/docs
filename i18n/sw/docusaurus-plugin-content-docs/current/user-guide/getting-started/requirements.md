@@ -3,7 +3,7 @@ title: Mahitaji
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mahitaji ya Ultimate Multisite {#ultimate-multisite-requirements}
+# Mahitaji ya Ultimate Multisite
 
 Jambo la kwanza unaloweza kujiuliza kabla ya kununua Ultimate Multisite ni mahitaji gani yanahitajika ili kuendesha plugin yetu. Kwa bahati nzuri, kuna mahitaji machache tu ya msingi ya kuendesha Ultimate Multisite: **jina la domain**, **mtoaji mzuri wa hosting** na usakinishaji wa WordPress **Multisite**. Hiyo ndiyo yote unayohitaji!
 

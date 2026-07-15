@@ -3,7 +3,7 @@ title: Formuloj de pagado
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms estas facila kaj fleksabla maniero eksperimenti por diversaj approcioj pri provi konverti novajn klientojn.
 

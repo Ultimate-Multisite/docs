@@ -3,7 +3,7 @@ title: O‘zgarishlar jurnali
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# O‘zgarishlar jurnali {#changelog}
+# O‘zgarishlar jurnali
 
 ## 1.18.0 — 2026-06-29 da chiqarildi {#1180--released-on-2026-06-29}
 

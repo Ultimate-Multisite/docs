@@ -3,7 +3,7 @@ title: Domain Məhsulları və Qiymətləndirmə
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domen Məhsulları və Qiymətləndirmə {#domain-products-and-pricing}
+# Domen Məhsulları və Qiymətləndirmə
 
 Domen məhsulları qiymətləndirməni, TLD-ləri, WHOIS məxfiliyətini və provayder seçimini idarə etməyiniz yoludur. Hər bir domen məhsulu, əlavə bir **Domain Settings** (Domen Ayarları) tabı olan standart bir Multisite Ultimate məhsuludur.
 

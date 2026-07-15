@@ -4,7 +4,7 @@ title: الإجراء - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# الإجراء: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# الإجراء: wu_magic_link_invalid_token
 
 يتم إطلاقه عندما يُواجه رمز رابط سحري غير صالح.
 

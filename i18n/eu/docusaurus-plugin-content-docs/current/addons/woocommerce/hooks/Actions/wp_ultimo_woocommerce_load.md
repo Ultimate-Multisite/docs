@@ -4,7 +4,7 @@ title: Ekintza - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# Ekintza: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# Ekintza: wp_ultimo_woocommerce_load
 
 Add-on mendekotasun guztiak kargatu ondoren abiarazten da.
 

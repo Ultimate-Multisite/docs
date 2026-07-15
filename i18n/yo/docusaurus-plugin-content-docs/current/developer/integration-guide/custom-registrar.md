@@ -3,7 +3,7 @@ title: Ṣíṣe Ìṣepọ̀ Aláforúkọsílẹ̀ Àkànṣe
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ṣíṣe Àkópọ̀ Registrar Àdáṣe {#building-a-custom-registrar-integration}
+# Ṣíṣe Àkópọ̀ Registrar Àdáṣe
 
 Addon Domain Seller ń lo àpẹẹrẹ **Integration Registry**. Registrar kọ̀ọ̀kan jẹ́ class PHP kan tí ó ṣe ìmúlò `Domain_Selling_Capability` tí ó sì forúkọ sílẹ̀ fúnra rẹ̀ nípasẹ̀ action hook `wu_domain_seller_register_capabilities`.
 

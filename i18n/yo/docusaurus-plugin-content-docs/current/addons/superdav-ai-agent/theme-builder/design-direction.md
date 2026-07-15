@@ -3,7 +3,7 @@ title: Ìtọ́sọ́nà Àpẹrẹ
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Ìtọ́sọ́nà Àpẹrẹ {#design-direction}
+# Ìtọ́sọ́nà Àpẹrẹ
 
 Ìgbésẹ̀ **Ìtọ́sọ́nà Àpẹrẹ** jẹ́ kí o ṣàgbéyẹ̀wò, túnṣe, kí o sì parí àpẹrẹ ojú-ìwòye theme rẹ kí Theme Builder tó dá theme pípé náà jáde.
 

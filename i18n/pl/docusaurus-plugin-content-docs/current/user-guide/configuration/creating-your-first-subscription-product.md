@@ -3,7 +3,7 @@ title: Tworzenie pierwszego produktu subskrypcyjnego
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Tworzenie pierwszego produktu subskrypcyjnego (v2) {#creating-your-first-subscription-product-v2}
+# Tworzenie pierwszego produktu subskrypcyjnego (v2)
 
 _**WAŻNA UWAGA: Ten artykuł jest przeznaczony wyłącznie dla użytkowników Ultimate Multisite w wersji 2.x. Jeśli używasz wersji 1.x,**_ **_**zobacz ten artykuł**_**.
 

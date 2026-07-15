@@ -3,7 +3,7 @@ title: Bestuur van Betalings en Fakture
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Bestuur van Betalings en Fakture {#managing-payments-and-invoices}
+# Bestuur van Betalings en Fakture
 
 ## Betalingsinstellings {#payment-settings}
 

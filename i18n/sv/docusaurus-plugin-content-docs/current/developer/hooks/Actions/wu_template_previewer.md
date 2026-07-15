@@ -4,7 +4,7 @@ title: Action - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 Körs när man befinner sig i kontexten för mallförhandsgranskaren.
 

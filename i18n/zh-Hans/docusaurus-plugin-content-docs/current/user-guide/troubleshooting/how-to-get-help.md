@@ -3,7 +3,7 @@ title: 如何获取帮助
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# 如何获得帮助 {#how-to-get-help}
+# 如何获得帮助
 
 您已获得有效的 License key，并且随之获得了我们团队的支持，以帮助您在设置 Ultimate Multisite 期间解决可能遇到的问题。
 

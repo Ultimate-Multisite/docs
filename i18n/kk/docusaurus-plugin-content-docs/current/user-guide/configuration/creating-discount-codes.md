@@ -3,7 +3,7 @@ title: Купон кодтарын жасау
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Скидка Коды Оздау (v2) {#creating-discount-codes-v2}
+# Скидка Коды Оздау (v2)
 
 _**МАҢЫЗДЫ ЕТІНДІ: Бұл мақала Ultimate Multisite 2.x нұсқасына қатысты.**_
 

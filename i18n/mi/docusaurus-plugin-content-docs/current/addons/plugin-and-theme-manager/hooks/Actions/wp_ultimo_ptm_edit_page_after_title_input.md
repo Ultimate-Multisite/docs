@@ -4,7 +4,7 @@ title: Mahi - wp_ultimo_ptm_edit_page_after_title_input
 sidebar_label: wp_ultimo_ptm_edit_page_after_title_input
 _i18n_hash: 7a4980304b0ebf019e3d4044eb566adc
 ---
-# Mahi: wp_ultimo_ptm_edit_page_after_title_input {#action-wpultimoptmeditpageaftertitleinput}
+# Mahi: wp_ultimo_ptm_edit_page_after_title_input
 
 Tukua ngā kaiwhakawhanake plugin kia tāpiri mōhiohio anō ki raro iho i te tāuru kuputuhi
 

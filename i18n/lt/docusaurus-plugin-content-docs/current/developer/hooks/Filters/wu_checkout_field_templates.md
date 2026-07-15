@@ -4,7 +4,7 @@ title: Filtras - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filtras: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filtras: wu_checkout_field_templates
 
 Mūsų API, skirtos pridėti naujus laukų šablonus, jungiasi čia.
 

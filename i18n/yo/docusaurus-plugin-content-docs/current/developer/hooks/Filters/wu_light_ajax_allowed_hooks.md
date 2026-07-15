@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Àlẹmọ: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Àlẹmọ: wu_light_ajax_allowed_hooks
 
 Fun àwọn ìdí ààbò, a dín iye àwọn action tí ó wà fún hook sí kù. Àlẹmọ yìí gba àwọn developer láàyè láti fa àtòkọ yẹn gùn bí ó bá ṣe pàtàkì.
 

@@ -4,7 +4,7 @@ title: Akcija - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Neki plugini spremit će URL prije nego što je mapiranje bilo aktivno ili će izgraditi URL-ove na drukčiji način koji nije uključen u gore navedene filtere.
 

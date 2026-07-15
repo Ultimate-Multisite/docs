@@ -3,7 +3,7 @@ title: Nyo aka aka aka na Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Register an account via Zapier {#event-register-an-account-via-zapier}
+# Event: Register an account via Zapier
 
 Na ọrịre [Integrating Ultimate Multisite with Zapier](zapier.md), anyị gosi ya na ị chọrọ jiri Zapier do gụny ihe ndị dị iche iche n'Ultimate Multisite dựa ọkụziri (triggers) na ihe ndị bụ events. Na ọrịre a, anyị ga-arị gosi gị ahụ ka ị chụrụ ihe ndị ọrụ ọzọ (3rd party applications). Anyị ga-ri jiri Google Sheets dịka ihe na-agbanwe data (source of data) ma anyị ga-anọchịrị mme information ahụ n'Ultimate Multisite do gụny aka.
 

@@ -3,7 +3,7 @@ title: CyberPanel 集成
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel 集成 {#cyberpanel-integration}
+# CyberPanel 集成
 
 本指南解释了如何配置 Ultimate Multisite CyberPanel 集成，以便网络中映射的域名能够自动作为 CyberPanel 中的虚拟主机添加（和删除），并可选地通过 Let's Encrypt 自动配置 SSL 证书。
 

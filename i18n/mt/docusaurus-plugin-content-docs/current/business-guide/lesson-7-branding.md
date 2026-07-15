@@ -3,7 +3,7 @@ title: 'Lezzjoni 7: Agħmlu Tiegħek'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lezzjoni 7: Nagħmluha Tiegħek {#lesson-7-making-it-yours}
+# Lezzjoni 7: Nagħmluha Tiegħek
 
 Il-klijenti tiegħek qatt m'għandhom iħossu li qed jużaw "xi plugin ta' WordPress." Għandhom iħossu li qed jużaw FitSite -- pjattaforma mibnija għall-industrija tagħhom. Din il-lezzjoni tkopri l-immarkar tad-ditta, il-white-labeling, u kif tagħmel il-pjattaforma tħossha bħal prodott.
 

@@ -3,7 +3,7 @@ title: Closte אינטעגראַציע
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte אינטעגראַציע {#closte-integration}
+# Closte אינטעגראַציע
 
 ## איבערבליק {#overview}
 Closte איז אַ פאַרוואַלטעטע WordPress האָסטינג־פּלאַטפֿאָרמע געבויט אויף Google Cloud אינפֿראַסטרוקטור. די אינטעגראַציע דערמעגלעכט אויטאָמאַטישע דאָמיין־סינכראָניזאַציע און SSL סערטיפיקאַט־פאַרוואַלטונג צווישן Ultimate Multisite און Closte.

@@ -4,7 +4,7 @@ title: 필터 - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# 필터: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# 필터: wu_password_require_uppercase
 
 필터는 비밀번호에 대문자 사용을 요구할지 여부를 결정합니다.
 

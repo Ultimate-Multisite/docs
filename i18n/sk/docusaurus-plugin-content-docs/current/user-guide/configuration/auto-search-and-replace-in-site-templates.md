@@ -3,7 +3,7 @@ title: Automatické vyhľadávanie a nahradenie v šablónach webových stránok
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatické vyhľadávanie a nahradenie v šablónach stránok (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatické vyhľadávanie a nahradenie v šablónach stránok (v2)
 
 _**Tento tutorial vyžaduje WP UItimo verzii 2.x.**_
 

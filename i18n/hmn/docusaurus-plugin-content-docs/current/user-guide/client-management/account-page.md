@@ -3,7 +3,7 @@ title: Pej Qhia Lub Neeg
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# न्ने क्लाइंटको खातीໜ້າ (v2) {#your-clients-account-page-v2}
+# न्ने क्लाइंटको खातीໜ້າ (v2)
 
 _**ສຳຄັນໝາຍເຫດ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite version 2.x.**_
 

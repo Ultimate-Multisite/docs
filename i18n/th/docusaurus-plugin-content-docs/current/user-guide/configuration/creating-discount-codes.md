@@ -3,7 +3,7 @@ title: การสร้างรหัสส่วนลด
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# การสร้างรหัสส่วนลด (v2) {#creating-discount-codes-v2}
+# การสร้างรหัสส่วนลด (v2)
 
 _**หมายเหตุสำคัญ: บทความนี้อ้างอิงถึง Ultimate Multisite เวอร์ชัน 2.x**_
 

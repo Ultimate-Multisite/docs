@@ -3,9 +3,9 @@ title: Addon-sjabloon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Sjabloon {#addon-template}
+# Addon Sjabloon
 
-{{ADDON_DESCRIPTION}}
+Addon-sjabloon — Ultimate Multisite.
 
 ## Vereisten {#requirements}
 

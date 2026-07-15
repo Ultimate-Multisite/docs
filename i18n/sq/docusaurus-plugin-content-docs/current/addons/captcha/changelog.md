@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve të Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Ditari i ndryshimeve të Captcha {#captcha-changelog}
+# Ditari i ndryshimeve të Captcha
 
 Versioni: 1.5.0 - Lëshuar më 2026-05-22
 * E re: Kufizues shpejtësie me ndalim të plotë — numëron çdo GET dhe POST në sipërfaqet e mbrojtura me captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) dhe përgjigjet me HTTP 429, një `Retry-After` header dhe një tarpit sleep të rastësishëm (1–5s, me kufi të fortë në 15s).

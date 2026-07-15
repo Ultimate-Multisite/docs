@@ -3,7 +3,7 @@ title: Ho lula le site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exporting Site {#site-export}
+# Exporting Site
 
 Page admin ya **Site Export** e le ba leba ba administrator o le network, e fa'aopo i site ena whole network e le archive e le mafai fa'aopo mo migration, backup, pe mo work e le fa'aopo.
 

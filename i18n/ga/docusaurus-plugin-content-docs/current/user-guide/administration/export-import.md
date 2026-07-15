@@ -3,7 +3,7 @@ title: Eadromadh agus Inteacht
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Céadú Ultimate Multisite 2.9.0 curte **Export & Import** (Export & Import) céadach ar an bhfoghla **Tools > Export & Import**. Use é seo nuair tá tú ag iarraidh pácaidh site WordPress atá ag cur isteach mar ZIP file, aistriú é sin ZIP, nó siúite site ó chuid eile leat ag cur isteach idir na WordPress installations Ultimate Multisite agus single-site.
 

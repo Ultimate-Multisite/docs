@@ -4,7 +4,7 @@ title: Filter - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme {#filter-authredirectscheme}
+# Filter: auth_redirect_scheme
 
 အကောင့်ဝင်ရန် ပြန်လည်ညွှန်းပေးသည့် စနစ် (authentication redirect scheme) ကို စစ်ထုတ်ပေးသည့် (filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။
 

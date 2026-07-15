@@ -3,7 +3,7 @@ title: د څو کرایه‌دارۍ ادغام
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ادغام {#multi-tenancy-integration}
+# Multi-Tenancy ادغام
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 د خپلواکو کرایه‌دارانو، د لېږد د تایید، او د کرایه‌دار د ژوندپړاو اتومات کولو لپاره څو د ادغام د تماس ټکي بدلوي.
 

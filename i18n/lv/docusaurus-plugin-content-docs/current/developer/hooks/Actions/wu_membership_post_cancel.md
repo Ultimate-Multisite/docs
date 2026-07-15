@@ -4,7 +4,7 @@ title: Darbība - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Darbība: wu_membership_post_cancel {#action-wumembershippostcancel}
+# Darbība: wu_membership_post_cancel
 
 Tiek aktivizēta pēc dalības atcelšanas.
 

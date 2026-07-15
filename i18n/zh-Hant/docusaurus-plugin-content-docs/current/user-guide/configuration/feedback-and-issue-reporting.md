@@ -3,7 +3,7 @@ title: 客戶回饋與問題報告
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# 客戶回饋與問題報告 {#customer-feedback--issue-reporting}
+# 客戶回饋與問題報告
 
 Gratis AI Agent v1.5.0 內建了回饋和問題報告系統，讓終端用戶可以直接在聊天介面中標記無幫助的回應，並報告遇到的問題。此系統包含同意管理、自動報告指令，以及後端的人工智慧輔助分類（triage）。
 

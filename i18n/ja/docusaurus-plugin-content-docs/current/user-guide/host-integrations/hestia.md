@@ -3,7 +3,7 @@ title: Hestia コントロールパネル統合
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Integration {#hestia-control-panel-integration}
+# Hestia Control Panel Integration
 
 このガイドでは、Ultimate Multisite の Hestia 統合を設定し、ネットワーク内でマッピングされたドメインが自動的に Hestia の Web Domain Aliases に追加（および削除）される方法を説明します。
 

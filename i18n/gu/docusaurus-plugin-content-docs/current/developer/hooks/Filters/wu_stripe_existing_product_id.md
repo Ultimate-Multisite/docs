@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Filter: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Filter: wu_stripe_existing_product_id
 
 આ ફિલ્ટર જે પ્રોડક્ટની ID તપાસવાની છે તે નક્કી કરે છે. જો આ ID હાજર હોય, તો નવું સબ્સ્ક્રિપ્શન આ પ્રોડક્ટનો ઉપયોગ કરશે.
 

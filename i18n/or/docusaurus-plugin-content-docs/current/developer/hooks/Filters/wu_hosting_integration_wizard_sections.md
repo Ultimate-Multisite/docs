@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# ଫିଲ୍ଟର: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# ଫିଲ୍ଟର: wu_hosting_integration_wizard_sections
 
 ହୋଷ୍ଟିଂ ଇଣ୍ଟିଗ୍ରେସନ୍ ସେଟଅପ୍ ପାଇଁ ୱିଜାର୍ଡ ସେକ୍ସନ୍‌ଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରେ।
 

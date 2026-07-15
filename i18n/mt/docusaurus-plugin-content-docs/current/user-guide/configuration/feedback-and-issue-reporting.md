@@ -3,7 +3,7 @@ title: Feedback tal-klijenti u rapport tal-problemi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback tal-Użu u Problemi {#customer-feedback--issue-reporting}
+# Feedback tal-Użu u Problemi
 
 Gratis AI Agent v1.5.0 jiddeja sistema integrat għall-feedback u riport tal-problemi li jippermettix l-utenti finali li segnu risposte mhux utli u riportaw problemi dirett minn l-interface tal-chat. Dan is-sistema inkludi xogħol tal-ġestjoni tal-konsens (consent management), komandu ta riport automatiku, u triage assistiti mill-AI fuq il-backend.
 

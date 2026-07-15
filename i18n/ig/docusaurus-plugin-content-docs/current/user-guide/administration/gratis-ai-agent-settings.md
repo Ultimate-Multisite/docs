@@ -3,7 +3,7 @@ title: Ntọala Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Nhazi Gratis AI Agent {#gratis-ai-agent-settings}
+# Nhazi Gratis AI Agent
 
 Ihuenyo **Settings → Advanced** na Gratis AI Agent na-enye nhazi ọkwa onye nchịkwa maka njikọta backend. Peeji a na-akọwa iziga feedback n’ihu, igodo ndị na-enye ọchụchọ, nhazi ọrụ Superdav a na-elekọta, njikwa Google Calendar, nhazi TextBee SMS, na ọkọlọtọ njirimara gbasara netwọkụ niile.
 

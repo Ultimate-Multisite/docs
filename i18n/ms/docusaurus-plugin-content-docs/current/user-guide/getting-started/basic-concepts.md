@@ -3,7 +3,7 @@ title: Konsep Asas
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Konsep Asas {#basic-concepts}
+# Konsep Asas
 
 Bagi pengguna baharu WordPress Multisite dan mereka yang baru mula menggunakan Ultimate Multisite, mungkin terdapat banyak istilah dan frasa baharu yang perlu dipelajari pada awalnya. Mempelajari istilah ini adalah penting kerana anda perlu memahami platform dan cara keseluruhannya berfungsi.
 

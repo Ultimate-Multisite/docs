@@ -3,7 +3,7 @@ title: 주권 임차인 운영
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# 주권 테넌트 운영 {#sovereign-tenant-operations}
+# 주권 테넌트 운영
 
 Ultimate Multisite 1.2.0 버전에서는 네트워크 관리자가 볼 수 있지만 자체 데이터베이스, 파일 시스템 루트 및 라우팅 컨텍스트를 사용하는 서브사이트(sovereign tenants)를 위한 운영 도구를 추가했습니다.
 

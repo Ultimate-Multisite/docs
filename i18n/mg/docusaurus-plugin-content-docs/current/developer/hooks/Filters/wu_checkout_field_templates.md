@@ -4,7 +4,7 @@ title: Sivana - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Sivana: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Sivana: wu_checkout_field_templates
 
 Ny APIs anay hanampiana môdely saha vaovao dia mifandray eto.
 

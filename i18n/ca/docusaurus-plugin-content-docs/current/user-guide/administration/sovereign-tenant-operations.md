@@ -3,7 +3,7 @@ title: Operacions de lloguer soberan
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operacions de Tenant Soberan {#sovereign-tenant-operations}
+# Operacions de Tenant Soberan
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 afixant eines operacionals per als tenants soberans: subsits que funcionen amb la seva pròpia base de dades (database), sistema de fitxers (filesystem root) i context de ruteament, mantenint-se visibles des del administrador de la xarxa.
 

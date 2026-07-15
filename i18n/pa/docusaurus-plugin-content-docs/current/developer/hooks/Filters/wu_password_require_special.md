@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 ਇਹ ਫਿਲਟਰ ਨਿਰਧਾਰਤ ਕਰਦਾ ਹੈ ਕਿ ਪਾਸਵਰਡ ਵਿੱਚ ਸਪੈਸ਼ਲ ਕੈਰੈਕਟਰ (special characters) ਲਾਜ਼ਮੀ ਹਨ ਜਾਂ ਨਹੀਂ।
 

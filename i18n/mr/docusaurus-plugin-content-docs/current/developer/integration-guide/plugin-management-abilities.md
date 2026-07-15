@@ -3,7 +3,7 @@ title: प्लगइन व्यवस्थापन क्षमता
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities (प्लगइन व्यवस्थापन क्षमता) {#plugin-management-abilities}
+# Plugin Management Abilities (प्लगइन व्यवस्थापन क्षमता)
 
 Gratis AI Agent v1.5.0 मध्ये **७ प्लगइन व्यवस्थापन क्षमता** (plugin management abilities) आहेत, ज्या AI assistant संभाषणादरम्यान वापरू शकतो. या क्षमता [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) द्वारे स्थापित केलेल्या WordPress प्लगइन्सवर प्रोग्रामॅटिक नियंत्रण (programmatic control) प्रदान करतात.
 

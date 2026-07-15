@@ -3,7 +3,7 @@ title: 'Darasi na 11: Neman Abokan Ciniki'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Darasi na 11: Neman Abokan Ciniki {#lesson-11-finding-customers}
+# Darasi na 11: Neman Abokan Ciniki
 
 Babban dandali ba tare da abokan ciniki ba abin sha'awa ne kawai. Wannan darasin yana bayani kan yadda ake samun abokan ciniki a cikin takamaiman fanni -- dabarun da ke aiki musamman saboda ka mayar da hankali kan masana'antu guda ɗaya.
 

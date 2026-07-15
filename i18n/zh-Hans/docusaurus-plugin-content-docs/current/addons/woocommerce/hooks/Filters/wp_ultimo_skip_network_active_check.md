@@ -4,7 +4,7 @@ title: 过滤器 - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# 过滤器: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# 过滤器: wp_ultimo_skip_network_active_check
 
 允许开发者跳过网络激活检查。
 

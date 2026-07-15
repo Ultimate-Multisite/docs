@@ -4,7 +4,7 @@ title: Filtry - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filtr: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Filtr: wu_get_membership_allowed_forms
 
 Pozwala deweloperom dodać nowe slugi formularzy, aby ominąć to zachowanie.
 

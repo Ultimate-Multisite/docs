@@ -4,7 +4,7 @@ title: Филтр - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Филтр: wu_post_default_status {#filter-wupostdefaultstatus}
+# Филтр: wu_post_default_status
 
 Маълумоти объектро пеш аз нигоҳдорӣ дар пойгоҳи додаҳо филтр мекунад.
 

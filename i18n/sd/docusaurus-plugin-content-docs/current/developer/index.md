@@ -3,7 +3,7 @@ title: ڊولپر دستاويز
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Developer دستاويز {#developer-documentation}
+# Developer دستاويز
 
 هي رهنمائي ڊولپرز کي Ultimate Multisite سان ضم ڪرڻ، ان کي وڌائڻ، يا ان لاءِ addons ٺاهڻ لاءِ گهربل سڀ ڪجهه مهيا ڪري ٿي. Ultimate Multisite هڪ WordPress Multisite نيٽ ورڪ کي Website-as-a-Service (WaaS) پليٽ فارم ۾ تبديل ڪري ٿو.
 

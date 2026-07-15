@@ -4,7 +4,7 @@ title: فیلتر - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# فیلتر: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# فیلتر: wu_page_get_title_links
 
 این فیلتر به توسعه‌دهندگان پلاگین و خود ما اجازه می‌دهد تا لینک‌های عملیاتی (action links) را به صفحات ویرایش خود اضافه کنند.
 

@@ -3,9 +3,9 @@ title: Нэмэлтийн загвар
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Нэмэлтийн загвар {#addon-template}
+# Нэмэлтийн загвар
 
-{{ADDON_DESCRIPTION}}
+Нэмэлтийн загвар — Ultimate Multisite.
 
 ## Шаардлагууд {#requirements}
 

@@ -3,7 +3,7 @@ title: Hoetsoalo la Mofuta a Tlhaloso
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operations tsa Sovereign Tenant {#sovereign-tenant-operations}
+# Operations tsa Sovereign Tenant
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 e ntse le litlhahlo tsa boitshwaro (sovereign tenants) di dira tsebo ea ho operatea: subsites tse di ba le database, root ya filesystem, le context ea routing ea ho ruta ka tsela ea bona, mme di tla ba le ho bonahang ho ntle ha e le admin ea rnete.
 

@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Whakawhiti i Cloudways {#cloudways-integration}
+# Whakawhiti i Cloudways
 
 ## Ōrero {#overview}
 Cloudways heke whakamahi (managed cloud hosting platform) he tino whaiora ana, e hiahia atu ki koe hei whakahaere i ngā wāhi WordPress mo mga ao hēke (cloud providers) ā-au pēnei i DigitalOcean, AWS, Google Cloud, me te pai. Ko te whakawhiti (integration) ko e hiahia atu ki te whakamahi automatic domain syncing me te whakamaoritanga SSL certificate management i antara Ultimate Multisite me Cloudways.

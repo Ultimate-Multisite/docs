@@ -3,7 +3,7 @@ title: گزارش تغییرات PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# گزارش تغییرات PayFast {#payfast-changelog}
+# گزارش تغییرات PayFast
 
 نسخه: 1.0.2 - تاریخ انتشار 2025-09-28
 

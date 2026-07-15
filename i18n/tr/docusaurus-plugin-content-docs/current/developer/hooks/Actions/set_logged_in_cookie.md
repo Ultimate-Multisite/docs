@@ -4,7 +4,7 @@ title: Eylem - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Aksiyon: set_logged_in_cookie {#action-setloggedincookie}
+# Aksiyon: set_logged_in_cookie
 
 Oturum açmış kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 

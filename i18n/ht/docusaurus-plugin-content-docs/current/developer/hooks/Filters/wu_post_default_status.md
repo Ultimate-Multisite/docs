@@ -4,7 +4,7 @@ title: Filtre - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filtè: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filtè: wu_post_default_status
 
 Filtre done objè a anvan yo estoke li nan baz done a.
 

@@ -4,7 +4,7 @@ title: การดำเนินการ - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Action: wu_after_switch_template
 
 อนุญาตให้ผู้พัฒนาปลั๊กอินสามารถเรียกใช้ฟังก์ชัน (hook functions) หลังจากที่ผู้ใช้หรือผู้ดูแลระบบระดับสูง (super admin) เปลี่ยนเทมเพลตของเว็บไซต์
 

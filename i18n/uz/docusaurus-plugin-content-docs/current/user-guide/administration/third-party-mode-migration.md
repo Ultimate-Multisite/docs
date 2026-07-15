@@ -3,7 +3,7 @@ title: Uchinchi tomon rejimiga ko'chish
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Uchinchi Uchun Modda Rejistratsiyasi (Third-Party Mode Migration) {#third-party-mode-migration}
+# Uchinchi Uchun Modda Rejistratsiyasi (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 orqida uchinchi tomon imkoniyatlari qanday boshqarilishi o'zgardi. **Uchinchi tomon rejimi endi avtomatik ("auto") deb belgilangan**, bu WordPress 7.0+ da qo'lda sozlash talab qilmasdan, nativ WordPress Abilities API integratsiyasini faollashtirish imkonini beradi.
 

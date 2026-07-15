@@ -3,7 +3,7 @@ title: Synlighed af funktioner
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Tilgængelighedsvisibilitet (Ability Visibility) {#ability-visibility}
+# Tilgængelighedsvisibilitet (Ability Visibility)
 
 Superdav AI Agent v1.12.0 introducerer **Tilgængelighedsvisibilitets** kontroller, som styrer, hvilke overflader der viser hver evne. Dette giver administrator mulighed for at finjustere, hvilke agentkapaciteter der er tilgængelige via REST API'er, MCP-servere, WooCommerce-integrationer og andre interfaces.
 

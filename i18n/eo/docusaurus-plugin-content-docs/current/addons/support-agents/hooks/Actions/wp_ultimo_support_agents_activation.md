@@ -4,7 +4,7 @@ title: Ago - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Ago: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Ago: wp_ultimo_support_agents_activation
 
 Lasu aliajn partojn de la plugin alligi siajn rutinojn por aktivigo
 

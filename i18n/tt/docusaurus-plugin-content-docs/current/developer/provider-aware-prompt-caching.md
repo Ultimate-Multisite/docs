@@ -3,7 +3,7 @@ title: Провайдерны исәпкә алган промпт кэшлау
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Провайдерны исәпкә алган Prompt Caching {#provider-aware-prompt-caching}
+# Провайдерны исәпкә алган Prompt Caching
 
 Superdav AI Agent v1.12.0 **провайдерны исәпкә алган prompt caching** кертә; ул төрле LLM провайдерлары арасында promptларны кэшлап, API чыгымнарын һәм тоткарлыкны оптимальләштерә. Һәр провайдерның кэшлау механизмнары һәм көйләнмәләре төрле.
 

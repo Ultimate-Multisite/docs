@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_core_installer_install_sunrise
 sidebar_label: wu_core_installer_install_sunrise
 _i18n_hash: 9750f0fbfe9f02249e4e1d17e585bdb6
 ---
-# Muyunguruzi: wu_core_installer_install_sunrise {#filter-wucoreinstallerinstallsunrise}
+# Muyunguruzi: wu_core_installer_install_sunrise
 
 Emerera abatanga hosting gushyiraho constant mu buryo butandukanye.
 

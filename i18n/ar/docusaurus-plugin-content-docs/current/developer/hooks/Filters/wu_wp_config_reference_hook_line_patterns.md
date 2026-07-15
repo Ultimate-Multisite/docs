@@ -4,7 +4,7 @@ title: تصفية - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# عامل التصفية: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# عامل التصفية: wu_wp_config_reference_hook_line_patterns
 
 نحن نتحقق من ثلاث أنماط عند محاولة معرفة أين يمكننا حقن ثوابتنا:
 

@@ -3,7 +3,7 @@ title: Admin Page Creator Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin Page Creator Değişiklik Günlüğü {#admin-page-creator-changelog}
+# Admin Page Creator Değişiklik Günlüğü
 
 ### Version 1.9.0 - 2026-01-18 tarihinde yayınlandı {#version-190---released-on-2026-01-18}
 

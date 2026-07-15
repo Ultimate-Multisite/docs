@@ -3,7 +3,7 @@ title: Àwọn Agbára Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Àwọn Agbára Theme Builder: Scaffold àti Mu Block Themes ṣiṣẹ {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Àwọn Agbára Theme Builder: Scaffold àti Mu Block Themes ṣiṣẹ
 
 Superdav AI Agent v1.12.0 ṣàgbékalẹ̀ agbára méjì tó lágbára tó jẹ́ kí o ṣe àti gbé àwọn block themes àdáni jáde taara láti inú ojú-ìbánisọ̀rọ̀ chat.
 

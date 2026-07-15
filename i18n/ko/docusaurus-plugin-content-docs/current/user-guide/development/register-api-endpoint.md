@@ -3,7 +3,7 @@ title: API 엔드포인트 등록
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite 등록 API 엔드포인트 {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite 등록 API 엔드포인트
 
 이 튜토리얼에서는 Ultimate Multisite /register API 엔드포인트를 사용하여 네트워크에 새로운 고객을 온보딩하는 전체 프로세스를 만들고, Zapier를 사용해 이를 수행하는 방법을 배웁니다.
 

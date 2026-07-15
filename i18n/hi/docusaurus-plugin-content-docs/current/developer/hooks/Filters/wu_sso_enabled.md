@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# फ़िल्टर: wu_sso_enabled {#filter-wussoenabled}
+# फ़िल्टर: wu_sso_enabled
 
 क्रॉस-डोमेन सिंगल-साइन-ऑन (single-sign-on) की क्षमता को सक्षम/अक्षम करना।
 

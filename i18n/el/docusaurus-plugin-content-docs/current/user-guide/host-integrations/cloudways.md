@@ -3,7 +3,7 @@ title: Ενσωμάτωση Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ενσωμάτωση Cloudways {#cloudways-integration}
+# Ενσωμάτωση Cloudways
 
 ## Επισκόπηση {#overview}
 Το Cloudways είναι μια διαχειριζόμενη πλατφόρμα cloud hosting που σας επιτρέπει να αναπτύσσετε WordPress ιστότοπους σε διάφορους παρόχους cloud όπως DigitalOcean, AWS, Google Cloud και άλλα. Αυτή η ενσωμάτωση ενεργοποιεί τον αυτόματο συγχρονισμό domain και τη διαχείριση πιστοποιητικών SSL μεταξύ Ultimate Multisite και Cloudways.

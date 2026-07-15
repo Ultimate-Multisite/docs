@@ -3,7 +3,7 @@ title: 'Leciono 3: Agordi vian reton'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Leciono 3: Agordi Vian Reton {#lesson-3-setting-up-your-network}
+# Leciono 3: Agordi Vian Reton
 
 Tempo konstrui. En ĉi tiu leciono vi instalos Ultimate Multisite kaj agordos la fundamenton de la FitSite-reto. Ĉiu decido ĉi tie estas farita kun la fitness-niĉo en menso.
 

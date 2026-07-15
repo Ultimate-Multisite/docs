@@ -4,7 +4,7 @@ title: Fal - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Ficil: wu_page_after_render {#action-wupageafterrender}
+# Ficil: wu_page_after_render
 
 U oggolow horumariyeyaasha plugin inay ku daraan nuxur dheeraad ah ka dib marka aan daabacno bogga
 

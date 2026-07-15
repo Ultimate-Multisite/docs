@@ -4,7 +4,7 @@ title: 动作 - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# 动作: wu_domain_mapping_load {#action-wudomainmappingload}
+# 动作: wu_domain_mapping_load
 
 在我们的核心域映射加载后触发
 

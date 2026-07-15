@@ -3,7 +3,7 @@ title: Keperluan
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Keperluan Ultimate Multisite {#ultimate-multisite-requirements}
+# Keperluan Ultimate Multisite
 
 Perkara pertama yang mungkin anda tanyakan sebelum membeli Ultimate Multisite ialah apakah keperluan untuk menjalankan plugin kami. Nasib baik, hanya ada beberapa keperluan asas untuk menjalankan Ultimate Multisite: **nama domain**, **penyedia hosting** yang baik dan pemasangan WordPress **Multisite**. Itu sahaja yang anda perlukan!
 

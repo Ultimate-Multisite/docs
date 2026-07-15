@@ -3,7 +3,7 @@ title: Hukumat migratsiyasini tasdiqlash
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Монархиявий міграція перевірка {#sovereign-migration-verification}
+# Монархиявий міграція перевірка
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 включає WP-CLI підтвердження команди для міграцій суверенних орендарів (sovereign tenant migrations). Використовуйте їх, коли міграція орендаря, візит SSO або ізольована установка не працюють так, як очікувалося.
 

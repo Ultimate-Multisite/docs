@@ -3,7 +3,7 @@ title: Tích hợp Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Tích hợp Cloudflare {#cloudflare-integration}
+# Tích hợp Cloudflare
 
 ## Tổng quan {#overview}
 Cloudflare là một mạng phân phối nội dung (CDN) và nhà cung cấp bảo mật hàng đầu giúp bảo vệ và tăng tốc các trang web. Tích hợp này cho phép quản lý tên miền tự động giữa Ultimate Multisite và Cloudflare, đặc biệt cho các cài đặt multisite dạng tên miền phụ.

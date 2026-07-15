@@ -3,7 +3,7 @@ title: Izolacija za več najemnikov
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolacija za več različic (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Izolacija za več različic (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 podpira izolacijo baze podatkov in datoteke na podpodpoddelih (subsite) za suverene najemnike. To ohranja podatke najemnika ločeno, hkrati pa ohranja konfiguracijo omrežja, računovodstvo in administracijo.
 

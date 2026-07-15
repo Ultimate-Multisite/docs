@@ -3,7 +3,7 @@ title: అవసరాలు
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite అవసరాలు {#ultimate-multisite-requirements}
+# Ultimate Multisite అవసరాలు
 
 Ultimate Multisite కొనుగోలు చేయడానికి ముందు మీరు మొదట అడిగే ప్రశ్న ఏమిటంటే - మా plugin నడపడానికి ఏమేమి అవసరం? అదృష్టవశాత్తు, Ultimate Multisite నడపడానికి కొన్ని ప్రాథమిక అవసరాలు మాత్రమే ఉన్నాయి: ఒక **domain name**, మంచి **hosting provider** మరియు WordPress **Multisite** installation. ఇంతే మీకు కావలసింది!
 

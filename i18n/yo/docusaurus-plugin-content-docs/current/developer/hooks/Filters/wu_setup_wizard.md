@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Àlẹmọ: wu_setup_wizard {#filter-wusetupwizard}
+# Àlẹmọ: wu_setup_wizard
 
 Gba àwọn olupilẹ̀ṣẹ́ láàyè láti ṣàfikún àwọn ìgbésẹ̀ setup wizard míì.
 

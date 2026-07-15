@@ -3,7 +3,7 @@ title: Cloudflare Integratsiyasi
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Entegratsiyasi {#cloudflare-integration}
+# Cloudflare Entegratsiyasi
 
 ## Umumiy Ko'rinish {#overview}
 Cloudflare bu veb-saytlarini himoya qilish va tezlashtirishga yordam beradigan yetakchi kontent yetkazib berish tarmog'i (CDN) va xavfsizlik provayderidir. Bu integratsiya Ultimate Multisite va Cloudflare o'rtasida avtomatik domen boshqaruvini, ayniqsa sous-domen multisite o'rnatmalar uchun imkon beradi.

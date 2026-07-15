@@ -3,7 +3,7 @@ title: Ultimate Multisite-نى قۇرۇش
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite نىڭ قۇرۇلۇشى {#installing-ultimate-multisite}
+# Ultimate Multisite نىڭ قۇرۇلۇشى
 
 :::note
 بۇ يېتەكچىدە سىز WordPress Multisite نىڭ ئالدىنلا قۇرۇلغانلىقىنى بىلدۈرىدۇ. ئۇنىڭ قېتىپ قېلىشنى بىلىش ئۈچۈن، WP Beginner تەرەپىدىن تارقاق قىلىنغان [بۇ يېتەكچى](https://www.wpbeginner.com/glossary/multisite/)نى كۆرۈڭ.

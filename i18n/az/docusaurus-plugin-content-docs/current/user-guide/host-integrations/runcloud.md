@@ -3,7 +3,7 @@ title: RunCloud İntegrasiyası
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud İntegrasiyası {#runcloud-integration}
+# RunCloud İntegrasiyası
 
 ## Ümumi Məlumat {#overview}
 RunCloud, öz bulud serverlərinizdə veb tətbiqləri asanlıqla yerləşdirmə və idarə etməyə imkan verən bulud əsaslı bir server idarəetmə platformasıdır. Bu inteqrasiya Ultimate Multisite və RunCloud arasında avtomatik domen sinxronizasiyası və SSL sertifikatları idarəetməsinə imkan verir.

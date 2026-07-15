@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# ການເຊື່ອມຕໍ່ Ultimate Multisite ກັບ Zapier {#integrating-ultimate-multisite-with-zapier}
+# ການເຊື່ອມຕໍ່ Ultimate Multisite ກັບ Zapier
 
 ໃນບົດຄວາມໜຶ່ງ, ພວກເຮົາໄດ້ເວົ້າເຖິງ [Webhooks](webhooks.md) ແລະ ວິທີທີ່ມັນສາມາດນຳໃຊ້ເພື່ອເຊື່ອມຕໍ່ກັບແອັບພລິເຄຊັນຂອງພາກສ່ວນທີສາມ.
 

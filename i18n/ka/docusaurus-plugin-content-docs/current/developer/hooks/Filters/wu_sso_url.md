@@ -4,7 +4,7 @@ title: ფილტრი - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# ფილტრი: wu_sso_url {#filter-wussourl}
+# ფილტრი: wu_sso_url
 
 ფილტრავს გენერირებულ SSO URL-ებს, სანამ ისინი დაბრუნდება დომენებს შორის მომხმარებლის ქმედებებისთვის.
 

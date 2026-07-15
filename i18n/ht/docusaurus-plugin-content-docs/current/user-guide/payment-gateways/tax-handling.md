@@ -3,7 +3,7 @@ title: Jesyon taks
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Jesyon Taks {#tax-handling}
+# Jesyon Taks
 
 Ultimate Multisite gen yon modil koleksyon taks ki entegre nan plugin prensipal nou an, kidonk si ou bezwen kolekte taks sou lavant sou plan, pakè ak sèvis ou yo, ou ka fè sa fasil san ou pa bezwen enstale okenn ekstansyon.
 

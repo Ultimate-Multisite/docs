@@ -3,7 +3,7 @@ title: Luo logo-SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Luo logo-SVG {#generate-logo-svg}
+# Luo logo-SVG
 
 **Luo logo-SVG** -kyky antaa Theme Builderin luoda ja upottaa mukautettuja logo-SVG:itä suoraan WordPress-sivustollesi automaattisella nimiavaruusturvallisella puhdistuksella.
 

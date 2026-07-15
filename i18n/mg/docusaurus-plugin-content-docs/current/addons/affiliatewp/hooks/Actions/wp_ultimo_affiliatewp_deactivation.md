@@ -4,7 +4,7 @@ title: Hetsika - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Hetsika: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Hetsika: wp_ultimo_affiliatewp_deactivation
 
 Avelao ny ampahany hafa amin’ny plugin hampifandray ny fombafombany ho an’ny fanafoanana
 

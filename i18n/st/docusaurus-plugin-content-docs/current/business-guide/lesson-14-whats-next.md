@@ -3,7 +3,7 @@ title: 'Thuto 14: Ho latela eng'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Thuto 14: Ho Latela Eng {#lesson-14-what-comes-next}
+# Thuto 14: Ho Latela Eng
 
 O hahile sethala sa webosaete ya niche ho tloha qalong. FitSite e se e sebetsa, e sebeletsa di-studio tsa boikwetliso, mme e hlahisa lekeno le iphetang. Thuto ena ya ho qetela e sheba hore o ka ya kae ho tloha mona.
 

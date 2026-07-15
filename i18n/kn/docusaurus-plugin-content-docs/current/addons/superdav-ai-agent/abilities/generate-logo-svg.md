@@ -3,7 +3,7 @@ title: SVG ಲೋಗೋವನ್ನು ರಚಿಸಿ
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# ಲೋಗೋ SVG ರಚಿಸಿ (Generate Logo SVG) {#generate-logo-svg}
+# ಲೋಗೋ SVG ರಚಿಸಿ (Generate Logo SVG)
 
 **Generate Logo SVG** ಸಾಮರ್ಥ್ಯವು (ability) ಥೀಮ್ ಬಿಲ್ಡರ್‌ಗೆ ನಿಮ್ಮ WordPress ಸೈಟ್‌ಗೆ ಕಸ್ಟಮ್ ಲೋಗೋ SVG ಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತ namespace-safe ಶುದ್ಧೀಕರಣದೊಂದಿಗೆ (sanitisation) ರಚಿಸಲು ಮತ್ತು ಅಳವಡಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.
 

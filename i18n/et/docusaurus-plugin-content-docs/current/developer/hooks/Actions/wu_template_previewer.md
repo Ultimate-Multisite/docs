@@ -4,7 +4,7 @@ title: Toiming - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Tegevus: wu_template_previewer {#action-wutemplatepreviewer}
+# Tegevus: wu_template_previewer
 
 Käivitatakse malli eelvaate kontekstis.
 

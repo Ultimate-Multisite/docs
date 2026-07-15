@@ -4,7 +4,7 @@ title: Filter - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filter: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Filter: wu_get_checkout_variables
 
 Plugin developer များအနေဖြင့် checkout page ၏ pre-sets များကို filter လုပ်နိုင်ရန် ဤ hook ကို အသုံးပြုနိုင်ပါသည်။
 

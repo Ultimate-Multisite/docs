@@ -4,7 +4,7 @@ title: Hohenga - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Mahi: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Mahi: wp_ultimo_captcha_deactivation
 
 Tukua ētahi atu wāhanga o te monomai kia tāpiri i ā rātou mahi mō te whakaweto
 

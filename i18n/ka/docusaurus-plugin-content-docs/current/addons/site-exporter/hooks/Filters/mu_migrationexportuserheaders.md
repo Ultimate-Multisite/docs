@@ -4,7 +4,7 @@ title: ფილტრი - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# ფილტრი: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# ფილტრი: mu_migration/export/user/headers
 
 ფილტრავს მომხმარებლის სათაურების ნაგულისხმევ ნაკრებს ექსპორტისთვის/იმპორტისთვის.
 

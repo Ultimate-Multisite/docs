@@ -4,7 +4,7 @@ title: Sivana - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Sivana: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Sivana: wu_stripe_checkout_subscription_data
 
 Sivano ny angona Stripe Subscription. Afaka manolo ny success_url na cancel_url.
 

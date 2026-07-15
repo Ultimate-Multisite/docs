@@ -4,7 +4,7 @@ title: Lim - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Lim: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Lim: wu_page_get_title_links
 
 Tso cai rau cov neeg tsim kho qhov txuas ntxiv, thiab peb tus kheej, ntxiv cov kab txuas ua haujlwm rau peb cov nplooj kho
 

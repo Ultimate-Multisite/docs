@@ -3,7 +3,7 @@ title: Rexistro de cambios do Creador de páxinas de administración
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Rexistro de cambios de Admin Page Creator {#admin-page-creator-changelog}
+# Rexistro de cambios de Admin Page Creator
 
 ### Versión 1.9.0 - Publicada o 2026-01-18 {#version-190---released-on-2026-01-18}
 

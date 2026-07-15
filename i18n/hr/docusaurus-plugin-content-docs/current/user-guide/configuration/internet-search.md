@@ -3,7 +3,7 @@ title: Interno pretraživanje
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Pretraživanje na Internetskoj Mreži {#internet-search}
+# Internet Pretraživanje na Internetskoj Mreži
 
 Gratis AI Agent v1.5.0 dodaje mogućnost **Internet pretraživanja** koja omogućuje asistentu umjetne inteligencije da dohvati najnovije informacije s interneta tijekom razgovora. Ovo je omogućeno putem [Brave Search API](https://brave.com/search/api/) ili [Tavily API](https://tavily.com/).
 

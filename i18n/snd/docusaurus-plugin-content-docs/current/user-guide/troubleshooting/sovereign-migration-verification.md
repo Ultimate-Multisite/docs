@@ -3,7 +3,7 @@ title: ساروقي مائٽريڪشن فيريڪيڪيشن
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ سويرفين (sovereign) ليونٽس جي مائٽرنيسي لاءِ WP-CLI وريفيڪيشن ڪمنڊز شامل آهن. ان کي انهن وقت استعمال ڪريو جڏهن ڪنه ليونٽ جو مائٽرنيگ، SSO وزيت، يا الگ نصب ڪرڻ (isolated install) توقع مطابق کام نه ڪري رهيو هجي.
 

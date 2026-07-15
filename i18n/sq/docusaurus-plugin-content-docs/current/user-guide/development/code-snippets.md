@@ -3,7 +3,7 @@ title: Fragmentet e kodit
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koda Snippet për v2 {#code-snippets-for-v2}
+# Koda Snippet për v2
 
 Në thelb, kodet e snippet-eve për **WordPress** përdoren për të bërë disa veprime që mund të kërkojnë një plugin më të vogël dhe dedikuar. Të këto kode snippet-e vendosen në një nga skedat bazë ose tema (zakonisht skedat `functions.php` e temës suaj) ose mund të përdoren si MU plugin.
 

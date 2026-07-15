@@ -3,7 +3,7 @@ title: 管理頁面創建器變更日誌
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin Page Creator 更新日誌 {#admin-page-creator-changelog}
+# Admin Page Creator 更新日誌
 
 ### Version 1.9.0 - 於 2026-01-18 發布 {#version-190---released-on-2026-01-18}
 

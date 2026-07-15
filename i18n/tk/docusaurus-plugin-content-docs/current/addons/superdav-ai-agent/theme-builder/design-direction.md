@@ -3,7 +3,7 @@ title: Dizaýn ugry
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizaýn Ugry {#design-direction}
+# Dizaýn Ugry
 
 **Design Direction** ädimi, Theme Builder doly tema döretmezden öň, temaňyzyň wizual dizaýnyny gözden geçirmäge, kämilleşdirmäge we gutarnykly tassyklamaga mümkinçilik berýär.
 

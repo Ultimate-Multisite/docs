@@ -4,7 +4,7 @@ title: Acció - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aquesta funció: set_auth_cookie {#action-setauthcookie}
+# Aquesta funció: set_auth_cookie
 
 S'executa immediatament abans que es estableixi la cookie d'autenticació.
 

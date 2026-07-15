@@ -3,7 +3,7 @@ title: اي ميلون ۽ نشريات موڪلڻ
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# اي ميلون ۽ براڊڪاسٽس موڪلڻ (v2) {#sending-emails-and-broadcasts-v2}
+# اي ميلون ۽ براڊڪاسٽس موڪلڻ (v2)
 
 _**اهم نوٽ: هي مضمون Ultimate Multisite ورزن 2.x بابت آهي.**_
 

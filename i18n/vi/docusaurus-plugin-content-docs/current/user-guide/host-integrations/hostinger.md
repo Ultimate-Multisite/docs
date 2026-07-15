@@ -3,7 +3,7 @@ title: Tích hợp Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Tích hợp Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Tích hợp Hostinger (hPanel)
 
 ## Tổng quan {#overview}
 

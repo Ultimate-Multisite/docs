@@ -3,7 +3,7 @@ title: Webbplats Exporter Ändringslogg
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Ändringslogg {#site-exporter-changelog}
+# Site Exporter Ändringslogg
 
 Version: 1.0.6 - Släppt den 2026-05-11
 * Nytt: Webbplats-exporten paketerar nu en självstartande index.php, så att ZIP-filen kan installeras på en ny värd utan separat plugin-installation.

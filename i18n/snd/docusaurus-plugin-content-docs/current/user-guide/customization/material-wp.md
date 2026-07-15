@@ -3,7 +3,7 @@ title: مٹیریل وي بي
 sidebar_position: 9
 _i18n_hash: 061c5ac64accbcd64507b3bb36294523
 ---
-# مٹیریل وي بي (Material WP) {#material-wp}
+# مٹیریل وي بي (Material WP)
 
 هي هيءار **Material WP** اضافي طرفان ڏني آهي.
 

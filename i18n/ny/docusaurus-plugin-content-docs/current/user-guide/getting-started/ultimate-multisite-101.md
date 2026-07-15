@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite ndi plugin la WordPress lomwe limapangitsa kuti muli ndi ulemu wopereka WaaS kapena Websites as a Service kwa anthu. Mmodzi pano tikakhudza ndipo tikufunsa kuti Ultimate Multisite kuliwonse kutanthauza bwanji kwa bizinesi yanu ndi anthuwo. Koma pamene tikapambana ndi kupeza kuti Ultimate Multisite kuliwonse kutanthauza bwanji kwa bizinesi yanu ndi anthuwo, pali zinthu zofondera zomwe tikufunika kuyamba.
 

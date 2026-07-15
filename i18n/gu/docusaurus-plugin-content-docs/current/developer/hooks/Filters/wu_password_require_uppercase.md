@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filter: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filter: wu_password_require_uppercase
 
 આ ફિલ્ટર નક્કી કરે છે કે પાસવર્ડ્સમાં કેપિટલ અક્ષરો (uppercase letters) ની જરૂર છે કે નહીં.
 

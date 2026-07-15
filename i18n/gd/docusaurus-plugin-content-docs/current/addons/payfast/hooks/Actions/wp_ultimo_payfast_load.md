@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# Gnìomh: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# Gnìomh: wp_ultimo_payfast_load
 
 Air a phiobrachadh nuair a chaidh na h-eisimeileachdan uile a luchdadh
 

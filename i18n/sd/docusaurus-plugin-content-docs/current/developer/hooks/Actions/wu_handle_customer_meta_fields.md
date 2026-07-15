@@ -4,7 +4,7 @@ title: عمل - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# عمل: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# عمل: wu_handle_customer_meta_fields
 
 پلگ اِن ڊولپرن کي اجازت ڏيو ته جيڪڏهن کين ضرورت هجي ته ميٽا ڊيٽا مختلف طريقن سان محفوظ ڪن.
 

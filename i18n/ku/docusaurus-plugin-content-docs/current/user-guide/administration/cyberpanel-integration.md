@@ -3,7 +3,7 @@ title: یکردنەوەی CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integration-ی CyberPanel {#cyberpanel-integration}
+# Integration-ی CyberPanel
 
 این راهنما توضیح می‌دهد که چطور تنظیمات یکپارچه‌سازی Ultimate Multisite با CyberPanel را انجام دهید تا دامنه‌های نگاشت شده در شبکه شما به صورت خودکار (و با اختیاری امکان ارائه SSL خودکار از طریق Let's Encrypt) به عنوان هاست‌های مجازی در CyberPanel اضافه و حذف شوند.
 

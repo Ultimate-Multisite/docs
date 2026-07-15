@@ -3,7 +3,7 @@ title: Sistemos el. laiškų valdymas
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistemos eldo į email'us {#managing-system-emails}
+# Sistemos eldo į email'us
 
 Ultimate Multisite siunčia įvairius sisteminius el. laiškus, tokius kaip registracijos patvirtinimai, mokėjimo kvito ir narys sąskaitos pakeitimai. Jūs galite sužinoti šiuos el. laiškų šablonus, kad jie atitiktų jūsų prekės ženklą.
 

@@ -3,7 +3,7 @@ title: Asistent za postavljanje multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Asistent za postavljanje Multisite mreže {#multisite-setup-wizard}
+# Asistent za postavljanje Multisite mreže
 
 Ultimate Multisite uključuje ugrađeni asistent koji automatski pretvara standardnu instalaciju WordPress-a u WordPress Multisite mrežu. Time se eliminiše potreba za ručnim uređivanjem `wp-config.php` ili pokretanjem naredbi za bazu podataka.
 

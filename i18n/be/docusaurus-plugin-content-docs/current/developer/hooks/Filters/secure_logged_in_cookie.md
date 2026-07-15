@@ -4,7 +4,7 @@ title: Фільтр - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Фільтр: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Фільтр: secure_logged_in_cookie
 
 Вызначае, ці трэба, каб cookie ўвайшоўшы ў склад адпраўляўся толькі па HTTPS.
 

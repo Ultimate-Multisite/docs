@@ -4,7 +4,7 @@ title: فلتەر - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# پاڵێوەر: wu_post_count_statuses {#filter-wupostcountstatuses}
+# پاڵێوەر: wu_post_count_statuses
 
 ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات بگۆڕن کام دۆخی پۆست دەبێت هەژمار بکرێت. بە شێوازی پێشوەختە، پۆستە بڵاوکراوە و تایبەتەکان هەژمار دەکرێن
 

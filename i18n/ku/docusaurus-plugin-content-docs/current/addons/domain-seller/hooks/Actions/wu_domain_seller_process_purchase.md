@@ -4,7 +4,7 @@ title: Çalakî - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Çalakî: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Çalakî: wu_domain_seller_process_purchase
 
 Dema ku kirîna domainekê piştî qedandina kirînê tê pêvajokirin, tê şewitandin.
 

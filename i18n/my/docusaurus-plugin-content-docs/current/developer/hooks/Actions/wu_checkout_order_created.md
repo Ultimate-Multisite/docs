@@ -4,7 +4,7 @@ title: Action - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Action: wu_checkout_order_created
 
 ငွေရှင်းမှုမှာယူမှု (checkout order) ကို အပြည့်အစုံ စုစည်းပြီးသည့်အခါ ဤ Action သည် အလုပ်လုပ်ပါသည်။
 

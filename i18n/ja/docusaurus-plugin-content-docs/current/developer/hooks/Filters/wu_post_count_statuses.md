@@ -4,7 +4,7 @@ title: フィルタ - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# フィルタ: wu_post_count_statuses {#filter-wupostcountstatuses}
+# フィルタ: wu_post_count_statuses
 
 プラグイン開発者がカウント対象の投稿ステータスを変更できるようにします。デフォルトでは、公開済みと非公開の投稿がカウントされます。
 

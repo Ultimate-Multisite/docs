@@ -3,7 +3,7 @@ title: Aistriobh aistriobh deasctha
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill a' Chàirbeadh System Design Aesthetics {#design-system-aesthetics-skill}
+# Skill a' Chàirbeadh System Design Aesthetics
 
 Tha **Skill a' Chàirbeadh System Design Aesthetics** (Design System Aesthetics skill) guileachd le fhaighinn a tha a' chlàradh airson a' chàirbeadh sgrùdachadh a' chàirbeadh do chàrr. Tha e a' toirt a chàirbeadh a' chàirbeadh a' chàrr air a' chàirbeadh a' chàrr a tha a' chlàradh, gu sònraichte, faighinn a' chàirbeadh do typography, colf, spàis, agus motion tokens a tha a' chàirbeadh a' chàrr.
 

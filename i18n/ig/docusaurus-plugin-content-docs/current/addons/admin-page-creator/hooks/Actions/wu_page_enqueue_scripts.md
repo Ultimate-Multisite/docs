@@ -4,7 +4,7 @@ title: Omume - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Omume: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Omume: wu_page_enqueue_scripts
 
 Na-agbakwunye omume ahaziri ebe a ka anyị nwee ebe iji tinye scripts na styles dịka achọrọ\ ma hụ na a na-ebunye ha naanị na peeji kwesịrị ekwesị
 

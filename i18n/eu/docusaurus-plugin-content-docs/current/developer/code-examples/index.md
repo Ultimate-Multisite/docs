@@ -3,7 +3,7 @@ title: Kode-adibide aurreratuak
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Kode-adibide aurreratuak {#advanced-code-examples}
+# Kode-adibide aurreratuak
 
 Adibide hauek Ultimate Multisite-rekin integrazio-eredu aurreratuak erakusten dituzte.
 

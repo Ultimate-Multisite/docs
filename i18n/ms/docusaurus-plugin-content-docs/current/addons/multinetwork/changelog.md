@@ -3,7 +3,7 @@ title: Pembaruan Multi-Network
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Log Perubahan Multi-Rangkaian {#multi-network-changelog}
+# Log Perubahan Multi-Rangkaian
 
 ### 1.3.0 {#130}
 * Baharu: Pratinjau templat rangkaian — semak dan pratonton templat rangkaian dengan panel langsung sebelum membeli.

@@ -3,7 +3,7 @@ title: Sanggunian ng mga Setting
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sanggunian ng Settings {#settings-reference}
+# Sanggunian ng Settings
 
 Sinusubaybayan ng pahinang ito ang settings na nakaaapekto sa pang-araw-araw na pangangasiwa at mga kamakailang pagbabago sa gawi sa Ultimate Multisite.
 

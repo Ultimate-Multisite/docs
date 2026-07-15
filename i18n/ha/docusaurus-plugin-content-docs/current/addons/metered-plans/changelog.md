@@ -3,7 +3,7 @@ title: Kundin Canje-canje na Tsare-tsaren Auna Amfani
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Tarihin Canje-canje na Tsare-tsaren Metered {#metered-plans-changelog}
+# Tarihin Canje-canje na Tsare-tsaren Metered
 
 Siga 1.1.0 - An saki a 2026-05-05
 - Sabo: Biyan kuɗin AI token don ƙananan shafukan multisite — bibiyi kuma cajin amfani da AI token a fadin shafukan abokan ciniki tare da farashin kowane token da za a iya saita

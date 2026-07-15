@@ -3,7 +3,7 @@ title: Clàr-atharrachaidhean Ioma-lìonra
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Loga Atharrachaidhean Ioma-Lìonra {#multi-network-changelog}
+# Loga Atharrachaidhean Ioma-Lìonra
 
 ### 1.3.0 {#130}
 * Ùr: Ro-shealladair teamplaidean lìonra — brabhsaich agus ro-sheall teamplaidean lìonra le pannal beò mus ceannaich thu.

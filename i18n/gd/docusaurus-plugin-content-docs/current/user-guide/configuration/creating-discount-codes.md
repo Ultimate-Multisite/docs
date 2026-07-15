@@ -3,7 +3,7 @@ title: Creachadh codal dìonais
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creachadh Codean Discount (v2) {#creating-discount-codes-v2}
+# Creachadh Codean Discount (v2)
 
 _**NOTE CRÍTICA: An tairgse seo a' tuairt an Ultimate Multisite version 2.x.**_
 

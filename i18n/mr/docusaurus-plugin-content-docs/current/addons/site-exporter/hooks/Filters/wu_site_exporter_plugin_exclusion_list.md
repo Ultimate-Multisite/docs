@@ -4,7 +4,7 @@ title: फिल्टर - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filter: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Filter: wu_site_exporter_plugin_exclusion_list
 
 डेव्हलपर्सना जी प्लगइनची यादी तयार झालेल्या zip मधून वगळायची असेल, ती व्यवस्थापित करण्याची परवानगी देतो.
 

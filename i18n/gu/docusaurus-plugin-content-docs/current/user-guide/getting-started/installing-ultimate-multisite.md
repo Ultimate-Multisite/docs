@@ -3,7 +3,7 @@ title: Ultimate Multisite ઇન્સ્ટોલ કરી રહ્યા છ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite ની સ્થાપના {#installing-ultimate-multisite}
+# Ultimate Multisite ની સ્થાપના
 
 :::note
 આ ટ્યુટોરિયલ ધારે છે કે તમારી પાસે WordPress Multisite ની સ્થાપના અને રૂપરેખાંકન પહેલેથી જ છે. તે શીખવા માટે, WP Beginner દ્વારા [આ ટ્યુટોરિયલ](https://www.wpbeginner.com/glossary/multisite/) તપાસો.

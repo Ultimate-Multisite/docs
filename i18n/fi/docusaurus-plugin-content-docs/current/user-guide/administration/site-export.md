@@ -3,7 +3,7 @@ title: Sivuston vienti
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sivustiedosto {#site-export}
+# Sivustiedosto
 
 **Sivustotiedoston (Site Export)** hallintapaneeli antaa verkkoasi ylläpitäjille mahdollisuuden pakata yhden sivuston tai koko verkoston ladattavaksi arkistoksi siirto-, varmuuskopio- tai siirtämistyötä varten.
 

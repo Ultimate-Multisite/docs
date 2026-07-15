@@ -3,7 +3,7 @@ title: Ymddygiad WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Ymystyrchu Integracio gyda WPMU DEV {#wpmu-dev-integration}
+# Ymystyrchu Integracio gyda WPMU DEV
 
 ## Oglampiad {#overview}
 WPMU DEV yw ffurfwr WordPress amlyg o ddefnyddio sy'n cynnig gweithrediadau, pluginau a serchion ar gyfer safleoedd WordPress. Mae’r integracio hwn yn sylw'n cyflwyno synchiad domena'n awtomatig a rheoli certysydd SSL rhwng Ultimate Multisite a gweithrediad WPMU DEV.

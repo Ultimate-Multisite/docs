@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Filter: wu_wp_cli_enabled_sub_commands
 
 ഈ എൻറ്റിറ്റിക്കായി ഏത് സബ്-കമാൻഡുകളാണ് പ്രവർത്തനക്ഷമമാക്കിയിരിക്കുന്നതെന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

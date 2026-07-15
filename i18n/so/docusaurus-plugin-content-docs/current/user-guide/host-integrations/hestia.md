@@ -3,7 +3,7 @@ title: Isdhaafinta Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Iskuulka Control Panel Integration {#hestia-control-panel-integration}
+# Iskuulka Control Panel Integration
 
 Tani hagitaanka wuxuu sharaxayaa sida aad u dejisayso isku-dhafka Ultimate Multisite iyo Hestia si loo hubiyo in domain-yada la qorsheeyay ee shirkaddaada ay si toos ah ugu ku dhex jiraan (oo la soo daro iyo la saarmo) sidii Aliases oo Web Domain ah Hestia.
 

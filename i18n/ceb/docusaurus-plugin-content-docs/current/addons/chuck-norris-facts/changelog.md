@@ -3,7 +3,7 @@ title: Changelog sa mga Kamatuoran ni Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Talaan sa mga Pagbag-o sa Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Talaan sa mga Pagbag-o sa Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Gidugang: Awto nga paggana sa pag-update pinaagi sa Ultimate Multisite update server

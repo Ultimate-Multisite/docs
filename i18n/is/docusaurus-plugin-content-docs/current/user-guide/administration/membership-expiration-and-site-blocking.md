@@ -3,7 +3,7 @@ title: Viðferðarlausn og staðblokka
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Lauðning og Stöðuviðboðir {#membership-expiration-and-site-blocking}
+# Lauðning og Stöðuviðboðir
 
 Þessi leiðferð útskýrir hvernig Ultimate Multisite skiptir með lfundum lauðningum, prófíli-endurheimtunum og blokknum vísindamanna á frumgangurinn. Hún dektar heildar livslífi lauðnings frá aktivum til lausa, innstæðingarnar sem stýra því hvort staðir sé blokkað, og hvað þarf að skoða þegar staðir eru framkvæmt eftir að lauðningur hefur laust.
 

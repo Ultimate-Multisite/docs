@@ -3,7 +3,7 @@ title: Champ de validation de commande et DNS du client
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Champ de paiement et gestion DNS client {#checkout-field-and-customer-dns-management}
+# Champ de paiement et gestion DNS client
 
 ## Le champ de paiement Sélection de domaine {#the-domain-selection-checkout-field}
 

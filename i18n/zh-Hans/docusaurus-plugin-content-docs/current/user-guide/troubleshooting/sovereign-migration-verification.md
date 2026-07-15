@@ -3,7 +3,7 @@ title: 主权迁移验证
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# 主权迁移验证 {#sovereign-migration-verification}
+# 主权迁移验证
 
 Ultimate Multisite 1.2.0 包含了用于主权租户迁移的 WP-CLI 验证命令。当租户迁移、SSO访问或隔离安装没有按预期工作时，请使用这些命令进行验证。
 

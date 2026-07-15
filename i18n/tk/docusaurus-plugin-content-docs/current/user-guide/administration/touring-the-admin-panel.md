@@ -3,7 +3,7 @@ title: Administratsiň panelini görkezmek
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Paneli Üzümleme {#touring-the-admin-panel}
+# Admin Paneli Üzümleme
 
 Ultimate Multisite mümkün olduğunca basit we özünü açıkladı edar, bu güce sahip bir araçla size rehberlik etmek mümkündür. Sizden rahat etmeniz için admin sayfalarını birlikte inceleyelim.
 

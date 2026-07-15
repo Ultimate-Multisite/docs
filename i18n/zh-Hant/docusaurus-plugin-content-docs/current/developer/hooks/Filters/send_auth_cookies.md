@@ -4,7 +4,7 @@ title: 過濾器 - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# 過濾器：send_auth_cookies {#filter-sendauthcookies}
+# 過濾器：send_auth_cookies
 
 用於決定是否要將身份驗證 Cookie 實際傳送給客戶端。
 

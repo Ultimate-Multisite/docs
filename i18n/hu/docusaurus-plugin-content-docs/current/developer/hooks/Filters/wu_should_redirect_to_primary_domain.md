@@ -4,7 +4,7 @@ title: Szűrő - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Szűrő: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Szűrő: wu_should_redirect_to_primary_domain
 
 Ez a szűrő lehetővé teszi a fejlesztők számára, hogy megakadályozzák az átirányítást, vagyis "megrövidítsék a folyamatot" (short-circuit).
 

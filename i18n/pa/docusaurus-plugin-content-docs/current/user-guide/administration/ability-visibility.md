@@ -3,7 +3,7 @@ title: ਸਮਰੱਥਾ ਦੀ ਦਿਖਾਈ
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility (ਸਮਰੱਥਾ ਦੀ ਦਿਖਾਈ) {#ability-visibility}
+# Ability Visibility (ਸਮਰੱਥਾ ਦੀ ਦਿਖਾਈ)
 
 Superdav AI Agent v1.12.0 ਨੇ **Ability Visibility** ਕੰਟਰੋਲ ਪੇਸ਼ ਕੀਤੇ ਹਨ ਜੋ ਇਹ ਨਿਯੰਤਰਿਤ ਕਰਦੇ ਹਨ ਕਿ ਕਿਹੜੀਆਂ surfaces (ਸਤਹਾਂ) ਹਰ ਇੱਕ ability ਨੂੰ ਦਿਖਾਉਂਦੀਆਂ ਹਨ। ਇਸ ਨਾਲ ਐਡਮਿਨਰੇਟਰਾਂ ਨੂੰ ਇਹ ਸਹੀ ਤਰ੍ਹਾਂ ਢਾਲਣ ਦੀ ਇਜਾਜ਼ਤ ਮਿਲਦੀ ਹੈ ਕਿ ਕਿਹੜੀਆਂ agent capabilities REST APIs, MCP servers, WooCommerce integrations, ਅਤੇ ਹੋਰ interfaces ਰਾਹੀਂ ਉਪਲਬਧ ਹਨ।
 

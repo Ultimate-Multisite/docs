@@ -3,7 +3,7 @@ title: Referenční příručka k hookům
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Reference hooků {#hooks-reference}
+# Reference hooků
 
 Automaticky generovaná dokumentace pro všech **59 akcí** a **118 filtrů** v Ultimate Multisite.
 

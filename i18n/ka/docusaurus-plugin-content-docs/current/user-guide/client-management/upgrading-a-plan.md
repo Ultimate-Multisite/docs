@@ -3,7 +3,7 @@ title: გეგმის განახლება
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# გეგმის განახლება (v2) {#upgrading-a-plan-v2}
+# გეგმის განახლება (v2)
 
 _**მნიშვნელოვანი შენიშვნა: ეს სტატია ეხება Ultimate Multisite-ის ვერსიას 2.x.**_
 

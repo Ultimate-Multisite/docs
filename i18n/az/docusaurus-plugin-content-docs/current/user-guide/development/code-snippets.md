@@ -3,7 +3,7 @@ title: Kod parçaları
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 üçün Kod Parçaları {#code-snippets-for-v2}
+# v2 üçün Kod Parçaları
 
 Əsasən, **WordPress** üçün kod parçaları, əks halda xüsusi kiçik bir plugin tələb edə biləcək müəyyən əməliyyatları yerinə yetirmək üçün istifadə olunur. Belə kod parçaları WordPress çekirdek və ya mövzu fayllarından birinə (adətən mövzunuzun functions.php faylı) yerləşdirilə bilər və ya MU plugin kimi istifadə edilə bilər.
 

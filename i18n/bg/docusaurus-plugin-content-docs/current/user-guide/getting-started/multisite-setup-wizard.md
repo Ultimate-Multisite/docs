@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite включва вграден Wizard, който автоматично превръща стандартна WordPress инсталация в мрежа WordPress Multisite. Това елиминира нуждата от ръчно редактиране на `wp-config.php` или изпълнение на команди в базата данни.
 

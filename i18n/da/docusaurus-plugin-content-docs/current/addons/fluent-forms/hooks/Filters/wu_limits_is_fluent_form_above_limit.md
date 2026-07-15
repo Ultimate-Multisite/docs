@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 Tjekker, om en given formulartype er tilladt på denne plan. Giver plugin-udviklere mulighed for at filtrere returværdien
 

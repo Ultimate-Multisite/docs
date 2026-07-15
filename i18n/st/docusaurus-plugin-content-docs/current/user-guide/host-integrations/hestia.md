@@ -3,7 +3,7 @@ title: Ho lapa la ho lula le Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hoho Control Panel Integration {#hestia-control-panel-integration}
+# Hoho Control Panel Integration
 
 O le tsela lona o le fa'amalosia o Ultimate Multisite Hestia, e fesoasoani atu i le fa'amaonia o domain-o-mapa i lona network e automatically fa'aalia (and remove) mo Web Domain Aliases i Hestia.
 

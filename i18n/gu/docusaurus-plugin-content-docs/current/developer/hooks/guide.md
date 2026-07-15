@@ -3,7 +3,7 @@ title: હૂક્સ ઉપયોગ માર્ગદર્શિકા
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks નો ઉપયોગ કેવી રીતે કરવો {#hooks-usage-guide}
+# Hooks નો ઉપયોગ કેવી રીતે કરવો
 
 Ultimate Multisite 200+ action hooks અને 280+ filter hooks પ્રદાન કરે છે. આ પેજમાં સૌથી વધુ ઉપયોગમાં લેવાતા hooks ને વ્યવહારુ ઉદાહરણો સાથે આવરી લેવામાં આવ્યા છે. સંપૂર્ણ સ્વચાલિત સંદર્ભ માટે, આ વિભાગમાં અન્ય પેજીસ જુઓ.
 

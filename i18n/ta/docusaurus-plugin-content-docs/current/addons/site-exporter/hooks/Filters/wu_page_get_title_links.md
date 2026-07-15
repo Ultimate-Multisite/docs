@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 இது プラгіன் உருவாக்குநர்கள் மற்றும் நமக்கே, எடிட் பக்கங்களில் செயல் இணைப்புகளைச் (action links) சேர்க்க உதவுகிறது.
 

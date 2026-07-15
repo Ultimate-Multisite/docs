@@ -3,7 +3,7 @@ title: Account በZapier በኩል ይመዝገቡ
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ክስተት፦ በZapier በኩል Account መመዝገብ {#event-register-an-account-via-zapier}
+# ክስተት፦ በZapier በኩል Account መመዝገብ
 
 በ[Ultimate Multisiteን ከZapier ጋር ማዋሃድ](zapier.md) ጽሑፍ ውስጥ፣ ቀስቃሾችና ክስተቶች ላይ ተመስርቶ በUltimate Multisite ውስጥ የተለያዩ እርምጃዎችን ለማከናወን Zapierን እንዴት እንደሚጠቀሙ ተወያይተናል። በዚህ ጽሑፍ ውስጥ፣ የ3ኛ ወገን መተግበሪያዎችን እንዴት ማዋሃድ እንደሚችሉ እናሳያለን። Google Sheetsን እንደ የውሂብ ምንጭ እንጠቀማለን፣ እና መረጃውን ወደ Ultimate Multisite በመላክ Account እንመዘግባለን።
 

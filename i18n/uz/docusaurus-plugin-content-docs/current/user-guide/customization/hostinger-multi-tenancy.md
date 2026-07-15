@@ -3,7 +3,7 @@ title: Hostinger Ko'p-tenantlik
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 Hostinger multi-tenancy imkoniyatini qo'shadi, bu orqali joylashtirilgan domenlar mavjud Hostinger domen xaritasi integratsiyasi bilan birga suveren ta'minot (sovereign tenant provisioning) jarayonida ishtirok etishi mumkin.
 

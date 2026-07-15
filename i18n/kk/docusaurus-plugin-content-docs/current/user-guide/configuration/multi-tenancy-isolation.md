@@ -3,7 +3,7 @@ title: Көп жалғастық изоляция
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Көп ареналы изоляция (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Көп ареналы изоляция (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 арнайы ареналар үшін базалық және файл жүйесін бөліп держатьді қолдасады. Бұл ареналар деректерін бір-бірінен ажырата отырып, желі деңгейіндегі қызмет көрсету, есептеулау және басқару функцияларын сақтайды.
 

@@ -6,7 +6,7 @@ title: >-
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Filtro: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# Filtro: wu_search_models_functions
 
 Permitir a los desarrolladores de plugins agregar más funciones de modelos de búsqueda.
 

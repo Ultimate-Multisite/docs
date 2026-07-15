@@ -4,7 +4,7 @@ title: Filtre - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filtre: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filtre: wu_bypass_unset_current_user
 
 Permet als desenvolupadors ometre el codi de desassignació de l’usuari actual.
 

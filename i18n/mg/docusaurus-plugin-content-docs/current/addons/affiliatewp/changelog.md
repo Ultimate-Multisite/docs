@@ -3,7 +3,7 @@ title: Tantaran'ny fanovana AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Tantaran'ny fanovana AffiliateWP {#affiliatewp-changelog}
+# Tantaran'ny fanovana AffiliateWP
 
 Dika: 2.0.1 - Navoaka tamin'ny 2025-09-28
 

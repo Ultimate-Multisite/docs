@@ -3,7 +3,7 @@ title: Injection Ad
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# دانان بۆ ڕێکخستنی ئۆفڵایەکان لە تۆڕەکەت بە Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# دانان بۆ ڕێکخستنی ئۆفڵایەکان لە تۆڕەکەت بە Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector یەکێکە لە **پلانە بلاگینەکان** کە ئامرازەکانی پێشکەش دەکات بۆ ئەوەی دەتوانیت ڕیکلام لەسەر پلاندانەکانت لەو لایەنەی ویرایش دەکەیت.
 

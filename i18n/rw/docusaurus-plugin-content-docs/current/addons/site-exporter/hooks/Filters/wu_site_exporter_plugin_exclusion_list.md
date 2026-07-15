@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Muyunguruzi: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Muyunguruzi: wu_site_exporter_plugin_exclusion_list
 
 Yemerera abakoraporogaramu gucunga urutonde rw’imyomeko ishobora gukurwa muri zip yakozwe.
 

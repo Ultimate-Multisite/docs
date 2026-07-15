@@ -3,7 +3,7 @@ title: რა არის WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# რა არის WordPress Multisite? {#what-is-wordpress-multisite}
+# რა არის WordPress Multisite?
 
 WordPress-ის ძირითად სისტემაში არსებობს „Multisite“ (მულტი-საითი) ფუნქცია, რომელიც თავის წარმომავლობას 2010 წელს WordPress 3.0-ის გაშვებას უკავშირდება. მას შემდეგ ის რამდენიმე ვერსია დახვეწილია ახალი ფუნქციების შესატანად და უსაფრთხოების გასამკაცრებლად.
 

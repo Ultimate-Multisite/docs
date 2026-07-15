@@ -3,7 +3,7 @@ title: هُڪس جو حوالو
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks حوالو {#hooks-reference}
+# Hooks حوالو
 
 Ultimate Multisite ۾ سڀني **59 actions** ۽ **118 filters** لاءِ پاڻمرادو ٺاهيل دستاويز.
 

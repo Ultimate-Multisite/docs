@@ -3,7 +3,7 @@ title: Isolàidhean Multi-tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolàidhean Multi-Tenancy {#multi-tenancy-isolation}
+# Isolàidhean Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 a tha a' gabhail e-beatha (per-subsite) agus isgidil (filesystem) idirich airson teann-dèidh (sovereign tenants). Tha seo a' cur seachdaidh dathan teann-dèidh air a' sgeulach, mar a tha an tòstáil (provisioning), an tasan (billing), agus an t-sgrùdadh (administration) de dhinn.
 

@@ -4,7 +4,7 @@ title: Filtru - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filtru: secure_auth_cookie {#filter-secureauthcookie}
+# Filtru: secure_auth_cookie
 
 Filtrează dacă cookie-ul de autentificare ar trebui trimis doar prin HTTPS.
 

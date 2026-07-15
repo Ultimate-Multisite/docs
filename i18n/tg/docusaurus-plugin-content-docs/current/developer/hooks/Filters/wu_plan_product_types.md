@@ -4,7 +4,7 @@ title: Филтр - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Филтр: wu_plan_product_types {#filter-wuplanproducttypes}
+# Филтр: wu_plan_product_types
 
 Навъҳои маҳсулотеро филтр мекунад, ки бояд ҳамчун нақшаҳо баррасӣ шаванд.
 

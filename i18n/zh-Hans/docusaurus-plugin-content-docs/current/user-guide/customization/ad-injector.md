@@ -3,7 +3,7 @@ title: 广告注入器
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# 使用 Ultimate Multisite: Ad Injector 在你的网络中投放广告 {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# 使用 Ultimate Multisite: Ad Injector 在你的网络中投放广告
 
 Ultimate Multisite: Ad Injector 是一个**免费 add-on**，可让你直接从套餐的编辑页面获得在套餐中投放广告的工具。
 

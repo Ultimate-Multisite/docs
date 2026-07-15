@@ -3,7 +3,7 @@ title: Кардардын аккаунту страницы
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Клиенттин Hesap Баасылы (v2) {#your-clients-account-page-v2}
+# Клиенттин Hesap Баасылы (v2)
 
 _**МААЛЫЙ ЭСАС КӨРҮЗҮ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү.**_
 

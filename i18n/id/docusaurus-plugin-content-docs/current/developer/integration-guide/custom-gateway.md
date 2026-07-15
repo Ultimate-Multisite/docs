@@ -3,7 +3,7 @@ title: Pengembangan Gateway Kustom
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pengembangan Gateway Kustom {#custom-gateway-development}
+# Pengembangan Gateway Kustom
 
 Anda dapat membuat gateway pembayaran kustom dengan memperluas class `Base_Gateway`.
 

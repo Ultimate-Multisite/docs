@@ -3,7 +3,7 @@ title: ຕົວໂຫຼດໄຟລ໌ Sunrise ຂອງຕົວເສີມ
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# ຕົວໂຫຼດໄຟລ໌ Sunrise ຂອງ Addon {#addon-sunrise-file-loader}
+# ຕົວໂຫຼດໄຟລ໌ Sunrise ຂອງ Addon
 
 Ultimate Multisite 2.8.0 ເພີ່ມຕົວໂຫຼດສ່ວນຂະຫຍາຍ sunrise ສຳລັບ add-ons ແລະການຜະສານກັບ MU-plugin ແບບກຳນົດເອງທີ່ຕ້ອງການຣັນໃນລະຫວ່າງການບູດສະແຕຣັບ sunrise ຂອງ WordPress ໂດຍບໍ່ແກ້ໄຂໄຟລ໌ `wp-content/sunrise.php` ທີ່ຖືກສ້າງຂຶ້ນ.
 

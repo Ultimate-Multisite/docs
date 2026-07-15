@@ -4,7 +4,7 @@ title: Filtr - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Filtr: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Filtr: wp_ultimo_skip_network_active_check
 
 Pozwala deweloperom na pominięcie sprawdzenia aktywacji sieci.
 

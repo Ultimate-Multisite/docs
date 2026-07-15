@@ -3,7 +3,7 @@ title: 工具與設定
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# 工具與設定 {#tools-and-configuration}
+# 工具與設定
 
 Theme Builder 使用一組工具來分析、設計並建置你的 WordPress 站點。在 1.16.0 版中，**sd-ai-agent/site-scrape 現已是 Tier 1 工具**，因此在 Theme Builder 中預設可用。Superdav AI Agent v1.18.0 也推出了另行散發的 Advanced companion package，供受信任的開發者工作流程使用；這些工具並非 WordPress.org 核心套件的一部分，必須另行安裝並授權。
 

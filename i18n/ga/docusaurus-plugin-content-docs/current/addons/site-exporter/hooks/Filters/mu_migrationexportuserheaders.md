@@ -4,7 +4,7 @@ title: Scagaire - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Scagaire: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Scagaire: mu_migration/export/user/headers
 
 Scagann sé an tacar réamhshocraithe de cheanntásca úsáideora atá le heaspórtáil/iompórtáil.
 

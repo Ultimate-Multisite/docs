@@ -4,7 +4,7 @@ title: Sefe - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Sesefe: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Sesefe: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 E lumella bahlahisi ho sefa masimo a kamehla a aterese ea billing ea WooCommerce.
 

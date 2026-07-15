@@ -3,7 +3,7 @@ title: Fikirana Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Fikirana Gratis AI Agent {#gratis-ai-agent-settings}
+# Fikirana Gratis AI Agent
 
 Ny efijery **Settings → Advanced** ao amin’ny Gratis AI Agent dia manome fikirakirana amin’ny ambaratongan’ny mpitantana ho an’ny fampidirana backend. Ity pejy ity dia mandrakitra ny fandefasana feedback, ny fanalahidin’ny mpamatsy fikarohana, ny fananganana tolotra Superdav tantanana, ny fanaraha-maso Google Calendar, ny fikirana SMS TextBee, ary ny feature flags manerana ny tambajotra.
 

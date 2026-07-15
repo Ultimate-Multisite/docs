@@ -3,7 +3,7 @@ title: Mga Himan ug Konpigurasyon
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Mga Himan ug Configuration {#tools-and-configuration}
+# Mga Himan ug Configuration
 
 Ang Theme Builder naggamit og hugpong sa mga himan aron analisahon, disenyoan, ug tukoron ang imong WordPress site. Sa bersyon 1.16.0, **sd-ai-agent/site-scrape karon usa na ka Tier 1 nga himan**, nga naghimo niini nga magamit pinaagi sa default sa Theme Builder. Ang Superdav AI Agent v1.18.0 nagpaila usab og bulag nga gipang-apod-apod nga Advanced companion package alang sa kasaligang developer workflows; kadtong mga himan dili bahin sa WordPress.org core package ug kinahanglan i-install ug awtorisahon nga bulag.
 

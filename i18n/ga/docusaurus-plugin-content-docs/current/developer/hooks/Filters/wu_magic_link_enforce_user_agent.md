@@ -4,7 +4,7 @@ title: Scagaire - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Scagaire: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# Scagaire: wu_magic_link_enforce_user_agent
 
 Scag cé acu ar cheart fíorú user agent a chur i bhfeidhm.
 

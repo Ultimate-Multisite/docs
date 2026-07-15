@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# سۈزگۈچ: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# سۈزگۈچ: wu_captcha_error_message
 
 captcha خاتالىق ئۇچۇرىنى سۈزۈڭ.
 

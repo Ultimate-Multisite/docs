@@ -3,7 +3,7 @@ title: Kehittäjädokumentaatio
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Kehittäjädokumentaatio {#developer-documentation}
+# Kehittäjädokumentaatio
 
 Tämä opas tarjoaa kehittäjille kaiken tarvittavan Ultimate Multisiteen integrointiin, sen laajentamiseen tai lisäosien kehittämiseen. Ultimate Multisite muuntaa WordPress Multisite -verkon Website-as-a-Service (WaaS) -alustaksi.
 

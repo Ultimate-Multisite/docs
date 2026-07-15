@@ -4,7 +4,7 @@ title: Sía - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Sía: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Sía: wu_documentation_get_link
 
 Leyfir þróunaraðilum viðbóta að sía tenglana.
 

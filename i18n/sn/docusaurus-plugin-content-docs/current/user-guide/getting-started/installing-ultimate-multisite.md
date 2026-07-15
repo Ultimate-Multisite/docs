@@ -3,7 +3,7 @@ title: Kuisa Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kuisa Ultimate Multisite {#installing-ultimate-multisite}
+# Kuisa Ultimate Multisite
 
 :::note
 Iri renyoro rinotarisira kuti iwe watova neWordPress Multisite yakaiswa uye yakagadziridzwa. Kuti udzidze maitiro, tarisa [iri renyoro](https://www.wpbeginner.com/glossary/multisite/) naWP Beginner.

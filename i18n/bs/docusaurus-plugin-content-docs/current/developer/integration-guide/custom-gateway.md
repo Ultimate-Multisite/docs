@@ -3,7 +3,7 @@ title: Razvoj prilagođenog gatewaya
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Razvoj prilagođenog gatewaya {#custom-gateway-development}
+# Razvoj prilagođenog gatewaya
 
 Možete kreirati prilagođene gatewaye za plaćanje proširivanjem klase `Base_Gateway`.
 

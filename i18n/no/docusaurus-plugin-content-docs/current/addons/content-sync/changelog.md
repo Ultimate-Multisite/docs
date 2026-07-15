@@ -3,7 +3,7 @@ title: Endringslogg for Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Endringslogg for Content Sync {#content-sync-changelog}
+# Endringslogg for Content Sync
 
 ### Versjon 1.1.0 - Utgitt 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nytt: Støtte for synkronisering av alle posttyper (innlegg, sider, tilpassede posttyper)

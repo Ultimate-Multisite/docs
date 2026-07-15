@@ -4,7 +4,7 @@ title: Kev nqis tes - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Action: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Action: wp_ultimo_affiliatewp_activation
 
 Cia lwm feem ntawm plugin txuas lawv cov txheej txheem rau kev qhib siv
 

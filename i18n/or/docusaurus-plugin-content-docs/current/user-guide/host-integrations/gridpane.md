@@ -3,7 +3,7 @@ title: GriddPane ସମନ୍ୱୟ
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ইন্টিগ্রেশন {#gridpane-integration}
+# GridPane ইন্টিগ্রেশন
 
 ## ওভারভিউ {#overview}
 GridPane হলো একটি বিশেষ ওয়ার্ডপ্রেস হোস্টিং কন্ট্রোল প্যানেল যা সিরিয়াস ওয়ার্ডপ্রেস পেশাদারদের জন্য তৈরি করা হয়েছে। এই ইন্টিগ্রেশনটি Ultimate Multisite এবং GridPane-এর মধ্যে স্বয়ংক্রিয় ডোমেইন সিঙ্কিং এবং SSL সার্টিফিকেট পরিচালনার সুবিধা দেয়।

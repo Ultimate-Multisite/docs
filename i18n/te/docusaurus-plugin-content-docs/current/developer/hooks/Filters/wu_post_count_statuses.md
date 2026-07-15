@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 ప్లగిన్ డెవలపర్‌లు ఏ పోస్ట్ స్టేటస్‌లను లెక్కించాలి (count) అనేది మార్చడానికి ఇది అనుమతిస్తుంది. డిఫాల్ట్‌గా, పబ్లిష్డ్ (published) మరియు ప్రైవేట్ (private) పోస్ట్‌లను లెక్కలోకి తీసుకుంటారు.
 

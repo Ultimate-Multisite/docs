@@ -4,7 +4,7 @@ title: פֿילטער - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# פילטער: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# פילטער: wu_checkout_field_templates
 
 אונדזערע APIs צו צולייגן נײַע פעלד־מוסטערן פֿאַרבינדן זיך דאָ אַרײַן.
 

@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe nke ọtụtụ netwọkụ
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Ndekọ mgbanwe Multi-Network {#multi-network-changelog}
+# Ndekọ mgbanwe Multi-Network
 
 ### 1.3.0 {#130}
 * Ọhụrụ: Onye nlele ndebiri netwọkụ — chọgharịa ma lelee ndebiri netwọkụ site na panel dị ndụ tupu ịzụta.

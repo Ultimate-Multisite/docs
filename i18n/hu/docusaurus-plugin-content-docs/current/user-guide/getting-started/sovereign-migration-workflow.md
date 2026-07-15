@@ -3,7 +3,7 @@ title: Sovereign Migration Workflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Szouverén migráci folyamat {#sovereign-migration-workflow}
+# Szouverén migráci folyamat
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 beilleszi a migráció ellenőrzési beavatkozásokat egy standard alszítást szouverén tenyész infrastruktúrába való átmenethez.
 

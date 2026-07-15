@@ -3,7 +3,7 @@ title: Jere Imèl Sistèm
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Jere Mantye Email Sistèm yo {#managing-system-emails}
+# Jere Mantye Email Sistèm yo
 
 Ultimate Multisite voye diferan email sistèm pou evènman tankou konfimasyon anrejistrasyon, resept paman, ak chanjman manm. Ou ka personalize sa yo pou matche ak mark ou a.
 

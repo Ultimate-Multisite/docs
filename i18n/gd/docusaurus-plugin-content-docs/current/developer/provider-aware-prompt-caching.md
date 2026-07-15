@@ -3,7 +3,7 @@ title: Tasgadh phròmptan a tha mothachail air an t-solaraiche
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Tasgadh prompt mothachail air solaraichean {#provider-aware-prompt-caching}
+# Tasgadh prompt mothachail air solaraichean
 
 Tha Superdav AI Agent v1.12.0 a’ toirt a-steach **tasgadh prompt mothachail air solaraichean**, a nì cosgaisean API agus latency nas fheàrr le bhith a’ tasgadh promptaichean thar diofar sholaraichean LLM. Tha uidheaman agus rèiteachaidhean tasgaidh eadar-dhealaichte aig gach solaraiche.
 

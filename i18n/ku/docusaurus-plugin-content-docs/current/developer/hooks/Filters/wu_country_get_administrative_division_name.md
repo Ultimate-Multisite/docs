@@ -4,7 +4,7 @@ title: Parzûn - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Parzûn: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Parzûn: wu_country_get_administrative_division_name
 
 Navê xweşkirî yê beşên îdarî yên welatî vedigerîne.
 

@@ -3,7 +3,7 @@ title: Klientu atsauksmes un problēmu ziņošana
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klientu atsauksmes un problēmu ziņošana {#customer-feedback--issue-reporting}
+# Klientu atsauksmes un problēmu ziņošana
 
 Gratis AI Agent v1.5.0 ieviesta sistēmas, kas ļauj lietotājiem tieši no čata interfeisa norādīt nepalīdzīgas atbildes un ziņot par problēmām. Šajā sistēmā ir piekrišanas pārvaldība, automātiskais ziņošanas komandas veiksmiņš un AI palīdzētais triējums (triage) serverstrānā.
 

@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 ಇದು ನೀಡಲಾದ ಫಾರ್ಮ್ ಟೈಪ್ ಈ ಪ್ಲಾನ್‌ನಲ್ಲಿ ಅನುಮತಿಸಲಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸುತ್ತದೆ. ಪ್ಲಗ್ಇನ್ developers ಗಳು ರಿಟರ್ನ್ ಮೌಲ್ಯವನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

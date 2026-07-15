@@ -3,7 +3,7 @@ title: Mú ìṣepọ̀ pánẹ́ẹ̀lì ìṣàkóso dara sí
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Mu Iṣepọ Control Panel Dara Si {#enhance-control-panel-integration}
+# Mu Iṣepọ Control Panel Dara Si
 
 ## Akopọ {#overview}
 Enhance jẹ control panel igbalode kan ti o pese adaṣe alejo gbigba alagbara ati awọn agbara iṣakoso. Iṣepọ yii n jẹ ki amuṣiṣẹpọ domain laifọwọyi ati iṣakoso iwe-ẹri SSL ṣee ṣe laarin Ultimate Multisite ati Enhance Control Panel.

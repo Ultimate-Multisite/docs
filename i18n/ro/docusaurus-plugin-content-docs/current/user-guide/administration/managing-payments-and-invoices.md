@@ -3,7 +3,7 @@ title: Gestionarea plăților și a facturilor
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gestionarea plăților și facturilor {#managing-payments-and-invoices}
+# Gestionarea plăților și facturilor
 
 ## Setări pentru plăți {#payment-settings}
 

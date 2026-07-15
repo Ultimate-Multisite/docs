@@ -3,7 +3,7 @@ title: ສ້າງໂລໂກ SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# ສ້າງໂລໂກ້ SVG {#generate-logo-svg}
+# ສ້າງໂລໂກ້ SVG
 
 ຄວາມສາມາດ **ສ້າງໂລໂກ້ SVG** ຊ່ວຍໃຫ້ Theme Builder ສ້າງ ແລະຝັງໂລໂກ້ SVG ແບບກຳນົດເອງໄດ້ໂດຍກົງໃນເວັບໄຊ WordPress ຂອງທ່ານ ພ້ອມການກວດລ້າງແບບ namespace-safe ອັດຕະໂນມັດ.
 

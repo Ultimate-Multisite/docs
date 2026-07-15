@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Àlẹmọ: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Àlẹmọ: wu_element_maybe_extract_arguments
 
 Ṣafikun àlẹmọ gbogbogbo lati jẹ ki àwọn olùgbéejáde lè fa parser yìí gbooro láti bá àwọn builders tàbí plugins míì ṣiṣẹ́.
 

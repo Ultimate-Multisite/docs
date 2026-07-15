@@ -3,7 +3,7 @@ title: የገንቢ ሰነድ
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ለገንቢዎች መመሪያ {#developer-documentation}
+# ለገንቢዎች መመሪያ
 
 ይህ መመሪያ ገንቢዎች Ultimate Multisiteን እንዴት ማዋሃድ (integrate)፣ ማስፋት (extend) ወይም አድ-ኦን (addon) መገንባት እንደሚችሉ የሚያስፈልጋቸውን ሁሉንም ነገር ያቀርባል። Ultimate Multisite የWordPress Multisite networkን ወደ Website-as-a-Service (WaaS) መድረክ ይለውጠዋል።
 

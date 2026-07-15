@@ -3,7 +3,7 @@ title: Fụrụ Ọkụ Ebe-akụkọ na DNS Ọkụ Agha
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Quản lý Trường Thanh toán và DNS Khách hàng {#checkout-field-and-customer-dns-management}
+# Quản lý Trường Thanh toán và DNS Khách hàng
 
 ## Trường Lựa chọn Tên miền (Domain Selection) {#the-domain-selection-checkout-field}
 

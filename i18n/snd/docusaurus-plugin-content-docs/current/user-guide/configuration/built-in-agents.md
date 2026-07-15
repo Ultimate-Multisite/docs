@@ -3,7 +3,7 @@ title: اندروني ايجنٽس
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# ٺهيل-اندر Agents {#built-in-agents}
+# ٺهيل-اندر Agents
 
 Gratis AI Agent v1.9.0 پنج ٺهيل-اندر agents سان اچي ٿو، هر هڪ اڳواٽ ترتيب ڏنل آهي هڪ مرڪوز اوزارن جي سيٽ، ترتيب ڏنل system prompt، ۽ شروعاتي تجويزن سان جيڪي ان علائقي جي عام ڪمن سان ملن ٿيون. agents جي وچ ۾ مٽائڻ اهو بدلائي ٿو ته assistant ڇا ڪري سگهي ٿو ۽ ڪيئن جواب ڏئي ٿو — توهان جي طرفان ڪنهن به configuration کان سواءِ. Superdav AI Agent v1.18.0 انهن workflows ۾ schedule-aware tools، reminder records، approval gates، ۽ SMS notifications شامل ڪري سگهي ٿو جڏهن لاڳاپيل integrations ترتيب ڏنل هجن.
 

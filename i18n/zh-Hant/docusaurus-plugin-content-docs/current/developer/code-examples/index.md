@@ -3,7 +3,7 @@ title: 進階程式碼範例
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 進階程式碼範例 {#advanced-code-examples}
+# 進階程式碼範例
 
 這些範例展示了與 Ultimate Multisite 進行進階整合的模式。
 

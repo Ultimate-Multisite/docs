@@ -3,7 +3,7 @@ title: Lisäosakehityksen aloittaminen
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Lisäosan kehitys {#addon-development}
+# Lisäosan kehitys
 
 ## Lisäosan rakenne {#addon-structure}
 

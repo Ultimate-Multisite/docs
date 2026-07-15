@@ -3,7 +3,7 @@ title: Sanggunian ng Mga Kakayahan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Sanggunian ng mga Kakayahan {#abilities-reference}
+# Sanggunian ng mga Kakayahan
 
 Ang mga kakayahan ay ang mga atomikong aksyon na maaaring i-invoke ng Gratis AI Agent sa iyong WordPress installation. Bawat kakayahan ay isang nakarehistrong PHP class na naglalantad ng JSON schema — binabasa ng agent ang schema na ito sa runtime upang maunawaan kung anong mga parameter ang kinakailangan at kung ano ang ibinabalik ng kakayahan.
 

@@ -3,7 +3,7 @@ title: Samfuri na Wurin Gida
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# قالب سایت‌ها (نسخه ۲) {#site-templates-v2}
+# قالب سایت‌ها (نسخه ۲)
 
 _**توجه: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد. اگر از نسخه ۱.x استفاده می‌کنید،**_ **به این مقاله مراجعه کنید.**_
 

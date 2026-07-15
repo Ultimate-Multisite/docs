@@ -4,7 +4,7 @@ title: Филтер - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Филтер: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Филтер: wu_post_count_statuses
 
 Им дозволува на развивачите на plugin-и да променат кој статус на објава треба да се брои. Стандардно, се бројат објавени и приватни објави
 

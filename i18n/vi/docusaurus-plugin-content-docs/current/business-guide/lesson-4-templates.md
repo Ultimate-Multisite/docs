@@ -3,7 +3,7 @@ title: 'Bài học 4: Xây dựng các mẫu chuyên đề'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Bài 4: Xây dựng các Mẫu theo Ngành {#lesson-4-building-niche-templates}
+# Bài 4: Xây dựng các Mẫu theo Ngành
 
 Các mẫu (Templates) là cốt lõi của giá trị độc đáo mà bạn cung cấp theo ngành nghề. Một chủ phòng tập thể hình đăng ký và thấy một trang web đã có sẵn giao diện giống như một trang web phòng tập – với lịch lớp học, hồ sơ huấn luyện viên và hình ảnh phù hợp – sẽ có khả năng ở lại cao hơn nhiều so với người thấy một trang trắng trống.
 

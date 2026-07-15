@@ -3,7 +3,7 @@ title: Sifariş rəsmiləşdirmə sahəsi və Müştəri DNS-i
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ödəniş sahəsi və müştəri DNS idarəetməsi {#checkout-field-and-customer-dns-management}
+# Ödəniş sahəsi və müştəri DNS idarəetməsi
 
 ## Domen seçimi ödəniş sahəsi {#the-domain-selection-checkout-field}
 

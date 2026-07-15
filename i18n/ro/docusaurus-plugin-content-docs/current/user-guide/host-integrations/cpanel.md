@@ -3,7 +3,7 @@ title: Integrare cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrare cPanel {#cpanel-integration}
+# Integrare cPanel
 
 ## Prezentare generală {#overview}
 cPanel este unul dintre cele mai populare panouri de control pentru găzduire web, utilizat de mulți furnizori de găzduire partajată și dedicată. Această integrare permite sincronizarea automată a domeniilor între Ultimate Multisite și cPanel, oferindu-ți posibilitatea de a adăuga automat aliasuri de domenii și subdomenii în contul tău cPanel.

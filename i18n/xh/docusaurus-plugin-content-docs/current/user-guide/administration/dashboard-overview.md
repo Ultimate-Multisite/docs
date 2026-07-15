@@ -3,7 +3,7 @@ title: Ushwankathelo lwe-Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Ushwankathelo lwe-Dashboard {#dashboard-overview}
+# Ushwankathelo lwe-Dashboard
 
 Ultimate Multisite ine-**Dashboard** ezinikeleyo phantsi kwemenyu ye-Ultimate Multisite, kwaye yongeza neewijethi kwi-Dashboard yeNethiwekhi. Eli nqaku lichaza into oza kuyibona kwezi ndawo zombini.
 

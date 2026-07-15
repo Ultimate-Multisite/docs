@@ -3,7 +3,7 @@ title: Installera Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installera Ultimate Multisite {#installing-ultimate-multisite}
+# Installera Ultimate Multisite
 
 :::note
 Den här guiden förutsätter att du redan har WordPress Multisite installerat och konfigurerat. Om du vill veta hur, kolla in den här guiden [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) från WP Beginner.

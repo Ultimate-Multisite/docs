@@ -3,7 +3,7 @@ title: Müstəqil Miqrasiya Təsdiqi
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, souveren (müstəq) müştəri miqyasında köçürmələr üçün WP-CLI yoxlama əmrlərini ehtiva edir. Müştəri köçürməsi, SSO ziyarəti və ya izolyasiya edilmiş quraşdırma gözlənilən kimi işləmədikdə bunları istifadə edin.
 

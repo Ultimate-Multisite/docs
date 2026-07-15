@@ -4,7 +4,7 @@ title: פֿילטער - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# פֿילטער: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# פֿילטער: wu_apply_signup_fee
 
 פֿילטערט צי די רעגיסטראַציע־אָפּצאָל זאָל צוגעלייגט ווערן צי נישט.
 

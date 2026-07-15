@@ -3,7 +3,7 @@ title: یەکگرتووکردنی Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integration-awe Cloudflare {#cloudflare-integration}
+# Integration-awe Cloudflare
 
 ## Overview {#overview}
 Cloudflare هي شبكة توصيل محتوى (CDN) ومزود أمان رائد يساعد في حماية وتسريع المواقع. هذا التكامل يتيح إدارة تلقائية للنطاقات بين Ultimate Multisite و Cloudflare، خاصة لتثبيتات مواقع فرعية متعددة النطاقات (subdomain multisite).

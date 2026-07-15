@@ -4,7 +4,7 @@ title: Veiksmas – perjungti_tinklą
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Veiksmas: switch_network {#action-switchnetwork}
+# Veiksmas: switch_network
 
 Suveikia, kai perjungiamas dabartinis tinklo kontekstas.
 

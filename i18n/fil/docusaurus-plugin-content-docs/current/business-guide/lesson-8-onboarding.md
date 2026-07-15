@@ -3,7 +3,7 @@ title: 'Lesson 8: Pag-onboard ng Kustomer'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesson 8: Pag-onboard sa Customer {#lesson-8-customer-onboarding}
+# Lesson 8: Pag-onboard sa Customer
 
 Ang pagpaparehistro ng isang customer ay kalahati pa lang ng trabaho. Kung mag-log in sila, makaramdam ng pagkalito, at hindi na bumalik, nawalan na sila. Dinisenyo ng araling ito ang karanasan na magpapalit sa isang bagong pag-sign up tungo sa isang aktibo at engaged na customer.
 

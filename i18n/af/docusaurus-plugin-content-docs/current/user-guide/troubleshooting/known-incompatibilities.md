@@ -3,7 +3,7 @@ title: Bekende Inkompatibiliteite
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Bekende onverenigbaarhede met ander Plugins {#known-incompatibilities-with-other-plugins}
+# Bekende onverenigbaarhede met ander Plugins
 
 Nadat jy Ultimate Multisite geïnstalleer en geaktiveer het, kan jy probleme ondervind as gevolg van onbehandelde onverenigbaarhede met ander plugins.
 

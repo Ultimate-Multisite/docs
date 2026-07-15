@@ -3,7 +3,7 @@ title: 'Lekcja 14: Co dalej'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekcja 14: Co dalej {#lesson-14-what-comes-next}
+# Lekcja 14: Co dalej
 
 Zbudowałeś platformę dla niszowego typu stron od podstaw. FitSite działa, obsługuje studia fitness i generuje powtarzalny przychód. W tej ostatniej lekcji sprawdzamy, jakie są kolejne kroki.
 

@@ -3,7 +3,7 @@ title: Udibaniso lwe-Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Udityaniso lwe-Cloudways {#cloudways-integration}
+# Udityaniso lwe-Cloudways
 
 ## Isishwankathelo {#overview}
 Cloudways liqonga lokusingatha ilifu elilawulwayo elikuvumela ukuba uphumeze iisayithi ze-WordPress kubaboneleli belifu abohlukeneyo njenge-DigitalOcean, AWS, Google Cloud, nokunye. Olu dityaniso lwenza ukuvumelanisa kweedomain ngokuzenzekelayo kunye nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite ne-Cloudways.

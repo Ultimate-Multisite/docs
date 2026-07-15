@@ -4,7 +4,7 @@ title: क्रिया - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# एक्शन: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# एक्शन: wu_captcha_after_validation
 
 कैप्चा सत्यापन के बाद ट्रिगर होता है।
 

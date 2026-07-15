@@ -3,7 +3,7 @@ title: RunCloud ပေါင်းစပ်ခြင်း
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud ပေါင်းစည်းမှု {#runcloud-integration}
+# RunCloud ပေါင်းစည်းမှု
 
 ## အကျဉ်းချုပ် {#overview}
 RunCloud သည် cloud-based server စီမံခန့်ခွဲရေး platform တစ်ခုဖြစ်ပြီး သင့်ကိုယ်ပိုင် cloud server များပေါ်တွင် web application များကို လွယ်ကူစွာ deploy လုပ်ပြီး စီမံခန့်ခွဲနိုင်စေပါသည်။ ဤပေါင်းစည်းမှုသည် Ultimate Multisite နှင့် RunCloud အကြား domain အလိုအလျောက် sync လုပ်ခြင်းနှင့် SSL certificate စီမံခန့်ခွဲမှုကို ဖြစ်နိုင်စေပါသည်။

@@ -3,7 +3,7 @@ title: 'Sapak 3: Toruňyzy sazlamak'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Sapak 3: Toruňyzy gurnamak {#lesson-3-setting-up-your-network}
+# Sapak 3: Toruňyzy gurnamak
 
 Gurmaga wagt geldi. Bu sapakda Ultimate Multisite gurnarsyňyz we FitSite torunyň binýadyny sazlamaga başlarsyňyz. Bu ýerdäki her bir karar fitness ugruny göz öňünde tutup kabul edilýär.
 

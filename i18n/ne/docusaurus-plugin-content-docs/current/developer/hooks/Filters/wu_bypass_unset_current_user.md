@@ -4,7 +4,7 @@ title: फिल्टर - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# फिल्टर: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# फिल्टर: wu_bypass_unset_current_user
 
 विकासकर्ताहरूलाई हालको प्रयोगकर्ता हटाउने कोडलाई छल्न अनुमति दिनुहोस्।
 

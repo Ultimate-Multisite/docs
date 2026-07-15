@@ -3,7 +3,7 @@ title: 'Leçon 4 : Créer des modèles de niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leçon 4 : Créer des modèles de niche {#lesson-4-building-niche-templates}
+# Leçon 4 : Créer des modèles de niche
 
 Les modèles (templates) sont au cœur de votre proposition de valeur de niche. Un propriétaire de studio de fitness qui s'inscrit et voit un site qui ressemble déjà à un site de fitness — avec des horaires de cours, des profils d'entraîneurs et les bonnes images — est beaucoup plus susceptible de rester qu'un propriétaire qui voit une toile vierge.
 

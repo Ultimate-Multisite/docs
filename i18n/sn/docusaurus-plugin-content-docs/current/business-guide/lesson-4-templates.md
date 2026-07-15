@@ -3,7 +3,7 @@ title: 'Chidzidzo 4: Kuvaka Matemplate eNiche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Chidzidzo 4: Kuvaka Matemplate eNiche {#lesson-4-building-niche-templates}
+# Chidzidzo 4: Kuvaka Matemplate eNiche
 
 Matemplate ndiwo musimboti wechivimbiso chekukosha kwe niche yako. Muridzi wefitness studio anosaina obva aona saiti yatotarisika sewebsite yefitness -- ine mashejuro emakirasi, maprofile evadzidzisi, nemifananidzo yakakodzera -- ane mukana mukuru wekugara kupfuura anoona peji risina chinhu.
 

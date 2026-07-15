@@ -3,7 +3,7 @@ title: ਸੈਟਿੰਗਾਂ ਦਾ ਹਵਾਲਾ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# ਸੈਟਿੰਗਾਂ ਸੰਦਰਭ {#settings-reference}
+# ਸੈਟਿੰਗਾਂ ਸੰਦਰਭ
 
 ਇਹ ਪੰਨਾ ਉਹ ਸੈਟਿੰਗਾਂ ਟ੍ਰੈਕ ਕਰਦਾ ਹੈ ਜੋ Ultimate Multisite ਵਿੱਚ ਰੋਜ਼ਾਨਾ ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਹਾਲੀਆ ਵਿਵਹਾਰਕ ਬਦਲਾਵਾਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀਆਂ ਹਨ।
 

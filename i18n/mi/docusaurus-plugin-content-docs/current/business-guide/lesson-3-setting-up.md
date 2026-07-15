@@ -3,7 +3,7 @@ title: 'Akoranga 3: Te Whakarite i Tō Whatunga'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Akoranga 3: Te Whakarite i Tō Whatunga {#lesson-3-setting-up-your-network}
+# Akoranga 3: Te Whakarite i Tō Whatunga
 
 Kua tae ki te wā hanga. I tēnei akoranga ka tāuta koe i Ultimate Multisite, ā, ka whirihora i te tūāpapa o te whatunga FitSite. Ka mahia ia whakatau i konei me te aronga whakapakari tinana i te hinengaro.
 

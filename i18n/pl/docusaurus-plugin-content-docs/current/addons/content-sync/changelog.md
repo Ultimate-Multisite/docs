@@ -3,7 +3,7 @@ title: Zmiany w Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Dziennik zmian Content Sync {#content-sync-changelog}
+# Dziennik zmian Content Sync
 
 ### Wersja 1.1.0 - Wydana 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nowość: Obsługa synchronizacji wszystkich typów postów (posty, strony, niestandardowe typy postów)

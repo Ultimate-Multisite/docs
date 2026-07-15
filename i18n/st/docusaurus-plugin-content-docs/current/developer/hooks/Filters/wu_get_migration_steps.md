@@ -4,7 +4,7 @@ title: Sefe - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Sefe: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Sefe: wu_get_migration_steps
 
 Dumella bahlahisi le add-ons ho eketsa mehato e mecha ya phalliso
 

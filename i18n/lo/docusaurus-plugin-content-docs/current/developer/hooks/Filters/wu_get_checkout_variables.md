@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# ຕົວກອງ: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# ຕົວກອງ: wu_get_checkout_variables
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ກອງຄ່າທີ່ຕັ້ງໄວ້ລ່ວງໜ້າຂອງໜ້າ checkout.
 

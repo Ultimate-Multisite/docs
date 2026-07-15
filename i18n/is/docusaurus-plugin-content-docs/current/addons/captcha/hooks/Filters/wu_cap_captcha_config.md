@@ -4,7 +4,7 @@ title: Sía - wu_cap_captcha_config
 sidebar_label: wu_cap_captcha_config
 _i18n_hash: 4b2098b3e8b83cdcca2c6b5098059305
 ---
-# Sía: wu_cap_captcha_config {#filter-wucapcaptchaconfig}
+# Sía: wu_cap_captcha_config
 
 Sía Cap Captcha stillingarnar.
 

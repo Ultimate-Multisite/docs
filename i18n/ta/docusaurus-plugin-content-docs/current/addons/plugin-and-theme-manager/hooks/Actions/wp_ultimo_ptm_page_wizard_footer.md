@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# Action: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# Action: wp_ultimo_ptm_page_wizard_footer
 
 plugin உருவாக்குநர்கள் (developers) பக்கத்தின் அடிப்பகுதியில் ஸ்கிரிப்ட்களைச் சேர்க்க இது அனுமதிக்கிறது.
 

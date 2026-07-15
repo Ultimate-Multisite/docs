@@ -3,7 +3,7 @@ title: قوشۇمچە Sunrise ھۆججەت يۈكلىگۈچىسى
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# قوشۇمچە دېتال Sunrise ھۆججەت يۈكلىگۈچىسى {#addon-sunrise-file-loader}
+# قوشۇمچە دېتال Sunrise ھۆججەت يۈكلىگۈچىسى
 
 Ultimate Multisite 2.8.0 قوشۇمچە دېتاللار ۋە خاس MU-plugin بىرلەشتۈرۈشلىرى ئۈچۈن sunrise كېڭەيتىلمە يۈكلىگۈچىسى قوشىدۇ؛ بۇلار WordPress sunrise دەسلەپكى قوزغىتىلىشى جەريانىدا، ھاسىل قىلىنغان `wp-content/sunrise.php` ھۆججىتىنى تەھرىرلىمەي ئىجرا قىلىنىشى كېرەك.
 

@@ -4,7 +4,7 @@ title: Mahi - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Mahi: wu_cart_setup {#action-wucartsetup}
+# Mahi: wu_cart_setup
 
 Tukua ngā kaiwhakawhanake kia mahi i ētahi atu panonitanga ki te ahanoa checkout.
 

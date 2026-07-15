@@ -4,7 +4,7 @@ title: Filtre - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filtre: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# Filtre: wp_ultimo_site_exporter_get_option
 
 Renvoie la valeur de l'option réseau sous forme de slug.
 

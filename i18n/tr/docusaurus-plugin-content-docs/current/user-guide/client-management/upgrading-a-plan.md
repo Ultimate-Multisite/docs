@@ -3,7 +3,7 @@ title: Bir Planı Yükseltme
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Bir Planı Yükseltme (v2) {#upgrading-a-plan-v2}
+# Bir Planı Yükseltme (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 

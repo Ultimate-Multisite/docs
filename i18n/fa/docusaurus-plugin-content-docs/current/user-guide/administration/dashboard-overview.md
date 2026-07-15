@@ -3,7 +3,7 @@ title: نمای کلی داشبورد
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# مروری بر داشبورد {#dashboard-overview}
+# مروری بر داشبورد
 
 Ultimate Multisite یک **داشبورد** اختصاصی در منوی Ultimate Multisite دارد و همچنین ویجت‌هایی به داشبورد شبکه اضافه می‌کند. این مقاله آنچه را که در هر دو بخش خواهید دید، پوشش می‌دهد.
 

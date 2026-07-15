@@ -3,7 +3,7 @@ title: Tractatio Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Tractatio {#webhook-handling}
+# Webhook Tractatio
 
 Crea proprios webhook terminos ut eventa a servitiis externis accipias et data cum Ultimate Multisite synchronizes.
 

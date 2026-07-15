@@ -3,7 +3,7 @@ title: เอกสารสำหรับนักพัฒนา
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# เอกสารสำหรับนักพัฒนา {#developer-documentation}
+# เอกสารสำหรับนักพัฒนา
 
 คู่มือนี้รวบรวมทุกสิ่งที่นักพัฒนาต้องรู้สำหรับการเชื่อมต่อ (integrate), การขยาย (extend), หรือการพัฒนา addon สำหรับ Ultimate Multisite Ultimate Multisite จะเปลี่ยนเครือข่าย WordPress Multisite ให้กลายเป็นแพลตฟอร์มแบบ Website-as-a-Service (WaaS)
 

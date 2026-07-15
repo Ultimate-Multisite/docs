@@ -3,7 +3,7 @@ title: Ontwerprigting
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Ontwerprigting {#design-direction}
+# Ontwerprigting
 
 Die **Ontwerprigting**-stap laat jou toe om die visuele ontwerp van jou tema te hersien, te verfyn en te finaliseer voordat Theme Builder die volledige tema genereer.
 

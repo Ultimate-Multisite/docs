@@ -4,7 +4,7 @@ title: 過濾器 - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filter: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filter: signup_get_available_languages
 
 用來過濾前端網站註冊時可用的語言列表。
 

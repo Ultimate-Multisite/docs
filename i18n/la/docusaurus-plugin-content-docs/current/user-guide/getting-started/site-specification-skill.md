@@ -3,7 +3,7 @@ title: Specifica del sito habilidad
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Hilla Specifica del Sito {#site-specification-skill}
+# Hilla Specifica del Sito
 
 La competenza **Site Specification** (Specificatio del Sito) es un enfoque estructurado para capturar los objetivos de tu sitio, la audiencia y la identidad de marca. Esta información se almacena en tu memoria **site_brief**, a la cual los agentes hacen referencia entre sesiones para proporcionar asistencia coherente y consciente del contexto.
 

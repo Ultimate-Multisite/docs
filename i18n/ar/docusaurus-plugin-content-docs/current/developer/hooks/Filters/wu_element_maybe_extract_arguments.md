@@ -4,7 +4,7 @@ title: فلتر - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# المرشح: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# المرشح: wu_element_maybe_extract_arguments
 
 يضيف مرشحًا عامًا للسماح للمطورين بتوسيع هذا المحلل للتعامل مع منشئي أو ملحقات إضافية.
 

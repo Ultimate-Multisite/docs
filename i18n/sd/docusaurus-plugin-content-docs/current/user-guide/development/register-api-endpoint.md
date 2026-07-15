@@ -3,7 +3,7 @@ title: API اينڊ پيئسٽ پوائنٽ رجسٹر ڪريو
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# The Ultimate Multisite Register API endpoint
 
 اِس ٹیوٹوریل میں، آپ سیکھیں گے کہ اپنے نیٹ ورک کے لیے ایک نئے کسٹمر کا پورا آن بورڈنگ عمل کیسے شروع کرنا ہے اور اسے Zapier کے ذریعے کیسے کرنا ہے۔
 

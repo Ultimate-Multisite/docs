@@ -3,7 +3,7 @@ title: Migrado de Tria Parte Modo
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migriĝo al Modo de Tria Parte {#third-party-mode-migration}
+# Migriĝo al Modo de Tria Parte
 
 Superdav AI Agent v1.12.0 ŝanĝas la maniron, kiel estas manebleti tripartajn kapablitajn funkciojn. **La modo de tria parte nun defaultas al auto**, permesante nativan integriĝon kun WordPress Abilities API sur WordPress 7.0+ sen manua konfigurita.
 

@@ -4,7 +4,7 @@ title: Scagaire - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Scagaire: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Scagaire: wp_ultimo_render_vars
 
 Ligeann sé d'fhorbróirí plugin athróg bhreise a chur leis an gcomhthéacs rindreála go domhanda.
 

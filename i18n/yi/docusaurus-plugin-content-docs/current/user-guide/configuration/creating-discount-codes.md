@@ -3,7 +3,7 @@ title: שאַפֿן אַראָפּרעכענונג־קאָדן
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# שאַפֿן אַראָפּרעכענונג־קאָדן (v2) {#creating-discount-codes-v2}
+# שאַפֿן אַראָפּרעכענונג־קאָדן (v2)
 
 _**וויכטיקע באַמערקונג: דער אַרטיקל באַציט זיך אויף Ultimate Multisite ווערסיע 2.x.**_
 

@@ -4,7 +4,7 @@ title: Filter - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filter: wu_pending_payment_message
 
 തീർപ്പാക്കാത്ത പേയ്‌മെന്റുകളെക്കുറിച്ചുള്ള സന്ദേശം മാറ്റാൻ ഇത് ഉപയോക്താവിനെ അനുവദിക്കുന്നു.
 

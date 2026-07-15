@@ -3,7 +3,7 @@ title: কৰ ব্যৱস্থাপনা
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# কৰ ব্যৱস্থাপনা {#tax-handling}
+# কৰ ব্যৱস্থাপনা
 
 Ultimate Multisite-ৰ আমাৰ মূল plugin-ত কৰ সংগ্ৰহৰ এটা module অন্তৰ্ভুক্ত আছে, সেয়েহে আপোনাৰ plan, package আৰু সেৱাসমূহত sales tax সংগ্ৰহ কৰিব লাগিলে, কোনো অতিৰিক্ত সংযোজন install নকৰাকৈ আপুনি সহজে তেনে কৰিব পাৰে।
 

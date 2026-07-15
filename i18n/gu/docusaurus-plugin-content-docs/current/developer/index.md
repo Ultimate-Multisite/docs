@@ -3,7 +3,7 @@ title: વિકાસક દસ્તાવેજીકરણ
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ડેવલપર ડોક્યુમેન્ટેશન {#developer-documentation}
+# ડેવલપર ડોક્યુમેન્ટેશન
 
 આ માર્ગદર્શિકા ડેવલપર્સને Ultimate Multisite સાથે ઇન્ટિગ્રેટ કરવા, એક્સટેન્ડ કરવા અથવા એડઓન ડેવલ કરવા માટે જરૂરી બધું પ્રદાન કરે છે. Ultimate Multisite એક WordPress Multisite ને Website-as-a-Service (WaaS) પ્લેટફોર્મમાં રૂપાંતરિત કરે છે.
 

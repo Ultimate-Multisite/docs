@@ -3,7 +3,7 @@ title: Fahaizana ny endrika Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Fahaizana Amin'ny Design System Aesthetics {#design-system-aesthetics-skill}
+# Fahaizana Amin'ny Design System Aesthetics
 
 Ny **Fahaizana amin'ny Design System Aesthetics** dia fomba iray mitarika mba hanatsarana ny maha-izy azy an'ny endriky ny tranokalanareo. Manampy anao handray fanapahan-kevitra mifandraika (mifanaraka) momba ny tipografia, loko, toerana misy (spacing), ary ireo "tokens" momba ny fihetsika izay mamolavola ny design system anareo.
 

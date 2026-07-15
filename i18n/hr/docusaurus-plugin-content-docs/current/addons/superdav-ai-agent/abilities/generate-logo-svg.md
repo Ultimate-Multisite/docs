@@ -3,7 +3,7 @@ title: Generiraj SVG logotipa
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generiranje SVG logotipa {#generate-logo-svg}
+# Generiranje SVG logotipa
 
 Mogućnost **Generiranje SVG logotipa** omogućuje Theme Builderu stvaranje i ugradnju prilagođenih SVG logotipa izravno u vašu WordPress stranicu uz automatsko pročišćavanje sigurno za imenske prostore.
 

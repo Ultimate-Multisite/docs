@@ -4,7 +4,7 @@ title: Сүзгі - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Сүзгі: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# Сүзгі: wu_apc_process_page_content
 
 Әзірлеушілерге соңғы мазмұнды өзгертуге мүмкіндік береді
 

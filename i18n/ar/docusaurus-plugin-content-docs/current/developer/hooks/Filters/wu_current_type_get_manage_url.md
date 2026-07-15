@@ -4,7 +4,7 @@ title: 'مرشح - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# عامل التصفية: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
+# عامل التصفية: wu_current_\{$type\}_get_manage_url
 
 يتيح للمطورين تعديل معلمات عنوان URL لإدارة الموقع.
 

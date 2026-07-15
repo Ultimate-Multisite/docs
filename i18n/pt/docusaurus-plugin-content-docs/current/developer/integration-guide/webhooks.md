@@ -3,7 +3,7 @@ title: Tratamento de Webhooks
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gestão de Webhooks {#webhook-handling}
+# Gestão de Webhooks
 
 Crie endpoints de webhook personalizados para receber eventos de serviços externos e sincronizar dados com Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: پاڵێوەر - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# پاڵێوەر: send_auth_cookies {#filter-sendauthcookies}
+# پاڵێوەر: send_auth_cookies
 
 ڕێگە دەدات پێشگیری لە ناردنی ڕاستەقینەی auth cookies بۆ کڕیار بکرێت.
 

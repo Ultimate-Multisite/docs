@@ -3,7 +3,7 @@ title: 多站点设置向导
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# 多站点设置向导 {#multisite-setup-wizard}
+# 多站点设置向导
 
 Ultimate Multisite 包含一个内置向导，能够自动将标准 WordPress 安装转换为 WordPress 多站点网络。这样就不需要手动编辑 `wp-config.php` 或运行数据库命令。
 

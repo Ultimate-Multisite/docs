@@ -4,7 +4,7 @@ title: Iragazkia - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Iragazkia: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Iragazkia: wu_rest_delete_item
 
 Eskaerarekin jarraitzea baimenduta dagoen ala ez iragazten du.
 

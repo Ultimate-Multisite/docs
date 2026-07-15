@@ -3,7 +3,7 @@ title: Izveidojot savu pirmo abīkuma produktu
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Izveido jūsu pirmo abonēšanas produktu (v2) {#creating-your-first-subscription-product-v2}
+# Izveido jūsu pirmo abonēšanas produktu (v2)
 
 _**SVARĪTĀ PIEZI: Šis raksts ir tikai Ultimate Multisite versijas 2.x lietotājiem. Ja jūs izmantojat versiju 1.x,**_ **skatieties šo rakstu**_.
 

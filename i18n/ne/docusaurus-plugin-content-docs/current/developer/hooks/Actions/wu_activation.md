@@ -4,7 +4,7 @@ title: कार्य - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# कार्य: wu_activation {#action-wuactivation}
+# कार्य: wu_activation
 
 plugin का अन्य भागहरूलाई सक्रियताका लागि आफ्ना routine हरू जोड्न दिनुहोस्
 

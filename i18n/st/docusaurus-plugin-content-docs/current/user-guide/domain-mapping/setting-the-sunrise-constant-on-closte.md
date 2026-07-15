@@ -3,7 +3,7 @@ title: Ho setse Constant ea Sunrise ka Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Set Constant Sunrise ho e true a Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Set Constant Sunrise ho e true a Closte
 
 Ho ba leba ba seba (host providers) ba go fana ka seba (security reasons). Le fa, Ultimate Multisite ha seba go bona seba (automatically edit) le seba (constants) tse di fetang go ba leba mapuo a domain le dipuo tse ding. Closte ke seba se se fetang.
 

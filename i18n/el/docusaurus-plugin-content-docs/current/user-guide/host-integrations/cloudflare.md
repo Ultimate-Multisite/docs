@@ -3,7 +3,7 @@ title: Ενσωμάτωση Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Ενσωμάτωση Cloudflare {#cloudflare-integration}
+# Ενσωμάτωση Cloudflare
 
 ## Επισκόπηση {#overview}
 Το Cloudflare είναι ένα κορυφαίο δίκτυο διανομής περιεχομένου (CDN) και πάροχος ασφάλειας που βοηθά στην προστασία και την επιτάχυνση ιστότοπων. Αυτή η ενσωμάτωση επιτρέπει την αυτόματη διαχείριση τομέων μεταξύ Ultimate Multisite και Cloudflare, ιδιαίτερα για εγκαταστάσεις multisite με υποτομείς.

@@ -3,7 +3,7 @@ title: ਡਿਵੈਲਪਰ ਡਾਕੂਮੈਂਟੇਸ਼ਨ
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ਡਿਵੈਲਪਰ ਡਾਕੂਮੈਂਟੇਸ਼ਨ {#developer-documentation}
+# ਡਿਵੈਲਪਰ ਡਾਕੂਮੈਂਟੇਸ਼ਨ
 
 ਇਹ ਗਾਈਡ ਡਿਵੈਲਪਰਾਂ ਨੂੰ Ultimate Multisite ਨਾਲ ਇੰਟੀਗ੍ਰੇਟ ਕਰਨ, ਇਸਨੂੰ ਐਕਸਟੈਂਡ ਕਰਨ, ਜਾਂ ਇਸ ਲਈ ਐਡਨ (addons) ਬਣਾਉਣ ਲਈ ਲੋੜੀਂਦੀ ਹਰ ਚੀਜ਼ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ। Ultimate Multisite ਇੱਕ WordPress Multisite ਨੈੱਟਵਰਕ ਨੂੰ Website-as-a-Service (WaaS) ਪਲੇਟਫਾਰਮ ਵਿੱਚ ਬਦਲ ਦਿੰਦਾ ਹੈ।
 

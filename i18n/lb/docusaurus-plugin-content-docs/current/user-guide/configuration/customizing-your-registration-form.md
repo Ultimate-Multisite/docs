@@ -3,7 +3,7 @@ title: Äert Registréierungsformular upassen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Deng Registréierungsformular upassen {#customizing-your-registration-form}
+# Deng Registréierungsformular upassen
 
 Fir däi Netzwierk eenzegaarteg ausgesinn ze loossen am Verglach mat all deenen anere SaaS, déi op der WordPress-Plattform gebaut sinn, erlaabt Ultimate Multisite dir, deng Registréierungs- a Login-Säite mat eiser **Checkout Forms**-Funktioun unzepassen.
 

@@ -3,7 +3,7 @@ title: Mwayi wa Kukhala kwa Mwayi
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow ya Kutsja ya Sovereign {#sovereign-migration-workflow}
+# Workflow ya Kutsja ya Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imapanga mabula (gates) ya kuthibitisha migiraki pa kupita kuhamisha subsite ya kawaida kwenda mazingira ya sovereign tenant.
 

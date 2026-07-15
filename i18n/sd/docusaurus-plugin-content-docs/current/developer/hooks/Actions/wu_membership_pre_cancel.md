@@ -4,7 +4,7 @@ title: عمل - wu_membership_pre_cancel
 sidebar_label: wu_membership_pre_cancel
 _i18n_hash: 0a9e6270824bf3aeac93b4ad8909f4d3
 ---
-# Action: wu_membership_pre_cancel {#action-wumembershipprecancel}
+# Action: wu_membership_pre_cancel
 
 ميمبرشپ منسوخ ٿيڻ کان اڳ ٽرگر ٿئي ٿو.
 

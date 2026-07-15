@@ -3,7 +3,7 @@ title: Hestia Удирдлагын тавцан нэгтгэл
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel-и Интеграци {#hestia-control-panel-integration}
+# Hestia Control Panel-и Интеграци
 
 Энэхүү зааврыг таны Ultimate Multisite Hestia интеграцийг тохируулах, ингэснээр таны сүлжээнд байгаа доменүүд нь Hestia-д Web Domain Alias болгон автоматаар нэмэгдэх (багаар) болохыг тайлбарлаж байна.
 

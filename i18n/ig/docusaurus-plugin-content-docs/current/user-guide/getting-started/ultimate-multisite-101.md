@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite na-plugin WordPress nke na-eme ka ị nwere ike ịdepụta WaaS (Websites as a Service) ma ọ bụ Websites kama A Service maka ndị khách. Ka anyị abụghị ịgwo n'obi na ịmụ ihe Ultimate Multisite ga-arị ịnweta ụlọ gị na ndị khách gị, onweghị ihe njikọ nke abụgbara dị mma nke a bụ ihe niile anyị ga-agbaje.
 

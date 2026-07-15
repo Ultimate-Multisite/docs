@@ -3,7 +3,7 @@ title: د چک اوټ فارمز
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms هم নতুন কাস্টমারদের রূপান্তর করার চেষ্টা করার সময় বিভিন্ন পদ্ধতি নিয়ে পরীক্ষা করার জন্য একটি সহজ এবং নমনীয় উপায়।
 

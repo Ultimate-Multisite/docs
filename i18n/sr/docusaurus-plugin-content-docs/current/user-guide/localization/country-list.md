@@ -3,7 +3,7 @@ title: Lista zemalja
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Преупоређивање списка {country} у Ultimate Multisite-у {#re-ordering-the-ultimate-multisite-country-list}
+# Преупоређивање списка {country} у Ultimate Multisite-у
 
 Дуопаун за избор земље је поређаном азбукама на основу енглеских варијанти имена земља. Ово може значити да, понекад, земља где се налази ваша компанија и/или већина ваших клијената буде у међу둠у огромног списка имена земља.
 

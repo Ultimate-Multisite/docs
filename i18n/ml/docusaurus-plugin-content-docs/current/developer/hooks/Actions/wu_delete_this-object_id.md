@@ -4,7 +4,7 @@ title: 'Action - wu_delete_{$this->object_id}'
 sidebar_label: 'wu_delete_{$this->object_id}'
 _i18n_hash: 8525ca1e747ac6a29314c90b0a52b3bb
 ---
-# Action: wu_delete_{$this->object_id} {#action-wudeletethis-objectid}
+# Action: wu_delete_{$this->object_id}
 
 ഡിലീറ്റിംഗ് പ്രക്രിയയിൽ പ്രവർത്തനങ്ങൾ (actions) ചേർക്കാൻ പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

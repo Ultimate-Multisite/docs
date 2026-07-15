@@ -3,7 +3,7 @@ title: '6 pamoka: Registracijos patirtis'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 6 pamoka: registracijos patirtis {#lesson-6-the-signup-experience}
+# 6 pamoka: registracijos patirtis
 
 Atsiskaitymo eiga yra vieta, kur susidomėjimas tampa pajamomis. Painus arba bendrinis registracijos procesas praranda klientus. Nišai pritaikyta eiga, kalbanti jų kalba ir atrodanti be pastangų, juos konvertuoja.
 

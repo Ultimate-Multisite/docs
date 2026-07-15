@@ -4,7 +4,7 @@ title: පෙරහන - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# පෙරහන: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# පෙරහන: wu_page_get_title_links
 
 plugin සංවර්ධකයින්ට සහ අපට, අපගේ සංස්කරණ පිටුවලට ක්‍රියා සබැඳි එක් කිරීමට ඉඩ දෙයි.
 

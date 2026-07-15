@@ -3,7 +3,7 @@ title: Fusha e Kontodave dhe DNS i Klientit
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Menaxhimi i Fushës së Checkout dhe DNS-it të Klientit {#checkout-field-and-customer-dns-management}
+# Menaxhimi i Fushës së Checkout dhe DNS-it të Klientit
 
 ## Fusha e Zgjedhjes së Domenit në Checkout {#the-domain-selection-checkout-field}
 

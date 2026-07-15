@@ -3,7 +3,7 @@ title: Grundkonsept
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Grundlæggandi konseptir {#basic-concepts}
+# Grundlæggandi konseptir
 
 Fyrir nýja notandafólks WordPress Multisite og fólks sem byrjar að nota Ultimate Multisite, getur það verið mjög ný og ókunnugt orða og hugtök á fyrsta stund. Það er mikilvægt að læra þau fyrir því að þú þarft að skilja plattforma og hvernig hún virkar sem heildarverk.
 

@@ -4,7 +4,7 @@ title: فلٽر - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# فلٽر: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# فلٽر: wu_view_override_replaceable_views
 
 ڊولپرز کي replaceable فهرست ۾ اضافي فولڊر شامل ڪرڻ جي اجازت ڏئي ٿو.
 

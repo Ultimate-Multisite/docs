@@ -4,7 +4,7 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# 過濾器：wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# 過濾器：wu_woocommerce_line_item_params
 
 在將客戶導向 WooCommerce 結帳頁面之前，過濾用於建立 WooCommerce 購物車商品項目的參數。
 

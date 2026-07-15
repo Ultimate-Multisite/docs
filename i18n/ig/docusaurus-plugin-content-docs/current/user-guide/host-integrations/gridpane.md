@@ -3,7 +3,7 @@ title: Nkwado Pane Integration
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration GridPane {#gridpane-integration}
+# Integration GridPane
 
 ## Nhìn Chung {#overview}
 GridPane na ọkọ ọkọ đặc biệt nwere WordPress, được xây dựng cho những người làm WordPress chuyên nghiệp. Cái tích hợp này giúp đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và GridPane.

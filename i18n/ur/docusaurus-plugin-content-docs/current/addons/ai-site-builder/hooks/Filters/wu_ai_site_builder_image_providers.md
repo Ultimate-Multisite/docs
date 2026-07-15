@@ -4,7 +4,7 @@ title: فلٹر - wu_ai_site_builder_image_providers
 sidebar_label: wu_ai_site_builder_image_providers
 _i18n_hash: 995fe14df700a1a85612bfb8e76578a1
 ---
-# فلٹر: wu_ai_site_builder_image_providers {#filter-wuaisitebuilderimageproviders}
+# فلٹر: wu_ai_site_builder_image_providers
 
 دستیاب امیج فراہم کنندگان (Image providers)
 

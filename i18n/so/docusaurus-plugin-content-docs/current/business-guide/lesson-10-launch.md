@@ -3,7 +3,7 @@ title: 'Casharka 10: Maalinta Daahfurka'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Casharka 10: Maalinta Daahfurka {#lesson-10-launch-day}
+# Casharka 10: Maalinta Daahfurka
 
 Wax walba waa la dhisay. Ka hor intaadan albaabbada furin, casharkani wuxuu dulmarayaa liiska hubinta ka hor daahfurka si loo xaqiijiyo inaysan jirin wax jaban, maqan, ama ceeb keeni kara.
 

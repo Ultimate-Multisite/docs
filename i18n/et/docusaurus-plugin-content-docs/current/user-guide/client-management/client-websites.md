@@ -3,7 +3,7 @@ title: Kliendide veebised
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Teised kliendite veebised (v2) {#your-clients-websites-v2}
+# Teised kliendite veebised (v2)
 
 Nõustudes oma võrku registreerimisse, pääseb teie kliendid oma dashboardi külastama.
 

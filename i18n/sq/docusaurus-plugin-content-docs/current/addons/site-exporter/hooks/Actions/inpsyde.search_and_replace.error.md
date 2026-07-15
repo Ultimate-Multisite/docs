@@ -4,7 +4,7 @@ title: Veprim - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Veprim: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Veprim: inpsyde.search_and_replace.error
 
 E injoron këtë hook nuk është i regjistruar nga WP Ultimo.
 

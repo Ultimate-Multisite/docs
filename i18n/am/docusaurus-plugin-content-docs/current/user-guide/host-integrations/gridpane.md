@@ -3,7 +3,7 @@ title: GridPane ማዋሃድ
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ውህደት {#gridpane-integration}
+# GridPane ውህደት
 
 ## አጠቃላይ እይታ {#overview}
 GridPane ለከባድ የWordPress ባለሙያዎች የተሰራ ልዩ የWordPress ሆስቲንግ መቆጣጠሪያ ፓነል ነው። ይህ ውህደት Ultimate Multisite እና GridPane መካከል የዶሜን ሲንክንጎን (domain syncing) እና የSSL ሰርቲፊኬት አስተዳደርን በራስ-ሰር ያደርጋል።

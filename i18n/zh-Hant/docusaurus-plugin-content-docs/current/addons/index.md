@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite 外掛 {#ultimate-multisite-addons}
+# Ultimate Multisite 外掛
 
 外掛可以為 Ultimate Multisite 增加額外的功能和整合。大多數外掛都是付費的，您可以在 [ultimatemultisite.com](https://ultimatemultisite.com) 購買。
 

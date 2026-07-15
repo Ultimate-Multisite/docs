@@ -3,7 +3,7 @@ title: Skills in Design System Aesthetics
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill Estetika Design System {#design-system-aesthetics-skill}
+# Skill Estetika Design System
 
 Il-**Skill Estetika Design System** huwa approċċ direttiva biex ti rifina l-identità visiva tal-sajtu tiegħek. Jidixxek biex tagħmel decisioni koheżivi dwar tipografija, kolori, spazjar, u motion tokens li jiddefinisu il-design system tiegħek.
 

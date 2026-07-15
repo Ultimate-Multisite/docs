@@ -3,7 +3,7 @@ title: Abakozi bubakiwemo
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Zubatswemo {#built-in-agents}
+# Agents Zubatswemo
 
 Gratis AI Agent v1.9.0 izana agents eshanu zubatswemo, buri imwe yateguwe mbere ifite urutonde rw’ibikoresho rwibanda ku ntego runaka, system prompt yayihariye, n’ibitekerezo byo gutangiriraho bihuye n’imirimo isanzwe muri icyo gice. Guhindura agent bihindura ibyo assistant ishobora gukora n’uko isubiza — nta configuration na imwe ugomba gukora ku ruhande rwawe. Superdav AI Agent v1.18.0 ishobora kongeramo ibikoresho byita kuri gahunda, inyandiko z’ibyibutswa, approval gates, n’imenyesha rya SMS muri izi workflows igihe integrations birebana byashyizweho.
 

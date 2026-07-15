@@ -4,7 +4,7 @@ title: ফিল্টার - wu_cap_captcha_config
 sidebar_label: wu_cap_captcha_config
 _i18n_hash: 4b2098b3e8b83cdcca2c6b5098059305
 ---
-# Filter: wu_cap_captcha_config {#filter-wucapcaptchaconfig}
+# Filter: wu_cap_captcha_config
 
 ক্যাপ ক্যাপচা কনফিগারেশন ফিল্টার করুন।
 

@@ -3,7 +3,7 @@ title: PayPal-a konpondu
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal-aren konponbidea (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal-aren konponbidea (v2)
 
 _**GIZKONTU NOTE ZERRE GIZKONTU: Hau artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du.**_
 

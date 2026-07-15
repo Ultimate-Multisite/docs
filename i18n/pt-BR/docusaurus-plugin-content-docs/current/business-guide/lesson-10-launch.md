@@ -3,7 +3,7 @@ title: 'Lição 10: Dia do Lançamento'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lição 10: Dia do Lançamento {#lesson-10-launch-day}
+# Lição 10: Dia do Lançamento
 
 Tudo foi construído. Antes de abrir as portas, esta lição passa por um checklist de pré-lançamento para garantir que nada esteja quebrado, faltando ou embaraçoso.
 

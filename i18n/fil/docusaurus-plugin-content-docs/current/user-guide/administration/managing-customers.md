@@ -3,7 +3,7 @@ title: Pamamahala ng mga Customer
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Pamamahala ng mga Customer {#managing-customers}
+# Pamamahala ng mga Customer
 
 Ang pahina ng **Customers** ay nagpapakita ng listahan ng mga miyembrong nakarehistro sa iyong network. Ipinapakita ng pahinang ito ang pangunahing impormasyon ng user tulad ng pangalan, email address, huling pag-login, at isang **switch to** na link na nagbibigay-daan sa iyong mag-login sa subsite ng user bilang site administrator.
 

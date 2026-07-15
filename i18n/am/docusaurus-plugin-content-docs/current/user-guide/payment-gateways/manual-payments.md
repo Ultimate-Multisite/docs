@@ -3,7 +3,7 @@ title: የእጅ ክፍያዎችን ማዋቀር
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# በእጅ የሚደረጉ ክፍያዎችን ማዋቀር (v2) {#setting-up-manual-payments-v2}
+# በእጅ የሚደረጉ ክፍያዎችን ማዋቀር (v2)
 
 _**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 

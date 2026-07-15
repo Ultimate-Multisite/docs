@@ -3,7 +3,7 @@ title: Fahadiana tsy mifanaraka
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Fandrim-pahalalina amin'ny Plugin hafa fantatra {#known-incompatibilities-with-other-plugins}
+# Fandrim-pahalalina amin'ny Plugin hafa fantatra
 
 Aorian'ny fametrahana sy fanatanterahana ny Ultimate Multisite, mety hahatsirana olana ianao noho tsy voavaha ireo tsy fampifanarahana (incompatibilities) amin'ny plugin hafa.
 

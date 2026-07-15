@@ -4,7 +4,7 @@ title: Criathrag - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Criathrag: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Criathrag: wu_ses_verification_integration
 
 Criathrag: ceadaich do chòd eile an nì amalachaidh SES a thoirt seachad.
 

@@ -3,7 +3,7 @@ title: Sistèm Estetik Konpènsi
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Savèt Estetik Sistèm Design {#design-system-aesthetics-skill}
+# Savèt Estetik Sistèm Design
 
 **Savèt Estetik Sistèm Design** se yon fason ki gide ou pou amelyore idantite vizyèl sit ou. Li ede w pran desizyon konsistan sou tipografi, koulè, espas (spacing), ak token mouvman (motion tokens) ki defini sistèm design ou a.
 

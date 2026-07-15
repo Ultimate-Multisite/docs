@@ -3,7 +3,7 @@ title: Dhisidda Isdhexgal Diiwaangeliye Gaar loo Habeeyey
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Dhisidda Isku-xirka Registrar Gaar ah {#building-a-custom-registrar-integration}
+# Dhisidda Isku-xirka Registrar Gaar ah
 
 Addon-ka Domain Seller wuxuu adeegsadaa qaabka **Integration Registry**. Registrar kasta waa PHP class hirgeliya `Domain_Selling_Capability` oo isdiiwaangeliya isaga oo adeegsanaya action hook-ka `wu_domain_seller_register_capabilities`.
 

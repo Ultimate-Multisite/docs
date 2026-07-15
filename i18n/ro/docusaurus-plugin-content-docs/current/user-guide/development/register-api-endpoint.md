@@ -3,7 +3,7 @@ title: Înregistrează endpointul API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Punctul final API /register Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Punctul final API /register Ultimate Multisite
 
 În acest tutorial, vei învăța cum să folosești punctul final API /register Ultimate Multisite pentru a crea întregul proces de onboarding pentru un client nou în rețeaua ta și cum să faci asta cu Zapier.
 

@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# வடிகட்டி: wu_sso_url {#filter-wussourl}
+# வடிகட்டி: wu_sso_url
 
 குறுக்கு-டொமைன் வாடிக்கையாளர் செயல்களுக்காக திருப்பி வழங்குவதற்கு முன், உருவாக்கப்பட்ட SSO URLகளை வடிகட்டுகிறது.
 

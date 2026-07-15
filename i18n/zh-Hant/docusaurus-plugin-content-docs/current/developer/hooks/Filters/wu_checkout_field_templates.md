@@ -4,7 +4,7 @@ title: 過濾器 - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# 篩選器：wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# 篩選器：wu_checkout_field_templates
 
 我們用來新增欄位模板的 API 會在此處掛鉤。
 

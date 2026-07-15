@@ -3,7 +3,7 @@ title: Ultimate Multisite चे भाषांतर करणे
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite चे भाषांतर {#translating-ultimate-multisite}
+# Ultimate Multisite चे भाषांतर
 
 Ultimate Multisite इंग्रजीत विकसित केले आहे, पण हे plugin पूर्णपणे भाषांतर करण्यायोग्य आहे आणि आम्ही भाषांतर योगदानांचे स्वागत करतो.
 

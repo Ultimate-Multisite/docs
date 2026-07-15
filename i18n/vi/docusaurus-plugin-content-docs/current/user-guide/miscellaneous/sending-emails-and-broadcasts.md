@@ -3,7 +3,7 @@ title: Gửi email và thông báo hàng loạt
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Gửi Email và Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Gửi Email và Broadcasts (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

@@ -3,7 +3,7 @@ title: Registriraj API endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint API Ultimate Multisite-a registracija {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint API Ultimate Multisite-a registracija
 
 U ovom tutorijalu naučit ćete kako koristiti endpoint API Ultimate Multisite /register za kreiranje cijelog procesa prijavljivanja novog klijenta u vašoj mreži i kako to napraviti s Zapierom.
 

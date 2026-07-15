@@ -3,7 +3,7 @@ title: API-põhja registreerimine
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite registre API punkt {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite registre API punkt
 
 Sellel õppemoodus tutvustab, kuidas kasutada Ultimate Multisite /register API endpunkti uue kliendi tervikliku juhatise protsessi loomiseks oma võrku ja kuidas seda Zapieriga teha.
 

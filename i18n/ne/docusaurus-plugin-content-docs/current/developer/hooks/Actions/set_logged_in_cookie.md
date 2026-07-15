@@ -4,7 +4,7 @@ title: कार्य - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# कार्य: set_logged_in_cookie {#action-setloggedincookie}
+# कार्य: set_logged_in_cookie
 
 लग-इन प्रमाणीकरण cookie सेट हुनु ठीक अघि चल्छ।
 

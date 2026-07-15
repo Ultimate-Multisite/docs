@@ -3,7 +3,7 @@ title: WPMU DEV ഇന്റഗ്രേഷൻ
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ഇന്റഗ്രേഷൻ {#wpmu-dev-integration}
+# WPMU DEV ഇന്റഗ്രേഷൻ
 
 ## അവലോകനം {#overview}
 WPMU DEV എന്നത് WordPress സൈറ്റുകൾക്ക് ഹോസ്റ്റിംഗ്, plugins, സേവനങ്ങൾ എന്നിവ നൽകുന്ന ഒരു സമ്പൂർണ്ണ WordPress പ്ലാറ്റ്ഫോമാണ്. ഈ ഇന്റഗ്രേഷൻ Ultimate Multisite-ഉം WPMU DEV ഹോസ്റ്റിംഗും തമ്മിൽ ഓട്ടോമാറ്റിക് ഡൊമെയ്ൻ സിൻക്കിംഗും SSL സർട്ടിഫിക്കറ്റ് മാനേജ്മെന്റും സാധ്യമാക്കുന്നു.

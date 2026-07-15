@@ -3,7 +3,7 @@ title: Usage-based Plans Changelog
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ölçümlü Planlar Değişiklik Günlüğü {#metered-plans-changelog}
+# Ölçümlü Planlar Değişiklik Günlüğü
 
 Version 1.1.0 - Yayınlandı: 2026-05-05
 - Yeni: Çoklu site alt siteleri için Yapay Zeka (AI) jeton faturalaması — Yapılandırılabilir jeton başına oranlarla müşteri siteleri genelindeki AI jeton kullanımını izleyin ve faturalandırın.

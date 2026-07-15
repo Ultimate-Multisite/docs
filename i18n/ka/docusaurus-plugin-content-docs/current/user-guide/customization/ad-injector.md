@@ -3,7 +3,7 @@ title: 광고 ინექტორი
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# പരസ്യების დამატება თქვენს ქსელზე Ultimate Multisite-ით: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# പരസ്യების დამატება თქვენს ქსელზე Ultimate Multisite-ით: Ad Injector
 
 Ultimate Multisite: Ad Injector არის **უფასო add-on**, რომელიც გიჭერს საშუალებას, თქვენს პლანებზე პირდაპირ მათი რედაქტირების გვერდიდან განათავსოთ പരസ്യები.
 

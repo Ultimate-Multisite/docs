@@ -3,7 +3,7 @@ title: Konfigirasyon ak Pwovizyon
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vendeur de Domaine : Configuration et Fournisseurs {#domain-seller-setup-and-provider-configuration}
+# Vendeur de Domaine : Configuration et Fournisseurs
 
 L'addon Domain Seller vient avec un assistant d'installation guidé qui vous accompagne à travers chaque étape nécessaire. Cette page couvre le déroulement de l'assistant et comment configurer ou reconfigurer les fournisseurs après.
 

@@ -4,7 +4,7 @@ title: Filtr - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Filtr: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Filtr: wu_password_require_number
 
 Filtr, który decyduje, czy hasła muszą zawierać cyfry.
 

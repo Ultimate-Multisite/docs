@@ -4,7 +4,7 @@ title: ছাঁকনি - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Filter: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Filter: wu_password_require_number
 
 প্ৰয়োজনীয়তা: পাছৱৰ্ডত সংখ্যাৰ প্ৰয়োজন হ'ল নে নাই।
 

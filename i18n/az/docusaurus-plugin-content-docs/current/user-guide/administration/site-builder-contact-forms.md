@@ -3,7 +3,7 @@ title: Sayt Qurucu Kontakt Formları
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Əlaqə Formları {#site-builder-contact-forms}
+# Site Builder Əlaqə Formları
 
 Superdav AI Agent v1.10.0, Site Builder agent-i vasitəsilə söhbət interfeysindən birbaşa əlaqə formları yaratma imkanı əlavə edir. Bu, sizə söhbətdən çıxmadan istənilən səhifəyə tam funksional əlaqə formları əlavə etməyə imkan verir.
 

@@ -4,7 +4,7 @@ title: Tace - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Tacewa: retrieve_password_message {#filter-retrievepasswordmessage}
+# Tacewa: retrieve_password_message
 
 Yana tace jikin saƙon imel na sake saita kalmar sirri.
 

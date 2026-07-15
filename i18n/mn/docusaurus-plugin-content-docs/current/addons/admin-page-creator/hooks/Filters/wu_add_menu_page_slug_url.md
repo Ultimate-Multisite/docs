@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_add_menu_page_slug_url
 sidebar_label: wu_add_menu_page_slug_url
 _i18n_hash: 8f4d638285fc2ad67313b1b730e776f6
 ---
-# Шүүлтүүр: wu_add_menu_page_slug_url {#filter-wuaddmenupageslugurl}
+# Шүүлтүүр: wu_add_menu_page_slug_url
 
 Хөгжүүлэгчдэд URL-үүдийг шүүх боломж олгоно
 

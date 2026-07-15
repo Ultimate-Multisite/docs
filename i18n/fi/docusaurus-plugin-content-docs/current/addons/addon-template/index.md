@@ -3,9 +3,9 @@ title: Lisäosan mallipohja
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Lisäosan malli {#addon-template}
+# Lisäosan malli
 
-{{ADDON_DESCRIPTION}}
+Lisäosan mallipohja — Ultimate Multisite.
 
 ## Vaatimukset {#requirements}
 

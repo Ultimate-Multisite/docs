@@ -3,7 +3,7 @@ title: Tuhinga mō ngā Kaiwhakawhanake
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Tuhinga Kaiwhakawhanake {#developer-documentation}
+# Tuhinga Kaiwhakawhanake
 
 Ka whakarato tēnei aratohu ki ngā kaiwhakawhanake i ngā mea katoa e hiahiatia ana hei whakauru ki, hei whakawhānui, hei whakawhanake rānei i ngā addon mō Ultimate Multisite. Ka panoni a Ultimate Multisite i tētahi whatunga WordPress Multisite hei tūāpapa Website-as-a-Service (WaaS).
 

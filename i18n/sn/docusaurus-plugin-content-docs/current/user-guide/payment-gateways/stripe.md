@@ -3,7 +3,7 @@ title: Kupanga Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Kuita Kufamba ne Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Kuita Kufamba ne Stripe Gateway (v2)
 
 _**CHINARI CHINARI: Iriweiri iri rinore referera ku Ultimate Multisite version 2.x.**_
 

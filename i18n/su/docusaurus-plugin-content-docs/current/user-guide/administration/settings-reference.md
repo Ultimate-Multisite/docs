@@ -3,7 +3,7 @@ title: Rujukan Setélan
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Rujukan Settings {#settings-reference}
+# Rujukan Settings
 
 Kaca ieu ngalacak settings anu mangaruhan administrasi sapopoé jeung parobahan paripolah panganyarna dina Ultimate Multisite.
 

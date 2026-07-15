@@ -3,7 +3,7 @@ title: 'Casharka 14: Maxaa Xiga'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Casharka 14: Waxa Xiga {#lesson-14-what-comes-next}
+# Casharka 14: Waxa Xiga
 
 Waxaad meel eber ah ka dhistay madal website oo niche ah. FitSite waa live, waxay u adeegaysaa studio-yada fitness-ka, waxayna dhalinaysaa dakhli soo noqnoqda. Casharkan ugu dambeeya wuxuu eegayaa halka laga sii socdo.
 

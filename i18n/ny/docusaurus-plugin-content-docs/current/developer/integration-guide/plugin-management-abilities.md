@@ -3,7 +3,7 @@ title: Kuthekera Koyang'anira Ma Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kuthekera Koyang'anira Mapulogalamu Owonjezera {#plugin-management-abilities}
+# Kuthekera Koyang'anira Mapulogalamu Owonjezera
 
 Gratis AI Agent v1.5.0 imabwera ndi **kuthekera 7 koyang'anira mapulogalamu owonjezera** komwe wothandizira wa AI angayambitse pa zokambirana. Kuthekera kumeneku kumapereka ulamuliro wa mapulogalamu pa mapulogalamu owonjezera a WordPress omwe aikidwa kudzera mu [Dongosolo Lopangira Mapulogalamu Owonjezera ndi Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

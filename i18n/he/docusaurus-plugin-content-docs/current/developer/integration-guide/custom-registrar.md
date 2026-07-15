@@ -3,7 +3,7 @@ title: בניית אינטגרציה של רשם מותאם אישית
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# בניית אינטגרציה של רשם דומיינים מותאם אישית {#building-a-custom-registrar-integration}
+# בניית אינטגרציה של רשם דומיינים מותאם אישית
 
 התוסף Domain Seller משתמש בדפוס **Integration Registry** (מנגנון רישום אינטגרציות). כל רשם (registrar) הוא מחלקת PHP שמיישמת את הממשק `Domain_Selling_Capability` ורושמת את עצמה דרך ה-action hook `wu_domain_seller_register_capabilities`.
 

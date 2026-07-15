@@ -3,7 +3,7 @@ title: Menü erstellen
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menü erstellen {#create-menu}
+# Menü erstellen
 
 D'Fäegkeet **Menü erstellen** erstellt WordPress-Navigatiounsmenüe mat Ënnerstëtzung fir ënnerschiddlech Navigatiounslabelen, déi getrennt vu Säitentitele sinn.
 

@@ -3,7 +3,7 @@ title: 'Phunziro 2: Kusankha Gawo Lanu Lapadera'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Phunziro 2: Kusankha Msika Wanu Wapadera {#lesson-2-picking-your-niche}
+# Phunziro 2: Kusankha Msika Wanu Wapadera
 
 Mu Phunziro 1 tinakhazikitsa chifukwa chake msika wapadera umapambana zinthu za wamba. Tsopano muyenera kusankha wanu. Phunziro ili limakupatsani chimango chopezera ndi kutsimikizira msika wapadera musanayike nthawi yomangira.
 

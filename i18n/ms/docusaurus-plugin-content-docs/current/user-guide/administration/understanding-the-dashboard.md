@@ -3,7 +3,7 @@ title: Memahami Papan Pemuka
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Memahami Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Memahami Dashboard Ultimate Multisite
 
 Sebelum kita mendalami pilihan konfigurasi yang lebih lanjut dan aspek operasi Ultimate Multisite, mari kita lihat dahulu dashboard-nya.
 

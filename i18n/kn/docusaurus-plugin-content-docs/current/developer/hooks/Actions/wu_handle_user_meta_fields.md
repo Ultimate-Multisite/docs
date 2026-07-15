@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 ಪ್ಲಗ್ಇನ್ ಅಭಿವರ್ಧಕರು ತಮ್ಮ ಅಗತ್ಯವಿದ್ದರೆ ಬಳಕೆದಾರರ ಮೆಟಾ ಡೇಟಾವನ್ನು (user meta data) ವಿಭಿನ್ನ ರೀತಿಯಲ್ಲಿ ಉಳಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

@@ -3,7 +3,7 @@ title: 'Aralin 10: Araw ng Paglulunsad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Aralin 10: Araw ng Paglulunsad {#lesson-10-launch-day}
+# Aralin 10: Araw ng Paglulunsad
 
 Nabuo na ang lahat. Bago mo buksan ang mga pinto, gagabayan ka ng araling ito sa checklist bago ang paglulunsad upang matiyak na walang sira, kulang, o nakakahiya.
 

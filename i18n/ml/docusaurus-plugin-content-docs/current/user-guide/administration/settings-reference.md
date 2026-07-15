@@ -3,7 +3,7 @@ title: ക്രമീകരണങ്ങളുടെ റഫറൻസ്
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings റഫറൻസ് {#settings-reference}
+# Settings റഫറൻസ്
 
 ഈ പേജ് Ultimate Multisite-ലെ ദിവസേനയുള്ള ഭരണനിർവഹണത്തെ ബാധിക്കുന്ന ക്രമീകരണങ്ങളും അടുത്തകാലത്തെ പെരുമാറ്റ മാറ്റങ്ങളും രേഖപ്പെടുത്തുന്നു.
 

@@ -3,7 +3,7 @@ title: Ukulawula iisayithi
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ukulawula iiSayithi {#managing-sites}
+# Ukulawula iiSayithi
 
 IiSayithi (okanye iisayithi ezingaphantsi) zingundoqo weshishini lakho le-WaaS. Ultimate Multisite ineentlobo ezi-3 zeesayithi:
 

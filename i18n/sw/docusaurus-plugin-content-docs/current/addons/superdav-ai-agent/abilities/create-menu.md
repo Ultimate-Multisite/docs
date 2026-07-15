@@ -3,7 +3,7 @@ title: Tengeneza Menyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kuunda Menyu {#create-menu}
+# Kuunda Menyu
 
 Uwezo wa **Kuunda Menyu** unaunda menyu za uelekezaji za WordPress huku ukitoa uwezo wa kuweka viashiria vya uelekezaji tofauti na vichwa vya kurasa.
 

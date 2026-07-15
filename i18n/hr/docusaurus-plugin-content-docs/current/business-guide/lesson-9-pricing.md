@@ -3,7 +3,7 @@ title: 'Lekcija 9: Određivanje cijena za profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcija 9: Određivanje cijena za profit {#lesson-9-pricing-for-profit}
+# Lekcija 9: Određivanje cijena za profit
 
 U Lekciji 5 postavili smo početne cijene za FitSite planove. Sada dorađujemo strategiju cijena tehnikama koje povećavaju prihod, potiču nadogradnje i smanjuju odljeve korisnika.
 

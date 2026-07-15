@@ -4,7 +4,7 @@ title: क्रिया - wu_mcp_adapter_initialized
 sidebar_label: wu_mcp_adapter_initialized
 _i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
 ---
-# Action: wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
+# Action: wu_mcp_adapter_initialized
 
 यह तब ट्रिगर होता है जब MCP अडैप्टर को आरंभ (initialize) किया जाता है।
 

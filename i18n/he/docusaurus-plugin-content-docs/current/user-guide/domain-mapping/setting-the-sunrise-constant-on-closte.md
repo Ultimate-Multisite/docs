@@ -3,7 +3,7 @@ title: הגדרת קבוע Sunrise ב-Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# הגדרת קבוע Sunrise כ-true ב-Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# הגדרת קבוע Sunrise כ-true ב-Closte
 
 חלק מספקי האחסון נועלים את קובץ wp-config.php מסיבות אבטחה. המשמעות היא ש-Ultimate Multisite לא יכול לערוך את הקובץ באופן אוטומטי כדי להוסיף את הקבועים הנדרשים לפעולה תקינה של מיפוי דומיינים ותכונות נוספות. Closte הוא אחד מספקי האחסון הללו.
 

@@ -3,7 +3,7 @@ title: Mepụta Nchịkọta Nhọrọ
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Mepụta Menu {#create-menu}
+# Mepụta Menu
 
 Ikike **Mepụta Menu** na-emepụta menu njemgharị WordPress nwere nkwado maka akara njemgharị dị iche iche nke kewapụrụ na aha ibe.
 

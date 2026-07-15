@@ -3,7 +3,7 @@ title: Mamorona Menio
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Mamorona Menio {#create-menu}
+# Mamorona Menio
 
 Ny fahaiza-manao **Mamorona Menio** dia mamorona menio fitetezana WordPress miaraka amin'ny fanohanana mari-pamantarana fitetezana miavaka misaraka amin'ny lohatenin'ny pejy.
 

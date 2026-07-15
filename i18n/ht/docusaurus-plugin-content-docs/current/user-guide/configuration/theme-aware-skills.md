@@ -3,7 +3,7 @@ title: Konesans ki konpayi ak tem
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Compétences Sensibles au Thème {#theme-aware-skills}
+# Compétences Sensibles au Thème
 
 La Superdav AI Agent v1.10.0 déploie quatre nouvelles compétences intégrées sensibles au thème qui s'adaptent automatiquement à votre thème WordPress actif. Ces compétences offrent des conseils et des capacités spécialisées adaptées à l'architecture et aux fonctionnalités de votre thème.
 

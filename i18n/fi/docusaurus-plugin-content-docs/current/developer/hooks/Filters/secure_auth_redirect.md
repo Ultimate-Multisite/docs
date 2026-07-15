@@ -4,7 +4,7 @@ title: Suodatin - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Suodatin: secure_auth_redirect {#filter-secureauthredirect}
+# Suodatin: secure_auth_redirect
 
 Suodattaa, käytetäänkö suojattua todennuksen uudelleenohjausta.
 

@@ -4,7 +4,7 @@ title: Filtrum - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Colum: send_auth_cookies {#filter-sendauthcookies}
+# Colum: send_auth_cookies
 
 Permittit ne auth cookies re vera ad clientem mittantur.
 

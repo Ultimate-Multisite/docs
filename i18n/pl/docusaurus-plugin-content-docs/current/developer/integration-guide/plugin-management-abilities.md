@@ -3,7 +3,7 @@ title: Możliwości zarządzania wtyczkami
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Możliwości zarządzania pluginami {#plugin-management-abilities}
+# Możliwości zarządzania pluginami
 
 Gratis AI Agent v1.5.0 zawiera **7 możliwości zarządzania pluginami**, które asystent AI może wywołać podczas rozmowy. Te możliwości zapewniają programowy kontrolę nad pluginami WordPress zainstalowanymi za pośrednictwem [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

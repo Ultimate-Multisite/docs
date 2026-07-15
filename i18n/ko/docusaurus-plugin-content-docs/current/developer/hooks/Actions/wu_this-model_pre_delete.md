@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_pre_delete'
 sidebar_label: 'wu_{$this->model}_pre_delete'
 _i18n_hash: 12d965c5aed740f08dba9a3d9cbfb2b5
 ---
-# 액션: wu_${this->model}_pre_delete {#action-wuthis-modelpredelete}
+# 액션: wu_${this->model}_pre_delete
 
 객체가 데이터베이스에 저장된 후에 발생합니다.
 

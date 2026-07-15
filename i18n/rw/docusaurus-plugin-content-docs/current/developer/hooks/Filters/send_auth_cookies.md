@@ -4,7 +4,7 @@ title: Akayunguruzo - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Akayunguruzo: send_auth_cookies {#filter-sendauthcookies}
+# Akayunguruzo: send_auth_cookies
 
 Byemerera kubuza auth cookies koherezwa koko kuri client.
 

@@ -3,7 +3,7 @@ title: Дашбордыг ойлгох
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Дашбордыг ойлгох {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Дашбордыг ойлгох
 
 Ultimate Multisite-и илүү дэвшилтэт тохиргоонууд болон Ultimate Multisite-и ажиллагааны талбаруудыг гүнзгий судалсаасаа, дараа нь дашбордыг харж үзье.
 

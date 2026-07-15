@@ -4,7 +4,7 @@ title: אַקציע - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# אַקציע: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# אַקציע: wp_ultimo_site_exporter_activation
 
 לאָזט אַנדערע טיילן פֿונעם plugin צוהענגען זייערע רוטינען פֿאַר אַקטיוואַציע.
 

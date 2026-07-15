@@ -4,7 +4,7 @@ title: Isihluzi - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Isihluzo: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# Isihluzo: wp_ultimo_site_exporter_get_option
 
 Sibuyisa ixabiso lokhetho lwenethiwekhi olwenziwe i-slug.
 

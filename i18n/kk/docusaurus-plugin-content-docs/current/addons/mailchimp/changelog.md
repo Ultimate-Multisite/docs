@@ -3,7 +3,7 @@ title: Mailchimp өзгерістер журналы
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp өзгерістер журналы {#mailchimp-changelog}
+# Mailchimp өзгерістер журналы
 
 Нұсқа: 1.1.1 - 2025-09-28 күні шығарылды
 

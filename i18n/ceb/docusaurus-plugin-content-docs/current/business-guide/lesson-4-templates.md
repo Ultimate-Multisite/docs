@@ -3,7 +3,7 @@ title: 'Leksyon 4: Paghimo og Niche Templates'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Paghimo og Niche Templates {#lesson-4-building-niche-templates}
+# Lesson 4: Paghimo og Niche Templates
 
 Ang mga templates kay mao ni gyud ang sentro sa pagka-unique sa atong serbisyo para sa usa ka specific nga industriya (niche value proposition). Ang tag-iya sa fitness studio nga mo-sign up ug makakita dayon og website nga morag fitness site na—nga naa nay class schedules, profile sa mga trainer, ug ang husto nga mga litrato—mas dako ang posibilidad nga magpabilin kaysa kanang nakakita lang og blank canvas.
 

@@ -3,7 +3,7 @@ title: Tema quruvchi qobiliyatlar
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Tema Quruvchi Qobiliyatlar: Blok Temalarni Skaffoldlash va Faollashtirish {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Tema Quruvchi Qobiliyatlar: Blok Temalarni Skaffoldlash va Faollashtirish
 
 Superdav AI Agent v1.12.0 sizga chat interfeysidan bevosita maxsus blok temalarni yaratish va joylashtirish imkonini beradigan ikki kuchli qobiliyatni taqdim etadi.
 

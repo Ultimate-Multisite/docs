@@ -4,7 +4,7 @@ title: Isihluzi - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Isihluzi: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Isihluzi: wu_bypass_unset_current_user
 
 Vumela abaphuhlisi ukuba badlule kwikhowudi yokungaseti umsebenzisi wangoku.
 

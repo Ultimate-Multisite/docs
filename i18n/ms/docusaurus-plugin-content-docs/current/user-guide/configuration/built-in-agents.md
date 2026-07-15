@@ -3,7 +3,7 @@ title: Ejen Terbina Dalam
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Terbina Dalam {#built-in-agents}
+# Agents Terbina Dalam
 
 Gratis AI Agent v1.9.0 disertakan dengan lima agents terbina dalam, setiap satu diprakonfigurasi dengan set tools yang berfokus, system prompt yang disesuaikan, dan cadangan permulaan yang dipadankan dengan tugas lazim dalam bidang tersebut. Bertukar antara agents mengubah perkara yang assistant boleh lakukan dan cara ia memberi respons — tanpa sebarang konfigurasi di pihak anda. Superdav AI Agent v1.18.0 boleh menambah tools yang peka jadual, rekod peringatan, approval gates, dan notifikasi SMS kepada workflows ini apabila integrasi berkaitan dikonfigurasi.
 

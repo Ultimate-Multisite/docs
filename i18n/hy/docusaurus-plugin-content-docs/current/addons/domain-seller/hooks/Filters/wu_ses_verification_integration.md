@@ -4,7 +4,7 @@ title: Զտիչ - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Զտիչ՝ wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Զտիչ՝ wu_ses_verification_integration
 
 Զտիչ՝ թույլ է տալիս այլ կոդին տրամադրել SES ինտեգրման օբյեկտը։
 

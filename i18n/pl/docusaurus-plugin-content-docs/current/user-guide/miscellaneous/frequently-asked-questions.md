@@ -3,7 +3,7 @@ title: Często zadawane pytania
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Najczęściej zadawane pytania {#frequently-asked-questions}
+# Najczęściej zadawane pytania
 
 Oto lista **najczęściej zadawanych pytań**, które często pojawiają się podczas zgłoszeń do pomocy technicznej.
 

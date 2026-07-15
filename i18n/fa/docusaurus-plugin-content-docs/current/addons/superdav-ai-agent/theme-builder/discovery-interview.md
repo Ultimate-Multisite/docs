@@ -3,7 +3,7 @@ title: مصاحبه کشف‌کننده
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# مصاحبه کشف (Discovery Interview) {#discovery-interview}
+# مصاحبه کشف (Discovery Interview)
 
 **مصاحبه کشف** اولین گام در فرآیند طراحی Theme Builder است. این مصاحبه اطلاعاتی درباره سایت، کسب‌وکار و ترجیحات طراحی شما جمع‌آوری می‌کند تا یک قالب (Theme) شخصی‌سازی شده ایجاد شود.
 

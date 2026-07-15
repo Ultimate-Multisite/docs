@@ -4,7 +4,7 @@ title: Akció - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Akció: wu_cart_setup {#action-wucartsetup}
+# Akció: wu_cart_setup
 
 Létrehozva lehetővé teszi a fejlesztők számára, hogy további módosításokat tegyenek a checkout objektumon.
 

@@ -3,7 +3,7 @@ title: Membara expirado kaj sita blokado
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Membroj la Ekspirado kaj Blokado de Sitaj {#membership-expiration-and-site-blocking}
+# Membroj la Ekspirado kaj Blokado de Sitaj
 
 Ĉi tiu gvidado klarigas, kiel Ultimate Multisite maneĝas ekspiradon de membraj, fini de provoj (trial endings) kaj blokadon de frontaj sitaj. Ĝi mastrumas la ciklon de membrajo de aktiva al ekspirita, la ŝanĝon, kiuj kontrolas ĉu sitaj estas blokitaj, kaj kion diri, kiam sitaj restas aksesaj post la ekspirado de membrajo.
 

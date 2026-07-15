@@ -3,7 +3,7 @@ title: Trình xây dựng & Hộp cát Plugin
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 giới thiệu **Hệ thống Plugin Builder & Sandbox**, cho phép trợ lý AI tạo, kích hoạt và quản lý các plugin WordPress trên mạng lưới của bạn — tất cả đều thông qua một môi trường sandbox (hộp cát) an toàn và biệt lập.
 

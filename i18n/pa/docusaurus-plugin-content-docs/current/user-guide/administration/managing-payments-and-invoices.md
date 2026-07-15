@@ -3,7 +3,7 @@ title: ਭੁਗਤਾਨਾਂ ਅਤੇ ਇਨਵਾਇਸਾਂ ਦਾ ਪ੍
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ਭੁਗਤਾਨਾਂ ਅਤੇ ਚਲਾਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ {#managing-payments-and-invoices}
+# ਭੁਗਤਾਨਾਂ ਅਤੇ ਚਲਾਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ
 
 ## ਭੁਗਤਾਨ ਸੈਟਿੰਗਾਂ {#payment-settings}
 

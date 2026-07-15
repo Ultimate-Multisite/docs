@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Kufotera kwa Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Kufotera kwa Webhooks (v2)
 
 _**KUFOTERA: Chifukwa choti chofotera ndi kuti mwayi wina wopanga software monga Ultimate Multisite ulemu lina mwayi wina wopanga software. Webhook imapereka malingaliro a real-time kwawo. Webhook imapereka data kapena payloads kwa applications zina monga momwe zimapangidwa, zomwezi ndi kuti **mupereke data mwachangu.**
 

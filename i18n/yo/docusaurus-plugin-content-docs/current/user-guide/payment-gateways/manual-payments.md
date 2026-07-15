@@ -3,7 +3,7 @@ title: Ṣíṣètò Àwọn Ìsanwó Afọwọ́ṣe
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ṣíṣètò Àwọn Ìsanwó Afọwọ́ṣe (v2) {#setting-up-manual-payments-v2}
+# Ṣíṣètò Àwọn Ìsanwó Afọwọ́ṣe (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 

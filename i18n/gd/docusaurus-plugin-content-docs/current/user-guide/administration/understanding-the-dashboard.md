@@ -3,7 +3,7 @@ title: Aims a bhith a' chluainteachd an dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Aims a bhith a' chunnadh an Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Aims a bhith a' chunnadh an Dashboard Ultimate Multisite
 
 Sgiathach faic an dashboard.
 

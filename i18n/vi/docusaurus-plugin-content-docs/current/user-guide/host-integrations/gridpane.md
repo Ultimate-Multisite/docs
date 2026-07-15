@@ -3,7 +3,7 @@ title: Tích hợp GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Tích hợp GridPane {#gridpane-integration}
+# Tích hợp GridPane
 
 ## Tổng quan {#overview}
 GridPane là bảng điều khiển hosting WordPress chuyên biệt được xây dựng dành cho các chuyên gia WordPress. Tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và GridPane.

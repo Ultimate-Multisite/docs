@@ -3,7 +3,7 @@ title: Udhbinta Mode-ka Dhiga Dhinacyada Saddexda
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Ganacabashka Mode-ga Isbeddelka {#third-party-mode-migration}
+# Ganacabashka Mode-ga Isbeddelka
 
 Superdav AI Agent v1.12.0 waxay beddeshaa sida loo maamulo awoodaha saddexaad (third-party abilities). **Ganacabashka saddexaad hadda wuxuu si toos ah u socdaa "auto"**, taasoo kuu oggolaanaysa in WordPress 7.0+ ku shaqeeyso API-ga Awoodaha ee WordPress iyada oo aan loo baahnayn hagaajin gacanta lagu sameeyo.
 

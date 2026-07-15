@@ -3,7 +3,7 @@ title: Integrasyon WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration WPMU DEV {#wpmu-dev-integration}
+# Integration WPMU DEV
 
 ## Ընդհանուր տեսքը (Overview) {#overview}
 WPMU DEV-ը WordPress-ի համար ամբողջական հարթակ է, որը առաջարկում է հոස්տինգ, plugin-ներ և ծառայություններ WordPress սайտերի համար։ Այս ինտեգրումը թույլ է տալիս ավտոմատ դոմենի սինխրոնիզացիա և SSL վկայագրականների կառավարում Ultimate Multisite-ի և WPMU DEV հոස්տինգի միջև։

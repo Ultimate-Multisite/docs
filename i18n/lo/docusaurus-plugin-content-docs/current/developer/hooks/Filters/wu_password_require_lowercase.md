@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# ຕົວກອງ: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# ຕົວກອງ: wu_password_require_lowercase
 
 ກອງວ່າຈະຕ້ອງກຳນົດໃຫ້ມີຕົວອັກສອນພິມນ້ອຍໃນລະຫັດຜ່ານຫຼືບໍ່.
 

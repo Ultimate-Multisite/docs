@@ -3,7 +3,7 @@ title: 'Darasi na 5: Tsara Tsare-tsarenku'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Darasi na 5: Tsara Tsare-tsarenka {#lesson-5-designing-your-plans}
+# Darasi na 5: Tsara Tsare-tsarenka
 
 Matakan tsare-tsarenka ba kawai matakan farashi ba ne -- suna nuna yadda abokan cinikin niche ɗinka suke aiki a zahiri. A wannan darasi za ka tsara matakan samfur da suka dace da ainihin bukatun kasuwancin motsa jiki a matakai daban-daban.
 

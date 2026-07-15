@@ -3,7 +3,7 @@ title: Sida loo habeeyo khariidaynta domain-ka
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sida loo Habeeyo Khariidaynta Domain-ka (v2) {#how-to-configure-domain-mapping-v2}
+# Sida loo Habeeyo Khariidaynta Domain-ka (v2)
 
 _**OGEYSIIS MUHIIM AH: Maqaalkani wuxuu tixraacayaa Ultimate Multisite nooca 2.x.**_
 

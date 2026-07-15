@@ -4,7 +4,7 @@ title: 필터 - wu_ai_site_builder_image_providers
 sidebar_label: wu_ai_site_builder_image_providers
 _i18n_hash: 995fe14df700a1a85612bfb8e76578a1
 ---
-# 필터: wu_ai_site_builder_image_providers {#filter-wuaisitebuilderimageproviders}
+# 필터: wu_ai_site_builder_image_providers
 
 사용 가능한 이미지 제공자 필터링
 

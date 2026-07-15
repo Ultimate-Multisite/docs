@@ -3,7 +3,7 @@ title: Mwisho wa Uanachama na Kuzima Tovuti
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kuisha Muda kwa Uanachama na Kuzima Tovuti {#membership-expiration-and-site-blocking}
+# Kuisha Muda kwa Uanachama na Kuzima Tovuti
 
 Mwongozo huu unakufafanulia jinsi Ultimate Multisite inavyoshughulikia kuisha muda kwa uanachama, kumalizika kwa vipindi vya majaribio, na kuzima ufikiaji wa tovuti kutoka mbele (frontend). Unafunika mzunguko mzima wa uanachama kuanzia hali ya hai hadi kuisha muda, mipangilio inayodhibiti kama tovuti zinazozimwa, na nini cha kuangalia ikiwa tovuti bado zinaonekana kwa watu baada ya uanachama kuisha.
 

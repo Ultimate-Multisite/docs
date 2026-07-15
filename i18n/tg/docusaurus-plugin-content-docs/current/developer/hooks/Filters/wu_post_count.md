@@ -4,7 +4,7 @@ title: Филтр - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Филтр: wu_post_count {#filter-wupostcount}
+# Филтр: wu_post_count
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки шумораи умумиро тағйир диҳанд
 

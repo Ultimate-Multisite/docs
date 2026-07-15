@@ -3,7 +3,7 @@ title: Bygg en nisje-nettside-virksomhet
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bygg en nisje-nettsted-virksomhet med Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Bygg en nisje-nettsted-virksomhet med Ultimate Multisite
 
 De fleste som prøver å selge nettsider, konkurrerer på pris mot Wix, Squarespace og tusenvis av frilansere. De taper. De som vinner, velger et spesifikt publikum, bygger en løsning skreddersydd for dette publikummet, og krever betaling for verdien de leverer.
 

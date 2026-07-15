@@ -3,7 +3,7 @@ title: Orkestrasyon ng Tagabuo ng Site v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Ang Site Builder Orchestration v2 (ipinakilala sa Gratis AI Agent v1.4.0) ay ang engine na nagpapagana sa paggawa ng website na maraming hakbang. Kapag hiniling mo sa agent na "bumuo ng website para sa restawran" o "gumawa ng portfolio na may blog", hinahati ng orchestrator ang mataas na antas na layuning iyon sa isang nakabalangkas na **plano**, tinutuklas ang mga plugin na kailangan upang maisakatuparan ito, isinasagawa ang bawat hakbang nang sunod-sunod, sinusubaybayan ang progreso, at awtonomong bumabawi mula sa mga error.
 

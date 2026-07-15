@@ -4,7 +4,7 @@ title: Sìoltachan - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Criathrag: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
+# Criathrag: wp_ultimo_site_exporter_url
 
 A’ leigeil le luchd-leasachaidh an t-slighe choimeasach gu freumh a’ phlugain a stiùireadh.
 

@@ -3,7 +3,7 @@ title: تەمىنلىگۈچىگە ماسلاشقان پرامپتنى كەشلە
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# تەمىنلىگۈچىدىن خەۋەردار Prompt Caching {#provider-aware-prompt-caching}
+# تەمىنلىگۈچىدىن خەۋەردار Prompt Caching
 
 Superdav AI Agent v1.12.0 **تەمىنلىگۈچىدىن خەۋەردار prompt caching** نى تونۇشتۇرىدۇ؛ بۇ ئوخشىمىغان LLM تەمىنلىگۈچىلەر ئارىسىدا prompt لارنى cache قىلىش ئارقىلىق API خىراجىتى ۋە كېچىكىشنى ئەلالاشتۇرىدۇ. ھەر بىر تەمىنلىگۈچىنىڭ cache مېخانىزمى ۋە سەپلىمىلىرى ئوخشىمايدۇ.
 

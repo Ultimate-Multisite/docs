@@ -3,7 +3,7 @@ title: ইন্টারনেট অনুসন্ধান
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# ইন্টারনেট সার্চ {#internet-search}
+# ইন্টারনেট সার্চ
 
 Gratis AI Agent v1.5.0 একটি **Internet Search** ক্ষমতা যোগ করেছে, যা AI অ্যাসিস্ট্যান্টকে কথোপকথনের সময় ওয়েব থেকে আপ-টু-ডেট তথ্য পুনরুদ্ধার করতে সাহায্য করে। এটি [Brave Search API](https://brave.com/search/api/) বা [Tavily API](https://tavily.com/) দ্বারা চালিত।
 

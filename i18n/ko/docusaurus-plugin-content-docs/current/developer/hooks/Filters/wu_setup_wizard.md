@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard {#filter-wusetupwizard}
+# Filter: wu_setup_wizard
 
 개발자가 추가 설정 마법사 단계를 추가할 수 있도록 허용합니다.
 

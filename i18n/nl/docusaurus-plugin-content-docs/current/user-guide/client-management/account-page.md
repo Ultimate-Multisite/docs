@@ -3,7 +3,7 @@ title: Klant Account-pagina
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# De Account-pagina van je klant (v2) {#your-clients-account-page-v2}
+# De Account-pagina van je klant (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

@@ -4,7 +4,7 @@ title: 필터 - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# 필터: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# 필터: wu_get_site_domain_and_path
 
 개발자가 도메인/경로 쌍을 조작할 수 있도록 허용합니다.
 

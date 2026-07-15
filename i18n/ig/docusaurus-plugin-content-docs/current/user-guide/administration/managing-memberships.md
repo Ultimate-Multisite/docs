@@ -3,7 +3,7 @@ title: Ude na Mgbere
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Quản lý Thành viên {#managing-memberships}
+# Quản lý Thành viên
 
 Trong Ultimate Multisite, bạn có thể quản lý các gói thành viên và truy cập tất cả các đăng ký trên mạng lưới của mình. Hãy xem lại và chỉnh sửa chi tiết đăng ký như gói (plans) và sản phẩm (products), số lượng trang web, số tiền thanh toán và tần suất, lịch sử thanh toán, và dấu thời gian (timestamps).
 

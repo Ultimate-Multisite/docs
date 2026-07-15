@@ -3,7 +3,7 @@ title: Menyesuaikan Borang Pendaftaran Anda
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Menyesuaikan Borang Pendaftaran anda {#customizing-your-registration-form}
+# Menyesuaikan Borang Pendaftaran anda
 
 Untuk menjadikan rangkaian anda kelihatan unik berbanding semua SaaS lain yang dibina pada platform WordPress, Ultimate Multisite membolehkan anda menyesuaikan halaman pendaftaran dan log masuk anda dengan ciri **Checkout Forms** kami.
 

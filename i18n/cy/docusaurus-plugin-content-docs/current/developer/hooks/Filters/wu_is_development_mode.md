@@ -4,7 +4,7 @@ title: Hidlydd - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Hidlydd: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Hidlydd: wu_is_development_mode
 
 Caniatáu i ddatblygwyr ategion ychwanegu profion ychwanegol ar gyfer modd datblygu.
 

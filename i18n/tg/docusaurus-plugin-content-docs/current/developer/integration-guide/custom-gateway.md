@@ -3,7 +3,7 @@ title: Таҳияи шлюзи фармоишӣ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Таҳияи Gateway фармоишӣ {#custom-gateway-development}
+# Таҳияи Gateway фармоишӣ
 
 Шумо метавонед gateway-ҳои пардохтии фармоиширо бо васеъ кардани синфи `Base_Gateway` эҷод кунед.
 

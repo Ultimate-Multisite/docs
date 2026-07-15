@@ -3,7 +3,7 @@ title: گۆڕانکارییەکانی Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# گۆڕانکارییەکانی Mailchimp {#mailchimp-changelog}
+# گۆڕانکارییەکانی Mailchimp
 
 وەشان: 1.1.1 - بڵاوکراوەتەوە لە 2025-09-28
 

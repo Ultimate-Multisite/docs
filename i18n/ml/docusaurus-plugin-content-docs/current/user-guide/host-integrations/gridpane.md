@@ -3,7 +3,7 @@ title: GridPane ഇന്റഗ്രേഷൻ
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ഇന്റഗ്രേഷൻ {#gridpane-integration}
+# GridPane ഇന്റഗ്രേഷൻ
 
 ## അവലോകനം {#overview}
 GridPane എന്നത് WordPress പ്രൊഫഷണലുകൾക്കായി പ്രത്യേകമായി നിർമ്മിച്ച ഒരു WordPress ഹോസ്റ്റിംഗ് കൺട്രോൾ പാനലാണ്. ഈ ഇന്റഗ്രേഷൻ Ultimate Multisite-ഉം GridPane-ഉം തമ്മിൽ ഓട്ടോമാറ്റിക് ഡൊമെയ്ൻ സിങ്കിംഗും SSL സർട്ടിഫിക്കറ്റ് മാനേജ്മെന്റും സാധ്യമാക്കുന്നു.

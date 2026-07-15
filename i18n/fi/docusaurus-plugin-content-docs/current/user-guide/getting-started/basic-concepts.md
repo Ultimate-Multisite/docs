@@ -3,7 +3,7 @@ title: Peruskonseptit
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Perusperuste käsitteet {#basic-concepts}
+# Perusperuste käsitteet
 
 Uuden WordPress Multisite -käyttäjän ja henkilön, joka aloittaa Ultimate Multisiten käytön, voi aluksi olla paljon uusia sanoja ja termejä. Niiden oppiminen on tärkeää, koska sinun on ymmärrettävä alustaa ja sitä kokonaisuutena, miten se toimii.
 

@@ -3,7 +3,7 @@ title: A Sunrise konstans beállítása Closte-on
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# A Sunrise konstans beállítása true értékre Closte tárhelyen {#setting-the-sunrise-constant-to-true-on-closte}
+# A Sunrise konstans beállítása true értékre Closte tárhelyen
 
 Egyes tárhelyszolgáltatók biztonsági okokból zárolják a wp-config.php fájlt. Ez azt jelenti, hogy az Ultimate Multisite nem tudja automatikusan szerkeszteni a fájlt, hogy hozzáadja a domain mapping és egyéb funkciók működéséhez szükséges konstansokat. A Closte is ilyen szolgáltató.
 

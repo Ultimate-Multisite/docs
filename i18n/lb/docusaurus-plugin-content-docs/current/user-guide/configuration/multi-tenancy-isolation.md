@@ -3,7 +3,7 @@ title: Multi-Tenant Isolierig
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolation {#multi-tenancy-isolation}
+# Multi-Tenancy Isolation
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 unterstützt per-subsite Datenbank- und Dateisystemisolation für souveräne Mieter. Das hält die Kundendaten getrennt, während Provisionierung auf Netzwerkebene, Abrechnung und Administration erhalten bleibt.
 

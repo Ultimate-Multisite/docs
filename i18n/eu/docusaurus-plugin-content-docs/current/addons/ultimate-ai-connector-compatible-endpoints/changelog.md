@@ -3,7 +3,7 @@ title: Endpoint bateragarrientzako Ultimate AI Connector aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector-en Compatible Endpoints aldaketa-erregistroa {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector-en Compatible Endpoints aldaketa-erregistroa
 
 ## 2.0.0 bertsioa — 2026-04-24an argitaratua {#version-200--released-on-2026-04-24}
 

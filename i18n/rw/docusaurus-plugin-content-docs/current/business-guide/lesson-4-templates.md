@@ -3,7 +3,7 @@ title: 'Isomo rya 4: Kubaka inyandikorugero z’ibyiciro byihariye'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Isomo 4: Kubaka Inyandikorugero z’Icyiciro Cyihariye {#lesson-4-building-niche-templates}
+# Isomo 4: Kubaka Inyandikorugero z’Icyiciro Cyihariye
 
 Inyandikorugero ni zo shingiro ry’agaciro utanga ku cyiciro cyihariye. Nyiri studio y’imyitozo ngororamubiri wiyandikisha akabona urubuga rusa n’urw’imyitozo ngororamubiri -- rufite ingengabihe z’amasomo, imyirondoro y’abatoza, n’amashusho akwiye -- aba afite amahirwe menshi yo kuguma kurusha ubona urupapuro rwerurutse rutagira ikiriho.
 

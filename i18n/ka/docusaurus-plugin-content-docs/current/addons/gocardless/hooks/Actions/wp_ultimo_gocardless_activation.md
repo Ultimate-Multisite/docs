@@ -4,7 +4,7 @@ title: მოქმედება - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# მოქმედება: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# მოქმედება: wp_ultimo_gocardless_activation
 
 საშუალებას აძლევს plugin-ის სხვა ნაწილებს, მიამაგრონ თავიანთი activation რუტინები
 

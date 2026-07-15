@@ -3,7 +3,7 @@ title: চেকআউট ক্ষেত্ৰ আৰু গ্ৰাহক DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# চেকআউট ক্ষেত্ৰ আৰু গ্ৰাহকৰ DNS ব্যৱস্থাপনা {#checkout-field-and-customer-dns-management}
+# চেকআউট ক্ষেত্ৰ আৰু গ্ৰাহকৰ DNS ব্যৱস্থাপনা
 
 ## ড’মেইন বাছনি চেকআউট ক্ষেত্ৰ {#the-domain-selection-checkout-field}
 

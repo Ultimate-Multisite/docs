@@ -3,7 +3,7 @@ title: Gukoresha Icyemezo cy'Umuvura ku Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Gukoresha constant ya Sunrise ku kuba true kuri Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Gukoresha constant ya Sunrise ku kuba true kuri Closte
 
 Ururu rwa host (host provider) rugera uburyo bwo gukoresha wp-config.php mu gihe cy'ubwujude (security). Ururu rwa Ultimate Multisite nta gukora ibyo byo gukoresha wp-config.php kugira ngo yoroke ibyo byo gukoresha domain mapping n'ibindi byo kwizera. Closte ni ururu runa.
 

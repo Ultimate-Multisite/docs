@@ -3,7 +3,7 @@ title: Pagina Account a clientului
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagina Account a clientului tău (v2) {#your-clients-account-page-v2}
+# Pagina Account a clientului tău (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

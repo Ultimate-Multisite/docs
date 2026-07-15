@@ -3,7 +3,7 @@ title: ServerPilot ማዋሃድ
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# የServerPilot ውህደት {#serverpilot-integration}
+# የServerPilot ውህደት
 
 ## አጠቃላይ እይታ {#overview}
 ServerPilot በDigitalOcean፣ Amazon፣ Google ወይም በማንኛውም ሌላ የሰርቨር አቅራቢ ላይ WordPress እና ሌሎች PHP ድረ-ገጾችን ለማስተናገጅ የሚያገለግል የደመና አገልግሎት ነው። ይህ ውህደት Ultimate Multisite እና ServerPilot መካከል የዶሜን መመሳሰልን (domain syncing) እና የSSL ሰርቲፊኬት አስተዳደርን በራስ-ሰር ያደርጋል።

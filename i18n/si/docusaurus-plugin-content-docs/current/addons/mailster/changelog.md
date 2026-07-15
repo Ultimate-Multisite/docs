@@ -3,7 +3,7 @@ title: Mailster වෙනස්කම් සටහන
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster වෙනස්කම් සටහන {#mailster-changelog}
+# Mailster වෙනස්කම් සටහන
 
 ### 1.0.0 {#100}
 * ආරම්භක නිකුතුව

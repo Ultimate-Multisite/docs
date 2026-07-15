@@ -3,7 +3,7 @@ title: 'Isomo rya 8: Kwinjiza abakiriya'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Isomo rya 8: Kwinjiza Abakiriya {#lesson-8-customer-onboarding}
+# Isomo rya 8: Kwinjiza Abakiriya
 
 Gutuma umukiriya yiyandikisha ni kimwe cya kabiri cy’akazi gusa. Niba yinjiye, akumva bimurenze, hanyuma ntazongere kugaruka, uba umutakaje. Iri somo ritegura ubunararibonye buhindura uwiyandikishije mushya umukiriya ukora kandi wiyumvamo serivisi.
 

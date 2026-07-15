@@ -3,7 +3,7 @@ title: Compétence en spécifications de site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fonctionnalité de spécification de site {#site-specification-skill}
+# Fonctionnalité de spécification de site
 
 La **fonctionnalité de spécification de site** est une approche structurée pour capturer les objectifs, le public et l'identité de marque de votre site. Ces informations sont stockées dans votre mémoire **site_brief**, que les agents consultent au fil des sessions pour fournir une assistance cohérente et contextuelle.
 

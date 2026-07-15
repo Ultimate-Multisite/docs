@@ -4,7 +4,7 @@ title: Radnja - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Radnja: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# Radnja: wp_ultimo_captcha_load
 
 Pokreće se kada su sve ovisnosti učitane.
 

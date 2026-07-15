@@ -3,7 +3,7 @@ title: Notitia de Removendo Modus Constructio Situii
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notitia de Removendo Modus Constructio Situs {#site-builder-mode-removal-notice}
+# Notitia de Removendo Modus Constructio Situs
 
 **Modus Constructio Situs est in Superdav AI Agent v1.12.0 removet.** Si usus er Modus Constructio Situs, debet migrare ad **agent Setup Assistant** pro creatione themorum et configuratione situs.
 

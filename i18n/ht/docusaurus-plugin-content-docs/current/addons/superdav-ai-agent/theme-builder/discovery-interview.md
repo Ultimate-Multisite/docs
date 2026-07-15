@@ -3,7 +3,7 @@ title: Entèvyou dekouvèt
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Entèvyou Dekouvèt {#discovery-interview}
+# Entèvyou Dekouvèt
 
 **Entèvyou Dekouvèt** la se premye etap nan pwosesis konsepsyon Theme Builder. Li rasanble enfòmasyon sou sit ou, biznis ou, ak preferans konsepsyon ou pou kreye yon tèm pèsonalize.
 

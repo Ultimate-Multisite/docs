@@ -3,7 +3,7 @@ title: Imposta traktado
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Imposta Traktado {#tax-handling}
+# Imposta Traktado
 
 Ultimate Multisite havas impostkolektan modulon enkonstruitan en nia kerna plugin, do se vi bezonas kolekti vendimpostojn por viaj planoj, pakaĵoj kaj servoj, vi povas facile fari tion sen devi instali iujn ajn aldonaĵojn.
 

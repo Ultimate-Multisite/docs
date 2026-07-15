@@ -3,7 +3,7 @@ title: Configuratio solutionum manualium
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Solutiones Manuales Configurare (v2) {#setting-up-manual-payments-v2}
+# Solutiones Manuales Configurare (v2)
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x pertinet.**_
 

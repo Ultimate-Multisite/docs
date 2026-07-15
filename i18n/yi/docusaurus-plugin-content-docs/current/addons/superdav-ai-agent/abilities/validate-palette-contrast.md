@@ -3,7 +3,7 @@ title: וואַלידירן פּאַלעטע קאָנטראַסט
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# וואַלידירן פּאַלעט־קאָנטראַסט {#validate-palette-contrast}
+# וואַלידירן פּאַלעט־קאָנטראַסט
 
 די **Validate Palette Contrast** פֿעיִקייט קאָנטראָלירט קאָליר־פּאָרן אין אײַער דיזײַן־פּאַלעט פֿאַר WCAG (Web Content Accessibility Guidelines) נאָכפֿאָלג איידער מען לייגט זיי אָן אויף אײַער טעמע.
 

@@ -3,7 +3,7 @@ title: قابلیت دیده‌شدن
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# قابلیت‌های قابل مشاهده (Ability Visibility) {#ability-visibility}
+# قابلیت‌های قابل مشاهده (Ability Visibility)
 
 Superdav AI Agent v1.12.0 کنترل‌های **قابلیت‌های قابل مشاهده (Ability Visibility)** را معرفی می‌کند که تعیین می‌کنند هر قابلیت در کدام محیط‌ها قابل دسترسی باشد. این ویژگی به مدیران اجازه می‌دهد تا تنظیم کنند که کدام قابلیت‌های عامل (agent) از طریق REST API، سرورهای MCP، یکپارچه‌سازی‌های WooCommerce و سایر رابط‌ها در دسترس باشند.
 

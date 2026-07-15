@@ -4,7 +4,7 @@ title: Фильтр - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Фильтр: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Фильтр: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Эшкәртүчеләргә WooCommerce хисап адресының стандарт кырларын фильтрларга мөмкинлек бирә.
 

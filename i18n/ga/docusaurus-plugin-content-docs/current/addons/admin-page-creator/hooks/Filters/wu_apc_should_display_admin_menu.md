@@ -4,7 +4,7 @@ title: Scagaire - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Scagaire: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Scagaire: wu_apc_should_display_admin_menu
 
 Lig do riarthóirí leathanaigh an roghchláir riaracháin a cheilt, má tá an próiseas saincheaptha críochnaithe acu.
 

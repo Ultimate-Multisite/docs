@@ -4,7 +4,7 @@ title: عمل - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# ایکشن: wu_sso_loaded {#action-wussoloaded}
+# ایکشن: wu_sso_loaded
 
 پلگ ان بنانے والوں کو ضرورت پڑنے پر اضافی ہکس شامل کرنے کی اجازت دیتا ہے۔
 

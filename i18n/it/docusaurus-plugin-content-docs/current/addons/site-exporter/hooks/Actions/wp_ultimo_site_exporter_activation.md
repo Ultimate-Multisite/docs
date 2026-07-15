@@ -4,7 +4,7 @@ title: Azione - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Azione: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Azione: wp_ultimo_site_exporter_activation
 
 Consente ad altre parti del plugin di collegare le proprie routine per l'attivazione.
 

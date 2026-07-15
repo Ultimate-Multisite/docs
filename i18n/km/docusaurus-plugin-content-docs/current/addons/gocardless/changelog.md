@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ GoC
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# កំណត់ហេតុបម្លាស់ប្ដូរ GoCardless {#gocardless-changelog}
+# កំណត់ហេតុបម្លាស់ប្ដូរ GoCardless
 
 កំណែ: 1.0.3 - ចេញផ្សាយនៅ 2026-05-05
 * ជួសជុល: បណ្ដាញ pending ដែលគ្មានម្ចាស់ត្រូវបានសម្អាតឥឡូវនេះ នៅពេលសមាជិកភាព GoCardless ត្រូវបានលុបចោល ខណៈស្ថិតក្នុងស្ថានភាព pending ឬ on-hold

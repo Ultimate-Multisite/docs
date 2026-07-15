@@ -4,7 +4,7 @@ title: फिल्टर - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 यदि अनुकूलन प्रक्रिया समाप्त गरेका छन् भने, प्रशासकहरूलाई admin menu पृष्ठहरू लुकाउन अनुमति दिनुहोस्।
 

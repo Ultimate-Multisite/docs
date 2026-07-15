@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url {#filter-wureturnurl}
+# Filter: wu_return_url
 
 പേയ്‌മെന്റ് പ്രോസസ്സിംഗിന് ശേഷം ഉപയോഗിക്കുന്ന ഗേറ്റ്‌വേ റിട്ടേൺ URL മാറ്റാൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

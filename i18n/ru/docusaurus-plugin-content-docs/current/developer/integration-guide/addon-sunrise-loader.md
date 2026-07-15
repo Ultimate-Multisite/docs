@@ -3,7 +3,7 @@ title: Дополнение Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Загрузчик файлов Addon Sunrise {#addon-sunrise-file-loader}
+# Загрузчик файлов Addon Sunrise
 
 Ultimate Multisite 2.8.0 добавляет загрузчик расширений sunrise для аддонов и кастомных интеграций MU-plugin, которым необходимо работать во время начальной загрузки WordPress (sunrise bootstrapping), без необходимости редактировать сгенерированный файл `wp-content/sunrise.php`.
 

@@ -3,7 +3,7 @@ title: Support Tickets Changelog
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets ပြောင်းလဲမှုမှတ်တမ်း {#support-tickets-changelog}
+# Support Tickets ပြောင်းလဲမှုမှတ်တမ်း
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * ပိုမိုကောင်းမွန်စေသည်: vendor/ directory ကို Git tracking မှ ဖယ်ရှားခဲ့သည် (၎င်းကို .gitignore ကလည်း ဖုံးကွယ်ထားပြီးသားဖြစ်၍)၊ ၎င်းသည် repository အရွယ်အစားကို လျှော့ချပေးပါသည်။

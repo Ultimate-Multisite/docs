@@ -3,7 +3,7 @@ title: ويب هوک
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks-a Birin Bakış (v2) {#a-first-look-on-webhooks-v2}
+# Webhooks-a Birin Bakış (v2)
 
 _**DİKKAT: Bu özellik veya makale ileri düzey kullanıcılar içindir.**_
 

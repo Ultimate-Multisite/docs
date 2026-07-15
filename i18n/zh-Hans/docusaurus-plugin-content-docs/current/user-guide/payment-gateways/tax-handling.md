@@ -3,7 +3,7 @@ title: 税务处理
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# 税务处理 {#tax-handling}
+# 税务处理
 
 Ultimate Multisite 在我们的核心 plugin 中内置了税款收取模块，因此如果你需要对你的方案、套餐和服务收取销售税，无需安装任何附加组件即可轻松完成。
 

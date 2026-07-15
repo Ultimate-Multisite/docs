@@ -3,7 +3,7 @@ title: Kỹ năng nhận diện chủ đề
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kỹ Năng Theo Chủ Đề (Theme-Aware Skills) {#theme-aware-skills}
+# Kỹ Năng Theo Chủ Đề (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 đã tích hợp bốn kỹ năng sẵn có mới, có khả năng nhận diện chủ đề (theme-aware), giúp tự động thích ứng với chủ đề WordPress bạn đang sử dụng. Các kỹ năng này cung cấp hướng dẫn và khả năng chuyên biệt, được thiết kế riêng cho kiến trúc và tính năng của chủ đề bạn đang dùng.
 

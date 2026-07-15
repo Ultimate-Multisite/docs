@@ -3,7 +3,7 @@ title: Nähtavus
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Võimaluse nähtavus (Ability Visibility) {#ability-visibility}
+# Võimaluse nähtavus (Ability Visibility)
 
 Superdav AI Agent v1.12.0 lisab **Võimaluse nähtavuse** kontrollid, mis määratlevad, millised pinnad (surfaces) iga võimele on avatud. See võimaldab administraatorit hianna seda, millise agenti võimed on saadaval REST API-ga, MCP serveril, WooCommerce integreerimudel ja teistes interfeesse.
 

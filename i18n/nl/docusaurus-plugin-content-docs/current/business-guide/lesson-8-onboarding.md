@@ -3,7 +3,7 @@ title: 'Les 8: Onboarding van klanten'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Les 8: Onboarding van de klant {#lesson-8-customer-onboarding}
+# Les 8: Onboarding van de klant
 
 Een klant laten inschrijven is maar de helft van het werk. Als ze inloggen, zich overweldigd voelen en nooit meer terugkomen, dan heb je ze verloren. Deze les ontwerpt de ervaring die een nieuwe inschrijving omzet in een actieve, betrokken klant.
 

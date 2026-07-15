@@ -3,7 +3,7 @@ title: Požadavky
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Požadavky na Ultimate Multisite {#ultimate-multisite-requirements}
+# Požadavky na Ultimate Multisite
 
 První věc, na kterou se pravděpodobně zeptáte před zakoupením Ultimate Multisite, jsou požadavky pro provoz našeho pluginu. Naštěstí existuje jen několik základních požadavků pro provoz Ultimate Multisite: **doménové jméno**, dobrý **poskytovatel hostingu** a instalace WordPress **Multisite**. To je vše, co potřebujete!
 

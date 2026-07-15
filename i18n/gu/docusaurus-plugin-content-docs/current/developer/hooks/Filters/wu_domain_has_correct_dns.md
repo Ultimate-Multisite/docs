@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filter: wu_domain_has_correct_dns
 
 પ્લગઇન ડેવલપર્સને પરિણામોને વ્યાખ્યાયિત કરવા માટે નવી તપાસો ઉમેરવાની મંજૂરી આપે છે.
 

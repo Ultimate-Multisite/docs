@@ -4,7 +4,7 @@ title: 過濾器 - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# 篩選器：secure_auth_redirect {#filter-secureauthredirect}
+# 篩選器：secure_auth_redirect
 
 決定是否使用安全的身份驗證重定向。
 

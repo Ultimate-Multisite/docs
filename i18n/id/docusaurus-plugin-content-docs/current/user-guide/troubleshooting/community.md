@@ -3,7 +3,7 @@ title: Komunitas
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Cara bergabung dengan Komunitas Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Cara bergabung dengan Komunitas Ultimate Multisite
 
 Komunitas Ultimate Multisite adalah ruang di mana Anda bisa terhubung dengan pengguna Ultimate Multisite lainnya dan berbagi tips, pengalaman, dan banyak hal lainnya. Untuk mengakses Komunitas Ultimate Multisite, kunjungi https://community.ultimatemultisite.com/home.
 

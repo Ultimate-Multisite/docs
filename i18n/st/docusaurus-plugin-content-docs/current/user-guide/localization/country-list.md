@@ -3,7 +3,7 @@ title: Lihlōba la leka
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Re-ordering le list la natshe ya Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Re-ordering le list la natshe ya Ultimate Multisite
 
 Le dropdown e tšoa ho seleksona le natshe e le alphabetically ka le variants ea le leng le English tsa natshe. E ka bolela hore, ka lina li le leng, le natshe ea lona le lona ba bangata ba leba le ba bangata ba lona ba leba haholo ka le list e kholo ea natshe.
 

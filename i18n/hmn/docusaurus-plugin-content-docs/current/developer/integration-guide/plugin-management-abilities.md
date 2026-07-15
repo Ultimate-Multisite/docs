@@ -3,7 +3,7 @@ title: Peev xwm tswj hwm Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Cov Peev Xwm Tswj Plugin {#plugin-management-abilities}
+# Cov Peev Xwm Tswj Plugin
 
 Gratis AI Agent v1.5.0 los nrog **7 qhov peev xwm tswj plugin** uas tus pab AI siv tau thaum sib tham. Cov peev xwm no muab kev tswj WordPress plugins uas tau nruab los ntawm [Qhov System Tsim Plugin & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox) raws li programmatic.
 

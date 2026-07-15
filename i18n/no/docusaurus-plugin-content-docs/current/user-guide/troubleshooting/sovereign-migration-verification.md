@@ -3,7 +3,7 @@ title: Suveren Migrasjonsverifisering
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifisering av suveren migrasjon {#sovereign-migration-verification}
+# Verifisering av suveren migrasjon
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inkluderer WP-CLI verifiseringskommandoer for migrasjoner til suverene leietakere (tenants). Bruk dem hvis en tenantmigrering, SSO-besøk eller isolert installasjon ikke oppfører seg som forventet.
 

@@ -3,7 +3,7 @@ title: Dashboard'u Anlamak
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Kontrol Panelini Anlamak {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Kontrol Panelini Anlamak
 
 Daha gelişmiş yapılandırma seçenlerine ve Ultimate Multisite'ın işleyişine geçmeden önce, kontrol paneline bir göz atalım.
 

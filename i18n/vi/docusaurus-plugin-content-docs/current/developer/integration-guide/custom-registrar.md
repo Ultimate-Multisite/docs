@@ -3,7 +3,7 @@ title: Xây dựng tích hợp Registrar tùy chỉnh
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Xây dựng Tích hợp Registrar Tùy chỉnh {#building-a-custom-registrar-integration}
+# Xây dựng Tích hợp Registrar Tùy chỉnh
 
 Addon Domain Seller sử dụng mô hình **Integration Registry** (Sổ đăng ký Tích hợp). Mỗi registrar là một class PHP triển khai `Domain_Selling_Capability` và tự đăng ký thông qua action hook `wu_domain_seller_register_capabilities`.
 

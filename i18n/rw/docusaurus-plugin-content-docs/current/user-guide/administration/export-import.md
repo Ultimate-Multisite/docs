@@ -3,7 +3,7 @@ title: Gukoresha no gukoresha
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 yifashije **Export & Import** (Kugera no Gutera) uburyo runaka mu **Tools > Export & Import**. Ureba uyu zindiwe n'ubwo ushaka kugabanya site ya WordPress mu ZIP file, gutera ubuzima bwa ZIP, cyangwa gukoresha site hagati y'Ultimate Multisite na single-site WordPress zitera.
 

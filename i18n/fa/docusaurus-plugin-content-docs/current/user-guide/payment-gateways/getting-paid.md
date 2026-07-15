@@ -3,7 +3,7 @@ title: دریافت وجه
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# دریافت پرداخت (v2) {#getting-paid-v2}
+# دریافت پرداخت (v2)
 
 _**نکتهٔ مهم: این مقاله به Ultimate Multisite نسخهٔ 2.x اشاره دارد.**_
 

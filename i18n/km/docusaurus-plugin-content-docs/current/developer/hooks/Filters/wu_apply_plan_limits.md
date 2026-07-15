@@ -4,7 +4,7 @@ title: តម្រង - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# តម្រង: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+# តម្រង: wu_apply_plan_limits
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍កម្មវិធីបន្ថែមរំលងការកំណត់បាន។
 

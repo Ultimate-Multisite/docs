@@ -3,7 +3,7 @@ title: 'Aralin 13: Pagpapalawak'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Aralin 13: Pagpapalawak {#lesson-13-scaling-up}
+# Aralin 13: Pagpapalawak
 
 Mayroon ka nang gumaganang platform na may nagbabayad na mga customer. Sinasaklaw ng araling ito kung paano lumago mula sa maliit na operasyon tungo sa napapanatiling negosyo -- pagpapalawak ng imprastraktura, pag-a-automate ng mga operasyon, at pagpapataas ng kita bawat customer.
 

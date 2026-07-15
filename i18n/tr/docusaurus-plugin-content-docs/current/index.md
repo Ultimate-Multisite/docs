@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Dokümantasyonu {#ultimate-multisite-documentation}
+# Ultimate Multisite Dokümantasyonu
 
 Ultimate Multisite dokümantasyonuna hoş geldiniz. Ultimate Multisite, WordPress Multisite'ı tam teşekküllü bir Website as a Service (WaaS) platformuna dönüştürür.
 

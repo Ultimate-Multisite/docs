@@ -3,7 +3,7 @@ title: Traktado de ret-hokoj
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-traktado {#webhook-handling}
+# Webhook-traktado
 
 Kreu proprajn webhook-finpunktojn por ricevi eventojn de eksteraj servoj kaj sinkronigi datumojn kun Ultimate Multisite.
 

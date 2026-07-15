@@ -4,7 +4,7 @@ title: 过滤器 - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# 过滤器: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# 过滤器: wu_get_migration_steps
 
 允许开发者和插件添加新的迁移步骤
 

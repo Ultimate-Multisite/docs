@@ -3,7 +3,7 @@ title: Site Builder Contactformulieren
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Contactformulieren met de Site Builder {#site-builder-contact-forms}
+# Contactformulieren met de Site Builder
 
 Superdav AI Agent v1.10.0 voegt de mogelijkheid toe om contactformulieren rechtstreeks vanuit de chatinterface te maken met behulp van de Site Builder agent. Hiermee kunt u volledig functionele contactformulieren aan elke pagina toevoegen zonder de chat te verlaten.
 

@@ -3,7 +3,7 @@ title: CyberPanel Integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Den här guiden förklarar hur du konfigurerar Ultimate Multisite CyberPanel-integrationen så att domäner som mappas i ditt nätverk automatiskt läggs till (och tas bort) som virtuella hosts i CyberPanel, med valfri auto-SSL-provisionering via Let's Encrypt.
 

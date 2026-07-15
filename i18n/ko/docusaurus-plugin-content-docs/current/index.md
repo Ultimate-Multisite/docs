@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite 문서 {#ultimate-multisite-documentation}
+# Ultimate Multisite 문서
 
 Ultimate Multisite 문서에 오신 것을 환영합니다. Ultimate Multisite는 WordPress Multisite를 완전한 Website as a Service (WaaS) 플랫폼으로 변환합니다.
 

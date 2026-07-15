@@ -4,7 +4,7 @@ title: வடிகட்டி - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0eef99879a6634b6dd604ef90235090e
 ---
-# Filter: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Filter: wp_ultimo_skip_network_active_check
 
 இந்தச் சோதனையைத் தவிர்க்க (short-circuit) டெவலப்பர்களுக்கு இது அனுமதிக்கிறது.
 

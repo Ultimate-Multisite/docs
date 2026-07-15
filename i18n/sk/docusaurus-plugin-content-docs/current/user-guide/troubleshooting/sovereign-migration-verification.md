@@ -3,7 +3,7 @@ title: Vzťahová verifikácia migrácii
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikácia migrácií suverénnych domén {#sovereign-migration-verification}
+# Verifikácia migrácií suverénnych domén
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 obsahuje WP-CLI príkazové možnosti verifikácie pre migráции suverénnych domén. Použite ich, ak sa migracia domény, návšteva s SSO alebo izolovaná inštalácia nebehá na cieľom.
 

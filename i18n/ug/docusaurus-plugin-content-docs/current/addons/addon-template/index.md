@@ -3,9 +3,9 @@ title: قوشۇمچە دېتال قېلىپى
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قوشۇمچە قېلىپى {#addon-template}
+# قوشۇمچە قېلىپى
 
-{{ADDON_DESCRIPTION}}
+قوشۇمچە دېتال قېلىپى — Ultimate Multisite.
 
 ## تەلەپلەر {#requirements}
 

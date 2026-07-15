@@ -4,7 +4,7 @@ title: Действие - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Action: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Action: wu_magic_link_invalid_token
 
 Срабатывает, когда обнаружен недействительный токен магической ссылки.
 

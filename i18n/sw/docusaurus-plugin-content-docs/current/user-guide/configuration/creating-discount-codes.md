@@ -3,7 +3,7 @@ title: Kuunda Misimbo ya Punguzo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kuunda Misimbo ya Punguzo (v2) {#creating-discount-codes-v2}
+# Kuunda Misimbo ya Punguzo (v2)
 
 _**MAELEZO MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 

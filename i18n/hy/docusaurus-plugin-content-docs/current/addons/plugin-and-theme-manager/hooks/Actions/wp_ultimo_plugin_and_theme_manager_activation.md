@@ -4,7 +4,7 @@ title: Գործողություն - wp_ultimo_plugin_and_theme_manager_activatio
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Գործողություն՝ wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# Գործողություն՝ wp_ultimo_plugin_and_theme_manager_activation
 
 Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց ակտիվացման ընթացակարգերը
 

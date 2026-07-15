@@ -3,7 +3,7 @@ title: Changelog на Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Промени в Loco Translate {#loco-translate-changelog}
+# Промени в Loco Translate
 
 ### 1.0.1 {#101}
 * Подобрена съвместимост с най-новата версия на Loco Translate

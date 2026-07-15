@@ -3,7 +3,7 @@ title: 'Lezione 6: L''esperienza di registrazione'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lezione 6: L'Esperienza di Registrazione {#lesson-6-the-signup-experience}
+# Lezione 6: L'Esperienza di Registrazione
 
 Il flusso di checkout è il punto in cui l'interesse si trasforma in entrate. Un processo di registrazione confuso o generico fa perdere i clienti. Un flusso specifico per nicchia che parli la loro lingua e che risulta naturale li converte.
 

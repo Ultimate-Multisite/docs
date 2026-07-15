@@ -4,7 +4,7 @@ title: Sefe - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Sehlotlo: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Sehlotlo: mu_migration/export/user/data
 
 Se sefa sete ya kamehla ya datha ya mosebedisi e lokelang ho romellwa kantle/kenngwa kantle.
 

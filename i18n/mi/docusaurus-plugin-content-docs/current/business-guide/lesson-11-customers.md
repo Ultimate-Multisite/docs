@@ -3,7 +3,7 @@ title: 'Akoranga 11: Te kimi kiritaki'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Akoranga 11: Te Kimi Kiritaki {#lesson-11-finding-customers}
+# Akoranga 11: Te Kimi Kiritaki
 
 He papa rawe kāore ōna kiritaki, he mahi ngahau noa iho. Ka kapi i tēnei akoranga me pēhea te tiki kiritaki i tētahi rāngai motuhake -- ngā rautaki e whai hua ana nā te mea e arotahi ana koe ki tētahi ahumahi kotahi.
 

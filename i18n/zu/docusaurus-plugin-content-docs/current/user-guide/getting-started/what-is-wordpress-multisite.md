@@ -3,7 +3,7 @@ title: Yini i-WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Iyini i-WordPress Multisite? {#what-is-wordpress-multisite}
+# Iyini i-WordPress Multisite?
 
 Ngaphakathi komgogodla wayo, i-WordPress inikeza isici esibizwa ngokuthi ‘Multisite’ esilandela imvelaphi yaso emuva ku-2010 ngesikhathi kwethulwa i-WordPress 3.0. Kusukela lapho sesithole izibuyekezo eziningi ezihlose ukwethula izici ezintsha nokuqinisa ukuphepha.
 

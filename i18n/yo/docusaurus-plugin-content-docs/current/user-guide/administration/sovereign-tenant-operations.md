@@ -3,7 +3,7 @@ title: Àwọn Iṣẹ́ Agbatọju Olómìnira
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Ìṣẹ́ Ṣíṣe Oníbùgbé Olóminira {#sovereign-tenant-operations}
+# Ìṣẹ́ Ṣíṣe Oníbùgbé Olóminira
 
 Ultimate Multisite: Ìgbépọ̀ Ọ̀pọ̀ Oníbùgbé 1.2.0 ṣàfikún irinṣẹ́ iṣẹ́ ṣiṣe fún àwọn oníbùgbé olóminira: àwọn subsite tí ń ṣiṣẹ́ pẹ̀lú database tiwọn, gbòngbo filesystem, àti routing context tiwọn, nígbà tí wọ́n ṣì ń hàn láti ọ̀dọ̀ network admin.
 

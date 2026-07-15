@@ -3,7 +3,7 @@ title: Pèsonalize Fòm Enskripsyon Ou an
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pèsonalize Fòm Enskripsyon ou {#customizing-your-registration-form}
+# Pèsonalize Fòm Enskripsyon ou
 
 Pou fè rezo ou parèt inik parapò ak tout lòt SaaS ki bati sou platfòm WordPress, Ultimate Multisite pèmèt ou pèsonalize paj enskripsyon ak koneksyon ou yo ak fonksyon **Checkout Forms** nou an.
 

@@ -4,7 +4,7 @@ title: কার্যক্রম - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# অ্যাকশন: update_network {#action-updatenetwork}
+# অ্যাকশন: update_network
 
 যখন কোনো বিদ্যমান নেটওয়ার্ক আপডেট করা হয়, তখন এটি কার্যকর হয়।
 

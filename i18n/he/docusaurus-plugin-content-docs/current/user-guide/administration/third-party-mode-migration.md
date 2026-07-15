@@ -3,7 +3,7 @@ title: העברת מצב צד שלישי
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# הגירה למצב צד שלישי (Third-Party Mode Migration) {#third-party-mode-migration}
+# הגירה למצב צד שלישי (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 משנה את אופן הטיפול ביכולות של צד שלישי (third-party abilities). **מצב צד שלישי כעת מוגדר כברירת מחדל ל"אוטומטי" (auto)**, מה שמאפשר אינטגרציה מובנית עם WordPress Abilities API בגרסה WordPress 7.0 ומעלה, ללא צורך בהגדרות ידניות.
 

@@ -3,7 +3,7 @@ title: Җнәрә
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Cemaatinde Qayta {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Cemaatinde Qayta
 
 Ultimate Multisite Cemaati — bu yerda başgalar Ultimate Multisite foydalanıcıları bilen biri hatarlaşa bilýärsiňiz we maslahatlaryňyzy, tajribeleriňizi we beýleki zatlary paýlaşyp bilersiňiz. Ultimate Multisite Cemaatine girmezlik üçin https://community.ultimatemultisite.com/home adresine gitmeli.
 

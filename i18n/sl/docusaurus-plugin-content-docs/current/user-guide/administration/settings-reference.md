@@ -3,7 +3,7 @@ title: Referenca nastavitev
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenca nastavitev {#settings-reference}
+# Referenca nastavitev
 
 Ta stran spremlja nastavitve, ki vplivajo na vsakodnevno administracijo, in nedavne spremembe vedenja v Ultimate Multisite.
 

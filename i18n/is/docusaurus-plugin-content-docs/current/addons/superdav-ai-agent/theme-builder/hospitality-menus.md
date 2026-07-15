@@ -3,7 +3,7 @@ title: Matseðlar fyrir veitinga- og gistigeirann
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality matseðlar {#hospitality-menus}
+# Hospitality matseðlar
 
 **Hospitality matseðlar** eiginleikinn gerir Theme Builder kleift að búa til og fella inn skipulagðar matar- og drykkjarmatseðilssíður beint inn á WordPress vefinn þinn.
 

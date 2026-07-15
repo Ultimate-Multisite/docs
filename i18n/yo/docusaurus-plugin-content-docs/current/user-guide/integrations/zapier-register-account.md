@@ -3,7 +3,7 @@ title: Forúkọsílẹ̀ Account nípasẹ̀ Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Ìṣẹ̀lẹ̀: Forúkọsílẹ̀ Account nípasẹ̀ Zapier {#event-register-an-account-via-zapier}
+# Ìṣẹ̀lẹ̀: Forúkọsílẹ̀ Account nípasẹ̀ Zapier
 
 Nínú àpilẹ̀kọ [Ṣíṣe ìṣàkóso Ultimate Multisite pẹ̀lú Zapier](zapier.md), a jíròrò bí a ṣe lè lo Zapier láti ṣe àwọn ìṣe ọ̀tọ̀ọ̀tọ̀ nínú Ultimate Multisite dá lórí àwọn ohun tí ń ru ìṣe àti àwọn ìṣẹ̀lẹ̀. Nínú àpilẹ̀kọ yìí, a ó fi hàn bí o ṣe lè ṣàkóso àwọn ohun elo ẹgbẹ́ kẹta. A ó lo Google Sheets gẹ́gẹ́ bí orísun dátà, a ó sì fi ìwífún náà ránṣẹ́ sí Ultimate Multisite láti forúkọsílẹ̀ Account kan.
 

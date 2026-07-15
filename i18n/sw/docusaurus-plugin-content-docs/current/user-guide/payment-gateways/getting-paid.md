@@ -3,7 +3,7 @@ title: Kulipwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kulipwa (v2) {#getting-paid-v2}
+# Kulipwa (v2)
 
 _**DONDOO MUHIMU: Makala hii inahusu Ultimate Multisite toleo 2.x.**_
 

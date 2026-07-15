@@ -3,7 +3,7 @@ title: Mengurus Pembayaran dan Invois
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Mengurus Pembayaran dan Invois {#managing-payments-and-invoices}
+# Mengurus Pembayaran dan Invois
 
 ## Tetapan Pembayaran {#payment-settings}
 

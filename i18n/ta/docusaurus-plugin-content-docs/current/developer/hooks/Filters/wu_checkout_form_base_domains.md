@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# வடிகட்டி: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# வடிகட்டி: wu_checkout_form_base_domains
 
 பகிரப்பட்ட checkout-form அடிப்படை டொமைன்கள் mapped-domain பதிவுகளாக மாறாமல் இருக்க அவற்றை வடிகட்டுகிறது.
 

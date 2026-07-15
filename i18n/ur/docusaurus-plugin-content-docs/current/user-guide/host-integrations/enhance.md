@@ -3,7 +3,7 @@ title: کنٹرول پینل انضمام کو بہتر بنائیں
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance کنٹرول پینل انٹیگریشن {#enhance-control-panel-integration}
+# Enhance کنٹرول پینل انٹیگریشن
 
 ## جائزہ {#overview}
 Enhance ایک جدید کنٹرول پینل ہے جو طاقتور ہوسٹنگ آٹومیشن اور مینجمنٹ کی صلاحیتیں فراہم کرتا ہے۔ یہ انٹیگریشن Ultimate Multisite اور Enhance Control Panel کے درمیان خودکار ڈومین سنکنگ اور SSL سرٹیفکیٹ مینجمنٹ کو ممکن بناتی ہے۔

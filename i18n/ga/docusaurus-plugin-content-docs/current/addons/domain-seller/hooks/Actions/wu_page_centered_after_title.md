@@ -4,7 +4,7 @@ title: Gníomh - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# Gníomh: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
+# Gníomh: wu_page_centered_after_title
 
 Lig d’fhorbróirí plugin cnaipí breise a chur leis.
 

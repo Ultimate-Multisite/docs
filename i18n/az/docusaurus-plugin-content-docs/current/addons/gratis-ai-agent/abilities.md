@@ -3,7 +3,7 @@ title: Qabiliyyətlər Referansı
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Yetenekler Referansı {#abilities-reference}
+# Yetenekler Referansı
 
 Yetenəkler, Gratis AI Agent tərəfindən WordPress quraşdırmanıza çağırla biləcək atomik əməliyyatlardır. Hər bir yetək, JSON sxemini göstərən qeydiyyatdan keçmiş PHP sinifidir — agent bu sxemi iş zamanı oxuyur və hansı parametrlərin tələb olunduğunu və yetəyin nə qaytardığını başa düşür.
 

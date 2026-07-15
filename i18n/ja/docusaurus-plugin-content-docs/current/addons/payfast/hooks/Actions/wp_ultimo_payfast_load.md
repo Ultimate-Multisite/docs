@@ -4,7 +4,7 @@ title: アクション - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# アクション: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# アクション: wp_ultimo_payfast_load
 
 すべての依存関係が読み込まれたときにトリガーされます
 

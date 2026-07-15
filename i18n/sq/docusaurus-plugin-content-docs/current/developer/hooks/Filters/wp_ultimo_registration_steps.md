@@ -4,7 +4,7 @@ title: Filtër - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# Filtri: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# Filtri: wp_ultimo_registration_steps
 
 Shtoni hapa shtesë përmes filtrave
 

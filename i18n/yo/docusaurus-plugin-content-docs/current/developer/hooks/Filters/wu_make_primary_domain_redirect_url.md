@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Àlẹmọ: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Àlẹmọ: wu_make_primary_domain_redirect_url
 
 Ṣe àlẹmọ URL ìtọ́kasí lẹ́yìn fífi domain kan ṣe àkọ́kọ́.
 

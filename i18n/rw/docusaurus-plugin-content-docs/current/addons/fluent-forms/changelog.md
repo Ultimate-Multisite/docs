@@ -3,7 +3,7 @@ title: Fluent Forms Urutonde rw’impinduka
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms Amateka y'impinduka {#fluent-forms-changelog}
+# Fluent Forms Amateka y'impinduka
 
 Verisiyo: 2.0.1 - Yasohotse ku 2025-09-28
 

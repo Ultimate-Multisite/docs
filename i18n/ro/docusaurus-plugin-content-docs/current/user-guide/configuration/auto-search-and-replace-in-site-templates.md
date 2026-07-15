@@ -3,7 +3,7 @@ title: Căutare și înlocuire automată în șabloanele de site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Căutare și înlocuire automată în șabloanele de site (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Căutare și înlocuire automată în șabloanele de site (v2)
 
 _**Acest tutorial necesită WP UItimo versiunea 2.x.**_
 

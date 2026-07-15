@@ -4,7 +4,7 @@ title: Scagaire - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Scagaire: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Scagaire: wu_wp_cli_enabled_sub_commands
 
 Scagann sé cé na sub_commands atá cumasaithe don eintiteas seo.
 

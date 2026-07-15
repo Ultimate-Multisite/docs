@@ -4,7 +4,7 @@ title: Фильтр - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Фильтр: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Фильтр: wu_password_require_uppercase
 
 Серсүзләрдә баш хәрефләр таләп ителергә тиешме икәнен фильтрлый.
 

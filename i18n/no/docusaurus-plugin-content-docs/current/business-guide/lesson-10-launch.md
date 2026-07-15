@@ -3,7 +3,7 @@ title: 'Leksjon 10: Lanseringsdagen'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leksjon 10: Lanseringsdagen {#lesson-10-launch-day}
+# Leksjon 10: Lanseringsdagen
 
 Alt er bygget. Før du åpner dørene, går denne leksjonen gjennom sjekklisten før lansering for å sikre at ingenting er ødelagt, mangler eller er pinlig.
 

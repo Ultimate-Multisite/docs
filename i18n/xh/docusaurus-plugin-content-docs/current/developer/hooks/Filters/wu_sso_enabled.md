@@ -4,7 +4,7 @@ title: Isihluzi - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Isihluzi: wu_sso_enabled {#filter-wussoenabled}
+# Isihluzi: wu_sso_enabled
 
 Yenza okanye ukhubaze isakhono sokungena kube kanye kwiidomeyini ezahlukeneyo.
 

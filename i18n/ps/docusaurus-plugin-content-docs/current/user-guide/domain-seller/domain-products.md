@@ -3,7 +3,7 @@ title: د ډامینا نومونه او قیمتونه
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# دامنې محصولات او قیمت‌گذاری {#domain-products-and-pricing}
+# دامنې محصولات او قیمت‌گذاری
 
 د دامنې محصولات هغه طریقەیە چې تاسو سره مرسته کوي چې قیمتونه، TLDs (Top-Level Domains)، WHOIS راټولیت، او پليوی انتخاب کنټرول کړئ. هر د دامنه محصول یو معیاري Multisite Ultimate محصول دی چې یو اضافه **Domain Settings** ټب لري.
 

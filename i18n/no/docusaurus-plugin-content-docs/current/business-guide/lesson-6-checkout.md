@@ -3,7 +3,7 @@ title: 'Leksjon 6: Registreringsopplevelsen'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leksjon 6: Opplevelsen ved registrering {#lesson-6-the-signup-experience}
+# Leksjon 6: Opplevelsen ved registrering
 
 Betalingsflyten er der interessen blir til inntekt. En forvirrende eller generisk registreringsprosess får kundene til å falle fra. En nisje-spesifikk flyt som snakker deres språk og føles uanstrengt, konverterer dem.
 

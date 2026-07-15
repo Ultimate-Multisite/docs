@@ -3,7 +3,7 @@ title: 'Palajaran 2: Milih Ceruk Pasar Anjeun'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Pangajaran 2: Milih Pasar Husus Anjeun {#lesson-2-picking-your-niche}
+# Pangajaran 2: Milih Pasar Husus Anjeun
 
 Dina Pangajaran 1 urang geus netepkeun naha pasar husus leuwih unggul tibatan anu umum. Ayeuna anjeun kudu milih milik anjeun. Pangajaran ieu masihan anjeun kerangka pikeun manggihan jeung ngesahkeun pasar husus saméméh anjeun nanem modal waktu pikeun ngawangun keur éta.
 

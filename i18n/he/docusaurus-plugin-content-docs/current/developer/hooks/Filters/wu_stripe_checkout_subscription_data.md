@@ -4,7 +4,7 @@ title: פילטר - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# מסנן: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# מסנן: wu_stripe_checkout_subscription_data
 
 מסנן את נתוני המנוי של Stripe. ניתן לדרוס את `success_url` או `cancel_url`.
 

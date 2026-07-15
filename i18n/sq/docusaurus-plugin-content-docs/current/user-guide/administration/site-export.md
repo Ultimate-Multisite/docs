@@ -3,7 +3,7 @@ title: Eksport i faqes së internetit
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksportimi i Siti {#site-export}
+# Eksportimi i Siti
 
 Paga e admin për **Site Export** ju lejon administratorët e rrjetit të paketojnë një site, ose të gjithë rrjetin, në një arkiv që mund të shkarkohet për migrim, bكرpim (backup) ose punë transferimi.
 

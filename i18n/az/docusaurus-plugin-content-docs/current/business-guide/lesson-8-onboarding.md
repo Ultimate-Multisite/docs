@@ -3,7 +3,7 @@ title: 'Dərslik 8: Müştəri Onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Dərs 8: Müştəri Onboarding (Təşkilatlaşdırma) {#lesson-8-customer-onboarding}
+# Dərs 8: Müştəri Onboarding (Təşkilatlaşdırma)
 
 Müştəri qeydiyyatdan keçməsini təmin etmək işin yalnız yarısıdır. Əgər onlar daxil olub, özlərini çaşdırılmış hiss edirlərsə və heç vaxt geri qayıtmırlar, deməli onları itirmisiniz. Bu dərs isə yeni qeydiyyatdan keçmiş bir istifadəçini aktiv, bağlı bir müştəriyə çevirən təcrübəni dizayn etməyə kömək edir.
 

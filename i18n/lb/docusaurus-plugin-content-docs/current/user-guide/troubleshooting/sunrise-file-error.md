@@ -3,7 +3,7 @@ title: Fehler Sunrise File
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fehler bi de Installation vo Sunrise File {#error-installing-the-sunrise-file}
+# Fehler bi de Installation vo Sunrise File
 
 D'sunrise.php Datei isch e spezielli Datei, wo WordPress sueche mues, wenn es sich selber startet (bootstraps). Damit WordPress die sunrise.php Datei chann erkenne, muess sie im **wp-content Ordner** si.
 

@@ -3,7 +3,7 @@ title: Uwezo wa Kuonekana
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Uonekano wa Uwezo (Ability Visibility) {#ability-visibility}
+# Uonekano wa Uwezo (Ability Visibility)
 
 Superdav AI Agent v1.12.0 inatanguliza udhibiti wa **Uonekano wa Uwezo** ambao unadhibiti ni sehemu zipi zitafichua uwezo kila uwezo. Hii inaruhusu wasimamizi kurekebisha kwa undani ni uwezo gani wa agent zitapatikana kupitia REST APIs, seva za MCP, viunganishi vya WooCommerce, na sehemu zingine.
 

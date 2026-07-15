@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# افزونه‌های Ultimate Multisite {#ultimate-multisite-addons}
+# افزونه‌های Ultimate Multisite
 
 افزونه‌ها قابلیت‌ها و یکپارچه‌سازی‌های اضافی را به Ultimate Multisite اضافه می‌کنند. اکثر افزونه‌ها پولی هستند و می‌توانید آن‌ها را از [ultimatemultisite.com](https://ultimatemultisite.com) خریداری کنید.
 

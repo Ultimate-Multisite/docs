@@ -3,7 +3,7 @@ title: Valideer paletkontras
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valideer Paletkontras {#validate-palette-contrast}
+# Valideer Paletkontras
 
 Die **Validate Palette Contrast** vermoë kontroleer kleurpaare in jou ontwerppalet op nakoming van WCAG (Web Content Accessibility Guidelines) voordat dit op jou tema toegepas word.
 

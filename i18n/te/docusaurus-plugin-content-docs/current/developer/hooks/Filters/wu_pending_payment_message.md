@@ -4,7 +4,7 @@ title: Filter - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filter: wu_pending_payment_message
 
 పెండింగ్‌లో ఉన్న చెల్లింపుల గురించి సందేశాన్ని వినియోగదారు మార్చడానికి ఇది అనుమతిస్తుంది.
 

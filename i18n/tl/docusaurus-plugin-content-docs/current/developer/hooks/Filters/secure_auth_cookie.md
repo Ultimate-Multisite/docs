@@ -4,7 +4,7 @@ title: Pansala - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Pansala: secure_auth_cookie {#filter-secureauthcookie}
+# Pansala: secure_auth_cookie
 
 Sinasala kung ang auth cookie ay dapat lamang ipadala sa HTTPS.
 

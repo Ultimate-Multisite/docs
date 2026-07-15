@@ -4,7 +4,7 @@ title: কাৰ্য - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Action: wu_centered_content {#action-wucenteredcontent}
+# Action: wu_centered_content
 
 প্লাগইন ডেভেলপাৰসকলক কেন্দ্ৰীয় স্তম্ভৰ ভিতৰত অতিৰিক্ত বিষয়বস্তু যোগ কৰিবলৈ অনুমতি দিয়ে।
 

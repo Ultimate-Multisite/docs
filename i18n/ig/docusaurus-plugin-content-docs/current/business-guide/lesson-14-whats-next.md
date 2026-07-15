@@ -3,7 +3,7 @@ title: 'Nkuzi 14: Ihe Na-abịa Ọzọ'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Nkuzi 14: Ihe Na-abịa Ọzọ {#lesson-14-what-comes-next}
+# Nkuzi 14: Ihe Na-abịa Ọzọ
 
 Ị wulitela ikpo okwu webụsaịtị maka ngalaba ahịa pụrụ iche site na mbido. FitSite dị ndụ, na-ejere ụlọ ọmụmụ ahụike ozi, ma na-emepụta ego na-abata ugboro ugboro. Nkuzi ikpeazụ a na-ele ebe ị ga-esi ebe a gaa n’ihu.
 

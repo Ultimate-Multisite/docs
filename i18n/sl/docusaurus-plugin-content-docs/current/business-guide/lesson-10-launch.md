@@ -3,7 +3,7 @@ title: 'Lekcija 10: Dan lansiranja'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekcija 10: Dan lansiranja {#lesson-10-launch-day}
+# Lekcija 10: Dan lansiranja
 
 Vse je zgrajeno. Preden odprete vrata, vas ta lekcija vodi skozi kontrolni seznam pred lansiranjem, da se prepričate, da ni nič pokvarjeno, manjkajoče ali neprijetno.
 

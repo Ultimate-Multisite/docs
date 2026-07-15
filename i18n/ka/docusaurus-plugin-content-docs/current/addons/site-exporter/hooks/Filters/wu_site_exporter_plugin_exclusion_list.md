@@ -4,7 +4,7 @@ title: ფილტრი - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# ფილტრი: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# ფილტრი: wu_site_exporter_plugin_exclusion_list
 
 დეველოპერებს საშუალებას აძლევს მართონ plugin-ის სია, რომელიც შესაძლოა გამოირიცხოს გენერირებული zip-იდან.
 

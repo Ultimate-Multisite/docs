@@ -3,7 +3,7 @@ title: Երրորդ կողմի ռեժիմի մուտքագրում
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Առաջին Երրորդ-Կողմ ռեժիմի անցումը (Third-Party Mode Migration) {#third-party-mode-migration}
+# Առաջին Երրորդ-Կողմ ռեժիմի անցումը (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0-ը փոփոխություններ է կատարում այնպես, ինչպես են մշակվում երրորդ-կողմ հնարավորությունները։ **Երրորդ-կողմ ռեժիմը հիմա ստանդարտ է «auto» (ավտո) դառնում**, թույլ տալով WordPress 7.0+ վրա նախատեսված WordPress Abilities API-ի ներգրավումը առանց ձեռքով կոնֆիգուրացիայի։
 

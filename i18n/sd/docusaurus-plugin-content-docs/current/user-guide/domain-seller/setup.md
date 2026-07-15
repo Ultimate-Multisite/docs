@@ -3,7 +3,7 @@ title: تنصيب ۽ پرووڊيئر کانگيشن
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# डोमेन سیلر: سیٹ اپ ۽ پرووائڊر کانفيجريشن {#domain-seller-setup-and-provider-configuration}
+# डोमेन سیلر: سیٹ اپ ۽ پرووائڊر کانفيجريشن
 
 Domain Seller addon هڪ گائیڊed setup wizard سان همراه آهي جيڪا توهان کي هر ضرورتن واري قدم پر قدم تي رهي ٿي. هي صفحو wizard جو عمل ۽ ان کان پوءِ ڪيئن providers کي configure يا reconfigure ڪرڻ آهي، انهيءَ بابت معلومات ڏئي ٿو.
 

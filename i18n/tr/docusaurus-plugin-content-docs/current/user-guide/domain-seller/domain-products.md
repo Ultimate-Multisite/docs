@@ -3,7 +3,7 @@ title: Alan Adı Ürünleri ve Fiyatlandırma
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Alan Adı Ürünleri ve Fiyatlandırma {#domain-products-and-pricing}
+# Alan Adı Ürünleri ve Fiyatlandırma
 
 Alan adı ürünleri, fiyatlandırmayı, TLD'leri (Üst Düzey Alan Adları), WHOIS gizliliğini ve sağlayıcı seçimini kontrol etmenizi sağlayan mekanizmalardır. Her alan adı ürünü, ek bir **Alan Adı Ayarları** sekmesi bulunan standart bir Multisite Ultimate ürünüdür.
 

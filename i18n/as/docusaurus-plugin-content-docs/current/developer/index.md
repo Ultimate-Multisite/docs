@@ -3,7 +3,7 @@ title: ডেভেলপৰ ডকুমেন্টেশ্বন
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ডেভেলপার ডকুমেন্টেশ্যন {#developer-documentation}
+# ডেভেলপার ডকুমেন্টেশ্যন
 
 এই গাইডখন Ultimate Multisite-ৰ সৈতে ইন্টিগ্রেট কৰিবলৈ, এক্সটেন্ড কৰিবলৈ বা এডন (addons) ডেভেলপ কৰিবলৈ ডেভেলপাৰসকলৰ বাবে সকলো প্ৰয়োজনীয় তথ্য দিয়ে। Ultimate Multisite-এ এটা WordPress Multisite network-ক Website-as-a-Service (WaaS) প্ল্যাটফৰ্মত পৰিণত কৰে।
 

@@ -3,7 +3,7 @@ title: Pangangasiwa ng Buwis
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pamamahala ng Buwis {#tax-handling}
+# Pamamahala ng Buwis
 
 Ang Ultimate Multisite ay may module para sa pagkolekta ng buwis na built-in sa aming core plugin, kaya kung kailangan mong mangolekta ng sales tax sa iyong mga plan, package, at serbisyo, madali mo itong magagawa nang hindi kinakailangang mag-install ng anumang add-on.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filtru: wu_current_set_site {#filter-wucurrentsetsite}
+# Filtru: wu_current_set_site
 
 Jippermetti lill-iżviluppaturi jimmodifikaw l-imġiba default u jistabbilixxu s-sit attwali b’mod differenti.
 

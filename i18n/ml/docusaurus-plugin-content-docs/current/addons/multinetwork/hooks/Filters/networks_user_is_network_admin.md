@@ -4,7 +4,7 @@ title: Filter - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Filter: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
+# Filter: networks_user_is_network_admin
 
 ഒരു യൂസർ അഡ്മിനിസ്ട്രേറ്റർ ആയ നെറ്റ്‌വർക്കുകളെ ഫിൽട്ടർ ചെയ്യുന്നു.
 

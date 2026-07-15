@@ -4,7 +4,7 @@ title: Scagaire - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Scagaire: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Scagaire: wu_wp_config_reference_hook_line_patterns
 
 Déanaimid seiceáil ar thrí phatrún agus muid ag iarraidh a dhéanamh amach cá háit ar féidir linn ár dtairisigh a instealladh:
 

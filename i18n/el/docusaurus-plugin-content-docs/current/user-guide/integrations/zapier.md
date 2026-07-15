@@ -3,7 +3,7 @@ title: Ενσωμάτωση Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ενσωμάτωση του Ultimate Multisite με το Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ενσωμάτωση του Ultimate Multisite με το Zapier
 
 Σε ένα από τα άρθρα, συζητήσαμε τα [Webhooks](webhooks.md) και πώς μπορούν να χρησιμοποιηθούν για ενσωμάτωση με εφαρμογές τρίτων.
 

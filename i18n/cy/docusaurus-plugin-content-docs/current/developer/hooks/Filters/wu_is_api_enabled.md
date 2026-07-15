@@ -4,7 +4,7 @@ title: Hidlydd - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Hidlydd: wu_is_api_enabled {#filter-wuisapienabled}
+# Hidlydd: wu_is_api_enabled
 
 Caniatáu i ddatblygwyr plugin orfodi cyflwr penodol ar gyfer yr API.
 

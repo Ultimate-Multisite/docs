@@ -4,7 +4,7 @@ title: Sivana - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Sivana: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Sivana: wu_current_set_customer
 
 Avelao ny mpamorona hanova ny fitondran-tena mahazatra ary hametraka ny customer ankehitriny amin'ny fomba hafa.
 

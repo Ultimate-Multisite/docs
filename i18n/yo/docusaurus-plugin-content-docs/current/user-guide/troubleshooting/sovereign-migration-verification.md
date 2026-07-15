@@ -3,7 +3,7 @@ title: Ìmúdájú Ìṣílọ Olómìnira
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Ìjẹ́rìísí Ìṣílọ Aládàáṣe {#sovereign-migration-verification}
+# Ìjẹ́rìísí Ìṣílọ Aládàáṣe
 
 Ultimate Multisite: Ìfaragbé-Púpọ̀ 1.2.0 ní àwọn àṣẹ ìjẹ́rìísí WP-CLI fún àwọn ìṣílọ ayálégbé aládàáṣe. Lò wọ́n nígbà tí ìṣílọ ayálégbé, ìbẹ̀wò SSO, tàbí ìfisí tí a yà sọ́tọ̀ kò bá hùwà bí a ti retí.
 

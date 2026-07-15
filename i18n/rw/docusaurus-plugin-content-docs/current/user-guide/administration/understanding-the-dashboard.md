@@ -3,7 +3,7 @@ title: Gukunda uburyo bwo gukoresha Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Kumenya Dashboard ya Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Kumenya Dashboard ya Ultimate Multisite
 
 Tazama kabla ya kujitahidi zaidi katika chaguzi za ziada za mipangilio na vipengele vya utendaji vya Ultimate Multisite, tuanze kwa kutazama dashboard.
 

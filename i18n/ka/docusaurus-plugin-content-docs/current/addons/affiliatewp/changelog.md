@@ -3,7 +3,7 @@ title: AffiliateWP ცვლილებების ჟურნალი
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ცვლილებების ჟურნალი {#affiliatewp-changelog}
+# AffiliateWP ცვლილებების ჟურნალი
 
 ვერსია: 2.0.1 - გამოშვებულია 2025-09-28
 

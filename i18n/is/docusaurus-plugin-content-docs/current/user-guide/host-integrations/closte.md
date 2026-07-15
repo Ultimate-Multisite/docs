@@ -3,7 +3,7 @@ title: Closte samstarf
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Samningur {#closte-integration}
+# Closte Samningur
 
 ## Översikt {#overview}
 Closte er ein skyve WordPress-héstingsplattform bygd på Google Cloud-infrastruktur. Denne integrasjonen gjer det mogleg automatisk domene-synkronisering og administrasjon av SSL-sertifikat mellom Ultimate Multisite og Closte.

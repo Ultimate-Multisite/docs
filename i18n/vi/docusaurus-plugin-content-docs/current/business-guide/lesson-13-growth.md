@@ -3,7 +3,7 @@ title: 'Bài học 13: Mở rộng quy mô'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Bài học 13: Mở rộng quy mô {#lesson-13-scaling-up}
+# Bài học 13: Mở rộng quy mô
 
 Bạn đã có một nền tảng hoạt động ổn định và có những khách hàng trả phí. Bài học này sẽ hướng dẫn bạn cách phát triển từ một hoạt động nhỏ lẻ thành một doanh nghiệp bền vững — bao gồm việc mở rộng cơ sở hạ tầng, tự động hóa vận hành và tăng doanh thu trên mỗi khách hàng.
 

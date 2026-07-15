@@ -3,7 +3,7 @@ title: '제3강: 네트워크 설정하기'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: 네트워크 설정하기 {#lesson-3-setting-up-your-network}
+# Lesson 3: 네트워크 설정하기
 
 이제 구축할 시간입니다. 이번 레슨에서는 Ultimate Multisite를 설치하고 FitSite 네트워크의 기반을 설정할 것입니다. 여기서 내리는 모든 결정은 피트니스 분야에 초점을 맞추었습니다.
 

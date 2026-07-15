@@ -3,7 +3,7 @@ title: Site Eksport
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport af site {#site-export}
+# Eksport af site
 
 Admin-siden **Site Export** giver netværksadministratorer mulighed for at pakke én site, eller hele netværket, ind i en downloadbar arkiv til migrering, backup eller overdragelsesarbejde.
 

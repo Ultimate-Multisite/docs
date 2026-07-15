@@ -4,7 +4,7 @@ title: Ìṣe - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Ìṣe: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Ìṣe: wu_domain_mapping_register_filters
 
 Àwọn àfikún kan máa fi URL pamọ́ kí mapping tó ṣiṣẹ́ tàbí wọn máa dá àwọn URL kalẹ̀ ní ọ̀nà míì tí kò wà nínú àwọn àlẹmọ lókè yìí.
 

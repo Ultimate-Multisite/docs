@@ -3,7 +3,7 @@ title: 'Les 11: Klanten vinden'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Les 11: Klanten Vinden {#lesson-11-finding-customers}
+# Les 11: Klanten Vinden
 
 Een geweldig platform zonder klanten is slechts een hobby. Deze les gaat over hoe je klanten kunt werven in een specifieke sector (niche vertical) – strategieën die werken omdat je je richt op één industrie.
 

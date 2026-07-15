@@ -3,7 +3,7 @@ title: Nangani Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Penanganan Webhook {#webhook-handling}
+# Penanganan Webhook
 
 Gawe endpoint webhook kustom kanggo nampa kedadeyan saka layanan njaba lan nyelarasake data karo Ultimate Multisite.
 

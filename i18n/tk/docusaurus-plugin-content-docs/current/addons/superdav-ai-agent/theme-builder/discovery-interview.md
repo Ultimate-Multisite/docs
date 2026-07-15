@@ -3,7 +3,7 @@ title: Açyş söhbetdeşligi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Açyş söhbetdeşligi {#discovery-interview}
+# Açyş söhbetdeşligi
 
 **Açyş söhbetdeşligi** Theme Builder-iň dizaýn işiniň ilkinji ädimidir. Ol şahsylaşdyrylan tema döretmek üçin siziň saýt, işiňiz we dizaýn islegleriňiz barada maglumat ýygnaýar.
 

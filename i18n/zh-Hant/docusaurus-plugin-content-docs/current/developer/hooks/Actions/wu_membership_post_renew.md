@@ -4,7 +4,7 @@ title: 動作 - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# 動作：wu_membership_post_renew {#action-wumembershippostrenew}
+# 動作：wu_membership_post_renew
 
 此動作會在會員續訂後觸發。
 

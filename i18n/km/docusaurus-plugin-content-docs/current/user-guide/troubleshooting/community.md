@@ -3,7 +3,7 @@ title: សហគមន៍
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# របៀបចូលរួមក្នុងសហគមន៍ Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# របៀបចូលរួមក្នុងសហគមន៍ Ultimate Multisite
 
 Ultimate Multisite Community គឺជាកន្លែងមួយដែលអ្នកអាចទាក់ទងជាមួយអ្នកប្រើប្រាស់ Ultimate Multisite ផ្សេងទៀត និងចែករំលែកគន្លឹះ បទពិសោធន៍ និងអ្វីៗជាច្រើនទៀត។ ដើម្បីចូលទៅកាន់ Ultimate Multisite Community សូមចូលទៅកាន់ https://community.ultimatemultisite.com/home។
 

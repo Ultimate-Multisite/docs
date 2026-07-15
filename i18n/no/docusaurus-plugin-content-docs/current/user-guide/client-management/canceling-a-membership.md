@@ -3,7 +3,7 @@ title: Avslutte et medlemskap
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Kansellere et medlemskap (v2) {#canceling-a-membership-v2}
+# Kansellere et medlemskap (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 

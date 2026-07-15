@@ -3,7 +3,7 @@ title: WP Engine ಏಕೀಕರಣ
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ಏಕೀಕರಣ {#wp-engine-integration}
+# WP Engine ಏಕೀಕರಣ
 
 ## ಅವಲೋಕನ {#overview}
 WP Engine ಒಂದು ಪ್ರೀಮಿಯಂ ನಿರ್ವಹಿತ WordPress ಹೋಸ್ಟಿಂಗ್ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಆಗಿದ್ದು, WordPress ಸೈಟ್‌ಗಳಿಗೆ ಉತ್ತಮೀಕರಿಸಿದ ಕಾರ್ಯಕ್ಷಮತೆ, ಭದ್ರತೆ ಮತ್ತು ಸ್ಕೇಲೆಬಿಲಿಟಿಯನ್ನು ಒದಗಿಸುತ್ತದೆ. ಈ ಏಕೀಕರಣವು Ultimate Multisite ಮತ್ತು WP Engine ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ಸಿಂಕಿಂಗ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.

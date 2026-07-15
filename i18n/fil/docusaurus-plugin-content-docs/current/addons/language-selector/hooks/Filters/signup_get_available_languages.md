@@ -4,7 +4,7 @@ title: Filter - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filter: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filter: signup_get_available_languages
 
 Sinusala (filters) nito ang listahan ng mga magagamit na wika para sa pagpaparehistro ng site sa front-end.
 

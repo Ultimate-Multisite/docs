@@ -3,7 +3,7 @@ title: Үйлесімді соңғы нүктелерге арналған Ultim
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Үйлесімді Endpoint-терге арналған Ultimate AI Connector өзгерістер журналы {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Үйлесімді Endpoint-терге арналған Ultimate AI Connector өзгерістер журналы
 
 ## 2.0.0 нұсқасы — 2026-04-24 күні шығарылды {#version-200--released-on-2026-04-24}
 

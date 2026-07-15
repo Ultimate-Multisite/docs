@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Action: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
+# Action: wp_ultimo_ptm_page_edit_after_title
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍ plugin បន្ថែមប៊ូតុងបន្ថែមទៅទំព័រកែសម្រួល
 

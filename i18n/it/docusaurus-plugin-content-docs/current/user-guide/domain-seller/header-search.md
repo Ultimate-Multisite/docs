@@ -3,7 +3,7 @@ title: Ricerca dominio intestazione
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Ricerca dominio nell'header {#header-domain-search}
+# Ricerca dominio nell'header
 
 Usa questa configurazione quando vuoi un piccolo modulo nell'header che avvii una ricerca di dominio, poi consenta al cliente di scegliere tra i domini disponibili all'interno del checkout di Ultimate Multisite.
 

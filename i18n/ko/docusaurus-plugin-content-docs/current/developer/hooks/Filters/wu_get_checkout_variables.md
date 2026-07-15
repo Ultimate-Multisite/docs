@@ -4,7 +4,7 @@ title: 필터 - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# 필터: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# 필터: wu_get_checkout_variables
 
 플러그인 개발자가 결제 페이지의 사전 설정을 필터링할 수 있도록 허용합니다.
 

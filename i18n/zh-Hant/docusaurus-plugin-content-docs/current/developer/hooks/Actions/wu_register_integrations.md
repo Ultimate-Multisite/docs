@@ -4,7 +4,7 @@ title: 動作 - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations {#action-wuregisterintegrations}
+# Action: wu_register_integrations
 
 觸發此動作鉤子，允許各種整合功能（integrations）進行自我註冊。
 

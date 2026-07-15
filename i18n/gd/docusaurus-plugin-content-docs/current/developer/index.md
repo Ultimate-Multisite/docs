@@ -3,7 +3,7 @@ title: Sgrìobhainnean luchd-leasachaidh
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Sgrìobhainnean do Luchd-leasachaidh {#developer-documentation}
+# Sgrìobhainnean do Luchd-leasachaidh
 
 Tha an stiùireadh seo a’ toirt do luchd-leasachaidh a h-uile rud a tha a dhìth gus amalachadh le Ultimate Multisite, a leudachadh, no addons a leasachadh dha. Bidh Ultimate Multisite ag atharrachadh lìonra WordPress Multisite gu àrd-ùrlar Website-as-a-Service (WaaS).
 

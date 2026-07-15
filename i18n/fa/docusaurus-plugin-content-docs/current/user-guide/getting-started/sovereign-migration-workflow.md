@@ -3,7 +3,7 @@ title: جریان مهاجرت حاکمیتی
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# گردش کار مهاجرت حاکمیتی (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# گردش کار مهاجرت حاکمیتی (Sovereign Migration Workflow)
 
 Ultimate Multisite نسخه ۱.۲.۰ دروازه‌های تأیید مهاجرت را برای انتقال یک سایت زیرمجموعه استاندارد به زیرساخت تاننت حاکمیتی اضافه کرده است.
 

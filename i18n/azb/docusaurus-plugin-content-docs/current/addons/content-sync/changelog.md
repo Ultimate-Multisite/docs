@@ -3,7 +3,7 @@ title: Kontent Sinkronizatsiya O'zgarishlar Ro'yxati
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# İçerik Senkronizasyonu Değişiklik Günlüğü {#content-sync-changelog}
+# İçerik Senkronizasyonu Değişiklik Günlüğü
 
 ### Version 1.1.0 - Yayınlanma Tarihi 2025-12-31 {#version-110---released-on-2025-12-31}
 * Yeni: Tüm gönderi tiplerini (gönderiler, sayfalar, özel gönderi tipleri) senkronize etme desteği

@@ -4,7 +4,7 @@ title: Tūmahi - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Mahi: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Mahi: wp_ultimo_affiliatewp_deactivation
 
 Tukua ētahi atu wāhanga o te plugin kia tāpiri i ā rātou tikanga mō te wetenga
 

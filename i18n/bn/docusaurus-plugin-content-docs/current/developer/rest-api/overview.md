@@ -3,7 +3,7 @@ title: REST API সংক্ষিপ্ত বিবরণ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API রেফারেন্স {#rest-api-reference}
+# REST API রেফারেন্স
 
 ## বেস কনফিগারেশন {#base-configuration}
 

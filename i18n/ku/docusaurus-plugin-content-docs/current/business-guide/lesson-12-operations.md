@@ -3,7 +3,7 @@ title: 'Ders 12: Rêvebirina Karsaziyê'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ders 12: Meşandina Karsaziyê {#lesson-12-running-the-business}
+# Ders 12: Meşandina Karsaziyê
 
 Platform ne projeyek e ku tu bi dawî dikî -- ew karsaziyek e ku tu dimeşînî. Ev ders karên rojane yên birêvebirina FitSite vedigire: piştgirî, billing, parastin, û razîkirina xerîdaran.
 

@@ -3,7 +3,7 @@ title: Ngajelajahi Panel Admin
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ngelajengkeun Panel Admin {#touring-the-admin-panel}
+# Ngelajengkeun Panel Admin
 
 Ultimate Multisite téh hoyong jadi saepsonéna gampang dipikawanoh je teu perlu loba penjelasan, tapi sabab alatna kuat pisan, bisa dibantu ku tur panduan. Hayu urang jalan-jalan di halaman admin sangkan anjeun bet nyaman.
 

@@ -3,7 +3,7 @@ title: የጣቢያ ገንቢ አደራጅነት v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (በGratis AI Agent v1.4.0 ውስጥ ተተክሏል) ብዙ ደረጃዎችን የያዘ የድረ-ገጽ መፍጠሪያን የሚያጎላ ሞተር ነው። ወኪሉን "የሬስቶራንት ድረ-ገጽ ፍጠር" ወይም "በብሎግ የተደገፈ ፖርትፎሊዮ ፍጠር" ብለው ሲጠይቁ፣ አደራጅው (orchestrator) ያንን ከፍተኛ ደረጃ ግብ ወደ መዋቅራዊ **ዕቅድ** ይከፋፍላል፣ ለማሳካት የሚያስፈልጉትን plugins ያገኛል፣ እያንዳንዱን እርምጃ በቅደም ተከተል ያከናውናል፣ እድገትን ይከታተላል፣ እና ስህተቶች ሲፈጠሩ በራሱ ይቋቋማል።
 

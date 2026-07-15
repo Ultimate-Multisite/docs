@@ -3,7 +3,7 @@ title: 'Lektion 9: Prissætning til profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektion 9: Prissætning for Profit {#lesson-9-pricing-for-profit}
+# Lektion 9: Prissætning for Profit
 
 I Lektion 5 satte vi de indledende priser på FitSite planer. Nu finjusterer vi prissætningsstrategien med teknikker, der øger omsætningen, opfordrer til opgraderinger og reducerer frafald (churn).
 

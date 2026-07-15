@@ -3,7 +3,7 @@ title: Cachingul de Prompt Conștient de Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cachează Prompt-urile Conștient de Furnizor {#provider-aware-prompt-caching}
+# Cachează Prompt-urile Conștient de Furnizor
 
 Superdav AI Agent v1.12.0 introduce **cachearea prompt-urilor conștientă de furnizor**, care optimizează costurile API-ului și latența prin stocarea prompt-urilor în cache pe mai mulți furnizori LLM. Fiecare furnizor are mecanisme și configurații diferite de cache.
 

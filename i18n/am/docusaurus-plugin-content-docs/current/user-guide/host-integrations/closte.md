@@ -3,7 +3,7 @@ title: Closte ማዋሃድ
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ውህደት {#closte-integration}
+# Closte ውህደት
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 Closte በGoogle Cloud infrastructure ላይ የተገነባ የWordPress hosting platform ነው። ይህ ውህደት (integration) Ultimate Multisite እና Closte መካከል የዶሜይን ስም (domain) መረጃን በራስ-ሰር ማመሳሰል (automatic syncing) እና የSSL certificate አስተዳደርን ያስችላል።

@@ -3,7 +3,7 @@ title: Ultimate Multisite 설치하기
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite 설치하기 {#installing-ultimate-multisite}
+# Ultimate Multisite 설치하기
 
 :::note
 이 튜토리얼은 이미 WordPress Multisite가 설치 및 구성되어 있다고 가정합니다. 설치 방법은 WP Beginner의 [이 튜토리얼](https://www.wpbeginner.com/glossary/multisite/)을 참조하세요.

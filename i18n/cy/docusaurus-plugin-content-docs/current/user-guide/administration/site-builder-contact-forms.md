@@ -3,7 +3,7 @@ title: Formau cysylltiad y gweithredwr lleoliad
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Ffurfyn Formau Cysylltiad Ar Gweithredol {#site-builder-contact-forms}
+# Ffurfyn Formau Cysylltiad Ar Gweithredol
 
 Mae Superdav AI Agent v1.10.0 yn rhoi'r gallu gwneud formau cysylltiad yn uniongyrchol o'r cyfnod chat gan y Site Builder agent. Mae hyn yn rhoi'r gallu i chi drosgl y formau cysylltiad llawn ffurfiol ar unrhyw pein heb gadael y chat.
 

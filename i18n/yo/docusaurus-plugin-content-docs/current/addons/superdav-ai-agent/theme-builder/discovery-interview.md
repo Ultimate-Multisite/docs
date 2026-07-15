@@ -3,7 +3,7 @@ title: Ifọrọwanilẹnuwo Ìṣàwárí
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ifọrọwanilẹnuwo Awari {#discovery-interview}
+# Ifọrọwanilẹnuwo Awari
 
 **Ifọrọwanilẹnuwo Awari** ni igbesẹ akọkọ ninu ilana apẹrẹ Theme Builder. Ó ń kó alaye jọ nipa ojúlé rẹ, iṣowo rẹ, ati awọn ohun tí o fẹ ninu apẹrẹ lati ṣẹda theme ti a ṣe fun ọ tikararẹ.
 

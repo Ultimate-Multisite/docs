@@ -3,7 +3,7 @@ title: 'Ceacht 13: Ag Méadú ar Scála'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ceacht 13: Ag Méadú ar Scála {#lesson-13-scaling-up}
+# Ceacht 13: Ag Méadú ar Scála
 
 Tá ardán oibre agat le custaiméirí atá ag íoc. Clúdaíonn an ceacht seo conas fás ó oibríocht bheag go gnó inbhuanaithe -- bonneagar a mhéadú ar scála, oibríochtaí a uathoibriú, agus ioncam in aghaidh an chustaiméara a mhéadú.
 

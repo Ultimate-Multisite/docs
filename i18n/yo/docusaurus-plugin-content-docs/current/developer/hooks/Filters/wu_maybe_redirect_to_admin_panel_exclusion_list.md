@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Àlẹmọ: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Àlẹmọ: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 Ṣẹda àtòkọ ìyasọtọ ti àwọn àgbékalẹ̀ tí ó dènà ìtún-darí aládàáṣiṣẹ́.
 

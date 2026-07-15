@@ -3,7 +3,7 @@ title: 'Isomo rya 12: Kuyobora Ubucuruzi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Isomo rya 12: Gukoresha Ubucuruzi {#lesson-12-running-the-business}
+# Isomo rya 12: Gukoresha Ubucuruzi
 
 Urubuga si umushinga urangiza -- ni ubucuruzi ukoresha. Iri somo risobanura ibikorwa bya buri munsi byo gucunga FitSite: ubufasha, kwishyuza, kubungabunga, no gutuma abakiriya banyurwa.
 

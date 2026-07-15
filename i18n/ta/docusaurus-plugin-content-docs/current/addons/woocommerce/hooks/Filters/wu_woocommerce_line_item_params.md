@@ -4,7 +4,7 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 வாடிக்கையாளரை WooCommerce checkout-க்கு திருப்பி அனுப்பும் முன், WooCommerce Cart-ல் line items-களை உருவாக்கப் பயன்படுத்தப்படும் parameters-களை வடிகட்டுகிறது (Filter).
 

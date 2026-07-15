@@ -4,7 +4,7 @@ title: Filtri - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Filtër: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Filtër: wu_should_create_domain_record_for_site
 
 Filtron nëse Ultimate Multisite duhet të krijojë një rekord domeni për një site të sapokrijuar.
 

@@ -3,7 +3,7 @@ title: פֿאַרשטיין דעם Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# פֿאַרשטיין דעם Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# פֿאַרשטיין דעם Ultimate Multisite Dashboard
 
 איידער מיר פֿאַרטיפֿן זיך אין מער פֿאָרגעשריטענע קאָנפֿיגוראַציע־אָפּציעס און די אָפּעראַציע־אַספּעקטן פֿון Ultimate Multisite, לאָמיר אַ קוק טאָן אויפֿן Dashboard.
 

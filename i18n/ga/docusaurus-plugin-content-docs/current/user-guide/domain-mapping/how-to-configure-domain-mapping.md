@@ -3,7 +3,7 @@ title: Conas Mapáil Fearainn a Chumrú
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Conas Mapáil Fearainn a Chumrú (v2) {#how-to-configure-domain-mapping-v2}
+# Conas Mapáil Fearainn a Chumrú (v2)
 
 _**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do leagan 2.x de Ultimate Multisite.**_
 

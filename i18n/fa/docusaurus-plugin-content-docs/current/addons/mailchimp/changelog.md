@@ -3,7 +3,7 @@ title: گزارش تغییرات Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# گزارش تغییرات Mailchimp {#mailchimp-changelog}
+# گزارش تغییرات Mailchimp
 
 نسخه: 1.1.1 - تاریخ انتشار: 2025-09-28
 

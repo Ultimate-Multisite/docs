@@ -4,7 +4,7 @@ title: Գործողություն - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Գործողություն: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Գործողություն: wu_domain_renewal_completed
 
 Գործարկվում է, երբ տիրույթը հաջողությամբ երկարաձգվել է։
 

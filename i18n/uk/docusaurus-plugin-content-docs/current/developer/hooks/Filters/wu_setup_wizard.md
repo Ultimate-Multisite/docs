@@ -4,7 +4,7 @@ title: Фільтр - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Фільтр: wu_setup_wizard {#filter-wusetupwizard}
+# Фільтр: wu_setup_wizard
 
 Дозволяє розробникам додавати додаткові кроки в майстер налаштування.
 

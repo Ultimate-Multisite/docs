@@ -4,7 +4,7 @@ title: Գործողություն - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Գործողություն: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Գործողություն: wu_domain_seller_complete_registration
 
 Գործարկվում է, երբ վճարումն անցնում է այնպիսի կարգավիճակի, որը պետք է գործարկի տիրույթի գրանցումը։
 

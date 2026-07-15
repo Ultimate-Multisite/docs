@@ -3,7 +3,7 @@ title: د درې برخې مود移行
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# دگرولیدي مود سړی طرفه انتقال (Third-Party Mode Migration) {#third-party-mode-migration}
+# دگرولیدي مود سړی طرفه انتقال (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 په دې پرله چې څنګه د سړی طرفه وړتیاو (third-party abilities) مدیریت کیږي، بدلون راوړي دي. **د سړی طرفه مود اوس معمولاً "auto" ته ځي**، چې دا کار په WordPress 7.0+ کې له لارې Native WordPress Abilities API هم اجازه ورکوي، او تاسو باید manuall configuration (म्यानुअल تنظیمات) नगर्न اړتیا لرئ.
 

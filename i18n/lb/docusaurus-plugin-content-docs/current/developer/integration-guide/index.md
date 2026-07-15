@@ -3,7 +3,7 @@ title: Integratiounsuleedung
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratiounsguide {#integration-guide}
+# Integratiounsguide
 
 Dëse Guide deckt heefeg Integratiounsmustere mat Ultimate Multisite of, inklusiv d'Verbanne mat externe Servicer, d'Opbaue vu personaliséierte Bezuel-Gateways an d'Ëmgoe mat Webhooks.
 

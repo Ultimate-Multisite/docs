@@ -3,7 +3,7 @@ title: WPMU DEV integreerimine
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Integraamine {#wpmu-dev-integration}
+# WPMU DEV Integraamine
 
 ## Üldinekuvur {#overview}
 WPMU DEV on põhjalik WordPress-platvorm, mis pakub hooldust, pluginid ja teenuse WordPress sille. See integraalne võimaldab automaatselt domeenide synkronimist ja SSL-sertifikaadide haldamist Ultimate Multisite'i ja WPMU DEV hooldusgaamiga.

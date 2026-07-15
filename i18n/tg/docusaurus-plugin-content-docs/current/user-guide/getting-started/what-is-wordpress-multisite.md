@@ -3,7 +3,7 @@ title: Чӣ гуна WordPress Multisite аст?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Чи ин аст WordPress Multisite? {#what-is-wordpress-multisite}
+# Чи ин аст WordPress Multisite?
 
 Ин дар навиштаи он, WordPress як хусусият名为 «Multisite»-ро пешниҳод мекунад, ки маҷдодани он ба соли 2010 бо оғози коркарди WordPress 3.0 рӯй диадӯз мерасонад. Аз он вақт он як қатор таҳрирҳо барои ҷорӣ кардани хусусиятҳои нав ва таҳкими бехаторгаро гирифтааст.
 

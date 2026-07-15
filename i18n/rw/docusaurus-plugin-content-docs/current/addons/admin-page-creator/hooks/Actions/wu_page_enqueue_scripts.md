@@ -4,7 +4,7 @@ title: Igikorwa - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Igikorwa: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Igikorwa: wu_page_enqueue_scripts
 
 Kongeramo igikorwa cyihariye hano kugira ngo tugire aho dushyira scripts na styles uko bikenewe\ kandi tumenye neza ko zipakirwa gusa ku mapaji akwiye
 

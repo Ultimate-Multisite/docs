@@ -4,7 +4,7 @@ title: Ekintza - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Ekintza: wu_site_created {#action-wusitecreated}
+# Ekintza: wu_site_created
 
 Gune bat lehen aldiz sortu ondoren abiarazten da.
 

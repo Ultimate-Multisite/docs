@@ -4,7 +4,7 @@ title: 'ഫിൽട്ടർ - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# Filter: wu_\{$id\}_form_fields
 
 ഒരു ഫോമിലെ ഫീൽഡുകൾ ഇത് ഫിൽട്ടർ ചെയ്യുന്നു. ഫിൽട്ടർ പേരിൽ നൽകിയിട്ടുള്ള ID ഉപയോഗിച്ചാണ് ഫോം തിരിച്ചറിയുന്നത്.
 

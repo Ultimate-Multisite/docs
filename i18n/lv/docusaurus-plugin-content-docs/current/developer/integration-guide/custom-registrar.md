@@ -3,7 +3,7 @@ title: Pielāgotas reģistratora integrācijas izveide
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pielāgotas reģistratora integrācijas izveide {#building-a-custom-registrar-integration}
+# Pielāgotas reģistratora integrācijas izveide
 
 Domain Seller addon izmanto **Integration Registry** modeli. Katrs reģistrators ir PHP klase, kas implementē `Domain_Selling_Capability` un reģistrē sevi, izmantojot `wu_domain_seller_register_capabilities` action hook.
 

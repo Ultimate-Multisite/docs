@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# କାର୍ଯ୍ୟ: wu_register_integrations {#action-wuregisterintegrations}
+# କାର୍ଯ୍ୟ: wu_register_integrations
 
 ସମନ୍ୱୟଗୁଡ଼ିକୁ ନିଜେ ନିଜେ ପଞ୍ଜିକରଣ କରିବାକୁ ଦେବା ପାଇଁ ଚାଲୁ ହୁଏ।
 

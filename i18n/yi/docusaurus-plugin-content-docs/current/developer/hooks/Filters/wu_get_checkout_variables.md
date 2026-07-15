@@ -4,7 +4,7 @@ title: פילטער - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# פֿילטער: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# פֿילטער: wu_get_checkout_variables
 
 דערלויבט plugin־אַנטוויקלער צו פֿילטערן די פֿאָרויס־אײַנשטעלונגען פֿון אַ באַצאָלונג־בלאַט.
 

@@ -4,7 +4,7 @@ title: Filtrilo - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filtrilo: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filtrilo: wu_stripe_checkout_subscription_data
 
 Filtras datumojn de Stripe-abono. Povas anstataŭigi success_url aŭ cancel_url.
 

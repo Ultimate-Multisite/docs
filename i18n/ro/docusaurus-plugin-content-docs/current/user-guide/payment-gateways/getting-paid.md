@@ -3,7 +3,7 @@ title: Primirea plăților
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Primirea plăților (v2) {#getting-paid-v2}
+# Primirea plăților (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

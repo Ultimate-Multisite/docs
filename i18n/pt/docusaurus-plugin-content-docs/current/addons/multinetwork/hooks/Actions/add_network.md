@@ -4,7 +4,7 @@ title: Ação - adicionar_rede
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Ação: add_network {#action-addnetwork}
+# Ação: add_network
 
 Disparado depois de uma nova rede ter sido adicionada.
 

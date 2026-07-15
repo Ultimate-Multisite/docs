@@ -3,7 +3,7 @@ title: Krei Discount Kodojn
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kreado Dekonto Kodoj (v2) {#creating-discount-codes-v2}
+# Kreado Dekonto Kodoj (v2)
 
 _**IMPORTANTE NOTO: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
 

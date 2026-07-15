@@ -3,7 +3,7 @@ title: 제공자 인식형 프롬프트 캐싱
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# 제공자별 프롬프트 캐싱 (Provider-Aware Prompt Caching) {#provider-aware-prompt-caching}
+# 제공자별 프롬프트 캐싱 (Provider-Aware Prompt Caching)
 
 Superdav AI Agent v1.12.0에서는 **제공자별 프롬프트 캐싱(provider-aware prompt caching)** 기능을 도입하여, 여러 LLM 제공자(provider)에 걸쳐 프롬프트를 캐싱함으로써 API 비용과 지연 시간(latency)을 최적화합니다. 각 제공자는 캐싱 메커니즘과 설정이 다르므로 이를 이해하는 것이 중요합니다.
 

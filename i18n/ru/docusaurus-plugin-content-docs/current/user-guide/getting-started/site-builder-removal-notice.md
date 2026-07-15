@@ -3,7 +3,7 @@ title: Уведомление об удалении режима Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Уведомление об удалении режима Site Builder {#site-builder-mode-removal-notice}
+# Уведомление об удалении режима Site Builder
 
 **Режим Site Builder удален в Superdav AI Agent v1.12.0.** Если вы использовали Site Builder mode, вам следует перейти на использование агента **Setup Assistant** для создания тем и настройки сайта.
 

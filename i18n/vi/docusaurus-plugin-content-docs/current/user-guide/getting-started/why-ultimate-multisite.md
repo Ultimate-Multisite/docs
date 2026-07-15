@@ -3,7 +3,7 @@ title: Tại sao chọn Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Tại sao nên chọn Ultimate Multisite {#why-ultimate-multisite}
+# Tại sao nên chọn Ultimate Multisite
 
 Nếu bạn tìm đến bài viết này, có lẽ bạn đã nghe nói plugin của chúng tôi có thể là giải pháp giúp biến ý tưởng kinh doanh của bạn thành hiện thực. Hy vọng rằng sau khi đọc xong, bạn sẽ có được những câu trả lời mình cần.
 

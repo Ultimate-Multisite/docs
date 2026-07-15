@@ -4,7 +4,7 @@ title: ফিল্টাৰ - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# ফিল্টাৰ: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# ফিল্টাৰ: wu_should_create_domain_record_for_site
 
 নতুনকৈ সৃষ্টি কৰা site-ৰ বাবে Ultimate Multisite-এ domain record সৃষ্টি কৰিব নে নাই সেয়া ফিল্টাৰ কৰে।
 

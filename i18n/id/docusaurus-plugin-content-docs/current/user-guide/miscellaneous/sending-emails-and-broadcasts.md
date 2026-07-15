@@ -3,7 +3,7 @@ title: Mengirim Email dan Siaran
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Mengirim Email dan Broadcast (v2) {#sending-emails-and-broadcasts-v2}
+# Mengirim Email dan Broadcast (v2)
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 

@@ -3,7 +3,7 @@ title: 변경 로그
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# 변경 로그 {#changelog}
+# 변경 로그
 
 ## 1.9.0 — 2026-04-28 출시 {#190--released-on-2026-04-28}
 

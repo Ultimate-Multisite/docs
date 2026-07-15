@@ -3,7 +3,7 @@ title: Ffarddau Estetig System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Faddau Gweithro System Cynllunio (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
+# Faddau Gweithro System Cynllunio (Design System Aesthetics Skill)
 
 Mae'r **Faddau Gweithro System Cynllunio** yn ffordd cyfarwydd i gwneud eich identiti wizual o'r safle. Mae’n helpu chi i wneud penderfyniadau ddefnyddiol am y tipografia, colore, sgwllt (spacing), a tokenau chwarae (motion tokens) sydd yn cyflwyno eich system cynllunio.
 

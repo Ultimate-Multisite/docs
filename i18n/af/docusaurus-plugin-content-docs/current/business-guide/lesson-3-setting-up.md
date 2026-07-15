@@ -3,7 +3,7 @@ title: 'Les 3: Opstel van jou netwerk'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Les 3: Opstel van jou Netwerk {#lesson-3-setting-up-your-network}
+# Les 3: Opstel van jou Netwerk
 
 Dit is tyd om te bou. In hierdie les gaan jy Ultimate Multisite installeer en die fondasie van die FitSite-netwerk konfigureer. Elke besluit hier word met die fitness-niche in gedagte geneem.
 

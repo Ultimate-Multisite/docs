@@ -3,7 +3,7 @@ title: Udityaniso lwe-ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Udibaniso lwe-ServerPilot {#serverpilot-integration}
+# Udibaniso lwe-ServerPilot
 
 ## Ushwankathelo {#overview}
 I-ServerPilot yinkonzo yelifu yokusingatha WordPress kunye nezinye iiwebhusayithi ze-PHP kwiiseva e-DigitalOcean, Amazon, Google, okanye nakuwuphi na omnye umboneleli weseva. Olu dibaniso luvumela ungqamaniso oluzenzekelayo lweedomain kunye nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite ne-ServerPilot.

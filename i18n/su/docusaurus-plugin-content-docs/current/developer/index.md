@@ -3,7 +3,7 @@ title: Dokuméntasi Pangembang
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokuméntasi Pamekar {#developer-documentation}
+# Dokuméntasi Pamekar
 
 Pituduh ieu nyayogikeun sagala anu diperlukeun ku pamekar pikeun ngahijikeun jeung, ngalegaan, atawa ngamekarkeun addon pikeun Ultimate Multisite. Ultimate Multisite ngarobah jaringan WordPress Multisite jadi platform Website-as-a-Service (WaaS).
 

@@ -4,7 +4,7 @@ title: Filtër - wu_allowed_line_item_types
 sidebar_label: wu_allowed_line_item_types
 _i18n_hash: 146f74ff1fa7d78b381b767bff2dc699
 ---
-# Filtri: wu_allowed_line_item_types {#filter-wuallowedlineitemtypes}
+# Filtri: wu_allowed_line_item_types
 
 Tani, merremi me të gjitha llojet.
 

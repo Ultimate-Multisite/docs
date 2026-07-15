@@ -4,7 +4,7 @@ title: フィルタ - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# フィルタ: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
+# フィルタ: ultimate_multisite_content_sync_url
 
 開発者がプラグインルートへの相対パスを管理できるようにします。
 

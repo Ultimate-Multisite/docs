@@ -3,7 +3,7 @@ title: Migriranje sa V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migracija sa V1 {#migrating-from-v1}
+# Migracija sa V1
 
 ## Ultimate Multisite je prešao sa svoje originalne 1.x porodice verzija na 2.x porodicu verzija. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

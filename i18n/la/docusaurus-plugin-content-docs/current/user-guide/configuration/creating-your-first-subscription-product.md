@@ -3,7 +3,7 @@ title: Creare Tuum Primum Product Abonendi
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creare tu Primo Prodotto de Suscripción (v2) {#creating-your-first-subscription-product-v2}
+# Creare tu Primo Prodotto de Suscripción (v2)
 
 _**NOTA IMPORTANTE: Este artículo es solo para usuarios de Ultimate Multisite versión 2.x. Si estás usando la versión 1.x,**_ **_consulta este artículo**_**.
 

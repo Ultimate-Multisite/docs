@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Inyongera za Ultimate Multisite {#ultimate-multisite-addons}
+# Inyongera za Ultimate Multisite
 
 Inyongera zongerera Ultimate Multisite imikorere n'ubwuzuzanye. Inyongera nyinshi zirishyurwa kandi zishobora kugurwa kuri [ultimatemultisite.com](https://ultimatemultisite.com).
 

@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta’ Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Reġistru tal-bidliet ta' Captcha {#captcha-changelog}
+# Reġistru tal-bidliet ta' Captcha
 
 Verżjoni: 1.5.0 - Maħruġa fil-2026-05-22
 * Ġdid: Limitatur tar-rata b'waqfien sħiħ — jgħodd kull GET u POST fuq uċuħ protetti b'captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) u jwieġeb b'HTTP 429, header `Retry-After`, u rqad tarpit każwali (1–5s, b'limitu assolut ta' 15s).

@@ -3,7 +3,7 @@ title: Eksport tal-sit
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportazzjoni tal-Site {#site-export}
+# Exportazzjoni tal-Site
 
 Il-pajs admin ta **Site Export** jippermettix l-administratori ta reġistrazzjon (network administrators) li jagħmlu pakkett ta xi site, jew l-network kollha, biex jgħandu għal download biex tista' tiġi migrat, backup, jew għall-aħħar.
 

@@ -3,7 +3,7 @@ title: Esportazione del sito
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Esportazione del Sito {#site-export}
+# Esportazione del Sito
 
 La pagina di amministrazione **Esportazione del Sito** (Site Export) permette agli amministratori di rete di impacchettare un singolo sito, o l'intera rete, in un archivio scaricabile per scopi di migrazione, backup o passaggio di consegne.
 

@@ -3,7 +3,7 @@ title: Lỗi Tệp Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Lỗi Cài Đặt File Sunrise {#error-installing-the-sunrise-file}
+# Lỗi Cài Đặt File Sunrise
 
 File sunrise.php là một file đặc biệt mà WordPress sẽ tìm kiếm trong quá trình khởi động. Để WordPress có thể phát hiện file sunrise.php, file này cần được đặt trong **thư mục wp-content**.
 

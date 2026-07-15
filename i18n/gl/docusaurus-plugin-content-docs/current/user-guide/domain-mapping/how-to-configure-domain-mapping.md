@@ -3,7 +3,7 @@ title: Como configurar o mapeamento de dominios
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Como configurar Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
+# Como configurar Domain Mapping (v2)
 
 _**NOTA IMPORTANTE: Este artigo refírese á versión 2.x de Ultimate Multisite.**_
 

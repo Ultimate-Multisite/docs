@@ -3,7 +3,7 @@ title: Orkestrasyona Avakera Malperê v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Rêvebirina Site Builder v2 {#site-builder-orchestration-v2}
+# Rêvebirina Site Builder v2
 
 Site Builder Orchestration v2 (di Gratis AI Agent v1.4.0 de hate nasandin) motora afirandina malperên pir-qonaxî ye. Dema tu ji agent bipirsî ku "malperek xwaringehê ava bike" an "portfolioyek bi blogekê biafirîne", orchestrator wê armanca bilind dike **plan**ek rêxistî, pluginên pêwîst ji bo pêkanîna wê dibîne, her qonaxê li pey hev dimeşîne, pêşveçûnê dişopîne, û bi xweser ji çewtiyan vedigere.
 

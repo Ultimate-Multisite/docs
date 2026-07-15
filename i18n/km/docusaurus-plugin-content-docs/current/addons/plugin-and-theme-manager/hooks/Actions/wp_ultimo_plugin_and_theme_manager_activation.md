@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# សកម្មភាព៖ wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# សកម្មភាព៖ wp_ultimo_plugin_and_theme_manager_activation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងៗនៃ plugin ភ្ជាប់ទម្លាប់របស់ពួកវាសម្រាប់ការធ្វើឱ្យសកម្ម
 

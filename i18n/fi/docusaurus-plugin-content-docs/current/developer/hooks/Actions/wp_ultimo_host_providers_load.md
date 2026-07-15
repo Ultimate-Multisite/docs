@@ -4,7 +4,7 @@ title: Toiminto - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Toiminto: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Toiminto: wp_ultimo_host_providers_load
 
 Salli kehittäjien lisätä omia host provider -integraatioitaan wp pluginien kautta.
 

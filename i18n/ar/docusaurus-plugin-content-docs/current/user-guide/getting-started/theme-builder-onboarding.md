@@ -3,7 +3,7 @@ title: مسار إعداد مُنشئ القوالب
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# مسار إعداد Theme Builder {#theme-builder-onboarding-flow}
+# مسار إعداد Theme Builder
 
 يقدم Superdav AI Agent v1.12.0 **مسار إعداد Theme Builder** مُوجَّهًا يساعدك على إنشاء قالب (Theme) مخصص بالاعتماد على نظام الكتل (block theme) أثناء إعدادك الأولي. يحل هذا المسار محل وضع Site Builder القديم بنهج أكثر مرونة يعتمد على المساعد الذكي (agent-assisted).
 

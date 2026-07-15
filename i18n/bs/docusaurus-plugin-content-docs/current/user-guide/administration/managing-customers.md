@@ -3,7 +3,7 @@ title: Upravljanje klijentima
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Upravljanje klijentima {#managing-customers}
+# Upravljanje klijentima
 
 Stranica **Klijenti** prikazuje listu članova registriranih u vašoj mreži. Ova stranica prikazuje osnovne informacije o korisniku, uključujući ime, e-mail adresu, zadnji prijava, i link **prebacivanje na** koji vam omogućava prijavu na podstranicu korisnika kao administratora stranice.
 

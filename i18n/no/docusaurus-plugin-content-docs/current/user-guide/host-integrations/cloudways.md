@@ -3,7 +3,7 @@ title: Cloudways-integrasjon
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways-integrasjon {#cloudways-integration}
+# Cloudways-integrasjon
 
 ## Oversikt {#overview}
 Cloudways er en administrert skybasert hostingplattform som lar deg distribuere WordPress-nettsteder hos ulike skyleverandører som DigitalOcean, AWS, Google Cloud og flere. Denne integrasjonen muliggjør automatisk domenesynkronisering og administrasjon av SSL-sertifikater mellom Ultimate Multisite og Cloudways.

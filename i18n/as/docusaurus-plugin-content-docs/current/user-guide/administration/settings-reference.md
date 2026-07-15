@@ -3,7 +3,7 @@ title: ছেটিংছৰ সন্দৰ্ভ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# ছেটিংছ ৰেফাৰেন্স {#settings-reference}
+# ছেটিংছ ৰেফাৰেন্স
 
 এই পৃষ্ঠাই Ultimate Multisite-ত দৈনন্দিন প্ৰশাসন আৰু শেহতীয়া আচৰণ পৰিৱৰ্তনত প্ৰভাৱ পেলোৱা ছেটিংছ অনুসৰণ কৰে।
 

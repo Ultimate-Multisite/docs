@@ -3,7 +3,7 @@ title: 'Lektion 4: Bygga nischmallar'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lektion 4: Bygga nisch-mallar {#lesson-4-building-niche-templates}
+# Lektion 4: Bygga nisch-mallar
 
 Mallar är kärnan i ditt nischvärdeerbjudande. En ägare av ett träningsstudio som registrerar sig och ser en webbplats som redan ser ut som en träningswebbplats – med klasschema, tränarprofiler och rätt bildmaterial – är mycket mer benägen att stanna kvar än någon som ser en tom duk.
 

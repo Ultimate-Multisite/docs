@@ -3,7 +3,7 @@ title: Палитрын контрастыг шалгах
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Палитрын контрастыг баталгаажуулах {#validate-palette-contrast}
+# Палитрын контрастыг баталгаажуулах
 
 **Validate Palette Contrast** чадвар нь таны theme-д хэрэглэхээс өмнө дизайны палитр дахь өнгөний хослолууд WCAG (Web Content Accessibility Guidelines)-ийн шаардлагад нийцэж байгаа эсэхийг шалгана.
 

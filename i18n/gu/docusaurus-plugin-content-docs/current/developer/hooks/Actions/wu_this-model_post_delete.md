@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_post_delete'
 sidebar_label: 'wu_{$this->model}_post_delete'
 _i18n_hash: 723d566c67fd82808273b2eb42c96d73
 ---
-# Action: wu_\{$this->model\}_post_delete {#action-wuthis-modelpostdelete}
+# Action: wu_\{$this->model\}_post_delete
 
 જ્યારે કોઈ object ને database માં save (store) કરવામાં આવે છે, ત્યારે આ action ચાલે છે.
 

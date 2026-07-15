@@ -3,7 +3,7 @@ title: 'Isifundo 12: Ukuqhuba Ibhizinisi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Isifundo 12: Ukuqhuba Ibhizinisi {#lesson-12-running-the-business}
+# Isifundo 12: Ukuqhuba Ibhizinisi
 
 Inkundla akuyona iphrojekthi oyiphothulayo -- iyibhizinisi oliqhubayo. Lesi sifundo sihlanganisa imisebenzi yansuku zonke yokuphatha i-FitSite: ukwesekwa, ukukhokhisa, ukunakekela, nokugcina amakhasimende ejabule.
 

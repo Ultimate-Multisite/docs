@@ -3,7 +3,7 @@ title: Gratis AI Agent ቅንብሮች
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent ቅንብሮች {#gratis-ai-agent-settings}
+# Gratis AI Agent ቅንብሮች
 
 በ Gratis AI Agent ውስጥ ያለው **ቅንብሮች → የላቀ** ማያ ገጽ ለbackend ውህደቶች የአስተዳዳሪ-ደረጃ ውቅር ያቀርባል። ይህ ገጽ የአስተያየት ማስተላለፍን፣ የፍለጋ አቅራቢ ቁልፎችን፣ የሚተዳደር Superdav አገልግሎት ማቀናበርን፣ Google Calendar መቆጣጠሪያዎችን፣ TextBee SMS ቅንብሮችን፣ እና በአውታረ መረብ ሁሉ የሚሰሩ የባህሪ ምልክቶችን ይመዘግባል።
 

@@ -3,7 +3,7 @@ title: Электрон хатлар һәм киңкүләм хәбәрләр җ
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Email һәм Broadcasts җибәрү (v2) {#sending-emails-and-broadcasts-v2}
+# Email һәм Broadcasts җибәрү (v2)
 
 _**МӨҺИМ ИСКӘРМӘ: Бу мәкалә Ultimate Multisite 2.x версиясенә карый.**_
 

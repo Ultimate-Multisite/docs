@@ -4,7 +4,7 @@ title: Δράση - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 Εκτελείται πριν από την εμφάνιση (rendering) μιας σελίδας.
 

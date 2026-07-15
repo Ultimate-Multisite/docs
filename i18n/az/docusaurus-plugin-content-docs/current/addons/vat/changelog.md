@@ -3,7 +3,7 @@ title: ƏDV Changelog
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# ƏDV Dəyişikliklər Siyahısı {#vat-changelog}
+# ƏDV Dəyişikliklər Siyahısı
 
 Versiya 1.0.7 - 2026-02-03 tarixində yayınlandı
 

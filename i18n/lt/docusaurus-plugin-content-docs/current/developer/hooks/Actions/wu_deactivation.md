@@ -4,7 +4,7 @@ title: Veiksmas - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Veiksmas: wu_deactivation {#action-wudeactivation}
+# Veiksmas: wu_deactivation
 
 Leidžia kitoms plugin dalims prijungti savo išjungimo procedūras
 

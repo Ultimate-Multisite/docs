@@ -3,7 +3,7 @@ title: Nkwado Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kết nối Ultimate Multisite với Zapier {#integrating-ultimate-multisite-with-zapier}
+# Kết nối Ultimate Multisite với Zapier
 
 Trong một bài viết, chúng tôi đã nói về [Webhooks](webhooks.md) và cách chúng có thể được dùng để kết nối với các ứng dụng bên thứ ba.
 

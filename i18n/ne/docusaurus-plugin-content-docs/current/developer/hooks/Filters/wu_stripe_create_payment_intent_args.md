@@ -4,7 +4,7 @@ title: फिल्टर - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# फिल्टर: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
+# फिल्टर: wu_stripe_create_payment_intent_args
 
 भुक्तानी intent का arguments फिल्टर गर्छ।
 

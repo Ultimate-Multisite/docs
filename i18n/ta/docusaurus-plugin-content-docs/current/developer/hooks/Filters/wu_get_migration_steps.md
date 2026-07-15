@@ -4,7 +4,7 @@ title: Filter - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Filter: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Filter: wu_get_migration_steps
 
 உருவாக்குநர்கள் மற்றும் கூடுதல் அம்சங்கள் (add-ons) புதிய இடம்பெயர்வு படிகளைச் சேர்க்க அனுமதிக்கிறது.
 

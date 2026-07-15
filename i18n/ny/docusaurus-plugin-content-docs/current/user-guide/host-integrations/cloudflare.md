@@ -3,7 +3,7 @@ title: Kuteteza Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Umuwamba ndi Cloudflare Integration {#cloudflare-integration}
+# Umuwamba ndi Cloudflare Integration
 
 ## Kufotokozera (Overview) {#overview}
 Cloudflare ndi mwayi wofunika kwambiri wopereka ndalama za kuwerenga malo omwe amapereka (content delivery network - CDN) ndi wopereka ndalama za kuwerenga (security provider) zomwe zimapereka kukhulupirira ndi kupangitsa kusintha kwa websites. Kufotokozera lili lomwe limapereka ulamulira malo omwe amapereka (domain management) m'moyo woperekera wa Ultimate Multisite ndi Cloudflare, makamaka pamodzi ndi zinthu zomwe muli ndi subdomain multisite.

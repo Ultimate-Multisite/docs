@@ -3,7 +3,7 @@ title: إنشاء شعار SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# إنشاء شعار SVG {#generate-logo-svg}
+# إنشاء شعار SVG
 
 تتيح قدرة **إنشاء شعار SVG** لـ Theme Builder إنشاء وتضمين شعارات SVG مخصصة مباشرةً في موقعك على WordPress، مع تنقية تلقائية آمنة للمساحات الاسمية (namespace-safe sanitisation).
 

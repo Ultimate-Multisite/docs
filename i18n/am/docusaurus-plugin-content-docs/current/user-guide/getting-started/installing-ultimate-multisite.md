@@ -3,7 +3,7 @@ title: Ultimate Multisite መጫኛ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# የመጨረሻው ማልቲሳይት መጫን {#installing-ultimate-multisite}
+# የመጨረሻው ማልቲሳይት መጫን
 
 :::note
 ይህ ትምህርት፣ የዎርድፕረስ ማልቲሳይት አስቀድሞ ተጭኖ እና ተዋቅሮ እንዲኖር ይጠብቃል፡፡ እንዴት እንደሚሰራ ለመማር፣ በ WP Beginner ላይ ያለውን [እዚህ ትምህርት](https://www.wpbeginner.com/glossary/multisite/) ይመለከቱ።

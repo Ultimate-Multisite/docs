@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filtre : wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filtre : wu_page_get_title_links
 
 Permettre aux développeurs de plugins, ainsi qu'à nous-mêmes, d'ajouter des liens d'action à nos pages d'édition
 

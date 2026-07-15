@@ -4,7 +4,7 @@ title: Hành động - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Action: wu_domain_mapping_load {#action-wudomainmappingload}
+# Action: wu_domain_mapping_load
 
 Hành động này được kích hoạt sau khi tính năng Domain Mapping cốt lõi của chúng ta đã được tải xong.
 

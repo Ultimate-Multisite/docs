@@ -4,7 +4,7 @@ title: Chiito - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Chiito: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Chiito: wp_ultimo_payfast_activation
 
 Bvumira zvimwe zvikamu zve plugin kubatanidza ma routine azvo ekushanda
 

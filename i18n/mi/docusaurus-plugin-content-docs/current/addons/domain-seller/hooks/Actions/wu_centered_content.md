@@ -4,7 +4,7 @@ title: Hohenga - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Mahi: wu_centered_content {#action-wucenteredcontent}
+# Mahi: wu_centered_content
 
 Tukua ngā kaiwhakawhanake monomai ki te tāpiri ihirangi anō ki roto i te tīwae kua whakawaenganuitia.
 

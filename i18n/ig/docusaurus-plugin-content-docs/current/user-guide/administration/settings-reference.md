@@ -3,7 +3,7 @@ title: Ntụaka Ntọala
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Ntụaka Ntọala {#settings-reference}
+# Ntụaka Ntọala
 
 Peeji a na-edekọ ntọala ndị na-emetụta nchịkwa kwa ụbọchị na mgbanwe omume ọhụrụ n’ime Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: ਪਲੱਗਇਨ ਪ੍ਰਬੰਧਨ ਸਮਰੱਥਾਵਾਂ
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# ਪਲੱਗਇਨ ਪ੍ਰਬੰਧਨ ਸਮਰੱਥਾਵਾਂ {#plugin-management-abilities}
+# ਪਲੱਗਇਨ ਪ੍ਰਬੰਧਨ ਸਮਰੱਥਾਵਾਂ
 
 Gratis AI Agent v1.5.0 **7 ਪਲੱਗਇਨ ਪ੍ਰਬੰਧਨ ਸਮਰੱਥਾਵਾਂ** ਨਾਲ ਆਉਂਦਾ ਹੈ, ਜਿਨ੍ਹਾਂ ਨੂੰ AI ਅਸਿਸਟੈਂਟ ਗੱਲਬਾਤ ਦੌਰਾਨ ਵਰਤ ਸਕਦਾ ਹੈ। ਇਹ ਸਮਰੱਥਾਵਾਂ [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) ਰਾਹੀਂ ਇੰਸਟਾਲ ਕੀਤੇ ਗਏ WordPress ਪਲੱਗਇਨ 'ਤੇ ਪ੍ਰੋਗਰਾਮੈਟਿਕ ਕੰਟਰੋਲ ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ।
 

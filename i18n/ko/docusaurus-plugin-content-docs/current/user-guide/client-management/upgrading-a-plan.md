@@ -3,7 +3,7 @@ title: 요금제 업그레이드
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# 플랜 업그레이드(v2) {#upgrading-a-plan-v2}
+# 플랜 업그레이드(v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 기준으로 합니다.**_
 

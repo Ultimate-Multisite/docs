@@ -3,7 +3,7 @@ title: क्षमता दृश्यता
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility (क्षमता दृश्यमानता) {#ability-visibility}
+# Ability Visibility (क्षमता दृश्यमानता)
 
 Superdav AI Agent v1.12.0 मध्ये **Ability Visibility** नियंत्रणे (controls) जोडली आहेत, जी ठरवतात की कोणकोणत्या इंटरफेसवर कोणती क्षमता (ability) उपलब्ध होईल. यामुळे प्रशासकांना (administrators) हे बारीकपणे सेट करता येते की कोणत्या agent क्षमता REST APIs, MCP servers, WooCommerce integrations आणि इतर इंटरफेसद्वारे उपलब्ध असतील.
 

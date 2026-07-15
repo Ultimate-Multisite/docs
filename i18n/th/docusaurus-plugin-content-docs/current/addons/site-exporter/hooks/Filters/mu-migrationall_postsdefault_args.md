@@ -4,7 +4,7 @@ title: ตัวกรอง - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filter: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filter: mu-migration/all_posts/default_args
 
 ใช้สำหรับกรองค่า default args ที่ใช้ในการเรียกข้อมูลโพสต์ในเมธอด `all_posts`
 

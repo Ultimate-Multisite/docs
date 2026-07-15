@@ -3,7 +3,7 @@ title: 'Darasi na 12: Gudanar da Kasuwancin'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Darasi na 12: Gudanar da Kasuwancin {#lesson-12-running-the-business}
+# Darasi na 12: Gudanar da Kasuwancin
 
 Dandali ba aikin da ka gama ba ne -- kasuwanci ne da kake gudanarwa. Wannan darasi yana rufe ayyukan yau da kullum na sarrafa FitSite: tallafi, biyan kuɗi, kulawa, da faranta wa abokan ciniki rai.
 

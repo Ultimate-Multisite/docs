@@ -3,7 +3,7 @@ title: Pembaruan Catatan Pemilih Bahasa
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Catatan Perubahan Pemilih Bahasa {#language-selector-changelog}
+# Catatan Perubahan Pemilih Bahasa
 
 Versi: 1.1.3 - Dirilis pada 2026-05-05
 * Perbaikan: Variabel input kini sudah disanitasi dan nama hook kustom diberi awalan (prefix) untuk mencegah konflik dengan plugin pihak ketiga.

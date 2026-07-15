@@ -3,7 +3,7 @@ title: ইমেইল আৰু সম্প্ৰচাৰ প্ৰেৰণ 
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ইমেইল আৰু Broadcasts পঠিওৱা (v2) {#sending-emails-and-broadcasts-v2}
+# ইমেইল আৰু Broadcasts পঠিওৱা (v2)
 
 _**গুৰুত্বপূর্ণ টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x-ৰ সৈতে সম্পৰ্কিত।**_
 

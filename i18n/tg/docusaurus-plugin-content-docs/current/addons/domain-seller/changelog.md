@@ -3,7 +3,7 @@ title: Рӯйхати тағйироти фурӯшандаи домен
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Таърихи тағйироти Domain Seller {#domain-seller-changelog}
+# Таърихи тағйироти Domain Seller
 
 Version 1.3.0 - Нашр шуд дар 2026-06-02
 - Нав: Ҳушдори network-admin илова шуд, вақте тавозуни reseller-и HostAfrica хеле паст мешавад

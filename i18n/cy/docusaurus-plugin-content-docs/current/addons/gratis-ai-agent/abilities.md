@@ -3,7 +3,7 @@ title: Cyfeirnod Galluoedd
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Cyfeirnod Galluoedd {#abilities-reference}
+# Cyfeirnod Galluoedd
 
 Galluoedd yw’r gweithredoedd atomig y gall Gratis AI Agent eu galw ar eich gosodiad WordPress. Mae pob gallu yn ddosbarth PHP cofrestredig sy’n datgelu schema JSON — mae’r agent yn darllen y schema hwn adeg rhedeg i ddeall pa baramedrau sy’n ofynnol a beth mae’r gallu’n ei ddychwelyd.
 

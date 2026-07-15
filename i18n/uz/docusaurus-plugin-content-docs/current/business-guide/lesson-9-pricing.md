@@ -3,7 +3,7 @@ title: '9-dars: Foyda uchun narx belgilash'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9-dars: Foyda uchun narxlash {#lesson-9-pricing-for-profit}
+# 9-dars: Foyda uchun narxlash
 
 5-darsda FitSite tariflari uchun boshlang‘ich narxlarni belgilagan edik. Endi daromadni oshiradigan, yuqoriroq tariflarga o‘tishni rag‘batlantiradigan va churnni kamaytiradigan usullar bilan narxlash strategiyasini takomillashtiramiz.
 

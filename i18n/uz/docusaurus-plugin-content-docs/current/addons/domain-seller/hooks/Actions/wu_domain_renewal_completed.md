@@ -4,7 +4,7 @@ title: Harakat - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Amal: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Amal: wu_domain_renewal_completed
 
 Domen muvaffaqiyatli yangilangandan keyin ishga tushadi.
 

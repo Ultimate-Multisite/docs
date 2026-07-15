@@ -3,7 +3,7 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Пераклад Ultimate Multisite {#translating-ultimate-multisite}
+# Пераклад Ultimate Multisite
 
 Ultimate Multisite распрацаваны англійскай мовай, але plugin цалкам перакладны, і мы актыўна вітае ўдзел у перакладах.
 

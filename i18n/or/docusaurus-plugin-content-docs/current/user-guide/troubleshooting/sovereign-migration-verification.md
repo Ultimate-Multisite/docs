@@ -3,7 +3,7 @@ title: ସର୍ବଭୌମତ୍ତ ବିଲ୍ଲିଫିକେସନ୍
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# ସୋଭରେନ୍ ମାଇଗ୍ରେସନ୍ ଯାଞ୍ଚ (Sovereign Migration Verification) {#sovereign-migration-verification}
+# ସୋଭରେନ୍ ମାଇଗ୍ରେସନ୍ ଯାଞ୍ଚ (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ରେ ସୋଭରେନ୍ ଟେଣ୍ଟ୍ ମାଇଗ୍ରେସନ୍ ପାଇଁ WP-CLI ଯାଞ୍ଚ କମାଣ୍ଡ୍‌ଗୁଡ଼ିକ ଅଛି। ଯଦି କୌଣସି ଟେଣ୍ଟ୍ ମାଇଗ୍ରେସନ୍, SSO ବିଜିଟ୍ ବା ଏକାନ୍ତ (isolated) ଇନଷ୍ଟଲ୍ ଆପେକ୍ଷାପକ ଭାବରେ କାର୍ଯ୍ୟ କରୁନାହିଁ, ତେବେ ସେମାନଗୁଡ଼ିକ ବ୍ୟବହାର କରନ୍ତୁ।
 

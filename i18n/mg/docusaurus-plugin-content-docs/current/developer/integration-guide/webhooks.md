@@ -3,7 +3,7 @@ title: Fitantanana Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Fitantanana Webhook {#webhook-handling}
+# Fitantanana Webhook
 
 Mamoròna endpoint webhook namboarina manokana handraisana hetsika avy amin’ny tolotra ivelany sy hampifanarahana angona amin’ny Ultimate Multisite.
 

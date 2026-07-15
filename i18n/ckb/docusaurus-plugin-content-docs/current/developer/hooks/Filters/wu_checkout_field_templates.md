@@ -4,7 +4,7 @@ title: فلتەر - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# پاڵێوەر: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# پاڵێوەر: wu_checkout_field_templates
 
 API ـەکانمان بۆ زیادکردنی داڕێژەی خانەی نوێ لێرەوە دەبەسترێن.
 

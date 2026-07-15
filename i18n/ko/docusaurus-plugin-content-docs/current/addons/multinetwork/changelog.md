@@ -3,7 +3,7 @@ title: 다중 네트워크 변경 로그
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network 변경 로그 {#multi-network-changelog}
+# Multi-Network 변경 로그
 
 ### 1.3.0 {#130}
 * 신규: 네트워크 템플릿 미리보기 도구 — 구매하기 전에 라이브 패널로 네트워크 템플릿을 찾아보고 미리 볼 수 있습니다.

@@ -4,7 +4,7 @@ title: Veiksmas - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Veiksmas: wu_domain_ses_verified {#action-wudomainsesverified}
+# Veiksmas: wu_domain_ses_verified
 
 Suveikia, kai SES patvirtina, kad domenas yra DKIM patvirtintas.
 

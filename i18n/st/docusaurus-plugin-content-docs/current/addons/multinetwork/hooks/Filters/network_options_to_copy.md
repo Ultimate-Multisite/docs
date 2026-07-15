@@ -4,7 +4,7 @@ title: Sefe - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Sefe: network_options_to_copy {#filter-networkoptionstocopy}
+# Sefe: network_options_to_copy
 
 E sefa dikgetho tsa kamehla tsa netweke tse lokelang ho kopitsoa.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons waxay Ultimate Multisite ku kordhiyaan astaamo iyo isku-dhexgalyo dheeraad ah. Inta badan addons waa lacag-bixin waxaana laga iibsan karaa [ultimatemultisite.com](https://ultimatemultisite.com).
 

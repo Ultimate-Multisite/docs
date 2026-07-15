@@ -4,7 +4,7 @@ title: Радња - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Радња: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Радња: wp_ultimo_payfast_activation
 
 Омогућава другим деловима plugin-а да прикаче своје рутине за активацију
 

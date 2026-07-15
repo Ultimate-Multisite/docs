@@ -3,7 +3,7 @@ title: Fonctionnalités du Constructeur de Thème
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacités du Générateur de Thèmes : Scaffolder et Activer les Thèmes de Blocs {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Capacités du Générateur de Thèmes : Scaffolder et Activer les Thèmes de Blocs
 
 Superdav AI Agent v1.12.0 introduit deux capacités puissantes qui vous permettent de générer et de déployer des thèmes de blocs personnalisés directement depuis l'interface de chat.
 

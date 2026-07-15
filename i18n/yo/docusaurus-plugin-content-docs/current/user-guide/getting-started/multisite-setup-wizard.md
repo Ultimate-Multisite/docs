@@ -3,7 +3,7 @@ title: Olùrànlọ́wọ́ Ìṣètò Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Olùrànlọ́wọ́ Ìṣètò Multisite {#multisite-setup-wizard}
+# Olùrànlọ́wọ́ Ìṣètò Multisite
 
 Ultimate Multisite ní olùrànlọ́wọ́ tí a kọ sínú rẹ̀ tí ó máa ń yí ìfíṣọ́ọ̀nù WordPress boṣewa padà sí nẹ́tíwọ́ọ̀kì WordPress Multisite láìfọwọ́sí. Èyí mú kí kò sí ìdí láti ṣàtúnṣe `wp-config.php` tàbí ṣiṣẹ́ àwọn àṣẹ ibi-ipamọ́ data pẹ̀lú ọwọ́.
 

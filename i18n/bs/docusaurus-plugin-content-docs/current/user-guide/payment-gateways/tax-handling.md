@@ -3,7 +3,7 @@ title: Upravljanje porezima
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Upravljanje porezima {#tax-handling}
+# Upravljanje porezima
 
 Ultimate Multisite ima modul za naplatu poreza ugrađen u naš osnovni dodatak, pa ako trebate naplaćivati porez na promet za svoje planove, pakete i usluge, to možete lako učiniti bez potrebe za instaliranjem bilo kakvih dodataka.
 

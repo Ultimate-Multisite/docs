@@ -4,7 +4,7 @@ title: Filtre - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filtre: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Filtre: wu_magic_links_enabled
 
 Filtra si els enllaços màgics estan habilitats.
 

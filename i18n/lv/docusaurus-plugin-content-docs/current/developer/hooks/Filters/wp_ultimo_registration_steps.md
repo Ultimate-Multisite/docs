@@ -4,7 +4,7 @@ title: Filtrs - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# Filtrs: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# Filtrs: wp_ultimo_registration_steps
 
 Pievienojiet papildu soļus, izmantojot filtrus
 

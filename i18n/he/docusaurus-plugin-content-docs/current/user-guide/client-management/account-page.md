@@ -3,7 +3,7 @@ title: עמוד Account של הלקוח
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# דף ה-Account של הלקוח שלך (v2) {#your-clients-account-page-v2}
+# דף ה-Account של הלקוח שלך (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסת Ultimate Multisite 2.x.**_
 

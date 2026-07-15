@@ -4,7 +4,7 @@ title: Filtr - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtr: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtr: wu_post_count_statuses
 
 Pozwala deweloperom pluginów na zmianę statusów postów, które mają być brane pod uwagę. Domyślnie liczone są posty typu „opublikowany” (published) i „prywatny” (private).
 

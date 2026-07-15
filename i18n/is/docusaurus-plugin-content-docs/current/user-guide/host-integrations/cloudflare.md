@@ -3,7 +3,7 @@ title: Cloudflare samstarf
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Samning við Cloudflare {#cloudflare-integration}
+# Samning við Cloudflare
 
 ## Áhersla {#overview}
 Cloudflare er stamtökandi nýrra netanna og öryggisþjónustana leiðandi tengslnet (CDN) og öryggisþjónusta sem hjálpar því að vernda og hraða vefsíður. Þessi samning fer með sjálfvirkan stjórnun domænum á milli Ultimate Multisite og Cloudflare, sérstaklega fyrir nýtingar með subdomain multisite uppsetunum.

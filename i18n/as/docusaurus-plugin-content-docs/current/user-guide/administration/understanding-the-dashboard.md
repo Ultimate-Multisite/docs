@@ -3,7 +3,7 @@ title: ড্যাশবৰ্ডটো বুজি লোৱা
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard বুझाइ {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard বুझाइ
 
 Ultimate Multisite-ৰ অধিক উন্নত কনফিগাৰেচন অপচন আৰু কাৰ্য্যগত দিশত গভীৰভাৱে নাযোৱাৰ আগতে, আমি dashboard-টোৰ ওপৰত চমু নজৰ কৰোঁ।
 

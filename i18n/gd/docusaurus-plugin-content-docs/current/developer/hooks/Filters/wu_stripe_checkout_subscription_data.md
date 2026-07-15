@@ -4,7 +4,7 @@ title: Criathrag - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Criathrag: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Criathrag: wu_stripe_checkout_subscription_data
 
 Criathraich dàta Stripe Subscription. Faodaidh e success_url no cancel_url a thar-sgrìobhadh.
 

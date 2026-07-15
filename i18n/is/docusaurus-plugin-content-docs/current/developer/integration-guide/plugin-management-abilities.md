@@ -3,7 +3,7 @@ title: Stjórnunargeta viðbóta
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Stjórnunargetur viðbóta {#plugin-management-abilities}
+# Stjórnunargetur viðbóta
 
 Gratis AI Agent v1.5.0 kemur með **7 stjórnunargetur viðbóta** sem AI aðstoðarmaðurinn getur kallað á í samtali. Þessar getu veita forritunarlega stjórn á WordPress viðbótum sem eru settar upp í gegnum [Viðbótarsmið og Sandbox-kerfi](../../user-guide/administration/plugin-builder-and-sandbox).
 

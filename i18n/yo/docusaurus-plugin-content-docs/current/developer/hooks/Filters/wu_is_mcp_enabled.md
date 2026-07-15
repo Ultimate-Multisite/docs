@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Àlẹmọ: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Àlẹmọ: wu_is_mcp_enabled
 
 Gba àwọn olùdàgbàsókè plugin laaye láti fi ipò kan pàtó múlẹ̀ fún adapter MCP.
 

@@ -3,7 +3,7 @@ title: Hükümdar Geçiş İşقه‌س
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# حاکمیت انتقال گردش کار (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# حاکمیت انتقال گردش کار (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0، استاندارد یک زیرسایت را به زیرساخت مستأجر حاکمیتی منتقل کردن برای تأیید مهاجرت‌ها (migration verification gates) اضافه کرده است.
 

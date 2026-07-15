@@ -3,7 +3,7 @@ title: WP-CLI Referanse
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referanse {#wp-cli-reference}
+# WP-CLI Referanse
 
 Gratis AI Agent leverer en kommando-familie kalt `wp gratis-ai-agent` for å benchmarke agenten, administrere evner (abilities), og spørre om agentens status fra kommandolinjen. Alle kommandoer krever WP-CLI 2.0 eller høyere.
 

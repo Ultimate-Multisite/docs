@@ -3,9 +3,9 @@ title: Addon Sablon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Sablon {#addon-template}
+# Addon Sablon
 
-{{ADDON_DESCRIPTION}}
+Addon Sablon — Ultimate Multisite.
 
 ## Előfeltételek {#requirements}
 

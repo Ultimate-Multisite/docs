@@ -3,7 +3,7 @@ title: ڪلائينٽ اڪاؤنٽ صفحو
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# توهان جي ڪلائين جو اڪاؤنٽ پيچ (v2) {#your-clients-account-page-v2}
+# توهان جي ڪلائين جو اڪاؤنٽ پيچ (v2)
 
 _**اهم نوٽ: هي مضمون Ultimate Multisite version 2.x سان لاڳاپيل آهي.**_
 

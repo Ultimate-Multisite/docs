@@ -4,7 +4,7 @@ title: Ìṣe - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Ìṣe: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Ìṣe: wu_domain_renewal_completed
 
 Máa nṣiṣẹ́ lẹ́yìn tí domain kan ti tún ṣe ìforúkọsílẹ̀ rẹ̀ ní aṣeyọrí.
 

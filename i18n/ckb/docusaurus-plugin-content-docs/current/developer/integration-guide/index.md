@@ -3,7 +3,7 @@ title: ڕێبەری یەکگرتن
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ڕێبەری Integration {#integration-guide}
+# ڕێبەری Integration
 
 ئەم ڕێبەرە شێوازە باوەکانی Integration لەگەڵ Ultimate Multisite دەگرێتەوە، لەوانە پەیوەستبوون بە خزمەتگوزارییە دەرەکییەکان، دروستکردنی payment gateway ـی تایبەتمەند، و مامەڵەکردن لەگەڵ webhooks.
 

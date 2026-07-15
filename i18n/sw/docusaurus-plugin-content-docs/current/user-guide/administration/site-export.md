@@ -3,7 +3,7 @@ title: Nukuu ya Tovuti
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Kusafirisha Tovuti (Site Export) {#site-export}
+# Kusafirisha Tovuti (Site Export)
 
 Ukurasa wa kiadmin wa **Site Export** unaruhusu wadhamini wa mtandao kuandaa tovuti moja, au mtandao mzima, katika *archive* ya kupakua kwa ajili ya kuhama, kuhifadhi nakala (backup), au kuwasilisha kwa mtu mwingine.
 

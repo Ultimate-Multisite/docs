@@ -3,7 +3,7 @@ title: Sítastafli
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Stöðvar (v2) {#site-templates-v2}
+# Stöðvar (v2)
 
 _**LÝSING: Þessi grein er tengd Ultimate Multisite útgáfu 2.x. Ef þú notar útgáfu 1.x,**_ **sjá þennan grein** _**.**_
 

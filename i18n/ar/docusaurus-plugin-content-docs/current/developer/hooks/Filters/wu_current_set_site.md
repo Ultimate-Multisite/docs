@@ -4,7 +4,7 @@ title: تصفية - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# المرشح: wu_current_set_site {#filter-wucurrentsetsite}
+# المرشح: wu_current_set_site
 
 السماح للمطورين بتعديل السلوك الافتراضي وتعيين الموقع الحالي بشكل مختلف.
 

@@ -3,7 +3,7 @@ title: Integriteco de ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integrazione {#serverpilot-integration}
+# ServerPilot Integrazione
 
 ## Aprovizio {#overview}
 ServerPilot estas cloud servco por hospabli WordPress kaj alia PHP-vobĝaj sitawebajn sur serveroj de DigitalOcean, Amazon, Google aŭ alia servera providanto. Ĉi tiu integriĝo permesas aŭtomatan domen sincronigon kaj SSL-sertifikoĵon manĝestion inter Ultimate Multisite kaj ServerPilot.

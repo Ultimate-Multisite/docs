@@ -3,7 +3,7 @@ title: Mitgliedschaften verwalten
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Memberships verwalten {#managing-memberships}
+# Memberships verwalten
 
 In Ultimate Multisite kannst du Memberships verwalten und auf alle Subscriptions in deinem Netzwerk zugreifen. Prüfe und bearbeite Subscription-Details wie Pläne und Produkte, die Anzahl der Websites, Abrechnungsbetrag und -häufigkeit, Zahlungshistorie und Zeitstempel.
 

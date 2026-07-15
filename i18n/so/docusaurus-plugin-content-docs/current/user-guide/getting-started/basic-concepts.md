@@ -3,7 +3,7 @@ title: Fikradaha Aasaasiga ah
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Fikradaha Aasaasiga ah {#basic-concepts}
+# Fikradaha Aasaasiga ah
 
 Haddii aad tahay isticmaalaya yar oo WordPress Multisite ah oo cusub, iyo qof ayaa mar hore bilaabaya isticmaalka Ultimate Multisite, waxaa jira erayo iyo weedho cusub oo badan oo aad baranaysid. Waxaa muhiim ah inaad bartid iyaga sababtoo ah waxaad u baahan doontaa inaad fahanto platform-ka iyo sida ay u shaqeeyaan guud.
 

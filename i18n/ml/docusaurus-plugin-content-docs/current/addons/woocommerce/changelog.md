@@ -3,7 +3,7 @@ title: WooCommerce ഇന്റഗ്രേഷൻ മാറ്റപ്പട്
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration മാറ്റപ്പട്ടിക {#woocommerce-integration-changelog}
+# WooCommerce Integration മാറ്റപ്പട്ടിക
 
 പതിപ്പ് 2.2.0 - 2026-07-01-ന് പുറത്തിറക്കി
 * പുതിയത്: Ultimate Multisite നികുതി തുകകൾ ഇപ്പോൾ checkout-ൽ വേർതിരിച്ച WooCommerce fee വരികളായി കാണിക്കും. ഇതിലൂടെ payment-ന് മുമ്പ് നികുതി മൊത്തങ്ങൾ കൂടുതൽ വ്യക്തമായിരിക്കും.

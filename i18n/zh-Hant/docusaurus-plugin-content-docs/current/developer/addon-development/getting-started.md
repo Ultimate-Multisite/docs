@@ -3,7 +3,7 @@ title: 開始進行附加元件開發
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# 附加元件開發 {#addon-development}
+# 附加元件開發
 
 ## 附加元件結構 {#addon-structure}
 

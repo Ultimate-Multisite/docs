@@ -3,7 +3,7 @@ title: د ډومېن پلورونکي بدلونلیک
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# د Domain Seller بدلون‌لیک {#domain-seller-changelog}
+# د Domain Seller بدلون‌لیک
 
 نسخه 1.3.0 - په 2026-06-02 خپره شوې
 - نوی: کله چې د HostAfrica بیاپلورونکي بیلانس ډېر ټیټ شي، د شبکې-ادارې خبرداری ورزیات شو

@@ -4,7 +4,7 @@ title: Tātari - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Tātari: wu_sso_url {#filter-wussourl}
+# Tātari: wu_sso_url
 
 Ka tātari i ngā SSO URLs kua hangaia i mua i te whakahokinga mō ngā mahi kiritaki whakawhiti-rohe.
 

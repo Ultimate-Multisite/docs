@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_{$this->id}_before_render
 
 പേജ് പ്രദർശിപ്പിക്കുന്നതിന് (print) മുമ്പ് അധിക ഉള്ളടക്കം ചേർക്കാൻ പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

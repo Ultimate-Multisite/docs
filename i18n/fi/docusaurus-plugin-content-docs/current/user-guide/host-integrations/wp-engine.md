@@ -3,7 +3,7 @@ title: WP Engine -integraatio
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integrointi {#wp-engine-integration}
+# WP Engine Integrointi
 
 ## Yleiskatsaus {#overview}
 WP Engine on premium hallittu WordPress -palvelu tarjoaa optimoidun suorituskyvyn, turvallisuuden ja skaalautuvuuden WordPress-sivustoille. Tämä integrointi mahdollistaa automaattisen verkkotunnusten synkronoinnin Ultimate Multisite -järjestelmän ja WP Engine -palvelimen välillä.

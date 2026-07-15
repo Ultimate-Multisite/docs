@@ -3,7 +3,7 @@ title: চেকআউট ফিল্ড এবং গ্রাহক DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# চেকআউট ফিল্ড এবং গ্রাহকের DNS ব্যবস্থাপনা {#checkout-field-and-customer-dns-management}
+# চেকআউট ফিল্ড এবং গ্রাহকের DNS ব্যবস্থাপনা
 
 ## ডোমেইন নির্বাচন চেকআউট ফিল্ড {#the-domain-selection-checkout-field}
 

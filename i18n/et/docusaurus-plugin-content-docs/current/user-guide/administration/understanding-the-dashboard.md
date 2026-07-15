@@ -3,7 +3,7 @@ title: Paneeli mõistmine
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboardi mõistmine {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboardi mõistmine
 
 Enne seda, kui me imbeds oma põhjalikuma konfiguratsioonivõimaluste ja Ultimate Multisite operatiivsete aspektide sügavale, vaadime esialgselt dashboardi üle.
 

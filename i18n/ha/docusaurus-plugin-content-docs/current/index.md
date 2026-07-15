@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Takardu {#ultimate-multisite-documentation}
+# Ultimate Multisite Takardu
 
 Barka da zuwa takardun Ultimate Multisite. Ultimate Multisite yana sauya WordPress Multisite zuwa cikakken dandamalin Website as a Service (WaaS).
 
@@ -18,7 +18,7 @@ Duk abin da kake bukata don saita, daidaita, da sarrafa dandamalin WaaS ɗinka. 
 
 Manazarta ta fasaha ga masu haɓakawa da ke ginawa a kan Ultimate Multisite. Ya haɗa da manazartar hooks, takardun REST API, da jagororin haɓaka addon.
 
-### [Addons](/addons) {#addons}
+### [Ƙarin abubuwa](/addons) {#addons}
 
 Takardu don addon plugins na biya waɗanda ke faɗaɗa Ultimate Multisite da ƙarin fasaloli kamar haɗin WooCommerce, nazari, sayar da domain, da ƙari.
 

@@ -3,7 +3,7 @@ title: ਡੋਮੇਨ ਮੈਪਿੰਗ ਨੂੰ ਕਿਵੇਂ ਸੰਰਚ
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# ਡੋਮੇਨ ਮੈਪਿੰਗ ਕਿਵੇਂ ਕੌਂਫਿਗਰ ਕਰੀਏ (v2) {#how-to-configure-domain-mapping-v2}
+# ਡੋਮੇਨ ਮੈਪਿੰਗ ਕਿਵੇਂ ਕੌਂਫਿਗਰ ਕਰੀਏ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਬਾਰੇ ਹੈ।**_
 

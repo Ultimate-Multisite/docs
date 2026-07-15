@@ -3,7 +3,7 @@ title: ڊومين وڪڻندڙ تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# ڊومين وڪرو ڪندڙ جو تبديلي لاگ {#domain-seller-changelog}
+# ڊومين وڪرو ڪندڙ جو تبديلي لاگ
 
 نسخو 1.3.0 - 2026-06-02 تي جاري ٿيو
 - نئون: جڏهن HostAfrica reseller جو بيلنس تمام گهٽ ٿئي ته network-admin وارننگ شامل ڪئي وئي

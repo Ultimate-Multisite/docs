@@ -3,7 +3,7 @@ title: Estetika de Design Sistemo Skilo
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetika Hile {#design-system-aesthetics-skill}
+# Design System Estetika Hile
 
 La **Design System Estetika hile** estas gvidita metodo por plenumi vian sita's vizual identecon. Ĝi helpas vi fari konsistencajn decisionojn pri tipografia, koloroj, espaco kaj movi token'oj, kiuj definas vian design systemon.
 

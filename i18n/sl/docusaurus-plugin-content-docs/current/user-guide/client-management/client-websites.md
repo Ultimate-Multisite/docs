@@ -3,7 +3,7 @@ title: Strannih spletnih strani
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Vaši stranki za stranke (v2) {#your-clients-websites-v2}
+# Vaši stranki za stranke (v2)
 
 Po registraciji na vašo mrežno omrežje bodo vaši kupci lahko dostopali do svoje dashboard.
 

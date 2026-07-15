@@ -3,7 +3,7 @@ title: 基本概念
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# 基本概念 {#basic-concepts}
+# 基本概念
 
 对于新的 WordPress Multisite 用户以及刚开始使用 Ultimate Multisite 的人来说，起初可能会遇到许多新的词汇和短语。学习它们是一项重要任务，因为你需要了解整个平台及其工作方式。
 

@@ -3,7 +3,7 @@ title: Gin SVG Lógó
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Gin Logo SVG {#generate-logo-svg}
+# Gin Logo SVG
 
 Ligeann an cumas **Gin Logo SVG** do Theme Builder SVGanna lógó saincheaptha a chruthú agus a leabú go díreach i do shuíomh WordPress le glanadh uathoibríoch atá sábháilte ó thaobh ainmspáis de.
 

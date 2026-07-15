@@ -3,7 +3,7 @@ title: WP-CLI-Referenz
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referenz {#wp-cli-reference}
+# WP-CLI Referenz
 
 Gratis AI Agent liwwert eng `wp gratis-ai-agent` Kommando-Famill fir den Agent ze benchmarken, Fäegkeeten ze verwalten an den Agent-Status vun der Kommandozeil ofzefroen. All Kommandoe verlaangen WP-CLI 2.0 oder méi héich.
 

@@ -3,7 +3,7 @@ title: Operaciones za Mteja wa Uhuru
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Uendeshaji wa Wateja Wenye Uhakika (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Uendeshaji wa Wateja Wenye Uhakika (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inafanya kazi kwa zana za uendeshaji kwa wateja wenye uhakika (sovereign tenants): subsites ambazo zinakimbia na database yake, mizizi ya mfumo wa faili (filesystem root), na muktadha wa routing wake wenyewe huku zikibaki wazi kwa msimamizi wa mtandao.
 

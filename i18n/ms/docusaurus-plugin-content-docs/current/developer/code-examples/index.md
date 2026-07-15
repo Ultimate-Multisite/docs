@@ -3,7 +3,7 @@ title: Contoh Kod Lanjutan
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Contoh Kod Lanjutan {#advanced-code-examples}
+# Contoh Kod Lanjutan
 
 Contoh-contoh ini menunjukkan corak integrasi lanjutan dengan Ultimate Multisite.
 

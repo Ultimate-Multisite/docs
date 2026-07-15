@@ -3,7 +3,7 @@ title: Benotzerdefinéiert Gateway-Entwécklung
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Benotzerdefinéiert Gateway-Entwécklung {#custom-gateway-development}
+# Benotzerdefinéiert Gateway-Entwécklung
 
 Du kanns benotzerdefinéiert Bezuel-Gateways erstellen, andeems du d'Klass `Base_Gateway` erweiders.
 

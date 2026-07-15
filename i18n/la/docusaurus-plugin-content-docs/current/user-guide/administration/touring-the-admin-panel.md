@@ -3,7 +3,7 @@ title: Circulatio in Pannellum Administrativo
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Percursus Panel Admini {#touring-the-admin-panel}
+# Percursus Panel Admini
 
 Ultimate Multisite vultum esse ut per se explicabilis et simplicissimum sit, sed cum instrumentum tantum ita potentem potest auxilium dare in turpitudinem guidam. Per pages adminicas ambulamus ut te situare possis.
 

@@ -3,7 +3,7 @@ title: Registers API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# کۆتای APIی تۆڕی زۆر باش (Ultimate Multisite Register API endpoint) {#the-ultimate-multisite-register-api-endpoint}
+# کۆتای APIی تۆڕی زۆر باش (Ultimate Multisite Register API endpoint)
 
 لە ئەم ڕێنماییەدا، دەبێت فێر بیت چۆن بەکارهێنانی کۆتای APIی Ultimate Multisite /register بۆ دروستکردنی هەموو پڕۆسەی سەرەتایی (onboarding process) بۆ کڕیارێکی نوێ لە تۆڕەکەت و چۆن ئەوە بکەیت بە Zapier.
 

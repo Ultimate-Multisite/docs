@@ -4,7 +4,7 @@ title: செயல் - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Action: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Action: wu_captcha_before_field
 
 கேப்CHA ஃபீல்ட் திரையில் காட்டப்படுவதற்கு (render) முன்னரே இது இயங்கும்.
 

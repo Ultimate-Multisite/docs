@@ -4,7 +4,7 @@ title: Szűrő - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Szűrő: send_auth_cookies {#filter-sendauthcookies}
+# Szűrő: send_auth_cookies
 
 Megtehető, hogy megakadályozza az autentikációs (auth) cookie-k küldését a felhasználónak (client-nek).
 

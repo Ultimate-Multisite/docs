@@ -3,7 +3,7 @@ title: Ödemeleri ve Faturaları Yönetme
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödemeleri ve Faturaları Yönetme {#managing-payments-and-invoices}
+# Ödemeleri ve Faturaları Yönetme
 
 ## Ödeme Ayarları {#payment-settings}
 

@@ -3,7 +3,7 @@ title: Turul panoului de administrare
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Turul panoului de administrare {#touring-the-admin-panel}
+# Turul panoului de administrare
 
 Ultimate Multisite își propune să fie cât mai simplu și autoexplicativ posibil, dar cu un instrument atât de puternic poate fi util să ai un tur ghidat. Să parcurgem paginile de administrare ca să te ajutăm să te orientezi.
 

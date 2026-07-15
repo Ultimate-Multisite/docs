@@ -4,7 +4,7 @@ title: Filtras - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Filtras: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Filtras: wu_password_require_number
 
 Filtruoja, ar reikalauti skaičių slaptažodžiuose.
 

@@ -3,7 +3,7 @@ title: Kolmepoolse režiimi migratsioon
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migratsioon kolmandateileti (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migratsioon kolmandateileti (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 muuttaa teisekolmandateilisteid käsitlemise viisil. **Kolmandateilimoodi on nüüd oletuksena "auto",** võimaldades loodud WordPress Abilities API -integreerimise kasutamist WordPress 7.0+ versioonil ilma manuaalset konfiguratsiooni vajutamata.
 

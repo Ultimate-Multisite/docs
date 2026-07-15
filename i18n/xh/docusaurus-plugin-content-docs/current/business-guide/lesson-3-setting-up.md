@@ -3,7 +3,7 @@ title: 'Isifundo 3: Ukuseta Inethiwekhi Yakho'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Isifundo 3: Ukuseta Umnatha Wakho {#lesson-3-setting-up-your-network}
+# Isifundo 3: Ukuseta Umnatha Wakho
 
 Lixesha lokwakha. Kwesi sifundo uza kufaka Ultimate Multisite uze uqwalasele isiseko somnatha weFitSite. Zonke izigqibo apha zenziwa kucingelwa icandelo lezitudiyo zokuzilolonga.
 

@@ -4,7 +4,7 @@ title: Gníomh - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Gníomh: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Gníomh: wu_enqueue_extra_hooks
 
 Lig d’fhorbróirí plugin crúcaí breise a chur leis.
 

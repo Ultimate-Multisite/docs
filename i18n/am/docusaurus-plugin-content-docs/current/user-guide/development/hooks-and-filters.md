@@ -3,7 +3,7 @@ title: ሁክስ እና ፊልትሮች
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks እና Filters {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Hooks እና Filters
 
 Ultimate Multisite ብዙ functions እና database queries ስብስብ ነው። ቀድ ያሉ functions ላይ አዲስ ኮድ እንዲጨምሩ ወይም እንዲቀይሩ የሚያስችሉ hooks እና filters አሉት።
 

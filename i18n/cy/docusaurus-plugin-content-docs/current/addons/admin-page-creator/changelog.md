@@ -3,7 +3,7 @@ title: Changelog y Gweithredwr Adref
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Changelog y Gweithredig Adrefi Admin Page Creator {#admin-page-creator-changelog}
+# Changelog y Gweithredig Adrefi Admin Page Creator
 
 ### Versiwn 1.9.0 - Rheoliwyd ar 2026-01-18 {#version-190---released-on-2026-01-18}
 

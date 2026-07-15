@@ -3,7 +3,7 @@ title: Visite du panneau d’administration
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Visite guidée du panneau d’administration {#touring-the-admin-panel}
+# Visite guidée du panneau d’administration
 
 Ultimate Multisite vise à être aussi simple et explicite que possible, mais avec un outil aussi puissant, une visite guidée peut être utile. Parcourons les pages d’administration pour vous aider à vous repérer.
 

@@ -3,7 +3,7 @@ title: 'Leksyon 11: Pagpangita og mga Kustomer'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesson 11: Pagpangita og Kustomer {#lesson-11-finding-customers}
+# Lesson 11: Pagpangita og Kustomer
 
 Ang usa ka maayo nga platform nga walay kustomer kay puro lang kalihokan. Kini nga lesson naghisgot unsaon pagkuha og mga kustomer sa usa ka *niche vertical*—mga estratehiya nga molihok tungod kay naka-focus mo sa usa ka industriya ra.
 

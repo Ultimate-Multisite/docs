@@ -3,7 +3,7 @@ title: ብዙ ጣቢያዎች የማቋቋም መመሪያ
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# የብዙ-ጣቢያ (Multisite) የማዋቀር አስማሚ {#multisite-setup-wizard}
+# የብዙ-ጣቢያ (Multisite) የማዋቀር አስማሚ
 
 Ultimate Multisite ተብሎ የሚጠራው በውስጥ የተገጠመ አስማሚ (wizard) ሲሆን፣ መደበኛ የWordPress ጭነትን ወደ WordPress Multisite ኔትወርክ በራስ-ሰር ይለውጣል። ይህ ደግሞ የ`wp-config.php` ፋይልን በእጅ የመቀየር ወይም የዳታቤዝ ትዕዛዞችን የማስኬድ አስፈላጊነትን ያስወግዳል።
 

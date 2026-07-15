@@ -3,7 +3,7 @@ title: Fila de pagado kaj Kliento DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Campo kaj DNS-menado de Klianto {#checkout-field-and-customer-dns-management}
+# Checkout Campo kaj DNS-menado de Klianto
 
 ## La campo Selekto de Domeno {#the-domain-selection-checkout-field}
 

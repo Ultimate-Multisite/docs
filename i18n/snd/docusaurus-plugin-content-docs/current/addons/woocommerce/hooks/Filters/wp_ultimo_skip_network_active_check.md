@@ -4,7 +4,7 @@ title: فلٽر - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# فلٽر: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# فلٽر: wp_ultimo_skip_network_active_check
 
 ڊولپرن کي نيٽ ورڪ چالو ڪرڻ جي جاچ کي مختصر رستي سان ختم ڪرڻ جي اجازت ڏئي ٿو.
 

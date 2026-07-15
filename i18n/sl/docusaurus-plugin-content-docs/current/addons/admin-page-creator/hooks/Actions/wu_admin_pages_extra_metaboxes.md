@@ -4,7 +4,7 @@ title: Dejanje - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Dejanje: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# Dejanje: wu_admin_pages_extra_metaboxes
 
 Omogoči razvijalcem pluginov dodajanje novih možnosti metaboxov =)
 

@@ -3,7 +3,7 @@ title: Nkwado cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Tích hợp cPanel {#cpanel-integration}
+# Tích hợp cPanel
 
 ## Tổng quan {#overview}
 cPanel là một trong những bảng điều khiển lưu trữ web phổ biến nhất được nhiều nhà cung cấp dịch vụ lưu trữ chia sẻ và riêng sử dụng dùng. Việc tích hợp này cho phép đồng bộ hóa tên miền tự động giữa Ultimate Multisite và cPanel, giúp bạn tự động thêm các bí danh tên miền (domain aliases) và tên miền phụ (subdomains) vào tài khoản cPanel của mình.

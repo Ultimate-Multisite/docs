@@ -3,7 +3,7 @@ title: Code Fragments
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 İçin Kod Parçaları {#code-snippets-for-v2}
+# v2 İçin Kod Parçaları
 
 Temelde, **WordPress** için kod parçaları, aksi takdirde özel bir eklenti gerektirebilecek belirli işlemleri yapmak için kullanılır. Bu kod parçaları, WordPress çekirdek dosyalarından veya tema dosyalarından (genellikle temanızın functions.php dosyası) birine yerleştirilebilir veya bir MU eklentisi olarak kullanılabilir.
 

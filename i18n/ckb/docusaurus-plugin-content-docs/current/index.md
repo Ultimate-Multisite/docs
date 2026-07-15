@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dokumentasyona Ultimate Multisite {#ultimate-multisite-documentation}
+# Dokumentasyona Ultimate Multisite
 
 بسیار خوش آمدید به مستندات Ultimate Multisite. Ultimate Multisite تبدیل وردپرس 멀티사이트 را به یک پلتفرم وب‌سایت به عنوان سرویس (WaaS) کامل می‌کند.
 

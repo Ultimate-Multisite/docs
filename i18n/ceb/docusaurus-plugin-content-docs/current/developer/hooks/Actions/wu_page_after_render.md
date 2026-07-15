@@ -4,7 +4,7 @@ title: Aksyon - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Aksyon: wu_page_after_render {#action-wupageafterrender}
+# Aksyon: wu_page_after_render
 
 Tugoti ang mga developer sa plugin nga makadugang og dugang nga sulod pagkahuman namo i-print ang panid
 

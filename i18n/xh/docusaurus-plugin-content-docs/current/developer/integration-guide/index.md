@@ -3,7 +3,7 @@ title: Isikhokelo soDibaniso
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Isikhokelo soDibaniso {#integration-guide}
+# Isikhokelo soDibaniso
 
 Esi sikhokelo sigubungela iipateni eziqhelekileyo zodibaniso ne-Ultimate Multisite, kuquka ukudibanisa neenkonzo zangaphandle, ukwakha amasango entlawulo alungiselelweyo, nokuphatha ii-webhook.
 

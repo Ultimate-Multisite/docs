@@ -4,7 +4,7 @@ title: Фильтр - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Фильтр: secure_auth_redirect {#filter-secureauthredirect}
+# Фильтр: secure_auth_redirect
 
 Имин аутентификация юнәлтүен кулланыргамы-юкмы икәнен фильтрлый.
 

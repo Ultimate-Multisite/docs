@@ -3,7 +3,7 @@ title: CyberPanel Integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel連携 {#cyberpanel-integration}
+# CyberPanel連携
 
 本ガイドでは、Ultimate MultisiteのCyberPanel連携の設定方法を説明します。これにより、ネットワーク内でマッピングされたドメインが、CyberPanelの仮想ホストとして自動的に追加（および削除）され、オプションでLet's Encryptによる自動SSLプロビジョニングも行われます。
 

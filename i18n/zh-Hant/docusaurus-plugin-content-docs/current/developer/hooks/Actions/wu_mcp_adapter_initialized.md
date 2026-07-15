@@ -4,7 +4,7 @@ title: 動作 - wu_mcp_adapter_initialized
 sidebar_label: wu_mcp_adapter_initialized
 _i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
 ---
-# 動作：wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
+# 動作：wu_mcp_adapter_initialized
 
 當 MCP adapter 初始化完成後觸發。
 

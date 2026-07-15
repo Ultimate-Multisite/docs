@@ -3,7 +3,7 @@ title: Migrazzjoni tal-Mod Third-Party
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrazzjoni għall-Mod Estern (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrazzjoni għall-Mod Estern (Third-Party Mode Migration)
 
 Il-Superdav AI Agent v1.12.0 jgħatti bħal kif jintraddu l-abbilti esterni (third-party abilities). **Il-mod esterno jiddeċied il-auto** (auto), li jippermettix integrazzjoni nativa mal-WordPress Abilities API fuq WordPress 7.0+ b'mod automatiku, b'mod li ma għandekx tiġi konfigurata manualment.
 

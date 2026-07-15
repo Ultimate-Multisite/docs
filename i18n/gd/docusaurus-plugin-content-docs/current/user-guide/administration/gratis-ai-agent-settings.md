@@ -3,7 +3,7 @@ title: Roghainnean Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Roghainnean Gratis AI Agent {#gratis-ai-agent-settings}
+# Roghainnean Gratis AI Agent
 
 Tha an sgrìn **Roghainnean → Adhartach** ann an Gratis AI Agent a’ toirt seachad rèiteachadh aig ìre rianaire airson amalachadh backend. Tha an duilleag seo a’ mìneachadh cur-air-adhart fios-air-ais, iuchraichean solaraiche luirg, suidheachadh seirbheis Superdav stiùirichte, smachdan Google Calendar, roghainnean SMS TextBee, agus brataichean feart thar an lìonra.
 

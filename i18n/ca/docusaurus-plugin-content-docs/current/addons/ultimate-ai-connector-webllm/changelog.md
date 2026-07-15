@@ -3,7 +3,7 @@ title: Registre de canvis del Connector d'IA Ultimate per WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Diari de canvis d'Ultimate AI Connector per a WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Diari de canvis d'Ultimate AI Connector per a WebLLM
 
 ## Versió 1.1.0 — Publicada el 2026-04-09 {#version-110--released-on-2026-04-09}
 

@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Umuhura ku Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Umuhura ku Webhooks (v2)
 
 _**UMUTWE: Uruko cyangwa ubutumwa bwawe rwa hari ku bakoresha ubwujumbura bw'ubwoko bw'ibyo bishobora gukora (advanced users).**_
 

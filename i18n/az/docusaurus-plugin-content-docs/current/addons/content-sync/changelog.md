@@ -3,7 +3,7 @@ title: Məzmun Senkronizasiyası Dəyişiklik Qeydi
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync Değişiklik Qeydi {#content-sync-changelog}
+# Content Sync Değişiklik Qeydi
 
 ### Version 1.1.0 - Yayınlanma tarixi: 2025-12-31 {#version-110---released-on-2025-12-31}
 * Yeni: Bütün post tiplərinin (posts, pages, xüsusi göstri növləri) senkronizasiya dəstəyi

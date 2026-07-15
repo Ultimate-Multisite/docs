@@ -4,7 +4,7 @@ title: Гамәл - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Гамәл: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Гамәл: wp_ultimo_site_exporter_deactivation
 
 Плагинның башка өлешләренә сүндерү өчен үз тәртипләрен беркетергә мөмкинлек бирә.
 

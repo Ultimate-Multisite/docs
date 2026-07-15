@@ -3,7 +3,7 @@ title: Tài liệu dành cho nhà phát triển
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Tài liệu dành cho nhà phát triển {#developer-documentation}
+# Tài liệu dành cho nhà phát triển
 
 Hướng dẫn này cung cấp cho các nhà phát triển mọi thứ cần thiết để tích hợp, mở rộng hoặc phát triển các addon cho Ultimate Multisite. Ultimate Multisite biến một mạng WordPress Multisite thành một nền tảng Website-as-a-Service (WaaS).
 

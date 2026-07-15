@@ -3,7 +3,7 @@ title: Sarrafa Haraji
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Sarrafa Haraji {#tax-handling}
+# Sarrafa Haraji
 
 Ultimate Multisite yana da tsarin tattara haraji da aka gina a cikin core plugin ɗinmu, don haka idan kana buƙatar tattara harajin tallace-tallace a kan tsare-tsarenka, fakitinka da ayyukanka, zaka iya yin hakan cikin sauƙi ba tare da komawa ga girka wasu ƙarin abubuwa ba.
 

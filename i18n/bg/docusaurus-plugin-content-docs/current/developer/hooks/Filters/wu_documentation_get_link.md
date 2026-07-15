@@ -4,7 +4,7 @@ title: Филтър - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Филтър: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Филтър: wu_documentation_get_link
 
 Позволява на разработчиците на плагини да филтрират връзките.
 

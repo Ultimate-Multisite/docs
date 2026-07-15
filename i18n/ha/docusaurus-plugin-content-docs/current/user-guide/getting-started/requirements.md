@@ -3,7 +3,7 @@ title: Yin da ake bukata
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# شروط Ultimate Multisite {#ultimate-multisite-requirements}
+# شروط Ultimate Multisite
 
 قبل از اینکه بخواهید Ultimate Multisite رو بخرید، اولین چیزی که ممکنه از خودتون بپرسید اینه که برای اجرای افزونه ما چه نیازی هست. خب خوشبختانه، فقط چند تا شرط اساسی برای اجرای Ultimate Multisite وجود داره: یک **نام دامنه**، یک **ارائه‌دهنده هاستینگ** خوب و یک نصب **Multisite** در وردپرس. همین‌ها کافیه!
 

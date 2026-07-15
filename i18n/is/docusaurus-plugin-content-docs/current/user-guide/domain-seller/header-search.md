@@ -3,7 +3,7 @@ title: Lénsleit í haus
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Notaðu þessa uppsetningu þegar þú vilt lítið eyðublað í haus sem byrjar lénaleit og leyfir síðan viðskiptavininum að velja úr tiltækum lénum inni í Ultimate Multisite checkout.
 

@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filter: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Filter: mu_migration/export/user/headers
 
 အသုံးပြုသူ (user) ၏ ခေါင်းစီးများ (headers) စံသတ်မှတ်ထားသည့် အစုအဝေးကို export လုပ်ခြင်း သို့မဟုတ် import လုပ်ခြင်းတို့အတွက် စစ်ထုတ်ပေးသည့် (filter) နေရာဖြစ်သည်။
 

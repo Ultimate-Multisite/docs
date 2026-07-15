@@ -4,7 +4,7 @@ title: Զտիչ - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Ֆիլտր՝ wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Ֆիլտր՝ wu_mt_syncable_user_meta_keys
 
 Ֆիլտրում է այն օգտատիրոջ մետա բանալիների ցանկը, որոնք պետք է համաժամացվեն հեռակա հանգույցների հետ։
 

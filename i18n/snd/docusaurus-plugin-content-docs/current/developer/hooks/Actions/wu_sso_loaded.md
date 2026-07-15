@@ -4,7 +4,7 @@ title: عمل - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# عمل: wu_sso_loaded {#action-wussoloaded}
+# عمل: wu_sso_loaded
 
 plugin ڊولپرز کي ضرورت هجي ته اضافي hooks شامل ڪرڻ جي اجازت ڏيو.
 

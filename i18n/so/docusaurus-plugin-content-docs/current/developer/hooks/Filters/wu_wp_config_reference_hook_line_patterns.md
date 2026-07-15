@@ -4,7 +4,7 @@ title: Shaandheeye - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Shaandheeye: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Shaandheeye: wu_wp_config_reference_hook_line_patterns
 
 Waxaan hubinnaa saddex qaab marka aan isku dayeyno inaan ogaano halka aan ku gelin karno constants-keena:
 

@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# 过滤器: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# 过滤器: wu_limits_is_fluent_form_above_limit
 
 检查给定表单类型是否允许在此计划中使用，允许插件开发者过滤返回值
 

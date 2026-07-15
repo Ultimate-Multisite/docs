@@ -3,7 +3,7 @@ title: Administratio vectigalium
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Administratio Tributorum {#tax-handling}
+# Administratio Tributorum
 
 Ultimate Multisite modulum collectionis tributorum in nostro modulo principali inclusum habet; itaque, si tributa venditionis in rationibus, fasciculis et ministeriis tuis colligere debes, id facile facere potes sine ulla additamenta instituenda.
 

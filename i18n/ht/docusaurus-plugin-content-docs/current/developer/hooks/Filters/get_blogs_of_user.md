@@ -4,7 +4,7 @@ title: Filtre - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filtè: get_blogs_of_user {#filter-getblogsofuser}
+# Filtè: get_blogs_of_user
 
 Repwodui Filter WP orijinal la isit la, pou bon mezi.
 

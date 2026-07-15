@@ -3,7 +3,7 @@ title: Membership ختم ڪرڻ
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# सदस्यता منسوخ کرنا (v2) {#canceling-a-membership-v2}
+# सदस्यता منسوخ کرنا (v2)
 
 _**اہم نوٹ: यो लेख Ultimate Multisite संस्करण 2.x लाई सन्दर्भ ڪري ٿو.**_
 

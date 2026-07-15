@@ -4,7 +4,7 @@ title: Sefahla - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Sefe: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Sefe: wu_checkout_field_types
 
 Di-API tsa rona tsa ho eketsa mefuta e mecha ya masimo di hokela mona.
 

@@ -3,7 +3,7 @@ title: Webhook ପରିଚାଳନା
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ପରିଚାଳନା {#webhook-handling}
+# Webhook ପରିଚାଳନା
 
 ବାହ୍ୟ ସେବାଗୁଡ଼ିକରୁ ଘଟଣା ପାଇବା ଏବଂ Ultimate Multisite ସହିତ ତଥ୍ୟ ସମନ୍ୱୟ କରିବା ପାଇଁ କଷ୍ଟମ Webhook ଏଣ୍ଡପଏଣ୍ଟ ସୃଷ୍ଟି କରନ୍ତୁ।
 

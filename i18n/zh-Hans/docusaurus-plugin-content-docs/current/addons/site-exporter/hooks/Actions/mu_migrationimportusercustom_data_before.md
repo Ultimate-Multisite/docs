@@ -4,7 +4,7 @@ title: ''
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# 动作: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# 动作: mu_migration/import/user/custom_data_before
 
 在导出自定义用户数据之前触发。
 

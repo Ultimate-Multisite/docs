@@ -3,7 +3,7 @@ title: Domain Produkte und Preise
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain-Produkte und Preise {#domain-products-and-pricing}
+# Domain-Produkte und Preise
 
 Domain-Produkte bestimmen, wie Sie Preise, TLDs, WHOIS-Datenschutz und Anbieterauswahl steuern. Jedes Domain-Produkt ist ein Standard-Ultimate Multisite-Produkt mit einem zusätzlichen Tab namens **Domain-Einstellungen**.
 

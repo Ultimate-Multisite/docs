@@ -4,7 +4,7 @@ title: Harakat - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Action: wu_dashboard_widgets
 
 Plugin ishlab chiquvchilariga Network Dashboard Panel ga widgetlar qo‘shishga ruxsat beradi.
 

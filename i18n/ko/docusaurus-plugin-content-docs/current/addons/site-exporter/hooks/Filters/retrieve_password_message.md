@@ -4,7 +4,7 @@ title: 필터 - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# 필터: retrieve_password_message {#filter-retrievepasswordmessage}
+# 필터: retrieve_password_message
 
 비밀번호 재설정 메일의 본문을 필터링합니다.
 

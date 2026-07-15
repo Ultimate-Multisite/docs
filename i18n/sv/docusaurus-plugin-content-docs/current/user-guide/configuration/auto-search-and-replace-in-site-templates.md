@@ -3,7 +3,7 @@ title: Automatisk sökning och ersättning i webbplatsmallar
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk sökning och ersättning i webbplatsmallar (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatisk sökning och ersättning i webbplatsmallar (v2)
 
 _**Den här handledningen kräver WP UItimo version 2.x.**_
 

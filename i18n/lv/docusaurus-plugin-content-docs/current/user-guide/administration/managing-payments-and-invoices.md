@@ -3,7 +3,7 @@ title: Platīju un faktūru pārvaldība
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Grāmatu maksājumu un fakturētu informācijas pārvaldīšana {#managing-payments-and-invoices}
+# Grāmatu maksājumu un fakturētu informācijas pārvaldīšana
 
 ## Maksājumu iestatījumi {#payment-settings}
 

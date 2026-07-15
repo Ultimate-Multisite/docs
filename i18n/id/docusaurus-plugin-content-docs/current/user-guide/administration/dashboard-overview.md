@@ -3,7 +3,7 @@ title: Ikhtisar Dasbor
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Gambaran Umum Dashboard {#dashboard-overview}
+# Gambaran Umum Dashboard
 
 Ultimate Multisite memiliki **Dashboard** khusus di bawah menu Ultimate Multisite, dan juga menambahkan widget ke Network Dashboard. Artikel ini membahas apa yang akan Anda lihat di kedua tempat tersebut.
 

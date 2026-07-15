@@ -3,7 +3,7 @@ title: Dearbhaich Iomsgaradh na Paileid
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Dearbhaich Iomsgaradh na Palette {#validate-palette-contrast}
+# Dearbhaich Iomsgaradh na Palette
 
 Bidh comas **Validate Palette Contrast** a’ sgrùdadh paidhrichean dhathan sa phalette dealbhaidh agad airson gèilleadh ri WCAG (Stiùiridhean Ruigsinneachd Susbaint Lìn) mus cuir thu an sàs iad san theme agad.
 

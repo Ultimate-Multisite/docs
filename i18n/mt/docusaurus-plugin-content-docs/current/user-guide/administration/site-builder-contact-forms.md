@@ -3,7 +3,7 @@ title: Formijiet ta Kontatt għall-Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formi Kontatt (Contact Forms) {#site-builder-contact-forms}
+# Formi Kontatt (Contact Forms)
 
 Superdav AI Agent v1.10.0 id-ap il-possibilità ta creare formi kontatt direttament mill-chat interface u l-Site Builder agent. Dan itti jagħlek a aġġixxi formi kontatt kumpli għal kis-sigħa بلا ma tixleb mill-chat.
 

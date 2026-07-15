@@ -3,7 +3,7 @@ title: Kuidas seadistada domeenide kaardistamist
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kuidas seadistada domeeni kaardistamist (v2) {#how-to-configure-domain-mapping-v2}
+# Kuidas seadistada domeeni kaardistamist (v2)
 
 _**OLULINE MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 

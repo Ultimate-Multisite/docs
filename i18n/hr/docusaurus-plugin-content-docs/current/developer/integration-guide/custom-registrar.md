@@ -3,7 +3,7 @@ title: Izrada prilagođene integracije registrara
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Izrada prilagođene integracije registrara {#building-a-custom-registrar-integration}
+# Izrada prilagođene integracije registrara
 
 Domain Seller addon koristi obrazac **Integration Registry**. Svaki registrar je PHP klasa koja implementira `Domain_Selling_Capability` i registrira se putem action hooka `wu_domain_seller_register_capabilities`.
 

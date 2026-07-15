@@ -4,7 +4,7 @@ title: Filter - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filter: wu_post_count {#filter-wupostcount}
+# Filter: wu_post_count
 
 प्लगइन डेव्हलपर्सना एकूण संख्या (count total) बदलण्याची परवानगी देते.
 

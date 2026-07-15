@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Filter: wu_magic_links_enabled
 
 આ ફિલ્ટર નક્કી કરે છે કે મેજિક લિંક્સ (magic links) સક્ષમ (enabled) છે કે નહીં.
 

@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# Gnìomh: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# Gnìomh: wp_ultimo_woocommerce_load
 
 Air a phiobrachadh às dèidh do gach eisimeileachd an add-on a bhith air a luchdadh.
 

@@ -4,7 +4,7 @@ title: Tace - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Tacewa: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Tacewa: wu_view_override_replaceable_views
 
 Yana ba masu haɓakawa damar ƙara ƙarin manyan fayiloli zuwa jerin da za a iya maye gurbinsu.
 

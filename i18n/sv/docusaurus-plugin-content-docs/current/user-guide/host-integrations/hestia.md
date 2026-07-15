@@ -3,7 +3,7 @@ title: Hestia Control Panel-integration
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia-kontrollpanelintegration {#hestia-control-panel-integration}
+# Hestia-kontrollpanelintegration
 
 Den här guiden förklarar hur du konfigurerar Ultimate Multisites Hestia-integration så att mappade domäner i ditt nätverk automatiskt läggs till (och tas bort) som webbdomänalias i Hestia.
 

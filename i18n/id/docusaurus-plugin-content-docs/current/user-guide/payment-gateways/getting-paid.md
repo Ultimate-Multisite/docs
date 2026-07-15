@@ -3,7 +3,7 @@ title: Menerima Pembayaran
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Mendapatkan Pembayaran (v2) {#getting-paid-v2}
+# Mendapatkan Pembayaran (v2)
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 

@@ -3,7 +3,7 @@ title: Tresnak eta konfigurazioa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Tresnak eta konfigurazioa {#tools-and-configuration}
+# Tresnak eta konfigurazioa
 
 Theme Builder-ek tresna multzo bat erabiltzen du zure WordPress gunea aztertzeko, diseinatzeko eta eraikitzeko. 1.16.0 bertsioan, **sd-ai-agent/site-scrape orain 1. mailako tresna da**, eta, beraz, lehenespenez eskuragarri dago Theme Builder-en. Superdav AI Agent v1.18.0-k, halaber, bereizita banatutako Advanced laguntzaile pakete bat aurkezten du garatzaile fidagarrien lan-fluxuetarako; tresna horiek ez dira WordPress.org nukleo paketearen parte, eta bereiz instalatu eta baimendu behar dira.
 

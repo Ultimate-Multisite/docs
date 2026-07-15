@@ -4,7 +4,7 @@ title: Радња - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# Радња: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# Радња: wp_ultimo_support_agents_load
 
 Покреће се када су све зависности учитане
 

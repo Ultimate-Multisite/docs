@@ -3,7 +3,7 @@ title: Tee Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# ປັບແຕ່ງ Admin Panel ຂອງທ່ານດ້ວຍ PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# ປັບແຕ່ງ Admin Panel ຂອງທ່ານດ້ວຍ PRO Theme
 
 ເມື່ອເຮົາເຮັດວຽກໃຫ້ລູກຄ້າເລື້ອຍໆ, ເຮົາກໍມັກຈະໄດ້ຮັບຄວາມຕ້ອງການທີ່ຈະສະໜອງປະສົບການທີ່ເປັນແບບສະເພາະໃນ dashboard ຂອງ WordPress ໃຫ້ລູກຄ້າ. ຖ້າເຈົ້າກໍາລັງຊອກຫາຮູບລັກສະນະທີ່ເບິ່ງເປັນມືອາຊີບກວ່າ, PRO Theme ອາດຈະຊ່ວຍເຈົ້າໄດ້.
 

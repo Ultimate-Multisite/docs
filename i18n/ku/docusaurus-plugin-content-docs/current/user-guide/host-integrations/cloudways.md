@@ -3,7 +3,7 @@ title: یەکگرتووکردنی Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integration with Cloudways {#cloudways-integration}
+# Integration with Cloudways
 
 ## گشتی (Overview) {#overview}
 Cloudways یەک پلاتفۆرمێکی هاستکردنی ئاڵۆزە کە ڕێنوێنی دەکات بۆ دیplooyکردنی سایتەکانی WordPress لەسەر پڕۆڤایەرەکانی مۆدێرن و هەروەها جیاواز وەک DigitalOcean، AWS، Google Cloud و دیکە. ئەم یەکگرتووکارییە دەبێتە هۆی هاڕێژکردنی ئۆمێن (domain syncing) بە شێوەیەکی ئۆتۆماتیک و بەڕێوەبردنی گوازمانی SSL لە نێوان Ultimate Multisite و Cloudways.

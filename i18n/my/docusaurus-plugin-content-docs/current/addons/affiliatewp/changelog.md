@@ -3,7 +3,7 @@ title: AffiliateWP ပြောင်းလဲမှု မှတ်တမ်း
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ပြောင်းလဲမှုမှတ်တမ်း {#affiliatewp-changelog}
+# AffiliateWP ပြောင်းလဲမှုမှတ်တမ်း
 
 Version: 2.0.1 - 2025-09-28 တွင် ထုတ်ဝေခဲ့သည်
 

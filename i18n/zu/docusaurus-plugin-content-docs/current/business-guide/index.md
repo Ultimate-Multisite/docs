@@ -3,7 +3,7 @@ title: Yakha Ibhizinisi Lewebhusayithi Eligxile Emkhakheni Othile
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Yakha Ibhizinisi Lewebhusayithi Eligxile Emkhakheni nge-Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Yakha Ibhizinisi Lewebhusayithi Eligxile Emkhakheni nge-Ultimate Multisite
 
 Abantu abaningi abazama ukuthengisa amawebhusayithi bancintisana ngentengo ne-Wix, Squarespace, nezinkulungwane zama-freelancer. Bayahluleka. Labo abaphumelelayo bakhetha izethameli ezithile, bakhe isixazululo esenzelwe lezo zethameli, bese bekhokhisa ngenani abalilethayo.
 

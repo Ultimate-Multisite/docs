@@ -3,7 +3,7 @@ title: គំរូគេហទំព័រ
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**ចំណាំ៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។ ប្រសិនបើអ្នកកំពុងប្រើ version 1.x សូមមើលអត្ថបទនេះ**_**.
 

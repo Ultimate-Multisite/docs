@@ -3,7 +3,7 @@ title: Разработка на персонализиран шлюз
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Разработка на Custom Gateway {#custom-gateway-development}
+# Разработка на Custom Gateway
 
 Можете да създавате персонализирани платежни gateway-и, като разширите класа `Base_Gateway`.
 

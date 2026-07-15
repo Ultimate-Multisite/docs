@@ -3,7 +3,7 @@ title: Tuituitanga Kairēti-maha
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Whakaurunga Kairēti-maha {#multi-tenancy-integration}
+# Whakaurunga Kairēti-maha
 
 Ultimate Multisite: Ka huri te Kairēti-maha 1.2.0 i ētahi wāhi whakapā whakaurunga mō ngā kairēti motuhake, te manatoko hekenga, me te aunoatanga huringa-oranga kairēti.
 

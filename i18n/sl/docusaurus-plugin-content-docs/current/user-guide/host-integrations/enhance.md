@@ -3,7 +3,7 @@ title: Izboljšajte integracijo Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Oboljšanje integracije Control Panel {#enhance-control-panel-integration}
+# Oboljšanje integracije Control Panel
 
 ## Pregled {#overview}
 Enhance je moderni control panel, ki omogoča močne možnosti za avtomatizacijo in upravljanje hostinga. Ta integracija omogoča avtomatizirano sinhronizacijo domen in upravljanje SSL sertifikatov med Ultimate Multisite in Enhance Control Panel.

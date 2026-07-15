@@ -3,7 +3,7 @@ title: 'Lección 6: A experiencia de rexistro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lección 6: A experiencia de rexistro {#lesson-6-the-signup-experience}
+# Lección 6: A experiencia de rexistro
 
 O fluxo de checkout é onde o interese se converte en ingresos. Un proceso de rexistro confuso ou xenérico perde clientes. Un fluxo específico de nicho que fala a súa lingua e resulta sinxelo convérteos.
 

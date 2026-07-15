@@ -3,7 +3,7 @@ title: ServerPilot സംയോജനം
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ഇന്റഗ്രേഷൻ {#serverpilot-integration}
+# ServerPilot ഇന്റഗ്രേഷൻ
 
 ## അവലോകനം {#overview}
 DigitalOcean, Amazon, Google, അല്ലെങ്കിൽ മറ്റേതെങ്കിലും സെർവർ പ്രൊവൈഡറിലെ സെർവറുകളിൽ WordPress-ഉം മറ്റ് PHP വെബ്‌സൈറ്റുകളും ഹോസ്റ്റ് ചെയ്യുന്നതിനുള്ള ഒരു ക്ലൗഡ് സേവനമാണ് ServerPilot. Ultimate Multisite-ഉം ServerPilot-ഉം തമ്മിൽ ഓട്ടോമാറ്റിക് ഡൊമെയ്ൻ സിങ്കിംഗും SSL സർട്ടിഫിക്കറ്റ് മാനേജ്‌മെന്റും സാധ്യമാക്കുന്നതാണ് ഈ ഇന്റഗ്രേഷൻ.

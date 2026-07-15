@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ Àwọn Ayípadà Àwọn Òtítọ́ Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Àkọọlẹ̀ Àyípadà Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Àkọọlẹ̀ Àyípadà Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * A fikún: Iṣẹ́ ìmúdójúìwọ̀n aládáṣe nípasẹ̀ server ìmúdójúìwọ̀n Ultimate Multisite

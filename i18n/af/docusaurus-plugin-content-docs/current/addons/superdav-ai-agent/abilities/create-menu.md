@@ -3,7 +3,7 @@ title: Skep Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menu Skep {#create-menu}
+# Menu Skep
 
 Die **Menu Skep** vermoë skep WordPress-navigasie-menu's met ondersteuning vir aparte navigasielabels wat verskil van bladsytitels.
 

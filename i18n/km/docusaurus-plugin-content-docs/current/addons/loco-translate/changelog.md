@@ -3,7 +3,7 @@ title: កំណត់ហេតុការផ្លាស់ប្តូរ Loc
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# កំណត់ត្រា​ផ្លាស់ប្តូរ Loco Translate {#loco-translate-changelog}
+# កំណត់ត្រា​ផ្លាស់ប្តូរ Loco Translate
 
 ### 1.0.1 {#101}
 * កែលម្អ​ភាព​ឆបគ្នា​ជាមួយ​កំណែ Loco Translate ចុងក្រោយ

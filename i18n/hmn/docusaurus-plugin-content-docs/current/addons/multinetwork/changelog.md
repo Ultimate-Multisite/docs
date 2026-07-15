@@ -3,7 +3,7 @@ title: Daim Ntawv Teev Kev Hloov Tshiab Ntau Lub Network
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network Changelog {#multi-network-changelog}
+# Multi-Network Changelog
 
 ### 1.3.0 {#130}
 * Tshiab: Tus saib ua ntej network template — xauj thiab saib ua ntej network templates nrog ib lub vaj huam sib luag nyob ua ntej yuav khoom.

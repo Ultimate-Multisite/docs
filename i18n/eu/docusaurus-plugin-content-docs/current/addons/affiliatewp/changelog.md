@@ -3,7 +3,7 @@ title: AffiliateWP aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP aldaketen erregistroa {#affiliatewp-changelog}
+# AffiliateWP aldaketen erregistroa
 
 Bertsioa: 2.0.1 - 2025-09-28an argitaratua
 

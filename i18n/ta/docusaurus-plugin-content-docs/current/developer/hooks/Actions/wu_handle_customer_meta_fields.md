@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Action: wu_handle_customer_meta_fields
 
 தேவைப்பட்டால், plugin உருவாக்குநர்கள் (developers) மெட்டா டேட்டாவை (meta data) வெவ்வேறு வழிகளில் சேமிக்க இது அனுமதிக்கிறது.
 

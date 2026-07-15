@@ -3,7 +3,7 @@ title: Manatoko i te Tauaro o te Papatae
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Whakamana i te Kanorau o te Papatae {#validate-palette-contrast}
+# Whakamana i te Kanorau o te Papatae
 
 Ka tirohia e te āheinga **Whakamana i te Kanorau o te Papatae** ngā takirua tae i tō papatae hoahoa mō te tautukunga ki te WCAG (Ngā Aratohu Urutanga Ihirangi Tukutuku) i mua i te hoatutanga ki tō kaupapa.
 

@@ -3,7 +3,7 @@ title: Tích hợp Bảng điều khiển Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Tích hợp Hestia Control Panel {#hestia-control-panel-integration}
+# Tích hợp Hestia Control Panel
 
 Hướng dẫn này giải thích cách cấu hình tích hợp Hestia trong Ultimate Multisite để các domain được ánh xạ trong mạng của bạn tự động được thêm (và xóa) dưới dạng Web Domain Alias trong Hestia.
 

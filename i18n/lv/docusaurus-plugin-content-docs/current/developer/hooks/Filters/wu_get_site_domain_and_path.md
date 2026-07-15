@@ -4,7 +4,7 @@ title: Filtrs - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# Filtrs: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# Filtrs: wu_get_site_domain_and_path
 
 Ļauj izstrādātājiem manipulēt ar domēna/ceļa pāriem.
 

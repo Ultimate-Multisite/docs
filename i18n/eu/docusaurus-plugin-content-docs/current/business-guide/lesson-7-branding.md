@@ -3,7 +3,7 @@ title: 'Lehena-lekurua: Itzultzea'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lehen 7: It Zure Itzu {#lesson-7-making-it-yours}
+# Lehen 7: It Zure Itzu
 
 Daukoak ez duzu, ir guzti erabiltzen ari den "WordPress plugin bat" bezala sentitzen ez dute. Hau FitSite bezala sentitzea da -- industria-ren bitartean itxaritzeko platorma bat. Hau lehenarenan brandinga, white-labeling (proprietarietako forma) eta platormak produktu bat bezala sentitzea gertatzen ditu.
 

@@ -3,7 +3,7 @@ title: સાર્વભૌમ ભાડૂત ઓપરેશન્સ
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# સાર્વભૌમ ટેน vibrant ઓપરેશન્સ (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# સાર્વભૌમ ટેน vibrant ઓપરેશન્સ (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 માં સાર્વભૌમ ટેน vibrant માટે ઓપરેશનલ ટૂલિંગ ઉમેરવામાં આવ્યું છે: એવા સાબસાઇટ્સ જે પોતાના ડેટાબેઝ, ફાઇલ સિસ્ટમ રૂટ અને રูટિંગ સંદર્ભ સાથે ચાલે છે, છતાં નેટવર્ક એડમિન દ્વારા દેખાય છે.
 

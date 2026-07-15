@@ -3,7 +3,7 @@ title: 'Loj 7: Tsim Hau Nta Qhov Zoo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lesson 7: Làm Cho Nó Trở Thành Của Bạn {#lesson-7-making-it-yours}
+# Lesson 7: Làm Cho Nó Trở Thành Của Bạn
 
 Khách hàng của bạn không bao giờ nên cảm thấy như họ đang dùng "một cái plugin WordPress nào đó." Họ nên cảm thấy như họ đang dùng FitSite -- một nền tảng được xây dựng riêng cho ngành nghề của họ. Bài học này sẽ nói về việc xây dựng thương hiệu (branding), white-labeling, và làm cho nền tảng này giống như một sản phẩm thực sự.
 

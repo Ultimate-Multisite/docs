@@ -3,7 +3,7 @@ title: WP-CLI tilvísun
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI tilvísun {#wp-cli-reference}
+# WP-CLI tilvísun
 
 Gratis AI Agent kemur með `wp gratis-ai-agent` skipanafjölskyldu til að keyra afkastapróf á agentinum, stjórna eiginleikum og sækja stöðu agentsins úr skipanalínu. Allar skipanir krefjast WP-CLI 2.0 eða nýrra.
 

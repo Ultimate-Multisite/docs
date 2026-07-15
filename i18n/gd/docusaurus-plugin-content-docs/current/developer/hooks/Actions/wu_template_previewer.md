@@ -4,7 +4,7 @@ title: Gnìomh - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Gnìomh: wu_template_previewer {#action-wutemplatepreviewer}
+# Gnìomh: wu_template_previewer
 
 Ruithidh seo nuair a tha thu taobh a-staigh co-theacsa ro-shealladair an teamplaid.
 

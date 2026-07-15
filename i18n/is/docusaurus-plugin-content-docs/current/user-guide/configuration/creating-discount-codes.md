@@ -3,7 +3,7 @@ title: Skráning viðskildi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Skráning Viðskiptaheimildar (v2) {#creating-discount-codes-v2}
+# Skráning Viðskiptaheimildar (v2)
 
 _**VIÐSKIPURLEIKN: Þessi grein er tengd Ultimate Multisite útgáfu 2.x.**_
 

@@ -4,7 +4,7 @@ title: ક્રિયા - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Action: wu_domain_created {#action-wudomaincreated}
+# Action: wu_domain_created
 
 જ્યારે કોઈ નવું ડોમેન મેપિંગ (domain mapping) ઉમેરવામાં આવે છે, ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

@@ -3,7 +3,7 @@ title: 로고 SVG 생성
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# 로고 SVG 생성 {#generate-logo-svg}
+# 로고 SVG 생성
 
 **로고 SVG 생성** 기능은 테마 빌더가 사용자 정의 로고 SVG를 워드프레스 사이트에 직접 생성하고 임베드할 수 있게 하며, 이 과정에서 네임스페이스 안전한 검증(sanitisation)을 자동으로 수행합니다.
 

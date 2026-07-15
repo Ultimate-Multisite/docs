@@ -3,7 +3,7 @@ title: D'Ufsetze vum Sunrise Constant uf Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# De Sunrise constant uf Closte u "true" setten {#setting-the-sunrise-constant-to-true-on-closte}
+# De Sunrise constant uf Closte u "true" setten
 
 Einigi Host-Provider sperre d `wp-config.php` us Sicherheitsgründ. Das heisst, dass Ultimate Multisite d Datei nöd automatisch bearbeite kann, um die nötige Konstante z'füege, damit Domain Mapping und anderi Funktione laufe. Closte isch so en Host.
 

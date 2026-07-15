@@ -3,7 +3,7 @@ title: Sunrise Filfe fejl
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fejl ved installation af Sunrise-filen {#error-installing-the-sunrise-file}
+# Fejl ved installation af Sunrise-filen
 
 `sunrise.php`-filen er en særlig fil, som WordPress leder efter under opstartsprocessen (bootstrapping). For at WordPress kan finde `sunrise.php`-filen, skal den være placeret inde i **wp-content mappen**.
 

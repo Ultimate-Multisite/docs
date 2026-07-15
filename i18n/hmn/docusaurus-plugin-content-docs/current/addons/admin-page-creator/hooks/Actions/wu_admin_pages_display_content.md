@@ -4,7 +4,7 @@ title: Kev ua - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Kev ua: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# Kev ua: wu_admin_pages_display_content
 
 Tso saib cov ntsiab lus hauv custom editor.
 

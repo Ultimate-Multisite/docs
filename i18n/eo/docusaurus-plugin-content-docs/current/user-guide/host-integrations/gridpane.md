@@ -3,7 +3,7 @@ title: Integrado de GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integra {#gridpane-integration}
+# GridPane Integra
 
 ## Überblick {#overview}
 GridPane estas specialigita WordPress host kontrolpanelo, konstruita por serios WordPress profesijoj. Ĉi tiu integraj permesas aŭtomatan domeno sincronigon kaj SSL-sertifikatoj manĝestion inter Ultimate Multisite kaj GridPane.

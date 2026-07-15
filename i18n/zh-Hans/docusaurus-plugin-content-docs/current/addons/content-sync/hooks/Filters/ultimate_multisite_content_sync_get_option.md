@@ -4,7 +4,7 @@ title: 过滤器 - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# 过滤器: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
+# 过滤器: ultimate_multisite_content_sync_get_option
 
 返回已slug化的网络选项值。
 

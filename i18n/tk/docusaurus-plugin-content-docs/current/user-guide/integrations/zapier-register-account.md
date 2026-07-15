@@ -3,7 +3,7 @@ title: Zapier arkaly hasaba ýazyň
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Zapier arkalyma goýular bilen hasaba goşmak {#event-register-an-account-via-zapier}
+# Event: Zapier arkalyma goýular bilen hasaba goşmak
 
 [Integrating Ultimate Multisite with Zapier](zapier.md) makatasinda biz Zapier-i ulanyp Ultimate Multisite içinde triggerlar we eventler esaslarynda dürli hereketleri nädip amala aşyrylmagyny gürrüň berdik. Bu makatda size 3-njy taraply programmalary nädip birleşdire biljekdigini görkezeli. Biz Google Sheets-i maglumat manbai hökmünde ulanyp, hasaba goşmak üçin bu maglumatlary Ultimate Multisite-a göndereýäris.
 

@@ -3,7 +3,7 @@ title: 'Sapak 10: Işe goýberiş güni'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Sapak 10: Işe goýberiş güni {#lesson-10-launch-day}
+# Sapak 10: Işe goýberiş güni
 
 Hemme zat guruldy. Gapylary açmazdan öň, bu sapak işe goýberişden öňki barlag sanawyndan geçip, hiç zadyň bozulan, kem ýa-da utandyryjy däldigine göz ýetirmäge kömek edýär.
 

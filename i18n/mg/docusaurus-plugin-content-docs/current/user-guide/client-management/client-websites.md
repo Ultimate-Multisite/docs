@@ -3,7 +3,7 @@ title: Webin'ny mpanjifa
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Ireo ny tranon'ny mpanjifa anareo (v2) {#your-clients-websites-v2}
+# Ireo ny tranon'ny mpanjifa anareo (v2)
 
 Rehefa nanao registration tao amin'ny tambajotra anareo ianao, dia afaka miditra ao amin'ny dashboard azy ireo ny mpanjifany.
 

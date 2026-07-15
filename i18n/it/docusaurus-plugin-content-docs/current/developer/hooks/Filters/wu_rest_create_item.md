@@ -4,7 +4,7 @@ title: Filtro - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Filtro: wu_rest_create_item {#filter-wurestcreateitem}
+# Filtro: wu_rest_create_item
 
 Filtra se è consentito procedere con la richiesta o meno.
 

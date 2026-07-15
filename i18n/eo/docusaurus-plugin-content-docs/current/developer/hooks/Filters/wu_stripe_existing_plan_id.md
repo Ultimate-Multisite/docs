@@ -4,7 +4,7 @@ title: Filtrilo - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filtro: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filtro: wu_stripe_existing_plan_id
 
 Filtras la ID de la plano por kontroli. Se ĉi tio ekzistas, la nova abono uzos ĉi tiun planon.
 

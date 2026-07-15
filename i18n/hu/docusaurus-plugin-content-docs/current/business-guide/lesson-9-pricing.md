@@ -3,7 +3,7 @@ title: '9. Tanlessonya: Árazás a profitért'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9. Bölöm: Árazás a Profitért {#lesson-9-pricing-for-profit}
+# 9. Bölöm: Árazás a Profitért
 
 A 5. bölségerben meghatároztuk a FitSite csomagok kezdeti árainak. Most finomítjuk az árazási stratégiát olyan technikákkal, amelyek növelik a bevételt, ösztönzik az emelkedést és csökkentik a „churn”-ot (elhasználódást).
 

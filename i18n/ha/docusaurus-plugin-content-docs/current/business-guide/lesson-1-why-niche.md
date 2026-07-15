@@ -3,7 +3,7 @@ title: 'Darasi na 1: Dalilin da ya sa takamaiman fanni ke yin nasara'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Darasi na 1: Me Ya Sa Niche Ke Nasara {#lesson-1-why-niche-wins}
+# Darasi na 1: Me Ya Sa Niche Ke Nasara
 
 Kafin mu taba kowace software, kana bukatar ka fahimci dalilin da ya sa ginawa don takamaiman masu sauraro shi ne shawara mafi muhimmanci da za ka yanke.
 

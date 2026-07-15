@@ -4,7 +4,7 @@ title: පෙරහන - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# පෙරහන: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# පෙරහන: wu_element_block_types_to_check
 
 අපට පසුව අමතර කොටස් එක් කිරීමට අවශ්‍ය විය හැක.
 

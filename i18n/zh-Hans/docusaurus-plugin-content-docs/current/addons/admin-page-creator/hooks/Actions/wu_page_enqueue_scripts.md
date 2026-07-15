@@ -4,7 +4,7 @@ title: 动作 - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# 操作：wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# 操作：wu_page_enqueue_scripts
 
 在这里添加自定义操作，以便我们有一个位置可以按需将脚本和样式加入队列\ 并确保它们只在正确的页面上加载
 

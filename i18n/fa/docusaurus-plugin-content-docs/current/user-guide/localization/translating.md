@@ -3,7 +3,7 @@ title: ترجمه Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ترجمه Ultimate Multisite {#translating-ultimate-multisite}
+# ترجمه Ultimate Multisite
 
 Ultimate Multisite به زبان انگلیسی توسعه یافته است، اما این افزونه کاملاً قابل ترجمه است و ما از مشارکت در ترجمه استقبال می‌کنیم.
 

@@ -4,7 +4,7 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
+# Filter: wu_current_\{$type\}_get_manage_url
 
 டெவலப்பர்கள் நிர்வாக தளத்தின் URL அளவுருக்களை மாற்றியமைக்க இது அனுமதிக்கிறது.
 

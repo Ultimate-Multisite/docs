@@ -3,7 +3,7 @@ title: Een abonnement opzeggen
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hoe kan ik mijn abonnement opzeggen? {#how-can-i-cancel-my-subscription}
+# Hoe kan ik mijn abonnement opzeggen?
 
 Als je een Ultimate Multisite-licentie hebt, kun je de verlenging ervan op elk gewenst moment annuleren. Volg gewoon de onderstaande stappen:
 

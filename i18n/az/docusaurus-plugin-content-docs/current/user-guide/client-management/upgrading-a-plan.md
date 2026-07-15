@@ -3,7 +3,7 @@ title: Planı Yüksəltmək
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Yüksəltmək (v2) {#upgrading-a-plan-v2}
+# Plan Yüksəltmək (v2)
 
 _**ƏHƏMİYYƏTLİ QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 

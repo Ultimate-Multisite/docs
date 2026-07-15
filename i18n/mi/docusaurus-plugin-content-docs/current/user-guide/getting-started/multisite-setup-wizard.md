@@ -3,7 +3,7 @@ title: Whakaaro Whakawāhi Whakamahi
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Whakaritenga Whakawhiti Multisite (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Whakaritenga Whakawhiti Multisite (Multisite Setup Wizard)
 
 Ko Ultimate Multisite e hihanga i tōna whakatau ana, he wizard (whakamahi) e whakamohahau ana i te whakamaoritanga o te WordPress standard ki te hoatu network WordPress Multisite. Ko te mea ko, ei āhua ana koe ki te whakarereke manuahi i `wp-config.php` ahau i te whaiaro, ahau i te whakimu database commands.
 

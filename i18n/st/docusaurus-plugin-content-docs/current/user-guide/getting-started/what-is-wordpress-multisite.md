@@ -3,7 +3,7 @@ title: Engoe le WordPress Multisite ke eng?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kae ke eng WordPress Multisite? {#what-is-wordpress-multisite}
+# Kae ke eng WordPress Multisite?
 
 WordPress Multisite ke eng? Ke na le tsela e fapaneng, le fetang ka ho ba le site mo mofuta oona. Ho ba le Multisite e bolela hore u ka le site mo mofuta oona oona, u ka le site oona oona le mofuta oona oona, le ho na le tsela e fapaneng ea ho ba le sebopeho (blog) kapa sebopeho sa liti.
 

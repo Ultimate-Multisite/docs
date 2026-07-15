@@ -4,7 +4,7 @@ title: 动作 - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# 动作: wu_captcha_before_field {#action-wucaptchabeforefield}
+# 动作: wu_captcha_before_field
 
 在验证码字段渲染之前触发。
 

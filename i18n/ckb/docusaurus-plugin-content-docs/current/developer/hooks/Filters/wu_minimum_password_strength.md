@@ -4,7 +4,7 @@ title: پاڵێوەر - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# فلتەر: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# فلتەر: wu_minimum_password_strength
 
 کەمترین هێزی وشەی نهێنیی پێویست فلتەر بکە (zxcvbn score).
 

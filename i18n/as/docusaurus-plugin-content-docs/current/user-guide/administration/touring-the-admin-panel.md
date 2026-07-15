@@ -3,7 +3,7 @@ title: Admin Panel পৰিভ্ৰমণ
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel ভ্ৰমণ {#touring-the-admin-panel}
+# Admin Panel ভ্ৰমণ
 
 Ultimate Multisite-ৰ লক্ষ্য হৈছে যিমান সম্ভৱ সৰল আৰু নিজে নিজে বুজিব পৰা হোৱা, কিন্তু ইমান শক্তিশালী এটা সঁজুলিৰ ক্ষেত্ৰত এটা নিৰ্দেশিত ভ্ৰমণে সহায় কৰিব পাৰে। আপোনাক পৰিচিত কৰাবলৈ admin পৃষ্ঠাসমূহৰ মাজেৰে আহক আগবাঢ়ো।
 

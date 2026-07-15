@@ -3,7 +3,7 @@ title: थीम बिल्डर क्षमता
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: Scaffold and Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Abilities: Scaffold and Activate Block Themes
 
 Superdav AI Agent v1.12.0 मध्ये दोन शक्तिशाली क्षमता (abilities) जोडल्या आहेत, ज्यामुळे तुम्ही थेट chat interface मधून custom block themes तयार करू शकता आणि ते तुमच्या साइटवर वापरू शकता.
 

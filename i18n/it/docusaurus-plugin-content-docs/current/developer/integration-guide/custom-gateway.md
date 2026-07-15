@@ -3,7 +3,7 @@ title: Sviluppo di gateway personalizzati
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Sviluppo di gateway personalizzati {#custom-gateway-development}
+# Sviluppo di gateway personalizzati
 
 Puoi creare gateway di pagamento personalizzati estendendo la classe `Base_Gateway`.
 

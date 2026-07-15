@@ -4,7 +4,7 @@ title: Ketso - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Ketso: wu_sso_loaded {#action-wussoloaded}
+# Ketso: wu_sso_loaded
 
 Lumella bahlahisi ba dikatoloso ho eketsa dihoko tse ding, ha ho hlokahala.
 

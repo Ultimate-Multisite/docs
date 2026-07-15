@@ -4,7 +4,7 @@ title: فلٽر - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# فلٽر: wu_setup_wizard {#filter-wusetupwizard}
+# فلٽر: wu_setup_wizard
 
 ڊولپرز کي اضافي setup wizard قدم شامل ڪرڻ جي اجازت ڏيو.
 

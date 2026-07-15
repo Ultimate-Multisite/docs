@@ -3,7 +3,7 @@ title: Entegrasyon Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Entegrasyon Cloudways {#cloudways-integration}
+# Entegrasyon Cloudways
 
 ## Aperçu {#overview}
 Cloudways separe yon platfòm wè hosting nan bulwa ki pèmèt ou deplwaye sit WordPress sou divès founisè bulwa tankou DigitalOcean, AWS, Google Cloud, e plis ankò. Entegrasyon sa a pèmèt senkronizasyon domèn otomatik ak jere sertifikat SSL ant Ultimate Multisite ak Cloudways la.

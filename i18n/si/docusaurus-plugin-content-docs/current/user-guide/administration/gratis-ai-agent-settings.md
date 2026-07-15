@@ -3,7 +3,7 @@ title: Gratis AI Agent සැකසුම්
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent සැකසුම් {#gratis-ai-agent-settings}
+# Gratis AI Agent සැකසුම්
 
 Gratis AI Agent තුළ ඇති **Settings → Advanced** තිරය, පසුපස ඒකාබද්ධ කිරීම් සඳහා පරිපාලක මට්ටමේ වින්‍යාසය සපයයි. මෙම පිටුව ප්‍රතිචාර ඉදිරියට යැවීම, සෙවුම් සපයන්නාගේ යතුරු, කළමනාකරණය කළ Superdav සේවා සැකසුම, Google Calendar පාලන, TextBee SMS සැකසුම්, සහ ජාලය පුරා ක්‍රියාත්මක විශේෂාංග සලකුණු ලේඛනගත කරයි.
 

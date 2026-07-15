@@ -3,7 +3,7 @@ title: Ukuphathwa kweRhafu
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ukuphathwa kweRhafu {#tax-handling}
+# Ukuphathwa kweRhafu
 
 Ultimate Multisite inemodyuli yokuqokelela irhafu eyakhelwe kwi-plugin yethu engundoqo, ngoko ukuba kufuneka uqokelele iirhafu zentengiso kwizicwangciso zakho, iipakethe kunye neenkonzo, ungakwenza oko ngokulula ngaphandle kokubhenela ekufakeni naziphi na ii-add-ons.
 

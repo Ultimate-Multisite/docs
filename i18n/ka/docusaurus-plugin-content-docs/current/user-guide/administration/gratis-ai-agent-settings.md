@@ -3,7 +3,7 @@ title: Gratis AI Agent პარამეტრები
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent-ის პარამეტრები {#gratis-ai-agent-settings}
+# Gratis AI Agent-ის პარამეტრები
 
 **პარამეტრები → გაფართოებული** ეკრანი Gratis AI Agent-ში უზრუნველყოფს ადმინისტრატორის დონის კონფიგურაციას backend ინტეგრაციებისთვის. ეს გვერდი აღწერს feedback-ის გადამისამართებას, ძიების პროვაიდერის გასაღებებს, მართულ Superdav სერვისის დაყენებას, Google Calendar-ის კონტროლებს, TextBee SMS პარამეტრებს და ქსელის მასშტაბით მოქმედ ფუნქციურ ალმებს.
 

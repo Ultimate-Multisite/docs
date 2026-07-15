@@ -3,7 +3,7 @@ title: GridPane integráció
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane integráció {#gridpane-integration}
+# GridPane integráció
 
 ## Áttekintés {#overview}
 A GridPane egy speciális WordPress hosting vezérlőpult, amelyet profi WordPress szakembereknek fejlesztettek. Ez az integráció automatikus domain szinkronizálást és SSL tanúsítvány kezelést tesz lehetővé az Ultimate Multisite és a GridPane között.

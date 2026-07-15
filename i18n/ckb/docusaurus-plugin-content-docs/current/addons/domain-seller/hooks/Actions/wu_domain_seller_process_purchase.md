@@ -4,7 +4,7 @@ title: کردار - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# کردار: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# کردار: wu_domain_seller_process_purchase
 
 کاتێک دەکەوێتە کار کە کڕینی دۆمەین پاش تەواوبوونی checkout پرۆسە دەکرێت.
 

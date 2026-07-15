@@ -4,7 +4,7 @@ title: फिल्टर - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# फिल्टर: wu_password_require_number {#filter-wupasswordrequirenumber}
+# फिल्टर: wu_password_require_number
 
 पासवर्डहरूमा अंकहरू आवश्यक पार्ने कि नपार्ने फिल्टर गर्नुहोस्।
 

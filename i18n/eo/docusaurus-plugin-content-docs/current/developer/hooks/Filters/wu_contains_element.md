@@ -4,7 +4,7 @@ title: Filtrilo - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filtro: wu_contains_element {#filter-wucontainselement}
+# Filtro: wu_contains_element
 
 Permesas al programistoj ŝanĝi la rezultojn de la komenca serĉo.
 

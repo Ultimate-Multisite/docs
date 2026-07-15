@@ -3,7 +3,7 @@ title: 'Nkuzi 7: Ime ka ọ bụrụ nke gị'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Nkuzi 7: Ime ka Ọ Bụrụ Nke Gị {#lesson-7-making-it-yours}
+# Nkuzi 7: Ime ka Ọ Bụrụ Nke Gị
 
 Ndị ahịa gị ekwesịghị ịna-eche na ha na-eji "otu WordPress plọgịn." Ha kwesịrị ịna-eche na ha na-eji FitSite -- ikpo okwu e wuru maka ụlọ ọrụ ha. Nkuzi a na-ekpuchi ịmepụta ika, ime ka ọ bụrụ white-label, na ime ka ikpo okwu ahụ dị ka ngwaahịa.
 

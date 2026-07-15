@@ -3,7 +3,7 @@ title: API Uç Noktasını Kaydet
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API endpoint
 
 Bu eğitimde, Ultimate Multisite /register API endpoint'ini kullanarak ağınızdaki yeni bir müşteri için tüm kayıt sürecini nasıl oluşturacağınızı ve bunu Zapier ile nasıl yapacağınızı öğreneceksiniz.
 

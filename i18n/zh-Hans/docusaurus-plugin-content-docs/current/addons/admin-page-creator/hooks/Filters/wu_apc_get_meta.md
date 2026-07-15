@@ -4,7 +4,7 @@ title: 过滤 - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# 过滤器: wu_apc_get_meta {#filter-wuapcgetmeta}
+# 过滤器: wu_apc_get_meta
 
 允许开发者过滤最终值，并添加新的处理案例。
 

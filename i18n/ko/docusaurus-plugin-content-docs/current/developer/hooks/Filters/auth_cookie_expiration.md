@@ -4,7 +4,7 @@ title: 필터 - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# 필터: auth_cookie_expiration {#filter-authcookieexpiration}
+# 필터: auth_cookie_expiration
 
 인증 쿠키 만료 기간을 필터링합니다.
 

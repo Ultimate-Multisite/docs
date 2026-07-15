@@ -3,7 +3,7 @@ title: Pag-expire ng Membership at Pagharang ng Site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Pag-expire ng Membership at Pagharang sa Site {#membership-expiration-and-site-blocking}
+# Pag-expire ng Membership at Pagharang sa Site
 
 Ipinaliliwanag ng gabay na ito kung paano hinahandle ng Ultimate Multisite ang pag-expire ng membership, pagtatapos ng trial, at pagharang sa site sa harap (frontend). Sakop nito ang buong siklo ng isang membership—mula sa aktibo hanggang sa expired—ang mga setting na kumokontrol kung haharangin ba ang mga site, at kung ano ang dapat tingnan kapag nananatiling accessible ang mga site kahit na expired na ang membership.
 

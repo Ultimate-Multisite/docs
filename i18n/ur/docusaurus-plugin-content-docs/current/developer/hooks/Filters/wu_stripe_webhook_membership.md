@@ -4,7 +4,7 @@ title: فلٹر - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# Filter: wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# Filter: wu_stripe_webhook_membership
 
 یہ فلٹر اس ویب ہک سے منسلک ممبرشپ ریکارڈ کو فلٹر کرتا ہے۔
 

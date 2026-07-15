@@ -4,7 +4,7 @@ title: 'Filter - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# 過濾器：wu_current_{$type}_get_manage_url {#filter-wucurrenttypegetmanageurl}
+# 過濾器：wu_current_{$type}_get_manage_url
 
 讓開發人員可以修改管理站點的 URL 參數。
 

@@ -3,7 +3,7 @@ title: Témaépítő Bevezetési Folyamata
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Beindítási Folyamata {#theme-builder-onboarding-flow}
+# Theme Builder Beindítási Folyamata
 
 A Superdav AI Agent v1.12.0 bevezet egy irányított **Theme Builder beindítási folyamatot**, amely segít Önnek létrehozni egy egyedi blokk témát az első beállítás során. Ez helyettesíti az elavult Site Builder módot egy rugalmasabb, agent-asszisztált megközelítéssel.
 

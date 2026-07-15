@@ -3,7 +3,7 @@ title: GoCardless-wysigingslogboek
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Veranderingslog {#gocardless-changelog}
+# GoCardless Veranderingslog
 
 Weergawe: 1.0.3 - Vrygestel op 2026-05-05
 * Regstelling: Verweesde hangende webwerwe word nou skoongemaak wanneer ’n GoCardless-lidmaatskap gekanselleer word terwyl dit in ’n hangende of opgehoue toestand is

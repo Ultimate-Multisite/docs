@@ -4,7 +4,7 @@ title: Acció - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Aquesta acció: wu_page_after_render {#action-wupageafterrender}
+# Aquesta acció: wu_page_after_render
 
 Permet als desenvolupadors de plugins afegir contingut addicional després que imprimim la pàgina.
 

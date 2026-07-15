@@ -3,7 +3,7 @@ title: תפריטי אירוח
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# תפריטי אירוח {#hospitality-menus}
+# תפריטי אירוח
 
 תכונת **תפריטי אירוח** מאפשרת ל-Theme Builder ליצור ולהטמיע דפי תפריט מובנים למזון ולמשקאות ישירות באתר ה-WordPress שלכם.
 

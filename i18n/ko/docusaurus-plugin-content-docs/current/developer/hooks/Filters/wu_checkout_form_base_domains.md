@@ -4,7 +4,7 @@ title: 필터 - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# 필터: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# 필터: wu_checkout_form_base_domains
 
 매핑된 도메인 레코드가 되면 안 되는 공유 체크아웃 양식 기본 도메인을 필터링합니다.
 

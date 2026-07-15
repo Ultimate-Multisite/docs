@@ -4,7 +4,7 @@ title: Фильтр - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Фильтр: retrieve_password_message {#filter-retrievepasswordmessage}
+# Фильтр: retrieve_password_message
 
 Серсүзне яңарту хатының хәбәр өлешен фильтрлый.
 

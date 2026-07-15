@@ -4,7 +4,7 @@ title: फिल्टर - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# फिल्टर: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# फिल्टर: wu_should_redirect_to_primary_domain
 
 विकासकर्ताहरूलाई पुनर्निर्देशन छोटो-सर्किट गर्न अनुमति दिन्छ, जसले यसलाई हुनबाट रोक्छ।
 

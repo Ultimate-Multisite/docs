@@ -3,7 +3,7 @@ title: WebLLM өчен Ultimate AI Connector үзгәрешләр журналы
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector өчен WebLLM үзгәрешләр журналы {#ultimate-ai-connector-for-webllm-changelog}
+# Ultimate AI Connector өчен WebLLM үзгәрешләр журналы
 
 ## Версия 1.1.0 — 2026-04-09 чыгарылды {#version-110--released-on-2026-04-09}
 

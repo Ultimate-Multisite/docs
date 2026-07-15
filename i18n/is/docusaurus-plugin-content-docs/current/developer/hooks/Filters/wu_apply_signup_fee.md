@@ -4,7 +4,7 @@ title: Sía - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Sía: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Sía: wu_apply_signup_fee
 
 Síar hvort skráningargjaldið eigi að vera lagt á eða ekki.
 

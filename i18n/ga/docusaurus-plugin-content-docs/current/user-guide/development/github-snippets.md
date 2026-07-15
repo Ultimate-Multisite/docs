@@ -3,7 +3,7 @@ title: Snippets GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Conas a bheith Snippets Ultimate Multisite ar na GitHub repository atá {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Conas a bheith Snippets Ultimate Multisite ar na GitHub repository atá
 
 Tá code snippets ar fáil ag an GitHub repository a bhfaidh uirlisítear Ultimate Multisite a bhíonn go leor acu, mar a bhfuil siad ag iarraidh a bheith ag cur isteach fáilíocht beag mar chomhscéal Google Analytics ar na peispáiste de chuid sign-up nó chun meta box a cheannach ó d'aon dashboard admin.
 
@@ -19,7 +19,7 @@ Tá 2 fáilteanna agat chun an code a chuid isteach:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Conas a chur an snippet ar do file functions.php de thiméid {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Conas a chur an snippet ar do file functions.php de thiméid
 
   1. Log in go cur isteach i bhfíneadh admin na WordPress Network agus raglan go Themes > Theme Editor (faoiardh an screenshot seo).
 

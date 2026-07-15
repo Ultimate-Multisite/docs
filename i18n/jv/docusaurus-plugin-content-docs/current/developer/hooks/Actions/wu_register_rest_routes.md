@@ -4,7 +4,7 @@ title: Aksi - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Tindakan: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Tindakan: wu_register_rest_routes
 
 Ngidini rute tambahan kanggo didaftar.
 

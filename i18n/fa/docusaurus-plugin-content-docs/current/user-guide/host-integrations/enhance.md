@@ -3,7 +3,7 @@ title: تقویت یکپارچه‌سازی پنل کنترل
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# یکپارچه‌سازی با کنترل پنل Enhance {#enhance-control-panel-integration}
+# یکپارچه‌سازی با کنترل پنل Enhance
 
 ## نمای کلی {#overview}
 Enhance یک کنترل پنل مدرن است که قابلیت‌های قدرتمندی برای اتوماسیون و مدیریت هاست ارائه می‌دهد. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و کنترل پنل Enhance فراهم می‌کند.

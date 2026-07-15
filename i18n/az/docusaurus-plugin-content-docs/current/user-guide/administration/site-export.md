@@ -3,7 +3,7 @@ title: Sayt Eksportu
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sayt İxracı {#site-export}
+# Sayt İxracı
 
 **Site Export** (Sayt İxracı) admin səhifəsi şəbəkə administratorlarına bir saytı və ya bütün şəbəkəni köçürmə, ehtiyat nüsxə alma və ya təhvil vermə üçün yüklənə bilən bir arxivi hazırlama imkanı verir.
 

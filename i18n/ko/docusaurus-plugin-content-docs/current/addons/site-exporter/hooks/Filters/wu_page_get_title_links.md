@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 플러그인 개발자와 우리 자신이 편집 페이지에 작업 링크를 추가할 수 있도록 허용합니다.
 

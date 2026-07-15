@@ -4,7 +4,7 @@ title: Bộ lọc - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Bộ lọc: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Bộ lọc: wu_checkout_validation_aliases
 
 Cho phép các nhà phát triển plugin thêm các bí danh (aliases) tùy chỉnh vào trình xác thực form.
 

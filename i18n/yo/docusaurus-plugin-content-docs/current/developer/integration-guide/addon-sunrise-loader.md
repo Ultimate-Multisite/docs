@@ -3,7 +3,7 @@ title: Olùrù Faili Sunrise Àfikún
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Olùkó Faili Sunrise fún Addon {#addon-sunrise-file-loader}
+# Olùkó Faili Sunrise fún Addon
 
 Ultimate Multisite 2.8.0 ṣàfikún olùkó ìmúgbòòrò sunrise fún àwọn àfikún àti àwọn ìṣepọ̀ MU-plugin àdáni tí ó nílò láti ṣiṣẹ́ nígbà ìbẹ̀rẹ̀ sunrise WordPress láì ṣàtúnṣe faili `wp-content/sunrise.php` tí a ṣẹ̀dá.
 

@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# କାର୍ଯ୍ୟ: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# କାର୍ଯ୍ୟ: wu_page_enqueue_scripts
 
 ଏଠାରେ ଏକ କଷ୍ଟମ୍ କାର୍ଯ୍ୟ ଯୋଡ଼ାଯାଉଛି, ଯାହାଦ୍ୱାରା ଆବଶ୍ୟକ ଅନୁସାରେ scripts ଓ styles ଏନକ୍ୟୁ କରିବାକୁ ଏକ ସ୍ଥାନ ରହିବ\ ଏବଂ ସେଗୁଡ଼ିକ କେବଳ ଠିକ୍ ପୃଷ୍ଠାଗୁଡ଼ିକରେ ଲୋଡ୍ ହେବା ନିଶ୍ଚିତ ହେବ
 

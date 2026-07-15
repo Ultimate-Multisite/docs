@@ -3,7 +3,7 @@ title: Productes i preus de domini
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Productes de Domini i Preus {#domain-products-and-pricing}
+# Productes de Domini i Preus
 
 Els productes de domini són el mètode per controlar els preus, els TLDs, la privadesa WHOIS i la selecció de proveïdors. Cada producte de domini és un producte estàndard de Ultimate Multisite amb una pestanya addicional anomenada **Domain Settings**.
 

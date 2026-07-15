@@ -3,7 +3,7 @@ title: '6-dars: Ro‘yxatdan o‘tish tajribasi'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 6-dars: Ro‘yxatdan o‘tish tajribasi {#lesson-6-the-signup-experience}
+# 6-dars: Ro‘yxatdan o‘tish tajribasi
 
 Buyurtmani rasmiylashtirish jarayoni qiziqishni daromadga aylantiradigan joydir. Tushunarsiz yoki umumiy ro‘yxatdan o‘tish jarayoni mijozlarni yo‘qotadi. Ularning tilida gapiradigan va oson tuyuladigan nichega xos jarayon esa ularni mijozga aylantiradi.
 

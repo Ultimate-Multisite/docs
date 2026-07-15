@@ -4,7 +4,7 @@ title: 動作 - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Action: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Action: wu_mt_user_password_changed
 
 當使用者更改密碼時會觸發此動作。
 

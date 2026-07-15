@@ -4,7 +4,7 @@ title: Filter - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filter: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Filter: wu_billing_address_fields
 
 பிளக்இன் உருவாக்குநர்கள் பில்லிங் முகவரி புலங்களை (billing address fields) வடிகட்ட அனுமதிக்கிறது.
 

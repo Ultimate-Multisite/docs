@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filter: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Filter: wu_billing_address_fields
 
 ಪ್ಲಗ್ಇನ್ developers-ಗಳು ಬಿಲ್ಲಿಂಗ್ ವಿಳಾಸದ ಫೀಲ್ಡ್‌ಗಳನ್ನು ಫಿಲ್ಟರ್ ಮಾಡಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

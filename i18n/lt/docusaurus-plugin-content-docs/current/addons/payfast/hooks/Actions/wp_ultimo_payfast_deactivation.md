@@ -4,7 +4,7 @@ title: Veiksmas - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# Veiksmas: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# Veiksmas: wp_ultimo_payfast_deactivation
 
 Leiskite kitoms plugin dalims pridėti savo deaktyvavimo procedūras
 

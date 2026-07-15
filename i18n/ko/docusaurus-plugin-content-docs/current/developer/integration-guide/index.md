@@ -3,7 +3,7 @@ title: 통합 가이드
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 통합 가이드 {#integration-guide}
+# 통합 가이드
 
 이 가이드는 외부 서비스 연결, 사용자 지정 결제 게이트웨이 구축, 웹훅 처리 등 Ultimate Multisite와의 일반적인 통합 패턴을 다룹니다.
 

@@ -3,7 +3,7 @@ title: Vypršení členství a blokování stránky
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expirace členství a blokování webu {#membership-expiration-and-site-blocking}
+# Expirace členství a blokování webu
 
 Tento průvodce vysvětluje, jak Ultimate Multisite zpracovává expiraci členství, ukončení zkušebních období a blokování webu na frontendu. Pokrývá životní cyklus členství od aktivního stavu po expiraci, nastavení, která určují, zda jsou weby blokovány, a co zkontrolovat, pokud zůstanou weby dostupné i po expiraci členství.
 

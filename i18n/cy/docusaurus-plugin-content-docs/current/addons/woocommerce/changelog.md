@@ -3,7 +3,7 @@ title: Cofnod newidiadau Integreiddio WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Cofnod Newidiadau Integreiddiad WooCommerce {#woocommerce-integration-changelog}
+# Cofnod Newidiadau Integreiddiad WooCommerce
 
 Fersiwn 2.2.0 - Rhyddhawyd ar 2026-07-01
 * Newydd: Mae symiau treth Ultimate Multisite bellach yn ymddangos fel llinellau ffi WooCommerce ar wahân wrth checkout, gan wneud cyfansymiau treth yn gliriach cyn talu.

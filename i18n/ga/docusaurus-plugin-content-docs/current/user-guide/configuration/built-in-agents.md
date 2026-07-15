@@ -3,7 +3,7 @@ title: Gníomhairí ionsuite
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Gníomhairí Ionsuite {#built-in-agents}
+# Gníomhairí Ionsuite
 
 Tagann Gratis AI Agent v1.9.0 le cúig ghníomhaire ionsuite, gach ceann acu réamhchumraithe le tacar dírithe uirlisí, leid chórais saincheaptha, agus moltaí tosaigh atá meaitseáilte le tascanna coitianta sa réimse sin. Nuair a aistrítear idir gníomhairí, athraíonn sé an méid is féidir leis an gcúntóir a dhéanamh agus an chaoi a bhfreagraíonn sé — gan aon chumraíocht uaitse. Is féidir le Superdav AI Agent v1.18.0 uirlisí atá feasach ar sceideal, taifid mheabhrúcháin, geataí ceadaithe, agus fógraí SMS a chur leis na sreafaí oibre seo nuair atá na comhtháthuithe gaolmhara cumraithe.
 

@@ -3,7 +3,7 @@ title: הבנת לוח הבקרה
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# הבנת לוח הבקרה של Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# הבנת לוח הבקרה של Ultimate Multisite
 
 לפני שנצלול לאפשרויות הגדרה מתקדמות יותר ולהיבטים התפעוליים של Ultimate Multisite, בואו נסתכל על לוח הבקרה.
 

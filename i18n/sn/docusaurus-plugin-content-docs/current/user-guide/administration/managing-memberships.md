@@ -3,7 +3,7 @@ title: Kugadzira Mabhukuya
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Kurudzera Kufamba neMembenship (Managing Memberships) {#managing-memberships}
+# Kurudzera Kufamba neMembenship (Managing Memberships)
 
 Mu Ultimate Multisite, unogona ukubata nekuvaka nekuvaka izinhlelo zokubhalisa (memberships) nezokubhalisa zonke izinkosi (subscriptions) ezinekhaya yakho. Ungava kuva nekuva nekuva zvitendelero zezi membership, zvichiri kutaura zvinhu zvakaita plans uye products, kunge kuita nani dzimwe sites, kunge kuita nani kwemashure ekubhalisa (billing amount) uye nguva dzinogona kutamba (frequency), nzira yakazara ye-payment history, uye timestamps.
 

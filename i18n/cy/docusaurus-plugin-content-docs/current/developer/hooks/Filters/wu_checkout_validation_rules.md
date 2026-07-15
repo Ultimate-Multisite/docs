@@ -4,7 +4,7 @@ title: Hidlydd - wu_checkout_validation_rules
 sidebar_label: wu_checkout_validation_rules
 _i18n_hash: 7b765499f6f7d4b9b5337981302e2331
 ---
-# Hidlydd: wu_checkout_validation_rules {#filter-wucheckoutvalidationrules}
+# Hidlydd: wu_checkout_validation_rules
 
 Caniatáu i ddatblygwyr plugin hidlo'r rheolau dilysu.
 

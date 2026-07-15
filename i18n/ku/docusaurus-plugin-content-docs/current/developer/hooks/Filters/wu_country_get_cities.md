@@ -4,7 +4,7 @@ title: Fîltre - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Parzûn: wu_country_get_cities {#filter-wucountrygetcities}
+# Parzûn: wu_country_get_cities
 
 Lîsteya bajaran ji bo dewletekê li welatekî vedigerîne.
 

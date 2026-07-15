@@ -3,7 +3,7 @@ title: Puna ng Kustomer at Pag-uulat ng Isyu
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Pagbibigay ng Feedback at Pag-uulat ng Problema {#customer-feedback--issue-reporting}
+# Pagbibigay ng Feedback at Pag-uulat ng Problema
 
 Nagpapakilala ang Gratis AI Agent v1.5.0 ng isang built-in na sistema para sa pagbibigay ng feedback at pag-uulat ng problema. Pinapayagan nito ang mga end-user na markahan ang mga sagot na hindi nakakatulong at mag-ulat ng mga problema nang direkta mula sa chat interface. Kasama sa sistemang ito ang consent management, isang automated reporting command, at AI-assisted triage sa backend.
 

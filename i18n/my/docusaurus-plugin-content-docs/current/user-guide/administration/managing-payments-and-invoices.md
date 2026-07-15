@@ -3,7 +3,7 @@ title: ငွေပေးချေမှုများနှင့် ငွေ
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ငွေပေးချေမှုများနှင့် Invoice များကို စီမံခန့်ခွဲခြင်း {#managing-payments-and-invoices}
+# ငွေပေးချေမှုများနှင့် Invoice များကို စီမံခန့်ခွဲခြင်း
 
 ## ငွေပေးချေမှု ဆက်တင်များ {#payment-settings}
 

@@ -4,7 +4,7 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Szűrő: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Szűrő: wu_element_maybe_extract_arguments
 
 Hozzáad egy általános szűrőt, amely lehetővé teszi a fejlesztők számára, hogy kiterjesítsék ezt a parser-t további builder-ekre vagy plugin-ekre.
 

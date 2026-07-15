@@ -4,7 +4,7 @@ title: Saringan - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Filter: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Filter: wu_wp_config_reference_hook_line_patterns
 
 Aku mriksa telung pola nalika nyoba nemtokake ing ngendi aku bisa nyisipake konstanta:
 

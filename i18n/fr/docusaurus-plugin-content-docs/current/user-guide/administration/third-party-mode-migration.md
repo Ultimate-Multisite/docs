@@ -3,7 +3,7 @@ title: Migration en mode tiers
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration en mode tiers {#third-party-mode-migration}
+# Migration en mode tiers
 
 Superdav AI Agent v1.12.0 modifie la manière dont les capacités tierces sont gérées. **Le mode tiers est désormais réglé par défaut sur « auto »**, ce qui permet une intégration native de l'API Abilities de WordPress sur WordPress 7.0+ sans configuration manuelle.
 

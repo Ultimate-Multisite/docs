@@ -4,7 +4,7 @@ title: Filtër - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filtri: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filtri: wu_enforce_password_rules
 
 Filtron nëse duhen zbatuar rregulla shtesë për fjalëkalimin.
 

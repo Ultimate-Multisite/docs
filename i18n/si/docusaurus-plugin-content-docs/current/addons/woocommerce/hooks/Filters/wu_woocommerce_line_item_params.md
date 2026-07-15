@@ -4,7 +4,7 @@ title: පෙරහන - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 පාරිභෝගිකයා WooCommerce checkout වෙත යොමු කිරීමට පෙර, WooCommerce Cart මත line items සාදීමට භාවිතා වන parameters පෙරන්න.
 

@@ -3,7 +3,7 @@ title: סקירת לוח הבקרה
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# סקירת לוח הבקרה {#dashboard-overview}
+# סקירת לוח הבקרה
 
 ל-Ultimate Multisite יש **לוח בקרה** ייעודי בתפריט של Ultimate Multisite, והוא גם מוסיף ווידג'טים ללוח הבקרה של הרשת. מאמר זה מסביר מה תראו בשני המקומות.
 

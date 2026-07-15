@@ -3,7 +3,7 @@ title: Prezentare generală tablou de bord
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Prezentare generală a Dashboard-ului {#dashboard-overview}
+# Prezentare generală a Dashboard-ului
 
 Ultimate Multisite are un **Dashboard** dedicat în meniul Ultimate Multisite și adaugă, de asemenea, widget-uri în Dashboard-ul de Rețea. Acest articol acoperă ce vei vedea în ambele locuri.
 

@@ -3,7 +3,7 @@ title: Verbeter Kontrolepaneel-integrasie
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Verbeter Beheerdashboard-Integrasie {#enhance-control-panel-integration}
+# Verbeter Beheerdashboard-Integrasie
 
 ## Oorsig {#overview}
 Enhance is 'n moderne beheerdashboard wat kragtige hosting-automatisering en bestuursvermoë beskik. Hierdie integrasie maak outomatiese domein-sinkronisering en SSL-sertifikaatbestuur moontlik tussen Ultimate Multisite en Enhance Control Panel.

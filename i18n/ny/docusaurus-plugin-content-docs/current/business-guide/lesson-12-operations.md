@@ -3,7 +3,7 @@ title: 'Phunziro 12: Kuyendetsa Bizinesi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Phunziro 12: Kuyendetsa Bizinesi {#lesson-12-running-the-business}
+# Phunziro 12: Kuyendetsa Bizinesi
 
 Nsanja si ntchito yomwe mumamaliza -- ndi bizinesi yomwe mumayendetsa. Phunziro ili limafotokoza ntchito za tsiku ndi tsiku poyang'anira FitSite: thandizo, kulipiritsa, kukonza, ndi kusunga makasitomala ali osangalala.
 

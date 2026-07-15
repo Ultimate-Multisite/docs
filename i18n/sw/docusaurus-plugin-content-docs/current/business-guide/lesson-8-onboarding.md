@@ -3,7 +3,7 @@ title: 'Somo la 8: Uhamisho wa Mteja'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Somo la 8: Kuandaa Mtumiaji Mpya (Customer Onboarding) {#lesson-8-customer-onboarding}
+# Somo la 8: Kuandaa Mtumiaji Mpya (Customer Onboarding)
 
 Kumfanya mteja ajisajili ni nusu tu ya kazi. Ikiwa atapumzika (log in), ajihisi kuzidiwa, na kisha hatarudi tena, umempoteza. Somo hili linounda uzoefu ambao hubadilisha usajili mpya kuwa mteja anayefanya kazi na anayehusika.
 

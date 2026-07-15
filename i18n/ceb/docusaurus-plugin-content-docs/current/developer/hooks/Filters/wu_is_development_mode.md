@@ -4,7 +4,7 @@ title: Pansala - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Pagsala: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Pagsala: wu_is_development_mode
 
 Tugoti ang mga tigpalambo og dugangon sa pagdugang og dugang nga mga pagsulay alang sa mode sa pagpalambo.
 

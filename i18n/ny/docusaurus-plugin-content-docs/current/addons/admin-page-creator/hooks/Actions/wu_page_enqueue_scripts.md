@@ -4,7 +4,7 @@ title: Chochita - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Zochita: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Zochita: wu_page_enqueue_scripts
 
 Kuwonjezera zochita zosinthidwa pano kuti tikhale ndi malo oyika scripts ndi styles pakafunika\ ndiponso kuonetsetsa kuti zimangolowetsedwa pamasamba oyenera
 

@@ -3,7 +3,7 @@ title: Sovereign migracijos patikrinimas
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migracijos patikra {#sovereign-migration-verification}
+# Sovereign Migracijos patikra
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 įdalo WP-CLI patikrinimo komandos yra naudojami su suverenu įdalo migracijomis. Naudokite juos, jei įdalo migracija, SSO vizitas arba izoliuotas instalacija ne veikia kaip tikėtina.
 

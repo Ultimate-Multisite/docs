@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Kiunganishi cha AI Kamili kwa Endpoints Zinazolin
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Historia ya Mabadiliko ya Ultimate AI Connector kwa Endpoints Zinazolingana {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Historia ya Mabadiliko ya Ultimate AI Connector kwa Endpoints Zinazolingana
 
 ## Toleo 2.0.0 — Ili kutolewa tarehe 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Ukuhlanganiswa kwe-Closte {#closte-integration}
+# Ukuhlanganiswa kwe-Closte
 
 ## Ukubuka konke {#overview}
 I-Closte iyinkundla yokusingatha ye-WordPress ephethwe, eyakhiwe kungqalasizinda ye-Google Cloud. Lokhu kuhlanganiswa kuvumela ukuvumelanisa okuzenzakalelayo kwezizinda nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-Closte.

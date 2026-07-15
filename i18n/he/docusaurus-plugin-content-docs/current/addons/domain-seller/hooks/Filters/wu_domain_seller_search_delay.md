@@ -4,7 +4,7 @@ title: פילטר - wu_domain_seller_search_delay
 sidebar_label: wu_domain_seller_search_delay
 _i18n_hash: b0871b15059808a847875636d151245f
 ---
-# מסנן: wu_domain_seller_search_delay {#filter-wudomainsellersearchdelay}
+# מסנן: wu_domain_seller_search_delay
 
 מסנן את זמן ההשהיה (debounce delay) של חיפוש הדומיין, ביחידות של מילישניות.
 

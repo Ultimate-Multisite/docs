@@ -3,7 +3,7 @@ title: Baza konceptoj
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Baze Konceptoj {#basic-concepts}
+# Baze Konceptoj
 
 Por novaj WordPress Multisite utilizanto kaj iu, kiu just komencas uzi Ultimate Multisite, povas esti multaj novaj vortoj kaj frazoj por akcepti en la tempe. Esti lernant ilin estas grava tarea ĉar vi bezonas kompreni la platformon kaj kiel ĝi funkcias kiel totala sistema.
 

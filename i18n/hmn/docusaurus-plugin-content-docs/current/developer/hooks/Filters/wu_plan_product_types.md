@@ -4,7 +4,7 @@ title: Lim - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Lim: wu_plan_product_types {#filter-wuplanproducttypes}
+# Lim: wu_plan_product_types
 
 Lim cov hom khoom uas yuav tsum raug saib ua plan.
 

@@ -3,7 +3,7 @@ title: Isdhaafidda GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Isku-dhaafinta GridPane {#gridpane-integration}
+# Isku-dhaafinta GridPane
 
 ## Aragtida {#overview}
 GridPane waa dashboard gaar ah oo loogu talagalay xog-soo-saarka WordPress ee miisaaniyadda badan. Isku-dhaafintani waxay kuu oggolaanaysaa isku-dubbaridda domain-ka iyo maamulka shahaadada SSL-ka (SSL certificate management) inta badan ka dhexe oo u dhexeeya Ultimate Multisite iyo GridPane.

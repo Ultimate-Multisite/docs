@@ -3,7 +3,7 @@ title: Çoklu Kiracılık İzolasyonu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# چەندین دامنه ای مجزا بودن (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# چەندین دامنه ای مجزا بودن (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 حالا برای خودمختار مشتریان (sovereign tenants) هم دیتابیس و فایل سیستم جداگانه فراهم می‌کنه. این کار باعث میشه داده‌های هر مشتری از هم جدا باشن، در حالی که تنظیمات شبکه، صورت‌حساب و مدیریت همچنان به صورت یکپارچه باقی بمونه.
 

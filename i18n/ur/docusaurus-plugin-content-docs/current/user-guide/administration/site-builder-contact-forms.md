@@ -3,7 +3,7 @@ title: ساٹ بلڈر کانٹیکٹ فارمز
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Contact Forms {#site-builder-contact-forms}
+# Site Builder Contact Forms
 
 Superdav AI Agent v1.10.0 Site Builder agent کا استعمال کرتے ہوئے چیٹ انٹرفیس سے براہ راست رابطہ فارم بنانے کی صلاحیت شامل کرتا ہے۔ اس سے آپ کو چیٹ سے باہر نکلے بغیر کسی بھی پیج پر مکمل طور پر فعال رابطہ فارم شامل کرنے کی سہولت ملتی ہے۔
 

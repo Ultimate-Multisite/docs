@@ -3,7 +3,7 @@ title: RunCloud സംയോജനം
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## അവലോകനം {#overview}
 RunCloud ഒരു cloud-based server management platform ആണ്, ഇത് നിങ്ങളുടെ സ്വന്തം cloud servers-ൽ web applications എളുപ്പത്തിൽ deploy ചെയ്യാനും manage ചെയ്യാനും സഹായിക്കുന്നു. ഈ integration Ultimate Multisite-ഉം RunCloud-ഉം തമ്മിൽ automatic domain syncing-ഉം SSL certificate management-ഉം സാധ്യമാക്കുന്നു.

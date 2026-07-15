@@ -3,7 +3,7 @@ title: 'Pangajaran 3: Nyetél Jaringan Anjeun'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Pangajaran 3: Nyetél Jaringan Anjeun {#lesson-3-setting-up-your-network}
+# Pangajaran 3: Nyetél Jaringan Anjeun
 
 Waktuna ngawangun. Dina pangajaran ieu anjeun bakal masang Ultimate Multisite jeung ngonpigurasikeun pondasi jaringan FitSite. Unggal kaputusan di dieu dijieun kalayan ngémutan ceruk kabugaran.
 

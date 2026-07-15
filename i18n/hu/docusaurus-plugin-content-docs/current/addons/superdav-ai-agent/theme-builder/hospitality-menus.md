@@ -3,7 +3,7 @@ title: Vendéglátó Menüpontok
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Étteremmenük {#hospitality-menus}
+# Étteremmenük
 
 A **Hospitality Menus** funkciója lehetővé teszi a Theme Builder számára, hogy strukturált élelmiszer- és italmenüoldalakat generáljon és beépítsen közvetlenül a WordPress weboldalára.
 

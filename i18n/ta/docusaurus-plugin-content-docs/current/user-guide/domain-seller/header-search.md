@@ -3,7 +3,7 @@ title: தலைப்பு டொமைன் தேடல்
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Ultimate Multisite checkout-இல் கிடைக்கும் domain-களில் இருந்து வாடிக்கையாளர் தேர்வு செய்யும் வகையில், domain தேடலைத் தொடங்கும் சிறிய header படிவம் வேண்டும்போது இந்த அமைப்பைப் பயன்படுத்தவும்.
 

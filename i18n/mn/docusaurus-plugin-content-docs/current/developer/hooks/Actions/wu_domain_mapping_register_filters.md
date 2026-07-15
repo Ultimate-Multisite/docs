@@ -4,7 +4,7 @@ title: Үйлдэл - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Зарим plugin-ууд mapping идэвхтэй болохоос өмнө URL-г хадгалах эсвэл дээрх filters-д ороогүй өөр аргаар URLs үүсгэх болно.
 

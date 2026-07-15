@@ -4,7 +4,7 @@ title: 필터 - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# 필터: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# 필터: wu_checkout_validation_aliases
 
 플러그인 개발자가 폼 검증기에서 사용자 정의 별칭을 추가할 수 있도록 허용합니다.
 

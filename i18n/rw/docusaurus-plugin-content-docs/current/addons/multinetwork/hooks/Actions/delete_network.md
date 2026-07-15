@@ -4,7 +4,7 @@ title: Igikorwa - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Igikorwa: delete_network {#action-deletenetwork}
+# Igikorwa: delete_network
 
 Gikora nyuma y’uko network isibwe.
 

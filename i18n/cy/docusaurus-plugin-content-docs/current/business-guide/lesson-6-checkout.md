@@ -3,7 +3,7 @@ title: 'Dysgu 6: Y ffurf cyfrannu'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leses 6: Y Bysbysu (The Signup Experience) {#lesson-6-the-signup-experience}
+# Leses 6: Y Bysbysu (The Signup Experience)
 
 Mae'r ffordd cheddau yw lle mae cyfwriant yn dod i ffurfau. Mae proses cyfrifol neu amrywiol o ddefnyddio yn colli cleiention. Ffordd penodol i'r nichw sy'n siarad eu iaith ac mae'n teimlo fel rhywbeth hanfodol yn cael eu cyflwyno yn cael eu cyfathogh.
 

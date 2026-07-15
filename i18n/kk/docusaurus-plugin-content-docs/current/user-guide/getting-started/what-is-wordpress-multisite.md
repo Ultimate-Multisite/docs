@@ -3,7 +3,7 @@ title: WordPress Multisite дегеніміз не?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite дегеніміз не? {#what-is-wordpress-multisite}
+# WordPress Multisite дегеніміз не?
 
 WordPress-тің негізінде 2010 жылы WordPress 3.0 іске қосылған кезде бастау алған «Multisite» деп аталатын мүмкіндік бар. Сол кенден бері ол жаңа мүмкіндіктерді енгізу және қауіпсіздікті күшейту мақсатында бірнеше рет өзгертілген.
 

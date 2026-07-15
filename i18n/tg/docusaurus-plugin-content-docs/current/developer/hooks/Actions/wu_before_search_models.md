@@ -4,7 +4,7 @@ title: Амал - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Амал: wu_before_search_models {#action-wubeforesearchmodels}
+# Амал: wu_before_search_models
 
 Пеш аз коркарди дархости ҷустуҷӯ фаъол мешавад.
 

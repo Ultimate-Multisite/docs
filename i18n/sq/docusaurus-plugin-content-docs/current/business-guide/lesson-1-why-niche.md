@@ -3,7 +3,7 @@ title: 'Mësimi 1: Pse fiton nisha'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Mësimi 1: Pse Niche fiton {#lesson-1-why-niche-wins}
+# Mësimi 1: Pse Niche fiton
 
 Para se të prekim çfarëdo software, duhet të kuptoni pse ndërtimi për një audiencë specifike është vendimi i vetëm më i rëndësishëm që do të merrni.
 

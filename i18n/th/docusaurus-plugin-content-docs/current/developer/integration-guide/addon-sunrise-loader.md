@@ -3,7 +3,7 @@ title: ส่วนเสริม Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 ได้เพิ่มตัวโหลดไฟล์ sunrise สำหรับส่วนเสริม (add-ons) และการผสานรวมแบบกำหนดเอง (custom MU-plugin integrations) ที่จำเป็นต้องทำงานในช่วงเริ่มต้นระบบ (bootstrapping) ของ WordPress โดยไม่จำเป็นต้องแก้ไขไฟล์ `wp-content/sunrise.php` ที่ถูกสร้างขึ้นมา
 

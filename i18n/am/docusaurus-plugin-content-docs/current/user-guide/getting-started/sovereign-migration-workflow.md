@@ -3,7 +3,7 @@ title: የሉዓላዊነት ማሻሻያ ፍሰት
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# souverain Migration Workflow {#sovereign-migration-workflow}
+# souverain Migration Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ஆனது ஒரு நிலையான துணைதளத்தை (standard subsite) இறையாண்மை வாடிக்கையாளர் கட்டமைப்பிற்கு (sovereign tenant infrastructure) மாற்றுவதற்கான இடம்பெயர்வு சரிபார்ப்பு வாயில்களைச் (migration verification gates) சேர்க்கிறது.
 

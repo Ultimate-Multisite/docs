@@ -3,7 +3,7 @@ title: 驗證碼變更日誌
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha 更新日誌 {#captcha-changelog}
+# Captcha 更新日誌
 
 版本：1.5.0 - 發布日期：2026-05-22
 * 新增：硬性停止速率限制器（Hard-stop rate limiter）— 計算所有受 Captcha 保護頁面（wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login）上的 GET 和 POST 請求，並回傳 HTTP 429 錯誤、`Retry-After` 標頭，以及隨機的延遲休眠時間（tarpit sleep，範圍為 1–5 秒，最高限制為 15 秒）。

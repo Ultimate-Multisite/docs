@@ -3,7 +3,7 @@ title: AffiliateWP Commentarius mutationum
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Index mutationum {#affiliatewp-changelog}
+# AffiliateWP Index mutationum
 
 Versio: 2.0.1 - Edita die 2025-09-28
 

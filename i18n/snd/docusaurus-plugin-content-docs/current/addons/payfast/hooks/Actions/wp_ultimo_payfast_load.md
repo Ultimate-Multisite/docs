@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# عمل: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# عمل: wp_ultimo_payfast_load
 
 جڏهن سڀ لاڳاپا لوڊ ٿي وڃن تڏهن هلندو آهي
 

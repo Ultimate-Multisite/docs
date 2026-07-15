@@ -3,7 +3,7 @@ title: Whakawhanaungatanga o te mea whai whakaaro i te mea whai pētranga
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Te Whakarongo o Ngā mea Whakamahi me Ngā Pānga {#customer-feedback--issue-reporting}
+# Te Whakarongo o Ngā mea Whakamahi me Ngā Pānga
 
 Ko Gratis AI Agent v1.5.0 e whakauru ahau i te system whakamahi me ngā pānga (feedback and issue reporting) ki te chat, i te hoki mai i ngā end-user. E kitea i tēnei system te whai whakaae mō te whakamahi, he command whakamārama mō te pūtaiao, me te triage (whakamārama/whakawhiti) e whakamahia ai te AI i te pō.
 

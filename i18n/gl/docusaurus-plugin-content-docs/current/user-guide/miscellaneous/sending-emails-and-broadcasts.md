@@ -3,7 +3,7 @@ title: Envío de correos electrónicos e difusións
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviar correos electrónicos e difusións (v2) {#sending-emails-and-broadcasts-v2}
+# Enviar correos electrónicos e difusións (v2)
 
 _**NOTA IMPORTANTE: Este artigo refírese á versión 2.x de Ultimate Multisite.**_
 

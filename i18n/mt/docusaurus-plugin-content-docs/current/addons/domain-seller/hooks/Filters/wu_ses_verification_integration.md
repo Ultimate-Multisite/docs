@@ -4,7 +4,7 @@ title: Filtru - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filtru: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Filtru: wu_ses_verification_integration
 
 Filtru: ippermetti lil kodiċi ieħor jipprovdi l-oġġett ta' integrazzjoni SES.
 

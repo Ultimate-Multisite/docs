@@ -3,7 +3,7 @@ title: マルチテナンシー分離
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# マルチテナンシーの分離 {#multi-tenancy-isolation}
+# マルチテナンシーの分離
 
 Ultimate Multisite: Multi-Tenancy 1.2.0では、主権を持つテナントのために、サブサイトごとのデータベースとファイルシステムの分離をサポートします。これにより、テナントのデータは個別に保たれながら、ネットワークレベルでのプロビジョニング、請求、管理が維持されます。
 

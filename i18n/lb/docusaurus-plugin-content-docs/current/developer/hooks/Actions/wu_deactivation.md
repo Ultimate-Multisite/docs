@@ -4,7 +4,7 @@ title: Aktioun - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Aktioun: wu_deactivation {#action-wudeactivation}
+# Aktioun: wu_deactivation
 
 Loosst aner Deeler vum Plugin hir Routinen fir d'Deaktivéierung unhänken
 

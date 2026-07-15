@@ -3,7 +3,7 @@ title: ਸਾਈਟ ਸਪੈਸੀਫਿਕੇਸ਼ਨ ਹੁਨਰ
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 **Site Specification skill** ek vyavasthit tareeka hai jisse aap apni site ke maqsad, audience, aur brand ki pehchaan (identity) ko capture karte hain. Yeh jaankari aapki **site_brief** memory mein store ki jaati hai, jisko agents alag-alag sessions mein istemaal karte hain taaki hamesha ek jaisi, sandarbh (context) samajh kar madad de saken.
 

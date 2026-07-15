@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_{$this->id}_register_widgets {#action-wupagethis-idregisterwidgets}
+# Action: wu_page_{$this->id}_register_widgets
 
 在為此頁面註冊小工具後觸發。
 

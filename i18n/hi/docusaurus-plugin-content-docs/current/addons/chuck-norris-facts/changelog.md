@@ -3,7 +3,7 @@ title: चैक नॉरिस फैक्ट्स चेंजलॉग
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts परिवर्तन लॉग {#chuck-norris-facts-changelog}
+# Chuck Norris Facts परिवर्तन लॉग
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * जोड़ा गया: Ultimate Multisite अपडेट सर्वर के माध्यम से स्वचालित अपडेट कार्यक्षमता

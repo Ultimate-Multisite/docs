@@ -3,7 +3,7 @@ title: Multisaitų įdiegimo vadovas
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Konfigūracijos Vizardas {#multisite-setup-wizard}
+# Multisite Konfigūracijos Vizardas
 
 Ultimate Multisite įdaliui yra įtrauktas vizardas, kuris automatiškai konvertuoja standartinį WordPress įrenginį į WordPress Multisite tinklą. Tai eliminuoja būtinybį rankiniu būdu redaguoti `wp-config.php` arba eseguire duomenų bazos komandas.
 

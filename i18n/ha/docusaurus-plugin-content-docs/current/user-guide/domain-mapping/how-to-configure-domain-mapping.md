@@ -3,7 +3,7 @@ title: Yadda ake Saita Taswirar Yanki
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Yadda ake Saita Haɗa Domain (v2) {#how-to-configure-domain-mapping-v2}
+# Yadda ake Saita Haɗa Domain (v2)
 
 _**MUHIMMIYAR SANARWA: Wannan labarin yana magana ne game da Ultimate Multisite sigar 2.x.**_
 

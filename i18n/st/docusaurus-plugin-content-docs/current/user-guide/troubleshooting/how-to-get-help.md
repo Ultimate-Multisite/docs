@@ -3,7 +3,7 @@ title: Kea leboha
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# How to get help {#how-to-get-help}
+# How to get help
 
 U nna le kapa la License key ya goboetso, le e ne e na tshedi ea ho ba le team ea rona ho ba le leboho ho fihlela o tla hlokomisa litlhahlo tse ka tsela eo o tla etsang Ultimate Multisite.
 

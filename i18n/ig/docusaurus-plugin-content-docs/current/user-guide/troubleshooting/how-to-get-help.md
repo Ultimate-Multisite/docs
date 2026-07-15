@@ -3,7 +3,7 @@ title: Kedu ihe mere mmụta?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Ọkọkọ dị ka ịkpọta mmụta {#how-to-get-help}
+# Ọkọkọ dị ka ịkpọta mmụta
 
 Ị bụrụ ịkpọta License key ọ́, ma nwere akses na onye anyị ahụ maka ịkpọta mmụta ịkwupụta ihe ndị dị mkpa mgbe ị chọrọ ịgụ akụkọ Ultimate Multisite.
 

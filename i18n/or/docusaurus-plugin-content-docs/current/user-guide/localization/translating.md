@@ -3,7 +3,7 @@ title: ଅଲ୍ଟିମେଟ ମల్ଟିସାଇଟ୍
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ର ଅନୁବାଦ {#translating-ultimate-multisite}
+# Ultimate Multisite ର ଅନୁବାଦ
 
 Ultimate Multisite ଇଂରାଜରେ ବିକଶିତ ହୋଇଥିଲେ, କିନ୍ତୁ ଏହି ปลug-ଇନ୍ (plugin) ସମ୍ପୂର୍ଣ୍ଣ ଅନୁବାଦୀୟ ଏବଂ ଆମେ ସକ୍ରିୟ ଭାବରେ ଅନୁବାଦ ପ୍ରଦାନକୁ ସ୍ୱାଗତ କରୁଛୁ।
 

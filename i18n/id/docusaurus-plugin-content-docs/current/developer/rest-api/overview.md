@@ -3,7 +3,7 @@ title: Ikhtisar REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referensi REST API {#rest-api-reference}
+# Referensi REST API
 
 ## Konfigurasi Dasar {#base-configuration}
 

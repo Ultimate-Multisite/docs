@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Tiket Dhukungan
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Cathetan Owah-owahan Tiket Dhukungan {#support-tickets-changelog}
+# Cathetan Owah-owahan Tiket Dhukungan
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ditingkataké: Mbusak direktori vendor/ saka pelacakan Git (wis kacakup déning .gitignore), nyuda ukuran repository

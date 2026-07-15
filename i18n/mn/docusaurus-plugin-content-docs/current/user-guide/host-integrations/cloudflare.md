@@ -3,7 +3,7 @@ title: Cloudflare-ийн нийлүүлэлт
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare-ийн нийлүүлэлт {#cloudflare-integration}
+# Cloudflare-ийн нийлүүлэлт
 
 ## Ерөнхий ойлголт {#overview}
 Cloudflare бол вебсайтнуудыг хамгаалж, хурдасгах гол контент хүргэх сүлжээ (CDN) болон аюулгүй байдлын үйлчилгээ юм. Энэхүү нийлүүлэлт нь Ultimate Multisite болон Cloudflare хоорондын домен удирдлагыг автоматжуулдаг бөгөөд ялангуяа дэддомын олон сайт (subdomain multisite) суулгалтад тохиромжтой.

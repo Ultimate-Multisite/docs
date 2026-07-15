@@ -3,7 +3,7 @@ title: Muunganisho wa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kuunganisha Ultimate Multisite na Zapier {#integrating-ultimate-multisite-with-zapier}
+# Kuunganisha Ultimate Multisite na Zapier
 
 Katika mojawapo ya makala, tulijadili [Webhooks](webhooks.md) na jinsi zinavyoweza kutumika kuunganisha na programu za wahusika wengine.
 

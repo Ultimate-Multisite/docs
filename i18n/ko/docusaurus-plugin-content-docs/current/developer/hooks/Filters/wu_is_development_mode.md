@@ -4,7 +4,7 @@ title: 필터 - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# 필터: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# 필터: wu_is_development_mode
 
 플러그인 개발자가 개발 모드에 대한 추가 테스트를 추가할 수 있도록 허용합니다.
 

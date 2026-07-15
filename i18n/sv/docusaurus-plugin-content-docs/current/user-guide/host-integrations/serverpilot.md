@@ -3,7 +3,7 @@ title: ServerPilot-integration
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot-integration {#serverpilot-integration}
+# ServerPilot-integration
 
 ## Översikt {#overview}
 ServerPilot är en molntjänst för att hosta WordPress och andra PHP-webbplatser på servrar hos DigitalOcean, Amazon, Google eller någon annan serverleverantör. Den här integrationen möjliggör automatisk domänsynkronisering och hantering av SSL-certifikat mellan Ultimate Multisite och ServerPilot.

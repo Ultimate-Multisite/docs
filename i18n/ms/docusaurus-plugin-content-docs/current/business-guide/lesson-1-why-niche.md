@@ -3,7 +3,7 @@ title: 'Pelajaran 1: Mengapa Niche Menang'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Pelajaran 1: Kekuatan Niche {#lesson-1-why-niche-wins}
+# Pelajaran 1: Kekuatan Niche
 
 Sebelum kita menyentuh sebarang perisian, anda perlu faham mengapa membina untuk audiens tertentu adalah keputusan paling penting yang akan anda buat.
 

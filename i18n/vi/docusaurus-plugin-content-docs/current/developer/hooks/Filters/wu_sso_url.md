@@ -4,7 +4,7 @@ title: Bộ lọc - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Bộ lọc: wu_sso_url {#filter-wussourl}
+# Bộ lọc: wu_sso_url
 
 Lọc các URL SSO đã tạo trước khi chúng được trả về cho các hành động khách hàng liên miền.
 

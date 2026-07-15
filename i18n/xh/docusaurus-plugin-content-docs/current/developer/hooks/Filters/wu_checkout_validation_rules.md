@@ -4,7 +4,7 @@ title: Isihluzi - wu_checkout_validation_rules
 sidebar_label: wu_checkout_validation_rules
 _i18n_hash: 7b765499f6f7d4b9b5337981302e2331
 ---
-# Isihluzi: wu_checkout_validation_rules {#filter-wucheckoutvalidationrules}
+# Isihluzi: wu_checkout_validation_rules
 
 Vumela abaphuhlisi be-plugin bahluze imithetho yokuqinisekisa.
 

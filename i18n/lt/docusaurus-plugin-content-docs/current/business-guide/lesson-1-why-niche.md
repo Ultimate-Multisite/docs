@@ -3,7 +3,7 @@ title: '1 pamoka: Kodėl niša laimi'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# 1 pamoka: Kodėl niša laimi {#lesson-1-why-niche-wins}
+# 1 pamoka: Kodėl niša laimi
 
 Prieš paliesdami bet kokią programinę įrangą, turite suprasti, kodėl kūrimas konkrečiai auditorijai yra vienas svarbiausių sprendimų, kuriuos priimsite.
 

@@ -3,7 +3,7 @@ title: د ګمرکي Gateway پراختیا
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# د Custom Gateway جوړول {#custom-gateway-development}
+# د Custom Gateway جوړول
 
 تاسو کولی شئ د `Base_Gateway` کلاس په غځولو سره د تادیې دودیزې دروازې جوړې کړئ.
 

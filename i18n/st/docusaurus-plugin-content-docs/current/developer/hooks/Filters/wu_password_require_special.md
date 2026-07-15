@@ -4,7 +4,7 @@ title: Sefe - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Sefe: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Sefe: wu_password_require_special
 
 Sefa hore na ho hlokeha ditlhaku tse kgethehileng diphaseweting.
 

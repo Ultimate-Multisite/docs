@@ -3,7 +3,7 @@ title: Siti ehitija režiimi eemaldamise teavitus
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder reegistruminikku teavitus {#site-builder-mode-removal-notice}
+# Site Builder reegistruminikku teavitus
 
 **Site Builder reegistruminikku on ebat v1.12.0 versioon.** Kui olete kasutanud Site Builderi, peaksite migreerida **Setup Assistant agentile**, tema loomiseks ja veebisaidi seadistamiseks.
 

@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# ഫിൽട്ടർ: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# ഫിൽട്ടർ: wu_checkout_form_base_domains
 
 പങ്കിട്ട ചെക്കൗട്ട്-ഫോം അടിസ്ഥാന ഡൊമെയിനുകൾ മാപ്പ് ചെയ്ത ഡൊമെയിൻ രേഖകളാകാതിരിക്കാൻ ഫിൽട്ടർ ചെയ്യുന്നു.
 

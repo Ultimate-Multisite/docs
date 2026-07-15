@@ -3,7 +3,7 @@ title: Ödeme Alma
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ödeme Alma (v2) {#getting-paid-v2}
+# Ödeme Alma (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x için geçerlidir.**_
 

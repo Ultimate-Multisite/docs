@@ -3,7 +3,7 @@ title: Gambaran Keseluruhan Papan Pemuka
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Gambaran Keseluruhan Dashboard {#dashboard-overview}
+# Gambaran Keseluruhan Dashboard
 
 Ultimate Multisite mempunyai **Dashboard** khusus di bawah menu Ultimate Multisite, dan juga menambah widget pada Network Dashboard. Artikel ini menerangkan apa yang akan anda lihat di kedua-dua tempat tersebut.
 

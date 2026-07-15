@@ -3,7 +3,7 @@ title: 'Bài học 8: Tiếp nhận khách hàng'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Bài 8: Quy trình Hội nhập Khách hàng (Customer Onboarding) {#lesson-8-customer-onboarding}
+# Bài 8: Quy trình Hội nhập Khách hàng (Customer Onboarding)
 
 Việc giúp khách hàng đăng ký chỉ là một nửa công việc. Nếu họ đăng nhập, cảm thấy choáng ngợp và không bao giờ quay lại, bạn đã mất họ rồi. Bài học này sẽ thiết kế trải nghiệm giúp biến một lượt đăng ký mới thành một khách hàng tích cực và gắn bó.
 

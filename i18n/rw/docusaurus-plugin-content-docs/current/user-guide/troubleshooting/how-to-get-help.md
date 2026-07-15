@@ -3,7 +3,7 @@ title: Uburyo bwo gukora uburyo bwo gutanga ubufasha
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Uburyo ubufasha {#how-to-get-help}
+# Uburyo ubufasha
 
 Wurimo License key yawe, kandi yari yashyize uburenganzira bwo kugera ku umuntu wacu w'ubwujgwa bwo kukugira ubufasha mu gihe cyose utagira ibibazo bitera mu gutangira Ultimate Multisite.
 

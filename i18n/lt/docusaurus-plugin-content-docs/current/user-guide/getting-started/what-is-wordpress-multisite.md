@@ -3,7 +3,7 @@ title: Kas yra WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kas yra WordPress Multisite? {#what-is-wordpress-multisite}
+# Kas yra WordPress Multisite?
 
 WordPress coreje pateikiama funkcija, vadinama „Multisite“, kuri atsakinga nuo 2010 m. atidarymo WordPress 3.0. Nuo to laiko ji gauta daug revizijų, kurios tikslas yra įvesti naujus įrenginius ir užtikrinti saugumą.
 

@@ -3,7 +3,7 @@ title: Iestatījumu atsauce
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Iestatījumu atsauce {#settings-reference}
+# Iestatījumu atsauce
 
 Šī lapa apkopo iestatījumus, kas ietekmē ikdienas administrēšanu un nesenās uzvedības izmaiņas Ultimate Multisite.
 

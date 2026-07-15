@@ -4,7 +4,7 @@ title: Әрекет - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Әрекет: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Әрекет: wu_captcha_after_field
 
 Captcha өрісі көрсетілгеннен кейін іске қосылады.
 

@@ -3,7 +3,7 @@ title: ການກວດສອບການຍົກຍ້າຍອຳນາດ
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# ການກວດສອບການຍົກຍ້າຍແບບ Sovereign {#sovereign-migration-verification}
+# ການກວດສອບການຍົກຍ້າຍແບບ Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ມີຄໍາສັ່ງຢືນຢັນ WP-CLI ສຳລັບການຍົກຍ້າຍ tenant ແບບ sovereign. ໃຫ້ໃຊ້ຄໍາສັ່ງເຫຼົ່ານີ້ເມື່ອການຍົກຍ້າຍ tenant, ການເຂົ້າຊົມ SSO, ຫຼືການຕິດຕັ້ງແບບຫຸ້ມຫໍ່ທີ່ແຍກອອກບໍ່ເປັນໄປຕາມທີ່ຄາດໄວ້.
 

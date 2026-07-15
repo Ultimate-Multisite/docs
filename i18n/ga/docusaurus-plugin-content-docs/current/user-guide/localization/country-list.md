@@ -3,7 +3,7 @@ title: Llista na cosaintí
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Aistriúchadh ar foirme an líniste na cosaintail Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Aistriúchadh ar foirme an líniste na cosaintail Ultimate Multisite
 
 Tá an droppdown a chur i bhfeic an t-aistriúchadh ar bhealach alphaitimach ar fáil ar na ghréasanna Englishacha deiridh na cosaintail. Is féidir leis seo go ngaccam, go dtí an t-aistriúchadh na cosaintail a bhaineann le cosúil go bhfuil an t-áit chomhánach a chuireann an t-aontúchán a bheith agat agus/nó dearmadánachtaí go leat i gcuid líniste mhór ar cheangailte.
 

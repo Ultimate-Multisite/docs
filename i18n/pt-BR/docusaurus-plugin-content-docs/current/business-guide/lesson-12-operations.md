@@ -3,7 +3,7 @@ title: 'Lição 12: Administrando o Negócio'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lição 12: Gerenciando o Negócio {#lesson-12-running-the-business}
+# Lição 12: Gerenciando o Negócio
 
 Uma plataforma não é um projeto que se finaliza; é um negócio que precisa ser gerenciado continuamente. Esta lição aborda as operações diárias de gerenciamento do FitSite: suporte, cobrança, manutenção e como manter os clientes satisfeitos.
 

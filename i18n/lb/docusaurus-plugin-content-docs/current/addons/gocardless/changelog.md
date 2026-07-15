@@ -3,7 +3,7 @@ title: GoCardless Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog {#gocardless-changelog}
+# GoCardless Changelog
 
 Versioun: 1.0.3 - Verëffentlecht den 2026-05-05
 * Fix: Verwaist waarden Sitten ginn elo gebotzt, wann eng GoCardless Memberschaft annuléiert gëtt, wärend se am waarden oder on-hold Zoustand ass

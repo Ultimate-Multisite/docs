@@ -3,7 +3,7 @@ title: Gumawa ng Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Bumuo ng Logo SVG {#generate-logo-svg}
+# Bumuo ng Logo SVG
 
 Ang kakayahang **Bumuo ng Logo SVG** ay nagbibigay-daan sa Theme Builder na gumawa at mag-embed ng mga custom na logo SVG nang direkta sa iyong WordPress site na may awtomatikong namespace-safe sanitisation.
 

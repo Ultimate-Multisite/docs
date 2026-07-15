@@ -3,7 +3,7 @@ title: 'Les 9: Prysgstelling vir Wins'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Les 9: Prysing vir Wins {#lesson-9-pricing-for-profit}
+# Les 9: Prysing vir Wins
 
 In Les 5 het ons die aanvanklike pryse vir FitSite-planne vasgestel. Nou verfyn ons die prysstrategie met tegnieke wat die inkomste verhoog, opgraderings aanmoedig en die verlies van kliënte (churn) verminder.
 

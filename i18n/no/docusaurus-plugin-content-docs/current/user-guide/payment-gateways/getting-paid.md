@@ -3,7 +3,7 @@ title: Å få betalt
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Få betalt (v2) {#getting-paid-v2}
+# Få betalt (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
 

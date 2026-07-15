@@ -3,7 +3,7 @@ title: Képességek referenciája
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Képességek referenciája {#abilities-reference}
+# Képességek referenciája
 
 A képességek azok az atomi műveletek, amelyeket a Gratis AI Agent meghívhat a WordPress telepítéseden. Minden képesség egy regisztrált PHP osztály, amely JSON sémát tesz közzé — az agent futásidőben olvassa ezt a sémát, hogy megértse, milyen paraméterek szükségesek, és mit ad vissza a képesség.
 

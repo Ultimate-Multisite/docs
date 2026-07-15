@@ -3,7 +3,7 @@ title: WordPress Multisite nima?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite nima? {#what-is-wordpress-multisite}
+# WordPress Multisite nima?
 
 WordPressning asosiy qismida "Multisite" degan xususiyat mavjud bo'lib, u 2010-yilda WordPress 3.0 ishga tushganda boshlanganidan kelib chiqadi. Shundan beri yangi xususiyatlarni joriy etish va xavfsizlikni mustahkamlash maqsadida bir nechta takomillashtirishlar o'tkazilgan.
 

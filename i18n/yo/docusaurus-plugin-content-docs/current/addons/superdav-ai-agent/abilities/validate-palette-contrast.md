@@ -3,7 +3,7 @@ title: Ṣàyẹ̀wò Ìyàtọ̀ Àwọ̀ Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Ṣàyẹ̀wò Ìyàtọ̀ Palette {#validate-palette-contrast}
+# Ṣàyẹ̀wò Ìyàtọ̀ Palette
 
 Agbára **Ṣàyẹ̀wò Ìyàtọ̀ Palette** ń ṣàyẹ̀wò àwọn tọkọtaya àwọ̀ nínú palette àpẹrẹ rẹ fún ìbámu WCAG (Web Content Accessibility Guidelines) kí o tó fi wọ́n sí theme rẹ.
 

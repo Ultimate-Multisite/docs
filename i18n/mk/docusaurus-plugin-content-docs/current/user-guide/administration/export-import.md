@@ -3,7 +3,7 @@ title: Извеждане и импорт
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Експорт и импорт {#export--import}
+# Експорт и импорт
 
 Ultimate Multisite 2.9.0 додава нов инструмент за **Експорт и импорт** под **Tools > Export & Import**. Користи го кога ви треба да пакувате една WordPress локација во ZIP фајл, да ја вратите таа ZIP-от или да преместите локација помеѓу соодветни Ultimate Multisite и single-site WordPress инсталации.
 

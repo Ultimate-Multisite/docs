@@ -3,7 +3,7 @@ title: Ροή Onboarding του Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Διαδικασία Εκκίνησης Theme Builder {#theme-builder-onboarding-flow}
+# Διαδικασία Εκκίνησης Theme Builder
 
 Το Superdav AI Agent v1.12.0 εισάγει μια καθοδηγούμενη **διαδικασία εκκίνησης Theme Builder** που σας βοηθά να δημιουργήσετε ένα προσαρμοσμένο block theme κατά την αρχική σας ρύθμιση. Αυτό αντικαθιστά τη παλαιότερη λειτουργία Site Builder με μια πιο ευέλικτη προσέγγιση, υποστηριζόμενη από agent.
 

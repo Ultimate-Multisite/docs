@@ -4,7 +4,7 @@ title: Filtrilo - wu_minimum_password_length
 sidebar_label: wu_minimum_password_length
 _i18n_hash: 02317f8ab8200551a9d2112b8ba4b7a8
 ---
-# Filtrilo: wu_minimum_password_length {#filter-wuminimumpasswordlength}
+# Filtrilo: wu_minimum_password_length
 
 Filtru la minimuman pasvortan longon.
 

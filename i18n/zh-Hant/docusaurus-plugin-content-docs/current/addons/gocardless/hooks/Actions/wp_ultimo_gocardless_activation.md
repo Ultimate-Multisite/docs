@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# 動作：wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# 動作：wp_ultimo_gocardless_activation
 
 讓插件的其他部分可以在此處附加它們的啟用邏輯
 

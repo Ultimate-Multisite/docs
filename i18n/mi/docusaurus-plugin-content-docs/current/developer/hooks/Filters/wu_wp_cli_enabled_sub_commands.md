@@ -4,7 +4,7 @@ title: Tātari - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Tātari: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Tātari: wu_wp_cli_enabled_sub_commands
 
 Ka tātari ko ēhea sub_commands kua whakahohea mō tēnei hinonga.
 

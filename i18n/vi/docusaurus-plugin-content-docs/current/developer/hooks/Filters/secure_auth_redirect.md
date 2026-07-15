@@ -4,7 +4,7 @@ title: Bộ lọc - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 Bộ lọc này xác định xem có nên sử dụng chuyển hướng xác thực an toàn hay không.
 

@@ -3,7 +3,7 @@ title: Nga mea i whakamahi te Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Aroha ki Ultimate Multisite {#why-ultimate-multisite}
+# Aroha ki Ultimate Multisite
 
 Ko i roto i tēnei article ko e taea ai ahau te whai i a koe, he tino pai ahau te whakaaro ana akomanga mārie ahau hei whakatutuki i ngā whakaaro o te mahi katoa. Ko te whakamārama e noho ana i te whakatutuki i ngā mea e tino kitea i te whakamārama ko e hoki atu ki a koe i ngā whakataunga e tino pai.
 

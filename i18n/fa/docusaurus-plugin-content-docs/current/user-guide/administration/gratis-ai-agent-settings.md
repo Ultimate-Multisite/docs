@@ -3,7 +3,7 @@ title: تنظیمات Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# تنظیمات Gratis AI Agent {#gratis-ai-agent-settings}
+# تنظیمات Gratis AI Agent
 
 صفحهٔ **Settings → Advanced** در Gratis AI Agent پیکربندی در سطح مدیر را برای یکپارچه‌سازی‌های بک‌اند فراهم می‌کند. این صفحه ارسال بازخورد، کلیدهای ارائه‌دهندهٔ جستجو، راه‌اندازی سرویس مدیریت‌شدهٔ Superdav، کنترل‌های Google Calendar، تنظیمات پیامک TextBee، و پرچم‌های قابلیت در سطح شبکه را مستند می‌کند.
 

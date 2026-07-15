@@ -3,7 +3,7 @@ title: ଇମେଲ୍ ଏବଂ ପ୍ରସାରଣ ପଠାଇବା
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ଇମେଲ୍ ଏବଂ ପ୍ରସାରଣ ପଠାଇବା (v2) {#sending-emails-and-broadcasts-v2}
+# ଇମେଲ୍ ଏବଂ ପ୍ରସାରଣ ପଠାଇବା (v2)
 
 _**ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଟୀକା: ଏହି ଲେଖା Ultimate Multisite version 2.x ବିଷୟରେ ଅଟେ।**_
 

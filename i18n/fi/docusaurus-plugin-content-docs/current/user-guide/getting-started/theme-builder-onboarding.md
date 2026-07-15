@@ -3,7 +3,7 @@ title: Teeman rakentamisen aloitusvirta
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Teeman rakentamisen aloitusprosessi {#theme-builder-onboarding-flow}
+# Teeman rakentamisen aloitusprosessi
 
 Superdav AI Agent v1.12.0 tuo mukanaan ohjatun **Theme Builder -aloitusprosessin**, joka auttaa sinua luomaan räätälöidyn lohkon teemalla alustavassa asetuksessasi. Tämä korvaa vanhentuneen Site Builder -tilan joustavammalla, agentin avustamalla lähestymistavalla.
 

@@ -3,9 +3,9 @@ title: యాడ్-ఆన్ టెంప్లేట్
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# యాడ్‌ఆన్ టెంప్లేట్ {#addon-template}
+# యాడ్‌ఆన్ టెంప్లేట్
 
-{{ADDON_DESCRIPTION}}
+యాడ్-ఆన్ టెంప్లేట్ — Ultimate Multisite.
 
 ## అవసరాలు {#requirements}
 

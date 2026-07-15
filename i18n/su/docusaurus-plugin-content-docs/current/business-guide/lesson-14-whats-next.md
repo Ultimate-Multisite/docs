@@ -3,7 +3,7 @@ title: 'Palajaran 14: Naon Nu Salajengna'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Palajaran 14: Naon Salajengna {#lesson-14-what-comes-next}
+# Palajaran 14: Naon Salajengna
 
 Anjeun geus ngawangun platform situs wéb ceruk ti mimiti. FitSite geus hirup, ngalayanan studio kabugaran, jeung ngahasilkeun panghasilan berulang. Palajaran pamungkas ieu ningali ka mana kudu maju ti dieu.
 

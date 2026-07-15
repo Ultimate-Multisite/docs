@@ -3,14 +3,14 @@ title: WordPress Multisite-у как установить
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite ниң кулланылымы как? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite ниң кулланылымы как?
 
 WordPress Multisite-ы белән берничә сайтты берничә установка (installation) дөреләргә мөмкин. Бу стандарт якын функция ди, әмма умолчанию актив булмаган.
 
 :::tip
 Ultimate Multisite-ta **[встроенный мастер настройки Мультисайта](./multisite-setup-wizard)** бар, который автоматизирует весь этот процесс. Если у вас установлен Ultimate Multisite, мы рекомендуем использовать именно этот мастер вместо того, чтобы следовать шагам в руководстве ниже.
 
-# WordPress Documentation Translation {#add-a-trailing-slash-to-wp-admin}
+# WordPress Documentation Translation
 
 ## Getting Started with Ultimate Multisite {#common-problems}
 

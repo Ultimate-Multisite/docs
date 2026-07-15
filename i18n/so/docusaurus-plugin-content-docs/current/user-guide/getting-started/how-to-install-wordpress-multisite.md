@@ -3,7 +3,7 @@ title: Sida loo soo saaro WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Sidee aan ku soo installaa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Sidee aan ku soo installaa WordPress Multisite?
 
 WordPress Multisite waxay kuu oggolaanaysaa inaad hal installation (warqabinta) ku haysato shabakad oo websites ah. Tani waa astaamada la bilaabay, laakiin ma aha mid firfircoon (active) si toos ah.
 
@@ -63,7 +63,7 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index.php$ - [L]
 
-# si loo dari slash u dambeeya /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# si loo dari slash u dambeeya /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

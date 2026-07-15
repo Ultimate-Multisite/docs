@@ -4,7 +4,7 @@ title: Ago - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Ago: wu_page_added {#action-wupageadded}
+# Ago: wu_page_added
 
 Permesas al plugin-programistoj ruli pliajn aferojn kiam paĝoj estas registritaj.
 

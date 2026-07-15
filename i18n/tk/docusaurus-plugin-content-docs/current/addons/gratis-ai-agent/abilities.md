@@ -3,7 +3,7 @@ title: Ukyplar boýunça maglumatnama
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Başarnyklar salgylanmasy {#abilities-reference}
+# Başarnyklar salgylanmasy
 
 Başarnyklar Gratis AI Agent-iň siziň WordPress gurnamaňyzda çagyryp bilýän atomik hereketleridir. Her başarnyk JSON shemasyny açýan hasaba alnan PHP klasydyr — agent ýerine ýetirilýän wagtynda haýsy parametrleriň gerekdigini we başarnygyň näme gaýtarýandygyny düşünmek üçin bu shemany okaýar.
 

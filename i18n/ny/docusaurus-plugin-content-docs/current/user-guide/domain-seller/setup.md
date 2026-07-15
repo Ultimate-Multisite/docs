@@ -3,7 +3,7 @@ title: Kuthandiza ndi Kukhazikitsa ndi Mwandikazi
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Mwandikizi wa Domain: Kuanzisha na Kuweka Watoa Huduma (Provider Configuration) {#domain-seller-setup-and-provider-configuration}
+# Mwandikizi wa Domain: Kuanzisha na Kuweka Watoa Huduma (Provider Configuration)
 
 Addon ya Domain Seller inatoka na mwongozo wa kuanzisha unaokuelekeza hatua zote unazohitaji kufanya. Ukurasa huu unahusu mtiririko wa mwongozo huo na jinsi ya kuweka au kubadilisha watoa huduma (providers) baada ya hapo.
 

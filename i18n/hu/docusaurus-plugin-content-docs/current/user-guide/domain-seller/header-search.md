@@ -3,7 +3,7 @@ title: Fejléc domainkeresés
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header doménkeresés {#header-domain-search}
+# Header doménkeresés
 
 Használd ezt a beállítást, ha egy kis fejlécűrlapot szeretnél, amely elindít egy doménkeresést, majd lehetővé teszi, hogy az ügyfél az Ultimate Multisite checkouton belül válasszon az elérhető domainek közül.
 

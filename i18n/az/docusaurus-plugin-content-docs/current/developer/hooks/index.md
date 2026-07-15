@@ -3,7 +3,7 @@ title: Hooklar üzrə istinad
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks İstinadı {#hooks-reference}
+# Hooks İstinadı
 
 Ultimate Multisite-dəki bütün **59 əməliyyat** və **118 filtr** üçün avtomatik yaradılmış sənədləşdirmə.
 

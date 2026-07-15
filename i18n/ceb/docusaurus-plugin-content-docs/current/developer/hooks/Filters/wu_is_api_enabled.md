@@ -4,7 +4,7 @@ title: Salaan - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Salain: wu_is_api_enabled {#filter-wuisapienabled}
+# Salain: wu_is_api_enabled
 
 Tugotan ang mga developer sa dugang-programa nga pugson ang usa ka gihatag nga kahimtang para sa API.
 

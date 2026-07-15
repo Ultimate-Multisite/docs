@@ -3,7 +3,7 @@ title: Развој на прилагоден Gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Развој на приспособен Gateway {#custom-gateway-development}
+# Развој на приспособен Gateway
 
 Можете да креирате приспособени платежни gateway-и со проширување на класата `Base_Gateway`.
 

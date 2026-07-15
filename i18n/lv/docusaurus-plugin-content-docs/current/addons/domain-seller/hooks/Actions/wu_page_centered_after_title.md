@@ -4,7 +4,7 @@ title: Darbība - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# Darbība: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
+# Darbība: wu_page_centered_after_title
 
 Ļauj plugin izstrādātājiem pievienot papildu pogas.
 

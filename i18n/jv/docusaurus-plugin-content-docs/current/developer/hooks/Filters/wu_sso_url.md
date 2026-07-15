@@ -4,7 +4,7 @@ title: Saringan - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Saringan: wu_sso_url {#filter-wussourl}
+# Saringan: wu_sso_url
 
 Nyaring URL SSO sing digawe sadurunge dibalekake kanggo tumindak pelanggan lintas-domain.
 

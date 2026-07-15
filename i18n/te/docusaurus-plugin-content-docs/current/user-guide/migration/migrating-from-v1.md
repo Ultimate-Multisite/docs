@@ -3,7 +3,7 @@ title: V1 నుండి మైగ్రేట్ చేయడం
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 నుండి మైగ్రేట్ చేయడం {#migrating-from-v1}
+# V1 నుండి మైగ్రేట్ చేయడం
 
 ## Ultimate Multisite తన అసలు 1.x రిలీజ్‌ల కుటుంబం నుండి 2.x రిలీజ్‌ల కుటుంబానికి మారింది. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

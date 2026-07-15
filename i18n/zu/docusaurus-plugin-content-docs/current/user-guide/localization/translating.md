@@ -3,7 +3,7 @@ title: Ukuhumusha Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ukuhumusha Ultimate Multisite {#translating-ultimate-multisite}
+# Ukuhumusha Ultimate Multisite
 
 Ultimate Multisite ithuthukiswa ngesiNgisi, kodwa i-plugin iyahumusheka ngokuphelele futhi samukela ngenkuthalo iminikelo yokuhumusha.
 

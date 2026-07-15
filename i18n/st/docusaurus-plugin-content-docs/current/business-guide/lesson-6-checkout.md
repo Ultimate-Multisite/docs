@@ -3,7 +3,7 @@ title: 'Thuto ea 6: Boiphihlelo ba ho Ingolisa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Thuto ya 6: Boiphihlelo ba ho Ingodisa {#lesson-6-the-signup-experience}
+# Thuto ya 6: Boiphihlelo ba ho Ingodisa
 
 Phallo ya ho phetha theko ke moo thahasello e fetohang lekeno. Tshebetso ya ho ingodisa e ferekanyang kapa e akaretsang e lahlehelwa ke bareki. Phallo e ikgethileng bakeng sa niche e buang puo ya bona mme e utlwahala e le bonolo e ba fetola bareki.
 

@@ -3,7 +3,7 @@ title: Ychwanegiadau GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ymddian GriddyPane {#gridpane-integration}
+# Ymddian GriddyPane
 
 ## Oglampiad {#overview}
 Mae GridPane yn panel cyddeisio WordPress sydd wedi'i llwybrion ar gyfer proffesiynwyr WordPress sydd â chymdeithas. Mae’r y cyfathriau hwn yn sylw'n gael synchiadau domena a rheoli certydd SSL yn awtrol rhwng Ultimate Multisite a GridPane.

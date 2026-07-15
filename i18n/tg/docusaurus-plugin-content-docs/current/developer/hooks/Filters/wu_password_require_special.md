@@ -4,7 +4,7 @@ title: Филтр - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Филтр: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Филтр: wu_password_require_special
 
 Филтр мекунад, ки оё дар паролҳо аломатҳои махсус талаб карда шаванд.
 

@@ -3,7 +3,7 @@ title: Planı ýokarlandyrmak
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Planyňy Güncellendirmek (v2) {#upgrading-a-plan-v2}
+# Planyňy Güncellendirmek (v2)
 
 _**ÖNEMLİ HABER: Bu makale Ultimate Multisite 2.x versiyasyna aýdylýar.**_
 

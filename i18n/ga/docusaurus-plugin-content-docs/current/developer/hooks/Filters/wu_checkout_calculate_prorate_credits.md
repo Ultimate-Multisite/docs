@@ -4,7 +4,7 @@ title: Scagaire - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Scagaire: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# Scagaire: wu_checkout_calculate_prorate_credits
 
 Ligeann sé d’fhorbróirí plugin cur isteach ar luach an chreidmheasa.
 

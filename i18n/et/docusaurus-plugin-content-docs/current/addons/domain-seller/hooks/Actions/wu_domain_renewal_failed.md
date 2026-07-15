@@ -4,7 +4,7 @@ title: Tegevus - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Toiming: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Toiming: wu_domain_renewal_failed
 
 Käivitatakse pärast domeeni uuendamise katse ebaõnnestumist.
 

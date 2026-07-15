@@ -3,7 +3,7 @@ title: Webhook نى بىر تەرەپ قىلىش
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook بىر تەرەپ قىلىش {#webhook-handling}
+# Webhook بىر تەرەپ قىلىش
 
 سىرتقى مۇلازىمەتلەردىن ھادىسىلەرنى قوبۇل قىلىش ۋە سانلىق مەلۇماتلارنى Ultimate Multisite بىلەن ماسقەدەملەش ئۈچۈن ئىختىيارىي webhook ئاخىر نۇقتىلىرىنى قۇرۇڭ.
 

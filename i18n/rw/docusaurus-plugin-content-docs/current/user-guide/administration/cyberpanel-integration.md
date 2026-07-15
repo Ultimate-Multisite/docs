@@ -3,7 +3,7 @@ title: Ubwumvikane bw'Ubushobozi bwa CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Uburyo Integration {#cyberpanel-integration}
+# Uburyo Integration
 
 Iyi gushyaho uburyo bwo gutegura uburyo bwa Ultimate Multisite CyberPanel. Igiheki n'ibyo uburyo bwa mapangwa (mapped domains) mu network yawe, byo bitangirwa (and bitakwiriwe) ngufi cyo kuba virtual hosts muri CyberPanel, kandi hari ubushobozi bwo gukoresha auto-SSL ku buryo bw'ubwujubi bwa Let's Encrypt.
 

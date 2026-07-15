@@ -3,7 +3,7 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference {#wp-cli-reference}
+# WP-CLI Reference
 
 Gratis AI Agent-এ `wp gratis-ai-agent` নামক এটা command family আগবঢ়াইছে। ইয়াৰ ব্যৱহাৰক (agent) benchmark কৰিবলৈ, ইয়াৰ ক্ষমতা (abilities) ব্যৱস্থাপনা কৰিবলৈ, আৰু command lineৰ পৰা agent-ৰ status জানিবলৈ ব্যৱহাৰ কৰা যায়। সকলো command-ৰ বাবে WP-CLI ২.০ বা তাৰ অধিক প্ৰয়োজন।
 

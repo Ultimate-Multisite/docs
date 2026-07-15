@@ -3,7 +3,7 @@ title: Kumbukumbu ya Mabadiliko ya Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Kumbukumbu ya Mabadiliko ya Domain Seller {#domain-seller-changelog}
+# Kumbukumbu ya Mabadiliko ya Domain Seller
 
 Toleo 1.3.0 - Limetolewa tarehe 2026-06-02
 - Mpya: Imeongeza onyo la network-admin wakati salio la muuzaji wa HostAfrica linapokuwa chini sana

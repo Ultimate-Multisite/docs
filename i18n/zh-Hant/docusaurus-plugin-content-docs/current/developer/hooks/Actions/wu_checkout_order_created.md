@@ -4,7 +4,7 @@ title: 動作 - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Action: wu_checkout_order_created
 
 在結帳訂單完全建立之後觸發。
 

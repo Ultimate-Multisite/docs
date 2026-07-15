@@ -3,7 +3,7 @@ title: Cloudflare integrācija
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integrācija {#cloudflare-integration}
+# Cloudflare Integrācija
 
 ## Īskatsauce {#overview}
 Cloudflare ir galvenais satura sniegšanas tīkls (CDN) un drošības pakalpojums, kas palīdz aizsargāt un ātrāk strādāt vietnes. Šī integrācija ļauj automātiskai domēna pārvaldīšanai starp Ultimate Multisite un Cloudflare, īpaši subdomain multisite instalācijās.

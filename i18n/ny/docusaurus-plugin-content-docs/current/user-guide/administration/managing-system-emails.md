@@ -3,7 +3,7 @@ title: Kupanga Email za M'ndindo
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kufunira Emails za System {#managing-system-emails}
+# Kufunira Emails za System
 
 Ultimate Multisite yafaka email zambiri za system kwa mambo kama vile kuthibitisha usajili, kupokea risiti za malipo, na kubadilisha uwezo wa kuungana (membership). Mumwezi kutiwusa email templates kuti zifanane ndi brand yanu.
 

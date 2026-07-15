@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର୍ - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# ଫିଲ୍ଟର: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# ଫିଲ୍ଟର: wu_pending_payment_message
 
 ଅପେକ୍ଷାରତ ଦେୟଗୁଡ଼ିକ ବିଷୟରେ ବାର୍ତ୍ତା ବଦଳାଇବାକୁ ବ୍ୟବହାରକାରୀଙ୍କୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

@@ -3,7 +3,7 @@ title: 'Lezzjoni 9: Ipprezzar għall-Qligħ'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lezzjoni 9: Ipprezzar għall-Profitt {#lesson-9-pricing-for-profit}
+# Lezzjoni 9: Ipprezzar għall-Profitt
 
 Fil-Lezzjoni 5 stabbilixxejna l-prezzijiet inizjali għall-pjanijiet ta’ FitSite. Issa nirfinaw l-istrateġija tal-ipprezzar b’tekniki li jżidu d-dħul, jinkoraġġixxu titjib għal pjanijiet ogħla, u jnaqqsu t-telf tal-klijenti.
 

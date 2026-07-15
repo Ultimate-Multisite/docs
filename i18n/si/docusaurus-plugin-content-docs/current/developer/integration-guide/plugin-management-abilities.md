@@ -3,7 +3,7 @@ title: ප්ලගින කළමනාකරණ හැකියාවන්
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# ප්ලගින කළමනාකරණ හැකියාවන් {#plugin-management-abilities}
+# ප්ලගින කළමනාකරණ හැකියාවන්
 
 Gratis AI Agent v1.5.0 සමඟ **ප්ලගින කළමනාකරණ හැකියාවන් 7ක්** ලැබේ. සංවාදයක් අතරතුර AI සහායකයාට ඒවා කැඳවිය හැක. මෙම හැකියාවන් [ප්ලගින සාදකය සහ Sandbox පද්ධතිය](../../user-guide/administration/plugin-builder-and-sandbox) හරහා ස්ථාපනය කළ WordPress ප්ලගින සඳහා ක්‍රමලේඛනමය පාලනය සපයයි.
 

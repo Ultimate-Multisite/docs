@@ -3,7 +3,7 @@ title: የተላበሱ አባላትን ማስተዳደር
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# የአባላትነት (Memberships) አስተዳደር {#managing-memberships}
+# የአባላትነት (Memberships) አስተዳደር
 
 በUltimate Multisite ውስጥ የአባላትነት ሁኔታዎችን (memberships) መቆጣጠር እና በኔትዎርክዎ ላይ ያሉትን ሁሉንም የደንበኝነት ምዝገባዎች (subscriptions) መዳረሻ ሊሰጥ ይችላሉ። የደንበኝነት ምዝገባ ዝርዝሮችን፣ እንደ ዕቅዶች (plans) እና ምርቶች (products)፣ የየድረ-ገጽ ብዛት፣ የክፍያ መጠን እና ድግግሞሽ፣ የክፍያ ታሪክ እና የጊዜ ማህተሞችን (timestamps) መገምገል እና ማርትዕ ይችላሉ።
 

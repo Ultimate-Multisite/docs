@@ -4,7 +4,7 @@ title: Tegevus - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Toiming: wu_deactivation {#action-wudeactivation}
+# Toiming: wu_deactivation
 
 Lase plugina teistel osadel lisada oma deaktiveerimise rutiinid
 

@@ -4,7 +4,7 @@ title: Chochita - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Zochita: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Zochita: wu_domain_mapping_register_filters
 
 Ma plugin ena adzasunga URL mapping isanakhale yogwira ntchito kapena adzapanga ma URL m'njira yosiyana yomwe siyikuphatikizidwa mu ma filter ali pamwambawa.
 

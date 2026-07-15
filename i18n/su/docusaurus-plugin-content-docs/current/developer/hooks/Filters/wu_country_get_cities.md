@@ -4,7 +4,7 @@ title: Saringan - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities {#filter-wucountrygetcities}
+# Filter: wu_country_get_cities
 
 Mulangkeun daptar kota pikeun hiji nagara bagian dina hiji nagara.
 

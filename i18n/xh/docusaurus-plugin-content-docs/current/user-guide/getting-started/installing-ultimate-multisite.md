@@ -3,7 +3,7 @@ title: Ukufaka Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ukufaka Ultimate Multisite {#installing-ultimate-multisite}
+# Ukufaka Ultimate Multisite
 
 :::note
 Esi sifundo sithatha ukuba sele unayo i-WordPress Multisite efakiweyo kwaye elungiselelweyo. Ukuze ufunde ukuba kwenziwa njani, jonga [esi sifundo](https://www.wpbeginner.com/glossary/multisite/) ngu-WP Beginner.

@@ -3,7 +3,7 @@ title: Розуміння панелі керування
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Знайомство з панеллю керування Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Знайомство з панеллю керування Ultimate Multisite
 
 Перш ніж перейти до розширених налаштувань та операційних можливостей Ultimate Multisite, давайте розглянемо панель керування.
 

@@ -3,7 +3,7 @@ title: Pauswagon ang Integrasyon sa Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Pagpalambo sa Integrasyon sa Control Panel {#enhance-control-panel-integration}
+# Pagpalambo sa Integrasyon sa Control Panel
 
 ## Panan-aw (Overview) {#overview}
 Ang Enhance usa ka modernong control panel nga naghatag og gamhanang hosting automation ug management capabilities. Kini nga integrasyon nagtugot sa automatic domain syncing ug SSL certificate management tali sa Ultimate Multisite ug Enhance Control Panel.

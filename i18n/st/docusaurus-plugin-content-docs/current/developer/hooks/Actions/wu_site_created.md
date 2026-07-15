@@ -4,7 +4,7 @@ title: Ketso - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Ketso: wu_site_created {#action-wusitecreated}
+# Ketso: wu_site_created
 
 E qala ka mor'a hore sebaka se thehoe lekhetlo la pele.
 

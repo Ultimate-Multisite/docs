@@ -4,7 +4,7 @@ title: Ago - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Ago: wu_site_created {#action-wusitecreated}
+# Ago: wu_site_created
 
 Ekfunkcias post kiam retejo estas kreita por la unua fojo.
 

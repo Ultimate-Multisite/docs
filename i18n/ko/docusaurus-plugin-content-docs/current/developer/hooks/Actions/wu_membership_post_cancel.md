@@ -4,7 +4,7 @@ title: 액션 - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# 액션: wu_membership_post_cancel {#action-wumembershippostcancel}
+# 액션: wu_membership_post_cancel
 
 멤버십이 취소된 후에 트리거됩니다.
 

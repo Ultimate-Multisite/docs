@@ -4,7 +4,7 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices {#filter-wuadminnotices}
+# Filter: wu_admin_notices
 
 এই ফিল্টাৰে ডেভেলপাৰসকলক Ultimate Multisite দ্বাৰা যোগ কৰা অ্যাডমিন নোটিচ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
 

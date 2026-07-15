@@ -3,7 +3,7 @@ title: Яагаад Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Яага Ultimate Multisite {#why-ultimate-multisite}
+# Яага Ultimate Multisite
 
 Энэ нийтлэлд хүрсэн бол та бидний плагин нь таны бизнесийн саналыг бодит болгоход туслах шийдэл байж магадгүй гэдгийг сонссон байх юм. Бид энэ нийтлэлийн төгсгөлд танд шаардлагатай хариултуудыг өгөх гэж байна.
 

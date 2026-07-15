@@ -4,7 +4,7 @@ title: Ìgbésẹ̀ - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Ìṣe: delete_network {#action-deletenetwork}
+# Ìṣe: delete_network
 
 Máa n ṣiṣẹ́ lẹ́yìn tí a ti paarẹ nẹ́tíwọ́ọ̀kì kan.
 

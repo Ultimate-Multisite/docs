@@ -4,7 +4,7 @@ title: Sivana - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Sivana: wu_rest_get_items {#filter-wurestgetitems}
+# Sivana: wu_rest_get_items
 
 Manivana raha avela hanohy ny fangatahana na tsia.
 

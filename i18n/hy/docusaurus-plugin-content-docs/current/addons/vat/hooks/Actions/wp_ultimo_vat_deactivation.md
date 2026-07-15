@@ -4,7 +4,7 @@ title: Գործողություն - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Գործողություն: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Գործողություն: wp_ultimo_vat_deactivation
 
 Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց ընթացակարգերը ապաակտիվացման համար
 

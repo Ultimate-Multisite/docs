@@ -3,7 +3,7 @@ title: Obrada webhookova
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Rukovanje webhookovima {#webhook-handling}
+# Rukovanje webhookovima
 
 Izradite prilagođene webhook krajnje točke za primanje događaja iz vanjskih usluga i sinkronizaciju podataka s Ultimate Multisite.
 

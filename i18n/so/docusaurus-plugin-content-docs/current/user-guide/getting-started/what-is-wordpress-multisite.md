@@ -3,7 +3,7 @@ title: Waa maxay WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Maxafka Multisite waa maxay? {#what-is-wordpress-multisite}
+# Maxafka Multisite waa maxay?
 
 WordPress-ka aasaasiga ah, waxaa jira oo loo yaqaano "Multisite" (Waddan-site), kaas oo ka soo bilaabo sanadkii 2010 markii la bilaabay WordPress 3.0. Inta badan, waxa uu la qaaday hagaajinro badan si loogu daro astaamo cusub iyo si loo xoojiyo amniga.
 

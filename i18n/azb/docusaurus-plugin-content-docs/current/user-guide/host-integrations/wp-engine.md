@@ -3,7 +3,7 @@ title: WP Engine Integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Entegrasyonu {#wp-engine-integration}
+# WP Engine Entegrasyonu
 
 ## Genel Bakış {#overview}
 WP Engine, WordPress siteleri için optimize edilmiş performans, güvenlik ve ölçeklenebilirlik sağlayan premium bir yönetilen WordPress barındırma platformudur. Bu entegrasyon, Ultimate Multisite ile WP Engine arasında otomatik alan adı senkronizasyonu sağlar.

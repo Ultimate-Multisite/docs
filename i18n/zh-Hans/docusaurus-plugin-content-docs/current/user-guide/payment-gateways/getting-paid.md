@@ -3,7 +3,7 @@ title: 收款
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# 收款 (v2) {#getting-paid-v2}
+# 收款 (v2)
 
 _**重要说明：本文适用于 Ultimate Multisite 2.x 版本。**_
 

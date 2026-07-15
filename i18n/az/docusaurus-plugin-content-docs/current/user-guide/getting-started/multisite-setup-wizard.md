@@ -3,7 +3,7 @@ title: Multisite Qurulum Sihirbazı
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Qurulum Sihirbazı {#multisite-setup-wizard}
+# Multisite Qurulum Sihirbazı
 
 Ultimate Multisite, standart bir WordPress quraşdırmasını avtomatik olaraq bir WordPress Multisite şəbətinə çevirən daxili bir sihirbaz (wizard) ehtiva edir. Bu, `wp-config.php` faylını əl ilə redaktə etmək və ya verilənlər bazası əmrləri çalıştırmaq zəruriyyətini aradan qaldırır.
 

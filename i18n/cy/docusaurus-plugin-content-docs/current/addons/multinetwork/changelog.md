@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Aml-Rwydwaith
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Cofnod Newidiadau Aml-Rwydwaith {#multi-network-changelog}
+# Cofnod Newidiadau Aml-Rwydwaith
 
 ### 1.3.0 {#130}
 * Newydd: Rhagolygwr templed rhwydwaith — porwch a rhagolygu templedi rhwydwaith gyda phanel byw cyn prynu.

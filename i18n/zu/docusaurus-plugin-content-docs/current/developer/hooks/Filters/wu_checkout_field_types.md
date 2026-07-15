@@ -4,7 +4,7 @@ title: Isihlungi - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Isihlungi: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Isihlungi: wu_checkout_field_types
 
 Ama-API ethu okwengeza izinhlobo ezintsha zezinkambu axhuma lapha.
 

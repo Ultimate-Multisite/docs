@@ -3,7 +3,7 @@ title: Kā kā at끄agt abonēšanu
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kā kādu varu at끄t abonēšanu? {#how-can-i-cancel-my-subscription}
+# Kā kādu varu at끄t abonēšanu?
 
 Ja jums ir Ultimate Multisite licenze, jūs varat at끄t tās atjaunojumu jebkurā laikā, kas jums vajadzī. Sekojiet vienkārši šiem soļiem:
 

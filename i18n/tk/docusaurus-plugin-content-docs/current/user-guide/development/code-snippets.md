@@ -3,7 +3,7 @@ title: Kod keselleri
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 üçin Kod Kesikleri {#code-snippets-for-v2}
+# v2 üçin Kod Kesikleri
 
 Esasa, **WordPress** üçin kod kesiklerinden, başga bir özel kiçik plugin gerekip biljek belli işleri yapmak üçin iseler. Bu tür kod kesikleri WordPress'in esas faylýnda ýa-da tema faylynyň (geneliki wepajynda functions.php) içinde ýerleşdirilipdir, ýa-da MU plugin hasaplanyp hem ulanylýar.
 

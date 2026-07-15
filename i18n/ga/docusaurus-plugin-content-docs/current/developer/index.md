@@ -3,7 +3,7 @@ title: Doiciméadacht d’Fhorbróirí
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Doiciméadú d'Fhorbróirí {#developer-documentation}
+# Doiciméadú d'Fhorbróirí
 
 Soláthraíonn an treoir seo gach rud atá de dhíth ar fhorbróirí chun comhtháthú le Ultimate Multisite, é a leathnú, nó breiseáin a fhorbairt dó. Athraíonn Ultimate Multisite líonra WordPress Multisite ina ardán Website-as-a-Service (WaaS).
 

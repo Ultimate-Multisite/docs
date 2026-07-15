@@ -3,7 +3,7 @@ title: Pamuat Berkas Sunrise Panglengkep
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 nambihan pamuat ekstensi sunrise pikeun add-on jeung integrasi MU-plugin kustom anu kudu jalan salila bootstrapping sunrise WordPress tanpa ngédit file `wp-content/sunrise.php` anu dihasilkeun.
 

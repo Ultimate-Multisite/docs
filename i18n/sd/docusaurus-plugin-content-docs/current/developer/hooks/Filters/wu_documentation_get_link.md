@@ -4,7 +4,7 @@ title: فلٽر - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# فلٽر: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# فلٽر: wu_documentation_get_link
 
 plugin ڊولپرز کي لنڪس فلٽر ڪرڻ جي اجازت ڏئي ٿو.
 

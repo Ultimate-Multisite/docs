@@ -3,7 +3,7 @@ title: Amateka y’impinduka ya Chuck Norris Facts
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Amateka y'impinduka ya Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Amateka y'impinduka ya Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Hiyongereyeho: Imikorere yo kuvugurura mu buryo bwikora binyuze kuri server yo kuvugurura ya Ultimate Multisite

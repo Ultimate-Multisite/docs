@@ -4,7 +4,7 @@ title: فلٽر - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# فلٽر: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# فلٽر: wp_ultimo_site_exporter_get_option
 
 نيٽ ورڪ اختيار جي slug ڪيل قدر واپس ڪري ٿو.
 

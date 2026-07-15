@@ -4,7 +4,7 @@ title: Tegevus - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Toiming: wu_page_after_render {#action-wupageafterrender}
+# Toiming: wu_page_after_render
 
 Võimaldab laienduste arendajatel lisada täiendavat sisu pärast seda, kui oleme lehe välja printinud
 

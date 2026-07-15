@@ -3,7 +3,7 @@ title: Àkọọlẹ Àwọn Àyípadà Ètò Ìsanwó Gẹ́gẹ́ bí Ìlò
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ìwé àkọsílẹ̀ ìyípadà àwọn Plan Tí a Díwọ̀n {#metered-plans-changelog}
+# Ìwé àkọsílẹ̀ ìyípadà àwọn Plan Tí a Díwọ̀n
 
 Ẹ̀yà 1.1.0 - Tí a tu jáde ní 2026-05-05
 - Tuntun: ìsanwó AI token fún àwọn multisite subsite — tọ́pa kí o sì gba owó fún lílo AI token kọjá àwọn site oníbàárà pẹ̀lú àwọn iye owó fún token kọ̀ọ̀kan tí a lè ṣètò

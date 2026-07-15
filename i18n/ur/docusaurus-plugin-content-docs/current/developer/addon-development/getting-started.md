@@ -3,7 +3,7 @@ title: ایڈ آن ڈیولپمنٹ کا آغاز
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ایڈآن ڈیولپمنٹ {#addon-development}
+# ایڈآن ڈیولپمنٹ
 
 ## ایڈآن کی ساخت {#addon-structure}
 

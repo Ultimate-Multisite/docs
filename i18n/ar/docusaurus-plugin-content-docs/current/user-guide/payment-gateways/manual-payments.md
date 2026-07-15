@@ -3,7 +3,7 @@ title: إعداد المدفوعات اليدوية
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# إعداد المدفوعات اليدوية (v2) {#setting-up-manual-payments-v2}
+# إعداد المدفوعات اليدوية (v2)
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

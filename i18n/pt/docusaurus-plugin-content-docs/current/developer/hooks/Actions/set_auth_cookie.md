@@ -4,7 +4,7 @@ title: Ação - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Ação: set_auth_cookie {#action-setauthcookie}
+# Ação: set_auth_cookie
 
 Dispara imediatamente antes de o cookie de autenticação ser definido.
 

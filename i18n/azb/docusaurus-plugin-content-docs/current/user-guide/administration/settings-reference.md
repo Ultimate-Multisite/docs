@@ -3,7 +3,7 @@ title: تنظیمات مرجعی
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# تنظیم‌لر قایناقی {#settings-reference}
+# تنظیم‌لر قایناقی
 
 بو صفحه Ultimate Multisite-ده گونده‌لیک ایداره‌چیلییه اثر ائدن تنظیم‌لری و سون داورانیش دگیشیک‌لیک‌لرینی ایزلیر.
 

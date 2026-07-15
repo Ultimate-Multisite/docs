@@ -3,7 +3,7 @@ title: Xuất trang web
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Xuất Site {#site-export}
+# Xuất Site
 
 Trang quản trị **Site Export** (Xuất Site) cho phép quản trị viên mạng đóng gói một site đơn lẻ, hoặc toàn bộ mạng lưới, thành một file nén (archive) có thể tải xuống. File này dùng để di chuyển, sao lưu, hoặc bàn giao dự án.
 

@@ -3,7 +3,7 @@ title: Мусоҳибаи шиносоӣ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Мусоҳибаи Discovery {#discovery-interview}
+# Мусоҳибаи Discovery
 
 **Мусоҳибаи Discovery** қадами аввал дар раванди тарроҳии Theme Builder аст. Он маълумотро дар бораи сайти шумо, тиҷорати шумо ва афзалиятҳои тарроҳии шумо ҷамъ мекунад, то theme-и шахсисозишуда эҷод шавад.
 

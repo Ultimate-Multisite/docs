@@ -3,7 +3,7 @@ title: Journal des modifications GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Journal des modifications GoCardless {#gocardless-changelog}
+# Journal des modifications GoCardless
 
 Version : 1.0.3 - Publiée le 2026-05-05
 * Correction : Les sites en attente orphelins sont désormais nettoyés lorsqu’une adhésion GoCardless est annulée alors qu’elle est en attente ou en état suspendu

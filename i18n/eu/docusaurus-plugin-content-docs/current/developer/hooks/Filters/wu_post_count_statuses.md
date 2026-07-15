@@ -4,7 +4,7 @@ title: Iragazkia - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Iragazkia: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Iragazkia: wu_post_count_statuses
 
 Plugin garatzaileei aukera ematen die zenbatu beharreko bidalketa-egoerak aldatzeko. Lehenespenez, argitaratutako eta pribatuak diren bidalketak zenbatzen dira
 

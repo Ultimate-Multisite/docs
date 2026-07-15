@@ -3,7 +3,7 @@ title: 'Pelajaran 6: Pengalaman Pendaftaran'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Pelajaran 6: Pengalaman Pendaftaran {#lesson-6-the-signup-experience}
+# Pelajaran 6: Pengalaman Pendaftaran
 
 Alur checkout adalah tempat minat berubah menjadi pendapatan. Proses pendaftaran yang membingungkan atau terlalu umum akan membuat pelanggan kabur. Alur yang spesifik untuk ceruk pasar mereka, yang menggunakan bahasa mereka, dan terasa mudah digunakan akan mengubah mereka menjadi pelanggan yang membayar.
 

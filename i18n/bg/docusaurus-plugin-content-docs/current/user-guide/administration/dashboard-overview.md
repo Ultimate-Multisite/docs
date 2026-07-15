@@ -3,7 +3,7 @@ title: Преглед на контролната панел
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Обзор на Dashboard-а {#dashboard-overview}
+# Обзор на Dashboard-а
 
 Ultimate Multisite има специален **Dashboard** в менюто Ultimate Multisite и добавя виджпети (widgets) и към Network Dashboard-а. В тази статия ще разгледаме какво можете да видите и на двете места.
 

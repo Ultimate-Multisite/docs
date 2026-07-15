@@ -3,7 +3,7 @@ title: Asosiy tushunchalar
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Asosiy Tushunchalar {#basic-concepts}
+# Asosiy Tushunchalar
 
 Yangi WordPress Multisite foydalanuvchisi va Ultimate Multisite bilan yangi ish boshlagan biri uchun dastlab ko'p yangi so'zlar va iboralarni o'rganish kerak bo'ladi. Ularni o'rganish muhim vazifa, chunki siz platformani va uning butunligini qanday ishlashini tushunishingiz kerak bo'ladi.
 

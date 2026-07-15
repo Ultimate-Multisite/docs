@@ -3,7 +3,7 @@ title: 'Sapak 9: Peýda üçin nyrhlandyrmak'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Sapak 9: Peýda üçin nyrh kesgitlemek {#lesson-9-pricing-for-profit}
+# Sapak 9: Peýda üçin nyrh kesgitlemek
 
 Sapak 5-de FitSite planlary üçin başlangyç nyrhlary kesgitledik. Indi girdejini artdyrýan, ýokarlandyrmalary höweslendirýän we müşderi ýitgisini azaldýan usullar bilen nyrh strategiýasyny kämilleşdirýäris.
 

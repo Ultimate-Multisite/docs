@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# សកម្មភាព៖ wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# សកម្មភាព៖ wp_ultimo_gocardless_activation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងទៀតនៃកម្មវិធីបន្ថែមភ្ជាប់ទម្លាប់របស់ពួកវាសម្រាប់ការធ្វើឱ្យសកម្ម
 

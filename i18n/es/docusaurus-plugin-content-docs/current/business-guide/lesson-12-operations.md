@@ -3,7 +3,7 @@ title: 'Lección 12: Dirigiendo el negocio'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lección 12: Gestionando el Negocio {#lesson-12-running-the-business}
+# Lección 12: Gestionando el Negocio
 
 Una plataforma no es un proyecto que se termina, sino un negocio que hay que gestionar. Esta lección cubre las operaciones diarias de administración de FitSite: soporte, facturación, mantenimiento y cómo mantener contentos a los clientes.
 

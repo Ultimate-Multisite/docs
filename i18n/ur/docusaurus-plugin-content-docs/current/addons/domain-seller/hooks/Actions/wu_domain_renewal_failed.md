@@ -4,7 +4,7 @@ title: Action - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Action: wu_domain_renewal_failed
 
 یہ اس وقت چلتا ہے جب ڈومین کی تجدید (renewal) کی کوشش ناکام ہو جاتی ہے۔
 

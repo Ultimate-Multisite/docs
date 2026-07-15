@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 প্লাগইন ডেভেলপাৰসকলক কোনে কোন পোষ্ট ষ্টেটছ গণনা কৰা হ'ব, সেয়া সলনি কৰিবলৈ অনুমতি দিয়ে। ডিফল্টভাৱে, 'published' আৰু 'private' পোষ্টসমূহ গণনা কৰা হয়।
 

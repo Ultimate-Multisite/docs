@@ -3,7 +3,7 @@ title: Operations des souveränen Mieters
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Betrieb souveräner Tenants {#sovereign-tenant-operations}
+# Betrieb souveräner Tenants
 
 Ultimate Multisite Version 1.2.0 fügt betriebliche Werkzeuge für souveräne Tenants hinzu: Subsites, die mit ihrer eigenen Datenbank, ihrem Dateisystem-Root und ihrem Routing-Kontext laufen, während sie vom Netzwerkadministrator aus sichtbar bleiben.
 

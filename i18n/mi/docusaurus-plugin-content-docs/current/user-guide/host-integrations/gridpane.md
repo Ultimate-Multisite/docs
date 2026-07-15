@@ -3,7 +3,7 @@ title: Whakawhanaungatanga GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Whakawhanaungatanga me GridPane (GridPane Integration) {#gridpane-integration}
+# Whakawhanaungatanga me GridPane (GridPane Integration)
 
 ## Whakataki (Overview) {#overview}
 He GridPane heta-tāwhiri (control panel) mō WordPress, tino whai tikanga, i whakatoa ki te whakamahi. He tino nui tēnei integration i te whaiaro syncing o domain me te whakamaoritanga SSL certificateihi (SSL certificate management) anō i waenga i Ultimate Multisite me GridPane.

@@ -3,7 +3,7 @@ title: AffiliateWP Mbiri ya Zosintha
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Mbiri ya Zosintha ya AffiliateWP {#affiliatewp-changelog}
+# Mbiri ya Zosintha ya AffiliateWP
 
 Mtundu: 2.0.1 - Yotulutsidwa pa 2025-09-28
 

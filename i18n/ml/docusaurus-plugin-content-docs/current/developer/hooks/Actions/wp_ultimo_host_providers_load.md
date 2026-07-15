@@ -4,7 +4,7 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Action: wp_ultimo_host_providers_load
 
 wp plugins വഴി സ്വന്തമായി ഹോസ്റ്റ് പ്രൊവൈഡർ ഇന്റഗ്രേഷനുകൾ ചേർക്കാൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

@@ -3,7 +3,7 @@ title: Għmli Codijiet taċċessjoni
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kemmis Discount Codes (v2) {#creating-discount-codes-v2}
+# Kemmis Discount Codes (v2)
 
 _**NOTA IMPORTANTI: Dan dan l-artiklu huwa referenzi għall Ultimate Multisite bizzjoni 2.x.**_
 

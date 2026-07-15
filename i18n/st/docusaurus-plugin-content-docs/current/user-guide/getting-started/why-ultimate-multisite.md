@@ -3,7 +3,7 @@ title: Kea eng Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ke eng kae Ultimate Multisite {#why-ultimate-multisite}
+# Ke eng kae Ultimate Multisite
 
 Ha u le ka e ntlala kae se tsela, o ka ne u le ka utlwa hore ho ba le bone seo se tla fana ka rona. Re bolela hore re tla le bone tse u batlang ka ho fetoga ea lona bonako.
 

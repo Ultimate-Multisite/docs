@@ -4,7 +4,7 @@ title: Isihlungi - wu_mcp_include_ability
 sidebar_label: wu_mcp_include_ability
 _i18n_hash: 5925d523ccf0a8d9477e873ec3d891c0
 ---
-# Isihlungi: wu_mcp_include_ability {#filter-wumcpincludeability}
+# Isihlungi: wu_mcp_include_ability
 
 Isihlungi sokweqa isinqumo sokufakwa kwekhono le-MCP.
 

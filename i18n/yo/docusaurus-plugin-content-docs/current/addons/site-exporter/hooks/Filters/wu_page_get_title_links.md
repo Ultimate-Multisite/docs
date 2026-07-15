@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Àlẹmọ: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Àlẹmọ: wu_page_get_title_links
 
 Gba awọn olupilẹṣẹ afikun, ati awa funra wa, laaye lati ṣafikun awọn ọna asopọ ìṣe si awọn oju-iwe ṣiṣatunkọ wa.
 

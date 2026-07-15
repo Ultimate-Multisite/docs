@@ -3,7 +3,7 @@ title: Kupanga kwa Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Kutsira kwa Site (Site Export) {#site-export}
+# Kutsira kwa Site (Site Export)
 
 Page ya admin ya **Site Export** inalipa administrators wa mtandao kuweka site moja, au mtandao wote, katika archive inayoweza kupakuliwa kwa ajili ya kusogeza (migration), backup, au kazi za kukabidhi.
 

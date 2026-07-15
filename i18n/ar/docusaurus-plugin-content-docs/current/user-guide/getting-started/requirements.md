@@ -3,7 +3,7 @@ title: المتطلبات
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# متطلبات Ultimate Multisite {#ultimate-multisite-requirements}
+# متطلبات Ultimate Multisite
 
 أول شيء قد تسأل نفسك قبل شراء Ultimate Multisite هو ما هي المتطلبات لتشغيل الإضافة الخاصة بنا. حسنًا، لحسن الحظ، هناك فقط بعض المتطلبات الأساسية لتشغيل Ultimate Multisite: **اسم نطاق**، **مزود استضافة** جيد، وتثبيت WordPress **Multisite**. هذا كل ما تحتاجه!
 

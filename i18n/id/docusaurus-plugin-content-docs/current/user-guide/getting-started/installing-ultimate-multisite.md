@@ -3,7 +3,7 @@ title: Menginstal Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Menginstal Ultimate Multisite {#installing-ultimate-multisite}
+# Menginstal Ultimate Multisite
 
 :::note
 Tutorial ini mengasumsikan Anda sudah menginstal dan mengonfigurasi WordPress Multisite. Untuk mempelajari caranya, lihat [tutorial ini](https://www.wpbeginner.com/glossary/multisite/) dari WP Beginner.

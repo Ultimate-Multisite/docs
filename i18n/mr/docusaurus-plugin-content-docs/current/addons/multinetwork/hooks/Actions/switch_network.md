@@ -4,7 +4,7 @@ title: क्रिया - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Action: switch_network {#action-switchnetwork}
+# Action: switch_network
 
 जेव्हा सध्याचा नेटवर्क संदर्भ (network context) बदलला जातो, तेव्हा हे ॲक्शन कार्यान्वित होते.
 

@@ -3,7 +3,7 @@ title: Chuck Norris faktlari o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris faktlari o‘zgarishlar jurnali {#chuck-norris-facts-changelog}
+# Chuck Norris faktlari o‘zgarishlar jurnali
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Qo‘shildi: Ultimate Multisite yangilash serveri orqali avtomatik yangilash funksiyasi

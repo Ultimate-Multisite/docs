@@ -3,7 +3,7 @@ title: Visión general do painel
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Visión Geral do Dashboard {#dashboard-overview}
+# Visión Geral do Dashboard
 
 O Ultimate Multisite ten unha **Dashboard** dedicada dentro do menú Ultimate Multisite, e tamén añade widgets ao Network Dashboard. Esta entrada explica o que verás en ambos lugares.
 

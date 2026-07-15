@@ -3,7 +3,7 @@ title: Gestionarea Linkurilor Partajabile pentru Planuri
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Gestionarea linkurilor partajabile pentru planuri {#managing-shareable-links-for-plans}
+# Gestionarea linkurilor partajabile pentru planuri
 
 Ultimate Multisite îți oferă opțiunea de a partaja linkuri de planuri direct cu clienții tăi. Pentru a face acest lucru, accesează pagina de editare a oricărui plan și apasă butonul _Click to copy the Shareable Link_.
 

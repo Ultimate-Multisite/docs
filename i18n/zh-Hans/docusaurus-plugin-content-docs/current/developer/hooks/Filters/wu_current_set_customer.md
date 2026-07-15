@@ -4,7 +4,7 @@ title: 过滤器 - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# 过滤器: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# 过滤器: wu_current_set_customer
 
 允许开发者修改默认行为并以不同方式设置当前客户。
 

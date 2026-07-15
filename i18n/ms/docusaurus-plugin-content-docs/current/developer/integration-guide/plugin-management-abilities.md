@@ -3,7 +3,7 @@ title: Keupayaan Pengurusan Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kemampuan Pengurusan Plugin {#plugin-management-abilities}
+# Kemampuan Pengurusan Plugin
 
 Gratis AI Agent v1.5.0 dilengkapi dengan **7 kemampuan pengurusan plugin** yang boleh dipanggil oleh pembantu AI semasa perbualan. Kemampuan ini memberikan kawalan programatik ke atas plugin WordPress yang dipasang melalui [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

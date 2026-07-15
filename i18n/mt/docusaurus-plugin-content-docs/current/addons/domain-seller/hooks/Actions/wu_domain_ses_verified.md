@@ -4,7 +4,7 @@ title: Azzjoni - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Azzjoni: wu_domain_ses_verified {#action-wudomainsesverified}
+# Azzjoni: wu_domain_ses_verified
 
 Tiskatta meta SES jikkonferma li dominju huwa vverifikat bid-DKIM.
 

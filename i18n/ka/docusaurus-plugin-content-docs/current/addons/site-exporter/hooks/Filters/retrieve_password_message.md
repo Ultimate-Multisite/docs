@@ -4,7 +4,7 @@ title: ფილტრი - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# ფილტრი: retrieve_password_message {#filter-retrievepasswordmessage}
+# ფილტრი: retrieve_password_message
 
 ფილტრავს პაროლის გადაყენების წერილის შეტყობინების შიგთავსს.
 

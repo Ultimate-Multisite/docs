@@ -3,7 +3,7 @@ title: 外掛管理能力
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# 外掛管理功能 {#plugin-management-abilities}
+# 外掛管理功能
 
 Gratis AI Agent v1.5.0 內建了 **7 個外掛管理功能**，AI 助理可以在對話過程中呼叫這些功能。這些功能提供了對透過 [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) 安裝的 WordPress 外掛的程式化控制能力。
 

@@ -3,7 +3,7 @@ title: ତୃତୀୟପକ୍ଷ ମୋଡ୍ ମାଇଗ୍ରେସନ୍
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# તૃતીય-પક્ષ મોડ માઇગ્રેશન (Third-Party Mode Migration) {#third-party-mode-migration}
+# તૃતીય-પક્ષ મોડ માઇગ્રેશન (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 માં તૃતીય-પક્ષ ક્ષમતાઓ (third-party abilities) ને કેવી રીતે હેન્ડલ કરવામાં આવે છે તેમાં ફેરફાર આવ્યા છે. **તૃતીય-પક્ષ મોડ હવે ડિફોલ્ટ રૂપે ઓટો (auto) પર સેટ થાય છે**, જેનાથી WordPress 7.0+ પર મેન્યુઅલ કોન્ફિગરેશન વિના નેટિવ WordPress Abilities API સાથે એકીકરણ શક્ય બને છે.
 

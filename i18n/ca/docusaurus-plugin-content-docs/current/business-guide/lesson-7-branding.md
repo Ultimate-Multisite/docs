@@ -3,7 +3,7 @@ title: 'Lliçó 7: Fes-ho teu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Aula 7: Fes-ho teu {#lesson-7-making-it-yours}
+# Aula 7: Fes-ho teu
 
 Els teus clients mai han de sentir que estan utilitzant "un plugin de WordPress". Han de sentir que estan utilitzant FitSite, una plataforma construïda per la seva indústria. Aquesta aula cobreix la marca (branding), el *white-labeling* i com fer que la plataforma es senti com un producte propi.
 

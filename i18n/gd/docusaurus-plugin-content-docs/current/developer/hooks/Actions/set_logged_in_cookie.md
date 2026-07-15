@@ -4,7 +4,7 @@ title: Gnìomh - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Gnìomh: set_logged_in_cookie {#action-setloggedincookie}
+# Gnìomh: set_logged_in_cookie
 
 Thèid a chur gu dol sa bhad mus tèid a’ bhriosgaid dearbhaidh airson cleachdaiche logaichte a-steach a shuidheachadh.
 

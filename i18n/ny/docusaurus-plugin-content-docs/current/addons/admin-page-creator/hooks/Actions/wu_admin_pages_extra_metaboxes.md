@@ -4,7 +4,7 @@ title: Chochita - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Chochita: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# Chochita: wu_admin_pages_extra_metaboxes
 
 Lolani opanga mapulogalamu owonjezera kuwonjezera zosankha zatsopano za mabokosi a meta =)
 

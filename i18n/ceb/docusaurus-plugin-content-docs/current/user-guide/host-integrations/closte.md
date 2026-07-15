@@ -3,7 +3,7 @@ title: Integrasyon sa Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Pagsugod sa Integrasyon {#closte-integration}
+# Pagsugod sa Integrasyon
 
 ## Panan-aw (Overview) {#overview}
 Ang Closte kay usa ka managed WordPress hosting platform nga gihimo gamit ang Google Cloud infrastructure. Kini nga integrasyon nagtugot sa awtomatikong pag-sync sa domain ug pagdumala sa SSL certificate tali sa Ultimate Multisite ug Closte.

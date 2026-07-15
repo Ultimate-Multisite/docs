@@ -3,7 +3,7 @@ title: Agen Bawaan
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agent Bawaan {#built-in-agents}
+# Agent Bawaan
 
 Gratis AI Agent v1.9.0 menyertakan lima agent bawaan, masing-masing telah dikonfigurasi sebelumnya dengan serangkaian alat yang terfokus, system prompt yang disesuaikan, dan saran awal yang cocok dengan tugas umum di area tersebut. Beralih antar agent mengubah apa yang dapat dilakukan assistant dan bagaimana ia merespons — tanpa konfigurasi apa pun dari Anda. Superdav AI Agent v1.18.0 dapat menambahkan alat yang sadar jadwal, catatan pengingat, gerbang persetujuan, dan notifikasi SMS ke workflow ini ketika integrasi terkait dikonfigurasi.
 

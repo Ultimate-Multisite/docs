@@ -3,7 +3,7 @@ title: Stripe স্থাপন কৰা
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway সেটআপ কৰা (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway সেটআপ কৰা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ বৰ্ণনা কৰে।**_
 

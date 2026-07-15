@@ -3,7 +3,7 @@ title: Nkwado-ara Ọrụ
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kỹ năng Nhạy cảm với Chủ đề {#theme-aware-skills}
+# Kỹ năng Nhạy cảm với Chủ đề
 
 Superdav AI Agent v1.10.0 mang đến bốn kỹ năng tích hợp mới tự động thích ứng với chủ đề WordPress bạn đang dùng. Những kỹ năng này cung cấp hướng dẫn và khả năng chuyên biệt được thiết kế riêng cho cấu trúc và các tính năng của chủ đề đó.
 

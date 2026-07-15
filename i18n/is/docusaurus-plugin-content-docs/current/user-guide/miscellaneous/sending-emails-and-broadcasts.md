@@ -3,7 +3,7 @@ title: Að senda tölvupósta og fjöldasendingar
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Að senda tölvupósta og útsendingar (v2) {#sending-emails-and-broadcasts-v2}
+# Að senda tölvupósta og útsendingar (v2)
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 

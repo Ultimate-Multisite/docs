@@ -4,7 +4,7 @@ title: Aksyon - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Aksyon: move_site {#action-movesite}
+# Aksyon: move_site
 
 Nati-trigger matapos mailipat ang isang site sa isang bagong network.
 

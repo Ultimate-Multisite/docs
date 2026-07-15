@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# ફિલ્ટર: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# ફિલ્ટર: wu_captcha_whitelisted
 
 આ ફિલ્ટર નક્કી કરે છે કે વર્તમાન યુઝર અથવા રીક્વેસ્ટને વ્હાઇટલિસ્ટ (whitelisted) કરવું જોઈએ કે નહીં.
 

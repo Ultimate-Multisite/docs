@@ -4,7 +4,7 @@ title: Әрекет - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Әрекет: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Әрекет: wu_domain_seller_process_purchase
 
 Төлем жасау аяқталғаннан кейін доменді сатып алу өңделіп жатқанда іске қосылады.
 

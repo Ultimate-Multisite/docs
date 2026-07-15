@@ -3,7 +3,7 @@ title: 'Leasan 5: A’ dealbhadh do phlanaichean'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leasan 5: Dealbhadh nam Planaichean agad {#lesson-5-designing-your-plans}
+# Leasan 5: Dealbhadh nam Planaichean agad
 
 Chan e dìreach ìrean prìse a th’ anns na h-ìrean plana agad -- tha iad nan sgàthan air mar a bhios luchd-ceannach na niche agad ag obair ann an da-rìribh. San leasan seo dealbhaichidh tu ìrean toraidh a fhreagras air fìor fheumalachdan ghnìomhachasan fallaineachd aig diofar ìrean.
 

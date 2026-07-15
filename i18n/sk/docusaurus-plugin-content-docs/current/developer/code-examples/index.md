@@ -3,7 +3,7 @@ title: Pokročilé príklady kódu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Pokročilé príklady kódu {#advanced-code-examples}
+# Pokročilé príklady kódu
 
 Tieto príklady demonštrujú pokročilé integračné vzory s Ultimate Multisite.
 

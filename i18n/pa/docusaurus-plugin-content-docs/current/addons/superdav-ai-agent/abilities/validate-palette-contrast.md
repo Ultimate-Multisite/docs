@@ -3,7 +3,7 @@ title: Palette Contrast Jaanch Karein
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# ਪੈਲੇਟ ਕੰਟ੍ਰਾਸਟ ਵੈਲੀਡੇਟ ਕਰਨਾ {#validate-palette-contrast}
+# ਪੈਲੇਟ ਕੰਟ੍ਰਾਸਟ ਵੈਲੀਡੇਟ ਕਰਨਾ
 
 **ਪੈਲੇਟ ਕੰਟ੍ਰਾਸਟ ਵੈਲੀਡੇਟ ਕਰਨਾ** ਸਮਰੱਥਾ ਤੁਹਾਡੇ ਡਿਜ਼ਾਈਨ ਪੈਲੇਟ ਵਿੱਚ ਰੰਗ ਜੋੜਿਆਂ ਦੀ ਜਾਂਚ ਕਰਦੀ ਹੈ ਤਾਂ ਜੋ ਇਹ ਯਕੀਨੀ ਬਣਾਇਆ ਜਾ ਸਕੇ ਕਿ ਉਹ WCAG (Web Content Accessibility Guidelines) ਦੇ ਅਨੁਕੂਲ ਹਨ, ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਕਿ ਉਹ ਤੁਹਾਡੇ ਥੀਮ 'ਤੇ ਲਾਗੂ ਕੀਤੇ ਜਾਣ।
 

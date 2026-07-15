@@ -3,7 +3,7 @@ title: מולטיסייט־איינריכטונג־אַסיסטענט
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite אויפֿשטעלונג־וועגווייזער {#multisite-setup-wizard}
+# Multisite אויפֿשטעלונג־וועגווייזער
 
 Ultimate Multisite נעמט אַרײַן אַן אײַנגעבויטן וועגווייזער וואָס קאָנווערטירט אויטאָמאַטיש אַ נאָרמאַלע WordPress אינסטאַלאַציע אין אַ WordPress Multisite נעץ. דאָס נעמט אַוועק די נויט צו רעדאַגירן האַנטלעך `wp-config.php` אָדער לויפֿן דאַטאַבאַזע־באַפֿעלן.
 

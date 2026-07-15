@@ -3,7 +3,7 @@ title: Ultimate Multisiteの翻訳
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite の翻訳 {#translating-ultimate-multisite}
+# Ultimate Multisite の翻訳
 
 Ultimate Multisite は英語で開発されていますが、プラグインは完全に翻訳可能であり、翻訳の貢献を積極的に歓迎しています。
 

@@ -3,7 +3,7 @@ title: Webhooklar
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooklar Haqida Birinchi Bakror Ko'rish (v2) {#a-first-look-on-webhooks-v2}
+# Webhooklar Haqida Birinchi Bakror Ko'rish (v2)
 
 _**E'TIBOR: Bu funksiya yoki maqola faqat ilg'or foydalanuvchilar uchun mo'ljallangan.**_
 

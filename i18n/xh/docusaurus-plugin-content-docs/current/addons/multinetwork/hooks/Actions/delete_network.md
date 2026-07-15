@@ -4,7 +4,7 @@ title: Isenzo - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Isenzo: delete_network {#action-deletenetwork}
+# Isenzo: delete_network
 
 Sisebenza emva kokuba inethiwekhi icinyiwe.
 

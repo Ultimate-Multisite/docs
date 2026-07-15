@@ -3,7 +3,7 @@ title: WordPress Multisite ndi chiyani?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kodi WordPress Multisite ndi chiyani? {#what-is-wordpress-multisite}
+# Kodi WordPress Multisite ndi chiyani?
 
 M'moyo wamene, WordPress imapereka chinthu chamene muliwo chiyenera chamene chimene chitsogolera kuti "Multisite". Izi zikuyenera ku mpaka 2010 pamene WordPress 3.0 iliperekedwa. Komwe m'maka, imapereka zambiri kuti zimene nkhani zake zikugwira zinthu zatsanitsa zatsanitsa ndi kukhazikitsa kukhala kwakukulu.
 

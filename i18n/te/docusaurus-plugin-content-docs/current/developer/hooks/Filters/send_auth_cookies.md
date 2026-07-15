@@ -4,7 +4,7 @@ title: Filter - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies {#filter-sendauthcookies}
+# Filter: send_auth_cookies
 
 క్లయింట్‌కు ఆథెంటికేషన్ కుకీలు (auth cookies) వాస్తవంగా పంపబడకుండా నిరోధించడానికి ఇది సహాయపడుతుంది.
 

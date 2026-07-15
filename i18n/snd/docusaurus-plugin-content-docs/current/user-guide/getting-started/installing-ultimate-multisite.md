@@ -3,7 +3,7 @@ title: الٽميٽ ملٽي سائٽ جي تنصيب
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# الٽيميٽ ملٽي سائيٽ جي انسٽاليشن {#installing-ultimate-multisite}
+# الٽيميٽ ملٽي سائيٽ جي انسٽاليشن
 
 :::note
 هي ٽيوٽوريل فرض ڪري ٿو ته توهان وٽ اڳ ۾ ئي ورڊ پريس ملٽي سائيٽ انسٽال ۽ ڪانفيگر ٿيل آهي. اهو ڪرڻ جي معلومات لاءِ، WP بيگنر پاران [هن ٽيوٽوريل](https://www.wpbeginner.com/glossary/multisite/) چيڪ ڪريو.

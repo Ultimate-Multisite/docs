@@ -3,7 +3,7 @@ title: פעולות שוכר ריבוני
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# פעולות שוכני ריבונות (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# פעולות שוכני ריבונות (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 מוסיף כלים תפעוליים לשוכני ריבונות: סאב-сайטים שפועלים עם מסד נתונים, מערכת קבצים וקונטקסט ניתוב משלהם, תוך שמירה על נראות מנהל הרשת.
 

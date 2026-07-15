@@ -4,7 +4,7 @@ title: Filter - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url {#filter-wureturnurl}
+# Filter: wu_return_url
 
 ಚೆಕ್‌ಔಟ್ ಪ್ರಕ್ರಿಯೆಗಳು ಮುಗಿದ ನಂತರ ಬಳಸುವ ಗೇಟ್‌ವೇ ರಿಟರ್ನ್ URL ಅನ್ನು ಬದಲಾಯಿಸಲು ಇದು developers‌ಗಳಿಗೆ ಅನುಮತಿಸುತ್ತದೆ.
 

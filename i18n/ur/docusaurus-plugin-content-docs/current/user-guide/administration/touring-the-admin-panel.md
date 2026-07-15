@@ -3,7 +3,7 @@ title: ایڈمن پینل کا جائزہ
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel کا دورہ {#touring-the-admin-panel}
+# Admin Panel کا دورہ
 
 Ultimate Multisite کا مقصد زیادہ سے زیادہ سادہ اور خود واضح ہونا ہے، لیکن اتنے طاقتور ٹول کے ساتھ ایک رہنمائی والا دورہ مددگار ہو سکتا ہے۔ آئیے Admin صفحات سے گزرتے ہیں تاکہ آپ کو سمت سمجھنے میں مدد ملے۔
 

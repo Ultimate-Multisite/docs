@@ -3,7 +3,7 @@ title: 'Piwulang 3: Nyiyapake Jaringan Panjenengan'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Piwulang 3: Nyiyapake Jaringan Panjenengan {#lesson-3-setting-up-your-network}
+# Piwulang 3: Nyiyapake Jaringan Panjenengan
 
 Wektune mbangun. Ing piwulang iki panjenengan bakal masang Ultimate Multisite lan ngonfigurasi pondhasar jaringan FitSite. Saben keputusan ing kene digawe kanthi niche fitness minangka tetimbangan.
 

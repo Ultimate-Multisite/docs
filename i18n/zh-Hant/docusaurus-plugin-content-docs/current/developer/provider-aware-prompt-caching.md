@@ -3,7 +3,7 @@ title: 提供者感知提示快取
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# 供應商感知提示快取 (Provider-Aware Prompt Caching) {#provider-aware-prompt-caching}
+# 供應商感知提示快取 (Provider-Aware Prompt Caching)
 
 Superdav AI Agent v1.12.0 引入了**供應商感知提示快取**功能。此功能透過在不同的 LLM 供應商之間快取提示，從而優化 API 成本和延遲。每個供應商都有不同的快取機制和配置。
 

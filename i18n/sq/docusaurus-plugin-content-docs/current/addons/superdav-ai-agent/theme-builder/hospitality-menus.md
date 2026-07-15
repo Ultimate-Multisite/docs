@@ -3,7 +3,7 @@ title: Menu të mikpritjes
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menutë e Hospitality {#hospitality-menus}
+# Menutë e Hospitality
 
 Veçoria **Hospitality Menus** i lejon Theme Builder të gjenerojë dhe të integrojë faqe të strukturuara menush ushqimi dhe pijesh drejtpërdrejt në faqen tuaj WordPress.
 

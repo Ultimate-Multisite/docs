@@ -3,7 +3,7 @@ title: Verifikacija sovrenske migracije
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikacija migracije suverena {#sovereign-migration-verification}
+# Verifikacija migracije suverena
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 vključuje WP-CLI komande za verifikacijo migracij suverenih tenentov. Uporabite ih če se migracija tenenta, objava SSO ali izolirana instalacija ne ponašajo kot pričakovano.
 

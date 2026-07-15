@@ -3,7 +3,7 @@ title: Amakhono e-Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Amakhono e-Theme Builder: Yakha Uhlaka Futhi Usebenzise Ama-Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Amakhono e-Theme Builder: Yakha Uhlaka Futhi Usebenzise Ama-Block Themes
 
 Superdav AI Agent v1.12.0 yethula amakhono amabili anamandla akuvumela ukuthi ukhiqize futhi uthumele ama-block themes enziwe ngokwezifiso ngqo kusuka kusixhumi sengxoxo.
 

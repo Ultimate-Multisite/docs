@@ -4,7 +4,7 @@ title: చర్య - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations {#action-wuregisterintegrations}
+# Action: wu_register_integrations
 
 ఇంటిగ్రేషన్స్ తమను తాము రిజిస్టర్ చేసుకోవడానికి ఇది ట్రిగ్గర్ అవుతుంది.
 

@@ -3,7 +3,7 @@ title: 'Lekcija 6: Iskustvo registracije'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcija 6: Iskustvo registracije {#lesson-6-the-signup-experience}
+# Lekcija 6: Iskustvo registracije
 
 Tijek naplate mjesto je gdje se interes pretvara u prihod. Zbunjujući ili generički proces registracije gubi kupce. Tijek specifičan za nišu, koji govori njihovim jezikom i djeluje jednostavno, pretvara ih u kupce.
 

@@ -3,7 +3,7 @@ title: د ښودلو وړتیا
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# ښودلو ګါمنولیت (Ability Visibility) {#ability-visibility}
+# ښودلو ګါمنولیت (Ability Visibility)
 
 Superdav AI Agent v1.12.0 له **Ability Visibility** kontrollونه راغلاستل چې تعیین کوي چې کوم سطحونه هر چا د وړتیاو څرګندوي. دا کار اجازه ورکوي مدیرانو ته چې تنظیم کړي چې کومي ایجن قابلیتونه د REST APIs، MCP سرورونو، WooCommerce هم 통합ات او نورو رابطو له لارې موجود وي.
 

@@ -3,7 +3,7 @@ title: የጣቢያ ዝርዝር ክህሎት
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# የጣቢያ ዝርዝር መግለጫ ክህሎት (Site Specification Skill) {#site-specification-skill}
+# የጣቢያ ዝርዝር መግለጫ ክህሎት (Site Specification Skill)
 
 **የጣቢያ ዝርዝር መግለጫ ክህሎት** የጣቢያዎን ግቦች፣ ተመልካቾች እና የምርት ስም ማንነት ለመያዝ የሚያስችል መዋቅራዊ አካሄድ ነው። ይህ መረጃ በ**site_brief** ማህደረ ትውስታዎ ውስጥ ይቀመጣል፤ ይህ ደግሞ አግነዋሚዎች (agents) በየجلسቶቹ ውስጥ ወጥነት ያለው እና ሁኔታን የሚያገናዝ የድጋፍ አገልግሎት ለመስጠት የሚያ้างብሩበት ነው።
 

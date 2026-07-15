@@ -3,7 +3,7 @@ title: Pituduh Panata Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Panduan Penyiapan Multisite {#multisite-setup-wizard}
+# Panduan Penyiapan Multisite
 
 Ultimate Multisite ngabarkeun wizard anu aya di dalamnya anu otomatis ngubah instalasi WordPress biasa jadi jaringan WordPress Multisite. Ieu ngahapkeun kabutuhan pikeun ngedit `wp-config.php` atawa ngalaksanakeun perintah database secara manual.
 

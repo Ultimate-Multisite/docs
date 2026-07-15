@@ -4,7 +4,7 @@ title: פֿילטער - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# פֿילטער: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# פֿילטער: mu-migration/all_posts/default_args
 
 פֿילטערט די פעליקייַטיקע args פֿאַר אָנפֿרעגן אַרטיקלען אין דער all_posts מעטאָד.
 

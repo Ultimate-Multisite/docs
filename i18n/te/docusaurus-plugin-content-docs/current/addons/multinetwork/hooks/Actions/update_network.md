@@ -4,7 +4,7 @@ title: Action - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network {#action-updatenetwork}
+# Action: update_network
 
 ఇప్పటికే ఉన్న నెట్‌వర్క్‌ను అప్‌డేట్ చేసిన తర్వాత ఇది ట్రిగ్గర్ అవుతుంది.
 

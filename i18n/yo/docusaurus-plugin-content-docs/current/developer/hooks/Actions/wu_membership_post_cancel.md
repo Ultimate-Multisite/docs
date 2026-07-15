@@ -4,7 +4,7 @@ title: Ìṣe - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Ìṣe: wu_membership_post_cancel {#action-wumembershippostcancel}
+# Ìṣe: wu_membership_post_cancel
 
 Ó máa ń ṣiṣẹ́ lẹ́yìn tí a bá fagilé ìforúkọsílẹ̀ ọmọ ẹgbẹ́.
 

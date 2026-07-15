@@ -3,7 +3,7 @@ title: Илгичтер маалымдамасы
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks маалымдамасы {#hooks-reference}
+# Hooks маалымдамасы
 
 Ultimate Multisite ичиндеги бардык **59 аракет** жана **118 чыпка** үчүн автоматтык түрдө түзүлгөн документация.
 

@@ -3,7 +3,7 @@ title: Unsaon pag-install sa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Unsaon pag-install sa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Unsaon pag-install sa WordPress Multisite?
 
 Ang WordPress Multisite nagtugot kanimo nga maghimo og usa ka network sa mga website sulod sa usa lang ka installation. Kini usa ka built-in feature, pero dili kini aktibo sa default.
 

@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# សកម្មភាព: wu_page_load {#action-wupageload}
+# សកម្មភាព: wu_page_load
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍ plugin បន្ថែម hooks ផ្សេងទៀតទៅទំព័ររបស់យើង។
 

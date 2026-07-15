@@ -4,7 +4,7 @@ title: Action - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# Action: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# Action: wp_ultimo_affiliatewp_load
 
 Tumatakbo ito kapag kumpleto nang ma-load ang lahat ng dependencies.
 

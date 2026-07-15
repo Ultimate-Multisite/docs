@@ -3,7 +3,7 @@ title: Kebolehan Pembina Tema
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Keupayaan Theme Builder: Membina Rangka dan Mengaktifkan Block Theme {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Keupayaan Theme Builder: Membina Rangka dan Mengaktifkan Block Theme
 
 Superdav AI Agent v1.12.0 memperkenalkan dua keupayaan yang berkuasa yang membolehkan anda menjana dan menyebarkan *block theme* tersuai terus dari antara muka sembang.
 

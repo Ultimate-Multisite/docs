@@ -4,7 +4,7 @@ title: Isihlungi - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Isihlungi: wu_sso_enabled {#filter-wussoenabled}
+# Isihlungi: wu_sso_enabled
 
 Vumela/khubaza ikhono le-single-sign-on phakathi kwama-domain.
 

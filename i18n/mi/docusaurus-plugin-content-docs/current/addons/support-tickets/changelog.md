@@ -3,7 +3,7 @@ title: Rangitaki Huringa Tīkiti Tautoko
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Rārangi Huringa Tīkiti Tautoko {#support-tickets-changelog}
+# Rārangi Huringa Tīkiti Tautoko
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Kua whakapai ake: I tangohia te vendor/ directory i te whai a Git (kua hipokina kē e .gitignore), hei whakaiti i te rahi o te repository

@@ -3,7 +3,7 @@ title: گهڻ-نيٽ ورڪ تبديلين جو لاگ
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network تبديلي لاگ {#multi-network-changelog}
+# Multi-Network تبديلي لاگ
 
 ### 1.3.0 {#130}
 * نئون: نيٽ ورڪ ٽيمپليٽ پري ويوئر — خريد ڪرڻ کان اڳ لائيو پينل سان نيٽ ورڪ ٽيمپليٽس برائوز ۽ پري ويو ڪريو.

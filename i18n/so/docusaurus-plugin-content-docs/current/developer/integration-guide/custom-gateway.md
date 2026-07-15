@@ -3,7 +3,7 @@ title: Horumarinta Gateway-ka La Habeeyey
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Horumarinta Albaabka Lacag-bixinta ee Gaarka ah {#custom-gateway-development}
+# Horumarinta Albaabka Lacag-bixinta ee Gaarka ah
 
 Waxaad abuuri kartaa albaabbo lacag-bixineed oo gaar ah adigoo ballaarinaya class-ka `Base_Gateway`.
 

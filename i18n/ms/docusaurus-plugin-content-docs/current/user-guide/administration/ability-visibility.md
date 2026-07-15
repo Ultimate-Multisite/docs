@@ -3,7 +3,7 @@ title: Keterlihatan Kebolehan
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Kebolehlihatan Kebolehan (Ability Visibility) {#ability-visibility}
+# Kebolehlihatan Kebolehan (Ability Visibility)
 
 Superdav AI Agent v1.12.0 memperkenalkan kawalan **Kebolehlihatan Kebolehan (Ability Visibility)** yang mengawal permukaan mana yang boleh mengakses setiap kebolehan. Ini membolehkan pentadbir menyempurnakan keupayaan agen mana yang tersedia melalui REST APIs, pelayan MCP, integrasi WooCommerce, dan antara muka lain.
 

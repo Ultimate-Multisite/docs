@@ -3,7 +3,7 @@ title: Azb Migrasi İş Akışı
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow {#sovereign-migration-workflow}
+# Sovereign Migration Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitesini sovereign kiracı altyapısına taşımak için geçiş doğrulama kapıları ekledi.
 

@@ -3,7 +3,7 @@ title: Tema Builder Giriş Akışı
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# قالب ساز راهنمای شروع کار {#theme-builder-onboarding-flow}
+# قالب ساز راهنمای شروع کار
 
 Superdav AI Agent v1.12.0 یک **جریان راهنمای شروع کار Theme Builder** را معرفی می‌کند که در تنظیمات اولیه شما به ساختن یک قالب بلوک سفارشی کمک می‌کند. این روش جایگزین حالت قدیمی Site Builder شده و رویکردی انعطاف‌پذیرتر با کمک عامل (agent) است.
 

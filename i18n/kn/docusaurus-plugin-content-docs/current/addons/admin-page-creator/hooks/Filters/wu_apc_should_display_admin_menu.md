@@ -4,7 +4,7 @@ title: Filter - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 ಅಡ್ಮಿನಗಳು ಕಸ್ಟಮೈಸೇಶನ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ್ದಾರೆ ಎಂದಾದರೆ, ಅಡ್ಮಿನ್ ಮೆನು ಪುಟಗಳನ್ನು ಅಡಗಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

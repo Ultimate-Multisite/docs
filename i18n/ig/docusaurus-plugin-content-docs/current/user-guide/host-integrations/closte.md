@@ -3,7 +3,7 @@ title: Nkwado Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integracja z Closte {#closte-integration}
+# Integracja z Closte
 
 ## Przegląd {#overview}
 Closte to platform hostingu WordPress zarządzana, zbudowana na infrastrukturze Google Cloud. Ta integracja umożliwia automatyczne synchronizowanie domen i zarządzanie certyfikatami SSL między Ultimate Multisite a Closte.

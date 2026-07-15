@@ -3,7 +3,7 @@ title: Għmli l-primuna tiegħek prodotta ta sħubba
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kemmis l-Prodotto Abonament Ewlewwel (v2) {#creating-your-first-subscription-product-v2}
+# Kemmis l-Prodotto Abonament Ewlewwel (v2)
 
 _**NOTA IMPORTANTI: Dan questa l-artikolu hija għall-utenti b'versjoni 2.x ta Ultimate Multisite. Jekk qed tista' użaw b'versjoni 1.x,**_ **_ħtieġ tkun qed użaw dan l-artikolu**_**.
 

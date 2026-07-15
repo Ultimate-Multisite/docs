@@ -3,7 +3,7 @@ title: Registo de alterações dos Planos medidos
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Registo de alterações dos planos medidos {#metered-plans-changelog}
+# Registo de alterações dos planos medidos
 
 Versão 1.1.0 - Lançada em 2026-05-05
 - Novo: faturação de tokens de AI para subsites multisite — acompanhe e fature a utilização de tokens de AI em sites de clientes com tarifas por token configuráveis

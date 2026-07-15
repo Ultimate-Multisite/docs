@@ -3,7 +3,7 @@ title: የዳሽቦርድን መረዳት
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# የUltimate Multisite Dashboardን መረዳት {#understanding-the-ultimate-multisite-dashboard}
+# የUltimate Multisite Dashboardን መረዳት
 
 በከፍተኛ የቅንብር አማራጮች እና የUltimate Multisite የአሠራር ገጽታዎች ውስጥ ከመግባታችን በፊት፣ በመጀመሪያ ወደ Dashboard እንየው።
 

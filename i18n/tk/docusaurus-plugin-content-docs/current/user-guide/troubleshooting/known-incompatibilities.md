@@ -3,7 +3,7 @@ title: Bilinmezi laçaklylyk
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Başqa Pluginler bilen Bilinçli Uyğunsuzluklar {#known-incompatibilities-with-other-plugins}
+# Başqa Pluginler bilen Bilinçli Uyğunsuzluklar
 
 Ultimate Multisite-y açyp, aktivleşdirip duran wagtynda başga pluginlerle üýtgeşmeler ýüze çykyp biler.
 

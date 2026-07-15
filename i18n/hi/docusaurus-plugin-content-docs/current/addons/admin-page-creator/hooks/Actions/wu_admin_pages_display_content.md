@@ -4,7 +4,7 @@ title: Action - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# एक्शन: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# एक्शन: wu_admin_pages_display_content
 
 कस्टम एडिटर कंटेंट प्रदर्शित करता है।
 

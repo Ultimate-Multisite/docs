@@ -4,7 +4,7 @@ title: 'Ação - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Ação: wu_page_${this->id}_register_widgets {#action-wupagethis-idregisterwidgets}
+# Ação: wu_page_${this->id}_register_widgets
 
 Dispara após os widgets serem registrados para esta página.
 

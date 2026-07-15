@@ -3,7 +3,7 @@ title: Webhook Handling
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ব্যৱস্থাপনা (Webhook Handling) {#webhook-handling}
+# Webhook ব্যৱস্থাপনা (Webhook Handling)
 
 বাহ্যিক সেৱাসমূহৰ পৰা ইভেন্ট গ্ৰহণ কৰিবলৈ আৰু Ultimate Multisite লগত ডেটা সিনক্ৰণ কৰিবলৈ কাস্টম webhook end-point সৃষ্টি কৰক।
 

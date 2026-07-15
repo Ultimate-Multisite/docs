@@ -4,7 +4,7 @@ title: फिल्टर - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# फिल्टर: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# फिल्टर: wu_get_migration_steps
 
 विकासकर्ताहरू र एड-अनहरूलाई नयाँ माइग्रेसन चरणहरू थप्न अनुमति दिन्छ
 

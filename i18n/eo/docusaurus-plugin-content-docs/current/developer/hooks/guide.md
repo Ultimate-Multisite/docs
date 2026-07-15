@@ -3,7 +3,7 @@ title: Gvidilo pri uzado de hokoj
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gvidilo pri Uzado de Hooks {#hooks-usage-guide}
+# Gvidilo pri Uzado de Hooks
 
 Ultimate Multisite provizas pli ol 200 action hooks kaj pli ol 280 filter hooks. Ĉi tiu paĝo kovras la plej ofte uzatajn hooks kun praktikaj ekzemploj. Por kompleta aŭtomate generita referenco, foliumu la aliajn paĝojn en ĉi tiu sekcio.
 

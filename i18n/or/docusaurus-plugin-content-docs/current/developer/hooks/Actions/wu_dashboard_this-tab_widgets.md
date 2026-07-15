@@ -4,7 +4,7 @@ title: 'କାର୍ଯ୍ୟ - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_\{$this->tab\}_widgets
 
 ପ୍ଲଗିନ୍ ବିକାଶକାରୀମାନଙ୍କୁ ନେଟୱାର୍କ Dashboard ପ୍ୟାନେଲ୍‌ରେ ୱିଜେଟ୍ ଯୋଡିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

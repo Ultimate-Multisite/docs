@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ururu ya Checkout na Umuco w'Umuco wa DNS {#checkout-field-and-customer-dns-management}
+# Ururu ya Checkout na Umuco w'Umuco wa DNS
 
 ## Fomu ya Ururu ya Domain Selection {#the-domain-selection-checkout-field}
 

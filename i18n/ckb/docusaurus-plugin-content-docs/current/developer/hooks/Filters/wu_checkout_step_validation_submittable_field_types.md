@@ -4,7 +4,7 @@ title: پاڵێوەر - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# فلتەر: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# فلتەر: wu_checkout_step_validation_submittable_field_types
 
 ڕێگە بە گەشەپێدەران دەدات پشکنینەکە تێپەڕێنن ئەگەر خانەیەک خۆکارانە ناردن-پەسەند بێت.
 

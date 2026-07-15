@@ -3,7 +3,7 @@ title: Уместэнні кіравання плагінамі
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Управленне плагінамі {#plugin-management-abilities}
+# Управленне плагінамі
 
 Gratis AI Agent v1.5.0 пастаўляецца з **7 функцыяналаў па кіраванні плагінамі**, якія асістэнт AI можа выкарыстоўваць падчас размовы. Гэтыя функцыяляў дадаюць праграмнае кіраванне плагінамі WordPress, якія ўстаноўлены праз [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

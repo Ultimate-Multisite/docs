@@ -3,7 +3,7 @@ title: Integrasi Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrasi Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Integrasi Hostinger (hPanel)
 
 ## Gambaran Umum {#overview}
 

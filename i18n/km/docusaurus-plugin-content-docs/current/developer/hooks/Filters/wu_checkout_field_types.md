@@ -4,7 +4,7 @@ title: តម្រង - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# តម្រង៖ wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# តម្រង៖ wu_checkout_field_types
 
 API របស់យើងសម្រាប់បន្ថែមប្រភេទ field ថ្មី ត្រូវបានភ្ជាប់នៅទីនេះ។
 

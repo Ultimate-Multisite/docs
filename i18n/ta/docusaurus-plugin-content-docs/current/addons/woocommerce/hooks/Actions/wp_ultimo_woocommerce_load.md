@@ -4,7 +4,7 @@ title: செயல்பாடு - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# Action: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# Action: wp_ultimo_woocommerce_load
 
 அனைத்து கூடுதல் அம்சச் சார்புகளும் (add-on dependencies) ஏற்றப்பட்ட பிறகு இது தூண்டப்படுகிறது.
 

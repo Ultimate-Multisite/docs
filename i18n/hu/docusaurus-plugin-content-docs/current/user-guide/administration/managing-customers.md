@@ -3,7 +3,7 @@ title: Ügyfelek kezelése
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Ügyfelek kezelése {#managing-customers}
+# Ügyfelek kezelése
 
 Az **Ügyfelek** oldal a hálózatodban regisztrált tagok listáját jeleníti meg. Az oldalon alapvető felhasználói adatok láthatók: név, e-mail cím, utolsó bejelentkezés időpontja, valamint egy **váltás ide** link, amellyel az ügyfél aloldalára léphetsz be oldal-adminisztrátorként.
 

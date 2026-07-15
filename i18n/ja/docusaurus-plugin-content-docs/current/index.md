@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Documentation {#ultimate-multisite-documentation}
+# Ultimate Multisite ドキュメント
 
 Ultimate Multisite ドキュメントへようこそ。Ultimate Multisite は WordPress Multisite をフル Website as a Service (WaaS) プラットフォームに変換します。
 

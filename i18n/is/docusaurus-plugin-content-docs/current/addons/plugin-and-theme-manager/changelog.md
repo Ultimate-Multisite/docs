@@ -3,7 +3,7 @@ title: Breytingaskrá fyrir viðbóta- og þemastjóra
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Breytingaskrá fyrir viðbóta- og þemastjóra {#plugin--theme-manager-changelog}
+# Breytingaskrá fyrir viðbóta- og þemastjóra
 
 Útgáfa: 2.0.8 - Gefin út 2026-05-05
 * Bætt: Viðbótalisti notar nú skyndiminni vefsvæðis til að fækka gagnagrunnsfyrirspurnum og bæta afköst

@@ -4,7 +4,7 @@ title: Action - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# ಕ್ರಿಯೆ: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# ಕ್ರಿಯೆ: wu_admin_pages_extra_metaboxes
 
 ಪ್ಲಗ್ಇನ್ ಅಭಿವರ್ಧಕರು ಹೊಸ ಮೆಟಾಬಾಕ್ಸ್ ಆಯ್ಕೆಗಳನ್ನು ಸೇರಿಸಲು ಇದನ್ನು ಅನುಮತಿಸುತ್ತದೆ.
 

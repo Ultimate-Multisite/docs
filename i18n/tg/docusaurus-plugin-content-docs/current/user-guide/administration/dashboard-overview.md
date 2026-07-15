@@ -3,7 +3,7 @@ title: Назарияи обзори дашборд
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Обзор дашборда {#dashboard-overview}
+# Обзор дашборда
 
 Ultimate Multisite имеет специальный **Dashboard** в меню Ultimate Multisite, а также добавляет виджеты на Сетевой дашборд (Network Dashboard). В этой статье мы рассмотрим, что вы увидите в обоих местах.
 

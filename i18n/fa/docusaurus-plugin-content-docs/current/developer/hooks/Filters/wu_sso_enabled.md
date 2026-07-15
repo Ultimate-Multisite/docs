@@ -4,7 +4,7 @@ title: فیلتر - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# فیلتر: wu_sso_enabled {#filter-wussoenabled}
+# فیلتر: wu_sso_enabled
 
 قابلیت ورود یکپارچه (single-sign-on) در دامنه‌های مختلف را فعال یا غیرفعال می‌کند.
 

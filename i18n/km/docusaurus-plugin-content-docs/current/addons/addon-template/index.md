@@ -3,9 +3,9 @@ title: គំរូកម្មវិធីបន្ថែម
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# គំរូកម្មវិធីបន្ថែម {#addon-template}
+# គំរូកម្មវិធីបន្ថែម
 
-{{ADDON_DESCRIPTION}}
+គំរូកម្មវិធីបន្ថែម — Ultimate Multisite.
 
 ## តម្រូវការ {#requirements}
 

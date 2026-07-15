@@ -3,7 +3,7 @@ title: Управление платежами и счетами
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Управление платежами и счетами {#managing-payments-and-invoices}
+# Управление платежами и счетами
 
 ## Настройки платежей {#payment-settings}
 

@@ -3,7 +3,7 @@ title: Talaan ng mga Pagbabago ng Nagbebenta ng Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Tala ng Pagbabago ng Domain Seller {#domain-seller-changelog}
+# Tala ng Pagbabago ng Domain Seller
 
 Bersyon 1.3.0 - Inilabas noong 2026-06-02
 - Bago: Nagdagdag ng babala sa network-admin kapag masyadong mababa na ang balanse ng reseller ng HostAfrica

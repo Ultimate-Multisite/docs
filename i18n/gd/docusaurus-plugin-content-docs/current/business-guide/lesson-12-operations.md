@@ -3,7 +3,7 @@ title: 'Leasan 12: A’ ruith a’ ghnìomhachais'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leasan 12: A’ Ruith a’ Ghnìomhachais {#lesson-12-running-the-business}
+# Leasan 12: A’ Ruith a’ Ghnìomhachais
 
 Chan e pròiseact a chuireas tu crìoch air a th’ ann an àrd-ùrlar -- ’s e gnìomhachas a ruitheas tu a th’ ann. Tha an leasan seo a’ còmhdach obair làitheil riaghlaidh FitSite: taic, bileachadh, cumail suas, agus cumail luchd-ceannach toilichte.
 

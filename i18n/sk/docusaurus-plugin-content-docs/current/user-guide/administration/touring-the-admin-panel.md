@@ -3,7 +3,7 @@ title: Prehliadka panel administrácie
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Prehliadka admin panela {#touring-the-admin-panel}
+# Prehliadka admin panela
 
 Ultimate Multisite sa cieľom je byť čo najjednoduchší a samopoznávateľný, ale s takto výkonným nástrojom môže pomôcť mať vedený prehlídku. Prejdeme po admin stránkach, aby ste si mohli získať orientáciu.
 

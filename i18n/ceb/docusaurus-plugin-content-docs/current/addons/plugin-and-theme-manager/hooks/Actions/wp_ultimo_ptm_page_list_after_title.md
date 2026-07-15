@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Aksyon: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Aksyon: wp_ultimo_ptm_page_list_after_title
 
 Gitugotan ang mga developer sa plugin sa pagdugang ug dugang nga mga button sa mga panid sa lista
 

@@ -3,7 +3,7 @@ title: AffiliateWP Loga nan atharrachaidhean
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Loga atharrachaidhean AffiliateWP {#affiliatewp-changelog}
+# Loga atharrachaidhean AffiliateWP
 
 Tionndadh: 2.0.1 - Air fhoillseachadh air 2025-09-28
 

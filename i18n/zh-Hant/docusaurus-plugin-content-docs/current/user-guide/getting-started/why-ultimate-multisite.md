@@ -3,7 +3,7 @@ title: 為什麼選擇 Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# 為什麼選擇 Ultimate Multisite {#why-ultimate-multisite}
+# 為什麼選擇 Ultimate Multisite
 
 如果你找到了這篇文章，可能是聽說我們的 plugin 能幫助你實現商業構想。希望在閱讀完這篇文章後，你能找到所需的答案。
 

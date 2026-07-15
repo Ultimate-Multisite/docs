@@ -3,7 +3,7 @@ title: Registrar punto final de API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# O punto final da API de registo do Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# O punto final da API de registo do Ultimate Multisite
 
 N neste tutorial aprenderás como usar o punto final da API /register do Ultimate Multisite para crear todo o proceso de incorporación (onboarding) dun novo cliente na túa rede e como facelo co Zapier.
 

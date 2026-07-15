@@ -4,7 +4,7 @@ title: Chiito - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Chiito: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Chiito: wu_domain_renewal_completed
 
 Chinotanga mushure mekunge domain yavandudzwa zvinobudirira.
 

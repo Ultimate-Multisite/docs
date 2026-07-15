@@ -4,7 +4,7 @@ title: Filter - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 Stripe 구독 데이터를 필터링합니다. success_url 또는 cancel_url을 재정의할 수 있습니다.
 

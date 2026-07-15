@@ -3,7 +3,7 @@ title: 'Lektion 14: Was als Nächstes kommt'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lektion 14: Was kommt als Nächstes {#lesson-14-what-comes-next}
+# Lektion 14: Was kommt als Nächstes
 
 Sie haben eine Nischen-Website-Plattform von Grund auf aufgebaut. FitSite ist live, bedient Fitnessstudios und generiert wiederkehrende Einnahmen. Diese letzte Lektion zeigt Ihnen, wie Sie von hier aus weiter vorgehen können.
 

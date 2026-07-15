@@ -4,7 +4,7 @@ title: Ketso - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Ketso: update_network {#action-updatenetwork}
+# Ketso: update_network
 
 E sebetsa ka mora hore network e teng e ntjhafatswe.
 

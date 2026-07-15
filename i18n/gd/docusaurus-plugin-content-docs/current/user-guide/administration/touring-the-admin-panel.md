@@ -3,7 +3,7 @@ title: A' chluainn an panel admin
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# A' Chùiradh an Panel Admin {#touring-the-admin-panel}
+# A' Chùiradh an Panel Admin
 
 Tha Ultimate Multisite a' ghnìoth rammasach agus a' chlàradhachadh gu sònraichte, ach tha e sin tòr a tha seo a' ceangal linn a bhith a' toirt sealladh a' chùirich. Giùl an panel admin a' chluininn fynech a bhith ag obair airson a bhith a' chlàradhach.
 

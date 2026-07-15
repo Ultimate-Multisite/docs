@@ -4,7 +4,7 @@ title: Filtar - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filtar: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filtar: wu_password_require_uppercase
 
 Filtrira treba li zahtijevati velika slova u lozinkama.
 

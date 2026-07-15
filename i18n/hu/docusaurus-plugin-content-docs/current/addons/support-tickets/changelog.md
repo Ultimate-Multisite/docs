@@ -3,7 +3,7 @@ title: Támogatási jegyek változtathatatkönyve
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Támiratkozási jegyek Módosítási Naplója {#support-tickets-changelog}
+# Támiratkozási jegyek Módosítási Naplója
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Javítás: Eltávolítottam a `vendor/` könyvtárat a Git követéséből (ami már a `.gitignore`-ban szerepel), ezzel csökkentve a repózőrium méretét.

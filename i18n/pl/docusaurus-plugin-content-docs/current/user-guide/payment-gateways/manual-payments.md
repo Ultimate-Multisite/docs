@@ -3,7 +3,7 @@ title: Konfigurowanie płatności ręcznych
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurowanie płatności ręcznych (v2) {#setting-up-manual-payments-v2}
+# Konfigurowanie płatności ręcznych (v2)
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 

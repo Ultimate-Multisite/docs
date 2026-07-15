@@ -4,7 +4,7 @@ title: Action - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Action: wu_domain_ses_verified {#action-wudomainsesverified}
+# Action: wu_domain_ses_verified
 
 যখন SES নিশ্চিত করে যে একটি ডোমেইন DKIM-যাচাই করা হয়েছে, তখন এটি কার্যকর হয়।
 

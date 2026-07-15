@@ -4,7 +4,7 @@ title: Action - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Action: wu_domain_ses_verified {#action-wudomainsesverified}
+# Action: wu_domain_ses_verified
 
 SES ഒരു ഡൊമെയ്ൻ DKIM-വെരിഫൈഡ് ആണെന്ന് സ്ഥിരീകരിക്കുന്ന സമയത്ത് ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

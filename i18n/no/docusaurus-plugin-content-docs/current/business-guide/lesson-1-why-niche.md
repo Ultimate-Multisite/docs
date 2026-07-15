@@ -3,7 +3,7 @@ title: 'Leksjon 1: Hvorfor nisje vinner'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Leksjon 1: Hvorfor nisje vinner {#lesson-1-why-niche-wins}
+# Leksjon 1: Hvorfor nisje vinner
 
 Før vi rører noe programvare, må du forstå hvorfor å bygge for et spesifikt publikum er den viktigste avgjørelsen du vil ta.
 

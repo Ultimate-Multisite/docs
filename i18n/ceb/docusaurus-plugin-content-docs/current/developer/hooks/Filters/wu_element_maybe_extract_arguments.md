@@ -4,7 +4,7 @@ title: Pagsala - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Pagsala: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Pagsala: wu_element_maybe_extract_arguments
 
 Nagdugang og kinatibuk-ang pagsala aron tugotan ang mga developer nga palapdan kini nga parser sa pagdumala sa dugang nga mga builder o mga dugang.
 

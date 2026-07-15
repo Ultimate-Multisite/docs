@@ -3,7 +3,7 @@ title: بەڕێوەبردنی Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# مامەڵەکردن لەگەڵ Webhook {#webhook-handling}
+# مامەڵەکردن لەگەڵ Webhook
 
 خاڵەکۆتاییە تایبەتەکانی webhook دروست بکە بۆ وەرگرتنی ڕووداوەکان لە خزمەتگوزارییە دەرەکییەکان و هاوکاتکردنەوەی داتا لەگەڵ Ultimate Multisite.
 

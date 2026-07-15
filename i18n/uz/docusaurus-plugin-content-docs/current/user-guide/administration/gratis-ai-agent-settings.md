@@ -3,7 +3,7 @@ title: Gratis AI Agent Sozlamalari
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent sozlamalari {#gratis-ai-agent-settings}
+# Gratis AI Agent sozlamalari
 
 Gratis AI Agent ichidagi **Settings → Advanced** ekrani backend integratsiyalari uchun administrator darajasidagi konfiguratsiyani taqdim etadi. Bu sahifa feedback yo‘naltirish, qidiruv provayderi kalitlari, boshqariladigan Superdav xizmati sozlamasi, Google Calendar boshqaruvlari, TextBee SMS sozlamalari va butun tarmoq bo‘yicha feature flaglarni hujjatlashtiradi.
 

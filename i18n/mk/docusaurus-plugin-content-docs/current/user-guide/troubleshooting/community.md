@@ -3,7 +3,7 @@ title: Заедница
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Како да се приклучите во Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# Како да се приклучите во Ultimate Multisite Community
 
 Ultimate Multisite Community е простор каде можете да се контактирате со други корисници на Ultimate Multisite и да споделувате совети, искуства и повеќе. За да пристапите до Ultimate Multisite Community, отидете на https://community.ultimatemultisite.com/home.
 

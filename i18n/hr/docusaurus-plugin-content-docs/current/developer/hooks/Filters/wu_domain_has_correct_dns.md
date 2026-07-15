@@ -4,7 +4,7 @@ title: Filtar - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtar: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filtar: wu_domain_has_correct_dns
 
 Omogućuje programerima dodataka dodavanje novih provjera radi definiranja rezultata.
 

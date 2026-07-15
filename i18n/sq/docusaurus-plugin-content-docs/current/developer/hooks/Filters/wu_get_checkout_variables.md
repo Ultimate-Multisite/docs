@@ -4,7 +4,7 @@ title: Filtër - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filtër: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Filtër: wu_get_checkout_variables
 
 Lejo zhvilluesit e plugin-it të filtrojnë paracaktimet e një faqeje checkout.
 

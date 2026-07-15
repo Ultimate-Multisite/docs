@@ -3,7 +3,7 @@ title: Integrasi RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrasi RunCloud {#runcloud-integration}
+# Integrasi RunCloud
 
 ## Gambaran Umum {#overview}
 RunCloud téh mangrupake platform ngatur server berbasis cloud anu bisa ngajadikeun jeung ngatur aplikasi web di server cloud sorangan jadi gampang pisan. Integrasi ieu ngabantu sinkronisasi domain otomatis jeung ngaturan sertifikat SSL antara Ultimate Multisite jeung RunCloud.

@@ -3,7 +3,7 @@ title: Funkcionalnosti Grajača Tema
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Sposobnosti za Izgradnju Tema: Scaffold i Aktivacija Block Tema {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Sposobnosti za Izgradnju Tema: Scaffold i Aktivacija Block Tema
 
 Superdav AI Agent v1.12.0 uvodi dvije moćne sposobnosti koje vam omogućavaju da generišete i implementirate prilagođene block teme direktno iz chat interfejsa.
 

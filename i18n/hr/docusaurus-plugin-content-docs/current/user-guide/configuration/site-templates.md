@@ -3,7 +3,7 @@ title: Šabloni stranica
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Šabloni za web stranice (v2) {#site-templates-v2}
+# Šabloni za web stranice (v2)
 
 _**NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x. Ako koristite verziju 1.x,**_ **pogledajte ovaj članak.**_
 

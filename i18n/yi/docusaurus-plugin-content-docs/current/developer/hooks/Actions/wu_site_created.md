@@ -4,7 +4,7 @@ title: אַקציע - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# אַקציע: wu_site_created {#action-wusitecreated}
+# אַקציע: wu_site_created
 
 ווערט אויסגעלאָזט נאָך דעם ווי אַ וועבזײַטל ווערט געשאַפֿן צום ערשטן מאָל.
 

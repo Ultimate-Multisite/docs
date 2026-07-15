@@ -3,7 +3,7 @@ title: Umhlahlandlela Wokuhlanganisa
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Umhlahlandlela Wokuhlanganisa {#integration-guide}
+# Umhlahlandlela Wokuhlanganisa
 
 Lo mhlahlandlela uhlanganisa amaphethini ajwayelekile okuhlanganisa ne-Ultimate Multisite, okuhlanganisa ukuxhuma kumasevisi angaphandle, ukwakha amasango okukhokha angokwezifiso, nokuphatha ama-webhook.
 

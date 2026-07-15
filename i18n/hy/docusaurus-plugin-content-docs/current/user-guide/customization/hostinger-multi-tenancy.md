@@ -3,7 +3,7 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 Hostinger multi-tenancy (բազմաօգտատերության) հնարավորություն է ավելացրել, որպեսզի հնարավոր լինի հյուրընկալված ադմիններով տիրույթները մասնակցեն սեվրեն (sovereign) տիրույթների ստեղծման գործընթացին՝ համատեղելով արդեն առկա Hostinger-ի դոմենային քարտեզագրման (domain-mapping) ինտեգրացիայի հետ։
 

@@ -3,7 +3,7 @@ title: Hiểu về Bảng điều khiển
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Tìm hiểu Bảng điều khiển Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Tìm hiểu Bảng điều khiển Ultimate Multisite
 
 Trước khi đi sâu vào các tùy chọn cấu hình nâng cao và các khía cạnh vận hành của Ultimate Multisite, hãy cùng xem qua bảng điều khiển.
 

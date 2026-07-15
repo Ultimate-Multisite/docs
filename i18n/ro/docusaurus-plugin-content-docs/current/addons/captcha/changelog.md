@@ -3,7 +3,7 @@ title: Istoric al modificărilor Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog {#captcha-changelog}
+# Captcha Changelog
 
 Versiune: 1.5.0 - Lansat pe 2026-05-22
 * Nou: Limitatore de rată cu oprire forțată (Hard-stop rate limiter) — numără fiecare GET și POST pe paginile protejate de captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) și răspunde cu HTTP 429, un antet `Retry-After` și o pauză (tarpit sleep) aleatorie (1–5s, cu un plafon de 15s).

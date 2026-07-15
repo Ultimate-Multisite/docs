@@ -3,7 +3,7 @@ title: Tema Builder Kämilliklikleri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Tema İnşa Etici Qabiliyyətləri: Scaffold və Aktivləşdirmə Blok Temaları {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Tema İnşa Etici Qabiliyyətləri: Scaffold və Aktivləşdirmə Blok Temaları
 
 Superdav AI Agent v1.12.0 iki güclü qabiliyyət təqdim edir ki, siz chat interfeysindən xüsusi blok temaları yarada və yerləşdirə biləsiniz.
 

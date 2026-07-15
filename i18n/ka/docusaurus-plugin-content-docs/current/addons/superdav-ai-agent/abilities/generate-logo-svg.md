@@ -3,7 +3,7 @@ title: ლოგოს SVG-ის გენერირება
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG-ის გენერირება {#generate-logo-svg}
+# Logo SVG-ის გენერირება
 
 **Generate Logo SVG** შესაძლებლობა Theme Builder-ს საშუალებას აძლევს, შექმნას და ჩასვას მორგებული logo SVG-ები პირდაპირ თქვენს WordPress საიტში, namespace-უსაფრთხო ავტომატური გასუფთავებით.
 

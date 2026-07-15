@@ -3,7 +3,7 @@ title: Entwicklung eines individuellen Gateways
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Entwicklung eines benutzerdefinierten Gateways {#custom-gateway-development}
+# Entwicklung eines benutzerdefinierten Gateways
 
 Du kannst benutzerdefinierte Zahlungs-Gateways erstellen, indem du die Klasse `Base_Gateway` erweiterst.
 

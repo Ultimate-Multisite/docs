@@ -4,7 +4,7 @@ title: 필터 - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# 필터: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# 필터: wu_apc_should_display_admin_menu
 
 관리자가 커스터마이징 과정을 마친 경우 관리 메뉴 페이지를 숨길 수 있도록 허용합니다.
 

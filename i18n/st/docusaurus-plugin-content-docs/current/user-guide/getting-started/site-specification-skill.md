@@ -3,7 +3,7 @@ title: Tšepo ea tšepetso ea seboha
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fikiso ea Tlhaloso ea Site (Site Specification Skill) {#site-specification-skill}
+# Fikiso ea Tlhaloso ea Site (Site Specification Skill)
 
 **Fikiso ea Tlhaloso ea Site (Site Specification skill)** ke setso se fetang se fanaang ho faka tsela e fetang ho faka tlhahlobo ea site ea hau, baetsoah, le lilikong la brand. Lefa la hau le tla fanaang ka **site_brief** memory ea hau, seo agents ba tlameha ho sebelisa ho fana ka thuso e fetang le ho tseba se se fetang sa tsela (context).
 

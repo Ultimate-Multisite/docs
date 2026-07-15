@@ -4,7 +4,7 @@ title: Радња - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Радња: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Радња: wp_ultimo_ptm_page_wizard_after_title
 
 Омогућава програмерима додатака да додају додатну дугмад на странице листа
 

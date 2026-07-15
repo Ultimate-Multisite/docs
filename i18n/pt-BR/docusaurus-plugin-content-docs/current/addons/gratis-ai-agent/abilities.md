@@ -3,7 +3,7 @@ title: Referência de habilidades
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referência de habilidades {#abilities-reference}
+# Referência de habilidades
 
 Habilidades são as ações atômicas que Gratis AI Agent pode invocar na sua instalação WordPress. Cada habilidade é uma classe PHP registrada que expõe um esquema JSON — o agente lê esse esquema em tempo de execução para entender quais parâmetros são necessários e o que a habilidade retorna.
 

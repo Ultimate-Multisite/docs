@@ -3,7 +3,7 @@ title: 导出与导入
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# 导出与导入 {#export--import}
+# 导出与导入
 
 Ultimate Multisite 2.9.0 在 **工具 > 导出与导入** 下增加了一个单站点**导出与导入**工具。当您需要将一个 WordPress 站点打包成 ZIP 文件、恢复该 ZIP 文件，或在兼容的 Ultimate Multisite 和单站点 WordPress 安装之间迁移站点时，请使用此工具。
 

@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Nhật ký thay đổi Material WP {#material-wp-changelog}
+# Nhật ký thay đổi Material WP
 
 Version 1.1.15 - 01/26/2026
 * Cải tiến: Phong cách và định dạng code;

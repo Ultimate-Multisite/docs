@@ -3,7 +3,7 @@ title: Migrasyon sa Third-Party Mode
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration sa Third-Party Mode {#third-party-mode-migration}
+# Migration sa Third-Party Mode
 
 Ang Superdav AI Agent v1.12.0 nagbag-o kung paano giatiman ang mga third-party ability. **Ang third-party mode karon default na "auto",** nga nagtugot sa native WordPress Abilities API integration sa WordPress 7.0+ para dili na kinahanglan og manual setup.
 

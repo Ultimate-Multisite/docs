@@ -3,7 +3,7 @@ title: خاس دەرۋازا ئېچىش
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ئىختىيارىي Gateway ئىجاد قىلىش {#custom-gateway-development}
+# ئىختىيارىي Gateway ئىجاد قىلىش
 
 `Base_Gateway` class نى كېڭەيتىش ئارقىلىق ئىختىيارىي ھەق تۆلەش gatewayلىرىنى قۇرالايسىز.
 

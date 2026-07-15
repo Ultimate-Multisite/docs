@@ -3,7 +3,7 @@ title: Lihlobo la kodisi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ho v2 {#code-snippets-for-v2}
+# Code Snippets ho v2
 
 Mme, code snippets tsa **WordPress** kea go dira dikgwathwa tse di ka hloka plugin e le sehle. Le fa code snippets tse di ka dirwa mo file ya WordPress core kapa theme (go ntlha, file ya functions.php ya theme ya gago), kapa go ka fetogela ho ba le MU plugin.
 

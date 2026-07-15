@@ -3,7 +3,7 @@ title: Mavizara yeKugadzirisa Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite inoratir wizard inotir WordPress installation yakai kune into WordPress Multisite network. Izviro kuno kuita kuti uone kuti unenge ukati `wp-config.php` kana kurunika database commands.
 

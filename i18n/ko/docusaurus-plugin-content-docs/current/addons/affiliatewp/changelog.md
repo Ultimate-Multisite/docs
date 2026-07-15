@@ -3,7 +3,7 @@ title: AffiliateWP 변경 로그
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP 변경 로그 {#affiliatewp-changelog}
+# AffiliateWP 변경 로그
 
 버전: 2.0.1 - 출시일: 2025-09-28
 

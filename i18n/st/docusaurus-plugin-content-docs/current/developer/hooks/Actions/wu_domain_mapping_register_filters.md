@@ -4,7 +4,7 @@ title: Ketso - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Ketso: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Ketso: wu_domain_mapping_register_filters
 
 Di-plugin tse ding di tla boloka URL pele mapping e sebetsa kapa di tla aha di-URL ka mokgwa o fapaneng o sa kenyelletsoang ho di-filters tse ka hodimo.
 

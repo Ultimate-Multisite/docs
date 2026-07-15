@@ -3,7 +3,7 @@ title: Missio epistularum electronicarum et nuntiationum diffusarum
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Mittendis Epistulis Electronicis et Nuntiis Latis (v2) {#sending-emails-and-broadcasts-v2}
+# Mittendis Epistulis Electronicis et Nuntiis Latis (v2)
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 

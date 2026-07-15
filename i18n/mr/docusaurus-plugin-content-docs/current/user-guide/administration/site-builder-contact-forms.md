@@ -3,7 +3,7 @@ title: साईट बिल्डर संपर्क फॉर्म्स
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Contact Forms {#site-builder-contact-forms}
+# Site Builder Contact Forms
 
 Superdav AI Agent v1.10.0 मध्ये Site Builder agent वापरून थेट chat interface मधून contact forms तयार करण्याची क्षमता जोडली आहे. यामुळे तुम्हाला chat सोडून कोणत्याही page वर पूर्णपणे कार्यक्षम (fully functional) contact forms जोडता येतात.
 

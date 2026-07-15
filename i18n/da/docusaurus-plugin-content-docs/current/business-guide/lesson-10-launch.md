@@ -3,7 +3,7 @@ title: 'Lektion 10: Lancering'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lektion 10: Lancering {#lesson-10-launch-day}
+# Lektion 10: Lancering
 
 Alt er bygget. Før du åbner dørene, gennemgår denne lektion tjeklisten før lancering for at sikre, at intet er gået i stykker, mangler eller er pinligt.
 

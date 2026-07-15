@@ -3,7 +3,7 @@ title: Dnevnik promjena za više mreža
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Dnevnik promjena za Multi-Network {#multi-network-changelog}
+# Dnevnik promjena za Multi-Network
 
 ### 1.3.0 {#130}
 * Novo: Preglednik mrežnih predložaka — pregledavajte i pretpregledajte mrežne predloške s panelom uživo prije kupnje.

@@ -3,9 +3,9 @@ title: Template ng Add-on
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Template ng Add-on {#addon-template}
+# Template ng Add-on
 
-{{ADDON_DESCRIPTION}}
+Template ng Add-on — Ultimate Multisite.
 
 ## Mga Kinakailangan {#requirements}
 

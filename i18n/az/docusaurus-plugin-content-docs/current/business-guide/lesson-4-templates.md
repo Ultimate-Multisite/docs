@@ -3,7 +3,7 @@ title: 'Dərslik 4: Niş Şablonları Qurmaq'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Dərs 4: Niş Şablonları Yaratmaq {#lesson-4-building-niche-templates}
+# Dərs 4: Niş Şablonları Yaratmaq
 
 Şablonlar (Templates) niş dəyər təklifinizin əsasını təşkil edir. Əgər bir fitness studiyası sahibi qeydiyyatdan keçir və artıq sinif cədvəlləri, məşqçi profilləri və müvafiq şəkilləri olan bir fitness saytı kimi görünən bir sayt görürsə, boş bir parça qarşısında qalan şəxsdən daha çox qalacaq.
 

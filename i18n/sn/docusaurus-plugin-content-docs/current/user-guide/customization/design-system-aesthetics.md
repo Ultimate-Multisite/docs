@@ -3,7 +3,7 @@ title: Kufaraira Kuti Kune Mufanzo Wechinhu
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kufungur Aesthetics ya Design System Skill {#design-system-aesthetics-skill}
+# Kufungur Aesthetics ya Design System Skill
 
 **Skill ya Design System Aesthetics** ndiyo njia inoshandiswa kuti urefine chine chine chako cha zvinovimba. Inokubatsira kuita zvigadzirwa zvinhu zvakakosha nezve typography, rangi, spacing (kufarera), uye motion tokens anozvinoreva design system yako.
 

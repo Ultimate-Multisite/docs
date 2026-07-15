@@ -3,7 +3,7 @@ title: Soevereine Migrasie-stroombaan
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Soevereine Migrasiewerkstroom {#sovereign-migration-workflow}
+# Soevereine Migrasiewerkstroom
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voeg migrasiebevestigingspoortjies by vir die oorskryf van 'n standaard subsite na soevereine huurderinfrastruktuur by.
 

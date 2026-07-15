@@ -3,7 +3,7 @@ title: Àṣìṣe Fáìlì Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Àṣìṣe Nígbà Fífí Fáìlì Sunrise Sílẹ̀ {#error-installing-the-sunrise-file}
+# Àṣìṣe Nígbà Fífí Fáìlì Sunrise Sílẹ̀
 
 Fáìlì sunrise.php jẹ́ fáìlì pàtàkì kan tí WordPress máa ń wá nígbà tí ó ń bẹ̀rẹ̀ ara rẹ̀. Kí WordPress lè rí fáìlì sunrise.php, ó ní láti wà nínú **folda wp-content**.
 

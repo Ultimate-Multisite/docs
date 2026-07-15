@@ -3,7 +3,7 @@ title: Vietas būvētāja kontaktformuli
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformulāri vietnes izveidojēji {#site-builder-contact-forms}
+# Kontaktformulāri vietnes izveidojēji
 
 Superdav AI Agent v1.10.0 dod iespēju veidot kontaktformulārus tieši no čata interfeisa, izmantojot Site Builder agenti. Tas ļauj jums pievienot pilnīgi funkcionalus kontaktformulārus jebkuraj lapai bez atdalīšanās no čata.
 

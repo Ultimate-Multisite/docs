@@ -3,7 +3,7 @@ title: بۆ باشترکردنی یەکگرتوویی پۆلێپەلی (Control 
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# پترۆلکردنی یەکپۆل کنترۆڵ پانل {#enhance-control-panel-integration}
+# پترۆلکردنی یەکپۆل کنترۆڵ پانل
 
 ## پێشەکی {#overview}
 Enhance سیستەمێکی نوێی پانل کنترۆڵی بریتییە کە توانای بەڕێوەبرد و ئۆتۆماتیککردنی هاستکرد (hosting automation) دەدات. ئەم یەکگرتووکارییە ڕێنوێنی دابین دەکات بۆ هەڵسُوێنانی ئۆتۆماتیکی دامەنی (domain syncing) و بەڕێوەبرد گوازارنی سێرتیسڵ (SSL certificate management) لە نێوان Ultimate Multisite و Enhance Control Panel.

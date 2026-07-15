@@ -3,7 +3,7 @@ title: Captcha üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha üýtgeşmeler žurnaly {#captcha-changelog}
+# Captcha üýtgeşmeler žurnaly
 
 Wersiýa: 1.5.0 - 2026-05-22 senesinde çykaryldy
 * Täze: Berk duruzýan tizlik çäklendirijisi — captcha bilen goralan ýüzlerde (wp-login / registrasiýa / ýitirilen-parol / teswirler, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) her GET we POST haýyşyny sanaýar we HTTP 429, `Retry-After` header hem-de tötänleýin tarpit gijikdirmesi (1–5s, 15s bilen berk çäklendirilen) bilen jogap berýär.

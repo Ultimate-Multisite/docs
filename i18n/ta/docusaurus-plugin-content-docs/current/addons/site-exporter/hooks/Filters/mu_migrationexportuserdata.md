@@ -4,7 +4,7 @@ title: வடிகட்டி - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filter: mu_migration/export/user/data
 
 ஏற்றுமதி செய்யப்படவுள்ள அல்லது உள்வரி செய்யப்படவுள்ள இயல்பான பயனர் தரவுத் தொகுப்பை (default set of user data) இது வடிகட்டுகிறது.
 

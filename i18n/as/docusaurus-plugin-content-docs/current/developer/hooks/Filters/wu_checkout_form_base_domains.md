@@ -4,7 +4,7 @@ title: ফিল্টাৰ - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# ফিল্টাৰ: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# ফিল্টাৰ: wu_checkout_form_base_domains
 
 শ্বেয়াৰ কৰা checkout-form আধাৰ ড'মেইনসমূহ ফিল্টাৰ কৰে, যিবোৰ mapped-domain ৰেকৰ্ড হ'ব নালাগে।
 

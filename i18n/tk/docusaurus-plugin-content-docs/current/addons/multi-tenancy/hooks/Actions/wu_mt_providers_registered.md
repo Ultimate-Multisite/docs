@@ -4,7 +4,7 @@ title: Hereket - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Hereket: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Hereket: wu_mt_providers_registered
 
 Adaty üpjün edijiler hasaba alnandan soň işledilýär.
 

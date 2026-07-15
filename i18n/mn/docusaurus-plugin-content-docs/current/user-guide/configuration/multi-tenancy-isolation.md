@@ -3,7 +3,7 @@ title: Олон хуульч байдлын тусгаарлалт
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Олон багтласан систем (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Олон багтласан систем (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 нь өөрийн тусгай багтласан хэрэглэгчдэд (sovereign tenants) хувьд тус бүрийн хослол болон файлын системээ тусгаарлахыг дэмждэг. Энэ нь хэрэглэгчийн өгөгдлийг тусгаар хадгалж байхын зэрэгцээ сүлжээний түвшний тохиргоо, төлбөлт, удирдлагын үйл ажиллагааг хадгалдаг.
 

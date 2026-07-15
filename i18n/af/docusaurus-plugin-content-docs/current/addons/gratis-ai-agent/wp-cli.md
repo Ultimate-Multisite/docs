@@ -3,7 +3,7 @@ title: WP-CLI Verwysing
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Verwysing {#wp-cli-reference}
+# WP-CLI Verwysing
 
 Gratis AI Agent skep 'n `wp gratis-ai-agent` kommando-familie vir die benchmark van die agent, die bestuur van vermoëns, en die navraag van die agent se status vanaf die kommando-lyn. Alle kommando's vereis WP-CLI 2.0 of hoër.
 

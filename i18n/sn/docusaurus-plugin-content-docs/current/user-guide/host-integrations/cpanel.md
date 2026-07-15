@@ -3,7 +3,7 @@ title: Kugadzirwa ne cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# CPanel Integration {#cpanel-integration}
+# CPanel Integration
 
 ## Oraphorwe {#overview}
 cPanel ndiyo inoshoko yavo ye zvinovhu vachikwa nevanhu vange vashandisa kune hosting dzakawanda dze share na dedicated. Iyi integration inosimbisa syncing ya domain automatically kubva mu Ultimate Multisite ne cPanel, inosimbisa kuti utange kuenda nekubuda aliases uye subdomains ku account yako ye cPanel.

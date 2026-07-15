@@ -3,7 +3,7 @@ title: Skattehantering
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Skattehantering {#tax-handling}
+# Skattehantering
 
 Ultimate Multisite har en modul för skatteuppbörd inbyggd i vårt kärnplugin, så om du behöver ta ut försäljningsskatt på dina planer, paket och tjänster kan du enkelt göra det utan att behöva installera några add-ons.
 

@@ -3,7 +3,7 @@ title: Mwayi wa zinthu za m'malenzi
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Zomwezi za Website za Wopambiri wanu (v2) {#your-clients-websites-v2}
+# Zomwezi za Website za Wopambiri wanu (v2)
 
 Panda m'pingo pa lanu, wopambiri wanu angamukira dashboard yanu.
 

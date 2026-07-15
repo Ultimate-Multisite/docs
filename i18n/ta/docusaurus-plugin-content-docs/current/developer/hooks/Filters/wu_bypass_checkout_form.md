@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 டெவலப்பர்கள் வெளியீட்டைத் தாண்டிச் செல்லவும், அதற்குப் பதிலாக புதிய ஒன்றைப் அமைக்கவும் இது அனுமதிக்கிறது.
 

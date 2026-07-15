@@ -3,7 +3,7 @@ title: Raadinta internetka
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Baadhista Internetka (Internet Search) {#internet-search}
+# Baadhista Internetka (Internet Search)
 
 Gratis AI Agent v1.5.0 wuxirtaa awoodda **Baadhista Internetka (Internet Search)** oo u oggolaanaysa agabka AI-ga inuu soo qaado macluumaad cusub oo ka yimid internetka inta uu la hadlayo. Waxaa lagu haysaa [Brave Search API](https://brave.com/search/api/) ama [Tavily API](https://tavily.com/).
 

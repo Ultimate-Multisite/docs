@@ -3,7 +3,7 @@ title: Design System Estetik Färdighet
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics-förmågan {#design-system-aesthetics-skill}
+# Design System Aesthetics-förmågan
 
 **Design System Aesthetics-förmågan** är ett vägledd tillvägagångssätt för att förfina din webbplats visuella identitet. Den hjälper dig att fatta konsekventa beslut om typografi, färg, avstånd och rörelsetokens som definierar ditt designsystem.
 

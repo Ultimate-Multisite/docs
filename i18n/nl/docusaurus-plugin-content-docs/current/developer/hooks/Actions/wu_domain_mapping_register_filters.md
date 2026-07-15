@@ -4,7 +4,7 @@ title: Actie - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Sommige plug-ins slaan URL op voordat de mapping actief was of bouwen URL's op een andere manier die niet in de bovenstaande filters is opgenomen.
 

@@ -3,7 +3,7 @@ title: Kuyendetsa Mapemba ndi Zina
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Kufunira Mapempha ndi Invo {#managing-payments-and-invoices}
+# Kufunira Mapempha ndi Invo
 
 ## Zinthu za Mapempha (Payment Settings) {#payment-settings}
 

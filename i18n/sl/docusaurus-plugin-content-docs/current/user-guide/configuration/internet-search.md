@@ -3,7 +3,7 @@ title: Vsebinski iskanje
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Iskanje {#internet-search}
+# Internet Iskanje
 
 Gratis AI Agent v1.5.0 dodaja možnost **Internet Iskanja**, ki omogoča asistentu, da povzroči najdenje najaktualnejših informacij iz spleta med pogovorom. To je močan na [Brave Search API](https://brave.com/search/api/) ali [Tavily API](https://tavily.com/).
 

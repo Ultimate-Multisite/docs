@@ -3,7 +3,7 @@ title: Konsepsyon Baz
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Konseps Basic {#basic-concepts}
+# Konseps Basic
 
 Pou yon nouvo itilizat WordPress Multisite epi pou yon moun kòmanse itilize Ultimate Multisite la, gen anpil mo ak fraz nou dwe aprann anvan. Aprann yo se yon bagay enpòtan paske ou pral bezwen konprann platfòm lan e kijan li fonksyone ansanm.
 

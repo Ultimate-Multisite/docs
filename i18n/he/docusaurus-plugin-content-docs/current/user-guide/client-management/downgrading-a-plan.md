@@ -3,7 +3,7 @@ title: שנמוך תוכנית
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# שדרוג לאחור של תוכנית (v2) {#downgrading-a-plan-v2}
+# שדרוג לאחור של תוכנית (v2)
 
 _**הערה חשובה: מאמר זה מתייחס ל-Ultimate Multisite גרסה 2.x.**_
 

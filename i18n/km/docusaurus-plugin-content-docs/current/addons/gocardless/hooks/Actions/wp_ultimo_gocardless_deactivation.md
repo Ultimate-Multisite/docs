@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# សកម្មភាព: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# សកម្មភាព: wp_ultimo_gocardless_deactivation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងៗនៃ plugin ភ្ជាប់ទម្លាប់របស់ពួកវាសម្រាប់ការបិទដំណើរការ
 

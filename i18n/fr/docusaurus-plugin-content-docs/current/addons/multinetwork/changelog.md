@@ -3,7 +3,7 @@ title: Journal des modifications multi-réseau
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Journal des modifications Multi-Network {#multi-network-changelog}
+# Journal des modifications Multi-Network
 
 ### 1.3.0 {#130}
 * Nouveau : prévisualiseur de modèles de réseau — parcourez et prévisualisez les modèles de réseau avec un panneau en direct avant l’achat.

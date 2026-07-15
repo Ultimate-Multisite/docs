@@ -4,7 +4,7 @@ title: පෙරහන - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# පෙරහන: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# පෙරහන: wu_connector_enforcement_option_keys
 
 ප්‍රධාන අඩවියෙන් බලාත්මක කරන AI සැපයුම්කරු option key ලැයිස්තුව පෙරහන් කරන්න.
 

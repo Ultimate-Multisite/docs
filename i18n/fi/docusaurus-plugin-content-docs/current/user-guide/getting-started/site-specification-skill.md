@@ -3,7 +3,7 @@ title: Sivuston määrittelytaito
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sivustiedon taito {#site-specification-skill}
+# Sivustiedon taito
 
 **Sivustiedon taito** on rakennettu lähestymistapa sivustosi tavoitteiden, yleisön ja bränditunnisteen tallentamiseen. Tämä tieto tallennetaan **site_brief** -muistiisi, jota agentit viittaavat eri istunnoissa tarjotakseen johdonmukaista, kontekstia ymmärtävää apua.
 

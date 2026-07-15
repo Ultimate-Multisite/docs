@@ -4,7 +4,7 @@ title: ක්‍රියාව - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# ක්‍රියාව: delete_network {#action-deletenetwork}
+# ක්‍රියාව: delete_network
 
 ජාලයක් මකා දැමීමෙන් පසු ක්‍රියාත්මක වේ.
 

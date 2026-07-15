@@ -3,7 +3,7 @@ title: Hestia Control Panel אינטעגראַציע
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel אינטעגראַציע {#hestia-control-panel-integration}
+# Hestia Control Panel אינטעגראַציע
 
 דער וועגווייזער דערקלערט ווי צו קאָנפֿיגורירן די Ultimate Multisite Hestia אינטעגראַציע, כּדי מאַפּירטע דאָמיינען אין אייער נעץ זאָלן אויטאָמאַטיש צוגעלייגט ווערן (און אַוועקגענומען ווערן) ווי וועב־דאָמיין־אַליאַסן אין Hestia.
 

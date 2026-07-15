@@ -3,7 +3,7 @@ title: Saurin Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# شمول دادن Ultimate Multisite با Zapier {#integrating-ultimate-multisite-with-zapier}
+# شمول دادن Ultimate Multisite با Zapier
 
 در یکی از مقالات، ما در مورد [Webhooks](webhooks.md) صحبت کردیم و اینکه چطور می‌توان از آن‌ها برای اتصال به اپلیکیشن‌های شخص ثالث استفاده کرد.
 

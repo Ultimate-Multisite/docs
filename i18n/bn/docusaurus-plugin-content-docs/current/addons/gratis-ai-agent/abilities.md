@@ -3,7 +3,7 @@ title: ক্ষমতা নির্দেশিকা
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities Reference (ক্ষমতা নির্দেশিকা) {#abilities-reference}
+# Abilities Reference (ক্ষমতা নির্দেশিকা)
 
 Abilities হলো সেই মৌলিক কাজগুলো (atomic actions) যা Gratis AI Agent আপনার WordPress ইনস্টলেশনে ব্যবহার করতে পারে। প্রতিটি ability একটি রেজিস্টার্ড PHP class যা একটি JSON schema প্রকাশ করে — এজেন্ট রানটাইমে এই schema পড়ে বুঝতে পারে যে কী কী প্যারামিটার প্রয়োজন এবং ability টি কী ধরনের ডেটা ফেরত দেবে।
 

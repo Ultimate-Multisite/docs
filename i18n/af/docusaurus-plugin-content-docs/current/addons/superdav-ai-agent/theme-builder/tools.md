@@ -3,7 +3,7 @@ title: Gereedskap en konfigurasie
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Gereedskap en Konfigurasie {#tools-and-configuration}
+# Gereedskap en Konfigurasie
 
 Theme Builder gebruik ’n stel gereedskap om jou WordPress-werf te ontleed, te ontwerp en te bou. In weergawe 1.16.0 is **sd-ai-agent/site-scrape nou ’n Tier 1-gereedskap**, wat dit by verstek in Theme Builder beskikbaar maak. Superdav AI Agent v1.18.0 stel ook ’n afsonderlik verspreide Advanced-metgeselpakket bekend vir vertroude ontwikkelaarwerkvloeie; daardie gereedskap is nie deel van die WordPress.org-kernpakket nie en moet afsonderlik geïnstalleer en gemagtig word.
 

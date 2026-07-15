@@ -4,7 +4,7 @@ title: Gnìomh - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Gnìomh: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Gnìomh: wu_domain_renewal_failed
 
 Thèid a chur an gnìomh às dèidh do dh’oidhirp air ùrachadh àrainn fàiligeadh.
 

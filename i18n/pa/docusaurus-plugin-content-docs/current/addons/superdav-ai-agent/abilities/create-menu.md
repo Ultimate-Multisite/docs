@@ -3,7 +3,7 @@ title: ਮੈਨੂ ਬਣਾਓ
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# ਮੀਨੂ ਬਣਾਉਣਾ {#create-menu}
+# ਮੀਨੂ ਬਣਾਉਣਾ
 
 **Create Menu** ਸਹੂਲਤ ਨਾਲ WordPress ਨੈਵੀਗੇਸ਼ਨ ਮੀਨੂ ਬਣਦੇ ਹਨ, ਜਿਨ੍ਹਾਂ ਵਿੱਚ ਪੇਜ ਦੇ ਟਾਈਟਲ ਤੋਂ ਵੱਖਰੇ ਨੈਵੀਗੇਸ਼ਨ ਲੇਬਲ (navigation labels) ਸੈੱਟ ਕਰਨ ਦਾ ਸਹੂਲਤ ਹੈ।
 

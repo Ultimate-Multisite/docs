@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet tal-Biljetti ta’ Appoġġ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Reġistru tal-Bidliet tat-Tickets ta' Appoġġ {#support-tickets-changelog}
+# Reġistru tal-Bidliet tat-Tickets ta' Appoġġ
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Imtejjeb: Tneħħa d-direttorju vendor/ mit-traċċar ta' Git (diġà kopert minn .gitignore), u b'hekk tnaqqas id-daqs tar-repożitorju

@@ -3,7 +3,7 @@ title: WP-CLI Referencia
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referencia {#wp-cli-reference}
+# WP-CLI Referencia
 
 A gratis AI Agent egy `wp gratis-ai-agent` parancsszekenciát biztosít, amellyel benchmarkolhatja az agentet, kezelheti képességeit, és lekérdezheti az agent állapotát a command line-on. Minden parancshez WP-CLI 2.0 vagy annál újabb verzió szükséges.
 

@@ -3,7 +3,7 @@ title: Gestionarea taxelor
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestionarea taxelor {#tax-handling}
+# Gestionarea taxelor
 
 Ultimate Multisite are un modul de colectare a taxelor integrat în pluginul nostru de bază, așa că, dacă trebuie să colectezi taxe pe vânzări pentru planurile, pachetele și serviciile tale, poți face acest lucru cu ușurință fără a recurge la instalarea vreunor suplimente.
 

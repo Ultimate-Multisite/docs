@@ -4,7 +4,7 @@ title: Сүзгі - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Сүзгі: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Сүзгі: wp_ultimo_woocommerce_should_use_subscriptions
 
 Әзірлеушілерге WooCommerce Subscriptions қолдануды мәжбүрлеп қосуға мүмкіндік береді.
 

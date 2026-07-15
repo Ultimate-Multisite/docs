@@ -3,7 +3,7 @@ title: Ntuziaka Njikọ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Nduzi Njikọ {#integration-guide}
+# Nduzi Njikọ
 
 Nduzi a na-ekpuchi usoro njikọ a na-ahụkarị na Ultimate Multisite, gụnyere ijikọ na ọrụ mpụga, iwu gateways ịkwụ ụgwọ ahaziri iche, na ijikwa webhooks.
 

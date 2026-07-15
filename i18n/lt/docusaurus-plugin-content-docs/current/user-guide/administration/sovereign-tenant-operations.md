@@ -3,7 +3,7 @@ title: Sovereignios nuomojimo operacijos
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operacijos {#sovereign-tenant-operations}
+# Sovereign Tenant Operacijos
 
 Ultimate Multisite 1.2.0 pridėja operatyvinius įrankius su soveneriais tenančiais: subsaitomis, kurios veikia su savo duomenų bazės, sistemos rootis ir routingu kontekstu, atliekant matomai nuo tinklo administratoriaus.
 

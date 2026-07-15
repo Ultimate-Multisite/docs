@@ -3,7 +3,7 @@ title: অন্তৰ্নিৰ্মিত এজেণ্টসমূহ
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# অন্তৰ্নিৰ্মিত Agents {#built-in-agents}
+# অন্তৰ্নিৰ্মিত Agents
 
 Gratis AI Agent v1.9.0-এ পাঁচটা অন্তৰ্নিৰ্মিত agents সৈতে আহে, প্ৰত্যেকটো নিৰ্দিষ্ট সঁজুলিৰ এটা কেন্দ্ৰিত ছেট, অনুকূলিত system prompt, আৰু সেই ক্ষেত্ৰৰ সাধাৰণ কামৰ সৈতে মিলা আৰম্ভণি suggestions সহ পূৰ্ব-কনফিগাৰ কৰা। Agents-ৰ মাজত সলনি কৰিলে assistant-এ কি কৰিব পাৰে আৰু কেনেকৈ সঁহাৰি দিয়ে সেয়া সলনি হয় — আপোনাৰ ফালৰ পৰা কোনো configuration নকৰাকৈ। Superdav AI Agent v1.18.0-এ সংশ্লিষ্ট integrations কনফিগাৰ কৰা থাকিলে এই workflows-ত schedule-aware tools, reminder records, approval gates, আৰু SMS notifications যোগ কৰিব পাৰে।
 

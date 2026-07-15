@@ -4,7 +4,7 @@ title: Filtru - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filtru: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filtru: wu_enforce_password_rules
 
 Iffiltra jekk għandhomx jiġu infurzati regoli addizzjonali għall-password.
 

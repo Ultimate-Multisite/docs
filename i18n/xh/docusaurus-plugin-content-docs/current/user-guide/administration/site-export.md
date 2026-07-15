@@ -3,7 +3,7 @@ title: Ukuthumela ngaphandle iSayithi
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Ukuthumela Ngaphandle Isayithi {#site-export}
+# Ukuthumela Ngaphandle Isayithi
 
 Iphepha lomlawuli le-**Ukuthumela Ngaphandle Isayithi** livumela abalawuli benethiwekhi ukuba bapakishe isayithi enye, okanye inethiwekhi yonke, ibe nguvimba onokukhutshelwa ukuze kufuduswe, kugcinwe ikopi yogcino, okanye kudluliselwe umsebenzi.
 

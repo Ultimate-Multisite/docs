@@ -3,7 +3,7 @@ title: Integrimi i shumë-qiramarrjes
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrimi Multi-Tenancy {#multi-tenancy-integration}
+# Integrimi Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ndryshon disa pika integrimi për qiramarrës sovranë, verifikimin e migrimit dhe automatizimin e ciklit jetësor të qiramarrësit.
 

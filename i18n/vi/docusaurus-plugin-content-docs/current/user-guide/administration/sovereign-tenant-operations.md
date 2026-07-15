@@ -3,7 +3,7 @@ title: Hoạt động của Người thuê Chủ quyền
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Vận hành Khách thuê Chủ quyền (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Vận hành Khách thuê Chủ quyền (Sovereign Tenant Operations)
 
 Ultimate Multisite: Phiên bản 1.2.0 bổ sung các công cụ vận hành cho khách thuê chủ quyền: các subsites chạy với cơ sở dữ liệu, thư mục gốc và ngữ cảnh định tuyến riêng của chúng, nhưng vẫn hiển thị từ mạng quản trị.
 

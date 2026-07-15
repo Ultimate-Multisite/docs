@@ -3,7 +3,7 @@ title: ଅନୁପାତୀୟ ବ୍ୟବହାରର ବିଚ୍ଛେଦ
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# বহু-ভাড়া ব্যবস্থা বিচ্ছিন্নতা (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# বহু-ভাড়া ব্যবস্থা বিচ্ছিন্নতা (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 এখন সার্বভৌম গ্রাহকদের জন্য প্রতি-সাবসাইট ডেটাবেস এবং ফাইল সিস্টেম বিচ্ছিন্নতা সমর্থন করে। এটি নেটওয়ার্ক-স্তরের প্রোভিশনিং, বিলিং এবং অ্যাডমিনিস্ট্রেশন বজায় রেখে গ্রাহকের ডেটাকে আলাদা রাখে।
 

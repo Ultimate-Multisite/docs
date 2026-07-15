@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# ഫിൽട്ടർ: wu_sso_url {#filter-wussourl}
+# ഫിൽട്ടർ: wu_sso_url
 
 ക്രോസ്-ഡൊമെയ്ൻ ഉപഭോക്തൃ പ്രവർത്തനങ്ങൾക്ക് മടക്കി നൽകുന്നതിന് മുമ്പ് സൃഷ്ടിച്ച SSO URL-കൾ ഫിൽട്ടർ ചെയ്യുന്നു.
 

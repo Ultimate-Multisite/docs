@@ -3,7 +3,7 @@ title: Hookide viide
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hookide viide {#hooks-reference}
+# Hookide viide
 
 Automaatselt loodud dokumentatsioon kõigi **59 actioni** ja **118 filteri** kohta Ultimate Multisite'is.
 

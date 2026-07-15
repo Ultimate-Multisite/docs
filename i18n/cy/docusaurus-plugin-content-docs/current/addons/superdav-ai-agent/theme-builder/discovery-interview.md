@@ -3,7 +3,7 @@ title: Cyfweliad Darganfod
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Cyfweliad Darganfod {#discovery-interview}
+# Cyfweliad Darganfod
 
 Y **Cyfweliad Darganfod** yw’r cam cyntaf ym mhroses ddylunio Theme Builder. Mae’n casglu gwybodaeth am eich safle, eich busnes, a’ch dewisiadau dylunio i greu theme personol.
 

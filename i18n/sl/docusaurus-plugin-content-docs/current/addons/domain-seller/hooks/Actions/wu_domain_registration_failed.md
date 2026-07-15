@@ -4,7 +4,7 @@ title: Dejanje - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Dejanje: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Dejanje: wu_domain_registration_failed
 
 Sproži se, ko poskus registracije domene ne uspe.
 

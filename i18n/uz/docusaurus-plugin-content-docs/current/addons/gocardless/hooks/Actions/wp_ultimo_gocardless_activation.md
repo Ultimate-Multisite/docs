@@ -4,7 +4,7 @@ title: Amal - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Amal: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Amal: wp_ultimo_gocardless_activation
 
 pluginning boshqa qismlari faollashtirish uchun o‘z rutinlarini biriktirishiga ruxsat bering
 

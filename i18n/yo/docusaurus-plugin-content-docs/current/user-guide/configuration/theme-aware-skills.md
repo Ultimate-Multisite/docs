@@ -3,7 +3,7 @@ title: Àwọn Ọgbọ́n Tó Mọ̀ Akórí
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Àwọn Ọgbọn Tí Ó Mọ Akori {#theme-aware-skills}
+# Àwọn Ọgbọn Tí Ó Mọ Akori
 
 Superdav AI Agent v1.10.0 wa pẹlu àwọn ọgbọn inú-rẹ tuntun mẹrin tí ó mọ akori, tí wọ́n sì ń bá akori WordPress rẹ tí ó n ṣiṣẹ mu laifọwọyi. Àwọn ọgbọn wọ̀nyí ń pèsè ìtọ́nisọ́nà àti agbára amọ̀ja tí a ṣe pàtàkì fún faaji àti àwọn ẹya akori rẹ.
 

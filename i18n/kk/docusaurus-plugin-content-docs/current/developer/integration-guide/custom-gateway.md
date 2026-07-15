@@ -3,7 +3,7 @@ title: Жеке шлюзді әзірлеу
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Арнайы шлюз әзірлеу {#custom-gateway-development}
+# Арнайы шлюз әзірлеу
 
 `Base_Gateway` класын кеңейту арқылы арнайы төлем шлюздерін жасай аласыз.
 

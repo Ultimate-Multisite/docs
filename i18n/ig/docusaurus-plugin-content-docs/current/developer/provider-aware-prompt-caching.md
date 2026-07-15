@@ -3,7 +3,7 @@ title: Ịchekwa prompt na cache nke na-amata onye na-eweta ọrụ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt Caching nke Na-amata Provider {#provider-aware-prompt-caching}
+# Prompt Caching nke Na-amata Provider
 
 Superdav AI Agent v1.12.0 na-ewebata **prompt caching nke na-amata provider**, nke na-eme ka ụgwọ API na latency ka mma site n’ịchekwa prompts gafee providers LLM dị iche iche. Provider ọ bụla nwere usoro caching na nhazi dị iche iche.
 

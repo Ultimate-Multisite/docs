@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Action: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Action: wu_maybe_create_customer
 
 வாடிக்கையாளர் சேர்க்கப்படும்போது, கூடுதல் வேலைகளைச் செய்ய இது plugin உருவாக்குநர்களுக்கு அனுமதிக்கிறது.
 

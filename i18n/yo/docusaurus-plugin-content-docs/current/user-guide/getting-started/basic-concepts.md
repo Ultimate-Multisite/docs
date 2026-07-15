@@ -3,7 +3,7 @@ title: Àwọn Èrò Ìpìlẹ̀
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Awọn Erongba Ipilẹ {#basic-concepts}
+# Awọn Erongba Ipilẹ
 
 Fun olumulo WordPress Multisite tuntun ati ẹni ti o ṣẹṣẹ bẹrẹ lilo Ultimate Multisite, ọpọlọpọ awọn ọrọ ati gbolohun tuntun le wa lati kọkọ gba sinu ọkan. Kikọ wọn jẹ iṣẹ pataki nitori iwọ yoo nilo lati loye pẹpẹ naa ati bi o ṣe n ṣiṣẹ lapapọ.
 

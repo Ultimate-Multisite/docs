@@ -3,7 +3,7 @@ title: Penyimpanan Cache Prompt Sadar Penyedia
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt Caching Sadar Penyedia {#provider-aware-prompt-caching}
+# Prompt Caching Sadar Penyedia
 
 Superdav AI Agent v1.12.0 memperkenalkan **provider-aware prompt caching**, yang mengoptimalkan biaya API dan latensi dengan menyimpan (caching) prompt di berbagai provider LLM. Setiap provider memiliki mekanisme dan konfigurasi caching yang berbeda.
 

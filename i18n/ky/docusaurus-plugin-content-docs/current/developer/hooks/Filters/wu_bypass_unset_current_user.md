@@ -4,7 +4,7 @@ title: Фильтр - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Чыпка: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Чыпка: wu_bypass_unset_current_user
 
 Иштеп чыгуучуларга учурдагы колдонуучуну unset кылуу кодун айланып өтүүгө уруксат берет.
 

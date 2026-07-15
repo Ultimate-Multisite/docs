@@ -3,7 +3,7 @@ title: Përqendrimi i migrimit Sovran
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Proces Migrimi Sovran {#sovereign-migration-workflow}
+# Proces Migrimi Sovran
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 shtoi dyporta gate të verifikimit të migrimit për lëvizjen e një subsite standard në infrastrukturën e qytetarit sovræn.
 

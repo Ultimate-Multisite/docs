@@ -3,7 +3,7 @@ title: 'Lekcija 1: Zakaj niša zmaga'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lekcija 1: Zakaj niša zmaguje {#lesson-1-why-niche-wins}
+# Lekcija 1: Zakaj niša zmaguje
 
 Preden se dotaknemo katerekoli programske opreme, morate razumeti, zakaj je gradnja za specifično občinstvo najpomembnejša odločitev, ki jo boste sprejeli.
 

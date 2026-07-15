@@ -4,7 +4,7 @@ title: පෙරහන - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# පෙරහන: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# පෙරහන: wu_view_override_replaceable_views
 
 ප්‍රතිස්ථාපනය කළ හැකි ලැයිස්තුවට අමතර ෆෝල්ඩර එක් කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
 

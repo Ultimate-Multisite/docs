@@ -3,7 +3,7 @@ title: Mitgliedschaftsablauf und Seitenblockierung
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ablauf bei Ablauf der Mitgliedschaft und Sperrung der Website {#membership-expiration-and-site-blocking}
+# Ablauf bei Ablauf der Mitgliedschaft und Sperrung der Website
 
 Dieser Leitfaden erklärt, wie Ultimate Multisite mit dem Ablauf von Mitgliedschaften, dem Ende von Testphasen und der Sperrung der Website im Frontend umgeht. Er behandelt den Lebenszyklus einer Mitgliedschaft vom aktiven Zustand bis zum Ablauf, die Einstellungen, die steuern, ob Websites gesperrt werden, und was zu überprüfen ist, wenn Websites nach Ablauf einer Mitgliedschaft weiterhin zugänglich bleiben.
 

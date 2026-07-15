@@ -3,7 +3,7 @@ title: Monivuokraajuuden integraatio
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy-integraatio {#multi-tenancy-integration}
+# Multi-Tenancy-integraatio
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 muuttaa useita integraation kosketuspisteitä suvereeneille vuokralaisille, migraation varmistukselle ja vuokralaisen elinkaaren automaatiolle.
 

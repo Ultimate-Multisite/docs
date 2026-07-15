@@ -3,7 +3,7 @@ title: 'Mësimi 11: Gjetja e klientëve'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Mësimi 11: Gjetja e klientëve {#lesson-11-finding-customers}
+# Mësimi 11: Gjetja e klientëve
 
 Një platformë e shkëlqyer pa klientë është thjesht një hobi. Ky mësim trajton si të fitoni klientë në një vertikale të specializuar -- strategji që funksionojnë posaçërisht sepse jeni të fokusuar në një industri.
 

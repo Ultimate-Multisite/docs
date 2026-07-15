@@ -3,7 +3,7 @@ title: 客户反馈与问题报告
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# 用户反馈与问题报告 {#customer-feedback--issue-reporting}
+# 用户反馈与问题报告
 
 Gratis AI Agent v1.5.0 引入了内置的反馈和问题报告系统，允许最终用户在聊天界面直接标记无用的回复或报告问题。该系统包括同意管理、自动报告命令和后端 AI 辅助分诊。
 

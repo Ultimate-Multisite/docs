@@ -3,7 +3,7 @@ title: Vijisehemu vya Msimbo
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Vipande vya Msimbo kwa v2 {#code-snippets-for-v2}
+# Vipande vya Msimbo kwa v2
 
 Kimsingi, vipande vya msimbo kwa **WordPress** hutumiwa kufanya vitendo fulani ambavyo vingeweza kuhitaji plugin ndogo maalum. Vipande hivyo vya msimbo huwekwa kwenye moja ya faili za msingi za WordPress au faili za theme (kwa kawaida faili ya functions.php ya theme yako) au vinaweza kutumika kama MU plugin.
 

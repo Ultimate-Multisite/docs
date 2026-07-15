@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Nhật ký thay đổi của Site Exporter {#site-exporter-changelog}
+# Nhật ký thay đổi của Site Exporter
 
 Phiên bản: 1.0.6 - Phát hành vào 2026-05-11
 * Tính năng mới: Xuất site giờ đây đã bao gồm một file index.php tự khởi động, giúp bạn có thể cài đặt file ZIP này trên một máy chủ mới mà không cần cài đặt plugin riêng.

@@ -3,7 +3,7 @@ title: Domain Seller ändringslogg
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller ändringslogg {#domain-seller-changelog}
+# Domain Seller ändringslogg
 
 Version 1.3.0 - Släppt 2026-06-02
 - Nytt: Lade till en varning i nätverksadmin när HostAfrica-återförsäljarens saldo blir för lågt

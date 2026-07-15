@@ -3,7 +3,7 @@ title: Produk Domain sareng Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk Domain jeung Harga {#domain-products-and-pricing}
+# Produk Domain jeung Harga
 
 Produk domain téh cara anjeun ngontrol harga, TLD (Top-Level Domain), privasi WHOIS, jeung pilihan penyedia layanan. Saban produk domain téh mangrupa produk Ultimate Multisite standar anu aya tab **Domain Settings** tambahan.
 

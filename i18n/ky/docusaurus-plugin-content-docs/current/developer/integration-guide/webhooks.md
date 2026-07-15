@@ -3,7 +3,7 @@ title: Вебхуктарды иштетүү
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook иштетүү {#webhook-handling}
+# Webhook иштетүү
 
 Тышкы кызматтардан окуяларды алуу жана дайындарды Ultimate Multisite менен шайкештештирүү үчүн ыңгайлаштырылган webhook акыркы чекиттерин түзүңүз.
 

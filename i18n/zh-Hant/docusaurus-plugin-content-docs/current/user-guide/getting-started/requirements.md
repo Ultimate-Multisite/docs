@@ -3,7 +3,7 @@ title: 需求
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite 系統需求 {#ultimate-multisite-requirements}
+# Ultimate Multisite 系統需求
 
 在購買 Ultimate Multisite 之前，你可能會想知道執行這個 plugin 需要哪些條件。好消息是，執行 Ultimate Multisite 只需要幾個基本要求：一個**網域名稱**、一個優質的**主機服務商**，以及一個 WordPress **Multisite** 安裝環境。就這麼簡單！
 

@@ -3,7 +3,7 @@ title: Спільнота
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Як приєднатися до спільноти Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Як приєднатися до спільноти Ultimate Multisite
 
 Спільнота Ultimate Multisite — це простір, де ви можете спілкуватися з іншими користувачами Ultimate Multisite, ділитися порадами, досвідом та багато чим іншим. Щоб перейти до спільноти Ultimate Multisite, відвідайте https://community.ultimatemultisite.com/home.
 

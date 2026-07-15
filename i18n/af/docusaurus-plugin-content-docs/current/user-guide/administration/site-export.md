@@ -3,7 +3,7 @@ title: Webwerf Eksport
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Witwis-uitvoer {#site-export}
+# Witwis-uitvoer
 
 Die **Site Export** administrasiebladsy laat netwerkadministrateurs toe om een witwis, of die hele netwerk, in 'n aflaaibare argief te pak vir migrasie, 'n agtergrond, of oordragwerk.
 

@@ -3,7 +3,7 @@ title: Fampifandraisana Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Awtomatizasyon (Overview) {#overview}
 Cloudflare, web sitelerini korumak ve hızlandırmak için önde gelen bir içerik dağıtım ağı (CDN) ve güvenlik sağlayıcısıdır. Bu entegrasyon, Ultimate Multisite ile Cloudflare arasında otomatik alan adı yönetimi sağlar, özellikle de alt alan adı çoklu site kurulumları için.

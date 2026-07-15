@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Ìṣe: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# Ìṣe: wp_ultimo_captcha_load
 
 Ó máa ń ṣiṣẹ́ nígbà tí gbogbo àwọn ìgbẹ́kẹ̀lé bá ti kojọpọ̀.
 

@@ -3,7 +3,7 @@ title: ডছকাণ্ট কোড সৃষ্টি কৰা
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ডিসকাউন্ট কোড (Discount Codes) সৃষ্টি কৰা (v2) {#creating-discount-codes-v2}
+# ডিসকাউন্ট কোড (Discount Codes) সৃষ্টি কৰা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ কথা পাতে।**_
 

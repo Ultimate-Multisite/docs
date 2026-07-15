@@ -4,7 +4,7 @@ title: عمل - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Action: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Action: wu_enqueue_extra_hooks
 
 یہ پلگ ان ڈویلپرز کو اضافی ہکس (hooks) شامل کرنے کی اجازت دیتا ہے۔
 

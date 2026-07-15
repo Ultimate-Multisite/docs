@@ -3,7 +3,7 @@ title: Closte സംയോജനം
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ഇന്റഗ്രേഷൻ {#closte-integration}
+# Closte ഇന്റഗ്രേഷൻ
 
 ## അവലോകനം {#overview}
 Closte എന്നത് Google Cloud ഇൻഫ്രാസ്ട്രക്ചറിൽ നിർമ്മിച്ച ഒരു മാനേജ്ഡ് WordPress ഹോസ്റ്റിംഗ് പ്ലാറ്റ്‌ഫോമാണ്. Ultimate Multisite-ഉം Closte-ഉം തമ്മിൽ ഓട്ടോമാറ്റിക് ഡൊമെയ്ൻ സിൻകിംഗും SSL സർട്ടിഫിക്കറ്റ് മാനേജ്‌മെന്റും സാധ്യമാക്കുന്നതാണ് ഈ ഇന്റഗ്രേഷൻ.

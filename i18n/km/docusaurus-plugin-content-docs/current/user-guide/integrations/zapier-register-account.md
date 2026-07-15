@@ -3,7 +3,7 @@ title: ចុះឈ្មោះគណនីតាមរយៈ Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Sự kiện: ลงทะเบียนบัญชีผ่าน Zapier {#event-register-an-account-via-zapier}
+# Sự kiện: ลงทะเบียนบัญชีผ่าน Zapier
 
 Trong bài viết [Tích hợp Ultimate Multisite với Zapier](zapier.md), chúng ta đã thảo luận về cách sử dụng Zapier để thực hiện các hành động khác nhau trong Ultimate Multisite dựa trên các trigger và event. Trong bài viết này, chúng tôi sẽ chỉ cho bạn cách tích hợp các ứng dụng bên thứ ba. Chúng ta sẽ sử dụng Google Sheets làm nguồn dữ liệu và gửi thông tin đó đến Ultimate Multisite để đăng ký tài khoản.
 

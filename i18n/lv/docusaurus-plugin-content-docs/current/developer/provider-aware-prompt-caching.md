@@ -3,7 +3,7 @@ title: Nodrošinātājam pielāgota uzvedņu kešošana
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# No pakalpojumu sniedzēja atkarīga prompt kešošana {#provider-aware-prompt-caching}
+# No pakalpojumu sniedzēja atkarīga prompt kešošana
 
 Superdav AI Agent v1.12.0 ievieš **no pakalpojumu sniedzēja atkarīgu prompt kešošanu**, kas optimizē API izmaksas un latentumu, kešojot promptus dažādos LLM pakalpojumu sniedzējos. Katram pakalpojumu sniedzējam ir atšķirīgi kešošanas mehānismi un konfigurācijas.
 

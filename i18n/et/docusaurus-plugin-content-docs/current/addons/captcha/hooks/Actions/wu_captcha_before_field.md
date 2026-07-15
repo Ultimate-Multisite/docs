@@ -4,7 +4,7 @@ title: Tegevus - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Toiming: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Toiming: wu_captcha_before_field
 
 Käivitatakse enne captcha välja renderdamist.
 

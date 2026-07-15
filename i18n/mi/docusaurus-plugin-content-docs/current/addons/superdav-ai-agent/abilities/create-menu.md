@@ -3,7 +3,7 @@ title: Waihanga Tahua
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Waihanga Tahua {#create-menu}
+# Waihanga Tahua
 
 Ka waihanga te āheinga **Waihanga Tahua** i ngā tahua whakatere WordPress me te tautoko mō ngā tapanga whakatere motuhake e rerekē ana i ngā taitara whārangi.
 

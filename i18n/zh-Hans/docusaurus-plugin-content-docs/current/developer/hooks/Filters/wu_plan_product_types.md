@@ -4,7 +4,7 @@ title: 过滤器 - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filter: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filter: wu_plan_product_types
 
 过滤应被视为计划的产品类型。
 

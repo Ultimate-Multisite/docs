@@ -3,7 +3,7 @@ title: Orkestrimi i Ndërtuesit të Faqes v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrimi i Site Builder v2 {#site-builder-orchestration-v2}
+# Orkestrimi i Site Builder v2
 
 Orkestrimi i Site Builder v2 (i prezantuar në Gratis AI Agent v1.4.0) është motori që fuqizon krijimin e faqeve të internetit me shumë hapa. Kur i kërkoni agentit të "ndërtojë një faqe interneti për restorant" ose të "krijojë një portofol me blog", orkestruesi e ndan atë qëllim të nivelit të lartë në një **plan** të strukturuar, zbulon plugin-et e nevojshme për ta përmbushur, ekzekuton çdo hap me radhë, gjurmon progresin dhe rikuperohet nga gabimet në mënyrë autonome.
 

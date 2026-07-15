@@ -3,7 +3,7 @@ title: O‘lchovli tariflar o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered tariflar o‘zgarishlar jurnali {#metered-plans-changelog}
+# Metered tariflar o‘zgarishlar jurnali
 
 Versiya 1.1.0 - 2026-05-05 da chiqarilgan
 - Yangi: Multisite quyi saytlari uchun AI token billing — sozlanadigan har bir token stavkalari bilan mijoz saytlari bo‘ylab AI token ishlatilishini kuzating va hisoblang

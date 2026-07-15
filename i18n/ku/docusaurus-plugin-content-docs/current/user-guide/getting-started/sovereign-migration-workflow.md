@@ -3,7 +3,7 @@ title: پێویستی گۆڕانکاریی سوورین
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# پروسه مهاجرت حاکمیتی (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# پروسه مهاجرت حاکمیتی (Sovereign Migration Workflow)
 
 Ultimate Multisite نسخه 1.2.0 دروازه‌های تأیید مهاجرت را برای انتقال یک سایت زیرمجموعه استاندارد به زیرساخت تاننت حاکمیتی اضافه کرده است.
 

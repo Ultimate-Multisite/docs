@@ -3,7 +3,7 @@ title: تۆماری گۆڕانکارییەکانی Ultimate AI Connector بۆ خ
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# تۆماری گۆڕانکارییەکانی Ultimate AI Connector بۆ خاڵەکۆتاییە هاگونجاوەکان {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# تۆماری گۆڕانکارییەکانی Ultimate AI Connector بۆ خاڵەکۆتاییە هاگونجاوەکان
 
 ## وەشانی 2.0.0 — بڵاوکراوەتەوە لە 2026-04-24 {#version-200--released-on-2026-04-24}
 

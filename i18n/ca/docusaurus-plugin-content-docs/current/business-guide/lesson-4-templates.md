@@ -3,7 +3,7 @@ title: 'Lliçó 4: Creació de Plantilles de Nich'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Aula 4: Creació de Templates de Nich {#lesson-4-building-niche-templates}
+# Aula 4: Creació de Templates de Nich
 
 Els templates són el nucli de la teva proposta de valor de nich. Un propietari d'estudi de fitness que s'inscriu i veu un lloc web que ja sembla un site de fitness —amb horaris de classes, perfils d'entrenadors i la imatge correcta— és molt més probable que es quedi que un que veu un canvas en blanc.
 

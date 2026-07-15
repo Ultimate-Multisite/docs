@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Dokumentazioa {#ultimate-multisite-documentation}
+# Ultimate Multisite Dokumentazioa
 
 Ultimate Multisite dokumentazioan barnekan. Ultimate Multisite transformatzen du WordPress Multisite-a Website as a Service (WaaS) platarra bat maila webgune.
 
@@ -18,7 +18,7 @@ Zer da behar du zehazteko, konfiguratzeko eta jartzen dituzko WaaS platarra guzt
 
 Ultimate Multisite-an jarduteagatik erabiltzen dituzten erregistro teknikoak. Hook-etarako referentzia, REST API dokumentazioa eta addon-ek (addon development guides) datu-erregistroak.
 
-### [Addons] {#addons}
+### [Gehigarriak] {#addons}
 
 WooCommerce integrazioa, analitika, domainiak saldu eta gehiago beste funtunalde batzuk Ultimate Multisitean hobetzeko ulasteko hainbat addon plugin-ekaren dokumentazioa.
 

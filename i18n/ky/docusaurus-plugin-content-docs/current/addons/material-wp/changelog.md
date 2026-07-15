@@ -3,7 +3,7 @@ title: Material WP өзгөртүүлөр журналы
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP өзгөрүүлөр журналы {#material-wp-changelog}
+# Material WP өзгөрүүлөр журналы
 
 Версия 1.1.15 - 01/26/2026
 * Жакшыртылды: Код стили жана форматтоо;

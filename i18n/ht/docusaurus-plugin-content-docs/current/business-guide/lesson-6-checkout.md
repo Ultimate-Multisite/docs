@@ -3,7 +3,7 @@ title: 'Leson 6: Eksperyans Enskripsyon an'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leson 6: Eksperyans Enskripsyon an {#lesson-6-the-signup-experience}
+# Leson 6: Eksperyans Enskripsyon an
 
 Pwosesis checkout la se kote enterè vin tounen revni. Yon pwosesis enskripsyon ki konfizyon oswa twò jeneral fè w pèdi kliyan. Yon pwosesis ki espesifik pou nich la, ki pale lang yo epi ki sanble fasil, konvèti yo.
 

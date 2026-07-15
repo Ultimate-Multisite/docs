@@ -4,7 +4,7 @@ title: Action - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Action: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Action: wu_magic_link_invalid_token
 
 အသုံးပြုလို့မရတဲ့ magic link token တစ်ခုနဲ့ ကြုံရတဲ့အခါ အလုပ်လုပ်တဲ့ အက်ရှင်တစ်ခု ဖြစ်ပါတယ်။
 

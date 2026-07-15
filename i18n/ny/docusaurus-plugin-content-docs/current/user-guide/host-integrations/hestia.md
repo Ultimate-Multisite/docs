@@ -3,7 +3,7 @@ title: Kupanga Kufotokozera kwa Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Kufufu ya Kufunga na Control Panel ya Hestia {#hestia-control-panel-integration}
+# Kufufu ya Kufunga na Control Panel ya Hestia
 
 Iyi mwongozi uliyoona uliwezera kufunga Ultimate Multisite Hestia integration, kuliye kuongeza (na kuondoa) domains zilizopangwa katika mtandao wako kama Web Domain Aliases ndani ya Hestia.
 

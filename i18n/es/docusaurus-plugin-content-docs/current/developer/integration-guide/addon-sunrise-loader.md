@@ -3,7 +3,7 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Carga de Archivos Sunrise de Addon {#addon-sunrise-file-loader}
+# Carga de Archivos Sunrise de Addon
 
 Ultimate Multisite 2.8.0 añade un cargador de extensiones sunrise para add-ons e integraciones personalizadas de MU-plugin que necesitan ejecutarse durante el arranque (bootstrapping) de WordPress sunrise sin tener que editar el archivo `wp-content/sunrise.php` generado.
 

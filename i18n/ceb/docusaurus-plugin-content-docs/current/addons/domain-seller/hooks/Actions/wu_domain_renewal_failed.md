@@ -4,7 +4,7 @@ title: Aksyon - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Aksyon: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Aksyon: wu_domain_renewal_failed
 
 Mo-andar human mapakyas ang pagsulay sa pag-renew sa domain.
 

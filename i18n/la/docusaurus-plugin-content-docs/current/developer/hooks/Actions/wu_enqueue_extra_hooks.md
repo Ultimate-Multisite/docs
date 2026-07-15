@@ -4,7 +4,7 @@ title: Actio - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Actio: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Actio: wu_enqueue_extra_hooks
 
 Sinite programmatoribus additamentorum uncos additicios addere
 

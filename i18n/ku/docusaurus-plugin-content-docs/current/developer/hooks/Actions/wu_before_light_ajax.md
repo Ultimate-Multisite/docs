@@ -4,7 +4,7 @@ title: Kiryar - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Çalakî: wu_before_light_ajax {#action-wubeforelightajax}
+# Çalakî: wu_before_light_ajax
 
 Di hin rewşan de, em ê hewce bibin ku hêza zêde bar bikin da ku çalakiyan bi rê ve bibin.
 

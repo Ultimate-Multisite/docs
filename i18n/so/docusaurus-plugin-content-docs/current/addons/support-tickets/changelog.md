@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Tigidhada Taageerada
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Diiwaanka Isbeddellada Tigidhada Taageerada {#support-tickets-changelog}
+# Diiwaanka Isbeddellada Tigidhada Taageerada
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * La hagaajiyey: Laga saaray galka vendor/ la socodka Git (horey waxaa u daboolay .gitignore), taas oo yaraynaysa cabbirka kaydka

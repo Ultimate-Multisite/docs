@@ -3,7 +3,7 @@ title: Kutourira Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Kuenda Kuti Admin Panel (Touring the Admin Panel) {#touring-the-admin-panel}
+# Kuenda Kuti Admin Panel (Touring the Admin Panel)
 
 Ultimate Multisite inotora kuti iwe uone kuti ndiri nyore uye kunzwisisa, asi nekuti iweine chine zvinokosha zvakawanda, kana kuti iweine tour yakagadzirwa. Tiri kuenda pamapuro dzako dzinopuro kuti ndikubatsire utange uri munzvimbo.
 

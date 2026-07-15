@@ -3,7 +3,7 @@ title: Temu atbilstošas prasmes
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tēmas atbalstītie prasmes {#theme-aware-skills}
+# Tēmas atbalstītie prasmes
 
 Superdav AI Agent v1.10.0 ieviests divus jaunus, automātiski pielāgotos tēmas atbalstītas prasmes, kas automātiski piepaspieļas jūsu aktīvajai WordPress tēmā. Šie prasmes sniedz specializētu novirzīšanu un iespējas, kas piemērotas jūsu tēmas arhitektūrai un funkcijām.
 

@@ -3,7 +3,7 @@ title: フック使用ガイド
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# フック使用ガイド {#hooks-usage-guide}
+# フック使用ガイド
 
 Ultimate Multisite は200以上のアクションフックと280以上のフィルターフックを提供します。  
 このページでは、実用的な例とともに最も頻繁に使用されるフックを紹介します。  

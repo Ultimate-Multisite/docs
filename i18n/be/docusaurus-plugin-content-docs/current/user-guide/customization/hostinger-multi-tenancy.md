@@ -3,7 +3,7 @@ title: Многая адоптывальнасць Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Мультикастова система Hostinger {#hostinger-multi-tenancy}
+# Мультикастова система Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 дадае функцыянальнасць мультикастовай сістэмы Hostinger, што дазваляе хоสต์ваныя домены ўчаствовать у працы па стварэнні суверэйнага асобнага прастору (tenant) паралельно з існуючай інтэграцыяй мапіравання домейна Hostinger.
 

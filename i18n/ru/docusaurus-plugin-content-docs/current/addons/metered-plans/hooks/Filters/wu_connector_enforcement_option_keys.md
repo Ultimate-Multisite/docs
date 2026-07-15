@@ -4,7 +4,7 @@ title: Фильтр - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Фильтр: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Фильтр: wu_connector_enforcement_option_keys
 
 Фильтрует список ключей настроек (option keys) провайдеров ИИ, которые принудительно применяются с основного сайта.
 

@@ -3,7 +3,7 @@ title: Dezajna direkto
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dezajna Direkto {#design-direction}
+# Dezajna Direkto
 
 La paŝo **Dezajna Direkto** permesas al vi revizii, rafini kaj finpretigi la vidan dezajnon de via theme antaŭ ol Theme Builder generas la kompletan theme.
 

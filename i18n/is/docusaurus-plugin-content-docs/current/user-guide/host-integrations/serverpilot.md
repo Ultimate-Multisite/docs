@@ -3,7 +3,7 @@ title: Samþætting ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Samning við ServerPilot {#serverpilot-integration}
+# Samning við ServerPilot
 
 ## Áhersla {#overview}
 ServerPilot er skýservice fyrir hostingu WordPress og övrra PHP vefsíða á serverum DigitalOcean, Amazon, Google eða övrum serverhugtökum. Þessi samning fer með sjálfsviðandi samningu domænum og stjórnun SSL-tækni milli Ultimate Multisite og ServerPilot.

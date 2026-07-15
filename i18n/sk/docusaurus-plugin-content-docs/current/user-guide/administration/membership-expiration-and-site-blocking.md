@@ -3,7 +3,7 @@ title: Vypadnutie členstva a blokovanie webu
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Vypadok členstva a blokovanie stránky {#membership-expiration-and-site-blocking}
+# Vypadok členstva a blokovanie stránky
 
 Toto smernica vysvetľuje, ako Ultimate Multisite rieši vyprázdnenie členstva, ukončenie skúšobných okresov a blokovanie frontendovej stránky. Pokrýva životný cyklus členstva od aktívneho do vyprázdaného, nastavenia, ktoré kontrolujú, či sú stránky blokované, a čo skontrolovať, ak sa po uplynutí termínu členstva stránky stále dá prístup.
 

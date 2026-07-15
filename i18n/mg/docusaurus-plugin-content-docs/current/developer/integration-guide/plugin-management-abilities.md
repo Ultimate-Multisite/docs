@@ -3,7 +3,7 @@ title: Fahaiza-mitantana plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Fahaiza-mitantana fanitarana {#plugin-management-abilities}
+# Fahaiza-mitantana fanitarana
 
 Gratis AI Agent v1.5.0 dia miaraka amin'ny **fahaiza-mitantana fanitarana 7** izay azon'ny mpanampy AI antsoina mandritra ny resaka. Ireo fahaiza-manao ireo dia manome fanaraha-maso ara-programa amin'ireo fanitarana WordPress napetraka amin'ny alalan'ny [Mpanamboatra Fanitarana sy Rafitra Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

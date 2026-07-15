@@ -4,7 +4,7 @@ title: Mahinga - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Mahi: delete_network {#action-deletenetwork}
+# Mahi: delete_network
 
 Ka whakaohohia i muri i te mukunga o tētahi whatunga.
 

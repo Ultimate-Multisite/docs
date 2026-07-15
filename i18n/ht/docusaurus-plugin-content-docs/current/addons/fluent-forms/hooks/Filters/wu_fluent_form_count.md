@@ -4,7 +4,7 @@ title: Filtre - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filtè: wu_fluent_form_count {#filter-wufluentformcount}
+# Filtè: wu_fluent_form_count
 
 Pèmèt devlopè plugin yo chanje total kantite fòm yo
 

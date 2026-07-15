@@ -4,7 +4,7 @@ title: कार्य - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# कार्य: wu_page_before_render {#action-wupagebeforerender}
+# कार्य: wu_page_before_render
 
 पृष्ठ रेन्डर गर्नु अघि चल्छ।
 

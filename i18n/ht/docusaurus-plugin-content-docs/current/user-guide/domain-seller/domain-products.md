@@ -3,7 +3,7 @@ title: Pwodwi Domèn ak Pri
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Products ak Priprez {#domain-products-and-pricing}
+# Domain Products ak Priprez
 
 Domain products se pa ou kontwo kontrol priz, TLD yo, konfidans WHOIS, ak chwazi pwovizè w. Chak domain product se yon estanda Multisite Ultimate ki gen yon tab **Domain Settings** ekstrèm.
 

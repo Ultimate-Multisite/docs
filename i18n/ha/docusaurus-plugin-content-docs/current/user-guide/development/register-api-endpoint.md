@@ -3,7 +3,7 @@ title: Raddade ƙaramin API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# کۆتایلی API endpoint ی تۆڕی گشتی (Multisite) {#the-ultimate-multisite-register-api-endpoint}
+# کۆتایلی API endpoint ی تۆڕی گشتی (Multisite)
 
 دواندن این آموزش یاد می‌گیری که چطور از Ultimate Multisite /register API endpoint برای ساخت کل فرآیند پذیرش یک مشتری جدید در شبکه خود استفاده کنید و چطور این کار را با Zapier انجام دهید.
 

@@ -3,7 +3,7 @@ title: Potongan Kode
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Cuplikan Kode untuk v2 {#code-snippets-for-v2}
+# Cuplikan Kode untuk v2
 
 Pada dasarnya, cuplikan kode untuk **WordPress** digunakan untuk melakukan berbagai aksi yang mungkin membutuhkan plugin kecil tersendiri. Cuplikan kode seperti ini ditempatkan di salah satu file inti WordPress atau file tema (umumnya file functions.php dari tema Anda) atau dapat digunakan sebagai MU plugin.
 

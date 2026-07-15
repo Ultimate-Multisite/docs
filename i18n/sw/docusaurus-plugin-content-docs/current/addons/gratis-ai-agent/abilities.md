@@ -3,7 +3,7 @@ title: Rejeleo la Uwezo
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Rejea ya Uwezo {#abilities-reference}
+# Rejea ya Uwezo
 
 Uwezo ni vitendo vya msingi ambavyo Gratis AI Agent inaweza kuitisha kwenye usakinishaji wako wa WordPress. Kila uwezo ni PHP class iliyosajiliwa inayofichua JSON schema — agent husoma schema hii wakati wa utekelezaji ili kuelewa ni parameters gani zinahitajika na uwezo unarudisha nini.
 

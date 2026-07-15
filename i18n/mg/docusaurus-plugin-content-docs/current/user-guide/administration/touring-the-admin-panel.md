@@ -3,7 +3,7 @@ title: Manatrika ny Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Fandrenana ny Admin Panel {#touring-the-admin-panel}
+# Fandrenana ny Admin Panel
 
 Ny Ultimate Multisite dia mikendry ho tsotra sy mazava indrindra azo atao, fa amin'ny fitaovana mahery toy izany dia afaka manampy anareo hanana "guided tour" (fianarana mitarika). Andao handeha amin'ireo pejy admin mba hanampiana anareo hahatsapa tsara.
 

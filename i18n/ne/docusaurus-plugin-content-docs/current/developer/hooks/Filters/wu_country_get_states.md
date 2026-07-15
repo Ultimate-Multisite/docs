@@ -4,7 +4,7 @@ title: फिल्टर - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# फिल्टर: wu_country_get_states {#filter-wucountrygetstates}
+# फिल्टर: wu_country_get_states
 
 यस देशका लागि राज्यहरूको सूची फर्काउँछ।
 

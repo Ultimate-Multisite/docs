@@ -3,7 +3,7 @@ title: نصب افزونه‌ی Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# نصب Ultimate Multisite {#installing-ultimate-multisite}
+# نصب Ultimate Multisite
 
 :::note
 این آموزش فرض می‌کند که شما قبلاً WordPress Multisite را نصب و پیکربندی کرده‌اید. برای یادگیری نحوه انجام این کار، [این آموزش](https://www.wpbeginner.com/glossary/multisite/) از WP Beginner را بررسی کنید.

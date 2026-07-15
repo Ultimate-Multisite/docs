@@ -3,7 +3,7 @@ title: ቴም-ተኮር ክህሎቶች
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# በንድፍ ገጽታ ላይ የተመሰረቱ ችሎታዎች (Theme-Aware Skills) {#theme-aware-skills}
+# በንድፍ ገጽታ ላይ የተመሰረቱ ችሎታዎች (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 አራት አዳዲስ በንድፍ ገጽታ ላይ የተመሰረቱ (theme-aware) አብሮ የተሰራ ችሎታዎችን ይልካል። እነዚህ ችሎታዎች በንቁ የWordPress ንድፍ ገጽታዎ (theme) ላይ በራስ-ሰር ይላመዳሉ (adapt)። እነዚህ ችሎታዎች ለንድፍ ገጽታዎ አርክቴክቸር እና ባህሪያት ተስማሚ የሆኑ ልዩ መመሪያዎችን እና አቅሞችን ይሰጣሉ።
 

@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta’ AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Reġistru tal-bidliet ta' AffiliateWP {#affiliatewp-changelog}
+# Reġistru tal-bidliet ta' AffiliateWP
 
 Verżjoni: 2.0.1 - Maħruġa fil-2025-09-28
 

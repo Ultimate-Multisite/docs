@@ -3,7 +3,7 @@ title: रिलीज़ ନୋଟ୍ସ
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ରିଲିସ୍ ନୋଟ୍ସ (Release Notes) {#release-notes}
+# ରିଲିସ୍ ନୋଟ୍ସ (Release Notes)
 
 ## ବର୍ଷ ୨.୧୩.୦ — ୨୦୨୬-୦୬-୦୫ ରେ ରିଲିସ୍ ହୋଇଛି {#version-2130--released-on-2026-06-05}
 

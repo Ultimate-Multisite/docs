@@ -3,7 +3,7 @@ title: Mga Porma sa Pagkontak sa Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Mga Contact Form sa Site Builder {#site-builder-contact-forms}
+# Mga Contact Form sa Site Builder
 
 Ang Superdav AI Agent v1.10.0 naghatag og abilidad nga makakabalo maghimo og mga contact form direkta gikan sa chat interface gamit ang Site Builder agent. Kini nagtugot kanimo sa pagdugang og bug-os ug functional nga mga contact form sa bisan unsang page nga wala gyud mogawas sa chat.
 

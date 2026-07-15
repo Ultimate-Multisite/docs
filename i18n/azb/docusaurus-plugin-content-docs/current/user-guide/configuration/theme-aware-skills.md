@@ -3,7 +3,7 @@ title: Tema-bil Maharat
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema'ya Özel Yetenekler {#theme-aware-skills}
+# Tema'ya Özel Yetenekler
 
 Superdav AI Agent v1.10.0, aktif WordPress temanıza otomatik olarak uyum sağlayan dört yeni tema'ya özel yerleşik yetenek (skill) getiriyor. Bu yetenekler, temanızın mimarisine ve özelliklerine özel rehberlik ve kabiliyetler sunar.
 

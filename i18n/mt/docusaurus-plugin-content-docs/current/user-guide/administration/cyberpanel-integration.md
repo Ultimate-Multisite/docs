@@ -3,7 +3,7 @@ title: Integrazzjoni CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integrazzjoni mal-CyberPanel {#cyberpanel-integration}
+# Integrazzjoni mal-CyberPanel
 
 Dan it-tieni jispjega kif tista' tgħallma l-Ultimate Multisite CyberPanel integration biex domini mappati fil-network tiegħek jiġu aḍḍaw (u jiġu eliminati) awtomatik come virtual hosts f'CyberPanel, ma għal-provision auto-SSL opzjonali minn Let's Encrypt.
 

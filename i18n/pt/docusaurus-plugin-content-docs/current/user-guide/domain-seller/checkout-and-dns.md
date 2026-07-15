@@ -3,7 +3,7 @@ title: Campo de Checkout e DNS do Cliente
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gerenciamento de Campos de Checkout e DNS do Cliente {#checkout-field-and-customer-dns-management}
+# Gerenciamento de Campos de Checkout e DNS do Cliente
 
 ## O campo de seleção de domínio no checkout {#the-domain-selection-checkout-field}
 

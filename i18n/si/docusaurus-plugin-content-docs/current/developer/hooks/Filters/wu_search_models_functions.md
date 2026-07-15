@@ -4,7 +4,7 @@ title: පෙරහන - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# පෙරහන: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# පෙරහන: wu_search_models_functions
 
 plugin සංවර්ධකයින්ට තවත් search models functions එක් කිරීමට ඉඩ දෙයි.
 

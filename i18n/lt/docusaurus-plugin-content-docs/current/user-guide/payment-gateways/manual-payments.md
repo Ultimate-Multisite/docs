@@ -3,7 +3,7 @@ title: Rankinių mokėjimų nustatymas
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Rankinių mokėjimų nustatymas (v2) {#setting-up-manual-payments-v2}
+# Rankinių mokėjimų nustatymas (v2)
 
 _**SVARBI PASTABA: Šis straipsnis skirtas Ultimate Multisite 2.x versijai.**_
 

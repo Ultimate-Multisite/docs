@@ -3,7 +3,7 @@ title: ক্ষমতা দৃশ্যমানতা
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility (ক্ষমতাৰ দৃশ্যমানতা) {#ability-visibility}
+# Ability Visibility (ক্ষমতাৰ দৃশ্যমানতা)
 
 Superdav AI Agent v1.12.0 ত **Ability Visibility** নিয়ন্ত্ৰণ যোগ কৰা হৈছে, যিয়ে নিৰ্ধাৰণ কৰে যে কোন কোন 'Ability' (ক্ষমতা) ক কোন কোন স্থানত প্ৰকাশ কৰা হ'ব। ই প্রশাসকসকলক নিখুঁতভাৱে সামঞ্জস্য কৰাত সহায় কৰে যে কোন এজেণ্ট ক্ষমতা REST APIs, MCP সার্ভাৰ, WooCommerce ইন্টিগ্ৰেচন, আৰু অন্যান্য আন্তঃপৃষ্ঠত উপলব্ধ হ'ব।
 

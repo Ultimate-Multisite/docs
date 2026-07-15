@@ -4,7 +4,7 @@ title: Iragazkia - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Iragazkia: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Iragazkia: wu_wp_config_reference_hook_line_patterns
 
 Hiru eredu egiaztatzen ditugu gure konstanteak non injektatu ditzakegun zehazten saiatzean:
 

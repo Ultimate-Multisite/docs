@@ -3,7 +3,7 @@ title: Comharrachadh an t-uisgeadh
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# An uairt mo chàrr mo chàrr? (How can I cancel my subscription?) {#how-can-i-cancel-my-subscription}
+# An uairt mo chàrr mo chàrr? (How can I cancel my subscription?)
 
 Tha thuair a bhith agad de 'Ultimate Multisite' license, le tuar a thig air a' chlàradh gu am bith a tha thu a' fhaic. Tha e guidheach an tairgse seo:
 

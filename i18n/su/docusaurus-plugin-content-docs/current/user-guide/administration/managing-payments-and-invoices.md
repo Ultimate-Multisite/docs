@@ -3,7 +3,7 @@ title: Ngatur Pembayaran je Tagihan
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ngatur Pembayaran je Invoice {#managing-payments-and-invoices}
+# Ngatur Pembayaran je Invoice
 
 ## Pengaturan Pembayaran {#payment-settings}
 

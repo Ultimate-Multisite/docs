@@ -3,7 +3,7 @@ title: Paghihiwalay ng Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Paghihiwalay sa Multi-Tenancy (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Paghihiwalay sa Multi-Tenancy (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ay sumusuporta sa per-subsite database at filesystem isolation para sa mga sovereign tenant. Pinapanatili nito ang data ng tenant na hiwalay habang pinapanatili ang provisioning, billing, at administrasyon sa antas ng network.
 

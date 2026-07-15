@@ -3,7 +3,7 @@ title: Tạo mã giảm giá
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Tạo mã giảm giá (v2) {#creating-discount-codes-v2}
+# Tạo mã giảm giá (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

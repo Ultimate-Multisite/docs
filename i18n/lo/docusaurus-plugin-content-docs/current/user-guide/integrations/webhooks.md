@@ -3,7 +3,7 @@ title: ເວັບຮູກ
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# ការមើល Webhooks ជាលើកដំបូង (v2) {#a-first-look-on-webhooks-v2}
+# ការមើល Webhooks ជាលើកដំបូង (v2)
 
 _**ចំណាំ: ฟีเจอร์หรือบทความนี้สำหรับผู้ใช้ขั้นสูงเท่านั้น**_
 

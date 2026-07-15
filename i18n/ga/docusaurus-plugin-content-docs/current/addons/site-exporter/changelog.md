@@ -3,7 +3,7 @@ title: Loga Athruithe Easpórtálaí Suímh
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Loga Athruithe Site Exporter {#site-exporter-changelog}
+# Loga Athruithe Site Exporter
 
 Leagan: 1.0.6 - Eisithe ar 2026-05-11
 * Nua: Cuireann easpórtálacha suímh index.php féin-tosaitheach san áireamh anois ionas gur féidir an ZIP a shuiteáil ar óstach úr gan suiteáil plugin ar leith

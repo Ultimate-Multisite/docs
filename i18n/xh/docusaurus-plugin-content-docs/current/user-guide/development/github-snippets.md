@@ -3,7 +3,7 @@ title: GitHub Iziqwengana
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Indlela yokusebenzisa ii-snippets ze-Ultimate Multisite kwi-repository yethu ye-GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Indlela yokusebenzisa ii-snippets ze-Ultimate Multisite kwi-repository yethu ye-GitHub
 
 Kukho ii-snippets zekhowudi ezifumanekayo kwi-repository ye-GitHub ezisoloko zicelwa ngabasebenzisi be-Ultimate Multisite abafuna ukongeza imisebenzi emincinci njengokongeza iskripthi se-Google Analytics kumaphepha okubhalisa okanye ukufihla i-meta box kwi-admin dashboard.
 
@@ -19,7 +19,7 @@ Kukho iindlela ezi-2 zokongeza ikhowudi
 
   2. Must-Use Plugins (mu-plugins)
 
-# Indlela yokongeza i-snippet kwifayile ye-functions.php ye-theme yakho. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Indlela yokongeza i-snippet kwifayile ye-functions.php ye-theme yakho.
 
   1. Ngena kwi-WordPress Network admin dashboard yakho uze uye ku-Themes >Theme Editor (Jonga umfanekiso wesikrini ongezantsi).
 
@@ -29,7 +29,7 @@ Kukho iindlela ezi-2 zokongeza ikhowudi
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Indlela yokudala ii-Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Indlela yokudala ii-Must-Use Plugins (mu-plugins)
 
 I-WordPress inophawu olukuvumela ukuba ulayishe umsebenzi owenzelwe wena obizwa ngokuba yi-"Must-Use Plugins", okanye "mu-plugins" ngokufutshane.
 

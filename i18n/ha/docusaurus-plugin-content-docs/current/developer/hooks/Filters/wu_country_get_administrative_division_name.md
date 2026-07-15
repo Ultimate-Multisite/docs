@@ -4,7 +4,7 @@ title: Tace - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Tace: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Tace: wu_country_get_administrative_division_name
 
 Yana dawo da kyakkyawan sunan ƙananan sassan gudanarwa na ƙasa.
 

@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# ການກະທຳ: wu_page_after_render {#action-wupageafterrender}
+# ການກະທຳ: wu_page_after_render
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມເນື້ອຫາເພີ່ມເຕີມຫຼັງຈາກທີ່ເຮົາພິມໜ້າແລ້ວ
 

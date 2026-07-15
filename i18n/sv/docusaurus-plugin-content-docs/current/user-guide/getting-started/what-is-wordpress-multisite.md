@@ -3,7 +3,7 @@ title: Vad är WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Vad är WordPress Multisite? {#what-is-wordpress-multisite}
+# Vad är WordPress Multisite?
 
 WordPress har en inbyggd funktion som kallas "Multisite" och som har funnits sedan WordPress 3.0 lanserades 2010. Sedan dess har funktionen uppdaterats ett flertal gånger med nya funktioner och förbättrad säkerhet.
 

@@ -4,7 +4,7 @@ title: Àlẹmọ - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Àlẹmọ: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Àlẹmọ: mu-migration/all_posts/default_args
 
 Ó ṣe àlẹmọ àwọn args aiyipada fún wíwá àwọn ìfìwéránṣẹ́ nínú ọ̀nà all_posts.
 

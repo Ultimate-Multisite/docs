@@ -3,7 +3,7 @@ title: Ìṣàn iṣẹ́ ìṣílọ aládàáṣẹ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Ìlànà Iṣipopada Sovereign {#sovereign-migration-workflow}
+# Ìlànà Iṣipopada Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ṣàfikún àwọn ẹnu-ọ̀nà ìmúdájú ìṣipopada fún gbígbé abẹ́-ojúlé àtẹ̀yìnwá kan sínú amáyédẹrùn tenant sovereign.
 

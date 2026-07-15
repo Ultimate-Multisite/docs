@@ -3,7 +3,7 @@ title: Vaatimukset
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite vaatimukset {#ultimate-multisite-requirements}
+# Ultimate Multisite vaatimukset
 
 Ensimmäinen asia, josta saatat miettiä ennen Ultimate Multisiten ostamista, on se, mitkä ovat vaatimukset meidän pluginimme ajamiseen. Onneksi, Ultimate Multisiten ajamiseen riittää vain muutamia perusvaatimuksia: **verkkotunnus**, hyvä **hostauspalveluntarjoaja** ja WordPressin **Multisite** -asennus. Näitä tarvitset!
 

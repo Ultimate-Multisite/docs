@@ -3,7 +3,7 @@ title: Uzlaboti koda piemēri
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Paplašināti koda piemēri {#advanced-code-examples}
+# Paplašināti koda piemēri
 
 Šie piemēri demonstrē paplašinātus integrācijas modeļus ar Ultimate Multisite.
 

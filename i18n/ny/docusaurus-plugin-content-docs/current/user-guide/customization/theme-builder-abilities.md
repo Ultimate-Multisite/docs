@@ -3,7 +3,7 @@ title: Mwayi awo ya Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Uzi wa Theme Builder: Kufunga na Kuwaka Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Uzi wa Theme Builder: Kufunga na Kuwaka Block Themes
 
 Superdav AI Agent v1.12.0 imapeza uwezo mbaluwu ubalezi wosayansi ambao umeweza kutengeneza na kuwekwa thimbi la block (block themes) moja kwa moja kupitia chat interface.
 

@@ -3,7 +3,7 @@ title: Help gyda ddatblygiad cyflwrigol
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Sut iach y help ddatblygolydd o Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Sut iach y help ddatblygolydd o Codeable?
 
 Am ychydig, mae angen i'r ddangosioedd gwych yn rhywfaint i wneud ein gyfylchrau yn llwyr fel y byddwn yn ei eisiau. Os ydych chi'n chwilio am hyn, rydym ni'n cywir eich cynrychioliad â [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), lle gallwch ddod o hyd i ddatblygwyr gair gyda chyflwyniad gyda chwarae Ultimate Multisite.
 

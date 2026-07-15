@@ -3,7 +3,7 @@ title: Administratoriaus puslapio kūrėjo pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Administratoriaus puslapių kūrimo pakeitimų žurnalas {#admin-page-creator-changelog}
+# Administratoriaus puslapių kūrimo pakeitimų žurnalas
 
 ### Versija 1.9.0 - Išleista 2026-01-18 {#version-190---released-on-2026-01-18}
 

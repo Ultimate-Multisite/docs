@@ -3,7 +3,7 @@ title: البحث في الإنترنت
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# البحث عبر الإنترنت {#internet-search}
+# البحث عبر الإنترنت
 
 يضيف Gratis AI Agent v1.5.0 خاصية **البحث عبر الإنترنت** التي تسمح للمساعد الذكي باسترداد معلومات محدثة من الويب أثناء المحادثة. يتم تشغيل هذه الخاصية بواسطة [Brave Search API](https://brave.com/search/api/) أو [Tavily API](https://tavily.com/).
 

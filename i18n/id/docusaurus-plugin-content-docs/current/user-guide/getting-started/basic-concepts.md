@@ -3,7 +3,7 @@ title: Konsep Dasar
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Konsep Dasar {#basic-concepts}
+# Konsep Dasar
 
 Bagi pengguna baru WordPress Multisite dan mereka yang baru mulai menggunakan Ultimate Multisite, mungkin ada banyak istilah dan frasa baru yang perlu dipahami. Mempelajari istilah-istilah ini adalah tugas penting karena Anda perlu memahami platform dan cara kerjanya secara keseluruhan.
 

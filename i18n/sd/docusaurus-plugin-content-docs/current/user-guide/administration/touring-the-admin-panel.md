@@ -3,7 +3,7 @@ title: एडमिन پینل جوڙي وڃڻ
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# ایڈمن پینل کو دیکھنا (Touring the Admin Panel) {#touring-the-admin-panel}
+# ایڈمن پینل کو دیکھنا (Touring the Admin Panel)
 
 Ultimate Multisite کوشش ڪري ٿو ته جتنا سڌو ۽ خود وضاحت واري هجي، پر ان قدر طاقتور ٽول سان اهو هڪ گائیڊed ٹور ڪرڻ ۾ مدد ڪري سگهي ٿو. آءُ توهان کي پنهنجي پياري ڪم ڪندڙ صفحي (admin pages) تي رهڻ لاءِ مدد ڪرڻ لاءِ ڏسيان.
 

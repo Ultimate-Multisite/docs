@@ -3,7 +3,7 @@ title: GridPane ինտեգրում
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane-ի ինտեգրումը (Integration) {#gridpane-integration}
+# GridPane-ի ինտեգրումը (Integration)
 
 ## Ընդհանուր տեսքը (Overview) {#overview}
 GridPane-ը հատուկ WordPress հոස්թինգի վերահսկող պանել է, որը կառուցված է լուրջ WordPress մասնագետների համար։ Այս ինտեգրումը թույլ է տալիս ավտոմատ դոմենային սինխրոնիզացիա և SSL վկայագրականների կառավարում Ultimate Multisite-ի և GridPane-ի միջև։

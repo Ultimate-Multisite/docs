@@ -4,7 +4,7 @@ title: Chochita - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Zochita: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Zochita: wp_ultimo_affiliatewp_deactivation
 
 Lolani magawo ena a plugin kulumikiza ndondomeko zawo za deactivation
 

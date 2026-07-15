@@ -3,7 +3,7 @@ title: 'Isifundo 2: Ukukhetha umkhakha wakho okhethekile'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Isifundo 2: Ukukhetha I-niche Yakho {#lesson-2-picking-your-niche}
+# Isifundo 2: Ukukhetha I-niche Yakho
 
 Esifundweni 1 sathola ukuthi kungani i-niche inqoba okujwayelekile. Manje kudingeka ukhethe eyakho. Lesi sifundo sikunikeza uhlaka lokuthola nokuqinisekisa i-niche ngaphambi kokuba utshale isikhathi uyakhela yona.
 

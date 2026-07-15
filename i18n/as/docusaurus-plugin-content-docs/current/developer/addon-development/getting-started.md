@@ -3,7 +3,7 @@ title: এডঅন উন্নয়নৰ সৈতে আৰম্ভ কৰ
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# অ্যাডঅন উন্নয়ন {#addon-development}
+# অ্যাডঅন উন্নয়ন
 
 ## অ্যাডঅন গঠন {#addon-structure}
 

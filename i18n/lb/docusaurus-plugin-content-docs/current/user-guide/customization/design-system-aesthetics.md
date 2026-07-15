@@ -3,7 +3,7 @@ title: Design System Ästhetik Fähigkeit
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics Fähigkeit {#design-system-aesthetics-skill}
+# Design System Aesthetics Fähigkeit
 
 D'**Design System Aesthetics Fähigkeit** isch en geführte Weg, wie Sie d'visuelle Identität vo Ihrer Site verfeinere. Es hilft Ihnen, konsistenti Entscheidigä über Typografie, Farb, Abstände und Motion Tokens z'treffe, wo Ihr Design System definiered.
 

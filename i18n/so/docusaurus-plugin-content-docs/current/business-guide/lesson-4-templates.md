@@ -3,7 +3,7 @@ title: 'Casharka 4: Dhisidda Qaabab Takhasus Gaar ah'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Cashar 4: Dhisidda Templates Niche ah {#lesson-4-building-niche-templates}
+# Cashar 4: Dhisidda Templates Niche ah
 
 Templates waa udub-dhexaadka qiimaha aad u soo bandhigto niche-kaaga. Milkiile studio fitness ah oo isdiiwaangeliya oo arka site horeba ugu eg website fitness -- leh jadwalada fasallada, profiles tababarayaal, iyo sawirrada saxda ah -- aad ayuu uga badan yahay inuu sii joogo marka loo eego mid arka bog madhan.
 

@@ -3,7 +3,7 @@ title: AffiliateWP ບັນທຶກການປ່ຽນແປງ
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ບັນທຶກການປ່ຽນແປງ {#affiliatewp-changelog}
+# AffiliateWP ບັນທຶກການປ່ຽນແປງ
 
 ເວີຊັນ: 2.0.1 - ປ່ອຍໃຊ້ໃນວັນທີ 2025-09-28
 

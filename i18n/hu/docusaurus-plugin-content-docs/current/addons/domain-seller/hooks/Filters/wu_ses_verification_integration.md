@@ -4,7 +4,7 @@ title: Szűrő - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Szűrő: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Szűrő: wu_ses_verification_integration
 
 Szűrő: lehetővé teszi más kódrészletek számára, hogy biztosítsák az SES integrációs objektumot.
 

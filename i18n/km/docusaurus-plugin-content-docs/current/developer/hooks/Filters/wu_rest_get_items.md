@@ -4,7 +4,7 @@ title: តម្រង - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# តម្រង: wu_rest_get_items {#filter-wurestgetitems}
+# តម្រង: wu_rest_get_items
 
 ត្រួតពិនិត្យថាតើអនុញ្ញាតឱ្យបន្តជាមួយសំណើនេះឬអត់។
 

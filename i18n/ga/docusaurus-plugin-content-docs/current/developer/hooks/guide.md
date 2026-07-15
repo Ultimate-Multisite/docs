@@ -3,7 +3,7 @@ title: Treoir Úsáide Crúcaí
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Treoir maidir le hÚsáid Hooks {#hooks-usage-guide}
+# Treoir maidir le hÚsáid Hooks
 
 Soláthraíonn Ultimate Multisite 200+ action hooks agus 280+ filter hooks. Clúdaíonn an leathanach seo na hooks is coitianta a úsáidtear, le samplaí praiticiúla. Le haghaidh tagartha iomláine a ghintear go huathoibríoch, brabhsáil na leathanaigh eile sa chuid seo.
 

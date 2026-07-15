@@ -3,7 +3,7 @@ title: Palitra Kontrastını Yoxla
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palitral Kontrastı Yoxlamaq {#validate-palette-contrast}
+# Palitral Kontrastı Yoxlamaq
 
 **Palitral Kontrastı Yoxlamaq** funksionallığı, dizayn palitranızdakı rəng cütlərini, onları mövzuya tətbiq etməzdən əvvəl WCAG (Web Kontentə Giriş Uyğunluğu Təlimatları) standartlarına uyğunluq baxımından yoxlayır.
 

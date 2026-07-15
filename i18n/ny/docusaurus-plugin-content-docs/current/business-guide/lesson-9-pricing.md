@@ -3,7 +3,7 @@ title: 'Phunziro 9: Kuyika Mitengo Kuti Mupeze Phindu'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Phunziro 9: Mitengo ya Phindu {#lesson-9-pricing-for-profit}
+# Phunziro 9: Mitengo ya Phindu
 
 Mu Phunziro 5 tinakhazikitsa mitengo yoyambirira ya madongosolo a FitSite. Tsopano tikukonza bwino njira ya mitengo ndi njira zomwe zimawonjezera ndalama, kulimbikitsa kukweza madongosolo, ndi kuchepetsa makasitomala kusiya ntchito.
 

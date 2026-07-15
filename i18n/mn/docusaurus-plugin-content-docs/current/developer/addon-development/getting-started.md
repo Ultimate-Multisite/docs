@@ -3,7 +3,7 @@ title: Нэмэлт хөгжүүлэлтээр эхлэх
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Нэмэлт хөгжүүлэлт {#addon-development}
+# Нэмэлт хөгжүүлэлт
 
 ## Нэмэлтийн бүтэц {#addon-structure}
 

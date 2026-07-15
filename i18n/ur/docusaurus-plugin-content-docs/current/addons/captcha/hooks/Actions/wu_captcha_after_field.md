@@ -4,7 +4,7 @@ title: Action - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Action: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Action: wu_captcha_after_field
 
 یہ ایکشن اس وقت فعال ہوتا ہے جب کیپچا فیلڈ (captcha field) دکھایا (render) جا چکا ہوتا ہے۔
 

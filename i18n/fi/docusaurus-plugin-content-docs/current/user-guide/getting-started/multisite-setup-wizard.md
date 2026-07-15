@@ -3,7 +3,7 @@ title: Monisivuisen asennusohjain
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Asetusohje {#multisite-setup-wizard}
+# Multisite Asetusohje
 
 Ultimate Multisite sisältää sisäänrakennetun ohjelman, joka muuntaa vakiintuneen WordPress-asennuksen automaattisesti WordPress Multisite -verkostoksi. Tämä poistaa tarpeen manuaalisesti muokata `wp-config.php`-tiedostoa tai suorittaa tietokantakomentoja.
 

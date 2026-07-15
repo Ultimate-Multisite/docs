@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# କାର୍ଯ୍ୟ: wu_domain_created {#action-wudomaincreated}
+# କାର୍ଯ୍ୟ: wu_domain_created
 
 ନୂତନ ଡୋମେନ୍ ମ୍ୟାପିଂ ଯୋଡ଼ା ହେଲେ ଟ୍ରିଗର୍ ହୁଏ।
 

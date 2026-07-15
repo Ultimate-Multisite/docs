@@ -3,7 +3,7 @@ title: ຄູ່ມືການຜະສານລະບົບ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ຄູ່ມືການເຊື່ອມຕໍ່ {#integration-guide}
+# ຄູ່ມືການເຊື່ອມຕໍ່
 
 ຄູ່ມືນີ້ຄອບຄຸມຮູບແບບການເຊື່ອມຕໍ່ທົ່ວໄປກັບ Ultimate Multisite, ລວມທັງການເຊື່ອມຕໍ່ໄປຫາບໍລິການພາຍນອກ, ການສ້າງ payment gateway ແບບກຳນົດເອງ, ແລະການຈັດການ webhooks.
 

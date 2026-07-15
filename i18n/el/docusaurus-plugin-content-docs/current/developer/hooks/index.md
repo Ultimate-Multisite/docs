@@ -3,7 +3,7 @@ title: Αναφορά Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Αναφορά Hooks {#hooks-reference}
+# Αναφορά Hooks
 
 Αυτόματα δημιουργημένη τεκμηρίωση για όλες τις **59 ενέργειες** και τα **118 φίλτρα** στο Ultimate Multisite.
 

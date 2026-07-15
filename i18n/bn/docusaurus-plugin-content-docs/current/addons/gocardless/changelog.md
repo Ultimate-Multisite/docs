@@ -3,7 +3,7 @@ title: GoCardless পরিবর্তন তালিকা
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless চেঞ্জলগ {#gocardless-changelog}
+# GoCardless চেঞ্জলগ
 
 Version: 1.0.3 - Released on 2026-05-05
 * সংশোধন: যখন কোনো GoCardless মেম্বারশিপ অপেক্ষমাণ বা স্থগিত অবস্থায় বাতিল করা হয়, তখন অনাথ অপেক্ষমাণ সাইটগুলি এখন পরিষ্কার (clean up) হয়ে যায়।

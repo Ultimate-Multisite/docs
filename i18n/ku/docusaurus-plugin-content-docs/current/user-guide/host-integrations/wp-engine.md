@@ -3,7 +3,7 @@ title: Integrasiی WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integration with WP Engine {#wp-engine-integration}
+# Integration with WP Engine
 
 ## گشتی (Overview) {#overview}
 WP Engine یەک پلاتفۆرمێکی هاستکردنی پرمیوم و بەڕێوەدەدرێت بۆ WordPress کە کارایی، ئاسایشی و گەشەپێدانی باشتر دەدات بۆ ئەو سایتانەی WordPress لەسەرن. ئەم یەکگرتووکارییە ڕێنوێنیی دۆمێین (domain syncing) بە شێوەیەکی خۆکار لە نێوان Ultimate Multisite و WP Engine دەدات.

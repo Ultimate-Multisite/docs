@@ -4,7 +4,7 @@ title: Aksi - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Aksi: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Aksi: wp_ultimo_affiliatewp_activation
 
 Ngidinan bagian séjén tina plugin nempelkeun rutin maranéhna pikeun aktivasina
 

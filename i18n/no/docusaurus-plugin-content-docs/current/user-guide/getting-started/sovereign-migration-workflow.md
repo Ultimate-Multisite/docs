@@ -3,7 +3,7 @@ title: Sovereign Migrasjonsflyt
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migrasjonsflyt {#sovereign-migration-workflow}
+# Sovereign Migrasjonsflyt
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 legger til migrasjonsverifikasjonsportaler for å flytte en standard underside over til suveren leietilbyderinfrastruktur.
 

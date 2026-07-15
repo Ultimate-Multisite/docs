@@ -4,7 +4,7 @@ title: Ficil - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Ficil: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Ficil: mu_migration/import/user/custom_data_before
 
 Waxay dhacdaa ka hor dhoofinta xogta gaarka ah ee isticmaalaha.
 

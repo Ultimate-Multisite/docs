@@ -3,7 +3,7 @@ title: Ekipasyon Membwa ak Blokaj Sit
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Fini vwa Membership ak Blokaj Site {#membership-expiration-and-site-blocking}
+# Fini vwa Membership ak Blokaj Site
 
 Ki gidans sa a eksplike kijan Ultimate Multisite jere fini membership, fini trial, ak blokaj site anndan (frontend). Li kouvri tout sik la yon membership de aktif rive fini, konfigirasyon ki kontwole si sit yo bloke, e sa ou dwe gade lè sit yo rete aksede apre membership fini.
 

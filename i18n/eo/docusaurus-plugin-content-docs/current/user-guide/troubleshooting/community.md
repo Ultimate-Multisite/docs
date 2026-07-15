@@ -3,7 +3,7 @@ title: Komunumo
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kiel la Ultima Multisite Komunitet {#how-to-join-ultimate-multisite-community}
+# Kiel la Ultima Multisite Komunitet
 
 La Ultima Multisite Komunitet estas spaco, kie vi povas kontaktiĝi kun aliaj Ultima Multisite uzantoj kaj partoprenki tips, eksperencio kaj pli. Por akcesi al Ultima Multisite Komunitet, vizitus https://community.ultimatemultisite.com/home.
 

@@ -3,7 +3,7 @@ title: Ukwakha uDibaniso loMbhalisi olulungiselelweyo
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ukwakha Udibaniso lwe-Registrar Olulungiselelweyo {#building-a-custom-registrar-integration}
+# Ukwakha Udibaniso lwe-Registrar Olulungiselelweyo
 
 I-addon ye-Domain Seller isebenzisa ipateni ye-**Integration Registry**. I-registrar nganye yi-class ye-PHP ephumeza `Domain_Selling_Capability` kwaye izibhalisa nge-action hook ethi `wu_domain_seller_register_capabilities`.
 

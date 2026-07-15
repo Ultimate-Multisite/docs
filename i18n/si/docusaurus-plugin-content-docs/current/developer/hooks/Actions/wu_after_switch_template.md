@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Action: wu_after_switch_template
 
 පරිශීලකයෙකු හෝ super admin කෙනෙකු අඩවි අච්චුව මාරු කළ පසු, plugin සංවර්ධකයින්ට ශ්‍රිත සම්බන්ධ කිරීමට ඉඩ දෙයි
 

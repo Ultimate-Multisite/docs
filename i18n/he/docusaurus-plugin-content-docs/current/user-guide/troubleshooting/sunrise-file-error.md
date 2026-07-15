@@ -3,7 +3,7 @@ title: שגיאת קובץ Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# שגיאה בהתקנת קובץ Sunrise {#error-installing-the-sunrise-file}
+# שגיאה בהתקנת קובץ Sunrise
 
 קובץ sunrise.php הוא קובץ מיוחד ש-WordPress מחפש בזמן האתחול שלו. כדי ש-WordPress יוכל לזהות את קובץ sunrise.php, הוא צריך להיות ממוקם בתוך **תיקיית wp-content**.
 

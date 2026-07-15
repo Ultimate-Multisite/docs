@@ -3,7 +3,7 @@ title: Curiosum ad Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Quid Ultimate Multisite {#why-ultimate-multisite}
+# Quid Ultimate Multisite
 
 Si llegaste a este artículo, probablemente escuchaste que nuestro plugin podría ser la solución para hacer realidad tu idea de negocio. Esperamos tener las respuestas que necesitas al final de esta pieza.
 

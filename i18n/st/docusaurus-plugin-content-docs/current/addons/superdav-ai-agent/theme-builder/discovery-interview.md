@@ -3,7 +3,7 @@ title: Puisano ea ho Sibolla
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Puisano ea Tlhahlobo {#discovery-interview}
+# Puisano ea Tlhahlobo
 
 **Puisano ea Tlhahlobo** ke mohato oa pele ts'ebetsong ea moralo ea Theme Builder. E bokella tlhahisoleseling ka sebaka sa hau sa marang-rang, khoebo ea hau, le likhetho tsa hau tsa moralo ho etsa theme e etselitsoeng uena.
 

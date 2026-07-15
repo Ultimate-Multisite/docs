@@ -4,7 +4,7 @@ title: Szűrő - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Szűrő: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Szűrő: wu_light_ajax_allowed_hooks
 
 Biztonsági okok miatt korlátozzuk az elérhető akciók számát, amelyekhez lehet hűkölő (hooking) funkciókat csatlakoztatni. Ez a szűrő lehetővé teszi a fejlesztők számára, hogy szükség esetén bővítsék ezt a listát.
 

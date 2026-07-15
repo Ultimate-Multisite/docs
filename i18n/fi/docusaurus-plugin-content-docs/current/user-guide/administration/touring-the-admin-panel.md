@@ -3,7 +3,7 @@ title: Hallintaosion tutkailu
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Hallinta Admin-paneelin tutkiskelu {#touring-the-admin-panel}
+# Hallinta Admin-paneelin tutkiskelu
 
 Ultimate Multisite pyrkii olemaan mahdollisimman yksinkertainen ja selkeä, mutta tällaisen tehokkaan työkalun kanssa se voi auttaa ohjattavassa kierroksessa. Käydään läpi admin-sivuja auttaaksemme sinua asettumaan paikoillesi.
 

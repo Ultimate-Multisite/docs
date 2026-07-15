@@ -3,7 +3,7 @@ title: PayPal سیٹ اپ کرنا
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal گیٹ وے کی ترتیب (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal گیٹ وے کی ترتیب (v2)
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔**_
 

@@ -3,7 +3,7 @@ title: Pagrindinės koncepcijos
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Pagrindiniai konceptai {#basic-concepts}
+# Pagrindiniai konceptai
 
 Jei esate naujas WordPress Multisite vartotojas ir tik šiek tiek pradėjote naudoti Ultimate Multisite, jūsų gali būti daug naujų žodžių ir frazų. Jų mokymasis yra svarbi taska, nes turėsite suprasti platformą ir kaip ji veikia kaip visuma sistema.
 

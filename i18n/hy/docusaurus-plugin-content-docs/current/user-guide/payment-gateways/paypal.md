@@ -3,7 +3,7 @@ title: PayPal-ի կարգավորում
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway-ի Կարգավորումը (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal Gateway-ի Կարգավորումը (v2)
 
 _**ԿԱՐԵՎՈՐ ՆՇեշտ. Այս հոդվածը վերաբերում է Ultimate Multisite տարբերակ 2.x-ին։**_
 

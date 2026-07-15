@@ -4,7 +4,7 @@ title: Pagsala - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Pagsala: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Pagsala: networks_pre_user_is_network_admin
 
 Gisala ang mga network diin ang user mao ang administrador, aron mapamub-an ang proseso.
 

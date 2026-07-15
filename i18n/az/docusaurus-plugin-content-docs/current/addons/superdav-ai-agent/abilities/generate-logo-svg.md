@@ -3,7 +3,7 @@ title: Loqo SVG Yarat
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG Generasiyası {#generate-logo-svg}
+# Logo SVG Generasiyası
 
 **Logo SVG Generasiyası** imkanı, Theme Builder-ə sayəsində, sizin WordPress saytınıza xüsusi logo SVG-lərini avtomatik olaraq təhlükəsizləşdirilmiş şəkildə yerləşdirməyə imkan verir.
 

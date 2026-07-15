@@ -3,7 +3,7 @@ title: Webhook-ის დამუშავება
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook დამუშავება {#webhook-handling}
+# Webhook დამუშავება
 
 შექმენით მორგებული webhook endpoint-ები გარე სერვისებიდან მოვლენების მისაღებად და მონაცემების Ultimate Multisite-თან სინქრონიზაციისთვის.
 

@@ -3,7 +3,7 @@ title: Menaik Taraf Pelan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Menaik Taraf Pelan (v2) {#upgrading-a-plan-v2}
+# Menaik Taraf Pelan (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 

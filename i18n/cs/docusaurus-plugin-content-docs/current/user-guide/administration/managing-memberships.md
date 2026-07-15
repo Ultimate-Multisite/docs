@@ -3,7 +3,7 @@ title: Správa členství
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Správa memberships {#managing-memberships}
+# Správa memberships
 
 V Ultimate Multisite můžete spravovat memberships a přistupovat ke všem subscriptions ve své síti. Prohlížejte a upravujte podrobnosti subscription, jako jsou plány a produkty, počet webů, fakturovaná částka a frekvence, historie plateb a časová razítka.
 

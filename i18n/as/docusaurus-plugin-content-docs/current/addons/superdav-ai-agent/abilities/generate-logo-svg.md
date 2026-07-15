@@ -3,7 +3,7 @@ title: লোগো SVG বনাও
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# SVG লোগো সৃষ্টি কৰা {#generate-logo-svg}
+# SVG লোগো সৃষ্টি কৰা
 
 **Generate Logo SVG** ক্ষমতাৰ জৰিয়তে Theme Builder-ক আপোনাৰ WordPress সাইটত কাস্টম লোগো SVG সৃষ্টি কৰিবলৈ আৰু সেয়া স্বয়ংক্রিয়ভাৱে namespace-safe sanitisation কৰি এমবেড কৰিবলৈ সক্ষম কৰে।
 

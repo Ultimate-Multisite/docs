@@ -3,9 +3,9 @@ title: ಸೇರ್ಪಡೆ ಮಾದರಿ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template {#addon-template}
+# Addon Template
 
-{{ADDON_DESCRIPTION}}
+ಸೇರ್ಪಡೆ ಮಾದರಿ — Ultimate Multisite.
 
 ## ಅಗತ್ಯತೆಗಳು (Requirements) {#requirements}
 

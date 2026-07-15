@@ -4,7 +4,7 @@ title: ფილტრი - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# ფილტრი: wu_fluent_form_count {#filter-wufluentformcount}
+# ფილტრი: wu_fluent_form_count
 
 საშუალება აძლევს plugin-ის დეველოპერებს შეცვალონ ფორმების საერთო რაოდენობა
 

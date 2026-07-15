@@ -3,7 +3,7 @@ title: Tsoom tsoom site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# ការនាំចេញគេហទំព័រ (Site Export) {#site-export}
+# ការនាំចេញគេហទំព័រ (Site Export)
 
 ໜ້າ **Site Export** ຂອງ admin ຈະຊ່ວຍໃຫ້ຜູ້ບໍລິຫານເຄືອຂ່າຍສາມາດເກັບຮັກສາເວັບໄຊທ໌ດຽວ, ຫຼື ເຄືອຂ່າຍທັງໝົດ, ໃສ່ໃນຮູບແບບ archive ທີ່ສາມາດດາວໂຫຼດໄດ້ ເພື່ອເຮັດການຍົກຍ້າຍ (migration), ສຳຮອງຂໍ້ມູນ (backup), ຫຼື ການມອບໝາຍວຽກ.
 

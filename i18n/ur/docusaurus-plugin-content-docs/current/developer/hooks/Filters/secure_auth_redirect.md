@@ -4,7 +4,7 @@ title: فلٹر - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# فلٹر: secure_auth_redirect {#filter-secureauthredirect}
+# فلٹر: secure_auth_redirect
 
 یہ فلٹر طے کرتا ہے کہ محفوظ آتھنٹیکیشن ریڈائریکٹ استعمال کرنا ہے یا نہیں۔
 

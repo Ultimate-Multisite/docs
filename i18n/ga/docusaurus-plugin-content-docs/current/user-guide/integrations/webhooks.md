@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# An Fáil Ar Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# An Fáil Ar Webhooks (v2)
 
 _**ATTENTION: Nóta go bhfuil an feidhm seo nó an curte seo ar fáil do chuid úsáidheoirí ardchialla.**_
 

@@ -3,7 +3,7 @@ title: אינסטאַלירן Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# אינסטאַלירן Ultimate Multisite {#installing-ultimate-multisite}
+# אינסטאַלירן Ultimate Multisite
 
 :::note
 דער טוטאָריאַל נעמט אָן אַז איר האָט שוין WordPress Multisite אינסטאַלירט און קאָנפֿיגורירט. כּדי זיך צו לערנען ווי אַזוי, קוקט אָן [דעם טוטאָריאַל](https://www.wpbeginner.com/glossary/multisite/) פֿון WP Beginner.

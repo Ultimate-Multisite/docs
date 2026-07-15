@@ -3,7 +3,7 @@ title: 'Lekcia 3: Nastavenie vašej siete'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lekcia 3: Nastavenie vašej siete {#lesson-3-setting-up-your-network}
+# Lekcia 3: Nastavenie vašej siete
 
 Čas začať budovať. V tejto lekcii nainštalujete Ultimate Multisite a nakonfigurujete základ siete FitSite. Každé rozhodnutie je tu robené s ohľadom na fitness niku.
 

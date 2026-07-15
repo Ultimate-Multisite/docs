@@ -3,7 +3,7 @@ title: Bộ nhớ đệm nhắc nhở nhận biết nhà cung cấp
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Bộ nhớ đệm Prompt nhận biết nhà cung cấp {#provider-aware-prompt-caching}
+# Bộ nhớ đệm Prompt nhận biết nhà cung cấp
 
 Superdav AI Agent v1.12.0 giới thiệu tính năng **bộ nhớ đệm Prompt nhận biết nhà cung cấp (provider-aware prompt caching)**, giúp tối ưu hóa chi phí API và độ trễ bằng cách lưu trữ bộ nhớ đệm các prompt trên nhiều nhà cung cấp LLM khác nhau. Mỗi nhà cung cấp có cơ chế và cấu hình bộ nhớ đệm khác nhau.
 

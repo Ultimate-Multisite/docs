@@ -4,7 +4,7 @@ title: عمل - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# اکشن: wu_register_rest_routes {#action-wuregisterrestroutes}
+# اکشن: wu_register_rest_routes
 
 اجازه می‌دهد مسیرهای (routes) اضافی ثبت شوند.
 

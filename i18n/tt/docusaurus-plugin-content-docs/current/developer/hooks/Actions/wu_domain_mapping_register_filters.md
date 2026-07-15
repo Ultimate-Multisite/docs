@@ -4,7 +4,7 @@ title: Гамәл - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Гамәл: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Гамәл: wu_domain_mapping_register_filters
 
 Кайбер plugin-нар URL-ны mapping актив булганчы саклаячак яки URL-ларны югарыдагы filters эченә кермәгән башка ысул белән төзиячәк.
 

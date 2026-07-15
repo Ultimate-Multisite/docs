@@ -3,7 +3,7 @@ title: Ṣíṣètò Sunrise Constant lórí Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ṣíṣètò Sunrise constant sí true lórí Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Ṣíṣètò Sunrise constant sí true lórí Closte
 
 Àwọn olùpèsè host kan máa ń ti wp-config.php pa fún ìdí ààbò. Èyí túmọ̀ sí pé Ultimate Multisite kò lè ṣàtúnṣe fáìlì náà laifọwọyi láti fi àwọn constants tó ṣe pàtàkì kún un kí domain mapping àti àwọn ẹya míì lè ṣiṣẹ́. Closte jẹ́ ọ̀kan lára irú host bẹ́ẹ̀.
 

@@ -4,7 +4,7 @@ title: Filtre - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filtre : auth_cookie_expiration {#filter-authcookieexpiration}
+# Filtre : auth_cookie_expiration
 
 Filtre la durée de la période d'expiration du cookie d'authentification.
 

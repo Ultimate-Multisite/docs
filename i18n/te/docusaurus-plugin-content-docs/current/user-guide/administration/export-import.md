@@ -3,7 +3,7 @@ title: ఎగుమతి & దిగుమతి
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ఎగుమతి & దిగుమతి (Export & Import) {#export--import}
+# ఎగుమతి & దిగుమతి (Export & Import)
 
 Ultimate Multisite 2.9.0 లో, మీరు **Tools > Export & Import** కింద ఒకే సైట్ కోసం **ఎగుమతి & దిగుమతి** టూల్‌ను జోడించింది. ఒక WordPress సైట్‌ను ZIP ఫైల్‌గా ప్యాకేజీ చేయవలసి వచ్చినప్పుడు, ఆ ZIP ని పునరుద్ధరించవలసి వచ్చినప్పుడు, లేదా ఒక సైట్‌ను అనుకూలమైన Ultimate Multisite మరియు single-site WordPress ఇన్‌స్టాలేషన్‌ల మధ్య తరలించవలసి వచ్చినప్పుడు దీనిని ఉపయోగించండి.
 

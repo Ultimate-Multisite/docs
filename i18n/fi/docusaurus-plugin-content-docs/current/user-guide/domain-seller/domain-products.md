@@ -3,7 +3,7 @@ title: Verkkotunnukset ja hinnat
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Verkkotunnus-tuotteet ja hinnoittelu {#domain-products-and-pricing}
+# Verkkotunnus-tuotteet ja hinnoittelu
 
 Verkkotunnus-tuotteet ovat tapa hallita hinnoittelua, TLD:itä (top-level domains), WHOIS-tietosuojaa ja palveluntarjoajien valintaa. Jokainen verkkotunnus-tuote on perus Multisite Ultimate -tuote, jolle lisätään erillinen **Domain Settings** -välilehti.
 

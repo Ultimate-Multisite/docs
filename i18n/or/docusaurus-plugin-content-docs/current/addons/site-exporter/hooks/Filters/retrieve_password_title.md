@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# ଛାଣକ: retrieve_password_title {#filter-retrievepasswordtitle}
+# ଛାଣକ: retrieve_password_title
 
 ପାସୱାର୍ଡ୍ ପୁନଃସେଟ୍ ଇମେଲ୍‌ର ବିଷୟକୁ ଛାଣେ।
 

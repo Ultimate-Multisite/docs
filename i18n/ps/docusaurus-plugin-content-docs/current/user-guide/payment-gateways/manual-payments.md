@@ -3,7 +3,7 @@ title: د لاسي تادیاتو تنظیمول
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# د لاسي تادیو تنظیمول (v2) {#setting-up-manual-payments-v2}
+# د لاسي تادیو تنظیمول (v2)
 
 _**مهمه یادونه: دا لیکنه د Ultimate Multisite 2.x نسخې ته اشاره کوي.**_
 

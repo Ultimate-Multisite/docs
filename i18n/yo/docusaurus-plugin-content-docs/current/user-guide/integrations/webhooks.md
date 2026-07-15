@@ -3,7 +3,7 @@ title: Àwọn Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Ìwòye Àkọ́kọ́ nípa Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Ìwòye Àkọ́kọ́ nípa Webhooks (v2)
 
 _**ÀKÍYÈSÍ: Kíyèsí pé ẹ̀yà yìí tàbí àpilẹ̀kọ yìí jẹ́ fún àwọn oníṣe tó ti ní ìmọ̀ gíga.**_
 

@@ -3,7 +3,7 @@ title: Reqèyman
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Exigances Ultimates Multisite {#ultimate-multisite-requirements}
+# Exigances Ultimates Multisite
 
 Premye ou ka mande pounye ou ta poze tèt ou anvan ou achte Ultimate Multisite, sa ki se exigans pou fè plugin nou la mache. Bon, la, gen sèlman kèk kondisyon batatik pou fè Ultimate Multisite mache: yon **non de domèn** , yon bon **founis hosting** epi yon enstalasyon WordPress **Multisite**. Sa se tout ou bezwen!
 

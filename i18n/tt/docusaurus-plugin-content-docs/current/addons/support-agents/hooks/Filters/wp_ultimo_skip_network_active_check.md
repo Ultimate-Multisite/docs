@@ -4,7 +4,7 @@ title: Фильтр - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 5965dcf90793f474105b7a5f6a005e8b
 ---
-# Фильтр: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Фильтр: wp_ultimo_skip_network_active_check
 
 Эшләүчеләргә бу тикшерүне кыска юл белән урап узарга мөмкинлек бирә.
 

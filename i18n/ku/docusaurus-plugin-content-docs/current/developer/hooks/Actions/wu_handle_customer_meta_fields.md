@@ -4,7 +4,7 @@ title: Çalakî - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Çalakî: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Çalakî: wu_handle_customer_meta_fields
 
 Destûrê bide pêşdebirên pêvekê ku heke pêwîst be daneyên meta bi awayên cuda tomar bikin.
 

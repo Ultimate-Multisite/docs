@@ -3,7 +3,7 @@ title: Isdhexgalka ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Isku-dhaafinta ServerPilot {#serverpilot-integration}
+# Isku-dhaafinta ServerPilot
 
 ## Sharaxaad guud (Overview) {#overview}
 ServerPilot waa adeeg cloud ah oo loo isticmaalo in lagu hostigo WordPress iyo website kale oo PHP ah server-yada DigitalOcean, Amazon, Google, ama barnaamij kale oo server ah. Isku-dhaafinta (integration) kan wuxuu kuu oggolaanaya isku-dhaafka tooska ah ee domain-ka iyo maamulka shahaadada SSL-ka (SSL certificate management) inta u dhaxaysa Ultimate Multisite iyo ServerPilot.

@@ -3,7 +3,7 @@ title: Sovereign Migration Workflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# இறையாண்மை இடம்பெயர்வு பணிப்பாய்வு (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# இறையாண்மை இடம்பெயர்வு பணிப்பாய்வு (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ஆனது ஒரு நிலையான துணைதளத்தை இறையாண்மை டெண்டன்ட் கட்டமைப்பில் மாற்றுவதற்கான இடம்பெயர்வு சரிபார்ப்பு வாயில்களை (migration verification gates) சேர்க்கிறது.
 

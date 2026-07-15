@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Whakamutunga i Heata (v2) {#upgrading-a-plan-v2}
+# Whakamutunga i Heata (v2)
 
 _**NOTE WHAKANGA: Ko tēnei whakamārama he tino mō Ultimate Multisite v2.x.**_
 

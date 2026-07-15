@@ -3,7 +3,7 @@ title: 'Leasan 2: A’ taghadh do raoin shònraichte'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leasan 2: A’ Taghadh do Nìs {#lesson-2-picking-your-niche}
+# Leasan 2: A’ Taghadh do Nìs
 
 Ann an Leasan 1 stèidhich sinn carson a tha nìs nas fheàrr na rud coitcheann. A-nis feumaidh tu an tè agad fhèin a thaghadh. Bheir an leasan seo frèam dhut airson nìs a lorg agus a dhearbhadh mus tasg thu ùine ga togail air a shon.
 

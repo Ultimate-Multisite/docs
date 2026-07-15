@@ -3,7 +3,7 @@ title: ڕێکخستنەکانی Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# ڕێکخستنەکانی Gratis AI Agent {#gratis-ai-agent-settings}
+# ڕێکخستنەکانی Gratis AI Agent
 
 شاشەی **Settings → Advanced** لە Gratis AI Agent ڕێکخستنی ئاستی بەڕێوەبەر بۆ یەکخستنەکانی backend دابین دەکات. ئەم پەڕەیە گواستنەوەی feedback، کلیلی دابینکەری گەڕان، دانانی خزمەتگوزاری بەڕێوەبردراوی Superdav، کۆنترۆڵەکانی Google Calendar، ڕێکخستنەکانی TextBee SMS، و feature flag ـەکانی سەرانسەری تۆڕ بەڵگەنامە دەکات.
 

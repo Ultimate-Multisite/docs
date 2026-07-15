@@ -3,7 +3,7 @@ title: 'Les 9: Prijzen voor Winst'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Les 9: Prijsbepaling voor Winst {#lesson-9-pricing-for-profit}
+# Les 9: Prijsbepaling voor Winst
 
 In Les 5 hebben we de initiële prijzen voor de FitSite-abonnementen vastgesteld. Nu verfijnen we de prijsstrategie met technieken die de omzet verhogen, upgrades stimuleren en churn (verloop) verminderen.
 

@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 ਇਹ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਚੈੱਕਆਉਟ ਪੂਰਾ ਹੋਣ ਤੋਂ ਬਾਅਦ ਡੋਮੇਨ ਖਰੀਦ ਦਾ ਪ੍ਰੋਸੈਸ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੁੰਦਾ ਹੈ।
 

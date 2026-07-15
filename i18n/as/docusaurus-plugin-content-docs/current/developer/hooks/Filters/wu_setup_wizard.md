@@ -4,7 +4,7 @@ title: Filter - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard {#filter-wusetupwizard}
+# Filter: wu_setup_wizard
 
 ডেভেলপমেন্টৰ বাবে এটা সেটআপ উইজৰ্ডত (setup wizard) আৰু কিছুমান পদক্ষেপ (steps) যোগ কৰিবলৈ অনুমতি দিয়ে।
 

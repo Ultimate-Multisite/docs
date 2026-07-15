@@ -4,7 +4,7 @@ title: Filtro - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filtro: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filtro: wu_apc_should_display_admin_menu
 
 Consenti agli amministratori di nascondere le pagine del menu di amministrazione, se hanno completato il processo di personalizzazione.
 

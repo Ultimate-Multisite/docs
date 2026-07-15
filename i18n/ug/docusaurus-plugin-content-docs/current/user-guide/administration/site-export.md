@@ -3,7 +3,7 @@ title: Saytni eksport qilish
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# سايت إكسبورت (Site Export) {#site-export}
+# سايت إكسبورت (Site Export)
 
 **سايت إكسبورت** yöneticisi sayfası, ağ yöneticilerinin bir siteyi veya tüm ağı taşıma, yedekleme veya devretme işleri için indirilebilir bir arşiv haline getirmesine olanak tanır.
 

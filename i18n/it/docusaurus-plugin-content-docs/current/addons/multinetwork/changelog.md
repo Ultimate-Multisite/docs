@@ -3,7 +3,7 @@ title: Registro delle modifiche Multi-Network
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Changelog Multi-Network {#multi-network-changelog}
+# Changelog Multi-Network
 
 ### 1.3.0 {#130}
 * Nuovo: anteprima dei template di rete — sfoglia e visualizza in anteprima i template di rete con un pannello live prima dell’acquisto.

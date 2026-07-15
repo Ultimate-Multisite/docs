@@ -3,7 +3,7 @@ title: Kako dobiti pomoć
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kako dobiti pomoć {#how-to-get-help}
+# Kako dobiti pomoć
 
 Imate validan ključ licence i pridružen mu je pristup našem timu koji će vam pomoći riješiti probleme koje možete naići tijekom postavljanja Ultimate Multisite-a.
 

@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Ketso: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Ketso: wp_ultimo_site_exporter_deactivation
 
 Lumella dikarolo tse ding tsa plugin ho hokela mekhoa ya tsona bakeng sa ho tima.
 

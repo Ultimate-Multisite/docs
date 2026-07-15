@@ -3,7 +3,7 @@ title: Kufalira Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Kufufu Kutsogolera Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Kufufu Kutsogolera Ultimate Multisite Dashboard
 
 Mene muli m'moyo wanu m'moyo wanu, muli m'moyo wanu m'moyo wanu, muli m'moyo wanu m'moyo wanu. Muli m'moyo wanu m'moyo wanu, muli m'moyo wanu m'moyo wanu.
 

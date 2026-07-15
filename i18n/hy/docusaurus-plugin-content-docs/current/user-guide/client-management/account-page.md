@@ -3,7 +3,7 @@ title: Հաճախորդի հաշվի էջ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ձեր հաճախորդի հաշվի էջը (v2) {#your-clients-account-page-v2}
+# Ձեր հաճախորդի հաշվի էջը (v2)
 
 _**ԿԱՐԵՎՈՐ ՆՇեշտ. Այս հոդվածը վերաբերում է Ultimate Multisite-ի 2.x տարբերակին։**_
 

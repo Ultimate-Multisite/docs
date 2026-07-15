@@ -3,7 +3,7 @@ title: مقابلة استكشافية
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# مقابلة الاكتشاف (Discovery Interview) {#discovery-interview}
+# مقابلة الاكتشاف (Discovery Interview)
 
 تُعد **مقابلة الاكتشاف** هي الخطوة الأولى في عملية تصميم Theme Builder. فهي تجمع معلومات حول موقعك، وعملك، وتفضيلاتك التصميمية لإنشاء قالب مخصص لك.
 

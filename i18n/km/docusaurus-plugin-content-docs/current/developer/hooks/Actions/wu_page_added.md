@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# សកម្មភាព៖ wu_page_added {#action-wupageadded}
+# សកម្មភាព៖ wu_page_added
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍ plugin ដំណើរការអ្វីៗបន្ថែម នៅពេលទំព័រត្រូវបានចុះឈ្មោះ។
 

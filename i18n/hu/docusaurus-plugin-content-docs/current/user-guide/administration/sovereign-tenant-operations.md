@@ -3,7 +3,7 @@ title: Sovereign Tenant Operációi
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Szouverén Tenant Operációk {#sovereign-tenant-operations}
+# Szouverén Tenant Operációk
 
 Ultimate Multisite 1.2.0 verzió beépítette operációs eszközöket szouverén tenant-ek számára: subsítokat, amelyek saját adatbázisát, fájlrendszer gyökérkövetét és átirányítási kontextusát használnak, miközben a hálózati adminnek is láthatóak maradnak.
 

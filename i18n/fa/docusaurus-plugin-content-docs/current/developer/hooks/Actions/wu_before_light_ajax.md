@@ -4,7 +4,7 @@ title: اکشن - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# اکشن: wu_before_light_ajax {#action-wubeforelightajax}
+# اکشن: wu_before_light_ajax
 
 در برخی موارد، برای مدیریت اکشن‌ها نیاز به بارگذاری قابلیت‌های اضافی خواهیم داشت.
 

@@ -3,7 +3,7 @@ title: Hvernig fá hjálp
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Hvernig fá þú hjálp {#how-to-get-help}
+# Hvernig fá þú hjálp
 
 Þú hefur tekið valid Lizenkínum, og við þessum er aðgangur til okkar tímasvæði til að hjálpa þér með því að lösa þær vafri sem þú gætir fundið í samsetningu Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: පෙරහන - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# පෙරහන: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# පෙරහන: wu_bypass_unset_current_user
 
 unset current user කේතය මඟහැරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
 

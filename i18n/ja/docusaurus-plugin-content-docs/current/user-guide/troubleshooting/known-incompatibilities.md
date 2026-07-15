@@ -3,7 +3,7 @@ title: 既知の非互換性
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# 他のプラグインとの既知の互換性の問題 {#known-incompatibilities-with-other-plugins}
+# 他のプラグインとの既知の互換性の問題
 
 Ultimate Multisite をインストールして有効化した後、他のプラグインとの未解決の互換性の問題により、問題が発生することがあります。
 

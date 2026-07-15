@@ -3,7 +3,7 @@ title: Pranešimas apie Site Builder Mode pašalinimą
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Powiadomimas dėl usitvirtinimo režimo pašalinimo {#site-builder-mode-removal-notice}
+# Powiadomimas dėl usitvirtinimo režimo pašalinimo
 
 **Usitvirtinimo režimas buvo pašalytas Superdav AI Agent v1.12.0.** Jei naudojote Site Builder režimą, turite pereiti prie **Setup Assistant agent** (Asistentio agentas) kūrimui temų ir svetainės nustatymams.
 

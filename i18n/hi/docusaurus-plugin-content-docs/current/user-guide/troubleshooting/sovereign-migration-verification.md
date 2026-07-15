@@ -3,7 +3,7 @@ title: संप्रभु माइग्रेशन सत्यापन
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# संप्रभु माइग्रेशन सत्यापन (Sovereign Migration Verification) {#sovereign-migration-verification}
+# संप्रभु माइग्रेशन सत्यापन (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 में संप्रभु टेनेंट माइग्रेशन के लिए WP-CLI सत्यापन कमांड शामिल हैं। इसका उपयोग तब करें जब कोई टेनेंट माइग्रेशन, SSO विज़िट, या अलग इंस्टॉलेशन अपेक्षित रूप से काम नहीं करता है।
 

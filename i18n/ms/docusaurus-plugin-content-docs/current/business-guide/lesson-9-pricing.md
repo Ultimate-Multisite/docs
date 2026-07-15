@@ -3,7 +3,7 @@ title: 'Pelajaran 9: Penetapan Harga untuk Keuntungan'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Pelajaran 9: Penetapan Harga untuk Keuntungan {#lesson-9-pricing-for-profit}
+# Pelajaran 9: Penetapan Harga untuk Keuntungan
 
 Dalam Pelajaran 5, kita telah menetapkan harga awal untuk pelan FitSite. Kini, kita akan menyempurnakan strategi penetapan harga dengan teknik yang dapat meningkatkan pendapatan, menggalakkan peningkatan pakej (upgrade), dan mengurangkan kadar pelanggan berhenti (churn).
 

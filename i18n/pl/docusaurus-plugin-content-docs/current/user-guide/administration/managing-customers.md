@@ -3,7 +3,7 @@ title: Zarządzanie klientami
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Zarządzanie klientami {#managing-customers}
+# Zarządzanie klientami
 
 Strona **Klienci** wyświetla listę użytkowników zarejestrowanych w Twojej sieci. Na tej stronie znajdziesz podstawowe informacje o użytkownikach, w tym imię i nazwisko, adres e-mail, datę ostatniego logowania oraz link **przełącz na**, który pozwala zalogować się do podstrony użytkownika jako administrator witryny.
 

@@ -4,7 +4,7 @@ title: مەشغۇلات - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# مەشغۇلات: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
+# مەشغۇلات: wu_domain_seller_register_capabilities
 
 باشقا قىستۇرمىلارغا قوشۇمچە تورنام سېتىش ئىقتىدارلىرىنى تىزىملىتىشقا يول قويىدۇ.
 

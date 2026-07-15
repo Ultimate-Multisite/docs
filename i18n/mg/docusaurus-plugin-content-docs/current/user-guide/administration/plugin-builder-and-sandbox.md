@@ -3,7 +3,7 @@ title: Boafy Fandaharam-potoana sy Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Ny Gratis AI Agent v1.5.0 dia mitondra ny **Plugin Builder & Sandbox System**, izay ahafahanao mamorona, manao activata ary mitantana WordPress plugins ao amin'ny tambajotra anao — izany rehetra izany dia ataon'ny tontolo sandbox azo antoka sy misaraka.
 

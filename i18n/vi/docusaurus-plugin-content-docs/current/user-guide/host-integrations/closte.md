@@ -3,7 +3,7 @@ title: Tích hợp Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Tích hợp Closte {#closte-integration}
+# Tích hợp Closte
 
 ## Tổng quan {#overview}
 Closte là nền tảng hosting WordPress được quản lý, xây dựng trên hạ tầng Google Cloud. Tích hợp này cho phép tự động đồng bộ tên miền và quản lý chứng chỉ SSL giữa Ultimate Multisite và Closte.

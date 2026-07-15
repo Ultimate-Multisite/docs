@@ -3,7 +3,7 @@ title: Daxili Agentlər
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Daxili Agentlər {#built-in-agents}
+# Daxili Agentlər
 
 Gratis AI Agent v1.9.0 beş daxili agentlə gəlir; hər biri fokuslanmış alətlər dəsti, uyğunlaşdırılmış system prompt və həmin sahədə ümumi tapşırıqlara uyğun başlanğıc təklifləri ilə əvvəlcədən konfiqurasiya olunub. Agentlər arasında keçid köməkçinin nə edə bildiyini və necə cavab verdiyini dəyişir — sizin tərəfinizdən heç bir konfiqurasiya olmadan. Superdav AI Agent v1.18.0 əlaqəli inteqrasiyalar konfiqurasiya edildikdə bu iş axınlarına cədvəldən xəbərdar alətlər, xatırlatma qeydləri, təsdiq keçidləri və SMS bildirişləri əlavə edə bilər.
 

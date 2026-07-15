@@ -3,7 +3,7 @@ title: অ্যাড ইনজেক্টর
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector দিয়ে আপনার নেটওয়ার্কে বিজ্ঞাপন বসানো {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector দিয়ে আপনার নেটওয়ার্কে বিজ্ঞাপন বসানো
 
 Ultimate Multisite: Ad Injector হলো একটি **ফ্রি অ্যাড-অন** যা দিয়ে আপনি প্ল্যানের এডিট পেজ থেকেই সরাসরি বিজ্ঞাপন বসাতে পারবেন।
 

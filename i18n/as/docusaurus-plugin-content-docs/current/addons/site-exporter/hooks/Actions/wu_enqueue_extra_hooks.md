@@ -4,7 +4,7 @@ title: কাৰ্য - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Action: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Action: wu_enqueue_extra_hooks
 
 প্লাগইন ডেভেলপাৰসকলক অধিক হুক (hooks) যোগ কৰিবলৈ অনুমতি দিয়ে।
 

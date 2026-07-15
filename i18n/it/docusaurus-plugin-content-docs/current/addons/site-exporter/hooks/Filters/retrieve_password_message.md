@@ -4,7 +4,7 @@ title: Filtro - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtro: retrieve_password_message {#filter-retrievepasswordmessage}
+# Filtro: retrieve_password_message
 
 Filtra il corpo del messaggio dell'email di reimpostazione della password.
 

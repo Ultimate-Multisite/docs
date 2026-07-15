@@ -4,7 +4,7 @@ title: Filter - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filter: network_options_list {#filter-networkoptionslist}
+# Filter: network_options_list
 
 ఒక నెట్‌వర్క్ యొక్క డొమైన్ మరియు పాత్‌పై ఆధారపడే నెట్‌వర్క్ ఆప్షన్ల జాబితాను ఇది ఫిల్టర్ చేస్తుంది.
 

@@ -4,7 +4,7 @@ title: Филтер - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Филтер: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Филтер: wu_site_exporter_plugin_exclusion_list
 
 Им овозможува на програмерите да управуваат со листа на приклучоци што можеби ќе бидат исклучени од генерираниот zip.
 

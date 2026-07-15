@@ -3,7 +3,7 @@ title: Isdheegidda RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Isku-dhaafinta RunCloud {#runcloud-integration}
+# Isku-dhaafinta RunCloud
 
 ## Aragtida {#overview}
 RunCloud waa nidaam maamulidda serverka ee ku dhex jira cloud ah oo kuu oggolaanaya inaad si fudud u soo dejisid oo u maamulid web applications-kaaga server-yada cloud-kaaga. Isku-dhaafinta (integration) kan wuxuu kuu oggolaanaya isku-dubbarista automatic ee domain-ka iyo maamulka SSL certificate-ka ka dhexe Ultimate Multisite iyo RunCloud.

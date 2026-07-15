@@ -3,7 +3,7 @@ title: Koodikonnad
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koodi-nõuded v2 versioonile {#code-snippets-for-v2}
+# Koodi-nõuded v2 versioonile
 
 Põhine on **WordPress** koodinõudmeid kasutatakse teatud toimende sooritamiseks, mida oleks võimalik teha eraldatuna väiksemaks pluginiga. Sellise koodinõudmeid paigutatakse ühe WordPress core või teema faili (otsinguks tavaliselt teie teema `functions.php` fail) sisse või neid saab kasutada MU pluginina.
 

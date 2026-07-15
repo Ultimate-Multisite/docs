@@ -4,7 +4,7 @@ title: Saringan - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Saringan: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Saringan: wu_is_development_mode
 
 Ngidini pangembang plugin nambahaké tes tambahan kanggo mode pangembangan.
 

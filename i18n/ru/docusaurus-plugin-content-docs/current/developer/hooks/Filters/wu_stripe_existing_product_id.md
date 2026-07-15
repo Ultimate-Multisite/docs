@@ -4,7 +4,7 @@ title: Фильтр - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Фильтр: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Фильтр: wu_stripe_existing_product_id
 
 Фильтрует ID продукта, который нужно проверить. Если он существует, новая подписка будет использовать этот продукт.
 

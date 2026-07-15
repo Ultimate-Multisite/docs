@@ -3,7 +3,7 @@ title: 'Lekcija 8: Uključivanje klijenta'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lekcija 8: Uključivanje korisnika {#lesson-8-customer-onboarding}
+# Lekcija 8: Uključivanje korisnika
 
 Samo što klijenta navedete da se registruje nije pola posla. Ako se prijave, osjete da su previše stvari za njih i više nikada ne vrate, izgubili ste ih. Ova lekcija dizajnira iskustvo koje pretvara novu registraciju u aktivnog, angažovanog klijenta.
 

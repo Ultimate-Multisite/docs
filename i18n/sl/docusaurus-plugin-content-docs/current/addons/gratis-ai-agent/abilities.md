@@ -3,7 +3,7 @@ title: Referenca zmožnosti
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenca zmožnosti {#abilities-reference}
+# Referenca zmožnosti
 
 Zmožnosti so atomska dejanja, ki jih lahko Gratis AI Agent prikliče v vaši WordPress namestitvi. Vsaka zmožnost je registriran PHP razred, ki izpostavi JSON shemo — agent to shemo prebere med izvajanjem, da razume, kateri parametri so zahtevani in kaj zmožnost vrne.
 

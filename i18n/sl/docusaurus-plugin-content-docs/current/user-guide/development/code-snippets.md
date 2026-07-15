@@ -3,7 +3,7 @@ title: Kod segmenti
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kod fragmente za v2 {#code-snippets-for-v2}
+# Kod fragmente za v2
 
 Osnovno, kod fragmente za **WordPress** se uporabljajo za opravljanje določenih dejanj, ki bi jih drugače morali zahtevati poseben manjši plugin. Takšni kod fragmente se postavljajo v en od WordPress jezzer ali teme (običajno v datoteko functions.php vaše teme) ali lahko uporabite kot MU plugin.
 

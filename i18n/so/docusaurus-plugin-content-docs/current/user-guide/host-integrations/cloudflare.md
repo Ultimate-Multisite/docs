@@ -3,7 +3,7 @@ title: Isdhexgalka Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Aragtii (In-depth explanation) {#overview}
 Cloudflare waa shirkad weyn oo bixisa adeegga helitaanka waxyaabaha (CDN) iyo amniga, waxayna ka caawisay inay ilaaliyaan web-iyadaas waxayna si dhaqso ah u hagaajiyaan. Isdhexgalka (integration) kan wuxuu kuu oggolaanayaa maamulka domain-ka oo toos ah ee inta u dhaxaysa Ultimate Multisite iyo Cloudflare, gaar ahaan marka aad isticmaalayso subdomain multisite installation.

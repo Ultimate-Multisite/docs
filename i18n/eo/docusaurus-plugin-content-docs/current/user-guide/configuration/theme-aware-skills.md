@@ -3,7 +3,7 @@ title: Temo-sensaj abilibidoj
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Temo-Aware Skills {#theme-aware-skills}
+# Temo-Aware Skills
 
 Superdav AI Agent v1.10.0 lanzas kvar novaj temo-aware built-in skills kiuj otomatikman adaptas al temo de WordPress aktiva de vi. Ti estas estas specialigita gvidado kaj kapablitaj, molditaj al la arkitekturo kaj funkcio de via temo.
 

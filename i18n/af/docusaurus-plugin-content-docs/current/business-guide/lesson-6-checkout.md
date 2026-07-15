@@ -3,7 +3,7 @@ title: 'Les 6: Die Registrasie-ervaring'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Les 6: Die Aanmeldervaring {#lesson-6-the-signup-experience}
+# Les 6: Die Aanmeldervaring
 
 Die afrekenproses is waar belangstelling om inkomste verander. ’n Verwarrende of generiese aanmeldproses verloor kliënte. ’n Nis-spesifieke proses wat hul taal praat en moeiteloos voel, konverteer hulle.
 

@@ -4,7 +4,7 @@ title: Filtry - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# Filtr: wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# Filtr: wu_stripe_webhook_membership
 
 Filtruje rekord członkostwa powiązany z tym webhookiem.
 

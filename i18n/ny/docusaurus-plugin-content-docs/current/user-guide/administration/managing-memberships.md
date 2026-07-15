@@ -3,7 +3,7 @@ title: Kuyenda kwa ndalama
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Kumenya Mwananchi (Managing Memberships) {#managing-memberships}
+# Kumenya Mwananchi (Managing Memberships)
 
 Mwenendo wa Ultimate Multisite, unaweza kudhibiti kumenya (memberships) na kufikia huduma zote za usajili (subscriptions) kwenye mtandao wako. Unaweza kuangalia na kuhariri maelezo ya usajili kama vile mipango (plans) na bidhaa (products), idadi ya sites, kiasi cha malipo na mara inalipwa, historia ya malipo, na muda wa kutolewa (timestamps).
 

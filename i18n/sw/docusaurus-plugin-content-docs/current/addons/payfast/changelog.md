@@ -3,7 +3,7 @@ title: PayFast Historia ya Mabadiliko
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Orodha ya Mabadiliko za PayFast {#payfast-changelog}
+# Orodha ya Mabadiliko za PayFast
 
 Toleo: 1.0.2 - Ili kutolewa tarehe 2025-09-28
 

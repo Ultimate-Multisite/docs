@@ -4,7 +4,7 @@ title: Filter - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# 篩選器：wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# 篩選器：wu_checkout_calculate_prorate_credits
 
 允許外掛開發人員修改點數的計算值。
 

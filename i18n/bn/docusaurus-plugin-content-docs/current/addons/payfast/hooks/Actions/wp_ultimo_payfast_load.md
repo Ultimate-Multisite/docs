@@ -4,7 +4,7 @@ title: অ্যাকশন - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# Action: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# Action: wp_ultimo_payfast_load
 
 যখন সমস্ত নির্ভরতা (dependencies) লোড হয়ে যায়, তখন এটি ট্রিগার হয়।
 

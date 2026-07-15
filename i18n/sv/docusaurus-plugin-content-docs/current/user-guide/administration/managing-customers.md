@@ -3,7 +3,7 @@ title: Hantera kunder
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Hantera kunder {#managing-customers}
+# Hantera kunder
 
 Sidan **Kunder** visar listan över medlemmar som är registrerade i ditt nätverk. Här visas grundläggande användarinformation som namn, e-postadress, senaste inloggning och en **byt till**-länk som låter dig logga in på användarens underwebbplats som webbplatsadministratör.
 

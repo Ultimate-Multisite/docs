@@ -3,7 +3,7 @@ title: מדריך שימוש ב-Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# מדריך שימוש ב-Hooks {#hooks-usage-guide}
+# מדריך שימוש ב-Hooks
 
 Ultimate Multisite מספק מעל 200 Action Hooks ומעלה מ-280 Filter Hooks. עמוד זה מכסה את ה-Hooks הנפוצים ביותר עם דוגמאות מעשיות. לצורך מילון מקוצר מלא שנוצר אוטומטית, עיין בעמודים האחרים בקטע זה.
 

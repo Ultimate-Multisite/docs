@@ -4,7 +4,7 @@ title: مەشغۇلات - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# ھەرىكەت: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# ھەرىكەت: wp_ultimo_site_exporter_activation
 
 قىستۇرمىنىڭ باشقا قىسىملىرىنىڭ ئاكتىپلاش ئۈچۈن ئۆز روتىنلىرىنى باغلىشىغا يول قويىدۇ.
 

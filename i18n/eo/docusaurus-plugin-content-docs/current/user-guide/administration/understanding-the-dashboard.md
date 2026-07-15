@@ -3,7 +3,7 @@ title: Kompreni la Dashbon
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Kompreni la Dashboard de Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Kompreni la Dashboard de Ultimate Multisite
 
 Manti ni pli avanza konfiguraĵoj kaj operaciaj aspektoj de Ultimate Multisite, mi ŝajnas vidi la dashboardon.
 

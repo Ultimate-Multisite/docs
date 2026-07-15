@@ -3,7 +3,7 @@ title: Kupunguza kiwango cha mpango
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kushusha plan (v2) {#downgrading-a-plan-v2}
+# Kushusha plan (v2)
 
 _**DOKEZO MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 

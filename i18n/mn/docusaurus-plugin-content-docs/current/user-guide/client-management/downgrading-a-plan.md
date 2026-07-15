@@ -3,7 +3,7 @@ title: Планыг бууруулах
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Планыг бууруулах (v2) {#downgrading-a-plan-v2}
+# Планыг бууруулах (v2)
 
 _**МЭЦ: Энэ нийтлэл Ultimate Multisite-ийн 2.x хувилбарыг хэрэглэдэг.**_
 

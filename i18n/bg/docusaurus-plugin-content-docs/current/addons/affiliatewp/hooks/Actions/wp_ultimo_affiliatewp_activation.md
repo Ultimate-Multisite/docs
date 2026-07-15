@@ -4,7 +4,7 @@ title: Action - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Действие: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Действие: wp_ultimo_affiliatewp_activation
 
 Позволява на други части от плагина да прикрепят своите рутинги за активиране.
 

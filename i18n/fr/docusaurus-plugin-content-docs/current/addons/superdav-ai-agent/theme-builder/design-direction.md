@@ -3,7 +3,7 @@ title: Direction artistique
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direction du design {#design-direction}
+# Direction du design
 
 L'étape **Direction du design** vous permet de revoir, d'affiner et de finaliser le design visuel de votre thème avant que Theme Builder ne génère le thème complet.
 

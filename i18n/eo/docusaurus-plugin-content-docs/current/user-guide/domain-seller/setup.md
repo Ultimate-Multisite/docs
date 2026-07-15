@@ -3,7 +3,7 @@ title: Konfigurado kaj Providanto
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domenverkäufer: Konfiguracio kaj Providanto {#domain-seller-setup-and-provider-configuration}
+# Domenverkäufer: Konfiguracio kaj Providanto
 
 La addon Domain Seller venas kunacondigasita setup wizard, kiu gidas vin per ĉiuj necesaj paŝoj. Ĉi tiu paĝo mastrumas la flocon de la wizard kaj kiel konfigurigi aŭ rekonfigurigi providantojn post kiam ĝi estas faktita.
 

@@ -4,7 +4,7 @@ title: 필터 - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# 필터: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# 필터: get_site_url_for_previewer
 
 플러그인 개발자가 미리보기에서 사용되는 URL을 필터링할 수 있도록 허용합니다
 

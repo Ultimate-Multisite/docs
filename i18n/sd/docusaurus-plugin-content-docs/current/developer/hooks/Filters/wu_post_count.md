@@ -4,7 +4,7 @@ title: فلٽر - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# فلٽر: wu_post_count {#filter-wupostcount}
+# فلٽر: wu_post_count
 
 پلگ اِن ڊولپرن کي ڪل ڳڻپ تبديل ڪرڻ جي اجازت ڏيو
 

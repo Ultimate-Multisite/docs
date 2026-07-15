@@ -4,7 +4,7 @@ title: 액션 - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# 작업: wu_page_added {#action-wupageadded}
+# 작업: wu_page_added
 
 플러그인 개발자가 페이지가 등록될 때 추가 작업을 실행할 수 있도록 허용합니다.
 

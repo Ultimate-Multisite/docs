@@ -3,7 +3,7 @@ title: Resevwa peman
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Resevwa Peman (v2) {#getting-paid-v2}
+# Resevwa Peman (v2)
 
 _**NÒT ENPÒTAN: Atik sa a fè referans ak Ultimate Multisite vèsyon 2.x.**_
 

@@ -3,7 +3,7 @@ title: 웹훅 처리
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# 웹훅 처리 {#webhook-handling}
+# 웹훅 처리
 
 ## 사용자 정의 웹훅 엔드포인트 {#custom-webhook-endpoint}
 

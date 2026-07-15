@@ -3,7 +3,7 @@ title: Hoe om WordPress Multisite te installeer
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hoe installeer ek WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Hoe installeer ek WordPress Multisite?
 
 WordPress Multisite laat jou toe om 'n netwerk van webtuistes op een enkele installasie te hê. Dit is 'n ingeboude funksie, maar dit is nie standaard aktief nie.
 
@@ -61,7 +61,7 @@ En hierdie kode, ook verskaf deur WordPress, by jou _**.htaccess**_ lêer:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

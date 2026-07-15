@@ -4,7 +4,7 @@ title: Филтр - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Филтр: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Филтр: wu_checkout_field_templates
 
 API-ҳои мо барои илова кардани қолабҳои нави майдон ба ин ҷо пайваст мешаванд.
 

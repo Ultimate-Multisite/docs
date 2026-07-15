@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# ফিল্টার: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# ফিল্টার: wp_ultimo_skip_network_active_check
 
 ডেভেলপারদের এই চেকটি বাইপাস করার সুযোগ দেয়।
 

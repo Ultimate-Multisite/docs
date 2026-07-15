@@ -3,7 +3,7 @@ title: Mwayi kupeza ndalama
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Moleni kuthandiza ntchito {#how-to-get-help}
+# Moleni kuthandiza ntchito
 
 Uli na License key wanu yopambana, ndipo kuona kule nazo ule ufufuza kuti mndzi wathu wamane kuti athandize kufula zvinhu zvinogona kuona pamwe nemaka pakutanga Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: Akce - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Akce: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Akce: wu_mt_user_password_changed
 
 Akce je spuštěna, když uživatel změní své heslo.
 

@@ -3,7 +3,7 @@ title: Uvědomělé ukládání promptů pro poskytovatele
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cacheování promptů s ohledem na poskytovatele {#provider-aware-prompt-caching}
+# Cacheování promptů s ohledem na poskytovatele
 
 Superdav AI Agent v1.12.0 zavádí **cacheování promptů s ohledem na poskytovatele** (provider-aware prompt caching). Optimalizuje to náklady na API a latenci tím, že cacheuje prompty napříč různými poskytovateli LLM. Každý poskytovatel má odlišné mechanismy a konfigurace cacheování.
 

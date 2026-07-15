@@ -3,7 +3,7 @@ title: Ivvalida l-Kuntrast tal-Paletta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Ivvalida l-Kuntrast tal-Palette {#validate-palette-contrast}
+# Ivvalida l-Kuntrast tal-Palette
 
 Il-kapaċità **Validate Palette Contrast** tiċċekkja pari ta' kuluri fil-palette tad-disinn tiegħek għall-konformità ma' WCAG (Web Content Accessibility Guidelines) qabel ma tapplikahom mat-theme tiegħek.
 

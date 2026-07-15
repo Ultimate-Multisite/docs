@@ -3,7 +3,7 @@ title: Aims a bhreithreachadh an tasanach
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Aosgadh an Dàrraidh (Dashboard Overview) {#dashboard-overview}
+# Aosgadh an Dàrraidh (Dashboard Overview)
 
 Mae **Ultimate Multisite** a' leigeann **Dashboard** a tha fìor, a' le a' leigeann widget-an dhan Dashboard an t-neth-luachda (Network Dashboard). Tha an article seo a' leigeann choimbeidh sin a' chleachdadh.
 

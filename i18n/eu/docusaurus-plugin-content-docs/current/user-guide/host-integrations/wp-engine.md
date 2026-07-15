@@ -3,7 +3,7 @@ title: WP Engine Integrazioa
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integrazioa {#wp-engine-integration}
+# WP Engine Integrazioa
 
 ## Deskuntzua {#overview}
 WP Engine da WordPress-ekoa irudi eta erabilera handi duen hosting platforta da, denbora optimizatua eragiketa, segurtasun eta eskala (scalability) ematen du WordPress websteinoetara. Horrek Ultimate Multisite eta WP Engine-aren arteko domainak awtomatiko sinxentroa (syncing) gabe dena.

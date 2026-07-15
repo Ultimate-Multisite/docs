@@ -3,7 +3,7 @@ title: Flux d'intégration du constructeur de thèmes
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flux d'intégration du constructeur de thèmes {#theme-builder-onboarding-flow}
+# Flux d'intégration du constructeur de thèmes
 
 Superdav AI Agent v1.12.0 introduit un **flux d'intégration guidé du constructeur de thèmes** qui vous aide à créer un thème de blocs personnalisé lors de votre configuration initiale. Cela remplace le mode Site Builder hérité par une approche plus flexible, assistée par agent.
 

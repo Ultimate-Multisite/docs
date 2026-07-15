@@ -3,7 +3,7 @@ title: Sgàil a' chluas an site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill Spèspefication an Site {#site-specification-skill}
+# Skill Spèspefication an Site
 
 Tha **Skill Spèspefication an Site** (Site Specification) is e churaidh a tha am pròiseas a tha a' tòiseachadh gu foirfeachdach airson a bhith a' tòiseachadh air sgàil, a ghrùdaidh, agus a chàrachd a th' site. Tha an fiosrachadh seo a' tòiseachadh anns an **site_brief** agad, a tha e sinne a' tòiseachadh gu foirfeachdach airson a bhith a' tòiseachadh air sgàil (agents) a' tòiseachadh air seannachdan airson a bhith ag obair.
 

@@ -3,7 +3,7 @@ title: cPanel Integration
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Entegrasyonu {#cpanel-integration}
+# cPanel Entegrasyonu
 
 ## Genel Bakış {#overview}
 cPanel, birçok paylaşımlı ve özel barındırma sağlayıcısı tarafından kullanılan en popüler web barındırma kontrol panellerinden biridir. Bu entegrasyon, Ultimate Multisite ile cPanel arasında otomatik alan adı senkronizasyonu sağlayarak, alan adı takma adlarını (domain aliases) ve alt alan adlarını (subdomains) cPanel hesabınıza otomatik olarak eklemenize olanak tanır.

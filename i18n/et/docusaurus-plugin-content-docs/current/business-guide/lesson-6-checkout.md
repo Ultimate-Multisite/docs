@@ -3,7 +3,7 @@ title: '6. õppetund: Registreerumiskogemus'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Õppetund 6: Registreerumiskogemus {#lesson-6-the-signup-experience}
+# Õppetund 6: Registreerumiskogemus
 
 Maksmise voog on koht, kus huvist saab tulu. Segane või üldine registreerumisprotsess kaotab kliente. Nišipõhine voog, mis räägib nende keeles ja tundub pingutuseta, konverteerib nad klientideks.
 

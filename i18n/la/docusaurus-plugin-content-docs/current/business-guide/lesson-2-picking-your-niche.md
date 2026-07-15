@@ -3,7 +3,7 @@ title: 'Lectio 2: Angulum tuum eligere'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lectio 2: Tuum Mercatum Angustum Eligere {#lesson-2-picking-your-niche}
+# Lectio 2: Tuum Mercatum Angustum Eligere
 
 In Lectione 1 statuimus cur mercatus angustus generico praestet. Nunc tuum eligere debes. Haec lectio tibi compagem praebet ad mercatum angustum inveniendum et comprobandum antequam tempus in eo aedificando colloces.
 

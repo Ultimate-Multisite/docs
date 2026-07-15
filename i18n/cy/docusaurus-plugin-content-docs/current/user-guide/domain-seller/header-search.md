@@ -3,7 +3,7 @@ title: Chwilio Parthau yn y Pennyn
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Chwilio Parth o’r Pennyn {#header-domain-search}
+# Chwilio Parth o’r Pennyn
 
 Defnyddiwch y gosodiad hwn pan fyddwch eisiau ffurflen bennyn fach sy’n dechrau chwiliad parth, ac yna’n gadael i’r cwsmer ddewis o barthau sydd ar gael y tu mewn i daliad Ultimate Multisite.
 

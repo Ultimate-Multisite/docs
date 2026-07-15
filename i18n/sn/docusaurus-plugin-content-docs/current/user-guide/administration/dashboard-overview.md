@@ -3,7 +3,7 @@ title: Zvinoreva yechinjikwa
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Zvinoro Rino (Dashboard Overview) {#dashboard-overview}
+# Zvinoro Rino (Dashboard Overview)
 
 Ultimate Multisite inenge **Dashboard** wosei wechipe chiri mune yechinyorwa (menu), uye inenge inopa widgets kune Network Dashboard. Iri rurimi rudo rine kuona mumweya wese.
 

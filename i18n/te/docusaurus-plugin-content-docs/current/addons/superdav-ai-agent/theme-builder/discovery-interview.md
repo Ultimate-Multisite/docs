@@ -3,7 +3,7 @@ title: పరిశోధనా ఇంటర్వ్యూ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview (ఆవిష్కరణ ఇంటర్వ్యూ) {#discovery-interview}
+# Discovery Interview (ఆవిష్కరణ ఇంటర్వ్యూ)
 
 **Discovery Interview** అనేది థీమ్ బిల్డర్ (Theme Builder) డిజైన్ ప్రక్రియలో మొదటి మెట్టు. ఇది మీ సైట్, వ్యాపారం మరియు డిజైన్ ప్రాధాన్యతలపై సమాచారాన్ని సేకరించి, మీకు ప్రత్యేకమైన థీమ్‌ను రూపొందించడానికి సహాయపడుతుంది.
 

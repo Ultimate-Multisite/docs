@@ -3,7 +3,7 @@ title: メールと一斉配信の送信
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# メールとBroadcastsの送信（v2） {#sending-emails-and-broadcasts-v2}
+# メールとBroadcastsの送信（v2）
 
 _**重要な注記: この記事はUltimate Multisiteバージョン2.xについて説明しています。**_
 

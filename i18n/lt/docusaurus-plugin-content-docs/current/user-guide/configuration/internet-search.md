@@ -3,7 +3,7 @@ title: Interneto paieška
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internetie ieškojimas {#internet-search}
+# Internetie ieškojimas
 
 Gratis AI Agent v1.5.0 pridėjo funkciją **Internet Search**, kuri leidžia AI asistentui gauti naujausi informacijas iš Interneto poaiškos metu. Šią funkciją palaiko [Brave Search API](https://brave.com/search/api/) arba [Tavily API](https://tavily.com/).
 

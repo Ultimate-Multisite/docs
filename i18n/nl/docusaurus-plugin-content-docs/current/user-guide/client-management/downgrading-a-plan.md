@@ -3,7 +3,7 @@ title: Een abonnement downgraden
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Een plan downgraden (v2) {#downgrading-a-plan-v2}
+# Een plan downgraden (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

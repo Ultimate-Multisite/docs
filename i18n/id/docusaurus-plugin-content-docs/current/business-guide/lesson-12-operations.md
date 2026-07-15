@@ -3,7 +3,7 @@ title: 'Pelajaran 12: Mengelola Bisnis'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Pelajaran 12: Menjalankan Bisnis {#lesson-12-running-the-business}
+# Pelajaran 12: Menjalankan Bisnis
 
 Platform itu bukan proyek yang selesai, melainkan bisnis yang harus kamu kelola. Pelajaran ini membahas operasional sehari-hari dalam mengelola FitSite: mulai dari dukungan, penagihan, pemeliharaan, hingga menjaga pelanggan tetap senang.
 

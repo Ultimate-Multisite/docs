@@ -3,7 +3,7 @@ title: ServerPilot ఏకీకరణ
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ఇంటిగ్రేషన్ {#serverpilot-integration}
+# ServerPilot ఇంటిగ్రేషన్
 
 ## అవలోకనం {#overview}
 ServerPilot అనేది DigitalOcean, Amazon, Google లేదా ఏదైనా ఇతర సర్వర్ ప్రొవైడర్‌లో WordPress మరియు ఇతర PHP వెబ్‌సైట్‌లను హోస్ట్ చేయడానికి ఉపయోగించే క్లౌడ్ సర్వీస్. ఈ ఇంటిగ్రేషన్ Ultimate Multisite మరియు ServerPilot మధ్య ఆటోమేటిక్ డొమైన్ సింకింగ్ మరియు SSL సర్టిఫికేట్ మేనేజ్‌మెంట్‌ను అమలు చేస్తుంది.

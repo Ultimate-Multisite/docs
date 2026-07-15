@@ -4,7 +4,7 @@ title: តម្រង - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# តម្រង: auth_cookie_expiration {#filter-authcookieexpiration}
+# តម្រង: auth_cookie_expiration
 
 តម្រងរយៈពេលផុតកំណត់នៃ cookie ផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ។
 

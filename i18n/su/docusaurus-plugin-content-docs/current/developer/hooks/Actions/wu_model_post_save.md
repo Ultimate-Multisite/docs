@@ -4,7 +4,7 @@ title: Aksi - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Aksi: wu_model_post_save {#action-wumodelpostsave}
+# Aksi: wu_model_post_save
 
 Dijalankeun sanggeus hiji obyék disimpen kana database.
 

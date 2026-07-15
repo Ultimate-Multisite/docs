@@ -4,7 +4,7 @@ title: Isihlungi - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Isihlungi: send_auth_cookies {#filter-sendauthcookies}
+# Isihlungi: send_auth_cookies
 
 Sivumela ukuvimbela ama-auth cookies ukuthi empeleni athunyelwe ku-client.
 

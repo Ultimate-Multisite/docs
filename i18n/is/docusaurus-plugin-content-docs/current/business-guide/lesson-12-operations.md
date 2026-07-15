@@ -3,7 +3,7 @@ title: 'Læoni 12: Leita við verkefnið'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Læoni 12: Verkefnið í verkningu {#lesson-12-running-the-business}
+# Læoni 12: Verkefnið í verkningu
 
 A platform er ekki bara eitthvað sem þú fullar – það er fyrirtæki sem þú stýrir. Þessi læonið hófst daglegum starfsemi yfir FitSite: stuðning, reikningur, viðhald og að halda viðkomandi viðkomandi án áhyggja.
 

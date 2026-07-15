@@ -3,7 +3,7 @@ title: 'Leksyon 10: Adlaw sa Paglunsad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day (Adlaw sa Paglunsad) {#lesson-10-launch-day}
+# Lesson 10: Launch Day (Adlaw sa Paglunsad)
 
 Naka-build na ang tanan. Sa dili pa nimo buksan ang pultahan, kining leksyon naggiya kanimo pinaagi sa pre-launch checklist aron masiguro nga walay nasira, nawala, o makapahiya.
 

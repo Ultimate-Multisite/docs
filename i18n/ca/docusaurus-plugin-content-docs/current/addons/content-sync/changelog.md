@@ -3,7 +3,7 @@ title: Diari de canvis de Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Diari de canvis de Content Sync {#content-sync-changelog}
+# Diari de canvis de Content Sync
 
 ### Versió 1.1.0 - Llibertat el 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nou: Suport per a la sincronització de tots els tipus de publicació (posts, pàgines, tipus de publicació personalitzats)

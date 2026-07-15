@@ -3,7 +3,7 @@ title: Site Templates
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# سائٹ ٹیمپلیٹس (v2) {#site-templates-v2}
+# سائٹ ٹیمپلیٹس (v2)
 
 _**نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔ اگر آپ ورژن 1.x استعمال کر رہے ہیں،**_ **یہ مضمون دیکھیں** _**۔**_
 

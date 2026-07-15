@@ -3,7 +3,7 @@ title: મેનુ બનાવો
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# મેનુ બનાવો (Create Menu) {#create-menu}
+# મેનુ બનાવો (Create Menu)
 
 **મેનુ બનાવો** ક્ષમતા (ability) નો ઉપયોગ WordPress નેવિગેશન મેનુ બનાવે છે, જેમાં પેજના ટાઇટલથી અલગ નેવિગેશન લેબલ (navigation labels) આપવાની સુવિધા હોય છે.
 

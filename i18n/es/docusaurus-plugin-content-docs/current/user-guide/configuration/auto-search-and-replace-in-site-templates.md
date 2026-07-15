@@ -3,7 +3,7 @@ title: Búsqueda y reemplazo automáticos en plantillas de sitio
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Búsqueda y reemplazo automáticos en plantillas de sitio (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Búsqueda y reemplazo automáticos en plantillas de sitio (v2)
 
 _**Este tutorial requiere WP UItimo versión 2.x.**_
 

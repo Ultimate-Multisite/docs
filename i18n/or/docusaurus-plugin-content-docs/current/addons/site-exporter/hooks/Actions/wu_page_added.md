@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# କାର୍ଯ୍ୟ: wu_page_added {#action-wupageadded}
+# କାର୍ଯ୍ୟ: wu_page_added
 
 ପୃଷ୍ଠାଗୁଡ଼ିକ ପଞ୍ଜିକୃତ ହେଲେ ପ୍ଲଗଇନ ବିକାଶକାରୀଙ୍କୁ ଅତିରିକ୍ତ କାମ ଚଲାଇବାକୁ ଦିଅନ୍ତୁ।
 

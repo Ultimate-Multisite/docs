@@ -3,7 +3,7 @@ title: Ajiye Prompt a cache bisa la’akari da mai samarwa
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching na Prompt Mai La’akari da Provider {#provider-aware-prompt-caching}
+# Caching na Prompt Mai La’akari da Provider
 
 Superdav AI Agent v1.12.0 yana gabatar da **caching na prompt mai la’akari da provider**, wanda ke inganta kuɗin API da jinkiri ta hanyar caching na prompts a tsakanin providers na LLM daban-daban. Kowane provider yana da hanyoyin caching da saituna daban-daban.
 

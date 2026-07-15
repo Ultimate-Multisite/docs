@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# ການກະທຳ: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# ການກະທຳ: wu_handle_customer_meta_fields
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ບັນທຶກຂໍ້ມູນ meta ໃນວິທີຕ່າງໆໄດ້ ຖ້າຈຳເປັນ.
 

@@ -3,7 +3,7 @@ title: Pagpalambo sa Pasadyang Gateway
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway Development {#custom-gateway-development}
+# Custom Gateway Development
 
 Makahimo ka og custom nga mga payment gateway pinaagi sa pag-extend sa `Base_Gateway` class.
 

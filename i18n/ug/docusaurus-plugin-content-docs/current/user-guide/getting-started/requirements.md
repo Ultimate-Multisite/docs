@@ -3,7 +3,7 @@ title: Şartlar
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Şartları {#ultimate-multisite-requirements}
+# Ultimate Multisite Şartları
 
 Ultimate Multisite'ı satın almadan önce kendinize sorabileceğiniz ilk şey, eklentimizi çalıştırmak için ne gibi gereksinimler olduğunu bilmektir. Neyse ki, Ultimate Multisite'ı çalıştırmak için sadece birkaç temel gereksinim var: bir **alan adı** (domain name), iyi bir **barındırma sağlayıcısı** (hosting provider) ve bir WordPress **Multisite** kurulumu. Bunlar hepsi yeterli!
 

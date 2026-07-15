@@ -4,7 +4,7 @@ title: Ago - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# Ago: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# Ago: wp_ultimo_affiliatewp_load
 
 Ekfunkcias kiam ĉiuj dependecoj estis ŝargitaj
 

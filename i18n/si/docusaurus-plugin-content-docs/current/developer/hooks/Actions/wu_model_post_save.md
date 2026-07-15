@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# ක්‍රියාව: wu_model_post_save {#action-wumodelpostsave}
+# ක්‍රියාව: wu_model_post_save
 
 වස්තුවක් දත්ත සමුදායට ගබඩා කළ පසු ක්‍රියාත්මක වේ.
 

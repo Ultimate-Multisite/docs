@@ -3,7 +3,7 @@ title: Galluoedd Rheoli Ategion
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Galluoedd Rheoli Plugin {#plugin-management-abilities}
+# Galluoedd Rheoli Plugin
 
 Mae Gratis AI Agent v1.5.0 yn dod â **7 gallu rheoli plugin** y gall y cynorthwyydd AI eu galw yn ystod sgwrs. Mae’r galluoedd hyn yn darparu rheolaeth raglennol dros plugins WordPress sydd wedi’u gosod drwy’r [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

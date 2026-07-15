@@ -3,7 +3,7 @@ title: Ngatur Tautan yang Bisa Dibagikan untuk Rencana
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ngatur Link yang Bisa Dibagikan kanggo Paket {#managing-shareable-links-for-plans}
+# Ngatur Link yang Bisa Dibagikan kanggo Paket
 
 Ultimate Multisite nawakake pilihan supaya sampeyan bisa bagi link paket langsung marang pelanggan. Supaya nglakoni iki, tindakna menyang salah siji halaman edit paketmu lan klik tombol _Click to copy the Shareable Link_.
 

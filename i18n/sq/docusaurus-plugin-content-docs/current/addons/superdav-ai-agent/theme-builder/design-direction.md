@@ -3,7 +3,7 @@ title: Drejtimi i dizajnit
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Drejtimi i Dizajnit {#design-direction}
+# Drejtimi i Dizajnit
 
 Hapi **Drejtimi i Dizajnit** ju lejon të rishikoni, rafinoni dhe finalizoni dizajnin vizual të temës suaj përpara se Theme Builder të gjenerojë temën e plotë.
 

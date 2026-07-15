@@ -4,7 +4,7 @@ title: Sefa - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Sefa: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# Sefa: wu_captcha_error_message
 
 Sefani uthenga wa cholakwika cha captcha.
 

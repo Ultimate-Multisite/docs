@@ -4,7 +4,7 @@ title: 필터 - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# 필터: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# 필터: wu_checkout_field_templates
 
 새 필드 템플릿을 추가하기 위한 API가 여기에서 연결됩니다.
 

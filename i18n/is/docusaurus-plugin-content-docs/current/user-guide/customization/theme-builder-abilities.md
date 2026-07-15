@@ -3,7 +3,7 @@ title: Viðmiðingar fyrir Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Viðmiðingar fyrir Theme Builder: Scaffold og Aktiva Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Viðmiðingar fyrir Theme Builder: Scaffold og Aktiva Block Themes
 
 Superdav AI Agent v1.12.0 býður fram tveir sterkar viðmiðingar sem leika þínu í hálf við að gera og dekomu sérstaklega block themes beint frá chat-stöðu.
 

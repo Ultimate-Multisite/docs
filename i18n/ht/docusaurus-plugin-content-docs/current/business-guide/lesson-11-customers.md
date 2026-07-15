@@ -3,7 +3,7 @@ title: 'Leson 11: Jwenn kliyan'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leson 11: Jwenn Kliyan {#lesson-11-finding-customers}
+# Leson 11: Jwenn Kliyan
 
 Yon gwo platfòm san kliyan se jis yon pastan. Leson sa a kouvri kijan pou jwenn kliyan nan yon vètikal nich -- estrateji ki mache espesyalman paske ou konsantre sou yon sèl endistri.
 

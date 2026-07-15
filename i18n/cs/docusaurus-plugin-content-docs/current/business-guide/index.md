@@ -3,7 +3,7 @@ title: Vytvořit podnikání s nišovou webovou stránkou
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Vytvořte podnikání s webem pro specializovanou oblast pomocí Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Vytvořte podnikání s webem pro specializovanou oblast pomocí Ultimate Multisite
 
 Většina lidí, kteří se pokoušejí prodávat webové stránky, se snaží konkurovat na ceně s Wixem, Squarespace a tisíci freelancerů. A ztrácejí. Ti, kteří vyhrávají, si vyberou specifickou cílovou skupinu, vytvoří řešení přizpůsobené této skupině a účtují za hodnotu, kterou dodávají.
 

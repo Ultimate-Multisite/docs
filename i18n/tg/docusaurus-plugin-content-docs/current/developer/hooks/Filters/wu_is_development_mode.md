@@ -4,7 +4,7 @@ title: Филтр - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Филтр: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Филтр: wu_is_development_mode
 
 Ба таҳиягарони плагин иҷозат медиҳад, ки санҷишҳои иловагӣ барои ҳолати таҳия илова кунанд.
 

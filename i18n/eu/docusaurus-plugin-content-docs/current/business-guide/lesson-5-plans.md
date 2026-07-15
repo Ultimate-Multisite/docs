@@ -3,7 +3,7 @@ title: 'Lehena-lehen: Planak diseinatu'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lehen 5: Planak designatu {#lesson-5-designing-your-plans}
+# Lehen 5: Planak designatu
 
 Dauplanak (plan tiers) ez dira leialdia prezio-lehiak; horiek da irudi bat da ondo jakoteak non operatzen dute. Hau eskaera-an, produktu planak designatu dugu eta horrek fitness negozioen beharrak errealetan batzuk.
 

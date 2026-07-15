@@ -3,7 +3,7 @@ title: Mõõdetud plaanide muudatuste logi
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans muudatuste logi {#metered-plans-changelog}
+# Metered Plans muudatuste logi
 
 Versioon 1.1.0 - Välja antud 2026-05-05
 - Uus: AI tokenite arveldamine multisite alamsaitide jaoks — jälgi ja arvelda AI tokenite kasutust kliendisaitidel seadistatavate tokenipõhiste hindadega

@@ -3,7 +3,7 @@ title: Lisäosien hallintavalmiudet
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Lisäosien hallintakyvyt {#plugin-management-abilities}
+# Lisäosien hallintakyvyt
 
 Gratis AI Agent v1.5.0 toimitetaan **7 lisäosien hallintakyvyllä**, joita AI-avustaja voi kutsua keskustelun aikana. Nämä kyvyt tarjoavat ohjelmallisen hallinnan WordPress-lisäosiin, jotka on asennettu [Lisäosien rakentaja- ja hiekkalaatikkojärjestelmän](../../user-guide/administration/plugin-builder-and-sandbox) kautta.
 

@@ -3,7 +3,7 @@ title: Oibríochtaí Tainiste Chomhánach
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Oparnaíocht Tenant Sovereigne {#sovereign-tenant-operations}
+# Oparnaíocht Tenant Sovereigne
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 níos addaí toolacha oparnaíocht do tenant sovereignty: subsites a bhfaillíonn siad le deabhás (database) agus root filesystem agus context ruthú (routing context) is do chuid, ag cur isteach ó chuid admin netearc.
 

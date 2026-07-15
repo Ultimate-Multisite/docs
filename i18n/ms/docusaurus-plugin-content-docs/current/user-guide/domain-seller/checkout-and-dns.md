@@ -3,7 +3,7 @@ title: Medan Checkout dan DNS Pelanggan
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field dan Pengurusan DNS Pelanggan {#checkout-field-and-customer-dns-management}
+# Checkout Field dan Pengurusan DNS Pelanggan
 
 ## Field checkout Pemilihan Domain {#the-domain-selection-checkout-field}
 

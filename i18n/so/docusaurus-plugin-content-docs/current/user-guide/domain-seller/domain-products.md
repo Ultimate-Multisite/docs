@@ -3,7 +3,7 @@ title: Waxyaabaha Domainka iyo Qiimaha
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Alaabaha iyo Qiimaha Domain-ka {#domain-products-and-pricing}
+# Alaabaha iyo Qiimaha Domain-ka
 
 Alaabaha domain-ka waa sida aad maamushay qiimaha, TLD-yada (domain extensions), faahfaahinta WHOIS privacy, iyo doorashada bixiyeyaasha. Qayb kasta oo alaab domain ah waa alaab caadi ah oo Ultimate Multisite ah oo leh tab dheeri oo la yiraahdo **Domain Settings**.
 

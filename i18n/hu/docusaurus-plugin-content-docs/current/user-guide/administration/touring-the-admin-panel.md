@@ -3,7 +3,7 @@ title: Az adminisztrációs panel bemutatása
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Az admin panel bemutatása {#touring-the-admin-panel}
+# Az admin panel bemutatása
 
 Az Ultimate Multisite célja, hogy a lehető legegyszerűbb és magától értetődő legyen, de egy ilyen hatékony eszköznél hasznos lehet egy vezetett bemutató. Nézzük végig az admin oldalakat, hogy könnyebben eligazodj.
 

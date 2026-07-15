@@ -3,7 +3,7 @@ title: Ізоляція багатоарендності
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ізоляція багатоорендованих систем (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Ізоляція багатоорендованих систем (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 підтримує ізоляцію бази даних та файлової системи для суверенних орендодавців (tenants). Це дозволяє тримати дані орендарів окремо, зберігаючи при цьому налаштування мережі, білінг та адміністрування.
 

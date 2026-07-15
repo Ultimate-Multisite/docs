@@ -4,7 +4,7 @@ title: Filter - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filter: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Filter: wu_membership_update_forms
 
 ഡെവലപ്പർമാർക്ക് പുതിയ അപ്ഡേറ്റ് ഫോം സ്ലഗ്‌കൾ കൂട്ടിച്ചേർക്കാൻ ഇത് സഹായിക്കുന്നു.
 

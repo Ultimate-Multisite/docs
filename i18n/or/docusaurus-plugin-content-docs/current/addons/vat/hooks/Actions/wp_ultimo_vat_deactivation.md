@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_vat_deactivation
 
 plugin ର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ନିଷ୍କ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କ routine ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

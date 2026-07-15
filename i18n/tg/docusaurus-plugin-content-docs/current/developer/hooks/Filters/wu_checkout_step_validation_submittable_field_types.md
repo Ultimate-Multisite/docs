@@ -4,7 +4,7 @@ title: Филтр - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Филтр: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Филтр: wu_checkout_step_validation_submittable_field_types
 
 Ба таҳиягарон иҷозат медиҳад, ки санҷишро гузаранд, агар майдон худкор пешниҳодшаванда бошад.
 

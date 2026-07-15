@@ -3,7 +3,7 @@ title: Ukugeleza Kokuqalisa kwe-Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Ukugeleza Kokwamukeliswa kwe-Theme Builder {#theme-builder-onboarding-flow}
+# Ukugeleza Kokwamukeliswa kwe-Theme Builder
 
 Superdav AI Agent v1.12.0 yethula ukugeleza okuqondisiwe **kokwamukeliswa kwe-Theme Builder** okukusiza ukuthi udale theme yangokwezifiso yamabhulokhi ngesikhathi sokusetha kwakho kokuqala. Lokhu kuthatha indawo yemodi endala ye-Site Builder ngendlela eguquguqukayo kakhudlwana, esizwa yi-agent.
 

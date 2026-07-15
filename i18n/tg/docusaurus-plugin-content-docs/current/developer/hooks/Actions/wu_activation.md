@@ -4,7 +4,7 @@ title: Амал - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Амал: wu_activation {#action-wuactivation}
+# Амал: wu_activation
 
 Ба қисмҳои дигари plugin иҷозат диҳед, ки routine-ҳои худро барои фаъолсозӣ пайваст кунанд
 

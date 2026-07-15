@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite dokumentatsioon {#ultimate-multisite-documentation}
+# Ultimate Multisite dokumentatsioon
 
 Tere tulemast Ultimate Multisite dokumentatsiooni. Ultimate Multisite muudab WordPress Multisite’i täisväärtuslikuks Website as a Service (WaaS) platvormiks.
 

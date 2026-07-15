@@ -3,7 +3,7 @@ title: 'Les 10: Lanser-dag'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Les 10: Lanseringsdag {#lesson-10-launch-day}
+# Les 10: Lanseringsdag
 
 Alles is gebou. Voordat jy die deure oopmaak, loop hierdie les deur die pre-launch-kontrolelys om te verseker dat niks gebreek, ontbreek of skemand is.
 

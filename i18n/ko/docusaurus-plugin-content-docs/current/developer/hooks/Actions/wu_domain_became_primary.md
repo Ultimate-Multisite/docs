@@ -4,7 +4,7 @@ title: 작업 - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# 액션: wu_domain_became_primary {#action-wudomainbecameprimary}
+# 액션: wu_domain_became_primary
 
 도메인이 사이트의 기본 도메인이 될 때 발생합니다.
 

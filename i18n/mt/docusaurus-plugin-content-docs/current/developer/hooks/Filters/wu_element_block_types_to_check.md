@@ -4,7 +4,7 @@ title: Filtru - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Filtru: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Filtru: wu_element_block_types_to_check
 
 Jista' jkun li jkollna bżonn inżidu blokki addizzjonali aktar tard.
 

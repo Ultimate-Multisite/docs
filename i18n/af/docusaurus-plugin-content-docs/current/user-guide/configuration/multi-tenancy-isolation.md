@@ -3,7 +3,7 @@ title: Multi-Tenant Isolering
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolering {#multi-tenancy-isolation}
+# Multi-Tenancy Isolering
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ondersteun per-subsite database en filesie-isolering vir soevereine huurders. Dit hou huurderdata geskei terwyl dit netwerkvlak-provisioning, fakturering en administrasie behou.
 

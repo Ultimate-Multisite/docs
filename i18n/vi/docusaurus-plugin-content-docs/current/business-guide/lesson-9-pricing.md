@@ -3,7 +3,7 @@ title: 'Bài học 9: Định giá để có lợi nhuận'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Bài 9: Định giá để Tăng lợi nhuận {#lesson-9-pricing-for-profit}
+# Bài 9: Định giá để Tăng lợi nhuận
 
 Ở Bài 5, chúng ta đã thiết lập mức giá ban đầu cho các gói FitSite. Bây giờ, chúng ta sẽ tinh chỉnh chiến lược định giá bằng các kỹ thuật giúp tăng doanh thu, khuyến khích nâng cấp và giảm tỷ lệ khách hàng rời bỏ (churn).
 

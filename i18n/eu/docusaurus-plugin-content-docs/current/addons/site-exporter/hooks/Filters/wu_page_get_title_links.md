@@ -4,7 +4,7 @@ title: Iragazkia - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Iragazkia: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Iragazkia: wu_page_get_title_links
 
 Plugin garatzaileei, eta guri geuri, gure edizio-orrietan ekintza-estekak gehitzeko aukera ematen die.
 

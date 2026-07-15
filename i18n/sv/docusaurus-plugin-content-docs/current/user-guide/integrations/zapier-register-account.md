@@ -3,7 +3,7 @@ title: Registrera ett Account via Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Händelse: Registrera ett Account via Zapier {#event-register-an-account-via-zapier}
+# Händelse: Registrera ett Account via Zapier
 
 I artikeln [Integrera Ultimate Multisite med Zapier](zapier.md) diskuterade vi hur man använder Zapier för att utföra olika åtgärder inom Ultimate Multisite baserat på triggers och händelser. I den här artikeln visar vi hur du kan integrera tredjepartsapplikationer. Vi använder Google Sheets som datakälla och skickar informationen till Ultimate Multisite för att registrera ett Account.
 

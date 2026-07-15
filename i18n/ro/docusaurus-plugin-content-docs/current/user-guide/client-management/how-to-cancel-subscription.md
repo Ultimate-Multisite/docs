@@ -3,7 +3,7 @@ title: Cum să anulezi un abonament
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Cum îmi pot anula abonamentul? {#how-can-i-cancel-my-subscription}
+# Cum îmi pot anula abonamentul?
 
 Dacă ai o licență Ultimate Multisite, poți anula reînnoirea acesteia oricând dorești. Urmează pașii de mai jos:
 

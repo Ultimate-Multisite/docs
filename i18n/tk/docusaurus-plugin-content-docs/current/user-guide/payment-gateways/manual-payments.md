@@ -3,7 +3,7 @@ title: El bilen tölegleri sazlamak
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# El bilen tölegleri sazlamak (v2) {#setting-up-manual-payments-v2}
+# El bilen tölegleri sazlamak (v2)
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 

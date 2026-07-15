@@ -4,7 +4,7 @@ title: 'Ação - wu_{$this->model}_post_delete'
 sidebar_label: 'wu_{$this->model}_post_delete'
 _i18n_hash: 723d566c67fd82808273b2eb42c96d73
 ---
-# Ação: wu_${this->model}_post_delete {#action-wuthis-modelpostdelete}
+# Ação: wu_${this->model}_post_delete
 
 Dispara após um objeto ser armazenado no banco de dados.
 

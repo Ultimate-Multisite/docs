@@ -3,7 +3,7 @@ title: 설정 및 공급자 구성
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: 설정 및 제공업체 구성 {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: 설정 및 제공업체 구성
 
 Domain Seller addon은 필요한 모든 단계를 안내하는 설정 wizard와 함께 제공됩니다. 이 페이지에서는 wizard 흐름과 이후 제공업체를 구성하거나 재구성하는 방법을 다룹니다.
 

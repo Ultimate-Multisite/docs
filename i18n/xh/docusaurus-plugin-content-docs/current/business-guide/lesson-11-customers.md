@@ -3,7 +3,7 @@ title: 'Isifundo 11: Ukufumana abathengi'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Isifundo 11: Ukufumana Abathengi {#lesson-11-finding-customers}
+# Isifundo 11: Ukufumana Abathengi
 
 Iqonga elihle elingenabathengi liyinto nje yokuzonwabisa. Esi sifundo sigubungela indlela yokufumana abathengi kwindawo ethe nkqo ye-niche -- amacebo asebenza ngokukodwa kuba ugxile kushishino olunye.
 

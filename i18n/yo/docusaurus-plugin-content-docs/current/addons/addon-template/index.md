@@ -3,9 +3,9 @@ title: Àdàkọ Àfikún
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Àdàkọ Àfikún {#addon-template}
+# Àdàkọ Àfikún
 
-{{ADDON_DESCRIPTION}}
+Àdàkọ Àfikún — Ultimate Multisite.
 
 ## Àwọn ìbéèrè {#requirements}
 

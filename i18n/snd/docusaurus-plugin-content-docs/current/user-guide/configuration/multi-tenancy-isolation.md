@@ -3,7 +3,7 @@ title: متعدد-مستائني تنہا
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# متعدد-مستائری تنہائی (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# متعدد-مستائری تنہائی (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 هم مستقل مستائری کے لیے ہر سب-سائٹ ڈیٹا بیس اور فائل سسٹم کی الگ تھلگی کو سپورٹ کرتا ہے۔ یہ ٹیننٹ ڈیٹا کو الگ رکھتا ہے جبکہ نیٹ ورک لیول پر فراہم کردہ سہولیات، بلنگ (billing)، اور انتظامیہ برقرار رکھتا ہے۔
 

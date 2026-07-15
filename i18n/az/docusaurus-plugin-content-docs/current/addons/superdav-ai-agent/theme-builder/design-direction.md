@@ -3,7 +3,7 @@ title: Dizayn istiqaməti
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizayn İstiqaməti {#design-direction}
+# Dizayn İstiqaməti
 
 **Dizayn İstiqaməti** addımı sizə Tema Qurucu (Theme Builder) bütün temanı yaratmadan əvvəl, saytınızın vizual dizaynını yoxlamağa, təkmilləşdirməyə və yekunlaşdırmağa imkan verir.
 

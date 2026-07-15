@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# फ़िल्टर: wu_use_domain_mapping {#filter-wuusedomainmapping}
+# फ़िल्टर: wu_use_domain_mapping
 
 यह तय करना कि मैपिंग का उपयोग किया जाना चाहिए या नहीं।
 

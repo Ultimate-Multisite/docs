@@ -3,7 +3,7 @@ title: Kukumbutsa WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Ulingano wa WP Engine {#wp-engine-integration}
+# Ulingano wa WP Engine
 
 ## Kufotokozera (Overview) {#overview}
 WP Engine ndi platform yomanga ya WordPress yomwe imapereka utumikizi wopangidwa kwa kukhazikira (hosting) womwe umapereka mwayi wopangidwa, kuchepa, ndipo kumapereka kusintha kwa mpaka (scalability) kwa sites za WordPress. Kufotokozera liliyenera limapereka kupanga domain wopangidwa (domain syncing) m'Ultimate Multisite ndi WP Engine.

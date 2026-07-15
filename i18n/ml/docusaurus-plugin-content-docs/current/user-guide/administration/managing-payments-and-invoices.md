@@ -3,7 +3,7 @@ title: പണമടക്കലുകളും ഇൻവോയിസുകളു
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# പേയ്‌മെന്റുകളും ഇൻവോയിസുകളും കൈകാര്യം ചെയ്യൽ {#managing-payments-and-invoices}
+# പേയ്‌മെന്റുകളും ഇൻവോയിസുകളും കൈകാര്യം ചെയ്യൽ
 
 ## പേയ്‌മെന്റ് ക്രമീകരണങ്ങൾ {#payment-settings}
 

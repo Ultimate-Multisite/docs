@@ -4,7 +4,7 @@ title: फिल्टर - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# फिल्टर: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# फिल्टर: mu-migration/all_posts/default_args
 
 all_posts विधिमा पोस्टहरू क्वेरी गर्नका लागि पूर्वनिर्धारित args फिल्टर गर्छ।
 

@@ -4,7 +4,7 @@ title: Ìgbésẹ̀ - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Ìṣe: update_network {#action-updatenetwork}
+# Ìṣe: update_network
 
 Máa ń ṣiṣẹ́ lẹ́yìn tí network kan tó wà tẹ́lẹ̀ bá ti ní ìmúdójúìwọ̀n.
 

@@ -4,7 +4,7 @@ title: Çalakî - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Çalakî: wu_model_post_save {#action-wumodelpostsave}
+# Çalakî: wu_model_post_save
 
 Piştî ku tiştek di database de tê tomarkirin çalak dibe.
 

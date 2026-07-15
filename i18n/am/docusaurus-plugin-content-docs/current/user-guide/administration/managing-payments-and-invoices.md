@@ -3,7 +3,7 @@ title: የክፍያ እና የደረሰኝ አያያዝ
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ክፍያዎችን እና የደረሰኝ (Invoices) አያያዝ {#managing-payments-and-invoices}
+# ክፍያዎችን እና የደረሰኝ (Invoices) አያያዝ
 
 ## የክፍያ ቅንብሮች (Payment Settings) {#payment-settings}
 

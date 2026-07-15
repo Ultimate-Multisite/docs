@@ -4,7 +4,7 @@ title: 필터 - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# 필터: wu_rest_delete_item {#filter-wurestdeleteitem}
+# 필터: wu_rest_delete_item
 
 요청을 진행할 수 있는지 여부를 필터링합니다.
 

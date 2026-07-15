@@ -3,7 +3,7 @@ title: Whakawhanaungatanga ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Whakawhanaungatanga me ServerPilot {#serverpilot-integration}
+# Whakawhanaungatanga me ServerPilot
 
 ## Whakataki {#overview}
 ServerPilot he wāhi whai hoatu (cloud service) mō te hoatanga o WordPress me ngā waka PHP i runga i mga server o DigitalOcean, Amazon, Google, akorā ahau e taea ai. Ko tēnei whakatika (integration) e tino pai ana ki te whakawhiti domain automatically me te whakamaoritanga SSL certificate management i waenga i Ultimate Multisite me ServerPilot.

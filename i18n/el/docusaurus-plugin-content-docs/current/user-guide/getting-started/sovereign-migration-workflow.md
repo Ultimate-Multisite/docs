@@ -3,7 +3,7 @@ title: Διαδικασία Μεταφοράς Εξουσιώδους
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Μεταφοράς Εξουσιώδους Περιβάλλοντος {#sovereign-migration-workflow}
+# Workflow Μεταφοράς Εξουσιώδους Περιβάλλοντος
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 προσθέτει προστατευτικά σημεία επαλήθευσης μεταφοράς για τη μετακίνηση ενός τυπικού υποσύßματος σε υποδομή εξουσιοδοτημένου περιβάλλοντος (sovereign tenant).
 

@@ -3,7 +3,7 @@ title: Site Builder Modusyny Alma Bildirjisi
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode Kaldyşyklygy Bildirisi {#site-builder-mode-removal-notice}
+# Site Builder Mode Kaldyşyklygy Bildirisi
 
 **Site Builder modu Superdav AI Agent v1.12.0-da kaldıryldy.** Eger siz Site Builder modunu ulanyp kursaňyz, tema döretmek we site goýmak üçin **Setup Assistant agentine** geçmeli bolarsyňyz.
 

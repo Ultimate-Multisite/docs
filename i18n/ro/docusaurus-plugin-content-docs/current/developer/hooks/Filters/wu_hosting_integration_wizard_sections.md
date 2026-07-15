@@ -4,7 +4,7 @@ title: Filtru - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Filtru: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Filtru: wu_hosting_integration_wizard_sections
 
 Filtrează secțiunile de wizard pentru configurarea integrării de găzduire (hosting).
 

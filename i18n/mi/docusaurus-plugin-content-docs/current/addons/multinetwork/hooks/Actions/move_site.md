@@ -4,7 +4,7 @@ title: Hohenga - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Hohenga: move_site {#action-movesite}
+# Hohenga: move_site
 
 Ka whakakāngia i muri i te nukunga o tētahi pae ki tētahi whatunga hou.
 

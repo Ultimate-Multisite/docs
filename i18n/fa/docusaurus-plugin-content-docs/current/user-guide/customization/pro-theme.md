@@ -3,7 +3,7 @@ title: تم حرفه‌ای
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# سفارشی‌سازی پنل مدیریت با PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# سفارشی‌سازی پنل مدیریت با PRO Theme
 
 اغلب در پروژه‌های مشتریان، نیاز داریم که تجربه‌ای سفارشی در داشبورد مدیریت WordPress به آن‌ها ارائه دهیم. اگر به دنبال ظاهری حرفه‌ای‌تر و جذاب‌تر هستید، PRO Theme می‌تواند به شما کمک کند.
 

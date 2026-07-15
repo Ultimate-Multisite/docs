@@ -3,7 +3,7 @@ title: Pag-set up sa Manwal nga mga Bayad
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Pag-set Up sa Manual Payments (v2) {#setting-up-manual-payments-v2}
+# Pag-set Up sa Manual Payments (v2)
 
 _**IMPORTANT NOTE: Kini nga artikulo nagtumong sa Ultimate Multisite version 2.x.**_
 

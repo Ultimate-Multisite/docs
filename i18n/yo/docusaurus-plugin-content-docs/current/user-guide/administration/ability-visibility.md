@@ -3,7 +3,7 @@ title: Ìfarahàn Agbára
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Hihan Agbara {#ability-visibility}
+# Hihan Agbara
 
 Superdav AI Agent v1.12.0 ṣafihan awọn iṣakoso **Hihan Agbara** ti o n ṣakoso iru awọn oju-ilẹ wo ni o fi agbara kọọkan han. Eyi jẹ ki awọn alakoso le ṣatunṣe pẹkipẹki iru awọn agbara agent wo ni o wa nipasẹ REST APIs, MCP servers, awọn iṣepọ WooCommerce, ati awọn atọkun miiran.
 

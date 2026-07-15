@@ -4,7 +4,7 @@ title: Action - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# اکشن: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# اکشن: wp_ultimo_site_exporter_load
 
 زمانی فعال می‌شود که تمام وابستگی‌ها بارگذاری شده باشند.
 

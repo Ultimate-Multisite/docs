@@ -3,7 +3,7 @@ title: Reperensiya sa mga Setting
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Reperensiya sa Settings {#settings-reference}
+# Reperensiya sa Settings
 
 Kini nga panid nagsubay sa settings nga nakaapekto sa adlaw-adlaw nga pagdumala ug bag-ong mga kausaban sa kinaiya sa Ultimate Multisite.
 

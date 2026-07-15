@@ -3,7 +3,7 @@ title: ক্ষমতাৰ উল্লেখ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# সক্ষমতাগুলির তালিকা {#abilities-reference}
+# সক্ষমতাগুলির তালিকা
 
 Abilities হলো সেই মূল কাজগুলো যা Gratis AI Agent আপনার WordPress ইনস্টলেশনে ব্যবহার করতে পারে। প্রতিটি ability একটি রেজিস্টার্ড PHP class, যা একটি JSON schema প্রকাশ করে—এজেন্ট রানটাইমে এই schema-টি পড়ে বুঝতে পারে কোন প্যারামিটারগুলো প্রয়োজন এবং ability টি কী রিটার্ন করবে।
 

@@ -3,7 +3,7 @@ title: Txhob txhob membership
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# ការលុបសមាជិកភាព (v2) {#canceling-a-membership-v2}
+# ការលុបសមាជិកភាព (v2)
 
 _**ចំណាំសំខាន់៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
 

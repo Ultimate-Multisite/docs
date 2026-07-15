@@ -3,7 +3,7 @@ title: Potok registracije
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registracijski tok (v2) {#the-registration-flow-v2}
+# Registracijski tok (v2)
 
 _**POMEMBNO OPOMENILO: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 

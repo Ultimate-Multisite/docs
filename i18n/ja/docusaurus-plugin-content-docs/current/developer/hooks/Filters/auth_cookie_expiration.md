@@ -4,7 +4,7 @@ title: フィルタ - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# フィルタ: auth_cookie_expiration {#filter-authcookieexpiration}
+# フィルタ: auth_cookie_expiration
 
 認証クッキーの有効期限期間をフィルタリングします。
 

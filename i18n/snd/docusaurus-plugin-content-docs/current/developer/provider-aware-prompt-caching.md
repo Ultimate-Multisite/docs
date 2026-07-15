@@ -3,7 +3,7 @@ title: فراهم ڪندڙ-آگاهه پرومپٽ ڪيشنگ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# فراهم ڪندڙ-آگاهه Prompt Caching {#provider-aware-prompt-caching}
+# فراهم ڪندڙ-آگاهه Prompt Caching
 
 Superdav AI Agent v1.12.0 **فراهم ڪندڙ-آگاهه prompt caching** متعارف ڪرائي ٿو، جيڪا مختلف LLM فراهم ڪندڙن ۾ prompts کي cache ڪري API خرچن ۽ دير کي بهتر بڻائي ٿي. هر فراهم ڪندڙ جا caching جا طريقا ۽ ترتيبون مختلف آهن.
 

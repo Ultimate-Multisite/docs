@@ -3,7 +3,7 @@ title: Izvoz sajta
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Izvoz sajta {#site-export}
+# Izvoz sajta
 
 Administrativna stranica za **Izvoz sajta (Site Export)** omogućava administratorima mreže da spakuju jedan sajt, ili celu mrežu, u preuzimljivi arhivski fajl za migraciju, backup ili rad prebacivanja.
 

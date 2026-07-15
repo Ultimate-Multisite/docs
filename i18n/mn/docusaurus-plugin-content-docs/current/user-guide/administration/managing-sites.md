@@ -3,7 +3,7 @@ title: Сайт удирдах
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Сайтууды удирдах {#managing-sites}
+# Сайтууды удирдах
 
 Сайт (эсвэл дэдсайт) бол таны WaaS бизнесийн гол хэсэг юм. Ultimate Multisite-д 3 төрлийн сайт байдаг:
 

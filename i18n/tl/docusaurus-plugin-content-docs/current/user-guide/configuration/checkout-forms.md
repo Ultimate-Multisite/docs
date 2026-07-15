@@ -3,7 +3,7 @@ title: Mga Form sa Pag-checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Mga Form para sa Checkout {#checkout-forms}
+# Mga Form para sa Checkout
 
 Ang mga Checkout Forms ay isang madali at flexible na paraan para mag-eksperimento ng iba't ibang paraan kapag sinusubukan mong i-convert ang mga bagong customer.
 

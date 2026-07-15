@@ -3,7 +3,7 @@ title: Налады Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Налады Gratis AI Agent {#gratis-ai-agent-settings}
+# Налады Gratis AI Agent
 
 Экран **Settings → Advanced** у Gratis AI Agent дае канфігурацыю ўзроўню адміністратара для backend-інтэграцый. На гэтай старонцы дакументуюцца перанакіраванне водгукаў, ключы пастаўшчыкоў пошуку, наладжванне кіраванага сэрвісу Superdav, элементы кіравання Google Calendar, налады TextBee SMS і сеткавыя сцягі функцый.
 

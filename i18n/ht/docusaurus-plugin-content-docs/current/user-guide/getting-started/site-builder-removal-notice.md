@@ -3,7 +3,7 @@ title: Avis Retrait de Mode Constructeur Site
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Anons Soufich Mode Removal Notice {#site-builder-mode-removal-notice}
+# Anons Soufich Mode Removal Notice
 
 **Site Builder mode a été retiré dans Superdav AI Agent v1.12.0.** Si vous utilisiez le Site Builder mode, vous devez migrer vers l'agent **Setup Assistant agent** pour la création de thèmes et la configuration du site.
 

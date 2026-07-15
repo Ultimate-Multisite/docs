@@ -3,7 +3,7 @@ title: Creación dunha integración de rexistrador personalizada
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Crear unha integración personalizada de rexistrador {#building-a-custom-registrar-integration}
+# Crear unha integración personalizada de rexistrador
 
 O addon Domain Seller usa un patrón de **Integration Registry**. Cada rexistrador é unha clase PHP que implementa `Domain_Selling_Capability` e se rexistra mediante o hook de acción `wu_domain_seller_register_capabilities`.
 

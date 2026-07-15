@@ -3,7 +3,7 @@ title: Zolozera za Zokonda
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Zolozera za Settings {#settings-reference}
+# Zolozera za Settings
 
 Tsambali limatsata zolozera zomwe zimakhudza kayendetsedwe ka tsiku ndi tsiku komanso kusintha kwaposachedwa kwa khalidwe mu Ultimate Multisite.
 

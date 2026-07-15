@@ -4,7 +4,7 @@ title: Tātari - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Tātari: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Tātari: wu_password_require_number
 
 Tātari mēnā me hiahiatia ngā tau i roto i ngā kupuhipa.
 

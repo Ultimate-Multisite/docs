@@ -4,7 +4,7 @@ title: فلټر - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# فلټر: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# فلټر: wu_element_maybe_extract_arguments
 
 عمومي فلټر زیاتوي څو پراختیاکوونکي وکولای شي دا پارسر وغځوي، ترڅو له اضافي جوړوونکو یا پلګینونو سره کار وکړي.
 

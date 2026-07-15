@@ -4,7 +4,7 @@ title: តម្រង - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# តម្រង: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# តម្រង: wu_element_maybe_extract_arguments
 
 បន្ថែម​តម្រង​ទូទៅ ដើម្បីអនុញ្ញាត​ឱ្យ​អ្នកអភិវឌ្ឍន៍​ពង្រីក parser នេះ ដើម្បីដោះស្រាយ​ជាមួយ builder ឬ plugin បន្ថែម។
 

@@ -3,7 +3,7 @@ title: Ìṣepọ̀ cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ìṣepọ̀ cPanel {#cpanel-integration}
+# Ìṣepọ̀ cPanel
 
 ## Àkópọ̀ {#overview}
 cPanel jẹ́ ọ̀kan lára àwọn paneli ìṣàkóso ìgbàlejò wẹ́ẹ̀bù tí ó gbajúmọ̀ jùlọ tí ọ̀pọ̀ àwọn olupèsè ìgbàlejò tí a pín àti tí a yà sọ́tọ̀ ń lò. Ìṣepọ̀ yìí ń jẹ́ kí mímú domain ṣiṣẹ́pọ̀ láìfọwọ́ṣeé ṣeé ṣe láàárín Ultimate Multisite àti cPanel, tí ó ń jẹ́ kí o lè fi àwọn alias domain àti subdomain kún Account cPanel rẹ láìfọwọ́ṣe.

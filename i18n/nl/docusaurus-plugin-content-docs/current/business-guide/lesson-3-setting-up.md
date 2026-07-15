@@ -3,7 +3,7 @@ title: 'Les 3: Het instellen van uw netwerk'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Les 3: Het Instellen van Uw Netwerk {#lesson-3-setting-up-your-network}
+# Les 3: Het Instellen van Uw Netwerk
 
 Het is tijd om te bouwen. In deze les installeert u Ultimate Multisite en configureert u de basis van het FitSite-netwerk. Elke beslissing die we hier nemen, is gericht op de fitnessniche.
 

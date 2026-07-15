@@ -3,7 +3,7 @@ title: WP Engine integráció
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine integráció {#wp-engine-integration}
+# WP Engine integráció
 
 ## Áttekintés {#overview}
 A WP Engine egy prémium kategóriás, felügyelt WordPress tárhelyszolgáltatás, amely optimalizált teljesítményt, biztonságot és skálázhatóságot kínál WordPress oldalak számára. Ez az integráció lehetővé teszi a domain nevek automatikus szinkronizálását az Ultimate Multisite és a WP Engine között.

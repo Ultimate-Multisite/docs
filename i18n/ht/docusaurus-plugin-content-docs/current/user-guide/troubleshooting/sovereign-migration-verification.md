@@ -3,7 +3,7 @@ title: Vèifikasyon Migrasyon Souverain
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikasyon Migrasyon Souverain {#sovereign-migration-verification}
+# Verifikasyon Migrasyon Souverain
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 gen kè WP-CLI verification commands pou migrasyon tenant souverain. Itilize yo lè yon migrasyon tenant, vizit SSO, o enstalasyon izole pa pa mache jan ou te espere.
 

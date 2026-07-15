@@ -4,7 +4,7 @@ title: Actio - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Actio: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Actio: wp_ultimo_gocardless_activation
 
 Sinat alias partes huius plugin suas rationes activationis adiungere
 

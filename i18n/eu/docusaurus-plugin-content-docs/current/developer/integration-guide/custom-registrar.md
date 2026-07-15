@@ -3,7 +3,7 @@ title: Erregistratzaile pertsonalizatu baten integrazioa eraikitzea
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Registrar pertsonalizatu baten integrazioa eraikitzea {#building-a-custom-registrar-integration}
+# Registrar pertsonalizatu baten integrazioa eraikitzea
 
 Domain Seller addon-ak **Integration Registry** eredua erabiltzen du. Registrar bakoitza `Domain_Selling_Capability` inplementatzen duen PHP klase bat da, eta bere burua erregistratzen du `wu_domain_seller_register_capabilities` action hook-aren bidez.
 

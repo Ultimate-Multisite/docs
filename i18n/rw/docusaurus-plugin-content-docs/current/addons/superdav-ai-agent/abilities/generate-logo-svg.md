@@ -3,7 +3,7 @@ title: Hanga Ikirango SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Gukora Logo SVG {#generate-logo-svg}
+# Gukora Logo SVG
 
 Ubushobozi bwa **Generate Logo SVG** butuma Theme Builder ikora kandi igashyira logo SVG zabugenewe mu buryo butaziguye muri site yawe ya WordPress, hamwe no kuzisukura mu buryo bwikora burinda namespace.
 

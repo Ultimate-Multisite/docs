@@ -3,7 +3,7 @@ title: Dokumentado por programistoj
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentado por programistoj {#developer-documentation}
+# Dokumentado por programistoj
 
 Ĉi tiu gvidilo provizas al programistoj ĉion bezonatan por integri kun, etendi aŭ evoluigi aldonaĵojn por Ultimate Multisite. Ultimate Multisite transformas WordPress Multisite reton en platformon Website-as-a-Service (WaaS).
 

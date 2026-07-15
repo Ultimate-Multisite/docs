@@ -3,7 +3,7 @@ title: Enstalasyon Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Enstalasyon Ultimate Multisite {#installing-ultimate-multisite}
+# Enstalasyon Ultimate Multisite
 
 :::note
 Tutorial sa a presize ke ou deja gen WordPress Multisite enstale ak konfigire. Pou aprann kijan, tcheke [tutorial sa a](https://www.wpbeginner.com/glossary/multisite/) pa WP Beginner.

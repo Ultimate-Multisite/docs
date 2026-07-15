@@ -4,7 +4,7 @@ title: 操作 - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# 动作: wu_mt_provider_log {#action-wumtproviderlog}
+# 动作: wu_mt_provider_log
 
 当提供者记录日志时触发。
 

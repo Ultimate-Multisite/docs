@@ -3,7 +3,7 @@ title: Fomba Fandefasana
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms dia fomba mora sy malalaka mba hanandrana fomba samihafa rehefa mitady hanovana mpanjifa vaovao.
 

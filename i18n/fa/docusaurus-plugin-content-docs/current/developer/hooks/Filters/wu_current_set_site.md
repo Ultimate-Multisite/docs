@@ -4,7 +4,7 @@ title: فیلتر - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# فیلتر: wu_current_set_site {#filter-wucurrentsetsite}
+# فیلتر: wu_current_set_site
 
 به توسعه‌دهندگان اجازه می‌دهد تا رفتار پیش‌فرض را تغییر دهند و سایت فعلی را به شکل متفاوتی تنظیم کنند.
 

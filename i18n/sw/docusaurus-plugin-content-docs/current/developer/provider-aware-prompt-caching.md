@@ -3,7 +3,7 @@ title: Uhifadhi wa Prompt Uliotambua Mtoaji
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Kuhifadhi Prompt kwa Kuzingatia Mtoa Huduma {#provider-aware-prompt-caching}
+# Kuhifadhi Prompt kwa Kuzingatia Mtoa Huduma
 
 Superdav AI Agent v1.12.0 inatangulia **uhifadhi wa prompt kwa kuzingatia mtoa huduma (provider-aware prompt caching)**, ambayo hufanya kazi ya kuboresha gharama za API na kasi (latency) kwa kuhifadhi prompts katika watoa huduma tofauti wa LLM. Kila mtoa huduma ana njia na mipangilio yake ya kuhifadhi data.
 

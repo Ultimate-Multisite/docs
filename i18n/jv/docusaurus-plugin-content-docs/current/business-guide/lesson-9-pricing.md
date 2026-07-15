@@ -3,7 +3,7 @@ title: 'Piwulang 9: Nemtokake Rega kanggo Bathi'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Piwulang 9: Pangregan kanggo Bathi {#lesson-9-pricing-for-profit}
+# Piwulang 9: Pangregan kanggo Bathi
 
 Ing Piwulang 5, kita nyetel rega wiwitan kanggo paket FitSite. Saiki kita nyempurnakake strategi pangregan nganggo teknik sing nambah penghasilan, nyengkuyung upgrade, lan nyuda langganan mandheg.
 

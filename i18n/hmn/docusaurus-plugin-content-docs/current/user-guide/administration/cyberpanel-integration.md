@@ -3,7 +3,7 @@ title: CyberPanel Integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Khuas neeg tshawb thav tshawb hawm tshawb ua li cas. Kuv yuav tshawb txog ti kuv yuav tshawb qhia txog ti koj yuav tshawb qhia cas rau Ultimate Multisite CyberPanel integration, uas yuav tsim kom domain mapped hauv koj cov neeg chaw (network) yuav tsim kom tau hauv CyberPanel li virtual host autonoom (automatic) ( thiab txhua yam yuav tsim kom tso cai loss/tso cai tshiab), thiab muaj kev tsim SSL auto-provisioning los ntawm Let's Encrypt.
 

@@ -3,7 +3,7 @@ title: Integratio CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integratio CyberPanel {#cyberpanel-integration}
+# Integratio CyberPanel
 
 Hoc opus te explicat quommodo configurare integracion Ultimate Multisite CyberPanel ita ut domini mappati in rete automatico (et removetur) ut hostes virtuales in CyberPanel addeantur (et removuntur), cum optione provisionis auto-SSL per Let's Encrypt.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Mgbakwunye Ultimate Multisite {#ultimate-multisite-addons}
+# Mgbakwunye Ultimate Multisite
 
 Mgbakwunye na-agbatị Ultimate Multisite site n'ịgbakwunye njirimara na njikọta ndị ọzọ. Ọtụtụ mgbakwunye bụ ndị a na-akwụ ụgwọ, a pụkwara ịzụta ha site na [ultimatemultisite.com](https://ultimatemultisite.com).
 

@@ -4,7 +4,7 @@ title: Filtro - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filtro: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Filtro: wu_checkout_validation_aliases
 
 Permitir que desenvolvedores de plugins adicionem aliases personalizados no validador de formulário.
 

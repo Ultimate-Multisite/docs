@@ -3,7 +3,7 @@ title: Integrasi Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrasi Cloudways {#cloudways-integration}
+# Integrasi Cloudways
 
 ## Ikhtisar {#overview}
 Cloudways adalah platform hosting cloud terkelola yang memungkinkan Anda men-deploy situs WordPress di berbagai penyedia cloud seperti DigitalOcean, AWS, Google Cloud, dan lainnya. Integrasi ini memungkinkan sinkronisasi domain otomatis dan pengelolaan sertifikat SSL antara Ultimate Multisite dan Cloudways.

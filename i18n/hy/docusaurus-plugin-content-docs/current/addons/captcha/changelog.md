@@ -3,7 +3,7 @@ title: Captcha փոփոխությունների մատյան
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha-ի փոփոխությունների մատյան {#captcha-changelog}
+# Captcha-ի փոփոխությունների մատյան
 
 Տարբերակ՝ 1.5.0 - Թողարկվել է 2026-05-22-ին
 * Նոր՝ խիստ արգելափակող արագության սահմանափակիչ — հաշվում է յուրաքանչյուր GET և POST captcha-ով պաշտպանված մակերեսներում (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) և պատասխանում է HTTP 429-ով, `Retry-After` header-ով և պատահականացված tarpit քնի դադարով (1–5 վրկ, խիստ սահմանափակված առավելագույնը 15 վրկ-ով)։

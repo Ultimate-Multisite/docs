@@ -3,7 +3,7 @@ title: Stadi Zinazojitambua Kulingana na Mandhari
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Stadi Zinazojua Mandhari {#theme-aware-skills}
+# Stadi Zinazojua Mandhari
 
 Superdav AI Agent v1.10.0 inatuma stadi nne mpya zilizojengwa ndani na zinazojua mandhari (theme-aware) ambazo hurekebishwa kiotomatiki kulingana na mandhari yako ya WordPress linalotumika. Stadi hizi hutoa mwongozo na uwezo maalum ulioundwa kulingana na muundo na vipengele vya mandhari yako.
 

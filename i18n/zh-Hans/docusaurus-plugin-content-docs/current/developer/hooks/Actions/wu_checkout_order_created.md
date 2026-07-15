@@ -4,7 +4,7 @@ title: 动作 - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# 动作: wu_checkout_order_created {#action-wucheckoutordercreated}
+# 动作: wu_checkout_order_created
 
 在结账订单完全组装后触发。
 

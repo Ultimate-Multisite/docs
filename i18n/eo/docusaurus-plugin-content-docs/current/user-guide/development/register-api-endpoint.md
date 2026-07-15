@@ -3,7 +3,7 @@ title: Registri API-punktan
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# La API-ponto de registri Ultima Multisite {#the-ultimate-multisite-register-api-endpoint}
+# La API-ponto de registri Ultima Multisite
 
 En ĉi tiu tutoriavi vi lernos, kiel uzi la API-ponto `/register` de Ultimate Multisite por krei la tutan proceson de enontigo (onboarding) por novan klienton en via retoj kaj kiel faru tio per Zapier.
 

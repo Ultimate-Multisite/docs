@@ -4,7 +4,7 @@ title: فلٽر - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# فلٽر: wu_apc_get_meta {#filter-wuapcgetmeta}
+# فلٽر: wu_apc_get_meta
 
 ڊولپرز کي آخري قدرن کي فلٽر ڪرڻ، ۽ نوان پروسيسنگ ڪيس شامل ڪرڻ جي اجازت ڏئي ٿو.
 

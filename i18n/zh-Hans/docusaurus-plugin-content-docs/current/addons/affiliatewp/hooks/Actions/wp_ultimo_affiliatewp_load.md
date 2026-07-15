@@ -4,7 +4,7 @@ title: 动作 - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# 动作: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# 动作: wp_ultimo_affiliatewp_load
 
 当所有依赖项已加载时触发
 

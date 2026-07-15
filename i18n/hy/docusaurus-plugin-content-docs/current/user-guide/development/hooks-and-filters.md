@@ -3,7 +3,7 @@ title: Կրակներ և Ֆիլտրեր
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks և filters {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Hooks և filters
 
 Ultimate Multisite-ը բաղկացած է հազարավոր ֆունկցիաներից և տվյալների բազայի հարցումներից։ Այն ունի hooks (հուկ) և filters (ֆիլտրեր), որոնք թույլ են տալիս ձեզ փոփոխել կամ նոր կոդ ավելացնել գոյություն ունեցող ֆունկցիաների մեջ։
 

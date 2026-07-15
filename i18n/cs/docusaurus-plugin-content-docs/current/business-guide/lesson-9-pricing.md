@@ -3,7 +3,7 @@ title: 'Lekce 9: Cenotvorba pro zisk'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekce 9: Cenotvorba pro zisk {#lesson-9-pricing-for-profit}
+# Lekce 9: Cenotvorba pro zisk
 
 V Lekci 5 jsme nastavili počáteční ceny pro plány FitSite. Nyní však vylepšíme strategii cenotvorby technikami, které zvýší příjem, podpoří akupgradování a sníží odchod zákazníků (churn).
 

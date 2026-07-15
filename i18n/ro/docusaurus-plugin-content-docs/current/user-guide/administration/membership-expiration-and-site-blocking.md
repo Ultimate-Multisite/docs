@@ -3,7 +3,7 @@ title: Expiriunea Membraterii și Blocarea Site-ului
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expirarea Abonamentelor și Blocarea Site-ului {#membership-expiration-and-site-blocking}
+# Expirarea Abonamentelor și Blocarea Site-ului
 
 Acest ghid explică modul în care Ultimate Multisite gestionează expirarea abonamentelor, terminarea perioadelor de probă și blocarea site-ului la nivel de *frontend*. Acoperă ciclul de viață al unui abonament, de la activ la expirat, setările care controlează dacă site-urile sunt blocate și ce trebuie verificat atunci când site-urile rămân accesibile după expirarea unui abonament.
 

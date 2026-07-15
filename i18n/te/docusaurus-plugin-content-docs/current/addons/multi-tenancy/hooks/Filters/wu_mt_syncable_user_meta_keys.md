@@ -4,7 +4,7 @@ title: Filter - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Filter: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Filter: wu_mt_syncable_user_meta_keys
 
 రిమోట్ నోడ్స్‌కు సింక్ చేయవలసిన యూజర్ మెటా కీల జాబితాను ఇది ఫిల్టర్ చేస్తుంది.
 

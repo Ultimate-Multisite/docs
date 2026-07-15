@@ -3,7 +3,7 @@ title: Gbe jáde & Gbe wọlé
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Gbigbe Jade & Gbigbe Wọle {#export--import}
+# Gbigbe Jade & Gbigbe Wọle
 
 Ultimate Multisite 2.9.0 ṣàfikún irinṣẹ́ **Gbigbe Jade & Gbigbe Wọle** fún ojúlé kan ṣoṣo lábẹ́ **Àwọn Irinṣẹ́ > Gbigbe Jade & Gbigbe Wọle**. Lò ó nígbà tí o bá nílò láti kó ojúlé WordPress kan sínú fáìlì ZIP, tún ZIP yẹn padà, tàbí gbe ojúlé kan láàárín Ultimate Multisite tó bá ara wọn mu àti àwọn fifi-sori ẹrọ WordPress ojúlé-kan.
 

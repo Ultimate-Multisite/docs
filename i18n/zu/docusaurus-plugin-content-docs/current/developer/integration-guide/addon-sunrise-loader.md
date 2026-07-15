@@ -3,7 +3,7 @@ title: Isilayishi Sefayela le-Sunrise Lesengezo
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Isilayishi Sefayela le-Sunrise Lesengezo {#addon-sunrise-file-loader}
+# Isilayishi Sefayela le-Sunrise Lesengezo
 
 Ultimate Multisite 2.8.0 yengeza isilayishi sesandiso se-sunrise sezingezo nokuhlanganiswa kwe-MU-plugin okwenziwe ngokwezifiso okudingeka kusebenze ngesikhathi sokuqalisa kwe-WordPress sunrise ngaphandle kokuhlela ifayela elikhiqiziwe elithi `wp-content/sunrise.php`.
 

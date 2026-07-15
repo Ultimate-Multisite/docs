@@ -3,7 +3,7 @@ title: Күпарендаторлылык интеграциясе
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy интеграциясе {#multi-tenancy-integration}
+# Multi-Tenancy интеграциясе
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 суверен tenantлар, миграцияне тикшерү һәм tenant тормыш циклы автоматлаштыруы өчен берничә интеграция ноктасын үзгәртә.
 

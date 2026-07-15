@@ -4,7 +4,7 @@ title: الإجراء - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# الإجراء: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# الإجراء: wu_handle_user_meta_fields
 
 السماح لمطوري الإضافات بحفظ بيانات الميتا للمستخدم بطرق مختلفة إذا لزم الأمر.
 

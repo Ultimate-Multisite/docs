@@ -3,7 +3,7 @@ title: Patēriņā balstītu plānu izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans izmaiņu žurnāls {#metered-plans-changelog}
+# Metered Plans izmaiņu žurnāls
 
 Versija 1.1.0 - Izlaista 2026-05-05
 - Jauns: AI token norēķini multisite apakšvietnēm — izsekojiet un iekasējiet maksu par AI token lietojumu klientu vietnēs ar konfigurējamām likmēm par token

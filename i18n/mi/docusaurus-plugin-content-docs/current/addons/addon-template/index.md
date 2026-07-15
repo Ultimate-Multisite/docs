@@ -3,9 +3,9 @@ title: Tātauira Tāpiritanga
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Tātauira Tāpiri {#addon-template}
+# Tātauira Tāpiri
 
-{{ADDON_DESCRIPTION}}
+Tātauira Tāpiritanga — Ultimate Multisite.
 
 ## Ngā Whakaritenga {#requirements}
 

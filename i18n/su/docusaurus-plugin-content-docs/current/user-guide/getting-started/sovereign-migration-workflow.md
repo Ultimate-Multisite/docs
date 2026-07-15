@@ -3,7 +3,7 @@ title: Alur Migrasi Kedaulatan
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Alur Migrasi Kedaulatan {#sovereign-migration-workflow}
+# Alur Migrasi Kedaulatan
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nambah gerbang verifikasi migrasi buat pindah subsite standar ke infrastruktur tenant kedaulatan (sovereign).
 

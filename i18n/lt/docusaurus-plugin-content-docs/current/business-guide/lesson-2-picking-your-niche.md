@@ -3,7 +3,7 @@ title: '2 pamoka: Savo nišos pasirinkimas'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# 2 pamoka: savo nišos pasirinkimas {#lesson-2-picking-your-niche}
+# 2 pamoka: savo nišos pasirinkimas
 
 1 pamokoje nustatėme, kodėl niša pranašesnė už bendrinį sprendimą. Dabar jums reikia pasirinkti savąją. Šioje pamokoje pateikiama struktūra, kaip rasti ir patikrinti nišą prieš investuojant laiką į jos kūrimą.
 

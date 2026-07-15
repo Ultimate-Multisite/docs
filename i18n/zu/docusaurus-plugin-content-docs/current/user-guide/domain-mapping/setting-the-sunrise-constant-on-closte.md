@@ -3,7 +3,7 @@ title: Ukusetha i-Sunrise Constant ku-Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ukusetha i-Sunrise constant ibe yi-true ku-Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Ukusetha i-Sunrise constant ibe yi-true ku-Closte
 
 Abanye abahlinzeki bokusingatha bakhiya i-wp-config.php ngezizathu zokuphepha. Lokhu kusho ukuthi Ultimate Multisite ayikwazi ukuhlela ngokuzenzakalelayo ifayela ukuze ifake ama-constants adingekayo ukuze domain mapping nezinye izici zisebenze. I-Closte ingomunye wabasingathi abanjalo.
 

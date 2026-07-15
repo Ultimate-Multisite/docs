@@ -3,7 +3,7 @@ title: Kgokahanyo ea Sehahi sa Saete v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Tsamaiso ya Kaho ya Sebaka v2 {#site-builder-orchestration-v2}
+# Tsamaiso ya Kaho ya Sebaka v2
 
 Tsamaiso ya Kaho ya Sebaka v2 (e hlahisitsweng ho Gratis AI Agent v1.4.0) ke enjine e matlafatsang ho bopa webosaete ka mehato e mengata. Ha o kopa agent hore e "hahe webosaete ya resturante" kapa "e bope potefolio e nang le blog", orchestrator e arola sepheo seo sa boemo bo hodimo hore e be **moralo** o hlophisitsweng, e fumana di-plugin tse hlokahalang ho se phethahatsa, e phetha mohato ka mong ka tatellano, e sala morao tswelopele, mme e itokisa diphosong ka boikemelo.
 

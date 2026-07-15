@@ -3,7 +3,7 @@ title: Ölçülmüş Planlar Dəyişiklik Qeydi
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ölçülən Planlar Değişiklik Qeydi {#metered-plans-changelog}
+# Ölçülən Planlar Değişiklik Qeydi
 
 Versiya 1.1.0 - Yayınlanma tarixi 2026-05-05
 - Yeni: Multisite alt saytları üçün AI token əsaslı ödəniş — konfiqurasiya edilə bilən hər token üçün qiymətlərlə müştəri saytları boyunca AI token istifadəsinin izlənilməsi və ödənilməsi.

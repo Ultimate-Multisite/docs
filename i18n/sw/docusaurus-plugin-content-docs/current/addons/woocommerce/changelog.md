@@ -3,7 +3,7 @@ title: Kumbukumbu ya Mabadiliko ya Ujumuishaji wa WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Kumbukumbu ya Mabadiliko ya WooCommerce Integration {#woocommerce-integration-changelog}
+# Kumbukumbu ya Mabadiliko ya WooCommerce Integration
 
 Toleo 2.2.0 - Limetolewa tarehe 2026-07-01
 * Mpya: Kiasi cha kodi cha Ultimate Multisite sasa kinaonekana kama mistari tofauti ya ada za WooCommerce wakati wa checkout, na kufanya jumla za kodi ziwe wazi zaidi kabla ya malipo.

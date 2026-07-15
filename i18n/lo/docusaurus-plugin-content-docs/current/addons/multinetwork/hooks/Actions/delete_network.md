@@ -4,7 +4,7 @@ title: ການກະທຳ - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# ການກະທຳ: delete_network {#action-deletenetwork}
+# ການກະທຳ: delete_network
 
 ເຮັດວຽກຫຼັງຈາກເຄືອຂ່າຍຖືກລຶບແລ້ວ.
 

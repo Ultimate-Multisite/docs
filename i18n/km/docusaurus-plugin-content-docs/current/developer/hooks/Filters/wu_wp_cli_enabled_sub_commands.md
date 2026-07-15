@@ -4,7 +4,7 @@ title: តម្រង - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# តម្រង: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# តម្រង: wu_wp_cli_enabled_sub_commands
 
 តម្រង​ថា sub_commands ណាខ្លះ​ត្រូវ​បាន​បើក​សម្រាប់​ធាតុ​នេះ។
 

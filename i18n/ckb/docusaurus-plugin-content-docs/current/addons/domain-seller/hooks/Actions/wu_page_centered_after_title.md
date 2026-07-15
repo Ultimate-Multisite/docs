@@ -4,7 +4,7 @@ title: کردار - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# کردار: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
+# کردار: wu_page_centered_after_title
 
 ڕێگە بە گەشەپێدەرانی plugin بدە دوگمەی زیاتر زیاد بکەن.
 

@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Bộ lọc: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Bộ lọc: wp_ultimo_skip_network_active_check
 
 Cho phép các nhà phát triển bỏ qua bước kiểm tra kích hoạt mạng.
 

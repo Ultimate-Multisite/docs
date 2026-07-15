@@ -4,7 +4,7 @@ title: Фільтр - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# Фільтр: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
+# Фільтр: wu_stripe_create_payment_intent_args
 
 Фільтруе аргументы для стварэння пагадження (payment intent).
 

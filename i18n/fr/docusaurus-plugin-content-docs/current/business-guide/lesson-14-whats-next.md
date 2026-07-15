@@ -3,7 +3,7 @@ title: 'Leçon 14 : Ce qui vient après'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leçon 14 : Quelles sont les prochaines étapes ? {#lesson-14-what-comes-next}
+# Leçon 14 : Quelles sont les prochaines étapes ?
 
 Vous avez construit une plateforme de sites web de niche à partir de zéro. FitSite est en ligne, sert des studios de fitness et génère des revenus récurrents. Cette dernière leçon explore les prochaines étapes.
 

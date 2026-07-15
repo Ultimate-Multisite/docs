@@ -3,7 +3,7 @@ title: Kod fragmenata koda
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kod fragmen za v2 {#code-snippets-for-v2}
+# Kod fragmen za v2
 
 U osnovi, kod fragmeni za **WordPress** se koriste da se obavljaju određene akcije koje bi inače zahtevale poseban manji plugin. Takvi kod fragmeni se postavljaju u jedan od WordPress jezgra ili tematskih fajlova (obično u `functions.php` fajlu vaše teme) ili se mogu koristiti kao MU plugin.
 

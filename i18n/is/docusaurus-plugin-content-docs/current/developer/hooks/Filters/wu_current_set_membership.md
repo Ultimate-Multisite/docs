@@ -4,7 +4,7 @@ title: Sía - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Sía: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Sía: wu_current_set_membership
 
 Leyfir forriturum að breyta sjálfgefinni hegðun og stilla núverandi aðild á annan hátt.
 

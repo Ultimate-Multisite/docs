@@ -3,7 +3,7 @@ title: Çoxkirayəçilik inteqrasiyası
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy inteqrasiyası {#multi-tenancy-integration}
+# Multi-Tenancy inteqrasiyası
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suveren icarəçilər, miqrasiya yoxlaması və icarəçi həyat dövrünün avtomatlaşdırılması üçün bir neçə inteqrasiya təmas nöqtəsini dəyişir.
 

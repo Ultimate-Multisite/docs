@@ -3,7 +3,7 @@ title: Fampidirana Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Fandahana Amin'ny Closte {#closte-integration}
+# Fandahana Amin'ny Closte
 
 ## Famarahabana (Overview) {#overview}
 Ny Closte dia sehatra hosting WordPress voaomana izay natao tamin'ny fototra Google Cloud. Ity fampifandraisana ity dia mamela ny fametrahana mivantana ny domain sy ny fitantanana ny SSL certificate eo amin'ny Ultimate Multisite sy Closte.

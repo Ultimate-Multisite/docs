@@ -3,7 +3,7 @@ title: CyberPanel 整合
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel 整合 {#cyberpanel-integration}
+# CyberPanel 整合
 
 本指南說明如何設定 Ultimate Multisite CyberPanel 整合，以便您的網路中已映射的網域能夠自動作為 CyberPanel 中的虛擬主機（virtual hosts）新增（和移除），並可選擇性地透過 Let's Encrypt 自動配置 SSL 憑證。
 

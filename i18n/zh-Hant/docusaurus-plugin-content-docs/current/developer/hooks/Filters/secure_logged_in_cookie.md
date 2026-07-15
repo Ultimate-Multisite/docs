@@ -4,7 +4,7 @@ title: 過濾器 - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# 過濾器：secure_logged_in_cookie {#filter-secureloggedincookie}
+# 過濾器：secure_logged_in_cookie
 
 用於判斷登入 Cookie 是否必須透過 HTTPS 傳送。
 

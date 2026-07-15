@@ -4,7 +4,7 @@ title: Filtro - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filtro: wu_username_from_email {#filter-wuusernamefromemail}
+# Filtro: wu_username_from_email
 
 Filtra il nome utente del nuovo cliente.
 

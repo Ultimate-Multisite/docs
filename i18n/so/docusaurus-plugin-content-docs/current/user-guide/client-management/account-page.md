@@ -3,7 +3,7 @@ title: Bogga Macaamiisha
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Bogga-ga Macaalka Macaamiishaada (v2) {#your-clients-account-page-v2}
+# Bogga-ga Macaalka Macaamiishaada (v2)
 
 _**Fadlan ogaow: Maqaalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
 

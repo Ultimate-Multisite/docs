@@ -3,7 +3,7 @@ title: Ama-ejenti Akhelwe ngaphakathi
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ama-Agent Akhelwe Ngaphakathi {#built-in-agents}
+# Ama-Agent Akhelwe Ngaphakathi
 
 Gratis AI Agent v1.9.0 iza nama-agent amahlanu akhelwe ngaphakathi, ngalinye lilungiselelwe kusengaphambili ngesethi egxilile yamathuluzi, i-system prompt eyenziwe ngokwezidingo, neziphakamiso zokuqala ezifaniswe nemisebenzi evamile kuleyo ndawo. Ukushintsha phakathi kwama-agent kushintsha lokho umsizi angakwenza nokuthi uphendula kanjani — ngaphandle kwanoma yikuphi ukulungiselela ohlangothini lwakho. Superdav AI Agent v1.18.0 ingangeza amathuluzi aqaphela ishejuli, amarekhodi ezikhumbuzi, amasango okuvunywa, nezaziso ze-SMS kulezi zinqubo zomsebenzi lapho ama-integration ahlobene elungiselelwe.
 

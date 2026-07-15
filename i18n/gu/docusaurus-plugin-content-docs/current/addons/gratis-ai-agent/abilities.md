@@ -3,7 +3,7 @@ title: ક્ષમતાઓ સંદર્ભ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities Reference {#abilities-reference}
+# Abilities Reference
 
 Abilities એ મૂળભૂત (atomic) ક્રિયાઓ છે જે Gratis AI Agent તમારી WordPress installation પર કરી શકે છે. દરેક ability એક registered PHP class હોય છે જે એક JSON schema પ્રદર્શિત કરે છે — એજન્ટ આ schema ને runtime પર વાંચે છે જેથી તે સમજી શકે કે કયા parameters જરૂરી છે અને ability શું return કરે છે.
 

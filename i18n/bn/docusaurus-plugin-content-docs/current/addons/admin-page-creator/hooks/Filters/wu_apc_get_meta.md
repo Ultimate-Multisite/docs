@@ -4,7 +4,7 @@ title: ফিল্টার - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Filter: wu_apc_get_meta
 
 ডেভেলপারদের চূড়ান্ত মানগুলো ফিল্টার করতে এবং নতুন প্রক্রিয়াকরণ ক্ষেত্র যোগ করতে দেয়।
 

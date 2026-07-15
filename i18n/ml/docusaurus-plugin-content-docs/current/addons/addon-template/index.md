@@ -3,9 +3,9 @@ title: ആഡ്‌ഓൺ ടെംപ്ലേറ്റ്
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template {#addon-template}
+# Addon Template
 
-{{ADDON_DESCRIPTION}}
+ആഡ്‌ഓൺ ടെംപ്ലേറ്റ് — Ultimate Multisite.
 
 ## ആവശ്യകതകൾ (Requirements) {#requirements}
 

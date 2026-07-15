@@ -3,7 +3,7 @@ title: Exempla codicis provecta
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Exempla codicis provecta {#advanced-code-examples}
+# Exempla codicis provecta
 
 Haec exempla rationes integrationis provectas cum Ultimate Multisite demonstrant.
 

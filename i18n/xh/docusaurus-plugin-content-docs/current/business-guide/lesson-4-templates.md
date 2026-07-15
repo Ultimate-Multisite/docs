@@ -3,7 +3,7 @@ title: 'Isifundo 4: Ukwakha iitempleyithi ezikhethekileyo'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Isifundo 4: Ukwakha Iitemplate Ze-niche {#lesson-4-building-niche-templates}
+# Isifundo 4: Ukwakha Iitemplate Ze-niche
 
 Iitemplate zingundoqo wesithembiso sakho sexabiso se-niche. Umnini westudiyo sefitness obhalisayo aze abone isayithi esele ikhangeleka njengewebhusayithi yefitness -- eneeshedyuli zeeklasi, iiprofayili zabaqeqeshi, nemifanekiso efanelekileyo -- unamathuba amaninzi kakhulu okuba ahlale kunalowo ubona iphepha elingenanto.
 

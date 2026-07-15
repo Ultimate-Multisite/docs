@@ -4,7 +4,7 @@ title: Lim - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 Lim cov ntaub ntawv object ua ntej nws raug khaws rau hauv database.
 

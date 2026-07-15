@@ -3,7 +3,7 @@ title: 'Oppitunti 14: Mitä seuraavaksi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Oppitunti 14: Mitä seuraavaksi {#lesson-14-what-comes-next}
+# Oppitunti 14: Mitä seuraavaksi
 
 Olet rakentanut niche-verkkosivustoalustan alusta asti. FitSite on julkaistu, se palvelee fitness-studioita ja tuottaa toistuvaa liikevaihtoa. Tämä viimeinen oppitunti tarkastelee, minne tästä jatketaan.
 

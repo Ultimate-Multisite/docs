@@ -4,7 +4,7 @@ title: Filtrilo - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filtrilo: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filtrilo: mu-migration/all_posts/default_args
 
 Filtras la defaŭltajn argumentojn por informpeti afiŝojn en la metodo all_posts.
 

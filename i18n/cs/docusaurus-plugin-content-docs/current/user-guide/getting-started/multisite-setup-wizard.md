@@ -3,7 +3,7 @@ title: Průvodce nastavením Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Průvodce nastavením Multisite {#multisite-setup-wizard}
+# Průvodce nastavením Multisite
 
 Ultimate Multisite obsahuje vestavěného průvodce, který automaticky převede standardní instalaci WordPress na síť WordPress Multisite. Díky tomu nemusíte ručně upravovat `wp-config.php` ani spouštět databázové příkazy.
 

@@ -3,7 +3,7 @@ title: 要件
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite 要件 {#ultimate-multisite-requirements}
+# Ultimate Multisite 要件
 
 Ultimate Multisite を購入する前に自分自身に尋ねるかもしれない最初のことは、私たちのプラグインを実行するための要件は何かです。幸いなことに、Ultimate Multisite を実行するための基本的な要件はわずか数個だけです：**ドメイン名**、良い **ホスティングプロバイダー**、そして WordPress **Multisite** のインストールです。これだけで十分です！
 

@@ -3,7 +3,7 @@ title: Töleg almak
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Töleg almak (v2) {#getting-paid-v2}
+# Töleg almak (v2)
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 

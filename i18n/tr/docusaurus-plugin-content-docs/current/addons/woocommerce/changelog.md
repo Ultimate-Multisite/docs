@@ -3,7 +3,7 @@ title: WooCommerce Entegrasyonu Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Entegrasyonu Değişiklik Günlüğü {#woocommerce-integration-changelog}
+# WooCommerce Entegrasyonu Değişiklik Günlüğü
 
 Sürüm 2.2.0 - 2026-07-01 tarihinde yayınlandı
 * Yeni: Ultimate Multisite vergi tutarları artık checkout sırasında ayrı WooCommerce ücret satırları olarak görünür; bu da ödeme öncesinde vergi toplamlarını daha net hale getirir.

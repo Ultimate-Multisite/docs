@@ -4,7 +4,7 @@ title: Filtrilo - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Filtro: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Filtro: wu_current_set_customer
 
 Permesas al programistoj modifi la defaŭltan konduton kaj agordi la aktualan klienton alimaniere.
 

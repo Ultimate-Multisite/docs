@@ -3,7 +3,7 @@ title: စွမ်းရည် မြင်နိုင်မှု
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# စွမ်းရည် မြင်နိုင်မှု (Ability Visibility) {#ability-visibility}
+# စွမ်းရည် မြင်နိုင်မှု (Ability Visibility)
 
 Superdav AI Agent v1.12.0 တွင် **စွမ်းရည် မြင်နိုင်မှု (Ability Visibility)** ထိန်းချုပ်မှုများကို မိတ်ဆက်ပေးထားပြီး၊ ဤစွမ်းရည်များကို မည်သည့် နေရာများတွင် ဖော်ပြရမည်ကို စီမံခန့်ခွဲပေးပါသည်။ ဤအရာက စီမံခန့်ခွဲသူများအား REST APIs၊ MCP servers၊ WooCommerce integrations နှင့် အခြား interface များမှတစ်ဆင့် မည်သည့် agent စွမ်းရည်များကို အသုံးပြုနိုင်သည်ကို သေချာချိန်ညှိနိုင်စေပါသည်။
 

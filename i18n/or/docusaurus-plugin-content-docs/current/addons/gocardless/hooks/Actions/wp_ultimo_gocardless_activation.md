@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_gocardless_activation
 
 pluginର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ସକ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କ routine ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

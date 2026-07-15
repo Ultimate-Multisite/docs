@@ -3,7 +3,7 @@ title: Gadzira Chiratidzo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Gadzira Logo SVG {#generate-logo-svg}
+# Gadzira Logo SVG
 
 Kugona kwe**Gadzira Logo SVG** kunobvumira Theme Builder kugadzira uye kuisa maSVG echiratidzo akagadzirirwa iwe zvakananga musaiti yako yeWordPress nekucheneswa otomatiki kwakachengeteka kuma namespace.
 

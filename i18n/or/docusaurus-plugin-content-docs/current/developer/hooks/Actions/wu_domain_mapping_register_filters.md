@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# କାର୍ଯ୍ୟ: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# କାର୍ଯ୍ୟ: wu_domain_mapping_register_filters
 
 କିଛି ପ୍ଲଗଇନ mapping ସକ୍ରିୟ ହେବା ପୂର୍ବରୁ URL ସଞ୍ଚୟ କରିବ, କିମ୍ବା ଉପରୋକ୍ତ filters ରେ ନଥିବା ଭିନ୍ନ ଉପାୟରେ URLs ତିଆରି କରିବ।
 

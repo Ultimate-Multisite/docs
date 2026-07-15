@@ -3,7 +3,7 @@ title: Modelli di sito
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelli di sito (v2) {#site-templates-v2}
+# Modelli di sito (v2)
 
 _**NOTA: Questo articolo si riferisce a Ultimate Multisite versione 2.x. Se stai usando la versione 1.x,**_ **consulta questo articolo** _**.**_
 

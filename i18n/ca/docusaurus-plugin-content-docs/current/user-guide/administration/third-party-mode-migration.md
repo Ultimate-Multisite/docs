@@ -3,7 +3,7 @@ title: Migració a Mode de Tercer.
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migració al Mode de Tercers {#third-party-mode-migration}
+# Migració al Mode de Tercers
 
 Superdav AI Agent v1.12.0 canvia la manera de gestionar les capacitats (abilities) de tercers. **El mode de tercers ara per defecte utilitza el mode automàtic**, cosa que permet l'integració nativa de l'Abilities API de WordPress en WordPress 7.0+ sense necessitat de configuració manual.
 

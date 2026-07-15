@@ -3,7 +3,7 @@ title: 'Lekcija 7: Naredite po svoje'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekcija 7: Naj bo vaše {#lesson-7-making-it-yours}
+# Lekcija 7: Naj bo vaše
 
 Vaše stranke se nikoli ne bi smele počutiti, kot da uporabljajo "nek WordPress vtičnik." Počutiti bi se morale, kot da uporabljajo FitSite -- platformo, zgrajeno za njihovo panogo. Ta lekcija obravnava znamčenje, white-label označevanje in to, kako platformi dati občutek pravega izdelka.
 

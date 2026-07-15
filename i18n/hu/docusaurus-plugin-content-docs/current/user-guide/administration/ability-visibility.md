@@ -3,7 +3,7 @@ title: Képesség láthatósága
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility {#ability-visibility}
+# Ability Visibility
 
 A Superdav AI Agent v1.12.0 bevezeti az **Ability Visibility** (Képesség Láthatósági) szabályozó elemeket, amelyek meghatározzák, mely felületek jelenítik meg adott képességet. Ez lehetővé teszi az adminisztrátorok számára, hogy finomhangolják, hogy mely agent funkciók állnak rendelkezésre a REST API-kon, MCP szervereken, WooCommerce integrációkban és más interfészokon.
 

@@ -3,7 +3,7 @@ title: Cyflwyniadau
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ymddiantigolionau Ultmate Multisite {#ultimate-multisite-requirements}
+# Ymddiantigolionau Ultmate Multisite
 
 Yn cyntaf ysgol i chi gallwch gofynch yn rhywogaeth o ddodyn Ultmate Multisite yw beth yw'r hanesau i gweithio'r plugin. Well, gyda'r cyfathrebu, mae dim ond sawl hanesau sylfaenol i weithio'r Ultimate Multisite: **enw domaint**, **cynllunwrdd gweithredol** a **ysbyriaeth WordPress Multisite**. Mae hyn yn ddigon i chi angen!
 

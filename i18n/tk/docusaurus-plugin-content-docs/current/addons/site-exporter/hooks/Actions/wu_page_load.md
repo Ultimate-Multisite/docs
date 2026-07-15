@@ -4,7 +4,7 @@ title: Hereket - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Hereket: wu_page_load {#action-wupageload}
+# Hereket: wu_page_load
 
 Plagin döredijilerine sahypalarymyza goşmaça hook-lary goşmaga rugsat berýär.
 

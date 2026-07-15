@@ -4,7 +4,7 @@ title: 篩選器 - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# 過濾器：wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# 過濾器：wu_get_membership_allowed_forms
 
 讓開發人員可以新增表單 slug 來繞過此行為。
 

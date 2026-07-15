@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_{$this->id}_before_render
 
 Ez az action lehetővé teszi a plugin fejlesztők számára, hogy hozzáadjanak további tartalmat, mielőtt megjelenítjük az oldalt.
 

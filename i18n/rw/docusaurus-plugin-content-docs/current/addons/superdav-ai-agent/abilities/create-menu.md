@@ -3,7 +3,7 @@ title: Hanga Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kora Menu {#create-menu}
+# Kora Menu
 
 Ubushobozi bwa **Kora Menu** bukora menu zo kuyobora za WordPress, bushyigikira labels zo kuyobora zitandukanye n’imitwe y’amapaji.
 

@@ -3,7 +3,7 @@ title: Afrekenveld en klant-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout-veld en DNS-beheer voor klanten {#checkout-field-and-customer-dns-management}
+# Checkout-veld en DNS-beheer voor klanten
 
 ## Het checkout-veld Domain Selection {#the-domain-selection-checkout-field}
 

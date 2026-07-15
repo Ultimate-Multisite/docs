@@ -3,7 +3,7 @@ title: সদস্যতা বাতিল করা
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membership বাতিল করা (v2) {#canceling-a-membership-v2}
+# Membership বাতিল করা (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কে।**_
 

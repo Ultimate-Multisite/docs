@@ -3,7 +3,7 @@ title: Uhlu Lwamazwe
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ukuhlela kabusha uhlu lwamazwe lwe-Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Ukuhlela kabusha uhlu lwamazwe lwe-Ultimate Multisite
 
 I-dropdown yokukhetha izwe ihlelwe ngokwe-alfabhethi ngokusekelwe ezinguqulweni zesiNgisi zamagama amazwe. Lokhu kungasho ukuthi, kwesinye isikhathi, izwe lasekhaya lenkampani yakho kanye/noma iningi lamakhasimende akho lifihlwe phakathi nohlu olukhulu lwamagama amazwe.
 

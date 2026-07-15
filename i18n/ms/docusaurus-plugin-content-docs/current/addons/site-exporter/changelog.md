@@ -3,7 +3,7 @@ title: Log Perubahan Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Log Perubahan Site Exporter {#site-exporter-changelog}
+# Log Perubahan Site Exporter
 
 Versi: 1.0.6 - Dikeluarkan pada 2026-05-11
 * Baru: Eksport tapak kini membungkus `index.php` yang boleh but semula sendiri, jadi ZIP ini boleh dipasang pada hos baharu tanpa perlu memasang plugin berasingan.

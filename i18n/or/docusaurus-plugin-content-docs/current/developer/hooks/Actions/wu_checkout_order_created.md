@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# କାର୍ଯ୍ୟ: wu_checkout_order_created {#action-wucheckoutordercreated}
+# କାର୍ଯ୍ୟ: wu_checkout_order_created
 
 ଚେକଆଉଟ ଅର୍ଡର ସମ୍ପୂର୍ଣ୍ଣ ଭାବେ ତିଆରି ହେବା ପରେ ଚାଲୁ ହୁଏ।
 

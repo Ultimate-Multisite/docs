@@ -3,7 +3,7 @@ title: Webkhuggar
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Fyrirblik á Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Fyrirblik á Webhooks (v2)
 
 _**ÁHATTENSTÖÐ: Skráðu að þetta eiginleiki eða greinin er fyrir framavanzda notendur.**_
 

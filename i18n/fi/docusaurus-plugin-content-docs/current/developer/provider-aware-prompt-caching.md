@@ -3,7 +3,7 @@ title: Palveluntarjoajatietoinen kehotteiden välimuisti
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Palveluntarjoajat huomioiva kehotteiden välimuisti {#provider-aware-prompt-caching}
+# Palveluntarjoajat huomioiva kehotteiden välimuisti
 
 Superdav AI Agent v1.12.0 tuo käyttöön **palveluntarjoajat huomioivan kehotteiden välimuistin**, joka optimoi API-kustannuksia ja viivettä välimuistittamalla kehotteita eri LLM-palveluntarjoajien välillä. Jokaisella palveluntarjoajalla on erilaiset välimuistimekanismit ja määritykset.
 

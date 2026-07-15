@@ -3,7 +3,7 @@ title: Kakayahang Makita
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Pagpapakita ng Kakayahan (Ability Visibility) {#ability-visibility}
+# Pagpapakita ng Kakayahan (Ability Visibility)
 
 Ang Superdav AI Agent v1.12.0 ay nagpapakilala ng **Ability Visibility** controls na namamahala kung aling mga surface ang magpapakita ng bawat kakayahan (ability). Pinapayagan nito ang mga administrator na i-fine-tune kung aling mga capability ng agent ang magagamit sa pamamagitan ng REST APIs, MCP servers, WooCommerce integrations, at iba pang interface.
 

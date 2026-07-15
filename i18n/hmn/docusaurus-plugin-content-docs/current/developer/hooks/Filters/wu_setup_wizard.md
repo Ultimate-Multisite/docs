@@ -4,7 +4,7 @@ title: Lim - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Lim: wu_setup_wizard {#filter-wusetupwizard}
+# Lim: wu_setup_wizard
 
 Tso cai rau cov developer ntxiv cov kauj ruam setup wizard ntxiv.
 

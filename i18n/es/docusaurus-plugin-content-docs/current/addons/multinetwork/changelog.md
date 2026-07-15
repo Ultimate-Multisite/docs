@@ -3,7 +3,7 @@ title: Registro de cambios multi-red
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Registro de cambios de Multi-Network {#multi-network-changelog}
+# Registro de cambios de Multi-Network
 
 ### 1.3.0 {#130}
 * Nuevo: Previsualizador de plantillas de red — explora y previsualiza plantillas de red con un panel en vivo antes de comprar.

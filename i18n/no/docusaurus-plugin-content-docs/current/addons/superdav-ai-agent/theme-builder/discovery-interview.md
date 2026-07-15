@@ -3,7 +3,7 @@ title: Oppdagelsesintervju
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Oppdagelsesintervju {#discovery-interview}
+# Oppdagelsesintervju
 
 **Oppdagelsesintervju** er det første steget i Theme Builders designprosess. Det samler informasjon om nettstedet ditt, virksomheten din og dine designpreferanser for å skape et personlig tema.
 

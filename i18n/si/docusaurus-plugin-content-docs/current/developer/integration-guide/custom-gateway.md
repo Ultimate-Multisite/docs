@@ -3,7 +3,7 @@ title: අභිරුචි ගේට්වේ සංවර්ධනය
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# අභිරුචි Gateway සංවර්ධනය {#custom-gateway-development}
+# අභිරුචි Gateway සංවර්ධනය
 
 `Base_Gateway` class එක දීර්ඝ කිරීමෙන් ඔබට අභිරුචි ගෙවීම් gateways නිර්මාණය කළ හැක.
 

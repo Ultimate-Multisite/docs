@@ -3,7 +3,7 @@ title: ពង្រឹងការរួមបញ្ចូល Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# ការពង្រឹងការរួមបញ្ចូល Control Panel {#enhance-control-panel-integration}
+# ការពង្រឹងការរួមបញ្ចូល Control Panel
 
 ## ទិដ្ឋភាពទូទៅ {#overview}
 Enhance គឺជា control panel ទំនើបមួយដែលផ្តល់នូវសមត្ថភាពស្វ័យប្រវត្តិកម្ម និងការគ្រប់គ្រង hosting ដែលមានឥទ្ធិពល។ ការរួមបញ្ចូលនេះអនុញ្ញាតឱ្យមានការซิงค์ domain ដោយស្វ័យប្រเทียม និងការគ្រប់គ្រង SSL certificate រវាង Ultimate Multisite និង Enhance Control Panel។

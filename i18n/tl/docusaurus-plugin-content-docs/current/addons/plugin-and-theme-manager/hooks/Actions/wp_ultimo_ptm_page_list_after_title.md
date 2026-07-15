@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Aksyon: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Aksyon: wp_ultimo_ptm_page_list_after_title
 
 Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang mga button sa mga pahina ng listahan
 

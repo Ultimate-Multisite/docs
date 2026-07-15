@@ -3,7 +3,7 @@ title: Láimhseáil Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Láimhseáil Webhookanna {#webhook-handling}
+# Láimhseáil Webhookanna
 
 Cruthaigh críochphointí webhook saincheaptha chun imeachtaí a fháil ó sheirbhísí seachtracha agus sonraí a shioncronú le Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# Action: wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# Action: wp_ultimo_captcha_load
 
 यह तब ट्रिगर होता है जब सभी ज़रूरी डिपेंडेंसी (dependencies) लोड हो जाती हैं।
 

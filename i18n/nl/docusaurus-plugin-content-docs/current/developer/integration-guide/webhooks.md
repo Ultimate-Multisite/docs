@@ -3,7 +3,7 @@ title: Webhookverwerking
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Afhandeling {#webhook-handling}
+# Webhook Afhandeling
 
 Maak aangepaste webhook-eindpunten om gebeurtenissen van externe services te ontvangen en gegevens te synchroniseren met Ultimate Multisite.
 

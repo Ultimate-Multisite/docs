@@ -3,7 +3,7 @@ title: 'Lekcija 13: Povečevanje obsega'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekcija 13: Širitev {#lesson-13-scaling-up}
+# Lekcija 13: Širitev
 
 Imate delujočo platformo s plačljivimi strankami. Ta lekcija obravnava, kako zrasti iz majhne dejavnosti v trajnostno podjetje -- s skaliranjem infrastrukture, avtomatizacijo operacij in povečanjem prihodka na stranko.
 

@@ -3,7 +3,7 @@ title: Je registratieformulier aanpassen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Je registratieformulier aanpassen {#customizing-your-registration-form}
+# Je registratieformulier aanpassen
 
 Om je netwerk er uniek uit te laten zien ten opzichte van alle andere SaaS die op het WordPress-platform zijn gebouwd, kun je met Ultimate Multisite je registratie- en inlogpagina’s aanpassen met onze functie **Checkout Forms**.
 

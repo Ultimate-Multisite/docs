@@ -3,7 +3,7 @@ title: Specifikace webu dovednost
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Došvihování specifikace webu {#site-specification-skill}
+# Došvihování specifikace webu
 
 **Došvihování specifikace webu** je strukturovaný přístup k zachycení cílů vašeho webu, cílové skupiny a značkové identity. Tyto informace jsou uloženy do vaší paměti **site_brief**, kterou agenti používají napříč různými sezeními, aby poskytovali konzistentní a kontextově vědomou pomoc.
 

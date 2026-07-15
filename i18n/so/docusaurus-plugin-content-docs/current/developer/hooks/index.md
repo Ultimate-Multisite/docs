@@ -3,7 +3,7 @@ title: Tixraaca Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tixraaca Hooks {#hooks-reference}
+# Tixraaca Hooks
 
 Dukumiinti si otomaatig ah loo abuuray oo loogu talagalay dhammaan **59 falal** iyo **118 shaandheeyayaal** ee Ultimate Multisite.
 

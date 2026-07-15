@@ -3,7 +3,7 @@ title: ছাড়ের কোড তৈরি করা
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ছাড় কোড তৈরি করা (v2) {#creating-discount-codes-v2}
+# ছাড় কোড তৈরি করা (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কিত।**_
 

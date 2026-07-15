@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_register_capabilities
 sidebar_label: wu_register_capabilities
 _i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
 ---
-# କାର୍ଯ୍ୟ: wu_register_capabilities {#action-wuregistercapabilities}
+# କାର୍ଯ୍ୟ: wu_register_capabilities
 
 ଏଡ଼ଅନ୍‌ଗୁଡ଼ିକୁ ଇଣ୍ଟିଗ୍ରେସନ୍‌ରେ କ୍ଷମତା ମଡ୍ୟୁଲ୍ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦେବା ପାଇଁ ଚାଲୁ ହୁଏ।
 

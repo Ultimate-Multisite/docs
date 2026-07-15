@@ -3,7 +3,7 @@ title: Ho lula le ho fana
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration {#closte-integration}
+# Closte Integration
 
 ## Le Tšhobo (Overview) {#overview}
 Closte ke le platform ya WordPress e ebeletse (managed hosting) e e beletse ka Google Cloud infrastructure. Ho fana ka ho fetola domain automatically le ho fana certificate ya SSL ho tloha-tloha (between Ultimate Multisite le Closte).

@@ -3,7 +3,7 @@ title: Áttekintő vezérlőpult
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Vezérlőpult áttekintés {#dashboard-overview}
+# Vezérlőpult áttekintés
 
 Az Ultimate Multisite rendelkezik egy saját **Vezérlőpulttal** az Ultimate Multisite menüben, továbbá widgeteket is elhelyez a Hálózati vezérlőpulton. Ez a cikk bemutatja, mit találsz mindkét helyen.
 

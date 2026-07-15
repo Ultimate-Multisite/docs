@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dokumentazzjoni ta' Ultimate Multisite {#ultimate-multisite-documentation}
+# Dokumentazzjoni ta' Ultimate Multisite
 
 Merħba fid-dokumentazzjoni ta' Ultimate Multisite. Ultimate Multisite jittrasforma WordPress Multisite f'pjattaforma sħiħa Websajt bħala Servizz (WaaS).
 

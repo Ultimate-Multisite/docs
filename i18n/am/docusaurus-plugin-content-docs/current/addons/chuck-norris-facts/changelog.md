@@ -3,7 +3,7 @@ title: ቻክ ኖርሪስ እውነታዎች የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# የቹክ ኖርሪስ እውነታዎች የለውጥ መዝገብ {#chuck-norris-facts-changelog}
+# የቹክ ኖርሪስ እውነታዎች የለውጥ መዝገብ
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * ተጨመረ፡ በUltimate Multisite update server አማካኝነት በራስ-ሰር የሚዘልቅ የዘመኛ ስሪት አቅም።

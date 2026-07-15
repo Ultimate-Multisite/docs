@@ -4,7 +4,7 @@ title: Tātari - wu_upgrade_to_unlock_url
 sidebar_label: wu_upgrade_to_unlock_url
 _i18n_hash: 3398ef4bc9e288f0173a859844fbb25c
 ---
-# Tātari: wu_upgrade_to_unlock_url {#filter-wuupgradetounlockurl}
+# Tātari: wu_upgrade_to_unlock_url
 
 Tukuna ngā kaiwhakawhanake kia huri i te URL whakapai ake hei wetewete
 

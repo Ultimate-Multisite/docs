@@ -4,7 +4,7 @@ title: Филтр - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Филтр: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Филтр: wu_password_require_lowercase
 
 Филтр мекунад, ки оё дар паролҳо ҳарфҳои хурд талаб карда шаванд.
 

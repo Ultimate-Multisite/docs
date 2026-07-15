@@ -3,7 +3,7 @@ title: Ukumisela kunye noQwalaselo loMboneleli
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Umthengisi weDomeyini: Ukumisela kunye noLungiselelo loMboneleli {#domain-seller-setup-and-provider-configuration}
+# Umthengisi weDomeyini: Ukumisela kunye noLungiselelo loMboneleli
 
 I-addon yoMthengisi weDomeyini iza newizadi yokumisela ekhokelwayo ekukhokelela kuwo onke amanyathelo afunekayo. Eli phepha ligubungela ukuhamba kwewizadi kunye nendlela yokulungisa okanye yokuphinda ulungiselele ababoneleli emva koko.
 

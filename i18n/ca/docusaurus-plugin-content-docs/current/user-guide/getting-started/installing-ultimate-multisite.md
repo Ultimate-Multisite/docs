@@ -3,7 +3,7 @@ title: Instal·lant Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instal·lació de l'Ultimate Multisite {#installing-ultimate-multisite}
+# Instal·lació de l'Ultimate Multisite
 
 :::note
 Aquest tutorial assumeix que ja teniu instal·lat i configurat el WordPress Multisite. Per obtenir més informació, consulteu [aquest tutorial](https://www.wpbeginner.com/glossary/multisite/) de WP Beginner.

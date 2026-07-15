@@ -3,7 +3,7 @@ title: Kykyjen viiteopas
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Kykyjen viite {#abilities-reference}
+# Kykyjen viite
 
 Kyvyt ovat atomisia toimintoja, joita Gratis AI Agent voi kutsua WordPress-asennuksessasi. Jokainen kyky on rekisteröity PHP-luokka, joka tarjoaa JSON-skeeman — agentti lukee tämän skeeman ajon aikana ymmärtääkseen, mitä parametreja tarvitaan ja mitä kyky palauttaa.
 

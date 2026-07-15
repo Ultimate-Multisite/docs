@@ -4,7 +4,7 @@ title: ການດຳເນີນການ - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# ການກະທຳ: wu_model_post_save {#action-wumodelpostsave}
+# ການກະທຳ: wu_model_post_save
 
 ຖືກເອີ້ນໃຊ້ຫຼັງຈາກ object ຖືກເກັບໄວ້ໃນຖານຂໍ້ມູນ.
 

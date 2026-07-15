@@ -4,7 +4,7 @@ title: Iragazkia - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Iragazkia: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Iragazkia: wu_membership_update_forms
 
 Garatzaileei eguneratze-formularioen slug berriak gehitzeko aukera ematen die.
 

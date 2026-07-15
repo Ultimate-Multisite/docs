@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Historia ya Mabadiliko za GoCardless {#gocardless-changelog}
+# Historia ya Mabadiliko za GoCardless
 
 Toleo: 1.0.3 - Iliachishwa tarehe 2026-05-05
 * Urekebisho: Vituo vya pending visivyohusiana sasa vinasafishwa wakati ushilingi wa GoCardless unakatishwa huku ukiwa katika hali ya pending au on-hold.

@@ -3,7 +3,7 @@ title: ServerPilot ஒருங்கிணைப்பு
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ஒருங்கிணைப்பு {#serverpilot-integration}
+# ServerPilot ஒருங்கிணைப்பு
 
 ## கண்ணோட்டம் {#overview}
 ServerPilot என்பது DigitalOcean, Amazon, Google அல்லது வேறு எந்த server வழங்குநரிடமும் WordPress மற்றும் பிற PHP வலைத்தளங்களை host செய்வதற்கான ஒரு cloud சேவையாகும். இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் ServerPilot இடையே தானியங்கி domain ஒத்திசைவு மற்றும் SSL சான்றிதழ் மேலாண்மையை செயல்படுத்துகிறது.

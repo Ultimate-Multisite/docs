@@ -3,7 +3,7 @@ title: Anulowanie członkostwa
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Anulowanie członkostwa (v2) {#canceling-a-membership-v2}
+# Anulowanie członkostwa (v2)
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 

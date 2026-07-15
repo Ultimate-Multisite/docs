@@ -3,7 +3,7 @@ title: Vytváranie vášho prvého produktového ponuky na predplatné
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Vytvorenie vášho prvého produktového ponuky (v2) {#creating-your-first-subscription-product-v2}
+# Vytvorenie vášho prvého produktového ponuky (v2)
 
 _**DÔLEŽITÉU POZNÁTE: Tento článok je určený iba pre používateľov Ultimate Multisite verzie 2.x. Ak používate verziu 1.x,**_ **_pozrite si tento článok**_**.
 

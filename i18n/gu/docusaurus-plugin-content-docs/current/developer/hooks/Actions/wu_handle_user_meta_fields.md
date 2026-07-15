@@ -4,7 +4,7 @@ title: ક્રિયા - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 પ્લગઇન ડેવલપર્સને જરૂર પડ્યે યુઝર મેટા ડેટા અલગ અલગ રીતે સેવ કરવાની મંજૂરી આપે છે.
 

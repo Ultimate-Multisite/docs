@@ -3,7 +3,7 @@ title: Kukwera kwa Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Kufufu kwa Ufunga (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Kufufu kwa Ufunga (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imasongeza uwezo wa kufanya database na filesystem isolation kwa kila subsite ili wateja wao wajue kuwa data yao inahifadhiwa tofauti, huku ukihifadhi mipangilio ya mtandao, malipo, na usimamizi.
 

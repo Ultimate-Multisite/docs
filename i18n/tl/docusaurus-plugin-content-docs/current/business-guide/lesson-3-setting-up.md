@@ -3,7 +3,7 @@ title: 'Aralin 3: Pagse-set up ng Iyong Network'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Aralin 3: Pag-set Up ng Iyong Network {#lesson-3-setting-up-your-network}
+# Aralin 3: Pag-set Up ng Iyong Network
 
 Oras na para bumuo. Sa araling ito, i-install mo ang Ultimate Multisite at iko-configure ang pundasyon ng FitSite network. Bawat desisyon dito ay ginawa nang isinasaalang-alang ang fitness niche.
 

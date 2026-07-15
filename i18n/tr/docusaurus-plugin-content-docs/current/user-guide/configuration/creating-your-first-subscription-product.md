@@ -3,7 +3,7 @@ title: İlk Abonelik Ürününüzü Oluşturma
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# İlk Abonelik Ürününüzü Oluşturma (v2) {#creating-your-first-subscription-product-v2}
+# İlk Abonelik Ürününüzü Oluşturma (v2)
 
 _**ÖNEMLİ NOT: Bu makale yalnızca Ultimate Multisite sürüm 2.x kullanıcıları içindir. Sürüm 1.x kullanıyorsanız,**_ **_**bu makaleye bakın**_**.
 

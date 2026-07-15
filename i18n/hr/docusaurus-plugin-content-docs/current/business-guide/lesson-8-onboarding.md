@@ -3,7 +3,7 @@ title: 'Lekcija 8: Uvođenje korisnika'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lekcija 8: Uvođenje korisnika {#lesson-8-customer-onboarding}
+# Lekcija 8: Uvođenje korisnika
 
 Navesti korisnika da se prijavi samo je pola posla. Ako se prijavi, osjeti se preplavljeno i nikad se ne vrati, izgubili ste ga. Ova lekcija osmišljava iskustvo koje novu prijavu pretvara u aktivnog, angažiranog korisnika.
 

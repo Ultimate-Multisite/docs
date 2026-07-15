@@ -3,7 +3,7 @@ title: 'Leciono 2: Elektado de via niĉo'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leciono 2: Elekti Vian Niĉon {#lesson-2-picking-your-niche}
+# Leciono 2: Elekti Vian Niĉon
 
 En Leciono 1 ni klarigis kial niĉo superas ĝeneralaĵon. Nun vi devas elekti vian. Ĉi tiu leciono donas al vi kadron por trovi kaj validigi niĉon antaŭ ol vi investas tempon konstruante por ĝi.
 

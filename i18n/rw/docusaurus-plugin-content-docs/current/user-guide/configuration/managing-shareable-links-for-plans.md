@@ -3,7 +3,7 @@ title: Gukoma Urururo rwa Linki Zishobora Gutunganyirwa ku Byiciro
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Gukoresha Link za Ubwumuryo (Shareable Links) {#managing-shareable-links-for-plans}
+# Gukoresha Link za Ubwumuryo (Shareable Links)
 
 Ultimate Multisite yifashisha uburyo bwo kwishamo ubwumuryo bw'ibintu by'ubwumuryo (plan links) ku batatuza mu gihe. Kumenya uburyo bwawe, gukora ibi, ugenda ku cyo gukoresha gukoresha plan yose kandi ukoresha ubutumwa "Click to copy the Shareable Link".
 

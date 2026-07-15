@@ -3,7 +3,7 @@ title: Mitmerentnikluse integratsioon
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integratsioon {#multi-tenancy-integration}
+# Multi-Tenancy integratsioon
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 muudab mitut integratsiooni puutepunkti suveräänsete tenantide, migratsiooni kontrollimise ja tenanti elutsükli automatiseerimise jaoks.
 

@@ -3,7 +3,7 @@ title: Գրանցման հոսքը
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Գրանցման հոսքը (v2) {#the-registration-flow-v2}
+# Գրանցման հոսքը (v2)
 
 _**ԿԱՐԵՎՈՐ ՆՇՈՒՄ. Այս հոդվածը վերաբերում է Ultimate Multisite-ի 2.x տարբերակին։**_
 

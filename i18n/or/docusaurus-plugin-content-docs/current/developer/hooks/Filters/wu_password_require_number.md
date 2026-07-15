@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# ଫିଲ୍ଟର: wu_password_require_number {#filter-wupasswordrequirenumber}
+# ଫିଲ୍ଟର: wu_password_require_number
 
 ପାସୱାର୍ଡରେ ସଂଖ୍ୟା ଆବଶ୍ୟକ କରିବା କି ନାହିଁ ଫିଲ୍ଟର କରନ୍ତୁ।
 

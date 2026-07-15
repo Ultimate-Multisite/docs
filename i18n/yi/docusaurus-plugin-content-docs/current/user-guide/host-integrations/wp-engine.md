@@ -3,7 +3,7 @@ title: WP Engine אינטעגראַציע
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine אינטעגראַציע {#wp-engine-integration}
+# WP Engine אינטעגראַציע
 
 ## איבערבליק {#overview}
 WP Engine איז אַ פּרעמיום־פֿאַרוואַלטעטע WordPress האָסטינג־פּלאַטפֿאָרמע וואָס גיט אָפּטימיזירטע אויפֿפֿירונג, זיכערהייט, און סקאַלירבאַרקייט פֿאַר WordPress זייטלעך. די אינטעגראַציע דערמעגלעכט אויטאָמאַטישע דאָמען־סינכראָניזאַציע צווישן Ultimate Multisite און WP Engine.

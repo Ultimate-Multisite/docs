@@ -3,7 +3,7 @@ title: Configuração inicial e configuração do provedor
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: configuração inicial e configuração de provedores {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: configuração inicial e configuração de provedores
 
 O complemento Domain Seller vem com um assistente de configuração guiado que orienta você por todas as etapas obrigatórias. Esta página cobre o fluxo do assistente e como configurar ou reconfigurar provedores posteriormente.
 

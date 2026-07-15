@@ -4,7 +4,7 @@ title: Chochita - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Chochita: wu_before_light_ajax {#action-wubeforelightajax}
+# Chochita: wu_before_light_ajax
 
 Nthawi zina, tidzafunika kutsegula mphamvu zowonjezera kuti tigwire zochita.
 

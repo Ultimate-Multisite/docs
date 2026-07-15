@@ -3,7 +3,7 @@ title: Inkambu Yokukhokha kanye ne-DNS Yekhasimende
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Inkambu Yokukhokha Nokuphathwa kwe-DNS Yamakhasimende {#checkout-field-and-customer-dns-management}
+# Inkambu Yokukhokha Nokuphathwa kwe-DNS Yamakhasimende
 
 ## Inkambu yokukhokha ethi Ukukhetha i-Domain {#the-domain-selection-checkout-field}
 

@@ -4,7 +4,7 @@ title: アクション - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# Action: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
+# Action: wu_captcha_integrations_init
 
 すべての統合が初期化された後に発火します。
 

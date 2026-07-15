@@ -3,7 +3,7 @@ title: Ma'lum Noqulayliklar
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Boshqa Pluginlar bilan ma'lum noqulayliklar {#known-incompatibilities-with-other-plugins}
+# Boshqa Pluginlar bilan ma'lum noqulayliklar
 
 Ultimate Multisite ni o'rnatgan va faollashtirganingizdan so'ng, boshqa pluginlar bilan hal qilinmagan noqulayliklar tufayli muammolarga duch kelishingiz mumkin.
 

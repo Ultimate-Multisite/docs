@@ -3,7 +3,7 @@ title: Mercedem accipere
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Mercedem accipere (v2) {#getting-paid-v2}
+# Mercedem accipere (v2)
 
 _**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 

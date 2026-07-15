@@ -3,7 +3,7 @@ title: Index mutationum Consiliorum mensuratorum
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Mutationum Conspectus Pro Consiliis Mensuratis {#metered-plans-changelog}
+# Mutationum Conspectus Pro Consiliis Mensuratis
 
 Versio 1.1.0 - Edita die 2026-05-05
 - Novum: AI token computatio mercedis pro multisite subsites — indaga et factura usum AI token per situs emptorum cum rationibus per-token configurabilibus

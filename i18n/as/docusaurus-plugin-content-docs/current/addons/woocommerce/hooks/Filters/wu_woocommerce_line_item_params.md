@@ -4,7 +4,7 @@ title: ফিল্টাৰ - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 WooCommerce checkout লৈ কাস্টমৰক পুনৰ স্থানান্তৰ কৰাৰ আগতে, WooCommerce Cart ত line item সমূহ সৃষ্টি কৰিবলৈ ব্যৱহৃত parameters সমূহ ফিল্টাৰ কৰে।
 

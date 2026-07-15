@@ -3,7 +3,7 @@ title: අනුශාසන කේත නිර්මාණය කිරීම
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# වට්ටම් කේත නිර්මාණය කිරීම (v2) {#creating-discount-codes-v2}
+# වට්ටම් කේත නිර්මාණය කිරීම (v2)
 
 _**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite version 2.x සම්බන්ධ වේ.**_
 

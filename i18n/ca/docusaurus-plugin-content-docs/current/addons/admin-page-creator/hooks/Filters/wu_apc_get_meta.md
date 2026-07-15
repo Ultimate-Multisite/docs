@@ -4,7 +4,7 @@ title: Filtre - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filtrar: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Filtrar: wu_apc_get_meta
 
 Permet als desenvolupadors filtrar els valors finals i afegir nous casos de processament.
 

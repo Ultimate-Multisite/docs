@@ -4,7 +4,7 @@ title: Lim - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Tso cai rau cov plugin developers hloov seb post status twg yuav tsum raug suav. Los ntawm lub neej ntawd, cov posts uas published thiab private raug suav
 

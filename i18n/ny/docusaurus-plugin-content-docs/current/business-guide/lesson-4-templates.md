@@ -3,7 +3,7 @@ title: 'Phunziro 4: Kumanga Zitsanzo za Magawo Apadera'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Phunziro 4: Kumanga Ma Templates a Niche {#lesson-4-building-niche-templates}
+# Phunziro 4: Kumanga Ma Templates a Niche
 
 Ma templates ndi maziko a mtengo wa niche yanu. Mwini wa studio ya fitness amene amalembetsa n’kuona site yomwe ikuoneka kale ngati website ya fitness -- yokhala ndi ma ndandanda a makalasi, mbiri za aphunzitsi, ndi zithunzi zoyenera -- ali ndi mwayi waukulu wokhalabe kuposa amene aona malo opanda kanthu.
 

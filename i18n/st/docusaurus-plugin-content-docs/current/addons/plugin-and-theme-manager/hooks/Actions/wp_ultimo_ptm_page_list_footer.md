@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_ptm_page_list_footer
 sidebar_label: wp_ultimo_ptm_page_list_footer
 _i18n_hash: c8edc4bfa483f65f5e01a3f06b735f5d
 ---
-# Ketso: wp_ultimo_ptm_page_list_footer {#action-wpultimoptmpagelistfooter}
+# Ketso: wp_ultimo_ptm_page_list_footer
 
 Dumelela baqapi ba ditlatsetso ho eketsa mengolo botlaseng ba leqephe
 

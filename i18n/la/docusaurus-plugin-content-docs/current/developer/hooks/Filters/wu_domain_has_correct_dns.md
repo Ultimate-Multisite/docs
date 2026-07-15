@@ -4,7 +4,7 @@ title: Filtrum - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtrum: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filtrum: wu_domain_has_correct_dns
 
 Permitte programmatoribus additamentorum novas verificationes addere, ut eventus definiant.
 

@@ -3,7 +3,7 @@ title: Meðhöndlun vefkróka
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Meðhöndlun vefkróka {#webhook-handling}
+# Meðhöndlun vefkróka
 
 Búðu til sérsniðna endapunkta fyrir vefkróka til að taka á móti atburðum frá ytri þjónustum og samstilla gögn við Ultimate Multisite.
 

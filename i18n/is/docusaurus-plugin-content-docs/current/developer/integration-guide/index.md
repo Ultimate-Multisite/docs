@@ -3,7 +3,7 @@ title: Samþættingarleiðbeiningar
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Samþættingarleiðbeiningar {#integration-guide}
+# Samþættingarleiðbeiningar
 
 Þessar leiðbeiningar fjalla um algeng samþættingarmynstur með Ultimate Multisite, þar á meðal tengingu við ytri þjónustur, smíði sérsniðinna greiðslugátta og meðhöndlun vefkróka.
 

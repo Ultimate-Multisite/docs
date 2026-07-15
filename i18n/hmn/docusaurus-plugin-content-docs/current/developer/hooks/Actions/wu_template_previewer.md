@@ -4,7 +4,7 @@ title: Kev nqis tes - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Kev ua: wu_template_previewer {#action-wutemplatepreviewer}
+# Kev ua: wu_template_previewer
 
 Khiav thaum nyob hauv template previewer context.
 

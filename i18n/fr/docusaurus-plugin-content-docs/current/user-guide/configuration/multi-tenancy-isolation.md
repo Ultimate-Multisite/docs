@@ -3,7 +3,7 @@ title: Isolation multi-locataire
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolation Multi-Tenancy {#multi-tenancy-isolation}
+# Isolation Multi-Tenancy
 
 Ultimate Multisite : Multi-Tenancy 1.2.0 prend en charge l'isolation de base de données et du système de fichiers par sous-site pour les locataires souverains. Cela permet de garder les données des locataires séparées tout en conservant le provisionnement au niveau du réseau, la facturation et l'administration.
 

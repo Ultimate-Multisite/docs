@@ -4,7 +4,7 @@ title: Filtras - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtras: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtras: wu_view_override_replaceable_views
 
 Leidžia kūrėjams pridėti papildomų aplankų prie pakeičiamųjų sąrašo.
 

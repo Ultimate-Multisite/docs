@@ -3,7 +3,7 @@ title: Ymddygiad WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Ymddianolion â WP Engine {#wp-engine-integration}
+# Ymddianolion â WP Engine
 
 ## Oglwyddictod {#overview}
 WP Engine yw ffurf gweithredol (managed) WordPress priwog sy'n rhoi perfformiad optimus, diogelwch a chydderau (scalability) ar gyfer safonau WordPress. Mae’r y cyfathrebu hwn yn sylwio'r synchiad domenaid yn awtrol rhwng Ultimate Multisite a WP Engine.

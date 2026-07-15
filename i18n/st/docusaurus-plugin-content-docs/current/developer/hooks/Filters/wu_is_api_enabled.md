@@ -4,7 +4,7 @@ title: Sefe - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Sefe: wu_is_api_enabled {#filter-wuisapienabled}
+# Sefe: wu_is_api_enabled
 
 Lumella baetsi ba plugin ho qobella boemo bo itseng bakeng sa API.
 

@@ -3,7 +3,7 @@ title: コミュニティ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community への参加方法 {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Community への参加方法
 
 Ultimate Multisite Community は、他の Ultimate Multisite ユーザーとつながり、ヒントや経験などを共有できる場所です。Ultimate Multisite Community にアクセスするには、https://community.ultimatemultisite.com/home に移動してください。
 

@@ -3,7 +3,7 @@ title: 'Isifundo 8: Ukungeniswa kwamakhasimende'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Isifundo 8: Ukwamukela Amakhasimende {#lesson-8-customer-onboarding}
+# Isifundo 8: Ukwamukela Amakhasimende
 
 Ukwenza ikhasimende libhalise kuyingxenye yomsebenzi kuphela. Uma lingena, lizizwe likhungathekile, bese lingabuyi, usulilahlekile. Lesi sifundo sakha umuzwa oguqula obhalise okusha abe ikhasimende elisebenzayo nelizibandakanyayo.
 

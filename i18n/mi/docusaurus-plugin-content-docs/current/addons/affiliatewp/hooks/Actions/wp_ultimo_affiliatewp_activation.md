@@ -4,7 +4,7 @@ title: Tūmahi - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Hohenga: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Hohenga: wp_ultimo_affiliatewp_activation
 
 Tukua ētahi atu wāhanga o te monomai kia tāpiri i ā rātou tukanga mō te whakahohe
 

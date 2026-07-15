@@ -3,7 +3,7 @@ title: Hostinger többszintes szerverrendszer
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 beilleszt egy Hostinger multi-tenancy képességet, amely lehetővé teszi a tárhelyelt domainok számára, hogy az elszigetelt tenent biztosítás mellett részt vehessenek a meglévő Hostinger domain-mapping integrációval együtt.
 

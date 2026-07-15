@@ -3,7 +3,7 @@ title: Paunawa sa Pag-alis ng Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Paunawa Tungkol sa Pag-alis ng Site Builder Mode {#site-builder-mode-removal-notice}
+# Paunawa Tungkol sa Pag-alis ng Site Builder Mode
 
 **Inalis na ang Site Builder mode sa Superdav AI Agent v1.12.0.** Kung gumagamit ka pa ng Site Builder mode, dapat kang lumipat na sa **Setup Assistant agent** para sa paggawa ng theme at pag-set up ng site.
 

@@ -3,7 +3,7 @@ title: সদস্যপদৰ সমাপ্তি আৰু স্থান 
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Membership Expiration আৰু Site Blocking {#membership-expiration-and-site-blocking}
+# Membership Expiration আৰু Site Blocking
 
 এই গাইডটোৱে ব্যাখ্যা কৰে যে Ultimate Multisite কেনেকৈ মেম্বৰশ্বিপৰ মেয়াদ শেষ হোৱা (expiration), ট্রায়েল শেষ হোৱা, আৰু ফ্ৰণ্টএণ্ডত সাইট ব্লক কৰে। ই এটা মেম্বৰশ্বিপৰ সক্ৰিয়ৰ পৰা মেয়াদোত্তৰ হোৱা জীৱনচক্ৰক কওঁ, কোনবোৰ সেটিংছৰ দ্বাৰা সাইট ব্লক কৰা হয়, আৰু মেম্বৰশ্বিপ মেয়াদোত্তৰ হোৱাৰ পিছতো সাইট কেনেকৈ উপলব্ধ থাকিব পাৰে, সেই বিষয়ে আলোচনা কৰে।
 

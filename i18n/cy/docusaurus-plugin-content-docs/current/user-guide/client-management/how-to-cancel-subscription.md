@@ -3,7 +3,7 @@ title: Sutaliad yr adael cyflwyno
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Sut yn ddeall i ddelio'r eich cyflwyniad? {#how-can-i-cancel-my-subscription}
+# Sut yn ddeall i ddelio'r eich cyflwyniad?
 
 Os oes gennych chi liseniaid Ultimate Multisite, gallwch ddelio ei adnewidiad mewn amser y byddwch yn eisiau. Rhowch yn ôl y cynllunau isod:
 

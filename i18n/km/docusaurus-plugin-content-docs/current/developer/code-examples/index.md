@@ -3,7 +3,7 @@ title: ឧទាហរណ៍កូដកម្រិតខ្ពស់
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ឧទាហរណ៍កូដកម្រិតខ្ពស់ {#advanced-code-examples}
+# ឧទាហរណ៍កូដកម្រិតខ្ពស់
 
 ឧទាហរណ៍ទាំងនេះបង្ហាញពីលំនាំសមាហរណកម្មកម្រិតខ្ពស់ជាមួយ Ultimate Multisite។
 

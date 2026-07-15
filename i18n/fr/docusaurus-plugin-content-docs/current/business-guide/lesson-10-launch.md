@@ -3,7 +3,7 @@ title: 'Leçon 10 : Jour du lancement'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leçon 10 : Jour du lancement {#lesson-10-launch-day}
+# Leçon 10 : Jour du lancement
 
 Tout est construit. Avant d'ouvrir les portes, cette leçon vous guide à travers la liste de contrôle de pré-lancement pour vous assurer que rien n'est cassé, manquant ou embarrassant.
 

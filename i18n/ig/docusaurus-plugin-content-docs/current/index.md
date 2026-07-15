@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Akwụkwọ nduzi Ultimate Multisite {#ultimate-multisite-documentation}
+# Akwụkwọ nduzi Ultimate Multisite
 
 Nnọọ na akwụkwọ nduzi Ultimate Multisite. Ultimate Multisite na-agbanwe WordPress Multisite ka ọ bụrụ ikpo okwu Weebụsaịtị dị ka Ọrụ (WaaS) zuru oke.
 

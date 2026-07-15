@@ -4,7 +4,7 @@ title: Szűrő - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Szűrő: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Szűrő: mu_migration/export/user/data
 
 Szűrőzi az alapértelmezett felhasználói adatok küldeményét, amelyet exportálnak vagy importálnak.
 

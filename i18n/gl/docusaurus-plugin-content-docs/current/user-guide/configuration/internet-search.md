@@ -3,7 +3,7 @@ title: Búsqueda na Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Busca na Internet {#internet-search}
+# Busca na Internet
 
 O Gratis AI Agent v1.5.0 adiciona a capacidade de **Busca na Internet**, que permite ao assistente de IA obter informação atual da web durante uma conversa. Isto é impulsionado pela [Brave Search API](https://brave.com/search/api/) ou pela [Tavily API](https://tavily.com/).
 

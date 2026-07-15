@@ -3,7 +3,7 @@ title: Għodod u Konfigurazzjoni
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Għodod u Konfigurazzjoni {#tools-and-configuration}
+# Għodod u Konfigurazzjoni
 
 Theme Builder juża sett ta' għodod biex janalizza, jiddisinja, u jibni s-sit WordPress tiegħek. Fil-verżjoni 1.16.0, **sd-ai-agent/site-scrape issa huwa għodda Tier 1**, u b'hekk ikun disponibbli awtomatikament f'Theme Builder. Superdav AI Agent v1.18.0 jintroduċi wkoll pakkett Advanced anċillari distribwit separatament għal flussi tax-xogħol ta' żviluppaturi fdati; dawk l-għodod mhumiex parti mill-pakkett ewlieni ta' WordPress.org u jridu jiġu installati u awtorizzati separatament.
 

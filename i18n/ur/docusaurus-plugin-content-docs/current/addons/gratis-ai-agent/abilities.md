@@ -3,7 +3,7 @@ title: صلاحیتوں کا حوالہ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# صلاحیتوں کا حوالہ {#abilities-reference}
+# صلاحیتوں کا حوالہ
 
 صلاحیتیں وہ بنیادی اعمال ہیں جنہیں Gratis AI Agent آپ کی WordPress تنصیب پر چلا سکتا ہے۔ ہر صلاحیت ایک رجسٹرڈ PHP class ہے جو ایک JSON schema ظاہر کرتی ہے — agent رن ٹائم پر اس schema کو پڑھتا ہے تاکہ سمجھ سکے کہ کون سے parameters درکار ہیں اور صلاحیت کیا واپس کرتی ہے۔
 

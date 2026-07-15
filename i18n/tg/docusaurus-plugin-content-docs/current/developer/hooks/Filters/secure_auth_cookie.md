@@ -4,7 +4,7 @@ title: Филтр - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Филтр: secure_auth_cookie {#filter-secureauthcookie}
+# Филтр: secure_auth_cookie
 
 Филтр мекунад, ки оё auth cookie бояд танҳо тавассути HTTPS фиристода шавад.
 

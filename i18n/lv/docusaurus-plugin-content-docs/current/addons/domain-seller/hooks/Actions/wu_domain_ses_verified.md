@@ -4,7 +4,7 @@ title: Darbība - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Darbība: wu_domain_ses_verified {#action-wudomainsesverified}
+# Darbība: wu_domain_ses_verified
 
 Tiek izsaukta, kad SES apstiprina, ka domēns ir DKIM-verificēts.
 

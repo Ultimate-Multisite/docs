@@ -4,7 +4,7 @@ title: عامل تصفية - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# المرشح: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# المرشح: wu_checkout_form_base_domains
 
 يرشح نطاقات الأساس المشتركة لنموذج الدفع التي يجب ألا تصبح سجلات نطاقات معيّنة.
 

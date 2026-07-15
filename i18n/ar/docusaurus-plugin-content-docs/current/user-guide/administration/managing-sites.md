@@ -3,7 +3,7 @@ title: إدارة المواقع
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# إدارة المواقع {#managing-sites}
+# إدارة المواقع
 
 المواقع (أو المواقع الفرعية) هي جوهر عملك في WaaS. Ultimate Multisite لديها 3 أنواع من المواقع:
 

@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 Stripe સબ્સ્ક્રિપ્શન ડેટા ફિલ્ટર કરો. આ ફિલ્ટરનો ઉપયોગ કરીને તમે `success_url` અથવા `cancel_url` ને ઓવરરાઇડ કરી શકો છો.
 

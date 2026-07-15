@@ -4,7 +4,7 @@ title: فلټر - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# فلټر: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# فلټر: wu_sites_column_limit
 
 د شبکې دننه د get pluginssites لپاره د ارزښت بدلولو فلټر.
 

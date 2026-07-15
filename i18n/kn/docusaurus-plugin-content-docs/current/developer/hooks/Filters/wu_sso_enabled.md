@@ -4,7 +4,7 @@ title: Filter - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# ಫಿಲ್ಟರ್: wu_sso_enabled {#filter-wussoenabled}
+# ಫಿಲ್ಟರ್: wu_sso_enabled
 
 ಕ್ರೋಸ್-ಡೊಮೈನ್ ಸಿಂಗಲ್-ಸೈನ್-ಆನ್ (single-sign-on) ಸಾಮರ್ಥ್ಯವನ್ನು ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಲು ಇದನ್ನು ಬಳಸಲಾಗುತ್ತದೆ.
 

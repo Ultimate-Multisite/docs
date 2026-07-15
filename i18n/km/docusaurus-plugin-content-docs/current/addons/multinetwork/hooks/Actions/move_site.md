@@ -4,7 +4,7 @@ title: សកម្មភាព - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# សកម្មភាព: move_site {#action-movesite}
+# សកម្មភាព: move_site
 
 ដំណើរការបន្ទាប់ពី site ត្រូវបានផ្លាស់ទីទៅ network ថ្មី។
 

@@ -4,7 +4,7 @@ title: వడపోత - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 డెవలపర్‌లు డిఫాల్ట్ అవుట్‌పుట్‌ను బైపాస్ చేసి, తమకు కావాల్సిన కొత్త అవుట్‌పుట్‌ను సెట్ చేసుకోవడానికి ఇది అనుమతిస్తుంది.
 

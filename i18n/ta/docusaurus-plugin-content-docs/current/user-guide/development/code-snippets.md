@@ -3,7 +3,7 @@ title: கோட் ஸ்னிப்பெட்ஸ்
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2-க்கான Code Snippets {#code-snippets-for-v2}
+# v2-க்கான Code Snippets
 
 அடிப்படையில், **WordPress**-க்கான code snippets என்பது சிறிய தனி plugin தேவைப்படும் சில செயல்களைச் செய்ய பயன்படுகின்றன. இத்தகைய code snippets WordPress core அல்லது theme files-ல் (பொதுவாக உங்கள் theme-ன் functions.php file-ல்) வைக்கப்படுகின்றன அல்லது MU plugin-ஆகப் பயன்படுத்தலாம்.
 

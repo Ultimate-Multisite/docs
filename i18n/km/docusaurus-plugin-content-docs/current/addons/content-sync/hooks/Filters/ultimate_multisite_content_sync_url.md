@@ -4,7 +4,7 @@ title: តម្រង - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# តម្រង៖ ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
+# តម្រង៖ ultimate_multisite_content_sync_url
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍គ្រប់គ្រងផ្លូវទាក់ទងទៅកាន់ឫស plugin។
 

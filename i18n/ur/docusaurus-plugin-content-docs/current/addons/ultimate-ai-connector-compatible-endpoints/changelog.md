@@ -3,7 +3,7 @@ title: Ultimate AI Connector for Compatible Endpoints کا Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints کی تبدیلیوں کی فہرست (Changelog) {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector for Compatible Endpoints کی تبدیلیوں کی فہرست (Changelog)
 
 ## ورژن 2.0.0 — جاری کیا گیا: 2026-04-24 {#version-200--released-on-2026-04-24}
 

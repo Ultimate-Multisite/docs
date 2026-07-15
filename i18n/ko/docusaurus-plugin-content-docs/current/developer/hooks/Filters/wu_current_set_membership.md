@@ -4,7 +4,7 @@ title: 필터 - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# 필터: wu_current_set_membership {#filter-wucurrentsetmembership}
+# 필터: wu_current_set_membership
 
 개발자가 기본 동작을 수정하고 현재 멤버십을 다르게 설정할 수 있도록 허용합니다.
 

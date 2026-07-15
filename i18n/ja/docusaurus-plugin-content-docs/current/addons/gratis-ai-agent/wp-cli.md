@@ -3,7 +3,7 @@ title: WP-CLIリファレンス
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI リファレンス {#wp-cli-reference}
+# WP-CLI リファレンス
 
 Gratis AI Agent は、`wp gratis-ai-agent` コマンドファミリーを提供します。これを使用すると、コマンドラインからエージェントのベンチマーク実行、アビリティの管理、およびエージェントステータスの照会ができます。すべてのコマンドは WP-CLI 2.0 以降が必要です。
 

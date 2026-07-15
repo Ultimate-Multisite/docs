@@ -4,7 +4,7 @@ title: Saringan - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Saringan: send_auth_cookies {#filter-sendauthcookies}
+# Saringan: send_auth_cookies
 
 Ngidinan nyegah auth cookies sabenerna dikirim ka klien.
 

@@ -4,7 +4,7 @@ title: عمل - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# عمل: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# عمل: wu_mt_providers_registered
 
 وروسته له دې اجرا کېږي چې تلواله برابرونکي ثبت شي.
 

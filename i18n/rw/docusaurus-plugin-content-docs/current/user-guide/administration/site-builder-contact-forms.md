@@ -3,7 +3,7 @@ title: Urugero rw'Ubwumvikane bw'Uburyo bwo Gutegura Ubutaka
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Amakuru ya Formu za Kurwiza (Contact Forms) {#site-builder-contact-forms}
+# Amakuru ya Formu za Kurwiza (Contact Forms)
 
 Superdav AI Agent v1.10.0 yagira uburyo bwo gukora formu za kurwiza (contact forms) mu gihe cy'amaseke n'ubwujiza bw'umugambi w'ubwoko (Site Builder agent) mu chat interface. Ibi byagukora ubushobozi bwo gukoresha formu zikoreshwa neza ku rugero rwa page yose nta guhagarira mu chat.
 

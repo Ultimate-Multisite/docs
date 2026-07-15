@@ -4,7 +4,7 @@ title: Filtr - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# Filtr: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Filtr: wp_ultimo_skip_network_active_check
 
 Dasturchilarga ushbu tekshiruvni qisqa yo‘l bilan chetlab o‘tishga ruxsat beradi.
 

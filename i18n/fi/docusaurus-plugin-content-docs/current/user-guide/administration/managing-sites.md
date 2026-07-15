@@ -3,7 +3,7 @@ title: Sivujen hallinta
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Sivustojen hallinta {#managing-sites}
+# Sivustojen hallinta
 
 Sivut (tai alalohkot) ovat ydinliiketoimintasi WaaS-yrityksessä. Ultimate Multisiteessa on kolme sivun tyyppiä:
 

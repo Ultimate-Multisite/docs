@@ -4,7 +4,7 @@ title: Acción - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Acción: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Acción: wu_mt_user_password_changed
 
 Acción disparada cuando se cambia la contraseña de un usuario.
 

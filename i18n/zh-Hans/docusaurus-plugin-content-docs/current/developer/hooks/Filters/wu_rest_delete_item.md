@@ -4,7 +4,7 @@ title: 过滤器 - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# 过滤器：wu_rest_delete_item {#filter-wurestdeleteitem}
+# 过滤器：wu_rest_delete_item
 
 过滤器用于判断是否允许继续请求。
 

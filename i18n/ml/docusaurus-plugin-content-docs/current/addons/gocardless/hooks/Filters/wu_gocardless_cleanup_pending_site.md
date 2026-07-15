@@ -4,7 +4,7 @@ title: Filter - wu_gococardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filter: wu_gococardless_cleanup_pending_site
 
 റദ്ദാക്കിയ GoCardless അംഗത്വത്തിനായി ബാക്കിയായ (orphaned) ഒരു pending site ഡിലീറ്റ് ചെയ്യുന്നതിന് മുമ്പ് ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

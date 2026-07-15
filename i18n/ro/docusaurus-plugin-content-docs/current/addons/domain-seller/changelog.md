@@ -3,7 +3,7 @@ title: Jurnal de modificări Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Jurnal de modificări Domain Seller {#domain-seller-changelog}
+# Jurnal de modificări Domain Seller
 
 Versiunea 1.3.0 - Lansată pe 2026-06-02
 - Nou: A fost adăugat un avertisment în network-admin când soldul reseller HostAfrica devine prea scăzut

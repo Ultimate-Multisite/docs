@@ -4,7 +4,7 @@ title: פילטר - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# מסנן: send_auth_cookies {#filter-sendauthcookies}
+# מסנן: send_auth_cookies
 
 מאפשר למנוע משקישי ה-auth להישלח בפועל ללקוח.
 

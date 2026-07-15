@@ -4,7 +4,7 @@ title: Filtre - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Filtre: wu_pre_save_settings {#filter-wupresavesettings}
+# Filtre: wu_pre_save_settings
 
 Autoriser les développeurs à filtrer les paramètres avant la sauvegarde par Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: ኤክስፖርት እና ኢምፖርት
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ኤክስፖርት እና ማስገባት (Export & Import) {#export--import}
+# ኤክስፖርት እና ማስገባት (Export & Import)
 
 Ultimate Multisite 2.9.0 በ **Tools > Export & Import** ስር አንድ የሳይት **ኤክስፖርት እና ማስገባት** መሳሪያ ይጨምራል። አንድ የWordPress siteን እንደ ZIP ፋይል ማዘጋጀት፣ ያንን ZIP መልሶ ማስቀመጥ፣ ወይም አንድ site በተጣጣሙ Ultimate Multisite እና single-site WordPress installation መካከል ማንቀሳቀስ በሚፈልጉበት ጊዜ ይጠቀሙበታል።
 

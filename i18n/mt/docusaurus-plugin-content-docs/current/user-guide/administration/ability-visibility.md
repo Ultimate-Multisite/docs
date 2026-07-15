@@ -3,7 +3,7 @@ title: Aħjar Il-vista
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Xevizzja Vista Attività (Ability Visibility) {#ability-visibility}
+# Xevizzja Vista Attività (Ability Visibility)
 
 Superdav AI Agent v1.12.0 jiddu **Xevizzja Vista Attività** li controlli li governano quali superfici espongono ogni attivitá. Dan hu llumizzaw l-administrator li pu tajjimu ben għall-qiegħed li quali capacità tal-agent huma disponibbli permezz ta REST APIs, MCP servers, WooCommerce integrations, u fejn ikunu.
 

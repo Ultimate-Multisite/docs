@@ -4,7 +4,7 @@ title: Filtè - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filtè: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Filtè: wu_sites_column_limit
 
 Filtè pou chanje valè pou get pluginssites andedan rezo a.
 

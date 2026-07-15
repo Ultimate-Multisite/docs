@@ -4,7 +4,7 @@ title: Sía - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Sía: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Sía: wu_woocommerce_line_item_params
 
 Síar færibreyturnar sem eru notaðar til að búa til línuliðina í WooCommerce-körfunni áður en viðskiptavininum er beint áfram í WooCommerce checkout.
 

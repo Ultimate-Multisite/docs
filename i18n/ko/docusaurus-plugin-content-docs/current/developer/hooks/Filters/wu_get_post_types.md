@@ -4,7 +4,7 @@ title: 필터 - wu_get_post_types
 sidebar_label: wu_get_post_types
 _i18n_hash: 7e9a849e187bc1b15e63e024b42d7593
 ---
-# Filter: wu_get_post_types {#filter-wugetposttypes}
+# Filter: wu_get_post_types
 
 개발자가 표시할 포스트 유형을 선택하도록 허용합니다.
 

@@ -3,7 +3,7 @@ title: 'Lição 13: Aumentar a escala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lição 13: Escalar {#lesson-13-scaling-up}
+# Lição 13: Escalar
 
 Tem uma plataforma funcional com clientes pagantes. Esta lição aborda como crescer de uma pequena operação para um negócio sustentável -- escalando a infraestrutura, automatizando operações e aumentando a receita por cliente.
 

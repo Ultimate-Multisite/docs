@@ -3,7 +3,7 @@ title: 커스텀 레지스트라 통합 구축하기
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# 사용자 지정 레지스트라 통합 구축하기 {#building-a-custom-registrar-integration}
+# 사용자 지정 레지스트라 통합 구축하기
 
 Domain Seller 애드온은 **통합 레지스트리(Integration Registry)** 패턴을 사용합니다. 각 레지스트라는 `Domain_Selling_Capability`를 구현하는 PHP 클래스이며, `wu_domain_seller_register_capabilities` 액션 훅을 통해 자신을 등록합니다.
 

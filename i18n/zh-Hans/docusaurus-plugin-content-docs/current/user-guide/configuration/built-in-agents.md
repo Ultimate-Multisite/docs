@@ -3,7 +3,7 @@ title: 内置智能体
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# 内置 Agents {#built-in-agents}
+# 内置 Agents
 
 Gratis AI Agent v1.9.0 随附五个内置 agents，每个都预先配置了一组聚焦的工具、定制的系统提示，以及与该领域常见任务匹配的入门建议。在 agents 之间切换会改变助手能做什么以及如何响应——你无需进行任何配置。当相关集成已配置时，Superdav AI Agent v1.18.0 可以为这些工作流添加具备日程感知能力的工具、提醒记录、审批关卡和 SMS 通知。
 

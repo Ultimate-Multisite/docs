@@ -3,7 +3,7 @@ title: Gelişmiş Kod Örnekleri
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Gelişmiş Kod Örnekleri {#advanced-code-examples}
+# Gelişmiş Kod Örnekleri
 
 Bu örnekler, Ultimate Multisite ile gelişmiş entegrasyon kalıplarını göstermektedir.
 

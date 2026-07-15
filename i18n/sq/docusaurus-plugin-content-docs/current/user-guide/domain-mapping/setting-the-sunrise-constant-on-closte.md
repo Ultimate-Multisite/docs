@@ -3,7 +3,7 @@ title: Përcaktimi i konstanteve të Zori në Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Vendosja konstanteve Sunrise në të vërtetë (true) në Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Vendosja konstanteve Sunrise në të vërtetë (true) në Closte
 
 Disa of i host provider bllokojnë `wp-config.php` për arsye sigurie. Kjo do të thotë se Ultimate Multisite nuk mund ta modifikojë automatikisht këtë skedar për të përfshirë konstante të nevojshme që të funksionojnë mapi i domenit dhe tjera veçori. Closte është një nga këto host-e.
 

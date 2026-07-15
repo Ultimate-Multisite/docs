@@ -4,7 +4,7 @@ title: Omume - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Omume: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Omume: wu_domain_renewal_completed
 
 Na-eme mgbe emegharịrị domain nke ọma.
 

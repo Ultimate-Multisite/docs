@@ -3,7 +3,7 @@ title: සයිට් සැකිලි
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# වෙබ් අඩවි සැකිලි (v2) {#site-templates-v2}
+# වෙබ් අඩවි සැකිලි (v2)
 
 _**සටහන: මෙම ලිපිය Ultimate Multisite version 2.x ගැන සඳහන් කරයි. ඔබ version 1.x භාවිතා කරන්නේ නම්,**_ **මෙම ලිපිය බලන්න.**_**.**_
 

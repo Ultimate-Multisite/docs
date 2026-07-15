@@ -3,7 +3,7 @@ title: 'Lecția 14: Ce urmează'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lecția 14: Ce urmează {#lesson-14-what-comes-next}
+# Lecția 14: Ce urmează
 
 Ai construit o platformă de site de nișă de la zero. FitSite este activă, oferind servicii studiilor de fitness și generând venituri recurente. Această lecție finală examinează pașii pe care trebuie să îi urmezi.
 

@@ -4,7 +4,7 @@ title: Action - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Action: wu_magic_link_login {#action-wumagiclinklogin}
+# Action: wu_magic_link_login
 
 ಯೂಸರ್ ಮ್ಯಾಜಿಕ್ ಲಿಂಕ್ ಮೂಲಕ ಲಾಗ್ ಇನ್ ಆದ ನಂತರ ಈ ಆಕ್ಷನ್ ಕಾರ್ಯಗತಗೊಳ್ಳುತ್ತದೆ.
 

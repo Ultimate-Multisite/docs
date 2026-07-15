@@ -3,7 +3,7 @@ title: Itimu ye-PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Ukwenza iphaneli yakho yokuphatha ibe ngokwezifiso nge-PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Ukwenza iphaneli yakho yokuphatha ibe ngokwezifiso nge-PRO Theme
 
 Ngokuvamile lapho senza umsebenzi wamakhasimende siba nesidingo sokunikeza amakhasimende ethu ulwazi olwenziwe ngokwezifiso ku-Dashboard yokuphatha ye-WordPress. Uma ufuna ukubukeka nokuzwakala kobuchwepheshe obengeziwe, i-PRO Theme ingakusiza.
 

@@ -3,7 +3,7 @@ title: Místeachadh mode a tha sealltainn
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrasadh Modhailtean Tàrdhaichean {#third-party-mode-migration}
+# Migrasadh Modhailtean Tàrdhaichean
 
 Superdav AI Agent v1.12.0 a' chlàradh an t-saoghal air faic a tha thuiteann àrdhaichean (third-party abilities). **Tha modhailtean tàrdhaichean a' chlàradh gu "auto" (auto) a' chlàradh, a' leugh a' chlàradh WordPress Abilities API gu fìor air WordPress 7.0+ gu fìor an t-saoghal.**
 

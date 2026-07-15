@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# کردار: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# کردار: wp_ultimo_gocardless_activation
 
 با بەشەکانی تری plugin ڕێگە بدە ڕووتینەکانیان بۆ چالاککردن پێوەبکەن
 

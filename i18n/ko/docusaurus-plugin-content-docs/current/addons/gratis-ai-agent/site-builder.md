@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0에서 도입됨)는 다단계 웹사이트 생성을 구동하는 엔진입니다. 에이전트에게 "레스토랑 웹사이트를 만들어라" 또는 "블로그가 있는 포트폴리오를 만들어라"와 같이 요청하면, 오케스트레이터는 이 높은 수준의 목표를 구조화된 **계획(plan)**으로 분해하고, 이를 수행하는 데 필요한 플러그인을 찾아내며, 각 단계를 순차적으로 실행하고, 진행 상황을 추적하며, 오류 발생 시 자율적으로 복구합니다.
 

@@ -3,7 +3,7 @@ title: Notendastöðun á þróunarferli
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Notendur að þróunarleiðbeiningum {#developer-documentation}
+# Notendur að þróunarleiðbeiningum
 
 Þessi leiðbeiningin gefur þróunarmenjum allt sem þeir þurfa til að tengja sér við, nýta eða byggja við addon fyrir Ultimate Multisite. Ultimate Multisite breytur WordPress Multisite net í WaaS (Website-as-a-Service) plattforma.
 

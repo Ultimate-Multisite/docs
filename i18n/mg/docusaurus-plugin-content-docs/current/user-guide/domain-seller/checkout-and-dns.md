@@ -3,7 +3,7 @@ title: Fampidirana Checkout sy DNS an'ny Mpanjifa
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Fomba Fandraisana Checkout sy Fitantanana DNS ho an'ny Mpanjifa {#checkout-field-and-customer-dns-management}
+# Fomba Fandraisana Checkout sy Fitantanana DNS ho an'ny Mpanjifa
 
 ## Ny champ Domain Selection {#the-domain-selection-checkout-field}
 

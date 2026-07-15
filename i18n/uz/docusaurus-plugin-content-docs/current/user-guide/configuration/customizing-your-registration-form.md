@@ -3,7 +3,7 @@ title: Ro‘yxatdan o‘tish formangizni moslashtirish
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ro‘yxatdan o‘tish formingizni moslashtirish {#customizing-your-registration-form}
+# Ro‘yxatdan o‘tish formingizni moslashtirish
 
 WordPress platformasida qurilgan boshqa barcha SaaS'lardan tarmog‘ingiz o‘ziga xos ko‘rinishi uchun Ultimate Multisite ro‘yxatdan o‘tish va login sahifalaringizni **Checkout Forms** xususiyatimiz orqali moslashtirish imkonini beradi.
 

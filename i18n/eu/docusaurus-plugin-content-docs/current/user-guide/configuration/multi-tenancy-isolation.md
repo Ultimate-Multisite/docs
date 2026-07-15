@@ -3,7 +3,7 @@ title: Multitenancy izolazioa
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolation {#multi-tenancy-isolation}
+# Multi-Tenancy Isolation
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suporta izolazio per baza datumeania eta sistemak (database and filesystem isolation) subsite-ei artean, denbora edo erabilera nagusi batzuk (sovereign tenants) irudien bitarte. Horrek tenant datuak eskaintzen duela, baina sistema-nivelaren provisionamendua, fakturazioa eta administrazioa ontzen duela.
 

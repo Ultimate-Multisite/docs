@@ -3,7 +3,7 @@ title: 'Chidzidzo 14: Chii Chinotevera'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Chidzidzo 14: Chii Chinotevera {#lesson-14-what-comes-next}
+# Chidzidzo 14: Chii Chinotevera
 
 Wakavaka puratifomu yewebhusaiti yeniche kubva pakutanga. FitSite yava kushanda, ichishandira mastudio ekusimbisa muviri, uye ichigadzira mari inodzokororwa. Chidzidzo chekupedzisira ichi chinotarisa kwaungaenda kubva pano.
 

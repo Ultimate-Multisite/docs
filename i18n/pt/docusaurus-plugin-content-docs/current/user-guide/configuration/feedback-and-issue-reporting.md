@@ -3,7 +3,7 @@ title: Feedback do Cliente e Relatório de Problemas
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback e Relatório de Problemas do Cliente {#customer-feedback--issue-reporting}
+# Feedback e Relatório de Problemas do Cliente
 
 O Gratis AI Agent v1.5.0 introduz um sistema embutido de feedback e relatórios de problemas que permite aos usuários finais sinalizar respostas inúteis e reportar problemas diretamente da interface de chat. Este sistema inclui gerenciamento de consentimento, um comando de relatório automatizado e triagem assistida por IA no backend.
 

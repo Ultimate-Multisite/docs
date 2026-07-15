@@ -3,7 +3,7 @@ title: Asiantau adeiledig
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Asiantau mewnol {#built-in-agents}
+# Asiantau mewnol
 
 Mae Gratis AI Agent v1.9.0 yn cynnwys pum asiant mewnol, pob un wedi’i rag-ffurfweddu â set benodol o offer, prompt system wedi’i deilwra, ac awgrymiadau cychwynnol sy’n cyfateb i dasgau cyffredin yn yr ardal honno. Mae newid rhwng asiantau yn newid beth gall y cynorthwyydd ei wneud a sut mae’n ymateb — heb unrhyw ffurfweddu ar eich rhan chi. Gall Superdav AI Agent v1.18.0 ychwanegu offer sy’n ymwybodol o amserlenni, cofnodion atgoffa, gatiau cymeradwyo, a hysbysiadau SMS at y llifoedd gwaith hyn pan fydd yr integreiddiadau cysylltiedig wedi’u ffurfweddu.
 

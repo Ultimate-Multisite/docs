@@ -3,7 +3,7 @@ title: Nhungamiro yeDhizaini
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Gwaro reDhizaini {#design-direction}
+# Gwaro reDhizaini
 
 Danho re**Gwaro reDhizaini** rinokubvumira kuongorora, kunatsa, uye kupedzisa dhizaini inoonekwa yetheme yako Theme Builder isati yagadzira theme yakazara.
 

@@ -4,7 +4,7 @@ title: Sefa - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Sefa: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Sefa: wu_membership_update_forms
 
 Bvumira vagadziri kuwedzera ma update form slugs matsva.
 

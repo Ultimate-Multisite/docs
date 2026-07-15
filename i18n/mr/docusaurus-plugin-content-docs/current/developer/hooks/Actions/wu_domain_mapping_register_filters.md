@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 काही प्लगइन्स (plugins) मॅपिंग सक्रिय होण्यापूर्वीचे URL सेव्ह करतात किंवा URL वेगळ्या पद्धतीने तयार करतात, जे वरील फिल्टर्समध्ये समाविष्ट नाही.
 

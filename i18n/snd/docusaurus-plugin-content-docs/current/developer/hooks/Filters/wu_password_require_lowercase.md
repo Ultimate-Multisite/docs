@@ -4,7 +4,7 @@ title: فلٽر - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# فلٽر: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# فلٽر: wu_password_require_lowercase
 
 فلٽر ڪري ٿو ته پاسورڊز ۾ ننڍا اکر لازمي ڪرڻا آهن يا نه.
 

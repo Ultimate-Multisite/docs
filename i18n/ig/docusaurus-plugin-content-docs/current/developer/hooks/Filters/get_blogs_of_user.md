@@ -4,7 +4,7 @@ title: Nzacha - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Nzacha: get_blogs_of_user {#filter-getblogsofuser}
+# Nzacha: get_blogs_of_user
 
 Na-emegharị WP Filter mbụ ebe a, iji mee ka ihe zuo oke.
 

@@ -3,7 +3,7 @@ title: Kukonza kwa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kukhaza Ultimate Multisite ndi Zapier {#integrating-ultimate-multisite-with-zapier}
+# Kukhaza Ultimate Multisite ndi Zapier
 
 M'moyo mwa maulendo, tulizama za [Webhooks](webhooks.md) ndipo tikufunsa kuti zikwanira kutumikidwa kudzera kwa applications zingine.
 

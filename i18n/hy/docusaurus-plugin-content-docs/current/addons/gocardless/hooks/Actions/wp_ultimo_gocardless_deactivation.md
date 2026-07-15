@@ -4,7 +4,7 @@ title: Գործողություն - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Գործողություն՝ wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Գործողություն՝ wp_ultimo_gocardless_deactivation
 
 Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց ընթացակարգերը ապաակտիվացման համար
 

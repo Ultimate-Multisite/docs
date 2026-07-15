@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# សកម្មភាព៖ wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# សកម្មភាព៖ wp_ultimo_support_agents_deactivation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងៗនៃ plugin ភ្ជាប់លំដាប់ការងាររបស់ពួកគេសម្រាប់ការបិទដំណើរការ
 

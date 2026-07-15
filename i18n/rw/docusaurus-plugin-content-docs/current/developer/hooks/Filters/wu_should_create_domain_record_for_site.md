@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Akayunguruzo: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Akayunguruzo: wu_should_create_domain_record_for_site
 
 Kayungurura niba Ultimate Multisite igomba gukora inyandiko ya domain ku rubuga rushya rwakozwe.
 

@@ -3,7 +3,7 @@ title: Planų pasiklaida
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plana atnaujinimas (v2) {#downgrading-a-plan-v2}
+# Plana atnaujinimas (v2)
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 

@@ -3,7 +3,7 @@ title: Umělobyté do témy
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Funkce závislé na tématu {#theme-aware-skills}
+# Funkce závislé na tématu
 
 Superdav AI Agent v1.10.0 obsahuje čtyři nové funkce závislé na tématu, které se automaticky přizpůsobí vašemu aktivnímu tématu WordPress. Tyto funkce poskytují specializované pokyny a možnosti, které jsou navrženy s ohledem na architekturu a funkce vašeho tématu.
 

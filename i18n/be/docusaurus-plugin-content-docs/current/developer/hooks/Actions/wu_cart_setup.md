@@ -4,7 +4,7 @@ title: Дзея - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Дзея: wu_cart_setup {#action-wucartsetup}
+# Дзея: wu_cart_setup
 
 Дазваляе рэалізавальнікам здзейснічыць дадатковыя змены ў аб'екце аплаты.
 

@@ -3,7 +3,7 @@ title: Cloudflare ውህደት
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 Cloudflare መሪ የይዘት አቅርቦት ኔትወርክ (CDN) እና የደህንነት አቅራቢ ሲሆን ድረ-ገጾችን ለመጠበቅ እና ፍጥነታቸውን ለማሳደግ ይረዳል። ይህ አገናኝ (integration) Ultimate Multisite እና Cloudflare መካከል በራስ-ሰር የዶሜን አስተዳደርን ያስችላል። በተለይም ለንዑስ ስብስብ ድር ጣቢያ (subdomain multisite) ተከላዎች በጣም ጠቃሚ ነው።

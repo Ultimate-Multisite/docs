@@ -3,7 +3,7 @@ title: Build a Niche Website Business
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite ile Niş Bir Web Sitesi İşletmesi Kurun {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite ile Niş Bir Web Sitesi İşletmesi Kurun
 
 Web sitesi satmaya çalışan çoğu kişi, Wix, Squarespace ve binlerce serbest çalışanla fiyat üzerinden rekabet ediyor. Bu rekabette kaybediyorlar. Kazananlar ise belirli bir kitle seçiyor, o kitleye özel bir çözüm oluşturuyor ve sundukları değer üzerinden ücret alıyorlar.
 

@@ -3,7 +3,7 @@ title: Sivustokuviointi
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Sivustemplatit (v2) {#site-templates-v2}
+# Sivustemplatit (v2)
 
 _**HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x. Jos käytät versiota 1.x,**_ **katso tätä artikkelia.**_
 

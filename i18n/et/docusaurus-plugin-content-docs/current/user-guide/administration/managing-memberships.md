@@ -3,7 +3,7 @@ title: Liikmete haldamine
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Abastuste haldamine {#managing-memberships}
+# Abastuste haldamine
 
 Ultimate Multisite'is abil saate hallata abastusi ja pääsusi kogu oma võrku üle. Võtke üle ja muuta abastuse üksikasju, nagu plaanid ja tooted, platide arv, lahendamise summa ja sagedus, maksukohist, makse ajalugu ja ületamised.
 

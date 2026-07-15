@@ -4,7 +4,7 @@ title: Filtru - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filtru: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filtru: signup_get_available_languages
 
 Filtrează lista de limbi disponibile pentru înregistrările de site pe partea de față (front-end).
 

@@ -4,7 +4,7 @@ title: Azzjoni - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Azzjoni: wu_activation {#action-wuactivation}
+# Azzjoni: wu_activation
 
 Ħalli partijiet oħra tal-estensjoni jwaħħlu r-rutini tagħhom għall-attivazzjoni
 

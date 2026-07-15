@@ -3,7 +3,7 @@ title: Kloste Integration
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# ការតភ្ជាប់ Closte {#closte-integration}
+# ការតភ្ជាប់ Closte
 
 ## ទិដ្ឋភាពទូទៅ {#overview}
 Closte គឺជាវេទិកាបង្ហោះ WordPress ដែលគ្រប់គ្រងមួយដែលបង្កើតឡើងនៅលើ Google Cloud infrastructure។ ការតភ្ជាប់នេះអនុញ្ញាតឱ្យមានការធ្វើសមកាលកម្មដែន (domain syncing) និងការគ្រប់គ្រងវិញ្ញាបនបត្រ SSL រវាង Ultimate Multisite និង Closte ដោយស្វ័យប្រវត្តិ។

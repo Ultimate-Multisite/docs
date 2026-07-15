@@ -4,7 +4,7 @@ title: Harakat - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Amal: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Amal: wu_handle_user_meta_fields
 
 Plugin dasturchilariga, agar kerak bo‘lsa, foydalanuvchi meta ma’lumotlarini turli usullarda saqlashga ruxsat beradi.
 

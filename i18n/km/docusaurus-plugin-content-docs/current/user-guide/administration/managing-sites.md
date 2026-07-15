@@ -3,7 +3,7 @@ title: ការគ្រប់គ្រងគេហទំព័រ
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# ការគ្រប់គ្រង সাইট {#managing-sites}
+# ការគ្រប់គ្រង সাইট
 
 Sites (ឬ subsites) គឺជាផ្នែកសំខាន់បំផុតនៃអាជីវកម្ម WaaS របស់អ្នក។ Ultimate Multisite មានប្រភេទ সাইটចំនួន ៣៖
 

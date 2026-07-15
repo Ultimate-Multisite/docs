@@ -4,7 +4,7 @@ title: Filter - wu_get_post_types
 sidebar_label: wu_get_post_types
 _i18n_hash: 7e9a849e187bc1b15e63e024b42d7593
 ---
-# Filter: wu_get_post_types {#filter-wugetposttypes}
+# Filter: wu_get_post_types
 
 വിവിധ പോസ്റ്റ് ടൈപ്പുകൾ (post types) ഏതെല്ലാം കാണിക്കണം എന്ന് ഡെവലപ്പർമാർക്ക് തിരഞ്ഞെടുക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

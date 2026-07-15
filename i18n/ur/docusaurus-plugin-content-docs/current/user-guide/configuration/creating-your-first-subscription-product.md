@@ -3,7 +3,7 @@ title: اپنی پہلی سبسکرپشن پروڈکٹ بنانا
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# اپنا پہلا Subscription Product بنانا (v2) {#creating-your-first-subscription-product-v2}
+# اپنا پہلا Subscription Product بنانا (v2)
 
 _**اہم نوٹ: یہ مضمون صرف Ultimate Multisite ورژن 2.x صارفین کے لیے ہے۔ اگر آپ ورژن 1.x استعمال کر رہے ہیں،**_ **_**یہ مضمون دیکھیں**_**۔
 

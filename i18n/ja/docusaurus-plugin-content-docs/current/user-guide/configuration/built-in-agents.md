@@ -3,7 +3,7 @@ title: 組み込みエージェント
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# 組み込みAgents {#built-in-agents}
+# 組み込みAgents
 
 Gratis AI Agent v1.9.0 には、5つの組み込みagentsが同梱されています。それぞれ、特定の目的に合わせたツール一式、調整済みのsystem prompt、そしてその分野でよく使う作業に合った開始用の提案が事前設定されています。agentsを切り替えると、設定作業なしで、assistantができることや応答の仕方が変わります。Superdav AI Agent v1.18.0 は、関連する連携が設定されている場合、これらのワークフローにスケジュール対応ツール、リマインダー記録、承認ゲート、SMS通知を追加できます。
 

@@ -3,7 +3,7 @@ title: Offer a Ffurfweddiad
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Offer a Ffurfweddiad {#tools-and-configuration}
+# Offer a Ffurfweddiad
 
 Mae Theme Builder yn defnyddio set o offer i ddadansoddi, dylunio, ac adeiladu eich safle WordPress. Yn fersiwn 1.16.0, **mae sd-ai-agent/site-scrape bellach yn offeryn Haen 1**, gan ei wneud ar gael yn ddiofyn yn Theme Builder. Mae Superdav AI Agent v1.18.0 hefyd yn cyflwyno pecyn cydymaith Advanced a ddosberthir ar wahân ar gyfer llifoedd gwaith datblygwyr dibynadwy; nid yw’r offer hynny’n rhan o becyn craidd WordPress.org ac mae’n rhaid eu gosod a’u hawdurdodi ar wahân.
 

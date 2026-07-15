@@ -3,7 +3,7 @@ title: Captcha muudatuste logi
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha muudatuste logi {#captcha-changelog}
+# Captcha muudatuste logi
 
 Versioon: 1.5.0 - Välja antud 2026-05-22
 * Uus: range seiskamisega kiirusepiiraja — loendab iga GET- ja POST-päringu captcha’ga kaitstud pindadel (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ning vastab HTTP 429, `Retry-After` päise ja juhuslikustatud tarpit-viivitusega (1–5 s, range ülempiir 15 s).

@@ -3,7 +3,7 @@ title: WP-CLI குறிப்பு
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI குறிப்புப் பக்கம் {#wp-cli-reference}
+# WP-CLI குறிப்புப் பக்கம்
 
 Gratis AI Agent, ஒரு `wp gratis-ai-agent` command family-ஐ வழங்குகிறது. இதை command line-ல் பயன்படுத்தி, agent-ஐ benchmark செய்ய, அதன் abilities-ஐ manage செய்ய, மற்றும் agent-இன் status-ஐ query செய்ய முடியும். அனைத்து commands-க்கும் WP-CLI 2.0 அல்லது அதற்கு மேல் தேவை.
 

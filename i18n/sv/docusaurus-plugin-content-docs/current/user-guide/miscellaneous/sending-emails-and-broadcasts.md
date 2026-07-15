@@ -3,7 +3,7 @@ title: Skicka e-postmeddelanden och massutskick
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Skicka e-post och utskick (v2) {#sending-emails-and-broadcasts-v2}
+# Skicka e-post och utskick (v2)
 
 _**VIKTIGT: Den här artikeln avser Ultimate Multisite version 2.x.**_
 

@@ -3,7 +3,7 @@ title: WooCommerce Integrasi Catetan Parobahan
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Catetan Parobahan Integrasi WooCommerce {#woocommerce-integration-changelog}
+# Catetan Parobahan Integrasi WooCommerce
 
 Vérsi 2.2.0 - Dileupaskeun dina 2026-07-01
 * Anyar: Jumlah pajeg Ultimate Multisite ayeuna mucunghul salaku baris biaya WooCommerce anu misah dina prosés mayar, ngajadikeun total pajeg leuwih écés sateuacan pamayaran.

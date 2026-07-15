@@ -3,7 +3,7 @@ title: WPMU DEV ఇంటిగ్రేషన్
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ఇంటిగ్రేషన్ {#wpmu-dev-integration}
+# WPMU DEV ఇంటిగ్రేషన్
 
 ## అవలోకనం {#overview}
 WPMU DEV అనేది WordPress సైట్‌ల కోసం హోస్టింగ్, ప్లగిన్‌లు మరియు సేవలను అందించే సమగ్ర WordPress ప్లాట్‌ఫారమ్. ఈ ఇంటిగ్రేషన్ Ultimate Multisite మరియు WPMU DEV హోస్టింగ్ మధ్య ఆటోమేటిక్ డొమైన్ సింకింగ్ మరియు SSL సర్టిఫికేట్ నిర్వహణను అనుమతిస్తుంది.

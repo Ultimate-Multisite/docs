@@ -4,7 +4,7 @@ title: Action - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Action: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Action: wp_ultimo_support_agents_deactivation
 
 செயலிழக்கச் செய்வதற்கான செயல்பாடுகளை (routines) பிளகின்-இன் மற்ற பகுதிகளும் இதில் இணைக்கலாம்.
 

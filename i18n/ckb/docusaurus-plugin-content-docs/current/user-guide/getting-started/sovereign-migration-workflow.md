@@ -3,7 +3,7 @@ title: پێویستیی گواستنەوەی سوورین
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# پروسيس انتقال حاکمیتی (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# پروسيس انتقال حاکمیتی (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 گیت‌های تأیید انتقال را برای انتقال یک سایت زیرمجموعه استاندارد به زیرساخت مستأجر حاکمیتی اضافه کرده است.
 

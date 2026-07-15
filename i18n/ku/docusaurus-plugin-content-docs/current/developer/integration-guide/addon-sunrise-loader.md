@@ -3,7 +3,7 @@ title: Barkera pelê Sunrise ya pêvekê
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Barkêşa Pelê Sunrise ya Addon {#addon-sunrise-file-loader}
+# Barkêşa Pelê Sunrise ya Addon
 
 Ultimate Multisite 2.8.0 ji bo add-on û yekgirtinên taybet ên MU-plugin barkêşeke dirêjkirina sunrise zêde dike ku divê di dema destpêkirina sunrise ya WordPress de bêne xebitandin, bêyî ku pelê çêkirî `wp-content/sunrise.php` were sererastkirin.
 

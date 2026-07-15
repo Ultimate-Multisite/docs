@@ -3,7 +3,7 @@ title: Tríonadh na míchtitheoirí
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Déanamh ar Múinteoirí (Memberships) {#managing-memberships}
+# Déanamh ar Múinteoirí (Memberships)
 
 Agus Ultimate Multisite leat féidir leat teachtaireacht ar an gcomhthéacs agus ar an gcóras na fáilteanna (subscriptions) ar do shabhal. Déan ar chuid dearcadh agus athrú ar na stiúirithe (plans) agus na curteacha (products), an n-uimhir shabhal, an t-amachas tábhachta (billing amount) agus an t-amachas (frequency), an bhfháil a bheith ag fáilte (payment history), agus an t-amachas amachais (timestamps).
 

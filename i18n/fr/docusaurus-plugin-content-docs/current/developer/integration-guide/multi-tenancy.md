@@ -3,7 +3,7 @@ title: Intégration multi-locataire
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Intégration multi-tenant {#multi-tenancy-integration}
+# Intégration multi-tenant
 
 Ultimate Multisite : Multi-Tenancy 1.2.0 modifie plusieurs points de contact d’intégration pour les locataires souverains, la vérification des migrations et l’automatisation du cycle de vie des locataires.
 

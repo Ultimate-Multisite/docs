@@ -3,7 +3,7 @@ title: Qinisekisa umahluko wephalethi
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Qinisekisa Umahluko wePalette {#validate-palette-contrast}
+# Qinisekisa Umahluko wePalette
 
 Isakhono se-**Validate Palette Contrast** sijonga izibini zemibala kwi-palette yoyilo lwakho ukuze zihambelane ne-WCAG (Web Content Accessibility Guidelines) ngaphambi kokuzisebenzisa kwi-theme yakho.
 

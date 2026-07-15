@@ -4,7 +4,7 @@ title: Fyuluta - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Sefa: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Sefa: secure_logged_in_cookie
 
 Imasefa ngati cookie yolowera iyenera kutumizidwa kudzera pa HTTPS kokha.
 

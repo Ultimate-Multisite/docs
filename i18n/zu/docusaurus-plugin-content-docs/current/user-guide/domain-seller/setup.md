@@ -3,7 +3,7 @@ title: Ukusetha kanye Nokulungiselelwa Komhlinzeki
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Umthengisi Wesizinda: Ukusetha Nokumisa Umhlinzeki {#domain-seller-setup-and-provider-configuration}
+# Umthengisi Wesizinda: Ukusetha Nokumisa Umhlinzeki
 
 Isengezo se-Umthengisi Wesizinda siza newizadi yokusetha eqondisiwe ekuhambisa kuzo zonke izinyathelo ezidingekayo. Leli khasi lichaza ukugeleza kwewizadi nokuthi ungabamisa noma ubamise kabusha kanjani abahlinzeki kamuva.
 

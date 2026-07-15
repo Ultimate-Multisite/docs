@@ -3,7 +3,7 @@ title: Catatan Perubahan Sinkronisasi Konten
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Catatan Perubahan Content Sync {#content-sync-changelog}
+# Catatan Perubahan Content Sync
 
 ### Versi 1.1.0 - Dirilis pada 2025-12-31 {#version-110---released-on-2025-12-31}
 * Baru: Dukungan untuk sinkronisasi semua tipe postingan (postingan, halaman, tipe postingan kustom)

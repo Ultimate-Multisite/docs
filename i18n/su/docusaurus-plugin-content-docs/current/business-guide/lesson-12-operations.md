@@ -3,7 +3,7 @@ title: 'Palajaran 12: Ngajalankeun Usaha'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Palajaran 12: Ngajalankeun Usaha {#lesson-12-running-the-business}
+# Palajaran 12: Ngajalankeun Usaha
 
 Platform lain proyék anu réngsé ku anjeun -- éta téh usaha anu anjeun jalankeun. Palajaran ieu ngabahas operasi sapopoé pikeun ngatur FitSite: dukungan, tagihan, pangropéa, jeung ngajaga konsumén tetep bagja.
 

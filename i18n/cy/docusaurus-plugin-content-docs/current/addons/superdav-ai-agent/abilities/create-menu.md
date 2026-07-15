@@ -3,7 +3,7 @@ title: Creu Dewislen
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Creu Dewislen {#create-menu}
+# Creu Dewislen
 
 Mae'r gallu **Creu Dewislen** yn creu dewislenni llywio WordPress gyda chymorth ar gyfer labeli llywio gwahanol ar wahân i deitlau tudalennau.
 

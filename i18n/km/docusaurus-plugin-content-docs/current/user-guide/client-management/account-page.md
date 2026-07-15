@@ -3,7 +3,7 @@ title: ទំព័រគណនីអតិថិជន
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# ទំព័រគណនីរបស់អតិថិជនរបស់អ្នក (v2) {#your-clients-account-page-v2}
+# ទំព័រគណនីរបស់អតិថិជនរបស់អ្នក (v2)
 
 _**ចំណាំសំខាន់៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite ជំនាន់ 2.x។**_
 

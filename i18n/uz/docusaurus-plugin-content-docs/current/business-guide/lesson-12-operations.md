@@ -3,7 +3,7 @@ title: '12-dars: Biznesni yuritish'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 12-dars: Biznesni yuritish {#lesson-12-running-the-business}
+# 12-dars: Biznesni yuritish
 
 Platforma yakunlab qo‘yiladigan loyiha emas -- u siz yuritadigan biznesdir. Bu dars FitSite’ni boshqarishdagi kundalik operatsiyalarni qamrab oladi: qo‘llab-quvvatlash, billing, texnik xizmat va mijozlarni mamnun saqlash.
 

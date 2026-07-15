@@ -3,7 +3,7 @@ title: Rakenna markkinarakoon keskittyvä verkkosivustoliiketoiminta
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Rakenna niche-verkkosivustoliiketoiminta Ultimate Multisite -palvelulla {#build-a-niche-website-business-with-ultimate-multisite}
+# Rakenna niche-verkkosivustoliiketoiminta Ultimate Multisite -palvelulla
 
 Useimmat ihmiset, jotka yrittävät myydä verkkosivustoja, kilpailevat hinnalla Wixin, Squarespacen ja tuhansien freelancereiden kanssa. He häviävät. Voittajat valitsevat tietyn yleisön, rakentavat ratkaisun juuri sille yleisölle ja veloittavat tuottamastaan arvosta.
 

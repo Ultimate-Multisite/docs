@@ -4,7 +4,7 @@ title: පෙරහන - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# පෙරහන: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# පෙරහන: wu_light_ajax_allowed_hooks
 
 ආරක්ෂක හේතු නිසා, hook කිරීම සඳහා ලබා ගත හැකි ක්‍රියා ගණන අපි සීමා කරමු. අවශ්‍ය නම් එම ලැයිස්තුව පුළුල් කිරීමට මෙම පෙරහන සංවර්ධකයන්ට ඉඩ දෙයි.
 

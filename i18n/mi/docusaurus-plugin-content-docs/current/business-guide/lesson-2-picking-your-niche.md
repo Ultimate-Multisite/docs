@@ -3,7 +3,7 @@ title: 'Akoranga 2: Te kōwhiri i tō mākete motuhake'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Akoranga 2: Te Kōwhiri i Tō Mākete Motuhake {#lesson-2-picking-your-niche}
+# Akoranga 2: Te Kōwhiri i Tō Mākete Motuhake
 
 I te Akoranga 1 i whakapūmautia e tātou he aha i pai ake ai te mākete motuhake i te mea whānui. Ināianei me kōwhiri koe i tāu. Ka hoatu e tēnei akoranga he anga hei kimi, hei whakamana hoki i tētahi mākete motuhake i mua i tō whakapau wā ki te hanga mōna.
 

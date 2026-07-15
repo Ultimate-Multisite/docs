@@ -3,7 +3,7 @@ title: Rujukan Kabisan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Rujukan Abilities {#abilities-reference}
+# Rujukan Abilities
 
 Abilities yaiku tumindak atomik sing bisa diundang dening Gratis AI Agent ing instalasi WordPress sampeyan. Saben ability iku kelas PHP sing kadhaftar lan mbabarake skema JSON — agent maca skema iki nalika runtime kanggo mangerteni parameter apa sing dibutuhake lan apa sing dibalekake dening ability kasebut.
 

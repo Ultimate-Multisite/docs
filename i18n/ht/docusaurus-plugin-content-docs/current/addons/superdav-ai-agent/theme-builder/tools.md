@@ -3,7 +3,7 @@ title: Zouti ak Konfigirasyon
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zouti ak Konfigirasyon {#tools-and-configuration}
+# Zouti ak Konfigirasyon
 
 Theme Builder itilize yon seri zouti pou analize, konsevwa, epi konstwi sit WordPress ou. Nan vèsyon 1.16.0, **sd-ai-agent/site-scrape se kounye a yon zouti Tier 1**, sa ki fè li disponib pa defo nan Theme Builder. Superdav AI Agent v1.18.0 entwodui tou yon pake konpayon Advanced ki distribye apa pou workflow devlopè ou fè konfyans; zouti sa yo pa fè pati pake debaz WordPress.org la epi yo dwe enstale ak otorize apa.
 

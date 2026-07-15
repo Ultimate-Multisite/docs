@@ -3,7 +3,7 @@ title: Yaya za a samu taimako
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Zabi da taimako {#how-to-get-help}
+# Zabi da taimako
 
 Kake samu lambar License (License key) ta dace, kuma an haɗa tare da ita damar samun taimakon ƙungiyar mu don magance matsaloli da za ka iya fuskanta lokacin da kake shirya Ultimate Multisite.
 

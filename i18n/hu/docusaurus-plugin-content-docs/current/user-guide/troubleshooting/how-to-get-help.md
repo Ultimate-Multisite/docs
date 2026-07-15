@@ -3,7 +3,7 @@ title: Hogyan kérhet segítséget
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Hogyan kaphatsz segítséget {#how-to-get-help}
+# Hogyan kaphatsz segítséget
 
 Megvan az érvényes licenckulcsod, és ezzel együtt hozzáférsz a csapatunkhoz, akik segítenek megoldani az Ultimate Multisite beállítása során esetlegesen felmerülő problémákat.
 

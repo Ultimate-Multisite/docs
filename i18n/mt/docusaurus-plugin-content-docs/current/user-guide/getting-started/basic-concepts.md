@@ -3,7 +3,7 @@ title: Konċetti Basi
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Konċetti Basi {#basic-concepts}
+# Konċetti Basi
 
 Bħal utentji ġdid ta WordPress Multisite u qed jmurja biex jidħol f'użu tal-Ultimate Multisite, jista' tkun għandek ħafna parole u frasi ġodda biex ti tiffaħ. L-apprendien tagħhom huwa impurt, it-tlob li tfitteh l-platform u kif tiffaħ b'mod kollu.
 

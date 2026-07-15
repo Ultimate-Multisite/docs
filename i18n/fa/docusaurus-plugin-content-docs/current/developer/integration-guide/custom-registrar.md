@@ -3,7 +3,7 @@ title: ساخت یک یکپارچه‌سازی ثبت‌کننده سفارشی
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# ساخت یک یکپارچه‌سازی (Integration) ثبت دامنه سفارشی {#building-a-custom-registrar-integration}
+# ساخت یک یکپارچه‌سازی (Integration) ثبت دامنه سفارشی
 
 افزونه Domain Seller از الگوی **Integration Registry** استفاده می‌کند. هر ثبت‌کننده (registrar) یک کلاس PHP است که `Domain_Selling_Capability` را پیاده‌سازی کرده و خودش را از طریق اکشن هوک `wu_domain_seller_register_capabilities` ثبت می‌کند.
 

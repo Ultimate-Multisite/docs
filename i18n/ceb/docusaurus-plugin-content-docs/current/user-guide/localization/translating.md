@@ -3,7 +3,7 @@ title: Nag-translate sa Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Pagsalin sa Ultimate Multisite {#translating-ultimate-multisite}
+# Pagsalin sa Ultimate Multisite
 
 Ang Ultimate Multisite gihimo sa English, pero ang plugin kay kompleto nga mahimong i-translate ug aktibo mi nag-welcome og mga kontribusyon sa paghubad.
 

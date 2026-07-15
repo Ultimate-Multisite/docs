@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# ຕົວກັ່ນຕອງ: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# ຕົວກັ່ນຕອງ: wu_checkout_field_templates
 
 APIs ຂອງພວກເຮົາສຳລັບເພີ່ມແມ່ແບບຊ່ອງໃໝ່ຈະ hook ເຂົ້າທີ່ນີ້.
 

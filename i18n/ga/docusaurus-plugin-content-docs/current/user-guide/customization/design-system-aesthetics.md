@@ -3,7 +3,7 @@ title: Scoil an-dhéanamh ar aistriúin na h-aon-chomhairle
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Fíneadh Skill Design System Aesthetics {#design-system-aesthetics-skill}
+# Fíneadh Skill Design System Aesthetics
 
 Is **Fíneadh Skill Design System Aesthetics** cur chuig an t-amhrán a chur ar fáil chun do chuid deashcaíocht site a fheabhsú. Tá sé ag cur chun cinn túidh ar chuid cúrama ar fáil faoi chuid téacs, colur, spás agus tokenacha motion a bhfaidh siad a dhéanamh ar chuid deashcaíocht system atá agat.
 

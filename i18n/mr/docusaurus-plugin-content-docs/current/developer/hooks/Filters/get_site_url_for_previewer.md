@@ -4,7 +4,7 @@ title: Filter - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filter: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Filter: get_site_url_for_previewer
 
 प्रीव्ह्यूअरमध्ये (previewer) वापरल्या जाणाऱ्या URL ला फिल्टर करण्याची परवानगी प्लगइन डेव्हलपर्सना मिळते.
 

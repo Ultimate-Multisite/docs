@@ -3,7 +3,7 @@ title: Lista zemalja
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ponovno usklađivanje liste zemalja Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Ponovno usklađivanje liste zemalja Ultimate Multisite
 
 Padajući izbornik za odabir zemlje sortiran je po abecedi, na temelju engleskih verzija naziva zemalja. To može značiti da je matična zemlja vaše kompanije i/ili većina vaših klijenata ponekad skriva usred ogromne liste zemalja.
 

@@ -3,7 +3,7 @@ title: የHooks ማጣቀሻ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks ማጣቀሻ {#hooks-reference}
+# Hooks ማጣቀሻ
 
 በUltimate Multisite ውስጥ ላሉ ሁሉም **59 እርምጃዎች** እና **118 ማጣሪያዎች** በራስ-ሰር የተፈጠረ ሰነድ።
 

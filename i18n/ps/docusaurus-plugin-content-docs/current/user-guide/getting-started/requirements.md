@@ -3,7 +3,7 @@ title: شرایط
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite کی ضروریات {#ultimate-multisite-requirements}
+# Ultimate Multisite کی ضروریات
 
 Ultimate Multisite خریدنے سے پہلے آپ اپنے آپ سے سب سے پہلے جو سوال پوچھ سکتے ہیں وہ یہ ہے کہ ہمارے پگ ان (plugin) کو چلانے کے لیے کیا ضروریات ہیں۔ خوش قسمتی سے، Ultimate Multisite چلانے کے لیے صرف چند بنیادی ضروریات ہیں: ایک **ڈومین نیم**، ایک اچھا **ہوسٹنگ پرووائڈر** اور ایک ورڈپریس **Multisite** انسٹالیشن۔ بس اتنا ہی آپ کو چاہیے!
 

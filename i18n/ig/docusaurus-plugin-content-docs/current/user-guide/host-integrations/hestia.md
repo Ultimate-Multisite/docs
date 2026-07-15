@@ -3,7 +3,7 @@ title: Nkwado Hestia Control Panel Integration
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integration na Control Panel Hestia {#hestia-control-panel-integration}
+# Integration na Control Panel Hestia
 
 A hướng dẫn này giải thích cách cấu hình tích hợp Ultimate Multisite Hestia để các tên miền được ánh xạ trong mạng của bạn tự động được thêm vào (và xóa khỏi) Hestia dưới dạng Web Domain Aliases.
 

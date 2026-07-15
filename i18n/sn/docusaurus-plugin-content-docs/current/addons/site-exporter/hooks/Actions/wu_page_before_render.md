@@ -4,7 +4,7 @@ title: Chiito - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# Chiito: wu_page_before_render {#action-wupagebeforerender}
+# Chiito: wu_page_before_render
 
 Inotangwa isati yarender peji.
 

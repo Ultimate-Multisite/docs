@@ -3,7 +3,7 @@ title: Dukumentiyada Horumariyaha
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dukumentiyada Horumariyaha {#developer-documentation}
+# Dukumentiyada Horumariyaha
 
 Hagahan wuxuu horumariyeyaasha siinayaa wax kasta oo loo baahan yahay si ay ula midoobaan, u ballaariyaan, ama ugu horumariyaan addons Ultimate Multisite. Ultimate Multisite wuxuu shabakad WordPress Multisite ah u beddelaa madal Mareeg-adeeg-ahaan (WaaS).
 

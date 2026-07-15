@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# ಆಕ್ಷನ್: wu_duplicate_site {#action-wuduplicatesite}
+# ಆಕ್ಷನ್: wu_duplicate_site
 
 ಸೈಟ್ ನಕಲು (duplication) ಆದ ನಂತರ developers ತಮ್ಮ ಕೋಡ್ ಅನ್ನು ಹುಕ್ (hook) ಮಾಡಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

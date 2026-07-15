@@ -3,7 +3,7 @@ title: Unsaon Pag-configure sa Domain Mapping
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Unsaon Pag-configure sa Pag-map sa Domain (v2) {#how-to-configure-domain-mapping-v2}
+# Unsaon Pag-configure sa Pag-map sa Domain (v2)
 
 _**MAHINUNGDANONG PAHINUMDOM: Kini nga artikulo nagtumong sa Ultimate Multisite bersyon 2.x.**_
 

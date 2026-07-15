@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Eylem: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Eylem: wp_ultimo_gocardless_deactivation
 
 Eklentinin diğer bölümlerinin, devre dışı bırakılma (deactivation) sırasında çalışacak rutinlerini bağlamasına izin verir.
 

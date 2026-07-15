@@ -4,7 +4,7 @@ title: Gnìomh - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Gnìomh: wu_page_after_render {#action-wupageafterrender}
+# Gnìomh: wu_page_after_render
 
 Thèid a chur an gnìomh às dèidh duilleag a renderadh.
 

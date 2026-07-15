@@ -3,7 +3,7 @@ title: Mulighet for tema-bygging
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Funksjoner: Scaffold og Aktivere Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Funksjoner: Scaffold og Aktivere Block Themes
 
 Superdav AI Agent v1.12.0 introduserer to kraftige funksjoner som lar deg generere og implementere tilpassede block themes direkte fra chat-grensesnittet.
 

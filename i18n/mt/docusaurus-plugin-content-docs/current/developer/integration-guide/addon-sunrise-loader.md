@@ -3,7 +3,7 @@ title: Għodda għat-Tagħbija tal-Fajl Sunrise tal-Estensjoni
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 iżid loader ta' estensjonijiet sunrise għal add-ons u integrazzjonijiet custom ta' MU-plugin li jeħtieġu jaħdmu waqt il-bootstrapping ta' WordPress sunrise mingħajr ma jiġi editjat il-fajl iġġenerat `wp-content/sunrise.php`.
 

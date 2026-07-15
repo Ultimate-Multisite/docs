@@ -4,7 +4,7 @@ title: Hidlydd - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Hidlydd: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Hidlydd: wu_post_count_statuses
 
 Caniatáu i ddatblygwyr plugin newid pa statws post ddylai gael ei gyfrif. Yn ddiofyn, cyfrifir postiadau cyhoeddedig a phreifat
 

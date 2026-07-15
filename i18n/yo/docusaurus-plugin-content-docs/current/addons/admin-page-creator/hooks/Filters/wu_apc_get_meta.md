@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Àlẹmọ: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Àlẹmọ: wu_apc_get_meta
 
 Gba àwọn olupilẹ̀ṣẹ laaye láti ṣe àlẹmọ àwọn iye ìkẹyìn, àti láti ṣàfikún àwọn ọ̀ràn ìṣètò tuntun.
 

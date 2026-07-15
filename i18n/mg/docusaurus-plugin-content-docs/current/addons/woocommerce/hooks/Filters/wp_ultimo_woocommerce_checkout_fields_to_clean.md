@@ -4,7 +4,7 @@ title: Sivana - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Sivana: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Sivana: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Mamela ny mpamorona hanivana ny saha billing address mahazatra an'ny WooCommerce.
 

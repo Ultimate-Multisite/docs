@@ -3,7 +3,7 @@ title: Moea e leboha la ho fana ka tsela
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kahlotse le Litlho la Morero {#theme-aware-skills}
+# Kahlotse le Litlho la Morero
 
 Superdav AI Agent v1.10.0 e tšupa litlho tse fofa tse fapaneng tsa theme-aware tse di fetang, tse di fetang ka ho ba le le lele le lefetso le le fetang ka theme ea WordPress e e le e le fetang. Litlho tse di fetang di leka le lefetso le le fetang la theme ea hau le litlhoko tsa hae.
 

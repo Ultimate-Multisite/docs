@@ -3,7 +3,7 @@ title: Тема-адалы көндүмдәр
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Aware Skills {#theme-aware-skills}
+# Tema-Aware Skills
 
 Superdav AI Agent v1.10.0 dört yeni tema duyarlı yerleşik beceri (skill) getiriyor ki bunlar aktif WordPress temanıza otomatik olarak uyum sağlar. Bu beceriler, temanızın mimarisine ve özelliklerine özel uzman rehberlik ve yetenekler sunar.
 

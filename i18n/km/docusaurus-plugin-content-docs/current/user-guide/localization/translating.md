@@ -3,7 +3,7 @@ title: ការបកប្រែ Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ការបកប្រែ Ultimate Multisite {#translating-ultimate-multisite}
+# ការបកប្រែ Ultimate Multisite
 
 Ultimate Multisite ត្រូវបានបង្កើតឡើងជាភាសាអង់គ្លេស ប៉ុន្តែ plugin នេះអាចបកប្រែបានពេញលេញ ហើយយើងស្វាគមន៍ការរួមចំណែកនៃការបកប្រែពីអ្នកទាំងអស់គ្នា។
 

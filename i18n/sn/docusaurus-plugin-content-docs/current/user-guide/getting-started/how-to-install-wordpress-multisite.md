@@ -3,7 +3,7 @@ title: Ndiri kuenda sei WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ndiri kuimba WordPress Multisite sei sei? {#how-do-i-install-wordpress-multisite}
+# Ndiri kuimba WordPress Multisite sei sei?
 
 WordPress Multisite inakuweipa uwezera kuva ne network ye sites dzakawanda dzinogara munyaya imwe. Iyi feature inotanga neWordPress, asi haisi inoratidwa nekuti inenge inotanga.
 

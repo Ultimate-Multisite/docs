@@ -3,7 +3,7 @@ title: Տախտակի ընդհանուր տեսք
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Տախտակների ընդհանուր տեսքը (Dashboard Overview) {#dashboard-overview}
+# Տախտակների ընդհանուր տեսքը (Dashboard Overview)
 
 Ultimate Multisite-ի ներսում Ultimate Multisite մենյուի տակ հատուկ **Dashboard** կա, և այն նաև հավելում է վի젯ներ Network Dashboard-ին։ Այս հոդվածը ներկայացնում է, թե ինչ կտեսնեք երկու տեղերում։
 

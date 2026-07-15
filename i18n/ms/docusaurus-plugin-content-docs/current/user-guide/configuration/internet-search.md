@@ -3,7 +3,7 @@ title: Carian Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Carian Internet {#internet-search}
+# Carian Internet
 
 Gratis AI Agent v1.5.0 menambah keupayaan **Carian Internet** yang membolehkan pembantu AI mendapatkan maklumat terkini dari web semasa perbualan. Ini dikuasakan oleh [Brave Search API](https://brave.com/search/api/) atau [Tavily API](https://tavily.com/).
 

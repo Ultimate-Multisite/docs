@@ -4,7 +4,7 @@ title: Gníomh - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Gníomh: wu_domain_mapping_load {#action-wudomainmappingload}
+# Gníomh: wu_domain_mapping_load
 
 Spreagtar é tar éis dár gcroí Domain Mapping a bheith luchtaithe
 

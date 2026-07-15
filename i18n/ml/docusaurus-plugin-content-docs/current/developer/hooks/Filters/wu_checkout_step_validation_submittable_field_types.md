@@ -4,7 +4,7 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 ഒരു ഫീൽഡ് ഓട്ടോമാറ്റിക്കായി സമർപ്പിക്കാൻ കഴിയുന്നതാണെങ്കിൽ, അതിൻ്റെ പരിശോധന ഒഴിവാക്കാൻ ഡെവലപ്പർമാരെ ഇത് അനുവദിക്കുന്നു.
 

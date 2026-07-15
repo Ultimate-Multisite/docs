@@ -3,7 +3,7 @@ title: Cyfrannu y peidiadau a'r ffurfau cyflwyno
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Cyflenion y Mae'r Płatheirau a'r Ffyrddiadau {#managing-payments-and-invoices}
+# Cyflenion y Mae'r Płatheirau a'r Ffyrddiadau
 
 ## Cyddefnyddio'r Setiau Płatheirau {#payment-settings}
 

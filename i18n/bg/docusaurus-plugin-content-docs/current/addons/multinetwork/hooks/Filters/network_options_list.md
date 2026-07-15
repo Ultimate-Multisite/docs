@@ -4,7 +4,7 @@ title: Филтър - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Филтър: network_options_list {#filter-networkoptionslist}
+# Филтър: network_options_list
 
 Филтрира списъка с настройки на мрежата (network options), които зависят от домейна и пътя на мрежата.
 

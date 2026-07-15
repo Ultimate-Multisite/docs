@@ -3,7 +3,7 @@ title: Integrasi RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrasi RunCloud {#runcloud-integration}
+# Integrasi RunCloud
 
 ## Gambaran Keseluruhan {#overview}
 RunCloud ialah platform pengurusan pelayan berasaskan awan yang membolehkan anda menyediakan dan menguruskan aplikasi web pada pelayan awan anda sendiri dengan mudah. Integrasi ini membolehkan penyegerakan domain secara automatik dan pengurusan sijil SSL antara Ultimate Multisite dan RunCloud.

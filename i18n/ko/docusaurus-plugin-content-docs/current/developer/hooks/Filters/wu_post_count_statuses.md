@@ -4,7 +4,7 @@ title: 필터 - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# 필터: wu_post_count_statuses {#filter-wupostcountstatuses}
+# 필터: wu_post_count_statuses
 
 플러그인 개발자들이 어떤 포스트 상태를 카운트할지 변경할 수 있도록 허용합니다. 기본적으로 게시된 포스트와 비공개 포스트가 카운트됩니다.
 

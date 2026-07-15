@@ -4,7 +4,7 @@ title: Szűrő - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Szűrő: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Szűrő: wu_woocommerce_line_item_params
 
 Szűrőzi a WooCommerce kosárban létrehozott sor elemekhez használt paramétereket, még mielőtt a vásárlót a WooCommerce checkout oldalra irányítja.
 

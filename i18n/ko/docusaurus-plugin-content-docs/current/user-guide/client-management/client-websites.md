@@ -3,7 +3,7 @@ title: 클라이언트 웹사이트
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# 클라이언트의 웹사이트 (v2) {#your-clients-websites-v2}
+# 클라이언트의 웹사이트 (v2)
 
 네트워크에 등록한 후 고객은 자신의 Dashboard에 접근할 수 있습니다.
 

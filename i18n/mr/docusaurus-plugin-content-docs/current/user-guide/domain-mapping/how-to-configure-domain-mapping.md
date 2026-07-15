@@ -3,7 +3,7 @@ title: Domain Mapping कॉन्फिगर कसे करावे
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mapping (v2) कसे कॉन्फिगर करावे {#how-to-configure-domain-mapping-v2}
+# Domain Mapping (v2) कसे कॉन्फिगर करावे
 
 _**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 

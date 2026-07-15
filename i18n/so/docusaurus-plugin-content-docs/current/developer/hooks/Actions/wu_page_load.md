@@ -4,7 +4,7 @@ title: Ficil - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Ficil: wu_page_load {#action-wupageload}
+# Ficil: wu_page_load
 
 U oggolow horumariyeyaasha barnaamij-kordhinta inay ku daraan hooks dheeraad ah bogaggayaga.
 

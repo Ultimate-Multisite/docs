@@ -3,7 +3,7 @@ title: Obravnava webhookov
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Obravnavanje webhookov {#webhook-handling}
+# Obravnavanje webhookov
 
 Ustvarite prilagojene končne točke webhookov za prejemanje dogodkov iz zunanjih storitev in sinhronizacijo podatkov z Ultimate Multisite.
 

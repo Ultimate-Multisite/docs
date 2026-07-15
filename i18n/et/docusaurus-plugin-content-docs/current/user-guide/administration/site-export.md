@@ -3,7 +3,7 @@ title: Siti eksporti
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sätti eksportimine {#site-export}
+# Sätti eksportimine
 
 **Sätti eksportimise** adminileht võimaldab võrku administraatoritele üht site või kogu võrku pakkuda allalaaditavaks arkiviks migratsiooni, varjenduse või üleandmiseks.
 

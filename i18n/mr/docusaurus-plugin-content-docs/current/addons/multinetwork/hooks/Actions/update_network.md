@@ -4,7 +4,7 @@ title: Action - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network {#action-updatenetwork}
+# Action: update_network
 
 जेव्हा एखादे विद्यमान नेटवर्क (network) अपडेट केले जाते, तेव्हा हे फंक्शन कार्यान्वित होते.
 

@@ -3,7 +3,7 @@ title: اینټارنټ سرچ
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# انٹرنیٹ سرچ {#internet-search}
+# انٹرنیٹ سرچ
 
 Gratis AI Agent v1.5.0-এ একটি **Internet Search** ক্ষমতা যোগ করা হয়েছে, যা কথোপকথনের সময় এআই সহকারীকে ওয়েব থেকে একদম হালনাগাদ তথ্য পুনরুদ্ধার করতে দেয়। এটি [Brave Search API](https://brave.com/search/api/) বা [Tavily API](https://tavily.com/) দ্বারা চালিত হয়।
 

@@ -3,7 +3,7 @@ title: 도구 및 구성
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# 도구 및 구성 {#tools-and-configuration}
+# 도구 및 구성
 
 Theme Builder는 WordPress 사이트를 분석, 디자인, 구축하기 위해 도구 모음을 사용합니다. 버전 1.16.0에서는 **sd-ai-agent/site-scrape가 이제 Tier 1 도구**가 되어 Theme Builder에서 기본적으로 사용할 수 있습니다. Superdav AI Agent v1.18.0은 신뢰할 수 있는 개발자 워크플로를 위해 별도로 배포되는 Advanced 동반 패키지도 도입합니다. 이러한 도구는 WordPress.org 핵심 패키지의 일부가 아니며 별도로 설치하고 승인해야 합니다.
 

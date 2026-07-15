@@ -3,7 +3,7 @@ title: Orchestration v2 του Site Builder
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Το Site Builder Orchestration v2 (ενλήφθη στο Gratis AI Agent v1.4.0) είναι ο μηχανισμός που τροφοδοτεί τη δημιουργία ιστοσελίδων με πολλαπλά βήματα. Όταν ζητάτε από το agent να «χτίσει μια ιστοσελίδα για εστιατόριο» ή να «δημιουργήσει ένα portfolio με blog», ο orchestrator αναλύει αυτόν τον υψηλού επιπέδου στόχο σε ένα δομημένο **plan**, ανακαλύπτει τα plugins που χρειάζονται για να το επιτύχει, εκτελεί κάθε βήμα με τη σειρά, παρακολουθεί την πρόοδο και ανακτά αυτόνομα από λάθη.
 

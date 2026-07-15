@@ -4,7 +4,7 @@ title: Ação - wu_checkout_after_process_order
 sidebar_label: wu_checkout_after_process_order
 _i18n_hash: 40a5c096f223c5f82a109163c29284d3
 ---
-# Ação: wu_checkout_after_process_order {#action-wucheckoutafterprocessorder}
+# Ação: wu_checkout_after_process_order
 
 Permite que os programadores acionem hooks adicionais.
 

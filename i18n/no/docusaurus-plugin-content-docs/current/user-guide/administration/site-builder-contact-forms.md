@@ -3,7 +3,7 @@ title: Kontakt skjemaer for nettstedbygger
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontakt skjemaer med Site Builder {#site-builder-contact-forms}
+# Kontakt skjemaer med Site Builder
 
 Superdav AI Agent v1.10.0 legger til muligheten til å opprette kontakt skjemaer direkte fra chat-grensesnittet ved hjelp av Site Builder-agenten. Dette lar deg legge til fullt funksjonelle kontakt skjemaer på hvilken som helst side uten å forlate chatten.
 

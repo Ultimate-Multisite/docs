@@ -3,7 +3,7 @@ title: Mezu elektronikoak eta hedapenak bidaltzea
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Emailak eta igorpenak bidaltzea (v2) {#sending-emails-and-broadcasts-v2}
+# Emailak eta igorpenak bidaltzea (v2)
 
 _**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 

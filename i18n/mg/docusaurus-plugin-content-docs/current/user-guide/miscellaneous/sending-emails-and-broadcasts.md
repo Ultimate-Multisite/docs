@@ -3,7 +3,7 @@ title: Fandefasana mailaka sy hafatra faobe
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Fandefasana mailaka sy Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Fandefasana mailaka sy Broadcasts (v2)
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite version 2.x.**_
 

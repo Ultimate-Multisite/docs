@@ -4,7 +4,7 @@ title: მოქმედება - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 აქ ემატება მორგებული action, რათა გვქონდეს ადგილი საჭიროებისამებრ სკრიპტებისა და სტილების enqueue-სთვის\ და დავრწმუნდეთ, რომ ისინი მხოლოდ სწორ გვერდებზე ჩაიტვირთება
 

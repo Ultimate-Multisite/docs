@@ -4,7 +4,7 @@ title: Tace - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Tacewa: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Tacewa: wu_rest_delete_item
 
 Yana tace ko an yarda a ci gaba da buƙatar ko a'a.
 

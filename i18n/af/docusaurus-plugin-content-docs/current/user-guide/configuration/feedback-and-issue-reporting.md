@@ -3,7 +3,7 @@ title: Kliëntterugvoer en Probleemrapportage
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klant-terugvoer en Probleemverslagdoening {#customer-feedback--issue-reporting}
+# Klant-terugvoer en Probleemverslagdoening
 
 Gratis AI Agent v1.5.0 stel 'n ingeboude terugvoer- en probleemverslagdoeningsstelsel bekend wat eindgebruikers toelaat om onhelpbare antwoorde te merk en probleme direk vanaf die klets-koppelvlak te rapporteer. Hierdie stelsel sluit toestemmingsbestuur, 'n outomatiese verslagdoeningsbevel, en AI-geassisteerde triasie op die agtergrond in.
 

@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Action: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Action: wu_domain_seller_complete_registration
 
 ഒരു പേയ്‌മെന്റ് ഡൊമെയ്ൻ രജിസ്ട്രേഷൻ ആരംഭിക്കാൻ ആവശ്യമായ ഒരു സ്റ്റാറ്റസിലേക്ക് മാറുമ്പോൾ ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

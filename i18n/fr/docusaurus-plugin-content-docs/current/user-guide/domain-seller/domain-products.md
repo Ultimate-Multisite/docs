@@ -3,7 +3,7 @@ title: Produits du Domaine et Tarification
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produits et tarifs de domaine {#domain-products-and-pricing}
+# Produits et tarifs de domaine
 
 Les produits de domaine vous permettent de gérer les tarifs, les TLD, la confidentialité WHOIS et la sélection de fournisseurs. Chaque produit de domaine est un produit standard Ultimate Multisite avec un onglet supplémentaire **Paramètres du domaine**.
 

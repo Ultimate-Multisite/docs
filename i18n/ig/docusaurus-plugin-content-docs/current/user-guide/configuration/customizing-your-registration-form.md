@@ -3,7 +3,7 @@ title: Ịhazigharị fọm ndebanye aha gị
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ịhazigharị Registration Form gị {#customizing-your-registration-form}
+# Ịhazigharị Registration Form gị
 
 Iji mee ka network gị dị iche na SaaS ndị ọzọ niile e wuru n’elu WordPress platform, Ultimate Multisite na-enye gị ohere ịhazi registration na login peeji gị site na njirimara **Checkout Forms** anyị.
 

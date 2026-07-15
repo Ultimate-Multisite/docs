@@ -4,7 +4,7 @@ title: Iragazkia - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Iragazkia: network_options_to_copy {#filter-networkoptionstocopy}
+# Iragazkia: network_options_to_copy
 
 Kopiatu beharreko sareko aukera lehenetsiak iragazten ditu.
 

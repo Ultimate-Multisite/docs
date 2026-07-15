@@ -4,7 +4,7 @@ title: Filter - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 ตัวกรองข้อมูลอ็อบเจกต์ก่อนที่จะถูกจัดเก็บลงในฐานข้อมูล
 

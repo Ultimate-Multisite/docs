@@ -3,7 +3,7 @@ title: მოთხოვნები
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimates Multisite მოთხოვნები {#ultimate-multisite-requirements}
+# Ultimates Multisite მოთხოვნები
 
 Ultimate Multisite-ის ყიდვის წინ პირველ რიგში შეიძლება საკუთარ თავს დაუსვან შეკითხვა: რა მოთხოვნებია ჩვენი პლაგინის დას இயக்குვისთვის? ბედნიერება ის არის, რომ Ultimate Multisite-ს இயக்க მხოლოდ რამდენიმე ძირითადი მოთხოვნა აქვს: **დომენი**, კარგი **ჰოსტინგის პროვაიდერი** და WordPress-ის **Multisite** ინსტალაცია. ეს ყველაფერი გჭირდებათ!
 

@@ -4,7 +4,7 @@ title: Сүзгі - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Сүзгі: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Сүзгі: wu_checkout_field_templates
 
 Жаңа өріс үлгілерін қосуға арналған API-леріміз осында тіркеледі.
 

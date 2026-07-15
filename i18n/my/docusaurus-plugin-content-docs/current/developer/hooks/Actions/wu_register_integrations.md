@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations {#action-wuregisterintegrations}
+# Action: wu_register_integrations
 
 ပေါင်းစပ်မှုများ (integrations) ကို ကိုယ်တိုင် မှတ်ပုံတင်နိုင်စေရန် ဤ action ကို အသုံးပြုသည်။
 

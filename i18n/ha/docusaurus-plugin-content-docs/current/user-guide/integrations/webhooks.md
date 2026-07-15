@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# B Ga'a Farko Game da Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# B Ga'a Farko Game da Webhooks (v2)
 
 _**GABARDA: Ka kunya wannan ƙarin ko rubutun ya dace ga masu amfani da girma.**_
 

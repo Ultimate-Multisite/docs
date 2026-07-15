@@ -4,7 +4,7 @@ title: Aksyon - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Aksyon: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Aksyon: wu_admin_pages_editors
 
 Pahintulutan ang mga tagabuo ng pandagdag na magdagdag ng mga bagong opsyon sa editor =)
 

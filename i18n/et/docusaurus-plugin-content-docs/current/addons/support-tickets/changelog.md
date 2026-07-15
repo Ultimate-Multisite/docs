@@ -3,7 +3,7 @@ title: Tugipiletite muudatuste logi
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets muudatuste logi {#support-tickets-changelog}
+# Support Tickets muudatuste logi
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Täiustatud: eemaldati vendor/ kataloog Git jälgimisest (juba kaetud .gitignore poolt), vähendades repositooriumi suurust

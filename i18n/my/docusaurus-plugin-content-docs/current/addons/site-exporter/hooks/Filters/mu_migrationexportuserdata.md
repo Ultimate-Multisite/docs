@@ -4,7 +4,7 @@ title: Filter - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filter: mu_migration/export/user/data
 
 Export လုပ်ခြင်း ဒါမှမဟုတ် Import လုပ်ခြင်းမှာ အသုံးပြုမယ့် user data ပုံမှန်အချက်အလက်တွေကို စစ်ထုတ်ပေးပါတယ်။
 

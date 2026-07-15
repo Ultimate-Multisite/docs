@@ -3,7 +3,7 @@ title: R list yezuva
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Kure-re-order list yeUltimate Multisite country {#re-ordering-the-ultimate-multisite-country-list}
+# Kure-re-order list yeUltimate Multisite country
 
 Dropdown inotore kutamba dzako kuti utange country, inotanga kune alphabetical based kana zvinhu zviri kuita English variants dzezvinhu zvecountry. Izvi zvinogona kuva kuti, mazuva maviri, home country ya company yako uye/kana vashandi vose vanenge vachiramba mumakore akawanda anogona kune zvinhu zvecountry.
 

@@ -3,7 +3,7 @@ title: Ajụjụ ọnụ nchọpụta
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ajụjụ Ọnụ Nchọpụta {#discovery-interview}
+# Ajụjụ Ọnụ Nchọpụta
 
 **Ajụjụ Ọnụ Nchọpụta** bụ nzọụkwụ mbụ na usoro imepụta nke Theme Builder. Ọ na-anakọta ozi gbasara saịtị gị, azụmahịa gị, na mmasị imewe gị iji mepụta theme ahaziri maka gị.
 

@@ -3,7 +3,7 @@ title: Ho lula le Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Le Tšhoboho le Cloudways Integration {#cloudways-integration}
+# Le Tšhoboho le Cloudways Integration
 
 ## Le Letsatsi la Morero (Overview) {#overview}
 Cloudways ke platform ya hosting e ebeletse (managed cloud hosting platform) e e tlhola ka sefapeng sa WordPress ka sefapeng sa cloud o fapaneng, ka DigitalOcean, AWS, Google Cloud, le ba bang. Ho na le ho fetoga haholo (automatic domain syncing) le ho fetoga certificate ya SSL molao (SSL certificate management) ho a re Ultimate Multisite le Cloudways.

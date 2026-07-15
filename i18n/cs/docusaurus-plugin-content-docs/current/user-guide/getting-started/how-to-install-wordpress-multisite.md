@@ -3,7 +3,7 @@ title: Jak nainstalovat WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Jak nainstaluji WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Jak nainstaluji WordPress Multisite?
 
 WordPress Multisite umožňuje provozovat síť webů na jediné instalaci. Jedná se o vestavěnou funkci, která ale není ve výchozím stavu aktivní.
 
@@ -61,7 +61,7 @@ A tento kód, rovněž poskytnutý WordPressem, do souboru _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# přidá lomítko na konec /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# přidá lomítko na konec /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

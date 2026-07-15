@@ -3,7 +3,7 @@ title: Deelbare links voor abonnementen beheren
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Deelbare links voor abonnementen beheren {#managing-shareable-links-for-plans}
+# Deelbare links voor abonnementen beheren
 
 Ultimate Multisite biedt je de mogelijkheid om links naar abonnementen rechtstreeks met je klanten te delen. Ga hiervoor naar een bewerkingspagina van een van je abonnementen en klik op de knop _Klik om de deelbare link te kopiëren_.
 

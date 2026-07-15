@@ -4,7 +4,7 @@ title: Filtry - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filtr: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filtr: wu_checkout_step_validation_submittable_field_types
 
 Pozwala deweloperom ominąć sprawdzenie, jeśli pole jest automatycznie przesyłane.
 

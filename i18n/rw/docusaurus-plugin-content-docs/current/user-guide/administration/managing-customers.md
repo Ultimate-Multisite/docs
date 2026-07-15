@@ -3,7 +3,7 @@ title: Gukemura abakoresywa
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kurera Umucozi (Managing Customers) {#managing-customers}
+# Kurera Umucozi (Managing Customers)
 
 Icyo **Customers** page igaragaza umwihariko wamwe naba yashyirwe mu gukoresha uburyo bwawe. Icyo cyo kigaragaza amakuru y'umuntu ku rugero, nk'izina ry'umuntu, email, igihe cyo kwihagarara (last login), no link **gukora** (switch to) w'uko urashobora gukoresha uburyo bwawe mu subsite ya umuntu nk'umukoresha w'ubwoko bw'uburyo.
 

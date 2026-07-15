@@ -3,7 +3,7 @@ title: Umpan Balik Pelanggan & Pelaporan Masalah
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Umpan Balik & Pelaporan Masalah Pelanggan {#customer-feedback--issue-reporting}
+# Umpan Balik & Pelaporan Masalah Pelanggan
 
 Gratis AI Agent v1.5.0 ngajang sistem umpan balik dan pelaporan masalah anu aya di dalamnya, nu ngidinan pengguna akhir bisa nunjukkeun jawaban nu teu mantep jeung lapor masalah langsung ti antarmuka obrolan. Sistem ieu ngawengku manajemen persetujuan (consent management), perintah pelaporan otomatis, sarta triage dibantu AI di *backend*.
 

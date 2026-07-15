@@ -3,7 +3,7 @@ title: Breytingaskrá mældra áskriftarleiða
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Breytingaskrá fyrir mælda áætlanir {#metered-plans-changelog}
+# Breytingaskrá fyrir mælda áætlanir
 
 Útgáfa 1.1.0 - Gefin út 2026-05-05
 - Nýtt: AI token-reikningagerð fyrir multisite-undirsíður — rekja og rukka fyrir AI token-notkun á vefsvæðum viðskiptavina með stillanlegum gjöldum á hvert token

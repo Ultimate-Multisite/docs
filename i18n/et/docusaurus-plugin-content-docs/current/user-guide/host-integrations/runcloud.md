@@ -3,7 +3,7 @@ title: RunCloud integreerimine
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integreerimine {#runcloud-integration}
+# RunCloud Integreerimine
 
 ## Üldinekuvur {#overview}
 RunCloud on pilutu põhine oleva serveri haldamise platvorm, mis võimaldab teil lihtsalt veebilehtide oma pilutena serveritele paigutada ja hallata. See integreerimine võimaldab automaatselt domeenid synkronida ja SSL-tööcertificate juhtida Ultimate Multisite'i ja RunCloudi vahel.

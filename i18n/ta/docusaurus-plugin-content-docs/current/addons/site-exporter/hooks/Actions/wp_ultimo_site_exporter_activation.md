@@ -4,7 +4,7 @@ title: செயல்பாடு - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Action: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Action: wp_ultimo_site_exporter_activation
 
 பிளக்-இன்-இன் மற்ற பகுதிகளும், இது செயல்படுத்தப்படும்போது (activation) தங்கள் செயல்பாடுகளை இணைக்க (attach) பயன்படுத்தலாம்.
 

@@ -3,7 +3,7 @@ title: Index Facultatum
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Index Facultatum {#abilities-reference}
+# Index Facultatum
 
 Facultates sunt actiones atomicae quas Gratis AI Agent in tua institutione WordPress invocare potest. Quaeque facultas est classis PHP registrata quae schema JSON exponit — agens hoc schema tempore exsecutionis legit ut intellegat quae parametra requirantur et quid facultas reddat.
 

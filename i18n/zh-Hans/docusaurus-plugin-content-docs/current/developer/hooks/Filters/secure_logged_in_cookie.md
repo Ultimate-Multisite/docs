@@ -4,7 +4,7 @@ title: 过滤器 - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Filter: secure_logged_in_cookie
 
 过滤已登录 cookie 是否仅通过 HTTPS 发送。
 

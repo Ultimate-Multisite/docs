@@ -3,7 +3,7 @@ title: Gutunganya ifishi yawe yo kwiyandikisha
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Guhindura uko Ifishi yawe yo Kwiyandikisha imeze {#customizing-your-registration-form}
+# Guhindura uko Ifishi yawe yo Kwiyandikisha imeze
 
 Kugira ngo urubuga rwawe rugaragare rwihariye ugereranyije n’izindi SaaS zose zubatswe kuri platform ya WordPress, Ultimate Multisite igufasha guhindura impapuro zawe zo kwiyandikisha no kwinjira ukoresheje umwihariko wacu wa **Checkout Forms**.
 

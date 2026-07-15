@@ -3,7 +3,7 @@ title: Jak zrušit předplatné
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Jak mohu zrušit své předplatné? {#how-can-i-cancel-my-subscription}
+# Jak mohu zrušit své předplatné?
 
 Pokud máte licenci Ultimate Multisite, můžete kdykoli zrušit její obnovování. Stačí postupovat podle následujících kroků:
 

@@ -3,7 +3,7 @@ title: Isakhono Sobuhle Benkqubo Yoyilo
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ubuchule beNkangeleko yeNkqubo yoYilo {#design-system-aesthetics-skill}
+# Ubuchule beNkangeleko yeNkqubo yoYilo
 
 **Ubuchule beNkangeleko yeNkqubo yoYilo** yindlela ekhokelwayo yokucokisa isazisi esibonakalayo sesayithi yakho. Ikunceda wenze izigqibo ezingaguquguqukiyo malunga ne-typography, umbala, izithuba, kunye nee-token zentshukumo ezichaza inkqubo yakho yoyilo.
 

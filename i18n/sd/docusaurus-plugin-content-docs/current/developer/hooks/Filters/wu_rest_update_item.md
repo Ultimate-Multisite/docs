@@ -4,7 +4,7 @@ title: فلٽر - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# فلٽر: wu_rest_update_item {#filter-wurestupdateitem}
+# فلٽر: wu_rest_update_item
 
 فلٽر ڪري ٿو ته درخواست سان اڳتي وڌڻ جي اجازت آهي يا نه.
 

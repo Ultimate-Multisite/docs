@@ -4,7 +4,7 @@ title: Filtrum - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Filtrum: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Filtrum: wu_element_block_types_to_check
 
 Fortasse necesse erit postea addere additicios bloques.
 

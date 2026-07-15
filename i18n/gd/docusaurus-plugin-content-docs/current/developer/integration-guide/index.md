@@ -3,7 +3,7 @@ title: Stiùireadh Amalachaidh
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Stiùireadh Amalachaidh {#integration-guide}
+# Stiùireadh Amalachaidh
 
 Tha an stiùireadh seo a’ còmhdach phàtranan amalachaidh cumanta le Ultimate Multisite, a’ gabhail a-steach ceangal ri seirbheisean taobh a-muigh, togail gheataichean pàighidh gnàthaichte, agus làimhseachadh webhooks.
 

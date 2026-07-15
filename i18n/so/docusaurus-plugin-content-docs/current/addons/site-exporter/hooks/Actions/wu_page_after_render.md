@@ -4,7 +4,7 @@ title: Ficil - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Fal: wu_page_after_render {#action-wupageafterrender}
+# Fal: wu_page_after_render
 
 Waxay dhacdaa ka dib marka bog la render gareeyo.
 

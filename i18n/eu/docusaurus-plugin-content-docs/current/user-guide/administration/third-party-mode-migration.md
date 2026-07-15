@@ -5,7 +5,7 @@ title: |+
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrazioa Trantzi-Parteak (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrazioa Trantzi-Parteak (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0-ekik, trantzi-parteak (third-party abilities) gaurren jakinarazpenak onartzen ditu. **Trantzi-parte modu horrek auto-ekin defaulta da**, zehatz konfiguratzea ez duzu behar; WordPress 7.0+ arren native WordPress Abilities API integrazioa aktibatzen du.
 

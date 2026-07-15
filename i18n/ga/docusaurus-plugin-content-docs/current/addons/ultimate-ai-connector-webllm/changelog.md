@@ -3,7 +3,7 @@ title: Loga athruithe Ultimate AI Connector do WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Loga Athruithe Ultimate AI Connector do WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Loga Athruithe Ultimate AI Connector do WebLLM
 
 ## Leagan 1.1.0 — Eisithe ar 2026-04-09 {#version-110--released-on-2026-04-09}
 

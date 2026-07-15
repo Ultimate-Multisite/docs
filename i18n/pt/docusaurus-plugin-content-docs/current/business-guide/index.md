@@ -3,7 +3,7 @@ title: Crie um negócio de websites de nicho
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Crie um negócio de websites de nicho com Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Crie um negócio de websites de nicho com Ultimate Multisite
 
 A maioria das pessoas que tenta vender websites compete em preço contra Wix, Squarespace e milhares de freelancers. Elas perdem. As que vencem escolhem um público específico, criam uma solução adaptada a esse público e cobram pelo valor que entregam.
 

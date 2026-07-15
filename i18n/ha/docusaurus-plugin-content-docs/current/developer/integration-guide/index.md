@@ -3,7 +3,7 @@ title: Jagorar Haɗawa
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Jagorar Haɗawa {#integration-guide}
+# Jagorar Haɗawa
 
 Wannan jagora yana bayyana salon haɗawa na gama-gari da Ultimate Multisite, ciki har da haɗawa da sabis na waje, gina payment gateways na musamman, da sarrafa webhooks.
 

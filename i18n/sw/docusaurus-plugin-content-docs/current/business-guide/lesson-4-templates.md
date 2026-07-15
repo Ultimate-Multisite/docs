@@ -3,7 +3,7 @@ title: 'Somo la 4: Kuunda Muundo Maalum'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Somo la 4: Kuunda Muundo wa Niche (Niche Templates) {#lesson-4-building-niche-templates}
+# Somo la 4: Kuunda Muundo wa Niche (Niche Templates)
 
 Muundo (Templates) ndio kiini cha thamani yako ya niche. Mmiliki wa studio ya mazoezi anayejiandikisha na kuona tovuti ambayo tayari inaonekana kama tovuti ya studio la mazoezi — ikiwa na ratiba za masaa, wasifu wa walimu, na picha sahihi — ana uwezekano mkubwa zaidi wa kubaki kuliko yule anayeona kurasa tupu.
 

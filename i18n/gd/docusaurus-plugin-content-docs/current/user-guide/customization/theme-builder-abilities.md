@@ -3,7 +3,7 @@ title: Abhailteachdaidhean Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Aibhleidhean Thiamh: Scaffolding agus Athbhreithneachadh Thiamhan Bloc {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Aibhleidhean Thiamh: Scaffolding agus Athbhreithneachadh Thiamhan Bloc
 
 Superdav AI Agent v1.12.0 a chluadaic duine dòighfidh dìbeul an t-ealaiann a tha a' gineadh agus a athbhreithnu thiamhan bloc ùra gu sònraichte frumhàir.
 

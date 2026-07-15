@@ -4,7 +4,7 @@ title: פעולה - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Action: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Action: wp_ultimo_vat_activation
 
 מאפשר לאجزות אחרות של ה-plugin לחבר את השגרה שלהן שמתבצעת במהלך ההפעלה.
 

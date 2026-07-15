@@ -3,7 +3,7 @@ title: 網域賣家變更日誌
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# 網域銷售變更記錄 {#domain-seller-changelog}
+# 網域銷售變更記錄
 
 版本 1.3.0 - 發布於 2026-06-02
 - 新增：當 HostAfrica 經銷商餘額過低時，新增 network-admin 警告

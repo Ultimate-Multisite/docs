@@ -3,7 +3,7 @@ title: Busca e substituição automáticas em modelos de site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Busca e substituição automáticas em modelos de site (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Busca e substituição automáticas em modelos de site (v2)
 
 _**Este tutorial requer WP UItimo versão 2.x.**_
 

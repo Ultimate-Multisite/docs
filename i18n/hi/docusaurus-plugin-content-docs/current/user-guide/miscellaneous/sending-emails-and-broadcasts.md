@@ -3,7 +3,7 @@ title: ईमेल और प्रसारण भेजना
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ईमेल और प्रसारण भेजना (v2) {#sending-emails-and-broadcasts-v2}
+# ईमेल और प्रसारण भेजना (v2)
 
 _**महत्वपूर्ण नोट: यह लेख Ultimate Multisite संस्करण 2.x से संबंधित है।**_
 

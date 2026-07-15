@@ -3,7 +3,7 @@ title: Palitranyň kontrastyny barla
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palitranyň kontrastyny barlamak {#validate-palette-contrast}
+# Palitranyň kontrastyny barlamak
 
 **Validate Palette Contrast** ukyby dizaýn palitraňyzdaky reňk jübütlerini temaňyza ulanmazdan öň WCAG (Web Content Accessibility Guidelines) laýyklygy boýunça barlaýar.
 

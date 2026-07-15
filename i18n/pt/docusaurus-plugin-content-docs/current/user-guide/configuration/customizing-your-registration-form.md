@@ -3,7 +3,7 @@ title: Personalizando o seu formulário de registo
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizar o seu Formulário de Registo {#customizing-your-registration-form}
+# Personalizar o seu Formulário de Registo
 
 Para fazer com que a sua rede pareça única em relação a todos os outros SaaS criados na plataforma WordPress, o Ultimate Multisite permite-lhe personalizar as suas páginas de registo e login com a nossa funcionalidade **Checkout Forms**.
 

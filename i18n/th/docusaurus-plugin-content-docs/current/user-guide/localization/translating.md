@@ -3,7 +3,7 @@ title: การแปล Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# การแปล Ultimate Multisite {#translating-ultimate-multisite}
+# การแปล Ultimate Multisite
 
 Ultimate Multisite พัฒนาขึ้นเป็นภาษาอังกฤษ แต่ปลั๊กอินนี้รองรับการแปลได้อย่างเต็มที่ และเรายินดีต้อนรับผู้ที่ต้องการมีส่วนร่วมในการแปลเสมอ
 

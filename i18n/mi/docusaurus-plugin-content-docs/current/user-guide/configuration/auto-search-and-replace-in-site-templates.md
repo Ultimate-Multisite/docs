@@ -3,7 +3,7 @@ title: Whakawāhi me Whakawāhi i Aotūroa i Tīmatanga Wāhi
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace i Te Tātai Wānanga (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace i Te Tātai Wānanga (v2)
 
 _**Ko tēnei mōhaka e hiahia ana ki WP UItimo version 2.x.**_
 

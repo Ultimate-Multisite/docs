@@ -3,7 +3,7 @@ title: ส่งออกและนำเข้า
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 ได้เพิ่มเครื่องมือ **ส่งออกและนำเข้า (Export & Import)** สำหรับไซต์เดียวภายใต้เมนู **Tools > Export & Import** คุณควรใช้เครื่องมือนี้เมื่อคุณต้องการรวมเว็บไซต์ WordPress ทั้งไซต์ให้เป็นไฟล์ ZIP, กู้คืนไฟล์ ZIP นั้น, หรือย้ายเว็บไซต์ระหว่างการติดตั้ง Ultimate Multisite และ WordPress แบบไซต์เดียวที่เข้ากันได้
 

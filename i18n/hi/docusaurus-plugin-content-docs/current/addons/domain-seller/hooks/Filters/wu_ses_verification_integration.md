@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# फ़िल्टर: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# फ़िल्टर: wu_ses_verification_integration
 
 फ़िल्टर: अन्य कोड को SES इंटीग्रेशन ऑब्जेक्ट प्रदान करने की अनुमति देता है।
 

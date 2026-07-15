@@ -3,7 +3,7 @@ title: Alat dan Konfigurasi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Alat dan Konfigurasi {#tools-and-configuration}
+# Alat dan Konfigurasi
 
 Theme Builder menggunakan serangkaian alat untuk menganalisis, merancang, dan membangun situs WordPress Anda. Dalam versi 1.16.0, **sd-ai-agent/site-scrape kini menjadi alat Tingkat 1**, sehingga tersedia secara default di Theme Builder. Superdav AI Agent v1.18.0 juga memperkenalkan paket pendamping Advanced yang didistribusikan secara terpisah untuk alur kerja developer tepercaya; alat-alat tersebut bukan bagian dari paket inti WordPress.org dan harus diinstal serta diotorisasi secara terpisah.
 

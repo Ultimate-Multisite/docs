@@ -4,7 +4,7 @@ title: Action - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# એક્શન: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# એક્શન: wp_ultimo_payfast_load
 
 જ્યારે બધા નિર્ભરતાઓ (dependencies) લોડ થઈ જાય ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

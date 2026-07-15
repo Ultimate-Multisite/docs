@@ -3,7 +3,7 @@ title: Closte تي سريز کانستانٽ کي تريندا
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte تي ڪلاسٽ ۾ sunrise constant کي true ڪرڻ جو طريقو {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte تي ڪلاسٽ ۾ sunrise constant کي true ڪرڻ جو طريقو
 
 ڪجهه هاستنگ فراهميون (host providers) سيكيورٽي جي ڪري wp-config.php کي لاک ڪري ڇڏين ٿيون. ان جو مطلب اهو آهي ته Ultimate Multisite خود بخاري طور تي فائل ۾ ضروري constants شامل نه ڪري سگهي ٿو جنهن سان ডومين ميپنگ ۽ ٻيا خاص ڪم ڪم (features) کام شروع ٿي سگهن. Closte ان ماڻهن مان هڪ آهي.
 

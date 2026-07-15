@@ -3,7 +3,7 @@ title: Ghid de Utilizare a Hook-urilor
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Ghid de utilizare al Hook-urilor {#hooks-usage-guide}
+# Ghid de utilizare al Hook-urilor
 
 Ultimate Multisite oferă peste 200 de hook-uri de acțiune (action hooks) și peste 280 de hook-uri de filtrare (filter hooks). Această pagină acoperă cele mai folosite hook-uri, oferind exemple practice. Pentru o referință completă, generată automat, consultați paginile din restul acestei secțiuni.
 

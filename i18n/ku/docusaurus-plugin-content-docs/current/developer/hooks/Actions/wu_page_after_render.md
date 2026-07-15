@@ -4,7 +4,7 @@ title: Çalakî - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Çalakî: wu_page_after_render {#action-wupageafterrender}
+# Çalakî: wu_page_after_render
 
 Destûrê bide pêşvebirên pêvekê ku piştî ku em rûpelê çap dikin naveroka zêde lê bikin
 

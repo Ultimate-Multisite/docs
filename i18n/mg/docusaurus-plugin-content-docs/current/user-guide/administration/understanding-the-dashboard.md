@@ -3,7 +3,7 @@ title: Fahafantarana ny Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Fahatana ny Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Fahatana ny Dashboard Ultimate Multisite
 
 Mialoha fa handray anjara amin'ny safidy fanamboarana avo lenta sy ny fomba fiasan'ny Ultimate Multisite isika, andeha hijery aloha ny dashboard.
 

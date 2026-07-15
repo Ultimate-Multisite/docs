@@ -4,7 +4,7 @@ title: Filtrilo - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Filtro: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Filtro: wu_element_maybe_extract_arguments
 
 Aldonas ĝeneralan filtrilon por permesi al programistoj etendi ĉi tiun analizilon por trakti kromajn konstruilojn aŭ plugins.
 

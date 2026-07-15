@@ -3,7 +3,7 @@ title: 'Õppetund 9: Kasumlik hinnastamine'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Õppetund 9: Kasumlik hinnastamine {#lesson-9-pricing-for-profit}
+# Õppetund 9: Kasumlik hinnastamine
 
 Õppetunnis 5 määrasime FitSite’i pakettidele algsed hinnad. Nüüd täiustame hinnastrateegiat tehnikatega, mis suurendavad tulu, soodustavad kõrgemale paketile üleminekut ja vähendavad loobumist.
 

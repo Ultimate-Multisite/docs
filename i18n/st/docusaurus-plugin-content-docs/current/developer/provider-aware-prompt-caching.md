@@ -3,7 +3,7 @@ title: Ho boloka Prompt ka Cache ho Hlokomelang Mofani
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Ho Boloka Prompt ka Cache ho Elang Hloko Provider {#provider-aware-prompt-caching}
+# Ho Boloka Prompt ka Cache ho Elang Hloko Provider
 
 Superdav AI Agent v1.12.0 e hlahisa **ho boloka prompt ka cache ho elang hloko provider**, ho ntlafatsang ditjeho tsa API le tieho ka ho boloka prompts ka cache ho pholletsa le providers ba fapaneng ba LLM. Provider ka nngwe e na le mekgwa le ditlhophiso tse fapaneng tsa caching.
 

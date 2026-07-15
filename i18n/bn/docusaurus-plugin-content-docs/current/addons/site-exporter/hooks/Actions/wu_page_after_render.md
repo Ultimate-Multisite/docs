@@ -4,7 +4,7 @@ title: অ্যাকশন - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# অ্যাকশন: wu_page_after_render {#action-wupageafterrender}
+# অ্যাকশন: wu_page_after_render
 
 একটি পেজ রেন্ডার করার পরে এটি কার্যকর হয়।
 

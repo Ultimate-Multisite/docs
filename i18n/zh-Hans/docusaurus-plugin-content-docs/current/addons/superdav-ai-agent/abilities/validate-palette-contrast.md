@@ -3,7 +3,7 @@ title: 验证调色板对比度
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# 验证调色板对比度 {#validate-palette-contrast}
+# 验证调色板对比度
 
 **验证调色板对比度**功能会检查您设计调色板中的颜色组合，以确保它们符合 WCAG（Web 内容无障碍指南）标准，然后再将这些颜色应用到您的主题上。
 

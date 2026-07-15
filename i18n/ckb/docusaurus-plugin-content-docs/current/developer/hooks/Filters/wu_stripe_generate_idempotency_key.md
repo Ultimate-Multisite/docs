@@ -4,7 +4,7 @@ title: فلتەر - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# فلتەر: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# فلتەر: wu_stripe_generate_idempotency_key
 
 ئەو بەهای idempotency_key ـە فلتەر دەکات کە لەگەڵ هەڵبژاردنەکانی Stripe charge دەنێردرێت.
 

@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# କାର୍ଯ୍ୟ: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# କାର୍ଯ୍ୟ: wu_mt_providers_registered
 
 ଡିଫଲ୍ଟ ପ୍ରଦାନକାରୀମାନେ ପଞ୍ଜୀକୃତ ହେବା ପରେ ଚାଲେ।
 

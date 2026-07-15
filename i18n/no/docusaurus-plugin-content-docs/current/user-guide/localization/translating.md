@@ -3,7 +3,7 @@ title: Oversette Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Oversette Ultimate Multisite {#translating-ultimate-multisite}
+# Oversette Ultimate Multisite
 
 Ultimate Multisite er utviklet på engelsk, men programtillegget er fullt oversettbart, og vi tar gjerne imot bidrag til oversettelser.
 

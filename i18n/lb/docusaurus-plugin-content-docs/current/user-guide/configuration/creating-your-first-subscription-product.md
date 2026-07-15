@@ -3,7 +3,7 @@ title: D'Creation vun Ihrem erschte Abonnementprodukt
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Iri erschte Abonnementprodukt (v2) {#creating-your-first-subscription-product-v2}
+# Iri erschte Abonnementprodukt (v2)
 
 _**WICHTIGE NOTIZ: Dä Artikel isch nur für Ultimate Multisite Version 2.x Nutzer.** _ **Wenn Sie Version 1.x bruche, luege Sie sich dä andere Artikel a.**
 

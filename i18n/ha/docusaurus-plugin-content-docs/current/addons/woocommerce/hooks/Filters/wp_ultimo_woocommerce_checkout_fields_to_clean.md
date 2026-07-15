@@ -4,7 +4,7 @@ title: Tace - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Tacewa: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Tacewa: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Yana ba masu haɓakawa damar tace tsoffin filayen adireshin biyan kuɗi na WooCommerce.
 

@@ -4,7 +4,7 @@ title: فلٽر - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# فلٽر: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# فلٽر: wu_woocommerce_line_item_params
 
 WooCommerce Cart تي line items ٺاهڻ لاءِ استعمال ٿيندڙ parameters کي فلٽر ڪريو، گراهڪ کي WooCommerce چيڪ آئوٽ ڏانهن موڪلڻ کان اڳ.
 

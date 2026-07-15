@@ -3,7 +3,7 @@ title: Kërkimi i domenit në krye
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Kërkimi i domenit në krye {#header-domain-search}
+# Kërkimi i domenit në krye
 
 Përdoreni këtë konfigurim kur dëshironi një formular të vogël në krye që nis kërkimin e një domeni, pastaj i lejon klientit të zgjedhë nga domenet e disponueshme brenda procesit të pagesës së Ultimate Multisite.
 

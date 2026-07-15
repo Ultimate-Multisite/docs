@@ -3,7 +3,7 @@ title: Domenų pardavėjo pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domenų pardavėjo pakeitimų žurnalas {#domain-seller-changelog}
+# Domenų pardavėjo pakeitimų žurnalas
 
 Versija 1.3.0 - Išleista 2026-06-02
 - Nauja: Pridėtas network-admin įspėjimas, kai HostAfrica perpardavėjo likutis tampa per mažas

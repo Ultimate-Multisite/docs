@@ -4,7 +4,7 @@ title: Muyunguruzo - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Akayunguruzo: wu_setup_wizard {#filter-wusetupwizard}
+# Akayunguruzo: wu_setup_wizard
 
 Emerera abategura kongeramo intambwe z’inyongera za setup wizard.
 

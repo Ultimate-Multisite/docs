@@ -3,7 +3,7 @@ title: Internet Search
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search {#internet-search}
+# Internet Search
 
 Gratis AI Agent v1.5.0 lägger till en funktion för **Internet Search** som låter AI-assistenten hämta uppdaterad information från webben under ett samtal. Detta drivs av [Brave Search API](https://brave.com/search/api/) eller [Tavily API](https://tavily.com/).
 

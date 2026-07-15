@@ -4,7 +4,7 @@ title: سۈزگۈچ - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filter: network_options_list {#filter-networkoptionslist}
+# Filter: network_options_list
 
 بىر network نىڭ domain ۋە path ئىگە تايىنىدىغان network تاللانمىلىرى تىزىملىكىنى سۈزۈيدۇ.
 

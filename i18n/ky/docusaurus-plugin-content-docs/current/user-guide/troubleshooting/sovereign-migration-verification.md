@@ -3,7 +3,7 @@ title: Суверенитеттин миграциясын текшерүү
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Суверенитеттегирүү (Sovereign Migration) текшерүү {#sovereign-migration-verification}
+# Суверенитеттегирүү (Sovereign Migration) текшерүү
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 версиясында суверен тенанттарды миграциялоо үчүн WP-CLI текшерүү буйруктары бар. Тенант миграциясы, SSO кирилиштери же изоляцияланган орнотуулар күтүлгөнүк боюнча иштебесе, аларды колдонуңуз.
 

@@ -3,7 +3,7 @@ title: Mphindo wa Kufunga ndi Mphindo wa DNS wa Mwana
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field and Customer DNS Management {#checkout-field-and-customer-dns-management}
+# Checkout Field and Customer DNS Management
 
 ## Kufuka kwa Kifaa cha Kuchagua Domain {#the-domain-selection-checkout-field}
 

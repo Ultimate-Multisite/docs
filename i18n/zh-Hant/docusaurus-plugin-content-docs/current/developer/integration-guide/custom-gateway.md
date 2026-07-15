@@ -3,7 +3,7 @@ title: 自訂閘道開發
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# 自訂 Gateway 開發 {#custom-gateway-development}
+# 自訂 Gateway 開發
 
 你可以透過擴充 `Base_Gateway` 類別來建立自訂付款 gateway。
 

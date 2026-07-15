@@ -4,7 +4,7 @@ title: Aðgerð - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Aðgerð: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Aðgerð: wp_ultimo_payfast_activation
 
 Leyfðu öðrum hlutum plugin að tengja sínar rútínur fyrir virkjun
 

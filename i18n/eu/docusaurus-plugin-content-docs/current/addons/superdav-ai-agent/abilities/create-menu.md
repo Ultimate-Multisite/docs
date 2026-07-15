@@ -3,7 +3,7 @@ title: Sortu menua
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Sortu menua {#create-menu}
+# Sortu menua
 
 **Sortu menua** gaitasunak WordPress nabigazio-menuak sortzen ditu, orri-izenburuetatik bereizitako nabigazio-etiketetarako euskarriarekin.
 

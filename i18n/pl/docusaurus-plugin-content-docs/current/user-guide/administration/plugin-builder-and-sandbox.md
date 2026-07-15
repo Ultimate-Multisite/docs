@@ -3,7 +3,7 @@ title: Konstruktor Wtyczek i Piaskownica
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 wprowadza **System Plugin Builder & Sandbox**, który pozwala asystentowi AI generować, aktywować i zarządzać pluginami WordPress na Twojej sieci — wszystko to w bezpiecznym, izolowanym środowisku sandbox.
 

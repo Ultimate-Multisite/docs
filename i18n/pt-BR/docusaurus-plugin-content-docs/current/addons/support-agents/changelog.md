@@ -3,7 +3,7 @@ title: Registro de alterações dos agentes de suporte
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Changelog dos Support Agents {#support-agents-changelog}
+# Changelog dos Support Agents
 
 Versão: 1.0.14 - Lançada em 2026-05-05
 * Correção: Adicionado o header Requires Plugins para declaração adequada de dependência de plugin do WordPress

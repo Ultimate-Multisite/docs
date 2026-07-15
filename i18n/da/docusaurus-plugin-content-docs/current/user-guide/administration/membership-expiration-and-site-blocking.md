@@ -3,7 +3,7 @@ title: Medlemskabets udløb og sites blokering
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Medlemskabets udløb og sites blokering {#membership-expiration-and-site-blocking}
+# Medlemskabets udløb og sites blokering
 
 Denne guide forklarer, hvordan Ultimate Multisite håndterer medlemskabets udløb, prøveperioders afslutning og blokering af front-end sider. Den dækker hele livscyklussen for et medlemskab fra aktiv til udløbet, indstillingerne, der styrer, om sider skal blokeres, og hvad du skal tjekke, hvis sider stadig er tilgængelige efter et medlemskab er udløbet.
 

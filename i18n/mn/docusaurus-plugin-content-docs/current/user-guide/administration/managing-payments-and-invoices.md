@@ -3,7 +3,7 @@ title: Төлбөр болон вэврэгчүүдийг удирдах
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Төлбөр ба Инвойсы Удирдах {#managing-payments-and-invoices}
+# Төлбөр ба Инвойсы Удирдах
 
 ## Төлбөрийн Тохиргоо {#payment-settings}
 

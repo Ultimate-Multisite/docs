@@ -3,7 +3,7 @@ title: ഡാഷ്ബോർഡ് മനസ്സിലാക്കൽ
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite ഡാഷ്ബോർഡ് മനസ്സിലാക്കാം {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite ഡാഷ്ബോർഡ് മനസ്സിലാക്കാം
 
 Ultimate Multisite-ന്റെ കൂടുതൽ വിപുലമായ കോൺഫിഗറേഷൻ ഓപ്ഷനുകളിലേക്കും പ്രവർത്തന വശങ്ങളിലേക്കും കടക്കുന്നതിന് മുമ്പ്, ഡാഷ്ബോർഡ് ഒന്ന് പരിചയപ്പെടാം.
 

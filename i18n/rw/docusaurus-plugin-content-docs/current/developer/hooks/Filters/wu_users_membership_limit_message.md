@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Akayunguruzo: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
+# Akayunguruzo: wu_users_membership_limit_message
 
 Emerera abategura guhindura ubutumwa bujyanye n’umubare ntarengwa w’abakoresha b’ubunyamuryango
 

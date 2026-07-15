@@ -3,7 +3,7 @@ title: Sprachwähler
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Sprachwähler {#language-selector}
+# Sprachwähler
 
 D'Funktion wird vom Addon **Language Selector** bereitgestellt.
 

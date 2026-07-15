@@ -3,7 +3,7 @@ title: الآلتميت ملتي سايت ١٠١
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite هڪ ووردپرس ملٽيسايت (Multisite) پلگئن آهي جيڪو توهان کي ڪلائين کي WaaS يا ويب سائٽس ايز ا سروس (Websites as a Service) ڏيڻ جي اجازت ڏئي ٿو. ان ۾ گهريان ۽ اسان سکون ٿا ته Ultimate Multisite توهان جي ڪاروبار ۽ ڪلائين کي ڪيئن مدد ڪري سگهي ٿو، پر شروع ڪرڻ کان اڳ، اسان کي ڪجهه بنيادي علم حاصل ڪرڻ گهرجي.
 

@@ -4,7 +4,7 @@ title: Filtras - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filtras: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filtras: wu_enforce_password_rules
 
 Filtruoja, ar taikyti papildomas slaptažodžių taisykles.
 

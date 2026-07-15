@@ -4,7 +4,7 @@ title: فیلتر - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# فیلتر: wu_sso_url {#filter-wussourl}
+# فیلتر: wu_sso_url
 
 دومین‌لر آراسی موشتری عمللری اوچون قایتاریلماقدان قاباق یارادیلان SSO URL-لری فیلتر ائدیر.
 

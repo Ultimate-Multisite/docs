@@ -3,7 +3,7 @@ title: WP Engine integrācija
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrācija ar WP Engine {#wp-engine-integration}
+# Integrācija ar WP Engine
 
 ## Īskatspekļa pārskats {#overview}
 WP Engine ir premium, administrēts WordPress hostings platforma, kas nodrošina optimizētu veiktspēju, drošību un skalabilitāti WordPress vietnēm. Šī integrācija ļauj automātiski singt domēnus starp Ultimate Multisite un WP Engine.

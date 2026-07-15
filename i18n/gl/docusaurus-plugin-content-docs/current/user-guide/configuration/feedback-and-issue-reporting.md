@@ -3,7 +3,7 @@ title: Retroalimentación do cliente e notificación de problemas
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback e Relatación de Problemas dos Clientes {#customer-feedback--issue-reporting}
+# Feedback e Relatación de Problemas dos Clientes
 
 Gratis AI Agent v1.5.0 introduce un sistema incorporado de feedback y reporte de problemas que permite aos usuarios finais marcar respostas que non sexan úteis e reportar problemas directamente desde a interfaz do chat. Este sistema inclui xestión de consentimento, un comando de reporte automatizado e triaxe axuda por IA no backend.
 

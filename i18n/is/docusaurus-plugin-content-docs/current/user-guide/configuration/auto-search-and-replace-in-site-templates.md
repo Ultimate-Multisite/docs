@@ -3,7 +3,7 @@ title: Sjálfsviðsökunar og skipta í stað á vísitalmum
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Sjálfsvættur og skipti í vísitalinn (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Sjálfsvættur og skipti í vísitalinn (v2)
 
 _**Þessi leiðbeiningar krefst WP UItimo úr 2.x.**_
 

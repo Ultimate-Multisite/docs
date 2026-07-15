@@ -3,7 +3,7 @@ title: 手動支払いの設定
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# 手動支払いの設定（v2） {#setting-up-manual-payments-v2}
+# 手動支払いの設定（v2）
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

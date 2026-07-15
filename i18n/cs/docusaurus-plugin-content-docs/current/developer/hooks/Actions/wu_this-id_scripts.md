@@ -4,7 +4,7 @@ title: 'Akce - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Akce: wu_{$this->id}_scripts {#action-wuthis-idscripts}
+# Akce: wu_{$this->id}_scripts
 
 Spouští hook pro přidávání skriptů (enqueue scripts hook).
 

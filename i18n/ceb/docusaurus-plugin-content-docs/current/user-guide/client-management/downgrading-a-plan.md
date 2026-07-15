@@ -3,7 +3,7 @@ title: Pag-downgrade sa Plano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Pagbaba sa plano (v2) {#downgrading-a-plan-v2}
+# Pagbaba sa plano (v2)
 
 _**MAHINUNGAN: Kini nga artikulo nagtumong sa Ultimate Multisite version 2.x.**_
 

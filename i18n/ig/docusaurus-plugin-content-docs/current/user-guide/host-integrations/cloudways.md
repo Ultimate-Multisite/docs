@@ -3,7 +3,7 @@ title: Nkwado Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Overview {#overview}
 Cloudways na-ehe platform hosting cloud-based management nke, na-enwe ịkwado ka ịdeploy WordPress sites na ọtụtụ ndị nchek cloud site dị ka DigitalOcean, AWS, Google Cloud, na ọzọ. Integration a na-eme iji syncing domain automatic na management SSL certificate n'etiti Ultimate Multisite na Cloudways.

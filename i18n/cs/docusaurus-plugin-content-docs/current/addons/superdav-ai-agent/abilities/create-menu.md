@@ -3,7 +3,7 @@ title: Vytvořit menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Vytváření menu {#create-menu}
+# Vytváření menu
 
 Funkce **Vytváření menu** umožňuje vytvářet navigační menu pro WordPress, s podporou definování navigačních popisků, které se liší od názvů stránek.
 

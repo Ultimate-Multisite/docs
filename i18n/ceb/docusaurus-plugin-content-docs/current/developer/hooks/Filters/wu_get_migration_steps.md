@@ -4,7 +4,7 @@ title: Pagsala - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Pansala: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Pansala: wu_get_migration_steps
 
 Tugotan ang mga developer ug add-ons sa pagdugang og bag-ong mga lakang sa migration
 

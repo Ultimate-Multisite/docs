@@ -3,7 +3,7 @@ title: उन्नत कोड उदाहरणहरू
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# उन्नत Code उदाहरणहरू {#advanced-code-examples}
+# उन्नत Code उदाहरणहरू
 
 यी उदाहरणहरूले Ultimate Multisite सँग उन्नत एकीकरण ढाँचाहरू देखाउँछन्।
 

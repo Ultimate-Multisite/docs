@@ -3,7 +3,7 @@ title: Urugero rw'Urugero rwa Gutera ku Ubwumvikane
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fomu za Checkout {#checkout-forms}
+# Fomu za Checkout
 
 Fomu za Checkout ni uwezekano rahisi na wenye kubadilika wa kujaribu mbinu tofauti wakati unajaribu kuhamasisha wateja wapya.
 

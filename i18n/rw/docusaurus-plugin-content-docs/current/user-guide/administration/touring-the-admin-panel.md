@@ -3,7 +3,7 @@ title: Gukora uburyo bwo gukoresha Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Gukoresha ku Admin Panel {#touring-the-admin-panel}
+# Gukoresha ku Admin Panel
 
 Ultimate Multisite yashobora kuba yakuriye kandi yashobora kuvuga mu buryo ufite uburyo bwo gukora, ariko n'ubwoko uyu mwiza cyane, yashobora kugufasha gutanga inyandiko y'ubwujgwa. Turemeze ku myemezo y'admin kugira ngo umenye aho wumva.
 

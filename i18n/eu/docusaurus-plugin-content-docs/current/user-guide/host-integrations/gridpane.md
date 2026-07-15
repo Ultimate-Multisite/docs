@@ -3,7 +3,7 @@ title: GridPane Integrazioa
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integrazioa {#gridpane-integration}
+# GridPane Integrazioa
 
 ## Deskuntzua {#overview}
 GridPane da WordPress profesionalak eta espezializatutako hosting kontrol panel bat da. Horrek Ultimate Multisite eta GridPane-ko artean domaineraren automatikoko sinkronizazioa eta SSL sertifikataren administrazioa gailatzen du.

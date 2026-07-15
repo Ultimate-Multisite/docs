@@ -3,7 +3,7 @@ title: 'Lezione 5: Progettare i tuoi piani'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lezione 5: Progettare i tuoi piani {#lesson-5-designing-your-plans}
+# Lezione 5: Progettare i tuoi piani
 
 I tuoi livelli di piani non sono solo fasce di prezzo, ma riflettono il modo in cui i tuoi clienti di nicchia operano realmente. In questa lezione, progetterai dei livelli di prodotto che corrispondano alle reali esigenze delle attività di fitness in diverse fasi.
 

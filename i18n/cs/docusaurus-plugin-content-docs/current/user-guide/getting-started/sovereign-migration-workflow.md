@@ -3,7 +3,7 @@ title: Workflow migrace suverénní
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow migrace do suverénního prostředí {#sovereign-migration-workflow}
+# Workflow migrace do suverénního prostředí
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 přidává brány pro ověření migrace při přesunu standardního subsite do infrastruktury suverénního nájemce (tenant).
 

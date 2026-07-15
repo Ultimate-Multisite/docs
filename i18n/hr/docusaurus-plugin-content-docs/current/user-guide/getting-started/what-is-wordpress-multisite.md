@@ -3,7 +3,7 @@ title: Što je WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Što je WordPress Multisite? {#what-is-wordpress-multisite}
+# Što je WordPress Multisite?
 
 Unutar svog jezgra, WordPress nudi značajku pod nazivom „Multisite” koja se uzima za početak 2010. s lansiranjem WordPressa 3.0. Od tada je dobio niz revizija namijenjenih dodavanju novih značajki i poboljšanju sigurnosti.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite 애드온 {#ultimate-multisite-addons}
+# Ultimate Multisite 애드온
 
 애드온은 추가 기능과 통합으로 Ultimate Multisite를 확장합니다. 대부분의 애드온은 유료이며 [ultimatemultisite.com](https://ultimatemultisite.com)에서 구매할 수 있습니다.
 

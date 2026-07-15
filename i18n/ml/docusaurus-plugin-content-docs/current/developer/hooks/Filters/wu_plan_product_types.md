@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filter: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filter: wu_plan_product_types
 
 പ്ലാനുകളായി കണക്കാക്കേണ്ട ഉൽപ്പന്ന തരങ്ങൾ (product types) ഫിൽട്ടർ ചെയ്യുന്നു.
 

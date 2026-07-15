@@ -4,7 +4,7 @@ title: Filtras – wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filtras: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Filtras: wu_get_checkout_variables
 
 Leidžia plugin kūrėjams filtruoti checkout puslapio iš anksto nustatytas reikšmes.
 

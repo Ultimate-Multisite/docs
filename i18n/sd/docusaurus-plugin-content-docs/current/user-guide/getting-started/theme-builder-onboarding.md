@@ -3,7 +3,7 @@ title: تھیم بلڊر آن بورڊنگ فلو
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# થીમ બિલ્ડર ઓનબોર્ડિંગ ફ્લો (Theme Builder Onboarding Flow) {#theme-builder-onboarding-flow}
+# થીમ બિલ્ડર ઓનબોર્ડિંગ ફ્લો (Theme Builder Onboarding Flow)
 
 Superdav AI Agent v1.12.0 માં એક માર્ગદર્શિત **થીમ બિલ્ડર ઓનબોર્ડિંગ ફ્લો** રજૂ કરવામાં આવ્યું છે જે તમને તમારી શરૂઆતની સેટઅપ દરમિયાન કસ્ટમ બ્લોક થીમ બનાવવામાં મદદ કરે છે. આ જૂના Site Builder મોડને વધુ લવચીક, એજન્ટ-સહાયિત અભિગમ સાથે બદલે છે.
 

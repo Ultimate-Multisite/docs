@@ -3,7 +3,7 @@ title: Paggawa ng mga Code ng Diskuwento
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Paggawa ng mga Discount Code (v2) {#creating-discount-codes-v2}
+# Paggawa ng mga Discount Code (v2)
 
 _**MAHALAGANG PAALALA: Tumutukoy ang artikulong ito sa Ultimate Multisite version 2.x.**_
 

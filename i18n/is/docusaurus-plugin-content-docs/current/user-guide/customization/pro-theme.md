@@ -3,7 +3,7 @@ title: PRO theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Skráning þínar Administra-panel með PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Skráning þínar Administra-panel með PRO Theme
 
 Ofanlega þegar við gerum vinnu fyrir viðskiptavini þurfa við að veita þeim sérstaka upplifun í administrasjóninu á WordPress. Ef þú leitarð eftir meira faglegum sjónar og kjönnum, getur PRO Theme hjálpa þér.
 

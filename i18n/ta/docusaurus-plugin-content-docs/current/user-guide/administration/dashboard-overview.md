@@ -3,7 +3,7 @@ title: டாஷ்போர்டு மேலோட்டம்
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard கண்ணோட்டம் {#dashboard-overview}
+# Dashboard கண்ணோட்டம்
 
 Ultimate Multisite-ல் Ultimate Multisite மெனுவின் கீழ் ஒரு தனிப்பட்ட **Dashboard** உள்ளது, மேலும் Network Dashboard-க்கும் widgets சேர்க்கிறது. இந்த கட்டுரை இரண்டு இடங்களிலும் நீங்கள் என்ன காண்பீர்கள் என்பதை விளக்குகிறது.
 

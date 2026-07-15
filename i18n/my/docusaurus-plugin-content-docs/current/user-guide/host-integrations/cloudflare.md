@@ -3,7 +3,7 @@ title: Cloudflare ပေါင်းစည်းမှု
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ပေါင်းစည်းမှု {#cloudflare-integration}
+# Cloudflare ပေါင်းစည်းမှု
 
 ## ခြုံငုံသုံးသပ်ချက် {#overview}
 Cloudflare သည် ဝဘ်ဆိုက်များကို ကာကွယ်ပြီး ပိုမိုမြန်ဆန်စေရန် ကူညီပေးသော ထိပ်တန်း အကြောင်းအရာ ပေးပို့ကွန်ရက် (CDN) နှင့် လုံခြုံရေးပံ့ပိုးသူဖြစ်သည်။ ဤပေါင်းစည်းမှုသည် Ultimate Multisite နှင့် Cloudflare ကြားတွင် အထူးသဖြင့် subdomain multisite ထည့်သွင်းမှုများအတွက် domain စီမံခန့်ခွဲမှုကို အလိုအလျောက်လုပ်ဆောင်နိုင်စေသည်။

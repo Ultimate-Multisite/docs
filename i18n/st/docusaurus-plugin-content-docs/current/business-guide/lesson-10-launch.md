@@ -3,7 +3,7 @@ title: 'Thuto ea 10: Letsatsi la ho qala'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Thuto ea 10: Letsatsi la ho Qalisa {#lesson-10-launch-day}
+# Thuto ea 10: Letsatsi la ho Qalisa
 
 Tsohle di hahilwe. Pele o bula menyako, thuto ena e feta lenaneng la tlhahlobo pele ho qalo ho netefatsa hore ha ho letho le robehileng, le haellang, kapa le hlabisang dihlong.
 

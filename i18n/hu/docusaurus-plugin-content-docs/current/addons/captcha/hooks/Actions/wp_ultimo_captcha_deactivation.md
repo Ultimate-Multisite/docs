@@ -4,7 +4,7 @@ title: Akció - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Akció: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Akció: wp_ultimo_captcha_deactivation
 
 Másik plugin részei használhatják ezt az akciót deaktívációs rutinjuk hozzáadásához.
 

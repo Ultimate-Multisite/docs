@@ -4,7 +4,7 @@ title: Darbība - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Darbība: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Darbība: wp_ultimo_support_agents_deactivation
 
 Ļauj citām plugin daļām piesaistīt savas deaktivizācijas rutīnas
 

@@ -3,7 +3,7 @@ title: Iompairte ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Intégráisi le ServerPilot {#serverpilot-integration}
+# Intégráisi le ServerPilot
 
 ## Oibríocht {#overview}
 Is é ServerPilot seirbhís cloud chun WordPress agus siti eile PHP websites a chur ar servera ag DigitalOcean, Amazon, Google, nó aon forn deiridh eile. Féachfaidh an chéad seo a bheith i gcónaí domáin agus cur chuimhneachán sertaic SSL idir Ultimate Multisite agus ServerPilot.

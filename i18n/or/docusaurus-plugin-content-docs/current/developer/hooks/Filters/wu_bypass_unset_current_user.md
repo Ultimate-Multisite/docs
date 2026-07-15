@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# ଫିଲ୍ଟର: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# ଫିଲ୍ଟର: wu_bypass_unset_current_user
 
 ବିକାଶକାରୀମାନଙ୍କୁ ବର୍ତ୍ତମାନ ବ୍ୟବହାରକାରୀକୁ unset କରୁଥିବା କୋଡ୍‌କୁ ଏଡ଼ାଇବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

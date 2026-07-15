@@ -4,7 +4,7 @@ title: Action - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Action: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Action: wu_multi_tenancy_init
 
 Multi-Tenancy add-on ကို အပြည့်အဝ စတင်ဖွဲ့စည်းပြီးနောက် အလုပ်လုပ်သည့် Action ဖြစ်သည်။
 

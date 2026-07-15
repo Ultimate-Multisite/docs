@@ -3,7 +3,7 @@ title: Provayderga mos prompt keshlash
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provayderdan xabardor Prompt Caching {#provider-aware-prompt-caching}
+# Provayderdan xabardor Prompt Caching
 
 Superdav AI Agent v1.12.0 **provayderdan xabardor prompt caching**ni taqdim etadi; u promptlarni turli LLM provayderlari bo‘ylab keshlash orqali API xarajatlari va kechikishni optimallashtiradi. Har bir provayderning keshlash mexanizmlari va konfiguratsiyalari turlicha.
 

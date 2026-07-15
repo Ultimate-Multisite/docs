@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Whakawhanaungatanga me Closte {#closte-integration}
+# Whakawhanaungatanga me Closte
 
 ## Ōrāpō (Overview) {#overview}
 Closte he platform hosting WordPress mōhaka (managed) kua tae mai i Google Cloud infrastructure. Ko te whakahoki (integration) này e tino pai ai te syncing o domain ā-auā me te whakamaoritanga SSL certificate mō Ultimate Multisite me Closte.

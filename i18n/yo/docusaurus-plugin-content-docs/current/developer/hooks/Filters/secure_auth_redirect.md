@@ -4,7 +4,7 @@ title: Àlẹ́mọ́ - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Àlẹmọ: secure_auth_redirect {#filter-secureauthredirect}
+# Àlẹmọ: secure_auth_redirect
 
 Ó ń ṣe àlẹmọ bóyá kí a lo ìdarípadà ìfàṣẹsí tó ní ààbò.
 

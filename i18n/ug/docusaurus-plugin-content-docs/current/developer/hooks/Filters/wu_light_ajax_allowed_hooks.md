@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# سۈزگۈچ: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# سۈزگۈچ: wu_light_ajax_allowed_hooks
 
 بىخەتەرلىك سەۋەبلىرى تۈپەيلىدىن، hook قىلىشقا بولىدىغان مەشغۇلاتلارنىڭ سانىنى چەكلەيمىز. زۆرۈر بولسا بۇ سۈزگۈچ ئاچقۇچىلارنىڭ شۇ تىزىملىكنى كېڭەيتىشىگە يول قويىدۇ.
 

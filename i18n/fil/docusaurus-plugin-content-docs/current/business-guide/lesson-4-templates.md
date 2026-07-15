@@ -3,7 +3,7 @@ title: 'Lesson 4: Pagbuo ng Niche Templates'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Pagbuo ng Niche Templates {#lesson-4-building-niche-templates}
+# Lesson 4: Pagbuo ng Niche Templates
 
 Ang mga template ay ang puso ng iyong *niche value proposition*. Ang isang may-ari ng fitness studio na magre-register at makakakita ng isang site na mukhang fitness website na—na may *class schedules*, *trainer profiles*, at tamang *imagery*—ay mas malamang na manatili kaysa sa isang makakakita lang ng *blank canvas*.
 

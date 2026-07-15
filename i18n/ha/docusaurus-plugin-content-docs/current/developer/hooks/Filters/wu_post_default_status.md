@@ -4,7 +4,7 @@ title: Tacewa - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Tacewa: wu_post_default_status {#filter-wupostdefaultstatus}
+# Tacewa: wu_post_default_status
 
 Yana tace bayanan abu kafin a adana shi cikin rumbun bayanai.
 

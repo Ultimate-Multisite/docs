@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_add_menu_page_slug_url
 sidebar_label: wu_add_menu_page_slug_url
 _i18n_hash: 8f4d638285fc2ad67313b1b730e776f6
 ---
-# Filter: wu_add_menu_page_slug_url {#filter-wuaddmenupageslugurl}
+# Filter: wu_add_menu_page_slug_url
 
 Developer များအနေဖြင့် URL များကို စစ်ထုတ် (filter) နိုင်စေပါသည်။
 

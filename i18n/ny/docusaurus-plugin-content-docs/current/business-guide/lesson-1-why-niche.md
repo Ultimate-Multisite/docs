@@ -3,7 +3,7 @@ title: 'Phunziro 1: Chifukwa Chake Kagawo ka Msika Kamapambana'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Phunziro 1: Chifukwa Chake Msika Wapadera Umapambana {#lesson-1-why-niche-wins}
+# Phunziro 1: Chifukwa Chake Msika Wapadera Umapambana
 
 Tisanakhudze software iliyonse, muyenera kumvetsa chifukwa chake kumangira gulu lapadera la anthu ndi chisankho chofunika kwambiri chimene mudzapange.
 

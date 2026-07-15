@@ -3,7 +3,7 @@ title: د ایمیلونو او خپرونو لېږل
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# د برېښنالیکونو او خپرونو لېږل (v2) {#sending-emails-and-broadcasts-v2}
+# د برېښنالیکونو او خپرونو لېږل (v2)
 
 _**مهمه یادونه: دا مقاله د Ultimate Multisite نسخې 2.x ته اشاره کوي.**_
 

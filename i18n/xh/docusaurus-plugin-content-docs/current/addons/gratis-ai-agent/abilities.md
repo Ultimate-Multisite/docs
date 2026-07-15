@@ -3,7 +3,7 @@ title: Isalathiso seZakhono
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Isalathisi Sezakhono {#abilities-reference}
+# Isalathisi Sezakhono
 
 Izakhono zizenzo ezisisiseko ezinokubizwa yi Gratis AI Agent kufakelo lwakho lwe WordPress. Isakhono ngasinye yi PHP class ebhalisiweyo eveza i JSON schema — i-agent ifunda le schema ngexesha lokusebenza ukuze iqonde ukuba zeziphi iiparameter ezifunekayo nokuba isakhono sibuyisa ntoni.
 

@@ -3,7 +3,7 @@ title: Crear Menú
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Crear Menú {#create-menu}
+# Crear Menú
 
 La capacidad de **Crear Menú** permite generar menús de navegación de WordPress con soporte para etiquetas de navegación distintas a los títulos de las páginas.
 

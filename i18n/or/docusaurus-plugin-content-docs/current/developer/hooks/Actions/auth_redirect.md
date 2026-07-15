@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# କାର୍ଯ୍ୟ: auth_redirect {#action-authredirect}
+# କାର୍ଯ୍ୟ: auth_redirect
 
 ପ୍ରମାଣୀକରଣ ପୁନର୍ନିର୍ଦ୍ଦେଶ ପୂର୍ବରୁ ଚାଲେ।
 

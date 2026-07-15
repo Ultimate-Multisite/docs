@@ -3,7 +3,7 @@ title: Sunrise ಫೈಲ್ ದೋಷ
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ಫೈಲ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವಾಗ ಎರರ್ {#error-installing-the-sunrise-file}
+# Sunrise ಫೈಲ್ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವಾಗ ಎರರ್
 
 sunrise.php ಫೈಲ್ ಒಂದು ವಿಶೇಷ ಫೈಲ್ ಆಗಿದ್ದು, WordPress ತನ್ನನ್ನು ತಾನು ಪ್ರಾರಂಭಿಸುವಾಗ ಇದನ್ನು ಹುಡುಕುತ್ತದೆ. WordPress ಈ sunrise.php ಫೈಲ್ ಅನ್ನು ಗುರುತಿಸಬೇಕಾದರೆ, ಅದು **wp-content ಫೋಲ್ಡರ್** ಒಳಗೆ ಇರಬೇಕು.
 

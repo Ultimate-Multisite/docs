@@ -4,7 +4,7 @@ title: فلٽر - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count {#filter-wufluentformcount}
+# Filter: wu_fluent_form_count
 
 plugin ڊولپرن کي فارم جي ڪل ڳڻپ تبديل ڪرڻ جي اجازت ڏيو
 

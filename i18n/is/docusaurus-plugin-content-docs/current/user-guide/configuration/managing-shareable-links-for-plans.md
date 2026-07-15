@@ -3,7 +3,7 @@ title: Styring de skýrskiljanlegar tengslir fyrir plan
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Stjórnun delingarskila fyrir planum {#managing-shareable-links-for-plans}
+# Stjórnun delingarskila fyrir planum
 
 Ultimate Multisite ger þér möguleika að deila skila-skila (shareable) linkum beint með viðskiptavinum þínum. Til þess, farðu í einhver af útrekkjastum (edit) sínum plana og klikka á knappa _Click to copy the Shareable Link_.
 

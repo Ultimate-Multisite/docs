@@ -3,7 +3,7 @@ title: 管理網站
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# 網站管理 {#managing-sites}
+# 網站管理
 
 網站（或子網站）是您 WaaS 業務的核心。Ultimate Multisite 有 3 種網站類型：
 

@@ -3,7 +3,7 @@ title: Jak získat pomoc
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Jak získat pomoc {#how-to-get-help}
+# Jak získat pomoc
 
 K vaší platné licenci máte přístup k našemu týmu, který vám pomůže vyřešit případné problémy při nastavování Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Kukonseka kwa ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Umuwamba wa ServerPilot {#serverpilot-integration}
+# Umuwamba wa ServerPilot
 
 ## Kufunika (Overview) {#overview}
 ServerPilot ndi service la cloud lomwe limapereka kupeza WordPress ndi zinthu zina za PHP pa servers monga DigitalOcean, Amazon, Google, kapena wopereka wina. Kufuna kuli ndikukonza kukhazikitsa domain kwawo ndi kusunga SSL certificate m'moyo mwa Ultimate Multisite ndi ServerPilot.

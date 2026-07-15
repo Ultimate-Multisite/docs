@@ -3,7 +3,7 @@ title: 테마 빌더 온보딩 플로우
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# 테마 빌더 온보딩 과정 {#theme-builder-onboarding-flow}
+# 테마 빌더 온보딩 과정
 
 Superdav AI Agent v1.12.0은 사용자가 초기 설정을 할 때 맞춤형 블록 테마를 만들 수 있도록 안내하는 **테마 빌더 온보딩 과정**을 도입했습니다. 이 기능은 기존의 Site Builder 모드를 대체하여 더욱 유연하고 에이전트의 도움을 받는 방식으로 개선되었습니다.
 

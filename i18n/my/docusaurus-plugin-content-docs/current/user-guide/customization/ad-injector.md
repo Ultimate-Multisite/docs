@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector ဖြင့် သင့် network တွင် ကြော်ငြာများထည့်သွင်းခြင်း {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector ဖြင့် သင့် network တွင် ကြော်ငြာများထည့်သွင်းခြင်း
 
 Ultimate Multisite: Ad Injector သည် **အခမဲ့ add-on** တစ်ခုဖြစ်ပြီး သင့် plan များ၏ edit page မှ တိုက်ရိုက် ကြော်ငြာများထည့်သွင်းနိုင်သော tools များကို ပေးစွမ်းပါသည်။
 

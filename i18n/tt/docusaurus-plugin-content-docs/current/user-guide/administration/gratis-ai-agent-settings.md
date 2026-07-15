@@ -3,7 +3,7 @@ title: Gratis AI Agent көйләүләре
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent көйләүләре {#gratis-ai-agent-settings}
+# Gratis AI Agent көйләүләре
 
 Gratis AI Agent эчендәге **Settings → Advanced** экраны backend интеграцияләре өчен администратор дәрәҗәсендәге конфигурация бирә. Бу бит фикерне юнәлтүне, эзләү провайдеры ачкычларын, идарә ителә торган Superdav сервисын көйләүне, Google Calendar идарәләрен, TextBee SMS көйләүләрен һәм челтәр буенча функция флагларын документлаштыра.
 

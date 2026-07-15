@@ -3,7 +3,7 @@ title: Integrasyon sa Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Pagsamkon sa Hestia Control Panel {#hestia-control-panel-integration}
+# Pagsamkon sa Hestia Control Panel
 
 Kini nga giya nagpatin-aw unsaon pag-configure sa Ultimate Multisite Hestia integration aron awtomatikong madugang (ug ma-alis) ang mga domain nga gipamapa sa imong network isip Web Domain Aliases sa Hestia.
 

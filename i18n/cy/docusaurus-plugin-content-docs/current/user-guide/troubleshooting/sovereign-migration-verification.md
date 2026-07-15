@@ -3,7 +3,7 @@ title: Cyflwyniad Mynediad Sovereiniol
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Gwylio'r Mynediad Sefydliol {#sovereign-migration-verification}
+# Gwylio'r Mynediad Sefydliol
 
 Mae Ultimate Multisite: Multi-Tenancy 1.2.0 yn cynnwys adferiadau WP-CLI i mynediadau tenantau sefydliol (sovereign). Defnyddiwch nhw pan fod y mynediad tenant, y myfylch SSO, neu'r seiliedigall isgoel nid yn ymddygi fel yr oedd yn cael ei gofyn.
 

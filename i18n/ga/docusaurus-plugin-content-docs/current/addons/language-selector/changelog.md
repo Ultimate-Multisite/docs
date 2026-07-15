@@ -3,7 +3,7 @@ title: Loga athruithe an roghnóra teanga
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Log Athruithe Language Selector {#language-selector-changelog}
+# Log Athruithe Language Selector
 
 Leagan: 1.1.3 - Eisithe ar 2026-05-05
 * Deisiú: Déantar athróga ionchuir a ghlanadh anois agus cuirtear réimír le hainmneacha hook saincheaptha chun coinbhleachtaí le breiseáin tríú páirtí a chosc

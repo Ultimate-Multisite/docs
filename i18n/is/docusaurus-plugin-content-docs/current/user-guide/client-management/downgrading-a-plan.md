@@ -3,7 +3,7 @@ title: Nedskráning staðar
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedskráning staðans (v2) {#downgrading-a-plan-v2}
+# Nedskráning staðans (v2)
 
 _**VIÐVÖGUN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 

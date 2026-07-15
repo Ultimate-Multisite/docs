@@ -3,7 +3,7 @@ title: 'Sapak 6: Hasaba ýazylmak tejribesi'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 6-njy sapak: Hasaba ýazylmak tejribesi {#lesson-6-the-signup-experience}
+# 6-njy sapak: Hasaba ýazylmak tejribesi
 
 Checkout akymy gyzyklanmanyň girdejä öwrülýän ýeridir. Bulaşyk ýa-da umumy hasaba ýazylmak prosesi müşderileri ýitirýär. Olaryň dilinde gepleýän we kynçylyksyz duýulýan nişa mahsus akym bolsa olary müşderä öwürýär.
 

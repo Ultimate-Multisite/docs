@@ -4,7 +4,7 @@ title: Actie - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Actie: delete_network {#action-deletenetwork}
+# Actie: delete_network
 
 Wordt geactiveerd nadat een netwerk is verwijderd.
 

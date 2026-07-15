@@ -4,7 +4,7 @@ title: فلٽر - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# فلٽر: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# فلٽر: wu_checkout_step_validation_submittable_field_types
 
 ڊولپرز کي اجازت ڏيو ته جيڪڏهن ڪو فيلڊ خودڪار طور جمع ڪرائي سگهجي ٿو ته چيڪ کي باءِ پاس ڪن.
 

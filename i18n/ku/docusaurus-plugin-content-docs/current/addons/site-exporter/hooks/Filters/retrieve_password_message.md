@@ -4,7 +4,7 @@ title: Parzûn - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Parzûn: retrieve_password_message {#filter-retrievepasswordmessage}
+# Parzûn: retrieve_password_message
 
 Laşê peyama e-nameya nûkirina şîfreyê diparzîne.
 

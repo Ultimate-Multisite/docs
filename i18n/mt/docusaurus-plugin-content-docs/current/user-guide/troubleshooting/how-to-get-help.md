@@ -3,7 +3,7 @@ title: Comeċċa għall-għajnuna
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Comeċċa għall-għajnuna {#how-to-get-help}
+# Comeċċa għall-għajnuna
 
 Approvvdi l-chiave ta lisenza tiegħek, u li hija pjatta għal l-akses tal-team tagħna biex ngħinak li tivverilix issewliemiet li tista' tfitteġi kljuti fl-istrutturar ta Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: පෙරහන - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# පෙරහන: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# පෙරහන: wu_get_site_domain_and_path
 
 වසම/මාර්ග යුගල වෙනස් කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
 

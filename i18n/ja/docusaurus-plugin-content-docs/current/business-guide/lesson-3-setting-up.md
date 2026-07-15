@@ -3,7 +3,7 @@ title: レッスン3：ネットワークの設定
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# レッスン3：ネットワークの構築 {#lesson-3-setting-up-your-network}
+# レッスン3：ネットワークの構築
 
 いよいよ構築の段階です。このレッスンでは、Ultimate Multisiteをインストールし、FitSiteネットワークの基盤を構築します。ここで下すすべての決定は、フィットネスというニッチ市場を念頭に置いて行います。
 

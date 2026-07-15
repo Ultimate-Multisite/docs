@@ -3,7 +3,7 @@ title: Momwe Mungakhazikitsire Kulumikiza Madomaini
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Momwe Mungakonzekere Kulumikiza Domain (v2) {#how-to-configure-domain-mapping-v2}
+# Momwe Mungakonzekere Kulumikiza Domain (v2)
 
 _**CHIDZIWITSO CHOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite mtundu wa 2.x.**_
 

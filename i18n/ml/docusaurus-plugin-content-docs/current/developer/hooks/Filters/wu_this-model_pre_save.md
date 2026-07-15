@@ -4,7 +4,7 @@ title: 'Filter - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
+# Filter: wu_\{$this->model\}_pre_save
 
 ഡാറ്റാബേസിൽ സ്റ്റോർ ചെയ്യുന്നതിന് മുൻപ് ഒബ്ജക്റ്റ് ഡാറ്റ ഫിൽട്ടർ ചെയ്യാൻ ഇത് ഉപയോഗിക്കുന്നു.
 

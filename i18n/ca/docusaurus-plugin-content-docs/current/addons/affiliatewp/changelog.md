@@ -3,7 +3,7 @@ title: AffiliateWP Historial de canvis
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Diari de canvis d'AffiliateWP {#affiliatewp-changelog}
+# Diari de canvis d'AffiliateWP
 
 Versió: 2.0.1 - Publicat el 2025-09-28
 

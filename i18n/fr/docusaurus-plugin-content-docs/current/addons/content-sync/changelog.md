@@ -3,7 +3,7 @@ title: Journal des modifications de Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog de la synchronisation de contenu {#content-sync-changelog}
+# Changelog de la synchronisation de contenu
 
 ### Version 1.1.0 - Publié le 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nouveau : prise en charge de la synchronisation de tous les types de publication (articles, pages, types de publication personnalisés)

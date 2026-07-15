@@ -4,7 +4,7 @@ title: कार्य - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# कार्य: wu_duplicate_site {#action-wuduplicatesite}
+# कार्य: wu_duplicate_site
 
 साइटको नक्कल भएपछि विकासकर्ताहरूलाई hook गर्न अनुमति दिन्छ।
 

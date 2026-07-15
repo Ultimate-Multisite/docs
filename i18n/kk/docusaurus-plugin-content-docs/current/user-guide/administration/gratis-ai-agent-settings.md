@@ -3,7 +3,7 @@ title: Gratis AI Agent баптаулары
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent параметрлері {#gratis-ai-agent-settings}
+# Gratis AI Agent параметрлері
 
 Gratis AI Agent ішіндегі **Settings → Advanced** экраны backend интеграцияларына арналған әкімші деңгейіндегі конфигурацияны ұсынады. Бұл бет feedback қайта жіберуді, іздеу провайдері кілттерін, басқарылатын Superdav қызметін баптауды, Google Calendar басқару элементтерін, TextBee SMS параметрлерін және бүкіл желі бойынша мүмкіндік жалаушаларын құжаттайды.
 

@@ -3,7 +3,7 @@ title: Soevereine Huurderoperasies
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Soevereine Huurder Operasies {#sovereign-tenant-operations}
+# Soevereine Huurder Operasies
 
 Ultimate Multisite 1.2.0 voeg operasionele gereedskap by vir soevereine huurders toe: subsites wat met hul eie database, lêersiste wortel en routing konte werk terwyl hulle steeds deur die netwerkbeheerder sigbaar is.
 

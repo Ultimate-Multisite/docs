@@ -3,7 +3,7 @@ title: إنشاء رموز الخصم
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# إنشاء أكواد الخصم (v2) {#creating-discount-codes-v2}
+# إنشاء أكواد الخصم (v2)
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

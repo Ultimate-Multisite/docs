@@ -3,7 +3,7 @@ title: WordPress Multisite ڪيئن نصب ڪجي؟
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite कसरी इन्स्टल गर्ने? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite कसरी इन्स्टल गर्ने?
 
 WordPress Multisite ले तपाईंलाई एउटै इन्स्टलेसनमा धेरै साइटहरूको नेटवर्क बनाउन अनुमति दिन्छ। यो एउटा बिल्ट-इन फिचर हो, तर डिफल्ट रूपमा यसको सक्रियता हुँदैन।
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin ৰ বাবে এটা শেষ স্ল্যাশ যোগ কৰক {#add-a-trailing-slash-to-wp-admin}
+# /wp-admin ৰ বাবে এটা শেষ স্ল্যাশ যোগ কৰক
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

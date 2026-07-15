@@ -3,7 +3,7 @@ title: 'Piwulang 1: Napa Ceruk Pasar Menang'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Pawulangan 1: Napa Ceruk Menang {#lesson-1-why-niche-wins}
+# Pawulangan 1: Napa Ceruk Menang
 
 Sadurunge kita ndemek piranti lunak apa wae, sampeyan kudu mangerteni napa mbangun kanggo pamirsa tartamtu iku kaputusan siji sing paling wigati sing bakal sampeyan gawe.
 

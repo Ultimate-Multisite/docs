@@ -3,7 +3,7 @@ title: Paišykite/Privalomas kontrolės panelio integracijos tobulinimas
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Poprawa Integracji z Panelami Sterowania {#enhance-control-panel-integration}
+# Poprawa Integracji z Panelami Sterowania
 
 ## Przegląd {#overview}
 Enhance to nowoczesny panel sterowania, który oferuje potężne możliwości automatyzacji i zarządzania hostingiem. Ta integracja umożliwia automatyczne synchronizowanie domen oraz zarządzanie certyfikatami SSL między Ultimate Multisite a Enhance Control Panel.

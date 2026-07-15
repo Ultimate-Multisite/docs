@@ -3,7 +3,7 @@ title: Ìṣàkóso Owó-orí
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ìṣàkóso Owo-orí {#tax-handling}
+# Ìṣàkóso Owo-orí
 
 Ultimate Multisite ní module gbigba owo-orí tí a kọ sínú plugin pàtàkì wa, nítorí náà bí o bá nílò láti gba àwọn owo-orí títà lórí àwọn plan, package àti iṣẹ́ rẹ, o lè ṣe bẹ́ẹ̀ rọrùn láì fi dandan sí fifi àfikún kankan síi.
 

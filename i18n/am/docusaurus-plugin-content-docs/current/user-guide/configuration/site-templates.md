@@ -3,7 +3,7 @@ title: የጣቢያ አብነቶች
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# የጣቢያ አብነቶች (v2) {#site-templates-v2}
+# የጣቢያ አብነቶች (v2)
 
 _**ማስታወሻ፦ ይህ ጽሑፍ የUltimate Multisite ስሪት 2.xን ይመለከታል። ስሪት 1.x እየተጠቀሙ ከሆነ፣**_ **ይህን ጽሑፍ ይመልከቱ** _**.**_
 

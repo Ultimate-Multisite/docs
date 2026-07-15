@@ -3,7 +3,7 @@ title: Способности за управление на плагини
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Способности за управление на плагини {#plugin-management-abilities}
+# Способности за управление на плагини
 
 Gratis AI Agent v1.5.0 включва **7 способности за управление на плагини**, които AI асистентът може да използва по време на разговор. Тези способности предоставят програмируем контрол върху плагините, инсталирани в WordPress чрез [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

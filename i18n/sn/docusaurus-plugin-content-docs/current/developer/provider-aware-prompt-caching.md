@@ -3,7 +3,7 @@ title: Kuchengetwa kwePrompt Kunoenderana neMupi
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt Caching Inoziva Provider {#provider-aware-prompt-caching}
+# Prompt Caching Inoziva Provider
 
 Superdav AI Agent v1.12.0 inounza **provider-aware prompt caching**, iyo inogadzirisa mutengo weAPI nekumhanya nekuchengetedza maprompt pakati peLLM providers vakasiyana. Provider mumwe nemumwe ane nzira nemagadzirirwo akasiyana e caching.
 

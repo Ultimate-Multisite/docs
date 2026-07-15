@@ -3,7 +3,7 @@ title: ସମୁଦାୟ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimates Multisite కమ్యూనిటీలో ఎలా చేరాలి {#how-to-join-ultimate-multisite-community}
+# Ultimates Multisite కమ్యూనిటీలో ఎలా చేరాలి
 
 Ultimate Multisite Community అనేది ఒక చోటు, అక్కడ మీరు ఇతర Ultimate Multisite యూజర్లతో మాట్లాడవచ్చు మరియు చిట్కాలు, అనుభవాలు వంటి వాటిని పంచుకోవచ్చు. Ultimate Multisite Community-కి యాక్సెస్ పొందడానికి https://community.ultimatemultisite.com/home కి వెళ్లండి.
 

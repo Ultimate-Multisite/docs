@@ -3,7 +3,7 @@ title: Diarin'ny fanovana amin'ny Tambajotra Maro
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Diarin’ny fiovan’ny Multi-Network {#multi-network-changelog}
+# Diarin’ny fiovan’ny Multi-Network
 
 ### 1.3.0 {#130}
 * Vaovao: Mpijery mialoha lasitra tambajotra — zahao sy jereo mialoha ireo lasitra tambajotra miaraka amin’ny tontonana mivantana alohan’ny hividianana.

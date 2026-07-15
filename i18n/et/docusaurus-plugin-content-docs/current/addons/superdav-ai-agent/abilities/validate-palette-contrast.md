@@ -3,7 +3,7 @@ title: Valideeri paleti kontrastsus
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Paleti kontrasti valideerimine {#validate-palette-contrast}
+# Paleti kontrasti valideerimine
 
 Võime **Validate Palette Contrast** kontrollib sinu kujunduspaleti värvipaare WCAG (Web Content Accessibility Guidelines) nõuetele vastavuse suhtes enne nende rakendamist sinu theme’ile.
 

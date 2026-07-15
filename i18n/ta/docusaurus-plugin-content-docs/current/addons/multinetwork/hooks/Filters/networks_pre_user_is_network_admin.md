@@ -4,7 +4,7 @@ title: Filter - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 ஒரு பயனர் எந்தெந்த நெட்வொர்க்குகளின் நிர்வாகி என்பதை வடிகட்டி, செயல்முறையை நேரடியாக முடிவுக்குக் கொண்டு வர (short-circuit) இது உதவுகிறது.
 

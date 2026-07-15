@@ -3,7 +3,7 @@ title: Kolmannen osapuolen tilan siirto
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Kolmannen kolmannen tilaan siirtyminen (Third-Party Mode Migration) {#third-party-mode-migration}
+# Kolmannen kolmannen tilaan siirtyminen (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 muuttaa tapaa, jolla kolmannen osapuoliin liittyvät ominaisuudet käsitellään. **Kolmannen tila on nyt oletusarvoisesti "auto"**, mahdollistaen natiivin WordPress Abilities API -integraation WordPress 7.0+ versioissa ilman manuaalista konfiguraatiota.
 

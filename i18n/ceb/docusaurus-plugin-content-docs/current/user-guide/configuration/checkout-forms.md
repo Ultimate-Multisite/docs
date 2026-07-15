@@ -3,7 +3,7 @@ title: Mga Porma sa Pagbayad
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Ang Checkout Forms usa ka dali ug flexible nga paagi para mag-eksperimento sa lain-laing pamaagi kung nagtinguha kang makakuha og bag-ong mga kustomer.
 

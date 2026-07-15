@@ -3,7 +3,7 @@ title: Abilità di Gestione dei Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Funzionalità di Gestione dei Plugin {#plugin-management-abilities}
+# Funzionalità di Gestione dei Plugin
 
 Gratis AI Agent v1.5.0 include **7 funzionalità di gestione dei plugin** che l'assistente AI può utilizzare durante una conversazione. Queste funzionalità forniscono un controllo programmatico sui plugin WordPress installati tramite il [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

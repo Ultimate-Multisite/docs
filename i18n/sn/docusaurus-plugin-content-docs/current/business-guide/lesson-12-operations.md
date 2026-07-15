@@ -3,7 +3,7 @@ title: 'Chidzidzo 12: Kutungamira Bhizinesi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Chidzidzo 12: Kumhanyisa Bhizinesi {#lesson-12-running-the-business}
+# Chidzidzo 12: Kumhanyisa Bhizinesi
 
 Chikuva hachisi chirongwa chaunopedza -- ibhizinesi raunomhanyisa. Chidzidzo ichi chinovhara mabasa ezuva nezuva ekutarisira FitSite: rubatsiro, kubhadharisa, kuchengetedza, uye kuchengeta vatengi vachifara.
 

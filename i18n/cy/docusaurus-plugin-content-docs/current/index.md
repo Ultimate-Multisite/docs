@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Dokumentasi Ultimate Multisite {#ultimate-multisite-documentation}
+# Dokumentasi Ultimate Multisite
 
 Barchonch yn ddogfennau Ultimate Multisite. Mae Ultimate Multisite yn transformio WordPress Multisite i'r ffurf Website as a Service (WaaS) llawn.
 
@@ -18,7 +18,7 @@ Mae pob hyn sydd ei angen i'r setheddi, cyfluni, a rheoli eich platform WaaS. Ma
 
 Cyfluniad teknig ar gyfer deberwyr sy'n gweithio ar Ultimate Multisite. Mae’n cynnwys cyfluniadau hook, ddogfennau REST API, a cyfarwyddiadau deweloli addonau.
 
-### [Addons](/addons) {#addons}
+### [Ychwanegion](/addons) {#addons}
 
 Documentadref ar gyfer pluginau addonau peidiadol sy'n gyflymu Ultimate Multisite gyda phrychiadau ychwanegol fel cysylltiad â WooCommerce, analysau (analytics), gwerthu domena, a chwarae hefyd.
 

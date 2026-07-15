@@ -3,7 +3,7 @@ title: コードスニペット
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 用コードスニペット {#code-snippets-for-v2}
+# v2 用コードスニペット
 
 基本的に、**WordPress** のコードスニペットは、本来なら専用の小さな plugin が必要になる特定の処理を行うために使います。このようなコードスニペットは、WordPress 本体または theme のファイルのいずれか（通常は theme の functions.php ファイル）に配置します。また、MU plugin として使うこともできます。
 

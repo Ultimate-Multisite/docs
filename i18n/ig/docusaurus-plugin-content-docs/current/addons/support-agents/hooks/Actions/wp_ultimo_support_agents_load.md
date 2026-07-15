@@ -4,7 +4,7 @@ title: Omume - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# Omume: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# Omume: wp_ultimo_support_agents_load
 
 Na-akpalite mgbe ebudatara ndabere niile
 

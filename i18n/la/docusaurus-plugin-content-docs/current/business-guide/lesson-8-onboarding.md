@@ -3,7 +3,7 @@ title: 'Lectio 8: Initiatio clientium'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lectio 8: Introductio Clientium {#lesson-8-customer-onboarding}
+# Lectio 8: Introductio Clientium
 
 Clientem ad inscriptionem perducere dimidia tantum pars operis est. Si intrat, se oppressum sentit, et numquam redit, eum amisisti. Haec lectio experientiam designat quae novam inscriptionem in clientem activum et implicatum convertit.
 

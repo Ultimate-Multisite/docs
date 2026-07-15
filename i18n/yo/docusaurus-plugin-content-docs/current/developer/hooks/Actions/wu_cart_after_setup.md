@@ -4,7 +4,7 @@ title: Ìgbésẹ - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Ìṣe: wu_cart_after_setup {#action-wucartaftersetup}
+# Ìṣe: wu_cart_after_setup
 
 Gba àwọn olùdàgbàsókè láàyè láti ṣe àwọn àyípadà àfikún sí nkan ìparí rírà.
 

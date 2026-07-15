@@ -4,7 +4,7 @@ title: Acción - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Acción: wu_magic_link_login {#action-wumagiclinklogin}
+# Acción: wu_magic_link_login
 
 Execútase despois de que un usuario inicie sesión mediante magic link.
 

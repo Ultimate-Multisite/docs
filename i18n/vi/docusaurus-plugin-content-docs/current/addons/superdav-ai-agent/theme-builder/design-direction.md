@@ -3,7 +3,7 @@ title: Định hướng Thiết kế
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Thiết lập Hướng dẫn Thiết kế {#design-direction}
+# Thiết lập Hướng dẫn Thiết kế
 
 Bước **Thiết lập Hướng dẫn Thiết kế** cho phép bạn xem xét, tinh chỉnh và hoàn thiện thiết kế trực quan của theme trước khi Theme Builder tạo ra theme hoàn chỉnh.
 

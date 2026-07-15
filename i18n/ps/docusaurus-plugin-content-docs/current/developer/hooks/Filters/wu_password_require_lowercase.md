@@ -4,7 +4,7 @@ title: فلټر - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# فلټر: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# فلټر: wu_password_require_lowercase
 
 فلټر کوي چې ایا په پټنومونو کې کوچني توري اړین وي که نه.
 

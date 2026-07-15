@@ -3,7 +3,7 @@ title: Kumaha cara ngabatalkeun langganan
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kumaha Abdi Saya Bales Langganan? {#how-can-i-cancel-my-subscription}
+# Kumaha Abdi Saya Bales Langganan?
 
 Upami anjeun gaduh lisensi Ultimate Multisite, anjeun bisa batalisasi panambahan langgananna kapan waé anjeun hoyong. Cukup tindak langkah-langkah di handap ieu:
 

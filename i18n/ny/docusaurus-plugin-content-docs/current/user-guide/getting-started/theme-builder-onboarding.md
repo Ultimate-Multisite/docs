@@ -3,7 +3,7 @@ title: Mwayi Wopolo wa Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Mfundo wa Kufunga Theme Builder {#theme-builder-onboarding-flow}
+# Mfundo wa Kufunga Theme Builder
 
 Superdav AI Agent v1.12.0 imafuna **Theme Builder onboarding flow** ambayo imakutendeka kuti upange theme ya custom wakati wamba wako wa kumpanga mwanawu. Iyi imabadza mode ya Site Builder iliyopitilira ndi njira yofunika kwambiri, yomwe imapereka ufunso wa agent.
 

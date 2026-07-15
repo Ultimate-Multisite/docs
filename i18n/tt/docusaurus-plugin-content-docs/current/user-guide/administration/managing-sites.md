@@ -3,7 +3,7 @@ title: Сайтин Управление
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Сайтларды Управление (Managing Sites) {#managing-sites}
+# Сайтларды Управление (Managing Sites)
 
 Сайтлар (или подсайты) ваш WaaS бизнесаin əsasını təşkil edir. Ultimate Multisite-da 3 növ sayt var:
 

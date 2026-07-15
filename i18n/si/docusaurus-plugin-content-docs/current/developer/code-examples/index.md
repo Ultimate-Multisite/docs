@@ -3,7 +3,7 @@ title: උසස් කේත උදාහරණ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# උසස් Code උදාහරණ {#advanced-code-examples}
+# උසස් Code උදාහරණ
 
 මෙම උදාහරණ Ultimate Multisite සමඟ උසස් ඒකාබද්ධ කිරීමේ රටා පෙන්වයි.
 

@@ -3,7 +3,7 @@ title: தீம் பில்டர் திறன்கள்
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder திறன்கள்: Scaffold மற்றும் Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder திறன்கள்: Scaffold மற்றும் Activate Block Themes
 
 Superdav AI Agent v1.12.0 இரண்டு சக்திவாய்ந்த திறன்களை அறிமுகப்படுத்துகிறது. இவை chat interface-ல் இருந்து நேரடியாக தனிப்பயன் block themes-ஐ உருவாக்கவும், பயன்படுத்தவும் உங்களை அனுமதிக்கின்றன.
 

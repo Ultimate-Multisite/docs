@@ -3,7 +3,7 @@ title: Ìtumọ̀ Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Titúmọ̀ Ultimate Multisite {#translating-ultimate-multisite}
+# Titúmọ̀ Ultimate Multisite
 
 Ultimate Multisite ni a ṣe ní English, ṣùgbọ́n plugin náà ṣeé túmọ̀ pátápátá, a sì ń káàbọ̀ sí àwọn àfikún ìtúmọ̀ pẹ̀lú ìtara.
 

@@ -4,7 +4,7 @@ title: کردار - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# کردار: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# کردار: wu_multi_tenancy_init
 
 دوای ئەوەی پێوەکراوی Multi-Tenancy بە تەواوی دەستپێدەکات، کاردەکات.
 

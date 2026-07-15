@@ -4,7 +4,7 @@ title: Гамәл - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Гамәл: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Гамәл: wu_domain_renewal_failed
 
 Доменны озайту омтылышы уңышсыз тәмамланганнан соң эшли.
 

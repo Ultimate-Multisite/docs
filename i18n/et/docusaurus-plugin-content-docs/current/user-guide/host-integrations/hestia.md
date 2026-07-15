@@ -3,7 +3,7 @@ title: Hestia kontrollpaneli integreerimine
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Kontrollpaneli integreerimine {#hestia-control-panel-integration}
+# Hestia Kontrollpaneli integreerimine
 
 See juhend selgitab, kuidas Ultimate Multisite Hestia integratsiooni konfigurida, et teie võrku kaarditud domeenid lisaks (ja eemalduseks) automaatselt lisaks veebdomaanide aliasiks Hestias.
 

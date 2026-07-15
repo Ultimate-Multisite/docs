@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_checkout_form_base_domains ਬੇਸ ਡੋਮੇਨ
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# ਫਿਲਟਰ: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# ਫਿਲਟਰ: wu_checkout_form_base_domains
 
 ਸਾਂਝੇ ਚੈਕਆਉਟ-ਫਾਰਮ ਆਧਾਰ ਡੋਮੇਨਾਂ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਜੋ ਮੈਪ ਕੀਤੇ-ਡੋਮੇਨ ਰਿਕਾਰਡ ਨਹੀਂ ਬਣਣੇ ਚਾਹੀਦੇ।
 

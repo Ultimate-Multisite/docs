@@ -3,7 +3,7 @@ title: 頁首網域搜尋
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header 網域搜尋 {#header-domain-search}
+# Header 網域搜尋
 
 當你想要一個小型頁首表單來開始網域搜尋，然後讓客戶在 Ultimate Multisite checkout 中從可用網域內選擇時，請使用此設定。
 

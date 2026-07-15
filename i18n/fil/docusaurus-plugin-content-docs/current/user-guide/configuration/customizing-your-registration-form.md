@@ -3,7 +3,7 @@ title: Pagpapasadya ng Iyong Form ng Pagpaparehistro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pag-customize ng iyong Form sa Pagpaparehistro {#customizing-your-registration-form}
+# Pag-customize ng iyong Form sa Pagpaparehistro
 
 Upang magmukhang natatangi ang iyong network kumpara sa lahat ng iba pang SaaS na binuo sa WordPress platform, pinapayagan ka ng Ultimate Multisite na i-customize ang iyong mga pahina ng pagpaparehistro at pag-login gamit ang aming feature na **Mga Form sa Pag-checkout**.
 

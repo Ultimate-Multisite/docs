@@ -3,7 +3,7 @@ title: Maniĝado de Sitoj
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Administri la Sitoj {#managing-sites}
+# Administri la Sitoj
 
 Sitoj (aŭ subsitoj) estas la bazon de via WaaS (WordPress as a Service) bizneco. Ultimate Multisite havas 3 tipojn de sitoj:
 

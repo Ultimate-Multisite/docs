@@ -4,7 +4,7 @@ title: Аракет - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Иш-аракет: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Иш-аракет: wu_admin_pages_editors
 
 Плагин иштеп чыгуучуларга жаңы редактор параметрлерин кошууга мүмкүндүк берет =)
 

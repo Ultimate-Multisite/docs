@@ -3,7 +3,7 @@ title: 'Ders 13: Berfirehkirin'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ders 13: Mezin Kirin {#lesson-13-scaling-up}
+# Ders 13: Mezin Kirin
 
 Tu platformek dixebite bi xerîdarên ku pere didin hene. Ev ders rave dike ka çawa ji xebateke biçûk ber bi karsaziyeke domdar ve mezin bibî -- mezin kirina binesaziyê, otomatîkkirina xebatan, û zêdekirina dahata ji her xerîdarî.
 

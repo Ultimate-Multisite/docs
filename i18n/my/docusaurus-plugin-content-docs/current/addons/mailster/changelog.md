@@ -3,7 +3,7 @@ title: Mailster Changelog
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster ပြောင်းလဲမှု မှတ်တမ်း {#mailster-changelog}
+# Mailster ပြောင်းလဲမှု မှတ်တမ်း
 
 ### 1.0.0 {#100}
 * ပထမဆုံး ထုတ်ဝေမှု

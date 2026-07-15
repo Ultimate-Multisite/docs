@@ -3,7 +3,7 @@ title: 'Oppitunti 4: Niche-mallien rakentaminen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Oppitunti 4: Niche-mallien rakentaminen {#lesson-4-building-niche-templates}
+# Oppitunti 4: Niche-mallien rakentaminen
 
 Mallit ovat niche-arvolupauksesi ydin. Kuntosaliohjaamon omistaja, joka rekisteröityy ja näkee sivuston, joka näyttää jo fitness-verkkosivustolta -- tuntiaikatauluineen, valmentajaprofiileineen ja oikeanlaisine kuvineen -- pysyy paljon todennäköisemmin kuin sellainen, joka näkee tyhjän pohjan.
 

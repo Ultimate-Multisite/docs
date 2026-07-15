@@ -4,7 +4,7 @@ title: Filter - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filter: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Filter: mu_migration/export/user/headers
 
 এই ফিল্টাৰে এক্সপৰ্ট বা ইমপৰ্ট কৰিবলগীয়া ব্যৱহাৰকাৰী হেডাৰসমূহৰ ডিফল্ট set ক ফিল্টাৰ কৰে।
 

@@ -3,7 +3,7 @@ title: Kursetmek we Ulanmak Tassyklary
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Kuramak ve Sağlayıcı Yapılandırması {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Kuramak ve Sağlayıcı Yapılandırması
 
 Domain Seller eklentisi, sizi her bir gerekli adımdan geçiren rehberli bir kurulum sihirbazıyla birlikte gelir. Bu sayfa sihirbaz akışını ve sonrasında sağlayıcıları nasıl yapılandıracağınızı veya yeniden yapılandıracağınızı anlatır.
 

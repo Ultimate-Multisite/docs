@@ -3,7 +3,7 @@ title: Planų atnaujinimas
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Planų atnaujinimas (v2) {#upgrading-a-plan-v2}
+# Planų atnaujinimas (v2)
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 

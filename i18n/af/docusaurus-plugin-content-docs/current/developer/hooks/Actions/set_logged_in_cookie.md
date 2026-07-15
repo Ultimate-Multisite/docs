@@ -4,7 +4,7 @@ title: Aksie - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Aksie: set_logged_in_cookie {#action-setloggedincookie}
+# Aksie: set_logged_in_cookie
 
 Word geaktiveer onmiddellik voordat die ingelogde autentiseringkoekie gestel word.
 

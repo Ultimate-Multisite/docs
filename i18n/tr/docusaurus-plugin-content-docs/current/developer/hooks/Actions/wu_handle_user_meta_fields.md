@@ -4,7 +4,7 @@ title: Eylem - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Aksiyon: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Aksiyon: wu_handle_user_meta_fields
 
 İhtiyaç duyarlarsa, eklenti geliştiricilerinin kullanıcı meta verilerini farklı şekillerde kaydetmesine olanak tanır.
 

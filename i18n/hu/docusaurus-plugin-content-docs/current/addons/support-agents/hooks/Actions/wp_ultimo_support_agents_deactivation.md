@@ -4,7 +4,7 @@ title: Akció - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Akció: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Akció: wp_ultimo_support_agents_deactivation
 
 Másik plugin részei vagy moduljai használhatják ezt az akciót, hogy deaktívációs rutinjukat csatlakoztassák hozzá.
 

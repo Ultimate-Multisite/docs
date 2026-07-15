@@ -3,7 +3,7 @@ title: Fandavana ny Fandraisana Anjara
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Famafanana ny Fandavana Fanomezana (v2) {#canceling-a-membership-v2}
+# Famafanana ny Fandavana Fanomezana (v2)
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia manondro ny dikan'ny Ultimate Multisite v2.x.**_
 

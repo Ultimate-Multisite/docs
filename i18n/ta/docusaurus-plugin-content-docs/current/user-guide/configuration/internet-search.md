@@ -3,7 +3,7 @@ title: இணைய தேடல்
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# இணைய தேடல் (Internet Search) {#internet-search}
+# இணைய தேடல் (Internet Search)
 
 Gratis AI Agent v1.5.0 ஆனது **இணைய தேடல்** திறனைச் சேர்க்கிறது. இது AI உதவியாளரால் உரையாடலின் போது இணையத்தில் இருந்து சமீபத்திய தகவல்களைப் பெற உதவுகிறது. இது [Brave Search API](https://brave.com/search/api/) அல்லது [Tavily API](https://tavily.com/) மூலம் இயக்கப்படுகிறது.
 

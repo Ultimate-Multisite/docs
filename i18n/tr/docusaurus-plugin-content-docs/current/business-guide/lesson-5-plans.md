@@ -3,7 +3,7 @@ title: 'Ders 5: Planlarınızı Tasarlama'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ders 5: Planlarınızı Tasarlama {#lesson-5-designing-your-plans}
+# Ders 5: Planlarınızı Tasarlama
 
 Plan katmanlarınız sadece fiyat seviyeleri değil; niş müşterilerinizin gerçekte nasıl çalıştığının bir yansımasıdır. Bu derste, farklı aşamalardaki fitness işletmelerinin gerçek ihtiyaçlarına uygun ürün katmanları tasarlayacaksınız.
 

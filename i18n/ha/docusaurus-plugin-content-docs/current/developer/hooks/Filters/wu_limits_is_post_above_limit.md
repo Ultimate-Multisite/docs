@@ -4,7 +4,7 @@ title: Tacewa - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Tacewa: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Tacewa: wu_limits_is_post_above_limit
 
 Yana duba ko an yarda da wani nau'in post a wannan plan Yana ba masu haɓaka plugin damar tace ƙimar da aka dawo da ita
 

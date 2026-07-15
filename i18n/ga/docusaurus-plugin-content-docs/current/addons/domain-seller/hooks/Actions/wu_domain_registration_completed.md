@@ -4,7 +4,7 @@ title: Gníomh - wu_domain_registration_completed
 sidebar_label: wu_domain_registration_completed
 _i18n_hash: 092b475e74f3b937af068c83eeba2e0a
 ---
-# Gníomh: wu_domain_registration_completed {#action-wudomainregistrationcompleted}
+# Gníomh: wu_domain_registration_completed
 
 Spreagtar tar éis fearann a chlárú go rathúil.
 

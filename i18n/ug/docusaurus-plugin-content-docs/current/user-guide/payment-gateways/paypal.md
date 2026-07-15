@@ -3,7 +3,7 @@ title: PayPal sozlash
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Geçidini Kurmak (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal Geçidini Kurmak (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i referans almaktadır.**_
 

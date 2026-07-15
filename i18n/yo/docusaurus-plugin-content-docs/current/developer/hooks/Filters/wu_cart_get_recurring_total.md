@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_cart_get_recurring_total
 sidebar_label: wu_cart_get_recurring_total
 _i18n_hash: 4ced5861259c5b81a288c1f3146f02d3
 ---
-# Àlẹmọ: wu_cart_get_recurring_total {#filter-wucartgetrecurringtotal}
+# Àlẹmọ: wu_cart_get_recurring_total
 
 Ó ń ṣe àlẹmọ àpapọ̀ "iye tó ń tún wáyé".
 

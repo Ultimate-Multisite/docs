@@ -4,7 +4,7 @@ title: 'Filter - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# 篩選器：wu_{$id}_form_fields {#filter-wuidformfields}
+# 篩選器：wu_{$id}_form_fields
 
 用於篩選表單上的欄位。表單的識別方式是篩選器名稱中的 ID。
 

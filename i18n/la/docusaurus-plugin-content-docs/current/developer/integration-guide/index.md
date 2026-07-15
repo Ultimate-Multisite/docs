@@ -3,7 +3,7 @@ title: Manuale integrationis
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Dux Integrationis {#integration-guide}
+# Dux Integrationis
 
 Hic dux modos communes integrationis cum Ultimate Multisite complectitur, inter quos sunt coniungere ad officia externa, aedificare portas solutionum proprias, et tractare webhooks.
 

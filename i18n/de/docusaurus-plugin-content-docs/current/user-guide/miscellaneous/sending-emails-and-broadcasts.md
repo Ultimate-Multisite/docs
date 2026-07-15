@@ -3,7 +3,7 @@ title: E-Mails und Rundsendungen versenden
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-Mails und Broadcasts senden (v2) {#sending-emails-and-broadcasts-v2}
+# E-Mails und Broadcasts senden (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

@@ -3,7 +3,7 @@ title: Administrere medlemskap
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Administrere medlemskap {#managing-memberships}
+# Administrere medlemskap
 
 I Ultimate Multisite kan du administrere medlemskap og få tilgang til alle abonnementene på nettverket ditt. Se gjennom og rediger abonnementsdetaljer som planer og produkter, antall nettsteder, fakturabeløp og -frekvens, betalingshistorikk og tidsstempler.
 

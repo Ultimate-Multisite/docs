@@ -3,7 +3,7 @@ title: Yerleşik Aracılar
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Yerleşik Agents {#built-in-agents}
+# Yerleşik Agents
 
 Gratis AI Agent v1.9.0, her biri odaklanmış bir araç seti, özelleştirilmiş bir sistem istemi ve o alandaki yaygın görevlerle eşleşen başlangıç önerileriyle önceden yapılandırılmış beş yerleşik agents ile gelir. Agents arasında geçiş yapmak, assistant'ın ne yapabileceğini ve nasıl yanıt verdiğini değiştirir — sizin tarafınızda herhangi bir yapılandırma gerekmeden. Superdav AI Agent v1.18.0, ilgili entegrasyonlar yapılandırıldığında bu iş akışlarına takvim farkındalıklı araçlar, hatırlatıcı kayıtları, onay kapıları ve SMS bildirimleri ekleyebilir.
 

@@ -4,7 +4,7 @@ title: Үйлдэл - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Үйлдэл: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Үйлдэл: wp_ultimo_gocardless_activation
 
 plugin-ийн бусад хэсгүүдэд идэвхжүүлэлтийн өөрсдийн routine-уудыг холбох боломж олгоно
 

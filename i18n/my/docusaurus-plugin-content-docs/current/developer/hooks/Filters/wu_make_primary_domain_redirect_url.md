@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_make_primary_domain_redirect_ur
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Filter: wu_make_primary_domain_redirect_url
 
 ဒိုမိန်းတစ်ခုကို အဓိက (primary) အဖြစ် သတ်မှတ်ပြီးနောက် ပြန်လည်ညွှန်းပေးမည့် URL ကို စစ်ထုတ်ပေးသည်။
 

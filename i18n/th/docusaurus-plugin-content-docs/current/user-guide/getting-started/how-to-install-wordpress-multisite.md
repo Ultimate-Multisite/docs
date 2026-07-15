@@ -3,7 +3,7 @@ title: วิธีติดตั้ง WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# ฉันจะติดตั้ง WordPress Multisite ได้อย่างไร? {#how-do-i-install-wordpress-multisite}
+# ฉันจะติดตั้ง WordPress Multisite ได้อย่างไร?
 
 WordPress Multisite ช่วยให้คุณมีเครือข่ายเว็บไซต์หลายเว็บในการติดตั้งเดียว ฟีเจอร์นี้มีอยู่ในตัวอยู่แล้ว แต่ไม่ได้เปิดใช้งานโดยอัตโนมัติ
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# เพิ่ม trailing slash ให้ /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# เพิ่ม trailing slash ให้ /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

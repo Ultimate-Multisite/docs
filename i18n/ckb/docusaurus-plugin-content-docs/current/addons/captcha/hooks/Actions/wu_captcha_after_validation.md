@@ -4,7 +4,7 @@ title: کردار - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# کردار: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# کردار: wu_captcha_after_validation
 
 دوای پشتڕاستکردنەوەی captcha کاردەکات.
 

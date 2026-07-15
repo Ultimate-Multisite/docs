@@ -3,7 +3,7 @@ title: Nkwado Akụkọ Admin
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Penciptor Da Admin Page {#admin-page-creator}
+# Penciptor Da Admin Page
 
 Ime nwere fitur a bụ **Admin Page Creator** addon.
 

@@ -3,7 +3,7 @@ title: Configurando a constante Sunrise no Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Configurando a constante Sunrise como true na Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Configurando a constante Sunrise como true na Closte
 
 Alguns provedores de hospedagem bloqueiam o wp-config.php por motivos de segurança. Isso significa que o Ultimate Multisite não consegue editar automaticamente o arquivo para incluir as constantes necessárias para fazer o mapeamento de domínios e outros recursos funcionarem. A Closte é um desses provedores.
 

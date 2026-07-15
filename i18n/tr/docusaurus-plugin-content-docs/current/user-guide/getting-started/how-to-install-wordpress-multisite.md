@@ -3,7 +3,7 @@ title: WordPress Multisite Nasıl Kurulur
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite Nasıl Kurulur? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite Nasıl Kurulur?
 
 WordPress Multisite, tek bir kurulumda birden fazla siteyi yönetebileceğiniz bir site ağı oluşturmanızı sağlar. Bu özellik WordPress'in içinde hazır olarak bulunur, ancak varsayılan olarak etkin değildir.
 
@@ -61,7 +61,7 @@ Yine WordPress'in sağladığı bu kodu da _**.htaccess**_ dosyanıza ekleyin:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin sonuna eğik çizgi ekle {#add-a-trailing-slash-to-wp-admin}
+# /wp-admin sonuna eğik çizgi ekle
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

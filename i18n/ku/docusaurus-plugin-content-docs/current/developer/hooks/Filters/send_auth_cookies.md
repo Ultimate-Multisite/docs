@@ -4,7 +4,7 @@ title: Parzûn - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Parzûn: send_auth_cookies {#filter-sendauthcookies}
+# Parzûn: send_auth_cookies
 
 Destûr dide ku were astengkirin ku cookiesên piştrastkirinê bi rastî ji client re bên şandin.
 

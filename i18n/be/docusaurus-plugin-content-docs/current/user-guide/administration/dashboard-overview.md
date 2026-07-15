@@ -3,7 +3,7 @@ title: Пагląd адказнагальніка
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Пагląd на Панель кіравання {#dashboard-overview}
+# Пагląd на Панель кіравання
 
 Ultimate Multisite мае выклёпленую **Dashboard** у меню Ultimate Multisite, а таксама дадае віджыкі на Network Dashboard. Гэты артыкул ахоплівае тое, што вы ўбачыце ў двух месцах.
 

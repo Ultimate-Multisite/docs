@@ -4,7 +4,7 @@ title: Үйлдэл - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Action: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Action: wp_ultimo_support_agents_activation
 
 Plugin-ийн бусад хэсгүүд идэвхжүүлэлтэд зориулсан өөрсдийн routines-ийг хавсаргах боломжийг олгоно
 

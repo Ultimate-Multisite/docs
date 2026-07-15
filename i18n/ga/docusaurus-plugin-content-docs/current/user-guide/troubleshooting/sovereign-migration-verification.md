@@ -3,7 +3,7 @@ title: Céadtaíocht Míseartha Sovereigneach
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifike Migraíocht Sovereín {#sovereign-migration-verification}
+# Verifike Migraíocht Sovereín
 
 In Ultimate Multisite: Multi-Tenancy 1.2.0 tá commanda de verifike WP-CLI chun migraíocht teannant sovereignty a dhéanamh. Useat na commanda seo nuair níl an teannant, an fáil SSO, nó an install aislaigh ag déanamh ar chuid asraithe.
 

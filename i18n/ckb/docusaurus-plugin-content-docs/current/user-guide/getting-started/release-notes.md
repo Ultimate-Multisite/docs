@@ -3,7 +3,7 @@ title: تێبینی ڕەوانەکان
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# یادداشتەکانی ڕێخاندنەوە (Release Notes) {#release-notes}
+# یادداشتەکانی ڕێخاندنەوە (Release Notes)
 
 ## وەرگرتنی ٢.١٣.٠ - لە ٢٠٢٦-٠٦-٠٥ {#version-2130--released-on-2026-06-05}
 

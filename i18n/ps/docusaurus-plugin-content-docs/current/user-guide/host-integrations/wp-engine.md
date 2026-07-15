@@ -3,7 +3,7 @@ title: د WP Engine همغږي
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# همکارۍ د WP Engine سره {#wp-engine-integration}
+# همکارۍ د WP Engine سره
 
 ## پراته معلومات (Overview) {#overview}
 WP Engine یو لوکس مدیریت شوی WordPress هاستینګ پلتفارم ده چې د WordPress سایتونه لپاره غوره کارایی عمل، امنیت او بیا جوړول وړتیا وړاندې کوي. دا همکارۍ Ultimate Multisite او WP Engine ترمنځ د دامینहरूको خودکار سنکرونیز کولو اجازه ورکوي.

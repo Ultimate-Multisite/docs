@@ -4,7 +4,7 @@ title: Филтър - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Филтър: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# Филтър: wu_magic_link_enforce_user_agent
 
 Филтрира дали да се принуди проверка на User Agent.
 

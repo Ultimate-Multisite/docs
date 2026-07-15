@@ -3,7 +3,7 @@ title: 'Leksyon 1: Ngano nga Makapahimo ang Niche'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: Nganong Makalampus ang Pagpili og Niche {#lesson-1-why-niche-wins}
+# Lesson 1: Nganong Makalampus ang Pagpili og Niche
 
 Sa wala pa kita mo-touch sa bisan unsang software, kinahanglan nimong masabtan nganong ang pagtukod para sa usa ka piho nga grupo (niche) mao ang pinakaimportante nga desisyon nga imong himoon.
 

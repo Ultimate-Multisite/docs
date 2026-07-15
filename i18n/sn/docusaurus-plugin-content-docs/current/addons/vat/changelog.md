@@ -3,7 +3,7 @@ title: Nhoroondo yeshanduko dzeVAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Shanduko dzeVAT {#vat-changelog}
+# Shanduko dzeVAT
 
 Version 1.0.7 - Yakaburitswa musi wa2026-02-03
 

@@ -3,7 +3,7 @@ title: Fragmentos de código
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmentos de código para v2 {#code-snippets-for-v2}
+# Fragmentos de código para v2
 
 Básicamente, los fragmentos de código para **WordPress** se usan para realizar ciertas acciones que, de otro modo, podrían requerir un plugin dedicado más pequeño. Dichos fragmentos de código se colocan en uno de los archivos principales de WordPress o del tema (generalmente el archivo functions.php de tu tema) o pueden usarse como un MU plugin.
 

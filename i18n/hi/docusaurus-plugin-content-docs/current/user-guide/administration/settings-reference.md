@@ -3,7 +3,7 @@ title: सेटिंग्स संदर्भ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# सेटिंग्स संदर्भ {#settings-reference}
+# सेटिंग्स संदर्भ
 
 यह पृष्ठ उन सेटिंग्स को ट्रैक करता है जो Ultimate Multisite में रोज़मर्रा के प्रशासन और हाल के व्यवहार बदलावों को प्रभावित करती हैं।
 

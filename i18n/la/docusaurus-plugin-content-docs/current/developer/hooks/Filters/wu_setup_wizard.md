@@ -4,7 +4,7 @@ title: Filtrum - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filtrum: wu_setup_wizard {#filter-wusetupwizard}
+# Filtrum: wu_setup_wizard
 
 Sinite programmatores gradus additos mago configurationis addere.
 

@@ -4,7 +4,7 @@ title: 過濾器 - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# 過濾器：wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
+# 過濾器：wu_checkout_form_register_domain_form_fields
 
 用於過濾註冊網域結帳表單的欄位。
 

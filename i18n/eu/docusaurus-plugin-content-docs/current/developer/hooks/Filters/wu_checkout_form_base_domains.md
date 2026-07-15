@@ -4,7 +4,7 @@ title: Iragazkia - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Iragazkia: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Iragazkia: wu_checkout_form_base_domains
 
 Checkout-inprimakiko oinarri-domeinu partekatuak iragazten ditu, mapped-domain erregistro bihurtu behar ez direnak.
 

@@ -3,7 +3,7 @@ title: Дароядти саҳифаи ҳисоботӣ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Чӣ тавр ман ба страницу ҳисоби хуп барои аввали варзиш мерасонам? {#how-can-i-access-my-account-page-for-the-first-time}
+# Чӣ тавр ман ба страницу ҳисоби хуп барои аввали варзиш мерасонам?
 
 Бахшами шуморо дар Ultimate Multisite!
 

@@ -3,7 +3,7 @@ title: Verifikasi Migrasi Kedaulatan
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikasi Migrasi Kedaulatan (Sovereign Migration Verification) {#sovereign-migration-verification}
+# Verifikasi Migrasi Kedaulatan (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 menyertakan perintah verifikasi WP-CLI untuk migrasi tenant kedaulatan (*sovereign*). Gunakan perintah ini jika migrasi tenant, kunjungan SSO, atau instalasi terisolasi tidak berperilaku seperti yang diharapkan.
 

@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de Reteja Eksportilo
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Ŝanĝprotokolo de Site Exporter {#site-exporter-changelog}
+# Ŝanĝprotokolo de Site Exporter
 
 Versio: 1.0.6 - Eldonita je 2026-05-11
 * Nova: Site-eksportoj nun kunpakas memstartigan index.php tiel ke la ZIP povas esti instalita sur freŝa gastiganto sen aparta plugin-instalo

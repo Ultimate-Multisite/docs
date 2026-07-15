@@ -3,7 +3,7 @@ title: 등록 양식 사용자 지정
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# 등록 양식 사용자 지정하기 {#customizing-your-registration-form}
+# 등록 양식 사용자 지정하기
 
 WordPress 플랫폼에서 구축된 다른 모든 SaaS와 다르게 네트워크가 고유하게 보이도록, Ultimate Multisite는 **체크아웃 양식** 기능으로 등록 및 로그인 페이지를 사용자 지정할 수 있게 해줍니다.
 

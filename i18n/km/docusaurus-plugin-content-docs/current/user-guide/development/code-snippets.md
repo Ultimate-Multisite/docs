@@ -3,7 +3,7 @@ title: បំណែកកូដ
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets សម្រាប់ v2 {#code-snippets-for-v2}
+# Code Snippets សម្រាប់ v2
 
 ជាមូលដ្ឋានហើយ, code snippets សម្រាប់ **WordPress** គឺប្រើដើម្បីធ្វើសកម្មភាពជាក់លាក់មួយ ដែលបើមិនដូច្នោះទេ ប្រហែលជាត្រូវការ plugin តូចផ្សេងទៀត។ code snippets ទាំងនេះត្រូវបានដាក់នៅក្នុងឯកសារ core ឬ theme របស់ WordPress (ជាទូទៅគឺឯកសារ functions.php នៃ theme របស់អ្នក) ឬក៏អាចប្រើជា MU plugin បានដែរ។
 

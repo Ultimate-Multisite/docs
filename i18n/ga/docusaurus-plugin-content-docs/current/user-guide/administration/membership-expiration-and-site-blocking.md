@@ -3,7 +3,7 @@ title: An tairiscint an bhfáine agus an chloisteán an site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Déanachais agus Blocadh Site {#membership-expiration-and-site-blocking}
+# Déanachais agus Blocadh Site
 
 Linn téachais seo ainsíonn conas Ultimate Multisite déanann an t-aonacht deánacha, an deireadh trial agus blocadh site ar an chuid chéad. Tá sé ag cur isteach an seachtain deánach deánach ó actív go deiridh, na réiteach a bhfaidh an t-aonacht a cheannach chun an t-aonachtaí a bheith blocaithe, agus conas a fheiceáil ar chuid site a bheith ag cur isteach tar éis a thaispeáint an t-aonacht.
 

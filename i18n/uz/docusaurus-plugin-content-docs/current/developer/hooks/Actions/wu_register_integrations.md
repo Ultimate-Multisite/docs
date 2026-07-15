@@ -4,7 +4,7 @@ title: Amal - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Amal: wu_register_integrations {#action-wuregisterintegrations}
+# Amal: wu_register_integrations
 
 Integratsiyalarga o‘zlarini ro‘yxatdan o‘tkazish imkonini berish uchun ishga tushadi.
 

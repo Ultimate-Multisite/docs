@@ -3,7 +3,7 @@ title: ক্লায়েন্ট Account পৃষ্ঠা
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# আপনার ক্লায়েন্টের Account পৃষ্ঠা (v2) {#your-clients-account-page-v2}
+# আপনার ক্লায়েন্টের Account পৃষ্ঠা (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কে।**_
 

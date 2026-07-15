@@ -3,7 +3,7 @@ title: 多租戶整合
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# 多租戶整合 {#multi-tenancy-integration}
+# 多租戶整合
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 變更了主權租戶、遷移驗證與租戶生命週期自動化的多個整合接觸點。
 

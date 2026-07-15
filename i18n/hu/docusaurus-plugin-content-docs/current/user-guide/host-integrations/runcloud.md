@@ -3,7 +3,7 @@ title: RunCloud integráció
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud integráció {#runcloud-integration}
+# RunCloud integráció
 
 ## Áttekintés {#overview}
 A RunCloud egy felhőalapú szerverkezelő platform, amellyel egyszerűen telepíthetsz és kezelhetsz webalkalmazásokat a saját felhőszervereiden. Ez az integráció lehetővé teszi az automatikus domain szinkronizálást és SSL tanúsítványkezelést az Ultimate Multisite és a RunCloud között.

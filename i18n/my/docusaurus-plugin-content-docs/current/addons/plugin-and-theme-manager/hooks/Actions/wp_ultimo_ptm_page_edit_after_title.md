@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Action: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
+# Action: wp_ultimo_ptm_page_edit_after_title
 
 ပလပ်အင် ဖန်တီးသူများအနေဖြင့် စာမျက်နှာများကို တည်းဖြတ်ရာတွင် ခလုတ်အပိုများ ထည့်သွင်းနိုင်ရန် ခွင့်ပြုပါသည်။
 

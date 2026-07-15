@@ -3,7 +3,7 @@ title: Izimfuneko
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Izimfuneko ze-Ultimate Multisite {#ultimate-multisite-requirements}
+# Izimfuneko ze-Ultimate Multisite
 
 Into yokuqala ongase uzibuze yona ngaphambi kokuthenga i-Ultimate Multisite ukuthi yiziphi izimfuneko zokuqalisa i-plugin yethu. Nokho, ngenhlanhla, kunezimfuneko ezimbalwa kuphela eziyisisekelo zokuqalisa i-Ultimate Multisite: **igama lesizinda** , **umhlinzeki wokusingatha** omuhle kanye nokufakwa kwe-WordPress **Multisite**. Yilokho kuphela okudingayo!
 

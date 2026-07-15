@@ -3,7 +3,7 @@ title: 'Isomo rya 7: Kubigira ibyawe'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Isomo rya 7: Kubigira ibyawe {#lesson-7-making-it-yours}
+# Isomo rya 7: Kubigira ibyawe
 
 Abakiriya bawe ntibakwiye na rimwe kumva ko bakoresha "WordPress plugin runaka." Bakwiye kumva ko bakoresha FitSite -- urubuga rwubakiwe inganda zabo. Iri somo rivuga ku kirango, gushyiraho ikirango cyawe, no gutuma urubuga rwumvikana nk'igicuruzwa.
 

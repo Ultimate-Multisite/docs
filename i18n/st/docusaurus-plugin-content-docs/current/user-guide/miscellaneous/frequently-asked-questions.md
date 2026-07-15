@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Tumahalo le Tsoalo (Frequently Asked Questions) {#frequently-asked-questions}
+# Tumahalo le Tsoalo (Frequently Asked Questions)
 
 Kea le tsoalo (Frequently Asked Questions) tse di fetang tse a fetang mo dikgwathwa tsa ho fana ka botshelo.
 

@@ -4,7 +4,7 @@ title: តម្រង - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# តម្រង: wu_rest_delete_item {#filter-wurestdeleteitem}
+# តម្រង: wu_rest_delete_item
 
 តម្រងថាតើអនុញ្ញាតឱ្យបន្តជាមួយសំណើនេះឬអត់។
 

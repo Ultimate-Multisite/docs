@@ -3,7 +3,7 @@ title: Mavandiso ekupenyu
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2 {#code-snippets-for-v2}
+# Code Snippets for v2
 
 Kuti, code snippets dzine **WordPress** chinotora kuti zvakaita zvinhu zviri kuita zvichakanaka zvinogona kuendesa neplugin yakachena. Izvi code snippets inozivakwa muiri dzinogona kuenda mu file ya WordPress core kana theme yako (zvakakosha, ndiyo functions.php ya theme yako) kana kuti dzineva kuwedzera MU plugin.
 

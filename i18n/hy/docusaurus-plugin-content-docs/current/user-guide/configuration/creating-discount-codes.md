@@ -3,7 +3,7 @@ title: Զեղչային կոդերի ստեղծում
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Codes Ստեղծում (v2) {#creating-discount-codes-v2}
+# Discount Codes Ստեղծում (v2)
 
 _**ԿԱՐԵՎՈՐ ՆՇեշտ. Այս հոդվածը վերաբերում է Ultimate Multisite-ի 2.x տարբերակին։**_
 

@@ -4,7 +4,7 @@ title: Hành động - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Action: wu_after_switch_template
 
 Cho phép các nhà phát triển plugin móc (hook) các hàm của họ sau khi người dùng hoặc quản trị viên siêu cấp thay đổi mẫu (template) của trang web.
 

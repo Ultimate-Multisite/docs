@@ -3,7 +3,7 @@ title: Aistidh a' Chùrsain Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite ma tha'n wizard a' chùin a' chùin a' WordPress installation sàthair a' tòr a' ngrìd-nàth (Multisite) a' tòr. Tha's a' chùin a' fhaic a' cheann a' leat a' `wp-config.php` a' leat a' command-a' db.
 

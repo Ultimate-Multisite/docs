@@ -3,7 +3,7 @@ title: Maksude käsitlemine
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Maksude käsitlemine {#tax-handling}
+# Maksude käsitlemine
 
 Ultimate Multisite’il on maksude kogumise moodul sisse ehitatud meie põhipluginasse, seega kui pead oma plaanidelt, pakettidelt ja teenustelt müügimakse koguma, saad seda hõlpsasti teha ilma lisamooduleid paigaldamata.
 

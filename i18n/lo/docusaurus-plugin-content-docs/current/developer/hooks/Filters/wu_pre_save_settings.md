@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# ຕົວກັ່ນຕອງ: wu_pre_save_settings {#filter-wupresavesettings}
+# ຕົວກັ່ນຕອງ: wu_pre_save_settings
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາກັ່ນຕອງການຕັ້ງຄ່າກ່ອນບັນທຶກໂດຍ Ultimate Multisite.
 

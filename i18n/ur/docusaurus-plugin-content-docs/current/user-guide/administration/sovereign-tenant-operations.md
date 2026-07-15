@@ -3,7 +3,7 @@ title: سوویرن ٹینٹنٹ آپریشنز
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# संप्रभु टेन्जेंट संचालन (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# संप्रभु टेन्जेंट संचालन (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ने संप्रभु टेन्जेंट्स के लिए ऑपरेशनल टूलिंग जोड़ी है: ये सबसाइटें अपनी खुद की डेटाबेस, फ़ाइल सिस्टम रूट और रूटिंग संदर्भ के साथ चलती हैं, जबकि नेटवर्क एडमिन से दिखाई देती हैं।
 

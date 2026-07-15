@@ -4,7 +4,7 @@ title: Filter - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filter: network_options_list {#filter-networkoptionslist}
+# Filter: network_options_list
 
 ഒരു നെറ്റ്‌വർക്കിന്റെ ഡൊമെയ്‌നത്തെയും പാത്തിനെ ആശ്രയിച്ചിരിക്കുന്ന നെറ്റ്‌വർക്ക് ഓപ്ഷനുകളുടെ ലിസ്റ്റ് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

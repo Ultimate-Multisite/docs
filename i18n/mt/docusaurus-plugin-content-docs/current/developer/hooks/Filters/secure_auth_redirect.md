@@ -4,7 +4,7 @@ title: Filtru - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtru: secure_auth_redirect {#filter-secureauthredirect}
+# Filtru: secure_auth_redirect
 
 Jiffiltra jekk għandux jintuża ridirezzjoni ta' awtentikazzjoni sigura.
 

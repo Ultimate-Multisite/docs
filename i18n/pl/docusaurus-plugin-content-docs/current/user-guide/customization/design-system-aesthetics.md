@@ -3,7 +3,7 @@ title: Umiejętność estetyki systemu projektowego
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetyka Systemu Projektowego {#design-system-aesthetics-skill}
+# Estetyka Systemu Projektowego
 
 **Umiejętność Estetyka Systemu Projektowego** to ustrukturyzowane podejście do dopracowania wizualnej tożsamości Twojej witryny. Pomaga Ci podejmować spójne decyzje dotyczące typografii, kolorów, odstępów i tokenów ruchu, które definiują Twój system projektowy.
 

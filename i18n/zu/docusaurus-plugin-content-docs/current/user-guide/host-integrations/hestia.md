@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Ukuhlanganiswa kwe-Hestia Control Panel {#hestia-control-panel-integration}
+# Ukuhlanganiswa kwe-Hestia Control Panel
 
 Lo mhlahlandlela uchaza indlela yokulungisa ukuhlanganiswa kwe-Ultimate Multisite Hestia ukuze izizinda eziqondanisiwe kunethiwekhi yakho zengezwe ngokuzenzakalelayo (futhi zisuswe) njenge-Web Domain Aliases ku-Hestia.
 

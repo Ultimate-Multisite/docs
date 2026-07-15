@@ -3,7 +3,7 @@ title: Chuck Norris Facts سجل التغييرات
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# سجل تغييرات حقائق تشاك نوريس {#chuck-norris-facts-changelog}
+# سجل تغييرات حقائق تشاك نوريس
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * تمت الإضافة: وظيفة التحديث التلقائي عبر خادم تحديث Ultimate Multisite

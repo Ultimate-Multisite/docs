@@ -3,7 +3,7 @@ title: Aestetika Dizajni Sistemit
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Aftësia e Estetikës së Sistemit Dizajni (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
+# Aftësia e Estetikës së Sistemit Dizajni (Design System Aesthetics Skill)
 
 **Aftësia e estetikës së sistemit dizajni** është një mënyrë udhëzuese për të përmirësuar identitetin vizual të faqes suaj. Ajo ju ndihmon të merrni vendime të qëndrueshme rreth tipografisë, ngjyrave, hapësirës (spacing) dhe token-eve të lëvizjes (motion tokens) që përcaktojnë sistemin tuaj dizajni.
 

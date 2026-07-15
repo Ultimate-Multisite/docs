@@ -4,7 +4,7 @@ title: Azzjoni - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Azzjoni: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Azzjoni: wu_enqueue_extra_hooks
 
 Ħalli lill-iżviluppaturi tal-plugin iżidu hooks addizzjonali.
 

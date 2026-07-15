@@ -3,7 +3,7 @@ title: Izstrādātāju dokumentācija
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Izstrādātāju dokumentācija {#developer-documentation}
+# Izstrādātāju dokumentācija
 
 Šī rokasgrāmata sniedz izstrādātājiem visu nepieciešamo, lai integrētos ar Ultimate Multisite, to paplašinātu vai izstrādātu tam addon. Ultimate Multisite pārveido WordPress Multisite tīklu par Website-as-a-Service (WaaS) platformu.
 

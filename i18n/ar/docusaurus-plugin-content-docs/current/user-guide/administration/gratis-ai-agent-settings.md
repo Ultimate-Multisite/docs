@@ -3,7 +3,7 @@ title: إعدادات Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# إعدادات Gratis AI Agent {#gratis-ai-agent-settings}
+# إعدادات Gratis AI Agent
 
 توفر شاشة **الإعدادات → متقدم** في Gratis AI Agent إعدادات بمستوى المدير لتكاملات الواجهة الخلفية. توثق هذه الصفحة إعادة توجيه الملاحظات، ومفاتيح مزودي البحث، وإعداد خدمة Superdav المُدارة، وعناصر التحكم في Google Calendar، وإعدادات رسائل TextBee SMS، وعلامات الميزات على مستوى الشبكة.
 

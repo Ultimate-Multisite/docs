@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Dhoofiyaha Goobta
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Diiwaanka Isbeddellada Site Exporter {#site-exporter-changelog}
+# Diiwaanka Isbeddellada Site Exporter
 
 Nooca: 1.0.6 - La sii daayay 2026-05-11
 * Cusub: Dhoofinnada site-ka hadda waxay ku daraan `index.php` iskeed u bilaabmaysa si ZIP-ka loogu rakibi karo host cusub iyada oo aan loo baahnayn rakibid plugin gaar ah

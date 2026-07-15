@@ -4,7 +4,7 @@ title: Filtro - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filtro: get_blogs_of_user {#filter-getblogsofuser}
+# Filtro: get_blogs_of_user
 
 Replica el filtro WP original aquí, por si acaso.
 

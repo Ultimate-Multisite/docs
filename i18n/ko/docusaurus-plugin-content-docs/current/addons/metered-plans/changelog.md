@@ -3,7 +3,7 @@ title: 사용량 기반 요금제 변경 기록
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans 변경 로그 {#metered-plans-changelog}
+# Metered Plans 변경 로그
 
 버전 1.1.0 - 2026-05-05에 릴리스됨
 - 신규: multisite 하위 사이트에 대한 AI 토큰 청구 — 고객 사이트 전반의 AI 토큰 사용량을 추적하고 구성 가능한 토큰당 요율로 청구합니다

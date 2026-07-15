@@ -3,7 +3,7 @@ title: هوستينگر ملٹی-تیننسی
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ Hostinger جي ملٽي-ٽيننسي (multi-tenancy) جي صلاحيت شامل ڪئي آهي، جنهن سان هاستنگ ٿيل دوميني (hosted domains) موجوده Hostinger دومين ميپنگ انٽيغريشن کان سواءِ خود مختار تيننٽس (sovereign tenants) جي فراهمي ۾ شموليت ڪري سگهجن ٿا.
 

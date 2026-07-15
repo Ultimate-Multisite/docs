@@ -3,7 +3,7 @@ title: پەیوەندی لە V1ەوە گواستنەوە
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# دۆزراو لە پۆلێمە ١ (V1) {#migrating-from-v1}
+# دۆزراو لە پۆلێمە ١ (V1)
 
 ## Ultimate Multisite لە فامیلیای سەرەکی 1.x بۆ فامیلیای 2.x گواستراوەتەوە. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

@@ -3,7 +3,7 @@ title: Cysylltu Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Ymddian (hPanel) Cyfathri {#hostinger-hpanel-integration}
+# Ymddian (hPanel) Cyfathri
 
 ## Oglwydd {#overview}
 

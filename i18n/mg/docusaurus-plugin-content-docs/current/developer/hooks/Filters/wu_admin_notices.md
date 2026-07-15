@@ -4,7 +4,7 @@ title: Sivana - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Sivana: wu_admin_notices {#filter-wuadminnotices}
+# Sivana: wu_admin_notices
 
 Avelao ny developers hanivana ny fampahafantarana admin ampian'i Ultimate Multisite.
 

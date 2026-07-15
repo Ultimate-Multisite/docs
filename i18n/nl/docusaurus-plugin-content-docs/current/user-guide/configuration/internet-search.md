@@ -3,7 +3,7 @@ title: Internet Zoeken
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Zoeken {#internet-search}
+# Internet Zoeken
 
 Gratis AI Agent v1.5.0 voegt een functionaliteit toe genaamd **Internet Zoeken** waarmee de AI-assistent actuele informatie van het web kan ophalen tijdens een gesprek. Dit wordt mogelijk gemaakt door de [Brave Search API](https://brave.com/search/api/) of de [Tavily API](https://tavily.com/).
 

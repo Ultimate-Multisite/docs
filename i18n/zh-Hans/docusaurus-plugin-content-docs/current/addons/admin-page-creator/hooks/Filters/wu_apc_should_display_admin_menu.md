@@ -4,7 +4,7 @@ title: 过滤器 - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# 过滤器: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# 过滤器: wu_apc_should_display_admin_menu
 
 允许管理员在完成自定义过程后隐藏管理菜单页面。
 

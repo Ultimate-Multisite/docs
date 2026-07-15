@@ -3,7 +3,7 @@ title: Tham quan Bảng quản trị
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tham quan Bảng quản trị {#touring-the-admin-panel}
+# Tham quan Bảng quản trị
 
 Ultimate Multisite hướng tới sự đơn giản và dễ hiểu nhất có thể, nhưng với một công cụ mạnh mẽ như vậy, một chuyến tham quan có hướng dẫn sẽ rất hữu ích. Hãy cùng đi qua các trang quản trị để giúp bạn làm quen.
 

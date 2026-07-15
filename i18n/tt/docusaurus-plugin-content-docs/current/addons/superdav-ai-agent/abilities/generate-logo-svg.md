@@ -3,7 +3,7 @@ title: Логотип SVG ясарга
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# SVG логотипын генерацияләү {#generate-logo-svg}
+# SVG логотипын генерацияләү
 
 **Generate Logo SVG** мөмкинлеге Theme Builder’га махсус логотип SVG’ларын турыдан-туры WordPress сайтыгызда автоматик namespace-safe sanitisation белән ясарга һәм урнаштырырга мөмкинлек бирә.
 

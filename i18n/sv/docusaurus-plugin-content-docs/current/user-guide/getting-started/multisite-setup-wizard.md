@@ -3,7 +3,7 @@ title: Guide för multisite-installation
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisiteguiden {#multisite-setup-wizard}
+# Multisiteguiden
 
 Ultimate Multisite innehåller en inbyggd guide som automatiskt konverterar en vanlig WordPress-installation till ett WordPress Multisite-nätverk. Det innebär att du slipper redigera `wp-config.php` manuellt eller köra databaskommandon.
 

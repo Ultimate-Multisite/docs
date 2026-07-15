@@ -3,7 +3,7 @@ title: Intego z'Ubwoko
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Ingozi y'Uburyo {#basic-concepts}
+# Ingozi y'Uburyo
 
 Kwa umuntu w'uri mu WordPress Multisite uyu munsi, kandi umuntu wumutseye gukoresha Ultimate Multisite, hari ibindi mibare myiza cyane ugomba kwiga mu gihe cyo mu ntangiriro. Kwiga ibyo ni ikintu runini kuko uza gutegura gukunda uburyo uburyo bwo gukora platform yose kandi uburyo bwo gukora.
 

@@ -4,7 +4,7 @@ title: Isihluzo - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Isihluzi: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Isihluzi: wu_bypass_checkout_form
 
 Vumela abaphuhlisi ukuba badlule kwimveliso kwaye basete entsha
 

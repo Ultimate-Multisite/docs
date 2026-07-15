@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Action: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Action: wp_ultimo_payfast_activation
 
 pluginର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ସକ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କର ରୁଟିନ୍‌ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

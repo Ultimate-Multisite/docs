@@ -3,7 +3,7 @@ title: Menaxhimi i Shteve
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Menaxhimi i Shteve {#managing-sites}
+# Menaxhimi i Shteve
 
 Shtevat (ose subshtevet) janë thelbi i biznesit tuaj WaaS. Ultimate Multisite ka 3 lloje shtevësh:
 

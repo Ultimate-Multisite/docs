@@ -4,7 +4,7 @@ title: Tātari - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Tātari: wu_post_default_status {#filter-wupostdefaultstatus}
+# Tātari: wu_post_default_status
 
 Ka tātari i ngā raraunga ahanoa i mua i te rokiroki ki te pātengi raraunga.
 

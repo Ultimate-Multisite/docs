@@ -3,7 +3,7 @@ title: 'Lektion 1: Warum Nische gewinnt'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lektion 1: Warum die Nische gewinnt {#lesson-1-why-niche-wins}
+# Lektion 1: Warum die Nische gewinnt
 
 Bevor wir uns mit irgendeiner Software beschäftigen, müssen Sie verstehen, warum der Aufbau einer Plattform für ein spezifisches Publikum die wichtigste Entscheidung ist, die Sie treffen werden.
 

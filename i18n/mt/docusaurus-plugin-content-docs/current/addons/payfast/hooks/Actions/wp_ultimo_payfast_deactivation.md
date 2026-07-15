@@ -4,7 +4,7 @@ title: Azzjoni - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# Azzjoni: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# Azzjoni: wp_ultimo_payfast_deactivation
 
 Ħalli partijiet oħra tal-estensjoni jwaħħlu r-rutini tagħhom għad-diżattivazzjoni
 

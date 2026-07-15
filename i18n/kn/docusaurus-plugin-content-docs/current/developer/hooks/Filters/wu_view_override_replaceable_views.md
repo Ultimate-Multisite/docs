@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filter: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filter: wu_view_override_replaceable_views
 
 developers-ಗಳಿಗೆ ಬದಲಾಯಿಸಬಹುದಾದ (replaceable) ಪಟ್ಟಿಗೆ ಹೆಚ್ಚುವರಿ ಫೋಲ್ಡರ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

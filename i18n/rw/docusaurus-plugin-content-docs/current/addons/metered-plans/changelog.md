@@ -3,7 +3,7 @@ title: Inyandiko y’impinduka za Gahunda zishyurwa hakurikijwe ikoreshwa
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Amateka y'impinduka ya gahunda zipimwa {#metered-plans-changelog}
+# Amateka y'impinduka ya gahunda zipimwa
 
 Verisiyo 1.1.0 - Yasohotse ku wa 2026-05-05
 - Gishya: Kwishyuza AI token ku masite mato ya multisite — ukurikirane kandi wishyuze ikoreshwa rya AI token ku masite y'abakiriya ukoresheje ibiciro bishyirwaho kuri buri token

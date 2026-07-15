@@ -3,7 +3,7 @@ title: cPanel انٹیگریشن
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel انٹیگریشن {#cpanel-integration}
+# cPanel انٹیگریشن
 
 ## جائزہ {#overview}
 cPanel ویب ہوسٹنگ کے سب سے مقبول کنٹرول پینلز میں سے ایک ہے جو بہت سے shared اور dedicated ہوسٹنگ فراہم کنندگان استعمال کرتے ہیں۔ یہ انٹیگریشن Ultimate Multisite اور cPanel کے درمیان خودکار ڈومین سنکنگ کو فعال کرتی ہے، جس سے آپ اپنے cPanel اکاؤنٹ میں ڈومین aliases اور subdomains خودکار طریقے سے شامل کر سکتے ہیں۔

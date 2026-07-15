@@ -3,7 +3,7 @@ title: Ezarpenen erreferentzia
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Ezarpenen erreferentzia {#settings-reference}
+# Ezarpenen erreferentzia
 
 Orrialde honek Ultimate Multisite-ren eguneroko administrazioari eragiten dioten ezarpenak eta azken portaera-aldaketak jasotzen ditu.
 

@@ -4,7 +4,7 @@ title: אַקציע - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# אַקציע: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# אַקציע: wp_ultimo_support_agents_deactivation
 
 לאָזט אַנדערע טיילן פֿונעם plugin צוהענגען זייערע רוטינען פֿאַר דעאַקטיוואַציע
 

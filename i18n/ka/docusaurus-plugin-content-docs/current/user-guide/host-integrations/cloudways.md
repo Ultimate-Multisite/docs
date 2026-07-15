@@ -3,7 +3,7 @@ title: Cloudways ინტეგრაცია
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ინტეგრაცია {#cloudways-integration}
+# Cloudways ინტეგრაცია
 
 ## მიმოხილვა {#overview}
 Cloudways არის მართული ღრუბლოვანი ჰოსტინგ პლატფორმა, რომელიც საშუალებას გაძლევთ WordPress საიტები განათავსოთ სხვადასხვა ღრუბლოვანი პროვაიდერების, როგორიცაა DigitalOcean, AWS, Google Cloud და სხვა, გამოყენებით. ეს ინტეგრაცია უზრუნველყოფს დომეინების ავტომატურ სინქრონიზაციას და SSL სერტიფიკატის მართვას Ultimate Multisite-სა და Cloudways-ს შორის.

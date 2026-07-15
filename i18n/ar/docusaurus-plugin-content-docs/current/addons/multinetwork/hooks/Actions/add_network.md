@@ -4,7 +4,7 @@ title: الإجراء - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# الإجراء: add_network {#action-addnetwork}
+# الإجراء: add_network
 
 يتم إطلاقه بعد إضافة شبكة جديدة.
 

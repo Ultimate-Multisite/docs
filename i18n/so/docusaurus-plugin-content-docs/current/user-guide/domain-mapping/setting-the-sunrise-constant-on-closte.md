@@ -3,7 +3,7 @@ title: Dejinta Xaddiga Qorraxda ee Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Deebiyeynta badankooda Sunrise oo ah true-ga Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Deebiyeynta badankooda Sunrise oo ah true-ga Closte
 
 Waxaa jira server-host-yada qaar oo xiraya faylka wp-config.php sababta amniga. Tani waxay ka hor imacsanaysaa Ultimate Multisite in si toos ah u wax ka beddelo faylka si loo darto badankooda (constants) ee loo baahan yahay si isbeddellada domain-ka iyo astaamaha kale ay shaqeeyaan. Closte waa mid ka mid ah host-yadan.
 

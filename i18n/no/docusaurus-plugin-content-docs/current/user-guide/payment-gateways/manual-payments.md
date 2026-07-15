@@ -3,7 +3,7 @@ title: Konfigurere manuelle betalinger
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Sette opp manuelle betalinger (v2) {#setting-up-manual-payments-v2}
+# Sette opp manuelle betalinger (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen refererer til Ultimate Multisite versjon 2.x.**_
 

@@ -3,7 +3,7 @@ title: Dîroka guhertinan
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Tomara guhertinan {#changelog}
+# Tomara guhertinan
 
 ## 1.9.0 — Di 2026-04-28 de hate weşandin {#190--released-on-2026-04-28}
 

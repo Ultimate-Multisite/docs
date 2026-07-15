@@ -3,7 +3,7 @@ title: Razumevanje dashboard-a
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Razumevanje Ultimate Multisite Dashboard-a {#understanding-the-ultimate-multisite-dashboard}
+# Razumevanje Ultimate Multisite Dashboard-a
 
 Pre nego što se duboko uđemo u naprednije opcije konfiguracije i operativne aspekte Ultimate Multisite, pogledajmo dashboard.
 

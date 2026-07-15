@@ -3,7 +3,7 @@ title: Mopua lekhotso la admin
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Pesa Pelepo ea Hoho ea Ba'a (Admin Page Creator) {#admin-page-creator}
+# Pesa Pelepo ea Hoho ea Ba'a (Admin Page Creator)
 
 Le ntlha eho le ho fihla ke le **Admin Page Creator** add-on.
 

@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Akayunguruzo: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# Akayunguruzo: wu_search_models_functions
 
 Emerera abategura plugin kongeramo indi mikorere y’imiterere y’ishakisha.
 

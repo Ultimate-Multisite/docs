@@ -3,7 +3,7 @@ title: Txhawm thiab Tuaj
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Xuất và Nhập {#export--import}
+# Xuất và Nhập
 
 Ultimate Multisite 2.9.0 thêm một công cụ **Xuất & Nhập** cho trang đơn lẻ dưới mục **Tools > Export & Import**. Bạn sử dụng nó khi cần đóng gói một trang WordPress thành tệp ZIP, khôi phục tệp ZIP đó, hoặc di chuyển một trang giữa các cài đặt WordPress Ultimate Multisite và trang đơn lẻ tương thích.
 

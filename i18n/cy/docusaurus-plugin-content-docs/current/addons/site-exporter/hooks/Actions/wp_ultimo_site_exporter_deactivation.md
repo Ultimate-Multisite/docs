@@ -4,7 +4,7 @@ title: Gweithred - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Gweithred: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Gweithred: wp_ultimo_site_exporter_deactivation
 
 Gadewch i rannau eraill o’r ategyn atodi eu harferion ar gyfer dadactifadu.
 

@@ -3,7 +3,7 @@ title: Marrja e pagesës
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Marrja e pagesave (v2) {#getting-paid-v2}
+# Marrja e pagesave (v2)
 
 _**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 

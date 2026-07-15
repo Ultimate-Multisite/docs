@@ -3,7 +3,7 @@ title: 멤버십 취소하기
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membership 취소하기 (v2) {#canceling-a-membership-v2}
+# Membership 취소하기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 관한 것입니다.**_
 

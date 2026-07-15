@@ -3,7 +3,7 @@ title: Spracovanie daní
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Spracovanie daní {#tax-handling}
+# Spracovanie daní
 
 Ultimate Multisite má modul na výber daní zabudovaný v našom hlavnom plugine, takže ak potrebujete vyberať dane z predaja pri svojich plánoch, balíkoch a službách, môžete to jednoducho urobiť bez toho, aby ste museli inštalovať akékoľvek doplnky.
 

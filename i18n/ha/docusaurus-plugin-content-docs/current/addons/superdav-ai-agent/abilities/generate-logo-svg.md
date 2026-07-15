@@ -3,7 +3,7 @@ title: Ƙirƙiri Tambarin SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Samar da Logo SVG {#generate-logo-svg}
+# Samar da Logo SVG
 
 Ikon **Generate Logo SVG** yana ba Theme Builder damar ƙirƙira da saka logo SVG na musamman kai tsaye cikin shafin WordPress ɗinka tare da tsabtacewa ta atomatik mai aminci ga namespace.
 

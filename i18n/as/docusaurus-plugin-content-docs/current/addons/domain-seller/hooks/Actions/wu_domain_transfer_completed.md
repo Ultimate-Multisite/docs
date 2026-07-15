@@ -4,7 +4,7 @@ title: কাৰ্য্য - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Action: wu_domain_transfer_completed
 
 ডমেইন স্থানান্তৰ (domain transfer) সম্পন্ন হোৱাৰ পিছত এই কাৰ্য্যটো ট্ৰিগাৰ হয়।
 

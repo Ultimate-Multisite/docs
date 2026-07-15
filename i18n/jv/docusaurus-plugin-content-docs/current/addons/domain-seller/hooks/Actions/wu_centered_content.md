@@ -4,7 +4,7 @@ title: Tumindak - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Tindakan: wu_centered_content {#action-wucenteredcontent}
+# Tindakan: wu_centered_content
 
 Ngidini pangembang plugin nambahake isi tambahan ing njero kolom sing dipusatake.
 

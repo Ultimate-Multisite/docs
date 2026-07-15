@@ -4,7 +4,7 @@ title: কাৰ্য্য - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# অ্যাকশন: wu_page_before_render {#action-wupagebeforerender}
+# অ্যাকশন: wu_page_before_render
 
 এটা পৃষ্ঠা ৰেণ্ডাৰ কৰাৰ আগতে এই অ্যাকশনটো ট্ৰিগাৰ হয়।
 

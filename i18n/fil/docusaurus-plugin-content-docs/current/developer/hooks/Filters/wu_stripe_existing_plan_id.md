@@ -4,7 +4,7 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 Sinusuri nito ang ID ng plan na titingnan. Kung umiiral ang ID na ito, gagamitin ng bagong subscription ang plan na ito.
 

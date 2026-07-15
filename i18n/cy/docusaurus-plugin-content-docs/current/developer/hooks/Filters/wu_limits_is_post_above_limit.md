@@ -4,7 +4,7 @@ title: Hidlydd - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Hidlydd: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Hidlydd: wu_limits_is_post_above_limit
 
 Yn gwirio a ganiateir math post penodol ar y plan hwn. Caniatáu i ddatblygwyr plugin hidlo'r gwerth a ddychwelir
 

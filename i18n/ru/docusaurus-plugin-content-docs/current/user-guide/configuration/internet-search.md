@@ -3,7 +3,7 @@ title: Поиск в Интернете
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Поиск в Интернете {#internet-search}
+# Поиск в Интернете
 
 Gratis AI Agent v1.5.0 добавляет возможность **Поиска в Интернете**, которая позволяет помощнику AI получать актуальную информацию из сети во время разговора. Эта функция работает на базе [Brave Search API](https://brave.com/search/api/) или [Tavily API](https://tavily.com/).
 

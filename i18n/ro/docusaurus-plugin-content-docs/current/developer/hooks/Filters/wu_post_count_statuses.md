@@ -4,7 +4,7 @@ title: Filtru - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtru: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtru: wu_post_count_statuses
 
 Permite dezvoltatorilor de plugin să modifice ce status de post ar trebui contat. În mod implicit, sunt contate postările cu statusul *published* și *private*.
 

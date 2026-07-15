@@ -3,7 +3,7 @@ title: წევრობის გაუქმება
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# წევრობის გაუქმება (v2) {#canceling-a-membership-v2}
+# წევრობის გაუქმება (v2)
 
 _**მნიშვნელოვანი შენიშვნა: ეს სტატია Ultimate Multisite ვერსია 2.x-სთვის.**_
 

@@ -3,7 +3,7 @@ title: cPanel ပေါင်းစည်းမှု
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ပေါင်းစည်းမှု {#cpanel-integration}
+# cPanel ပေါင်းစည်းမှု
 
 ## အကျဉ်းချုပ် {#overview}
 cPanel သည် shared hosting နှင့် dedicated hosting provider များစွာက အသုံးပြုသော အရေပန်းအများဆုံး web hosting control panel တစ်ခုဖြစ်သည်။ ဤပေါင်းစည်းမှုသည် Ultimate Multisite နှင့် cPanel အကြား domain များကို အလိုအလျောက် ချိန်ကိုက်ပေးနိုင်ပြီး၊ သင့် cPanel အကောင့်တွင် domain alias များနှင့် subdomain များကို အလိုအလျောက် ထည့်သွင်းနိုင်စေပါသည်။

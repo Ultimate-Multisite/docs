@@ -3,7 +3,7 @@ title: GitHub స్నిప్పెట్స్
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# మా GitHub రిపోజిటరీలో Ultimate Multisite స్నిప్పెట్లను ఎలా ఉపయోగించాలి {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# మా GitHub రిపోజిటరీలో Ultimate Multisite స్నిప్పెట్లను ఎలా ఉపయోగించాలి
 
 GitHub రిపోజిటరీలో కోడ్ స్నిప్పెట్లు అందుబాటులో ఉన్నాయి, వీటిని Ultimate Multisite వినియోగదారులు తరచుగా అభ్యర్థిస్తారు. సైన్-అప్ పేజీలలో Google Analytics స్క్రిప్ట్ జోడించడం లేదా admin dashboard నుండి meta box దాచడం వంటి చిన్న ఫంక్షనాలిటీలను జోడించాలనుకునే వారికి ఇవి ఉపయోగపడతాయి.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# మీ theme యొక్క functions.php ఫైల్‌లో స్నిప్పెట్ ఎలా జోడించాలి. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# మీ theme యొక్క functions.php ఫైల్‌లో స్నిప్పెట్ ఎలా జోడించాలి.
 
   1. మీ WordPress Network admin dashboard లోకి లాగిన్ అయి Themes > Theme Editor కి వెళ్ళండి (కింద స్క్రీన్‌షాట్ చూడండి).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins (mu-plugins) ఎలా క్రియేట్ చేయాలి {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins (mu-plugins) ఎలా క్రియేట్ చేయాలి
 
 WordPress లో "Must-Use Plugins" లేదా సంక్షిప్తంగా "mu-plugins" అని పిలిచే కస్టమ్ ఫంక్షనాలిటీని లోడ్ చేయడానికి ఒక ఫీచర్ ఉంది.
 

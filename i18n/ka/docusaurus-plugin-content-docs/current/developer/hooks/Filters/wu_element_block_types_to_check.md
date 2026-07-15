@@ -4,7 +4,7 @@ title: ფილტრი - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# ფილტრი: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# ფილტრი: wu_element_block_types_to_check
 
 შესაძლოა მოგვიანებით დამატებითი ბლოკების დამატება დაგვჭირდეს.
 

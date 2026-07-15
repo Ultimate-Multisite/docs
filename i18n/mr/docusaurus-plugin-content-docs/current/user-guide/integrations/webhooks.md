@@ -3,7 +3,7 @@ title: वेबहुक्स
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) वर पहिली नजर {#a-first-look-on-webhooks-v2}
+# Webhooks (v2) वर पहिली नजर
 
 _**लक्ष द्या: हे वैशिष्ट्य किंवा लेख प्रगत वापरकर्त्यांसाठी आहे याची नोंद घ्या.**_
 

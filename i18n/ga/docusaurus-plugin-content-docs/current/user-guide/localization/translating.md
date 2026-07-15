@@ -3,7 +3,7 @@ title: Traduairt an Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tárgáil Ultimate Multisite {#translating-ultimate-multisite}
+# Tárgáil Ultimate Multisite
 
 Tá Ultimate Multisite dénachd in Gaeilge, ach tá an plugin go léir fada tradháil agus táimid ag féachaint ar chontrait tradáiste.
 

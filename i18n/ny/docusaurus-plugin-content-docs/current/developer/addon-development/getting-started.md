@@ -3,7 +3,7 @@ title: Kuyamba ndi Kupanga Zowonjezera
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kupanga Chowonjezera {#addon-development}
+# Kupanga Chowonjezera
 
 ## Kapangidwe ka Chowonjezera {#addon-structure}
 

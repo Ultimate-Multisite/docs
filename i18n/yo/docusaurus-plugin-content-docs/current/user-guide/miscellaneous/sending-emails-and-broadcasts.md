@@ -3,7 +3,7 @@ title: Fifiranṣẹ Àwọn Imeeli àti Àwọn Ìkede Kaakiri
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Fífi Emails àti Ìgbéròyìn Ránṣẹ́ (v2) {#sending-emails-and-broadcasts-v2}
+# Fífi Emails àti Ìgbéròyìn Ránṣẹ́ (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀dà 2.x.**_
 

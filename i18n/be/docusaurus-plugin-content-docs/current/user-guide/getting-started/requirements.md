@@ -3,7 +3,7 @@ title: Патраebaванні
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Патраebaванні Ultimate Multisite {#ultimate-multisite-requirements}
+# Патраebaванні Ultimate Multisite
 
 Перш за ўсё, што вы можаце спытаць сябе, перш куплі Ultimate Multisite, гэта: што патраebaванні для прагону нашага плагіна? Нуў, шчасце, што патрабаваў ва ўсёга некалькі асноўных рэчаў для прагону Ultimate Multisite: **доменнае імя**, добры **провайдар хостынгу** і ўстаноўка **Multisite** на WordPress. Гэта ўсё, што вам патрэбна!
 

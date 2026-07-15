@@ -3,7 +3,7 @@ title: WordPress Multisite ಅನ್ನು ಹೇಗೆ ಸ್ಥಾಪಿಸು
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite ಅನ್ನು ಹೇಗೆ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವುದು? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite ಅನ್ನು ಹೇಗೆ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡುವುದು?
 
 WordPress Multisite ಒಂದೇ ಇನ್‌ಸ್ಟಾಲೇಷನ್‌ನಲ್ಲಿ ಹಲವಾರು ಸೈಟ್‌ಗಳ ನೆಟ್‌ವರ್ಕ್ ಹೊಂದಲು ಅನುಮತಿಸುತ್ತದೆ. ಇದು ಅಂತರ್ನಿರ್ಮಿತ ವೈಶಿಷ್ಟ್ಯವಾಗಿದೆ, ಆದರೆ ಡೀಫಾಲ್ಟ್ ಆಗಿ ಸಕ್ರಿಯವಾಗಿರುವುದಿಲ್ಲ.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin ಗೆ trailing slash ಸೇರಿಸಿ {#add-a-trailing-slash-to-wp-admin}
+# /wp-admin ಗೆ trailing slash ಸೇರಿಸಿ
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

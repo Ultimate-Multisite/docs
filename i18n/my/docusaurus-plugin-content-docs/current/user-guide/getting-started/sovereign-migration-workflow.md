@@ -3,7 +3,7 @@ title: အချုပ်အခြာအာဏာဆိုင်ရာ ရွှ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# အချုပ်အခြာဆိုင်ရာ ပြောင်းရွှေ့မှု လုပ်ငန်းစဉ် {#sovereign-migration-workflow}
+# အချုပ်အခြာဆိုင်ရာ ပြောင်းရွှေ့မှု လုပ်ငန်းစဉ်
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 သည် စံ subsite တစ်ခုကို sovereign tenant infrastructure ထဲသို့ ရွှေ့ပြောင်းရာတွင် migration verification gates (စစ်ဆေးရေး တံခါးများ) ကို ထည့်သွင်းပေးထားပါသည်။
 

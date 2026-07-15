@@ -3,7 +3,7 @@ title: Nggo Akses Halaman Akun
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kepiye carane aku bisa mlebu halaman akun kanggo pisanan? {#how-can-i-access-my-account-page-for-the-first-time}
+# Kepiye carane aku bisa mlebu halaman akun kanggo pisanan?
 
 Sugeng rawuh ing Ultimate Multisite!
 

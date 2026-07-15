@@ -4,7 +4,7 @@ title: 'عملیات - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c2622b55e1ff656ba579f3ee25646584
 ---
-# اکشن: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# اکشن: wu_page_{$this->id}_before_render
 
 این اکشن قبل از رندر شدن یک صفحه خاص اجرا می‌شود.
 

@@ -4,7 +4,7 @@ title: Action - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Action: wu_domain_transfer_completed
 
 જ્યારે ડોમેન ટ્રાન્સફરની પ્રક્રિયા પૂરી થઈ જાય છે, ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

@@ -3,7 +3,7 @@ title: Tự động tìm kiếm và thay thế trong Mẫu trang web
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Tự động Tìm kiếm và Thay thế trong mẫu site (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Tự động Tìm kiếm và Thay thế trong mẫu site (v2)
 
 _**Hướng dẫn này yêu cầu WP UItimo phiên bản 2.x.**_
 

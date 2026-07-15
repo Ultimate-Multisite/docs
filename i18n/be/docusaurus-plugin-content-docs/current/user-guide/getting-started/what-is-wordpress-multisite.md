@@ -3,7 +3,7 @@ title: Што такое WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Што такое WordPress Multisite? {#what-is-wordpress-multisite}
+# Што такое WordPress Multisite?
 
 У сваім асноўным карыванні WordPress прапануе функцыю, якая называецца «Multisite». Яе паходнасць датыжыцца 2010 года, калі выходзіў WordPress 3.0. З таго часу яна прайшла шэраг рэдакцый, накіраваных на ўвежэнне новых функцый і павышэнне бяспекі.
 

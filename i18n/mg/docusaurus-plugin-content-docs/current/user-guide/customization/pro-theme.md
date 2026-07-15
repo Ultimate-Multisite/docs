@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Ny fanamboarana ny Admin Panel-nao amin'ny PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Ny fanamboarana ny Admin Panel-nao amin'ny PRO Theme
 
 Matetika rehefa manao asa ho mpanjifa isika dia mila manome traikefa manokana antsika amin'ny dashboard an'ny WordPress ho an'ireo mpanjifantsika. Raha mitady endrika sy fihetseham-po matihanina kokoa ianao, ny PRO Theme dia afaka manampy anao.
 

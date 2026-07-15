@@ -3,7 +3,7 @@ title: Kuyera plani
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kufunsa plan (v2) {#downgrading-a-plan-v2}
+# Kufunsa plan (v2)
 
 _**KUFUNSA: Izi nkhani iyi imaliza Ultimate Multisite v2.x.**_
 

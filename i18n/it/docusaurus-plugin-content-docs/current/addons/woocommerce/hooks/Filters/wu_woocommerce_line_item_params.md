@@ -4,7 +4,7 @@ title: Filtro - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtra: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filtra: wu_woocommerce_line_item_params
 
 Filtra i parametri utilizzati per creare gli articoli della riga nel carrello WooCommerce, prima di reindirizzare il cliente al checkout WooCommerce.
 

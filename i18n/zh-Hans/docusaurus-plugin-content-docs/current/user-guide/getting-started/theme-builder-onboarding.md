@@ -3,7 +3,7 @@ title: 主题构建器新手引导流程
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# 主题构建器入门流程 {#theme-builder-onboarding-flow}
+# 主题构建器入门流程
 
 Superdav AI Agent v1.12.0 引入了引导式的 **主题构建器入门流程**，帮助您在首次设置时创建自定义区块主题。这取代了旧的 Site Builder 模式，采用了一种更灵活、由智能体辅助的方式。
 

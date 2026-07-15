@@ -3,7 +3,7 @@ title: Përfancësimi i Panikut
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Përmbledhje e Dashboardit {#dashboard-overview}
+# Përmbledhje e Dashboardit
 
 Ultimate Multisite ka një **Dashboard** të dedikuar në menyn e Ultimate Multisite, dhe gjithashtu shton widget-e në Network Dashboard. Ky artikull flet për atë që do të shihni në të dy vendet.
 

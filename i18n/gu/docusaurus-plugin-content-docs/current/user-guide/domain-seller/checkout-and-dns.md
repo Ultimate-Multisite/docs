@@ -3,7 +3,7 @@ title: ચેકઆઉટ ફીલ્ડ અને ગ્રાહક DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# ચેકઆઉટ ક્ષેત્ર અને ગ્રાહક DNS વ્યવસ્થાપન {#checkout-field-and-customer-dns-management}
+# ચેકઆઉટ ક્ષેત્ર અને ગ્રાહક DNS વ્યવસ્થાપન
 
 ## Domain Selection ચેકઆઉટ ક્ષેત્ર {#the-domain-selection-checkout-field}
 

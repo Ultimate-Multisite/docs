@@ -3,7 +3,7 @@ title: Shigarwar Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# همگرایی با Cloudflare (Cloudflare Integration) {#cloudflare-integration}
+# همگرایی با Cloudflare (Cloudflare Integration)
 
 ## مروری کلی (Overview) {#overview}
 Cloudflare یک شبکه تحویل محتوا (CDN) و ارائه‌دهنده امنیت پیشرو است که به محافظت از وب‌سایت‌ها کمک کرده و سرعت آن‌ها را بالا می‌برد. این همگرایی امکان مدیریت خودکار دامنه بین Ultimate Multisite و Cloudflare، به ویژه برای نصب‌های چنددامنه زیردامنه‌ای (subdomain multisite)، را فراهم می‌کند.

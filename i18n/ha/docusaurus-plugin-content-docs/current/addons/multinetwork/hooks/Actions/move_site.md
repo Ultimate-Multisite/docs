@@ -4,7 +4,7 @@ title: Aiki - matsar_da_shafi
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Aiki: move_site {#action-movesite}
+# Aiki: move_site
 
 Yana faruwa bayan an matsar da rukunin yanar gizo zuwa sabuwar cibiyar sadarwa.
 

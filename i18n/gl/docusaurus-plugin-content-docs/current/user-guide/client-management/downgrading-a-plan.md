@@ -3,7 +3,7 @@ title: Reducir un plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Baixar un plan (v2) {#downgrading-a-plan-v2}
+# Baixar un plan (v2)
 
 _**NOTA IMPORTANTE: Este artigo refere-se à Ultimate Multisite versão 2.x.**_
 

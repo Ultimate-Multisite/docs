@@ -4,7 +4,7 @@ title: Iragazkia - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Iragazkia: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Iragazkia: wu_apply_signup_fee
 
 Iragazten du signup fee aplikatu behar den ala ez.
 

@@ -3,7 +3,7 @@ title: Integracja CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integration CyberPanel {#cyberpanel-integration}
+# Integration CyberPanel
 
 Evîlî ev nasîma ku diyar kirin a Ultimate Multisite CyberPanel ji bo şêweyek virtual host (virtual host) bi avotomatî afêmkirin û hatina wê derketin (delete) li CyberPanel, bi taybetmendiyeke optional ji bo daxastkirina SSL bi avotomatî (auto-SSL) bi Let's Encrypt, ramana.
 

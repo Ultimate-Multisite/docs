@@ -3,7 +3,7 @@ title: Migri de V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migriĝo de V1 {#migrating-from-v1}
+# Migriĝo de V1
 
 ## Ultimate Multisite ŝanĝis de sia originale 1.x familio de riliso al la 2.x familio de riliso. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

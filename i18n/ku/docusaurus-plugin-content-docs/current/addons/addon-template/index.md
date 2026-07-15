@@ -3,9 +3,9 @@ title: Şablona Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Şablona Pêvekê {#addon-template}
+# Şablona Pêvekê
 
-{{ADDON_DESCRIPTION}}
+Şablona Addon — Ultimate Multisite.
 
 ## Pêdivî {#requirements}
 

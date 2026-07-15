@@ -4,7 +4,7 @@ title: سۈزگۈچ - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# سۈزگۈچ: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# سۈزگۈچ: wp_ultimo_skip_network_active_check
 
 تەرەققىياتچىلارغا network activation تەكشۈرۈشىنى قىسقا يولدىن ئاتلاپ ئۆتۈشكە يول قويىدۇ.
 

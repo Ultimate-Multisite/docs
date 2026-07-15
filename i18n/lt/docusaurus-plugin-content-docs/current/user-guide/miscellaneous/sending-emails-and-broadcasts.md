@@ -3,7 +3,7 @@ title: El. laiškų ir transliacijų siuntimas
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# El. laiškų ir transliacijų siuntimas (v2) {#sending-emails-and-broadcasts-v2}
+# El. laiškų ir transliacijų siuntimas (v2)
 
 _**SVARBI PASTABA: šis straipsnis skirtas Ultimate Multisite 2.x versijai.**_
 

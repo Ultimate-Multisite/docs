@@ -4,7 +4,7 @@ title: Handling - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Handling: update_network {#action-updatenetwork}
+# Handling: update_network
 
 Udløses, efter et eksisterende netværk er blevet opdateret.
 

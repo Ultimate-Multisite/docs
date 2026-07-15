@@ -4,7 +4,7 @@ title: فلٽر - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# فلٽر: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# فلٽر: wp_ultimo_skip_network_active_check
 
 ڊولپرن کي هن چڪاس کي بائي پاس ڪرڻ جي اجازت ڏيو.
 

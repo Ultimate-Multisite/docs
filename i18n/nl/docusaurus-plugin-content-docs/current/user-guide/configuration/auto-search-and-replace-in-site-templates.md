@@ -3,7 +3,7 @@ title: Automatisch zoeken en vervangen in sitesjablonen
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisch zoeken en vervangen in site-templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatisch zoeken en vervangen in site-templates (v2)
 
 _**Deze tutorial vereist WP UItimo versie 2.x.**_
 

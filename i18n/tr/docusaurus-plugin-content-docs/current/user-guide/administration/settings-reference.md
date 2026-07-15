@@ -3,7 +3,7 @@ title: Ayarlar Referansı
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Ayarlar Referansı {#settings-reference}
+# Ayarlar Referansı
 
 Bu sayfa, Ultimate Multisite içinde günlük yönetimi etkileyen ayarları ve son davranış değişikliklerini izler.
 

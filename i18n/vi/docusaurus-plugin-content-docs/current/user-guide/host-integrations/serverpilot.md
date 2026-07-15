@@ -3,7 +3,7 @@ title: Tích hợp ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Tích hợp ServerPilot {#serverpilot-integration}
+# Tích hợp ServerPilot
 
 ## Tổng quan {#overview}
 ServerPilot là dịch vụ đám mây để lưu trữ WordPress và các website PHP khác trên máy chủ tại DigitalOcean, Amazon, Google, hoặc bất kỳ nhà cung cấp máy chủ nào khác. Tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và ServerPilot.

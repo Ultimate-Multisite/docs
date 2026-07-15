@@ -3,7 +3,7 @@ title: Tema Builder-aren introduktua flujoa
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 introduce batua **Theme Builder onboarding flow** (prozesua-erregistroa) eta gure lehen eskaintzaren artean, moduaa espezializatuta tema bat dezake duzun modu guiaatzen du. Horrek eskien Site Builder modua iragatik, agent-berri eta modu erabilgarri batekin erantzuten du.
 

@@ -3,7 +3,7 @@ title: Προϊόντα Δομέων και Τιμολόγηση
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Προϊόντα και Τιμολόγηση Domain {#domain-products-and-pricing}
+# Προϊόντα και Τιμολόγηση Domain
 
 Τα προϊόντα domain είναι ο τρόπος με τον οποίο ελέγχετε τις τιμές, τις TLDs, την ιδιωτικότητα WHOIS και την επιλογή παρόχου. Κάθε προϊόν domain είναι ένα τυπικό προϊόν Multisite Ultimate με μια επιπλέον καρτέλα **Domain Settings**.
 

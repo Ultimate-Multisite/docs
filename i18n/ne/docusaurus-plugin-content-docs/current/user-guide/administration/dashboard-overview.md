@@ -3,7 +3,7 @@ title: ड्यासबोर्ड अवलोकन
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ड्यासबोर्ड अवलोकन {#dashboard-overview}
+# ड्यासबोर्ड अवलोकन
 
 Ultimate Multisite मा Ultimate Multisite मेनु अन्तर्गत एक समर्पित **Dashboard** हुन्छ, र यसले नेटवर्क ड्यासबोर्डमा पनि widgets थप्छ। यो लेखले दुवै ठाउँमा तपाईंले के देख्नुहुने भन्ने बारे जानकारी दिन्छ।
 

@@ -3,7 +3,7 @@ title: AffiliateWP integracija
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# Integracija su AffiliateWP {#affiliatewp-integration}
+# Integracija su AffiliateWP
 
 Šią funkciją suteikia **AffiliateWP** papildomas (addon).
 

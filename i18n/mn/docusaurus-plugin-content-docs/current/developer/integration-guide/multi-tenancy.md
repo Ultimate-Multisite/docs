@@ -3,7 +3,7 @@ title: Олон түрээслэгчийн интеграцчлал
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy интеграц {#multi-tenancy-integration}
+# Multi-Tenancy интеграц
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 нь бие даасан tenant-ууд, шилжилтийн баталгаажуулалт, tenant-ийн амьдралын мөчлөгийн автоматжуулалтын хэд хэдэн интеграцын цэгийг өөрчилнө.
 

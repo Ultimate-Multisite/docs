@@ -4,7 +4,7 @@ title: Acció - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Acció: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Acció: wp_ultimo_gocardless_activation
 
 Deixa que altres parts del plugin adjunten les seves rutines de activació.
 

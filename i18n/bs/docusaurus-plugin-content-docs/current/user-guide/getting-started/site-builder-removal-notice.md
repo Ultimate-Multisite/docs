@@ -3,7 +3,7 @@ title: Obavještenje o uklanjanju režima izgrađivača stranica
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Uklanjanje Site Builder moda {#site-builder-mode-removal-notice}
+# Uklanjanje Site Builder moda
 
 **Site Builder mod je uklonjen u Superdav AI Agent v1.12.0.** Ako ste koristili Site Builder mod, preporučujemo da migrirate na **Setup Assistant agent** za kreiranje tema i postavljanje sajta.
 

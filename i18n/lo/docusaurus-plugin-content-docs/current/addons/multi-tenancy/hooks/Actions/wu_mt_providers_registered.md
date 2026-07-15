@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# ການກະທຳ: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# ການກະທຳ: wu_mt_providers_registered
 
 ຖືກເອີ້ນຫຼັງຈາກຜູ້ໃຫ້ບໍລິການເລີ່ມຕົ້ນຖືກລົງທະບຽນແລ້ວ.
 

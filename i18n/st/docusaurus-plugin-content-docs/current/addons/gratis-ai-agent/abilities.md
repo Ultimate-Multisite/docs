@@ -3,7 +3,7 @@ title: Tšupiso ea Bokhoni
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tshupiso ya Bokgoni {#abilities-reference}
+# Tshupiso ya Bokgoni
 
 Bokgoni ke diketso tsa motheo tseo Gratis AI Agent e ka di bitsang ho kenyo ya hao ya WordPress. Bokgoni bo bong le bo bong ke class ya PHP e ngodisitsweng e hlahisang JSON schema — moemedi o bala schema ena ka nako ya tshebetso ho utlwisisa hore na ke diparamethara dife tse hlokahalang le hore na bokgoni bo kgutlisa eng.
 

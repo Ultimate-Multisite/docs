@@ -3,7 +3,7 @@ title: ایجاد کدهای تخفیف
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ایجاد کدهای تخفیف (v2) {#creating-discount-codes-v2}
+# ایجاد کدهای تخفیف (v2)
 
 _**یادداشت مهم: این مقاله به Ultimate Multisite نسخه 2.x اشاره دارد.**_
 

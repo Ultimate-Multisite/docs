@@ -4,7 +4,7 @@ title: 'Ação - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Ação: wu_page_${this->id}_load {#action-wupagethis-idload}
+# Ação: wu_page_${this->id}_load
 
 Permite que desenvolvedores de plugins adicionem ganchos adicionais a páginas específicas.
 

@@ -3,7 +3,7 @@ title: Avslag på Site Builder-läge
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Borttagande av Site Builder-läget {#site-builder-mode-removal-notice}
+# Borttagande av Site Builder-läget
 
 **Site Builder mode har tagits bort i Superdav AI Agent v1.12.0.** Om du använde Site Builder mode, bör du migrera till **Setup Assistant agent** för att skapa teman och ställa in webbplatsen.
 

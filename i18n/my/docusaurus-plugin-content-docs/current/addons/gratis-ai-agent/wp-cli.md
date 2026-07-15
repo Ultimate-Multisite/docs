@@ -3,7 +3,7 @@ title: WP-CLI အကိုးအကား
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ကို အသုံးပြုပုံ အကိုးအကား {#wp-cli-reference}
+# WP-CLI ကို အသုံးပြုပုံ အကိုးအကား
 
 Gratis AI Agent သည် agent ကို စစ်ဆေးခြင်း၊ စွမ်းရည်များကို စီမံခန့်ခွဲခြင်းနှင့် command line မှ agent အခြေအနေကို မေးမြန်းခြင်းများအတွက် `wp gratis-ai-agent` command family ကို ပေးထားပါသည်။ command အားလုံးသည် WP-CLI 2.0 သို့မဟုတ် အထက်လိုအပ်ပါသည်။
 

@@ -3,7 +3,7 @@ title: Gemeinschaft
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Wie man sich in die Ultimate Multisite Community anschließt {#how-to-join-ultimate-multisite-community}
+# Wie man sich in die Ultimate Multisite Community anschließt
 
 D'Ultimate Multisite Community isch en Ort, wo du Kontakt mit andere Ultimate Multisite User ufneh und Tipps, Erfahrige und meh teile chasch. Um zur Ultimate Multisite Community z'cho, ga zu https://community.ultimatemultisite.com/home.
 

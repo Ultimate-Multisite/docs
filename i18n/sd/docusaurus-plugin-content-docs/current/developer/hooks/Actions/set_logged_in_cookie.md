@@ -4,7 +4,7 @@ title: عمل - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# عمل: set_logged_in_cookie {#action-setloggedincookie}
+# عمل: set_logged_in_cookie
 
 لاگ اِن تصديق واري ڪوڪي سيٽ ٿيڻ کان فوراً اڳ هلندو آهي.
 

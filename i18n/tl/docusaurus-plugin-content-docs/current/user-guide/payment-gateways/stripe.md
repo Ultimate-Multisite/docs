@@ -3,7 +3,7 @@ title: Pag-set Up ng Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Pag-set Up ng Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Pag-set Up ng Stripe Gateway (v2)
 
 _**MAHALAGANG PA TANDAAN: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 

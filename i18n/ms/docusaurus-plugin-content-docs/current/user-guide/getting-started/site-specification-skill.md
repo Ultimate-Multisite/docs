@@ -3,7 +3,7 @@ title: Kemahiran Spesifikasi Tapak
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kemahiran Spesifikasi Tapak {#site-specification-skill}
+# Kemahiran Spesifikasi Tapak
 
 **Kemahiran Spesifikasi Tapak** adalah pendekatan berstruktur untuk merekodkan matlamat tapak, audiens, dan identiti jenama anda. Maklumat ini disimpan dalam memori **site_brief** anda, yang dirujuk oleh agen merentasi sesi untuk memberikan bantuan yang konsisten dan sedar konteks.
 

@@ -3,7 +3,7 @@ title: Iphepha le-Account loMxhasi
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Iphepha le-Account loMthengi Wakho (v2) {#your-clients-account-page-v2}
+# Iphepha le-Account loMthengi Wakho (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite inguqulelo 2.x.**_
 

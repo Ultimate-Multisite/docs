@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Àlẹmọ: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Àlẹmọ: wu_checkout_form_base_domains
 
 Àlẹmọ àwọn domain ìpilẹ̀ fọ́ọ̀mù checkout tí a pín tí kò yẹ kí wọ́n di àwọn ìgbasilẹ domain tí a so mọ́.
 

@@ -3,7 +3,7 @@ title: Konfigire Peman Manyèl
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Mete Peman Manyèl An Plas (v2) {#setting-up-manual-payments-v2}
+# Mete Peman Manyèl An Plas (v2)
 
 _**NÒT ENPÒTAN: Atik sa a refere a Ultimate Multisite vèsyon 2.x.**_
 

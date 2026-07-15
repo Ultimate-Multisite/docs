@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Panel Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Whakawhanaungatanga me te Control Panel o Hestia {#hestia-control-panel-integration}
+# Whakawhanaungatanga me te Control Panel o Hestia
 
 Ko tēnei whakatairanga e whakamārama ana i te ara hei whakauru i te Ultimate Multisite Hestia, ko te whakamahi i āhuatanga domain (domain) i ngā wāhi o te wāhi ahau (network) kia te pakihihia (automatically added) me te whakatū (removed) katoa mōnaohanga web (Web Domain Aliases) i Hestia.
 

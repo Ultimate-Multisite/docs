@@ -3,7 +3,7 @@ title: Fandefasana WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Fandahana amin'ny WP Engine {#wp-engine-integration}
+# Fandahana amin'ny WP Engine
 
 ## Famarahabana (Overview) {#overview}
 Ny WP Engine dia sehatra hosting WordPress manokana sy manome tolotra ambony izay manome fahaizana miasa tsara, fiarovana, ary fahafahana mivelatra ho an'ny tranonkala WordPress. Ity fandrindrana ity dia mamela ny fametrahana mivantana (automatic domain syncing) eo amin'ny Ultimate Multisite sy WP Engine.

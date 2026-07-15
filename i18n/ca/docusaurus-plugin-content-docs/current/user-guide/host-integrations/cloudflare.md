@@ -3,7 +3,7 @@ title: Integració amb Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integració amb Cloudflare {#cloudflare-integration}
+# Integració amb Cloudflare
 
 ## Resum {#overview}
 Cloudflare és un reticular de distribució de contingut (CDN) i proveïdor de seguretat líder que ajuda a protegir i accelerar els llocs web. Aquesta integració permet la gestió automàtica de domini entre Ultimate Multisite i Cloudflare, especialment per a instal·lacions de multisite amb subdominis.

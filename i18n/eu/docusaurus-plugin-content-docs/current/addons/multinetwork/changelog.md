@@ -3,7 +3,7 @@ title: Sare anitzeko aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Sare anitzeko aldaketen erregistroa {#multi-network-changelog}
+# Sare anitzeko aldaketen erregistroa
 
 ### 1.3.0 {#130}
 * Berria: Sare-txantiloien aurreikustailea — arakatu eta aurreikusi sare-txantiloiak zuzeneko panel batekin erosi aurretik.

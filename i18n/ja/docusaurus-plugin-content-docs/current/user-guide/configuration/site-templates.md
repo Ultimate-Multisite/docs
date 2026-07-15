@@ -3,7 +3,7 @@ title: サイトテンプレート
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# サイトテンプレート (v2) {#site-templates-v2}
+# サイトテンプレート (v2)
 
 _**注意: この記事は Ultimate Multisite version 2.x に関するものです。version 1.x を使用している場合は、**_ **こちらの記事を参照してください** _**。**_
 

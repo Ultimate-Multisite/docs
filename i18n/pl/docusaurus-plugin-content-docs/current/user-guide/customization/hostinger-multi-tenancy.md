@@ -3,7 +3,7 @@ title: Multi-tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-tenancy Hostinger {#hostinger-multi-tenancy}
+# Multi-tenancy Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 wprowadza funkcjonalność multi-tenancy Hostinger, dzięki której hostowane domeny mogą uczestniczyć w procesie tworzenia suwerennych tenantów obok istniejącej integracji mapowania domen Hostinger.
 

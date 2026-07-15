@@ -4,7 +4,7 @@ title: कृती - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 प्लगइनचे इतर भाग डीएक्टिव्हेट (deactivate) करताना स्वतःचे कार्य (routines) जोडू शकतील.
 

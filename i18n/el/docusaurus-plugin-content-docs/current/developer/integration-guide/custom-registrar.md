@@ -3,7 +3,7 @@ title: Ανάπτυξη Προσαρμοσμένης Ενσωμάτωσης Εγ
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Δημιουργία Ενσωμάτωσης Προσαρμοσμένου Registrar {#building-a-custom-registrar-integration}
+# Δημιουργία Ενσωμάτωσης Προσαρμοσμένου Registrar
 
 Το Addon Domain Seller χρησιμοποιεί ένα μοτίβο που ονομάζεται **Integration Registry**. Κάθε registrar είναι μια κλάση PHP που υλοποιεί το `Domain_Selling_Capability` και καταγράφεται μέσω του action hook `wu_domain_seller_register_capabilities`.
 

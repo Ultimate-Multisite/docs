@@ -4,7 +4,7 @@ title: តម្រង - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 ត្រងទិន្នន័យវត្ថុ មុនពេលវាត្រូវបានរក្សាទុកទៅក្នុងមូលដ្ឋានទិន្នន័យ។
 

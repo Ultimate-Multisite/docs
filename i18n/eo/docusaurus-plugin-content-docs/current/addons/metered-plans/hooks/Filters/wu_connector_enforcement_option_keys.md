@@ -4,7 +4,7 @@ title: Filtrilo - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filtro: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filtro: wu_connector_enforcement_option_keys
 
 Filtru la liston de AI-provizantaj opciŝlosiloj devigataj de la ĉefa retejo.
 

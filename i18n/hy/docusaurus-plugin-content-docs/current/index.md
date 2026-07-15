@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite փաստաթղթեր {#ultimate-multisite-documentation}
+# Ultimate Multisite փաստաթղթեր
 
 Բարի գալուստ Ultimate Multisite փաստաթղթեր։ Ultimate Multisite-ը WordPress Multisite-ը վերածում է ամբողջական Website as a Service (WaaS) հարթակի։
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 Տեխնիկական տեղեկատու մշակողների համար, որոնք կառուցում են Ultimate Multisite-ի հիման վրա։ Ներառում է hooks տեղեկատու, REST API փաստաթղթեր և addon-ի մշակման ուղեցույցներ։
 
-### [Addons](/addons) {#addons}
+### [Հավելումներ](/addons) {#addons}
 
 Փաստաթղթեր վճարովի addon plugin-ների համար, որոնք ընդլայնում են Ultimate Multisite-ը լրացուցիչ հնարավորություններով, ինչպիսիք են WooCommerce ինտեգրումը, վերլուծությունը, տիրույթների վաճառքը և ավելին։
 

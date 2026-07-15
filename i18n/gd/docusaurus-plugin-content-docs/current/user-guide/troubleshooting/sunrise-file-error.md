@@ -3,7 +3,7 @@ title: Earrach na fhaighinn a' chluainn
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Errare a Installadh Sunrise File {#error-installing-the-sunrise-file}
+# Errare a Installadh Sunrise File
 
 Tha an t-file `sunrise.php` air file a tha WordPress a thaimeachda gu eilf air e. Chan WordPress a faicinn a bheachd air an t-file `sunrise.php`, peatachd e dìreach anns an **folder wp-content**.
 

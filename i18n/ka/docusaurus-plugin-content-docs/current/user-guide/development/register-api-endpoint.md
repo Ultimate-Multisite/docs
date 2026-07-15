@@ -3,7 +3,7 @@ title: API-ის终ოს登録
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API конектоრი (endpoint) {#the-ultimate-multisite-register-api-endpoint}
+# The Ultimate Multisite Register API конектоრი (endpoint)
 
 ამ ტუტორიაში გეცოდინება, როგორ გამოვიყენოთ Ultimate Multisite /register API конектоრი ახალი მომხმარებლის მთელი ინტეგრაციის პროცესის შესაქმნელად თქვენს ქსელში და როგორ გავაკეთოთ ეს Zapier-ით.
 

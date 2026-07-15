@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# ການກະທຳ: wu_captcha_before_field {#action-wucaptchabeforefield}
+# ການກະທຳ: wu_captcha_before_field
 
 ເຮັດວຽກກ່ອນທີ່ຟິວ captcha ຈະຖືກສະແດງຜົນ.
 

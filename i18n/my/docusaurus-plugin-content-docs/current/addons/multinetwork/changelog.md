@@ -3,7 +3,7 @@ title: ကွန်ရက်ပေါင်းစုံ အပြောင်း
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network ပြောင်းလဲမှု မှတ်တမ်း {#multi-network-changelog}
+# Multi-Network ပြောင်းလဲမှု မှတ်တမ်း
 
 ### 1.3.0 {#130}
 * အသစ်: ကွန်ရက် ပုံစံ ကြိုတင်ကြည့်ရှုစက် (Network template previewer) — ဝယ်ယူခြင်းမပြုမီ live panel ဖြင့် ကွန်ရက်ပုံစံများကို ကြည့်ရှုနိုင်ပြီ။

@@ -3,7 +3,7 @@ title: Takardun Masu Haɓakawa
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Takardun Masu Ci gaba {#developer-documentation}
+# Takardun Masu Ci gaba
 
 Wannan jagora yana ba masu ci gaba duk abin da ake bukata don haɗawa da, faɗaɗa, ko haɓaka addons don Ultimate Multisite. Ultimate Multisite yana sauya WordPress Multisite network zuwa dandalin Website-as-a-Service (WaaS).
 

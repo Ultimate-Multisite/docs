@@ -4,7 +4,7 @@ title: Acción - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Acción: wu_domain_created {#action-wudomaincreated}
+# Acción: wu_domain_created
 
 Se dispara cuando se añade un nuevo mapeo de dominio.
 

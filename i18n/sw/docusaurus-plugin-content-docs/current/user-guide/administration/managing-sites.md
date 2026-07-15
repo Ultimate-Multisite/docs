@@ -3,7 +3,7 @@ title: Kusimamia Tovuti
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Kusimamia Tovuti {#managing-sites}
+# Kusimamia Tovuti
 
 Tovuti (au tovuti ndogo) ndio msingi wa biashara yako ya WaaS. Ultimate Multisite ina aina 3 za tovuti:
 

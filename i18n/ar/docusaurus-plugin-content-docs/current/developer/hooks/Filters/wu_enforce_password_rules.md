@@ -4,7 +4,7 @@ title: فلتر - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# المرشح: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# المرشح: wu_enforce_password_rules
 
 فلتر ما إذا كان يجب تطبيق قواعد إضافية لكلمة المرور.
 

@@ -3,7 +3,7 @@ title: የብዙ ተጠቃሚ መለያ መለየት
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# በርካታ- किरायेदार መለያየት (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# በርካታ- किरायेदार መለያየት (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከታዮች (sovereign tenants) በየ-subsite የውሂብ ጎታ እና የፋይል ሲስተም መለያየትን ይደግፋል። ይህ የደንበኛውን መረጃ በተናጠል እንዲቆይ በማድረግ፣ በኔትወርክ ደረጃ የሚደረጉ አሰጣጥ (provisioning)፣ ክፍያ (billing) እና አስተዳደር ሂደቶችን ይጠብቃል።
 

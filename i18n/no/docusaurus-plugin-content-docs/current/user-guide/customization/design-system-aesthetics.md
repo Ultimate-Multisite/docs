@@ -3,7 +3,7 @@ title: Design System Estetikk Ferdighet
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetikk Ferdighet {#design-system-aesthetics-skill}
+# Design System Estetikk Ferdighet
 
 **Design System Estetikk ferdigheten** er en veiledet tilnærming for å forbedre nettstedets visuelle identitet. Den hjelper deg med å ta konsistente beslutninger om typografi, farge, avstand og bevegelsestokens som definerer designsystemet ditt.
 

@@ -3,7 +3,7 @@ title: E-Mailen a Rundsendunge schécken
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-Mailen a Broadcasts schécken (v2) {#sending-emails-and-broadcasts-v2}
+# E-Mailen a Broadcasts schécken (v2)
 
 _**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 

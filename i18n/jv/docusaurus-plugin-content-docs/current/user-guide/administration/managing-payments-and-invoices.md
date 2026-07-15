@@ -3,7 +3,7 @@ title: Ngatur Pembayaran lan Faktur
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ngelola Pembayaran lan Faktur {#managing-payments-and-invoices}
+# Ngelola Pembayaran lan Faktur
 
 ## Pengaturan Pembayaran {#payment-settings}
 

@@ -3,7 +3,7 @@ title: Riferimento delle impostazioni
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Riferimento impostazioni {#settings-reference}
+# Riferimento impostazioni
 
 Questa pagina tiene traccia delle impostazioni che influenzano l’amministrazione quotidiana e le recenti modifiche di comportamento in Ultimate Multisite.
 

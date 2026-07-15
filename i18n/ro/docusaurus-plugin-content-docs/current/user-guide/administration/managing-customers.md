@@ -3,7 +3,7 @@ title: Gestionarea clienților
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Gestionarea clienților {#managing-customers}
+# Gestionarea clienților
 
 Pagina **Clienți** afișează lista membrilor înregistrați în rețeaua ta. Această pagină prezintă informații de bază despre utilizatori, inclusiv numele, adresa de email, ultima autentificare și un link **comută la** care îți permite să te autentifici în subsite-ul utilizatorului ca administrator de site.
 

@@ -3,7 +3,7 @@ title: Abuur Liis
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Abuur Menu {#create-menu}
+# Abuur Menu
 
 Awoodda **Abuur Menu** waxay abuurtaa menu-yada hagidda ee WordPress iyadoo taageeraysa calaamado hagid oo ka duwan cinwaannada bogagga.
 

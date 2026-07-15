@@ -4,7 +4,7 @@ title: පෙරහන - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# පෙරහන: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# පෙරහන: wu_captcha_whitelisted
 
 වත්මන් පරිශීලකයා/ඉල්ලීම සුදු ලැයිස්තුගත කළ යුතුදැයි පෙරහන් කරයි.
 

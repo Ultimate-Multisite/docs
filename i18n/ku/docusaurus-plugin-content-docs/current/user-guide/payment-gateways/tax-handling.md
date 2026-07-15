@@ -3,7 +3,7 @@ title: Rêvebirina Bacê
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Rêvebirina Bacê {#tax-handling}
+# Rêvebirina Bacê
 
 Ultimate Multisite di plugin-a me ya bingehîn de moduleke berhevkirina bacê heye, ji ber vê yekê heke hûn hewce ne ku bacên firotanê li ser plan, paket û xizmetên xwe berhev bikin, hûn dikarin bi hêsanî vê bikin bêyî ku pêvekên din saz bikin.
 

@@ -4,7 +4,7 @@ title: Veiksmas – atnaujinti tinklą
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Veiksmas: update_network {#action-updatenetwork}
+# Veiksmas: update_network
 
 Suveikia po to, kai esamas tinklas buvo atnaujintas.
 

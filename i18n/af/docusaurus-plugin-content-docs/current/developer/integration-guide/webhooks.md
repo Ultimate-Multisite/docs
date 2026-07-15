@@ -3,7 +3,7 @@ title: Webhook Hantering
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Hantering {#webhook-handling}
+# Webhook Hantering
 
 Skep aangepaste webhook-eindpunte om gebeurtenisse van eksterne dienste te ontvang en data met Ultimate Multisite te sinkroniseer.
 

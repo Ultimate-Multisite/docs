@@ -4,7 +4,7 @@ title: 动作 - wp_ultimo_plugin_and_theme_manager_load
 sidebar_label: wp_ultimo_plugin_and_theme_manager_load
 _i18n_hash: 0e231be0e568b6e61700e409039a6b4c
 ---
-# 动作: wp_ultimo_plugin_and_theme_manager_load {#action-wpultimopluginandthememanagerload}
+# 动作: wp_ultimo_plugin_and_theme_manager_load
 
 当所有依赖项加载完成时触发
 

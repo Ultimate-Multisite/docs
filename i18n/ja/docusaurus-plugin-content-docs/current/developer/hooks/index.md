@@ -3,7 +3,7 @@ title: フック参照
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks リファレンス {#hooks-reference}
+# Hooks リファレンス
 
 Ultimate Multisite のすべての **59個のアクション** と **118個のフィルター** の自動生成ドキュメントです。
 

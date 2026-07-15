@@ -4,7 +4,7 @@ title: कार्य - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# कार्य: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# कार्य: wu_handle_customer_meta_fields
 
 plugin विकासकर्ताहरूलाई आवश्यक भएमा meta data फरक तरिकाले सुरक्षित गर्न अनुमति दिनुहोस्।
 

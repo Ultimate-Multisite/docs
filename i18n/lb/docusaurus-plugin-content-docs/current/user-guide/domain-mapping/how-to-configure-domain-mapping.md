@@ -3,7 +3,7 @@ title: Wéi een Domain Mapping konfiguréiert
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Wéi een Domain-Mapping konfiguréiert (v2) {#how-to-configure-domain-mapping-v2}
+# Wéi een Domain-Mapping konfiguréiert (v2)
 
 _**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 

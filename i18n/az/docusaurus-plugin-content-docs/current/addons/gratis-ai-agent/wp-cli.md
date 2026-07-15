@@ -3,7 +3,7 @@ title: WP-CLI Referansı
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Referansı {#wp-cli-reference}
+# WP-CLI Referansı
 
 Gratis AI Agent, agent-i qiymətləndirmək, imkanları idarə etmək və agent statusunu komanda xəttindən sorğulamaq üçün `wp gratis-ai-agent` komanda ailəsini təqdim edir. Bütün komandalar WP-CLI 2.0 və ya yuxarı versiya tələb edir.
 

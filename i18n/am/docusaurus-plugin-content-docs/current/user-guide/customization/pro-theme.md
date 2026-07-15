@@ -3,7 +3,7 @@ title: ፕሮ ቴም
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# የአስተዳዳሪ ፓነልዎን በPRO Theme ማበጀት {#customizing-your-admin-panel-with-pro-theme}
+# የአስተዳዳሪ ፓነልዎን በPRO Theme ማበጀት
 
 በደንበኛ ስራ ስንሰራ፣ ለደንበኞቻችን በWordPress የአስተዳዳሪ ዳሽቦርድ ውስጥ የተበጀ (custom) ተሞክሮ እንዲሰጣቸው የሚያስፈልግ ጊዜ አለ። ይበልጥ ሙያዊ መልክ እና ስሜት እየፈለጉ ከሆነ፣ PRO Theme ሊረዳዎት ይችላል።
 

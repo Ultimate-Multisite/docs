@@ -3,7 +3,7 @@ title: Phucula ukudityaniswa kwePhaneli Yolawulo
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Phucula Udityaniso lwe-Control Panel {#enhance-control-panel-integration}
+# Phucula Udityaniso lwe-Control Panel
 
 ## Isishwankathelo {#overview}
 Enhance yi-control panel yale mihla ebonelela nge-automation enamandla yokusingatha kunye nezakhono zolawulo. Olu dityaniso luvumela ukuvumelanisa ngokuzenzekelayo kweedomain kunye nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite kunye ne-Enhance Control Panel.

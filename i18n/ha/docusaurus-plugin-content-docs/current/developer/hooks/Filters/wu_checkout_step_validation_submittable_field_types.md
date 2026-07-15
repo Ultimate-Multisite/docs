@@ -4,7 +4,7 @@ title: Tace - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Tace: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Tace: wu_checkout_step_validation_submittable_field_types
 
 Ba masu haɓakawa damar tsallake binciken idan field na iya aikawa ta atomatik.
 

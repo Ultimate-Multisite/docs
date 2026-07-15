@@ -3,7 +3,7 @@ title: තේමා ගොඩනැගීමේ හැකියාවන්
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# තේමාව ගොඩනැගීමේ හැකියාවන්: Scaffold සහ Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# තේමාව ගොඩනැගීමේ හැකියාවන්: Scaffold සහ Activate Block Themes
 
 Superdav AI Agent v1.12.0 මගින් ඔබට චැට් අතුරුමුහුණත (chat interface) හරහා කස්ටම් block themes සෘජුවම ජනනය කර ස්ථාපනය කිරීමට ඉඩ සලසන බලවත් හැකියාවන් දෙකක් හඳුන්වා දී ඇත.
 

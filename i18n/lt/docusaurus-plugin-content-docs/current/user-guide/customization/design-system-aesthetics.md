@@ -3,7 +3,7 @@ title: Dizaino sistemos estestikos įgūdžius
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kompetencijai Dizaino Sistemos Estetika {#design-system-aesthetics-skill}
+# Kompetencijai Dizaino Sistemos Estetika
 
 **Design System Aesthetics (Dizaino Sistemos Estetika)** yra gairinė veikla, kuri padeda sukurti jūsų svetainės vizualią identitetą. Ji jums padeda priimti vienod status sąrašu apie tipografiją, spalvas, atrypus ir judėjimo tokenus, kurie apibrėžia jūsų dizaino sistemą.
 

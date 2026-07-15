@@ -4,7 +4,7 @@ title: Զտիչ - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Զտիչ՝ wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Զտիչ՝ wu_sites_column_limit
 
 Զտիչ՝ ցանցի ներսում get pluginssites-ի արժեքը փոխելու համար։
 

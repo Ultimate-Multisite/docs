@@ -4,7 +4,7 @@ title: 필터 - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# 필터: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# 필터: wu_checkout_field_types
 
 새 필드 유형을 추가하기 위한 API가 여기에서 연결됩니다.
 

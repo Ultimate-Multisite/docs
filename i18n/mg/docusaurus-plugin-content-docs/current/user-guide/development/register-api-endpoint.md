@@ -3,7 +3,7 @@ title: Manisana ny API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ny fidirana API an'ny Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Ny fidirana API an'ny Ultimate Multisite
 
 Ao anatin'ity tutorial ity, ianao dia hahatantatra ny fomba fampiasana ny endpoint `/register` an'ny Ultimate Multisite /register API mba hamoronana ny dingana fanomanana (onboarding) manontolo ho an'ny mpanjifa vaovao ao amin'ny tambajotra misy anao ary ahoana no hanaovana izany miaraka amin'i Zapier.
 

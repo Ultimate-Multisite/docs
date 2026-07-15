@@ -4,7 +4,7 @@ title: 'Tallaabo - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_\{$this->id\}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_\{$this->id\}_before_render
 
 U oggolow horumariyeyaasha kordhinta inay ku daraan nuxur dheeraad ah ka hor inta aynaan daabicin bogga.
 

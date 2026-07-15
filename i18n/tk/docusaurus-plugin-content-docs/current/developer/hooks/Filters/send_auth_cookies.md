@@ -4,7 +4,7 @@ title: Süzgüç - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filtr: send_auth_cookies {#filter-sendauthcookies}
+# Filtr: send_auth_cookies
 
 Auth cookies-iň hakykatdan hem client-e iberilmeginiň öňüni almaga mümkinçilik berýär.
 

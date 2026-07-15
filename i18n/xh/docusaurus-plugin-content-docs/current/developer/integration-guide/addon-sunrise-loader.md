@@ -3,7 +3,7 @@ title: Isilayishi seFayile ye-Sunrise sesongezo
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Isilayishi sefayile ye-Sunrise yesongezo {#addon-sunrise-file-loader}
+# Isilayishi sefayile ye-Sunrise yesongezo
 
 Ultimate Multisite 2.8.0 yongeza isilayishi solwandiso lwe-sunrise sezongezo kunye nodibaniso lwe-MU-plugin olwenziweyo olufuna ukusebenza ngexesha le-WordPress sunrise bootstrapping ngaphandle kokuhlela ifayile evelisiweyo ethi `wp-content/sunrise.php`.
 

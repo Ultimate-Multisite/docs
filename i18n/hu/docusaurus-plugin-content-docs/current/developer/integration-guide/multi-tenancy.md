@@ -3,7 +3,7 @@ title: Több-bérlős integráció
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Több-bérlős integráció {#multi-tenancy-integration}
+# Több-bérlős integráció
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 több integrációs kapcsolódási pontot módosít a szuverén bérlők, a migráció-ellenőrzés és a bérlői életciklus automatizálása számára.
 

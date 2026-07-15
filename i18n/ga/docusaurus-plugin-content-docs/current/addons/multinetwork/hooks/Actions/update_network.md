@@ -4,7 +4,7 @@ title: Gníomh - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Gníomh: update_network {#action-updatenetwork}
+# Gníomh: update_network
 
 Spreagtar é tar éis líonra atá ann cheana a bheith nuashonraithe.
 

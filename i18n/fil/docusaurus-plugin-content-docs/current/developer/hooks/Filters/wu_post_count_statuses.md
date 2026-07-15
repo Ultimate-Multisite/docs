@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Pinahihintulutan nito ang mga developer ng plugin na baguhin kung aling mga status ng post ang dapat bilangin. Sa default, ang mga post na *published* at *private* ang binibilang.
 

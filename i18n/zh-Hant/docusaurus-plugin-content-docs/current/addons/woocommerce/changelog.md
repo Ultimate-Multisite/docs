@@ -3,7 +3,7 @@ title: WooCommerce 整合變更日誌
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce 整合變更記錄 {#woocommerce-integration-changelog}
+# WooCommerce 整合變更記錄
 
 版本 2.2.0 - 發布於 2026-07-01
 * 新增：Ultimate Multisite 稅額現在會在 checkout 時以獨立的 WooCommerce 費用項目顯示，讓付款前的稅額總計更清楚。

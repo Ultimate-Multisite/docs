@@ -3,7 +3,7 @@ title: Management vo teilbare Links fir Plän
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Het Verwalten vo Teilbare Links für Plannen {#managing-shareable-links-for-plans}
+# Het Verwalten vo Teilbare Links für Plannen
 
 Ultimate Multisite biedt Ihnen d'Möglichkeit, Plan-Links direkt mit Ihre Kunde z'teile. Um das zu tun, gahts uf jede vo de Edit-Seiten vo Ihre Plän und klickt uf de _Click to copy the Shareable Link_ Knopf.
 

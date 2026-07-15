@@ -3,7 +3,7 @@ title: 'Lectio 11: Clientes reperire'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lectio 11: Clientes Invenire {#lesson-11-finding-customers}
+# Lectio 11: Clientes Invenire
 
 Praeclara suggesta sine clientibus mera oblectatio est. Haec lectio explicat quomodo clientes in sectore speciali acquiras -- rationes quae proprie valent quia in una industria intentus es.
 

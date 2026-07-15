@@ -3,7 +3,7 @@ title: 'Lektioun 12: D''Geschäft féieren'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lektioun 12: D'Geschäft féieren {#lesson-12-running-the-business}
+# Lektioun 12: D'Geschäft féieren
 
 Eng Plattform ass kee Projet, deen een ofschléisst -- et ass e Geschäft, dat ee féiert. Dës Lektioun deckt den alldeegleche Betrib vum Gestioun vu FitSite of: Support, Ofrechnung, Maintenance, an d'Clienten zefridden halen.
 

@@ -4,7 +4,7 @@ title: Aktion - wu_register_capabilities
 sidebar_label: wu_register_capabilities
 _i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
 ---
-# Aktion: wu_register_capabilities {#action-wuregistercapabilities}
+# Aktion: wu_register_capabilities
 
 Löst aus, um Addons die Möglichkeit zu geben, Capability-Module an Integrationen anzuhängen.
 

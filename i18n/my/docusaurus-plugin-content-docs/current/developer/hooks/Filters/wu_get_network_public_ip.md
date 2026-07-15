@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_get_network_public_ip
 sidebar_label: wu_get_network_public_ip
 _i18n_hash: 129b6c2423c8d5af9f4314cc35715281
 ---
-# Filter: wu_get_network_public_ip {#filter-wugetnetworkpublicip}
+# Filter: wu_get_network_public_ip
 
 ဤ filter အကြောင်းကို အောက်တွင်၊ ဤနည်းလမ်း (method) ၌ ပိုမိုသိရှိနိုင်ပါသည်။
 

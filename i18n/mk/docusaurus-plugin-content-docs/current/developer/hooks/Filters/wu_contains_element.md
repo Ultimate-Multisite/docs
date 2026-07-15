@@ -4,7 +4,7 @@ title: Филтер - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Филтер: wu_contains_element {#filter-wucontainselement}
+# Филтер: wu_contains_element
 
 Им овозможува на програмерите да ги променат резултатите од почетното пребарување.
 

@@ -4,7 +4,7 @@ title: Филтер - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Филтер: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Филтер: wu_make_primary_domain_redirect_url
 
 Го филтрира URL-то за пренасочување по поставување домен како примарен.
 

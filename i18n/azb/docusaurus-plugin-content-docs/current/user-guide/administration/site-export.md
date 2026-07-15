@@ -3,7 +3,7 @@ title: Sait Ekspor
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export {#site-export}
+# Site Export
 
 **Site Export** admin sayfası, ağ yöneticilerinin bir siteyi veya tüm ağı, taşıma, yedekleme veya devir için indirilebilir bir arşiv haline getirmesine olanak tanır.
 

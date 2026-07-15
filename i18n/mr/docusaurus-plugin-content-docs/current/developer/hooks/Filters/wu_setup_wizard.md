@@ -4,7 +4,7 @@ title: फिल्टर - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard {#filter-wusetupwizard}
+# Filter: wu_setup_wizard
 
 विकसकांना (developers) अतिरिक्त सेटअप विझार्ड स्टेप्स जोडण्याची परवानगी देतो.
 

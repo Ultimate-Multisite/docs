@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orkestrasie v2 {#site-builder-orchestration-v2}
+# Site Builder Orkestrasie v2
 
 Site Builder Orkestrasie v2 (geïntroduseer in Gratis AI Agent v1.4.0) is die enigieme wat die meerstappe webwerfskepsel aandryf. Wanneer jy die agent vra om 'n "restaurantwebwerf te bou" of "'n portfolio met 'n blog te skep", breek die orkestrateur daardie hoëvlakdoel af in 'n gestruktureerde **plan**, ontdek die plugins wat nodig is om dit te vervul, voer elke stap in volgorde uit, spoor vordering by, en herstel outonoom van foute.
 

@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Амал: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Амал: wp_ultimo_host_providers_load
 
 Ба таҳиягарон иҷозат медиҳад, ки интегратсияҳои провайдери хости худро тавассути WordPress plugin-ҳо илова кунанд.
 

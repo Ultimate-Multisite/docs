@@ -3,7 +3,7 @@ title: ৰিলিজ টোকাস
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ৰিলিজ টোকা {#release-notes}
+# ৰিলিজ টোকা
 
 ## সংস্কৰণ 2.13.0 — 2026-06-05 তাৰিখে মুক্তি দিয়া হৈছে {#version-2130--released-on-2026-06-05}
 

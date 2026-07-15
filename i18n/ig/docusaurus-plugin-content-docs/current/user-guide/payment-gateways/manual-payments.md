@@ -3,7 +3,7 @@ title: Ịtọlite ịkwụ ụgwọ aka
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ịtọlite Ịkwụ Ụgwọ Aka (v2) {#setting-up-manual-payments-v2}
+# Ịtọlite Ịkwụ Ụgwọ Aka (v2)
 
 _**IHE NDỊ DỊ MKPA: Edemede a na-ezo aka na Ultimate Multisite ụdị 2.x.**_
 

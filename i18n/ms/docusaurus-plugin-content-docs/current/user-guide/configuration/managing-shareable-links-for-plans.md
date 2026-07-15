@@ -3,7 +3,7 @@ title: Menguruskan Pautan Boleh Kongsi untuk Pelan
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Menguruskan Pautan Boleh Kongsi untuk Pelan {#managing-shareable-links-for-plans}
+# Menguruskan Pautan Boleh Kongsi untuk Pelan
 
 Ultimate Multisite menawarkan pilihan untuk berkongsi pautan pelan terus dengan pelanggan anda. Untuk melakukan ini, pergi ke mana-mana halaman edit pelan anda dan klik butang _Click to copy the Shareable Link_.
 

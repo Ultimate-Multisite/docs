@@ -3,7 +3,7 @@ title: Webhook-Veraarbechtung
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-Behandlung {#webhook-handling}
+# Webhook-Behandlung
 
 Erstellt benotzerdefinéiert Webhook-Endpunkten, fir Evenementer vun externe Servicer ze kréien an Daten mat Ultimate Multisite ze synchroniséieren.
 

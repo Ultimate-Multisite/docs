@@ -4,7 +4,7 @@ title: Akcia - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Akcia: add_network {#action-addnetwork}
+# Akcia: add_network
 
 Spustí sa po pridaní novej siete.
 

@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_wp_config_reference_hook_line_p
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Filter: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Filter: wu_wp_config_reference_hook_line_patterns
 
 ကျွန်တော်တို့ရဲ့ constants တွေကို ဘယ်နေရာမှာ ထည့်သွင်းရမလဲဆိုတာ သိဖို့အတွက် ပုံစံ (patterns) ၃ မျိုးကို စစ်ဆေးပါတယ်။
 

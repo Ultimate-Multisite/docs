@@ -3,7 +3,7 @@ title: プランのアップグレード
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# プランのアップグレード (v2) {#upgrading-a-plan-v2}
+# プランのアップグレード (v2)
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x に関するものです。**_
 

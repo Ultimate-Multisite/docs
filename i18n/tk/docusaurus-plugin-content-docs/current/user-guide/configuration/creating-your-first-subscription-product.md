@@ -3,7 +3,7 @@ title: Birinji Abonamentli Mahsuluny Döretmek
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ilkinji Abonament Mahsulatyňy Döretmek (v2) {#creating-your-first-subscription-product-v2}
+# Ilkinji Abonament Mahsulatyňy Döretmek (v2)
 
 _**ÄHMIY HABAR: Bu makale diňe Ultimate Multisite 2.x sanyny ulanyjylar üçin. Eger siz 1.x sanyny ulanyp başlasaňyz,**_ **bu makalany okap geçiň.**_
 

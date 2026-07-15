@@ -4,7 +4,7 @@ title: Ekintza - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Ekintza: wu_page_after_render {#action-wupageafterrender}
+# Ekintza: wu_page_after_render
 
 Plugin garatzaileei orria inprimatu ondoren eduki gehigarria gehitzeko aukera ematen die
 

@@ -3,7 +3,7 @@ title: انجمن
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# نحوه پیوستن به انجمن Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# نحوه پیوستن به انجمن Ultimate Multisite
 
 انجمن Ultimate Multisite فضایی است که می‌توانید با دیگر کاربران Ultimate Multisite در ارتباط باشید و نکات، تجربیات و موارد بیشتری را به اشتراک بگذارید. برای دسترسی به انجمن Ultimate Multisite به آدرس https://community.ultimatemultisite.com/home بروید.
 

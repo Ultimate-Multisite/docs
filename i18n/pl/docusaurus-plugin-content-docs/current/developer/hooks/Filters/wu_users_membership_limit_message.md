@@ -4,7 +4,7 @@ title: Filtr - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Filtr: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
+# Filtr: wu_users_membership_limit_message
 
 Umożliwia deweloperom zmianę komunikatu wyświetlanego w przypadku przekroczenia limitu użytkowników członkowskich.
 

@@ -3,7 +3,7 @@ title: Hönnunarstefna
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Hönnunarstefna {#design-direction}
+# Hönnunarstefna
 
 Skrefið **Hönnunarstefna** gerir þér kleift að yfirfara, betrumbæta og klára sjónræna hönnun þemaðs áður en Theme Builder býr til heildarþemað.
 

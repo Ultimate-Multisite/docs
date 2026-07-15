@@ -3,7 +3,7 @@ title: Dizayn yo‘nalishi
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dizayn yo‘nalishi {#design-direction}
+# Dizayn yo‘nalishi
 
 **Dizayn yo‘nalishi** bosqichi Theme Builder to‘liq mavzuni yaratishidan oldin mavzuyingizning vizual dizaynini ko‘rib chiqish, takomillashtirish va yakunlash imkonini beradi.
 

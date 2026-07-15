@@ -3,7 +3,7 @@ title: cPanel സംയോജനം
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ഇന്റഗ്രേഷൻ {#cpanel-integration}
+# cPanel ഇന്റഗ്രേഷൻ
 
 ## അവലോകനം {#overview}
 cPanel ആണ് ഏറ്റവും പ്രചാരമുള്ള വെബ് ഹോസ്റ്റിംഗ് കൺട്രോൾ പാനലുകളിൽ ഒന്ന്, പല shared, dedicated ഹോസ്റ്റിംഗ് പ്രൊവൈഡർമാരും ഇത് ഉപയോഗിക്കുന്നു. Ultimate Multisite-ഉം cPanel-ഉം തമ്മിലുള്ള ഓട്ടോമാറ്റിക് ഡൊമെയ്ൻ സിങ്കിംഗ് ഈ ഇന്റഗ്രേഷൻ സാധ്യമാക്കുന്നു, ഇത് നിങ്ങളുടെ cPanel അക്കൗണ്ടിലേക്ക് ഡൊമെയ്ൻ aliases-ഉം subdomains-ഉം സ്വയമേവ ചേർക്കാൻ നിങ്ങളെ അനുവദിക്കുന്നു.

@@ -3,7 +3,7 @@ title: 'Dysgu 4: Gynllunio Templa Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leses 4: Gynedau Modelion Niche {#lesson-4-building-niche-templates}
+# Leses 4: Gynedau Modelion Niche
 
 Ynethau (Templates) yw cyd-fyddol o'r gwerth sydd yn eich niche. Mae'r rheolwr studio ffitnes sy'n cyflwyno a weld siâd sy'n edrych fel wefan ffitnes -- gyda rhaglenni clas, profifau trainwyr, a y lluniau i gyd yn iawn -- yn fwy yn sicr eu bod yn parhau naid yw un sy'n gweld canol.
 

@@ -3,7 +3,7 @@ title: Operasyon ng Sovereign Tenant
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operasyon ng Sovereign Tenant {#sovereign-tenant-operations}
+# Operasyon ng Sovereign Tenant
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ay nagdaragdag ng mga tool para sa operasyon ng sovereign tenants: mga subsites na tumatakbo nang may sariling database, filesystem root, at routing context habang nananatiling nakikita mula sa network admin.
 

@@ -3,7 +3,7 @@ title: Sprievodca integráciou
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Sprievodca integráciou {#integration-guide}
+# Sprievodca integráciou
 
 Tento sprievodca pokrýva bežné integračné vzory s Ultimate Multisite vrátane pripájania k externým službám, vytvárania vlastných platobných brán a spracovania webhookov.
 

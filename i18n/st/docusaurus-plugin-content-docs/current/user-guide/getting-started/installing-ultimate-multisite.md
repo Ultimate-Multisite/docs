@@ -3,7 +3,7 @@ title: Ho kenya Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ho Kenya Ultimate Multisite {#installing-ultimate-multisite}
+# Ho Kenya Ultimate Multisite
 
 :::note
 Tlhahlobo ena e nka hore o se kentse le ho hlophisa WordPress Multisite. Ho ithuta kamoo, sheba [tlhahlobo ena](https://www.wpbeginner.com/glossary/multisite/) ke WP Beginner.

@@ -3,7 +3,7 @@ title: Ultimate Multisite-a iritszalean
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-aren ir gurean {#translating-ultimate-multisite}
+# Ultimate Multisite-aren ir gurean
 
 Ultimate Multisitea ingleaz ez daitezke itxitu da, baina pluginak guztiz irraldiria da eta biziaren kontribuciationak aktiboz espero dugu.
 

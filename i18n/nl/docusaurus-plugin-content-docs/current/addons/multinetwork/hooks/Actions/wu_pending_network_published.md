@@ -4,7 +4,7 @@ title: Actie - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Actie: wu_pending_network_published {#action-wupendingnetworkpublished}
+# Actie: wu_pending_network_published
 
 Wordt uitgevoerd nadat een netwerk in afwachting is gepubliceerd.
 

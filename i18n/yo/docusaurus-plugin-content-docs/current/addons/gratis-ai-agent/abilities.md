@@ -3,7 +3,7 @@ title: Ìtọ́kasí Àwọn Agbára
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Itọ́kasí Abilities {#abilities-reference}
+# Itọ́kasí Abilities
 
 Abilities ni àwọn ìṣe atomiki tí Gratis AI Agent lè pè lórí fifi sori WordPress rẹ. Ability kọọkan jẹ́ PHP class tí a ti forúkọsílẹ̀ tí ó ṣàfihàn JSON schema — agent máa ka schema yìí ní àsìkò ìṣiṣẹ́ láti lóye àwọn parameter tí a nílò àti ohun tí ability náà máa dá padà.
 

@@ -3,7 +3,7 @@ title: WP Engine Integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# การเชื่อมต่อกับ WP Engine {#wp-engine-integration}
+# การเชื่อมต่อกับ WP Engine
 
 ## ภาพรวม {#overview}
 WP Engine เป็นแพลตฟอร์มโฮสติ้ง WordPress แบบจัดการระดับพรีเมียม ที่มอบประสิทธิภาพ ความปลอดภัย และความสามารถในการรองรับการขยายตัวที่เหมาะสมสำหรับเว็บไซต์ WordPress การเชื่อมต่อนี้ช่วยให้สามารถซิงค์โดเมนอัตโนมัติระหว่าง Ultimate Multisite และ WP Engine ได้

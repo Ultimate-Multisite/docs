@@ -3,7 +3,7 @@ title: RunCloud integracija
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integracija {#runcloud-integration}
+# RunCloud Integracija
 
 ## Vaizda informacijos {#overview}
 RunCloud yra tam tikas sklaida, kuri leidžia lengvai įdėti ir valdyti web programėles savo nuostolių (cloud) serveriuose. Ši integracija leido automatinį domenų sinigrinimą ir SSL sertifikatų valdymą tarp Ultimate Multisite ir RunCloud.

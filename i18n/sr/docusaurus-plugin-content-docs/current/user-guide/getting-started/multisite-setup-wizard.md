@@ -3,7 +3,7 @@ title: Чаробњак за подешавање мултисајта
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Чаробњак за подешавање Multisite-а {#multisite-setup-wizard}
+# Чаробњак за подешавање Multisite-а
 
 Ultimate Multisite укључује уграђени чаробњак који аутоматски претвара стандардну WordPress инсталацију у WordPress Multisite мрежу. То уклања потребу за ручним уређивањем `wp-config.php` или покретањем команди базе података.
 

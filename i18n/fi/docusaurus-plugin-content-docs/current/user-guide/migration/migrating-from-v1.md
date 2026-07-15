@@ -3,7 +3,7 @@ title: 'Siirtyminen V1:stä'
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Siirtyminen V1:stä {#migrating-from-v1}
+# Siirtyminen V1:stä
 
 ## Ultimate Multisite on siirtynyt alkuperäisestä 1.x -versioiden sarjasta 2.x -versioiden sarjaan. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

@@ -3,7 +3,7 @@ title: Snippets do GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Como usar snippets do Ultimate Multisite em nosso repositório GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Como usar snippets do Ultimate Multisite em nosso repositório GitHub
 
 Há snippets de código disponíveis no repositório GitHub que são frequentemente solicitados por usuários do Ultimate Multisite que desejam adicionar pequenas funcionalidades, como adicionar o script do Google Analytics em páginas de cadastro ou ocultar uma meta box do painel de administração.
 
@@ -19,7 +19,7 @@ Há 2 maneiras de adicionar o código
 
   2. Must-Use Plugins (mu-plugins)
 
-# Como adicionar o snippet no arquivo functions.php do seu tema. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Como adicionar o snippet no arquivo functions.php do seu tema.
 
   1. Faça login no painel de administração da sua rede WordPress e vá para Temas > Editor de temas (veja a captura de tela abaixo).
 
@@ -29,7 +29,7 @@ Há 2 maneiras de adicionar o código
 
 <!-- Captura de tela indisponível: WordPress Theme Editor mostrando a edição do arquivo functions.php -->
 
-# Como criar Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Como criar Must-Use Plugins (mu-plugins)
 
 WordPress tem um recurso que permite carregar funcionalidades personalizadas chamado "Must-Use Plugins", ou "mu-plugins" para abreviar.
 

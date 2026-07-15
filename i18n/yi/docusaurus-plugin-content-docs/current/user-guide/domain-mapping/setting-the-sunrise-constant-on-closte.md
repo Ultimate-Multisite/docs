@@ -3,7 +3,7 @@ title: איינשטעלן דעם Sunrise Constant אויף Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# שטעלן די Sunrise קאָנסטאַנטע אויף true אויף Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# שטעלן די Sunrise קאָנסטאַנטע אויף true אויף Closte
 
 עטלעכע האָסט־פּראָוויידערס שליסן אָפּ דעם wp-config.php צוליב זיכערהייט־סיבות. דאָס מיינט אַז Ultimate Multisite קען נישט אויטאָמאַטיש רעדאַגירן די טעקע כּדי אַרײַנצולייגן די נייטיקע קאָנסטאַנטן, כּדי domain mapping און אַנדערע פֿעיִקייטן זאָלן אַרבעטן. Closte איז אַזאַ האָסט.
 

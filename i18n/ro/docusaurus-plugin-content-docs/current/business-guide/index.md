@@ -3,7 +3,7 @@ title: Construiește o afacere de site-uri de nișă
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Construiește o afacere de site de nișă cu Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Construiește o afacere de site de nișă cu Ultimate Multisite
 
 Majoritatea oamenilor care încearcă să vândă site-uri concurează pe preț cu Wix, Squarespace și mii de freelanceri. Ei eșuează. Cei care reușesc aleg o audiență specifică, construiesc o soluție adaptată acelei audiențe și taxează pentru valoarea pe care o livrează.
 

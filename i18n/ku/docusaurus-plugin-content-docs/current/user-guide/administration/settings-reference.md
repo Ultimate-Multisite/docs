@@ -3,7 +3,7 @@ title: Referansa Mîhengan
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referansa Settings {#settings-reference}
+# Referansa Settings
 
 Ev rûpel settingsên ku bandorê li rêveberiya rojane û guhertinên dawî yên reftarê di Ultimate Multisite de dikin dişopîne.
 

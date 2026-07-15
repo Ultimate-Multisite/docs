@@ -3,7 +3,7 @@ title: Pembaruan Log Pelan Bermeter
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Log Perubahan Metered Plans {#metered-plans-changelog}
+# Log Perubahan Metered Plans
 
 Versi 1.1.0 - Dilancar pada 2026-05-05
 - Baharu: Pengbilan token AI untuk subsite multisite — jejaki dan kenakan bil penggunaan token AI merentasi tapak pelanggan dengan kadar per-token yang boleh dikonfigurasi.

@@ -3,7 +3,7 @@ title: Pasabide pertsonalizatuaren garapena
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Gateway pertsonalizatuen garapena {#custom-gateway-development}
+# Gateway pertsonalizatuen garapena
 
 Ordainketa-gateway pertsonalizatuak sor ditzakezu `Base_Gateway` klasea hedatuz.
 

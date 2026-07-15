@@ -3,7 +3,7 @@ title: Thông báo loại bỏ Chế độ Xây dựng Trang
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Thông báo loại bỏ Site Builder Mode {#site-builder-mode-removal-notice}
+# Thông báo loại bỏ Site Builder Mode
 
 **Chế độ Site Builder đã được loại bỏ trong Superdav AI Agent v1.12.0.** Nếu bạn đang sử dụng Site Builder mode, bạn nên chuyển sang sử dụng **Setup Assistant agent** để tạo theme và thiết lập trang web.
 

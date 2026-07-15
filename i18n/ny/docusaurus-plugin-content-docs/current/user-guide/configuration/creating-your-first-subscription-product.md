@@ -3,7 +3,7 @@ title: Kupanga chombo chanu chawiri cha mpanzana
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kufunga Product Yanu Yamba (v2) {#creating-your-first-subscription-product-v2}
+# Kufunga Product Yanu Yamba (v2)
 
 _**KUFUNGA CHONGO: Iye ndiyo yopangula Ultimate Multisite version 2.x. Ngati utagwiritsa ntchito version 1.x,**_ **_**ngati ndi iye,**_ _**ngati m'malo opereka wina.**_
 

@@ -3,7 +3,7 @@ title: Översätta Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Översätta Ultimate Multisite {#translating-ultimate-multisite}
+# Översätta Ultimate Multisite
 
 Ultimate Multisite utvecklas på engelska, men tillägget är fullt översättningsbart och vi välkomnar varmt översättningsbidrag.
 

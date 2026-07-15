@@ -3,7 +3,7 @@ title: Konstruado de Propra Registristo-Integriĝo
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Konstruado de Propra Registrar-Integriĝo {#building-a-custom-registrar-integration}
+# Konstruado de Propra Registrar-Integriĝo
 
 La Domain Seller aldonaĵo uzas ŝablonon de **Integration Registry**. Ĉiu registrar estas PHP-klaso kiu efektivigas `Domain_Selling_Capability` kaj registras sin per la ago-hoko `wu_domain_seller_register_capabilities`.
 

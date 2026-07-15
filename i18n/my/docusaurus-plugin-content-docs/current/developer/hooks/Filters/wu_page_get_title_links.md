@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 ပလပ်အင် ဖန်တီးသူများနဲ့ ကျွန်တော်တို့ကိုယ်တိုင်တို့ရဲ့ တည်းဖြတ်စာမျက်နှာတွေမှာ လုပ်ဆောင်ချက် လင့်ခ်တွေ ထည့်သွင်းနိုင်ဖို့ ခွင့်ပြုပါတယ်။
 

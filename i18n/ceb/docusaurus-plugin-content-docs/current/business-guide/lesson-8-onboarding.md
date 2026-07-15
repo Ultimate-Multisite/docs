@@ -3,7 +3,7 @@ title: 'Leksyon 8: Pag-onboard sa Kustomer'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesson 8: Pag-onboard sa Kustomer {#lesson-8-customer-onboarding}
+# Lesson 8: Pag-onboard sa Kustomer
 
 Ang pagpa-sign up sa usa ka kustomer kay tunga lang sa trabaho. Kon sila mo-log in, mobati og kalibog, ug dili na mubalik, nawala na sila kanimo. Kini nga lesson nagdisenyo sa kasinatian nga makapahimo sa bag-ong pag-sign up nga mahimong aktibo ug interesado nga kustomer.
 

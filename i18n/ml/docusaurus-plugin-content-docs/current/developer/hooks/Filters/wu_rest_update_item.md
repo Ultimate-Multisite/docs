@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item {#filter-wurestupdateitem}
+# Filter: wu_rest_update_item
 
 ഈ റിക്വസ്റ്റ് മുന്നോട്ട് പോകാൻ അനുവാദമുണ്ടോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

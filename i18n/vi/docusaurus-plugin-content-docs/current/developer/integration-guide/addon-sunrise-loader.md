@@ -3,7 +3,7 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Tải File Mở Rộng Sunrise (Addon Sunrise File Loader) {#addon-sunrise-file-loader}
+# Tải File Mở Rộng Sunrise (Addon Sunrise File Loader)
 
 Ultimate Multisite 2.8.0 bổ sung trình tải (loader) mở rộng sunrise cho các add-on và các tích hợp custom MU-plugin cần chạy trong quá trình khởi động (bootstrapping) của WordPress sunrise mà không cần chỉnh sửa file `wp-content/sunrise.php` được tạo ra.
 

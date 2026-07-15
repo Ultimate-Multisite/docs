@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Action: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Action: wp_ultimo_captcha_deactivation
 
 പ്ലഗിൻ-ի മറ്റ് ഭാഗങ്ങൾ ഡിആക്ടിവേഷനുവേണ്ടിയുള്ള സ്വന്തം പ്രവർത്തനങ്ങൾ (routines) ഇതിലൂടെ ചേർക്കാൻ അനുവദിക്കുന്നു.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filtru: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filtru: wu_rest_delete_item
 
 Jiffiltra jekk huwiex permess li t-talba tkompli jew le.
 

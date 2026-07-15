@@ -4,7 +4,7 @@ title: Mahi - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Mahi: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Mahi: wu_checkout_order_created
 
 Ka whakaohohia i muri i te oti katoa o te whakahiato i te ota utu.
 

@@ -3,7 +3,7 @@ title: 什麼是 WordPress Multisite？
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# 什麼是 WordPress Multisite？ {#what-is-wordpress-multisite}
+# 什麼是 WordPress Multisite？
 
 WordPress 核心內建了一個叫做「Multisite」的功能，最早可追溯到 2010 年 WordPress 3.0 發布時。自那時起，這項功能經過多次改版，不斷加入新功能並強化安全性。
 

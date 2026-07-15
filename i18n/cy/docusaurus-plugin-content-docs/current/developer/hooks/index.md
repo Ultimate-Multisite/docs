@@ -3,7 +3,7 @@ title: Cyfeirnod Bachau
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Cyfeirnod Hooks {#hooks-reference}
+# Cyfeirnod Hooks
 
 Dogfennaeth a gynhyrchwyd yn awtomatig ar gyfer pob un o'r **59 o weithredoedd** a'r **118 o hidlyddion** yn Ultimate Multisite.
 

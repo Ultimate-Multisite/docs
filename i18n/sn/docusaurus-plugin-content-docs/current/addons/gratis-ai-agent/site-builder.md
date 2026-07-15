@@ -3,7 +3,7 @@ title: Kurongeka kweMuvaki weSaiti v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Kuronga kweSite Builder v2 {#site-builder-orchestration-v2}
+# Kuronga kweSite Builder v2
 
 Kuronga kweSite Builder v2 (kwakaunzwa muGratis AI Agent v1.4.0) ndiyo injini inopa simba kugadzirwa kwewebsite kwematanho mazhinji. Paunokumbira agent kuti "ivake website yeresitorendi" kana "igadzire portfolio ine blog", orchestrator inopatsanura chinangwa icho chepamusoro kuita **plan** yakarongwa, inoona plugins dzinodiwa kuti ichizadzise, inoita nhanho imwe neimwe zvichitevedzana, inotevera kufambira mberi, uye inopora kubva kuzvikanganiso yakazvimirira.
 

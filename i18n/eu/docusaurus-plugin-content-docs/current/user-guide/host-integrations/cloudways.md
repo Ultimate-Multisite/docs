@@ -3,7 +3,7 @@ title: Cloudways Integrazioa
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integrazioa {#cloudways-integration}
+# Cloudways Integrazioa
 
 ## Deskuntzua {#overview}
 Cloudways da la plataforma hostiguntza cloud gestionatua (managed cloud hosting) den, eta horrek lehen WordPress websteiak DigitalOcean, AWS, Google Cloud eta gehiago beste cloud provider batzuken moduan deploy dezake. Horrek Ultimate Multisite eta Cloudways-ren artean domainio automatikoki sinkronizatzeko eta SSL certificate management egiteko laguntzen du.

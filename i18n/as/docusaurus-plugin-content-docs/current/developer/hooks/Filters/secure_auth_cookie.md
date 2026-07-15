@@ -4,7 +4,7 @@ title: Filter - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filter: secure_auth_cookie {#filter-secureauthcookie}
+# Filter: secure_auth_cookie
 
 এই ফিল্টাৰে নিৰ্ধাৰণ কৰে যে অথ কুকিটো কেৱল HTTPS মাজেৰেহে প্ৰেণত কৰা হ'ব নে নাই।
 

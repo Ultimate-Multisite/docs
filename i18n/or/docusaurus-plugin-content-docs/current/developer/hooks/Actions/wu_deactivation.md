@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# କାର୍ଯ୍ୟ: wu_deactivation {#action-wudeactivation}
+# କାର୍ଯ୍ୟ: wu_deactivation
 
 ପ୍ଲଗିନର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ନିଷ୍କ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କର ରୁଟିନ୍ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

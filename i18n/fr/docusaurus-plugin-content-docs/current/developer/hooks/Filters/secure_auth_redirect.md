@@ -4,7 +4,7 @@ title: Filtre - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filtre : secure_auth_redirect {#filter-secureauthredirect}
+# Filtre : secure_auth_redirect
 
 Filtre pour savoir s'il faut utiliser une redirection d'authentification sécurisée.
 

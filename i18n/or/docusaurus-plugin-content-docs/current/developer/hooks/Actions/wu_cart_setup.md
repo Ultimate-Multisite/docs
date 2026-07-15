@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# କାର୍ଯ୍ୟ: wu_cart_setup {#action-wucartsetup}
+# କାର୍ଯ୍ୟ: wu_cart_setup
 
 ଡେଭେଲପରମାନଙ୍କୁ checkout ଅବଜେକ୍ଟରେ ଅତିରିକ୍ତ ପରିବର୍ତ୍ତନ କରିବାକୁ ଅନୁମତି ଦିଏ।
 

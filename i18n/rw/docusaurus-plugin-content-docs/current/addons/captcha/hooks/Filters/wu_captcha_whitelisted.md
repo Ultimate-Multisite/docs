@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Akayunguruzo: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Akayunguruzo: wu_captcha_whitelisted
 
 Yungurura niba umukoresha/ubusabe buriho bugomba gushyirwa ku rutonde rw’abemererwa.
 

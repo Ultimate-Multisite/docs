@@ -4,7 +4,7 @@ title: Радња - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Акција: wu_before_search_models {#action-wubeforesearchmodels}
+# Акција: wu_before_search_models
 
 Покреће се пре обраде захтева за претрагу.
 

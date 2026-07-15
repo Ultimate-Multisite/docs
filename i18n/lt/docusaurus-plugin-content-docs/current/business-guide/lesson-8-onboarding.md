@@ -3,7 +3,7 @@ title: '8 pamoka: Klientų įvedimas'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8 pamoka: klientų supažindinimas {#lesson-8-customer-onboarding}
+# 8 pamoka: klientų supažindinimas
 
 Priversti klientą užsiregistruoti yra tik pusė darbo. Jei jis prisijungia, pasijunta priblokštas ir niekada nebegrįžta, jūs jį praradote. Šioje pamokoje kuriama patirtis, kuri naują registraciją paverčia aktyviu, įsitraukusiu klientu.
 

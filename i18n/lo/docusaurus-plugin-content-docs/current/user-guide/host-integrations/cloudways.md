@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# ການເຊື່ອມຕໍ່ກັບ Cloudways {#cloudways-integration}
+# ການເຊື່ອມຕໍ່ກັບ Cloudways
 
 ## ພາບລວມ {#overview}
 Cloudways ແມ່ນເວທີໂຮດHosting ເປັນການຈັດການ (managed cloud hosting platform) ທີ່ຊ່ວຍໃຫ້ທ່ານສາມາດຕິດຕັ້ງເວັບໄຊ WordPress ໃສ່ຜູ້ໃຫ້ບໍລິການຄລາວຕ່າງໆ ເຊັ່ນ DigitalOcean, AWS, Google Cloud ແລະ ອື່ນໆ. ການເຊື່ອມຕໍ່ນີ້ຈະເຮັດໃຫ້ເກີດການ đồng bộ domain ໂດຍອັດຕະໂນມັດ ແລະ ການຈັດການໃບຢັ້ງຢືນ SSL (SSL certificate management) រវាង Ultimate Multisite ແລະ Cloudways.

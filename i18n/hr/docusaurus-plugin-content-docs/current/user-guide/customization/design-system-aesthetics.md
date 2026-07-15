@@ -3,7 +3,7 @@ title: Estetika Dizajna Sistema Vještina
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Vještina Estetike Design Sistema {#design-system-aesthetics-skill}
+# Vještina Estetike Design Sistema
 
 **Vještina estetike Design Sistema** je usmjeren pristup poboljšanju vizualne identiteta vaše stranice. Pomaže vam donositi konzistentna odluka o tipografiji, bojama, razmjerima i tokenima za animacije koji definiraju vaš design system.
 

@@ -4,7 +4,7 @@ title: 필터 - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# 필터: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# 필터: wu_captcha_error_message
 
 캡차 오류 메시지를 필터링합니다.
 

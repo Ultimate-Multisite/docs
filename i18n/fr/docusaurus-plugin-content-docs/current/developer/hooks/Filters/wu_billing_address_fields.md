@@ -4,7 +4,7 @@ title: Filtre - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filtre : wu_billing_address_fields {#filter-wubillingaddressfields}
+# Filtre : wu_billing_address_fields
 
 Autoriser les développeurs de plugins à filtrer les champs d'adresse de facturation.
 

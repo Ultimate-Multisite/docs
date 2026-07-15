@@ -3,7 +3,7 @@ title: পৰিচয়মূলক সাক্ষাৎকাৰ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 **Discovery Interview** হৈছে Theme Builder-ৰ ডিজাইন প্ৰক্ৰিয়াত প্ৰথম পদক্ষেপ। ই আপোনাৰ স্থান, ব্যৱসায় আৰু ডিজাইনৰ পছন্দসমূহৰ বিষয়ে তথ্য সংগ্ৰহ কৰে যাতে এটা ব্যক্তিগতকৰণ কৰা থীম (theme) বনা যায়।
 

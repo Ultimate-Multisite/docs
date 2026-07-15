@@ -3,7 +3,7 @@ title: Ikike Njikwa Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ikike Njikwa Ngwa Mgbakwunye {#plugin-management-abilities}
+# Ikike Njikwa Ngwa Mgbakwunye
 
 Gratis AI Agent v1.5.0 na-abịa na **ikike njikwa ngwa mgbakwunye 7** nke onye enyemaka AI nwere ike ịkpọ n’oge mkparịta ụka. Ikike ndị a na-enye njikwa site na mmemme n’elu ngwa mgbakwunye WordPress etinyere site na [Usoro Onye Nrụpụta Ngwa Mgbakwunye na Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

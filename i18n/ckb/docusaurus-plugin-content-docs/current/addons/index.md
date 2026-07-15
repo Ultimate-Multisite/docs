@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# اضافات Ultimate Multisite {#ultimate-multisite-addons}
+# اضافات Ultimate Multisite
 
 إضافات (Addons) إضافية لـ Ultimate Multisite بتضيف ميزات وتكاملات جديدة للموقع بتاعك. أغلب الإضافات مدفوعة وممكن تشتريها من [ultimatemultisite.com](https://ultimatemultisite.com).
 

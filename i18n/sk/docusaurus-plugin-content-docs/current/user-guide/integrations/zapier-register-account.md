@@ -3,7 +3,7 @@ title: Registrovať účet cez Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Úloha: Registrácia účtu pomocou Zapier {#event-register-an-account-via-zapier}
+# Úloha: Registrácia účtu pomocou Zapier
 
 V článku [Integrácia Ultimate Multisite s Zapierom](zapier.md) sme diskutovali o tom, ako použiť Zapier na vykonávanie rôznych akcí v rámci Ultimate Multisite na základe spúšťačov a udalostí (triggers and events). V tomto článku ukážeme, ako môžete integrovať externé aplikácie. Použijeme Google Sheets ako zdroj dát a pošlite informácie do Ultimate Multisite na registrácia účtu.
 

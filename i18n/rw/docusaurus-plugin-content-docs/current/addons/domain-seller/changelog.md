@@ -3,7 +3,7 @@ title: Urutonde rw'Impinduka z'Umugurisha wa Domeni
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Amateka y'impinduka ya Domain Seller {#domain-seller-changelog}
+# Amateka y'impinduka ya Domain Seller
 
 Version 1.3.0 - Yasohotse ku wa 2026-06-02
 - Gishya: Hyongewemo umuburo wa network-admin igihe amafaranga asigaye kuri konti y'umucuruzi wa HostAfrica abaye make cyane

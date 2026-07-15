@@ -4,7 +4,7 @@ title: តម្រង - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# តម្រង: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# តម្រង: wu_password_require_lowercase
 
 តម្រងថាតើត្រូវទាមទារអក្សរតូចក្នុងពាក្យសម្ងាត់ឬអត់។
 

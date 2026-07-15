@@ -3,7 +3,7 @@ title: ಅಡ್ಮಿನ್ పేజీ ರಚಕ Changelog
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# ಅಡ್ಮಿನ್ ಪುಟ ಕ್ರಿಯೇಟರ್ ಬದಲಾವಣೆಗಳ ದಾಖಲೆ {#admin-page-creator-changelog}
+# ಅಡ್ಮಿನ್ ಪುಟ ಕ್ರಿಯೇಟರ್ ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
 
 ### Version 1.9.0 - Released on 2026-01-18 {#version-190---released-on-2026-01-18}
 

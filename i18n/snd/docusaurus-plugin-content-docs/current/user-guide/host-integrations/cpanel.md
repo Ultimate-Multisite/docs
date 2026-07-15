@@ -3,7 +3,7 @@ title: cPanel انضمام
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integration {#cpanel-integration}
+# cPanel Integration
 
 ## جائزہ (Overview) {#overview}
 cPanel هي धेरै साझा र समर्पित होस्टिङ प्रदायकहरूले प्रयोग गर्ने सबैभन्दा लोकप्रिय वेब होस्टिङ कन्ट्रोल प्यानल मध्ये एक हो। यो इन्टिग्रेशनले Ultimate Multisite र cPanel बीच डोमेन सिंक गर्न स्वचालित सुविधा दिन्छ, जसले तपाईंलाई आफ्नो cPanel खातामा डोमेन एलायस (aliases) र सबडोमेनहरू स्वतः थबाउन अनुमति दिन्छ।

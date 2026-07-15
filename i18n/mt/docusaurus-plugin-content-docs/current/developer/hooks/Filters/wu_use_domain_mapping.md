@@ -4,7 +4,7 @@ title: Filtru - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# Filtru: wu_use_domain_mapping {#filter-wuusedomainmapping}
+# Filtru: wu_use_domain_mapping
 
 Iddetermina jekk għandhiex tintuża mappatura
 

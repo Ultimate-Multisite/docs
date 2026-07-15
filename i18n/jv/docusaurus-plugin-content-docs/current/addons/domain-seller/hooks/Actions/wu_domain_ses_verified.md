@@ -4,7 +4,7 @@ title: Tumindak - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Tindakan: wu_domain_ses_verified {#action-wudomainsesverified}
+# Tindakan: wu_domain_ses_verified
 
 Mlaku nalika SES ngonfirmasi manawa domain wis diverifikasi DKIM.
 

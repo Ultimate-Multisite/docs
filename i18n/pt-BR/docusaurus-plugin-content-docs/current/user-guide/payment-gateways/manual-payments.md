@@ -3,7 +3,7 @@ title: Configurando pagamentos manuais
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Configurando pagamentos manuais (v2) {#setting-up-manual-payments-v2}
+# Configurando pagamentos manuais (v2)
 
 _**OBSERVAÇÃO IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 

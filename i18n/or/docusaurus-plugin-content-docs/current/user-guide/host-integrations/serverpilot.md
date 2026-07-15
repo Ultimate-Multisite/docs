@@ -3,7 +3,7 @@ title: ସର୍ଭରପାଇଲ୍ ଇଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ସହିତ ଏକତ୍ରୀତା (Integration) {#serverpilot-integration}
+# ServerPilot ସହିତ ଏକତ୍ରୀତା (Integration)
 
 ## ସମୀକ୍ଷା (Overview) {#overview}
 ServerPilot ହେଉଛି DigitalOcean, Amazon, Google କିମ୍ବା ଅନ୍ୟ କୌଣସି सर्वर ପ୍ରଡାଭରେ WordPress ଏବଂ ଅନ୍ୟ PHP ୱେବସାଇଟକୁ ଆସ୍ତେଇ କରିବା ପାଇଁ ଏକ ক্লাଉଡ୍ ସେବା। ଏହି ଏକତ୍ରୀତା Ultimate Multisite ଏବଂ ServerPilot ମଧ୍ୟରେ ଅଟୋମାଟିକ୍ ଡୋमेन ସିଙ୍କିଂ (domain syncing) ଏବଂ SSL ସର୍ଟିଫିକେଟ୍ ପରିଚାଳନା (management)କୁ ସମ୍ପୂର୍ଣ୍ଣ କରିଥାଏ।

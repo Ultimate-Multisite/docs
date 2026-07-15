@@ -4,7 +4,7 @@ title: Lim - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Lim: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Lim: get_site_url_for_previewer
 
 Tso cai rau cov neeg tsim plugin lim URL uas siv hauv previewer
 

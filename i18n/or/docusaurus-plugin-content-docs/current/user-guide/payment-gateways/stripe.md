@@ -3,7 +3,7 @@ title: Stripe ସେଟଅପ୍ କରିବା
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe গেটওয়ে সেটআপ করা (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe গেটওয়ে সেটআপ করা (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite ভার্সন ২.x এর জন্য প্রযোজ্য।**_
 

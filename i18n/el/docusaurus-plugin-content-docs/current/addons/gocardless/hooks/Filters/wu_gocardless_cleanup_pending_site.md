@@ -4,7 +4,7 @@ title: Φίλτρο - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Φίλτρο: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Φίλτρο: wu_gococardless_cleanup_pending_site
 
 Εκτελείται πριν από τη διαγραφή ενός αποκομμένου site σε κατάσταση αναμονής που σχετίζεται με μια ακυρωμένη συνδρομή GoCardless.
 

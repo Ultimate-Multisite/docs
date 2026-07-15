@@ -3,7 +3,7 @@ title: Antèt Rechèch Domèn
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Rechèch Domèn nan Header {#header-domain-search}
+# Rechèch Domèn nan Header
 
 Sèvi ak konfigirasyon sa a lè ou vle yon ti fòm nan header ki kòmanse yon rechèch domèn, epi ki kite kliyan an chwazi pami domèn ki disponib yo andedan checkout Ultimate Multisite la.
 

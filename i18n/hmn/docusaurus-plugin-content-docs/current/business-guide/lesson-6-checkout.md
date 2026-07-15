@@ -3,7 +3,7 @@ title: 'Loj 6: Kws Tsim Hauv'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: 体验註冊流程 (The Signup Experience) {#lesson-6-the-signup-experience}
+# Lesson 6: 体验註冊流程 (The Signup Experience)
 
 Checkout flow нь сонирхоллыг орлого болгодог хэсэг юм. төвөгтэй эсвэл ерөнхий бүтэцтэй signup процесс нь хэрэглэгчдийг алдагдуулдаг. Тэдний хэлээр ярьж, амархан мэт санагдах тусгайлан зориулсан flow нь тэднийг худалдан авагч болгодог.
 

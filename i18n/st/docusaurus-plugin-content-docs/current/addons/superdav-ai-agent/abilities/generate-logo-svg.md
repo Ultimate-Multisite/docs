@@ -3,7 +3,7 @@ title: Hlahisa SVG ea letšoao
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Hlahisa Letshwao la SVG {#generate-logo-svg}
+# Hlahisa Letshwao la SVG
 
 Bokgoni ba **Hlahisa Letshwao la SVG** bo dumella Theme Builder ho bopa le ho kenya matshwao a SVG a ikgethileng ka kotloloho sebakeng sa hao sa WordPress ka ho hlwekiswa ho iketsang ho bolokehileng bakeng sa namespace.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Filtru: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# Filtru: wu_magic_link_enforce_user_agent
 
 Iffiltra jekk għandhiex tiġi infurzata l-verifika tal-user agent.
 

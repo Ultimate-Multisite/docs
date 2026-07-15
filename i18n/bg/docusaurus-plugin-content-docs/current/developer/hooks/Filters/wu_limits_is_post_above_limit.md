@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Филтър: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Филтър: wu_limits_is_post_above_limit
 
 Проверява дали даден тип съдържание (post type) е разрешен за този план. Позволява на разработчиците на плагини да филтрират ре턴ваната стойност.
 

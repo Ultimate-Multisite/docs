@@ -4,7 +4,7 @@ title: فلٽر - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# فلٽر: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# فلٽر: mu_migration/export/user/data
 
 ايڪسپورٽ/امپورٽ ڪرڻ لاءِ استعمال ڪندڙ جي ڊيٽا جي ڊفالٽ سيٽ کي فلٽر ڪري ٿو.
 

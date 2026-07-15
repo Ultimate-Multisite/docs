@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# ଫିଲ୍ଟର: wu_return_url {#filter-wureturnurl}
+# ଫିଲ୍ଟର: wu_return_url
 
 ଚେକ୍‌ଆଉଟ୍ ପ୍ରକ୍ରିୟା ପରେ ବ୍ୟବହୃତ ଗେଟୱେ ରିଟର୍ନ URL ବଦଳାଇବାକୁ ଡେଭେଲପର୍‌ମାନଙ୍କୁ ଅନୁମତି ଦିଏ।
 

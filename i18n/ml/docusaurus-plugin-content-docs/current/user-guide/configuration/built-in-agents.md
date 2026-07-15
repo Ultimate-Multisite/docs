@@ -3,7 +3,7 @@ title: അന്തർനിർമിത ഏജന്റുകൾ
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# ഉൾനിർമ്മിത Agents {#built-in-agents}
+# ഉൾനിർമ്മിത Agents
 
 Gratis AI Agent v1.9.0 അഞ്ച് ഉൾനിർമ്മിത agents-കളോടെയാണ് ലഭ്യമാകുന്നത്. ഓരോന്നിലും ശ്രദ്ധാകേന്ദ്രമായ tools-ുകളുടെ ഒരു കൂട്ടം, അനുയോജ്യമായ system prompt, ആ മേഖലയിലെ സാധാരണ ജോലികൾക്ക് ചേർന്ന starter suggestions എന്നിവ മുൻകൂട്ടി ക്രമീകരിച്ചിരിക്കുന്നു. Agents തമ്മിൽ മാറുമ്പോൾ assistant-ന് ചെയ്യാനാകുന്നതും പ്രതികരിക്കുന്ന രീതിയും മാറും — നിങ്ങളുടെ ഭാഗത്ത് യാതൊരു configuration-ഉം വേണ്ട. ബന്ധപ്പെട്ട integrations ക്രമീകരിച്ചിട്ടുണ്ടെങ്കിൽ Superdav AI Agent v1.18.0 ഈ workflows-ലേക്ക് schedule-aware tools, reminder records, approval gates, SMS notifications എന്നിവ ചേർക്കാൻ കഴിയും.
 

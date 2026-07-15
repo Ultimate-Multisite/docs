@@ -3,7 +3,7 @@ title: စိတ်ကြိုက် ဖွံ့ဖြိုးတိုးတ
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable ကနေ Custom Development အကူအညီကို ဘယ်လိုရယူမလဲ? {#how-to-get-custom-development-help-from-codeable}
+# Codeable ကနေ Custom Development အကူအညီကို ဘယ်လိုရယူမလဲ?
 
 တစ်ခါတစ်ရံမှာ ကျွန်ုပ်တို့ရဲ့ network flow တွေကို လိုချင်တဲ့အတိုင်း အတိအကျဖြစ်အောင် အရမ်းကောင်းတဲ့ customization တွေ လိုအပ်ပါတယ်။ ဒါကို ရှာဖွေနေတာဆိုရင် Ultimate Multisite အတွေ့အကြုံရှိတဲ့ developer တွေကို ရှာဖွေနိုင်တဲ့နေရာဖြစ်တဲ့ [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ကို အကြံပြုပါတယ်။
 

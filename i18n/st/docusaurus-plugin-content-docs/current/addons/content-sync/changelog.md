@@ -3,7 +3,7 @@ title: Lenane la liphetoho la kgokahanyo ya dikahare
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog ya Content Sync {#content-sync-changelog}
+# Changelog ya Content Sync
 
 ### Version 1.1.0 - E lokollotswe ka 2025-12-31 {#version-110---released-on-2025-12-31}
 * E ntjha: Tshehetso ya ho sync mefuta yohle ya diposo (diposo, maqephe, mefuta ya diposo e ikgethileng)

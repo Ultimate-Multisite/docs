@@ -3,7 +3,7 @@ title: Flūmen Registrātī
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fluxus Registratus (v2) {#the-registration-flow-v2}
+# Fluxus Registratus (v2)
 
 _**NOTUM IMPORTANTEM: Hoc opus refertur ad Ultimate Multisite version 2.x.**_
 

@@ -3,7 +3,7 @@ title: Správa webů
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Správa webů {#managing-sites}
+# Správa webů
 
 Weby (nebo podweby) jsou základem vašeho WaaS podnikání. Ultimate Multisite rozlišuje 3 typy webů:
 

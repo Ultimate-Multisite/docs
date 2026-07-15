@@ -3,7 +3,7 @@ title: Ubwumvikane bw'cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Urugererine n'ibereye na cPanel {#cpanel-integration}
+# Urugererine n'ibereye na cPanel
 
 ## Inshuro (Overview) {#overview}
 cPanel ni uyuha mu gihe cyo gishobora gukoreshwa cyane n'ubwumvikane bwo hosting (shared and dedicated hosting). Iyi nshingiro yitwa "integration" (ugushyiramo) ituma uburyo bw'ibanga bya domain (domain syncing) bukurikirana hagati ya Ultimate Multisite na cPanel. Ibi bituma wumva gukora automatikira ubwumvikane bwo domain aliases n'subdomains ku muryango wawe w'cPanel.

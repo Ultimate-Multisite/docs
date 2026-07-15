@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Muyunguruzi: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Muyunguruzi: wu_apply_signup_fee
 
 Iyungurura niba amafaranga yo kwiyandikisha agomba gukoreshwa cyangwa atagomba gukoreshwa.
 

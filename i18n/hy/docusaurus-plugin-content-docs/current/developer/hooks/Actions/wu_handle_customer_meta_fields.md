@@ -4,7 +4,7 @@ title: Գործողություն - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Գործողություն: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Գործողություն: wu_handle_customer_meta_fields
 
 Թույլ տվեք plugin մշակողներին պահպանել մետատվյալները տարբեր եղանակներով, եթե նրանց դա անհրաժեշտ է։
 

@@ -3,7 +3,7 @@ title: Kutanga Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Kurudzira Ultimate Multisite {#translating-ultimate-multisite}
+# Kurudzira Ultimate Multisite
 
 Ultimate Multisite inenge yakagadzirwa muisi, asi plugin iyi ine chokwadi chinogona kuwedzera uye tinokurudzira zvakasiyana-siyana dzinotsanangura.
 

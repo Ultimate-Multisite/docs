@@ -3,7 +3,7 @@ title: Lipa tsa ho tsamaea
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Forms za Checkout {#checkout-forms}
+# Forms za Checkout
 
 Forms za Checkout ke mofuta le ho fana ka go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho go ba leboho.
 

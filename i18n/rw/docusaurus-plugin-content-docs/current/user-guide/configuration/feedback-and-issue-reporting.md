@@ -3,7 +3,7 @@ title: Urugendo rwa Umwujiza n'Ukurikirana Icyemezo
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Umuco ya Abantu n'Ubutumwa bishwe {#customer-feedback--issue-reporting}
+# Umuco ya Abantu n'Ubutumwa bishwe
 
 Gratis AI Agent v1.5.0 irashobora kugufasha abantu kubwira ubutumwa n'ibintu byiza ku masezeri (feedback and issue reporting system) bitewe n'ubushobozi bw'ubwujobozi bwo gukoresha chat interface. Igihe cyo rishobora gufasha abantu kugira umuntu wese uba ashobora kubwira ibyo atari yiza cyangwa kubwira ibintu byiza mu gihe cy'amasezeri (chat). Ubutumwa bwo gukoresha uyu systemi bishobora gutera ku masezeri, uburyo bw'ubwujobozi bwo gufata umuntu wese ashobora kubona ubutumwa mu gihe cy'amasezeri (triage) ku Rwanda.
 

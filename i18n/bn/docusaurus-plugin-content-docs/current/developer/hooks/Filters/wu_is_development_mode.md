@@ -4,7 +4,7 @@ title: Filter - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filter: wu_is_development_mode
 
 প্লাগইন ডেভেলপারদের ডেভেলপমেন্ট মোডের জন্য অতিরিক্ত টেস্ট যোগ করার সুযোগ দেয়।
 

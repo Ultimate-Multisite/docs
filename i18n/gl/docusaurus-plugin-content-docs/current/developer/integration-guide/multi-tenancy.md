@@ -3,7 +3,7 @@ title: Integración multiinquilino
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integración de multiarrendamento {#multi-tenancy-integration}
+# Integración de multiarrendamento
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 cambia varios puntos de integración para arrendatarios soberanos, verificación de migración e automatización do ciclo de vida dos arrendatarios.
 

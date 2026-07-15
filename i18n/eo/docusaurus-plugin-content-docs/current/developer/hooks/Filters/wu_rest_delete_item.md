@@ -4,7 +4,7 @@ title: Filtrilo - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filtrilo: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filtrilo: wu_rest_delete_item
 
 Filtras ĉu estas permesite daŭrigi kun la peto aŭ ne.
 

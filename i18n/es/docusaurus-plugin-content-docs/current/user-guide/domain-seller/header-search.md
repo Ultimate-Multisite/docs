@@ -3,7 +3,7 @@ title: Búsqueda de dominio del encabezado
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Búsqueda de dominio en el encabezado {#header-domain-search}
+# Búsqueda de dominio en el encabezado
 
 Usa esta configuración cuando quieras un pequeño formulario en el encabezado que inicie una búsqueda de dominio y luego permita al cliente elegir entre los dominios disponibles dentro del checkout de Ultimate Multisite.
 

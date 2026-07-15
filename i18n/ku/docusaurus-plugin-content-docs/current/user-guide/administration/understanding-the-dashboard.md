@@ -3,7 +3,7 @@ title: فهمی داشبوردەکە
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# تێگەیشتن لە داش보اردی Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# تێگەیشتن لە داش보اردی Ultimate Multisite
 
 پێش ئەوەی ئێمە زیاتر لە ڕێکخستنە پێشکەوتوو و لایەنە کارکردنی Ultimate Multisite ببینین، بیستوورەکانمان بە داشبۆردارەکە.
 

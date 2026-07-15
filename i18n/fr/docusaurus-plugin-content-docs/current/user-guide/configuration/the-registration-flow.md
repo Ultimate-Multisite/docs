@@ -3,7 +3,7 @@ title: Le flux d’inscription
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Le flux d’inscription (v2) {#the-registration-flow-v2}
+# Le flux d’inscription (v2)
 
 _**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 

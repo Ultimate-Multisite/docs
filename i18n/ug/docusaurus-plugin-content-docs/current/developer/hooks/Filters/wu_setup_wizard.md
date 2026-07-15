@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# سۈزگۈچ: wu_setup_wizard {#filter-wusetupwizard}
+# سۈزگۈچ: wu_setup_wizard
 
 ئىجادكارلارنىڭ قوشۇمچە setup wizard باسقۇچلىرىنى قوشۇشىغا يول قويىدۇ.
 

@@ -4,7 +4,7 @@ title: Akció - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Akció: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Akció: wu_domain_seller_process_purchase
 
 Keresztül fog futni, amikor egy tartományvásárlás feldolgozásra kerül a fizetés végrehajtása után.
 

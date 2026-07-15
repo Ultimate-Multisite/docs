@@ -4,7 +4,7 @@ title: Gnìomh - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Gnìomh: add_network {#action-addnetwork}
+# Gnìomh: add_network
 
 Thèid a chur an gnìomh às dèidh lìonra ùr a bhith air a chur ris.
 

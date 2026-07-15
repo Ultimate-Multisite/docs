@@ -4,7 +4,7 @@ title: Çalakî - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Çalakî: delete_network {#action-deletenetwork}
+# Çalakî: delete_network
 
 Piştî ku tor hat jêbirin tê xebitandin.
 

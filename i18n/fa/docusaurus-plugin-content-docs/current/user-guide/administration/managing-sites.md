@@ -3,7 +3,7 @@ title: مدیریت سایت‌ها
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# مدیریت سایت‌ها {#managing-sites}
+# مدیریت سایت‌ها
 
 سایت‌ها (یا زیرسایت‌ها) هسته اصلی کسب‌وکار WaaS شما هستند. Ultimate Multisite سه نوع سایت دارد:
 

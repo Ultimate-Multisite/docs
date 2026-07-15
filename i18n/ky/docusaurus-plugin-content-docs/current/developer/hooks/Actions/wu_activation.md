@@ -4,7 +4,7 @@ title: Аракет - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Аракет: wu_activation {#action-wuactivation}
+# Аракет: wu_activation
 
 Плагиндин башка бөлүктөрүнө активдештирүү үчүн өз иш тартиптерин тиркөөгө мүмкүнчүлүк берет
 

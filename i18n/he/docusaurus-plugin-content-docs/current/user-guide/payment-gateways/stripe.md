@@ -3,7 +3,7 @@ title: הגדרת Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# הגדרת שער התשלומים של Stripe (גרסה 2) {#setting-up-the-stripe-gateway-v2}
+# הגדרת שער התשלומים של Stripe (גרסה 2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
 

@@ -3,7 +3,7 @@ title: বিজ্ঞাপন ইনজেক্টৰ
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector ব্যৱহাৰ কৰি আপোনাৰ নেটৱৰ্কত বিজ্ঞাপন কেনেকৈ যোগ কৰিব {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector ব্যৱহাৰ কৰি আপোনাৰ নেটৱৰ্কত বিজ্ঞাপন কেনেকৈ যোগ কৰিব
 
 Ultimate Multisite: Ad Injector এটা **বিনামূলীয়া add-on** যাৰ জৰিয়তে আপুনি নিজৰ plans-ৰ edit page-ৰ পৰাই বিজ্ঞাপন (ads) যোগ কৰিবলৈ সঁজুলি পায়।
 

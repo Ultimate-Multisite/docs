@@ -3,7 +3,7 @@ title: 'Loj 14: Qhov yuav tsum cez'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesson 14: Qhov Yuav Tsis Muaj Hauv Lej {#lesson-14-what-comes-next}
+# Lesson 14: Qhov Yuav Tsis Muaj Hauv Lej
 
 Kuv yuav tsim khoom website niche hauv txhua yam. FitSite tseem thov, txais lub hom phau fitness studios, thiab ua rau muaj cov nrhiav txhua hnub. No qab no, peb yuav tiv thaiv tias yuav mus mus tau paub li cas.
 

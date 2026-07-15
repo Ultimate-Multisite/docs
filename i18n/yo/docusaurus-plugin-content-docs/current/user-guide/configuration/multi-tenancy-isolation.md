@@ -3,7 +3,7 @@ title: Ìyàsọ́tọ̀ Ọ̀pọ̀-Ayálégbé
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ìyàsọ́tọ̀ Multi-Tenancy {#multi-tenancy-isolation}
+# Ìyàsọ́tọ̀ Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ń ṣètìlẹ́yìn fún ìyàsọ́tọ̀ database àti filesystem fún subsite kọ̀ọ̀kan fún àwọn tenant aládàáṣẹ. Èyí ń jẹ́ kí data tenant wà lọ́tọ̀, nígbà tí ó ń pa provisioning, billing, àti ìṣàkóso ipele network mọ́.
 

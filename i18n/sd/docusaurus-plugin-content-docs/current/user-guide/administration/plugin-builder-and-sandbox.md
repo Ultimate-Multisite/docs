@@ -3,7 +3,7 @@ title: پلاجن بلڊر ۽ 샌ڊبڪس
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 ۾ **Plugin Builder & Sandbox System** شامل ڪيو آهي، جيڪو توهان جي نڪر (network) تي WordPress plugins کي محفوظ ۽ الگ sandbox ماحول ۾ جنريٽ ڪرڻ، فعال ڪرڻ ۽ منظم ڪرڻ جو موقعي ڏئي ٿو.
 

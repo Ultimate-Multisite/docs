@@ -3,7 +3,7 @@ title: Hotelli- ja restoranivaldkonna menüüd
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality-menüüd {#hospitality-menus}
+# Hospitality-menüüd
 
 Funktsioon **Hospitality Menus** võimaldab Theme Builderil luua ja manustada struktureeritud toidu- ja joogimenüü lehti otse sinu WordPress saidile.
 

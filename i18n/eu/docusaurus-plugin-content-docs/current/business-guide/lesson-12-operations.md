@@ -3,7 +3,7 @@ title: 'Lezioa 12: Negozioa jartzea'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lehen 12: Negozioa Erregite {#lesson-12-running-the-business}
+# Lehen 12: Negozioa Erregite
 
 Plataforma bat proiektu ez da ematen da; negizio bat erregiten da. Hau irroratu egiten dugu FitSite-aren eguneroko operazioak: suporta, fakturazioa, manutenzione eta kliantak onartzeko.
 

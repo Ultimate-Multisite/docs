@@ -3,7 +3,7 @@ title: WooCommerce Integration ændringslog
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration ændringslog {#woocommerce-integration-changelog}
+# WooCommerce Integration ændringslog
 
 Version 2.2.0 - Udgivet den 2026-07-01
 * Ny: Ultimate Multisite skattebeløb vises nu som separate WooCommerce gebyrlinjer ved checkout, hvilket gør skattetotaler tydeligere før betaling.

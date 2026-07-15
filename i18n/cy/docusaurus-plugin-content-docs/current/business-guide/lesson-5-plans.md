@@ -3,7 +3,7 @@ title: 'Dysgu 5: Cyfathrebu eich cynlluniau'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesiwn 5: Dyddiadau eich Planau {#lesson-5-designing-your-plans}
+# Lesiwn 5: Dyddiadau eich Planau
 
 Mae'r cyflenau eich planau nid yn rhywbethau o ddefnyddio neu gael, ond mae'n cyfleiwyd o beth sy'n gweithredu'n wirol gyda'u cyddeeion. Yn y lesen hwnnw, byddwch yn ddefnyddio dyddiadau o produsg sy'n gyfathogh â'r angenwirol o gweithgareddau fitness mewn cyflenau gwahanol.
 

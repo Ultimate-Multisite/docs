@@ -3,7 +3,7 @@ title: Registreerimisvormi kohandamine
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Registreerimisvormi kohandamine {#customizing-your-registration-form}
+# Registreerimisvormi kohandamine
 
 Et muuta sinu võrgustik kõigi teiste WordPress platvormile ehitatud SaaS-lahenduste seast ainulaadseks, võimaldab Ultimate Multisite kohandada registreerimis- ja sisselogimislehti meie **Checkout Forms** funktsiooniga.
 

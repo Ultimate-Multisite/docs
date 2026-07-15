@@ -3,7 +3,7 @@ title: 'Leson 7: Fè l vin pa w'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leson 7: Fè L Vin Pou Ou {#lesson-7-making-it-yours}
+# Leson 7: Fè L Vin Pou Ou
 
 Kliyan ou yo pa ta dwe janm santi y ap itilize "yon WordPress plugin quelconque." Yo ta dwe santi y ap itilize FitSite -- yon platfòm ki bati pou endistri yo. Leson sa a kouvri mak, white-labeling, ak fason pou fè platfòm nan santi tankou yon pwodwi.
 

@@ -3,7 +3,7 @@ title: Integrácia s Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrácia s Cloudways {#cloudways-integration}
+# Integrácia s Cloudways
 
 ## Úvod {#overview}
 Cloudways je správy cloudovej hostingovej platformou, ktorá vám umožňuje nasporiť WordPress webové stránky na rôznych cloudových poskytovateľoch ako DigitalOcean, AWS, Google Cloud a ďalších. Táto integrácia umožňuje automatické synchronizovanie domén a správu SSL certifikátov medzi Ultimate Multisite a Cloudways.

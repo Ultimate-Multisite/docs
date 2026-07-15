@@ -4,7 +4,7 @@ title: Filtër - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Filtër: wu_is_api_enabled {#filter-wuisapienabled}
+# Filtër: wu_is_api_enabled
 
 Lejo zhvilluesit e plugin të detyrojnë një gjendje të caktuar për API-në.
 

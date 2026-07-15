@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 ပလပ်အင်အချို့က မ్యాపింగ్ စတင်အသက်ဝင်ခြင်းမရှိခင်ကတည်းက URL တွေကို သိမ်းထားတာမျိုး၊ ဒါမှမဟုတ် အပေါ်က filter တွေမှာ မပါတဲ့ တခြားနည်းလမ်းတွေနဲ့ URL တွေကို ဖန်တီးတာမျိုးတွေ ရှိနိုင်ပါတယ်။
 

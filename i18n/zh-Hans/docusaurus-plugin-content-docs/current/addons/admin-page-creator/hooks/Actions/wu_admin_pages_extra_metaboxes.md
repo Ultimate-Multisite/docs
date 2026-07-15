@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# 操作: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# 操作: wu_admin_pages_extra_metaboxes
 
 让插件开发者添加新的 metaboxes 选项 =)
 

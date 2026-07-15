@@ -3,7 +3,7 @@ title: डोमेन विक्रेता बदलनोंद
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller बदलनोंद {#domain-seller-changelog}
+# Domain Seller बदलनोंद
 
 आवृत्ती 1.3.0 - 2026-06-02 रोजी प्रकाशित
 - नवीन: HostAfrica पुनर्विक्रेता शिल्लक खूप कमी झाल्यावर network-admin चेतावणी जोडली

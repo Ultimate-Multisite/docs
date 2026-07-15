@@ -3,7 +3,7 @@ title: 'Lekce 10: Den spuštění'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekce 10: Den spuštění {#lesson-10-launch-day}
+# Lekce 10: Den spuštění
 
 Vše je postaveno. Než otevřete dveře, tato lekce vás provede kontrolním seznamem před spuštěním, abychom se ujistili, že nic není poškozené, chybějící nebo neohrabané.
 

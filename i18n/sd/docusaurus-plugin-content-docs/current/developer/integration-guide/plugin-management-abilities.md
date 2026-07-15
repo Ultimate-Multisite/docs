@@ -3,7 +3,7 @@ title: پلگ اِن انتظام جون صلاحيتون
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# پلگ ان انتظام جون صلاحيتون {#plugin-management-abilities}
+# پلگ ان انتظام جون صلاحيتون
 
 Gratis AI Agent v1.5.0 ۾ **پلگ ان انتظام جون 7 صلاحيتون** شامل آهن، جن کي AI مددگار ڳالهه ٻولهه دوران استعمال ڪري سگهي ٿو. اهي صلاحيتون [پلگ ان بلڊر ۽ سندباڪس سسٽم](../../user-guide/administration/plugin-builder-and-sandbox) ذريعي نصب ٿيل WordPress پلگ انز تي پروگرامي ڪنٽرول مهيا ڪن ٿيون.
 

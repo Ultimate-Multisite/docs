@@ -3,7 +3,7 @@ title: ଲୋଗୋ SVG ସୃଷ୍ଟି କରନ୍ତୁ
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG ସୃଷ୍ଟି କରନ୍ତୁ {#generate-logo-svg}
+# Logo SVG ସୃଷ୍ଟି କରନ୍ତୁ
 
 **Logo SVG ସୃଷ୍ଟି କରନ୍ତୁ** କ୍ଷମତା Theme Builder କୁ ସ୍ୱୟଂଚାଳିତ namespace-ନିରାପଦ ସ୍ୱଚ୍ଛତାକରଣ ସହିତ ଆପଣଙ୍କ WordPress ସାଇଟରେ ସିଧାସଳଖ custom ଲୋଗୋ SVG ତିଆରି ଏବଂ ଏମ୍ବେଡ୍ କରିବାକୁ ଦିଏ।
 

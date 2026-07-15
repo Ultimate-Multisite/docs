@@ -3,7 +3,7 @@ title: Að skilja styrkustöðvaldið
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Að skilja Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Að skilja Ultimate Multisite Dashboard
 
 Fyrir að við fara í flókiðar uppsetningarpennu og að nýtingarinn á Ultimate Multisite, verðum fyrst að sjá á dashboard-inn.
 

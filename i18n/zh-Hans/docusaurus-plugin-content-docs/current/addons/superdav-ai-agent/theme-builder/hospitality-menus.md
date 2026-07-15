@@ -3,7 +3,7 @@ title: 餐饮菜单
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# 餐饮菜单 {#hospitality-menus}
+# 餐饮菜单
 
 **餐饮菜单**功能允许 Theme Builder 直接在您的 WordPress 网站中生成和嵌入结构化的食品和饮料菜单页面。
 

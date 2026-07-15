@@ -4,7 +4,7 @@ title: Dejanje - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Dejanje: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Dejanje: wp_ultimo_gocardless_load
 
 Sproži se, ko so bile naložene vse odvisnosti
 

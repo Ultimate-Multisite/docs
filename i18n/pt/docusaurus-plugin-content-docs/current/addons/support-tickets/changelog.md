@@ -3,7 +3,7 @@ title: Registo de Alterações dos Tickets de Suporte
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Registo de alterações dos Tickets de Suporte {#support-tickets-changelog}
+# Registo de alterações dos Tickets de Suporte
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Melhorado: Removido o diretório vendor/ do rastreamento do Git (já coberto por .gitignore), reduzindo o tamanho do repositório

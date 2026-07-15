@@ -3,7 +3,7 @@ title: Ikhono lobuhle bohlelo lokuklama
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ikhono Lobuhle Besistimu Yokudizayina {#design-system-aesthetics-skill}
+# Ikhono Lobuhle Besistimu Yokudizayina
 
 **Ikhono Lobuhle Besistimu Yokudizayina** liyindlela eqondisiwe yokucwenga ubuwena bokubukeka kwesayithi lakho. Likusiza ukwenza izinqumo ezingaguquguquki mayelana nokuhlelwa kombhalo, umbala, izikhala, namathokheni okunyakaza achaza isistimu yakho yokudizayina.
 

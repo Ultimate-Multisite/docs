@@ -3,7 +3,7 @@ title: Netaskókn
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Netlsóknir í Internét {#internet-search}
+# Netlsóknir í Internét
 
 Gratis AI Agent v1.5.0 hefur nýsköpunna **Internet Search** (Netlsókn) að leiða, sem leyfir AI-hjálparinn að hringja upp nýjustu upplýsingar frá netinu á meðan samræðinni er í gangi. Þetta er hannað með [Brave Search API](https://brave.com/search/api/) eða [Tavily API](https://tavily.com/).
 

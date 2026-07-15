@@ -3,7 +3,7 @@ title: Captcha 変更履歴
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha 変更履歴 {#captcha-changelog}
+# Captcha 変更履歴
 
 バージョン: 1.5.0 - 2026-05-22 リリース
 * 新規: ハードストップのレートリミッター — captcha で保護された対象（wp-login / register / lost-password / comments、WooCommerce my-account / checkout / pay-for-order、Ultimate Multisite checkout / inline-login）で発生するすべての GET と POST を数え、HTTP 429、`Retry-After` header、ランダム化されたターピット待機（1〜5秒、最大15秒で厳格に上限）で応答します。

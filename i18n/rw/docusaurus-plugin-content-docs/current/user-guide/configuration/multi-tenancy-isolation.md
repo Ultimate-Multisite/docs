@@ -3,7 +3,7 @@ title: Ubwumvikane bw'ubwoko bwinshi
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Umuhagariko mu Ubwokozi (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Umuhagariko mu Ubwokozi (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yashobora gukoresha ubwokozi bw'ubwokozi bwa database n'ubwokozi bwa filesystem kuri subsite cyose kugira ngo abantu bashobore kubaho mu buryo bw'ubwokozi (sovereign tenants). Ibi bikunda ibyerekeye amakuru y'umuntu ku subsite, ariko byashobora gukoresha uburyo bwo gutera uburenganzira bw'ubwokozi.
 

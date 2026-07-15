@@ -3,7 +3,7 @@ title: Kev xam phaj tshawb nrhiav
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Kev Xam Phaj Tshawb Nrhiav {#discovery-interview}
+# Kev Xam Phaj Tshawb Nrhiav
 
 **Kev Xam Phaj Tshawb Nrhiav** yog kauj ruam thawj zaug hauv Theme Builder tus txheej txheem tsim qauv. Nws sau ntaub ntawv txog koj lub vev xaib, kev lag luam, thiab yam qauv uas koj nyiam kom tsim tau ib lub theme uas phim koj.
 

@@ -4,7 +4,7 @@ title: Filter - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filter: wu_is_development_mode
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ഡെവലപ്‌മെന്റ് മോഡിനായി അധിക ടെസ്റ്റുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

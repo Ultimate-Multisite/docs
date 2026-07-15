@@ -4,7 +4,7 @@ title: Filtro - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Filtro: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Filtro: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Permite aos desenvolvedores filtrar os campos predeterminados do enderezo de facturación de WooCommerce.
 

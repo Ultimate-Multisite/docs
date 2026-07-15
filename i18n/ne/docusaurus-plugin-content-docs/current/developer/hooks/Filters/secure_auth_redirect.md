@@ -4,7 +4,7 @@ title: फिल्टर - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# फिल्टर: secure_auth_redirect {#filter-secureauthredirect}
+# फिल्टर: secure_auth_redirect
 
 सुरक्षित प्रमाणीकरण रिडिरेक्ट प्रयोग गर्ने कि नगर्ने फिल्टर गर्छ।
 

@@ -3,7 +3,7 @@ title: Memahami Dasbor
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Memahami Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Memahami Dashboard Ultimate Multisite
 
 Sebelum kita mendalami opsi konfigurasi lanjutan dan aspek operasional Ultimate Multisite, mari kita lihat dashboard-nya terlebih dahulu.
 

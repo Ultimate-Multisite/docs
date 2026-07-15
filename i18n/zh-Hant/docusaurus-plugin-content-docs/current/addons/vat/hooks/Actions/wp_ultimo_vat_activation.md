@@ -4,7 +4,7 @@ title: 動作 - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# 動作: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# 動作: wp_ultimo_vat_activation
 
 讓插件的其他部分可以在啟用時附加它們的程式碼或功能。
 

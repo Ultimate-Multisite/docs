@@ -4,7 +4,7 @@ title: פילטער - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# פֿילטער: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# פֿילטער: wu_is_development_mode
 
 דערלויבן פּלוגין־אַנטוויקלערס צוצולייגן נאָך טעסטן פֿאַר אַנטוויקלונג־מאָדוס.
 

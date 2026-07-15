@@ -3,7 +3,7 @@ title: Kugadzirwa kweHestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integration neHestia Control Panel {#hestia-control-panel-integration}
+# Integration neHestia Control Panel
 
 Iyi ndiri kuunza iinguva yakawanda yekuti unenge uchigona kuita configuration kweUltimate Multisite Hestia integration. Izvi zvinobva kudzidzisa sei kuti domain dzine mapping mumapuro dzako dzinogadzirwa (mapped domains) dzichigadzirwa nekuti dzichagadzirwa (added) uye dzichakazvinarwa (removed) se Web Domain Aliases muHestia.
 

@@ -3,7 +3,7 @@ title: گزارش تغییرات عامل‌های پشتیبانی
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# گزارش تغییرات Support Agents {#support-agents-changelog}
+# گزارش تغییرات Support Agents
 
 نسخه: 1.0.14 - تاریخ انتشار: 2026-05-05
 * رفع اشکال: هدر Requires Plugins برای اعلام وابستگی صحیح پلاگین وردپرس اضافه شد.

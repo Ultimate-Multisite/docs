@@ -3,7 +3,7 @@ title: Hagaha Isdhexgalka
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Hagaha Isku-xirka {#integration-guide}
+# Hagaha Isku-xirka
 
 Hagahani wuxuu daboolayaa qaababka isku-xirka ee caamka ah ee Ultimate Multisite, oo ay ku jiraan ku xidhidda adeegyo dibadeed, dhisidda albaabbo lacag-bixin oo gaar ah, iyo maaraynta webhooks.
 

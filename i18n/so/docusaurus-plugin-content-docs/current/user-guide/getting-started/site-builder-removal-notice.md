@@ -3,7 +3,7 @@ title: Warqabadda ka saarista Mode-ka Dhise-Bixinta Goobta
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Warbix-kaabka Mode-ga kaabka {#site-builder-mode-removal-notice}
+# Warbix-kaabka Mode-ga kaabka
 
 **Warbix-kaabka mode-gu Superdav AI Agent v1.12.0-ka kaabka ayaa la saaray.** Haddii aad isticmaalay Warbix-kaabka mode, waa inaad u guurtaa **Setup Assistant agent** si aad u samayso theme iyo in la diyaariyo website-kaaga.
 

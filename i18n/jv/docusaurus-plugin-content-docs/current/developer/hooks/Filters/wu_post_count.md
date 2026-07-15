@@ -4,7 +4,7 @@ title: Saringan - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Saringan: wu_post_count {#filter-wupostcount}
+# Saringan: wu_post_count
 
 Ngidini pangembang piranti tambahan ngganti gunggung cacah total
 

@@ -3,7 +3,7 @@ title: 'Aralin 8: Pag-onboard ng Kliyente'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Aralin 8: Pag-onboard ng Kostumer {#lesson-8-customer-onboarding}
+# Aralin 8: Pag-onboard ng Kostumer
 
 Ang pagpapasign up sa isang kostumer ay kalahati lang ng trabaho. Kung mag-log in sila, makaramdam ng pagkalito, at hindi na bumalik, nawala mo na sila. Dinidisenyo ng araling ito ang karanasang nagpapalit ng bagong signup tungo sa aktibo at nakikibahaging kostumer.
 

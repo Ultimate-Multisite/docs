@@ -3,7 +3,7 @@ title: Rondleiding deur die administrasiepaneel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Toer deur die administrasiepaneel {#touring-the-admin-panel}
+# Toer deur die administrasiepaneel
 
 Ultimate Multisite poog om so eenvoudig en selfverduidelikend moontlik te wees, maar met ’n hulpmiddel so kragtig kan dit help om ’n begeleide toer te hê. Kom ons stap deur die administrasiebladsye om jou te help oriënteer.
 

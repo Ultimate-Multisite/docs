@@ -3,7 +3,7 @@ title: Liste des pays
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Re-ordering the Ultimate Multisite country list {#re-ordering-the-ultimate-multisite-country-list}
+# Re-ordering the Ultimate Multisite country list
 
 Le menu déroulant pour sélectionner un pays est trié par ordre alphabétique basé sur les variantes anglaises des noms de pays. Cela peut signifier que, parfois, le pays d’origine de votre entreprise et/ou la majorité de vos clients se trouve au milieu d’une longue liste de noms de pays.
 

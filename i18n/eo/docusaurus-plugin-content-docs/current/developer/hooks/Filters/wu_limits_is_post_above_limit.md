@@ -4,7 +4,7 @@ title: Filtro - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filtro: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filtro: wu_limits_is_post_above_limit
 
 Kontrolas ĉu donita afiŝotipo estas permesita en ĉi tiu plano. Permesas al plugin-programistoj filtri la revenan valoron
 

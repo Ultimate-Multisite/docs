@@ -3,7 +3,7 @@ title: 'Lectio 4: Aedificatio Exemplarium Specialium'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lectio 4: Exemplaria Specialia Aedificare {#lesson-4-building-niche-templates}
+# Lectio 4: Exemplaria Specialia Aedificare
 
 Exemplaria sunt nucleus propositionis valoris tuae specialis. Dominus studii exercitationis qui se inscribit et situm videt qui iam sicut situs exercitationis apparet -- cum ordinibus disciplinarum, profilis magistrorum, et imaginibus idoneis -- multo verisimilius manebit quam is qui tabulam vacuam videt.
 

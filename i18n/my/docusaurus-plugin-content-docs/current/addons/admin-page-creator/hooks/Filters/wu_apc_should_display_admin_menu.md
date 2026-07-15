@@ -4,7 +4,7 @@ title: Filter - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filter: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filter: wu_apc_should_display_admin_menu
 
 အုပ်ချုပ်သူများ (admins) သည် စိတ်ကြယ်မှု လုပ်ငန်းစဉ်ကို ပြီးစီးခဲ့ပါက အုပ်ချုပ်မှုမီနူး စာမျက်နှာများကို ဖျောက်ထားနိုင်စေရန် ခွင့်ပြုပါသည်။
 

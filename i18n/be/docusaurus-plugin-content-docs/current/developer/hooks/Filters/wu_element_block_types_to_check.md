@@ -4,7 +4,7 @@ title: Фільтр - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Фільтр: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Фільтр: wu_element_block_types_to_check
 
 Можа, нам трэбі будзе дадаць адныміракія (блокі) пазней.
 

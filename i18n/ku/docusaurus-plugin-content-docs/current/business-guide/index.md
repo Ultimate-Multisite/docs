@@ -3,7 +3,7 @@ title: Karsaziyek Malpera Nîş Ava Bike
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Karsaziyek Malperên Niş bi Ultimate Multisite ava bikin {#build-a-niche-website-business-with-ultimate-multisite}
+# Karsaziyek Malperên Niş bi Ultimate Multisite ava bikin
 
 Piraniya kesên ku dixwazin malperan bifroşin, li hember Wix, Squarespace û bi hezaran freelanceran li ser bihayê pêşbaziyê dikin. Ew winda dikin. Ewên ku serdikevin, temaşevanek taybet hildibijêrin, çareseriyek li gorî wê temaşevanê ava dikin, û ji bo nirxa ku radest dikin pere distînin.
 

@@ -3,7 +3,7 @@ title: Pagkaputol sa Miyembro ug Pag-block sa Sitio
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Pagkaputol sa Membership ug Site Blocking {#membership-expiration-and-site-blocking}
+# Pagkaputol sa Membership ug Site Blocking
 
 Kini nga guide naghatag og katin-awan kung unsaon pag-handle sa Ultimate Multisite sa pag-expire sa membership, katapusan sa trial, ug frontend site blocking. Gipatin-aw ni kini ang tibuok siklo sa usa ka membership gikan sa aktibo ngadto sa expired, ang mga setting nga nagkontrol kung ang mga site ma-block ba, ug unsaon pag-check kung ang mga site magpabilin nga accessible bisan pa sa pag-expire sa membership.
 

@@ -4,7 +4,7 @@ title: Filter - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Φίλτρο: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Φίλτρο: wu_checkout_field_templates
 
 Οι APIs μας για την προσθήκη νέων πεδίων (field templates) συνδέονται εδώ.
 

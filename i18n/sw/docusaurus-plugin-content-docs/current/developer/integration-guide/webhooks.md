@@ -3,7 +3,7 @@ title: Ushughulikiaji wa Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kushughulikia Webhook {#webhook-handling}
+# Kushughulikia Webhook
 
 Tengeneza sehemu maalum za webhook ili kupokea matukio kutoka huduma za nje na kuunganisha data na Ultimate Multisite.
 

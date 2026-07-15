@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filter: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Filter: signup_get_available_languages
 
 ဝက်ဘ်ဆိုက်ကို အသုံးပြုသူများ စာရင်းသွင်းသည့်အခါ ရရှိနိုင်သော ဘာသာစကားစာရင်းကို စစ်ထုတ်ပေးသည့် filter တစ်ခု ဖြစ်ပါသည်။
 

@@ -3,7 +3,7 @@ title: Обрада веб-хука
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Обрада webhook-ова {#webhook-handling}
+# Обрада webhook-ова
 
 Креирајте прилагођене webhook крајње тачке за примање догађаја од спољних услуга и синхронизацију података са Ultimate Multisite.
 

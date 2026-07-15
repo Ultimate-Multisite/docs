@@ -3,7 +3,7 @@ title: Umlando wezinguquko we-Ultimate AI Connector yama-Endpoint Ahambisanayo
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Imikhawulo Ehambisanayo Umlando Wezinguquko {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector for Imikhawulo Ehambisanayo Umlando Wezinguquko
 
 ## Inguqulo 2.0.0 — Ikhishwe ngo-2026-04-24 {#version-200--released-on-2026-04-24}
 

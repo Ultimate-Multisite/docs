@@ -4,7 +4,7 @@ title: Shaandho - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Shaandheeye: wu_sso_url {#filter-wussourl}
+# Shaandheeye: wu_sso_url
 
 Wuxuu shaandheeyaa SSO URLs la soo saaray ka hor inta aan loo celin falalka macmiilka ee domain-no kala duwan.
 

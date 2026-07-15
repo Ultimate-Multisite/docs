@@ -3,7 +3,7 @@ title: Ubwumvikane bw'Ubushobozi bwa Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ubumenyeshye n'Umuhanda (Cloudways Integration) {#cloudways-integration}
+# Ubumenyeshye n'Umuhanda (Cloudways Integration)
 
 ## Umuvugizi (Overview) {#overview}
 Cloudways ni platform y'ubwumunsi w'ubwumunsi (managed cloud hosting platform) ituma ubufasha ukwibona WordPress sites ku buryo bushobora buba mu ntego z'ubwumunsi (cloud providers) n'ibindi, nk'uko DigitalOcean, AWS, Google Cloud, n'ibindi. Umuhanda utuma ubushobozi bwo gukoresha uburyo bw'ubwumunsi (automatic domain syncing) no gukemura SSL certificate management hagati ya Ultimate Multisite na Cloudways.

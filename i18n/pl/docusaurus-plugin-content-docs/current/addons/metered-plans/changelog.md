@@ -3,7 +3,7 @@ title: Zmiany w planach z limitem zużycia
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Dziennik zmian dla planów metrycznych {#metered-plans-changelog}
+# Dziennik zmian dla planów metrycznych
 
 Wersja 1.1.0 - Wydana 2026-05-05
 - Nowość: Rozliczenia za tokeny AI dla podstron multisite — śledź i rozlicz zużycie tokenów AI na różnych stronach klienta z możliwością konfigurowalnych stawek za token.

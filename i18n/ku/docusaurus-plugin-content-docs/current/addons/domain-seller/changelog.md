@@ -3,7 +3,7 @@ title: Tomara guhertinên Firoşkarê Domainê
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Guherandinên Domain Seller {#domain-seller-changelog}
+# Guherandinên Domain Seller
 
 Guhertoya 1.3.0 - Di 2026-06-02 de hate berdan
 - Nû: Hişyariyek network-admin hate zêdekirin dema ku hevsengiya firoşkarê HostAfrica pir kêm dibe

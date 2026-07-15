@@ -4,7 +4,7 @@ title: 过滤 - wu_use_domain_mapping
 sidebar_label: wu_use_domain_mapping
 _i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
 ---
-# 过滤器：wu_use_domain_mapping {#filter-wuusedomainmapping}
+# 过滤器：wu_use_domain_mapping
 
 确定是否应使用映射
 

@@ -3,7 +3,7 @@ title: ලාංඡන SVG ජනනය කරන්න
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG ජනනය කිරීම {#generate-logo-svg}
+# Logo SVG ජනනය කිරීම
 
 **Logo SVG ජනනය කිරීම** හැකියාව මඟින් Theme Builder ට ස්වයංක්‍රීය namespace-ආරක්ෂිත පිරිසිදු කිරීම සමඟ, ඔබේ WordPress අඩවිය තුළට අභිරුචි logo SVG සෘජුවම සාදා ඇතුළත් කළ හැක.
 

@@ -4,7 +4,7 @@ title: 动作 - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# 动作: set_auth_cookie {#action-setauthcookie}
+# 动作: set_auth_cookie
 
 在设置身份验证 cookie 之前立即触发。
 

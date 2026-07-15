@@ -4,7 +4,7 @@ title: フィルタ - wu_upgrade_to_unlock_url
 sidebar_label: wu_upgrade_to_unlock_url
 _i18n_hash: 3398ef4bc9e288f0173a859844fbb25c
 ---
-# フィルタ: wu_upgrade_to_unlock_url {#filter-wuupgradetounlockurl}
+# フィルタ: wu_upgrade_to_unlock_url
 
 開発者がアップグレードでアンロックするURLを変更できるようにする
 

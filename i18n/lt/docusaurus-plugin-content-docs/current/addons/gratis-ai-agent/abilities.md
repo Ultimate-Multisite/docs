@@ -3,7 +3,7 @@ title: Gebėjimų žinynas
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Galimybių žinynas {#abilities-reference}
+# Galimybių žinynas
 
 Galimybės yra atominiai veiksmai, kuriuos Gratis AI Agent gali iškviesti jūsų WordPress diegime. Kiekviena galimybė yra registruota PHP klasė, kuri pateikia JSON schemą — agentas ją skaito vykdymo metu, kad suprastų, kokie parametrai reikalingi ir ką galimybė grąžina.
 

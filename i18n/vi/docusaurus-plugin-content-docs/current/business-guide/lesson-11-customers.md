@@ -3,7 +3,7 @@ title: 'Bài học 11: Tìm kiếm khách hàng'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Bài 11: Tìm kiếm Khách hàng {#lesson-11-finding-customers}
+# Bài 11: Tìm kiếm Khách hàng
 
 Một nền tảng tuyệt vời nhưng không có khách hàng thì cũng chỉ là một sở thích. Bài học này sẽ hướng dẫn bạn cách thu hút khách hàng trong một lĩnh vực ngách cụ thể — những chiến lược hoạt động hiệu quả vì bạn tập trung vào một ngành nghề duy nhất.
 

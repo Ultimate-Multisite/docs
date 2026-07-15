@@ -3,7 +3,7 @@ title: Ngā Whakawātea
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Whakamārama o te Rereke {#release-notes}
+# Whakamārama o te Rereke
 
 ## Versi 2.13.0 — Whakawātea i te 2026-06-05 {#version-2130--released-on-2026-06-05}
 

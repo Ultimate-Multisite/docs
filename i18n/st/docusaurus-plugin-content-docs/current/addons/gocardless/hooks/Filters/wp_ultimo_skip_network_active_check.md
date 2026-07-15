@@ -4,7 +4,7 @@ title: Sefe - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 9061f073ee77c38afc3cecfabe5edb50
 ---
-# Sefe: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Sefe: wp_ultimo_skip_network_active_check
 
 Lumella developers ho khutsufatsa check ena.
 

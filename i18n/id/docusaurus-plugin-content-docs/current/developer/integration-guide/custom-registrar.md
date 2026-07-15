@@ -3,7 +3,7 @@ title: Membangun Integrasi Registrar Kustom
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Membuat Integrasi Registrar Kustom {#building-a-custom-registrar-integration}
+# Membuat Integrasi Registrar Kustom
 
 Addon Domain Seller menggunakan pola **Integration Registry**. Setiap registrar adalah kelas PHP yang mengimplementasikan `Domain_Selling_Capability` dan mendaftarkan dirinya melalui *action hook* `wu_domain_seller_register_capabilities`.
 

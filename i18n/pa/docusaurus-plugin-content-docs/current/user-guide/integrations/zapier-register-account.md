@@ -3,7 +3,7 @@ title: Zapier ਰਾਹੀਂ Account ਰਜਿਸਟਰ ਕਰੋ
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ਇਵੈਂਟ: Zapier ਰਾਹੀਂ Account ਰਜਿਸਟਰ ਕਰੋ {#event-register-an-account-via-zapier}
+# ਇਵੈਂਟ: Zapier ਰਾਹੀਂ Account ਰਜਿਸਟਰ ਕਰੋ
 
 ਲੇਖ [Zapier ਨਾਲ Ultimate Multisite ਨੂੰ ਜੋੜਨਾ](zapier.md) ਵਿੱਚ, ਅਸੀਂ ਚਰਚਾ ਕੀਤੀ ਸੀ ਕਿ ਟ੍ਰਿਗਰਾਂ ਅਤੇ ਇਵੈਂਟਾਂ ਦੇ ਆਧਾਰ 'ਤੇ Ultimate Multisite ਦੇ ਅੰਦਰ ਵੱਖ-ਵੱਖ ਕਾਰਵਾਈਆਂ ਕਰਨ ਲਈ Zapier ਦੀ ਵਰਤੋਂ ਕਿਵੇਂ ਕਰਨੀ ਹੈ। ਇਸ ਲੇਖ ਵਿੱਚ, ਅਸੀਂ ਦਿਖਾਵਾਂਗੇ ਕਿ ਤੁਸੀਂ ਤੀਜੇ-ਪੱਖ ਦੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਕਿਵੇਂ ਜੋੜ ਸਕਦੇ ਹੋ। ਅਸੀਂ ਡਾਟਾ ਦੇ ਸਰੋਤ ਵਜੋਂ Google Sheets ਦੀ ਵਰਤੋਂ ਕਰਾਂਗੇ ਅਤੇ Account ਰਜਿਸਟਰ ਕਰਨ ਲਈ ਜਾਣਕਾਰੀ Ultimate Multisite ਨੂੰ ਭੇਜਾਂਗੇ।
 

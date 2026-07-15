@@ -3,7 +3,7 @@ title: 'Chidzidzo 2: Kusarudza musika wako wakasarudzika'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Chidzidzo 2: Kusarudza Musika Wako Wakatarwa {#lesson-2-picking-your-niche}
+# Chidzidzo 2: Kusarudza Musika Wako Wakatarwa
 
 MuChidzidzo 1 takasimbisa kuti nei musika wakatarwa uchikunda zvakajairika. Iye zvino unofanira kusarudza wako. Chidzidzo ichi chinokupa hwaro hwekutsvaga nekuongorora musika wakatarwa usati waisa nguva pakuvakira iwoyo.
 

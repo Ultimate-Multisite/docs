@@ -3,7 +3,7 @@ title: Panayam sa Pagtuklas
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 Ang **Discovery Interview** ay ang unang hakbang sa proseso ng disenyo ng Theme Builder. Nangangalap ito ng impormasyon tungkol sa iyong site, negosyo, at mga kagustuhan sa disenyo upang lumikha ng isinapersonal na theme.
 

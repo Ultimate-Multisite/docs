@@ -3,7 +3,7 @@ title: מוצרי דומיין ותמחור
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# מוצרי דומיין ותמחור {#domain-products-and-pricing}
+# מוצרי דומיין ותמחור
 
 מוצרי דומיין הם הדרך שלך לשלוט בתמחור, TLDs, פרטיות WHOIS ובבחירת ספק. כל מוצר דומיין הוא מוצר Multisite Ultimate רגיל עם לשונית נוספת בשם **Domain Settings**.
 

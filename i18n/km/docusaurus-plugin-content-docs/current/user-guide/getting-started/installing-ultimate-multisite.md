@@ -3,7 +3,7 @@ title: ការដំឡើង Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# ការដំឡើង Ultimate Multisite {#installing-ultimate-multisite}
+# ការដំឡើង Ultimate Multisite
 
 :::note
 ការណែនាំនេះ គឺតម្រូវឱ្យអ្នកបានដំឡើង និងកំណត់រចនាសម្ព័ន្ធ WordPress Multisite រួចហើយ។ ដើម្បីស្វែងយល់ពីរបៀបធ្វើ សូមពិនិត្យមើល [ការណែនាំនេះ](https://www.wpbeginner.com/glossary/multisite/) ដោយ WP Beginner។

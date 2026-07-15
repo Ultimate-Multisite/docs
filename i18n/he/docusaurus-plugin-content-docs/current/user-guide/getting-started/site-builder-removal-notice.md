@@ -3,7 +3,7 @@ title: הודעת הסרת מצב בונה האתר
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# הסרת מצב בונה אתרים (Site Builder Mode) {#site-builder-mode-removal-notice}
+# הסרת מצב בונה אתרים (Site Builder Mode)
 
 **מצב בונה אתרים (Site Builder mode) הוסר בגרסה Superdav AI Agent v1.12.0.** אם השתמשת במצב בונה אתרים, עליך לעבור לשימוש ב-**Setup Assistant agent** ליצירת תבניות והגדרת אתר.
 

@@ -3,7 +3,7 @@ title: साईट तपशील कौशल्य
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 **Site Specification skill** ही एक व्यवस्थित पद्धत आहे, जी तुमच्या साइटचे उद्दिष्ट (goals), प्रेक्षक (audience) आणि ब्रँडची ओळख (brand identity) गोळा करण्यासाठी वापरली जाते. ही माहिती तुमच्या **site_brief** मेमरीमध्ये साठवली जाते, ज्याचा वापर एजंट्स (agents) वेगवेगळ्या सत्रांमध्ये (sessions) सातत्यपूर्ण आणि गरजेनुसार मदत देण्यासाठी करतात.
 

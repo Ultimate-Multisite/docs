@@ -3,7 +3,7 @@ title: Gehigarriaren Sunrise fitxategi-kargatzailea
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Gehigarriaren Sunrise fitxategi-kargatzailea {#addon-sunrise-file-loader}
+# Gehigarriaren Sunrise fitxategi-kargatzailea
 
 Ultimate Multisite 2.8.0 bertsioak sunrise hedapen-kargatzaile bat gehitzen du gehigarrientzat eta neurrira egindako MU-plugin integrazioentzat, WordPress sunrise abiaraztean exekutatu behar direnean sortutako `wp-content/sunrise.php` fitxategia editatu gabe.
 

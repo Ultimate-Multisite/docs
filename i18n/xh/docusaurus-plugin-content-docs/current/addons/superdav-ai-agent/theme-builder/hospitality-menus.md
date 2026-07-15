@@ -3,7 +3,7 @@ title: Iimenyu Zokwamkela Iindwendwe
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Iimenyu zeHospitality {#hospitality-menus}
+# Iimenyu zeHospitality
 
 Inqaku le-**Hospitality Menus** livumela Theme Builder ukuba ivelise kwaye ifake amaphepha emenyu yokutya neziselo acwangciswe kakuhle ngqo kwi-WordPress site yakho.
 

@@ -3,7 +3,7 @@ title: ServerPilot সংহতিকৰণ
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ইন্টিগ্ৰেচন {#serverpilot-integration}
+# ServerPilot ইন্টিগ্ৰেচন
 
 ## সামগ্ৰিক আভাস (Overview) {#overview}
 ServerPilot হৈছে DigitalOcean, Amazon, Google, বা আন কোনো সার্ভার প্ৰোভাইডৰৰ সার্ভৰত WordPress আৰু আন PHP ওয়েবসাইট হোষ্ট কৰাৰ বাবে এটা ক্লাউড সেৱা। এই ইন্টিগ্ৰেচনটোৱে Ultimate Multisite আৰু ServerPilotৰ মাজত স্বয়ংক্রিয় ডোমেইন Syncing আৰু SSL সার্টিফিকেট ব্যৱস্থাপনা (management) সক্ষম কৰে।

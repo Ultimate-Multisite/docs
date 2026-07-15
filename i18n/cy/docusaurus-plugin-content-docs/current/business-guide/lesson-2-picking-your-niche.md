@@ -3,7 +3,7 @@ title: 'Dysgu 2: Mae''n Dechrau eich Niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lesiad 2: Gwylio'ch Niche Dydd {#lesson-2-picking-your-niche}
+# Lesiad 2: Gwylio'ch Niche Dydd
 
 Yn Lesiad 1, roeddwn wedi bod yn deimlo pam y niche mae'n gwneud gwellt. Mae angen i chi ddod o hyd i'r eich niche. Mae’r lesen hwn yn rhoi ffurf argyfwng i ddod o hyd i'r nichw a chybeddd ei gyflwyniad cyn y byddwch yn ystyried am ymdat.
 

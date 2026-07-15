@@ -4,7 +4,7 @@ title: Filtrilo - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filtrilo: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Filtrilo: wu_billing_address_fields
 
 Permesas al plugin-programistoj filtri la kampojn de faktura adreso.
 

@@ -3,7 +3,7 @@ title: Closte'de Sunrise Sabitini Ayarlama
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte'ta Sunrise Sabitini True Olarak Ayarlama {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte'ta Sunrise Sabitini True Olarak Ayarlama
 
 Bazı hosting sağlayıcıları güvenlik nedeniyle wp-config.php dosyasını kilitli tutar. Bu durum, Ultimate Multisite'ın alan adı eşleme ve diğer özelliklerin çalışması için gerekli sabitleri otomatik olarak dosyaya ekleyememesi anlamına gelir. Closte de bu tür sağlayıcılardan biridir.
 

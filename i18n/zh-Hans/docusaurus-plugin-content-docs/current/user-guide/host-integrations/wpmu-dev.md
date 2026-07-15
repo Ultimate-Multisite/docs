@@ -3,7 +3,7 @@ title: WPMU DEV 集成
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV 集成 {#wpmu-dev-integration}
+# WPMU DEV 集成
 
 ## 概述 {#overview}
 WPMU DEV 是一个全面的 WordPress 平台，提供托管、插件和 WordPress 站点的服务。此集成实现了 Ultimate Multisite 与 WPMU DEV 托管之间的自动域名同步和 SSL 证书管理。

@@ -3,7 +3,7 @@ title: 增強控制面板整合
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance 控制台整合 {#enhance-control-panel-integration}
+# Enhance 控制台整合
 
 ## 概覽 {#overview}
 Enhance 是一套現代化的控制台，提供強大的主機自動化與管理功能。此整合讓 Ultimate Multisite 與 Enhance 控制台之間能夠自動同步網域並管理 SSL 憑證。

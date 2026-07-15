@@ -3,7 +3,7 @@ title: WPMU DEV 통합
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# همکارۍ د WPMU DEV سره {#wpmu-dev-integration}
+# همکارۍ د WPMU DEV سره
 
 ## پرمختنه (Overview) {#overview}
 WPMU DEV یو جامع WordPress پلتفارم دی چې د WordPress ویب سائټونه لپاره هاستۍ، pluginونه او خدمات وړاندې کوي. دا همکارۍ د Ultimate Multisite او WPMU DEV هاستۍ ترمنځ د دامین (domain) اتوماتیک سنسینګ او SSL سندات مدیریت اجازه ورکوي.

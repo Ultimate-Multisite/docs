@@ -3,7 +3,7 @@ title: 'Lehena-lehenak: Deskabidearen er Bilbao'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lehen 6: Esperientziaren Registrazioa {#lesson-6-the-signup-experience}
+# Lehen 6: Esperientziaren Registrazioa
 
 Checkout flow-na da hori interesak merkatu gain dira. Prosesua irritatu edo generikoa izan bada, kliuntzak haserazten dira. Niche-ko garrantzi eta horiek batzuk ezagutzen dituzten erantzunak ematen flujo batek konvertizio egiten du.
 

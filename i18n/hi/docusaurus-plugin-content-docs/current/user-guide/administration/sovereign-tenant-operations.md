@@ -3,7 +3,7 @@ title: संप्रभु किरायेदार संचालन
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# संप्रभु टेन्ेंट संचालन (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# संप्रभु टेन्ेंट संचालन (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 में संप्रभु टेन्ेंट्स के लिए ऑपरेशनल टूलिंग जोड़ी गई है: ये सबसाइट्स अपने स्वयं के डेटाबेस, फ़ाइल सिस्टम रूट और रूटिंग संदर्भ के साथ चलती हैं, जबकि नेटवर्क एडमिन से दिखाई देती रहती हैं।
 

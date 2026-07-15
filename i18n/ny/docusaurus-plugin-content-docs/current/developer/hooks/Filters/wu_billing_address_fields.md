@@ -4,7 +4,7 @@ title: Sefa - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Fyuluta: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Fyuluta: wu_billing_address_fields
 
 Lolani opanga zowonjezera kuti afyulute minda ya adiresi yolipirira.
 

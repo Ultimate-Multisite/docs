@@ -3,7 +3,7 @@ title: 'Összhang 3: Hálózat beállítása'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# 3. Bölöm: A Hálózat Beállítása {#lesson-3-setting-up-your-network}
+# 3. Bölöm: A Hálózat Beállítása
 
 Most ideje építeni. Ebben a bölségeben telepítjük az Ultimate Multisite-ot, és beállítjuk a FitSite hálózat alapjait. Minden döntés itt a fitness körzetét figyelembe veszi.
 

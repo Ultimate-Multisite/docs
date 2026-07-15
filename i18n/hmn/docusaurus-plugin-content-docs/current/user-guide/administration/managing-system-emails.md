@@ -3,7 +3,7 @@ title: Tsoom hais txog txhua yam email ntawm system
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# ការគ្រប់គ្រងអ៊ីមែលប្រព័ន្ធ (Managing System Emails) {#managing-system-emails}
+# ការគ្រប់គ្រងអ៊ីមែលប្រព័ន្ធ (Managing System Emails)
 
 Ultimate Multisite នឹងផ្ញើអ៊ីមែលជាច្រើនសម្រាប់ព្រឹត្តិការណ៍ផ្សេងៗ ដូចជាការបញ្ជាក់ការចុះឈ្មោះ, សំបុត្រទទួលលុយ, និងការផ្លាស់ប្តូរភាពជាសមាជិក។ អ្នកអាចកែសម្រួល قالب (template) អ៊ីមែលទាំងនេះឱ្យត្រូវនឹងម៉ាករបស់អ្នកបាន។
 

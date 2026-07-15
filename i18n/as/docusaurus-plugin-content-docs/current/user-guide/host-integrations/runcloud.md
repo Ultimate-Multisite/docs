@@ -3,7 +3,7 @@ title: RunCloud Integration
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## Overview {#overview}
 RunCloud এটা ক্লাউড-ভিত্তিক ছerver व्यवस्थापन प्लेटफर्म हो, যাৰ জৰিয়তে আপুনি নিজৰ ক্লাউড ছerverত সহজে web application deploy আৰু manage কৰিব পাৰে। এই ইন্টিগ্ৰেচনটোৱে Ultimate Multisite আৰু RunCloudৰ মাজত স্বয়ংক্রিয় ডোমেইন Syncing আৰু SSL সার্টিফিকেট ব্যৱস্থাপনা কৰে।

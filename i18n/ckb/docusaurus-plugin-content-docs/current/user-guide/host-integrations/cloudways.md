@@ -3,7 +3,7 @@ title: یەکگرتووکردنی Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrationê bi Cloudways {#cloudways-integration}
+# Integrationê bi Cloudways
 
 ## Pêşîtiye (Overview) {#overview}
 Cloudways platformekîyek ji aliyê xwediyê hatî ye ku hûn siteyên WordPress rastkirinên xwe li ser gelek pîvakên nû bêne derxistin, wekî DigitalOcean, AWS, Google Cloud û gelekî din. Ev integrasyon bi karê şeşandina domên (domain syncing) û rænsetkirina sertifikateyên SSL ji nû ve hatî damezrandin li kêra Ultimate Multisite û Cloudways.

@@ -3,7 +3,7 @@ title: Změnový deník pro supportovací tikety
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Seznam změn pro Support Tickets {#support-tickets-changelog}
+# Seznam změn pro Support Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Vylepšeno: Vyňato z sledování Git adresáře `vendor/` (je již pokryto souborem .gitignore), čímž se zmenší velikost repozitáře

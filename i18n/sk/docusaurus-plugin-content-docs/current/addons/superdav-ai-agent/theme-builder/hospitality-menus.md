@@ -3,7 +3,7 @@ title: Menu pre pohostinstvo
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Jedálne lístky pre pohostinstvo {#hospitality-menus}
+# Jedálne lístky pre pohostinstvo
 
 Funkcia **Jedálne lístky pre pohostinstvo** umožňuje Theme Builder generovať a vkladať štruktúrované stránky s jedálnymi a nápojovými lístkami priamo do vášho WordPress webu.
 

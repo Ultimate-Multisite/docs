@@ -3,7 +3,7 @@ title: 'Liçona 3: Configurar la vostra xarxa'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Aula 3: Configuració de la teva xarxa {#lesson-3-setting-up-your-network}
+# Aula 3: Configuració de la teva xarxa
 
 És hora de construir. En aquesta aula instal·laràs Ultimate Multisite i configuraràs el fonament de la xarxa FitSite. Cada decisió aquí es fa tenint en compte el segment de mercat del benestar físic.
 

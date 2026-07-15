@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# அல்டிமேட் மல்டிசைட் ஆட்-ஆன்கள் {#ultimate-multisite-addons}
+# அல்டிமேட் மல்டிசைட் ஆட்-ஆன்கள்
 
 ஆட்-ஆன்கள் (Addons) மூலம் Ultimate Multisite-க்கு கூடுதல் அம்சங்கள் மற்றும் ஒருங்கிணைப்புகளை (integrations) சேர்க்கலாம். பெரும்பாலான ஆட்-ஆன்கள் கட்டணத்தில்தான் இருக்கும், அவற்றை [ultimatemultisite.com](https://ultimatemultisite.com) இலிருந்து வாங்கலாம்.
 

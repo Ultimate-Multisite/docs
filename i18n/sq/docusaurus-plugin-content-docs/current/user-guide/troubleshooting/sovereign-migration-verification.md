@@ -3,7 +3,7 @@ title: Verifikimi i Migrimit Sovran
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikimi i Migracionit Sovran {#sovereign-migration-verification}
+# Verifikimi i Migracionit Sovran
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 përfshin komanda verifikimi WP-CLI për migracione të qirave sovrane (sovereign tenant). Përdorni këto kur një migracione e qirës, vizita SSO ose instalimi i izoluar nuk funksionojnë siç pritet.
 

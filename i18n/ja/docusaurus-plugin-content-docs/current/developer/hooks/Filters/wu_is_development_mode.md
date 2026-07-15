@@ -4,7 +4,7 @@ title: フィルタ - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# フィルタ: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# フィルタ: wu_is_development_mode
 
 プラグイン開発者が開発モード用の追加テストを追加できるようにします。
 

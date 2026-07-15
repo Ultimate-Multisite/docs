@@ -3,7 +3,7 @@ title: 'Lección 9: Fixación de prezos para obter beneficios'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lección 9: Prezos para obter beneficio {#lesson-9-pricing-for-profit}
+# Lección 9: Prezos para obter beneficio
 
 Na Lección 5 establecemos os prezos iniciais dos plans de FitSite. Agora perfeccionamos a estratexia de prezos con técnicas que aumentan os ingresos, fomentan as actualizacións e reducen a perda de clientes.
 

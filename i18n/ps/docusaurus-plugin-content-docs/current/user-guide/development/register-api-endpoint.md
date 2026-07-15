@@ -3,7 +3,7 @@ title: API Endpoint Register
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# دغlere Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# دغlere Ultimate Multisite Register API endpoint
 
 په دې درس کې، تاسو زده کړئ چې څنګه Ultimate Multisite /register API endpoint کارولو لپاره هم لروپي (onboarding) پر یو نوی کلاینټ په خپل شبکه کې جوړ کړئ او څنګه دا کار له لارې د Zapier سره پیل کړئ.
 

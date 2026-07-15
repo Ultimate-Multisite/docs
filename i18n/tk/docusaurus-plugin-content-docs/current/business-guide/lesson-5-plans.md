@@ -3,7 +3,7 @@ title: '5-nji sapak: Meýilnamalaryňyzy taslamak'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Sapak 5: Meýilnamalaryňyzy taslamak {#lesson-5-designing-your-plans}
+# Sapak 5: Meýilnamalaryňyzy taslamak
 
 Meýilnama derejeleriňiz diňe baha derejeleri däl -- olar siziň nişa müşderileriňiziň hakykatda nähili işleýändiginiň şöhlelenmesidir. Bu sapakda siz dürli tapgyrlardaky fitness biznesleriniň hakyky zerurlyklaryna laýyk gelýän önüm derejelerini taslarsyňyz.
 

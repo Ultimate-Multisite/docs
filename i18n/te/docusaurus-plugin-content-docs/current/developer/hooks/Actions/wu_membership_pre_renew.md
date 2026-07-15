@@ -4,7 +4,7 @@ title: చర్య - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Action: wu_membership_pre_renew {#action-wumembershipprerenew}
+# Action: wu_membership_pre_renew
 
 సభ్యత్వం పునరుద్ధరణ (membership renewal) జరగడానికి ముందు ఇది ట్రిగ్గర్ అవుతుంది.
 

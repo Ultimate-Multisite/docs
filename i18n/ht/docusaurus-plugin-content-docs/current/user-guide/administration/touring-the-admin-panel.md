@@ -3,7 +3,7 @@ title: Tour nan Panèl Administrasyon an
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tour nan Panel Admin an {#touring-the-admin-panel}
+# Tour nan Panel Admin an
 
 Ultimate Multisite vle rive pi senp e ki montre tout bagay pa tèm, men ak yon zouti ki gen pouvwa sa a ka ede w fè yon tour ki gide ou. Ann mache atravè paj admin yo pou ede w mete tèt ou byen.
 

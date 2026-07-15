@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ìṣepọ̀ Cloudways {#cloudways-integration}
+# Ìṣepọ̀ Cloudways
 
 ## Àkótán {#overview}
 Cloudways jẹ́ pẹpẹ ìgbalejò cloud tí a ń ṣàkóso, tí ó jẹ́ kí o lè gbé àwọn site WordPress kalẹ̀ lórí onírúurú àwọn olupèsè cloud bíi DigitalOcean, AWS, Google Cloud, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. Ìṣepọ̀ yìí ń mú kí ìmúdọ́gba orúkọ-àgbègbè aládáṣe àti ìṣàkóso iwe-ẹ̀rí SSL ṣiṣẹ́ láàárín Ultimate Multisite àti Cloudways.

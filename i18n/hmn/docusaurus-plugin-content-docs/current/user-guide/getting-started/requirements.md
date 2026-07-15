@@ -3,7 +3,7 @@ title: Ywuj ua haujlwm
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# ຂໍ້ກຳນົດຂອງ Ultimate Multisite {#ultimate-multisite-requirements}
+# ຂໍ້ກຳນົດຂອງ Ultimate Multisite
 
 ສິ່ງທຳອິດທີ່ເຈົ້າອາດຈະຖາມຕົວເອງກ່ອນທີ່ຈະຊື້ Ultimate Multisite ແມ່ນວ່າຕ້ອງມີຫຍັງແດ່ເພື່ອໃຫ້ plugin ນີ້ເຮັດວຽກໄດ້. ເບິ່ງດີ, ໂຊກດີທີ່ມັນມີຂໍ້ກຳນົດພື້ນຖານບໍ່ຫຼາຍປານ: **ຊື່ໂດເມນ (domain name)**, **ຜູ້ໃຫ້ບໍລິການໂຮດຈິງ (hosting provider)** ທີ່ດີ ແລະ ການຕິດຕັ້ງ WordPress **Multisite**. ນັ້ນແມ່ນທັງໝົດທີ່ເຈົ້າຕ້ອງການ!
 

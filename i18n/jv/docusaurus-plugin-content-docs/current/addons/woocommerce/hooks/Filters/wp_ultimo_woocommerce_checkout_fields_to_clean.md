@@ -4,7 +4,7 @@ title: Saringan - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Saringan: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Saringan: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Ngidini pangembang kanggo nyaring field alamat tagihan baku WooCommerce.
 

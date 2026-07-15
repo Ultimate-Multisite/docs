@@ -3,7 +3,7 @@ title: 'Lição 6: A Experiência de Cadastro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lição 6: A Experiência de Cadastro {#lesson-6-the-signup-experience}
+# Lição 6: A Experiência de Cadastro
 
 O fluxo de checkout é onde o interesse se transforma em receita. Um processo de cadastro confuso ou genérico faz com que os clientes desistam. Um fluxo específico para o nicho, que fale a língua deles e pareça natural, os converte.
 

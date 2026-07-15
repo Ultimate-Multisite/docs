@@ -3,7 +3,7 @@ title: အင်တာနက် ရှာဖွေခြင်း
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# အင်တာနက် ရှာဖွေခြင်း (Internet Search) {#internet-search}
+# အင်တာနက် ရှာဖွေခြင်း (Internet Search)
 
 Gratis AI Agent v1.5.0 မှာ **Internet Search** စွမ်းရည်တစ်ခုကို ထပ်ပေါင်းပေးထားပါတယ်။ ဒီစွမ်းရည်က AI assistant ကို စကားပြောနေရင်းနဲ့ အင်တာနက်ပေါ်က နောက်ဆုံးရ အချက်အလက်တွေကို ရှာဖွေယူနိုင်စေပါတယ်။ ဒါကို [Brave Search API](https://brave.com/search/api/) ဒါမှမဟုတ် [Tavily API](https://tavily.com/) တို့က စွမ်းဆောင်ပေးထားတာ ဖြစ်ပါတယ်။
 

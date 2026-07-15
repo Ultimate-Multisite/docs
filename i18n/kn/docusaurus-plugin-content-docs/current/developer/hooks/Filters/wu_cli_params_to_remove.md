@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_cli_params_to_remove
 sidebar_label: wu_cli_params_to_remove
 _i18n_hash: a8c5fd0763e8c7dbbdd4ce507bfb8538
 ---
-# ಫಿಲ್ಟರ್: wu_cli_params_to_remove {#filter-wucliparamstoremove}
+# ಫಿಲ್ಟರ್: wu_cli_params_to_remove
 
 ಅನಗತ್ಯ ಪ್ಯಾರಾಮೀಟರ್‌ಗಳನ್ನು (Params) ತೆಗೆದುಹಾಕುತ್ತದೆ.
 

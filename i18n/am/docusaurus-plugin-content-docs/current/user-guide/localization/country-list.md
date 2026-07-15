@@ -3,7 +3,7 @@ title: የሀገር ዝርዝር
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# የUltimate Multisite የሀገር ዝርዝርን እንደገና ማስቀመጥ {#re-ordering-the-ultimate-multisite-country-list}
+# የUltimate Multisite የሀገር ዝርዝርን እንደገና ማስቀመጥ
 
 የሀገርን ለመምረጥ የሚያገለግለው ድሮፕዳውን (dropdown) በሀገራቱ የእንግሊዝኛ ስሞች መሠረት በፊደል ቅደም ተከተል (alphabetically) ይደራጃል። ይህ ማለት፣ አንዳንድ ጊዜ፣ የኩባንያዎ መነሻ ሀገር እና/ወይም አብዛኛዎቹ ደንበኞችዎ የሚገኙበት ሀገር በረጅም የሀገር ስም ዝርዝር መሃል ላይ ተደብቆ ሊገኝ ይችላል።
 

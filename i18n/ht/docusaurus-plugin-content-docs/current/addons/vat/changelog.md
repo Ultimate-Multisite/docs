@@ -3,7 +3,7 @@ title: Jounal chanjman VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Jounal chanjman VAT {#vat-changelog}
+# Jounal chanjman VAT
 
 Vèsyon 1.0.7 - Pibliye 2026-02-03
 

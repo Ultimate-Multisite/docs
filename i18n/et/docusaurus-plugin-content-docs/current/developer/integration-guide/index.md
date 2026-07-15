@@ -3,7 +3,7 @@ title: Integreerimisjuhend
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integratsiooni juhend {#integration-guide}
+# Integratsiooni juhend
 
 See juhend käsitleb levinud integratsioonimustreid Ultimate Multisite’iga, sealhulgas ühendamist väliste teenustega, kohandatud makselüüside loomist ja webhookide käsitlemist.
 

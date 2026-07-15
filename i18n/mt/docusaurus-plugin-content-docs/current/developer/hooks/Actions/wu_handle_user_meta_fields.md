@@ -4,7 +4,7 @@ title: Azzjoni - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Azzjoni: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Azzjoni: wu_handle_user_meta_fields
 
 Ippermetti lill-iżviluppaturi tal-plugin isalvaw id-dejta meta tal-utent b’modi differenti jekk ikollhom bżonn.
 

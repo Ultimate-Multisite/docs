@@ -3,7 +3,7 @@ title: Udibaniso lwe-GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Udibaniso lwe-GridPane {#gridpane-integration}
+# Udibaniso lwe-GridPane
 
 ## Isishwankathelo {#overview}
 GridPane yiphaneli yolawulo lokusingathwa kwe-WordPress ekhethekileyo eyakhelwe iingcali ze-WordPress ezinzulu. Olu dibaniso luvumela ungqamaniso oluzenzekelayo lweedomeyini nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite ne-GridPane.

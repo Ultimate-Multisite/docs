@@ -4,7 +4,7 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 ਇਸ ਪਲਾਨ ਦੀ ਆਈਡੀ ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ ਜਿਸਦੀ ਜਾਂਚ ਕਰਨੀ ਹੈ। ਜੇ ਇਹ ਮੌਜੂਦ ਹੈ, ਤਾਂ ਨਵੀਂ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਇਸ ਪਲਾਨ ਦੀ ਵਰਤੋਂ ਕਰੇਗੀ।
 

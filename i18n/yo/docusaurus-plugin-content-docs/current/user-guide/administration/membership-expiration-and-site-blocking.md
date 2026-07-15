@@ -3,7 +3,7 @@ title: Ìparí Ìṣèjọmọ́ àti Dídènà Site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ipẹ̀yà Membership àti Didènà Ojúlé {#membership-expiration-and-site-blocking}
+# Ipẹ̀yà Membership àti Didènà Ojúlé
 
 Ìtọ́nisọ́nà yìí ṣàlàyé bí Ultimate Multisite ṣe ń bójú tó ipẹ̀yà membership, òpin ìdánwò, àti didènà ojúlé ní iwájú. Ó bo ìgbésí-ayé membership láti ìṣiṣẹ́ dé ipẹ̀yà, àwọn eto tó ń ṣàkóso bóyá a máa dènà àwọn ojúlé, àti ohun tí a yẹ kí o ṣàyẹ̀wò nígbà tí àwọn ojúlé bá ṣì ṣeé wọ̀lé lẹ́yìn tí membership bá parí.
 

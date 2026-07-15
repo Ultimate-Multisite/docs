@@ -3,7 +3,7 @@ title: Comment obtenir de l'aide
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Comment obtenir de l'aide {#how-to-get-help}
+# Comment obtenir de l'aide
 
 Vous avez votre clé de licence valide, et vous avez également accès à notre équipe pour vous aider à résoudre les problèmes que vous pourriez rencontrer lors de la configuration d'Ultimate Multisite.
 

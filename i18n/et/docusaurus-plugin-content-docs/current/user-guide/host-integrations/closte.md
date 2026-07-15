@@ -3,7 +3,7 @@ title: Closte integreerimine
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integreerimine {#closte-integration}
+# Closte Integreerimine
 
 ## Üldine ülevaade {#overview}
 Closte on juhtomat WordPress-hostingu platvorm, millel loodud Google Cloud infrastruktuuril. See integreerimine võimaldab automaatselt domeenide sünkroonimist ja SSL-sertifikaadide haldamist Ultimate Multisite'i ja Closte vahel.

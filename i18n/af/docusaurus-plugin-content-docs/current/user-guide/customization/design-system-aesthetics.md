@@ -3,7 +3,7 @@ title: Ontwerpstelsel Estetika Vaardigheid
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetika van die Ontwerpstelsel {#design-system-aesthetics-skill}
+# Estetika van die Ontwerpstelsel
 
 Die **Estetika van die Ontwerpstelsel-vaardigheid** is 'n gelei benadering om die visuele identiteit van jou webwerf te verfyn. Dit help jou om konsekwente besluite te neem oor tipografie, kleur, spasie en bewegingstokens wat jou ontwerpstelsel definieer.
 

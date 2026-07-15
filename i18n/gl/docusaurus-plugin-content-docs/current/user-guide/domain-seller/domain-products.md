@@ -3,7 +3,7 @@ title: Produtos de Dominio e Precios
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produtos de Domínio e Preços {#domain-products-and-pricing}
+# Produtos de Domínio e Preços
 
 Os produtos de domínio são a forma como controlas os preços, os TLDs (domínios de nível superior), a privacidade WHOIS e a seleção do provedor. Cada produto de domínio é um produto Ultimate Multisite padrão com uma aba extra **Domain Settings** (Definições de Domínio).
 

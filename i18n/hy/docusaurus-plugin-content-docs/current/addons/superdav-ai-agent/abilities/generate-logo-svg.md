@@ -3,7 +3,7 @@ title: Ստեղծել լոգոյի SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ստեղծել լոգոյի SVG {#generate-logo-svg}
+# Ստեղծել լոգոյի SVG
 
 **Ստեղծել լոգոյի SVG** կարողությունը թույլ է տալիս Theme Builder-ին ստեղծել և ներդնել անհատական լոգոյի SVG-ներ անմիջապես ձեր WordPress կայքում՝ ավտոմատ namespace-safe մաքրմամբ։
 

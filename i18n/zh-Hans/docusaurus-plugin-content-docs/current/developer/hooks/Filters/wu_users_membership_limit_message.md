@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# 过滤器: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
+# 过滤器: wu_users_membership_limit_message
 
 允许开发者更改关于会员用户限制的消息
 

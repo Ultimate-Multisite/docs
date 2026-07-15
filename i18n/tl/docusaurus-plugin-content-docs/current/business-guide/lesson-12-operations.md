@@ -3,7 +3,7 @@ title: 'Aralin 12: Pagpapatakbo ng Negosyo'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Aralin 12: Pagpapatakbo ng Negosyo {#lesson-12-running-the-business}
+# Aralin 12: Pagpapatakbo ng Negosyo
 
 Ang platform ay hindi isang proyektong tinatapos mo -- ito ay negosyong pinapatakbo mo. Saklaw ng araling ito ang pang-araw-araw na operasyon ng pamamahala sa FitSite: suporta, billing, pagpapanatili, at pagpapanatiling masaya ng mga customer.
 

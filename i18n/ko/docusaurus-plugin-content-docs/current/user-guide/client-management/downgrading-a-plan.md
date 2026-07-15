@@ -3,7 +3,7 @@ title: 요금제 다운그레이드
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# 플랜 다운그레이드(v2) {#downgrading-a-plan-v2}
+# 플랜 다운그레이드(v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 관한 것입니다.**_
 

@@ -3,7 +3,7 @@ title: گھیبھر جي ڪيڪڊز
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# اسي امولٹ میلسائٹ کے اسنیپٹس کو اپنے گیتھرب ہب پر کیسے استعمال کریں {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# اسي امولٹ میلسائٹ کے اسنیپٹس کو اپنے گیتھرب ہب پر کیسے استعمال کریں
 
 گیتھرب ریپوزٹری میں کوڈ کے چھوٹے ٹکڑے (snippets) موجود ہیں جنہیں Ultimate Multisite کے صارفین اکثر مانگتے ہیں، جیسے سائن اپ پیجز پر گوگل اینالیٹکس سکرپٹ شامل کرنا یا ایڈمن ڈیش بورڈ سے کسی میٹا باکس کو چھپانا۔
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# اپنے تھیم کی functions.php فائل میں اسنیپٹ کیسے شامل کریں {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# اپنے تھیم کی functions.php فائل میں اسنیپٹ کیسے شامل کریں
 
   1. اپنے WordPress Network admin dashboard میں لاگ ان کریں اور Themes > Theme Editor پر جائیں (نیچے دیے گئے اسکرین شاٹ کو دیکھیں۔)۔
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- اسکرین شاٹ دستیاب نہیں: WordPress Theme Editor دکھا رہا ہے functions.php فائل کی ایڈیٹنگ -->
 
-# Must-Use Plugins (mu-plugins) کیسے بنائیں {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins (mu-plugins) کیسے بنائیں
 
 WordPress میں ایک ایسی فیچر ہے جو آپ کو "Must-Use Plugins" یا مختصر نام "mu-plugins" کہا جاتا ہے، جسے کسٹم فنکشنلٹی لوڈ کرنے کے لیے استعمال کیا جا سکتا ہے۔
 

@@ -4,7 +4,7 @@ title: Sefe - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Sefe: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Sefe: wu_limits_is_post_above_limit
 
 E hlahloba hore na mofuta o itseng oa poso o lumelletsoe ho plan ena E lumella baqapi ba plugin ho sefa boleng bo khutlisoang
 

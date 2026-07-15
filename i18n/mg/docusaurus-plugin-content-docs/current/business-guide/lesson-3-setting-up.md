@@ -3,7 +3,7 @@ title: 'Lesona 3: Fametrahana ny tambajotranao'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesona 3: Fametrahana ny tambajotranao {#lesson-3-setting-up-your-network}
+# Lesona 3: Fametrahana ny tambajotranao
 
 Fotoana hanorenana izao. Amin’ity lesona ity dia hametraka Ultimate Multisite ianao ary handrindra ny fototry ny tambajotra FitSite. Ny fanapahan-kevitra rehetra eto dia natao ho an’ny sehatra ara-panatanjahan-tena.
 

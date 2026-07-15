@@ -3,7 +3,7 @@ title: Registre de canvis de la integració amb WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Registre de canvis de la integració amb WooCommerce {#woocommerce-integration-changelog}
+# Registre de canvis de la integració amb WooCommerce
 
 Versió 2.2.0 - Publicada el 2026-07-01
 * Nou: Els imports d’impostos d’Ultimate Multisite ara apareixen com a línies de tarifa separades de WooCommerce al checkout, fent que els totals d’impostos siguin més clars abans del pagament.

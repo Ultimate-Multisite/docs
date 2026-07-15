@@ -3,7 +3,7 @@ title: Cloudflare એકીકરણ
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare એકીકરણ {#cloudflare-integration}
+# Cloudflare એકીકરણ
 
 ## અવલોકન {#overview}
 Cloudflare એક અગ્રણી સામગ્રી વિતરણ નેટવર્ક (CDN) અને સુરક્ષા પ્રદાતા છે, જે વેબસાઇટોને સુરક્ષિત અને ઝડપી બનાવવામાં મદદ કરે છે. આ એકીકરણ Ultimate Multisite અને Cloudflare વચ્ચે સ્વચાલિત ડોમેન વ્યવસ્થાપન સક્ષમ કરે છે, ખાસ કરીને સબડોમેન multisite સ્થાપનો માટે.

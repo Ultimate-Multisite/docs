@@ -3,7 +3,7 @@ title: Å bygge en tilpasset registrar-integrasjon
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bygge en tilpasset registrator-integrasjon {#building-a-custom-registrar-integration}
+# Bygge en tilpasset registrator-integrasjon
 
 Domain Seller-tillegg bruker et **Integration Registry**-mønster. Hver registrator er en PHP-klasse som implementerer `Domain_Selling_Capability` og registrerer seg via `wu_domain_seller_register_capabilities` action hook.
 

@@ -3,7 +3,7 @@ title: Afrekenformulieren
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkoutformulieren {#checkout-forms}
+# Checkoutformulieren
 
 Checkoutformulieren zijn een eenvoudige en flexibele manier om te experimenteren met verschillende benaderingen wanneer je nieuwe klanten probeert te converteren.
 

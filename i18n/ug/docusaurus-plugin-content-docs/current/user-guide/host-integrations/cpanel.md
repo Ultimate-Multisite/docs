@@ -3,7 +3,7 @@ title: cPanel تكامل
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ایگتراسیون (Integration) {#cpanel-integration}
+# cPanel ایگتراسیون (Integration)
 
 ## مروری (Overview) {#overview}
 cPanel اینترنت هاستینگ پرکاربردترین کنترل پنل وب است که توسط بسیاری از ارائه‌دهندگان هاست اشتراکی و اختصاصی استفاده می‌شود. این یکپارچه‌سازی باعث می‌شود Ultimate Multisite و cPanel بین دامنه‌ها به صورت خودکار همگام شوند، به طوری که شما بتوانید آدرس‌های جایگزین (aliases) و زیردامنه‌ها را به طور خودکار به حساب cPanel خود اضافه کنید.

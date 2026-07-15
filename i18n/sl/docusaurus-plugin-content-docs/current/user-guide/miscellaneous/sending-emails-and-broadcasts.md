@@ -3,7 +3,7 @@ title: Pošiljanje e-poštnih sporočil in razpošiljanj
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Pošiljanje e-poštnih sporočil in Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
+# Pošiljanje e-poštnih sporočil in Broadcasts (v2)
 
 _**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 

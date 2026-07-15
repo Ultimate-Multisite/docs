@@ -3,7 +3,7 @@ title: Hooklar salgylanmasy
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks salgylanmasy {#hooks-reference}
+# Hooks salgylanmasy
 
 Ultimate Multisite-däki ähli **59 amal** we **118 süzgüç** üçin awtomatiki döredilen resminamalar.
 

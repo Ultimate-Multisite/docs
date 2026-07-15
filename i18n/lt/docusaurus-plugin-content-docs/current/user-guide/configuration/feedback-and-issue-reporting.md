@@ -3,7 +3,7 @@ title: Klientų atsiliepimai ir problemų pranešimas
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klientų atsiliepimai ir problemų pranešimas {#customer-feedback--issue-reporting}
+# Klientų atsiliepimai ir problemų pranešimas
 
 Gratis AI Agent v1.5.0 įdalo įdaila įtrauktą sistemą, kuri leidžia vartotojams pateikti atsiliepimus ir pranešti apie problemas tiesiogiai iš čatis antraukimo svetainės. Ši sistema apima sutikimų valdymą, automatinį pranešimo komandą ir AI pagalba su triagavimu backend'e.
 

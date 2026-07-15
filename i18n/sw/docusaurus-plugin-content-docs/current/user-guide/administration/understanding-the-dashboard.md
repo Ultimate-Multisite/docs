@@ -3,7 +3,7 @@ title: Kuelewa Dashibodi
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Kuelewa Dashibodi ya Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Kuelewa Dashibodi ya Ultimate Multisite
 
 Kabla ya kuingia kwa undani zaidi katika chaguo za usanidi wa hali ya juu na uendeshaji wa Ultimate Multisite, hebu tuangalie dashibodi.
 

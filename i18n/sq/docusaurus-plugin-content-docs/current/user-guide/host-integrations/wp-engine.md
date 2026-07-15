@@ -3,7 +3,7 @@ title: Integrimi me WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrimi me WP Engine {#wp-engine-integration}
+# Integrimi me WP Engine
 
 ## Përmbledhje {#overview}
 WP Engine është një platformë premium menaxhimi hosting WordPress që ofron performancë të optimizuar, sigurinë dhe skalueshmëri për faqe WordPress. Kjo integrim lejon sinkronizimin automatik të domenit midis Ultimate Multisite dhe WP Engine.

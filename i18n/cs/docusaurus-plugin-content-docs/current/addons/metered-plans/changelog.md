@@ -3,7 +3,7 @@ title: Změny v plánu měření
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Změnový deník plánů s měřením {#metered-plans-changelog}
+# Změnový deník plánů s měřením
 
 Verze 1.1.0 - Uvedeno dne 2026-05-05
 - Nové: Fakturace AI tokenů pro multisite podstránky – sleduje a fakturuje využití AI tokenů napříč zákaznickými stránkami s konfigurovatelnými sazby za token

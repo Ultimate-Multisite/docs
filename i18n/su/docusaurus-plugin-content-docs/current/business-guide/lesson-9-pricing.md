@@ -3,7 +3,7 @@ title: 'Palajaran 9: Nangtukeun Harga pikeun Kauntungan'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Palajaran 9: Harga pikeun Kauntungan {#lesson-9-pricing-for-profit}
+# Palajaran 9: Harga pikeun Kauntungan
 
 Dina Palajaran 5 urang netepkeun harga awal pikeun rencana FitSite. Ayeuna urang nyaluyukeun deui strategi harga ku téknik anu ningkatkeun panghasilan, ngadorong pamutahiran, jeung ngurangan churn.
 

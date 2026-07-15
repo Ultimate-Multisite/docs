@@ -4,7 +4,7 @@ title: 操作 - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# 动作: set_logged_in_cookie {#action-setloggedincookie}
+# 动作: set_logged_in_cookie
 
 在设置已登录身份验证 cookie 之前立即触发。
 

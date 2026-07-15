@@ -4,7 +4,7 @@ title: Filter - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Filter: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Filter: wu_current_set_membership
 
 ડેવલપર્સને ડિફોલ્ટ વર્તણૂક (default behavior) બદલવા અને વર્તમાન સભ્યપદ (current membership) અલગ રીતે સેટ કરવાની મંજૂરી આપે છે.
 

@@ -3,7 +3,7 @@ title: Persyaratan
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Persyaratan Ultimate Multisite {#ultimate-multisite-requirements}
+# Persyaratan Ultimate Multisite
 
 Hal pertama yang mungkin Anda tanyakan sebelum membeli Ultimate Multisite adalah apa saja persyaratan untuk menjalankan plugin kami. Untungnya, hanya ada beberapa persyaratan dasar untuk menjalankan Ultimate Multisite: **nama domain**, **penyedia hosting** yang bagus, dan instalasi WordPress **Multisite**. Itu saja yang Anda butuhkan!
 

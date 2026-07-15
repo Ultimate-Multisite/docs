@@ -3,7 +3,7 @@ title: کومړenziل شوي پوښتنې
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# متداولیا سوالونه (Frequently Asked Questions) {#frequently-asked-questions}
+# متداولیا سوالونه (Frequently Asked Questions)
 
 دلته همدا هغه **متداولیا سوالونه** دي چې په مرسته غوښتنو کې ډېر پوښتل کیږي.
 

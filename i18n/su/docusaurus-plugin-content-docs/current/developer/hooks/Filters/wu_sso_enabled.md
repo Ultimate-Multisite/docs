@@ -4,7 +4,7 @@ title: Saringan - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Saringan: wu_sso_enabled {#filter-wussoenabled}
+# Saringan: wu_sso_enabled
 
 Aktipkeun/nonaktipkeun kamampuhan asup sakali lintas-domain.
 

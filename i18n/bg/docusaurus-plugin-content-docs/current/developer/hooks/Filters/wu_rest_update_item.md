@@ -4,7 +4,7 @@ title: Филтър - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Филтър: wu_rest_update_item {#filter-wurestupdateitem}
+# Филтър: wu_rest_update_item
 
 Определя дали заявката може да продължи или трябва да бъде прекъсната.
 

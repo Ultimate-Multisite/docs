@@ -4,7 +4,7 @@ title: Acció - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Aquesta acció: wu_cart_setup {#action-wucartsetup}
+# Aquesta acció: wu_cart_setup
 
 Permet als desenvolupadors fer modificacions addicionals a l'objecte de càrrega (checkout).
 

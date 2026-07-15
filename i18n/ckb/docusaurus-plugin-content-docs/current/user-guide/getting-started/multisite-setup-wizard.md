@@ -3,7 +3,7 @@ title: سەرچاوەگرنی سیستەمی چەندین شوێن
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# سیستمی Multisite تنظیمکرد {#multisite-setup-wizard}
+# سیستمی Multisite تنظیمکرد
 
 Ultimate Multisite شامل یک ویزارد داخلی است که نصب استاندارد وردپرس را به طور خودکار به یک شبکه WordPress Multisite تبدیل می‌کند. این کار نیاز شما به ویرایش دستی فایل `wp-config.php` یا اجرای دستورات دیتابیس را از بین می‌برد.
 

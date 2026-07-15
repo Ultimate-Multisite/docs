@@ -3,7 +3,7 @@ title: Khả năng quản lý plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Khả năng Quản lý Plugin {#plugin-management-abilities}
+# Khả năng Quản lý Plugin
 
 Gratis AI Agent v1.5.0 đi kèm với **7 khả năng quản lý plugin** mà trợ lý AI có thể gọi trong quá trình trò chuyện. Các khả năng này cung cấp khả năng kiểm soát lập trình đối với các plugin WordPress được cài đặt thông qua [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

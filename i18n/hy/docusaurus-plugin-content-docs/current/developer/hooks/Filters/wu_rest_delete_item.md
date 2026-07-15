@@ -4,7 +4,7 @@ title: Զտիչ - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Զտիչ: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Զտիչ: wu_rest_delete_item
 
 Զտում է՝ թույլատրվո՞ւմ է շարունակել հարցումը, թե ոչ։
 

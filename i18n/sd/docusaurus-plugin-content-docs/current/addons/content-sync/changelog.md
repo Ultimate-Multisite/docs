@@ -3,7 +3,7 @@ title: مواد هم وقت سازي تبديلين جو لاگ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# مواد هم وقت سازي تبديلي نامو {#content-sync-changelog}
+# مواد هم وقت سازي تبديلي نامو
 
 ### نسخو 1.1.0 - 2025-12-31 تي جاري ٿيو {#version-110---released-on-2025-12-31}
 * نئون: سڀني post قسمن جي هم وقت سازي لاءِ سهائتا (posts، pages، custom post types)

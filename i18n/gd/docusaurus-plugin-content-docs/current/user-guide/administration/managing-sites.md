@@ -3,7 +3,7 @@ title: Ceannachadh Sitean
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Site a' Chùineachadh {#managing-sites}
+# Site a' Chùineachadh
 
 Tha sites (nawusitean) gu làidhinn a bhith na chùineadh de dhòchas a tha thu a' ghairm WaaS. Tha Ultimate Multisite de dhach ùir sitean:
 

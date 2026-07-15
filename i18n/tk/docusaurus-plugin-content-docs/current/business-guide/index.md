@@ -3,7 +3,7 @@ title: Nişa web saýt biznesini guruň
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite bilen nişa websaýt biznesini guruň {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite bilen nişa websaýt biznesini guruň
 
 Websaýt satmaga synanyşýan adamlaryň köpüsi bahada Wix, Squarespace we müňlerçe freelancer bilen bäsleşýär. Olar ýeňilýär. Ýeňýänler bolsa anyk bir auditoriýany saýlaýar, şol auditoriýa laýyk çözgüt gurýar we ýetirýän gymmaty üçin töleg alýar.
 

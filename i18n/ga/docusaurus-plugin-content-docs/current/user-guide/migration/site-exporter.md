@@ -3,7 +3,7 @@ title: Exporter Site
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Exporter Síneadh {#site-exporter}
+# Exporter Síneadh
 
 Is feidhm seo ag cur chuim **Site Exporter**.
 

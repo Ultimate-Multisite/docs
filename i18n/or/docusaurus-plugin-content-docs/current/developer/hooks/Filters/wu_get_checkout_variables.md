@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# ଫିଲ୍ଟର୍: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# ଫିଲ୍ଟର୍: wu_get_checkout_variables
 
 plugin ବିକାଶକମାନଙ୍କୁ checkout ପୃଷ୍ଠାର ପୂର୍ବ-ନିର୍ଦ୍ଧାରିତ ସେଟ୍‌ଗୁଡ଼ିକୁ ଫିଲ୍ଟର୍ କରିବାକୁ ଦିଏ।
 

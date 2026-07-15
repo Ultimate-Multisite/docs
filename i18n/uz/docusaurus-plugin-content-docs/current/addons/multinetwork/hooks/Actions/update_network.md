@@ -4,7 +4,7 @@ title: Amal - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Amal: update_network {#action-updatenetwork}
+# Amal: update_network
 
 Mavjud tarmoq yangilangandan keyin ishga tushadi.
 

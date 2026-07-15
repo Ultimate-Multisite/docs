@@ -4,7 +4,7 @@ title: Igikorwa - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Igikorwa: wu_page_added {#action-wupageadded}
+# Igikorwa: wu_page_added
 
 Yemerera abategura plugin gukoresha ibindi bintu igihe paji zandikwa.
 

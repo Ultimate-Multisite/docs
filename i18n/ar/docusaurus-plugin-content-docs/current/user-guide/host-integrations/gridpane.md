@@ -3,7 +3,7 @@ title: تكامل GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# تكامل GridPane {#gridpane-integration}
+# تكامل GridPane
 
 ## نظرة عامة {#overview}
 GridPane هو لوحة تحكم استضافة WordPress متخصصة مصممة للمهنيين الجادين في WordPress. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite و GridPane.

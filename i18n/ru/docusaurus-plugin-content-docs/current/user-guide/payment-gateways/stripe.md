@@ -3,7 +3,7 @@ title: Настройка Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Настройка шлюза Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Настройка шлюза Stripe (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 

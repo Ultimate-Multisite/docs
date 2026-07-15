@@ -3,7 +3,7 @@ title: Paglilibot sa Panel ng Admin
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Paglilibot sa Admin Panel {#touring-the-admin-panel}
+# Paglilibot sa Admin Panel
 
 Nilalayon ng Ultimate Multisite na maging kasing-simple at kasing-linaw hangga't maaari, ngunit sa ganito kalakas na kasangkapan, makatutulong ang may gabay na paglilibot. Talakayin natin ang mga admin page para matulungan kang maging pamilyar.
 

@@ -3,7 +3,7 @@ title: REST API கண்ணோட்டம்
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API குறிப்பு {#rest-api-reference}
+# REST API குறிப்பு
 
 ## அடிப்படை கட்டமைப்பு {#base-configuration}
 

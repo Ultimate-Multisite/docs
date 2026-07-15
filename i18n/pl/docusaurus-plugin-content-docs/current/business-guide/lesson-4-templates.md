@@ -3,7 +3,7 @@ title: 'Lekcja 4: Tworzenie szablonów niszowych'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcja 4: Tworzenie szablonów niszowych {#lesson-4-building-niche-templates}
+# Lekcja 4: Tworzenie szablonów niszowych
 
 Szablony stanowią rdzeń Twojej oferty dla niszowej grupy klientów. Właściciel studia fitness, który rejestruje się i widzi stronę, która już wygląda jak strona studia fitness — z grafikami zajęć, profilami trenerów i odpowiednią kolorystyką — jest znacznie bardziej skłonny zostać, niż ten, który widzi pustą kartę.
 

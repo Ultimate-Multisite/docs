@@ -3,7 +3,7 @@ title: זרימת קליטת משתמשים בבונה תבניות
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# תהליך הדרכה של בונה התבניות (Theme Builder Onboarding Flow) {#theme-builder-onboarding-flow}
+# תהליך הדרכה של בונה התבניות (Theme Builder Onboarding Flow)
 
 Superdav AI Agent v1.12.0 מציג **תהליך הדרכה של בונה התבניות** (Theme Builder onboarding flow) המלווה אותך וסופר לך ליצור תבנית בלוק מותאמת אישית במהלך ההגדרה הראשונית. זה מחליף את מצב ה-Site Builder הישן בגישה גמישה יותר, המונעת על ידי סוכן (Agent).
 

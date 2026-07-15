@@ -4,7 +4,7 @@ title: फिल्टर - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Filter: wu_pre_save_settings {#filter-wupresavesettings}
+# Filter: wu_pre_save_settings
 
 Ultimate Multisite द्वारे सेव्ह करण्यापूर्वी सेटिंग्स फिल्टर करण्याची सोय डेव्हलपर्सना मिळते.
 

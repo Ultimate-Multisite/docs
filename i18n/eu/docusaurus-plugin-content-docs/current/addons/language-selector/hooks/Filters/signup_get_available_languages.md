@@ -4,7 +4,7 @@ title: Iragazkia - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Iragazkia: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Iragazkia: signup_get_available_languages
 
 Front-end guneko izen-emateetarako erabilgarri dauden hizkuntzen zerrenda iragazten du.
 

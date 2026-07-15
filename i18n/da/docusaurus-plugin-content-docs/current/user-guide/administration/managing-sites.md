@@ -3,7 +3,7 @@ title: Administrere sider
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Administrering sider {#managing-sites}
+# Administrering sider
 
 Sider (eller subsider) er kernen i din WaaS-forretning. Ultimate Multisite har 3 typer sider:
 

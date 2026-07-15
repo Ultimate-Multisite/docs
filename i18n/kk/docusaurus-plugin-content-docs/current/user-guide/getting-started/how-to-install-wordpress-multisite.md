@@ -3,7 +3,7 @@ title: WordPress Multisite-ты қалай орнату керек
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-ты қалай орнатуға болады? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite-ты қалай орнатуға болады?
 
 WordPress Multisite арқылы бір орнатуда сайттардың желісін құруға боласыз. Бұл стандартты функция, бірақ ол боджетінен қосылмаған.
 
@@ -57,7 +57,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# добавить завершающий слэш к /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# добавить завершающий слэш к /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

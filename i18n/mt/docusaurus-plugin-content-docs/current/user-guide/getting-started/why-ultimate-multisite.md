@@ -3,7 +3,7 @@ title: Appuntament għall-Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Perché Ultimate Multisite {#why-ultimate-multisite}
+# Perché Ultimate Multisite
 
 Se ti sei arrivat' a questo articolo, probabilmente hai sentito che il nostro plugin potrebbe essere la soluzione per realizzare la tua idea di business. Speriamo tu abbia le risposte di cui hai bisogno alla fine di questo testo.
 

@@ -3,7 +3,7 @@ title: マルチサイト設定ウィザード
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# マルチサイトセットアップウィザード {#multisite-setup-wizard}
+# マルチサイトセットアップウィザード
 
 Ultimate Multisite には、標準の WordPress インストールを自動的に WordPress マルチサイトネットワークに変換する組み込みウィザードが含まれています。これにより、`wp-config.php` を手動で編集したり、データベースコマンドを実行したりする必要がなくなります。
 

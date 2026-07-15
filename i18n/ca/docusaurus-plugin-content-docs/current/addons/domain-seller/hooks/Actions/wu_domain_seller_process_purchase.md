@@ -4,7 +4,7 @@ title: Acció - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Acció: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Acció: wu_domain_seller_process_purchase
 
 S'executa quan es processa una compra de domini després de completar el pagament.
 

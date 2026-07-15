@@ -3,7 +3,7 @@ title: Paglikha ng Iyong Unang Produktong Pang-suskripsyon
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Paglikha ng Iyong Unang Produkto ng Suskripsiyon (v2) {#creating-your-first-subscription-product-v2}
+# Paglikha ng Iyong Unang Produkto ng Suskripsiyon (v2)
 
 _**MAHALAGANG TALA: Ang artikulong ito ay para lamang sa mga gumagamit ng Ultimate Multisite bersyon 2.x. Kung gumagamit ka ng bersyon 1.x,**_ **_**tingnan ang artikulong ito**_**.
 

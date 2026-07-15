@@ -4,7 +4,7 @@ title: Filtrs - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filtrs: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Filtrs: wu_magic_links_enabled
 
 Filtrē, vai maģiskās saites ir iespējotas.
 

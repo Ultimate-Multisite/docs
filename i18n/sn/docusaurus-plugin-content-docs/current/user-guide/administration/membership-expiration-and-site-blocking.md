@@ -3,7 +3,7 @@ title: Kugara kweMufudzi neKupanga Mufudzi
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kufungurwa kweMubvunzo neKupara Kuita Site {#membership-expiration-and-site-blocking}
+# Kufungurwa kweMubvunzo neKupara Kuita Site
 
 Ikhasi le chitsanidi chinokubatsira kuona sei Ultimate Multisite inozvifungurwa kwekubvunza (membership expiration), kupara kwetrial, uye kupara kwemweya (frontend site blocking). Inooneka nzira yakaita kubva kune mubvunzo wakachivimbika kunze kuvhi chine kufungurwa, zvinhu zvinoregeredza kuti sites dziri kupera sei, uye zvinhu dzinogona kuona kana sites dziri kuita zvinhu panguva mubvunzo wacho uchivimbika.
 

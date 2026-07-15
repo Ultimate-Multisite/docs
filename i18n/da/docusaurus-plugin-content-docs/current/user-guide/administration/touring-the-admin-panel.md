@@ -3,7 +3,7 @@ title: Gennemgang af administrationspanelet
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Gennemgang af Admin-panelet {#touring-the-admin-panel}
+# Gennemgang af Admin-panelet
 
 Ultimate Multisite sigter mod at være så simpelt og selvforklarende som muligt, men med et så kraftfuldt værktøj kan det hjælpe med en guidet tur. Lad os gå igennem de administrative sider for at hjælpe dig med at komme godt i gang.
 

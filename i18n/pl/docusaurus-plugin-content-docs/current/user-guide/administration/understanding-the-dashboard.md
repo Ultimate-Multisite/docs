@@ -3,7 +3,7 @@ title: Zrozumienie Panelu głównego
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Poznaj panel Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Poznaj panel Ultimate Multisite
 
 Zanim przejdziemy do bardziej zaawansowanych opcji konfiguracji i aspektów operacyjnych Ultimate Multisite, przyjrzyjmy się panelowi.
 

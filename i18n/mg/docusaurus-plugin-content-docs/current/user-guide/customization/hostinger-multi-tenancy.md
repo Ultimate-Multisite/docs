@@ -3,7 +3,7 @@ title: Multi-Tenancy an'ny Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-Tenancy an' Hostinger {#hostinger-multi-tenancy}
+# Multi-Tenancy an' Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia mampisana fahaizana multi-tenancy an' Hostinger, izay ahafahana manao fanomezana tenant sovereignty (tenant manokana) miaraka amin'ny fandraisana anjara ao amin'ny fandaminana domain anananareo efa misy.
 

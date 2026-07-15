@@ -4,7 +4,7 @@ title: Hohenga - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Mahinga: add_user_to_blog {#action-addusertoblog}
+# Mahinga: add_user_to_blog
 
 Ka whakaoho inamata i muri tonu i te tāpirihanga o tētahi kaiwhakamahi ki tētahi pae.
 

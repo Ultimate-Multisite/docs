@@ -4,7 +4,7 @@ title: පෙරහන - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# පෙරහන: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# පෙරහන: wp_ultimo_skip_network_active_check
 
 සංවර්ධකයන්ට ජාල සක්‍රියකරණ පරීක්ෂාව කෙටි මඟින් මඟහැරීමට ඉඩ දෙයි.
 

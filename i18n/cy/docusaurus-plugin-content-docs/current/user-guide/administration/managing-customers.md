@@ -3,7 +3,7 @@ title: Cyfathrebu Claint
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Cyfathri'r Clientionau (Managing Customers) {#managing-customers}
+# Cyfathri'r Clientionau (Managing Customers)
 
 Mae'r dudalen **Customers** yn dangos y rheol o gyflwyniadau a gynnwys y chwaraeon a roedd wedi cael eu cyflwyno mewn rhwydwaith eich. Mae'r dudalen hwn yn dangos wybodaeth bawbol yn unig, gan gynnwys enw, adran e-bost, cyfyngeddiad diwethaf, a link **switch to** sydd â'n gallwch log in i'r subsite ychwanegol fel administrator o'r safle.
 

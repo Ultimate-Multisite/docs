@@ -3,7 +3,7 @@ title: AffiliateWP Nhoroondo yeshanduko
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Nhoroondo yeshanduko {#affiliatewp-changelog}
+# AffiliateWP Nhoroondo yeshanduko
 
 Vhezheni: 2.0.1 - Yakaburitswa musi wa2025-09-28
 

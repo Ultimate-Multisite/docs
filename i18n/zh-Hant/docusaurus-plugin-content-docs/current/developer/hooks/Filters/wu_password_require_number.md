@@ -4,7 +4,7 @@ title: 過濾器 - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# 過濾器：wu_password_require_number {#filter-wupasswordrequirenumber}
+# 過濾器：wu_password_require_number
 
 用於篩選是否需要密碼中包含數字。
 

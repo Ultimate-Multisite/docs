@@ -3,7 +3,7 @@ title: Xa Emails thiab Kev Tshaj Tawm
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Xa Emails thiab Kev Tshaj Tawm (v2) {#sending-emails-and-broadcasts-v2}
+# Xa Emails thiab Kev Tshaj Tawm (v2)
 
 _**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 

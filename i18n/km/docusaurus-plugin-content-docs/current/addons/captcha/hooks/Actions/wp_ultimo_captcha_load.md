@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_captcha_load
 sidebar_label: wp_ultimo_captcha_load
 _i18n_hash: 14194b2891bc361afbbd1c4b99e5da23
 ---
-# សកម្មភាព៖ wp_ultimo_captcha_load {#action-wpultimocaptchaload}
+# សកម្មភាព៖ wp_ultimo_captcha_load
 
 ត្រូវបានបើកដំណើរការ នៅពេល dependencies ទាំងអស់ត្រូវបានផ្ទុករួច។
 

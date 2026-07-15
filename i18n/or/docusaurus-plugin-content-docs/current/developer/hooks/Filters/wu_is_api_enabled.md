@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# ଫିଲ୍ଟର: wu_is_api_enabled {#filter-wuisapienabled}
+# ଫିଲ୍ଟର: wu_is_api_enabled
 
 plugin ବିକାଶକମାନଙ୍କୁ API ପାଇଁ ନିର୍ଦ୍ଦିଷ୍ଟ ଅବସ୍ଥା ବାଧ୍ୟତାମୂଳକ କରିବାକୁ ଦିଅନ୍ତୁ।
 

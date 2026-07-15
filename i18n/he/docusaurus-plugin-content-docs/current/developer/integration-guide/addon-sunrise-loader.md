@@ -3,7 +3,7 @@ title: תוסף Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# מטען קבצי Sunrise של Addon {#addon-sunrise-file-loader}
+# מטען קבצי Sunrise של Addon
 
 Ultimate Multisite 2.8.0 מוסיף מטען הרחבה (extension loader) של sunrise עבור Addons ואינטגרציות מותאמות אישית של MU-plugin שצריכות לרוץ במהלך שלב האתחול (bootstrapping) של WordPress sunrise, מבלי שיהיה צורך לערוך את הקובץ `wp-content/sunrise.php` שנוצר.
 

@@ -4,7 +4,7 @@ title: Sivana - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Sivana: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Sivana: wu_is_development_mode
 
 Avelao ny mpamorona fanitarana hanampy fitsapana fanampiny ho an'ny maody fampivoarana.
 

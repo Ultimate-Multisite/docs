@@ -3,7 +3,7 @@ title: Στοιχεία Chuck Norris - Κατάλογος Αλλαγών
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Κατάλογος αλλαγών Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Κατάλογος αλλαγών Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Προστέθηκε: Αυτόματη λειτουργία ενημέρωσης μέσω του Ultimate Multisite update server

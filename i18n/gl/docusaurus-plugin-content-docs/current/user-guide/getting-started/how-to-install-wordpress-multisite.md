@@ -3,7 +3,7 @@ title: Como instalar WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Como instalo WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Como instalo WordPress Multisite?
 
 WordPress Multisite permite tener unha rede de sitios en unha única instalación. É unha característica integrada, pero non está activa por defecto.
 

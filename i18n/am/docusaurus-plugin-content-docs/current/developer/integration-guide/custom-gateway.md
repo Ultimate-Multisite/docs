@@ -3,7 +3,7 @@ title: ብጁ ጌትዌይ ልማት
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ብጁ Gateway ልማት {#custom-gateway-development}
+# ብጁ Gateway ልማት
 
 `Base_Gateway` classን በማስፋት ብጁ የክፍያ gateways መፍጠር ይችላሉ።
 

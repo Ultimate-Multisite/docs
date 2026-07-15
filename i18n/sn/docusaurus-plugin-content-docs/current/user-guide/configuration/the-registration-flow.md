@@ -3,7 +3,7 @@ title: Mavhiki ekugadzirwa
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Mhando Yechinjisa (v2) {#the-registration-flow-v2}
+# Mhando Yechinjisa (v2)
 
 _**CHINTO CHINTO: Iriye iyi inyandiro iriri iUltimate Multisite v2.x.**_
 

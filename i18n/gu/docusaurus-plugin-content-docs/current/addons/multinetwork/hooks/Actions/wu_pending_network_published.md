@@ -4,7 +4,7 @@ title: Action - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Action: wu_pending_network_published {#action-wupendingnetworkpublished}
+# Action: wu_pending_network_published
 
 જ્યારે કોઈ પેન્ડિંગ નેટવર્ક પ્રકાશિત (published) થાય છે, ત્યારે આ એક્શન ચાલે છે.
 

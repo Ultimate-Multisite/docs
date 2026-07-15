@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filter: wu_rest_delete_item
 
 ಈ ಫಿಲ್ಟರ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು ವಿನಂತಿಯೊಂದಿಗೆ ಮುಂದುವರಿಯಲು ಅನುಮತಿ ಇದೆಯೇ ಅಥವಾ ಇಲ್ಲವೇ ಎಂದು ನಿರ್ಧರಿಸಬಹುದು.
 

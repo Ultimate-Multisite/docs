@@ -3,7 +3,7 @@ title: Håndtering af betalinger og fakturaer
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Administrering betalinger og fakturaer {#managing-payments-and-invoices}
+# Administrering betalinger og fakturaer
 
 ## Betalingsindstillinger {#payment-settings}
 

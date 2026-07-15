@@ -3,7 +3,7 @@ title: Àwọn Agbára Ìṣàkóso Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Àwọn Agbára Ìṣàkóso Àfikún {#plugin-management-abilities}
+# Àwọn Agbára Ìṣàkóso Àfikún
 
 Gratis AI Agent v1.5.0 wá pẹ̀lú **àwọn agbára ìṣàkóso àfikún 7** tí olùrànlọ́wọ́ AI lè pè nígbà ìjíròrò. Àwọn agbára wọ̀nyí ń pèsè ìṣàkóso pẹ̀lú eto lórí àwọn àfikún WordPress tí a fi sori ẹrọ nípasẹ̀ [Eto Kíkọ Àfikún & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

@@ -3,7 +3,7 @@ title: Tomara guherînan a planên bi pîvan
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Guherînên Metered Plans {#metered-plans-changelog}
+# Guherînên Metered Plans
 
 Guherto 1.1.0 - Di 2026-05-05 de hat berdan
 - Nû: Hesabkirina AI token ji bo binkarên multisite — şopandin û hesabkirina bikaranîna AI token li ser siteyên mişteriyan bi rêjeyên ji bo her token ku dikarin werin sazkirin

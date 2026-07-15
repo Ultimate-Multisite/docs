@@ -3,7 +3,7 @@ title: Agen Bawaan
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Gawan {#built-in-agents}
+# Agents Gawan
 
 Gratis AI Agent v1.9.0 nggawa limang agents gawan, saben-saben wis dikonfigurasi nganggo sakumpulan tools sing fokus, system prompt sing dicocogake, lan saran wiwitan sing cocog karo tugas umum ing wilayah kuwi. Ngalih antarane agents bakal ngganti apa sing bisa ditindakake asisten lan carane asisten nanggapi — tanpa konfigurasi apa wae saka pihak sampeyan. Superdav AI Agent v1.18.0 bisa nambah tools sing ngerti jadwal, cathetan pangeling, gapura persetujuan, lan kabar SMS menyang workflow iki nalika integrasi sing gegandhengan wis dikonfigurasi.
 

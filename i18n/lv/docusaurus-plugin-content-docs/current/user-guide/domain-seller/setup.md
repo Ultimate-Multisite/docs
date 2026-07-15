@@ -3,7 +3,7 @@ title: Iestatījumi un sniedzēja konfigurācija
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domen pārdevējs: Iestatījumi un sniedzēja konfigurēšana {#domain-seller-setup-and-provider-configuration}
+# Domen pārdevējs: Iestatījumi un sniedzēja konfigurēšana
 
 Domen pārdevējs addon ietveru ar gida iestatījumus, kas palīdz jums veikt katru nepieciešamā soļu. Šajā lapā aprakstīts iestatījumu plāna plūsma un to, kā konfigurēt vai atkonfigurēt sniedzējus pēc tam.
 

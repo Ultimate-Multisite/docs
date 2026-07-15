@@ -4,7 +4,7 @@ title: Szűrő - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Szűrő: wu_rest_get_item {#filter-wurestgetitem}
+# Szűrő: wu_rest_get_item
 
 Megállapítja, hogy a kérés tovább haladhat-e, vagy meg kell állítani.
 

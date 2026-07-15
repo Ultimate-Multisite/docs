@@ -3,7 +3,7 @@ title: 'Nodarbība 11: Klientu atrašana'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# 11. nodarbība: Klientu atrašana {#lesson-11-finding-customers}
+# 11. nodarbība: Klientu atrašana
 
 Lieliska platforma bez klientiem ir tikai hobijs. Šī nodarbība apskata, kā piesaistīt klientus nišas vertikālē — stratēģijas, kas darbojas tieši tāpēc, ka koncentrējaties uz vienu nozari.
 

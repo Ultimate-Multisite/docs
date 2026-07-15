@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Action: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Action: wp_ultimo_ptm_page_list_after_title
 
 ప్లగిన్ డెవలపర్‌లు పేజీల జాబితాలో అదనపు బటన్‌లను జోడించడానికి ఇది అనుమతిస్తుంది.
 

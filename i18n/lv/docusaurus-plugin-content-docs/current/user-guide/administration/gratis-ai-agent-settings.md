@@ -3,7 +3,7 @@ title: Gratis AI Agent iestatījumi
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent iestatījumi {#gratis-ai-agent-settings}
+# Gratis AI Agent iestatījumi
 
 **Iestatījumi → Papildu** ekrāns Gratis AI Agent nodrošina administratora līmeņa konfigurāciju backend integrācijām. Šajā lapā dokumentēta atsauksmju pārsūtīšana, meklēšanas pakalpojumu sniedzēju atslēgas, pārvaldītā Superdav pakalpojuma iestatīšana, Google Calendar vadīklas, TextBee SMS iestatījumi un tīkla mēroga funkciju karodziņi.
 

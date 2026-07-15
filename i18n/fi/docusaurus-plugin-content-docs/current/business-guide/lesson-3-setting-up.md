@@ -3,7 +3,7 @@ title: 'Oppitunti 3: Verkostosi määrittäminen'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Oppitunti 3: Verkkosi määrittäminen {#lesson-3-setting-up-your-network}
+# Oppitunti 3: Verkkosi määrittäminen
 
 On aika rakentaa. Tässä oppitunnissa asennat Ultimate Multisite -laajennuksen ja määrität FitSite-verkon perustan. Jokainen päätös tehdään fitness-niche mielessä.
 

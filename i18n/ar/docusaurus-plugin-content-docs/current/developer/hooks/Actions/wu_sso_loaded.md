@@ -4,7 +4,7 @@ title: الإجراء - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# الإجراء: wu_sso_loaded {#action-wussoloaded}
+# الإجراء: wu_sso_loaded
 
 Allow plugin developers to add additional hooks, if needed.
 

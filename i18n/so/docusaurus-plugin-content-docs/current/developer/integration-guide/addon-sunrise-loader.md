@@ -3,7 +3,7 @@ title: Rarayaasha Faylka Sunrise ee Dheeraadka
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 wuxuu ku darayaa rareeye sunrise extension ah oo loogu talagalay add-ons iyo isdhexgelinno MU-plugin gaar ah oo u baahan inay socdaan inta lagu jiro WordPress sunrise bootstrapping iyada oo aan la tafatirin faylka `wp-content/sunrise.php` ee la abuuray.
 

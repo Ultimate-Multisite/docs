@@ -3,7 +3,7 @@ title: Referință setări
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referință setări {#settings-reference}
+# Referință setări
 
 Această pagină urmărește setările care afectează administrarea de zi cu zi și modificările recente de comportament în Ultimate Multisite.
 

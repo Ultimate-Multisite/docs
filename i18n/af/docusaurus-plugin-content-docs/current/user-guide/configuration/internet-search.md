@@ -3,7 +3,7 @@ title: Internetsoektog
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internetsoektog {#internet-search}
+# Internetsoektog
 
 Gratis AI Agent v1.5.0 voeg 'n **Internetsoektog**-funksie by wat die AI-assistent toelaat om op-datum inligting van die web te haal tydens 'n gesprek. Dit word aangedryf deur die [Brave Search API](https://brave.com/search/api/) of die [Tavily API](https://tavily.com/).
 

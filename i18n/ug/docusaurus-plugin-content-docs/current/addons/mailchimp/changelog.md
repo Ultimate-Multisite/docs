@@ -3,7 +3,7 @@ title: Mailchimp ئۆزگىرىشلەر خاتىرىسى
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp ئۆزگىرىش خاتىرىسى {#mailchimp-changelog}
+# Mailchimp ئۆزگىرىش خاتىرىسى
 
 نەشرى: 1.1.1 - 2025-09-28 دا ئېلان قىلىندى
 

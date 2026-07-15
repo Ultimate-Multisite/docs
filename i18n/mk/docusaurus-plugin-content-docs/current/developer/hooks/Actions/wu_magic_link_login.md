@@ -4,7 +4,7 @@ title: Дејство - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Акција: wu_magic_link_login {#action-wumagiclinklogin}
+# Акција: wu_magic_link_login
 
 Се активира откако корисник ќе биде најавен преку magic link.
 

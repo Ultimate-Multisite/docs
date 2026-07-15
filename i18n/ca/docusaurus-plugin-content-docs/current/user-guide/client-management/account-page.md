@@ -3,7 +3,7 @@ title: Pàgina Account del client
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# La pàgina Account del vostre client (v2) {#your-clients-account-page-v2}
+# La pàgina Account del vostre client (v2)
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 

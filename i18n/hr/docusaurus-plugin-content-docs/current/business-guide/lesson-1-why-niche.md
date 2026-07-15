@@ -3,7 +3,7 @@ title: 'Lekcija 1: Zašto niša pobjeđuje'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lekcija 1: Zašto niša pobjeđuje {#lesson-1-why-niche-wins}
+# Lekcija 1: Zašto niša pobjeđuje
 
 Prije nego što dotaknemo bilo koji softver, morate razumjeti zašto je izrada za određenu publiku najvažnija odluka koju ćete donijeti.
 

@@ -3,7 +3,7 @@ title: አርማ SVG ይፍጠሩ
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# የሎጎ SVG መፍጠር {#generate-logo-svg}
+# የሎጎ SVG መፍጠር
 
 የ**Generate Logo SVG** ችሎታ (ability) Theme Builder በራስ-ሰር የnamespace-safe sanitisation አማካኝነት ብጁ የሎጎ SVGዎችን በቀጥታ ወደ WordPress ድረገጃችሁ እንዲፈጥሩ እና እንዲያስገቡ ያስችላል።
 

@@ -3,7 +3,7 @@ title: Dasturchi hujjatlari
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dasturchilar hujjatlari {#developer-documentation}
+# Dasturchilar hujjatlari
 
 Ushbu qo‘llanma dasturchilarga Ultimate Multisite bilan integratsiya qilish, uni kengaytirish yoki uning uchun addonlar ishlab chiqish uchun kerak bo‘lgan barcha narsani taqdim etadi. Ultimate Multisite WordPress Multisite tarmog‘ini Website-as-a-Service (WaaS) platformasiga aylantiradi.
 

@@ -3,7 +3,7 @@ title: Export y gartref
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Export y Safl {#site-export}
+# Export y Safl
 
 Mae'r pagedd admin **Site Export** yn sylw'n gael eich rhaglenau (network administrators) i gwneud olygu un safle, neu'r holl rheol (network), i gael ei archiwio i ddefnyddio ar gyfer migraiddio, baka, neu gweithrediad trefnu.
 

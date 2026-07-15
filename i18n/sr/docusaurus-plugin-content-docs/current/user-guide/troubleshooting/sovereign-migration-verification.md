@@ -3,7 +3,7 @@ title: Verifikacija suverenskog migracije
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Provera migracije suverenog stanara {#sovereign-migration-verification}
+# Provera migracije suverenog stanara
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 uključuje WP-CLI komande za proveru pri migracijama suverenih stanara (sovereign tenant migrations). Koristite ih kada migracija stanara, poseta putem SSO ili izolirana instalacija ne funkcionišu kao što se očekuje.
 

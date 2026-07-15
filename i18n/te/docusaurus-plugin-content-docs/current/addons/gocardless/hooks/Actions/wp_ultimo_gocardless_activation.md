@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Action: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Action: wp_ultimo_gocardless_activation
 
 ప్లగిన్ యొక్క ఇతర భాగాలు యాక్టివేషన్ కోసం వాటి రొటీన్‌లను (routines) దీని ద్వారా జోడించడానికి వీలు కల్పిస్తుంది.
 

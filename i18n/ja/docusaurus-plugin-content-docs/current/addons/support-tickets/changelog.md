@@ -3,7 +3,7 @@ title: サポートチケット変更履歴
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# サポートチケット変更履歴 {#support-tickets-changelog}
+# サポートチケット変更履歴
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * 改善: vendor/ ディレクトリを Git 追跡から削除（すでに .gitignore で対象外）、リポジトリサイズを削減

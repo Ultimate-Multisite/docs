@@ -3,7 +3,7 @@ title: Te tuku īmēra me ngā pāhotanga
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Te Tuku Īmēra me ngā Pāhotanga (v2) {#sending-emails-and-broadcasts-v2}
+# Te Tuku Īmēra me ngā Pāhotanga (v2)
 
 _**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 

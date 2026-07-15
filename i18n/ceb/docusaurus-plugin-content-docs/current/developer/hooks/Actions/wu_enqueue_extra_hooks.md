@@ -4,7 +4,7 @@ title: Aksyon - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Aksyon: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Aksyon: wu_enqueue_extra_hooks
 
 Tugoti ang mga developer sa dugang nga programa nga makadugang og dugang nga mga hook
 

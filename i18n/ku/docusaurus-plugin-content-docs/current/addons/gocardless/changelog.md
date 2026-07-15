@@ -3,7 +3,7 @@ title: Têketinên guhertinan ên GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Tomara Guhertinên GoCardless {#gocardless-changelog}
+# Tomara Guhertinên GoCardless
 
 Guherto: 1.0.3 - Hate berdan di 2026-05-05 de
 * Çareserî: Malperên li bendê yên bê xwedî niha tên paqijkirin dema ku endamtiyek GoCardless di rewşa li bendê an rawestandî de betal dibe

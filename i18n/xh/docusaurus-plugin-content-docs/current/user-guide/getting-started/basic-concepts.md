@@ -3,7 +3,7 @@ title: Iingcamango Ezisisiseko
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Iingcinga Ezisisiseko {#basic-concepts}
+# Iingcinga Ezisisiseko
 
 Kumsebenzisi omtsha we-WordPress Multisite nomntu osandula ukuqala ukusebenzisa i-Ultimate Multisite, kusenokubakho amagama namabinzana amaninzi amatsha ekufuneka uwaqonde ekuqaleni. Ukuwafunda ngumsebenzi obalulekileyo kuba kuya kufuneka uqonde iqonga nendlela elisebenza ngayo xa lilonke.
 

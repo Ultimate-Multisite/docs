@@ -4,7 +4,7 @@ title: Nzacha - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 9061f073ee77c38afc3cecfabe5edb50
 ---
-# Nzacha: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Nzacha: wp_ultimo_skip_network_active_check
 
 Kwe ka ndị mmepe mee ka nyocha a kwụsị tupu ọ gaa n'ihu.
 

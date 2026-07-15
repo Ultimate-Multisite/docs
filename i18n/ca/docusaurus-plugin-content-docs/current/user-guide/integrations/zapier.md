@@ -3,7 +3,7 @@ title: Integració amb Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integració d'Ultimate Multisite amb Zapier {#integrating-ultimate-multisite-with-zapier}
+# Integració d'Ultimate Multisite amb Zapier
 
 En un dels articles, vam parlar de [Webhooks](webhooks.md) i de com es poden utilitzar per integrar-se amb aplicacions de tercers.
 

@@ -3,7 +3,7 @@ title: Saites eksportētājs
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Vietas eksportētājs (Site Exporter) {#site-exporter}
+# Vietas eksportētājs (Site Exporter)
 
 Šī funkcija tiek sniegta ar papildu komponentu **Site Exporter**.
 

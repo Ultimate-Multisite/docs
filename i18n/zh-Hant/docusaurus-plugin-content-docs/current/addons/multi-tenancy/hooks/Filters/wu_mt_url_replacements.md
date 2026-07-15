@@ -4,7 +4,7 @@ title: 過濾器 - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# 過濾器：wu_mt_url_replacements {#filter-wumturlreplacements}
+# 過濾器：wu_mt_url_replacements
 
 用來過濾 URL 替換的對陣列。
 

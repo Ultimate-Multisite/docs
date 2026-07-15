@@ -3,7 +3,7 @@ title: 站点导出
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# 站点导出 {#site-export}
+# 站点导出
 
 **Site Export**（站点导出）管理页面允许网络管理员将单个站点或整个网络打包成可下载的归档文件，用于迁移、备份或交接工作。
 

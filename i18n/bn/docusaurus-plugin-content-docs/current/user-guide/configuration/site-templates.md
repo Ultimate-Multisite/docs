@@ -3,7 +3,7 @@ title: Site Templates
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# সাইট টেমপ্লেট (v2) {#site-templates-v2}
+# সাইট টেমপ্লেট (v2)
 
 _**নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ ২.x সম্পর্কে। আপনি যদি সংস্করণ ১.x ব্যবহার করেন,**_ **এই নিবন্ধটি দেখুন** _**।**_
 

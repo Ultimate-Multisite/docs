@@ -3,7 +3,7 @@ title: Treoir Chomhtháthaithe
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Treoir Comhtháthaithe {#integration-guide}
+# Treoir Comhtháthaithe
 
 Clúdaíonn an treoir seo patrúin choitianta comhtháthaithe le Ultimate Multisite, lena n-áirítear nascadh le seirbhísí seachtracha, geataí íocaíochta saincheaptha a thógáil, agus webhooks a láimhseáil.
 

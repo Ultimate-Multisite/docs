@@ -3,7 +3,7 @@ title: Aftësitë e Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Aftësitë e Theme Builder: Scaffolding dhe Aktivizimi i Temave me Blloqe {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Aftësitë e Theme Builder: Scaffolding dhe Aktivizimi i Temave me Blloqe
 
 Superdav AI Agent v1.12.0 prezanton dy aftësi të fuqishme që ju lejojnë të gjeneroni dhe të vendosni theme me blloqe të personalizuara direkt nga interfejsi i bisedës.
 

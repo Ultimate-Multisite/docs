@@ -3,7 +3,7 @@ title: ٹولز اور کنفیگریشن
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Tools اور Configuration {#tools-and-configuration}
+# Tools اور Configuration
 
 Theme Builder آپ کی WordPress سائٹ کا تجزیہ، ڈیزائن، اور تعمیر کرنے کے لیے Tools کا ایک مجموعہ استعمال کرتا ہے۔ ورژن 1.16.0 میں، **sd-ai-agent/site-scrape اب Tier 1 tool ہے**، جس سے یہ Theme Builder میں بطور ڈیفالٹ دستیاب ہو جاتا ہے۔ Superdav AI Agent v1.18.0 قابلِ اعتماد developer workflows کے لیے الگ سے تقسیم کیا جانے والا Advanced companion package بھی متعارف کراتا ہے؛ یہ Tools WordPress.org core package کا حصہ نہیں ہیں اور انہیں الگ سے انسٹال اور مجاز کرنا ضروری ہے۔
 

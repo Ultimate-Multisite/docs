@@ -4,7 +4,7 @@ title: 动作 - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# 动作: wu_duplicate_site {#action-wuduplicatesite}
+# 动作: wu_duplicate_site
 
 允许开发者在站点复制完成后挂钩。
 

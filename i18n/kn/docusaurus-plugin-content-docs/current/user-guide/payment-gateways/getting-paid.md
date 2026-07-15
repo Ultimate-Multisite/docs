@@ -3,7 +3,7 @@ title: ಪಾವತಿ ಪಡೆಯುವುದು
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ಪಾವತಿ ಪಡೆಯುವುದು (v2) {#getting-paid-v2}
+# ಪಾವತಿ ಪಡೆಯುವುದು (v2)
 
 _**ಮುಖ್ಯ ಟಿಪ್ಪಣಿ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಅನ್ನು ಸೂಚಿಸುತ್ತದೆ.**_
 

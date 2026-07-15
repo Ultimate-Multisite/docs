@@ -3,7 +3,7 @@ title: Ako sa dostať o pomoc
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Ako si môc help získať {#how-to-get-help}
+# Ako si môc help získať
 
 Máte platný kľúč na licenciu a s ním máte prístup do našej ekipy, ktorá vám pomôže vyriešiť problémy, ktoré sa môžu vyskytnúť počas nastavovania Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Үч-үчтүк режимге миграция
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Үчтүүчү режимге өтүү (Third-Party Mode Migration) {#third-party-mode-migration}
+# Үчтүүчү режимге өтүү (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 үчүн үчүнчү тараптык жөндөмөлөр кантип иштешин өзгөрттү. **Үчтүүчү режим азыр автоматтык түрдө иштешет**, бул WordPress 7.0+ версияларында колдонуучунун колунан конфигурациялоосуз, натив WordPress Abilities API интеграциясын ишке киргизет.
 

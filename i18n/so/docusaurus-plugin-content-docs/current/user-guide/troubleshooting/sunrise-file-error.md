@@ -3,7 +3,7 @@ title: Khaladaadka faylka Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Khaladinta faylka Sunrise-ga {#error-installing-the-sunrise-file}
+# Khaladinta faylka Sunrise-ga
 
 Faylka sunrise.php waa fayl gaar ah oo WordPress uu raadinayo marka uu isku dhafka (bootstraps) u samaynayo. Si WordPress-ka uu awoodi karo inuu ogaado faylka sunrise.php, wuxuu u baahan yahay inuu ku yaalo folder-ka **wp-content**.
 

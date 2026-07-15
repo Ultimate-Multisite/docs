@@ -3,7 +3,7 @@ title: ایک نِش ویب سائٹ کا کاروبار بنائیں
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite کے ساتھ ایک Niche Website کا کاروبار کیسے شروع کریں {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite کے ساتھ ایک Niche Website کا کاروبار کیسے شروع کریں
 
 زیادہ تر لوگ جو ویب سائٹس بیچنے کی کوشش کرتے ہیں، وہ Wix، Squarespace، اور ہزاروں فری لانسرز کے ساتھ قیمت (price) کے لحاظ سے مقابلہ کرتے ہیں۔ وہ ہار جاتے ہیں۔ جو لوگ جیتتے ہیں، وہ ایک مخصوص سامعین (specific audience) کا انتخاب کرتے ہیں، اس سامعین کے لیے ایک خاص حل تیار کرتے ہیں، اور اس قدر کی قیمت وصول کرتے جو وہ فراہم کر رہے ہیں۔
 

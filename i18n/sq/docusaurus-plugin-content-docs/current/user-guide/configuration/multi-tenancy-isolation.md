@@ -3,7 +3,7 @@ title: Izolimi i Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolimi i Multi-Tenancy {#multi-tenancy-isolation}
+# Izolimi i Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mbështet izolimin per bazë të dhënash dhe sistemish të skurtuar (filesystem) për qirësore soverane. Kjo e mban të dhënat e qirësore të veçanta ndërsa ruajmë provizimin në nivelin e rrjetit, faturimin dhe administrimin.
 

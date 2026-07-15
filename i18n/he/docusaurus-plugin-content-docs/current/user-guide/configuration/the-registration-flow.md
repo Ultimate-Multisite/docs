@@ -3,7 +3,7 @@ title: זרימת ההרשמה
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# תהליך ההרשמה (v2) {#the-registration-flow-v2}
+# תהליך ההרשמה (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסת Ultimate Multisite 2.x.**_
 

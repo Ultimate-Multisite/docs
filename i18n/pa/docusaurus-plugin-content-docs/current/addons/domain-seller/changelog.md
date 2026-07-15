@@ -3,7 +3,7 @@ title: ਡੋਮੇਨ ਵਿਕਰੇਤਾ ਤਬਦੀਲੀ ਲਾਗ
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# ਡੋਮੇਨ ਵਿਕਰੇਤਾ ਚੇਂਜਲੌਗ {#domain-seller-changelog}
+# ਡੋਮੇਨ ਵਿਕਰੇਤਾ ਚੇਂਜਲੌਗ
 
 ਵਰਜਨ 1.3.0 - 2026-06-02 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
 - ਨਵਾਂ: HostAfrica reseller ਬੈਲੈਂਸ ਬਹੁਤ ਘੱਟ ਹੋਣ ਤੇ network-admin ਚੇਤਾਵਨੀ ਜੋੜੀ

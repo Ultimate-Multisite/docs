@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Os addons amplían Ultimate Multisite con funcionalidades e integracións adicionais. A maioría dos addons son de pagamento e pódense mercar en [ultimatemultisite.com](https://ultimatemultisite.com).
 

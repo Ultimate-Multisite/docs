@@ -3,7 +3,7 @@ title: Export a Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportace a importace {#export--import}
+# Exportace a importace
 
 Ultimate Multisite 2.9.0 přidává nástroj **Exportace a importace** pro jednorázový web na stránce **Nástroje > Exportace a importace**. Použijte ho, když potřebujete zabalit jeden WordPress web jako ZIP soubor, obnovit tento ZIP, nebo přesunout web mezi kompatibilními instalacemi Ultimate Multisite a jednorázového WordPressu.
 

@@ -4,7 +4,7 @@ title: Tacewa - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Tacewa: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Tacewa: wu_minimum_password_strength
 
 Tace mafi ƙarancin ƙarfin kalmar sirri da ake buƙata (maki zxcvbn).
 

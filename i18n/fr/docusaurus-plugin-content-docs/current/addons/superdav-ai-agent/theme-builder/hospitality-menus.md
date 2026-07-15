@@ -3,7 +3,7 @@ title: Menus de restauration
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus de Restauration {#hospitality-menus}
+# Menus de Restauration
 
 La fonctionnalité **Menus de Restauration** permet à Theme Builder de générer et d'intégrer des pages de menus de nourriture et de boissons structurés directement sur votre site WordPress.
 

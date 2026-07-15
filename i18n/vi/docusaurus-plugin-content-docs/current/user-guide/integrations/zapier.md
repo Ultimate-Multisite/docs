@@ -3,7 +3,7 @@ title: Tích hợp Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Tích hợp Ultimate Multisite với Zapier {#integrating-ultimate-multisite-with-zapier}
+# Tích hợp Ultimate Multisite với Zapier
 
 Trong một bài viết, chúng ta đã thảo luận về [Webhooks](webhooks.md) và cách chúng có thể được dùng để tích hợp với các ứng dụng bên thứ 3.
 

@@ -3,7 +3,7 @@ title: Integracja z Panelem Sterowania Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integracja z panelem Hestia {#hestia-control-panel-integration}
+# Integracja z panelem Hestia
 
 Ten przewodnik wyjaśnia, jak skonfigurować integrację Ultimate Multisite z Hestia, aby mapowane domeny w Twojej sieci były automatycznie dodawane (i usuwane) jako aliasy domen webowych w Hestia.
 

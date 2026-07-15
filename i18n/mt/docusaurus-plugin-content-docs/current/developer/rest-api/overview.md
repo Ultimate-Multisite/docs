@@ -3,7 +3,7 @@ title: Ħarsa ġenerali lejn REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referenza tal-REST API {#rest-api-reference}
+# Referenza tal-REST API
 
 ## Konfigurazzjoni Bażi {#base-configuration}
 

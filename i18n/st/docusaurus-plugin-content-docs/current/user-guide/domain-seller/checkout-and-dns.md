@@ -3,7 +3,7 @@ title: Tlhahlobo le Mopuo wa Leano la Morero
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field le DNS ya Mopuo a Morero BaMopuo {#checkout-field-and-customer-dns-management}
+# Checkout Field le DNS ya Mopuo a Morero BaMopuo
 
 ## Le field la Domain Selection {#the-domain-selection-checkout-field}
 

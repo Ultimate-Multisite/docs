@@ -3,7 +3,7 @@ title: Tùy chỉnh biểu mẫu đăng ký của bạn
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tùy chỉnh Biểu mẫu đăng ký của bạn {#customizing-your-registration-form}
+# Tùy chỉnh Biểu mẫu đăng ký của bạn
 
 Để làm cho mạng của bạn trông độc đáo so với tất cả các SaaS khác được xây dựng trên nền tảng WordPress, Ultimate Multisite cho phép bạn tùy chỉnh các trang đăng ký và đăng nhập bằng tính năng **Biểu mẫu thanh toán** của chúng tôi.
 

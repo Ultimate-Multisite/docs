@@ -4,7 +4,7 @@ title: Action - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Action: wu_domain_renewal_completed
 
 Domain တစ်ခု အောင်မြင်စွာ သက်တမ်းတိုးပြီးနောက် ပစ်လွှတ်သည့် action တစ်ခု ဖြစ်ပါသည်။
 

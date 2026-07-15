@@ -3,7 +3,7 @@ title: Zapier integrācija
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrācija ar Ultimate Multisite un Zapieru {#integrating-ultimate-multisite-with-zapier}
+# Integrācija ar Ultimate Multisite un Zapieru
 
 Vienā no mūsu rakstiem mēs apspriedām [Webhooks](webhooks.md) un to lietošanu integrācijās ar trešo pušu lietojumiem.
 

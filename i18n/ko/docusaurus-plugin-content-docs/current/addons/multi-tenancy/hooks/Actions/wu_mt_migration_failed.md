@@ -4,7 +4,7 @@ title: 작업 - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# 액션: wu_mt_migration_failed {#action-wumtmigrationfailed}
+# 액션: wu_mt_migration_failed
 
 마이그레이션이 실패할 때 발생합니다.
 

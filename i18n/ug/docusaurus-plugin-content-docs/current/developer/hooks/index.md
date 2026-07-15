@@ -3,7 +3,7 @@ title: ئىلمەكلەر قوللانمىسى
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks پايدىلانمىسى {#hooks-reference}
+# Hooks پايدىلانمىسى
 
 Ultimate Multisite دىكى بارلىق **59 مەشغۇلات** ۋە **118 سۈزگۈچ** ئۈچۈن ئاپتوماتىك ھاسىل قىلىنغان ھۆججەت.
 

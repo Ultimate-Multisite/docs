@@ -3,7 +3,7 @@ title: 'Lekcja 12: Prowadzenie biznesu'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcja 12: Prowadzenie Biznesu {#lesson-12-running-the-business}
+# Lekcja 12: Prowadzenie Biznesu
 
 Platforma to nie jest projekt, który się kończy – to biznes, który trzeba prowadzić. Ta lekcja omawia codzienne operacje zarządzania FitSite: wsparcie, fakturowanie, konserwację i utrzymywanie zadowolenia klientów.
 

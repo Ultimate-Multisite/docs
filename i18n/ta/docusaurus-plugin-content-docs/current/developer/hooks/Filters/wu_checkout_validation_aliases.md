@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filter: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Filter: wu_checkout_validation_aliases
 
 Plugin உருவாக்குநர்கள் படிவ சரிபார்ப்பாளரில் (form validator) தனிப்பயன் பெயர்களைச் (custom aliases) சேர்க்க இந்த ஃபில்டரை அனுமதிக்கிறது.
 

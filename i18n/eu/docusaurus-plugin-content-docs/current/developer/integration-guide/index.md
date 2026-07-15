@@ -3,7 +3,7 @@ title: Integrazio-gida
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrazio-gida {#integration-guide}
+# Integrazio-gida
 
 Gida honek Ultimate Multisite-rekin ohiko integrazio-ereduak azaltzen ditu, kanpoko zerbitzuetara konektatzea, ordainketa-pasabide pertsonalizatuak eraikitzea eta webhooks kudeatzea barne.
 

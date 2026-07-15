@@ -3,7 +3,7 @@ title: Webhook
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Fijerana ny Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Fijerana ny Webhooks (v2)
 
 _**FANAMARIHANA: Tsy ho an'ny mpampiasa manam-pahaizana avo dia ity fitaovana na lahatsoratra ity.**_
 

@@ -4,7 +4,7 @@ title: فلٹر - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# فلٹر: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
+# فلٹر: ultimate_multisite_content_sync_url
 
 ڈویلپرز کو پلگ ان کی جڑ (plugin root) کے حوالے سے نسبتی راستے (relative path) کو منظم کرنے کی اجازت دیتا ہے۔
 

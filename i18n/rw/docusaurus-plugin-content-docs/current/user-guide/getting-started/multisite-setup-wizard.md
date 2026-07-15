@@ -3,7 +3,7 @@ title: Urugero rw'Ubwuzera bw'Umuco w'Ubutumwa bwo Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Urugero mu Gutangira (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Urugero mu Gutangira (Multisite Setup Wizard)
 
 Ultimate Multisite yitera umwujaji w'umuntu (wizard) uyuhesha gukora ubushobozi bwo gutera umusaruro wa WordPress wese mu gukoresha nk'uburyo bw'Umuganda (Multisite network). Ibi bikunda ukwibuka kw'uko wumweze gukora ibyo, ntabwo ugomba gukora uburyo bwa `wp-config.php` cyangwa gukora amagambo y'urugero mu database.
 

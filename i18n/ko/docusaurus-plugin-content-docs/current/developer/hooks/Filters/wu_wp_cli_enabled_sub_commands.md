@@ -4,7 +4,7 @@ title: 필터 - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# 필터: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# 필터: wu_wp_cli_enabled_sub_commands
 
 이 엔티티에 대해 활성화된 sub_commands를 필터링합니다.
 

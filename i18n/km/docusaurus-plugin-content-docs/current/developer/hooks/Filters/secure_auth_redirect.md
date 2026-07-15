@@ -4,7 +4,7 @@ title: តម្រង - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 ច្រោះថាតើត្រូវប្រើការបញ្ជូនបន្តការផ្ទៀងផ្ទាត់សុវត្ថិភាពឬអត់។
 

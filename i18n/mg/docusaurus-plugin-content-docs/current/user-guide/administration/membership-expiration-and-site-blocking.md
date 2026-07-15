@@ -3,7 +3,7 @@ title: Faranana ny fampandrenesana sy ny fanakana ny toerana
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Faranana sy Fanakana ny Tranokala {#membership-expiration-and-site-blocking}
+# Faranana sy Fanakana ny Tranokala
 
 Ity toromarika ity dia manazava ny fomba fiasan'ny Ultimate Multisite amin'ny fampandresena ny fahaiza-manao (membership expiration), ny fiafaran'ny fanandramana (trial endings), ary ny famerana ny tranokala any an-tanàna (frontend site blocking). Manazava izany ny fiainana manomboka amin'ny fahaiza-manao mandritra ny fampandresena ka hatramin'ny fampandresena, ny fepetra mifehy raha voafetra ny tranokala, ary izay tokony ho fantatra rehefa tsy afaka miditra ao anatin'ny tranokala ianao na efa tapitra ny fahaiza-manao.
 

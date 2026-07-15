@@ -3,7 +3,7 @@ title: گواستنەوەی ئۆدای سێیەم
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration to Third-Party Mode {#third-party-mode-migration}
+# Migration to Third-Party Mode
 
 Superdav AI Agent v1.12.0 شێوازی کارکردنی تواناکانی تری (third-party) دەگۆڕێت. **مۆدی تری ئێستا بە پێی خودی (auto) دەستپێدەکات**، ئەمەش ڕێگە دەدات بۆ یەکگرتووکردنی APIی Abilitiesی وۆرسپرید لە وۆرسپرید 7.0 و بەرزتران بەبێ پێویستی تنظیماری دەستکاریکراو.
 

@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Diiwaanka Isbeddellada Content Sync {#content-sync-changelog}
+# Diiwaanka Isbeddellada Content Sync
 
 ### Nooca 1.1.0 - La sii daayay 2025-12-31 {#version-110---released-on-2025-12-31}
 * Cusub: Taageero loogu talagalay isku-xiridda dhammaan noocyada qoraallada (qoraallo, bogag, noocyo qoraal oo gaar ah)

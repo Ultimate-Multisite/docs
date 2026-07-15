@@ -3,7 +3,7 @@ title: Iomradh air Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Iomradh Hooks {#hooks-reference}
+# Iomradh Hooks
 
 Sgrìobhainnean fèin-ghinte airson nan **59 gnìomhan** agus **118 sìoltachain** uile ann an Ultimate Multisite.
 

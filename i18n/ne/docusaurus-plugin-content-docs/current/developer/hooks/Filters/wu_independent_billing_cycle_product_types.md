@@ -4,7 +4,7 @@ title: फिल्टर - wu_independent_billing_cycle_product_types
 sidebar_label: wu_independent_billing_cycle_product_types
 _i18n_hash: 2b9bd3b68a53424272c1c93c6bdc3ef5
 ---
-# फिल्टर: wu_independent_billing_cycle_product_types {#filter-wuindependentbillingcycleproducttypes}
+# फिल्टर: wu_independent_billing_cycle_product_types
 
 स्वतन्त्र billing cycle भएका product types फिल्टर गर्नुहोस्।
 

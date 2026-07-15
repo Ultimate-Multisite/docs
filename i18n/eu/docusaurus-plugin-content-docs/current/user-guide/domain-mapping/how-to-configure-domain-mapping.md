@@ -3,7 +3,7 @@ title: Nola konfiguratu domeinu-mapaketa
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Nola konfiguratu Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
+# Nola konfiguratu Domain Mapping (v2)
 
 _**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 

@@ -3,7 +3,7 @@ title: Closte-da Gün Doğuş Sabitini Belirleme
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-da Sunrise constantini true qoyish {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-da Sunrise constantini true qoyish
 
 Bazı hosting provayderleri xavfsizlik sebep bilen wp-config.php faylını bloklaydılar. Bu demakdan Ultimate Multisite, domen eşleşmesi va boshqa funksiyalar işləsin dii zarur bolgan konstantalarni qo'shish uchun faylni avtomatik tahrirlay olmaydi. Closte shunday hostlardan biridir.
 

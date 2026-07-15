@@ -4,7 +4,7 @@ title: Action - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Action: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Action: wu_mt_user_password_changed
 
 जेव्हा एखाद्या वापरकर्त्याचा (user) पासवर्ड बदलला जातो, तेव्हा हा ॲक्शन ट्रिगर होतो.
 

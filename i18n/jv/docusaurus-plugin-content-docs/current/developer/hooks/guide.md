@@ -3,7 +3,7 @@ title: Pandhuan Panggunaan Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Pandhuan Panggunaan Hooks {#hooks-usage-guide}
+# Pandhuan Panggunaan Hooks
 
 Ultimate Multisite nyedhiyakake 200+ action hooks lan 280+ filter hooks. Kaca iki ngrembug hooks sing paling umum digunakake nganggo tuladha praktis. Kanggo referensi lengkap sing digawe otomatis, telusuri kaca liya ing bagean iki.
 

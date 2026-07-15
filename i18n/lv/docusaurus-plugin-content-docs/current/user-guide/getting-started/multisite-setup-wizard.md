@@ -3,7 +3,7 @@ title: Multisīta iestatījumu palīdzības vārti
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Iestatījumu Viedoklis {#multisite-setup-wizard}
+# Multisite Iestatījumu Viedoklis
 
 Ultimate Multisite ietver ir iebūvēts viedoklis, kas automātiski pārvērš standarta WordPress instalāciju uz WordPress Multisite tīklu. Tas atrodas nepieciešamība maniski rediģēt `wp-config.php` vai veikt databāzes komandas bez nepieciežības.
 

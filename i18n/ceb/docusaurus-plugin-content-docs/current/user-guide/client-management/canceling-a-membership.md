@@ -3,7 +3,7 @@ title: Pagkansela sa Membership
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Pagkansela sa Membership (v2) {#canceling-a-membership-v2}
+# Pagkansela sa Membership (v2)
 
 _**MAHINIPIGON NGA PAHIBALO: Kini nga artikulo nagrefer sa Ultimate Multisite version 2.x.**_
 

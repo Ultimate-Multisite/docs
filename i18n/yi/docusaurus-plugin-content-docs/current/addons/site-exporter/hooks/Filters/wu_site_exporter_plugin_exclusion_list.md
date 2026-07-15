@@ -4,7 +4,7 @@ title: פֿילטער - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# פֿילטער: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# פֿילטער: wu_site_exporter_plugin_exclusion_list
 
 דערמעגלעכט דעוועלאָפּערס צו פירן אַ פּלאַגין־רשימה וואָס מע קען אויסשליסן פֿון דער גענערירטער zip.
 

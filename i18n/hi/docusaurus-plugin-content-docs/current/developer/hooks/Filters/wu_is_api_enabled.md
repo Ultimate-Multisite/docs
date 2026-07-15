@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# फ़िल्टर: wu_is_api_enabled {#filter-wuisapienabled}
+# फ़िल्टर: wu_is_api_enabled
 
 प्लगइन डेवलपर्स को API के लिए एक निश्चित स्थिति (state) को लागू करने की अनुमति देता है।
 

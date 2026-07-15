@@ -3,7 +3,7 @@ title: Còd Snipeannach
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets airson v2 {#code-snippets-for-v2}
+# Code Snippets airson v2
 
 Gach code snippet airson **WordPress** a' bhainean a tha a' chuidich eadar-dhearg a tha thuig a thgoinneamh. Mar sin, tha sinn a' chleachdadh an code snippets seo anns am fhadraidh de WordPress (a thàinig an fhathair functions.php de thiamh agad) no faicinn a' chleachdadh mar MU plugin.
 

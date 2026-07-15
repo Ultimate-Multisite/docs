@@ -4,7 +4,7 @@ title: کړنه - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# عمل: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# عمل: wu_domain_seller_process_purchase
 
 هغه مهال چلېږي کله چې د checkout بشپړېدو وروسته د domain پېرودنه پروسس کېږي.
 

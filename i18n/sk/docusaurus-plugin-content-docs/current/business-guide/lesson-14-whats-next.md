@@ -3,7 +3,7 @@ title: 'Lekcia 14: Čo bude ďalej'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekcia 14: Čo príde ďalej {#lesson-14-what-comes-next}
+# Lekcia 14: Čo príde ďalej
 
 Vybudovali ste špecializovanú platformu webových stránok od základov. FitSite je spustený, slúži fitness štúdiám a generuje opakované príjmy. Táto záverečná lekcia sa venuje tomu, kam sa odtiaľto posunúť.
 

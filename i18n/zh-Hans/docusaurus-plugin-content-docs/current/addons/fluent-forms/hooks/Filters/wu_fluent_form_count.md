@@ -4,7 +4,7 @@ title: 过滤 - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# 过滤器: wu_fluent_form_count {#filter-wufluentformcount}
+# 过滤器: wu_fluent_form_count
 
 允许插件开发者更改表单计数总数
 

@@ -3,7 +3,7 @@ title: Qo‘lda to‘lovlarni sozlash
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Qo‘lda to‘lovlarni sozlash (v2) {#setting-up-manual-payments-v2}
+# Qo‘lda to‘lovlarni sozlash (v2)
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga taalluqli.**_
 

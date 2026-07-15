@@ -4,7 +4,7 @@ title: Handling - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Handling: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Handling: wp_ultimo_vat_deactivation
 
 Lad andre dele af pluginet tilknytte deres rutiner for deaktivering
 

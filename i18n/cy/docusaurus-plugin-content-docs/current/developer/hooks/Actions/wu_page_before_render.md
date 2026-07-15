@@ -4,7 +4,7 @@ title: Gweithred - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Gweithred: wu_page_before_render {#action-wupagebeforerender}
+# Gweithred: wu_page_before_render
 
 Caniatáu i ddatblygwyr plugin ychwanegu cynnwys ychwanegol cyn i ni argraffu’r dudalen.
 

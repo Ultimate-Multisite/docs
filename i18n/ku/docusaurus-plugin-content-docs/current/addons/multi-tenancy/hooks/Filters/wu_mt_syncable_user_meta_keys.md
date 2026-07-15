@@ -4,7 +4,7 @@ title: Parzûn - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Parzûn: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Parzûn: wu_mt_syncable_user_meta_keys
 
 Lîsteya mifteyên meta yên bikarhênerê ku divê bi girêkên dûr re bêne hevdemkirin parzûn dike.
 

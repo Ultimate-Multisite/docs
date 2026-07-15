@@ -3,7 +3,7 @@ title: Ii-Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Ukujonga Okokuqala kwi-Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Ukujonga Okokuqala kwi-Webhooks (v2)
 
 _**QAPHELA: Qaphela ukuba eli nqaku okanye eli nqaku lolabasebenzisi abaphambili.**_
 

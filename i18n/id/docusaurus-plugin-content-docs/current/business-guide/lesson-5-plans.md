@@ -3,7 +3,7 @@ title: 'Pelajaran 5: Merancang Rencana Anda'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Pelajaran 5: Merancang Paket Anda {#lesson-5-designing-your-plans}
+# Pelajaran 5: Merancang Paket Anda
 
 Tingkatan paket Anda bukan hanya sekadar level harga—tetapi cerminan bagaimana pelanggan spesifik Anda benar-benar beroperasi. Dalam pelajaran ini, Anda akan merancang tingkatan produk yang sesuai dengan kebutuhan nyata bisnis kebugaran di berbagai tahap.
 

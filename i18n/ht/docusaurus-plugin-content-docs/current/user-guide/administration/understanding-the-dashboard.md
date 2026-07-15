@@ -3,7 +3,7 @@ title: Konprann Panèl la
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Konprann sou Panèl Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Konprann sou Panèl Ultimate Multisite
 
 Anvan nou n'immerge nan plis opsyon konfigirasyon avanse ak aspè operasyonèl Ultimate Multisite, ann gade panèl la anvan.
 

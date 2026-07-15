@@ -3,7 +3,7 @@ title: Dnevnik sprememb merjenih paketov
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Dnevnik sprememb za Metered Plans {#metered-plans-changelog}
+# Dnevnik sprememb za Metered Plans
 
 Različica 1.1.0 - Izdano 2026-05-05
 - Novo: Obračunavanje AI tokenov za multisite podmesta — spremljajte in obračunavajte porabo AI tokenov na spletnih mestih strank z nastavljivimi cenami na token

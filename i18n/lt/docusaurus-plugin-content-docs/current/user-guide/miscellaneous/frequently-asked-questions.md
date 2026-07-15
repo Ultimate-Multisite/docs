@@ -3,7 +3,7 @@ title: Čia dažnai užduodami klausimai
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Na dažnai užduodami klausimai {#frequently-asked-questions}
+# Na dažnai užduodami klausimai
 
 Štai kelios **dažnai užduodamos klausimai**, kurios dažnai pasitaiko palaikymo prašymuose.
 

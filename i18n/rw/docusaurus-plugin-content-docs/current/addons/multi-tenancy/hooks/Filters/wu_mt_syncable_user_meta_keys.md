@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Muyunguruzi: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Muyunguruzi: wu_mt_syncable_user_meta_keys
 
 Iyungurura urutonde rw’imfunguzo za meta z’abakoresha zigomba guhuzwa na nodes za kure.
 

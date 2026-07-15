@@ -3,7 +3,7 @@ title: Ntụaka Ikike
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Ntụaka Abilities {#abilities-reference}
+# Ntụaka Abilities
 
 Abilities bụ omume atomic nke Gratis AI Agent nwere ike ịkpọ na nrụnye WordPress gị. Ability ọ bụla bụ klaasị PHP e debanyere aha nke na-egosipụta JSON schema — agent na-agụ schema a n'oge ọ na-arụ ọrụ iji ghọta parameters achọrọ na ihe ability ahụ na-eweghachi.
 

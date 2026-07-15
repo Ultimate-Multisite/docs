@@ -4,7 +4,7 @@ title: फिल्टर - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Filter: retrieve_password_title {#filter-retrievepasswordtitle}
+# Filter: retrieve_password_title
 
 पासवर्ड रिसेट इमेलको विषय फिल्टर गर्छ।
 

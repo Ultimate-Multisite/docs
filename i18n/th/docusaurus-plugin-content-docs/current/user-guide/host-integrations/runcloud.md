@@ -3,7 +3,7 @@ title: RunCloud Integration
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# การผสานการทำงานกับ RunCloud {#runcloud-integration}
+# การผสานการทำงานกับ RunCloud
 
 ## ภาพรวม {#overview}
 RunCloud เป็นแพลตฟอร์มจัดการเซิร์ฟเวอร์บนคลาวด์ที่ช่วยให้คุณติดตั้งและจัดการเว็บแอปพลิเคชันบนเซิร์ฟเวอร์คลาวด์ของคุณเองได้อย่างง่ายดาย การผสานการทำงานนี้ช่วยให้สามารถซิงค์โดเมนและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite และ RunCloud ได้โดยอัตโนมัติ

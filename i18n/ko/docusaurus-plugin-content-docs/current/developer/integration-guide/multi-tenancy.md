@@ -3,7 +3,7 @@ title: 멀티 테넌시 통합
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# 멀티테넌시 통합 {#multi-tenancy-integration}
+# 멀티테넌시 통합
 
 Ultimate Multisite: 멀티테넌시 1.2.0은 주권형 테넌트, 마이그레이션 검증, 테넌트 수명주기 자동화를 위한 여러 통합 접점을 변경합니다.
 

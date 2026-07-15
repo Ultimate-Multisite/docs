@@ -3,7 +3,7 @@ title: 'Lekcija 3: Postavljanje vaše mreže'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lekcija 3: Postavljanje vaše mreže {#lesson-3-setting-up-your-network}
+# Lekcija 3: Postavljanje vaše mreže
 
 Vrijeme je za gradnju. U ovoj lekciji instalirat ćete Ultimate Multisite i konfigurirati temelje FitSite mreže. Svaka odluka ovdje donesena je s fitness nišom na umu.
 

@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# କାର୍ଯ୍ୟ: update_network {#action-updatenetwork}
+# କାର୍ଯ୍ୟ: update_network
 
 ଏକ ଅବସ୍ଥିତ ନେଟୱର୍କ ଅଦ୍ୟତନ ହେବା ପରେ ଚାଲୁ ହୁଏ।
 

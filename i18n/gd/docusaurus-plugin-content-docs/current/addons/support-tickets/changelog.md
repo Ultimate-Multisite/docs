@@ -3,7 +3,7 @@ title: Loga atharrachaidhean Tiogaidean Taice
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Log atharrachaidhean thiogaidean taice {#support-tickets-changelog}
+# Log atharrachaidhean thiogaidean taice
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Leasaichte: Chaidh an t-eòlaire vendor/ a thoirt air falbh bho thracadh Git (air a chòmhdach mu thràth le .gitignore), a’ lùghdachadh meud an repository

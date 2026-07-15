@@ -3,7 +3,7 @@ title: Fluach Initiúla Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow Onboarding an Theme Builder {#theme-builder-onboarding-flow}
+# Flow Onboarding an Theme Builder
 
 Superdav AI Agent v1.12.0 leagann cur **flow onboarding Theme Builder** a thugann leat faoi chuid theme custom ag fáilteachúil chun bhfáthach a chur i bhfeidhm ag an t-amhlaigh ar an chuid féachrúil. Is é seo a shatann an mod site builder uair a bhí an t-amlaigh, le curte a bheith níos foirmeacha agus ag curte a bheith ag an t-amhlaigh.
 

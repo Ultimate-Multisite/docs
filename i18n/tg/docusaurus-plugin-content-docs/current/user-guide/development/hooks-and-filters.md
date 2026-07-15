@@ -3,7 +3,7 @@ title: Хукҳо ва Фильтрҳо
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Хукҳо ва филтрҳои Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
+# Хукҳо ва филтрҳои Ultimate Multisite
 
 Ultimate Multisite аз як маҷмӯи функсияҳо ва саволҳои база данных иборат аст. Он хукҳо (hooks) ва филтрҳо (filters) дорад, ки ба шумо имкон медиҳанд кодҳои мавҷударо тағйир диҳед ё кодҳои нав илова кунед.
 

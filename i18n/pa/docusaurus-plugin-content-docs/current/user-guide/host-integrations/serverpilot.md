@@ -3,7 +3,7 @@ title: ਸਰਵਰਪਾਇਲਟ ਏਕੀਕਰਣ
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#serverpilot-integration}
+# ServerPilot ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 
 ## ਸੰਖੇਪ ਜਾਣਕਾਰੀ {#overview}
 ServerPilot ਇੱਕ ਕਲਾਊਡ ਸਰਵਿਸ ਹੈ ਜੋ DigitalOcean, Amazon, Google, ਜਾਂ ਕਿਸੇ ਹੋਰ ਸਰਵਰ ਪ੍ਰੋਵਾਈਡਰ ਦੇ ਸਰਵਰਾਂ 'ਤੇ WordPress ਅਤੇ ਹੋਰ PHP ਵੈੱਬਸਾਈਟਾਂ ਨੂੰ ਹੋਸਟ ਕਰਨ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ। ਇਹ ਇੰਟੀਗ੍ਰੇਸ਼ਨ Ultimate Multisite ਅਤੇ ServerPilot ਵਿਚਕਾਰ ਆਟੋਮੈਟਿਕ ਡੋਮੇਨ ਸਿੰਕਿੰਗ ਅਤੇ SSL ਸਰਟੀਫਿਕੇਟ ਪ੍ਰਬੰਧਨ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਂਦੀ ਹੈ।

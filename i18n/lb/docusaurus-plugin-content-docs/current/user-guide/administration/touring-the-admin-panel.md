@@ -3,7 +3,7 @@ title: D'Administrationspanel durfend
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Durch d'Admin-Panel laufe {#touring-the-admin-panel}
+# Durch d'Admin-Panel laufe
 
 Ultimate Multisite strebt es a soifach und erklärend wie möglich ah, aber mit so ere mächtige Tool chan er au en geführte Tour helfe. Mir laufe dur d'Admin-Seiten, um dir z'helfe, dich zurechtzfinde.
 

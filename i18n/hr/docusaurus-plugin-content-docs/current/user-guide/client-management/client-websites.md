@@ -3,7 +3,7 @@ title: Klijentski webovi
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Vaši klijentski webovi (v2) {#your-clients-websites-v2}
+# Vaši klijentski webovi (v2)
 
 Nakon što se registriraju na vašoj mreži, vaši kupci mogu pristupiti svom dashboardu.
 

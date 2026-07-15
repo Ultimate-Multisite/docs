@@ -3,7 +3,7 @@ title: Kundfeedback & Problem-Meldig
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundefeedback & Problemberichte {#customer-feedback--issue-reporting}
+# Kundefeedback & Problemberichte
 
 Gratis AI Agent v1.5.0 füecht en integrierten System zur Rückmeldig und Meldig vo Problem hinzu, wo Endbenutzer d'Antworte als nöd hilfreich markiere und Problem direkt us de Chat-Oberflächi melde chönd. Sues System beinhaltet Zuestimmigsverwaltung (consent management), en automatisches Meldekommando und AI-unterstützte Sortierig (triage) im Backend.
 

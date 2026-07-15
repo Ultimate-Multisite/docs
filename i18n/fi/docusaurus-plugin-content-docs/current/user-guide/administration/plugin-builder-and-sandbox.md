@@ -3,7 +3,7 @@ title: Lisäosan rakentaja ja sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 tuo käyttöön **Plugin Builder & Sandbox System**, joka antaa tekoälyassistentille luoda, aktiivistaa ja hallita WordPress-lisäosia verkossasi — kaikki turvallisessa, eristetyssä sandbox-ympäristössä.
 

@@ -3,7 +3,7 @@ title: Exporte eta importazioa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportatu eta Importatu {#export--import}
+# Exportatu eta Importatu
 
 Ultimate Multisite 2.9.0-ek **Tools > Export & Import** (Herri-gainak > Exportatu eta Importatu) menuaren ondorioz, bat-sitea ZIP file batez paketo dezakezu, hori sortzeko edo Ultimate Multisite eta single-site WordPress instalazioak artean site bat aurkitzea behar duzu.
 

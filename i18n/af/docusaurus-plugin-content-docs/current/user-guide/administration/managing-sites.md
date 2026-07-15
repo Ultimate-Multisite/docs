@@ -3,7 +3,7 @@ title: Bestuur van Wesites
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Bestuur van Webwerwe {#managing-sites}
+# Bestuur van Webwerwe
 
 Webwerwe (of subsites) is die kern van jou WaaS-besigheid. Ultimate Multisite het 3 tipe webwerwe:
 

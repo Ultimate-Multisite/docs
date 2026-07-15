@@ -3,7 +3,7 @@ title: Fejlesztői Dokumentáció
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Fejlesztői Dokumentáció {#developer-documentation}
+# Fejlesztői Dokumentáció
 
 Ez az útmutató minden szükséges információt nyújt a fejlesztőknek, akik integrálni, bővíteni vagy addonokat fejleszteni kívánnak az Ultimate Multisite rendszeréhez. Az Ultimate Multisite egy WordPress Multisite hálózatát Weboldal-mint-szolgáltatás (WaaS) platformra alakítja.
 

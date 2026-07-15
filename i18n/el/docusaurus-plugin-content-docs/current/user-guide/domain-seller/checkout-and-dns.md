@@ -3,7 +3,7 @@ title: Πεδίο ολοκλήρωσης αγοράς και DNS πελάτη
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Πεδίο ολοκλήρωσης αγοράς και διαχείριση DNS πελατών {#checkout-field-and-customer-dns-management}
+# Πεδίο ολοκλήρωσης αγοράς και διαχείριση DNS πελατών
 
 ## Το πεδίο ολοκλήρωσης αγοράς Επιλογή τομέα {#the-domain-selection-checkout-field}
 

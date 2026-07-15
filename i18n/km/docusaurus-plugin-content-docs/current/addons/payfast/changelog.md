@@ -3,7 +3,7 @@ title: កំណត់ហេតុផ្លាស់ប្តូរ PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# កំណត់ហេតុផ្លាស់ប្តូរ PayFast {#payfast-changelog}
+# កំណត់ហេតុផ្លាស់ប្តូរ PayFast
 
 កំណែ: 1.0.2 - ចេញផ្សាយនៅ 2025-09-28
 

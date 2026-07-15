@@ -3,7 +3,7 @@ title: ડોમેન મેપિંગ કેવી રીતે કન્ફ
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# ડોમેન મેપિંગ કેવી રીતે કૉન્ફિગર કરવું (v2) {#how-to-configure-domain-mapping-v2}
+# ડોમેન મેપિંગ કેવી રીતે કૉન્ફિગર કરવું (v2)
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite સંસ્કરણ 2.x માટે છે.**_
 

@@ -3,7 +3,7 @@ title: Domaine Produkt an Pris
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain-Produkte und Preisgestaltung {#domain-products-and-pricing}
+# Domain-Produkte und Preisgestaltung
 
 Domain-Produkte sind die Art, wie Sie Preise, TLDs (Top-Level Domains), WHOIS-Datenschutz und Anbieter auswählen steuern. Jedes Domain-Produkt ist ein Standard-Multisite Ultimate-Produkt mit einem zusätzlichen Tab **Domain Settings**.
 

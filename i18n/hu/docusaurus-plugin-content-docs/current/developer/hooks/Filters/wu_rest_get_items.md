@@ -4,7 +4,7 @@ title: Szűrő - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Szűrő: wu_rest_get_items {#filter-wurestgetitems}
+# Szűrő: wu_rest_get_items
 
 Megállítja vagy engeli a kérés továbbítását.
 

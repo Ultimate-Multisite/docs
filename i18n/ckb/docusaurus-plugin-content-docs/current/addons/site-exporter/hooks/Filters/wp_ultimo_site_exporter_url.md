@@ -4,7 +4,7 @@ title: فلتەر - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# فلتەر: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
+# فلتەر: wp_ultimo_site_exporter_url
 
 ڕێگە بە پەرەپێدەران دەدات ڕێڕەوی پەیوەندیدار بە ڕەگی پێوەکراوەکە بەڕێوە ببەن.
 

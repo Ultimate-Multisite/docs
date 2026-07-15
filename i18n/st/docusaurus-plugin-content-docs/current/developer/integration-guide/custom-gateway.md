@@ -3,7 +3,7 @@ title: Nts'etsopele ea Khoro e Ikhethileng
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ntshetsopele ya Custom Gateway {#custom-gateway-development}
+# Ntshetsopele ya Custom Gateway
 
 O ka bopa dikgoro tsa tefo tse ikgethileng ka ho atolosa sehlopha sa `Base_Gateway`.
 

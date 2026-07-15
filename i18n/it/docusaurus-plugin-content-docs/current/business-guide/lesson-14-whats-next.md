@@ -3,7 +3,7 @@ title: 'Lezione 14: Cosa segue'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lezione 14: Cosa fare dopo {#lesson-14-what-comes-next}
+# Lezione 14: Cosa fare dopo
 
 Hai costruito una piattaforma di siti web di nicchia da zero. FitSite è attivo, serve studi di fitness e genera entrate ricorrenti. Questa lezione finale analizza i prossimi passi.
 

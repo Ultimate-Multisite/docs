@@ -3,7 +3,7 @@ title: 'Læoni 7: Gerðu það þitt'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Læoni 7: Gjera Það Eitt Fyrir Þá {#lesson-7-making-it-yours}
+# Læoni 7: Gjera Það Eitt Fyrir Þá
 
 Notendur þín verða aldrei til að þau séu í "eitthva WordPress plugin". Þau ættu að finna sér sem þeir eru nota FitSite – einn staðli byggður fyrir brúna hlutina. Þessi læoni skoðar merking, white-labeling og það að gera platformann að vera eins og vöru.
 

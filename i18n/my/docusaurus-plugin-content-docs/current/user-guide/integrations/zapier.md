@@ -3,7 +3,7 @@ title: Zapier ပေါင်းစည်းမှု
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ကို Zapier နှင့် ချိတ်ဆက်အသုံးပြုခြင်း {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite ကို Zapier နှင့် ချိတ်ဆက်အသုံးပြုခြင်း
 
 ဆောင်းပါးတစ်ခုတွင် [Webhooks](webhooks.md) အကြောင်းနှင့် ၎င်းတို့ကို 3rd party application များနှင့် ချိတ်ဆက်အသုံးပြုနိုင်ပုံကို ဆွေးနွေးခဲ့သည်။
 

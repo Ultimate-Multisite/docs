@@ -3,7 +3,7 @@ title: Àtòkọ Orílẹ̀-èdè
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Títún ṣètò àtòjọ orílẹ̀-èdè Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Títún ṣètò àtòjọ orílẹ̀-èdè Ultimate Multisite
 
 Àkojọ-silẹ̀ láti yan orílẹ̀-èdè ni a ṣètò ní títẹ̀lé alfábẹ́ẹ̀tì dá lórí àwọn ẹ̀yà Gẹ̀ẹ́sì ti orúkọ àwọn orílẹ̀-èdè. Èyí lè túmọ̀ sí pé, nígbà míì, orílẹ̀-èdè ilé-iṣẹ́ rẹ àti/tàbí ọ̀pọ̀ jùlọ àwọn oníbàárà rẹ lè farapamọ́ ní àárín àtòjọ orúkọ orílẹ̀-èdè ńlá kan.
 

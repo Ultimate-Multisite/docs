@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# କାର୍ଯ୍ୟ: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# କାର୍ଯ୍ୟ: wu_admin_pages_display_content
 
 କଷ୍ଟମ୍ ସମ୍ପାଦକ ବିଷୟବସ୍ତୁ ଦେଖାନ୍ତୁ।
 

@@ -3,7 +3,7 @@ title: Operadh na Tòiseach
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operations {#sovereign-tenant-operations}
+# Sovereign Tenant Operations
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adds operational tooling for sovereign tenants: subsites that run with their own database, filesystem root, and routing context while remaining visible from the network admin.
 

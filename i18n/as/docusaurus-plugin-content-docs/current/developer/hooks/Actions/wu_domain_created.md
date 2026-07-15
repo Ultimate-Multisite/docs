@@ -4,7 +4,7 @@ title: কাৰ্য্য - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Action: wu_domain_created {#action-wudomaincreated}
+# Action: wu_domain_created
 
 যি সময়ত এটা নতুন ডোমেইন ম্যাপিং যোগ কৰা হয়, তেতিয়া ই ট্ৰিগাৰ হয়।
 

@@ -6,7 +6,7 @@ title: >-
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# 过滤器: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# 过滤器: mu-migration/all_posts/default_args
 
 过滤默认参数，用于在 all_posts 方法中查询帖子。
 

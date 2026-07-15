@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Filter: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Filter: wu_site_exporter_plugin_exclusion_list
 
 ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਇੱਕ 플ੱਗਇਨ ਦੀ ਸੂਚੀ (list) ਨੂੰ ਪ੍ਰਬੰਧਿਤ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ, ਜਿਸਨੂੰ ਬਣਾਏ ਗਏ zip ਫਾਈਲ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ।
 

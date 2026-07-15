@@ -4,7 +4,7 @@ title: Action - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded {#action-wussoloaded}
+# Action: wu_sso_loaded
 
 தேவைப்பட்டால், கூடுதல் ஹூக்குகளைச் சேர்க்க 플러ഗിன் உருவாக்குநர்கள் இதைப் பயன்படுத்தலாம்.
 

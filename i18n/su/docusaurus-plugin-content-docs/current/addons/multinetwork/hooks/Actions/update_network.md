@@ -4,7 +4,7 @@ title: Tindakan - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Aksi: update_network {#action-updatenetwork}
+# Aksi: update_network
 
 Dijalankeun sanggeus jaringan anu geus aya diropéa.
 

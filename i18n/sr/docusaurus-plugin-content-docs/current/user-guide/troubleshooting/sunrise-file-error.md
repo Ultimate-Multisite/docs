@@ -3,7 +3,7 @@ title: Greška u fajlu Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Greška pri instalaciji Sunrise fajla {#error-installing-the-sunrise-file}
+# Greška pri instalaciji Sunrise fajla
 
 Fajl `sunrise.php` je poseban fajl koji WordPress traži dok se sam inicijalizuje (bootstraps). Da bi WordPress mogao da detektuje taj `sunrise.php` fajl, on mora biti lociran unutar foldera **wp-content**.
 

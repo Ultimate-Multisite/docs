@@ -4,7 +4,7 @@ title: Veprim - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Veprimi: wu_before_light_ajax {#action-wubeforelightajax}
+# Veprimi: wu_before_light_ajax
 
 Në disa raste, do të na duhet të ngarkojmë burime shtesë për të trajtuar veprimet.
 

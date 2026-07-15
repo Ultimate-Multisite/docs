@@ -3,7 +3,7 @@ title: Hawlgalka Qoyska Xaqa-qabta ah
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Hawlgalka Qoyska Soomaaliga ah (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Hawlgalka Qoyska Soomaaliga ah (Sovereign Tenant Operations)
 
 Ultimate Multisite 1.2.0 waxay ku daraysaa qalab hawlgalka loogu talagalay qoysaska soomaaliga ah: subsites-yada (website-yada yar ee ka soo socda) kuwa shaqeeya database-yadeed, asalka faylasha (filesystem root), iyo xaaladda routing-ka (routing context) oo ay weli arki karaan maamulaha shirkadda.
 

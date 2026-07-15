@@ -4,7 +4,7 @@ title: Iragazkia - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Iragazkia: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Iragazkia: wp_ultimo_render_vars
 
 Plugin garatzaileei aukera ematen die errendatze-testuinguruari aldagai gehigarriak globalki gehitzeko.
 

@@ -3,7 +3,7 @@ title: Cloudways ඒකාබද්ධ කිරීම
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ඒකාබද්ධ කිරීම (Integration) {#cloudways-integration}
+# Cloudways ඒකාබද්ධ කිරීම (Integration)
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 Cloudways කියන්නේ DigitalOcean, AWS, Google Cloud වගේ විවිධ cloud providers වල WordPress වෙබ් අඩවි deploy කරන්න පුළුවන් කළමනාකරණය කරන ලද hosting platform එකක්. මේ integration එක මගින් Ultimate Multisite සහ Cloudways අතර automatic domain syncing සහ SSL certificate management පහසු කරයි.

@@ -4,7 +4,7 @@ title: कार्य - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# कार्य: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
+# कार्य: wu_captcha_integrations_init
 
 सबै integrations प्रारम्भ भएपछि चल्छ।
 

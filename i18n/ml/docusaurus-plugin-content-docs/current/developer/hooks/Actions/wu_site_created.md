@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Action: wu_site_created {#action-wusitecreated}
+# Action: wu_site_created
 
 ഒരു സൈറ്റ് ആദ്യമായി സൃഷ്ടിക്കപ്പെടുമ്പോൾ ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

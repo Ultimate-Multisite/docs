@@ -3,7 +3,7 @@ title: அணுகல் தெரிவுநிலை
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility (த可வுத்தன்மை) {#ability-visibility}
+# Ability Visibility (த可வுத்தன்மை)
 
 Superdav AI Agent v1.12.0 ஆனது **Ability Visibility** கட்டுப்பாடுகளை அறிமுகப்படுத்துகிறது. இவை எந்தெந்த Surfaces (மேற்பரப்புகள்) எந்தெந்த திறன்களை (abilities) வெளிப்படுத்துகின்றன என்பதைக் கட்டுப்படுத்துகின்றன. இதன் மூலம், REST APIs, MCP servers, WooCommerce integrations மற்றும் பிற இடைமுகங்கள் வழியாக எந்தெந்த ஏஜென்ட் திறன்கள் கிடைக்க வேண்டும் என்பதை நிர்வாகத்தாளர்கள் நுணுக்கமாக அமைக்க முடியும்.
 

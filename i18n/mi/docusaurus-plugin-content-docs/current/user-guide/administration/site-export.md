@@ -3,7 +3,7 @@ title: Whakaahua Wāhi
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Whakarite i te Wāhi (Site Export) {#site-export}
+# Whakarite i te Wāhi (Site Export)
 
 Ko te **Site Export** admin page e tino whakamōhaka ai ngā administrator o te wāhi (network administrators) ki te pakanga i te wāhi, he pakihi, he whole network, ki te archive (file) e taea te whai mai ana mō te migration, backup, he whakaora, he whakawhanaungatanga.
 

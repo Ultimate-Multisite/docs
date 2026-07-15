@@ -3,7 +3,7 @@ title: مرجع هوک‌ها
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# مرجع Hooks {#hooks-reference}
+# مرجع Hooks
 
 مستندات تولیدشدهٔ خودکار برای همهٔ **59 action** و **118 filter** در Ultimate Multisite.
 

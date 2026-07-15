@@ -3,7 +3,7 @@ title: 'Õppetund 11: Klientide leidmine'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Õppetund 11: Klientide leidmine {#lesson-11-finding-customers}
+# Õppetund 11: Klientide leidmine
 
 Suurepärane platvorm ilma klientideta on lihtsalt hobi. See õppetund käsitleb, kuidas hankida kliente nišivertikaalis -- strateegiad, mis toimivad just seetõttu, et keskendud ühele valdkonnale.
 

@@ -3,7 +3,7 @@ title: Интеграция Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Интеграция Cloudflare {#cloudflare-integration}
+# Интеграция Cloudflare
 
 ## Обзор {#overview}
 Cloudflare — ведущая сеть доставки контента (CDN) и поставщик решений безопасности, который помогает защищать и ускорять веб-сайты. Эта интеграция обеспечивает автоматическое управление доменами между Ultimate Multisite и Cloudflare, особенно для multisite-установок с поддоменами.

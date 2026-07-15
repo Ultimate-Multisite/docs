@@ -3,7 +3,7 @@ title: Tema Qurucu Qabiliyyətləri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: Block Temaları Qurmaq və Aktivləşdirmək {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Abilities: Block Temaları Qurmaq və Aktivləşdirmək
 
 Superdav AI Agent v1.12.0, sizə chat interfeysindən birbaşa özad block temaları yaratmağa və yerləşdirməyə imkan verən iki güclü imkan təqdim edir.
 

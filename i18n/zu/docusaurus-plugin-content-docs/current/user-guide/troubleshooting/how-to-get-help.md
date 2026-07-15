@@ -3,7 +3,7 @@ title: Indlela Yokuthola Usizo
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Ungaluthola kanjani usizo {#how-to-get-help}
+# Ungaluthola kanjani usizo
 
 Usuthole ukhiye wakho we-License osebenzayo, futhi okuhambisana nawo ukufinyelela ethimbeni lethu ukuze likusize uxazulule izinkinga ongase uhlangabezane nazo ngesikhathi sakho sokusetha i-Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Index hamorum
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Index Hooks {#hooks-reference}
+# Index Hooks
 
 Documentatio automatice generata omnium **59 actionum** et **118 filtrorum** in Ultimate Multisite.
 

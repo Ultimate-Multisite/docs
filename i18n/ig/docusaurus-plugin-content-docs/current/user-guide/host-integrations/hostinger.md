@@ -3,7 +3,7 @@ title: Nkwado Hostinger (hPanel) Ụlọ
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integracja z Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Integracja z Hostinger (hPanel)
 
 ## Zarys {#overview}
 

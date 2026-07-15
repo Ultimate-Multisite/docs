@@ -3,7 +3,7 @@ title: cPanel 統合
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integration {#cpanel-integration}
+# cPanel Integration
 
 ## Overview {#overview}
 cPanelは、多くの共有および専用ホスティングプロバイダーで使用されている最も人気のあるウェブホスティング制御パネルの1つです。この統合により、Ultimate MultisiteとcPanel間で自動ドメイン同期が可能になり、ドメインエイリアスとサブドメインを自動的にcPanelアカウントに追加できるようになります。

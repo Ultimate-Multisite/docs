@@ -3,7 +3,7 @@ title: د هوکونو مرجع
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# د هوکونو ماخذ {#hooks-reference}
+# د هوکونو ماخذ
 
 په Ultimate Multisite کې د ټولو **59 کړنو** او **118 فلټرونو** لپاره په اتومات ډول جوړ شوي اسناد.
 

@@ -3,7 +3,7 @@ title: Vještina specifikacije sajta
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Vještina specifikacije sajta {#site-specification-skill}
+# Vještina specifikacije sajta
 
 **Vještina specifikacije sajta** je strukturiran pristup za snimanje ciljeva vašeg sajta, publike i identiteta brenda. Ove informacije se pohranjuju u vašu memoriju **site_brief**, koju agenti koriste kroz sesije kako bi pružili dosljednu pomoć koja je svjesna konteksta.
 

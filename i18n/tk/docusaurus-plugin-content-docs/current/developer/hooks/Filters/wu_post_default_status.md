@@ -4,7 +4,7 @@ title: Süzgüç - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Süzgüç: wu_post_default_status {#filter-wupostdefaultstatus}
+# Süzgüç: wu_post_default_status
 
 Obýekt maglumatlaryny maglumatlar bazasyna saklamazdan öň süzýär.
 

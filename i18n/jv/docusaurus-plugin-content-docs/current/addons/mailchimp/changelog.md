@@ -3,7 +3,7 @@ title: Mailchimp Cathetan Owah-owahan
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Cathetan Owah-owahan Mailchimp {#mailchimp-changelog}
+# Cathetan Owah-owahan Mailchimp
 
 Versi: 1.1.1 - Dirilis ing 2025-09-28
 

@@ -4,7 +4,7 @@ title: Mahinga - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Hohenga: wu_before_search_models {#action-wubeforesearchmodels}
+# Hohenga: wu_before_search_models
 
 Ka whakakā i mua i te tukatuka o te tono rapu.
 

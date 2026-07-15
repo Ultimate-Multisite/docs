@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର୍ - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# ଫିଲ୍ଟର: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# ଫିଲ୍ଟର: wp_ultimo_site_exporter_get_option
 
 slug ରୂପକୁ ପରିବର୍ତ୍ତିତ ନେଟୱର୍କ ବିକଳ୍ପ ମୂଲ୍ୟ ଫେରାଏ।
 

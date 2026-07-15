@@ -3,7 +3,7 @@ title: Pou kisa Ultimate Multisite la?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Poukisa Ultimate Multisite {#why-ultimate-multisite}
+# Poukisa Ultimate Multisite
 
 Si ou rive nan atik sa a, ou ka te tande ke plugin nou an ka solisyon pou fè ide biznis ou vin reyalite. Nou espere ou gen tout repons ou bezwen nan fen tèks sa a.
 

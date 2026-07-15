@@ -3,7 +3,7 @@ title: बहु-किरा प्रणाली अलगाव
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# बहु-किराया अलगाव (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# बहु-किराया अलगाव (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 अब स्वायत्त टेन्ट्स (sovereign tenants) को लागि प्रति-सबसाइट डेटाबेस र फाइलसिस्टम अलगावलाई समर्थन गर्दछ। यसले नेटवर्क स्तरको प्रावधान, बिलिङ र व्यवस्थापन कायम राख्दै टेन्टेन्ट डेटालाई छुट्टै राख्छ।
 

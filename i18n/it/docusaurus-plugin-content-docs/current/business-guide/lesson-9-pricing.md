@@ -3,7 +3,7 @@ title: 'Lezione 9: Prezzi per il profitto'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lezione 9: Prezzi per il Profitto {#lesson-9-pricing-for-profit}
+# Lezione 9: Prezzi per il Profitto
 
 Nella Lezione 5 abbiamo impostato i prezzi iniziali per i piani FitSite. Ora affineremo la strategia di prezzo con tecniche che aumentano i ricavi, incoraggiano gli upgrade e riducono il tasso di abbandono (churn).
 

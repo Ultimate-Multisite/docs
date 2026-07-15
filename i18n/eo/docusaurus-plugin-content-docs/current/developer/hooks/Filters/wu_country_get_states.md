@@ -4,7 +4,7 @@ title: Filtrilo - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filtro: wu_country_get_states {#filter-wucountrygetstates}
+# Filtro: wu_country_get_states
 
 Liveras la liston de ŝtatoj por ĉi tiu lando.
 

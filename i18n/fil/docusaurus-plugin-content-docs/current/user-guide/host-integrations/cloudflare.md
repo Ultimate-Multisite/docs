@@ -3,7 +3,7 @@ title: Integrasyon ng Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Pangkalahatang-ideya {#overview}
 Ang Cloudflare ay isang nangungunang content delivery network (CDN) at tagapagbigay ng seguridad na tumutulong protektahan at pabilisin ang mga website. Pinapagana ng integration na ito ang awtomatikong pamamahala ng domain sa pagitan ng Ultimate Multisite at Cloudflare, lalo na para sa mga subdomain multisite installation.

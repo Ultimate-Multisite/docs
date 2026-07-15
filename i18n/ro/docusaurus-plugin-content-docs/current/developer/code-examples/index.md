@@ -3,7 +3,7 @@ title: Exemple Avansate de Cod
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Exemple Avansate de Cod {#advanced-code-examples}
+# Exemple Avansate de Cod
 
 Aceste exemple demonstrează modele avansate de integrare cu Ultimate Multisite.
 

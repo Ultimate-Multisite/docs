@@ -3,7 +3,7 @@ title: Multi-Tenancy ਏਕੀਕਰਨ
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# ਮਲਟੀ-ਟੈਨੈਂਸੀ ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#multi-tenancy-integration}
+# ਮਲਟੀ-ਟੈਨੈਂਸੀ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 
 Ultimate Multisite: ਮਲਟੀ-ਟੈਨੈਂਸੀ 1.2.0 ਸੁਤੰਤਰ ਟੈਨੈਂਟਾਂ, ਮਾਈਗ੍ਰੇਸ਼ਨ ਤਸਦੀਕ, ਅਤੇ ਟੈਨੈਂਟ ਜੀਵਨ-ਚੱਕਰ ਆਟੋਮੇਸ਼ਨ ਲਈ ਕਈ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਟਚਪੌਇੰਟਾਂ ਵਿੱਚ ਬਦਲਾਅ ਕਰਦਾ ਹੈ।
 

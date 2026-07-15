@@ -3,7 +3,7 @@ title: क्लोस्ट एकीकरण
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration {#closte-integration}
+# Closte Integration
 
 ## अवलोकन {#overview}
 Closte भनेको Google Cloud इन्फ्रास्ट्रक्चरमा बनेको एउटा व्यवस्थापन गरिएको वर्डप्रेस होस्टिङ प्लेटफर्म हो। यो इन्टिग्रेशनले Ultimate Multisite र Closte बीच स्वचालित डोमेन सिङ्क्रनाइजेसन र SSL प्रमाणपत्र व्यवस्थापन सक्षम गर्दछ।

@@ -4,7 +4,7 @@ title: फिल्टर - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# फिल्टर: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
+# फिल्टर: wu_apc_get_meta_content_default_content
 
 विकासकर्ताहरूलाई पूर्वनिर्धारित मानहरू फिल्टर गर्न अनुमति दिनुहोस्
 

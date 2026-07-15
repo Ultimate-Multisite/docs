@@ -3,7 +3,7 @@ title: Админ панелін аңлау
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# إداري لوحة (Admin Panel) تماشا {#touring-the-admin-panel}
+# إداري لوحة (Admin Panel) تماشا
 
 Ultimate Multisite همه‌ش ساده و خود توضیح‌دهنده باشه، اما با این ابزار قدرتمند می‌تونه یه تور راهنمای شما رو داشته باشه. بیایید از صفحات مدیریت عبور کنیم تا راحت بشید.
 

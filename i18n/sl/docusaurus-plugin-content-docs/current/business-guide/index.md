@@ -3,7 +3,7 @@ title: Zgradite podjetje z nišnimi spletnimi mesti
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Zgradite nišno podjetje za spletna mesta z Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Zgradite nišno podjetje za spletna mesta z Ultimate Multisite
 
 Večina ljudi, ki poskuša prodajati spletna mesta, tekmuje s ceno proti Wix, Squarespace in tisočim freelancerjem. Izgubijo. Tisti, ki zmagajo, izberejo specifično občinstvo, zgradijo rešitev, prilagojeno temu občinstvu, in zaračunajo vrednost, ki jo dostavijo.
 

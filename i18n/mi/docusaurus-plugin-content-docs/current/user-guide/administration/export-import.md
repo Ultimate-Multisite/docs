@@ -3,7 +3,7 @@ title: Xuất và Nhập
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exporte & Imporote {#export--import}
+# Exporte & Imporote
 
 Ultimate Multisite 2.9.0 nui **Export & Import** tū, he taonga pēnei i te **Tools > Export & Import**. Whakarongo i ai ko te whakamahi i a ia i roto i ngā wā e tino pai ana ki te whakatō (package) site WordPress mā te ZIP file, hei whakauru i tēnei ZIP, hengei te mihi i te site i waenga i Ultimate Multisite me single-site WordPress e tika.
 

@@ -3,7 +3,7 @@ title: Mise en cache de prompts sensible au fournisseur
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Mise en cache de prompts sensible au fournisseur {#provider-aware-prompt-caching}
+# Mise en cache de prompts sensible au fournisseur
 
 Superdav AI Agent v1.12.0 introduit la **mise en cache de prompts sensible au fournisseur** (*provider-aware prompt caching*), ce qui optimise les coûts et la latence de l'API en mettant en cache les prompts à travers différents fournisseurs de LLM. Chaque fournisseur dispose de mécanismes et de configurations de mise en cache différents.
 

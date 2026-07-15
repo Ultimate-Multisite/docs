@@ -3,7 +3,7 @@ title: Mawu wa code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2 {#code-snippets-for-v2}
+# Code Snippets for v2
 
 Mwayi, code snippets yaite kusedwa kuti mwayi wina woyenera kufanya zinthu zina zomwe zingakhale zikufunika plugin yina yomwe wina. Zomwe zikuyenera kodewo zikuyenera kuwera m'file ya WordPress kapena theme yanu (kuti nthawi zambiri ndi file ya functions.php ya theme yanu) kapena zingathe kutendeka m'MU plugin.
 

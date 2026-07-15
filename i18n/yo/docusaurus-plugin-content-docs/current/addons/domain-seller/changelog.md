@@ -3,7 +3,7 @@ title: Àkọọlẹ̀ Ìyípadà Olùtajà Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Àkọsílẹ̀ Àyípadà Domain Seller {#domain-seller-changelog}
+# Àkọsílẹ̀ Àyípadà Domain Seller
 
 Ẹ̀yà 1.3.0 - Tu sílẹ̀ ní 2026-06-02
 - Tuntun: Ṣafikun ìkìlọ̀ network-admin nígbà tí bálánsì reseller HostAfrica bá lọ kéré jù

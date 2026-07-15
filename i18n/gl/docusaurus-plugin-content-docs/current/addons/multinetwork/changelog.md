@@ -3,7 +3,7 @@ title: Rexistro de cambios multirrede
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Rexistro de cambios de Multi-Network {#multi-network-changelog}
+# Rexistro de cambios de Multi-Network
 
 ### 1.3.0 {#130}
 * Novo: previsualizador de modelos de rede — explora e previsualiza modelos de rede cun panel en directo antes de mercar.

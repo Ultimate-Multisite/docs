@@ -3,7 +3,7 @@ title: Ano ang WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Ano ang WordPress Multisite? {#what-is-wordpress-multisite}
+# Ano ang WordPress Multisite?
 
 Sa core nito, may feature ang WordPress na tinatawag na 'Multisite' na nagsimula noong 2010 nang ilabas ang WordPress 3.0. Mula noon, marami na itong naging revision para magdagdag ng mga bagong feature at palakasin ang security.
 

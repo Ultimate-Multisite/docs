@@ -3,7 +3,7 @@ title: Sanggunian ng mga Kakayahan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Gabay sa mga Kakayahan (Abilities Reference) {#abilities-reference}
+# Gabay sa mga Kakayahan (Abilities Reference)
 
 Ang mga Abilities ay ang mga atomic na aksyon na magagamit ng Gratis AI Agent sa iyong WordPress installation. Ang bawat ability ay isang naka-register na PHP class na nagpapakita ng JSON schema — binabasa ng agent ito habang tumatakbo (runtime) para maintindihan kung anong mga parameters ang kailangan at ano ang ibabalik ng ability.
 

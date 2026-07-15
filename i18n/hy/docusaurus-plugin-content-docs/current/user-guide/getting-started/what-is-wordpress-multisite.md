@@ -3,7 +3,7 @@ title: Ի՞նչ է WordPress Multisite-ը։
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite-ը ဘာလဲ? {#what-is-wordpress-multisite}
+# WordPress Multisite-ը ဘာလဲ?
 
 WordPress-ի အဓိကအရာထဲမှာ ‘Multisite’ လို့ခေါ်တဲ့ လုပ်ဆောင်ချက်တစ်ခု ပါဝင်ပြီး ဒါဟာ ၂၀၁၀ ခုနှစ်မှာ WordPress 3.0 စတင်တဲ့အခါမှ အစပြုခဲ့တာပါ။ အဲဒီအချိန်ကတည်းက ဒီလုပ်ဆောင်ချက်ကို ပိုမိုကောင်းမွန်တဲ့ features တွေ ထည့်သွင်းဖို့နဲ့ လုံခြုံရေးကို ပိုတင်းကျပ်ဖို့အတွက် ပြန်လည်ပြင်ဆင်မှုတွေ လုပ်ခဲ့ပါတယ်။
 

@@ -3,7 +3,7 @@ title: Ciamar a tha thu a' ghlacadh?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Conas help a bhith agad {#how-to-get-help}
+# Conas help a bhith agad
 
 Tha thu de uileach chìlkey lathair, agus tha sin a' chluainteachd do dhealbhaidhean a th'annach an t-amadh gu is dòcht air a thabhairt a dhèanamh air Ultimate Multisite.
 

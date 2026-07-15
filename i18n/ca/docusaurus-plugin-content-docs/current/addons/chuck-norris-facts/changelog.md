@@ -3,7 +3,7 @@ title: Diari de canvis dels Fets de Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Historial de versions de Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Historial de versions de Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Afegat: Funcionalitat d'actualització automàtica a través del servidor d'actualització d'Ultimate Multisite

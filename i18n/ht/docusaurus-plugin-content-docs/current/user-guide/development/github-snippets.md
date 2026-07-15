@@ -3,7 +3,7 @@ title: Snippets GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kijan pou itilize Ultimate Multisite snippets sou repo GitHub nou an {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Kijan pou itilize Ultimate Multisite snippets sou repo GitHub nou an
 
 Gen kèk code snippet ki disponib nan repo GitHub la ki souvan mande pa itilizatè Ultimate Multisite yo lè yo vle ajoute fonksyonalite piti tankou ajoute script Google Analytics sou paj kayman (sign-up pages) oswa ka fè yon meta box disparèt nan admin dashboard.
 
@@ -19,7 +19,7 @@ Gen 2 fason ou ka ajoute koude a:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Kijan pou ajoute snippet la sou fichye functions.php thèm ou a. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Kijan pou ajoute snippet la sou fichye functions.php thèm ou a.
 
   1. Log in nan admin dashboard rezo WordPress ou an epi ale Themes > Theme Editor (Gade screenshot anba).
 
@@ -29,7 +29,7 @@ Gen 2 fason ou ka ajoute koude a:
 
 <!-- Screenshot pa disponib: WordPress Theme Editor montre edisyon fichye functions.php -->
 
-# Kijan pou kreye Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Kijan pou kreye Must-Use Plugins (mu-plugins)
 
 WordPress gen yon fonksyon ki pèmèt ou chaje fonksyonalite koutim ki rele "Must-Use Plugins", oswa "mu-plugins" an kout.
 

@@ -4,7 +4,7 @@ title: Isihluzi - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Isihluzi: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Isihluzi: wu_should_create_domain_record_for_site
 
 Sihluza ukuba i-Ultimate Multisite kufuneka yenze irekhodi ledomeyini lesayithi esandul’ ukwenziwa.
 

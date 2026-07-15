@@ -3,7 +3,7 @@ title: Jinsi ya Kupata Msaada
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Jinsi ya kupata msaada {#how-to-get-help}
+# Jinsi ya kupata msaada
 
 Umepata Ufunguo wako halali wa Leseni, na pamoja naye unapata fursa ya kuwasiliana na timu yetu kukusaidia kutatua matatizo unayoweza kukutana nayo wakati wa kusanidi Ultimate Multisite.
 

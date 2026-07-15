@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Ìṣe: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Ìṣe: wp_ultimo_site_exporter_activation
 
 Jẹ́ kí àwọn apá míì ti afikun náà so àwọn ìlànà iṣẹ́ wọn mọ́ ìmúṣiṣẹ́.
 

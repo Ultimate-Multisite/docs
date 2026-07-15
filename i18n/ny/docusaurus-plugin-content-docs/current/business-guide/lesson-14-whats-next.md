@@ -3,7 +3,7 @@ title: 'Phunziro 14: Chotsatira ndi chiyani'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Phunziro 14: Zomwe Zikubwera Kenako {#lesson-14-what-comes-next}
+# Phunziro 14: Zomwe Zikubwera Kenako
 
 Mwamanga nsanja ya webusayiti ya msika wapadera kuyambira pachiyambi. FitSite ili live, ikutumikira ma situdiyo a fitness, ndipo ikupanga ndalama zobwerezabwereza. Phunziro lomalizali likuyang'ana komwe mungapite kuchokera pano.
 

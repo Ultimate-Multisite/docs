@@ -4,7 +4,7 @@ title: පෙරහන - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# පෙරහන: secure_auth_cookie {#filter-secureauthcookie}
+# පෙරහන: secure_auth_cookie
 
 සත්‍යාපන cookie එක HTTPS හරහා පමණක් යැවිය යුතුද යන්න පෙරහන් කරයි.
 

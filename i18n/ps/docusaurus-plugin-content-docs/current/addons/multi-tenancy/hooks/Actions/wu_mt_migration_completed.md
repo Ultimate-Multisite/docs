@@ -4,7 +4,7 @@ title: کړنه - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# عمل: wu_mt_migration_completed {#action-wumtmigrationcompleted}
+# عمل: wu_mt_migration_completed
 
 هغه وخت فعالېږي چې یو لېږد بشپړ شي.
 

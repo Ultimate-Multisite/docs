@@ -3,7 +3,7 @@ title: 설정 참조
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# 설정 참조 {#settings-reference}
+# 설정 참조
 
 이 페이지는 Ultimate Multisite의 일상적인 관리에 영향을 주는 설정과 최근 동작 변경 사항을 추적합니다.
 

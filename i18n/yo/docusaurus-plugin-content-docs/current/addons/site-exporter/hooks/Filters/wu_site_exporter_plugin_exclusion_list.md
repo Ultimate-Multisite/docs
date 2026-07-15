@@ -4,7 +4,7 @@ title: Àlẹ́mọ́ - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Àlẹmọ: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Àlẹmọ: wu_site_exporter_plugin_exclusion_list
 
 Ó gba àwọn olùdàgbàsókè láyè láti ṣàkóso àtòjọ àwọn àfikún tí ó lè yọ kúrò nínú zip tí a ṣẹda.
 

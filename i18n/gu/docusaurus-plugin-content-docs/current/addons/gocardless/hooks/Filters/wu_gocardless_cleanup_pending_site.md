@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_gococardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filter: wu_gocardless_cleanup_pending_site
 
 આ ફિલ્ટર રદ કરાયેલ GoCardless મેમ્બરશિપ માટેની કોઈ અનાથ (orphaned) પેન્ડિંગ સાઇટને ડિલીટ કરતા પહેલાં ચાલે છે.
 

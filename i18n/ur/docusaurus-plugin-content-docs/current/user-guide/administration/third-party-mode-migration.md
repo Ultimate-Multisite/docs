@@ -3,7 +3,7 @@ title: تھرڈ پارٹی موڈ مائیگریشن
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# تھرڈ- پارٹی موڈ کی منتقلی (Migration) {#third-party-mode-migration}
+# تھرڈ- پارٹی موڈ کی منتقلی (Migration)
 
 Superdav AI Agent v1.12.0 نے تھرڈ- پارٹی صلاحیتوں (abilities) کو ہینڈل کرنے کے طریقے میں تبدیلی کی ہے۔ **تھرڈ- پارٹی موڈ اب ڈیفالٹ طور پر آٹو (auto) پر سیٹ ہوتا ہے،** جس سے دستی ترتیب (manual configuration) کے بغیر WordPress 7.0+ پر مقامی WordPress Abilities API انٹیگریشن ممکن ہو جاتی ہے۔
 

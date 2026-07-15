@@ -4,7 +4,7 @@ title: Veiksmas - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Veiksmas: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Veiksmas: wu_mt_providers_registered
 
 Suveikia po to, kai užregistruojami numatytieji teikėjai.
 

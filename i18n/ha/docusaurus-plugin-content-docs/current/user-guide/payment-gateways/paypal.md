@@ -3,7 +3,7 @@ title: Kafa PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# ⚙️ تنظیم دروازه پِیپال (نسخه ۲) {#setting-up-the-paypal-gateway-v2}
+# ⚙️ تنظیم دروازه پِیپال (نسخه ۲)
 
 _**نکته مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 

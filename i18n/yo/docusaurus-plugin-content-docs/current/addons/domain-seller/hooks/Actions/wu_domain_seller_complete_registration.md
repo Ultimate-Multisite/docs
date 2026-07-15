@@ -4,7 +4,7 @@ title: Ìṣe - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Ìṣe: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Ìṣe: wu_domain_seller_complete_registration
 
 Ó máa ń ṣiṣẹ́ nígbà tí ìsanwó bá yí padà sí ipò tí ó yẹ kí ó fa ìforúkọsílẹ̀ domain.
 

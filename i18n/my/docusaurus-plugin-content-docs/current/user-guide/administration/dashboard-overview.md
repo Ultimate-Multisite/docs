@@ -3,7 +3,7 @@ title: ဒက်ရှ်ဘုတ် ခြုံငုံသုံးသပ်
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard ခြုံငုံသုံးသပ်ချက် {#dashboard-overview}
+# Dashboard ခြုံငုံသုံးသပ်ချက်
 
 Ultimate Multisite တွင် Ultimate Multisite မီနူးအောက်၌ သီးသန့် **Dashboard** တစ်ခုရှိပြီး Network Dashboard သို့လည်း widget များထပ်ထည့်ပေးပါသည်။ ဤဆောင်းပါးတွင် နေရာနှစ်ခုစလုံးတွင် သင်မြင်ရမည့်အရာများကို ရှင်းပြထားပါသည်။
 

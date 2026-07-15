@@ -3,7 +3,7 @@ title: Referenca sposobnosti
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenca sposobnosti {#abilities-reference}
+# Referenca sposobnosti
 
 Sposobnosti su atomske radnje koje Gratis AI Agent može pozvati na vašoj WordPress instalaciji. Svaka sposobnost je registrirana PHP klasa koja izlaže JSON shemu — agent čita tu shemu tijekom izvođenja kako bi razumio koji su parametri potrebni i što sposobnost vraća.
 

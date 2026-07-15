@@ -3,7 +3,7 @@ title: Registra endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# L'endpoint API Register di Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# L'endpoint API Register di Ultimate Multisite
 
 In questo tutorial imparerai come usare l'endpoint API /register di Ultimate Multisite per creare l'intero processo di onboarding per un nuovo cliente nella tua rete e come farlo con Zapier.
 

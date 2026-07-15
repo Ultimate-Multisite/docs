@@ -3,7 +3,7 @@ title: 'Leksyon 9: Pagpresyo alang sa Kita'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesson 9: Presyo para sa Kita {#lesson-9-pricing-for-profit}
+# Lesson 9: Presyo para sa Kita
 
 Sa Lesson 5, nagtakda kita og sinugdanan nga presyo alang sa mga plano sa FitSite. Karon, himoon nato ang atong estratehiya sa pagpresyo gamit ang mga teknik nga makadaghan sa kita, makadasig sa pag-upgrade, ug makapamenos sa 'churn' (pag-undang sa bayad).
 

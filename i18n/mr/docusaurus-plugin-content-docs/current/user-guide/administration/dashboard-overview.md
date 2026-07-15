@@ -3,7 +3,7 @@ title: डॅशबोर्ड विहंगावलोकन
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard चा आढावा {#dashboard-overview}
+# Dashboard चा आढावा
 
 Ultimate Multisite चे एक समर्पित **Dashboard** Ultimate Multisite मेनूमध्ये आहे, आणि ते Network Dashboard मध्ये widgets देखील जोडते. या लेखात तुम्हाला दोन्ही ठिकाणी काय दिसेल ते समाविष्ट आहे.
 

@@ -4,7 +4,7 @@ title: Дејство - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Дејство: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Дејство: wp_ultimo_support_agents_activation
 
 Дозволете им на другите делови од plugin да ги прикачат своите рутини за активација
 

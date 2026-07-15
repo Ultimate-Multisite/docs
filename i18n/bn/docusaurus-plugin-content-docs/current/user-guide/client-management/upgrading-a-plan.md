@@ -3,7 +3,7 @@ title: একটি প্ল্যান আপগ্রেড করা
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# একটি Plan আপগ্রেড করা (v2) {#upgrading-a-plan-v2}
+# একটি Plan আপগ্রেড করা (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite version 2.x নিয়ে।**_
 

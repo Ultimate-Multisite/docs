@@ -3,7 +3,7 @@ title: Pembina & Kotak Pasir Plugin
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Pembina Plugin & Sandbox {#plugin-builder--sandbox}
+# Pembina Plugin & Sandbox
 
 Gratis AI Agent v1.5.0 memperkenalkan **Sistem Pembina Plugin & Sandbox**, yang membolehkan pembantu AI menjana, mengaktifkan, dan mengurus plugin WordPress pada jaringan anda — semuanya melalui persekitaran sandbox yang selamat dan terasing.
 

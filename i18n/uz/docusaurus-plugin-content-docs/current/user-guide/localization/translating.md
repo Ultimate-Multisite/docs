@@ -3,7 +3,7 @@ title: Ultimate Multisite-ni tarjima qilish
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisiteni Tarjimasi {#translating-ultimate-multisite}
+# Ultimate Multisiteni Tarjimasi
 
 Ultimate Multisite ingliz tilida ishlab chiqilgan, ammo bu plugin to'liq tarjima qilinishi mumkin va biz faol tarjima hissalari uchun takliflarni qabul qilamiz.
 

@@ -3,7 +3,7 @@ title: የግኝት ቃለ-መጠይቅ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# የመመርመር ቃለ-መጠይቅ (Discovery Interview) {#discovery-interview}
+# የመመርመር ቃለ-መጠይቅ (Discovery Interview)
 
 **የመመርመር ቃለ-መጠይቅ (Discovery Interview)** በTheme Builder የንድፍ ሂደት ውስጥ የመጀመሪያው እርምጃ ነው። ይህ ቃለ-መጠይቅ ስለ ድረ-ገጽዎ፣ ስለ ንግድዎ እና ስለ ንድፍ ምርጫዎችዎ መረጃ ሰብስቦልዎታል፤ ይህም ግላዊ የሆነ ንድፍ እንዲፈጠር ያደርጋል።
 

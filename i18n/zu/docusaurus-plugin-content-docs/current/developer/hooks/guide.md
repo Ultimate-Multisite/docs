@@ -3,7 +3,7 @@ title: Umhlahlandlela Wokusetshenziswa Kwama-Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Umhlahlandlela Wokusetshenziswa kwama-Hooks {#hooks-usage-guide}
+# Umhlahlandlela Wokusetshenziswa kwama-Hooks
 
 Ultimate Multisite ihlinzeka ngama-action hooks angaphezu kuka-200 kanye nama-filter hooks angaphezu kuka-280. Leli khasi lihlanganisa ama-hooks asetshenziswa kakhulu ngezibonelo ezisebenzayo. Ukuze uthole ireferensi ephelele ekhiqizwe ngokuzenzakalelayo, phequlula amanye amakhasi kulesi sigaba.
 

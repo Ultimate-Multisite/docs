@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ang Ultimate Multisite ay may kasamang built-in na wizard na awtomatikong ginagawang WordPress installation mo para maging isang WordPress Multisite network. Tinatanggal nito ang pangangailangan na manu-manong i-edit ang `wp-config.php` o magpatakbo ng mga database command.
 

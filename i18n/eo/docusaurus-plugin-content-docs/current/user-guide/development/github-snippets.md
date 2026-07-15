@@ -3,7 +3,7 @@ title: GitHub fragmentoj
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kiel uzu utiliz Ultima Multisite snippets sur nia GitHub repository {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Kiel uzu utiliz Ultima Multisite snippets sur nia GitHub repository
 
 En GitHub repository existe kod snippet'o ki ofte petas de utilizatoroj de Ultimate Multisite kiuj vola aji pli malaj funkcio kiel aji skript Google Analytics sur paĝoj de registriĝo aŭ aji ŝuti meta box din de la admin dashboard.
 
@@ -19,7 +19,7 @@ Ekzistas 2 manoj por vi aji kodon aji.
 
   2. Must-Use Plugins (mu-plugins)
 
-# Kiel aji la snippet sur via temo's functions.php filiro aji. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Kiel aji la snippet sur via temo's functions.php filiro aji.
 
   1. Logas al via WordPress Network admin dashboard kaj diras Themes > Theme Editor (Vidare screenshotan alt).
 
@@ -29,7 +29,7 @@ Ekzistas 2 manoj por vi aji kodon aji.
 
 <!-- Screenshot ne estas disponabla: WordPress Theme Editor montras la edicion de functions.php filiro -->
 
-# Kiel krei Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Kiel krei Must-Use Plugins (mu-plugins)
 
 WordPress havas funkcion, kiu permesas al vi diri specialan funkcion nomitan "Must-Use Plugins", aŭ "mu-plugins" por kuro.
 

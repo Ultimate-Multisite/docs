@@ -4,7 +4,7 @@ title: Filter - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filter: wu_enforce_password_rules
 
 Menapis sama ada untuk menguatkuasakan peraturan kata laluan tambahan.
 

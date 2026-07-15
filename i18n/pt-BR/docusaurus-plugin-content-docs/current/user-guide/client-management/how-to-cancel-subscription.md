@@ -3,7 +3,7 @@ title: Como cancelar uma assinatura
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Como posso cancelar minha assinatura? {#how-can-i-cancel-my-subscription}
+# Como posso cancelar minha assinatura?
 
 Se você tiver uma licença Ultimate Multisite, poderá cancelar a renovação dela a qualquer momento que desejar. Basta seguir os passos abaixo:
 

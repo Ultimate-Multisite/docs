@@ -3,7 +3,7 @@ title: Guteza imbere irembo ryihariye
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Gutegura irembo ryihariye {#custom-gateway-development}
+# Gutegura irembo ryihariye
 
 Ushobora gukora amarembo yihariye yo kwishyura wongerera ubushobozi class `Base_Gateway`.
 

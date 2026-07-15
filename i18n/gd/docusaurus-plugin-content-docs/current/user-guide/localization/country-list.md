@@ -3,7 +3,7 @@ title: Lìst tairann
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Aistilidh a' chluarach an list tairann na Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Aistilidh a' chluarach an list tairann na Ultimate Multisite
 
 An dropdown airson a thabhail air tairann a tha a' sgrùdadh gu beatha (alphabetical) gu fhaighinn air eòganan Gàidhlig. Is e cheann a thiginn, aig an t-sgrùdadh, nach eil tairann a chùlann a tha a' sgrùdadh gu beatha (home country) a tha a' sgrùdadh anns an tairann mòr de dhinn.
 

@@ -3,7 +3,7 @@ title: Hostinger Multitenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 pridėja Hostinger multi-tenancy funkciją, leidžiančią išlaikyti įrenginius dalyvauti su suvereninės skaitmeninės infrastruktūros (tenant) nustatymais kartu su esamais Hostinger domenų mapavimo integracijomis.
 

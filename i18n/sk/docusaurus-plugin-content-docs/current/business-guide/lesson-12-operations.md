@@ -3,7 +3,7 @@ title: 'Lekcia 12: Riadenie podnikania'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekcia 12: Prevádzkovanie biznisu {#lesson-12-running-the-business}
+# Lekcia 12: Prevádzkovanie biznisu
 
 Platforma nie je projekt, ktorý dokončíte -- je to biznis, ktorý prevádzkujete. Táto lekcia pokrýva každodennú prevádzku správy FitSite: podporu, fakturáciu, údržbu a udržiavanie spokojnosti zákazníkov.
 

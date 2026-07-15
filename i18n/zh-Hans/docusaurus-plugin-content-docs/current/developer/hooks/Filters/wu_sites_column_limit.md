@@ -4,7 +4,7 @@ title: 过滤器 - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# 过滤器: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# 过滤器: wu_sites_column_limit
 
 过滤器用于更改网络内 get pluginssites 的值。
 

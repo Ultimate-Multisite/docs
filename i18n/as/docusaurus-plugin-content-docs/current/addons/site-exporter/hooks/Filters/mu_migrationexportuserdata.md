@@ -4,7 +4,7 @@ title: Filter - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filter: mu_migration/export/user/data
 
 এক্সপৰ্ট বা ইমপৰ্ট কৰিবলগীয়া ব্যৱহাৰকাৰী তথ্যৰ ডিফল্ট সেটটোক ফিল্টাৰ কৰে।
 

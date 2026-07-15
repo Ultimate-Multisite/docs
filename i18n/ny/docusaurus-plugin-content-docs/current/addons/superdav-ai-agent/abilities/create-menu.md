@@ -3,7 +3,7 @@ title: Pangani Menyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Pangani Menyu {#create-menu}
+# Pangani Menyu
 
 Kuthekera kwa **Pangani Menyu** kumapanga menyu za navigation za WordPress ndi chithandizo cha zilembo za navigation zosiyana ndi mitu ya masamba.
 

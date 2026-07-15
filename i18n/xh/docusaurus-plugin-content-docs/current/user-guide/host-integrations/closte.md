@@ -3,7 +3,7 @@ title: Udibaniso lwe-Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Udibaniso lwe-Closte {#closte-integration}
+# Udibaniso lwe-Closte
 
 ## Isishwankathelo {#overview}
 I-Closte liqonga lokusingathwa kwe-WordPress elilawulwayo elakhelwe kwiziseko ze-Google Cloud. Olu dibaniso luvumela ukuvumelanisa okuzenzekelayo kweedomeyini nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite ne-Closte.

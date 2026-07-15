@@ -3,7 +3,7 @@ title: Izifanekiso zeSayithi
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Iitemplate zeSayithi (v2) {#site-templates-v2}
+# Iitemplate zeSayithi (v2)
 
 _**QAPHELA: Eli nqaku libhekisa ku-Ultimate Multisite inguqulelo 2.x. Ukuba usebenzisa inguqulelo 1.x,**_ **jonga eli nqaku** _**.**_
 

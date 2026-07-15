@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# କାର୍ଯ୍ୟ: wu_activation {#action-wuactivation}
+# କାର୍ଯ୍ୟ: wu_activation
 
 plugin ର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ସକ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କର routine ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

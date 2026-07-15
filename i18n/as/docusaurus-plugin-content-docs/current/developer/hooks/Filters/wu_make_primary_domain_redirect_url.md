@@ -4,7 +4,7 @@ title: ফিল্টৰ - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Filter: wu_make_primary_domain_redirect_url
 
 এটা ডোমেইনক প্ৰাইমাৰী কৰাৰ পিছত রিডাইৰেক্ট URL ফিল্টাৰ কৰে।
 

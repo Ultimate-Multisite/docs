@@ -3,7 +3,7 @@ title: Ko'rinish imkoniyati
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Imkoniyat Ko'rinishi (Ability Visibility) {#ability-visibility}
+# Imkoniyat Ko'rinishi (Ability Visibility)
 
 Superdav AI Agent v1.12.0 **Imkoniyat Ko'rinishi** nazoratlarini joriy etadi, ular har qaysi imkoniyatning qaysi yuzalarda ko'rsatilishini boshqaradi. Bu administratorlarga REST API, MCP serverlari, WooCommerce integratsiyalari va boshqa interfeyslar orqali qaysi agent imkoniyatlari mavjudligini sozlash imkonini beradi.
 

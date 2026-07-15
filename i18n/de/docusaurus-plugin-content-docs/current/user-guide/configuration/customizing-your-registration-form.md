@@ -3,7 +3,7 @@ title: Ihr Registrierungsformular anpassen
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Dein Registrierungsformular anpassen {#customizing-your-registration-form}
+# Dein Registrierungsformular anpassen
 
 Damit dein Netzwerk einzigartig wirkt im Vergleich zu all den anderen SaaS-Angeboten, die auf der WordPress-Plattform aufgebaut sind, ermöglicht Ultimate Multisite dir, deine Registrierungs- und Login-Seiten mit unserer **Checkout Forms**-Funktion anzupassen.
 

@@ -3,7 +3,7 @@ title: Registre de canvis de l'Exportador de Sites
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Historial de versions de Site Exporter {#site-exporter-changelog}
+# Historial de versions de Site Exporter
 
 Version: 1.0.6 - Released on 2026-05-11
 * **Nou:** Les exportacions de site ara inclouen un `index.php` d'autoinici, de manera que el ZIP es pugui instal·lar en un allotjament nou sense necessitat d'instal·lar un plugin separat

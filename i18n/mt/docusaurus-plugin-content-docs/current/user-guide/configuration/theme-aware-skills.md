@@ -3,7 +3,7 @@ title: Skills b'awareness tal il tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills B'Aware Theme {#theme-aware-skills}
+# Skills B'Aware Theme
 
 Superdav AI Agent v1.10.0 jidda quar-quar nu skills b'aware theme li jidda awtomatik jidda jidda għall-theme WordPress attiv tiegħek. Il-skills hawn jipprovdu gida u capacità speċjalizzati li huma adattati għall-architettura u l-funzjonijiet tal-theme tiegħek.
 

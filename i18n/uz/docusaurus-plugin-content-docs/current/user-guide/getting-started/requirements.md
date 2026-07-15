@@ -3,7 +3,7 @@ title: Talablar
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Talablari {#ultimate-multisite-requirements}
+# Ultimate Multisite Talablari
 
 Ultimate Multisite-ni sotib olishdan oldin o'zingizga berishingiz kerak bo'lgan birinchi narsa — bizning pluginimizni ishga tushirish uchun qanday talablar mavjud? Xursandchilik bilan aytishim shart, Ultimate Multisite-ni ishga tushirish uchun juda oz oddiy talablar bor: **domen nomi**, yaxshi **hosting provayderi** va WordPressning **Multisite** o'rnatmasi. Bu yetarli!
 

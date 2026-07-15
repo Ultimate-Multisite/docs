@@ -4,7 +4,7 @@ title: Ketso - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Ketso: wu_cart_after_setup {#action-wucartaftersetup}
+# Ketso: wu_cart_after_setup
 
 Dumella bahlahisi ho etsa liphetoho tse eketsehileng ho checkout object.
 

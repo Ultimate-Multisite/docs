@@ -3,7 +3,7 @@ title: Референца за hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Референца за hooks {#hooks-reference}
+# Референца за hooks
 
 Автоматски генерирана документација за сите **59 акции** и **118 филтри** во Ultimate Multisite.
 

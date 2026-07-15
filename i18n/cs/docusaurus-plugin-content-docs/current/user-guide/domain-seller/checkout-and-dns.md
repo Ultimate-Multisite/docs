@@ -3,7 +3,7 @@ title: Pole pokladny a zákaznické DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout pole pro správu domén a zákaznická správa DNS {#checkout-field-and-customer-dns-management}
+# Checkout pole pro správu domén a zákaznická správa DNS
 
 ## Checkout pole Výběr domény {#the-domain-selection-checkout-field}
 

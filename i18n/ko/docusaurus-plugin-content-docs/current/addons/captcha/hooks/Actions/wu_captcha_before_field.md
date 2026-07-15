@@ -4,7 +4,7 @@ title: Action - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Action: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Action: wu_captcha_before_field
 
 캡차 필드가 렌더링되기 전에 실행됩니다.
 

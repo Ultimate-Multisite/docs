@@ -3,7 +3,7 @@ title: ساخت کۆدێنانی کەمکردنەوەکان
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# دروستکردنی کدهای تخفیف (نسخه ۲) {#creating-discount-codes-v2}
+# دروستکردنی کدهای تخفیف (نسخه ۲)
 
 _**نکته مهم: این مقاله به نسخه ۲.x Ultimate Multisite اشاره دارد.**_
 

@@ -4,7 +4,7 @@ title: 필터 - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# 필터: auth_redirect_scheme {#filter-authredirectscheme}
+# 필터: auth_redirect_scheme
 
 인증 리다이렉트 스킴을 필터링합니다.
 

@@ -3,7 +3,7 @@ title: Xử lý Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Xử lý Webhook {#webhook-handling}
+# Xử lý Webhook
 
 Tạo các điểm cuối webhook tùy chỉnh để nhận sự kiện từ các dịch vụ bên ngoài và đồng bộ hóa dữ liệu với Ultimate Multisite.
 

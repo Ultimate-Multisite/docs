@@ -3,7 +3,7 @@ title: Mga Advanced nga mga Pananglitan sa Code
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mga Advanced nga Sample sa Code {#advanced-code-examples}
+# Mga Advanced nga Sample sa Code
 
 Kini mga example para ipakita ang advanced nga mga pattern sa pag-integrate uban sa Ultimate Multisite.
 

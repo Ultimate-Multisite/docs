@@ -3,7 +3,7 @@ title: Avakirina Entegrasyoneke Registrar a Taybet
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Avakirina entegrasyona tomarkarekî taybet {#building-a-custom-registrar-integration}
+# Avakirina entegrasyona tomarkarekî taybet
 
 Pêveka Domain Seller şêwaza **Integration Registry** bi kar tîne. Her tomarkar class-eke PHP ye ku `Domain_Selling_Capability` pêk tîne û xwe bi rêya hook-a kiryarê `wu_domain_seller_register_capabilities` tomar dike.
 

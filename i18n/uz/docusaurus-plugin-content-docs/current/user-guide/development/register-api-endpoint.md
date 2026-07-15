@@ -3,7 +3,7 @@ title: API Uchinchi Nuqtasini ro'yxatdan o'tkazish
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API nuqtai nazaridan {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API nuqtai nazaridan
 
 Bu tutorialda siz Ultimate Multisite /register API endpoint dan foydalanib, tarmohingizdagi yangi mijoz uchun butun onboarding (kirish) jarayonini qanday yaratishingizni va buni Zapier orqali qanday amalga oshirishni o'rganasiz.
 

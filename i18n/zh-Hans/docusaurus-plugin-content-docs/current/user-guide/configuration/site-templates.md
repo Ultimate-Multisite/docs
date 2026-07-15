@@ -3,7 +3,7 @@ title: 站点模板
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# 站点模板 (v2) {#site-templates-v2}
+# 站点模板 (v2)
 
 _**注意：本文适用于 Ultimate Multisite 版本 2.x。如果你使用的是版本 1.x，**_ **请参阅这篇文章** _**。**_
 

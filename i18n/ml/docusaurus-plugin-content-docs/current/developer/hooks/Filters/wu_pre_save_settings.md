@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Filter: wu_pre_save_settings {#filter-wupresavesettings}
+# Filter: wu_pre_save_settings
 
 Ultimate Multisite വഴി സേവ് ചെയ്യുന്നതിന് മുൻപ് സെറ്റിംഗുകൾ ഫിൽട്ടർ ചെയ്യാൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

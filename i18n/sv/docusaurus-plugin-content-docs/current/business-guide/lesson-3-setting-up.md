@@ -3,7 +3,7 @@ title: 'Lektion 3: Ställa in ditt nätverk'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lektion 3: Sätta upp ditt nätverk {#lesson-3-setting-up-your-network}
+# Lektion 3: Sätta upp ditt nätverk
 
 Nu är det dags att bygga. I denna lektion installerar du Ultimate Multisite och konfigurerar grunden för FitSite-nätverket. Varje beslut här görs med fitnessbranschen i åtanke.
 

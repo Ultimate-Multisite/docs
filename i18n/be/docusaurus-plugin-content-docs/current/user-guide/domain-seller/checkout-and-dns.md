@@ -3,7 +3,7 @@ title: Поле афармлення замовы і DNS кліента
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Кіраванне полем афармлення замовы і DNS кліентаў {#checkout-field-and-customer-dns-management}
+# Кіраванне полем афармлення замовы і DNS кліентаў
 
 ## Поле выбару дамена пры афармленні замовы {#the-domain-selection-checkout-field}
 

@@ -4,7 +4,7 @@ title: Sivana - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Sivana: get_blogs_of_user {#filter-getblogsofuser}
+# Sivana: get_blogs_of_user
 
 Mamerina eto ny WP Filter tany am-boalohany, ho fiarovana fanampiny.
 

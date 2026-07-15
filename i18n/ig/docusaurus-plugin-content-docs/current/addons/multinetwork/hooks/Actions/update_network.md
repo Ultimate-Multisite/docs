@@ -4,7 +4,7 @@ title: Omume - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Omume: update_network {#action-updatenetwork}
+# Omume: update_network
 
 Na-eme mgbe emelitere netwọkụ dị adị.
 

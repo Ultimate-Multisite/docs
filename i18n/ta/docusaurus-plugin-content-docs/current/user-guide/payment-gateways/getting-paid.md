@@ -3,7 +3,7 @@ title: பணம் பெறுதல்
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# பணம் பெறுதல் (v2) {#getting-paid-v2}
+# பணம் பெறுதல் (v2)
 
 _**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐ குறிக்கிறது.**_
 

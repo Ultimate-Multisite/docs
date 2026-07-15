@@ -3,7 +3,7 @@ title: Übersetzig vo Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite Übersetzig {#translating-ultimate-multisite}
+# Ultimate Multisite Übersetzig
 
 Ultimate Multisite isch uf Englisch entwickelt, aber de Plugin isch komplett übersetzbar und mir freue üs über Übersetzigsbeiträg.
 

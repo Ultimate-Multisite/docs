@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Azione: wu_\{$this->id\}_scripts {#action-wuthis-idscripts}
+# Azione: wu_\{$this->id\}_scripts
 
 Attiva l'hook enqueue scripts.
 

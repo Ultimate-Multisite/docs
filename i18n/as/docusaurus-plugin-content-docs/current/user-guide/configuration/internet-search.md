@@ -3,7 +3,7 @@ title: ইণ্টাৰনেট অনুসন্ধান
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search {#internet-search}
+# Internet Search
 
 Gratis AI Agent v1.5.0 eku **Internet Search** kshamata jog korise, jeta AI assistant-k ek conversation-r samay web-ৰ পৰা samayik jankari prapt কৰাত সহায় কৰে। ইয়াৰ বাবে [Brave Search API](https://brave.com/search/api/) বা [Tavily API](https://tavily.com/) ব্যৱহাৰ কৰা হয়।
 

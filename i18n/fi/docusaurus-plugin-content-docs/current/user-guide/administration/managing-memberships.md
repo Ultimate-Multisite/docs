@@ -3,7 +3,7 @@ title: Jäsentysten hallinta
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Jäsenyyksien hallinta {#managing-memberships}
+# Jäsenyyksien hallinta
 
 Ultimate Multisite -järjestelmässä voit hallita jäsenyyksiäsi ja päästä käsiksi koko verkostosi tilausvaihtoehtoihin. Tarkista ja muokkaa tilaustietoja, kuten suunnitelmia ja tuotteita, sivujen määrää, laskutussummaa ja taajuutta, maksushistoria sekä aikaleimoja.
 

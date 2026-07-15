@@ -4,7 +4,7 @@ title: Igikorwa - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Igikorwa: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Igikorwa: wu_domain_mapping_register_filters
 
 Plugins zimwe zizabika URL mbere y’uko mapping iba ikora cyangwa zizubaka URLs mu buryo butandukanye butari mu mafiriteri yavuzwe haruguru.
 

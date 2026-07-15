@@ -3,7 +3,7 @@ title: 'Aralin 14: Ano ang Susunod'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Aralin 14: Ano ang Susunod {#lesson-14-what-comes-next}
+# Aralin 14: Ano ang Susunod
 
 Nakabuo ka ng isang niche website platform mula sa simula. Live na ang FitSite, nagseserbisyo sa mga fitness studio, at lumilikha ng paulit-ulit na kita. Tinitingnan ng huling araling ito kung saan ka pupunta mula rito.
 

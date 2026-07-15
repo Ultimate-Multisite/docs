@@ -3,7 +3,7 @@ title: RunCloud-integrasjon
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud-integrasjon {#runcloud-integration}
+# RunCloud-integrasjon
 
 ## Oversikt {#overview}
 RunCloud er en skybasert plattform for serveradministrasjon som lar deg enkelt distribuere og administrere webapplikasjoner på dine egne skyservere. Denne integrasjonen gjør det mulig å automatisk synkronisere domener og håndtere SSL-sertifikater mellom Ultimate Multisite og RunCloud.

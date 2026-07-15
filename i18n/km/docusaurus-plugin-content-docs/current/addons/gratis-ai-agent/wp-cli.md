@@ -3,7 +3,7 @@ title: ឯកសារយោង WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# ឯកសារយោង WP-CLI {#wp-cli-reference}
+# ឯកសារយោង WP-CLI
 
 Gratis AI Agent មានក្រុម command `wp gratis-ai-agent` សម្រាប់វាស់ស្ទង់សមត្ថភាព agent គ្រប់គ្រងសមត្ថភាព និងសួរស្ថានភាព agent ពីបន្ទាត់ command។ command ទាំងអស់ត្រូវការ WP-CLI 2.0 ឬខ្ពស់ជាងនេះ។
 

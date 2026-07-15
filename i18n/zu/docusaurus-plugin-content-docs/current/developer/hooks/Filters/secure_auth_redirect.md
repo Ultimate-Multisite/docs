@@ -4,7 +4,7 @@ title: Isihlungi - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Isihlungi: secure_auth_redirect {#filter-secureauthredirect}
+# Isihlungi: secure_auth_redirect
 
 Sihlunga ukuthi kusetshenziswe yini ukuqondisa kabusha kokuqinisekisa okuvikelekile.
 

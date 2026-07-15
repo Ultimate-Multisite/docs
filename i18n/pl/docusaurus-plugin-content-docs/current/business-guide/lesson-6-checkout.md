@@ -3,7 +3,7 @@ title: 'Lekcja 6: Doświadczenie rejestracji'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekcja 6: Doświadczenie rejestracji {#lesson-6-the-signup-experience}
+# Lekcja 6: Doświadczenie rejestracji
 
 Proces płatności (checkout flow) to moment, w którym zainteresowanie zamienia się w przychód. Nieporęczny lub ogólny proces rejestracji powoduje utratę klientów. Proces dedykowany konkretnej niszy, który mówi ich językiem i wydaje się naturalny, skutecznie zamienia ich w płacących klientów.
 

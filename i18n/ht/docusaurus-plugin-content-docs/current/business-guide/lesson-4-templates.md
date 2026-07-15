@@ -3,7 +3,7 @@ title: 'Leson 4: Konstwi modèl nich'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leson 4: Bati Modèl Nich {#lesson-4-building-niche-templates}
+# Leson 4: Bati Modèl Nich
 
 Modèl yo se nwayo pwopozisyon valè nich ou a. Yon pwopriyetè estidyo kondisyon fizik ki enskri epi ki wè yon sit ki deja sanble ak yon sit entènèt kondisyon fizik -- ak orè klas, pwofil antrenè, ak imaj ki apwopriye -- gen anpil plis chans pou l rete pase yon moun ki wè yon paj vid.
 

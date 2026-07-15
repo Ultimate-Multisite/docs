@@ -3,7 +3,7 @@ title: Listahan sa mga Pagbag-o sa GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Pagbag-o sa GoCardless {#gocardless-changelog}
+# Pagbag-o sa GoCardless
 
 Version: 1.0.3 - Gipagawas niadtong 2026-05-05
 * Gitul-id: Ang mga wala'y tag-iya nga nagpaabot (orphaned pending sites) gitlimpyo na kung ma-cancel ang GoCardless membership samtang naka-pending o on-hold state.

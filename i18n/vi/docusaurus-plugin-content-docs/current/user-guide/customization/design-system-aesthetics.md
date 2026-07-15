@@ -3,7 +3,7 @@ title: Kỹ năng thẩm mỹ hệ thống thiết kế
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế {#design-system-aesthetics-skill}
+# Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế
 
 **Kỹ năng Thiết lập tính thẩm mỹ cho Hệ thống Thiết kế** là một phương pháp hướng dẫn giúp bạn tinh chỉnh nhận diện trực quan của trang web. Nó giúp bạn đưa ra các quyết định nhất quán về kiểu chữ (typography), màu sắc, khoảng cách (spacing), và các giá trị định nghĩa chuyển động (motion tokens) – những yếu tố tạo nên hệ thống thiết kế của bạn.
 

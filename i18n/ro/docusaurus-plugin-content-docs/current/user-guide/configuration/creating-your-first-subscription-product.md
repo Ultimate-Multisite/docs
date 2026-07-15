@@ -3,7 +3,7 @@ title: Crearea primului tău produs cu abonament
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Crearea primului tău produs cu abonament (v2) {#creating-your-first-subscription-product-v2}
+# Crearea primului tău produs cu abonament (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol este doar pentru utilizatorii Ultimate Multisite versiunea 2.x. Dacă folosești versiunea 1.x,**_ **_**consultă acest articol**_**.
 

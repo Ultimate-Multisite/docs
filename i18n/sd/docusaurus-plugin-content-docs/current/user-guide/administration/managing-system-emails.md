@@ -3,7 +3,7 @@ title: سسٹم اي ميلز جو مانيجمنٽ
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# سسٹم ای میلز کو مینج کرنا (Managing System Emails) {#managing-system-emails}
+# سسٹم ای میلز کو مینج کرنا (Managing System Emails)
 
 Ultimate Multisite مختلف قسم جي نظامي اي ميلز (system emails) ڇاڪن جهڙو ڪم ڪند ٿا، جهڙوڪ سائن اپ ڪارفيڪيشن، پيمنتي وصولي جو رسید، ۽ ممبر شپ ۾ تبديليون. توهان ان اي ميل ٽيمپليٽس کي پنهنجي برانڊ سان مطابقت ڏيڻ لاءِ ڪسٽمائي (customize) ڪري سگهو ٿا.
 

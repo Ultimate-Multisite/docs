@@ -3,7 +3,7 @@ title: Generer Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generer logo SVG {#generate-logo-svg}
+# Generer logo SVG
 
 Funksjonaliteten **Generer logo SVG** lar Theme Builder lage og innebygge tilpassede logo-SVG-er direkte i WordPress-nettstedet ditt, med automatisk, trygg sanering av navnerommet.
 

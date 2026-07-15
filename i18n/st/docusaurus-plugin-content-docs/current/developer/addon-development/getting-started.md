@@ -3,7 +3,7 @@ title: Ho qala ka nts'etsopele ea litlatsetso
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ntshetsopele ya Keketso {#addon-development}
+# Ntshetsopele ya Keketso
 
 ## Sebopeho sa Keketso {#addon-structure}
 

@@ -3,7 +3,7 @@ title: 'Leasan 9: Prìseachadh airson Prothaid'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leasan 9: Prìsean airson Prothaid {#lesson-9-pricing-for-profit}
+# Leasan 9: Prìsean airson Prothaid
 
 Ann an Leasan 5 shuidhich sinn prìsean tùsail airson planaichean FitSite. A-nis bidh sinn a’ leasachadh na ro-innleachd phrìsean le dòighean a mheudaicheas teachd-a-steach, a bhrosnaicheas ùrachadh, agus a lùghdaicheas trèigsinn.
 

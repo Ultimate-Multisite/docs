@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Ma Netiweki Ambiri
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Zosintha za Multi-Network {#multi-network-changelog}
+# Zosintha za Multi-Network
 
 ### 1.3.0 {#130}
 * Chatsopano: Wowonera template ya network — sakatulani ndi kuwona template za network ndi panel yamoyo musanagule.

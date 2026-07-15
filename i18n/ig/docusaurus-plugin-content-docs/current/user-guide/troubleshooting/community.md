@@ -3,7 +3,7 @@ title: Ndu
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Naa gị jiri n'ụ Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# Naa gị jiri n'ụ Ultimate Multisite Community
 
 Ultimate Multisite Community na-en ihe ọkụ, ọ bụrụ na ị chọrọ ịkpọ aka ndị ọzọ na Ultimate Multisite na-enweghị site n'ime, ị nwere ike ịgba n'ebe a. Ka ọ dị mma ka ị gidi: https://community.ultimatemultisite.com/home.
 

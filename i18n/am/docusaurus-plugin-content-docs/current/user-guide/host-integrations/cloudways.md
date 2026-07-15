@@ -3,7 +3,7 @@ title: Cloudways Integration
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 Cloudways በDigitalOcean፣ AWS፣ Google Cloud እና ሌሎችንም የመሳሰሉ የተለያዩ የክላውድ ሰሪዎችን (cloud providers) ላይ WordPress ድረ-ገጾችን እንድትሰርጽ የሚያስችል የሚተዳደር የክላውድ ሆስቲንግ መድረክ ነው። ይህ integration ደግሞ በUltimate Multisite እና በCloudways መካከል የዶሜን ስም (domain) መረጃዎችን በራስ-ሰር ማመሳሰል (automatic domain syncing) እና የSSL ሰርተፍኬት አስተዳደርን ያስችላል።

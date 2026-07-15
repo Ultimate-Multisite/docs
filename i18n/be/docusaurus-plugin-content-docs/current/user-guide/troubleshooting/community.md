@@ -3,7 +3,7 @@ title: Супольнасць
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Як прыясці ў супольнасць Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Як прыясці ў супольнасць Ultimate Multisite
 
 Ultimate Multisite Community — гэта месца, дзе вы можаце спілкувацца з іншымі карыстальнікамі Ultimate Multisite і падільاضвацца парадамі, вопытам і больш. Каб атрымаць доступ да Ultimate Multisite Community, зайзіце на https://community.ultimatemultisite.com/home.
 

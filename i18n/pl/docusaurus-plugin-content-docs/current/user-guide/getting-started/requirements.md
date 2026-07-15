@@ -3,7 +3,7 @@ title: Wymagania
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Wymagania Ultimate Multisite {#ultimate-multisite-requirements}
+# Wymagania Ultimate Multisite
 
 Zanim zdecydujesz się na zakup Ultimate Multisite, prawdopodobnie zastanawiasz się, jakie są wymagania do uruchomienia naszej wtyczki. Na szczęście wymagań jest niewiele: **nazwa domeny**, dobry **dostawca hostingu** oraz instalacja WordPress **Multisite**. To wszystko, czego potrzebujesz!
 

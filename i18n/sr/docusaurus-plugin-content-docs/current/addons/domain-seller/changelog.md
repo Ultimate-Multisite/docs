@@ -3,7 +3,7 @@ title: Дневник измена Продавца домена
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Дневник измена Domain Seller {#domain-seller-changelog}
+# Дневник измена Domain Seller
 
 Верзија 1.3.0 - Објављено 2026-06-02
 - Ново: Додато упозорење у network-admin-у када стање HostAfrica препродавца постане прениско

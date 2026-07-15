@@ -3,7 +3,7 @@ title: 'Leciono 5: Projektado de Viaj Planoj'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leciono 5: Desegni Viajn Abonplanojn {#lesson-5-designing-your-plans}
+# Leciono 5: Desegni Viajn Abonplanojn
 
 Viaj abonplanaj niveloj ne estas nur prezaj niveloj -- ili estas spegulo de kiel viaj niĉaj klientoj efektive funkcias. En ĉi tiu leciono vi desegnos produktajn nivelojn, kiuj kongruas kun la realaj bezonoj de trejnad-komercoj je malsamaj stadioj.
 

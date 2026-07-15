@@ -3,7 +3,7 @@ title: Przewodnik po integracji
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Przewodnik integracji {#integration-guide}
+# Przewodnik integracji
 
 Ten przewodnik omawia typowe wzorce integracji z Ultimate Multisite, w tym łączenie z usługami zewnętrznymi, tworzenie niestandardowych bramek płatności i obsługę webhooków.
 

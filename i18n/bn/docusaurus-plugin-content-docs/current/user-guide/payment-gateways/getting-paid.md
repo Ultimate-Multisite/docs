@@ -3,7 +3,7 @@ title: পেমেন্ট গ্রহণ
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# পেমেন্ট গ্রহণ (v2) {#getting-paid-v2}
+# পেমেন্ট গ্রহণ (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কে।**_
 

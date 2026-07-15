@@ -3,7 +3,7 @@ title: Registruokite paskyrą per Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Zaregistruoti paskyba per Zapier {#event-register-an-account-via-zapier}
+# Event: Zaregistruoti paskyba per Zapier
 
 Šiame straipsnyje [Integracija Ultimate Multisite su Zapieriu](zapier.md) meseliai diskutavome, kaip naudoti Zapierį atlikti skirtingus veiksmus Ultimate Multisite bazavus įspūdis ir įvykius. Šiame straipsnyje pateiksime, kaip galite integruoti trečias pusės programėles (3rd party applications). Naudojime Google Sheets kaip duomenų šaltinį ir siunčiame informaciją į Ultimate Multisite, kad nustatytumėte paskyrą.
 

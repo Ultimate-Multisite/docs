@@ -4,7 +4,7 @@ title: Filtër - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filtër: wu_country_get_cities {#filter-wucountrygetcities}
+# Filtër: wu_country_get_cities
 
 Kthen listën e qyteteve për një shtet në një vend.
 

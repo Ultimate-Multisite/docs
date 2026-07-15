@@ -3,7 +3,7 @@ title: חיפוש אינטרנט
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# חיפוש אינטרנט {#internet-search}
+# חיפוש אינטרנט
 
 תוסף Gratis AI Agent v1.5.0 מוסיף יכולת **חיפוש אינטרנט** המאפשרת לסייע ה-AI לשלוף מידע עדכני מהאינטרנט במהלך שיחה. יכולת זו מופעלת על ידי [Brave Search API](https://brave.com/search/api/) או [Tavily API](https://tavily.com/).
 

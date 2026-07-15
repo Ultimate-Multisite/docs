@@ -3,7 +3,7 @@ title: Moduli di Contatto per Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Moduli di contatto con Site Builder {#site-builder-contact-forms}
+# Moduli di contatto con Site Builder
 
 Superdav AI Agent v1.10.0 aggiunge la possibilità di creare moduli di contatto direttamente dall'interfaccia chat utilizzando l'agente Site Builder. Questo ti permette di aggiungere moduli di contatto completamente funzionanti a qualsiasi pagina senza dover lasciare la chat.
 

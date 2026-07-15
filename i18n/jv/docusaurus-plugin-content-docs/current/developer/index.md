@@ -3,7 +3,7 @@ title: Dokumentasi Pangembang
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasi Developer {#developer-documentation}
+# Dokumentasi Developer
 
 Pandhuan iki nyedhiyakake kabeh sing dibutuhake developer kanggo ngintegrasikake, ngembangake, utawa nggawe addon kanggo Ultimate Multisite. Ultimate Multisite ngowahi jaringan WordPress Multisite dadi platform Website-as-a-Service (WaaS).
 

@@ -4,7 +4,7 @@ title: Parzûn - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Parzûn: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Parzûn: wu_get_migration_steps
 
 Destûrê bide pêşvebir û pêvekan ku gavên nû yên koçberiyê zêde bikin
 

@@ -3,7 +3,7 @@ title: Ikiganiro cyo Gusobanukirwa
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Ikiganiro cyo Kumenya Iby'ibanze {#discovery-interview}
+# Ikiganiro cyo Kumenya Iby'ibanze
 
 **Ikiganiro cyo Kumenya Iby'ibanze** ni intambwe ya mbere mu nzira y'igishushanyo ya Theme Builder. Gikusanya amakuru yerekeye urubuga rwawe, ubucuruzi bwawe, n'ibyo ukunda mu gishushanyo kugira ngo hakorwe theme yihariye.
 

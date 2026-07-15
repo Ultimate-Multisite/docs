@@ -4,7 +4,7 @@ title: फ़िल्टर - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 डेवलपर्स को डिफ़ॉल्ट WooCommerce बिलिंग पता फ़ील्ड को फ़िल्टर करने की अनुमति देता है।
 

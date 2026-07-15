@@ -4,7 +4,7 @@ title: Sía - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Sía: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Sía: wu_current_set_customer
 
 Leyfir forriturum að breyta sjálfgefinni hegðun og stilla núverandi viðskiptavin á annan hátt.
 

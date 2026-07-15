@@ -3,7 +3,7 @@ title: 'Lektion 6: Das Anmelderlebnis'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lektion 6: Das Registrierungserlebnis {#lesson-6-the-signup-experience}
+# Lektion 6: Das Registrierungserlebnis
 
 Der Bezahlvorgang ist der Punkt, an dem Interesse zu Umsatz wird. Ein verwirrender oder generischer Anmeldeprozess verliert Kunden. Ein auf eine Nische zugeschnittener Ablauf, der deren Sprache spricht und sich mühelos anfühlt, wandelt sie in zahlende Kunden um.
 

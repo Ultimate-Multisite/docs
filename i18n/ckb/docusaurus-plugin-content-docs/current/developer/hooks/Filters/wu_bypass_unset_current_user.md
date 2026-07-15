@@ -4,7 +4,7 @@ title: فلتەر - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# پاڵێوەر: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# پاڵێوەر: wu_bypass_unset_current_user
 
 ڕێگە بە پەرەپێدەران بدە بۆ تێپەڕاندنی کۆدی unset کردنی بەکارهێنەری ئێستا.
 

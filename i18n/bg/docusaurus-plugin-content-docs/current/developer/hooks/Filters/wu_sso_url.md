@@ -4,7 +4,7 @@ title: Филтър - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Филтър: wu_sso_url {#filter-wussourl}
+# Филтър: wu_sso_url
 
 Филтрира генерираните SSO URL адреси, преди да бъдат върнати за действия на клиенти между домейни.
 

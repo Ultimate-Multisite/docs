@@ -4,7 +4,7 @@ title: Filter - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filter: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Filter: get_site_url_for_previewer
 
 ကြိုတင်ကြည့်ရှုစနစ် (previewer) တွင် အသုံးပြုမည့် URL ကို ပလပ်အင် ဖန်တီးသူများက စစ်ထုတ်နိုင်စေရန် ခွင့်ပြုပါသည်။
 

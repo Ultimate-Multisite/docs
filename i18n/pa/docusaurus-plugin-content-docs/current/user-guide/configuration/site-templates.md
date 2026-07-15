@@ -3,7 +3,7 @@ title: ਸਾਈਟ ਟੈਂਪਲੇਟس
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# ਸਾਈਟ ਟੈਂਪਲੇਟ (v2) {#site-templates-v2}
+# ਸਾਈਟ ਟੈਂਪਲੇਟ (v2)
 
 _**ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ। ਜੇ ਤੁਸੀਂ ਵਰਜਨ 1.x ਵਰਤ ਰਹੇ ਹੋ,**_ **ਇਹ ਲੇਖ ਵੇਖੋ** _**।**_
 

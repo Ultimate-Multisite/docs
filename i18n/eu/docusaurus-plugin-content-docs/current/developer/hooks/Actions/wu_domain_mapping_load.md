@@ -4,7 +4,7 @@ title: Ekintza - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Ekintza: wu_domain_mapping_load {#action-wudomainmappingload}
+# Ekintza: wu_domain_mapping_load
 
 Gure oinarrizko domeinu-mapaketa kargatu ondoren abiarazten da
 

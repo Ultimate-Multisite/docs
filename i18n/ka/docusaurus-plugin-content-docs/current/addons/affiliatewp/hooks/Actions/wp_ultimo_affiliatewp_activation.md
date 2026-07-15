@@ -4,7 +4,7 @@ title: მოქმედება - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# მოქმედება: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# მოქმედება: wp_ultimo_affiliatewp_activation
 
 მიეცით plugin-ის სხვა ნაწილებს საშუალება, გააბან თავიანთი რუტინები აქტივაციისთვის
 

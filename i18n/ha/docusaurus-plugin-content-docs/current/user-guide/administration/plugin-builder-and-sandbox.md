@@ -3,7 +3,7 @@ title: Gudanar da Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# سازنده و آزمایشگاه افزونه‌ها (Plugin Builder & Sandbox) {#plugin-builder--sandbox}
+# سازنده و آزمایشگاه افزونه‌ها (Plugin Builder & Sandbox)
 
 Gratis AI Agent v1.5.0-yi **سازنده و آزمایشگاه سیستم (Plugin Builder & Sandbox System)** darjara, wanda ke AI assistant zai iya ƙirƙira, ya kuma sarrafa WordPress plugins a kan gida ɗinka — kullum ta hanyar wani muhalli na tsaro da aka sanya (sandbox environment).
 

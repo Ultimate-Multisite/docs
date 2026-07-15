@@ -3,7 +3,7 @@ title: Chek kodlari yaratish
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Cheg'imlar (Discount Codes) Yaratish (v2) {#creating-discount-codes-v2}
+# Cheg'imlar (Discount Codes) Yaratish (v2)
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 

@@ -3,7 +3,7 @@ title: Aaforderige
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Aaforderige {#ultimate-multisite-requirements}
+# Ultimate Multisite Aaforderige
 
 S'erscht, wat Sie sich fröge chönnte, bevor Sie Ultimate Multisite chaufe, sind d'Aaforderige, um üse Plugin laufe z'lah. Glücklicherwiis git's nur e paar grundlegendi Aaforderige für de Betrieb vo Ultimate Multisite: en **Domainname**, en guete **Hosting-Provider** und en WordPress **Multisite** Installation. Das isch alles, was Sie bruuche!
 

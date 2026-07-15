@@ -3,7 +3,7 @@ title: Te whakamārama i te Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Whakarongo i te Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Whakarongo i te Ultimate Multisite Dashboard
 
 He aha mō mātou, i te whakawhanake o ngā optiona whakamārama mō te whakataunga me ngā mahi o te Ultimate Multisite, kia whakatika atu ki te dashboard.
 

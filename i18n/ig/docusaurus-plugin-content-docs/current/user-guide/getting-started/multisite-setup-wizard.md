@@ -3,7 +3,7 @@ title: Wizarda Nkwado Mmmụta
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Setup Multisite {#multisite-setup-wizard}
+# Setup Multisite
 
 Ultimate Multisite nwere wizard on-board na-aka, nke ga-enweghị ịgbanwe WordPress installation ọ bụla na WordPress Multisite network. A na-eme ihe ndị a na-akụghị ịgbanwe `wp-config.php` ma na-arụ database commands.
 

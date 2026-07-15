@@ -3,7 +3,7 @@ title: Zapier 連携
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite と Zapier の連携 {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite と Zapier の連携
 
 別の記事では、[Webhooks](webhooks.md) と、それを 3rd party アプリケーションとの連携に使う方法について説明しました。
 

@@ -3,7 +3,7 @@ title: Kijan pou Enstale WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kijan mwen mete WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kijan mwen mete WordPress Multisite?
 
 WordPress Multisite pèmèt ou gen yon rezo sit sou yon sèl enstalasyon. Sa se yon fonksyon ki vini ak li, men li pa aktif de fèt.
 
@@ -61,7 +61,7 @@ E kòd sa a, ki bay pa WordPress la, nan fichye _**.htaccess**_ ou an :
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# ajoute yon slash final pou /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# ajoute yon slash final pou /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

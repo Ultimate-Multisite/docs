@@ -3,7 +3,7 @@ title: Avís de Retirada del Mode de Constructor de Sites
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Avís de eliminació del mode Site Builder {#site-builder-mode-removal-notice}
+# Avís de eliminació del mode Site Builder
 
 **El mode Site Builder s'ha eliminat en Superdav AI Agent v1.12.0.** Si estaves utilitzant el mode Site Builder, hauràs de migrar a l'**agent Setup Assistant** per a la creació de temes i la configuració del lloc web.
 

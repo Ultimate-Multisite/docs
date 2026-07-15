@@ -4,7 +4,7 @@ title: Scagaire - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Scagaire: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
+# Scagaire: ultimate_multisite_content_sync_get_option
 
 Filleann sé luach rogha líonra atá tiontaithe ina slug.
 

@@ -3,7 +3,7 @@ title: Hướng dẫn tích hợp
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Hướng dẫn tích hợp {#integration-guide}
+# Hướng dẫn tích hợp
 
 Hướng dẫn này bao gồm các mẫu tích hợp phổ biến với Ultimate Multisite, bao gồm kết nối với các dịch vụ bên ngoài, xây dựng cổng thanh toán tùy chỉnh và xử lý webhooks.
 

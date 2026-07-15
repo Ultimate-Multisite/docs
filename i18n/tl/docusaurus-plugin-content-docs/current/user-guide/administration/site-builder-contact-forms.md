@@ -3,7 +3,7 @@ title: Mga Contact Form ng Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Mga Contact Form sa Site Builder {#site-builder-contact-forms}
+# Mga Contact Form sa Site Builder
 
 Ang Superdav AI Agent v1.10.0 ay nagdagdag ng kakayahang gumawa ng mga contact form nang direkta mula sa chat interface gamit ang Site Builder agent. Dahil dito, maaari kang magdagdag ng mga kumpletong functional na contact form sa anumang pahina nang hindi umaalis sa chat.
 

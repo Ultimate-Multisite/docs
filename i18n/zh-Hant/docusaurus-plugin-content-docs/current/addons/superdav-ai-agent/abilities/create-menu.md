@@ -3,7 +3,7 @@ title: 建立選單
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# 建立選單 {#create-menu}
+# 建立選單
 
 **建立選單** 功能可以建立 WordPress 導航選單，並且支援與頁面標題不同的獨立導航標籤。
 

@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe Mmekọrịta Ọdịnaya
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Ndekọ mgbanwe Content Sync {#content-sync-changelog}
+# Ndekọ mgbanwe Content Sync
 
 ### Ụdị 1.1.0 - E wepụtara na 2025-12-31 {#version-110---released-on-2025-12-31}
 * Ọhụrụ: Nkwado maka ime sync ụdị post niile (posts, peeji, ụdị post ahaziri)

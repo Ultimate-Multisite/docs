@@ -4,7 +4,7 @@ title: Isenzo - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Isenzo: update_network {#action-updatenetwork}
+# Isenzo: update_network
 
 Sisebenza ngemva kokuba inethiwekhi ekhona ibuyekeziwe.
 

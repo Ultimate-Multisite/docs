@@ -3,7 +3,7 @@ title: יצירת קודי הנחה
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# יצירת קודי הנחה (v2) {#creating-discount-codes-v2}
+# יצירת קודי הנחה (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
 

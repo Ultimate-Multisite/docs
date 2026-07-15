@@ -4,7 +4,7 @@ title: Çalakî - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Çalakî: wu_page_added {#action-wupageadded}
+# Çalakî: wu_page_added
 
 Destûr bide pêşdebirên pêvekê ku dema rûpel tên qeydkirin tiştên zêde bimeşînin.
 

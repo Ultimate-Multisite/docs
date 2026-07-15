@@ -3,7 +3,7 @@ title: Loco Translate የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate የለውጥ መዝገብ {#loco-translate-changelog}
+# Loco Translate የለውጥ መዝገብ
 
 ### 1.0.1 {#101}
 * ከቅርብ ጊዜው Loco Translate ስሪት ጋር የተሻሻለ ተኳሃኝነት።

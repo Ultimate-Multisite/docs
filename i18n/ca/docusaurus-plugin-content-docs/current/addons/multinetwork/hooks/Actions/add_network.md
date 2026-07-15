@@ -4,7 +4,7 @@ title: Acció - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Acció: add_network {#action-addnetwork}
+# Acció: add_network
 
 S'executa després que s'ha afegit una nova xarxa.
 

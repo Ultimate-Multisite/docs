@@ -3,7 +3,7 @@ title: CyberPanel Integrasi
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrasi {#cyberpanel-integration}
+# CyberPanel Integrasi
 
 Bu kılavuzda Ultimate Multisite CyberPanel entegrasyny nädip sozladyp biljeklerini düşündirip aýdýaryn. Bu arkaly şeýlelikde, ulgamanyzda haritalanan domenler awtomatiki wep-hostlar (virtual host) hökmünde CyberPanelde goýulýar (we goýulmadyk) we Let's Encrypt arkaly opsional awtomatik SSL proviziyir edip bilersiňiz.
 

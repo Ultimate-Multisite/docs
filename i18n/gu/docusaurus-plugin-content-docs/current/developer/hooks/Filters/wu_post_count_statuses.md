@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 પ્લગઇન ડેવલપર્સને એ બદલવાની મંજૂરી આપે છે કે કયા post status ની ગણતરી થવી જોઈએ. સામાન્ય રીતે (By default), published અને private posts ની ગણતરી થાય છે.
 

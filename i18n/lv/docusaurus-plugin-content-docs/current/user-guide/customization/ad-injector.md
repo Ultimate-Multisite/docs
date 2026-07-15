@@ -3,7 +3,7 @@ title: Reklāmas injektors
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Reklāšanu reklamās savā tīklā ar Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Reklāšanu reklamās savā tīklā ar Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector ir **beizdrošs papildu komponentes**, kas nodrošina rīkus, lai uzstādītu reklāmas savos plānos tieši no rediģēšanas lapas.
 

@@ -4,7 +4,7 @@ title: ফিল্টাৰ - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url {#filter-wussourl}
+# Filter: wu_sso_url
 
 ক্ৰছ-ডোমেইন গ্ৰাহক কাৰ্যৰ বাবে ঘূৰাই দিয়াৰ আগতে সৃষ্টি কৰা SSO URLs ফিল্টাৰ কৰে।
 

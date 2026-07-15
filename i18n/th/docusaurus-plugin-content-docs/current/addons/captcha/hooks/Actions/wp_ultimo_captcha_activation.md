@@ -4,7 +4,7 @@ title: การดำเนินการ - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# แอคชัน: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# แอคชัน: wp_ultimo_captcha_activation
 
 ให้ส่วนอื่น ๆ ของปลั๊กอินสามารถเชื่อมต่อโค้ด (routines) สำหรับการทำงานเมื่อเปิดใช้งาน (activation)
 

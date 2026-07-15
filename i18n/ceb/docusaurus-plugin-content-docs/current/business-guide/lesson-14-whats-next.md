@@ -3,7 +3,7 @@ title: 'Leksyon 14: Unsa ang Sunod'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lesson 14: Unsa ang Sunod {#lesson-14-what-comes-next}
+# Lesson 14: Unsa ang Sunod
 
 Naghimo ka na og niche website platform gikan sa sinugdanan. Ang FitSite kay nag-andar na, nagserbisyo sa mga fitness studio, ug nakahimo na og padayon nga kita (recurring revenue). Kini nga katapusang leksyon magtan-aw kung asa pa man mo moadto gikan ani.
 

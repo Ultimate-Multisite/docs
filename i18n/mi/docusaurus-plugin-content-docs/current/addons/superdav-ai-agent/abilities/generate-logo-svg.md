@@ -3,7 +3,7 @@ title: Waihanga SVG Waitohu
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Whakaputa Logo SVG {#generate-logo-svg}
+# Whakaputa Logo SVG
 
 Mā te āheinga **Whakaputa Logo SVG** ka taea e Theme Builder te waihanga me te tāmau i ngā SVG tohu waitohu ritenga ki tō pae WordPress me te whakahoromata aunoa e haumaru ana mō te namespace.
 

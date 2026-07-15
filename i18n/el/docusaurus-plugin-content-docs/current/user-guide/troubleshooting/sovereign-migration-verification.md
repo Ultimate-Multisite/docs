@@ -3,7 +3,7 @@ title: Επαλήθευση Μεταφοράς Εξουσιώδους
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Επαλήθευση Μεταφοράς Εξουσιώδους (Sovereign Migration Verification) {#sovereign-migration-verification}
+# Επαλήθευση Μεταφοράς Εξουσιώδους (Sovereign Migration Verification)
 
 Το Ultimate Multisite: Multi-Tenancy 1.2.0 περιλαμβάνει εντολές επαλήθευσης WP-CLI για μεταφορές εξουσιώδων tenants. Χρησιμοποιήστε τις όταν μια μεταφορά tenant, επίσκεψη SSO ή εγκατάσταση σε απομονωμένο περιβάλλον δεν συμπεριφέρονται όπως αναμένεται.
 

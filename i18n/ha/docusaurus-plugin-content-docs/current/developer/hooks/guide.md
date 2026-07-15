@@ -3,7 +3,7 @@ title: Jagorar Amfani da Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Jagoran Amfani da Hooks {#hooks-usage-guide}
+# Jagoran Amfani da Hooks
 
 Ultimate Multisite yana samar da action hooks 200+ da filter hooks 280+. Wannan shafi yana bayani kan hooks da aka fi amfani da su tare da misalai na aiki. Don cikakken kundin bayani da aka samar ta atomatik, duba sauran shafuka a wannan sashe.
 

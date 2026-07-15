@@ -3,7 +3,7 @@ title: Mẫu trang
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Mẫu trang (v2) {#site-templates-v2}
+# Mẫu trang (v2)
 
 _**LƯU Ý: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x. Nếu bạn đang sử dụng phiên bản 1.x,**_ **hãy xem bài viết này** _**.**_
 

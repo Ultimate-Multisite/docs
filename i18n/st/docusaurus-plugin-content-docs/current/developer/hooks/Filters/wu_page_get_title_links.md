@@ -4,7 +4,7 @@ title: Sefe - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Sefe: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Sefe: wu_page_get_title_links
 
 Dumella bahlahisi ba plugin, le rona, ho eketsa dihokelo tsa ketso maqepheng a rona a ho hlophisa
 

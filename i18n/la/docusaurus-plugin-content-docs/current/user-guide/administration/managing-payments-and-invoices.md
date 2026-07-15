@@ -3,7 +3,7 @@ title: Administrare pagamenta et facturas
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagamentum et Facturae Administratio {#managing-payments-and-invoices}
+# Pagamentum et Facturae Administratio
 
 ## Configuratio Paymentium {#payment-settings}
 

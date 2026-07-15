@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# 篩選器：wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# 篩選器：wp_ultimo_site_exporter_get_option
 
 返回路徑化（slugfied）的網路選項值。
 

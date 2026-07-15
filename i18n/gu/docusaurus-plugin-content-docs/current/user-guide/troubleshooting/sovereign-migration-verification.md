@@ -3,7 +3,7 @@ title: સાર્વભૌમ માઇગ્રેશન ચકાસણી
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# સાર્વભૌમ માઇગ્રેશન ચકાસણી (Sovereign Migration Verification) {#sovereign-migration-verification}
+# સાર્વભૌમ માઇગ્રેશન ચકાસણી (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 માં સાર્વભૌમ ટેન્ન્ટ માઇગ્રેશન્સ માટે WP-CLI વેરિફિકેશન કમાન્ડ્સ છે. જ્યારે કોઈ ટેન્ન્ટ માઇગ્રેશન, SSO વિઝિટ અથવા અલગ ઇન્સ્ટોલેશન અપેક્ષા મુજબ કામ ન કરે ત્યારે તેનો ઉપયોગ કરો.
 

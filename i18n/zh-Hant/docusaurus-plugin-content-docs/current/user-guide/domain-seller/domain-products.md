@@ -3,7 +3,7 @@ title: 網域產品與定價
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# 網域產品與定價 {#domain-products-and-pricing}
+# 網域產品與定價
 
 網域產品是用來控制定價、TLD、WHOIS 隱私和服務提供商選擇的方式。每個網域產品都是一個標準的 Ultimate Multisite 產品，但額外增加了一個 **網域設定 (Domain Settings)** 標籤頁。
 

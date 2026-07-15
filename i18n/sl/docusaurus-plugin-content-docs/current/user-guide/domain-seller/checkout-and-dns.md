@@ -3,7 +3,7 @@ title: Polje za plačilo in DNS stranke
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Upravljanje polja za plačilo in DNS stranke kupca {#checkout-field-and-customer-dns-management}
+# Upravljanje polja za plačilo in DNS stranke kupca
 
 ## Polje izbira domena v checkoutu {#the-domain-selection-checkout-field}
 

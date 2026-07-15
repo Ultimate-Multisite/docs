@@ -3,7 +3,7 @@ title: Formularios de pago
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularios de Pago (Checkout Forms) {#checkout-forms}
+# Formularios de Pago (Checkout Forms)
 
 Os Formularios de Pago son unha forma fácil e flexible de experimentar diferentes enfoques ao intentar converter novos clientes.
 

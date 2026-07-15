@@ -3,7 +3,7 @@ title: Oversiwn y Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Oglwyddol y Cyflwyniadau {#dashboard-overview}
+# Oglwyddol y Cyflwyniadau
 
 Mae Ultimate Multisite yn cael **Dashboard** clinol olaf i'r menydd Ultimate Multisite, ac hefyd yn ychwanegu widgets i'r Network Dashboard. Mae'r ail ddefnyddiad hwn yn gwrcio beth byddwch yn gweld mewn both lle.
 

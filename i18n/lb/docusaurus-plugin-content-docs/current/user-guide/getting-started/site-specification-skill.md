@@ -3,7 +3,7 @@ title: Site-Spezifikationsfähigkeiten
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Fähigkeit {#site-specification-skill}
+# Site Specification Fähigkeit
 
 D'**Site Specification Fähigkeit** isch en strukturierte Wäg, um d'Zil vo Ihrer Site, d'Zielgruppe und d'Markenidentität z'erfange. Dës Information wird im Ihr **site_brief** Gedächtnis gspeicheret, wo Agenten über Sitzige hinweg bruche, um konsistenti, kontextbewussti Hilf z'biete.
 

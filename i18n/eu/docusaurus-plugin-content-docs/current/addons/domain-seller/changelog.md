@@ -3,7 +3,7 @@ title: Domeinu-saltzailearen aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domeinu-saltzailearen aldaketa-erregistroa {#domain-seller-changelog}
+# Domeinu-saltzailearen aldaketa-erregistroa
 
 1.3.0 bertsioa - 2026-06-02an argitaratua
 - Berria: network-admin abisu bat gehitu da HostAfrica birsaltzailearen saldoa baxuegi geratzen denean

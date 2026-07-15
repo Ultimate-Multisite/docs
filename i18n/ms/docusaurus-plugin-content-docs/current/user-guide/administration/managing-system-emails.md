@@ -3,7 +3,7 @@ title: Mengurus E-mel Sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Mengurus E-mel Sistem {#managing-system-emails}
+# Mengurus E-mel Sistem
 
 Ultimate Multisite menghantar pelbagai e-mel sistem untuk acara seperti pengesahan pendaftaran, resit pembayaran, dan perubahan keahlian. Anda boleh menyesuaikan templat e-mel ini agar sepadan dengan jenama anda.
 

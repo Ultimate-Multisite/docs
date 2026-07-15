@@ -3,7 +3,7 @@ title: 첫 번째 구독 상품 만들기
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# 첫 Subscription Product 만들기 (v2) {#creating-your-first-subscription-product-v2}
+# 첫 Subscription Product 만들기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite version 2.x 사용자를 위한 것입니다. version 1.x를 사용 중이라면,**_ **_**이 문서를 참조하세요**_**.
 

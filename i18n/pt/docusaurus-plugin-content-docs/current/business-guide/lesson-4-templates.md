@@ -3,7 +3,7 @@ title: 'Lição 4: Construir Modelos de Nicho'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lição 4: Criar Modelos de Nicho {#lesson-4-building-niche-templates}
+# Lição 4: Criar Modelos de Nicho
 
 Os modelos são o núcleo da sua proposta de valor de nicho. Um proprietário de um estúdio de fitness que se regista e vê um site que já parece um site de fitness -- com horários de aulas, perfis de treinadores e as imagens certas -- tem muito mais probabilidade de ficar do que alguém que vê uma tela em branco.
 

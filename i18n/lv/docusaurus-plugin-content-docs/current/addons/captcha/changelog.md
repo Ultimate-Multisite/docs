@@ -3,7 +3,7 @@ title: Captcha izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha izmaiņu žurnāls {#captcha-changelog}
+# Captcha izmaiņu žurnāls
 
 Versija: 1.5.0 - Izlaista 2026-05-22
 * Jauns: stingras apturēšanas ātruma ierobežotājs — uzskaita katru GET un POST uz captcha aizsargātajām virsmām (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) un atbild ar HTTP 429, `Retry-After` galveni un nejaušinātu tarpit aizturi (1–5 s, stingri ierobežota līdz 15 s).

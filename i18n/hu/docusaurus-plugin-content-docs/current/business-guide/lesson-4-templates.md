@@ -3,7 +3,7 @@ title: 'Örnélküli 4: Niszéktémplatumok létrehozása'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# 4. Lesson: Nisza Alapú Oldaltípusok Létrehozása {#lesson-4-building-niche-templates}
+# 4. Lesson: Nisza Alapú Oldaltípusok Létrehozása
 
 Az oldaltípusok (templates) a nišza alapú értékajánlatának magját képezik. Egy fitness stúdió tulajdonosa, aki regisztrálódik, és lát egy olyan oldalt, amely már fitness weboldalnak tűnik – osztályrendelőkkel, edzői profilokkal és megfelelő képekkel – sokkal valószínűbben marad, mint egy olyan, aki egy üres vászonnal találkozik.
 

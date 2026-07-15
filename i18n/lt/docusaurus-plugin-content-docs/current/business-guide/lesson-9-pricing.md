@@ -3,7 +3,7 @@ title: '9 pamoka: Kainodara siekiant pelno'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9 pamoka: kainodara pelnui {#lesson-9-pricing-for-profit}
+# 9 pamoka: kainodara pelnui
 
 5 pamokoje nustatėme pradines FitSite planų kainas. Dabar patobulinsime kainodaros strategiją metodais, kurie didina pajamas, skatina planų atnaujinimus ir mažina klientų pasitraukimą.
 

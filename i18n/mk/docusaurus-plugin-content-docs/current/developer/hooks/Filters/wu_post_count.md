@@ -4,7 +4,7 @@ title: Филтер - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Филтер: wu_post_count {#filter-wupostcount}
+# Филтер: wu_post_count
 
 Дозволува развивачите на plugin да ја променат вкупната бројка
 

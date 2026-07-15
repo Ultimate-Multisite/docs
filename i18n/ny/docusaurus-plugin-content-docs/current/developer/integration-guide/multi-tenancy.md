@@ -3,7 +3,7 @@ title: Kuphatikiza kwa Kukhala ndi Obwereka Ambiri
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Kuphatikiza kwa Multi-Tenancy {#multi-tenancy-integration}
+# Kuphatikiza kwa Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imasintha malo angapo olumikizirana pa ma tenant odziyimira pawokha, kutsimikizira kusamuka, ndi automation ya moyo wa tenant.
 

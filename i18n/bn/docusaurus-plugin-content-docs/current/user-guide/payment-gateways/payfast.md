@@ -3,7 +3,7 @@ title: PayFast গেটওয়ে
 sidebar_position: 18
 _i18n_hash: 522faa86d920457375203119d78650a7
 ---
-# PayFast গেটওয়ে {#payfast-gateway}
+# PayFast গেটওয়ে
 
 এই ফিচারটি **PayFast** অ্যাডঅন দ্বারা প্রদান করা হয়।
 

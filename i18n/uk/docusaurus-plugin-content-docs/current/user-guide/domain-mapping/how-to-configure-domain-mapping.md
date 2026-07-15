@@ -3,7 +3,7 @@ title: Як налаштувати зіставлення доменів
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Як налаштувати зіставлення доменів (v2) {#how-to-configure-domain-mapping-v2}
+# Як налаштувати зіставлення доменів (v2)
 
 _**ВАЖЛИВА ПРИМІТКА: ця стаття стосується Ultimate Multisite версії 2.x.**_
 

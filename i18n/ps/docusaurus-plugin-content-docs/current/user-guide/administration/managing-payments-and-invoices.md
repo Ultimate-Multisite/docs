@@ -3,7 +3,7 @@ title: د بیاول او فاکټور مدیریت
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# پرداخت‌ها و فاکتورها را مدیریت کردن {#managing-payments-and-invoices}
+# پرداخت‌ها و فاکتورها را مدیریت کردن
 
 ## تنظیمات پرداخت {#payment-settings}
 

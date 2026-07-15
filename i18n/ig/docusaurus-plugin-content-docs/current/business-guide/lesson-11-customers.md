@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 11: Ịchọta ndị ahịa'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Nkuzi 11: Ịchọta Ndị ahịa {#lesson-11-finding-customers}
+# Nkuzi 11: Ịchọta Ndị ahịa
 
 Platform magburu onwe ya nke na-enweghị ndị ahịa bụ naanị ihe ntụrụndụ. Nkuzi a na-akọwa otu esi enweta ndị ahịa n’otu niche vertical -- atụmatụ na-arụ ọrụ kpọmkwem n’ihi na ị lekwasịrị anya n’otu ụlọ ọrụ.
 

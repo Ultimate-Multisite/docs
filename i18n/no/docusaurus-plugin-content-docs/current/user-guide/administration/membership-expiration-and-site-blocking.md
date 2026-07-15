@@ -3,7 +3,7 @@ title: Medlemskapsutløp og nettstedblokkering
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Utløp av medlemskap og blokkering av nettsted {#membership-expiration-and-site-blocking}
+# Utløp av medlemskap og blokkering av nettsted
 
 Denne guiden forklarer hvordan Ultimate Multisite håndterer utløp av medlemskap, slutt på prøveperioder og blokkering av nettstedet fra frontenden. Den dekker livssyklusen til et medlemskap fra aktivt til utløpt, innstillingene som styrer om nettstedene blokkeres, og hva du skal sjekke når nettstedene fortsatt er tilgjengelige etter at et medlemskap har utløpt.
 

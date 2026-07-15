@@ -3,7 +3,7 @@ title: メンバーシップのキャンセル
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# メンバーシップのキャンセル（v2） {#canceling-a-membership-v2}
+# メンバーシップのキャンセル（v2）
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

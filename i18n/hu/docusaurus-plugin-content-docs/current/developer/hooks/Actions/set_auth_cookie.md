@@ -4,7 +4,7 @@ title: Akció - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Akció: set_auth_cookie {#action-setauthcookie}
+# Akció: set_auth_cookie
 
 Azonosító sütit (authentication cookie) írása közvetlenül előtti.
 

@@ -3,7 +3,7 @@ title: Actualis planum
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Actualizándote (v2) {#upgrading-a-plan-v2}
+# Plan Actualizándote (v2)
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 

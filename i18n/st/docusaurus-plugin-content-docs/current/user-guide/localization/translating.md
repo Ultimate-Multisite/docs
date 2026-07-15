@@ -3,7 +3,7 @@ title: Ho fana ka Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite {#translating-ultimate-multisite}
+# Ultimate Multisite
 
 Ultimate Multisite o fetse ka ho fana ka English, empa plugin e le fetang ka ho fetola haholo, le re re tšoa ka ho ba le bone tsa fetola.
 

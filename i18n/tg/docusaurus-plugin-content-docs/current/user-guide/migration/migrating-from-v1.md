@@ -3,7 +3,7 @@ title: Гузариш аз V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Дивигани аз V1 {#migrating-from-v1}
+# Дивигани аз V1
 
 ## Ultimate Multisite аз خانوادهи ursprüng 1.x-и он ба خانوادهи 2.x гузаштааст. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

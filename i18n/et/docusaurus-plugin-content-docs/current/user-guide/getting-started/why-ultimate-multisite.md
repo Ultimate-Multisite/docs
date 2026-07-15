@@ -3,7 +3,7 @@ title: Miks Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Miks Ultimate Multisite {#why-ultimate-multisite}
+# Miks Ultimate Multisite
 
 Kui te artikli lugemise korral kuulsite tõenäoliselt, et meie plugin võib olla lahendus teie äriide idee realiseerimiseks. Arvatame, et endes lõpule jäävad sellele andmeid on need, mida vajate.
 

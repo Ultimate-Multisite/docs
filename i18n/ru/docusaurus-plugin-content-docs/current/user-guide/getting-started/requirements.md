@@ -3,7 +3,7 @@ title: Требования
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Требования к Ultimate Multisite {#ultimate-multisite-requirements}
+# Требования к Ultimate Multisite
 
 Первая вещь, которую вы можете задать себе перед покупкой Ultimate Multisite, — это какие требования нужны для работы нашего плагина. К счастью, для работы Ultimate Multisite требуется всего несколько основных вещей: **domain name**, хороший **hosting provider** и установка WordPress **Multisite**. Это всё, что вам нужно!
 

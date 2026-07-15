@@ -3,7 +3,7 @@ title: Ìṣepọ̀ ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Ìṣepọ̀ ServerPilot {#serverpilot-integration}
+# Ìṣepọ̀ ServerPilot
 
 ## Àkópọ̀ {#overview}
 ServerPilot jẹ́ iṣẹ́ cloud fún gbígbàlejò WordPress àti àwọn wẹ́bsáìtì PHP míràn lórí àwọn server ní DigitalOcean, Amazon, Google, tàbí olupèsè server míràn. Ìṣepọ̀ yìí ń jẹ́ kí domain syncing àti ìṣàkóso SSL certificate láàárín Ultimate Multisite àti ServerPilot ṣẹlẹ̀ láìọwọ́ṣe.

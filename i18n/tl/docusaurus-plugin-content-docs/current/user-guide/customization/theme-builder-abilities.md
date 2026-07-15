@@ -3,7 +3,7 @@ title: Mga Kakayahan ng Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Mga Kakayahan ng Theme Builder: Pagbuo at Pag-activate ng Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Mga Kakayahan ng Theme Builder: Pagbuo at Pag-activate ng Block Themes
 
 Ang Superdav AI Agent v1.12.0 ay nagpapakilala ng dalawang malalakas na kakayahan na nagpapahintulot sa iyo na gumawa at mag-deploy ng custom block themes direkta mula sa chat interface.
 

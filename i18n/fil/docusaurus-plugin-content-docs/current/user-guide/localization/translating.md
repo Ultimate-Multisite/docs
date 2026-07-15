@@ -3,7 +3,7 @@ title: Pagsasalin ng Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Pagsasalin ng Ultimate Multisite {#translating-ultimate-multisite}
+# Pagsasalin ng Ultimate Multisite
 
 Ang Ultimate Multisite ay ginawa sa Ingles, ngunit ganap na maisasalin ang plugin na ito at malugod naming tinatanggap ang mga kontribusyon sa pagsasalin.
 

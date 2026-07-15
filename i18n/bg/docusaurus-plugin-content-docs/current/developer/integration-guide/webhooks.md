@@ -3,7 +3,7 @@ title: Обработка на Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Обработка {#webhook-handling}
+# Webhook Обработка
 
 Създайте персонализирани webhook крайни точки (endpoints), за да получавате събития от външни услуги и да синхронизирате данните с Ultimate Multisite.
 

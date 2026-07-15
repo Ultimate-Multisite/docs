@@ -3,7 +3,7 @@ title: サイトエクスポーター変更履歴
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter 変更履歴 {#site-exporter-changelog}
+# Site Exporter 変更履歴
 
 バージョン: 1.0.6 - 2026-05-11 リリース
 * 新規: サイトのエクスポートに自己起動型の index.php が同梱されるようになり、別途 plugin をインストールしなくても ZIP を新しいホストにインストールできます

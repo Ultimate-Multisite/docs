@@ -3,7 +3,7 @@ title: GoCardless වෙනස්කම් සටහන
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless වෙනස්කම් සටහන {#gocardless-changelog}
+# GoCardless වෙනස්කම් සටහන
 
 අනුවාදය: 1.0.3 - 2026-05-05 දින නිකුත් කරන ලදී
 * නිවැරදි කිරීම: GoCardless සාමාජිකත්වයක් pending හෝ on-hold තත්ත්වයේ සිටියදී අවලංගු කළ විට, අනාථ වූ pending අඩවි දැන් පිරිසිදු කරනු ලැබේ

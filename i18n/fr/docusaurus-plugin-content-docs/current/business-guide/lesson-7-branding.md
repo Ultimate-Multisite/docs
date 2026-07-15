@@ -3,7 +3,7 @@ title: 'Leçon 7 : Personnalisation'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leçon 7 : Le rendre vôtre {#lesson-7-making-it-yours}
+# Leçon 7 : Le rendre vôtre
 
 Vos clients ne doivent jamais avoir l'impression d'utiliser « un plugin WordPress ». Ils doivent avoir l'impression d'utiliser FitSite — une plateforme conçue pour leur secteur. Cette leçon couvre le branding, le *white-labeling* et la manière de faire en sorte que la plateforme ressemble à un produit fini.
 

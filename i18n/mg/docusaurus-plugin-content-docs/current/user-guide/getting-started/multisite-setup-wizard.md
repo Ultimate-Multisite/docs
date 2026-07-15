@@ -3,7 +3,7 @@ title: Fitaovana fanamboarana toerana maro
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Fita Fanamboana Multisite {#multisite-setup-wizard}
+# Fita Fanamboana Multisite
 
 Ultimate Multisite dia manome fita fanamboarana (wizard) mialoha izay mamadika ho azy ny fametrahana WordPress tsotra ho tambajotra WordPress Multisite. Izany dia manala ny filàna manova ny `wp-config.php` na manao baiko amin'ny database.
 

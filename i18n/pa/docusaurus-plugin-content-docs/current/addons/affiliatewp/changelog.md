@@ -3,7 +3,7 @@ title: AffiliateWP Badlavon da Record
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP ਚੇਂਜਲੌਗ {#affiliatewp-changelog}
+# AffiliateWP ਚੇਂਜਲੌਗ
 
 Version: 2.0.1 - ਰਿਲੀਜ਼ ਹੋਇਆ 2025-09-28
 

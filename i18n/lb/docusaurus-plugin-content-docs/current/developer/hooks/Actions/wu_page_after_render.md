@@ -4,7 +4,7 @@ title: Aktioun - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Aktioun: wu_page_after_render {#action-wupageafterrender}
+# Aktioun: wu_page_after_render
 
 Erlaabt Plugin-Entwéckler, zousätzlechen Inhalt derbäizesetzen, nodeems mir d'Säit ausginn
 

@@ -4,7 +4,7 @@ title: Kichujio - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Inachanganya kama aina fulani ya post (post type) inaruhusiwa katika mpango huu. Hii inaruhusu watengenezaji wa plugin kufiliri thamani inayorejeshwa.
 

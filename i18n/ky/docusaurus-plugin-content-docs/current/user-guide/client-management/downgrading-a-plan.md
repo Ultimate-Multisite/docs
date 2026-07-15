@@ -3,7 +3,7 @@ title: Планды төмөндөтүү
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Планын төмөндөтүү (v2) {#downgrading-a-plan-v2}
+# Планын төмөндөтүү (v2)
 
 _**МААЛЫМДАР КӨРӨКҮН ЭСУЛТАР: Бул макала Ultimate Multisite 2.x версиясына тиешелүү._**_
 

@@ -4,7 +4,7 @@ title: Isihlungi - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Isihlungi: wu_current_set_site {#filter-wucurrentsetsite}
+# Isihlungi: wu_current_set_site
 
 Vumela abathuthukisi ukuthi bashintshe ukuziphatha okuzenzakalelayo futhi basethe isayithi yamanje ngendlela ehlukile.
 

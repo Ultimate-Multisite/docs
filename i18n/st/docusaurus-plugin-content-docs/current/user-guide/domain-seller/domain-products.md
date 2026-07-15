@@ -3,7 +3,7 @@ title: Hoetsope ea Domain le Hoetsope
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produkta le Domain a le Fa'aoga ma Le Tsetsetsetse (Pricing) {#domain-products-and-pricing}
+# Produkta le Domain a le Fa'aoga ma Le Tsetsetsetse (Pricing)
 
 Produkta le Domain o le fa'aoga e fanoa o le tsetsetsetse, le TLDs (Top-Level Domains), WHOIS privacy, ma le fesoasoani i le fa'aoga. O le a o le produkta le Domain, o se produkta standard o Ultimate Multisite ma e aofia ai le tab **Domain Settings**.
 

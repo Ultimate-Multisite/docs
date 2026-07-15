@@ -4,7 +4,7 @@ title: کردار - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# کردار: set_logged_in_cookie {#action-setloggedincookie}
+# کردار: set_logged_in_cookie
 
 دەستپێدەکات دەستبەجێ پێش ئەوەی cookieی پشتڕاستکردنەوەی logged-in دابنرێت.
 

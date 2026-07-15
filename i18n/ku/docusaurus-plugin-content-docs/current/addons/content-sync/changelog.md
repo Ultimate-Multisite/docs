@@ -3,7 +3,7 @@ title: Tomara guherînan a Hevdemkirina Naverokê
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Guhertinên Content Sync {#content-sync-changelog}
+# Guhertinên Content Sync
 
 ### Guherto 1.1.0 - Di 2025-12-31 de hate berdan {#version-110---released-on-2025-12-31}
 * Nû: Piştgiriya synckirina hemû cureyên nivîsan (nivîs, rûpel, cureyên nivîsên taybet)

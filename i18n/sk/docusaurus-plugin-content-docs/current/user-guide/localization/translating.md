@@ -3,7 +3,7 @@ title: Preklad Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Preklad Ultimate Multisite {#translating-ultimate-multisite}
+# Preklad Ultimate Multisite
 
 Ultimate Multisite je vytvorený v angličtine, ale plugin je plne prekladateľný a aktívne sme venovaní prispôsobivým pradebným pradeniam.
 

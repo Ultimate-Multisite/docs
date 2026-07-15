@@ -4,7 +4,7 @@ title: فلتەر - wu_add_menu_page_slug_url
 sidebar_label: wu_add_menu_page_slug_url
 _i18n_hash: 8f4d638285fc2ad67313b1b730e776f6
 ---
-# پاڵێوەر: wu_add_menu_page_slug_url {#filter-wuaddmenupageslugurl}
+# پاڵێوەر: wu_add_menu_page_slug_url
 
 ڕێگە بە گەشەپێدەران دەدات URLەکان پاڵێو بکەن
 

@@ -4,7 +4,7 @@ title: Hành động - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Action: wu_domain_created {#action-wudomaincreated}
+# Action: wu_domain_created
 
 Kích hoạt khi một bản ánh xạ tên miền mới được thêm vào.
 

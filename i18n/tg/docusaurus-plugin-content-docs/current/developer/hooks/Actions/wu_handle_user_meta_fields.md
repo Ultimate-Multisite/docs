@@ -4,7 +4,7 @@ title: Амал - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Амал: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Амал: wu_handle_user_meta_fields
 
 Ба таҳиягарони plugin имкон медиҳад, ки агар лозим бошад, додаҳои метаи корбарро бо роҳҳои гуногун захира кунанд.
 

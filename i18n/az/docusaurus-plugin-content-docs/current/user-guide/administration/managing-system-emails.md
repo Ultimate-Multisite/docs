@@ -3,7 +3,7 @@ title: Sistem E-poçtlarını İdar Planı
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-poçtlarını İdarə Etmək {#managing-system-emails}
+# Sistem E-poçtlarını İdarə Etmək
 
 Ultimate Multisite, qeydiyyat təsdiqləmələri, ödəniş qəbzi və üzvlük dəyişiklikləri kimi hadisələr üçün müxtəlif sistem e-poçtları göndərir. Bu e-poçt şablonlarını öz brendinizə uyğunlaşdırmaq üçün onları fərdiləşdirə bilərsiniz.
 

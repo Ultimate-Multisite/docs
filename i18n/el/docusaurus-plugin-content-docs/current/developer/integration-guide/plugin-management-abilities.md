@@ -3,7 +3,7 @@ title: Ικανότητες Διαχείρισης Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ικανότητες Διαχείρισης Plugins {#plugin-management-abilities}
+# Ικανότητες Διαχείρισης Plugins
 
 Το Gratis AI Agent v1.5.0 διαθέτει **7 ικανότητες διαχείρισης plugins** που το AI assistant μπορεί να καλέσει κατά τη διάρκεια μιας συνομιλίας. Αυτές οι ικανότητες παρέχουν προγραμματιστικό έλεγχο των plugins WordPress που έχουν εγκατασταθεί μέσω του [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

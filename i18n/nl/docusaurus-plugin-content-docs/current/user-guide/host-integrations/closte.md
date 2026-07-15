@@ -3,7 +3,7 @@ title: Closte Integratie
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integratie {#closte-integration}
+# Closte Integratie
 
 ## Overzicht {#overview}
 Closte is een beheerde WordPress-hostingplatform gebouwd op Google Cloud-infrastructuur. Deze integratie maakt automatische domeinsynchronisatie en SSL-certificaatbeheer mogelijk tussen Ultimate Multisite en Closte.

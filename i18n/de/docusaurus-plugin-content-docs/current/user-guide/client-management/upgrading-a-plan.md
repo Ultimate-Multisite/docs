@@ -3,7 +3,7 @@ title: Einen Tarif upgraden
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Einen Tarif upgraden (v2) {#upgrading-a-plan-v2}
+# Einen Tarif upgraden (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

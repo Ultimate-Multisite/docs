@@ -4,7 +4,7 @@ title: Iṣe - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Ìṣe: move_site {#action-movesite}
+# Ìṣe: move_site
 
 Ó máa ń ṣiṣẹ́ lẹ́yìn tí a bá ti gbe ààyè kan lọ sí network tuntun.
 

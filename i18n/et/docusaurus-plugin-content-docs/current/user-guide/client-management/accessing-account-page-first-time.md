@@ -3,7 +3,7 @@ title: Arvu lehtide külastamine
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kuidas ma pääse oma kontoile esimest kord? {#how-can-i-access-my-account-page-for-the-first-time}
+# Kuidas ma pääse oma kontoile esimest kord?
 
 Vali tervitsemist Ultimate Multisite!
 

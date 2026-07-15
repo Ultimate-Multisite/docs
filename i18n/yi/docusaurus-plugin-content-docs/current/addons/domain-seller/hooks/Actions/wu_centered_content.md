@@ -4,7 +4,7 @@ title: אַקציע - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# אַקציע: wu_centered_content {#action-wucenteredcontent}
+# אַקציע: wu_centered_content
 
 דערלויבן plugin-אַנטוויקלער צוצולייגן נאָך אינהאַלט אינעווייניק אין דער צענטרירטער זייַל.
 

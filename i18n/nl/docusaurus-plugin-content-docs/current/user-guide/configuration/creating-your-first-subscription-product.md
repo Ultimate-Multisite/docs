@@ -3,7 +3,7 @@ title: Je eerste abonnementproduct aanmaken
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Je eerste abonnementsproduct maken (v2) {#creating-your-first-subscription-product-v2}
+# Je eerste abonnementsproduct maken (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel is alleen voor gebruikers van Ultimate Multisite versie 2.x. Als je versie 1.x gebruikt,**_ **_**bekijk dan dit artikel**_**.
 

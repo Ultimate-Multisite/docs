@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Filter: wu_wp_cli_enabled_sub_commands
 
 ဤအရာဝတ္ထုအတွက် မည်သည့် sub_commands များကို အသုံးပြုနိုင်သည်ကို စစ်ထုတ်ပေးသည်။
 

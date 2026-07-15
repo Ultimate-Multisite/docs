@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# را성이שkaads-ka-network-ka-ad-sare-Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# را성이שkaads-ka-network-ka-ad-sare-Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector waa **add-on bilaash ah** oo si aad u hesho qalabka lagu dhigo xayaysiiso (ads) plans-kaaga isagoo ka soo qaadaya bogga wax ka beddelka.
 

@@ -3,7 +3,7 @@ title: Konfigurimi i PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigurimi i Gateway-të PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Konfigurimi i Gateway-të PayPal (v2)
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 

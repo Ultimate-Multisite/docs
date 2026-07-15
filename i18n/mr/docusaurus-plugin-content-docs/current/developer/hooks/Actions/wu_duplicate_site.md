@@ -4,7 +4,7 @@ title: कृती - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Action: wu_duplicate_site {#action-wuduplicatesite}
+# Action: wu_duplicate_site
 
 साईट डुप्लिकेशन (site duplication) झाल्यावर डेव्हलपर्सना हुक (hook) करण्याची परवानगी देते.
 

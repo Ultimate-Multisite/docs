@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 பக்கங்கள் பதிவு செய்யப்படும்போது (registered) கூடுதல் செயல்பாடுகளை இயக்க, 플러ഗിൻ டெவலப்பர்களுக்கு இது உதவுகிறது.
 

@@ -3,7 +3,7 @@ title: আতিথেয়তা মেনু
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# হসপিটালিটি মেনু {#hospitality-menus}
+# হসপিটালিটি মেনু
 
 **Hospitality Menus** ফিচারটি Theme Builder-কে আপনার WordPress সাইটে সরাসরি কাঠামোগত খাবার ও পানীয় মেনু পেজ তৈরি এবং এমবেড করতে সাহায্য করে।
 

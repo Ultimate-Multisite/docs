@@ -4,7 +4,7 @@ title: Filtru - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filtru: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# Filtru: wu_membership_renewal_expiration_date
 
 Jiffiltra d-data ta' skadenza kkalkulata li għandha tiġi stabbilita wara t-tiġdid.
 

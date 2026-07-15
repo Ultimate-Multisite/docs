@@ -3,7 +3,7 @@ title: Zapier ውህደት
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisiteን ከZapier ጋር ማዋሃድ {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisiteን ከZapier ጋር ማዋሃድ
 
 በአንዱ ጽሑፎች ውስጥ [Webhooks](webhooks.md) እና ከ3ኛ ወገን መተግበሪያዎች ጋር ለመዋሃድ እንዴት መጠቀም እንደሚቻል ተወያይተናል።
 

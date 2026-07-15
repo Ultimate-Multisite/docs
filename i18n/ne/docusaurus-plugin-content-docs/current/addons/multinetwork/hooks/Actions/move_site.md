@@ -4,7 +4,7 @@ title: कार्य - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# कार्य: move_site {#action-movesite}
+# कार्य: move_site
 
 कुनै साइट नयाँ नेटवर्कमा सारिएपछि चल्छ।
 

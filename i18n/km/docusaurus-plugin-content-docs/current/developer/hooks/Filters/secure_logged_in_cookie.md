@@ -4,7 +4,7 @@ title: តម្រង - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# តម្រង: secure_logged_in_cookie {#filter-secureloggedincookie}
+# តម្រង: secure_logged_in_cookie
 
 តម្រងថា cookie សម្រាប់អ្នកដែលបានចូល គួរត្រូវបានផ្ញើតាម HTTPS ប៉ុណ្ណោះឬអត់។
 

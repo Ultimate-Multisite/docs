@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Àlẹmọ: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Àlẹmọ: wu_is_development_mode
 
 Gba awọn olùdàgbàsókè àfikún laaye lati ṣafikun awọn idanwo afikun fun ipo idagbasoke.
 

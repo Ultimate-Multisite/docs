@@ -3,7 +3,7 @@ title: Gostinski meniji
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gostinski meniji {#hospitality-menus}
+# Gostinski meniji
 
 Funkcija **Gostinski meniji** omogoča Theme Builder, da ustvari in vgradi strukturirane strani menijev hrane in pijače neposredno v vaše WordPress spletno mesto.
 

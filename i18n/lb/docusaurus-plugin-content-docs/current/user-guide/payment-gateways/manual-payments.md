@@ -3,7 +3,7 @@ title: Manuell Bezuelungen ariichten
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuell Bezuelungen ariichten (v2) {#setting-up-manual-payments-v2}
+# Manuell Bezuelungen ariichten (v2)
 
 _**WICHTEGEN HINWEIS: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 

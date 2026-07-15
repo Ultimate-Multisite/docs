@@ -3,7 +3,7 @@ title: Shuruudaha
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Shuruudda Ultimate Multisite {#ultimate-multisite-requirements}
+# Shuruudda Ultimate Multisite
 
 Marka hore oo aad is weydiin karto ka hor intaadan iibsato Ultimate Multisite waa maxay shuruudaha loo baahan yahay inaan plugin-kaas u fuliyo. Waa hagaag, la'aanta, waxaa jira shuruudo aasaasi ah oo kaliya oo loogu talagalay inaan fulino Ultimate Multisite: **magaca domain-ka** (domain name), **bixiyaha hosting-ka** wanaagsan, iyo **warbixinta WordPress Multisite**. Waa intaas oo dhan aad u baahan tahay!
 

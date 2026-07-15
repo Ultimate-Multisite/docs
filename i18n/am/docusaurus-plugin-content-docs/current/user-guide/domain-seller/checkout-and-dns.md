@@ -3,7 +3,7 @@ title: የክፍያ ማጠናቀቂያ መስክ እና የደንበኛ DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# የክፍያ መውጫ መስክ እና የደንበኛ DNS አስተዳደር {#checkout-field-and-customer-dns-management}
+# የክፍያ መውጫ መስክ እና የደንበኛ DNS አስተዳደር
 
 ## የዶሜይን ምርጫ የክፍያ መውጫ መስክ {#the-domain-selection-checkout-field}
 

@@ -3,7 +3,7 @@ title: የዶሜን ምርቶች እና ዋጋ
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# የዶሜን ምርቶች እና ዋጋ አወጣጥ {#domain-products-and-pricing}
+# የዶሜን ምርቶች እና ዋጋ አወጣጥ
 
 የዶሜን ምርቶች ዋጋ አወጣጥን፣ TLDsን፣ WHOIS ግላዊነትን እና የአቅራቢ ምርጫን የሚቆጣጠሩበት መንገድ ናቸው። እያንዳንዱ የዶሜን ምርት ተጨማሪ **Domain Settings** ታብ ያለው መደበኛ Multisite Ultimate ምርት ነው።
 

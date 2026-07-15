@@ -3,7 +3,7 @@ title: Chantre Checkout ak DNS Kliyan
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gestion du Champ de Paiement et DNS Client {#checkout-field-and-customer-dns-management}
+# Gestion du Champ de Paiement et DNS Client
 
 ## Le champ de sélection de domaine Checkout {#the-domain-selection-checkout-field}
 

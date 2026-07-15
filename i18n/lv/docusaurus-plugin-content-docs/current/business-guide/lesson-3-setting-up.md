@@ -3,7 +3,7 @@ title: '3. nodarbība: Jūsu tīkla iestatīšana'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# 3. nodarbība: Tīkla iestatīšana {#lesson-3-setting-up-your-network}
+# 3. nodarbība: Tīkla iestatīšana
 
 Laiks būvēt. Šajā nodarbībā jūs instalēsiet Ultimate Multisite un konfigurēsiet FitSite tīkla pamatu. Katrs lēmums šeit tiek pieņemts, domājot par fitnesa nišu.
 

@@ -3,7 +3,7 @@ title: တင်ပို့ခြင်းနှင့် တင်သွင်
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 မှာ **Tools > Export & Import** အောက်မှာ single-site အတွက် **Export & Import** tool အသစ်တစ်ခု ထည့်ပေးထားပါတယ်။ ဒီ tool ကို သုံးရမှာက WordPress site တစ်ခုလုံးကို ZIP file အဖြစ် ထုပ်ပိုးချင်တဲ့အခါ၊ အဲဒီ ZIP ကို ပြန်လည် restore လုပ်ချင်တဲ့အခါ ဒါမှမဟုတ် site တစ်ခုကို compatible Ultimate Multisite နဲ့ single-site WordPress installation တွေကြား ရွှေ့ပြောင်းချင်တဲ့အခါမျိုးတွေမှာ အသုံးပြုနိုင်ပါတယ်။
 

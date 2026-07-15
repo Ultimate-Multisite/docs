@@ -3,7 +3,7 @@ title: 'Lição 8: Onboarding de Clientes'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lição 8: Integração do Cliente (Onboarding) {#lesson-8-customer-onboarding}
+# Lição 8: Integração do Cliente (Onboarding)
 
 Conseguir que um cliente se cadastre é apenas metade do trabalho. Se ele fizer login, se sentir sobrecarregado e nunca mais voltar, você o perdeu. Esta lição desenha a experiência que transforma um novo cadastro em um cliente ativo e engajado.
 

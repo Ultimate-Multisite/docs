@@ -4,7 +4,7 @@ title: Сүзгі - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Сүзгі: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Сүзгі: wu_woocommerce_line_item_params
 
 Клиентті WooCommerce төлем рәсімдеуіне қайта бағыттамас бұрын, WooCommerce себетінде жол элементтерін жасау үшін қолданылатын параметрлерді сүзгіден өткізеді.
 

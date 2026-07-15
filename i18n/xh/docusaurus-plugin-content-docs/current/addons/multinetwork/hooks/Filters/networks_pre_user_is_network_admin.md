@@ -4,7 +4,7 @@ title: Isihluzo - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Isihluzi: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Isihluzi: networks_pre_user_is_network_admin
 
 Sihluza iinethiwekhi umsebenzisi angumlawuli wazo, ukuze kunqunyulwe inkqubo kwangoko.
 

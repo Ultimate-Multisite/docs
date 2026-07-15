@@ -4,7 +4,7 @@ title: Omume - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Omume: wu_domain_ses_verified {#action-wudomainsesverified}
+# Omume: wu_domain_ses_verified
 
 Na-arụ ọrụ mgbe SES kwadoro na domain bụ nke DKIM-verified.
 

@@ -3,7 +3,7 @@ title: 고급 코드 예제
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 고급 코드 예제 {#advanced-code-examples}
+# 고급 코드 예제
 
 이 예제들은 Ultimate Multisite와의 고급 통합 패턴을 보여줍니다.
 

@@ -3,7 +3,7 @@ title: Vezérlőpult integráció fejlesztése
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel integráció {#enhance-control-panel-integration}
+# Enhance Control Panel integráció
 
 ## Áttekintés {#overview}
 Az Enhance egy modern vezérlőpult, amely hatékony tárhelyautomatizálási és -kezelési funkciókat kínál. Ez az integráció lehetővé teszi a domain-ok automatikus szinkronizálását és az SSL-tanúsítványok kezelését az Ultimate Multisite és az Enhance Control Panel között.

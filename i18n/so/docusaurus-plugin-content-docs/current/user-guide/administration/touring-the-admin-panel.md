@@ -3,7 +3,7 @@ title: Waxaan u socdaa Dashboard-ka Maamulka
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Wax-ka Admin Panel-ka {#touring-the-admin-panel}
+# Wax-ka Admin Panel-ka
 
 Ultimate Multisite-ku hadafki waa inuu noqdo mid fudud oo si cad u sharaxaya, laakiin inta badan waxa uu leeyahay qalab xooggan oo ka caawiya in la sameeyo turjumaad guud. Aan ku socono bogag admin-ka si aan kuu fududeeyno inaad si wanaagsan ugu guurto.
 

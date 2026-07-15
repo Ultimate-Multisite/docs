@@ -3,7 +3,7 @@ title: Isikhokelo sokuSetyenziswa kwee-Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Isikhokelo Sokusetyenziswa kwee-Hooks {#hooks-usage-guide}
+# Isikhokelo Sokusetyenziswa kwee-Hooks
 
 Ultimate Multisite ibonelela ngee-hook ze-action ezingaphezu kwe-200 kunye nee-hook ze-filter ezingaphezu kwe-280. Eli phepha ligubungela ii-hooks ezisetyenziswa kakhulu ngemizekelo esebenzisekayo. Ukuze ufumane ireferensi epheleleyo ezenzekelayo, jonga amanye amaphepha kweli candelo.
 

@@ -4,7 +4,7 @@ title: Veiksmas - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Veiksmas: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Veiksmas: wp_ultimo_affiliatewp_deactivation
 
 Leiskite kitoms plugin dalims prijungti savo išaktyvinimo procedūras
 

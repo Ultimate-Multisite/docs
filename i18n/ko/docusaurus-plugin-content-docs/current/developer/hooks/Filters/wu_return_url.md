@@ -4,7 +4,7 @@ title: 필터 - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# 필터: wu_return_url {#filter-wureturnurl}
+# 필터: wu_return_url
 
 개발자가 결제 프로세스 후에 사용되는 게이트웨이 반환 URL을 변경할 수 있도록 허용합니다.
 

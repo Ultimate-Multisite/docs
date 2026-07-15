@@ -3,7 +3,7 @@ title: WP-CLI เอกสารอ้างอิง
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference {#wp-cli-reference}
+# WP-CLI Reference
 
 Gratis AI Agent มาพร้อมกับกลุ่มคำสั่ง `wp gratis-ai-agent` สำหรับการทดสอบประสิทธิภาพของ Agent, การจัดการความสามารถ (abilities), และการตรวจสอบสถานะของ Agent ผ่าน Command Line คำสั่งทั้งหมดจำเป็นต้องใช้ WP-CLI เวอร์ชัน 2.0 ขึ้นไป
 

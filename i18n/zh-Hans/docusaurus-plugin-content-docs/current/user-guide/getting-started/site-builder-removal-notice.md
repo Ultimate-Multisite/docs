@@ -3,7 +3,7 @@ title: 站点构建模式移除通知
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder 模式移除通知 {#site-builder-mode-removal-notice}
+# Site Builder 模式移除通知
 
 **Superdav AI Agent v1.12.0 版本已移除 Site Builder 模式。** 如果您之前使用了 Site Builder 模式，您应该迁移到 **Setup Assistant agent** 来进行主题创建和站点设置。
 

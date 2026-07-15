@@ -3,7 +3,7 @@ title: ହସ୍ତଚାଳିତ ଦେୟ ସେଟ୍ ଅପ୍ କରିବ
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Payments ସେଟ୍‌ଅପ୍ କରିବା (v2) {#setting-up-manual-payments-v2}
+# Manual Payments ସେଟ୍‌ଅପ୍ କରିବା (v2)
 
 _**ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଟିପ୍ପଣୀ: ଏହି ଲେଖା Ultimate Multisite ସଂସ୍କରଣ 2.x ସମ୍ବନ୍ଧରେ।**_
 

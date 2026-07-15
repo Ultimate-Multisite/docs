@@ -3,7 +3,7 @@ title: เมนูร้านอาหารสำหรับแขก
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# เมนูร้านอาหารและบริการด้านการต้อนรับ (Hospitality Menus) {#hospitality-menus}
+# เมนูร้านอาหารและบริการด้านการต้อนรับ (Hospitality Menus)
 
 ฟีเจอร์ **Hospitality Menus** ช่วยให้ Theme Builder สามารถสร้างและฝังหน้าเมนูอาหารและเครื่องดื่มที่มีโครงสร้างอย่างเป็นระบบลงในเว็บไซต์ WordPress ของคุณได้โดยตรง
 

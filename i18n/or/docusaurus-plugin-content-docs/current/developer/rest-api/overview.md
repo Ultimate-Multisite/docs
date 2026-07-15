@@ -3,7 +3,7 @@ title: REST API ଅବଲୋକନ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ସନ୍ଦର୍ଭ {#rest-api-reference}
+# REST API ସନ୍ଦର୍ଭ
 
 ## ମୂଳ ବିନ୍ୟାସ {#base-configuration}
 

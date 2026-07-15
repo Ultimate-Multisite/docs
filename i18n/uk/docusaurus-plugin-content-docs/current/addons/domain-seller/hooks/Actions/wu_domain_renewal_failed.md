@@ -4,7 +4,7 @@ title: Дія - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Дія: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Дія: wu_domain_renewal_failed
 
 Викликається після невдалої спроби поновлення домену.
 

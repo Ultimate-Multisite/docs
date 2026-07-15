@@ -3,7 +3,7 @@ title: पेमेंट मिळवणे
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# पैसे मिळवणे (v2) {#getting-paid-v2}
+# पैसे मिळवणे (v2)
 
 _**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भात आहे.**_
 

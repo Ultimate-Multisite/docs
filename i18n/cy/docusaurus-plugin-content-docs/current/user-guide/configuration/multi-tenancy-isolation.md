@@ -3,7 +3,7 @@ title: Isolatiad Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isoladiad Multi-Tenancy {#multi-tenancy-isolation}
+# Isoladiad Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 sy'n gynnwys isoliad databnwch a fylfachau (filesystem) ar gyfer tenantau sydd yn ddefnyddio ei ddynion. Mae hyn yn gwarchod data tenantau yn rhydd o'r un arall, gyda chofio'r cyfathrebu cyd-llwybr (network-level provisioning), cyfrifoldeb (billing) a gyfarwyddyd (administration).
 

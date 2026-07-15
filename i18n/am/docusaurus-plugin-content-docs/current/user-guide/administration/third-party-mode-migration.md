@@ -3,7 +3,7 @@ title: የሶስተኛ ወገን ሁነኛ ዝውውር
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# የሶስተኛ ወገን ሁነታ ዝውውር (Third-Party Mode Migration) {#third-party-mode-migration}
+# የሶስተኛ ወገን ሁነታ ዝውውር (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 የሶስተኛ ወገን አቅሞችን (abilities) የሚይዝበትን መንገድ ቀይሯል። **የሶስተኛ ወገን ሁነታ አሁን በራስ-ሰር (auto) ላይ ነው የሚቀመጠው**፣ ይህም ያለ በእጅ ማዋቀር በWordPress 7.0+ ላይ ተወላጅ WordPress Abilities API ውህደትን ያስችላል።
 

@@ -3,7 +3,7 @@ title: Auto Search and Replace f'Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace f'i Template Sites (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace f'i Template Sites (v2)
 
 _**Il tutorial ma jirxi WP UItimo borsa 2.x.**_
 

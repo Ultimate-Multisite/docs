@@ -3,7 +3,7 @@ title: فۆرمەکانی دابەزراوێنان
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Forms ba Checkout (Formulary ba Checkout) {#checkout-forms}
+# Forms ba Checkout (Formulary ba Checkout)
 
 Forms ba Checkout r amwaya siroze û fleksibel ye ku tu bi ferspasiyonên cuda wêne bixwazin de ku hewce ye ji bo guhertina nû bêjmara neyê.
 

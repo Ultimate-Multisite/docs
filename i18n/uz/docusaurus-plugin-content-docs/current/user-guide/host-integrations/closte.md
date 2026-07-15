@@ -3,7 +3,7 @@ title: Closte Integratsiyasi
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integratsiyasi {#closte-integration}
+# Closte Integratsiyasi
 
 ## Umumiy Ko'rinish {#overview}
 Closte — Google Cloud infratuzilmasi asosida qurilgan boshqariladigan WordPress hosting platformasidir. Bu integratsiya Ultimate Multisite va Closte o'rtasida domenlarni avtomatik sinxronlash va SSL sertifikatlarini boshqarish imkonini beradi.

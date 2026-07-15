@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite priedai {#ultimate-multisite-addons}
+# Ultimate Multisite priedai
 
 Priedai išplečia Ultimate Multisite papildomomis funkcijomis ir integracijomis. Dauguma priedų yra mokami ir juos galima įsigyti iš [ultimatemultisite.com](https://ultimatemultisite.com).
 

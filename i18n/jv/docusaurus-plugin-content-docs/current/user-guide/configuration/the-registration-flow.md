@@ -3,7 +3,7 @@ title: Alur Registrasi
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Alur Registrasi (v2) {#the-registration-flow-v2}
+# Alur Registrasi (v2)
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 

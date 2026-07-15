@@ -3,7 +3,7 @@ title: 'Pawulangan 2: Milih Ceruk Pasarmu'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Wulangan 2: Milih Ceruk Pasarmu {#lesson-2-picking-your-niche}
+# Wulangan 2: Milih Ceruk Pasarmu
 
 Ing Wulangan 1 kita wis netepake kenapa ceruk pasar luwih unggul tinimbang sing umum. Saiki kowe kudu milih duwekmu. Wulangan iki menehi kerangka kanggo nemokake lan ngesahake ceruk pasar sadurunge kowe nandur wektu kanggo mbangun kanggo ceruk kuwi.
 

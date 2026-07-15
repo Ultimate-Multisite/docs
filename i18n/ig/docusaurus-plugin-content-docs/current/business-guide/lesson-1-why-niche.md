@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 1: Ihe mere ngalaba pụrụ iche ji emeri'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Nkuzi 1: Ihe Mere Niche Ji Emeri {#lesson-1-why-niche-wins}
+# Nkuzi 1: Ihe Mere Niche Ji Emeri
 
 Tupu anyị emetụ ngwanrọ ọ bụla aka, ị ga-aghọta ihe mere iwulite maka ndị na-ege ntị kpọmkwem ji bụrụ mkpebi kacha mkpa ị ga-eme.
 

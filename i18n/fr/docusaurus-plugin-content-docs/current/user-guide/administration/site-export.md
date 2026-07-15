@@ -3,7 +3,7 @@ title: Exportation du site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportation de site {#site-export}
+# Exportation de site
 
 La page d'administration **Exportation de site** permet aux administrateurs de réseau de regrouper un site unique, ou l'ensemble du réseau, dans une archive téléchargeable pour la migration, la sauvegarde ou la transmission du travail.
 

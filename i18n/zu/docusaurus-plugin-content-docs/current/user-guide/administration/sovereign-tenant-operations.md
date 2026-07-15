@@ -3,7 +3,7 @@ title: Imisebenzi Yomqashi Ozimele
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Imisebenzi Yabaqashi Abazimele {#sovereign-tenant-operations}
+# Imisebenzi Yabaqashi Abazimele
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yengeza amathuluzi okusebenza abaqashi abazimele: amasayithi angaphansi asebenza nesizindalwazi sawo, impande yesistimu yamafayela, nomongo wokurutha kuyilapho esabonakala kumphathi wenethiwekhi.
 

@@ -3,7 +3,7 @@ title: Menurunkan Taraf Pelan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Menurunkan taraf pelan (v2) {#downgrading-a-plan-v2}
+# Menurunkan taraf pelan (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 

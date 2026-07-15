@@ -4,7 +4,7 @@ title: Sefa - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Fyuluta: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Fyuluta: wu_element_block_types_to_check
 
 Tingafunike kuwonjezera mabuloko ena mtsogolo.
 

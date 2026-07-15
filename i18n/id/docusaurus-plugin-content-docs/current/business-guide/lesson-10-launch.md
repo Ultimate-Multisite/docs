@@ -3,7 +3,7 @@ title: 'Pelajaran 10: Hari Peluncuran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Pelajaran 10: Hari Peluncuran {#lesson-10-launch-day}
+# Pelajaran 10: Hari Peluncuran
 
 Semuanya sudah jadi. Sebelum Anda membuka "pintu"-nya, pelajaran ini akan memandu Anda melalui daftar periksa pra-peluncuran untuk memastikan tidak ada yang rusak, hilang, atau memalukan.
 

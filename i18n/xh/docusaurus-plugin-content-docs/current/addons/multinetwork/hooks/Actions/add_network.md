@@ -4,7 +4,7 @@ title: Isenzo - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Isenzo: add_network {#action-addnetwork}
+# Isenzo: add_network
 
 Sisebenza emva kokuba inethiwekhi entsha yongeziwe.
 

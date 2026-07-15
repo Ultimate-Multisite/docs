@@ -3,7 +3,7 @@ title: 'Lição 5: Conceber os seus planos'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lição 5: Desenhar os Seus Planos {#lesson-5-designing-your-plans}
+# Lição 5: Desenhar os Seus Planos
 
 Os níveis dos seus planos não são apenas níveis de preços -- são um reflexo de como os clientes do seu nicho realmente operam. Nesta lição, vai desenhar níveis de produto que correspondem às necessidades reais de negócios de fitness em diferentes fases.
 

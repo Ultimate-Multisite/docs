@@ -3,7 +3,7 @@ title: Nexşandina Domainê Çawa Saz Bikin
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Çawa Domain Mapping (v2) Veavakirin {#how-to-configure-domain-mapping-v2}
+# Çawa Domain Mapping (v2) Veavakirin
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x e.**_
 

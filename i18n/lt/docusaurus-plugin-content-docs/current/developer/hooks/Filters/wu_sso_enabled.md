@@ -4,7 +4,7 @@ title: Filtras - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filtras: wu_sso_enabled {#filter-wussoenabled}
+# Filtras: wu_sso_enabled
 
 Įjungia / išjungia kelių domenų vienkartinio prisijungimo galimybę.
 

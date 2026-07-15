@@ -4,7 +4,7 @@ title: Azione - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Azione: set_logged_in_cookie {#action-setloggedincookie}
+# Azione: set_logged_in_cookie
 
 Si attiva immediatamente prima che venga impostato il cookie di autenticazione di accesso.
 

@@ -3,7 +3,7 @@ title: قائمة الدول
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# إعادة ترتيب قائمة دول Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# إعادة ترتيب قائمة دول Ultimate Multisite
 
 يتم ترتيب قائمة السحب المنسدلة لاختيار الدولة أبجدياً استناداً إلى النسخ الإنجليزية لأسماء الدول. قد يعني ذلك، أحياناً، أن بلد الشركة أو أغلب العملاء مخفي في وسط قائمة طويلة من أسماء الدول.
 

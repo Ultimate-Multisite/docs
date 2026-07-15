@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# କାର୍ଯ୍ୟ: wp_ultimo_woocommerce_load
 
 ସମସ୍ତ ଆଡ୍-ଅନ୍ ନିର୍ଭରଶୀଳତା ଲୋଡ୍ ହେବା ପରେ ଟ୍ରିଗର୍ ହୁଏ।
 

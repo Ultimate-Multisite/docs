@@ -3,7 +3,7 @@ title: 'Piwulang 12: Nglakokake Bisnis'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Wulangan 12: Nglakokake Bisnis {#lesson-12-running-the-business}
+# Wulangan 12: Nglakokake Bisnis
 
 Platform dudu proyek sing rampung -- platform iku bisnis sing kudu sampeyan lakokake. Wulangan iki nyakup operasi saben dina kanggo ngatur FitSite: dhukungan, tagihan, pangopènan, lan njaga pelanggan tetep wareg.
 

@@ -3,7 +3,7 @@ title: Anularea unui abonament
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Anularea unui abonament (v2) {#canceling-a-membership-v2}
+# Anularea unui abonament (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

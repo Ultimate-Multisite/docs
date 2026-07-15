@@ -3,7 +3,7 @@ title: Fahafanteny ny fizarana ankapobeny
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Fampitran'ny Dashboard {#dashboard-overview}
+# Fampitran'ny Dashboard
 
 Ny **Ultimate Multisite** dia manana **Dashboard** manokana eo ambanin'ny menio Ultimate Multisite ary manampy widgets koa amin'ny Network Dashboard. Io lahatsoratra io dia mitantara izay ho hitanao ao amin'ireo toerana roa ireo.
 

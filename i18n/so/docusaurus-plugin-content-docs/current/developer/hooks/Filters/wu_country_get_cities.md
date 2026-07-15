@@ -4,7 +4,7 @@ title: Shaandhayn - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Sifeeye: wu_country_get_cities {#filter-wucountrygetcities}
+# Sifeeye: wu_country_get_cities
 
 Waxay soo celisaa liiska magaalooyinka ee gobol ku jira waddan.
 

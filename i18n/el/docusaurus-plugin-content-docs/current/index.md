@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Τεκμηρίωση Ultimate Multisite {#ultimate-multisite-documentation}
+# Τεκμηρίωση Ultimate Multisite
 
 Καλώς ήρθατε στη τεκμηρίωση του Ultimate Multisite. Το Ultimate Multisite μετατρέπει το WordPress Multisite σε μια πλήρη πλατφόρμα Website as a Service (WaaS).
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 Τεχνική αναφορά για developers που αναπτύσσουν εφαρμογές πάνω στο Ultimate Multisite. Περιλαμβάνει αναφορά hooks, τεκμηρίωση REST API και οδηγούς ανάπτυξης add-ons.
 
-### [Addons](/addons) {#addons}
+### [Πρόσθετα](/addons) {#addons}
 
 Τεκμηρίωση για πληρωμένα addon plugins που επεκτείνουν το Ultimate Multisite με επιπλέον λειτουργίες όπως η ενσωμάτωση με WooCommerce, analytics, πώληση domains και πολλά άλλα.
 

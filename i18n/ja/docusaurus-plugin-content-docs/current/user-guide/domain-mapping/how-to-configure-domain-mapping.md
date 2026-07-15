@@ -3,7 +3,7 @@ title: ドメインマッピングの設定方法
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# ドメインマッピングの設定方法 (v2) {#how-to-configure-domain-mapping-v2}
+# ドメインマッピングの設定方法 (v2)
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

@@ -3,7 +3,7 @@ title: 'Mësimi 2: Zgjedhja e nishës suaj'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Mësimi 2: Zgjedhja e niches suaj {#lesson-2-picking-your-niche}
+# Mësimi 2: Zgjedhja e niches suaj
 
 Në Mësimin 1 përcaktuam pse niche fiton ndaj gjenerikes. Tani duhet të zgjidhni tuajën. Ky mësim ju jep një kornizë për të gjetur dhe validuar një niche para se të investoni kohë duke ndërtuar për të.
 

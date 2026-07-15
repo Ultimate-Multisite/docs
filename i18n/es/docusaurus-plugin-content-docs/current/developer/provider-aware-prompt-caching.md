@@ -3,7 +3,7 @@ title: Almacenamiento en caché de prompts consciente del proveedor
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Almacenamiento en Caché de Prompts con Conciencia del Proveedor {#provider-aware-prompt-caching}
+# Almacenamiento en Caché de Prompts con Conciencia del Proveedor
 
 Superdav AI Agent v1.12.0 presenta el **almacenamiento en caché de prompts consciente del proveedor** (*provider-aware prompt caching*), lo que optimiza los costos y la latencia de la API al almacenar en caché los prompts a través de diferentes proveedores de LLM. Cada proveedor tiene mecanismos y configuraciones de caché diferentes.
 

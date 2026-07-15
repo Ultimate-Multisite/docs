@@ -3,7 +3,7 @@ title: Ukwakha Amakhodi Esaphulelo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ukudala Amakhodi Esaphulelo (v2) {#creating-discount-codes-v2}
+# Ukudala Amakhodi Esaphulelo (v2)
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite version 2.x.**_
 

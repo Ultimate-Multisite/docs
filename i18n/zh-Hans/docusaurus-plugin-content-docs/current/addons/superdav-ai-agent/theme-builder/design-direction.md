@@ -3,7 +3,7 @@ title: 设计方向
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# 设计方向 {#design-direction}
+# 设计方向
 
 **设计方向**步骤允许您在使用 Theme Builder 生成完整主题之前，回顾、完善和确定您主题的视觉设计。
 

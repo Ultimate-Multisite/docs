@@ -3,7 +3,7 @@ title: Změny v Mailchimpu
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Seznam změn Mailchimp {#mailchimp-changelog}
+# Seznam změn Mailchimp
 
 Verze: 1.1.1 - Vydáno 2025-09-28
 

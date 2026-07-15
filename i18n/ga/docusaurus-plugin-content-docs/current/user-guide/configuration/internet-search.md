@@ -3,7 +3,7 @@ title: Ceardlachaí internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Ceardlacha Intirithe {#internet-search}
+# Ceardlacha Intirithe
 
 Is é AI Agent Gratis v1.5.0 níos adda **Internet Search** (Ceardlacha Intirithe) a leas an AI assistant a fháil ina chuid féin inforamach níos nua ó theibhiú go dtí an cuid. Is é a bhfáil tríd [Brave Search API](https://brave.com/search/api/) nó [Tavily API](https://tavily.com/).
 

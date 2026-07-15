@@ -3,7 +3,7 @@ title: Khuaws cia Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# ការតភ្ជាប់ជាមួយ Hestia Control Panel {#hestia-control-panel-integration}
+# ការតភ្ជាប់ជាមួយ Hestia Control Panel
 
 ការណែនាំនេះនឹងពន្យល់ពីរបៀបកំណត់រចនាសម្ព័ន្ធ Ultimate Multisite Hestia integration ដើម្បីឱ្យដែនដែលបានបិទភ្ជាប់ (mapped domains) នៅក្នុងបណ្តាញរបស់អ្នកត្រូវបានបន្ថែម (និងដកចេញ) ជា Web Domain Aliases នៅក្នុង Hestia ដោយស្វ័យប្រវត្តិ។
 

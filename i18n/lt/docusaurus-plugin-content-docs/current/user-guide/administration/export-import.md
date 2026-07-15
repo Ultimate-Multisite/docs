@@ -3,7 +3,7 @@ title: Išvaizduoti ir įvaizduoti
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportavimas ir importavimas {#export--import}
+# Eksportavimas ir importavimas
 
 Ultimate Multisite 2.9.0 pridėjo vieną vienytį **Eksportavimo ir importavimo** įrankį, esantįje meniu **Tools > Export & Import**. Naudokite jį, kai jums reikia paketuoti vieną WordPress svetainę kaip ZIP failą, atnaujinti tą ZIP arba pereiti svetainę tarp sujungtų Ultimate Multisite ir vienytinių WordPress įrenginių.
 

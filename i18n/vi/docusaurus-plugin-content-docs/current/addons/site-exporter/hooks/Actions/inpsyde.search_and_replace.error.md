@@ -4,7 +4,7 @@ title: Hành động - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Action: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Action: inpsyde.search_and_replace.error
 
 Hook này bị bỏ qua vì nó chưa được đăng ký bởi WP Ultimo.
 

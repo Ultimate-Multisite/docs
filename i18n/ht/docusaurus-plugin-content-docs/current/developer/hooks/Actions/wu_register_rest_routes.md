@@ -4,7 +4,7 @@ title: Aksyon - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Aksyon: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Aksyon: wu_register_rest_routes
 
 Pèmèt wout adisyonèl yo anrejistre.
 

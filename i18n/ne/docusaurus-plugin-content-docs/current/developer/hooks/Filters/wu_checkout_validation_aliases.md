@@ -4,7 +4,7 @@ title: फिल्टर - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# फिल्टर: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# फिल्टर: wu_checkout_validation_aliases
 
 फारम validator मा अनुकूलित aliases थप्न plugin विकासकर्ताहरूलाई अनुमति दिनुहोस्।
 

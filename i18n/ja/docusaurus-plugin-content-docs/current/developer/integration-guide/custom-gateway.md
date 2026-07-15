@@ -3,7 +3,7 @@ title: カスタムゲートウェイ開発
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# カスタムゲートウェイ開発 {#custom-gateway-development}
+# カスタムゲートウェイ開発
 
 `Base_Gateway` クラスを拡張して、カスタム決済ゲートウェイを作成できます。
 

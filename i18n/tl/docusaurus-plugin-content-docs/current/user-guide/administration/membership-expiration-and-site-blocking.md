@@ -3,7 +3,7 @@ title: Pag-expire ng Miyembro at Pag-block ng Site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Pag-expire ng Membership at Pag-block ng Site {#membership-expiration-and-site-blocking}
+# Pag-expire ng Membership at Pag-block ng Site
 
 Ipaliwanag ng gabay na ito kung paano hinahawakan ng Ultimate Multisite ang pag-expire ng membership, pagtatapos ng trial, at pag-block sa frontend ng site. Saklaw nito ang buong siklo ng isang membership mula aktibo hanggang expired, ang mga setting na nagkokontrol kung magbo-block ba ang mga site, at kung ano ang dapat tingnan kapag nananatiling accessible ang mga site kahit nag-expire na ang membership.
 

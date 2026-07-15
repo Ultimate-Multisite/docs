@@ -3,7 +3,7 @@ title: 'Lektion 2: Välja din nisch'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lektion 2: Välja din nisch {#lesson-2-picking-your-niche}
+# Lektion 2: Välja din nisch
 
 I Lektion 1 klargjorde vi varför en nisch är bättre än att vara allmän. Nu måste du välja din egen. Den här lektionen ger dig ett ramverk för att hitta och validera en nisch innan du lägger tid på att bygga något för den.
 

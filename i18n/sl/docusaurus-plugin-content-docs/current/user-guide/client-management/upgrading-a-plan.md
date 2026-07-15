@@ -3,7 +3,7 @@ title: Ugradba paketa
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Onavaditev paketa (v2) {#upgrading-a-plan-v2}
+# Onavaditev paketa (v2)
 
 _**POMEMBNE OPOMENJE: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 

@@ -3,7 +3,7 @@ title: Multi-Tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 waxay ku daraysaa awoodda multi-tenancy (in kasta oo ay la mid tahay in la haysto meel gaar ah) ee Hostinger si in domain-yada loo host-kaado ay uga qayb qaataan hababka bixinta qoyska (tenant provisioning) iyagoo la socda isku-dhafka hore ee Hostinger domain-mapping.
 

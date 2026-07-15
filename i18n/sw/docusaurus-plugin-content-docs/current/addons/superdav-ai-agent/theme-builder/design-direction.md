@@ -3,7 +3,7 @@ title: Mtiririko wa Ubunifu
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Mwelekeo wa Ubunifu {#design-direction}
+# Mwelekeo wa Ubunifu
 
 Hatua ya **Mwelekeo wa Ubunifu** inakuwezesha kupitia, kuboresha, na kumaliza muundo wa kuonekana wa theme yako kabla ya Theme Builder kutengeneza theme nzima.
 

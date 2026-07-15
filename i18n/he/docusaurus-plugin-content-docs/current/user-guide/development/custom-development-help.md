@@ -3,7 +3,7 @@ title: עזרה בפיתוח מותאם אישית
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# איך לקבל עזרה בפיתוח מותאם אישית מ-Codeable? {#how-to-get-custom-development-help-from-codeable}
+# איך לקבל עזרה בפיתוח מותאם אישית מ-Codeable?
 
 לפעמים, אנחנו באמת צריכים התאמה אישית מעולה כדי שתהליכי הרשת שלנו יעבדו בדיוק כמו שאנחנו רוצים. אם זה מה שאתם מחפשים, אנחנו ממליצים על [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), מקום שבו תוכלו למצוא מפתחים מנוסים עם מומחיות ב-Ultimate Multisite.
 

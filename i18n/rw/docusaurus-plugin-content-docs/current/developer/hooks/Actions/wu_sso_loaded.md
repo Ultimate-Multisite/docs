@@ -4,7 +4,7 @@ title: Igikorwa - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Igikorwa: wu_sso_loaded {#action-wussoloaded}
+# Igikorwa: wu_sso_loaded
 
 Emerera abategura amacomeka kongeramo hooks z’inyongera, niba bikenewe.
 

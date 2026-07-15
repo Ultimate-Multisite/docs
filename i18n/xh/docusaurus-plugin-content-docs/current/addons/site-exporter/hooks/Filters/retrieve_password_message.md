@@ -4,7 +4,7 @@ title: Isihluzi - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Isihluzo: retrieve_password_message {#filter-retrievepasswordmessage}
+# Isihluzo: retrieve_password_message
 
 Sihluza umzimba womyalezo we-imeyile yokuseta kwakhona igama lokugqithisa.
 

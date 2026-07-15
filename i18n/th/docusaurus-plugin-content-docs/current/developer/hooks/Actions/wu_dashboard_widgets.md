@@ -4,7 +4,7 @@ title: Action - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Action: wu_dashboard_widgets
 
 ฟังก์ชันนี้ช่วยให้ผู้พัฒนาปลั๊กอินสามารถเพิ่มวิดเจ็ต (widgets) เข้าไปในแผงควบคุมแดชบอร์ดของเครือข่าย (Network Dashboard Panel) ได้
 

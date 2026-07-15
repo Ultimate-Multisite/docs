@@ -3,7 +3,7 @@ title: Kepriye carane nggolek tulung
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Cara Nyuwun Tulung {#how-to-get-help}
+# Cara Nyuwun Tulung
 
 Sampeyan wis duwe License key sing sah, lan ana akses kanggo tim kita kanggo mbantu ngrampungake masalah sing mungkin ketemu nalika sampeyan lagi nggatekake Ultimate Multisite.
 

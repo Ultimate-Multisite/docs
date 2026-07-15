@@ -4,7 +4,7 @@ title: Filter - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filter: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Filter: wu_get_membership_allowed_forms
 
 Developers-ಗಳಿಗೆ ಈ ವರ್ತನೆಯನ್ನು (behaviour) ತಪ್ಪಿಸಲು ಹೊಸ ಫಾರ್ಮ್ ಸ್ಲಗ್‌ಗಳನ್ನು (form slugs) ಸೇರಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

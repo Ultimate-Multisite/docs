@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# 動作：wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# 動作：wp_ultimo_ptm_page_wizard_after_title
 
 讓外掛開發者可以新增列出頁面上的額外按鈕
 

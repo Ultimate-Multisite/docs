@@ -3,7 +3,7 @@ title: 'Legea 1: Zergatik nola irudiak ondorioztatzen dira'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lehen 1: Zerbiak gertatzen da {#lesson-1-why-niche-wins}
+# Lehen 1: Zerbiak gertatzen da
 
 Software edo bat ere ez badu aurkitu, zerbait konkretua irudien bitartean diseinatu zenbatearari emateko alegia da, hori da lehen erabakia da bere bizitzaren lehena dauna.
 

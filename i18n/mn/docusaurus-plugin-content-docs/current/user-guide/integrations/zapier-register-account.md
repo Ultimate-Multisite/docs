@@ -3,7 +3,7 @@ title: Zapier-ээр хаягууд бүртгэж авах
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Үйл явдал: Zapier-ээр хаяг оруулах {#event-register-an-account-via-zapier}
+# Үйл явдал: Zapier-ээр хаяг оруулах
 
 [Ultimate Multisite-ийг Zapier-тэй холбох](zapier.md) нийтлэлд бид Zapier-ийг Ultimate Multisite доторх өөр үйлдэл хийхийн тулд trigger болон event-ээс ямар ч зүйлийг хэрэглэх талаар ярьсан. Энэ нийтлэлийнхээ зорилгоор бид гуравдагч талын аппликейшнуудыг хэрхэн интеграц хийж болохыг харуулах болно. Бид өгөгдлийн эх сурвалжаар Google Sheets-ийг ашиглаж, тухайн мэдээллийг Ultimate Multisite руу оруулан хаяг оруулах үйлдлийг хийе.
 

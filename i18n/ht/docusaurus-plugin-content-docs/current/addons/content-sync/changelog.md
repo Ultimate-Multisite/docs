@@ -3,7 +3,7 @@ title: Jounal chanjman senkronizasyon kontni
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Rejis Chanjman Content Sync {#content-sync-changelog}
+# Rejis Chanjman Content Sync
 
 ### Vèsyon 1.1.0 - Lage 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nouvo: Sipò pou senkronize tout kalite pòs (pòs, paj, kalite pòs pèsonalize)

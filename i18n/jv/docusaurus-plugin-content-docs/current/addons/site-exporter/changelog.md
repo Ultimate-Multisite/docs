@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Pengekspor Situs
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Cathetan Owah-owahan Site Exporter {#site-exporter-changelog}
+# Cathetan Owah-owahan Site Exporter
 
 Versi: 1.0.6 - Dirilis tanggal 2026-05-11
 * Anyar: Ekspor site saiki nglebokaké index.php sing bisa boot dhewe supaya ZIP bisa diinstal ing host anyar tanpa instal plugin kapisah

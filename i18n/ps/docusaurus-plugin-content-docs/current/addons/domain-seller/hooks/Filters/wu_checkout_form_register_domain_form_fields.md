@@ -4,7 +4,7 @@ title: فلټر - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# فلټر: wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
+# فلټر: wu_checkout_form_register_domain_form_fields
 
 د ډومېن ثبتولو د پای‌تادیې فورمې ساحې فلټر کړئ.
 

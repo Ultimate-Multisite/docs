@@ -3,7 +3,7 @@ title: Nanganan Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ngatur Webhook {#webhook-handling}
+# Ngatur Webhook
 
 Jieun titik panarima webhook kustom pikeun narima kajadian ti layanan éksternal jeung nyingkronkeun data jeung Ultimate Multisite.
 

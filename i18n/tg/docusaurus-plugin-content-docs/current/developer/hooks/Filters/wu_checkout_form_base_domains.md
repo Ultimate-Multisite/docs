@@ -4,7 +4,7 @@ title: Филтр - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Филтр: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Филтр: wu_checkout_form_base_domains
 
 Доменҳои асосии муштараки шакли checkout-ро филтр мекунад, ки набояд ба сабтҳои домени mapped табдил шаванд.
 

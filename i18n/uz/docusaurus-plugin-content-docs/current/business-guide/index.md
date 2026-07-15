@@ -3,7 +3,7 @@ title: Nish veb-sayt biznesini yarating
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite bilan tor yo‘nalishdagi veb-sayt biznesini quring {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite bilan tor yo‘nalishdagi veb-sayt biznesini quring
 
 Veb-sayt sotishga urinadigan ko‘pchilik narx bo‘yicha Wix, Squarespace va minglab frilanserlar bilan raqobat qiladi. Ular yutqazadi. G‘olib bo‘ladiganlar esa aniq auditoriyani tanlaydi, shu auditoriyaga mos yechim yaratadi va yetkazib beradigan qiymati uchun haq oladi.
 

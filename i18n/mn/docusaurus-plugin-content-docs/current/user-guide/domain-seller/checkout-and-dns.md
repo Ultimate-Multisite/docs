@@ -3,7 +3,7 @@ title: Тохируулах талба болон Хэрэглэгчийн DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field байнга болон Хэрэглэгчийн DNS Удирдлага {#checkout-field-and-customer-dns-management}
+# Checkout Field байнга болон Хэрэглэгчийн DNS Удирдлага
 
 ## Домен Сонгох checkout хэсэг {#the-domain-selection-checkout-field}
 

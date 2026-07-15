@@ -4,7 +4,7 @@ title: Sefe - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Sehlungi: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Sehlungi: wu_should_create_domain_record_for_site
 
 Se sefa hore na Ultimate Multisite e lokela ho bopa rekoto ya domain bakeng sa sebaka sa marang-rang se sa tswa bopjwa.
 

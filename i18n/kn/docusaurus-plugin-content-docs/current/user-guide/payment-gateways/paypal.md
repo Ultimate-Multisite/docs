@@ -3,7 +3,7 @@ title: PayPal ಹೊಂದಿಸುವುದು
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway (v2) ಸೆಟ್ ಅಪ್ ಮಾಡುವುದು {#setting-up-the-paypal-gateway-v2}
+# PayPal Gateway (v2) ಸೆಟ್ ಅಪ್ ಮಾಡುವುದು
 
 _**ಪ್ರಮುಖ ಸೂಚನೆ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಕುರಿತು ಹೇಳುತ್ತದೆ.**_
 

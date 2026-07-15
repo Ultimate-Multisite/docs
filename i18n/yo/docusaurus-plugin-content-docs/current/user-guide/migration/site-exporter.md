@@ -3,7 +3,7 @@ title: Olùgbé Ojúlé Jáde
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Olùgbéjáde Ojúlé {#site-exporter}
+# Olùgbéjáde Ojúlé
 
 Ẹ̀yà yìí ni àfikún **Olùgbéjáde Ojúlé** pèsè.
 

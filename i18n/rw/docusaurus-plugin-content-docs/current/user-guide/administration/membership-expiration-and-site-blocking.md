@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ubutumwe mu gukoresha no Guhagarira ry'Ubutumwe {#membership-expiration-and-site-blocking}
+# Ubutumwe mu gukoresha no Guhagarira ry'Ubutumwe
 
 Iyi inyandiko irafasha kumenya uko Ultimate Multisite yikora ibisubizo ku guhagarira ry'ubutumwe, ukugera kw'ibitiramo (trials), no guhagarira ry'ibinyabwivu mu gice cyo gukoresha (frontend site blocking). Iyi inyandiko ifasha kumenya uburyo ubutumwe bwa umuntu bishobora gukora, kuva ku gukoresha kugeza ku guhagarira. Iyo ifasha kumenya ibyerekezo byo gutera ko ibiteguye (sites) bigaragara mu gihe cy'ubutumwe bwa umuntu bishobora guhagarirwa, no ibyo gukoresha kuvuga iyo ibiteguye bigaragara ariko ubutumwe bwa umuntu bishobora guhagarira.
 

@@ -3,7 +3,7 @@ title: 메뉴 만들기
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# 메뉴 생성 {#create-menu}
+# 메뉴 생성
 
 **메뉴 생성** 기능은 페이지 제목과 별개로 고유한 내비게이션 레이블을 지원하는 WordPress 내비게이션 메뉴를 만듭니다.
 

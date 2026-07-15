@@ -4,7 +4,7 @@ title: फिल्टर - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# फिल्टर: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# फिल्टर: wu_view_override_replaceable_views
 
 विकासकर्ताहरूलाई बदल्न मिल्ने सूचीमा थप फोल्डरहरू थप्न अनुमति दिन्छ।
 

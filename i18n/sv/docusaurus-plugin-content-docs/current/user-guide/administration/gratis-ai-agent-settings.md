@@ -3,7 +3,7 @@ title: Gratis AI Agent-inställningar
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent-inställningar {#gratis-ai-agent-settings}
+# Gratis AI Agent-inställningar
 
 Skärmen **Settings → Advanced** i Gratis AI Agent tillhandahåller konfiguration på administratörsnivå för backend-integrationer. Den här sidan dokumenterar vidarebefordran av feedback, nycklar för sökleverantörer, konfiguration av hanterad Superdav-tjänst, Google Calendar-kontroller, TextBee SMS-inställningar och nätverksomfattande funktionsflaggor.
 

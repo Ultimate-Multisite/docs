@@ -3,7 +3,7 @@ title: Enrejistre Pwòch API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Le point de terminaison API d'Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Le point de terminaison API d'Ultimate Multisite
 
 Nan aprantisaj sa tèks la, ou pral aprann kijan pou w itilize le point de terminaison API Ultimate Multisite /register pou kreye tout pwosesis ansèpasyon (onboarding) pou yon nouvo kliyan nan rezo ou epi kijan pou fè sa ak Zapier.
 

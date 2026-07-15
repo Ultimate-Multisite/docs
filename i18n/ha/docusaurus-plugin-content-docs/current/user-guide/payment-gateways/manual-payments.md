@@ -3,7 +3,7 @@ title: Saita Biyan Kuɗi da Hannu
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Saita Biyan Kuɗi na Hannu (v2) {#setting-up-manual-payments-v2}
+# Saita Biyan Kuɗi na Hannu (v2)
 
 _**MUHIMMIYAR SANARWA: Wannan makala tana nufin Ultimate Multisite sigar 2.x.**_
 

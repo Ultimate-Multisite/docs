@@ -3,7 +3,7 @@ title: Simbisa Kusiyana kweMuunganidzwa weMavara
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Simbisa Kusiyana kwePalette {#validate-palette-contrast}
+# Simbisa Kusiyana kwePalette
 
 Kugona kwe**Validate Palette Contrast** kunoongorora mapeya emavara mupalette yedhizaini yako kuti aenderane neWCAG (Web Content Accessibility Guidelines) usati waashandisa pa theme yako.
 

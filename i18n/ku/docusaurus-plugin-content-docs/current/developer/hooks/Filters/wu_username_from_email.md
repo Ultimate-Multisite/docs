@@ -4,7 +4,7 @@ title: Parzûn - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Parzûn: wu_username_from_email {#filter-wuusernamefromemail}
+# Parzûn: wu_username_from_email
 
 Navê bikarhênerê xerîdarê nû parzûn bike.
 

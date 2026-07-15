@@ -3,7 +3,7 @@ title: Integrado CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrazione {#cyberpanel-integration}
+# CyberPanel Integrazione
 
 Ta gvidu klaras, ki manon uz konfigurigi integracion Ultimate Multisite CyberPanel, por permet ke domenaj mapitaj en viajn vo nòtrete otomatikman ajoute (kaj elimini) kiel virtual host en CyberPanel, san opcion de auto-SSL provizión per Let's Encrypt.
 

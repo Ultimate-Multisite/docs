@@ -3,7 +3,7 @@ title: 按量计费套餐更新日志
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans 变更日志 {#metered-plans-changelog}
+# Metered Plans 变更日志
 
 版本 1.1.0 - 发布于 2026-05-05
 - 新增：多站点子站点的 AI token 计费 — 跨客户站点跟踪并计费 AI token 用量，并支持可配置的按 token 费率

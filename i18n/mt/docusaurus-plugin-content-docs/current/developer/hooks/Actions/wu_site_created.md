@@ -4,7 +4,7 @@ title: Azzjoni - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Azzjoni: wu_site_created {#action-wusitecreated}
+# Azzjoni: wu_site_created
 
 Jitħaddem wara li sit jinħoloq għall-ewwel darba.
 

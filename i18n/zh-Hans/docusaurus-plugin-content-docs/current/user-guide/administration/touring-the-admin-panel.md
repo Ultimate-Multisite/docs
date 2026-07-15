@@ -3,7 +3,7 @@ title: 管理面板导览
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# 浏览 Admin Panel {#touring-the-admin-panel}
+# 浏览 Admin Panel
 
 Ultimate Multisite 旨在尽可能简单且易于理解，但对于这样强大的工具，有一个引导式导览会很有帮助。让我们浏览这些管理页面，帮助你熟悉位置。
 

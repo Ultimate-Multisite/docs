@@ -3,7 +3,7 @@ title: 'Somo la 2: Kuchagua Niche Yako'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Somo la 2: Kuchagua Niche Yako {#lesson-2-picking-your-niche}
+# Somo la 2: Kuchagua Niche Yako
 
 Katika Somo la 1, tulthibitisha kwa nini niche (eneo maalum) inashinda kuwa kwa ujumla. Sasa unahitaji kuchagua yako. Somo hili linakupa mfumo wa kutafuta na kuthibitisha niche kabla ya kuwekeza muda katika kujenga kitu kwa ajili yake.
 

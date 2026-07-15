@@ -4,7 +4,7 @@ title: Chochita - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Chochitika: switch_network {#action-switchnetwork}
+# Chochitika: switch_network
 
 Imayambitsidwa pamene nkhani ya network yomwe ilipo yasinthidwa.
 

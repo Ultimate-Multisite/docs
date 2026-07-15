@@ -3,7 +3,7 @@ title: စာရင်းသွင်းမှုကို ဘယ်လိုပ
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# ကျွန်ုပ်၏ subscription ကို ဘယ်လို ပယ်ဖျက်နိုင်မလဲ? {#how-can-i-cancel-my-subscription}
+# ကျွန်ုပ်၏ subscription ကို ဘယ်လို ပယ်ဖျက်နိုင်မလဲ?
 
 Ultimate Multisite license ရှိပါက သင်အလိုရှိသည့်အချိန်တိုင်း renewal ကို ပယ်ဖျက်နိုင်ပါသည်။ အောက်ပါအဆင့်များကို လိုက်နာပါ:
 

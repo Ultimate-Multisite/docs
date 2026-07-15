@@ -3,7 +3,7 @@ title: V1-ээс шилжих
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-ээс шилжих {#migrating-from-v1}
+# V1-ээс шилжих
 
 ## Ultimate Multisite нь анхны 1.x хувилбарын дарааллаас 2.x дараалалд шилжсэн. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

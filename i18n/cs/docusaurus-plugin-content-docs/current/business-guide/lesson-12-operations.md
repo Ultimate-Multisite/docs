@@ -3,7 +3,7 @@ title: 'Lekce 12: Provozování podnikání'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lekce 12: Vedení byznysu {#lesson-12-running-the-business}
+# Lekce 12: Vedení byznysu
 
 Platforma není projekt, který dokončíte – je to byznys, který vedete. Tato lekce pokrývá každodenní provozní činnosti spravování FitSite: podporu, fakturaci, údržbu a udržování spokojenosti zákazníků.
 

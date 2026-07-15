@@ -4,7 +4,7 @@ title: ক্রিয়া - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 প্লাগইন ডেভেলপারদের সুযোগ দেয় যে পেজগুলো রেজিস্টার করার সময় তারা অতিরিক্ত কিছু কাজ চালাতে পারে।
 

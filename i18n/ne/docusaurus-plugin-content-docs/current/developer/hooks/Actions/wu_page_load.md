@@ -4,7 +4,7 @@ title: कार्य - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# कार्य: wu_page_load {#action-wupageload}
+# कार्य: wu_page_load
 
 प्लगइन विकासकर्ताहरूलाई हाम्रा पृष्ठहरूमा थप हुकहरू थप्न अनुमति दिनुहोस्।
 

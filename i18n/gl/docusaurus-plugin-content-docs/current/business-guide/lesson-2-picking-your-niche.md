@@ -3,7 +3,7 @@ title: 'Lección 2: Escoller o teu nicho'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lección 2: Escoller o teu nicho {#lesson-2-picking-your-niche}
+# Lección 2: Escoller o teu nicho
 
 Na Lección 1 establecemos por que o nicho supera o xenérico. Agora tes que escoller o teu. Esta lección dáche un marco para atopar e validar un nicho antes de investir tempo en construír para el.
 

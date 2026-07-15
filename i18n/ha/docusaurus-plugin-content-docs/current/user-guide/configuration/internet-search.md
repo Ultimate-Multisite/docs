@@ -3,7 +3,7 @@ title: Bincike na Intanet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Maganarwar Intanet (Internet Search) {#internet-search}
+# Maganarwar Intanet (Internet Search)
 
 Gratis AI Agent v1.5.0 wajibi ne aini **Maganarwar Intanet (Internet Search)** da wata, wanda ke ba shi wa AI assistant don samun bayanai na sabon gaba daga intanet yayin tattaunawa. Wannan yana aiki ta hanyar [Brave Search API](https://brave.com/search/api/) ko [Tavily API](https://tavily.com/).
 

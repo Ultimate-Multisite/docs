@@ -4,7 +4,7 @@ title: Akcia - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Akcia: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Akcia: wu_register_rest_routes
 
 Umožňuje registrovať ďalšie trasy.
 

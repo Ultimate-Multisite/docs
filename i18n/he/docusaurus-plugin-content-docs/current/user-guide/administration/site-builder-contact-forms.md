@@ -3,7 +3,7 @@ title: טפסי יצירת אתר ליצירת קשר
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# טפסי יצירת אתר (Site Builder Contact Forms) {#site-builder-contact-forms}
+# טפסי יצירת אתר (Site Builder Contact Forms)
 
 Superdav AI Agent v1.10.0 מוסיף את היכולת ליצור טפסי יצירת קשר ישירות מממשק הצ'אט, באמצעות ה-Site Builder agent. זה מאפשר לך להוסיף טפסי יצירת קשר פעילים לחלוטין לכל עמוד, בלי לעזוב את הצ'אט.
 

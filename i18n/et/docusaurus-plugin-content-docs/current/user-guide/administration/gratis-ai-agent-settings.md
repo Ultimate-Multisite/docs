@@ -3,7 +3,7 @@ title: Gratis AI Agent seaded
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agenti seaded {#gratis-ai-agent-settings}
+# Gratis AI Agenti seaded
 
 Gratis AI Agenti **Seaded → Täpsem** ekraan pakub administraatori tasemel konfiguratsiooni taustasüsteemi integratsioonide jaoks. See leht dokumenteerib tagasiside edastamist, otsinguteenuse pakkuja võtmeid, hallatud Superdav teenuse seadistust, Google Calendar juhtelemente, TextBee SMS-i seadeid ja kogu võrku hõlmavaid funktsioonilippe.
 

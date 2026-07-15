@@ -3,7 +3,7 @@ title: Gastvrijheidsmenu's
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronomische Menu's {#hospitality-menus}
+# Gastronomische Menu's
 
 De functie **Gastronomische Menu's** stelt Theme Builder in staat om gestructureerde menu's voor voedsel en drank te genereren en in te bedden op uw WordPress-site.
 

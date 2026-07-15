@@ -3,7 +3,7 @@ title: Поставки за Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Поставки за Gratis AI Agent {#gratis-ai-agent-settings}
+# Поставки за Gratis AI Agent
 
 Екранот **Settings → Advanced** во Gratis AI Agent обезбедува конфигурација на администраторско ниво за backend интеграции. Оваа страница документира препраќање повратни информации, клучеви за даватели на пребарување, поставување на управувана Superdav услуга, контроли за Google Calendar, TextBee SMS поставки и feature flags на ниво на мрежа.
 

@@ -3,7 +3,7 @@ title: Preżumidji
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisiti Ultimi Multisite {#ultimate-multisite-requirements}
+# Requisiti Ultimi Multisite
 
 Il primu aspettu tal-tergħu qabel ma ti kompristi Ultimate Multisite huwa li għalfej il-requisiti biex tgħmli l-plugin tiegħek jifuna. B'saħħa, għandna biss pquċinu ħafna requisiti bżonnijiet biex tgħmli l-Ultimate Multisite jifuna: **domen name**, fornitur ta hosting tajba u installazzjoni WordPress **Multisite**. Seħħa, huwa da kien il-għadd li għandek!
 

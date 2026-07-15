@@ -3,7 +3,7 @@ title: تكامل Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# تكامل Cloudways {#cloudways-integration}
+# تكامل Cloudways
 
 ## نظرة عامة {#overview}
 Cloudways هي منصة استضافة سحابية مُدارة تتيح لك نشر مواقع WordPress على مزوّدي سحابة مختلفين مثل DigitalOcean وAWS وGoogle Cloud والمزيد. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite وCloudways.

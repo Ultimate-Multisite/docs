@@ -4,7 +4,7 @@ title: 过滤 - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# 过滤器：wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# 过滤器：wu_password_require_lowercase
 
 过滤是否在密码中要求使用小写字母。
 

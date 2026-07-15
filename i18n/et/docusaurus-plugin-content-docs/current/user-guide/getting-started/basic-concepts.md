@@ -3,7 +3,7 @@ title: Põhiline konseptid
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Põhitunnised {#basic-concepts}
+# Põhitunnised
 
 Uued WordPress Multisite kasutajatele ja keskmiselt alustavatele Ultimate Multisite kasutajatele võib esialgphase palju uusi sõnu ja fraase omandada. Neid õppimine on oluline, sest peab teil mõista platvormi ja seda, kuidas see üldmulderise kui üksus toimib.
 

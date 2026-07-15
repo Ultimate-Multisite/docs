@@ -3,7 +3,7 @@ title: Quản lý Khách hàng
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Quản lý Khách hàng {#managing-customers}
+# Quản lý Khách hàng
 
 Trang **Customers** hiển thị danh sách các thành viên đã đăng ký trong mạng lưới của bạn. Trang này hiển thị thông tin cơ bản của người dùng bao gồm tên, địa chỉ email, lần đăng nhập cuối, và liên kết **switch to** cho phép bạn đăng nhập vào subsite của người dùng với tư cách quản trị viên.
 

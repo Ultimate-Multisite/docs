@@ -3,7 +3,7 @@ title: Patikrinti paletės kontrastą
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Paletės kontrasto patikrinimas {#validate-palette-contrast}
+# Paletės kontrasto patikrinimas
 
 **Validate Palette Contrast** gebėjimas patikrina spalvų poras jūsų dizaino paletėje pagal WCAG (Web Content Accessibility Guidelines) atitiktį prieš pritaikant jas jūsų temai.
 

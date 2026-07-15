@@ -3,7 +3,7 @@ title: Aħmli l-integrazzjoni tal-Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Migliċi l-Integrazzjoni mal-Control Panel {#enhance-control-panel-integration}
+# Migliċi l-Integrazzjoni mal-Control Panel
 
 ## Pan test {#overview}
 Enhance huwa dashboard modern li jipprovide automazzjoni u pasturazzjoni b'potenza għall-hosting. Dan l-integrazzjoni tispjega sincronizzazzjoni awtomatika tal-domain u pasturazzjoni taċertifikat SSL bejn Ultimate Multisite u Enhance Control Panel.

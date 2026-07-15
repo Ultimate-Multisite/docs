@@ -3,7 +3,7 @@ title: 'Lliçó 13: Escalabilitat'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Aula 13: Escalar {#lesson-13-scaling-up}
+# Aula 13: Escalar
 
 Tens una plataforma funcional amb clients pagadors. Aquesta aula et cobreix com passar d'una operació petita a un negoci sostenible: escalar l'infraestructura, automatitzar operacions i augmentar els ingressos per client.
 

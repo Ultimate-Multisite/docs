@@ -3,7 +3,7 @@ title: WP Engine-ийн нийлүүлэлт
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Холбог (Integration) {#wp-engine-integration}
+# WP Engine Холбог (Integration)
 
 ## Ерөнхий өгүүлэл {#overview}
 WP Engine бол WordPress сайтуудад оновчтой гүйцэтгэл, аюулгүй байдал, өргөжих чадварыг хангах премиум менеждэх WordPress хостинг платформ юм. Энэхүү холбоо нь Ultimate Multisite болон WP Engine хоорондын домен синхрололтыг автоматаар хийгддэг.

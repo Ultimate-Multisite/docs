@@ -4,7 +4,7 @@ title: Filter - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtre: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtre: wu_plan_product_types
 
 Plan olarak kabul edilmesi gereken ürün tiplerini filtreler.
 

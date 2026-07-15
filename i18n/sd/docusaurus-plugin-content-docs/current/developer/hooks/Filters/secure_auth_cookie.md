@@ -4,7 +4,7 @@ title: فلٽر - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# فلٽر: secure_auth_cookie {#filter-secureauthcookie}
+# فلٽر: secure_auth_cookie
 
 فلٽر ڪري ٿو ته ڇا auth ڪوڪي صرف HTTPS ذريعي موڪلي وڃي.
 

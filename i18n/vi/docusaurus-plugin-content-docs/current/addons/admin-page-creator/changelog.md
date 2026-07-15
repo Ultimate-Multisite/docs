@@ -3,7 +3,7 @@ title: Nhật ký thay đổi của Admin Page Creator
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Nhật ký thay đổi của Admin Page Creator {#admin-page-creator-changelog}
+# Nhật ký thay đổi của Admin Page Creator
 
 ### Phiên bản 1.9.0 - Phát hành ngày 2026-01-18 {#version-190---released-on-2026-01-18}
 

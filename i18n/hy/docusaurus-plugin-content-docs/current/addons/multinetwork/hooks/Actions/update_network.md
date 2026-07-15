@@ -4,7 +4,7 @@ title: Գործողություն - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Գործողություն՝ update_network {#action-updatenetwork}
+# Գործողություն՝ update_network
 
 Գործարկվում է գոյություն ունեցող ցանցը թարմացվելուց հետո։
 

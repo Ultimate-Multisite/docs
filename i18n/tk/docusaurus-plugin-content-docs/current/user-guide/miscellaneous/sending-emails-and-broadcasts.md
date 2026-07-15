@@ -3,7 +3,7 @@ title: E-poçtalary we ýaýlymlary ibermek
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-poçtalary we Broadcastlary ibermek (v2) {#sending-emails-and-broadcasts-v2}
+# E-poçtalary we Broadcastlary ibermek (v2)
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 

@@ -3,7 +3,7 @@ title: Izolacija za više najmirenja
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolacija za više korisnika (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Izolacija za više korisnika (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 podržava izolaciju baze podataka i datoteka po podsajtu za suverene najmove. Ovo održava podatke najmove odvojenima dok se zadržavaju podešavanja na nivou mreže, fakturisanje i administracija.
 

@@ -3,7 +3,7 @@ title: Feedback et Rapport Problemum Clientium
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback et Rapport de Problèmes des Clients {#customer-feedback--issue-reporting}
+# Feedback et Rapport de Problèmes des Clients
 
 Gratis AI Agent v1.5.0 introduce un système intégré de retour d'information et de signalement de problèmes qui permet aux utilisateurs finaux de signaler les réponses inutiles et de rapporter directement les problèmes depuis l'interface de discussion. Ce système comprend la gestion du consentement, une commande de rapport automatisée et un triage assisté par IA en arrière-plan.
 

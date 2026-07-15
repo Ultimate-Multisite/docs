@@ -3,7 +3,7 @@ title: Nche Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgrading a plan (v2) {#downgrading-a-plan-v2}
+# Downgrading a plan (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

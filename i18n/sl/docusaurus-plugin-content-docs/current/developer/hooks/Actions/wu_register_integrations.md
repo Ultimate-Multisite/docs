@@ -4,7 +4,7 @@ title: Dejanje - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Dejanje: wu_register_integrations {#action-wuregisterintegrations}
+# Dejanje: wu_register_integrations
 
 Sproži se, da integracijam omogoči, da se registrirajo.
 

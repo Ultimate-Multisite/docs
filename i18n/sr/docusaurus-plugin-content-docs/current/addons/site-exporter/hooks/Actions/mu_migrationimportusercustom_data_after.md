@@ -4,7 +4,7 @@ title: Акција - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Радња: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
+# Радња: mu_migration/import/user/custom_data_after
 
 Окида се након извоза прилагођених корисничких података.
 

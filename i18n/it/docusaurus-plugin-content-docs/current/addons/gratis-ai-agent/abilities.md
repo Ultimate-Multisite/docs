@@ -3,7 +3,7 @@ title: Riferimento delle abilità
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Riferimento delle abilità {#abilities-reference}
+# Riferimento delle abilità
 
 Le abilità sono le azioni atomiche che Gratis AI Agent può invocare sulla tua installazione WordPress. Ogni abilità è una classe PHP registrata che espone uno schema JSON — l’agente legge questo schema in fase di esecuzione per capire quali parametri sono richiesti e cosa restituisce l’abilità.
 

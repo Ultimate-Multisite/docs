@@ -4,7 +4,7 @@ title: Filter - wu_get_network_public_ip
 sidebar_label: wu_get_network_public_ip
 _i18n_hash: 129b6c2423c8d5af9f4314cc35715281
 ---
-# Filtre: wu_get_network_public_ip {#filter-wugetnetworkpublicip}
+# Filtre: wu_get_network_public_ip
 
 Bu filtre hakkında daha fazla bilgi için, aynı yöntemde aşağıya bakabilirsiniz.
 

@@ -4,7 +4,7 @@ title: '필터 - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# 필터: wu_${this->model}_pre_save {#filter-wuthis-modelpresave}
+# 필터: wu_${this->model}_pre_save
 
 데이터베이스에 저장되기 전에 객체 데이터를 필터링합니다.
 

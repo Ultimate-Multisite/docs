@@ -3,7 +3,7 @@ title: Ubwuhanga bw'Urugero n'Urugero rwa Gukora
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 yitangira **Plugin Builder & Sandbox System**, uyu mufiti w'AI yashobora gukora, guhagarira, no gutera plugin za WordPress ku munsi yacu — cyane mu buryo bw'ubwumvikane kandi wifashishije sandbox environment.
 

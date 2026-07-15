@@ -3,7 +3,7 @@ title: Add-on Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Add-on Sunrise Bestandlaaër {#addon-sunrise-file-loader}
+# Add-on Sunrise Bestandlaaër
 
 Ultimate Multisite 2.8.0 voeg 'n sunrise-uitbreidingslaaër by vir add-ons en aangepaste MU-plugin-integrasies wat moet loop tydens WordPress sunrise bootstrapping sonder om die gegenereerde `wp-content/sunrise.php` lêer te wysig.
 

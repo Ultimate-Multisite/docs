@@ -3,7 +3,7 @@ title: የድጋፍ ትኬቶች የለውጥ ታሪክ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# የድጋፍ ትኬቶች የለውጥ መዝገብ {#support-tickets-changelog}
+# የድጋፍ ትኬቶች የለውጥ መዝገብ
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * የተሻሻለ፡ `vendor/` ዳይሬክተሪ ከGit ట్రాకిንግ ተወግዷል (በ`.gitignore` ቀድሞ ተሸፍኗል)፣ ይህም የ repository መጠንን ይቀንሳል።

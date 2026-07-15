@@ -3,7 +3,7 @@ title: Cloudflare সংহতিকৰণ
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Overview {#overview}
 Cloudflare এটা প্ৰখ্যাত কন্টেন্ট ডেলিভাৰি নেটৱৰ্ক (CDN) আৰু security প্ৰৱідাৰ যিয়ে ওয়েবসাইটক সুৰক্ষিত কৰাত আৰু গতি দিবলৈ সহায় কৰে। এই integration-এ Ultimate Multisite আৰু Cloudflareৰ মাজত স্বয়ংক্রিয় ডোমেইন ব্যৱস্থাপনা (automatic domain management) সক্ষম কৰে, বিশেষকৈ subdomain multisite installation-ৰ বাবে।

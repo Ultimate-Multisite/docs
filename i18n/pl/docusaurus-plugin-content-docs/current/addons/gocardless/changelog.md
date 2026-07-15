@@ -3,7 +3,7 @@ title: Dziennik zmian GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Dziennik zmian GoCardless {#gocardless-changelog}
+# Dziennik zmian GoCardless
 
 Wersja: 1.0.3 - Wydana 2026-05-05
 * Poprawka: Usunięto porzucone witryny oczekujące, gdy członkostwo GoCardless zostaje anulowane w stanie oczekującym lub wstrzymanym.

@@ -3,7 +3,7 @@ title: 'Lecția 1: De ce nișa câștigă'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lecția 1: De ce Niche-ul Câștigă {#lesson-1-why-niche-wins}
+# Lecția 1: De ce Niche-ul Câștigă
 
 Înainte să ne atingem de orice software, trebuie să înțelegi de ce construirea pentru o audiență specifică este cea mai importantă decizie pe care o vei lua.
 

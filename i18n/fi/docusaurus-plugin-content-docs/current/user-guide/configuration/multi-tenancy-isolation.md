@@ -3,7 +3,7 @@ title: Monitenanttinen erottelu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Monitointi erillisyys (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Monitointi erillisyys (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 tukee per-subsite -tietokoneen ja tiedostojärjestelmän erillisyyden varmistamista itsenäisille vuokralaisille. Tämä pitää vuokralaisen datan erillään säilyttäen samalla verkko-tason tarjonnan, laskutuksen ja hallinnan.
 

@@ -3,7 +3,7 @@ title: 存取帳戶頁面
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# 如何第一次登入我的帳戶頁面？ {#how-can-i-access-my-account-page-for-the-first-time}
+# 如何第一次登入我的帳戶頁面？
 
 歡迎使用 Ultimate Multisite！
 

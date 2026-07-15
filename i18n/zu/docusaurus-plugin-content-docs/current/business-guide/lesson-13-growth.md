@@ -3,7 +3,7 @@ title: 'Isifundo 13: Ukwandisa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Isifundo 13: Ukukhulisa {#lesson-13-scaling-up}
+# Isifundo 13: Ukukhulisa
 
 Unenkundla esebenzayo enamakhasimende akhokhayo. Lesi sifundo sihlanganisa indlela yokukhula usuke emsebenzini omncane uye ebhizinisini elisimeme -- ukukhulisa ingqalasizinda, ukuzenzakalela kwemisebenzi, nokwandisa imali engenayo ngekhasimende ngalinye.
 

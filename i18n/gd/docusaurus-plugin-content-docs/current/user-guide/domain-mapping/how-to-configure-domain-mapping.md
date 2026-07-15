@@ -3,7 +3,7 @@ title: Mar a rèiticheas tu mapadh àrainn
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Mar a rèiticheas tu mapadh àrainn (v2) {#how-to-configure-domain-mapping-v2}
+# Mar a rèiticheas tu mapadh àrainn (v2)
 
 _**NOTA CUDROMACH: Tha an artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 

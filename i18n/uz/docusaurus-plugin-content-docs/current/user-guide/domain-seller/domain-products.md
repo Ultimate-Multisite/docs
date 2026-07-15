@@ -3,7 +3,7 @@ title: Domain Mahsulotlari va Narxi
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domen Mahsulotlari va Narxlari {#domain-products-and-pricing}
+# Domen Mahsulotlari va Narxlari
 
 Domen mahsulotlari siz narxni, TLDlarni (Top-Level Domain) boshqarishingiz, WHOIS maxfiyligini sozlash va provayder tanlashni nazorat qilish uchun ishlatiladi. Har bir domen mahsuloti standart Multisite Ultimate mahsuloti bo'lib, uning qo'shimcha **Domain Settings** yorlig'i mavjud.
 

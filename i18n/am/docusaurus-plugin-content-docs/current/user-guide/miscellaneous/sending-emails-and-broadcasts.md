@@ -3,7 +3,7 @@ title: ኢሜይሎችን እና ብሮድካስቶችን መላክ
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ኢሜይሎችን እና Broadcasts መላክ (v2) {#sending-emails-and-broadcasts-v2}
+# ኢሜይሎችን እና Broadcasts መላክ (v2)
 
 _**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 

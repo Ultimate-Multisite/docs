@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite اسناد {#ultimate-multisite-documentation}
+# Ultimate Multisite اسناد
 
 د Ultimate Multisite اسنادو ته ښه راغلاست. Ultimate Multisite د WordPress Multisite په بشپړ Website as a Service (WaaS) پلاتفورم بدلوي.
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 د هغو پراختیاکوونکو لپاره تخنیکي مرجع چې پر Ultimate Multisite جوړونه کوي. د hooks مرجع، د REST API اسناد، او د addon د پراختیا لارښودونه پکې شامل دي.
 
-### [Addons](/addons) {#addons}
+### [اضافې](/addons) {#addons}
 
 د تادیه شوو addon pluginونو لپاره اسناد چې Ultimate Multisite د اضافي ځانګړتیاوو لکه د WooCommerce ادغام، شننې، د ډومېن پلور، او نورو سره پراخوي.
 

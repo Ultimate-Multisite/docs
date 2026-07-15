@@ -3,7 +3,7 @@ title: Plurreta ŝanĝprotokolo
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Plur-reta ŝanĝoprotokolo {#multi-network-changelog}
+# Plur-reta ŝanĝoprotokolo
 
 ### 1.3.0 {#130}
 * Nova: Antaŭrigardilo de retaj ŝablonoj — foliumu kaj antaŭrigardu retajn ŝablonojn per viva panelo antaŭ aĉeto.

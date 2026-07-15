@@ -3,7 +3,7 @@ title: Temel Konseptler
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Temel Konsepsiyalar {#basic-concepts}
+# Temel Konsepsiyalar
 
 Yeni bir WordPress Multisite (Çoklu Site) kullanıcıysanız ve Ultimate Multisite'ı yeni kullanmaya başladıysanız, başta öğrenmeniz gereken birçok yeni kelime ve ifade olabilir. Bunları öğrenmek önemli çünkü platformu ve onun nasıl çalıştığını bütün olarak anlamanız gerekecek.
 

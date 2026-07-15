@@ -4,7 +4,7 @@ title: فلټر - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# فلټر: network_options_list {#filter-networkoptionslist}
+# فلټر: network_options_list
 
 د شبکې د اختیارونو هغه لېست فلټر کوي چې د یوې شبکې په ډومېن او مسیر پورې تړاو لري.
 

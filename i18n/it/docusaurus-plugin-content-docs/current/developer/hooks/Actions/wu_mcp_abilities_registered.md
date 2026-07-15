@@ -4,7 +4,7 @@ title: Azione - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# Action: wu_mcp_abilities_registered
 
 Scatta dopo che le abilità MCP sono state registrate per un'entità.
 

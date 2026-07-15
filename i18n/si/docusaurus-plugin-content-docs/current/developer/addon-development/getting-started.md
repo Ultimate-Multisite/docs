@@ -3,7 +3,7 @@ title: ඇඩෝන සංවර්ධනය ආරම්භ කිරීම
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ඇඩෝන සංවර්ධනය {#addon-development}
+# ඇඩෝන සංවර්ධනය
 
 ## ඇඩෝන ව්‍යුහය {#addon-structure}
 

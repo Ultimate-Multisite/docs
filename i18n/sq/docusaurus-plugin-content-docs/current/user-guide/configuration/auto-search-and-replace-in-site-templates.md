@@ -3,7 +3,7 @@ title: Kërkim dhe Zëvendësim Automatik në Template të Sijetes
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Kërkimi dhe Zëvendësim Automatik në Shkurtimet e Sitet (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Kërkimi dhe Zëvendësim Automatik në Shkurtimet e Sitet (v2)
 
 _**Ky tutorial kërkon WP Uitimo version 2.x.**_
 

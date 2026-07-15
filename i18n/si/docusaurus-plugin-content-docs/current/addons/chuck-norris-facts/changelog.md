@@ -3,7 +3,7 @@ title: Chuck Norris කරුණු වෙනස්කම් ලොගය
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris කරුණු වෙනස්කම් සටහන {#chuck-norris-facts-changelog}
+# Chuck Norris කරුණු වෙනස්කම් සටහන
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * එක් කළා: Ultimate Multisite යාවත්කාලීන සේවාදායකය හරහා ස්වයංක්‍රීය යාවත්කාලීන ක්‍රියාකාරීත්වය

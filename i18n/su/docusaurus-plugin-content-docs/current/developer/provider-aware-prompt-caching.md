@@ -3,7 +3,7 @@ title: Panyimpenan Cache Prompt anu Sadar kana Panyadia
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
+# Provider-Aware Prompt Caching
 
 Superdav AI Agent v1.12.0 ngenalkeun **provider-aware prompt caching**, anu ngaoptimalkeun biaya API jeung latensi ku nyimpen prompt dina cache di rupa-rupa panyadia LLM. Unggal panyadia boga mékanisme jeung konfigurasi caching anu béda.
 

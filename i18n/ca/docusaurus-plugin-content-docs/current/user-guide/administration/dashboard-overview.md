@@ -3,7 +3,7 @@ title: Resum del Panell de Control
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panell de Control General {#dashboard-overview}
+# Panell de Control General
 
 Ultimate Multisite té un **Panell de Control** dedicat dins del menú Ultimate Multisite, i també afegeix *widgets* al Panell de Control de la Xarxa (Network Dashboard). Aquest article cobreix el que veureu en ambdós llocs.
 

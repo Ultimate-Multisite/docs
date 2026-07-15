@@ -3,9 +3,9 @@ title: एडअन टेम्प्लेट
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# एडअन टेम्प्लेट {#addon-template}
+# एडअन टेम्प्लेट
 
-{{ADDON_DESCRIPTION}}
+एडअन टेम्प्लेट — Ultimate Multisite.
 
 ## आवश्यकताहरू {#requirements}
 

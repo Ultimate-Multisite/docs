@@ -3,7 +3,7 @@ title: Motsheo oa GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ka dirisi ka ubatla Ultimate Multisite snippets ka GitHub repository ea ronao {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Ka dirisi ka ubatla Ultimate Multisite snippets ka GitHub repository ea ronao
 
 Ho na leetsoets'a (code snippets) tse di fali ka GitHub repository e leng ba ba tlameha ho ba le functionality e le e le lehle, jo bo ba ba ba bang ba Ultimate Multisite ba batlang ho ba le Google Analytics script ka pages tsa sign-up kapa ho ba le meta box e le e lehle mo admin dashboard.
 
@@ -19,7 +19,7 @@ Ho na le litse tse 2 tsa hore o ubatle code
 
   2. Must-Use Plugins (mu-plugins)
 
-# Ka dirisi ka snippet ea hau ka file ea functions.php ea theme ea hau. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Ka dirisi ka snippet ea hau ka file ea functions.php ea theme ea hau.
 
   1. Ho fihla mo WordPress Network admin dashboard le go tla ka Themes >Theme Editor (Bone screenshot e lebelo).
 
@@ -29,7 +29,7 @@ Ho na le litse tse 2 tsa hore o ubatle code
 
 <!-- Screenshot e lebelo: WordPress Theme Editor e bontšang ho ubatla file ea functions.php -->
 
-# Ka dirisi ka Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Ka dirisi ka Must-Use Plugins (mu-plugins)
 
 WordPress e na le feature ea hore o ka u batla functionality e le e lehle ea custom e bolelang "Must-Use Plugins", kapa "mu-plugins" ho fana.
 

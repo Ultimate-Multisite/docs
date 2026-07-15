@@ -3,7 +3,7 @@ title: Penanganan Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Penanganan Webhook {#webhook-handling}
+# Penanganan Webhook
 
 Buat endpoint webhook kustom agar Anda bisa menerima *event* (kejadian) dari layanan eksternal dan menyinkronkan data dengan Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Vodič za korištenje hookova
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Vodič za korištenje hook-ova {#hooks-usage-guide}
+# Vodič za korištenje hook-ova
 
 Ultimate Multisite nudi preko 200 action hook-ova i preko 280 filter hook-ova. Na ovoj stranici pokrivamo najčešće korištene hook-ove s praktičnim primjerima. Za kompletan, automatski generirani referencijalni pregled, pregledajte druge stranice u ovom odjeljku.
 

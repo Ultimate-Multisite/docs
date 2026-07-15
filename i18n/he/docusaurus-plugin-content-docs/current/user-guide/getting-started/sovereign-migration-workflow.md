@@ -3,7 +3,7 @@ title: זרימת העברה ריבונית
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# תהליך מיגרציה ריבוני {#sovereign-migration-workflow}
+# תהליך מיגרציה ריבוני
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 מוסיפה שערי אימות מיגרציה להעברת סובסייט סטנדרטי לתשתית של שוכר ריבוני (sovereign tenant).
 

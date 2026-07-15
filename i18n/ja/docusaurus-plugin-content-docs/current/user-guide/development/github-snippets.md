@@ -3,7 +3,7 @@ title: GitHub スニペット
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# GitHub repository にある Ultimate Multisite snippets の使い方 {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# GitHub repository にある Ultimate Multisite snippets の使い方
 
 GitHub repository には、Ultimate Multisite ユーザーからよく要望されるコード snippet が用意されています。たとえば、サインアップページに Google Analytics script を追加したり、管理 Dashboard から meta box を非表示にしたりする小さな機能を追加できます。
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins（mu-plugins）
 
-# theme の functions.php ファイルに snippet を追加する方法 {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# theme の functions.php ファイルに snippet を追加する方法
 
   1. WordPress Network 管理 Dashboard にログインし、Themes >Theme Editor に移動します（下の screenshot を参照）。
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins（mu-plugins）の作成方法 {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins（mu-plugins）の作成方法
 
 WordPress には、"Must-Use Plugins"、略して "mu-plugins" と呼ばれるカスタム機能を読み込める機能があります。
 

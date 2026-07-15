@@ -3,7 +3,7 @@ title: Domeenid tooted ja hinnad
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Dome produktsioonid ja hinnad {#domain-products-and-pricing}
+# Dome produktsioonid ja hinnad
 
 Dome produktsioonid on see, kuidas sa kontrollitad hinnatust, TLD-dokumente (top-level domain), WHOIS privaatsust ja pakutaja valimist. Iga dome produktsioon on standardne Multisite Ultimate toode lisaks **Domain Settings** tabile.
 

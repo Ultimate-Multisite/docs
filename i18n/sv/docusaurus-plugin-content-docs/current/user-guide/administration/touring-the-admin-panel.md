@@ -3,7 +3,7 @@ title: Rundtur i adminpanelen
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Rundtur i adminpanelen {#touring-the-admin-panel}
+# Rundtur i adminpanelen
 
 Ultimate Multisite strävar efter att vara så enkelt och självförklarande som möjligt, men med ett så kraftfullt verktyg kan det vara hjälpsamt med en guidad rundtur. Låt oss gå igenom adminsidorna för att hjälpa dig komma på plats.
 

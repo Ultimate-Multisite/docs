@@ -3,7 +3,7 @@ title: တွေ့ရှိချက် အင်တာဗျူး
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 **Discovery Interview** ဆိုတာက Theme Builder ရဲ့ ဒီဇိုင်းလုပ်ငန်းစဉ်မှာ ပထမဆုံးအဆင့်ပဲ ဖြစ်ပါတယ်။ ဒီအင်တာဗျူးက သင့်ရဲ့ website၊ လုပ်ငန်းနဲ့ ဒီဇိုင်းဆိုင်ရာ စိတ်ကြိုက်အမြင်တွေကို စုစည်းပြီး သင့်အတွက် ကိုယ်ပိုင် theme တစ်ခု ဖန်တီးပေးမှာ ဖြစ်ပါတယ်။
 

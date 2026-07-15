@@ -3,7 +3,7 @@ title: আতিথ্য মেনুকা
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# আতিথেয়তা মেনু {#hospitality-menus}
+# আতিথেয়তা মেনু
 
 **Hospitality Menus** বৈশিষ্ট্যটোৱে Theme Builder लाई আপোনাৰ WordPress সাইটত structured food and beverage menu pages জেনারেট আৰু embed কৰিবলৈ অনুমতি দিয়ে।
 

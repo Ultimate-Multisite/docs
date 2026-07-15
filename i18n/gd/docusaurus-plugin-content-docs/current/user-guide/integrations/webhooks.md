@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# A Peersicht ar Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# A Peersicht ar Webhooks (v2)
 
 _**ATTENTION: Note an that this feature or article is for users a' chùlaiche.**_
 

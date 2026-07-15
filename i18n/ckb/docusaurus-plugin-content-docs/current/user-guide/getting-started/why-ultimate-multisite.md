@@ -3,7 +3,7 @@ title: بۆچی Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# بۆچی Ultimate Multisite {#why-ultimate-multisite}
+# بۆچی Ultimate Multisite
 
 ئەگەر تا ئەم بابەتەت گەیشتووەت، ئەوا ڕەنگە وشەی "پلانگین" (plugin) باشترین چارەسەر بێت بۆ ئەوەی بیرۆکەی کارتان دەستبەر بکەیت. ئێمە دەتانین لە کۆتایی ئەم بابەتەدا وەڵامەکانی پێویستت بەدەست بهێنیت.
 

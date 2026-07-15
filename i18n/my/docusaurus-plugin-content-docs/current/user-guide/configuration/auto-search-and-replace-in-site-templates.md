@@ -3,7 +3,7 @@ title: ဝဘ်ဆိုက် နမူနာပုံစံများတွ
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Site Templates တွင် အလိုအလျောက် ရှာဖွေပြီး အစားထိုးခြင်း (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Site Templates တွင် အလိုအလျောက် ရှာဖွေပြီး အစားထိုးခြင်း (v2)
 
 _**ဤသင်ခန်းစာသည် WP UItimo version 2.x လိုအပ်သည်။**_
 

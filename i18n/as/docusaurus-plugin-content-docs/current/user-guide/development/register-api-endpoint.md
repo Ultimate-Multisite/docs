@@ -3,7 +3,7 @@ title: API Endpoint ৰেকজিষ্ট্ৰেট কৰা
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API endpoint
 
 এই টিউটোরিয়ালত, আপুনি Ultimate Multisite /register API endpoint ব্যৱহাৰ কৰি আপোনাৰ নেটৱৰ্কৰ বাবে এটা নতুন Client-ক সম্পূৰ্ণ Onboarding প্ৰক্ৰিয়া কেনেকৈ সৃষ্টি কৰিব আৰু সেইটো Zapier-ৰ জৰিয়তে কেনেকৈ কৰিব, সেই বিষয়ে শিকিব।
 

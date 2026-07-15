@@ -3,7 +3,7 @@ title: Kapasite pou jere ekstansyon
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kapasite Jesyon Plugin {#plugin-management-abilities}
+# Kapasite Jesyon Plugin
 
 Gratis AI Agent v1.5.0 vini ak **7 kapasite jesyon plugin** ke asistan AI a ka envoke pandan yon konvèsasyon. Kapasite sa yo bay kontwòl pwogramatik sou plugin WordPress ki enstale atravè [Sistèm Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

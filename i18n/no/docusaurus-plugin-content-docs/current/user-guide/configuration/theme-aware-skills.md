@@ -3,7 +3,7 @@ title: Tema-bevisste ferdigheter
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-spesifikke ferdigheter {#theme-aware-skills}
+# Tema-spesifikke ferdigheter
 
 Superdav AI Agent v1.10.0 leveres med fire nye tema-spesifikke innebygde ferdigheter som automatisk tilpasser seg det aktive WordPress-temaet ditt. Disse ferdighetene gir spesialisert veiledning og funksjonalitet tilpasset temaets arkitektur og funksjoner.
 

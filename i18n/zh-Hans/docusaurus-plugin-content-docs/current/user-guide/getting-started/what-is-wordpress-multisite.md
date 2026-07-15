@@ -3,7 +3,7 @@ title: 什么是 WordPress Multisite？
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# 什么是 WordPress 多站点？ {#what-is-wordpress-multisite}
+# 什么是 WordPress 多站点？
 
 在其核心中，WordPress 提供了一个名为 ‘多站点’ 的功能，该功能的起源可以追溯到 2010 年 WordPress 3.0 的发布。从那时起，它经历了多次修订，旨在引入新功能并加强安全性。
 

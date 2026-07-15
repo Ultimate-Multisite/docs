@@ -4,7 +4,7 @@ title: පෙරහන - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# පෙරහන: wu_return_url {#filter-wureturnurl}
+# පෙරහන: wu_return_url
 
 checkout ක්‍රියාවලිවලින් පසු භාවිත කරන ගෙවීම් ද්වාර ආපසු යැවීමේ URL එක වෙනස් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
 

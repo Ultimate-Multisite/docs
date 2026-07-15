@@ -4,7 +4,7 @@ title: Sivana - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Sivana: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Sivana: wu_limits_is_post_above_limit
 
 Manamarina raha avela amin’ity drafitra ity ny karazana lahatsoratra iray nomena Avelao ny mpamorona fanitarana hanivana ny sanda averina
 

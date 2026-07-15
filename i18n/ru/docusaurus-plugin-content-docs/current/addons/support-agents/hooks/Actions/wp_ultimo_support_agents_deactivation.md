@@ -4,7 +4,7 @@ title: Действие - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Действие: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Действие: wp_ultimo_support_agents_deactivation
 
 Позвольте другим частям плагина прикреплять свои процедуры деактивации
 

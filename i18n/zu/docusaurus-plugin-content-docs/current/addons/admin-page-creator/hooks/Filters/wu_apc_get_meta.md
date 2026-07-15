@@ -4,7 +4,7 @@ title: Isihlungi - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Isihlungi: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Isihlungi: wu_apc_get_meta
 
 Vumela abathuthukisi ukuthi bahlunge amanani okugcina, futhi bengeze izimo ezintsha zokucubungula.
 

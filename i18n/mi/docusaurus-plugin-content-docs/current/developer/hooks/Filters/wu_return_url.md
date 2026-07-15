@@ -4,7 +4,7 @@ title: Tātari - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Tātari: wu_return_url {#filter-wureturnurl}
+# Tātari: wu_return_url
 
 Tukua ngā kaiwhakawhanake kia huri i te URL hokinga kuaha utu e whakamahia ana i muri i ngā tukanga whakaoti hoko.
 

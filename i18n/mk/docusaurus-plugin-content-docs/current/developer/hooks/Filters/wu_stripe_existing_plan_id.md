@@ -4,7 +4,7 @@ title: Филтер - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Филтер: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Филтер: wu_stripe_existing_plan_id
 
 Го филтрира ID-то на планот за кој треба да се провери. Ако ова постои, новата претплата ќе го користи овој план.
 

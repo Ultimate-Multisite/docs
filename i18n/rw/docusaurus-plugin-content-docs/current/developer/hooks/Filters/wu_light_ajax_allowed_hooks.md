@@ -4,7 +4,7 @@ title: Muyunguruzi - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Filter: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Filter: wu_light_ajax_allowed_hooks
 
 Kubera impamvu z’umutekano, tugabanya umubare w’ibikorwa bishobora gukoreshwa mu gufatiraho hook. Iyi filter yemerera abateza imbere kwagura urwo rutonde niba ari ngombwa.
 

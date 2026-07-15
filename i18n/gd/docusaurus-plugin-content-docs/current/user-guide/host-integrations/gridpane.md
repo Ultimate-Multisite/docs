@@ -3,7 +3,7 @@ title: Còmhraidh GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integration {#gridpane-integration}
+# GridPane Integration
 
 ## Aims (Overview) {#overview}
 GridPane is a control panel for hosting WordPress, designed for serious WordPress professionals. This link enables automatic syncing of your domain and SSL certificate management between Ultimate Multisite and GridPane.

@@ -3,7 +3,7 @@ title: Multi-Network Changelog
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network Değişiklik Günlüğü {#multi-network-changelog}
+# Multi-Network Değişiklik Günlüğü
 
 ### 1.3.0 {#130}
 * Yeni: Ağ şablonu önizleyicisi — satın almadan önce canlı bir panelde ağ şablonlarını gezebilir ve önizleyebilirsiniz.

@@ -3,7 +3,7 @@ title: عملیات مستأجر حاکم
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# عملیات مستأجر حاکم (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# عملیات مستأجر حاکم (Sovereign Tenant Operations)
 
 Ultimate Multisite نسخه ۱.۲.۰ ابزارهای عملیاتی جدیدی را برای مستأجران حاکم اضافه کرده است: زیرساخت‌هایی که با پایگاه داده، ریشه فایل سیستم و زمینه مسیریابی خود اجرا می‌شوند اما همچنان از طریق مدیر شبکه قابل مشاهده هستند.
 

@@ -3,7 +3,7 @@ title: 'Lesona 2: Fifidianana ny sehatra manokana ho anao'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lesona 2: Fifidianana ny Sehatra Kendrenao Manokana {#lesson-2-picking-your-niche}
+# Lesona 2: Fifidianana ny Sehatra Kendrenao Manokana
 
 Tamin'ny Lesona 1 dia napetratsika ny antony maha tsara kokoa ny sehatra kendrena manokana noho ny ankapobeny. Ankehitriny mila mifidy ny anao ianao. Ity lesona ity dia manome rafitra ho anao hitadiavana sy hanamarinana sehatra kendrena manokana alohan'ny hampiasanao fotoana hanorenana ho azy.
 

@@ -4,7 +4,7 @@ title: Аракет - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Аракет: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Аракет: wp_ultimo_affiliatewp_activation
 
 Плагиндин башка бөлүктөрүнө активдештирүү үчүн өз routines тиркөөгө мүмкүндүк берет
 

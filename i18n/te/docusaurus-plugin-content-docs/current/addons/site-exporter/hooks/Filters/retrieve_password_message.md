@@ -4,7 +4,7 @@ title: Filter - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
+# Filter: retrieve_password_message
 
 పాస్‌వర్డ్ రీసెట్ మెయిల్ సందేశం యొక్క బాడీని ఫిల్టర్ చేస్తుంది.
 

@@ -3,7 +3,7 @@ title: Kortingscodes aanmaken
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kortingscodes aanmaken (v2) {#creating-discount-codes-v2}
+# Kortingscodes aanmaken (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

@@ -3,7 +3,7 @@ title: Abilidad sa Pagkakita
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility {#ability-visibility}
+# Ability Visibility
 
 Ang Superdav AI Agent v1.12.0 nagpaila og **Ability Visibility** controls nga nagdumala kung uns mga surfaces ang magpakita sa matag ability. Nagtugot kini sa mga administrator nga i-fine-tune kung uns mga abilidad sa agent ang magamit pinaagi sa REST APIs, MCP servers, WooCommerce integrations, ug uban pang mga interface.
 

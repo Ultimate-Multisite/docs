@@ -3,7 +3,7 @@ title: Gumawa ng Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generate Logo SVG {#generate-logo-svg}
+# Generate Logo SVG
 
 Ang kakayahan na **Generate Logo SVG** ay nagpapahintulot sa Theme Builder na gumawa at mag-embed ng custom logo SVG nang direkta sa iyong WordPress site, kasama ang awtomatikong *namespace-safe sanitisation*.
 

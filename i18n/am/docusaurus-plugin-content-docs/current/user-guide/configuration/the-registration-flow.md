@@ -3,7 +3,7 @@ title: የምዝገባ ሂደት
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# የምዝገባ ሂደት (v2) {#the-registration-flow-v2}
+# የምዝገባ ሂደት (v2)
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite ስሪት 2.xን ነው።**_
 

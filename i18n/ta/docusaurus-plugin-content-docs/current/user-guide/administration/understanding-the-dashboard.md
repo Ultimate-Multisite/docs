@@ -3,7 +3,7 @@ title: டாஷ்போர்டைப் புரிந்துகொள்
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite டாஷ்போர்டைப் புரிந்துகொள்ளுதல் {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite டாஷ்போர்டைப் புரிந்துகொள்ளுதல்
 
 மேம்பட்ட கட்டமைப்பு விருப்பங்கள் மற்றும் Ultimate Multisite-ன் செயல்பாட்டு அம்சங்களை ஆராய்வதற்கு முன், டாஷ்போர்டைப் பற்றி பார்ப்போம்.
 

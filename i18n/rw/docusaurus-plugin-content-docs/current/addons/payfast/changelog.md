@@ -3,7 +3,7 @@ title: PayFast Amateka y’impinduka
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Urutonde rw'impinduka rwa PayFast {#payfast-changelog}
+# Urutonde rw'impinduka rwa PayFast
 
 Verisiyo: 1.0.2 - Yasohotse ku 2025-09-28
 

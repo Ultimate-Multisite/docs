@@ -4,7 +4,7 @@ title: Филтр - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Филтр: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Филтр: wu_password_require_uppercase
 
 Филтр мекунад, ки оё ҳарфҳои калон дар паролҳо талаб карда шаванд.
 

@@ -3,7 +3,7 @@ title: 'Chidzidzo 13: Kuwedzera Kukura'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Chidzidzo 13: Kukura Zvakanyanya {#lesson-13-scaling-up}
+# Chidzidzo 13: Kukura Zvakanyanya
 
 Une platform iri kushanda ine vatengi vanobhadhara. Chidzidzo ichi chinofukidza nzira yekukura kubva kubasa diki kusvika kuva bhizinesi rinogadzikana -- kukudza infrastructure, kuita operations otomatiki, uye kuwedzera mari inobva kumutengi mumwe nemumwe.
 

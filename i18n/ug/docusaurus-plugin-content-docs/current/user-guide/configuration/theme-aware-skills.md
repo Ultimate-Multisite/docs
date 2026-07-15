@@ -3,7 +3,7 @@ title: Tema-Boshqchilikli Ko'nikmalar
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills {#theme-aware-skills}
+# Theme-Aware Skills
 
 Superdav AI Agent v1.10.0 چهار تا قابلیت جدید، موضوعه-هوا (theme-aware) داخلی را عرضه می‌کند که به طور خودکار ووردپرس قالبünüzün aktif olan temasına uyum sağlar. Bu yetenekler, temanızın mimarisine ve özelliklerine özel uzman rehberlik ve yetenekler sunar.
 

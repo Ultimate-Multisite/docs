@@ -3,7 +3,7 @@ title: डिस्काउन्ट कोडहरू बनाउने
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# डिस्काउन्ट कोडहरू बनाउने (v2) {#creating-discount-codes-v2}
+# डिस्काउन्ट कोडहरू बनाउने (v2)
 
 _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite संस्करण 2.x मा आधारित छ।**_
 

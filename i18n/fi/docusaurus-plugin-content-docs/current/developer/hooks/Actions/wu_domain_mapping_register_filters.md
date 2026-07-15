@@ -4,7 +4,7 @@ title: Toiminto - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Toiminto: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Toiminto: wu_domain_mapping_register_filters
 
 Jotkin lisäosat tallentavat URL:n ennen kuin ohjaus oli aktiivinen tai muodostavat URL:t eri tavalla, joka ei sisälly yllä oleviin suodattimiin.
 

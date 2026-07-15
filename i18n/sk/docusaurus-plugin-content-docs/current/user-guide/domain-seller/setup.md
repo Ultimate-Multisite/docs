@@ -3,7 +3,7 @@ title: Nastavenie a konfigurácia poskytovateľa
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Doménový predajca: Nastavenie a konfigurácia poskytovateľa {#domain-seller-setup-and-provider-configuration}
+# Doménový predajca: Nastavenie a konfigurácia poskytovateľa
 
 Pridanie Domain Seller obsahuje pramenom súpisovým nástrojom na nastavenie, ktoré vás krok za krokom poprowadí cez každý požadovaný krok. Táto stránka pokrýva postup v tomto nástroji a to, ako nakonfigurovať alebo zkonfigurovať poskytovatele po tom.
 

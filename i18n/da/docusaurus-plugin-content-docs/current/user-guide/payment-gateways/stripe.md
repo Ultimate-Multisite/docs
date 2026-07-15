@@ -3,7 +3,7 @@ title: Opsætning af Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Opsætning af Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Opsætning af Stripe Gateway (v2)
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

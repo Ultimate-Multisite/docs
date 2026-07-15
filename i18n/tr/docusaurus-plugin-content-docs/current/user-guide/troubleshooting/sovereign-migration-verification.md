@@ -3,7 +3,7 @@ title: Egemen Taşıma Doğrulama
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Egemen Taşıma Doğrulama {#sovereign-migration-verification}
+# Egemen Taşıma Doğrulama
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 sürümü, egemen kiracı (sovereign tenant) geçişleri için WP-CLI doğrulama komutlarını içerir. Bir kiracı geçişi, SSO ziyareti veya izole kurulum beklediğiniz gibi çalışmadığında bunları kullanın.
 

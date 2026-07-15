@@ -3,7 +3,7 @@ title: Dokumentacja możliwości
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Dokumentacja abilities {#abilities-reference}
+# Dokumentacja abilities
 
 Abilities to atomowe działania, które Gratis AI Agent może wywoływać w Twojej instalacji WordPress. Każda ability jest zarejestrowaną klasą PHP, która udostępnia schemat JSON — agent odczytuje ten schemat w czasie działania, aby zrozumieć, jakie parametry są wymagane i co zwraca ability.
 

@@ -3,7 +3,7 @@ title: Thực đơn Khách sạn
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Ẩm Thực {#hospitality-menus}
+# Menu Ẩm Thực
 
 Tính năng **Menu Ẩm Thực** cho phép Theme Builder tạo và nhúng các trang menu đồ ăn và thức uống có cấu trúc trực tiếp vào trang WordPress của bạn.
 

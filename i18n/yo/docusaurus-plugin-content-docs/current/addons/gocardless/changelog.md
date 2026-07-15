@@ -3,7 +3,7 @@ title: GoCardless Àkọsílẹ̀ Àyípadà
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog {#gocardless-changelog}
+# GoCardless Changelog
 
 Ẹya: 1.0.3 - Tí a tu sílẹ̀ ní 2026-05-05
 * Àtúnṣe: Àwọn site tó wà ní pending tí kò ní olùní ni a ń sọ di mímọ́ báyìí nígbà tí membership GoCardless bá di fífi sílẹ̀ nígbà tó wà ní pending tàbí on-hold state

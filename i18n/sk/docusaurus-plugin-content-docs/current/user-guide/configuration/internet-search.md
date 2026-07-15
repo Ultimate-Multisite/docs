@@ -3,7 +3,7 @@ title: Hľadávanie v sieti
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Hľadávanie {#internet-search}
+# Internet Hľadávanie
 
 Gratis AI Agent v1.5.0 pridáva schopnosť **Internet Search**, ktorá umožňuje asistentovi AI vyhľadať aktuálne informácie z webu počas konverzácie. Toto je napáchané [Brave Search API](https://brave.com/search/api/) alebo [Tavily API](https://tavily.com/).
 

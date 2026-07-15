@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Action: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Action: wp_ultimo_vat_activation
 
 플러그인의 다른 부분이 활성화 루틴을 연결하도록 허용합니다.
 

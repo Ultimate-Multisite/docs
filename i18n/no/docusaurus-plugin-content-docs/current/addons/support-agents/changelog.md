@@ -3,7 +3,7 @@ title: Support Agents Endringslogg
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Support Agents Endringslogg {#support-agents-changelog}
+# Support Agents Endringslogg
 
 Versjon: 1.0.14 - Utgitt 2026-05-05
 * Feilretting: Lagt til Requires Plugins-header for korrekt deklarasjon av WordPress-pluginavhengigheter

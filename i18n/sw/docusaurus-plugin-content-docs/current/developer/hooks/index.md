@@ -3,7 +3,7 @@ title: Marejeleo ya Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Rejea ya Hooks {#hooks-reference}
+# Rejea ya Hooks
 
 Nyaraka zilizozalishwa kiotomatiki kwa **vitendo 59** vyote na **vichujio 118** vyote katika Ultimate Multisite.
 

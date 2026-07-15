@@ -3,7 +3,7 @@ title: Kaiuta Kōnae Whitinga o te Rā Tāpiritanga
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Kaituku Kōnae Sunrise Addon {#addon-sunrise-file-loader}
+# Kaituku Kōnae Sunrise Addon
 
 Ka tāpiri a Ultimate Multisite 2.8.0 i tētahi kaituku toronga sunrise mō ngā add-on me ngā whakaurunga MU-plugin ritenga me whakahaere i te wā o te tīmatanga sunrise o WordPress, me te kore e whakatika i te kōnae `wp-content/sunrise.php` kua hangaia.
 

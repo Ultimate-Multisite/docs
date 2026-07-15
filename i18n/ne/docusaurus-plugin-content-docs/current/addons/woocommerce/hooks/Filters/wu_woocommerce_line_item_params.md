@@ -4,7 +4,7 @@ title: फिल्टर - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# फिल्टर: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# फिल्टर: wu_woocommerce_line_item_params
 
 ग्राहकलाई WooCommerce चेकआउटमा पुनर्निर्देशित गर्नुअघि, WooCommerce कार्टमा लाइन आइटमहरू सिर्जना गर्न प्रयोग गरिने प्यारामिटरहरू फिल्टर गर्नुहोस्।
 

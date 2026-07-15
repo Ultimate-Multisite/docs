@@ -4,7 +4,7 @@ title: Филтр - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Филтр: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Филтр: wu_current_set_customer
 
 Ба таҳиягарон иҷозат медиҳад, ки рафтори пешфарзро тағйир диҳанд ва муштарии ҷориро ба таври дигар таъин кунанд.
 

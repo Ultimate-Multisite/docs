@@ -4,7 +4,7 @@ title: Szűrő - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Szűrő: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Szűrő: wu_checkout_field_templates
 
 Az API-ink használják ezt a hűköt (hook) az új mezőformátumok hozzáadásához.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Dikeketso tsa Ultimate Multisite {#ultimate-multisite-addons}
+# Dikeketso tsa Ultimate Multisite
 
 Dikeketso di atolosa Ultimate Multisite ka ditshebetso le dikgokahanyo tse eketsehileng. Dikeketso tse ngata di a lefellwa mme di ka rekwa ho [ultimatemultisite.com](https://ultimatemultisite.com).
 

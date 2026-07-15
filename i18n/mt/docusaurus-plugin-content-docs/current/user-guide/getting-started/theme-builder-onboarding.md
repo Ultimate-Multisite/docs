@@ -3,7 +3,7 @@ title: Fluss tal l-onboarding għall-Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flūdu Onboarding tal-Theme Builder {#theme-builder-onboarding-flow}
+# Flūdu Onboarding tal-Theme Builder
 
 Superdav AI Agent v1.12.0 jiddu **flūdu onboarding tal-Theme Builder** li jgħadhom biex tgħmli theme kustom bl-block klawdini meta tistawli l-setup inizjali tiegħek. Dan jagħmel il-mode legacy Site Builder aktar flessibbli u assistiti min l-agent.
 

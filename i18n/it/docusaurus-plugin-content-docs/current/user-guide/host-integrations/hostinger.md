@@ -3,7 +3,7 @@ title: Integrazione Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrazione Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Integrazione Hostinger (hPanel)
 
 ## Panoramica {#overview}
 

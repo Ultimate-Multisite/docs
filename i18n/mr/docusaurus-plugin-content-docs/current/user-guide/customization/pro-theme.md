@@ -3,7 +3,7 @@ title: PRO थीम
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme वापरून तुमचे Admin Panel सानुकूलित करा {#customizing-your-admin-panel-with-pro-theme}
+# PRO Theme वापरून तुमचे Admin Panel सानुकूलित करा
 
 बऱ्याचदा क्लायंट कामात आपल्याला WordPress च्या admin dashboard मध्ये क्लायंटला एक सानुकूलित अनुभव देण्याची गरज असते. जर तुम्ही अधिक व्यावसायिक रूप आणि अनुभव शोधत असाल, तर PRO Theme तुम्हाला मदत करू शकते.
 

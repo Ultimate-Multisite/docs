@@ -3,7 +3,7 @@ title: Kufotera Koma la Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Kufufu Koma ya Kuondoka kwa Site Builder Mode {#site-builder-mode-removal-notice}
+# Kufufu Koma ya Kuondoka kwa Site Builder Mode
 
 **Site Builder mode yaliondokera m'Superdav AI Agent v1.12.0.** Mwena muli likitumia Site Builder mode, muli lazima mwende ku **Setup Assistant agent** kwa ajili ya kukwiri theme na kusanidiza site.
 

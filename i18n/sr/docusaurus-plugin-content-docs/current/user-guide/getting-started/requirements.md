@@ -3,7 +3,7 @@ title: Захтеви
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite захтеви {#ultimate-multisite-requirements}
+# Ultimate Multisite захтеви
 
 Прва ствар коју бисте могли да се запитате пре куповине Ultimate Multisite јесте који су захтеви за покретање нашег plugin-а. Срећом, постоји само неколико основних захтева за покретање Ultimate Multisite: **име домена** , добар **hosting provider** и WordPress **Multisite** инсталација. То је све што вам је потребно!
 

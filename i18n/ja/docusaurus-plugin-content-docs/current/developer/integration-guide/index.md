@@ -3,7 +3,7 @@ title: 統合ガイド
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 統合ガイド {#integration-guide}
+# 統合ガイド
 
 このガイドでは、外部サービスへの接続、カスタム決済ゲートウェイの構築、webhook の処理など、Ultimate Multisite との一般的な統合パターンを扱います。
 

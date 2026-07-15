@@ -4,7 +4,7 @@ title: Bộ lọc - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Kiểm tra xem một loại bài viết (post type) cụ thể có được phép trên gói này hay không. Cho phép các nhà phát triển plugin tùy chỉnh (filter) giá trị trả về.
 

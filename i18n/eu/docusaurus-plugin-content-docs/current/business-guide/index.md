@@ -3,7 +3,7 @@ title: Niche webgune negozioa sortu
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisitearekin Niche Website Bizna {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisitearekin Niche Website Bizna
 
 Ez dago lagunariak zure webstei saldatzeko gertatzen duen guztiak Wix, Squarespace eta liburu-gik freelancer-ek berriprean lekuan jartzen ditu. Ez mailako. Horrek irudiak joatenak, bat-besarra dituztenak, zein bat ez du. Horrek irudienak joatenak, bat-besarra dituztenak, zein bat ez du.
 

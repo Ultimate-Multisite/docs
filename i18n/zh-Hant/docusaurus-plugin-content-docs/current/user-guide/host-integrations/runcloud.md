@@ -3,7 +3,7 @@ title: RunCloud 整合
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud 整合 {#runcloud-integration}
+# RunCloud 整合
 
 ## 概覽 {#overview}
 RunCloud 是一個雲端伺服器管理平台，讓你可以輕鬆地在自己的雲端伺服器上部署和管理網頁應用程式。這個整合功能可以在 Ultimate Multisite 和 RunCloud 之間自動同步網域並管理 SSL 憑證。

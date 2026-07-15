@@ -3,7 +3,7 @@ title: Dídín Ètò kan kù
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Bí a ṣe ń sọ plan kan di kekere (v2) {#downgrading-a-plan-v2}
+# Bí a ṣe ń sọ plan kan di kekere (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí ń tọ́ka sí Ultimate Multisite version 2.x.**_
 

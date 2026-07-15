@@ -3,7 +3,7 @@ title: اضافي Sunrise فائيل لوڊر
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# ايڊآن Sunrise فائيل لوڊر {#addon-sunrise-file-loader}
+# ايڊآن Sunrise فائيل لوڊر
 
 Ultimate Multisite 2.8.0 ايڊآنز ۽ ڪسٽم MU-plugin انٽيگريشنز لاءِ sunrise واڌارو لوڊر شامل ڪري ٿو، جن کي ٺاهيل `wp-content/sunrise.php` فائيل ۾ ترميم ڪرڻ کان سواءِ WordPress sunrise بوٽ اسٽريپنگ دوران هلڻ جي ضرورت آهي.
 

@@ -3,7 +3,7 @@ title: ማስታወቂያ ማስገቢያ
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector በመጠቀም በኔትዎ ላይ ማስታወቂያዎችን ማስቀመጥ {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Ultimate Multisite: Ad Injector በመጠቀም በኔትዎ ላይ ማስታወቂያዎችን ማስቀመጥ
 
 Ultimate Multisite: Ad Injector እርስዎ በፕላኖችዎ ላይ ማስታወቂያዎችን እንዲያስቀምጡ የሚያስችል **ነጻ ተጨማሪ (add-on)** ነው። ይህንን በቀጥታ ከየፕላን ማረሚያ ገጽ (edit page) ላይ መጠቀም ይችላሉ።
 

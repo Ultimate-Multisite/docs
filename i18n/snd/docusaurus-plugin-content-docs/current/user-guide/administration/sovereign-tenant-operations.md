@@ -3,7 +3,7 @@ title: ساروقي تنينٽ ايڪٽيونز
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operations {#sovereign-tenant-operations}
+# Sovereign Tenant Operations
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ سيفرين تنان (sovereign tenants) لاءِ ڪارڪردگي جو اوزار شامل ڪيو آهي: اهي سوبسائٽس جيڪي پنهنجو پنهنجو ڊيٽابيس، فزڪل سائيٽ جي ريٽ، ۽ راؤٽنگ کان چلندا آهن پر نٽ ورڪ اڊمن (network admin) لاءِ ڏسڻ ۾ موجود رهندا.
 

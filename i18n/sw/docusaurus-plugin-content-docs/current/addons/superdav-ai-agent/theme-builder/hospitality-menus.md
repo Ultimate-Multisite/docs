@@ -3,7 +3,7 @@ title: Menyu za Ukarimu
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menyu za Ukarimu {#hospitality-menus}
+# Menyu za Ukarimu
 
 Kipengele cha **Menyu za Ukarimu** kinawezesha Theme Builder kutengeneza na kuingiza kurasa za menyu za chakula na vinywaji zenye muundo moja kwa moja kwenye tovuti yako ya WordPress.
 

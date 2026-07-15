@@ -3,7 +3,7 @@ title: Fanamboarana sy Fandaharam-potoana Mpamatsy
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Fanamboana sy Fandaharam-potoana Mpamatsy Domaine (Domain Seller) {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Fanamboana sy Fandaharam-potoana Mpamatsy Domaine (Domain Seller)
 
 Ny addon Domain Seller dia avy miaraka amin'ny wizard fampanaraha-maso izay mitarika anao amin'ny dingana rehetra ilaina. Ity pejy ity dia manazava ny lalana fiasan'ity wizard sy ny fomba hanovana na hamerenana ny mpamatsy (providers) aorian'izay.
 

@@ -4,7 +4,7 @@ title: 操作 - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# 动作: wu_template_previewer {#action-wutemplatepreviewer}
+# 动作: wu_template_previewer
 
 在模板预览器上下文中运行。
 

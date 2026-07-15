@@ -3,7 +3,7 @@ title: Uirlisí agus Cumraíocht
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Uirlisí agus Cumraíocht {#tools-and-configuration}
+# Uirlisí agus Cumraíocht
 
 Úsáideann Theme Builder tacar uirlisí chun do shuíomh WordPress a anailísiú, a dhearadh, agus a thógáil. I leagan 1.16.0, **sd-ai-agent/site-scrape is now a Tier 1 tool**, rud a fhágann go bhfuil sé ar fáil de réir réamhshocraithe in Theme Builder. Tugann Superdav AI Agent v1.18.0 isteach freisin pacáiste compánach Advanced a dháiltear ar leithligh le haghaidh sreafaí oibre forbróra iontaofa; níl na huirlisí sin mar chuid de phacáiste lárnach WordPress.org agus ní mór iad a shuiteáil agus a údarú ar leithligh.
 

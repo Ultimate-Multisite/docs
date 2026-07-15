@@ -3,7 +3,7 @@ title: Haere i te Paneli Admin
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Whakawhanaungatanga ki te Panel Admin {#touring-the-admin-panel}
+# Whakawhanaungatanga ki te Panel Admin
 
 He aimahi nui o Ultimate Multisite he tika ana me tino whakamārama, engari mō tīnaki he mahi tino kaha, e taea ai ia te tino whaiaro. Kia kaha atu i ngā manawa admin kia tū mai i roto i te wā.
 

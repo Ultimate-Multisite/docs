@@ -4,7 +4,7 @@ title: 過濾器 - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filter: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filter: wu_connector_enforcement_option_keys
 
 用於過濾從主站強制繼承的 AI 供應商選項鍵清單。
 

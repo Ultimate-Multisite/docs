@@ -3,7 +3,7 @@ title: Recorrido por el panel de administración
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Recorrido por el panel de administración {#touring-the-admin-panel}
+# Recorrido por el panel de administración
 
 Ultimate Multisite busca ser lo más simple y autoexplicativo posible, pero con una herramienta tan potente puede ayudar tener un recorrido guiado. Repasemos las páginas de administración para ayudarte a ubicarte.
 

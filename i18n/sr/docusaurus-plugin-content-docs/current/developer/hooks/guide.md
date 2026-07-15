@@ -3,7 +3,7 @@ title: Водич за коришћење кукица
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Водич за коришћење hooks {#hooks-usage-guide}
+# Водич за коришћење hooks
 
 Ultimate Multisite пружа 200+ action hooks и 280+ filter hooks. Ова страница покрива најчешће коришћене hooks са практичним примерима. За потпуну аутоматски генерисану референцу, прегледајте друге странице у овом одељку.
 

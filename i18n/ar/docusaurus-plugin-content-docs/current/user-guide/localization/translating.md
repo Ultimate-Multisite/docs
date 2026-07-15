@@ -3,7 +3,7 @@ title: ترجمة Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ترجمة Ultimate Multisite {#translating-ultimate-multisite}
+# ترجمة Ultimate Multisite
 
 يتم تطوير Ultimate Multisite باللغة الإنجليزية، لكن الإضافة قابلة للترجمة بالكامل ونرحب بنشاط بمساهمات الترجمة.
 

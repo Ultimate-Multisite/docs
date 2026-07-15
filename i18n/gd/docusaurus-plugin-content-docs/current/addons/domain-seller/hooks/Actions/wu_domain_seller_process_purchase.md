@@ -4,7 +4,7 @@ title: Gnìomh - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Gnìomh: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Gnìomh: wu_domain_seller_process_purchase
 
 Thèid a chur an gnìomh nuair a thathar a’ pròiseasadh ceannach àrainn às dèidh crìochnachadh checkout.
 

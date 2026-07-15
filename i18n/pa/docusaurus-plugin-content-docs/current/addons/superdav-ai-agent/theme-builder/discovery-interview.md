@@ -3,7 +3,7 @@ title: ਖੋਜ ਇੰਟਰਵਿਊ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview (ਖੋਜ ਇੰਟਰਵਿਊ) {#discovery-interview}
+# Discovery Interview (ਖੋਜ ਇੰਟਰਵਿਊ)
 
 **Discovery Interview** (ਖੋਜ ਇੰਟਰਵਿਊ) Theme Builder ਦੀ ਡਿਜ਼ਾਈਨ ਪ੍ਰਕਿਰਿਆ ਦਾ ਪਹਿਲਾ ਕਦਮ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਸਾਈਟ, ਕਾਰੋਬਾਰ ਅਤੇ ਡਿਜ਼ਾਈਨ ਪਸੰਦ ਬਾਰੇ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਇੱਕ ਨਿੱਜੀ (personalized) Theme ਬਣਾਇਆ ਜਾ ਸਕੇ।
 

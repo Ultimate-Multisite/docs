@@ -4,7 +4,7 @@ title: Szűrő - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Szűrő: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Szűrő: mu-migration/all_posts/default_args
 
 Szűrja az alapértelmezett argumentumokat a `all_posts` metódusban történő bejegyzések lekérdezéséhez.
 

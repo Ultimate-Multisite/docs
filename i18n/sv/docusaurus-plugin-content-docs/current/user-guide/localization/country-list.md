@@ -3,7 +3,7 @@ title: Landlista
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ändra ordningen på Ultimate Multisites landlista {#re-ordering-the-ultimate-multisite-country-list}
+# Ändra ordningen på Ultimate Multisites landlista
 
 Rullgardinsmenyn för att välja land är sorterad i alfabetisk ordning baserat på de engelska namnen på länderna. Det kan innebära att ditt företags hemland och/eller de flesta av dina kunders land ibland hamnar mitt i en lång lista med landsnamn.
 

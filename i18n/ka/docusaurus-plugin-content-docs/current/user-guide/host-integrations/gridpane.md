@@ -3,7 +3,7 @@ title: GridPane ინტეგრაცია
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ინტეგრაცია {#gridpane-integration}
+# GridPane ინტეგრაცია
 
 ## მიმოხილვა {#overview}
 GridPane არის სპეციალიზებული WordPress ჰოსტინგ კონტროლის პანელი, რომელიც შექმნილია სერიოზული WordPress პროფესიონალებისთვის. ეს ინტეგრაცია უზრუნველყოფს დომეინის ავტომატურ სინქრონობას და SSL სერტიფიკატების მართვას Ultimate Multisite-სა და GridPane-ს შორის.

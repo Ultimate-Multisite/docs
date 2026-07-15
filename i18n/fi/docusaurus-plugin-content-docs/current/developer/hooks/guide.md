@@ -3,7 +3,7 @@ title: Hookien käyttöopas
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks-käyttöopas {#hooks-usage-guide}
+# Hooks-käyttöopas
 
 Ultimate Multisite tarjoaa yli 200 action hookia ja yli 280 filter hookia. Tämä sivu käsittelee yleisimmin käytettyjä hookeja käytännön esimerkkien avulla. Täydellisen automaattisesti luodun viitteen löydät selaamalla tämän osion muita sivuja.
 

@@ -4,7 +4,7 @@ title: 'الإجراء - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# الإجراء: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# الإجراء: wu_page_\{$this->id\}_load
 
 السماح لمطوري الإضافات بإضافة نقاط ربط إضافية إلى صفحاتنا.
 

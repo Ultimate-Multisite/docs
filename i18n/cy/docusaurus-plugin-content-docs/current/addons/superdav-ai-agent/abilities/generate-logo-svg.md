@@ -3,7 +3,7 @@ title: Creu Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Cynhyrchu Logo SVG {#generate-logo-svg}
+# Cynhyrchu Logo SVG
 
 Mae gallu **Generate Logo SVG** yn caniatáu i Theme Builder greu ac ymgorffori SVGau logo personol yn uniongyrchol yn eich safle WordPress gyda glanweithdra awtomatig sy’n ddiogel o ran namespace.
 

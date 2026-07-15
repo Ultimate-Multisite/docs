@@ -3,7 +3,7 @@ title: Sukurti meniu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Sukurti meniu {#create-menu}
+# Sukurti meniu
 
 **Sukurti meniu** galimybė kuria WordPress navigacijos meniu su atskirų navigacijos etikečių, skirtingų nuo puslapių pavadinimų, palaikymu.
 

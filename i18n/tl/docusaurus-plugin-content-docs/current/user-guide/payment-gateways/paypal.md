@@ -3,7 +3,7 @@ title: Pag-set Up ng PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Pag-set Up ng PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
+# Pag-set Up ng PayPal Gateway (v2)
 
 _**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 

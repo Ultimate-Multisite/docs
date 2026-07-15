@@ -3,7 +3,7 @@ title: Faahfaahin iyo Warbixin Suurtagalka Macmiilka
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Warbixinta Macnaha Macaamihii iyo Warbixinta Dhibaatooyinka {#customer-feedback--issue-reporting}
+# Warbixinta Macnaha Macaamihii iyo Warbixinta Dhibaatooyinka
 
 Gratis AI Agent v1.5.0 wuxuu soo bandhigay nidaam la dhisay oo lagu bixiyo warbixinta macnaha iyo dhibaatooyinka, kaas oo u oggolaanaya isticmaalayaasha ugu dambayska inay calaamadeyn ku jawaabaha aan caawinayn oo ay si toos ah uga warbixiyaan interface-ka wada hadalka. Nidaamkan waxaa ka mid ah maamulka oggolaanshaha (consent management), amarka warbixinta oo automatigueed, iyo kala qaadista AI-ga ee dhanka dambe (backend).
 

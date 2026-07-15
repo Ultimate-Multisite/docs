@@ -4,7 +4,7 @@ title: Tindakan - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Tumindak: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# Tumindak: wu_mcp_abilities_registered
 
 Mlaku sawisé kabisan MCP didaftaraké kanggo sawijining entitas.
 

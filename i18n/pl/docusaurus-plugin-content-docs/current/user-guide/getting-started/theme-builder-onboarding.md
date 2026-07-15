@@ -3,7 +3,7 @@ title: Przepływ wprowadzający do Theme Buildera
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Proces Wprowadzający do Theme Buildera {#theme-builder-onboarding-flow}
+# Proces Wprowadzający do Theme Buildera
 
 Superdav AI Agent v1.12.0 wprowadza prowadzony **proces wprowadzający do Theme Buildera**, który pomaga stworzyć niestandardowy blokowy motyw (block theme) podczas początkowej konfiguracji. Zastępuje on stary tryb Site Builder bardziej elastycznym podejściem wspomaganym przez agenta.
 

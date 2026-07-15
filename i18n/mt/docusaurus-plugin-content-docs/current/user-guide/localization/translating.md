@@ -3,7 +3,7 @@ title: Ttrasliż tal-Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Traduzzjoni ta Ultimate Multisite {#translating-ultimate-multisite}
+# Traduzzjoni ta Ultimate Multisite
 
 L-Ultimate Multisite tivt sviluppat b'l-Ingliż, iżda il-plugin huwa transabbil għal kollha u nħobb b'mod aktattiv kontributi tal-traduzzjoni.
 

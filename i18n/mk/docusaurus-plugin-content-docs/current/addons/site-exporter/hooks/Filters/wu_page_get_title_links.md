@@ -4,7 +4,7 @@ title: Филтер - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Филтер: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Филтер: wu_page_get_title_links
 
 Овозможува на развивачите на приклучоци, и на нас самите, да додаваме врски за дејства на нашите страници за уредување.
 

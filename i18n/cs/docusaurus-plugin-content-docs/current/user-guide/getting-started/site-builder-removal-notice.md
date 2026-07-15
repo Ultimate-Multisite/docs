@@ -3,7 +3,7 @@ title: Oznámení o odstranění režimu Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Odstranění režimu Site Builder {#site-builder-mode-removal-notice}
+# Odstranění režimu Site Builder
 
 **Režim Site Builder byl v Superdav AI Agent v1.12.0 odstraněn.** Pokud jste používali režim Site Builder, měli byste migrovat k **Setup Assistant agentovi** pro vytváření témat a nastavení webu.
 

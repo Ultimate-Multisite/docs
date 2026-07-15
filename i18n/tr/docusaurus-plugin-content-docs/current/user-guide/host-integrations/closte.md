@@ -3,7 +3,7 @@ title: Closte Entegrasyonu
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Entegrasyonu {#closte-integration}
+# Closte Entegrasyonu
 
 ## Genel Bakış {#overview}
 Closte, Google Cloud altyapısı üzerine kurulu yönetilen bir WordPress barındırma platformudur. Bu entegrasyon, Ultimate Multisite ve Closte arasında otomatik alan adı senkronizasyonu ve SSL sertifika yönetimini sağlar.

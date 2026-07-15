@@ -3,7 +3,7 @@ title: Скасаванне Членства
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Скасаванне Членства (v2) {#canceling-a-membership-v2}
+# Скасаванне Членства (v2)
 
 _**ВАЖНАЕ ПАМЫНЖАКА: Гэты артыкул адносітся да версіі Ultimate Multisite 2.x.**_
 

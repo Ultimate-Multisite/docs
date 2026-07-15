@@ -3,7 +3,7 @@ title: Spesifíocht site Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fíneadh Spraoi Site {#site-specification-skill}
+# Fíneadh Spraoi Site
 
 Is an **Site Specification skill** (Fíneadh Spraoi Site) curteas a chuid ar fáil chun teachtaireacht, úsáidóra agus teachtaireacht chuid site a laigh a gcurt. Tá an t-aithris seo ag cur isteach i **site_brief** (fíneadh spraoi site), a bhíonn ag na agents ag iarraidh ar aghaidh tréimhseanna chun cúramocht a bheith cinnte agus ag teachtaireacht a bheith ag fáil ar chuid context.
 

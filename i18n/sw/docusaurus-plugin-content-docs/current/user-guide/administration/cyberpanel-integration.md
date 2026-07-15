@@ -3,7 +3,7 @@ title: CyberPanel Uunganishaji
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Uunganishaji na CyberPanel {#cyberpanel-integration}
+# Uunganishaji na CyberPanel
 
 Mwongozo huu unashambulia jinsi ya kuweka mipangilio ya uunganishaji wa Ultimate Multisite na CyberPanel ili kwamba nyanja za nje (mapped domains) katika mtandao wako ziwekwe kiotomatiki (na ziondelwe) kama virtual hosts katika CyberPanel, na pia kwa uwezekano wa kuweka SSL kiotomatiki kupitia Let's Encrypt.
 

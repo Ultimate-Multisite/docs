@@ -3,7 +3,7 @@ title: ການອ້າງອີງ Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# ອ້າງອີງ Hooks {#hooks-reference}
+# ອ້າງອີງ Hooks
 
 ເອກະສານທີ່ສ້າງອັດຕະໂນມັດສຳລັບ **59 ການດຳເນີນການ** ແລະ **118 ຕົວກອງ** ທັງໝົດໃນ Ultimate Multisite.
 

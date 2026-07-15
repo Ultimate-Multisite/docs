@@ -3,7 +3,7 @@ title: GridPane 整合
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane 整合 {#gridpane-integration}
+# GridPane 整合
 
 ## 概述 {#overview}
 GridPane 是一款專為 WordPress 專業人士打造的主機控制面板。這個整合功能可以讓 Ultimate Multisite 與 GridPane 之間自動同步網域並管理 SSL 憑證。

@@ -3,7 +3,7 @@ title: Bidhaa za Domain na Bei
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Bidhaa za Nje ya Nchi na Bei {#domain-products-and-pricing}
+# Bidhaa za Nje ya Nchi na Bei
 
 Bidhaa za nje ya nchi (Domain products) ni jinsi unadhibiti bei, TLDs, faragha ya WHOIS, na kuchagua mtoa huduma. Kila bidhaa ya nje ya nchi ni bidhaa ya kawaida ya Ultimate Multisite iliyo na tab kombo ya ziada iitwayo **Domain Settings**.
 

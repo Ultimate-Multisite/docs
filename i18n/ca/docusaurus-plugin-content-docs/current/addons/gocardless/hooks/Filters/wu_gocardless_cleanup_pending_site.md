@@ -4,7 +4,7 @@ title: Filtre - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filter: wu_gococardless_cleanup_pending_site
 
 S'executa abans de eliminar un lloc temporal desatjat per una membresria GoCardless cancelada.
 

@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i planeve me matje
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Regjistri i ndryshimeve për planet me matje {#metered-plans-changelog}
+# Regjistri i ndryshimeve për planet me matje
 
 Versioni 1.1.0 - Publikuar më 2026-05-05
 - E re: Faturimi i tokenëve AI për nënsajte multisite — gjurmoni dhe faturoni përdorimin e tokenëve AI nëpër sajtet e klientëve me tarifa të konfigurueshme për token

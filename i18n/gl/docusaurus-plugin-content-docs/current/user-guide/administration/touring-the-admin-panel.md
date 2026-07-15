@@ -3,7 +3,7 @@ title: Recorrer o Pané da Administración
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Recorrer o Painel de Administração {#touring-the-admin-panel}
+# Recorrer o Painel de Administração
 
 O Ultimate Multisite aspira ser o máximo simple e autoexplicativo posible, pero con unha ferramenta tan potente pode axudar a ter un tour guiado. Vamos recorrer as páxinas de administración para que te sitúes.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Dokumentatioun {#ultimate-multisite-documentation}
+# Ultimate Multisite Dokumentatioun
 
 Wëllkomm bei der Ultimate Multisite Dokumentatioun. Ultimate Multisite transforméiert WordPress Multisite an eng vollstänneg Websäit-als-Service (WaaS) Plattform.
 
@@ -18,7 +18,7 @@ Alles, wat Dir braucht, fir Är WaaS Plattform opzestellen, ze konfiguréieren a
 
 Technesch Referenz fir Entwéckler, déi op Ultimate Multisite opbauen. Enthält Hooks-Referenz, REST API Dokumentatioun an Guiden fir Addon-Entwécklung.
 
-### [Addons](/addons) {#addons}
+### [Erweiderungen](/addons) {#addons}
 
 Dokumentatioun fir bezuelten Addon-Plugins, déi Ultimate Multisite mat zousätzleche Funktioune wéi WooCommerce Integratioun, Analysen, Domain-Verkaf a méi erweideren.
 

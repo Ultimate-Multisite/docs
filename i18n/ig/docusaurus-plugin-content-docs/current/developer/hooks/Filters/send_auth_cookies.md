@@ -4,7 +4,7 @@ title: Nzacha - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Nzacha: send_auth_cookies {#filter-sendauthcookies}
+# Nzacha: send_auth_cookies
 
 Na-enye ohere igbochi cookies nkwenye njirimara ka a ghara iziga ha n'ezie n'aka onye ahịa.
 

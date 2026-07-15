@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Gníomh: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Gníomh: wp_ultimo_support_agents_deactivation
 
 Lig do chodanna eile den bhreiseán a ngnáthaimh díghníomhachtaithe a cheangal
 

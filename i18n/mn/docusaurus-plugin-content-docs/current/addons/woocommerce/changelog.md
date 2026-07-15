@@ -3,7 +3,7 @@ title: WooCommerce интеграцийн өөрчлөлтийн бүртгэл
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce интеграцийн өөрчлөлтийн бүртгэл {#woocommerce-integration-changelog}
+# WooCommerce интеграцийн өөрчлөлтийн бүртгэл
 
 Хувилбар 2.2.0 - 2026-07-01-нд гарсан
 * Шинэ: Ultimate Multisite татварын дүнгүүд одоо төлбөр төлөхөөс өмнө татварын нийлбэрийг илүү тодорхой болгохын тулд checkout дээр тусдаа WooCommerce шимтгэлийн мөрүүдээр харагдана.

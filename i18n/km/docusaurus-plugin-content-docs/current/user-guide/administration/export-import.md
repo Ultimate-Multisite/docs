@@ -3,7 +3,7 @@ title: នាំចេញ និងនាំចូល
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ការនាំចេញ និងការនាំចូល (Export & Import) {#export--import}
+# ការនាំចេញ និងការនាំចូល (Export & Import)
 
 Ultimate Multisite 2.9.0 បានបន្ថែមឧបករណ៍ **Export & Import** សម្រាប់เว็บไซต์តែមួយនៅក្រោម **Tools > Export & Import**។ អ្នកត្រូវប្រើវា នៅពេលដែលអ្នកចង់វេចខ្ចប់ (package) គេហទំព័រ WordPress មួយជាឯកសារ ZIP, កំណត់ឡើងវិញនូវ ZIP នោះ, ឬផ្លាស់ប្តូរគេហទំព័រពីការដំឡើង Ultimate Multisite និង single-site WordPress ដែលអាចប្រើជាមួយគ្នា។
 

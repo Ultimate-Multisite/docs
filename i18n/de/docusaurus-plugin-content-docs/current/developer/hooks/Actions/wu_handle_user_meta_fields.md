@@ -4,7 +4,7 @@ title: Aktion - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Aktion: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Aktion: wu_handle_user_meta_fields
 
 Ermöglicht Plugin-Entwicklern, Benutzermetadaten auf verschiedene Weise zu speichern, falls sie dies benötigen.
 

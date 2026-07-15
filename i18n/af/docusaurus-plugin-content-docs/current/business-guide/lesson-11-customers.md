@@ -3,7 +3,7 @@ title: 'Les 11: Klante Vind'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Les 11: Kliënte Vind {#lesson-11-finding-customers}
+# Les 11: Kliënte Vind
 
 'n Uitstekende platform met geen kliënte is net 'n hobby. Hierdie les dek hoe om kliënte in 'n niche-vertikaal te verkry – strategieë wat spesifiek werk omdat jy gefokus is op een industrie.
 

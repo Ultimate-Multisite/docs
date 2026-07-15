@@ -4,7 +4,7 @@ title: Ago - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Ago: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Ago: wp_ultimo_gocardless_deactivation
 
 Lasu aliajn partojn de la plugin aldoni siajn rutinojn por malaktivigo
 

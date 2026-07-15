@@ -4,7 +4,7 @@ title: Акција - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Радња: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Радња: wu_enqueue_extra_hooks
 
 Омогућава developer-има plugin-а да додају додатне hook-ове.
 

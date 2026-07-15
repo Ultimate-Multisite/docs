@@ -4,7 +4,7 @@ title: Sefa - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Sefa: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Sefa: wu_checkout_step_validation_submittable_field_types
 
 Bvumira vagadziri kuti vapfuure ongororo kana ndima ichikwanisa kuzvitumira yega.
 

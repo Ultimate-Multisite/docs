@@ -3,7 +3,7 @@ title: 'Chidzidzo 8: Kupinza Mutengi muSevhisi'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Chidzidzo 8: Kupinza Vatengi Pakutanga {#lesson-8-customer-onboarding}
+# Chidzidzo 8: Kupinza Vatengi Pakutanga
 
 Kuita kuti mutengi anyorese ihafu chete yebasa. Kana vakapinda, vakanzwa kuremerwa, uye vasingazodzoki, warasikirwa navo. Chidzidzo ichi chinogadzira ruzivo runoshandura munhu achangonyoresa kuva mutengi anoshanda uye ane chekuita.
 

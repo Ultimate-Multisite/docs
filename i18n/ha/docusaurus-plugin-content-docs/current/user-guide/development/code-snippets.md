@@ -3,7 +3,7 @@ title: Sako-sako na kodi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kayanin Code Snippets ga v2 {#code-snippets-for-v2}
+# Kayanin Code Snippets ga v2
 
 A'a, code snippets ga **WordPress** ga wajenawa don yin wani aiki da zai iya buƙatar wani plugin mai ƙarfi na musamman. Wannan code snippets ana saka shi a cikin wani fayil na asali (core) ko na theme ɗin WordPress (yawanci fayil ɗin functions.php na theme ɗinka), ko kuma za a iya amfani da shi a matsayin MU plugin.
 

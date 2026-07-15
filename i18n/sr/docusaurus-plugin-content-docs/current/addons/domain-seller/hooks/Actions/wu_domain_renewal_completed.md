@@ -4,7 +4,7 @@ title: Радња - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Акција: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
+# Акција: wu_domain_renewal_completed
 
 Покреће се након што је домен успешно обновљен.
 

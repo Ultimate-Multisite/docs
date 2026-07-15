@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_{$this->id}_before_render
 
 प्लगइन डेवलपर्स को पेज को दिखाने (render) से पहले अतिरिक्त सामग्री जोड़ने की अनुमति देता है।
 

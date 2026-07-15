@@ -3,7 +3,7 @@ title: 'Lehena-lekurua: Niche Template-ak gaurkatu'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lehen 4: Niche Template-ak sortzea {#lesson-4-building-niche-templates}
+# Lehen 4: Niche Template-ak sortzea
 
 Templates hauek da irudiari (value proposition) garrantzian parte dira. Fitness studio bat dueñoa bere web-sailan iruditzen duen, eta hori fitness websteilan biltzen du -- klaseko edukiak, entrenador pertsonalak, eta irudiak ondo jakin dituz -- baino, ez du horrek erabiliziek aurrera egiteko.
 

@@ -3,7 +3,7 @@ title: Configurando o Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Configurando o gateway Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Configurando o gateway Stripe (v2)
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 

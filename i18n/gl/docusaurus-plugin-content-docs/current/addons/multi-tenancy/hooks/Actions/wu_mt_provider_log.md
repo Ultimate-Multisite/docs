@@ -4,7 +4,7 @@ title: Acción - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Acción: wu_mt_provider_log {#action-wumtproviderlog}
+# Acción: wu_mt_provider_log
 
 Actívase cando un provedor rexistra unha mensaxe.
 

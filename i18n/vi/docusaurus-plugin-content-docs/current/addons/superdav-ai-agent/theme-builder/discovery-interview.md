@@ -3,7 +3,7 @@ title: Phỏng vấn khám phá
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Buổi Phỏng Vấn Khám Phá (Discovery Interview) {#discovery-interview}
+# Buổi Phỏng Vấn Khám Phá (Discovery Interview)
 
 **Buổi Phỏng Vấn Khám Phá** là bước đầu tiên trong quy trình thiết kế của Theme Builder. Nó giúp thu thập thông tin về trang web, doanh nghiệp và sở thích thiết kế của bạn để tạo ra một theme được cá nhân hóa.
 

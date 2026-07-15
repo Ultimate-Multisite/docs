@@ -3,7 +3,7 @@ title: Integrare Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrarea cu Closte {#closte-integration}
+# Integrarea cu Closte
 
 ## Prezentare generală {#overview}
 Closte este o platformă de hosting WordPress administrat, construită pe infrastructura Google Cloud. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și Closte.

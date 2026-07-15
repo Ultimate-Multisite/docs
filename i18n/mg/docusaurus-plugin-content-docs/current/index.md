@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Antontan-taratasy Ultimate Multisite {#ultimate-multisite-documentation}
+# Antontan-taratasy Ultimate Multisite
 
 Tongasoa eto amin'ny antontan-taratasy Ultimate Multisite. Ultimate Multisite manova ny WordPress Multisite ho sehatra Website as a Service (WaaS) feno.
 
@@ -18,7 +18,7 @@ Izay rehetra ilainao hananganana, handrindrana, ary hitantanana ny sehatra WaaS-
 
 Fanondroana teknika ho an'ny developers manorina eo ambonin'ny Ultimate Multisite. Ahitana fanondroana hooks, antontan-taratasy REST API, ary torolàlana momba ny fampivoarana addon.
 
-### [Addons](/addons) {#addons}
+### [Fanampiny](/addons) {#addons}
 
 Antontan-taratasy ho an'ny plugins addon andoavam-bola izay manitatra Ultimate Multisite amin'ny endri-javatra fanampiny toy ny fampidirana WooCommerce, analytics, fivarotana sehatra, ary maro hafa.
 

@@ -4,7 +4,7 @@ title: Аракет - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Аракет: wu_domain_created {#action-wudomaincreated}
+# Аракет: wu_domain_created
 
 Жаңы домен багыттамасы кошулганда иштейт.
 

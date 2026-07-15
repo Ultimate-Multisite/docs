@@ -4,7 +4,7 @@ title: Pansala - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 Salain kung kinakailangan ang mga espesyal na karakter sa mga password.
 

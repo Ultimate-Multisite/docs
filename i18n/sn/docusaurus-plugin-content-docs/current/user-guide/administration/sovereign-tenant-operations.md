@@ -3,7 +3,7 @@ title: Kugara kweMupfudzi
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operations dzavo dze Tenant Sovereign {#sovereign-tenant-operations}
+# Operations dzavo dze Tenant Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inenge kuita zvinore dzakakwana kuti tenant sovereigns (subsites) zvinhu zviri kuenda ne database yavo, filesystem root yayo, uye routing context yacho, sezvo chinoratidzorwa nemunhu anobatsira we network.
 

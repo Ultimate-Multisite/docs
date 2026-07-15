@@ -3,7 +3,7 @@ title: قابلیت‌های سازنده قالب
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# قابلیت‌های Theme Builder: ساختاردهی و فعال‌سازی Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# قابلیت‌های Theme Builder: ساختاردهی و فعال‌سازی Block Themes
 
 Superdav AI Agent v1.12.0 دو قابلیت قدرتمند معرفی می‌کند که به شما امکان می‌دهند قالب‌های بلوکی (block themes) سفارشی را مستقیماً از طریق رابط چت تولید و مستقر کنید.
 

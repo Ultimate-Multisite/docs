@@ -3,7 +3,7 @@ title: Pagse-set up at Pagsasaayos ng Tagapagbigay
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup at Configuration ng Provider {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Setup at Configuration ng Provider
 
 Ang Domain Seller addon ay may kasamang ginabayang setup wizard na gagabay sa iyo sa bawat kinakailangang hakbang. Saklaw ng pahinang ito ang daloy ng wizard at kung paano i-configure o muling i-configure ang mga provider pagkatapos.
 

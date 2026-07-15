@@ -3,7 +3,7 @@ title: Shakatawa ga shafin asusun
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Baki zan in shiga wannan shafin amana a farkon lokacin? {#how-can-i-access-my-account-page-for-the-first-time}
+# Baki zan in shiga wannan shafin amana a farkon lokacin?
 
 Marhabisto Ultimate Multisite!
 

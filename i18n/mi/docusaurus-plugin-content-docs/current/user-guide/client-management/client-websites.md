@@ -3,7 +3,7 @@ title: Wāhi o te waka o te whānau
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Ngā Waka o Awa i Tō Rere (v2) {#your-clients-websites-v2}
+# Ngā Waka o Awa i Tō Rere (v2)
 
 Iha i roto i te whakatere i tō wāhi, ka taea e ngā mea o te whenua (customers) te whai i te dashboard o rā.
 

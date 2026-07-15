@@ -3,7 +3,7 @@ title: Registro de cambios de Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Registro de cambios de sincronización de contenido {#content-sync-changelog}
+# Registro de cambios de sincronización de contenido
 
 ### Versión 1.1.0 - Lanzado el 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nuevo: Soporte para sincronizar todos los tipos de publicación (posts, páginas, tipos de publicación personalizados)

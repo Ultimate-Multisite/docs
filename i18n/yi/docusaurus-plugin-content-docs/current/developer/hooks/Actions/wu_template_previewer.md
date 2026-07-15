@@ -4,7 +4,7 @@ title: אַקציע - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# אַקציע: wu_template_previewer {#action-wutemplatepreviewer}
+# אַקציע: wu_template_previewer
 
 לויפט ווען מען איז אינעווייניק אין דעם קאָנטעקסט פֿון דעם מוסטער־פֿאָרויסווײַזער.
 

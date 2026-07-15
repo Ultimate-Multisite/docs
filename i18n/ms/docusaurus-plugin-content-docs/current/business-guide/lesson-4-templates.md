@@ -3,7 +3,7 @@ title: 'Pelajaran 4: Membina Templat Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Membina Templat Niche {#lesson-4-building-niche-templates}
+# Lesson 4: Membina Templat Niche
 
 Templat adalah teras kepada nilai tawaran niche anda. Pemilik studio kecergasan yang mendaftar dan melihat laman web yang sudah kelihatan seperti laman web kecergasan—dengan jadual kelas, profil jurulatih, dan imej yang sesuai—jauh lebih berkemungkinan untuk kekal berbanding mereka yang melihat kanvas kosong.
 

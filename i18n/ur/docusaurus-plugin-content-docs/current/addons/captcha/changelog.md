@@ -3,7 +3,7 @@ title: Captcha تبدیلیوں کا سجل
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog {#captcha-changelog}
+# Captcha Changelog
 
 **Version: 1.5.0 - Released on 2026-05-22**
 * **نیا:** ہارڈ-سٹاپ ریٹ لیمٹر — یہ captcha سے محفوظ صفحات (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) پر ہر GET اور POST کو گنتا ہے اور HTTP 429، ایک `Retry-After` ہیڈر، اور ایک بے ترتیب ٹارپیٹ سلیپ (1–5 سیکنڈ، جو زیادہ سے زیادہ 15 سیکنڈ تک ہو سکتا ہے) کے ساتھ جواب دیتا ہے۔

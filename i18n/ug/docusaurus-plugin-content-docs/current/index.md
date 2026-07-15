@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite ھۆججەتلىرى {#ultimate-multisite-documentation}
+# Ultimate Multisite ھۆججەتلىرى
 
 Ultimate Multisite ھۆججەتلىرىگە خۇش كەلدىڭىز. Ultimate Multisite، WordPress Multisite نى تولۇق Website as a Service (WaaS) سۇپىسىغا ئايلاندۇرىدۇ.
 
@@ -18,7 +18,7 @@ WaaS سۇپىڭىزنى ئورنىتىش، سەپلەش ۋە باشقۇرۇش ئ
 
 Ultimate Multisite ئۈستىدە قۇرۇۋاتقان ئاچقۇچىلار ئۈچۈن تېخنىكىلىق پايدىلىنىش ماتېرىيالى. hooks پايدىلىنىش ماتېرىيالى، REST API ھۆججەتلىرى ۋە addon ئېچىش قوللانمىلىرىنى ئۆز ئىچىگە ئالىدۇ.
 
-### [Addons](/addons) {#addons}
+### [قوشۇمچىلار](/addons) {#addons}
 
 Ultimate Multisite نى WooCommerce بىرلەشتۈرۈش، تەھلىل، دائىرە نامى سېتىش ۋە باشقا قوشۇمچە ئىقتىدارلار بىلەن كېڭەيتىدىغان ھەقلىق addon plugin لىرىنىڭ ھۆججەتلىرى.
 

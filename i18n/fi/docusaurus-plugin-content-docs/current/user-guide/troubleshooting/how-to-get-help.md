@@ -3,7 +3,7 @@ title: Miten saada apua
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Miten saada apua {#how-to-get-help}
+# Miten saada apua
 
 Sinulla on kelvollinen lisenssivä, ja sen avulla sinulla on pääsy tiimimme auttamaan ratkaisemaan ongelmia, joita saatat kohdata Ultimate Multisite -järjestelmän asennuksen aikana.
 

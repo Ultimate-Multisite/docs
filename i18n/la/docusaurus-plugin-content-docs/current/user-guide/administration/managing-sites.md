@@ -3,7 +3,7 @@ title: Administrare Situa |
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestionem Situum {#managing-sites}
+# Gestionem Situum
 
 I sita (vel subsita) sunt fundamentum negotii WaaS tuae. Ultimate Multisite habet 3 typus sitarum:
 

@@ -3,7 +3,7 @@ title: Registrar endpoint de API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# El punto de conexión de la API Register de Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# El punto de conexión de la API Register de Ultimate Multisite
 
 En este tutorial, aprenderás cómo usar el punto de conexión de la API /register de Ultimate Multisite para crear todo el proceso de incorporación de un nuevo cliente en tu red y cómo hacerlo con Zapier.
 

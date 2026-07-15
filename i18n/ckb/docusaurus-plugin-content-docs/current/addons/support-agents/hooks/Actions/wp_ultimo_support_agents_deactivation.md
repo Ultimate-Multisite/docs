@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# کردار: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# کردار: wp_ultimo_support_agents_deactivation
 
 ڕێگە بدە بە بەشەکانی تری pluginەکە ڕووتینەکانیان بۆ ناچالاککردن ببەستنەوە
 

@@ -3,7 +3,7 @@ title: የዶሜይን ሻጭ የለውጦች መዝገብ
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# የዶሜይን ሻጭ ለውጥ መዝገብ {#domain-seller-changelog}
+# የዶሜይን ሻጭ ለውጥ መዝገብ
 
 ስሪት 1.3.0 - በ2026-06-02 ተለቋል
 - አዲስ፦ የHostAfrica ዳግም ሻጭ ቀሪ ሂሳብ በጣም ሲቀንስ የnetwork-admin ማስጠንቀቂያ ታክሏል

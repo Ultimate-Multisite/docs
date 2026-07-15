@@ -4,7 +4,7 @@ title: عمل - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site {#action-movesite}
+# Action: move_site
 
 وروسته له هغه فعالېږي چې یو سایټ یوې نوې شبکې ته لېږدول شوی وي.
 

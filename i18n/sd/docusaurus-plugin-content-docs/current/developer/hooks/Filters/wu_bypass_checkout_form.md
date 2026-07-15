@@ -4,7 +4,7 @@ title: فلٽر - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# فلٽر: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# فلٽر: wu_bypass_checkout_form
 
 ڊولپرن کي نتيجي کي نظرانداز ڪرڻ ۽ نئون نتيجو مقرر ڪرڻ جي اجازت ڏئي ٿو
 

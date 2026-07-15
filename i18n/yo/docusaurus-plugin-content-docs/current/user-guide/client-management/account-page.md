@@ -3,7 +3,7 @@ title: Ojú-ìwé Account Oníbàárà
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ojú-ìwé Account ti Oníbàárà Rẹ (v2) {#your-clients-account-page-v2}
+# Ojú-ìwé Account ti Oníbàárà Rẹ (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite version 2.x.**_
 

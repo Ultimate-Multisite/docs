@@ -3,7 +3,7 @@ title: Að hefjast handa við þróun viðbóta
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Þróun viðbótar {#addon-development}
+# Þróun viðbótar
 
 ## Uppbygging viðbótar {#addon-structure}
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisiten kääntäminen {#translating-ultimate-multisite}
+# Ultimate Multisiten kääntäminen
 
 Ultimate Multisite on kehitetty englanniksi, mutta plugin on täysin käännettävä ja me tervetulleet aktiivisesti käännöksien panoksia.
 

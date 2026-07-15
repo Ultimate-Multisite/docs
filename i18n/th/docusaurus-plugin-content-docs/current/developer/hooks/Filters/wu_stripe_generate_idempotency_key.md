@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Filter: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# Filter: wu_stripe_generate_idempotency_key
 
 ตัวกรองค่า `idempotency_key` ที่จะถูกส่งไปพร้อมกับตัวเลือกการเรียกเก็บเงินของ Stripe
 

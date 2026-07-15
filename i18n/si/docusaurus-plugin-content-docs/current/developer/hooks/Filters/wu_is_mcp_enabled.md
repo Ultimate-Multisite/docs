@@ -4,7 +4,7 @@ title: පෙරහන - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filter: wu_is_mcp_enabled
 
 MCP ඇඩැප්ටරය සඳහා දී ඇති තත්ත්වයක් බලෙන් යෙදවීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
 

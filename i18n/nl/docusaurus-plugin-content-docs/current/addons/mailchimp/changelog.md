@@ -3,7 +3,7 @@ title: Mailchimp Wijzigingslog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Versiegeschiedenis {#mailchimp-changelog}
+# Mailchimp Versiegeschiedenis
 
 Versie: 1.1.1 - Uitgebracht op 2025-09-28
 

@@ -3,7 +3,7 @@ title: 多租户集成
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy 集成 {#multi-tenancy-integration}
+# Multi-Tenancy 集成
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 更改了用于主权租户、迁移验证和租户生命周期自动化的若干集成接触点。
 

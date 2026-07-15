@@ -3,7 +3,7 @@ title: Urugero rw'ibyo bishobora gukoreshwa
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ku v2 {#code-snippets-for-v2}
+# Code Snippets ku v2
 
 Muriye, code snippets mu **WordPress** bishobora gukoreshwa kugira ngo yorera ibyo byumva byashobora gutanga uburyo bwo plugin umwe w'ubwujubi. Ibi code snippets bisanzwe bishobora guhagarirwa mu ru rugero rwa WordPress cyangwa mu theme yawe (gusa, mu file functions.php). Cyangwa ushobora gukoresha mu MU plugin.
 

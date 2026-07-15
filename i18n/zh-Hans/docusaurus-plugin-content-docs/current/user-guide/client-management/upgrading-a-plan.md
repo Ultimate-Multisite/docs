@@ -3,7 +3,7 @@ title: 升级套餐
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# 升级方案 (v2) {#upgrading-a-plan-v2}
+# 升级方案 (v2)
 
 _**重要说明：本文指的是 Ultimate Multisite 2.x 版本。**_
 

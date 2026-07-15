@@ -3,7 +3,7 @@ title: דרישות
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# דרישות Ultimate Multisite {#ultimate-multisite-requirements}
+# דרישות Ultimate Multisite
 
 השאלה הראשונה שכנראה תשאלו את עצמכם לפני רכישת Ultimate Multisite היא מהן הדרישות להפעלת התוסף שלנו. ובכן, למזלכם, יש רק כמה דרישות בסיסיות להפעלת Ultimate Multisite: **שם דומיין**, **ספק אחסון** טוב והתקנת WordPress **Multisite**. זה כל מה שצריך!
 

@@ -3,7 +3,7 @@ title: Code-Snippets
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code-Snippets für v2 {#code-snippets-for-v2}
+# Code-Snippets für v2
 
 Grundsätzlich werden Code-Snippets für **WordPress** verwendet, um bestimmte Aktionen auszuführen, die andernfalls möglicherweise ein eigenes kleineres Plugin erfordern würden. Solche Code-Snippets werden in einer der WordPress-Core- oder Theme-Dateien platziert (in der Regel in der functions.php-Datei deines Themes) oder können als MU plugin verwendet werden.
 

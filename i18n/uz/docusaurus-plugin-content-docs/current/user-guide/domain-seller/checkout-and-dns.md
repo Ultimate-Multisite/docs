@@ -3,7 +3,7 @@ title: To'lov maydoni va Mijoz DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Maydon va Mijoz DNS Boshqarzligini Boshqarish {#checkout-field-and-customer-dns-management}
+# Checkout Maydon va Mijoz DNS Boshqarzligini Boshqarish
 
 ## Domen Tanlash checkout maydoni {#the-domain-selection-checkout-field}
 

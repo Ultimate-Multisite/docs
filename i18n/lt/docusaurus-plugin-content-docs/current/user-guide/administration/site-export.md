@@ -3,7 +3,7 @@ title: Sito eksportas
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Svetimo eksportas {#site-export}
+# Svetimo eksportas
 
 Administracijos puslapis **Site Export** leidžia tinklo administratoriams pakutoti vieną svetainę arba visą tinklą į žaliavėlį, kurį galima atsisiųsti migracijos, saugumo ar atsiėmimo (hand-off) veiksmams.
 

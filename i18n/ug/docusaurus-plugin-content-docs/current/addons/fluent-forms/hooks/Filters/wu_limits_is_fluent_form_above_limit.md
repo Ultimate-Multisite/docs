@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# سۈزگۈچ: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# سۈزگۈچ: wu_limits_is_fluent_form_above_limit
 
 بېرىلگەن جەدۋەل تۈرىنىڭ بۇ پىلاندا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى تەكشۈرىدۇ. plugin ئاچقۇچىلارنىڭ قايتۇرۇلغان قىممەتنى سۈزۈشىگە يول قويىدۇ
 

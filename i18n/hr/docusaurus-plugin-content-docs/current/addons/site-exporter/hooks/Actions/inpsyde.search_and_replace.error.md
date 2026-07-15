@@ -4,7 +4,7 @@ title: Radnja - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Radnja: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Radnja: inpsyde.search_and_replace.error
 
 Zanemaruje se; ovaj hook nije registriran od strane WP Ultimo.
 

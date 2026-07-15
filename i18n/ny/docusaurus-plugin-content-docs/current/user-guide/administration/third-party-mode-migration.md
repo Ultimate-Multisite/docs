@@ -3,7 +3,7 @@ title: Kuyenda kwa Mfeso Wopambiri
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Kusoka ya Mfano wa Tatu (Third-Party Mode Migration) {#third-party-mode-migration}
+# Kusoka ya Mfano wa Tatu (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 imebadilisha jinsi uwezo wa watu wengine (third-party abilities) unavyoshughulikiwa. **Sasa, third-party mode inaanza kwa "auto"**, ikiruhusu WordPress Abilities API kuungana moja kwa moja kwenye WordPress 7.0+ bila kuhitaji mipangilio ya manual.
 

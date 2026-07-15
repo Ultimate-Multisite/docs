@@ -4,7 +4,7 @@ title: Sefe - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Sehlo: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Sehlo: wu_captcha_whitelisted
 
 Sehlo sa hore na mosebedisi/kopo ya jwale e lokela ho kenngwa lenaneng le dumelletsweng.
 

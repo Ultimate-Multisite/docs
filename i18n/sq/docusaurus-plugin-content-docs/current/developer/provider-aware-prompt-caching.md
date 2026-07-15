@@ -3,7 +3,7 @@ title: Ruajtja në cache e Prompt-eve me Ndërgjegjësim për Ofruesin
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cache-im i Prompt-it i Ndërgjegjshëm për Provider {#provider-aware-prompt-caching}
+# Cache-im i Prompt-it i Ndërgjegjshëm për Provider
 
 Superdav AI Agent v1.12.0 prezanton **cache-im të prompt-it të ndërgjegjshëm për provider**, i cili optimizon kostot e API-së dhe vonesën duke cache-uar prompt-et nëpër provider-a të ndryshëm LLM. Çdo provider ka mekanizma dhe konfigurime të ndryshme cache-imi.
 

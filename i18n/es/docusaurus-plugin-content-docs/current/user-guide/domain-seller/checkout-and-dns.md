@@ -3,7 +3,7 @@ title: Campo de finalización de compra y DNS del cliente
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Campo de checkout y gestión de DNS de clientes {#checkout-field-and-customer-dns-management}
+# Campo de checkout y gestión de DNS de clientes
 
 ## El campo de checkout Domain Selection {#the-domain-selection-checkout-field}
 

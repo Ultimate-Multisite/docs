@@ -3,7 +3,7 @@ title: Hva er Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Hva er Ultimate Multisite {#why-ultimate-multisite}
+# Hva er Ultimate Multisite
 
 Ef þú ert kominn í þennan einslagi, er er líklegt að þú hafi hördum heyrt að þessi plugininn okkar gæti verið lausnin til að gera hugmyndina þína um viðskipti verkeleg. Við vonum að þú séðir allar svari sem þú þarft í endanlegri hluta þessins einslagi.
 

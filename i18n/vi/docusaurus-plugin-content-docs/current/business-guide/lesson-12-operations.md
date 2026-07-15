@@ -3,7 +3,7 @@ title: 'Bài học 12: Vận hành doanh nghiệp'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Bài học 12: Vận hành Doanh nghiệp {#lesson-12-running-the-business}
+# Bài học 12: Vận hành Doanh nghiệp
 
 Một nền tảng không phải là một dự án bạn hoàn thành — nó là một doanh nghiệp bạn phải vận hành. Bài học này sẽ đề cập đến các hoạt động hàng ngày khi quản lý FitSite: hỗ trợ khách hàng, thanh toán, bảo trì, và giữ cho khách hàng hài lòng.
 

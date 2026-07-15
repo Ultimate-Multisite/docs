@@ -4,7 +4,7 @@ title: ଛାଣକ - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filter: wu_rest_delete_item
 
 ଅନୁରୋଧ ସହ ଆଗକୁ ବଢ଼ିବାକୁ ଅନୁମତି ଅଛି କି ନାହିଁ, ତାହା ଫିଲ୍ଟର୍ କରେ।
 

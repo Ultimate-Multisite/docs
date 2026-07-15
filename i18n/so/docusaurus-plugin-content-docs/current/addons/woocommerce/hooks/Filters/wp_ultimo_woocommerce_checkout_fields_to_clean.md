@@ -4,7 +4,7 @@ title: Shaandheeye - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Shaandheeye: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Shaandheeye: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 Waxay u oggolaanaysaa horumariyeyaasha inay shaandheeyaan fields-ka caadiga ah ee cinwaanka billing-ka WooCommerce.
 

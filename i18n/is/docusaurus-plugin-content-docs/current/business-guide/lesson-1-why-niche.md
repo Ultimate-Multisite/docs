@@ -3,7 +3,7 @@ title: 'Læoni 1: Hvernig nýting er best'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Læoni 1: Hva er áhugaðar val? {#lesson-1-why-niche-wins}
+# Læoni 1: Hva er áhugaðar val?
 
 Fyrir að þú hlutvitur í nannaferð, þarf þig að skilja hvernig það er svo mikilvægt að byggja fyrir sérstaka viðskiptavini.
 

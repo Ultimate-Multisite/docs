@@ -3,7 +3,7 @@ title: التعارضات المعروفة
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# التعارضات المعروفة مع الإضافات الأخرى {#known-incompatibilities-with-other-plugins}
+# التعارضات المعروفة مع الإضافات الأخرى
 
 بعد تثبيت وتفعيل Ultimate Multisite، قد تواجه مشاكل بسبب التعارضات غير المعالجة مع إضافات أخرى.
 

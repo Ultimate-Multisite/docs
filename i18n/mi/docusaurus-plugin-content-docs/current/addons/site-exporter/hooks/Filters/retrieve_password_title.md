@@ -4,7 +4,7 @@ title: Tātari - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Tātari: retrieve_password_title {#filter-retrievepasswordtitle}
+# Tātari: retrieve_password_title
 
 Ka tātari i te kaupapa o te īmēra tautuhi anō kupuhipa.
 

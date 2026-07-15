@@ -4,7 +4,7 @@ title: کړنه - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# کړنه: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# کړنه: wp_ultimo_site_exporter_deactivation
 
 د plugin نورو برخو ته اجازه ورکوي چې د غیرفعالولو لپاره خپلې کړنلارې ونښلوي.
 

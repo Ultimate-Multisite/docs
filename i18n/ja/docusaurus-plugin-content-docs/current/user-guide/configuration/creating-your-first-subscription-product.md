@@ -3,7 +3,7 @@ title: 初めてのサブスクリプション商品を作成する
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# 最初のサブスクリプション製品を作成する（v2） {#creating-your-first-subscription-product-v2}
+# 最初のサブスクリプション製品を作成する（v2）
 
 _**重要な注記: この記事は Ultimate Multisite バージョン 2.x のユーザーのみを対象としています。バージョン 1.x を使用している場合は、**_ **_**この記事を参照してください**_**。
 

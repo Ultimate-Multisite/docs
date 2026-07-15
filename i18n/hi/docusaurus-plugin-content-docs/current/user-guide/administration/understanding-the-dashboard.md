@@ -3,7 +3,7 @@ title: डैशबोर्ड को समझना
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard को समझना {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard को समझना
 
 इससे पहले कि हम Ultimate Multisite की advanced configuration options और operational aspects में गहराई से उतरें, आइए एक नज़र dashboard पर डालते हैं।
 

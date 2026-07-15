@@ -4,7 +4,7 @@ title: 필터 - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Filter: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# Filter: wu_magic_link_enforce_ip
 
 IP 주소 확인을 적용할지 여부를 필터링합니다.
 

@@ -3,7 +3,7 @@ title: Mga Code Snippet
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Mga Code Snippet para sa v2 {#code-snippets-for-v2}
+# Mga Code Snippet para sa v2
 
 Sa pangkalahatan, ang mga code snippet para sa **WordPress** ay ginagamit upang gawin ang ilang mga aksyon na maaaring mangailangan ng isang mas maliit na dedikadong plugin. Ang mga ganitong code snippet ay inilalagay sa isa sa mga core o theme file ng WordPress (karaniwang sa functions.php file ng iyong theme) o maaari rin silang gamitin bilang MU plugin.
 

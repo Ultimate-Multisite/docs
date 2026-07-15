@@ -3,7 +3,7 @@ title: Konfigurado de Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# La Konfiguracio de la Pasarela Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# La Konfiguracio de la Pasarela Stripe (v2)
 
 _**NOTO IMPORTANTE: Esta artikolo se refere a Ultimate Multisite versio 2.x.**_
 

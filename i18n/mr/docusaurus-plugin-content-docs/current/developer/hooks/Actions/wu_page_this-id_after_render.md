@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_{$this->id}_after_render {#action-wupagethis-idafterrender}
+# Action: wu_page_{$this->id}_after_render
 
 या ॲक्शनचा वापर प्लगइन डेव्हलपर्सना पेज रेंडर (print) केल्यानंतर अतिरिक्त कंटेंट जोडण्याची परवानगी देण्यासाठी केला जातो.
 

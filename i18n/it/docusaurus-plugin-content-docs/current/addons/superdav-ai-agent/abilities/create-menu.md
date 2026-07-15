@@ -3,7 +3,7 @@ title: Crea Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Creare Menu {#create-menu}
+# Creare Menu
 
 La funzionalità **Crea Menu** permette di creare menu di navigazione WordPress con il supporto di etichette di navigazione distinte dai titoli delle pagine.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filtru: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filtru: wu_limits_is_post_above_limit
 
 Jiċċekkja jekk tip ta’ post partikolari huwiex permess f’dan il-pjan. Jippermetti lill-iżviluppaturi ta’ estensjonijiet jiffiltraw il-valur tar-ritorn
 

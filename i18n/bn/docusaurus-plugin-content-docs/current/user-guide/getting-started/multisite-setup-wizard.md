@@ -3,7 +3,7 @@ title: মাল্টিসাইট সেটআপ উইজার্ড
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# মাল্টিসাইট সেটআপ উইজার্ড {#multisite-setup-wizard}
+# মাল্টিসাইট সেটআপ উইজার্ড
 
 Ultimate Multisite-এ একটি বিল্ট-ইন উইজার্ড আছে যা স্বয়ংক্রিয়ভাবে একটি সাধারণ WordPress ইনস্টলেশনকে WordPress Multisite নেটওয়ার্কে রূপান্তর করে। এতে আর ম্যানুয়ালি `wp-config.php` এডিট করা বা ডেটাবেস কমান্ড চালানোর দরকার হয় না।
 

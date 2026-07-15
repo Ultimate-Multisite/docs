@@ -3,7 +3,7 @@ title: Referencia de configuración
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencia de ajustes {#settings-reference}
+# Referencia de ajustes
 
 Esta página registra los ajustes que afectan a la administración diaria y los cambios recientes de comportamiento en Ultimate Multisite.
 

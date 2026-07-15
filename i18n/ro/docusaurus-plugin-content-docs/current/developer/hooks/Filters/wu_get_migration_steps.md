@@ -4,7 +4,7 @@ title: Filtru - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Filtru: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Filtru: wu_get_migration_steps
 
 Permite dezvoltatorilor și add-on-urilor să adauge pași de migrare noi
 

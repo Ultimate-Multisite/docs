@@ -3,7 +3,7 @@ title: Website-Vorlagen
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Website-Vorlagen (v2) {#site-templates-v2}
+# Website-Vorlagen (v2)
 
 _**HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x. Wenn du Version 1.x verwendest,**_ **siehe diesen Artikel** _**.**_
 

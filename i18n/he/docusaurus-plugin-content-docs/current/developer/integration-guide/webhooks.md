@@ -3,7 +3,7 @@ title: טיפול בוו-בק
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# טיפול ב-Webhook {#webhook-handling}
+# טיפול ב-Webhook
 
 צור נקודות קצה (endpoints) של Webhook מותאמות אישית כדי לקבל אירועים משירותים חיצוניים ולסנכרן נתונים עם Ultimate Multisite.
 

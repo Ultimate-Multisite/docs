@@ -4,7 +4,7 @@ title: Nzacha - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Nzacha: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Nzacha: mu-migration/all_posts/default_args
 
 Na-enyocha arụmụka ndabara maka ịjụ posts n’ime usoro all_posts.
 

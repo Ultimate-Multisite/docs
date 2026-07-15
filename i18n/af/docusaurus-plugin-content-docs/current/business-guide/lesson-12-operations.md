@@ -3,7 +3,7 @@ title: 'Les 12: Die Besigheid Bedryf'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Les 12: Die Besigheid Bedryf {#lesson-12-running-the-business}
+# Les 12: Die Besigheid Bedryf
 
 'n Platform is nie 'n projek wat jy voltooi nie – dit is 'n besigheid wat jy bedryf. Hierdie les dek die daaglikse werking van die bestuur van FitSite: ondersteuning, fakturering, onderhoud, en die geluk van kliënte.
 

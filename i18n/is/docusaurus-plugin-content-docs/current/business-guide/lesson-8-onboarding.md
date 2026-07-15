@@ -3,7 +3,7 @@ title: 'Læoni 8: Klýfing við viðskipti'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Læoni 8: Innleganir við Klient {#lesson-8-customer-onboarding}
+# Læoni 8: Innleganir við Klient
 
 Að að fanga upp klantinn er bara hálfninni þjónustu. Ef hann skýrast inn, finnst óvæntur og komast aldrei aftur í heiminni, hefurð þú lósinn hann. Þessi læonið byggir upp upplifun sem breytur nýtt upplýsingarferli yfir í virkan og áhugalegt klant.
 

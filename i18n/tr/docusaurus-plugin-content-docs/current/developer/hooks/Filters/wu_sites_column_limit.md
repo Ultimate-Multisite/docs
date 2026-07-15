@@ -4,7 +4,7 @@ title: Filter - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filtre: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Filtre: wu_sites_column_limit
 
 Ağ içindeki `get pluginssites` için değeri değiştiren filtre.
 

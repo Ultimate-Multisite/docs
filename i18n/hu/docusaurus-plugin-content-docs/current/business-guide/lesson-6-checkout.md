@@ -3,7 +3,7 @@ title: 'Összhang 6: A regisztrációs élmény'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 6. Bölöm: A Regisztrációs Élmény {#lesson-6-the-signup-experience}
+# 6. Bölöm: A Regisztrációs Élmény
 
 A checkout folyamat az a pont, ahol az érdeklődés bevételnek válik. Egy zavaros vagy általános regisztrációs folyamat elvesznek vásárlókat. Egy a niche-re (szakmai területre) szabott folyamat, amely a nyelvükben beszél, és fáradsáment érzi, konvertálja őket.
 

@@ -3,7 +3,7 @@ title: یکپارچه‌سازی GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# یکپارچه‌سازی با GridPane {#gridpane-integration}
+# یکپارچه‌سازی با GridPane
 
 ## معرفی کلی {#overview}
 GridPane یک کنترل پنل تخصصی میزبانی WordPress است که برای حرفه‌ای‌های جدی WordPress طراحی شده است. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL بین Ultimate Multisite و GridPane را فراهم می‌کند.

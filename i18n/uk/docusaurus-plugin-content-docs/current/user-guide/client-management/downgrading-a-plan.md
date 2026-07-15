@@ -3,7 +3,7 @@ title: Перехід на нижчий тарифний план
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Пониження плану (v2) {#downgrading-a-plan-v2}
+# Пониження плану (v2)
 
 _**ВАЖЛИВА ПРИМІТКА: ця стаття стосується Ultimate Multisite версії 2.x.**_
 

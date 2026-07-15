@@ -3,7 +3,7 @@ title: Σελίδα Account πελάτη
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Η σελίδα Account του πελάτη σας (v2) {#your-clients-account-page-v2}
+# Η σελίδα Account του πελάτη σας (v2)
 
 _**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτό το άρθρο αναφέρεται στην έκδοση 2.x του Ultimate Multisite.**_
 

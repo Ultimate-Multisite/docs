@@ -3,7 +3,7 @@ title: Gbigbe kuro lati V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Gbigbe láti V1 {#migrating-from-v1}
+# Gbigbe láti V1
 
 ## Ultimate Multisite ti yí padà láti ẹbí ìtújáde 1.x atilẹba rẹ sí ẹbí ìtújáde 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

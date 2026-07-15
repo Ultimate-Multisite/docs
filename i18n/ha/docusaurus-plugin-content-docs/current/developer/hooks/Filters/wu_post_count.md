@@ -4,7 +4,7 @@ title: Tace - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Tace: wu_post_count {#filter-wupostcount}
+# Tace: wu_post_count
 
 Ba masu haɓaka kari damar canza jimillar ƙidaya
 

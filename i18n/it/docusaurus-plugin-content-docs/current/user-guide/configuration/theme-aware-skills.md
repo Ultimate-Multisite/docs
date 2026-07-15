@@ -3,7 +3,7 @@ title: Abilità Sensibili al Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Consapevoli del Tema {#theme-aware-skills}
+# Skills Consapevoli del Tema
 
 Superdav AI Agent v1.10.0 include quattro nuove skill integrate e consapevoli del tema che si adattano automaticamente al tema WordPress attivo. Queste skill forniscono guide e capacità specializzate adattate all'architettura e alle funzionalità del tuo tema.
 

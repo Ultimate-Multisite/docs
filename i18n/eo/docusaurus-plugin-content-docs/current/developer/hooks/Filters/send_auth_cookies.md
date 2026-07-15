@@ -4,7 +4,7 @@ title: Filtrilo - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filtrilo: send_auth_cookies {#filter-sendauthcookies}
+# Filtrilo: send_auth_cookies
 
 Permesas malebligi ke aŭtentigaj kuketoj efektive estu senditaj al la kliento.
 

@@ -3,7 +3,7 @@ title: Ku Bilaabidda Horumarinta Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Horumarinta Addon {#addon-development}
+# Horumarinta Addon
 
 ## Qaab-dhismeedka Addon {#addon-structure}
 

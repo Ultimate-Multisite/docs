@@ -3,7 +3,7 @@ title: Il flusso di registrazione
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Il flusso di registrazione (v2) {#the-registration-flow-v2}
+# Il flusso di registrazione (v2)
 
 _**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 

@@ -3,7 +3,7 @@ title: Référence des hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Référence des hooks {#hooks-reference}
+# Référence des hooks
 
 Documentation générée automatiquement pour les **59 actions** et **118 filtres** dans Ultimate Multisite.
 

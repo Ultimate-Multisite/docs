@@ -3,7 +3,7 @@ title: Tsarin Wurin Gida Kwarewa
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# مهارت مشخصات سایت (Site Specification Skill) {#site-specification-skill}
+# مهارت مشخصات سایت (Site Specification Skill)
 
 مهارت **مشخصات سایت** یک روش ساختاریافته برای ثبت اهداف، مخاطبان و هویت برند سایت شماست. این اطلاعات در حافظه **site_brief** شما ذخیره می‌شود که عامل‌ها از آن در جلسات مختلف به هم ارجاع می‌دهند تا کمک منسجم و آگاه با زمینه ارائه دهند.
 

@@ -3,7 +3,7 @@ title: Aliran Migrasi Kedaulatan
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Aliran Migrasi Kedaulatan (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# Aliran Migrasi Kedaulatan (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 menambah gerbang pengesahan migrasi untuk memindahkan subsiti standard ke infrastruktur penyewa kedaulatan (sovereign tenant).
 

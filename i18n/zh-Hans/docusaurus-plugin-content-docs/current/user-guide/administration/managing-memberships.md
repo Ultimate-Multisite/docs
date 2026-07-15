@@ -3,7 +3,7 @@ title: 管理会员资格
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# 管理会员资格 {#managing-memberships}
+# 管理会员资格
 
 在 Ultimate Multisite 中，你可以管理会员资格，并访问你网络上的所有订阅。查看和编辑订阅详情，例如套餐和产品、站点数量、账单金额与频率、付款历史以及时间戳。
 

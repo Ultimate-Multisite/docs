@@ -3,7 +3,7 @@ title: 'Oppitunti 13: Skaalaus ylöspäin'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Oppitunti 13: Skaalaaminen {#lesson-13-scaling-up}
+# Oppitunti 13: Skaalaaminen
 
 Sinulla on toimiva alusta ja maksavia asiakkaita. Tämä oppitunti käsittelee, miten kasvaa pienestä toiminnasta kestäväksi liiketoiminnaksi -- skaalaamalla infrastruktuuria, automatisoimalla toimintoja ja kasvattamalla asiakaskohtaista liikevaihtoa.
 

@@ -3,7 +3,7 @@ title: ଅନୁପାତ ଏବଂ ବିକ୍ଷମୀ ପରିଚୟ ମା
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# చెల్లింపులు మరియు ఇన్వాయిస్‌లను నిర్వహించడం {#managing-payments-and-invoices}
+# చెల్లింపులు మరియు ఇన్వాయిస్‌లను నిర్వహించడం
 
 ## చెల్లింపు సెట్టింగ్‌లు {#payment-settings}
 

@@ -3,7 +3,7 @@ title: Търсене в интернет
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search (Търсене в Интернет) {#internet-search}
+# Internet Search (Търсене в Интернет)
 
 Gratis AI Agent v1.5.0 добавя възможност за **Internet Search (Търсене в Интернет)**, която позволява на AI асистента да извлича актуална информация от уебсайта по време на разговор. Това е възможно благодарение на [Brave Search API](https://brave.com/search/api/) или [Tavily API](https://tavily.com/).
 

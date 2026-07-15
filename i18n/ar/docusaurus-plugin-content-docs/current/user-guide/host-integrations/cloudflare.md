@@ -3,7 +3,7 @@ title: تكامل Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# تكامل Cloudflare {#cloudflare-integration}
+# تكامل Cloudflare
 
 ## نظرة عامة {#overview}
 Cloudflare هي شبكة رائدة لتوصيل المحتوى (CDN) ومزوّد أمان يساعد على حماية المواقع وتسريعها. يتيح هذا التكامل إدارة النطاقات تلقائيًا بين Ultimate Multisite وCloudflare، خصوصًا لتثبيتات المواقع المتعددة على النطاقات الفرعية.

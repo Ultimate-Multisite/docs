@@ -4,7 +4,7 @@ title: Ekintza - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Ekintza: delete_network {#action-deletenetwork}
+# Ekintza: delete_network
 
 Sare bat ezabatu ondoren abiarazten da.
 

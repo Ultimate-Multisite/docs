@@ -3,7 +3,7 @@ title: Lidmaatskapverval en Wesblokkering
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Lidmaatskap Verloop en Waflakking van die Webwerf {#membership-expiration-and-site-blocking}
+# Lidmaatskap Verloop en Waflakking van die Webwerf
 
 Hierdie gids verduidelik hoe Ultimate Multisite lidmaatskapverloop, proefperiode-eindigings en die waflakking van die webwerf op die voorgrond hanteer. Dit dek die lewensiklus van 'n lidmaatskap van aktief tot verbyverloop, die instellings wat bepaal of webwerwe waafgelak word, en wat om te kyk is wanneer webwerwe toeganklik bly nadat 'n lidmaatskap verbygeloop het.
 

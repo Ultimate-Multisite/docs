@@ -3,7 +3,7 @@ title: 'Lekcia 1: Prečo nika víťazí'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lekcia 1: Prečo víťazí nika {#lesson-1-why-niche-wins}
+# Lekcia 1: Prečo víťazí nika
 
 Skôr než sa dotkneme akéhokoľvek softvéru, musíte pochopiť, prečo je tvorba pre konkrétne publikum tým najdôležitejším rozhodnutím, ktoré urobíte.
 

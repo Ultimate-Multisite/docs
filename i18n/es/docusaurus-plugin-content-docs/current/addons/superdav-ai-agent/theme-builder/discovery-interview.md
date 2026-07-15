@@ -3,7 +3,7 @@ title: Entrevista de descubrimiento
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Entrevista de Descubrimiento {#discovery-interview}
+# Entrevista de Descubrimiento
 
 La **Entrevista de Descubrimiento** es el primer paso en el proceso de diseño de Theme Builder. Recopila información sobre tu sitio, tu negocio y tus preferencias de diseño para crear un tema personalizado.
 

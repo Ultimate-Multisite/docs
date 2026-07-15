@@ -3,7 +3,7 @@ title: Egemen Kiracı Operasyonları
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Egemen Kiracı Operasyonları {#sovereign-tenant-operations}
+# Egemen Kiracı Operasyonları
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, egemen kiracılar için operasyonel araçlar ekler: kendi veritabanına, dosya sistemi kök dizinine ve yönlendirme bağlamına sahip olan ancak ağ yöneticisinden görünür kalabilen alt siteler (subsites).
 

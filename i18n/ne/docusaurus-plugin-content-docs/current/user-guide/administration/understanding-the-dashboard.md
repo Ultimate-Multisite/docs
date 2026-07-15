@@ -3,7 +3,7 @@ title: ड्यासबोर्ड बुझ्नुहोस्
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite ड्यासबोर्ड बुझ्दै {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite ड्यासबोर्ड बुझ्दै
 
 Ultimate Multisite को अझ उन्नत कन्फिगरेशन विकल्पहरू र Ultimate Multisite का सञ्चालन पक्षहरूसँग डुब्नुअघि, हामी ड्यासबोर्ड हेरौं।
 

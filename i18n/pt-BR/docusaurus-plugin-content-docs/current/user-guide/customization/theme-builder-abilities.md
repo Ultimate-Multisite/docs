@@ -3,7 +3,7 @@ title: Habilidades do Construtor de Temas
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Habilidades do Construtor de Temas: Criar e Ativar Temas de Blocos {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Habilidades do Construtor de Temas: Criar e Ativar Temas de Blocos
 
 O Superdav AI Agent v1.12.0 introduz duas habilidades poderosas que permitem gerar e implantar temas de blocos personalizados diretamente na interface de chat.
 

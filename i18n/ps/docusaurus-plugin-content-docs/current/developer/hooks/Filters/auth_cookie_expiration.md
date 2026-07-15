@@ -4,7 +4,7 @@ title: فلټر - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# فلټر: auth_cookie_expiration {#filter-authcookieexpiration}
+# فلټر: auth_cookie_expiration
 
 د تصدیق کوکي د پای ته رسېدو مودې موده فلټر کوي.
 

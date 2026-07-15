@@ -3,7 +3,7 @@ title: Integrācija ar WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrācija ar WPMU DEV {#wpmu-dev-integration}
+# Integrācija ar WPMU DEV
 
 ## Īsszums {#overview}
 WPMU DEV ir vispārējā WordPress platforma, kas piedāvā mājas (hosting), pluginus un pakalpojumu WordPress vietnēm. Šī integrācija ļauj automātiski singt domainiem un pārvaldīt SSL sertifikātu starp Ultimate Multisite un WPMU DEV hostingam.

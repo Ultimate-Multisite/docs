@@ -3,7 +3,7 @@ title: Innebygde agenter
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Innebygde agenter {#built-in-agents}
+# Innebygde agenter
 
 Gratis AI Agent v1.9.0 leveres med fem innebygde agenter, hver forhåndskonfigurert med et fokusert sett med verktøy, en tilpasset systemprompt og startforslag som passer til vanlige oppgaver innenfor det området. Å bytte mellom agenter endrer hva assistenten kan gjøre og hvordan den svarer — uten noen konfigurasjon fra din side. Superdav AI Agent v1.18.0 kan legge til tidsplanbevisste verktøy, påminnelsesoppføringer, godkjenningsporter og SMS-varsler i disse arbeidsflytene når de relaterte integrasjonene er konfigurert.
 

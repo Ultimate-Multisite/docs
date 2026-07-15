@@ -3,7 +3,7 @@ title: Сабти тағйироти ҳамгироии WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Сабти тағйироти ҳамгироии WooCommerce {#woocommerce-integration-changelog}
+# Сабти тағйироти ҳамгироии WooCommerce
 
 Версияи 2.2.0 - Нашр шуд дар 2026-07-01
 * Нав: Маблағҳои андози Ultimate Multisite акнун дар checkout ҳамчун сатрҳои ҷудогонаи ҳаққи WooCommerce пайдо мешаванд, ки ҷамъҳои андозро пеш аз пардохт равшантар мекунанд.

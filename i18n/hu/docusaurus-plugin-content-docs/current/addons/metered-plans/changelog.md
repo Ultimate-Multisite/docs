@@ -3,7 +3,7 @@ title: Mért alapú Terv(ek) Változatok Naplója
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Mért alapú csomagok Módosítási naplója {#metered-plans-changelog}
+# Mért alapú csomagok Módosítási naplója
 
 Verzió 1.1.0 - Kiadása: 2026-05-05
 - Új: AI token alapú számlázás multisite alpontokhoz – nyomon követi és számlázza az AI token használatot a vásárlói oldalakon, konfigurálható token alapú díjakkal

@@ -3,7 +3,7 @@ title: Bæta viðskiptaþjónustuáætlun
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Styrk innvegna panel {#enhance-control-panel-integration}
+# Styrk innvegna panel
 
 ## Áttekking {#overview}
 Enhance er nútíma kontrollpanel sem býður upp um sterk automatískum leiðang og stjórnunarferli fyrir vefsítana. Þessi tenging gerir mögulegt að sjálfsviðskipti domænum og stjórnun SSL-tækilorðanna á milli Ultimate Multisite og Enhance Control Panel.

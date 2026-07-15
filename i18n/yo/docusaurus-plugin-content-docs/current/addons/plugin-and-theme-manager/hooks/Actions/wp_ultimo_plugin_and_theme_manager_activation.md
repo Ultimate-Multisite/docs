@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Ìṣe: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# Ìṣe: wp_ultimo_plugin_and_theme_manager_activation
 
 Jẹ́ kí àwọn apá míì ti àfikún náà so àwọn ilana wọn pọ̀ fún mímú ṣiṣẹ́
 

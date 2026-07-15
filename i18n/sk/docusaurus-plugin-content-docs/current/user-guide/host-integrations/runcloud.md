@@ -3,7 +3,7 @@ title: Integrácia RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrácia s RunCloud {#runcloud-integration}
+# Integrácia s RunCloud
 
 ## Prehľad {#overview}
 RunCloud je platforma na správu serverov v chabe, ktorá vám umožňuje jednoducho nasporiť a spravovať webové aplikácie na vlastných chabách. Táto integrácia umožňuje automatické synchronizovanie domén a správu SSL certifikátov medzi Ultimate Multisite a RunCloud.

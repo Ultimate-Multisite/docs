@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe Onye na-ere ngalaba
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Ndekọ mgbanwe Domain Seller {#domain-seller-changelog}
+# Ndekọ mgbanwe Domain Seller
 
 Ụdị 1.3.0 - E wepụtara na 2026-06-02
 - Ọhụrụ: Agbakwunyere ịdọ aka ná ntị network-admin mgbe nguzozi onye na-ereghachi HostAfrica dara ala nke ukwuu

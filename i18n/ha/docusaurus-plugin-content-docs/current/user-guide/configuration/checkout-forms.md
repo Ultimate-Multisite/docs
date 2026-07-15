@@ -3,7 +3,7 @@ title: Fassarar Bayan da ake Samun Bayan Kuɗi
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Forms Na Bayar (Checkout Forms) {#checkout-forms}
+# Forms Na Bayar (Checkout Forms)
 
 Forms Na Bayar wani hanyar mai sauƙi da mai sauƙin don gwada hanyoyi daban-daban lokacin da kake so ka canza sabbin abokan ciniki zuwa makamalar ku.
 

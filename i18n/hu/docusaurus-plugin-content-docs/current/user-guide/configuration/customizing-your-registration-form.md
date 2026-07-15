@@ -3,7 +3,7 @@ title: Regisztrációs űrlapod testreszabása
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# A regisztrációs űrlap testreszabása {#customizing-your-registration-form}
+# A regisztrációs űrlap testreszabása
 
 Ahhoz, hogy a hálózatod egyedinek tűnjön a WordPress platformra épülő összes többi SaaS-hoz képest, az Ultimate Multisite lehetővé teszi a regisztrációs és bejelentkezési oldalaid testreszabását a **Checkout Forms** funkcióval.
 

@@ -3,7 +3,7 @@ title: સેટિંગ્સ સંદર્ભ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings સંદર્ભ {#settings-reference}
+# Settings સંદર્ભ
 
 આ પાનું Ultimate Multisite માં દૈનિક સંચાલન અને તાજેતરના વર્તન ફેરફારોને અસર કરતી Settings ને ટ્રૅક કરે છે.
 

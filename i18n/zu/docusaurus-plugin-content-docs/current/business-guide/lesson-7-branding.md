@@ -3,7 +3,7 @@ title: 'Isifundo 7: Ukwenza kube okwakho'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Isifundo 7: Ukwenza Kube Okwakho {#lesson-7-making-it-yours}
+# Isifundo 7: Ukwenza Kube Okwakho
 
 Amakhasimende akho akufanele nanini azizwe sengathi asebenzisa "isandiso esithile se-WordPress." Kufanele azizwe sengathi asebenzisa i-FitSite -- inkundla eyakhelwe imboni yawo. Lesi sifundo sihlanganisa ukufaka uphawu, ukwenza i-white-label, nokwenza inkundla izwakale njengomkhiqizo.
 

@@ -3,7 +3,7 @@ title: Integrasyon sa WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrasyon sa WP Engine {#wp-engine-integration}
+# Integrasyon sa WP Engine
 
 ## Panan-aw (Overview) {#overview}
 Ang WP Engine kay usa ka premium managed WordPress hosting platform nga naghatag og optimized performance, seguridad, ug scalability para sa mga WordPress site. Kini nga integrasyon nagtugot sa awtomatikong pag-sync sa domain tali sa Ultimate Multisite ug WP Engine.

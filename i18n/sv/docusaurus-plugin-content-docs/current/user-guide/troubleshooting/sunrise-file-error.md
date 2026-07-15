@@ -3,7 +3,7 @@ title: Soluppgångsfilfel
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fel vid installation av Sunrise-filen {#error-installing-the-sunrise-file}
+# Fel vid installation av Sunrise-filen
 
 Filen sunrise.php är en specialfil som WordPress letar efter när det startar upp. För att WordPress ska kunna hitta sunrise.php måste filen ligga i **wp-content-mappen**.
 

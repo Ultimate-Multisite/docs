@@ -3,7 +3,7 @@ title: 'Lekcija 11: Pronalaženje kupaca'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekcija 11: Pronalaženje Kupaca {#lesson-11-finding-customers}
+# Lekcija 11: Pronalaženje Kupaca
 
 Odlična platforma bez kupaca je samo hobi. Ova lekcija pokriva kako privući kupce u specifičnoj niši industrije – strategije koje funkcioniraju jer ste fokusirani na jednu industriju.
 

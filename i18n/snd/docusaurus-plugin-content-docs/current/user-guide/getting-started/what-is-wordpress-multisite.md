@@ -3,7 +3,7 @@ title: WordPress Multisite ڇا آهي؟
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite के बारे में کیا ہے؟ {#what-is-wordpress-multisite}
+# WordPress Multisite के बारे में کیا ہے؟
 
 اپنے بنیادی حصے میں، ووردپرس ایک فیچر فراہم کرتا ہے جسے ‘Multisite’ کہتے ہیں، جس کی جڑیں 2010 میں ووردپرس 3.0 کے لانچ سے جڑی ہوئی ہیں۔ اس کے بعد نئے فیچرز لانے اور سیکیورٹی کو مضبوط کرنے کے لیے کئی تبدیلیاں کی گئی ہیں۔
 

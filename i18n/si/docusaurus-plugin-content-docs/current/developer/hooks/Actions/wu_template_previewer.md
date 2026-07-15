@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# ක්‍රියාව: wu_template_previewer {#action-wutemplatepreviewer}
+# ක්‍රියාව: wu_template_previewer
 
 template පෙරදසුන් පරිසරය තුළ සිටින විට ධාවනය වේ.
 

@@ -3,7 +3,7 @@ title: Integrado WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrado kun WP Engine {#wp-engine-integration}
+# Integrado kun WP Engine
 
 ## Ĝenerala Informoj {#overview}
 WP Engine estas premium administrita WordPress hospita platformo, kiu koncesas optimitan performon, sekurecon kaj skalabilajn kapablon por WordPress-sitoj. Ĉi tiu integracio permesas aŭtomatan domen sincronigon inter Ultimate Multisite kaj WP Engine.

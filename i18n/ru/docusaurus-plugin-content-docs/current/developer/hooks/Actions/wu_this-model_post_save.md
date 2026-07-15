@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Действие: wu_${this->model}_post_save {#action-wuthis-modelpostsave}
+# Действие: wu_${this->model}_post_save
 
 Вызывается после того, как объект сохранён в базе данных.
 

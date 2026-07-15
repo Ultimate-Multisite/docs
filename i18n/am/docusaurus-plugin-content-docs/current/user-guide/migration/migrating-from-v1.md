@@ -3,7 +3,7 @@ title: ከV1 ወደ መሸጋገር
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# ከV1 ወደ ማሻገር {#migrating-from-v1}
+# ከV1 ወደ ማሻገር
 
 ## Ultimate Multisite ከቀድሞው 1.x የሪልስ ስብስብ ወደ 2.x የሪልስ ስብስብ ተቀይሯል። {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

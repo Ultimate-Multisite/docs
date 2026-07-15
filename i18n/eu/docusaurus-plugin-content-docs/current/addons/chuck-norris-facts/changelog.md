@@ -3,7 +3,7 @@ title: Chuck Norris Facts aldaketen erregistroa
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris gertaeren aldaketa-erregistroa {#chuck-norris-facts-changelog}
+# Chuck Norris gertaeren aldaketa-erregistroa
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Gehituta: Eguneratze automatikoaren funtzionalitatea Ultimate Multisite eguneratze-zerbitzariaren bidez

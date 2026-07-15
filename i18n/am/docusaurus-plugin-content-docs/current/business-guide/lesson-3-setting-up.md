@@ -3,7 +3,7 @@ title: ትምህርት 3፡ የእርስዎን ኔትወርክ ማዘጋጀት
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# የኔትዎርክዎን ማዋቀር ትምህርት 3 {#lesson-3-setting-up-your-network}
+# የኔትዎርክዎን ማዋቀር ትምህርት 3
 
 ለመገንባት ጊዜው ደርሷል። በዚህ ትምህርት ውስጥ Ultimate Multisiteን ይጫናሉ እንዲሁም የFitSite ኔትዎርክ መሠረትን ያዋቅራሉ። እዚህ የሚደረግ እያንዳንዱ ውሳኔ በየጤና (fitness) ዘርፍ ላይ ተመስርቶ ነው።
 

@@ -3,7 +3,7 @@ title: 'Ders 2: Hilbijartina nişa xwe'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ders 2: Hilbijartina qada xwe ya taybet {#lesson-2-picking-your-niche}
+# Ders 2: Hilbijartina qada xwe ya taybet
 
 Di Ders 1 de me destnîşan kir ku çima qada taybet ji ya giştî baştir e. Niha divê tu ya xwe hilbijêrî. Ev ders çarçoveyek dide te da ku berî ku demê li avakirina wê xerc bikî, qadayek taybet bibînî û piştrast bikî.
 

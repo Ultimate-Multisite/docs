@@ -3,7 +3,7 @@ title: Բազմավարձակալության ինտեգրում
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ինտեգրում {#multi-tenancy-integration}
+# Multi-Tenancy ինտեգրում
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-ը փոխում է մի քանի ինտեգրման հպման կետեր՝ ինքնիշխան տենանտների, միգրացիայի ստուգման և տենանտի կենսացիկլի ավտոմատացման համար։
 

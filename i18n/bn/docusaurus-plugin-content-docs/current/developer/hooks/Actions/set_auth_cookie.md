@@ -4,7 +4,7 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie {#action-setauthcookie}
+# Action: set_auth_cookie
 
 যখন অথেন্টিকেশন কুকি সেট করা হবে, তার ঠিক আগে এটি কার্যকর হয়।
 

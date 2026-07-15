@@ -3,7 +3,7 @@ title: 'Les 10: Lanceringdag'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Les 10: Lancering {#lesson-10-launch-day}
+# Les 10: Lancering
 
 Alles is gebouwd. Voordat je de deuren opent, gaat deze les door de pre-launch checklist om ervoor te zorgen dat niets kapot, ontbreekt of gênant is.
 

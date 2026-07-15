@@ -3,7 +3,7 @@ title: የቅናሽ ኮዶችን መፍጠር
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# የቅናሽ ኮዶችን መፍጠር (v2) {#creating-discount-codes-v2}
+# የቅናሽ ኮዶችን መፍጠር (v2)
 
 _**ጠቃሚ ማስታወሻ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 

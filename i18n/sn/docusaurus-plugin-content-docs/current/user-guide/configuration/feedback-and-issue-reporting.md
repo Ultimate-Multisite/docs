@@ -3,7 +3,7 @@ title: Zvinovaka dzeMudzidzo nemarudzo ekutendeka
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kurudzera Kwezvinovhu neKutanga Matambudziko {#customer-feedback--issue-reporting}
+# Kurudzera Kwezvinovhu neKutanga Matambudziko
 
 Gratis AI Agent v1.5.0 inoratidza sistemu yekutanga zvinhu uye kutanga matambudziko inotanga kune mupfumbiro wekuti vanhu vakuru (end users) vanogona kuita kuti zvinovhu zvakasiya uye kuita kutanga matambudziko nekuti vachishandisa chat interface. Iyi sistemu inoratidza kuratidza kuti vachikubatsira kana vachisanganisira, command yekutanga kutanga (automated reporting command), uye kuteerera kwemashure (triage) kubatsirwa neAI mumapfumbiro ekupfumbiro.
 

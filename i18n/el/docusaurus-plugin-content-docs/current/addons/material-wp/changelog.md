@@ -3,7 +3,7 @@ title: Material WP Κατάλογος Αλλαγών
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Κατάλογος Αλλαγών Material WP {#material-wp-changelog}
+# Κατάλογος Αλλαγών Material WP
 
 Έκδοση 1.1.15 - 26/01/2026
 * Βελτιωμένο: Στυλ κώδικα και μορφοποίηση;

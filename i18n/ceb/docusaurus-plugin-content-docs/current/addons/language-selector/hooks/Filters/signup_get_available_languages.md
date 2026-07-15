@@ -4,7 +4,7 @@ title: Filtro - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Pansala: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Pansala: signup_get_available_languages
 
 Ginasala ang lista sa magamit nga mga pinulongan alang sa mga pagparehistro sa front-end nga site.
 

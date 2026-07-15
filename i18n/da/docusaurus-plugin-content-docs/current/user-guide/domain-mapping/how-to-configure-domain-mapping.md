@@ -3,7 +3,7 @@ title: Sådan konfigurerer du domænetilknytning
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Sådan konfigurerer du domænemapping (v2) {#how-to-configure-domain-mapping-v2}
+# Sådan konfigurerer du domænemapping (v2)
 
 _**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 

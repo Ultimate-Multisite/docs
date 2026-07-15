@@ -4,7 +4,7 @@ title: Tallaabo - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Ficil: delete_network {#action-deletenetwork}
+# Ficil: delete_network
 
 Wuxuu dhacaa ka dib marka network la tirtiro.
 

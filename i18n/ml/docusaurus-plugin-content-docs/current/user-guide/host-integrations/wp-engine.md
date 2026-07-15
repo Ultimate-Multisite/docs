@@ -3,7 +3,7 @@ title: WP Engine സംയോജനം
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ഇന്റഗ്രേഷൻ {#wp-engine-integration}
+# WP Engine ഇന്റഗ്രേഷൻ
 
 ## അവലോകനം {#overview}
 WP Engine ഒരു പ്രീമിയം മാനേജ്ഡ് WordPress ഹോസ്റ്റിംഗ് പ്ലാറ്റ്‌ഫോമാണ്, WordPress സൈറ്റുകൾക്ക് ഒപ്റ്റിമൈസ് ചെയ്ത പെർഫോമൻസ്, സെക്യൂരിറ്റി, സ്കേലബിലിറ്റി എന്നിവ നൽകുന്നു. ഈ ഇന്റഗ്രേഷൻ Ultimate Multisite-ഉം WP Engine-ഉം തമ്മിലുള്ള ഓട്ടോമാറ്റിക് ഡൊമെയ്ൻ സിങ്കിംഗ് സാധ്യമാക്കുന്നു.

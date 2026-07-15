@@ -4,7 +4,7 @@ title: Filtrum - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filtrum: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filtrum: wu_apc_should_display_admin_menu
 
 Administratoribus permitte paginas tabulae administratoris celare, si processum customizationis perfecerint.
 

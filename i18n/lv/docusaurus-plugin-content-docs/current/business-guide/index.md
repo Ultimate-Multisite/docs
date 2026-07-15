@@ -3,7 +3,7 @@ title: Izveidojiet nišas tīmekļvietņu biznesu
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Veidojiet nišas tīmekļa vietņu biznesu ar Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Veidojiet nišas tīmekļa vietņu biznesu ar Ultimate Multisite
 
 Lielākā daļa cilvēku, kas mēģina pārdot tīmekļa vietnes, konkurē cenā ar Wix, Squarespace un tūkstošiem ārštata speciālistu. Viņi zaudē. Tie, kas uzvar, izvēlas konkrētu auditoriju, izveido šai auditorijai pielāgotu risinājumu un iekasē maksu par vērtību, ko piegādā.
 

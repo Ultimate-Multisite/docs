@@ -4,7 +4,7 @@ title: Filtrilo - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filtro: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filtro: wu_checkout_step_validation_submittable_field_types
 
 Permesu al programistoj preteriri la kontrolon se kampo estas aŭtomate submetebla.
 

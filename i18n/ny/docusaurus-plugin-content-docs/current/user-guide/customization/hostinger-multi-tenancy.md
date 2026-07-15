@@ -3,7 +3,7 @@ title: Kupanga kwa Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imaliza uwezi wa multi-tenancy wa Hostinger, mukuuzikizera kuti domains zozakwazikwa (hosted domains) zidzirekeze kuupatsa wopatsa wamene (sovereign tenant provisioning) kudzikoza nazo mu mpingo wosiyanasiyana ndi integration ya mapulogula ya Hostinger yomwe imapereka.
 

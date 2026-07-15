@@ -3,7 +3,7 @@ title: Sayt quruvchi orkestratsiyasi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Sayt yaratish orkestratsiyasi v2 {#site-builder-orchestration-v2}
+# Sayt yaratish orkestratsiyasi v2
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 da joriy qilingan) ko‘p bosqichli veb-sayt yaratishni ta’minlaydigan dvigateldir. Agentdan "restoran veb-saytini yaratish" yoki "blogli portfolio yaratish"ni so‘raganingizda, orkestrator bu yuqori darajadagi maqsadni tuzilgan **reja**ga ajratadi, uni bajarish uchun kerakli pluginlarni aniqlaydi, har bir qadamni ketma-ket bajaradi, jarayonni kuzatadi va xatolardan avtonom tiklanadi.
 

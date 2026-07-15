@@ -3,7 +3,7 @@ title: Erstellen Ihres ersten Abonnementprodukts
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Dein erstes Abonnementprodukt erstellen (v2) {#creating-your-first-subscription-product-v2}
+# Dein erstes Abonnementprodukt erstellen (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel ist nur für Benutzer von Ultimate Multisite Version 2.x gedacht. Wenn du Version 1.x verwendest,**_ **_**lies diesen Artikel**_**.
 

@@ -3,7 +3,7 @@ title: Reducere un plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planum de la plan (v2) {#downgrading-a-plan-v2}
+# Planum de la plan (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

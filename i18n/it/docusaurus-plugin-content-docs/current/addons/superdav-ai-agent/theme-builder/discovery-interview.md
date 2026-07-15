@@ -3,7 +3,7 @@ title: Colloquio di scoperta
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Intervista di Scoperta {#discovery-interview}
+# Intervista di Scoperta
 
 L'**Intervista di Scoperta** è il primo passo del processo di design di Theme Builder. Raccoglie informazioni sul tuo sito, sulla tua attività e sulle tue preferenze di design per creare un tema personalizzato.
 

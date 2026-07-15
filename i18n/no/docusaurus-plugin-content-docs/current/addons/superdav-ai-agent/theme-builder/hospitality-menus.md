@@ -3,7 +3,7 @@ title: Restaurantmenyer
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Restaurantmenyer {#hospitality-menus}
+# Restaurantmenyer
 
 Funksjonen **Restaurantmenyer** lar Theme Builder generere og innebygge strukturerte menyer for mat og drikke direkte på WordPress-nettstedet ditt.
 

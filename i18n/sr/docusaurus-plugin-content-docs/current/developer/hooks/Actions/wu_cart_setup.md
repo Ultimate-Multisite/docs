@@ -4,7 +4,7 @@ title: Радња - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Радња: wu_cart_setup {#action-wucartsetup}
+# Радња: wu_cart_setup
 
 Омогућава програмерима да направе додатне измене на објекту наплате.
 

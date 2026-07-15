@@ -3,7 +3,7 @@ title: د REST API عمومي کتنه
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# د REST API ماخذ {#rest-api-reference}
+# د REST API ماخذ
 
 ## بنسټیزه امستنه {#base-configuration}
 

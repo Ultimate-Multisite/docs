@@ -3,7 +3,7 @@ title: Ukuphatha Izinkokhelo nama-invoyisi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ukuphatha Izinkokhelo nama-Invoyisi {#managing-payments-and-invoices}
+# Ukuphatha Izinkokhelo nama-Invoyisi
 
 ## Izilungiselelo Zokukhokha {#payment-settings}
 

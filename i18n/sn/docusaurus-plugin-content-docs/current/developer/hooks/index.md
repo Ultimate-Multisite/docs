@@ -3,7 +3,7 @@ title: Referensi yeHooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referensi yeHooks {#hooks-reference}
+# Referensi yeHooks
 
 Gwaro rakagadzirwa otomatiki rezviito zvese **59** uye mafirita **118** muUltimate Multisite.
 

@@ -3,7 +3,7 @@ title: Auto Search and Replace na Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace in Site Templates (v2)
 
 _**Tutorial này yêu cầu WP UItimo phiên bản 2.x.**_
 

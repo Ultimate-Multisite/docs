@@ -3,7 +3,7 @@ title: 'Aralin 1: Bakit Nananaig ang Espesyalisadong Larangan'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Aralin 1: Bakit Panalo ang Niche {#lesson-1-why-niche-wins}
+# Aralin 1: Bakit Panalo ang Niche
 
 Bago natin hawakan ang anumang software, kailangan mong maunawaan kung bakit ang paggawa para sa isang partikular na audience ang nag-iisang pinakamahalagang desisyong gagawin mo.
 

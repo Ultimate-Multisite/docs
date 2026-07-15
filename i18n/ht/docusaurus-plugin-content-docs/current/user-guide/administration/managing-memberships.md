@@ -3,7 +3,7 @@ title: Jere Manm
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Jere Mantyeman Membwa (Managing Memberships) {#managing-memberships}
+# Jere Mantyeman Membwa (Managing Memberships)
 
 Nan Ultimate Multisite, ou kapab fèt jere lang memwa (memberships) epi aksè tout abonnements nan rezo ou an. Revize epi edite detay abonnements tankou plan yo ak pwodwi yo, kantite sit, montan fakturi ak frekans, istwa pamanman, ak timestam yo.
 

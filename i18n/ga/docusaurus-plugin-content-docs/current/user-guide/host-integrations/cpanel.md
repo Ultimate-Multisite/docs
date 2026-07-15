@@ -3,7 +3,7 @@ title: CPanel Integration
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Intégráisi le cPanel {#cpanel-integration}
+# Intégráisi le cPanel
 
 ## Oibríocht {#overview}
 Is é cPanel de bhfostála web is áit a bhaineann go mór ar fáil ó chuid fhoistála shared agus dedicated. Féachfaidh an chéad seo a bheith ag cur isteach sincontróir (control panel) chun sinte sinte (domain syncing) authiomáid le Ultimate Multisite agus cPanel, rud a gníomh faisnéis domáin alias agus subdomains ar chuid acaintí cPanel a chur i bhfeidhm go authiomáid.

@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 কিছু প্লাগইন এমন URL সেভ করে যা ম্যাপ করা সক্রিয় হওয়ার আগে করা হয়েছিল, অথবা তারা ভিন্ন উপায়ে URL তৈরি করে যা উপরের ফিল্টারগুলোতে অন্তর্ভুক্ত নয়।
 

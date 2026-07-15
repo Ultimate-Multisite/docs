@@ -3,7 +3,7 @@ title: 设置 Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# 设置 Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# 设置 Stripe Gateway (v2)
 
 _**重要提示：本文适用于 Ultimate Multisite 版本 2.x。**_
 

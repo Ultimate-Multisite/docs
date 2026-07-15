@@ -3,7 +3,7 @@ title: බහු-තමාවන් වෙන් කිරීම
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# බහු-තමාවන් වෙන් කිරීම (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# බහු-තමාවන් වෙන් කිරීම (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 මගින් ස්වෛරී තෑරුම්කරුවන් සඳහා එක් උප-සයිට් දත්ත සමුදායක් සහ ගොනු පද්ධතියක් වෙන් කිරීමේ හැකියාව සපයයි. මෙය ජාල මට්ටමේ සැපයුම, බිල් කිරීම සහ පරිපාලනය ආරක්ෂා කර ගනිමින් තෑරුම්කරුවන්ගේ දත්ත වෙන වෙනම තබා ගැනීමට උපකාරී වේ.
 

@@ -3,7 +3,7 @@ title: 'Lição 4: Construindo Templates de Nicho'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lição 4: Criando Templates de Nicho {#lesson-4-building-niche-templates}
+# Lição 4: Criando Templates de Nicho
 
 Templates são o núcleo da sua proposta de valor de nicho. Um dono de estúdio de fitness que se cadastra e vê um site que já parece um site de academia — com horários de aulas, perfis de treinadores e a imagem certa — tem muito mais chances de permanecer do que um que vê uma tela em branco.
 

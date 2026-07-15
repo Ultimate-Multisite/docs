@@ -3,7 +3,7 @@ title: Стваৰэнне кодаў зніжкі
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Стваৰэнне кода зніжкі (v2) {#creating-discount-codes-v2}
+# Стваৰэнне кода зніжкі (v2)
 
 _**ВАЖНА ЗАМЕТКА: Гэты артыкул адносіцца да версіі Ultimate Multisite 2.x.**_
 

@@ -4,7 +4,7 @@ title: 'Acción - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Acción: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# Acción: wu_page_{$this->id}_before_render
 
 Permitir a los desarrolladores de plugins agregar contenido adicional antes de imprimir la página.
 

@@ -3,7 +3,7 @@ title: Registro de cambios de AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Registro de cambios de AffiliateWP {#affiliatewp-changelog}
+# Registro de cambios de AffiliateWP
 
 Versión: 2.0.1 - Lanzado el 2025-09-28
 

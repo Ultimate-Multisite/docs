@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 plugin உருவாக்குநர்கள் தேவைப்பட்டால் பயனர் மெட்டா தரவை வெவ்வேறு வழிகளில் சேமிக்க இது அனுமதிக்கிறது.
 

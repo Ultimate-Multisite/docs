@@ -3,7 +3,7 @@ title: CyberPanel انٹیگریشن
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 یہ گائیڈ بتاتی ہے کہ Ultimate Multisite CyberPanel انٹیگریشن کو کیسے ترتیب دیا جائے تاکہ آپ کے نیٹ ورک میں موجود مپیڈ ڈومینز خود بخود CyberPanel میں ورچوئل ہوسٹ (virtual hosts) کے طور پر شامل (اور ہٹائے) جا سکیں، اور اس کے ساتھ Let's Encrypt کے ذریعے اختیاری طور پر آٹو-SSL بھی فراہم کیا جا سکے۔
 

@@ -3,7 +3,7 @@ title: Úvodník na nastavovanie multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Konfigurácia nástroja na nastavovanie Multisite {#multisite-setup-wizard}
+# Konfigurácia nástroja na nastavovanie Multisite
 
 Ultimate Multisite obsahuje vbudovaný nástroj, ktorý automaticky premení štandardnú instaláciu WordPress do siete WordPress Multisite. To vám ušetří manuálne upravovanie súboru `wp-config.php` alebo spúšťanie príkazov na databázu.
 

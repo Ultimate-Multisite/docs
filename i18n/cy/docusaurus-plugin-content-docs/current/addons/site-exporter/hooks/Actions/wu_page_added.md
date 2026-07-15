@@ -4,7 +4,7 @@ title: Gweithred - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Gweithred: wu_page_added {#action-wupageadded}
+# Gweithred: wu_page_added
 
 Caniatáu i ddatblygwyr plugin redeg pethau ychwanegol pan fydd tudalennau’n cael eu cofrestru.
 

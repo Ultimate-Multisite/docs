@@ -3,7 +3,7 @@ title: Að fá greitt
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Að fá greitt (v2) {#getting-paid-v2}
+# Að fá greitt (v2)
 
 _**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 

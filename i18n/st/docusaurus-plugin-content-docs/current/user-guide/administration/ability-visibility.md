@@ -3,7 +3,7 @@ title: Ho bohlokoa le ho bona
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Boitsopebopebope (Ability Visibility) {#ability-visibility}
+# Boitsopebopebope (Ability Visibility)
 
 Superdav AI Agent v1.12.0 e ntsa **Boitsopebopebope** (Ability Visibility) tse di tsela tsa go thusa, tse di dirang eng le eng se fana ka boitsopebopebopeba (ability). Le fa ke tla thusa baalima go bona kae kae botshelo ba agent ka REST APIs, MCP servers, WooCommerce integrations, le ditswalo tse ding.
 

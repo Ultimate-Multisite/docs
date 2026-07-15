@@ -3,7 +3,7 @@ title: Arah Desain
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Desain {#design-direction}
+# Arah Desain
 
 Langkah **Arah Desain** memungkinkan Anda meninjau, menyempurnakan, dan menyelesaikan desain visual tema Anda sebelum Theme Builder menghasilkan tema secara lengkap.
 

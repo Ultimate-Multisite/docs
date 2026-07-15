@@ -3,7 +3,7 @@ title: Rejestr zmian integracji WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Dziennik zmian integracji WooCommerce {#woocommerce-integration-changelog}
+# Dziennik zmian integracji WooCommerce
 
 Wersja 2.2.0 - Wydana 2026-07-01
 * Nowe: Kwoty podatku Ultimate Multisite pojawiają się teraz jako osobne pozycje opłat WooCommerce przy checkout, dzięki czemu sumy podatków są bardziej czytelne przed płatnością.

@@ -3,7 +3,7 @@ title: Wyszukiwanie domen w nagłówku
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Wyszukiwanie domeny w nagłówku {#header-domain-search}
+# Wyszukiwanie domeny w nagłówku
 
 Użyj tej konfiguracji, gdy chcesz mieć mały formularz w nagłówku, który rozpoczyna wyszukiwanie domeny, a następnie pozwala klientowi wybrać spośród dostępnych domen w checkout Ultimate Multisite.
 

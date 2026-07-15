@@ -3,7 +3,7 @@ title: Whakaruruku Kaihanga Pae v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Ko Site Builder Orchestration v2 (i whakaurua ki Gratis AI Agent v1.4.0) te pūkaha e whakakaha ana i te waihanga paetukutuku ā-taahiraa maha. Ina tono koe i te agent kia "hangaia he paetukutuku wharekai", kia "waihangatia he kohinga mahi me tētahi rangitaki" rānei, ka wāwāhia e te orchestrator taua whāinga taumata-runga hei **mahere** hanganga, ka kimi i ngā plugins e hiahiatia ana hei whakatutuki, ka whakahaere i ia taahiraa ā-raupapa, ka whai i te ahunga whakamua, ā, ka whakaora aunoa i ngā hapa.
 

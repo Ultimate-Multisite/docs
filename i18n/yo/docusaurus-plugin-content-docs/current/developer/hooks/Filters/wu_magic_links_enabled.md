@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Àlẹmọ: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Àlẹmọ: wu_magic_links_enabled
 
 Ṣe àlẹmọ bóyá àwọn ọna asopọ idan ti ṣiṣẹ.
 

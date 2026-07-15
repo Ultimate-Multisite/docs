@@ -4,7 +4,7 @@ title: Isihluzi - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Isihluzo: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Isihluzo: wu_page_get_title_links
 
 Vumela abaphuhlisi bezongezelelo, kunye nathi, ukuba bongeze amakhonkco esenzo kumaphepha ethu okuhlela
 

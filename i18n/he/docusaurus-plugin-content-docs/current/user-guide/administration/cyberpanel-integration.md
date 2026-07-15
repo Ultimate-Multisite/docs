@@ -3,7 +3,7 @@ title: שילוב CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# אינטגרציה עם CyberPanel {#cyberpanel-integration}
+# אינטגרציה עם CyberPanel
 
 מדריך זה מסביר כיצד להגדיר את אינטגרציית Ultimate Multisite עם CyberPanel, כך שדומיינים ממופים ברשת שלך יתווספו (ויוסרו) אוטומטית כ-Virtual Hosts ב-CyberPanel, עם אפשרות אופציונלית של הקצאת SSL אוטומטית באמצעות Let's Encrypt.
 

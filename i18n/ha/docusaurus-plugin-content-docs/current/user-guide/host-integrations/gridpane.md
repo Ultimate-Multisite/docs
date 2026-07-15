@@ -3,7 +3,7 @@ title: Shigarwar GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Shigar da GridPane {#gridpane-integration}
+# Shigar da GridPane
 
 ## Nazari {#overview}
 GridPane wani tsarin tsaro ne na musamman don masu sana'ar WordPress. Wannan haɗin yana ba shi damar daidaita domain ko SSL certificate management tsakanin Ultimate Multisite da GridPane cikin sauƙi.

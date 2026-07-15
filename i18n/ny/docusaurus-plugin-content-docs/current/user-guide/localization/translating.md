@@ -3,7 +3,7 @@ title: Kuthandiza Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Kuthandiza Ultimate Multisite {#translating-ultimate-multisite}
+# Kuthandiza Ultimate Multisite
 
 Ultimate Multisite wamukwera kwa English, koma plugin uliwezi kutranslate bwino ndipo tuseka mwachuso kuti muthandize kuweka uthandizo lwa mtangamo.
 

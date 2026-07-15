@@ -3,7 +3,7 @@ title: Kutheni i-Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kutheni Ultimate Multisite {#why-ultimate-multisite}
+# Kutheni Ultimate Multisite
 
 Ukuba ufike kweli nqaku, mhlawumbi uvile ukuba plugin yethu inokuba sisisombululo sokwenza umbono wakho weshishini ube yinyani. Sinethemba lokuba uya kuba neempendulo ozidingayo ekupheleni kweli candelo.
 

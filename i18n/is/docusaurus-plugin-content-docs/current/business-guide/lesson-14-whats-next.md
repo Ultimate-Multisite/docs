@@ -3,7 +3,7 @@ title: 'Læoni 14: Hva kemur næst'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Læoni 14: Hva kom næst? {#lesson-14-what-comes-next}
+# Læoni 14: Hva kom næst?
 
 Þú hefur byggt sérsniðnað netbætur fyrir vefsíða úr null. FitSite er live, þjónar fítesskólar og skapar endurkerandi inntekjur. Þessi síðin skoðar hvenær við verðum næst.
 

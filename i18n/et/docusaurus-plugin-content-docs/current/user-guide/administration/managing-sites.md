@@ -3,7 +3,7 @@ title: Saitide haldamine
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Soidudeid {#managing-sites}
+# Soidudeid
 
 Soidud (või subsaitid) on teie WaaS liiklussprofi jaoks oluline. Ultimate Multisite on kolme tüüpi soidude:
 

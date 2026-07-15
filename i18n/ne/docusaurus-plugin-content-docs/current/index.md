@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite दस्तावेज {#ultimate-multisite-documentation}
+# Ultimate Multisite दस्तावेज
 
 Ultimate Multisite दस्तावेजमा स्वागत छ। Ultimate Multisite ले WordPress Multisite लाई पूर्ण सेवाका रूपमा वेबसाइट (WaaS) प्लेटफर्ममा रूपान्तरण गर्छ।
 
@@ -18,7 +18,7 @@ Ultimate Multisite दस्तावेजमा स्वागत छ। Ulti
 
 Ultimate Multisite मा निर्माण गर्ने विकासकर्ताहरूका लागि प्राविधिक सन्दर्भ। hooks सन्दर्भ, REST API दस्तावेज, र addon विकास मार्गदर्शिकाहरू समावेश छन्।
 
-### [Addons](/addons) {#addons}
+### [एडअनहरू](/addons) {#addons}
 
 WooCommerce एकीकरण, विश्लेषण, डोमेन बिक्री, र थप जस्ता अतिरिक्त सुविधाहरूले Ultimate Multisite विस्तार गर्ने सशुल्क addon प्लगइनहरूको दस्तावेज।
 

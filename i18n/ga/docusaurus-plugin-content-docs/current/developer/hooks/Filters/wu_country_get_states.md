@@ -4,7 +4,7 @@ title: Scagaire - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Scagaire: wu_country_get_states {#filter-wucountrygetstates}
+# Scagaire: wu_country_get_states
 
 Filleann sé liosta na stát don tír seo.
 

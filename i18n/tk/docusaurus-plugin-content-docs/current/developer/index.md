@@ -3,7 +3,7 @@ title: Işläp düzüji resminamalary
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dörediji resminamalary {#developer-documentation}
+# Dörediji resminamalary
 
 Bu gollanma Ultimate Multisite bilen integrasiýa etmek, ony giňeltmek ýa-da onuň üçin goşmaçalar döretmek üçin döredijilere zerur bolan ähli zady berýär. Ultimate Multisite WordPress Multisite toruny Website-as-a-Service (WaaS) platformasyna öwürýär.
 

@@ -3,7 +3,7 @@ title: Jak dostávat zaplaceno
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Jak dostávat platby (v2) {#getting-paid-v2}
+# Jak dostávat platby (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 

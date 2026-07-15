@@ -3,7 +3,7 @@ title: Pagtanggap ng Bayad
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pagbabayad (v2) {#getting-paid-v2}
+# Pagbabayad (v2)
 
 _**MAHALAGANG TALA: Tinutukoy ng artikulong ito ang Ultimate Multisite version 2.x.**_
 

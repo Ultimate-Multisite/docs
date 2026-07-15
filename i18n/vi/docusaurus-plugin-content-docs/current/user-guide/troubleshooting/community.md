@@ -3,7 +3,7 @@ title: Cộng đồng
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Cách tham gia Cộng đồng Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Cách tham gia Cộng đồng Ultimate Multisite
 
 Cộng đồng Ultimate Multisite là nơi bạn có thể kết nối với những người dùng Ultimate Multisite khác, chia sẻ mẹo hay, kinh nghiệm và nhiều điều thú vị khác. Để truy cập Cộng đồng Ultimate Multisite, hãy truy cập https://community.ultimatemultisite.com/home.
 

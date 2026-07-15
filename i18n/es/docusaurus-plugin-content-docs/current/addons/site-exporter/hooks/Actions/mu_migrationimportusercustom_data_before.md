@@ -4,7 +4,7 @@ title: ''
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Acción: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Acción: mu_migration/import/user/custom_data_before
 
 Se dispara antes de exportar los datos personalizados del usuario.
 

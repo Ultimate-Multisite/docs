@@ -3,7 +3,7 @@ title: Zarejestruj punkt końcowy API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Punkt końcowy API /register Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Punkt końcowy API /register Ultimate Multisite
 
 W tym samouczku dowiesz się, jak używać punktu końcowego API /register Ultimate Multisite, aby utworzyć cały proces onboardingu dla nowego klienta w swojej sieci, oraz jak zrobić to za pomocą Zapier.
 

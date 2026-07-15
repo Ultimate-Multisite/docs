@@ -3,7 +3,7 @@ title: Imiqondo Eyisisekelo
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Imiqondo Eyisisekelo {#basic-concepts}
+# Imiqondo Eyisisekelo
 
 Kumsebenzisi omusha we-WordPress Multisite nomuntu osanda kuqala ukusebenzisa i-Ultimate Multisite, kungaba namagama nemishwana eminingi emisha okufanele ayiqonde ekuqaleni. Ukuyifunda kuwumsebenzi obalulekile ngoba uzodinga ukuqonda inkundla nokuthi isebenza kanjani iyonke.
 

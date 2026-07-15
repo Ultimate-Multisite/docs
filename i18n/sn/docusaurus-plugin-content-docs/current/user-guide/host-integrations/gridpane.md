@@ -3,7 +3,7 @@ title: Kugadzirwa neGridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration ne GridPane {#gridpane-integration}
+# Integration ne GridPane
 
 ## Zvinisiso (Overview) {#overview}
 GridPane ndiri control panel yakasimba (specialized) ya WordPress inoswe kune vafungamics veWordPress vakakakosha. Izvi integration inosimbisa (enables) syncing ye domain uye management ye SSL certificate zvakanaka pakati pe Ultimate Multisite ne GridPane.

@@ -3,7 +3,7 @@ title: Nastavenie Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfigurácia brány Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Konfigurácia brány Stripe (v2)
 
 _**DÔLEŽITÉ UPOZORNENIE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 

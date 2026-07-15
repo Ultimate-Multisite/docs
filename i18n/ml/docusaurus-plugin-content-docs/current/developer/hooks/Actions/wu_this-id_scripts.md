@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->id}_scripts'
 sidebar_label: 'wu_{$this->id}_scripts'
 _i18n_hash: 5769fc5cafbbb4448aedaa68fa084a3c
 ---
-# Action: wu_{$this->id}_scripts {#action-wuthis-idscripts}
+# Action: wu_{$this->id}_scripts
 
 സ്ക്രിപ്റ്റുകൾ എൻക്യൂ ചെയ്യാനുള്ള (enqueue) ഹുക്ക് ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

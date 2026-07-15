@@ -4,7 +4,7 @@ title: Filter - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filter: wu_post_default_status {#filter-wupostdefaultstatus}
+# Filter: wu_post_default_status
 
 ഡാറ്റാബേസിൽ സ്റ്റോർ ചെയ്യുന്നതിന് മുൻപ് ഒബ്ജക്റ്റ് ഡാറ്റ ഫിൽട്ടർ ചെയ്യാൻ ഇത് ഉപയോഗിക്കുന്നു.
 

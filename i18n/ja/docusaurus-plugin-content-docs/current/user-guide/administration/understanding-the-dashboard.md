@@ -3,7 +3,7 @@ title: ダッシュボードの理解
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite ダッシュボードの理解 {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite ダッシュボードの理解
 
 Ultimate Multisite のより高度な設定オプションや運用面に没頭する前に、ダッシュボードを見てみましょう。
 

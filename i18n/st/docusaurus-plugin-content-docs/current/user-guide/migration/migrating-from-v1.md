@@ -3,7 +3,7 @@ title: Ho lula ho a tloha ka V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Ho fihla ho V1 lo {#migrating-from-v1}
+# Ho fihla ho V1 lo
 
 ## Ultimate Multisite e ile a fetileng ho tsela la 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

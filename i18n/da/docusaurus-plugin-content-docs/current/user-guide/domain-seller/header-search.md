@@ -3,7 +3,7 @@ title: Domænesøgning i sidehoved
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header-domænesøgning {#header-domain-search}
+# Header-domænesøgning
 
 Brug denne opsætning, når du ønsker en lille header-form, der starter en domænesøgning og derefter lader kunden vælge mellem tilgængelige domæner inde i Ultimate Multisite checkout.
 

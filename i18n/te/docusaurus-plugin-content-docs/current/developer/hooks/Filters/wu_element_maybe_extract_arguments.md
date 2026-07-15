@@ -4,7 +4,7 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# ఫిల్టర్: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# ఫిల్టర్: wu_element_maybe_extract_arguments
 
 ఈ పార్సర్‌ను అదనపు బిల్డర్‌లు లేదా ప్లగిన్‌లతో వ్యవహరించడానికి డెవలపర్‌లు విస్తరించడానికి వీలుగా ఒక సాధారణ ఫిల్టర్‌ను జోడిస్తుంది.
 

@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Qorshayaasha la Cabbiro
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Isbeddellada Qorshayaasha Mitirka Leh {#metered-plans-changelog}
+# Isbeddellada Qorshayaasha Mitirka Leh
 
 Nooca 1.1.0 - La sii daayay 2026-05-05
 - Cusub: Biil-gareynta AI token ee multisite subsites — la soco oo biil ka qaad isticmaalka AI token guud ahaan site-yada macaamiisha iyadoo la adeegsanayo qiimayaal per-token la habeyn karo

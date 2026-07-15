@@ -4,7 +4,7 @@ title: Akcia - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Akcia: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Akcia: wu_after_switch_template
 
 Umožňuje vývojárom pluginov pripojiť funkcie po tom, čo používateľ alebo super admin prepne šablónu stránky
 

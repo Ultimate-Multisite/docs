@@ -3,7 +3,7 @@ title: یکپارچه‌سازی Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# یکپارچه‌سازی Ultimate Multisite با Zapier {#integrating-ultimate-multisite-with-zapier}
+# یکپارچه‌سازی Ultimate Multisite با Zapier
 
 در یکی از مقاله‌ها، درباره [Webhooks](webhooks.md) صحبت کردیم و اینکه چگونه می‌توان از آن‌ها برای یکپارچه‌سازی با برنامه‌های شخص ثالث استفاده کرد.
 

@@ -3,7 +3,7 @@ title: Trình hướng dẫn cài đặt Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Trình hướng dẫn cài đặt Multisite {#multisite-setup-wizard}
+# Trình hướng dẫn cài đặt Multisite
 
 Ultimate Multisite tích hợp sẵn một trình hướng dẫn giúp tự động chuyển đổi trang WordPress thông thường thành mạng lưới WordPress Multisite. Bạn không cần phải chỉnh sửa thủ công file `wp-config.php` hay chạy các lệnh database.
 

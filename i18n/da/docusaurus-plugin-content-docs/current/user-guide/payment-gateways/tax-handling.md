@@ -3,7 +3,7 @@ title: Afgiftshåndtering
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Skattehåndtering {#tax-handling}
+# Skattehåndtering
 
 Ultimate Multisite har et modul til skatteopkrævning indbygget i vores kerne-plugin, så hvis du har brug for at opkræve salgsskatter på dine planer, pakker og tjenester, kan du nemt gøre det uden at skulle installere add-ons.
 

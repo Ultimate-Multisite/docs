@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# வடிகட்டி: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# வடிகட்டி: wu_should_create_domain_record_for_site
 
 புதிதாக உருவாக்கப்பட்ட தளத்திற்காக Ultimate Multisite ஒரு டொமைன் பதிவை உருவாக்க வேண்டுமா என்பதை வடிகட்டுகிறது.
 

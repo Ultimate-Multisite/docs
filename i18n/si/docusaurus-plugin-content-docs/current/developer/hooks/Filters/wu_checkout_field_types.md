@@ -4,7 +4,7 @@ title: පෙරහන - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# පෙරහන: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# පෙරහන: wu_checkout_field_types
 
 නව ක්ෂේත්‍ර වර්ග එක් කිරීමට අපගේ API මෙතැනට සම්බන්ධ වේ.
 

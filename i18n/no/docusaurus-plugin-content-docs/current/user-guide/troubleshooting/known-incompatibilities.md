@@ -3,7 +3,7 @@ title: Kjente inkompatibiliteter
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Kjente konflikter med andre utvidelser {#known-incompatibilities-with-other-plugins}
+# Kjente konflikter med andre utvidelser
 
 Etter at du har installert og aktivert Ultimate Multisite, kan det oppstå problemer på grunn av konflikter med andre utvidelser som ikke er løst.
 

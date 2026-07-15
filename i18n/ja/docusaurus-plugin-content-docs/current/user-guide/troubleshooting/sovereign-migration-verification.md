@@ -3,7 +3,7 @@ title: 主権移行検証
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# 主権移行の検証 {#sovereign-migration-verification}
+# 主権移行の検証
 
 Ultimate Multisite 1.2.0では、ソブリンテナント（Sovereign Tenant）への移行に関するWP-CLIの検証コマンドが追加されました。テナントの移行、SSO訪問、または隔離インストールが期待通りに動作しない場合にこれらを使用してください。
 

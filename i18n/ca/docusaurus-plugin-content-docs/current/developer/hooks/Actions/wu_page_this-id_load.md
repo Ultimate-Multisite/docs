@@ -4,7 +4,7 @@ title: 'Acció - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Aquesta acció: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# Aquesta acció: wu_page_\{$this->id\}_load
 
 Permet als desenvolupadors de plugins afegir ganchos (hooks) addicionals a les nostres pàgines.
 

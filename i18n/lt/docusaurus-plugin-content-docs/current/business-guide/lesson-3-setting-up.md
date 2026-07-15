@@ -3,7 +3,7 @@ title: '3 pamoka: jūsų tinklo nustatymas'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# 3 pamoka: tinklo nustatymas {#lesson-3-setting-up-your-network}
+# 3 pamoka: tinklo nustatymas
 
 Laikas kurti. Šioje pamokoje įdiegsite Ultimate Multisite ir sukonfigūruosite FitSite tinklo pagrindą. Kiekvienas sprendimas čia priimamas galvojant apie fitneso nišą.
 

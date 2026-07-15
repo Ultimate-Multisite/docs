@@ -3,7 +3,7 @@ title: Ndinani chifukwa cha Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ndiye Ultimate Multisite {#why-ultimate-multisite}
+# Ndiye Ultimate Multisite
 
 Muli muli wamukira ilo ndalama, muli ndi chonde kuti muli ndi mavuto omwe plugin yathu yotsogolera kuti muli ndi chidziwitso lomaliza. Tili ndi chonde kuti muli ndi zokhudza zomwe mukuwona m'moyo wopereka.
 

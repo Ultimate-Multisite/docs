@@ -3,7 +3,7 @@ title: Izakhono zoLawulo lweePlugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Izakhono Zolawulo Lwe-plugin {#plugin-management-abilities}
+# Izakhono Zolawulo Lwe-plugin
 
 Gratis AI Agent v1.5.0 iza **nezakhono ezi-7 zolawulo lwe-plugin** ezinokubizwa ngumncedisi we-AI ngexesha lencoko. Ezi zakhono zinika ulawulo lwenkqubo phezu kwee-plugin ze-WordPress ezifakwe nge-[Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

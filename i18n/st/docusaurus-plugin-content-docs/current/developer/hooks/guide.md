@@ -3,7 +3,7 @@ title: Tataiso ea Tšebeliso ea Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Tataiso ea Tšebeliso ea Hooks {#hooks-usage-guide}
+# Tataiso ea Tšebeliso ea Hooks
 
 Ultimate Multisite e fana ka action hooks tse 200+ le filter hooks tse 280+. Leqephe lena le akaretsa hooks tse sebelisoang hangata ka mehlala e sebetsang. Bakeng sa referense e feletseng e iketselitsoeng ka bo eona, sheba maqephe a mang karolong ena.
 

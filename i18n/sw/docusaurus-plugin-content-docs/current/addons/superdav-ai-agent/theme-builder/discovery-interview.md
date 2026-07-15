@@ -3,7 +3,7 @@ title: Mahojiano ya Kugundua
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Mahojiano ya Uchunguzi {#discovery-interview}
+# Mahojiano ya Uchunguzi
 
 **Mahojiano ya Uchunguzi** ndiyo hatua ya kwanza katika mchakato wa kubuni wa Theme Builder. Inakusanya habari kuhusu tovuti yako, biashara yako, na mapendeleo yako ya ubunifu ili kuunda mandhari (theme) yanayobadilishwa kulingana na mahitaji yako.
 

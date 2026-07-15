@@ -3,7 +3,7 @@ title: 儀表板概覽
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# 控制台總覽 {#dashboard-overview}
+# 控制台總覽
 
 Ultimate Multisite 在 Ultimate Multisite 選單下有專屬的**控制台**，同時也在網站網路控制台中新增了小工具。本文將介紹這兩個地方的功能。
 

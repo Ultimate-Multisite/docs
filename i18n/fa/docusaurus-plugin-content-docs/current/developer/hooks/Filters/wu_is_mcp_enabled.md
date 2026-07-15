@@ -4,7 +4,7 @@ title: فیلتر - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filter: wu_is_mcp_enabled
 
 به توسعه‌دهندگان پلاگین اجازه می‌دهد که وضعیت مشخصی را برای آداپتور MCP تعیین کنند.
 

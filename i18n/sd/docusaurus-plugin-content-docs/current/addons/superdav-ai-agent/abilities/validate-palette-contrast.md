@@ -3,7 +3,7 @@ title: پيليٽ جي ڪنٽراسٽ جي تصديق ڪريو
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# پيليٽ ڪنٽراسٽ جي تصديق ڪريو {#validate-palette-contrast}
+# پيليٽ ڪنٽراسٽ جي تصديق ڪريو
 
 **پيليٽ ڪنٽراسٽ جي تصديق ڪريو** قابليت توهان جي ڊيزائن پيليٽ ۾ رنگن جي جوڙن کي توهان جي theme تي لاڳو ڪرڻ کان اڳ WCAG (Web Content Accessibility Guidelines) جي مطابقت لاءِ جانچي ٿي.
 

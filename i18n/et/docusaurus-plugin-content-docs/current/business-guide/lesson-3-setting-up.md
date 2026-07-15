@@ -3,7 +3,7 @@ title: 'Õppetund 3: Võrgu seadistamine'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Õppetund 3: Oma võrgustiku seadistamine {#lesson-3-setting-up-your-network}
+# Õppetund 3: Oma võrgustiku seadistamine
 
 Aeg ehitada. Selles õppetunnis installid Ultimate Multisite ja seadistad FitSite võrgustiku aluse. Iga siinne otsus tehakse fitnessinišši silmas pidades.
 

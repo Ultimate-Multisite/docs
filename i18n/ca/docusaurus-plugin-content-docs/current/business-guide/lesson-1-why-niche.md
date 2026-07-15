@@ -3,7 +3,7 @@ title: 'Lliçó 1: Per què el Niche guanya'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lliçó 1: Per què el nich és la clau {#lesson-1-why-niche-wins}
+# Lliçó 1: Per què el nich és la clau
 
 Abans de tocar qualsevol programari, has de comprendre per què construir per un públic específic és la decisió més important que feràs.
 

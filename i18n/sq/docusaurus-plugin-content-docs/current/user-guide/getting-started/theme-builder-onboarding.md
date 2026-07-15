@@ -3,7 +3,7 @@ title: Fluksi i onboarding-it për Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Proces i Udhëtimi në Theme Builder {#theme-builder-onboarding-flow}
+# Proces i Udhëtimi në Theme Builder
 
 Superdav AI Agent v1.12.0 prezanton një **proces udhëtimi të themeluar për Theme Builder** që ju ndihmon të krijoni një temë bloku të personalizuar gjatë konfigurimit fillestar. Kjo zëvendëson modin e mëparshëm Site Builder me një qasje më fleksibël dhe mbështetur nga agenti.
 

@@ -3,7 +3,7 @@ title: Förmågevisibilitet
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Synlighet för förmågor (Ability Visibility) {#ability-visibility}
+# Synlighet för förmågor (Ability Visibility)
 
 Superdav AI Agent v1.12.0 introducerar kontrollerna **Synlighet för förmågor** (Ability Visibility), som styr vilka ytor som exponerar varje förmåga. Detta gör det möjligt för administratörer att finjustera vilka agentkapaciteter som är tillgängliga via REST API:er, MCP-servrar, WooCommerce-integrationer och andra gränssnitt.
 

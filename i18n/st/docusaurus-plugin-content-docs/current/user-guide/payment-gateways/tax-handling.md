@@ -3,7 +3,7 @@ title: Tsamaiso ea Lekhetho
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tsamaiso ya Lekgetho {#tax-handling}
+# Tsamaiso ya Lekgetho
 
 Ultimate Multisite e na le mojule wa pokello ya lekgetho o hahilweng ka hara plugin ya rona ya mantlha, kahoo haeba o hloka ho bokella makgetho a thekiso mererong, diphuthelwaneng le ditshebeletsong tsa hao, o ka etsa jwalo ha bonolo ntle le ho kenya add-ons efe kapa efe.
 

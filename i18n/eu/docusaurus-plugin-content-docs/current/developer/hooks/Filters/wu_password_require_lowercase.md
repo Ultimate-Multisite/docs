@@ -4,7 +4,7 @@ title: Iragazkia - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Iragazkia: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Iragazkia: wu_password_require_lowercase
 
 Pasahitzetan letra xeheak eskatu behar diren ala ez iragazi.
 

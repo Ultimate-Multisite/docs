@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# سۈزگۈچ: wu_post_count {#filter-wupostcount}
+# سۈزگۈچ: wu_post_count
 
 قىستۇرما ئاچقۇچىلارنىڭ سان ئومۇمىي مىقدارىنى ئۆزگەرتىشىگە يول قويىدۇ
 

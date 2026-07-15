@@ -3,7 +3,7 @@ title: PayPal-i seadistamine
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal-portaal konfiguratsioon (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal-portaal konfiguratsioon (v2)
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 

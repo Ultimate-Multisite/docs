@@ -4,7 +4,7 @@ title: Sefa - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Sefa: wu_username_from_email {#filter-wuusernamefromemail}
+# Sefa: wu_username_from_email
 
 Sefa zita remushandisi remutengi mutsva.
 

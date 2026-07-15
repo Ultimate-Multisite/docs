@@ -3,7 +3,7 @@ title: Арзамак коддорун түзүү
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Скидка коддорун создать (v2) {#creating-discount-codes-v2}
+# Скидка коддорун создать (v2)
 
 _**МААМАРЫ КӨРҮНҮҮ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү.**_
 

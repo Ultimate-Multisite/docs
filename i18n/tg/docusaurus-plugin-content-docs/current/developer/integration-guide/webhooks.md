@@ -3,7 +3,7 @@ title: Коркарди Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Коркарди webhook {#webhook-handling}
+# Коркарди webhook
 
 Нуқтаҳои ниҳоии webhook-и фармоишӣ эҷод кунед, то рӯйдодҳоро аз хидматҳои беруна қабул карда, додаҳоро бо Ultimate Multisite ҳамоҳанг созед.
 

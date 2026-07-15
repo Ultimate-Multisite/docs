@@ -3,7 +3,7 @@ title: Uppgötvunarviðtal
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Uppgötvunarviðtal {#discovery-interview}
+# Uppgötvunarviðtal
 
 **Uppgötvunarviðtalið** er fyrsta skrefið í hönnunarferli Theme Builder. Það safnar upplýsingum um vefinn þinn, fyrirtæki og hönnunaróskir til að búa til persónusniðið þema.
 

@@ -3,7 +3,7 @@ title: સેટઅપ અને પ્રદાતા ગોઠવણી
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: સેટઅપ અને પ્રદાતા રૂપરેખાંકન {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: સેટઅપ અને પ્રદાતા રૂપરેખાંકન
 
 Domain Seller addon એક માર્ગદર્શિત સેટઅપ વિઝાર્ડ સાથે આવે છે, જે તમને દરેક જરૂરી પગલામાંથી પસાર કરે છે. આ પાનું વિઝાર્ડ પ્રવાહ અને પછી પ્રદાતાઓને કેવી રીતે રૂપરેખાંકિત અથવા ફરીથી રૂપરેખાંકિત કરવા તે આવરી લે છે.
 

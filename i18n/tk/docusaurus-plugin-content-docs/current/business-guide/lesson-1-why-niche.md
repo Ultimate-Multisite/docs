@@ -3,7 +3,7 @@ title: 'Sapak 1: Nişa näme üçin üstün çykýar'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Sapak 1: Näme üçin Niche ýeňýär {#lesson-1-why-niche-wins}
+# Sapak 1: Näme üçin Niche ýeňýär
 
 Islendik software-a degmezden öň, belli bir auditoriýa üçin gurmagyň näme üçin siziň berjek iň möhüm kararyňyzdygyna düşünmeli.
 

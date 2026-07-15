@@ -4,7 +4,7 @@ title: Զտիչ - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Զտիչ: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Զտիչ: wu_post_count_statuses
 
 Թույլ է տալիս plugin մշակողներին փոխել, թե որ գրառման կարգավիճակը պետք է հաշվվի։ Լռելյայն հաշվվում են հրապարակված և մասնավոր գրառումները
 

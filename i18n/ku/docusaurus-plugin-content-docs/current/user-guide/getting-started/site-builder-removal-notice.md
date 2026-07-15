@@ -3,7 +3,7 @@ title: ئامۆژاری لە بەڕێوەبردنی شوێنەکە (Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# یادداشت درباره حذف حالت سازنده سایت (Site Builder Mode) {#site-builder-mode-removal-notice}
+# یادداشت درباره حذف حالت سازنده سایت (Site Builder Mode)
 
 **حالت Site Builder در نسخه Superdav AI Agent v1.12.0 حذف شده است.** اگر از حالت Site Builder استفاده می‌کردید، باید برای ساخت قالب و راه‌اندازی سایت به **Setup Assistant agent** منتقل شوید.
 

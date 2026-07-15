@@ -3,7 +3,7 @@ title: የእርዳታ ማግኘት እንዴት ይቻላል
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# እንዴት እርዳታ ማግኘት ይቻላል {#how-to-get-help}
+# እንዴት እርዳታ ማግኘት ይቻላል
 
 ትክክለኛ የ라이ሰንስ ቁልፍ (License key) አግኝተዋል፣ እናም Ultimate Multisite ሲሰሩ ሊያጋጥሙዎ የሚችሉ ችግሮችን ለመፍታት የቡድናችንን ድጋፍ ማግኘት ይችላሉ።
 

@@ -3,7 +3,7 @@ title: Mbiri ya zosintha ya GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Mbiri ya Zosintha za GoCardless {#gocardless-changelog}
+# Mbiri ya Zosintha za GoCardless
 
 Mtundu: 1.0.3 - Wotulutsidwa pa 2026-05-05
 * Kukonza: masite omwe ali pending opanda mwini tsopano amachotsedwa pamene umembala wa GoCardless waletsedwa uli mu pending kapena on-hold state

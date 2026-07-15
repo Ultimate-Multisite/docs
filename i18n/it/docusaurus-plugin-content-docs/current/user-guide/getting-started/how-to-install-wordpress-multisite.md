@@ -3,7 +3,7 @@ title: Come installare WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Come installo WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Come installo WordPress Multisite?
 
 WordPress Multisite ti consente di avere una rete di siti su un'unica installazione. Questa è una funzionalità integrata, ma non è attiva per impostazione predefinita.
 
@@ -61,7 +61,7 @@ E questo codice, anch'esso fornito da WordPress, al tuo file _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# aggiungi una barra finale a /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# aggiungi una barra finale a /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

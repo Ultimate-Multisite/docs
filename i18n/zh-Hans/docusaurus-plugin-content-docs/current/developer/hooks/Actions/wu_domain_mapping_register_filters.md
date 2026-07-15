@@ -4,7 +4,7 @@ title: 动作 - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# 操作: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# 操作: wu_domain_mapping_register_filters
 
 一些插件会在映射激活之前保存 URL，或以不同方式构建 URL，而这些方式未包含在上述过滤器中。
 

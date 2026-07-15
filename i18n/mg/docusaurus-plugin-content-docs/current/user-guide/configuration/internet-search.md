@@ -3,7 +3,7 @@ title: Fikarohana an-tserasera
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Fikarohana (Internet Search) {#internet-search}
+# Fikarohana (Internet Search)
 
 Ny dikan'ny Gratis AI Agent v1.5.0 dia manampy anareo ny fahaizana **Internet Search**. Izany dia ahafahana mamerina fampahalalana vaovao avy amin'ny tambajotra maraina mandritra ny resaka miaraka amin'ny ason'ny AI rehefa misy fanontaniana mitaky fampahalalana vaovao na ivelan'ny fotoana nampianarana ilay modelina. Ity fahaizana ity dia miorina amin'ny [Brave Search API](https://brave.com/search/api/) na ny [Tavily API](https://tavily.com/).
 

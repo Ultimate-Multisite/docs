@@ -3,7 +3,7 @@ title: የመጀመሪያ የደንበኝነት ምዝገባ ምርትዎን መ
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# የመጀመሪያውን የደንበኝነት ምርትዎን መፍጠር (v2) {#creating-your-first-subscription-product-v2}
+# የመጀመሪያውን የደንበኝነት ምርትዎን መፍጠር (v2)
 
 _**አስፈላጊ ማሳሰቢያ፡ ይህ ጽሑፍ ለ Ultimate Multisite version 2.x ተጠቃሚዎች ብቻ ነው። version 1.x እየተጠቀሙ ከሆነ፣**_ **_**ይህንን ጽሑፍ ይመልከቱ**_**።
 

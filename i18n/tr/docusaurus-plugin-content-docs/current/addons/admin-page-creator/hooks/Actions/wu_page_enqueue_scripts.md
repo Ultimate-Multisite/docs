@@ -4,7 +4,7 @@ title: Eylem - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Aksiyon: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Aksiyon: wu_page_enqueue_scripts
 
 Buraya özel bir aksiyon eklenerek, gerektiğinde script ve stilleri yükleyebileceğimiz bir yer oluşturulur ve bunların sadece doğru sayfalarda yüklendiğinden emin olunur.
 

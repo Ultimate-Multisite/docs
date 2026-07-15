@@ -4,7 +4,7 @@ title: ਕ੍ਰਿਆ - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 ਪਲੱਗਇਨ ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਪੇਜ ਰਜਿਸਟਰ ਹੋਣ 'ਤੇ ਵਾਧੂ ਕੰਮ ਚਲਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 

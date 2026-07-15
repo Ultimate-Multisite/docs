@@ -3,7 +3,7 @@ title: Ρυθμίσεις Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Ρυθμίσεις {#gratis-ai-agent-settings}
+# Gratis AI Agent Ρυθμίσεις
 
 Η οθόνη **Settings → Advanced** στο Gratis AI Agent παρέχει ρύθμιση επιπέδου διαχειριστή για ενσωματώσεις backend. Αυτή η σελίδα τεκμηριώνει την προώθηση σχολίων, τα κλειδιά παρόχων αναζήτησης, τη ρύθμιση διαχειριζόμενης υπηρεσίας Superdav, τα στοιχεία ελέγχου Google Calendar, τις ρυθμίσεις SMS TextBee και τις σημάνσεις λειτουργιών σε όλο το δίκτυο.
 

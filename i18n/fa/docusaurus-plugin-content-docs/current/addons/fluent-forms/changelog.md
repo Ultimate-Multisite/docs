@@ -3,7 +3,7 @@ title: گزارش تغییرات Fluent Forms
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# تاریخچه تغییرات Fluent Forms {#fluent-forms-changelog}
+# تاریخچه تغییرات Fluent Forms
 
 نسخه: 2.0.1 - تاریخ انتشار: 2025-09-28
 

@@ -3,7 +3,7 @@ title: Phau Ntawv Qhia Kev Sib Txuas
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Phau Ntawv Qhia Kev Sib Txuas {#integration-guide}
+# Phau Ntawv Qhia Kev Sib Txuas
 
 Phau ntawv qhia no piav txog cov qauv kev sib txuas uas nquag siv nrog Ultimate Multisite, suav nrog kev txuas mus rau cov kev pabcuam sab nraud, tsim cov payment gateways kho raws xav tau, thiab tswj webhooks.
 

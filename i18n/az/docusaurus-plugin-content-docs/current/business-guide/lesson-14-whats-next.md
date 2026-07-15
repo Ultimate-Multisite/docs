@@ -3,7 +3,7 @@ title: 'Dərslik 14: Növbəti Nə Gəlir'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Dərs 14: Növbəti Addım Nədir {#lesson-14-what-comes-next}
+# Dərs 14: Növbəti Addım Nədir
 
 Sıfırdan bir niş sayt platforması yaratdınız. FitSite işləyir, fitnes studiyalarına xidmət göstərir və təkrar gəlir yaradır. Bu son dərs isə növbəti addımın nə olacağına baxır.
 

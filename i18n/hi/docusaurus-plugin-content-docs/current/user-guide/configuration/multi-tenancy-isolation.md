@@ -3,7 +3,7 @@ title: मल्टी-टेनेंसी अलगाव
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# मल्टी-टेनेंसी आइसोलेशन (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# मल्टी-टेनेंसी आइसोलेशन (Multi-Tenancy Isolation)
 
 Ultimate Multisite: मल्टी-टेनेंसी 1.2.0 अब संप्रभु टेनेंट्स (sovereign tenants) के लिए प्रति-सबसाइट डेटाबेस और फ़ाइल सिस्टम आइसोलेशन का समर्थन करता है। यह नेटवर्क-स्तरीय प्रावधान, बिलिंग और प्रशासन को बनाए रखते हुए टेनेंट डेटा को अलग रखता है।
 

@@ -3,7 +3,7 @@ title: WPMU DEV ଇଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ইন্টিগ্রেশন {#wpmu-dev-integration}
+# WPMU DEV ইন্টিগ্রেশন
 
 ## ওভারভিউ {#overview}
 WPMU DEV হলো একটি সম্পূর্ণ ওয়ার্ডপ্রেস প্ল্যাটফর্ম যা ওয়ার্ডপ্রেস সাইটগুলোর জন্য হোস্টিং, প্লাগইন এবং পরিষেবা প্রদান করে। এই ইন্টিগ্রেশনটি Ultimate Multisite এবং WPMU DEV হোস্টিংয়ের মধ্যে স্বয়ংক্রিয় ডোমেইন সিঙ্কিং এবং SSL সার্টিফিকেট পরিচালনার সুবিধা দেয়।

@@ -4,7 +4,7 @@ title: 'Mi dispiace, ma non ho il contenuto del file da tradurre. Potresti forni
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filtro: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filtro: mu-migration/all_posts/default_args
 
 Filtra gli argomenti predefiniti per la query dei post nel metodo all_posts.
 

@@ -4,7 +4,7 @@ title: Гамәл - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Гамәл: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Гамәл: wp_ultimo_vat_activation
 
 Плагинның башка өлешләренә активлаштыру өчен үз тәртипләрен беркетергә мөмкинлек бирә
 

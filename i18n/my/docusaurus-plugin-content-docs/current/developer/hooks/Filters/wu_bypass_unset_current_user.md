@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filter: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filter: wu_bypass_unset_current_user
 
 Developer တွေအနေနဲ့ လက်ရှိအသုံးပြုနေတဲ့ user ကို ဖျက်ပစ်တဲ့ (unset) ကုတ်ကို ကျော်လွန်ခွင့်ပြုပါတယ်။
 

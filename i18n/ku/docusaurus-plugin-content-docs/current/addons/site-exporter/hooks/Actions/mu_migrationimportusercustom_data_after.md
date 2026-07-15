@@ -4,7 +4,7 @@ title: Kiryar - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Çalakî: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
+# Çalakî: mu_migration/import/user/custom_data_after
 
 Piştî derxistina daneyên xwerû yên bikarhêner tê xebitandin.
 

@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 Stripe സബ്‌സ്‌ക്രിപ്‌ഷൻ ഡാറ്റ ഫിൽട്ടർ ചെയ്യാൻ ഉപയോഗിക്കുന്നു. ഇതിലൂടെ success_url അല്ലെങ്കിൽ cancel_url എന്നിവ മാറ്റാൻ സാധിക്കും.
 

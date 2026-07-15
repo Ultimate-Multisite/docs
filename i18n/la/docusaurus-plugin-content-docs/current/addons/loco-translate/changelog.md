@@ -3,7 +3,7 @@ title: Loco Translate Commentarius mutationum
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate Index Mutationum {#loco-translate-changelog}
+# Loco Translate Index Mutationum
 
 ### 1.0.1 {#101}
 * Compatibilitas cum novissima versione Loco Translate emendata

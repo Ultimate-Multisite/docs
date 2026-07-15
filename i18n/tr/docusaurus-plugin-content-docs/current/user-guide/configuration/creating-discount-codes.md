@@ -3,7 +3,7 @@ title: İndirim Kodları Oluşturma
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# İndirim Kodları Oluşturma (v2) {#creating-discount-codes-v2}
+# İndirim Kodları Oluşturma (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne aittir.**_
 

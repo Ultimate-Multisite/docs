@@ -3,7 +3,7 @@ title: Az első előfizetéses terméked létrehozása
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Az első előfizetéses termék létrehozása (v2) {#creating-your-first-subscription-product-v2}
+# Az első előfizetéses termék létrehozása (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk csak az Ultimate Multisite 2.x verziót használóknak szól. Ha az 1.x verziót használod,**_ **_**lásd ezt a cikket**_**.
 

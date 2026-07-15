@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# Gnìomh: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# Gnìomh: wp_ultimo_ptm_page_edit_footer
 
 Leig le luchd-leasachaidh plugin sgriobtaichean a chur ri bonn na duilleige
 

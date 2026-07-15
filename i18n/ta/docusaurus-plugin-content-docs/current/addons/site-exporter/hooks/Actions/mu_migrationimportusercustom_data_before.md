@@ -4,7 +4,7 @@ title: Action - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Action: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Action: mu_migration/import/user/custom_data_before
 
 பயனர் தனிப்பயன் தரவை (custom user data) எக்ஸ்போர்ட் செய்வதற்கு முன் இது இயங்கும்.
 

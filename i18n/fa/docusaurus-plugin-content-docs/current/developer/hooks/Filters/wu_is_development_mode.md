@@ -4,7 +4,7 @@ title: فیلتر - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# فیلتر: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# فیلتر: wu_is_development_mode
 
 این فیلتر به توسعه‌دهندگان پلاگین اجازه می‌دهد تا تست‌های اضافی برای حالت توسعه (development mode) اضافه کنند.
 

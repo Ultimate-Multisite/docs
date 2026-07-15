@@ -4,7 +4,7 @@ title: 'Acción - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 2bdd062afe3dbfa7e50dc5162fba9b99
 ---
-# Acción: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
+# Acción: wu_page_\{$this->id\}_after_render
 
 Se dispara después de renderizar una página específica.
 

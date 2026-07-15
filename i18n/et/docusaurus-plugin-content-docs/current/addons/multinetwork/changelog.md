@@ -3,7 +3,7 @@ title: Mitme võrgu muudatuste logi
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Networki muudatuste logi {#multi-network-changelog}
+# Multi-Networki muudatuste logi
 
 ### 1.3.0 {#130}
 * Uus: võrgu malli eelvaataja — sirvi ja eelvaata võrgu malle reaalajas paneelil enne ostmist.

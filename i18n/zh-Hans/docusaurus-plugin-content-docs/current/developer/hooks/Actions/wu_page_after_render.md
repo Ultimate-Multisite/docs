@@ -4,7 +4,7 @@ title: 操作 - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# 动作: wu_page_after_render {#action-wupageafterrender}
+# 动作: wu_page_after_render
 
 允许插件开发者在我们打印页面后添加额外内容
 

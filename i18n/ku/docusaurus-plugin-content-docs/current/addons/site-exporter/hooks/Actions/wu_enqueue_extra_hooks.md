@@ -4,7 +4,7 @@ title: Kiryar - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Çalakî: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Çalakî: wu_enqueue_extra_hooks
 
 Destûrê dide pêşdebirên plugin ku hookên zêde lê zêde bikin.
 

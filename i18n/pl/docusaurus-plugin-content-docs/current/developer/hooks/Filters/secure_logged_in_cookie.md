@@ -4,7 +4,7 @@ title: Filtr - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtr: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Filtr: secure_logged_in_cookie
 
 Określa, czy plik cookie sesji zalogowania ma być wysyłany tylko przez HTTPS.
 

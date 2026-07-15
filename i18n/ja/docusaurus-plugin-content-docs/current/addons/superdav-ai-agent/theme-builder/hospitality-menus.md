@@ -3,7 +3,7 @@ title: ホスピタリティメニュー
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# ホスピタリティメニュー {#hospitality-menus}
+# ホスピタリティメニュー
 
 **ホスピタリティメニュー**機能を使用すると、Theme Builderで構造化されたフード＆ビバレッジメニューページを生成し、WordPressサイトに直接埋め込むことができます。
 

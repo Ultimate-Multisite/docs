@@ -4,7 +4,7 @@ title: តម្រង - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# តម្រង: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# តម្រង: wu_should_redirect_to_primary_domain
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍បញ្ឈប់ការបញ្ជូនបន្តមុន ដើម្បីការពារមិនឱ្យវាកើតឡើង។
 

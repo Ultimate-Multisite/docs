@@ -4,7 +4,7 @@ title: Aksyon - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Aksyon: update_network {#action-updatenetwork}
+# Aksyon: update_network
 
 Tumatakbo ito pagkatapos na ma-update ang isang umiiral na network.
 

@@ -3,7 +3,7 @@ title: 'Les 2: Kies jou nis'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Les 2: Kies Jou Nis {#lesson-2-picking-your-niche}
+# Les 2: Kies Jou Nis
 
 In Les 1 het ons vasgestel waarom 'n nis beter is as generiek. Nou moet jy jou eie nis kies. Hierdie les gee jou 'n raamwerk om 'n nis te vind en te valideer voordat jy tyd en moeite in die bou daarvan belê.
 

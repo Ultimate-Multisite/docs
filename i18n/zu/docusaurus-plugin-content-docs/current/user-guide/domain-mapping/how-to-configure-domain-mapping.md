@@ -3,7 +3,7 @@ title: Indlela Yokulungiselela Ukumataniswa Kwesizinda
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Indlela Yokumisa Ukumataniswa Kwe-domain (v2) {#how-to-configure-domain-mapping-v2}
+# Indlela Yokumisa Ukumataniswa Kwe-domain (v2)
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko sibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 

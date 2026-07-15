@@ -3,7 +3,7 @@ title: 'Pelajaran 14: Apa yang Selanjutnya'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Pelajaran 14: Apa Selanjutnya {#lesson-14-what-comes-next}
+# Pelajaran 14: Apa Selanjutnya
 
 Anda telah membangun platform situs khusus (niche) dari nol. FitSite sudah aktif, melayani studio kebugaran, dan menghasilkan pendapatan berulang. Pelajaran terakhir ini membahas langkah selanjutnya yang harus Anda ambil.
 

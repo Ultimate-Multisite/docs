@@ -4,7 +4,7 @@ title: Isenzo - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Intshukumo: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Intshukumo: wp_ultimo_affiliatewp_activation
 
 Vumela ezinye iindawo ze-plugin zincamathisele iinkqubo zazo zokuqalisa ukusebenza
 

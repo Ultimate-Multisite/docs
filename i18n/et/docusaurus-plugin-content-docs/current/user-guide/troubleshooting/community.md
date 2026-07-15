@@ -3,7 +3,7 @@ title: Kogukond
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kuidas liituda Ultimate Multisite kogukonna {#how-to-join-ultimate-multisite-community}
+# Kuidas liituda Ultimate Multisite kogukonna
 
 Ultimate Multisite Community on paigutine, kus sa jutustada teised Ultimate Multisite kasutajatega ja jagadate vähistusi, kogemusi ja palju muud. Ultimate Multisite Communityl olema jaoks külastage lehekülje https://community.ultimatemultisite.com/home.
 

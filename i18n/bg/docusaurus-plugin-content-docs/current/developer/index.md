@@ -3,7 +3,7 @@ title: Документация за разработчици
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Документация за разработчици {#developer-documentation}
+# Документация за разработчици
 
 Този гайд предоставя на разработчиците всичко необходимо за интегриране, разширяване или разработване на аддонове за Ultimate Multisite. Ultimate Multisite превръща WordPress Multisite мрежа в платформа за уебсайтове като услуга (Website-as-a-Service, WaaS).
 

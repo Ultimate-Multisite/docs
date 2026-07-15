@@ -3,7 +3,7 @@ title: Gutangiza gushyira mu bikorwa Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Gutanga Ultimate Multisite {#installing-ultimate-multisite}
+# Gutanga Ultimate Multisite
 
 :::note
 Iyi myigishirize ikwibutsa ko Ultimate Multisite yamaze gutangwa kandi ikoreshwa neza. Kugira ngo uzi uko ibigenza, reba iyi myigishirize [iyi](https://www.wpbeginner.com/glossary/multisite/) ya WP Beginner.

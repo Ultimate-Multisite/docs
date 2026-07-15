@@ -3,7 +3,7 @@ title: Captcha өзгерістер журналы
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha өзгерістер журналы {#captcha-changelog}
+# Captcha өзгерістер журналы
 
 Нұсқа: 1.5.0 - 2026-05-22 күні шығарылды
 * Жаңа: Қатаң тоқтататын сұрау жиілігін шектеуші — captcha-қорғалған беттердегі әрбір GET және POST сұрауын санайды (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) және HTTP 429 жауабын, `Retry-After` header-ын және кездейсоқ tarpit кідірісін (1–5 с, қатаң шегі 15 с) қайтарады.

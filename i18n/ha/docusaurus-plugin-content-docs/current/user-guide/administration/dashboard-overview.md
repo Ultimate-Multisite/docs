@@ -3,7 +3,7 @@ title: Bincike na Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# جھانکنے کا جائزہ (Dashboard Overview) {#dashboard-overview}
+# جھانکنے کا جائزہ (Dashboard Overview)
 
 Ultimate Multisite mein Ultimate Multisite menun ke andar ek khaas **Dashboard** hota hai, aur yeh Network Dashboard par bhi widgets jodta hai. Is article mein hum dono jagah kya dekhenge iske baare mein batayenge.
 

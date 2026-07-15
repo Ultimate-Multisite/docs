@@ -3,7 +3,7 @@ title: Integrazione CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integrazione CyberPanel {#cyberpanel-integration}
+# Integrazione CyberPanel
 
 Questa guida spiega come configurare l'integrazione Ultimate Multisite con CyberPanel in modo che i domini mappati nella tua rete vengano aggiunti (e rimossi) automaticamente come virtual host in CyberPanel, con la possibilità di provisioning auto-SSL tramite Let's Encrypt.
 

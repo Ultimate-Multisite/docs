@@ -3,7 +3,7 @@ title: An Cúram Dé Chuid Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Anailís an Déan Multisite {#multisite-setup-wizard}
+# Anailís an Déan Multisite
 
 Inaugúir Ultimate Multisite áit an t-aonach (built-in wizard) a bhfaidh sé athrú go WordPress Multisite network ar chuid dearsnach WordPress. Is é seo ag cur isteach an t-aonach a bheith agat, rud a bhíonn ag fáil amach le gníomhartha a dhéanamh ar `wp-config.php` nó ar chuid deimhneacha database.
 

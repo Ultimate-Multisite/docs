@@ -3,7 +3,7 @@ title: Tepo ea site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**NOTE: Le tsela le this article e fana Ultimate Multisite version 2.x. Ha u batla le version 1.x,**_ **tsama se tsela le this article.**_
 

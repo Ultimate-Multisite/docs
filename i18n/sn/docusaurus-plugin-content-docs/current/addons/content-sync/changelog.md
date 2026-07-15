@@ -3,7 +3,7 @@ title: Nhoroondo yeshanduko dzeKuwiriranisa Zvirimo
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Nhoroondo yeShanduko dzeContent Sync {#content-sync-changelog}
+# Nhoroondo yeShanduko dzeContent Sync
 
 ### Version 1.1.0 - Yakaburitswa musi wa2025-12-31 {#version-110---released-on-2025-12-31}
 * Zvitsva: Rutsigiro rwekuyananisa marudzi ese ezvinyorwa (zvinyorwa, mapeji, marudzi ezvinyorwa akagadzirwa)

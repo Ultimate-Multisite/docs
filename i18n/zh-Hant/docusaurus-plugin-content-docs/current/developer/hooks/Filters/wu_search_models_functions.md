@@ -4,7 +4,7 @@ title: Filter - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# 篩選器：wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# 篩選器：wu_search_models_functions
 
 允許外掛開發者新增更多搜尋模型函數。
 

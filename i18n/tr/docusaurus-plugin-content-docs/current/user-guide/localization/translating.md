@@ -3,7 +3,7 @@ title: Ultimate Multisite'ı Çevirme
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite'ı Çevirmek {#translating-ultimate-multisite}
+# Ultimate Multisite'ı Çevirmek
 
 Ultimate Multisite İngilizce olarak geliştirilmektedir, ancak eklenti tamamen çevrilebilir yapıdadır ve çeviri katkılarını memnuniyetle karşılıyoruz.
 

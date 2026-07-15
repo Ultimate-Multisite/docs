@@ -3,7 +3,7 @@ title: Talaplar
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Talapmalaraşlar {#ultimate-multisite-requirements}
+# Ultimate Multisite Talapmalaraşlar
 
 Ultimate Multisite-i satyn almadan önce kendinize sorabileceğiniz ilk şey, eklentimizi çalıştırmak için ne gereklilikler olduğu olabilir. Neyse ki, Ultimate Multisite-i çalıştırmak için sadece birkaç temel gereklilik var: bir **alan adı** , iyi bir **hosting provayderi** ve WordPress **Multisite** kurulumu. Bunlar hepsi yeterli!
 

@@ -4,7 +4,7 @@ title: Akcia - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Akcia: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Akcia: wu_domain_mapping_register_filters
 
 Niektoré pluginy uložia URL predtým, ako bolo mapovanie aktívne, alebo budú vytvárať URL iným spôsobom, ktorý nie je zahrnutý vo vyššie uvedených filtroch.
 

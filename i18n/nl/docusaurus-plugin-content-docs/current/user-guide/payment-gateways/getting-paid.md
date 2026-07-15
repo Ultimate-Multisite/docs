@@ -3,7 +3,7 @@ title: Betaald worden
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Betaald worden (v2) {#getting-paid-v2}
+# Betaald worden (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

@@ -3,7 +3,7 @@ title: Asetukset ja tarjoajan konfigurointi
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Asetus ja Tarjoajan Konfigurointi {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Asetus ja Tarjoajan Konfigurointi
 
 Domain Seller -lisäosa tulee mukana ohjeistavalla asennusoppaalla, joka ohjaa sinua läpi jokaisen tarvittavan vaiheen. Tämä sivu käsittelee oppaan virtaa sekä sitä, miten voit konfiguroida tai uudelleenkonfiguroida tarjoajia sen jälkeen.
 

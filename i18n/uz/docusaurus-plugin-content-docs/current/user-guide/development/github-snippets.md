@@ -3,7 +3,7 @@ title: GitHub qismlari
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ultimate Multisite qismlarini GitHub reposiyangizda qanday ishlatish haqida {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Ultimate Multisite qismlarini GitHub reposiyangizda qanday ishlatish haqida
 
 Ultimate Multisite foydalanuvchilari ko'pincha so'raydigan kod qismlari mavjud bo'lib, ular ro'yxatdan o'tish sahifalariga Google Analytics skriptini qo'shish yoki admin panelidan meta boxni yashirish kabi kichik funksionalliklarni qo'shishni xohlaydi.
 
@@ -19,7 +19,7 @@ Kodni qo'shish uchun sizda 2 ta usul bor:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Qismlarni temangizning functions.php fayliga qanday qo'shish kerak. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Qismlarni temangizning functions.php fayliga qanday qo'shish kerak.
 
   1. WordPress Network admin paneliga tizimga kirib, Themes > Theme Editor (pastdagi skrinshotni ko'ring).
 
@@ -29,7 +29,7 @@ Kodni qo'shish uchun sizda 2 ta usul bor:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Pluginlarni (mu-plugins) qanday yaratish {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Pluginlarni (mu-plugins) qanday yaratish
 
 WordPress'da sizga "Must-Use Plugins" yoki qisqacha nomi bilan "mu-plugins" deb ataladigan maxsus funksionallikni yuklash imkonini beruvchi xususiyat mavjud.
 

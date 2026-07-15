@@ -4,7 +4,7 @@ title: Sía - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Sía: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Sía: wu_domain_has_correct_dns
 
 Leyfir viðbótarhönnuðum að bæta við nýjum athugunum til að skilgreina niðurstöðurnar.
 

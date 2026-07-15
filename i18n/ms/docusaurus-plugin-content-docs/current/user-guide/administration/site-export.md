@@ -3,7 +3,7 @@ title: Pengeksport Tapak
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport Tapak {#site-export}
+# Eksport Tapak
 
 Halaman pentadbir **Eksport Tapak** membolehkan pentadbir rangkaian membungkus satu tapak, atau keseluruhan rangkaian, ke dalam arkib boleh dimuat turun untuk tujuan migrasi, sandaran, atau penyerahan kerja.
 

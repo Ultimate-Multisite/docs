@@ -3,7 +3,7 @@ title: Pagrindinio skelbimų supratimas
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard-o suprantandymas {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard-o suprantandymas
 
 Mažai požiūrėkime į dashboardą, prieš šiek tiek derinant daugiau naujų konfigūracijos jūsų Ultimate Multisite ir jos veikimo aspektų.
 

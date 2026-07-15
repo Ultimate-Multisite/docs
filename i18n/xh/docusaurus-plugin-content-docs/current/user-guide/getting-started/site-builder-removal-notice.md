@@ -3,7 +3,7 @@ title: Isaziso Sokususwa Kwemowudi Yomakhi Wesiza
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Isaziso sokususwa kweMowudi yoMakhi weSayithi {#site-builder-mode-removal-notice}
+# Isaziso sokususwa kweMowudi yoMakhi weSayithi
 
 **Imowudi yoMakhi weSayithi isusiwe kwi-Superdav AI Agent v1.12.0.** Ukuba ubusebenzisa imowudi yoMakhi weSayithi, kufuneka ufudukele kwi-**Setup Assistant agent** ukuze wenze umxholo kwaye usete isayithi.
 

@@ -3,7 +3,7 @@ title: AffiliateWP pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP keitimų žurnalas {#affiliatewp-changelog}
+# AffiliateWP keitimų žurnalas
 
 Versija: 2.0.1 - Išleista 2025-09-28
 

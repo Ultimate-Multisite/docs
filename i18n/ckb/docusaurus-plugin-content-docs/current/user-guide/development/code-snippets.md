@@ -3,7 +3,7 @@ title: پێکهاتەکانی کۆد
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets بۆ v2 {#code-snippets-for-v2}
+# Code Snippets بۆ v2
 
 بشێوەیە کلی، بەکارهێنانی code snippets بۆ **WordPress** ئەو کاران دەکرێت کە لەوانەیە پێویستیان بە پلاتینی بچووکێکی تایبەت هەبێت. ئەم code snippetsە لە یەکێک لە فایلەکانی ناوەکی WordPress یان Theme (بە گشتی فایلەکەی functions.phpی theme-ەکەت) دابنێیت، یان دەتوانیت وەک MU plugin بەکاربهێنیت.
 

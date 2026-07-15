@@ -3,7 +3,7 @@ title: Theme Builder ၏ စွမ်းရည်များ
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder စွမ်းဆောင်ရည်များ- ဘလော့ခ် ธีมများ အခြေခံတည်ဆောက်ခြင်းနှင့် အသက်သွင်းခြင်း {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder စွမ်းဆောင်ရည်များ- ဘလော့ခ် ธีมများ အခြေခံတည်ဆောက်ခြင်းနှင့် အသက်သွင်းခြင်း
 
 Superdav AI Agent v1.12.0 သည် စကားပြောဆိုမှု (chat interface) မှတစ်ဆင့် စိတ်ကြိုက် ဘလော့ခ် ธีมများကို ဖန်တီးပြီး အသုံးပြုနိုင်စေသည့် စွမ်းဆောင်ရည် (abilities) နှစ်ခုကို မိတ်ဆက်ပေးလိုက်ပါသည်။
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Akcija: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Akcija: wp_ultimo_vat_activation
 
 Omogućava drugim dijelovima plugin-a da dodaju svoje funkcije za aktivaciju
 

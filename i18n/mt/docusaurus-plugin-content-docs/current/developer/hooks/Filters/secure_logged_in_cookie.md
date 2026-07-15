@@ -4,7 +4,7 @@ title: Filtru - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtru: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Filtru: secure_logged_in_cookie
 
 Jiffiltra jekk il-cookie tal-utent li jkun logged in għandhiex tintbagħat biss fuq HTTPS.
 

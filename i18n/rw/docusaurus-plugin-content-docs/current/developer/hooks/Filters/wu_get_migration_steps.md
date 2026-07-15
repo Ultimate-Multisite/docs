@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Akayunguruzo: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Akayunguruzo: wu_get_migration_steps
 
 Emerera abatunganya porogaramu na add-ons kongeramo intambwe nshya zo kwimura
 

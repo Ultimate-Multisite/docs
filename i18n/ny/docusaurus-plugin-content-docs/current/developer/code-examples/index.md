@@ -3,7 +3,7 @@ title: Zitsanzo za Khodi Zapamwamba
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Zitsanzo Zapamwamba za Khodi {#advanced-code-examples}
+# Zitsanzo Zapamwamba za Khodi
 
 Zitsanzozi zikuwonetsa njira zapamwamba zophatikizira ndi Ultimate Multisite.
 

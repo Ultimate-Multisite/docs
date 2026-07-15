@@ -3,7 +3,7 @@ title: 'Leciono 14: Kio sekvas poste'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leciono 14: Kio Venas Poste {#lesson-14-what-comes-next}
+# Leciono 14: Kio Venas Poste
 
 Vi konstruis niĉan retejan platformon de nulo. FitSite estas publika, servas taŭgecajn studiojn, kaj generas ripetiĝantan enspezon. Ĉi tiu fina leciono rigardas kien iri de ĉi tie.
 

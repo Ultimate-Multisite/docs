@@ -4,7 +4,7 @@ title: অ্যাকশন - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# অ্যাকশন: wu_before_light_ajax {#action-wubeforelightajax}
+# অ্যাকশন: wu_before_light_ajax
 
 কিছু ক্ষেত্রে, অ্যাকশনগুলো সঠিকভাবে হ্যান্ডেল করার জন্য আমাদের অতিরিক্ত কার্যকারিতা লোড করার প্রয়োজন হতে পারে।
 

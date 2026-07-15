@@ -4,7 +4,7 @@ title: តម្រង - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filter: wu_is_development_mode
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍកម្មវិធីបន្ថែមបន្ថែមការសាកល្បងផ្សេងទៀតសម្រាប់របៀបអភិវឌ្ឍន៍។
 

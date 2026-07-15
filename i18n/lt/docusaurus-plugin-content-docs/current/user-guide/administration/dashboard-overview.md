@@ -3,7 +3,7 @@ title: Pagrindinio skelbimų peržiūra
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pagrindinis Vaizdo Matmenis {#dashboard-overview}
+# Pagrindinis Vaizdo Matmenis
 
 Ultimate Multisite turi özelą **Dashboard**, esantį Ultimate Multisite meniu, o taip pat pridėja widget'us prie Tūrinio Vaizdo Matmeninio (Network Dashboard). Šiame straipsnyje pateiksime, ką pamatysite abiejose vietoose.
 

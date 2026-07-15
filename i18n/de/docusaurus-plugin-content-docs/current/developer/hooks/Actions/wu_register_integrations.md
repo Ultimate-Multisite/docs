@@ -4,7 +4,7 @@ title: Aktion - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Aktion: wu_register_integrations {#action-wuregisterintegrations}
+# Aktion: wu_register_integrations
 
 Auslöst, damit Integrationen sich selbst registrieren können.
 

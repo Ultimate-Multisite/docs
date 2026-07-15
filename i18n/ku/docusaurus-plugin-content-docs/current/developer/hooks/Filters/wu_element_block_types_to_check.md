@@ -4,7 +4,7 @@ title: Fîltre - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Parzûn: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Parzûn: wu_element_block_types_to_check
 
 Dibe ku em paşê hewce bin blokên din lê zêde bikin.
 

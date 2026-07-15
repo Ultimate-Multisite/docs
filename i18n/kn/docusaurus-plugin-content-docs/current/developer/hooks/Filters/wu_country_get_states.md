@@ -4,7 +4,7 @@ title: Filter - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# ಫಿಲ್ಟರ್: wu_country_get_states {#filter-wucountrygetstates}
+# ಫಿಲ್ಟರ್: wu_country_get_states
 
 ಈ ದೇಶಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ರಾಜ್ಯಗಳ ಪಟ್ಟಿಯನ್ನು ಮರಳಿ ನೀಡುತ್ತದೆ.
 

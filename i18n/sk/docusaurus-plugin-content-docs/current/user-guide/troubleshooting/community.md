@@ -3,7 +3,7 @@ title: Spierka
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ako sačlán k Ultimátnej multisite komunity {#how-to-join-ultimate-multisite-community}
+# Ako sačlán k Ultimátnej multisite komunity
 
 Ultimátna multisite komunita je miesto, kde si môžete kontaktovať sa s inými používateľmi Ultimátnej multisite a zdieľať tipy, skúsenosti a viac. Na prístup do Ultimátnej multisite komunity prejdite na https://community.ultimatemultisite.com/home.
 

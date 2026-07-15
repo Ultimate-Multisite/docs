@@ -4,7 +4,7 @@ title: 動作 - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# 動作：wu_cart_setup {#action-wucartsetup}
+# 動作：wu_cart_setup
 
 允許開發人員對結帳物件進行額外的修改。
 

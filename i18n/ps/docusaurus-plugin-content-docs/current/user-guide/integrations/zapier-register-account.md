@@ -3,7 +3,7 @@ title: د طریقې له زپیر د اکاونټ ثبت کولو
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# رویداد: Zapier از طریق Google Sheets کے ذریعے اکاؤنٹ رجسٹر کرنا {#event-register-an-account-via-zapier}
+# رویداد: Zapier از طریق Google Sheets کے ذریعے اکاؤنٹ رجسٹر کرنا
 
 اس مضمون [Integrating Ultimate Multisite with Zapier](zapier.md) میں، ہم نے بات کی تھی کہ کیسے آپ Zapier کا استعمال ٹرگرز اور ایونٹس کی بنیاد پر Ultimate Multisite کے اندر مختلف کام کرنے کے لیے کر سکتے ہیں۔ اس مضمون میں، ہم دکھائیں گے کہ آپ تھرڈ پارٹی ایپلی کیشنز کو کیسے جوڑ سکتے ہیں۔ ہم ڈیٹا کے ذریعہ کے طور پر Google Sheets کا استعمال کریں گے اور معلومات کو Ultimate Multisite کو بھیجیں تاکہ اکاؤنٹ رجسٹر ہو سکے۔
 

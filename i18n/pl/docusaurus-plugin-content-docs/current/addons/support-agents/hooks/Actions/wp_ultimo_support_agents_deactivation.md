@@ -4,7 +4,7 @@ title: Action - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Akcja: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Akcja: wp_ultimo_support_agents_deactivation
 
 Pozwala innym częściom wtyczki podłączyć swoje procedury wywoływane podczas dezaktywacji.
 

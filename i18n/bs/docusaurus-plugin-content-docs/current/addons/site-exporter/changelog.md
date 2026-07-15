@@ -3,7 +3,7 @@ title: Protokolje o promjenama Site Exporter-a
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Dnevnik promjena Site Exporter-a {#site-exporter-changelog}
+# Dnevnik promjena Site Exporter-a
 
 Version: 1.0.6 - Released on 2026-05-11
 * Novo: Izvoz lokacije sada pakuje samostalno pokretljivi index.php, tako da se ZIP može instalirati na novom hostingu bez zasebnog instaliranja plugin-a.

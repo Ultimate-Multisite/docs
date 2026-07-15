@@ -3,7 +3,7 @@ title: Konstruu niĉan retejan komercon
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Konstruu niĉan retejan komercon per Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Konstruu niĉan retejan komercon per Ultimate Multisite
 
 Plej multaj homoj, kiuj provas vendi retejojn, konkuras pri prezo kontraŭ Wix, Squarespace, kaj miloj da sendependaj laboristoj. Ili perdas. Tiuj, kiuj venkas, elektas specifan publikon, konstruas solvon adaptitan al tiu publiko, kaj postulas pagon por la valoro, kiun ili liveras.
 

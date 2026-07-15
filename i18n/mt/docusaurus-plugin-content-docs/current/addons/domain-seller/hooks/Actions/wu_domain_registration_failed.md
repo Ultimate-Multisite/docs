@@ -4,7 +4,7 @@ title: Azzjoni - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Azzjoni: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Azzjoni: wu_domain_registration_failed
 
 Tiskatta wara li tentattiv ta' reġistrazzjoni ta' domain ifalli.
 

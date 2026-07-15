@@ -3,7 +3,7 @@ title: 'Akoranga 6: Te Wheako Rēhitatanga'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Akoranga 6: Te Wheako Rēhita {#lesson-6-the-signup-experience}
+# Akoranga 6: Te Wheako Rēhita
 
 Ko te rere utu te wāhi ka huri te hiahia hei moni whiwhi. Ka ngaro ngā kiritaki i tētahi tukanga rēhita rangirua, whānui rānei. Ka huri mai ngā kiritaki i tētahi rere e hāngai ana ki te wāhanga mākete, e kōrero ana i tō rātou reo, ā, e māmā ana te whakamahi.
 

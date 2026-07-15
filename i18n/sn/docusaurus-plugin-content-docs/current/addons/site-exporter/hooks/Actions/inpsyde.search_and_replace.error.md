@@ -4,7 +4,7 @@ title: Chiito - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Chiito: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Chiito: inpsyde.search_and_replace.error
 
 Inofuratira kuti hook iyi haina kunyoreswa neWP Ultimo.
 

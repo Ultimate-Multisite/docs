@@ -3,7 +3,7 @@ title: Réigiú Endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Anail API register de Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Anail API register de Ultimate Multisite
 
 Iar seo, fará tú a bhealach a bhfaidh tú a úsáid an endpoint /register API de Ultimate Multisite chun an cur chuig an tús (onboarding process) ar fáil do chuid oibre ina ngrú agus conairt é go dtí Zapier.
 

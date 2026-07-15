@@ -4,7 +4,7 @@ title: Үйлдэл - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Үйлдэл: wu_page_after_render {#action-wupageafterrender}
+# Үйлдэл: wu_page_after_render
 
 Бид хуудсыг хэвлэсний дараа plugin хөгжүүлэгчдэд нэмэлт агуулга нэмэх боломж олгоно
 

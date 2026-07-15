@@ -3,7 +3,7 @@ title: Gestion des sites
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestion des sites {#managing-sites}
+# Gestion des sites
 
 Les sites (ou sous-sites) constituent le cœur de votre activité WaaS. Ultimate Multisite propose 3 types de sites :
 

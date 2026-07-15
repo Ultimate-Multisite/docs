@@ -4,7 +4,7 @@ title: පෙරහන - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# පෙරහන: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# පෙරහන: wu_checkout_validation_aliases
 
 ආකෘති වලංගුකාරකයේ අභිරුචි alias එක් කිරීමට ප්ලගින සංවර්ධකයන්ට ඉඩ දෙන්න.
 

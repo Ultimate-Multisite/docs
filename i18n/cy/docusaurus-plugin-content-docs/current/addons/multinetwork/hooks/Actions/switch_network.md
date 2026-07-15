@@ -4,7 +4,7 @@ title: Gweithred - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Gweithred: switch_network {#action-switchnetwork}
+# Gweithred: switch_network
 
 Yn tanio pan gaiff cyd-destun presennol y rhwydwaith ei newid.
 

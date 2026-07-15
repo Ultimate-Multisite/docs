@@ -3,7 +3,7 @@ title: Pānga Whakawātea me DNS o te Wheneaha
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Whakamana Whakamahi me Kaha DNS o te Whene {#checkout-field-and-customer-dns-management}
+# Whakamana Whakamahi me Kaha DNS o te Whene
 
 ## Te pāngere Domain Selection checkout field {#the-domain-selection-checkout-field}
 

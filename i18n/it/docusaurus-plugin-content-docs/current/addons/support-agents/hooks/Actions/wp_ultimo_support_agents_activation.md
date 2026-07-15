@@ -4,7 +4,7 @@ title: Azione - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Azione: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Azione: wp_ultimo_support_agents_activation
 
 Permetti ad altre parti del plugin di allegare le loro routine per l'attivazione
 

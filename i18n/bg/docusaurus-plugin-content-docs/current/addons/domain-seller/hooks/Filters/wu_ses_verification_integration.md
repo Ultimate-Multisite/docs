@@ -4,7 +4,7 @@ title: Филтър - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Филтър: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Филтър: wu_ses_verification_integration
 
 Филтър: Позволява на друг код да предостави обекта за интеграция с SES.
 

@@ -3,7 +3,7 @@ title: Ukuqalisa Ngokuthuthukiswa Kwezengezo
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Ukuthuthukiswa kwe-Addon {#addon-development}
+# Ukuthuthukiswa kwe-Addon
 
 ## Isakhiwo se-Addon {#addon-structure}
 

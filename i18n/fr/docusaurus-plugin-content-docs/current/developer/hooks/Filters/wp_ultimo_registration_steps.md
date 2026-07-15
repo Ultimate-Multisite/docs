@@ -4,7 +4,7 @@ title: Filtre - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# Filtre: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# Filtre: wp_ultimo_registration_steps
 
 Ajoutez des étapes supplémentaires via des filtres
 

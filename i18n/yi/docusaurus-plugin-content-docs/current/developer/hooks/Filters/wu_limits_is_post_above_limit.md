@@ -4,7 +4,7 @@ title: פֿילטער - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# פילטער: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# פילטער: wu_limits_is_post_above_limit
 
 קאָנטראָלירט צי אַ געגעבן פּאָסט־טיפּ איז ערלויבט אויף דעם פּלאַן. ערלויבט plugin־אַנטוויקלער צו פֿילטערן דעם צוריקקער־ווערט
 

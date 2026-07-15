@@ -3,7 +3,7 @@ title: Ukuhlanganiswa Kobuqashi Obuningi
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Ukuhlanganiswa kwe-Multi-Tenancy {#multi-tenancy-integration}
+# Ukuhlanganiswa kwe-Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ishintsha izindawo eziningana zokuxhumana kokuhlanganiswa kwabaqashi abazimele, ukuqinisekiswa kokufuduka, kanye nokuzenzakalela komjikelezo wokuphila womqashi.
 

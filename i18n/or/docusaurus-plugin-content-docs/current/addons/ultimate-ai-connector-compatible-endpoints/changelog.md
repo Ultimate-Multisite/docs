@@ -3,7 +3,7 @@ title: ସୁସଙ୍ଗତ Endpoints ପାଇଁ Ultimate AI Connector ପର
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# ସୁସଙ୍ଗତ ଏଣ୍ଡପଏଣ୍ଟ ପାଇଁ Ultimate AI Connector ପରିବର୍ତ୍ତନ ସୂଚୀ {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# ସୁସଙ୍ଗତ ଏଣ୍ଡପଏଣ୍ଟ ପାଇଁ Ultimate AI Connector ପରିବର୍ତ୍ତନ ସୂଚୀ
 
 ## ସଂସ୍କରଣ 2.0.0 — 2026-04-24 ରେ ମୁକ୍ତିଲାଭ {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: د تھیم بیلر توانایي
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# قابلیت‌های Theme Builder: ساخت و فعال‌سازی Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# قابلیت‌های Theme Builder: ساخت و فعال‌سازی Block Themes
 
 Superdav AI Agent v1.12.0 دو قابلیت قدرتمند را معرفی می‌کند که به شما اجازه می‌دهد مستقیماً از رابط چت با ساخت و استقرار قالب‌های بلاک سفارشی (custom block themes) استفاده کنید.
 

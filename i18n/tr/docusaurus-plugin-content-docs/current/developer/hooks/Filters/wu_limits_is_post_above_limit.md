@@ -4,7 +4,7 @@ title: Filtre - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filtre: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filtre: wu_limits_is_post_above_limit
 
 Belirtilen bir gönderi türünün bu planda izin verilip verilmediğini kontrol eder. Plugin geliştiricilerinin dönüş değerini filtrelemesine olanak tanır.
 

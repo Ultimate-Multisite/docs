@@ -3,7 +3,7 @@ title: Cov Agent uas twb muaj nrog
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Cov Agent Uas Muaj Los Nrog {#built-in-agents}
+# Cov Agent Uas Muaj Los Nrog
 
 Gratis AI Agent v1.9.0 los nrog tsib tus agent uas muaj los nrog, txhua tus twb npaj ua ntej nrog ib pawg cuab yeej uas tsom rau ib yam haujlwm, ib qho system prompt uas kho kom haum, thiab cov lus qhia pib uas phim cov haujlwm nquag ua hauv thaj chaw ntawd. Thaum hloov ntawm ib tus agent mus rau lwm tus, nws hloov yam uas tus assistant ua tau thiab txoj kev nws teb — yam tsis tas koj teeb tsa dab tsi li. Superdav AI Agent v1.18.0 tuaj yeem ntxiv cov cuab yeej uas paub txog schedule, cov reminder records, approval gates, thiab SMS notifications rau cov workflow no thaum cov integrations uas cuam tshuam twb teeb tsa lawm.
 

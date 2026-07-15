@@ -3,9 +3,9 @@ title: Goşmaça şablony
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Goşmaça şablony {#addon-template}
+# Goşmaça şablony
 
-{{ADDON_DESCRIPTION}}
+Goşmaça şablony — Ultimate Multisite.
 
 ## Talaplar {#requirements}
 

@@ -3,7 +3,7 @@ title: Alan Adı Satıcısı Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Değişiklik Günlüğü {#domain-seller-changelog}
+# Domain Seller Değişiklik Günlüğü
 
 Sürüm 1.3.0 - 2026-06-02 tarihinde yayınlandı
 - Yeni: HostAfrica reseller bakiyesi çok düştüğünde network-admin uyarısı eklendi

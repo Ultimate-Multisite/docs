@@ -3,7 +3,7 @@ title: Registro de cambios de GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Registro de cambios de GoCardless {#gocardless-changelog}
+# Registro de cambios de GoCardless
 
 Versión: 1.0.3 - Publicada el 2026-05-05
 * Corrección: Los sitios pendientes huérfanos ahora se limpian cuando una membresía de GoCardless se cancela mientras está en estado pendiente o en espera

@@ -3,7 +3,7 @@ title: Oblikovalska smer
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Smer oblikovanja {#design-direction}
+# Smer oblikovanja
 
 Korak **Smer oblikovanja** vam omogoča, da pregledate, izpopolnite in dokončate vizualno zasnovo svoje teme, preden Theme Builder ustvari celotno temo.
 

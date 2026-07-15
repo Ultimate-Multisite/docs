@@ -4,7 +4,7 @@ title: Omume - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Omume: wu_sso_loaded {#action-wussoloaded}
+# Omume: wu_sso_loaded
 
 Kwe ka ndị mmepe ngwa mgbakwunye tinye hooks ndị ọzọ, ma ọ bụrụ na achọrọ.
 

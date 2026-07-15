@@ -3,7 +3,7 @@ title: Diari de canvis de Ultimate AI Connector per Endpoints Compatibles
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Diari de canvis d'Ultimate AI Connector per a Endpoints Compatibles {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Diari de canvis d'Ultimate AI Connector per a Endpoints Compatibles
 
 ## Versió 2.0.0 — Publicada el 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: Aragtida Dashboard-ka
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Aragtida ee Dashboard-ka {#dashboard-overview}
+# Aragtida ee Dashboard-ka
 
 Ultimate Multisite wuxuu leeyahay **Dashboard** gaar ah oo ku jira menu-ga Ultimate Multisite, sidoo kale wuxuu ku darayaa widgets (abuurinro) Network Dashboard-ka. Maqaalkan wuxuu ka hadlayaa waxa aad arki doontid labada meelbaas.
 

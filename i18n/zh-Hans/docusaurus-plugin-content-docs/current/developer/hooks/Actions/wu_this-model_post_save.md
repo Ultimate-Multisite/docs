@@ -4,7 +4,7 @@ title: '动作 - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
+# Action: wu_\{$this->model\}_post_save
 
 在对象存储到数据库后触发。
 

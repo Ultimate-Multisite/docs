@@ -3,7 +3,7 @@ title: Opérations du locataire souverain
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Opérations des locataires souverains {#sovereign-tenant-operations}
+# Opérations des locataires souverains
 
 Ultimate Multisite : la version 1.2.0 ajoute des outils opérationnels pour les locataires souverains : des sous-sites qui fonctionnent avec leur propre base de données, racine de système de fichiers et contexte de routage, tout en restant visibles par l'administrateur réseau.
 

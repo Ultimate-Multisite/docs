@@ -3,7 +3,7 @@ title: V1-ден миграциялоо
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-денди миграциялоо {#migrating-from-v1}
+# V1-денди миграциялоо
 
 ## Ultimate Multisite эскизиси 1.x версиясынан 2.x версиясына өтүп кетти. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

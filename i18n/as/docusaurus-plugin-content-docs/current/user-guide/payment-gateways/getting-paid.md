@@ -3,7 +3,7 @@ title: পেমেণ্ট লাভ কৰা
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# পেমেণ্ট পোৱা (v2) {#getting-paid-v2}
+# পেমেণ্ট পোৱা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x-ৰ বিষয়ে।**_
 

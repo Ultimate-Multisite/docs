@@ -4,7 +4,7 @@ title: Isenzo - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Isenzo: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Isenzo: wu_captcha_before_field
 
 Siyasebenza ngaphambi kokuba indawo ye-captcha iboniswe.
 

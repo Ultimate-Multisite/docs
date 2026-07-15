@@ -3,7 +3,7 @@ title: Tok registracije
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Proces Registracije (v2) {#the-registration-flow-v2}
+# Proces Registracije (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 

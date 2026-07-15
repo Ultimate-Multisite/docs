@@ -3,7 +3,7 @@ title: Installatioun vun Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installatioun vun Ultimate Multisite {#installing-ultimate-multisite}
+# Installatioun vun Ultimate Multisite
 
 :::note
 Dës Enseignung setzt vir, datt Dir schonn WordPress Multisite installéiert an konfiguréiert hutt. Fir ze léieren wéi, kuckt d'Enseignung [hei](https://www.wpbeginner.com/glossary/multisite/) vun WP Beginner.

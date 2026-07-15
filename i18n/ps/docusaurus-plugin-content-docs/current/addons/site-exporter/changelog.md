@@ -3,7 +3,7 @@ title: د سایټ صادرونکي د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# د Site Exporter د بدلونونو لړلیک {#site-exporter-changelog}
+# د Site Exporter د بدلونونو لړلیک
 
 Version: 1.0.6 - په 2026-05-11 خپور شو
 * نوی: د site صادرات اوس یو ځان-پیلېدونکی index.php ورسره تړي، نو ZIP پر نوي کوربه د جلا plugin نصب پرته نصبېدای شي

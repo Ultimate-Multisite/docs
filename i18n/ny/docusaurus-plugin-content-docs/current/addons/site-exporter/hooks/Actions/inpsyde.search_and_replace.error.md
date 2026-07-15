@@ -4,7 +4,7 @@ title: Chochita - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Chochita: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Chochita: inpsyde.search_and_replace.error
 
 Imanyalanyaza; hook iyi sinalembetsedwe ndi WP Ultimo.
 

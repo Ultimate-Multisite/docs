@@ -4,7 +4,7 @@ title: Àlẹ̀mọ́ - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Àlẹmọ: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Àlẹmọ: wu_documentation_get_link
 
 Gba àwọn olùdàgbàsókè àfikún láàyè láti ṣe àlẹmọ àwọn ìjápọ̀ náà.
 

@@ -3,7 +3,7 @@ title: Mailchimp Cofnod newidiadau
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Cofnod Newidiadau Mailchimp {#mailchimp-changelog}
+# Cofnod Newidiadau Mailchimp
 
 Fersiwn: 1.1.1 - Rhyddhawyd ar 2025-09-28
 

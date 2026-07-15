@@ -3,7 +3,7 @@ title: ساخت کۆدەکانی کەمکردنەوە
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# دروستکردنی كۆدي تخفيض (v2) {#creating-discount-codes-v2}
+# دروستکردنی كۆدي تخفيض (v2)
 
 _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتینی 2.x.**_
 

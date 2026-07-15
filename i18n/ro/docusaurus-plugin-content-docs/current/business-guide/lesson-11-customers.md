@@ -3,7 +3,7 @@ title: 'Lecția 11: Găsirea clienților'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lecția 11: Găsirea Clienților {#lesson-11-finding-customers}
+# Lecția 11: Găsirea Clienților
 
 O platformă grozavă fără clienți nu e altceva decât un hobby. Această lecție acoperă cum să vă acopiați clienți într-o nișă verticală — strategii care funcționează în mod specific pentru că vă concentrați pe o singură industrie.
 

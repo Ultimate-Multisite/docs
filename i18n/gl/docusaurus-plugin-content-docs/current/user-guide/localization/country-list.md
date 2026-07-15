@@ -3,7 +3,7 @@ title: Lista de países
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Reordenar a lista de países do Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Reordenar a lista de países do Ultimate Multisite
 
 O menu suspenso para seleccionar un país está ordenado alfabéticamente com as variantes en inglés dos nomes dos países. Isto pode significar que, por vezes, o país da súa empresa e/ou a mayoría dos seus clientes pode estar escondido no meio dunha lista enorme de nomes de países.
 

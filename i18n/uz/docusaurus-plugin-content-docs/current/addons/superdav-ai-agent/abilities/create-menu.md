@@ -3,7 +3,7 @@ title: Menyu yaratish
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menyu yaratish {#create-menu}
+# Menyu yaratish
 
 **Menyu yaratish** qobiliyati sahifa sarlavhalaridan alohida bo‘lgan farqli navigatsiya yorliqlarini qo‘llab-quvvatlagan holda WordPress navigatsiya menyularini yaratadi.
 

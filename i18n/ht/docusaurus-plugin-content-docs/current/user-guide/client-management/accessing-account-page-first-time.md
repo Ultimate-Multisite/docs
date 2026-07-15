@@ -3,7 +3,7 @@ title: Jwenn aksè nan paj Kont la
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kòman mwen ka jwenn aksè nan paj kont mwen pou premye fwa? {#how-can-i-access-my-account-page-for-the-first-time}
+# Kòman mwen ka jwenn aksè nan paj kont mwen pou premye fwa?
 
 Bienvenue nan Ultimate Multisite!
 

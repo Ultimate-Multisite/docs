@@ -4,7 +4,7 @@ title: ფილტრი - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# ფილტრი: network_options_list {#filter-networkoptionslist}
+# ფილტრი: network_options_list
 
 ფილტრავს ქსელის პარამეტრების სიას, რომლებიც დამოკიდებულია ქსელის დომენსა და გზაზე.
 

@@ -4,7 +4,7 @@ title: Aksyon - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Aksyon: wu_before_light_ajax {#action-wubeforelightajax}
+# Aksyon: wu_before_light_ajax
 
 Sa pipila ka kaso, kinahanglan nato nga magkarga og dugang nga gahum aron pagdumala sa mga aksyon.
 

@@ -4,7 +4,7 @@ title: Toiminto - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Toiminto: wu_page_load {#action-wupageload}
+# Toiminto: wu_page_load
 
 Salli plugin-kehittäjien lisätä lisäkoukkuja sivuillemme.
 

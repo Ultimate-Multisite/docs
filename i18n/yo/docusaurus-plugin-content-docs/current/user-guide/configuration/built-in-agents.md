@@ -3,7 +3,7 @@ title: Àwọn Aṣoju tí a fi sínú rẹ
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Tí a Kọ Sínú Rẹ̀ {#built-in-agents}
+# Agents Tí a Kọ Sínú Rẹ̀
 
 Gratis AI Agent v1.9.0 wá pẹ̀lú agents márùn-ún tí a kọ sínú rẹ̀, ọkọọkan ni a ti ṣètò tẹ́lẹ̀ pẹ̀lú àkójọpọ̀ tools tó dojú kọ iṣẹ́ pàtó, system prompt tí a ṣe fún un, àti àwọn àbá ìbẹ̀rẹ̀ tí ó bá àwọn iṣẹ́ tó wọ́pọ̀ ní agbègbè yẹn mu. Yíyípadà láàárín agents máa ń yí ohun tí assistant lè ṣe àti bí ó ṣe ń dáhùn padà — láìsí ìṣètò kankan ní apá rẹ. Superdav AI Agent v1.18.0 lè fi tools tó mọ ìṣètò àkókò, àwọn àkọsílẹ̀ ìrántí, approval gates, àti àwọn ìfitónilétí SMS kún àwọn workflows wọ̀nyí nígbà tí a bá ti ṣètò àwọn integrations tó jẹ mọ́ wọn.
 

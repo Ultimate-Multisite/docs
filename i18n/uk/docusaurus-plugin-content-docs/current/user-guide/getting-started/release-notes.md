@@ -3,7 +3,7 @@ title: Примітки до випуску
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Примітки до випуску {#release-notes}
+# Примітки до випуску
 
 ## Версія 2.13.0 — випущено 2026-06-05 {#version-2130--released-on-2026-06-05}
 

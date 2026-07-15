@@ -4,7 +4,7 @@ title: Hereket - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Hereket: set_logged_in_cookie {#action-setloggedincookie}
+# Hereket: set_logged_in_cookie
 
 Ulgama girilen autentifikasiýa cookie-si goýulmazdan göni öň işledilýär.
 

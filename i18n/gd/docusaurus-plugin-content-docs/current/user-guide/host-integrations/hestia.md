@@ -3,7 +3,7 @@ title: Còmhlaidais Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Intighneachadh le Control Panel Hestia {#hestia-control-panel-integration}
+# Intighneachadh le Control Panel Hestia
 
 An tòiseachadh seo a sgriasgadh ri faic a bhith a' chlàradh an Ultimate Multisite Hestia, gu sònraichte, gu robh domain sinneachd (mapped domains) anns a ghràdh agad a tha a' chlàradh, a bheil iad a' tòiseachadh air a bhith a' bheachdaidhean Web Domain Aliases mar Web Domain Aliases.
 

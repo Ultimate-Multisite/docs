@@ -3,7 +3,7 @@ title: Ultimate Multisite অনুবাদ কৰি
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite অনুবাদ কৰা {#translating-ultimate-multisite}
+# Ultimate Multisite অনুবাদ কৰা
 
 Ultimate Multisite ইংৰাজীত বিকশিত কৰা হৈছে, কিন্তু এই plugin-টো সম্পূৰ্ণৰূপে অনুবাদ কৰিব পৰা যায় আৰু আমি অনুবাদৰ বৰঙণি স্বীকাৰ কৰোঁ।
 

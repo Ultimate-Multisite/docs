@@ -4,7 +4,7 @@ title: 필터 - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# 필터: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# 필터: wu_checkout_calculate_prorate_credits
 
 플러그인 개발자가 신용 금액을 조작할 수 있도록 허용합니다.
 

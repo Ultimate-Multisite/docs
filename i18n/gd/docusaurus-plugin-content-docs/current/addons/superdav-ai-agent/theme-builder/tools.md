@@ -3,7 +3,7 @@ title: Innealan agus Rèiteachadh
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Innealan agus Rèiteachadh {#tools-and-configuration}
+# Innealan agus Rèiteachadh
 
 Bidh Theme Builder a’ cleachdadh seata de dh’innealan gus anailis a dhèanamh air, dealbhadh, agus togail a dhèanamh air an làrach WordPress agad. Ann an tionndadh 1.16.0, **tha sd-ai-agent/site-scrape a-nis na inneal Ìre 1**, ga dhèanamh ri fhaighinn gu bunaiteach ann an Theme Builder. Tha Superdav AI Agent v1.18.0 cuideachd a’ toirt a-steach pacaid chompanach Adhartach a tha air a sgaoileadh air leth airson sruthan-obrach luchd-leasachaidh earbsach; chan eil na h-innealan sin nam pàirt den phrìomh phacaid WordPress.org agus feumar an stàladh is ùghdarrachadh air leth.
 

@@ -4,7 +4,7 @@ title: Aiki - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Aiki: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Aiki: wp_ultimo_host_providers_load
 
 Ba wa masu haɓakawa damar ƙara nasu haɗin host provider ta hanyar WordPress plugins.
 

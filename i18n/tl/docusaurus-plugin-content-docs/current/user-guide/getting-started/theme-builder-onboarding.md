@@ -3,7 +3,7 @@ title: Daloy ng Onboarding para sa Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Daloy ng Onboarding para sa Theme Builder {#theme-builder-onboarding-flow}
+# Daloy ng Onboarding para sa Theme Builder
 
 Ang Superdav AI Agent v1.12.0 ay nagpapakilala ng gabay na **Theme Builder onboarding flow** na tumutulong sa iyo na gumawa ng custom block theme habang nasa iyong unang setup pa lang. Binabago nito ang lumang Site Builder mode para maging mas flexible at may tulong ng agent.
 

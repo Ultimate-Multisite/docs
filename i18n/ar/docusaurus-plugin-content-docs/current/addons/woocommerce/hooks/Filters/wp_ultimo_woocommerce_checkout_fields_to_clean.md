@@ -4,7 +4,7 @@ title: مرشح - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# مرشح: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# مرشح: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 يسمح للمطورين بتصفية حقول عنوان الفاتورة الافتراضية في WooCommerce.
 

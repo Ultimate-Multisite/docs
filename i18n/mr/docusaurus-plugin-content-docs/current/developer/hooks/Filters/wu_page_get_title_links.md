@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 प्लगइन डेव्हलपर्सना आणि आम्हालाही आमच्या संपादन पृष्ठांवर (edit pages) कृती लिंक्स (action links) जोडण्याची परवानगी देण्यासाठी.
 

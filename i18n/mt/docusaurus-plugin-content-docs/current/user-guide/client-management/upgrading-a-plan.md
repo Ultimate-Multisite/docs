@@ -3,7 +3,7 @@ title: Upgrade ta Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Upgrade ta Plan (v2) {#upgrading-a-plan-v2}
+# Upgrade ta Plan (v2)
 
 _**NOTA IMPORTANTI: Dan dan l-artiklu huwa riferiti għall-Ultimate Multisite bizzjoni 2.x.**_
 

@@ -4,7 +4,7 @@ title: តម្រង - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# តម្រង: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# តម្រង: wu_membership_update_forms
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍បន្ថែម slug ទម្រង់ធ្វើបច្ចុប្បន្នភាពថ្មីៗ។
 

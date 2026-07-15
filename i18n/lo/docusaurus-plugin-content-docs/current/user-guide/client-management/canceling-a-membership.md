@@ -3,7 +3,7 @@ title: ການຍົກເລີກສະມາຊິກ
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# ການຍົກເລີກສະມາຊິກ (v2) {#canceling-a-membership-v2}
+# ການຍົກເລີກສະມາຊິກ (v2)
 
 _**ចំណាំສຳຄັນ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite version 2.x.**_
 

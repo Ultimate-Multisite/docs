@@ -3,7 +3,7 @@ title: Εγκατάσταση του Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Εγκατάσταση του Ultimate Multisite {#installing-ultimate-multisite}
+# Εγκατάσταση του Ultimate Multisite
 
 :::note
 Αυτό το εκπαιδευτικό πρόγραμμα υποθέτει ότι έχετε ήδη εγκαταστήσει και διαμορφώσει το WordPress Multisite. Για να μάθετε πώς, δείτε αυτό το [εκπαιδευτικό πρόγραμμα](https://www.wpbeginner.com/glossary/multisite/) από το WP Beginner.

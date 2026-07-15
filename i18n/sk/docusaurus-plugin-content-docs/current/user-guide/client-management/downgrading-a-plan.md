@@ -3,7 +3,7 @@ title: Dowolňovanie plánu
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Sníženie plánu (v2) {#downgrading-a-plan-v2}
+# Sníženie plánu (v2)
 
 _**DÔLEŽITÉ UPOZORNENIE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 

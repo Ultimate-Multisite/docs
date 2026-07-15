@@ -3,7 +3,7 @@ title: Журнал изменений Material WP
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Журнал изменений Material WP {#material-wp-changelog}
+# Журнал изменений Material WP
 
 Версия 1.1.15 - 01/26/2026
 * Улучшено: стиль и форматирование кода;

@@ -3,7 +3,7 @@ title: Oppsett og leverandørkonfigurasjon
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Oppsett og leverandørkonfigurasjon {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Oppsett og leverandørkonfigurasjon
 
 Domain Seller-tillegget leveres med en veiviser for guidet oppsett som tar deg gjennom hvert nødvendige trinn. Denne siden dekker veiviserflyten og hvordan du konfigurerer eller rekonfigurerer leverandører etterpå.
 

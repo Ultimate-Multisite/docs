@@ -4,7 +4,7 @@ title: Sía - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Sía: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Sía: wu_page_get_title_links
 
 Leyfir þróunaraðilum viðbóta, og okkur sjálfum, að bæta aðgerðatenglum við breytingarsíðurnar okkar.
 

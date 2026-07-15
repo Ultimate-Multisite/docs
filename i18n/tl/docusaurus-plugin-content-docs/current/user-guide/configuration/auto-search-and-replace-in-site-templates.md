@@ -3,7 +3,7 @@ title: Auto Search at Palitan sa mga Site Template
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search at Palitan sa Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search at Palitan sa Site Templates (v2)
 
 _**Kailangan ng tutorial na ito ang WP UItimo version 2.x.**_
 

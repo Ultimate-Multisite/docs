@@ -3,7 +3,7 @@ title: Ajutor pentru Dezvoltare Personalizată
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Cum să obții ajutor pentru dezvoltare personalizată de la Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Cum să obții ajutor pentru dezvoltare personalizată de la Codeable?
 
 Uneori, avem nevoie de personalizări avansate pentru ca fluxurile rețelei noastre să funcționeze exact așa cum ne dorim. Dacă asta cauți, îți recomandăm [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), o platformă unde poți găsi dezvoltatori experimentați, cu expertiză în Ultimate Multisite.
 

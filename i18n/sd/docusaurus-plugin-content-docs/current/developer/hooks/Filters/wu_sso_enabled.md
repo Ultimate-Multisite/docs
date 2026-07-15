@@ -4,7 +4,7 @@ title: فلٽر - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# فلٽر: wu_sso_enabled {#filter-wussoenabled}
+# فلٽر: wu_sso_enabled
 
 ڪراس-ڊومين single-sign-on صلاحيت فعال/غير فعال ڪريو.
 

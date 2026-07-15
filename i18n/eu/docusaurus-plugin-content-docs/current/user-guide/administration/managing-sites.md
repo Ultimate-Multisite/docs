@@ -3,7 +3,7 @@ title: Site-ak jartzea
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Site-akordeak {#managing-sites}
+# Site-akordeak
 
 Siteak (aldeak) da irudiari (subsites) da WaaS negihariaren garrantziarri parte. Ultimate Multisite-ek siteak 3 dainioa ditu:
 

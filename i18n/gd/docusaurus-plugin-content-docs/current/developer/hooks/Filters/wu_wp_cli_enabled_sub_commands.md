@@ -4,7 +4,7 @@ title: Criathrag - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Criathrag: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Criathrag: wu_wp_cli_enabled_sub_commands
 
 Criathraich dè na sub_commands a tha comasach airson an eintitis seo.
 

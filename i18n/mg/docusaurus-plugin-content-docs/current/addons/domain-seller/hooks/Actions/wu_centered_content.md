@@ -4,7 +4,7 @@ title: Hetsika - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Hetsika: wu_centered_content {#action-wucenteredcontent}
+# Hetsika: wu_centered_content
 
 Mamela ny mpamorona plugin hanampy atiny fanampiny ao anatin'ny tsanganana afovoany.
 

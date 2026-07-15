@@ -4,7 +4,7 @@ title: Filtrilo - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filtrilo: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filtrilo: wu_enforce_password_rules
 
 Filtras ĉu devigi aldonajn pasvortajn regulojn.
 

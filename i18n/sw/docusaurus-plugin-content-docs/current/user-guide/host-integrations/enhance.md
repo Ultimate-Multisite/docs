@@ -3,7 +3,7 @@ title: Boresha Muunganisho wa Paneli ya Kudhibiti
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kuunganisha na Enhance Control Panel {#enhance-control-panel-integration}
+# Kuunganisha na Enhance Control Panel
 
 ## Muhtasari {#overview}
 Enhance ni paneli ya kisasa ya kudhibiti ambayo inatoa uwezo wa kiotomatiki wa kusimamia na kudhibiti seva ya wavuti. Muunganiko huu unawezesha ulandanishaji wa kiotomatiki wa kikoa na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na Enhance Control Panel.

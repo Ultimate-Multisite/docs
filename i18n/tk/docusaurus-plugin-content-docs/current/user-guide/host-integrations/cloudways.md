@@ -3,7 +3,7 @@ title: Cloudways Entegrasiýa
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integrasi {#cloudways-integration}
+# Cloudways Integrasi
 
 ## Genel Bakış {#overview}
 Cloudways, WordPress sitelerini DigitalOcean, AWS, Google Cloud ve daha birçok bulut sağlayıcısında yerləşdirmizi mümkün kılan idarə olunan bir bulut hosting platformudur. Bu inteqrasiya Ultimate Multisite ilə Cloudways arasında avtomatik domen sinkronizasiyası və SSL sertifikatının idarə edilməsini təmin edir.

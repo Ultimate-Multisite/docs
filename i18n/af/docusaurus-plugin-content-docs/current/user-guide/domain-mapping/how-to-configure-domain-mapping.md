@@ -3,7 +3,7 @@ title: Hoe om domeinkartering op te stel
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Hoe om domeinkartering op te stel (v2) {#how-to-configure-domain-mapping-v2}
+# Hoe om domeinkartering op te stel (v2)
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

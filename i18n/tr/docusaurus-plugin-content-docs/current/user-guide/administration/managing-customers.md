@@ -3,7 +3,7 @@ title: Müşterileri Yönetme
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Müşterileri Yönetme {#managing-customers}
+# Müşterileri Yönetme
 
 **Müşteriler** sayfası, ağınıza kayıtlı üyelerin listesini gösterir. Bu sayfada isim, e-posta adresi, son giriş tarihi gibi temel kullanıcı bilgileri ve kullanıcının alt sitesine site yöneticisi olarak giriş yapmanızı sağlayan **geçiş yap** bağlantısı yer alır.
 

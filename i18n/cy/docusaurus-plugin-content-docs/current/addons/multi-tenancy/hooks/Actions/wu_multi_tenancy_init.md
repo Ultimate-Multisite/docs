@@ -4,7 +4,7 @@ title: Gweithred - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Gweithred: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Gweithred: wu_multi_tenancy_init
 
 Yn tanio ar ôl i’r addon Multi-Tenancy gael ei gychwynnoli’n llawn.
 

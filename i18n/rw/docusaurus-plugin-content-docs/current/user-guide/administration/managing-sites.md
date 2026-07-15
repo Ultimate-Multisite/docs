@@ -3,7 +3,7 @@ title: Gukomera Abarwo
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Kurikirana Sites {#managing-sites}
+# Kurikirana Sites
 
 Sites (cyangwa subsites) ni umuntu w'ubuzima bwa WaaS yawe. Ultimate Multisite yashobora uburyo bintu 3:
 

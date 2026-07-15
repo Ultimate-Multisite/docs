@@ -3,7 +3,7 @@ title: Dnevnik promjena za Ultimate AI Connector za kompatibilne krajnje točke
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Dnevnik promjena za Ultimate AI Connector za kompatibilne krajnje točke {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Dnevnik promjena za Ultimate AI Connector za kompatibilne krajnje točke
 
 ## Verzija 2.0.0 — Objavljeno 2026-04-24 {#version-200--released-on-2026-04-24}
 

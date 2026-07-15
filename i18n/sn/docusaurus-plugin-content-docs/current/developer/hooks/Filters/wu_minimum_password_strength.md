@@ -4,7 +4,7 @@ title: Sefa - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# Sefa: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# Sefa: wu_minimum_password_strength
 
 Sefa kusimba kushoma kwepasiwedhi kunodiwa (zxcvbn score).
 

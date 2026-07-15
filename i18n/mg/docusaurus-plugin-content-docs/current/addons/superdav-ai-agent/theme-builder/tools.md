@@ -3,7 +3,7 @@ title: Fitaovana sy Fikirakirana
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Fitaovana sy Fanamboarana {#tools-and-configuration}
+# Fitaovana sy Fanamboarana
 
 Theme Builder dia mampiasa andiana fitaovana handinihana, hamolavolana, ary hananganana ny WordPress site-nao. Ao amin'ny version 1.16.0, **sd-ai-agent/site-scrape dia fitaovana Tier 1 ankehitriny**, ka azo ampiasaina amin'ny alàlan'ny default ao amin'ny Theme Builder. Superdav AI Agent v1.18.0 koa dia mampiditra fonosana Advanced mpiara-miasa zaraina misaraka ho an'ny workflow an'ny mpamorona itokisana; ireo fitaovana ireo dia tsy anisan'ny fonosana fototra WordPress.org ary tsy maintsy apetraka sy omena alalana misaraka.
 

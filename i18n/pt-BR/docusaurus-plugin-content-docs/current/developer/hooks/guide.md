@@ -3,7 +3,7 @@ title: Guia de Uso de Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Guia de Uso de Ganchos {#hooks-usage-guide}
+# Guia de Uso de Ganchos
 
 Ultimate Multisite fornece mais de 200 ganchos de ação e mais de 280 ganchos de filtro. Esta página cobre os ganchos mais comumente usados com exemplos práticos. Para uma referência completa auto-gerada, navegue pelas outras páginas desta seção.
 

@@ -3,7 +3,7 @@ title: Ìṣàwárí Intanẹẹti
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Ìṣàwárí Íńtánẹ́ẹ̀tì {#internet-search}
+# Ìṣàwárí Íńtánẹ́ẹ̀tì
 
 Gratis AI Agent v1.5.0 ṣàfikún agbára **Ìṣàwárí Íńtánẹ́ẹ̀tì** tó jẹ́ kí olùrànlọ́wọ́ AI gba ìwífún tuntun láti orí wẹ́ẹ̀bù nígbà ìjíròrò. Èyí ń ṣiṣẹ́ pẹ̀lú [Brave Search API](https://brave.com/search/api/) tàbí [Tavily API](https://tavily.com/).
 

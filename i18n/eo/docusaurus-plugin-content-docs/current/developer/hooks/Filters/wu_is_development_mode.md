@@ -4,7 +4,7 @@ title: Filtrilo - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filtrilo: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filtrilo: wu_is_development_mode
 
 Permesas al kromprogramaj programistoj aldoni kromajn testojn por evolureĝimo.
 

@@ -3,7 +3,7 @@ title: Tilpasse registreringsskjemaet ditt
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tilpasse registreringsskjemaet ditt {#customizing-your-registration-form}
+# Tilpasse registreringsskjemaet ditt
 
 For å få nettverket ditt til å se unikt ut sammenlignet med alle andre SaaS bygget på WordPress-plattformen, lar Ultimate Multisite deg tilpasse registrerings- og innloggingssidene dine med vår **Checkout Forms**-funksjon.
 

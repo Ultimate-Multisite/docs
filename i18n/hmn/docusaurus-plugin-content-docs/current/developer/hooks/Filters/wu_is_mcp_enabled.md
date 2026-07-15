@@ -4,7 +4,7 @@ title: Lim - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Lim: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Lim: wu_is_mcp_enabled
 
 Tso cai rau cov neeg tsim qhov txuas ntxiv yuam kom MCP adapter nyob rau ib lub xeev teev tseg.
 

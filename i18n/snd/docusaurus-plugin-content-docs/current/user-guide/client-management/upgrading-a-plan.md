@@ -3,7 +3,7 @@ title: پلان اپ گریڊ ڪرڻ
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# پلان اپ گریڈ کرنا (v2) {#upgrading-a-plan-v2}
+# پلان اپ گریڈ کرنا (v2)
 
 _**اہم نوٹ: یہ آرٹیکل Ultimate Multisite کے ورژن 2.x کا حوالہ دیتا ہے۔**_
 

@@ -3,7 +3,7 @@ title: Мигриране от V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Мигриране от V1 {#migrating-from-v1}
+# Мигриране от V1
 
 ## Ultimate Multisite премина от оригиналната си серия от версии 1.x към серията от версии 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

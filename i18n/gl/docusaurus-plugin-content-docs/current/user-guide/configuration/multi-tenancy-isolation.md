@@ -3,7 +3,7 @@ title: Aislamiento Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolamento Multi-Tenancy {#multi-tenancy-isolation}
+# Isolamento Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suporta o isolamento de base de dados e sistema de ficheiros por subsite para inquilinos soberanos. Isto mantém os dados dos inquilinos separados, ao mesmo tempo que preserva o provisionamento de rede, faturação e administração a nível da infraestrutura.
 

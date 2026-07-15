@@ -3,7 +3,7 @@ title: Kontaktni obliki za gradbo spletnih strani
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktforme za gradnjo spletne strani {#site-builder-contact-forms}
+# Kontaktforme za gradnjo spletne strani
 
 Superdav AI Agent v1.10.0 omogoča ustvarjanje kontaktform, ki se neposredno naredi iz čata z uporabo agenta Site Builder. To vam omogoča dodajanje popolnoma funkcionalnih kontaktform na vsako stran brez odhajanja iz čata.
 

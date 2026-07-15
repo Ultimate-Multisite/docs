@@ -4,7 +4,7 @@ title: Sivana - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Sivana: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Sivana: networks_pre_user_is_network_admin
 
 Manivana ireo tambajotra izay tantanan'ny mpampiasa iray, mba hampitsahatra mialoha ny fizotry ny asa.
 

@@ -4,7 +4,7 @@ title: Filtè - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filtè: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Filtè: wu_make_primary_domain_redirect_url
 
 Filtre URL redireksyon an apre yo fin fè yon domèn vin prensipal.
 

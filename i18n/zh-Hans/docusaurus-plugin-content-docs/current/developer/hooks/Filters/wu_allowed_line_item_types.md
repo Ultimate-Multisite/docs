@@ -4,7 +4,7 @@ title: 过滤器 - wu_allowed_line_item_types
 sidebar_label: wu_allowed_line_item_types
 _i18n_hash: 146f74ff1fa7d78b381b767bff2dc699
 ---
-# 过滤器: wu_allowed_line_item_types {#filter-wuallowedlineitemtypes}
+# 过滤器: wu_allowed_line_item_types
 
 现在，我们处理所有类型。
 

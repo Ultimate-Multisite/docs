@@ -3,7 +3,7 @@ title: Настаўнік пабудовы Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Мастак наладжання Multisite {#multisite-setup-wizard}
+# Мастак наладжання Multisite
 
 Ultimate Multisite ўключае ў сабе ўбудаваны мастак, які аўтаматычна пераўтварае стандартную ўстанову WordPress ў сетку WordPress Multisite. Гэта вылічвае неабходнасць ручнага рэдактавання файла `wp-config.php` або выканання каманд у базе дадзеных.
 

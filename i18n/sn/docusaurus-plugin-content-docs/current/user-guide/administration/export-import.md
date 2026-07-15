@@ -3,7 +3,7 @@ title: Kupfuura uye Kufamba
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 inoshi chine **Export & Import** tool under **Tools > Export & Import**. Unoda iye kana uchidzo kana iwe WordPress site yakachengeta ku ZIP file, ukubuyisa iZIP, kana kukumbuka site kupfuva kune WordPress installations ezine compatibility Ultimate Multisite ne single-site.
 

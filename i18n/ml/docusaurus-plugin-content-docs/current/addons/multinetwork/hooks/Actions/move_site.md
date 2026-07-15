@@ -4,7 +4,7 @@ title: നടപടി - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site {#action-movesite}
+# Action: move_site
 
 ഒരു സൈറ്റ് പുതിയ നെറ്റ്‌വർക്കിലേക്ക് മാറ്റിയതിന് ശേഷം ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

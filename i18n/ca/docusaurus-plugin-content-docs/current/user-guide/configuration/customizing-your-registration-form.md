@@ -3,7 +3,7 @@ title: Personalització del vostre formulari de registre
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalització del vostre formulari de registre {#customizing-your-registration-form}
+# Personalització del vostre formulari de registre
 
 Per fer que la vostra xarxa tingui un aspecte únic respecte de tots els altres SaaS creats sobre la plataforma WordPress, Ultimate Multisite us permet personalitzar les vostres pàgines de registre i d’inici de sessió amb la nostra funcionalitat **Formularis de checkout**.
 

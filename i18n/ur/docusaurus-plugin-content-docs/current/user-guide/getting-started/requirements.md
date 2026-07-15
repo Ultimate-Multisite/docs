@@ -3,7 +3,7 @@ title: ضروریات
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite کی ضروریات {#ultimate-multisite-requirements}
+# Ultimate Multisite کی ضروریات
 
 Ultimate Multisite خریدنے سے پہلے آپ کے ذہن میں پہلا سوال یہ آ سکتا ہے کہ ہمارا plugin چلانے کے لیے کیا ضروریات ہیں۔ خوشی کی بات یہ ہے کہ Ultimate Multisite چلانے کے لیے صرف چند بنیادی چیزیں درکار ہیں: ایک **ڈومین نام**، ایک اچھا **ہوسٹنگ فراہم کنندہ** اور WordPress **Multisite** انسٹالیشن۔ بس اتنا ہی کافی ہے!
 

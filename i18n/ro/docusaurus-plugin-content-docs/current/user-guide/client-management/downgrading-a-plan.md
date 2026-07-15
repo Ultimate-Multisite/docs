@@ -3,7 +3,7 @@ title: Trecerea la un plan inferior
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Trecerea la un plan inferior (v2) {#downgrading-a-plan-v2}
+# Trecerea la un plan inferior (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

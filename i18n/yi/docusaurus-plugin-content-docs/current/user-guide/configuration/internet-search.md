@@ -3,7 +3,7 @@ title: אינטערנעץ־זוך
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# אינטערנעץ־זוך {#internet-search}
+# אינטערנעץ־זוך
 
 Gratis AI Agent v1.5.0 לייגט צו אַן **אינטערנעץ־זוך** מעגלעכקייט וואָס לאָזט דעם AI אַסיסטענט אַראָפּנעמען דערהײַנטיקטע אינפֿאָרמאַציע פֿון דער וועב בעת אַ שמועס. דאָס ווערט געטריבן דורך דער [Brave Search API](https://brave.com/search/api/) אָדער דער [Tavily API](https://tavily.com/).
 

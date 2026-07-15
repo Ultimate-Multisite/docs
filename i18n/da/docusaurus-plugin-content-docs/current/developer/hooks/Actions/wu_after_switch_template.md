@@ -4,7 +4,7 @@ title: Handling - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Action: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Action: wu_after_switch_template
 
 Tillad plugin-udviklere at tilknytte funktioner, efter at en bruger eller super admin skifter webstedets skabelon
 

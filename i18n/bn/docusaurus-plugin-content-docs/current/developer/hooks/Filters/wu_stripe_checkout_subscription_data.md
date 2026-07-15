@@ -4,7 +4,7 @@ title: Filter - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 Stripe সাবস্ক্রিপশন ডেটা ফিল্টার করতে ব্যবহৃত হয়। এর মাধ্যমে `success_url` বা `cancel_url` পরিবর্তন করা যায়।
 

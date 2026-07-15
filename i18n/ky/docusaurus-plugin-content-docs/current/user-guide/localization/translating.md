@@ -3,7 +3,7 @@ title: Ultimate Multisite-ты которуу
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-ты-бирдиги {#translating-ultimate-multisite}
+# Ultimate Multisite-ты-бирдиги
 
 Ultimate Multisite ангilis тилде иштелип чыккан, бирок плагин толук которууга ылайыктуу жана биз которууга активсиздүү кубанычтабыз.
 

@@ -4,7 +4,7 @@ title: පෙරහන - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# පෙරහන: wu_billing_address_fields {#filter-wubillingaddressfields}
+# පෙරහන: wu_billing_address_fields
 
 බිල්පත් ලිපින ක්ෂේත්‍ර පෙරීමට ප්ලගින සංවර්ධකයින්ට ඉඩ දෙයි.
 

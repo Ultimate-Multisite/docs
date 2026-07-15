@@ -3,7 +3,7 @@ title: Taimakon Haɗaw na Musamman
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# چکار کنیم از Codeable کمک توسعه سفارشی بگیریم؟ {#how-to-get-custom-development-help-from-codeable}
+# چکار کنیم از Codeable کمک توسعه سفارشی بگیریم؟
 
 گاهی اوقات، ما واقعاً به یه شخصی‌سازی فوق‌العاده نیاز داریم تا جریان‌های شبکه خودمون دقیقاً همون شکلی که می‌خوایم باشه. اگه دنبال این هستی، ما [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) رو توصیه می‌کنیم؛ جایی که می‌تونی توسعه‌دهنده‌های باتجربه با تخصص Ultimate Multisite رو پیدا کنی.
 

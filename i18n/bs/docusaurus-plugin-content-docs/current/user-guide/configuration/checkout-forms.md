@@ -3,7 +3,7 @@ title: Obrasci za plaćanje
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Obrasci za naplatu {#checkout-forms}
+# Obrasci za naplatu
 
 Obrasci za naplatu su jednostavan i fleksibilan način za eksperimentisanje s različitim pristupima kada pokušavate pretvoriti nove kupce.
 

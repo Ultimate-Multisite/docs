@@ -3,7 +3,7 @@ title: የባለብዙ ተከራይነት ውህደት
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ውህደት {#multi-tenancy-integration}
+# Multi-Tenancy ውህደት
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከራዮች፣ ለማዘዋወር ማረጋገጫ፣ እና ለተከራይ የሕይወት-ዑደት አውቶሜሽን በርካታ የውህደት መነካካት ነጥቦችን ይቀይራል።
 

@@ -3,7 +3,7 @@ title: Schopnosti konstruktora témat
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Schopnosti pro tvorbu témat: Základní struktura a aktivace block témat {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Schopnosti pro tvorbu témat: Základní struktura a aktivace block témat
 
 Superdav AI Agent v1.12.0 představuje dvě výkonné schopnosti, které vám umožní generovat a nasazovat vlastní block témata přímo z chatového rozhraní.
 

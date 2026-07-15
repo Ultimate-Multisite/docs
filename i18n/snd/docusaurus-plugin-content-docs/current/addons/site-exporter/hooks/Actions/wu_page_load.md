@@ -4,7 +4,7 @@ title: عمل - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# عمل: wu_page_load {#action-wupageload}
+# عمل: wu_page_load
 
 plugin ٺاهيندڙن کي اسان جي صفحن ۾ اضافي hooks شامل ڪرڻ جي اجازت ڏيو.
 

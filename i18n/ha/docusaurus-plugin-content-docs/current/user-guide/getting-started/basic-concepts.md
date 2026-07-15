@@ -3,7 +3,7 @@ title: Kollayoyin Asali
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Ƙwararwar na Asali {#basic-concepts}
+# Ƙwararwar na Asali
 
 Ga wani mai amfani na WordPress Multisite na sabon kuma wanda kawai ya fara amfani da Ultimate Multisite, akwai kalmomi da jumloli da dama da za ka samu a farko. Kaɗai ne muhimmin aikin koyon su domin ka fahimci tsarin da ke aiki gaba ɗaya da yadda yake aiki.
 

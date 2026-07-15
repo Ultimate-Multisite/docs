@@ -3,7 +3,7 @@ title: Ontwerprichting
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction {#design-direction}
+# Design Direction
 
 De stap **Design Direction** stelt u in staat om het visuele ontwerp van uw thema te bekijken, te verfijnen en definitief te maken voordat Theme Builder het complete thema genereert.
 

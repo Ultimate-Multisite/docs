@@ -3,7 +3,7 @@ title: Styring system e-postir
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Stjórnun Systempósti {#managing-system-emails}
+# Stjórnun Systempósti
 
 Ultimate Multisite sender fleiri systempósti fyrir hendingar eins og bekreftelsur við innmelding, betalingsbevis og endringar í medlemsskapnum. Þú getur sérsniðið þessar póstformateins til að passa merki þitt.
 

@@ -4,7 +4,7 @@ title: Akcja - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Akcja: wu_sso_loaded {#action-wussoloaded}
+# Akcja: wu_sso_loaded
 
 Pozwala deweloperom pluginów na dodanie dodatkowych hooków, jeśli zajdzie taka potrzeba.
 

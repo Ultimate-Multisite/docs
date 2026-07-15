@@ -3,7 +3,7 @@ title: Captcha Ingxelo yotshintsho
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Ingxelo yotshintsho ye-Captcha {#captcha-changelog}
+# Ingxelo yotshintsho ye-Captcha
 
 Uguqulelo: 1.5.0 - Lukhutshwe nge-2026-05-22
 * Entsha: Isithinteli sezinga esima ngokupheleleyo — sibala yonke i-GET ne-POST kwiindawo ezikhuselwe yi-captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) kwaye siphendula nge-HTTP 429, i-header `Retry-After`, kunye nokulalisa kwe-tarpit okungahleliwe (1–5s, kunqunyanyiswe ngokungqongqo kwi-15s).

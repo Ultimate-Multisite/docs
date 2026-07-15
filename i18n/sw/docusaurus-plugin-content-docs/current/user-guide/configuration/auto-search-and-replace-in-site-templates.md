@@ -3,7 +3,7 @@ title: Utafutaji na Ubadilishaji Kiotomatiki katika Violezo vya Tovuti
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Utafutaji na Ubadilishaji Kiotomatiki katika Templeti za Tovuti (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Utafutaji na Ubadilishaji Kiotomatiki katika Templeti za Tovuti (v2)
 
 _**Mafunzo haya yanahitaji WP UItimo toleo la 2.x.**_
 

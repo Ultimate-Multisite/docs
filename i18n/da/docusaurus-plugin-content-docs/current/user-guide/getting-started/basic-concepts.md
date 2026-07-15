@@ -3,7 +3,7 @@ title: Grundlæggende koncepter
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Grundlægg Koncepter {#basic-concepts}
+# Grundlægg Koncepter
 
 For en ny WordPress Multisite-bruger og nogen, der lige er begyndt at bruge Ultimate Multisite, kan der være mange nye ord og udtryk, man skal lære i starten. Det er vigtigt at lære dem, fordi du skal forstå platformen og hvordan den fungerer som helhed.
 

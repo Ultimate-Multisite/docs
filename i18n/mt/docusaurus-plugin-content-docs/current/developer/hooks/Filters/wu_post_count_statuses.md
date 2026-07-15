@@ -4,7 +4,7 @@ title: Filtru - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Jippermetti lill-iżviluppaturi tal-plugin ibiddlu liema status tal-post għandu jingħadd. B’mod awtomatiku, jingħaddu l-postijiet ippubblikati u privati
 

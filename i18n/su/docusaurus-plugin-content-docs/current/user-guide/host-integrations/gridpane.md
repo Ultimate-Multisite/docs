@@ -3,7 +3,7 @@ title: Integrasi GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integrasi GridPane {#gridpane-integration}
+# Integrasi GridPane
 
 ## Gambaran Umum {#overview}
 GridPane téh mangrupake panel kontrol hosting WordPress anu dirancang khusus pikeun profesional WordPress anu serius. Integrasi ieu ngabantu sinkronisasi domain otomatis jeung ngaturan sertifikat SSL antara Ultimate Multisite jeung GridPane.

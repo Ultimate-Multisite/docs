@@ -3,7 +3,7 @@ title: Oldalt exportálás
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Oldalt exportálása {#site-export}
+# Oldalt exportálása
 
 Az **Oldalt exportálás** admin oldala lehetővé teszi a hálózatadminisztrátorok számára, hogy egy oldalt, vagy az egész hálózatot csomagoljanak letöltendő archívumként, migrációra, biztonsági mentésre vagy átadási célra.
 

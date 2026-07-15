@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# କାର୍ଯ୍ୟ: wp_ultimo_site_exporter_load
 
 ସମସ୍ତ ନିର୍ଭରଶୀଳତା ଲୋଡ୍ ହେଲେ ଟ୍ରିଗର୍ ହୁଏ।
 

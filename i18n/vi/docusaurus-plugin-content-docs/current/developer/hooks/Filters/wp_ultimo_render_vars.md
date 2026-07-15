@@ -4,7 +4,7 @@ title: Bộ lọc - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Bộ lọc: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Bộ lọc: wp_ultimo_render_vars
 
 Cho phép các nhà phát triển plugin thêm các biến bổ sung vào ngữ cảnh render (render context) một cách toàn cục.
 

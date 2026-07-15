@@ -4,7 +4,7 @@ title: מסנן - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# מסנן: retrieve_password_title {#filter-retrievepasswordtitle}
+# מסנן: retrieve_password_title
 
 מסנן את הנושא של אימייל איפוס הסיסמה.
 

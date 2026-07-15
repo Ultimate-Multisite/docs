@@ -3,7 +3,7 @@ title: Iġġenera SVG tal-Logo
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Iġġenera Logo SVG {#generate-logo-svg}
+# Iġġenera Logo SVG
 
 Il-kapaċità **Iġġenera Logo SVG** tippermetti lil Theme Builder joħloq u jinkorpora logos SVG personalizzati direttament fis-sit WordPress tiegħek b’sanitizzazzjoni awtomatika sigura għall-ispazji tal-ismijiet.
 

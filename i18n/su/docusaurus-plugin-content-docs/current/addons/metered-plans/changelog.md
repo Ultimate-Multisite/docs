@@ -3,7 +3,7 @@ title: Catetan Parobahan Rencana Dumasar Pamakean
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Catetan Parobahan Metered Plans {#metered-plans-changelog}
+# Catetan Parobahan Metered Plans
 
 Vérsi 1.1.0 - Dirilis dina 2026-05-05
 - Anyar: Tagihan token AI pikeun subsite multisite — lacak jeung tagih pamakéan token AI di sakuliah situs palanggan kalayan tarif per-token anu bisa dikonfigurasi

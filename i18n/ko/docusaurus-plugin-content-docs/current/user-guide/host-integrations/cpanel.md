@@ -3,7 +3,7 @@ title: cPanel 통합
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel 통합 {#cpanel-integration}
+# cPanel 통합
 
 ## 개요 {#overview}
 cPanel은 많은 공유 및 전용 호스팅 제공업체에서 사용되는 가장 인기 있는 웹 호스팅 제어판 중 하나입니다. 이 통합은 Ultimate Multisite와 cPanel 간에 자동 도메인 동기화를 가능하게 하여 도메인 별칭 및 서브도메인을 cPanel 계정에 자동으로 추가할 수 있도록 합니다.

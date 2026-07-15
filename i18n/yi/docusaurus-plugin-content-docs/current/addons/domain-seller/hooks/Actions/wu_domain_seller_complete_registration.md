@@ -4,7 +4,7 @@ title: אַקציע - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Action: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Action: wu_domain_seller_complete_registration
 
 ווערט אויסגעפֿירט ווען אַ צאָלונג גייט איבער צו אַ סטאַטוס וואָס זאָל אויסלייזן דאָמיין־רעגיסטראַציע.
 

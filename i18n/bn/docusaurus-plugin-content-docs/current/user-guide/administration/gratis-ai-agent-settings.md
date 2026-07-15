@@ -3,7 +3,7 @@ title: Gratis AI Agent সেটিংস
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent সেটিংস {#gratis-ai-agent-settings}
+# Gratis AI Agent সেটিংস
 
 Gratis AI Agent-এর **সেটিংস → উন্নত** স্ক্রিনে backend ইন্টিগ্রেশনের জন্য প্রশাসক-স্তরের কনফিগারেশন থাকে। এই পাতায় feedback forwarding, search provider keys, managed Superdav service setup, Google Calendar controls, TextBee SMS settings এবং network-wide feature flags নথিভুক্ত করা হয়েছে।
 

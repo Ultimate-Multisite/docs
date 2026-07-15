@@ -3,7 +3,7 @@ title: Mawuwo kwa Site Builder Contact Forms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms za Kufotera kwa Tovuti (Site Builder) {#site-builder-contact-forms}
+# Forms za Kufotera kwa Tovuti (Site Builder)
 
 Superdav AI Agent v1.10.0 imezidiza uwezo wa kutengeneza forms za kufotera kupitia chat interface kwa kutumia Site Builder agent. Iziipanga kuti mupate forms za kufotera zenye utendaji wote kwenye ipanyiko lolote bila kuondoka kwenye chat.
 

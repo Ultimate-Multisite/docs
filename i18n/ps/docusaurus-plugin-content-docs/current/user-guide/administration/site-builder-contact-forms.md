@@ -3,7 +3,7 @@ title: د سایت جوړولو اړیکې فرمونه
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# رابط جوړو صفحه تماس (Site Builder Contact Forms) {#site-builder-contact-forms}
+# رابط جوړو صفحه تماس (Site Builder Contact Forms)
 
 Superdav AI Agent v1.10.0 ته اجازه ورکوي چې د Site Builder agent له لارې مستقیل پیغامونه (chat interface) څخه تماسونو formu جوړ کړئ. دا تاسو ته په چات کې نرسېدلی بدون هیڅ ځای ونه، هر صفحه ته پوره کارکړې تماسونو formu اضافه کولو اجازه ورکوي.
 

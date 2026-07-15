@@ -4,7 +4,7 @@ title: පෙරහන - wu_add_new_domain_modal_fields
 sidebar_label: wu_add_new_domain_modal_fields
 _i18n_hash: 82538b8033ce3cb1a2d4e59881ac1358
 ---
-# පෙරහන: wu_add_new_domain_modal_fields {#filter-wuaddnewdomainmodalfields}
+# පෙරහන: wu_add_new_domain_modal_fields
 
 නව domain එක් කිරීමේ modal සඳහා fields පෙරහන් කරයි.
 

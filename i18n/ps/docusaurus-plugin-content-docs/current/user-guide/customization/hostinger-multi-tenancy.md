@@ -3,7 +3,7 @@ title: هوستينګر ډیټا مېنټینسي
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 دایره‌ی چند مالکیت (Multi-Tenancy) دیسکشن اضافه کرده چې په دې توګه، د Hostinger د دامینونو سره هم می‌تواند په خپلواک د تَنټینت (tenant) تنظیم کولو Alongside د اوسني Hostinger د دامین مېپینګ (domain-mapping) هم ګډون وکړي.
 

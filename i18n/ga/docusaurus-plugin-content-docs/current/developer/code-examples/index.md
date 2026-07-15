@@ -3,7 +3,7 @@ title: Samplaí Casta Cóid
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Samplaí Casta Cóid {#advanced-code-examples}
+# Samplaí Casta Cóid
 
 Léiríonn na samplaí seo patrúin chomhtháthaithe chasta le Ultimate Multisite.
 

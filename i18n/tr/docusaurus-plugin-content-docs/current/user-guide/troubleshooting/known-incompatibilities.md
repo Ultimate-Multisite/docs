@@ -3,7 +3,7 @@ title: Bilinen Uyumsuzluklar
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Diğer Eklentilerle Bilinen Uyumsuzluklar {#known-incompatibilities-with-other-plugins}
+# Diğer Eklentilerle Bilinen Uyumsuzluklar
 
 Ultimate Multisite'ı yükleyip etkinleştirdikten sonra, diğer eklentilerle henüz çözülmemiş uyumsuzluklar nedeniyle sorunlarla karşılaşabilirsiniz.
 

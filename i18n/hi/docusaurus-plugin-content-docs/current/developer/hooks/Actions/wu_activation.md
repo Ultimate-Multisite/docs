@@ -4,7 +4,7 @@ title: कार्य - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# एक्शन: wu_activation {#action-wuactivation}
+# एक्शन: wu_activation
 
 यह प्लगइन के अन्य हिस्सों को एक्टिवेशन के दौरान अपनी कार्यप्रणाली (routines) जोड़ने की अनुमति देता है।
 

@@ -3,7 +3,7 @@ title: Кошумча модулдун Sunrise файл жүктөгүчү
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise файл жүктөгүчү {#addon-sunrise-file-loader}
+# Addon Sunrise файл жүктөгүчү
 
 Ultimate Multisite 2.8.0 кошумчалар жана жекече MU-plugin интеграциялары үчүн, түзүлгөн `wp-content/sunrise.php` файлын түзөтпөстөн WordPress sunrise жүктөлүшү учурунда иштеши керек болгон sunrise кеңейтме жүктөгүчүн кошот.
 

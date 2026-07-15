@@ -4,7 +4,7 @@ title: कार्य - wp_ultimo_ptm_edit_page_after_title_input
 sidebar_label: wp_ultimo_ptm_edit_page_after_title_input
 _i18n_hash: 7a4980304b0ebf019e3d4044eb566adc
 ---
-# Action: wp_ultimo_ptm_edit_page_after_title_input {#action-wpultimoptmeditpageaftertitleinput}
+# Action: wp_ultimo_ptm_edit_page_after_title_input
 
 plugin विकासकर्ताहरूलाई पाठ इनपुटको तल थप जानकारी थप्न अनुमति दिनुहोस्
 

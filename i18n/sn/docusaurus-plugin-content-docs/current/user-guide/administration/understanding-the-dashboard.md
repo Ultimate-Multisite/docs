@@ -3,7 +3,7 @@ title: Kutendera Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Kuona Dashboard ya Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Kuona Dashboard ya Ultimate Multisite
 
 Pasiwe kupata msisimko mkubwa katika chaguzi za ziada za kukazi na vipengele vya utendaji wa Ultimate Multisite, acha tu tuchungue dashboard.
 

@@ -3,7 +3,7 @@ title: Avastusintervjuu
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Avastusintervjuu {#discovery-interview}
+# Avastusintervjuu
 
 **Avastusintervjuu** on esimene samm Theme Builderi disainiprotsessis. See kogub teavet sinu saidi, ettevõtte ja disainieelistuste kohta, et luua isikupärastatud teema.
 

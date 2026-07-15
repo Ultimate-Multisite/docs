@@ -4,7 +4,7 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 Filtrira ID plana koji se provjerava. Ako postoji, nova pretplata će koristiti ovaj plan.
 

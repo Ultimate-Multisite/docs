@@ -3,7 +3,7 @@ title: 管理系統電子郵件
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# 管理系統電子郵件 {#managing-system-emails}
+# 管理系統電子郵件
 
 Ultimate Multisite 會針對註冊確認、付款收據和會員資格變更等事件傳送各種系統電子郵件。你可以自訂這些電子郵件範本，以符合你的品牌。
 

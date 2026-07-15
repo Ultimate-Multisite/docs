@@ -3,7 +3,7 @@ title: Насби Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Насб кардани Ultimate Multisite {#installing-ultimate-multisite}
+# Насб кардани Ultimate Multisite
 
 :::note
 Ин дастури амал фарз мекунад, ки шумо аллака бо WordPress Multisite насб ва танзим кардаед. Барои маълумот дар бораи он, ба [ин дастури амал](https://www.wpbeginner.com/glossary/multisite/) аз WP Beginner муроҷиат кунед.

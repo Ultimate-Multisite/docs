@@ -3,7 +3,7 @@ title: नोंदणी प्रक्रिया
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# नोंदणी प्रवाह (v2) {#the-registration-flow-v2}
+# नोंदणी प्रवाह (v2)
 
 _**महत्त्वाची टीप: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 

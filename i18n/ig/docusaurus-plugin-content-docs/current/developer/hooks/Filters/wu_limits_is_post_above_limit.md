@@ -4,7 +4,7 @@ title: Nzacha - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Nzacha: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Nzacha: wu_limits_is_post_above_limit
 
 Na-enyocha ma a na-anabata ụdị post enyere na atụmatụ a. Na-enye ndị mmepe plugin ohere ịme nzacha uru a na-eweghachi
 

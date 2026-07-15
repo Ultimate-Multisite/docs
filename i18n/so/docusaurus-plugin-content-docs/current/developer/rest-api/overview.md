@@ -3,7 +3,7 @@ title: Dulmarka REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tixraaca REST API {#rest-api-reference}
+# Tixraaca REST API
 
 ## Qaabeynta Aasaasiga ah {#base-configuration}
 

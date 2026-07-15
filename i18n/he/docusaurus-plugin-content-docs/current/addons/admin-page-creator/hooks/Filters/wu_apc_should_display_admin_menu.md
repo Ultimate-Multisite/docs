@@ -4,7 +4,7 @@ title: פילטר - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# מסנן: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# מסנן: wu_apc_should_display_admin_menu
 
 מאפשר למנהלים להסתיר את דפי תפריט המנהל, אם הם סיימו את תהליך ההתאמה האישית.
 

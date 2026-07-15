@@ -3,7 +3,7 @@ title: Manangana kaonty amin'ny alalan'ny Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Oritaka: Manao ka kaontana amin'ny alalan'ny Zapier {#event-register-an-account-via-zapier}
+# Oritaka: Manao ka kaontana amin'ny alalan'ny Zapier
 
 Ao anatin'ilay lahatsoratra [Integrating Ultimate Multisite with Zapier](zapier.md), dia nolazainay ny fomba fampiasana Zapier mba hanaovana asa samihafa ao amin'ny Ultimate Multisite mifototra amin'ny trigger sy ny zava-nitranga (events). Amin'ity lahatsoratra ity, dia haseho antsika aho fa afaka mampifandray rindrambaiko avy any ivelany isika. Hampiasa Google Sheets ho loharanon'ny data ary hisomehezina ireo vaovao ho amin'ny Ultimate Multisite mba hamoronana kaonty.
 

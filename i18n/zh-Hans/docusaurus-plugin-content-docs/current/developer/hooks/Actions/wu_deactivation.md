@@ -4,7 +4,7 @@ title: 操作 - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# 动作: wu_deactivation {#action-wudeactivation}
+# 动作: wu_deactivation
 
 让插件的其他部分为停用附加它们的例程
 

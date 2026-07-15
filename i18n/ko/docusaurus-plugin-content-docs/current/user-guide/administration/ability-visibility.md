@@ -3,7 +3,7 @@ title: 기능 가시성
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# 기능 가시성 (Ability Visibility) {#ability-visibility}
+# 기능 가시성 (Ability Visibility)
 
 Superdav AI Agent v1.12.0에는 각 기능(ability)이 어떤 인터페이스를 통해 노출될지 제어하는 **기능 가시성(Ability Visibility)** 기능이 도입되었습니다. 이 기능을 사용하면 관리자가 REST API, MCP 서버, WooCommerce 통합 및 기타 인터페이스를 통해 어떤 에이전트 기능이 사용 가능한지 세밀하게 조정할 수 있습니다.
 

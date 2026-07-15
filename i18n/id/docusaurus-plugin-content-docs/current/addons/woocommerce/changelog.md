@@ -3,7 +3,7 @@ title: Log Perubahan Integrasi WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Changelog Integrasi WooCommerce {#woocommerce-integration-changelog}
+# Changelog Integrasi WooCommerce
 
 Versi 2.2.0 - Dirilis pada 2026-07-01
 * Baru: Jumlah pajak Ultimate Multisite kini muncul sebagai baris biaya WooCommerce terpisah saat checkout, membuat total pajak lebih jelas sebelum pembayaran.

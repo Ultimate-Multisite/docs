@@ -3,7 +3,7 @@ title: Direksyon Konsepsyon
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direksyon Design {#design-direction}
+# Direksyon Design
 
 Etap **Direksyon Design** lan pèmèt ou revize, rafine, epi finalize design vizyèl theme ou anvan Theme Builder jenere theme konplè a.
 

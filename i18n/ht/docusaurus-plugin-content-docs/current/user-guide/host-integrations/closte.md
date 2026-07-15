@@ -3,7 +3,7 @@ title: Entegrasyon Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Entegrasyon Closte {#closte-integration}
+# Entegrasyon Closte
 
 ## Aperçu {#overview}
 Closte se pa platform d'hébergement WordPress ki bati sou infrastruktur Google Cloud. Entegrasyon sa a pèmèt sincronizasyon domèn otomatik ak jere sertifikat SSL ant Ultimate Multisite ak Closte.

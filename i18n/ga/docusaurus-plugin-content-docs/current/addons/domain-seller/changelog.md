@@ -3,7 +3,7 @@ title: Loga Athruithe Díoltóra Fearainn
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Loga Athruithe Domain Seller {#domain-seller-changelog}
+# Loga Athruithe Domain Seller
 
 Leagan 1.3.0 - Eisithe ar 2026-06-02
 - Nua: Cuireadh rabhadh network-admin leis nuair a éiríonn iarmhéid athdhíoltóra HostAfrica ró-íseal

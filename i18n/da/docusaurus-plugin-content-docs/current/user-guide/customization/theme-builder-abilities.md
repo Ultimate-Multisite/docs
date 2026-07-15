@@ -3,7 +3,7 @@ title: Tema-byggerfunktioner
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Temaopbyggerens evner: Scaffold og aktiver bloktemaer {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Temaopbyggerens evner: Scaffold og aktiver bloktemaer
 
 Superdav AI Agent v1.12.0 introducerer to kraftfulde funktioner, der lader dig generere og udrulle skræddersyede bloktemaer direkte fra chatgrænsefladen.
 

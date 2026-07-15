@@ -3,9 +3,9 @@ title: Ndebiri Mgbakwunye
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Ụkpụrụ Ndebiri Mgbakwunye {#addon-template}
+# Ụkpụrụ Ndebiri Mgbakwunye
 
-{{ADDON_DESCRIPTION}}
+Ndebiri Mgbakwunye — Ultimate Multisite.
 
 ## Ihe achọrọ {#requirements}
 

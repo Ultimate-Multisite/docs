@@ -3,7 +3,7 @@ title: 'Lektioun 1: Firwat d''Nisch gewënnt'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lektioun 1: Firwat eng Nisch gewënnt {#lesson-1-why-niche-wins}
+# Lektioun 1: Firwat eng Nisch gewënnt
 
 Ier mir iergendeng Software upaken, muss du verstoen, firwat fir eng spezifesch Zilgrupp ze bauen déi eenzeg wichtegst Decisioun ass, déi s du treffe wäerts.
 

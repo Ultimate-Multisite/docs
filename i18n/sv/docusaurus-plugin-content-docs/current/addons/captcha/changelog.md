@@ -3,7 +3,7 @@ title: Captcha Ändringslogg
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog {#captcha-changelog}
+# Captcha Changelog
 
 Version: 1.5.0 - Released on 2026-05-22
 * Nytt: Hard-stop rate limiter — räknar varje GET- och POST-förfrågan på captcha-skyddade ytor (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) och svarar med HTTP 429, ett `Retry-After`-huvud och en slumpmässig tarpit-sleep (1–5 sekunder, hårdgränsad till 15 sekunder).

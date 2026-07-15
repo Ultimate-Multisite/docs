@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# アクション: wu_page_{$this->id}_after_render {#action-wupagethis-idafterrender}
+# アクション: wu_page_{$this->id}_after_render
 
 プラグイン開発者がページを表示した後に追加コンテンツを追加できるようにします
 

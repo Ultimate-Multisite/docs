@@ -3,7 +3,7 @@ title: Verwijderingsmelding Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Verwijdering van Site Builder Mode {#site-builder-mode-removal-notice}
+# Verwijdering van Site Builder Mode
 
 **Site Builder mode is verwijderd in Superdav AI Agent v1.12.0.** Als u Site Builder mode gebruikte, moet u migreren naar de **Setup Assistant agent** voor thema- en site-opzet.
 

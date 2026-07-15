@@ -3,7 +3,7 @@ title: Webhookide käsitlemine
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhookide käsitlemine {#webhook-handling}
+# Webhookide käsitlemine
 
 Loo kohandatud webhookide lõpp-punktid, et võtta vastu sündmusi välistest teenustest ja sünkroonida andmeid Ultimate Multisite’iga.
 

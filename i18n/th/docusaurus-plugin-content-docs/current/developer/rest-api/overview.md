@@ -3,7 +3,7 @@ title: ภาพรวม REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# เอกสารอ้างอิง REST API {#rest-api-reference}
+# เอกสารอ้างอิง REST API
 
 ## การกำหนดค่าพื้นฐาน {#base-configuration}
 

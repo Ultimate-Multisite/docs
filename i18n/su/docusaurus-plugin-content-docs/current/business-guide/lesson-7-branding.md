@@ -3,7 +3,7 @@ title: 'Pangajaran 7: Ngajadikeun Ieu Milik Anjeun'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Pangajaran 7: Ngajadikeun Milik Anjeun {#lesson-7-making-it-yours}
+# Pangajaran 7: Ngajadikeun Milik Anjeun
 
 Palanggan anjeun ulah nepi ka ngarasa yén maranéhna keur ngagunakeun "sawatara tambahan WordPress." Maranéhna kudu ngarasa keur ngagunakeun FitSite -- hiji platform anu diwangun pikeun industri maranéhna. Pangajaran ieu ngabahas branding, white-labeling, jeung kumaha ngajadikeun platform karasa siga hiji produk.
 

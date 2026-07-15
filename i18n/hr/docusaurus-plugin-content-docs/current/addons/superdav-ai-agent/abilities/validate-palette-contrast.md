@@ -3,7 +3,7 @@ title: Provjeri kontrast palete
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Provjera kontrasta palete {#validate-palette-contrast}
+# Provjera kontrasta palete
 
 Sposobnost **Validate Palette Contrast** provjerava parove boja u vašoj dizajnerskoj paleti radi usklađenosti s WCAG (Web Content Accessibility Guidelines) prije njihove primjene na vašu temu.
 

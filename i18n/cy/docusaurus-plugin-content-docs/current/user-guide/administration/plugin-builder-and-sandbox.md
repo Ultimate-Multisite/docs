@@ -3,7 +3,7 @@ title: Ymddygiwr Plugin a Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Gweithredigwr Plugin & Sandbox {#plugin-builder--sandbox}
+# Gweithredigwr Plugin & Sandbox
 
 Mae Gratis AI Agent v1.5.0 yn cyflwyno'r **Plugin Builder & Sandbox System**, sy'n sylw'r AI assistant i ddatblygu, gael ei chwarae, a’u’i rheoli pluginau WordPress ar eich rheini — pob yn ymlaen drwy ffoethafiad bach, wedi'i sicrhau mewn amgylchedd bach a'raddasu.
 

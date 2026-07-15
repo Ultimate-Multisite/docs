@@ -3,7 +3,7 @@ title: Ρύθμιση της Σταθεράς Sunrise στο Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ρύθμιση της σταθεράς Sunrise σε true στο Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Ρύθμιση της σταθεράς Sunrise σε true στο Closte
 
 Ορισμένοι πάροχοι φιλοξενίας κλειδώνουν το αρχείο wp-config.php για λόγους ασφαλείας. Αυτό σημαίνει ότι το Ultimate Multisite δεν μπορεί να επεξεργαστεί αυτόματα το αρχείο για να προσθέσει τις απαραίτητες σταθερές που χρειάζονται για τη λειτουργία της αντιστοίχισης domain και άλλων χαρακτηριστικών. Το Closte είναι ένας τέτοιος πάροχος.
 

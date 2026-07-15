@@ -4,7 +4,7 @@ title: Çalakî - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Çalakî: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Çalakî: wp_ultimo_host_providers_load
 
 Destûrê dide pêşvebirvanan ku bi rêya WordPress plugin-ên xwe ve yekbûnên pêşkêşkerê hostê zêde bikin.
 

@@ -4,7 +4,7 @@ title: فیلتر - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# فیلتر: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# فیلتر: wu_pending_payment_message
 
 به کاربر اجازه می‌دهد تا پیام مربوط به پرداخت‌های معلق را تغییر دهد.
 

@@ -3,7 +3,7 @@ title: Saytları İdarə Etmək
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Saytları İdarə Etmək {#managing-sites}
+# Saytları İdarə Etmək
 
 Saytlar (və ya alt-saytlar) WaaS biznesinizin əsasını təşkil edir. Ultimate Multisite-da 3 növ sayt mövcuddur:
 

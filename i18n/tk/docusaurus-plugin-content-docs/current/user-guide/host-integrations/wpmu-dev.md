@@ -3,7 +3,7 @@ title: WPMU DEV Integrasiýa
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Entegrasi {#wpmu-dev-integration}
+# WPMU DEV Entegrasi
 
 ## Genel Bakış {#overview}
 WPMU DEV, WordPress siteleri için barındırma (hosting), eklentiler ve hizmetler sunan kapsamlı bir WordPress platformudur. Bu entegrasyon, Ultimate Multisite ile WPMU DEV barındırması arasında otomatik alan adı senkronizasyonu ve SSL sertifikası yönetimini sağlar.

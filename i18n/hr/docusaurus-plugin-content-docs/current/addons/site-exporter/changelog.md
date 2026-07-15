@@ -3,7 +3,7 @@ title: Dnevnik promjena izvoznika web-mjesta
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Dnevnik promjena Site Exporter {#site-exporter-changelog}
+# Dnevnik promjena Site Exporter
 
 Verzija: 1.0.6 - Objavljeno 2026-05-11
 * Novo: Izvozi web-mjesta sada uključuju samopokrećući index.php kako bi se ZIP mogao instalirati na svježem hostu bez zasebne instalacije plugin

@@ -3,7 +3,7 @@ title: Irekhodi Lotshintsho Lomthumeli Ngaphandle Wesayithi
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Ingxelo yeenguqu ze-Site Exporter {#site-exporter-changelog}
+# Ingxelo yeenguqu ze-Site Exporter
 
 Uguqulelo: 1.0.6 - Ikhutshwe nge-2026-05-11
 * Entsha: Ukuthunyelwa ngaphandle kweesayithi ngoku kubandakanya i-index.php ezivulela ngokwayo ukuze i-ZIP ifakelwe kumamkeli omtsha ngaphandle kofakelo lwe-plugin olwahlukileyo

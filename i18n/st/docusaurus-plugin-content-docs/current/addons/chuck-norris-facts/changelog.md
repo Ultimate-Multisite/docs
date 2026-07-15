@@ -3,7 +3,7 @@ title: Lenane la Liphetoho la Lintlha tsa Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Lenane la liphetoho la Linnete tsa Chuck Norris {#chuck-norris-facts-changelog}
+# Lenane la liphetoho la Linnete tsa Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Ho kentsoe: Tshebetso ya ntlafatso ya boiketsetso ka seva ya dintlafatso ya Ultimate Multisite

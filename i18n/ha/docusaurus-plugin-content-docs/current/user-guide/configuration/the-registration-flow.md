@@ -3,7 +3,7 @@ title: Wurin shigarwa
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# شێوازی تۆمارکردن (v2) {#the-registration-flow-v2}
+# شێوازی تۆمارکردن (v2)
 
 _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتنی 2.x.**_
 

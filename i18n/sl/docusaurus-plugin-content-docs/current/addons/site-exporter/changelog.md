@@ -3,7 +3,7 @@ title: Dnevnik sprememb Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Dnevnik sprememb Site Exporter {#site-exporter-changelog}
+# Dnevnik sprememb Site Exporter
 
 Različica: 1.0.6 - Izdano 2026-05-11
 * Novo: Izvozi spletnih mest zdaj vključujejo samodejno zagonski index.php, zato je ZIP mogoče namestiti na svežega gostitelja brez ločene namestitve plugina

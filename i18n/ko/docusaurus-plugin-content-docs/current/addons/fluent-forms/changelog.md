@@ -3,7 +3,7 @@ title: Fluent Forms 변경 로그
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms 변경 로그 {#fluent-forms-changelog}
+# Fluent Forms 변경 로그
 
 버전: 2.0.1 - 2025-09-28에 출시
 

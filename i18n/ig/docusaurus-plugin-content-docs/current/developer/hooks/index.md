@@ -3,7 +3,7 @@ title: Ntụaka Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Ntụaka Hooks {#hooks-reference}
+# Ntụaka Hooks
 
 Akwụkwọ ntụaka emepụtara na-akpaghị aka maka **omume 59** niile na **nzacha 118** niile dị na Ultimate Multisite.
 

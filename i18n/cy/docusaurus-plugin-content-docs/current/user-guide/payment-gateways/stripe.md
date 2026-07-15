@@ -3,7 +3,7 @@ title: Cyflwyno Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ymddio'r Gweithredoedd Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Ymddio'r Gweithredoedd Stripe (v2)
 
 _**NOTIADOLIA CRYTID: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite ffurf 2.x.**_
 

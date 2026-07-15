@@ -3,7 +3,7 @@ title: Àwọn Àdàkọ Ojúlé
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**AKIYESI: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x. Tí o bá ń lo ẹ̀yà 1.x,**_ **wo àpilẹ̀kọ yìí** _**.**_
 

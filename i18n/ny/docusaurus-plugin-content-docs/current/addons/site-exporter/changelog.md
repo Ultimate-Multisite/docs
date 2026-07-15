@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Chotumizira Tsamba
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Changelog {#site-exporter-changelog}
+# Site Exporter Changelog
 
 Mtundu: 1.0.6 - Watulutsidwa pa 2026-05-11
 * Chatsopano: Zotumiza za site tsopano zimaphatikiza index.php yodziyambitsa yokha kuti ZIP ikhazikitsidwe pa host watsopano popanda kukhazikitsa plugin ina padera

@@ -3,7 +3,7 @@ title: लोगो SVG बनाएं
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# लोगो SVG जनरेट करें {#generate-logo-svg}
+# लोगो SVG जनरेट करें
 
 **Generate Logo SVG** क्षमता Theme Builder को आपकी WordPress साइट में कस्टम लोगो SVG बनाने और उन्हें एम्बेड करने की अनुमति देती है, जिसमें स्वचालित रूप से नेमस्पेस-सुरक्षित सैनिटाइजेशन (namespace-safe sanitisation) शामिल होता है।
 

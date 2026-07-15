@@ -4,7 +4,7 @@ title: Sivana - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Sivana: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Sivana: wu_post_count_statuses
 
 Avelao ny mpamorona plugin hanova izay satan’ny lahatsoratra tokony ho isaina. Amin’ny alàlan’ny default, ny lahatsoratra navoaka sy private no isaina
 

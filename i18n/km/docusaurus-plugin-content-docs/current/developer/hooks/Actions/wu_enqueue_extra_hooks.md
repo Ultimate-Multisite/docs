@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# សកម្មភាព: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# សកម្មភាព: wu_enqueue_extra_hooks
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍកម្មវិធីបន្ថែមបន្ថែម hook ផ្សេងទៀត
 

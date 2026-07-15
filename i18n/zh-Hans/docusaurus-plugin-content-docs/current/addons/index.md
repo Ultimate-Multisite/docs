@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons 通过额外功能和集成来扩展 Ultimate Multisite。大多数 Addons 为付费项目，可从 [ultimatemultisite.com](https://ultimatemultisite.com) 购买。
 

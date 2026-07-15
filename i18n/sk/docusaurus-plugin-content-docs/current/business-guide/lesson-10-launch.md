@@ -3,7 +3,7 @@ title: 'Lekcia 10: Deň spustenia'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekcia 10: Deň spustenia {#lesson-10-launch-day}
+# Lekcia 10: Deň spustenia
 
 Všetko je pripravené. Skôr než otvoríte dvere, táto lekcia vás prevedie predspúšťacím kontrolným zoznamom, aby ste sa uistili, že nič nie je pokazené, nechýba ani nepôsobí trápne.
 

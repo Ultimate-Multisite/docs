@@ -3,7 +3,7 @@ title: Kreator konfiguracji Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Kreator konfiguracji Multisite {#multisite-setup-wizard}
+# Kreator konfiguracji Multisite
 
 Ultimate Multisite zawiera wbudowany kreator, który automatycznie przekształca standardową instalację WordPress w sieć WordPress Multisite. Dzięki temu nie trzeba ręcznie edytować pliku `wp-config.php` ani uruchamiać poleceń bazodanowych.
 

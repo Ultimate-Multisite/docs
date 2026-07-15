@@ -3,7 +3,7 @@ title: Logotip SVG döret
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG döretmek {#generate-logo-svg}
+# Logo SVG döretmek
 
 **Logo SVG döretmek** başarnygy Theme Builder-e awtomatik namespace-howpsuz arassalama bilen ýörite logo SVG-lerini göni WordPress saýtyňyza döretmäge we ýerleşdirmäge mümkinçilik berýär.
 

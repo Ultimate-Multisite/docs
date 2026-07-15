@@ -3,9 +3,9 @@ title: ඇඩෝන අච්චුව
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# ඇඩෝන අච්චුව {#addon-template}
+# ඇඩෝන අච්චුව
 
-{{ADDON_DESCRIPTION}}
+ඇඩෝන අච්චුව — Ultimate Multisite.
 
 ## අවශ්‍යතා {#requirements}
 

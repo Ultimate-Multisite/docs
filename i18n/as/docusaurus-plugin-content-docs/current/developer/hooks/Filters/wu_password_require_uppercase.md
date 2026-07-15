@@ -4,7 +4,7 @@ title: ফিল্টাৰ - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filter: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filter: wu_password_require_uppercase
 
 পাসৱৰ্ডত ডাঙৰ আখৰ (uppercase letters) প্ৰয়োজন নে নাই, সেয়া ফিল্টৰ কৰে।
 

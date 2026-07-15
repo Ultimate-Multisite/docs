@@ -3,7 +3,7 @@ title: የብጁ የሪጅስትራ ውህደት መገንባት
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# የራጅስትራ ውህደት (Registrar Integration) መገንባት {#building-a-custom-registrar-integration}
+# የራጅስትራ ውህደት (Registrar Integration) መገንባት
 
 የDomain Seller addon በ**Integration Registry** (የውህደት መመዝገቢያ) ስርዓት ላይ የተመሰረተ ነው። እያንዳንዱ ራጅስትራ (registrar) የ`Domain_Selling_Capability`ን የሚተገብር የPHP ክፍል (class) ሲሆን፣ በ`wu_domain_seller_register_capabilities` action hook አማካኝነት ራሱን ይመዘግባል።
 

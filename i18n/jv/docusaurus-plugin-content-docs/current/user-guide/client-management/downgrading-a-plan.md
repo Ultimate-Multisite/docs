@@ -3,7 +3,7 @@ title: Ngranggepake Paket
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Turunkan paket (v2) {#downgrading-a-plan-v2}
+# Turunkan paket (v2)
 
 _**CATATAN PENTING: Artikel iki merujuk pada Ultimate Multisite versi 2.x.**_
 

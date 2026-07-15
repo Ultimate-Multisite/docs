@@ -3,7 +3,7 @@ title: Integrare Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integrarea Cloudflare {#cloudflare-integration}
+# Integrarea Cloudflare
 
 ## Prezentare generală {#overview}
 Cloudflare este o rețea de livrare a conținutului (CDN) și un furnizor de securitate de top, care ajută la protejarea și accelerarea site-urilor web. Această integrare permite gestionarea automată a domeniilor între Ultimate Multisite și Cloudflare, în special pentru instalările multisite pe subdomenii.

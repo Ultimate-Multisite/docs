@@ -3,7 +3,7 @@ title: Kaihanga Whārangi Kaiwhakahaere Rangitaki Huringa
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Rangitaki Huringa Kaihanga Whārangi Whakahaere {#admin-page-creator-changelog}
+# Rangitaki Huringa Kaihanga Whārangi Whakahaere
 
 ### Putanga 1.9.0 - I tukuna i te 2026-01-18 {#version-190---released-on-2026-01-18}
 

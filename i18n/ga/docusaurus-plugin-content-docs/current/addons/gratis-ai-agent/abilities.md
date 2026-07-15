@@ -3,7 +3,7 @@ title: Tagairt Cumais
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tagairt d'Ábaltachtaí {#abilities-reference}
+# Tagairt d'Ábaltachtaí
 
 Is iad na hábaltachtaí na gníomhartha adamhacha is féidir le Gratis AI Agent a agairt ar do shuiteáil WordPress. Is rang PHP cláraithe gach ábaltacht a nochtann scéimre JSON — léann an agent an scéimre seo ag am rite chun tuiscint a fháil ar na paraiméadair atá riachtanach agus ar a bhfilleann an ábaltacht.
 

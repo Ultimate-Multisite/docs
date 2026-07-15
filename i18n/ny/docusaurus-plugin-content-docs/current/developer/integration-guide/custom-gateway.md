@@ -3,7 +3,7 @@ title: Kupanga Chipata Chosinthidwa Mwamakonda
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Kupanga Gateway Yachikhalidwe {#custom-gateway-development}
+# Kupanga Gateway Yachikhalidwe
 
 Mutha kupanga ma gateway olipirira achikhalidwe powonjezera kalasi ya `Base_Gateway`.
 

@@ -3,7 +3,7 @@ title: Ho lula le ho fana ka ho setseha le ho fana ka ho fana
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup le Setsopebo le Provider {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Setup le Setsopebo le Provider
 
 Le addon ya Domain Seller e le setsopebo le wizard a tšoa a o fana'a ho fana'a ka se a fetola ka se a fetola. Le lapa le le thisa e fetola le flow ya wizard le how u fetola kapa ho fetola le provider fa nako.
 

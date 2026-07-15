@@ -3,7 +3,7 @@ title: Csomag visszaminősítése
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Csomag visszaminősítése (v2) {#downgrading-a-plan-v2}
+# Csomag visszaminősítése (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 

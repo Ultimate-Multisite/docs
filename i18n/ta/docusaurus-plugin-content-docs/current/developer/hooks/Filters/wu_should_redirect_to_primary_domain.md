@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filter: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Filter: wu_should_redirect_to_primary_domain
 
 திசை திருப்புதல் (redirection) நடக்காமல் இருக்க, இதை பயன்படுத்தி அதைத் தடுக்க (short-circuit) டெவலப்பர்கள் வழிவகை செய்யலாம்.
 

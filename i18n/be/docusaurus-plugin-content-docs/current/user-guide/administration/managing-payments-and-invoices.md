@@ -3,7 +3,7 @@ title: Кантроль раслічэнняў і рахункаў-фактур
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Кіраванне Плацментамі і Паўторнымі Арахуваннямі {#managing-payments-and-invoices}
+# Кіраванне Плацментамі і Паўторнымі Арахуваннямі
 
 ## Налады Плацментаў {#payment-settings}
 

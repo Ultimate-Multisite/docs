@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# ਫਿਲਟਰ: wu_sso_url {#filter-wussourl}
+# ਫਿਲਟਰ: wu_sso_url
 
 ਕਰਾਸ-ਡੋਮੇਨ ਗਾਹਕ ਕਾਰਵਾਈਆਂ ਲਈ ਵਾਪਸ ਕੀਤੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਬਣਾਏ ਗਏ SSO URLs ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
 

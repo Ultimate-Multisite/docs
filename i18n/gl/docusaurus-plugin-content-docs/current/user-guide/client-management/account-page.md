@@ -3,7 +3,7 @@ title: Página de Conta do Cliente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# A Página de Conta do Cliente (v2) {#your-clients-account-page-v2}
+# A Página de Conta do Cliente (v2)
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 

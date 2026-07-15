@@ -3,7 +3,7 @@ title: 'Lektion 7: Es zu Ihrem eigenen machen'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lektion 7: Es zu Ihrem machen {#lesson-7-making-it-yours}
+# Lektion 7: Es zu Ihrem machen
 
 Ihre Kunden dürfen niemals das Gefühl haben, sie nutzen „irgendein WordPress-Plugin“. Sie sollten das Gefühl haben, sie nutzen FitSite – eine Plattform, die speziell für ihre Branche entwickelt wurde. In dieser Lektion behandeln wir Branding, White-Labeling und wie Sie die Plattform wie ein eigenständiges Produkt wirken lassen.
 

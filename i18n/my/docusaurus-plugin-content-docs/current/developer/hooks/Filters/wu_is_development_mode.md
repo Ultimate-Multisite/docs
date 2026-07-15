@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filter: wu_is_development_mode
 
 ပလပ်အင် ဖန်တီးသူများအနေဖြင့် ဖွံ့ဖြိုးရေးပုံစံ (development mode) အတွက် စစ်ဆေးမှုများကို ထပ်မံထည့်သွင်းနိုင်စေရန်။
 

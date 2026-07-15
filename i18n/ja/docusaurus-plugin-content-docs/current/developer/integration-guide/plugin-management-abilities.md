@@ -3,7 +3,7 @@ title: プラグイン管理機能
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# プラグイン管理機能 {#plugin-management-abilities}
+# プラグイン管理機能
 
 Gratis AI Agent v1.5.0 には、会話中にAIアシスタントが呼び出すことができる**7つのプラグイン管理機能**が搭載されています。これらの機能は、[Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) を通じてインストールされたWordPressプラグインに対して、プログラムによる制御を提供します。
 

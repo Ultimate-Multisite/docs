@@ -3,7 +3,7 @@ title: 'Ders 7: Wê ya xwe bike'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Ders 7: Wê Bike ya Xwe {#lesson-7-making-it-yours}
+# Ders 7: Wê Bike ya Xwe
 
 Mişteriyên te divê qet hest nekin ku ew "tenê plugin-ekî WordPress" bi kar tînin. Divê hest bikin ku ew FitSite bi kar tînin -- platformek ku ji bo sektora wan hatiye çêkirin. Ev ders li ser avakirina markeyê, white-label kirin, û çêkirina hestê ku platform wek hilberek e diaxive.
 

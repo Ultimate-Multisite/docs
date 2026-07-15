@@ -4,7 +4,7 @@ title: Action - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Action: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Action: mu_migration/import/user/custom_data_before
 
 在匯出自訂使用者資料之前觸發。
 

@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# ตัวกรอง: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# ตัวกรอง: wu_stripe_existing_product_id
 
 ใช้สำหรับกรอง ID ของสินค้าที่ต้องการตรวจสอบ หากมีค่านี้อยู่ การสมัครสมาชิกใหม่จะใช้สินค้าตัวนี้แทน
 

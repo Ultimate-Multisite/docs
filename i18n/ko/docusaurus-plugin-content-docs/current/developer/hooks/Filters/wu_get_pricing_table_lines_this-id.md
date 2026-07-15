@@ -4,7 +4,7 @@ title: '필터 - wu_get_pricing_table_lines_{$this->id}'
 sidebar_label: 'wu_get_pricing_table_lines_{$this->id}'
 _i18n_hash: 3b494479aaa9d638a7bd1824c1ec0daf
 ---
-# 필터: wu_get_pricing_table_lines_{$this->id} {#filter-wugetpricingtablelinesthis-id}
+# 필터: wu_get_pricing_table_lines_{$this->id}
 
 라인 반환, 필터 가능
 

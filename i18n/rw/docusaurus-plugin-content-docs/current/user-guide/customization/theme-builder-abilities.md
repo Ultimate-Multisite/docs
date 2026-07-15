@@ -3,7 +3,7 @@ title: Uburyo bwo gukora uburyo bw'umuri
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Ibisya y'Uburyo mu nshuti ya Theme Builder: Scaffold na Gukora Theme Block {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Ibisya y'Uburyo mu nshuti ya Theme Builder: Scaffold na Gukora Theme Block
 
 Superdav AI Agent v1.12.0 igitangira uburyo bishobora kugera ku gukora no gukoresha theme block cyangwa custom ku chat interface.
 

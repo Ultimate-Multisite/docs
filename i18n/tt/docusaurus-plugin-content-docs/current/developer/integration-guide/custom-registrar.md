@@ -3,7 +3,7 @@ title: Махсус регистратор интеграциясен төзү
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Махсус регистратор интеграциясен төзү {#building-a-custom-registrar-integration}
+# Махсус регистратор интеграциясен төзү
 
 Domain Seller addon **Integration Registry** үрнәген куллана. Һәр регистратор — `Domain_Selling_Capability` гамәлгә ашыручы һәм үзен `wu_domain_seller_register_capabilities` action hook аша теркәүче PHP классы.
 

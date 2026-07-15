@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# ການກະທຳ: wu_page_load {#action-wupageload}
+# ການກະທຳ: wu_page_load
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ hooks ເພີ່ມເຕີມໃສ່ໜ້າຂອງພວກເຮົາ.
 

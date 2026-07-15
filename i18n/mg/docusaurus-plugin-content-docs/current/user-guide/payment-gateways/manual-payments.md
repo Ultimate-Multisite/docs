@@ -3,7 +3,7 @@ title: Fametrahana Fandoavam-bola Amin-tanana
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Fametrahana ny Fandoavam-bola amin'ny tanana (v2) {#setting-up-manual-payments-v2}
+# Fametrahana ny Fandoavam-bola amin'ny tanana (v2)
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite kinova 2.x.**_
 

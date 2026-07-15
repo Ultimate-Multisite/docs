@@ -3,7 +3,7 @@ title: 'Lezzjoni 3: It-Twaqqif tan-Netwerk Tiegħek'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lezzjoni 3: It-Twaqqif tan-Network Tiegħek {#lesson-3-setting-up-your-network}
+# Lezzjoni 3: It-Twaqqif tan-Network Tiegħek
 
 Wasal iż-żmien li tibni. F'din il-lezzjoni se tinstalla Ultimate Multisite u tikkonfigura l-pedament tan-network FitSite. Kull deċiżjoni hawnhekk tittieħed b'moħħ in-niċċa tal-fitness.
 

@@ -4,7 +4,7 @@ title: کړنه - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Action: wu_site_created {#action-wusitecreated}
+# Action: wu_site_created
 
 هغه مهال فعالېږي کله چې یو سایټ د لومړي ځل لپاره جوړ شي.
 

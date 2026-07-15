@@ -4,7 +4,7 @@ title: Aksi - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Aksi: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Aksi: wu_page_enqueue_scripts
 
 Nambahkeun action kustom di dieu supaya urang boga tempat pikeun enqueue scripts jeung styles sakumaha diperyogikeun\ sarta mastikeun éta ngan dimuat dina kaca anu luyu
 

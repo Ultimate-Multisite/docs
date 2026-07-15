@@ -3,7 +3,7 @@ title: 'Pelajaran 12: Menguruskan Perniagaan'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Pelajaran 12: Mengurus Perniagaan {#lesson-12-running-the-business}
+# Pelajaran 12: Mengurus Perniagaan
 
 Platform bukan sekadar projek yang boleh disiapkan—ia adalah perniagaan yang perlu anda uruskan. Pelajaran ini merangkumi operasi harian menguruskan FitSite: sokongan, pengbilan, penyelenggaraan, dan memastikan pelanggan gembira.
 

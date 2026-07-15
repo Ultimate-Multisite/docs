@@ -3,7 +3,7 @@ title: Contoh Kode Tingkat Lanjut
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Contoh Kode Tingkat Lanjut {#advanced-code-examples}
+# Contoh Kode Tingkat Lanjut
 
 Contoh-contoh ini menunjukkan pola integrasi tingkat lanjut dengan Ultimate Multisite.
 

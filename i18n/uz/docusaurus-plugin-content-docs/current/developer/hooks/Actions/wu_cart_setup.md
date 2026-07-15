@@ -4,7 +4,7 @@ title: Amal - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Amal: wu_cart_setup {#action-wucartsetup}
+# Amal: wu_cart_setup
 
 Dasturchilarga checkout obyektiga qo‘shimcha o‘zgarishlar kiritishga ruxsat beradi.
 

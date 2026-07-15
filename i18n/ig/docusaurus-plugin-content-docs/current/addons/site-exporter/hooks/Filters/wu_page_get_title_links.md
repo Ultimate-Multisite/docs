@@ -4,7 +4,7 @@ title: Nzacha - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 Na-enye ndị mmepe plugin, na anyị onwe anyị, ohere itinye njikọ omume na ibe ndezi anyị.
 

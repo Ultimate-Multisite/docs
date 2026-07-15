@@ -3,7 +3,7 @@ title: Kontribuari kontua
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Itzako Klientaren Kontua Pagelua (v2) {#your-clients-account-page-v2}
+# Itzako Klientaren Kontua Pagelua (v2)
 
 _**GARRAPEN ESENTZIALA: Hau artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du.**_
 

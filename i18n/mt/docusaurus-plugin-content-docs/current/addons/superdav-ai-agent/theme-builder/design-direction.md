@@ -3,7 +3,7 @@ title: Direzzjoni tad-Disinn
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direzzjoni tad-Disinn {#design-direction}
+# Direzzjoni tad-Disinn
 
 Il-pass **Direzzjoni tad-Disinn** jippermettilek tirrevedi, tirfina, u tiffinalizza d-disinn viżiv tat-theme tiegħek qabel ma Theme Builder jiġġenera t-theme kompluta.
 

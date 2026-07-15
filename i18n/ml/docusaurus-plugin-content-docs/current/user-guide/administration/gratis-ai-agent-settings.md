@@ -3,7 +3,7 @@ title: Gratis AI Agent ക്രമീകരണങ്ങൾ
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent ക്രമീകരണങ്ങൾ {#gratis-ai-agent-settings}
+# Gratis AI Agent ക്രമീകരണങ്ങൾ
 
 Gratis AI Agent-ിലെ **Settings → Advanced** സ്ക്രീൻ backend സംയോജനങ്ങൾക്കായുള്ള administrator തലത്തിലുള്ള ക്രമീകരണം നൽകുന്നു. feedback forwarding, search provider keys, നിയന്ത്രിത Superdav സേവന സജ്ജീകരണം, Google Calendar നിയന്ത്രണങ്ങൾ, TextBee SMS ക്രമീകരണങ്ങൾ, network-wide feature flags എന്നിവ ഈ പേജ് രേഖപ്പെടുത്തുന്നു.
 

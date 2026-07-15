@@ -3,7 +3,7 @@ title: RunCloud ඒකාබද්ධ කිරීම
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud ඒකාබද්ධ කිරීම (RunCloud Integration) {#runcloud-integration}
+# RunCloud ඒකාබද්ධ කිරීම (RunCloud Integration)
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 RunCloud කියන්නේ ඔබගේම கிளவுட் සේවාදායකයන් මත වෙබ් යෙදුම් පහසුවෙන් ස්ථාපනය කිරීමට සහ කළමනාකරණය කිරීමට ඉඩ සලසන, ක්ලවුඩ් පාදක සේවාදායක කළමනාකරණ වේදිකාවකි. Ultimate Multisite සහ RunCloud අතර ස්වයංක්‍රීය ડોමේන් සමමුහුර්ත කිරීම (domain syncing) සහ SSL සහතිකපත් කළමනාකරණය සඳහා මෙම ඒකාබද්ධතාව භාවිතා කළ හැකියි.

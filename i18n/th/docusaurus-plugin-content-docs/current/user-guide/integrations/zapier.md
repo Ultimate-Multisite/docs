@@ -3,7 +3,7 @@ title: การผสานการทำงานกับ Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# การผสาน Ultimate Multisite กับ Zapier {#integrating-ultimate-multisite-with-zapier}
+# การผสาน Ultimate Multisite กับ Zapier
 
 ในหนึ่งในบทความ เราได้พูดถึง [Webhooks](webhooks.md) และวิธีที่สามารถใช้เพื่อผสานกับแอปพลิเคชันของบุคคลที่สามได้
 

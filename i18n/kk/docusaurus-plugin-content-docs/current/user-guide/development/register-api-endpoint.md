@@ -3,7 +3,7 @@ title: API конетін тіркеу
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API конечная точка (endpoint) {#the-ultimate-multisite-register-api-endpoint}
+# The Ultimate Multisite Register API конечная точка (endpoint)
 
 Бұл туториалда сіз Ultimate Multisite /register API конечную точку қолданып, желіңіздегі жаңа клиент үшін бүкіл іріктіру процесін қалай құру керектігін және бұл жұмысты Zapier арқылы қалай жүзеге асыру керектігін үйренесіз.
 

@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# សកម្មភាព៖ wu_centered_content {#action-wucenteredcontent}
+# សកម្មភាព៖ wu_centered_content
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍ plugin បន្ថែមមាតិកាបន្ថែមនៅក្នុងជួរឈរកណ្តាល។
 

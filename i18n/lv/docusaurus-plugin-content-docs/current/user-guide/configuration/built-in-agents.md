@@ -3,7 +3,7 @@ title: Iebūvētie aģenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Iebūvētie aģenti {#built-in-agents}
+# Iebūvētie aģenti
 
 Gratis AI Agent v1.9.0 tiek piegādāts ar pieciem iebūvētiem aģentiem, katrs iepriekš konfigurēts ar fokusētu rīku kopu, pielāgotu sistēmas uzvedni un sākuma ieteikumiem, kas atbilst bieži sastopamiem uzdevumiem attiecīgajā jomā. Pārslēgšanās starp aģentiem maina to, ko asistents var darīt un kā tas atbild — bez jebkādas konfigurēšanas no jūsu puses. Superdav AI Agent v1.18.0 var pievienot šīm darbplūsmām grafiku apzinošus rīkus, atgādinājumu ierakstus, apstiprināšanas vārtus un SMS paziņojumus, kad ir konfigurētas saistītās integrācijas.
 

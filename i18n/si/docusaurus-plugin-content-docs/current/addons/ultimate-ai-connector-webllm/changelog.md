@@ -3,7 +3,7 @@ title: WebLLM සඳහා Ultimate AI Connector වෙනස්කම් සට
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# WebLLM සඳහා Ultimate AI Connector වෙනස්කම් ලේඛනය {#ultimate-ai-connector-for-webllm-changelog}
+# WebLLM සඳහා Ultimate AI Connector වෙනස්කම් ලේඛනය
 
 ## අනුවාදය 1.1.0 — 2026-04-09 දින නිකුත් කරන ලදී {#version-110--released-on-2026-04-09}
 

@@ -4,7 +4,7 @@ title: Hlunga - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Isihlungi: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Isihlungi: wu_sites_column_limit
 
 Isihlungi sokushintsha inani le-get pluginssites ngaphakathi kwenethiwekhi.
 

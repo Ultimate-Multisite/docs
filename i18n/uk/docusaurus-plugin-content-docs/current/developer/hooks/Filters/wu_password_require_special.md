@@ -4,7 +4,7 @@ title: Фільтр - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Фільтр: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Фільтр: wu_password_require_special
 
 Визначає, чи потрібно вимагати спеціальні символи у паролях.
 

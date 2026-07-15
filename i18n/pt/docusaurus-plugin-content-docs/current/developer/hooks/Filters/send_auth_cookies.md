@@ -4,7 +4,7 @@ title: Filtro - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filtro: send_auth_cookies {#filter-sendauthcookies}
+# Filtro: send_auth_cookies
 
 Permite impedir que cookies de autenticação sejam efetivamente enviados ao cliente.
 

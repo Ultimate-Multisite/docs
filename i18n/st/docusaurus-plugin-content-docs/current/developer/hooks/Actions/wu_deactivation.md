@@ -4,7 +4,7 @@ title: Ketso - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Ketso: wu_deactivation {#action-wudeactivation}
+# Ketso: wu_deactivation
 
 Dumella dikarolo tse ding tsa plugin ho hokela ditsamaiso tsa tsona bakeng sa ho tima
 

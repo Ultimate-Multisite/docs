@@ -4,7 +4,7 @@ title: Action - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# 动作: wu_page_added {#action-wupageadded}
+# 动作: wu_page_added
 
 允许插件开发者在页面注册时执行额外操作。
 

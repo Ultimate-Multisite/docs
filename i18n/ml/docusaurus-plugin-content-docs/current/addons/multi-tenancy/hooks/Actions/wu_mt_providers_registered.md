@@ -4,7 +4,7 @@ title: Action - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Action: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Action: wu_mt_providers_registered
 
 ഡിഫോൾട്ട് പ്രൊവൈഡർമാരെ രജിസ്റ്റർ ചെയ്തതിന് ശേഷം ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

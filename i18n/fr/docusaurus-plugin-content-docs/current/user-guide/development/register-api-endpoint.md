@@ -3,7 +3,7 @@ title: Enregistrer le point de terminaison API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Le point de terminaison API /register de Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Le point de terminaison API /register de Ultimate Multisite
 
 Dans ce tutoriel, vous apprendrez à utiliser le point de terminaison API /register de Ultimate Multisite pour créer l’ensemble du processus d’onboarding d’un nouveau client dans votre réseau et comment le faire avec Zapier.
 

@@ -3,7 +3,7 @@ title: Yuav teeb tsa kev map domain li cas
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Yuav Teeb Domain Mapping Li Cas (v2) {#how-to-configure-domain-mapping-v2}
+# Yuav Teeb Domain Mapping Li Cas (v2)
 
 _**LUS CEEB TOOM TSEEM CEEB: Tsab ntawv no hais txog Ultimate Multisite version 2.x.**_
 

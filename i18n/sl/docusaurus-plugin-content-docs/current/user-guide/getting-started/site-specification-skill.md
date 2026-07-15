@@ -3,7 +3,7 @@ title: Specifikacija spretnosti za spletno mesto
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Veve specifikacija spretnosti za spletno mesto {#site-specification-skill}
+# Veve specifikacija spretnosti za spletno mesto
 
 Spretnina **Site Specification** je strukturiran pristop do dokumentiranja ciljev vašega spletnega mesta, publike in identitete blagovne znamke. Ta informacij je shranjena v vašem memoriji **site_brief**, ki jo agenti uporabljajo med seznami za zagotavljanje dosledne, kontekstno obveščene pomoči.
 

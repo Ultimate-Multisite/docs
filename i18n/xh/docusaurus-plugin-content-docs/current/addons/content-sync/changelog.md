@@ -3,7 +3,7 @@ title: Ingxelo yotshintsho loNgqamaniso loMxholo
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Ilog yotshintsho ye-Content Sync {#content-sync-changelog}
+# Ilog yotshintsho ye-Content Sync
 
 ### Inguqulelo 1.1.0 - Ikhutshwe nge-2025-12-31 {#version-110---released-on-2025-12-31}
 * Entsha: Inkxaso yokuvumelanisa zonke iintlobo zezithuba (izithuba, amaphepha, iintlobo zezithuba ezenzelwe wena)

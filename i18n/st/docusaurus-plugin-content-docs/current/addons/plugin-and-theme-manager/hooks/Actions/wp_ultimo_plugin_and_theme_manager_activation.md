@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Ketso: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# Ketso: wp_ultimo_plugin_and_theme_manager_activation
 
 Lumella dikarolo tse ding tsa plugin ho hokela mekgwa ya tsona bakeng sa activation
 

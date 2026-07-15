@@ -3,7 +3,7 @@ title: WooCommerce אינטעגראַציע ענדערונגס־לאָג
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce אינטעגראַציע ענדערונג־לאָג {#woocommerce-integration-changelog}
+# WooCommerce אינטעגראַציע ענדערונג־לאָג
 
 ווערסיע 2.2.0 - אַרויסגעלאָזט דעם 2026-07-01
 * נײַ: Ultimate Multisite שטייער־סומעס ווײַזן זיך איצט ווי באַזונדערע WooCommerce אָפּצאָל־שורות בײַ checkout, וואָס מאַכט שטייער־סך־הכּל קלאָרער פֿאַר צאָלונג.

@@ -3,7 +3,7 @@ title: گريدپین انٽيغريشن
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integration {#gridpane-integration}
+# GridPane Integration
 
 ## جائزہ (Overview) {#overview}
 GridPane هڪ خاص WordPress هاستين ڪنٽرول پینل آهي جيڪو گهڻي سنجيده WordPress پروفيسينل لاءِ ٺاهيو ويو آهي. هي ان انٽيغريشن سان Ultimate Multisite ۽ GridPane بابت آڊمان سنڪرينگ (domain syncing) ۽ SSL سرٽيفڪيٽ جي مانيجمنٽ جو خودکار عمل شروع ٿئي ٿو.

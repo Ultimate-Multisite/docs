@@ -3,7 +3,7 @@ title: پێچەوانەکانی گیتھەر
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# چۆنی بەکارهێنانی قطعات (snippets) ی Ultimate Multisite لە گیتھب رپۆزیۆری ئێم {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# چۆنی بەکارهێنانی قطعات (snippets) ی Ultimate Multisite لە گیتھب رپۆزیۆری ئێم
 
 لە گیتھب رپۆزیۆریدا قطعاتی کۆد دەبینیت کە بەردەوام داواکراون لەلایەن بەکارهێنەرانی Ultimate Multisite کە دەیانەوێت کارایییە بچووکەکانی وەک زیادکردنی سکرێپتی Google Analytics لە صفحات تۆمار (sign-up pages) یان پۆشاندنی کاتی meta box لە داشبۆردی ئیدارەدا ئەوە بکەن.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# چۆنی قطعتەکە لە فایلەکەی theme's functions.php دابنێیت. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# چۆنی قطعتەکە لە فایلەکەی theme's functions.php دابنێیت.
 
   1. بچۆ بۆ داشبۆردی ئیدارەی WordPress Network و بگواشبە Themes > Theme Editor (وێنەی خوارەوە ببینە).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- وێنەیەکی نییە: WordPress Theme Editor دەربکەت بەدوای کارکردنی فایلەکەی functions.php -->
 
-# چۆنی Must-Use Plugins (mu-plugins) دروست بکەیت {#how-to-create-must-use-plugins-mu-plugins}
+# چۆنی Must-Use Plugins (mu-plugins) دروست بکەیت
 
 WordPress تایبەتمەندێک هەیە کە ڕێگە دەدات کۆنترۆڵی تایبەتیی پێکهێنانی "Must-Use Plugins"، یان بە کورت MU-plugins، بارکردن بکەیت.
 

@@ -3,7 +3,7 @@ title: Sito šablonavimai
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Szabdomod modeliai (v2) {#site-templates-v2}
+# Szabdomod modeliai (v2)
 
 _**SUTRA: Šis straipsnis susijęs su Ultimate Multisite versija 2.x. Jei naudojate versiją 1.x,**_ **prieš skone šį straipsnis** _**.**_
 

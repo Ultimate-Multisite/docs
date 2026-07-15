@@ -3,7 +3,7 @@ title: Első lépések a bővítményfejlesztésben
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Kiegészítő fejlesztés {#addon-development}
+# Kiegészítő fejlesztés
 
 ## Kiegészítő szerkezet {#addon-structure}
 

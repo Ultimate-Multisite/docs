@@ -4,7 +4,7 @@ title: Hetsika - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Hetsika: wu_page_added {#action-wupageadded}
+# Hetsika: wu_page_added
 
 Avelao ny mpamorona plugin hampandeha zavatra fanampiny rehefa voasoratra anarana ny pejy.
 

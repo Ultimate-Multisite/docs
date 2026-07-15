@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filter: wu_current_set_site {#filter-wucurrentsetsite}
+# Filter: wu_current_set_site
 
 ഡെവലപ്പർമാർക്ക് ഡിഫോൾട്ട് ബിഹേവിയർ മാറ്റാനും നിലവിലെ സൈറ്റ് വ്യത്യസ്തമായി സെറ്റ് ചെയ്യാനും ഇത് അനുവദിക്കുന്നു.
 

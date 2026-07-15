@@ -3,7 +3,7 @@ title: Dnevnik sprememb Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Dnevnik sprememb Captcha {#captcha-changelog}
+# Dnevnik sprememb Captcha
 
 Različica: 1.5.0 - Izdano 2026-05-22
 * Novo: Omejevalnik hitrosti s popolno zaustavitvijo — šteje vsak GET in POST na površinah, zaščitenih s captcha (wp-login / registracija / izgubljeno geslo / komentarji, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) in odgovori z HTTP 429, `Retry-After` headerjem ter naključnim tarpit mirovanjem (1–5 s, s trdo zgornjo mejo 15 s).

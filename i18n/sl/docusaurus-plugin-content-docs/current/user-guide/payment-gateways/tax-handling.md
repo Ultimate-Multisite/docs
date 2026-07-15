@@ -3,7 +3,7 @@ title: Obravnava davkov
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obravnava davkov {#tax-handling}
+# Obravnava davkov
 
 Ultimate Multisite ima modul za pobiranje davkov vgrajen v naš osnovni plugin, zato lahko, če morate pobirati prometne davke za svoje pakete, pakete storitev in storitve, to preprosto storite brez nameščanja kakršnih koli dodatkov.
 

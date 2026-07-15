@@ -3,7 +3,7 @@ title: 'Domene, produkter og priser'
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenedukter og prissetting {#domain-products-and-pricing}
+# Domenedukter og prissetting
 
 Domeneduktene er der du styrer prissetting, TLDer, WHOIS-personvern og hvilken leverandør som skal brukes. Hver domenedukke er et standard Ultimate Multisite-produkt med en ekstra fane kalt **Domain Settings**.
 

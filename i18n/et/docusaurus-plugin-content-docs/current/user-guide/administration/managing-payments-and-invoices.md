@@ -3,7 +3,7 @@ title: Makside ja faktuuride haldamine
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Makside maksude ja faktuuride haldamine {#managing-payments-and-invoices}
+# Makside maksude ja faktuuride haldamine
 
 ## Makse seadistused {#payment-settings}
 

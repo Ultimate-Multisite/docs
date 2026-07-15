@@ -3,7 +3,7 @@ title: Ngā whakamāhi o te Whakahaere Wāhi
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms Whakaaro Aotūroa (Site Builder) {#site-builder-contact-forms}
+# Forms Whakaaro Aotūroa (Site Builder)
 
 Ko Superdav AI Agent v1.10.0 e whāinga te mahi toi o te whakamaoritanga o ngā tōkanga whakapā (contact forms) i runga i te chat interface, ka whakamahi ai te Site Builder agent. Ko te mea he tino pai, e hoki ahau ki te chat hei whero i ngā forms Whakaaro Aotūroa (contact forms) mō ahau.
 

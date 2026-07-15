@@ -3,7 +3,7 @@ title: 'Isomo rya 9: Gushyiraho ibiciro hagamijwe inyungu'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Isomo rya 9: Ibiciro Bigamije Inyungu {#lesson-9-pricing-for-profit}
+# Isomo rya 9: Ibiciro Bigamije Inyungu
 
 Mu Isomo rya 5 twashyizeho ibiciro by'ibanze bya gahunda za FitSite. Ubu turanoza ingamba z'ibiciro dukoresheje tekiniki zongera amafaranga yinjira, zishishikariza kuzamura gahunda, kandi zigabanya guhagarika serivisi.
 

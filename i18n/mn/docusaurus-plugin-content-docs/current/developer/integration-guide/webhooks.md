@@ -3,7 +3,7 @@ title: Webhook боловсруулалт
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook боловсруулах {#webhook-handling}
+# Webhook боловсруулах
 
 Гадаад үйлчилгээнүүдээс үйл явдлууд хүлээн авч, өгөгдлийг Ultimate Multisite-тай синк хийхийн тулд өөрийн webhook төгсгөлийн цэгүүдийг үүсгэнэ үү.
 

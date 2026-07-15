@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# Filter: wp_ultimo_site_exporter_get_option
 
 స్లగ్ చేయబడిన నెట్‌వర్క్ ఆప్షన్ విలువను తిరిగి ఇస్తుంది.
 

@@ -4,7 +4,7 @@ title: 'လုပ်ဆောင်ချက် - wu_checkout_add_field_{$field_
 sidebar_label: 'wu_checkout_add_field_{$field_class->get_type()}'
 _i18n_hash: 2cac4ddcc6228d9da73b73f6a58f3d2a
 ---
-# Action: wu_checkout_add_field_\{$field_class->get_type()\} {#action-wucheckoutaddfieldfieldclass-gettype}
+# Action: wu_checkout_add_field_\{$field_class->get_type()\}
 
 Checkout ပုံစံမှာ field အသစ်တစ်ခု ထည့်ဖို့ ကြိုတင် အလုပ်လုပ်တဲ့ Action တစ်ခု ဖြစ်ပါတယ်။
 

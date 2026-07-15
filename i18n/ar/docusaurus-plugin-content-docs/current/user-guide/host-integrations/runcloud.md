@@ -3,7 +3,7 @@ title: تكامل RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# تكامل RunCloud {#runcloud-integration}
+# تكامل RunCloud
 
 ## نظرة عامة {#overview}
 RunCloud هو منصة لإدارة الخوادم قائمة على السحابة تتيح لك نشر وإدارة تطبيقات الويب على خوادمك السحابية الخاصة بسهولة. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite وRunCloud.

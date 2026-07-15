@@ -3,7 +3,7 @@ title: Einrichtung und Anbieter-Konfiguration
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Einrichtung und Provider-Konfiguration {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Einrichtung und Provider-Konfiguration
 
 Das Domain Seller Addon wird mit einem geführten Einrichtungsassistenten ausgeliefert, der dich durch jeden erforderlichen Schritt führt. Diese Seite behandelt den Ablauf des Assistenten und wie du Provider anschließend konfigurierst oder neu konfigurierst.
 

@@ -3,7 +3,7 @@ title: Integrasi Panel Kontrol Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrasi Hestia Control Panel {#hestia-control-panel-integration}
+# Integrasi Hestia Control Panel
 
 Panduan ini menjelaskan cara mengonfigurasi integrasi Hestia di Ultimate Multisite agar domain yang dipetakan di jaringan Anda secara otomatis ditambahkan (dan dihapus) sebagai Web Domain Alias di Hestia.
 

@@ -3,7 +3,7 @@ title: 'Les 14: Wat volgende kom'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Les 14: Wat Kom Volgende {#lesson-14-what-comes-next}
+# Les 14: Wat Kom Volgende
 
 Jy het 'n nis-webwerf platform van die begin opgebou. FitSite is live, dien fiksheidsstudio's, en genereer herhalende inkomste. Hierdie finale les kyk na waar jy vandaan kan gaan.
 

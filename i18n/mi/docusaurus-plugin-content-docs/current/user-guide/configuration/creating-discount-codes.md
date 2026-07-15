@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Kōrero Kōrero Whakawāhi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Whakawhanaungahau Kōrero (v2) {#creating-discount-codes-v2}
+# Whakawhanaungahau Kōrero (v2)
 
 _**TŪTOHUTU MAHU: Ko tēnei kōrero e tino whakamahia mō Ultimate Multisite v2.x.**_
 

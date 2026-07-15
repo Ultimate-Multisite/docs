@@ -4,7 +4,7 @@ title: Criathrag - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Criathrag: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Criathrag: wu_checkout_step_validation_submittable_field_types
 
 Leig le luchd-leasachaidh an dearbhadh a sheachnadh ma tha raon fèin-chur-a-steach.
 

@@ -3,7 +3,7 @@ title: 'ਸਬਕ 10: ਲੌਂਚ ਦਾ ਦਿਨ'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day {#lesson-10-launch-day}
+# Lesson 10: Launch Day
 
 ਸਭ ਕੁਝ ਬਣ ਗਿਆ ਹੈ। ਦੁਕਾਨ ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ, ਇਹ ਲੈਸਨ ਇੱਕ 'ਪ੍ਰੀ-ਲੌਂਚ ਚੈੱਕਲਿਸਟ' (pre-launch checklist) ਦੱਸਦਾ ਹੈ ਤਾਂ ਜੋ ਇਹ ਯਕੀਨੀ ਹੋ ਸਕੇ ਕਿ ਕੁਝ ਵੀ ਟੁੱਟਿਆ ਹੋਇਆ, ਗਾਇਬ, ਜਾਂ ਸ਼ਰਮਨਾ ਵਾਲਾ ਨਾ ਹੋਵੇ।
 

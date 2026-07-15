@@ -3,7 +3,7 @@ title: Internet keresés
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internetkeresés {#internet-search}
+# Internetkeresés
 
 A Gratis AI Agent v1.5.0 hozzáad egy **Internetkeresést** (Internet Search) képességet, amely lehetővé teszi az AI asszisztens számára, hogy a beszélgetés során friss információkat szerezzen be a webről. Ez a funkció a [Brave Search API](https://brave.com/search/api/) vagy a [Tavily API](https://tavily.com/) segítségével működik.
 

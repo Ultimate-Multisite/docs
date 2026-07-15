@@ -4,7 +4,7 @@ title: Actio - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Actio: wu_deactivation {#action-wudeactivation}
+# Actio: wu_deactivation
 
 Permitte ut aliae partes additamenti suas rationes ad deactivationem annectant
 

@@ -3,7 +3,7 @@ title: Noticio pri la forigo de Modo Konstrui Siton
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notitzum pri Entferon de Modilo Konstrui (Site Builder Mode) {#site-builder-mode-removal-notice}
+# Notitzum pri Entferon de Modilo Konstrui (Site Builder Mode)
 
 **La modilo Site Builder a espagi en Superdav AI Agent v1.12.0.** Se necese migri al **Setup Assistant agent** por kreo temoj kaj montri la siton.
 

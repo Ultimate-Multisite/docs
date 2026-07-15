@@ -3,7 +3,7 @@ title: 发送电子邮件和群发消息
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# 发送电子邮件和广播 (v2) {#sending-emails-and-broadcasts-v2}
+# 发送电子邮件和广播 (v2)
 
 _**重要提示：本文涉及 Ultimate Multisite 版本 2.x。**_
 

@@ -3,7 +3,7 @@ title: 'Ders 14: Sonra Ne Gelecek'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Ders 14: Sonra Ne Gelecek {#lesson-14-what-comes-next}
+# Ders 14: Sonra Ne Gelecek
 
 Sıfırdan bir niş web sitesi platformu oluşturdunuz. FitSite yayında, fitness stüdyonlara hizmet veriyor ve düzenli gelir elde ediyorsunuz. Bu son ders, bundan sonra nereye gideceğinize bakıyor.
 

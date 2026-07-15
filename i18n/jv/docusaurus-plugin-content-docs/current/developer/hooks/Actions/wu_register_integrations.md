@@ -4,7 +4,7 @@ title: Aksi - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Tindakan: wu_register_integrations {#action-wuregisterintegrations}
+# Tindakan: wu_register_integrations
 
 Dipicu kanggo ngidini integrasi ndhaptaraké awake dhewe.
 

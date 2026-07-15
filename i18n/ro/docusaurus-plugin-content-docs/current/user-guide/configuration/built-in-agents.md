@@ -3,7 +3,7 @@ title: Agenți integrați
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agenți încorporați {#built-in-agents}
+# Agenți încorporați
 
 Gratis AI Agent v1.9.0 livrează cinci agenți încorporați, fiecare preconfigurat cu un set concentrat de instrumente, un prompt de sistem adaptat și sugestii de început potrivite pentru sarcini comune din acea zonă. Comutarea între agenți schimbă ce poate face asistentul și cum răspunde — fără nicio configurare din partea ta. Superdav AI Agent v1.18.0 poate adăuga instrumente care țin cont de program, înregistrări de mementouri, porți de aprobare și notificări SMS acestor fluxuri de lucru atunci când integrările aferente sunt configurate.
 

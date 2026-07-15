@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Anjicium in rete tuum cum Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Anjicium in rete tuum cum Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector est **un add-on gratuitus** qui tibi instrumenta daret ad collocandum annons in planibus tuis, iam ex pagina editurae eorum.
 

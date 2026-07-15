@@ -3,7 +3,7 @@ title: Nustabdykite Saiklio konstanta Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Sunrise konstanto nustatymas Closteje {#setting-the-sunrise-constant-to-true-on-closte}
+# Sunrise konstanto nustatymas Closteje
 
 Kai kurie hostų tiekėjai užblokuoja wp-config.php saugumo priežasčių dėl saugos. Tai reiškia, kad Ultimate Multisite negali automatiškai redaguoti failą ir įdėti reikalingus konstantas, kad domenų netyrinimas ir kitos funkcijos tiktų veikti. Closte yra vienas tokių hostų.
 

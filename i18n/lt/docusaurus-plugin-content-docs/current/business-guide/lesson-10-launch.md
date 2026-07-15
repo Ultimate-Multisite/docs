@@ -3,7 +3,7 @@ title: '10 pamoka: Paleidimo diena'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# 10 pamoka: Paleidimo diena {#lesson-10-launch-day}
+# 10 pamoka: Paleidimo diena
 
 Viskas sukurta. Prieš atverdami duris, ši pamoka pereina per priešpaleidiminį kontrolinį sąrašą, kad įsitikintumėte, jog niekas nėra sugedę, praleista ar nepatogu.
 

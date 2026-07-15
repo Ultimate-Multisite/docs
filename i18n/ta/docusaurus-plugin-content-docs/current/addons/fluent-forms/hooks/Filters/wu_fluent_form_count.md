@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count {#filter-wufluentformcount}
+# Filter: wu_fluent_form_count
 
 플러ഗിன் உருவாக்குநர்கள் படிவங்களின் மொத்த எண்ணிக்கையை மாற்ற இது அனுமதிக்கிறது.
 

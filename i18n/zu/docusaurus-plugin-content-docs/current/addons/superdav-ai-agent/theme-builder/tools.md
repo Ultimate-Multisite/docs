@@ -3,7 +3,7 @@ title: Amathuluzi Nokucushwa
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Amathuluzi Nokulungiselela {#tools-and-configuration}
+# Amathuluzi Nokulungiselela
 
 Theme Builder isebenzisa isethi yamathuluzi ukuhlaziya, ukuklama, nokwakha isayithi lakho le-WordPress. Kunguqulo 1.16.0, **sd-ai-agent/site-scrape manje isiyithuluzi le-Tier 1**, okwenza litholakale ngokuzenzakalelayo ku-Theme Builder. Superdav AI Agent v1.18.0 iphinde yethule iphakheji elihambisana nayo le-Advanced elisatshalaliswa ngokwehlukana lezinhlelo zokusebenza zonjiniyela abethembekile; lawo mathuluzi aweyona ingxenye yephakheji eyinhloko ye-WordPress.org futhi kufanele afakwe futhi agunyazwe ngokwehlukana.
 

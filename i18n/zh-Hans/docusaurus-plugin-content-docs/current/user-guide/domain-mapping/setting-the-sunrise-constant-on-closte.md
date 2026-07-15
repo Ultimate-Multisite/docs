@@ -3,7 +3,7 @@ title: 在 Closte 上设置 Sunrise 常量
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# 在 Closte 上将 Sunrise 常量设置为 true {#setting-the-sunrise-constant-to-true-on-closte}
+# 在 Closte 上将 Sunrise 常量设置为 true
 
 出于安全原因，一些托管服务提供商会锁定 wp-config.php。这意味着 Ultimate Multisite 无法自动编辑该文件，以加入使域名映射和其他功能正常工作所需的常量。Closte 就是这样的托管服务提供商之一。
 

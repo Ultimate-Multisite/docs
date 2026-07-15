@@ -3,7 +3,7 @@ title: Sayt satyn etme
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sayt Çykarmak (Site Export) {#site-export}
+# Sayt Çykarmak (Site Export)
 
 **Sayt Çykarmak** admin sahəsi sizi bir saytı, ýa-da bütün ulgamy bir dowamly arkivi hökmünde indirip almagyňyz üçin paketlemek üçäm. Bu, migratsiya, buýruklama (backup) ýa-da başga birine bertarap etmek işleri üçin amatlydyr.
 

@@ -3,7 +3,7 @@ title: Ukwakha Umkhiqizo Wakho Wokuqala Wokubhalisa
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ukudala Umkhiqizo wakho Wokuqala Wokubhaliselwe (v2) {#creating-your-first-subscription-product-v2}
+# Ukudala Umkhiqizo wakho Wokuqala Wokubhaliselwe (v2)
 
 _**INOTHI ELIBALULEKILE: Lesi sihloko esabasebenzisi be-Ultimate Multisite version 2.x kuphela. Uma usebenzisa version 1.x,**_ **_**bona lesi sihloko**_**.
 

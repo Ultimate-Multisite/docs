@@ -3,7 +3,7 @@ title: Fluxul de înregistrare
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fluxul de înregistrare (v2) {#the-registration-flow-v2}
+# Fluxul de înregistrare (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

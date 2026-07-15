@@ -3,7 +3,7 @@ title: Annullamento di un abbonamento
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Annullamento di una membership (v2) {#canceling-a-membership-v2}
+# Annullamento di una membership (v2)
 
 _**NOTA IMPORTANTE: Questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 

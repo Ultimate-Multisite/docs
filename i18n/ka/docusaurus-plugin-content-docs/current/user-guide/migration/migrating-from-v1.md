@@ -3,7 +3,7 @@ title: V1-დან გადასვლა
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-დან გადასვლა (Migrating from V1) {#migrating-from-v1}
+# V1-დან გადასვლა (Migrating from V1)
 
 ## Ultimate Multisite თავის ორიგინალური 1.x გამოშვებების ოჯახიდან 2.x ოჯახში გადავიდა. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

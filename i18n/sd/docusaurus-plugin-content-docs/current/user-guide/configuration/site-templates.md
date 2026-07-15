@@ -3,7 +3,7 @@ title: سائٽ ٽيملٽس
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# साइट टेम्प्लेट्स (v2) {#site-templates-v2}
+# साइट टेम्प्लेट्स (v2)
 
 _**نوٹ: यो लेख Ultimate Multisite को संस्करण 2.x लाई सन्दर्भ ڪري ٿو. جيڪڏهن توهان version 1.x استعمال ڪري رهيا آهيو، ته**_ **هي مضمون ڏسو.**_**.**_
 

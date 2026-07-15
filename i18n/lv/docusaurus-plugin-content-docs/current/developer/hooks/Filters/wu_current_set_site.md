@@ -4,7 +4,7 @@ title: Filtrs - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filtrs: wu_current_set_site {#filter-wucurrentsetsite}
+# Filtrs: wu_current_set_site
 
 Ļauj izstrādātājiem mainīt noklusējuma darbību un iestatīt pašreizējo vietni citādi.
 

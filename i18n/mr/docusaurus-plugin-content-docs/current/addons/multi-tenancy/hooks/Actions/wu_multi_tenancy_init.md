@@ -4,7 +4,7 @@ title: Action - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Action: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Action: wu_multi_tenancy_init
 
 मल्टि-टेनन्सी अॅडऑन (Multi-Tenancy addon) पूर्णपणे सुरू (initialize) झाल्यावर हे अॅक्शन ट्रिगर होते.
 

@@ -4,7 +4,7 @@ title: Penapis - wu_independent_billing_cycle_product_types
 sidebar_label: wu_independent_billing_cycle_product_types
 _i18n_hash: 2b9bd3b68a53424272c1c93c6bdc3ef5
 ---
-# Filter: wu_independent_billing_cycle_product_types {#filter-wuindependentbillingcycleproducttypes}
+# Filter: wu_independent_billing_cycle_product_types
 
 Menapis jenis produk yang mempunyai kitaran pengebilan bebas.
 

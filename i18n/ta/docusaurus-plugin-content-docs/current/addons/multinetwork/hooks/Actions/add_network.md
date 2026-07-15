@@ -4,7 +4,7 @@ title: செயல் - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Action: add_network {#action-addnetwork}
+# Action: add_network
 
 புதிய நெட்வொர்க் சேர்க்கப்பட்ட பிறகு இது இயங்கும்.
 

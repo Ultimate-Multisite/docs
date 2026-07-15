@@ -3,7 +3,7 @@ title: A’ gnàthachadh an fhoirm clàraidh agad
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# A’ gnàthachadh an Fhoirm Chlàraidh agad {#customizing-your-registration-form}
+# A’ gnàthachadh an Fhoirm Chlàraidh agad
 
 Gus am bi coltas gun samhail air an lìonra agad an taca ris a h-uile SaaS eile a chaidh a thogail air àrd-ùrlar WordPress, leigidh Ultimate Multisite leat na duilleagan clàraidh is logaidh a-steach agad a ghnàthachadh leis an fheart **Checkout Forms** againn.
 

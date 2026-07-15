@@ -3,7 +3,7 @@ title: Gratis AI Agent سيٽنگون
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent جون سيٽنگون {#gratis-ai-agent-settings}
+# Gratis AI Agent جون سيٽنگون
 
 Gratis AI Agent ۾ **سيٽنگون → ترقي يافته** اسڪرين پٺئين حصي جي انضمامن لاءِ منتظم-سطح جي ترتيب فراهم ڪري ٿي. هي صفحو فيڊبيڪ اڳتي موڪلڻ، ڳولا فراهم ڪندڙن جون چاٻيون، منظم Superdav خدمت جي سيٽ اپ، Google Calendar ڪنٽرولز، TextBee SMS سيٽنگون، ۽ سڄي نيٽ ورڪ لاءِ فيچر فليگس کي دستاويز ڪري ٿو.
 

@@ -4,7 +4,7 @@ title: Զտիչ - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Զտիչ՝ wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Զտիչ՝ wu_checkout_field_templates
 
 Մեր API-ները՝ նոր դաշտերի ձևանմուշներ ավելացնելու համար, կցվում են այստեղ։
 

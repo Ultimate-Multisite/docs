@@ -4,7 +4,7 @@ title: Filtre - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Filtre: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# Filtre: wu_stripe_generate_idempotency_key
 
 Filtra el valor de la clau d'idempotència (`idempotency_key`) que s'envia amb les opcions de càrrega/pagament de Stripe.
 

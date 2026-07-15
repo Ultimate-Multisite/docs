@@ -3,7 +3,7 @@ title: Cachekirina Daxwazê ya Li Gorî Dabînkerê
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cachekirina Prompt ya Li Gorî Provider {#provider-aware-prompt-caching}
+# Cachekirina Prompt ya Li Gorî Provider
 
 Superdav AI Agent v1.12.0 **cachekirina prompt ya li gorî provider** dide nasîn, ku lêçûnên API û derengmayînê bi cachekirina promptan di navbera providerên cuda yên LLM de baştir dike. Her provider mekanîzma û mîhengên cachekirinê yên cuda hene.
 

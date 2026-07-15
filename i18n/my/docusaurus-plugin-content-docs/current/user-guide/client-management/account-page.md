@@ -3,7 +3,7 @@ title: ဖောက်သည် Account စာမျက်နှာ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# သင့်ဖောက်သည်၏ Account စာမျက်နှာ (v2) {#your-clients-account-page-v2}
+# သင့်ဖောက်သည်၏ Account စာမျက်နှာ (v2)
 
 _**အရေးကြီး မှတ်ချက်: ဤဆောင်းပါးသည် Ultimate Multisite ဗားရှင်း 2.x ကို ရည်ညွှန်းထားသည်။**_
 

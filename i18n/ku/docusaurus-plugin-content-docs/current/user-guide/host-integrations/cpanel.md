@@ -3,7 +3,7 @@ title: یکردنەوەی cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrationi cPanel {#cpanel-integration}
+# Integrationi cPanel
 
 ## Pêşknowsî (Overview) {#overview}
 cPanel ewerî ji ek bira panela kontrolî web hosting ye ku gelek pênasekên hostingên payewe (shared) û dede (dedicated) li parastina ve yên gelek kes hatine li ser. Ev integrasyon gelek xwediyê ye ku ji bo hinekî bi rastî (automatic) bikin domain alias û subdomain ji bo hesabê cPanel yê we bi rastî zêde bikin.

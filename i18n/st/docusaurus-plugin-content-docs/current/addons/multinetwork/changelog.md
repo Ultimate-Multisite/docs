@@ -3,7 +3,7 @@ title: Lenane la liphetoho la Marang-rang a Mangata
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Lenane la Liphetoho la Multi-Network {#multi-network-changelog}
+# Lenane la Liphetoho la Multi-Network
 
 ### 1.3.0 {#130}
 * E ncha: Seboni sa thempleite ea netweke — bala le ho shebella thempleite ea netweke ka phanele e phelang pele o reka.

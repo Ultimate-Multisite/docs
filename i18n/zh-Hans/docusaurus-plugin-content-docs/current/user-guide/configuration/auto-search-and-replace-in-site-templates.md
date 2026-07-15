@@ -3,7 +3,7 @@ title: 站点模板中的自动搜索和替换
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# 在站点模板中自动搜索和替换 (v2) {#auto-search-and-replace-in-site-templates-v2}
+# 在站点模板中自动搜索和替换 (v2)
 
 _**本教程需要 WP UItimo 版本 2.x。**_
 

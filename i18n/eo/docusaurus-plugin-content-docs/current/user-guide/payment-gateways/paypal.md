@@ -3,7 +3,7 @@ title: Konfigurado de PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# La Konfiguracio de la Pasarela PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# La Konfiguracio de la Pasarela PayPal (v2)
 
 _**NOTO IMPORTANTE: Esta artikolo se refi a Ultimate Multisite versio 2.x.**_
 

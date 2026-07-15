@@ -3,7 +3,7 @@ title: চাক নৰিস ফেক্টছ চেঞ্জলগ
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts Changelog {#chuck-norris-facts-changelog}
+# Chuck Norris Facts Changelog
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * যোগ কৰা হৈছে: Ultimate Multisite update serverৰ জৰিয়তে স্বয়ংক্রিয় আপডেট কাৰ্য্যক্ষমতা।

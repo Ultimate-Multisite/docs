@@ -3,7 +3,7 @@ title: Ngā Utauta me te Whirihoranga
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ngā Utauta me te Whirihoranga {#tools-and-configuration}
+# Ngā Utauta me te Whirihoranga
 
 Ka whakamahi a Theme Builder i tētahi huinga utauta hei tātari, hei hoahoa, hei hanga i tō pae WordPress. I te putanga 1.16.0, **kua noho a sd-ai-agent/site-scrape hei utauta Taumata 1**, nō reira e wātea taunoa ana i Theme Builder. Ka whakauru hoki a Superdav AI Agent v1.18.0 i tētahi mōkihi hoa Advanced ka tohaina motuhake mō ngā rerengamahi kaiwhakawhanake pono; ehara aua utauta i te wāhanga o te mōkihi matua WordPress.org, ā, me tāuta, me whakamana motuhake.
 

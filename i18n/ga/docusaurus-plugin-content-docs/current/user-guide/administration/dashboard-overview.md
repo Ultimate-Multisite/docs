@@ -3,7 +3,7 @@ title: Oibríocht an t-aonlaíocht
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Oibríocht an Dashboard {#dashboard-overview}
+# Oibríocht an Dashboard
 
 Tá **Dashboard** ar fáil ar an meán Ultimate Multisite, agus tá aisteach ar chuid widget-a ar an Network Dashboard. Cuireann an athraithe seo i gcónaí an ardánacha seo.
 

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# ଫିଲ୍ଟର: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# ଫିଲ୍ଟର: wu_woocommerce_line_item_params
 
 WooCommerce Cart ରେ ଲାଇନ୍ ଆଇଟମ୍ ତିଆରି ପାଇଁ ବ୍ୟବହୃତ ପାରାମିଟରଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରେ, ଗ୍ରାହକଙ୍କୁ WooCommerce ଚେକଆଉଟ୍‌କୁ ପୁନଃନିର୍ଦ୍ଦେଶ କରିବା ପୂର୍ବରୁ।
 

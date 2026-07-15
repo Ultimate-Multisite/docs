@@ -4,7 +4,7 @@ title: ফিল্টার - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Filter: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Filter: wu_checkout_form_base_domains
 
 শেয়ার করা checkout-form বেস ডোমেইন ফিল্টার করে, যাতে সেগুলো ম্যাপ করা ডোমেইন রেকর্ডে পরিণত না হয়।
 

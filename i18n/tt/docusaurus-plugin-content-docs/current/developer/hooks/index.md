@@ -3,7 +3,7 @@ title: Хуклар белешмәсе
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks белешмәсе {#hooks-reference}
+# Hooks белешмәсе
 
 Ultimate Multisite эчендәге барлык **59 гамәл** һәм **118 фильтр** өчен автоматик рәвештә ясалган документация.
 

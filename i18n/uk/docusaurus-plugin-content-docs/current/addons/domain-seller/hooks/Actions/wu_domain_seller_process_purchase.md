@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Дія: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Дія: wu_domain_seller_process_purchase
 
 Виконується, коли обробляється купівля домену після завершення оформлення замовлення.
 

@@ -3,7 +3,7 @@ title: నమోదు ప్రక్రియ
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# నమోదు ప్రవాహం (v2) {#the-registration-flow-v2}
+# నమోదు ప్రవాహం (v2)
 
 _**ముఖ్య గమనిక: ఈ వ్యాసం Ultimate Multisite వెర్షన్ 2.x కు సంబంధించినది.**_
 

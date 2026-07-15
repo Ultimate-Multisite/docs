@@ -4,7 +4,7 @@ title: Shaandheeye - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Shaandheeye: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Shaandheeye: wu_is_mcp_enabled
 
 U oggolow horumariyeyaasha plugin inay ku khasbaan xaalad la siiyay la-qabsadaha MCP.
 

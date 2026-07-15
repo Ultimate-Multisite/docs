@@ -3,7 +3,7 @@ title: 'Lição 9: Precificação para Lucro'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lição 9: Precificação para Lucro {#lesson-9-pricing-for-profit}
+# Lição 9: Precificação para Lucro
 
 Na Lição 5, definimos os preços iniciais para os planos do FitSite. Agora, vamos refinar a estratégia de preços com técnicas que aumentam a receita, incentivam upgrades e reduzem o *churn*.
 

@@ -3,7 +3,7 @@ title: Mga Menu sa Pag-abiabi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Mga Menu sa Hospitality {#hospitality-menus}
+# Mga Menu sa Hospitality
 
 Ang feature nga **Mga Menu sa Hospitality** nagtugot sa Theme Builder sa paghimo ug pag-embed og istrukturadong mga panid sa menu sa pagkaon ug ilimnon direkta sa imong WordPress nga website.
 

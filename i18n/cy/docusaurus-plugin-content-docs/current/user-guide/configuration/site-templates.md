@@ -3,7 +3,7 @@ title: Modelau y safonau
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelau Gweithiau (v2) {#site-templates-v2}
+# Modelau Gweithiau (v2)
 
 _**NOTIA: Mae'r ail nghydig hwn yn cyfeiriad i Ultimate Multisite fersiwn 2.x. Os ydych chi yn defnyddio fersiwn 1.x,**_ **gwneudwch yllori hwn.**_
 

@@ -3,7 +3,7 @@ title: Jihada Naqshadeynta
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Jiheynta Naqshadda {#design-direction}
+# Jiheynta Naqshadda
 
 Tallaabada **Jiheynta Naqshadda** waxay kuu oggolaanaysaa inaad dib u eegto, sifayso, oo dhammaystirto naqshadda muuqaalka ee theme-kaaga ka hor inta Theme Builder uusan abuurin theme-ka dhammaystiran.
 

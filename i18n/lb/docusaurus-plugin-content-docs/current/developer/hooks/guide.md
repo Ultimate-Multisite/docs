@@ -3,7 +3,7 @@ title: Hooks-Benotzungsguide
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hook-Benotzungsleedfuedem {#hooks-usage-guide}
+# Hook-Benotzungsleedfuedem
 
 Ultimate Multisite bitt 200+ Action Hooks an 280+ Filter Hooks. Dës Säit behandelt déi am heefegste benotzt Hooks mat praktesche Beispiller. Fir eng komplett automatesch generéiert Referenz, kuckt déi aner Säiten an dëser Sektioun duerch.
 

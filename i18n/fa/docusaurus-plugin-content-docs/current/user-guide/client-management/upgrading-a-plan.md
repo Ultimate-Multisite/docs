@@ -3,7 +3,7 @@ title: ارتقای یک طرح
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# ارتقای یک طرح (v2) {#upgrading-a-plan-v2}
+# ارتقای یک طرح (v2)
 
 _**نکته مهم: این مقاله به نسخه 2.x از Ultimate Multisite اشاره دارد.**_
 

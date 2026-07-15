@@ -3,7 +3,7 @@ title: Przepływ pracy migracji suwerennej
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Przepływ migracji suwerennej {#sovereign-migration-workflow}
+# Przepływ migracji suwerennej
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 wprowadza bramy weryfikacyjne dla przenoszenia standardowego subsite'u do infrastruktury najsuwerennego najemcy (sovereign tenant).
 

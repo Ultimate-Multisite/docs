@@ -3,7 +3,7 @@ title: A'zolik muddati tugashi va sayt bloklash
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# A'zo Bo'lish Muddati va Sayt Bloklash {#membership-expiration-and-site-blocking}
+# A'zo Bo'lish Muddati va Sayt Bloklash
 
 Bu qo'llanma Ultimate Multisite ning a'zo bo'lish muddati tugashi, sinov davrlari yakunlanishi va frontend saytlarni bloklash jarayonini tushuntiradi. U a'zo bo'lishning faol holatdan tugagan holatgacha bo'lgan butun siklini, saytlar bloklanishini boshqaradigan sozlamalarni va a'zo muddati tugagandan so'ng saytlarning qanday kirish mumkinligini tekshirish kerak bo'lgan narsalarni o'z ichiga oladi.
 

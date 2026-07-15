@@ -3,7 +3,7 @@ title: Abuur Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Samee Logo SVG {#generate-logo-svg}
+# Samee Logo SVG
 
 Awoodda **Samee Logo SVG** waxay Theme Builder u oggolaanaysaa inuu abuuro oo si toos ah ugu dhex daro logo SVGyo gaar ah site-kaaga WordPress, iyadoo leh nadiifin otomaatig ah oo namespace-safe ah.
 

@@ -3,7 +3,7 @@ title: Võimatu üürituse operatsioonid
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Suvereenne lejas operaatsioonid {#sovereign-tenant-operations}
+# Suvereenne lejas operaatsioonid
 
 Ultimate Multisite versioon 1.2.0 lisab operatiivseid tööriistu suvereenilistele lejas (sovereign) lejas: subsaitide, mis töötavad oma database, faili süste root ja routing konteksti abil, samal ajal kui neid on nähtavest võrku administraatorilt.
 

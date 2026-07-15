@@ -4,7 +4,7 @@ title: Aiki - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Aiki: delete_network {#action-deletenetwork}
+# Aiki: delete_network
 
 Yana faruwa bayan an goge cibiyar sadarwa.
 

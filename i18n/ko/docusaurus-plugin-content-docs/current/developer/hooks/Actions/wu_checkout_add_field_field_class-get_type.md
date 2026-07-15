@@ -4,7 +4,7 @@ title: '액션 - wu_checkout_add_field_{$field_class->get_type()}'
 sidebar_label: 'wu_checkout_add_field_{$field_class->get_type()}'
 _i18n_hash: 2cac4ddcc6228d9da73b73f6a58f3d2a
 ---
-# 액션: wu_checkout_add_field_\{$field_class->get_type()\} {#action-wucheckoutaddfieldfieldclass-gettype}
+# 액션: wu_checkout_add_field_\{$field_class->get_type()\}
 
 체크아웃 양식에 필드가 추가되기 전에 실행됩니다.
 

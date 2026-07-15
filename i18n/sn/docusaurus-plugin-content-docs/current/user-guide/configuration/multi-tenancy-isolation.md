@@ -3,7 +3,7 @@ title: Kutanga kweMulti-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolation yaMweya (Multi-Tenancy) {#multi-tenancy-isolation}
+# Isolation yaMweya (Multi-Tenancy)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inosirisa isolation yechitambo chedatabase nefilesystem kwa subsite dziri kune vana vanovaka (sovereign tenants). Izvi zvinokumbira kuti data ya tenant ine kutanga kwakasiyana, kunyanya kuendesa mweya wekuchengetedza (network-level provisioning), kukumbira (billing), nekuvaka (administration).
 

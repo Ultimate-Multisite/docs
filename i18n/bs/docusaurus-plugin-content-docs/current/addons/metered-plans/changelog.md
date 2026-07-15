@@ -3,7 +3,7 @@ title: Člonačnik promjena (Changelog) mjerenih planova
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Dnevnik promjena za planove s mjerenjem (Metered Plans) {#metered-plans-changelog}
+# Dnevnik promjena za planove s mjerenjem (Metered Plans)
 
 Version 1.1.0 - Released on 2026-05-05
 - Novo: Naplata AI tokena za multisite pod-sajtove — praćenje i naplata korištenja AI tokena na različitim sajtovima klijenata sa mogućnošću konfiguracije cijene po tokenu.

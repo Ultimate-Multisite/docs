@@ -4,7 +4,7 @@ title: 필터 - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# 필터: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# 필터: wu_ses_verification_integration
 
 필터: 다른 코드가 SES 통합 객체를 제공할 수 있도록 허용합니다.
 

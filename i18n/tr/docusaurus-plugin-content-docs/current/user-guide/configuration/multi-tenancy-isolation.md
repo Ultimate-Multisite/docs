@@ -3,7 +3,7 @@ title: Çoklu Kiracılık İzolasyonu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Çoklu Kiracılık İzolasyonu {#multi-tenancy-isolation}
+# Çoklu Kiracılık İzolasyonu
 
 Ultimate Multisite: Çoklu Kiracılık 1.2.0, egemen kiracılar için her alt siteye özel veritabanı ve dosya sistemi izolasyonu desteği sunar. Bu özellik, ağ düzeyindeki sağlama (provisioning), faturalandırma ve yönetimi korurken kiracı verilerini birbirinden ayırır.
 

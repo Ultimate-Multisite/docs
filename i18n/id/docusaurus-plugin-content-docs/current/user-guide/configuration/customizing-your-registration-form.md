@@ -3,7 +3,7 @@ title: Menyesuaikan Formulir Pendaftaran Anda
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Menyesuaikan Formulir Pendaftaran Anda {#customizing-your-registration-form}
+# Menyesuaikan Formulir Pendaftaran Anda
 
 Untuk membuat jaringan Anda terlihat unik dibandingkan semua SaaS lain yang dibangun di platform WordPress, Ultimate Multisite memungkinkan Anda menyesuaikan halaman pendaftaran dan login dengan fitur **Checkout Forms** kami.
 

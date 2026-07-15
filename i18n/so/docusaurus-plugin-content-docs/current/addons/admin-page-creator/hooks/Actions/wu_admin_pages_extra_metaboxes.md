@@ -4,7 +4,7 @@ title: Ficil - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Ficil: wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# Ficil: wu_admin_pages_extra_metaboxes
 
 U oggolow horumariyeyaasha kordhinta inay ku daraan ikhtiyaarro metaboxes cusub =)
 

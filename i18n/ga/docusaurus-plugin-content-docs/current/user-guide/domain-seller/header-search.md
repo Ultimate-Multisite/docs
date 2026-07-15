@@ -3,7 +3,7 @@ title: Cuardach Fearainn sa Cheanntásc
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Cuardach Fearainn sa Cheanntásc {#header-domain-search}
+# Cuardach Fearainn sa Cheanntásc
 
 Úsáid an socrú seo nuair atá foirm bheag cheanntáisc uait a chuireann tús le cuardach fearainn, agus ansin a ligeann don chustaiméir roghnú as fearainn atá ar fáil taobh istigh de chríochnú ceannaigh Ultimate Multisite.
 

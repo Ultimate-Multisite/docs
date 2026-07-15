@@ -3,7 +3,7 @@ title: Регистрирај API конекција
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Крајна крајна точка на API-то за регистрација на Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Крајна крајна точка на API-то за регистрација на Ultimate Multisite
 
 У овој туториал ќе научите како да го користи конечната точка на API-то за регистрација на Ultimate Multisite за создавање целата процесирање за нов корисник во вашата мрежа и како тоа можете да го направите со Zapier.
 

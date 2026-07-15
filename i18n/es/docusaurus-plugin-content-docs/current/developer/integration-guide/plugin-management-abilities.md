@@ -3,7 +3,7 @@ title: Habilidades de Gestión de Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capacidades de Gestión de Plugins {#plugin-management-abilities}
+# Capacidades de Gestión de Plugins
 
 Gratis AI Agent v1.5.0 incluye **7 capacidades de gestión de plugins** que el asistente de IA puede invocar durante una conversación. Estas capacidades proporcionan un control programático sobre los plugins de WordPress instalados a través del [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

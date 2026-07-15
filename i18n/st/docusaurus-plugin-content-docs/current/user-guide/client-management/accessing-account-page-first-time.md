@@ -3,7 +3,7 @@ title: Ho fihla le lapa la tsoalo
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Ke eng ka ho fihla le kholo ea sehlopha sa hau ka ntlha ya ho tla? {#how-can-i-access-my-account-page-for-the-first-time}
+# Ke eng ka ho fihla le kholo ea sehlopha sa hau ka ntlha ya ho tla?
 
 Ho fumanahle ka Ultimate Multisite!
 

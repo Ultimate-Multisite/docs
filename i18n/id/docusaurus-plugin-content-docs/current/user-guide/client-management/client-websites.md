@@ -3,7 +3,7 @@ title: Situs Web Klien
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Situs Web Klien Anda (v2) {#your-clients-websites-v2}
+# Situs Web Klien Anda (v2)
 
 Setelah mendaftar di jaringan Anda, pelanggan Anda dapat mengakses Dashboard mereka.
 

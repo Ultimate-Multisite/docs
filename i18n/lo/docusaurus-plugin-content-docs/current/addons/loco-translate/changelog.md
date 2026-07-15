@@ -3,7 +3,7 @@ title: ບັນທຶກການປ່ຽນແປງຂອງ Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# ບັນທຶກການປ່ຽນແປງຂອງ Loco Translate {#loco-translate-changelog}
+# ບັນທຶກການປ່ຽນແປງຂອງ Loco Translate
 
 ### 1.0.1 {#101}
 * ປັບປຸງຄວາມເຂົ້າກັນໄດ້ກັບ Loco Translate ເວີຊັນຫຼ້າສຸດ

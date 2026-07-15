@@ -3,7 +3,7 @@ title: Ģenerēt logotipa SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ģenerēt Logo SVG {#generate-logo-svg}
+# Ģenerēt Logo SVG
 
 **Generate Logo SVG** spēja ļauj Theme Builder izveidot un iegult pielāgotus logo SVG tieši jūsu WordPress vietnē ar automātisku, nosaukumvietām drošu sanitizāciju.
 

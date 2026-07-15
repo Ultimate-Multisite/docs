@@ -3,7 +3,7 @@ title: Torolàlana fampifandraisana
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Torolàlana fampidirana {#integration-guide}
+# Torolàlana fampidirana
 
 Ity torolàlana ity dia mandrakotra ireo lamina fampidirana mahazatra amin’ny Ultimate Multisite, ao anatin’izany ny fampifandraisana amin’ny serivisy ivelany, ny fananganana vavahadin-karama manokana, ary ny fitantanana webhooks.
 

@@ -3,7 +3,7 @@ title: Egyedi fejlesztési segítség
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hogyan kérj egyedi fejlesztési segítséget a Codeable-től? {#how-to-get-custom-development-help-from-codeable}
+# Hogyan kérj egyedi fejlesztési segítséget a Codeable-től?
 
 Néha igazán szükségünk van egy remek testreszabásra, hogy a hálózati folyamataink pontosan úgy működjenek, ahogy szeretnénk. Ha erre van szükséged, a [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) szolgáltatást ajánljuk – ez egy olyan hely, ahol tapasztalt, Ultimate Multisite szakértelemmel rendelkező fejlesztőket találhatsz.
 

@@ -4,7 +4,7 @@ title: Filtër - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Filtër: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Filtër: wu_get_migration_steps
 
 Lejon zhvilluesit dhe add-ons të shtojnë hapa të rinj migrimi
 

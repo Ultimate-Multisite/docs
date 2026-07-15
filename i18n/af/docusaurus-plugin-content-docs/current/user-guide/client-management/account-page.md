@@ -3,7 +3,7 @@ title: Kliënt Account-bladsy
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Jou kliënt se Account-bladsy (v2) {#your-clients-account-page-v2}
+# Jou kliënt se Account-bladsy (v2)
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

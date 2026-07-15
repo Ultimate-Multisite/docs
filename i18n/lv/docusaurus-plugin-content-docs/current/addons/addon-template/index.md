@@ -3,9 +3,9 @@ title: Papildinājuma veidne
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon veidne {#addon-template}
+# Addon veidne
 
-{{ADDON_DESCRIPTION}}
+Papildinājuma veidne — Ultimate Multisite.
 
 ## Prasības {#requirements}
 

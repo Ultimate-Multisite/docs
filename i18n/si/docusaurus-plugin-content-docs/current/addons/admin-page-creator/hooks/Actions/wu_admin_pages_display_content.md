@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# ක්‍රියාව: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# ක්‍රියාව: wu_admin_pages_display_content
 
 අභිරුචි සංස්කාරක අන්තර්ගත පෙන්වන්න.
 

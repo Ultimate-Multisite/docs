@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Kea lehlelo la Ultimate Multisite. Ke tla u fana ka tsela efe ea ho sebelisa lehlelo liti la WordPress le ho ba le lehlelo le fapaneng.
 

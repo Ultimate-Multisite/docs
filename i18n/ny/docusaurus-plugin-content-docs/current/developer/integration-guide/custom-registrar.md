@@ -3,7 +3,7 @@ title: Kupanga Kuphatikiza kwa Registrar Wapadera
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kumanga Custom Registrar Integration {#building-a-custom-registrar-integration}
+# Kumanga Custom Registrar Integration
 
 Addon ya Domain Seller imagwiritsa ntchito njira ya **Integration Registry**. Registrar aliyense ndi class ya PHP yomwe imakhazikitsa `Domain_Selling_Capability` ndipo imadzilembetsa yokha kudzera mu action hook ya `wu_domain_seller_register_capabilities`.
 

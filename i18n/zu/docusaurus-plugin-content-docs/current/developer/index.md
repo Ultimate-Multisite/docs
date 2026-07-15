@@ -3,7 +3,7 @@ title: Imibhalo Yonjiniyela
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Imibhalo Yonjiniyela {#developer-documentation}
+# Imibhalo Yonjiniyela
 
 Lo mhlahlandlela unikeza onjiniyela konke okudingekayo ukuze baxhumane, banwebe, noma bathuthukise ama-addon e-Ultimate Multisite. Ultimate Multisite iguqula inethiwekhi ye-WordPress Multisite ibe yipulatifomu ye-Website-as-a-Service (WaaS).
 

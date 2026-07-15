@@ -4,7 +4,7 @@ title: តម្រង - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# តម្រង: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# តម្រង: wu_documentation_get_link
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍​កម្មវិធីបន្ថែម​ត្រង​តំណ។
 

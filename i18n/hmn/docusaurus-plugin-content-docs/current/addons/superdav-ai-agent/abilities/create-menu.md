@@ -3,7 +3,7 @@ title: Tsim Ntawv Qhia Zaub Mov
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Tsim Menu {#create-menu}
+# Tsim Menu
 
 Lub peev xwm **Tsim Menu** tsim cov WordPress menu rau kev taw qhia, nrog kev txhawb kom muaj cov ntawv lo kev taw qhia uas txawv ntawm cov npe nplooj ntawv.
 

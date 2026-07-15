@@ -3,7 +3,7 @@ title: Ṣíṣẹ̀dá Ọja Ìforúkọsílẹ̀ Àkọ́kọ́ Rẹ
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ṣíṣẹ̀dá Ọjà Subscription Àkọ́kọ́ rẹ (v2) {#creating-your-first-subscription-product-v2}
+# Ṣíṣẹ̀dá Ọjà Subscription Àkọ́kọ́ rẹ (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí jẹ́ fún àwọn olumulo Ultimate Multisite ẹ̀yà 2.x nìkan. Tí o bá ń lo ẹ̀yà 1.x,**_ **_**wo àpilẹ̀kọ yìí**_**.
 

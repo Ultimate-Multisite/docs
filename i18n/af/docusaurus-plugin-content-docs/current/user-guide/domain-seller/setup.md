@@ -3,7 +3,7 @@ title: Opstelling en Verskafferkonfigurasie
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Opstelling en verskafferkonfigurasie {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Opstelling en verskafferkonfigurasie
 
 Die Domain Seller-byvoeging word met ’n begeleide opstellingsassistent verskaf wat jou deur elke vereiste stap lei. Hierdie bladsy dek die assistentvloei en hoe om verskaffers daarna te konfigureer of te herkonfigureer.
 

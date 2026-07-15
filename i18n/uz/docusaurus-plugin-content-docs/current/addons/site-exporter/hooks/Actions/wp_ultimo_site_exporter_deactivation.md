@@ -4,7 +4,7 @@ title: Amal - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Amal: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Amal: wp_ultimo_site_exporter_deactivation
 
 Plaginning boshqa qismlariga o‘z deactivation rutinlarini ulash imkonini beradi.
 

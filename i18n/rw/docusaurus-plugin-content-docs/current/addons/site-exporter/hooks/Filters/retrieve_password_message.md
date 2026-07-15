@@ -4,7 +4,7 @@ title: Muyunguruzo - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Muyunguruzi: retrieve_password_message {#filter-retrievepasswordmessage}
+# Muyunguruzi: retrieve_password_message
 
 Iyungurura umubiri w'ubutumwa bwa imeyili yo gusubizaho ijambo ry'ibanga.
 

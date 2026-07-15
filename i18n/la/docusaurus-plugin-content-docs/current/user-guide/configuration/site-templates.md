@@ -3,7 +3,7 @@ title: Template sitorum
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelli di Sito (v2) {#site-templates-v2}
+# Modelli di Sito (v2)
 
 _**NOTA: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite. Se stai usando la versione 1.x,**_ **consulta questo articolo.**_
 

@@ -4,7 +4,7 @@ title: Nzacha - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Nzacha: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Nzacha: wu_apc_should_display_admin_menu
 
 Kwe ka ndị nchịkwa zoo peeji menu nchịkwa, ma ọ bụrụ na ha emechaala usoro ịhazi.
 

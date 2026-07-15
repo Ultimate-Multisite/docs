@@ -3,7 +3,7 @@ title: 'Pelajaran 8: Proses Penerimaan Pelanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesson 8: Onboarding Pelanggan {#lesson-8-customer-onboarding}
+# Lesson 8: Onboarding Pelanggan
 
 Membuat pelanggan mendaftar hanyalah separuh daripada tugas. Jika mereka log masuk, rasa keliru, dan akhirnya tidak kembali, anda telah kehilangan mereka. Pelajaran ini merancang pengalaman yang mengubah pendaftaran baharu menjadi pelanggan yang aktif dan terlibat.
 

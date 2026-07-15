@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Action: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Action: wp_ultimo_ptm_page_wizard_after_title
 
 ပလပ်အင် ဖွံ့ဖြိုးတေးများအနေဖြင့် စာမျက်နှာစာရင်းများတွင် အပိုခလုတ်များ ထည့်သွင်းနိုင်ရန် ခွင့်ပြုသည်။
 

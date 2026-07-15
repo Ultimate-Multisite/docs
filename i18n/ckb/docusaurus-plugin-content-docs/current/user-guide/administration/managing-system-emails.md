@@ -3,7 +3,7 @@ title: بەرگرتنی ئیمێلەکانی سیستەم
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Manage System Emails {#managing-system-emails}
+# Manage System Emails
 
 Ultimate Multisite دۆخی جیاواز لە ئیمێلەکانی سیستەم بۆ واقەتەکان وەک ڕاگەیاندنی تۆمارکردن، ڕاپۆرتەکانی پارەدان، و گۆڕینی ئەندامان دەدات. دەتوانیت ئەم قالبە ئیمێڵانە بگۆڕیت بۆ ئەوەی لەگەڵ براندەکەت یەک بێت.
 

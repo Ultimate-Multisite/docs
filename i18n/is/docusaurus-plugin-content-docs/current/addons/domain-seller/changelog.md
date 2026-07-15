@@ -3,7 +3,7 @@ title: Breytingaskrá lénasala
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Breytingaskrá Domain Seller {#domain-seller-changelog}
+# Breytingaskrá Domain Seller
 
 Útgáfa 1.3.0 - Gefin út 2026-06-02
 - Nýtt: Bætti við viðvörun fyrir netkerfisstjóra þegar HostAfrica reseller-inneign verður of lág

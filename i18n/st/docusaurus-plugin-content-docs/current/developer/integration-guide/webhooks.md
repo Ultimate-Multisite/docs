@@ -3,7 +3,7 @@ title: Ho sebetsana le Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ho Sebetsana le Webhook {#webhook-handling}
+# Ho Sebetsana le Webhook
 
 Theha li-endpoint tsa webhook tse ikhethileng ho amohela liketsahalo tse tsoang litšebeletsong tsa kantle le ho sync data le Ultimate Multisite.
 

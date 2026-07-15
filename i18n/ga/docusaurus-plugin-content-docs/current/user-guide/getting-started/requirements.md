@@ -3,7 +3,7 @@ title: Céadtaíocht
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Cuidiúcháin Ultímath Multisite {#ultimate-multisite-requirements}
+# Cuidiúcháin Ultímath Multisite
 
 An chéad rud a is féidir leat a gcur a shábháil arís ar chomhartha an t-Ultímath Multisite, is é astúchán a bhfaidh tú a dhéanamh: caithfidh tú a bheith ag cur isteach na rialacha a bhaineann leis an plugin. Go raibh maith agat, tá cur fáil ruda beag ar fáil chun an Ultímath Multisite a chrunú: **teamaid domáin** (domain name), **curteoir hosting** (hosting provider) go maith agus cur isteach **Multisite** WordPress. Is é sin an t-áit a bhfuil tú ag cur isteach!
 

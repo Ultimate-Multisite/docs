@@ -3,7 +3,7 @@ title: Āķu lietošanas ceļvedis
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks lietošanas ceļvedis {#hooks-usage-guide}
+# Hooks lietošanas ceļvedis
 
 Ultimate Multisite nodrošina vairāk nekā 200 action hooks un vairāk nekā 280 filter hooks. Šī lapa apskata visbiežāk izmantotos hooks ar praktiskiem piemēriem. Pilnīgai automātiski ģenerētai atsaucei pārlūkojiet citas lapas šajā sadaļā.
 

@@ -4,7 +4,7 @@ title: ڪارروائي - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# عمل: update_network {#action-updatenetwork}
+# عمل: update_network
 
 موجوده نيٽ ورڪ اپڊيٽ ٿيڻ کان پوءِ هلندو آهي.
 

@@ -4,7 +4,7 @@ title: 'ଫିଲ୍ଟର - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# Filter: wu_\{$id\}_form_fields
 
 ଏକ ଫର୍ମର କ୍ଷେତ୍ରଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରେ। ଫିଲ୍ଟର ନାମରେ ଥିବା ଆଇଡି ଦ୍ୱାରା ଫର୍ମକୁ ଚିହ୍ନଟ କରାଯାଏ।
 

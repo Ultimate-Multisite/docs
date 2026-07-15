@@ -3,7 +3,7 @@ title: Àwọn Fọ́ọ̀mù Ìbánisọ̀rọ̀ ti Olùkọ́ Ojúlé
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Àwọn Fọọmu Ìkànsi Site Builder {#site-builder-contact-forms}
+# Àwọn Fọọmu Ìkànsi Site Builder
 
 Superdav AI Agent v1.10.0 ṣàfikún agbára láti ṣẹ̀dá àwọn fọọmu ìkànsi taara láti inú ìbánisọ̀rọ̀ pẹ̀lú lílo aṣojú Site Builder. Èyí jẹ́ kí o lè ṣàfikún àwọn fọọmu ìkànsi tó ń ṣiṣẹ́ ní kíkún sí ojú-iwe èyíkéyìí láìkúrò nínú ìbánisọ̀rọ̀ náà.
 

@@ -4,7 +4,7 @@ title: Filter - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filter: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Filter: wu_get_membership_allowed_forms
 
 ဒီလုပ်ဆောင်ပုံကို ကျော်လွန်စေဖို့အတွက် developer တွေအနေနဲ့ စလပ်အသစ်တွေ ထည့်သွင်းခွင့်ပေးပါတယ်။
 

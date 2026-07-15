@@ -3,7 +3,7 @@ title: Ultimate AI Connector for Compatible Endpoints Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Uyumlu Uç Noktalar için Ultimate AI Connector Değişiklik Günlüğü {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Uyumlu Uç Noktalar için Ultimate AI Connector Değişiklik Günlüğü
 
 ## Version 2.0.0 — Yayınlandı: 2026-04-24 {#version-200--released-on-2026-04-24}
 

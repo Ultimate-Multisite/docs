@@ -4,7 +4,7 @@ title: Филтр - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Филтр: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# Филтр: wu_apc_process_page_content
 
 Ба таҳиягарон имкон медиҳад, ки муҳтавои ниҳоиро тағйир диҳанд
 

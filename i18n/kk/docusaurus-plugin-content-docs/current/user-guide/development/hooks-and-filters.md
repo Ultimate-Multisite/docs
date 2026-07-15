@@ -3,7 +3,7 @@ title: Көрсетілімдер және Фильтрлер
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Хуки және фильтрлер {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Хуки және фильтрлер
 
 Ultimate Multisite — бұл көптеген функциялар мен деректерді сұраулардан тұратын жүйе. Ондағы хукилер (hooks) және фильтрлер (filters) арқылы сіз бар кездегі функцияларды өзгерту немесе жаңа код қосуға мүмкіндік береді.
 

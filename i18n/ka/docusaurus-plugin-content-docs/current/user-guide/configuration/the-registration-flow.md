@@ -3,7 +3,7 @@ title: რეგისტრაციის ნაკადი
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# რეგისტრაციის ნაკადი (v2) {#the-registration-flow-v2}
+# რეგისტრაციის ნაკადი (v2)
 
 _**მნიშვნელოვანი შენიშვნა: ეს სტატია ეხება Ultimate Multisite-ის ვერსიას 2.x.**_
 

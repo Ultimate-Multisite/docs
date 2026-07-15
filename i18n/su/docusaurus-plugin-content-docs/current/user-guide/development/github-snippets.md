@@ -3,7 +3,7 @@ title: Cuplikan GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kumaha cara ngagunake Ultimate Multisite snippets di repositori GitHub urang {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Kumaha cara ngagunake Ultimate Multisite snippets di repositori GitHub urang
 
 Di repositori GitHub aya kode snippet anu sok dipénta ku panyokoh Ultimate Multisite nu hayang nambahan fungsi leutik saperti nambahan script Google Analytics dina halaman sign-up atawa nyumput meta box tina admin dashboard.
 
@@ -19,7 +19,7 @@ Ada 2 cara pikeun anjeun nambahan kode éta:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Kumaha cara nambahan snippet dina file functions.php tema anjeun. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Kumaha cara nambahan snippet dina file functions.php tema anjeun.
 
   1. Login ka dashboard admin WordPress Network anjeun teras ka Themes > Theme Editor (Lihat screenshot di handap).
 
@@ -29,7 +29,7 @@ Ada 2 cara pikeun anjeun nambahan kode éta:
 
 <!-- Screenshot teu aya: WordPress Theme Editor nunjukkeun ngedit file functions.php -->
 
-# Kumaha cara nyieun Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Kumaha cara nyieun Must-Use Plugins (mu-plugins)
 
 WordPress boga fitur anu ngidinake anjeun pikeun ngabukak fungsi kustom disebut "Must-Use Plugins", atawa singgetna "mu-plugins".
 

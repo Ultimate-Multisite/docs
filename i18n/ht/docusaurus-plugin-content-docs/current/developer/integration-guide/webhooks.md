@@ -3,7 +3,7 @@ title: Jesyon Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Jesyon Webhook {#webhook-handling}
+# Jesyon Webhook
 
 Kreye pwen tèminal webhook pèsonalize pou resevwa evènman ki soti nan sèvis ekstèn epi senkronize done ak Ultimate Multisite.
 

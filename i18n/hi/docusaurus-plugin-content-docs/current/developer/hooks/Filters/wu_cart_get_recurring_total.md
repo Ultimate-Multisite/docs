@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_cart_get_recurring_total
 sidebar_label: wu_cart_get_recurring_total
 _i18n_hash: 4ced5861259c5b81a288c1f3146f02d3
 ---
-# Filter: wu_cart_get_recurring_total {#filter-wucartgetrecurringtotal}
+# Filter: wu_cart_get_recurring_total
 
 यह "आवर्ती राशि" (recurring amount) के कुल योग को फ़िल्टर करता है।
 

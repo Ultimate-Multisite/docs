@@ -3,7 +3,7 @@ title: Vyhledávání domén v záhlaví
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Vyhledávání domény v hlavičce {#header-domain-search}
+# Vyhledávání domény v hlavičce
 
 Použijte toto nastavení, když chcete malý formulář v hlavičce, který spustí vyhledávání domény a poté zákazníkovi umožní vybrat si z dostupných domén uvnitř checkoutu Ultimate Multisite.
 

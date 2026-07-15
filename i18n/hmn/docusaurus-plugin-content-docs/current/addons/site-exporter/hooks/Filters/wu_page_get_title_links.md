@@ -4,7 +4,7 @@ title: Lim - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Lim: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Lim: wu_page_get_title_links
 
 Cia cov neeg tsim plugin, thiab peb tus kheej, ntxiv cov action links rau peb cov nplooj ntawv kho.
 

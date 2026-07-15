@@ -4,7 +4,7 @@ title: Aðgerð - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Aðgerð: update_network {#action-updatenetwork}
+# Aðgerð: update_network
 
 Keyrist eftir að núverandi net hefur verið uppfært.
 

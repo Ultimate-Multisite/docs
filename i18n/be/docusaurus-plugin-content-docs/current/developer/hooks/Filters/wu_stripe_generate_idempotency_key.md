@@ -4,7 +4,7 @@ title: Filter - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Фільтр: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# Фільтр: wu_stripe_generate_idempotency_key
 
 Фільтруе значэнне `idempotency_key`, якое перадаецца разам з параметрам спагадоўнага Stripe.
 

@@ -3,7 +3,7 @@ title: Tawagar Wurin Shiga na Urikwaji
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# ترغیب مودهای شخص ثالث (Third-Party Mode Migration) {#third-party-mode-migration}
+# ترغیب مودهای شخص ثالث (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 نحوه مدیریت قابلیت‌های شخص ثالث را تغییر داده است. **حالت مود شخص ثالث اکنون به صورت پیش‌فرض روی "خودکار" (auto) تنظیم شده است**، که این کار باعث می‌شود بدون نیاز به تنظیم دستی، از WordPress 7.0 به بالا برای ادغام با API قابلیت‌های وردپرس استفاده کنید.
 

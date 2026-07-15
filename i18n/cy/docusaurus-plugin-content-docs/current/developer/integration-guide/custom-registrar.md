@@ -3,7 +3,7 @@ title: Adeiladu Integreiddiad Cofrestrydd Wedi'i Deilwra
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Adeiladu Integreiddiad Cofrestrydd Personol {#building-a-custom-registrar-integration}
+# Adeiladu Integreiddiad Cofrestrydd Personol
 
 Mae addon Domain Seller yn defnyddio patrwm **Integration Registry**. Mae pob cofrestrydd yn ddosbarth PHP sy’n gweithredu `Domain_Selling_Capability` ac yn cofrestru ei hun drwy’r bachyn gweithredu `wu_domain_seller_register_capabilities`.
 

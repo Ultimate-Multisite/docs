@@ -3,7 +3,7 @@ title: Integrazzjoni WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrà WPMU DEV {#wpmu-dev-integration}
+# Integrà WPMU DEV
 
 ## Panoramika {#overview}
 WPMU DEV huwa piattaforma WordPress all-inclusive li l-hosting, pluginijiet u servizzi għal siti WordPress. Dan l-integrà tismabbilixxi sintonizzazzjoni automatiku tal-domain u il-ġestjoni taċċertifikat SSL bejn Ultimate Multisite u hosting WPMU DEV.

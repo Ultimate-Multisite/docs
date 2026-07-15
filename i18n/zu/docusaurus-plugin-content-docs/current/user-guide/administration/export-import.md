@@ -3,7 +3,7 @@ title: Thumela ngaphandle & Ngenisa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Thekelisa & Ngenisa {#export--import}
+# Thekelisa & Ngenisa
 
 Ultimate Multisite 2.9.0 yengeza ithuluzi le-**Thekelisa & Ngenisa** lesayithi elilodwa ngaphansi kokuthi **Amathuluzi > Thekelisa & Ngenisa**. Lisebenzise lapho kudingeka ukupakisha isayithi elilodwa le-WordPress njengefayela le-ZIP, ukubuyisela leyo ZIP, noma ukuhambisa isayithi phakathi kokufakwa okuhambisanayo kwe-Ultimate Multisite nokwe-WordPress yesayithi elilodwa.
 

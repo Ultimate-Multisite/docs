@@ -3,7 +3,7 @@ title: Ho Hlahlobo le WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integration le WP Engine {#wp-engine-integration}
+# Integration le WP Engine
 
 ## Le Tsela (Overview) {#overview}
 WP Engine ke platform ya WordPress management a premium eke a tsela (hosting) a tsela, eke a nthela performance, security, le scalability ho WordPress sites. Ho integration eke a nthela domain syncing automatic eo Ultimate Multisite le WP Engine.

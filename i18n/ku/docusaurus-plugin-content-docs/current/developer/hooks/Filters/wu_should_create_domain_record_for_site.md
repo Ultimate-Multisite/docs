@@ -4,7 +4,7 @@ title: Parzûn - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Parzûn: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Parzûn: wu_should_create_domain_record_for_site
 
 Parzûn dike ka Ultimate Multisite divê ji bo malperek nû hatî çêkirin tomarek domainê biafirîne an na.
 

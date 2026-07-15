@@ -3,7 +3,7 @@ title: Ubwumvikane bw'Uburenganzira bwa ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Urugiriro n'Urugero (ServerPilot Integration) {#serverpilot-integration}
+# Urugiriro n'Urugero (ServerPilot Integration)
 
 ## Umuhagariko (Overview) {#overview}
 ServerPilot ni serivisi ya cloud itanga WordPress n'ibindi by'umwihariko bwo PHP ku server zikoreshwa kuri DigitalOcean, Amazon, Google cyangwa uburyo bwa server runaka. Iki gukoresha igikorwa kishobora guhindura domain (domain syncing) no gutera SSL certificate management hagati ya Ultimate Multisite n'ServerPilot.

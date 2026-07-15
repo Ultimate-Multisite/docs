@@ -3,7 +3,7 @@ title: Treo Dearaidh
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Treo Dearaidh {#design-direction}
+# Treo Dearaidh
 
 Ligeann céim **Treo Dearaidh** duit dearadh amhairc do théama a athbhreithniú, a mhionchoigeartú, agus a thabhairt chun críche sula ngineann Theme Builder an téama iomlán.
 

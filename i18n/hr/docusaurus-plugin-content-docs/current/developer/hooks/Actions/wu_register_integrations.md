@@ -4,7 +4,7 @@ title: Radnja - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Radnja: wu_register_integrations {#action-wuregisterintegrations}
+# Radnja: wu_register_integrations
 
 Pokreće se kako bi se integracijama omogućilo da se registriraju.
 

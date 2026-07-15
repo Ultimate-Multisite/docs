@@ -3,7 +3,7 @@ title: সঁজুলি আৰু বিন্যাস
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# সঁজুলি আৰু কনফিগাৰেচন {#tools-and-configuration}
+# সঁজুলি আৰু কনফিগাৰেচন
 
 Theme Builder-এ আপোনাৰ WordPress ছাইট বিশ্লেষণ, ডিজাইন আৰু নিৰ্মাণ কৰিবলৈ একাধিক সঁজুলিৰ সমষ্টি ব্যৱহাৰ কৰে। সংস্কৰণ 1.16.0-ত, **sd-ai-agent/site-scrape এতিয়া স্তৰ ১ সঁজুলি**, যাৰ ফলত ই Theme Builder-ত ডিফল্টভাৱে উপলব্ধ। Superdav AI Agent v1.18.0-এ বিশ্বাসযোগ্য ডেভেলপাৰ কাৰ্যপ্ৰবাহৰ বাবে পৃথকে বিতৰণ কৰা Advanced companion package-ও পৰিচয় কৰাইছে; সেই সঁজুলিসমূহ WordPress.org core package-ৰ অংশ নহয় আৰু পৃথকে ইনষ্টল আৰু অনুমোদন কৰিব লাগিব।
 

@@ -3,7 +3,7 @@ title: Muunganisho wa GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Kuunganisha GridPane {#gridpane-integration}
+# Kuunganisha GridPane
 
 ## Muhtasari {#overview}
 GridPane ni paneli maalum ya kudhibiti huduma za kuhost WordPress iliyoundwa kwa wataalamu wakubwa wa WordPress. Kuunganisha huku kunawezesha usawazishaji wa kikoa kiotomatiki na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na GridPane.

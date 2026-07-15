@@ -3,7 +3,7 @@ title: ऐडऑन सनराइज फ़ाइल लोडर
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 एक sunrise एक्सटेंशन लोडर जोड़ता है जो add-ons और कस्टम MU-plugin इंटीग्रेशन के लिए है। इसका उपयोग उन इंटीग्रेशन के लिए किया जाता है जिन्हें WordPress के sunrise बूटस्ट्रैपिंग के दौरान चलना होता है, बिना जनरेट की गई `wp-content/sunrise.php` फ़ाइल को एडिट किए।
 

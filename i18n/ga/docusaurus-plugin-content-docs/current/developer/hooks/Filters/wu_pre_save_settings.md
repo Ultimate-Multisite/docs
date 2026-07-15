@@ -4,7 +4,7 @@ title: Scagaire - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Scagaire: wu_pre_save_settings {#filter-wupresavesettings}
+# Scagaire: wu_pre_save_settings
 
 Lig d’fhorbróirí socruithe a scagadh sula sábhálann Ultimate Multisite iad.
 

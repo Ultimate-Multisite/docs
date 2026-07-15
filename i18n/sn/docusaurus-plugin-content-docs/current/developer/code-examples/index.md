@@ -3,7 +3,7 @@ title: Mienzaniso yeKodhi Yepamusoro
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mienzaniso yeCode Yepamusoro {#advanced-code-examples}
+# Mienzaniso yeCode Yepamusoro
 
 Mienzaniso iyi inoratidza mapatani ekubatanidza epamusoro neUltimate Multisite.
 

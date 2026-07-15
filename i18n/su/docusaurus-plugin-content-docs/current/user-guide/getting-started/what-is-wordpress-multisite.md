@@ -3,7 +3,7 @@ title: Naon éta WordPress Multisite téh?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Naon Ari WordPress Multisite? {#what-is-wordpress-multisite}
+# Naon Ari WordPress Multisite?
 
 Di dalam inti WordPress, aya fitur disebut ‘Multisite’ anu asalna ti tahun 2010 nalika ngalancarkeun WordPress 3.0. Ti waktu éta nepi ayeuna geus loba revisi anu tujuanna nambahan fitur anyar jeung nguatkeun keamanan.
 

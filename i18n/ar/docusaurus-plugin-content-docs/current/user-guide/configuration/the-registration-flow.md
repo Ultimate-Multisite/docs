@@ -3,7 +3,7 @@ title: تدفق التسجيل
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# تدفّق التسجيل (v2) {#the-registration-flow-v2}
+# تدفّق التسجيل (v2)
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

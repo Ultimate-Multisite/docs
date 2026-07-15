@@ -3,7 +3,7 @@ title: Suunnitelman alennus
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Suunnitelman alennus (v2) {#downgrading-a-plan-v2}
+# Suunnitelman alennus (v2)
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 

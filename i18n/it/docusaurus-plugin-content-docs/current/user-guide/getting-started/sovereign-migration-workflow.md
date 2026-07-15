@@ -3,7 +3,7 @@ title: Workflow di migrazione sovrana
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow di Migrazione Sovrana {#sovereign-migration-workflow}
+# Workflow di Migrazione Sovrana
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aggiunge gate di verifica della migrazione per spostare un sottodominio standard in infrastruttura di tenant sovrano.
 

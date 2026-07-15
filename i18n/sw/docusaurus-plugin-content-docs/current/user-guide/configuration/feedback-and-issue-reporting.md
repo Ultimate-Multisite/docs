@@ -3,7 +3,7 @@ title: Maoni ya Wateja na Kuripoti Matatizo
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kutoa Maoni na Kuripoti Matatizo ya Mtumiaji {#customer-feedback--issue-reporting}
+# Kutoa Maoni na Kuripoti Matatizo ya Mtumiaji
 
 Gratis AI Agent v1.5.0 inatangulia mfumo uliojengwa wa kutoa maoni na kuripoti matatizo ambao unaruhusu watumiaji wa mwisho kutambua majibu ambayo hayasaidii na kuripoti matatizo moja kwa moja kutoka kwenye interface ya chat. Mfumo huu unajumuisha usimamizi wa idhini (consent management), amri ya kuripoti kiotomatiki, na kupanga matatizo kwa msaada wa AI (AI-assisted triage) upande wa backend.
 

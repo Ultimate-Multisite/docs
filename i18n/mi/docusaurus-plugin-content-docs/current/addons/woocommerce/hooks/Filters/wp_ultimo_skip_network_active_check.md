@@ -4,7 +4,7 @@ title: Tātari - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Tātari: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Tātari: wp_ultimo_skip_network_active_check
 
 Tukuna ngā kaiwhakawhanake kia whakakotiti wawe i te tirotiro whakahohe whatunga.
 

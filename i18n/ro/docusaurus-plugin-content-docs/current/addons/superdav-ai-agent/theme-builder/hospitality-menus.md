@@ -3,7 +3,7 @@ title: Meniuri pentru Ospitalitate
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Meniuri pentru Ospitalitate {#hospitality-menus}
+# Meniuri pentru Ospitalitate
 
 Caracteristica **Meniuri pentru Ospitalitate** permite Theme Builder să genereze și să integreze pagini structurate de meniuri de alimente și băuturi direct pe site-ul tău WordPress.
 

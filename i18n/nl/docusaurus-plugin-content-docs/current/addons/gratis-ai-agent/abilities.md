@@ -3,7 +3,7 @@ title: Referentie voor mogelijkheden
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities-referentie {#abilities-reference}
+# Abilities-referentie
 
 Abilities zijn de atomische acties die Gratis AI Agent kan aanroepen op je WordPress-installatie. Elke ability is een geregistreerde PHP-class die een JSON-schema beschikbaar stelt — de agent leest dit schema tijdens runtime om te begrijpen welke parameters vereist zijn en wat de ability retourneert.
 

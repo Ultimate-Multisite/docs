@@ -3,7 +3,7 @@ title: Hooks प्रयोग मार्गदर्शिका
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks प्रयोग मार्गदर्शिका {#hooks-usage-guide}
+# Hooks प्रयोग मार्गदर्शिका
 
 Ultimate Multisite ले २००+ action hooks र २८०+ filter hooks उपलब्ध गराउँछ। यो पृष्ठले व्यवहारिक उदाहरणहरूसहित सबैभन्दा धेरै प्रयोग हुने hooks समेट्छ। पूर्ण रूपमा स्वतः उत्पन्न सन्दर्भका लागि, यस खण्डका अन्य पृष्ठहरू हेर्नुहोस्।
 

@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de Enhava Sinkronigo
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Enhava Sinkroniga Ŝanĝoprotokolo {#content-sync-changelog}
+# Enhava Sinkroniga Ŝanĝoprotokolo
 
 ### Versio 1.1.0 - Eldonita je 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nova: Subteno por sinkronigi ĉiujn afiŝotipojn (afiŝoj, paĝoj, propraj afiŝotipoj)

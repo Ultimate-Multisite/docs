@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# ක්‍රියාව: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# ක්‍රියාව: wu_domain_renewal_failed
 
 වසම් අලුත් කිරීමේ උත්සාහයක් අසාර්ථක වූ පසු ක්‍රියාත්මක වේ.
 

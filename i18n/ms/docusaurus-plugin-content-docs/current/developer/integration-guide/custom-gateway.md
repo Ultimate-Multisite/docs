@@ -3,7 +3,7 @@ title: Pembangunan Gerbang Tersuai
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pembangunan Gateway Tersuai {#custom-gateway-development}
+# Pembangunan Gateway Tersuai
 
 Anda boleh mencipta gateway pembayaran tersuai dengan melanjutkan kelas `Base_Gateway`.
 

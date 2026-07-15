@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# ስለ Webhooks (v2) የመጀመሪያ እይታ {#a-first-look-on-webhooks-v2}
+# ስለ Webhooks (v2) የመጀመሪያ እይታ
 
 _**ትኩረት፦ ይህ ባህሪ ወይም ጽሑፍ ለላቀ ተጠቃሚዎች መሆኑን ያስታውሱ።**_
 

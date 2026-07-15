@@ -3,7 +3,7 @@ title: Sayt şablonlarında avtomatik axtarış və əvəzetmə
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Sayt şablonlarında avtomatik axtarış və əvəzləmə (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Sayt şablonlarında avtomatik axtarış və əvəzləmə (v2)
 
 _**Bu təlimat WP UItimo 2.x versiyasını tələb edir.**_
 

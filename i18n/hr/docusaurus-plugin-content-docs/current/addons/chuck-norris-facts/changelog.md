@@ -3,7 +3,7 @@ title: Dnevnik promjena činjenica o Chucku Norrisu
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Dnevnik promjena Chuck Norris činjenica {#chuck-norris-facts-changelog}
+# Dnevnik promjena Chuck Norris činjenica
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Dodano: Funkcionalnost automatskog ažuriranja putem Ultimate Multisite poslužitelja za ažuriranja

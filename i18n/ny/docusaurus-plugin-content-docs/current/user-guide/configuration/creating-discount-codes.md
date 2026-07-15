@@ -3,7 +3,7 @@ title: Kukwera Kodesa za Kufunsa
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kukhala Codes (v2) {#creating-discount-codes-v2}
+# Kukhala Codes (v2)
 
 _**CHONGO CHONGO: Izi zikufi ya Ultimate Multisite version 2.x.**_
 

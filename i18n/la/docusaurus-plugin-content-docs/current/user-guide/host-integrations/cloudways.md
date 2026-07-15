@@ -3,7 +3,7 @@ title: Integratio Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrare Cloudways {#cloudways-integration}
+# Integrare Cloudways
 
 ## Visio {#overview}
 Cloudways est platforma d'hébergement cloud gérée quae te permittit deplurare sita WordPress in diversis provideribus cloud ut DigitalOcean, AWS, Google Cloud, et al. Haec integrare permittit sincronizandum automaticum domini et gestionem certificatibus SSL inter Ultimate Multisite et Cloudways.

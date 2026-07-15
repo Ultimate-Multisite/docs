@@ -3,7 +3,7 @@ title: Aabeschluss vo de Mitgliedschaft und Site-Blockierig
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Mitgliedschaftsablauf und Seitenblockierung {#membership-expiration-and-site-blocking}
+# Mitgliedschaftsablauf und Seitenblockierung
 
 Dëse Leitfaden erklärt, wéi Ultimate Multisite mit de Ablauf vo Mitgliedschaftsabläuf, Testabläufe (Trial Endings) und de Blockierig vun Frontend-Seiten umgaat. Mir erläutre de ganz Zyklus vun enere Mitgliedschaft vum aktiv bis zum abgelaufen, d'Istellige, déi bestëmmt, ob Seiten blockéiert sinn, a wat mir überprüefe sölle, wéi d'Seiten no zugänglich bléien, wéi d'Mitgliedschaft abgelaufen ass.
 

@@ -3,7 +3,7 @@ title: Orkestrasi Pembina Laman v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orkestrasi Pembina Laman v2 {#site-builder-orchestration-v2}
+# Orkestrasi Pembina Laman v2
 
 Site Builder Orchestration v2 (diperkenalkan dalam Gratis AI Agent v1.4.0) ialah enjin yang menggerakkan penciptaan laman web berbilang langkah. Apabila anda meminta ejen untuk "membina laman web restoran" atau "mencipta portfolio dengan blog," orkestrator akan memecahkan matlamat keseluruhan itu menjadi **pelan** yang berstruktur, menemui plugin yang diperlukan untuk melaksanakannya, melaksanakan setiap langkah secara berurutan, menjejaki kemajuan, dan memulihkan diri daripada ralat secara autonomi.
 

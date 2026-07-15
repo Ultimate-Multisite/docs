@@ -3,7 +3,7 @@ title: Webhook 處理
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook 處理 {#webhook-handling}
+# Webhook 處理
 
 建立自訂的 webhook 端點，用於接收來自外部服務的事件，並將資料同步到 Ultimate Multisite。
 

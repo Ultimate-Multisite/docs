@@ -3,7 +3,7 @@ title: होस्टिङर (hPanel) एकीकरण
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) एकीकरण {#hostinger-hpanel-integration}
+# Hostinger (hPanel) एकीकरण
 
 ## अवलोकन {#overview}
 

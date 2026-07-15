@@ -4,7 +4,7 @@ title: Զտիչ - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Զտիչ: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Զտիչ: wu_limits_is_post_above_limit
 
 Ստուգում է՝ արդյոք տվյալ գրառման տեսակն այս պլանում թույլատրված է։ Թույլ է տալիս plugin մշակողներին զտել վերադարձվող արժեքը
 

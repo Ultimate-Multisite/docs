@@ -3,7 +3,7 @@ title: Vývoj vlastní platební brány
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Vývoj vlastní platební brány {#custom-gateway-development}
+# Vývoj vlastní platební brány
 
 Vlastní platební brány můžete vytvářet rozšířením třídy `Base_Gateway`.
 

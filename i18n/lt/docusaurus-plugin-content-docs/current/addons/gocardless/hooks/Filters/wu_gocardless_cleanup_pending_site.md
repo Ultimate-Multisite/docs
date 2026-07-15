@@ -4,7 +4,7 @@ title: Filtras - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filtras: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filtras: wu_gocardless_cleanup_pending_site
 
 Suveikia prieš ištrinant našlaitinę laukiančią svetainę atšauktai GoCardless narystei.
 

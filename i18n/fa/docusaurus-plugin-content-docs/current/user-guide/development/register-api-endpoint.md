@@ -3,7 +3,7 @@ title: ثبت نقطه پایانی API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# نقطه اتصال (endpoint) ثبت‌نام API در Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# نقطه اتصال (endpoint) ثبت‌نام API در Ultimate Multisite
 
 در این آموزش، یاد می‌گیرید چگونه از نقطه اتصال /register در API مربوط به Ultimate Multisite استفاده کنید تا فرآیند کامل ورود و ثبت‌نام مشتری جدید در شبکه‌تان را ایجاد کنید و این کار را با Zapier انجام دهید.
 

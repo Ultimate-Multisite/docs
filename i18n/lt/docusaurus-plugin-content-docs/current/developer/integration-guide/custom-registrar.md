@@ -3,7 +3,7 @@ title: Pasirinktinės registratoriaus integracijos kūrimas
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pasirinktinės registratoriaus integracijos kūrimas {#building-a-custom-registrar-integration}
+# Pasirinktinės registratoriaus integracijos kūrimas
 
 Domain Seller priedas naudoja **Integration Registry** modelį. Kiekvienas registratorius yra PHP klasė, kuri įgyvendina `Domain_Selling_Capability` ir užregistruoja save per `wu_domain_seller_register_capabilities` veiksmo hook.
 

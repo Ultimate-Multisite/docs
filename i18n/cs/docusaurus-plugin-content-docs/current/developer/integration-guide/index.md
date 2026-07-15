@@ -3,7 +3,7 @@ title: Průvodce integrací
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Průvodce integrací {#integration-guide}
+# Průvodce integrací
 
 Tento průvodce pokrývá běžné vzory integrace s Ultimate Multisite, včetně připojení k externím službám, vytváření vlastních platebních bran a zpracování webhooků.
 

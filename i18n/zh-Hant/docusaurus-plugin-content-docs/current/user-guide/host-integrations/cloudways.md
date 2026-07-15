@@ -3,7 +3,7 @@ title: Cloudways 整合
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways 整合 {#cloudways-integration}
+# Cloudways 整合
 
 ## 概覽 {#overview}
 Cloudways 是一個受管理的雲端託管平台，可讓你在 DigitalOcean、AWS、Google Cloud 等各種雲端供應商上部署 WordPress 站台。此整合可在 Ultimate Multisite 與 Cloudways 之間啟用自動網域同步與 SSL 憑證管理。

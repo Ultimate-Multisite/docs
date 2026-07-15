@@ -3,7 +3,7 @@ title: Content Sync Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Ändringslogg för Content Sync {#content-sync-changelog}
+# Ändringslogg för Content Sync
 
 ### Version 1.1.0 - Släppt den 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nytt: Stöd för synkronisering av alla innehållstyper (inlägg, sidor, anpassade innehållstyper)

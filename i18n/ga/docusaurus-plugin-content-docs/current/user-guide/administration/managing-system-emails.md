@@ -3,7 +3,7 @@ title: Curmhaíochta E-mailí Sistéimaithe
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Déanamh ar Emailí Sistim {#managing-system-emails}
+# Déanamh ar Emailí Sistim
 
 Ultimate Multisite seachaint emailí sistim gheallt ar cheannasacha mar chuid féachfaíochta, spriocais de chuid aistriúcháin, agus pearsánacha oibríochta. Is féidir leat an t-amaisce seo a athrú chun é sin a bheith ag cur isteach ar chuid bránda.
 

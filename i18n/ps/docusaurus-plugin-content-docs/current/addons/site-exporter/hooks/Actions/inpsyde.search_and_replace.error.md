@@ -4,7 +4,7 @@ title: عمل - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# عمل: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# عمل: inpsyde.search_and_replace.error
 
 دا hook له پامه غورځوي ځکه چې د WP Ultimo له خوا نه دی ثبت شوی.
 

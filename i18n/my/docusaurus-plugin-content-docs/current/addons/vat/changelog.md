@@ -3,7 +3,7 @@ title: VAT Changelog
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT ပြောင်းလဲမှုမှတ်တမ်း {#vat-changelog}
+# VAT ပြောင်းလဲမှုမှတ်တမ်း
 
 Version 1.0.7 - 2026-02-03 တွင် ထုတ်ဝေခဲ့သည်
 

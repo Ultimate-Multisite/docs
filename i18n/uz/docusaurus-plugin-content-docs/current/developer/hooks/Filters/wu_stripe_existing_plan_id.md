@@ -4,7 +4,7 @@ title: Filtr - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filtr: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filtr: wu_stripe_existing_plan_id
 
 Tekshiriladigan plan ID sini filtrlaydi. Agar bu mavjud bo‘lsa, yangi subscription shu plandan foydalanadi.
 

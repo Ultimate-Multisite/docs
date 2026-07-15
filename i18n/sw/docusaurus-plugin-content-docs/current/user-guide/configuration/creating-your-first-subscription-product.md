@@ -3,7 +3,7 @@ title: Kuunda Bidhaa Yako ya Kwanza ya Usajili
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kuunda Bidhaa yako ya Kwanza ya Usajili (v2) {#creating-your-first-subscription-product-v2}
+# Kuunda Bidhaa yako ya Kwanza ya Usajili (v2)
 
 _**DOKEZO MUHIMU: Makala hii ni kwa watumiaji wa Ultimate Multisite toleo la 2.x pekee. Ikiwa unatumia toleo la 1.x,**_ **_**tazama makala hii**_**.
 

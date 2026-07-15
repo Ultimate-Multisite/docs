@@ -3,7 +3,7 @@ title: Operațiuni pentru Chirii Suveran
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operațiuni pentru Tenantul Suveran {#sovereign-tenant-operations}
+# Operațiuni pentru Tenantul Suveran
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adaugă instrumente operaționale pentru tenantii suverani: subsite care rulează cu propria bază de date, rădăcina sistemului de fișiere și context de rutare propriu, dar rămân vizibile din partea administratorului rețelei.
 

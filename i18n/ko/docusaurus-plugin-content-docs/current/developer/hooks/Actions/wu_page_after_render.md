@@ -4,7 +4,7 @@ title: 액션 - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# 액션: wu_page_after_render {#action-wupageafterrender}
+# 액션: wu_page_after_render
 
 플러그인 개발자가 페이지를 출력한 후 추가 콘텐츠를 삽입할 수 있도록 허용합니다.
 

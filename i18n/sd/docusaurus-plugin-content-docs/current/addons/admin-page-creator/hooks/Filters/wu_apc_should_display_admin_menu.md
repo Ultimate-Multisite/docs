@@ -4,7 +4,7 @@ title: فلٽر - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# فلٽر: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# فلٽر: wu_apc_should_display_admin_menu
 
 admins کي اجازت ڏيو ته admin menu جا صفحا لڪائين، جيڪڏهن انهن customization جو عمل مڪمل ڪري ڇڏيو آهي.
 

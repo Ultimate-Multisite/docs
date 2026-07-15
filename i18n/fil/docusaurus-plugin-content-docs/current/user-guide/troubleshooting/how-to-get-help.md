@@ -3,7 +3,7 @@ title: Paano Makakuha ng Tulong
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Paano Humingi ng Tulong {#how-to-get-help}
+# Paano Humingi ng Tulong
 
 Nakuha mo na ang iyong valid na License key, at kasama nito ang access sa aming team para tulungan kang lutasin ang mga problemang maaari mong maranasan habang sine-set up mo ang Ultimate Multisite.
 

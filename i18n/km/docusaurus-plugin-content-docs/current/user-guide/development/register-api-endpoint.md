@@ -3,7 +3,7 @@ title: ចុះបញ្ជីចំណុចបញ្ចប់ API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# ចំណុចបញ្ចប់ API សម្រាប់ Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# ចំណុចបញ្ចប់ API សម្រាប់ Ultimate Multisite
 
 នៅក្នុងមគ្គុទ្ទេសក៍នេះ អ្នកនឹងរៀនពីរបៀបប្រើប្រាស់ endpoint API របស់ Ultimate Multisite /register ដើម្បីបង្កើតដំណើរការចាប់ផ្តើម (onboarding process) ទាំងមូលសម្រាប់អតិថិជនថ្មីនៅក្នុងបណ្តាញរបស់អ្នក និងរបៀបធ្វើវាជាមួយ Zapier។
 

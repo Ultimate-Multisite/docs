@@ -3,7 +3,7 @@ title: Validasi Kontras Palet
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validasi Kontras Palet {#validate-palette-contrast}
+# Validasi Kontras Palet
 
 Fitur **Validasi Kontras Palet** memeriksa pasangan warna dalam palet desain Anda untuk memastikan kepatuhan terhadap WCAG (Web Content Accessibility Guidelines) sebelum diterapkan ke tema Anda.
 

@@ -3,7 +3,7 @@ title: 'Leksjon 8: Oppstart for kunder'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Leksjon 8: Kundens Oppstart (Onboarding) {#lesson-8-customer-onboarding}
+# Leksjon 8: Kundens Oppstart (Onboarding)
 
 Å få en kunde til å registrere seg er bare halve jobben. Hvis de logger inn, føler seg overveldet og aldri kommer tilbake, har du mistet dem. Denne leksjonen designer opplevelsen som forvandler en ny registrering til en aktiv, engasjert kunde.
 

@@ -3,7 +3,7 @@ title: Cara Membatalkan Langganan
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Bagaimana cara membatalkan langganan saya? {#how-can-i-cancel-my-subscription}
+# Bagaimana cara membatalkan langganan saya?
 
 Jika Anda memiliki lisensi Ultimate Multisite, Anda dapat membatalkan perpanjangannya kapan saja. Ikuti langkah-langkah berikut:
 

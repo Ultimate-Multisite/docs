@@ -3,7 +3,7 @@ title: RunCloud ինտեգրում
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Ինտեգրում {#runcloud-integration}
+# RunCloud Ինտեգրում
 
 ## Ընդհանուր տեսքը (Overview) {#overview}
 RunCloud-ը ամպային սերվերների կառավարման հարթակ է, որը թույլ է տալիս ձեր վեբ այլապատիկները (web applications) հեշտությամբ տեղադրել և կառավարել։ Այս ինտեգրումը թույլ է տալիս ավտոմատ դոմենի սինխրոնիզացիա և SSL վկայագրերի կառավարում Ultimate Multisite-ի և RunCloud-ի միջև։

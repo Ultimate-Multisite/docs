@@ -3,7 +3,7 @@ title: හෝස්ටිංගර් බහු-තමාවාදය
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 එකෙන් Hostinger multi-tenancy හැකියාව එකතු කර තිබෙනවා. ඒක හරියට තියෙන්නේ දැනට තියෙන Hostinger domain-mapping integration එක්ක, සත්කාරක දාම (hosted domains) වලට ස්වෛරී කුලීකරුවන් (sovereign tenants) ලබා දීමේ හැකියාව සමඟයි.
 

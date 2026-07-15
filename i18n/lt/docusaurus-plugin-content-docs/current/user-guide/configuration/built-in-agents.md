@@ -3,7 +3,7 @@ title: Integruotieji agentai
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Integruoti Agentai {#built-in-agents}
+# Integruoti Agentai
 
 Gratis AI Agent v1.9.0 pateikiamas su penkiais integruotais agentais, kurių kiekvienas iš anksto sukonfigūruotas su tikslingu įrankių rinkiniu, pritaikytu sistemos raginimu ir pradiniais pasiūlymais, atitinkančiais įprastas tos srities užduotis. Perjungiant agentus keičiasi tai, ką asistentas gali daryti ir kaip jis atsako — be jokios konfigūracijos iš jūsų pusės. Superdav AI Agent v1.18.0 gali pridėti tvarkaraštį suvokiančius įrankius, priminimų įrašus, patvirtinimo vartus ir SMS pranešimus prie šių darbo eigų, kai susijusios integracijos yra sukonfigūruotos.
 

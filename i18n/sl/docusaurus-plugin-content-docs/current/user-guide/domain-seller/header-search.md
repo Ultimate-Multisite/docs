@@ -3,7 +3,7 @@ title: Iskanje domene v glavi
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Iskanje domene v glavi {#header-domain-search}
+# Iskanje domene v glavi
 
 Uporabite to nastavitev, kadar želite majhen obrazec v glavi, ki začne iskanje domene, nato pa stranki omogoči izbiro med razpoložljivimi domenami znotraj Ultimate Multisite checkouta.
 

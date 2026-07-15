@@ -4,7 +4,7 @@ title: مرشح - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# عامل التصفية: wu_country_get_cities {#filter-wucountrygetcities}
+# عامل التصفية: wu_country_get_cities
 
 يُعيد قائمة المدن في ولاية داخل دولة.
 

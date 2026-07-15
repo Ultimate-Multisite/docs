@@ -4,7 +4,7 @@ title: Дзейніванне - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Дзеяванне: set_logged_in_cookie {#action-setloggedincookie}
+# Дзеяванне: set_logged_in_cookie
 
 Выконваецца адразу папярэднікам вызначэння cookie аўтэнтыфікацыі ўвайшога карыстальніка.
 

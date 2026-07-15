@@ -3,7 +3,7 @@ title: اؤدَمَه فیلدی و موشتری DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout فیلدی و موشتری DNS ایداره‌سی {#checkout-field-and-customer-dns-management}
+# Checkout فیلدی و موشتری DNS ایداره‌سی
 
 ## Domain Selection Checkout فیلدی {#the-domain-selection-checkout-field}
 

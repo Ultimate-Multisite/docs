@@ -3,7 +3,7 @@ title: Webstedsbygger-orkestrering v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (introduceret i Gratis AI Agent v1.4.0) er motoren, der driver oprettelse af websites i flere trin. Når du beder agenten om at "bygge et restaurant-website" eller "oprette en portefølje med en blog", opdeler orkestratoren det overordnede mål i en struktureret **plan**, finder de plugins, der er nødvendige for at opfylde det, udfører hvert trin i rækkefølge, sporer fremskridt og gendanner autonomt efter fejl.
 

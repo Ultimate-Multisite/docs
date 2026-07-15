@@ -3,7 +3,7 @@ title: Pradžia kuriant priedus
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Priedo kūrimas {#addon-development}
+# Priedo kūrimas
 
 ## Priedo struktūra {#addon-structure}
 

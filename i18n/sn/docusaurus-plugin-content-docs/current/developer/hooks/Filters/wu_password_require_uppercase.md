@@ -4,7 +4,7 @@ title: Sefa - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Sefa: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Sefa: wu_password_require_uppercase
 
 Sefa kana zvichifanira kuda mavara makuru mumapassword.
 

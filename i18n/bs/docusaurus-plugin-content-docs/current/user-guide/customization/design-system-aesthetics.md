@@ -3,7 +3,7 @@ title: Vještina estetike dizajnerskog sistema
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Vještina estetike dizajnerskog sistema {#design-system-aesthetics-skill}
+# Vještina estetike dizajnerskog sistema
 
 **Vještina estetike dizajnerskog sistema** je vođeni pristup usavršavanju vizuelnog identiteta vašeg sajta. Pomaže vam da donosite dosljedne odluke o tipografiji, boji, razmaku i pokretnim elementima (motion tokens) koji definišu vaš dizajnerski sistem.
 

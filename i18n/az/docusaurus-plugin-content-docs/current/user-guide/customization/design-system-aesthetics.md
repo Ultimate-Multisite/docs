@@ -3,7 +3,7 @@ title: Dizayn Sistemi Estetika Bacarığı
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizayn Sistemi Estetikası Bacarığı {#design-system-aesthetics-skill}
+# Dizayn Sistemi Estetikası Bacarığı
 
 **Dizayn Sistemi Estetikası bacarığı**, saytınızın vizual identitetini təkmilləşdirmək üçün tətbiqi bir yanaşmadır. Bu bacarıq, dizayn sisteminizi müəyyən edən tipoqrafiya, rəng, boşluq və hərəkət tokenləri haqqında ardıcıl qərarlar verməyinizə kömək edir.
 

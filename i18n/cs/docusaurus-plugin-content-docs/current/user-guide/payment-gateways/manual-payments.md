@@ -3,7 +3,7 @@ title: Nastavení ručních plateb
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Nastavení ručních plateb (v2) {#setting-up-manual-payments-v2}
+# Nastavení ručních plateb (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 

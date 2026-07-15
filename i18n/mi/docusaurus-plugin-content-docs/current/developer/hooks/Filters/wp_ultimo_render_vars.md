@@ -4,7 +4,7 @@ title: Tātari - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Tātari: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Tātari: wp_ultimo_render_vars
 
 Whakaaetia ngā kaiwhakawhanake monomai kia tāpiri taurangi anō ki te horopaki tāhuahua puta noa.
 

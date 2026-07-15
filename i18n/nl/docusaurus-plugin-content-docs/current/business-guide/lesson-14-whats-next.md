@@ -3,7 +3,7 @@ title: 'Les 14: Wat volgt?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Les 14: Wat Nu Volgt {#lesson-14-what-comes-next}
+# Les 14: Wat Nu Volgt
 
 Je hebt een nichewebsiteplatform van nul af aan gebouwd. FitSite is live, bedient fitnessstudio's en genereert terugkerende inkomsten. Deze laatste les kijkt naar de volgende stappen.
 

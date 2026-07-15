@@ -3,7 +3,7 @@ title: Mga Pagbag-o sa Feature/Pag-uswag
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Mga Pagbag-o (Changelog) {#changelog}
+# Mga Pagbag-o (Changelog)
 
 ## 1.9.0 — Gi-release niadtong 2026-04-28 {#190--released-on-2026-04-28}
 

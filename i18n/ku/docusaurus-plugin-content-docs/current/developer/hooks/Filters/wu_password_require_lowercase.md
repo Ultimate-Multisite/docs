@@ -4,7 +4,7 @@ title: Fîlter - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Parzûn: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Parzûn: wu_password_require_lowercase
 
 Parzûn bike ka di şîfreyan de tîpên biçûk hewce bin an na.
 

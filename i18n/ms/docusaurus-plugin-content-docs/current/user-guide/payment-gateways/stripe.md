@@ -3,7 +3,7 @@ title: Menyediakan Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Menyediakan Gateway Stripe (v2) {#setting-up-the-stripe-gateway-v2}
+# Menyediakan Gateway Stripe (v2)
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 

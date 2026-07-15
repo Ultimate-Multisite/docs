@@ -4,7 +4,7 @@ title: Isihluzi - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Isihluzi: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Isihluzi: wu_post_count_statuses
 
 Vumela abaphuhlisi be-plugin batshintshe ukuba sesiphi isimo sepost ekufuneka sibalwe. Ngokungagqibekanga, iipost ezipapashiweyo nezabucala ziyabalwa
 

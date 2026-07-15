@@ -3,7 +3,7 @@ title: Tính hiển thị của khả năng
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Khả năng Hiển thị của Tính năng (Ability Visibility) {#ability-visibility}
+# Khả năng Hiển thị của Tính năng (Ability Visibility)
 
 Superdav AI Agent v1.12.0 giới thiệu các điều khiển **Khả năng Hiển thị** (Ability Visibility) để quản lý việc các tính năng nào được hiển thị trên các giao diện khác nhau. Điều này cho phép quản trị viên tinh chỉnh những khả năng của agent nào có sẵn thông qua REST APIs, máy chủ MCP, tích hợp WooCommerce và các giao diện khác.
 

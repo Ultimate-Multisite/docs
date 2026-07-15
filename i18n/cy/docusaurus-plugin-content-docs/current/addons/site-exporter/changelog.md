@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Allforiwr Safle
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Cofnod Newidiadau Site Exporter {#site-exporter-changelog}
+# Cofnod Newidiadau Site Exporter
 
 Fersiwn: 1.0.6 - Rhyddhawyd ar 2026-05-11
 * New: Mae allforion safle bellach yn bwndelu index.php hunan-gychwyn fel y gellir gosod y ZIP ar westeiwr newydd heb osodiad plugin ar wahân

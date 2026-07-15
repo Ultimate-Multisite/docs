@@ -4,7 +4,7 @@ title: Parzûn - wu_independent_billing_cycle_product_types
 sidebar_label: wu_independent_billing_cycle_product_types
 _i18n_hash: 2b9bd3b68a53424272c1c93c6bdc3ef5
 ---
-# Parzûn: wu_independent_billing_cycle_product_types {#filter-wuindependentbillingcycleproducttypes}
+# Parzûn: wu_independent_billing_cycle_product_types
 
 Cureyên berhemê yên ku dewreyên billingê yên serbixwe hene parzûn bike.
 

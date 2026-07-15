@@ -3,7 +3,7 @@ title: Mailchimp Nhoroondo Yeshanduko
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Nhoroondo yeshanduko {#mailchimp-changelog}
+# Mailchimp Nhoroondo yeshanduko
 
 Shanduro: 1.1.1 - Yakaburitswa musi wa2025-09-28
 

@@ -3,7 +3,7 @@ title: Design System Esthetiek Vaardigheid
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Esthetiek Vaardigheid {#design-system-aesthetics-skill}
+# Design System Esthetiek Vaardigheid
 
 De **Design System Esthetiek vaardigheid** is een gestructureerde aanpak om de visuele identiteit van uw site te verfijnen. Het helpt u consistente beslissingen te nemen over typografie, kleur, witruimte en bewegingstokens die uw design system definiëren.
 

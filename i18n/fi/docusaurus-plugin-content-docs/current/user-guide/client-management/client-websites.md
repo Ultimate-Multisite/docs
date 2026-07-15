@@ -3,7 +3,7 @@ title: Asiakkaan verkkosivut
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Asiakkaiden verkkosivustot (v2) {#your-clients-websites-v2}
+# Asiakkaiden verkkosivustot (v2)
 
 Rekisteröitytään verkkoon jälkeen asiakkaat pääsevät käsiksi omaan hallintapaneeliinsa.
 

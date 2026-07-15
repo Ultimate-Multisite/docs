@@ -4,7 +4,7 @@ title: Çalakî - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Çalakî: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Çalakî: wu_domain_mapping_register_filters
 
 Hin plugin dê URL tomar bikin berî ku mapping çalak bibe an jî dê URL-an bi awayekî cuda ava bikin ku di filterên jorîn de nayê girtin.
 

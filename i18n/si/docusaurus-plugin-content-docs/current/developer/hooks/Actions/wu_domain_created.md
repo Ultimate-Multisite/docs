@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# ක්‍රියාව: wu_domain_created {#action-wudomaincreated}
+# ක්‍රියාව: wu_domain_created
 
 නව domain mapping එකක් එක් කළ විට ක්‍රියාත්මක වේ.
 

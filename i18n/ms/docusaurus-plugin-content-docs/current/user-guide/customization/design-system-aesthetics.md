@@ -3,7 +3,7 @@ title: Kemahiran Estetika Sistem Reka Bentuk
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetika Sistem Reka Bentuk {#design-system-aesthetics-skill}
+# Estetika Sistem Reka Bentuk
 
 **Kemahiran Estetika Sistem Reka Bentuk** adalah pendekatan berpandu untuk memperhalusi identiti visual laman web anda. Ia membantu anda membuat keputusan yang konsisten mengenai tipografi, warna, jarak, dan token pergerakan yang mendefinisikan sistem reka bentuk anda.
 

@@ -3,7 +3,7 @@ title: PayPal-ді орнату
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Баوابة Құрылғысын Орнату (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal Баوابة Құрылғысын Орнату (v2)
 
 _**МАҢЫЗДЫ ЕТІНДІ:** Бұл мақала Ultimate Multisite 2.x нұсқасына қатысты._
 

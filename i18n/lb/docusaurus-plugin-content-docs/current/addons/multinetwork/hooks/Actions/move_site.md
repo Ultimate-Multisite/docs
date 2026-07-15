@@ -4,7 +4,7 @@ title: Aktioun - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Aktioun: move_site {#action-movesite}
+# Aktioun: move_site
 
 Gëtt ausgeléist, nodeems e Site an en neit Netzwierk geréckelt gouf.
 

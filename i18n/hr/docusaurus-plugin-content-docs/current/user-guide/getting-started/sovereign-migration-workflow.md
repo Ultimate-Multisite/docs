@@ -3,7 +3,7 @@ title: Radni tok migracije suverenog sustava
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Rad Sovereign Migracijski Proces {#sovereign-migration-workflow}
+# Rad Sovereign Migracijski Proces
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje proge za provjeru migracije prilikom premještanja standardnog subsitea u infrastrukturu suverenog najmoprimca (tenant).
 

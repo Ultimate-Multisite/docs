@@ -3,7 +3,7 @@ title: કસ્ટમ ગેટવે ડેવલપમેન્ટ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# કસ્ટમ Gateway વિકાસ {#custom-gateway-development}
+# કસ્ટમ Gateway વિકાસ
 
 તમે `Base_Gateway` class ને વિસ્તારીને કસ્ટમ ચુકવણી gateways બનાવી શકો છો.
 

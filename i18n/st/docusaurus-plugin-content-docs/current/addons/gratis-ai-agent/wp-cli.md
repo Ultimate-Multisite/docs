@@ -3,7 +3,7 @@ title: Tšupiso ea WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Tshupiso ya WP-CLI {#wp-cli-reference}
+# Tshupiso ya WP-CLI
 
 Gratis AI Agent e tlisa lelapa la taelo la `wp gratis-ai-agent` bakeng sa ho etsa benchmark ya agent, ho laola bokgoni, le ho botsa boemo ba agent ho tswa moleng wa ditaelo. Ditaelo tsohle di hloka WP-CLI 2.0 kapa ho feta.
 

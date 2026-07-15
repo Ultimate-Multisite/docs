@@ -3,7 +3,7 @@ title: 網路鉤子
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks 初探 (v2) {#a-first-look-on-webhooks-v2}
+# Webhooks 初探 (v2)
 
 _**注意：請注意，此功能或文章適合進階使用者。**_
 

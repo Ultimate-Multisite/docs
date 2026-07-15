@@ -3,7 +3,7 @@ title: Account regisztrálása Zapier segítségével
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Esemény: Account regisztrálása Zapier-en keresztül {#event-register-an-account-via-zapier}
+# Esemény: Account regisztrálása Zapier-en keresztül
 
 Az [Ultimate Multisite integrálása Zapier-rel](zapier.md) című cikkben bemutattuk, hogyan használható a Zapier különböző műveletek végrehajtására az Ultimate Multisite-on belül triggerek és események alapján. Ebben a cikkben megmutatjuk, hogyan integrálhatsz 3rd party alkalmazásokat. A Google Sheets-et használjuk adatforrásként, és az információkat elküldjük az Ultimate Multisite számára egy Account regisztrálásához.
 

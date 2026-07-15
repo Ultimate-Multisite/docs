@@ -3,7 +3,7 @@ title: Hooks کا حوالہ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks حوالہ {#hooks-reference}
+# Hooks حوالہ
 
 Ultimate Multisite میں تمام **59 actions** اور **118 filters** کے لیے خودکار طور پر تیار کردہ دستاویزات۔
 

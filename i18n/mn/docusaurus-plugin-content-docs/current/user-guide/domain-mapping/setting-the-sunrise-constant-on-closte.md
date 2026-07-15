@@ -3,7 +3,7 @@ title: Closte-д Нарны тогтмол утгыг тохируулах
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-д Sunrise константыг үнэн болгох {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-д Sunrise константыг үнэн болгох
 
 Зарим хост компаниуд аюулгүй байдлын шалтгаанаар wp-config.php файлыг хаадаг. Энэ нь Ultimate Multisite-ийн домен тохиргоо болон бусад функцуудыг ажиллахын тулд шаардлагатай константуудыг автоматаар засварлах боломжгүй гэсэн үг юм. Closte нь ийм хост нэг юм.
 

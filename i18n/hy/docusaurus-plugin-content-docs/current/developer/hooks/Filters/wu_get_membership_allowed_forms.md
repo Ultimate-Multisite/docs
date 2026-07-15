@@ -4,7 +4,7 @@ title: Զտիչ - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Ֆիլտր՝ wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Ֆիլտր՝ wu_get_membership_allowed_forms
 
 Թույլ է տալիս մշակողներին ավելացնել նոր ձևերի slugs՝ այս վարքագիծը շրջանցելու համար։
 

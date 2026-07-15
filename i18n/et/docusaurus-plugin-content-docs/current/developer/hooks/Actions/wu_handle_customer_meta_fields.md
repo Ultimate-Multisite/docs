@@ -4,7 +4,7 @@ title: Tegevus - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Tegevus: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Tegevus: wu_handle_customer_meta_fields
 
 Võimaldab plugin arendajatel salvestada metaandmeid eri viisidel, kui neil seda vaja on.
 

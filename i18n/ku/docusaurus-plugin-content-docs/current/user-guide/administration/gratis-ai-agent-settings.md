@@ -3,7 +3,7 @@ title: Mîhengên Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Mîhengên Gratis AI Agent {#gratis-ai-agent-settings}
+# Mîhengên Gratis AI Agent
 
 Dîmendera **Settings → Advanced** di Gratis AI Agent de veavakirina asta rêveberiyê ji bo girêdanên backend pêşkêş dike. Ev rûpel şandina feedback, kilîdên dabînkerên lêgerînê, sazkirina xizmeta birêvebirî ya Superdav, kontrolên Google Calendar, mîhengên SMS yên TextBee, û alayên taybetmendiyan ên hemû torê belge dike.
 

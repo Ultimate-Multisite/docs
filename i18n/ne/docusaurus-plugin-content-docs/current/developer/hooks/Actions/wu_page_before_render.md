@@ -4,7 +4,7 @@ title: कार्य - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 plugin विकासकर्ताहरूलाई हामीले पृष्ठ प्रिन्ट गर्नु अघि अतिरिक्त सामग्री थप्न अनुमति दिनुहोस्।
 

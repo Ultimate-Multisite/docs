@@ -3,7 +3,7 @@ title: Conas a bhaint an t-sláinteach ar bhealach
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Conas éim míne mo chuidiú? {#how-can-i-cancel-my-subscription}
+# Conas éim míne mo chuidiú?
 
 Má tá lisens Ultimate Multisite agat, is féidir leat an athrú (renewal) a bhaint amach ag aon am atá tú ag iarraidh. Déan go leor an t-amach seo:
 

@@ -3,7 +3,7 @@ title: Fitairana ireo toerana
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Fitantanana ny Tranonkala {#managing-sites}
+# Fitantanana ny Tranonkala
 
 Ny Sites (na subsites) no fototry ny fandraharahanareo WaaS. Ny Ultimate Multisite dia manana karazana tranonkala 3:
 

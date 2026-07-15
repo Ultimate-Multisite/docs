@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# ක්‍රියාව: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# ක්‍රියාව: wp_ultimo_host_providers_load
 
 සංවර්ධකයින්ට wp plugins හරහා තමන්ගේම host provider ඒකාබද්ධ කිරීම් එක් කිරීමට ඉඩ දෙන්න.
 

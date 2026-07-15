@@ -3,7 +3,7 @@ title: Daftar Negara
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Mengubah urutan daftar negara Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Mengubah urutan daftar negara Ultimate Multisite
 
 Dropdown untuk memilih negara diurutkan secara alfabetis berdasarkan nama negara dalam bahasa Inggris. Ini berarti, terkadang, negara asal perusahaan Anda dan/atau sebagian besar pelanggan Anda tersembunyi di tengah-tengah daftar nama negara yang sangat panjang.
 

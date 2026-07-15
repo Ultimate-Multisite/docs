@@ -4,7 +4,7 @@ title: פילטער - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# פֿילטער: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# פֿילטער: wu_documentation_get_link
 
 דערלויבט צוגאָב־אַנטוויקלער צו פֿילטערן די לינקען.
 

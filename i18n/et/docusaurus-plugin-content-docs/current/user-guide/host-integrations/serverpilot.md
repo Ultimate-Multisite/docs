@@ -3,7 +3,7 @@ title: ServerPilot integreerimine
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integreerimine {#serverpilot-integration}
+# ServerPilot Integreerimine
 
 ## Üldine ülevaade {#overview}
 ServerPilot on pilvteenne, mis võimaldab WordPressi ja teiste PHP veebilehtide hoitamist DigitalOcean, Amazon, Google või millegaugi serverproviideril. See integreerimine võimaldab automaatselt domeenid sünkroonida ja SSL-sertifikaate haldamist Ultimate Multisite ja ServerPilot vahel.

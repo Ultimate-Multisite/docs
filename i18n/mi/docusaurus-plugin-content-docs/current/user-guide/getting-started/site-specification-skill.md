@@ -3,7 +3,7 @@ title: Whakawhanaungatanga o te Whakamahi Wāhi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Feahakitanga Whakawāhi Wāhi (Site Specification Skill) {#site-specification-skill}
+# Feahakitanga Whakawāhi Wāhi (Site Specification Skill)
 
 He **Feahakitanga Whakawāhi Wāhi** he te whakataunga mō te whakamahi ā-structured ki te whakatipu ngā whakaaro, te reo, me te whānau o te wāhi ahau. Ko i te pūrere **site_brief** ahau e whakatipu i tēnei mōhaka, i te whakamahinga ngā ai ngā agents i roto i ngā wāhi rā, kia whai i te mahi ā-tūnga me te mōhaka o te wāhi.
 

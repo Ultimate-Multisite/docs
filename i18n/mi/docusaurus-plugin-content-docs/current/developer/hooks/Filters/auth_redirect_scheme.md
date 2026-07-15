@@ -4,7 +4,7 @@ title: Tātari - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Tātari: auth_redirect_scheme {#filter-authredirectscheme}
+# Tātari: auth_redirect_scheme
 
 Ka tātari i te kaupapa aronga-anō whakamotuhēhē.
 

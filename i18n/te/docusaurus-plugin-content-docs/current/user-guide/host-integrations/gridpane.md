@@ -3,7 +3,7 @@ title: GridPane ఇంటిగ్రేషన్
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ఇంటిగ్రేషన్ {#gridpane-integration}
+# GridPane ఇంటిగ్రేషన్
 
 ## అవలోకనం {#overview}
 GridPane అనేది సీరియస్ WordPress ప్రొఫెషనల్స్ కోసం ప్రత్యేకంగా రూపొందించిన WordPress హోస్టింగ్ కంట్రోల్ ప్యానెల్. ఈ ఇంటిగ్రేషన్ Ultimate Multisite మరియు GridPane మధ్య ఆటోమేటిక్ డొమైన్ సింకింగ్ మరియు SSL సర్టిఫికేట్ మేనేజ్‌మెంట్‌ను అందిస్తుంది.

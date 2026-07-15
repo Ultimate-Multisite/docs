@@ -3,7 +3,7 @@ title: Integración Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integración Cloudways {#cloudways-integration}
+# Integración Cloudways
 
 ## Visión Geral {#overview}
 Cloudways é unha plataforma de alojamiento en nuube gestionada que te permite desplegar sitios WordPress en diferentes proveedores de nuube como DigitalOcean, AWS, Google Cloud e máis. Esta integración permite a sincronización automática de domínios e a gestión de certificados SSL entre Ultimate Multisite e Cloudways.

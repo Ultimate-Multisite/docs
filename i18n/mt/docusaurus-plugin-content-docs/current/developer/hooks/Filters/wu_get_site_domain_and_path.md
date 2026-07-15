@@ -4,7 +4,7 @@ title: Filtru - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# Filtru: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# Filtru: wu_get_site_domain_and_path
 
 Jippermetti lill-iżviluppaturi jimmanipulaw il-pari ta' domain/path.
 

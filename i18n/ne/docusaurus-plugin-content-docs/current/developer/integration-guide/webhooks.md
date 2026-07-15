@@ -3,7 +3,7 @@ title: Webhook व्यवस्थापन
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook व्यवस्थापन {#webhook-handling}
+# Webhook व्यवस्थापन
 
 बाह्य सेवाहरूबाट घटनाहरू प्राप्त गर्न र Ultimate Multisite सँग डेटा समक्रमण गर्न अनुकूल Webhook अन्त्यबिन्दुहरू सिर्जना गर्नुहोस्।
 

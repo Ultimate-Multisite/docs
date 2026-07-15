@@ -3,7 +3,7 @@ title: Cloudflare ஒருங்கிணைப்பு
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ஒருங்கிணைப்பு {#cloudflare-integration}
+# Cloudflare ஒருங்கிணைப்பு
 
 ## கண்ணோட்டம் {#overview}
 Cloudflare என்பது முன்னணி உள்ளடக்க விநியோக வலைப்பின்னல் (CDN) மற்றும் பாதுகாப்பு வழங்குநர். இது இணையதளங்களைப் பாதுகாக்கவும் வேகப்படுத்தவும் உதவுகிறது. இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் Cloudflare இடையே தானியங்கி டொமைன் மேலாண்மையை செயல்படுத்துகிறது. குறிப்பாக subdomain multisite நிறுவல்களுக்கு இது பயன்படும்.

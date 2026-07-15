@@ -4,7 +4,7 @@ title: Eylem - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Eylem: wu_deactivation {#action-wudeactivation}
+# Eylem: wu_deactivation
 
 Eklentinin diğer bölümlerinin devre dışı bırakılma işlemleri için kendi rutinlerini eklemesine olanak tanır.
 

@@ -3,7 +3,7 @@ title: Ultimate Multisite орнату
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite орнату {#installing-ultimate-multisite}
+# Ultimate Multisite орнату
 
 :::note
 Бұл оқулықта сізде WordPress Multisite жүйесі орнатылған және конфигурацияланған деп есәптеледі. Қалай жасау керектігін білу үшін WP Beginner-дің [осы оқулығын](https://www.wpbeginner.com/glossary/multisite/) қараңыз.

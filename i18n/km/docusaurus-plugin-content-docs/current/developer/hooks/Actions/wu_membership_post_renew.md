@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# សកម្មភាព: wu_membership_post_renew {#action-wumembershippostrenew}
+# សកម្មភាព: wu_membership_post_renew
 
 ដំណើរការបន្ទាប់ពីការបន្តសមាជិកភាព។
 

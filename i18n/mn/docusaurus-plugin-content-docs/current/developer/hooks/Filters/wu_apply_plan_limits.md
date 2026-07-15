@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# Шүүлтүүр: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+# Шүүлтүүр: wu_apply_plan_limits
 
 Plugin хөгжүүлэгчдэд хязгаарлалтуудыг богино холболтоор алгасах боломж олгоно.
 

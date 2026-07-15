@@ -3,7 +3,7 @@ title: ការបျតិ្តកម្រិតផែនការ
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# ការបျាករណ៍ផែនការ (v2) {#downgrading-a-plan-v2}
+# ការបျាករណ៍ផែនការ (v2)
 
 _**ចំណាំសំខាន់៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
 

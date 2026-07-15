@@ -3,7 +3,7 @@ title: Ho fana'a le RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Whakaaro RunCloud Integration {#runcloud-integration}
+# Whakaaro RunCloud Integration
 
 ## Whakatutanga (Overview) {#overview}
 RunCloud he mea e tū i cloud, he pātā mo whakamaonia server a te whaiora, e mafai atu ka e fana'o ā ā-web applicationi i onua o āna servera. He tino pai ai i tēnei integration ki te whakaotinga domaini automatically me te whakamaonia SSL certificateihi he taha i Ultimate Multisite me RunCloud.

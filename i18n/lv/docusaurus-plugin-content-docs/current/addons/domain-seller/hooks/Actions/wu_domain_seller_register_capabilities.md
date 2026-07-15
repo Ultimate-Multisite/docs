@@ -4,7 +4,7 @@ title: Darbība - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Darbība: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
+# Darbība: wu_domain_seller_register_capabilities
 
 Ļauj citiem plugins reģistrēt papildu domēnu pārdošanas iespējas.
 

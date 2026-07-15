@@ -3,7 +3,7 @@ title: Чӣ гуна харитасозии доменро танзим кард
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Чӣ гуна Domain Mapping-ро танзим кардан мумкин аст (v2) {#how-to-configure-domain-mapping-v2}
+# Чӣ гуна Domain Mapping-ро танзим кардан мумкин аст (v2)
 
 _**ҚАЙДИ МУҲИМ: Ин мақола ба Ultimate Multisite версияи 2.x дахл дорад.**_
 

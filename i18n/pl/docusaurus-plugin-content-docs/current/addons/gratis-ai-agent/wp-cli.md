@@ -3,7 +3,7 @@ title: WP-CLI Odwołanie
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Odniesienie do WP-CLI {#wp-cli-reference}
+# Odniesienie do WP-CLI
 
 Plugin Gratis AI Agent udostępnia rodzinę poleceń `wp gratis-ai-agent` do testowania agenta, zarządzania jego umiejętnościami (abilities) oraz sprawdzania statusu agenta z poziomu linii komend. Wszystkie polecenia wymagają WP-CLI 2.0 lub nowszej wersji.
 

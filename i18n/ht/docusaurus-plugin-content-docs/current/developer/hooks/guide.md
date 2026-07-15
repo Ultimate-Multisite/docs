@@ -3,7 +3,7 @@ title: Gid Itilizasyon Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gid Itilizasyon Hooks {#hooks-usage-guide}
+# Gid Itilizasyon Hooks
 
 Ultimate Multisite bay 200+ action hooks ak 280+ filter hooks. Paj sa a kouvri hooks yo itilize pi souvan yo avèk egzanp pratik. Pou yon referans konplè ki jenere otomatikman, navige lòt paj yo nan seksyon sa a.
 

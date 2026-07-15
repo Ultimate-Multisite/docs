@@ -3,7 +3,7 @@ title: Référence des capacités
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Référence des capacités {#abilities-reference}
+# Référence des capacités
 
 Les capacités sont les actions atomiques que l'Agent IA Gratuit peut déclencher sur votre installation WordPress. Chaque capacité est une classe PHP enregistrée qui expose un schéma JSON — l'agent lit ce schéma à l'exécution pour comprendre quels paramètres sont requis et ce que la capacité retourne.
 

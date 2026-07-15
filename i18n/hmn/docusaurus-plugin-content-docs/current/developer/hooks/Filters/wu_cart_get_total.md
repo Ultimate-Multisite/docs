@@ -4,7 +4,7 @@ title: Lim - wu_cart_get_total
 sidebar_label: wu_cart_get_total
 _i18n_hash: 72d9429a9eaa08472baafef395dd7138
 ---
-# Lim: wu_cart_get_total {#filter-wucartgettotal}
+# Lim: wu_cart_get_total
 
 Lim tag nrho tus "nqi pib".
 

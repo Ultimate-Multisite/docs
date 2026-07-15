@@ -4,7 +4,7 @@ title: عملیات - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# اکشن: wu_dashboard_widgets {#action-wudashboardwidgets}
+# اکشن: wu_dashboard_widgets
 
 این اکشن به توسعه‌دهندگان پلاگین اجازه می‌دهد تا ویجت‌هایی به پنل داشبورد شبکه (Network Dashboard Panel) اضافه کنند.
 

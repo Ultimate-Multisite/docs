@@ -4,7 +4,7 @@ title: ფილტრი - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# ფილტრი: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# ფილტრი: wu_limits_is_post_above_limit
 
 ამოწმებს, დაშვებულია თუ არა მოცემული პოსტის ტიპი ამ გეგმაში. საშუალებას აძლევს plugin-ის დეველოპერებს გაფილტრონ დაბრუნებული მნიშვნელობა
 

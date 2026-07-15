@@ -4,7 +4,7 @@ title: فیلتر - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# فیلتر: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# فیلتر: wu_magic_link_enforce_ip
 
 این فیلتر تعیین می‌کند که آیا باید آدرس IP را تأیید کرد یا خیر.
 

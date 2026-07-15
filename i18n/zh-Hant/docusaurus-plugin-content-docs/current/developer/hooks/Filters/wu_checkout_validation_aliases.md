@@ -4,7 +4,7 @@ title: 過濾器 - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# 篩選器：wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# 篩選器：wu_checkout_validation_aliases
 
 讓外掛開發者可以在表單驗證器中新增自訂別名。
 

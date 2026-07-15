@@ -3,7 +3,7 @@ title: Krijimi i Produktit Tuaj të Parë Abonimi
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Krijimi i Produktit Tuaj të Parë Abonimi (v2) {#creating-your-first-subscription-product-v2}
+# Krijimi i Produktit Tuaj të Parë Abonimi (v2)
 
 _**SHËNIM I RËTHMUES: Ky artikull është vetëm për përdoruesit e Ultimate Multisite version 2.x. Nëse po përdorni versionin 1.x,**_ **_shikoni këtë artikull**_**.
 

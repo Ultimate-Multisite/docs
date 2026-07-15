@@ -3,7 +3,7 @@ title: Nkwado Onboarding Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Quy trình Onboarding Theme Builder {#theme-builder-onboarding-flow}
+# Quy trình Onboarding Theme Builder
 
 Superdav AI Agent v1.12.0 mang đến cho bạn một **quy trình onboarding Theme Builder** có hướng dẫn, giúp bạn tạo một theme block tùy chỉnh trong lúc thiết lập ban đầu. Cái này thay thế chế độ Site Builder cũ bằng cách tiếp cận linh hoạt hơn, được hỗ trợ bởi agent (tác nhân).
 

@@ -3,7 +3,7 @@ title: Sealladh luachdan
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Seallta Lughaidh {#language-selector}
+# Seallta Lughaidh
 
 Tha an fhaighinn seo a deuglamhda gu **Language Selector** addon.
 

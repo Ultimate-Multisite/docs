@@ -3,7 +3,7 @@ title: 'Lecția 9: Prețuri pentru profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lecția 9: Prețuri pentru profit {#lesson-9-pricing-for-profit}
+# Lecția 9: Prețuri pentru profit
 
 În Lecția 5, am stabilit prețurile inițiale pentru planurile FitSite. Acum ne rafinăm strategia de prețuri cu tehnici care cresc veniturile, încurajează upgrade-urile și reduc rata de dezabonare (churn).
 

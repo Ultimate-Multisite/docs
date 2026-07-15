@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_woocommerce_load
 sidebar_label: wp_ultimo_woocommerce_load
 _i18n_hash: 6c6d605599da49c1874f3f62d7914f9b
 ---
-# ක්‍රියාව: wp_ultimo_woocommerce_load {#action-wpultimowoocommerceload}
+# ක්‍රියාව: wp_ultimo_woocommerce_load
 
 සියලු අතිරේක පරායත්තතා පූරණය වූ පසු ක්‍රියාත්මක වේ.
 

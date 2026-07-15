@@ -3,7 +3,7 @@ title: '제9강: 수익을 위한 가격 책정'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesson 9: 수익을 위한 가격 책정 {#lesson-9-pricing-for-profit}
+# Lesson 9: 수익을 위한 가격 책정
 
 Lesson 5에서 FitSite 플랜의 초기 가격을 설정했습니다. 이제 수익을 늘리고, 업그레이드를 장려하며, 이탈률을 줄이는 기술을 사용하여 가격 전략을 다듬어 보겠습니다.
 

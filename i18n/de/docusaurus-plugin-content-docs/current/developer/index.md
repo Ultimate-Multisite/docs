@@ -3,7 +3,7 @@ title: Entwicklerdokumentation
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Entwicklerdokumentation {#developer-documentation}
+# Entwicklerdokumentation
 
 Dieser Leitfaden bietet Entwicklern alles, was benötigt wird, um Ultimate Multisite zu integrieren, zu erweitern oder Add-ons dafür zu entwickeln. Ultimate Multisite verwandelt ein WordPress Multisite-Netzwerk in eine Website-as-a-Service (WaaS)-Plattform.
 

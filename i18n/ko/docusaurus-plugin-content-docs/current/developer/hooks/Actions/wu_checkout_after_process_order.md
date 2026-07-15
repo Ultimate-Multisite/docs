@@ -4,7 +4,7 @@ title: 액션 - wu_checkout_after_process_order
 sidebar_label: wu_checkout_after_process_order
 _i18n_hash: 40a5c096f223c5f82a109163c29284d3
 ---
-# Action: wu_checkout_after_process_order {#action-wucheckoutafterprocessorder}
+# Action: wu_checkout_after_process_order
 
 개발자가 추가 훅을 트리거하도록 허용합니다.
 

@@ -3,7 +3,7 @@ title: Indlela yokufaka i-WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ngiyifaka kanjani i-WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Ngiyifaka kanjani i-WordPress Multisite?
 
 WordPress Multisite ikuvumela ukuba ube nenethiwekhi yamasayithi ekufakweni okukodwa. Lesi isici esakhelwe ngaphakathi, kodwa asisebenzi ngokuzenzakalelayo.
 
@@ -61,7 +61,7 @@ Futhi le khodi, nayo enikezwe yi-WordPress, kufayela lakho le-_**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

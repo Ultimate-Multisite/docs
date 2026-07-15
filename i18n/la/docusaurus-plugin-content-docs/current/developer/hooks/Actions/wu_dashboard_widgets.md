@@ -4,7 +4,7 @@ title: Actio - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Actio: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Actio: wu_dashboard_widgets
 
 Permittit evolutoribus additamentorum instrumenta ad Tabulam Dashboard Retis addere.
 

@@ -4,7 +4,7 @@ title: 액션 - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# 액션: add_network {#action-addnetwork}
+# 액션: add_network
 
 새로운 네트워크가 추가된 후에 발생합니다.
 

@@ -3,7 +3,7 @@ title: Premiers pas avec le développement de modules complémentaires
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Développement d’Addon {#addon-development}
+# Développement d’Addon
 
 ## Structure de l’Addon {#addon-structure}
 

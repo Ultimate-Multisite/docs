@@ -3,7 +3,7 @@ title: PayFast Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast Değişiklik Günlüğü {#payfast-changelog}
+# PayFast Değişiklik Günlüğü
 
 Sürüm: 1.0.2 - Yayınlanma Tarihi: 2025-09-28
 

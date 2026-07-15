@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Whakawhiti me Cloudflare {#cloudflare-integration}
+# Whakawhiti me Cloudflare
 
 ## Pātaiwhiri (Overview) {#overview}
 Cloudflare he whānau nui o ngā wero mō te whaiwhihi i mō te wāhi (content delivery network - CDN) me te pūmanawa ā-whakamahinga (security provider) ki te whakamahi i te wero me te whakaaturanga o ngā website. Ka tino whaiārahi tēnei whakawhiti i te whakamaoritanga o te domain (domain management) anōanō i antara Ultimate Multisite me Cloudflare, tekaui tekau mō ngā installation multisite subdomain.

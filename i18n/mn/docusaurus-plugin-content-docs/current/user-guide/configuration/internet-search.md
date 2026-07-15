@@ -3,7 +3,7 @@ title: Интернет хайлт
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Интернет хайлт (Internet Search) {#internet-search}
+# Интернет хайлт (Internet Search)
 
 Gratis AI Agent v1.5.0-д чат ярианы үед сүүлийн үеийн мэдээллийг интернэтээс хайж авах **Интернет хайлт** чадварыг нэмсэн. Энэ нь [Brave Search API](https://brave.com/search/api/) эсвэл [Tavily API](https://tavily.com/) -аар ажилладаг.
 

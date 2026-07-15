@@ -3,7 +3,7 @@ title: インターネット検索
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# インターネット検索 {#internet-search}
+# インターネット検索
 
 Gratis AI Agent v1.5.0 には、会話中にAIアシスタントがウェブから最新情報を取得できる**インターネット検索**機能が追加されました。この機能は、[Brave Search API](https://brave.com/search/api/) または [Tavily API](https://tavily.com/) によって実現されています。
 

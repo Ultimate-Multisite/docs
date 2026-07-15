@@ -4,7 +4,7 @@ title: 篩選器 - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# 過濾器：wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# 過濾器：wu_get_site_domain_and_path
 
 允許開發人員修改網域/路徑的組合。
 

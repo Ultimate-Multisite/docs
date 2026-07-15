@@ -3,7 +3,7 @@ title: 建置自訂的註冊商整合
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# 建立自訂註冊商整合 {#building-a-custom-registrar-integration}
+# 建立自訂註冊商整合
 
 Domain Seller 外掛使用了 **整合註冊表 (Integration Registry)** 模式。每個註冊商都是一個實作了 `Domain_Selling_Capability` 介面，並透過 `wu_domain_seller_register_capabilities` action hook 進行註冊的 PHP 類別。
 

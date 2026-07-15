@@ -4,7 +4,7 @@ title: Filter - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filter: network_options_list {#filter-networkoptionslist}
+# Filter: network_options_list
 
 ஒரு நெட்வொர்க்கின் டொமைன் மற்றும் பாதை (domain and path) ஆகியவற்றைப் பொறுத்து இருக்கும் நெட்வொர்க் விருப்பங்களின் பட்டியலை இது வடிகட்டுகிறது.
 

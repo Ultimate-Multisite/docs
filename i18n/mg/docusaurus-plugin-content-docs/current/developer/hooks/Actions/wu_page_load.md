@@ -4,7 +4,7 @@ title: Hetsika - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Hetsika: wu_page_load {#action-wupageload}
+# Hetsika: wu_page_load
 
 Avelao ny mpamorona plugin hanampy hooks fanampiny amin’ny pejinay.
 

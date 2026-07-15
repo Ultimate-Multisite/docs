@@ -4,7 +4,7 @@ title: Tace - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Filter: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Filter: wu_stripe_existing_product_id
 
 Yana tace ID na samfurin da za a duba. Idan wannan yana wanzu, sabon subscription zai yi amfani da wannan samfurin.
 

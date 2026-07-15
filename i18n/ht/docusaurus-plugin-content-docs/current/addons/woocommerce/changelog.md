@@ -3,7 +3,7 @@ title: Jounal chanjman entegrasyon WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Jounal Chanjman Entegrasyon WooCommerce {#woocommerce-integration-changelog}
+# Jounal Chanjman Entegrasyon WooCommerce
 
 Vèsyon 2.2.0 - Lage nan 2026-07-01
 * Nouvo: Kantite taks Ultimate Multisite yo kounye a parèt kòm liy frè WooCommerce separe nan checkout, sa ki fè total taks yo pi klè anvan peman.

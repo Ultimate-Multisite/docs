@@ -3,7 +3,7 @@ title: Integrationsleitfaden
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrationsleitfaden {#integration-guide}
+# Integrationsleitfaden
 
 Dieser Leitfaden behandelt gängige Integrationsmuster mit Ultimate Multisite, einschließlich der Anbindung an externe Dienste, der Erstellung eigener Zahlungsgateways und der Verarbeitung von Webhooks.
 

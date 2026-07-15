@@ -3,7 +3,7 @@ title: Bayanan Iyawa
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Bayanin Abilities {#abilities-reference}
+# Bayanin Abilities
 
 Abilities su ne ƙananan ayyuka na asali da Gratis AI Agent zai iya kira a kan shigarwar WordPress ɗinka. Kowace ability ajin PHP ce da aka yi rajista wadda ke fitar da JSON schema — agent ɗin yana karanta wannan schema a lokacin aiki don fahimtar waɗanne parameters ake buƙata da abin da ability ɗin ke mayarwa.
 

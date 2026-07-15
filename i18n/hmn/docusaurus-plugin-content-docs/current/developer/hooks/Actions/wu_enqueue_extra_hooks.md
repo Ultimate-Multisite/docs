@@ -4,7 +4,7 @@ title: Kev ua - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Kev ua: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Kev ua: wu_enqueue_extra_hooks
 
 Tso cai rau cov neeg tsim plugin ntxiv hooks ntxiv
 

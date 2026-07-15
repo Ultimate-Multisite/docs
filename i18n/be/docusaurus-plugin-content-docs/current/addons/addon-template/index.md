@@ -3,9 +3,9 @@ title: Аддаткавы шаблон
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Аддон-шаблон {#addon-template}
+# Аддон-шаблон
 
-{{ADDON_DESCRIPTION}}
+Аддаткавы шаблон — Ultimate Multisite.
 
 ## Патраebaванні {#requirements}
 

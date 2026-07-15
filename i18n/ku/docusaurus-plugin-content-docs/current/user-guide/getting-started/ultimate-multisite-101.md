@@ -3,7 +3,7 @@ title: Ultimate Multisite ١٠١
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite ١٠١ {#ultimate-multisite-101}
+# Ultimate Multisite ١٠١
 
 Ultimate Multisite ووردبريس (WordPress) یەک插件ە کە دەبێت بگەڕێیت بۆ ئەوەی خزمەتگوزاری WaaS یان Websites as a Service بە کڕیاران پێشکەش بکەیت. پێش ئەوەی بگەڕێینەوە و بیبینین چۆن Ultimate Multisite دەتوانێت یارمەتی کار و کڕیارەکانت بدات، زانیارییەکی بنەڕەتی هەیە کە دەبێت وەربگرین.
 

@@ -4,7 +4,7 @@ title: 篩選器 - wu_before_ . $this->slug . _api_arguments
 sidebar_label: wu_before_ . $this->slug . _api_arguments
 _i18n_hash: ee800d8a03702733cd3a08863f0de17c
 ---
-# 過濾器：wu_before_ . $this->slug . _api_arguments {#filter-wubefore--this-slug--apiarguments}
+# 過濾器：wu_before_ . $this->slug . _api_arguments
 
 過濾原始的 API 參數。
 

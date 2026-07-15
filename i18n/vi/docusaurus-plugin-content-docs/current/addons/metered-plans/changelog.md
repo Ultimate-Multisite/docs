@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Gói theo mức sử dụng
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Nhật ký thay đổi của Gói cước Tính theo mức sử dụng {#metered-plans-changelog}
+# Nhật ký thay đổi của Gói cước Tính theo mức sử dụng
 
 Version 1.1.0 - Phát hành vào ngày 2026-05-05
 - Mới: Tính phí token AI cho các trang con (subsites) trong môi trường multisite — theo dõi và tính phí mức sử dụng token AI trên nhiều trang khách hàng với mức giá linh hoạt cho từng token.

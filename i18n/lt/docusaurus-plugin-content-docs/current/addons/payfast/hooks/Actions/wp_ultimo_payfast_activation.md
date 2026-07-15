@@ -4,7 +4,7 @@ title: Veiksmas - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Veiksmas: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Veiksmas: wp_ultimo_payfast_activation
 
 Leiskite kitoms plugin dalims prijungti savo aktyvinimo procedūras
 

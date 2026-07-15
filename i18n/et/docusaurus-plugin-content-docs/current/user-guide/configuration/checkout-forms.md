@@ -3,7 +3,7 @@ title: Tellimiskogud
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout vormidlid {#checkout-forms}
+# Checkout vormidlid
 
 Checkout Forms onab võimaldavad teil lihtsalt ja jäykalt eksperimenteerida erinevate lähenemiste viihdudega uute klientide hankimisel.
 

@@ -3,7 +3,7 @@ title: クライアントAccountページ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# クライアントの Account ページ（v2） {#your-clients-account-page-v2}
+# クライアントの Account ページ（v2）
 
 _**重要な注記：この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

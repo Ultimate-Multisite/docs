@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Az Ultimate Multisite egy WordPress Multisite bővítmény, amellyel WaaS-t, vagyis weboldalakat szolgáltatásként (Websites as a Service) kínálhatsz ügyfeleinek. Mielőtt belemerülnénk, és megismernénk, hogyan segíthet az Ultimate Multisite a vállalkozásodnak és ügyfeleidnek, először néhány alapvető fogalmat kell tisztáznunk.
 

@@ -4,7 +4,7 @@ title: कृती - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 प्लगइन डेव्हलपर्सना जेव्हा पेजेसची नोंदणी होते, तेव्हा अतिरिक्त कार्ये (actions) चालवण्याची परवानगी देते.
 

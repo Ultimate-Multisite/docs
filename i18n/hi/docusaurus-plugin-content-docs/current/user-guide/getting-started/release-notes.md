@@ -3,7 +3,7 @@ title: रिलीज़ नोट्स
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# रिलीज़ नोट्स {#release-notes}
+# रिलीज़ नोट्स
 
 ## Version 2.13.0 — 2026-06-05 को जारी {#version-2130--released-on-2026-06-05}
 

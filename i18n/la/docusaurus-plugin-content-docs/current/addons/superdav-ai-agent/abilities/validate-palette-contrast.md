@@ -3,7 +3,7 @@ title: Contrarium tabulae colorum valida
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valida Contrarium Paletae {#validate-palette-contrast}
+# Valida Contrarium Paletae
 
 Facultas **Valida Contrarium Paletae** paria colorum in paleta consilii tui explorat ut cum WCAG (Praeceptis Accessibilitatis Contenti Web) congruant, antequam ea themati tuo applicentur.
 

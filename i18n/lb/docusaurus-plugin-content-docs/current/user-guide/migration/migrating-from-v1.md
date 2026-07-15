@@ -3,7 +3,7 @@ title: V1 migiere
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migriere vo V1 {#migrating-from-v1}
+# Migriere vo V1
 
 ## Ultimate Multisite isch vo sin ursprüngle 1.x Familie vo Releases uf d'2.x Familie vo Releases gwächslet. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

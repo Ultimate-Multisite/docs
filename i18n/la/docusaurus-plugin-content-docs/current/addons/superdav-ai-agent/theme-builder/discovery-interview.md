@@ -3,7 +3,7 @@ title: Colloquium exploratorium
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Colloquium Explorationis {#discovery-interview}
+# Colloquium Explorationis
 
 **Colloquium Explorationis** est primus gradus in processu designandi Theme Builder. Informationes de situ tuo, negotio, et optionibus designandi colligit ut thema personale creet.
 

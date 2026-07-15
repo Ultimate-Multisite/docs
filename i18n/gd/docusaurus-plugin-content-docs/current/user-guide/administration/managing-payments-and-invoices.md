@@ -3,7 +3,7 @@ title: Bàidh a' chùcas a' chàirich agus a' chàirich-fhaisghean
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# A' Chùlnaidhean agus Brèidhean {#managing-payments-and-invoices}
+# A' Chùlnaidhean agus Brèidhean
 
 ## Setadh Brèidhean {#payment-settings}
 

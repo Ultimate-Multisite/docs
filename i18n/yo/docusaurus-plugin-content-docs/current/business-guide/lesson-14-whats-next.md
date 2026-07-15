@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 14: Kí ni ó tẹ̀ lé?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Ẹ̀kọ́ 14: Ohun Tó Máa Wáyé Tó Kàn {#lesson-14-what-comes-next}
+# Ẹ̀kọ́ 14: Ohun Tó Máa Wáyé Tó Kàn
 
 O ti kọ́ pẹpẹ oju opo wẹẹbu onígbè kan láti ìbẹ̀rẹ̀. FitSite ti wà láàyè, ó ń sin àwọn studio amọdájú ara, ó sì ń mú owó-wíwọlé tó ń tún ara rẹ̀ ṣe wá. Ẹ̀kọ́ ìkẹyìn yìí wo ibi tí o lè lọ láti ibí.
 

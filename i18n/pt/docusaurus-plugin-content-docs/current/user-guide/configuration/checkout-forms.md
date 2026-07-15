@@ -3,7 +3,7 @@ title: Formulários de checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulários de Checkout {#checkout-forms}
+# Formulários de Checkout
 
 Os Formulários de Checkout são uma maneira fácil e flexível de experimentar diferentes abordagens ao tentar converter novos clientes.
 

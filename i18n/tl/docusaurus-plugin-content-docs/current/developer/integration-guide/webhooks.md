@@ -3,7 +3,7 @@ title: Pangangasiwa ng Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Pangangasiwa ng Webhook {#webhook-handling}
+# Pangangasiwa ng Webhook
 
 Gumawa ng mga pasadyang endpoint ng webhook upang makatanggap ng mga kaganapan mula sa mga panlabas na serbisyo at i-sync ang datos sa Ultimate Multisite.
 

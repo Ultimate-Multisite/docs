@@ -4,7 +4,7 @@ title: فلٹر - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# فلٹر: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# فلٹر: wu_light_ajax_allowed_hooks
 
 سیکیورٹی وجوہات کی بنا پر، ہم ہک کرنے کے لیے دستیاب ایکشنز کی تعداد کو محدود کرتے ہیں۔ یہ فلٹر ڈویلپرز کو ضرورت پڑنے پر اس فہرست کو بڑھانے کی اجازت دیتا ہے۔
 

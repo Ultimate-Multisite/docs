@@ -3,7 +3,7 @@ title: Պատվերով ռեգիստրատորի ինտեգրացիայի ստե
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Հատուկ գրանցողի ինտեգրումի կառուցում {#building-a-custom-registrar-integration}
+# Հատուկ գրանցողի ինտեգրումի կառուցում
 
 Domain Seller addon-ը օգտագործում է **Integration Registry** ձևանմուշ։ Յուրաքանչյուր գրանցող PHP class է, որը իրականացնում է `Domain_Selling_Capability` և ինքն իրեն գրանցում է `wu_domain_seller_register_capabilities` action hook-ի միջոցով։
 

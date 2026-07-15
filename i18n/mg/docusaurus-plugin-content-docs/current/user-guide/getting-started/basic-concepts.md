@@ -3,7 +3,7 @@ title: Hevi-dehibe fototra
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Fototra Ny Fototra {#basic-concepts}
+# Fototra Ny Fototra
 
 Ho an mpampiasa WordPress Multisite vaovao sy olona vao manomboka mampiasa Ultimate Multisite, dia misy teny sy fehezanteny maro vaovao tokony hianarana aloha. Zava-dehibe ny fianarana azy satria mila mahazo ny sehatra (platform) sy ny fomba fiasany amin'ny ankapobeny ianao.
 

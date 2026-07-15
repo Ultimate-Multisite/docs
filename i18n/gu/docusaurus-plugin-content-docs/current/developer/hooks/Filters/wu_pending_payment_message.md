@@ -4,7 +4,7 @@ title: Filter - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filter: wu_pending_payment_message
 
 વપરાશકર્તાને બાકી ચૂકવણીઓ (pending payments) વિશેના સંદેશને બદલવાની મંજૂરી આપે છે.
 

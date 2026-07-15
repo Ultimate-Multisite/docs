@@ -4,7 +4,7 @@ title: Фильтр - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Фильтр: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# Фильтр: wu_magic_link_enforce_user_agent
 
 Кулланучы агентын тикшерүне мәҗбүри итү-итмәүне фильтрлый.
 

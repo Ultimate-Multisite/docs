@@ -4,7 +4,7 @@ title: Aiki - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Aiki: auth_redirect {#action-authredirect}
+# Aiki: auth_redirect
 
 Yana faruwa kafin turawar tantancewa.
 

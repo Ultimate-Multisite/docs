@@ -3,7 +3,7 @@ title: 'Loj 1: U vim li dab tsi niche yu ua haujlwm'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: ຍ້ອນເປັນ Niche ຈຶ່ງຊະນະ {#lesson-1-why-niche-wins}
+# Lesson 1: ຍ້ອນເປັນ Niche ຈຶ່ງຊະນະ
 
 ກ່ອນທີ່ເຮົາຈະເລີ່ມໃຊ້ software ໃດໆ, ເຮົາຕ້ອງເຂົ້າໃຈວ່າເປັນຫຍັງການສ້າງເວັບໄຊໃຫ້ກັບຄົນສະເພາະຈຶ່ງເປັນການຕັດສິນໃຈທີ່ສຳຄັນທີ່ສຸດທີ່ຈະເຮັດ.
 

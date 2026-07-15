@@ -4,7 +4,7 @@ title: Δράση - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Action: wu_activation {#action-wuactivation}
+# Action: wu_activation
 
 Επιτρέπει σε άλλα μέρη του plugin να συνδέουν τη δική τους λογική (routines) που πρέπει να εκτελεστεί κατά την ενεργοποίηση.
 

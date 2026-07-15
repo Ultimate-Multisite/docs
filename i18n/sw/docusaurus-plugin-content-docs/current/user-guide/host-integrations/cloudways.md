@@ -3,7 +3,7 @@ title: Ujumuishaji wa Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Muunganisho wa Cloudways {#cloudways-integration}
+# Muunganisho wa Cloudways
 
 ## Muhtasari {#overview}
 Cloudways ni jukwaa la usimamizi wa hosting ya cloud linalokuruhusu kuweka tovuti za WordPress kwenye watoa huduma mbalimbali wa cloud kama DigitalOcean, AWS, Google Cloud, na wengineo. Muunganisho huu huwezesha usawazishaji otomatiki wa domain na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na Cloudways.

@@ -3,7 +3,7 @@ title: Fanondroana Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Torolàlana momba ny Hooks {#hooks-reference}
+# Torolàlana momba ny Hooks
 
 Antontan-taratasy novokarina ho azy ho an'ny **hetsika 59** sy **sivana 118** rehetra ao amin'ny Ultimate Multisite.
 

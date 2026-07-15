@@ -3,7 +3,7 @@ title: హెడర్ డొమైన్ శోధన
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Ultimate Multisite checkout లో అందుబాటులో ఉన్న డొమైన్‌లలోంచి కస్టమర్ ఎంచుకునేలా, ముందుగా డొమైన్ వెతుకులాటను ప్రారంభించే చిన్న header ఫారమ్ కావాలనుకుంటే ఈ setup వాడండి.
 

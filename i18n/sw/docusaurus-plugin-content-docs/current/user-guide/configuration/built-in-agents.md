@@ -3,7 +3,7 @@ title: Mawakala Waliojengewa Ndani
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Mawakala Waliojengwa Ndani {#built-in-agents}
+# Mawakala Waliojengwa Ndani
 
 Gratis AI Agent v1.9.0 huja na mawakala watano waliojengwa ndani, kila mmoja akiwa amesanidiwa mapema kwa seti maalumu ya zana, system prompt iliyobinafsishwa, na mapendekezo ya kuanzia yanayolingana na kazi za kawaida katika eneo hilo. Kubadilisha kati ya mawakala hubadilisha kile ambacho msaidizi anaweza kufanya na jinsi anavyojibu — bila usanidi wowote kwa upande wako. Superdav AI Agent v1.18.0 inaweza kuongeza zana zinazozingatia ratiba, rekodi za vikumbusho, milango ya idhini, na arifa za SMS kwenye mtiririko huu wa kazi wakati miunganisho husika imesanidiwa.
 

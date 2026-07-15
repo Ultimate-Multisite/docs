@@ -3,7 +3,7 @@ title: Pagpapadala ng mga Email at Broadcast
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Pagpapadala ng mga Email at Broadcast (v2) {#sending-emails-and-broadcasts-v2}
+# Pagpapadala ng mga Email at Broadcast (v2)
 
 _**MAHALAGANG TALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 

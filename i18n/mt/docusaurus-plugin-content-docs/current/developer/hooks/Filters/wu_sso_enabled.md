@@ -4,7 +4,7 @@ title: Filtru - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filtru: wu_sso_enabled {#filter-wussoenabled}
+# Filtru: wu_sso_enabled
 
 Ippermetti/iddiżattiva l-kapaċità ta' single-sign-on bejn dominji.
 

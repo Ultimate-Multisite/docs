@@ -3,7 +3,7 @@ title: Umphakathi
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ungajoyina kanjani Umphakathi we-Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Ungajoyina kanjani Umphakathi we-Ultimate Multisite
 
 Umphakathi we-Ultimate Multisite uyindawo lapho ungaxhumana khona nabanye abasebenzisi be-Ultimate Multisite futhi wabelane ngamathiphu, okuhlangenwe nakho nokunye. Ukuze ufinyelele Umphakathi we-Ultimate Multisite iya ku-https://community.ultimatemultisite.com/home.
 

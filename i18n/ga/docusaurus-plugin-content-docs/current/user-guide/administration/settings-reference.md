@@ -3,7 +3,7 @@ title: Tagairt Socruithe
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tagairt Socruithe {#settings-reference}
+# Tagairt Socruithe
 
 Rianaíonn an leathanach seo socruithe a théann i bhfeidhm ar riarachán laethúil agus ar athruithe iompair le déanaí in Ultimate Multisite.
 

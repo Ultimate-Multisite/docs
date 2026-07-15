@@ -3,7 +3,7 @@ title: Stripe کي ترتیب ڏيڻ
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# اسٹریپ گیتوی کو سیٹ اپ کرنا (v2) {#setting-up-the-stripe-gateway-v2}
+# اسٹریپ گیتوی کو سیٹ اپ کرنا (v2)
 
 _**اہم نوٹ: یہ آرٹیکل Ultimate Multisite ورژن 2.x کا حوالہ دیتا ہے۔**_
 

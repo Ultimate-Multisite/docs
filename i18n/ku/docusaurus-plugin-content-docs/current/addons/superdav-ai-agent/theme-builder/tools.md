@@ -3,7 +3,7 @@ title: Amûr û Mîhengkirin
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Amûr û Veavakirin {#tools-and-configuration}
+# Amûr û Veavakirin
 
 Theme Builder komek amûran bi kar tîne da ku malpera te ya WordPress analîz bike, sêwiran bike û ava bike. Di guhertoya 1.16.0 de, **sd-ai-agent/site-scrape niha amûrek Tier 1 e**, lewma bi awayê standard di Theme Builder de berdest e. Superdav AI Agent v1.18.0 herwiha paketeke hevkar a Advanced ku cuda tê belavkirin ji bo xebatên pêşvebirînerên pêbawer dide nasîn; ew amûr ne beşek ji paketa bingehîn a WordPress.org in û divê cuda bên sazkirin û destûrkirin.
 

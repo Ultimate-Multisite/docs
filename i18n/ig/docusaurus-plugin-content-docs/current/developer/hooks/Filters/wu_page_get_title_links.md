@@ -4,7 +4,7 @@ title: Nzacha - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Nzacha: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Nzacha: wu_page_get_title_links
 
 Kwe ka ndị nrụpụta plugin, na anyị onwe anyị, tinye njikọ omume na ibe ndezi anyị
 

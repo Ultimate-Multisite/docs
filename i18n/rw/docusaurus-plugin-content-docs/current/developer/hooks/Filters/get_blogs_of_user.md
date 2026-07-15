@@ -4,7 +4,7 @@ title: Akayunguruzo - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Muyunguruzi: get_blogs_of_user {#filter-getblogsofuser}
+# Muyunguruzi: get_blogs_of_user
 
 Isubiramo WP Filter y’umwimerere hano, kugira ngo bibe byiza.
 

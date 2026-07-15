@@ -3,7 +3,7 @@ title: サイトの管理
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Managing Sites {#managing-sites}
+# Managing Sites
 
 Sites (or subsites) are the core of your WaaS business. Ultimate Multisite has 3 types of sites:
 

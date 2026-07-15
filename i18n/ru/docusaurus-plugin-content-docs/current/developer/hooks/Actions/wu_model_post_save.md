@@ -4,7 +4,7 @@ title: Действие - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Действие: wu_model_post_save {#action-wumodelpostsave}
+# Действие: wu_model_post_save
 
 Вызывается после того, как объект сохранен в базе данных.
 

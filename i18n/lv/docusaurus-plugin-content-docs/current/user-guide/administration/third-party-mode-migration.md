@@ -3,7 +3,7 @@ title: Trešās puses režīma migrācija
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrācija uz tretiem pusēm {#third-party-mode-migration}
+# Migrācija uz tretiem pusēm
 
 Superdav AI Agent v1.12.0 mainīja, kā tiek strādāti tretiepusēji spējumi. **Trešās puses režīms tagad defaultējas uz "auto",** ļaujot integrēties ar WordPress Abilities API tieši bez manas konfigurācijas, nepieciežīgi WordPress 7.0+ versijā.
 

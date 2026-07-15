@@ -4,7 +4,7 @@ title: Δράση - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Action: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Action: wp_ultimo_site_exporter_activation
 
 Επιτρέπει σε άλλα μέρη του plugin να συνδέουν τις ρουτίνες τους για την ενεργοποίηση.
 

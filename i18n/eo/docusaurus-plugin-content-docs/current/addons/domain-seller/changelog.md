@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de Domajna Vendisto
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Ŝanĝoprotokolo {#domain-seller-changelog}
+# Domain Seller Ŝanĝoprotokolo
 
 Versio 1.3.0 - Eldonita je 2026-06-02
 - Nova: Aldonita averto por reta administranto kiam la saldo de HostAfrica revendisto fariĝas tro malalta

@@ -3,7 +3,7 @@ title: Процес на въвеждане на Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Процес на запознаване с Theme Builder {#theme-builder-onboarding-flow}
+# Процес на запознаване с Theme Builder
 
 Superdav AI Agent v1.12.0 въвежда ръководен **процес на запознаване с Theme Builder**, който ви помага да създадете персонализирана блокова тема по време на първоначалната настройка. Това замества остарелия режим Site Builder с по-гъвкав подход, асистиран от agent.
 

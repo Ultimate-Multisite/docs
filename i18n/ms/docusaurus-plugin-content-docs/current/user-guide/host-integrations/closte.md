@@ -3,7 +3,7 @@ title: Integrasi Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrasi Closte {#closte-integration}
+# Integrasi Closte
 
 ## Gambaran Keseluruhan {#overview}
 Closte ialah platform hosting WordPress terurus yang dibina di atas infrastruktur Google Cloud. Integrasi ini membolehkan penyegerakan domain automatik dan pengurusan sijil SSL antara Ultimate Multisite dan Closte.

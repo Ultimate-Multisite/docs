@@ -4,7 +4,7 @@ title: Gweithred - wu_handle_add_new_domain_modal
 sidebar_label: wu_handle_add_new_domain_modal
 _i18n_hash: 77246d387c651043b47e7a466a7e892e
 ---
-# Gweithred: wu_handle_add_new_domain_modal {#action-wuhandleaddnewdomainmodal}
+# Gweithred: wu_handle_add_new_domain_modal
 
 Caiff ei danio cyn trin cais modal ychwanegu parth newydd.
 

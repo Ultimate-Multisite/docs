@@ -3,7 +3,7 @@ title: 'Lesson 3: Your Network Setup'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Ders 3: Ağınızı Kurmak {#lesson-3-setting-up-your-network}
+# Ders 3: Ağınızı Kurmak
 
 İnşa etme zamanı. Bu derste Ultimate Multisite'ı kuracak ve FitSite ağının temelini oluşturacağız. Buradaki her karar, fitness nişine uygun düşünülerek veriliyor.
 

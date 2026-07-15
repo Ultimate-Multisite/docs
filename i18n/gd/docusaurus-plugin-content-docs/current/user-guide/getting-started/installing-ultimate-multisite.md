@@ -3,7 +3,7 @@ title: A’ stàladh an Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# A’ stàladh an Ultimate Multisite {#installing-ultimate-multisite}
+# A’ stàladh an Ultimate Multisite
 
 :::note
 Tha am teachdaireachd seo a’ cur gu làimh rium nach eil an WordPress Multisite air a stàladh agus a chur air dòigh. Gus faighinn a-mach mar, thèidibh chun [am teachdaireachd seo](https://www.wpbeginner.com/glossary/multisite/) le WP Beginner.

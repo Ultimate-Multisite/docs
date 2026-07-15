@@ -3,7 +3,7 @@ title: Tomara guhertinên Fluent Forms
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms Tomara Guhertinan {#fluent-forms-changelog}
+# Fluent Forms Tomara Guhertinan
 
 Guherto: 2.0.1 - Di 2025-09-28 de hate berdan
 

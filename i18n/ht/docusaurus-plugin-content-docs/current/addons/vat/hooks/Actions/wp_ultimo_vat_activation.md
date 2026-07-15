@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Aksyon: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Aksyon: wp_ultimo_vat_activation
 
 Kite lòt pati nan plugin nan tache woutin yo pou aktivasyon
 

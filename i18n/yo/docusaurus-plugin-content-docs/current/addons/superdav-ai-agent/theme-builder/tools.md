@@ -3,7 +3,7 @@ title: Àwọn irinṣẹ́ àti Ìṣètò
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Àwọn Irinṣẹ́ àti Ìṣètò {#tools-and-configuration}
+# Àwọn Irinṣẹ́ àti Ìṣètò
 
 Theme Builder ń lo àkójọpọ̀ àwọn irinṣẹ́ láti ṣe àyẹ̀wò, ṣe àpẹrẹ, àti kọ́ ojúlé WordPress rẹ. Ní ẹ̀yà 1.16.0, **sd-ai-agent/site-scrape ti di irinṣẹ́ Tier 1 báyìí**, ó sì wà fún lílò ní aiyipada nínú Theme Builder. Superdav AI Agent v1.18.0 tún mú àkójọpọ̀ alábàákẹ́gbẹ́ Advanced kan wá tí a pín ká lọ́tọ̀ fún ìṣàn iṣẹ́ olùgbéejáde tí a fọkàn tán; àwọn irinṣẹ́ wọ̀nyẹn kì í ṣe apá kan àkójọpọ̀ pàtàkì WordPress.org, wọ́n sì gbọ́dọ̀ fi sílẹ̀ àti fún ní àṣẹ lọ́tọ̀.
 

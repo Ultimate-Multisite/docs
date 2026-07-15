@@ -3,7 +3,7 @@ title: Ukudityaniswa kwe-cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Udibaniso lwe-cPanel {#cpanel-integration}
+# Udibaniso lwe-cPanel
 
 ## Isishwankathelo {#overview}
 i-cPanel yenye yeepaneli zolawulo lokusingatha iwebhu ezithandwa kakhulu ezisetyenziswa ngabanikezeli abaninzi bokusingatha okwabelwana ngako nokuzinikeleyo. Olu dibaniso luvumela ukuvumelanisa ngokuzenzekelayo kwamadomeyini phakathi kwe-Ultimate Multisite ne-cPanel, lukuvumela ukuba wongeze ngokuzenzekelayo ii-alias zedomeyini kunye nee-subdomain kwi-akhawunti yakho ye-cPanel.

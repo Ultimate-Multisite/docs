@@ -3,7 +3,7 @@ title: Multi-Tenancy na Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ƙarawar Hostinger multi-tenancy ko ya saka don domain-dangi (hosted domains) su iya shiga cikin samar da manhajin abokan ciniki na musamman tare da haɗin aiki na mapin domain na Hostinger da ke akwai yanzu.
 

@@ -4,7 +4,7 @@ title: مەشغۇلات - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# مەشغۇلات: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# مەشغۇلات: wu_domain_seller_process_purchase
 
 سېتىۋېلىش تاماملانغاندىن كېيىن دومېن سېتىۋېلىش بىر تەرەپ قىلىنىۋاتقاندا قوزغىلىدۇ.
 

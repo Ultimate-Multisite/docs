@@ -3,7 +3,7 @@ title: Sprawdź kontrast palety
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Walidacja Kontrastu Palety {#validate-palette-contrast}
+# Walidacja Kontrastu Palety
 
 Możliwość **Walidacja Kontrastu Palety** sprawdza pary kolorów w palecie Twojego projektu pod kątem zgodności z WCAG (Wytyczne dotyczące dostępności treści w Internecie) zanim zostaną zastosowane do motywu.
 

@@ -3,7 +3,7 @@ title: Webhook-håndtering
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Håndtering av webhooks {#webhook-handling}
+# Håndtering av webhooks
 
 Opprett egendefinerte webhook-endepunkter for å motta hendelser fra eksterne tjenester og synkronisere data med Ultimate Multisite.
 

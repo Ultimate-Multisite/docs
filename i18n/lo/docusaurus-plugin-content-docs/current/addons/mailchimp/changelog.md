@@ -3,7 +3,7 @@ title: Mailchimp ບັນທຶກການປ່ຽນແປງ
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# ບັນທຶກການປ່ຽນແປງ Mailchimp {#mailchimp-changelog}
+# ບັນທຶກການປ່ຽນແປງ Mailchimp
 
 ເວີຊັນ: 1.1.1 - ປ່ອຍໃຊ້ໃນວັນທີ 2025-09-28
 

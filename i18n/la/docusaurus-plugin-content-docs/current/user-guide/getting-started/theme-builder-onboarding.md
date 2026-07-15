@@ -3,7 +3,7 @@ title: Fluxus Onboarding Thematicus
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxus Onboarding Flow del Theme Builder {#theme-builder-onboarding-flow}
+# Fluxus Onboarding Flow del Theme Builder
 
 Superdav AI Agent v1.12.0 introduce un **fluxus onboarding flow** per il Theme Builder che ti aiuta a creare un tema a blocchi personalizzato durante la tua configurazione iniziale. Questo sostituisce il vecchio modalità Site Builder con un approccio più flessibile, assistito dall'agente.
 

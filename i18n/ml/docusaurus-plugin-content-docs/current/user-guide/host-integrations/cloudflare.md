@@ -3,7 +3,7 @@ title: Cloudflare സംയോജനം
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare സംയോജനം {#cloudflare-integration}
+# Cloudflare സംയോജനം
 
 ## അവലോകനം {#overview}
 വെബ്സൈറ്റുകൾ സംരക്ഷിക്കാനും വേഗത്തിലാക്കാനും സഹായിക്കുന്ന മുൻനിര content delivery network (CDN) കൂടാതെ സുരക്ഷാ ദാതാവാണ് Cloudflare. പ്രത്യേകിച്ച് subdomain multisite ഇൻസ്റ്റലേഷനുകൾക്കായി Ultimate Multisite-നും Cloudflare-നും ഇടയിൽ സ്വയമേവയുള്ള domain മാനേജ്മെന്റ് ഈ സംയോജനം സാധ്യമാക്കുന്നു.

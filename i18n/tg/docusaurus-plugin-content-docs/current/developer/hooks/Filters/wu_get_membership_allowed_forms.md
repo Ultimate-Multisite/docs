@@ -4,7 +4,7 @@ title: Филтр - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Филтр: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Филтр: wu_get_membership_allowed_forms
 
 Ба таҳиягарон иҷозат медиҳад, ки слагҳои нави формаро илова кунанд, то ин рафторро канор гузоранд.
 

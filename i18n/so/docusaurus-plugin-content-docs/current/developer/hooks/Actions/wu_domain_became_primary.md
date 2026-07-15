@@ -4,7 +4,7 @@ title: Ficil - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Ficil: wu_domain_became_primary {#action-wudomainbecameprimary}
+# Ficil: wu_domain_became_primary
 
 Wuxuu dhacaa marka domain uu noqdo domain-ka aasaasiga ah ee site.
 

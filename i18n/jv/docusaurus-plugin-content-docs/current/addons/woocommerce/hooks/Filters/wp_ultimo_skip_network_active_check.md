@@ -4,7 +4,7 @@ title: Saringan - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Saringan: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Saringan: wp_ultimo_skip_network_active_check
 
 Ngidini pangembang kanggo nyepetake pamriksa aktivasi jaringan.
 

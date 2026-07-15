@@ -3,7 +3,7 @@ title: انضمام جي رهنمائي
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# انٽيگريشن رهنمائي {#integration-guide}
+# انٽيگريشن رهنمائي
 
 هي رهنمائي Ultimate Multisite سان عام انٽيگريشن نمونن کي ڍڪي ٿي، جنهن ۾ ٻاهرين خدمتن سان ڳنڍڻ، ڪسٽم ادائيگي gateways ٺاهڻ، ۽ webhooks سنڀالڻ شامل آهن.
 

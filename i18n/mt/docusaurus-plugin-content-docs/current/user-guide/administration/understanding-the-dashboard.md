@@ -3,7 +3,7 @@ title: Fahmun tal-Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Fhemaxfiċċja ta Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Fhemaxfiċċja ta Dashboard Ultimate Multisite
 
 Qabel ma niddammu f'piżor li għal opzjonijiet ta konfiguratizzjoni aktar avanzati u aspetti operattivi tal-Ultimate Multisite, famu l-aħħar għad nisolvi dwar il-dashboard.
 

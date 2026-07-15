@@ -3,7 +3,7 @@ title: Kutetezo kwa cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Upatikana ndi cPanel {#cpanel-integration}
+# Upatikana ndi cPanel
 
 ## Kukhulupirira (Overview) {#overview}
 cPanel ndi mukuwoneka wopangidwa kwa web hosting omwe ndi wopopauza kwambiri pamene anthu ambiri amagwiritsa ntchira. Kukhulupirira lili lomwe limapangitsa kuti domain sync imapangidwa m'moyo pakati pa Ultimate Multisite ndi cPanel, komwe limapangitsa kuti muli ndi aliases za domain ndi subdomains ku account yanu ya cPanel.

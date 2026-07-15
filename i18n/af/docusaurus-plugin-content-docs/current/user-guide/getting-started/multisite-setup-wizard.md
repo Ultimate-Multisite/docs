@@ -3,7 +3,7 @@ title: Multisite Opstelwonderbord
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite sluit 'n ingeboude wizard in wat 'n standaard WordPress-installasie outomaties ombeeld na 'n WordPress Multisite-netwerk. Dit beteken jy hoef nie handmatig in `wp-config.php` te redigeer of databasedatabasebeveiligingskommandos te hardloop nie.
 

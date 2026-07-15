@@ -3,7 +3,7 @@ title: Rêvebirina Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Birêvebirina webhookan {#webhook-handling}
+# Birêvebirina webhookan
 
 Xalên dawî yên webhooka taybet biafirînin da ku bûyeran ji xizmetên derveyî bistînin û dane bi Ultimate Multisite re hevdem bikin.
 

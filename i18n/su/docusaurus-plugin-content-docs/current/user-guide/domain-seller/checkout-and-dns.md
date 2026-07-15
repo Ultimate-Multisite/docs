@@ -3,7 +3,7 @@ title: Pangwangun Lapangan Checkout sareng DNS Pelanggan
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pengelolaan Bidang Checkout dan DNS Pelanggan {#checkout-field-and-customer-dns-management}
+# Pengelolaan Bidang Checkout dan DNS Pelanggan
 
 ## Kolom Pemilihan Domain {#the-domain-selection-checkout-field}
 

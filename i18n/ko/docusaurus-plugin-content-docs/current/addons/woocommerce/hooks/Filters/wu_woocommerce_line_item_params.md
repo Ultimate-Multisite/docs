@@ -4,7 +4,7 @@ title: 필터 - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# 필터: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# 필터: wu_woocommerce_line_item_params
 
 WooCommerce Cart에서 라인 아이템을 생성하는 데 사용되는 매개변수를 필터링합니다. 고객을 WooCommerce checkout으로 리디렉션하기 전에.
 

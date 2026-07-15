@@ -3,7 +3,7 @@ title: Zručnosti ovplyvnené témou
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skilly podľa témy {#theme-aware-skills}
+# Skilly podľa témy
 
 Superdav AI Agent v1.10.0 obsahuje štyri nové vbuilt-in skill, ktoré sa automaticky prispôsobia k vašej aktívnej WordPress téme. Tieto skille poskytujú špecializované návody a schopnosti navrhnuté na základe architektúry a funkcií vašej témy.
 

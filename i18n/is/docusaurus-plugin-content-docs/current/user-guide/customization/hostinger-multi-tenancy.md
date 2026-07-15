@@ -3,7 +3,7 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 íðurkennaðar Hostinger multi-tenancy möguleika, sem gerir því að hostaðir domænir geta teilast sjálfstæðum leitum (tenant provisioning) á sama tíma sem núverandi viðbótun fyrir domén-mappingu Hostinger.
 

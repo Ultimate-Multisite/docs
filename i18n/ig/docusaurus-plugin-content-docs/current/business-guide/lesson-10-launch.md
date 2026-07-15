@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 10: Ụbọchị Mwepụta'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ihe Ọmụmụ 10: Ụbọchị Mwepụta {#lesson-10-launch-day}
+# Ihe Ọmụmụ 10: Ụbọchị Mwepụta
 
 Ewuchala ihe niile. Tupu i mepee ọnụ ụzọ, ihe ọmụmụ a na-agafe ndepụta nyocha tupu mwepụta iji hụ na ọ dịghị ihe mebiri, furu efu, ma ọ bụ na-eme ihere.
 

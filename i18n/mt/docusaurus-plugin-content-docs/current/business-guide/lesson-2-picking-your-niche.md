@@ -3,7 +3,7 @@ title: 'Lezzjoni 2: Tagħżel in-Niċċa Tiegħek'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lezzjoni 2: Tagħżel in-Niċċa Tiegħek {#lesson-2-picking-your-niche}
+# Lezzjoni 2: Tagħżel in-Niċċa Tiegħek
 
 F’Lezzjoni 1 stabbilixxejna għaliex niċċa tegħleb soluzzjoni ġenerika. Issa trid tagħżel tiegħek. Din il-lezzjoni tagħtik qafas biex issib u tivvalida niċċa qabel tinvesti ħin tibni għaliha.
 

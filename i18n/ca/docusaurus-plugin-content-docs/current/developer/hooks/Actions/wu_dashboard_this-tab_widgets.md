@@ -4,7 +4,7 @@ title: 'Acció - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Aquesta acció: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
+# Aquesta acció: wu_dashboard_\{$this->tab\}_widgets
 
 Permet als desenvolupadors de plugins afegir widgets al Panel del Dashboard de la Xarxa (Network Dashboard).
 

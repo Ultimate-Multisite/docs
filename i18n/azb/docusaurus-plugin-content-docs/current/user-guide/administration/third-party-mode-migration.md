@@ -3,7 +3,7 @@ title: Third-Party Mode Migration
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Üçüncü Taraf Modu Geçişi {#third-party-mode-migration}
+# Üçüncü Taraf Modu Geçişi
 
 Superdav AI Agent v1.12.0, üçüncü taraf yeteneklerin (abilities) nasıl ele alındığını değiştiriyor. **Üçüncü taraf mod artık varsayılan olarak otomatik (auto) ayarda**, bu sayede manuel yapılandırmaya gerek kalmadan WordPress 7.0+ üzerinde yerel WordPress Abilities API entegrasyonunu kullanabilirsiniz.
 

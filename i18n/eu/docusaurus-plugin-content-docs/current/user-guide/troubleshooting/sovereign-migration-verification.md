@@ -3,7 +3,7 @@ title: Bestea migrazio bidezko bidezka eta bidezka-biderua
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migrazio Bidezki Dantza {#sovereign-migration-verification}
+# Sovereign Migrazio Bidezki Dantza
 
 Ultimate Multisite 1.2.0-ean WP-CLI bidezko (sovereign) tenent migrazioak dira. Tenent migrazio bat, SSO bisita edo aisialditu instalazio bat ez jakin dituzenean, hauek erabiliz.
 

@@ -3,7 +3,7 @@ title: Sjálfstæð migra workflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow {#sovereign-migration-workflow}
+# Sovereign Migration Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 hefurðar migraðar eftir að setja upp verifactory gerðir fyrir þá sem flytja standard subsite í sovereign tenant innviði.
 

@@ -3,7 +3,7 @@ title: Creu eich cyfrifau cyntaf
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creu eich gyfrifau cyntaf (v2) {#creating-your-first-subscription-product-v2}
+# Creu eich gyfrifau cyntaf (v2)
 
 _**NOTI'RHYD: Mae'r ail nghyddug hwn yn rhoi am Ultimate Multisite fersiwn 2.x yn unig. Os ydych chi yn defnyddio fersiwn 1.x,**_ **_pwyd ystodwch y ail nghyddug hwn**_ .
 

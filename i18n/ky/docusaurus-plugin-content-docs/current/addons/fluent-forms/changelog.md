@@ -3,7 +3,7 @@ title: Fluent Forms өзгөртүүлөр журналы
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms өзгөртүүлөр журналы {#fluent-forms-changelog}
+# Fluent Forms өзгөртүүлөр журналы
 
 Нускасы: 2.0.1 - 2025-09-28 күнү чыгарылды
 

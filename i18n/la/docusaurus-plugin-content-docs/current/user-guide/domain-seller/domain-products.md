@@ -3,7 +3,7 @@ title: Producta et Preti
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Producta de Dominio y Precios {#domain-products-and-pricing}
+# Producta de Dominio y Precios
 
 Las productos de dominio son la forma en que controlas los precios, las TLDs (extensiones de dominio), la privacidad WHOIS y la selección del proveedor. Cada producto de dominio es un producto Ultimate Multisite estándar con una pestaña extra llamada **Domain Settings** (Configuración de Dominio).
 

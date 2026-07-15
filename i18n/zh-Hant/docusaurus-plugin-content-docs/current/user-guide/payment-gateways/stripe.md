@@ -3,7 +3,7 @@ title: 設定 Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# 設定 Stripe 付款閘道（v2） {#setting-up-the-stripe-gateway-v2}
+# 設定 Stripe 付款閘道（v2）
 
 _**重要提醒：本文適用於 Ultimate Multisite 2.x 版本。**_
 

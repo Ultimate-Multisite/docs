@@ -3,7 +3,7 @@ title: ساروقي مائٽرن گينگ وورڪفلو
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow {#sovereign-migration-workflow}
+# Sovereign Migration Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾، اسان ڪجهه سڌار (migration verification gates) شامل ڪيا آهن جنهن سان هڪ اڪثر (standard subsite) کي سوورين ٽينينٽ انفراسٽرڪچر ۾ منتقل ڪرڻ لاءِ تصديق جو عمل شروع ٿئي ٿو.
 

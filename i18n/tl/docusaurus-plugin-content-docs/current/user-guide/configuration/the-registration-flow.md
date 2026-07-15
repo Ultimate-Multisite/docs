@@ -3,7 +3,7 @@ title: Ang Daloy ng Pagpaparehistro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ang Daloy ng Pagpaparehistro (v2) {#the-registration-flow-v2}
+# Ang Daloy ng Pagpaparehistro (v2)
 
 _**MAHALAGANG PAUNA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 

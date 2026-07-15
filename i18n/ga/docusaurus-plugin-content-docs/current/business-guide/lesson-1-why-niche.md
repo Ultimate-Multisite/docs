@@ -3,7 +3,7 @@ title: 'Ceacht 1: Cén fáth a mbíonn an bua ag an nideoige'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Ceacht 1: Cén Fáth a mBíonn an Bua ag Nideoige {#lesson-1-why-niche-wins}
+# Ceacht 1: Cén Fáth a mBíonn an Bua ag Nideoige
 
 Sula mbainimid leis na bogearraí ar bith, ní mór duit a thuiscint cén fáth gurb é tógáil do lucht féachana sonrach an cinneadh aonair is tábhachtaí a dhéanfaidh tú.
 

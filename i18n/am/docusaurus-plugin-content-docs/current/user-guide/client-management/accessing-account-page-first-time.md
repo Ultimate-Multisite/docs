@@ -3,7 +3,7 @@ title: የመለያ ገጽን መድረስ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# ለመጀመሪያ ጊዜ የखाቴ ገጽን እንዴት መድረስ እችላለሁ? {#how-can-i-access-my-account-page-for-the-first-time}
+# ለመጀመሪያ ጊዜ የखाቴ ገጽን እንዴት መድረስ እችላለሁ?
 
 ወደ Ultimate Multisite እንኳን በደህና መጡ!
 

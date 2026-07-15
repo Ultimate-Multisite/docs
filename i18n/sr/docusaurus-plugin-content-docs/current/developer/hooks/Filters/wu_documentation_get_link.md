@@ -4,7 +4,7 @@ title: Филтер - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Филтер: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Филтер: wu_documentation_get_link
 
 Омогућава програмерима додатака да филтрирају линкове.
 

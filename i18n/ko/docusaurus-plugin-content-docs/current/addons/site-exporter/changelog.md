@@ -3,7 +3,7 @@ title: 사이트 내보내기 변경 로그
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter 변경 로그 {#site-exporter-changelog}
+# Site Exporter 변경 로그
 
 버전: 1.0.6 - 2026-05-11에 릴리스됨
 * 신규: 이제 사이트 내보내기는 자체 부팅 `index.php`를 함께 묶어, 별도의 plugin 설치 없이 ZIP을 새 호스트에 설치할 수 있습니다

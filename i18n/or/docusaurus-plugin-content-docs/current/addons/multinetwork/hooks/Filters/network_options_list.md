@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# ଛାଣକ: network_options_list {#filter-networkoptionslist}
+# ଛାଣକ: network_options_list
 
 ଏକ network ର domain ଏବଂ path ଉପରେ ନିର୍ଭର କରୁଥିବା network ବିକଳ୍ପଗୁଡ଼ିକର ତାଲିକାକୁ ଛାଣେ।
 

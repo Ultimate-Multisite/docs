@@ -3,7 +3,7 @@ title: 'Isomo rya 2: Guhitamo isoko ryawe ryihariye'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Isomo rya 2: Guhitamo Isoko Wihariye {#lesson-2-picking-your-niche}
+# Isomo rya 2: Guhitamo Isoko Wihariye
 
 Mu Isomo rya 1 twasobanuye impamvu isoko wihariye riruta kuba rusange. Ubu ukeneye guhitamo iryawe. Iri somo riguha uburyo bwo kubona no kugenzura isoko wihariye mbere yo gushora igihe mu kuryubakiraho.
 

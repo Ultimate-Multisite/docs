@@ -3,7 +3,7 @@ title: Ngarkuesi i skedarit Sunrise për shtesën
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Ngarkuesi i skedarit Sunrise për Addon {#addon-sunrise-file-loader}
+# Ngarkuesi i skedarit Sunrise për Addon
 
 Ultimate Multisite 2.8.0 shton një ngarkues zgjerimi sunrise për add-on dhe integrime të personalizuara MU-plugin që duhet të ekzekutohen gjatë nisjes fillestare sunrise të WordPress pa redaktuar skedarin e gjeneruar `wp-content/sunrise.php`.
 

@@ -3,7 +3,7 @@ title: Formau y cheffr
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fomau Checkout {#checkout-forms}
+# Fomau Checkout
 
 Mae Fomau Checkout yn ffordd einfaldig a chyniferus i gymryd am ymarferiad gyda'r ddefnyddiau cyffredinol pan fyddwch yn ceisio gwari newyddol o ddeimladau.
 

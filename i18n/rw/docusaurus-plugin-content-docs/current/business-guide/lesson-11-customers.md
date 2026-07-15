@@ -3,7 +3,7 @@ title: 'Isomo rya 11: Kubona Abakiriya'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Isomo rya 11: Kubona Abakiriya {#lesson-11-finding-customers}
+# Isomo rya 11: Kubona Abakiriya
 
 Urubuga rukomeye rudafite abakiriya ruba ari ikinezeza gusa. Iri somo risobanura uko wabona abakiriya mu cyiciro cyihariye cy’isoko -- ingamba zikora neza by’umwihariko kuko wibanda ku rwego rumwe rw’inganda.
 

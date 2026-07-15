@@ -3,7 +3,7 @@ title: Intervju za otkrivanje
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 **Discovery Interview** prvi je korak u procesu dizajna Theme Buildera. Prikuplja informacije o vašem web-mjestu, poslovanju i dizajnerskim preferencijama kako bi se izradila personalizirana tema.
 

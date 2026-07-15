@@ -3,7 +3,7 @@ title: Estetika Design systému
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Zručnosť v estetike Design Systemu {#design-system-aesthetics-skill}
+# Zručnosť v estetike Design Systemu
 
 **Zručnosť v estetike Design Systemu** je vedený prístup k jemnému upraveniu vizuálnej identicity vášho webu. Pomáha vám robiť konzistentné rozhodnutia o typografii, farbe, zameraní a tokenoch pohybu (motion tokens), ktoré definujú váš design systém.
 

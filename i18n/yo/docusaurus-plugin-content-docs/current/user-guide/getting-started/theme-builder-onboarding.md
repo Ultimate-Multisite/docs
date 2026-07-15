@@ -3,7 +3,7 @@ title: Ìlànà Ìbẹ̀rẹ̀ Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Ìṣàn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder {#theme-builder-onboarding-flow}
+# Ìṣàn Ìtọ́sọ́nà Ìbẹ̀rẹ̀ Theme Builder
 
 Superdav AI Agent v1.12.0 mú **ìṣàn ìtọ́sọ́nà ìbẹ̀rẹ̀ Theme Builder** tí a ń darí wá, tí ó ràn ọ́ lọ́wọ́ láti dá akori block àdáni kan nígbà ìṣètò ìbẹ̀rẹ̀ rẹ. Èyí rọ́pò módù Site Builder àtijọ́ pẹ̀lú ọ̀nà tí ó rọrùn síi, tí agent ń ràn lọ́wọ́.
 

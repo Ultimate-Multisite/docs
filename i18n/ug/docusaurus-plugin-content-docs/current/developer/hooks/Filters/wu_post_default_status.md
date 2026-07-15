@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# سۈزگۈچ: wu_post_default_status {#filter-wupostdefaultstatus}
+# سۈزگۈچ: wu_post_default_status
 
 ئوبيېكت سانلىق مەلۇماتى سانلىق مەلۇمات ئامبىرىغا ساقلىنىشتىن بۇرۇن سۈزۈلىدۇ.
 

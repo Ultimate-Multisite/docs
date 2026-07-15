@@ -3,7 +3,7 @@ title: Flè de Inisyalizasyon Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxyal Onboarding Flow pou Theme Builder {#theme-builder-onboarding-flow}
+# Fluxyal Onboarding Flow pou Theme Builder
 
 Superdav AI Agent v1.12.0 bay yon **fluxyal onboarding flow** ki ede w kreye yon custom block theme pandan etap enpòtan an ou kòmanse. Sa a ranplase mod site legacy la ak yon apwòch ki pi fleksib, ki gen asistans nan agent la.
 

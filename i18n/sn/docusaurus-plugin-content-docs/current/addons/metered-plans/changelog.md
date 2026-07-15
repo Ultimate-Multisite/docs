@@ -3,7 +3,7 @@ title: Nhoroondo yekuchinja kweZvirongwa zvinoyerwa
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Nhoroondo Yeshanduko yeMetered Plans {#metered-plans-changelog}
+# Nhoroondo Yeshanduko yeMetered Plans
 
 Version 1.1.0 - Yakaburitswa musi wa2026-05-05
 - Zvitsva: Kubhadharisa maAI token kwemasaiti madiki e multisite — tevera uye bhadharisa kushandiswa kweAI token pamasaiti evatengi nemitengo inogadzirisika pa-token

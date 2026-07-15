@@ -3,7 +3,7 @@ title: Zdolności Tworzenia Motywów
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Możliwości Tworzenia Tematów: Szkieletowanie i Aktywacja Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Możliwości Tworzenia Tematów: Szkieletowanie i Aktywacja Block Themes
 
 Superdav AI Agent v1.12.0 wprowadza dwie potężne funkcje, które pozwalają generować i wdrażać niestandardowe block themes bezpośrednio z interfejsu czatu.
 

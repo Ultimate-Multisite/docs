@@ -4,7 +4,7 @@ title: 动作 - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# 动作: wu_after_switch_template {#action-wuafterswitchtemplate}
+# 动作: wu_after_switch_template
 
 允许插件开发者在用户或超级管理员切换站点模板后挂钩函数
 

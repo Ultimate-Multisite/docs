@@ -3,7 +3,7 @@ title: V1 سے منتقلی
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 سے منتقلی {#migrating-from-v1}
+# V1 سے منتقلی
 
 ## Ultimate Multisite اپنی اصل 1.x ریلیز سیریز سے 2.x ریلیز سیریز میں منتقل ہو گیا ہے۔ {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

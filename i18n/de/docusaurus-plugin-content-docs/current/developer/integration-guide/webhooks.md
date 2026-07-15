@@ -3,7 +3,7 @@ title: Webhook-Verarbeitung
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-Verarbeitung {#webhook-handling}
+# Webhook-Verarbeitung
 
 Erstellen Sie benutzerdefinierte Webhook-Endpunkte, um Ereignisse von externen Diensten zu empfangen und Daten mit Ultimate Multisite zu synchronisieren.
 

@@ -3,7 +3,7 @@ title: Kukonse kwa WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Usumbu wa WPMU DEV Integration {#wpmu-dev-integration}
+# Usumbu wa WPMU DEV Integration
 
 ## Umuwamba (Overview) {#overview}
 WPMU DEV ndi platforma ya WordPress yomwezi kwambiri yomwezi womwezi, imene imalimbikitsa hosting, plugins, ndipo services kwa ajili ya WordPress sites. I integration imalimbikitsa kupeza domain syncing kukhala kwa automatic na ulamulira SSL certificate monga monga pakati pa Ultimate Multisite ndi hosting la WPMU DEV.

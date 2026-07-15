@@ -3,7 +3,7 @@ title: Lapa la tsoalo la mohlokong oa morao
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Page ya Mofuta oa Morero oa Li-ntaba ea Li-ntaba ea Li-ntaba (v2) {#your-clients-account-page-v2}
+# Page ya Mofuta oa Morero oa Li-ntaba ea Li-ntaba ea Li-ntaba (v2)
 
 _**SEBOETSO: Le lipotso li fana ka ho Ultimate Multisite v2.x.**_
 

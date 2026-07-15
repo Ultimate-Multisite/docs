@@ -3,7 +3,7 @@ title: Zapier Integration
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite Lojol Bvim Bvim Nuam Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite Lojol Bvim Bvim Nuam Zapier
 
 Ha uas tswb, thav tsim ha [Webhooks](webhooks.md) thiab tau txais ti ua li yuav tuaj yeem siv rau cov app tshiab.
 

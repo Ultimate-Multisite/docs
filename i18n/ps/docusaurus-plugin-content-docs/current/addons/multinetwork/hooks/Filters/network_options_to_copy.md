@@ -4,7 +4,7 @@ title: چاڼګر - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# فلټر: network_options_to_copy {#filter-networkoptionstocopy}
+# فلټر: network_options_to_copy
 
 د کاپي کولو لپاره د شبکې تلواله غوراوي فلټر کوي.
 

@@ -3,7 +3,7 @@ title: Pārbaudīt paletes kontrastu
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validēt paletes kontrastu {#validate-palette-contrast}
+# Validēt paletes kontrastu
 
 Spēja **Validate Palette Contrast** pārbauda krāsu pārus jūsu dizaina paletē attiecībā uz WCAG (Web Content Accessibility Guidelines) atbilstību, pirms tos piemēro jūsu theme.
 

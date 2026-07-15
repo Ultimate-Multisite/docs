@@ -3,7 +3,7 @@ title: Operazzjonijiet tal Tenant Sovran
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operazioni Tenant Sovrani {#sovereign-tenant-operations}
+# Operazioni Tenant Sovrani
 
 Ultimate Multisite 1.2.0 aggiunge strumenti operativi per i tenant sovrani: subsites che funzionano con il proprio database, root del filesystem e contesto di routing separati, pur rimanendo visibili dall'amministratore della rete.
 

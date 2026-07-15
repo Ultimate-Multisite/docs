@@ -3,9 +3,9 @@ title: Modèl ekstansyon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Modèl Modil Siplemantè {#addon-template}
+# Modèl Modil Siplemantè
 
-{{ADDON_DESCRIPTION}}
+Modèl ekstansyon — Ultimate Multisite.
 
 ## Kondisyon {#requirements}
 

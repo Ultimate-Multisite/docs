@@ -3,7 +3,7 @@ title: Ukunyusela isicwangciso
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ukunyusa Isicwangciso (v2) {#upgrading-a-plan-v2}
+# Ukunyusa Isicwangciso (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite version 2.x.**_
 

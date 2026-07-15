@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Akcja: wu_page_{$this->id}_load {#action-wupagethis-idload}
+# Akcja: wu_page_{$this->id}_load
 
 Pozwala deweloperom pluginów na dodanie dodatkowych hooków do naszych stron.
 

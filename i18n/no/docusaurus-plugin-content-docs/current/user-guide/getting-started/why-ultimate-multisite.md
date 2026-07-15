@@ -3,7 +3,7 @@ title: Hvorfor Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Hvorfor Ultimate Multisite {#why-ultimate-multisite}
+# Hvorfor Ultimate Multisite
 
 Hvis du har funnet frem til denne artikkelen, har du sannsynligvis hørt at vår plugin kan være løsningen for å realisere forretningsideen din. Vi håper du har fått svarene du trenger innen du er ferdig med å lese.
 

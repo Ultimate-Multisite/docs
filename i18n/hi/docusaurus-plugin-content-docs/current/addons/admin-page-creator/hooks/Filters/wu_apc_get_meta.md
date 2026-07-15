@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Filter: wu_apc_get_meta
 
 डेवलपर्स को अंतिम मानों (final values) को फ़िल्टर करने और नए प्रोसेसिंग केस जोड़ने की अनुमति देता है।
 

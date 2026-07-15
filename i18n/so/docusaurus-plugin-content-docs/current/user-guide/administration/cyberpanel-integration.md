@@ -3,7 +3,7 @@ title: Isdhexgalka CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Tani halkan waa sida aad u hagaajinayso isku-dhafka (integration) Ultimate Multisite CyberPanel si ay domain-yada aad ku xirto (mapped domains) si toos ah ugu ku darto (and remove) virtual hosts-ka CyberPanel, iyadoo la isticmaalayo SSL oo is-dhaafaya (auto-SSL provisioning) ee Let's Encrypt.
 

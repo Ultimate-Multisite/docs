@@ -4,7 +4,7 @@ title: Isenzo - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Isenzo: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Isenzo: wu_after_switch_template
 
 Vumela abaphuhlisi beeplagi ukuba baqhagamshele imisebenzi emva kokuba umsebenzisi okanye umlawuli omkhulu etshintshe itemplate yesayithi
 

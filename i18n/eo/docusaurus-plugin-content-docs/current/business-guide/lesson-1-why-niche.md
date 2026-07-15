@@ -3,7 +3,7 @@ title: 'Leciono 1: Kial niĉo venkas'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Leciono 1: Kial Niĉo Venkas {#lesson-1-why-niche-wins}
+# Leciono 1: Kial Niĉo Venkas
 
 Antaŭ ol ni tuŝos iun ajn programaron, vi devas kompreni kial konstrui por specifa publiko estas la sola plej grava decido, kiun vi faros.
 

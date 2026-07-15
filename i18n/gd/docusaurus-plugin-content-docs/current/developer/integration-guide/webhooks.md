@@ -3,7 +3,7 @@ title: Làimhseachadh Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Làimhseachadh Webhook {#webhook-handling}
+# Làimhseachadh Webhook
 
 Cruthaich endpoints webhook gnàthaichte gus tachartasan fhaighinn bho sheirbheisean taobh a-muigh agus dàta a shioncronachadh le Ultimate Multisite.
 

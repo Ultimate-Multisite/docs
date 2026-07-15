@@ -4,7 +4,7 @@ title: Acțiune - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Acțiune: add_user_to_blog {#action-addusertoblog}
+# Acțiune: add_user_to_blog
 
 Se declanșează imediat după ce un utilizator este adăugat la un site.
 

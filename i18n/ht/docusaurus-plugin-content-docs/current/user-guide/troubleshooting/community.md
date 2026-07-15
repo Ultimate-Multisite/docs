@@ -3,7 +3,7 @@ title: Komoutè
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kijan pou ou konekte ak Komoutini Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Kijan pou ou konekte ak Komoutini Ultimate Multisite
 
 Ultimate Multisite Community se yon espas kote ou ka kontakte lòt itilizatè Ultimate Multisite epi pataje konsèy, eksperyans e plis anpil bagay. Pou jwenn aksè nan Ultimate Multisite Community, ale sou https://community.ultimatemultisite.com/home.
 

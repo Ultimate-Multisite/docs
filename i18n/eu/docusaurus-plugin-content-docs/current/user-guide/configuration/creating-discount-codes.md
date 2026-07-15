@@ -3,7 +3,7 @@ title: Kunde kodak sortzea
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Codes Erdatzea (v2) {#creating-discount-codes-v2}
+# Discount Codes Erdatzea (v2)
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du.**_
 

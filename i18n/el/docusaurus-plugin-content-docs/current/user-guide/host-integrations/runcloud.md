@@ -3,7 +3,7 @@ title: Ενσωμάτωση RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Ενσωμάτωση με RunCloud {#runcloud-integration}
+# Ενσωμάτωση με RunCloud
 
 ## Επισκόπηση {#overview}
 Το RunCloud είναι μια πλατφόρμα διαχείρισης servers στο cloud που σας επιτρέπει να αναπτύσσετε και να διαχειρίζεστε εύκολα web εφαρμογές στους δικούς σας cloud servers. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του RunCloud.

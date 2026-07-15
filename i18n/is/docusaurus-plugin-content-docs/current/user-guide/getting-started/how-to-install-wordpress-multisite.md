@@ -3,7 +3,7 @@ title: Hvernig installa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hvernig get ég installað WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Hvernig get ég installað WordPress Multisite?
 
 WordPress Multisite leyfir þér að hafa netverk vísúta á einum uppsetningu. Þetta er innbyggð eiginleiki, en hún er ekki á hjá í raunni af raunni.
 

@@ -4,7 +4,7 @@ title: Akció - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Action: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Action: wu_maybe_create_customer
 
 Lehetővé teszi a plugin fejlesztőknek, hogy további funkciókat implementáljanak, amikor a vásárló hozzáadása történik.
 

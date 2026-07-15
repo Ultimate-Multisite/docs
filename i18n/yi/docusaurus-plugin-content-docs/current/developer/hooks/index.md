@@ -3,7 +3,7 @@ title: הוקס־רעפֿערענץ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks רעפֿערענץ {#hooks-reference}
+# Hooks רעפֿערענץ
 
 אויטאָמאַטיש גענערירטע דאָקומענטאַציע פֿאַר אַלע **59 אַקציעס** און **118 פֿילטערס** אין Ultimate Multisite.
 

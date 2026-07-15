@@ -4,7 +4,7 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 WooCommerce కార్ట్‌లో లైన్ ఐటమ్స్‌ను సృష్టించడానికి ఉపయోగించే పారామీటర్లను, కస్టమర్‌ను WooCommerce చెకౌట్‌కి మళ్లించే ముందు, ఫిల్టర్ చేస్తుంది.
 

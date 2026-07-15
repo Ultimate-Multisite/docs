@@ -4,7 +4,7 @@ title: Kev nqis tes ua - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Kev ua: wu_activation {#action-wuactivation}
+# Kev ua: wu_activation
 
 Cia lwm feem ntawm plugin txuas lawv cov txheej txheem rau kev activation
 

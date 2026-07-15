@@ -3,7 +3,7 @@ title: 增强控制面板集成
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance 控制面板集成 {#enhance-control-panel-integration}
+# Enhance 控制面板集成
 
 ## 概述 {#overview}
 Enhance 是一个现代化的控制面板，提供强大的托管自动化和管理功能。本集成实现了 Ultimate Multisite 与 Enhance 控制面板之间的自动域名同步和 SSL 证书管理。

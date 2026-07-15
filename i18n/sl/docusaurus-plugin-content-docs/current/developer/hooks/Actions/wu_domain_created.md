@@ -4,7 +4,7 @@ title: Dejanje - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Dejanje: wu_domain_created {#action-wudomaincreated}
+# Dejanje: wu_domain_created
 
 Sproži se, ko je dodana nova preslikava domene.
 

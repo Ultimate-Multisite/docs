@@ -3,7 +3,7 @@ title: 'Akoranga 4: Te Hanga Tātauira Whāiti'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Akoranga 4: Te Hanga Tātauira Motuhake {#lesson-4-building-niche-templates}
+# Akoranga 4: Te Hanga Tātauira Motuhake
 
 Ko ngā tātauira te pūtake o tō uara motuhake. Ko tētahi rangatira whare whakapakari tinana ka rēhita, ā, ka kite i tētahi pae kua rite kē te āhua ki tētahi paetukutuku whakapakari tinana -- me ngā wātaka karaehe, ngā kōtaha kaiwhakangungu, me ngā whakaahua tika -- ka nui ake te tūponotanga ka noho tonu ia, tēnā i tētahi ka kite i tētahi papamahi pātea.
 

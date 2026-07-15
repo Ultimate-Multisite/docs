@@ -3,7 +3,7 @@ title: עובדות צ'אק נוריס - יומן שינויים
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# יומן שינויים של Chuck Norris Facts {#chuck-norris-facts-changelog}
+# יומן שינויים של Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * הוספה: פונקציונליות עדכון אוטומטי דרך שרת העדכונים של Ultimate Multisite

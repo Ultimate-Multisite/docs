@@ -3,7 +3,7 @@ title: Oldaltépítő mód eltávolítási értesítés
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder mód eltávolításáról szóló értesítés {#site-builder-mode-removal-notice}
+# Site Builder mód eltávolításáról szóló értesítés
 
 **A Site Builder mód eltávolításra került a Superdav AI Agent v1.12.0-ban.** Ha használtad a Site Builder módot, át kell térned a **Setup Assistant agent**-re a téma létrehozásához és az oldal beállításához.
 

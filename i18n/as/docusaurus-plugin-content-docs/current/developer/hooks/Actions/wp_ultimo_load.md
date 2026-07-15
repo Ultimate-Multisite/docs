@@ -4,7 +4,7 @@ title: Action - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Action: wp_ultimo_load {#action-wpultimoload}
+# Action: wp_ultimo_load
 
 যেতিয়া সকলো ডিপেণ্ডেন্সি (dependencies) লোড হৈ যায়, তেতিয়া এই অ্যাকশনটো ট্ৰيগাৰ হয়।
 

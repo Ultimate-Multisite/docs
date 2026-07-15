@@ -3,7 +3,7 @@ title: Integration vo Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integration mit dem Hestia Control Panel {#hestia-control-panel-integration}
+# Integration mit dem Hestia Control Panel
 
 Dëse Leitfaden erklärt, wie Sie d'Ultimate Multisite Hestia Integration so konfigurieren können, dass mappti Domänen in Ihrem Netz automatisch als Web Domain Aliases in Hestia hinzugefügt (und entfernt) werden.
 

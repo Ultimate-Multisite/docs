@@ -3,7 +3,7 @@ title: प्लान घटाउने
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# प्लान घटाउने (v2) {#downgrading-a-plan-v2}
+# प्लान घटाउने (v2)
 
 _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite संस्करण २.x मा सन्दर्भ गर्दछ।**_
 

@@ -3,7 +3,7 @@ title: Aan de slag met add-onontwikkeling
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon-ontwikkeling {#addon-development}
+# Addon-ontwikkeling
 
 ## Addon-structuur {#addon-structure}
 

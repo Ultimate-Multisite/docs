@@ -4,7 +4,7 @@ title: Tallaabo - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Ficil: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Ficil: wu_magic_link_invalid_token
 
 Wuxuu dhacaa marka token-ka magic link ee aan sax ahayn la helo.
 

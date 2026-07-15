@@ -3,7 +3,7 @@ title: Mga Pangunahing Konsepto
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Mga Pangunahing Konsepto {#basic-concepts}
+# Mga Pangunahing Konsepto
 
 Para sa bagong gumagamit ng WordPress Multisite at sa mga kakasimula pa lang gumamit ng Ultimate Multisite, maraming bagong salita at termino ang kailangang matutunan sa simula. Mahalagang aralin ang mga ito dahil kailangan mong maintindihan ang platform at kung paano ito gumagana sa kabuuan.
 

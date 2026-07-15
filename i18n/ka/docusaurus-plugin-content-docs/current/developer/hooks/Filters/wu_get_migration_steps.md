@@ -4,7 +4,7 @@ title: ფილტრი - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# ფილტრი: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# ფილტრი: wu_get_migration_steps
 
 აძლევს დეველოპერებსა და დანამატებს ახალი მიგრაციის ეტაპების დამატების საშუალებას
 

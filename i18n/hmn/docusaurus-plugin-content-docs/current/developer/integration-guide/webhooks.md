@@ -3,7 +3,7 @@ title: Kev tuav tswj Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kev tuav webhook {#webhook-handling}
+# Kev tuav webhook
 
 Tsim cov webhook endpoints tshwj xeeb kom txais cov xwm txheej los ntawm cov kev pabcuam sab nraud thiab sync cov ntaub ntawv nrog Ultimate Multisite.
 

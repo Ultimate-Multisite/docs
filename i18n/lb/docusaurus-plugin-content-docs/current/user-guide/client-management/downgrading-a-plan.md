@@ -3,7 +3,7 @@ title: Plan absenke
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan herstelle (v2) {#downgrading-a-plan-v2}
+# Plan herstelle (v2)
 
 _**WICHTIGE NOTIZ: Däri Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
 

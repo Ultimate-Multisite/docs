@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_affiliatewp_deactivation
 
 pluginର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ନିଷ୍କ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କର routine ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

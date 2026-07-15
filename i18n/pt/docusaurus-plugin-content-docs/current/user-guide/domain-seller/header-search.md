@@ -3,7 +3,7 @@ title: Pesquisa de domínio no cabeçalho
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pesquisa de domínio no cabeçalho {#header-domain-search}
+# Pesquisa de domínio no cabeçalho
 
 Use esta configuração quando quiser um pequeno formulário no cabeçalho que inicia uma pesquisa de domínio e depois permite que o cliente escolha entre os domínios disponíveis dentro do checkout do Ultimate Multisite.
 

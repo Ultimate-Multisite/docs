@@ -4,7 +4,7 @@ title: سۈزگۈچ - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# سۈزگۈچ: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# سۈزگۈچ: signup_get_available_languages
 
 ئالدى تەرەپتىكى تور بېكەت تىزىملىتىشلىرى ئۈچۈن ئىشلەتكىلى بولىدىغان تىللار تىزىملىكىنى سۈزۈپ بېرىدۇ.
 

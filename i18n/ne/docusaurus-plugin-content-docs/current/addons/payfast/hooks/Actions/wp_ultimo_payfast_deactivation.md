@@ -4,7 +4,7 @@ title: कार्य - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# कार्य: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# कार्य: wp_ultimo_payfast_deactivation
 
 plugin का अन्य भागहरूलाई निष्क्रियकरणका लागि आफ्ना routineहरू जोड्न दिनुहोस्
 

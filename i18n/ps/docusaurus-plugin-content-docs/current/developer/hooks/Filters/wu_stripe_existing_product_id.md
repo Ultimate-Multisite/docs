@@ -4,7 +4,7 @@ title: فلټر - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# فلټر: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# فلټر: wu_stripe_existing_product_id
 
 د هغه محصول ID فلټر کوي چې باید وکتل شي. که دا شتون ولري، نو نوی ګډون به دا محصول وکاروي.
 

@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# 篩選器：wp_ultimo_render_vars {#filter-wpultimorendervars}
+# 篩選器：wp_ultimo_render_vars
 
 允許外掛開發者在全域範圍內向渲染上下文（render context）新增額外的變數。
 

@@ -3,7 +3,7 @@ title: Tantaran'ny fanovana ny Zava-misy momba an'i Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Tantaran'ny fanovana Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Tantaran'ny fanovana Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Nampiana: Fiasan'ny fanavaozana mandeha ho azy amin'ny alalan'ny server fanavaozana Ultimate Multisite

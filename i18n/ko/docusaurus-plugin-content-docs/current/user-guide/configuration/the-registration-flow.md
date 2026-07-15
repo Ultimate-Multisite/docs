@@ -3,7 +3,7 @@ title: 등록 흐름
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# 등록 흐름 (v2) {#the-registration-flow-v2}
+# 등록 흐름 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 다룹니다.**_
 

@@ -3,7 +3,7 @@ title: Site-Templates
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**NOTE: Dëst Artikel verwiist uf Ultimate Multisite version 2.x. Wenn Dir Version 1.x bruchet,**_ **luegt Sie sich dëse Artikel a.**_
 

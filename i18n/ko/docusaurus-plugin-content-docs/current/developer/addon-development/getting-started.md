@@ -3,7 +3,7 @@ title: Addon 개발 시작하기
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# 애드온 개발 {#addon-development}
+# 애드온 개발
 
 ## 애드온 구조 {#addon-structure}
 

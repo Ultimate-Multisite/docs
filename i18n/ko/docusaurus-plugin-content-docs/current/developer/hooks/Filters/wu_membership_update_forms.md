@@ -4,7 +4,7 @@ title: 필터 - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# 필터: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# 필터: wu_membership_update_forms
 
 개발자가 새로운 업데이트 폼 슬러그를 추가할 수 있도록 허용합니다.
 

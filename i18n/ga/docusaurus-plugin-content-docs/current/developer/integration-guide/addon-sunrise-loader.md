@@ -3,7 +3,7 @@ title: Lódálaí Comhad Éirí na Gréine don Bhreiseán
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Luchtóir Comhaid Sunrise Addon {#addon-sunrise-file-loader}
+# Luchtóir Comhaid Sunrise Addon
 
 Cuireann Ultimate Multisite 2.8.0 luchtóir síneadh sunrise leis le haghaidh breiseán agus comhtháthuithe saincheaptha MU-plugin ar gá dóibh rith le linn tosaithe sunrise WordPress gan an comhad ginte `wp-content/sunrise.php` a chur in eagar.
 

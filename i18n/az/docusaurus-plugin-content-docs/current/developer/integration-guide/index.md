@@ -3,7 +3,7 @@ title: İnteqrasiya bələdçisi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# İnteqrasiya Bələdçisi {#integration-guide}
+# İnteqrasiya Bələdçisi
 
 Bu bələdçi Ultimate Multisite ilə ümumi inteqrasiya nümunələrini əhatə edir, o cümlədən xarici xidmətlərə qoşulma, fərdi ödəniş gateway-lərinin qurulması və webhook-ların idarə edilməsi.
 

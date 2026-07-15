@@ -3,7 +3,7 @@ title: Theme-Aware Skills
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills {#theme-aware-skills}
+# Theme-Aware Skills
 
 Superdav AI Agent v1.10.0 enthält vier neue, an das Theme angepasste (theme-aware) integrierte Skills, die sich automatisch an Ihr aktives WordPress-Theme anpassen. Diese Skills bieten spezialisierte Anleitungen und Funktionen, die auf die Architektur und die Funktionen Ihres Themes zugeschnitten sind.
 

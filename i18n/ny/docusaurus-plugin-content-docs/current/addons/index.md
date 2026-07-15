@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Zowonjezera za Ultimate Multisite {#ultimate-multisite-addons}
+# Zowonjezera za Ultimate Multisite
 
 Zowonjezera zimakulitsa Ultimate Multisite ndi mawonekedwe owonjezera ndi kuphatikizana. Zowonjezera zambiri ndi zolipiridwa ndipo zingagulidwe ku [ultimatemultisite.com](https://ultimatemultisite.com).
 

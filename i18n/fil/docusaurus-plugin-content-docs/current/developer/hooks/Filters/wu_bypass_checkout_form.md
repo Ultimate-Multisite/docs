@@ -4,7 +4,7 @@ title: Filter - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 Pinapayagan nito ang mga developer na i-bypass ang output at magtakda ng sarili nilang kapalit.
 

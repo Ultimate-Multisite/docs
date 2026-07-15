@@ -4,7 +4,7 @@ title: Гамәл - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Гамәл: wu_cart_setup {#action-wucartsetup}
+# Гамәл: wu_cart_setup
 
 Эшләүчеләргә түләү рәсмиләштерү объектына өстәмә үзгәрешләр кертергә мөмкинлек бирә.
 

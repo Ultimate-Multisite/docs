@@ -3,7 +3,7 @@ title: Zer moduz laguntza esan?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Zerriz laguntza esan {#how-to-get-help}
+# Zerriz laguntza esan
 
 Ezinbestalde, lehen erabilgarri License key-ak dut, eta horrekin ekartu da moduirean ekipua berri ezarritzean Ultimate Multisite erabiltzen duen galera eta problema hauek konpondu eta iradokizuneko aurretik gertatzen dituzteko laguntzeko.
 

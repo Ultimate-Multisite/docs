@@ -3,7 +3,7 @@ title: Integrace víceklientské architektury
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrace Multi-Tenancy {#multi-tenancy-integration}
+# Integrace Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mění několik integračních bodů pro suverénní tenanty, ověření migrace a automatizaci životního cyklu tenantů.
 

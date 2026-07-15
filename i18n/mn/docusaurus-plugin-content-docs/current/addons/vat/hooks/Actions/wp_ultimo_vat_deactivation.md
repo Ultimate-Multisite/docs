@@ -4,7 +4,7 @@ title: Үйлдэл - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Үйлдэл: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Үйлдэл: wp_ultimo_vat_deactivation
 
 Нэмэлтийн бусад хэсгүүдэд идэвхгүй болгох үед ажиллах өөрсдийн горимуудыг холбох боломж олгоно
 

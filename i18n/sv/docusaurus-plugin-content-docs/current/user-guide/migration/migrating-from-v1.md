@@ -3,7 +3,7 @@ title: Migrering från V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrera från V1 {#migrating-from-v1}
+# Migrera från V1
 
 ## Ultimate Multisite har gått från den ursprungliga 1.x-versionsserien till 2.x-versionsserien. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

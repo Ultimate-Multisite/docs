@@ -3,7 +3,7 @@ title: Comentarios de clientes e informes de problemas
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Comentarios de los Usuarios e Informes de Problemas {#customer-feedback--issue-reporting}
+# Comentarios de los Usuarios e Informes de Problemas
 
 Gratis AI Agent v1.5.0 presenta un sistema integrado de comentarios e informes de problemas que permite a los usuarios finales marcar respuestas poco útiles e informar de problemas directamente desde la interfaz de chat. Este sistema incluye gestión de consentimiento, un comando de reporte automatizado y triaje asistido por IA en el backend.
 

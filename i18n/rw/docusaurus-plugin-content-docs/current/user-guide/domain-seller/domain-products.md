@@ -3,7 +3,7 @@ title: Inyubiri za Domain n'Urugero rwa Ubwujgwa
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Inzego mu bikoreshi n'Urundi (Domain Products and Pricing) {#domain-products-and-pricing}
+# Inzego mu bikoreshi n'Urundi (Domain Products and Pricing)
 
 Inzego mu bikoreshi n'Urundi (Domain products) ni uburyo ushagarira uburenganzira bwo kugenzura ubunyangamugayo, TLDs (Top-Level Domains), privacy ya WHOIS, no gukora ubutumvikande bw'uburenganzira. Icyo cyose cyo bikoreshwa ni product ya standard Multisite Ultimate kandi ikaba yashyize tab ya **Domain Settings** ikomeye.
 

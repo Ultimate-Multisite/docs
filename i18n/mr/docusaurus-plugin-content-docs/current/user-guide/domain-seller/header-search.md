@@ -3,7 +3,7 @@ title: शीर्षलेख डोमेन शोध
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 ही मांडणी तेव्हा वापरा जेव्हा तुम्हाला लहान header फॉर्म हवा असेल जो domain शोध सुरू करतो, आणि नंतर ग्राहकाला Ultimate Multisite checkout मध्ये उपलब्ध domain मधून निवड करू देतो.
 

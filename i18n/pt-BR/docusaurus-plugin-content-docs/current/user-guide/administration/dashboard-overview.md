@@ -3,7 +3,7 @@ title: Visão geral do Painel
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Visão Geral do Painel {#dashboard-overview}
+# Visão Geral do Painel
 
 O Ultimate Multisite possui um **Painel** dedicado no menu Ultimate Multisite, e também adiciona widgets ao Painel da Rede. Este artigo cobre o que você verá em ambos os locais.
 

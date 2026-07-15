@@ -3,7 +3,7 @@ title: Creare codices adhibendi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creare Códigos de Descuento (v2) {#creating-discount-codes-v2}
+# Creare Códigos de Descuento (v2)
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 

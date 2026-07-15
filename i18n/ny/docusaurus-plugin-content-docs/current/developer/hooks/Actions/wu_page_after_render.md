@@ -4,7 +4,7 @@ title: Chochita - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Zochita: wu_page_after_render {#action-wupageafterrender}
+# Zochita: wu_page_after_render
 
 Lolani opanga plugin kuwonjezera zokhutira zina titatha kusindikiza tsambalo
 

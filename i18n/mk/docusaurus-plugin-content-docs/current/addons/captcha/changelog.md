@@ -3,7 +3,7 @@ title: Captcha дневник на промени
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Дневник на промени за Captcha {#captcha-changelog}
+# Дневник на промени за Captcha
 
 Верзија: 1.5.0 - Објавено на 2026-05-22
 * Ново: Ограничувач на стапка со тврдо стопирање — го брои секое GET и POST на површини заштитени со captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) и одговара со HTTP 429, `Retry-After` header и случајно tarpit-задржување (1–5s, со тврда горна граница од 15s).

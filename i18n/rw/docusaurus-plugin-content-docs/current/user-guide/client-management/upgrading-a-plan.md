@@ -3,7 +3,7 @@ title: Gukoresha uburyo bwo gukoresha impamvu
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kumenya Icyemezo (v2) {#upgrading-a-plan-v2}
+# Kumenya Icyemezo (v2)
 
 _**Icyemezo: Inyandiko irereye ku Ultimate Multisite version 2.x.**_
 

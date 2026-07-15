@@ -4,7 +4,7 @@ title: Darbība - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Darbība: wu_before_light_ajax {#action-wubeforelightajax}
+# Darbība: wu_before_light_ajax
 
 Dažos gadījumos mums būs jāielādē papildu resursi, lai apstrādātu darbības.
 

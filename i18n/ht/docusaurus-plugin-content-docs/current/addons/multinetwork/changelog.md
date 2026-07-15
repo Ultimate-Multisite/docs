@@ -3,7 +3,7 @@ title: Jounal chanjman plizyè rezo
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Chanjman Multi-Network {#multi-network-changelog}
+# Chanjman Multi-Network
 
 ### 1.3.0 {#130}
 * Nouvo: Aparèy pou prevwa modèl rezo — navige epi prevwa modèl rezo yo ak yon panèl an dirèk anvan ou achte.

@@ -3,7 +3,7 @@ title: Cainéal a Chruinne
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Piaidh an Chruinneacha a fhios ar fáil (FAQ) {#frequently-asked-questions}
+# Piaidh an Chruinneacha a fhios ar fáil (FAQ)
 
 Seo farainne **Piaidh an Chruinneacha a fhios ar fáil** a thaispeán go thườngúil ag cur isteach ag curte caidreamh.
 

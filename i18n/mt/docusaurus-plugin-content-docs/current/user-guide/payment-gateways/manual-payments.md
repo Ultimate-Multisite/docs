@@ -3,7 +3,7 @@ title: Twaqqif ta' Pagamenti Manwali
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Twaqqif ta’ Ħlasijiet Manwali (v2) {#setting-up-manual-payments-v2}
+# Twaqqif ta’ Ħlasijiet Manwali (v2)
 
 _**NOTA IMPORTANTI: Dan l-artiklu jirreferi għal Ultimate Multisite verżjoni 2.x.**_
 

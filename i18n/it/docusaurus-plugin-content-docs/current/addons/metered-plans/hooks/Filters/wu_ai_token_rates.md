@@ -4,7 +4,7 @@ title: Filtro - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# Filtro: wu_ai_token_rates {#filter-wuaitokenrates}
+# Filtro: wu_ai_token_rates
 
 Filtra le tariffe di fatturazione dei token AI.
 

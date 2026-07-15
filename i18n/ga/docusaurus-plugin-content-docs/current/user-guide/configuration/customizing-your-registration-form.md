@@ -3,7 +3,7 @@ title: Do Fhoirm Chláraithe a Shaincheapadh
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Do Fhoirm Chláraithe a Shaincheapadh {#customizing-your-registration-form}
+# Do Fhoirm Chláraithe a Shaincheapadh
 
 Chun cuma uathúil a chur ar do líonra i gcomparáid leis na SaaS eile ar fad atá tógtha ar ardán WordPress, ligeann Ultimate Multisite duit do leathanaigh chlárúcháin agus logála isteach a shaincheapadh lenár ngné **Foirmeacha Checkout**.
 

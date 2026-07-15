@@ -4,7 +4,7 @@ title: Toiming - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Toiming: delete_network {#action-deletenetwork}
+# Toiming: delete_network
 
 Käivitub pärast võrgu kustutamist.
 

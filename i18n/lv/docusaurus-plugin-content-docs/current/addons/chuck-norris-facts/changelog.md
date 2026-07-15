@@ -3,7 +3,7 @@ title: Čaka Norisa faktu izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris faktu izmaiņu žurnāls {#chuck-norris-facts-changelog}
+# Chuck Norris faktu izmaiņu žurnāls
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Pievienots: automātiskās atjaunināšanas funkcionalitāte, izmantojot Ultimate Multisite atjauninājumu serveri

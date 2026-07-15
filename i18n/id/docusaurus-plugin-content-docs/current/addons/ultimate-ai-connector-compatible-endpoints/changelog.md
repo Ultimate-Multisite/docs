@@ -3,7 +3,7 @@ title: Catatan Perubahan Ultimate AI Connector untuk Endpoint yang Kompatibel
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Catatan Perubahan Ultimate AI Connector untuk Endpoint yang Kompatibel {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Catatan Perubahan Ultimate AI Connector untuk Endpoint yang Kompatibel
 
 ## Versi 2.0.0 — Dirilis pada 2026-04-24 {#version-200--released-on-2026-04-24}
 

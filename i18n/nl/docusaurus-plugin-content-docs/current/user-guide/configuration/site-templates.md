@@ -3,7 +3,7 @@ title: Site-sjablonen
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Sitetemplates (v2) {#site-templates-v2}
+# Sitetemplates (v2)
 
 _**OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x. Als je versie 1.x gebruikt,**_ **bekijk dan dit artikel** _**.**_
 

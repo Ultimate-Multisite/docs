@@ -3,7 +3,7 @@ title: Aviso de remoción do Modo de Constructor de Páxinas
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Aviso de Remoção do Modo Construtor de Sites {#site-builder-mode-removal-notice}
+# Aviso de Remoção do Modo Construtor de Sites
 
 **O modo Construtor de Sites foi removido na Superdav AI Agent v1.12.0.** Se estavas a usar o modo Construtor de Sites, deves migrar para o **Setup Assistant agent** para criação de temas e configuração de sites.
 

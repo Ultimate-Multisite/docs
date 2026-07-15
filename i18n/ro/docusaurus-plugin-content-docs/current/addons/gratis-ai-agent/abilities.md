@@ -3,7 +3,7 @@ title: Referință pentru abilități
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referință capabilități {#abilities-reference}
+# Referință capabilități
 
 Capabilitățile sunt acțiunile atomice pe care Gratis AI Agent le poate invoca în instalarea ta WordPress. Fiecare capabilitate este o clasă PHP înregistrată care expune o schemă JSON — agentul citește această schemă la rulare pentru a înțelege ce parametri sunt necesari și ce returnează capabilitatea.
 

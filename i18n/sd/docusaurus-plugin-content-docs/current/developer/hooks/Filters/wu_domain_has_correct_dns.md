@@ -4,7 +4,7 @@ title: فلٽر - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# فلٽر: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# فلٽر: wu_domain_has_correct_dns
 
 plugin ڊولپرن کي نتيجن جي وضاحت ڪرڻ لاءِ نيون جاچون شامل ڪرڻ جي اجازت ڏيو.
 

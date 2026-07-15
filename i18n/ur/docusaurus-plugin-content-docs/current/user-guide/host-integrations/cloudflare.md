@@ -3,7 +3,7 @@ title: Cloudflare انضمام
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare انضمام {#cloudflare-integration}
+# Cloudflare انضمام
 
 ## جائزہ {#overview}
 Cloudflare ایک معروف مواد ترسیل نیٹ ورک (CDN) اور سیکیورٹی فراہم کنندہ ہے جو ویب سائٹس کو محفوظ بنانے اور تیز کرنے میں مدد کرتا ہے۔ یہ انضمام Ultimate Multisite اور Cloudflare کے درمیان خودکار ڈومین انتظام کو فعال کرتا ہے، خاص طور پر ذیلی ڈومین ملٹی سائٹ تنصیبات کے لیے۔

@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_ptm_page_list_footer
 sidebar_label: wp_ultimo_ptm_page_list_footer
 _i18n_hash: c8edc4bfa483f65f5e01a3f06b735f5d
 ---
-# کړنه: wp_ultimo_ptm_page_list_footer {#action-wpultimoptmpagelistfooter}
+# کړنه: wp_ultimo_ptm_page_list_footer
 
 د plugin جوړوونکو ته اجازه ورکوي چې د پاڼې په پای کې scripts ورزیات کړي
 

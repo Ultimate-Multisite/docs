@@ -3,7 +3,7 @@ title: Individualaus šliuzo kūrimas
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Pasirinktinio Gateway kūrimas {#custom-gateway-development}
+# Pasirinktinio Gateway kūrimas
 
 Galite sukurti pasirinktinius mokėjimų Gateway išplėsdami `Base_Gateway` klasę.
 

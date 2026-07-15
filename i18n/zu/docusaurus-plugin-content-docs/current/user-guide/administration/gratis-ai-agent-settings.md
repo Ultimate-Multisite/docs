@@ -3,7 +3,7 @@ title: Izilungiselelo ze-Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Izilungiselelo ze-Gratis AI Agent {#gratis-ai-agent-settings}
+# Izilungiselelo ze-Gratis AI Agent
 
 Isikrini esithi **Izilungiselelo → Okuthuthukisiwe** ku-Gratis AI Agent sinikeza ukucushwa kwezinga lomlawuli kokuhlanganiswa kwangemuva. Leli khasi libhala ukudluliselwa kwempendulo, okhiye babahlinzeki bosesho, ukusethwa kwesevisi ye-Superdav ephethwe, izilawuli ze-Google Calendar, izilungiselelo ze-TextBee SMS, namafulegi ezici asebenza kuyo yonke inethiwekhi.
 

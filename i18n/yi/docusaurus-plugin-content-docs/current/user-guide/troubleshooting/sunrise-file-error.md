@@ -3,7 +3,7 @@ title: Sunrise טעקע־טעות
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# טעות בײַם אינסטאַלירן די Sunrise טעקע {#error-installing-the-sunrise-file}
+# טעות בײַם אינסטאַלירן די Sunrise טעקע
 
 די sunrise.php טעקע איז אַ ספּעציעלע טעקע וואָס WordPress זוכט בעת עס שטאַרט זיך. כּדי WordPress זאָל קענען דערקענען די sunrise.php טעקע, דאַרף זי זיך געפֿינען אין דעם **wp-content טעקע־קאַטאַלאָג**.
 

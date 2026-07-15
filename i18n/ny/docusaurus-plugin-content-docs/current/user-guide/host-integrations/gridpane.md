@@ -3,7 +3,7 @@ title: Kukumbutsa kwa GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ubw GridPane Integration {#gridpane-integration}
+# Ubw GridPane Integration
 
 ## Umuvu (Overview) {#overview}
 GridPane ndi control panel ya WordPress yomwe imapangidwa kwa wosqwamukira wa WordPress. Izi zikufotokozera kupeza kuti domain sync m'maka ndi ulamulira SSL certificate m'maka pakati pa Ultimate Multisite ndi GridPane.

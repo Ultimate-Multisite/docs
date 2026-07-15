@@ -4,7 +4,7 @@ title: Action - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Action: wu_site_created {#action-wusitecreated}
+# Action: wu_site_created
 
 ఒక సైట్ మొదటిసారి సృష్టించబడిన తర్వాత ఇది ట్రిగ్గర్ అవుతుంది.
 

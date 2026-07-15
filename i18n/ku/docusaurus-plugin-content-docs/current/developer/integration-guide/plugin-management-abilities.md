@@ -3,7 +3,7 @@ title: Şiyanên Rêvebirina Pêvekan
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Şiyanên Rêvebirina Pêvekan {#plugin-management-abilities}
+# Şiyanên Rêvebirina Pêvekan
 
 Gratis AI Agent v1.5.0 bi **7 şiyanên rêvebirina pêvekan** tê ku arîkarê AI dikare di dema sohbetê de wan bi kar bîne. Ev şiyan kontrola bi bernameyî li ser pêvekên WordPress ku bi rêya [Pergala Avakerê Pêvekê û Sandbox](../../user-guide/administration/plugin-builder-and-sandbox) hatine sazkirin peyda dikin.
 

@@ -3,7 +3,7 @@ title: Преведување на Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Преведување на Ultimate Multisite {#translating-ultimate-multisite}
+# Преведување на Ultimate Multisite
 
 Ultimate Multisite е развиен на англиски јазик, но плагинот е целосно преводим и активно го прифаќаме доприносите од преводители.
 

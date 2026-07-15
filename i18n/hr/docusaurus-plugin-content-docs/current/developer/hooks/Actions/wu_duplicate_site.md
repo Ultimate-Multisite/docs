@@ -4,7 +4,7 @@ title: Radnja - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Akcija: wu_duplicate_site {#action-wuduplicatesite}
+# Akcija: wu_duplicate_site
 
 Omogućuje programerima da se povežu nakon što se dogodi dupliciranje sitea.
 

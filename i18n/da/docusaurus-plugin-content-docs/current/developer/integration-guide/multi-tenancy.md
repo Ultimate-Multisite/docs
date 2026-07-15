@@ -3,7 +3,7 @@ title: Integration af multi-tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy-integration {#multi-tenancy-integration}
+# Multi-Tenancy-integration
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ændrer flere integrationskontaktpunkter for suveræne tenants, migreringsverificering og automatisering af tenant-livscyklus.
 

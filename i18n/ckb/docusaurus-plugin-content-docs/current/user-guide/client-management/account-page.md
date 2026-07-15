@@ -3,7 +3,7 @@ title: صف داهات بەکارهێنەر
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# لاپەڕەی بەکارهێنەرەکەت (v2) {#your-clients-account-page-v2}
+# لاپەڕەی بەکارهێنەرەکەت (v2)
 
 _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتنی 2.x.**_
 

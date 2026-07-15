@@ -3,7 +3,7 @@ title: Migreer van V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migreer van V1 {#migrating-from-v1}
+# Migreer van V1
 
 ## Ultimate Multisite het geskakel van sy oorspronklike 1.x vrystellingslyn na die 2.x vrystellingslyn. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

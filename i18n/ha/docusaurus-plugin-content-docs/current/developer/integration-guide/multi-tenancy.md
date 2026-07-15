@@ -3,7 +3,7 @@ title: Haɗin Masu Haya da Yawa
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Haɗin Multi-Tenancy {#multi-tenancy-integration}
+# Haɗin Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yana canza wuraren haɗin da dama don tenants masu iko da kansu, tabbatar da ƙaura, da sarrafa zagayowar rayuwar tenant ta atomatik.
 

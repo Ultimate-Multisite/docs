@@ -4,7 +4,7 @@ title: Isihlungi - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Isihlungi: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Isihlungi: wu_password_require_lowercase
 
 Hlunga ukuthi kudingeke yini izinhlamvu ezincane kuma-password.
 

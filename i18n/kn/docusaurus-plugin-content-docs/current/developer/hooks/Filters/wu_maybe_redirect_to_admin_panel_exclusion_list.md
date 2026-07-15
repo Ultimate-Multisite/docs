@@ -4,7 +4,7 @@ title: Filter - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# ಫಿಲ್ಟರ್: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# ಫಿಲ್ಟರ್: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 ಆಟೋ-ರಿಡೈರೆಕ್ಟ್ ಅನ್ನು ತಡೆಯುವ ಪ್ಯಾರಾಮೀಟರ್‌ಗಳ (parameters) ವಿನಾಯಿತಿ ಪಟ್ಟಿಯನ್ನು (exclusion list) ರಚಿಸುತ್ತದೆ.
 

@@ -4,7 +4,7 @@ title: Φίλτρο - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Φίλτρο: wu_mt_url_replacements {#filter-wumturlreplacements}
+# Φίλτρο: wu_mt_url_replacements
 
 Φιλτράρει τα ζεύγη αντικατάστασης URL.
 

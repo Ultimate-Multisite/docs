@@ -3,7 +3,7 @@ title: Umakhi we-Plugin & Indawo yovavanyo
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Umakhi we-Plugin & Sandbox {#plugin-builder--sandbox}
+# Umakhi we-Plugin & Sandbox
 
 Gratis AI Agent v1.5.0 yazisa **iNkqubo yoMmakhi we-Plugin & Sandbox**, evumela umncedisi we-AI ukuba enze, asebenzise, aze alawule ii-plugin ze-WordPress kwinethiwekhi yakho — konke oko kusenziwa kwindawo ekhuselekileyo, eyahluliweyo ye-sandbox.
 

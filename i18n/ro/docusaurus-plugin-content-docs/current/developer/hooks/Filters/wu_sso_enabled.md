@@ -4,7 +4,7 @@ title: Filtru - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 Activează/dezactivează capacitatea de *single-sign-on* (autentificare unică) între domenii.
 

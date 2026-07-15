@@ -3,7 +3,7 @@ title: PRO തീം
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme ഉപയോഗിച്ച് നിങ്ങളുടെ Admin Panel ഇഷ്ടാനുസൃതമാക്കുക {#customizing-your-admin-panel-with-pro-theme}
+# PRO Theme ഉപയോഗിച്ച് നിങ്ങളുടെ Admin Panel ഇഷ്ടാനുസൃതമാക്കുക
 
 ക്ലയന്റ് വർക്കുകൾ ചെയ്യുമ്പോൾ, WordPress-ന്റെ admin dashboard-ൽ ഞങ്ങളുടെ ക്ലയന്റുകൾക്ക് ഒരു ഇഷ്ടാനുസൃത അനുഭവം നൽകേണ്ട ആവശ്യം പലപ്പോഴും വരാറുണ്ട്. കൂടുതൽ പ്രൊഫഷണൽ ലുക്കും ഫീലും തേടുകയാണെങ്കിൽ, PRO Theme നിങ്ങളെ സഹായിച്ചേക്കാം.
 

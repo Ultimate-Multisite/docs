@@ -3,7 +3,7 @@ title: صفحة Account للعميل
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# صفحة Account الخاصة بعميلك (v2) {#your-clients-account-page-v2}
+# صفحة Account الخاصة بعميلك (v2)
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

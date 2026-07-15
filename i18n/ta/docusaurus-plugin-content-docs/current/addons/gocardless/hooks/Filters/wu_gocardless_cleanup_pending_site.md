@@ -4,7 +4,7 @@ title: வடிப்பான் - wu_gococardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filter: wu_gocardless_cleanup_pending_site
 
 ரத்து செய்யப்பட்ட GoCardless உறுப்பினர் நிலையை (membership) நீக்குவதற்கு முன், தனித்துப்போன நிலுவையில் உள்ள Site-ஐ (orphaned pending site) நீக்குவதற்கு இது செயல்படும்.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Zolemba za Ultimate Multisite {#ultimate-multisite-documentation}
+# Zolemba za Ultimate Multisite
 
 Takulandirani ku zolemba za Ultimate Multisite. Ultimate Multisite imasintha WordPress Multisite kukhala nsanja yathunthu ya Website as a Service (WaaS).
 
@@ -18,7 +18,7 @@ Chilichonse chimene mukufunikira kuti mukhazikitse, mukonze, ndi kuyang'anira ns
 
 Buku laukadaulo la opanga omwe akumanga pa Ultimate Multisite. Zimaphatikizapo cholozera cha hooks, zolemba za REST API, ndi malangizo opangira addon.
 
-### [Addons](/addons) {#addons}
+### [Zowonjezera](/addons) {#addons}
 
 Zolemba za addon plugins zolipidwa zomwe zimakulitsa Ultimate Multisite ndi zinthu zina monga kuphatikizana kwa WooCommerce, analytics, kugulitsa ma domain, ndi zina zambiri.
 

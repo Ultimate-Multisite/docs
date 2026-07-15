@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# ක්‍රියාව: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# ක්‍රියාව: wp_ultimo_affiliatewp_load
 
 සියලු අවශ්‍යතා පූරණය වූ විට ක්‍රියාත්මක වේ
 

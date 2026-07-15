@@ -3,7 +3,7 @@ title: Pemandu Pengaturan Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Panduan Pengaturan Multisite {#multisite-setup-wizard}
+# Panduan Pengaturan Multisite
 
 Ultimate Multisite duwe panduan otomatis sing ngubah instalasi WordPress biasa dadi jaringan WordPress Multisite. Iki ngilangi perlu kanggo ngedit `wp-config.php` utawa njalankan perintah database manual.
 

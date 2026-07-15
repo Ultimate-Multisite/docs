@@ -3,7 +3,7 @@ title: 'Mësimi 3: Konfigurimi i rrjetit tuaj'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Mësimi 3: Konfigurimi i rrjetit tuaj {#lesson-3-setting-up-your-network}
+# Mësimi 3: Konfigurimi i rrjetit tuaj
 
 Koha për të ndërtuar. Në këtë mësim do të instaloni Ultimate Multisite dhe do të konfiguroni bazën e rrjetit FitSite. Çdo vendim këtu merret duke pasur parasysh nishen e fitness-it.
 

@@ -3,7 +3,7 @@ title: cPanel एकीकरण
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel एकीकरण (Integration) {#cpanel-integration}
+# cPanel एकीकरण (Integration)
 
 ## अवलोकन (Overview) {#overview}
 cPanel धेरै साझा र समर्पित होस्टिङ प्रदायकहरूद्वारा प्रयोग गरिने सबैभन्दा लोकप्रिय वेब होस्टिङ कन्ट्रोल प्यानलहरू मध्ये एक हो। यो एकीकरणले Ultimate Multisite र cPanel बीच स्वचालित डोमेन सिङ्क्रोनाइजेसन (syncing) सक्षम गर्दछ, जसले तपाईंलाई आफ्नो cPanel खातामा डोमेन एलायस (aliases) र सबडोमेनहरू स्वचालित रूपमा थबाउन अनुमति दिन्छ।

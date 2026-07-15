@@ -3,7 +3,7 @@ title: تكامل CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# تكامل CyberPanel {#cyberpanel-integration}
+# تكامل CyberPanel
 
 يشرح هذا الدليل كيفية إعداد تكامل Ultimate Multisite مع CyberPanel بحيث يتم إضافة (وإزالة) النطاقات المحددة في شبكتك تلقائيًا كمضيفات افتراضية (virtual hosts) في CyberPanel، مع إمكانية التوفير التلقائي لشهادات SSL عبر Let's Encrypt.
 

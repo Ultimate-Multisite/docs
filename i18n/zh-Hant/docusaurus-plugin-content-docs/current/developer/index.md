@@ -3,7 +3,7 @@ title: 開發者文件
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# 開發者文件 {#developer-documentation}
+# 開發者文件
 
 本指南為開發人員提供了所有必要的資源，用於整合、擴展或為 Ultimate Multisite 開發附加元件 (addons)。Ultimate Multisite 將 WordPress Multisite 網路轉變為一個網站即服務 (Website-as-a-Service, WaaS) 平台。
 

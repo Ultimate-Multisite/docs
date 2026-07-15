@@ -3,7 +3,7 @@ title: 'Leasan 6: Eòlas a’ chlàraidh'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leasan 6: An t-Eòlas Clàraidh {#lesson-6-the-signup-experience}
+# Leasan 6: An t-Eòlas Clàraidh
 
 ’S ann san t-sruth checkout a thèid ùidh na teachd-a-steach. Caillidh pròiseas clàraidh troimh-chèile no ro choitcheann luchd-ceannach. Tionndaidhidh sruth sònraichte don niche, a bhruidhneas an cànan aca agus a tha a’ faireachdainn furasta, iad gu luchd-ceannach.
 

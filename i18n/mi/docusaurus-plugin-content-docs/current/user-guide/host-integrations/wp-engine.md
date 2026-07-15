@@ -3,7 +3,7 @@ title: Whakawhanaungatanga me WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Whakawhanaungatanga me WP Engine {#wp-engine-integration}
+# Whakawhanaungatanga me WP Engine
 
 ## Pūmanawa (Overview) {#overview}
 Hea te WP Engine he tūpuna nui o hosting WordPress, he platforma mātanga e whai whakaaro ki te whakamahi mō performance, pūkenga, me te whakawhanake i ngā waka WordPress. Ko te whakawhanaungatanga (integration) ko e hoki i te domain automatically anō i te Ultimate Multisite me WP Engine.

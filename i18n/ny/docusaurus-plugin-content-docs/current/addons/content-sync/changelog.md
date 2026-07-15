@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za Kuyanjanitsa Zomwe Zili
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Mbiri ya Zosintha za Content Sync {#content-sync-changelog}
+# Mbiri ya Zosintha za Content Sync
 
 ### Version 1.1.0 - Yatulutsidwa pa 2025-12-31 {#version-110---released-on-2025-12-31}
 * Chatsopano: Thandizo losinthanitsa mitundu yonse ya zolemba (zolemba, masamba, mitundu ya zolemba zosinthidwa)

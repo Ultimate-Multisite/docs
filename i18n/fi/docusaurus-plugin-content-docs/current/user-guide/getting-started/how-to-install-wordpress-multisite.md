@@ -3,7 +3,7 @@ title: Miten asentaa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Miten asennan WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Miten asennan WordPress Multisite?
 
 WordPress Multisite mahdollistaa useiden sivustojen hallinnan yhden asennuksen kautta. Tämä on sisäänrakennettu ominaisuus, mutta se ei ole aktiivinen oletuksena.
 

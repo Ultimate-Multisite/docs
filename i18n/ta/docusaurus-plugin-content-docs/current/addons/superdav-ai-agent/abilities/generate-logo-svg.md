@@ -3,7 +3,7 @@ title: SVG லோகோவை உருவாக்கவும்
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# லோகோ SVG-ஐ உருவாக்குதல் {#generate-logo-svg}
+# லோகோ SVG-ஐ உருவாக்குதல்
 
 **Generate Logo SVG** என்ற வசதி, Theme Builder மூலம், தானாகவே namespace-பாதுகாப்பான sanitisation உடன், தனிப்பயன் லோகோ SVG-களை உங்கள் WordPress தளத்தில் நேரடியாக உருவாக்கவும் உட்பொதிக்கவும் அனுமதிக்கிறது.
 

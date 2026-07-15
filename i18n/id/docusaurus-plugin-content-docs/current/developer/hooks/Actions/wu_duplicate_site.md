@@ -4,7 +4,7 @@ title: Aksi - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Aksi: wu_duplicate_site {#action-wuduplicatesite}
+# Aksi: wu_duplicate_site
 
 Memungkinkan pengembang untuk menambahkan hook setelah proses duplikasi situs selesai.
 

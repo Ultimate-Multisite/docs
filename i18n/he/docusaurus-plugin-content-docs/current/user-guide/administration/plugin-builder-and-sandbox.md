@@ -3,7 +3,7 @@ title: בונה תוספים ומעבדה
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# בונה תוספים ו-Sandbox {#plugin-builder--sandbox}
+# בונה תוספים ו-Sandbox
 
 Gratis AI Agent v1.5.0 מציג את **מערכת בונה התוספים ו-Sandbox**, המאפשרת למساعد ה-AI ליצור, להפעיל ולנהל תוספי WordPress ברשת שלך — הכל דרך סביבת Sandbox מבודדת ובטוחה.
 

@@ -4,7 +4,7 @@ title: Filtre - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filtre : wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filtre : wu_connector_enforcement_option_keys
 
 Permet de filtrer la liste des clés d'options des fournisseurs d'IA appliquées depuis le site principal.
 

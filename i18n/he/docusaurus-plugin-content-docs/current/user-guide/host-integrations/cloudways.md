@@ -3,7 +3,7 @@ title: אינטגרציה עם Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# אינטגרציית Cloudways {#cloudways-integration}
+# אינטגרציית Cloudways
 
 ## סקירה כללית {#overview}
 Cloudways היא פלטפורמת אחסון ענן מנוהלת שמאפשרת לך לפרוס אתרי WordPress אצל ספקי ענן שונים כמו DigitalOcean, AWS, Google Cloud ועוד. אינטגרציה זו מאפשרת סנכרון דומיינים אוטומטי וניהול תעודות SSL בין Ultimate Multisite ו-Cloudways.

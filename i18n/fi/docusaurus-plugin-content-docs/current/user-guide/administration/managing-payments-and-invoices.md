@@ -3,7 +3,7 @@ title: Maksut ja laskujen hallinta
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Maksujen ja laskujen hallinta {#managing-payments-and-invoices}
+# Maksujen ja laskujen hallinta
 
 ## Maksun asetukset {#payment-settings}
 

@@ -3,9 +3,9 @@ title: Szablon dodatku
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Szablon Addonu {#addon-template}
+# Szablon Addonu
 
-{{ADDON_DESCRIPTION}}
+Szablon dodatku — Ultimate Multisite.
 
 ## Wymagania {#requirements}
 

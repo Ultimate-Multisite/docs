@@ -4,7 +4,7 @@ title: Toiminto - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Toiminto: set_auth_cookie {#action-setauthcookie}
+# Toiminto: set_auth_cookie
 
 Käynnistyy välittömästi ennen kuin todennuseväste asetetaan.
 

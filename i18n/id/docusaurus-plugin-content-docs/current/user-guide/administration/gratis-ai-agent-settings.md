@@ -3,7 +3,7 @@ title: Pengaturan Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Pengaturan Gratis AI Agent {#gratis-ai-agent-settings}
+# Pengaturan Gratis AI Agent
 
 Layar **Pengaturan → Lanjutan** di Gratis AI Agent menyediakan konfigurasi tingkat administrator untuk integrasi backend. Halaman ini mendokumentasikan penerusan feedback, kunci penyedia pencarian, penyiapan layanan Superdav terkelola, kontrol Google Calendar, pengaturan SMS TextBee, dan penanda fitur di seluruh jaringan.
 

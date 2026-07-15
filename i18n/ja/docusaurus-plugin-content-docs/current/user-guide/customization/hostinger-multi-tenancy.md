@@ -3,7 +3,7 @@ title: ホスティングマルチテナンシー
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# ホスティングマルチテナンシー {#hostinger-multi-tenancy}
+# ホスティングマルチテナンシー
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 では、ホストされたドメインが既存の Hostinger ドメインマッピング統合と並行して主権的なテナントプロビジョニングに参加できるように、Hostinger のマルチテナンシー機能を追加しました。
 

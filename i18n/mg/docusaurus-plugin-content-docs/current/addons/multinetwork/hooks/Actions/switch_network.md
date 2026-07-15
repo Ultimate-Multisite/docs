@@ -4,7 +4,7 @@ title: Hetsika - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Hetsika: switch_network {#action-switchnetwork}
+# Hetsika: switch_network
 
 Mirehitra rehefa ovaina ny tontolon'ny tambajotra ankehitriny.
 

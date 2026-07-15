@@ -3,7 +3,7 @@ title: Håndtering af kunder
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Administrering kunder {#managing-customers}
+# Administrering kunder
 
 Siden **Kunder** viser listen over medlemmer registreret i dit netværk. Denne side præsenterer grundlæggende brugerinformation herunder navn, e-mailadresse, sidste login og et **skift til** link, der lader dig logge ind på brugerens undersite som sitesadministrator.
 

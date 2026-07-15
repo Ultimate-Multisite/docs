@@ -3,7 +3,7 @@ title: GridPane-integrasjon
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane-integrasjon {#gridpane-integration}
+# GridPane-integrasjon
 
 ## Oversikt {#overview}
 GridPane er et spesialisert kontrollpanel for WordPress-hosting, bygget for profesjonelle WordPress-utviklere. Denne integrasjonen gjør det mulig å automatisk synkronisere domener og administrere SSL-sertifikater mellom Ultimate Multisite og GridPane.

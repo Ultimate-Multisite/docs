@@ -3,7 +3,7 @@ title: Site Exporter Changelog
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Oldalexportáló Módosítási Napló {#site-exporter-changelog}
+# Oldalexportáló Módosítási Napló
 
 Verzió: 1.0.6 - Kiadása: 2026-05-11
 * Új: Az oldalexportok most tartalmaznak egy önindító index.php fájlt, így a ZIP fájlt külön plugin telepítése nélkül is telepíthetik egy friss hostingre

@@ -3,7 +3,7 @@ title: Hantera betalningar och fakturor
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Hantera betalningar och fakturor {#managing-payments-and-invoices}
+# Hantera betalningar och fakturor
 
 ## Betalningsinställningar {#payment-settings}
 

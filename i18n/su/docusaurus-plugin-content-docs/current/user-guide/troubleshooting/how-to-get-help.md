@@ -3,7 +3,7 @@ title: Kumaha cara meunang tulung
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kumaha Ngajak Bantuan {#how-to-get-help}
+# Kumaha Ngajak Bantuan
 
 Anjeun geus boga kunci Lisensi anu sah, sareng di éta aya akses ka tim urang kanggo ngabantosan anjeun ngalaksanake masalah nu sok kajadian nalika ngatur Ultimate Multisite.
 

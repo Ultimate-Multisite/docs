@@ -3,7 +3,7 @@ title: Automatyczne wyszukiwanie i zamiana w szablonach witryn
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatyczne wyszukiwanie i zastępowanie w szablonach witryn (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatyczne wyszukiwanie i zastępowanie w szablonach witryn (v2)
 
 _**Ten poradnik wymaga WP UItimo w wersji 2.x.**_
 

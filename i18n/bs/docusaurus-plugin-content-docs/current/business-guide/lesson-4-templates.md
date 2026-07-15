@@ -3,7 +3,7 @@ title: 'Lekcija 4: Izgradnja nišnih šablona'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcija 4: Izgradnja šablona za nišu {#lesson-4-building-niche-templates}
+# Lekcija 4: Izgradnja šablona za nišu
 
 Šabloni su jezgro vaše vrijednosti za nišu. Vlasnik fitness studija koji se prijavi i vidi sajt koji već izgleda kao fitness sajt — sa rasporedima časova, profilima trenera i pravom vizualnom opremom — mnogo je skloniji da ostane s nama nego onaj koji vidi prazno platno.
 

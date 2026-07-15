@@ -3,7 +3,7 @@ title: 틈새 웹사이트 비즈니스 구축하기
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite로 틈새 웹사이트 비즈니스 구축하기 {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite로 틈새 웹사이트 비즈니스 구축하기
 
 웹사이트 판매를 시도하는 대부분의 사람들은 Wix, Squarespace, 그리고 수많은 프리랜서들과 가격 경쟁을 합니다. 그리고 그 경쟁에서 지게 됩니다. 승리하는 사람들은 특정 고객층을 정하고, 그 고객층에 맞춰진 솔루션을 구축한 다음, 제공하는 가치에 대해 비용을 청구합니다.
 

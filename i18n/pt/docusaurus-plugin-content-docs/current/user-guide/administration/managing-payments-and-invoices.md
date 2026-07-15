@@ -3,7 +3,7 @@ title: Gerenciamento de Pagamentos e Faturas
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gerenciando Pagamentos e Faturas {#managing-payments-and-invoices}
+# Gerenciando Pagamentos e Faturas
 
 ## Configurações de Pagamento {#payment-settings}
 

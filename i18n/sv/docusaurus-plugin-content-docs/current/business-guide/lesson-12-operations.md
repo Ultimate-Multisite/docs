@@ -3,7 +3,7 @@ title: 'Lektion 12: Att driva verksamheten'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lektion 12: Att driva verksamheten {#lesson-12-running-the-business}
+# Lektion 12: Att driva verksamheten
 
 En plattform är inte ett projekt du slutför – det är en verksamhet du driver. Denna lektion täcker de dagliga driftuppgifterna för att hantera FitSite: support, fakturering, underhåll och hur du håller kunderna nöjda.
 

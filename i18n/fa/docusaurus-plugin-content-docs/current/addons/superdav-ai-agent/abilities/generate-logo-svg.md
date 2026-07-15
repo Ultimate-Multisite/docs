@@ -3,7 +3,7 @@ title: تولید لوگوی SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# تولید لوگوی SVG {#generate-logo-svg}
+# تولید لوگوی SVG
 
 قابلیت **تولید لوگوی SVG** به Theme Builder اجازه می‌دهد تا لوگوهای سفارشی SVG را مستقیماً با پاک‌سازی خودکار و ایمن در فضای نام (namespace-safe sanitisation) در سایت وردپرسی شما ایجاد و جاسازی کند.
 

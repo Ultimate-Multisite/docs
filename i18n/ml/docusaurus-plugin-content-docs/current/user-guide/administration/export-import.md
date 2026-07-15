@@ -3,7 +3,7 @@ title: എക്‌സ്‌പോർട്ട് ചെയ്യുക & ഇം
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# എക്‌സ്‌പോർട്ട് ചെയ്യലും ഇംപോർട്ട് ചെയ്യലും {#export--import}
+# എക്‌സ്‌പോർട്ട് ചെയ്യലും ഇംപോർട്ട് ചെയ്യലും
 
 Ultimate Multisite 2.9.0, **Tools > Export & Import** എന്ന ഭാഗത്ത് ഒരു single-site **Export & Import** ടൂൾ ചേർക്കുന്നു. ഒരു WordPress സൈറ്റിനെ ZIP ഫയലായി പാക്കേജ് ചെയ്യണമെങ്കിൽ, ആ ZIP ഫയൽ പുനഃസ്ഥാപിക്കണമെങ്കിൽ, അല്ലെങ്കിൽ ഒരു സൈറ്റിനെ അനുയോജ്യമായ Ultimate Multisite-ൽ നിന്നും single-site WordPress ഇൻസ്റ്റാളേഷനിലേക്ക് മാറ്റണമെങ്കിൽ ഇത് ഉപയോഗിക്കുക.
 

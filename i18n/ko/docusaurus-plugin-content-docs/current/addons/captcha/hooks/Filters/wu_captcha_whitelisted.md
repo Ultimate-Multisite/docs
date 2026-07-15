@@ -4,7 +4,7 @@ title: 필터 - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# 필터: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# 필터: wu_captcha_whitelisted
 
 현재 사용자/요청이 허용 목록에 포함되어야 하는지 필터링합니다.
 

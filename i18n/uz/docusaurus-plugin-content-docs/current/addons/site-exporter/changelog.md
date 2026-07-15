@@ -3,7 +3,7 @@ title: Sayt eksportchisi o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter o‘zgarishlar jurnali {#site-exporter-changelog}
+# Site Exporter o‘zgarishlar jurnali
 
 Versiya: 1.0.6 - 2026-05-11 da chiqarilgan
 * Yangi: Site eksportlari endi o‘zi ishga tushadigan index.php faylini ham paketlaydi, shuning uchun ZIP alohida plugin o‘rnatmasdan yangi hostga o‘rnatilishi mumkin

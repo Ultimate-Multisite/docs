@@ -3,7 +3,7 @@ title: Tìm kiếm miền trong Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Tìm kiếm tên miền ở Header {#header-domain-search}
+# Tìm kiếm tên miền ở Header
 
 Sử dụng thiết lập này khi bạn muốn một biểu mẫu nhỏ ở header bắt đầu tìm kiếm tên miền, sau đó cho phép khách hàng chọn trong các tên miền khả dụng bên trong checkout của Ultimate Multisite.
 

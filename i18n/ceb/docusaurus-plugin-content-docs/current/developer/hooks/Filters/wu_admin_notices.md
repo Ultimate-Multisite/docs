@@ -4,7 +4,7 @@ title: Pagsala - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Salain: wu_admin_notices {#filter-wuadminnotices}
+# Salain: wu_admin_notices
 
 Tugoti ang mga developer sa pagsala sa mga pahibalo sa admin nga gidugang sa Ultimate Multisite.
 

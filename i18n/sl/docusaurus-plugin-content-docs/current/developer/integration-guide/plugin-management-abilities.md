@@ -3,7 +3,7 @@ title: Zmožnosti upravljanja vtičnikov
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Zmožnosti upravljanja vtičnikov {#plugin-management-abilities}
+# Zmožnosti upravljanja vtičnikov
 
 Gratis AI Agent v1.5.0 vključuje **7 zmožnosti upravljanja vtičnikov**, ki jih lahko AI pomočnik prikliče med pogovorom. Te zmožnosti omogočajo programski nadzor nad WordPress vtičniki, nameščenimi prek [Sistema za gradnjo vtičnikov in peskovnik](../../user-guide/administration/plugin-builder-and-sandbox).
 

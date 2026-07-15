@@ -3,7 +3,7 @@ title: Operazioni del Tenant Sovrano
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operazioni Tenant Sovrani {#sovereign-tenant-operations}
+# Operazioni Tenant Sovrani
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aggiunge strumenti operativi per i tenant sovrani: sottodomini che funzionano con il proprio database, root del filesystem e contesto di routing separato, pur rimanendo visibili dall'amministratore di rete.
 

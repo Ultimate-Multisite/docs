@@ -4,7 +4,7 @@ title: Сүзгі - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Сүзгі: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Сүзгі: wu_bypass_unset_current_user
 
 Әзірлеушілерге ағымдағы пайдаланушыны unset ету кодын айналып өтуге мүмкіндік береді.
 

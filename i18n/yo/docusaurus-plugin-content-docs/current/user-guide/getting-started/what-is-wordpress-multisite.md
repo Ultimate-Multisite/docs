@@ -3,7 +3,7 @@ title: Kí ni WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kí ni WordPress Multisite? {#what-is-wordpress-multisite}
+# Kí ni WordPress Multisite?
 
 Nínú ìpìlẹ̀ rẹ̀, WordPress ń pèsè ẹ̀yà kan tí a ń pè ní ‘Multisite’ tí ìpilẹ̀ṣẹ̀ rẹ̀ padà sí ọdún 2010 nígbà ìfilọ́lẹ̀ WordPress 3.0. Láti ìgbà náà, ó ti gba ọ̀pọ̀ àtúnṣe tí a ṣe láti ṣàfikún àwọn ẹ̀yà tuntun àti láti mú ààbò lágbára.
 

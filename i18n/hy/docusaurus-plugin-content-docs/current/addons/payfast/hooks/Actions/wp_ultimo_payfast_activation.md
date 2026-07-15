@@ -4,7 +4,7 @@ title: Գործողություն - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Գործողություն՝ wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Գործողություն՝ wp_ultimo_payfast_activation
 
 Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց activation ընթացակարգերը
 

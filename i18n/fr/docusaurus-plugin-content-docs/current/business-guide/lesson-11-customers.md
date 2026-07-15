@@ -3,7 +3,7 @@ title: 'Leçon 11 : Trouver des clients'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leçon 11 : Trouver des clients {#lesson-11-finding-customers}
+# Leçon 11 : Trouver des clients
 
 Une excellente plateforme sans clients n'est qu'un passe-temps. Cette leçon explique comment acquérir des clients dans une niche verticale — des stratégies qui fonctionnent spécifiquement parce que vous vous concentrez sur un seul secteur d'activité.
 

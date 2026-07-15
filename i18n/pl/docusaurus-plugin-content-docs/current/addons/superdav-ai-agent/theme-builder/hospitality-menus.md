@@ -3,7 +3,7 @@ title: Menu restauracyjne
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Gastronomiczne {#hospitality-menus}
+# Menu Gastronomiczne
 
 Funkcja **Menu Gastronomiczne** pozwala Theme Builderowi generować i osadzać ustrukturyzowane strony menu potraw i napojów bezpośrednio na Twojej witrynie WordPress.
 

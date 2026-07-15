@@ -4,7 +4,7 @@ title: Hetsika - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Hetsika: wu_deactivation {#action-wudeactivation}
+# Hetsika: wu_deactivation
 
 Avelao ny ampahany hafa amin'ny plugin hampifandray ny fizotrany ho an'ny deactivation
 

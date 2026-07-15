@@ -3,7 +3,7 @@ title: An Athrú do Chanán
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# An Léimeacht Plana (v2) {#upgrading-a-plan-v2}
+# An Léimeacht Plana (v2)
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 

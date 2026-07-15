@@ -4,7 +4,7 @@ title: Bộ lọc - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Bộ lọc: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Bộ lọc: wu_password_require_uppercase
 
 Bộ lọc này dùng để xác định xem mật khẩu có yêu cầu chứa chữ hoa hay không.
 

@@ -3,7 +3,7 @@ title: Kassandik ja kliendi DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Kassand ja kliendi DNS-juhtimise juhtimine {#checkout-field-and-customer-dns-management}
+# Kassand ja kliendi DNS-juhtimise juhtimine
 
 ## Domeeni valikukirjenduse checkout-väljeldus {#the-domain-selection-checkout-field}
 

@@ -3,7 +3,7 @@ title: Recherche Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Recherche Internet {#internet-search}
+# Recherche Internet
 
 Gratis AI Agent v1.5.0 ajoute une capacité de **Recherche Internet** qui permet à l'assistant IA de récupérer des informations actualisées sur le web pendant une conversation. Cette fonctionnalité est alimentée par l'API [Brave Search](https://brave.com/search/api/) ou l'API [Tavily](https://tavily.com/).
 

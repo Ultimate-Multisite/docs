@@ -3,7 +3,7 @@ title: פֿאַרוואַלטן זייטלעך
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# פירן זייטן {#managing-sites}
+# פירן זייטן
 
 זייטן (אָדער אונטערזייטן) זענען דער קערן פֿון אײַער WaaS געשעפֿט. Ultimate Multisite האָט 3 טיפּן זייטן:
 

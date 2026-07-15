@@ -3,7 +3,7 @@ title: Izgradite poslovanje s nišnim web-stranicama
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Izgradite poslovanje s nišnim web-stranicama uz Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Izgradite poslovanje s nišnim web-stranicama uz Ultimate Multisite
 
 Većina ljudi koji pokušavaju prodavati web-stranice natječe se cijenom protiv Wix, Squarespace i tisuća freelancera. Gube. Oni koji pobjeđuju odabiru specifičnu publiku, grade rješenje prilagođeno toj publici i naplaćuju vrijednost koju isporučuju.
 

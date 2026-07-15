@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Aksyon: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Aksyon: wp_ultimo_gocardless_deactivation
 
 Pasagdi ang ubang bahin sa plugin nga maglakip sa ilang mga routine alang sa deactivation
 

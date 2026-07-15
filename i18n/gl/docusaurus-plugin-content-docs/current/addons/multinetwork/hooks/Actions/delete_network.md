@@ -4,7 +4,7 @@ title: Acción - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Acción: delete_network {#action-deletenetwork}
+# Acción: delete_network
 
 Execútase despois de que se eliminase unha rede.
 

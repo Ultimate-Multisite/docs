@@ -3,7 +3,7 @@ title: Нысандылық ескертулер
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Жаңарту Жоспары (Release Notes) {#release-notes}
+# Жаңарту Жоспары (Release Notes)
 
 ## 2.13.0 нұсқасы — 2026-06-05 күні шығарылды {#version-2130--released-on-2026-06-05}
 

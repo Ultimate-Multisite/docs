@@ -3,7 +3,7 @@ title: 'Lektioun 11: Clientë fannen'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lektioun 11: Clientë fannen {#lesson-11-finding-customers}
+# Lektioun 11: Clientë fannen
 
 Eng super Plattform ouni Clienten ass just en Hobby. Dës Lektioun behandelt, wéi een an enger Nischevertikal Clientë gewënnt -- Strategien, déi speziell funktionéieren, well s du dech op eng eenzeg Industrie konzentréiers.
 

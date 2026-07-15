@@ -3,7 +3,7 @@ title: Nkwado WPMU DEV Integration
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integracja z WPMU DEV {#wpmu-dev-integration}
+# Integracja z WPMU DEV
 
 ## Przegląd {#overview}
 WPMU DEV to kompleksowa platforma WordPress, która oferuje hosting, wtyczki i usługi dla stron WordPress. Ta integracja umożliwia automatyczne synchronizowanie domen oraz zarządzanie certyfikatami SSL między Ultimate Multisite a hostingiem WPMU DEV.

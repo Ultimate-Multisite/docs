@@ -4,7 +4,7 @@ title: Ìṣe - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Ìṣe: add_user_to_blog {#action-addusertoblog}
+# Ìṣe: add_user_to_blog
 
 Ó máa ń ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀ lẹ́yìn tí a bá fi olumulo kun site kan.
 

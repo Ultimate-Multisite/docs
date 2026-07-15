@@ -3,7 +3,7 @@ title: 'Lekcia 11: Hľadanie zákazníkov'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekcia 11: Hľadanie zákazníkov {#lesson-11-finding-customers}
+# Lekcia 11: Hľadanie zákazníkov
 
 Skvelá platforma bez zákazníkov je len koníček. Táto lekcia vysvetľuje, ako získavať zákazníkov v úzkej vertikále -- stratégie, ktoré fungujú práve preto, že sa zameriavate na jedno odvetvie.
 

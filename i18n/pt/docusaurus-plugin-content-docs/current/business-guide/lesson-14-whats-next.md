@@ -3,7 +3,7 @@ title: 'Lição 14: O que vem a seguir'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lição 14: O que vem a seguir {#lesson-14-what-comes-next}
+# Lição 14: O que vem a seguir
 
 Você construiu uma plataforma de websites de nicho do zero. FitSite está no ar, atendendo estúdios de fitness e gerando receita recorrente. Esta lição final analisa para onde ir a partir daqui.
 

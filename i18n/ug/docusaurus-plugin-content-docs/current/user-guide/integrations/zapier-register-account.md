@@ -3,7 +3,7 @@ title: Zapier orqali hisob ro'yxatdan oling
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# رویداد: Zapier aracılığıyla hesap kaydı oluşturma {#event-register-an-account-via-zapier}
+# رویداد: Zapier aracılığıyla hesap kaydı oluşturma
 
 [Ultimate Multisite'ı Zapier ile entegre etme](zapier.md) yazısında, Ultimate Multisite içinde tetikleyiciler ve olaylar (triggers and events) temelinde farklı eylemler gerçekleştirmek için Zapier'ı nasıl kullanabileceğimizi konuştuk. Bu makalede ise üçüncü taraf uygulamaları nasıl entegre edebileceğinizi göstereceğiz. Veri kaynağı olarak Google Sheets'i kullanacağız ve bu bilgileri Ultimate Multisite'a göndererek bir hesap kaydı oluşturacağız.
 

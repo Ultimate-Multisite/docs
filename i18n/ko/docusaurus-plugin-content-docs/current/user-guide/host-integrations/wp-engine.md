@@ -3,7 +3,7 @@ title: WP Engine 통합
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integration {#wp-engine-integration}
+# WP Engine Integration
 
 ## 개요 {#overview}
 

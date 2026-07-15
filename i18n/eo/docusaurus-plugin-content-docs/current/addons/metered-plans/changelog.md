@@ -3,7 +3,7 @@ title: Ŝanĝprotokolo de laŭmezuraj planoj
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ŝanĝprotokolo de Mezuritaj Planoj {#metered-plans-changelog}
+# Ŝanĝprotokolo de Mezuritaj Planoj
 
 Versio 1.1.0 - Eldonita je 2026-05-05
 - Nova: AI token-fakturigo por multretejaj subretejoj — spuru kaj fakturu AI token-uzadon tra klientaj retejoj kun agordeblaj po-tokenaj tarifoj

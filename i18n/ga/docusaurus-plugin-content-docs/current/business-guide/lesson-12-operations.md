@@ -3,7 +3,7 @@ title: 'Ceacht 12: An Gnó a Reáchtáil'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ceacht 12: An Gnó a Reáchtáil {#lesson-12-running-the-business}
+# Ceacht 12: An Gnó a Reáchtáil
 
 Ní tionscadal é ardán a chríochnaíonn tú -- is gnó é a reáchtálann tú. Clúdaíonn an ceacht seo na hoibríochtaí laethúla a bhaineann le FitSite a bhainistiú: tacaíocht, billeáil, cothabháil, agus custaiméirí a choinneáil sásta.
 

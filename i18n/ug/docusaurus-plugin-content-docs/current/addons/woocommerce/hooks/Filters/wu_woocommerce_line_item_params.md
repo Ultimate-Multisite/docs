@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# سۈزگۈچ: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# سۈزگۈچ: wu_woocommerce_line_item_params
 
 خېرىدارنى WooCommerce checkout غا قايتا يۆتكەشتىن بۇرۇن، WooCommerce Cart تا قۇر لىنىيە تۈرلىرىنى قۇرۇشقا ئىشلىتىلىدىغان پارامېتىرلارنى سۈزۈڭ.
 

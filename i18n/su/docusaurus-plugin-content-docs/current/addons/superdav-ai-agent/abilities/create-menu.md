@@ -3,7 +3,7 @@ title: Jieun Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Jieun Menu {#create-menu}
+# Jieun Menu
 
 Kamampuhan **Jieun Menu** nyieun menu navigasi WordPress kalayan dukungan pikeun label navigasi anu béda misah ti judul kaca.
 

@@ -4,7 +4,7 @@ title: فلټر - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# فلټر: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# فلټر: wu_stripe_checkout_subscription_data
 
 د Stripe ګډون ډاټا فلټر کړئ. کولای شي success_url یا cancel_url بدل کړي.
 

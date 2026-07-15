@@ -3,7 +3,7 @@ title: Konstruksi Integrasi Registrar Kustom
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Özel Bir Registrar Entegrasyonu Oluşturma {#building-a-custom-registrar-integration}
+# Özel Bir Registrar Entegrasyonu Oluşturma
 
 Domain Seller addon'ı bir **Entegrasyon Kaydı (Integration Registry)** yapısını kullanır. Her registrar, `Domain_Selling_Capability` arayüzünü uygulayan ve `wu_domain_seller_register_capabilities` action hook'u üzerinden kendini kaydeden bir PHP sınıfıdır.
 

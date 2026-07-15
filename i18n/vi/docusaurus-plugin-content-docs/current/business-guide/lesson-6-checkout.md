@@ -3,7 +3,7 @@ title: 'Bài học 6: Trải nghiệm đăng ký'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Bài 6: Trải nghiệm Đăng ký {#lesson-6-the-signup-experience}
+# Bài 6: Trải nghiệm Đăng ký
 
 Quy trình thanh toán chính là nơi chúng ta biến sự quan tâm thành doanh thu. Một quy trình đăng ký khó hiểu hoặc chung chung sẽ khiến khách hàng bỏ đi. Ngược lại, một quy trình được thiết kế riêng cho ngành nghề của họ, sử dụng ngôn ngữ của họ và cảm thấy dễ dàng sẽ giúp bạn chuyển đổi họ thành khách hàng.
 

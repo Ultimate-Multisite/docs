@@ -3,7 +3,7 @@ title: 'Darasi na 8: Shigar da Abokin Ciniki'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Darasi na 8: Shigar da Abokan Ciniki {#lesson-8-customer-onboarding}
+# Darasi na 8: Shigar da Abokan Ciniki
 
 Samu abokin ciniki ya yi rajista rabin aikin ne kawai. Idan sun shiga, suka ji sun ruɗe, sannan ba su sake dawowa ba, ka rasa su. Wannan darasin yana tsara ƙwarewar da ke mayar da sabon mai rajista zuwa abokin ciniki mai aiki kuma mai hulɗa.
 

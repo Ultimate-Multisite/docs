@@ -3,7 +3,7 @@ title: 'Lekcja 8: Onboarding klienta'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lekcja 8: Wdrażanie dla Klienta (Customer Onboarding) {#lesson-8-customer-onboarding}
+# Lekcja 8: Wdrażanie dla Klienta (Customer Onboarding)
 
 Skłonienie klienta do rejestracji to tylko połowa sukcesu. Jeśli zaloguje się, poczuje się przytłoczony i nigdy nie wróci, straciłeś go. Ta lekcja projektuje doświadczenie, które przekształca nową rejestrację w aktywnego, zaangażowanego klienta.
 

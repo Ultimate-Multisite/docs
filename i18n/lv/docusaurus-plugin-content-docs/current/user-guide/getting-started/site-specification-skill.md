@@ -3,7 +3,7 @@ title: Vieta specifikācijas prasmes
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Specifikācijas prasme vietnes specifikācijai {#site-specification-skill}
+# Specifikācijas prasme vietnes specifikācijai
 
 **Vietnes specifikācijas prasmes** ir struktūras pieeja, kā saglabāt jūsu vietnes mērķus, auditoriju un zīmola identitāti. Šī informācija tiek glabāta jūsu **site_brief** atmiņā, ko agenti referējas starp sesijām, lai sniegtu vienotu, kontekstualizētu palīdzību.
 

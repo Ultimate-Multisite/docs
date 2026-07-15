@@ -3,7 +3,7 @@ title: Ndekọ mgbanwe nke Atụmatụ a na-akwụ dịka ojiji
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ndekọ Mgbanwe Atụmatụ A Na-atụ n’Otu Ojiji {#metered-plans-changelog}
+# Ndekọ Mgbanwe Atụmatụ A Na-atụ n’Otu Ojiji
 
 Ụdị 1.1.0 - E wepụtara na 2026-05-05
 - Ọhụrụ: Ịgba ụgwọ AI token maka multisite subsites — soro ma gbaa ụgwọ ojiji AI token gafee saịtị ndị ahịa nwere ọnụego kwa-token a na-ahazi

@@ -3,7 +3,7 @@ title: લોગો SVG બનાવો
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# લોગો SVG બનાવો {#generate-logo-svg}
+# લોગો SVG બનાવો
 
 **Generate Logo SVG** ક્ષમતા Theme Builder ને તમારી WordPress સાઇટમાં કસ્ટમ લોગો SVG બનાવીને અને તેને એમ્બેડ કરવામાં મદદ કરે છે, જેમાં આપોઆપ નેમસ્પેસ-સેફ સેનિറ്റાઇઝેશન (namespace-safe sanitisation) પણ થાય છે.
 

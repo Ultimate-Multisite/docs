@@ -3,7 +3,7 @@ title: Suvereenisen siirron varmistus
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Suvereenin siirron vahvistus {#sovereign-migration-verification}
+# Suvereenin siirron vahvistus
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 sisältää WP-CLI -vahvistuskomennot suvereenien vuokralaissiirroille. Käytä niitä, jos vuokralaisen siirto, SSO-vierailu tai erillinen asennus ei käyttäyty lainkaan odotetusti.
 

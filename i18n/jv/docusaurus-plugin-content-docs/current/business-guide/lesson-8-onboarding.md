@@ -3,7 +3,7 @@ title: 'Piwulang 8: Pangenalan Pelanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Piwulang 8: Onboarding Pelanggan {#lesson-8-customer-onboarding}
+# Piwulang 8: Onboarding Pelanggan
 
 Nggawe pelanggan ndhaptar kuwi mung separo gaweyan. Yen dheweke mlebu, rumangsa kebacut bingung, banjur ora bali maneh, sampeyan wis kelangan dheweke. Piwulang iki ngrancang pengalaman sing ngowahi signup anyar dadi pelanggan sing aktif lan melu.
 

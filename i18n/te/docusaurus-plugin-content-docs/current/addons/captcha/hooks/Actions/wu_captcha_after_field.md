@@ -4,7 +4,7 @@ title: Action - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# యాక్షన్: wu_captcha_after_field {#action-wucaptchaafterfield}
+# యాక్షన్: wu_captcha_after_field
 
 క్యాప్చా ఫీల్డ్ రెండర్ అయిన తర్వాత ఇది పనిచేస్తుంది.
 

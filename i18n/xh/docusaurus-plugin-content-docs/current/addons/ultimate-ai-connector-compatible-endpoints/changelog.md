@@ -3,7 +3,7 @@ title: Ingxelo yotshintsho ye-Ultimate AI Connector yeziphelo ezihambelanayo
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector yeZziphelo Ezihambelanayo Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector yeZziphelo Ezihambelanayo Changelog
 
 ## Version 2.0.0 — Ikhutshwe nge-2026-04-24 {#version-200--released-on-2026-04-24}
 

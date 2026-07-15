@@ -3,7 +3,7 @@ title: Миграция в режим на трета страна
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Миграция към режим на външни потребители (Third-Party Mode) {#third-party-mode-migration}
+# Миграция към режим на външни потребители (Third-Party Mode)
 
 Superdav AI Agent v1.12.0 променя начина, по който се обработват възможностите от трети страни (third-party abilities). **Режимът на външни потребители вече е зададен по подразбиране на "auto"**, което позволява интегриране на нативния WordPress Abilities API в WordPress 7.0+ без ръчна настройка.
 

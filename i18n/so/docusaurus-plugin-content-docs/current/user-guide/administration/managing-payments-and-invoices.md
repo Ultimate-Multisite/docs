@@ -3,7 +3,7 @@ title: Maareynta Lacagta iyo Faahfaahinta
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Maareyntaalka Lacagta iyo Faqrinta {#managing-payments-and-invoices}
+# Maareyntaalka Lacagta iyo Faqrinta
 
 ## Dejinta Dejinta Lacagta (Payment Settings) {#payment-settings}
 

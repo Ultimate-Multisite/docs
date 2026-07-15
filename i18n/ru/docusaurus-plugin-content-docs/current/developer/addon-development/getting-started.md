@@ -3,7 +3,7 @@ title: Начало работы с разработкой аддонов
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Разработка аддонов {#addon-development}
+# Разработка аддонов
 
 ## Структура аддона {#addon-structure}
 

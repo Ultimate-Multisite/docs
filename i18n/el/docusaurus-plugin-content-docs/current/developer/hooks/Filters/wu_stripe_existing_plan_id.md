@@ -4,7 +4,7 @@ title: Φίλτρο - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 Αυτό το φίλτρο ελέγχει το ID του πακέτου που πρέπει να ελεγχθεί. Αν αυτό το ID υπάρχει, η νέα συνδρομή θα χρησιμοποιήσει αυτό το πακέτο.
 

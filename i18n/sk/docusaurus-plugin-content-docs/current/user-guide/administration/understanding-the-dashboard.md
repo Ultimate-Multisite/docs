@@ -3,7 +3,7 @@ title: Zrozumenie panela
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Zrozumenie dashboardu Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Zrozumenie dashboardu Ultimate Multisite
 
 Pred tým, aby sme sa ponočili do pokročilejších možností konfigurácie a operačných aspektov Ultimate Multisite, pozrime sa na dashboard.
 

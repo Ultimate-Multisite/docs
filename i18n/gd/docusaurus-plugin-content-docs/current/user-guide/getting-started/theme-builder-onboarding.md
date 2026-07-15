@@ -3,7 +3,7 @@ title: Fhòcas a' chluainn Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow Onboarding Theme Builder {#theme-builder-onboarding-flow}
+# Flow Onboarding Theme Builder
 
 Superdav AI Agent v1.12.0 le sgaidhneachd **flow onboarding Theme Builder** a tha a' tuig an t-sgaidhneachadh theme ùr gu bhith agad air an uair atairtseach. Tha seo a' cur atharrachadh airson mode Site Builder a tha a' sealltain, agus a bhith a' chùcas air a' sgaidhneachd, a tha fòcasach air an agent.
 

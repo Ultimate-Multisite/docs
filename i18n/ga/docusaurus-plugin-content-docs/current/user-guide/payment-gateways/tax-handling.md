@@ -3,7 +3,7 @@ title: Láimhseáil Cánach
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Láimhseáil Cánach {#tax-handling}
+# Láimhseáil Cánach
 
 Tá modúl bailithe cánach ionsuite inár bpríomh-plugin ag Ultimate Multisite, mar sin má tá ort cánacha díolacháin a bhailiú ar do phleananna, pacáistí agus seirbhísí, is féidir leat é sin a dhéanamh go héasca gan dul i muinín aon add-ons a shuiteáil.
 

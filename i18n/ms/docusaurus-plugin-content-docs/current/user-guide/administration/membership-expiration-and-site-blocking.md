@@ -3,7 +3,7 @@ title: Tamat Tempoh Keahlian dan Pemblokiran Laman
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Tamat Tempoh Keahlian dan Pemblokiran Laman {#membership-expiration-and-site-blocking}
+# Tamat Tempoh Keahlian dan Pemblokiran Laman
 
 Panduan ini menerangkan cara Ultimate Multisite mengendalikan tamat tempoh keahlian, tamat tempoh percubaan, dan pemblokiran laman di bahagian hadapan (frontend). Ia meliputi kitaran hayat keahlian dari aktif hingga tamat tempoh, tetapan yang mengawal sama ada laman akan diblokir, dan perkara yang perlu diperiksa apabila laman masih boleh diakses selepas keahlian tamat tempoh.
 

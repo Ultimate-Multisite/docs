@@ -3,7 +3,7 @@ title: Ինչպե՞ս տեղադրել WordPress Multisite-ը
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite ဘယ်လို တင်ရမလဲ။ {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite ဘယ်လို တင်ရမလဲ။
 
 WordPress Multisite ဆိုတာ သင့်မှာရှိတဲ့ single installation တစ်ခုတည်းပေါ်မှာ စာမျက်နှာတွေရဲ့ network တစ်ခုကို ထားရှိနိုင်စေပါတယ်။ ဒါက built-in feature တစ်ခုဖြစ်ပေမယ့် ပုံမှန်အားဖြင့် အလုပ်လုပ်နေတာ မဟုတ်ပါဘူး။
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# ավելացնել վերջին սլashesը /wp-admin-ի համար {#add-a-trailing-slash-to-wp-admin}
+# ավելացնել վերջին սլashesը /wp-admin-ի համար
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

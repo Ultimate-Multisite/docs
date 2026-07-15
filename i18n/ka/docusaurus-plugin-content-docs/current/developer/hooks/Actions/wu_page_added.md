@@ -4,7 +4,7 @@ title: მოქმედება - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# მოქმედება: wu_page_added {#action-wupageadded}
+# მოქმედება: wu_page_added
 
 საშუალებას აძლევს plugin-ის დეველოპერებს, დამატებითი მოქმედებები გაუშვან, როდესაც გვერდები რეგისტრირდება.
 

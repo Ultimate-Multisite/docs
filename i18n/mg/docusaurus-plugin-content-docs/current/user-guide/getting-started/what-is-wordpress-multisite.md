@@ -3,7 +3,7 @@ title: Inona no WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Inona ny WordPress Multisite? {#what-is-wordpress-multisite}
+# Inona ny WordPress Multisite?
 
 Ao anatin'ny fototra (core) dia manome fitaovana iray antsoina hoe ‘Multisite’ ny WordPress, izay mamerina ny fiandohany tamin'ny 2010 rehefa nivoaka ny WordPress 3.0. Hatramin'izany dia nahazo fanavaozana maro izy mba hampidirana fepetra vaovao sy hanamafisana ny fiarovana.
 

@@ -3,7 +3,7 @@ title: 'Aralin 5: Pagpaplano ng Iyong mga Plano'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Aralin 5: Pagdidisenyo ng Iyong mga Plano {#lesson-5-designing-your-plans}
+# Aralin 5: Pagdidisenyo ng Iyong mga Plano
 
 Ang mga *plan tier* mo ay hindi lang basta mga antas ng presyo—ito ay repleksyon kung paano talaga nag-ooperate ang mga *niche* customer mo. Sa araling ito, magdidisenyo tayo ng mga *product tier* na tumutugma sa totoong pangangailangan ng mga *fitness business* sa iba't ibang yugto.
 

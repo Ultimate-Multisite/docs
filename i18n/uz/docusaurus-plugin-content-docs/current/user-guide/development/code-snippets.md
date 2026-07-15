@@ -3,7 +3,7 @@ title: Kod qismlari
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 uchun Kod Kesitlari {#code-snippets-for-v2}
+# v2 uchun Kod Kesitlari
 
 Asosiy qilib, **WordPress** uchun kod kesitlari ba'zi harakatlarni bajarish uchun ishlatiladi, bu esa boshqa bir maxsus kichik plugin talab qilishi mumkin. Bunday kod kesitlari WordPress yadrosining yoki temangizning (odatda `functions.php` fayli) bittasiga joylashtiriladi yoki MU plugin sifatida ham ishlatilishi mumkin.
 

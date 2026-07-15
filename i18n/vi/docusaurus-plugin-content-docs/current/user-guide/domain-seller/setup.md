@@ -3,7 +3,7 @@ title: Thiết lập và cấu hình nhà cung cấp
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Trình bán tên miền: Thiết lập và cấu hình nhà cung cấp {#domain-seller-setup-and-provider-configuration}
+# Trình bán tên miền: Thiết lập và cấu hình nhà cung cấp
 
 Tiện ích bổ sung Trình bán tên miền đi kèm một trình hướng dẫn thiết lập có chỉ dẫn, dẫn bạn qua mọi bước bắt buộc. Trang này trình bày luồng trình hướng dẫn và cách cấu hình hoặc cấu hình lại nhà cung cấp sau đó.
 

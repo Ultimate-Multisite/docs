@@ -4,7 +4,7 @@ title: Çalakî - wu_mcp_adapter_initialized
 sidebar_label: wu_mcp_adapter_initialized
 _i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
 ---
-# Çalakî: wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
+# Çalakî: wu_mcp_adapter_initialized
 
 Piştî ku adapterê MCP tê destpêkirin dixebite.
 

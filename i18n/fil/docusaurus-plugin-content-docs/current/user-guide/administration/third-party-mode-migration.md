@@ -3,7 +3,7 @@ title: Paglipat sa Third-Party Mode
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Paglipat sa Third-Party Mode {#third-party-mode-migration}
+# Paglipat sa Third-Party Mode
 
 Binabago ng Superdav AI Agent v1.12.0 ang paraan ng paghawak sa mga third-party abilities. **Ang third-party mode ay default na naka-auto ngayon**, na nagpapahintulot ng native WordPress Abilities API integration sa WordPress 7.0+ nang hindi na kailangan ng manual na pag-configure.
 

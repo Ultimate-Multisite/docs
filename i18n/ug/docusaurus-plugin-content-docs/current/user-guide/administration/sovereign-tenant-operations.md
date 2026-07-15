@@ -3,7 +3,7 @@ title: Hükümdar Kiracı Faaliyetleri
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# حاکمیت داشتن Tenant (Sovereign Tenant) عملياتleri {#sovereign-tenant-operations}
+# حاکمیت داشتن Tenant (Sovereign Tenant) عملياتleri
 
 Ultimate Multisite: Multi-Tenancy 1.2.0، حاکمیتli tenant'ler için operasyonel araçlar ekledi: bu alt siteler kendi veritabanılarına، dosya sistemi köklerine ve yönlendirme bağlamına sahip olurken, ağ yöneticisinden görünmeye devam ederler.
 

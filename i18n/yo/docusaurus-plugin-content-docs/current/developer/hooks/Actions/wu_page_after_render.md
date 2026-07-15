@@ -4,7 +4,7 @@ title: Ìṣe - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Ìṣe: wu_page_after_render {#action-wupageafterrender}
+# Ìṣe: wu_page_after_render
 
 Fàyè gba àwọn olùgbéejáde àfikún láti ṣàfikún àkóónú míì lẹ́yìn tí a bá tẹ ojúewé náà jáde
 

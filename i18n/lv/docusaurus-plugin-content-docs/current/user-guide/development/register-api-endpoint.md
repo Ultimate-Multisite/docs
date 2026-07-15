@@ -3,7 +3,7 @@ title: Reģistrēt API galvenkoju
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API galvenis Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API galvenis Ultimate Multisite
 
 Šajā instrukcijā jūs iepaziniete, kā izmantot Ultimate Multisite /register API galveni, lai veicētu visu uzsākšanas procesu jaunam klientam savā tīklā un kā to darīt ar Zapieru.
 

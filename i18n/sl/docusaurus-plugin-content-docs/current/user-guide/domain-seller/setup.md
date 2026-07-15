@@ -3,7 +3,7 @@ title: Nastavitve in konfiguracija ponudnika
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodajalec domen: Postavitev in konfiguracija ponudnikov {#domain-seller-setup-and-provider-configuration}
+# Prodajalec domen: Postavitev in konfiguracija ponudnikov
 
 Dodatek Domain Seller prinaša s vodnikom za postavo, ki vas vodi skozi vsak nujno korak. Ta stran pokriva tok vodnika in kako konfigurirati ali ponovno konfigurirati ponudnike po tem.
 

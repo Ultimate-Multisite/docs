@@ -3,7 +3,7 @@ title: Fiombonana
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ahoana amin'ny Fidirana ao amin'ny Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# Ahoana amin'ny Fidirana ao amin'ny Ultimate Multisite Community
 
 Ny Ultimate Multisite Community dia toerana ahafahanao mifandray amin'ny mpampiasa Ultimate Multisite hafa ary mizara torohevitra, traikefa ary zavatra maro hafa. Raha te miditra ao amin'ny Ultimate Multisite Community ianao dia mandehin'ny rohy mankany https://community.ultimatemultisite.com/home.
 

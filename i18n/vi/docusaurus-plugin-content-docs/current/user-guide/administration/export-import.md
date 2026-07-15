@@ -3,7 +3,7 @@ title: Xuất & Nhập
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Xuất & Nhập {#export--import}
+# Xuất & Nhập
 
 Ultimate Multisite 2.9.0 bổ sung công cụ **Xuất & Nhập** dành cho trang đơn dưới mục **Tools > Export & Import**. Bạn nên sử dụng công cụ này khi cần đóng gói một trang WordPress thành tệp ZIP, khôi phục từ tệp ZIP đó, hoặc di chuyển một trang giữa các cài đặt WordPress Ultimate Multisite và trang đơn tương thích.
 

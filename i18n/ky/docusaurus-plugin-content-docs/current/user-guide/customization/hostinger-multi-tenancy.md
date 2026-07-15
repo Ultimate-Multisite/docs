@@ -3,7 +3,7 @@ title: Hostinger көп ишеلدүүлүк
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 дода калтыр (Multi-Tenancy) функциясын кошуп турат, бул хостун домендерди бардык өзгөчөлүү арендачылар (tenant) менен бирге башкарууга мүмкүндүк берет, ошондой эле мурунку Hostinger домен картасы интеграциясы менен бирге.
 

@@ -3,7 +3,7 @@ title: ניהול תשלומים וחשבוניות
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ניהול תשלומים וחשבוניות {#managing-payments-and-invoices}
+# ניהול תשלומים וחשבוניות
 
 ## הגדרות תשלום {#payment-settings}
 

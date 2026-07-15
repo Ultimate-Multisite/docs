@@ -3,7 +3,7 @@ title: Referensi Kemampuan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referensi Abilities {#abilities-reference}
+# Referensi Abilities
 
 Abilities adalah aksi atomik yang dapat dipanggil oleh Gratis AI Agent pada instalasi WordPress Anda. Setiap ability adalah class PHP terdaftar yang mengekspos skema JSON — agent membaca skema ini saat runtime untuk memahami parameter apa yang diperlukan dan apa yang dikembalikan oleh ability tersebut.
 

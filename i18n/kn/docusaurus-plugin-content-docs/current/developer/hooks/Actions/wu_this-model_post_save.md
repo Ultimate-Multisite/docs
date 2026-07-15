@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
+# Action: wu_\{$this->model\}_post_save
 
 ಒಂದು ಆಬ್ಜೆಕ್ಟ್ (object) ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ಸ್ಟೋರ್ ಆದ ನಂತರ ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
 

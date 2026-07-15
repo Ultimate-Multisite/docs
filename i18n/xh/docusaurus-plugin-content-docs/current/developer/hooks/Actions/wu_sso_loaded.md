@@ -4,7 +4,7 @@ title: Isenzo - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Isenzo: wu_sso_loaded {#action-wussoloaded}
+# Isenzo: wu_sso_loaded
 
 Vumela abaphuhlisi be-plugin bongeze ii-hook ezongezelelekileyo, ukuba ziyafuneka.
 

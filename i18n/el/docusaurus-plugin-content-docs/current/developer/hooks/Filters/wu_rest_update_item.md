@@ -4,7 +4,7 @@ title: Filter - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Φίλτρο: wu_rest_update_item {#filter-wurestupdateitem}
+# Φίλτρο: wu_rest_update_item
 
 Ελέγχει αν επιτρέπεται η συνέχιση του αιτήματος ή όχι.
 

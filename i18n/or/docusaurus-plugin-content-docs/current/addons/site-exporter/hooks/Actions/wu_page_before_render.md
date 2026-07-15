@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# କାର୍ଯ୍ୟ: wu_page_before_render {#action-wupagebeforerender}
+# କାର୍ଯ୍ୟ: wu_page_before_render
 
 ପୃଷ୍ଠା ରେଣ୍ଡର୍ ହେବା ପୂର୍ବରୁ ଚାଲେ।
 

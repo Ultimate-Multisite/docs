@@ -3,7 +3,7 @@ title: Instalace Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalace Ultimate Multisite {#installing-ultimate-multisite}
+# Instalace Ultimate Multisite
 
 :::note
 Tento návod předpokládá, že máte již nainstalovaný a nakonfigurovaný WordPress Multisite. Chcete-li se dozvědět, jak na to, podívejte se na [tento tutoriál](https://www.wpbeginner.com/glossary/multisite/) od WP Beginner.

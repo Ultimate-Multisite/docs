@@ -3,7 +3,7 @@ title: دومېن ساتقۇچى ئۆزگىرىش خاتىرىسى
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller ئۆزگىرىش خاتىرىسى {#domain-seller-changelog}
+# Domain Seller ئۆزگىرىش خاتىرىسى
 
 Version 1.3.0 - 2026-06-02 دە ئېلان قىلىندى
 - يېڭى: HostAfrica ساتقۇچى قالدۇقى بەك تۆۋەنلەپ كەتكەندە network-admin ئاگاھلاندۇرۇشى قوشۇلدى

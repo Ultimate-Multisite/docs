@@ -3,7 +3,7 @@ title: Üçüncü Tərəf Rejimində Miqrasiya
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Üçüncü Tərəf Rejimi Keçidləri {#third-party-mode-migration}
+# Üçüncü Tərəf Rejimi Keçidləri
 
 Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə idarə olunduğunu dəyişir. **Üçüncü tərəf rejimi indi avtomatikə keçir**, bu da WordPress 7.0+ versiyalarında əl ilə konfiqurasiya etmədən yerli WordPress Abilities API inteqrasiyasına imkan verir.
 

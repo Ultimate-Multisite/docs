@@ -3,7 +3,7 @@ title: Amabwiriza yo gukoresha Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Imfashanyigisho yo Gukoresha Hooks {#hooks-usage-guide}
+# Imfashanyigisho yo Gukoresha Hooks
 
 Ultimate Multisite itanga action hooks zirenga 200 na filter hooks zirenga 280. Uru rupapuro rusobanura hooks zikoreshwa cyane hamwe n’ingero zifatika. Ku rutonde rwuzuye rwakozwe mu buryo bwikora, reba izindi paji ziri muri iki gice.
 

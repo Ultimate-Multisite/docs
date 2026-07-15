@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# ක්‍රියාව: wu_captcha_after_field {#action-wucaptchaafterfield}
+# ක්‍රියාව: wu_captcha_after_field
 
 captcha ක්ෂේත්‍රය රෙන්ඩර් කළ පසු ක්‍රියාත්මක වේ.
 

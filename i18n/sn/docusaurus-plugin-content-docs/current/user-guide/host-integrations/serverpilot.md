@@ -3,7 +3,7 @@ title: Kugadzirwa neServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integration ya ServerPilot {#serverpilot-integration}
+# Integration ya ServerPilot
 
 ## Zvinodi (Overview) {#overview}
 ServerPilot ndiri service yakachengeta kune ku-host WordPress uye websites dzine PHP pa servers dzinogadzirwa neDigitalOcean, Amazon, Google, kana server provider wose. Integration iyi inopa kuratidza domain syncing nekugadzirisa SSL certificate zvakaita kuti Ultimate Multisite uye ServerPilot zvinogara zvakanaka.

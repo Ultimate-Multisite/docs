@@ -4,7 +4,7 @@ title: Tace - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Tacewa: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Tacewa: wu_checkout_validation_aliases
 
 Ba masu haɓaka plugin damar ƙara aliases na musamman a cikin mai tabbatar da form.
 

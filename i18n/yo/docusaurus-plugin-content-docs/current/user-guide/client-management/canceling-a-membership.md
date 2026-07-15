@@ -3,7 +3,7 @@ title: Fífagilé Ìjẹ́ Ọmọ Ẹgbẹ́
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Fifagilé Ọmọ-ẹgbẹ kan (v2) {#canceling-a-membership-v2}
+# Fifagilé Ọmọ-ẹgbẹ kan (v2)
 
 _**AKIYESI PATAKI: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀yà 2.x.**_
 

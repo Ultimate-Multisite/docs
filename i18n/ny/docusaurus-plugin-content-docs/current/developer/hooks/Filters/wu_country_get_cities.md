@@ -4,7 +4,7 @@ title: Fyuluta - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Fyuluta: wu_country_get_cities {#filter-wucountrygetcities}
+# Fyuluta: wu_country_get_cities
 
 Imabweza mndandanda wa mizinda ya chigawo m'dziko.
 

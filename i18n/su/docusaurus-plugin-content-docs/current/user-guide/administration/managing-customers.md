@@ -3,7 +3,7 @@ title: Ngatur Pelanggan
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Ngelola Pelanggan {#managing-customers}
+# Ngelola Pelanggan
 
 Halaman **Customers** nungekeun daftar anggota anu geus daék terdaftar di jaringan anjeun. Halaman ieu nampilkeun informasi dasar pangawasa, kaasup ngaran, alamat email, waktu login pamungkas, jeung tautan **switch to** anu ngajak anjeun *login* ka subsit anjeun salaku administrator situs.
 

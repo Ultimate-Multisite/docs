@@ -3,7 +3,7 @@ title: Jounal chanjman Ekspòtatè Sit
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Chanjman Site Exporter {#site-exporter-changelog}
+# Chanjman Site Exporter
 
 Vèsyon: 1.0.6 - Lage nan dat 2026-05-11
 * Nouvo: Ekspòtasyon sit yo kounye a mete ansanm yon index.php ki demare pou kont li pou ZIP la ka enstale sou yon nouvo host san yon enstalasyon plugin apa

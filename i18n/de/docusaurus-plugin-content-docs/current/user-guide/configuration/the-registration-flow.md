@@ -3,7 +3,7 @@ title: Der Registrierungsablauf
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Der Registrierungsablauf (v2) {#the-registration-flow-v2}
+# Der Registrierungsablauf (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

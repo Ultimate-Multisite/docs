@@ -4,7 +4,7 @@ title: 'Pansala - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# Filter: wu_\{$id\}_form_fields
 
 Sinasala ang mga field sa isang form. Natutukoy ang form sa pamamagitan ng ID sa pangalan ng filter.
 

@@ -3,7 +3,7 @@ title: Ilogi yeenguqu ze-GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Ingxelo yotshintsho yeGoCardless {#gocardless-changelog}
+# Ingxelo yotshintsho yeGoCardless
 
 Inguqulelo: 1.0.3 - Ikhutshwe nge-2026-05-05
 * Ukulungisa: iziza ezilindileyo ezishiyekileyo ngoku ziyacocwa xa ubulungu beGoCardless burhoxisiwe ngoxa bukwimeko yokulinda okanye yokubanjwa

@@ -3,7 +3,7 @@ title: Belgekirina Pêşvebiran
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Belgekirina Pêşdebir {#developer-documentation}
+# Belgekirina Pêşdebir
 
 Ev rêber ji pêşdebir re her tiştê pêwîst dide da ku bi Ultimate Multisite re yek bike, wê fireh bike, an pêvekên wê pêş bixe. Ultimate Multisite toreke WordPress Multisite vediguhere platformeke Malper-wekî-Xizmet (WaaS).
 

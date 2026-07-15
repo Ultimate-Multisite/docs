@@ -3,7 +3,7 @@ title: የለውጦች መዝገብ
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# የለውጦች መዝገብ {#changelog}
+# የለውጦች መዝገብ
 
 ## 1.18.0 — በ2026-06-29 ተለቋል {#1180--released-on-2026-06-29}
 

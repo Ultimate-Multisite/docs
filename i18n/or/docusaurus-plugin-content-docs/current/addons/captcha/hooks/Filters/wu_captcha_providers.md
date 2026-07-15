@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# Filter: wu_captcha_providers {#filter-wucaptchaproviders}
+# Filter: wu_captcha_providers
 
 ଉପଲବ୍ଧ captcha ପ୍ରଦାତାମାନଙ୍କୁ ଛାଣନ୍ତୁ।
 

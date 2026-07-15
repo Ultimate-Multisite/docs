@@ -4,25 +4,25 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Documentazione {#ultimate-multisite-documentation}
+# Ultimate Multisite Documentazione
 
 Welcome to the Ultimate Multisite documentation. Ultimate Multisite transforms WordPress Multisite into a full Website as a Service (WaaS) platform.
 
-## Documentation Sections {#documentation-sections}
+## Sezioni della documentazione {#documentation-sections}
 
-### [User Guide](/user-guide/getting-started/ultimate-multisite-101) {#user-guide}
+### [Guida utente](/user-guide/getting-started/ultimate-multisite-101) {#user-guide}
 
 Everything you need to set up, configure, and manage your WaaS platform. Covers installation, payment gateways, domain mapping, client management, and more.
 
-### [Developer Documentation](/developer/hooks) {#developer-documentation}
+### [Documentazione per sviluppatori](/developer/hooks) {#developer-documentation}
 
 Technical reference for developers building on Ultimate Multisite. Includes hooks reference, REST API documentation, and addon development guides.
 
-### [Addons](/addons) {#addons}
+### [Componenti aggiuntivi](/addons) {#addons}
 
 Documentation for paid addon plugins that extend Ultimate Multisite with additional features like WooCommerce integration, analytics, domain selling, and more.
 
-## Getting Help {#getting-help}
+## Ottenere aiuto {#getting-help}
 
 - [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) -- Ask questions and share ideas
 - [GitHub Issues](https://github.com/Ultimate-Multisite/ultimate-multisite/issues) -- Report bugs

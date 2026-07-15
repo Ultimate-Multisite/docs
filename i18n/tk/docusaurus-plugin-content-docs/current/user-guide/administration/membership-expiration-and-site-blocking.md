@@ -3,7 +3,7 @@ title: Üylygyň Siziň we Saytynyň Bloklanmagy
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Üylygyň Siziň Site-iňizi Bloklanmagy we Aýrylmagy {#membership-expiration-and-site-blocking}
+# Üylygyň Siziň Site-iňizi Bloklanmagy we Aýrylmagy
 
 Bu guralda Ultimate Multisite-y üye bolanlaryň yşaýaýyşyny, synanyş wagtyny we önümçü site-leri bloklamagy nädip dolandyrýandygyny düşündirip berýär. Üye bolmagyň jikme-jik döwrüni (faizdan ýaşyllykdan aýrylmaga çenli), site-ler bloklanmaly we bloklanmasa, we üye bolmagyň aýrylmagyndan soň hem site-ler nädip girip biljekdigini kontrol etmeli zatlary bu guralda görkezilendir.
 

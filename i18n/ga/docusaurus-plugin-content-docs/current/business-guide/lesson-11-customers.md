@@ -3,7 +3,7 @@ title: 'Ceacht 11: Custaiméirí a aimsiú'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Ceacht 11: Custaiméirí a Aimsiú {#lesson-11-finding-customers}
+# Ceacht 11: Custaiméirí a Aimsiú
 
 Níl in ardán iontach gan chustaiméirí ach caitheamh aimsire. Clúdaíonn an ceacht seo conas custaiméirí a fháil i nideoige ingearach -- straitéisí a oibríonn go sonrach toisc go bhfuil tú dírithe ar thionscal amháin.
 

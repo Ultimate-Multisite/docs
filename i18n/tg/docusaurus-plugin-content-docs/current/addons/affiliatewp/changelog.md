@@ -3,7 +3,7 @@ title: Тағйирномаи AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Таърихи тағйироти AffiliateWP {#affiliatewp-changelog}
+# Таърихи тағйироти AffiliateWP
 
 Версия: 2.0.1 - Нашр шуд дар 2025-09-28
 

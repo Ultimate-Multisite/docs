@@ -3,9 +3,9 @@ title: Eklenti Şablonu
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Eklenti Şablonu {#addon-template}
+# Eklenti Şablonu
 
-{{ADDON_DESCRIPTION}}
+Eklenti Şablonu — Ultimate Multisite.
 
 ## Gereksinimler {#requirements}
 

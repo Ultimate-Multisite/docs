@@ -4,7 +4,7 @@ title: Iragazkia - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Iragazkia: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Iragazkia: wu_should_create_domain_record_for_site
 
 Ultimate Multisite-k sortu berri den gune baterako domeinu-erregistro bat sortu behar duen iragazten du.
 

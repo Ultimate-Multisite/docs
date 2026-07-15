@@ -3,7 +3,7 @@ title: Mamenyu eKugamuchira Vaenzi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Mamenu eHospitality {#hospitality-menus}
+# Mamenu eHospitality
 
 Chinhu che **Hospitality Menus** chinobvumira Theme Builder kugadzira nekupinza mapeji emenu yezvokudya nezvinwiwa ane chimiro chakarongwa zvakananga muWordPress site yako.
 

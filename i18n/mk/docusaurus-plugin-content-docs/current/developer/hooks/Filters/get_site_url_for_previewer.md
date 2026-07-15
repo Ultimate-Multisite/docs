@@ -4,7 +4,7 @@ title: Филтер - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Филтер: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Филтер: get_site_url_for_previewer
 
 Им овозможува на развивачите на plugin да го филтрираат URL што се користи во прегледувачот
 

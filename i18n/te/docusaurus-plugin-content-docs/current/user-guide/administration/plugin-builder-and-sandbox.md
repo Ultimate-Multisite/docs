@@ -3,7 +3,7 @@ title: ప్లగిన్ బిల్డర్ & శాండ్‌బాక
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 ద్వారా **Plugin Builder & Sandbox System** అందుబాటులోకి వచ్చింది. ఇది AI అసిస్టెంట్‌కు మీ నెట్‌వర్క్‌లో WordPress plugins ను రూపొందించడానికి, యాక్టివేట్ చేయడానికి మరియు నిర్వహించడానికి వీలు కల్పిస్తుంది — అంతా ఒక సురక్షితమైన, ఐసోలేటెడ్ sandbox వాతావరణం ద్వారా.
 

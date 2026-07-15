@@ -3,7 +3,7 @@ title: 自訂您的註冊表單
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# 自訂你的註冊表單 {#customizing-your-registration-form}
+# 自訂你的註冊表單
 
 為了讓你的網路看起來有別於所有其他建立在 WordPress 平台上的 SaaS，Ultimate Multisite 允許你使用我們的 **Checkout Forms** 功能自訂你的註冊與登入頁面。
 

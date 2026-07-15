@@ -3,7 +3,7 @@ title: Hestia Vezérlőpult Integráció
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel integráció {#hestia-control-panel-integration}
+# Hestia Control Panel integráció
 
 Ez az útmutató bemutatja, hogyan konfigurálhatod az Ultimate Multisite Hestia integrációt, hogy a hálózatodban hozzárendelt domainek automatikusan hozzáadódjanak (és törlődjenek) Web Domain Alias-ként a Hestiában.
 

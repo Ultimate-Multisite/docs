@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite плагини WordPress-истеъмол аст, ки ба шумо имконият медиҳад, ки WaaS ё Websites as a Service (Услубҳои вебсайтҳо) ба муштабирён пешниҳод кунед. Пеш аз он ки мо ба ин масъалаҳо ворид шавем ва бидонем ки Ultimate Multisite чӣ тавр метавонад ба коркарди бизнес ва муштабиро кӯмак кунад, бояд ба маълумоти асосӣ расонем.
 

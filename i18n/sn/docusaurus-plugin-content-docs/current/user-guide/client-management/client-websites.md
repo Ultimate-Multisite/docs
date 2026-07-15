@@ -3,7 +3,7 @@ title: Maviri ekuzara
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Websites Vachikwa Vechikondiwe (v2) {#your-clients-websites-v2}
+# Websites Vachikwa Vechikondiwe (v2)
 
 Panda kuingira mweya wenyu munzvimbo yenyu, vachikondiwa vana vachangopara kuona dashboard yavo.
 

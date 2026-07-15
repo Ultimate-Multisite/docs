@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 이 플랜에서 주어진 폼 유형이 허용되는지 확인합니다. 플러그인 개발자는 반환 값을 필터링할 수 있습니다.
 

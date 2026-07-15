@@ -3,7 +3,7 @@ title: ''
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress 멀티사이트란? {#what-is-wordpress-multisite}
+# WordPress 멀티사이트란?
 
 WordPress의 핵심 기능 중 하나인 ‘멀티사이트’는 2010년 WordPress 3.0 출시와 함께 시작되었습니다. 이후 여러 개의 기능을 도입하고 보안을 강화하기 위한 수많은 개정이 이루어졌습니다.
 

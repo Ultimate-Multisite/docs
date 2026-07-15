@@ -4,7 +4,7 @@ title: តម្រង - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# តម្រង: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# តម្រង: wu_checkout_field_templates
 
 API របស់យើងសម្រាប់បន្ថែមគំរូវាលថ្មី ភ្ជាប់ចូលទីនេះ។
 

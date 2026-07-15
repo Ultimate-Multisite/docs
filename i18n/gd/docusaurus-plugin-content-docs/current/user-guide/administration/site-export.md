@@ -3,7 +3,7 @@ title: Eaith an site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exporta an Site {#site-export}
+# Exporta an Site
 
 A page admin a che **Site Export** leit a adminan na ngrathdachadh un site, no an tate a gortein a chùl don fhaighinn airson coimbeartachd, coimbeartachd, no sealladh.
 

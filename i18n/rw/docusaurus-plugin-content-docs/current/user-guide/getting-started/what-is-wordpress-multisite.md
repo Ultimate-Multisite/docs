@@ -3,7 +3,7 @@ title: WordPress Multisite ni iki?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Uburyo w WordPress Multisite? {#what-is-wordpress-multisite}
+# Uburyo w WordPress Multisite?
 
 Mu gihe y'ukozi (core), WordPress yituma uburyo rwa ritewe ry'igice cyo gitwa ku 2010 mu gihe y'umukono wa WordPress 3.0. Kugeza uyu munsi, yitwa n'uburyo bishobora gushyiramo ibintu bishya kandi bikorera ubwumvikane bw'ubwumvikane (security).
 

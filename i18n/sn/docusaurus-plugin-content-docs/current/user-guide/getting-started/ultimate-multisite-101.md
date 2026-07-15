@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite ndiyo plugin ya WordPress inotenda kuweze kukupa WaaS kana Websites as a Service kune vakijuzi. Pasi ticishandisa uye kuti tinzwire sei Ultimate Multisite inogona kuita zvinhu kwemudzidzi wako nevanhu vakaro, kuna kuteerera kunzwire kunoita zvinhu zvakakosha zvinotarisirwa.
 

@@ -4,7 +4,7 @@ title: Filter - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Filter: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
+# Filter: wu_site_list_get_bulk_actions
 
 સાઇટ્સ માટે ઉપલબ્ધ બલ્ક એક્શન્સને ફિલ્ટર કરવા માટે વપરાય છે.
 

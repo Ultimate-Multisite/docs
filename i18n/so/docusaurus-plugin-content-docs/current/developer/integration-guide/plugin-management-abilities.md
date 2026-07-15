@@ -3,7 +3,7 @@ title: Awoodaha Maamulka Plugin-ka
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Awoodaha Maamulka Fidinnada {#plugin-management-abilities}
+# Awoodaha Maamulka Fidinnada
 
 Gratis AI Agent v1.5.0 wuxuu la yimaadaa **7 awoodood oo maamulka fidinnada ah** oo AI kaaliyuhu adeegsan karo inta lagu jiro wada hadal. Awoodahani waxay bixiyaan xakameyn barnaamijeed oo lagu maamulo fidinnada WordPress ee lagu rakibay [Nidaamka Dhisaha Fidinnada & Goobta Tijaabada](../../user-guide/administration/plugin-builder-and-sandbox).
 

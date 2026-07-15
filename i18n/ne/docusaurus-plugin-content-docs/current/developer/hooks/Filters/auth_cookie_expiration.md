@@ -4,7 +4,7 @@ title: फिल्टर - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# फिल्टर: auth_cookie_expiration {#filter-authcookieexpiration}
+# फिल्टर: auth_cookie_expiration
 
 प्रमाणीकरण cookie समाप्ति अवधिको अवधि फिल्टर गर्छ।
 

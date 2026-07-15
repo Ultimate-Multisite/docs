@@ -3,7 +3,7 @@ title: Referenca za hookove
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referenca hookova {#hooks-reference}
+# Referenca hookova
 
 Automatski generisana dokumentacija za svih **59 akcija** i **118 filtera** u Ultimate Multisite.
 

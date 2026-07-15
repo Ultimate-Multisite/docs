@@ -4,7 +4,7 @@ title: Filtru - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Filtru: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Filtru: wu_current_set_customer
 
 Permite dezvoltatorilor să modifice comportamentul implicit și să stabilească alt client ca fiind cel curent.
 

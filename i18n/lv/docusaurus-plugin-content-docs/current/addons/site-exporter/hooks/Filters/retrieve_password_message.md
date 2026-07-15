@@ -4,7 +4,7 @@ title: Filtrs - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtrs: retrieve_password_message {#filter-retrievepasswordmessage}
+# Filtrs: retrieve_password_message
 
 Filtrē paroles atiestatīšanas e-pasta ziņojuma pamattekstu.
 

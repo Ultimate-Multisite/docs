@@ -3,7 +3,7 @@ title: Shigarwar Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Shigarwarin Hestia Control Panel Integration {#hestia-control-panel-integration}
+# Shigarwarin Hestia Control Panel Integration
 
 Wannan hanyar taƙaitaccen bayani ne game da yadda ake tsara shigarwar Ultimate Multisite Hestia don a ƙara (da kuma cire) domain-dangi masu haske a gida ɗinku a matsayin Web Domain Aliases a cikin Hestia.
 

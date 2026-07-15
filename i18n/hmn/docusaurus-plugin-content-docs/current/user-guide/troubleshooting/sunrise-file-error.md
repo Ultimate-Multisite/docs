@@ -3,7 +3,7 @@ title: Lwm txai txhua lub fil buj
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Error Installing the Sunrise File {#error-installing-the-sunrise-file}
+# Error Installing the Sunrise File
 
 ไฟล์ sunrise.php เป็นไฟล์พิเศษที่ WordPress ใช้อ่านตอนที่มันเริ่มทำงาน (bootstraps). ໃຫ້ WordPress ສາມາດຊອກຫາ file ນີ້ໄດ້, ມັນຕ້ອງຢູ່ພາຍໃນ **wp-content folder**.
 

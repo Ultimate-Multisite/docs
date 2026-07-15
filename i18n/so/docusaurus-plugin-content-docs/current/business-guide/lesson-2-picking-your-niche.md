@@ -3,7 +3,7 @@ title: 'Casharka 2: Doorashada takhasuskaaga'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Casharka 2: Doorashada Niche-kaaga {#lesson-2-picking-your-niche}
+# Casharka 2: Doorashada Niche-kaaga
 
 Casharka 1 waxaan ku caddaynay sababta niche uu uga fiican yahay wax guud. Hadda waxaad u baahan tahay inaad doorato kaaga. Casharkani wuxuu ku siinayaa qaab-dhismeed aad ku heli karto kuna xaqiijin karto niche ka hor intaadan waqti gelin dhisiddiisa.
 

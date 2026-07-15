@@ -3,7 +3,7 @@ title: የቅንብሮች ማጣቀሻ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# የቅንብሮች ማጣቀሻ {#settings-reference}
+# የቅንብሮች ማጣቀሻ
 
 ይህ ገጽ የዕለት-ተዕለት አስተዳደርን እና በUltimate Multisite ውስጥ ያሉ የቅርብ ጊዜ የባህሪ ለውጦችን የሚነኩ ቅንብሮችን ይከታተላል።
 

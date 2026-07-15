@@ -4,7 +4,7 @@ title: عمل - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# کړنه: wu_page_before_render {#action-wupagebeforerender}
+# کړنه: wu_page_before_render
 
 plugin جوړوونکو ته اجازه ورکوي چې مخکې له دې چې موږ پاڼه چاپ کړو، اضافي منځپانګه ورزیاته کړي.
 

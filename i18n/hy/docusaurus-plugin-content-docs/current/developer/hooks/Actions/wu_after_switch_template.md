@@ -4,7 +4,7 @@ title: Գործողություն - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Գործողություն՝ wu_after_switch_template {#action-wuafterswitchtemplate}
+# Գործողություն՝ wu_after_switch_template
 
 Թույլ է տալիս ընդլայնումների մշակողներին միացնել ֆունկցիաներ այն բանից հետո, երբ օգտատերը կամ super admin-ը փոխում է կայքի ձևանմուշը
 

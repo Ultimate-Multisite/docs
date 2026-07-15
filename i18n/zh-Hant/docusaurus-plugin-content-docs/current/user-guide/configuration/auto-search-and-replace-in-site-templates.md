@@ -3,7 +3,7 @@ title: 在 Site Templates 中自動搜尋與取代
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# 網站範本中的自動搜尋與取代（v2） {#auto-search-and-replace-in-site-templates-v2}
+# 網站範本中的自動搜尋與取代（v2）
 
 _**本教學需要 WP UItimo 2.x 版本。**_
 

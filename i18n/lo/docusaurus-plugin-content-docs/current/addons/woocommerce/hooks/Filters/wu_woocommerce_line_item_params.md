@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# ຕົວກັ່ນຕອງ: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# ຕົວກັ່ນຕອງ: wu_woocommerce_line_item_params
 
 ກັ່ນຕອງພາຣາມິເຕີທີ່ໃຊ້ເພື່ອສ້າງລາຍການແຖວໃນກະຕ່າ WooCommerce, ກ່ອນຈະປ່ຽນທິດທາງລູກຄ້າໄປຫາໜ້າຊຳລະເງິນຂອງ WooCommerce.
 

@@ -3,7 +3,7 @@ title: Kōrero Whakaaro-Awhi
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kōrero Whakaaro o te Theme {#theme-aware-skills}
+# Kōrero Whakaaro o te Theme
 
 Superdav AI Agent v1.10.0 e whero au ngā takawaahi hou mō te theme-aware skills (kōrero-whakaaro o te theme) i te whakamahinga, i te whai ake i te WordPress theme o koe. Ko ngā skills ei whakaatu i whakamahi manuia me ngā kaha whakahou kua whakatika ki te arhitektura me ngā āhuatanga o tō theme.
 

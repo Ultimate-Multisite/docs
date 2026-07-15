@@ -3,7 +3,7 @@ title: Hur man avbryter en prenumeration
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hur avbryter jag mitt abonnemang? {#how-can-i-cancel-my-subscription}
+# Hur avbryter jag mitt abonnemang?
 
 Om du har en Ultimate Multisite-licens kan du när som helst avbryta förnyelsen. Följ bara stegen nedan:
 

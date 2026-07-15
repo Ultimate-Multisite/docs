@@ -4,7 +4,7 @@ title: Ìṣe - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Iṣe: wu_magic_link_login {#action-wumagiclinklogin}
+# Iṣe: wu_magic_link_login
 
 N ṣiṣẹ lẹhin ti olumulo kan wọle nipasẹ magic link.
 

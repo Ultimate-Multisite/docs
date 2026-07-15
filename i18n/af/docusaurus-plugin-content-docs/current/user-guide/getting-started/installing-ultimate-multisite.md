@@ -3,7 +3,7 @@ title: Die installering van Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Die installering van Ultimate Multisite {#installing-ultimate-multisite}
+# Die installering van Ultimate Multisite
 
 :::note
 Hierdie tutoriaal gaan daarvan uit dat jy reeds WordPress Multisite geïnstalleer en gekonfigureer het. Om te leer hoe, kyk na [hierdie tutoriaal](https://www.wpbeginner.com/glossary/multisite/) deur WP Beginner.

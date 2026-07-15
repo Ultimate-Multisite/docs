@@ -3,7 +3,7 @@ title: 'Lição 7: Torná-lo seu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lição 7: Torná-lo Seu {#lesson-7-making-it-yours}
+# Lição 7: Torná-lo Seu
 
 Os seus clientes nunca devem sentir que estão a usar "algum plugin WordPress." Devem sentir que estão a usar FitSite -- uma plataforma criada para o seu setor. Esta lição aborda branding, white-labeling e como fazer a plataforma parecer um produto.
 

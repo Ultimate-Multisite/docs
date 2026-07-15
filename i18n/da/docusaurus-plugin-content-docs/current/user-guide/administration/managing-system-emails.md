@@ -3,7 +3,7 @@ title: Håndtering af systeme-e-mails
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Administrering systemmails {#managing-system-emails}
+# Administrering systemmails
 
 Ultimate Multisite sender forskellige systemmails til begivenheder som sign-up bekræftelser, betalingskvitteringer og medlemsændringer. Du kan tilpasse disse e-mail skabeloner for at matche dit brand.
 

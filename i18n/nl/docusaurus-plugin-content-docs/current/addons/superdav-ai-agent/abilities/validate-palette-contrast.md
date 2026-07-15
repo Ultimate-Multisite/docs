@@ -3,7 +3,7 @@ title: Valideer paletcontrast
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Controleer Paletcontrast {#validate-palette-contrast}
+# Controleer Paletcontrast
 
 De functionaliteit **Controleer Paletcontrast** controleert kleurparen in uw ontwerppalet op naleving van WCAG (Web Content Accessibility Guidelines) voordat ze worden toegepast op uw thema.
 

@@ -3,7 +3,7 @@ title: Ra'ayoyin Abokan Ciniki da Bincike Game da Matakai
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Shaidar da Abubuwan Aminta da Bincike Masu Musamman {#customer-feedback--issue-reporting}
+# Shaidar da Abubuwan Aminta da Bincike Masu Musamman
 
 Gratis AI Agent v1.5.0 yana kafa tsarin samun ra'ayoyi da bincike masubbar wanda ke ba masu amfani ƙarshe damar bayyana amsa ba ce mai kyau ko kuma yin tururan matsaloli kai tsaye daga interface na tattaunawa. Wannan tsari yana nuna sarrafa izinin samun ra'ayoyi, umarni bincike na ma'aikata (automated reporting command), da kuma tsare-tsaren bincike ta AI a bayan wajen gudanarwa.
 

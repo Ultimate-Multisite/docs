@@ -3,7 +3,7 @@ title: 能力可見性
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# 權能可見性 {#ability-visibility}
+# 權能可見性
 
 Superdav AI Agent v1.12.0 引入了 **權能可見性 (Ability Visibility)** 控制項，用來管理哪些介面會暴露哪些權能。這讓管理員可以精細調整哪些代理程式功能可以透過 REST API、MCP 伺服器、WooCommerce 整合和其他介面使用。
 

@@ -3,7 +3,7 @@ title: Cara Mendapatkan Bantuan
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Cara mendapatkan bantuan {#how-to-get-help}
+# Cara mendapatkan bantuan
 
 Anda sudah mempunyai kunci Lesen yang sah, dan bersama-sama dengannya adalah akses kepada pasukan kami untuk membantu anda menyelesaikan masalah yang mungkin dihadapi semasa menyediakan Ultimate Multisite.
 

@@ -4,7 +4,7 @@ title: Radnja - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Radnja: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Radnja: wu_handle_customer_meta_fields
 
 Omogućuje programerima dodataka spremanje meta podataka na različite načine ako im je potrebno.
 

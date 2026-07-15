@@ -4,7 +4,7 @@ title: Amal - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Harakat: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Harakat: wu_domain_mapping_register_filters
 
 Ba'zi plaginlar mapping faol bo‘lishidan oldin URLni saqlaydi yoki URLlarni yuqoridagi filtrlarga kiritilmagan boshqa usulda yaratadi.
 

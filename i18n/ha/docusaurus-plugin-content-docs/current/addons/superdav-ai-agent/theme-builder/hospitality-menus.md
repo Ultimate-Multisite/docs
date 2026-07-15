@@ -3,7 +3,7 @@ title: Menus na Masaukin Baƙi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu na Masauki da Abinci {#hospitality-menus}
+# Menu na Masauki da Abinci
 
 Siffar **Hospitality Menus** tana ba Theme Builder damar ƙirƙira da saka shafukan menu na abinci da abin sha masu tsari kai tsaye cikin shafin WordPress ɗinka.
 

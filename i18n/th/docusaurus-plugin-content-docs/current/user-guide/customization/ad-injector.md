@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# การวางโฆษณาบนเครือข่ายของคุณด้วย Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# การวางโฆษณาบนเครือข่ายของคุณด้วย Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector เป็น**ส่วนเสริมฟรี**ที่ให้เครื่องมือสำหรับวางโฆษณาบนแผนของคุณได้โดยตรงจากหน้าแก้ไข
 

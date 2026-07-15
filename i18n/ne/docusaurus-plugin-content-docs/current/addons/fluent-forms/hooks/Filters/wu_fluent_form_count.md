@@ -4,7 +4,7 @@ title: फिल्टर - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# फिल्टर: wu_fluent_form_count {#filter-wufluentformcount}
+# फिल्टर: wu_fluent_form_count
 
 plugin विकासकर्ताहरूलाई form count को कुल परिवर्तन गर्न अनुमति दिन्छ
 

@@ -4,7 +4,7 @@ title: ფილტრი - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# ფილტრი: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# ფილტრი: wu_stripe_checkout_subscription_data
 
 ფილტრავს Stripe Subscription მონაცემებს. შეუძლია success_url-ის ან cancel_url-ის გადაფარვა.
 

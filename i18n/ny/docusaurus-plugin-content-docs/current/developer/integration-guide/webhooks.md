@@ -3,7 +3,7 @@ title: Kusamalira Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Kusamalira Webhook {#webhook-handling}
+# Kusamalira Webhook
 
 Pangani malo olandirira webhook achikhalidwe kuti mulandire zochitika kuchokera ku mautumiki akunja ndi kulunzanitsa data ndi Ultimate Multisite.
 

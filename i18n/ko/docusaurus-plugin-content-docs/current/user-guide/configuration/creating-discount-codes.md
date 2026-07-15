@@ -3,7 +3,7 @@ title: 할인 코드 생성
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 할인 코드 생성하기 (v2) {#creating-discount-codes-v2}
+# 할인 코드 생성하기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 다룹니다.**_
 

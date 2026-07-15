@@ -3,7 +3,7 @@ title: Integração do Painel de Controle Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integração com o Painel de Controle Hestia {#hestia-control-panel-integration}
+# Integração com o Painel de Controle Hestia
 
 Este guia explica como configurar a integração do Ultimate Multisite Hestia para que os domínios mapeados na sua rede sejam automaticamente adicionados (e removidos) como Aliases de Domínio Web no Hestia.
 

@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Ìṣe: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Ìṣe: wp_ultimo_gocardless_load
 
 Ń ṣiṣẹ́ nígbà tí gbogbo àwọn ohun ìgbẹ́kẹ̀lé bá ti kojọpọ̀
 

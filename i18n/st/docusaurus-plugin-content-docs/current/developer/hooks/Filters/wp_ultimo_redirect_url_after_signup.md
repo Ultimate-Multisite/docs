@@ -4,7 +4,7 @@ title: Sefe - wp_ultimo_redirect_url_after_signup
 sidebar_label: wp_ultimo_redirect_url_after_signup
 _i18n_hash: d2a07f6531164addf017a8b58bb860a1
 ---
-# Sefe: wp_ultimo_redirect_url_after_signup {#filter-wpultimoredirecturlaftersignup}
+# Sefe: wp_ultimo_redirect_url_after_signup
 
 Beha URL ea ho lebisa hape.
 

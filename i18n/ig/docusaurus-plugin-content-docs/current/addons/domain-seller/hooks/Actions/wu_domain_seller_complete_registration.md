@@ -4,7 +4,7 @@ title: Omume - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Omume: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Omume: wu_domain_seller_complete_registration
 
 Na-eme mgbe ịkwụ ụgwọ gbanwere gaa na status kwesịrị ịkpalite ndebanye domain.
 

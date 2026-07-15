@@ -4,7 +4,7 @@ title: الإجراء - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# الإجراء: wu_page_before_render {#action-wupagebeforerender}
+# الإجراء: wu_page_before_render
 
 السماح لمطوري الإضافات بإضافة محتوى إضافي قبل طباعة الصفحة.
 

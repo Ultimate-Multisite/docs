@@ -3,7 +3,7 @@ title: زپيار انٽيغريشن
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite کي Zapier سان جوڙڻ (Integrating Ultimate Multisite with Zapier) {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite کي Zapier سان جوڙڻ (Integrating Ultimate Multisite with Zapier)
 
 اڪيلي هڪ مضمون ۾، اسان [Webhooks](webhooks.md) بابت بحث ڪئي هوئي ۽ انهن کي ٽيئر پارٽي ايمپليكيشن سان جوڙڻ لاءِ ڪيئن استعمال ڪري سگهجي ٿو.
 

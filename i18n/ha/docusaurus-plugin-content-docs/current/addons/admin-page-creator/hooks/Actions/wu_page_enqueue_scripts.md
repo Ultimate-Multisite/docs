@@ -4,7 +4,7 @@ title: Aiki - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Ana ƙara action na musamman a nan domin mu sami wuri don enqueue scripts da styles yadda ake buƙata\ kuma a tabbatar ana loda su ne kawai a shafukan da suka dace
 

@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# ການເຊື່ອມຕໍ່ກັບ Cloudflare {#cloudflare-integration}
+# ການເຊື່ອມຕໍ່ກັບ Cloudflare
 
 ## ພາບລວມ {#overview}
 Cloudflare ແມ່ນຜູ້ໃຫ້ບໍລິການເຄືອຂ່າຍສົ່ງເນື້ອຫາ (CDN) ແລະ ຄວາມປອດໄພຊັ້ນນໍາທີ່ຊ່ວຍປົກປ້ອງ ແລະ ເຮັດໃຫ້ເວັບໄຊທ໌ໄວຂຶ້ນ. ການເຊື່ອມຕໍ່ນີ້ເຮັດໃຫ້ສາມາດຈັດການໂດເມນໂດຍອັດຕະໂນມັດລະຫວ່າງ Ultimate Multisite ແລະ Cloudflare, ໂດຍສະເພາະສຳລັບການຕິດຕັ້ງ subdomain multisite.

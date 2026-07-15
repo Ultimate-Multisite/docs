@@ -4,7 +4,7 @@ title: Hetsika - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Hetsika: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Hetsika: wp_ultimo_affiliatewp_activation
 
 Avelao ny ampahany hafa amin'ny plugin hampifandray ny routines-ny ho an'ny activation
 

@@ -3,7 +3,7 @@ title: WordPress Multisite چییە؟
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# چیه WordPress Multisite؟ {#what-is-wordpress-multisite}
+# چیه WordPress Multisite؟
 
 لە ناوەندی خۆی، وۆرسپریډ (WordPress) تایبەتمەندییەکی دەوروبەر دایە بە ناوی ‘Multisite’ کە ڕیشەیەکێك بۆ ساڵی ٢٠١٠ لە کاتی لێکردنی وۆرسپریډ ٣.٠ هەیە. لەو کاتەوە، ئەو تایبەتمەندییە چەندین جۆرە پڕۆسێسی گۆڕانکاریی کردووە بۆ پێشنیاری تایبەتمەندی نوێ و ڕێکخستنی زیاتر لە ئاسایشی.
 

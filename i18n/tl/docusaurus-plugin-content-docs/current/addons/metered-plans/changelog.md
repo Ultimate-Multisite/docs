@@ -3,7 +3,7 @@ title: Talaan ng Pagbabago ng Mga Planong May Sukatan
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Changelog ng Metered Plans {#metered-plans-changelog}
+# Changelog ng Metered Plans
 
 Bersyon 1.1.0 - Inilabas noong 2026-05-05
 - Bago: Pagsingil sa AI token para sa multisite subsites — subaybayan at singilin ang paggamit ng AI token sa mga site ng customer na may nako-configure na mga rate kada token

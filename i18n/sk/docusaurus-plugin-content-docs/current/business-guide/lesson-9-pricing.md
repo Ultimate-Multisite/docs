@@ -3,7 +3,7 @@ title: 'Lekcia 9: Cenotvorba pre zisk'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcia 9: Cenotvorba pre zisk {#lesson-9-pricing-for-profit}
+# Lekcia 9: Cenotvorba pre zisk
 
 V Lekcii 5 sme nastavili počiatočné ceny pre plány FitSite. Teraz spresníme cenovú stratégiu pomocou techník, ktoré zvyšujú príjmy, podporujú prechody na vyššie plány a znižujú churn.
 

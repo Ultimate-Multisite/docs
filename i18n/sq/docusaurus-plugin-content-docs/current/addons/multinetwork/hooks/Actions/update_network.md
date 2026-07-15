@@ -4,7 +4,7 @@ title: Veprim - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Veprimi: update_network {#action-updatenetwork}
+# Veprimi: update_network
 
 Aktivizohet pasi një rrjet ekzistues është përditësuar.
 

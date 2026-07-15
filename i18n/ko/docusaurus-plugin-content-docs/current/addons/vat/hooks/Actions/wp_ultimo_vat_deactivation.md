@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# 액션: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# 액션: wp_ultimo_vat_deactivation
 
 다른 플러그인 부분이 비활성화 루틴을 연결하도록 허용합니다.
 

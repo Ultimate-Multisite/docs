@@ -3,7 +3,7 @@ title: Workflow ta Migrazzjoni Sovranija
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Migrazzjon Sovran {#sovereign-migration-workflow}
+# Workflow Migrazzjon Sovran
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aggi sistemi verifikazzjoni għall-migrazzjoni biex tinqel subsite standard għal infrastruttura tal-tenant sovran.
 

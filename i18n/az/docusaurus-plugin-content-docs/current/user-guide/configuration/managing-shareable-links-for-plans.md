@@ -3,7 +3,7 @@ title: Planlar üçün Paylaşılan Linkləri İdarə Etmək
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Planlar üçün Paylaşılan Linkləri İdarə Etmək {#managing-shareable-links-for-plans}
+# Planlar üçün Paylaşılan Linkləri İdarə Etmək
 
 Ultimate Multisite sizə plan linklərini birbaşa müştərilərinizlə paylaşmaq imkanı verir. Bunu etmək üçün istənilən planın redaktə səhifəsinə keçin və "Paylaşılan Linki Kopyala" düyməsinə klikləyin.
 

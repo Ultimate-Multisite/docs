@@ -3,7 +3,7 @@ title: Gwirionedd ystyr y safle
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Faddau Cymorth Skill {#site-specification-skill}
+# Faddau Cymorth Skill
 
 Mae'r **Faddau Cymorth y Safle** (Site Specification skill) yn ffordd sydd wedi'i ddefnyddio i cyflogi'r cymrydau eich safle, y ddefnyddwyr, a'r identiti brand. Mae'r wybodaeth hwn yn cael ei storio mewn memoriad **site_brief** eich safle, gan y gartrefau (agents) sydd wedi'u cyfeirio arall ystodau i rhoi gysylltiadol a chwarae-gwrthwyll.
 

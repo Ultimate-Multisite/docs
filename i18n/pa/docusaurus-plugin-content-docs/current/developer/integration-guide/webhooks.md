@@ -3,7 +3,7 @@ title: Webhook Handling
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ਨੂੰ ਸੰਭਾਲਣਾ (Webhook Handling) {#webhook-handling}
+# Webhook ਨੂੰ ਸੰਭਾਲਣਾ (Webhook Handling)
 
 ਬਾਹਰੀ ਸਰਵਿਸਾਂ (external services) ਤੋਂ ਘਟਨਾਵਾਂ (events) ਪ੍ਰਾਪਤ ਕਰਨ ਅਤੇ Ultimate Multisite ਨਾਲ ਡਾਟਾ ਸਿੰਕ (sync) ਕਰਨ ਲਈ ਕਸਟਮ Webhook endpoints ਬਣਾਓ।
 

@@ -3,7 +3,7 @@ title: CyberPanel Integrasjon
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrasjon {#cyberpanel-integration}
+# CyberPanel Integrasjon
 
 Denne guiden forklarer hvordan du konfigurerer Ultimate Multisite CyberPanel-integrasjonen slik at domener som er kartlagt i nettverket ditt, automatisk legges til (og fjernes) som virtuelle vert på CyberPanel, med valgfri auto-SSL-tilordning via Let's Encrypt.
 

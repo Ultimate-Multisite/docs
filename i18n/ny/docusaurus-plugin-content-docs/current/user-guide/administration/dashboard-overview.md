@@ -3,7 +3,7 @@ title: Mwayi wopolo wa mwayi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Zomwezi ya Dashboard {#dashboard-overview}
+# Zomwezi ya Dashboard
 
 Ultimate Multisite inalipanga **Dashboard** iliyonkhulupanga m'malo wa Ultimate Multisite, ndipo inalimbikisa widgets ku Network Dashboard. Iyi article inalipanga kuti muli ndi chiyambira m'malowowo.
 

@@ -3,7 +3,7 @@ title: WordPress Multisite Nedir?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Çoklu Site Nedir? {#what-is-wordpress-multisite}
+# WordPress Çoklu Site Nedir?
 
 WordPress, çekirdek yapısında 2010'da WordPress 3.0 ile birlikte kullanıma sunulan 'Çoklu Site' (Multisite) adında bir özellik barındırır. O günden bu yana yeni özellikler eklemek ve güvenliği artırmak amacıyla pek çok güncelleme aldı.
 

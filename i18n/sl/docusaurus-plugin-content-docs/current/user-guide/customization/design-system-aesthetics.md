@@ -3,7 +3,7 @@ title: Estetika Design Systems veščine
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Veščina oblikovnih sistem estetike {#design-system-aesthetics-skill}
+# Veščina oblikovnih sistem estetike
 
 **Veščina oblikovnih sistem estetike** je usmerjen pristop do izboljšanja vizualne identitete vaše spletne strani. Pomoč vam pri sprejemanju usklajenih odločitev o tipografiji, barvah, razspacevanju in motion tokenih, ki definirajo vaš sistem oblikovanja.
 

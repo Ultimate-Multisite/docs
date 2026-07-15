@@ -3,7 +3,7 @@ title: Abilte vom Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Fähigkeite: Block Themes Scaffolde und Aktivierä {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Fähigkeite: Block Themes Scaffolde und Aktivierä
 
 Superdav AI Agent v1.12.0 bringt zwei mächtigi Fähigkeite mit, wo dir ermögliche, benutzerdefinierti block themes direkt us de Chat-Interface z'generiere und z'deploye.
 

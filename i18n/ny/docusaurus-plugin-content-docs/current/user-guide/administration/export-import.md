@@ -3,7 +3,7 @@ title: Kupanga ndi Kufotokozera
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Kupuka na Kupanga {#export--import}
+# Kupuka na Kupanga
 
 Ultimate Multisite 2.9.0 imapanga ya **Export & Import** yomwe mwezi mmoja mwa **Tools > Export & Import**. Tumia ikuti mukati mwake muliipanga WordPress site mwezi mmoja kama ZIP file, kurekebisha hiyo ZIP, au kupanga site kati ya Ultimate Multisite na single-site WordPress installations zilizolingana.
 

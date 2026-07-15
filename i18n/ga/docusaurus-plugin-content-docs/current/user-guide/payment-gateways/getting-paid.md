@@ -3,7 +3,7 @@ title: Íocaíocht a Fháil
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ag Fáil Íocaíochta (v2) {#getting-paid-v2}
+# Ag Fáil Íocaíochta (v2)
 
 _**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 

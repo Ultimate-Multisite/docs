@@ -4,7 +4,7 @@ title: アクション - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# アクション: wu_duplicate_site {#action-wuduplicatesite}
+# アクション: wu_duplicate_site
 
 サイトの複製が完了した後に開発者がフックできるようにします。
 

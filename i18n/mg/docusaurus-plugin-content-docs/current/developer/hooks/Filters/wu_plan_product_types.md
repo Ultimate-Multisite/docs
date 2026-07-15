@@ -4,7 +4,7 @@ title: Sivana - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Sivana: wu_plan_product_types {#filter-wuplanproducttypes}
+# Sivana: wu_plan_product_types
 
 Sivano ireo karazana vokatra tokony horaisina ho drafitra.
 

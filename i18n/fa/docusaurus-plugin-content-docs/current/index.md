@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# مستندات Ultimate Multisite {#ultimate-multisite-documentation}
+# مستندات Ultimate Multisite
 
 خوش آمدید به مستندات Ultimate Multisite. Ultimate Multisite، وردپرس Multisite را به یک پلتفرم کامل وب‌سایت به عنوان سرویس (WaaS) تبدیل می‌کند.
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 مرجع فنی برای توسعه‌دهندگانی که روی Ultimate Multisite کار می‌کنند. شامل مرجع hooks، مستندات REST API و راهنماهای توسعه addon است.
 
-### [Addons](/addons) {#addons}
+### [افزونه‌ها](/addons) {#addons}
 
 مستندات برای پلاگین‌های addon پولی که Ultimate Multisite را با ویژگی‌های اضافی مانند یکپارچه‌سازی WooCommerce، آنالیتیکس، فروش دامنه و موارد دیگر گسترش می‌دهند.
 

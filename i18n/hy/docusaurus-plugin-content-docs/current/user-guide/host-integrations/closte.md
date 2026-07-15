@@ -3,7 +3,7 @@ title: Closte ինտեգրում
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Ինտեգրում {#closte-integration}
+# Closte Ինտեգրում
 
 ## Ընդհանուր տեսքը {#overview}
 Closte-ը Google Cloud ենթաճարպի վրա կառուցված WordPress հոස්ինգի պլատֆորմ է։ Այս ინտեգրումը թույլ է տալիս ավտոմատ դոմենի սինխրոնիզացիա և SSL վկայագրերի կառավարում Ultimate Multisite-ի և Closte-ի միջև։

@@ -3,7 +3,7 @@ title: Vairāku tīklu izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network izmaiņu žurnāls {#multi-network-changelog}
+# Multi-Network izmaiņu žurnāls
 
 ### 1.3.0 {#130}
 * Jauns: tīkla veidnes priekšskatītājs — pārlūkojiet un priekšskatiet tīkla veidnes ar tiešsaistes paneli pirms iegādes.

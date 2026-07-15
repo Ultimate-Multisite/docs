@@ -3,7 +3,7 @@ title: Integrazzjoni ta’ Multi-Tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrazzjoni ta' Multi-Tenancy {#multi-tenancy-integration}
+# Integrazzjoni ta' Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 jibdel diversi punti ta' kuntatt ta' integrazzjoni għal kerrejja sovrani, verifika tal-migrazzjoni, u awtomazzjoni taċ-ċiklu tal-ħajja tal-kerrejja.
 

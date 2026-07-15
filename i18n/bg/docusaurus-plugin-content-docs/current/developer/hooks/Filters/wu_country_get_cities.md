@@ -4,7 +4,7 @@ title: Филтър - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Филтър: wu_country_get_cities {#filter-wucountrygetcities}
+# Филтър: wu_country_get_cities
 
 Връща списък с градове за щат в една държава.
 

@@ -4,7 +4,7 @@ title: Filtr - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtr: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtr: wu_view_override_replaceable_views
 
 Dasturchilarga almashtiriladigan ro‘yxatga qo‘shimcha papkalar qo‘shish imkonini beradi.
 

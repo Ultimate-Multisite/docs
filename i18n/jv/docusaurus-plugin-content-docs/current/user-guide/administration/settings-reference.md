@@ -3,7 +3,7 @@ title: Rujukan Setelan
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Rujukan Setelan {#settings-reference}
+# Rujukan Setelan
 
 Kaca iki nglacak setelan sing mengaruhi administrasi saben dina lan owah-owahan prilaku anyar ing Ultimate Multisite.
 

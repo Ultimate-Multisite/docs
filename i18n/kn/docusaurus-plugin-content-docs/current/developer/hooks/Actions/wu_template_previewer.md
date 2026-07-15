@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 ಇದು ಟೆಂಪ್ಲೇಟ್ ಪ್ರಿವ್ಯೂವರ್ ಸಂದರ್ಭದಲ್ಲಿ (context) ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
 

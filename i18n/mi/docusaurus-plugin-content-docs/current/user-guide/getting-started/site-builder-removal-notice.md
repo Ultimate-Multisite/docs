@@ -3,7 +3,7 @@ title: Tohu Whakamutunga Mo Mode Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Whakamutunga Mode Tākaro Aotūroa (Site Builder Mode Removal Notice) {#site-builder-mode-removal-notice}
+# Whakamutunga Mode Tākaro Aotūroa (Site Builder Mode Removal Notice)
 
 **He whakatika ki te whakamahi Site Builder mode i Superdav AI Agent v1.12.0.** Ko koe, ko te mea i roto i te Site Builder mode, kia mau ki te **Setup Assistant agent** mō te whakawātea o theme me te whakarite o te waka (site setup).
 

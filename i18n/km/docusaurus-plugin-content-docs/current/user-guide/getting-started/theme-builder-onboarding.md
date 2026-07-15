@@ -3,7 +3,7 @@ title: លំហូរការណែនាំ Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 បង្ហាញពី **Theme Builder onboarding flow** ដែលជាការណែនាំប្រព័ន្ធមួយជួយអ្នកបង្កើត custom block theme ក្នុងអំឡុងពេលตั้งค่าដំបូង។ វាជំនួសរបៀប Site Builder ចាស់ដោយវិធីសាស្រ្តដែលអាចបត់បែនបាន និងមានជំនួយពី Agent។
 

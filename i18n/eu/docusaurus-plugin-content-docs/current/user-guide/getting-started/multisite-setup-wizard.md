@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Konfigurazioa Auritzapenari (Wizard) {#multisite-setup-wizard}
+# Multisite Konfigurazioa Auritzapenari (Wizard)
 
 Ultimate Multisite-ek arau-dian beste WordPress instalazio bat automatikoki konvertatzen du WordPress Multisite network batean. Horrek `wp-config.php` edo database komandament manuel editeatzea edo jarraitzea beharrezkoa ez du.
 

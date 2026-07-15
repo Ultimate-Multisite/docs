@@ -3,7 +3,7 @@ title: জানা থকা বেমানপৰীৰ্থকতা
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# আন প্লাগইনৰ সৈতে জনা incompatibilities {#known-incompatibilities-with-other-plugins}
+# আন প্লাগইনৰ সৈতে জনা incompatibilities
 
 Ultimate Multisite install আৰু activate কৰাৰ পিছত, আন প্লাগইনৰ সৈতে থকা কিছুমান অসঙ্গতিৰ বাবে আপুনি সমস্যাৰ সন্মুখীন হ'ব পাৰে।
 

@@ -4,7 +4,7 @@ title: Gníomh - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Gníomh: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Gníomh: wp_ultimo_gocardless_deactivation
 
 Lig do chodanna eile den bhreiseán a ngnáthaimh a cheangal le haghaidh díghníomhachtaithe
 

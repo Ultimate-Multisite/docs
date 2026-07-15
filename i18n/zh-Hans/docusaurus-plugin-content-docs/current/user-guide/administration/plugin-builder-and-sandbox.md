@@ -3,7 +3,7 @@ title: 插件构建器与沙箱
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 引入了 **Plugin Builder & Sandbox System**，该系统允许 AI 助手在安全、隔离的沙盒环境中为您的网络生成、激活和管理 WordPress 插件。
 

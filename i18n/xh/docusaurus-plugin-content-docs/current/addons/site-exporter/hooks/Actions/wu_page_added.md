@@ -4,7 +4,7 @@ title: Isenzo - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Isenzo: wu_page_added {#action-wupageadded}
+# Isenzo: wu_page_added
 
 Ivumela abaphuhlisi be-plugin ukuba baqhube izinto ezongezelelweyo xa amaphepha ebhaliswa.
 

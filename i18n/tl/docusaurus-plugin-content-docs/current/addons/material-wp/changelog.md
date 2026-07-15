@@ -3,7 +3,7 @@ title: Material WP Talaan ng Pagbabago
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Talaan ng Pagbabago ng Material WP {#material-wp-changelog}
+# Talaan ng Pagbabago ng Material WP
 
 Bersyon 1.1.15 - 01/26/2026
 * Pinahusay: Estilo at pag-format ng code;

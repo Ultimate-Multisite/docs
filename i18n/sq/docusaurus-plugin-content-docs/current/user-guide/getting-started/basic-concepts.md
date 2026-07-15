@@ -3,7 +3,7 @@ title: Konceptet themelore
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Koncepti Bazë {#basic-concepts}
+# Koncepti Bazë
 
 Ky seksion shpjegon konceptet themelore që duhet të kuptoni për WordPress dhe si funksionojnë elementët kryesor.
 

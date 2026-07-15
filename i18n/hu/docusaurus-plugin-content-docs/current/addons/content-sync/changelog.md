@@ -3,7 +3,7 @@ title: Tartalom Szinkronizációs Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Tartalom Szinkronizációs Naplója {#content-sync-changelog}
+# Tartalom Szinkronizációs Naplója
 
 ### Version 1.1.0 - Kiadása 2025-12-31 {#version-110---released-on-2025-12-31}
 * Új: Minden bejegyzéstípus szinkronizálásának támogatása (bejegyzések, oldalak, saját bejegyzéstípusok)

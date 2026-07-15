@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 ಪ್ಲಗ್ಇನ್‌ನ ಇತರ ಭಾಗಗಳು ತಮ್ಮ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವಿಕೆ (deactivation) ಕಾರ್ಯಗಳನ್ನು ಇಲ್ಲಿ ಜೋಡಿಸಬಹುದು.
 

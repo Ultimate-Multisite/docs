@@ -4,7 +4,7 @@ title: Harakat - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Amal: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Amal: inpsyde.search_and_replace.error
 
 E’tiborga olinmaydi, chunki bu hook WP Ultimo tomonidan ro‘yxatdan o‘tkazilmagan.
 

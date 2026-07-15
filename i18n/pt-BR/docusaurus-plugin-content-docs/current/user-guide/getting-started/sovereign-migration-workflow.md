@@ -3,7 +3,7 @@ title: Fluxo de Migração Soberana
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Fluxo de Migração Soberana {#sovereign-migration-workflow}
+# Fluxo de Migração Soberana
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adiciona portões de verificação de migração para mover um subsite padrão para a infraestrutura do inquilino soberano.
 

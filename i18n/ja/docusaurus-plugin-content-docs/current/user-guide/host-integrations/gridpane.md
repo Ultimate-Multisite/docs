@@ -3,7 +3,7 @@ title: GridPane 統合
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane インテグレーション {#gridpane-integration}
+# GridPane インテグレーション
 
 ## 概要 {#overview}
 GridPane は、真剣な WordPress プロフェッショナル向けに設計された専門的な WordPress ホスティング管理パネルです。この統合により、Ultimate Multisite と GridPane の間で自動ドメイン同期と SSL 証明書管理が可能になります。

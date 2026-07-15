@@ -3,7 +3,7 @@ title: Mazmun sinhronlaşdyrmasynyň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Mazmun Sync üýtgeşmeler ýazgysy {#content-sync-changelog}
+# Mazmun Sync üýtgeşmeler ýazgysy
 
 ### Wersiýa 1.1.0 - 2025-12-31 senesinde çykaryldy {#version-110---released-on-2025-12-31}
 * Täze: Ähli ýazgy görnüşlerini sinhronlamak üçin goldaw (ýazgylar, sahypalar, ýörite ýazgy görnüşleri)

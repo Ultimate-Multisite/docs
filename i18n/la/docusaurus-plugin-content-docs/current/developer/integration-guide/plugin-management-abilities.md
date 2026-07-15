@@ -3,7 +3,7 @@ title: Facultates administrationis pluginorum
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Facultates Administrationis Additamentorum {#plugin-management-abilities}
+# Facultates Administrationis Additamentorum
 
 Gratis AI Agent v1.5.0 venit cum **7 facultatibus administrationis additamentorum** quas adiutor AI in colloquio invocare potest. Hae facultates regimen programmaticum praebent super additamenta WordPress instituta per [Systema Conditoris Additamentorum et Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

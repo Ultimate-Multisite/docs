@@ -3,7 +3,7 @@ title: ਚੈਕਆਉਟ ਫੀਲਡ ਅਤੇ ਗਾਹਕ DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# ਚੈਕਆਉਟ ਫੀਲਡ ਅਤੇ ਗਾਹਕ DNS ਪ੍ਰਬੰਧਨ {#checkout-field-and-customer-dns-management}
+# ਚੈਕਆਉਟ ਫੀਲਡ ਅਤੇ ਗਾਹਕ DNS ਪ੍ਰਬੰਧਨ
 
 ## ਡੋਮੇਨ ਚੋਣ ਚੈਕਆਉਟ ਫੀਲਡ {#the-domain-selection-checkout-field}
 

@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# କାର୍ଯ୍ୟ: wu_cart_after_setup {#action-wucartaftersetup}
+# କାର୍ଯ୍ୟ: wu_cart_after_setup
 
 ବିକାଶକାରୀମାନଙ୍କୁ ଚେକଆଉଟ୍ ଅବଜେକ୍ଟରେ ଅତିରିକ୍ତ ପରିବର୍ତ୍ତନ କରିବାକୁ ଅନୁମତି ଦିଏ।
 

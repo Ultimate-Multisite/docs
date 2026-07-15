@@ -3,7 +3,7 @@ title: Eisimpleirean Còid Adhartach
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Eisimpleirean Còd Adhartach {#advanced-code-examples}
+# Eisimpleirean Còd Adhartach
 
 Tha na h-eisimpleirean seo a’ sealltainn pàtranan amalachaidh adhartach le Ultimate Multisite.
 

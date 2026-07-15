@@ -4,7 +4,7 @@ title: Isihlungi - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Isihlungi: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Isihlungi: wu_site_exporter_plugin_exclusion_list
 
 Ivumela abathuthukisi ukuphatha uhlu lwe-plugin olungase lukhishwe ku-zip ekhiqiziwe.
 

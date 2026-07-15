@@ -4,7 +4,7 @@ title: Hereket - wu_membership_post_cancel
 sidebar_label: wu_membership_post_cancel
 _i18n_hash: f8d5d59dbde2d29c6006ef82edd7384a
 ---
-# Hereket: wu_membership_post_cancel {#action-wumembershippostcancel}
+# Hereket: wu_membership_post_cancel
 
 Agzalyk ýatyrylandan soň işledilýär.
 

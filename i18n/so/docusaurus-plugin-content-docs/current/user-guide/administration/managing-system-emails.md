@@ -3,7 +3,7 @@ title: Maareynta Email-yada Nidaamka
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Maareynta Email-yadaal {#managing-system-emails}
+# Maareynta Email-yadaal
 
 Ultimate Multisite waxay u dirtaa emailyo kooban arrimaha systemka sida xaqiijinta isdiiwaangelinta, helitaanka lacagta, iyo isbeddellada xubnaha. Waxaad hagaajin kartaa qaababka email-ka si ay ula jaanqaadaan calaamaddaada brand-kaaga.
 

@@ -4,7 +4,7 @@ title: Suodatin - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Suodatin: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Suodatin: wu_is_development_mode
 
 Salli plugin-kehittäjien lisätä lisätestejä kehitystilaa varten.
 

@@ -3,7 +3,7 @@ title: 'Lekce 11: Najít zákazníky'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekce 11: Získávání zákazníků {#lesson-11-finding-customers}
+# Lekce 11: Získávání zákazníků
 
 Skvělá platforma bez zákazníků je jen hobbym. Tento lekce se zabývá strategiemi získávání zákazníků v konkrétní vertikále – takové strategie, které fungují speciálně proto, že jste zaměření na jednu obor.
 

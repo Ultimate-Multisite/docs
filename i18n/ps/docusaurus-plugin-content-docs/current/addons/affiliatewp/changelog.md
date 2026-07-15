@@ -3,7 +3,7 @@ title: AffiliateWP بدلون‌لیک
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP د بدلونونو ثبت {#affiliatewp-changelog}
+# AffiliateWP د بدلونونو ثبت
 
 نسخه: 2.0.1 - خپره شوې په 2025-09-28
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons ช่วยเพิ่มฟีเจอร์และการเชื่อมต่อต่างๆ ให้กับ Ultimate Multisite ส่วนใหญ่ของ Addons เหล่านี้เป็นแบบเสียเงิน และสามารถซื้อได้จาก [ultimatemultisite.com](https://ultimatemultisite.com)
 

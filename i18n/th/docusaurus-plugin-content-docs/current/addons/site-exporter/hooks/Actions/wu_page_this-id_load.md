@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# Action: wu_page_\{$this->id\}_load
 
 ช่วยให้ผู้พัฒนาปลั๊กอินสามารถเพิ่ม hook พิเศษให้กับหน้าเพจที่กำหนดได้
 

@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_plugin_and_theme_manager_deactivatio
 sidebar_label: wp_ultimo_plugin_and_theme_manager_deactivation
 _i18n_hash: 30fcaefc2b8a8393e8ac0ff38193ed26
 ---
-# សកម្មភាព: wp_ultimo_plugin_and_theme_manager_deactivation {#action-wpultimopluginandthememanagerdeactivation}
+# សកម្មភាព: wp_ultimo_plugin_and_theme_manager_deactivation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងទៀតនៃកម្មវិធីបន្ថែមភ្ជាប់ដំណើរការរបស់ពួកវាសម្រាប់ការបិទដំណើរការ
 

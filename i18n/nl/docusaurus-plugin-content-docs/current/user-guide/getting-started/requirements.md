@@ -3,7 +3,7 @@ title: Vereisten
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Vereisten voor Ultimate Multisite {#ultimate-multisite-requirements}
+# Vereisten voor Ultimate Multisite
 
 Het eerste wat je jezelf misschien vraagt voordat je Ultimate Multisite koopt, is wat de vereisten zijn om onze plugin te draaien. Wel, gelukkig zijn er slechts een paar basisvereisten voor het draaien van Ultimate Multisite: een **domeinnaam**, een goede **hostingprovider** en een WordPress **Multisite** installatie. Dat is alles wat je nodig hebt!
 

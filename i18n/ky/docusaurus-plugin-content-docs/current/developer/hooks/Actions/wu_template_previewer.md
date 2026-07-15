@@ -4,7 +4,7 @@ title: Аракет - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Аракет: wu_template_previewer {#action-wutemplatepreviewer}
+# Аракет: wu_template_previewer
 
 Шаблон алдын ала көрүү контекстинин ичинде болгондо иштейт.
 

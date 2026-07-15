@@ -4,7 +4,7 @@ title: פֿילטער - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# פֿילטער: wu_ai_token_rates {#filter-wuaitokenrates}
+# פֿילטער: wu_ai_token_rates
 
 פֿילטערט די AI token רעכענונג־ראַטעס.
 

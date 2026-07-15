@@ -3,7 +3,7 @@ title: Встановлення Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Встановлення Ultimate Multisite {#installing-ultimate-multisite}
+# Встановлення Ultimate Multisite
 
 :::note
 У цьому посібнику передбачається, що у вас вже встановлено та налаштовано WordPress Multisite. Щоб дізнатися, як це зробити, перегляньте [цей посібник](https://www.wpbeginner.com/glossary/multisite/) від WP Beginner.

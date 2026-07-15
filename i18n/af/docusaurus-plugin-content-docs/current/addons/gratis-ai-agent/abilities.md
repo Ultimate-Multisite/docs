@@ -3,7 +3,7 @@ title: Verwysings van Vermogens
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Vermogensreferens {#abilities-reference}
+# Vermogensreferens
 
 Vermogens is die atome aksies wat Gratis AI Agent op jou WordPress-installasie kan oproep. Elke vermoë is 'n geregistreerde PHP-klas wat 'n JSON skema blootstel — die agent lees hierdie skema tydens die uitvoering om te verstaan watter parameters nodig is en wat die vermoë teruggee.
 

@@ -3,7 +3,7 @@ title: Eri na-akụziri File
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Error Installing the Sunrise File {#error-installing-the-sunrise-file}
+# Error Installing the Sunrise File
 
 File sunrise.php na file special nke WordPress jiaka ọkụ (bootstraps) ya. Ka WordPress nwere ike ịgụ ihe a bụ sunrise.php, ọ ga-adị n'ụlọ **wp-content folder**.
 

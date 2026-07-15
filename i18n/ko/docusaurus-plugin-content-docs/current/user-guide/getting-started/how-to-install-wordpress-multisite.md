@@ -3,7 +3,7 @@ title: WordPress Multisite 설치하는 방법
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite는 어떻게 설치하나요? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite는 어떻게 설치하나요?
 
 WordPress Multisite를 사용하면 단일 설치에서 사이트 네트워크를 운영할 수 있습니다. 이는 내장 기능이지만 기본적으로 활성화되어 있지는 않습니다.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

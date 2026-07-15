@@ -3,7 +3,7 @@ title: Uburyo bwo gukoresha Ultimate Multisite
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-Tenancy ya Hostinger {#hostinger-multi-tenancy}
+# Multi-Tenancy ya Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yagira uburyo bwo gukoresha multi-tenancy mu Hostinger, aho domain cyangwa ibintu byo kwihagarika (hosted domains) bigaragaza ubushobozi bwo gukora tenant zikomeye (sovereign tenant provisioning) mu gihe cy'ubwoko bw'ibyo bishobora gukoreshwa n'uburyo bwa Hostinger domain-mapping.
 

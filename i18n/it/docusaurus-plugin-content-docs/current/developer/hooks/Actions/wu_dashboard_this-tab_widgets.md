@@ -4,7 +4,7 @@ title: 'Action - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Azione: wu_dashboard_${this->tab}_widgets {#action-wudashboardthis-tabwidgets}
+# Azione: wu_dashboard_${this->tab}_widgets
 
 Consenti agli sviluppatori di plugin di aggiungere widget al pannello di Dashboard di Rete.
 

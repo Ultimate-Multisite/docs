@@ -3,7 +3,7 @@ title: نموونەکانی کۆدی پێشکەوتوو
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# نموونە پێشکەوتووەکانی کۆد {#advanced-code-examples}
+# نموونە پێشکەوتووەکانی کۆد
 
 ئەم نموونانە شێوازە پێشکەوتووەکانی یەکخستنی Ultimate Multisite پیشان دەدەن.
 

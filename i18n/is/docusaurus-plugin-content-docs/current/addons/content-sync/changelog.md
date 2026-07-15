@@ -3,7 +3,7 @@ title: Breytingaskrá fyrir samstillingu efnis
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Breytingaskrá Content Sync {#content-sync-changelog}
+# Breytingaskrá Content Sync
 
 ### Útgáfa 1.1.0 - Gefin út 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nýtt: Stuðningur við samstillingu allra færslugerða (færslur, síður, sérsniðnar færslugerðir)

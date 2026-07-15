@@ -3,7 +3,7 @@ title: Kodo fragmentoj
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodfragmentoj por v2 {#code-snippets-for-v2}
+# Kodfragmentoj por v2
 
 Na osnovu toga, kodfragmentoj za **WordPress** se koristi za izvođenje određenih radnji koje bi inače zahtevale poseban manji plugin. Takvi kodfragmenti se postavljaju u jedan od WordPress jezgra ili tematskih datoteka (obično `functions.php` vaše teme) ili mogu se koristiti kao MU plugin.
 

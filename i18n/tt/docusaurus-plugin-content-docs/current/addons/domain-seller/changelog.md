@@ -3,7 +3,7 @@ title: Домен сатучы үзгәрешләр журналы
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller үзгәрешләр журналы {#domain-seller-changelog}
+# Domain Seller үзгәрешләр журналы
 
 Version 1.3.0 - 2026-06-02 көнне чыгарылды
 - Яңа: HostAfrica реселлер балансы артык түбән төшкәндә network-admin кисәтүе өстәлде

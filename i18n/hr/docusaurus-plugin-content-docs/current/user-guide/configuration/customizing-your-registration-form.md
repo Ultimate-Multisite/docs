@@ -3,7 +3,7 @@ title: Prilagodba vašeg obrasca za registraciju
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prilagodba vašeg obrasca za registraciju {#customizing-your-registration-form}
+# Prilagodba vašeg obrasca za registraciju
 
 Kako bi vaša mreža izgledala jedinstveno u odnosu na sve ostale SaaS sustave izgrađene na WordPress platformi, Ultimate Multisite omogućuje vam prilagodbu stranica za registraciju i prijavu pomoću naše značajke **Checkout Forms**.
 

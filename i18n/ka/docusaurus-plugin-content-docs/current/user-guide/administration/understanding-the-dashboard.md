@@ -3,7 +3,7 @@ title: ダშბორდის გაგება
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard-ის გაგება {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard-ის გაგება
 
 Before we dive into more advanced configuration options and the operational aspects of Ultimate Multisite, let's take a look at the dashboard.
 

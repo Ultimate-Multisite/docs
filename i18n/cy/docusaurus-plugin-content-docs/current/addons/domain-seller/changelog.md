@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Gwerthwr Parthau
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Cofnod Newidiadau Domain Seller {#domain-seller-changelog}
+# Cofnod Newidiadau Domain Seller
 
 Fersiwn 1.3.0 - Rhyddhawyd ar 2026-06-02
 - Newydd: Ychwanegwyd rhybudd network-admin pan fydd balans ailwerthwr HostAfrica yn mynd yn rhy isel

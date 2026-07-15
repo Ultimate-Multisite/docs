@@ -4,7 +4,7 @@ title: Ação - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Ação: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Ação: wp_ultimo_gocardless_deactivation
 
 Permite que outras partes da extensão anexem as suas rotinas de desativação
 

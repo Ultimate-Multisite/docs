@@ -3,7 +3,7 @@ title: Otrzymywanie płatności
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Otrzymywanie płatności (v2) {#getting-paid-v2}
+# Otrzymywanie płatności (v2)
 
 _**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 

@@ -3,7 +3,7 @@ title: 'Lektion 5: Design af dine planer'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lektion 5: Design af Dine Planer {#lesson-5-designing-your-plans}
+# Lektion 5: Design af Dine Planer
 
 Dine planer er ikke bare prisniveauer – de afspejler, hvordan dine nichekunder rent faktisk opererer. I denne lektion designer du produktniveauer, der matcher de reelle behov hos fitnessvirksomheder i forskellige faser.
 

@@ -4,7 +4,7 @@ title: مەشغۇلات - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# مەشغۇلات: wu_deactivation {#action-wudeactivation}
+# مەشغۇلات: wu_deactivation
 
 plugin نىڭ باشقا بۆلەكلىرىگە توختىتىش ئۈچۈن ئۆز routines لىرىنى باغلاشقا يول قويىدۇ
 

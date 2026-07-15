@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# ଫିଲ୍ଟର: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# ଫିଲ୍ଟର: wu_wp_config_reference_hook_line_patterns
 
 ଆମେ କେଉଁଠାରେ ଆମ ସ୍ଥିରାଙ୍କଗୁଡ଼ିକୁ ସନ୍ନିବେଶ କରିପାରିବୁ ତାହା ବୁଝିବା ପାଇଁ ତିନୋଟି ପ୍ୟାଟର୍ନ ଯାଞ୍ଚ କରୁ:
 

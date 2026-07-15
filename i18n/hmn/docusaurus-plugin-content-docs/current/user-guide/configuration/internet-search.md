@@ -3,7 +3,7 @@ title: Khai hov nrho
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search {#internet-search}
+# Internet Search
 
 Gratis AI Agent v1.5.0-tsh muaj ib ensaw **Internet Search** uuj ua hais txhua neeg yuav tshawb hauv web rau AI assistant yuav saujau kev pab tshiab ntawm cov ntaub ntawv uas muaj qhov chaw loj tshaj plaws. Qhov no yog vim li cas hais los ntawm [Brave Search API](https://brave.com/search/api/) lossis [Tavily API](https://tavily.com/).
 

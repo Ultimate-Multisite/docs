@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Action: wp_ultimo_vat_load {#action-wpultimovatload}
+# Action: wp_ultimo_vat_load
 
 Nati-trigger kapag na-load na ang lahat ng dependency
 

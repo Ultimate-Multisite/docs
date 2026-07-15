@@ -3,7 +3,7 @@ title: Kion Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kion Why Ultimate Multisite {#why-ultimate-multisite}
+# Kion Why Ultimate Multisite
 
 Se vi atingis ti artikolon, probable aŭdis ke nia plugin povas esti la solvo por fari vian biznesideon reala. Ni esperas ke vi havis la respondo necesan al la fin de ĉi tiu teksto.
 

@@ -3,7 +3,7 @@ title: ડેશબોર્ડ ઝાંખી
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard ની ઝાંખી {#dashboard-overview}
+# Dashboard ની ઝાંખી
 
 Ultimate Multisite પાસે Ultimate Multisite મેનૂ હેઠળ એક સમર્પિત **Dashboard** છે, અને તે Network Dashboard માં widgets પણ ઉમેરે છે. આ લેખમાં તમે બંને જગ્યાએ શું જોશો તે વિશે માહિતી આપેલ છે.
 

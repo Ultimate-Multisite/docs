@@ -3,7 +3,7 @@ title: AffiliateWP o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP o‘zgarishlar jurnali {#affiliatewp-changelog}
+# AffiliateWP o‘zgarishlar jurnali
 
 Versiya: 2.0.1 - 2025-09-28 da chiqarilgan
 

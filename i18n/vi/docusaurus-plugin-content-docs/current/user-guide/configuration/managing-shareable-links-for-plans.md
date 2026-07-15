@@ -3,7 +3,7 @@ title: Quản lý Liên kết Có thể Chia sẻ cho Gói
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Quản lý Liên kết Chia sẻ cho các Gói dịch vụ {#managing-shareable-links-for-plans}
+# Quản lý Liên kết Chia sẻ cho các Gói dịch vụ
 
 Ultimate Multisite cho phép bạn chia sẻ liên kết gói dịch vụ trực tiếp với khách hàng. Để thực hiện, hãy vào trang chỉnh sửa của bất kỳ gói dịch vụ nào và nhấp vào nút _Nhấp để sao chép Liên kết Chia sẻ_.
 

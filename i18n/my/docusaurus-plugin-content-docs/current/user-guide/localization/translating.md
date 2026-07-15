@@ -3,7 +3,7 @@ title: Ultimate Multisite ကို ဘာသာပြန်ခြင်း
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ကို ဘာသာပြန်ခြင်း {#translating-ultimate-multisite}
+# Ultimate Multisite ကို ဘာသာပြန်ခြင်း
 
 Ultimate Multisite ကို အင်္ဂလိပ်ဘာသာဖြင့် ဖန်တီးထားသော်လည်း plugin သည် ဘာသာပြန်နိုင်အောင် အပြည့်အဝ ပြင်ဆင်ထားပြီး ဘာသာပြန်ပံ့ပိုးကူညီမှုများကို ကျွန်ုပ်တို့ လှိုက်လှဲစွာ ကြိုဆိုပါသည်။
 

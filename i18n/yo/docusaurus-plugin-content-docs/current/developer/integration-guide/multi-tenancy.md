@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Ìyálégbé-púpọ̀
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Ìṣepọ̀ Ìyálégbé-púpọ̀ {#multi-tenancy-integration}
+# Ìṣepọ̀ Ìyálégbé-púpọ̀
 
 Ultimate Multisite: Ìyálégbé-púpọ̀ 1.2.0 yí ọ̀pọ̀ ibi ìfọwọ́sowọpọ̀ padà fún àwọn ayálégbé aláṣẹ-ara, ìjẹ́rìí ìṣíra, àti adaṣiṣẹ́ ìgbésí-ayé ayálégbé.
 

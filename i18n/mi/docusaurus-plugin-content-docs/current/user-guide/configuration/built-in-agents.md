@@ -3,7 +3,7 @@ title: Ngā Āpiha Kua Hangaia ki Roto
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ngā Agent kua hangaia-ki-roto {#built-in-agents}
+# Ngā Agent kua hangaia-ki-roto
 
 Ka tukuna mai e Gratis AI Agent v1.9.0 ngā agent hangaia-ki-roto e rima, kua whirihoratia kē ia me tētahi huinga taputapu arotahi, tētahi system prompt kua whakahāngaitia, me ngā whakaaro tīmata e hāngai ana ki ngā mahi noa i taua wāhanga. Mā te whakawhiti i waenga i ngā agent ka panoni i ngā mea ka taea e te kaitautoko me te āhua o āna whakautu — kāore he whirihoranga māu. Ka taea e Superdav AI Agent v1.18.0 te tāpiri taputapu mōhio-hōtaka, pūkete whakamaumahara, kūaha whakaaetanga, me ngā whakamōhiotanga SMS ki ēnei rerengamahi ina whirihoratia ngā tūhononga e hāngai ana.
 

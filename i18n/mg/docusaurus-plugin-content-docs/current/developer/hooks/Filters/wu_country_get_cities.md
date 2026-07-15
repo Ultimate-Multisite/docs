@@ -4,7 +4,7 @@ title: Sivana - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Sivana: wu_country_get_cities {#filter-wucountrygetcities}
+# Sivana: wu_country_get_cities
 
 Mamerina ny lisitry ny tanàna ho an'ny faritra iray ao amin'ny firenena iray.
 

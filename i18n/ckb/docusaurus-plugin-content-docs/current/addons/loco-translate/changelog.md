@@ -3,7 +3,7 @@ title: گۆڕانکارییەکانی Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# گۆڕانکارییەکانی Loco Translate {#loco-translate-changelog}
+# گۆڕانکارییەکانی Loco Translate
 
 ### 1.0.1 {#101}
 * گونجاندن لەگەڵ دوا وەشانی Loco Translate باشتر کرا

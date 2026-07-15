@@ -3,7 +3,7 @@ title: Câmp de finalizare a comenzii și DNS-ul clientului
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Gestionarea câmpului de checkout și a DNS-ului clienților {#checkout-field-and-customer-dns-management}
+# Gestionarea câmpului de checkout și a DNS-ului clienților
 
 ## Câmpul de checkout pentru selectarea domeniului {#the-domain-selection-checkout-field}
 

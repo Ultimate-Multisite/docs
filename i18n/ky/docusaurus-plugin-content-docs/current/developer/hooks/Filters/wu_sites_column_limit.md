@@ -4,7 +4,7 @@ title: Чыпка - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Фильтр: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Фильтр: wu_sites_column_limit
 
 Тармак ичинде get pluginssites үчүн маанини өзгөртүүчү фильтр.
 

@@ -4,7 +4,7 @@ title: फिल्टर - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# फिल्टर: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# फिल्टर: wu_get_site_domain_and_path
 
 डेभलपरहरूलाई डोमेन/पाथ जोडीहरू परिवर्तन गर्न अनुमति दिन्छ।
 

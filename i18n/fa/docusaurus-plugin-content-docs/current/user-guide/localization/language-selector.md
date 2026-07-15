@@ -3,7 +3,7 @@ title: انتخابگر زبان
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# انتخابگر زبان {#language-selector}
+# انتخابگر زبان
 
 این قابلیت توسط افزونه **Language Selector** ارائه می‌شود.
 

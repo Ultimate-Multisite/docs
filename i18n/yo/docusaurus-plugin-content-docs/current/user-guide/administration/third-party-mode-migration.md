@@ -3,7 +3,7 @@ title: Ìṣílọ Ipo Ẹni-kẹta
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Ìṣíkiri Ipo Ẹni-kẹta {#third-party-mode-migration}
+# Ìṣíkiri Ipo Ẹni-kẹta
 
 Superdav AI Agent v1.12.0 yí bí a ṣe ń bójú tó àwọn agbára ẹni-kẹta padà. **Ipo ẹni-kẹta báyìí ń lo auto gẹ́gẹ́ bí ìpìlẹ̀**, ó ń jẹ́ kí ìṣepọ̀ WordPress Abilities API abinibi ṣiṣẹ́ lórí WordPress 7.0+ láìsí iṣètò ọwọ́.
 

@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Taonga Domain me Pākehā (Domain Products and Pricing) {#domain-products-and-pricing}
+# Taonga Domain me Pākehā (Domain Products and Pricing)
 
 Kei te whaiaro ana i te whakaingoa, TLDs, WHOIS privacy, me te whiriwhiri o te pahi (provider selection), ko ngā domain products. He standard Multisite Ultimate product koe i roto i te whakaritetenga, me heke mai i ahau i te **Domain Settings** tab.
 

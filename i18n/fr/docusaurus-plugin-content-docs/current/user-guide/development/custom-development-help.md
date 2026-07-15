@@ -3,7 +3,7 @@ title: Aide au développement personnalisé
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Comment obtenir de l’aide pour du développement personnalisé avec Codeable ? {#how-to-get-custom-development-help-from-codeable}
+# Comment obtenir de l’aide pour du développement personnalisé avec Codeable ?
 
 Parfois, nous avons vraiment besoin d’une personnalisation remarquable pour que notre réseau fonctionne exactement comme nous le souhaitons. Si c’est ce que vous recherchez, nous recommandons [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), un endroit où vous pouvez trouver des développeurs expérimentés ayant une expertise Ultimate Multisite.
 

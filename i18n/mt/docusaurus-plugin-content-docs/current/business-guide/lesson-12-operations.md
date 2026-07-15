@@ -3,7 +3,7 @@ title: 'Lezzjoni 12: It-Tmexxija tan-Negozju'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lezzjoni 12: It-Tmexxija tan-Negozju {#lesson-12-running-the-business}
+# Lezzjoni 12: It-Tmexxija tan-Negozju
 
 Pjattaforma mhijiex proġett li tispiċċa -- hija negozju li tmexxi. Din il-lezzjoni tkopri l-operazzjonijiet ta' kuljum tal-ġestjoni ta' FitSite: appoġġ, fatturazzjoni, manutenzjoni, u kif iżżomm lill-klijenti kuntenti.
 

@@ -3,7 +3,7 @@ title: Acceso a a página da conta
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Como posso aceder à minha página de conta pela primeira vez? {#how-can-i-access-my-account-page-for-the-first-time}
+# Como posso aceder à minha página de conta pela primeira vez?
 
 Bem-vindo ao Ultimate Multisite!
 

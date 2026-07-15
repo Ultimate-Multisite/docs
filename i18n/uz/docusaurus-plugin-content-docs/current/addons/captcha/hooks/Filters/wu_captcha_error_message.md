@@ -4,7 +4,7 @@ title: Filtr - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Filter: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# Filter: wu_captcha_error_message
 
 Captcha xato xabarini filterlang.
 

@@ -3,7 +3,7 @@ title: 'Lekcija 3: Nastavitev vašega omrežja'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lekcija 3: Nastavitev vašega omrežja {#lesson-3-setting-up-your-network}
+# Lekcija 3: Nastavitev vašega omrežja
 
 Čas je za gradnjo. V tej lekciji boste namestili Ultimate Multisite in konfigurirali temelje omrežja FitSite. Vsaka odločitev tukaj je sprejeta z mislijo na fitnes nišo.
 

@@ -3,7 +3,7 @@ title: E-postalar ve Duyurular Gönderme
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-postalar ve Yayınlar Gönderme (v2) {#sending-emails-and-broadcasts-v2}
+# E-postalar ve Yayınlar Gönderme (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 

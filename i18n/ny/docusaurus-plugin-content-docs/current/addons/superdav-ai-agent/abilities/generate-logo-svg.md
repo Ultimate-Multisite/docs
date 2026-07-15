@@ -3,7 +3,7 @@ title: Pangani SVG ya chizindikiro
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Panga Logo SVG {#generate-logo-svg}
+# Panga Logo SVG
 
 Luso la **Panga Logo SVG** limalola Theme Builder kupanga ndi kuyika ma logo a SVG okonzedwa mwapadera mwachindunji mu site yanu ya WordPress ndi kuyeretsa kodzichitira kokha kotetezeka pa namespace.
 

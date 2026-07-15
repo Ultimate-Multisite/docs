@@ -4,7 +4,7 @@ title: Shaandheeye - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Shaandheeye: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Shaandheeye: mu-migration/all_posts/default_args
 
 Wuxuu shaandheeyaa doodaha caadiga ah ee lagu weydiinayo qoraallada gudaha habka all_posts.
 

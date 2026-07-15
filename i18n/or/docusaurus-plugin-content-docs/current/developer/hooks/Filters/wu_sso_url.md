@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url {#filter-wussourl}
+# Filter: wu_sso_url
 
 କ୍ରସ୍-ଡୋମେନ୍ ଗ୍ରାହକ କାର୍ଯ୍ୟ ପାଇଁ ଫେରାଇବା ପୂର୍ବରୁ ତିଆରି ହୋଇଥିବା SSO URLଗୁଡ଼ିକୁ ଫିଲ୍ଟର୍ କରେ।
 

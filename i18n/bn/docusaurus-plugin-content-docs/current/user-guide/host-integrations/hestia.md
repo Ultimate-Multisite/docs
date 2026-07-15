@@ -3,7 +3,7 @@ title: Hestia Control Panel ইন্টিগ্রেশন
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel ইন্টিগ্রেশন {#hestia-control-panel-integration}
+# Hestia Control Panel ইন্টিগ্রেশন
 
 এই গাইডে Ultimate Multisite-এর Hestia ইন্টিগ্রেশন কীভাবে কনফিগার করতে হয় তা ব্যাখ্যা করা হয়েছে, যাতে আপনার নেটওয়ার্কে ম্যাপ করা ডোমেইনগুলো স্বয়ংক্রিয়ভাবে Hestia-তে Web Domain Alias হিসেবে যোগ (এবং মুছে ফেলা) হয়।
 

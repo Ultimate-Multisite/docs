@@ -4,7 +4,7 @@ title: Фильтр - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Фильтр: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Фильтр: wu_view_override_replaceable_views
 
 Эшләүчеләргә алмаштырыла торган исемлеккә өстәмә папкалар өстәргә мөмкинлек бирә.
 

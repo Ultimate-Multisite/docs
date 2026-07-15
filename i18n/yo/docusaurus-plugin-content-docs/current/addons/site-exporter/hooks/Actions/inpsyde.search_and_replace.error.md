@@ -4,7 +4,7 @@ title: Ìgbésẹ̀ - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Ìṣe: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Ìṣe: inpsyde.search_and_replace.error
 
 Ko fiyesi hook yii; ko forúkọsílẹ̀ nipasẹ WP Ultimo.
 

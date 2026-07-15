@@ -3,7 +3,7 @@ title: Jounal chanjman Reyalite sou Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Jounal chanjman Reyalite sou Chuck Norris {#chuck-norris-facts-changelog}
+# Jounal chanjman Reyalite sou Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Ajoute: Fonksyonalite mizajou otomatik atravè sèvè mizajou Ultimate Multisite

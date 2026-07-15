@@ -3,7 +3,7 @@ title: କଷ୍ଟମ୍ ବିକାଶ ସହାୟତା
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable ମଧ୍ୟରୁ କଷ୍ଟମାଇଜେସନ୍ ସହାୟତା କିପରି ନ ಪಡೆಯବେ? {#how-to-get-custom-development-help-from-codeable}
+# Codeable ମଧ୍ୟରୁ କଷ୍ଟମାଇଜେସନ୍ ସହାୟତା କିପରି ନ ಪಡೆಯବେ?
 
 କେବେ କେବେ ଆମକୁ ଆମର ୱାର୍କଫ୍‌ (network flows)କୁ ଆମ ଭାବରେ ଚାହିଁଥିବା ଅନୁଯାୟୀ କରିବା ପାଇଁ କିଛି ବହୁତ ଭଲ କଷ୍ଟମାଇଜେସନ୍ ଦରକାର ହୁଏ। ଯଦି ଆପଣ ଏହା ଖୋଜୁଛନ୍ତି, ତେବେ ଆମେ [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)କୁ ପରାମର୍ଶ କରୁଛୁ, ଏକ ସେଠା ଯେଉଁଠି ଆପଣ Ultimate Multisite ବିଷମତ ଅଭିଜ୍ଞ ଡେଭଲପର୍ (developers)ଙ୍କ ସହିତ ମିଳିପାରିବେ।
 

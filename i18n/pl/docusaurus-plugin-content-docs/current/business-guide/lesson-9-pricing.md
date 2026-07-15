@@ -3,7 +3,7 @@ title: 'Lekcja 9: Ceny dla zysku'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcja 9: Cennik dla Zysku {#lesson-9-pricing-for-profit}
+# Lekcja 9: Cennik dla Zysku
 
 W Lekcji 5 ustaliliśmy początkowe ceny dla planów FitSite. Teraz dopracujemy strategię cenową, używając technik, które zwiększają przychody, zachęcają do ulepszeń i zmniejszają rezygnacje (churn).
 

@@ -3,7 +3,7 @@ title: Integrazzjoni RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrà RunCloud {#runcloud-integration}
+# Integrà RunCloud
 
 ## Panoramika {#overview}
 RunCloud huwa piattaforma di gestjoni server basata fuq il cloud li ti permet a te deploya u gestire applicazzjonijiet web fasilment fuq i t-tvoli tal-cloud tiegħek. Dan l-integrà ti permet sincronizzazzjoni automatika tal-domain u gestjoni tal-SSL certificate bejn Ultimate Multisite u RunCloud.

@@ -3,7 +3,7 @@ title: Ukukhenketha kwiPhaneli yoLawulo
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ukukhenketha i-Admin Panel {#touring-the-admin-panel}
+# Ukukhenketha i-Admin Panel
 
 Ultimate Multisite ijolise ekubeni lula kwaye izicacisele kangangoko kunokwenzeka, kodwa ngesixhobo esinamandla kangaka kunokunceda ukuba nokhenketho olukhokelwayo. Masihambe kumaphepha e-admin ukuze sikuncede uzinze.
 

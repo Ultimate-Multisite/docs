@@ -4,7 +4,7 @@ title: Action - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# एक्शन: wu_domain_created {#action-wudomaincreated}
+# एक्शन: wu_domain_created
 
 जब कोई नया डोमेन मैपिंग जोड़ा जाता है, तो यह ट्रिगर होता है।
 

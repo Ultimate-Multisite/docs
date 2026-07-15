@@ -4,7 +4,7 @@ title: Akayunguruzo - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Akayunguruzo: network_options_to_copy {#filter-networkoptionstocopy}
+# Akayunguruzo: network_options_to_copy
 
 Kayungurura amahitamo asanzwe ya network yo gukoporora.
 

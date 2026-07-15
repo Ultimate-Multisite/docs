@@ -3,7 +3,7 @@ title: Udhëzues për përdorimin e Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Udhëzues për Përdorimin e Hooks {#hooks-usage-guide}
+# Udhëzues për Përdorimin e Hooks
 
 Ultimate Multisite ofron 200+ action hooks dhe 280+ filter hooks. Kjo faqe mbulon hooks më të përdorura, me shembuj praktikë. Për një referencë të plotë të gjeneruar automatikisht, shfletoni faqet e tjera në këtë seksion.
 

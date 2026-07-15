@@ -3,7 +3,7 @@ title: Izdelava integracije z registrarjem po meri
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Gradnja integracije registrarja po meri {#building-a-custom-registrar-integration}
+# Gradnja integracije registrarja po meri
 
 Dodatek Domain Seller uporablja vzorec **Integration Registry**. Vsak registrar je PHP razred, ki implementira `Domain_Selling_Capability` in se registrira prek action hooka `wu_domain_seller_register_capabilities`.
 

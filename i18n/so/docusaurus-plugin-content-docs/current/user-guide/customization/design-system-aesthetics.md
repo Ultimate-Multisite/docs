@@ -3,7 +3,7 @@ title: Xirfadka Naqshadaynta Nidaamka
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# مهارة جمالیات Design System {#design-system-aesthetics-skill}
+# مهارة جمالیات Design System
 
 **مهارة جمالیات Design System (Design System Aesthetics)** هي طريقة موجهة لتنقيح الهوية البصرية لموقعك. تساعدك هذه المهارة في اتخاذ قرارات متناسقة حول الخطوط، الألوان، المسافات، ورموز الحركة (motion tokens) التي تحدد نظام التصميم الخاص بك.
 

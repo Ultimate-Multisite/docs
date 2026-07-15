@@ -4,7 +4,7 @@ title: Filtre - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Filtre: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# Filtre: wu_magic_link_enforce_ip
 
 Filtra si s'ha d'aplicar la verificació de l'adreça IP.
 

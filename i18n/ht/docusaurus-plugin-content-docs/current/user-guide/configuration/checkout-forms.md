@@ -3,7 +3,7 @@ title: Fòm Kontèk
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fòms de Kontèkout (Checkout Forms) {#checkout-forms}
+# Fòms de Kontèkout (Checkout Forms)
 
 Fòms de kontèkout se yon fason fasil ak fleksib pou eseye diferan apwòch lè ou ap eseye konvèti nouvo kliyan yo.
 

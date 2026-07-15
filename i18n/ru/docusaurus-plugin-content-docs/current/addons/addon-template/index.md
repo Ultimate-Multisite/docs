@@ -3,9 +3,9 @@ title: Шаблон дополнения
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Шаблон дополнения {#addon-template}
+# Шаблон дополнения
 
-{{ADDON_DESCRIPTION}}
+Шаблон дополнения — Ultimate Multisite.
 
 ## Требования {#requirements}
 

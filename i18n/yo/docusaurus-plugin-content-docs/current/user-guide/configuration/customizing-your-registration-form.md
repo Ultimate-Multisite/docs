@@ -3,7 +3,7 @@ title: Ṣíṣe àtúnṣe Fọ́ọ̀mù Ìforúkọsílẹ̀ Rẹ
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ṣíṣe àdáni Fọ́ọ̀mù Ìforúkọsílẹ̀ rẹ {#customizing-your-registration-form}
+# Ṣíṣe àdáni Fọ́ọ̀mù Ìforúkọsílẹ̀ rẹ
 
 Láti jẹ́ kí nẹ́tíwọ́ọ̀kì rẹ dàbí ẹni tí ó yàtọ̀ sí gbogbo SaaS míràn tí a kọ́ lórí pẹpẹ WordPress, Ultimate Multisite jẹ́ kí o lè ṣe àwọn ojúewé ìforúkọsílẹ̀ àti ìwọlé rẹ ní àdáni pẹ̀lú ẹ̀yà **Àwọn Fọ́ọ̀mù Isanwo** wa.
 

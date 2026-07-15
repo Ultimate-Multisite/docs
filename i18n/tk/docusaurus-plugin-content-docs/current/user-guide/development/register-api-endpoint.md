@@ -3,7 +3,7 @@ title: API Uçun Düşdürme
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# The Ultimate Multisite Register API endpoint
 
 Bu tutorialda siz Ultimate Multisite /register API endpointini ulanyp, şeýle bir täze müşderini siziň ulgamanyz üçin doly giriş prosesini nireden başlatyp biljekdigi we ony Zapier bilen nädip amala aşyryp biljekdigini öwrenip geçersiňiz.
 

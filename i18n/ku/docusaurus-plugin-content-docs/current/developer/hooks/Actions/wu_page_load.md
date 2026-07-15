@@ -4,7 +4,7 @@ title: Çalakî - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Çalakî: wu_page_load {#action-wupageload}
+# Çalakî: wu_page_load
 
 Destûrê bide pêşdebirên plugin ku hookên zêde li rûpelên me zêde bikin.
 

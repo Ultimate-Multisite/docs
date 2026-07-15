@@ -3,7 +3,7 @@ title: Dii ka dii xogtaaga iyada oo loo marayo Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# وقفو: бүртгэл gacanta Zapier-ka loo isticmaal {#event-register-an-account-via-zapier}
+# وقفو: бүртгэл gacanta Zapier-ka loo isticmaal
 
 Maqaalka [Integrating Ultimate Multisite with Zapier](zapier.md) ku bilowaynaa sida loo isticmaalo Zapier si loogu sameeyo waxyaabo kala duwan oo ka mid ah Ultimate Multisite iyadoo la adeegsanayo triggers iyo events. Maqaalkan, waxaan kuu sheegi doonaa sida aad ula isdhegaysan karto apps-ka saddexaad (3rd party applications). Waxaan u isticmaalaynaa Google Sheets oo ah ilaha macluumaadka, ka dibna waxaan u dirnaa Ultimate Multisite si loo sameeyo бүртagaan.
 

@@ -4,7 +4,7 @@ title: 操作 - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# 动作: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# 动作: wu_domain_renewal_failed
 
 在域名续费尝试失败后触发。
 

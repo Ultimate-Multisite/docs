@@ -4,7 +4,7 @@ title: පෙරහන - wu_captcha_providers
 sidebar_label: wu_captcha_providers
 _i18n_hash: 92adfe76e94d91c23aedb75d44c60d93
 ---
-# පෙරහන: wu_captcha_providers {#filter-wucaptchaproviders}
+# පෙරහන: wu_captcha_providers
 
 ලබාගත හැකි captcha සපයන්නන් පෙරහන් කරන්න.
 

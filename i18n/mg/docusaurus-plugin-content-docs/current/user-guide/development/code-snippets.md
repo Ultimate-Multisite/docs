@@ -3,7 +3,7 @@ title: Teny an-tsipika
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ho an'ny v2 {#code-snippets-for-v2}
+# Code Snippets ho an'ny v2
 
 Amin'ny ankapobeny, ny code snippets ho an'ny **WordPress** dia ampiasaina mba hanaovana asa sasany izay mety mila plugin kely manokana. Ity code snippets ity dia apetraka ao amin'ny rakitra fototra na ny loha-taranaka (theme) anao (matetika ny rakitra functions.php an'ny theme anao), na azo ampiasaina ho MU plugin izany koa.
 

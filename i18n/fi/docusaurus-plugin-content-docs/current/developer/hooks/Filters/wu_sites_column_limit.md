@@ -4,7 +4,7 @@ title: Suodatin - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Suodatin: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Suodatin: wu_sites_column_limit
 
 Suodatin, jolla muutetaan get pluginssites -arvoa verkon sisällä.
 

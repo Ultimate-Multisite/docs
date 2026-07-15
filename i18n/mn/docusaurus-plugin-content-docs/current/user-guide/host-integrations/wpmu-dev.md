@@ -3,7 +3,7 @@ title: WPMU DEV нийлүүлэлт
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Нэгтгэл {#wpmu-dev-integration}
+# WPMU DEV Нэгтгэл
 
 ## Ерөнхий өгүүлэл {#overview}
 WPMU DEV бол WordPress сайтууд зориулсан хостинг, plugin болон үйлчилгээ үзүүлдэг бүрэн WordPress платформоор. Энэхүү нэгтгэл нь Ultimate Multisite болон WPMU DEV хостинг хоорондын домен синхронизуулалт болон SSL сертификатын удирдлагыг автоматаар хийгддэг.

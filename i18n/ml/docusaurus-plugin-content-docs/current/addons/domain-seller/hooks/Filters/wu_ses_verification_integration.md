@@ -4,7 +4,7 @@ title: Filter - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Filter: wu_ses_verification_integration
 
 Filter: SES ഇന്റഗ്രേഷൻ ഒബ്ജക്റ്റ് നൽകാൻ മറ്റ് കോഡുകളെ അനുവദിക്കുന്നു.
 

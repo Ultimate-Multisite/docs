@@ -3,7 +3,7 @@ title: Cúram na ghlúin Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Inseall Ultimate Multisite le Zapier {#integrating-ultimate-multisite-with-zapier}
+# Inseall Ultimate Multisite le Zapier
 
 I gcuid ar chláir, áit ag sbar éargáil ar [Webhooks](webhooks.md) agus conas a bheith i gceart le appachais third-party.
 

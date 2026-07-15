@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Iṣe: wp_ultimo_load {#action-wpultimoload}
+# Iṣe: wp_ultimo_load
 
 Ó máa ń ṣẹlẹ̀ nígbà tí gbogbo àwọn ìgbẹ́kẹ̀lé bá ti kojọpọ̀
 

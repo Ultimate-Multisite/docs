@@ -4,7 +4,7 @@ title: אַקציע - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# אַקציע: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# אַקציע: mu_migration/import/user/custom_data_before
 
 ווערט אויסגעפֿירט איידער מען עקספּאָרטירט די מנהג־באַניצער־דאַטן.
 

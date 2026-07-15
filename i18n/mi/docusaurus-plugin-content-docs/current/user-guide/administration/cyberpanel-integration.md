@@ -3,7 +3,7 @@ title: Whakawhanaungatanga CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Whakawhanaungatanga me CyberPanel Integration {#cyberpanel-integration}
+# Whakawhanaungatanga me CyberPanel Integration
 
 Ko tēnei whakatairanga ahau whakamārama i te ara hei whakauru i te Ultimate Multisite CyberPanel integration kia whai ake ana, ko e whai whakaaro ana ki te whakarite (me te whakatū) me te whero (whakamutunga) ngā domain inu i tō wāhi, ahakoaho ana ki te whakamahi virtual hosts i CyberPanel, me te whakatū auto-SSL anō.
 

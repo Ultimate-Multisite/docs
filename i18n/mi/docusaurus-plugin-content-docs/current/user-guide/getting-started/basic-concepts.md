@@ -3,7 +3,7 @@ title: Ngā Tikanga Pūrākau
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Konsepurua {#basic-concepts}
+# Konsepurua
 
 Mō te whakamārama mō he wāhi hou i WordPress Multisite me tētahi kore i pēhea e pēhea ana te whakamahinga i Ultimate Multisite, he tino pai. He mea nui te akorua ki te mārama i te platforma me te pēhea ia mahi katoa.
 

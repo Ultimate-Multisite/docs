@@ -3,7 +3,7 @@ title: Plaugu robežotā un sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 ieviest **Plugin Builder & Sandbox System**, kas ļauj AI asistentam izveidot, aktivizēt un pārvaldīt WordPress pluginus jūsu tīklā – visu ar drošu, izolētu sandbox vidi.
 

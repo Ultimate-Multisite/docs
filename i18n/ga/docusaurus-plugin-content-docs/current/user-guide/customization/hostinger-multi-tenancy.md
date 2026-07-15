@@ -3,7 +3,7 @@ title: Multi-Tenancy Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-Tenancy Hostinger {#hostinger-multi-tenancy}
+# Multi-Tenancy Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nua le cúramhacht multi-tenancy de Hostinger, ag curtha domáin a bhfaidh siad is éifeachtach i dtreo chuidaithe tenant sobhraíne (sovereign) senchéil, gan aon rud a bheith ag curtha le haghaidh curtha sinteadaim dearda le curtha mapping domáin atá ag curtha.
 

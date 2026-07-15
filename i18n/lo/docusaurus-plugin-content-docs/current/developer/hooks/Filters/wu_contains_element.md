@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# ຕົວກອງ: wu_contains_element {#filter-wucontainselement}
+# ຕົວກອງ: wu_contains_element
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາປ່ຽນຜົນລັບຂອງການຄົ້ນຫາເບື້ອງຕົ້ນ.
 

@@ -4,7 +4,7 @@ title: ફિલ્ટર - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# ફિલ્ટર: auth_redirect_scheme {#filter-authredirectscheme}
+# ફિલ્ટર: auth_redirect_scheme
 
 આ પ્રમાણીકરણ રીડાયરેક્ટ સ્કીમને ફિલ્ટર કરે છે.
 

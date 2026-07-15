@@ -4,7 +4,7 @@ title: फिल्टर - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# फिल्टर: wu_plan_product_types {#filter-wuplanproducttypes}
+# फिल्टर: wu_plan_product_types
 
 योजनाहरूका रूपमा व्यवहार गरिनुपर्ने उत्पादन प्रकारहरू फिल्टर गर्नुहोस्।
 

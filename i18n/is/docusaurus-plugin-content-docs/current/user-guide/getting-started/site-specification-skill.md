@@ -3,7 +3,7 @@ title: Skilfðing á vísindamannskildi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Färðingaskiljan (Site Specification Skill) {#site-specification-skill}
+# Färðingaskiljan (Site Specification Skill)
 
 **Färðingaskiljan** er byggt nálgun til að fanga ábyrgðar þín á síðunni, viðskiptavini og merki fyrirtækisins. Þessi upplýsingar eru geymd í minnisnúmeri **site_brief**, sem hjálpar myndum til að hafa saman á milli sessjuna til að veita eins konar, samhengi-ánhaugandi hjálp.
 

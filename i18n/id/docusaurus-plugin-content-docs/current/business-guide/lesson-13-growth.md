@@ -3,7 +3,7 @@ title: 'Pelajaran 13: Peningkatan Skala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Pelajaran 13: Meningkatkan Skala {#lesson-13-scaling-up}
+# Pelajaran 13: Meningkatkan Skala
 
 Anda sudah memiliki platform yang berfungsi dengan pelanggan berbayar. Pelajaran ini membahas cara mengembangkan operasi dari skala kecil menjadi bisnis yang berkelanjutan—mulai dari peningkatan infrastruktur, otomatisasi operasional, hingga peningkatan pendapatan per pelanggan.
 

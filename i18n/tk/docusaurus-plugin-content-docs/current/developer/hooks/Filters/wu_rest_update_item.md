@@ -4,7 +4,7 @@ title: Filtr - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Süzgüç: wu_rest_update_item {#filter-wurestupdateitem}
+# Süzgüç: wu_rest_update_item
 
 Haýyşy dowam etdirmäge rugsat berilýändigini ýa-da ýokdugyny süzýär.
 

@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# ක්‍රියාව: wu_duplicate_site {#action-wuduplicatesite}
+# ක්‍රියාව: wu_duplicate_site
 
 අඩවියක් අනුපිටපත් කිරීම සිදු වූ පසු සංවර්ධකයන්ට සම්බන්ධ වීමට ඉඩ දෙයි.
 

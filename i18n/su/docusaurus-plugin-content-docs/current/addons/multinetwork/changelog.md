@@ -3,7 +3,7 @@ title: Catetan Parobahan Multi-Jaringan
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Catetan Parobahan Multi-Network {#multi-network-changelog}
+# Catetan Parobahan Multi-Network
 
 ### 1.3.0 {#130}
 * Anyar: Panilik template jaringan — kotektak jeung tilik template jaringan ku panel langsung saméméh meuli.

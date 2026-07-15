@@ -3,7 +3,7 @@ title: Raadinta iyo Beddelka Otomaatigga ee Qoraallada Goobta Website-yada
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace in Site Templates (v2)
 
 _**Tani casharkaasi waxay u baahan tahay WP UItimo version 2.x.**_
 

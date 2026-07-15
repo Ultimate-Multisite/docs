@@ -3,7 +3,7 @@ title: Comunitat
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Com a la comunitat Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Com a la comunitat Ultimate Multisite
 
 La Comunitat Ultimate Multisite és un espai on pots contactar-me amb altres usuaris d'Ultimate Multisite i compartir últims, experiències i molts més. Per accedir a la Comunitat Ultimate Multisite, visita https://community.ultimatemultisite.com/home.
 

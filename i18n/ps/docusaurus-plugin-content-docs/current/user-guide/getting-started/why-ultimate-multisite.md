@@ -3,7 +3,7 @@ title: چې د Ultimate Multisite لپاره څه کیږي؟
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# چرا Ultimate Multisite {#why-ultimate-multisite}
+# چرا Ultimate Multisite
 
 اگر شما به این مقاله رسیده‌اید، احتمالاً شنیده‌اید که افزونه ما ممکن است راه حل برای تحقق ایده کسب‌وکار شما باشد. امیدواریم تا پایان این مطلب، پاسخ‌هایی که نیاز دارید را داشته باشید.
 

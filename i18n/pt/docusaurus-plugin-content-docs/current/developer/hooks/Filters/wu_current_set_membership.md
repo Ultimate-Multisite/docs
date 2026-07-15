@@ -4,7 +4,7 @@ title: Filtro - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Filtro: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Filtro: wu_current_set_membership
 
 Permite que os programadores modifiquem o comportamento padrão e definam a associação atual de forma diferente.
 

@@ -3,7 +3,7 @@ title: Fanamarihana Fialana
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Fanamarihana Fanavaozana (Release Notes) {#release-notes}
+# Fanamarihana Fanavaozana (Release Notes)
 
 ## Versio 2.13.0 — Natao tamin'ny 2026-06-05 {#version-2130--released-on-2026-06-05}
 

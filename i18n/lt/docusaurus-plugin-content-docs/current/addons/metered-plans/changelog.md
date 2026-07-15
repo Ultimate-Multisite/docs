@@ -3,7 +3,7 @@ title: Pagal naudojimą apmokestinamų planų pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans pakeitimų žurnalas {#metered-plans-changelog}
+# Metered Plans pakeitimų žurnalas
 
 Versija 1.1.0 - Išleista 2026-05-05
 - Nauja: AI token atsiskaitymas multisite antrinėms svetainėms — stebėkite ir apmokestinkite AI token naudojimą klientų svetainėse su konfigūruojamais tarifais už token

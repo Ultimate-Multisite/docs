@@ -3,7 +3,7 @@ title: Ukudala imveliso yakho yokuqala yobhaliso
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ukwenza Imveliso yakho yokuqala yoMrhumo (v2) {#creating-your-first-subscription-product-v2}
+# Ukwenza Imveliso yakho yokuqala yoMrhumo (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku lelama abasebenzisi be-Ultimate Multisite inguqulelo 2.x kuphela. Ukuba usebenzisa inguqulelo 1.x,**_ **_**jonga eli nqaku**_**.
 

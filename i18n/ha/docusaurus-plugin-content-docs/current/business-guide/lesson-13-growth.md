@@ -3,7 +3,7 @@ title: 'Darasi na 13: Faɗaɗawa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Darasi na 13: Faɗaɗawa {#lesson-13-scaling-up}
+# Darasi na 13: Faɗaɗawa
 
 Kana da dandali mai aiki tare da abokan ciniki masu biyan kuɗi. Wannan darasi yana bayani kan yadda za a girma daga ƙaramin aiki zuwa kasuwanci mai ɗorewa -- faɗaɗa ababen more rayuwa, sarrafa ayyuka ta atomatik, da ƙara kudin shiga daga kowane abokin ciniki.
 

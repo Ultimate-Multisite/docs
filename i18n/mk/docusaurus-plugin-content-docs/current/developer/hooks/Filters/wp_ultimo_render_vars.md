@@ -4,7 +4,7 @@ title: Филтер - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Филтер: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Филтер: wp_ultimo_render_vars
 
 Им овозможува на развивачите на приклучоци глобално да додадат дополнителна променлива во контекстот за рендерирање.
 

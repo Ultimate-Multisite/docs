@@ -3,7 +3,7 @@ title: Ho fetola lapa le fetileng
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Goala ho Hoho (v2) {#upgrading-a-plan-v2}
+# Goala ho Hoho (v2)
 
 _**LIPOTSE E KOTSI: Le tsela e thisa e le seo se Ultimate Multisite v2.x.**_
 

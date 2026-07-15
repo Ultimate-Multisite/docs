@@ -4,7 +4,7 @@ title: Sefa - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Sefa: network_options_to_copy {#filter-networkoptionstocopy}
+# Sefa: network_options_to_copy
 
 Inosefa sarudzo dze network dziripo pakutanga kuti dzikopwe.
 

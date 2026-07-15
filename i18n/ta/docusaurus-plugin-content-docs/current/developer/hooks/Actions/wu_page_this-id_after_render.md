@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_{$this->id}_after_render {#action-wupagethis-idafterrender}
+# Action: wu_page_{$this->id}_after_render
 
 பக்கம் காட்டப்பட்ட பிறகு கூடுதல் உள்ளடக்கத்தைச் சேர்க்க இது plugin உருவாக்குநர்களுக்கு அனுமதிக்கிறது.
 

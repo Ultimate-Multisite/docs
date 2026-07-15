@@ -3,7 +3,7 @@ title: Nega Ultimate Multisite ne?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ultimate Multisite Niyem Qach? {#why-ultimate-multisite}
+# Ultimate Multisite Niyem Qach?
 
 Agar siz bu maqolaga yetib kelsa bo'lsangiz, ehtimol bizning pluginimiz biznes g'oyangizni amalga oshirish uchun yechim bo'lishi mumkinligini eshitgan bo'lasiz. Biz umid qilamizki, ushbu matn oxirida sizga kerakli javoblarni topasiz.
 

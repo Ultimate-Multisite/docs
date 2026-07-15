@@ -3,7 +3,7 @@ title: '제11과: 고객 찾기'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesson 11: 고객 확보하기 {#lesson-11-finding-customers}
+# Lesson 11: 고객 확보하기
 
 고객이 없는 훌륭한 플랫폼은 그저 취미 생활에 불과합니다. 이번 레슨에서는 틈새 시장(niche vertical)에서 고객을 확보하는 방법을 다룹니다. 이는 특정 산업에 집중하기 때문에 효과를 발휘하는 전략들입니다.
 

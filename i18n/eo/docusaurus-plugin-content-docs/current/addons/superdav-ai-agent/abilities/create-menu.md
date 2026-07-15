@@ -3,7 +3,7 @@ title: Krei menuon
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Krei Menuon {#create-menu}
+# Krei Menuon
 
 La kapablo **Krei Menuon** kreas WordPress-navigadajn menuojn kun subteno por apartaj navigadaj etikedoj malsamaj de paĝaj titoloj.
 

@@ -3,7 +3,7 @@ title: Istoric de modificări al Selectorului de Limbă
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Jurnal de modificări pentru Selectorul de Limbă {#language-selector-changelog}
+# Jurnal de modificări pentru Selectorul de Limbă
 
 Versiune: 1.1.3 - Lansat pe 2026-05-05
 * Corecție: Variabilele de intrare sunt acum validate și numele hook-urilor personalizate sunt prefixate pentru a preveni conflictele cu plugin-uri terțe

@@ -3,7 +3,7 @@ title: 'Aralin 7: Gawin Mong Sa Iyo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lesson 7: Gawin Mong Sarili Mo {#lesson-7-making-it-yours}
+# Lesson 7: Gawin Mong Sarili Mo
 
 Hindi dapat kailanman maramdaman ng mga customer mo na gumagamit sila ng "isang WordPress plugin." Dapat nilang maramdaman na gumagamit sila ng FitSite — isang platform na ginawa para sa industriya nila. Tinatalakay ng lesson na ito ang branding, white-labeling, at kung paano gawing produkto ang platform.
 

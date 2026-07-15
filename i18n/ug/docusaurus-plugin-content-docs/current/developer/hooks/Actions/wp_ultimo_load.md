@@ -4,7 +4,7 @@ title: مەشغۇلات - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# مەشغۇلات: wp_ultimo_load {#action-wpultimoload}
+# مەشغۇلات: wp_ultimo_load
 
 بارلىق بېقىنىشلار يۈكلەنگەندە قوزغىلىدۇ
 

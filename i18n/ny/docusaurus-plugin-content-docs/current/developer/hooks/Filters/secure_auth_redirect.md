@@ -4,7 +4,7 @@ title: Sefa - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Fyuluta: secure_auth_redirect {#filter-secureauthredirect}
+# Fyuluta: secure_auth_redirect
 
 Imasefa ngati kugwiritsa ntchito kupatutsira kotetezeka kwa kutsimikizira.
 

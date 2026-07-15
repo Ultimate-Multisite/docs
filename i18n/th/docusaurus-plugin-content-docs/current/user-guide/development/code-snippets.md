@@ -3,7 +3,7 @@ title: โค้ดสนิปเพต
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets สำหรับ v2 {#code-snippets-for-v2}
+# Code Snippets สำหรับ v2
 
 โดยทั่วไปแล้ว code snippets สำหรับ **WordPress** ใช้เพื่อทำงานบางอย่างที่อาจต้องใช้ปลั๊กอินขนาดเล็กแยกต่างหาก code snippets เหล่านี้จะวางไว้ในไฟล์หลักของ WordPress หรือไฟล์ธีม (โดยทั่วไปคือไฟล์ functions.php ของธีมที่คุณใช้) หรือสามารถใช้เป็น MU plugin ได้
 

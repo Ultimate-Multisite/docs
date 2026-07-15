@@ -3,7 +3,7 @@ title: Panoramika Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panoramika tal-Dashboard {#dashboard-overview}
+# Panoramika tal-Dashboard
 
 Ultimate Multisite għandu **Dashboard** dedikata taħt il-menu Ultimate Multisite, u jiddeq widget biex jiddeq fil-Network Dashboard. Dan l-artikolu jikkawża x'la tista' tqasimu fless.
 

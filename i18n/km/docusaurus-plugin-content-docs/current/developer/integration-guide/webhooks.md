@@ -3,7 +3,7 @@ title: ការគ្រប់គ្រង Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# ការដោះស្រាយ webhook {#webhook-handling}
+# ការដោះស្រាយ webhook
 
 បង្កើតចំណុចបញ្ចប់ webhook ផ្ទាល់ខ្លួន ដើម្បីទទួលព្រឹត្តិការណ៍ពីសេវាខាងក្រៅ និងធ្វើសមកាលកម្មទិន្នន័យជាមួយ Ultimate Multisite។
 

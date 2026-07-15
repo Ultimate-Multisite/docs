@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# ຕົວກອງ: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# ຕົວກອງ: wu_is_mcp_enabled
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາສ່ວນເສີມບັງຄັບສະຖານະທີ່ກຳນົດໃຫ້ສຳລັບອະແດບເຕີ MCP.
 

@@ -3,7 +3,7 @@ title: Muligheder for pluginhåndtering
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin-administrationsfunktioner {#plugin-management-abilities}
+# Plugin-administrationsfunktioner
 
 Gratis AI Agent v1.5.0 leveres med **7 plugin-administrationsfunktioner**, som AI-assistenten kan kalde under en samtale. Disse funktioner giver programmatisk kontrol over WordPress plugins installeret via [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

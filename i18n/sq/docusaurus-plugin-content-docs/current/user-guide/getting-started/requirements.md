@@ -3,7 +3,7 @@ title: Kërkesat
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Kërkesat për Ultimate Multisite {#ultimate-multisite-requirements}
+# Kërkesat për Ultimate Multisite
 
 E para që mund ta pyesni veten para se të nisni me blerjen e Ultimate Multisite është çfarë janë kërkesat për të ekzeguar plugin-in ton. Mirë, fatkeqësisht, ka vetëm disa kërkesa bazë për të ekzeguar Ultimate Multisite: një **emër domen** , një **provejues hosting** i mirë dhe një instalim WordPress **Multisite**. Kjo është gjithçka që ju nevojitet!
 

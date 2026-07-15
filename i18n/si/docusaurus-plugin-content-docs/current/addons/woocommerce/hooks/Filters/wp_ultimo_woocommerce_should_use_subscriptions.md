@@ -4,7 +4,7 @@ title: පෙරහන - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# පෙරහන: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# පෙරහන: wp_ultimo_woocommerce_should_use_subscriptions
 
 WooCommerce Subscriptions භාවිතය බලහත්කාරයෙන් ක්‍රියාත්මක කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
 

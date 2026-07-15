@@ -3,7 +3,7 @@ title: Registreerimise protsess
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registreerimisviis (v2) {#the-registration-flow-v2}
+# Registreerimisviis (v2)
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 

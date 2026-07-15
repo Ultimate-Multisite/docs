@@ -4,7 +4,7 @@ title: Ketso - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Ketso: wu_before_light_ajax {#action-wubeforelightajax}
+# Ketso: wu_before_light_ajax
 
 Maemong a mang, re tla hloka ho kenya matla a eketsehileng ho sebetsana le liketso.
 

@@ -4,7 +4,7 @@ title: Aktion - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Aktion: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Aktion: wu_checkout_order_created
 
 Ausgelöst, nachdem die Bestellung vollständig zusammengestellt wurde.
 

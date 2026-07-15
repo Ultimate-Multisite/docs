@@ -3,7 +3,7 @@ title: Integrasi Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integration of Ultimate Multisite with Zapier {#integrating-ultimate-multisite-with-zapier}
+# Integration of Ultimate Multisite with Zapier
 
 بۆ یەکێک لە بابەتەکاندا، باس لە [Webhooks](webhooks.md) کرد و چۆن دەتوانرێت بۆ پەیوەندی لەگەڵ ئەپڵیکاتەکانی تری بەکاربهێنرێت.
 

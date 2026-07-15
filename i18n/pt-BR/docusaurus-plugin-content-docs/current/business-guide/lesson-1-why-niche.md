@@ -3,7 +3,7 @@ title: 'Lição 1: Por que Nicho Vence'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lição 1: Por Que o Nicho Vence {#lesson-1-why-niche-wins}
+# Lição 1: Por Que o Nicho Vence
 
 Antes de tocarmos em qualquer software, você precisa entender por que construir para um público específico é a decisão mais importante que você tomará.
 

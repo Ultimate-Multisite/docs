@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url {#filter-wureturnurl}
+# Filter: wu_return_url
 
 ડેવલપર્સને ચેકઆઉટ પ્રક્રિયાઓ પછી ઉપયોગમાં લેવાતા ગેટવેના રીટર્ન URL માં ફેરફાર કરવાની મંજૂરી આપે છે.
 

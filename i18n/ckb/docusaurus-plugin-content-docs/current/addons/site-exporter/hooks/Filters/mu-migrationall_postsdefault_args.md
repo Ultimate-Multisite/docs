@@ -4,7 +4,7 @@ title: پاڵێوەر - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# فلتەر: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# فلتەر: mu-migration/all_posts/default_args
 
 ئارگومێنتە بنەڕەتییەکان بۆ پرسیارکردنی بابەتەکان لە ڕێگای میتۆدی all_posts فلتەر دەکات.
 

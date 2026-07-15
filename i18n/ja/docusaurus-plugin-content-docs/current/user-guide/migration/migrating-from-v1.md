@@ -3,7 +3,7 @@ title: V1からの移行
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 からの移行 {#migrating-from-v1}
+# V1 からの移行
 
 ## Ultimate Multisite は、元の 1.x 系リリースから 2.x 系リリースへ切り替わりました。 {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

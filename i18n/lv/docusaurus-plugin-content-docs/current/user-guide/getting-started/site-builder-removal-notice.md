@@ -3,7 +3,7 @@ title: Paziņojums par Site Builder režīma atgriešanu
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Informācija par Site Builder režīma atgriešanu {#site-builder-mode-removal-notice}
+# Informācija par Site Builder režīma atgriešanu
 
 **Site Builder režīms ir izslēgts Superdav AI Agent v1.12.0 versijā.** Ja jūs lietojat Site Builder režīmu, jums jāmigrē uz **Setup Assistant agentu**, lai veidotu tēmām un iestatītu vietni.
 

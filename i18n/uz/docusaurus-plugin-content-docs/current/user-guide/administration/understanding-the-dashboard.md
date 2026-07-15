@@ -3,7 +3,7 @@ title: Dashboardni tushunish
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboardni Tushunish {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboardni Tushunish
 
 Ultimate Multisite ning yanada murakkab sozlamalar va operatsion jihatlari bilan tanishishdan oldin, dashboard haqida ko'rib chiqamiz.
 

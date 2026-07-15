@@ -3,7 +3,7 @@ title: Ngwaọrụ na Nhazi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ngwaọrụ na Nhazi {#tools-and-configuration}
+# Ngwaọrụ na Nhazi
 
 Theme Builder na-eji otu ìgwè ngwaọrụ nyochaa, mepụta atụmatụ, ma wuo WordPress saịtị gị. Na ụdị 1.16.0, **sd-ai-agent/site-scrape bụzi ngwaọrụ Tier 1**, nke na-eme ka ọ dị na ndabara na Theme Builder. Superdav AI Agent v1.18.0 na-ewebatakwa ngwugwu Advanced ibe a na-ekesa iche maka usoro ọrụ ndị mmepe a tụkwasịrị obi; ngwaọrụ ndị ahụ abụghị akụkụ nke ngwugwu isi WordPress.org ma a ga-etinyerịrị ma nye ha ikike iche.
 

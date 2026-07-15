@@ -4,7 +4,7 @@ title: פילטער - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# פֿילטער: wu_setup_wizard {#filter-wusetupwizard}
+# פֿילטער: wu_setup_wizard
 
 דערלויבט אַנטוויקלער צוצולייגן נאָך סעטאַפּ־וויזאַרד שריט.
 

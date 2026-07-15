@@ -3,7 +3,7 @@ title: Рӯйхати оғози кор бо Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Рушёи Обудӣ барои Theme Builder {#theme-builder-onboarding-flow}
+# Рушёи Обудӣ барои Theme Builder
 
 Superdav AI Agent v1.12.0 омодааст, ки **рушёи обудӣ (onboarding flow) Theme Builder**-ро пешниҳод мекунад, ки ба шумо дар интихоби аввалин таъсисолот, як блок-темаи худкорро таҳия кардан ёрӣ мерасонад. Ин модаи қадимии Site Builder-ро бо муносибатҳои мувофиқтар ва ёрӣ аз ҷониби агент иваз мекунад.
 

@@ -3,7 +3,7 @@ title: Maareynta Canshuuraha
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Maareynta Canshuurta {#tax-handling}
+# Maareynta Canshuurta
 
 Ultimate Multisite waxa uu leeyahay module ururinta canshuurta oo ku dhex jira plugin-keena aasaasiga ah, sidaas darteed haddii aad u baahan tahay inaad ururiso canshuuraha iibka ee qorshayaashaada, xirmooyinkaaga iyo adeegyadaada, si fudud ayaad sidaas u samayn kartaa adigoon u baahnayn inaad rakibto add-ons.
 

@@ -4,7 +4,7 @@ title: Filtrilo - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filtrilo: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filtrilo: wu_is_mcp_enabled
 
 Permesu al kromprogramaj programistoj devigi donitan staton por la MCP-adaptilo.
 

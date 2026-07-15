@@ -4,7 +4,7 @@ title: Ìgbésẹ̀ - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Ìṣe: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Ìṣe: wu_handle_user_meta_fields
 
 Gba àwọn olùdàgbàsókè plugin láàyè láti fi user meta data pamọ́ ní àwọn ọ̀nà ọ̀tọ̀ bí wọ́n bá nílò rẹ̀.
 

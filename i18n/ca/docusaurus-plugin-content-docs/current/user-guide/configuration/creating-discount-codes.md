@@ -3,7 +3,7 @@ title: Crear codis de descompte
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Crear Códigos de Descompte (v2) {#creating-discount-codes-v2}
+# Crear Códigos de Descompte (v2)
 
 _**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
 

@@ -4,7 +4,7 @@ title: フィルタ - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# フィルタ: wu_contains_element {#filter-wucontainselement}
+# フィルタ: wu_contains_element
 
 開発者が初期検索結果を変更できるようにします。  
 これはサードパーティのビルダーなどに便利です。

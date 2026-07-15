@@ -3,7 +3,7 @@ title: Te Tīmata ki te Whanaketanga Tāpiritanga
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Whanaketanga Tāpiri {#addon-development}
+# Whanaketanga Tāpiri
 
 ## Hanganga Tāpiri {#addon-structure}
 

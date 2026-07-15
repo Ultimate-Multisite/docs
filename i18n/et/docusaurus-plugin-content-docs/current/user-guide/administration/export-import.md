@@ -5,7 +5,7 @@ title: |+
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportimine ja importimisele {#export--import}
+# Eksportimine ja importimisele
 
 Ultimate Multisite 2.9.0 lisab **Tools > Export & Import** (Nüüd: Nüüd: Lahendused > Eksporti ja import) menüüme ühe-site eksporti ja importimise tööriistaga. Kasutage seda, kui vajate üht WordPress-saiti pakendada ZIP-failiks, seda ZIP-ilt taastada või saiti liikumiseks compatibilsete Ultimate Multisite ja ühe-site WordPress-installaatsioonide vahel.
 

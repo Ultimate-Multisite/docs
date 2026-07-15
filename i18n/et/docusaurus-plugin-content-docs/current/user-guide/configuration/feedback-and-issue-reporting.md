@@ -3,7 +3,7 @@ title: Kliendifeedback ja probleemide raportimine
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klientide annused ja probleemide raportimine {#customer-feedback--issue-reporting}
+# Klientide annused ja probleemide raportimine
 
 Gratis AI Agent v1.5.0 on lisatud sisemine süsteem, mis võimaldab kasutajatel endiselt esitada tagasiannutusi ja raportida probleeme otseselt kesksechatina. See süsteem hõlmab nõusoleku haldamist, automaatset raportimendist ja AI-assistitud triagimist backendi tasemel.
 

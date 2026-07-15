@@ -3,7 +3,7 @@ title: Loco Translate փոփոխությունների մատյան
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate փոփոխությունների մատյան {#loco-translate-changelog}
+# Loco Translate փոփոխությունների մատյան
 
 ### 1.0.1 {#101}
 * Բարելավված համատեղելիություն Loco Translate-ի վերջին տարբերակի հետ

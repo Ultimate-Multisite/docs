@@ -3,7 +3,7 @@ title: توثيق المطورين
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# وثائق المطوّرين {#developer-documentation}
+# وثائق المطوّرين
 
 يوفّر هذا الدليل للمطوّرين كل ما يلزم للتكامل مع Ultimate Multisite أو توسيعه أو تطوير إضافات له. يحوّل Ultimate Multisite شبكة WordPress Multisite إلى منصة موقع كخدمة (WaaS).
 

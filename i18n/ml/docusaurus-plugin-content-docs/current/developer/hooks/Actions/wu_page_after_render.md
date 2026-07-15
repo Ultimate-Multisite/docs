@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 നമ്മൾ പേജ് പ്രിന്റ് ചെയ്തതിന് ശേഷം അധിക ഉള്ളടക്കം ചേർക്കാൻ പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ഇത് അനുവദിക്കുന്നു.
 

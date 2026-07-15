@@ -3,7 +3,7 @@ title: RunCloud Integrazioa
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integrazioa {#runcloud-integration}
+# RunCloud Integrazioa
 
 ## Deskuntzua {#overview}
 RunCloud da server-ek garrantzitsu plataforma dauna dago, zein irakurri eta administrazio dezake web aplikazioak zure cloud server-etan lehiak. Hau integrazioak Ultimate Multisite eta RunCloud-ren artean automatik domain sync edo SSL certificate managementa eragiten du.

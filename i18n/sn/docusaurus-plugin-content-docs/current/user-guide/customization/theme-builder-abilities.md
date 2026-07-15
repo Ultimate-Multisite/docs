@@ -3,7 +3,7 @@ title: Zvinodzidzwa dzemabasa ya Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Feraura Zvinore: Scaffold uye Kuti Usimone Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Feraura Zvinore: Scaffold uye Kuti Usimone Block Themes
 
 Superdav AI Agent v1.12.0 inogona kuita zvinhu maviri zvinopotera kuti uwezere kutanga (generate) uye kusimone (deploy) block themes dzako dzinotamba (custom) nekuti unogona kutaura nechat interface.
 

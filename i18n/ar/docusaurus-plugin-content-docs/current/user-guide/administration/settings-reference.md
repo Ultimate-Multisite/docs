@@ -3,7 +3,7 @@ title: مرجع الإعدادات
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# مرجع الإعدادات {#settings-reference}
+# مرجع الإعدادات
 
 تتبع هذه الصفحة الإعدادات التي تؤثر في الإدارة اليومية وتغييرات السلوك الأخيرة في Ultimate Multisite.
 

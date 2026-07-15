@@ -3,7 +3,7 @@ title: 'Leçon 6 : L''expérience d''inscription'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leçon 6 : L'expérience d'inscription {#lesson-6-the-signup-experience}
+# Leçon 6 : L'expérience d'inscription
 
 Le processus de paiement est là où l'intérêt se transforme en revenus. Un processus d'inscription confus ou générique fait fuir les clients. Un flux spécifique à une niche qui parle leur langage et qui semble facile de bout en bout les convertit.
 

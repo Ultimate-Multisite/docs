@@ -4,7 +4,7 @@ title: Gnìomh - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Gnìomh: wu_page_added {#action-wupageadded}
+# Gnìomh: wu_page_added
 
 Leig le luchd-leasachaidh plugin rudan a bharrachd a ruith nuair a thèid duilleagan a chlàradh.
 

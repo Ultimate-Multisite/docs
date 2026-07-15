@@ -3,7 +3,7 @@ title: Zapier అనుసంధానం
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ను Zapier తో సమగ్రపరచడం {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite ను Zapier తో సమగ్రపరచడం
 
 వ్యాసాలలో ఒకదానిలో, మేము [Webhooks](webhooks.md) గురించి, అలాగే వాటిని మూడవ పక్ష అప్లికేషన్‌లతో సమగ్రపరచడానికి ఎలా ఉపయోగించవచ్చో చర్చించాము.
 

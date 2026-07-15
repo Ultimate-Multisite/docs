@@ -3,7 +3,7 @@ title: Hükümdar Geçiş İş Akymy
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Egemen Migrasi İş Akışı {#sovereign-migration-workflow}
+# Egemen Migrasi İş Akışı
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitesini egemen kiracı altyapısına taşımak için migrasyon doğrulama kapılarını əlavə edir.
 

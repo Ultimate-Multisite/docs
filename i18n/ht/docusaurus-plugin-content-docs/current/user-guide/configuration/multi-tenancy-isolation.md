@@ -3,7 +3,7 @@ title: Izolasyon Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolasyon Multi-Tenancy (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Isolasyon Multi-Tenancy (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aksepte izolasyon bazabase ak dosyer pou chak sous-site pou yon moun ki gen kont pou yo. Sa kenbe done tenant yo sepà pandan ou kenbe disponiblite rezo, faktirizasyon, ak administrasyon la menm jan an.
 

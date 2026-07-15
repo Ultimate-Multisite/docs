@@ -3,7 +3,7 @@ title: ทำความเข้าใจแดชบอร์ด
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# ทำความเข้าใจแดชบอร์ด Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# ทำความเข้าใจแดชบอร์ด Ultimate Multisite
 
 ก่อนที่เราจะลงลึกถึงตัวเลือกการกำหนดค่าขั้นสูงและการใช้งาน Ultimate Multisite มาดูแดชบอร์ดกันก่อน
 

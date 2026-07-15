@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# କାର୍ଯ୍ୟ: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# କାର୍ଯ୍ୟ: wu_domain_transfer_completed
 
 ଡୋମେନ୍ ସ୍ଥାନାନ୍ତରଣ ସମ୍ପୂର୍ଣ୍ଣ ହେବା ପରେ ଚାଲୁ ହୁଏ।
 

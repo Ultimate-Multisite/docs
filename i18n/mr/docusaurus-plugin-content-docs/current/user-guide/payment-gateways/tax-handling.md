@@ -3,7 +3,7 @@ title: कर हाताळणी
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# कर हाताळणी {#tax-handling}
+# कर हाताळणी
 
 Ultimate Multisite मध्ये आमच्या मुख्य plugin मध्येच कर संकलन module अंगभूत आहे, त्यामुळे तुम्हाला तुमच्या plans, packages आणि services वर विक्रीकर गोळा करायचे असल्यास, कोणतेही add-ons install करण्याची गरज न पडता तुम्ही ते सहज करू शकता.
 

@@ -4,7 +4,7 @@ title: Filter - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 സുരക്ഷിതമായ ഓതന്റിക്കേഷൻ റീഡയറക്റ്റ് ഉപയോഗിക്കണോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

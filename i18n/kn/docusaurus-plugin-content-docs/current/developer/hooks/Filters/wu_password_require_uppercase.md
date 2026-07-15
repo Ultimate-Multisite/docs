@@ -4,7 +4,7 @@ title: Filter - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filter: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filter: wu_password_require_uppercase
 
 ಪಾಸ್‌ವರ್ಡ್‌ಗಳಲ್ಲಿ ಅಪ್ಪರ್ಕೇಸ್ ಅಕ್ಷರಗಳನ್ನು (uppercase letters) ಕೇಳಬೇಕೇ ಇಲ್ಲವೇ ಎಂಬುದನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 

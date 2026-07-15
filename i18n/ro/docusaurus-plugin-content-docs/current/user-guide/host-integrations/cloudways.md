@@ -3,7 +3,7 @@ title: Integrare Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrare Cloudways {#cloudways-integration}
+# Integrare Cloudways
 
 ## Prezentare generală {#overview}
 Cloudways este o platformă de găzduire cloud administrată care îți permite să implementezi site-uri WordPress pe diverși furnizori cloud precum DigitalOcean, AWS, Google Cloud și alții. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și Cloudways.

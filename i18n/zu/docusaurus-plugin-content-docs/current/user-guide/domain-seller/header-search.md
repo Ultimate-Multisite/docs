@@ -3,7 +3,7 @@ title: Usesho Lwesizinda Lwesihloko
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Usesho Lwe-Domain Ku-Header {#header-domain-search}
+# Usesho Lwe-Domain Ku-Header
 
 Sebenzisa lokhu kulungiselelwa lapho ufuna ifomu elincane le-header eliqala usesho lwe-domain, bese livumela ikhasimende ukuthi likhethe kuma-domain atholakalayo ngaphakathi kwe-Ultimate Multisite checkout.
 

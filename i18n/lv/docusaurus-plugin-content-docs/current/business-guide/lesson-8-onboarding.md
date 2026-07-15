@@ -3,7 +3,7 @@ title: 'Nodarbība 8: Klientu ievadapmācība'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8. nodarbība: Klientu ievadapmācība {#lesson-8-customer-onboarding}
+# 8. nodarbība: Klientu ievadapmācība
 
 Panākt, lai klients reģistrējas, ir tikai puse darba. Ja viņš piesakās, jūtas apjucis un nekad neatgriežas, jūs viņu esat zaudējuši. Šajā nodarbībā tiek veidota pieredze, kas jaunu reģistrāciju pārvērš aktīvā, iesaistītā klientā.
 

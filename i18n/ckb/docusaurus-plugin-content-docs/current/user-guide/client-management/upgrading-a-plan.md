@@ -3,7 +3,7 @@ title: نوياندنی پلانی
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# به‌روزرساندن پکیج (نسخه ۲) {#upgrading-a-plan-v2}
+# به‌روزرساندن پکیج (نسخه ۲)
 
 _**توجه مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 

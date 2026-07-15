@@ -4,7 +4,7 @@ title: Филтр - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Филтр: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Филтр: wu_woocommerce_line_item_params
 
 Параметрҳоеро, ки барои эҷоди унсурҳои сатри сабад дар WooCommerce Cart истифода мешаванд, пеш аз равона кардани муштарӣ ба WooCommerce checkout филтр мекунад.
 

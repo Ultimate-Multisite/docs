@@ -3,7 +3,7 @@ title: Wakilan da aka gina a ciki
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents na Ciki {#built-in-agents}
+# Agents na Ciki
 
 Gratis AI Agent v1.9.0 yana zuwa da agents biyar na ciki, kowanne an riga an saita shi da tarin kayan aiki masu mayar da hankali, system prompt da aka keɓance, da shawarwarin farawa da suka dace da ayyuka na yau da kullum a wannan fanni. Sauyawa tsakanin agents yana canza abin da mataimakin zai iya yi da yadda yake amsawa — ba tare da wani saiti daga gare ka ba. Superdav AI Agent v1.18.0 zai iya ƙara kayan aiki masu lura da jadawali, bayanan tunatarwa, ƙofofin amincewa, da sanarwar SMS zuwa waɗannan hanyoyin aiki idan an saita haɗaɗɗun da suka dace.
 

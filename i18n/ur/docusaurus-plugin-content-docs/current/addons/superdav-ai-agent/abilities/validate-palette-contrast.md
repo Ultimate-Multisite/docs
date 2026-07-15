@@ -3,7 +3,7 @@ title: پالت رنگ کا تضاد جانچیں
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# رنگوں کے تضاد کا جائزہ لینا (Validate Palette Contrast) {#validate-palette-contrast}
+# رنگوں کے تضاد کا جائزہ لینا (Validate Palette Contrast)
 
 **Validate Palette Contrast** کی صلاحیت آپ کے ڈیزائن پیلیٹ میں موجود رنگوں کے جوڑوں کا جائزہ لیتی ہے تاکہ یہ تصدیق ہو سکے کہ وہ WCAG (Web Content Accessibility Guidelines) کے مطابق ہیں، اس سے پہلے کہ آپ انہیں اپنے تھیم پر لاگو کریں۔
 

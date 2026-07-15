@@ -3,7 +3,7 @@ title: یەکگرتووکردنی پۆلێپەری Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integration sa Control Panel Hestia {#hestia-control-panel-integration}
+# Integration sa Control Panel Hestia
 
 Evîlê ku li gorinên Ultimate Multisite Hestia integrasyonê ji bo ştekerkirina domênên mapkirî yên di neteweyê wekî Web Domain Aliases bi awayekî avtomatîk (bi destpêkirin û hatin hatiribin) a Hestia.
 

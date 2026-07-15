@@ -3,7 +3,7 @@ title: የችሎታዎች ማጣቀሻ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# შესაძლებ entail (Abilities Reference) {#abilities-reference}
+# შესაძლებ entail (Abilities Reference)
 
 Capabilities ဆိုတာ Gratis AI Agent သင့် WordPress install ပေါ်မှာ အသုံးပြုနိုင်တဲ့ အခြေခံ လုပ်ဆောင်ချက်တွေပဲ ဖြစ်ပါတယ်။ ဒီလုပ်ဆောင်ချက်တိုင်းဟာ PHP class တစ်ခုအဖြစ် မှတ်ပုံတင်ထားပြီး JSON schema တစ်ခုကို ဖော်ပြပေးပါတယ်။ agent က runtime မှာ ဒီschema ကို ဖတ်ပြီး ဘယ်လို parameter တွေ လိုအပ်လဲ၊ ဘာကို ပြန်ပေးမလဲဆိုတာ နားလည်သွားမှာ ဖြစ်ပါတယ်။
 

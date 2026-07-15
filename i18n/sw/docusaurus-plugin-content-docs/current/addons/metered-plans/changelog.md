@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Mpango wa Kupima
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Historia ya Mabadiliko ya Mipango ya Kupima {#metered-plans-changelog}
+# Historia ya Mabadiliko ya Mipango ya Kupima
 
 Version 1.1.0 - Released on 2026-05-05
 - New: Kuweka malipo kwa token za AI kwa subsites za multisite — kufuatilia na kuweka malipo ya matumizi ya token za AI katika tovuti za wateja zote kwa viwango vinavyoweza kuwekwa kwa kila token.

@@ -3,7 +3,7 @@ title: Closte Banda-k
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Entegrasyonu {#closte-integration}
+# Closte Entegrasyonu
 
 ## Genel Bakış {#overview}
 Closte, Google Cloud altyapısı üzerinde çalışan, yönetilen bir WordPress hosting platformudur. Bu entegrasyon, Ultimate Multisite ile Closte arasında otomatik alan adı senkronizasyonu ve SSL sertifikası yönetimi sağlar.

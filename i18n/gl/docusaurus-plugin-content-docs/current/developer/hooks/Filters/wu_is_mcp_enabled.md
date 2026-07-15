@@ -4,7 +4,7 @@ title: Filtro - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filtro: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filtro: wu_is_mcp_enabled
 
 Permite aos desenvolvedores de plugins forzar un estado determinado para o adaptador MCP.
 

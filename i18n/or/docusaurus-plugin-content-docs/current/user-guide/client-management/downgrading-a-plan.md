@@ -3,7 +3,7 @@ title: plān dāgṛaṇ kora
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# ପ୍ଲାନକୁ ଡାଉନଗ୍ରେଡ୍ କରିବା (v2) {#downgrading-a-plan-v2}
+# ପ୍ଲାନକୁ ଡାଉନଗ୍ରେଡ୍ କରିବା (v2)
 
 _**ମହତ୍ତ୍ୱପୂର୍ଣ୍ଣ ନୋଟ: ଏହି ଆଇକାଣିକ ବିଷୟବସ୍ତୁ Ultimate Multisite version 2.x-କୁ ସମ୍ବନ୍ଧିତ।**_
 

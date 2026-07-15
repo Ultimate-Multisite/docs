@@ -3,7 +3,7 @@ title: Inyandiko y’impinduka za Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Amateka y'impinduka ya Content Sync {#content-sync-changelog}
+# Amateka y'impinduka ya Content Sync
 
 ### Verisiyo 1.1.0 - Yasohotse ku wa 2025-12-31 {#version-110---released-on-2025-12-31}
 * Gishya: Gushyigikira guhuza ubwoko bwose bw'inyandiko (inyandiko, paji, ubwoko bw'inyandiko bwihariye)

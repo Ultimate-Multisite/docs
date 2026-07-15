@@ -3,7 +3,7 @@ title: 'Dərslik 3: Şəbəkənizi Qurmaq'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Dərslik 3: Şəbəkənizi Qurmaq {#lesson-3-setting-up-your-network}
+# Dərslik 3: Şəbəkənizi Qurmaq
 
 İndi qurma vaxtıdır. Bu dərslikdə Ultimate Multisite-ı quraşdıracaq və FitSite şəbəkəsinin təməlini quracaqsınız. Burada verilən hər qərar fitnes nişinə uyğun nəzərdə tutulub.
 

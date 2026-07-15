@@ -8,7 +8,7 @@ title: |-
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Set-up agus Coimisiúch an Provider {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Set-up agus Coimisiúch an Provider
 
 Tha an add-on Domain Seller a' chluainteachd le seòlas set-up gu leathanach a tha a' tighinn agad gu linn a' tighinn uile stiùir. Tha an seachdainn seo a' tighinn air a' chluainteachadh agus faic a bhfaidh thu a' chluainteachadh mar a tha e a' chluainteachadh no a' chluainteachadh ar fáil air a sonrainn.
 

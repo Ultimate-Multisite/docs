@@ -4,7 +4,7 @@ title: ການກະທຳ - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# ການກະທຳ: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# ການກະທຳ: wp_ultimo_payfast_activation
 
 ໃຫ້ສ່ວນອື່ນໆຂອງ plugin ແນບ routine ຂອງພວກມັນສຳລັບການເປີດໃຊ້ງານ
 

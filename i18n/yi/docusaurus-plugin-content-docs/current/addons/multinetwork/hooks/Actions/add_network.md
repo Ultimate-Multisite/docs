@@ -4,7 +4,7 @@ title: אַקציע - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# אַקציע: add_network {#action-addnetwork}
+# אַקציע: add_network
 
 ווערט אויסגעפֿירט נאָך דעם וואָס אַ נײַע נעץ איז צוגעגעבן געוואָרן.
 

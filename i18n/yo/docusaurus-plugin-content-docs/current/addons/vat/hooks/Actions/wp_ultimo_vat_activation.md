@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Ìṣe: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Ìṣe: wp_ultimo_vat_activation
 
 Jẹ́ kí àwọn apá mìíràn ti plugin so àwọn ilana wọn mọ́ fun activation
 

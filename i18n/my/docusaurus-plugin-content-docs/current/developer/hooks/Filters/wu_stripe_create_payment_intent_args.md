@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_stripe_create_payment_intent_ar
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# Filter: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
+# Filter: wu_stripe_create_payment_intent_args
 
 ငွေပေးချေမှု ရည်ရွယ်ချက် (payment intent) အတွက် အသုံးပြုမည့် အချက်အလက်များကို စစ်ထုတ်ပေးသည့် (filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။
 

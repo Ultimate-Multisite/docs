@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# פעולה: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# פעולה: wu_page_{$this->id}_before_render
 
 מאפשר למפתחי תוספים להוסיף תוכן נוסף לפני שאנחנו מציגים את העמוד.
 

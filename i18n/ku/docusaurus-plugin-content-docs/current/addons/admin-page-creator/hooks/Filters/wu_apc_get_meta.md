@@ -4,7 +4,7 @@ title: Parzûn - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Parzûn: wu_apc_get_meta {#filter-wuapcgetmeta}
+# Parzûn: wu_apc_get_meta
 
 Destûrê dide pêşdebirvanan ku nirxên dawî parzûn bikin û rewşên pêvajoyê yên nû lê zêde bikin.
 

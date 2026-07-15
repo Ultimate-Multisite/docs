@@ -3,7 +3,7 @@ title: Uunidda ka guurista V1-ka
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Ku-dhafa ka V1-ka u beddelidda {#migrating-from-v1}
+# Ku-dhafa ka V1-ka u beddelidda
 
 ## Ultimate Multisite waxay ka guuraysay qoyska soo saarista (releases) ee asalka ah ee 1.x si ay u gudubto qoyska 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

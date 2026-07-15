@@ -3,7 +3,7 @@ title: Cloudways ಏಕೀಕರಣ
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ಸಂಯೋಜನೆ {#cloudways-integration}
+# Cloudways ಸಂಯೋಜನೆ
 
 ## ಅವಲೋಕನ {#overview}
 Cloudways ಒಂದು ನಿರ್ವಹಿತ ಕ್ಲೌಡ್ ಹೋಸ್ಟಿಂಗ್ ವೇದಿಕೆ. ಇದು DigitalOcean, AWS, Google Cloud ಮತ್ತು ಇನ್ನಿತರ ಕ್ಲೌಡ್ ಪೂರೈಕೆದಾರರ ಮೇಲೆ WordPress ಸೈಟ್‌ಗಳನ್ನು ನಿಯೋಜಿಸಲು ನಿಮಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ. ಈ ಸಂಯೋಜನೆಯು Ultimate Multisite ಮತ್ತು Cloudways ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ಸಿಂಕ್ ಹಾಗೂ SSL ಪ್ರಮಾಣಪತ್ರ ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.

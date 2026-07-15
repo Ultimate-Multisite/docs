@@ -3,7 +3,7 @@ title: Obilazak administratorskog panela
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Obilazak Admin panela {#touring-the-admin-panel}
+# Obilazak Admin panela
 
 Ultimate Multisite nastoji biti što jednostavniji i samorazumljiviji, ali uz ovako moćan alat može pomoći vođeni obilazak. Prođimo kroz admin stranice kako biste se lakše snašli.
 

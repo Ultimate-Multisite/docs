@@ -3,7 +3,7 @@ title: پوشش‌دهی کش پرامپت آگاه به ارائه‌دهنده
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# ذخیره‌سازی Prompt با آگاهی از ارائه‌دهنده (Provider-Aware Prompt Caching) {#provider-aware-prompt-caching}
+# ذخیره‌سازی Prompt با آگاهی از ارائه‌دهنده (Provider-Aware Prompt Caching)
 
 Superdav AI Agent v1.12.0 قابلیت **ذخیره‌سازی Prompt با آگاهی از ارائه‌دهنده** را معرفی می‌کند. این قابلیت با ذخیره Prompts در میان ارائه‌دهندگان مختلف LLM، هزینه‌های API و تأخیر (latency) را بهینه می‌کند. هر ارائه‌دهنده، مکانیزم‌ها و تنظیمات کش (caching) متفاوتی دارد.
 

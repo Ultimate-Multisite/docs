@@ -4,7 +4,7 @@ title: Aksie - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Aksie: wu_activation {#action-wuactivation}
+# Aksie: wu_activation
 
 Laat ander dele van die plugin hul roetines vir aktivering aanheg
 

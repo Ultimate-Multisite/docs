@@ -3,7 +3,7 @@ title: Uwezo wa Mjenzi wa Mandhari
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Uwezo wa Kuunda Mandhari: Kuunda Muundo na Kuweka Mandhari ya Block {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Uwezo wa Kuunda Mandhari: Kuunda Muundo na Kuweka Mandhari ya Block
 
 Superdav AI Agent v1.12.0 inatanguliza uwezo wawili wenye nguvu vinavyokuruhusu kuunda na kuweka mandhari (themes) ya block maalum moja kwa moja kutoka kwenye kiolesura cha mazungumzo (chat interface).
 

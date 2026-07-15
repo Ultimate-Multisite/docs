@@ -3,7 +3,7 @@ title: ڕێڕەوی دەستپێکردنی Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# ڕێکارەکانی سەرەتایی Theme Builder {#theme-builder-onboarding-flow}
+# ڕێکارەکانی سەرەتایی Theme Builder
 
 Superdav AI Agent v1.12.0 پێشکەشکردنی **Theme Builder onboarding flow**ی ڕێنماییکراو دەبەخشێت کە یارمەتیت دەدات بۆ دروستکردنی themeێکی تایبەت لە کاتی سیستەمی سەرەتایی خۆت. ئەمە جۆری Site Builder کۆنەکە وەک پێشتر بەکارخستاو، بە شێوازێکی پیاوازی زیاتر و پشتگیریکردنی ئەژمار (agent-assisted) گۆڕانکاری دەکات.
 

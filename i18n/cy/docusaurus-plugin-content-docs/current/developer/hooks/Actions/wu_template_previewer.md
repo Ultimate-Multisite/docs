@@ -4,7 +4,7 @@ title: Gweithred - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Gweithred: wu_template_previewer {#action-wutemplatepreviewer}
+# Gweithred: wu_template_previewer
 
 Yn rhedeg pan fydd o fewn cyd-destun y rhagolygwr templedi.
 

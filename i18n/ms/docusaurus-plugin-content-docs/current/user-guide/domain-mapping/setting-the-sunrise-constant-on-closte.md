@@ -3,7 +3,7 @@ title: Menetapkan Pemalar Sunrise pada Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Menetapkan pemalar Sunrise kepada true di Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Menetapkan pemalar Sunrise kepada true di Closte
 
 Sesetengah penyedia hos mengunci fail wp-config.php atas sebab keselamatan. Ini bermakna Ultimate Multisite tidak dapat mengedit fail tersebut secara automatik untuk memasukkan pemalar yang diperlukan bagi membolehkan pemetaan domain dan ciri-ciri lain berfungsi. Closte adalah salah satu hos yang mengenakan sekatan sedemikian.
 

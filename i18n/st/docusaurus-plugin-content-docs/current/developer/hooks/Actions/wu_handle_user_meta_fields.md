@@ -4,7 +4,7 @@ title: Ketso - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Ketso: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Ketso: wu_handle_user_meta_fields
 
 Dumella baetsi ba ditlatsetso ho boloka data ya meta ya mosebedisi ka ditsela tse fapaneng haeba ba hloka.
 

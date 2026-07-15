@@ -3,7 +3,7 @@ title: 'Casharka 9: Qiimeyn si Faa''iido loo Helo'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Casharka 9: Qiimeyn Faa'iido Leh {#lesson-9-pricing-for-profit}
+# Casharka 9: Qiimeyn Faa'iido Leh
 
 Casharka 5 waxaan u dejinnay qiimayaasha bilowga ah ee qorshayaasha FitSite. Hadda waxaan sii hagaajinaynaa istaraatiijiyadda qiimeynta annagoo adeegsanayna farsamooyin kordhiya dakhliga, dhiirrigeliya kor-u-qaadista, kana yareeya ka-tagista.
 

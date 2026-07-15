@@ -3,7 +3,7 @@ title: Agentên Hundirîn
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agentên Navxweyî {#built-in-agents}
+# Agentên Navxweyî
 
 Gratis AI Agent v1.9.0 bi pênc agentên navxweyî tê, her yek ji wan bi komeke amûrên berê ve hatine amadekirin, system promptek taybet, û pêşniyarên destpêkê yên li gorî karên hevpar ên wê qadê hatine saz kirin. Guhertina di navbera agentan de tiştên ku arîkar dikare bike û awayê bersiva wî diguherîne — bêyî tu veavakirinek ji aliyê we ve. Superdav AI Agent v1.18.0 dikare dema entegrasyonên têkildar hatine veavakirin, amûrên haydar ji bernameyê, tomarên bîranînê, dergehên erêkirinê, û agahdariyên SMSê li van herikên karê zêde bike.
 

@@ -4,7 +4,7 @@ title: Филтр - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Филтр: wu_rest_get_items {#filter-wurestgetitems}
+# Филтр: wu_rest_get_items
 
 Филтр мекунад, ки идома додан бо дархост иҷозат аст ё не.
 

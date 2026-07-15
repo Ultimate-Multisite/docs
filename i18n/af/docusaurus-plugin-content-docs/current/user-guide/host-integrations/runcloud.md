@@ -3,7 +3,7 @@ title: RunCloud Integrasie
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integrasie {#runcloud-integration}
+# RunCloud Integrasie
 
 ## Oorsig {#overview}
 RunCloud is 'n cloud-gebaseerde bedienerbestuurplatform wat jou toelaat om webtoepassings maklik op jou eie cloud-bedenere te implementeer en te bestuur. Hierdie integrasie maak outomatiese domein-sinkronisering en SSL-sertifikaatbestuur moontlik tussen Ultimate Multisite en RunCloud.

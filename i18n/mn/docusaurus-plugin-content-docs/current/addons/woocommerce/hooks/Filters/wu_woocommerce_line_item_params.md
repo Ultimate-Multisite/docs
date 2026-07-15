@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Шүүлтүүр: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Шүүлтүүр: wu_woocommerce_line_item_params
 
 Үйлчлүүлэгчийг WooCommerce checkout руу чиглүүлэхээс өмнө WooCommerce Cart дээрх мөрийн зүйлсийг үүсгэхэд ашиглагдах параметрүүдийг шүүнэ.
 

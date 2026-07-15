@@ -3,7 +3,7 @@ title: Fluach na gCruthú Sovereigne |
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Míseartú Sovereing {#sovereign-migration-workflow}
+# Workflow Míseartú Sovereing
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 añade gorteacha de archeálach (verification gates) do mísseartú mar chuidte standard go dtíne infrastructure sovereign tenant.
 

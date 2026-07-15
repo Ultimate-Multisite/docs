@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 ಇಲ್ಲಿ ಒಂದು ಕಸ್ಟಮ್ ಆಕ್ಷನ್ ಸೇರಿಸಲಾಗಿದೆ. ಇದರಿಂದಾಗಿ, ಬೇಕಾದಾಗ ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳು ಮತ್ತು ಸ್ಟೈಲ್‌ಗಳನ್ನು ಎನ್‌ಕ್ಯೂ (enqueue) ಮಾಡಲು ಒಂದು ಜಾಗ ಸಿಗುತ್ತದೆ ಮತ್ತು ಅವು ಸರಿಯಾದ ಪುಟಗಳಲ್ಲಿ ಮಾತ್ರ ಲೋಡ್ ಆಗುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬಹುದು.
 

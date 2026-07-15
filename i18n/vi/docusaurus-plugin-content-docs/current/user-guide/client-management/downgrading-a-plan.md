@@ -3,7 +3,7 @@ title: Hạ cấp gói
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Hạ cấp một gói (v2) {#downgrading-a-plan-v2}
+# Hạ cấp một gói (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

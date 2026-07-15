@@ -4,7 +4,7 @@ title: Филтер - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Филтер: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Филтер: secure_logged_in_cookie
 
 Филтрира да ли колачић за пријављеног корисника треба да се шаље само преко HTTPS-а.
 

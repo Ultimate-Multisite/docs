@@ -3,7 +3,7 @@ title: Đoạn mã
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Đoạn mã cho v2 {#code-snippets-for-v2}
+# Đoạn mã cho v2
 
 Về cơ bản, đoạn mã cho **WordPress** được dùng để thực hiện các tác vụ nhất định mà nếu không có chúng, bạn sẽ cần một plugin nhỏ riêng biệt. Các đoạn mã này được đặt trong một trong các file lõi của WordPress hoặc file theme (thường là file functions.php của theme bạn đang dùng), hoặc có thể được sử dụng như một MU plugin.
 

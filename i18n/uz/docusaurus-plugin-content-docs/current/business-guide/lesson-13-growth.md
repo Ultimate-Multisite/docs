@@ -3,7 +3,7 @@ title: '13-dars: Kengaytirish'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# 13-dars: Kengaytirish {#lesson-13-scaling-up}
+# 13-dars: Kengaytirish
 
 Sizda to‘lovchi mijozlari bor ishlayotgan platforma mavjud. Bu dars kichik faoliyatdan barqaror biznesga o‘sishni — infratuzilmani kengaytirish, operatsiyalarni avtomatlashtirish va har bir mijozdan tushadigan daromadni oshirishni qamrab oladi.
 

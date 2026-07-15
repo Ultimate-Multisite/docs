@@ -3,7 +3,7 @@ title: Kinatibuk-ang Pagtan-aw sa REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Reperensiya sa REST API {#rest-api-reference}
+# Reperensiya sa REST API
 
 ## Pangunang Konpigurasyon {#base-configuration}
 

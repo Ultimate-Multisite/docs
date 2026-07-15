@@ -4,7 +4,7 @@ title: Filtro - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filtro: wu_sso_url {#filter-wussourl}
+# Filtro: wu_sso_url
 
 Filtra as URL de SSO xeradas antes de que se devolvan para accións de clientes entre dominios.
 

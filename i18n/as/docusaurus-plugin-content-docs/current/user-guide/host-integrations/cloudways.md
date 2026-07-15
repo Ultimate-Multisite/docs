@@ -3,7 +3,7 @@ title: Cloudways Integration
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Overview {#overview}
 Cloudways হৈছে এটা managed cloud hosting platform, যিয়ে আপোনাক DigitalOcean, AWS, Google Cloud আৰু ইয়াৰ দৰে বিভিন্ন cloud provider-ত WordPress site deploy কৰিবলৈ অনুমতি দিয়ে। এই integration-এ Ultimate Multisite আৰু Cloudwaysৰ মাজত automatic domain syncing আৰু SSL certificate management সক্ষম কৰে।

@@ -3,7 +3,7 @@ title: Gukemura Email za System
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gukoresha Email za Sistema {#managing-system-emails}
+# Gukoresha Email za Sistema
 
 Ultimate Multisite yifungura email zikomeye za sistema mu gihe cy'ibintu nko gukoresha (signup confirmations), ibyonyi bwo kwishyura, no guhindura ubushobozi bw'umwe. Ufite uburyo bwo gutera ku email templates kugira ngo yifashe kwerekana umwanya w'ubwoko runa n'ubwoko rwawe.
 

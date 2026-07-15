@@ -4,7 +4,7 @@ title: Sefa - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Fyuluta: wu_return_url {#filter-wureturnurl}
+# Fyuluta: wu_return_url
 
 Lolani opanga mapulogalamu kusintha URL yobwerera ya gateway yomwe imagwiritsidwa ntchito pambuyo pa njira za checkout.
 

@@ -3,7 +3,7 @@ title: 'Casharka 13: Ballaarinta'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Casharka 13: Kor-u-qaadista Baaxadda {#lesson-13-scaling-up}
+# Casharka 13: Kor-u-qaadista Baaxadda
 
 Waxaad haysataa madal shaqaynaysa oo leh macaamiil lacag bixiya. Casharkani wuxuu daboolayaa sida looga koro hawlgal yar loona noqdo ganacsi waara -- kor-u-qaadista kaabayaasha, otomaatig ka dhigista hawlgallada, iyo kordhinta dakhliga macmiil kasta.
 

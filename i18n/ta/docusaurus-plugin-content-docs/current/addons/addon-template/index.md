@@ -3,9 +3,9 @@ title: கூங்கொடை டெம்ப்ளேட்
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template {#addon-template}
+# Addon Template
 
-{{ADDON_DESCRIPTION}}
+கூங்கொடை டெம்ப்ளேட் — Ultimate Multisite.
 
 ## தேவைகள் (Requirements) {#requirements}
 

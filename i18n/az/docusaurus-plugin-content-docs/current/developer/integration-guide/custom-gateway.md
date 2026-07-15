@@ -3,7 +3,7 @@ title: Fərdi ödəniş keçidinin hazırlanması
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Fərdi ödəniş keçidi hazırlanması {#custom-gateway-development}
+# Fərdi ödəniş keçidi hazırlanması
 
 `Base_Gateway` sinfini genişləndirərək fərdi ödəniş keçidləri yarada bilərsiniz.
 

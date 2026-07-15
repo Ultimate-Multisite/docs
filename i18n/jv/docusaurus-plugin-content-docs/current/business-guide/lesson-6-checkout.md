@@ -3,7 +3,7 @@ title: 'Piwulang 6: Pengalaman Pendaftaran'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Piwulang 6: Pengalaman Pendaftaran {#lesson-6-the-signup-experience}
+# Piwulang 6: Pengalaman Pendaftaran
 
 Alur checkout iku papan ing ngendi minat dadi penghasilan. Proses pendaftaran sing mbingungake utawa umum banget bisa ngilangake pelanggan. Alur khusus niche sing nganggo basane pelanggan lan krasa gampang bakal ngowahi dheweke dadi pelanggan.
 

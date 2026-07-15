@@ -3,7 +3,7 @@ title: Error sa Sunrise File
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Error sa Pag-install ng Sunrise File {#error-installing-the-sunrise-file}
+# Error sa Pag-install ng Sunrise File
 
 Ang sunrise.php file ay isang espesyal na file na hinahanap ng WordPress habang naglo-load ito. Para madetect ng WordPress ang sunrise.php file, kailangan itong nasa loob ng **wp-content folder**.
 

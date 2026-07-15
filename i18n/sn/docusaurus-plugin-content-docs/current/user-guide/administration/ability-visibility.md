@@ -3,7 +3,7 @@ title: Kufanana kwezvinoviona
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Kuvira Kufanana (Ability Visibility) {#ability-visibility}
+# Kuvira Kufanana (Ability Visibility)
 
 Superdav AI Agent v1.12.0 inoratidzi **Ability Visibility** controls kuti zvinhu zviri kuita kuti zvinonakidziswe (expose) izvi zvinoreva (abilities). Izvi zvinoitirwa kuti administrators vanedze zvakanaka kuti zvinonakidziswe zvinoreva (agent capabilities) zvichiri kuita kupfungwa kuburikidza ne-REST APIs, MCP servers, WooCommerce integrations, uye interfaces dzine kune zvinhu zvose.
 

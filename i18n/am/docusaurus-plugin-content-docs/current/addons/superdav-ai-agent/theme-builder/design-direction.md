@@ -3,7 +3,7 @@ title: የንድፍ አቅጣጫ
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# የንድፍ አቅጣጫ (Design Direction) {#design-direction}
+# የንድፍ አቅጣጫ (Design Direction)
 
 የ**የንድፍ አቅጣጫ** ደረጃ በTheme Builder ሙሉውን ንድፍ ከመፍጠሩ በፊት የጉዳዩን የእይታ ንድፍ እንድትገመግሙ፣ እንድትሻሽሉ እና እንድትጨርሱ ያስችላል።
 

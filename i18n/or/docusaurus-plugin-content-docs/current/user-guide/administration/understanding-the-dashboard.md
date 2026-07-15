@@ -3,7 +3,7 @@ title: ଡ୍ୟାସବର୍ଡ୍ ବୁଝିବା
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard ବୁଝିବା {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard ବୁଝିବା
 
 Ultimate Multisite ର ଆଗ୍ରହୀ ସମସ୍ତ ଅଧିକ ଉନ୍ନତ କନଫିଗୁରେସନ୍ ଏବଂ କାର୍ଯ୍ୟକାଳୀକରଣ ପଦକ୍ଷେପକୁ ଭଲ ଭାବରେ ବୁଝିବା ପୂର୍ବ, ଆମେ ଏହି dashboard ବିଷୟରେ ଦେଖିବା।
 

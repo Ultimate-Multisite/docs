@@ -3,7 +3,7 @@ title: Teema-tundlikud oskused
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Teema-tundiseid oskused {#theme-aware-skills}
+# Teema-tundiseid oskused
 
 Superdav AI Agent v1.10.0 on väljaanevad nelja uue teema-tundiseid oskusi, mis automatiliselt kohanuvad teie aktiivse WordPress teema järgi. Need oskused pakuvad spetsialise juhendamist ja võimalusi, mis on suunatud teie teema arhitektuurile ja funktsioonidele.
 

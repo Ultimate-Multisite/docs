@@ -3,7 +3,7 @@ title: Ukukhangela iDomeyini kwiNtloko
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Uphendlo lwe-Domain ye-Header {#header-domain-search}
+# Uphendlo lwe-Domain ye-Header
 
 Sebenzisa olu seto xa ufuna ifom encinci ye-header eqalisa uphendlo lwe-domain, emva koko ivumele umthengi akhethe kwi-domain ezifumanekayo ngaphakathi kwe-Ultimate Multisite checkout.
 

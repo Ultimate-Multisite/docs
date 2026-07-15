@@ -4,7 +4,7 @@ title: سۈزگۈچ - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# سۈزگۈچ: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
+# سۈزگۈچ: ultimate_multisite_content_sync_get_option
 
 slug قىلىنغان تور تاللانما قىممىتىنى قايتۇرىدۇ.
 

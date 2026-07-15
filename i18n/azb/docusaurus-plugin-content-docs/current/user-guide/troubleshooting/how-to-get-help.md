@@ -3,7 +3,7 @@ title: Azb-e madad kardan
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Nasıl Yardım Alınır {#how-to-get-help}
+# Nasıl Yardım Alınır
 
 Geçerli Lisans anahtarınızı aldınız ve bu anahtarla birlikte, Ultimate Multisite'ı kurarken karşılaşabileceğiniz sorunları çözmenize yardımcı olmak için ekibimize erişim hakkı kazandınız.
 

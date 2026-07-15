@@ -3,7 +3,7 @@ title: Paneļa sapratīšana
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard uncerēšana {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard uncerēšana
 
 Pirkties iepazīstamies ar vairāk uzlabotajiem konfigurēšanas opcijām un Ultimate Multisite operacionālajiem aspektiem, atspējiet skatīt dashboardu.
 

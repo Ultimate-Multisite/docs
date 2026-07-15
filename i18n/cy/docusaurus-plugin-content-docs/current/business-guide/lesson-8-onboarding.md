@@ -3,7 +3,7 @@ title: 'Dysgu 8: Cynllunio Cysgodau Client'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lesiwn 8: Ymddianu Clientau {#lesson-8-customer-onboarding}
+# Lesiwn 8: Ymddianu Clientau
 
 Mae gael ei chwarae'r clientau i ddefnyddio'r syfu yw peth yn llawn. Os oes gan nhw cyflwyno, teimlo'n rhy dda, ac nid fyddant yn dod eto eto, mae eich bod wedi colli nhw. Mae’r lesiwn hwn yn ddefnyddio'r gyfarwyddyd sy'n gwneud y cyflym newydd i clientau yn gweithredol a chynllunol.
 

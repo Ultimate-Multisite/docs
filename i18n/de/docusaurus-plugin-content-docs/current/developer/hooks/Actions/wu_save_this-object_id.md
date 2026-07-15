@@ -4,7 +4,7 @@ title: 'Aktion - wu_save_{$this->object_id}'
 sidebar_label: 'wu_save_{$this->object_id}'
 _i18n_hash: 948ebe69d343e2f1e56544732995c2aa
 ---
-# Aktion: wu_save_{$this->object_id} {#action-wusavethis-objectid}
+# Aktion: wu_save_{$this->object_id}
 
 Ermöglicht Plugin-Entwicklern, Aktionen zum Speichernprozess hinzuzufügen
 

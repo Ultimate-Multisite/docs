@@ -4,7 +4,7 @@ title: Darbība - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Darbība: delete_network {#action-deletenetwork}
+# Darbība: delete_network
 
 Tiek izpildīta pēc tam, kad tīkls ir dzēsts.
 

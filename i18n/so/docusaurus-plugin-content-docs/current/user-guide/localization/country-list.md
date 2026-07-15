@@ -3,7 +3,7 @@ title: Liiska Wadamada
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Dib u qaabaysiga liiska waddada Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Dib u qaabaysiga liiska waddada Ultimate Multisite
 
 Waxa la soo doorto waddada ee dropdown-ka si ahaan macmiilka (alphabetically) iyadoo la isticmaalayo qaybta Ingiriiska ah ee magacyada waddamada. Waxaa laga yaabaa in tani ay sabab u noqon karto in, mararka qaarkood, waddanka gurigaaga iyo/ama inta badan macaamiishaada ay ku dhex muuqdaan liiska weyn ee magacyada waddamada.
 

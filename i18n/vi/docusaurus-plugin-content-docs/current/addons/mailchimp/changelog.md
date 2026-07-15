@@ -3,7 +3,7 @@ title: Mailchimp Lịch sử thay đổi
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Nhật ký thay đổi của Mailchimp {#mailchimp-changelog}
+# Nhật ký thay đổi của Mailchimp
 
 Phiên bản: 1.1.1 - Phát hành vào 2025-09-28
 

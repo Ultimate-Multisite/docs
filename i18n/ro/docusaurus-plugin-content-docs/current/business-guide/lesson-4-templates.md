@@ -3,7 +3,7 @@ title: 'Lecția 4: Crearea Șabloanelor de Nișă'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lecția 4: Crearea de Template-uri de Nișă {#lesson-4-building-niche-templates}
+# Lecția 4: Crearea de Template-uri de Nișă
 
 Template-urile sunt nucleul propunerii de valoare de nișă a serviciilor tale. Un proprietar de studio de fitness care se înscrie și vede un site care arată deja ca un site de fitness — cu programe de clase, profiluri de antrenori și imagini potrivite — are mult mai multe șanse să rămână cu noi decât unul care se confruntă cu o pagină albă.
 

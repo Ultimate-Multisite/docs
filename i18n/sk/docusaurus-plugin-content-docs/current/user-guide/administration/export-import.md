@@ -3,7 +3,7 @@ title: Export a import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export a importovať {#export--import}
+# Export a importovať
 
 Ultimate Multisite 2.9.0 pridáva nástroj **Export a import** pod sekciu **Nástroje > Export a import**. Použite ho, ak potrebujete jeden WordPress port v ZIP súbor zbalil, obnoviť tento ZIP alebo presmiesti port medzi kompatibilnými inštaláciami Ultimate Multisite a single-site WordPress.
 

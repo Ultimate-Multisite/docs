@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Àlẹmọ: wu_post_count {#filter-wupostcount}
+# Àlẹmọ: wu_post_count
 
 Gba àwọn olùgbéejáde plugin láàyè láti yí àpapọ̀ iye padà
 

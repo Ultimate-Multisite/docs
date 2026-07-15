@@ -3,7 +3,7 @@ title: Ymddygiad RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Ymddian RunCloud {#runcloud-integration}
+# Ymddian RunCloud
 
 ## Oglwyddictod {#overview}
 RunCloud yw ffurfwr rheoli serverau ar-lein sy'n sylw'r eich bod yn llwybr i ddefnyddio a rheoli cyfathregau web ar gyfer eich serverau ar-lein. Mae’r ychwaneg hwn yn sylw'r syniad domain (domain syncing) a rheoli certysyddion SSL rhwng Ultimate Multisite a RunCloud yn awtomatig.

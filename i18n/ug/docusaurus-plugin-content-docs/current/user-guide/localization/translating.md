@@ -3,7 +3,7 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-i Tarjuma Qilingan {#translating-ultimate-multisite}
+# Ultimate Multisite-i Tarjuma Qilingan
 
 Ultimate Multisite ingliz tilida ishlab chiqilgan, lekin bu plugin to'liq tarjima qilinishi mumkin va biz tarjimaga hissa qo'shishni faol xohlaymiz.
 

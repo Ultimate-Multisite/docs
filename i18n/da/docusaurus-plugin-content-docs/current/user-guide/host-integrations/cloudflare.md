@@ -3,7 +3,7 @@ title: Cloudflare integration
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Oversigt {#overview}
 Cloudflare er en førende content delivery network (CDN) og sikkerhedsudbyder, der hjælper med at beskytte og fremskynde websites. Denne integration muliggør automatisk domæneadministration mellem Ultimate Multisite og Cloudflare, især for subdomain multisite installationer.

@@ -3,7 +3,7 @@ title: 'Lektion 9: Preisgestaltung für den Gewinn'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektion 9: Preisgestaltung für Profit {#lesson-9-pricing-for-profit}
+# Lektion 9: Preisgestaltung für Profit
 
 In Lektion 5 haben wir die anfänglichen Preise für die FitSite-Pläne festgelegt. Jetzt verfeinern wir die Preisstrategie mit Techniken, die den Umsatz steigern, Upgrades fördern und die Abwanderung reduzieren.
 

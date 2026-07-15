@@ -4,7 +4,7 @@ sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
 
-# Ho Felisoa ha Setho le Ho Thibela Sebaka sa Wepe {#membership-expiration-and-site-blocking}
+# Ho Felisoa ha Setho le Ho Thibela Sebaka sa Wepe
 
 Tataiso ena e hlalosa kamoo Ultimate Multisite e sebetsanang le ho fela ha setho, ho fela ha nako ea teko, le ho thibela frontend ea sebaka sa wepe. E akaretsa tsela eo setho se fetohang ka eona ho tloha ho `active` ho ea ho `expired`, litlhophiso tse laolang hore na libaka li thibeloa kapa che, le seo u lokelang ho se hlahloba ha sebaka se ntse se fumaneha le hoja setho se se se felile.
 

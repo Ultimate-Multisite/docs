@@ -3,7 +3,7 @@ title: Plāna uppgraderēšana
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plāna uppgraderēšana (v2) {#upgrading-a-plan-v2}
+# Plāna uppgraderēšana (v2)
 
 _**PIEGĀDAMO ATCIETĪJUMS: Šī raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

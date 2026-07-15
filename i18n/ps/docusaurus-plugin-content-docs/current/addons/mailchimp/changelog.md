@@ -3,7 +3,7 @@ title: Mailchimp د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp د بدلونونو ثبت {#mailchimp-changelog}
+# Mailchimp د بدلونونو ثبت
 
 نسخه: 1.1.1 - په 2025-09-28 خپره شوه
 

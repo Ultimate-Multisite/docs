@@ -3,7 +3,7 @@ title: خطای فایل Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# خطا در نصب فایل Sunrise {#error-installing-the-sunrise-file}
+# خطا در نصب فایل Sunrise
 
 فایل sunrise.php یک فایل خاص است که WordPress هنگام راه‌اندازی اولیه به دنبال آن می‌گردد. برای اینکه WordPress بتواند این فایل را پیدا کند، باید در **پوشه wp-content** قرار داشته باشد.
 

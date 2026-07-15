@@ -4,7 +4,7 @@ title: Filtru - wu_add_product_setup_fee_line_item
 sidebar_label: wu_add_product_setup_fee_line_item
 _i18n_hash: 7175266054e611752e49e762b103e858
 ---
-# Filter: wu_add_product_setup_fee_line_item {#filter-wuaddproductsetupfeelineitem}
+# Filter: wu_add_product_setup_fee_line_item
 
 Jippermetti lill-iżviluppaturi jagħmlu bidliet fl-oġġett tal-linja tat-tariffa tat-twaqqif.
 

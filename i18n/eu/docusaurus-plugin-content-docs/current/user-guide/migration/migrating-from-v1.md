@@ -3,7 +3,7 @@ title: V1-etik migrazioa egin
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrazioa V1-etik {#migrating-from-v1}
+# Migrazioa V1-etik
 
 ## Ultimate Multisite-ak bere orihila 1.x familia-tik bere orihila 2.x familia-ra hasi du. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

@@ -4,7 +4,7 @@ title: Ago - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Ago: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Ago: wp_ultimo_site_exporter_activation
 
 Lasu aliajn partojn de la plugin alkroĉi siajn rutinojn por aktivigo.
 

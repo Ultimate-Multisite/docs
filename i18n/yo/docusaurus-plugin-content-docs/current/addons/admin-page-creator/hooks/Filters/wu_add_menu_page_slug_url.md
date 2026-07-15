@@ -4,7 +4,7 @@ title: Àlẹ́mọ́ - wu_add_menu_page_slug_url
 sidebar_label: wu_add_menu_page_slug_url
 _i18n_hash: 8f4d638285fc2ad67313b1b730e776f6
 ---
-# Àlẹmọ: wu_add_menu_page_slug_url {#filter-wuaddmenupageslugurl}
+# Àlẹmọ: wu_add_menu_page_slug_url
 
 Ó jẹ́ kí àwọn aṣàgbékalẹ̀ lè ṣe àlẹmọ àwọn URL
 

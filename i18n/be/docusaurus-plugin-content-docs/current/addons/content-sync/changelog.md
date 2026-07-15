@@ -3,7 +3,7 @@ title: Журнал змен для Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Журнал змены Content Sync {#content-sync-changelog}
+# Журнал змены Content Sync
 
 ### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * Нова: Падтрымка синхронізацыі ўсіх тыпаў паста (posts, pages, custom post types)

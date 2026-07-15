@@ -3,7 +3,7 @@ title: Shigarwar Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Shigarwarin Cloudways {#cloudways-integration}
+# Shigarwarin Cloudways
 
 ## Bincike (Overview) {#overview}
 Cloudways wani wuri ne wuri shirya wajen da ke ba ka damar saka wuraren WordPress a kan masu gudanar da su kamar DigitalOcean, AWS, Google Cloud, da sauransu. Wannan haɗin yana ba ka damar yin shigar da domain-wacce ta sama da kuma sarrafa SSL certificate tsakanin Ultimate Multisite da Cloudways cikin sauƙi.

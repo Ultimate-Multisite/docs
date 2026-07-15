@@ -3,7 +3,7 @@ title: Podešavanje i konfiguracija dobavljača
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodavac Domen: Podešavanje i Konfiguracija Provedivaoca {#domain-seller-setup-and-provider-configuration}
+# Prodavac Domen: Podešavanje i Konfiguracija Provedivaoca
 
 Dodatak Domain Seller dolazi sa vodičem za podešavanje koji vas vodi kroz svaki potreban korak. Ova stranica objašnjava tok tog vodiča i kako da nakon toga konfigurišete ili ponovo konfigurišete provedioce (provider).
 

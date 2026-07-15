@@ -4,7 +4,7 @@ title: Sefe - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Sefe: wu_plan_product_types {#filter-wuplanproducttypes}
+# Sefe: wu_plan_product_types
 
 Sefa mefuta ya dihlahiswa e lokelang ho tshwarwa e le merero.
 

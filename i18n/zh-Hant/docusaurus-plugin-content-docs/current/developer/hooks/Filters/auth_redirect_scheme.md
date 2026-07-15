@@ -4,7 +4,7 @@ title: 過濾器 - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# 篩選器：auth_redirect_scheme {#filter-authredirectscheme}
+# 篩選器：auth_redirect_scheme
 
 用來篩選身份驗證的重定向方案。
 

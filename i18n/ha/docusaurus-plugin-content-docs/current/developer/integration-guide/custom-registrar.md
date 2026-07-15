@@ -3,7 +3,7 @@ title: Gina Haɗin Kai na Mai Rajista na Musamman
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Gina Haɗin Registrar na Musamman {#building-a-custom-registrar-integration}
+# Gina Haɗin Registrar na Musamman
 
 Addon na Domain Seller yana amfani da tsarin **Integration Registry**. Kowane registrar aji ne na PHP da ke aiwatar da `Domain_Selling_Capability` kuma yana yin rajistar kansa ta hanyar action hook na `wu_domain_seller_register_capabilities`.
 

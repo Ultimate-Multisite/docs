@@ -3,7 +3,7 @@ title: Mphindo wa Mulungu
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Mfundo ya Msingi {#basic-concepts}
+# Mfundo ya Msingi
 
 Kwa mtumiaji mpya wa WordPress Multisite na mtu anayechanganya kuanza kutumia Ultimate Multisite, kuna maneno na misemo mengi mipya ambayo unaweza kuyapokea mwanzoni. Kujifunza hayo ni kazi muhimu kwa sababu utahitaji kuelewa jukwaa hilo na jinsi inavyofanya kazi kama jumla.
 

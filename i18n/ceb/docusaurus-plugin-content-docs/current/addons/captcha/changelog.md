@@ -3,7 +3,7 @@ title: Pagbag-o sa Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Pagbag-o sa Captcha {#captcha-changelog}
+# Pagbag-o sa Captcha
 
 Version: 1.5.0 - Gi-release niadtong 2026-05-22
 * Bag-o: Hard-stop rate limiter — Gihitung ang matag GET ug POST sa mga pahilayo nga protektado sa captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ug mohatag og HTTP 429, usa ka `Retry-After` header, ug random sleep nga tarpit (1–5s, dili molapas sa 15s).

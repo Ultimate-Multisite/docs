@@ -3,7 +3,7 @@ title: Community
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Lid worden van de Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# Lid worden van de Ultimate Multisite Community
 
 Ultimate Multisite Community is een plek waar je in contact kunt komen met andere Ultimate Multisite-gebruikers en tips, ervaringen en meer kunt delen. Ga naar https://community.ultimatemultisite.com/home om toegang te krijgen tot Ultimate Multisite Community.
 

@@ -4,7 +4,7 @@ title: Gweithred - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Gweithred: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Gweithred: wu_checkout_order_created
 
 Yn tanio ar ôl i'r archeb dalu gael ei chydosod yn llawn.
 

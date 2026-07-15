@@ -3,7 +3,7 @@ title: Тақырыптағы доменді іздеу
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Бұл баптауды домен іздеуді бастайтын шағын header формасы қажет болғанда пайдаланыңыз; содан кейін клиент Ultimate Multisite checkout ішінде қолжетімді домендерден таңдай алады.
 

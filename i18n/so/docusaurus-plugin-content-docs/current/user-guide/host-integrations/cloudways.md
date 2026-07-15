@@ -3,7 +3,7 @@ title: Isdhexgalka Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Iskuulka Cloudways Lagu Dhisidda (Cloudways Integration) {#cloudways-integration}
+# Iskuulka Cloudways Lagu Dhisidda (Cloudways Integration)
 
 ## Guudbootsooni (Overview) {#overview}
 Cloudways waa platform hosting cloud oo la maamulo (managed) oo kuu oggolaanaya inaad WordPress sites ku dhiso adeegsiga hay'adaha cloud kala duwan sida DigitalOcean, AWS, Google Cloud, iyo kuwa kale. Isku-dhafka (integration) kan wuxuu u oggolaanaya isku-dubbaridda domain-ka (domain syncing) iyo maamulka shahaadada SSL-ka (SSL certificate management) inta badan ka dhexeeya Ultimate Multisite iyo Cloudways.

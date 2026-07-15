@@ -3,7 +3,7 @@ title: Vodič za integraciju
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Vodič za integraciju {#integration-guide}
+# Vodič za integraciju
 
 Ovaj vodič pokriva uobičajene obrasce integracije s Ultimate Multisite, uključujući povezivanje s vanjskim uslugama, izradu prilagođenih platnih pristupnika i obradu webhookova.
 

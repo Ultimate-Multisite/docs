@@ -3,7 +3,7 @@ title: Documentatio Progressoris
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Documentatio ad Excultores {#developer-documentation}
+# Documentatio ad Excultores
 
 Hoc dux excultoribus praebet omnia quae necessaria sunt ad integrandum cum, extendendum, vel additamenta pro Ultimate Multisite evolvenda. Ultimate Multisite rete WordPress Multisite in suggestum Website-as-a-Service (WaaS) transformat.
 

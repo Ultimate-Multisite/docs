@@ -3,7 +3,7 @@ title: چیک آؤٽ فارمز
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# چیک آؤٹ فارمز (Checkout Forms) {#checkout-forms}
+# چیک آؤٹ فارمز (Checkout Forms)
 
 چیک آؤٹ فارمز نئين گاہڪن کي تبديل ڪرڻ جي ڪوشش ۾ مختلف طريقن جو تجربو ڪرڻ لاءِ هڪ آسان ۽ لچڪدار طريقو آهي.
 

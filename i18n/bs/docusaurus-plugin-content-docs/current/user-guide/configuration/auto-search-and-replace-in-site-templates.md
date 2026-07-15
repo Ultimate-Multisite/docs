@@ -3,7 +3,7 @@ title: Automatsko pretraživanje i zamjena u predlošcima web-lokacija
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatsko pretraživanje i zamjena u predlošcima stranice (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatsko pretraživanje i zamjena u predlošcima stranice (v2)
 
 _**Ovaj vodič zahtijeva WP UItimo verziju 2.x.**_
 

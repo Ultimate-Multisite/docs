@@ -3,7 +3,7 @@ title: تكامل ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# تكامل ServerPilot {#serverpilot-integration}
+# تكامل ServerPilot
 
 ## نظرة عامة {#overview}
 ServerPilot هو خدمة سحابية لاستضافة WordPress ومواقع PHP الأخرى على خوادم في DigitalOcean، Amazon، Google، أو أي مزود خوادم آخر. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite وServerPilot.

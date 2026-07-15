@@ -3,7 +3,7 @@ title: Hooks 使用指南
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# 钩子使用指南 {#hooks-usage-guide}
+# 钩子使用指南
 
 Ultimate Multisite 提供 200+ 个动作钩子和 280+ 个过滤钩子。本页涵盖了最常用的钩子，并提供实用示例。若需完整的自动生成参考，请浏览本节的其他页面。
 

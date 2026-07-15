@@ -4,7 +4,7 @@ title: Gnìomh - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
 _i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Gnìomh: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
+# Gnìomh: wu_domain_seller_register_capabilities
 
 A’ leigeil le plugain eile comasan reic àrainnean a bharrachd a chlàradh.
 

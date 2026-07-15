@@ -3,7 +3,7 @@ title: Flujo de migrado souverena
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migra Workflow {#sovereign-migration-workflow}
+# Sovereign Migra Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 donas migraverifikacianportojn por pasigi standard subsite en souveren tenanto infrastrukturo.
 

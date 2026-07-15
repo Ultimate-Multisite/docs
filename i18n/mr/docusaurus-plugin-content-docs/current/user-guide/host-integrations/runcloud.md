@@ -3,7 +3,7 @@ title: RunCloud एकत्रीकरण
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integration {#runcloud-integration}
+# RunCloud Integration
 
 ## आढावा {#overview}
 RunCloud ही क्लाउड-आधारित सर्व्हर व्यवस्थापन प्लॅटफॉर्म आहे जी तुम्हाला तुमच्या स्वतःच्या क्लाउड सर्व्हरवर वेब ऍप्लिकेशन्स सहजपणे deploy आणि व्यवस्थापित करण्याची सुविधा देते. या integration द्वारे Ultimate Multisite आणि RunCloud यांच्यात स्वयंचलित domain syncing आणि SSL certificate व्यवस्थापन शक्य होते.

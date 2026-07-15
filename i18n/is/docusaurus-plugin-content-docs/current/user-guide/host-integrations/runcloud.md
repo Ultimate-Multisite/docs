@@ -3,7 +3,7 @@ title: RunCloud samstarf
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Samningur {#runcloud-integration}
+# RunCloud Samningur
 
 ## Översikt {#overview}
 RunCloud er ský-basert staflinnar fyrir serverstjórnun sem leysir þér á einfaldan hátt að dekompila og stjórna webapplikasjonum þínum á eigin ský-serverum. Þessi samning fer með sjálfsviðandi domænsmyndun og stjórnun SSL-sertifika milli Ultimate Multisite og RunCloud.

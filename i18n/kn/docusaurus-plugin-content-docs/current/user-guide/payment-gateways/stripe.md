@@ -3,7 +3,7 @@ title: Stripe ಅನ್ನು ಹೊಂದಿಸುವುದು
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe ಗೇಟ್‌ವೇ ಅನ್ನು ಸೆಟಪ್ ಮಾಡುವುದು (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe ಗೇಟ್‌ವೇ ಅನ್ನು ಸೆಟಪ್ ಮಾಡುವುದು (v2)
 
 _**ಮುಖ್ಯ ಸೂಚನೆ: ಈ ಲೇಖನವು Ultimate Multisite ಆವೃತ್ತಿ 2.x ಗೆ ಸಂಬಂಧಿಸಿದೆ.**_
 

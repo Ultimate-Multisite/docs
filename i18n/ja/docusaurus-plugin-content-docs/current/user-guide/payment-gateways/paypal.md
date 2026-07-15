@@ -3,7 +3,7 @@ title: PayPal の設定
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal ゲートウェイの設定（v2） {#setting-up-the-paypal-gateway-v2}
+# PayPal ゲートウェイの設定（v2）
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

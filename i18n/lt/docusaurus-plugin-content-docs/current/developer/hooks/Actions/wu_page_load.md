@@ -4,7 +4,7 @@ title: Veiksmas - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Veiksmas: wu_page_load {#action-wupageload}
+# Veiksmas: wu_page_load
 
 Leidžia plugin kūrėjams pridėti papildomų hooks prie mūsų puslapių.
 

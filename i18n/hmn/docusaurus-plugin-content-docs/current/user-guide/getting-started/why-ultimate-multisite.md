@@ -3,7 +3,7 @@ title: Yiwm li cas hmoob?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# ຍ້ག་ເປັນຫຍັງ Ultimate Multisite {#why-ultimate-multisite}
+# ຍ້ག་ເປັນຫຍັງ Ultimate Multisite
 
 ຖ້າເຈົ້າໄດ້ມາຮອດບົດຄວາມນີ້, ເຈົ້າອາດຈະໄດ້ຍິນວ່າ plugin ຂອງພວກເຮົາອາດເປັນຄຳຕອບທີ່ຈະເຮັດໃຫ້ແນວຄິດທຸລະກິດຂອງເຈົ້າເປັນຈິງ. ພວກເຮົາຫວັງວ່າເຈົ້າຈະໄດ້ຄຳຕອບທີ່ຕ້ອງການໃນສິ້ນສຸດຂອງບົດຄວາມນີ້.
 

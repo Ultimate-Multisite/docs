@@ -3,7 +3,7 @@ title: Istoric de modificări al Planurilor cu Măsurare
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Jurnal de Modificări pentru Planurile Metrice {#metered-plans-changelog}
+# Jurnal de Modificări pentru Planurile Metrice
 
 Versiunea 1.1.0 - Lansat pe 2026-05-05
 - Nou: Facturare pentru token-uri AI pentru sub-site-uri multisite — urmăriți și facturați utilizarea token-urilor AI pe site-urile clienților, cu tarife configurabile pe token.

@@ -4,7 +4,7 @@ title: 필터 - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# 필터: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# 필터: wu_domain_has_correct_dns
 
 플러그인 개발자가 결과를 정의하기 위해 새로운 검사를 추가할 수 있도록 허용합니다.
 

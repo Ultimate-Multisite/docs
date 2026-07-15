@@ -3,7 +3,7 @@ title: Kusanidi Malipo ya Mwongozo
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Kuweka Malipo ya Kufanywa Mwenyewe (v2) {#setting-up-manual-payments-v2}
+# Kuweka Malipo ya Kufanywa Mwenyewe (v2)
 
 _**KUMBUKA MUHIMU: Makala haya yanahusu Ultimate Multisite toleo la 2.x.**_
 

@@ -3,7 +3,7 @@ title: Menuer til hotel- og restaurationsbranchen
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality-menuer {#hospitality-menus}
+# Hospitality-menuer
 
 Funktionen **Hospitality-menuer** gør det muligt for Theme Builder at generere og indlejre strukturerede mad- og drikkemenu-sider direkte på dit WordPress-site.
 

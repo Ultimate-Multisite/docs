@@ -3,7 +3,7 @@ title: WPMU DEV 統合
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV インテグレーション {#wpmu-dev-integration}
+# WPMU DEV インテグレーション
 
 ## 概要 {#overview}
 WPMU DEV は、ホスティング、プラグイン、サービスを提供する総合的な WordPress プラットフォームです。このインテグレーションにより、Ultimate Multisite と WPMU DEV ホスティング間で自動ドメイン同期と SSL 証明書管理が可能になります。

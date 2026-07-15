@@ -4,7 +4,7 @@ title: Tātari - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Tātari: wu_country_get_cities {#filter-wucountrygetcities}
+# Tātari: wu_country_get_cities
 
 Ka whakahoki i te rārangi tāone mō tētahi state i tētahi whenua.
 

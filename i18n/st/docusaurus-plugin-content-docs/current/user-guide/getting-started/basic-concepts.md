@@ -3,7 +3,7 @@ title: Lekutso la ho nna leboha
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Boitshwaro Ba lehle {#basic-concepts}
+# Boitshwaro Ba lehle
 
 Kea fana ka boitshwaro ba lehle ho thata. Ke tla go thusa ho bona hore na lefa se tseba ka WordPress, WooCommerce, le dipuo tsa PHP le MySQL.
 

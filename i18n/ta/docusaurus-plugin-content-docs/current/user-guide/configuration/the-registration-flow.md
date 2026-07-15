@@ -3,7 +3,7 @@ title: பதிவு செயல்முறை
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# பதிவு ஓட்டம் (v2) {#the-registration-flow-v2}
+# பதிவு ஓட்டம் (v2)
 
 _**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐ குறிக்கிறது.**_
 

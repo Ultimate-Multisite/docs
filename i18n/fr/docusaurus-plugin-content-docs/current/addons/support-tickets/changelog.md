@@ -3,7 +3,7 @@ title: Journal des modifications des tickets d’assistance
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Journal des modifications des tickets de support {#support-tickets-changelog}
+# Journal des modifications des tickets de support
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Amélioration : suppression du répertoire vendor/ du suivi Git (déjà couvert par .gitignore), réduisant la taille du dépôt

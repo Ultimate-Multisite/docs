@@ -3,7 +3,7 @@ title: กระบวนการเริ่มต้นใช้งาน The
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# ขั้นตอนการเริ่มต้นใช้งาน Theme Builder {#theme-builder-onboarding-flow}
+# ขั้นตอนการเริ่มต้นใช้งาน Theme Builder
 
 Superdav AI Agent v1.12.0 ได้เพิ่ม **ขั้นตอนการเริ่มต้นใช้งาน Theme Builder** แบบมีไกด์นำทาง ซึ่งจะช่วยให้คุณสร้างบล็อกธีม (block theme) แบบกำหนดเองได้ตั้งแต่ขั้นตอนการตั้งค่าครั้งแรก นี่เป็นการแทนที่โหมด Site Builder แบบเดิมด้วยแนวทางที่ยืดหยุ่นกว่าและมีผู้ช่วย AI เข้ามาช่วย
 

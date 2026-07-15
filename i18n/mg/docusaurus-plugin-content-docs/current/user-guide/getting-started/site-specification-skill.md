@@ -3,7 +3,7 @@ title: Famaritana ny toerana fiasa
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fahaizana famaritana ny toerana (Site Specification Skill) {#site-specification-skill}
+# Fahaizana famaritana ny toerana (Site Specification Skill)
 
 Ny **Fahaizana famaritana ny toerana (Site Specification skill)** dia fomba fandaminana voarafitra mba hanangonana ny tanjona an'ny tranonkala, ny olona ho iantsoina azy ary ny maha-izy azy amin'ny marika. Ity fampahalalana ity dia voatahiry ao amin'ny **site_brief** anao, izay ampiasain'ny agents (mpiasa) rehefa miara-miasa mba hanomezana fanampiana mitovy sy mahatakatra ny toe-javatra iantsoina.
 

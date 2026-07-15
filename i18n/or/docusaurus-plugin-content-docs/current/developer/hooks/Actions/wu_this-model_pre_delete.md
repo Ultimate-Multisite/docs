@@ -4,7 +4,7 @@ title: 'କାର୍ଯ୍ୟ - wu_{$this->model}_pre_delete'
 sidebar_label: 'wu_{$this->model}_pre_delete'
 _i18n_hash: 12d965c5aed740f08dba9a3d9cbfb2b5
 ---
-# Action: wu_\{$this->model\}_pre_delete {#action-wuthis-modelpredelete}
+# Action: wu_\{$this->model\}_pre_delete
 
 କୌଣସି object ଡାଟାବେସ୍‌ରେ ସଞ୍ଚୟ ହେବା ପରେ ଚାଲୁ ହୁଏ।
 

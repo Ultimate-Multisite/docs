@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Action: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Action: wu_dashboard_widgets
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳಿಗೆ ನೆಟ್‌ವರ್ಕ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ಪ್ಯಾನೆಲ್‌ಗೆ 위젯ಗಳನ್ನು ಸೇರಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

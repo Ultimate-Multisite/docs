@@ -4,7 +4,7 @@ title: ფილტრი - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# ფილტრი: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# ფილტრი: wu_checkout_form_base_domains
 
 ფილტრავს გაზიარებულ გადახდის ფორმის საბაზისო დომენებს, რომლებიც mapped-domain ჩანაწერებად არ უნდა იქცეს.
 

@@ -3,7 +3,7 @@ title: WP Engine-integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine-integrering {#wp-engine-integration}
+# WP Engine-integrering
 
 ## Översikt {#overview}
 WP Engine är en premiumplattform för hanterad WordPress-hosting som erbjuder optimerad prestanda, säkerhet och skalbarhet för WordPress-sajter. Den här integreringen möjliggör automatisk domänsynkronisering mellan Ultimate Multisite och WP Engine.

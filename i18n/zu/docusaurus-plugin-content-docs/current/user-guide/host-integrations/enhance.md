@@ -3,7 +3,7 @@ title: Thuthukisa Ukuhlanganiswa Kwephaneli Yokulawula
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Thuthukisa Ukuhlanganiswa kwe-Control Panel {#enhance-control-panel-integration}
+# Thuthukisa Ukuhlanganiswa kwe-Control Panel
 
 ## Ukubuka konke {#overview}
 Enhance iyi-control panel yesimanje enikeza amandla anamandla okuzenzakalela nokuphatha ukusingathwa. Lokhu kuhlanganiswa kuvumela ukuvumelanisa izizinda ngokuzenzakalela nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-Enhance Control Panel.

@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 برخی پلاگین‌ها ممکن است آدرس (URL) را قبل از فعال شدن نگاشت (mapping) ذخیره کرده باشند، یا آدرس‌ها را به شیوه‌ای بسازند که در فیلترهای ذکر شده در بالا پوشش داده نشده باشد.
 

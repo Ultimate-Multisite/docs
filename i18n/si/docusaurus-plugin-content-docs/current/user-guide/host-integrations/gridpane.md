@@ -3,7 +3,7 @@ title: GridPane ඒකාබද්ධ කිරීම
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ඒකාබද්ධ කිරීම (GridPane Integration) {#gridpane-integration}
+# GridPane ඒකාබද්ධ කිරීම (GridPane Integration)
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 GridPane කියන්නේ බැරෑරුම් WordPress වෘත්තිකයන් සඳහා නිර්මාණය කරන ලද විශේෂිත WordPress hosting control panel එකක්. මේකෙන් Ultimate Multisite සහ GridPane අතර Automatic domain syncing සහ SSL certificate management පහසු කරයි.

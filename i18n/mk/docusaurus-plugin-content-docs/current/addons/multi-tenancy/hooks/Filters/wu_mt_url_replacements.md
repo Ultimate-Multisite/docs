@@ -4,7 +4,7 @@ title: Филтер - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Филтер: wu_mt_url_replacements {#filter-wumturlreplacements}
+# Филтер: wu_mt_url_replacements
 
 Филтрирај парови за замена на URL.
 

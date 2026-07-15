@@ -4,7 +4,7 @@ title: Filtro - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filtrilo: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filtrilo: wu_checkout_field_types
 
 Niaj API-oj por aldoni novajn kampotipojn konektiĝas ĉi tie.
 

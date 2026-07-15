@@ -3,7 +3,7 @@ title: 'Pelajaran 4: Membangun Template Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Pelajaran 4: Membuat Template Khusus Industri (Niche Templates) {#lesson-4-building-niche-templates}
+# Pelajaran 4: Membuat Template Khusus Industri (Niche Templates)
 
 Template adalah inti dari nilai jual unik (niche value proposition) Anda. Pemilik studio kebugaran yang mendaftar dan melihat situs yang sudah terlihat seperti situs kebugaran—dengan jadwal kelas, profil pelatih, dan gambar yang tepat—jauh lebih mungkin untuk bertahan daripada yang melihat kanvas kosong.
 

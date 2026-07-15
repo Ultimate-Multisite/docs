@@ -4,7 +4,7 @@ title: Gweithred - wu_admin_pages_display_content
 sidebar_label: wu_admin_pages_display_content
 _i18n_hash: 3d5569326480b82d04ffa2ff5db18aa2
 ---
-# Gweithred: wu_admin_pages_display_content {#action-wuadminpagesdisplaycontent}
+# Gweithred: wu_admin_pages_display_content
 
 Dangos cynnwys golygydd personol.
 

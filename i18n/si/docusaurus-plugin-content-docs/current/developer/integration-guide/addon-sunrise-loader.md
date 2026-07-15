@@ -3,7 +3,7 @@ title: අතිරේක Sunrise ගොනු පූරකය
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise ගොනු ලෝඩරය {#addon-sunrise-file-loader}
+# Addon Sunrise ගොනු ලෝඩරය
 
 Ultimate Multisite 2.8.0 මඟින්, නිර්මාණය කළ `wp-content/sunrise.php` ගොනුව සංස්කරණය නොකර WordPress sunrise ආරම්භකරණයේදී ධාවනය විය යුතු add-on සහ අභිරුචි MU-plugin ඒකාබද්ධ කිරීම් සඳහා sunrise දිගු ලෝඩරයක් එක් කරයි.
 

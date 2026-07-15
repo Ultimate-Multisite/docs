@@ -3,7 +3,7 @@ title: Loco Translate बदलांचा इतिहास
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate बदलांचा इतिहास (Changelog) {#loco-translate-changelog}
+# Loco Translate बदलांचा इतिहास (Changelog)
 
 ### 1.0.1 {#101}
 * नवीनतम Loco Translate आवृत्तीसोबत सुसंगतता (compatibility) सुधारली

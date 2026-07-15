@@ -4,7 +4,7 @@ title: Criathrag - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Criathrag: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Criathrag: wp_ultimo_woocommerce_should_use_subscriptions
 
 Leig le luchd-leasachaidh cleachdadh WooCommerce Subscriptions a sparradh.
 

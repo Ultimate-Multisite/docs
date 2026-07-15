@@ -4,7 +4,7 @@ title: مرشح - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# عامل التصفية: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# عامل التصفية: wu_mt_syncable_user_meta_keys
 
 يصفّح قائمة مفاتيح بيانات المستخدم التي يجب مزامنتها مع العقد البعيدة.
 

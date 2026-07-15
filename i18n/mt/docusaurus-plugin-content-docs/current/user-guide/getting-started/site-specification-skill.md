@@ -3,7 +3,7 @@ title: Spessifika tal-sit Kskills
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill di Specificazzjoni tal-Site {#site-specification-skill}
+# Skill di Specificazzjoni tal-Site
 
 Il-**Skill di Specificazzjoni tal-Site** huwa approċċ strutturat biex tikkapsoli l-objettivi tal-site tiegħek, l-audience (l-publiku) u l-identità tal-brand. Dan informazzjoni hija magħal **site_brief** memory tiegħek, li l-agentijiet jreferwih b'mod konsistenti u b'aħjar kontekstu b'traxxen sessjonijiet.
 

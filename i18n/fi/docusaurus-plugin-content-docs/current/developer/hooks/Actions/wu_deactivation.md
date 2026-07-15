@@ -4,7 +4,7 @@ title: Toiminto - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Toiminto: wu_deactivation {#action-wudeactivation}
+# Toiminto: wu_deactivation
 
 Anna pluginin muiden osien liittää omat rutiininsa käytöstä poistamiseen
 

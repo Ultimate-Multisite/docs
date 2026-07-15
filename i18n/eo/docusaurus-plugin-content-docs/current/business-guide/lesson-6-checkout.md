@@ -3,7 +3,7 @@ title: 'Leciono 6: La Aliĝa Sperto'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Leciono 6: La Registriĝa Sperto {#lesson-6-the-signup-experience}
+# Leciono 6: La Registriĝa Sperto
 
 La checkout fluo estas kie intereso fariĝas enspezo. Konfuza aŭ ĝenerala registriĝa procezo perdas klientojn. Niĉospecifa fluo, kiu parolas ilian lingvon kaj sentiĝas senpena, konvertas ilin.
 

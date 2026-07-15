@@ -3,7 +3,7 @@ title: Webhook-en kudeaketa
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-en kudeaketa {#webhook-handling}
+# Webhook-en kudeaketa
 
 Sortu webhook amaiera-puntu pertsonalizatuak kanpoko zerbitzuetatik gertaerak jasotzeko eta datuak Ultimate Multisite-rekin sinkronizatzeko.
 

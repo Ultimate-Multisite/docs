@@ -3,7 +3,7 @@ title: Palette-Kontrast validéieren
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palette-Kontrast validéieren {#validate-palette-contrast}
+# Palette-Kontrast validéieren
 
 D'Fäegkeet **Palette-Kontrast validéieren** iwwerpréift Faarfpuer an denger Design-Palette op WCAG (Web Content Accessibility Guidelines)-Konformitéit, ier se op däin theme ugewannt ginn.
 

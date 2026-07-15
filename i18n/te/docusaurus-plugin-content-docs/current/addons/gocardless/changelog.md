@@ -3,7 +3,7 @@ title: GoCardless మార్పుల వివరాలు
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog {#gocardless-changelog}
+# GoCardless Changelog
 
 Version: 1.0.3 - విడుదల తేదీ 2026-05-05
 * పరిష్కారం: GoCardless membership పెండింగ్‌లో లేదా ఆన్-హోల్డ్ స్టేట్‌లో రద్దు చేయబడినప్పుడు, అనాథగా మిగిలిపోయిన పెండింగ్ సైట్‌లను ఇప్పుడు క్లీన్ చేస్తారు.

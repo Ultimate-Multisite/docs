@@ -4,7 +4,7 @@ title: Suodatin - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Suodatin: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Suodatin: wu_element_maybe_extract_arguments
 
 Lisää yleisen suodattimen, jonka avulla kehittäjät voivat laajentaa tätä jäsentäjää käsittelemään lisärakentajia tai plugineja.
 

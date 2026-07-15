@@ -3,7 +3,7 @@ title: Üyeliği İptal Etmek
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Üyelik İptal Etme (v2) {#canceling-a-membership-v2}
+# Üyelik İptal Etme (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i ifade eder.**_
 

@@ -3,7 +3,7 @@ title: Injektori i njoftimit
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Vendos Njoftim në rrjetin tuaj me Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Vendos Njoftim në rrjetin tuaj me Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector është një **add-on falas** që ju jep mjetet për të vendosur reklama direkt nga faqja e redaktimit të tyre.
 

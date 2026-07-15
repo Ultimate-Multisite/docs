@@ -3,7 +3,7 @@ title: Reģistrācijas plūsma
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Reģistrācijas plūsma (v2) {#the-registration-flow-v2}
+# Reģistrācijas plūsma (v2)
 
 _**SVIRTAS PIEZIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

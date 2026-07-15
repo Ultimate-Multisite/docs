@@ -4,7 +4,7 @@ title: Filter - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Filter: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
+# Filter: ultimate_multisite_content_sync_url
 
 ডেভেলপমেন্টৰ বাবে প্লাগইনৰ মূল স্থান (plugin root) লৈ আপেক্ষিক পথ (relative path) ব্যৱস্থাপনা কৰিবলৈ অনুমতি দিয়ে।
 

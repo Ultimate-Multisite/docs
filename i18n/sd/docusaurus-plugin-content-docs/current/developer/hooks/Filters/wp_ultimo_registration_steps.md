@@ -4,7 +4,7 @@ title: فلٽر - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# فلٽر: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# فلٽر: wp_ultimo_registration_steps
 
 فلٽرن ذريعي اضافي قدم شامل ڪريو
 

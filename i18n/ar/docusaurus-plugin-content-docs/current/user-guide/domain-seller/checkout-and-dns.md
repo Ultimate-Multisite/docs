@@ -3,7 +3,7 @@ title: حقل إتمام الدفع وDNS العميل
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# حقل الدفع وإدارة DNS للعملاء {#checkout-field-and-customer-dns-management}
+# حقل الدفع وإدارة DNS للعملاء
 
 ## حقل اختيار النطاق في الدفع {#the-domain-selection-checkout-field}
 

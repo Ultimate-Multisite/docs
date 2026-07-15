@@ -4,7 +4,7 @@ title: Filter - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filter: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Filter: mu_migration/export/user/headers
 
 Hii inafiltera seti ya kawaida ya viongozi wa mtumiaji (user headers) ambazo zinatakiwa kutoa au kuingiza.
 

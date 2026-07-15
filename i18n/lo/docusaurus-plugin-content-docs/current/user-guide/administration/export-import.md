@@ -3,7 +3,7 @@ title: Xuất và Nhập
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ດຶງຂໍ້ມູນອອກ ແລະ ນຳເຂົ້າ (Export & Import) {#export--import}
+# ດຶງຂໍ້ມູນອອກ ແລະ ນຳເຂົ້າ (Export & Import)
 
 Ultimate Multisite 2.9.0 ເພີ່ມເຄື່ອງມື **Export & Import** (ດຶງຂໍ້ມູນອອກ ແລະ ນຳເຂົ້າ) ໜຶ່ງຊຸດຢູ່ພາຍໃຕ້ເມນູ **Tools > Export & Import**. ໃຊ້ເຄື່ອງມືນີ້ເວລາທີ່ທ່ານຕ້ອງການເກັບໂຄງການ WordPress site ດຽວເປັນໄຟລ໌ ZIP, ກູ້ຄືນໄຟລ໌ ZIP ນັ້ນ, ຫຼື ຍ້າຍ site ລະຫວ່າງການຕິດຕັ້ງ Ultimate Multisite ແລະ single-site WordPress ທີ່ເຂົ້າກັນໄດ້.
 

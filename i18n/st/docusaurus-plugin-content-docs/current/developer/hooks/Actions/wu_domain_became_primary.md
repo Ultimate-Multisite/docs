@@ -4,7 +4,7 @@ title: Ketso - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Ketso: wu_domain_became_primary {#action-wudomainbecameprimary}
+# Ketso: wu_domain_became_primary
 
 E sebetsa ha domain e fetoha domain e ka sehloohong bakeng sa saete.
 

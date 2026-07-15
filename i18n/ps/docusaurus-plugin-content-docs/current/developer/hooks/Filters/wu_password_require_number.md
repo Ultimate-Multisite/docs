@@ -4,7 +4,7 @@ title: فلټر - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# فلټر: wu_password_require_number {#filter-wupasswordrequirenumber}
+# فلټر: wu_password_require_number
 
 فلټر کوي چې ایا په پټنومونو کې شمېرې اړینې وي که نه.
 

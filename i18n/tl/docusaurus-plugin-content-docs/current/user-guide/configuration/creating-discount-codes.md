@@ -3,7 +3,7 @@ title: Paggawa ng mga Discount Code
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Paglikha ng Discount Codes (v2) {#creating-discount-codes-v2}
+# Paglikha ng Discount Codes (v2)
 
 _**MAHALAGANG PAUNA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 

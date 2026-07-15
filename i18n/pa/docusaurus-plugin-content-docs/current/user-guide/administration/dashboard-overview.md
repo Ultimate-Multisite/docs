@@ -3,7 +3,7 @@ title: ਡੈਸ਼ਬੋਰਡ ਸੰਖੇਪ ਜਾਣਕਾਰੀ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ਡੈਸ਼ਬੋਰਡ ਦੀ ਜਾਣਕਾਰੀ {#dashboard-overview}
+# ਡੈਸ਼ਬੋਰਡ ਦੀ ਜਾਣਕਾਰੀ
 
 Ultimate Multisite ਦਾ ਇੱਕ ਵੱਖਰਾ **ਡੈਸ਼ਬੋਰਡ** ਹੈ ਜੋ Ultimate Multisite ਮੀਨੂ ਵਿੱਚ ਮਿਲਦਾ ਹੈ, ਅਤੇ ਇਹ Network Dashboard ਵਿੱਚ ਵੀ widgets ਜੋੜਦਾ ਹੈ। ਇਸ ਲੇਖ ਵਿੱਚ ਅਸੀਂ ਦੋਵਾਂ ਥਾਵਾਂ ਬਾਰੇ ਦੱਸਾਂਗੇ।
 

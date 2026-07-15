@@ -4,7 +4,7 @@ title: Akció - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Akció: wu_page_before_render {#action-wupagebeforerender}
+# Akció: wu_page_before_render
 
 Ez lehetővé teszi a plugin fejlesztők számára, hogy további tartalmat adjanak hozzá, még mielőtt kiírjuk az oldalt.
 

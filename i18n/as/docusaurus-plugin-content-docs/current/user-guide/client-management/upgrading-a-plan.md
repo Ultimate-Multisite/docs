@@ -3,7 +3,7 @@ title: এটা প্লেন আপগ্রেড কৰা
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# এটা প্লেন আপগ্রেড কৰা (v2) {#upgrading-a-plan-v2}
+# এটা প্লেন আপগ্রেড কৰা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ বৰ্ণনা কৰে।**_
 

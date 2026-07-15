@@ -3,7 +3,7 @@ title: Kesiliş kodlaryny döretmek
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kesdi Çünür Kodlar Dörmek (v2) {#creating-discount-codes-v2}
+# Kesdi Çünür Kodlar Dörmek (v2)
 
 _**ÖNEMLİ QAYDAMA: Bu məqalə Ultimate Multisite versiya 2.x-i nəzərdə tutur.**_
 

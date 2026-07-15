@@ -3,7 +3,7 @@ title: 'Isifundo 5: Ukuyila izicwangciso zakho'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Isifundo 5: Ukuyila Izicwangciso Zakho {#lesson-5-designing-your-plans}
+# Isifundo 5: Ukuyila Izicwangciso Zakho
 
 Amanqanaba ezicwangciso zakho ayizizo nje amanqanaba amaxabiso -- abonisa indlela abathengi bakho abakwi-niche abasebenza ngayo ngokwenene. Kwesi sifundo uza kuyila amanqanaba eemveliso ahambelana neemfuno zokwenene zamashishini okuzilolonga kumanqanaba ahlukeneyo.
 

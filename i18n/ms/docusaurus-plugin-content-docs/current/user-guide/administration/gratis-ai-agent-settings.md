@@ -3,7 +3,7 @@ title: Tetapan Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Tetapan Gratis AI Agent {#gratis-ai-agent-settings}
+# Tetapan Gratis AI Agent
 
 Skrin **Settings → Advanced** dalam Gratis AI Agent menyediakan konfigurasi peringkat pentadbir untuk integrasi backend. Halaman ini mendokumenkan pemajuan maklum balas, kekunci penyedia carian, persediaan perkhidmatan Superdav terurus, kawalan Google Calendar, tetapan SMS TextBee, dan bendera ciri seluruh rangkaian.
 

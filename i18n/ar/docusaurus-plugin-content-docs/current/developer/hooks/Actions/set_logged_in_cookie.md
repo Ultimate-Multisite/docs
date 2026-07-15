@@ -4,7 +4,7 @@ title: الإجراء - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# الإجراء: set_logged_in_cookie {#action-setloggedincookie}
+# الإجراء: set_logged_in_cookie
 
 يتم إطلاقه مباشرة قبل تعيين ملف تعريف الارتباط للمصادقة عند تسجيل الدخول.
 

@@ -3,7 +3,7 @@ title: اضافي سج اڀرڻ فائل لوڊر
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 add-ons ۽ custom MU-plugin انضمامن لاءِ sunrise extension loader شامل ڪري ٿو، جن کي ٺاهيل `wp-content/sunrise.php` فائل ۾ تبديلي ڪرڻ کان سواءِ WordPress sunrise bootstrapping دوران هلڻ جي ضرورت هوندي آهي.
 

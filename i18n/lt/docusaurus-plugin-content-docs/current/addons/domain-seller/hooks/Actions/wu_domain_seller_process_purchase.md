@@ -4,7 +4,7 @@ title: Veiksmas - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Veiksmas: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Veiksmas: wu_domain_seller_process_purchase
 
 Suveikia, kai domeno pirkimas apdorojamas po checkout užbaigimo.
 

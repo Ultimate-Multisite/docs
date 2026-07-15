@@ -4,7 +4,7 @@ title: ຕົວກັ່ນຕອງ - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# ຕົວກັ່ນຕອງ: wu_sso_enabled {#filter-wussoenabled}
+# ຕົວກັ່ນຕອງ: wu_sso_enabled
 
 ເປີດ/ປິດ ຄວາມສາມາດການເຂົ້າສູ່ລະບົບຄັ້ງດຽວຂ້າມໂດເມນ.
 

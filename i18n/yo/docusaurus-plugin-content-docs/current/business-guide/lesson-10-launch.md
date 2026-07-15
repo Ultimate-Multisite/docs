@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 10: Ọjọ́ Ìfilọ́lẹ̀'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ẹ̀kọ́ 10: Ọjọ́ Ìfilọlẹ̀ {#lesson-10-launch-day}
+# Ẹ̀kọ́ 10: Ọjọ́ Ìfilọlẹ̀
 
 Gbogbo nkan ti kọ́ tán. Kí o tó ṣí ilẹ̀kùn, ẹ̀kọ́ yìí máa rìn ọ kọjá àtòjọ ohun tí a gbọ́dọ̀ ṣàyẹ̀wò ṣáájú ìfilọlẹ̀ láti rí i dájú pé kò sí ohun tó bàjẹ́, tó sọnù, tàbí tó lè mú ìtìjú wá.
 

@@ -3,7 +3,7 @@ title: 'Lesson 9: Profit üçün qiymətləndirmə'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ders 9: Kâr İçin Fiyatlandırma {#lesson-9-pricing-for-profit}
+# Ders 9: Kâr İçin Fiyatlandırma
 
 Ders 5'te FitSite planları için başlangıç fiyatlarını belirlemiştik. Şimdi ise geliri artıracak, yükseltmeleri teşvik edecek ve müşteri kaybını azaltacak tekniklerle fiyatlandırma stratejimizi geliştireceğiz.
 

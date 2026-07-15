@@ -3,7 +3,7 @@ title: Reģistrēties ar kontu ar Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Reģistrēties ar kontu ar Zapieru {#event-register-an-account-via-zapier}
+# Event: Reģistrēties ar kontu ar Zapieru
 
 Latīgajā rakstā [Integrācija Ultimate Multisite ar Zapieru](zapier.md) mēs apspārdaļojām, kā izmantot Zapieru veikt dažādus darbības Ultimate Multisite bazas datu un notikumiem atkarībā no triggeriem un eventiem. Šajā rakstā parādīsim, kā integrēt treto puses lietojumus. Mēs izmantosim Google Sheets kā datu avotu un nosūtīsim informāciju uz Ultimate Multisite, lai reģistrētu kontu.
 

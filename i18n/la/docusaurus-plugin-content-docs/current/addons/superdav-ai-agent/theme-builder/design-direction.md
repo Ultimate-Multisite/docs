@@ -3,7 +3,7 @@ title: Directio designationis
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Directio Design {#design-direction}
+# Directio Design
 
 Gradus **Design Direction** sinit te recensere, expolire, et perficere visivum design thematis tui antequam Theme Builder thema completum generet.
 

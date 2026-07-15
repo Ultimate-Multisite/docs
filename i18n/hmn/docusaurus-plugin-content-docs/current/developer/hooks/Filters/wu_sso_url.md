@@ -4,7 +4,7 @@ title: Lim - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Lim: wu_sso_url {#filter-wussourl}
+# Lim: wu_sso_url
 
 Lim cov SSO URLs uas tsim los ua ntej lawv raug xa rov qab rau cov kev ua ntawm tus neeg siv khoom hla ntau domain.
 

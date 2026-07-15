@@ -3,7 +3,7 @@ title: Kodi Snippetti
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Snippets Code għal v2 {#code-snippets-for-v2}
+# Snippets Code għal v2
 
 Basse, snippets code għall **WordPress** jintużaw biex isiru xi azzjonijiet li tistaqsu bħal li jittħallmu b'plugin xogħol dedikabbli. Il-snippets code huma postati f'xi file ta WordPress core jew tema (b'mod ġeneral, il-file functions.php tal-tema tiegħek) jew jistaqxu jintużaw bħala MU plugin.
 

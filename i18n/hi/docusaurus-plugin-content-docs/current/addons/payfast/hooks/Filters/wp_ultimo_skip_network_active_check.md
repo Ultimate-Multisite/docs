@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0b11e9dd91ab7c817aae511e044f8d33
 ---
-# फ़िल्टर: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# फ़िल्टर: wp_ultimo_skip_network_active_check
 
 डेवलपर्स को इस जाँच को बायपास (short-circuit) करने की अनुमति देता है।
 

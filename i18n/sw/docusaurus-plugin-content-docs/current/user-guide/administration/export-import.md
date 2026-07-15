@@ -3,7 +3,7 @@ title: Tengo na Ingiza
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 limeongeza zana ya **Export & Import** ya tovuti moja chini ya **Tools > Export & Import**. Tumia zana hii wakati unahitaji kuweka tovuti moja ya WordPress kama faili ya ZIP, kurejesha faili hiyo ya ZIP, au kuhamisha tovuti kati ya usakinishaji vinavyolingana vya Ultimate Multisite na WordPress vya tovuti moja.
 

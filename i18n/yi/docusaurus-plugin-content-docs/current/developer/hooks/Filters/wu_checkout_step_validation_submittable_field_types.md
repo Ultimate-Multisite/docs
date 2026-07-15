@@ -4,7 +4,7 @@ title: פֿילטער - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# פילטער: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# פילטער: wu_checkout_step_validation_submittable_field_types
 
 לאָזט דעוועלאָפּערס איבערגיין די קאָנטראָל אויב אַ פֿעלד איז אויטאָ־איינשיקבאַר.
 

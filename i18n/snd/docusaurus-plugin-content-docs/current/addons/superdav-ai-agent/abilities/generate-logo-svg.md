@@ -3,7 +3,7 @@ title: لوگو SVG ٺاهيو
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# لوگو SVG ٺاهيو {#generate-logo-svg}
+# لوگو SVG ٺاهيو
 
 **لوگو SVG ٺاهيو** صلاحيت Theme Builder کي اجازت ڏئي ٿي ته اهو توهان جي WordPress سائيٽ ۾ سڌو سنئون ڪسٽم لوگو SVGs ٺاهي ۽ شامل ڪري، خودڪار namespace-safe صفائي سان.
 

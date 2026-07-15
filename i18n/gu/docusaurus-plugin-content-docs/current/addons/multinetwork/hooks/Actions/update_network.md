@@ -4,7 +4,7 @@ title: ક્રિયા - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network {#action-updatenetwork}
+# Action: update_network
 
 જ્યારે કોઈ હાલનું નેટવર્ક અપડેટ થઈ ગયું હોય, ત્યારે આ એક્શન ચાલે છે.
 

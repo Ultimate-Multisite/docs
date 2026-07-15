@@ -3,7 +3,7 @@ title: ଟଙ୍କା ପାଇବା
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ଟଙ୍କା ପାଇବା (v2) {#getting-paid-v2}
+# ଟଙ୍କା ପାଇବା (v2)
 
 _**ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଟିପ୍ପଣୀ: ଏହି ଲେଖା Ultimate Multisite ସଂସ୍କରଣ ୨.x ବିଷୟରେ।**_
 

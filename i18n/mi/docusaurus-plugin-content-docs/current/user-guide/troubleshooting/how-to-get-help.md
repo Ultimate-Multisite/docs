@@ -3,7 +3,7 @@ title: He aha te mea e taea ai i a koe?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# He aha te waiata (How to get help) {#how-to-get-help}
+# He aha te waiata (How to get help)
 
 He tino ana koe ki tō key License, ā, he whai ake i tēnei he whaiako ki te timata mātou kia tū he tino pai i roto i te wā e ka puta koe i te whakauru Ultimate Multisite.
 

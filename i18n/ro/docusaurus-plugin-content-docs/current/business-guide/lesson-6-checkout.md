@@ -3,7 +3,7 @@ title: 'Lecția 6: Experiența de înregistrare'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lecția 6: Experiența de Înscriere {#lesson-6-the-signup-experience}
+# Lecția 6: Experiența de Înscriere
 
 Procesul de plată este locul unde interesul se transformă în venit. Un proces de înscriere confuz sau generic face ca clienții să plece. Un flux specific nișei, care vorbește limba lor și pare fără efort, îi va transforma în clienți plătitori.
 

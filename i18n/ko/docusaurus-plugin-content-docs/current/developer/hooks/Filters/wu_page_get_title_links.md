@@ -4,7 +4,7 @@ title: 필터 - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# 필터: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# 필터: wu_page_get_title_links
 
 플러그인 개발자와 저희가 편집 페이지에 작업 링크를 추가할 수 있도록 합니다
 

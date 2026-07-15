@@ -3,7 +3,7 @@ title: Qalabka iyo Habaynta
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Qalabka iyo Habaynta {#tools-and-configuration}
+# Qalabka iyo Habaynta
 
 Theme Builder waxa uu adeegsadaa urur qalab ah si uu u falanqeeyo, u naqshadeeyo, una dhiso mareegtaada WordPress. Nooca 1.16.0, **sd-ai-agent/site-scrape hadda waa qalab Heerka 1 ah**, taas oo ka dhigaysa mid si caadi ah looga heli karo Theme Builder. Superdav AI Agent v1.18.0 waxa kale oo uu soo bandhigayaa xirmo wehel Advanced ah oo si gaar ah loo qaybiyo, looguna talagalay socodsiinnada horumariye ee la aamini karo; qalabkaas kama tirsana xirmada asaasiga ah ee WordPress.org waana in si gaar ah loo rakibaa loona oggolaadaa.
 

@@ -3,7 +3,7 @@ title: cPanel ইন্টিগ্ৰেচন
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integration {#cpanel-integration}
+# cPanel Integration
 
 ## Overview {#overview}
 cPanel হৈছে বহুত shared আৰু dedicated hosting provider-সকলে ব্যৱহাৰ কৰা আটাইতকৈ জনপ্রিয় web hosting control panel-ৰ অন্যতম। এই integration-এ Ultimate Multisite আৰু cPanel ৰ মাজত স্বয়ংক্রিয় domain syncing সক্ষম কৰে, যাৰ ফলত আপুনি স্বয়ংক্রিয়ভাৱে domain aliases আৰু subdomains আপোনাৰ cPanel account ত যোগ কৰিব পাৰে।

@@ -3,7 +3,7 @@ title: Povratne informacije strank in poročanje o težavah
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Povratne informacije strankov in poročanje o težavah {#customer-feedback--issue-reporting}
+# Povratne informacije strankov in poročanje o težavah
 
 Gratis AI Agent v1.5.0 vključuje zgrajen sistem za povratne informacije in poročanje o težavah, ki omogoča uporabnikom končnega termina, da označijo nepomembna odgovora in direktno poročajo o problemih iz čata. Ta sistem vključuje upravljanje soglasja (consent management), avtomatizirano ukaz za poročanje in AI-pomočeno trižiranje na backendu.
 

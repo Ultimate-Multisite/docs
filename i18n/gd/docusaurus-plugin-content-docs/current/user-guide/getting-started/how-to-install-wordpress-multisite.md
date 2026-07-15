@@ -3,7 +3,7 @@ title: Comharrachadh WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Cona chlàradh WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Cona chlàradh WordPress Multisite?
 
 Leidichir WordPress Multisite leideach thu a bhith agadair seannach de siti ar cur-a-chlu. Is e feuma seo a th'annach, ach tha e ann an-diugh gu nàdarach.
 

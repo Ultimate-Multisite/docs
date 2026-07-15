@@ -3,7 +3,7 @@ title: 'Õppetund 12: Ettevõtte juhtimine'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Õppetund 12: Ettevõtte juhtimine {#lesson-12-running-the-business}
+# Õppetund 12: Ettevõtte juhtimine
 
 Platvorm ei ole projekt, mille sa lõpetad -- see on ettevõte, mida sa juhid. See õppetund käsitleb FitSite’i haldamise igapäevaseid toiminguid: tuge, arveldamist, hooldust ja klientide rahulolu hoidmist.
 

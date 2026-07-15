@@ -4,7 +4,7 @@ title: Aktioun - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Aktioun: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Aktioun: wp_ultimo_ptm_page_wizard_after_title
 
 Erlaabt Entwéckler vun Erweiderungen, zousätzlech Knäppercher op Lëschtesäiten derbäizesetzen
 

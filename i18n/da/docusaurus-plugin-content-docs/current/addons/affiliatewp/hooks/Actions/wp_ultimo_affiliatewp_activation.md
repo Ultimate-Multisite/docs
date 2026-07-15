@@ -4,7 +4,7 @@ title: Handling - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Handling: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Handling: wp_ultimo_affiliatewp_activation
 
 Lad andre dele af pluginet tilknytte deres rutiner for aktivering
 

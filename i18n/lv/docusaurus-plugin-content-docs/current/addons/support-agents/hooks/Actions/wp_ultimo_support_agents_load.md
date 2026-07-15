@@ -4,7 +4,7 @@ title: Darbība - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# Darbība: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# Darbība: wp_ultimo_support_agents_load
 
 Tiek aktivizēta, kad visas atkarības ir ielādētas
 

@@ -3,7 +3,7 @@ title: Enhance Control Panel Integration
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel Integration {#enhance-control-panel-integration}
+# Enhance Control Panel Integration
 
 ## Overzicht {#overview}
 Enhance is een modern controlepaneel dat krachtige hostingautomatisering en beheermogelijkheden biedt. Deze integratie maakt automatische domein synchronisatie en SSL-certificaatbeheer mogelijk tussen Ultimate Multisite en Enhance Control Panel.

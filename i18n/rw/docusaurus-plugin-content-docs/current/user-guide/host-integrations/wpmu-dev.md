@@ -3,7 +3,7 @@ title: Urugendo rw'Ultimate Multisite
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration na WPMU DEV {#wpmu-dev-integration}
+# Integration na WPMU DEV
 
 ## Umuhuku (Overview) {#overview}
 WPMU DEV ni platformi ya WordPress y'umutwe nshya itanga hosting, plugins, no services ku za WordPress sites. Iyi integration irashobora gukora uburyo bw'ubwumvikane bwo gukoresha domain syncing no gukemura SSL certificate management hagati ya Ultimate Multisite na hosting ya WPMU DEV.

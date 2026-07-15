@@ -3,7 +3,7 @@ title: Kufotokozera kwa Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Usimu wa Site Specification Skill {#site-specification-skill}
+# Usimu wa Site Specification Skill
 
 Usimu wa **Site Specification skill** ndi njira yomwe imapulogera (structured approach) yomwe imapulogera monga zolemba za sita lanu, wopereka lanu, ndi chidziwitso cha brand lanu. Kufotokoza limodzi limalimbikira m'memory ya **site_brief** yanu, yomwe imapulogera amagwira ntchito m'moyo wosiyanasiyana kuti apereke chithandizo chomwe chimakhulupirira ndi zomwe zili pansi.
 

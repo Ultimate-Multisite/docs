@@ -3,7 +3,7 @@ title: cPanel ඒකාබද්ධ කිරීම
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel සමඟ සම්බන්ධ කිරීම (Integration) {#cpanel-integration}
+# cPanel සමඟ සම්බන්ධ කිරීම (Integration)
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 cPanel කියන්නේ බොහෝ Shared සහ Dedicated hosting providers විසින් භාවිතා කරන ජනප්‍රියම web hosting control panel එකක්. Ultimate Multisite සහ cPanel අතර ස්වයංක්‍රීය ડોමේන් සමමුහුර්තකරණය (automatic domain syncing) සඳහා මේක ඉඩ දෙනවා. ඒකෙන් ඔයාට ඔබේ cPanel ගිණුමට අමතර ડોමේන් ඇලියා (aliases) සහ උප-โดಮೇන් (subdomains) ස්වයංක්‍රීයව එකතු කරගන්න පුළුවන්.

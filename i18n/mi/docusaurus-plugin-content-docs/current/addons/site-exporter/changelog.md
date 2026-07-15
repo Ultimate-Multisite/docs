@@ -3,7 +3,7 @@ title: Rārangi Panonitanga Kaituku Pae
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Rangitaki Panonitanga Site Exporter {#site-exporter-changelog}
+# Rangitaki Panonitanga Site Exporter
 
 Putanga: 1.0.6 - I tukuna i te 2026-05-11
 * Hou: Ka paihere ngā kaweake pae ināianei i tētahi index.php tīmata-aunoa kia taea ai te ZIP te tāuta ki tētahi host hou me te kore tāutanga plugin motuhake

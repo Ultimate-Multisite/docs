@@ -3,7 +3,7 @@ title: Nri Ọnụmọdụ
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Yenye-order list na mabahndia Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Yenye-order list na mabahndia Ultimate Multisite
 
 Dropdown na ị chọrụ etta nkwado bụ na ọ dị na ụdị alphabetical (na ọkọ) nke ndị a na akụkọ English nke onye a naakaa. Oge mgbe ọ dị, nwere ike ịbụ na onye a na-eme ka onye a na akaụkọ gị na/na onye ọkụ na ndụ ha bụrụ na ụdị naakaa na akụkọ onye a naakaa nke na-agba.
 

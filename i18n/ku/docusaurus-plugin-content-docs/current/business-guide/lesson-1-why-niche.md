@@ -3,7 +3,7 @@ title: 'Ders 1: Çima niş bi ser dikeve'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Ders 1: Çima Qada Taybet Serdikeve {#lesson-1-why-niche-wins}
+# Ders 1: Çima Qada Taybet Serdikeve
 
 Berî ku em dest bidin tu software, divê tu fêm bikî çima avakirin ji bo temaşevaneke taybet biryara herî girîng e ku tu yê bidî.
 

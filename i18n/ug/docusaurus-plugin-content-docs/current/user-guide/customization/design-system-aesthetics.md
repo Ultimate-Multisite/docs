@@ -3,7 +3,7 @@ title: تصميم سیستمی جماليات مهارت
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics Skill (طراحی سیستم زیبایی‌شناسی) {#design-system-aesthetics-skill}
+# Design System Aesthetics Skill (طراحی سیستم زیبایی‌شناسی)
 
 **Design System Aesthetics skill** یعنی یک روش راهنما برای بهتر کردن ظاهر سایت شما. این مهارت به شما کمک می‌کند در مورد فونت‌ها، رنگ‌ها، فاصله و توکن‌های حرکتی که سیستم طراحی شما را تعریف می‌کنند، تصمیمات سازگاری بگیرید.
 

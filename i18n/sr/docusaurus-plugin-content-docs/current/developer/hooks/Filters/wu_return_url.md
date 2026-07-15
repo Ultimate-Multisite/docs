@@ -4,7 +4,7 @@ title: Филтер - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Филтер: wu_return_url {#filter-wureturnurl}
+# Филтер: wu_return_url
 
 Омогућава програмерима да промене повратни URL мрежног пролаза за плаћање који се користи након процеса плаћања.
 

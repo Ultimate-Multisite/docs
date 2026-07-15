@@ -4,7 +4,7 @@ title: מסנן - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# פילטר: wu_sso_url {#filter-wussourl}
+# פילטר: wu_sso_url
 
 מסנן כתובות URL של SSO שנוצרו לפני שהן מוחזרות עבור פעולות לקוח בין דומיינים.
 

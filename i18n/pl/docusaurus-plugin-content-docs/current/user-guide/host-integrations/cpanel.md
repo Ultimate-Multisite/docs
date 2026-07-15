@@ -3,7 +3,7 @@ title: Integracja z cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integracja z cPanel {#cpanel-integration}
+# Integracja z cPanel
 
 ## Przegląd {#overview}
 cPanel to jeden z najpopularniejszych paneli zarządzania hostingiem, używany przez wielu dostawców hostingu współdzielonego i dedykowanego. Ta integracja umożliwia automatyczną synchronizację domen między Ultimate Multisite a cPanel, pozwalając na automatyczne dodawanie aliasów domen i subdomen do Twojego konta cPanel.

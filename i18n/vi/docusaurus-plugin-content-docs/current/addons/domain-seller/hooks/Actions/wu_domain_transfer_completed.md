@@ -4,7 +4,7 @@ title: Hành động - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Action: wu_domain_transfer_completed
 
 Hành động này được kích hoạt sau khi quá trình chuyển giao tên miền hoàn tất.
 

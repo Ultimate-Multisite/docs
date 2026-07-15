@@ -3,7 +3,7 @@ title: Ultimate Multisite のインストール
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite のインストール {#installing-ultimate-multisite}
+# Ultimate Multisite のインストール
 
 :::note
 このチュートリアルでは、WordPress Multisite がすでにインストールおよび設定されていることを前提としています。手順については、WP Beginner の [こちらのチュートリアル](https://www.wpbeginner.com/glossary/multisite/) を参照してください。

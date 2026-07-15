@@ -3,7 +3,7 @@ title: Quomodo ad adjuvare
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Quod ad auxilium recipere {#how-to-get-help}
+# Quod ad auxilium recipere
 
 Tu habes tuam clave licentiae valida, et cum ea est accessus ad team nostrum ut tibi in hoc tempore establishmentis Ultimate Multisite quaerendos quaestionibus adiuvia possimus dare.
 

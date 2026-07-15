@@ -3,7 +3,7 @@ title: Gerenciando associações
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gerenciando memberships {#managing-memberships}
+# Gerenciando memberships
 
 No Ultimate Multisite, você pode gerenciar memberships e acessar todas as subscriptions na sua rede. Revise e edite detalhes da subscription, como planos e produtos, o número de sites, valor e frequência de cobrança, histórico de pagamentos e registros de data e hora.
 

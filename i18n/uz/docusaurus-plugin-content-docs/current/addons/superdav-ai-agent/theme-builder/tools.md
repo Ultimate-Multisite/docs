@@ -3,7 +3,7 @@ title: Asboblar va konfiguratsiya
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Vositalar va konfiguratsiya {#tools-and-configuration}
+# Vositalar va konfiguratsiya
 
 Theme Builder WordPress saytingizni tahlil qilish, dizayn qilish va qurish uchun vositalar to‘plamidan foydalanadi. 1.16.0 versiyada **sd-ai-agent/site-scrape endi Tier 1 vosita**, shu sababli u Theme Builder’da sukut bo‘yicha mavjud. Superdav AI Agent v1.18.0 shuningdek ishonchli dasturchi ish jarayonlari uchun alohida tarqatiladigan Advanced hamroh paketini taqdim etadi; bu vositalar WordPress.org asosiy paketining bir qismi emas va alohida o‘rnatilishi hamda avtorizatsiya qilinishi kerak.
 

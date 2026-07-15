@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Plasarea reclamelor în rețeaua ta cu Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Plasarea reclamelor în rețeaua ta cu Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector este un **add-on gratuit** care îți oferă instrumentele necesare pentru a plasa reclame în planurile tale direct din pagina de editare a acestora.
 

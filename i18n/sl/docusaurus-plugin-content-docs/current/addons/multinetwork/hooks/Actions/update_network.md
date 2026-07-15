@@ -4,7 +4,7 @@ title: Dejanje – update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Dejanje: update_network {#action-updatenetwork}
+# Dejanje: update_network
 
 Sproži se po posodobitvi obstoječega omrežja.
 

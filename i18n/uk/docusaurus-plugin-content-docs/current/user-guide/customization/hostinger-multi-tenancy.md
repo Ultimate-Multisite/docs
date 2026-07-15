@@ -3,7 +3,7 @@ title: Мультиаренда Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Мультитенант Hostinger {#hostinger-multi-tenancy}
+# Мультитенант Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 додає функціональність мультитенант Hostinger, що дозволяє розміщеним доменам брати участь у наданні суверенних арендаторів паралельно з існуючою інтеграцією мапінгу доменів Hostinger.
 

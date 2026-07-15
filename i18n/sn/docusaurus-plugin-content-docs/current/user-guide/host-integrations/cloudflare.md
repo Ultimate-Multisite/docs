@@ -3,7 +3,7 @@ title: Kugadzirwa neCloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Ovérview {#overview}
 Cloudflare ni ndiri munhu anobva wose murefu wekudya (CDN) uye munhu anobva munhu anobatsira kuonekwa nekubatsira kudzera mweya wewebsites. Izvi zvinobatsira kuti usawane nekuvaka websites, zvakasiyana-siyete, zvakasiyana-siyete (subdomain multisite installations). Izvi zvinobatsira kuti usawane nekuvaka websites, zvakasiyana-siyete, zvakasiyana-siyete (subdomain multisite installations).

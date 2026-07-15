@@ -4,7 +4,7 @@ title: Gnìomh - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Gnìomh: wu_domain_created {#action-wudomaincreated}
+# Gnìomh: wu_domain_created
 
 Thèid a chur an gnìomh nuair a thèid mapadh domain ùr a chur ris.
 

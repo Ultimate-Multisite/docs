@@ -3,7 +3,7 @@ title: plān ଅପଗ୍ରେଡ କରିବା
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# ପ୍ଲାନ ଅପଗ୍ରେଡ କରିବା (v2) {#upgrading-a-plan-v2}
+# ପ୍ଲାନ ଅପଗ୍ରେଡ କରିବା (v2)
 
 _**ମହତ୍ତ୍ୱପୂର୍ଣ୍ଣ ନୋଟ: ଏହି ଆଇକାଣିକରେ Ultimate Multisite version 2.x ବିଷୟରେ ସୂଚନା ଦିଆଯାଇଛି।**_
 

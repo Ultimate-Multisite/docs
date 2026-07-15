@@ -4,7 +4,7 @@ title: Үйлдэл - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Үйлдэл: wu_before_light_ajax {#action-wubeforelightajax}
+# Үйлдэл: wu_before_light_ajax
 
 Зарим тохиолдолд үйлдлүүдийг зохицуулахын тулд нэмэлт нөөц ачаалах шаардлагатай болно.
 

@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്കും ഞവർക്കും നമ്മുടെ എഡിറ്റ് പേജുകളിൽ ആക്ഷൻ ലിങ്കുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

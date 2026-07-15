@@ -3,7 +3,7 @@ title: 'Chidzidzo 1: Nei musika wakasarudzika uchikunda'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Chidzidzo 1: Nei Musika Wakasarudzika Uchikunda {#lesson-1-why-niche-wins}
+# Chidzidzo 1: Nei Musika Wakasarudzika Uchikunda
 
 Tisati tabata chero software, unofanira kunzwisisa kuti nei kuvakira vateereri vakasarudzika chiri chisarudzo chimwe chete chakanyanya kukosha chauchaita.
 

@@ -3,7 +3,7 @@ title: Webhooki
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Uzraksts par Webhookiem (v2) {#a-first-look-on-webhooks-v2}
+# Uzraksts par Webhookiem (v2)
 
 _**PIEŠANJAS: Atzīmē, ka šī funkcija vai raksts ir paredzēts ieviešniekiem lietotājiem.**_
 

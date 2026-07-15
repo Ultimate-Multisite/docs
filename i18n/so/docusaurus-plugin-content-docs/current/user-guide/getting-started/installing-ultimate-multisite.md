@@ -3,7 +3,7 @@ title: Rakibaya Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Rakibaadda Ultimate Multisite {#installing-ultimate-multisite}
+# Rakibaadda Ultimate Multisite
 
 :::note
 Tilmaamahan waxay kuu sheegayaan in aad hore u rakibtay oo aad qaabaysay WordPress Multisite. Si aad wax uga barato, eeg [tilmaame-kan](https://www.wpbeginner.com/glossary/multisite/) ee WP Beginner.

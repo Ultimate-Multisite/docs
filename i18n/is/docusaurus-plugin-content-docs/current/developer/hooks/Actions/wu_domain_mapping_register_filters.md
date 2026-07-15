@@ -4,7 +4,7 @@ title: Aðgerð - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Aðgerð: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Aðgerð: wu_domain_mapping_register_filters
 
 Sum plugin vista URL áður en vörpunin var virk eða byggja URL á annan hátt sem er ekki innifalinn í síunum hér að ofan.
 

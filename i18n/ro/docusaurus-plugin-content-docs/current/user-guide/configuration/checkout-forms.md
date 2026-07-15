@@ -3,7 +3,7 @@ title: Formulare de finalizare a comenzii
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulare de checkout {#checkout-forms}
+# Formulare de checkout
 
 Formularele de checkout sunt o modalitate ușoară și flexibilă de a experimenta cu abordări diferite atunci când încerci să convertești clienți noi.
 

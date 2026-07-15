@@ -3,7 +3,7 @@ title: Сайт үүсгэх горимыг арилгах мэдэгдэл
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Сайт Үүсгэх Модтой холбоотой мэдэгдэл {#site-builder-mode-removal-notice}
+# Сайт Үүсгэх Модтой холбоотой мэдэгдэл
 
 **Site Builder mode нь Superdav AI Agent v1.12.0-т хасагдсан.** Хэрэв та Site Builder mode ашиглаж байсан бол, темы бүтээх болон сайт тохируулах зорилгоор **Setup Assistant agent** руу шилжих хэрэгтэй.
 

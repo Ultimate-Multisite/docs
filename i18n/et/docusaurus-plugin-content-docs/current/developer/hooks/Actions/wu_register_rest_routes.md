@@ -4,7 +4,7 @@ title: Tegevus - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Toiming: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Toiming: wu_register_rest_routes
 
 Luba registreerida täiendavaid marsruute.
 

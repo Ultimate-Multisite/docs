@@ -3,7 +3,7 @@ title: Registro de cambios de tickets de soporte
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Registro de cambios de tickets de soporte {#support-tickets-changelog}
+# Registro de cambios de tickets de soporte
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Mejorado: Eliminado el directorio vendor/ del seguimiento de Git (ya cubierto por .gitignore), reduciendo el tamaño del repositorio

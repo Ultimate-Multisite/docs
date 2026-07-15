@@ -3,7 +3,7 @@ title: Chuck Norrise faktide muudatuste logi
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norrise faktide muudatuste logi {#chuck-norris-facts-changelog}
+# Chuck Norrise faktide muudatuste logi
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Lisatud: automaatse uuendamise funktsionaalsus Ultimate Multisite uuendusserveri kaudu

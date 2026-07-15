@@ -3,7 +3,7 @@ title: Come installa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Come tf installa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Come tf installa WordPress Multisite?
 
 WordPress Multisite itta ti permetti li tieni una rete di siti su un'unica installazione. Questa è una funzione integrata, ma non è attiva di default.
 

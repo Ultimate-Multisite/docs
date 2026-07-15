@@ -3,7 +3,7 @@ title: සයිබර්පැනල් ඒකාබද්ධ කිරීම
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ඒකාබද්ධ කිරීම (Integration) {#cyberpanel-integration}
+# CyberPanel ඒකාබද්ධ කිරීම (Integration)
 
 මෙම මාර්ගෝපදේශය මගින් Ultimate Multisite CyberPanel ඒකාබද්ධ කිරීම සකස් කරන්නේ කෙසේද යන්න පැහැදිලි කරයි. එමඟින් ඔබේ ජාලයේ ඇති මූලික වෙබ් අඩවි (mapped domains) ස්වයංක්‍රීයව CyberPanel හි virtual hosts ලෙස එකතු කිරීම (සහ ඉවත් කිරීම) සිදු වන අතර, Let's Encrypt හරහා විකල්ප auto-SSL සැපයුමක් ද ලබා ගත හැකිය.
 

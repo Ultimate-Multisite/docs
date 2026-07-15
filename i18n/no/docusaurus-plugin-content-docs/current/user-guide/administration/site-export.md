@@ -3,7 +3,7 @@ title: Site-eksport
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport av nettsted {#site-export}
+# Eksport av nettsted
 
 Administrasjonssiden **Site Export** lar nettverksadministratorer pakke ett nettsted, eller hele nettverket, inn i en nedlastbar arkivfil for migrering, sikkerhetskopiering eller overlevering.
 

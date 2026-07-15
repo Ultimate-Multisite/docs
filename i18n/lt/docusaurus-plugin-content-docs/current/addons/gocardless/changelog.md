@@ -3,7 +3,7 @@ title: GoCardless pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless pakeitimų žurnalas {#gocardless-changelog}
+# GoCardless pakeitimų žurnalas
 
 Versija: 1.0.3 - Išleista 2026-05-05
 * Pataisyta: apleistos laukiančios svetainės dabar išvalomos, kai GoCardless narystė atšaukiama esant laukimo arba sulaikymo būsenai

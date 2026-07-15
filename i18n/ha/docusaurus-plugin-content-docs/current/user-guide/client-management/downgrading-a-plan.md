@@ -3,7 +3,7 @@ title: Raba tsari
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# تغيییر بسته (v2) {#downgrading-a-plan-v2}
+# تغيییر بسته (v2)
 
 _**نکته مهم: این مقاله به Ultimate Multisite نسخه 2.x اشاره دارد.**_
 

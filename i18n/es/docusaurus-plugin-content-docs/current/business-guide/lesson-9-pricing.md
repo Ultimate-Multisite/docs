@@ -3,7 +3,7 @@ title: 'Lección 9: Fijación de precios para obtener ganancias'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lección 9: Precios para obtener ganancias {#lesson-9-pricing-for-profit}
+# Lección 9: Precios para obtener ganancias
 
 En la Lección 5 establecimos los precios iniciales para los planes de FitSite. Ahora refinaremos la estrategia de precios con técnicas que aumentan los ingresos, fomentan las mejoras (upgrades) y reducen la tasa de abandono (churn).
 

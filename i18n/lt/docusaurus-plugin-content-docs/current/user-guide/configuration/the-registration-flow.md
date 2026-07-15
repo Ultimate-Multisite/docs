@@ -3,7 +3,7 @@ title: Registracijos procesas
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registracijos procesas (v2) {#the-registration-flow-v2}
+# Registracijos procesas (v2)
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 

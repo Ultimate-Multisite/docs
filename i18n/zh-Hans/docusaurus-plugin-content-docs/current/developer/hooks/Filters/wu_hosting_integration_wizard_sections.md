@@ -4,7 +4,7 @@ title: 请提供需要翻译的 Markdown/MDX 内容。
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Filter: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Filter: wu_hosting_integration_wizard_sections
 
 过滤用于托管集成设置的向导部分。
 

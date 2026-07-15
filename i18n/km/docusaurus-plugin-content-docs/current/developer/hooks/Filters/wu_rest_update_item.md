@@ -4,7 +4,7 @@ title: តម្រង - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# តម្រង: wu_rest_update_item {#filter-wurestupdateitem}
+# តម្រង: wu_rest_update_item
 
 ត្រងថាតើអនុញ្ញាតឱ្យបន្តសំណើនេះឬអត់។
 

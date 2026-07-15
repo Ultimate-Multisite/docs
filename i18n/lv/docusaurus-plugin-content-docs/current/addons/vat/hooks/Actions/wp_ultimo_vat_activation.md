@@ -4,7 +4,7 @@ title: Darbība - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Darbība: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Darbība: wp_ultimo_vat_activation
 
 Ļauj citām spraudņa daļām pievienot savas aktivizācijas rutīnas
 

@@ -4,7 +4,7 @@ title: Дія - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Дія: wu_activation {#action-wuactivation}
+# Дія: wu_activation
 
 Дозволяє іншим частинам плагіна підключати свої процедури, які виконуються під час активації.
 

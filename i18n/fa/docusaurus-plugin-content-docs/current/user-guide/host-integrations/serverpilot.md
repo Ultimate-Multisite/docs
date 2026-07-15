@@ -3,7 +3,7 @@ title: یکپارچه‌سازی ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# یکپارچه‌سازی با ServerPilot {#serverpilot-integration}
+# یکپارچه‌سازی با ServerPilot
 
 ## معرفی {#overview}
 ServerPilot یک سرویس ابری برای میزبانی وردپرس و سایر وب‌سایت‌های PHP روی سرورهای DigitalOcean، Amazon، Google یا هر ارائه‌دهنده سرور دیگری است. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL بین Ultimate Multisite و ServerPilot را فراهم می‌کند.

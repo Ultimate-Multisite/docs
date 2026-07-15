@@ -3,7 +3,7 @@ title: Orkestrasi Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (diperkenalkan di Gratis AI Agent v1.4.0) adalah mesin yang menjalankan pembuatan situs web multi-langkah. Ketika Anda meminta agen untuk "membuat situs web restoran" atau "membuat portofolio dengan blog", orkestrator akan memecah tujuan tingkat tinggi itu menjadi **rencana** terstruktur, menemukan plugin yang diperlukan untuk mewujudkannya, menjalankan setiap langkah secara berurutan, melacak kemajuan, dan pulih dari kesalahan secara mandiri.
 

@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_edit_page_after_title_input
 sidebar_label: wp_ultimo_ptm_edit_page_after_title_input
 _i18n_hash: 7a4980304b0ebf019e3d4044eb566adc
 ---
-# Action: wp_ultimo_ptm_edit_page_after_title_input {#action-wpultimoptmeditpageaftertitleinput}
+# Action: wp_ultimo_ptm_edit_page_after_title_input
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ടെക്സ്റ്റ് ഇൻപുട്ടിന് താഴെയായി കൂടുതൽ വിവരങ്ങൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

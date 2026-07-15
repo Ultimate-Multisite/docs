@@ -3,7 +3,7 @@ title: Integrasyon sa WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrasyon sa WPMU DEV {#wpmu-dev-integration}
+# Integrasyon sa WPMU DEV
 
 ## Panan-aw (Overview) {#overview}
 Ang WPMU DEV kay usa ka kompleto nga WordPress platform nga naghatag og hosting, plugins, ug mga serbisyo para sa mga WordPress site. Kini nga integrasyon nagtugot sa awtomatikong pag-sync sa domain ug pagdumala sa SSL certificate tali sa Ultimate Multisite ug sa hosting sa WPMU DEV.

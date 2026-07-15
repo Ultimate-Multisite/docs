@@ -4,7 +4,7 @@ title: Sía - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Sía: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Sía: wu_stripe_existing_plan_id
 
 Síar ID áætlunarinnar sem á að athuga. Ef þetta er til mun nýja áskriftin nota þessa áætlun.
 

@@ -4,7 +4,7 @@ title: ఫిల్టర్ - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme {#filter-authredirectscheme}
+# Filter: auth_redirect_scheme
 
 ఇది ప్రామాణిక ధ్రువీకరణ మళ్ళించే విధానాన్ని (authentication redirect scheme) ఫిల్టర్ చేస్తుంది.
 

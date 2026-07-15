@@ -3,7 +3,7 @@ title: Kontaktformulär för webbplatsbyggare
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformulär i Site Builder {#site-builder-contact-forms}
+# Kontaktformulär i Site Builder
 
 Superdav AI Agent v1.10.0 lägger till funktionen att skapa kontaktformulär direkt från chattgränssnittet med hjälp av Site Builder-agenten. Detta gör att du kan lägga till fullt fungerande kontaktformulär på vilken sida som helst utan att behöva lämna chatten.
 

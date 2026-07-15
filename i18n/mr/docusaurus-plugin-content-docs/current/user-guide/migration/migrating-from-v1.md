@@ -3,7 +3,7 @@ title: V1 वरून स्थलांतर करणे
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 वरून स्थलांतरण {#migrating-from-v1}
+# V1 वरून स्थलांतरण
 
 ## Ultimate Multisite ने आपल्या मूळ 1.x आवृत्त्यांमधून 2.x आवृत्त्यांमध्ये बदल केला आहे. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

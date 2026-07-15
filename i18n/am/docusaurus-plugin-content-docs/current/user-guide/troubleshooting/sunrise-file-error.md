@@ -3,7 +3,7 @@ title: ሰንሪስ ፋይል ስህተት
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# የSunrise ፋይል መጫን ስህተት {#error-installing-the-sunrise-file}
+# የSunrise ፋይል መጫን ስህተት
 
 የsunrise.php ፋይል ራሱ ራሱን ሲያነሳ (bootstraps) የሚያየው ልዩ ፋይል ነው። WordPress ይህንን ፋይል ሊለየው (detect) የሚችልበት፣ በ**wp-content folder** ውስጥ መገኘቱ አለበት።
 

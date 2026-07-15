@@ -3,7 +3,7 @@ title: '4 pamoka: Nišinių šablonų kūrimas'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# 4 pamoka: nišinių šablonų kūrimas {#lesson-4-building-niche-templates}
+# 4 pamoka: nišinių šablonų kūrimas
 
 Šablonai yra jūsų nišinės vertės pasiūlymo pagrindas. Fitneso studijos savininkas, kuris užsiregistruoja ir pamato svetainę, jau atrodančią kaip fitneso svetainė -- su užsiėmimų tvarkaraščiais, trenerių profiliais ir tinkamais vaizdais -- daug labiau tikėtina, kad liks, nei tas, kuris pamato tuščią drobę.
 

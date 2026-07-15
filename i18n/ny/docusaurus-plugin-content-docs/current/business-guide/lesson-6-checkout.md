@@ -3,7 +3,7 @@ title: 'Phunziro 6: Zochitika pa Kulembetsa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Phunziro 6: Zochitika Polembetsa {#lesson-6-the-signup-experience}
+# Phunziro 6: Zochitika Polembetsa
 
 Njira ya checkout ndi pomwe chidwi chimasanduka ndalama. Njira yolembetsa yosokoneza kapena wamba imataya makasitomala. Njira yokhudzana ndi niche inayake yomwe imalankhula chilankhulo chawo ndipo imamveka yosavuta imawasintha kukhala makasitomala.
 

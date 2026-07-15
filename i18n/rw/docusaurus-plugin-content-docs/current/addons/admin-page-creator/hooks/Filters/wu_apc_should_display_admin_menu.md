@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Muyunguruzi: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Muyunguruzi: wu_apc_should_display_admin_menu
 
 Emerera abayobozi guhisha paji za menu y’ubuyobozi, niba barangije igikorwa cyo kunonosora.
 

@@ -4,7 +4,7 @@ title: कार्य - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Action: wu_cart_setup {#action-wucartsetup}
+# Action: wu_cart_setup
 
 डेवलपर्स को चेकआउट ऑब्जेक्ट में अतिरिक्त बदलाव करने की अनुमति देता है।
 

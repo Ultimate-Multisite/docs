@@ -3,7 +3,7 @@ title: Operacije sovrenskega najemnika
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operacije z močnim najemodajalci (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Operacije z močnim najemodajalci (Sovereign Tenant Operations)
 
 Ultimate Multisite 1.2.0 dodaja operativne alate za najemodajalce s suverenimi najemodajalci: subsite ki delujejo z lastno bazo podatkov, root sistemom datoteka in kontekstom usmerjanja (routinga), omogočeno pa so vidni za administratoro mreže.
 

@@ -3,7 +3,7 @@ title: ફેરફારની નોંધ
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# ચેન્જલોગ {#changelog}
+# ચેન્જલોગ
 
 ## ૧.૯.૦ — ૨૦૨૬-૦૪-૨૮ ના રોજ રિલીઝ {#190--released-on-2026-04-28}
 

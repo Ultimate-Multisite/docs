@@ -3,7 +3,7 @@ title: Hooks ਵਰਤੋਂ ਗਾਈਡ
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks ਵਰਤੋਂ ਗਾਈਡ {#hooks-usage-guide}
+# Hooks ਵਰਤੋਂ ਗਾਈਡ
 
 Ultimate Multisite 200+ action hooks ਅਤੇ 280+ filter hooks ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ। ਇਹ ਪੇਜ ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੇ ਜਾਣ ਵਾਲੇ hooks ਨੂੰ ਵਿਹਾਰਕ ਉਦਾਹਰਣਾਂ ਨਾਲ ਕਵਰ ਕਰਦਾ ਹੈ। ਪੂਰੇ ਆਟੋ-ਜਨਰੇਟਡ reference ਲਈ, ਇਸ ਸੈਕਸ਼ਨ ਦੇ ਹੋਰ ਪੇਜਾਂ ਨੂੰ ਵੇਖੋ।
 

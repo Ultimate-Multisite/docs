@@ -4,7 +4,7 @@ title: Ìṣe - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Iṣe: wu_centered_content {#action-wucenteredcontent}
+# Iṣe: wu_centered_content
 
 Jẹ́ kí àwọn olùdàgbàsókè plugin lè ṣàfikún àkóónú mìíràn sínú ọ̀wọ̀n tó wà láàárín.
 

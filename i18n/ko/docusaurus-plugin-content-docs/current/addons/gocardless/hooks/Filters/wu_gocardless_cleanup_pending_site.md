@@ -4,7 +4,7 @@ title: 필터 - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# 필터: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# 필터: wu_gocardless_cleanup_pending_site
 
 취소된 GoCardless 멤버십에 대해 고아 상태가 된(orphaned) 보류 사이트를 삭제하기 전에 실행됩니다.
 

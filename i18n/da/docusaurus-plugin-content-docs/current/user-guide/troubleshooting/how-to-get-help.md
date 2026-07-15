@@ -3,7 +3,7 @@ title: Hvordan får jeg hjælp
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Sådan får du hjælp {#how-to-get-help}
+# Sådan får du hjælp
 
 Du har din gyldige licensnøgle, og ved siden af den er adgang til vores team for at hjælpe dig med at løse problemer, du måtte støde på under opsætningen af Ultimate Multisite.
 

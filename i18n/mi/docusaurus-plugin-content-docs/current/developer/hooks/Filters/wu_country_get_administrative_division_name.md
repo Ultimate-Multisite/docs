@@ -4,7 +4,7 @@ title: Tātari - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Tātari: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Tātari: wu_country_get_administrative_division_name
 
 Ka whakahoki i te ingoa ātaahua o ngā wehenga whakahaere ā-rohe o te whenua.
 

@@ -3,7 +3,7 @@ title: מולטי-טננסי של Hostinger
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Multi-Tenancy של Hostinger {#hostinger-multi-tenancy}
+# Multi-Tenancy של Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 מוסיף יכולת מולטי-טננסיות של Hostinger כך שדומיינים מאוחסנים יוכלו להשתתף בהקצאת טננטים ריבוניים לצד אינטגרציית מיפוי הדומיין הקיימת של Hostinger.
 

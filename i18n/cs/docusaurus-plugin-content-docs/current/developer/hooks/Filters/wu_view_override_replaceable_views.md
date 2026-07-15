@@ -4,7 +4,7 @@ title: Filtrační - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtrační hook: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtrační hook: wu_view_override_replaceable_views
 
 Umožňuje vývojářům přidat další složky do seznamu nahrazitelných (replaceable).
 

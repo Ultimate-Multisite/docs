@@ -3,7 +3,7 @@ title: Diiwaangeli API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint-ka API-ga Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint-ka API-ga Ultimate Multisite
 
 Ku qoraalkan kan, waxaad baranaysaa sida loo isticmaalo endpoint-ka /register ee Ultimate Multisite si aad u samayso dhammaan habka soo dhowrinta macmiil cusub oo ku jira shabakadahaaga, iyo sida aad u samayn karto tani iyadoo la isticmaalayo Zapier.
 

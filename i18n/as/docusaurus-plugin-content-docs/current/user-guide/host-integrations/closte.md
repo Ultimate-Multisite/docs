@@ -3,7 +3,7 @@ title: Closte সংহতিকৰণ
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration {#closte-integration}
+# Closte Integration
 
 ## Overview {#overview}
 Closte হৈছে Google Cloud infrastructure मा आधारित এটা व्यवस्थापित WordPress হোস্টিং প্লেটফৰ্ম। এই integration ले Ultimate Multisite আৰু Closte ৰ মাজত স্বয়ংক্রিয় domain syncing আৰু SSL certificate management সক্ষম কৰে।

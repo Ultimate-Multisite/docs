@@ -4,7 +4,7 @@ title: Gnìomh - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Gnìomh: update_network {#action-updatenetwork}
+# Gnìomh: update_network
 
 Thèid a chur an gnìomh às dèidh do lìonra a tha ann mu thràth a bhith air ùrachadh.
 

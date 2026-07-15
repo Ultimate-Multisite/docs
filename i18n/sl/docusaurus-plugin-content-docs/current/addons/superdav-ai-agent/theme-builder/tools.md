@@ -3,7 +3,7 @@ title: Orodja in konfiguracija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Orodja in konfiguracija {#tools-and-configuration}
+# Orodja in konfiguracija
 
 Theme Builder uporablja nabor orodij za analizo, oblikovanje in izdelavo vašega WordPress spletnega mesta. V različici 1.16.0 je **sd-ai-agent/site-scrape zdaj orodje Tier 1**, zato je privzeto na voljo v Theme Builder. Superdav AI Agent v1.18.0 uvaja tudi ločeno distribuiran napredni spremljevalni paket za zaupanja vredne razvijalske poteke dela; ta orodja niso del osnovnega paketa WordPress.org in jih je treba namestiti ter pooblastiti ločeno.
 

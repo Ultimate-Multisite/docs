@@ -3,7 +3,7 @@ title: Referansa Hookan
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referansa Hookan {#hooks-reference}
+# Referansa Hookan
 
 Belgekirina xweber ji bo hemû **59 çalakiyan** û **118 fîlteran** di Ultimate Multisite de.
 

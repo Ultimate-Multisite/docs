@@ -3,7 +3,7 @@ title: Theha Khoebo ea Webosaete e Ikhethang
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Haha Khoebo ea Webosaete ea Niche ka Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Haha Khoebo ea Webosaete ea Niche ka Ultimate Multisite
 
 Batho ba bangata ba lekang ho rekisa liwebosaete ba qothisana lehlokoa ka theko khahlanong le Wix, Squarespace, le basebetsi ba ikemetseng ba likete. Ba hloloa. Ba hlolang ke ba khethang bamameli ba itseng, ba haha tharollo e etselitsoeng bamameli bao, ’me ba lefisa boleng boo ba bo fanang.
 

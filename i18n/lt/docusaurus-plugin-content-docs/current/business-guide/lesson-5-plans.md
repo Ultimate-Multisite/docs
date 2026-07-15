@@ -3,7 +3,7 @@ title: '5 pamoka: savo planų kūrimas'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5 pamoka: savo planų kūrimas {#lesson-5-designing-your-plans}
+# 5 pamoka: savo planų kūrimas
 
 Jūsų planų pakopos nėra tik kainų lygiai -- jos atspindi, kaip iš tikrųjų veikia jūsų nišos klientai. Šioje pamokoje sukursite produktų pakopas, atitinkančias tikruosius skirtinguose etapuose esančių fitneso verslų poreikius.
 

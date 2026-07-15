@@ -4,7 +4,7 @@ title: 'Gnìomh - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# Action: wu_page_\{$this->id\}_load
 
 Leig le luchd-leasachaidh plugin dubhain a bharrachd a chur ris na duilleagan againn.
 

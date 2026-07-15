@@ -3,7 +3,7 @@ title: Ìṣàkóso Olùkọ́ Ojúlé v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Ìṣàkóso Olùkọ́ Aaye v2 {#site-builder-orchestration-v2}
+# Ìṣàkóso Olùkọ́ Aaye v2
 
 Ìṣàkóso Olùkọ́ Aaye v2 (tí a ṣàfihàn nínú Gratis AI Agent v1.4.0) ni ẹ̀rọ tó ń fún ìdá aaye ayelujara aláìgbésẹ̀-púpọ̀ lágbára. Nígbà tí o bá ní kí aṣojú náà "kọ aaye ayelujara ilé oúnjẹ" tàbí "dá àkójọpọ̀ iṣẹ́ pẹ̀lú blog", olùṣàkóso náà máa pín ète gíga yẹn sí **ètò** tó ní ìlànà, ṣàwárí àwọn ohun ìfikún tí a nílò láti mú un ṣẹ, ṣiṣẹ́ ìgbésẹ̀ kọ̀ọ̀kan ní títẹ̀lé ara wọn, tọpinpin ìlọsíwájú, ó sì máa bọ́ láti inú àwọn àṣìṣe fúnra rẹ̀.
 

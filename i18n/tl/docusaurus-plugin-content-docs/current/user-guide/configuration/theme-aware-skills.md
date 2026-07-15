@@ -3,7 +3,7 @@ title: Kakayahang May Alam sa Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Mga Kasanayang Nakabatay sa Tema {#theme-aware-skills}
+# Mga Kasanayang Nakabatay sa Tema
 
 Ang Superdav AI Agent v1.10.0 ay may apat na bagong built-in na kasanayan na nakabatay sa tema (theme-aware) na awtomatikong umaangkop sa iyong aktibong WordPress theme. Ang mga kasanayang ito ay nagbibigay ng espesyal na gabay at kakayahan na naka-customize para sa arkitektura at mga feature ng iyong tema.
 

@@ -3,7 +3,7 @@ title: Reference for evner
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Reference for evner {#abilities-reference}
+# Reference for evner
 
 Evner er de atomare handlinger, som Gratis AI Agent kan aktivere på din WordPress-installation. Hver evne er en registreret PHP-klasse, der eksponerer et JSON-skema — agenten læser dette skema ved kørselstid for at forstå, hvilke parametre der kræves, og hvad evnen returnerer.
 

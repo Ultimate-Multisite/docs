@@ -3,7 +3,7 @@ title: Skills aversae ad temam
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Sensibilia Temae {#theme-aware-skills}
+# Skills Sensibilia Temae
 
 Superdav AI Agent v1.10.0 veni cum quattuor novis skills integris in thema, quae automatico ad theme WordPress tuum activum adaptantur. Haec skills praebent consilium et potestates specializat, ad formam et opus tuae thematis et eius attributa temperata sunt.
 

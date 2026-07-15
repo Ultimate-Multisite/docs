@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# アクション: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# アクション: wu_page_{$this->id}_before_render
 
 プラグイン開発者がページを出力する前に追加コンテンツを追加できるようにします。
 

@@ -3,7 +3,7 @@ title: De registratiestroom
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# De registratieflow (v2) {#the-registration-flow-v2}
+# De registratieflow (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

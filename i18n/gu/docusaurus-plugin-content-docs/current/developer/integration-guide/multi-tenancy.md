@@ -3,7 +3,7 @@ title: મલ્ટી-ટેનન્સી ઈન્ટિગ્રેશન
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ઇન્ટિગ્રેશન {#multi-tenancy-integration}
+# Multi-Tenancy ઇન્ટિગ્રેશન
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 સ્વતંત્ર ભાડૂતાઓ, માઇગ્રેશન ચકાસણી, અને ભાડૂત જીવનચક્ર ઓટોમેશન માટે અનેક ઇન્ટિગ્રેશન ટચપોઈન્ટ્સમાં ફેરફાર કરે છે.
 

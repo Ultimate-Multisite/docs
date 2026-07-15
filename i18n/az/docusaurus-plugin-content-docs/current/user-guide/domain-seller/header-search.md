@@ -3,7 +3,7 @@ title: Başlıq domen axtarışı
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domen Axtarışı {#header-domain-search}
+# Header Domen Axtarışı
 
 Ultimate Multisite checkout daxilində müştəriyə mövcud domenlər arasından seçim etməyə imkan verən domen axtarışını başladan kiçik header formu istədiyiniz zaman bu quraşdırmadan istifadə edin.
 

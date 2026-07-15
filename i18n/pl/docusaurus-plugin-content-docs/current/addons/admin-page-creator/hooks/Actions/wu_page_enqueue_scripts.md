@@ -4,7 +4,7 @@ title: Action - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Akcja: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Akcja: wu_page_enqueue_scripts
 
 Dodajemy tu niestandardową akcję, aby mieliśmy miejsce na ładowanie skryptów i stylów w razie potrzeby oraz aby upewnić się, że zostaną one załadowane tylko na odpowiednich stronach.
 

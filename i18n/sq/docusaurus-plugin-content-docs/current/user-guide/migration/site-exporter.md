@@ -3,7 +3,7 @@ title: Eksportues i faqes së internetit
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Eksportuesi i Shtullit {#site-exporter}
+# Eksportuesi i Shtullit
 
 Kjo funksionitet leje nga shtjeshtja (addon) e **Site Exporter**.
 

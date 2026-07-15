@@ -3,7 +3,7 @@ title: Isiqondiso Sokuklama
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Isiqondiso Sokuklama {#design-direction}
+# Isiqondiso Sokuklama
 
 Isinyathelo se-**Design Direction** sikuvumela ukuthi ubuyekeze, ucije, futhi uqedele ukwakheka okubonakalayo kwe-theme yakho ngaphambi kokuthi Theme Builder ikhiqize i-theme ephelele.
 

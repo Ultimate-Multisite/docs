@@ -4,7 +4,7 @@ title: Φίλτρο - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Φίλτρο: wu_setup_wizard {#filter-wusetupwizard}
+# Φίλτρο: wu_setup_wizard
 
 Επιτρέπει στους developers να προσθέτουν επιπλέον βήματα στον setup wizard.
 

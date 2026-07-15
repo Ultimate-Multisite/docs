@@ -3,7 +3,7 @@ title: RunCloud 統合
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud統合 {#runcloud-integration}
+# RunCloud統合
 
 ## 概要 {#overview}
 RunCloud はクラウドベースのサーバー管理プラットフォームで、独自のクラウドサーバー上でウェブアプリケーションを簡単にデプロイおよび管理できます。この統合により、Ultimate Multisite と RunCloud の間で自動ドメイン同期と SSL 証明書管理が可能になります。

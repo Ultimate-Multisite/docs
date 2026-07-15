@@ -4,7 +4,7 @@ title: Lim - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Lim: network_options_list {#filter-networkoptionslist}
+# Lim: network_options_list
 
 Lim daim ntawv teev cov network options uas nyob ntawm domain thiab path ntawm ib lub network.
 

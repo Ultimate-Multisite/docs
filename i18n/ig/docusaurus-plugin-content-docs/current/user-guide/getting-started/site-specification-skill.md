@@ -3,7 +3,7 @@ title: Nkwado Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Niche Kỹ năng Thông số Trang Web (Site Specification Skill) {#site-specification-skill}
+# Niche Kỹ năng Thông số Trang Web (Site Specification Skill)
 
 Kỹ năng **Thông số Trang Web** là cách có cấu trúc để ghi lại mục tiêu của trang web bạn, đối tượng người dùng và bản sắc thương hiệu của nó. Thông tin này được lưu trong bộ nhớ **site_brief** của bạn, mà các agent sẽ tham khảo qua các phiên làm việc để cung cấp sự hỗ trợ nhất quán và hiểu ngữ cảnh.
 

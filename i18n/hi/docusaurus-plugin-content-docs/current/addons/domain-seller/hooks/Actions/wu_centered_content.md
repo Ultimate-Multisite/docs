@@ -4,7 +4,7 @@ title: एक्शन - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# एक्शन: wu_centered_content {#action-wucenteredcontent}
+# एक्शन: wu_centered_content
 
 यह प्लगइन डेवलपर्स को सेंटर्ड कॉलम के अंदर अतिरिक्त कंटेंट जोड़ने की अनुमति देता है।
 

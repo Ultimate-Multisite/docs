@@ -3,7 +3,7 @@ title: Zarządzanie e-mailami systemowymi
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Zarządzanie emailami systemowymi {#managing-system-emails}
+# Zarządzanie emailami systemowymi
 
 Ultimate Multisite wysyła różne emaile systemowe dla zdarzeń takich jak potwierdzenia rejestracji, potwierdzenia płatności i zmiany membership. Możesz dostosować te szablony emaili, aby pasowały do Twojej marki.
 

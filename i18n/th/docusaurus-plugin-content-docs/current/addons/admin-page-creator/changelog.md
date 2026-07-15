@@ -3,7 +3,7 @@ title: บันทึกการเปลี่ยนแปลงของ Adm
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# บันทึกการเปลี่ยนแปลงของ Admin Page Creator {#admin-page-creator-changelog}
+# บันทึกการเปลี่ยนแปลงของ Admin Page Creator
 
 ### Version 1.9.0 - Released on 2026-01-18 {#version-190---released-on-2026-01-18}
 

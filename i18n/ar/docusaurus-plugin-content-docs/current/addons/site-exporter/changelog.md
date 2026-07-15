@@ -3,7 +3,7 @@ title: سجل تغييرات مُصدّر الموقع
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# سجل تغييرات Site Exporter {#site-exporter-changelog}
+# سجل تغييرات Site Exporter
 
 الإصدار: 1.0.6 - صدر في 2026-05-11
 * جديد: أصبحت عمليات تصدير الموقع تجمع الآن ملف index.php ذاتي الإقلاع بحيث يمكن تثبيت ملف ZIP على مضيف جديد دون تثبيت plugin منفصل

@@ -3,7 +3,7 @@ title: 'Leksyon 12: Pagpadagan sa Negosyo'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lesson 12: Pagpadagan sa Negosyo {#lesson-12-running-the-business}
+# Lesson 12: Pagpadagan sa Negosyo
 
 Ang usa ka platform dili proyekto nga matapos—kini usa ka negosyo nga imong pagadumalahan. Kini nga leksyon naghisgot sa adlaw-adlaw nga operasyon sa pagdumala sa FitSite: suporta, billing (pagbayad), maintenance, ug pagpabilin nga malipayon ang mga kustomer.
 

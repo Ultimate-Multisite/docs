@@ -3,7 +3,7 @@ title: Pag-export ng Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Pag-export ng Site {#site-export}
+# Pag-export ng Site
 
 Ang admin page na **Site Export** ay nagbibigay-daan sa mga network administrator na i-package ang isang site, o ang buong network, para maging downloadable archive para sa migration, backup, o paglilipat ng trabaho.
 

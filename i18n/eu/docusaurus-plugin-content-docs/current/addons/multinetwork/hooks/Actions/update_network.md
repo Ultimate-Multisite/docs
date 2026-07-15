@@ -4,7 +4,7 @@ title: Ekintza - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Ekintza: update_network {#action-updatenetwork}
+# Ekintza: update_network
 
 Lehendik dagoen sare bat eguneratu ondoren abiarazten da.
 

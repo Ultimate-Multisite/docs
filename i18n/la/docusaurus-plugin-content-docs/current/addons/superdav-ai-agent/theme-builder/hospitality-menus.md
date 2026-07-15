@@ -3,7 +3,7 @@ title: Elenchi hospitalitatis
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus Hospitalitatis {#hospitality-menus}
+# Menus Hospitalitatis
 
 Proprietas **Menus Hospitalitatis** sinit Theme Builder paginas menús ciborum et potionum structas directe in tuo situ WordPress generare et inserere.
 

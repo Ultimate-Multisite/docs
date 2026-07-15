@@ -4,7 +4,7 @@ title: Filtras - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filtras: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Filtras: get_site_url_for_previewer
 
 Leidžia plugin kūrėjams filtruoti URL, naudojamą previewer
 

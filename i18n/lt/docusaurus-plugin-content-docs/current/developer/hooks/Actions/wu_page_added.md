@@ -4,7 +4,7 @@ title: Veiksmas - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Veiksmas: wu_page_added {#action-wupageadded}
+# Veiksmas: wu_page_added
 
 Leidžia plugin kūrėjams vykdyti papildomus veiksmus, kai puslapiai užregistruojami.
 

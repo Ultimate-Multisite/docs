@@ -3,7 +3,7 @@ title: 登録フロー
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# 登録フロー（v2） {#the-registration-flow-v2}
+# 登録フロー（v2）
 
 _**重要な注記: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

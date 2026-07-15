@@ -3,7 +3,7 @@ title: Kelių tinklų pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Kelių tinklų pakeitimų žurnalas {#multi-network-changelog}
+# Kelių tinklų pakeitimų žurnalas
 
 ### 1.3.0 {#130}
 * Nauja: tinklo šablonų peržiūros įrankis — naršykite ir peržiūrėkite tinklo šablonus tiesioginiame skydelyje prieš pirkdami.

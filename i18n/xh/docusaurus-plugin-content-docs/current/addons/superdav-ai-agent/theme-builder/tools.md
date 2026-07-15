@@ -3,7 +3,7 @@ title: Izixhobo kunye noQwalaselo
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Izixhobo noLungiselelo {#tools-and-configuration}
+# Izixhobo noLungiselelo
 
 Theme Builder isebenzisa iseti yezixhobo ukuhlalutya, ukuyila, nokwakha isayithi yakho ye-WordPress. Kwinguqulelo 1.16.0, **sd-ai-agent/site-scrape ngoku sisixhobo se-Tier 1**, nto leyo esenza sifumaneke ngokuzenzekelayo kwi-Theme Builder. Superdav AI Agent v1.18.0 ikwazisa iphakheji ye-Advanced companion esasazwa ngokwahlukeneyo yemisebenzi yabaphuhlisi abathembekileyo; ezo zixhobo aziyonxalenye yephakheji engundoqo ye-WordPress.org kwaye kufuneka zifakelwe zize zigunyaziswe ngokwahlukeneyo.
 

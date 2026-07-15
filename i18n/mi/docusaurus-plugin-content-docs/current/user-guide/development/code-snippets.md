@@ -3,7 +3,7 @@ title: Kōrero Kōrero
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kōrero Kōrua mō v2 {#code-snippets-for-v2}
+# Kōrero Kōrua mō v2
 
 E tino, ngā code snippets mō **WordPress** he whakamahinga ki te whakamaoritanga i mahi-a-tahi e taea te whai anga i plugin iti. Ko ngā code snippets ei whakaaturia i tētahi file core of WordPress ana, ko theme, ahau (generally the functions.php file of your theme) ana, he taea ai whakamahinga i tehi mō MU plugin.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Filter: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Filter: wu_light_ajax_allowed_hooks
 
 Għal raġunijiet ta' sigurtà, nillimitaw in-numru ta' azzjonijiet disponibbli biex jintrabtu magħhom. Dan il-filter jippermetti lill-iżviluppaturi jespandu dik il-lista jekk ikun meħtieġ.
 

@@ -4,7 +4,7 @@ title: Scagaire - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Scagaire: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Scagaire: wu_is_development_mode
 
 Ceadaigh d’fhorbróirí plugin tástálacha breise a chur leis don mhód forbartha.
 

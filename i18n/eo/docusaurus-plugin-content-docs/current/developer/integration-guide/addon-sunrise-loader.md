@@ -3,7 +3,7 @@ title: Ŝargilo de Sunrise-dosiero por aldonaĵo
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Aldonaĵa Sunrise-dosierŝargilo {#addon-sunrise-file-loader}
+# Aldonaĵa Sunrise-dosierŝargilo
 
 Ultimate Multisite 2.8.0 aldonas sunrise-etendaĵan ŝargilon por aldonaĵoj kaj propraj MU-plugin integriĝoj, kiuj devas ruliĝi dum WordPress sunrise-praŝargado sen redakti la generitan dosieron `wp-content/sunrise.php`.
 

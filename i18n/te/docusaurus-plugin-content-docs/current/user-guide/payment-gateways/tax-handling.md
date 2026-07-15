@@ -3,7 +3,7 @@ title: పన్నుల నిర్వహణ
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# పన్ను నిర్వహణ {#tax-handling}
+# పన్ను నిర్వహణ
 
 Ultimate Multisite మా ప్రధాన plugin‌లోనే పన్ను వసూలు module‌ను కలిగి ఉంది. కాబట్టి మీ plans, packages మరియు services‌పై sales taxes వసూలు చేయాల్సి ఉంటే, ఎలాంటి add-ons‌ను install చేయకుండానే సులభంగా చేయవచ్చు.
 

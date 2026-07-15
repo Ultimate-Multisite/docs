@@ -4,7 +4,7 @@ title: 'ක්‍රියාව - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
+# Action: wu_page_\{$this->id\}_after_render
 
 අපි පිටුව මුද්‍රණය කළ පසු අමතර අන්තර්ගතය එක් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙන්න
 

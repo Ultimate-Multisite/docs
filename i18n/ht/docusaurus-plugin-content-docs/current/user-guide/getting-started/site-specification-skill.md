@@ -3,7 +3,7 @@ title: Spesifikasyon Site Sktil
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Konpetans ak Spesifikasyon Siti (Site Specification Skill) {#site-specification-skill}
+# Konpetans ak Spesifikasyon Siti (Site Specification Skill)
 
 Konpetans **Site Specification** se yon fason estriktire pou w kapab pran tout bagay ki enpòtan sou sit ou a, tankou objektif yo, moun ou vle atire, e idantite marke ou an. Enfòmasyon sa a se mete nan memwa **site_brief** ou a, kote agent yo referansye li pandan sesyon diferan pou bay èd ki koresponn ak kontèks la.
 

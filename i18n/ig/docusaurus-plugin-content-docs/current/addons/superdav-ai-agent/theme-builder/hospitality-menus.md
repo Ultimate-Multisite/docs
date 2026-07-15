@@ -3,7 +3,7 @@ title: Ndepụta nri ile ọbịa
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Ọrụ Ile Ọbịa {#hospitality-menus}
+# Menu Ọrụ Ile Ọbịa
 
 Njirimara **Menu Ọrụ Ile Ọbịa** na-enye Theme Builder ohere imepụta ma tinye peeji menu nri na ihe ọṅụṅụ ahaziri nke ọma ozugbo n'ime saịtị WordPress gị.
 

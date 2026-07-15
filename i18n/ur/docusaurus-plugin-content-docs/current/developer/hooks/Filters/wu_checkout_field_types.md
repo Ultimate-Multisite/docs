@@ -4,7 +4,7 @@ title: فلٹر - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# فلٹر: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# فلٹر: wu_checkout_field_types
 
 ہمارے APIs جو نئے فیلڈ ٹائپس شامل کرتے ہیں، وہ یہاں جڑتے ہیں۔
 

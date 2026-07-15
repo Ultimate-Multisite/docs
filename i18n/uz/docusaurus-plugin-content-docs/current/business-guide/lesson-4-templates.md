@@ -3,7 +3,7 @@ title: '4-dars: Nisha shablonlarini yaratish'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Dars 4: Niche shablonlarni yaratish {#lesson-4-building-niche-templates}
+# Dars 4: Niche shablonlarni yaratish
 
 Shablonlar niche qiymat taklifingizning asosidir. Roʻyxatdan oʻtgan fitnes studiyasi egasi allaqachon fitnes veb-saytiga oʻxshaydigan -- mashgʻulot jadvallari, trener profillari va mos tasvirlarga ega -- saytni koʻrsa, boʻsh sahifani koʻrgan egaga qaraganda qolish ehtimoli ancha yuqori boʻladi.
 

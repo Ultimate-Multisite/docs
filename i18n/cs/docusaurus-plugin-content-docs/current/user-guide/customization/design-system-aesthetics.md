@@ -3,7 +3,7 @@ title: Úroveň dovedností v estetice designového systému
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetika systémového designu {#design-system-aesthetics-skill}
+# Estetika systémového designu
 
 **Estetika systémového designu** je průvodní přístup k vylepšení vizuální identity vašeho webu. Pomáhá vám dělat konzistentní rozhodnutí ohledně typografie, barev, mezery a tokenů pro animace, které definují váš systém designu.
 

@@ -4,7 +4,7 @@ title: Filtrilo - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtro: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filtro: wu_woocommerce_line_item_params
 
 Filtras la parametrojn uzatajn por krei la liniobjektojn en la WooCommerce Ĉaro, antaŭ ol alidirekti la klienton al la WooCommerce checkout.
 

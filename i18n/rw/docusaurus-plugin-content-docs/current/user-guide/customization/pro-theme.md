@@ -3,7 +3,7 @@ title: Theme PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Gukoresha Panel ya Admin na PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Gukoresha Panel ya Admin na PRO Theme
 
 Muriye mu kazi n'abantu (clients) ugiye kugira ngo umubiri w'admin ya WordPress ube n'umwihariko. Iyo ushaka umubiri ufite umurimo kandi w'umwihariko, PRO Theme yashobora kukugushyira mu muryango wawe.
 

@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Filter: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Filter: wp_ultimo_woocommerce_should_use_subscriptions
 
 Developer တွေအနေနဲ့ WooCommerce Subscriptions ကို အသုံးပြုဖို့ အတင်းအကျပ် သတ်မှတ်ခွင့်ပေးနိုင်ပါတယ်။
 

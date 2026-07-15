@@ -3,7 +3,7 @@ title: Ghid de integrare
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Ghid de integrare {#integration-guide}
+# Ghid de integrare
 
 Acest ghid acoperă tipare comune de integrare cu Ultimate Multisite, inclusiv conectarea la servicii externe, construirea de gateway-uri de plată personalizate și gestionarea webhook-urilor.
 

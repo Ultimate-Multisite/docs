@@ -3,7 +3,7 @@ title: Opgradeer 'n Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Opgradeer 'n Plan (v2) {#upgrading-a-plan-v2}
+# Opgradeer 'n Plan (v2)
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

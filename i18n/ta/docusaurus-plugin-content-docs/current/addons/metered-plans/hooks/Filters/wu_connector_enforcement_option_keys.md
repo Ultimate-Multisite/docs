@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filter: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filter: wu_connector_enforcement_option_keys
 
 பிரதான தளத்திலிருந்து செயல்படுத்தப்பட வேண்டிய AI வழங்குநர் விருப்பத் திறவுகோல்களின் (option keys) பட்டியலை வடிகட்டுகிறது.
 

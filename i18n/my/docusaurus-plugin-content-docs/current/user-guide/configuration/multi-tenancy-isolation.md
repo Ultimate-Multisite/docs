@@ -3,7 +3,7 @@ title: အများသုံးစနစ် ခွဲခြားမှု
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolation {#multi-tenancy-isolation}
+# Multi-Tenancy Isolation
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 သည် အချုပ်အခြာရရှိသော (sovereign) ဝန်ဆောင်မှုပေးသူများအတွက် per-subsite database နှင့် filesystem isolation ကို ပံ့ပိုးပေးပါသည်။ ၎င်းသည် ဝန်ဆောင်မှုပေးသူ၏ ဒေတာများကို ခွဲခြားထားသော်လည်း ကွန်ရက်အဆင့် စီမံခန့်ခွဲမှု၊ ဘေလ်တင်ခြင်းနှင့် စီမံခန့်ခွဲမှုကို ထိန်းသိမ်းထားနိုင်ပါသည်။
 

@@ -3,7 +3,7 @@ title: Kichwa cha Utafutaji wa Kikoa
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Utafutaji wa Domain Kwenye Header {#header-domain-search}
+# Utafutaji wa Domain Kwenye Header
 
 Tumia usanidi huu unapotaka form ndogo ya header inayoanzisha utafutaji wa domain, kisha kumruhusu mteja kuchagua kutoka kwa domain zinazopatikana ndani ya checkout ya Ultimate Multisite.
 

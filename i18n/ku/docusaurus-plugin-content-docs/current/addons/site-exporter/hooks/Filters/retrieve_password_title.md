@@ -4,7 +4,7 @@ title: Fîltre - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Parzûn: retrieve_password_title {#filter-retrievepasswordtitle}
+# Parzûn: retrieve_password_title
 
 Mijara emaila vegerandina şîfreyê parzûn dike.
 

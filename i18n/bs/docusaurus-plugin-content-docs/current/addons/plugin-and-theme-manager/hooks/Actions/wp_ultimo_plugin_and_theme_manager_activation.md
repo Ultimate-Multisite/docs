@@ -4,7 +4,7 @@ title: Akcija - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# Akcija: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# Akcija: wp_ultimo_plugin_and_theme_manager_activation
 
 Omogućava drugim dijelovima plugin-a da povežu svoje rutine za aktivaciju.
 

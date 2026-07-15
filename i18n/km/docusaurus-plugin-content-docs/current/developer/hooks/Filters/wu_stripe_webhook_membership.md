@@ -4,7 +4,7 @@ title: តម្រង - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# តម្រង៖ wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# តម្រង៖ wu_stripe_webhook_membership
 
 តម្រងកំណត់ត្រាសមាជិកភាពដែលភ្ជាប់ជាមួយ webhook នេះ។
 

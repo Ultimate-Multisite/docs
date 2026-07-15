@@ -3,7 +3,7 @@ title: Изисквания
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Изисквания за Ultimate Multisite {#ultimate-multisite-requirements}
+# Изисквания за Ultimate Multisite
 
 Първото нещо, което може да си попитате преди да купите Ultimate Multisite, е какви са изискванията за работа на нашия plugin. Е, късметът е, че има само няколко основни изисквания за работа с Ultimate Multisite: **домейн име**, добър **хостинг доставчик** и инсталация на WordPress **Multisite**. Това е всичко, което е нужно!
 

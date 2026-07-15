@@ -3,7 +3,7 @@ title: Site Builder ռեժիմի հեռացման ծանուցում
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Կայքի կառուցման ռեժիմի հեռացման մասին հայտարարություն {#site-builder-mode-removal-notice}
+# Կայքի կառուցման ռեժիմի հեռացման մասին հայտարարություն
 
 **Site Builder mode-ը հեռացվել է Superdav AI Agent v1.12.0-ում։** Եթե դուք օգտագործում էիք Site Builder mode-ը, ապա պետք է անցնեք **Setup Assistant agent-ին**, որը նախատեսված է թեմայի ստեղծման և կայքի կարգավորման համար։
 

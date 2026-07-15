@@ -3,7 +3,7 @@ title: 'Lekce 2: Výběr vaší nišy'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekce 2: Výběr své niche {#lesson-2-picking-your-niche}
+# Lekce 2: Výběr své niche
 
 V Lekci 1 jsme zjistili, proč je niche lepší než obecný trh. Nyní je čas vybrat vaši. Tato lekce vám poskytne rámec pro nalezení a ověření niche, než do ni investujete čas.
 

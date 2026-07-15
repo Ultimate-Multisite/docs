@@ -3,7 +3,7 @@ title: Loco Translate 更新日志
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate 更新日志 {#loco-translate-changelog}
+# Loco Translate 更新日志
 
 ### 1.0.1 {#101}
 * 与最新 Loco Translate 版本的兼容性得到提升

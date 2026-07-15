@@ -4,7 +4,7 @@ title: عملکرد - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# اکشن: wu_sso_loaded {#action-wussoloaded}
+# اکشن: wu_sso_loaded
 
 به توسعه‌دهندگان پلاگین اجازه می‌دهد تا در صورت نیاز، هوک‌های (hooks) اضافی اضافه کنند.
 

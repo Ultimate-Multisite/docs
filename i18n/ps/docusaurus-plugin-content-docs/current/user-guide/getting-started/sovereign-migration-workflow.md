@@ -3,7 +3,7 @@ title: سولانی مهاجرت ورکشルフ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow {#sovereign-migration-workflow}
+# Sovereign Migration Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 دایره‌ای انتقال (migration) کی تصدیقی دروازے شامل गरेको छ تاکہ ایک معیاری ساب سائٹ کو سوورین ٹیننٹ انفراسٹرکچر میں منتقل کرنے کے لیے جانچ پڑتال کے مراحل شامل ہوں۔
 

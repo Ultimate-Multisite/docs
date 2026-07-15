@@ -3,7 +3,7 @@ title: सर्भरपायलट एकीकरण
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# सर्भरपायलट एकीकरण (ServerPilot Integration) {#serverpilot-integration}
+# सर्भरपायलट एकीकरण (ServerPilot Integration)
 
 ## अवलोकन (Overview) {#overview}
 सर्भरपायलट (ServerPilot) भनेको DigitalOcean, Amazon, Google वा अन्य कुनै पनि सर्भर प्रदायकका सर्भरहरूमा WordPress र अन्य PHP वेबसाइटहरू होस्ट गर्नका लागि एउटा क्लाउड सेवा हो। यो एकीकरणले Ultimate Multisite र ServerPilot बीच स्वचालित डोमेन सिङ्क्रनाइजेसन (automatic domain syncing) र SSL प्रमाणपत्र व्यवस्थापन (SSL certificate management) गर्ने सुविधा दिन्छ।

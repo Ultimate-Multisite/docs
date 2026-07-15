@@ -3,7 +3,7 @@ title: 코드 스니펫
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2용 Code Snippets {#code-snippets-for-v2}
+# v2용 Code Snippets
 
 기본적으로 **WordPress**용 code snippets는 별도의 작은 plugin이 필요할 수 있는 특정 작업을 수행하는 데 사용됩니다. 이러한 code snippets는 WordPress core 또는 theme 파일 중 하나(일반적으로 theme의 functions.php 파일)에 배치되거나 MU plugin으로 사용할 수 있습니다.
 

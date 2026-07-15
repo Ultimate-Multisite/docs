@@ -3,7 +3,7 @@ title: 사이트 관리
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# 사이트 관리 {#managing-sites}
+# 사이트 관리
 
 사이트(또는 서브사이트)는 귀하의 WaaS 비즈니스의 핵심입니다. Ultimate Multisite에는 3가지 유형의 사이트가 있습니다:
 

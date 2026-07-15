@@ -3,7 +3,7 @@ title: Οδηγός Εγκατάστασης Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Οδηγός Εγκατάστασης Multisite {#multisite-setup-wizard}
+# Οδηγός Εγκατάστασης Multisite
 
 Το Ultimate Multisite περιλαμβάνει έναν ενσωματωμένο οδηγό που μετατρέπει αυτόματα μια τυπική εγκατάσταση WordPress σε δίκτυο WordPress Multisite. Έτσι δεν χρειάζεται να επεξεργαστείτε χειροκίνητα το `wp-config.php` ή να εκτελέσετε εντολές στη βάση δεδομένων.
 

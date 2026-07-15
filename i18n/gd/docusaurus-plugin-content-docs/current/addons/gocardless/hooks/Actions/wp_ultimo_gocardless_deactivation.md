@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Gnìomh: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Gnìomh: wp_ultimo_gocardless_deactivation
 
 Leig le pàirtean eile den plugin na gnàthachasan aca airson dì-ghnìomhachadh a cheangal
 

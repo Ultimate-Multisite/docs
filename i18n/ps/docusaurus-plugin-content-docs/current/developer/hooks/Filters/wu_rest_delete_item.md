@@ -4,7 +4,7 @@ title: فلټر - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# چاڼګر: wu_rest_delete_item {#filter-wurestdeleteitem}
+# چاڼګر: wu_rest_delete_item
 
 چاڼوي چې ایا د غوښتنې پر مخ وړلو اجازه شته که نه.
 

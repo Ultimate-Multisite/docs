@@ -3,7 +3,7 @@ title: Referenčná príručka nastavení
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencia nastavení {#settings-reference}
+# Referencia nastavení
 
 Táto stránka sleduje nastavenia, ktoré ovplyvňujú každodennú správu a nedávne zmeny správania v Ultimate Multisite.
 

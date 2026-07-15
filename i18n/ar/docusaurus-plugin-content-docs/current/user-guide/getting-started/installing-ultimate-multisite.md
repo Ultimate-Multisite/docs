@@ -3,7 +3,7 @@ title: تثبيت إضافة Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# تثبيت Ultimate Multisite {#installing-ultimate-multisite}
+# تثبيت Ultimate Multisite
 
 :::note
 يفترض هذا البرنامج التعليمي أن لديك بالفعل WordPress Multisite مثبتًا ومُعدًا. لمعرفة كيفية القيام بذلك، تحقق من [هذا البرنامج التعليمي](https://www.wpbeginner.com/glossary/multisite/) بواسطة WP Beginner.

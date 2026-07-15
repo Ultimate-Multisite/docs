@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Action: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Action: wu_admin_pages_editors
 
 ପ୍ଲଗଇନ୍ ବିକାଶକାରୀମାନଙ୍କୁ ନୂତନ ସମ୍ପାଦକ ବିକଳ୍ପ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ =)
 

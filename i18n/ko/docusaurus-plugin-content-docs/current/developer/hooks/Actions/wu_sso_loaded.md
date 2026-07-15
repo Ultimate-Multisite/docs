@@ -4,7 +4,7 @@ title: 액션 - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded {#action-wussoloaded}
+# Action: wu_sso_loaded
 
 필요한 경우 플러그인 개발자가 추가 후크를 추가할 수 있도록 허용합니다.
 

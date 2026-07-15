@@ -3,9 +3,9 @@ title: Tilleggmalplate
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon-mal {#addon-template}
+# Addon-mal
 
-{{ADDON_DESCRIPTION}}
+Tilleggmalplate — Ultimate Multisite.
 
 ## Krav {#requirements}
 

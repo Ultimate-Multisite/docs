@@ -3,7 +3,7 @@ title: Tăng cường Tích hợp Bảng Điều khiển
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Tích hợp Enhance Control Panel {#enhance-control-panel-integration}
+# Tích hợp Enhance Control Panel
 
 ## Tổng quan {#overview}
 Enhance là một control panel hiện đại cung cấp các tính năng tự động hóa và quản lý hosting mạnh mẽ. Tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và Enhance Control Panel.

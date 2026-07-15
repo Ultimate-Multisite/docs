@@ -3,7 +3,7 @@ title: Grundläggande koncept
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Grundläggande begrepp {#basic-concepts}
+# Grundläggande begrepp
 
 För dig som är ny på WordPress Multisite och precis har börjat använda Ultimate Multisite kan det finnas en hel del nya ord och uttryck att lära sig i början. Att förstå dem är viktigt eftersom du behöver ha koll på plattformen och hur den fungerar i sin helhet.
 

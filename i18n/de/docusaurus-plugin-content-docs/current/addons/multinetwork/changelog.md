@@ -3,7 +3,7 @@ title: Multi-Network-Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network-Änderungsprotokoll {#multi-network-changelog}
+# Multi-Network-Änderungsprotokoll
 
 ### 1.3.0 {#130}
 * Neu: Network-Template-Vorschau — Network-Templates vor dem Kauf mit einem Live-Panel durchsuchen und in der Vorschau anzeigen.

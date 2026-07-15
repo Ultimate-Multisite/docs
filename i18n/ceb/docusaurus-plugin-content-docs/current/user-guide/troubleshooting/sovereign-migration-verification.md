@@ -3,7 +3,7 @@ title: Pagpamatuod sa Sovereign Migration
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ang Ultimate Multisite: Multi-Tenancy 1.2.0 naglakip na og mga WP-CLI verification commands para sa sovereign tenant migrations. Gamita kini kung ang paglipat sa tenant, SSO visit, o isolated install dili molihok sama sa gipaabot nimo.
 

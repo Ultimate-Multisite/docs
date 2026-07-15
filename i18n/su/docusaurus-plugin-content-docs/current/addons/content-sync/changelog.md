@@ -3,7 +3,7 @@ title: Log Parobahan Sinkronisasi Eusi
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Log Parobahan Content Sync {#content-sync-changelog}
+# Log Parobahan Content Sync
 
 ### Vérsi 1.1.0 - Dileupaskeun dina 2025-12-31 {#version-110---released-on-2025-12-31}
 * Anyar: Rojongan pikeun nyinkronkeun sakabéh jinis tulisan (tulisan, kaca, jinis tulisan custom)

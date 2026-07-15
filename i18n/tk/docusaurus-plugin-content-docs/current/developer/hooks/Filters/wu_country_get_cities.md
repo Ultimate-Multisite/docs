@@ -4,7 +4,7 @@ title: Süzgüç - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Süzgüç: wu_country_get_cities {#filter-wucountrygetcities}
+# Süzgüç: wu_country_get_cities
 
 Ýurtdaky bir ştat üçin şäherleriň sanawyny gaýtarýar.
 

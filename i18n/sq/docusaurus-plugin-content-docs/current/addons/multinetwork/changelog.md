@@ -3,7 +3,7 @@ title: Ditari i ndryshimeve për shumë rrjete
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Ditari i ndryshimeve për Multi-Network {#multi-network-changelog}
+# Ditari i ndryshimeve për Multi-Network
 
 ### 1.3.0 {#130}
 * E re: Parashikues i shablloneve të rrjetit — shfletoni dhe parashikoni shabllonet e rrjetit me një panel të drejtpërdrejtë para blerjes.

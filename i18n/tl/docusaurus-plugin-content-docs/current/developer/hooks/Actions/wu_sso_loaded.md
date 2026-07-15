@@ -4,7 +4,7 @@ title: Aksyon - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Aksyon: wu_sso_loaded {#action-wussoloaded}
+# Aksyon: wu_sso_loaded
 
 Payagan ang mga developer ng pandagdag na magdagdag ng karagdagang mga hook, kung kailangan.
 

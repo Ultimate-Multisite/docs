@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# Действие: wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# Действие: wp_ultimo_gocardless_deactivation
 
 Позволява на други части от плагина да прикрепят своите процедури, които трябва да се изпълнят при деактивиране на плагина.
 

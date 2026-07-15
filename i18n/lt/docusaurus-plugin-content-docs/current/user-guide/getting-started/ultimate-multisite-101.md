@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite yra WordPress Multisite pluginas, kuris leidžia jums siūlyti WaaS (Web as a Service) arba svetainius kaip paslaugą klientams. Prieš to, kad ieškotume, kaip Ultimate Multisite gali padėti jūsų įmonė ir klientams, turime gauti pagrindines žinias.
 

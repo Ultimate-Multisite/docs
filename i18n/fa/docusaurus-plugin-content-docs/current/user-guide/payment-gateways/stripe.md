@@ -3,7 +3,7 @@ title: راه‌اندازی Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# راه‌اندازی درگاه پرداخت Stripe (نسخه ۲) {#setting-up-the-stripe-gateway-v2}
+# راه‌اندازی درگاه پرداخت Stripe (نسخه ۲)
 
 _**نکته مهم: این مقاله مربوط به نسخه 2.x از Ultimate Multisite است.**_
 

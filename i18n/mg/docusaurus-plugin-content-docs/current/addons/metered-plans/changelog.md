@@ -3,7 +3,7 @@ title: Diarin'ny fanovana ny Drafitra voarefy
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Tantaran'ny fanovana ho an'ny Drafitra Voarefy {#metered-plans-changelog}
+# Tantaran'ny fanovana ho an'ny Drafitra Voarefy
 
 Dikan-teny 1.1.0 - Navoaka tamin'ny 2026-05-05
 - Vaovao: Fandoavana araka ny AI token ho an'ny subsite multisite — araho sy ampidiro faktiora ny fampiasana AI token manerana ny tranokalan'ny mpanjifa miaraka amin'ny tahan'ny vidiny azo amboarina isaky ny token

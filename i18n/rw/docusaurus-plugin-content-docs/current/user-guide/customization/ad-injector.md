@@ -3,7 +3,7 @@ title: Umuhagarici w'inyandiko
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Gukoresha Ads ku mwezi w'ubwoko n'Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Gukoresha Ads ku mwezi w'ubwoko n'Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector ni **add-on ufite** ufungura uburyo bwo gukoresha tools zikufasha gukoresha ads kuri njye mu gihe cyo gutegura (edit page) byawe.
 

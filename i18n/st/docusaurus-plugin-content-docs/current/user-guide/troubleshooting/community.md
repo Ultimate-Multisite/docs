@@ -3,7 +3,7 @@ title: Mokotlho
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# How to join Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# How to join Ultimate Multisite Community
 
 Ultimate Multisite Community ke space se, o ka naha mo le ka ho a leka Ultimate Multisite users leka tsoalo, tips, experience leba. Ultimate Multisite Community e ho fihla go ba leka go https://community.ultimatemultisite.com/home.
 

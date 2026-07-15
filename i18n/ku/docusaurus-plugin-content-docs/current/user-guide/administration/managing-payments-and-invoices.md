@@ -3,7 +3,7 @@ title: بەڕێوەبردنی پارە و فاکچurare
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# بەڕێوەبردنی پارە و فاکچurare {#managing-payments-and-invoices}
+# بەڕێوەبردنی پارە و فاکچurare
 
 ## ڕێکخستنەکانی پارە {#payment-settings}
 

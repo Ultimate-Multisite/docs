@@ -3,7 +3,7 @@ title: إعداد Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# إعداد بوابة سترايب (v2) {#setting-up-the-stripe-gateway-v2}
+# إعداد بوابة سترايب (v2)
 
 _**ملاحظة هامة: تشير هذه المقالة إلى إصدار Ultimate Multisite 2.x.**_
 

@@ -3,7 +3,7 @@ title: M'ndulo wa M'ndulo
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Kupi la Akaunti ya Mteja wako (v2) {#your-clients-account-page-v2}
+# Kupi la Akaunti ya Mteja wako (v2)
 
 _**Kumbukumbu Muhimu: Hii makala inahusu Ultimate Multisite toleo la 2.x.**_
 

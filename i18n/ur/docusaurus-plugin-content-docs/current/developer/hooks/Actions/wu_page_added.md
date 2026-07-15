@@ -4,7 +4,7 @@ title: عمل - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 پلگ ان بنانے والوں کو یہ سہولت دیتا ہے کہ جب صفحات رجسٹر کیے جائیں تو وہ اضافی کام چلا سکیں۔
 

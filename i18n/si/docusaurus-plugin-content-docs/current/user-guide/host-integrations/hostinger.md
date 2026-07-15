@@ -3,7 +3,7 @@ title: Hostinger (hPanel) ඒකාබද්ධ කිරීම
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) සමඟ සම්බන්ධ කිරීම {#hostinger-hpanel-integration}
+# Hostinger (hPanel) සමඟ සම්බන්ධ කිරීම
 
 ## දළ විශ්ලේෂණය {#overview}
 

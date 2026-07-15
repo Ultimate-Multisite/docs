@@ -4,7 +4,7 @@ title: Actie - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Actie: add_user_to_blog {#action-addusertoblog}
+# Actie: add_user_to_blog
 
 Wordt onmiddellijk uitgevoerd nadat een gebruiker aan een site is toegevoegd.
 

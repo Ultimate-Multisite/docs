@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Шүүлтүүр: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# Шүүлтүүр: wu_current_set_customer
 
 Хөгжүүлэгчдэд өгөгдмөл зан төлөвийг өөрчилж, одоогийн харилцагчийг өөрөөр тохируулах боломж олгоно.
 

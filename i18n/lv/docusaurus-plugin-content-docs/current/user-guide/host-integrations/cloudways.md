@@ -3,7 +3,7 @@ title: Cloudways integrācija
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integrācija {#cloudways-integration}
+# Cloudways Integrācija
 
 ## Īsszums {#overview}
 Cloudways ir pārvaldīta viltas (cloud) hostings platforma, kas ļauj jums izvietot WordPress vietnes dažādās viltu sniedzējus, piemēram DigitalOcean, AWS, Google Cloud un citus. Šī integrācija atrodas iespējama automātiskās domānu sinhronizācijas un SSL sertifikātu pārvaldības starp Ultimate Multisite un Cloudways.

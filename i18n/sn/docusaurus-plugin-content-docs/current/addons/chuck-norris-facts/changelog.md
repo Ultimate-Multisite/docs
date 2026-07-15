@@ -3,7 +3,7 @@ title: Nhoroondo yekuchinja yeChokwadi chaChuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Nhoroondo yeshanduko yeChokwadi chaChuck Norris {#chuck-norris-facts-changelog}
+# Nhoroondo yeshanduko yeChokwadi chaChuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Zvakawedzerwa: Kushanda kwekuvandudza otomatiki kuburikidza neUltimate Multisite update server

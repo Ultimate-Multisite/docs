@@ -3,7 +3,7 @@ title: Necə kömək almaq olar
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Necə kömək almaq olar {#how-to-get-help}
+# Necə kömək almaq olar
 
 Etibarlı Lisans açarınız var və buna əlavə olaraq Ultimate Multisite qurarkən rastlaşa biləcəyiniz problemləri həll etməyiniz üçün komandamızın dəstəyi var.
 

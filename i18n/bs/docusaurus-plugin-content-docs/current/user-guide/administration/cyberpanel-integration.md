@@ -3,7 +3,7 @@ title: Integracija CyberPanela
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integracija sa CyberPanelom {#cyberpanel-integration}
+# Integracija sa CyberPanelom
 
 Ovaj vodič objašnjava kako da konfigurišete integraciju Ultimate Multisite CyberPanel kako bi domeni mapirani u vašoj mreži bili automatski dodati (i uklonjeni) kao virtuelni hostovi u CyberPanelu, sa opcijom automatskog pružanja SSL certifikata putem Let's Encrypt-a.
 

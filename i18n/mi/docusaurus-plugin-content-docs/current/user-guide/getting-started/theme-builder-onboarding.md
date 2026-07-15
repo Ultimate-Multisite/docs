@@ -3,7 +3,7 @@ title: Whakaaro Whakamahi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Whakaritenga Onboarding o te Theme Builder {#theme-builder-onboarding-flow}
+# Whakaritenga Onboarding o te Theme Builder
 
 Ko Superdav AI Agent v1.12.0 e whaihi i **whakaritenga onboarding o te Theme Builder** (Theme Builder onboarding flow) he whakatau ahue, e tino mārama ana, e tohu ana ki te whakamahi i tō mahi i te whakauru i roto i te whakatūatanga wakamārama. Ko ko te mea e whaihi ana i te mode Site Builder o te parata (legacy), me te whakamahi he whakatau mō, e tino whaihohonotanga ai ki te agent.
 

@@ -3,7 +3,7 @@ title: Cofnod newidiadau Ultimate AI Connector ar gyfer pwyntiau terfyn cydnaws
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Log Newidiadau Ultimate AI Connector ar gyfer Endpoints Cydnaws {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Log Newidiadau Ultimate AI Connector ar gyfer Endpoints Cydnaws
 
 ## Fersiwn 2.0.0 — Rhyddhawyd ar 2026-04-24 {#version-200--released-on-2026-04-24}
 

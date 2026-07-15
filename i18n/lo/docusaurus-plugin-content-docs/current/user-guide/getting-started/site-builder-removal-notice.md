@@ -3,7 +3,7 @@ title: ການແຈ້ງເຕືອນການເອົາ Site Builder Mo
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# ประกาศการนำโหมด Site Builder ออก {#site-builder-mode-removal-notice}
+# ประกาศการนำโหมด Site Builder ออก
 
 **โหมด Site Builder ได้ถูกนำออกใน Superdav AI Agent v1.12.0 แล้ว** หากคุณเคยใช้โหมด Site Builder คุณควรย้ายไปใช้ **Setup Assistant agent** สำหรับการสร้างธีมและการตั้งค่าเว็บไซต์แทนครับ/ค่ะ
 

@@ -4,7 +4,7 @@ title: ფილტრი - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# ფილტრი: wu_sso_enabled {#filter-wussoenabled}
+# ფილტრი: wu_sso_enabled
 
 ჩართეთ/გამორთეთ დომენებს შორის ერთიანი შესვლის შესაძლებლობა.
 

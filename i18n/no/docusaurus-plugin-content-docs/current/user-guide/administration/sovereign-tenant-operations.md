@@ -3,7 +3,7 @@ title: Suveren leietakerdrift
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operasjoner for suverene leietakere {#sovereign-tenant-operations}
+# Operasjoner for suverene leietakere
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 legger til verktøy for drift av suverene leietakere: subsites som kjører med sin egen database, filsystemrot og rutingkontekst, samtidig som de er synlige for nettverksadministratoren.
 

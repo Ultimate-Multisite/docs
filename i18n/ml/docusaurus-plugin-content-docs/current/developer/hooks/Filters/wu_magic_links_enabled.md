@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Filter: wu_magic_links_enabled
 
 മാജിക് ലിങ്കുകൾ പ്രവർത്തനക്ഷമമാされているかどうか ഇത് ഫിൽട്ടർ ചെയ്യാൻ ഉപയോഗിക്കുന്നു.
 

@@ -3,7 +3,7 @@ title: Loga Athruithe na bPleananna Méadraithe
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Loga Athruithe Metered Plans {#metered-plans-changelog}
+# Loga Athruithe Metered Plans
 
 Leagan 1.1.0 - Eisithe ar 2026-05-05
 - Nua: billeáil chomharthaí AI do fho-láithreáin multisite — rianaigh agus billeáil úsáid chomharthaí AI thar láithreáin chustaiméirí le rátaí in aghaidh an chomhartha atá inchumraithe

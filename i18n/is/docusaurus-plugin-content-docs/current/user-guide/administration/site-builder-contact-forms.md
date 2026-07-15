@@ -3,7 +3,7 @@ title: Miðlar fyrir vísarformir á síti-byggingu
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformirnar byggjast {#site-builder-contact-forms}
+# Kontaktformirnar byggjast
 
 Superdav AI Agent v1.10.0 leggur við möguleika að skapa kontaktformir beint úr chat-skynjunni með Site Builder agentinni. Þetta gerir þér kleift að bæta fully vinnandi kontaktformum í hvaða síðu sem þú vilst án þess að koma út úr chatinu.
 

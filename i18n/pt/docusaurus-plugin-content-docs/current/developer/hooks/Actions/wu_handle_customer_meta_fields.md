@@ -4,7 +4,7 @@ title: Ação - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ação: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Ação: wu_handle_customer_meta_fields
 
 Permite que programadores de extensões guardem metadados de formas diferentes, se precisarem.
 

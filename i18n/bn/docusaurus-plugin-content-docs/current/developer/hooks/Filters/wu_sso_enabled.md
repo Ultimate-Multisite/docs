@@ -4,7 +4,7 @@ title: ফিল্টার - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 ক্রস-ডোমেইন সিঙ্গেল-সাইন-অন (single-sign-on) সক্ষমতা চালু বা বন্ধ করা।
 

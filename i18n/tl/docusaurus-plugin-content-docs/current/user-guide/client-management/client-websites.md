@@ -3,7 +3,7 @@ title: Mga Website ng Kliyente
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Mga Website ng Iyong Kliyente (v2) {#your-clients-websites-v2}
+# Mga Website ng Iyong Kliyente (v2)
 
 Pagkatapos mag-register sa network mo, ang mga customer nila ay makakapasok sa kanilang dashboard.
 

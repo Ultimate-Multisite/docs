@@ -3,7 +3,7 @@ title: Produkte dhe Çmimet e Domenit
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produkte dhe Çmimet e Domenave {#domain-products-and-pricing}
+# Produkte dhe Çmimet e Domenave
 
 Produktivitetet e domenit janë mënyra se si kontrolloni çmimet, TLD-të (Top-Level Domains), privatësinë WHOIS dhe zgjedhjen e ofrues. Çdo produkt i domeneve është një produkt standard Ultimate Multisite me një tab shtesë **Domain Settings** (Cilësimet e Domenit).
 

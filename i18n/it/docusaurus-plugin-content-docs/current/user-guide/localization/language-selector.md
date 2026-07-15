@@ -3,7 +3,7 @@ title: Selettore di lingua
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Selettore di lingua {#language-selector}
+# Selettore di lingua
 
 Questa funzionalità è fornita dall'addon **Language Selector**.
 

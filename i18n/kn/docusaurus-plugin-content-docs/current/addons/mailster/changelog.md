@@ -3,7 +3,7 @@ title: Mailster Changelog
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster ಬದಲಾವಣೆಗಳ ದಾಖಲೆ (Changelog) {#mailster-changelog}
+# Mailster ಬದಲಾವಣೆಗಳ ದಾಖಲೆ (Changelog)
 
 ### 1.0.0 {#100}
 * ಮೊದಲ ಬಿಡುಗಡೆ (Initial release)

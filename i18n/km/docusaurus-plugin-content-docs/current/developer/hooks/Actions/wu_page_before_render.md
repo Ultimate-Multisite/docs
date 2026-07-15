@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 អនុញ្ញាតឲ្យអ្នកអភិវឌ្ឍ plugin បន្ថែមមាតិកាបន្ថែម មុនពេលយើងបង្ហាញទំព័រ។
 

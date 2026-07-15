@@ -3,7 +3,7 @@ title: ওয়েবহুকস
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) সম্পর্কে প্রথম ধারণা {#a-first-look-on-webhooks-v2}
+# Webhooks (v2) সম্পর্কে প্রথম ধারণা
 
 _**মনোযোগ দিন: এই feature বা নিবন্ধটি advanced ব্যবহারকারীদের জন্য।**_
 

@@ -3,7 +3,7 @@ title: 'Lección 13: Escalando'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lección 13: Escalando {#lesson-13-scaling-up}
+# Lección 13: Escalando
 
 Tienes una plataforma funcional con clientes que pagan. Esta lección cubre cómo pasar de una operación pequeña a un negocio sostenible: escalando la infraestructura, automatizando las operaciones y aumentando los ingresos por cliente.
 

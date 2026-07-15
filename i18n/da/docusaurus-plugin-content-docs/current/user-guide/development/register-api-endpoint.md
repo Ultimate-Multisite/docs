@@ -3,7 +3,7 @@ title: Registrer API-endepunkt
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API-endepunktet til Ultimate Multisite Register {#the-ultimate-multisite-register-api-endpoint}
+# API-endepunktet til Ultimate Multisite Register
 
 I denne tutorial lærer du, hvordan du bruger Ultimate Multisite /register API-endepunktet til at oprette hele onboarding-processen for en ny kunde i dit netværk, og hvordan du gør det med Zapier.
 

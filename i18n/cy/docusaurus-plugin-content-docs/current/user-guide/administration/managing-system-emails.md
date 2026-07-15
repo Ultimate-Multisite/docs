@@ -3,7 +3,7 @@ title: Cyfathrebu E-bostrefau System
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Cyfalu'r E-melynu Systemau {#managing-system-emails}
+# Cyfalu'r E-melynu Systemau
 
 Mae Ultimate Multisite yn anfon e-melynu systemau am brofi fel cyfathodau cyflwyniad, gairiadau peob, a newidiadau o chwaraeon. Gallwch gwneud ymddangos ymlaen i'r modelau e-melynu hyn i gyd-fynd â'ch brand.
 

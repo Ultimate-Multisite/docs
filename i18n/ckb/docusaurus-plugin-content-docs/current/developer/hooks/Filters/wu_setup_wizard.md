@@ -4,7 +4,7 @@ title: فلتەر - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# فلتەر: wu_setup_wizard {#filter-wusetupwizard}
+# فلتەر: wu_setup_wizard
 
 ڕێگە بە پەرەپێدەران دەدات هەنگاوەکانی تری setup wizard زیاد بکەن.
 

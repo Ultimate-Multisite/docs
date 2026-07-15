@@ -3,7 +3,7 @@ title: Zpracování webhooků
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Správa webhooků {#webhook-handling}
+# Správa webhooků
 
 Vytvořte vlastní webhookové body (endpoints), abyste přijímal data z externích služeb a synchronizoval je s Ultimate Multisite.
 

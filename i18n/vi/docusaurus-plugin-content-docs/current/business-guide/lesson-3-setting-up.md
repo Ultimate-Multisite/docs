@@ -3,7 +3,7 @@ title: 'Bài học 3: Thiết lập Mạng của bạn'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Bài 3: Thiết Lập Mạng Lưới Của Bạn {#lesson-3-setting-up-your-network}
+# Bài 3: Thiết Lập Mạng Lưới Của Bạn
 
 Đã đến lúc xây dựng rồi. Trong bài học này, bạn sẽ cài đặt Ultimate Multisite và cấu hình nền tảng cho mạng lưới FitSite. Mọi quyết định ở đây đều được cân nhắc dựa trên thị trường ngách thể hình.
 

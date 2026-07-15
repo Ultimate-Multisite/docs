@@ -4,7 +4,7 @@ title: عمل - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# عمل: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# عمل: wu_domain_renewal_failed
 
 ڊومين جي تجديد جي ڪوشش ناڪام ٿيڻ کان پوءِ هلندو آهي.
 

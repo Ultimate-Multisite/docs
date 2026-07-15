@@ -3,7 +3,7 @@ title: WordPress Multisite-in kya hai?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite Nedir? {#what-is-wordpress-multisite}
+# WordPress Multisite Nedir?
 
 WordPress'in çekirdek yapısı içinde, 2010 yılında WordPress 3.0'ın piyasaya sürülmesiyle kökenleri bulunan 'Multisite' adında bir özellik bulunur. O zamandan beri, yeni özellikler eklemek ve güvenliği artırmak amacıyla birçok revizyon geçirdi.
 

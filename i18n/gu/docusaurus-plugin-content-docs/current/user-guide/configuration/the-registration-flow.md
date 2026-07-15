@@ -3,7 +3,7 @@ title: નોંધણી પ્રવાહ
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# નોંધણી પ્રવાહ (v2) {#the-registration-flow-v2}
+# નોંધણી પ્રવાહ (v2)
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite સંસ્કરણ 2.x માટે છે.**_
 

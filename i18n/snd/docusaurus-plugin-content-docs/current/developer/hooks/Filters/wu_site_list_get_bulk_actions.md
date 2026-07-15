@@ -4,7 +4,7 @@ title: فلٽر - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# فلٽر: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
+# فلٽر: wu_site_list_get_bulk_actions
 
 سائيٽن لاءِ موجود اجتماعي ڪاررواين کي فلٽر ڪريو.
 

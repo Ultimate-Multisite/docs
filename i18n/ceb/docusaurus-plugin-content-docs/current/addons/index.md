@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Mga Adon sa Ultimate Multisite {#ultimate-multisite-addons}
+# Mga Adon sa Ultimate Multisite
 
 Ang mga Addons nagdugang og daghang functionality ug integration sa Ultimate Multisite. Kasagaran, ang kadaghanan niini bayad, ug mabakal kini sa [ultimatemultisite.com](https://ultimatemultisite.com).
 

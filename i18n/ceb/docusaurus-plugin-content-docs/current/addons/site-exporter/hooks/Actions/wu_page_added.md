@@ -4,7 +4,7 @@ title: Aksyon - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Aksyon: wu_page_added {#action-wupageadded}
+# Aksyon: wu_page_added
 
 Tugoti ang mga developer sa dugang-programa nga magpadagan og dugang nga mga butang kung narehistro ang mga panid.
 

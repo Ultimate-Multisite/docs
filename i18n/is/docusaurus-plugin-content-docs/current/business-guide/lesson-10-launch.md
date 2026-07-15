@@ -3,7 +3,7 @@ title: 'Læoni 10: Lánningadagur'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Læoni 10: Lansningdag {#lesson-10-launch-day}
+# Læoni 10: Lansningdag
 
 Allt er byggt. Fyrir að þú opnar dökurnar, fersturinn í þessum læoni í gegnum pre-lansninga-tjekklista til að tryggja að ingengu sé brottbrotinn, glámt eða skammt.
 

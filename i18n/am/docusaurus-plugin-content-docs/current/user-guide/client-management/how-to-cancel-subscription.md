@@ -3,7 +3,7 @@ title: ደንበበ መለያን እንዴት መሰረዝ ይቻላል
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# የደንበኝነት ምዝገባዬን እንዴት ልሰርዝው እችላለሁ? {#how-can-i-cancel-my-subscription}
+# የደንበኝነት ምዝገባዬን እንዴት ልሰርዝው እችላለሁ?
 
 Ultimate Multisite ፍቃድ (license) ካላችሁ፣ መቼም ቢፈልጉ የዳግም እድሳቱን (renewal) መሰረዝ ትችላላችሁ። ከታች ያሉትን ደረጃዎች ብቻ ይከተሉ።
 

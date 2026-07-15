@@ -3,7 +3,7 @@ title: थीम-जागरूक कौशल्ये
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills (थीम-जागरूक कौशल्ये) {#theme-aware-skills}
+# Theme-Aware Skills (थीम-जागरूक कौशल्ये)
 
 Superdav AI Agent v1.10.0 मध्ये चार नवीन थीम-जागरूक (theme-aware) बिल्ट-इन कौशल्ये (built-in skills) समाविष्ट केली आहेत, जी आपोआप तुमच्या सक्रिय WordPress थीमशी जुळवून घेतात. ही कौशल्ये तुमच्या थीमच्या आर्किटेक्चर आणि वैशिष्ट्यांशी (features) जुळणारे विशेष मार्गदर्शन आणि क्षमता (capabilities) प्रदान करतात.
 

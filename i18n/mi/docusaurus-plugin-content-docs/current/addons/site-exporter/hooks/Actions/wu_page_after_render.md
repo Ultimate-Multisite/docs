@@ -4,7 +4,7 @@ title: Hohenga - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Mahi: wu_page_after_render {#action-wupageafterrender}
+# Mahi: wu_page_after_render
 
 Ka whakaoho i muri i te tāhuatanga o tētahi whārangi.
 

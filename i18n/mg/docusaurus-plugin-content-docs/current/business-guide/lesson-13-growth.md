@@ -3,7 +3,7 @@ title: 'Lesona 13: Fanitarana'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesona 13: Mitombo ho Lehibe {#lesson-13-scaling-up}
+# Lesona 13: Mitombo ho Lehibe
 
 Manana sehatra miasa ianao miaraka amin'ny mpanjifa mandoa vola. Ity lesona ity dia mandrakotra ny fomba hitomboana avy amin'ny asa madinika ho orinasa maharitra -- fampitomboana fotodrafitrasa, fanaovana automatique ny asa, ary fampitomboana ny vola miditra isaky ny mpanjifa.
 

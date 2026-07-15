@@ -4,7 +4,7 @@ title: Филтр - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Филтр: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Филтр: wu_post_count_statuses
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки муайян кунанд кадом ҳолати навишта бояд ҳисоб карда шавад. Бо пешфарз, навиштаҳои нашршуда ва хусусӣ ҳисоб карда мешаванд
 

@@ -4,7 +4,7 @@ title: فیلتر - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# فیلتر: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# فیلتر: wu_get_membership_allowed_forms
 
 به توسعه‌دهندگان اجازه می‌دهد تا با افزودن اسلاگ‌های فرم جدید، از این محدودیت عبور کنند.
 

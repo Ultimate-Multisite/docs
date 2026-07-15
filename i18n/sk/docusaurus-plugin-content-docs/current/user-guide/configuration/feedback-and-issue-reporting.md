@@ -3,7 +3,7 @@ title: Spätná väzba zákazníkov a reportovanie problémov
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Spracovanie sprievodných dosad a reportov problémov {#customer-feedback--issue-reporting}
+# Spracovanie sprievodných dosad a reportov problémov
 
 Gratis AI Agent v1.5.0 obsahuje vbudovaný systém pre spracovanie sprievodných dosad a reportov problémov, ktorý umožňuje koncovým používateľom označovať nepomocné odpovede a priamo nahlásiť problémy z chatu. Tento systém zahŕňa správu súhlasu, automatický príkaz na report a AI-pomáchaný triáž v pozadí.
 

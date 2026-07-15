@@ -3,7 +3,7 @@ title: 'Leciono 12: Mastrumado de la Komerco'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leciono 12: Funkciigi la Komercon {#lesson-12-running-the-business}
+# Leciono 12: Funkciigi la Komercon
 
 Platformo ne estas projekto, kiun vi finas -- ĝi estas komerco, kiun vi funkciigas. Ĉi tiu leciono kovras la ĉiutagajn operaciojn por administri FitSite: subteno, fakturado, prizorgado, kaj teni klientojn kontentaj.
 

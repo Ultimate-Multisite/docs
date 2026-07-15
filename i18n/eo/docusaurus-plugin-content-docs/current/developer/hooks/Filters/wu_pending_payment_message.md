@@ -4,7 +4,7 @@ title: Filtro - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filtro: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filtro: wu_pending_payment_message
 
 Permesas al uzanto ŝanĝi la mesaĝon pri la pritraktataj pagoj.
 

@@ -3,7 +3,7 @@ title: Износване и импортиране
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Износ и Внос {#export--import}
+# Износ и Внос
 
 Ultimate Multisite 2.9.0 добавя инструмент за **Износ и Внос** за едно място, който се намира в **Tools > Export & Import**. Използвайте го, когато трябва да опаковате един WordPress сайт във ZIP файл, да възстановите този ZIP или да преместите сайт между съвместими инсталации на Ultimate Multisite и single-site WordPress.
 

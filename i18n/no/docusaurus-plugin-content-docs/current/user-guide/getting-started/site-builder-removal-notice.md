@@ -3,7 +3,7 @@ title: Melding om fjerning av Site Builder-modus
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Fjerning av Site Builder-modus {#site-builder-mode-removal-notice}
+# Fjerning av Site Builder-modus
 
 **Site Builder-modus er fjernet i Superdav AI Agent v1.12.0.** Hvis du brukte Site Builder-modus, bør du migrere til **Setup Assistant agent** for temaopprettelse og oppsett av nettstedet.
 

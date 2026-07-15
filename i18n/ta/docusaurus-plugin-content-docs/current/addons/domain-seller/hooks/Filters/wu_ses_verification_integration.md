@@ -4,7 +4,7 @@ title: Filter - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Filter: wu_ses_verification_integration
 
 ஃபில்டர்: SES ஒருங்கிணைப்புப் பொருளை (integration object) மற்ற கோடுகளுக்கு வழங்க இது அனுமதிக்கிறது.
 

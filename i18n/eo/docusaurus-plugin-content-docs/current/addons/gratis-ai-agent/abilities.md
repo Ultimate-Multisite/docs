@@ -3,7 +3,7 @@ title: Referenco pri kapabloj
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenco de Kapabloj {#abilities-reference}
+# Referenco de Kapabloj
 
 Kapabloj estas la atomaj agoj, kiujn Gratis AI Agent povas alvoki en via WordPress-instalaĵo. Ĉiu kapablo estas registrita PHP-klaso, kiu elmontras JSON-skemon — la agento legas ĉi tiun skemon dum rultempo por kompreni kiuj parametroj estas bezonataj kaj kion la kapablo redonas.
 

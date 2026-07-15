@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 Ελέγχει αν ένας συγκεκριμένος τύπος φόρμας είναι επιτρεπτός στο παρόν plan. Επιτρέπει στους developers των plugins να φιλτράρουν (filter) την τιμή που επιστρέφεται.
 

@@ -3,7 +3,7 @@ title: Cloudflare 整合
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare 整合 {#cloudflare-integration}
+# Cloudflare 整合
 
 ## 概覽 {#overview}
 Cloudflare 是領先的內容傳遞網路（CDN）與安全性提供者，可協助保護並加速網站。此整合可在 Ultimate Multisite 與 Cloudflare 之間啟用自動網域管理，特別適用於子網域 multisite 安裝。

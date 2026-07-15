@@ -3,7 +3,7 @@ title: PayPal සැකසීම
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# પે-පෝල් ගේට්වේ එක සකස් කිරීම (v2) {#setting-up-the-paypal-gateway-v2}
+# પે-පෝල් ගේට්වේ එක සකස් කිරීම (v2)
 
 _**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite version 2.x වෙත යොමු වේ.**_
 

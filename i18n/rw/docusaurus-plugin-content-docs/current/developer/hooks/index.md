@@ -3,7 +3,7 @@ title: Ishakiro rya Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Indango za Hooks {#hooks-reference}
+# Indango za Hooks
 
 Inyandiko zakozwe mu buryo bwikora ku **bikorwa 59** byose na **filters 118** zose muri Ultimate Multisite.
 

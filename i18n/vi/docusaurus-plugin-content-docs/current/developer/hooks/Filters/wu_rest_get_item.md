@@ -4,7 +4,7 @@ title: Bộ lọc - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item {#filter-wurestgetitem}
+# Filter: wu_rest_get_item
 
 Bộ lọc này dùng để xác định xem yêu cầu có được phép tiếp tục xử lý hay không.
 

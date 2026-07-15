@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Шүүлтүүр: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Шүүлтүүр: wu_mt_syncable_user_meta_keys
 
 Алсын зангилаанууд руу синк хийх ёстой хэрэглэгчийн мета түлхүүрүүдийн жагсаалтыг шүүнэ.
 

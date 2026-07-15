@@ -4,7 +4,7 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 ஒரு field தானாகவே சமர்ப்பிக்கக்கூடியதாக இருந்தால், அந்தச் சரிபார்ப்பை கடந்து செல்ல (bypass) டெவலப்பர்களுக்கு இது அனுமதிக்கிறது.
 

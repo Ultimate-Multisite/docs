@@ -3,7 +3,7 @@ title: Ugostiteljski jelovnici
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ugostiteljski jelovnici {#hospitality-menus}
+# Ugostiteljski jelovnici
 
 Značajka **Ugostiteljski jelovnici** omogućuje Theme Builderu generiranje i ugrađivanje strukturiranih stranica jelovnika hrane i pića izravno u vaše WordPress web-mjesto.
 

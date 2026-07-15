@@ -3,9 +3,9 @@ title: قالب الإضافة
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قالب الإضافة {#addon-template}
+# قالب الإضافة
 
-{{ADDON_DESCRIPTION}}
+قالب الإضافة — Ultimate Multisite.
 
 ## المتطلبات {#requirements}
 

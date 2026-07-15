@@ -3,7 +3,7 @@ title: Cruthaich clàr-taice
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Cruthaich Clàr-taice {#create-menu}
+# Cruthaich Clàr-taice
 
 Cruthaichidh comas **Cruthaich Clàr-taice** clàran-taice seòlaidh WordPress le taic do leubailean seòlaidh sònraichte a tha air leth bho thiotalan dhuilleagan.
 

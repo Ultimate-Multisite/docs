@@ -3,7 +3,7 @@ title: Ukuphelelwa Yisikhathi Kobulungu Nokuvinjwa Kwesayithi
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Ukuphelelwa Isikhathi Kobulungu Nokuvinjwa Kwe-site {#membership-expiration-and-site-blocking}
+# Ukuphelelwa Isikhathi Kobulungu Nokuvinjwa Kwe-site
 
 Lo mhlahlandlela uchaza ukuthi Ultimate Multisite ikusingatha kanjani ukuphelelwa isikhathi kobulungu, ukuphela kwezikhathi zokuzama, nokuvinjwa kwe-site ye-frontend. Uhlanganisa umjikelezo wempilo wobulungu kusukela kokusebenzayo kuya kokuphelelwe isikhathi, izilungiselelo ezilawula ukuthi ama-site ayavinjwa yini, nokuthi yini okufanele uyihlole lapho ama-site esalokhu efinyeleleka ngemva kokuphelelwa isikhathi kobulungu.
 

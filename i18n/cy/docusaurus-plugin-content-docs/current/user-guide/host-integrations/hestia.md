@@ -3,7 +3,7 @@ title: Ychwanegiad y Panel Cwilio Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Ymystriedion Cwilio Hestia {#hestia-control-panel-integration}
+# Ymystriedion Cwilio Hestia
 
 Mae'r cyfarwyddyd hwn yn esbonio sut i sicrwy'r y cynnig Ultimate Multisite Hestia felly mae domenau a mapiad mewn rheoltain eich rheolyn yn cael eu cytriau (a cael eu tystiolaeth) fel Aliases Web Domain yn Hestia.
 

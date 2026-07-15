@@ -3,7 +3,7 @@ title: تلقي المدفوعات
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# الحصول على المدفوعات (v2) {#getting-paid-v2}
+# الحصول على المدفوعات (v2)
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

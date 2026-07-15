@@ -3,7 +3,7 @@ title: Pag-iimbak ng Prompt na May Kamalayan sa Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
+# Provider-Aware Prompt Caching
 
 Ipinakilala ng Superdav AI Agent v1.12.0 ang **provider-aware prompt caching**, na nag-o-optimize sa gastos at latency ng API sa pamamagitan ng pag-iimbak (caching) ng mga prompts sa iba't ibang LLM providers. Ang bawat provider ay may iba't ibang mekanismo at configuration para sa caching.
 

@@ -3,7 +3,7 @@ title: 'Dars 5: Rejalaringizni loyihalash'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5-dars: Rejalaringizni loyihalash {#lesson-5-designing-your-plans}
+# 5-dars: Rejalaringizni loyihalash
 
 Reja darajalaringiz shunchaki narx pog'onalari emas -- ular tor yo'nalishdagi mijozlaringiz aslida qanday ishlashining aksidir. Bu darsda siz turli bosqichlardagi fitness bizneslarining haqiqiy ehtiyojlariga mos mahsulot darajalarini loyihalaysiz.
 

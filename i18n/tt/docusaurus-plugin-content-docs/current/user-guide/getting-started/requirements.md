@@ -3,7 +3,7 @@ title: Талаптар
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Gereklilikleri {#ultimate-multisite-requirements}
+# Ultimate Multisite Gereklilikleri
 
 Ultimate Multisite'ı satın almadan önce kendinize sormanız gereken ilk şey, eklentimizi çalıştırmak için ne gibi gereksinimler olduğu olabilir. Neyse ki, Ultimate Multisite'ı çalıştırmak için sadece birkaç temel gereksinim var: bir **alan adı**, iyi bir **barındırma sağlayıcısı** ve bir WordPress **Multisite** kurulumu. İşte ihtiyacınız olan hepsi bu!
 

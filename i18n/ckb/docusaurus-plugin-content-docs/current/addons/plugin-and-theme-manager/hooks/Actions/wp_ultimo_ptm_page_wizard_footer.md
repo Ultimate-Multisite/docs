@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# کردار: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# کردار: wp_ultimo_ptm_page_wizard_footer
 
 ڕێگە بدە بە گەشەپێدەرانی plugin کە script زیاد بکەن بۆ خوارەوەی پەڕەکە
 

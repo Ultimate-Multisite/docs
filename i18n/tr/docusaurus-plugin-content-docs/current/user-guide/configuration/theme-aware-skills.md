@@ -3,7 +3,7 @@ title: Tema Farkındalıklı Beceriler
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema Farkındalıklı Beceriler {#theme-aware-skills}
+# Tema Farkındalıklı Beceriler
 
 Superdav AI Agent v1.10.0, aktif WordPress temanıza otomatik olarak uyum sağlayan dört yeni tema farkındalıklı yerleşik beceri (skill) ile geliyor. Bu beceriler, temanızın mimarisine ve özelliklerine özel olarak hazırlanmış uzman rehberlik ve yetenekler sunar.
 

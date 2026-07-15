@@ -3,7 +3,7 @@ title: Mailster 更新日誌
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster 更新日誌 {#mailster-changelog}
+# Mailster 更新日誌
 
 ### 1.0.0 {#100}
 * 首次發布

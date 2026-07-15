@@ -3,7 +3,7 @@ title: Quản lý thanh toán và hóa đơn
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Quản lý Thanh toán và Hóa đơn {#managing-payments-and-invoices}
+# Quản lý Thanh toán và Hóa đơn
 
 ## Cài đặt Thanh toán {#payment-settings}
 

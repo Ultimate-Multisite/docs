@@ -3,7 +3,7 @@ title: Hooklary ulanmak boýunça gollanma
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks ulanmak boýunça gollanma {#hooks-usage-guide}
+# Hooks ulanmak boýunça gollanma
 
 Ultimate Multisite 200+ action hook we 280+ filter hook üpjün edýär. Bu sahypa amaly mysallar bilen iň köp ulanylýan hook-lary öz içine alýar. Doly awtomatiki döredilen salgylanma üçin bu bölümdäki beýleki sahypalara serediň.
 

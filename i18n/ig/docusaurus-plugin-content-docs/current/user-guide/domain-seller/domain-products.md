@@ -3,7 +3,7 @@ title: Nkwado Ụlọ na Ịgba Ọnụiị
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk TLDs na Domene na Giá {#domain-products-and-pricing}
+# Produk TLDs na Domene na Giá
 
 Produk Domain na cách bạn kiểm soát giá, các loại TLD (Top-Level Domains), quyền riêng tư WHOIS, và việc chọn nhà cung cấp dịch vụ. Mỗi sản phẩm Domain đều là một sản phẩm Ultimate Multisite tiêu chuẩn với một tab **Domain Settings** thêm vào.
 

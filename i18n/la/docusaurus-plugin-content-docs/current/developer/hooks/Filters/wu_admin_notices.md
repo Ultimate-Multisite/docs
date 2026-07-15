@@ -4,7 +4,7 @@ title: Filtrum - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtrum: wu_admin_notices {#filter-wuadminnotices}
+# Filtrum: wu_admin_notices
 
 Sinite evolutores nuntia administrativa ab Ultimate Multisite addita filtrare.
 

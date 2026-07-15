@@ -3,7 +3,7 @@ title: Tema Qurucu Onboarding Axını
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Tema Qurucu Onboarding Prosesi {#theme-builder-onboarding-flow}
+# Tema Qurucu Onboarding Prosesi
 
 Superdav AI Agent v1.12.0, ilk qurulum zamanı sizə özəl bir blok teması yaratmağa kömək edən təlimatlı bir **Tema Qurucu onboarding prosesi** təqdim edir. Bu, köhnə Site Builder rejiminin yerinə daha çevik, agent dəstəkli bir yanaşmadır.
 

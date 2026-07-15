@@ -4,7 +4,7 @@ title: Ação - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Ação: wu_page_load {#action-wupageload}
+# Ação: wu_page_load
 
 Permite que desenvolvedores de plugins adicionem hooks adicionais às nossas páginas.
 

@@ -3,7 +3,7 @@ title: د متعدد سايټ تنظیمونکی
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite ته یو内置 गरिएको wizard (مساعد) لري چې یو معیاري WordPress installation کي خود بخود रूपमा WordPress Multisite network ته بدلوي. دا کار تاسو ته `wp-config.php` lai دستی रूपमा सच्याउन वा डेटाबेस commandहरू चलाउनुपर्ने आवश्यकता हटाउँछ।
 

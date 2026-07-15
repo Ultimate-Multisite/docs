@@ -4,7 +4,7 @@ title: Hành động - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup {#action-wucartaftersetup}
+# Action: wu_cart_after_setup
 
 Cho phép các nhà phát triển thực hiện các thay đổi bổ sung đối với đối tượng giỏ hàng (checkout object).
 

@@ -3,7 +3,7 @@ title: Registro delle modifiche dei fatti di Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Registro delle modifiche di Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Registro delle modifiche di Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Aggiunto: Automatic update functionality via Ultimate Multisite update server

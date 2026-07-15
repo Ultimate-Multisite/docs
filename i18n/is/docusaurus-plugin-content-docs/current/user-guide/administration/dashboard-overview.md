@@ -3,7 +3,7 @@ title: Översikt yfir nýtingar
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Översikt yfir Dashboard {#dashboard-overview}
+# Översikt yfir Dashboard
 
 Ultimate Multisite hefur sérstaklega **Dashboard** undir menyann Ultimate Multisite, og það leggur saman við vísurðum á Network Dashboard. Þessi grein vegur um það sem þú sjá í bæði staðum.
 

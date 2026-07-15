@@ -3,7 +3,7 @@ title: Fanamafana Mpanjaka
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manome les commandes verification WP-CLI ho an'ny migration amin'ny tenant souverainy. Ampiasao izany rehefa tsy mihetsika araka ny tokony ho azy ny migration tenant, fidirana SSO, na fametrahana voafetra (isolated install).
 

@@ -4,7 +4,7 @@ title: कृती - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Action: wu_page_load {#action-wupageload}
+# Action: wu_page_load
 
 प्लगइन डेव्हलपर्सना आमच्या पानांवर अतिरिक्त हुक्स जोडण्याची परवानगी देते.
 

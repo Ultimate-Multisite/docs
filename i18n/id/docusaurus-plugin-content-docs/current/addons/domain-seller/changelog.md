@@ -3,7 +3,7 @@ title: Catatan Perubahan Penjual Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog Domain Seller {#domain-seller-changelog}
+# Changelog Domain Seller
 
 Versi 1.3.0 - Dirilis pada 2026-06-02
 - Baru: Menambahkan peringatan network-admin saat saldo reseller HostAfrica menjadi terlalu rendah

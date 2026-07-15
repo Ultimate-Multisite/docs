@@ -3,7 +3,7 @@ title: 'धडा १०: लॉन्च दिवस'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day {#lesson-10-launch-day}
+# Lesson 10: Launch Day
 
 सर्व काही तयार आहे. तुम्ही दरवाजे उघडण्यापूर्वी, ही Lesson तुम्हाला Pre-launch checklist मधून घेऊन जाईल, जेणेकरून काहीही तुटलेले नाही, काहीतरी गहाळ नाही किंवा काही लाजिरवाणे नाही याची खात्री करता येईल.
 

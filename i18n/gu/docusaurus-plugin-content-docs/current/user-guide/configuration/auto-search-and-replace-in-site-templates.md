@@ -3,7 +3,7 @@ title: Site Templates માં આપમેળે Search and Replace
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# સાઇટ ટેમ્પ્લેટ્સમાં આપમેળે શોધો અને બદલો (v2) {#auto-search-and-replace-in-site-templates-v2}
+# સાઇટ ટેમ્પ્લેટ્સમાં આપમેળે શોધો અને બદલો (v2)
 
 _**આ ટ્યુટોરિયલ માટે WP UItimo version 2.x જરૂરી છે.**_
 

@@ -3,7 +3,7 @@ title: Ṣẹda Aami SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Ṣẹda Aami SVG {#generate-logo-svg}
+# Ṣẹda Aami SVG
 
 Agbara **Ṣẹda Aami SVG** jẹ́ kí Theme Builder lè ṣẹ̀dá àti fi àwọn SVG aami àkànṣe sínú site WordPress rẹ taara pẹ̀lú ìwẹ̀numọ́ aládàáṣiṣẹ́ tó ní ààbò fún namespace.
 

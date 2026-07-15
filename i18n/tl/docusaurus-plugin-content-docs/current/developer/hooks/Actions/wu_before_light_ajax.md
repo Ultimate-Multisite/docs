@@ -4,7 +4,7 @@ title: Aksyon - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Action: wu_before_light_ajax {#action-wubeforelightajax}
+# Action: wu_before_light_ajax
 
 Sa ilang kaso, kakailanganin nating mag-load ng karagdagang lakas para pangasiwaan ang mga action.
 

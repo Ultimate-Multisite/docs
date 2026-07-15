@@ -4,7 +4,7 @@ title: Gnìomh - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Gnìomh: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Gnìomh: wu_page_enqueue_scripts
 
 A’ cur gnìomh gnàthaichte an-seo gus am bi àite againn airson na scripts agus styles a chur san ciudha mar a dh’fheumar\ agus dèanamh cinnteach nach tèid an luchdadh ach air na duilleagan ceart
 

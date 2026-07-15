@@ -3,7 +3,7 @@ title: Usesho lwe-Inthanethi
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Ukusesha Ku-inthanethi {#internet-search}
+# Ukusesha Ku-inthanethi
 
 Gratis AI Agent v1.5.0 yengeza ikhono le-**Ukusesha Ku-inthanethi** elivumela umsizi we-AI ukuthi athole ulwazi lwakamuva oluvela kuwebhu phakathi nengxoxo. Lokhu kunikwa amandla yi-[Brave Search API](https://brave.com/search/api/) noma i-[Tavily API](https://tavily.com/).
 

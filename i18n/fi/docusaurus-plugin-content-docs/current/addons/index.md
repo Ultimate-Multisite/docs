@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons laajentaa Ultimate Multisitea lisäominaisuuksilla ja integraatioilla. Useimmat lisäosat ovat maksullisia ja ne voi ostaa osoitteesta [ultimatemultisite.com](https://ultimatemultisite.com).
 

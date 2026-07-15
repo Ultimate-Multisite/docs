@@ -3,7 +3,7 @@ title: 'Les 8: Klant-onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Les 8: Kliënt Onboarding {#lesson-8-customer-onboarding}
+# Les 8: Kliënt Onboarding
 
 Om 'n kliënt aan te meld is net die eerste stap. As hulle inlog, oorweldig voel, en nooit weer terugkom nie, het jy hulle verloor. Hierdie les ontwerp die ervaring wat 'n nuwe aanmelding omskep in 'n aktiewe, betrokke kliënt.
 

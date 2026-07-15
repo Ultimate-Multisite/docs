@@ -3,7 +3,7 @@ title: 生成 Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# 生成 Logo SVG {#generate-logo-svg}
+# 生成 Logo SVG
 
 **生成 Logo SVG** 功能允许主题构建器（Theme Builder）直接在您的 WordPress 网站中创建和嵌入自定义 Logo SVG，并自动进行命名空间安全的清理（sanitisation）。
 

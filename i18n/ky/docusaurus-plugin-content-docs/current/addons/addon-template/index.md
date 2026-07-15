@@ -3,9 +3,9 @@ title: Кошумча модулдун шаблону
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Кошумча модулдун шаблону {#addon-template}
+# Кошумча модулдун шаблону
 
-{{ADDON_DESCRIPTION}}
+Кошумча модулдун шаблону — Ultimate Multisite.
 
 ## Талаптар {#requirements}
 

@@ -3,7 +3,7 @@ title: Aurkikuntza-elkarrizketa
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Aurkikuntza-elkarrizketa {#discovery-interview}
+# Aurkikuntza-elkarrizketa
 
 **Aurkikuntza-elkarrizketa** Theme Builder-en diseinu-prozesuko lehen urratsa da. Zure guneari, negozioari eta diseinu-lehentasunei buruzko informazioa biltzen du, pertsonalizatutako theme bat sortzeko.
 

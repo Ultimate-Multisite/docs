@@ -3,7 +3,7 @@ title: Qeydiyyat formanızı fərdiləşdirmək
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Qeydiyyat Formanızı fərdiləşdirmək {#customizing-your-registration-form}
+# Qeydiyyat Formanızı fərdiləşdirmək
 
 WordPress platformasında qurulmuş digər bütün SaaS-lardan şəbəkənizin unikal görünməsi üçün Ultimate Multisite sizə **Checkout Forms** xüsusiyyəti ilə qeydiyyat və giriş səhifələrinizi fərdiləşdirməyə imkan verir.
 

@@ -3,7 +3,7 @@ title: د سازګارو پای‌ټکو لپاره وروستی AI نښلوون
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector لپاره د Compatible Endpoints بدلونونو ثبت {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector لپاره د Compatible Endpoints بدلونونو ثبت
 
 ## Version 2.0.0 — په 2026-04-24 خپور شو {#version-200--released-on-2026-04-24}
 

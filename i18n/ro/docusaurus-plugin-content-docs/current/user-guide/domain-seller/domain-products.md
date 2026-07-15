@@ -3,7 +3,7 @@ title: Produse și Prețuri pentru Domenii
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produse de domenii și prețuri {#domain-products-and-pricing}
+# Produse de domenii și prețuri
 
 Produsele de domenii vă permit să gestionați prețurile, TLD-urile, confidențialitatea WHOIS și selectarea furnizorului. Fiecare produs de domeniu este un produs standard Ultimate Multisite, dar cu un tab separat numit **Domain Settings**.
 

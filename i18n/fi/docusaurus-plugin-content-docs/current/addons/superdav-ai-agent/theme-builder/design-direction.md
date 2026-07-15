@@ -3,7 +3,7 @@ title: Suunnittelun suunta
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Suunnittelusuunta {#design-direction}
+# Suunnittelusuunta
 
 **Suunnittelusuunta**-vaiheessa voit tarkistaa, hioa ja viimeistellä teemasi visuaalisen suunnittelun ennen kuin Theme Builder luo täydellisen teeman.
 

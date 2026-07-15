@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Action: wp_ultimo_host_providers_load
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍បន្ថែមការរួមបញ្ចូល host provider របស់ពួកគេតាមរយៈ WordPress plugins។
 

@@ -3,7 +3,7 @@ title: Fahamka Dashboard-ka
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Fahamka Dashboard-ga Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Fahamka Dashboard-ga Ultimate Multisite
 
 Ka hor inta aan si fiican u baranno doorooyin qaab-dhismeedka ah iyo sida shaqada Ugu Dambaysa (Ultimate Multisite), hadda aan eegno dashboard-ka.
 

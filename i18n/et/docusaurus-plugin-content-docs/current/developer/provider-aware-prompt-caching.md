@@ -3,7 +3,7 @@ title: Teenusepakkujapõhine viibapuhverdamine
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Teenusepakkuja-teadlik promptide vahemällu salvestamine {#provider-aware-prompt-caching}
+# Teenusepakkuja-teadlik promptide vahemällu salvestamine
 
 Superdav AI Agent v1.12.0 tutvustab **teenusepakkuja-teadlikku promptide vahemällu salvestamist**, mis optimeerib API kulusid ja latentsust, salvestades prompte vahemällu eri LLM-teenusepakkujate vahel. Igal teenusepakkujal on erinevad vahemällu salvestamise mehhanismid ja seadistused.
 

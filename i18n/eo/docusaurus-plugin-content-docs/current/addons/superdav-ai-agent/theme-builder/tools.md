@@ -3,7 +3,7 @@ title: Iloj kaj Agordo
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Iloj kaj Agordo {#tools-and-configuration}
+# Iloj kaj Agordo
 
 Theme Builder uzas aron da iloj por analizi, dezajni kaj konstrui vian WordPress retejon. En versio 1.16.0, **sd-ai-agent/site-scrape nun estas ilo de Nivelo 1**, igante ĝin disponebla defaŭlte en Theme Builder. Superdav AI Agent v1.18.0 ankaŭ enkondukas aparte distribuitan Altnivelan kunulan pakaĵon por fidindaj programistaj laborfluoj; tiuj iloj ne estas parto de la kerna pakaĵo de WordPress.org kaj devas esti instalitaj kaj rajtigitaj aparte.
 

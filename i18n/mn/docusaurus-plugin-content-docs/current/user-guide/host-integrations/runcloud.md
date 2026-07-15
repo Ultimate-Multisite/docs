@@ -3,7 +3,7 @@ title: RunCloud-ийн нийлүүлэлт
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Нэгтгэл (Integration) {#runcloud-integration}
+# RunCloud Нэгтгэл (Integration)
 
 ## Ерөнхий өгүүлэл (Overview) {#overview}
 RunCloud бол таны өөрийн cloud серверүүдэд вэб аппликейшнуудыг хялбархан байрлуулах, удирдах боломжийг олгодог cloud-based сервер менежментийн платформ юм. Энэхүү нэгтгэл нь Ultimate Multisite ба RunCloud хоорондын домен синхронизуулалт болон SSL сертификатын удирдлагыг автоматаар хийх боломжийг олгодог.

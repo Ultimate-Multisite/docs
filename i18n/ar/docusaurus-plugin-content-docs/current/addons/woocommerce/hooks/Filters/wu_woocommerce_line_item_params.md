@@ -4,7 +4,7 @@ title: فلتر - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# الفلتر: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# الفلتر: wu_woocommerce_line_item_params
 
 تصفية المعلمات المستخدمة لإنشاء عناصر السطر في سلة WooCommerce، قبل إعادة توجيه العميل إلى صفحة الدفع في WooCommerce.
 

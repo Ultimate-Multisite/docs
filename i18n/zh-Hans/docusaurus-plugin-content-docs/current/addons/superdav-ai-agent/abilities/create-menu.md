@@ -3,7 +3,7 @@ title: 创建菜单
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# 创建菜单 {#create-menu}
+# 创建菜单
 
 **创建菜单**功能可以创建 WordPress 导航菜单，并支持与页面标题不同的独立导航标签。
 

@@ -3,7 +3,7 @@ title: Gunearen esportatzailearen aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter aldaketen erregistroa {#site-exporter-changelog}
+# Site Exporter aldaketen erregistroa
 
 Bertsioa: 1.0.6 - 2026-05-11n argitaratua
 * Berria: Gune-esportazioek orain berez abiarazten den index.php bat biltzen dute, ZIPa ostalari berri batean instala dadin plugin bereizi bat instalatu gabe

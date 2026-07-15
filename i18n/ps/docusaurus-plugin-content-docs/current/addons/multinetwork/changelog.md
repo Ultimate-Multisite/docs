@@ -3,7 +3,7 @@ title: د څو-شبکو د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# د Multi-Network بدلون‌لیک {#multi-network-changelog}
+# د Multi-Network بدلون‌لیک
 
 ### 1.3.0 {#130}
 * نوی: د شبکې کينډۍ مخکتونکی — د پېرودلو مخکې د ژوندۍ تختې له لارې د شبکې کينډۍ وپلټئ او مخکتنه یې وکړئ.

@@ -3,7 +3,7 @@ title: Klianto-webplatoj
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Viajantaj Klientajoj (v2) {#your-clients-websites-v2}
+# Viajantaj Klientajoj (v2)
 
 Post registriĝo en viajn retoj, la viajantoj de vi povas akcesi sian dashboardon.
 

@@ -3,7 +3,7 @@ title: Loga athruithe CBL
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Loga Athruithe VAT {#vat-changelog}
+# Loga Athruithe VAT
 
 Leagan 1.0.7 - Eisithe ar 2026-02-03
 

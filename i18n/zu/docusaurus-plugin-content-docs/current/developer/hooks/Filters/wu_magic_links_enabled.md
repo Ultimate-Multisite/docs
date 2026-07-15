@@ -4,7 +4,7 @@ title: Isihlungi - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Isihlungi: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Isihlungi: wu_magic_links_enabled
 
 Hlunga ukuthi izixhumanisi zomlingo zivunyelwe yini.
 

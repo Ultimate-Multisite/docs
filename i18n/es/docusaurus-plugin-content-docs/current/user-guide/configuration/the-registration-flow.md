@@ -3,7 +3,7 @@ title: El flujo de registro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# El flujo de registro (v2) {#the-registration-flow-v2}
+# El flujo de registro (v2)
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 

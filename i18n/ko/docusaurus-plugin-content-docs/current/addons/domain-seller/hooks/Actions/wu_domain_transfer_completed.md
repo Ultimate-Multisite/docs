@@ -4,7 +4,7 @@ title: 액션 - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Action: wu_domain_transfer_completed
 
 도메인 이전이 완료된 후 실행되는 액션입니다.
 

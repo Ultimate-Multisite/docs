@@ -4,7 +4,7 @@ title: عمل - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# عمل: wu_register_integrations {#action-wuregisterintegrations}
+# عمل: wu_register_integrations
 
 انٽيگريشنز کي پاڻ کي رجسٽر ڪرڻ جي اجازت ڏيڻ لاءِ هلندو آهي.
 

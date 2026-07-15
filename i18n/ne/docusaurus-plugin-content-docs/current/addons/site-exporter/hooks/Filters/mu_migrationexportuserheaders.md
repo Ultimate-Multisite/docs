@@ -4,7 +4,7 @@ title: फिल्टर - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# फिल्टर: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# फिल्टर: mu_migration/export/user/headers
 
 निर्यात/आयात गरिने प्रयोगकर्ता हेडरहरूको पूर्वनिर्धारित सेटलाई फिल्टर गर्छ।
 

@@ -4,7 +4,7 @@ title: Handling - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Handling: set_logged_in_cookie {#action-setloggedincookie}
+# Handling: set_logged_in_cookie
 
 Udløses umiddelbart før godkendelses-cookien for indloggede sættes.
 

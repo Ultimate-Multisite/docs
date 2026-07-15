@@ -3,7 +3,7 @@ title: डोमेन उत्पादने आणि किंमत
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# डोमेन उत्पादने आणि किंमत निश्चिती {#domain-products-and-pricing}
+# डोमेन उत्पादने आणि किंमत निश्चिती
 
 डोमेन उत्पादने (Domain products) म्हणजे तुम्ही किंमत, TLDs, WHOIS गोपनीयता आणि प्रदाता निवड (provider selection) यावर नियंत्रण कसे ठेवता. प्रत्येक डोमेन उत्पादन हे एक मानक Multisite Ultimate उत्पादन असते, ज्यामध्ये अतिरिक्त **Domain Settings** टॅब जोडलेला असतो.
 

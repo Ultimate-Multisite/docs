@@ -4,7 +4,7 @@ title: Զտիչ - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Ֆիլտր՝ wu_rest_update_item {#filter-wurestupdateitem}
+# Ֆիլտր՝ wu_rest_update_item
 
 Ֆիլտրում է՝ թույլատրվո՞ւմ է շարունակել հարցումը, թե ոչ։
 

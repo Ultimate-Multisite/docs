@@ -4,7 +4,7 @@ title: 过滤器 - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# 过滤器: wu_post_count {#filter-wupostcount}
+# 过滤器: wu_post_count
 
 允许插件开发者更改总计数
 

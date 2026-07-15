@@ -4,7 +4,7 @@ title: Filtras - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filtras: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filtras: wu_bypass_unset_current_user
 
 Leidžia kūrėjams apeiti dabartinio vartotojo unset kodą.
 

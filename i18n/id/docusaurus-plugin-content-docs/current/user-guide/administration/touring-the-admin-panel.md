@@ -3,7 +3,7 @@ title: Menjelajahi Panel Admin
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Menjelajahi Admin Panel {#touring-the-admin-panel}
+# Menjelajahi Admin Panel
 
 Ultimate Multisite bertujuan menjadi sesederhana dan semudah mungkin untuk dipahami, tetapi dengan alat sekuat ini, tur terpandu dapat membantu. Mari kita telusuri halaman admin untuk membantu Anda memahami posisinya.
 

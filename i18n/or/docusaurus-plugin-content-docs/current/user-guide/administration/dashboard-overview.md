@@ -3,7 +3,7 @@ title: ଡ୍ୟାସବୋର୍ ଓଭରଭ୍ୟୁ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ଡ୍ୟାସବୋର୍ଡ୍ ଓଭରଭିୟ Overview {#dashboard-overview}
+# ଡ୍ୟାସବୋର୍ଡ୍ ଓଭରଭିୟ Overview
 
 Ultimate Multisite ମେନୁରେ ଏକ ବି dedicated **Dashboard** ଅଛି, ଏବଂ ଏହା Network Dashboard ରେ widgets ମଧ୍ୟ ଯୋଗ କରେ। ଏହି ଆଇକାର୍ଡରେ ଆପଣ ଦୁଇଟି ସ୍ଥାନରେ କ'ଣ ଦେଖିବେ, ସେଥିପାଇଁ ଆମେ ବର୍ଣ୍ଣନା କରିବା।
 

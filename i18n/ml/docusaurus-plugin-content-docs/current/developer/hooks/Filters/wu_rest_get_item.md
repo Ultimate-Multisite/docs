@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item {#filter-wurestgetitem}
+# Filter: wu_rest_get_item
 
 ഈ റിക്വസ്റ്റ് മുന്നോട്ട് പോകാൻ അനുവാദമുണ്ടോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

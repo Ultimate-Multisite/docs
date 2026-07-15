@@ -4,7 +4,7 @@ title: Veiksmas - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Veiksmas: wu_before_light_ajax {#action-wubeforelightajax}
+# Veiksmas: wu_before_light_ajax
 
 Kai kuriais atvejais mums reikės įkelti papildomų išteklių veiksmams apdoroti.
 

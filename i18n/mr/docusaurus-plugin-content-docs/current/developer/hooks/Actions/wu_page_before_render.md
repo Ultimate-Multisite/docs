@@ -4,7 +4,7 @@ title: क्रिया - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 प्लगइन डेव्हलपर्सना पेज प्रिंट करण्यापूर्वी अतिरिक्त सामग्री जोडण्याची परवानगी देते.
 

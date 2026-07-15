@@ -3,7 +3,7 @@ title: Przegląd Panelu
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Przegląd kokpitu {#dashboard-overview}
+# Przegląd kokpitu
 
 Ultimate Multisite posiada dedykowany **Kokpit** w menu Ultimate Multisite, a także dodaje widżety do Kokpitu sieci. W tym artykule opisujemy, co znajdziesz w obu miejscach.
 

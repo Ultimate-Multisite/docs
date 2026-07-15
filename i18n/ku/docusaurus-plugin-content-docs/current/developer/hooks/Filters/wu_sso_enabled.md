@@ -4,7 +4,7 @@ title: Fîltre - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Parzûn: wu_sso_enabled {#filter-wussoenabled}
+# Parzûn: wu_sso_enabled
 
 Taybetmendiya single-sign-on a navbera domainan çalak/neçalak bike.
 

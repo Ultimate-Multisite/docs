@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Nhật ký thay đổi GoCardless {#gocardless-changelog}
+# Nhật ký thay đổi GoCardless
 
 Version: 1.0.3 - Phát hành vào 2026-05-05
 * Sửa lỗi: Các trang chờ bị bỏ rơi giờ đây sẽ được dọn dẹp khi tài khoản thành viên GoCardless bị hủy trong trạng thái chờ hoặc tạm giữ.

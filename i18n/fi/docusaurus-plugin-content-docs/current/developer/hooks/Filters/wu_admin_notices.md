@@ -4,7 +4,7 @@ title: Suodatin - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Suodatin: wu_admin_notices {#filter-wuadminnotices}
+# Suodatin: wu_admin_notices
 
 Salli kehittäjien suodattaa Ultimate Multisite:n lisäämiä hallintailmoituksia.
 

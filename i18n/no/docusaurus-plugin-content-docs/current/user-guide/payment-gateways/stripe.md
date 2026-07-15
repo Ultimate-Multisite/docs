@@ -3,7 +3,7 @@ title: Sette opp Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Sette opp Stripe-betalingsløsningen (v2) {#setting-up-the-stripe-gateway-v2}
+# Sette opp Stripe-betalingsløsningen (v2)
 
 _**VIKTIG: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
 

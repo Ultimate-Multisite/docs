@@ -4,7 +4,7 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Filter: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Filter: wu_element_maybe_extract_arguments
 
 यह एक सामान्य फ़िल्टर जोड़ता है, जिससे डेवलपर्स इस पार्सर को अन्य बिल्डर्स या प्लगइन्स के साथ काम करने के लिए विस्तारित कर सकते हैं।
 

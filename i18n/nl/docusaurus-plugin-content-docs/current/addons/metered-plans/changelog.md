@@ -3,7 +3,7 @@ title: Wijzigingslogboek voor plannen met verbruiksmeting
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Changelog voor Metered Plans {#metered-plans-changelog}
+# Changelog voor Metered Plans
 
 Versie 1.1.0 - Uitgebracht op 2026-05-05
 - Nieuw: AI-tokenfacturering voor multisite-subsites — houd AI-tokengebruik bij en factureer dit over klantensites heen met configureerbare tarieven per token

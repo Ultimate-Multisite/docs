@@ -3,7 +3,7 @@ title: Clàr-atharrachaidhean VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Log nan atharrachaidhean VAT {#vat-changelog}
+# Log nan atharrachaidhean VAT
 
 Tionndadh 1.0.7 - Air fhoillseachadh air 2026-02-03
 

@@ -4,7 +4,7 @@ title: Isihluzi - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Isihluzi: wu_sso_url {#filter-wussourl}
+# Isihluzi: wu_sso_url
 
 Sihluza ii-URL ze-SSO ezenziweyo ngaphambi kokuba zibuyiselwe kwizenzo zabathengi ezinqumla ii-domain.
 

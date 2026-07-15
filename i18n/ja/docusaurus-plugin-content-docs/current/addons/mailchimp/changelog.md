@@ -3,7 +3,7 @@ title: Mailchimp 変更履歴
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp 変更履歴 {#mailchimp-changelog}
+# Mailchimp 変更履歴
 
 Version: 1.1.1 - リリース日 2025-09-28
 

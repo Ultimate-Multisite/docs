@@ -3,7 +3,7 @@ title: Ndërtues i Përgjigjetës dhe Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Ndërtuesi dhe Sandbox i Pluginit {#plugin-builder--sandbox}
+# Ndërtuesi dhe Sandbox i Pluginit
 
 Gratis AI Agent v1.5.0 prezanton **Sistemin e Ndërtuesit dhe Sandbox-it të Pluginit**, që lejon asistentin AI të krijojë, aktivizojë dhe menaxhojë pluginet WordPress në rrjetin tuaj — gjithçka përmes një mjedisi i sigurt dhe i izoluar sandbox.
 

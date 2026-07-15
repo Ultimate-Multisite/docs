@@ -4,7 +4,7 @@ title: පෙරහන් - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# පෙරහන: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# පෙරහන: wu_get_checkout_variables
 
 ගෙවීම් අවසන් කිරීමේ පිටුවක පෙරසැකසුම් පෙරීමට ප්ලගින සංවර්ධකයන්ට ඉඩ දෙයි.
 

@@ -3,7 +3,7 @@ title: Iniettore di annunci
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Posizionare annunci sulla tua rete con Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Posizionare annunci sulla tua rete con Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector è un **add-on gratuito** che ti fornisce gli strumenti per posizionare annunci sui tuoi piani direttamente dalla loro pagina di modifica.
 

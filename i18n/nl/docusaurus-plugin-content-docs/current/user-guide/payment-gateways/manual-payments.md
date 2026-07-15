@@ -3,7 +3,7 @@ title: Handmatige betalingen instellen
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Handmatige betalingen instellen (v2) {#setting-up-manual-payments-v2}
+# Handmatige betalingen instellen (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

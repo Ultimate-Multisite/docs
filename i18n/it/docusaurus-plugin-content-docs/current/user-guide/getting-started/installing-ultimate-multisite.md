@@ -3,7 +3,7 @@ title: Installazione di Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installazione di Ultimate Multisite {#installing-ultimate-multisite}
+# Installazione di Ultimate Multisite
 
 :::note
 Questo tutorial presuppone che tu abbia già installato e configurato WordPress Multisite. Per scoprire come fare, consulta [questo tutorial](https://www.wpbeginner.com/glossary/multisite/) di WP Beginner.

@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# សកម្មភាព: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# សកម្មភាព: wp_ultimo_captcha_deactivation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងទៀតនៃ plugin ភ្ជាប់ routine របស់ពួកវាសម្រាប់ការបិទដំណើរការ
 

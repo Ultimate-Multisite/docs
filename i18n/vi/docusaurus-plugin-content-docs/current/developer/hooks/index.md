@@ -3,7 +3,7 @@ title: Tài liệu tham khảo về Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tham chiếu Hooks {#hooks-reference}
+# Tham chiếu Hooks
 
 Tài liệu được tạo tự động cho tất cả **59 actions** và **118 filters** trong Ultimate Multisite.
 

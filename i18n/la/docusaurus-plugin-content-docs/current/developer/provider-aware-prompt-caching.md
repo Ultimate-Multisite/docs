@@ -3,7 +3,7 @@ title: Reconditio monitorum provisoris conscia
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Promptorum in Cache Repositio Praebitoris Conscia {#provider-aware-prompt-caching}
+# Promptorum in Cache Repositio Praebitoris Conscia
 
 Superdav AI Agent v1.12.0 introducit **promptorum in cache repositio praebitoris conscia**, quae sumptus API et moram optimat prompta apud diversos LLM praebitores in cache reponendo. Unicuique praebitori diversa sunt machinae et configurationes cache.
 

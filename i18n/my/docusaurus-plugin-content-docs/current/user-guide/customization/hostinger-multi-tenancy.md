@@ -3,7 +3,7 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 မှာ Hostinger multi-tenancy စွမ်းဆောင်ရည်အသစ်တစ်ခု ထည့်သွင်းပေးထားပါတယ်။ ဒါဆိုရင် ရှိပြီးသား Hostinger domain-mapping ပေါင်းစပ်မှုတွေနဲ့အတူ သီးခြား tenant တွေအတွက် လုံခြုံတဲ့ infrastructure တွေကိုလည်း provisioning လုပ်နိုင်မှာ ဖြစ်ပါတယ်။
 

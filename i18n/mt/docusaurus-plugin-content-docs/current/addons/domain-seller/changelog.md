@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet tal-Bejjiegħ tad-Dominji
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Reġistru tal-bidliet ta’ Domain Seller {#domain-seller-changelog}
+# Reġistru tal-bidliet ta’ Domain Seller
 
 Verżjoni 1.3.0 - Rilaxxata fit-2026-06-02
 - Ġdid: Miżjuda twissija tan-network-admin meta l-bilanċ tar-reseller ta’ HostAfrica jinżel wisq

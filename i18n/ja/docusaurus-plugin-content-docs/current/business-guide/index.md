@@ -3,7 +3,7 @@ title: ニッチなウェブサイトビジネスを構築する
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisiteでニッチなウェブサイトビジネスを構築する {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisiteでニッチなウェブサイトビジネスを構築する
 
 ウェブサイト販売を試みるほとんどの人は、WixやSquarespace、何千ものフリーランサーと価格競争を強いられます。そして、その競争では負けてしまいます。勝つ人は、特定のターゲット層（オーディエンス）を選び、その層に合わせたソリューションを構築し、提供する価値に対して対価を請求します。
 

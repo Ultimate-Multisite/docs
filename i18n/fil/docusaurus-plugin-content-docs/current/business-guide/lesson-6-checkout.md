@@ -3,7 +3,7 @@ title: 'Lesson 6: Ang Karanasan sa Pagpaparehistro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: Ang Karanasan sa Pagpaparehistro (The Signup Experience) {#lesson-6-the-signup-experience}
+# Lesson 6: Ang Karanasan sa Pagpaparehistro (The Signup Experience)
 
 Dito sa checkout flow nagiging kita ang interes. Ang magulo o pangkalahatang proseso ng pag-sign up ay nagpapahamak sa mga customer. Ang isang daloy na espesipiko sa isang larangan (niche-specific) na nagsasalita ng kanilang wika at parang walang hirap ay nagko-convert sa kanila.
 

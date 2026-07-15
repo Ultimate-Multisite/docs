@@ -3,7 +3,7 @@ title: Changelog ng Support Tickets
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Pagbabago sa Support Tickets (Changelog) {#support-tickets-changelog}
+# Pagbabago sa Support Tickets (Changelog)
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Pinaganda: Tinanggal ang vendor/ directory sa Git tracking (kasama na rin sa .gitignore), kaya lumiit ang laki ng repository.

@@ -3,7 +3,7 @@ title: Nhật ký thay đổi của Ultimate AI Connector cho WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Nhật ký thay đổi Ultimate AI Connector cho WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Nhật ký thay đổi Ultimate AI Connector cho WebLLM
 
 ## Phiên bản 1.1.0 — Phát hành ngày 2026-04-09 {#version-110--released-on-2026-04-09}
 

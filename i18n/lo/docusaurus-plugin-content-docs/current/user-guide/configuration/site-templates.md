@@ -3,7 +3,7 @@ title: ແມ່ແບບເວັບໄຊທ໌
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**หมายเหตุ: บทความนี้อ้างถึง Ultimate Multisite เวอร์ชัน 2.x หากคุณกำลังใช้เวอร์ชัน 1.x โปรดดูบทความนี้แทน**_
 

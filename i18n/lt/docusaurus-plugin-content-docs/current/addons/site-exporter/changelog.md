@@ -3,7 +3,7 @@ title: Svetainės eksportuotojo pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter pakeitimų žurnalas {#site-exporter-changelog}
+# Site Exporter pakeitimų žurnalas
 
 Versija: 1.0.6 - išleista 2026-05-11
 * Nauja: svetainių eksportai dabar įtraukia savarankiškai paleidžiamą index.php, todėl ZIP galima įdiegti naujame serveryje be atskiro plugin įdiegimo

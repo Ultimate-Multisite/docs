@@ -3,7 +3,7 @@ title: Cerințe
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Cerințe pentru Ultimate Multisite {#ultimate-multisite-requirements}
+# Cerințe pentru Ultimate Multisite
 
 Primul lucru pe care ți-l vei întreba înainte de a achiziționa Ultimate Multisite este care sunt cerințele pentru a rula pluginul nostru. Din fericire, există doar câteva cerințe de bază pentru a rula Ultimate Multisite: un **nume de domeniu**, un **furnizor de găzduire** bun și o instalare WordPress **Multisite**. Asta e tot ce ai nevoie!
 

@@ -3,7 +3,7 @@ title: Closte 'ਤੇ Sunrise Constant ਸੈੱਟ ਕਰਨਾ
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte 'ਤੇ Sunrise constant ਨੂੰ true ਸੈੱਟ ਕਰਨਾ {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte 'ਤੇ Sunrise constant ਨੂੰ true ਸੈੱਟ ਕਰਨਾ
 
 ਕੁਝ host providers ਸੁਰੱਖਿਆ ਕਾਰਨਾਂ ਕਰਕੇ wp-config.php ਨੂੰ ਲੌਕ ਕਰ ਦਿੰਦੇ ਹਨ। ਇਸਦਾ ਮਤਲਬ ਹੈ ਕਿ Ultimate Multisite ਆਪਣੇ ਆਪ ਫਾਈਲ ਨੂੰ ਐਡਿਟ ਕਰਕੇ ਜ਼ਰੂਰੀ constants ਨਹੀਂ ਜੋੜ ਸਕਦਾ ਜੋ domain mapping ਅਤੇ ਹੋਰ ਫੀਚਰਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਲਈ ਚਾਹੀਦੇ ਹਨ। Closte ਅਜਿਹਾ ਹੀ ਇੱਕ host ਹੈ।
 

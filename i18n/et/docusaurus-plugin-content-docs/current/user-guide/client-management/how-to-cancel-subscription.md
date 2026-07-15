@@ -3,7 +3,7 @@ title: Kuidas jäätikku tühistada
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kuidas abonnamenti tühistada? {#how-can-i-cancel-my-subscription}
+# Kuidas abonnamenti tühistada?
 
 Kui teil on Ultimate Multisite lisents, saate tasuta uuenduse tagastada millal tahad. Järgige lihtsalt allpool esitatud sammesti:
 

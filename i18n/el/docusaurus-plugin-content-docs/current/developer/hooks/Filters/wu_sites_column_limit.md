@@ -4,7 +4,7 @@ title: Φίλτρο - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Φίλτρο: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Φίλτρο: wu_sites_column_limit
 
 Φίλτρο για να αλλάξετε την τιμή που επιστρέφεται από τη συνάρτηση `get pluginssites` εντός του δικτύου.
 

@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Ukuhlanganiswa kwe-CyberPanel {#cyberpanel-integration}
+# Ukuhlanganiswa kwe-CyberPanel
 
 Lo mhlahlandlela uchaza indlela yokulungisa ukuhlanganiswa kwe-Ultimate Multisite CyberPanel ukuze izizinda ezimephwe kunethiwekhi yakho zengezwe ngokuzenzakalelayo (futhi zisuswe) njengabasingathi ababonakalayo ku-CyberPanel, ngokuhlinzekwa kwe-auto-SSL kokuzikhethela nge-Let's Encrypt.
 

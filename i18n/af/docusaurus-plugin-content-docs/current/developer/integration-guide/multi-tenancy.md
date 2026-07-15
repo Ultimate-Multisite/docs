@@ -3,7 +3,7 @@ title: Multi-huurderskap-integrasie
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy-integrasie {#multi-tenancy-integration}
+# Multi-Tenancy-integrasie
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 verander verskeie integrasie-raakpunte vir soewereine huurders, migrasieverifikasie en outomatisering van die huurderlewensiklus.
 

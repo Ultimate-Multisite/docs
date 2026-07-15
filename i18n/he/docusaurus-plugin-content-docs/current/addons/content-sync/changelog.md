@@ -3,7 +3,7 @@ title: יומן שינויי סנכרון תוכן
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# יומן שינויים של Content Sync {#content-sync-changelog}
+# יומן שינויים של Content Sync
 
 ### גרסה 1.1.0 - שוחרר ב-2025-12-31 {#version-110---released-on-2025-12-31}
 * חדש: תמיכה בסנכרון של כל סוגי הפוסטים (פוסטים, דפים, סוגי פוסטים מותאמים אישית)

@@ -3,7 +3,7 @@ title: Зареєструвати кінцеву точку API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API-ендпоінт /register в Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API-ендпоінт /register в Ultimate Multisite
 
 У цьому посібнику ви дізнаєтесь, як використовувати API-ендпоінт /register в Ultimate Multisite для створення повного процесу реєстрації нового клієнта у вашій мережі, а також як це зробити за допомогою Zapier.
 

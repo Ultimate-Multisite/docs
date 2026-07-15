@@ -3,7 +3,7 @@ title: Aldatutako informazioa eta problema-reportatzeko sistema
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Mendatutako Informazioa eta Problemaiko Iratsaldeak {#customer-feedback--issue-reporting}
+# Mendatutako Informazioa eta Problemaiko Iratsaldeak
 
 Gratis AI Agent v1.5.0-ek iratsalde bat daude, zein irudi ez duendu informazioa markatzeko eta zuzen arteko problemaiak chat interface-etik direktamente iratsaldean emateko sistema bat hasteraz. Hau sistema berehaldearen erantzunak ez duendu edo problemaak direla iratsaldean emateko prozesua, onarripen gestiona, automatikatu informazioa emateko komanda eta backend-eko AI-lerarekin laguntutako triaje (sortu-erregistro) berehaldeak.
 

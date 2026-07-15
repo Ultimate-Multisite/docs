@@ -3,7 +3,7 @@ title: সাইট এক্সপোর্ট
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export {#site-export}
+# Site Export
 
 **Site Export** admin page-টোৱে network administrator ক এটা site, বা সম্পূৰ্ণ network-ক এটা ডাউনলোড কৰিব পৰা archive ত পেকেজ কৰিবলৈ সহায় কৰে। এই archive-টো migration, backup বা আন কাৰ্যালয়লৈ হস্তান্তৰ কৰাৰ বা ব্যৱহৃত হয়।
 

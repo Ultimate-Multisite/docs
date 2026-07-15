@@ -4,7 +4,7 @@ title: Omume - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Action: wu_domain_renewal_failed
 
 Na-arụ ọrụ mgbe mgbalị imegharị domain dara.
 

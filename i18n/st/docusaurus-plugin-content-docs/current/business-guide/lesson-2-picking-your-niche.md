@@ -3,7 +3,7 @@ title: 'Thuto ea 2: Ho khetha lekala la hau le ikhethang'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Thuto 2: Ho Kgetha Karolo ya Hao e Ikgethileng ya Mmaraka {#lesson-2-picking-your-niche}
+# Thuto 2: Ho Kgetha Karolo ya Hao e Ikgethileng ya Mmaraka
 
 Thutong ya 1 re ile ra tiisa hore karolo e ikgethileng ya mmaraka e hlola kakaretso. Jwale o lokela ho kgetha ya hao. Thuto ena e o fa moralo wa ho fumana le ho netefatsa karolo e ikgethileng ya mmaraka pele o tsetela nako ho e ahela.
 

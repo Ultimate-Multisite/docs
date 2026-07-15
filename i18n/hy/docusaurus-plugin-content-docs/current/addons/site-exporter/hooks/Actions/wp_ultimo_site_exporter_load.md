@@ -4,7 +4,7 @@ title: Գործողություն - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# Գործողություն: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# Գործողություն: wp_ultimo_site_exporter_load
 
 Գործարկվում է, երբ բոլոր կախվածությունները բեռնված են։
 

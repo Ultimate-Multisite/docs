@@ -4,7 +4,7 @@ title: Akcia - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# Akcia: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# Akcia: wp_ultimo_captcha_activation
 
 Umožní iným častiam pluginu pripojiť ich rutiny na aktiváciu
 

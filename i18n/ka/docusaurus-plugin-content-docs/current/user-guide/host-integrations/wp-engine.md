@@ -3,7 +3,7 @@ title: WP Engine ინტეგრაცია
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ინტეგრაცია {#wp-engine-integration}
+# WP Engine ინტეგრაცია
 
 ## მიმოხილვა {#overview}
 WP Engine არის პრემიუმ მართული WordPress ჰოსტინგ პლატფორმა, რომელიც უზრუნველყოფს WordPress საიტებისთვის ოპტიმიზებულ მუშაობას, უსაფრთხოებას და მასშტაბურობას. ეს ინტეგრაცია ივარდებს ავტომატურ დომეინის სინქრონიზაციას Ultimate Multisite-სა და WP Engine-ს შორის.

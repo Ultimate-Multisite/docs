@@ -4,7 +4,7 @@ title: Filtru - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Filtru: retrieve_password_title {#filter-retrievepasswordtitle}
+# Filtru: retrieve_password_title
 
 Jiffiltra s-suġġett tal-email għar-reset tal-password.
 

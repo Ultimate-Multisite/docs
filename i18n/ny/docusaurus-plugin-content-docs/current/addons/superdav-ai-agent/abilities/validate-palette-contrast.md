@@ -3,7 +3,7 @@ title: Tsimikizani Kusiyana kwa Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Tsimikizani Kusiyana kwa Palette {#validate-palette-contrast}
+# Tsimikizani Kusiyana kwa Palette
 
 Luso la **Validate Palette Contrast** limayang'ana awiri a mitundu mu palette ya kapangidwe kanu kuti liwone ngati likutsatira WCAG (Web Content Accessibility Guidelines) musanaliike ku theme yanu.
 

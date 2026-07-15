@@ -4,7 +4,7 @@ title: පෙරහන - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# පෙරහන: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# පෙරහන: wu_enforce_password_rules
 
 අමතර මුරපද නීති බලගන්වන්නේද යන්න පෙරහන් කරයි.
 

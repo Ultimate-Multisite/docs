@@ -3,7 +3,7 @@ title: Material WP Urutonde rw'impinduka
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Amateka y'impinduka ya Material WP {#material-wp-changelog}
+# Amateka y'impinduka ya Material WP
 
 Verisiyo 1.1.15 - 01/26/2026
 * Byanonosowe: Imiterere ya code n'itunganya ryayo;

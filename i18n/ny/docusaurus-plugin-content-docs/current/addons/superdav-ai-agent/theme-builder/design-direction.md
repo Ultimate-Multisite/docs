@@ -3,7 +3,7 @@ title: Malangizo a Kapangidwe
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Malangizo a Kapangidwe {#design-direction}
+# Malangizo a Kapangidwe
 
 Gawo la **Malangizo a Kapangidwe** limakulolani kuwunika, kukonza, ndi kutsiriza kapangidwe ka maonekedwe a theme yanu Theme Builder isanapange theme yonse.
 

@@ -4,7 +4,7 @@ title: Ενέργεια - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Δράση: wu_page_load {#action-wupageload}
+# Δράση: wu_page_load
 
 Επιτρέπει στους developers των plugins να προσθέσουν επιπλέον hooks στις σελίδες μας.
 

@@ -3,7 +3,7 @@ title: Tilvísun fyrir stillingar
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Stillingatilvísun {#settings-reference}
+# Stillingatilvísun
 
 Þessi síða heldur utan um stillingar sem hafa áhrif á daglega stjórnun og nýlegar breytingar á hegðun í Ultimate Multisite.
 

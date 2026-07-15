@@ -3,7 +3,7 @@ title: Dashboardaren erantzun
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboardaren Errazten {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboardaren Errazten
 
 Ultimate Multisite-aren gehi da konfiguerazio opsioak eta Ultimate Multisite-aren operazio aspetuak ez adauzu ditzakei, lehenik, dashboard-aren ikusituzu barru egin dezaten.
 

@@ -3,7 +3,7 @@ title: Webbplatsmallar
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**OBS: Den här artikeln hänvisar till Ultimate Multisite version 2.x. Om du använder version 1.x,**_ **se den här artikeln** _**.**_
 

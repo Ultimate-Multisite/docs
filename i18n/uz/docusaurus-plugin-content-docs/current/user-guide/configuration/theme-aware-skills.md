@@ -3,7 +3,7 @@ title: Tema-ani hisobga olgan ko'nikmalar
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Boshli Ko'nikmalar {#theme-aware-skills}
+# Tema-Boshli Ko'nikmalar
 
 Superdav AI Agent v1.10.0 ning navbatdagi to'rtta yangi tema-boshli ko'nikmal (theme-aware skills) chiqarildi, ular sizning faol WordPress temangizga avtomatik moslashadi. Bu ko'nikmalar temangiz arxitekturasiga va xususiyatlariga moslashtirilgan maxsus yo'riqlar va imkoniyatlarni taqdim etadi.
 

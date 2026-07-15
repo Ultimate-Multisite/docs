@@ -3,7 +3,7 @@ title: 'Lektion 3: Ihr Netzwerk einrichten'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lektion 3: Einrichtung Ihres Netzwerks {#lesson-3-setting-up-your-network}
+# Lektion 3: Einrichtung Ihres Netzwerks
 
 Jetzt geht es ans Bauen. In dieser Lektion installieren Sie Ultimate Multisite und konfigurieren das Fundament des FitSite-Netzwerks. Jede Entscheidung, die Sie hier treffen, wird mit der Fitness-Nische im Hinterkopf getroffen.
 

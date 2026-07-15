@@ -4,7 +4,7 @@ title: ફિલ્ટર - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# ફિલ્ટર: send_auth_cookies {#filter-sendauthcookies}
+# ફિલ્ટર: send_auth_cookies
 
 આ ફિલ્ટર ઓથ કૂકીઝને ખરેખર ક્લાયન્ટને મોકલતા અટકાવવાની મંજૂરી આપે છે.
 

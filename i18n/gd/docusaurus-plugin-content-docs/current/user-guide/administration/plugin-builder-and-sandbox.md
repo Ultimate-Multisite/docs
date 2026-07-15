@@ -3,7 +3,7 @@ title: Buldair Phlagnan agus Sandbòt
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 le sgrann **Plugin Builder & Sandbox System**, a tha le le AI assistant e' sgoine a genaradh, a chlàradh, agus a' leidheachadh WordPress plugins ar eich sianal — a' leidheachadh a' cridheach, a' leidheachadh, agus a' leidheachadh an t-sianblàth (sandbox) a tha safe agus sealltainneachd.
 

@@ -4,7 +4,7 @@ title: Aiki - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Aiki: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Aiki: wu_handle_user_meta_fields
 
 Ba wa masu haɓaka plugin damar adana bayanan user meta ta hanyoyi daban-daban idan suna buƙata.
 

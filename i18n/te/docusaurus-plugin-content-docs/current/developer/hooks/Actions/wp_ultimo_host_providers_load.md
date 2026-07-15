@@ -4,7 +4,7 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Action: wp_ultimo_host_providers_load
 
 wp ప్లగిన్‌ల ద్వారా తమ సొంత హోస్ట్ ప్రొవైడర్ ఇంటిగ్రేషన్‌లను జోడించడానికి డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
 

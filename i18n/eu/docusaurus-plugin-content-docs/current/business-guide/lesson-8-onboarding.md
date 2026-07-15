@@ -3,7 +3,7 @@ title: 'Lehena-lehenaren: Klientela ondo jartzea'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lehen 8: Onboarding Nagusia {#lesson-8-customer-onboarding}
+# Lehen 8: Onboarding Nagusia
 
 Kunde bat inscrepsioa egin da, baina hori jardueraren half-a lailea leku dago. Horrek logiatu du, ez daite iradatzera eta ez daiterren itzalean joaten, hori haserri duzu. Hau eskaera designatzen da erregistro berria aktibo eta inbertsio bat izateko.
 

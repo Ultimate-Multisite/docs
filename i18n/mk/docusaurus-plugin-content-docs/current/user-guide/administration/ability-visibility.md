@@ -3,7 +3,7 @@ title: Способност за видливост
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Видимост способности (Ability Visibility) {#ability-visibility}
+# Видимост способности (Ability Visibility)
 
 Superdav AI Agent v1.12.0 вводи **Ability Visibility** контролите кои управуваат кои поврвици на секоја способност (ability). Ова им овозможува администраторите да ги направат прецизно настроени кои способности на агентите ќе бидат достапни преку REST API, MCP сервери, WooCommerce интеграции и други интерфејси.
 

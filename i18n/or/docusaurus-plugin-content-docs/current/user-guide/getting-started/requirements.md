@@ -3,7 +3,7 @@ title: ବଶତ ପ୍ରାୟୋଗୀତା
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite అవసరాలు {#ultimate-multisite-requirements}
+# Ultimate Multisite అవసరాలు
 
 Ultimate Multisite కొనుగోలు చేసే ముందు మీరు మిమ్మల్ని మీరు అడగదల్చుకునే మొదటి ప్రశ్న ఏమిటంటే, మా ప్లగిన్‌ను రన్ చేయడానికి ఎలాంటి అవసరాలు ఉన్నాయి? సంతోషం చెప్పాలంటే, Ultimate Multisite ను రన్ చేయడానికి కేవలం కొన్ని ప్రాథమిక అవసరాలే ఉన్నాయి: ఒక **도మైన్ పేరు** (domain name), మంచి **హోస్టింగ్ ప్రొవైడర్** మరియు ఒక WordPress **Multisite** ఇన్‌స్టాలేషన్. అంతే! మీకుこれ మాత్రమే కావాలి!
 

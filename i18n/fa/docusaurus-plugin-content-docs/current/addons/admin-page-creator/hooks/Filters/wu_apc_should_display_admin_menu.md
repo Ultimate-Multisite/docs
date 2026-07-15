@@ -4,7 +4,7 @@ title: فیلتر - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# فیلتر: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# فیلتر: wu_apc_should_display_admin_menu
 
 به مدیران اجازه می‌دهد تا در صورتی که فرآیند سفارشی‌سازی را به پایان رسانده‌اند، صفحات منوی پیشخوان را پنهان کنند.
 

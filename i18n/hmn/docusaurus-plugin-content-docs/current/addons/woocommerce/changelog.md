@@ -3,7 +3,7 @@ title: WooCommerce Kev Sib Xyaw Daim Ntawv Teev Kev Hloov Tshiab
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration Daim Ntawv Hloov Tshiab {#woocommerce-integration-changelog}
+# WooCommerce Integration Daim Ntawv Hloov Tshiab
 
 Version 2.2.0 - Tso tawm rau 2026-07-01
 * Tshiab: Cov nyiaj se ntawm Ultimate Multisite tam sim no tshwm ua cov kab nqi WooCommerce cais ntawm checkout, ua rau tag nrho se pom meej dua ua ntej them nyiaj.

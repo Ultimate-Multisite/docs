@@ -3,7 +3,7 @@ title: 匯出與匯入
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# 匯出與匯入 {#export--import}
+# 匯出與匯入
 
 Ultimate Multisite 2.9.0 在 **工具 > 匯出與匯入** 下新增了一個單站 **匯出與匯入** 工具。當您需要將一個 WordPress 網站打包成 ZIP 檔案、還原該 ZIP 檔案，或在相容的 Ultimate Multisite 和單站 WordPress 安裝之間遷移網站時，請使用此工具。
 

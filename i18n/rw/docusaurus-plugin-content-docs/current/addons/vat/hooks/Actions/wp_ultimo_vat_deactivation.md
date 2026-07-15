@@ -4,7 +4,7 @@ title: Igikorwa - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Igikorwa: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Igikorwa: wp_ultimo_vat_deactivation
 
 Emerera ibindi bice by’icomekwamo kongeramo imikorere yabyo yo guhagarika
 

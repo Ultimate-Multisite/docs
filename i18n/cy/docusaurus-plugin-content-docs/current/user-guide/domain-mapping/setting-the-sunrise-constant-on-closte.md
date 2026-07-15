@@ -3,7 +3,7 @@ title: Setio'r Constanta Gorau ar Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Mae'r cyflwyno'r constant Sunrise i'r Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Mae'r cyflwyno'r constant Sunrise i'r Closte
 
 Mae rhai prifau gweithredwyr sy'n roedd yn chynllhau'r wp-config.php am y dyfodol. Mae hyn yn ei fod yn rhyfeddu Ultimate Multisite i redig y ffeil amlwg i gael y constantau hanesyddol a buedau eraill i weithio. Closte yw un o'r prifau hyn.
 

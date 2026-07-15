@@ -3,7 +3,7 @@ title: ตัวอย่างโค้ดขั้นสูง
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ตัวอย่างโค้ดขั้นสูง {#advanced-code-examples}
+# ตัวอย่างโค้ดขั้นสูง
 
 ตัวอย่างเหล่านี้แสดงรูปแบบการผสานรวม (integration patterns) ขั้นสูงกับ Ultimate Multisite
 

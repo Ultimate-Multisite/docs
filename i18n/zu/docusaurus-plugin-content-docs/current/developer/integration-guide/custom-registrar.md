@@ -3,7 +3,7 @@ title: Ukwakha Ukuhlanganiswa Kombhalisi Okwenziwe Ngokwezifiso
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ukwakha Ukuhlanganiswa Kombhalisi Ngokwezifiso {#building-a-custom-registrar-integration}
+# Ukwakha Ukuhlanganiswa Kombhalisi Ngokwezifiso
 
 I-addon ye-Domain Seller isebenzisa iphethini ye-**Integration Registry**. Umbhalisi ngamunye uyikilasi le-PHP elisebenzisa `Domain_Selling_Capability` futhi lizibhalisa nge-action hook ethi `wu_domain_seller_register_capabilities`.
 

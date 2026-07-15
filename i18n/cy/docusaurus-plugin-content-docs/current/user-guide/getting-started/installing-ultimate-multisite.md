@@ -3,7 +3,7 @@ title: Gosod Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Gosod Ultimate Multisite {#installing-ultimate-multisite}
+# Gosod Ultimate Multisite
 
 :::note
 Mae'r cwrs hwn yn tybio bod gennych WordPress Multisite wedi ei osod a'i ffurfweddu eisoes. I ddysgu sut, gwyliwch y cwrs hwn [yma](https://www.wpbeginner.com/glossary/multisite/) gan WP Beginner.

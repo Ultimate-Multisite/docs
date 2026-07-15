@@ -3,7 +3,7 @@ title: Endringslogg for domeneselger
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Changelog {#domain-seller-changelog}
+# Domain Seller Changelog
 
 Versjon 1.3.0 - Utgitt 2026-06-02
 - Nytt: La til en advarsel i network-admin når HostAfrica reseller-saldoen blir for lav

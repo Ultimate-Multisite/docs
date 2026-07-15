@@ -3,7 +3,7 @@ title: 커스텀 게이트웨이 개발
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# 사용자 지정 Gateway 개발 {#custom-gateway-development}
+# 사용자 지정 Gateway 개발
 
 `Base_Gateway` 클래스를 확장하여 사용자 지정 결제 gateway를 만들 수 있습니다.
 

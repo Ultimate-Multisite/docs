@@ -3,7 +3,7 @@ title: Forme za plaćanje
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Forme za plaćanje (Checkout Forms) {#checkout-forms}
+# Forme za plaćanje (Checkout Forms)
 
 Forme za plaćanje su jednostavan i fleksibilan način da eksperimentirate s različitim pristupima kada pokušavate privući nove kupce.
 

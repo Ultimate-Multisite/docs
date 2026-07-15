@@ -3,7 +3,7 @@ title: Quy trình di chuyển chủ quyền
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Quy trình di chuyển chủ quyền (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# Quy trình di chuyển chủ quyền (Sovereign Migration Workflow)
 
 Ultimate Multisite phiên bản 1.2.0 đã thêm các cổng xác minh di chuyển để di chuyển một trang con tiêu chuẩn sang cơ sở hạ tầng khách thuê độc lập (sovereign tenant).
 

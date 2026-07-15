@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# କାର୍ଯ୍ୟ: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# କାର୍ଯ୍ୟ: wu_domain_seller_process_purchase
 
 checkout ସମାପ୍ତ ହେବା ପରେ domain କିଣା ପ୍ରକ୍ରିୟାକରଣ ହେଉଥିବାବେଳେ ଚାଲୁ ହୁଏ।
 

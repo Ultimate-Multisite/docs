@@ -4,7 +4,7 @@ title: පෙරහන - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# ෆිල්ටරය: auth_cookie_expiration {#filter-authcookieexpiration}
+# ෆිල්ටරය: auth_cookie_expiration
 
 සත්‍යාපන cookie කල් ඉකුත් වීමේ කාලපරිච්ඡේදයේ දිග ෆිල්ටර් කරයි.
 

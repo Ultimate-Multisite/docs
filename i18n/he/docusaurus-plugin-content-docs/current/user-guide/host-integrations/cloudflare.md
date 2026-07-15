@@ -3,7 +3,7 @@ title: אינטגרציית Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# שילוב Cloudflare {#cloudflare-integration}
+# שילוב Cloudflare
 
 ## סקירה כללית {#overview}
 Cloudflare היא רשת אספקת תוכן (CDN) וספקית אבטחה מובילה שעוזרת להגן על אתרים ולהאיץ אותם. שילוב זה מאפשר ניהול דומיינים אוטומטי בין Ultimate Multisite לבין Cloudflare, במיוחד עבור התקנות multisite בתת־דומיינים.

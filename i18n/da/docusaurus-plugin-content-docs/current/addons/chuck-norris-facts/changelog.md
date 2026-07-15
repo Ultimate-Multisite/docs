@@ -3,7 +3,7 @@ title: Chuck Norris Fakta ændringshistorik
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Fakta Changelog {#chuck-norris-facts-changelog}
+# Chuck Norris Fakta Changelog
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Tilføjet: Automatisk opdateringsfunktionalitet via Ultimate Multisite update server

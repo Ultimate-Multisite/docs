@@ -3,7 +3,7 @@ title: Samfélag
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Hvernig þú getur sjávarðast í Ultimate Multisite samfélagið {#how-to-join-ultimate-multisite-community}
+# Hvernig þú getur sjávarðast í Ultimate Multisite samfélagið
 
 Ultimate Multisite Community er staður þar sem þú getur tengst öðrum notendum Ultimate Multisite og deila hlutum, upplýsingum og meira. Til að koma í Ultimate Multisite Community skal þú ferðu yfir https://community.ultimatemultisite.com/home.
 

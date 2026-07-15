@@ -4,7 +4,7 @@ title: Isihluzi - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Isihluzi: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Isihluzi: wu_checkout_field_templates
 
 Ii-API zethu zokongeza iitemplate ezintsha zefield ziqhagamshela apha.
 

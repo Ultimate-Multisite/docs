@@ -4,7 +4,7 @@ title: Actio - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Actio: move_site {#action-movesite}
+# Actio: move_site
 
 Excitatur postquam situs ad novum rete motus est.
 

@@ -4,7 +4,7 @@ title: Toiming - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Toiming: wu_domain_created {#action-wudomaincreated}
+# Toiming: wu_domain_created
 
 Käivitub, kui lisatakse uus domeeni kaardistus.
 

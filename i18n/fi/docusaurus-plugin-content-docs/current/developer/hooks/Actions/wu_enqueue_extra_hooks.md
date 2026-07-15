@@ -4,7 +4,7 @@ title: Toiminto - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Toiminto: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Toiminto: wu_enqueue_extra_hooks
 
 Salli plugin-kehittäjien lisätä ylimääräisiä hookeja
 

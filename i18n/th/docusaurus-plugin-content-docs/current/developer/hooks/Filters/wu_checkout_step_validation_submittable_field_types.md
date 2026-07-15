@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_checkout_step_validation_submittable_field_typ
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 อนุญาตให้นักพัฒนาสามารถข้ามการตรวจสอบได้ หากฟิลด์นั้นเป็นแบบที่ส่งข้อมูลอัตโนมัติ (auto-submittable)
 

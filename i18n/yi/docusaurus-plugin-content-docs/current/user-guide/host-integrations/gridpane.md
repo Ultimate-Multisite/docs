@@ -3,7 +3,7 @@ title: GridPane אינטעגראַציע
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane אינטעגראַציע {#gridpane-integration}
+# GridPane אינטעגראַציע
 
 ## איבערבליק {#overview}
 GridPane איז אַ ספּעציאַליזירטער WordPress האָסטינג־קאָנטראָל־פּאַנעל געבויט פֿאַר ערנסטע WordPress פּראָפֿעסיאָנאַלן. די אינטעגראַציע דערמעגלעכט אויטאָמאַטישע דאָמיין־סינקינג און SSL סערטיפיקאַט־פֿאַרוואַלטונג צווישן Ultimate Multisite און GridPane.

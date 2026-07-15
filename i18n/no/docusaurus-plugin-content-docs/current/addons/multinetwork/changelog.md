@@ -3,7 +3,7 @@ title: Multi-nettverks endringslogg
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Endringslogg for Multi-Nettverk {#multi-network-changelog}
+# Endringslogg for Multi-Nettverk
 
 ### 1.3.0 {#130}
 * Nytt: Forhåndsvisning av nettverksmaler — bla gjennom og se nettverksmaler i sanntid før du kjøper.

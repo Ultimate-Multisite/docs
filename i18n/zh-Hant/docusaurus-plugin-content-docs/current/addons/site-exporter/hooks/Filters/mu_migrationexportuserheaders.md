@@ -4,7 +4,7 @@ title: 過濾器 - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# 過濾器：mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# 過濾器：mu_migration/export/user/headers
 
 用來過濾預設的用戶標頭（headers），決定哪些標頭需要被匯出或匯入。
 

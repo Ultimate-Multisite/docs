@@ -4,7 +4,7 @@ title: Hidlydd - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Hidlydd: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Hidlydd: wu_apc_should_display_admin_menu
 
 Caniatáu i weinyddwyr guddio tudalennau’r ddewislen weinyddu, os ydynt wedi gorffen y broses addasu.
 

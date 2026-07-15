@@ -4,7 +4,7 @@ title: ფილტრი - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# ფილტრი: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# ფილტრი: wu_page_get_title_links
 
 საშუალებას აძლევს plugin-ის დეველოპერებს და ჩვენ, დავამატოთ მოქმედების ბმულები ჩვენს რედაქტირების გვერდებზე.
 

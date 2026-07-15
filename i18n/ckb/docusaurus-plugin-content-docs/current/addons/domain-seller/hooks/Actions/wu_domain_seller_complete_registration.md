@@ -4,7 +4,7 @@ title: کردار - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# کردار: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# کردار: wu_domain_seller_complete_registration
 
 کاتێک کارا دەبێت کە پارەدانێک دەگوازرێتەوە بۆ دۆخێک کە دەبێت تۆمارکردنی دۆمەین دەستپێبکات.
 

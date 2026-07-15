@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Ìṣe: wp_ultimo_vat_load {#action-wpultimovatload}
+# Ìṣe: wp_ultimo_vat_load
 
 Ó máa ń ṣiṣẹ́ nígbà tí gbogbo dependencies bá ti kojọpọ̀
 

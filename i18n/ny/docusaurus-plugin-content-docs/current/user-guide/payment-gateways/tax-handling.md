@@ -3,7 +3,7 @@ title: Kasamalidwe ka Msonkho
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Kusamalira Misonkho {#tax-handling}
+# Kusamalira Misonkho
 
 Ultimate Multisite ili ndi module yosonkhanitsira misonkho yomangidwa mu plugin yathu yayikulu, choncho ngati mukufuna kusonkhanitsa misonkho yogulitsa pa mapulani, mapaketi ndi mautumiki anu, mungathe kuchita zimenezi mosavuta popanda kukhazikitsa add-ons iliyonse.
 

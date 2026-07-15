@@ -4,7 +4,7 @@ title: Penapis - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filter: wu_is_development_mode
 
 Membenarkan pembangun plugin untuk menambah ujian tambahan bagi mod pembangunan (development mode).
 

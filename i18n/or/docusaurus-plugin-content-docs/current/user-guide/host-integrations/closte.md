@@ -3,7 +3,7 @@ title: କ୍ଲୋଷ୍ଟ୍ ଇଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration {#closte-integration}
+# Closte Integration
 
 ## Overview {#overview}
 Closte ହେଉଛି Google Cloud infrastructure ଉପରେ ନିର୍ମିତ ଏକ ମ୍ୟାନେଜଡ୍ WordPress hosting platform। ଏହି integration କାରଣ Ultimate Multisite ଏବଂ Closte ମଧ୍ୟରେ automatic domain syncing ଏବଂ SSL certificate management ସୁବିଧା ପ୍ରଦାନ କରିଥାଏ।

@@ -4,7 +4,7 @@ title: Filter - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# 篩選器：wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# 篩選器：wu_checkout_field_types
 
 我們用來新增欄位類型（field types）的 API 會在這裡掛鉤（hook into）。
 

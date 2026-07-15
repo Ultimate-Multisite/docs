@@ -3,7 +3,7 @@ title: Kako prekiniti naročilo
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kako lahko prekinem naročilo? {#how-can-i-cancel-my-subscription}
+# Kako lahko prekinem naročilo?
 
 Če imate licencu Ultimate Multisite, lahko prekinete njen obnovo v kateremkoli času, ki vam izpadne na voljo. Samo sledite tem korakom:
 

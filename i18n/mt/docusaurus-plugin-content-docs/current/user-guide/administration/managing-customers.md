@@ -3,7 +3,7 @@ title: Tal-ġestjoni tal il-klijenti
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Id-Diminish l-Klijenti {#managing-customers}
+# Id-Diminish l-Klijenti
 
 D'pagina **Customers** (Klijenti) torg il lista tal-membri li registrati fil-netwerk tiegħek. Hija torg informazzjoni biex ikun user bżonnijiet bħal ism, addrizz email, l-aħħar logg-in, u link **switch to** (passa għal) li jippoġġeggja li tgħall-logg in tal-subsite tal-user bħala amministratur ta' siti.
 

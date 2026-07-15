@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog {#captcha-changelog}
+# Captcha Changelog
 
 Nooca: 1.5.0 - La sii daayay 2026-05-22
 * Cusub: Xaddide heer oo hard-stop ah — wuxuu tiriyaa GET iyo POST kasta oo ku yaal meelaha captcha lagu ilaaliyay (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) wuxuuna ku jawaabaa HTTP 429, `Retry-After` header, iyo tarpit sleep la random gareeyay (1–5s, si adag ugu xaddidan 15s).

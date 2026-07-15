@@ -4,7 +4,7 @@ title: Kifilta - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme {#filter-authredirectscheme}
+# Filter: auth_redirect_scheme
 
 Hii inafiltera (inabadilisha) mfumo wa kurudisha (redirect) baada ya uthibitishaji (authentication).
 

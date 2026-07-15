@@ -3,7 +3,7 @@ title: विज्ञापन इन्जेक्टर
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# आफ्नो नेटवर्कमा विज्ञापन राख्नुहोस् Ultimate Multisite: Ad Injector मार्फत {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# आफ्नो नेटवर्कमा विज्ञापन राख्नुहोस् Ultimate Multisite: Ad Injector मार्फत
 
 Ultimate Multisite: Ad Injector एउटा **निःशुल्क add-on** हो जसले तपाईंलाई आफ्ना प्लानहरूमा एड्स राख्नका लागि तिनीहरूको एडिट पेजबाटै उपकरण दिन्छ।
 

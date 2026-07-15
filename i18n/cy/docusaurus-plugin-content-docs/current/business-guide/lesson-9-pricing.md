@@ -3,7 +3,7 @@ title: 'Dysgu 9: Prifyniadau ar gyfer profith'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesiwn 9: Prysauidau ar gyfaoedd i gael cyfathrebu {#lesson-9-pricing-for-profit}
+# Lesiwn 9: Prysauidau ar gyfaoedd i gael cyfathrebu
 
 Yn Lesiwn 5, roeddwn ni'n setio prysau cyntaf ar y planau FitSite. Mae'r hyn yn dda, mae angen ni eto gwella'r strategais o prys gyda ffurfau sydd wedi'u llwybr yn cynyddu cyfathrebu, i gynnig cyflwyniadau (upgrades) a i ddifyn y chwarae (churn).
 

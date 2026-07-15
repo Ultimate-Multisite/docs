@@ -3,7 +3,7 @@ title: Installation et configuration du fournisseur
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vendeur de domaines : configuration et configuration des fournisseurs {#domain-seller-setup-and-provider-configuration}
+# Vendeur de domaines : configuration et configuration des fournisseurs
 
 Le module complémentaire Vendeur de domaines est fourni avec un assistant de configuration guidé qui vous accompagne à chaque étape requise. Cette page couvre le déroulement de l’assistant et la manière de configurer ou de reconfigurer les fournisseurs par la suite.
 

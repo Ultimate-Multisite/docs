@@ -4,7 +4,7 @@ title: Omume - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# Omume: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# Omume: wp_ultimo_site_exporter_load
 
 Na-akpalite mgbe ebugoro ihe ndabere niile.
 

@@ -4,7 +4,7 @@ title: פילטר - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0b11e9dd91ab7c817aae511e044f8d33
 ---
-# מסנן: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# מסנן: wp_ultimo_skip_network_active_check
 
 מאפשר למפתחים לעקוף בדיקה זו.
 

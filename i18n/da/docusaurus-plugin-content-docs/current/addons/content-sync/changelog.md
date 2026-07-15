@@ -3,7 +3,7 @@ title: Indholdssynkroniseringsændringer
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Indholdssynkroniseringsændringer {#content-sync-changelog}
+# Indholdssynkroniseringsændringer
 
 ### Version 1.1.0 - Udgivet den 2025-12-31 {#version-110---released-on-2025-12-31}
 * **Nyt:** Understøtter synkronisering af alle posttyper (indlæg, sider, custom post types).

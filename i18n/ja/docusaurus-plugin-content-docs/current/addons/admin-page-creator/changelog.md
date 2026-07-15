@@ -3,7 +3,7 @@ title: Admin Page Creator 変更履歴
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin Page Creator 変更履歴 {#admin-page-creator-changelog}
+# Admin Page Creator 変更履歴
 
 ### バージョン 1.9.0 - リリース日 2026-01-18 {#version-190---released-on-2026-01-18}
 

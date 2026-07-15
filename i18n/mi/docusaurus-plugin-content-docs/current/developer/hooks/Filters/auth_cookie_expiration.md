@@ -4,7 +4,7 @@ title: Tātari - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Tātari: auth_cookie_expiration {#filter-authcookieexpiration}
+# Tātari: auth_cookie_expiration
 
 Ka tātari i te roanga o te wā paunga o te pihikete motuhēhēnga.
 

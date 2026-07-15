@@ -3,7 +3,7 @@ title: Nkwado na Ịgụrụ ihe
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup and Provider Configuration {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Setup and Provider Configuration
 
 Addon Domain Seller kemi na-setup da configuration provider. Addon Domain Seller kemi na-ship na guided setup wizard nke gozie gị ya gbasa ọ bụrụ ọ bụla ihe ị chọrọ. Akụrie a na-akwụ na flow wizard ahụ ma ọ bụ gị ka ị chọrọ configure lebebe ma ọ bụ reconfigure providers n'ụlọ.
 

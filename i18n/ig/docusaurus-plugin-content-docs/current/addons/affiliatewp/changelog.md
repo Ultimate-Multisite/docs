@@ -3,7 +3,7 @@ title: AffiliateWP ndekọ mgbanwe
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Ndekọ mgbanwe AffiliateWP {#affiliatewp-changelog}
+# Ndekọ mgbanwe AffiliateWP
 
 Ụdị: 2.0.1 - E wepụtara na 2025-09-28
 

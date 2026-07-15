@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 ပလပ်အင် developer တွေနဲ့ ကျွန်တော်တို့ကိုယ်တိုင်တို့က ကျွန်တော်တို့ရဲ့ အယ်ဒီတာ စာမျက်နှာတွေမှာ လုပ်ဆောင်ချက် လင့်ခ်တွေ ထည့်နိုင်ဖို့ ခွင့်ပြုပါတယ်။
 

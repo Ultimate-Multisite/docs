@@ -3,7 +3,7 @@ title: Paneļa ievērīts skats
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panorāma uzlabojums (Dashboard Overview) {#dashboard-overview}
+# Panorāma uzlabojums (Dashboard Overview)
 
 Ultimate Multisite ir ar īpašu **Dashboard**, kas atrodas Ultimate Multisite menī, un tas arī pievieno widgetus tīkla panorežam (Network Dashboard). Šajā rakstā apmeklējam to, ko jūs redziet abos vietās.
 

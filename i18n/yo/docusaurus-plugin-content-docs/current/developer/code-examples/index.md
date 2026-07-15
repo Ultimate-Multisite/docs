@@ -3,7 +3,7 @@ title: Àwọn Àpẹẹrẹ Kóòdù To ti Ni Ilọsiwaju
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Àwọn Àpẹẹrẹ Code Tí Ó Gá Jù {#advanced-code-examples}
+# Àwọn Àpẹẹrẹ Code Tí Ó Gá Jù
 
 Àwọn àpẹẹrẹ wọ̀nyí fi àwọn àpẹẹrẹ ìṣepọ̀ tí ó gá jù hàn pẹ̀lú Ultimate Multisite.
 

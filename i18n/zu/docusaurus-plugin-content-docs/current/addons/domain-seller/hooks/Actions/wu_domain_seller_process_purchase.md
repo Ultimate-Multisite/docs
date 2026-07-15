@@ -4,7 +4,7 @@ title: Isenzo - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Isenzo: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Isenzo: wu_domain_seller_process_purchase
 
 Kusebenza lapho ukuthengwa kwe-domain kucutshungulwa ngemva kokuphothulwa kwe-checkout.
 

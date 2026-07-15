@@ -3,7 +3,7 @@ title: 'Chidzidzo 7: Kuchiita Chako'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Chidzidzo 7: Kuchiita Chako {#lesson-7-making-it-yours}
+# Chidzidzo 7: Kuchiita Chako
 
 Vatengi vako havafaniri kumbonzwa sekuti vari kushandisa "imwe WordPress plugin." Vanofanira kunzwa sekuti vari kushandisa FitSite -- chikuva chakavakirwa indasitiri yavo. Chidzidzo ichi chinobata branding, white-labeling, uye kuita kuti chikuva chinzwe sechigadzirwa.
 

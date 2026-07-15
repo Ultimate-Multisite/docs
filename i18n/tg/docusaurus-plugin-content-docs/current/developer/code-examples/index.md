@@ -3,7 +3,7 @@ title: Намунаҳои пешрафтаи код
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Намунаҳои пешрафтаи код {#advanced-code-examples}
+# Намунаҳои пешрафтаи код
 
 Ин намунаҳо қолабҳои пешрафтаи ҳамгироиро бо Ultimate Multisite нишон медиҳанд.
 

@@ -3,7 +3,7 @@ title: Απαιτήσεις
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Απαιτήσεις του Ultimate Multisite {#ultimate-multisite-requirements}
+# Απαιτήσεις του Ultimate Multisite
 
 Το πρώτο πράγμα που πιθανότατα αναρωτιέστε πριν αγοράσετε το Ultimate Multisite είναι ποιες είναι οι απαιτήσεις για να λειτουργήσει το plugin μας. Ευτυχώς, υπάρχουν μόνο λίγες βασικές απαιτήσεις για να τρέξετε το Ultimate Multisite: ένα **όνομα τομέα (domain name)**, έναν καλό **πάροχο φιλοξενίας (hosting)** και μια εγκατάσταση WordPress **Multisite**. Αυτά είναι όλα όσα χρειάζεστε!
 

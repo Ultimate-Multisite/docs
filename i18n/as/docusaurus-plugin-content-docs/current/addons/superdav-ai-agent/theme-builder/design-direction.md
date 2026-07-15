@@ -3,7 +3,7 @@ title: নকশাৰ দিশা
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction (নকশাৰ দিশা) {#design-direction}
+# Design Direction (নকশাৰ দিশা)
 
 **Design Direction** ধাপটোৱে Theme Builder-এ সম্পূৰ্ণ থীমটো সৃষ্টি কৰাৰ আগতে আপোনাৰ থীমৰ ভিজুৱেল ডিজাইন (visual design) এটা পুনৰীক্ষণ কৰিবলৈ, উন্নত কৰিবলৈ আৰু চূড়ান্ত কৰিবলৈ সুযোগ দিয়ে।
 

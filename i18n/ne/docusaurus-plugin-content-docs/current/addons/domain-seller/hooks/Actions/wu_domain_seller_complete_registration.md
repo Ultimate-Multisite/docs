@@ -4,7 +4,7 @@ title: कार्य - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# कार्य: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# कार्य: wu_domain_seller_complete_registration
 
 भुक्तानी यस्तो स्थितिमा परिवर्तन हुँदा चल्छ जसले डोमेन दर्ता सुरु गर्नुपर्छ।
 

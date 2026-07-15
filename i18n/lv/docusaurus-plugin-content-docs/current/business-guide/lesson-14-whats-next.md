@@ -3,7 +3,7 @@ title: '14. nodarbība: Kas tālāk'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Nodarbība 14: Kas tālāk {#lesson-14-what-comes-next}
+# Nodarbība 14: Kas tālāk
 
 Jūs esat no nulles izveidojis nišas tīmekļa vietņu platformu. FitSite darbojas, apkalpo fitnesa studijas un ģenerē atkārtotus ieņēmumus. Šī noslēguma nodarbība aplūko, kur doties tālāk.
 

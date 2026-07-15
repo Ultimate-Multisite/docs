@@ -4,7 +4,7 @@ title: Mahi - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Mahi: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Mahi: wp_ultimo_site_exporter_deactivation
 
 Tukua ētahi atu wāhanga o te mono-mai kia tāpiri i ā rātou tukanga mō te whakaweto.
 

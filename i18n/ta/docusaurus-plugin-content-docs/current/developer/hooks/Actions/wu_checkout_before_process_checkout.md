@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_checkout_before_process_checkout
 sidebar_label: wu_checkout_before_process_checkout
 _i18n_hash: 7d37900d450aaae15aba34a9a2f50ff5
 ---
-# Action: wu_checkout_before_process_checkout {#action-wucheckoutbeforeprocesscheckout}
+# Action: wu_checkout_before_process_checkout
 
 செக்கவுட் செயல்முறைக்கு போவதற்கு முன்.
 

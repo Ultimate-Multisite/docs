@@ -3,7 +3,7 @@ title: An naiscint an t-amach ar fáil ar fáil an chuid de Bhailte Site
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notice Removal Mode Site Builder {#site-builder-mode-removal-notice}
+# Notice Removal Mode Site Builder
 
 **Bhaileadh an Site Builder mode a bhaint ar Superdav AI Agent v1.12.0.** Máthair thuair a bhí ag úsáid de Site Builder mode, is féidir leat a bheith ag teacht (migrate) go **Setup Assistant agent** chun themeanna agus curthaiteas site a dhéanamh.
 

@@ -4,7 +4,7 @@ title: Criathrag - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Criathrag: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Criathrag: wu_checkout_field_types
 
 Bidh na APIs againn airson seòrsaichean ùra de raointean a chur ris a’ ceangal a-steach an seo.
 

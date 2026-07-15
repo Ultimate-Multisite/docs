@@ -4,7 +4,7 @@ title: តម្រង - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# តម្រង៖ mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# តម្រង៖ mu-migration/all_posts/default_args
 
 តម្រងអាគុយម៉ង់លំនាំដើម សម្រាប់សួររកប្រកាសក្នុង​វិធីសាស្ត្រ all_posts។
 

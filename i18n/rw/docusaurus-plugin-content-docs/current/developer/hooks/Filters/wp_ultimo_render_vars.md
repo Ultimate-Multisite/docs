@@ -4,7 +4,7 @@ title: Muyungurura - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Akayunguruzo: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Akayunguruzo: wp_ultimo_render_vars
 
 Yemerera abategura imigereka kongeramo impinduragaciro y’inyongera mu miterere yo kugaragaza ku rwego rusange.
 

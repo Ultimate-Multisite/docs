@@ -3,7 +3,7 @@ title: Inkomba Yamakhono
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Inkomba Yamakhono {#abilities-reference}
+# Inkomba Yamakhono
 
 Amakhono ayizenzo eziyisisekelo i-Gratis AI Agent engazibiza ekufakweni kwakho kwe-WordPress. Ikhono ngalinye liyikilasi le-PHP elibhalisiwe eliveza i-schema ye-JSON — i-agent ifunda le schema ngesikhathi sokusebenza ukuze iqonde ukuthi yimaphi amapharamitha adingekayo nokuthi ikhono libuyisa ini.
 

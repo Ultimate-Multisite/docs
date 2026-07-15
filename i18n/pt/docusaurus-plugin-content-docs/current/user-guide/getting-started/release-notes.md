@@ -3,7 +3,7 @@ title: Notas de Lançamento
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notas de Lançamento {#release-notes}
+# Notas de Lançamento
 
 ## Versão 2.13.0 — Lançada em 05/06/2026 {#version-2130--released-on-2026-06-05}
 

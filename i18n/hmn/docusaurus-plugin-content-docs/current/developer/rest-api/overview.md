@@ -3,7 +3,7 @@ title: REST API Kev Saib Dav
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Phau ntawv siv REST API {#rest-api-reference}
+# Phau ntawv siv REST API
 
 ## Kev teeb tsa hauv paus {#base-configuration}
 

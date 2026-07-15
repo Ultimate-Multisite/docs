@@ -3,7 +3,7 @@ title: Ŝanĝprotokolo de Ultimate AI-Konektilo por Kongruaj Finpunktoj
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector por Kongruaj Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector por Kongruaj Endpoints Changelog
 
 ## Versio 2.0.0 — Eldonita je 2026-04-24 {#version-200--released-on-2026-04-24}
 

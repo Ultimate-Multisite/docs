@@ -3,7 +3,7 @@ title: Zvinyorwa zveVagadziri
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Zvinyorwa zveVagadziri {#developer-documentation}
+# Zvinyorwa zveVagadziri
 
 Gwaro iri rinopa vagadziri zvese zvinodiwa kuti vabatanidze ne, vawedzere, kana kugadzira maaddon eUltimate Multisite. Ultimate Multisite inoshandura network yeWordPress Multisite kuva puratifomu yeWebsite-as-a-Service (WaaS).
 

@@ -3,7 +3,7 @@ title: Modèl Sit
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**NOTE: Sa tèks sa a refere a Ultimate Multisite v2.x. Si ou ap itilize v1.x,**_ **gade tèks sa a.**_
 

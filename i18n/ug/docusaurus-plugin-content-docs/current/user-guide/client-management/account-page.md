@@ -3,7 +3,7 @@ title: مۇشتى ھساب سىچىسى
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# مۆلیکیتِرەکەت بۆ بەکارهێنەرەکان (v2) {#your-clients-account-page-v2}
+# مۆلیکیتِرەکەت بۆ بەکارهێنەرەکان (v2)
 
 _**تێبینی گرنگ: ئەم بابەت Ultimate Multisite 2.x بیری دەدات.**_
 

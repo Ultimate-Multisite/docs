@@ -3,7 +3,7 @@ title: 支持工单更新日志
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Support Tickets 更新日志 {#support-tickets-changelog}
+# Support Tickets 更新日志
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * 改进：从 Git 跟踪中移除了 vendor/ 目录（已由 .gitignore 覆盖），减小仓库大小

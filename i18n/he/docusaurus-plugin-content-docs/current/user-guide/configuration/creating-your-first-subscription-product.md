@@ -3,7 +3,7 @@ title: יצירת מוצר המנוי הראשון שלך
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# יצירת מוצר המינוי הראשון שלך (v2) {#creating-your-first-subscription-product-v2}
+# יצירת מוצר המינוי הראשון שלך (v2)
 
 _**הערה חשובה: מאמר זה מיועד רק למשתמשי Ultimate Multisite בגרסה 2.x. אם אתם משתמשים בגרסה 1.x,**_ **_**ראו מאמר זה**_**.
 

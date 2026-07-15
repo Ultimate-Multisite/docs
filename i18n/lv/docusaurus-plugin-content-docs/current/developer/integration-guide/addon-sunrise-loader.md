@@ -3,7 +3,7 @@ title: Papildinājuma Sunrise faila ielādētājs
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise failu ielādētājs {#addon-sunrise-file-loader}
+# Addon Sunrise failu ielādētājs
 
 Ultimate Multisite 2.8.0 pievieno sunrise paplašinājumu ielādētāju add-on un pielāgotām MU-plugin integrācijām, kurām jādarbojas WordPress sunrise sāknēšanas laikā, nerediģējot ģenerēto `wp-content/sunrise.php` failu.
 

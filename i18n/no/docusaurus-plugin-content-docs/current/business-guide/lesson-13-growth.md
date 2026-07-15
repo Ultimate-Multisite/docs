@@ -3,7 +3,7 @@ title: 'Leksjon 13: Skalering opp'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leksjon 13: Skalere opp {#lesson-13-scaling-up}
+# Leksjon 13: Skalere opp
 
 Du har en fungerende plattform med betalende kunder. Denne leksjonen dekker hvordan du vokser fra en liten drift til en bærekraftig virksomhet – ved å skalere infrastruktur, automatisere drift og øke inntektene per kunde.
 

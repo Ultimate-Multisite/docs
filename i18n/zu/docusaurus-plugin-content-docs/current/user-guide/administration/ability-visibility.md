@@ -3,7 +3,7 @@ title: Ukubonakala Kwekhono
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ukubonakala Kwamakhono {#ability-visibility}
+# Ukubonakala Kwamakhono
 
 Superdav AI Agent v1.12.0 yethula izilawuli ze-**Ukubonakala Kwamakhono** ezilawula ukuthi yimaphi ama-surface aveza ikhono ngalinye. Lokhu kuvumela abaphathi ukuthi balungise ngokunembile ukuthi yimaphi amakhono e-agent atholakala ngama-REST APIs, amaseva e-MCP, ukuhlanganiswa kwe-WooCommerce, nezinye izixhumi.
 

@@ -3,7 +3,7 @@ title: Onye na-ebunye Faịlụ Sunrise Mgbakwunye
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0 na-agbakwunye sunrise extension loader maka add-ons na custom MU-plugin integrations ndị kwesịrị ịrụ ọrụ n'oge WordPress sunrise bootstrapping na-enweghị idezi faịlụ `wp-content/sunrise.php` emepụtara.
 

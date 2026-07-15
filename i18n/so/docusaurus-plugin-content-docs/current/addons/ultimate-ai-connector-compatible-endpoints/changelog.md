@@ -3,7 +3,7 @@ title: Diiwaanka isbeddellada ee Ultimate AI Connector ee Endpoint-yada ku habbo
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector ee Changelog-ka Endpoints La Jaanqaadi Kara {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector ee Changelog-ka Endpoints La Jaanqaadi Kara
 
 ## Version 2.0.0 — La sii daayay 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: ساروقي مائٽريڪشن تصديق
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ WP-CLI جو verification commands شامل آهن جيڪي sovereign tenant migrations لاءِ موجود آهن. ان کي انهن وقت استعمال ڪريو تڏهن ته جڏهن ڪا tenant migration، SSO visit، يا اڪيلو installation توقع مطابق کام نه ڪري رهيو هجي.
 

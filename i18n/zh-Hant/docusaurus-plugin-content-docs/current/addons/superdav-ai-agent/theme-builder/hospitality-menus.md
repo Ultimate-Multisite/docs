@@ -3,7 +3,7 @@ title: 餐飲菜單
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# 餐飲菜單 {#hospitality-menus}
+# 餐飲菜單
 
 **餐飲菜單**功能讓 Theme Builder 能夠直接在您的 WordPress 網站中生成並嵌入結構化的餐飲菜單頁面。
 

@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Fampanana Rakibolana Fandaharam-pifandra an'ny Fandaharam-pifandra amin'ny tambajotra misy anareo amin'ny Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Fampanana Rakibolana Fandaharam-pifandra an'ny Fandaharam-pifandra amin'ny tambajotra misy anareo amin'ny Ultimate Multisite: Ad Injector
 
 Ny Ultimate Multisite: Ad Injector dia **plugin maimaim-poana** izay manome anao ny fitaovana mba hampidirana (place) fampahafantarana (ads) ao amin'ireo plan-nao mivantana avy amin'ny pejy fanovana azy.
 

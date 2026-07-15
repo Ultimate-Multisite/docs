@@ -3,7 +3,7 @@ title: 헤더 도메인 검색
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header 도메인 검색 {#header-domain-search}
+# Header 도메인 검색
 
 Ultimate Multisite checkout 안에서 고객이 사용 가능한 도메인 중에서 선택할 수 있도록, 도메인 검색을 시작하는 작은 Header 양식이 필요할 때 이 설정을 사용하세요.
 

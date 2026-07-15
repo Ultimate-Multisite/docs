@@ -3,7 +3,7 @@ title: 'Thuto ea 8: Ho amohela bareki'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Thuto 8: Ho Amohela Bareki ba Bacha {#lesson-8-customer-onboarding}
+# Thuto 8: Ho Amohela Bareki ba Bacha
 
 Ho etsa hore moreki a ingolise ke halofo feela ea mosebetsi. Haeba ba kena, ba ikutloa ba imetsoe, ebe ha ba sa khutla, u ba lahlehetsoe. Thuto ena e rala boiphihlelo bo fetolang ngoliso e ncha hore e be moreki ea sebetsang le ea amehang.
 

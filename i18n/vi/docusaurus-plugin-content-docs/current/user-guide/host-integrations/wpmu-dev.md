@@ -3,7 +3,7 @@ title: Tích hợp WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Tích hợp WPMU DEV {#wpmu-dev-integration}
+# Tích hợp WPMU DEV
 
 ## Tổng quan {#overview}
 WPMU DEV là một nền tảng WordPress toàn diện cung cấp hosting, plugin và các dịch vụ cho website WordPress. Tính năng tích hợp này cho phép tự động đồng bộ tên miền và quản lý chứng chỉ SSL giữa Ultimate Multisite và hosting WPMU DEV.

@@ -3,7 +3,7 @@ title: થીમ-અવેર સ્કિલ્સ
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills {#theme-aware-skills}
+# Theme-Aware Skills
 
 Superdav AI Agent v1.10.0 માં ચાર નવા theme-aware બિલ્ટ-ઇન સ્કીલ્સ આવે છે જે આપમેળે તમારા active WordPress theme સાથે અનુકૂલન સાધે છે. આ સ્કીલ્સ તમારા theme ના આર્કિટેક્ચર અને ફીચર્સને અનુરૂપ વિશેષ માર્ગદર્શન અને ક્ષમતાઓ પ્રદાન કરે છે.
 

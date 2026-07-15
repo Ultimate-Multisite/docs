@@ -3,7 +3,7 @@ title: Nola Ultimate Multisitea?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Zerbi Ultimate Multisite-aren {#why-ultimate-multisite}
+# Zerbi Ultimate Multisite-aren
 
 Hau aurki daura, gure artikuluan aurkitu zutuz, pluginari zure negozio ideak errealizatzeko aukera izango dela eskatzen duzu. Horrek guztia arau behar duten zehalak iragatik espero dugu.
 

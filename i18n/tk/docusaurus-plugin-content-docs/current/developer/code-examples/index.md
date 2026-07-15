@@ -3,7 +3,7 @@ title: Öňdebaryjy kod mysallary
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Öňdebaryjy kod mysallary {#advanced-code-examples}
+# Öňdebaryjy kod mysallary
 
 Bu mysallar Ultimate Multisite bilen öňdebaryjy integrasiýa nagyşlaryny görkezýär.
 

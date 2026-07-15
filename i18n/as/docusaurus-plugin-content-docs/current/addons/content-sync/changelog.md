@@ -3,7 +3,7 @@ title: Content Sync Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync পৰিৱৰ্তনৰ তালিকা {#content-sync-changelog}
+# Content Sync পৰিৱৰ্তনৰ তালিকা
 
 ### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * নতুন: সকলো পোষ্ট প্ৰকাৰ (posts, pages, custom post types) সিঙ্কিং কৰাৰ সমৰ্থন।

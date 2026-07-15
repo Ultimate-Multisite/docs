@@ -3,7 +3,7 @@ title: '4-nji sapak: Nişa şablonlaryny döretmek'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Sapak 4: Nişa şablonlaryny gurmak {#lesson-4-building-niche-templates}
+# Sapak 4: Nişa şablonlaryny gurmak
 
 Şablonlar siziň nişa gymmatlyk teklibiňiziň özenidir. Hasaba durup, eýýäm fitnes websaýty ýaly görünýän -- sapak tertipleri, tälimçi profilleri we dogry şekilleri bolan -- saýty görýän fitnes studiýasynyň eýesi, boş kanwasy görýäninden has köp galmak ähtimallydyr.
 

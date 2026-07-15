@@ -3,7 +3,7 @@ title: 호스팅 멀티테넌시
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# 호스팅터 멀티테넌시 {#hostinger-multi-tenancy}
+# 호스팅터 멀티테넌시
 
 Ultimate Multisite: Multi-Tenancy 1.2.0은 호스팅된 도메인이 기존의 호스팅터 도메인 매핑 통합과 함께 주권 테넌트 프로비저닝에 참여할 수 있도록 호스팅터 멀티테넌시 기능을 추가했습니다.
 

@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 यह प्लगइन डेवलपर्स और हमें, दोनों को, हमारे एडिट पेजों पर एक्शन लिंक्स जोड़ने की सुविधा देता है।
 

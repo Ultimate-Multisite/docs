@@ -3,7 +3,7 @@ title: Ukwenza Ifomu Lakho Lokubhalisa Ngokwezifiso
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ukwenza ifomu lakho lokubhalisa ngokwezifiso {#customizing-your-registration-form}
+# Ukwenza ifomu lakho lokubhalisa ngokwezifiso
 
 Ukuze wenze inethiwekhi yakho ibukeke ihlukile kuwo wonke amanye ama-SaaS akhiwe ku-WordPress platform, Ultimate Multisite ikuvumela ukuthi wenze amakhasi akho okubhalisa nokungena ngemvume ngokwezifiso ngesici sethu se-**Checkout Forms**.
 

@@ -3,7 +3,7 @@ title: نصب کولو تهUltimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# د Ultimate Multisite نصب کول {#installing-ultimate-multisite}
+# د Ultimate Multisite نصب کول
 
 :::note
 دا لارښود فرض کوي چې تاسو دمخه WordPress Multisite نصب او تنظیم کړی دی. که څنګه یې، پدې [لارښود](https://www.wpbeginner.com/glossary/multisite/) کې وګورئ چې WP Beginner یې خپره کړې ده.

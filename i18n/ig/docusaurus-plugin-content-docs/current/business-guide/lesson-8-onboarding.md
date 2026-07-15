@@ -3,7 +3,7 @@ title: 'Nkuzi 8: Ịnabata ndị ahịa ọhụrụ'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Ihe Ọmụmụ 8: Ịnabata Ndị Ahịa {#lesson-8-customer-onboarding}
+# Ihe Ọmụmụ 8: Ịnabata Ndị Ahịa
 
 Ime ka onye ahịa debanye aha bụ naanị ọkara ọrụ. Ọ bụrụ na ha abanye, nwee mgbagwoju anya, ma ghara ịlaghachi ọzọ, ị tufuo ha. Ihe ọmụmụ a na-emepụta ahụmịhe nke na-eme ka ndebanye aha ọhụrụ ghọọ onye ahịa na-arụsi ọrụ ike ma na-etinye aka.
 

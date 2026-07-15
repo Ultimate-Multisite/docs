@@ -4,7 +4,7 @@ title: פילטער - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# פֿילטער: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# פֿילטער: wu_should_create_domain_record_for_site
 
 פֿילטערט צי Ultimate Multisite זאָל שאַפֿן אַ דאָמיין־רעקאָרד פֿאַר אַ נײַ געשאַפֿענעם פּלאַץ.
 

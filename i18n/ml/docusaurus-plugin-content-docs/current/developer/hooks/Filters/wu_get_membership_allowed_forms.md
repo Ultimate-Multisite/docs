@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filter: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Filter: wu_get_membership_allowed_forms
 
 ഡെവലപ്പർമാർക്ക് ഈ സ്വഭാവം ഒഴിവാക്കാൻ പുതിയ ഫോം സ്ലഗ്‌കൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

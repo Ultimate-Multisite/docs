@@ -3,9 +3,9 @@ title: Шаблон за додаток
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Шаблон за додаток {#addon-template}
+# Шаблон за додаток
 
-{{ADDON_DESCRIPTION}}
+Шаблон за додаток — Ultimate Multisite.
 
 ## Барања {#requirements}
 

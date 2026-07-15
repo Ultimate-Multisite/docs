@@ -3,7 +3,7 @@ title: Tomara Guhertinên Tîketên Piştgiriyê
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Guhertinên Bilêtên Piştgiriyê {#support-tickets-changelog}
+# Guhertinên Bilêtên Piştgiriyê
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Başkirin: Peldanka vendor/ ji şopandina Git hate rakirin (jixwe bi .gitignore ve hatibû girtin), mezinahiya depoyê kêm kir

@@ -3,7 +3,7 @@ title: Arah Desain
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Desain {#design-direction}
+# Arah Desain
 
 Langkah **Arah Desain** ngidini sampeyan mriksa, nyempurnakake, lan ngrampungake desain visual tema sampeyan sadurunge Theme Builder ngasilake tema lengkap.
 

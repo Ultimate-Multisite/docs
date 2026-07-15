@@ -3,14 +3,14 @@ title: Si të instalohet WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Si instaloj WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Si instaloj WordPress Multisite?
 
 WordPress Multisite ju lejon të keni një rrjet që përbën disa faqe në një instalim të vetëm. Kjo është një veçori e integruar, por nuk është aktive për shkak të paracaktuar.
 
 :::tip
 Ultimate Multisite përfshin një **[Multisite Setup Wizard](https://your-documentation-link/multisite-setup-wizard)** të ndërtuar që automatizon gjithë këtë proces. Nëse keni instaluar Ultimate Multisite, ju rekomandojmë të përdorni wizardin në vend që të ndiqni hapat manuale më poshtë.
 
-# Përdorimi i Hook-eve në WordPress {#add-a-trailing-slash-to-wp-admin}
+# Përdorimi i Hook-eve në WordPress
 
 WordPress ju ofron një sistem shumë fleksibël që lejon ndërveprimin e kodit tuaj me funksionalitetet e brendshme të platformës. Kjo bëhet përmes "hook"-eve, të cilat janë pika ku mund të vendosni kodin tuaj për të reaguar në ngjarje specifike që ndodhen gjatë procesit të punës së WordPress-it (si kur një post po shkruhet, kur një formular po dërgohet, etj.).
 

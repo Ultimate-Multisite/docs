@@ -3,7 +3,7 @@ title: Stjórnun betalingar og vöndu skjalanna
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Stjórnun greiðslum og faktu {#managing-payments-and-invoices}
+# Stjórnun greiðslum og faktu
 
 ## Greiðslustillingar {#payment-settings}
 

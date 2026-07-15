@@ -4,7 +4,7 @@ title: फिल्टर - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# फिल्टर: wu_current_set_membership {#filter-wucurrentsetmembership}
+# फिल्टर: wu_current_set_membership
 
 विकासकर्ताहरूलाई पूर्वनिर्धारित व्यवहार परिमार्जन गर्न र हालको सदस्यता फरक तरिकाले सेट गर्न अनुमति दिन्छ।
 

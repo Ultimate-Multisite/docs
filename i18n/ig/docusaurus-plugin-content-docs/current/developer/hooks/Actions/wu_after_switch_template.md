@@ -4,7 +4,7 @@ title: Omume - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Omume: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Omume: wu_after_switch_template
 
 Kwe ka ndị mmepe ngwa mgbakwunye jikọọ ọrụ mgbe onye ọrụ ma ọ bụ onye nchịkwa ukwu gbanwere ndebiri saịtị
 

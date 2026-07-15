@@ -4,7 +4,7 @@ title: कार्य - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Action: wu_checkout_order_created
 
 यह चेकआउट ऑर्डर पूरी तरह से बन जाने के बाद ट्रिगर होता है।
 

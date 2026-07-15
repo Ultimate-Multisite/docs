@@ -3,7 +3,7 @@ title: Тема İntegrasiya Akışı
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0-da guided **Theme Builder onboarding flow** introduces a guided **Tema Builder onboarding flow**, which helps you create a custom block theme during your initial setup. This replaces the legacy Site Builder mode with a more flexible, agent-assisted approach.
 

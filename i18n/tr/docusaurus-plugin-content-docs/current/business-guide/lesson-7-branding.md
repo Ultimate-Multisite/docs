@@ -3,7 +3,7 @@ title: 'Ders 7: Kendin Yapmak'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Ders 7: Kendi Markanız Yapmak {#lesson-7-making-it-yours}
+# Ders 7: Kendi Markanız Yapmak
 
 Müşterilerinizin asla "bir WordPress eklentisi" kullandıklarını hissetmemeleri gerekir. Onlar, kendi sektörleri için yapılmış bir platform olan FitSite'ı kullandıklarını hissetmeliler. Bu derste, markalaştırma, beyaz etiketleme (white-labeling) ve platformu bir ürün gibi hissettirme konularını ele alıyoruz.
 

@@ -3,7 +3,7 @@ title: Visibilidade da Capacidade
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilidade de Habilidade {#ability-visibility}
+# Visibilidade de Habilidade
 
 O Superdav AI Agent v1.12.0 introduz os controles **Visibilidade de Habilidade** que definem quais superfícies expõem cada habilidade. Isso permite que os administradores ajustem com precisão quais capacidades do agente estão disponíveis através de REST APIs, servidores MCP, integrações WooCommerce e outras interfaces.
 

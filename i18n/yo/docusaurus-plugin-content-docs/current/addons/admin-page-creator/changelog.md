@@ -3,7 +3,7 @@ title: Àkọọlẹ̀ àwọn ìyípadà Ẹlẹ́dàá Ojú-iwe Alákóso
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Ẹlẹ́dàá Ojú-iwe Alákóso Àkọọlẹ̀ Àyípadà {#admin-page-creator-changelog}
+# Ẹlẹ́dàá Ojú-iwe Alákóso Àkọọlẹ̀ Àyípadà
 
 ### Ẹya 1.9.0 - Ti tu silẹ ni 2026-01-18 {#version-190---released-on-2026-01-18}
 

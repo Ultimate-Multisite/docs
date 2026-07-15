@@ -4,7 +4,7 @@ title: Filtru - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filtru: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filtru: mu_migration/export/user/data
 
 Jiffiltra s-sett predefinit ta' data tal-utent li għandu jiġi esportat/importat.
 

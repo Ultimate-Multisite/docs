@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite papildinājumi {#ultimate-multisite-addons}
+# Ultimate Multisite papildinājumi
 
 Papildinājumi paplašina Ultimate Multisite ar papildu funkcijām un integrācijām. Lielākā daļa papildinājumu ir maksas, un tos var iegādāties vietnē [ultimatemultisite.com](https://ultimatemultisite.com).
 

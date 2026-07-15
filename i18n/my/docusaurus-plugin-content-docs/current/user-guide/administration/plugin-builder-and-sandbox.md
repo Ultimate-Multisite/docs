@@ -3,7 +3,7 @@ title: ပလပ်အင်တည်ဆောက်သူနှင့် စမ
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 မှာ **Plugin Builder & Sandbox System** ကို မိတ်ဆက်ပေးလိုက်ပါတယ်။ ဒီစနစ်က AI assistant ကို သင့် network ပေါ်မှာ WordPress plugins တွေကို generate လုပ်ပေးဖို့၊ activate လုပ်ပေးဖို့နဲ့ manage လုပ်ပေးဖို့ ခွင့်ပြုပါတယ်။ အားလုံးကိုလည်း ဘေးကင်းပြီး ခွဲခြားထားတဲ့ sandbox ပတ်ဝန်းကျင်တစ်ခုကနေ လုပ်ဆောင်ပေးမှာပါ။
 

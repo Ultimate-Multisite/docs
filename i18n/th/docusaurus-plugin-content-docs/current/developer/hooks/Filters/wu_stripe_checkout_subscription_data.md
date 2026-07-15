@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 ใช้สำหรับกรองข้อมูลการสมัครสมาชิก Stripe สามารถกำหนดค่า URL สำเร็จ (success_url) หรือ URL ยกเลิก (cancel_url) ใหม่ได้
 

@@ -3,7 +3,7 @@ title: የንድፍ ሥርዓት ውበት ክህሎት
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# የንድፍ ሥርዓት ውበት ክህሎት {#design-system-aesthetics-skill}
+# የንድፍ ሥርዓት ውበት ክህሎት
 
 የ**የንድፍ ሥርዓት ውበት ክህሎት (Design System Aesthetics skill)** ማለት የድረ-ገጽዎን የእይታ ማንነት ለማሻሻል የሚረዳ መመሪያ ነው። ይህ ክህሎት በንድፍ ሥርዓትዎ ውስጥ ወጥነት ያለው ውሳኔ እንዲያደርጉ የሚያስችሉ የፊደል አጻጻፍ (typography)፣ የቀለም ስብስብ (color)፣ ክፍተት (spacing) እና እንቅስቃሴ (motion) ቶከኖችን (tokens) ይረዳዎታል።
 

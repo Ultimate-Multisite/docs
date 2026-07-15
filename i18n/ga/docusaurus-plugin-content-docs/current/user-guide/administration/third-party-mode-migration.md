@@ -3,7 +3,7 @@ title: Míseartú na hiontaí treoir
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrátió Modes Tírt-Chuid {#third-party-mode-migration}
+# Migrátió Modes Tírt-Chuid
 
 Múid AI Agent v1.12.0 léiríonn conas a bheith leat ag cur áirítear ar fadhbanna trí-chuid. **Tá mode tírt-chuid ag cur "auto" mar default**, rud a fáil amach le cur áirítear WordPress Abilities API ar WordPress 7.0+ gan fháil ar chuid cúrama.
 

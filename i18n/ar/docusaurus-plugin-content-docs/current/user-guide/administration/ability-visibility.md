@@ -3,7 +3,7 @@ title: رؤية الصلاحية
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# رؤية القدرات (Ability Visibility) {#ability-visibility}
+# رؤية القدرات (Ability Visibility)
 
 يقدم Superdav AI Agent الإصدار v1.12.0 ميزات **رؤية القدرات (Ability Visibility)** التي تتحكم في الواجهات التي تعرض كل قدرة. يتيح هذا للمسؤولين ضبط وتحديد قدرات الوكيل (agent) التي تكون متاحة عبر واجهات REST APIs، وخوادم MCP، وتكاملات WooCommerce، والواجهات الأخرى.
 

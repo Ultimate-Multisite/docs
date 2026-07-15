@@ -3,7 +3,7 @@ title: Зніжэнне плана
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Зніжэнне плана (v2) {#downgrading-a-plan-v2}
+# Зніжэнне плана (v2)
 
 _**ВАЖНАЕ ПРАМІТЕЛЕННЕ: Гэты артыкул адносітся да версіі Ultimate Multisite 2.x.**_
 

@@ -4,7 +4,7 @@ title: Գործողություն - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Գործողություն՝ wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Գործողություն՝ wu_domain_seller_process_purchase
 
 Գործարկվում է, երբ checkout-ի ավարտից հետո դոմենի գնումը մշակվում է։
 

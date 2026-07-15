@@ -3,7 +3,7 @@ title: Loco Translate Mbiri ya zosintha
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Mbiri ya Zosintha ya Loco Translate {#loco-translate-changelog}
+# Mbiri ya Zosintha ya Loco Translate
 
 ### 1.0.1 {#101}
 * Kugwirizana kwabwino ndi mtundu waposachedwa wa Loco Translate

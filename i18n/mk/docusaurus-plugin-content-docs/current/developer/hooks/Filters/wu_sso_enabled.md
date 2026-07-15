@@ -4,7 +4,7 @@ title: Филтер - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Филтер: wu_sso_enabled {#filter-wussoenabled}
+# Филтер: wu_sso_enabled
 
 Овозможете/оневозможете ја можноста за единствена најава меѓу домени.
 

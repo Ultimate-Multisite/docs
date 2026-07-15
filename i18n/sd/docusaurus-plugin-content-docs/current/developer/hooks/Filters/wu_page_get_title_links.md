@@ -4,7 +4,7 @@ title: فلٽر - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# فلٽر: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# فلٽر: wu_page_get_title_links
 
 پلگ اِن ڊولپرن، ۽ پاڻ اسان کي، اسان جي ترميمي صفحن ۾ عمل لنڪس شامل ڪرڻ جي اجازت ڏئي ٿو
 

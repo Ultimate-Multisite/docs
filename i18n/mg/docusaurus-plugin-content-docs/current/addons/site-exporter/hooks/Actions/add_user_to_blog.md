@@ -4,7 +4,7 @@ title: Hetsika - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Hetsika: add_user_to_blog {#action-addusertoblog}
+# Hetsika: add_user_to_blog
 
 Mitranga avy hatrany rehefa ampiana amin’ny tranonkala iray ny mpampiasa iray.
 

@@ -4,7 +4,7 @@ title: Filtre - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Filtre : wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Filtre : wu_captcha_whitelisted
 
 Filtrer si l'utilisateur/la requête actuelle doit être à la liste blanche.
 

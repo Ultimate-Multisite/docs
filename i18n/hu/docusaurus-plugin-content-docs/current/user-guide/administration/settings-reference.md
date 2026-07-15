@@ -3,7 +3,7 @@ title: Beállítási referencia
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Beállítások referenciája {#settings-reference}
+# Beállítások referenciája
 
 Ez az oldal azokat a beállításokat követi, amelyek befolyásolják a napi adminisztrációt és az Ultimate Multisite legutóbbi viselkedésbeli változásait.
 

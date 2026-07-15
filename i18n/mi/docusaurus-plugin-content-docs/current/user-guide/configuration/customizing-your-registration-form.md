@@ -3,7 +3,7 @@ title: Te Whakarite i Tō Puka Rēhita
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Te Whakarite i tō Puka Rehitatanga {#customizing-your-registration-form}
+# Te Whakarite i tō Puka Rehitatanga
 
 Kia motuhake ai te āhua o tō whatunga i ērā atu SaaS katoa i hangaia ki runga i te tūāpapa WordPress, ka āhei a Ultimate Multisite ki te whakarite i ō whārangi rehitatanga me ō whārangi takiuru mā tā mātou āhuatanga **Puka Takiutu**.
 

@@ -3,7 +3,7 @@ title: مدیریت وب‌هوک
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# مدیریت Webhook {#webhook-handling}
+# مدیریت Webhook
 
 نحوه ایجاد Endpointهای Webhook سفارشی برای دریافت رویدادها از سرویس‌های خارجی و همگام‌سازی داده‌ها با Ultimate Multisite.
 

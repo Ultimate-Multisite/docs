@@ -3,7 +3,7 @@ title: Kaŝmemorigado de promptoj konscia pri provizanto
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provizanto-konscia prompt-kaŝmemorigado {#provider-aware-prompt-caching}
+# Provizanto-konscia prompt-kaŝmemorigado
 
 Superdav AI Agent v1.12.0 enkondukas **provizanto-konscian prompt-kaŝmemorigadon**, kiu optimumigas API-kostojn kaj atendotempon per kaŝmemorigado de promptoj tra malsamaj LLM-provizantoj. Ĉiu provizanto havas malsamajn kaŝmemorigajn mekanismojn kaj agordojn.
 

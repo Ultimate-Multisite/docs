@@ -4,7 +4,7 @@ title: Filter - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 डेवलपर्स को आउटपुट को बायपास करने और उसकी जगह कोई नया आउटपुट सेट करने की अनुमति देता है।
 

@@ -4,7 +4,7 @@ title: فلتر - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# عامل التصفية: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# عامل التصفية: wu_get_checkout_variables
 
 يتيح لمطوري الإضافات تصفية الإعدادات المسبقة لصفحة الدفع.
 

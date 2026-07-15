@@ -3,7 +3,7 @@ title: 'Isomo rya 3: Gushyiraho Urusobe Rwawe'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Isomo rya 3: Gushyiraho Urusobe Rwawe {#lesson-3-setting-up-your-network}
+# Isomo rya 3: Gushyiraho Urusobe Rwawe
 
 Igihe cyo kubaka kirageze. Muri iri somo uzashyiraho Ultimate Multisite maze ugene ishingiro ry’urusobe rwa FitSite. Buri cyemezo hano gifatwa hagendewe ku cyiciro cy’imyitozo ngororamubiri.
 

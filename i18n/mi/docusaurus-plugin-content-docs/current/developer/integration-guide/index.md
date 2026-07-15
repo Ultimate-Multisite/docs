@@ -3,7 +3,7 @@ title: Aratohu Tuitui
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Aratohu Whakaurunga {#integration-guide}
+# Aratohu Whakaurunga
 
 Ka kapi i tēnei aratohu ngā tauira whakaurunga noa ki Ultimate Multisite, tae atu ki te tūhono ki ngā ratonga o waho, te hanga i ngā kuwaha utu ritenga, me te whakahaere i ngā webhooks.
 

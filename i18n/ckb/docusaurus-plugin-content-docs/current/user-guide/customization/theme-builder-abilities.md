@@ -3,7 +3,7 @@ title: توانایەکانی Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# تواناکتەکانی Theme Builder: Scaffold و Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# تواناکتەکانی Theme Builder: Scaffold و Activate Block Themes
 
 Superdav AI Agent v1.12.0 دوو تواناکتێکی بەهێز پێشکەش دەکات کە دەتوانیت لە ڕێگەی چاتەوە، theme-ی بلوک تایبەت دروست بکەیت و دامەزرێنیت (deploy) بکەیت.
 

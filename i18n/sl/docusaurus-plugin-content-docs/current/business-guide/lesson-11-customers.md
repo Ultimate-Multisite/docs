@@ -3,7 +3,7 @@ title: 'Lekcija 11: Iskanje strank'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekcija 11: Iskanje strank {#lesson-11-finding-customers}
+# Lekcija 11: Iskanje strank
 
 Odlična platforma brez strank je samo hobi. Ta lekcija obravnava, kako pridobivati stranke v nišni vertikali -- strategije, ki delujejo posebej zato, ker ste osredotočeni na eno panogo.
 

@@ -4,7 +4,7 @@ title: Aksie - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Aksie: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Aksie: wu_page_enqueue_scripts
 
 Ons voeg hier 'n aangepaste aksie by sodat ons 'n plek het om die skripte en style te insluit soos nodig, en om te verseker dat dit net op die regte bladsye gelaai word.
 

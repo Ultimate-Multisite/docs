@@ -3,7 +3,7 @@ title: Recorregut pel panell d’administració
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Recorregut pel panell d’administració {#touring-the-admin-panel}
+# Recorregut pel panell d’administració
 
 Ultimate Multisite pretén ser tan senzill i autoexplicatiu com sigui possible, però amb una eina tan potent pot ajudar tenir un recorregut guiat. Repassem les pàgines d’administració per ajudar-te a situar-te.
 

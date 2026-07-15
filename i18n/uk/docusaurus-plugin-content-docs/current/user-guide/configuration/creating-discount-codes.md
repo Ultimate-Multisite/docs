@@ -3,7 +3,7 @@ title: Створення кодів знижок
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Створення кодів знижок (v2) {#creating-discount-codes-v2}
+# Створення кодів знижок (v2)
 
 _**ВАЖЛИВА ПРИМІТКА: Ця стаття стосується Ultimate Multisite версії 2.x.**_
 

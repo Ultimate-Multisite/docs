@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Tambihan Ultimate Multisite {#ultimate-multisite-addons}
+# Tambihan Ultimate Multisite
 
 Tambihan ngalegaan Ultimate Multisite ku fitur jeung integrasi tambahan. Kalolobaan tambihan téh mayar sarta bisa dibeuli ti [ultimatemultisite.com](https://ultimatemultisite.com).
 

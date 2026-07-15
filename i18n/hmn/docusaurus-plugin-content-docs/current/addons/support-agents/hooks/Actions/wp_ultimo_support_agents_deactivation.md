@@ -4,7 +4,7 @@ title: Kev nqis tes - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Kev ua: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Kev ua: wp_ultimo_support_agents_deactivation
 
 Cia lwm feem ntawm qhov txuas ntxiv txuas lawv cov txheej txheem rau kev tua siv
 

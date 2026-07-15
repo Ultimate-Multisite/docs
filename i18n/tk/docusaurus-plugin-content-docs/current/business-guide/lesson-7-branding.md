@@ -3,7 +3,7 @@ title: 'Sapak 7: Ony özüňizki etmek'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Sapak 7: Ony Özüňize Degişli Etmek {#lesson-7-making-it-yours}
+# Sapak 7: Ony Özüňize Degişli Etmek
 
 Müşderileriňiz hiç haçan "haýsydyr bir WordPress plugin" ulanýandygyny duýmaly däldir. Olar öz pudagy üçin gurlan platforma -- FitSite ulanýandygyny duýmaly. Bu sapak branding, white-labeling we platformany hakyky product ýaly duýdurmak barada.
 

@@ -3,7 +3,7 @@ title: ইমেল ও সম্প্রচার পাঠানো
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ইমেইল এবং Broadcasts পাঠানো (v2) {#sending-emails-and-broadcasts-v2}
+# ইমেইল এবং Broadcasts পাঠানো (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণ 2.x সম্পর্কে।**_
 

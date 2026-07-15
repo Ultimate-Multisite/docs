@@ -4,7 +4,7 @@ title: پاڵێو - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# پاڵێوەر: wu_plan_product_types {#filter-wuplanproducttypes}
+# پاڵێوەر: wu_plan_product_types
 
 جۆرەکانی بەرهەم پاڵێو بکە کە دەبێت وەک پلان مامەڵەیان لەگەڵ بکرێت.
 

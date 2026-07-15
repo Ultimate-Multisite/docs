@@ -3,7 +3,7 @@ title: 網站匯出器變更日誌
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# 網站匯出工具更新日誌 {#site-exporter-changelog}
+# 網站匯出工具更新日誌
 
 Version: 1.0.6 - 發布於 2026-05-11
 * 新增：網站匯出現在會捆綁一個自啟動的 index.php，這樣即使在沒有單獨安裝 plugin 的全新主機上，也可以直接安裝 ZIP 檔案

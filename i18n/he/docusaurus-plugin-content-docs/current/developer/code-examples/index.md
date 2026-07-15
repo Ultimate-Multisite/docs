@@ -3,7 +3,7 @@ title: דוגמאות קוד מתקדמות
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# דוגמאות קוד מתקדמות {#advanced-code-examples}
+# דוגמאות קוד מתקדמות
 
 דוגמאות אלו מדגימות דפוסי אינטגרציה מתקדמים עם Ultimate Multisite.
 

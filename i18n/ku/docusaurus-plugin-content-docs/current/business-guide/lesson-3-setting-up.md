@@ -3,7 +3,7 @@ title: 'Ders 3: Sazkirina tora xwe'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Ders 3: Sazkirina Tora Xwe {#lesson-3-setting-up-your-network}
+# Ders 3: Sazkirina Tora Xwe
 
 Dem hatiye avakirinê. Di vê dersê de tu yê Ultimate Multisite saz bikî û bingeha tora FitSite veavakî. Her biryar li vir bi nîşa fitnessê di hiş de tê dayîn.
 

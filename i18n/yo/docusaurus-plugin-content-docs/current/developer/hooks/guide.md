@@ -3,7 +3,7 @@ title: Ìtọ́nisọ́nà Lílo Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Ìtọ́nisọ́nà Lílo Hooks {#hooks-usage-guide}
+# Ìtọ́nisọ́nà Lílo Hooks
 
 Ultimate Multisite pèsè 200+ action hooks àti 280+ filter hooks. Ojú-ewé yìí bo hooks tí a máa ń lò jù lọ pẹ̀lú àwọn àpẹẹrẹ ìmúlò. Fún ìtọ́kasí tí a dá laifọwọyi tó pé, ṣàwárí àwọn ojú-ewé míràn nínú apá yìí.
 

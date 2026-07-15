@@ -3,7 +3,7 @@ title: أمثلة برمجية متقدمة
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# أمثلة كود متقدمة {#advanced-code-examples}
+# أمثلة كود متقدمة
 
 توضح هذه الأمثلة أنماط تكامل متقدمة مع Ultimate Multisite.
 

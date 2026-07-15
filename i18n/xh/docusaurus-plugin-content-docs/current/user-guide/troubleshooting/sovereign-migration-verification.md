@@ -3,7 +3,7 @@ title: Uqinisekiso lokuFuduswa okuZimeleyo
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Ukuqinisekiswa Kofuduso Oluzimeleyo {#sovereign-migration-verification}
+# Ukuqinisekiswa Kofuduso Oluzimeleyo
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 iquka imiyalelo yokuqinisekisa ye-WP-CLI yofuduso lwabaqeshi abazimeleyo. Yisebenzise xa ufuduso lomqeshi, utyelelo lwe-SSO, okanye ufakelo olwahluliweyo lungaziphathi njengoko kulindelekile.
 

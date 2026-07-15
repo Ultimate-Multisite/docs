@@ -3,7 +3,7 @@ title: ServerPilot एकीकरण
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integration {#serverpilot-integration}
+# ServerPilot Integration
 
 ## अवलोकन {#overview}
 ServerPilot एक क्लाउड सेवा है जो DigitalOcean, Amazon, Google, या किसी अन्य सर्वर प्रदाता पर WordPress और अन्य PHP वेबसाइटों को होस्ट करने के लिए उपयोग की जाती है। यह integration Ultimate Multisite और ServerPilot के बीच automatic domain syncing और SSL certificate प्रबंधन को सक्षम बनाता है।

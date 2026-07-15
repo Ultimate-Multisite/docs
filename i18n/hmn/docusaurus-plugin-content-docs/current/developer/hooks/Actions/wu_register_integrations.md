@@ -4,7 +4,7 @@ title: Kev ua - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Kev ua: wu_register_integrations {#action-wuregisterintegrations}
+# Kev ua: wu_register_integrations
 
 Khiav kom cov kev sib txuas thiaj sau npe tau lawv tus kheej.
 

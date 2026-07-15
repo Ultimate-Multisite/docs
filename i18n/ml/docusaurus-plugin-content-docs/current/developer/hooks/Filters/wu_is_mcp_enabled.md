@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Filter: wu_is_mcp_enabled
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് MCP അഡാപ്റ്ററിന് ഒരു പ്രത്യേക സ്റ്റേറ്റ് (state) നിർബന്ധമാക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

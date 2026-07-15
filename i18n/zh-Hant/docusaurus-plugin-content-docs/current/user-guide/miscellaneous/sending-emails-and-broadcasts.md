@@ -3,7 +3,7 @@ title: 傳送電子郵件和廣播
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# 傳送電子郵件與廣播（v2） {#sending-emails-and-broadcasts-v2}
+# 傳送電子郵件與廣播（v2）
 
 _**重要注意事項：本文指的是 Ultimate Multisite 2.x 版本。**_
 

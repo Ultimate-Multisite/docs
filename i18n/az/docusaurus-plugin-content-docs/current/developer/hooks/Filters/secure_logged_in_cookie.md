@@ -4,7 +4,7 @@ title: Filter - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Filter: secure_logged_in_cookie
 
 Bu filtrləmə, giriş kukisinin yalnız HTTPS protokolu vasitəsilə göndərilməli olub-olmaması məsələsini müəyyən edir.
 

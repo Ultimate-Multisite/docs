@@ -3,7 +3,7 @@ title: Pryddu y cyddefnyddio'r Panel Cwliant
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Gyfeiriau'r Panel Cwilio {#enhance-control-panel-integration}
+# Gyfeiriau'r Panel Cwilio
 
 ## Oglwyddiciel {#overview}
 Enhance yw panel cwrdd modern sy'n rhoi ffyddau mawr i ddefnyddio awtomatig a rheoli gweithredoedd. Mae’r cyfathiad hwn yn sylfaenu gwahanu domenaid a rheoli certysyddion SSL'n awtomatig rhwng Ultimate Multisite a Enhance Control Panel.

@@ -3,7 +3,7 @@ title: Pagpangita sa Domain sa Ulohan
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Gamita kini nga setup kung gusto ka og gamay nga header form nga magsugod og domain search, dayon tugotan ang customer nga mopili gikan sa anaa nga mga domain sulod sa Ultimate Multisite checkout.
 

@@ -3,7 +3,7 @@ title: Tomara guhertinan a Ultimate AI Connector ji bo endpointên lihevhatî
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector ji bo Compatible Endpoints Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector ji bo Compatible Endpoints Changelog
 
 ## Guhertoya 2.0.0 — Di 2026-04-24 de hat berdan {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: Samþætting fjölleigjenda
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy samþætting {#multi-tenancy-integration}
+# Multi-Tenancy samþætting
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 breytir nokkrum samþættingarsnertiflötum fyrir sjálfstæða leigjendur, staðfestingu flutnings og sjálfvirkni lífsferils leigjanda.
 

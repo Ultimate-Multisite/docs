@@ -3,7 +3,7 @@ title: Ändringslogg för Mätbaserade Planer
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Ändringslogg {#metered-plans-changelog}
+# Metered Plans Ändringslogg
 
 Version 1.1.0 - Släppt den 2026-05-05
 - Nytt: AI-token-fakturering för multisite-underplatser — spåra och fakturera användning av AI-tokens över kundsajter med konfigurerbara priser per token

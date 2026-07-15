@@ -3,7 +3,7 @@ title: Zokonda za Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Zokonda za Gratis AI Agent {#gratis-ai-agent-settings}
+# Zokonda za Gratis AI Agent
 
 Tsamba la **Zokonda → Zapamwamba** mu Gratis AI Agent limapereka kasinthidwe ka mulingo wa woyang'anira wa maulumikizidwe a backend. Tsambali limafotokoza kutumiza ndemanga, makiyi a opereka kusaka, kukhazikitsa ntchito yoyendetsedwa ya Superdav, zowongolera za Google Calendar, zokonda za SMS za TextBee, ndi ma feature flags a pa netiweki yonse.
 

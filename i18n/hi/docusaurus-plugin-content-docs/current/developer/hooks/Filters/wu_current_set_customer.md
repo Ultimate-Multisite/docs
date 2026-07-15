@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# फ़िल्टर: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# फ़िल्टर: wu_current_set_customer
 
 डेवलपर्स को डिफ़ॉल्ट व्यवहार को संशोधित करने और वर्तमान ग्राहक को अलग तरह से सेट करने की अनुमति देता है।
 

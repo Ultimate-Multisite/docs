@@ -3,7 +3,7 @@ title: Cholozera cha Maluso
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Buku la Abilities {#abilities-reference}
+# Buku la Abilities
 
 Abilities ndi zochita zazing'ono zomwe Gratis AI Agent ingayitanitse pa WordPress installation yanu. Ability iliyonse ndi PHP class yolembetsedwa yomwe imatulutsa JSON schema — agent imawerenga schema iyi pa runtime kuti imvetse parameter zofunika ndi zomwe ability imabweza.
 

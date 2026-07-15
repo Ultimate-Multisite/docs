@@ -3,7 +3,7 @@ title: Pagdumala sa mga Bayad ug Invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagdumala og Bayad ug Invoice {#managing-payments-and-invoices}
+# Pagdumala og Bayad ug Invoice
 
 ## Mga Setting sa Bayad {#payment-settings}
 

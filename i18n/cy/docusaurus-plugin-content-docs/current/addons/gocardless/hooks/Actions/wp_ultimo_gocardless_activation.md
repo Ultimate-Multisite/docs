@@ -4,7 +4,7 @@ title: Gweithred - wp_ultimo_gocardless_activation
 sidebar_label: wp_ultimo_gocardless_activation
 _i18n_hash: ec51fb8cb0ff13f496e55ad7b4349ef3
 ---
-# Gweithred: wp_ultimo_gocardless_activation {#action-wpultimogocardlessactivation}
+# Gweithred: wp_ultimo_gocardless_activation
 
 Gadewch i rannau eraill o'r ategyn atodi eu harferion ar gyfer actifadu
 

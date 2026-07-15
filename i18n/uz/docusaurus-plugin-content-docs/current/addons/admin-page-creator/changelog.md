@@ -3,7 +3,7 @@ title: Admin Page Creator o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin sahifa yaratuvchisi o‘zgarishlar jurnali {#admin-page-creator-changelog}
+# Admin sahifa yaratuvchisi o‘zgarishlar jurnali
 
 ### Versiya 1.9.0 - 2026-01-18 da chiqarilgan {#version-190---released-on-2026-01-18}
 

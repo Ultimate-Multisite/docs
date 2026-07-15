@@ -4,7 +4,7 @@ title: Radnja - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Akcija: wu_pending_network_published {#action-wupendingnetworkpublished}
+# Akcija: wu_pending_network_published
 
 Pokreće se nakon što je mreža na čekanju objavljena.
 

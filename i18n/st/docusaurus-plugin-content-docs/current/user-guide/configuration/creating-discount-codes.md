@@ -3,7 +3,7 @@ title: Ho hlola sebope la tšhobo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ho Fana Le Codes Le Discount (v2) {#creating-discount-codes-v2}
+# Ho Fana Le Codes Le Discount (v2)
 
 _**LIPOTSE LE KOTSE: Le tsela le tla fana ka sefaka sa Ultimate Multisite 2.x.**_
 

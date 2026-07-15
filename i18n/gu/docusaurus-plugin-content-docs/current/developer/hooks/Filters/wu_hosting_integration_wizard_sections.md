@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_hosting_integration_wizard_sections
 sidebar_label: wu_hosting_integration_wizard_sections
 _i18n_hash: 0fb1bc9682dd6f3004d8ad954e3e9926
 ---
-# Filter: wu_hosting_integration_wizard_sections {#filter-wuhostingintegrationwizardsections}
+# Filter: wu_hosting_integration_wizard_sections
 
 હોસ્ટિંગ ઇન્ટિગ્રેશન સેટઅપ માટેના વિઝાર્ડ વિભાગોને ફિલ્ટર કરે છે.
 

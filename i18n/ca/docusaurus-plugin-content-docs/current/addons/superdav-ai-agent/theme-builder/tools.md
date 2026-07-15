@@ -3,7 +3,7 @@ title: Eines i configuració
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Eines i configuració {#tools-and-configuration}
+# Eines i configuració
 
 Theme Builder utilitza un conjunt d’eines per analitzar, dissenyar i construir el teu lloc WordPress. A la versió 1.16.0, **sd-ai-agent/site-scrape ara és una eina de Tier 1**, cosa que la fa disponible per defecte a Theme Builder. Superdav AI Agent v1.18.0 també introdueix un paquet complementari Advanced distribuït per separat per a fluxos de treball de desenvolupadors de confiança; aquestes eines no formen part del paquet principal de WordPress.org i s’han d’instal·lar i autoritzar per separat.
 

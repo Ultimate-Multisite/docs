@@ -3,7 +3,7 @@ title: Điều phối Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (được giới thiệu trong Gratis AI Agent v1.4.0) là công cụ cốt lõi giúp tạo ra các trang web qua nhiều bước. Khi bạn yêu cầu agent "xây dựng một trang web nhà hàng" hoặc "tạo một portfolio kèm blog", bộ điều phối (orchestrator) sẽ chia mục tiêu tổng thể đó thành một **kế hoạch** có cấu trúc, tìm ra các plugin cần thiết để hoàn thành nó, thực hiện từng bước theo trình tự, theo dõi tiến độ và tự động khắc phục lỗi.
 

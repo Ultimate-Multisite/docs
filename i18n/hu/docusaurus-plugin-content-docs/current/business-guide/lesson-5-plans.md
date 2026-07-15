@@ -3,7 +3,7 @@ title: 'Örnzet 5: Tervezésezed'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5. Bölöm: A Tervcsoportok Tervezése {#lesson-5-designing-your-plans}
+# 5. Bölöm: A Tervcsoportok Tervezése
 
 A tervcsoportjai nem csupán árazási szintek – hanem tükrözik azt, ahogyan a szakterületének ügyfelei ténylegesen működnek. Ebben a bölségeben olyan termékcsoportokat terveznek, amelyek megfelelnek a fitness vállalkozások valódi igényeinek különböző szakaszokban.
 

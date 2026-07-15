@@ -4,7 +4,7 @@ title: عمل - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# کړنه: add_network {#action-addnetwork}
+# کړنه: add_network
 
 وروسته له دې چلېږي چې نوې شبکه ورزیاته شوې وي.
 

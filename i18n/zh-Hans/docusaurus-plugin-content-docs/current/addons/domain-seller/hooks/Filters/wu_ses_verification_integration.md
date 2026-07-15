@@ -4,7 +4,7 @@ title: 过滤器 - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# 过滤器：wu_ses_verification_integration {#filter-wusesverificationintegration}
+# 过滤器：wu_ses_verification_integration
 
 过滤器：允许其他代码提供 SES 集成对象。
 

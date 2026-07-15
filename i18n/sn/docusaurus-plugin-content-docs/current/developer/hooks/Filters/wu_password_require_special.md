@@ -4,7 +4,7 @@ title: Sefa - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Sefa: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Sefa: wu_password_require_special
 
 Sefa kana zvichidikanwa kuda mavara akakosha mumapassword.
 

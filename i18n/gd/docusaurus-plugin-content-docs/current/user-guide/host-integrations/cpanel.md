@@ -3,7 +3,7 @@ title: Cpanel a' chluainn
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# CPanel Integradh {#cpanel-integration}
+# CPanel Integradh
 
 ## Aims {#overview}
 CPanel is am mionn de chùlchnaith (control panel) web hosting a tha thaile gu mòr a' chluichdheachda le fìor-ghnàthach. A' chluichdheach seo a' bheachd a' chluichdheach ùr-fhaisg (domain syncing) beòr-fhaisg (Ultimate Multisite) agus cPanel, a' bheachd a' chluichdheach a' chluichdheach fhaisg (automatic domain syncing). Tha seo a' bheachd a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach a' chluichdheach.

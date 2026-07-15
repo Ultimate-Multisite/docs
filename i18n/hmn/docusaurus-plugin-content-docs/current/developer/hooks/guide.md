@@ -3,7 +3,7 @@ title: Phau ntawv qhia kev siv Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Phau Ntawv Qhia Siv Hooks {#hooks-usage-guide}
+# Phau Ntawv Qhia Siv Hooks
 
 Ultimate Multisite muab 200+ action hooks thiab 280+ filter hooks. Nplooj ntawv no piav txog cov hooks uas siv ntau tshaj nrog cov piv txwv siv tau tiag. Rau daim ntawv siv tham uas tsim tau nws tus kheej tag nrho, mus saib lwm cov nplooj ntawv hauv seem no.
 

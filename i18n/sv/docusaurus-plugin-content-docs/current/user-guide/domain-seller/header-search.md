@@ -3,7 +3,7 @@ title: Domänsökning i sidhuvud
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Sökning efter domän i header {#header-domain-search}
+# Sökning efter domän i header
 
 Använd den här konfigurationen när du vill ha ett litet formulär i headern som startar en domänsökning och sedan låter kunden välja bland tillgängliga domäner inne i Ultimate Multisite checkout.
 

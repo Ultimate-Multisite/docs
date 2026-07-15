@@ -3,7 +3,7 @@ title: Vgrajeni agenti
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Vgrajeni agenti {#built-in-agents}
+# Vgrajeni agenti
 
 Gratis AI Agent v1.9.0 vključuje pet vgrajenih agentov, vsak pa je vnaprej konfiguriran z osredotočenim naborom orodij, prilagojenim sistemskim pozivom in začetnimi predlogi, usklajenimi s pogostimi opravili na tem področju. Preklapljanje med agenti spremeni, kaj lahko pomočnik naredi in kako odgovarja — brez kakršne koli konfiguracije z vaše strani. Superdav AI Agent v1.18.0 lahko tem potekom dela doda orodja, ki upoštevajo urnik, zapise opomnikov, odobritvene prehode in SMS obvestila, ko so povezane integracije konfigurirane.
 

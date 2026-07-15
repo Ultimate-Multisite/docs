@@ -3,7 +3,7 @@ title: Tarihin sauye-sauyen Mai Ƙirƙirar Shafin Admin
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Tarihin Canje-canje na Admin Page Creator {#admin-page-creator-changelog}
+# Tarihin Canje-canje na Admin Page Creator
 
 ### Siga 1.9.0 - An fitar a 2026-01-18 {#version-190---released-on-2026-01-18}
 

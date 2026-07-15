@@ -3,7 +3,7 @@ title: ဒီဇိုင်းစနစ်၏ အလှအပဆိုင်ရ
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics Skill {#design-system-aesthetics-skill}
+# Design System Aesthetics Skill
 
 **Design System Aesthetics skill** ဆိုတာကတော့ သင့်ရဲ့ website ရုပ်ရည်အသွင်ကို ပိုမိုကောင်းမွန်အောင် ပြုပြင်ပေးနိုင်တဲ့ လမ်းညွှန်မှုတစ်ခုပါ။ ဒီစနစ်က သင့်ရဲ့ ဒီဇိုင်းစနစ်ကို ပုံဖော်ပေးတဲ့ စာလုံးပုံစံ (typography)၊ အရောင် (color)၊ နေရာခြားမှု (spacing) နဲ့ လှုပ်ရှားမှု (motion) tokens တွေနဲ့ ပတ်သက်ပြီး တသမတ်ကျတဲ့ ဆုံးဖြတ်ချက်တွေ ချမှတ်နိုင်အောင် ကူညီပေးပါတယ်။
 

@@ -4,7 +4,7 @@ title: Bộ lọc - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 Cho phép các nhà phát triển plugin, và cả chúng ta, thêm các liên kết hành động vào các trang chỉnh sửa của chúng ta.
 

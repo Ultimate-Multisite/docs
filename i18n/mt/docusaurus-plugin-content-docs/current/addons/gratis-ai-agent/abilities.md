@@ -3,7 +3,7 @@ title: Referenza tal-Abilitajiet
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenza tal-Abilitajiet {#abilities-reference}
+# Referenza tal-Abilitajiet
 
 L-abilitajiet huma l-azzjonijiet atomiċi li Gratis AI Agent jista' jsejjaħ fuq l-installazzjoni WordPress tiegħek. Kull abilità hija klassi PHP irreġistrata li tesponi skema JSON — l-aġent jaqra din l-iskema waqt l-eżekuzzjoni biex jifhem liema parametri huma meħtieġa u x'tirritorna l-abilità.
 

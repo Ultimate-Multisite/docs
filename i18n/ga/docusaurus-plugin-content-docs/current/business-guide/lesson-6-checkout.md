@@ -3,7 +3,7 @@ title: 'Ceacht 6: An tEispéireas Clárúcháin'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Ceacht 6: An Taithí Chlárúcháin {#lesson-6-the-signup-experience}
+# Ceacht 6: An Taithí Chlárúcháin
 
 Is é an sreabhadh checkout an áit a n-iompaíonn spéis ina hioncam. Cailleann próiseas clárúcháin mearbhallach nó cineálach custaiméirí. Tiontaíonn sreabhadh atá sonrach don nideoig, a labhraíonn a dteanga agus a bhraitheann gan dua, iad.
 

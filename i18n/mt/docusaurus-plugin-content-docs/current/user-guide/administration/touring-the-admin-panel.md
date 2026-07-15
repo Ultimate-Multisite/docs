@@ -3,7 +3,7 @@ title: Touring il Pannell di Admin
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tour tal-Admin Panel {#touring-the-admin-panel}
+# Tour tal-Admin Panel
 
 L-Ultimate Multisite ir intentat tkun biex ikun sabiex semplici u self-explanatory kif forfass, iżda ma għandek tool dan puissant, jista' jgħinak li tkun għandek tour guidat. Niddir l-pass fuq l-pajni amministrattivi biex nġiegħlek b'mod li tikkunsidixx.
 

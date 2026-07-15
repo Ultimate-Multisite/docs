@@ -3,7 +3,7 @@ title: Izolacja wielodostępna
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolacja wielodostępna (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Izolacja wielodostępna (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 wspiera izolację baz danych i systemu plików na poziomie poddomen dla suwerennych najemców. Dzięki temu dane najemcy pozostają oddzielne, zachowując jednocześnie zarządzanie siecią, fakturowanie i administrację.
 

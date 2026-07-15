@@ -3,7 +3,7 @@ title: Whakaawe Mode Pāramatanga Tuarua
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Whakaeke i te Mode Pāramatanga Tuarua (Third-Party Mode Migration) {#third-party-mode-migration}
+# Whakaeke i te Mode Pāramatanga Tuarua (Third-Party Mode Migration)
 
 Te Superdav AI Agent v1.12.0 mārie i te mea e whakahaa i te whakamahi o ngā āhua atu (third-party abilities). **Ko te mode pāramatanga tuarua (third-party mode) e whakaatanga ana ki "auto" (tūmā), e tino whaihi ana ki te whaiaro API Abilities o WordPress 7.0+ i runga i a WordPress, i roto i te waenganui o te whakamahi manu. **
 

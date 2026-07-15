@@ -3,7 +3,7 @@ title: Hostinger (hPanel) İntegrasiyası
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) İntegrasiyası {#hostinger-hpanel-integration}
+# Hostinger (hPanel) İntegrasiyası
 
 ## Ümumi Baxış {#overview}
 

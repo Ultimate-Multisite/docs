@@ -3,7 +3,7 @@ title: Competenza nelle Specifiche del Sito
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill di Specificazione del Sito {#site-specification-skill}
+# Skill di Specificazione del Sito
 
 La **skill di Specificazione del Sito** è un approccio strutturato per catturare gli obiettivi, il pubblico e l'identità del brand del tuo sito. Queste informazioni vengono memorizzate nella tua memoria **site_brief**, che gli agenti consultano durante le sessioni per fornire assistenza coerente e contestualizzata.
 

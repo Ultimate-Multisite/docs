@@ -3,7 +3,7 @@ title: Isalathiso seZicwangciso
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Isalathiso Seesetingi {#settings-reference}
+# Isalathiso Seesetingi
 
 Eli phepha lilandelela iisetingi ezichaphazela ulawulo lwemihla ngemihla kunye notshintsho lwamva nje lokuziphatha kwi-Ultimate Multisite.
 

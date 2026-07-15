@@ -4,7 +4,7 @@ title: फिल्टर - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# फिल्टर: wu_rest_get_items {#filter-wurestgetitems}
+# फिल्टर: wu_rest_get_items
 
 अनुरोधसँग अघि बढ्न अनुमति छ कि छैन भनेर फिल्टर गर्छ।
 

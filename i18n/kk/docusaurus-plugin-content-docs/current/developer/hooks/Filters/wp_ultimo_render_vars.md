@@ -4,7 +4,7 @@ title: Сүзгі - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Сүзгі: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Сүзгі: wp_ultimo_render_vars
 
 Plugin әзірлеушілеріне render контекстіне жаһандық түрде қосымша айнымалы қосуға мүмкіндік береді.
 

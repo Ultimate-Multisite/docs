@@ -3,7 +3,7 @@ title: Gösterge Paneli Genel Bakış
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Kontrol Paneli Genel Bakış {#dashboard-overview}
+# Kontrol Paneli Genel Bakış
 
 Ultimate Multisite, kendi menüsü altında özel bir **Kontrol Paneli** sunar ve ayrıca Ağ Kontrol Paneli'ne widget'lar ekler. Bu makalede her iki yerde de neler göreceğinizi ele alıyoruz.
 

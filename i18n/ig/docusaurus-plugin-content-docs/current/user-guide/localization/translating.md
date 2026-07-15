@@ -3,7 +3,7 @@ title: Maka Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Chú Gốc Ultimate Multisite {#translating-ultimate-multisite}
+# Chú Gốc Ultimate Multisite
 
 Ultimate Multisite được phát triển bằng tiếng Anh, nhưng plugin này hoàn toàn có thể dịch và chúng tôi nhiệt liệt chào đón những đóng góp dịch thuật của bạn.
 

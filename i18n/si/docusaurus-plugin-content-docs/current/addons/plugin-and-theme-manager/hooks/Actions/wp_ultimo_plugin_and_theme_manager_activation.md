@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# ක්‍රියාව: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# ක්‍රියාව: wp_ultimo_plugin_and_theme_manager_activation
 
 plugin හි වෙනත් කොටස්වලට සක්‍රීයකරණය සඳහා තම ක්‍රමවේද අමුණන්න ඉඩ දෙන්න
 

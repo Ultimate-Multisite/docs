@@ -3,7 +3,7 @@ title: Automatické vyhledání a nahrazení v šablonách webů
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatické vyhledávání a nahrazování v šablonách webů (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatické vyhledávání a nahrazování v šablonách webů (v2)
 
 _**Tento návod vyžaduje WP UItimo verze 2.x.**_
 

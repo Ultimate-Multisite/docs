@@ -21,7 +21,7 @@ title: >-
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Zochimbe za Domain ndi Mphamvu (Domain Products and Pricing) {#domain-products-and-pricing}
+# Zochimbe za Domain ndi Mphamvu (Domain Products and Pricing)
 
 Zochimbe za domain ndi njira yomwe muliwo mwayi wopereka mphamvu, TLDs (Top-Level Domains), WHOIS privacy, ndikukumbutsa wopereka. Kukhala kukhali chidzi cha Domain product ndi Domain Multisite Ultimate standard ndi chidzi chokhazikika cha **Domain Settings**.
 

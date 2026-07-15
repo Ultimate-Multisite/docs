@@ -3,7 +3,7 @@ title: Магија за поставување на мултисайт
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Магија за Поставување на Multisite {#multisite-setup-wizard}
+# Магија за Поставување на Multisite
 
 Ultimate Multisite вклучува вграден wizard кој автоматски го претвора стандардниот инсталација на WordPress во мрежа (Multisite) WordPress. Ова е како да ја избегнете потребата од ручно уредување на `wp-config.php` или извршување команди за базата на податоци.
 

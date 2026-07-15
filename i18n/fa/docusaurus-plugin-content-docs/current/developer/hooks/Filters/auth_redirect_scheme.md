@@ -4,7 +4,7 @@ title: فیلتر - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# فیلتر: auth_redirect_scheme {#filter-authredirectscheme}
+# فیلتر: auth_redirect_scheme
 
 این فیلتر، طرح ریدایرکت احراز هویت را تغییر می‌دهد.
 

@@ -3,7 +3,7 @@ title: Саҳифаи ҳисоби муштариён
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Саҳифаи ҳисоби муштабиатон (v2) {#your-clients-account-page-v2}
+# Саҳифаи ҳисоби муштабиатон (v2)
 
 _**Эътибори муҳим: Ин мақола ба Ultimate Multisite версияи 2.x меруушад.**_
 

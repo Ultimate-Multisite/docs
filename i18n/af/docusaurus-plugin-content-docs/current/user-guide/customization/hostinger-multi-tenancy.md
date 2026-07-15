@@ -3,7 +3,7 @@ title: Hostinger Meertalige Huur
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voeg 'n Hostinger multi-tenancy vermoë te by wat gehoste domeine kan deelne aan soewereine huurderprovisioning saam met die bestaande Hostinger domain-mapping integrasie.
 

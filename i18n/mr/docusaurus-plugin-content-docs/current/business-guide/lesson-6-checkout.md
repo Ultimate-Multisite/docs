@@ -3,7 +3,7 @@ title: 'धडा ६: नोंदणी अनुभव'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: The Signup Experience {#lesson-6-the-signup-experience}
+# Lesson 6: The Signup Experience
 
 चेकआउट फ्लो (checkout flow) हे ठिकाण आहे जिथे केवळ रुची (interest) महसुलात (revenue) बदलते. जर साइनअप प्रक्रिया गोंधळात टाकणारी किंवा सामान्य असेल, तर ग्राहक दूर जातात. जी प्रक्रिया विशिष्ट क्षेत्रासाठी (niche-specific) बनवलेली असेल आणि जी त्यांच्या भाषेत बोलावी व सहज वाटली पाहिजे, ती ग्राहक रूपांतरित (convert) करते.
 

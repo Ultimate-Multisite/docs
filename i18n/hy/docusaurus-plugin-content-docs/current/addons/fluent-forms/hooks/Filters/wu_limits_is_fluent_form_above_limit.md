@@ -4,7 +4,7 @@ title: Զտիչ - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 Ստուգում է՝ արդյոք տվյալ ձևի տեսակը թույլատրված է այս պլանում։ Թույլ է տալիս plugin մշակողներին զտել վերադարձվող արժեքը
 

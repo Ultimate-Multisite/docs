@@ -3,7 +3,7 @@ title: Әзірлеуші құжаттамасы
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Әзірлеуші құжаттамасы {#developer-documentation}
+# Әзірлеуші құжаттамасы
 
 Бұл нұсқаулық әзірлеушілерге Ultimate Multisite-пен интеграциялану, оны кеңейту немесе оған арналған қосымшалар әзірлеу үшін қажеттінің бәрін береді. Ultimate Multisite WordPress Multisite желісін Website-as-a-Service (WaaS) платформасына айналдырады.
 

@@ -3,7 +3,7 @@ title: WPMU DEV 통합
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV 통합 {#wpmu-dev-integration}
+# WPMU DEV 통합
 
 ## 개요 {#overview}
 WPMU DEV는 WordPress 사이트를 위한 호스팅, 플러그인 및 서비스를 제공하는 종합 WordPress 플랫폼입니다. 이 통합은 Ultimate Multisite와 WPMU DEV 호스팅 간에 자동 도메인 동기화 및 SSL 인증서 관리를 가능하게 합니다.

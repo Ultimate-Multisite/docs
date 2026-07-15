@@ -4,7 +4,7 @@ title: Ekintza - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Ekintza: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Ekintza: wp_ultimo_site_exporter_deactivation
 
 Utzi pluginaren beste zati batzuei desaktibaziorako beren errutinak eransten.
 

@@ -3,7 +3,7 @@ title: Flujo de incorporación del constructor de temas
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flujo de Incorporación del Constructor de Temas {#theme-builder-onboarding-flow}
+# Flujo de Incorporación del Constructor de Temas
 
 Superdav AI Agent v1.12.0 presenta un **flujo de incorporación guiado del Constructor de Temas** que te ayuda a crear un tema de bloques personalizado durante tu configuración inicial. Esto reemplaza el modo Site Builder heredado por un enfoque más flexible y asistido por agentes.
 

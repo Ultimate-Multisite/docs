@@ -3,7 +3,7 @@ title: Index mutationum Exportatoris Situs
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Commentarius Mutationum Site Exporter {#site-exporter-changelog}
+# Commentarius Mutationum Site Exporter
 
 Versio: 1.0.6 - Edita die 2026-05-11
 * Novum: Exportationes situs nunc includunt index.php sponte initium capiens, ut ZIP in hospite novo institui possit sine separata institutione plugin

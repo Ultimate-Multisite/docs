@@ -3,7 +3,7 @@ title: Ultimate AI Connector 兼容端点更新日志
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector 兼容端点更新日志 {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector 兼容端点更新日志
 
 ## Version 2.0.0 — 发布于 2026-04-24 {#version-200--released-on-2026-04-24}
 

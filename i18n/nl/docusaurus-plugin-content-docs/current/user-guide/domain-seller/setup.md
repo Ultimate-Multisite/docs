@@ -3,7 +3,7 @@ title: Installatie en providerconfiguratie
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: installatie en providerconfiguratie {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: installatie en providerconfiguratie
 
 De Domain Seller addon wordt geleverd met een begeleide installatiewizard die je door elke vereiste stap leidt. Deze pagina behandelt de wizard-flow en hoe je providers daarna configureert of opnieuw configureert.
 

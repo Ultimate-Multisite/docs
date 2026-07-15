@@ -3,7 +3,7 @@ title: Exportar sitio
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportación do Sitio {#site-export}
+# Exportación do Sitio
 
 A páxina de administración **Site Export** permite aos administradores da rede empaquetar un sitio, ou toda a rede, nunha xunta descargable para migración, copia de seguridad ou traballo de traspaso.
 

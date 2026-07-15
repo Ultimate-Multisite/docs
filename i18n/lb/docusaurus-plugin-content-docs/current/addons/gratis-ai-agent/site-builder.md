@@ -3,7 +3,7 @@ title: Säite-Builder-Orchestratioun v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestratioun v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestratioun v2
 
 Site Builder Orchestratioun v2 (agefouert am Gratis AI Agent v1.4.0) ass d'Engine, déi d'Erstelle vu Websäiten a méi Schrëtt udréit. Wann Dir den Agent freet, eng "Restaurant-Websäit ze bauen" oder "e Portfolio mat engem Blog ze erstellen", deelt den Orchestrator dat iwwergeuerdent Zil an e strukturéierte **Plang** op, fënnt déi Plugins, déi néideg sinn, fir en ëmzesetzen, féiert all Schrëtt der Rei no aus, verfollegt de Fortschrëtt a recuperéiert autonom vu Feeler.
 

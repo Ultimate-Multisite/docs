@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 11: Wíwá Àwọn Oníbàárà'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Ẹ̀kọ́ 11: Wíwá àwọn Oníbàárà {#lesson-11-finding-customers}
+# Ẹ̀kọ́ 11: Wíwá àwọn Oníbàárà
 
 Platform tó dára tí kò ní oníbàárà jẹ́ eré ìfẹ́ lásán. Ẹ̀kọ́ yìí ṣàlàyé bí a ṣe ń gba oníbàárà ní niche vertical kan -- àwọn ọ̀nà tí ń ṣiṣẹ́ ní pàtàkì nítorí pé o dojú kọ industry kan ṣoṣo.
 

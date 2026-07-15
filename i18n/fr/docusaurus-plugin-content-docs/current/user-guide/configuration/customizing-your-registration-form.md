@@ -3,7 +3,7 @@ title: Personnaliser votre formulaire d’inscription
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personnaliser votre formulaire d’inscription {#customizing-your-registration-form}
+# Personnaliser votre formulaire d’inscription
 
 Pour donner à votre réseau une apparence unique par rapport à tous les autres SaaS construits sur la plateforme WordPress, Ultimate Multisite vous permet de personnaliser vos pages d’inscription et de connexion avec notre fonctionnalité **Checkout Forms**.
 

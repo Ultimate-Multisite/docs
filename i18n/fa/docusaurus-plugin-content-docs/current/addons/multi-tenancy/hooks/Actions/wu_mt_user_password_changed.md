@@ -4,7 +4,7 @@ title: عمل - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Action: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Action: wu_mt_user_password_changed
 
 این Action زمانی فعال می‌شود که رمز عبور یک کاربر تغییر کند.
 

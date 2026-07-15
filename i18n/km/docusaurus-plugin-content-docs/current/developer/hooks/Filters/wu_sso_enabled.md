@@ -4,7 +4,7 @@ title: តម្រង - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# តម្រង: wu_sso_enabled {#filter-wussoenabled}
+# តម្រង: wu_sso_enabled
 
 បើក/បិទ សមត្ថភាព single-sign-on ឆ្លងដែន។
 

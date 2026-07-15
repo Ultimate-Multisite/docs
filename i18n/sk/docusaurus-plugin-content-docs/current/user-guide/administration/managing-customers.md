@@ -3,7 +3,7 @@ title: Správa zákazníkov
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Správa zákazníkov {#managing-customers}
+# Správa zákazníkov
 
 Stránka **Customers** zobrazuje zoznam členov zaregistrovaných v vašej sieti. Táto stránka zobrazuje základnú informáciu o používateľovi vrátane mena, e-mailovej adresy, posledného prihlásenia a odkaz **pre prejsť na** (switch to), ktorý vám umožní prihlásiť sa do podsité používateľa ako správca siete.
 

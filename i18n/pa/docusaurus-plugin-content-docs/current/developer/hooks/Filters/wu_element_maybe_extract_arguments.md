@@ -4,7 +4,7 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Filter: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Filter: wu_element_maybe_extract_arguments
 
 ਇਹ ਇੱਕ ਜਨਰਿਕ (generic) filter ਜੋ developers ਨੂੰ ਇਸ parser ਨੂੰ ਹੋਰ builders ਜਾਂ plugins ਨਾਲ ਕੰਮ ਕਰਨ ਲਈ ਵਧਾਉਣ (extend) ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 

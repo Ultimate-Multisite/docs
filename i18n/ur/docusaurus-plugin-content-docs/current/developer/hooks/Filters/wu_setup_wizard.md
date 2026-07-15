@@ -4,7 +4,7 @@ title: فلٹر - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard {#filter-wusetupwizard}
+# Filter: wu_setup_wizard
 
 ڈویلپرز کو اضافی سیٹ اپ ویزرڈ کے مراحل شامل کرنے کی اجازت دیتا ہے۔
 

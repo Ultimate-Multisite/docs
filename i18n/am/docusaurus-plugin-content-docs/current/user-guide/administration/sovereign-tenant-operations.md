@@ -3,7 +3,7 @@ title: የሉዓላዊ ተከራካሪ ኦፕሬሽኖች
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# souverain Tenant Operations {#sovereign-tenant-operations}
+# souverain Tenant Operations
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 souverain tenants (subsites) အတွက် လုပ်ငန်းလည်ပတ်မှုဆိုင်ရာ ကိရိယာအသစ်တွေ ထည့်သွင်းပေးထားပါတယ် - ဒါတွေဟာ သူတို့ကိုယ်ပိုင် database၊ filesystem root နဲ့ routing context တွေနဲ့ လည်ပတ်နေပေမယ့် network admin ဆီကနေ မြင်နိုင်စွမ်း ရှိတဲ့ subsites တွေ ဖြစ်ပါတယ်။
 

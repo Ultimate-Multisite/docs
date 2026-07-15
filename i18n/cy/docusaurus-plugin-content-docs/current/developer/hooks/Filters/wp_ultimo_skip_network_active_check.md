@@ -4,7 +4,7 @@ title: Hidlydd - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# Hidlydd: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Hidlydd: wp_ultimo_skip_network_active_check
 
 Caniatáu i ddatblygwyr dorri'r gwiriad hwn yn fyr.
 

@@ -4,7 +4,7 @@ title: Veiksmas - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Veiksmas: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Veiksmas: wp_ultimo_vat_deactivation
 
 Leiskite kitoms plugin dalims prijungti savo deaktyvavimo procedūras
 

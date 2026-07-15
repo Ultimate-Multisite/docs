@@ -3,7 +3,7 @@ title: Ein Nischen-Website-Geschäft aufbauen
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ein Nischen-Website-Geschäft mit Ultimate Multisite aufbauen {#build-a-niche-website-business-with-ultimate-multisite}
+# Ein Nischen-Website-Geschäft mit Ultimate Multisite aufbauen
 
 Die meisten Leute, die versuchen, Websites zu verkaufen, konkurrieren beim Preis mit Wix, Squarespace und Tausenden von Freelancern. Und sie verlieren. Diejenigen, die gewinnen, wählen ein spezifisches Publikum, bauen eine Lösung, die auf dieses Publikum zugeschnitten ist, und verlangen dafür einen Preis, der dem Wert entspricht, den sie liefern.
 

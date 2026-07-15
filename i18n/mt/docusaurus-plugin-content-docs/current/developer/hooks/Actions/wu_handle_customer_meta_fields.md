@@ -4,7 +4,7 @@ title: Azzjoni - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Azzjoni: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Azzjoni: wu_handle_customer_meta_fields
 
 Ippermetti lill-iżviluppaturi tal-plugins isalvaw meta data b'modi differenti jekk ikollhom bżonn.
 

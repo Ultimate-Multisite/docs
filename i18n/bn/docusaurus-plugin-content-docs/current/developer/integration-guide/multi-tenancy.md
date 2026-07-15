@@ -3,7 +3,7 @@ title: মাল্টি-টেন্যান্সি সমন্বয়
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ইন্টিগ্রেশন {#multi-tenancy-integration}
+# Multi-Tenancy ইন্টিগ্রেশন
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 সার্বভৌম টেন্যান্ট, মাইগ্রেশন যাচাই এবং টেন্যান্ট লাইফসাইকেল অটোমেশনের জন্য কয়েকটি ইন্টিগ্রেশন টাচপয়েন্ট পরিবর্তন করে।
 

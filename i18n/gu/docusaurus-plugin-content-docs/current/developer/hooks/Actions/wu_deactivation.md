@@ -4,7 +4,7 @@ title: ક્રિયા - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 પ્લગઇનનાં અન્ય ભાગોને નિષ્ક્રિય (deactivate) કરવા માટે તેમની રૂટિન જોડવા દે છે.
 

@@ -4,7 +4,7 @@ title: 필터 - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# 필터: wu_admin_notices {#filter-wuadminnotices}
+# 필터: wu_admin_notices
 
 개발자가 Ultimate Multisite에서 추가한 관리자 알림을 필터링할 수 있게 합니다.
 

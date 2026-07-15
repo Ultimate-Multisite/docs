@@ -3,7 +3,7 @@ title: Suverēni īrēju darbības
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operācijas {#sovereign-tenant-operations}
+# Sovereign Tenant Operācijas
 
 Ultimate Multisite 1.2.0 pievieno operacionālu rīku soverēniem īrniekiem: subsitēm, kas darbojas ar savu datubāzu, faila sistēmas galvu un routingu kontekstu, palīdzot to palikt redzami tīkla administratoram.
 

@@ -3,7 +3,7 @@ title: Registrujte se putem Zapiera
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Registracija naloga putem Zapier-a {#event-register-an-account-via-zapier}
+# Event: Registracija naloga putem Zapier-a
 
 U članku [Integracija Ultimate Multisite sa Zapierom](zapier.md), razgovarali smo o tome kako koristiti Zapier za obavljanje različitih akcija unutar Ultimate Multisite na osnovu trigger-a i događaja. U ovom članku ćemo pokazati kako možete integrisati aplikacije treće strane. Koristićemo Google Sheets kao izvor podataka i šaljemo informacije u Ultimate Multisite da se registruje nalog.
 

@@ -4,7 +4,7 @@ title: Filtry - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtr: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtr: wu_plan_product_types
 
 Filtr, który określa, które typy produktów powinny być traktowane jako plany.
 

@@ -3,7 +3,7 @@ title: Hestia Control Panel İntegrasiyası
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel İntegrasiyası {#hestia-control-panel-integration}
+# Hestia Control Panel İntegrasiyası
 
 Bu bələdçi, Ultimate Multisite Hestia inteqrasiyasını necə quracağınızı və beləliklə, şəbəkənizdəki xəritələnmiş domenlərin Hestia-da Web Domain Aliasları kimi avtomatik əlavə edilməsini (və silinməsini) izah edir.
 

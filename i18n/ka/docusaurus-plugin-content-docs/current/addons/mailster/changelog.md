@@ -3,7 +3,7 @@ title: Mailster-ის ცვლილებების ჟურნალი
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster ცვლილებების ჟურნალი {#mailster-changelog}
+# Mailster ცვლილებების ჟურნალი
 
 ### 1.0.0 {#100}
 * საწყისი გამოშვება

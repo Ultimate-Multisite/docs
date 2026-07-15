@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Waraka za Ultimate Multisite {#ultimate-multisite-documentation}
+# Waraka za Ultimate Multisite
 
 Karibu kwenye waraka za Ultimate Multisite. Ultimate Multisite inabadilisha WordPress Multisite kuwa jukwaa kamili la Website as a Service (WaaS).
 
@@ -18,7 +18,7 @@ Kila kitu unachohitaji kusanidi, kuweka mipangilio, na kusimamia jukwaa lako la 
 
 Rejeleo la kiufundi kwa watengenezaji wanaojenga kwa kutumia Ultimate Multisite. Inajumuisha marejeo ya hooks, waraka wa REST API, na mwongozo wa kutengeneza addons.
 
-### [Addons](/addons) {#addons}
+### [Viongezeo](/addons) {#addons}
 
 Waraka kwa plugins za addons zenye malipo ambazo zinapanua Ultimate Multisite kwa sifa za ziada kama vile kuunganisha na WooCommerce, analytics, uuzaji wa nyanja za tovuti, na mengine mengi.
 

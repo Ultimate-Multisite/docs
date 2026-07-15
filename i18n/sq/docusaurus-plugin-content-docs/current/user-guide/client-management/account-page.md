@@ -3,7 +3,7 @@ title: Paguna e Llogarisë së Klientit
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Faqja e Llogarisë së Klientit (v2) {#your-clients-account-page-v2}
+# Faqja e Llogarisë së Klientit (v2)
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 

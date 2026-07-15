@@ -3,7 +3,7 @@ title: Automatikus keresés és csere a webhelysablonokban
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatikus keresés és csere a webhely-sablonokban (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatikus keresés és csere a webhely-sablonokban (v2)
 
 _**Ehhez az útmutatóhoz WP UItimo 2.x verzió szükséges.**_
 

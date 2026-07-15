@@ -3,7 +3,7 @@ title: Покращення інтеграції панелі керування
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Інтеграція з Enhance Control Panel {#enhance-control-panel-integration}
+# Інтеграція з Enhance Control Panel
 
 ## Огляд {#overview}
 Enhance — це сучасна панель керування, яка надає потужні можливості для автоматизації хостингу та управління серверами. Ця інтеграція забезпечує автоматичну синхронізацію доменів та керування SSL-сертифікатами між Ultimate Multisite та Enhance Control Panel.

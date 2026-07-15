@@ -4,7 +4,7 @@ title: Fîltre - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Parzûn: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# Parzûn: wu_checkout_calculate_prorate_credits
 
 Destûr dide pêşxistînerên plugin ku bi nirxa krediyê re destwerdan bikin.
 

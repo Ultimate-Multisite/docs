@@ -4,7 +4,7 @@ title: Радња - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Акција: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Акција: wu_page_enqueue_scripts
 
 Додаје се прилагођена акција овде како бисмо имали место за учитавање скрипти и стилова по потреби\ и осигурали да се учитавају само на одговарајућим страницама
 

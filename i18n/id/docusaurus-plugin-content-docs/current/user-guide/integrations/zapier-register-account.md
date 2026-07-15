@@ -3,7 +3,7 @@ title: Daftarkan Account melalui Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Peristiwa: Mendaftarkan Account melalui Zapier {#event-register-an-account-via-zapier}
+# Peristiwa: Mendaftarkan Account melalui Zapier
 
 Dalam artikel [Mengintegrasikan Ultimate Multisite dengan Zapier](zapier.md), kita membahas cara menggunakan Zapier untuk melakukan berbagai tindakan di dalam Ultimate Multisite berdasarkan pemicu dan peristiwa. Dalam artikel ini, kami akan menunjukkan bagaimana Anda dapat mengintegrasikan aplikasi pihak ketiga. Kami akan menggunakan Google Sheets sebagai sumber data dan mengirimkan informasi ke Ultimate Multisite untuk mendaftarkan Account.
 

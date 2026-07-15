@@ -3,7 +3,7 @@ title: Valstijų sąrašas
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Krautų sąrašo reiškių saupėjimai Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Krautų sąrašo reiškių saupėjimai Ultimate Multisite
 
 Valdojimo išskirta sąrašas šalių, kurias pasirinkate dropdown'e, yra surinktas alfabetiniu būdu pagal jūsų šalies pavadinimų anglų variantus. Tai gali reikšti, kad kartais jūsų įmonės ir/arba daugelių jūsų klientų namų šalys yra sukurta didelio šalų pavadinimų sąraše viduje.
 

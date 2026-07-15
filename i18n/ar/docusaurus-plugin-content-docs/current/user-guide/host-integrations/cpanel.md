@@ -3,7 +3,7 @@ title: تكامل cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# تكامل cPanel {#cpanel-integration}
+# تكامل cPanel
 
 ## نظرة عامة {#overview}
 

@@ -3,7 +3,7 @@ title: 'Lição 5: Projetando Seus Planos'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lição 5: Criando Seus Planos {#lesson-5-designing-your-plans}
+# Lição 5: Criando Seus Planos
 
 Seus níveis de planos não são apenas níveis de preço — eles são um reflexo de como seus clientes de nicho realmente operam. Nesta lição, você irá criar níveis de produtos que correspondam às necessidades reais de negócios de fitness em diferentes estágios.
 

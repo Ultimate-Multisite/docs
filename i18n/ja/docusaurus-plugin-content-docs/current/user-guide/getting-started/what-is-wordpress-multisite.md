@@ -3,7 +3,7 @@ title: ''
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress マルチサイトとは何ですか？ {#what-is-wordpress-multisite}
+# WordPress マルチサイトとは何ですか？
 
 WordPress のコアには、'Multisite' と呼ばれる機能があり、2010 年に WordPress 3.0 がリリースされた際にその起源が追跡されます。その後、機能追加とセキュリティ強化を目的とした数多くの改訂が行われました。
 

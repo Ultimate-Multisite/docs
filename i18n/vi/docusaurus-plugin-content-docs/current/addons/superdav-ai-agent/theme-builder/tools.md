@@ -3,7 +3,7 @@ title: Công cụ và Cấu hình
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Công cụ và Cấu hình {#tools-and-configuration}
+# Công cụ và Cấu hình
 
 Theme Builder sử dụng một bộ công cụ để phân tích, thiết kế và xây dựng site WordPress của bạn. Trong phiên bản 1.16.0, **sd-ai-agent/site-scrape hiện là công cụ Tier 1**, khiến nó có sẵn theo mặc định trong Theme Builder. Superdav AI Agent v1.18.0 cũng giới thiệu một gói đồng hành Advanced được phân phối riêng cho các quy trình làm việc của nhà phát triển đáng tin cậy; các công cụ đó không phải là một phần của gói lõi WordPress.org và phải được cài đặt cũng như uỷ quyền riêng.
 

@@ -3,7 +3,7 @@ title: Ho lula le moetsi o tla fana ka ho tsamaea
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration e Mode Third-Party {#third-party-mode-migration}
+# Migration e Mode Third-Party
 
 Superdav AI Agent v1.12.0 di changa se le fihla (third-party) abilities e a tlhogo. **Mode third-party e nna le auto**, e e tlhogo WordPress 7.0+ ho fetoga, e e tlhogo API ya Abilities ya WordPress ho feta ho le fa le tlhogo.
 

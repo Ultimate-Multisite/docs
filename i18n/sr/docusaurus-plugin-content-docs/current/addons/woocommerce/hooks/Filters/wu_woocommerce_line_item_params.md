@@ -4,7 +4,7 @@ title: Филтер - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Филтер: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Филтер: wu_woocommerce_line_item_params
 
 Филтрира параметре који се користе за креирање ставки реда у WooCommerce корпи, пре преусмеравања клијента на WooCommerce checkout.
 

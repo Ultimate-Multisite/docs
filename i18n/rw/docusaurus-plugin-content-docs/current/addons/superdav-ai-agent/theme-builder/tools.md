@@ -3,7 +3,7 @@ title: Ibikoresho n'Iboneza
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ibikoresho n’Igenamiterere {#tools-and-configuration}
+# Ibikoresho n’Igenamiterere
 
 Theme Builder ikoresha urutonde rw’ibikoresho mu gusesengura, gutegura, no kubaka urubuga rwawe rwa WordPress. Muri verisiyo 1.16.0, **sd-ai-agent/site-scrape ubu ni igikoresho cya Tier 1**, bigatuma kiboneka ku buryo busanzwe muri Theme Builder. Superdav AI Agent v1.18.0 inatangiza package y’inyongera Advanced itangwa ukwajiye, igenewe imikorere y’abatekinisiye bizewe; ibyo bikoresho ntabwo biri muri package y’ibanze ya WordPress.org kandi bigomba gushyirwamo no kwemererwa ukwabyo.
 

@@ -3,7 +3,7 @@ title: Mailchimp ପରିବର୍ତ୍ତନ ଲଗ୍
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp ପରିବର୍ତ୍ତନ ତାଲିକା {#mailchimp-changelog}
+# Mailchimp ପରିବର୍ତ୍ତନ ତାଲିକା
 
 ସଂସ୍କରଣ: 1.1.1 - 2025-09-28 ରେ ମୁକ୍ତିଲାଭ
 

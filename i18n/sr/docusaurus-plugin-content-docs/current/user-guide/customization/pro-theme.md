@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Prilagoovanje Vašeg Admin Panela sa PRO Temom {#customizing-your-admin-panel-with-pro-theme}
+# Prilagoovanje Vašeg Admin Panela sa PRO Temom
 
 Često kada radimo za klijente, dobijamo potrebu da im pružimo prilagođeno iskustvo u admin dashboard-u WordPressa. Ako tražite profesionalniji izgled i osećaj, PRO Theme vam može pomoći.
 

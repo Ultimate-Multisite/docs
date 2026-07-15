@@ -3,7 +3,7 @@ title: Wíwọlé sí Ojú-ìwé Account
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Báwo ni mo ṣe lè wọlé sí ojú-ewé Account mi fún ìgbà àkọ́kọ́? {#how-can-i-access-my-account-page-for-the-first-time}
+# Báwo ni mo ṣe lè wọlé sí ojú-ewé Account mi fún ìgbà àkọ́kọ́?
 
 Káàbọ̀ sí Ultimate Multisite!
 

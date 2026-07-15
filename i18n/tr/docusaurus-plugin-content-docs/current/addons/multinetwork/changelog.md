@@ -3,7 +3,7 @@ title: Çoklu Ağ Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Çok Ağ Değişiklik Günlüğü {#multi-network-changelog}
+# Çok Ağ Değişiklik Günlüğü
 
 ### 1.3.0 {#130}
 * Yeni: Ağ şablon önizleyicisi — satın almadan önce ağ şablonlarını canlı bir panelde göz atıp önizleyebilme.

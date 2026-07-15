@@ -4,7 +4,7 @@ title: Ago - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Ago: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Ago: wp_ultimo_site_exporter_deactivation
 
 Lasu aliajn partojn de la plugin alkroĉi siajn rutinojn por malaktivigo.
 

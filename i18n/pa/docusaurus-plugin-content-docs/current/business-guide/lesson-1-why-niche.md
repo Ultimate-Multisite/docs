@@ -3,7 +3,7 @@ title: 'ਪਾਠ ੧: ਨਿਸ਼ ਕਿਉਂ ਜਿੱਤਦਾ ਹੈ'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: Why Niche Wins {#lesson-1-why-niche-wins}
+# Lesson 1: Why Niche Wins
 
 ਕੋਈ ਵੀ ਸੌਫਟਵੇਅਰ ਨੂੰ ਛੂਹਣ ਤੋਂ ਪਹਿਲਾਂ, ਤੁਹਾਨੂੰ ਇਹ ਸਮਝਣਾ ਜ਼ਰੂਰੀ ਹੈ ਕਿ ਕਿਸੇ ਖਾਸ ਸਰੋਤਿਆਂ ਲਈ ਬਣਾਉਣਾ ਹੀ ਸਭ ਤੋਂ ਜ਼ਰੂਰੀ ਫੈਸਲਾ ਹੈ ਜੋ ਤੁਸੀਂ ਕਰੋਗੇ।
 

@@ -4,7 +4,7 @@ title: მოქმედება - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# მოქმედება: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# მოქმედება: wp_ultimo_site_exporter_activation
 
 საშუალება მიეცით პლაგინის სხვა ნაწილებს, აქტივაციისთვის თავიანთი რუტინები მიამაგრონ.
 

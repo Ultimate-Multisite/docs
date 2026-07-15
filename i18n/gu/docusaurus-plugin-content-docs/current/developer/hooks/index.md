@@ -3,7 +3,7 @@ title: હુક્સ સંદર્ભ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks સંદર્ભ {#hooks-reference}
+# Hooks સંદર્ભ
 
 Ultimate Multisite માં બધા **59 actions** અને **118 filters** માટે આપમેળે બનાવાયેલ દસ્તાવેજીકરણ.
 

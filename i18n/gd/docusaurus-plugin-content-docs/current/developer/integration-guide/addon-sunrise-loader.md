@@ -3,7 +3,7 @@ title: Luchdaichear Faidhle Sunrise an Tuilleadain
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Luchdaiche Faidhle Addon Sunrise {#addon-sunrise-file-loader}
+# Luchdaiche Faidhle Addon Sunrise
 
 Tha Ultimate Multisite 2.8.0 a’ cur luchdaiche leudachaidh sunrise ris airson add-ons agus amalachaidhean MU-plugin gnàthaichte a dh’fheumas ruith rè tòiseachadh sunrise WordPress gun am faidhle `wp-content/sunrise.php` a chaidh a ghineadh a dheasachadh.
 

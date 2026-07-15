@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Action: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Action: wu_maybe_create_customer
 
 ပလပ်အင် ဖန်တီးသူများအနေနဲ့ ဖောက်သည်ကို ထည့်သွင်းတဲ့အခါ အပိုလုပ်ဆောင်ချက်တွေ လုပ်နိုင်စေဖို့ ဖြစ်ပါတယ်။
 

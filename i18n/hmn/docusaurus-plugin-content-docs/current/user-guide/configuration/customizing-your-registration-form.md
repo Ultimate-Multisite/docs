@@ -3,7 +3,7 @@ title: Kho Koj Daim Foos Sau Npe
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kho koj daim Registration Form kom haum koj {#customizing-your-registration-form}
+# Kho koj daim Registration Form kom haum koj
 
 Kom ua rau koj lub network zoo txawv ntawm txhua yam SaaS uas tsim rau saum WordPress platform, Ultimate Multisite tso cai rau koj kho koj cov nplooj ntawv sau npe thiab nkag mus nrog peb lub **Checkout Forms** feature.
 

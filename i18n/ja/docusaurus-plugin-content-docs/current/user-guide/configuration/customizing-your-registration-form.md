@@ -3,7 +3,7 @@ title: 登録フォームのカスタマイズ
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# 登録フォームのカスタマイズ {#customizing-your-registration-form}
+# 登録フォームのカスタマイズ
 
 WordPress プラットフォーム上に構築された他のすべての SaaS と差別化したネットワークに見せるため、Ultimate Multisite では **Checkout Forms** 機能を使って登録ページとログインページをカスタマイズできます。
 

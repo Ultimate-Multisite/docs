@@ -4,7 +4,7 @@ title: Àlẹmọ - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Àlẹmọ: secure_auth_cookie {#filter-secureauthcookie}
+# Àlẹmọ: secure_auth_cookie
 
 Ń ṣe àlẹmọ bóyá kí kúkì ìfàṣẹsí jẹ́ fífiranṣẹ́ lórí HTTPS nìkan.
 

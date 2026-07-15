@@ -3,7 +3,7 @@ title: Dokumentasi Pembangun
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasi Pembangun {#developer-documentation}
+# Dokumentasi Pembangun
 
 Panduan ini menyediakan semua yang diperlukan oleh pembangun untuk berintegrasi, memperluas, atau membangunkan *addon* untuk Ultimate Multisite. Ultimate Multisite mengubah rangkaian WordPress Multisite menjadi platform *Website-as-a-Service* (WaaS).
 

@@ -3,7 +3,7 @@ title: ការទទួលប្រាក់
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ការទទួលប្រាក់ (v2) {#getting-paid-v2}
+# ការទទួលប្រាក់ (v2)
 
 _**កំណត់សម្គាល់សំខាន់៖ អត្ថបទនេះសំដៅទៅលើ Ultimate Multisite កំណែ 2.x។**_
 

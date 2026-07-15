@@ -3,7 +3,7 @@ title: Integracija večnajemništva
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integracija večnajemništva {#multi-tenancy-integration}
+# Integracija večnajemništva
 
 Ultimate Multisite: večnajemništvo 1.2.0 spreminja več integracijskih stičnih točk za suverene najemnike, preverjanje migracij in avtomatizacijo življenjskega cikla najemnika.
 

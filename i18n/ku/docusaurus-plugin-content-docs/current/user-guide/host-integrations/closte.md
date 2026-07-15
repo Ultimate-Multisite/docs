@@ -3,7 +3,7 @@ title: Integrasiی Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integration-ی Closte {#closte-integration}
+# Integration-ی Closte
 
 ## گشتی (Overview) {#overview}
 Closte ی پلتفرمی مدیریت شده برای هاستینگ وردپرسە کە لەسەر بنەمای زیرساختی Google Cloud دروست کراوە. ئەم integrationە ڕێنوێنی دۆمەین و بەڕێوەبردنی گوازارنی SSL لە نێوان Ultimate Multisite و Closte دەدات.

@@ -3,7 +3,7 @@ title: Mawuwo wopolo wa M'moyo
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite inaliza wiza ya kujenga mtandao wa WordPress (WordPress Multisite). Inaleta wizard moja inayobadilisha usakinishaji wa kawaida wa WordPress kuwa mtandao wa WordPress Multisite kuliweka kiotomatiki. Hii inakuzuia kuhitaji kubadilisha `wp-config.php` au kurunisha amri za database kwa mkono.
 

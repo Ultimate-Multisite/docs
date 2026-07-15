@@ -3,7 +3,7 @@ title: AffiliateWP سجل التغييرات
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# سجل التغييرات في AffiliateWP {#affiliatewp-changelog}
+# سجل التغييرات في AffiliateWP
 
 الإصدار: 2.0.1 - تم الإصدار في 2025-09-28
 

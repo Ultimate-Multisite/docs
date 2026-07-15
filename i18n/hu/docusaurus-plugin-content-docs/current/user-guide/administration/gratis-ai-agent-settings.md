@@ -3,7 +3,7 @@ title: Gratis AI Agent beállításai
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent beállításai {#gratis-ai-agent-settings}
+# Gratis AI Agent beállításai
 
 A Gratis AI Agent **Beállítások → Speciális** képernyője adminisztrátori szintű konfigurációt biztosít a backend integrációkhoz. Ez az oldal dokumentálja a visszajelzés-továbbítást, a keresőszolgáltatói kulcsokat, a felügyelt Superdav szolgáltatás beállítását, a Google Calendar vezérlőit, a TextBee SMS-beállításokat és a hálózatszintű funkciójelzőket.
 

@@ -4,7 +4,7 @@ title: Actio - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Actio: wu_cart_setup {#action-wucartsetup}
+# Actio: wu_cart_setup
 
 Sine programmatores mutationes additas obiecto checkout facere.
 

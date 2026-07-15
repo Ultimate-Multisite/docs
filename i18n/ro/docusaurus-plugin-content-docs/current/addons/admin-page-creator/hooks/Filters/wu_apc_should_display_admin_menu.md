@@ -4,7 +4,7 @@ title: Filtru - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Filtru: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Filtru: wu_apc_should_display_admin_menu
 
 Permite administratorilor să ascund paginile meniului de administrare, dacă au finalizat procesul de personalizare.
 

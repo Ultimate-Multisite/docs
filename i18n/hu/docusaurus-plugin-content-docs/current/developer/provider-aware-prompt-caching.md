@@ -3,7 +3,7 @@ title: Provider-tudatos prompt-caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Szolgáltató-tudatos Prompt Cache-elés {#provider-aware-prompt-caching}
+# Szolgáltató-tudatos Prompt Cache-elés
 
 A Superdav AI Agent v1.12.0 bevezet **szolgáltató-tudatos prompt cache-elést**, amely optimalizálja az API költségeket és a merülést (latency) különböző LLM szolgáltatók általi promptok cache-elése révén. Minden szolgáltatónek más cache-előző mechanizmusai és konfigurációi vannak.
 

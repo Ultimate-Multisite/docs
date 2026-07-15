@@ -3,7 +3,7 @@ title: Kugadzirisa Fomu Rako reKunyoresa
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kugadzirisa Registration Form yako {#customizing-your-registration-form}
+# Kugadzirisa Registration Form yako
 
 Kuti network yako itaridzike yakasiyana nemamwe maSaaS ese akavakirwa paWordPress platform, Ultimate Multisite inokubvumira kugadzirisa mapeji ako ekunyoresa nekupinda uchishandisa chimiro chedu che **Checkout Forms**.
 

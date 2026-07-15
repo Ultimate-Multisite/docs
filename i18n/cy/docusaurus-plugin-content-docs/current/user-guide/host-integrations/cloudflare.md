@@ -3,7 +3,7 @@ title: Ymddygiad Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Ymddianion gyda Cloudflare {#cloudflare-integration}
+# Ymddianion gyda Cloudflare
 
 ## Oglwyddictod {#overview}
 Mae Cloudflare yn gynnwys y rheolwr cyflenwi (CDN) a chyfyngedig diogelwch sy mae'n helpu i gwarchod a gyflymu weboedd. Mae’r cysylltiad hwn yn sylw'r rheoli domain yn awt rhwng Ultimate Multisite a Cloudflare, yn enwedig ar gyfer ystafell multisite subdomain.

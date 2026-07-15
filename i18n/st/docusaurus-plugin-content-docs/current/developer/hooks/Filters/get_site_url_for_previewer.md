@@ -4,7 +4,7 @@ title: Sefe - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Sefe: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Sefe: get_site_url_for_previewer
 
 Lumella baqapi ba ditlatsetso ho sefa URL e sebediswang ho sebontshi sa ponelopele
 

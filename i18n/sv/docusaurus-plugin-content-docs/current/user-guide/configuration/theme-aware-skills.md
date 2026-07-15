@@ -3,7 +3,7 @@ title: Temabevigande färdigheter
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Temabevigade färdigheter {#theme-aware-skills}
+# Temabevigade färdigheter
 
 Superdav AI Agent v1.10.0 släpper fyra nya temabevigade inbyggda färdigheter som automatiskt anpassar sig till det WordPress-tema du använder. Dessa färdigheter ger specialiserad vägledning och kapacitet anpassad efter ditt temas arkitektur och funktioner.
 

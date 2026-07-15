@@ -3,7 +3,7 @@ title: Ubwumvikane bw'Ubuhanga bwa Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integration ya Cloudflare {#cloudflare-integration}
+# Integration ya Cloudflare
 
 ## Umuhuku {#overview}
 Cloudflare ni umuyobozi w'ubwoko bw'ubwoko bwa content (CDN) n'umuyobozi w'ubwoko bw'ubwoko (security provider) uwohushya no gukomeza uburenganzira mu buryo bwo gutera ku website. Iyi integration ituma uburyo bwo gukoresha domain byiza mu buryo bwa Ultimate Multisite n'Cloudflare, cyane ku gihe cyo gukora subdomain multisite installations.

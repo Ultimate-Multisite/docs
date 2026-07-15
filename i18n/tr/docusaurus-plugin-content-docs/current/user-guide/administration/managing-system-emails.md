@@ -3,7 +3,7 @@ title: Sistem E-postalarını Yönetme
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-postalarını Yönetme {#managing-system-emails}
+# Sistem E-postalarını Yönetme
 
 Ultimate Multisite; kayıt onayları, ödeme makbuzları ve üyelik değişiklikleri gibi etkinlikler için çeşitli sistem e-postaları gönderir. Bu e-posta şablonlarını markanıza uyacak şekilde özelleştirebilirsiniz.
 

@@ -3,7 +3,7 @@ title: Tính năng của Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Khả năng của Theme Builder: Dựng Khung và Kích hoạt Chủ đề Block {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Khả năng của Theme Builder: Dựng Khung và Kích hoạt Chủ đề Block
 
 Superdav AI Agent v1.12.0 giới thiệu hai khả năng mạnh mẽ cho phép bạn tạo và triển khai các chủ đề block (block themes) tùy chỉnh trực tiếp từ giao diện chat.
 

@@ -4,7 +4,7 @@ title: 动作 - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# 操作: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
+# 操作: wp_ultimo_ptm_page_edit_after_title
 
 允许插件开发者在编辑页面中添加额外按钮
 

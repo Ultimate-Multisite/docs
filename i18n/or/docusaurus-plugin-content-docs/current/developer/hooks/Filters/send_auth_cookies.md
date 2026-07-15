@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# ଫିଲ୍ଟର୍: send_auth_cookies {#filter-sendauthcookies}
+# ଫିଲ୍ଟର୍: send_auth_cookies
 
 auth cookies କୁ ବାସ୍ତବରେ କ୍ଲାଇଣ୍ଟଙ୍କୁ ପଠାଯିବାରୁ ରୋକିବାକୁ ଅନୁମତି ଦିଏ।
 

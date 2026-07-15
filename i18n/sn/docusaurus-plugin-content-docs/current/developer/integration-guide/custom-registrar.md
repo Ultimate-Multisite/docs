@@ -3,7 +3,7 @@ title: Kuvaka Kubatanidzwa kweRegistrar Kwetsika
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kuvaka Kubatanidzwa kweCustom Registrar {#building-a-custom-registrar-integration}
+# Kuvaka Kubatanidzwa kweCustom Registrar
 
 Addon yeDomain Seller inoshandisa maitiro e **Integration Registry**. Registrar imwe neimwe iPHP class inoshandisa `Domain_Selling_Capability` uye inozvinyoresa kuburikidza ne `wu_domain_seller_register_capabilities` action hook.
 

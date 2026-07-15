@@ -4,7 +4,7 @@ title: ھەرىكەت - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# ھەرىكەت: wu_cart_after_setup {#action-wucartaftersetup}
+# ھەرىكەت: wu_cart_after_setup
 
 ئىجادكارلارغا checkout ئوبيېكتىغا قوشۇمچە ئۆزگەرتىشلەرنى قىلىشقا يول قويىدۇ.
 

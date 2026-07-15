@@ -3,7 +3,7 @@ title: Тағйирномаи Содиркунандаи сайт
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Тағйироти Site Exporter {#site-exporter-changelog}
+# Тағйироти Site Exporter
 
 Версия: 1.0.6 - Нашр шуд дар 2026-05-11
 * Нав: Барориши сайтҳо акнун як index.php-и худоғозшавандаро дар бар мегирад, то ZIP дар host-и нав бе насби plugin-и ҷудогона насб карда шавад

@@ -3,7 +3,7 @@ title: Menü létrehozása
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menü létrehozása {#create-menu}
+# Menü létrehozása
 
 Az **Menü létrehozása** funkciója lehetővé teszi a WordPress navigációs menüjének létrehozását, és támogatja az oldal címeitől független navigációs címkék használatát.
 

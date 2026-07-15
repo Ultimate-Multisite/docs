@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite ලේඛන {#ultimate-multisite-documentation}
+# Ultimate Multisite ලේඛන
 
 Ultimate Multisite ලේඛන වෙත සාදරයෙන් පිළිගනිමු. Ultimate Multisite, WordPress Multisite පූර්ණ වෙබ් අඩවියක් සේවාවක් ලෙස (WaaS) වේදිකාවක් බවට පරිවර්තනය කරයි.
 

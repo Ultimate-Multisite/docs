@@ -4,7 +4,7 @@ title: پاڵێوەر - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# فلتەر: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# فلتەر: wu_pending_payment_message
 
 ڕێگە بە بەکارهێنەر دەدات کە پەیامەکە دەربارەی پارەدانە چاوەڕوانەکان بگۆڕێت.
 

@@ -3,7 +3,7 @@ title: Dashboard Baxışı
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Baxışı {#dashboard-overview}
+# Dashboard Baxışı
 
 Ultimate Multisite, Ultimate Multisite menyusunda xüsusi bir **Dashboard** (Nəzarət Paneli) təqdim edir və həm də Network Dashboard-a widgetlər əlavə edir. Bu məqalədə hər iki yerdə nə ilə qarşılaşacağınızı izah edirik.
 

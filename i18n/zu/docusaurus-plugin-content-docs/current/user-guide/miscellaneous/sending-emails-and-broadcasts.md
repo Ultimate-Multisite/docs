@@ -3,7 +3,7 @@ title: Ukuthumela Ama-imeyili Nokusakaza
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ukuthumela Ama-imeyili Nokusebenzisa Ukusakaza (v2) {#sending-emails-and-broadcasts-v2}
+# Ukuthumela Ama-imeyili Nokusebenzisa Ukusakaza (v2)
 
 _**INOTHI ELIBALULEKILE: Le athikili ibhekisela ku-Ultimate Multisite inguqulo 2.x.**_
 

@@ -3,7 +3,7 @@ title: Integracija Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integracija z Clostom {#closte-integration}
+# Integracija z Clostom
 
 ## Pregled {#overview}
 Closte je upravljana WordPress hosting platforma, zgrajena na infrastrukturi Google Cloud. Ta integracija omogoča avtomatizirano sinhronizacijo domen in upravljanje SSL sertifikatov med Ultimate Multisite in Closte.

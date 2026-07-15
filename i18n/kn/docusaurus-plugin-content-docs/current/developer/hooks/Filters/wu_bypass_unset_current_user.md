@@ -4,7 +4,7 @@ title: Filter - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filter: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filter: wu_bypass_unset_current_user
 
 ಡೆವಲಪರ್‌ಗಳಿಗೆ ಪ್ರಸ್ತುತ ಬಳಕೆದಾರರನ್ನು (current user) ಅಳಿಸುವ ಕೋಡ್ ಅನ್ನು ಬಿಟ್ಟುಹೋಗಲು (bypass) ಅನುಮತಿಸುತ್ತದೆ.
 

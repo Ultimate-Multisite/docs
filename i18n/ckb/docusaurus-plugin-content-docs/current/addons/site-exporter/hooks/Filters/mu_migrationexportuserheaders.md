@@ -4,7 +4,7 @@ title: فلتەر - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# فلتەر: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# فلتەر: mu_migration/export/user/headers
 
 کۆمەڵەی بنەڕەتی سەرپەڕەکانی بەکارهێنەر فلتەر دەکات بۆ هەناردەکردن/هاوردەکردن.
 

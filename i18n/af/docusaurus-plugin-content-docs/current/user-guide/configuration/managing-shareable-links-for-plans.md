@@ -3,7 +3,7 @@ title: Bestuur van Deelbare Skakels vir Planne
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Bestuur van Deelbare Skakel vir Planne {#managing-shareable-links-for-plans}
+# Bestuur van Deelbare Skakel vir Planne
 
 Ultimate Multisite gee jou die opsie om plan-skakels direk met jou kliënte te deel. Om dit te doen, gaan na enige van jou planne se redigeerbladsye en klik op die knoppie _Click to copy the Shareable Link_.
 

@@ -3,7 +3,7 @@ title: Інтэграцыя шматарэнднасці
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Інтэграцыя Multi-Tenancy {#multi-tenancy-integration}
+# Інтэграцыя Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 змяняе некалькі пунктаў інтэграцыі для суверэнных арандатараў, праверкі міграцыі і аўтаматызацыі жыццёвага цыкла арандатара.
 

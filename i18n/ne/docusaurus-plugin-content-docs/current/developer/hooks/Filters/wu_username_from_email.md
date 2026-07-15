@@ -4,7 +4,7 @@ title: फिल्टर - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# फिल्टर: wu_username_from_email {#filter-wuusernamefromemail}
+# फिल्टर: wu_username_from_email
 
 नयाँ ग्राहकको प्रयोगकर्ता नाम फिल्टर गर्नुहोस्।
 

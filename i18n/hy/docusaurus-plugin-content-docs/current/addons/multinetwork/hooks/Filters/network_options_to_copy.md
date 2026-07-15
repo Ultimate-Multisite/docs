@@ -4,7 +4,7 @@ title: Զտիչ - պատճենման ենթակա network_options
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Զտիչ՝ network_options_to_copy {#filter-networkoptionstocopy}
+# Զտիչ՝ network_options_to_copy
 
 Զտում է պատճենման համար լռելյայն ցանցի ընտրանքները։
 

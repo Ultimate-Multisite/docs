@@ -3,7 +3,7 @@ title: Urugero rw'ubwoko bwa abantu
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Icyo muhozo w'Abakoresha bawe (v2) {#your-clients-websites-v2}
+# Icyo muhozo w'Abakoresha bawe (v2)
 
 Nyuma y'uko wariye gushyira kuri network yawe, abakoresha bvawe bashobora kugera ku dashboard yabo.
 

@@ -3,7 +3,7 @@ title: Mga Kilalang Hindi Pagkakasundo
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Mga Kilalang Hindi Pagkakasundo sa Iba Pang Plugins {#known-incompatibilities-with-other-plugins}
+# Mga Kilalang Hindi Pagkakasundo sa Iba Pang Plugins
 
 Pagkatapos mong i-install at i-activate ang Ultimate Multisite, baka makaranas ka ng mga problema dahil mayroon kang hindi napapansayang hindi pagkakasundo sa ibang mga plugin.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filtru: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filtru: wu_checkout_field_templates
 
 L-APIs tagħna biex iżidu mudelli ġodda ta' oqsma jidħlu hawn.
 

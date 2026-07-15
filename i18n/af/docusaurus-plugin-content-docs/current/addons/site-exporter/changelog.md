@@ -3,7 +3,7 @@ title: Werfuitvoerder-veranderingslogboek
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter-veranderingslogboek {#site-exporter-changelog}
+# Site Exporter-veranderingslogboek
 
 Weergawe: 1.0.6 - Vrygestel op 2026-05-11
 * Nuut: Site-uitvoere bundel nou ’n selflaaiende index.php sodat die ZIP op ’n vars gasheer geïnstalleer kan word sonder ’n aparte plugin-installasie

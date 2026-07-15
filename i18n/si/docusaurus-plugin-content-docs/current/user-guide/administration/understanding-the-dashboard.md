@@ -3,7 +3,7 @@ title: ඩෑෂ්බෝඩ් එක තේරුම් ගැනීම
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard එක තේරුම් ගැනීම {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite Dashboard එක තේරුම් ගැනීම
 
 Ultimate Multisite වල වඩාත් උසස් සැකසුම් සහ ක්‍රියාකාරී අංශ ගැන ගැඹුරට යෑමට පෙර, අපි මුලින්ම දාශබෝඩ් එක (dashboard) බලමු.
 

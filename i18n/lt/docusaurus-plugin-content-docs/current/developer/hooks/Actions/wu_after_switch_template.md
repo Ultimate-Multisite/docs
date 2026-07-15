@@ -4,7 +4,7 @@ title: Veiksmas - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Veiksmas: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Veiksmas: wu_after_switch_template
 
 Leidžia plugin kūrėjams prijungti funkcijas po to, kai naudotojas arba super admin pakeičia svetainės šabloną
 

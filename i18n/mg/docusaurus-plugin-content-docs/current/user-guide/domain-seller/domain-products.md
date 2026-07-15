@@ -3,7 +3,7 @@ title: Vokatra Domain sy ny vidiny
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Fepetra sy Ny Vara (Domain Products and Pricing) {#domain-products-and-pricing}
+# Fepetra sy Ny Vara (Domain Products and Pricing)
 
 Ny fepetra sy ny varina dia ny fomba iantohanao ny vidiny, ny TLDs (Top-Level Domains), ny fitahirizana WHOIS privacy, ary ny safidy mpamatsy. Ny vokatra domain tsirairay dia vokatra standard amin'ny Ultimate Multisite izay misy tabilao manokana antsoina hoe **Domain Settings**.
 

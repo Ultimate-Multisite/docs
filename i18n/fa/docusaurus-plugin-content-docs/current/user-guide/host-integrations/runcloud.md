@@ -3,7 +3,7 @@ title: یکپارچه‌سازی RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# یکپارچه‌سازی با RunCloud {#runcloud-integration}
+# یکپارچه‌سازی با RunCloud
 
 ## معرفی {#overview}
 RunCloud یک پلتفرم مدیریت سرور مبتنی بر ابر است که به شما امکان می‌دهد برنامه‌های وب را به راحتی روی سرورهای ابری خودتان راه‌اندازی و مدیریت کنید. این یکپارچه‌سازی، همگام‌سازی خودکار دامنه‌ها و مدیریت گواهی SSL را بین Ultimate Multisite و RunCloud فراهم می‌کند.

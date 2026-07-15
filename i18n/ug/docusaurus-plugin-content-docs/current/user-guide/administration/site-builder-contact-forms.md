@@ -3,7 +3,7 @@ title: Sayt Quril Kontakt Formlari
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# سايت ساز إخلاص نماشات (Site Builder Contact Forms) {#site-builder-contact-forms}
+# سايت ساز إخلاص نماشات (Site Builder Contact Forms)
 
 Superdav AI Agent v1.10.0، سايت ساز نماشات (Site Builder agent) ئامێرەکە بەکارهێنانی چات پۆلێس (chat interface) لە ڕێگەی خودی دەستکاری سایتەوە دەبێت بۆ دروستکردنی فۆرمەکانی پەیوەندی (contact forms). ئەمەش وەک ئەوەیە کە فۆرمە تەواو کارکردنەکان بەبێ ئەوەی لە چاتەکە دەرچیت، دەتوانیت زیاد بکەیتە هەر پەڕەیەکی سایتێک.
 

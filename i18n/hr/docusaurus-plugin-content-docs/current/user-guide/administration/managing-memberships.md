@@ -3,7 +3,7 @@ title: Upravljanje članstvom
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Upravljanje članstvom {#managing-memberships}
+# Upravljanje članstvom
 
 U Ultimate Multisite možete upravljati članstvima i pristupiti svim pretplatama na svojoj mreži. Pregledajte i uređujte detalje pretplate kao što su planovi i proizvodi, broj web slika, iznos računa i frekvencija, povijest plaćanja te vremenske oznake.
 

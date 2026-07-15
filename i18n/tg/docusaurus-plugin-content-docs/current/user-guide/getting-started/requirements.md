@@ -3,7 +3,7 @@ title: Талавоти
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Талабути барои Ultimate Multisite {#ultimate-multisite-requirements}
+# Талабути барои Ultimate Multisite
 
 Аввалин чизе, ки шумо пеш аз хариди Ultimate Multisite мепурсед, ин аст, ки кадом талаботҳо барои иҷрои ин плагин доред. Сахт шубҳа нест, ки фақат баъзе талаботи асосӣ барои ивраи Ultimate Multisite вуҷуд доранд: **номи домен** , **провайдер хостинг** хуб ва назорат кардани инкишовари WordPress **Multisite**. Ин ҳама чизест, ки шумо бояд доред!
 

@@ -3,7 +3,7 @@ title: Λήψη πληρωμών
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Πληρωμές (v2) {#getting-paid-v2}
+# Πληρωμές (v2)
 
 _**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτό το άρθρο αναφέρεται στην έκδοση 2.x του Ultimate Multisite.**_
 

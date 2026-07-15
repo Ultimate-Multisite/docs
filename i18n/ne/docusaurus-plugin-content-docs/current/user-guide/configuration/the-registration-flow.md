@@ -3,7 +3,7 @@ title: पंजीकरण प्रवाह
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# दर्ता प्रक्रिया (v2) {#the-registration-flow-v2}
+# दर्ता प्रक्रिया (v2)
 
 _**महत्वपूर्ण नोट: यो लेख Ultimate Multisite संस्करण 2.x मा आधारित छ।**_
 

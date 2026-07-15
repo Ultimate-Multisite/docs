@@ -3,7 +3,7 @@ title: cPanel Integrasie
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integrasie {#cpanel-integration}
+# cPanel Integrasie
 
 ## Oorsig {#overview}
 cPanel is een van die mees gewilde webhosting beheerderspanele wat deur baie gedeelde en toegewyde hostingaanbieders gebruik word. Hierdie integrasie stel outomatiese domein-sinkronisering tussen Ultimate Multisite en cPanel in, wat jou toelaat om outomaties domeinalias en subdomeine by jou cPanel-rekening by te voeg.

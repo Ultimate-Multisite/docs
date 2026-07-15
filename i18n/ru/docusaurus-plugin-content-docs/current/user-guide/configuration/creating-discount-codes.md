@@ -3,7 +3,7 @@ title: Создание кодов скидок
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Создание кодов скидок (v2) {#creating-discount-codes-v2}
+# Создание кодов скидок (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 

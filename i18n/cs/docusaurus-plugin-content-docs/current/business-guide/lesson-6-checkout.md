@@ -3,7 +3,7 @@ title: 'Lekce 6: Zážitek z registrace'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lekce 6: Zážitky z registrace {#lesson-6-the-signup-experience}
+# Lekce 6: Zážitky z registrace
 
 Proces platby je místo, kde zájem se mění na příjem. Zmatečný nebo obecný proces registrace vás zákazníky ztratí. Nišově zaměřený proces, který mluví jejich jazykem a je bez námahy použitelný, je pro někoně záchranný.
 

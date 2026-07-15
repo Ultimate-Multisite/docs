@@ -3,7 +3,7 @@ title: Index Optionum
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Relatio Optionum {#settings-reference}
+# Relatio Optionum
 
 Haec pagina optiones persequitur quae administrationem cotidianam et recentes mutationes morum in Ultimate Multisite afficiunt.
 

@@ -3,7 +3,7 @@ title: 'Lektion 2: Deine Nische finden'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lektion 2: Die Wahl deiner Nische {#lesson-2-picking-your-niche}
+# Lektion 2: Die Wahl deiner Nische
 
 In Lektion 1 haben wir herausgefunden, warum eine Nische besser ist als ein allgemeines Thema. Jetzt musst du deine Nische auswählen. Diese Lektion gibt dir ein Rahmenwerk, um eine Nische zu finden und zu validieren, bevor du Zeit und Mühe in deren Aufbau investierst.
 

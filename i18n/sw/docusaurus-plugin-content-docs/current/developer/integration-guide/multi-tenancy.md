@@ -3,7 +3,7 @@ title: Ujumuishaji wa Wapangaji Wengi
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Ujumuishaji wa Multi-Tenancy {#multi-tenancy-integration}
+# Ujumuishaji wa Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 hubadilisha sehemu kadhaa za mguso wa ujumuishaji kwa wapangaji huru, uthibitishaji wa uhamishaji, na otomatiki ya mzunguko wa maisha wa mpangaji.
 

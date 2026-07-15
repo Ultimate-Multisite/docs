@@ -3,7 +3,7 @@ title: 'Leksjon 7: Gjør det ditt eget'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leksjon 7: Gjør det til ditt eget {#lesson-7-making-it-yours}
+# Leksjon 7: Gjør det til ditt eget
 
 Kundene dine skal aldri føle at de bruker «et hvilket som helst WordPress plugin». De skal føle at de bruker FitSite – en plattform bygget for deres bransje. I denne leksjonen dekker vi merkevarebygging, white-labeling og hvordan du får plattformen til å føles ut som et eget produkt.
 

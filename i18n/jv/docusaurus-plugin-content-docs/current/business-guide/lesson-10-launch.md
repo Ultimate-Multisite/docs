@@ -3,7 +3,7 @@ title: 'Piwulang 10: Dina Peluncuran'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Piwulang 10: Dina Peluncuran {#lesson-10-launch-day}
+# Piwulang 10: Dina Peluncuran
 
 Kabeh wis dibangun. Sadurunge sampeyan mbukak lawang, piwulang iki nuntun dhaptar priksa sadurunge peluncuran kanggo mesthekake ora ana sing rusak, ilang, utawa nggawe isin.
 

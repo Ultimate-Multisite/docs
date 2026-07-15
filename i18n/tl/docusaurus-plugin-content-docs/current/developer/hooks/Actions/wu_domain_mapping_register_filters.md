@@ -4,7 +4,7 @@ title: Aksyon - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Aksyon: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Aksyon: wu_domain_mapping_register_filters
 
 May ilang plugin na magse-save ng URL bago maging aktibo ang mapping o bubuo ng mga URL sa ibang paraan na hindi kasama sa mga filter sa itaas.
 

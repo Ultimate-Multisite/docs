@@ -3,7 +3,7 @@ title: Uburyo bwo gushobora kubona
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Uburyo Ubwumuryo (Ability Visibility) {#ability-visibility}
+# Uburyo Ubwumuryo (Ability Visibility)
 
 Superdav AI Agent v1.12.0 yitangira **Uburyo Ubwumuryo** (Ability Visibility) uburyo bwo gukoresha uburenganzira bwo kumenya ibyerekezo by'uburyo bw'uburyo (abilities) byo kubyara ku ntego zikoreshwa. Ibi bituma abanyamwuga (administrators) guhindura uburyo uburyo bwo kubyara ku ntego zikoreshwa mu gihe cyo gukoresha REST API, MCP servers, WooCommerce integrations, no ibindi byerekezo by'ibindi.
 

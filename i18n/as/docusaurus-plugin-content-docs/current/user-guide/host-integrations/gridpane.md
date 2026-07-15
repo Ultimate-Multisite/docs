@@ -3,7 +3,7 @@ title: GridPane সংহতিকৰণ
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integration {#gridpane-integration}
+# GridPane Integration
 
 ## Overview {#overview}
 GridPane হৈছে এটা বিশেষিত WordPress হোস্টিং কণ্ট্ৰল প্যানেল যি গধুৰ WordPress প্ৰফেশ্যনেলসকলৰ বাবে নিৰ্মাণ কৰা হৈছে। এই ইন্টিগ্ৰেচনটোৱে Ultimate Multisite আৰু GridPaneৰ মাজত স্বয়ংক্রিয় ডোমেইন সিঙ্কিং (automatic domain syncing) আৰু SSL সার্টিফিকেট ব্যৱস্থাপনা (SSL certificate management) সক্ষম কৰে।

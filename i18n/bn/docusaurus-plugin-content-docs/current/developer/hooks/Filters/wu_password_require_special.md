@@ -4,7 +4,7 @@ title: Filter - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 পাসওয়ার্ডে বিশেষ অক্ষর (special characters) প্রয়োজন হবে কিনা তা ফিল্টার করে।
 

@@ -3,7 +3,7 @@ title: Tradwi Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tradiks Ultimate Multisite {#translating-ultimate-multisite}
+# Tradiks Ultimate Multisite
 
 Ultimate Multisite se devlope an Angla, men plugin la totalman translatib ab, e nou ak swete kontribisyon tradiksyon.
 

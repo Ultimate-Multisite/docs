@@ -3,7 +3,7 @@ title: Clàr-atharrachaidhean Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loga atharrachaidhean Loco Translate {#loco-translate-changelog}
+# Loga atharrachaidhean Loco Translate
 
 ### 1.0.1 {#101}
 * Co-chòrdalachd nas fheàrr leis an tionndadh as ùire de Loco Translate

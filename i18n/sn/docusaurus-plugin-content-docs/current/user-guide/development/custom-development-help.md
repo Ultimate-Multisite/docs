@@ -3,7 +3,7 @@ title: Chikoro Chekucheku Chishandisa
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Sei kuupedza Matendo Ekuviri Kune Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Sei kuupedza Matendo Ekuviri Kune Codeable?
 
 Nge kune nguva dzakawanda, tinoda kuti tive nemazuva anokosha ekugadzirisa zvinhu zvinogona kutamba zvakakosha kuti mweya wenyu (network flows) uonekane seunoda. Kana iye ndiyo inotipa, tinopa Codeable [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), unyore wakasi kungava uri kuona vafungwarai vanogara vakaona (experienced developers) nemakore ekugadzirisa Ultimate Multisite.
 

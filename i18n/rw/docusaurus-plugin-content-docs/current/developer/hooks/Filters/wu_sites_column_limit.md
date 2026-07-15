@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Muyungurura: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Muyungurura: wu_sites_column_limit
 
 Filter yo guhindura agaciro ka get pluginssites imbere muri network.
 

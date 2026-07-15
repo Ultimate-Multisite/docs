@@ -3,7 +3,7 @@ title: Fitantanana ny hetra
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Fitantanana hetra {#tax-handling}
+# Fitantanana hetra
 
 Ultimate Multisite dia manana maodilin’ny fanangonana hetra tafiditra ao amin’ny tovona fototray, ka raha mila manangona hetran’ny varotra amin’ny drafitra, fonosana ary tolotra ianao, dia afaka manao izany mora foana nefa tsy mila mametraka fanampiny.
 

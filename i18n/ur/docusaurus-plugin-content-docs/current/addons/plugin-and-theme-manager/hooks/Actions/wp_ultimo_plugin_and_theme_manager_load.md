@@ -4,7 +4,7 @@ title: Action - wp_ultimo_plugin_and_theme_manager_load
 sidebar_label: wp_ultimo_plugin_and_theme_manager_load
 _i18n_hash: 0e231be0e568b6e61700e409039a6b4c
 ---
-# ایکشن: wp_ultimo_plugin_and_theme_manager_load {#action-wpultimopluginandthememanagerload}
+# ایکشن: wp_ultimo_plugin_and_theme_manager_load
 
 یہ ایک ایکشن ہے جو اس وقت ٹرگر ہوتا ہے جب تمام ضروری dependencies لوڈ ہو چکی ہوتی ہیں۔
 

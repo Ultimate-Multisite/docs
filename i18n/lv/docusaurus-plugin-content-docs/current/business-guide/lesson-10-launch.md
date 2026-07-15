@@ -3,7 +3,7 @@ title: '10. nodarbība: Palaišanas diena'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Nodarbība 10: Palaišanas diena {#lesson-10-launch-day}
+# Nodarbība 10: Palaišanas diena
 
 Viss ir uzbūvēts. Pirms atverat durvis, šī nodarbība izved cauri pirms palaišanas pārbaudes sarakstam, lai pārliecinātos, ka nekas nav sabojāts, trūkstošs vai apkaunojošs.
 

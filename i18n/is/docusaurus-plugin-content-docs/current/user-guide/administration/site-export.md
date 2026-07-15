@@ -3,7 +3,7 @@ title: Útboð síða
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Útskiðing staðar {#site-export}
+# Útskiðing staðar
 
 Í admin-skýrslu **Site Export** getur nýtingarstjórnendur samkvæði eina staðar, eða heildar netverk, í nýjar nedlunarsamninga fyrir migra, uppfærslur, eða yfirferðun.
 

@@ -3,7 +3,7 @@ title: RunCloud انٹیگریشن
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud انٹیگریشن {#runcloud-integration}
+# RunCloud انٹیگریشن
 
 ## جائزہ {#overview}
 RunCloud ایک کلاؤڈ پر مبنی سرور مینجمنٹ پلیٹ فارم ہے جو آپ کو اپنے کلاؤڈ سرورز پر ویب ایپلیکیشنز آسانی سے ڈیپلائے اور منظم کرنے کی سہولت دیتا ہے۔ یہ انٹیگریشن Ultimate Multisite اور RunCloud کے درمیان خودکار ڈومین syncing اور SSL سرٹیفکیٹ مینجمنٹ کو فعال کرتی ہے۔

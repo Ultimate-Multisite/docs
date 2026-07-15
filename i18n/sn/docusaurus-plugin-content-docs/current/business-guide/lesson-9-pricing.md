@@ -3,7 +3,7 @@ title: 'Chidzidzo 9: Kuisa Mitengo Kuti Uwane Pundutso'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Chidzidzo 9: Mitengo yePurofiti {#lesson-9-pricing-for-profit}
+# Chidzidzo 9: Mitengo yePurofiti
 
 Muchidzidzo 5 takaisa mitengo yekutanga yezvirongwa zveFitSite. Iye zvino tinonatsa nzira yemitengo nemaitiro anowedzera mari inopinda, anokurudzira kukwidziridza, uye anoderedza kusiya basa.
 

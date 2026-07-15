@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0eef99879a6634b6dd604ef90235090e
 ---
-# ଫିଲ୍ଟର: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# ଫିଲ୍ଟର: wp_ultimo_skip_network_active_check
 
 ବିକାଶକମାନଙ୍କୁ ଏହି ଯାଞ୍ଚକୁ ପୂର୍ବରୁ ବନ୍ଦ କରିଦେବାକୁ ଅନୁମତି ଦିଏ।
 

@@ -3,7 +3,7 @@ title: Mi az a WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mi az a WordPress Multisite? {#what-is-wordpress-multisite}
+# Mi az a WordPress Multisite?
 
 A WordPress alapfunkciói között megtalálható a „Multisite" nevű lehetőség, amely a WordPress 3.0 megjelenésekor, 2010-ben debütált. Azóta számos frissítésen esett át, amelyek új funkciókat hoztak és a biztonságot is megerősítették.
 

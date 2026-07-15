@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filter: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filter: wu_checkout_field_templates
 
 புதிய ஃபீல்ட் டெம்ப்ளேட்களைச் சேர்க்கும் எங்கள் APIs இங்கே இணைக்கப்படுகின்றன (hook into).
 

@@ -3,7 +3,7 @@ title: نحوه پیکربندی نگاشت دامنه
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# نحوه پیکربندی نگاشت دامنه (v2) {#how-to-configure-domain-mapping-v2}
+# نحوه پیکربندی نگاشت دامنه (v2)
 
 _**یادداشت مهم: این مقاله به نسخه 2.x Ultimate Multisite اشاره دارد.**_
 

@@ -3,7 +3,7 @@ title: 第三方模式迁移
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# 第三方模式迁移 {#third-party-mode-migration}
+# 第三方模式迁移
 
 Superdav AI Agent v1.12.0 更改了第三方能力（third-party abilities）的处理方式。**第三方模式现在默认设置为自动（auto）**，这意味着在 WordPress 7.0+ 上，您无需手动配置即可启用原生的 WordPress Abilities API 集成。
 

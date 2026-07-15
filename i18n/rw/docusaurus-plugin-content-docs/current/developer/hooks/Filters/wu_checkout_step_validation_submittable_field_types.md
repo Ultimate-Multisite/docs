@@ -4,7 +4,7 @@ title: Akayunguruzo - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Akayunguruzo: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Akayunguruzo: wu_checkout_step_validation_submittable_field_types
 
 Emerera abateza imbere kurenga igenzura niba field ishobora koherezwa mu buryo bwikora.
 

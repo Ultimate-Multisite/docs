@@ -4,7 +4,7 @@ title: Filtras - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filtras: send_auth_cookies {#filter-sendauthcookies}
+# Filtras: send_auth_cookies
 
 Leidžia neleisti autentifikavimo slapukams iš tikrųjų būti siunčiamiems klientui.
 

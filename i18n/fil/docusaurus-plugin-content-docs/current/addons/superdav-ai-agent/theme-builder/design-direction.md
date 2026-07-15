@@ -3,7 +3,7 @@ title: Direksyon ng Disenyo
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direksyon ng Disenyo {#design-direction}
+# Direksyon ng Disenyo
 
 Ang hakbang na **Design Direction** ay nagpapahintulot sa iyo na suriin, ayusin, at tapusin ang visual design ng iyong theme bago pa man buuin ng Theme Builder ang kumpletong theme.
 

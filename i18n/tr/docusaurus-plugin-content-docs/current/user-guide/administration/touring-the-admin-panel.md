@@ -3,7 +3,7 @@ title: Yönetici Paneli Turu
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Paneli Gezintisi {#touring-the-admin-panel}
+# Admin Paneli Gezintisi
 
 Ultimate Multisite mümkün olduğunca basit ve kendi kendini açıklayan bir yapıda olmayı hedefler, ancak bu kadar güçlü bir araçta rehberli bir tur faydalı olabilir. Yerleşmenize yardımcı olmak için admin sayfalarını birlikte inceleyelim.
 

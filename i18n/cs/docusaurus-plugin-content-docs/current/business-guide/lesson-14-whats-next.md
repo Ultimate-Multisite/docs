@@ -3,7 +3,7 @@ title: 'Lekce 14: Co následuje'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekce 14: Co dál {#lesson-14-what-comes-next}
+# Lekce 14: Co dál
 
 Postavili jste platformu pro úzkou specializaci (niche) od nuly. FitSite je aktivní, obsluhuje fitness studia a generuje opakující se příjmy. Tato závěrečná lekce se zabývá tím, kam se vydat dál.
 

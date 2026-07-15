@@ -4,7 +4,7 @@ title: Filtre - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filtre : wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filtre : wu_checkout_step_validation_submittable_field_types
 
 Permet aux développeurs de contourner la vérification si un champ est auto-soumis.
 

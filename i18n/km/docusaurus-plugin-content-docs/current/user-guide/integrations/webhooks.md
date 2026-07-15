@@ -3,7 +3,7 @@ title: Webhook
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# ការមើលលើ Webhooks ជាលើកដំបូង (v2) {#a-first-look-on-webhooks-v2}
+# ការមើលលើ Webhooks ជាលើកដំបូង (v2)
 
 _**ចំណាំសំខាន់: សូមចំណាំថា ฟีเจอร์ ឬអត្ថបទនេះគឺសម្រាប់អ្នកប្រើប្រាស់ขั้นสูงเท่านั้น។**_
 

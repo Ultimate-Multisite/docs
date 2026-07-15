@@ -4,7 +4,7 @@ title: フィルタ - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# フィルタ: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# フィルタ: wu_page_get_title_links
 
 プラグイン開発者と私たち自身が、編集ページにアクションリンクを追加できるようにします。
 

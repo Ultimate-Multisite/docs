@@ -3,7 +3,7 @@ title: Podstawowe pojęcia
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Podstawowe pojęcia {#basic-concepts}
+# Podstawowe pojęcia
 
 Dla nowego użytkownika WordPress Multisite i osoby, która dopiero zaczyna korzystać z Ultimate Multisite, na początku może pojawić się wiele nowych słów i zwrotów do przyswojenia. Ich poznanie jest ważnym zadaniem, ponieważ pomoże Ci zrozumieć platformę i sposób jej działania jako całości.
 

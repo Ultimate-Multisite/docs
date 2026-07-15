@@ -3,7 +3,7 @@ title: Lástáil Áite An t-Aontaithe
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Páirc Áite an Account na Dochtair (v2) {#your-clients-account-page-v2}
+# Páirc Áite an Account na Dochtair (v2)
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 

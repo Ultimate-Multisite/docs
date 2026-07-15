@@ -3,7 +3,7 @@ title: Site Builder Mode Removal Notice
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# 사이트 빌더 모드 제거 공지 {#site-builder-mode-removal-notice}
+# 사이트 빌더 모드 제거 공지
 
 **Superdav AI Agent v1.12.0에서 사이트 빌더 모드가 제거되었습니다.** 사이트 빌더 모드를 사용하셨다면, 테마 생성 및 사이트 설정을 위해 **Setup Assistant agent**로 마이그레이션해야 합니다.
 

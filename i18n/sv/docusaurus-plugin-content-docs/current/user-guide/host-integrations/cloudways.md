@@ -3,7 +3,7 @@ title: Cloudways-integration
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways-integration {#cloudways-integration}
+# Cloudways-integration
 
 ## Översikt {#overview}
 Cloudways är en hanterad molnhostingplattform som låter dig distribuera WordPress-webbplatser hos olika molnleverantörer som DigitalOcean, AWS, Google Cloud med flera. Den här integrationen möjliggör automatisk domänsynkronisering och hantering av SSL-certifikat mellan Ultimate Multisite och Cloudways.

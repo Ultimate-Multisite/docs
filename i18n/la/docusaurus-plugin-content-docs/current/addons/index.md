@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Additamenta Ultimate Multisite {#ultimate-multisite-addons}
+# Additamenta Ultimate Multisite
 
 Additamenta Ultimate Multisite facultatibus et integrationibus additis amplificant. Plurima additamenta pretio constant et emi possunt ex [ultimatemultisite.com](https://ultimatemultisite.com).
 

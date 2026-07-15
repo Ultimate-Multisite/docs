@@ -3,7 +3,7 @@ title: Ho Hlahlobo le Pane ea Grid
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration na GridPane {#gridpane-integration}
+# Integration na GridPane
 
 ## Le Ntlha (Overview) {#overview}
 GridPane ke ntlha, ke e panel ya control panel ya WordPress e ntsha e tlhagiso ya bohle ba WordPress. E ntsha e ka fana ka ho hlahloba ha domain syncing le management ya SSL certificate ho tshepa-tshepa tsotlhe ho a Ultimate Multisite le GridPane.

@@ -4,7 +4,7 @@ title: פילטער - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 דערלויבט plugin־אנטוויקלער צו טוישן וועלכע פּאָסט־סטאַטוסן זאָלן ווערן געציילט. לויטן סטאַנדאַרט ווערן פֿאַרעפֿנטלעכטע און פּריוואַטע פּאָסטן געציילט
 

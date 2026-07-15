@@ -3,7 +3,7 @@ title: Zarządzanie płatnościami i fakturami
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Zarządzanie płatnościami i fakturami {#managing-payments-and-invoices}
+# Zarządzanie płatnościami i fakturami
 
 ## Ustawienia płatności {#payment-settings}
 

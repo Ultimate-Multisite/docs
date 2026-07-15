@@ -3,7 +3,7 @@ title: Ultimate Multisite ಅನುವಾದ
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ಅನುವಾದ {#translating-ultimate-multisite}
+# Ultimate Multisite ಅನುವಾದ
 
 Ultimate Multisite ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಅಭಿವೃದ್ಧಿಪಡಿಸಲಾಗಿದೆ, ಆದರೆ ಈ plugin ಸಂಪೂರ್ಣವಾಗಿ ಅನುವಾದಿಸಬಹುದಾದಂತಹದ್ದು ಮತ್ತು ನಾವು ಅನುವಾದ ಕೊಡುಗೆಗಳನ್ನು ಸಕ್ರಿಯವಾಗಿ ಸ್ವಾಗತಿಸುತ್ತೇವೆ.
 

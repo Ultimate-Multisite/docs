@@ -4,7 +4,7 @@ title: Omume - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# Omume: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
+# Omume: wu_captcha_integrations_init
 
 Na-arụ ọrụ mgbe emechara inicialization nke integrations niile.
 

@@ -4,7 +4,7 @@ title: Filtras - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtras: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filtras: wu_woocommerce_line_item_params
 
 Filtruoja parametrus, naudojamus kuriant eilutės elementus WooCommerce Cart, prieš nukreipiant klientą į WooCommerce checkout.
 

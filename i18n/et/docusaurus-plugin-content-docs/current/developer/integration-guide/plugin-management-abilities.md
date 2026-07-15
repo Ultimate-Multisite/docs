@@ -3,7 +3,7 @@ title: Pluginate haldamise võimalused
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Lisamoodulite haldamise võimed {#plugin-management-abilities}
+# Lisamoodulite haldamise võimed
 
 Gratis AI Agent v1.5.0 sisaldab **7 lisamoodulite haldamise võimet**, mida AI-assistent saab vestluse ajal kasutada. Need võimed pakuvad programmilist juhtimist WordPressi lisamoodulite üle, mis on installitud [lisamoodulite koostaja ja liivakasti süsteemi](../../user-guide/administration/plugin-builder-and-sandbox) kaudu.
 

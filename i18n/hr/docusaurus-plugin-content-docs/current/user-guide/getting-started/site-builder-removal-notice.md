@@ -3,7 +3,7 @@ title: Obavijest o uklanjanju načina za izgradnju stranice
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Obavijest o uklanjanju načina izgradnje stranica (Site Builder Mode) {#site-builder-mode-removal-notice}
+# Obavijest o uklanjanju načina izgradnje stranica (Site Builder Mode)
 
 **Način izgradnje stranica (Site Builder mode) je uklonjen u Superdav AI Agent v1.12.0.** Ako ste koristili način izgradnje stranica, trebali biste migrirati na **Setup Assistant agent** za kreiranje tema i postavljanje stranice.
 

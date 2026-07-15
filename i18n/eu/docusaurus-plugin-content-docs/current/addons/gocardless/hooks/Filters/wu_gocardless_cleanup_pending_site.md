@@ -4,7 +4,7 @@ title: Iragazkia - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Iragazkia: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Iragazkia: wu_gocardless_cleanup_pending_site
 
 GoCardless kidetza ezeztatu baterako umezurtz geratutako zain dagoen gune bat ezabatu aurretik abiarazten da.
 

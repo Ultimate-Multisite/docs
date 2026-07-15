@@ -3,7 +3,7 @@ title: Plugin & Theme Manager Changelog
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Mga Pagbabago ng Plugin at Theme Manager {#plugin--theme-manager-changelog}
+# Mga Pagbabago ng Plugin at Theme Manager
 
 Bersyon: 2.0.8 - Inilabas noong 2026-05-05
 * Pinabuti: Gumagamit na ngayon ang listahan ng plugin ng site cache para mabawasan ang mga database queries at mapaganda ang performance.

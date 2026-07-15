@@ -3,7 +3,7 @@ title: 'Leciono 10: Lanĉotago'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leciono 10: Lanĉotago {#lesson-10-launch-day}
+# Leciono 10: Lanĉotago
 
 Ĉio estas konstruita. Antaŭ ol vi malfermas la pordojn, ĉi tiu leciono trairas la antaŭlanĉan kontrolliston por certigi, ke nenio estas rompita, mankanta aŭ embarasa.
 

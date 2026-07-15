@@ -3,7 +3,7 @@ title: የውህደት መመሪያ
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# የማዋሃድ መመሪያ {#integration-guide}
+# የማዋሃድ መመሪያ
 
 ይህ መመሪያ ከUltimate Multisite ጋር የተለመዱ የማዋሃድ ንድፎችን ይሸፍናል፣ ወደ ውጫዊ አገልግሎቶች መገናኘትን፣ ብጁ የክፍያ መግቢያዎችን መገንባትን፣ እና webhooks መቆጣጠርን ጨምሮ።
 

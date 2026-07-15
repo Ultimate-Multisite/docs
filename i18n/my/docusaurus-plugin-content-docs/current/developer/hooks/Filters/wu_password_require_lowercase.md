@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Filter: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Filter: wu_password_require_lowercase
 
 စကားဝှက်များတွင် အက္ခရာအသေး (lowercase) ကို လိုအပ်စေရန် စစ်ထုတ်ခြင်း (Filter) ဖြစ်သည်။
 

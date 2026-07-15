@@ -3,7 +3,7 @@ title: AffiliateWP փոփոխությունների մատյան
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP փոփոխությունների մատյան {#affiliatewp-changelog}
+# AffiliateWP փոփոխությունների մատյան
 
 Տարբերակ՝ 2.0.1 - Թողարկվել է 2025-09-28-ին
 

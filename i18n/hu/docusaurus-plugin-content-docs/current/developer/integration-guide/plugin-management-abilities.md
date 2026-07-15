@@ -3,7 +3,7 @@ title: Plugin kezelő képességek
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Kezelési Funkciók {#plugin-management-abilities}
+# Plugin Kezelési Funkciók
 
 A Gratis AI Agent v1.5.0 **7 plugin kezelési funkcióval** érkezik, amelyeket az AI asszisztens egy beszélgetés során hívhat elő. Ezek a funkciók programozott vezérlést biztosítanak a [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) segítségével telepített WordPress plugin-jai felett.
 

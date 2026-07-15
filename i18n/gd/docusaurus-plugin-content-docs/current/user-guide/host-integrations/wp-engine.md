@@ -3,7 +3,7 @@ title: Còmhlaidachd WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integradh le WP Engine {#wp-engine-integration}
+# Integradh le WP Engine
 
 ## Am ghràdhachd (Overview) {#overview}
 WP Engine is platforma host WordPress a' chùlnaidh (premium managed hosting) a tha a lochdlaidh, a tha a' toirt sealladh fìor, sgìre, agus a tha a' chùlnaidh airson site-an WordPress. A' cheann seo a' bheachd a' ghràdhachd domain sinne (domain syncing) gu sgaidheachais air an t-seòrsa Ultimate Multisite agus WP Engine.

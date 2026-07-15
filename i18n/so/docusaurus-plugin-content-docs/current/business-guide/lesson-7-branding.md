@@ -3,7 +3,7 @@ title: 'Casharka 7: Ka dhigista mid adiga kuu gaar ah'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Cashar 7: Ka Dhigista Mid Adiga Kuu Gaar Ah {#lesson-7-making-it-yours}
+# Cashar 7: Ka Dhigista Mid Adiga Kuu Gaar Ah
 
 Macaamiishaadu marnaba waa inaysan dareemin inay isticmaalayaan "plugin WordPress oo uun." Waa inay dareemaan inay isticmaalayaan FitSite -- madal loo dhisay warshaddooda. Casharkani wuxuu daboolayaa sumadeynta, white-labeling, iyo ka dhigista madasha inay u ekaato badeecad.
 

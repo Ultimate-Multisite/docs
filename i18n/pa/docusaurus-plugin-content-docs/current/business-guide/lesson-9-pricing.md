@@ -3,7 +3,7 @@ title: 'ਪਾਠ 9: ਲਾਭ ਲਈ ਕੀਮਤ ਨਿਰਧਾਰਣ'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesson 9: Profit De Liye Pricing {#lesson-9-pricing-for-profit}
+# Lesson 9: Profit De Liye Pricing
 
 Lesson 5 vich assi FitSite plans de shuruaati daam set kiye si. Hun assi pricing strategy nu refine karenge, jin techniques naal revenue badhaya ja sake, upgrades ko encourage kiya ja sake, ate churn (grahak nu chhod dena) kam kiya ja sake.
 

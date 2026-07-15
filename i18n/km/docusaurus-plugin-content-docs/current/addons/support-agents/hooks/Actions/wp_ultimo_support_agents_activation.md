@@ -4,7 +4,7 @@ title: សកម្មភាព - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# សកម្មភាព៖ wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# សកម្មភាព៖ wp_ultimo_support_agents_activation
 
 អនុញ្ញាតឱ្យផ្នែកផ្សេងៗនៃ plugin ភ្ជាប់ដំណើរការរបស់ពួកគេសម្រាប់ការធ្វើឱ្យសកម្ម
 

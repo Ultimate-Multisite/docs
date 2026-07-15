@@ -3,7 +3,7 @@ title: Gratis AI Agent Sazlamalary
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Sazlamalary {#gratis-ai-agent-settings}
+# Gratis AI Agent Sazlamalary
 
 Gratis AI Agent-de **Settings → Advanced** ekrany backend integrasiýalary üçin administrator derejesindäki konfigurasiýany üpjün edýär. Bu sahypa feedback ugratmagy, gözleg üpjün ediji açarlaryny, dolandyrylýan Superdav hyzmat sazlamasyny, Google Calendar dolandyryşlaryny, TextBee SMS sazlamalaryny we tor boýunça aýratynlyk baýdaklaryny resminamalaşdyrýar.
 

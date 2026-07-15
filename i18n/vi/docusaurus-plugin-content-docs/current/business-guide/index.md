@@ -3,7 +3,7 @@ title: Xây dựng một doanh nghiệp trang web ngách
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Xây dựng mô hình kinh doanh website ngách với Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Xây dựng mô hình kinh doanh website ngách với Ultimate Multisite
 
 Hầu hết những người cố gắng bán website đều cạnh tranh về giá với Wix, Squarespace và hàng ngàn freelancer. Và họ đều thất bại. Những người thành công là những người chọn một đối tượng cụ thể, xây dựng một giải pháp phù hợp với đối tượng đó, và tính phí dựa trên giá trị họ mang lại.
 

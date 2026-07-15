@@ -3,7 +3,7 @@ title: Criar Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Criar Menu {#create-menu}
+# Criar Menu
 
 A funcionalidade **Criar Menu** cria menus de navegação do WordPress com suporte a rótulos de navegação distintos, separados dos títulos das páginas.
 

@@ -4,7 +4,7 @@ title: Sefe - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Sefe: wu_setup_wizard {#filter-wusetupwizard}
+# Sefe: wu_setup_wizard
 
 Lumella baqapi ho eketsa mehato e meng ya wizard ya ho seta.
 

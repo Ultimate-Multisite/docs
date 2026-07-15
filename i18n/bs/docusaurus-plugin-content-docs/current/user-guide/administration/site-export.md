@@ -3,7 +3,7 @@ title: Izvoz sajta
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Izvoz lokacije {#site-export}
+# Izvoz lokacije
 
 Administrativna stranica **Izvoz lokacije** (Site Export) omogućava administratorima mreže da pakuju jednu lokaciju, ili cijelu mrežu, u preuzimajući arhivu za migraciju, backup ili predaju.
 

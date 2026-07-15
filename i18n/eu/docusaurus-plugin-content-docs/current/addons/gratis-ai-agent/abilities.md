@@ -3,7 +3,7 @@ title: Gaitasunen erreferentzia
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Gaitasunen erreferentzia {#abilities-reference}
+# Gaitasunen erreferentzia
 
 Gaitasunak Gratis AI Agent-ek zure WordPress instalazioan deitu ditzakeen ekintza atomikoak dira. Gaitasun bakoitza erregistratutako PHP klase bat da, JSON eskema bat azaltzen duena — agent-ek eskema hori exekuzioan irakurtzen du, zer parametro behar diren eta gaitasunak zer itzultzen duen ulertzeko.
 

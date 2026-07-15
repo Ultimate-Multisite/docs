@@ -4,7 +4,7 @@ title: Дејство - wu_handle_add_new_domain_modal
 sidebar_label: wu_handle_add_new_domain_modal
 _i18n_hash: 77246d387c651043b47e7a466a7e892e
 ---
-# Дејство: wu_handle_add_new_domain_modal {#action-wuhandleaddnewdomainmodal}
+# Дејство: wu_handle_add_new_domain_modal
 
 Се активира пред да се обработи барањето за модалот за додавање нов домен.
 

@@ -3,7 +3,7 @@ title: Gratis AI Agent సెట్టింగ్‌లు
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent సెట్టింగ్‌లు {#gratis-ai-agent-settings}
+# Gratis AI Agent సెట్టింగ్‌లు
 
 Gratis AI Agent లోని **సెట్టింగ్‌లు → అధునాతన** స్క్రీన్, బ్యాకెండ్ అనుసంధానాల కోసం నిర్వాహక స్థాయి ఆకృతీకరణను అందిస్తుంది. ఈ పేజీ అభిప్రాయ ఫార్వార్డింగ్, శోధన ప్రదాత కీలు, నిర్వహిత Superdav సేవ సెటప్, Google Calendar నియంత్రణలు, TextBee SMS సెట్టింగ్‌లు, మరియు నెట్‌వర్క్-వ్యాప్త ఫీచర్ ఫ్లాగ్‌లను వివరిస్తుంది.
 

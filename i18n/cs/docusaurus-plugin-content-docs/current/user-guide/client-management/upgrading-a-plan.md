@@ -3,7 +3,7 @@ title: Přechod na vyšší tarif
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Upgrade plánu (v2) {#upgrading-a-plan-v2}
+# Upgrade plánu (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 

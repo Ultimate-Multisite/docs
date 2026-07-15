@@ -3,7 +3,7 @@ title: Forms de Contacte per a Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formularis de Contacte amb Site Builder {#site-builder-contact-forms}
+# Formularis de Contacte amb Site Builder
 
 Superdav AI Agent v1.10.0 afegeix la possibilitat de crear formularis de contacte directament des de l'interfície de xat utilitzant l'agent Site Builder. Això et permet afegir formularis de contacte completament funcionals a qualsevol pàgina sense haver de sortir del xat.
 

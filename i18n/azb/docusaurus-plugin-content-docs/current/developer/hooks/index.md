@@ -3,7 +3,7 @@ title: هوک‌لار مرجعی
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# هوک‌لار قایناقی {#hooks-reference}
+# هوک‌لار قایناقی
 
 Ultimate Multisite ایچینده بوتون **59 عمل** و **118 فیلتر** اوچون اؤز-اؤزونه یارانمیش سندلر.
 

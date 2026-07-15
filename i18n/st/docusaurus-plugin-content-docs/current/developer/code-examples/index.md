@@ -3,7 +3,7 @@ title: Mehlala e Tsoetseng Pele ea Khoutu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mehlala ea Khoutu e Tsoetseng Pele {#advanced-code-examples}
+# Mehlala ea Khoutu e Tsoetseng Pele
 
 Mehlala ena e bontša mekhoa e tsoetseng pele ea kopanyo le Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Viesmīlības nozares ēdienkartes
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Viesmīlības ēdienkartes {#hospitality-menus}
+# Viesmīlības ēdienkartes
 
 **Viesmīlības ēdienkartes** funkcija ļauj Theme Builder ģenerēt un iegult strukturētas ēdienu un dzērienu ēdienkaršu lapas tieši jūsu WordPress vietnē.
 

@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ṣíṣe àkópọ̀ Ultimate Multisite pẹ̀lú Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ṣíṣe àkópọ̀ Ultimate Multisite pẹ̀lú Zapier
 
 Nínú ọ̀kan lára àwọn àpilẹ̀kọ, a ti jiròrò [Webhooks](webhooks.md) àti bí a ṣe lè lò wọ́n láti ṣe àkópọ̀ pẹ̀lú àwọn ìṣàfilọ́lẹ̀ ẹni-kẹta.
 

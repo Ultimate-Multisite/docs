@@ -4,7 +4,7 @@ title: عملکرد - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# اکشن: wu_activation {#action-wuactivation}
+# اکشن: wu_activation
 
 به بخش‌های دیگر پلاگین اجازه می‌دهد تا کدهای مربوط به فعال‌سازی خود را متصل کنند.
 

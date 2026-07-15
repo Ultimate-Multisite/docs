@@ -3,7 +3,7 @@ title: Chithandizo cha Kukhazikitsa
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kodiwera Kufamba Ntchito Yopambana ndi Mwachidule kwa Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Kodiwera Kufamba Ntchito Yopambana ndi Mwachidule kwa Codeable?
 
 Mwachidule, tikufunika kukhala ndi zochitika zomwe zimapambana kuti mwayi wathu wosiyanasiyana umwe (network flows) ubonje monga tili tikufuna. Ngati ndi izi zomwe mukufuna, tikukonza [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), seya yomwe mungupatseni wopambana wosavuta ndi zozina za Ultimate Multisite.
 

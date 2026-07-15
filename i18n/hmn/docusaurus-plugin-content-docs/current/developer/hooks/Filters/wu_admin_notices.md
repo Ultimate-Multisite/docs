@@ -4,7 +4,7 @@ title: Lim - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Lim: wu_admin_notices {#filter-wuadminnotices}
+# Lim: wu_admin_notices
 
 Tso cai rau developers lim cov admin notices uas Ultimate Multisite ntxiv.
 

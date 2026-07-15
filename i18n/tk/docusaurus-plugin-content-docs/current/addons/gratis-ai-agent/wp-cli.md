@@ -3,7 +3,7 @@ title: WP-CLI salgylanmasy
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI salgylanmasy {#wp-cli-reference}
+# WP-CLI salgylanmasy
 
 Gratis AI Agent agenti ölçeg synagy etmek, ukyplary dolandyrmak we buýruk setirinden agent ýagdaýyny soramak üçin `wp gratis-ai-agent` buýruk maşgalasy bilen gelýär. Ähli buýruklar WP-CLI 2.0 ýa-da has ýokary wersiýany talap edýär.
 

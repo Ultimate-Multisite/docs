@@ -3,7 +3,7 @@ title: Configuração de Configuração e Provedor
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Vendedor de Domínio: Configuração e Configuração do Provedor {#domain-seller-setup-and-provider-configuration}
+# Vendedor de Domínio: Configuração e Configuração do Provedor
 
 O addon Vendedor de Domínio vem com um assistente de configuração guiado que o guia por cada etapa necessária. Esta página cobre o fluxo do assistente e como configurar ou reconfigurar os provedores depois.
 

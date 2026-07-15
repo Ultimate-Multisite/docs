@@ -3,7 +3,7 @@ title: Paghimo og Pasadya nga Integrasyon sa Registrar
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pagtukod og Custom nga Integrasyon sa Registrar {#building-a-custom-registrar-integration}
+# Pagtukod og Custom nga Integrasyon sa Registrar
 
 Ang Domain Seller addon naggamit og **Integration Registry** nga pattern. Ang matag registrar usa ka PHP class nga nag-implement sa `Domain_Selling_Capability` ug nagparehistro sa kaugalingon pinaagi sa `wu_domain_seller_register_capabilities` nga action hook.
 

@@ -3,7 +3,7 @@ title: Хуки та фільтри
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite: хуки та фільтри {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite: хуки та фільтри
 
 Ultimate Multisite складається з великої кількості функцій та запитів до бази даних. Плагін має хуки та фільтри, які дозволяють вам змінювати або додавати новий код до існуючих функцій.
 

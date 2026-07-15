@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# 액션: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# 액션: wp_ultimo_payfast_deactivation
 
 다른 플러그인 부분이 비활성화 루틴을 연결하도록 허용합니다.
 

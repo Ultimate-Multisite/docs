@@ -4,7 +4,7 @@ title: Чыпка - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Фильтр: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Фильтр: wu_stripe_checkout_subscription_data
 
 Stripe Subscription дайындарын фильтрлейт. success_url же cancel_url маанисин өзгөртө алат.
 

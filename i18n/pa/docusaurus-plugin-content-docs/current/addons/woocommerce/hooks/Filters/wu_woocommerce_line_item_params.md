@@ -4,7 +4,7 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 ਇਹ ਫਿਲਟਰ ਉਹ ਪੈਰਾਮੀਟਰ (parameters) ਬਦਲਦਾ ਹੈ ਜੋ WooCommerce Cart ਵਿੱਚ ਲਾਈਨ ਆਈਟਮਾਂ ਬਣਾਉਣ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਹਨ, ਜਦੋਂ ਗਾਹਕ ਨੂੰ WooCommerce checkout 'ਤੇ ਭੇਜਿਆ ਜਾਂਦਾ ਹੈ।
 

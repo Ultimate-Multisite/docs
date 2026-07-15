@@ -4,7 +4,7 @@ title: Filtru - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Filtru: wu_country_get_states {#filter-wucountrygetstates}
+# Filtru: wu_country_get_states
 
 Jirritorna l-lista ta' stati għal dan il-pajjiż.
 

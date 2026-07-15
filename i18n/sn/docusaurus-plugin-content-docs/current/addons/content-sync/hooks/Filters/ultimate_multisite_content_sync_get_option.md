@@ -4,7 +4,7 @@ title: Sefa - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Sefa: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
+# Sefa: ultimate_multisite_content_sync_get_option
 
 Inodzosa ukoshi hwe network option hwakaitwa slugified.
 

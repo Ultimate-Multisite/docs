@@ -4,7 +4,7 @@ title: Mahi - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Hohenga: wu_sso_loaded {#action-wussoloaded}
+# Hohenga: wu_sso_loaded
 
 Tukua ngā kaiwhakawhanake monomai kia tāpiri i ētahi atu hooks, mēnā e hiahiatia ana.
 

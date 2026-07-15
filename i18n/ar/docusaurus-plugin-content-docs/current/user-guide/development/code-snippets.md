@@ -3,7 +3,7 @@ title: مقتطفات الكود
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2 {#code-snippets-for-v2}
+# Code Snippets for v2
 
 بشكل أساسي، تُستخدم مقتطفات الكود لـ **WordPress** لتنفيذ إجراءات معينة قد تتطلب إضافة مكون إضافي أصغر. تُوضع هذه المقتطفات في أحد ملفات نواة WordPress أو قالبك (عادةً ملف functions.php في قالبك النشط) أو يمكن استخدامها كمكوّن MU.
 

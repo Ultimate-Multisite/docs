@@ -3,7 +3,7 @@ title: Регистрация конечной точки API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Конечная точка API регистрации Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Конечная точка API регистрации Ultimate Multisite
 
 В этом руководстве вы узнаете, как использовать конечную точку API /register Ultimate Multisite для создания полного процесса внедрения нового клиента в вашей сети и как это сделать с помощью Zapier.
 

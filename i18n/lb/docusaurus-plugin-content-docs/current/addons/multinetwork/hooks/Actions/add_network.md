@@ -4,7 +4,7 @@ title: Aktioun - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Aktioun: add_network {#action-addnetwork}
+# Aktioun: add_network
 
 Gëtt ausgeléist, nodeems en neit Netzwierk dobäigesat gouf.
 

@@ -4,7 +4,7 @@ title: फिल्टर - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# फिल्टर: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# फिल्टर: wu_membership_update_forms
 
 विकासकर्ताहरूलाई नयाँ अपडेट फारम slugs थप्न अनुमति दिन्छ।
 

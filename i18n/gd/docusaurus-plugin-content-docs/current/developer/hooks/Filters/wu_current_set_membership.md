@@ -4,7 +4,7 @@ title: Criathrag - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Criathrag: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Criathrag: wu_current_set_membership
 
 Leig le luchd-leasachaidh an giùlan bunaiteach atharrachadh agus am ballrachd làithreach a shuidheachadh ann an dòigh eile.
 

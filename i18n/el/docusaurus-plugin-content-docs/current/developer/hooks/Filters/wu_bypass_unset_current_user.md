@@ -4,7 +4,7 @@ title: Φίλτρο - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Φίλτρο: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Φίλτρο: wu_bypass_unset_current_user
 
 Επιτρέπει στους developers να παρακάμψουν τον κώδικα που αφαιρεί τον τρέχοντα χρήστη (unset current user).
 

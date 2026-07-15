@@ -3,7 +3,7 @@ title: როგორ დავინსტალიროთ WordPress Multisi
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# როგორ დავაყენო WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# როგორ დავაყენო WordPress Multisite?
 
 WordPress Multisite-ს საშუალებას გაძლევთ, ერთი ინსტალაციის ქვეშ გქონდეთ რამდენიმე ვებსაიტი. ეს არის ჩაშენებული ფუნქცია, მაგრამ ნაგულისხმევად არ არის აქტიური.
 
@@ -57,7 +57,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

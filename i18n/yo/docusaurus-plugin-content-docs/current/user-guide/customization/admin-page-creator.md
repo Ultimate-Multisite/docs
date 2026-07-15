@@ -3,7 +3,7 @@ title: Olùdá Ojú-ìwé Alábòójútó
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Admin Page Creator {#admin-page-creator}
+# Admin Page Creator
 
 Àfikún **Admin Page Creator** ló ń pèsè ẹ̀yà ara yìí.
 

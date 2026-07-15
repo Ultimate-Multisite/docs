@@ -3,7 +3,7 @@ title: Formais a chluarach
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms is tòr chuidh agus fòcas a tha a' tuiteam airson sgrùdadh de dhìon ùra gu fìdh.
 

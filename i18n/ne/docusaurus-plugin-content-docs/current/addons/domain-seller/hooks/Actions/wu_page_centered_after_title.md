@@ -4,7 +4,7 @@ title: कार्य - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# कार्य: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
+# कार्य: wu_page_centered_after_title
 
 प्लगइन विकासकर्ताहरूलाई थप बटनहरू थप्न अनुमति दिन्छ।
 

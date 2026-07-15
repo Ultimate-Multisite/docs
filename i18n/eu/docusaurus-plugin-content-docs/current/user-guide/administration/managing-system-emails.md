@@ -3,7 +3,7 @@ title: Sistema-emailak eskaintzea
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistema-emailak eskaintzea {#managing-system-emails}
+# Sistema-emailak eskaintzea
 
 Ultimate Multisite-ek esaiak gertatzen dira sistema-emailak, gertatuaren konfirmazioak, labenguenak eta talde-membresiaren hasierako albidetzak bezala. Horrek zure brand-a edo estailua erabiliz piztu dezakezu.
 

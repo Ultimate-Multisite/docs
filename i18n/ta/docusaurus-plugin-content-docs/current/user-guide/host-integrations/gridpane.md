@@ -3,7 +3,7 @@ title: GridPane ஒருங்கிணைப்பு
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane ஒருங்கிணைப்பு {#gridpane-integration}
+# GridPane ஒருங்கிணைப்பு
 
 ## மேலோட்டம் {#overview}
 GridPane என்பது தீவிர WordPress வல்லுநர்களுக்காக உருவாக்கப்பட்ட சிறப்பு WordPress hosting கட்டுப்பாட்டு பேனல் ஆகும். இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் GridPane இடையே தானியங்கி domain ஒத்திசைவு மற்றும் SSL சான்றிதழ் மேலாண்மையை செயல்படுத்துகிறது.

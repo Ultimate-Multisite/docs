@@ -4,7 +4,7 @@ title: Criathrag - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Criathrag: network_options_to_copy {#filter-networkoptionstocopy}
+# Criathrag: network_options_to_copy
 
 Criathraichidh e na roghainnean lìonra bunaiteach ri lethbhreacadh.
 

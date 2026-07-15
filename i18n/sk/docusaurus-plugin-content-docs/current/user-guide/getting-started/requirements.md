@@ -3,7 +3,7 @@ title: Požiadavky
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Požiadavky na Ultimate Multisite {#ultimate-multisite-requirements}
+# Požiadavky na Ultimate Multisite
 
 Prvým, čo si môžete pýtať, než si kúpiте Ultimate Multisite, je, aké sú požiadavky na fungovanie našej externá. Našťastne, na fungovanie Ultimate Multisite potrebujete len niekoľko základných požiadaviek: **doménu**, dobrého **hostia** a instaláciu WordPress **Multisite**. To všetko stačí!
 

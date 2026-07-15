@@ -3,7 +3,7 @@ title: Loga Athruithe Ticéad Tacaíochta
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Loga Athruithe Ticéad Tacaíochta {#support-tickets-changelog}
+# Loga Athruithe Ticéad Tacaíochta
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Feabhsaithe: Baineadh an chomhadlann vendor/ ó rianú Git (clúdaithe cheana ag .gitignore), ag laghdú mhéid an taisclainne

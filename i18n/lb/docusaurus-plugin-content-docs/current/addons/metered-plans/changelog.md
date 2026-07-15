@@ -3,7 +3,7 @@ title: Ännerungsprotokoll fir gemoosse Pläng
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Changelog fir Metered Plans {#metered-plans-changelog}
+# Changelog fir Metered Plans
 
 Versioun 1.1.0 - Verëffentlecht de 2026-05-05
 - Nei: AI-Token-Ofrechnung fir Multisite-Ënnersiten — verfollegt a verrechent AI-Token-Notzung iwwer Clientsiten hinweg mat konfiguréierbare Präisser pro Token

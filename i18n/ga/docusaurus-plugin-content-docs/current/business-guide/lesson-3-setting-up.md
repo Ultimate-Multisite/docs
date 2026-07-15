@@ -3,7 +3,7 @@ title: 'Ceacht 3: Do Líonra a Shocrú'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Ceacht 3: Do Líonra a Chur ar Bun {#lesson-3-setting-up-your-network}
+# Ceacht 3: Do Líonra a Chur ar Bun
 
 Tá sé in am tógáil. Sa cheacht seo, suiteálfaidh tú Ultimate Multisite agus cumróidh tú bunús líonra FitSite. Déantar gach cinneadh anseo agus nideoige na haclaíochta san áireamh.
 

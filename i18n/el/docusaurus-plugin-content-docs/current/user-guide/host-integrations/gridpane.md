@@ -3,7 +3,7 @@ title: Ενσωμάτωση GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ενσωμάτωση GridPane {#gridpane-integration}
+# Ενσωμάτωση GridPane
 
 ## Επισκόπηση {#overview}
 Το GridPane είναι ένας εξειδικευμένος πίνακας ελέγχου φιλοξενίας WordPress, σχεδιασμένος για επαγγελματίες του WordPress. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του GridPane.

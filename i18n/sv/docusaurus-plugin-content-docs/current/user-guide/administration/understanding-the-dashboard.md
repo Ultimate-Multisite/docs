@@ -3,7 +3,7 @@ title: Förstå instrumentpanelen
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Förstå Ultimate Multisite-panelen {#understanding-the-ultimate-multisite-dashboard}
+# Förstå Ultimate Multisite-panelen
 
 Innan vi fördjupar oss i mer avancerade konfigurationsalternativ och de operativa aspekterna av Ultimate Multisite, låt oss ta en titt på panelen.
 

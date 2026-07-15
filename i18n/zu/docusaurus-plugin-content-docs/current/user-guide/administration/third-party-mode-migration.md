@@ -3,7 +3,7 @@ title: Ukuthuthela kuModi Yezinkampani Zangaphandle
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Ukuthuthelwa kwe-Third-Party Mode {#third-party-mode-migration}
+# Ukuthuthelwa kwe-Third-Party Mode
 
 Superdav AI Agent v1.12.0 ishintsha indlela amakhono ezinkampani zangaphandle aphathwa ngayo. **Third-party mode manje ngokuzenzakalelayo iba ku-auto**, ivumela ukuhlanganiswa kwendabuko kwe-WordPress Abilities API ku-WordPress 7.0+ ngaphandle kokumisa mathupha.
 

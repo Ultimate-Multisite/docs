@@ -3,7 +3,7 @@ title: Raadinta Domain-ka ee Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Raadinta Domain-ka ee Header-ka {#header-domain-search}
+# Raadinta Domain-ka ee Header-ka
 
 Adeegso dejintan marka aad rabto foom yar oo header-ka ku jira kaas oo bilaaba raadinta domain-ka, kadibna u oggolaada macmiilka inuu ka doorto domain-nada la heli karo gudaha hubinta bixinta ee Ultimate Multisite.
 

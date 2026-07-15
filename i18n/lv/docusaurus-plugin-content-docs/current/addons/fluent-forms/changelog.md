@@ -3,7 +3,7 @@ title: Fluent Forms izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms izmaiņu žurnāls {#fluent-forms-changelog}
+# Fluent Forms izmaiņu žurnāls
 
 Versija: 2.0.1 - Izlaista 2025-09-28
 

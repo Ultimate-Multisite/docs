@@ -3,7 +3,7 @@ title: Ordainketak jasotzea
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ordaintzea (v2) {#getting-paid-v2}
+# Ordaintzea (v2)
 
 _**OHAR GARRANTZITSUA: artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 

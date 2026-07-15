@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filter: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Filter: wu_sites_column_limit
 
 நெட்வொர்க்கிற்குள் (network) உள்ள `get_pluginssites` செயல்பாட்டிற்கான மதிப்பை மாற்றப் பயன்படும் ஒரு Filter இது.
 

@@ -4,7 +4,7 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Φίλτρο: wu_admin_notices {#filter-wuadminnotices}
+# Φίλτρο: wu_admin_notices
 
 Επιτρέπει στους developers να φιλτράρουν τις ειδοποιήσεις του admin που προσθέτει το Ultimate Multisite.
 

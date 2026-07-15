@@ -3,7 +3,7 @@ title: Cyfderau cyffredinol
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Cyfderch Internet {#internet-search}
+# Cyfderch Internet
 
 Mae Gratis AI Agent v1.5.0 yn ychwanegu fäith **Cyfderch Internet** (Internet Search) sy'n sylw'r AI assistant i gael wybodaeth allweddol o'r web yn ystod siarad. Mae hyn yn cael ei gyflawni gan [Brave Search API](https://brave.com/search/api/) neu [Tavily API](https://tavily.com/).
 

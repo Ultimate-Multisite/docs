@@ -3,7 +3,7 @@ title: Cyflogau a Gwrthdrefnu Autoddef yn Adranau Siat
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search a Chwarae a Gwahanion yn Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search a Chwarae a Gwahanion yn Site Templates (v2)
 
 _**Mae angen i'r WP UItimo ffurfennau 2.x.**_
 

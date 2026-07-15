@@ -3,7 +3,7 @@ title: 'Leksjon 12: Å drive virksomheten'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leksjon 12: Å drive virksomheten {#lesson-12-running-the-business}
+# Leksjon 12: Å drive virksomheten
 
 En plattform er ikke et prosjekt du fullfører – det er en virksomhet du driver. Denne leksjonen dekker den daglige driften av å administrere FitSite: support, fakturering, vedlikehold og hvordan du holder kundene fornøyde.
 

@@ -3,7 +3,7 @@ title: REST API ikuspegi orokorra
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API erreferentzia {#rest-api-reference}
+# REST API erreferentzia
 
 ## Oinarrizko konfigurazioa {#base-configuration}
 

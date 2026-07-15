@@ -4,7 +4,7 @@ title: Aðgerð - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Sérsniðinni action bætt við hér svo við höfum stað til að setja scripts og styles í biðröð eftir þörfum\ og tryggja að þau hlaðist aðeins á réttum síðum
 

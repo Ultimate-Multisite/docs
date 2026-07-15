@@ -3,7 +3,7 @@ title: Агляд REST API
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Даведнік REST API {#rest-api-reference}
+# Даведнік REST API
 
 ## Базавая канфігурацыя {#base-configuration}
 

@@ -3,7 +3,7 @@ title: Чек-آوت قىلىش فیلدى ۋە مى้ําل DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Сапоқ (Checkout) Sahasi va Muxlis DNS Boshqaruvi {#checkout-field-and-customer-dns-management}
+# Сапоқ (Checkout) Sahasi va Muxlis DNS Boshqaruvi
 
 ## Domen Tanlash sahası {#the-domain-selection-checkout-field}
 

@@ -3,7 +3,7 @@ title: Stripe സജ്ജീകരിക്കുന്നു
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe ഗേറ്റ്‌വേ സജ്ജീകരിക്കുന്ന വിധം (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe ഗേറ്റ്‌വേ സജ്ജീകരിക്കുന്ന വിധം (v2)
 
 _**പ്രധാന കുറിപ്പ്: ഈ ലേഖനം Ultimate Multisite പതിപ്പ് 2.x-നെ കുറിച്ചാണ്.**_
 

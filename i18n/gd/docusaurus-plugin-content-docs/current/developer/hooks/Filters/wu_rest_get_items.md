@@ -4,7 +4,7 @@ title: Criathrag - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Criathrag: wu_rest_get_items {#filter-wurestgetitems}
+# Criathrag: wu_rest_get_items
 
 Criathraich a bheil e ceadaichte leantainn air adhart leis an iarrtas no nach eil.
 

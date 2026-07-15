@@ -3,7 +3,7 @@ title: 'Lezzjoni 8: L-Integrazzjoni tal-Klijenti'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lezzjoni 8: Onboarding tal-Klijenti {#lesson-8-customer-onboarding}
+# Lezzjoni 8: Onboarding tal-Klijenti
 
 Li ġġiegħel klijent jirreġistra huwa biss nofs ix-xogħol. Jekk jidħol, iħossu mgħobbi żżejjed, u qatt ma jerġa’ jiġi lura, tkun tliftu. Din il-lezzjoni tfassal l-esperjenza li tbiddel reġistrazzjoni ġdida f’klijent attiv u impenjat.
 

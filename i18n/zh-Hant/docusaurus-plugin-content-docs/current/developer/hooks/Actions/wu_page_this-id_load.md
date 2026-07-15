@@ -4,7 +4,7 @@ title: '動作 - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
+# Action: wu_page_{$this->id}_load
 
 讓外掛開發者能夠為我們的頁面新增額外的鉤子（hooks）。
 

@@ -4,7 +4,7 @@ title: Iragazkia - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Iragazkia: wu_setup_wizard {#filter-wusetupwizard}
+# Iragazkia: wu_setup_wizard
 
 Garatzaileei konfigurazio-morroiaren urrats gehigarriak gehitzeko aukera ematen die.
 

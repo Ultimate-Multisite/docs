@@ -3,7 +3,7 @@ title: የጣቢያ ኤክስፖርት
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# የጣቢያ ኤክስፖርት (Site Export) {#site-export}
+# የጣቢያ ኤክስፖርት (Site Export)
 
 የ**Site Export** የአስተዳሚ ገጽ የኔትወርክ አስተዳዳሪዎችን አንድ ጣቢያን፣ ወይም መላውን ኔትወርክ፣ ለዝውውር (migration)፣ ለጥቅም (backup) ወይም ለሌላ አካል ለማስረከብ በሚቻል አርካይቭ (downloadable archive) ውስጥ እንዲያከማቹ የሚያስችል ቦታ ነው።
 

@@ -4,7 +4,7 @@ title: 抱歉，我没有收到需要翻译的具体内容。请把要翻译的 
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# 过滤器: wu_setup_wizard {#filter-wusetupwizard}
+# 过滤器: wu_setup_wizard
 
 允许开发者添加额外的设置向导步骤。
 

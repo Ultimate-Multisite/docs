@@ -3,7 +3,7 @@ title: Amakhono Aqaphela Itimu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Amakhono Aqaphela Itimu {#theme-aware-skills}
+# Amakhono Aqaphela Itimu
 
 Superdav AI Agent v1.10.0 iza namakhono amasha amane akhelwe ngaphakathi aqaphela itimu, azivumelanisa ngokuzenzakalelayo netimu yakho esebenzayo ye-WordPress. Lawa makhono ahlinzeka ngesiqondiso esikhethekile namakhono ahambisana nesakhiwo nezici zetimu yakho.
 

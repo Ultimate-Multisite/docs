@@ -4,7 +4,7 @@ title: Filtro - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filtro: wu_sso_enabled {#filter-wussoenabled}
+# Filtro: wu_sso_enabled
 
 Activa/desactiva a capacidade de inicio de sesión único entre dominios.
 

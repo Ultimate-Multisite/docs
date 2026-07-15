@@ -3,7 +3,7 @@ title: Ukuqinisekiswa Kokuthutha Okuzimele
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Ukuqinisekiswa Kokufuduswa Okuzimele {#sovereign-migration-verification}
+# Ukuqinisekiswa Kokufuduswa Okuzimele
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ihlanganisa imiyalo yokuqinisekisa ye-WP-CLI yokufuduswa kwabaqashi abazimele. Yisebenzise lapho ukufuduswa komqashi, ukuvakasha kwe-SSO, noma ukufakwa okuhlukanisiwe kungaziphathi njengoba kulindelekile.
 

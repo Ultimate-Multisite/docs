@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# କାର୍ଯ୍ୟ: wu_duplicate_site {#action-wuduplicatesite}
+# କାର୍ଯ୍ୟ: wu_duplicate_site
 
 ସାଇଟ୍ ନକଲ ହେବା ପରେ ବିକାଶକାରୀମାନଙ୍କୁ ହୁକ୍ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

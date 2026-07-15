@@ -4,7 +4,7 @@ title: Nzacha - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Nzacha: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Nzacha: mu_migration/export/user/headers
 
 Na-enyocha set ndabara nke isiokwu onye ọrụ a ga-ebupụ/bubata.
 

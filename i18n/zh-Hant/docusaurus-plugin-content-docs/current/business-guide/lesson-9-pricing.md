@@ -3,7 +3,7 @@ title: 課程九：為利定價
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 第九課：為利潤定價 {#lesson-9-pricing-for-profit}
+# 第九課：為利潤定價
 
 在第五課中，我們為 FitSite 規劃了初始的方案價格。現在，我們將使用一些技術來完善定價策略，以提高收入、鼓勵升級並降低客戶流失率。
 

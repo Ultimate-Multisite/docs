@@ -4,7 +4,7 @@ title: Gnìomh - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
+# Action: wu_checkout_order_created
 
 Thèid a chur an gnìomh às dèidh don òrdugh checkout a bhith air a chur ri chèile gu tur.
 

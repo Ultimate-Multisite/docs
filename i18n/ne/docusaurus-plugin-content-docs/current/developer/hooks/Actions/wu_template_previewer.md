@@ -4,7 +4,7 @@ title: कार्य - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 टेम्प्लेट पूर्वावलोकनकर्ता सन्दर्भभित्र हुँदा चल्छ।
 

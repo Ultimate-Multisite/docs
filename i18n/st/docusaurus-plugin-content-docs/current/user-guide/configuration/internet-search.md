@@ -3,11 +3,11 @@ title: Ho hlobo ea internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Ho Hloboho (Internet Search) {#internet-search}
+# Ho Hloboho (Internet Search)
 
 Gratis AI Agent v1.5.0 e ntse na boitshwaro joalo la **Internet Search**. Le tla ntho e tlhola mofuta o o tsamaea le bohlokoa ho ba le ka botshelo, e ntse e fana ka litlhahiselo tse di fetang mo web. Le se se fana ke [Brave Search API](https://brave.com/search/api/) kapa [Tavily API](https://tavily.com/).
 
-# Ka Matlae A Re: Ka Hoetso {#how-it-works}
+# Ka Matlae A Re: Ka Hoetso
 
 Ka hoetso ka sefalo, ke lefa le fetang le sefalo. Ke tla u reka hore na lefa le fetang le sefalo le sefalo se fana ka eng.
 

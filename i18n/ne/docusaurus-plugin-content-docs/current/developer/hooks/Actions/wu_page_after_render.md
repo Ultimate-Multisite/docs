@@ -4,7 +4,7 @@ title: कार्य - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# कार्य: wu_page_after_render {#action-wupageafterrender}
+# कार्य: wu_page_after_render
 
 हामीले पृष्ठ प्रिन्ट गरेपछि plugin विकासकर्ताहरूलाई थप सामग्री थप्न अनुमति दिनुहोस्
 

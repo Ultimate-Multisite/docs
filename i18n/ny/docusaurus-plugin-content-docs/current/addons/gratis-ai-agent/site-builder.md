@@ -3,7 +3,7 @@ title: Kugwirizanitsa kwa Womanga Tsamba v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Kuwongolera kwa Womanga Tsamba v2 {#site-builder-orchestration-v2}
+# Kuwongolera kwa Womanga Tsamba v2
 
 Kuwongolera kwa Womanga Tsamba v2 (koyambitsidwa mu Gratis AI Agent v1.4.0) ndi injini yomwe imayendetsa kupanga mawebusayiti a magawo angapo. Mukapempha agent kuti "apange webusayiti ya malo odyera" kapena "apange portfolio yokhala ndi blog", orchestrator imagawa cholinga chachikulu chimenecho kukhala **dongosolo** lokhazikika, imapeza ma plugin ofunikira kuti akwaniritse, imachita sitepe iliyonse motsatizana, imatsatira kupita patsogolo, ndipo imadzichiritsa yokha ku zolakwika.
 

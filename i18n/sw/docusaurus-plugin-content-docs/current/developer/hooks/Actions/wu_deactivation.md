@@ -4,7 +4,7 @@ title: Kitendo - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Hatua: wu_deactivation {#action-wudeactivation}
+# Hatua: wu_deactivation
 
 Inaruhusu sehemu zingine za plugin kuunganisha utaratibu wao wa kufuta (deactivation).
 

@@ -3,7 +3,7 @@ title: Kenapa Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kenapa Ultimate Multisite {#why-ultimate-multisite}
+# Kenapa Ultimate Multisite
 
 Yen sampeyan maca artikel iki, mungkin sampeyan wis krungu yen plugin kita bisa dadi solusi kanggo ngwujudkan ide bisnis sampeyan. Kita ngarep-arep sampeyan bakal nemokake jawaban sing dibutuhake sadurunge akhir tulisan iki.
 

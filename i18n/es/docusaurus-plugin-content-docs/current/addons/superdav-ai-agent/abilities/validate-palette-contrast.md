@@ -3,7 +3,7 @@ title: Validar Contraste de Paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validar el Contraste de la Paleta {#validate-palette-contrast}
+# Validar el Contraste de la Paleta
 
 La función **Validate Palette Contrast** comprueba los pares de colores de tu paleta de diseño para asegurar el cumplimiento de WCAG (Pautas de Accesibilidad al Contenido Web) antes de aplicarlos a tu tema.
 

@@ -3,7 +3,7 @@ title: Amamenyu Okungenisa Izihambi
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Amamenyu Ezihambi {#hospitality-menus}
+# Amamenyu Ezihambi
 
 Isici se-**Hospitality Menus** sivumela i-Theme Builder ukuthi ikhiqize futhi ifake amakhasi amamenyu okudla neziphuzo ahlelekile ngqo kusayithi lakho le-WordPress.
 

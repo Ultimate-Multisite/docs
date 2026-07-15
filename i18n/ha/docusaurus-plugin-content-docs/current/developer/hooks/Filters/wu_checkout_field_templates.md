@@ -4,7 +4,7 @@ title: Tace - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Tacewa: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Tacewa: wu_checkout_field_templates
 
 APIs ɗinmu don ƙara sabbin samfuran filaye suna haɗuwa a nan.
 

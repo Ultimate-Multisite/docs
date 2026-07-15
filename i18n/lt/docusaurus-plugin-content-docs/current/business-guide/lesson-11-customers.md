@@ -3,7 +3,7 @@ title: 'Pamoka 11: Klientų paieška'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# 11 pamoka: Klientų paieška {#lesson-11-finding-customers}
+# 11 pamoka: Klientų paieška
 
 Puiki platforma be klientų tėra hobis. Šioje pamokoje aptarsime, kaip pritraukti klientų nišinėje vertikalėje – strategijas, kurios veikia būtent todėl, kad esate susitelkę į vieną industriją.
 

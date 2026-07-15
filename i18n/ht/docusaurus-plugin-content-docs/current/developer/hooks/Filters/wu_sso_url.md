@@ -4,7 +4,7 @@ title: Filtè - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filtè: wu_sso_url {#filter-wussourl}
+# Filtè: wu_sso_url
 
 Li filtre URL SSO yo ki jenere anvan yo retounen pou aksyon kliyan ant domèn.
 

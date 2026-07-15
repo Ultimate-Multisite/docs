@@ -3,7 +3,7 @@ title: 'پۆلێسە ٣: ڕێکخستنی تۆڕەکەت'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# سبق ٣: راکردن تۆڕەکەت {#lesson-3-setting-up-your-network}
+# سبق ٣: راکردن تۆڕەکەت
 
 کاتییە بۆ دروستکردن. لەم وانەدا Ultimate Multisite دەدات و بنەمای FitSite networkەکە ڕێکدەخەیت. هەموو بڕیارێک لێرەدا بە دۆخی فێرتکردن (fitness niche) لەبەرچاو دەدرێت.
 

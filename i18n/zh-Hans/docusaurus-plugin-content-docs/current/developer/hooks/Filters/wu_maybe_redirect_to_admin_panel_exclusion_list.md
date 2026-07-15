@@ -4,7 +4,7 @@ title: 过滤 - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# Filter: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# Filter: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 创建一个参数排除列表，以防止自动重定向。
 

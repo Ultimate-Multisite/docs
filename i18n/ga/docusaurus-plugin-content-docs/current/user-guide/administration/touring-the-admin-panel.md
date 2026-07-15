@@ -3,7 +3,7 @@ title: Turlá ar an Panel Árannach
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Touradh an Panel Admin {#touring-the-admin-panel}
+# Touradh an Panel Admin
 
 Tá an Ultimate Multisite ag cur ách an tairbhealla agus ag bheith go bhfuil sé is gluaid agus is fada ar chuid a chur i gceann, ach le cur chun cinn seo ceart, is féidir leis anseo cabhrú duit a bheith ag iarraidh turas. Déanann méid an panel admin seo chun cabhrú duit a bheith ag iarraidh turas.
 

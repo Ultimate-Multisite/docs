@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Шүүлтүүр: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Шүүлтүүр: wu_post_count_statuses
 
 plugin хөгжүүлэгчдэд ямар нийтлэлийн төлөвийг тоолохыг өөрчлөх боломж олгоно. Анхдагчаар нийтлэгдсэн болон хувийн нийтлэлүүдийг тоолдог
 

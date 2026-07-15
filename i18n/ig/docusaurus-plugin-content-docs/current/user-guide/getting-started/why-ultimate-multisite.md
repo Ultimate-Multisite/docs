@@ -3,7 +3,7 @@ title: Ebe ọ bụ Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Why Ultimate Multisite {#why-ultimate-multisite}
+# Why Ultimate Multisite
 
 Ka ịbụ n'aka ozi a, gị gịnị bụ na plugin anyị ga-anọchịta ma ọ bụ ihe ga-anọchịta maka ịgbasa ahia ịgba ide business gị tso. Anyị na-agba na ị ga-enwe ihe ndị dị m n'aka nke a.
 

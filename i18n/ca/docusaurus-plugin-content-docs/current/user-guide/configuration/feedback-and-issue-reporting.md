@@ -3,7 +3,7 @@ title: Feedback i informes d'incidentes de clients
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback i Reportatge de Problemes de l'Usuari {#customer-feedback--issue-reporting}
+# Feedback i Reportatge de Problemes de l'Usuari
 
 Gratis AI Agent v1.5.0 incorpora un sistema intern de feedback i reportatge de problemes que permet als usuaris finals marcar respostes que no són útils i reportar problemes directament des de l'interfecció de xat. Aquest sistema inclou la gestió del consentiment, un comodín de reportatge automatitzat i un triatge assistit per IA a la capa *backend*.
 

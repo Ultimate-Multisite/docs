@@ -3,7 +3,7 @@ title: 'Leciono 4: Konstruado de niĉaj ŝablonoj'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leciono 4: Konstrui Niĉajn Ŝablonojn {#lesson-4-building-niche-templates}
+# Leciono 4: Konstrui Niĉajn Ŝablonojn
 
 Ŝablonoj estas la kerno de via niĉa valorpropono. Posedanto de taŭgeca studio, kiu registriĝas kaj vidas retejon kiu jam aspektas kiel taŭgeca retejo -- kun klas-horaroj, trejnistaj profiloj, kaj la ĝusta bildaro -- multe pli verŝajne restos ol iu, kiu vidas malplenan kanvason.
 

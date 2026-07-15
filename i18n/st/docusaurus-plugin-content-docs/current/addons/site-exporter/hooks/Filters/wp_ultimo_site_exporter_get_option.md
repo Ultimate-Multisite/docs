@@ -4,7 +4,7 @@ title: Sefa - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Sefe: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# Sefe: wp_ultimo_site_exporter_get_option
 
 E khutlisa boleng ba khetho ya netweke bo entsweng slugfield.
 

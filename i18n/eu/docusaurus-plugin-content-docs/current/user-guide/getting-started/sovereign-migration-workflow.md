@@ -3,7 +3,7 @@ title: Fluxu migrazioa soberanoa
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migrazio Fluxuua {#sovereign-migration-workflow}
+# Sovereign Migrazio Fluxuua
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 has añade gate-akizketa migrazioa egindura standard subsite bat sozin txartzeen tenent infrastrukturako.
 

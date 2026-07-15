@@ -3,7 +3,7 @@ title: WP-CLI Sanggunian
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference {#wp-cli-reference}
+# WP-CLI Reference
 
 Ang Gratis AI Agent ay may kasamang `wp gratis-ai-agent` command family para sa pagsubok (benchmarking) sa agent, pamamahala ng mga kakayahan (abilities), at pagkuha ng status ng agent mula sa command line. Kailangan ng lahat ng utos na ito ang WP-CLI 2.0 o mas mataas.
 

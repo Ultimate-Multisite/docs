@@ -4,7 +4,7 @@ title: Lim - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Lim: network_options_to_copy {#filter-networkoptionstocopy}
+# Lim: network_options_to_copy
 
 Lim cov kev xaiv network qub uas yuav theej.
 

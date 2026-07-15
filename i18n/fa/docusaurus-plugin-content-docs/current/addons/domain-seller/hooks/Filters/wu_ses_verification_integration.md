@@ -4,7 +4,7 @@ title: فیلتر - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# فیلتر: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# فیلتر: wu_ses_verification_integration
 
 فیلتر: به کدهای دیگر اجازه می‌دهد تا آبجکت یکپارچه‌سازی SES را فراهم کنند.
 

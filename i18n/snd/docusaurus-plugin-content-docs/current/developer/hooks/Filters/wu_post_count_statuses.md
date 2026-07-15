@@ -4,7 +4,7 @@ title: فلٽر - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 plugin ڊولپرن کي اجازت ڏيو ته هو تبديل ڪري سگهن ته ڪهڙي پوسٽ حالت ڳڻپ ۾ آڻڻي آهي. ڊفالٽ طور، شايع ٿيل ۽ خانگي پوسٽون ڳڻيون وينديون آهن
 

@@ -3,7 +3,7 @@ title: PayPal সেট কৰা
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal গেটৱে সেট কৰা (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal গেটৱে সেট কৰা (v2)
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টি Ultimate Multisiteৰ version 2.x লৈ কথা পাতে।**_
 

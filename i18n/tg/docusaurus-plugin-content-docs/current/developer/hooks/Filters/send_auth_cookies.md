@@ -4,7 +4,7 @@ title: Филтр - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Филтр: send_auth_cookies {#filter-sendauthcookies}
+# Филтр: send_auth_cookies
 
 Имкон медиҳад, ки аз воқеан фиристода шудани auth cookies ба муштарӣ пешгирӣ шавад.
 

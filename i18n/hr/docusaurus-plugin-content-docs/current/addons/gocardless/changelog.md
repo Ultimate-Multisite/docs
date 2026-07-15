@@ -3,7 +3,7 @@ title: GoCardless Dnevnik promjena
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Dnevnik promjena {#gocardless-changelog}
+# GoCardless Dnevnik promjena
 
 Verzija: 1.0.3 - Objavljeno 2026-05-05
 * Ispravak: Napuštene web-stranice na čekanju sada se čiste kada se GoCardless članstvo otkaže dok je u stanju čekanja ili na čekanju

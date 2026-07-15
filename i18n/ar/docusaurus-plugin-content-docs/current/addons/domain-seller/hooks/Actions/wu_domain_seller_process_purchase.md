@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# الإجراء: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# الإجراء: wu_domain_seller_process_purchase
 
 يتم تشغيل هذا الإجراء عند معالجة عملية شراء نطاق بعد إكمال الدفع.
 

@@ -4,7 +4,7 @@ title: Tātari - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Tātari: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# Tātari: wu_captcha_error_message
 
 Tātaria te karere hapa captcha.
 

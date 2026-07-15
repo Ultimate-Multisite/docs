@@ -3,7 +3,7 @@ title: 'Leciono 11: Trovado de klientoj'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leciono 11: Trovi Klientojn {#lesson-11-finding-customers}
+# Leciono 11: Trovi Klientojn
 
 Bonega platformo sen klientoj estas nur hobio. Ĉi tiu leciono traktas kiel akiri klientojn en niĉa vertikalo -- strategioj kiuj funkcias specife ĉar vi fokusiĝas al unu industrio.
 

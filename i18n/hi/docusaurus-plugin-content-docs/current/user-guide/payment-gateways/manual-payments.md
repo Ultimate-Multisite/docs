@@ -3,7 +3,7 @@ title: मैन्युअल भुगतान सेट करना
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# मैनुअल भुगतान सेट करना (v2) {#setting-up-manual-payments-v2}
+# मैनुअल भुगतान सेट करना (v2)
 
 _**महत्वपूर्ण नोट: यह लेख Ultimate Multisite संस्करण 2.x से संबंधित है।**_
 

@@ -3,7 +3,7 @@ title: تۆماری گۆڕانکارییەکانی AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# گۆڕانکارییەکانی AffiliateWP {#affiliatewp-changelog}
+# گۆڕانکارییەکانی AffiliateWP
 
 وەشان: 2.0.1 - بڵاوکراوەتەوە لە 2025-09-28
 

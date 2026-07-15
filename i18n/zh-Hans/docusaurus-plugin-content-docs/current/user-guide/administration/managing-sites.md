@@ -3,7 +3,7 @@ title: 管理站点
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# 管理站点 {#managing-sites}
+# 管理站点
 
 站点（或子站点）是您的 WaaS 业务核心。Ultimate Multisite 有三种类型的站点：
 

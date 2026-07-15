@@ -3,7 +3,7 @@ title: Príbeh migračného pracovného toku Sovereign
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Príbeh migrácie suverénnej architektúry {#sovereign-migration-workflow}
+# Príbeh migrácie suverénnej architektúry
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 pridáva brány pre verifikáciu migrácie pri presmove sa štandardného subportálu do infraštruktúry suverénneho tenanta.
 

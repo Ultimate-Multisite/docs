@@ -3,7 +3,7 @@ title: ھەق ئېلىش
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# پۇل ئېلىش (v2) {#getting-paid-v2}
+# پۇل ئېلىش (v2)
 
 _**مۇھىم ئەسكەرتىش: بۇ ماقالە Ultimate Multisite نىڭ 2.x نەشرىنى كۆرسىتىدۇ.**_
 

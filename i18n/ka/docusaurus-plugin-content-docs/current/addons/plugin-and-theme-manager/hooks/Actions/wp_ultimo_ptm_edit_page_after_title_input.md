@@ -4,7 +4,7 @@ title: ქმედება - wp_ultimo_ptm_edit_page_after_title_input
 sidebar_label: wp_ultimo_ptm_edit_page_after_title_input
 _i18n_hash: 7a4980304b0ebf019e3d4044eb566adc
 ---
-# მოქმედება: wp_ultimo_ptm_edit_page_after_title_input {#action-wpultimoptmeditpageaftertitleinput}
+# მოქმედება: wp_ultimo_ptm_edit_page_after_title_input
 
 საშუალება მიეცით plugin-ის დეველოპერებს, დაამატონ დამატებითი ინფორმაცია ტექსტის შეყვანის ველის ქვემოთ
 

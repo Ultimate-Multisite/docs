@@ -3,7 +3,7 @@ title: Mbiri ya Zosintha za PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Mbiri ya Zosintha za PayFast {#payfast-changelog}
+# Mbiri ya Zosintha za PayFast
 
 Version: 1.0.2 - Yatulutsidwa pa 2025-09-28
 

@@ -3,7 +3,7 @@ title: Keeb Kwm Hloov Tshiab ntawm Cov Phiaj Xwm Ntsuas Raws Kev Siv
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Keeb Kwm Hloov Pauv Metered Plans {#metered-plans-changelog}
+# Keeb Kwm Hloov Pauv Metered Plans
 
 Version 1.1.0 - Tso tawm hnub 2026-05-05
 - Tshiab: AI token billing rau multisite subsites — taug qab thiab sau nqi rau kev siv AI token thoob plaws cov site ntawm cov neeg siv khoom, nrog tus nqi ib-token uas teeb tau

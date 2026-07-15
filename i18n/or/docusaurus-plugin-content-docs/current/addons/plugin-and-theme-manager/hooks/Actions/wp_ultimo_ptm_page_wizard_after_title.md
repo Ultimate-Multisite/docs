@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# କାର୍ଯ୍ୟ: wp_ultimo_ptm_page_wizard_after_title
 
 plugin ବିକାଶକମାନଙ୍କୁ ତାଲିକା ପୃଷ୍ଠାରେ ଅତିରିକ୍ତ ବଟନ୍ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

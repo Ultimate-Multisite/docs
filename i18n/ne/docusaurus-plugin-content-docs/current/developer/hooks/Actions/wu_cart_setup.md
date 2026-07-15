@@ -4,7 +4,7 @@ title: कार्य - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# कार्य: wu_cart_setup {#action-wucartsetup}
+# कार्य: wu_cart_setup
 
 विकासकर्ताहरूलाई checkout वस्तुमा थप परिवर्तनहरू गर्न अनुमति दिनुहोस्।
 

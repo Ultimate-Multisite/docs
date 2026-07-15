@@ -3,7 +3,7 @@ title: 'Thuto ea 1: Hobaneng Karolo e Ikhethang e Hlola'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Thuto ea 1: Hobaneng Niche e Hlola {#lesson-1-why-niche-wins}
+# Thuto ea 1: Hobaneng Niche e Hlola
 
 Pele re ama software efe kapa efe, o hloka ho utlwisisa hore na hobaneng ho aha bakeng sa bamamedi ba itseng e le qeto e le nngwe ya bohlokwa ka ho fetisisa eo o tla e etsa.
 

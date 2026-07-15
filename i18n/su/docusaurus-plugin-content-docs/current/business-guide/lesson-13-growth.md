@@ -3,7 +3,7 @@ title: 'Palajaran 13: Ningkatkeun Skala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Palajaran 13: Ngagedékeun Skala {#lesson-13-scaling-up}
+# Palajaran 13: Ngagedékeun Skala
 
 Anjeun geus boga platform anu jalan jeung palanggan anu mayar. Palajaran ieu ngabahas kumaha tumuwuh tina operasi leutik jadi bisnis anu lestari -- ngagedékeun skala infrastruktur, ngaotomatisasi operasi, jeung ningkatkeun panghasilan per palanggan.
 

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# ଫିଲ୍ଟର: wu_rest_update_item {#filter-wurestupdateitem}
+# ଫିଲ୍ଟର: wu_rest_update_item
 
 ଅନୁରୋଧ ସହିତ ଆଗକୁ ବଢ଼ିବାକୁ ଅନୁମତି ଅଛି କି ନାହିଁ, ତାହା ଫିଲ୍ଟର କରେ।
 

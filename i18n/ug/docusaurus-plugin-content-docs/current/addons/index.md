@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite قوشۇمچىلىرى {#ultimate-multisite-addons}
+# Ultimate Multisite قوشۇمچىلىرى
 
 قوشۇمچىلار Ultimate Multisite نى قوشۇمچە ئىقتىدارلار ۋە بىرىكتۈرۈشلەر بىلەن كېڭەيتىدۇ. كۆپىنچە قوشۇمچىلار ھەقلىق بولۇپ، [ultimatemultisite.com](https://ultimatemultisite.com) دىن سېتىۋالغىلى بولىدۇ.
 

@@ -3,7 +3,7 @@ title: PRO тэма
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Кастымізацыя вашай адміннай панэлі з PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Кастымізацыя вашай адміннай панэлі з PRO Theme
 
 Часта, калі мы працуем з кліентамі, нам трэба прадастаўляць ім кастымізаваны досвед у адмін-панэлі (dashboard) WordPress. Калі вы шукаеце больш прафесійны выгляд і пачуццё, PRO Theme можа вам дапамагчы.
 

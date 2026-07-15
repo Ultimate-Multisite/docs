@@ -3,7 +3,7 @@ title: Kaitiakitanga o ngā raupare me ngā invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Whakawhanaungatanga me Pākehā (Managing Payments and Invoices) {#managing-payments-and-invoices}
+# Whakawhanaungatanga me Pākehā (Managing Payments and Invoices)
 
 ## Whakawhanaunga o Ngā Rautaki Rautaki (Payment Settings) {#payment-settings}
 

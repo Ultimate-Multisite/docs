@@ -3,7 +3,7 @@ title: گواستنەوەی ئۆدەی سێیه‌ری
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# انتقال به حالت ثالث (Third-Party Mode Migration) {#third-party-mode-migration}
+# انتقال به حالت ثالث (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 شێوازی کارکردنی تواناکانی تری (third-party abilities) دەگۆڕێت. **حاڵی third-party mode ئێستا بە پێی پیش‌دۆزەوە (auto) دەستپێدەکات**، ئەمەش ڕێگە دەدات APIی WordPress Abilities لە WordPress 7.0 و بەرزترەکاندا بە شێوەیەکی سروشتی یەکبەرێت، بدون پێویستی بۆ ڕێکخستنی دەستکرد.
 

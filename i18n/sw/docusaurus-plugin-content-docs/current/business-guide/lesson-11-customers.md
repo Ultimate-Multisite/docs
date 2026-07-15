@@ -3,7 +3,7 @@ title: 'Somada 11: Kutafuta Wateja'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Somo la 11: Kutafuta Wateja {#lesson-11-finding-customers}
+# Somo la 11: Kutafuta Wateja
 
 Jukwaa zuri bila wateja ni kama burudani tu. Somo hili linazungumzia jinsi ya kupata wateja katika eneo maalum (niche vertical) — mikakati inayofanya kazi kwa sababu umelenga sekta moja tu.
 

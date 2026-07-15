@@ -3,7 +3,7 @@ title: Hostinger Çoklu Kiralamalar
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0، Hostinger multi-tenancy (چند مالکیت) قابلیت اضافه کرد تا میزبانی شده دامنه‌ها بتوانند در کنار ادغام نقشه‌برداری دامنه موجود با تنظیمات جدید، در فرآیند فراهم کردن مستأجران حاکمیتی شرکت کنند.
 

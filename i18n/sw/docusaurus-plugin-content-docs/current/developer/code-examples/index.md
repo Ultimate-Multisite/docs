@@ -3,7 +3,7 @@ title: Mfano wa Msimbo wa Juu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mifano ya Msimbo ya Kiwango cha Juu {#advanced-code-examples}
+# Mifano ya Msimbo ya Kiwango cha Juu
 
 Mifano hii inadhihirisha mifumo ya kuunganisha (integration) ya kina na Ultimate Multisite.
 

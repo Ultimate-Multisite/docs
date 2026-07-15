@@ -4,7 +4,7 @@ title: 필터 - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# 필터: wu_pre_save_settings {#filter-wupresavesettings}
+# 필터: wu_pre_save_settings
 
 개발자가 Ultimate Multisite에 의해 저장되기 전에 설정을 필터링할 수 있도록 허용합니다.
 

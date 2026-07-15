@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# फ़िल्टर: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# फ़िल्टर: wu_checkout_form_base_domains
 
 साझा चेकआउट-फ़ॉर्म आधार डोमेन फ़िल्टर करता है, जिन्हें मैप किए गए डोमेन रिकॉर्ड नहीं बनना चाहिए।
 

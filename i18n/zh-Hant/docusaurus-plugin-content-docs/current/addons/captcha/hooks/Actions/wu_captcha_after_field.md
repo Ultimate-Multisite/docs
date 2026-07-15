@@ -4,7 +4,7 @@ title: 動作 - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# 動作：wu_captcha_after_field {#action-wucaptchaafterfield}
+# 動作：wu_captcha_after_field
 
 此動作在驗證碼欄位渲染完成後觸發。
 

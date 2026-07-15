@@ -4,7 +4,7 @@ title: Филтер - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Филтер: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Филтер: wu_is_development_mode
 
 Дозволува развивачите на приклучоци да додадат дополнителни тестови за режим на развој.
 

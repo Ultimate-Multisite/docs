@@ -3,7 +3,7 @@ title: Jalutuste haldamine plaanide jaoks
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Shareable Linkide juhtimise plaanidega {#managing-shareable-links-for-plans}
+# Shareable Linkide juhtimise plaanidega
 
 Ultimate Multisite võimaldab teil plaanide linke otse klientidega jagada. Seda teha jaoks minud oma plaanide redigeerimislehtele ja klõpsake _Click to copy the Shareable Link_ (Jagatud linki kopienda) nupulile.
 

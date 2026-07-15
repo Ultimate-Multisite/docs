@@ -3,7 +3,7 @@ title: Comprendre le tableau de bord
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Comprendre le tableau de bord Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Comprendre le tableau de bord Ultimate Multisite
 
 Avant de nous plonger dans des options de configuration plus avancées et les aspects opérationnels d'Ultimate Multisite, examinons le tableau de bord.
 

@@ -4,7 +4,7 @@ title: فلٽر - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# فلٽر: wu_contains_element {#filter-wucontainselement}
+# فلٽر: wu_contains_element
 
 ڊولپرز کي شروعاتي ڳولا جا نتيجا بدلائڻ جي اجازت ڏئي ٿو.
 

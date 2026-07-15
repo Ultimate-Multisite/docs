@@ -3,7 +3,7 @@ title: د Gratis AI Agent امستنې
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent تنظیمات {#gratis-ai-agent-settings}
+# Gratis AI Agent تنظیمات
 
 په Gratis AI Agent کې د **تنظیمات → پرمختللی** پرده د شاته‌پای ادغامونو لپاره د مدیر کچې جوړښت برابروي. دا پاڼه د نظرونو لېږد، د لټون چمتوکوونکي کیلي، د مدیریت شوي Superdav خدمت جوړونه، د Google Calendar کنټرولونه، د TextBee SMS تنظیمات، او د ټولې شبکې د ځانګړتیاوو نښې مستندوي.
 

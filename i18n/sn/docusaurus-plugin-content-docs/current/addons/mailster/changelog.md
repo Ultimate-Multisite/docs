@@ -3,7 +3,7 @@ title: Nhoroondo yeshanduko yeMailster
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster Nhoroondo Yeshanduko {#mailster-changelog}
+# Mailster Nhoroondo Yeshanduko
 
 ### 1.0.0 {#100}
 * Kuburitswa kwekutanga

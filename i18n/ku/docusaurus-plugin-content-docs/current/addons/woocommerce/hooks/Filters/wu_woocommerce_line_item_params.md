@@ -4,7 +4,7 @@ title: Parzûn - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Parzûn: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Parzûn: wu_woocommerce_line_item_params
 
 Parametreyên ku ji bo çêkirina hêmanên rêzê li ser Selika WooCommerce têne bikaranîn parzûn bike, berî ku xerîdar ber bi checkout a WooCommerce were veşartin.
 

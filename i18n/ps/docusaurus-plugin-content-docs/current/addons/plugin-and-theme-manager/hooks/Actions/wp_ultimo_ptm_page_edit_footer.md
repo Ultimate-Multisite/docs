@@ -4,7 +4,7 @@ title: کړنه - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# کړنه: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# کړنه: wp_ultimo_ptm_page_edit_footer
 
 plugin جوړوونکو ته اجازه ورکوي چې د پاڼې په ښکته برخه کې scripts ورزیات کړي
 

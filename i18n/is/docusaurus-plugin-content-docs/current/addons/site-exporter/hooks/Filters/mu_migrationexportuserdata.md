@@ -4,7 +4,7 @@ title: Sía - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Sía: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Sía: mu_migration/export/user/data
 
 Síar sjálfgefna safnið af notendagögnum sem á að flytja út/inn.
 

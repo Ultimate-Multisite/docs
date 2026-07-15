@@ -4,7 +4,7 @@ title: Akce - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Akce: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Akce: wu_after_switch_template
 
 Umožňuje vývojářům pluginů připojit funkce (hookovat) po tom, když uživatel nebo super admin změní šablonu stránky.
 

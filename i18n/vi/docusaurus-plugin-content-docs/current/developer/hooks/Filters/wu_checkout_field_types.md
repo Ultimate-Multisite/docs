@@ -4,7 +4,7 @@ title: Bộ lọc - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filter: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filter: wu_checkout_field_types
 
 Các API của chúng ta để thêm loại trường mới sẽ kết nối vào bộ lọc này.
 

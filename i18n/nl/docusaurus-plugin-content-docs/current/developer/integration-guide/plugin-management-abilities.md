@@ -3,7 +3,7 @@ title: Plugin Beheermogelijkheden
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Functionaliteiten voor Pluginbeheer {#plugin-management-abilities}
+# Functionaliteiten voor Pluginbeheer
 
 Gratis AI Agent v1.5.0 wordt geleverd met **7 functionaliteiten voor pluginbeheer** die de AI-assistent tijdens een gesprek kan aanroepen. Deze functionaliteiten bieden programmeerbare controle over WordPress plugins die zijn geïnstalleerd via de [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

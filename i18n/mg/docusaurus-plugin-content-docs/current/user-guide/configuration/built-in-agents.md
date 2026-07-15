@@ -3,7 +3,7 @@ title: Mpandraharaha tafiditra ao anatiny
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents anatiny {#built-in-agents}
+# Agents anatiny
 
 Gratis AI Agent v1.9.0 dia mitondra agents anatiny dimy, samy efa voaomana mialoha miaraka amin’ny fitambaran-fitaovana mifantoka, system prompt namboarina manokana, ary soso-kevitra fanombohana mifanaraka amin’ny asa mahazatra amin’io sehatra io. Ny fifindrana eo amin’ireo agents dia manova izay azon’ilay assistant atao sy ny fomba famaliany — tsy mila fikirakirana avy aminao. Superdav AI Agent v1.18.0 dia afaka manampy fitaovana mahafantatra fandaharam-potoana, firaketana fampahatsiahivana, vavahadin-fankatoavana, ary fampandrenesana SMS amin’ireo workflows ireo rehefa voakirakira ny integrations mifandraika.
 

@@ -3,7 +3,7 @@ title: AffiliateWP ইন্টিগ্রেশন
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# AffiliateWP ইন্টিগ্রেশন {#affiliatewp-integration}
+# AffiliateWP ইন্টিগ্রেশন
 
 এই ফিচারটি **AffiliateWP** অ্যাডঅন দ্বারা প্রদান করা হয়।
 

@@ -3,7 +3,7 @@ title: 결제 필드 및 고객 DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# 체크아웃 필드 및 고객 DNS 관리 {#checkout-field-and-customer-dns-management}
+# 체크아웃 필드 및 고객 DNS 관리
 
 ## Domain Selection 체크아웃 필드 {#the-domain-selection-checkout-field}
 

@@ -3,7 +3,7 @@ title: '12 pamoka: Verslo valdymas'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 12 pamoka: Verslo valdymas {#lesson-12-running-the-business}
+# 12 pamoka: Verslo valdymas
 
 Platforma nėra projektas, kurį užbaigiate -- tai verslas, kurį valdote. Šioje pamokoje aptariamos kasdienės FitSite valdymo operacijos: palaikymas, atsiskaitymai, priežiūra ir klientų pasitenkinimo užtikrinimas.
 

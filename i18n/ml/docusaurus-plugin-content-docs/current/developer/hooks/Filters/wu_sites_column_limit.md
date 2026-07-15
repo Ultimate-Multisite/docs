@@ -4,7 +4,7 @@ title: Filter - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Filter: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Filter: wu_sites_column_limit
 
 നെറ്റ്‌വർക്കിനുള്ളിലെ പ്ലഗിൻ സൈറ്റുകൾ എടുക്കുന്നതിൻ്റെ (get pluginssites) മൂല്യം മാറ്റാൻ ഉപയോഗിക്കുന്ന ഫിൽട്ടർ.
 

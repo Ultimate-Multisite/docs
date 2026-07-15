@@ -3,7 +3,7 @@ title: Pamamahala ng mga Site
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Pamamahala ng mga Site {#managing-sites}
+# Pamamahala ng mga Site
 
 Ang mga site (o subsite) ang pundasyon ng iyong WaaS na negosyo. May 3 uri ng site ang Ultimate Multisite:
 

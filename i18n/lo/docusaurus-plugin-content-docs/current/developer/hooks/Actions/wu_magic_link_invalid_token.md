@@ -4,7 +4,7 @@ title: ການດຳເນີນການ - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# ການກະທຳ: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# ການກະທຳ: wu_magic_link_invalid_token
 
 ຖືກເອີ້ນໃຊ້ເມື່ອພົບ token ຂອງ magic link ທີ່ບໍ່ຖືກຕ້ອງ.
 

@@ -4,7 +4,7 @@ title: Tātari - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Tātari: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Tātari: wu_checkout_field_types
 
 Ka hono mai ā mātou API ki konei hei tāpiri momo āpure hou.
 

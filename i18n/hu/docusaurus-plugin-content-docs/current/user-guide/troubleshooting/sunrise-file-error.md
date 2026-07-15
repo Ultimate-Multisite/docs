@@ -3,7 +3,7 @@ title: Sunrise fájl hiba
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Hiba a Sunrise fájl telepítésekor {#error-installing-the-sunrise-file}
+# Hiba a Sunrise fájl telepítésekor
 
 A sunrise.php egy speciális fájl, amelyet a WordPress a rendszerindítás során keres. Ahhoz, hogy a WordPress felismerje a sunrise.php fájlt, annak a **wp-content mappában** kell lennie.
 

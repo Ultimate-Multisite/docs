@@ -3,7 +3,7 @@ title: Menü Oluştur
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menü Oluşturma {#create-menu}
+# Menü Oluşturma
 
 **Menü Oluşturma** özelliği, sayfa başlıklarından ayrı, farklı gezinme etiketleri desteğiyle WordPress navigasyon menüleri oluşturmanızı sağlar.
 

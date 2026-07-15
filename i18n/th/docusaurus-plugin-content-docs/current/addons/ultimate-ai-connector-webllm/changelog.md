@@ -3,7 +3,7 @@ title: บันทึกการเปลี่ยนแปลง Ultimate AI 
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# บันทึกการเปลี่ยนแปลง Ultimate AI Connector สำหรับ WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# บันทึกการเปลี่ยนแปลง Ultimate AI Connector สำหรับ WebLLM
 
 ## เวอร์ชัน 1.1.0 — เผยแพร่เมื่อ 2026-04-09 {#version-110--released-on-2026-04-09}
 

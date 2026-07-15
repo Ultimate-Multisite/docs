@@ -4,7 +4,7 @@ title: Үйлдэл - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Үйлдэл: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
+# Үйлдэл: wp_ultimo_ptm_page_edit_after_title
 
 Plugin хөгжүүлэгчдэд засварлах хуудсуудад нэмэлт товчнууд нэмэхийг зөвшөөрнө
 

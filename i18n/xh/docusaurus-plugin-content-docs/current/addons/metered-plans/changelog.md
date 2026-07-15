@@ -3,7 +3,7 @@ title: Ingxelo yotshintsho lweZicwangciso ezilinganiselwayo
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Ingxelo yotshintsho yeZicwangciso eziLinganisiweyo {#metered-plans-changelog}
+# Ingxelo yotshintsho yeZicwangciso eziLinganisiweyo
 
 Inguqulelo 1.1.0 - Ikhutshwe ngo-2026-05-05
 - Entsha: Ukuhlawulisa ii-token ze-AI kwiisubsite ze-multisite — landela uze uhlawulise ukusetyenziswa kwee-token ze-AI kuzo zonke iisayithi zabathengi ngamaxabiso alungiselelwayo nge-token nganye

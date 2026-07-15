@@ -3,7 +3,7 @@ title: 域名销售者更新日志
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller 更新日志 {#domain-seller-changelog}
+# Domain Seller 更新日志
 
 版本 1.3.0 - 发布于 2026-06-02
 - 新增：当 HostAfrica reseller 余额过低时，添加了 network-admin 警告

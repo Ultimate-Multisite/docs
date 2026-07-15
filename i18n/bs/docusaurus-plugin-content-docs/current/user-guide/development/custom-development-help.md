@@ -3,7 +3,7 @@ title: Pomoć pri prilagođenom razvoju
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kako dobiti prilagođenu razvojnu pomoć od Codeable-a? {#how-to-get-custom-development-help-from-codeable}
+# Kako dobiti prilagođenu razvojnu pomoć od Codeable-a?
 
 Ponekad nam je zaista potrebna neka odlična prilagodba kako bismo našu mrežu učinili tačno onako kako želimo. Ako tražite nešto slično, preporučujemo [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), mjesto gdje možete pronaći iskusne developere sa ekspertizom za Ultimate Multisite.
 

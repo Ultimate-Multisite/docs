@@ -4,7 +4,7 @@ title: Shaandhee - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Shaandheeye: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Shaandheeye: wu_sites_column_limit
 
 Shaandheeye lagu beddelo qiimaha get pluginssites gudaha network-ka.
 

@@ -4,7 +4,7 @@ title: Szűrő - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Szűrő: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Szűrő: wu_element_block_types_to_check
 
 Lehetséges, hogy később további blokkokat kell hozzáadznunk.
 

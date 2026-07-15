@@ -3,7 +3,7 @@ title: 'بۆژم ١٠: ڕۆژی دەستپێکردن'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Başlangıç Günü {#lesson-10-launch-day}
+# Lesson 10: Başlangıç Günü
 
 Her şey hazır. Kapıları açmadan önce, bu derste her şeyin bozuk, eksik veya utanç verici olup olmadığını kontrol etmek için ön lansman kontrol listesini inceleyeceğiz.
 

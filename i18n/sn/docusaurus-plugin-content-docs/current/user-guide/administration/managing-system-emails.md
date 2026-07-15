@@ -3,7 +3,7 @@ title: Kugara/Kubatsira Email dzemabhizinesi
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kurudzira Emails Yemashoko YeMabhumbi (Managing System Emails) {#managing-system-emails}
+# Kurudzira Emails Yemashoko YeMabhumbi (Managing System Emails)
 
 Ultimate Multisite inenge imihiro yezimbali yemashoko (system emails) izivaka kune zvinhu zvakasiyana-yana, zvichiri kuita zvinhu zvakaita kubatsirwa kupfungwa kwe signup, zvinokubatsira nekuona nekubatsira nekuwedzera membership. Unogona kungeura (customize) imihiro iyi yemashoko kuti zvigone nemabasa ako.
 

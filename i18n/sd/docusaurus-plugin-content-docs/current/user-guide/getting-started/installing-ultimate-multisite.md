@@ -3,7 +3,7 @@ title: الٽميٽ ملٽي سائٽ نصب ڪرڻ
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# الٽيميٽ ملٽي سائٽ جي انسٽاليشن {#installing-ultimate-multisite}
+# الٽيميٽ ملٽي سائٽ جي انسٽاليشن
 
 :::note
 هي ٽيوٽوريل فرض ڪري ٿو ته توهان وٽ اڳ ۾ ئي WordPress Multisite انسٽال ۽ ترتيب ڏنل آهي. ڪيئن ڪرڻ لاءِ، WP Beginner پاران [هن ٽيوٽوريل](https://www.wpbeginner.com/glossary/multisite/) چيڪ ڪريو.

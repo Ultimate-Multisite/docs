@@ -4,7 +4,7 @@ title: Hetsika - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Hetsika: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Hetsika: wp_ultimo_ptm_page_wizard_after_title
 
 Mamela ny mpamorona plugin hanampy bokotra fanampiny amin'ny pejin-lisitra
 

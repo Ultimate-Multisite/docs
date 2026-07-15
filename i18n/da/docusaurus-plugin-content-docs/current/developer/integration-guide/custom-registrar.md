@@ -3,7 +3,7 @@ title: Opbygning af en brugerdefineret registrar-integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Opbygning af en brugerdefineret registrar-integration {#building-a-custom-registrar-integration}
+# Opbygning af en brugerdefineret registrar-integration
 
 Domain Seller addon bruger et **Integration Registry**-mønster. Hver registrar er en PHP-klasse, der implementerer `Domain_Selling_Capability` og registrerer sig selv via action hooket `wu_domain_seller_register_capabilities`.
 

@@ -4,7 +4,7 @@ title: Sefa - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Sefe: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Sefe: wu_membership_update_forms
 
 Lumella bahlahisi ho eketsa li-slug tse ncha tsa liforomo tsa ntlafatso.
 

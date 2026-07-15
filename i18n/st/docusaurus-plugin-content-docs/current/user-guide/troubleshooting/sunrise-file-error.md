@@ -3,7 +3,7 @@ title: Lapa la ho lebo ea bohlokoa
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Thaoa Hohope ka Sunrise File {#error-installing-the-sunrise-file}
+# Thaoa Hohope ka Sunrise File
 
 Le file sunrise.php ke le file e le file se thata ka WordPress e le a go tlhola ho itse. Ho ka ntlha ka WordPress ho ka tsebe file sunrise.php, e hloka e le lehlile ka folder ya **wp-content**.
 

@@ -3,7 +3,7 @@ title: Mga Kinakailangan
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mga Kinakailangan para sa Ultimate Multisite {#ultimate-multisite-requirements}
+# Mga Kinakailangan para sa Ultimate Multisite
 
 Ang unang bagay na maaaring itanong mo sa sarili bago bumili ng Ultimate Multisite ay ano ang mga requirements para tumakbo ang ating plugin. Mabuti naman, iilan lang ang pangunahing kailangan para tumakbo ang Ultimate Multisite: isang **domain name**, isang magandang **hosting provider**, at isang WordPress **Multisite** installation. Iyan lang ang kailangan mo!
 

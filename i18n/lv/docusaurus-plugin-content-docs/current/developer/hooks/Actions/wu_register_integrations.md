@@ -4,7 +4,7 @@ title: Darbība - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Darbība: wu_register_integrations {#action-wuregisterintegrations}
+# Darbība: wu_register_integrations
 
 Tiek palaista, lai ļautu integrācijām reģistrēt sevi.
 

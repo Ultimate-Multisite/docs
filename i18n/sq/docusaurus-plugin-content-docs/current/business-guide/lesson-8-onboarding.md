@@ -3,7 +3,7 @@ title: 'Mësimi 8: Orientimi i klientëve'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Mësimi 8: Onboarding i klientëve {#lesson-8-customer-onboarding}
+# Mësimi 8: Onboarding i klientëve
 
 Ta bësh një klient të regjistrohet është vetëm gjysma e punës. Nëse ai hyn, ndihet i mbingarkuar dhe nuk kthehet më kurrë, e ke humbur. Ky mësim projekton përvojën që e kthen një regjistrim të ri në një klient aktiv dhe të angazhuar.
 

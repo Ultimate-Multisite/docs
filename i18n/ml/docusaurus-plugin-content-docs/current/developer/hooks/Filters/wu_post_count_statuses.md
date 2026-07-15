@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് ഏത് പോസ്റ്റ് സ്റ്റാറ്റസാണ് എണ്ണേണ്ടതെന്ന് മാറ്റാൻ ഇത് അനുവദിക്കുന്നു. ഡിഫോൾട്ടായി, പ്രസിദ്ധീകരിച്ച (published) പോസ്റ്റുകളും സ്വകാര്യ (private) പോസ്റ്റുകളും ആണ് എണ്ണുന്നത്.
 

@@ -3,7 +3,7 @@ title: Izvoz i uvoz
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportiranje i Uvoz {#export--import}
+# Eksportiranje i Uvoz
 
 Ultimate Multisite 2.9.0 dodaje jedan alat za **Eksportiranje i Uvoz** pod menijem **Alati > Eksportiranje i Uvoz**. Koristite ga kada vam je potrebno pakirati jednu WordPress stranicu kao ZIP datoteku, vratiti taj ZIP ili premjestiti stranicu između kompatibilnih Ultimate Multisite i single-site instalacija WordPressa.
 

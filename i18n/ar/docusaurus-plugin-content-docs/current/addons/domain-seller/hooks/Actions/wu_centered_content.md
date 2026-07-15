@@ -4,7 +4,7 @@ title: إجراء - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# الإجراء: wu_centered_content {#action-wucenteredcontent}
+# الإجراء: wu_centered_content
 
 يسمح لمطوري الإضافات بإضافة محتوى إضافي داخل العمود المركزي.
 

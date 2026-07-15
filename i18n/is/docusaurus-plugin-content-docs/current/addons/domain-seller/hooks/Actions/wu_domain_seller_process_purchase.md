@@ -4,7 +4,7 @@ title: Aðgerð - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Aðgerð: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Aðgerð: wu_domain_seller_process_purchase
 
 Keyrist þegar verið er að vinna úr domain-kaupum eftir að afgreiðslu er lokið.
 

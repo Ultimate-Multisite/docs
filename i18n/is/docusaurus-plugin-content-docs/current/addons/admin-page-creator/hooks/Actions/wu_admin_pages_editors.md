@@ -4,7 +4,7 @@ title: Aðgerð - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Aðgerð: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Aðgerð: wu_admin_pages_editors
 
 Leyfir plugin-hönnuðum að bæta við nýjum ritilsvalkostum =)
 

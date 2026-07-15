@@ -3,7 +3,7 @@ title: మల్టీ-టెనੈਂసీ ఐసోలేషన్
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# বহু- किरायेदार వేరుచేయడం (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# বহু- किरायेदार వేరుచేయడం (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ఇప్పుడు స్వయంప్రతిపత్త (sovereign) వినియోగదారుల కోసం ప్రతి సబ్సైట్ డేటాబేస్ మరియు ఫైల్ సిస్టమ్ ఐసోలేషన్‌ను (isolation) అందిస్తుంది. ఇది నెట్‌వర్క్ స్థాయి ప్రావిజనింగ్, బిల్లింగ్ మరియు నిర్వహణను కాపాడుతూనే టెనెంట్ డేటాను వేరుగా ఉంచుతుంది.
 

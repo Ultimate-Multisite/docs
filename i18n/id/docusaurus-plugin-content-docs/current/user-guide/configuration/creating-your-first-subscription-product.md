@@ -3,7 +3,7 @@ title: Membuat Produk Langganan Pertama Anda
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Membuat Produk Subscription Pertama Anda (v2) {#creating-your-first-subscription-product-v2}
+# Membuat Produk Subscription Pertama Anda (v2)
 
 _**CATATAN PENTING: Artikel ini hanya untuk pengguna Ultimate Multisite versi 2.x. Jika Anda menggunakan versi 1.x,**_ **_**lihat artikel ini**_**.
 

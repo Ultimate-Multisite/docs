@@ -3,7 +3,7 @@ title: Sites dos Clientes
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Os Websites do Seu Cliente (v2) {#your-clients-websites-v2}
+# Os Websites do Seu Cliente (v2)
 
 Depois de se registrar na sua rede, os seus clientes podem acessar o painel deles.
 

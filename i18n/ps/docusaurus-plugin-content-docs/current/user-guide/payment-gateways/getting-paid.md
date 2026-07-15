@@ -3,7 +3,7 @@ title: پیسې ترلاسه کول
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# تادیه ترلاسه کول (v2) {#getting-paid-v2}
+# تادیه ترلاسه کول (v2)
 
 _**مهم یادښت: دا مقاله د Ultimate Multisite نسخې 2.x ته اشاره کوي.**_
 

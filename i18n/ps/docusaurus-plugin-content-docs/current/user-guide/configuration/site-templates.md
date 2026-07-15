@@ -3,7 +3,7 @@ title: د ځای قالبونه
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# د سایت قالبونه (v2) {#site-templates-v2}
+# د سایت قالبونه (v2)
 
 _**نوټ:** دا مقاله د Ultimate Multisite نسخه ۲.x ته اشاره کوي. که تاسو نسخه ۱.x کار کوئ،_ **د دې مقاله وګورئ** _**.**_
 

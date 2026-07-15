@@ -3,7 +3,7 @@ title: Leverandør-bevidst promptcaching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Leverandør-bevidst prompt-caching {#provider-aware-prompt-caching}
+# Leverandør-bevidst prompt-caching
 
 Superdav AI Agent v1.12.0 introducerer **leverandør-bevidst prompt-caching**, som optimerer API-omkostninger og ventetid ved at cache prompts på tværs af forskellige LLM-leverandører. Hver leverandør har forskellige caching-mekanismer og konfigurationer.
 

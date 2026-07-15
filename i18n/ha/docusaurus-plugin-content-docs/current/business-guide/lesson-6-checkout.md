@@ -3,7 +3,7 @@ title: 'Darasi na 6: Kwarewar Yin Rajista'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Darasi na 6: Kwarewar Rijista {#lesson-6-the-signup-experience}
+# Darasi na 6: Kwarewar Rijista
 
 Gudanarwar checkout ita ce wurin da sha'awa take zama kudin shiga. Tsarin rijista mai rikitarwa ko na gama-gari yana sa a rasa abokan ciniki. Gudanarwa ta musamman ga niche da take magana da harshensu kuma take jin ba ta da wahala tana juyar da su.
 

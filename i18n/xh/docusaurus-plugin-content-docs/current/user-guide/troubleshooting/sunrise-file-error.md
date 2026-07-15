@@ -3,7 +3,7 @@ title: Impazamo yeFayile ye-Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Impazamo xa kufakwa ifayile ye-Sunrise {#error-installing-the-sunrise-file}
+# Impazamo xa kufakwa ifayile ye-Sunrise
 
 Ifayile ye-sunrise.php yifayile ekhethekileyo i-WordPress eyikhangelayo ngoxa iziqalisa. Ukuze i-WordPress ikwazi ukubona ifayile ye-sunrise.php, kufuneka ibekwe ngaphakathi **kwefolda ye-wp-content**.
 

@@ -3,7 +3,7 @@ title: WP Engine ማዋሃድ
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ውህደት {#wp-engine-integration}
+# WP Engine ውህደት
 
 ## አጠቃላይ እይታ {#overview}
 WP Engine ለዎርድፕረስ ድረ-ገጾች የተሻሻለ አፈጻጸም፣ ደህንነት እና መስፋፋት የሚያቀርብ የፕሪሚየም የተስተካከለ (managed) የዎርድፕረስ ሆስቲንግ መድረክ ነው። ይህ ውህደት (integration) በUltimate Multisite እና በWP Engine መካከል የዶሜን መመሳሰልን በራስ-ሰር ያደርጋል።

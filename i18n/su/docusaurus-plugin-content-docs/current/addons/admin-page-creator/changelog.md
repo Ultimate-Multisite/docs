@@ -3,7 +3,7 @@ title: Catetan Parobahan Panyieun Kaca Admin
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Catetan Parobahan Admin Page Creator {#admin-page-creator-changelog}
+# Catetan Parobahan Admin Page Creator
 
 ### Vérsi 1.9.0 - Dirilis dina 2026-01-18 {#version-190---released-on-2026-01-18}
 

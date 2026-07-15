@@ -3,7 +3,7 @@ title: 整合指南
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 整合指南 {#integration-guide}
+# 整合指南
 
 本指南涵蓋 Ultimate Multisite 的常見整合模式，包括連接外部服務、建立自訂付款閘道，以及處理 webhooks。
 

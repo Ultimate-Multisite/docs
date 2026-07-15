@@ -3,7 +3,7 @@ title: Intervistë eksploruese
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Intervista Zbuluese {#discovery-interview}
+# Intervista Zbuluese
 
 **Intervista Zbuluese** është hapi i parë në procesin e dizajnit të Theme Builder. Ajo mbledh informacion rreth sajtit, biznesit dhe preferencave tuaja të dizajnit për të krijuar një theme të personalizuar.
 

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# ଫିଲ୍ଟର: secure_auth_redirect {#filter-secureauthredirect}
+# ଫିଲ୍ଟର: secure_auth_redirect
 
 ସୁରକ୍ଷିତ ପ୍ରମାଣୀକରଣ ପୁନଃନିର୍ଦ୍ଦେଶ ବ୍ୟବହାର କରିବା କି ନାହିଁ ତାହା ଫିଲ୍ଟର କରେ।
 

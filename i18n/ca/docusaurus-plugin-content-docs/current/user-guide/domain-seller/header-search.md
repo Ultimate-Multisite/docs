@@ -3,7 +3,7 @@ title: Cerca de dominis de la capçalera
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Cerca de dominis a la capçalera {#header-domain-search}
+# Cerca de dominis a la capçalera
 
 Fes servir aquesta configuració quan vulguis un formulari petit a la capçalera que iniciï una cerca de dominis i després permeti al client triar entre els dominis disponibles dins del procés de pagament d'Ultimate Multisite.
 

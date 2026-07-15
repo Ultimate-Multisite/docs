@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 2: Ịhọrọ niche gị'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ihe ọmụmụ 2: Ịhọrọ Niche Gị {#lesson-2-picking-your-niche}
+# Ihe ọmụmụ 2: Ịhọrọ Niche Gị
 
 N’Ihe ọmụmụ 1, anyị gosipụtara ihe mere niche ji ka ihe izugbe mma. Ugbu a, ị ga-ahọrọ nke gị. Ihe ọmụmụ a na-enye gị usoro maka ịchọta na ịnwale niche tupu i tinye oge n’iwulite ihe maka ya.
 

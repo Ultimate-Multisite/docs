@@ -3,7 +3,7 @@ title: Kepiye carane mbatalake langganan
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kepiye caraku mbatalake langganan? {#how-can-i-cancel-my-subscription}
+# Kepiye caraku mbatalake langganan?
 
 Yen sampeyan duwe lisensi Ultimate Multisite, sampeyan bisa mbatalake perpanjangan kapan wae sampeyan karep. Cukup tindakake langkah-langkah ing ngisor iki:
 

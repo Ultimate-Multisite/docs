@@ -3,7 +3,7 @@ title: 'Leçon 5 : Concevoir vos plans'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leçon 5 : Concevoir vos forfaits {#lesson-5-designing-your-plans}
+# Leçon 5 : Concevoir vos forfaits
 
 Vos niveaux de forfaits ne sont pas de simples paliers de prix ; ils reflètent la manière dont vos clients de niche fonctionnent réellement. Dans cette leçon, vous allez concevoir des niveaux de produits qui correspondent aux besoins réels des entreprises de fitness à différents stades de développement.
 

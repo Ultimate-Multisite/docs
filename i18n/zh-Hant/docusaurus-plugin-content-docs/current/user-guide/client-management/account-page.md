@@ -3,7 +3,7 @@ title: 客戶 Account 頁面
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# 你客戶的 Account 頁面（v2） {#your-clients-account-page-v2}
+# 你客戶的 Account 頁面（v2）
 
 _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 

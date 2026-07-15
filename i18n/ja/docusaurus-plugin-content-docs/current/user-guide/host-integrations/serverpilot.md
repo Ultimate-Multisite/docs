@@ -3,7 +3,7 @@ title: ServerPilot 統合
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot 統合 {#serverpilot-integration}
+# ServerPilot 統合
 
 ## 概要 {#overview}
 ServerPilot は、DigitalOcean、Amazon、Google、またはその他のサーバープロバイダーのサーバー上で WordPress やその他の PHP ウェブサイトをホストするためのクラウドサービスです。この統合により、Ultimate Multisite と ServerPilot の間で自動ドメイン同期と SSL 証明書管理が可能になります。

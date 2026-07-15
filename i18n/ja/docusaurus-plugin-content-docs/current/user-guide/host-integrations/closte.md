@@ -3,7 +3,7 @@ title: Closte 統合
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte 統合 {#closte-integration}
+# Closte 統合
 
 ## 概要 {#overview}
 Closte は Google Cloud インフラストラクチャ上に構築されたマネージド WordPress ホスティングプラットフォームです。この統合により、Ultimate Multisite と Closte の間で自動ドメイン同期と SSL 証明書管理が可能になります。

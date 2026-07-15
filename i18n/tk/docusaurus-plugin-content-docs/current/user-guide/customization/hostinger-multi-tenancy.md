@@ -3,7 +3,7 @@ title: Hostinger Çoklu Kirýarlary
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 Hostinger multi-tenancy ufunksyly (multi-tenant) kämilikini goşdirir, bu bolsa hostlanýar domenler mevcut Hostinger domain-mapping integrasiýasy bilen bile özlerini bellenip duran tenantler arkaly özüni döretmekde iştirak edip bilýär.
 

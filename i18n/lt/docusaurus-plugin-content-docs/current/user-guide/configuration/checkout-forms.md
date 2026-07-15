@@ -3,7 +3,7 @@ title: Valdybos formos
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formaijių formos {#checkout-forms}
+# Formaijių formos
 
 Formaijių formos yra lengvas ir įtraukliškas būdas eksperimentuoti su skirtingais paleidimu, kai bandomas pasiekti naujus klientus.
 

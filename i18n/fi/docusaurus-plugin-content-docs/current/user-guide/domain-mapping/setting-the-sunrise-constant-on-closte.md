@@ -3,7 +3,7 @@ title: Auringonnousukon asettaminen Clostiin
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Auringon vakion asettaminen `wp-config.php`-tiedostoon Clostessa {#setting-the-sunrise-constant-to-true-on-closte}
+# Auringon vakion asettaminen `wp-config.php`-tiedostoon Clostessa
 
 Joillakin isännöijillä on lukittu `wp-config.php` -tiedosto turvallisuussyistä. Tämä tarkoittaa, että Ultimate Multisite ei pysty muokkaamaan tiedostoa automaattisesti sisällyttää tarvittavia vakioita domainmappauksen ja muiden ominaisuuksien toimimiseksi. Closte on yksi tällaisista isännöijöistä.
 

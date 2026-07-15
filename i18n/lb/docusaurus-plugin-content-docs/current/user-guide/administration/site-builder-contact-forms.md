@@ -3,7 +3,7 @@ title: Kontaktformular für den Website-Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformular vom Seitengenerator {#site-builder-contact-forms}
+# Kontaktformular vom Seitengenerator
 
 Superdav AI Agent v1.10.0 füegt d'Möglichkeit hinzu, Kontaktformular direkt us de Chat-Oberflächi mit em Site Builder agent z'erstelle. Das erlaubt Ihne, voll funktionsfähigi Kontaktformular uf jede Siite z'füege, ohni de Chat z'verlah.
 

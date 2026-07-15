@@ -3,7 +3,7 @@ title: 'Isifundo 6: Amava okubhalisa'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Isifundo 6: Amava Okubhalisa {#lesson-6-the-signup-experience}
+# Isifundo 6: Amava Okubhalisa
 
 Inkqubo yokuhlawula kulapho umdla uba yingeniso. Inkqubo yokubhalisa edidayo okanye eqhelekileyo ilahlekelwa ngabathengi. Inkqubo ejoliswe kwi-niche ethile, ethetha ngolwimi lwabo kwaye ivakale ilula, iyabaguqula babe ngabathengi.
 

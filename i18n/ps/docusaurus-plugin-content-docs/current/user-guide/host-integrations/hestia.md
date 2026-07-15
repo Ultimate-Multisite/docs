@@ -3,7 +3,7 @@ title: هستیا کنټرول پینل همغږي
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# دمج پنل کنترل هستیا (Hestia Control Panel Integration) {#hestia-control-panel-integration}
+# دمج پنل کنترل هستیا (Hestia Control Panel Integration)
 
 این راهنما توضیح می‌دهد که چگونه تنظیمات یکپارچه‌سازی Ultimate Multisite Hestia را انجام دهید تا دامنه‌های نگاشت شده در شبکه شما به صورت خودکار به عنوان نام‌های مستعار وب (Web Domain Aliases) در Hestia اضافه و حذف شوند.
 

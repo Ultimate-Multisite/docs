@@ -3,7 +3,7 @@ title: Kugadzirisa uye Kuva Nekuti Mupenyu
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup uye Kuita Provider Configuration {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Setup uye Kuita Provider Configuration
 
 Addon ya Domain Seller inosvika ne wizard ye setup inoshandisa kuti inokupa mhinduro yakakubatsira kuenda zvinhu zvose zvinodzidzera. Ipeji iyi inozivaka kurumo (flow) ye wizard uye sei kutaura kana kutambawo (reconfigure) providers panguva apo.
 

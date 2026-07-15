@@ -3,7 +3,7 @@ title: ការរួមបញ្ចូល ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ការរួមបញ្ចូលជាមួយ ServerPilot {#serverpilot-integration}
+# ការរួមបញ្ចូលជាមួយ ServerPilot
 
 ## ទិដ្ឋភាពទូទៅ {#overview}
 ServerPilot គឺជាសេវាកម្មលើពពកសម្រាប់បង្ហោះគេហទំព័រ WordPress និងគេហទំព័រ PHP ផ្សេងទៀតនៅលើម៉ាស៊ីនមេ (servers) នៅលើ DigitalOcean, Amazon, Google ឬអ្នកផ្តល់ម៉ាស៊ីនមេផ្សេងទៀត។ ការរួមបញ្ចូលនេះអនុញ្ញាតឱ្យមានការធ្វើសមកាលកម្មដែន (domain syncing) ដោយស្វ័យប្រវត្តិ និងការគ្រប់គ្រងវិញ្ញាបនបត្រ SSL រវាង Ultimate Multisite និង ServerPilot។

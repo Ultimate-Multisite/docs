@@ -4,7 +4,7 @@ title: Hidlydd - wu_upgrade_to_unlock_url
 sidebar_label: wu_upgrade_to_unlock_url
 _i18n_hash: 3398ef4bc9e288f0173a859844fbb25c
 ---
-# Hidlydd: wu_upgrade_to_unlock_url {#filter-wuupgradetounlockurl}
+# Hidlydd: wu_upgrade_to_unlock_url
 
 Caniatáu i ddatblygwyr newid y URL uwchraddio i ddatgloi
 

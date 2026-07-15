@@ -3,7 +3,7 @@ title: 대시보드 개요
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# 대시보드 개요 {#dashboard-overview}
+# 대시보드 개요
 
 Ultimate Multisite는 Ultimate Multisite 메뉴 아래에 전용 **Dashboard**를 제공하며, 네트워크 대시보드에도 위젯을 추가합니다. 이 문서는 두 곳에서 볼 수 있는 내용을 다룹니다.
 

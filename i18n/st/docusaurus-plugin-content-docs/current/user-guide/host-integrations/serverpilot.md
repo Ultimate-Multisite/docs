@@ -3,7 +3,7 @@ title: Ho Hlahlobo le ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# SerbaTsoho Integration {#serverpilot-integration}
+# SerbaTsoho Integration
 
 ## Le Ntlha (Overview) {#overview}
 ServerPilot ke mosebetsi oa cloud ho ba le WordPress le sebetsi se fapaneng sa PHP ka server ea DigitalOcean, Amazon, Google, kapa sebope seo sefapaneng sefapaneng. Ho na le ho fetola ha domain ho tsamaea ka ho na le ho na le SSL certificate management ho Ultimate Multisite le ServerPilot.

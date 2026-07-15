@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet tal-Integrazzjoni ma’ WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Reġistru tal-Bidliet tal-Integrazzjoni WooCommerce {#woocommerce-integration-changelog}
+# Reġistru tal-Bidliet tal-Integrazzjoni WooCommerce
 
 Verżjoni 2.2.0 - Rilaxxata fi 2026-07-01
 * Ġdid: L-ammonti tat-taxxa ta' Ultimate Multisite issa jidhru bħala linji separati ta' tariffi WooCommerce waqt il-ħlas, u jagħmlu t-totali tat-taxxa aktar ċari qabel il-ħlas.

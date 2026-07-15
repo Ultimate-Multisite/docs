@@ -3,7 +3,7 @@ title: โฮสติ้งแบบหลายผู้เช่าของ 
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# การโฮสต์แบบ Multi-Tenancy ของ Hostinger {#hostinger-multi-tenancy}
+# การโฮสต์แบบ Multi-Tenancy ของ Hostinger
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ได้เพิ่มความสามารถในการทำ Hostinger multi-tenancy เข้ามา ทำให้โดเมนที่โฮสต์อยู่สามารถเข้าร่วมในการจัดเตรียมผู้เช่าที่เป็นอิสระ (sovereign tenant provisioning) ควบคู่ไปกับการผสานรวมการแมปโดเมนของ Hostinger ที่มีอยู่
 

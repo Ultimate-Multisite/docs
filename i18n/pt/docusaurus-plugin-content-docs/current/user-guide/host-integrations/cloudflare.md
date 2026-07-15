@@ -3,7 +3,7 @@ title: Integração Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integração com o Cloudflare {#cloudflare-integration}
+# Integração com o Cloudflare
 
 ## Visão Geral {#overview}
 O Cloudflare é uma rede de distribuição de conteúdo (CDN) e provedor de segurança líder que ajuda a proteger e acelerar websites. Esta integração permite o gerenciamento automático de domínio entre Ultimate Multisite e Cloudflare, especialmente para instalações de multisite de subdomínios.

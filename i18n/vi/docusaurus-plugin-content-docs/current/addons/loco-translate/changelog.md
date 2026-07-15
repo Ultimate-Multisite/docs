@@ -3,7 +3,7 @@ title: Loco Translate Nhật ký thay đổi
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Nhật ký thay đổi Loco Translate {#loco-translate-changelog}
+# Nhật ký thay đổi Loco Translate
 
 ### 1.0.1 {#101}
 * Cải thiện khả năng tương thích với phiên bản Loco Translate mới nhất

@@ -3,7 +3,7 @@ title: cPanel integracija
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integracija su cPanel {#cpanel-integration}
+# Integracija su cPanel
 
 ## Vaizda {#overview}
 cPanel yra vienas popiausių web hostingu kontrolinių panelių, naudojamų daugeliu dalininkų ir özelų hostingų tiekėjų. Ši integracija leidžia automatiškai sincronizuoti domenus tarp Ultimate Multisite ir cPanel, o tai nima jums automatურად pridėti domenų aliasus ir subdomenus prie jūsų cPanel paskyros.

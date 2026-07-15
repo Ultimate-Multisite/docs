@@ -3,7 +3,7 @@ title: Tạo Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Tạo Menu {#create-menu}
+# Tạo Menu
 
 Khả năng **Tạo Menu** cho phép tạo các menu điều hướng của WordPress, hỗ trợ nhãn điều hướng riêng biệt, tách biệt với tiêu đề trang.
 

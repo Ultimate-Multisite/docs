@@ -4,7 +4,7 @@ title: Filter - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# फ़िल्टर: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# फ़िल्टर: wu_password_require_uppercase
 
 यह फ़िल्टर निर्धारित करता है कि पासवर्ड में अपरकेस अक्षरों की आवश्यकता है या नहीं।
 

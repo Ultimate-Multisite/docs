@@ -3,7 +3,7 @@ title: 內容同步變更日誌
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# 內容同步更新日誌 {#content-sync-changelog}
+# 內容同步更新日誌
 
 ### Version 1.1.0 - 發布日期 2025-12-31 {#version-110---released-on-2025-12-31}
 * 新增：支援同步所有文章類型（文章、頁面、自訂文章類型）。

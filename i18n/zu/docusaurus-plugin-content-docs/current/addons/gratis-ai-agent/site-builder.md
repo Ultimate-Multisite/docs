@@ -3,7 +3,7 @@ title: Ukuhlelwa Kokwakhiwa Kwesayithi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (eyethulwe ku-Gratis AI Agent v1.4.0) iyinjini enika amandla ukwakhiwa kwamawebhusayithi okunezinyathelo eziningi. Lapho ucela agent ukuthi "yakha iwebhusayithi yokudlela" noma "dala iphothifoliyo ene-blog", orchestrator ihlukanisa lowo mgomo osezingeni eliphezulu ube **uhlelo** oluhlelekile, ithole ama-plugin adingekayo ukuwufeza, isebenzise isinyathelo ngasinye ngokulandelana, ilandelele inqubekela phambili, futhi ilulame emaphutheni ngokuzimela.
 

@@ -3,7 +3,7 @@ title: Basiskonzept
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Grundlegendi Konzepte {#basic-concepts}
+# Grundlegendi Konzepte
 
 Für en neue WordPress Multisite-User und jemanden, der gerade anfängt mit Ultimate Multisite, git es am Anfang viele neui Wörter und Ausdrücke. Es isch wichtig, die z'lerne, will du d'Plattform und wie sie als Ganzes funktioniert, verstah muesch.
 

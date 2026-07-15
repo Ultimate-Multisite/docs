@@ -4,7 +4,7 @@ title: 'Filter - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
+# Filter: wu_\{$this->model\}_meta_pre_save
 
 ಡೇಟಾ ಮೆಟಾ (data meta) ಅನ್ನು ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ (database) ಸ್ಟೋರ್ ಮಾಡಲು ಅದು ಸೀರಿಯಲೈಸ್ (serialize) ಆಗುವ ಮೊದಲು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 

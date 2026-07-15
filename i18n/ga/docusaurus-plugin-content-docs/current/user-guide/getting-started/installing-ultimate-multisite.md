@@ -3,7 +3,7 @@ title: Ag dul i mbun suite Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Suiteáil Ultimate Multisite {#installing-ultimate-multisite}
+# Suiteáil Ultimate Multisite
 
 :::note
 Glacann an treoir seo go bhfuil WordPress Multisite suite agus cumraithe cheana féin. Chun a fháil amach conas, seiceáil an treoir seo [seo](https://www.wpbeginner.com/glossary/multisite/) ó WP Beginner.

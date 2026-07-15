@@ -3,7 +3,7 @@ title: Fampitandremana Famoahana ny Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Fampanana ny Fomba Fanamboarana Tranokala (Site Builder Mode Removal Notice) {#site-builder-mode-removal-notice}
+# Fampanana ny Fomba Fanamboarana Tranokala (Site Builder Mode Removal Notice)
 
 **Natao fotsiny ny Site Builder mode tao amin'ny Superdav AI Agent v1.12.0.** Raha mampiasa ny Site Builder mode ianao, dia tokony hivoaka any amin'ny **Setup Assistant agent** ianao ho an'ny famoronana loha-telo (theme) sy ny fanamboarana toerana (site setup).
 

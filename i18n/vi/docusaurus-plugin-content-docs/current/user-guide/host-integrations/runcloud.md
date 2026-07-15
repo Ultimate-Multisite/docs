@@ -3,7 +3,7 @@ title: Tích hợp RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Tích hợp RunCloud {#runcloud-integration}
+# Tích hợp RunCloud
 
 ## Tổng quan {#overview}
 RunCloud là nền tảng quản lý máy chủ dựa trên đám mây, giúp bạn dễ dàng triển khai và quản lý các ứng dụng web trên máy chủ cloud của riêng mình. Tính năng tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và RunCloud.

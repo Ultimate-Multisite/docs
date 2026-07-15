@@ -3,7 +3,7 @@ title: رنگن جي پيليٽ جو ڪنٽراسٽ تصديق ڪريو
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palette Contrast جي تصديق ڪريو {#validate-palette-contrast}
+# Palette Contrast جي تصديق ڪريو
 
 **Validate Palette Contrast** صلاحيت توهان جي ڊيزائن palette ۾ رنگن جي جوڙن کي توهان جي theme تي لاڳو ڪرڻ کان اڳ WCAG (Web Content Accessibility Guidelines) جي پابندي لاءِ چيڪ ڪري ٿي.
 

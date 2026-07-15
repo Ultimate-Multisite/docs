@@ -3,7 +3,7 @@ title: د ترتیباتو مرجع
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# د تنظیماتو مرجع {#settings-reference}
+# د تنظیماتو مرجع
 
 دا پاڼه هغه تنظیمات څاري چې ورځنۍ اداره او په Ultimate Multisite کې وروستي چلند بدلونونه اغېزمنوي.
 

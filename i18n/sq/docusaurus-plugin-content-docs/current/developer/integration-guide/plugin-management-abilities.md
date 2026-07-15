@@ -3,7 +3,7 @@ title: Aftësitë e menaxhimit të shtojcave
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Aftësitë e Menaxhimit të Plugin {#plugin-management-abilities}
+# Aftësitë e Menaxhimit të Plugin
 
 Gratis AI Agent v1.5.0 vjen me **7 aftësi të menaxhimit të plugin** që asistenti AI mund t’i thërrasë gjatë një bisede. Këto aftësi ofrojnë kontroll programatik mbi plugin-et WordPress të instaluara përmes [Sistemit Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

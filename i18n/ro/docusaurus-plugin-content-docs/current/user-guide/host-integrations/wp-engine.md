@@ -3,7 +3,7 @@ title: Integrare WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrare WP Engine {#wp-engine-integration}
+# Integrare WP Engine
 
 ## Prezentare generală {#overview}
 WP Engine este o platformă premium de găzduire WordPress administrată, care oferă performanță optimizată, securitate și scalabilitate pentru site-urile WordPress. Această integrare permite sincronizarea automată a domeniilor între Ultimate Multisite și WP Engine.

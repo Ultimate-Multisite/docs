@@ -3,7 +3,7 @@ title: Horumarinta isdhexgalka Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Horumarinta Iskaashi-qa Dashboard-ga {#enhance-control-panel-integration}
+# Horumarinta Iskaashi-qa Dashboard-ga
 
 ## Guud-baadhitaanka {#overview}
 Enhance waa dashboard casri oo bixiya awoodda sare ee automation iyo maamulka hosting-ka. Waxay inta badan u oggolaanaysaa isku xirnaansho toos ah oo domain-yada iyo SSL certificate-ka ka dhexeeya Ultimate Multisite iyo Enhance Control Panel.

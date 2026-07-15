@@ -3,7 +3,7 @@ title: Plugin Bestuurvermoë명
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Vermoghede vir Plugin Bestuur {#plugin-management-abilities}
+# Vermoghede vir Plugin Bestuur
 
 Gratis AI Agent v1.5.0 kom met **7 vermoghede vir plugin bestuur** wat die AI-assistent tydens 'n gesprek kan aanroep. Hierdie vermoghede bied programmeerbare beheer oor WordPress-plugins wat deur die [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) geïnstalleer word.
 

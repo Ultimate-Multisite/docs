@@ -3,7 +3,7 @@ title: Soevereine Huurderoperaties
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operationen voor Soevereine Huurders {#sovereign-tenant-operations}
+# Operationen voor Soevereine Huurders
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voegt operationele hulpmiddelen toe voor soevereine huurders: subsites die draaien met hun eigen database, bestandssysteemroot en routingcontext, terwijl ze nog steeds zichtbaar blijven voor de netwerkbeheerder.
 

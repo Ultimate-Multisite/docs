@@ -3,7 +3,7 @@ title: 第三課：設定您的網路
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: Setting Up Your Network {#lesson-3-setting-up-your-network}
+# Lesson 3: Setting Up Your Network
 
 是時候建構了。在本課中，您將安裝 Ultimate Multisite，並為 FitSite 網路配置基礎架構。這裡做的每一個決定，都是以健身領域（fitness niche）為考量。
 

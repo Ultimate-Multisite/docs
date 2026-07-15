@@ -3,7 +3,7 @@ title: Stripe nustatymas
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe bramai (v2) nustatymas {#setting-up-the-stripe-gateway-v2}
+# Stripe bramai (v2) nustatymas
 
 _**SVIRTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 

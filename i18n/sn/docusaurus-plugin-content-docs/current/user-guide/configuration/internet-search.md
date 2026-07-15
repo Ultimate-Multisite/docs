@@ -3,7 +3,7 @@ title: Kutsimbisa Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Kurungu Kunechira (Internet Search) {#internet-search}
+# Kurungu Kunechira (Internet Search)
 
 Gratis AI Agent v1.5.0 inenge kuva nzira ya **Kurungu Kunechira (Internet Search)** inenge kutaura zvinhu zvinobva m'web wakati unenge uchitungamirira neAI assistant kuti iwe shandise mahengetsi ekutanga kubva m'web chiri. Izvi zvinhu zvinhasi nezvinhasi zvakagadzirwa ne [Brave Search API](https://brave.com/search/api/) kana [Tavily API](https://tavily.com/).
 

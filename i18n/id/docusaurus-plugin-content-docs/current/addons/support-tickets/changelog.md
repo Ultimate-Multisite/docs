@@ -3,7 +3,7 @@ title: Catatan Perubahan Tiket Dukungan
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Catatan Perubahan Tiket Dukungan {#support-tickets-changelog}
+# Catatan Perubahan Tiket Dukungan
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Ditingkatkan: Menghapus direktori `vendor/` dari pelacakan Git (sudah dicakup oleh .gitignore), mengurangi ukuran repositori

@@ -3,7 +3,7 @@ title: Stripe සැකසීම
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe ගේට්වේ එක සකස් කිරීම (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe ගේට්වේ එක සකස් කිරීම (v2)
 
 _**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite version 2.x වෙත යොමු වේ.**_
 

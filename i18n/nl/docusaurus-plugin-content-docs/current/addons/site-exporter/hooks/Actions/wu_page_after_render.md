@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Actie: wu_page_after_render {#action-wupageafterrender}
+# Actie: wu_page_after_render
 
 Wordt geactiveerd na het renderen van een pagina.
 

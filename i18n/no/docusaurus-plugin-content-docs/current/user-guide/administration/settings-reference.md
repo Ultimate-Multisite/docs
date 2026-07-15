@@ -3,7 +3,7 @@ title: Innstillingsreferanse
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Innstillingsreferanse {#settings-reference}
+# Innstillingsreferanse
 
 Denne siden sporer innstillinger som påvirker daglig administrasjon og nylige atferdsendringer i Ultimate Multisite.
 

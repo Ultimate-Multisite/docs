@@ -3,7 +3,7 @@ title: תחילת העבודה עם פיתוח תוספים
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# פיתוח תוספים {#addon-development}
+# פיתוח תוספים
 
 ## מבנה התוסף {#addon-structure}
 

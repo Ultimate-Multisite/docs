@@ -4,7 +4,7 @@ title: क्रिया - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 प्लगइन डेव्हलपर्सना पेज रेंडर (print) केल्यानंतर अतिरिक्त कंटेंट जोडण्याची परवानगी देण्यासाठी ही कृती (Action) आहे.
 

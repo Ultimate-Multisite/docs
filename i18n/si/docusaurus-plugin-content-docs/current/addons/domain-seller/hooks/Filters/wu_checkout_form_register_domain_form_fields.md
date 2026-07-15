@@ -4,7 +4,7 @@ title: පෙරහන - wu_checkout_form_register_domain_form_fields
 sidebar_label: wu_checkout_form_register_domain_form_fields
 _i18n_hash: 6d1f2eeb3abc57d82e1b8e4b949501c3
 ---
-# පෙරහන: wu_checkout_form_register_domain_form_fields {#filter-wucheckoutformregisterdomainformfields}
+# පෙරහන: wu_checkout_form_register_domain_form_fields
 
 වසම ලියාපදිංචි කිරීමේ ගෙවීම් පෝරමයේ ක්ෂේත්‍ර පෙරහන් කරන්න.
 

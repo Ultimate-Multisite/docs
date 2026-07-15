@@ -3,7 +3,7 @@ title: Trin Trethi
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Trin Trethi {#tax-handling}
+# Trin Trethi
 
 Mae gan Ultimate Multisite fodiwl casglu trethi wedi’i gynnwys yn ein plugin craidd, felly os oes angen i chi gasglu trethi gwerthu ar eich cynlluniau, pecynnau a gwasanaethau, gallwch wneud hynny’n hawdd heb orfod gosod unrhyw ychwanegion.
 

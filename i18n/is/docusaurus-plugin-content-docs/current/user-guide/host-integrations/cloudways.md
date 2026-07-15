@@ -3,7 +3,7 @@ title: Cloudways samstarf
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Samningur við Cloudways {#cloudways-integration}
+# Samningur við Cloudways
 
 ## Översikt {#overview}
 Cloudways er þjónusta fyrir skýmyndarþjónustu (managed cloud hosting platform) sem leysir þér möguleika að dekkja WordPress vísitaldir á ólíkomum skýmyndarþjónustum eins og DigitalOcean, AWS, Google Cloud og fleiri. Þessi samningur gerir mögulega sjálfsvítingu domæna (domain syncing) og stjórnun SSL-tækja milli Ultimate Multisite og Cloudways.

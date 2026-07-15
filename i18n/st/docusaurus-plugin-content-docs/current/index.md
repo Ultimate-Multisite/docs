@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ditokomane tsa Ultimate Multisite {#ultimate-multisite-documentation}
+# Ditokomane tsa Ultimate Multisite
 
 Rea o amohela ditokomaneng tsa Ultimate Multisite. Ultimate Multisite e fetola WordPress Multisite hore e be sethala se felletseng sa Webosaete e le Tshebeletso (WaaS).
 
@@ -18,7 +18,7 @@ Tsohle tseo o di hlokang ho hloma, ho hlophisa, le ho laola sethala sa hao sa Wa
 
 Tshupiso ya botekgeniki bakeng sa bahlahisi ba hahang hodima Ultimate Multisite. E kenyeletsa tshupiso ya hooks, ditokomane tsa REST API, le ditataiso tsa ntshetsopele ya addon.
 
-### [Addons](/addons) {#addons}
+### [Dikatoloso](/addons) {#addons}
 
 Ditokomane bakeng sa di-plugin tsa addon tse lefellwang tse atolososang Ultimate Multisite ka dikarolo tse eketsehileng tse kang kopanyo ya WooCommerce, analytics, thekiso ya domain, le tse ding.
 

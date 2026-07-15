@@ -3,7 +3,7 @@ title: Pakakas jeung Konfigurasi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Pakakas jeung Konfigurasi {#tools-and-configuration}
+# Pakakas jeung Konfigurasi
 
 Theme Builder ngagunakeun sakumpulan pakakas pikeun nganalisis, ngarancang, jeung ngawangun situs WordPress anjeun. Dina vérsi 1.16.0, **sd-ai-agent/site-scrape ayeuna jadi pakakas Tier 1**, ngajadikeun éta sadia sacara standar dina Theme Builder. Superdav AI Agent v1.18.0 ogé ngenalkeun pakét pendamping Advanced anu disebarkeun misah pikeun alur gawé pamekar anu dipercaya; pakakas éta lain bagian tina pakét inti WordPress.org jeung kudu dipasang sarta diotorisasi sacara misah.
 

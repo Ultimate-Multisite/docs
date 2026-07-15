@@ -4,7 +4,7 @@ title: ফিল্টার - wu_core_installer_install_sunrise
 sidebar_label: wu_core_installer_install_sunrise
 _i18n_hash: 9750f0fbfe9f02249e4e1d17e585bdb6
 ---
-# Filter: wu_core_installer_install_sunrise {#filter-wucoreinstallerinstallsunrise}
+# Filter: wu_core_installer_install_sunrise
 
 হোস্ট প্রোভাইডারদেরকে কনস্ট্যান্টটি ভিন্নভাবে ইনস্টল করার অনুমতি দেয়।
 

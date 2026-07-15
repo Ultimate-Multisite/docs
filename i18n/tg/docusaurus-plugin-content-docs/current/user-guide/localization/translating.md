@@ -3,7 +3,7 @@ title: Тарҷумаи Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Тарҷумаи Ultimate Multisite {#translating-ultimate-multisite}
+# Тарҷумаи Ultimate Multisite
 
 Ultimate Multisite ба забони инглиз таҳия шудааст, аммо плагин пурра таржимашаванда аст ва мо фаровон кӯмаки таржимаро қабул мекунем.
 

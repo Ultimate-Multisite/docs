@@ -3,7 +3,7 @@ title: 'Lliurada 14: Què hi ve després'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Aula 14: Què hi ve per diner {#lesson-14-what-comes-next}
+# Aula 14: Què hi ve per diner
 
 Has construït una plataforma de website de niche des de zero. FitSite està en línia, serveix estudi de fitness i genera ingressos recurrents. Aquesta última aula analitza quò fare de més.
 

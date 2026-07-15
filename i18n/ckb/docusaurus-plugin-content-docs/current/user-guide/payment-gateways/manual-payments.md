@@ -3,7 +3,7 @@ title: ڕێکخستنی پارەدانی دەستی
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# ڕێکخستنی پارەدانی دەستی (v2) {#setting-up-manual-payments-v2}
+# ڕێکخستنی پارەدانی دەستی (v2)
 
 _**تێبینی گرنگ: ئەم وتارە ئاماژە بە Ultimate Multisite وەشانی 2.x دەکات.**_
 

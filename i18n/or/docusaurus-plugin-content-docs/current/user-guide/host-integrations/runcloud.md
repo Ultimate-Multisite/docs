@@ -3,7 +3,7 @@ title: RunCloud ସମନ୍ୱୟ
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud ఇంటిగ్రేషన్ (Integration) {#runcloud-integration}
+# RunCloud ఇంటిగ్రేషన్ (Integration)
 
 ## అవలోకనం (Overview) {#overview}
 RunCloud అనేది క్లౌడ్ ఆధారిత సర్వర్ మేనేజ్‌మెంట్ ప్లాట్‌ఫారమ్. దీని ద్వారా మీరు మీ సొంత క్లౌడ్ సర్వర్‌లపై వెబ్ అప్లికేషన్‌లను సులభంగా డిప్లాయ్ చేసి నిర్వహించవచ్చు. ఈ ఇంటిగ్రేషన్ Ultimate Multisite మరియు RunCloud మధ్య ఆటోమేటిక్ డొమైన్ సింక్రొనింగ్ మరియు SSL సర్టిఫికేట్ మేనేజ్‌మెంట్‌ను అనుమతిస్తుంది.

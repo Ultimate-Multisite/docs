@@ -3,7 +3,7 @@ title: サイトテンプレートでの自動検索と置換
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# サイトテンプレートでの自動検索と置換（v2） {#auto-search-and-replace-in-site-templates-v2}
+# サイトテンプレートでの自動検索と置換（v2）
 
 _**このチュートリアルには WP UItimo バージョン 2.x が必要です。**_
 

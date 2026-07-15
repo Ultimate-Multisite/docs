@@ -3,7 +3,7 @@ title: Turado de la Administra Panelo
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# La Tour de l'Admin Panel {#touring-the-admin-panel}
+# La Tour de l'Admin Panel
 
 Ultimate Multisite aspiras a être aussi simple et autoexplanant que possible, mais avec un outil aussi puissant, il peut aider à avoir une visite guidée. Venons parcourir les pages d'administration pour vous aider à vous installer.
 

@@ -3,7 +3,7 @@ title: Validoi paletin kontrasti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validoi paletin kontrasti {#validate-palette-contrast}
+# Validoi paletin kontrasti
 
 **Validate Palette Contrast** -kyky tarkistaa suunnittelupalettisi väriparit WCAG (Web Content Accessibility Guidelines) -vaatimustenmukaisuuden osalta ennen niiden käyttämistä teemassasi.
 

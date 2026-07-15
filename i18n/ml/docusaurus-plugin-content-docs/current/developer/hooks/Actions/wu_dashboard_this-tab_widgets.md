@@ -4,7 +4,7 @@ title: 'Action - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_{$this->tab}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_{$this->tab}_widgets
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് നെറ്റ്‌വർക്ക് ഡാഷ്‌ബോർഡ് പാനലിൽ വിഡ്ജറ്റുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

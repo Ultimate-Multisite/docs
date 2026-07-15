@@ -3,7 +3,7 @@ title: Predpomnjenje pozivov z zavedanjem ponudnika
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Predpomnjenje pozivov z zavedanjem ponudnika {#provider-aware-prompt-caching}
+# Predpomnjenje pozivov z zavedanjem ponudnika
 
 Superdav AI Agent v1.12.0 uvaja **predpomnjenje pozivov z zavedanjem ponudnika**, ki optimizira stroške API in zakasnitev s predpomnjenjem pozivov pri različnih ponudnikih LLM. Vsak ponudnik ima različne mehanizme in konfiguracije predpomnjenja.
 

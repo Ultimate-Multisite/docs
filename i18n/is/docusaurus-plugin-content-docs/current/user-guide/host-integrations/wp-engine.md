@@ -3,7 +3,7 @@ title: Samþætting WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Samning við WP Engine {#wp-engine-integration}
+# Samning við WP Engine
 
 ## Áhersla {#overview}
 WP Engine er premium þjónusta fyrir leitað WordPress hélduð á vefsítum sem býður upp á ólíkandi framkvæmd, öryggi og skalafæði fyrir WordPress síti. Þessi samning fer með sjálfsviðskipti domænum milli Ultimate Multisite og WP Engine.

@@ -3,7 +3,7 @@ title: Қобилияти Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Қобилияти Theme Builder: Таҳия ва Фаъолсозӣ кардани Themeҳои Блок {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Қобилияти Theme Builder: Таҳия ва Фаъолсозӣ кардани Themeҳои Блок
 
 Superdav AI Agent v1.12.0 ду қобилияти қавиро тақдим мекунад, ки имкон медиҳанд шумо тапряин (custom) block themes-ро мустақиман аз интерфейси чат таҳия ва ворид кунед.
 

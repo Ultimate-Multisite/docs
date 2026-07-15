@@ -4,7 +4,7 @@ title: عمل - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Action: wu_cart_setup {#action-wucartsetup}
+# Action: wu_cart_setup
 
 ڈویلپرز کو چیک آؤٹ آبجیکٹ میں مزید تبدیلیاں کرنے کی اجازت دیتا ہے۔
 

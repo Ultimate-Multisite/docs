@@ -3,7 +3,7 @@ title: সার্ভারপাইলট ইন্টিগ্রেশন
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ইন্টিগ্রেশন {#serverpilot-integration}
+# ServerPilot ইন্টিগ্রেশন
 
 ## সংক্ষিপ্ত বিবরণ {#overview}
 ServerPilot হলো একটি ক্লাউড সার্ভিস যা DigitalOcean, Amazon, Google বা অন্য যেকোনো সার্ভার প্রোভাইডারে WordPress এবং অন্যান্য PHP ওয়েবসাইট হোস্ট করতে ব্যবহৃত হয়। এই ইন্টিগ্রেশন Ultimate Multisite এবং ServerPilot-এর মধ্যে স্বয়ংক্রিয় ডোমেইন সিঙ্কিং এবং SSL সার্টিফিকেট ব্যবস্থাপনা সক্রিয় করে।

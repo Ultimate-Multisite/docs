@@ -3,7 +3,7 @@ title: Salgyt dolandyrylyşy
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Salgyt dolandyryşy {#tax-handling}
+# Salgyt dolandyryşy
 
 Ultimate Multisite esasy plaginimize salgyt ýygnamak moduly girizilendir, şonuň üçin planlaryňyz, paketleriňiz we hyzmatlaryňyz boýunça satuw salgytlaryny ýygnamak gerek bolsa, muny hiç hili goşmaça modul gurmazdan aňsatlyk bilen edip bilersiňiz.
 

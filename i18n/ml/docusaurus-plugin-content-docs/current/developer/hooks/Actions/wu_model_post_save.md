@@ -4,7 +4,7 @@ title: Action - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save {#action-wumodelpostsave}
+# Action: wu_model_post_save
 
 ഒരു ഒബ്ജക്റ്റ് ഡാറ്റാബേസിൽ സ്റ്റോർ ചെയ്തതിന് ശേഷം ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

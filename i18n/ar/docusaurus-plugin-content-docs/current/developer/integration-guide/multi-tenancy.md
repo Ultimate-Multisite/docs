@@ -3,7 +3,7 @@ title: تكامل تعدد المستأجرين
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# تكامل تعدد المستأجرين {#multi-tenancy-integration}
+# تكامل تعدد المستأجرين
 
 Ultimate Multisite: يغيّر Multi-Tenancy 1.2.0 عدة نقاط تماس للتكامل للمستأجرين السياديين، والتحقق من الترحيل، وأتمتة دورة حياة المستأجر.
 

@@ -3,7 +3,7 @@ title: Kòd Snipe
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets pou v2 {#code-snippets-for-v2}
+# Code Snippets pou v2
 
 An reyalman, code snippets pou **WordPress** yo itilize pou fè kèk aksyon ki ka mande yon plugin pi piti ki dedye. Genyen sa yo mete nan youn nan dosye nòmal WordPress la oswa nan tem (theme) ou a (anjeneral dosye functions.php tem ou an), oubyen yo ka itilize kòm yon MU plugin.
 

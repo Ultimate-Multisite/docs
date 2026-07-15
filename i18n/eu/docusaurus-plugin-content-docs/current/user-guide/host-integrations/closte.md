@@ -3,7 +3,7 @@ title: Closte Integrazioa
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integrazioa {#closte-integration}
+# Closte Integrazioa
 
 ## Deskuntzua {#overview}
 Closte da WordPress-en gestionat hosting plataforma da Google Cloud infrastructurean dago. Horrek Ultimate Multisite eta Closte arteko domainer bat automatikoin sinkronizatzeko eta SSL sertifikataren administrazioa gogoratzen du.

@@ -3,7 +3,7 @@ title: 'Bài học 14: Điều gì tiếp theo'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Bài 14: Bước Tiếp Theo {#lesson-14-what-comes-next}
+# Bài 14: Bước Tiếp Theo
 
 Bạn đã xây dựng một nền tảng website chuyên biệt (niche) từ đầu. FitSite đã hoạt động, phục vụ các studio thể hình và tạo ra nguồn doanh thu định kỳ. Bài học cuối cùng này sẽ xem xét bạn nên đi đâu từ đây.
 

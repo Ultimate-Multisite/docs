@@ -4,7 +4,7 @@ title: Sefa - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Sefa: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Sefa: wu_checkout_field_types
 
 APIs edu ekuwedzera mhando itsva dzeminda dzinopinda pano.
 

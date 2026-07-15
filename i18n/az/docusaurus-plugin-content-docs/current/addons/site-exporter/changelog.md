@@ -3,7 +3,7 @@ title: Site Exporter Changelog
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Site Exporter Değişiklik Qeydi {#site-exporter-changelog}
+# Site Exporter Değişiklik Qeydi
 
 Version: 1.0.6 - Yayınlanma tarixi: 2026-05-11
 * Yeni: Sayt ixracları indi özünü işə salan bir index.php paketləyir ki, ZIP faylı ayrı bir plugin quraşdırması olmadan yeni bir hosta yerləşdirilsin.

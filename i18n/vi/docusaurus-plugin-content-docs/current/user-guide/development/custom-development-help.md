@@ -3,7 +3,7 @@ title: Trợ giúp Phát triển Tùy chỉnh
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Làm thế nào để nhận hỗ trợ phát triển tùy chỉnh từ Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Làm thế nào để nhận hỗ trợ phát triển tùy chỉnh từ Codeable?
 
 Đôi khi, chúng ta thực sự cần những tùy chỉnh tuyệt vời để làm cho quy trình mạng lưới hoạt động đúng theo ý muốn. Nếu đó là điều bạn đang tìm kiếm, chúng tôi khuyên bạn nên sử dụng [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), nơi bạn có thể tìm thấy các nhà phát triển giàu kinh nghiệm với chuyên môn về Ultimate Multisite.
 
