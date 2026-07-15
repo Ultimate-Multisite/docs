@@ -3,7 +3,7 @@ title: संप्रभु भाडेकरू ऑपरेशन्स
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# सॉवरेन टेनंट ऑपरेशन्स (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# सॉवरेन टेनंट ऑपरेशन्स (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ने सॉवरेन टेनंट्ससाठी ऑपरेशनल टूल्स जोडले आहेत: subsites ज्या स्वतःचा डेटाबेस, फाईलसिस्टम रूट आणि राऊटिंग कॉन्टेक्स्ट वापरतात, तरीही ते नेटवर्क ॲडमिनकडून दिसू शकतात.
 

@@ -3,7 +3,7 @@ title: Njikwa Ụtụ Isi
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Njikwa Ụtụ Isi {#tax-handling}
+# Njikwa Ụtụ Isi
 
 Ultimate Multisite nwere modul nchịkọta ụtụ isi etinyere n'ime plugin isi anyị, yabụ ọ bụrụ na ịchọrọ ịnakọta ụtụ ahịa na plan, ngwugwu na ọrụ gị, ị nwere ike ime ya n'ụzọ dị mfe na-enweghị itinye mgbakwunye ọ bụla.
 

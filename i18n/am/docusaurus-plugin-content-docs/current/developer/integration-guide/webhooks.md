@@ -3,7 +3,7 @@ title: Webhook አያያዝ
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhookን መቆጣጠር (Webhook Handling) {#webhook-handling}
+# Webhookን መቆጣጠር (Webhook Handling)
 
 ከውጪ አገልግሎቶች የሚመጡ ክስተቶችን (events) ለመቀበል እና መረጃን ከUltimate Multisite ጋር ለማመሳሰል የራሳቸውን custom webhook endpoints መፍጠር ይችላሉ።
 

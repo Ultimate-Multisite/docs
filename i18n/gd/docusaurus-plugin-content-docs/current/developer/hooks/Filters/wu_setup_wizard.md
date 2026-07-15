@@ -4,7 +4,7 @@ title: Criathrag - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Criathrag: wu_setup_wizard {#filter-wusetupwizard}
+# Criathrag: wu_setup_wizard
 
 Leig le luchd-leasachaidh ceumannan a bharrachd a chur ris an draoidh rèiteachaidh.
 

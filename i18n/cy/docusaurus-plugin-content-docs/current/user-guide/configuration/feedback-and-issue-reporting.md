@@ -3,7 +3,7 @@ title: Cyflwyniad y cydweithredwyr a cyflwyniad o fethau
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Adferiadau Client a Cyflwyno Prosessedau {#customer-feedback--issue-reporting}
+# Adferiadau Client a Cyflwyno Prosessedau
 
 Mae Gratis AI Agent v1.5.0 yn cyflwyno system adferiadau ac cyflwyno prosessedau sydd wedi'i gynnwys i'r benyn, gan gael y benwylwyr cyffredinol gallu alwio ymatebion nid oeddent yn helpu a cyflwyno problemau yn uniongyrchol o'r ffurf chat. Mae'r system hwn yn cynnwys rheoli cymhwysedd (consent management), amrad cyflwyno prosessedau awtomatig, ac triage AI-assisted ar y benyn.
 

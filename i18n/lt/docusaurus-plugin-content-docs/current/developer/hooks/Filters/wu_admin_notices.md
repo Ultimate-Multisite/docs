@@ -4,7 +4,7 @@ title: Filtras - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filtras: wu_admin_notices {#filter-wuadminnotices}
+# Filtras: wu_admin_notices
 
 Leidžia kūrėjams filtruoti admin pranešimus, pridėtus Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: පාලන පැනලය ඒකාබද්ධ කිරීම වැ
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Control Panel එක සමඟ සම්බන්ධතාවය වැඩි දියුණු කිරීම {#enhance-control-panel-integration}
+# Control Panel එක සමඟ සම්බන්ධතාවය වැඩි දියුණු කිරීම
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 Enhance කියන්නේ බලවත් hosting automation සහ management හැකියාවන් ලබා දෙන නවීන control panel එකක්. මේ සම්බන්ධතාවය නිසා Ultimate Multisite සහ Enhance Control Panel අතර automatic domain syncing සහ SSL certificate management පහසු වෙනවා.

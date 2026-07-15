@@ -3,7 +3,7 @@ title: አቅራቢን የሚያውቅ የፕሮምፕት ማከማቻ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# በአቅራቢው ሁኔታ ላይ የተመሰረተ Prompt Caching {#provider-aware-prompt-caching}
+# በአቅራቢው ሁኔታ ላይ የተመሰረተ Prompt Caching
 
 Superdav AI Agent v1.12.0 **በአቅራቢው ሁኔታ ላይ የተመሰረተ prompt caching**ን አስተዋውቋል፣ ይህም በተለያዩ LLM አቅራቢዎች (providers) መካከል promptsን በማስቀመጥ (caching) የAPI ወጪዎችን እና የጊዜ መጓጓዣን (latency) ያመቻቻል። እያንዳንዱ አቅራቢ የተለያየ የማስቀመጥ ዘዴ እና ውቅረት አለው።
 

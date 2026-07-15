@@ -3,7 +3,7 @@ title: ተጨማሪ ፀሐይ መውጣት ፋይል መጫኛ
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# የአድ-ኦን የሰንጋው (Sunrise) ፋይል መጫኛ {#addon-sunrise-file-loader}
+# የአድ-ኦን የሰንጋው (Sunrise) ፋይል መጫኛ
 
 Ultimate Multisite 2.8.0 ለአድ-ኦኖች እና ለተራቀቁ MU-plugin ውህደቶች (integrations) የሰንጋው (sunrise) ማስፋፊያ መጫኛን ይጨምራል። ይህ መጫኛ የሰንጋው ማስጀመር ሂደት በWordPress ውስጥ የሚከናወን ሲሆን፣ በዚህም ምክንያት የተፈጠረውን `wp-content/sunrise.php` ፋይል ሳያርትዑ ኮድ እንዲሰሩ ያስችላል።
 

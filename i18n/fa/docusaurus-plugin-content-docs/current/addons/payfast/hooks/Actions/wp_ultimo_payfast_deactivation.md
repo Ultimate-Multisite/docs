@@ -4,7 +4,7 @@ title: Action - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# اکشن: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# اکشن: wp_ultimo_payfast_deactivation
 
 به بخش‌های دیگر افزونه اجازه می‌دهد تا روتین‌های لازم برای غیرفعال‌سازی را به آن متصل کنند.
 

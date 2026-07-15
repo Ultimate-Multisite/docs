@@ -3,7 +3,7 @@ title: Ενσωμάτωση ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Ενσωμάτωση ServerPilot {#serverpilot-integration}
+# Ενσωμάτωση ServerPilot
 
 ## Επισκόπηση {#overview}
 Το ServerPilot είναι μια υπηρεσία cloud για τη φιλοξενία ιστοσελίδων WordPress και άλλων PHP σε servers στο DigitalOcean, Amazon, Google ή οποιονδήποτε άλλο πάροχο. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του ServerPilot.

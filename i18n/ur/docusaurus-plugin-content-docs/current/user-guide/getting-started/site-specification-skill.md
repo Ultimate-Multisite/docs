@@ -3,7 +3,7 @@ title: سائٹ کی تفصیلات کا ہنر
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 **Site Specification skill** ek qaim aur mukammal tareeqa hai jiske zariye aap apni website ke maqsad (goals), audience, aur brand ki pehchaan (identity) ko qaid karte hain. Yeh maloomat aapki **site_brief** memory mein store ki jaati hain, jisko agents sessions ke dauran istemal karte hain taa-ke woh hamesha ek jaisa aur context-aware (mauzu par mabni) muawza de saken.
 

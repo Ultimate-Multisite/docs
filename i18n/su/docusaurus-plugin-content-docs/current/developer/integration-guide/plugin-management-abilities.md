@@ -3,7 +3,7 @@ title: Kamampuhan Ngatur Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kamampuh Ngatur Plugin {#plugin-management-abilities}
+# Kamampuh Ngatur Plugin
 
 Gratis AI Agent v1.5.0 hadir jeung **7 kamampuh ngatur plugin** anu bisa dipaké ku AI assistant salila paguneman. Kamampuh ieu nyadiakeun kadali programatik kana plugin WordPress anu dipasang ngaliwatan [Sistem Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

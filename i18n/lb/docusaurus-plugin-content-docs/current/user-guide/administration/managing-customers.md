@@ -3,7 +3,7 @@ title: Kunde-Management
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kunden verwalte {#managing-customers}
+# Kunden verwalte
 
 D'**Customers**-Seite zeigt d'Liste vo de Mitglieder, wo in Ihrem Netzwerk registriert sind. D'Seite zeigt grundlegendi Benutzerinformationen wie Name, E-Mail-Adresse, letscht Login und en **switch to**-Link, wo Sie sich als Site Administrator i de Unterseite vom Benutzer iilogge chönd.
 

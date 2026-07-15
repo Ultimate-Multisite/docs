@@ -3,7 +3,7 @@ title: Domain Seller ફેરફારલોગ
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# ડોમેન વેચનાર ફેરફાર નોંધ {#domain-seller-changelog}
+# ડોમેન વેચનાર ફેરફાર નોંધ
 
 Version 1.3.0 - 2026-06-02 પર રિલીઝ થયું
 - નવું: HostAfrica રિસેલર બેલેન્સ ખૂબ ઓછું થાય ત્યારે network-admin ચેતવણી ઉમેરાઈ

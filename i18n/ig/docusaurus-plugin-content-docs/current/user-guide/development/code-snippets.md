@@ -3,7 +3,7 @@ title: Nkwado Code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2 {#code-snippets-for-v2}
+# Code Snippets for v2
 
 Bara na, code snippets na WordPress-e nwere ihe ndị ọrụ ịbụghị ọrụ ndị ọzọ dị ka plugin ọkụ dị. Ọ bụrụ na a gbanwe code snippets ndị a n'ime file core WordPress na theme-nụ (nidi ọ bụla, functions.php file nke theme-nụ tusi), ma ọ bụ nwere ike ịnwurọ dịka MU plugin.
 

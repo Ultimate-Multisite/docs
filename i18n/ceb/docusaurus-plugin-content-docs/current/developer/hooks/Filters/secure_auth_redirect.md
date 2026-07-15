@@ -4,7 +4,7 @@ title: Salaan - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Salà: secure_auth_redirect {#filter-secureauthredirect}
+# Salà: secure_auth_redirect
 
 Mosala kon gamiton ba ang luwas nga pagbalhin sa pagpamatuod.
 

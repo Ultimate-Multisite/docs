@@ -3,7 +3,7 @@ title: Gudanar da Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gudanar da Webhook {#webhook-handling}
+# Gudanar da Webhook
 
 Ƙirƙiri wuraren ƙarshen webhook na musamman don karɓar abubuwa daga ayyukan waje da daidaita bayanai da Ultimate Multisite.
 

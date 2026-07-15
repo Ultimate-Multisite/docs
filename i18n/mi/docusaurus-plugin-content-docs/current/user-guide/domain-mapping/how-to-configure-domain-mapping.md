@@ -3,7 +3,7 @@ title: Me pēhea te Whirihora i te Whakamahere Rohe
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Me pēhea te Whirihora i te Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
+# Me pēhea te Whirihora i te Domain Mapping (v2)
 
 _**TUHIPOKA NUI: E pā ana tēnei tuhinga ki Ultimate Multisite putanga 2.x.**_
 

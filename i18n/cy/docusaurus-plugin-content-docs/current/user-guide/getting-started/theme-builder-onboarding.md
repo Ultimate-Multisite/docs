@@ -3,7 +3,7 @@ title: Ffylchion y Cyflwyniad o'r Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Ffylchion Gweithredig y Theme Builder {#theme-builder-onboarding-flow}
+# Ffylchion Gweithredig y Theme Builder
 
 Mae Superdav AI Agent v1.12.0 yn cyflwyno **ffylchion gweithredig Theme Builder** aelodol sydd yn helpu chi i creu theme bloc cartrefol yn ystod eich setffryd cyntaf. Mae hyn yn hanesio'r modd Site Builder anheuluol gyda chyfresyddol, arfaidd yn cael ei gyflwyno gan weithredig.
 

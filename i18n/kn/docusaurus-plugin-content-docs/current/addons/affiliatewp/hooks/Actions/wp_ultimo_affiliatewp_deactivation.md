@@ -4,7 +4,7 @@ title: Action - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Action: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Action: wp_ultimo_affiliatewp_deactivation
 
 ಪ್ಲಗ್ಇನ್‌ನ ಇತರ ಭಾಗಗಳು (parts) 비활성화 (deactivation) ಆಗುವಾಗ ತಮ್ಮ ಕಾರ್ಯಗಳನ್ನು (routines) ಜೋಡಿಸಲು (attach) ಈ ಆಕ್ಷನ್ ಹುಕ್ ಅನ್ನು ಬಳಸಬಹುದು.
 

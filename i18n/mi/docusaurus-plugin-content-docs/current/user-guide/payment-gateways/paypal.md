@@ -3,7 +3,7 @@ title: Whakawhanainga PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Whakawhanaungaho i te Gateway o PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Whakawhanaungaho i te Gateway o PayPal (v2)
 
 _**Tohutohu WAIPA: Ko tēnei tikanga he tino whakamārama ki Ultimate Multisite v2.x.**_
 

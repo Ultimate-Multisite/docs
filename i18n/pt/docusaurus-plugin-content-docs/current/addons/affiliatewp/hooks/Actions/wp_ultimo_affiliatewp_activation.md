@@ -4,7 +4,7 @@ title: Ação - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Ação: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Ação: wp_ultimo_affiliatewp_activation
 
 Permite que outras partes do plugin anexem as suas rotinas de ativação
 

@@ -3,7 +3,7 @@ title: Mga Sipi ng Code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Mga Code Snippet para sa v2 {#code-snippets-for-v2}
+# Mga Code Snippet para sa v2
 
 Sa madaling salita, ang mga code snippet para sa **WordPress** ay ginagamit para gawin ang ilang partikular na aksyon na kung minsan ay nangangailangan ng isang hiwalay at mas maliit na plugin. Ang mga code snippet na ito ay inilalagay sa isa sa core file o theme file ng WordPress (karaniwan ay ang functions.php file ng iyong theme) o maaari itong gamitin bilang isang MU plugin.
 

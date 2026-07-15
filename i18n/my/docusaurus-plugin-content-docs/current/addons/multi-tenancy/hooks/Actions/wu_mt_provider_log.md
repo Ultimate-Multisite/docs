@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Action: wu_mt_provider_log {#action-wumtproviderlog}
+# Action: wu_mt_provider_log
 
 ပံ့ပိုးပေးသူတစ်ဦးမှ မက်ဆေ့တစ်ခု မှတ်တမ်းတင်သည့်အခါ ဤ Action သည် အလုပ်လုပ်ပါသည်။
 

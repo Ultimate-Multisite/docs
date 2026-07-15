@@ -3,7 +3,7 @@ title: Iwulite Njikọta Onye Ndebanye Aha Ahaziri Iche
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ịrụ Njikọ Registrar Ahaziri {#building-a-custom-registrar-integration}
+# Ịrụ Njikọ Registrar Ahaziri
 
 Addon Domain Seller na-eji ụkpụrụ **Integration Registry**. Registrar ọ bụla bụ klas PHP nke na-emejuputa `Domain_Selling_Capability` ma na-edebanye onwe ya site na action hook `wu_domain_seller_register_capabilities`.
 

@@ -4,7 +4,7 @@ title: Sivana - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Sivana: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Sivana: wu_element_maybe_extract_arguments
 
 Manampy sivana ankapobeny ahafahan'ny mpamorona manitatra ity mpamakafaka ity mba hikirakira builders na plugins fanampiny.
 

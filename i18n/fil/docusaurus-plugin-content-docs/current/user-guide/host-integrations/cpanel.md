@@ -3,7 +3,7 @@ title: Integrasyon ng cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrasyon sa cPanel {#cpanel-integration}
+# Integrasyon sa cPanel
 
 ## Pangkalahatang-ideya {#overview}
 Ang cPanel ay isa sa mga pinakapopular na control panel para sa web hosting na ginagamit ng maraming shared at dedicated hosting provider. Ang integrasyon na ito ay nagbibigay-daan sa awtomatikong pag-sync ng domain sa pagitan ng Ultimate Multisite at cPanel, para makapagdagdag ka ng mga domain alias at subdomain sa iyong cPanel account nang awtomatiko.

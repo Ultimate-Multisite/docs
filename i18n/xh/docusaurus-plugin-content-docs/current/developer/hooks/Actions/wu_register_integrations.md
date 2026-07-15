@@ -4,7 +4,7 @@ title: Isenzo - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Isenzo: wu_register_integrations {#action-wuregisterintegrations}
+# Isenzo: wu_register_integrations
 
 Siqalisa ukuvumela udibaniso ukuba luzibhalise ngokwalo.
 

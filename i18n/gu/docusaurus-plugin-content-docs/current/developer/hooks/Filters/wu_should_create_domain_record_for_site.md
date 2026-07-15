@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# ફિલ્ટર: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# ફિલ્ટર: wu_should_create_domain_record_for_site
 
 નવા બનાવેલા સાઇટ માટે Ultimate Multisite ડોમેન રેકોર્ડ બનાવવો જોઈએ કે નહીં તે ફિલ્ટર કરે છે.
 

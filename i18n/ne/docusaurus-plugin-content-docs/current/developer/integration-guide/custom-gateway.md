@@ -3,7 +3,7 @@ title: अनुकूलित गेटवे विकास
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway विकास {#custom-gateway-development}
+# Custom Gateway विकास
 
 तपाईं `Base_Gateway` class विस्तार गरेर custom payment gatewayहरू सिर्जना गर्न सक्नुहुन्छ।
 

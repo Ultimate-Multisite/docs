@@ -3,7 +3,7 @@ title: Integrare CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integrarea CyberPanel {#cyberpanel-integration}
+# Integrarea CyberPanel
 
 Acest ghid explică cum să configurezi integrarea Ultimate Multisite CyberPanel pentru ca domeniile mapate din rețeaua ta să fie adăugate (și eliminate) automat ca *virtual hosts* în CyberPanel, cu opțiunea de *auto-SSL* prin Let's Encrypt.
 

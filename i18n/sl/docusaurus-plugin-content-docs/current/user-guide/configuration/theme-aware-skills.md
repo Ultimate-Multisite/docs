@@ -3,7 +3,7 @@ title: Spremema sposobnosti teme
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Veščine prilagojene temam {#theme-aware-skills}
+# Veščine prilagojene temam
 
 Superdav AI Agent v1.10.0 je dostavljen z štirimi novimi, preprosto uporabljivimi veščinami, ki so prilagojene temu WordPressa, in se samodejno prilagodijo vašemu trenutno aktivnemu temu. Te veščine zagotavljajo specializirano usmerjanje in možnosti, prilagojene arhitekturi in značilnostim tega teme.
 

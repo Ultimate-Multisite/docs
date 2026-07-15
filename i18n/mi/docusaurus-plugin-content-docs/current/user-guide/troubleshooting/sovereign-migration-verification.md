@@ -3,7 +3,7 @@ title: Whakawāhi i te Whakamārama o te Rere
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verification Migrāte Sovereign {#sovereign-migration-verification}
+# Verification Migrāte Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 mārama (verification) commands mo te WP-CLI mō migration o tenant sovereign. Roto i ahau i roto i tēnei whakamārama i te wā e ka taea te whakamaoritia i te migration o tenant, te wāha SSO, au te install isolated, he mea nui ko te mana o ia.
 

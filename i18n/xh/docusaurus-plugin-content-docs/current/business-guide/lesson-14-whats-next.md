@@ -3,7 +3,7 @@ title: 'Isifundo 14: Yintoni elandelayo'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Isifundo 14: Yintoni Elandelayo {#lesson-14-what-comes-next}
+# Isifundo 14: Yintoni Elandelayo
 
 Wakhe iqonga lewebhusayithi le-niche ukusuka ekuqaleni. IFitSite iyasebenza, inceda ii-studio zokomelela, kwaye ivelisa ingeniso ephindaphindayo. Esi sifundo sokugqibela sijonga apho ungaya khona ukusuka apha.
 

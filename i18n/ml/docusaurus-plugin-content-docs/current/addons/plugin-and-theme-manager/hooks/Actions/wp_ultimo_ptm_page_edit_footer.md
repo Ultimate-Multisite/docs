@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# Action: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# Action: wp_ultimo_ptm_page_edit_footer
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് പേജിന്റെ അടിഭാഗത്ത് സ്ക്രിപ്റ്റുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

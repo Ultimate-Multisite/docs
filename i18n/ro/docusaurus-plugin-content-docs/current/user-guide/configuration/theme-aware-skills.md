@@ -3,7 +3,7 @@ title: Abilități Specifice Temei
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Competențe Conștiente de Temă {#theme-aware-skills}
+# Competențe Conștiente de Temă
 
 Superdav AI Agent v1.10.0 include patru noi competențe tematice încorporate care se adaptează automat la tema WordPress activă. Aceste competențe oferă ghiduri și capacități specializate, adaptate arhitecturii și funcționalităților temei dumneavoastră.
 

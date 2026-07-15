@@ -3,7 +3,7 @@ title: Moduli di checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Moduli di checkout {#checkout-forms}
+# Moduli di checkout
 
 I moduli di checkout sono un modo semplice e flessibile per sperimentare approcci diversi quando si cerca di convertire nuovi clienti.
 

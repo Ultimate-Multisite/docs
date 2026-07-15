@@ -3,7 +3,7 @@ title: Página de Konta Kliento
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Via de Konto de Sua Kliento (v2) {#your-clients-account-page-v2}
+# Via de Konto de Sua Kliento (v2)
 
 _**IMPORTANTE NOTA: Esta artikolo referas Ultimate Multisite versian 2.x.**_
 

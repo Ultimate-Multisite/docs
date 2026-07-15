@@ -3,7 +3,7 @@ title: Kuteteza Kufuna kwa Auto Search ndi Malingaliwo m'Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace mu Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace mu Site Templates (v2)
 
 _**Iziya izi ndi WP UItimo version 2.x.**_
 

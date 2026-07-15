@@ -3,7 +3,7 @@ title: Ààyè Ìparí Ìrajà àti DNS Oníbàárà
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Field Checkout àti Ìṣàkóso DNS Oníbàárà {#checkout-field-and-customer-dns-management}
+# Field Checkout àti Ìṣàkóso DNS Oníbàárà
 
 ## Field checkout Yíyan Domain {#the-domain-selection-checkout-field}
 

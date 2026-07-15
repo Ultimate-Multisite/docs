@@ -3,7 +3,7 @@ title: Prehod po admin panelu
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Pregled admin panela {#touring-the-admin-panel}
+# Pregled admin panela
 
 Ultimate Multisite ima za cilj biti čim bolj preprosto in samopojasnilo, vendar z takšno močno orodjem lahko pomaga pri usmerjenem ogledu. Pojdemo skozi admin strani, da vam pomagamo se ustaviti.
 

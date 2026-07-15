@@ -3,7 +3,7 @@ title: Personalizzare il modulo di registrazione
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizzare il tuo modulo di registrazione {#customizing-your-registration-form}
+# Personalizzare il tuo modulo di registrazione
 
 Per rendere la tua rete unica rispetto a tutti gli altri SaaS costruiti sulla piattaforma WordPress, Ultimate Multisite ti permette di personalizzare le pagine di registrazione e login con la nostra funzionalità **Checkout Forms**.
 

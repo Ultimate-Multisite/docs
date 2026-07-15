@@ -4,7 +4,7 @@ title: Aðgerð - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Aðgerð: wu_domain_became_primary {#action-wudomainbecameprimary}
+# Aðgerð: wu_domain_became_primary
 
 Keyrist þegar lén verður aðallén fyrir vefsvæði.
 

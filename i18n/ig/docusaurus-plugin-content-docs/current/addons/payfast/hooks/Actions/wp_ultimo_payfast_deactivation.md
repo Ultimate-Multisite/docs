@@ -4,7 +4,7 @@ title: Omume - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# Omume: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# Omume: wp_ultimo_payfast_deactivation
 
 Kwe ka akụkụ ndị ọzọ nke mgbakwunye tinye usoro ha maka ịkwụsị ọrụ
 

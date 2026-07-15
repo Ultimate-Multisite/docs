@@ -3,7 +3,7 @@ title: Ferramentas e Configuração
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ferramentas e Configuração {#tools-and-configuration}
+# Ferramentas e Configuração
 
 Theme Builder usa um conjunto de ferramentas para analisar, projetar e construir seu site WordPress. Na versão 1.16.0, **sd-ai-agent/site-scrape agora é uma ferramenta Tier 1**, tornando-a disponível por padrão no Theme Builder. Superdav AI Agent v1.18.0 também apresenta um pacote complementar Advanced distribuído separadamente para fluxos de trabalho de desenvolvedores confiáveis; essas ferramentas não fazem parte do pacote principal do WordPress.org e devem ser instaladas e autorizadas separadamente.
 

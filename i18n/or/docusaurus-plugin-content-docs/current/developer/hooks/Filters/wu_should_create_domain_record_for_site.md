@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# ଫିଲ୍ଟର: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# ଫିଲ୍ଟର: wu_should_create_domain_record_for_site
 
 ନୂଆକରି ସୃଷ୍ଟି ହୋଇଥିବା ସାଇଟ୍ ପାଇଁ Ultimate Multisite ଏକ ଡୋମେନ୍ ରେକର୍ଡ ସୃଷ୍ଟି କରିବ କି ନାହିଁ, ତାହା ଫିଲ୍ଟର କରେ।
 

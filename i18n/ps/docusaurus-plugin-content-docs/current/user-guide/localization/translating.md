@@ -3,7 +3,7 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite ترجمه {#translating-ultimate-multisite}
+# Ultimate Multisite ترجمه
 
 Ultimate Multisite هم انګلیسي ته جوړ شوی، तर این پڵگین کاملاً ترجمه کردنی میسرە و ئێمە بەخێربوومتر بۆ پێشنیارەکانی وەرگێڕان.
 

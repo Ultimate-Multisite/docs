@@ -3,7 +3,7 @@ title: ادغام WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# یکپارچه‌سازی با WP Engine {#wp-engine-integration}
+# یکپارچه‌سازی با WP Engine
 
 ## معرفی {#overview}
 WP Engine یک پلتفرم هاستینگ مدیریت‌شده و حرفه‌ای برای WordPress است که عملکرد بهینه، امنیت و مقیاس‌پذیری را برای سایت‌های WordPress فراهم می‌کند. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه‌ها بین Ultimate Multisite و WP Engine را فعال می‌کند.

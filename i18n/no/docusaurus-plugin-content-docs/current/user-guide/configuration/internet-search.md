@@ -3,7 +3,7 @@ title: Internett-søk
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internett-søk {#internet-search}
+# Internett-søk
 
 Gratis AI Agent v1.5.0 legger til en funksjon for **Internett-søk** som lar AI-assistenten hente oppdatert informasjon fra nettet under en samtale. Dette er drevet av [Brave Search API](https://brave.com/search/api/) eller [Tavily API](https://tavily.com/).
 

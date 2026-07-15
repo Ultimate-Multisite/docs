@@ -3,7 +3,7 @@ title: 'Somo la 13: Kuongeza Uwezo'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Somo la 13: Kupana Biashara {#lesson-13-scaling-up}
+# Somo la 13: Kupana Biashara
 
 Una jukwaa linalofanya kazi na wateja wenye malipo. Somo hili linazungumzia jinsi ya kukua kutoka uendeshaji mdogo hadi biashara endelevu—kupana miundombinu, kurahisisha uendeshaji, na kuongeza mapato kwa kila mteja.
 

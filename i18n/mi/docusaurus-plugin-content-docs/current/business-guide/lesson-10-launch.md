@@ -3,7 +3,7 @@ title: 'Akoranga 10: Rā Whakarewa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Akoranga 10: Rā Whakarewa {#lesson-10-launch-day}
+# Akoranga 10: Rā Whakarewa
 
 Kua hangaia ngā mea katoa. I mua i tō whakatuwhera i ngā kūaha, ka ārahi tēnei akoranga i a koe mā te rārangi arowhai i mua i te whakarewatanga kia mārama ai kāore he mea kua pakaru, kua ngaro, kua whakama rānei.
 

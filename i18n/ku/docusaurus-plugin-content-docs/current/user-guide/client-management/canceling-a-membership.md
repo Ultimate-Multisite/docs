@@ -3,7 +3,7 @@ title: لغایەک لەسەرکردنی ئەندامبوون
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# لغای ئەندازیاری یەکەم (v2) {#canceling-a-membership-v2}
+# لغای ئەندازیاری یەکەم (v2)
 
 _**تێبینی گرنگ: ئەم بابەتە ئاماژەیە بۆ Ultimate Multisite وەرگرتنی 2.x.**_
 

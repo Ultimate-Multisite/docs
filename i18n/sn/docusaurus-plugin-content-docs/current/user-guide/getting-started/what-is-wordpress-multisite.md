@@ -3,7 +3,7 @@ title: Ndi chii WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Ndi Zvinhu WordPress Multisite? {#what-is-wordpress-multisite}
+# Ndi Zvinhu WordPress Multisite?
 
 Muviri wecore, WordPress inoratid zvinhu chinhu chinotsoita neitaura yakazvo kuitaura kune 2010 kana kukumbira WordPress 3.0. Kuteura, achiine akaita zvinhu zvakawanda kuti zvisimbire zvinhu zvinotanga uye kuti zvinokurudzira kubatsirwa kwakawanda.
 

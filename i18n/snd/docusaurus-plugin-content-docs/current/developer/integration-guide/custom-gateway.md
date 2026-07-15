@@ -3,7 +3,7 @@ title: حسب ضرورت گيٽ وي جي ترقي
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ڪسٽم Gateway ڊولپمينٽ {#custom-gateway-development}
+# ڪسٽم Gateway ڊولپمينٽ
 
 توهان `Base_Gateway` ڪلاس کي وڌائي ڪسٽم ادائيگي gateways ٺاهي سگهو ٿا.
 

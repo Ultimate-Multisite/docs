@@ -4,7 +4,7 @@ title: 过滤器 - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# 过滤器: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# 过滤器: wu_get_site_domain_and_path
 
 允许开发者操作域名/路径对。
 

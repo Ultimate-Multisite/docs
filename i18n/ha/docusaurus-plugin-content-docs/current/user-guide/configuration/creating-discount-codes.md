@@ -3,7 +3,7 @@ title: Gano Kodin Samun Daɗi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ساخت کدهای تخفیف (نسخه ۲) {#creating-discount-codes-v2}
+# ساخت کدهای تخفیف (نسخه ۲)
 
 _**نکته مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 

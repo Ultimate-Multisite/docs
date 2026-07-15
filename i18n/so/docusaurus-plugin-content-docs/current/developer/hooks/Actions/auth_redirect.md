@@ -4,7 +4,7 @@ title: Ficil - auth_redirect
 sidebar_label: auth_redirect
 _i18n_hash: 57a9f8b0fc187713bb6360a8867a8aff
 ---
-# Ficil: auth_redirect {#action-authredirect}
+# Ficil: auth_redirect
 
 Waxay dhacdaa ka hor dib-u-hagidda xaqiijinta.
 

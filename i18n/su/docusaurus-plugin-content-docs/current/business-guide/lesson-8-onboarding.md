@@ -3,7 +3,7 @@ title: 'Palajaran 8: Ngawanohkeun Palanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Palajaran 8: Ngawanohkeun Palanggan Anyar {#lesson-8-customer-onboarding}
+# Palajaran 8: Ngawanohkeun Palanggan Anyar
 
 Meunangkeun palanggan pikeun daptar téh ngan satengah pagawéan. Lamun maranéhna asup, ngarasa kawalahan, terus teu balik deui, anjeun geus kaleungitan maranéhna. Palajaran ieu ngarancang pangalaman anu ngarobah daptaran anyar jadi palanggan anu aktif jeung kalibet.
 

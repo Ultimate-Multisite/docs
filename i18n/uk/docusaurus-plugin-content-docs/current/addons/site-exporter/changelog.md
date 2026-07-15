@@ -3,7 +3,7 @@ title: Журнал змін Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Журнал змін Site Exporter {#site-exporter-changelog}
+# Журнал змін Site Exporter
 
 Версія: 1.0.6 - Випущено 2026-05-11
 * Нове: Експорт сайтів тепер пакує самозавантажуваний файл index.php, тому ZIP-архів можна встановити на свіжому хостингу без окремої установки плагіна.

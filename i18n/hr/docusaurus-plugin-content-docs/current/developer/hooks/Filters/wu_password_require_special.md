@@ -4,7 +4,7 @@ title: Filtar - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filtar: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filtar: wu_password_require_special
 
 Filtrira treba li zahtijevati posebne znakove u lozinkama.
 

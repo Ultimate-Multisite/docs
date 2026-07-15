@@ -4,7 +4,7 @@ title: Фільтр - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Фільтр: secure_auth_cookie {#filter-secureauthcookie}
+# Фільтр: secure_auth_cookie
 
 Визначає, чи має кукі автентифікації передаватися лише через HTTPS.
 

@@ -3,7 +3,7 @@ title: 外掛與主題管理員變更日誌
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# 外掛與主題管理員更新日誌 {#plugin--theme-manager-changelog}
+# 外掛與主題管理員更新日誌
 
 版本：2.0.8 - 發布日期：2026-05-05
 * 改善了：外掛列表現在使用站點快取，減少了資料庫查詢，提升了效能

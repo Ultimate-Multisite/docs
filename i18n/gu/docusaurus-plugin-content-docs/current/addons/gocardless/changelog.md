@@ -3,7 +3,7 @@ title: GoCardless ફેરફારની નોંધ
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless ફેરફારની નોંધ {#gocardless-changelog}
+# GoCardless ફેરફારની નોંધ
 
 Version: 1.0.3 - રજૂ કરવામાં આવ્યું 2026-05-05
 * સુધારો: જ્યારે GoCardless સભ્યપદ પેન્ડિંગ અથવા હોલ્ડ સ્થિતિમાં રદ કરવામાં આવે છે, ત્યારે છોડી દેવાયેલી પેન્ડિંગ સાઇટ્સ હવે સ્વચાલિત રીતે સાફ થઈ જાય છે.

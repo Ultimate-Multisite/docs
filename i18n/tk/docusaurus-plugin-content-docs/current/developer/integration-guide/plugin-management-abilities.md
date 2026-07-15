@@ -3,7 +3,7 @@ title: Pluginleri dolandyrmak mümkinçilikleri
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin dolandyryş mümkinçilikleri {#plugin-management-abilities}
+# Plugin dolandyryş mümkinçilikleri
 
 Gratis AI Agent v1.5.0 söhbet wagtynda AI kömekçisiniň çagyryp bilýän **7 plugin dolandyryş mümkinçiligi** bilen gelýär. Bu mümkinçilikler [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) arkaly gurnalan WordPress plugin-lerine programmalaýyn gözegçiligi üpjün edýär.
 

@@ -3,7 +3,7 @@ title: 'Mësimi 9: Vendosja e çmimeve për fitim'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Mësimi 9: Vendosja e çmimeve për fitim {#lesson-9-pricing-for-profit}
+# Mësimi 9: Vendosja e çmimeve për fitim
 
 Në Mësimin 5 vendosëm çmimet fillestare për planet e FitSite. Tani e përmirësojmë strategjinë e çmimeve me teknika që rrisin të ardhurat, nxisin përmirësimet e planit dhe ulin largimet e klientëve.
 

@@ -3,7 +3,7 @@ title: Ngarti Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ngarti Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Ngarti Dashboard Ultimate Multisite
 
 Samémé urang ngarasa leuwih jero dina pilihan konfigurasi anu leuwih luhur je aspek operasional Ultimate Multisite, hayu urang tingali dashboardna heula.
 

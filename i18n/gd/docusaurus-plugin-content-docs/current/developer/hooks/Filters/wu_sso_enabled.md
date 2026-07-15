@@ -4,7 +4,7 @@ title: Criathrag - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Criathrag: wu_sso_enabled {#filter-wussoenabled}
+# Criathrag: wu_sso_enabled
 
 Cuir an comas/cuir à comas comas single-sign-on thar àrainnean.
 

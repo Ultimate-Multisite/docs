@@ -4,7 +4,7 @@ title: 篩選器 - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# 過濾器：wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# 過濾器：wu_membership_renewal_expiration_date
 
 用來過濾計算出的到期日期，確保其設定在續訂日期之後。
 

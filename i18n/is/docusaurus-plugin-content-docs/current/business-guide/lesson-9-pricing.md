@@ -3,7 +3,7 @@ title: 'Læoni 9: Príssetningur fyrir ávinning'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Læoni 9: Prísning til Árangurs {#lesson-9-pricing-for-profit}
+# Læoni 9: Prísning til Árangurs
 
 Í Læoni 5 settum við fyrstu prísir fyrir FitSite plans. Í þessu gerðum að við finnum fram á nýja hugtök í prísstefnu sem aukar inntekjur, stimpra upp uppgrunni og minnkar feli.
 

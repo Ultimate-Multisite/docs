@@ -4,7 +4,7 @@ title: عمل - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# عمل: wu_deactivation {#action-wudeactivation}
+# عمل: wu_deactivation
 
 plugin جي ٻين حصن کي غيرفعال ڪرڻ لاءِ پنهنجا routines ڳنڍڻ ڏيو
 

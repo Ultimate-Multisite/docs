@@ -3,7 +3,7 @@ title: 'Bài học 5: Thiết kế kế hoạch của bạn'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Bài 5: Thiết Kế Các Gói Dịch Vụ Của Bạn {#lesson-5-designing-your-plans}
+# Bài 5: Thiết Kế Các Gói Dịch Vụ Của Bạn
 
 Các cấp độ gói dịch vụ của bạn không chỉ là mức giá—chúng là sự phản ánh cách thức hoạt động thực tế của nhóm khách hàng mục tiêu của bạn. Trong bài học này, bạn sẽ thiết kế các cấp độ sản phẩm phù hợp với nhu cầu thực tế của các doanh nghiệp thể hình ở các giai đoạn khác nhau.
 

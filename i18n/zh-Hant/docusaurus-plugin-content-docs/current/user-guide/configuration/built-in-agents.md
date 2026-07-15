@@ -3,7 +3,7 @@ title: 內建代理程式
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# 內建 Agents {#built-in-agents}
+# 內建 Agents
 
 Gratis AI Agent v1.9.0 隨附五個內建 agents，每個都預先配置了一組專注的工具、量身打造的系統提示，以及符合該領域常見任務的入門建議。在 agents 之間切換會改變 assistant 能做什麼以及它如何回應——而不需要您進行任何配置。當相關整合已配置時，Superdav AI Agent v1.18.0 可為這些工作流程加入具備排程感知的工具、提醒記錄、核准關卡，以及 SMS 通知。
 

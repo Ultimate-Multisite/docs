@@ -3,7 +3,7 @@ title: Àkòrí PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Ṣiṣe Admin Panel rẹ ní àdáni pẹ̀lú PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Ṣiṣe Admin Panel rẹ ní àdáni pẹ̀lú PRO Theme
 
 Ní ọ̀pọ̀ ìgbà nígbà tí a bá ń ṣe iṣẹ́ fún oníbàárà, a máa ń ní ìfẹ́ láti fún àwọn oníbàárà wa ní ìrírí àdáni nínú admin dashboard ti WordPress. Tí o bá ń wá ìrísí àti ìmọ̀lára tó jẹ́ amọ̀ja díẹ̀ síi, PRO Theme lè ràn ọ́ lọ́wọ́.
 

@@ -3,7 +3,7 @@ title: 'Leçon 2 : Choisir sa niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leçon 2 : Choisir votre niche {#lesson-2-picking-your-niche}
+# Leçon 2 : Choisir votre niche
 
 Dans la Leçon 1, nous avons établi pourquoi la niche est plus efficace que le généraliste. Maintenant, il est temps de choisir la vôtre. Cette leçon vous fournit un cadre pour trouver et valider une niche avant d'investir du temps à construire votre solution.
 

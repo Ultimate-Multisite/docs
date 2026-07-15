@@ -3,7 +3,7 @@ title: Establint la Constante del Creixull de Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Configurar la constante Sunrise a true a Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Configurar la constante Sunrise a true a Closte
 
 Alguns proveïdors d'hosting bloquegen el fitxer `wp-config.php` per raons de seguretat. Això significa que Ultimate Multisite no pot editar el fitxer automàticament per incloure les constantes necessàries per fer funcionar la assignació de domini i altres funcionalitats. Closte és un exemple d'aquest tipus d'hosting.
 

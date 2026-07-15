@@ -3,7 +3,7 @@ title: 'Somo la 6: Uzoefu wa Kusajili'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Somo la 6: Uzoefu wa Kujiandikisha {#lesson-6-the-signup-experience}
+# Somo la 6: Uzoefu wa Kujiandikisha
 
 Mchakato wa malipo ndio mahali ambapo nia inabadilika kuwa mapato. Mchakato wa kujiandikisha ambao ni wenye kuchanganya au ni wa jumla unamwacha mteja. Mchakato maalum unaozungumza lugha yao na unaohisi rahisi sana ndio unawabadilisha kuwa wateja.
 

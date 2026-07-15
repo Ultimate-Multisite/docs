@@ -3,7 +3,7 @@ title: Kunde-ak eskaintzea
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kudeak Barkapen Gestiona {#managing-customers}
+# Kudeak Barkapen Gestiona
 
 Hau **Kudeak** lapiaren da landetara emateko taldeko testiak erlistatu da. Hau erabiltzailearen batzu informazio eskatzen du, zehazki, maila, lehen datu-erregistroa eta erabiltzailearen subsitean administrali gisa logiatzeko linkua.
 

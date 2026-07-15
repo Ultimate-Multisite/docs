@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Erweiderungen {#ultimate-multisite-addons}
+# Ultimate Multisite Erweiderungen
 
 Erweiderungen erweideren Ultimate Multisite mat zousätzleche Funktiounen an Integratiounen. Déi meescht Erweiderunge si bezuelt a kënnen op [ultimatemultisite.com](https://ultimatemultisite.com) kaf ginn.
 

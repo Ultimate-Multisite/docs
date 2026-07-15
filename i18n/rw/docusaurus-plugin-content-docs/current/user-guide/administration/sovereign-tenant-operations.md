@@ -3,7 +3,7 @@ title: Umuco w'Abanyamwuga b'Ubutumwa
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Umuhuko wa Tenant w'Umuhaka (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Umuhuko wa Tenant w'Umuhaka (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yagira zindi zindi zindi zikoreshwa mu gukora ibikorwa by'ubunyangamugambi b'umuhaka (sovereign tenants): subsites zitera ku ntego ya database, filesystem root, no routing context zikoresha ariko zishobora kuvugwa n'abanyamwuga b'urugero.
 

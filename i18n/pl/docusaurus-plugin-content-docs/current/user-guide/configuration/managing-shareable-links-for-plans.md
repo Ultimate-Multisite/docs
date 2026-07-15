@@ -3,7 +3,7 @@ title: Zarządzanie Udostępnianymi Linkami dla Planów
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Zarządzanie linkami do udostępniania planów {#managing-shareable-links-for-plans}
+# Zarządzanie linkami do udostępniania planów
 
 Ultimate Multisite umożliwia udostępnianie linków do planów bezpośrednio Twoim klientom. Aby to zrobić, przejdź do strony edycji dowolnego planu i kliknij przycisk _Kliknij, aby skopiować link do udostępnienia_.
 

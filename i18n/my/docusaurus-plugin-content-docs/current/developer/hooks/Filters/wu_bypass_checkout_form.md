@@ -4,7 +4,7 @@ title: Filter - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 Developer တွေအနေနဲ့ ဒီ output ကို ကျော်လွန်ပြီး ကိုယ်ပိုင် output အသစ်တစ်ခု ထည့်သွင်းနိုင်ဖို့ ခွင့်ပြုပေးပါတယ်။
 

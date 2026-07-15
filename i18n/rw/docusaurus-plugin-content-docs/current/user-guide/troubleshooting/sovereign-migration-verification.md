@@ -3,7 +3,7 @@ title: Gukoresha Umuco w'Ubwiriro bw'Ubutumwa
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Kumenyo Kwibuka Ubwujyanye n'Ubwuziyo bw'Umuco (Sovereign Migration Verification) {#sovereign-migration-verification}
+# Kumenyo Kwibuka Ubwujyanye n'Ubwuziyo bw'Umuco (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yifashije amagambo yo gukora verification ku WP-CLI cyo muco w'uburyo bwa tenant (sovereign tenant migrations). Yishyira mu gihe ushaka gukoresha ibyo iyo uburyo bwa tenant, cyangwa se uburyo bwa SSO cyangwa uburyo bwa install yashyirwaho mu buryo bw'ibindi.
 

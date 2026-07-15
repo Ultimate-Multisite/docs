@@ -4,7 +4,7 @@ title: ফিল্টার - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filter: wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
+# Filter: wu_password_require_uppercase
 
 পাসওয়ার্ডে বড় হাতের অক্ষর (uppercase letters) প্রয়োজন হবে কিনা তা ফিল্টার করে।
 

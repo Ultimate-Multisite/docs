@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# Àlẹmọ: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# Àlẹmọ: wu_get_migration_steps
 
 Jẹ́ kí àwọn olùdàgbàsókè àti àwọn àfikún lè ṣàfikún àwọn ìgbésẹ ìṣípo tuntun
 

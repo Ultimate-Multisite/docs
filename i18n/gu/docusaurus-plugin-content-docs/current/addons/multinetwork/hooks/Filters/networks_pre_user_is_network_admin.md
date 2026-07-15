@@ -4,7 +4,7 @@ title: ફિલ્ટર - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 આ ફિલ્ટર યુઝરના એડમિનિસ્ટ્રેટર હોય તેવા નેટવર્ક્સને ફિલ્ટર કરે છે, જેથી આખી પ્રક્રિયાને ટૂંકી (short-circuit) કરી શકાય.
 

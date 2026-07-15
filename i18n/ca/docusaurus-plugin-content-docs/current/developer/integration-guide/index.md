@@ -3,7 +3,7 @@ title: Guia d'integració
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guia d’integració {#integration-guide}
+# Guia d’integració
 
 Aquesta guia cobreix patrons d’integració habituals amb Ultimate Multisite, incloent-hi la connexió a serveis externs, la creació de passarel·les de pagament personalitzades i la gestió de webhooks.
 

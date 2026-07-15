@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# ຕົວກອງ: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# ຕົວກອງ: wu_gocardless_cleanup_pending_site
 
 ເຮັດວຽກກ່ອນລຶບ site ທີ່ກຳລັງລໍຖ້າແບບ orphaned ສຳລັບ GoCardless membership ທີ່ຖືກຍົກເລີກ.
 

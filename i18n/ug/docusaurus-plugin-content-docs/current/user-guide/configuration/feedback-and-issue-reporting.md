@@ -3,7 +3,7 @@ title: Мансаптарданフィдбек ва муаммо билдириш
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Möjizat Müşteri Fikrleri va Muammalarini Bildirish {#customer-feedback--issue-reporting}
+# Möjizat Müşteri Fikrleri va Muammalarini Bildirish
 
 Gratis AI Agent v1.5.0, oxlar (chat) interfeysinden qolgan javoblarni belgilash va muammalari bildirish imkanı beradigan ichki fikr va muammo bildirish tizimini taqdim etadi. Bu tizimda rıza boshqaruvi, avtomatlashtirilgan hisobot buyrug'i va backendda AI yordamida muammolarni saralash (triage) xizmatlari mavjud.
 

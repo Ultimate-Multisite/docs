@@ -3,7 +3,7 @@ title: Cyflwyniad y gallu gweld
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Gwirddolion Gwyllyd (Ability Visibility) {#ability-visibility}
+# Gwirddolion Gwyllyd (Ability Visibility)
 
 Mae Superdav AI Agent v1.12.0 yn cyflwyno rheoleau **Gwirddolion Gwyllyd** sy'n reoli beth yw'r ffurfau sy'n dangos pob gwirddolion. Mae hyn yn sylwgi'r adminau i ddefnyddio'r gwirddolion y agentau sy'n ar gael drwy REST APIs, MCP servers, WooCommerce integrations, a ffresau eraill.
 

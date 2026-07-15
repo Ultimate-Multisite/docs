@@ -4,7 +4,7 @@ title: Радња - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Акција: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Акција: wu_admin_pages_editors
 
 Омогућава програмерима plugin-а да додају нове опције уређивача =)
 

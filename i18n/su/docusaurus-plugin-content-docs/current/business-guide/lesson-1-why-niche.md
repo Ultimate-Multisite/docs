@@ -3,7 +3,7 @@ title: 'Palajaran 1: Kunaon Ceruk Pasar Unggul'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Pangajaran 1: Naha Ceruk Éta Unggul {#lesson-1-why-niche-wins}
+# Pangajaran 1: Naha Ceruk Éta Unggul
 
 Saméméh urang nyabak software naon waé, anjeun kudu ngartos naha ngawangun pikeun pamiarsa anu husus téh kaputusan pangpentingna anu bakal anjeun jieun.
 

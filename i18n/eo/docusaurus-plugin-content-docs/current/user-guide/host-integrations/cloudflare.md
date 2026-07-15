@@ -3,7 +3,7 @@ title: Integrado Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integrazione {#cloudflare-integration}
+# Cloudflare Integrazione
 
 ## Rezumi {#overview}
 Cloudflare estas la lidera konten-deliĝo (CDN) kaj sekureco-providanto, kiu helpas protekti kaj akceleriĝi sitiojn. Ĉi tiu integriĝo permesas aŭtomatan domen-menĝon inter Ultimate Multisite kaj Cloudflare, partikile por instaliloj de multisitoj por subdomajno.

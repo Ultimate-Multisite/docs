@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Inyandiko {#ultimate-multisite-documentation}
+# Ultimate Multisite Inyandiko
 
 Murakaza neza mu nyandiko za Ultimate Multisite. Ultimate Multisite ihindura WordPress Multisite ikayigira urubuga rwuzuye rwa Website as a Service (WaaS).
 
@@ -18,7 +18,7 @@ Ibintu byose ukeneye kugira ngo ushyireho, utunganye, kandi ucunge urubuga rwawe
 
 Icyerekezo cya tekiniki ku bakora porogaramu bubakira kuri Ultimate Multisite. Kirimo icyerekezo cya hooks, inyandiko za REST API, n’amabwiriza yo guteza imbere addon.
 
-### [Addons](/addons) {#addons}
+### [Inyongera](/addons) {#addons}
 
 Inyandiko za plugins za addon zishyurwa zagura Ultimate Multisite zikongeramo ibiranga by’inyongera nko kwinjiza WooCommerce, isesengura, kugurisha domain, n’ibindi.
 

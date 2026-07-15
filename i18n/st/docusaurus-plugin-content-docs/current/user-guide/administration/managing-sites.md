@@ -3,7 +3,7 @@ title: Ho na le Site
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ho Lona Sites {#managing-sites}
+# Ho Lona Sites
 
 Sites (le site tsa lapa le lapa tse fapaneng) ke tsela e ntlha ya goba ka WaaS yako. Ultimate Multisite e na le ditiro tse 3 tsa sites:
 

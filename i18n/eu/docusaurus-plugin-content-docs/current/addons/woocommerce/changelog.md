@@ -3,7 +3,7 @@ title: WooCommerce integrazioaren aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce integrazioaren aldaketa-erregistroa {#woocommerce-integration-changelog}
+# WooCommerce integrazioaren aldaketa-erregistroa
 
 2.2.0 bertsioa - 2026-07-01ean argitaratua
 * Berria: Ultimate Multisite zerga-kopuruak orain WooCommerce kuota-lerro bereizi gisa agertzen dira checkout-en, ordainketa egin aurretik zergen guztizkoak argiago eginez.

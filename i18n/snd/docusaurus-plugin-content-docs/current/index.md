@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite دستاويز {#ultimate-multisite-documentation}
+# Ultimate Multisite دستاويز
 
 Ultimate Multisite دستاويزن ۾ ڀليڪار. Ultimate Multisite، WordPress Multisite کي مڪمل Website as a Service (WaaS) پليٽفارم ۾ تبديل ڪري ٿو.
 
@@ -18,7 +18,7 @@ Ultimate Multisite دستاويزن ۾ ڀليڪار. Ultimate Multisite، WordPr
 
 Ultimate Multisite تي ٺاهيندڙ ڊولپرز لاءِ ٽيڪنيڪي حوالو. hooks حوالو، REST API دستاويز، ۽ addon ترقي رهنما شامل آهن.
 
-### [Addons](/addons) {#addons}
+### [اضافا](/addons) {#addons}
 
 ادا ڪيل addon پلگ انز لاءِ دستاويز جيڪي WooCommerce انٽيگريشن، اينالٽڪس، ڊومين وڪرو، ۽ وڌيڪ جهڙين اضافي خاصيتن سان Ultimate Multisite کي وڌائين ٿا.
 

@@ -3,7 +3,7 @@ title: Fazendo upgrade de um plano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Fazendo upgrade de um plano (v2) {#upgrading-a-plan-v2}
+# Fazendo upgrade de um plano (v2)
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 

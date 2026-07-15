@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_vat_load {#action-wpultimovatload}
+# କାର୍ଯ୍ୟ: wp_ultimo_vat_load
 
 ସମସ୍ତ ନିର୍ଭରତା ଲୋଡ୍ ହୋଇଗଲେ ଟ୍ରିଗର୍ ହୁଏ
 

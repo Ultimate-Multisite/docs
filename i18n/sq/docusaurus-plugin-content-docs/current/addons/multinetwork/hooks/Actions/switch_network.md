@@ -4,7 +4,7 @@ title: Veprim - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# Veprimi: switch_network {#action-switchnetwork}
+# Veprimi: switch_network
 
 Aktivizohet kur ndërrohet konteksti aktual i rrjetit.
 

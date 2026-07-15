@@ -3,7 +3,7 @@ title: Integrasyon ng Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrasyon ng Closte {#closte-integration}
+# Integrasyon ng Closte
 
 ## Pangkalahatang-ideya {#overview}
 Ang Closte ay isang managed WordPress hosting platform na binuo sa Google Cloud infrastructure. Ang integrasyong ito ay nagbibigay-daan para sa awtomatikong pag-sync ng domain at pamamahala ng SSL certificate sa pagitan ng Ultimate Multisite at Closte.

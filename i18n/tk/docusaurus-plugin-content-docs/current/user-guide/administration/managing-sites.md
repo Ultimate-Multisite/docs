@@ -3,7 +3,7 @@ title: Siteňizi dolandyrmak
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Saytlaryni Dolandyrýan {#managing-sites}
+# Saytlaryni Dolandyrýan
 
 Saytlar (ýa-da subsaytlary) siziň WaaS işiňiziň esasy bölegidir. Ultimate Multisite üç görnüşde saytlara egedikdir:
 

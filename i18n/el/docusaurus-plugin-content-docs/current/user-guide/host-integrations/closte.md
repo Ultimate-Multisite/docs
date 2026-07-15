@@ -3,7 +3,7 @@ title: Ενσωμάτωση Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Ενσωμάτωση Closte {#closte-integration}
+# Ενσωμάτωση Closte
 
 ## Επισκόπηση {#overview}
 Το Closte είναι μια πλατφόρμα διαχειριζόμενης φιλοξενίας WordPress, χτισμένη πάνω στην υποδομή του Google Cloud. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του Closte.

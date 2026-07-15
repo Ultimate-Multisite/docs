@@ -3,7 +3,7 @@ title: Võimete teatmik
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Võimekuste viide {#abilities-reference}
+# Võimekuste viide
 
 Võimekused on aatomilised toimingud, mida Gratis AI Agent saab sinu WordPressi paigalduses käivitada. Iga võimekus on registreeritud PHP klass, mis avaldab JSON-skeemi — agent loeb seda skeemi käitusajal, et mõista, millised parameetrid on nõutavad ja mida võimekus tagastab.
 

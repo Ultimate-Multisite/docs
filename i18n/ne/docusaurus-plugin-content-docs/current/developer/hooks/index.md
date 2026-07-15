@@ -3,7 +3,7 @@ title: हुकहरू सन्दर्भ
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks सन्दर्भ {#hooks-reference}
+# Hooks सन्दर्भ
 
 Ultimate Multisite मा रहेका सबै **५९ actions** र **११८ filters** का लागि स्वतः उत्पन्न गरिएको दस्तावेज।
 

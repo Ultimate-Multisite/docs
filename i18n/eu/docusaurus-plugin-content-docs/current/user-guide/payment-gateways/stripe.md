@@ -3,7 +3,7 @@ title: Stripe-a konpondu
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-aren kon konpona (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway-aren kon konpona (v2)
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite bersyon 2.x-era referentzia da.**_
 

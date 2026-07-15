@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Doiciméadacht Ultimate Multisite {#ultimate-multisite-documentation}
+# Doiciméadacht Ultimate Multisite
 
 Fáilte chuig doiciméadacht Ultimate Multisite. Athraíonn Ultimate Multisite WordPress Multisite ina ardán iomlán Suíomh Gréasáin mar Sheirbhís (WaaS).
 

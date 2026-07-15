@@ -3,7 +3,7 @@ title: Gerenciando Sites
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gerenciando Sites {#managing-sites}
+# Gerenciando Sites
 
 Sites (ou subsites) são o núcleo do seu negócio WaaS. O Ultimate Multisite possui 3 tipos de sites:
 

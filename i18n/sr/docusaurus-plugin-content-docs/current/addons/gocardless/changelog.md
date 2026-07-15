@@ -3,7 +3,7 @@ title: GoCardless дневник измена
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless дневник измена {#gocardless-changelog}
+# GoCardless дневник измена
 
 Верзија: 1.0.3 - Објављено 2026-05-05
 * Исправка: Напуштени сајтови на чекању се сада чисте када се GoCardless чланство откаже док је у стању на чекању или задржано

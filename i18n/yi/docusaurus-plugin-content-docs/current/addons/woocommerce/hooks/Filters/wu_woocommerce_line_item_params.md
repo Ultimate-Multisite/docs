@@ -4,7 +4,7 @@ title: פֿילטער - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 פילטערט די פּאַראַמעטערס וואָס ווערן געניצט צו שאַפֿן די שורה־פּאָזיציעס אין דער WooCommerce קאָרב, איידער מען פירט דעם קונה ווײַטער צו דער WooCommerce אויסצאָלונג.
 

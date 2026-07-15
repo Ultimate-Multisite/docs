@@ -3,7 +3,7 @@ title: Menu Hospitaliti
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Hospitaliti {#hospitality-menus}
+# Menu Hospitaliti
 
 Ciri **Menu Hospitaliti** membolehkan Theme Builder menjana dan menyematkan halaman menu makanan dan minuman yang berstruktur terus ke laman web WordPress anda.
 

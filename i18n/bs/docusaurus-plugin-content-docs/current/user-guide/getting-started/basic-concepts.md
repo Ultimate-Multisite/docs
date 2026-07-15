@@ -3,7 +3,7 @@ title: Osnovni pojmovi
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Osnovni pojmovi {#basic-concepts}
+# Osnovni pojmovi
 
 Za novog korisnika WordPress Multisite-a, ili nekoga ko tek počinje koristiti Ultimate Multisite, može biti mnogo novih riječi i fraza koje je potrebno savladati. Učenje ovih pojmova je važan zadatak jer morate razumjeti platformu i kako ona funkcioniše u cjelini.
 

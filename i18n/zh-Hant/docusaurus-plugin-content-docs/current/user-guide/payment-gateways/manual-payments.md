@@ -3,7 +3,7 @@ title: 設定手動付款
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# 設定手動付款 (v2) {#setting-up-manual-payments-v2}
+# 設定手動付款 (v2)
 
 _**重要注意事項：本文適用於 Ultimate Multisite 2.x 版本。**_
 

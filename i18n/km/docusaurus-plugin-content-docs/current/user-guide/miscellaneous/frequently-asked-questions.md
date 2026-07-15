@@ -3,7 +3,7 @@ title: សំណួរដែលសួរញឹកញាប់
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# សំណួរដែលសួរញឹកញាប់ (Frequently Asked Questions) {#frequently-asked-questions}
+# សំណួរដែលសួរញឹកញាប់ (Frequently Asked Questions)
 
 ខាងក្រោមនេះគឺជាសំណួរដែលគេសួរញឹកញាប់ពេលមានការស្នើសុំជំនួយ។
 

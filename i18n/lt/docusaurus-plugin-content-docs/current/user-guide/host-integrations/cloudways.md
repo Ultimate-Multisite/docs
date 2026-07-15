@@ -3,7 +3,7 @@ title: Cloudways integracija
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integracija {#cloudways-integration}
+# Cloudways Integracija
 
 ## Vaizda informacija {#overview}
 Cloudways yra išlaikoma sklaidų (managed cloud hosting) platforma, kuri leidžia jums įdėti WordPress svetainius įvairiems sklaidų tiekėjams, tokius kaip DigitalOcean, AWS, Google Cloud ir kitais. Ši integracija leido automatinį domenų sinigrinimą ir SSL sertifikatų valdymą tarp Ultimate Multisite ir Cloudways.

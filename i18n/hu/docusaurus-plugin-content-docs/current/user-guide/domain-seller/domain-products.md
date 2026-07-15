@@ -3,7 +3,7 @@ title: Domain Termékek és Árak
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain termékek és árazás {#domain-products-and-pricing}
+# Domain termékek és árazás
 
 A domain termékek az, amellyel szabályozza az árazást, a TLD-ket, a WHOIS adatvédelmet és a szolgáltató kiválasztását. Minden domain termék egy standard Multisite Ultimate termék, de hozzáadva egy extra **Domain Beállítások** fület.
 

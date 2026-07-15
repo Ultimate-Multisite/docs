@@ -3,7 +3,7 @@ title: Konfigurera Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfigurera Stripe som betalgateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Konfigurera Stripe som betalgateway (v2)
 
 _**VIKTIGT: Den här artikeln gäller Ultimate Multisite version 2.x.**_
 

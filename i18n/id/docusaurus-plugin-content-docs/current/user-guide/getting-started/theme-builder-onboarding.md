@@ -3,7 +3,7 @@ title: Alur Orientasi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Alur Orientasi Theme Builder {#theme-builder-onboarding-flow}
+# Alur Orientasi Theme Builder
 
 Superdav AI Agent v1.12.0 memperkenalkan **alur orientasi Theme Builder** terpandu yang membantu Anda membuat tema blok kustom selama pengaturan awal. Ini menggantikan mode Site Builder lama dengan pendekatan yang lebih fleksibel dan dibantu oleh agen.
 

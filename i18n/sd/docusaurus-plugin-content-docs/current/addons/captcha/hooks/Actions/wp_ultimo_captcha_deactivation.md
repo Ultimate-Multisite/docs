@@ -4,7 +4,7 @@ title: عمل - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# عمل: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# عمل: wp_ultimo_captcha_deactivation
 
 plugin جي ٻين حصن کي غيرفعال ڪرڻ لاءِ پنهنجا معمول ڳنڍڻ ڏيو
 

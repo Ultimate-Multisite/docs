@@ -3,7 +3,7 @@ title: 'Dersa 8: Tevlêkirina Mişteriyan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Ders 8: Destpêkirina Xerîdar {#lesson-8-customer-onboarding}
+# Ders 8: Destpêkirina Xerîdar
 
 Girtina xerîdarekî ji bo tomar bûnê tenê nîvê kar e. Heke ew têkevin, xwe tevlihev hîs bikin û careke din venegerin, te ew winda kirin. Ev ders wê ezmûnê dîzayn dike ku tomarbûna nû bike xerîdarekî çalak û têkildar.
 

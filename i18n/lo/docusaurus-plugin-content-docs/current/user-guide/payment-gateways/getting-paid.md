@@ -3,7 +3,7 @@ title: ການຮັບເງິນ
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# ການຮັບເງິນ (v2) {#getting-paid-v2}
+# ການຮັບເງິນ (v2)
 
 _**ໝາຍເຫດສຳຄັນ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite ເວີຊັນ 2.x.**_
 

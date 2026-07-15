@@ -3,7 +3,7 @@ title: Aedificatio Integrationis Registrarii Consuetudinariae
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Aedificatio Integrationis Registratoris Consuetudinariae {#building-a-custom-registrar-integration}
+# Aedificatio Integrationis Registratoris Consuetudinariae
 
 Additamentum Venditoris Dominiorum utitur forma **Registri Integrationum**. Unusquisque registrator est classis PHP quae `Domain_Selling_Capability` implet et se ipsam per hamum actionis `wu_domain_seller_register_capabilities` registrat.
 

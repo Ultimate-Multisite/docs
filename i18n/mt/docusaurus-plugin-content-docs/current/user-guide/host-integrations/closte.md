@@ -3,7 +3,7 @@ title: Integrazzjoni Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrazzjoni ma' Closte {#closte-integration}
+# Integrazzjoni ma' Closte
 
 ## Panoramika {#overview}
 Closte hija piattaforma hosting WordPress gestita li tsetta fuq infrastruttura Google Cloud. Dan l-integrazzjoni tismella sincronizzazzjoni automatika tal-domain u il-ġestjoni tal-SSL certificate bejn Ultimate Multisite u Closte.

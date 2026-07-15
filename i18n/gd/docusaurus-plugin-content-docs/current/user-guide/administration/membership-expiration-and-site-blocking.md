@@ -3,7 +3,7 @@ title: Taisgadh a' chluainn agus blocadh site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Cuimhneachadh air a' chluarach agus air a' chluarach an site {#membership-expiration-and-site-blocking}
+# Cuimhneachadh air a' chluarach agus air a' chluarach an site
 
 Tha an t-amlas seo a' gluasad a bhith a' chluarachadh amlas, deuchainn a' chluarach, agus a' chluarachadh an site. Tha e a' gabhail air an seachdaine an amlas a' tòiseachadh de 'active' gu 'expired', na stiùirithe a tha a' gabhail air an chluarachadhaidh a bhith a' chluarach, agus cè a tha a' gabhail air a bhith ag obair air an site air faighinn an amlas.
 

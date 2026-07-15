@@ -4,7 +4,7 @@ title: Darbība - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Darbība: wp_ultimo_load {#action-wpultimoload}
+# Darbība: wp_ultimo_load
 
 Tiek aktivizēta, kad visas atkarības ir ielādētas
 

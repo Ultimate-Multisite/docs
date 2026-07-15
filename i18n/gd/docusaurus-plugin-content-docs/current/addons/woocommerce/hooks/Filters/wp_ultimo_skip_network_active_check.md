@@ -4,7 +4,7 @@ title: Criathrag - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Criathrag: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Criathrag: wp_ultimo_skip_network_active_check
 
 Leig le luchd-leasachaidh giorrachadh a dhèanamh air sgrùdadh gnìomhachadh an lìonraidh.
 

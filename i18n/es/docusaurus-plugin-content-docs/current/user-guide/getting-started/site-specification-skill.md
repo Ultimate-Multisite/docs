@@ -3,7 +3,7 @@ title: Habilidad de Especificación de Sitios
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Habilidad de Especificación del Sitio {#site-specification-skill}
+# Habilidad de Especificación del Sitio
 
 La **habilidad de Especificación del Sitio** es un enfoque estructurado para capturar los objetivos, la audiencia y la identidad de marca de tu sitio. Esta información se almacena en tu memoria **site_brief**, la cual los agentes consultan a lo largo de las sesiones para proporcionar asistencia consistente y adaptada al contexto.
 

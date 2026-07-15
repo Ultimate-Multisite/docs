@@ -4,7 +4,7 @@ title: Actie - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Action: wu_before_search_models {#action-wubeforesearchmodels}
+# Action: wu_before_search_models
 
 Wordt geactiveerd vóór de verwerking van het zoekverzoek.
 

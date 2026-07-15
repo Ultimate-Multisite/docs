@@ -4,7 +4,7 @@ title: Ago - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Ago: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Ago: wu_domain_renewal_failed
 
 Ekfunkcias post kiam provo renovigi domajnon malsukcesas.
 

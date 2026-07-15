@@ -3,7 +3,7 @@ title: Til að fjarlægja Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Tilkynning um fjarlagning Site Builder Mode {#site-builder-mode-removal-notice}
+# Tilkynning um fjarlagning Site Builder Mode
 
 **Site Builder mode hefur verið fjarlagt í Superdav AI Agent v1.12.0.** Ef þú varðir að nota Site Builder mode, þurftu að skila yfir á **Setup Assistant agent** fyrir þróun þema og uppsetning staðar.
 

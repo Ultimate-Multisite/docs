@@ -3,7 +3,7 @@ title: WooCommerce Integrasyon Talaan sa mga Kausaban
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Talaan sa Kausaban sa WooCommerce Integration {#woocommerce-integration-changelog}
+# Talaan sa Kausaban sa WooCommerce Integration
 
 Version 2.2.0 - Gipagawas niadtong 2026-07-01
 * Bag-o: Ang mga kantidad sa buhis sa Ultimate Multisite karon makita na isip bulag nga mga linya sa bayronon sa WooCommerce sa pag-checkout, nga naghimo sa kinatibuk-ang buhis nga mas klaro sa wala pa ang pagbayad.

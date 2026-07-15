@@ -3,7 +3,7 @@ title: 結帳欄位與客戶 DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# 結帳欄位與客戶 DNS 管理 {#checkout-field-and-customer-dns-management}
+# 結帳欄位與客戶 DNS 管理
 
 ## 網域選擇結帳欄位 {#the-domain-selection-checkout-field}
 

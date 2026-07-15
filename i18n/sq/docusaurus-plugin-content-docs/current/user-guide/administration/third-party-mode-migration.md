@@ -3,7 +3,7 @@ title: Migrimi i Modit të Palës së Tretë
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrimi në Modin e Palës së Tretë (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrimi në Modin e Palës së Tretë (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 ndryshon mënyrën si trajtohen aftësitë e palës së tretë. **Modi i palës së tretë tani fillon me "auto"**, duke lejuar integrimin nativ të WordPress Abilities API në WordPress 7.0+ pa nevojë për konfigurim manual.
 

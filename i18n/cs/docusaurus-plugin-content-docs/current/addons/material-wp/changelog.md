@@ -3,7 +3,7 @@ title: Změnový deník WP pro Material
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP Changelog {#material-wp-changelog}
+# Material WP Changelog
 
 Verze 1.1.15 - 26.01.2026
 * Vylepřeno: Styl a formátování kódu;

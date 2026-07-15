@@ -4,7 +4,7 @@ title: '動作 - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_{$this->tab}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_{$this->tab}_widgets
 
 允許外掛開發人員將小工具（widgets）新增到網路儀表板面板。
 

@@ -4,7 +4,7 @@ title: কৰ্য্য - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 প্লাগইন ডেভেলপাৰসকলক পৃষ্ঠা যোগ কৰাৰ সময়ত অতিৰিক্ত কাম কৰিবলৈ অনুমতি দিয়ে।
 

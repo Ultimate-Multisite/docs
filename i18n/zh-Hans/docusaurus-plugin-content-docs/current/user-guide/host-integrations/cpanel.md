@@ -3,7 +3,7 @@ title: cPanel 集成
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel 集成 {#cpanel-integration}
+# cPanel 集成
 
 ## 概述 {#overview}
 cPanel 是许多共享和专用托管提供商使用的最受欢迎的网络托管控制面板之一。本集成实现了 Ultimate Multisite 与 cPanel 之间的自动域同步，使您能够自动将域别名和子域添加到您的 cPanel 帐户。

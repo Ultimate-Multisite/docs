@@ -3,7 +3,7 @@ title: Aïsolació Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Aïsolació Multi-Tenància {#multi-tenancy-isolation}
+# Aïsolació Multi-Tenància
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suporta l'aïsol de bases de dades i del sistema de fitxers per subsite per tenants soberans. Això manté els dades dels tenants separats, però conserva la configuració a nivell de xarxa, facturació i administració.
 

@@ -3,7 +3,7 @@ title: 'Pelatihan 1: Mengapa Niche Menang'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Pelajaran 1: Mengapa Niche Lebih Unggul {#lesson-1-why-niche-wins}
+# Pelajaran 1: Mengapa Niche Lebih Unggul
 
 Sebelum kita menyentuh perangkat lunak apa pun, Anda perlu memahami mengapa membangun platform untuk audiens tertentu adalah keputusan terpenting yang akan Anda buat.
 

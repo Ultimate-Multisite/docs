@@ -3,7 +3,7 @@ title: Pituduh Integrasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Pituduh Integration {#integration-guide}
+# Pituduh Integration
 
 Pituduh ieu ngawengku pola integration umum jeung Ultimate Multisite, kaasup nyambungkeun ka ladenan éksternal, ngawangun gateway pamayaran kustom, jeung nanganan webhooks.
 

@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite မှာ built-in wizard တစ်ခုပါဝင်ပြီး၊ သာမန် WordPress installation ကို WordPress Multisite network အဖြစ် အလိုအလျောက်ပြောင်းလဲပေးပါတယ်။ ဒါကြောင့် `wp-config.php` ကို ကိုယ်တိုင်ပြင်ဆင်တာနဲ့ database commands တွေ run တာတွေ မလုပ်ရတော့ပါဘူး။
 

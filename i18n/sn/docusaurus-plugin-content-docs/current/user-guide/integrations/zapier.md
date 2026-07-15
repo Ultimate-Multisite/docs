@@ -3,7 +3,7 @@ title: Kugadzirisa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kuita Ultimate Multisite neine Zapier {#integrating-ultimate-multisite-with-zapier}
+# Kuita Ultimate Multisite neine Zapier
 
 Mune muita mweya, tinagadzirisa [Webhooks](webhooks.md) uye kuti zviri kuendesa naye nekuti zvichangopfungwa kuitanisa nemapuator anonyanya vakaoma.
 

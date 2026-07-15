@@ -3,7 +3,7 @@ title: Integracijos vadovas
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integravimo vadovas {#integration-guide}
+# Integravimo vadovas
 
 Šiame vadove aptariami įprasti integravimo su Ultimate Multisite modeliai, įskaitant prisijungimą prie išorinių paslaugų, pasirinktinių mokėjimo šliuzų kūrimą ir webhookų apdorojimą.
 

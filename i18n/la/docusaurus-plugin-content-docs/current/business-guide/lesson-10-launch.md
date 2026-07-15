@@ -3,7 +3,7 @@ title: 'Lectio 10: Dies Publicationis'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lectio 10: Dies Deductionis {#lesson-10-launch-day}
+# Lectio 10: Dies Deductionis
 
 Omnia aedificata sunt. Antequam ianuas aperias, haec lectio per indicem ante deductionem pergit, ut cures nihil fractum, deesse, aut pudendum esse.
 

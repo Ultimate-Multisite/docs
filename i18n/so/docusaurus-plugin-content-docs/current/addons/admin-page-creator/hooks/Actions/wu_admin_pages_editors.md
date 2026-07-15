@@ -4,7 +4,7 @@ title: Ficil - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Ficil: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Ficil: wu_admin_pages_editors
 
 U oggolow horumariyeyaasha plugin inay ku daraan xulashooyin editor cusub =)
 

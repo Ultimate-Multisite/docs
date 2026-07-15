@@ -3,7 +3,7 @@ title: Karɓar Kuɗi
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Karɓar Kuɗi (v2) {#getting-paid-v2}
+# Karɓar Kuɗi (v2)
 
 _**MUHIMMIYAR SANARWA: Wannan maƙala tana nufin Ultimate Multisite sigar 2.x.**_
 

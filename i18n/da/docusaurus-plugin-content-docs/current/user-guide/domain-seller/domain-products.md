@@ -3,7 +3,7 @@ title: Domæneprodukter og priser
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domæneprodukter og prissætning {#domain-products-and-pricing}
+# Domæneprodukter og prissætning
 
 Domæneprodukter er, hvordan du styrer prissætning, TLD'er (Top-Level Domains), WHOIS-privatliv og udbyderudvælgelse. Hvert domæneprodukt er et standard Ultimate Multisite produkt med en ekstra **Domain Settings** faneblad.
 

@@ -3,7 +3,7 @@ title: Formularium de cassa
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulari de Checkout {#checkout-forms}
+# Formulari de Checkout
 
 Formulari de Checkout sunt o modalitate ușoară și flexibilă pentru a experimenta diferite abordări atunci când încercați să convertiți noi clienți.
 

@@ -3,7 +3,7 @@ title: AffiliateWP മാറ്റങ്ങളുടെ രേഖ
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP മാറ്റങ്ങളുടെ രേഖ {#affiliatewp-changelog}
+# AffiliateWP മാറ്റങ്ങളുടെ രേഖ
 
 Version: 2.0.1 - Released on 2025-09-28
 

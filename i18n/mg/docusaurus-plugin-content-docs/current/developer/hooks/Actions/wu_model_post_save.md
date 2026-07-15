@@ -4,7 +4,7 @@ title: Hetsika - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Hetsika: wu_model_post_save {#action-wumodelpostsave}
+# Hetsika: wu_model_post_save
 
 Miasa rehefa voatahiry ao amin’ny tahiry angona ny zavatra iray.
 

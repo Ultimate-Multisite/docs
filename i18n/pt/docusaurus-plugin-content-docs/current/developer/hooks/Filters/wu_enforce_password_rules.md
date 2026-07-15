@@ -4,7 +4,7 @@ title: Filtro - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filtro: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filtro: wu_enforce_password_rules
 
 Filtra se devem ser aplicadas regras adicionais de password.
 

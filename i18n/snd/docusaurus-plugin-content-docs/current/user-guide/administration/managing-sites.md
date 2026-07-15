@@ -3,7 +3,7 @@ title: سائٽس جو انتظام
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# साइटز سنڀالڻ {#managing-sites}
+# साइटز سنڀالڻ
 
 साइटز (يا سبيسائٽس) توهان جي WaaS بزنس جو بنياد آهن. Ultimate Multisite ۾ 3 قسم جا سائٽس هوندا آهن:
 

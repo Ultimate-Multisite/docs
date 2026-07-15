@@ -3,7 +3,7 @@ title: Sawirka aasaasinta Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Dhiskaabinta Istaraalka Badan (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Dhiskaabinta Istaraalka Badan (Multisite Setup Wizard)
 
 Ultimate Multisite wuxuu la socdaa wizard oo si toos ah u shaqeeya inuu si toos ah u beddelo warshad WordPress caadiga ah oo loo qaybsado shirkad isku xiran (WordPress Multisite network). Tani waxay ka saartaa baahida inaad gacanta ku samayso wax ka beddelid `wp-config.php` ama aad si toos ah u fuliso amarrada database-ka.
 

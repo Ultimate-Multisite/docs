@@ -3,7 +3,7 @@ title: Loga Athruithe Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Loga Athruithe Mailchimp {#mailchimp-changelog}
+# Loga Athruithe Mailchimp
 
 Leagan: 1.1.1 - Eisithe ar 2025-09-28
 

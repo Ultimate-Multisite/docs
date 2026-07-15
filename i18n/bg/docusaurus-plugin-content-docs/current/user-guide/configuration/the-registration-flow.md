@@ -3,7 +3,7 @@ title: Потока на регистрация
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Потока на регистрация (v2) {#the-registration-flow-v2}
+# Потока на регистрация (v2)
 
 _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до Ultimate Multisite версия 2.x.**_
 

@@ -3,7 +3,7 @@ title: 'Oppitunti 8: Asiakkaan käyttöönotto'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Oppitunti 8: Asiakkaan käyttöönotto {#lesson-8-customer-onboarding}
+# Oppitunti 8: Asiakkaan käyttöönotto
 
 Asiakkaan saaminen rekisteröitymään on vasta puolet työstä. Jos hän kirjautuu sisään, tuntee olonsa kuormittuneeksi eikä koskaan palaa, olet menettänyt hänet. Tässä oppitunnissa suunnitellaan kokemus, joka muuttaa uuden rekisteröitymisen aktiiviseksi ja sitoutuneeksi asiakkaaksi.
 

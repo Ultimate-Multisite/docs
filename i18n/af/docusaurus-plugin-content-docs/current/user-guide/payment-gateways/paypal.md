@@ -3,7 +3,7 @@ title: Installeer PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Opstel van die PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
+# Opstel van die PayPal Gateway (v2)
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

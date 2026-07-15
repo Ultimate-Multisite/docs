@@ -3,7 +3,7 @@ title: Stripe அமைத்தல்
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-ஐ அமைத்தல் (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway-ஐ அமைத்தல் (v2)
 
 _**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐக் குறிக்கிறது.**_
 

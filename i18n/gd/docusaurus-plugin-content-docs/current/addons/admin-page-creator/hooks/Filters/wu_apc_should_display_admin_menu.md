@@ -4,7 +4,7 @@ title: Criathrag - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Criathrag: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Criathrag: wu_apc_should_display_admin_menu
 
 Leig le rianairean duilleagan a’ chlàr-taice rianachd fhalach, ma tha iad air am pròiseas gnàthachaidh a chrìochnachadh.
 

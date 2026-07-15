@@ -3,7 +3,7 @@ title: Loco Translate Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate Değişiklik Günlüğü {#loco-translate-changelog}
+# Loco Translate Değişiklik Günlüğü
 
 ### 1.0.1 {#101}
 * En son Loco Translate sürümü ile uyumluluk iyileştirildi

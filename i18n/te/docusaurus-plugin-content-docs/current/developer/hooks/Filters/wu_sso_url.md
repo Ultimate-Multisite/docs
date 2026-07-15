@@ -4,7 +4,7 @@ title: వడపోత - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filter: wu_sso_url {#filter-wussourl}
+# Filter: wu_sso_url
 
 క్రాస్-డొమైన్ కస్టమర్ చర్యల కోసం తిరిగి ఇవ్వబడే ముందు రూపొందించిన SSO URLలను ఫిల్టర్ చేస్తుంది.
 

@@ -4,7 +4,7 @@ title: Filtre - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filtre: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filtre: wu_stripe_existing_plan_id
 
 Filtra l'ID del pla que s'ha de comprovar. Si existeix, la nova subscripció utilitzarà aquest pla.
 

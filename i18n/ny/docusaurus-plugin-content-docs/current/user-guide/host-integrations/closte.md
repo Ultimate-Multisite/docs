@@ -3,7 +3,7 @@ title: Kukonse Kukhala
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Usumbu wa Closte {#closte-integration}
+# Usumbu wa Closte
 
 ## Umuwamba (Overview) {#overview}
 Closte ndi platform ya WordPress yomwe imapangidwa pa Google Cloud infrastructure. Izi zikufotokozera kukhazikitsa kuwamba kwa domain monga momwe ndi SSL certificate management monga momwe ndi Ultimate Multisite ndi Closte.

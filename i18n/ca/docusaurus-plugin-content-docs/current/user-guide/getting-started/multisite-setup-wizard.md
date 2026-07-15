@@ -3,7 +3,7 @@ title: Assistència de configuració Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Assistència de configuració de Multisite {#multisite-setup-wizard}
+# Assistència de configuració de Multisite
 
 Ultimate Multisite inclou un assistència integrat que converteix automàticament una instal·lació estàndard de WordPress en una xarxa WordPress Multisite. Això elimina la necessitat de modificar manualment el `wp-config.php` o d'executar comands de la base de dades.
 

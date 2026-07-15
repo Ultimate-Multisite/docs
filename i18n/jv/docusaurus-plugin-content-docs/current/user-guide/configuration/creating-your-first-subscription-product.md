@@ -3,7 +3,7 @@ title: Nggawe Produk Langganan Pertama Sampeyan
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Nggawe Produk Langganan Pertama Sampeyan (v2) {#creating-your-first-subscription-product-v2}
+# Nggawe Produk Langganan Pertama Sampeyan (v2)
 
 _**CATATAN PENTING: Artikel iki mung kanggo pengguna Ultimate Multisite versi 2.x. Yen sampeyan nggunakake versi 1.x,**_ **_**deloken artikel iki**_**.
 

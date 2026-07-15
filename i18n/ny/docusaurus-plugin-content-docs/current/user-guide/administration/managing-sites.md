@@ -3,7 +3,7 @@ title: Kupanga Mphindo
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Kufunira Sites {#managing-sites}
+# Kufunira Sites
 
 Sites (opang'ono) ndi moyo wofunika kwa bizinesi yanu ya WaaS. Ultimate Multisite ndi mafunso 3 a sites:
 

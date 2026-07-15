@@ -4,7 +4,7 @@ title: 過濾器 - wu_magic_link_enforce_user_agent
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# 篩選器：wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
+# 篩選器：wu_magic_link_enforce_user_agent
 
 篩選器是否強制執行使用者代理人驗證。
 

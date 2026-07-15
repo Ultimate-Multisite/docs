@@ -3,7 +3,7 @@ title: Dnevnik sprememb izbirnika jezika
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Dnevnik sprememb izbirnika jezika {#language-selector-changelog}
+# Dnevnik sprememb izbirnika jezika
 
 Različica: 1.1.3 - Izdano 2026-05-05
 * Popravek: Vhodne spremenljivke so zdaj očiščene, imena prilagojenih hookov pa imajo dodano predpono, da se preprečijo konflikti s plugini tretjih oseb

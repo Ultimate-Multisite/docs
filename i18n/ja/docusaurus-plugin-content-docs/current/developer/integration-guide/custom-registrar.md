@@ -3,7 +3,7 @@ title: カスタムレジストラ統合の構築
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# カスタムレジストラ連携の構築 {#building-a-custom-registrar-integration}
+# カスタムレジストラ連携の構築
 
 Domain Seller アドオンは、**Integration Registry** パターンを使用しています。各レジストラは、`Domain_Selling_Capability` を実装し、`wu_domain_seller_register_capabilities` アクションフックを通じて自身を登録する PHP クラスです。
 

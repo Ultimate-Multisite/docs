@@ -4,7 +4,7 @@ title: Akce - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Akce: wu_deactivation {#action-wudeactivation}
+# Akce: wu_deactivation
 
 Umožňuje ostatním částem pluginu připojit své rutiny, které se spustí při deaktivaci.
 

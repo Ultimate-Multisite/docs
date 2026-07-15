@@ -4,7 +4,7 @@ title: Филтр - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# Филтр: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# Филтр: wu_captcha_error_message
 
 Паёми хатои captcha-ро филтр мекунад.
 

@@ -3,7 +3,7 @@ title: Fananganana fampidirana mpisoratra anarana namboarina manokana
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Fananganana Fampidirana Registrar Manokana {#building-a-custom-registrar-integration}
+# Fananganana Fampidirana Registrar Manokana
 
 Ny Domain Seller addon dia mampiasa lamina **Integration Registry**. Ny registrar tsirairay dia class PHP izay mampihatra `Domain_Selling_Capability` ary manoratra ny tenany amin’ny alalan’ny action hook `wu_domain_seller_register_capabilities`.
 

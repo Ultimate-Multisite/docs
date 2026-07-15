@@ -3,7 +3,7 @@ title: Asistent za nastavitvo multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite nastavitveni vodič {#multisite-setup-wizard}
+# Multisite nastavitveni vodič
 
 Ultimate Multisite vključuje zgrajen vodič, ki sam avtomatsko spremeni standardno WordPress instalacijo v WordPress Multisite omrežje. To odloča potrebo po ručnem urejanju datoteke `wp-config.php` ali uporabi baznih komand.
 

@@ -3,7 +3,7 @@ title: 'Pelajaran 2: Memilih Ceruk Pasar Anda'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Pelajaran 2: Memilih Niche Anda {#lesson-2-picking-your-niche}
+# Pelajaran 2: Memilih Niche Anda
 
 Di Pelajaran 1, kita sudah membahas mengapa niche lebih unggul daripada yang umum. Sekarang, giliran Anda memilih niche Anda. Pelajaran ini akan memberikan kerangka kerja untuk menemukan dan memvalidasi niche sebelum Anda menghabiskan waktu untuk membangunnya.
 

@@ -3,7 +3,7 @@ title: Tingkatkan Integrasi Panel Kawalan
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Integrasi Enhance Control Panel {#enhance-control-panel-integration}
+# Integrasi Enhance Control Panel
 
 ## Gambaran Keseluruhan {#overview}
 Enhance ialah panel kawalan moden yang menyediakan keupayaan automasi dan pengurusan hosting yang berkuasa. Integrasi ini membolehkan penyegerakan domain secara automatik dan pengurusan sijil SSL antara Ultimate Multisite dan Enhance Control Panel.

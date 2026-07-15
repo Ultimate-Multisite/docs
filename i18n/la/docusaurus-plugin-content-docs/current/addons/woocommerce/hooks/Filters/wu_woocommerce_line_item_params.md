@@ -4,7 +4,7 @@ title: Filtrum - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtrum: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filtrum: wu_woocommerce_line_item_params
 
 Filtra parametra adhibita ad elementa lineae in cophino WooCommerce creanda, antequam cliens ad solutionem WooCommerce redirigatur.
 

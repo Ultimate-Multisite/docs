@@ -4,7 +4,7 @@ title: 필터 - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# 필터: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# 필터: signup_get_available_languages
 
 프런트엔드 사이트 가입에 사용할 수 있는 언어 목록을 필터링합니다.
 

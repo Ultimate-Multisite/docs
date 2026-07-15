@@ -3,7 +3,7 @@ title: Formuloj de kontakto por Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformular für die Website-Erstellung {#site-builder-contact-forms}
+# Kontaktformular für die Website-Erstellung
 
 Superdav AI Agent v1.10.0 fügt die Möglichkeit hinzu, Kontaktformulare direkt aus der Chat-Oberfläche mithilfe des Site Builder agents zu erstellen. Dadurch können Sie voll funktionsfähige Kontaktformulare auf jede Seite hinzufügen, ohne den Chat verlassen zu müssen.
 

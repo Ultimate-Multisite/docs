@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Преглед на табдашбордот {#dashboard-overview}
+# Преглед на табдашбордот
 
 Ultimate Multisite има посетен **Табдашборд** под менюто Ultimate Multisite, а исто така додава виджети во Мрежен Табдашборд (Network Dashboard). Оваа станица ги покрива што ќе видите на двата места.
 

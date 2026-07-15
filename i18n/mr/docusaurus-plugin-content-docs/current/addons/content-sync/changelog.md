@@ -3,7 +3,7 @@ title: सामग्री सिंक बदलांची नोंद
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync बदलांचा इतिहास {#content-sync-changelog}
+# Content Sync बदलांचा इतिहास
 
 ### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * नवीन: सर्व पोस्ट प्रकार (posts, pages, custom post types) सिंक करण्यासाठी समर्थन.

@@ -3,7 +3,7 @@ title: Tarihin Canje-canje na Mai Fitar da Shafi
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Tarihin Canje-canje na Mai Fitar da Shafi {#site-exporter-changelog}
+# Tarihin Canje-canje na Mai Fitar da Shafi
 
 Siga: 1.0.6 - An fitar a 2026-05-11
 * Sabo: Fitarwar shafi yanzu tana kunshe da `index.php` mai fara-kansa don a iya shigar da ZIP a kan sabon host ba tare da shigar da plugin daban ba

@@ -3,7 +3,7 @@ title: O Fluxo de Registro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# O Fluxo de Cadastro (v2) {#the-registration-flow-v2}
+# O Fluxo de Cadastro (v2)
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 

@@ -4,7 +4,7 @@ title: 過濾器 - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# 篩選器：wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# 篩選器：wu_bypass_checkout_form
 
 允許開發人員繞過預設的輸出，並設定新的內容。
 

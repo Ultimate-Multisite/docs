@@ -3,7 +3,7 @@ title: موشتری Account صفحه‌سی
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# موشتری‌نیزین Account صفحه‌سی (v2) {#your-clients-account-page-v2}
+# موشتری‌نیزین Account صفحه‌سی (v2)
 
 _**اؤنه‌ملی قئید: بو مقاله Ultimate Multisite 2.x نسخه‌سینه عاییددیر.**_
 

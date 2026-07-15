@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Ìṣe: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
+# Ìṣe: wp_ultimo_ptm_page_list_after_title
 
 Gba àwọn olupilẹ̀ṣẹ̀ àfikún laaye láti ṣàfikún àwọn bọtìnì àfikún sí àwọn ojú-iwe àtòkọ
 

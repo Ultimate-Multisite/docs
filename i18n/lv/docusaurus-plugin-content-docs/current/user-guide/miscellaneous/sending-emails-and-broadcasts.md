@@ -3,7 +3,7 @@ title: E-pasta ziņojumu un apraižu sūtīšana
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-pastu un apraižu sūtīšana (v2) {#sending-emails-and-broadcasts-v2}
+# E-pastu un apraižu sūtīšana (v2)
 
 _**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

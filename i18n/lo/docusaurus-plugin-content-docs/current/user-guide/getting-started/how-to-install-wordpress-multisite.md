@@ -3,7 +3,7 @@ title: ວິທີຕິດຕັ້ງ WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# ວິທີການຕິດຕັ້ງ WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# ວິທີການຕິດຕັ້ງ WordPress Multisite?
 
 WordPress Multisite ຊ່ວຍໃຫ້ທ່ານມີເວັບໄຊທ໌ຫຼາຍແຫ່ງຢູ່ໃນການຕິດຕັ້ງດຽວ. ນີ້ແມ່ນຟີເຈີທີ່ມີມາແລ້ວ, ແຕ່ໂດຍປົກກະຕິມັນຈະບໍ່ເປີດໃຊ້ງານຢູ່.
 
@@ -57,7 +57,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# เพิ่มเครื่องหมายทับท้ายให้กับ /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# เพิ่มเครื่องหมายทับท้ายให้กับ /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

@@ -4,7 +4,7 @@ title: Акција - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Дејство: wu_model_post_save {#action-wumodelpostsave}
+# Дејство: wu_model_post_save
 
 Се активира откако објект ќе се зачува во базата на податоци.
 

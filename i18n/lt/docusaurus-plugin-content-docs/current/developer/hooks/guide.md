@@ -3,7 +3,7 @@ title: Kablių naudojimo vadovas
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks naudojimo vadovas {#hooks-usage-guide}
+# Hooks naudojimo vadovas
 
 Ultimate Multisite suteikia daugiau nei 200 action hooks ir daugiau nei 280 filter hooks. Šiame puslapyje aprašomi dažniausiai naudojami hooks su praktiniais pavyzdžiais. Išsamią automatiškai sugeneruotą nuorodą rasite kituose šios skilties puslapiuose.
 

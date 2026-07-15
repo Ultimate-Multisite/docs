@@ -4,7 +4,7 @@ title: Δράση - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 Επιτρέπει σε άλλα μέρη του plugin να συνδέουν τη δική τους λογική κατά την απενεργοποίηση
 

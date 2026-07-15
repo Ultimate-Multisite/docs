@@ -4,7 +4,7 @@ title: Фільтр - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Фільтр: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Фільтр: wu_sites_column_limit
 
 Фільтр, який дозволяє змінити значення для функції `get pluginssites` у межах мережі.
 

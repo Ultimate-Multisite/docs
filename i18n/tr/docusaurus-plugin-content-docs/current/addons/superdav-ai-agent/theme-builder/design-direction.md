@@ -3,7 +3,7 @@ title: Tasarım Yönü
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Tasarım Yönü {#design-direction}
+# Tasarım Yönü
 
 **Tasarım Yönü** adımı, Tema Oluşturucu'nun (Theme Builder) tüm temayı oluşturmasından önce temanızın görsel tasarımını gözden geçirmenize, iyileştirmenize ve son haline getirmenize olanak tanır.
 

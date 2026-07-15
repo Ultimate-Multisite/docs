@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Documentația Ultimate Multisite {#ultimate-multisite-documentation}
+# Documentația Ultimate Multisite
 
 Bine ați venit la documentația Ultimate Multisite. Ultimate Multisite transformă WordPress Multisite într-o platformă completă Website as a Service (WaaS).
 

@@ -3,7 +3,7 @@ title: Alur Orientasi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Alur Onboarding Theme Builder {#theme-builder-onboarding-flow}
+# Alur Onboarding Theme Builder
 
 Superdav AI Agent v1.12.0 ngajukeun **alur onboarding Theme Builder** anu dipandu, nu dibéré pikeun ngabantosan anjeun nyiptake tema blok kustom nalika persiapan awal. Ieu ngaganti mode Site Builder baheulna kalayan cara anu leuwih fleksibel jeung dibantu ku agen.
 

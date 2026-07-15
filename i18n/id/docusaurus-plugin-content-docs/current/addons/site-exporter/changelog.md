@@ -3,7 +3,7 @@ title: Catatan Perubahan Site Exporter
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Catatan Perubahan Ekspor Situs {#site-exporter-changelog}
+# Catatan Perubahan Ekspor Situs
 
 Version: 1.0.6 - Released on 2026-05-11
 * Baru: Ekspor situs sekarang menyertakan `index.php` yang dapat berjalan sendiri, sehingga ZIP dapat diinstal di host baru tanpa perlu instalasi plugin terpisah

@@ -3,7 +3,7 @@ title: Ενσωμάτωση CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Ενσωμάτωση CyberPanel {#cyberpanel-integration}
+# Ενσωμάτωση CyberPanel
 
 Αυτό το руководство εξηγεί πώς να ρυθμίσετε την ενσωμάτωση Ultimate Multisite CyberPanel ώστε οι ανακαταmapωμένοι τομείς (domains) στο network σας να προστίθενται (και να αφαιρούνται) αυτόματα ως virtual hosts στο CyberPanel, με επιλογή αυτόματης παροχής SSL μέσω Let's Encrypt.
 

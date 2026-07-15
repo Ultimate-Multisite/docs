@@ -3,7 +3,7 @@ title: ช่องข้อมูลการชำระเงินและ 
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# ฟิลด์ Checkout และการจัดการ DNS ของลูกค้า {#checkout-field-and-customer-dns-management}
+# ฟิลด์ Checkout และการจัดการ DNS ของลูกค้า
 
 ## ฟิลด์ Checkout การเลือกโดเมน {#the-domain-selection-checkout-field}
 

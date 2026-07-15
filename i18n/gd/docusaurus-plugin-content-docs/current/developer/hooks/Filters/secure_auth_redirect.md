@@ -4,7 +4,7 @@ title: Criathrag - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Criathrag: secure_auth_redirect {#filter-secureauthredirect}
+# Criathrag: secure_auth_redirect
 
 Criathraicheas e am bu chòir ath-stiùireadh dearbhaidh tèarainte a chleachdadh.
 

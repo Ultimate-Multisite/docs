@@ -3,7 +3,7 @@ title: Rekisteröi API-päätepiste
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite -rekister API-päätepiste {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite -rekister API-päätepiste
 
 Tässä ohjeessa opit, miten käyttää Ultimate Multisite /register API-päätepistettä luodaksesi koko uuden asiakkaan sisäänkirjautumisprosessin verkostosi ja miten tehdä se Zapierillä.
 

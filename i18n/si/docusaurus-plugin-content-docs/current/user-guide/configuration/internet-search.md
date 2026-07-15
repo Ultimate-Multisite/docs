@@ -3,7 +3,7 @@ title: අන්තර්ජාල සෙවුම
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# අන්තර්ජාල සෙවුම {#internet-search}
+# අන්තර්ජාල සෙවුම
 
 Gratis AI Agent v1.5.0 එකේ **Internet Search** හැකියාව එකතු කර තිබෙනවා. මේකෙන් කතා කරන අතරතුර AI සහායකයාට වෙබ් අඩවියෙන් යාවත්කාලීන තොරතුරු ලබාගන්න පුළුවන්. මේක ක්‍රියාත්මක වෙන්නේ [Brave Search API](https://brave.com/search/api/) හෝ [Tavily API](https://tavily.com/) මගින්.
 

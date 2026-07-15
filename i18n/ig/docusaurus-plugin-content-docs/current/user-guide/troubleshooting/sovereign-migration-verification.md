@@ -3,7 +3,7 @@ title: Ihe Ihe Nkwupụta Ọnụ Ahụike
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikasyon Migraçyon Sovereign {#sovereign-migration-verification}
+# Verifikasyon Migraçyon Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nwere command verification commands na-akara (WP-CLI) fɛr migraçyon tenant sovereign. Rere use deyọọ n'ihi tenant migration, SSO visit, or isolated install ebe ọkụrụ dị ka onwere ike ịdị anaghị mazi.
 

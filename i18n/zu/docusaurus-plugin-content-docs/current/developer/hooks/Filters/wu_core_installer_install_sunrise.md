@@ -4,7 +4,7 @@ title: Isihlungi - wu_core_installer_install_sunrise
 sidebar_label: wu_core_installer_install_sunrise
 _i18n_hash: 9750f0fbfe9f02249e4e1d17e585bdb6
 ---
-# Isihlungi: wu_core_installer_install_sunrise {#filter-wucoreinstallerinstallsunrise}
+# Isihlungi: wu_core_installer_install_sunrise
 
 Vumela abahlinzeki be-host ukuthi bafake i-constant ngendlela ehlukile.
 

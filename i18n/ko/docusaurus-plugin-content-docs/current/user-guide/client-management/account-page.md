@@ -3,7 +3,7 @@ title: 클라이언트 Account 페이지
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# 고객의 Account 페이지(v2) {#your-clients-account-page-v2}
+# 고객의 Account 페이지(v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 관한 것입니다.**_
 

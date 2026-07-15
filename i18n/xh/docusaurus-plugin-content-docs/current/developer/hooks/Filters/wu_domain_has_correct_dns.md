@@ -4,7 +4,7 @@ title: Isihluzi - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Isihluzo: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Isihluzo: wu_domain_has_correct_dns
 
 Vumela abaphuhlisi beeplugin ukuba bongeze iitshekhi ezintsha ukuze bachaze iziphumo.
 

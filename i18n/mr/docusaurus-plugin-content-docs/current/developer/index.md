@@ -3,7 +3,7 @@ title: विकसक दस्तऐवजीकरण
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Developer Documentation {#developer-documentation}
+# Developer Documentation
 
 हा गाईड (guide) Ultimate Multisite साठी addons इंटिग्रेट करण्यासाठी, विस्तारित करण्यासाठी किंवा विकसित करण्यासाठी आवश्यक असलेली सर्व माहिती डेव्हलपर्सना देतो. Ultimate Multisite हे WordPress Multisite नेटवर्कला Website-as-a-Service (WaaS) प्लॅटफॉर्ममध्ये रूपांतरित करते.
 

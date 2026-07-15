@@ -3,7 +3,7 @@ title: Intern søgning
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internetsøgning {#internet-search}
+# Internetsøgning
 
 Gratis AI Agent v1.5.0 tilføjer en funktion til **Internetsøgning**, som lader AI-assistenten hente opdateret information fra nettet under samtalen. Dette drives af [Brave Search API](https://brave.com/search/api/) eller [Tavily API](https://tavily.com/).
 

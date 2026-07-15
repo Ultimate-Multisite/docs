@@ -4,7 +4,7 @@ title: Tātari - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Tātari: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Tātari: wu_limits_is_post_above_limit
 
 Ka tirohia mēnā e whakaaetia ana tētahi momo whakairinga i tēnei mahere. Ka tuku i ngā kaiwhakawhanake mono-mai kia tātari i te uara whakahoki
 

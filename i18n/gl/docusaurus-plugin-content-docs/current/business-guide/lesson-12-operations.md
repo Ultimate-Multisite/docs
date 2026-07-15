@@ -3,7 +3,7 @@ title: 'Lección 12: Xestionar o negocio'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lección 12: Xestionar o negocio {#lesson-12-running-the-business}
+# Lección 12: Xestionar o negocio
 
 Unha plataforma non é un proxecto que rematas: é un negocio que xestionas. Esta lección cobre as operacións do día a día para xestionar FitSite: soporte, facturación, mantemento e manter satisfeitos os clientes.
 

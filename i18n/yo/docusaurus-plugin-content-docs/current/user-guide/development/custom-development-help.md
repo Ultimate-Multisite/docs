@@ -3,7 +3,7 @@ title: Ìrànlọ́wọ́ Ìdàgbàsókè Àkànṣe
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Báwo ni a ṣe le Gba Iranlọwọ Idagbasoke Adani lati ọdọ Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Báwo ni a ṣe le Gba Iranlọwọ Idagbasoke Adani lati ọdọ Codeable?
 
 Nígbà míì, a máa nílò àtúnṣe adani alárinrin gan-an láti jẹ́ kí ìṣàn nẹ́tíwọ́ọ̀kì wa ṣiṣẹ́ gẹ́gẹ́ bí a ṣe fẹ́. Bí ìyẹn bá jẹ́ ohun tí o ń wá, a ṣàbẹ̀wò fún [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), ibi tí o ti lè rí àwọn olùgbéjáde tó ní ìrírí pẹ̀lú amọ̀ja Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: WooCommerce 集成更新日志
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce 集成更新日志 {#woocommerce-integration-changelog}
+# WooCommerce 集成更新日志
 
 版本 2.2.0 - 发布于 2026-07-01
 * 新增：Ultimate Multisite 税额现在会在结账时作为单独的 WooCommerce 费用行显示，使付款前的税费总额更清晰。

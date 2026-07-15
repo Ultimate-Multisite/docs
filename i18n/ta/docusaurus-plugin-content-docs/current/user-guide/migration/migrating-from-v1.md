@@ -3,7 +3,7 @@ title: V1 இலிருந்து இடம்பெயர்தல்
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 இலிருந்து மாற்றம் செய்தல் {#migrating-from-v1}
+# V1 இலிருந்து மாற்றம் செய்தல்
 
 ## Ultimate Multisite அதன் அசல் 1.x வெளியீடுகளிலிருந்து 2.x வெளியீடுகளுக்கு மாறியுள்ளது. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

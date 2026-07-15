@@ -3,7 +3,7 @@ title: 'Dərslik 13: Ölçekləmə'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Dərs 13: Böyümək {#lesson-13-scaling-up}
+# Dərs 13: Böyümək
 
 Sizin artıq ödəniş edən müştəriləri olan işləyən bir platformanız var. Bu dərs, kiçik bir əməliyyatdan davamlı bir biznesə necə böyüyə biləcəyinizi öyrədir: infrastrukturu böyütmək, əməliyyatları avtomatlaşdırmaq və müştəri başına gəliri artırmaq.
 

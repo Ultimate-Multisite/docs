@@ -4,7 +4,7 @@ title: Ketso - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Ketso: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Ketso: wu_page_enqueue_scripts
 
 Ho eketsa ketso e ikgethileng mona e le hore re be le sebaka sa ho enqueue scripts le styles kamoo ho hlokahalang\ le ho netefatsa hore di laelwa feela maqepheng a nepahetseng
 

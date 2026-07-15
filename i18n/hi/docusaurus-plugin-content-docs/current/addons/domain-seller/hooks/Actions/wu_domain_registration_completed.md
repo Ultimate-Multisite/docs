@@ -4,7 +4,7 @@ title: Action - wu_domain_registration_completed
 sidebar_label: wu_domain_registration_completed
 _i18n_hash: 092b475e74f3b937af068c83eeba2e0a
 ---
-# Action: wu_domain_registration_completed {#action-wudomainregistrationcompleted}
+# Action: wu_domain_registration_completed
 
 जब कोई डोमेन सफलतापूर्वक रजिस्टर हो जाता है, तो यह एक्शन ट्रिगर होता है।
 

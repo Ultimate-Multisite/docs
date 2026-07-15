@@ -3,7 +3,7 @@ title: Kayıt Akışı
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Kayıt Akışı (v2) {#the-registration-flow-v2}
+# Kayıt Akışı (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümünü ifade eder.**_
 

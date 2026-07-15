@@ -3,7 +3,7 @@ title: কাস্টম গেটওয়ে উন্নয়ন
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# কাস্টম Gateway ডেভেলপমেন্ট {#custom-gateway-development}
+# কাস্টম Gateway ডেভেলপমেন্ট
 
 `Base_Gateway` ক্লাস প্রসারিত করে আপনি কাস্টম পেমেন্ট gateway তৈরি করতে পারেন।
 

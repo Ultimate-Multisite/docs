@@ -3,7 +3,7 @@ title: Sanggunian ng Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Sanggunian ng Hooks {#hooks-reference}
+# Sanggunian ng Hooks
 
 Awtomatikong nalikhang dokumentasyon para sa lahat ng **59 action** at **118 filter** sa Ultimate Multisite.
 

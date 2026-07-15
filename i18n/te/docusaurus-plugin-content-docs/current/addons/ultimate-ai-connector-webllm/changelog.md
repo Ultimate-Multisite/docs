@@ -3,7 +3,7 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# WebLLM కోసం Ultimate AI Connector మార్పుల జాబితా {#ultimate-ai-connector-for-webllm-changelog}
+# WebLLM కోసం Ultimate AI Connector మార్పుల జాబితా
 
 ## వెర్షన్ 1.1.0 — విడుదల తేదీ: 2026-04-09 {#version-110--released-on-2026-04-09}
 

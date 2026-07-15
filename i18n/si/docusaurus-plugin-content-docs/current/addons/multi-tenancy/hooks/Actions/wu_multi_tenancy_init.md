@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# ක්‍රියාව: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# ක්‍රියාව: wu_multi_tenancy_init
 
 Multi-Tenancy ඇඩෝනය සම්පූර්ණයෙන් ආරම්භ වූ පසු ක්‍රියාත්මක වේ.
 

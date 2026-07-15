@@ -3,7 +3,7 @@ title: Goiburuaren domeinu-bilaketa
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Goiburuaren domeinu-bilaketa {#header-domain-search}
+# Goiburuaren domeinu-bilaketa
 
 Erabili konfigurazio hau goiburuan formulario txiki bat nahi duzunean, domeinu-bilaketa bat hasteko, eta gero bezeroari Ultimate Multisite checkout barruan eskuragarri dauden domeinuen artean aukeratzen uzteko.
 

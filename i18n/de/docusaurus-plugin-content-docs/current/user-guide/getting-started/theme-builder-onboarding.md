@@ -3,7 +3,7 @@ title: Theme Builder Onboarding Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Onboarding-Prozess für den Theme Builder {#theme-builder-onboarding-flow}
+# Onboarding-Prozess für den Theme Builder
 
 Superdav AI Agent v1.12.0 führt einen geführten **Onboarding-Prozess für den Theme Builder** ein, der Ihnen hilft, während der ersten Einrichtung ein individuelles Block-Theme zu erstellen. Dies ersetzt den älteren Site Builder Modus durch einen flexibleren, agentengestützten Ansatz.
 

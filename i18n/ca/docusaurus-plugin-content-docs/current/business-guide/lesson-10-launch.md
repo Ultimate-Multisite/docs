@@ -3,7 +3,7 @@ title: 'Lliçó 10: Dia de llançament'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Aula 10: Dia del Lançament {#lesson-10-launch-day}
+# Aula 10: Dia del Lançament
 
 De tot és construït. Abans d'obrir les portes, aquesta aula et guia per la llista de revisió pre-lançament per assegurar-te que no hi ha res trencat, faltant o vergonós.
 

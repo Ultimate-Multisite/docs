@@ -3,7 +3,7 @@ title: Cloudways 集成
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways 集成 {#cloudways-integration}
+# Cloudways 集成
 
 ## 概述 {#overview}
 Cloudways 是一个托管式云主机平台，可让你在 DigitalOcean、AWS、Google Cloud 等各种云服务提供商上部署 WordPress 站点。此集成可在 Ultimate Multisite 与 Cloudways 之间实现自动域名同步和 SSL 证书管理。

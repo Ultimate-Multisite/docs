@@ -3,7 +3,7 @@ title: Hooks Használati Útmutató
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Akció Hook-ok Használatoguide {#hooks-usage-guide}
+# Akció Hook-ok Használatoguide
 
 Az Ultimate Multisite több mint 200 akció hook-ját és 280 passzív (filter) hook-ját biztosítja. Ezen az oldalon a leggyakrabban használt hook-okat találja gyakorlati példákkal. A teljes, automatikusan generált referenciához tekintse át ezen szakasz más oldalait.
 

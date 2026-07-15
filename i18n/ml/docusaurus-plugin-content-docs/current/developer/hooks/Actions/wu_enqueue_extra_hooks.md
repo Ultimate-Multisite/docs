@@ -4,7 +4,7 @@ title: Action - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Action: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Action: wu_enqueue_extra_hooks
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് അധിക ഹുക്കുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു.
 

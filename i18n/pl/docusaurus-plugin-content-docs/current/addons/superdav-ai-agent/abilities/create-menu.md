@@ -3,7 +3,7 @@ title: Utwórz menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Utwórz menu {#create-menu}
+# Utwórz menu
 
 Możliwość **Utwórz menu** pozwala tworzyć menu nawigacyjne WordPress, obsługując jednocześnie oddzielne etykiety nawigacyjne, które różnią się od tytułów stron.
 

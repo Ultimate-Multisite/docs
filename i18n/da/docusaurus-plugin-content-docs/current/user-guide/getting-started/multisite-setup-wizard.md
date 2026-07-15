@@ -3,7 +3,7 @@ title: Multisite Opsætningassistent
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Opsætning {#multisite-setup-wizard}
+# Multisite Opsætning
 
 Ultimate Multisite indeholder en indbygget wizard, der automatisk konverterer en standard WordPress-installation til et WordPress Multisite netværk. Dette eliminerer behovet for manuelt at redigere `wp-config.php` eller køre databasekommandoer.
 

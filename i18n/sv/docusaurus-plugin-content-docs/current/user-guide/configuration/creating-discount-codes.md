@@ -3,7 +3,7 @@ title: Skapa rabattkoder
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Skapa rabattkoder (v2) {#creating-discount-codes-v2}
+# Skapa rabattkoder (v2)
 
 _**VIKTIGT: Den här artikeln avser Ultimate Multisite version 2.x.**_
 

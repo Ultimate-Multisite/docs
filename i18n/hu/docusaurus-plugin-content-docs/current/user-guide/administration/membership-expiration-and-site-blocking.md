@@ -3,7 +3,7 @@ title: Tagság Lejárta és Oldal Blokkolása
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Tagság Lejárta és Oldal Blokkolása {#membership-expiration-and-site-blocking}
+# Tagság Lejárta és Oldal Blokkolása
 
 Ez az útmutató elmagyarázza, hogyan kezeli az Ultimate Multisite a tagság lejárását, a próbaidő végének és az oldali (frontend) blokkolást. Leírja a tagság teljes életciklusát az aktív állapottól a lejárttá, azokat a beállításokat, amelyek szabályozzák, hogy blokkolja-e az oldalt, és mit ellenőrizni kell, ha a tagság lejárása után is elérhető marad az oldal.
 

@@ -3,7 +3,7 @@ title: Àwọn ohun tí a nílò
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Àwọn ohun tí Ultimate Multisite nílò {#ultimate-multisite-requirements}
+# Àwọn ohun tí Ultimate Multisite nílò
 
 Ohun àkọ́kọ́ tí o lè bi ara rẹ kí o tó ra Ultimate Multisite ni àwọn ohun tí a nílò láti ṣiṣẹ́ plugin wa. Ó dáa, láyọ̀, àwọn ohun ìpilẹ̀ díẹ̀ pere ni a nílò fún mímú Ultimate Multisite ṣiṣẹ́: **orúkọ domain** , **olùpèsè hosting** tó dáa àti fifi WordPress **Multisite** sílẹ̀. Ìyẹn ni gbogbo ohun tí o nílò!
 

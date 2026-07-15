@@ -3,7 +3,7 @@ title: एडअन Sunrise फाइल लोडर
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# एडअन Sunrise फाइल लोडर {#addon-sunrise-file-loader}
+# एडअन Sunrise फाइल लोडर
 
 Ultimate Multisite 2.8.0 ले एडअनहरू र अनुकूलन MU-plugin एकीकरणहरूका लागि sunrise extension loader थप्छ, जसलाई उत्पन्न गरिएको `wp-content/sunrise.php` फाइल सम्पादन नगरी WordPress sunrise bootstrapping का क्रममा चल्न आवश्यक हुन्छ।
 

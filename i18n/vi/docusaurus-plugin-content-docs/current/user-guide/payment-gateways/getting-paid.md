@@ -3,7 +3,7 @@ title: Nhận thanh toán
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Nhận thanh toán (v2) {#getting-paid-v2}
+# Nhận thanh toán (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

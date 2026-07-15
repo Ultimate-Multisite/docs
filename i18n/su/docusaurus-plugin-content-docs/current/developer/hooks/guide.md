@@ -3,7 +3,7 @@ title: Pituduh Pamakéan Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Pituduh Pamakéan Hooks {#hooks-usage-guide}
+# Pituduh Pamakéan Hooks
 
 Ultimate Multisite nyayogikeun 200+ action hooks jeung 280+ filter hooks. Kaca ieu ngajelaskeun hooks anu pangseringna dipaké kalayan conto praktis. Pikeun rujukan lengkep anu dijieun otomatis, buka kaca séjén dina bagian ieu.
 

@@ -3,7 +3,7 @@ title: GridPane integreerimine
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integreerimine {#gridpane-integration}
+# GridPane Integreerimine
 
 ## Üldine ülevaade {#overview}
 GridPane on spetsialise WordPress hoitja kontrollpaneel, mille on loodud tõsise WordPress professionaalide jaoks. See integreerimine võimaldab automaatselt domeenid synkronida ja SSL-tüüdorite haldamist Ultimate Multisite'i ja GridPane vahel.

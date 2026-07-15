@@ -3,7 +3,7 @@ title: Lenane la diphetoho la Sehokedi sa Ultimate AI bakeng sa WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector bakeng sa Lenane la Diphetoho la WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Ultimate AI Connector bakeng sa Lenane la Diphetoho la WebLLM
 
 ## Version 1.1.0 — E lokollotswe ka 2026-04-09 {#version-110--released-on-2026-04-09}
 

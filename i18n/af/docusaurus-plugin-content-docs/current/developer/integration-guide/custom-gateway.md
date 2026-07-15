@@ -3,7 +3,7 @@ title: Pasgemaakte poortontwikkeling
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway-ontwikkeling {#custom-gateway-development}
+# Custom Gateway-ontwikkeling
 
 Jy kan pasgemaakte betalingsgateways skep deur die `Base_Gateway`-klas uit te brei.
 

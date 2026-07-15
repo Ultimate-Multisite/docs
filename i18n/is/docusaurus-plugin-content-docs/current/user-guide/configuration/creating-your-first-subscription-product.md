@@ -3,7 +3,7 @@ title: Skráningur fyrsta endurskoða produktans þíns
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Skráning fyrri skýrslu þín (v2) {#creating-your-first-subscription-product-v2}
+# Skráning fyrri skýrslu þín (v2)
 
 _**VIÐSKÖTTU: Þessi grein er aðeins fyrir notendur Ultimate Multisite v2.x. Ef þú notar v1.x,**_ **_sjáðu þetta grein**_**.
 

@@ -4,7 +4,7 @@ title: Nzacha - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Nzacha: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Nzacha: wu_wp_config_reference_hook_line_patterns
 
 Anyị na-enyocha ụkpụrụ atọ mgbe anyị na-agbalị ịchọpụta ebe anyị nwere ike itinye constants anyị:
 

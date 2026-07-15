@@ -3,7 +3,7 @@ title: Hookide kasutusjuhend
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hookide kasutamise juhend {#hooks-usage-guide}
+# Hookide kasutamise juhend
 
 Ultimate Multisite pakub 200+ action hooki ja 280+ filter hooki. See leht käsitleb kõige sagedamini kasutatavaid hooke koos praktiliste näidetega. Täieliku automaatselt genereeritud viite jaoks sirvi teisi selle jaotise lehti.
 

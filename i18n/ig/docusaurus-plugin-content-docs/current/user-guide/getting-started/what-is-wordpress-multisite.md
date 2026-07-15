@@ -3,7 +3,7 @@ title: Kedu ihe bụ WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kedu WordPress Multisite? {#what-is-wordpress-multisite}
+# Kedu WordPress Multisite?
 
 Na mme core-nya, WordPress na-eme feature na ọchị bụ ‘Multisite’ nke na-eme ihe dịkwa n'ụzọ 2010 na nwere launch na WordPress 3.0. Ndị ahụ onwe ya na nwere ụfọdụ re-revision ndị na-eme ihe ndị dị new na ịchekwa ike.
 

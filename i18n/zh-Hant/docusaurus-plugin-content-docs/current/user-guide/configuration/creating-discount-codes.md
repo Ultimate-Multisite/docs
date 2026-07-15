@@ -3,7 +3,7 @@ title: 建立折扣碼
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 建立折扣代碼（v2） {#creating-discount-codes-v2}
+# 建立折扣代碼（v2）
 
 _**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 

@@ -4,7 +4,7 @@ title: 액션 - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# 액션: wu_page_load {#action-wupageload}
+# 액션: wu_page_load
 
 플러그인 개발자가 우리 페이지에 추가 훅을 추가할 수 있도록 허용합니다.
 

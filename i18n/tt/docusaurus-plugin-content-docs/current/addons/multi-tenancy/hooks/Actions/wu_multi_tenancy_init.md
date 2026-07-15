@@ -4,7 +4,7 @@ title: Гамәл - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Гамәл: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Гамәл: wu_multi_tenancy_init
 
 Multi-Tenancy өстәмәсе тулысынча башлангыч халәткә китерелгәннән соң эшли.
 

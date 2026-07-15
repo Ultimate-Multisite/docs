@@ -3,7 +3,7 @@ title: 'Lección 6: La experiencia de registro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lección 6: La Experiencia de Registro {#lesson-6-the-signup-experience}
+# Lección 6: La Experiencia de Registro
 
 El flujo de pago es donde el interés se convierte en ingresos. Un proceso de registro confuso o genérico hace que los clientes se vayan. Un flujo específico para un nicho que hable su idioma y se sienta natural, los convierte.
 

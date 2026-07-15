@@ -3,7 +3,7 @@ title: Înregistrează un Account prin Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Eveniment: Înregistrarea unui Account prin Zapier {#event-register-an-account-via-zapier}
+# Eveniment: Înregistrarea unui Account prin Zapier
 
 În articolul [Integrarea Ultimate Multisite cu Zapier](zapier.md), am discutat cum să folosești Zapier pentru a efectua diferite acțiuni în Ultimate Multisite pe baza triggerelor și evenimentelor. În acest articol, vom arăta cum poți integra aplicații terțe. Vom folosi Google Sheets ca sursă de date și vom trimite informațiile către Ultimate Multisite pentru a înregistra un Account.
 

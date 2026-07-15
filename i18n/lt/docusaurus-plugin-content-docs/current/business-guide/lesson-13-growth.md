@@ -3,7 +3,7 @@ title: '13 pamoka: mastelio didinimas'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# 13 pamoka: Mastelio didinimas {#lesson-13-scaling-up}
+# 13 pamoka: Mastelio didinimas
 
 Turite veikiančią platformą su mokančiais klientais. Šioje pamokoje aptariama, kaip iš nedidelės veiklos išaugti į tvarų verslą -- didinti infrastruktūros mastelį, automatizuoti operacijas ir didinti pajamas iš vieno kliento.
 

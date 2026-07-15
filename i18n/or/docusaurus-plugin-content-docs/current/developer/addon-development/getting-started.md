@@ -3,7 +3,7 @@ title: ଆଡଅନ୍ ବିକାଶ ଆରମ୍ଭ କରିବା
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ଅତିରିକ୍ତ ବିକାଶ {#addon-development}
+# ଅତିରିକ୍ତ ବିକାଶ
 
 ## ଅତିରିକ୍ତର ଗଠନ {#addon-structure}
 

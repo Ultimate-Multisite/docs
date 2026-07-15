@@ -3,7 +3,7 @@ title: Kuidas saada abi
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kuidas abi saada {#how-to-get-help}
+# Kuidas abi saada
 
 Saadite oma valida Lisentskey ja sellega on teie juur kulutav meie meale, et aidata lahendada küsimusi, mis te võite kohta Ultimate Multisite paigaldamise ajal vastatama.
 

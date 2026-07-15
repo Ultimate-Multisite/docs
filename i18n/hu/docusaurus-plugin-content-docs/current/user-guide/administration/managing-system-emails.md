@@ -3,7 +3,7 @@ title: Rendszer-e-mailek kezelése
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Rendszer e-mailek kezelése {#managing-system-emails}
+# Rendszer e-mailek kezelése
 
 Az Ultimate Multisite különféle rendszer e-maileket küld olyan eseményekhez, mint a regisztrációs visszaigazolások, fizetési nyugták és tagsági változások. Ezeket az e-mail sablonokat testre szabhatod, hogy illeszkedjenek a márkádhoz.
 

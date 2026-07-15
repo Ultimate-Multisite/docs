@@ -3,7 +3,7 @@ title: Ọgbọn Ìtọ́kasí Ojúlé
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Ìmọ̀ Ìpèsè Àlàyé Ojúlé {#site-specification-skill}
+# Ìmọ̀ Ìpèsè Àlàyé Ojúlé
 
 **Ìmọ̀ Ìpèsè Àlàyé Ojúlé** jẹ́ ọ̀nà tí a ṣètò fún gbígba àwọn ibi-afẹ́ ojúlé rẹ, àwọn olùgbọ́ rẹ, àti ìdánimọ̀ brand. A máa ń tọ́jú ìwífún yìí sínú ìrántí **site_brief** rẹ, èyí tí àwọn agent máa ń tọ́ka sí kọjá àwọn ìgbà ìṣiṣẹ́ láti pèsè ìrànlọ́wọ́ tó dúró ṣinṣin, tó sì mọ àyíká.
 

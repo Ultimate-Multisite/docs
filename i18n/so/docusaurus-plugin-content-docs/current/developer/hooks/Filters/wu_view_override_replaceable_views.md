@@ -4,7 +4,7 @@ title: Shaandho - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Shaandheeye: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Shaandheeye: wu_view_override_replaceable_views
 
 Waxay u oggolaanaysaa horumariyeyaasha inay ku daraan galal dheeraad ah liiska la beddeli karo.
 

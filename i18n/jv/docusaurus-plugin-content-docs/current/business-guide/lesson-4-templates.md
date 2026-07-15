@@ -3,7 +3,7 @@ title: 'Piwulang 4: Mbangun Cithakan Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Piwulang 4: Mbangun Cithakan Ceruk {#lesson-4-building-niche-templates}
+# Piwulang 4: Mbangun Cithakan Ceruk
 
 Cithakan iku inti saka tawaran nilai ceruk panjenengan. Sing nduwé studio kabugaran sing ndaftar lan ndeleng situs sing wis katon kaya situs web kabugaran -- kanthi jadwal kelas, profil pelatih, lan gambar sing trep -- luwih gedhé kamungkinané bakal tetep tinimbang sing ndeleng kanvas kosong.
 

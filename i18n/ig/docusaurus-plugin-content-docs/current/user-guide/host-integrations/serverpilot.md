@@ -3,7 +3,7 @@ title: Nkwado ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integração com ServerPilot {#serverpilot-integration}
+# Integração com ServerPilot
 
 ## Tổng quan {#overview}
 ServerPilot là một dịch vụ đám mây để lưu trữ các trang web WordPress và các trang web PHP khác trên các máy chủ của DigitalOcean, Amazon, Google hoặc bất kỳ nhà cung cấp máy chủ nào khác. Việc tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và ServerPilot.

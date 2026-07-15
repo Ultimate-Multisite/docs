@@ -4,7 +4,7 @@ title: Tindakan - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 Membenarkan pembangun plugin untuk menyimpan data meta pengguna dengan cara yang berbeza jika mereka memerlukannya.
 

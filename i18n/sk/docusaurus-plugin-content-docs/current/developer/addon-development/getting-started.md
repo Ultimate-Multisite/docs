@@ -3,7 +3,7 @@ title: Začíname s vývojom doplnkov
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Vývoj doplnku {#addon-development}
+# Vývoj doplnku
 
 ## Štruktúra doplnku {#addon-structure}
 

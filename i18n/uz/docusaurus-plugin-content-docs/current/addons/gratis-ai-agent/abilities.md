@@ -3,7 +3,7 @@ title: Qobiliyatlar maʼlumotnomasi
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Imkoniyatlar ma'lumotnomasi {#abilities-reference}
+# Imkoniyatlar ma'lumotnomasi
 
 Imkoniyatlar — Gratis AI Agent sizning WordPress o‘rnatmangizda chaqira oladigan atomar amallardir. Har bir imkoniyat JSON sxemasini taqdim etadigan ro‘yxatdan o‘tgan PHP klassidir — agent ish vaqtida ushbu sxemani o‘qib, qanday parametrlar talab qilinishini va imkoniyat nima qaytarishini tushunadi.
 

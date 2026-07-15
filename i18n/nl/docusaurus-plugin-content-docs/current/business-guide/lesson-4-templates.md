@@ -3,7 +3,7 @@ title: 'Les 4: Niche templates bouwen'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Les 4: Het Bouwen van Niche Templates {#lesson-4-building-niche-templates}
+# Les 4: Het Bouwen van Niche Templates
 
 Templates vormen de kern van uw niche-waardepropositie. Een eigenaar van een fitnessstudio die zich aanmeldt en een site ziet die er al uitziet als een fitnesswebsite – met lesroosters, profielen van trainers en de juiste beelden – is veel waarschijnlijker om te blijven dan iemand die een leeg canvas ziet.
 

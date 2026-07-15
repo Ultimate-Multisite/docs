@@ -3,7 +3,7 @@ title: Palette-Kontrast validieren
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palette-Kontrast validieren {#validate-palette-contrast}
+# Palette-Kontrast validieren
 
 Die **Palette-Kontrast-Validierung** prüft Farbkombinationen in Ihrer Designpalette auf WCAG-Konformität (Web Content Accessibility Guidelines), bevor Sie diese auf Ihr Theme anwenden.
 

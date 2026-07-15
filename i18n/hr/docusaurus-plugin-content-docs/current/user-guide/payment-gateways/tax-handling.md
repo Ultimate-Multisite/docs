@@ -3,7 +3,7 @@ title: Obrada poreza
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obrada poreza {#tax-handling}
+# Obrada poreza
 
 Ultimate Multisite ima modul za naplatu poreza ugrađen u naš osnovni plugin, pa ako trebate naplaćivati poreze na promet za svoje planove, pakete i usluge, to možete jednostavno učiniti bez potrebe za instaliranjem bilo kakvih dodataka.
 

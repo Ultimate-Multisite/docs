@@ -4,7 +4,7 @@ title: 過濾器 - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# 篩選器：wu_get_migration_steps {#filter-wugetmigrationsteps}
+# 篩選器：wu_get_migration_steps
 
 讓開發者和外掛可以新增遷移步驟
 

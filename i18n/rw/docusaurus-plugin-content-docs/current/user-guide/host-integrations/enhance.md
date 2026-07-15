@@ -3,7 +3,7 @@ title: Gukomeza uburyo bwo gukoresha Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Gutsira Urugero mu Control Panel {#enhance-control-panel-integration}
+# Gutsira Urugero mu Control Panel
 
 ## Umucozo (Overview) {#overview}
 Enhance ni control panel ya modere yifasha uburyo bwiza bwo gukora hosting automation n'uburyo bwo gutera umuntu. Iyi gukoresha yifashisha gukoresha domain syncing cyangwa gukemura SSL certificate hagati ya Ultimate Multisite na Enhance Control Panel.

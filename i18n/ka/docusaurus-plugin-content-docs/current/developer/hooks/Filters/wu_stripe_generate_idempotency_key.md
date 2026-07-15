@@ -4,7 +4,7 @@ title: ფილტრი - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# ფილტრი: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# ფილტრი: wu_stripe_generate_idempotency_key
 
 ფილტრავს idempotency_key მნიშვნელობას, რომელიც იგზავნება Stripe-ის გადახდის პარამეტრებთან ერთად.
 

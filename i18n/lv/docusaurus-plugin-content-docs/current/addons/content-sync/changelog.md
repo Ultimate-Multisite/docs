@@ -3,7 +3,7 @@ title: Satura sinhronizācijas izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync izmaiņu žurnāls {#content-sync-changelog}
+# Content Sync izmaiņu žurnāls
 
 ### Versija 1.1.0 - Izlaista 2025-12-31 {#version-110---released-on-2025-12-31}
 * Jauns: Atbalsts visu ierakstu tipu sinhronizēšanai (ieraksti, lapas, pielāgoti ierakstu tipi)

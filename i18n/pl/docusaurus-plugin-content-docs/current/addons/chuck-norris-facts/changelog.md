@@ -3,7 +3,7 @@ title: Dziennik zmian Faktów o Chucku Norrisie
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Dziennik zmian Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Dziennik zmian Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Dodano: Funkcjonalność automatycznej aktualizacji za pośrednictwem serwera aktualizacji Ultimate Multisite

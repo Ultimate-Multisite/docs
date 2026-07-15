@@ -3,7 +3,7 @@ title: چۆنی وۆردپريس مۆلتسایت چییە؟
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# چ چیە WordPress Multisite؟ {#what-is-wordpress-multisite}
+# چ چیە WordPress Multisite؟
 
 لە ناوەوەی خۆی، WordPress تایبەتمەندییەکی ناودار بە ناوی ‘Multisite’ دەدات کە ڕوونی دەکاتەوە سەرچاوەکانی لە ساڵی ٢٠١٠دا لە کاتی دەستپێکردنی WordPress ٣.٠. لەوەندینەوە ئەو کاتەوە، ئەو تایبەتمەندییە چەندین جۆر لە پۆلسی (revisions) بەدەست هێنا بۆ پێشخستنی تایبەتمەندی نوێ و ڕێکخستنی زیاتر لە ئاسایشی.
 

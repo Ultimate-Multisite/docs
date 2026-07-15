@@ -4,7 +4,7 @@ title: Veprim - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Shtimi i një action të personalizuar këtu që të kemi një vend për të futur në radhë scripts dhe styles sipas nevojës\ dhe për t’u siguruar që ato ngarkohen vetëm në faqet e duhura
 

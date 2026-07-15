@@ -3,7 +3,7 @@ title: Fomu za Malipo
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fomu za Malipo {#checkout-forms}
+# Fomu za Malipo
 
 Fomu za Malipo ni njia rahisi na nyumbufu ya kujaribu mbinu tofauti unapojaribu kubadilisha wateja wapya.
 

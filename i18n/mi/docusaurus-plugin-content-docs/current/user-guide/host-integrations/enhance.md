@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Whakamaharat Pāne Kōrero
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Whakamahinga te Whakawhanaungatanga Panel Control {#enhance-control-panel-integration}
+# Whakamahinga te Whakawhanaungatanga Panel Control
 
 ## Ōrero Whānui (Overview) {#overview}
 Enhance he panel control hou, e whai whakaaro nui ki te whakamohoho (automation) me te whakamaumahara (management) o hosting. Ka tino whaihi i tēnei whakamahinga ki te whakamutunga ā-au (domain syncing) me te whakamaumahara i sertifikati SSL anō ki Ultimate Multisite me Enhance Control Panel.

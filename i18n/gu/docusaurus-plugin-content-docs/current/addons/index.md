@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 એડઓન્સ (Addons) Ultimate Multisite માં વધારાની સુવિધાઓ અને ઇન્ટિગ્રેશન્સ ઉમેરે છે. મોટાભાગના એડઓન્સ પેઇડ હોય છે અને તમે તે [ultimatemultisite.com](https://ultimatemultisite.com) પરથી ખરીદી શકો છો.
 

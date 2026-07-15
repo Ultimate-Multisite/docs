@@ -3,7 +3,7 @@ title: Àwọn Fọ́ọ̀mù Ìsanwó
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Àwọn Fọọmu Checkout {#checkout-forms}
+# Àwọn Fọọmu Checkout
 
 Àwọn Fọọmu Checkout jẹ́ ọ̀nà rọrùn àti tó rọ láti dán àwọn ọ̀nà míì wò nígbà tí o bá ń gbìyànjú láti yí àwọn oníbàárà tuntun padà sí olùrà.
 

@@ -3,7 +3,7 @@ title: Kahanas nga Nagahibalo sa Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills {#theme-aware-skills}
+# Theme-Aware Skills
 
 Ang Superdav AI Agent v1.10.0 nagpadala na og upat ka bag-ong theme-aware built-in skills nga awtomatikong mag-adjust sa imong active WordPress theme. Kini nga mga skills naghatag og espesyal nga giya ug abilidad nga gipahigayon para sa architecture ug features sa imong theme.
 

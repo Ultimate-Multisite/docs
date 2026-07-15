@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# ຄວາມເຂົ້າໃຈກ່ຽວກັບ Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# ຄວາມເຂົ້າໃຈກ່ຽວກັບ Ultimate Multisite Dashboard
 
 ກ່ອນที่เราຈະເຈາະເລິກເຂົ້າໄປໃນຕົວເລືອກການຕັ້ງຄ່າທີ່ສູງຂຶ້ນ ແລະ ແນວທາງການເຮັດວຽກຂອງ Ultimate Multisite, ເຊິ່ງມາເບິ່ງ dashboard ກ່ອນ.
 

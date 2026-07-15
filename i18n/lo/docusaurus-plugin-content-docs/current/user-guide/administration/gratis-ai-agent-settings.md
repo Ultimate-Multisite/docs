@@ -3,7 +3,7 @@ title: ການຕັ້ງຄ່າ Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# ການຕັ້ງຄ່າ Gratis AI Agent {#gratis-ai-agent-settings}
+# ການຕັ້ງຄ່າ Gratis AI Agent
 
 ໜ້າຈໍ **ການຕັ້ງຄ່າ → ຂັ້ນສູງ** ໃນ Gratis AI Agent ໃຫ້ການກຳນົດຄ່າລະດັບຜູ້ບໍລິຫານສຳລັບການເຊື່ອມຕໍ່ backend. ໜ້ານີ້ອະທິບາຍການສົ່ງຕໍ່ຄຳຕິຊົມ, ກະແຈຜູ້ໃຫ້ບໍລິການຄົ້ນຫາ, ການຕັ້ງຄ່າບໍລິການ Superdav ທີ່ຈັດການໃຫ້, ການຄວບຄຸມ Google Calendar, ການຕັ້ງຄ່າ TextBee SMS, ແລະທຸງຄຸນສົມບັດທົ່ວເຄືອຂ່າຍ.
 

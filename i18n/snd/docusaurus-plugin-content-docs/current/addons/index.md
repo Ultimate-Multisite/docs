@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite ايڊآنز {#ultimate-multisite-addons}
+# Ultimate Multisite ايڊآنز
 
 ايڊآنز Ultimate Multisite کي اضافي خاصيتن ۽ انٽيگريشنز سان وڌائن ٿا. گهڻا ايڊآنز ادا ڪيل آهن ۽ [ultimatemultisite.com](https://ultimatemultisite.com) تان خريد ڪري سگهجن ٿا.
 

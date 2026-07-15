@@ -3,7 +3,7 @@ title: 开发者文档
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# 开发者文档 {#developer-documentation}
+# 开发者文档
 
 本指南为开发者提供与 Ultimate Multisite 集成、扩展或开发附加组件所需的一切内容。Ultimate Multisite 可将 WordPress Multisite 网络转换为网站即服务（WaaS）平台。
 

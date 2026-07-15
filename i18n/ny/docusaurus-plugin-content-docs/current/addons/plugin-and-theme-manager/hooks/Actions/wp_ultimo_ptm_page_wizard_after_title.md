@@ -4,7 +4,7 @@ title: Chochita - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Zochita: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# Zochita: wp_ultimo_ptm_page_wizard_after_title
 
 Lolani opanga zowonjezera kuwonjezera mabatani ena ku masamba a mndandanda
 

@@ -3,7 +3,7 @@ title: 'Dysgu 7: Gwylio i''i gael'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Leses 7: Gwne'n ei eich hun {#lesson-7-making-it-yours}
+# Leses 7: Gwne'n ei eich hun
 
 Nid yw eich cyddeeion yn gwneud i'r cyddeeion eu gweld fel " rhywun plugin WordPress". Deall eu bod yn defnyddio FitSite -- platform a ddangoswyd ar gyfer y dyfodol eu gweithredol. Mae’r les hon yn cyflwyno brandau, white-labeling, ac yn gwneud i'r platform yn teimlo fel produs.
 

@@ -4,7 +4,7 @@ title: Aksyon - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Aksyon: wu_page_load {#action-wupageload}
+# Aksyon: wu_page_load
 
 Payagan ang mga developer ng plugin na magdagdag ng karagdagang hooks sa aming mga pahina.
 

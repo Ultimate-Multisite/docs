@@ -3,7 +3,7 @@ title: 網站範本
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# 網站範本（v2） {#site-templates-v2}
+# 網站範本（v2）
 
 _**注意：本文適用於 Ultimate Multisite 版本 2.x。如果你使用的是版本 1.x，**_ **請參閱這篇文章** _**。**_
 

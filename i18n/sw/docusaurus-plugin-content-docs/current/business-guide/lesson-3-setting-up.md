@@ -3,7 +3,7 @@ title: 'Somo la 3: Kuandaa Mtandao Wako'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Somo la 3: Kuweka Mtandao Wako {#lesson-3-setting-up-your-network}
+# Somo la 3: Kuweka Mtandao Wako
 
 Ni wakati wa kujenga. Katika somo hili, utafunga Ultimate Multisite na kuweka msingi wa mtandao wa FitSite. Kila uamuzi hapa unafanywa akilini mwa sekta ya mazoezi (fitness).
 

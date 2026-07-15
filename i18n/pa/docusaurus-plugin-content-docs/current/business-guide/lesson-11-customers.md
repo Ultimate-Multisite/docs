@@ -3,7 +3,7 @@ title: 'ਪਾਠ 11: ਗਾਹਕਾਂ ਨੂੰ ਲੱਭਣਾ'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesson 11: ਗ੍ਰਾਹਕ ਲੱਭਣਾ (Finding Customers) {#lesson-11-finding-customers}
+# Lesson 11: ਗ੍ਰਾਹਕ ਲੱਭਣਾ (Finding Customers)
 
 ਜਿਹੜਾ ਕੋਈ ਵੀ ਵਧੀਆ platform ਹੋਵੇ, ਜੇ ਉਸ 'ਤੇ ਗ੍ਰਾਹਕ ਨਾ ਹੋਣ, ਤਾਂ ਉਹ ਸਿਰਫ਼ ਇੱਕ ਸ਼ੌਕ ਹੈ। ਇਹ Lesson ਸਿਖਾਉਂਦਾ ਹੈ ਕਿ ਕਿਸੇ ਖਾਸ (niche) ਖੇਤਰ ਵਿੱਚ ਗ੍ਰਾਹਕ ਕਿਵੇਂ ਲੱਭੇ ਜਾਣ — ਇਹ ਉਹ ਰਣਨੀਤੀਆਂ ਹਨ ਜੋ ਇਸ ਲਈ ਕੰਮ ਕਰਦੀਆਂ ਹਨ ਕਿਉਂਕਿ ਤੁਸੀਂ ਇੱਕ ਹੀ ਉਦਯੋਗ (industry) 'ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕੀਤਾ ਹੋਇਆ ਹੋ।
 

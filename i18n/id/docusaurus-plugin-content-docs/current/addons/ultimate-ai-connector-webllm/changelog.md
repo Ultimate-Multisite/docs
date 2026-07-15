@@ -3,7 +3,7 @@ title: Catatan Perubahan Ultimate AI Connector untuk WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Catatan Perubahan Ultimate AI Connector untuk WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Catatan Perubahan Ultimate AI Connector untuk WebLLM
 
 ## Versi 1.1.0 — Dirilis pada 2026-04-09 {#version-110--released-on-2026-04-09}
 

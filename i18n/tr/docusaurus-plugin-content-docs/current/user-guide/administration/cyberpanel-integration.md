@@ -3,7 +3,7 @@ title: CyberPanel Entegrasyonu
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Entegrasyonu {#cyberpanel-integration}
+# CyberPanel Entegrasyonu
 
 Bu rehber, Ultimate Multisite CyberPanel entegrasyonunu nasıl yapılandıracağınızı açıklıyor. Bu sayede ağınızdaki eşlenmiş alan adları, CyberPanel'de sanal ana bilgisayar (virtual host) olarak otomatik olarak eklenir (veya kaldırılır) ve isteğe bağlı olarak Let's Encrypt aracılığıyla otomatik SSL sağlanır.
 

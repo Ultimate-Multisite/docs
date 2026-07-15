@@ -3,7 +3,7 @@ title: Développement de passerelle personnalisée
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Développement de passerelle personnalisée {#custom-gateway-development}
+# Développement de passerelle personnalisée
 
 Vous pouvez créer des passerelles de paiement personnalisées en étendant la classe `Base_Gateway`.
 

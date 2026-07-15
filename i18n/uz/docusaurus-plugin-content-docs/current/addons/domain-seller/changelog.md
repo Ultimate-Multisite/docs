@@ -3,7 +3,7 @@ title: Domen sotuvchisi o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller o‘zgarishlar jurnali {#domain-seller-changelog}
+# Domain Seller o‘zgarishlar jurnali
 
 Versiya 1.3.0 - 2026-06-02 da chiqarilgan
 - Yangi: HostAfrica reseller balansi juda kamayib ketganda network-admin ogohlantirishi qo‘shildi

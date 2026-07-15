@@ -3,7 +3,7 @@ title: Jenere Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Jenere Logo SVG {#generate-logo-svg}
+# Jenere Logo SVG
 
 Kapasite **Generate Logo SVG** la pèmèt Theme Builder kreye epi entegre logo SVG pèsonalize dirèkteman nan sit WordPress ou a ak netwayaj otomatik ki san danje pou namespace.
 

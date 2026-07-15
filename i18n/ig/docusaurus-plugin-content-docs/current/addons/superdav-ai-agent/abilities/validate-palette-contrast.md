@@ -3,7 +3,7 @@ title: Nyochaa Ọdịiche Paleti
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Nyochaa Nkwekọrịta Palette Contrast {#validate-palette-contrast}
+# Nyochaa Nkwekọrịta Palette Contrast
 
 Ikike **Validate Palette Contrast** na-enyocha ụzọ abụọ agba n'ime palette imewe gị maka irube isi na WCAG (Web Content Accessibility Guidelines) tupu itinye ha na theme gị.
 

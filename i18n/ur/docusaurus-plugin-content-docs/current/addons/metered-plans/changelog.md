@@ -3,7 +3,7 @@ title: پیمائش پر مبنی منصوبوں کی تبدیلیوں کا خا
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Changelog {#metered-plans-changelog}
+# Metered Plans Changelog
 
 Version 1.1.0 - Released on 2026-05-05
 - New: Multisite subsites کے لیے AI token billing — کسٹمر سائٹس پر AI ٹوکن کے استعمال کو ٹریک کریں اور بل کریں، جس میں ہر ٹوکن کے لیے قابل ترتیب (configurable) ریٹس شامل ہیں۔

@@ -4,7 +4,7 @@ title: Süzgüç - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filtr: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filtr: wu_checkout_field_templates
 
 Täze meýdan şablonlaryny goşmak üçin API-larymyz şu ýere birikýär.
 

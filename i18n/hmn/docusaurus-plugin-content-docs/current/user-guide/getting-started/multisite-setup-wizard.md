@@ -3,7 +3,7 @@ title: Kev tsim phoj Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 Ultimate Multisite 에는 WordPress 설치를 자동으로 WordPress Multisite mạng lưới (network) へປ່ຽນໃຫ້တဲ့ built-in wizard ຢູ່. ມັນमुळे `wp-config.php` ໄຟລ໌ manually ແກ້ໄຂ ຫຼື database commands ດໍາເນີນການ કરવાની ຄວາມຈໍາເປັນບໍ່ມີ.
 

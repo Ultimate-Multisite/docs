@@ -3,7 +3,7 @@ title: Допомога з власною розробкою
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Як отримати допомогу з кастомної розробки від Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Як отримати допомогу з кастомної розробки від Codeable?
 
 Іноді нам справді потрібна якісна кастомізація, щоб наші мережеві процеси працювали саме так, як ми хочемо. Якщо це те, що ви шукаєте, рекомендуємо [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) — платформу, де можна знайти досвідчених розробників з експертизою в Ultimate Multisite.
 

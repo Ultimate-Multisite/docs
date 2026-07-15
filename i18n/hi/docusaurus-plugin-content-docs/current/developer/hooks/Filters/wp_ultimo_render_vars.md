@@ -4,7 +4,7 @@ title: फ़िल्टर - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# फ़िल्टर: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# फ़िल्टर: wp_ultimo_render_vars
 
 यह प्लगइन डेवलपर्स को रेंडर कॉन्टेक्स्ट (render context) में वैश्विक स्तर पर अतिरिक्त वैरिएबल जोड़ने की अनुमति देता है।
 

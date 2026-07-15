@@ -3,7 +3,7 @@ title: Còmhraidhean buneachaidh
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Còmhraidh Bhràithreachaich {#basic-concepts}
+# Còmhraidh Bhràithreachaich
 
 Air na nuidseachdainn WordPress Multisite agus air daoine a' th'annois an uair a bhfáthach ar Uilste Multisite, tha mòran de mòr-bhàithreachaich ùra a fháil air a ghràdhadh a' chùineadh. Tha eadar-dheargadh a' ann a' chlàradh seo is dòchtraidh a bhith a' fháil air an t-platform agus a bhith a' fhaighinn air a' sgaidhinn gu leòr.
 

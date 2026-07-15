@@ -3,7 +3,7 @@ title: উন্নত কোড উদাহৰণসমূহ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples {#advanced-code-examples}
+# Advanced Code Examples
 
 এই উদাহৰণসমূহে Ultimate Multisite লগত উন্নত ইন্টিগ্ৰেচন (integration) ধৰণসমূহ প্ৰদৰ্শন কৰে।
 

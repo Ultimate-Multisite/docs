@@ -3,7 +3,7 @@ title: Integratutako agenteak
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Integratutako agenteak {#built-in-agents}
+# Integratutako agenteak
 
 Gratis AI Agent v1.9.0-k bost agente integratu dakartza, bakoitza tresna multzo fokalizatu batekin, egokitutako sistemaren prompt batekin eta arlo horretako ohiko zereginetarako egokitutako hasierako iradokizunekin aurrez konfiguratuta. Agenteen artean aldatzeak laguntzaileak zer egin dezakeen eta nola erantzuten duen aldatzen du — zure aldetik inolako konfiguraziorik gabe. Superdav AI Agent v1.18.0-k egutegiaren araberako tresnak, oroigarri-erregistroak, onespen-ateak eta SMS jakinarazpenak gehi diezazkieke lan-fluxu horiei, erlazionatutako integrazioak konfiguratuta daudenean.
 

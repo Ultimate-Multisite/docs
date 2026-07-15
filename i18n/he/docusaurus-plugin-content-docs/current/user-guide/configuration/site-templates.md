@@ -3,7 +3,7 @@ title: תבניות אתר
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# תבניות אתרים (v2) {#site-templates-v2}
+# תבניות אתרים (v2)
 
 _**הערה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite. אם אתם משתמשים בגרסה 1.x,**_ **ראו מאמר זה** _**.**_
 

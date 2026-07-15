@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filter: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filter: wu_pending_payment_message
 
 நிலுவையில் உள்ள கட்டணங்கள் பற்றிய செய்தியைப் (message) பயனர் மாற்ற இது அனுமதிக்கிறது.
 

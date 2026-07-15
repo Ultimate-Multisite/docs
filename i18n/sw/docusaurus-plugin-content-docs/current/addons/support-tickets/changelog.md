@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Tiketi za Usaidizi
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Historia ya Mabadiliko ya Tiketi za Msaada {#support-tickets-changelog}
+# Historia ya Mabadiliko ya Tiketi za Msaada
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Imeboreshwa: Imeondoa saraka ya vendor/ kutoka kwa ufuatiliaji wa Git (tayari inafunikwa na .gitignore), hivyo kupunguza ukubwa wa hifadhi.

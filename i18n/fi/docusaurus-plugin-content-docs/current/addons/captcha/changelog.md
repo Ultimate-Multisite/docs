@@ -3,7 +3,7 @@ title: Captcha-muutosloki
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha muutosloki {#captcha-changelog}
+# Captcha muutosloki
 
 Versio: 1.5.0 - Julkaistu 2026-05-22
 * Uutta: Kovan pysäytyksen nopeusrajoitin — laskee jokaisen GET- ja POST-pyynnön captcha-suojatuilla pinnoilla (wp-login / register / lost-password / kommentit, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ja vastaa HTTP 429 -koodilla, `Retry-After` headerilla sekä satunnaistetulla tarpit-viiveellä (1–5 s, kova yläraja 15 s).

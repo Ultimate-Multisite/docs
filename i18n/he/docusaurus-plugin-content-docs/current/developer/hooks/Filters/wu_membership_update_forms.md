@@ -4,7 +4,7 @@ title: פילטר - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# מסנן: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# מסנן: wu_membership_update_forms
 
 מאפשר למפתחים להוסיף סלוגים של טפסי עדכון חדשים.
 

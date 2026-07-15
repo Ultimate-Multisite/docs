@@ -4,7 +4,7 @@ title: Filter - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 cross-domain single-sign-on လုပ်ဆောင်နိုင်မှု (capability) ကို ဖွင့်/ပိတ် လုပ်ရန်။
 

@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# الإجراء: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# الإجراء: wu_domain_seller_complete_registration
 
 يتم تشغيل هذا الإجراء عندما يتغير حالة الدفع إلى حالة تتطلب تسجيل النطاق.
 

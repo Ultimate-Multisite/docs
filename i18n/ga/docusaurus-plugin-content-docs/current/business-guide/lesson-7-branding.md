@@ -3,7 +3,7 @@ title: 'Ceacht 7: Á dhéanamh de do chuid féin'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Ceacht 7: Á Dhéanamh Leatsa {#lesson-7-making-it-yours}
+# Ceacht 7: Á Dhéanamh Leatsa
 
 Níor cheart do do chustaiméirí mothú riamh go bhfuil siad ag úsáid "plugin WordPress éigin." Ba cheart dóibh mothú go bhfuil siad ag úsáid FitSite -- ardán tógtha dá dtionscal. Clúdaíonn an ceacht seo brandáil, white-labeling, agus an t-ardán a dhéanamh cosúil le táirge.
 

@@ -3,7 +3,7 @@ title: Ыңгайлаштырылган шлюзду иштеп чыгуу
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Ыңгайлаштырылган Gateway иштеп чыгуу {#custom-gateway-development}
+# Ыңгайлаштырылган Gateway иштеп чыгуу
 
 `Base_Gateway` классын кеңейтүү аркылуу ыңгайлаштырылган төлөм gatewayлерин түзө аласыз.
 

@@ -3,7 +3,7 @@ title: Instrumenta et Configuratio
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Instrumenta et Configuratio {#tools-and-configuration}
+# Instrumenta et Configuratio
 
 Theme Builder instrumento­rum copiam adhibet ut tuum WordPress situm perpendat, designet, et exstruat. In versione 1.16.0, **sd-ai-agent/site-scrape nunc est instrumentum Tier 1**, ita ut per defaltam in Theme Builder praesto sit. Superdav AI Agent v1.18.0 etiam introducit fasciculum socium provectum seorsum distributum pro processibus operis evolutoribus creditis; illa instrumenta non sunt pars fasciculi principalis WordPress.org et seorsum instituenda atque auctoranda sunt.
 

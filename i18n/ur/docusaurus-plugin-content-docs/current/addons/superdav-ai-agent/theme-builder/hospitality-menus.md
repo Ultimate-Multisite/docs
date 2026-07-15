@@ -3,7 +3,7 @@ title: ہاسپیٹیلٹی مینیوز
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# ہاسپیٹیلٹی مینیوز {#hospitality-menus}
+# ہاسپیٹیلٹی مینیوز
 
 **Hospitality Menus** فیچر Theme Builder کو آپ کی WordPress سائٹ میں براہ راست منظم کھانے اور مشروبات کے مینیو پیجز بنانے اور ایمبیڈ کرنے کی سہولت دیتا ہے۔
 

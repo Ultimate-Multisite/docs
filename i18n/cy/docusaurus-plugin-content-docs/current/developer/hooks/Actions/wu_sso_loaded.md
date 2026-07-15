@@ -4,7 +4,7 @@ title: Gweithred - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Gweithred: wu_sso_loaded {#action-wussoloaded}
+# Gweithred: wu_sso_loaded
 
 Caniatáu i ddatblygwyr ategion ychwanegu bachau ychwanegol, os oes angen.
 

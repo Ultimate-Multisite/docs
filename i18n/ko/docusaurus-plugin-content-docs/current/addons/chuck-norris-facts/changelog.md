@@ -3,7 +3,7 @@ title: Chuck Norris 사실 변경 로그
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris 사실 변경 로그 {#chuck-norris-facts-changelog}
+# Chuck Norris 사실 변경 로그
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * 추가됨: Ultimate Multisite 업데이트 서버를 통한 자동 업데이트 기능

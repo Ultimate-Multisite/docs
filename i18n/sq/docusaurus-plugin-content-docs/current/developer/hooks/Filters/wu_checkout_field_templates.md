@@ -4,7 +4,7 @@ title: Filtri - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filtri: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filtri: wu_checkout_field_templates
 
 API-të tona për të shtuar shabllone të reja fushash lidhen këtu.
 

@@ -3,7 +3,7 @@ title: Integration av flerklientsarkitektur
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integration för flerklientdrift {#multi-tenancy-integration}
+# Integration för flerklientdrift
 
 Ultimate Multisite: Flerklientdrift 1.2.0 ändrar flera integrationspunkter för suveräna klienter, migreringsverifiering och automatisering av klientlivscykeln.
 

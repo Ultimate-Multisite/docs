@@ -4,7 +4,7 @@ title: Dejanje - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Dejanje: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Dejanje: wu_after_switch_template
 
 Omogoča razvijalcem vtičnikov, da priklopijo funkcije po tem, ko uporabnik ali super skrbnik preklopi predlogo spletnega mesta
 

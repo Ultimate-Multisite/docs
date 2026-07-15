@@ -4,7 +4,7 @@ title: Filtre - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filtè: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Filtè: mu_migration/export/user/headers
 
 Filtre seri antèt itilizatè defo yo pou ekspòte/enpòte.
 

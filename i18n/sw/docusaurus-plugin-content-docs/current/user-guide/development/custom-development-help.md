@@ -3,7 +3,7 @@ title: Msaada wa Uendelezaji Maalum
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Jinsi ya Kupata Msaada wa Uendelezaji wa Kipekee kutoka Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Jinsi ya Kupata Msaada wa Uendelezaji wa Kipekee kutoka Codeable?
 
 Wakati mwingine, tunahitaji sana ubinafsishaji mzuri ili kufanya mtiririko wa mtandao wetu uwe jinsi tunavyotaka. Ikiwa hilo ndilo unalotafuta, tunapendekeza [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), mahali ambapo unaweza kupata waendelezaji wenye uzoefu na utaalamu wa Ultimate Multisite.
 

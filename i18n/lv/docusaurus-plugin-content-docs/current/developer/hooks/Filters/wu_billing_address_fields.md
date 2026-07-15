@@ -4,7 +4,7 @@ title: Filtrs - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Filtrs: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Filtrs: wu_billing_address_fields
 
 Ļauj plugin izstrādātājiem filtrēt norēķinu adreses laukus.
 

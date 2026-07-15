@@ -3,7 +3,7 @@ title: Բարելավեք Control Panel-ի ինտեգրումը
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Control Panel Ինտեգրման Բարելավում {#enhance-control-panel-integration}
+# Control Panel Ինտեգրման Բարելավում
 
 ## Ընդհանուր տեսքը {#overview}
 Enhance-ը ժամանակակից կառավարման վահան է, որը հզոր հոස්թինգի ավտոմատացման և կառավարման հնարավորություններ է ապահովում։ Այս ինտեգրումը թույլ է տալիս ավտոմատ դոմենային սինխրոնիզացիա և SSL վկայագրականների կառավարում Ultimate Multisite-ի և Enhance Control Panel-ի միջև։

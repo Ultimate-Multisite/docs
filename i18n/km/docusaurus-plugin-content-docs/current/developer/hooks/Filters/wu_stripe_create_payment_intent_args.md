@@ -4,7 +4,7 @@ title: តម្រង - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# តម្រង: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
+# តម្រង: wu_stripe_create_payment_intent_args
 
 តម្រងអាគុយម៉ង់ payment intent។
 

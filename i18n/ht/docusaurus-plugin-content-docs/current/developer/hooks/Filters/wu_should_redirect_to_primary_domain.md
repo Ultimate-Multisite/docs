@@ -4,7 +4,7 @@ title: Filtre - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filtè: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Filtè: wu_should_redirect_to_primary_domain
 
 Pèmèt devlopè yo koupe redireksyon an kout, pou anpeche li fèt.
 

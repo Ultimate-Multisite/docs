@@ -4,7 +4,7 @@ title: Sivana - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Sivana: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Sivana: mu-migration/all_posts/default_args
 
 Manivana ny tohan-kevitra default ampiasaina amin’ny fangatahana lahatsoratra ao amin’ny method all_posts.
 

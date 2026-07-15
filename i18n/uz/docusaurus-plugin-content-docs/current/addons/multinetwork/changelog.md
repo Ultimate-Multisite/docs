@@ -3,7 +3,7 @@ title: Ko‘p tarmoqli o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network o‘zgarishlar jurnali {#multi-network-changelog}
+# Multi-Network o‘zgarishlar jurnali
 
 ### 1.3.0 {#130}
 * Yangi: Network shablonini oldindan ko‘rish vositasi — xarid qilishdan oldin jonli panel orqali network shablonlarini ko‘ring va oldindan ko‘rib chiqing.

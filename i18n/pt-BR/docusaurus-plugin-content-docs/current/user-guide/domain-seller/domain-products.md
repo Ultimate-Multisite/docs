@@ -3,7 +3,7 @@ title: Produtos de Domínio e Preços
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produtos e Preços de Domínio {#domain-products-and-pricing}
+# Produtos e Preços de Domínio
 
 Os produtos de domínio são a forma como você controla preços, TLDs, privacidade WHOIS e a seleção de provedores. Cada produto de domínio é um produto padrão do Multisite Ultimate com uma aba extra chamada **Domain Settings**.
 

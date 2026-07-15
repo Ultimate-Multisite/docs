@@ -3,7 +3,7 @@ title: Xaqiijinta Milidnimada
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Xaqiijinta Iskaashi (Sovereign Migration Verification) {#sovereign-migration-verification}
+# Xaqiijinta Iskaashi (Sovereign Migration Verification)
 
 Ultimate Multisite 1.2.0-r-ka waxaa ku jira amarrada xaqiijinta WP-CLI ee ka caawinaya guurka qoysaska (tenant migrations). Isticmaal kuwa haddii guurka qoyska, booqashada SSO, ama rakibidda gaarka ah oo aan sida ay la filaynu u shaqaynayn.
 

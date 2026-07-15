@@ -3,7 +3,7 @@ title: 'Leçon 3 : Configurer votre réseau'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Leçon 3 : Configuration de votre réseau {#lesson-3-setting-up-your-network}
+# Leçon 3 : Configuration de votre réseau
 
 Il est temps de construire. Dans cette leçon, vous allez installer Ultimate Multisite et configurer les fondations du réseau FitSite. Chaque décision prise ici est pensée pour la niche du fitness.
 

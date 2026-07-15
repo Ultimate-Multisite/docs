@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# សកម្មភាព៖ wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# សកម្មភាព៖ wu_domain_mapping_register_filters
 
 កម្មវិធីបន្ថែមខ្លះនឹងរក្សាទុក URL មុនពេលការផ្គូផ្គងដែនសកម្ម ឬនឹងបង្កើត URL តាមរបៀបផ្សេង ដែលមិនមានក្នុងតម្រងខាងលើ។
 

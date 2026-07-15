@@ -3,7 +3,7 @@ title: Дневник на промени
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Дневник на промени {#changelog}
+# Дневник на промени
 
 ## 1.9.0 — Објавено на 2026-04-28 {#190--released-on-2026-04-28}
 

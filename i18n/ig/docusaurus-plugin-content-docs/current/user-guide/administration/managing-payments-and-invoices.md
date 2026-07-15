@@ -3,7 +3,7 @@ title: Ude na Ihegbu Ọkụ na Ihegbu Ọkụ
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Iye Ọrụ Imebe na Invoisi {#managing-payments-and-invoices}
+# Iye Ọrụ Imebe na Invoisi
 
 ## Asetara Ịgba Imebe {#payment-settings}
 

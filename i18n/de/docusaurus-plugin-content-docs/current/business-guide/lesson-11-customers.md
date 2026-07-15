@@ -3,7 +3,7 @@ title: 'Lektion 11: Kunden finden'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lektion 11: Kunden gewinnen {#lesson-11-finding-customers}
+# Lektion 11: Kunden gewinnen
 
 Eine großartige Plattform ohne Kunden ist nur ein Hobby. In dieser Lektion erfahren Sie, wie Sie Kunden in einer spezifischen Nische gewinnen – Strategien, die funktionieren, weil Sie sich auf eine einzige Branche konzentrieren.
 

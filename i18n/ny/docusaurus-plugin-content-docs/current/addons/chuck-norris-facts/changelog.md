@@ -3,7 +3,7 @@ title: Mbiri ya zosintha za Zowona za Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Mbiri ya Zosintha za Zoonadi za Chuck Norris {#chuck-norris-facts-changelog}
+# Mbiri ya Zosintha za Zoonadi za Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Zawonjezedwa: Ntchito yosinthira zokha kudzera pa seva yosinthira ya Ultimate Multisite

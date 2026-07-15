@@ -4,7 +4,7 @@ title: Salaan - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Pagsala: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Pagsala: wu_password_require_number
 
 Salaa kung kinahanglan ba ang mga numero sa mga password.
 

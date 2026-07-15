@@ -3,7 +3,7 @@ title: Note a chreachtais
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note de Sláinte {#release-notes}
+# Note de Sláinte
 
 ## Versi 2.13.0 — Déanach ar 5-láin 5-míneamh 2026 {#version-2130--released-on-2026-06-05}
 

@@ -3,7 +3,7 @@ title: Coretan Kod
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Coretan Kod untuk v2 {#code-snippets-for-v2}
+# Coretan Kod untuk v2
 
 Pada dasarnya, coretan kod untuk **WordPress** digunakan untuk melakukan tindakan tertentu yang mungkin memerlukan plugin kecil khusus. Coretan kod seperti ini diletakkan dalam salah satu fail teras WordPress atau fail tema (kebiasaannya fail functions.php tema anda) atau ia boleh digunakan sebagai MU plugin.
 

@@ -4,7 +4,7 @@ title: Амал - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# Амал: wu_domain_created {#action-wudomaincreated}
+# Амал: wu_domain_created
 
 Вақте фаъол мешавад, ки харитасозии домени нав илова карда мешавад.
 

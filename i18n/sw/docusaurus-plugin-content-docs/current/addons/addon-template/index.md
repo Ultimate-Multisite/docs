@@ -3,9 +3,9 @@ title: Muundo wa Ongezeko
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Muundo wa Addon {#addon-template}
+# Muundo wa Addon
 
-{{ADDON_DESCRIPTION}}
+Muundo wa Ongezeko — Ultimate Multisite.
 
 ## Mahitaji {#requirements}
 

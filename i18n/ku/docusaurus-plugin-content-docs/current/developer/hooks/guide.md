@@ -3,7 +3,7 @@ title: Rêberê Bikaranîna Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Rêberê Bikaranîna Hooks {#hooks-usage-guide}
+# Rêberê Bikaranîna Hooks
 
 Ultimate Multisite zêdetirî 200 action hooks û zêdetirî 280 filter hooks peyda dike. Ev rûpel hooksên herî zêde tên bikaranîn bi mînakên pratîk vedigire. Ji bo referansa temam a xweber-afirandî, rûpelên din ên vê beşê bibîne.
 

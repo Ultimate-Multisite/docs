@@ -3,7 +3,7 @@ title: ڪوميونٽي
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite कम्युनिटीमा कसरी सामेल हुनुहोस् {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite कम्युनिटीमा कसरी सामेल हुनुहोस्
 
 Ultimate Multisite Community एउटा यस्तो ठाउँ हो जहाँ तपाईं अन्य Ultimate Multisite प्रयोगकर्ताहरूसँग सम्पर्क गर्न र सुझावहरू, अनुभवहरू र अरू कुराहरू साझा गर्न सक्नुहुन्छ। Ultimate Multisite Community मा जानको लागि https://community.ultimatemultisite.com/home मा जानुहोस्।
 

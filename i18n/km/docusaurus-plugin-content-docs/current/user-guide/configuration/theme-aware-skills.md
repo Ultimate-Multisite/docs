@@ -3,7 +3,7 @@ title: ជំនាញដែលយល់ពីស្ទីល
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# ทักษะที่คำนึงถึงธีม (Theme-Aware Skills) {#theme-aware-skills}
+# ทักษะที่คำนึงถึงธีม (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 มีทักษะใหม่แบบ built-in สี่อย่างที่ปรับเปลี่ยนตัวเองโดยอัตโนมัติให้เข้ากับ WordPress theme ที่คุณใช้งานอยู่ ทักษะเหล่านี้จะให้คำแนะนำและความสามารถเฉพาะทางที่ออกแบบมาเพื่อสถาปัตยกรรมและฟีเจอร์ของธีมของคุณ
 

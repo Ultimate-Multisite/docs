@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite нэмэлтүүд {#ultimate-multisite-addons}
+# Ultimate Multisite нэмэлтүүд
 
 Нэмэлтүүд нь Ultimate Multisite-д нэмэлт боломжууд болон интеграцуудыг өргөжүүлэн нэмдэг. Ихэнх нэмэлтүүд төлбөртэй бөгөөд [ultimatemultisite.com](https://ultimatemultisite.com)-оос худалдан авч болно.
 

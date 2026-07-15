@@ -4,7 +4,7 @@ title: Kifilta - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Inaruhusu watengenezaji wa plugins kubadilisha ni hali gani ya chapisho (post status) itakayopimwa. Kwa msingi, chapisho zilizochapishwa (published) na za faragha (private) ndizo zinazopimwa.
 

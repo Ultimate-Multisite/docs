@@ -3,7 +3,7 @@ title: স্থান নিৰ্মাতা মোড অপসারণৰ 
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode অপনয়নৰ বিষয়ে {#site-builder-mode-removal-notice}
+# Site Builder Mode অপনয়নৰ বিষয়ে
 
 **Superdav AI Agent v1.12.0 ত Site Builder mode অপনয়ন কৰা হৈছে।** যদি আপুনি Site Builder mode ব্যৱহাৰ কৰি আছিল, তেন্তে থীম সৃষ্টি আৰু সাইট সেটআপৰ বাবে আপুনি **Setup Assistant agent** ব্যৱহাৰ কৰিব লাগিব।
 

@@ -3,7 +3,7 @@ title: Enkonstruitaj Agentoj
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Enkonstruitaj agentoj {#built-in-agents}
+# Enkonstruitaj agentoj
 
 Gratis AI Agent v1.9.0 liveras kvin enkonstruitajn agentojn, ĉiu antaŭagordita kun fokusita aro de iloj, adaptita sistema instrukcio, kaj komencaj sugestoj kongruaj kun oftaj taskoj en tiu areo. Ŝanĝi inter agentoj ŝanĝas tion, kion la asistanto povas fari kaj kiel ĝi respondas — sen ajna agordo viaflanke. Superdav AI Agent v1.18.0 povas aldoni horar-konsciajn ilojn, rememorigaĵajn registrojn, aprobajn pordojn, kaj SMS-sciigojn al ĉi tiuj laborfluoj kiam la rilataj integriĝoj estas agorditaj.
 

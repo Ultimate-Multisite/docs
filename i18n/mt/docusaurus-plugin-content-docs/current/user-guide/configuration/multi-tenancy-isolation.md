@@ -3,7 +3,7 @@ title: Isolazzjoni Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolament Multi-Tenancy {#multi-tenancy-isolation}
+# Isolament Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 supporta isolament database u filesystem per subsite għall tenant sovrani (sovereign). Dan jippassiva dati tal-tenant b'mod separat, wa jippreserva l-provisioning ta' reġistrazzjoni n-network, il-billing u l-administrazzjoni.
 

@@ -3,7 +3,7 @@ title: Domenni proizvodi i cijene
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeni i cjenovno određivanje {#domain-products-and-pricing}
+# Domeni i cjenovno određivanje
 
 Domenni proizvodi su način na koji kontrolirate cijene, TLD-ove (top-level domen), privatnost WHOIS-a i odabir pružatelja usluga. Svaki domen proizvod je standardni Ultimate Multisite proizvod s dodatnom karticom **Domain Settings**.
 

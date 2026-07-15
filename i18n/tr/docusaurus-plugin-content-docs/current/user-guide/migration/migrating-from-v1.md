@@ -3,7 +3,7 @@ title: V1'den Geçiş
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1'den Geçiş Yapma {#migrating-from-v1}
+# V1'den Geçiş Yapma
 
 ## Ultimate Multisite, orijinal 1.x sürüm ailesinden 2.x sürüm ailesine geçiş yapmıştır. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

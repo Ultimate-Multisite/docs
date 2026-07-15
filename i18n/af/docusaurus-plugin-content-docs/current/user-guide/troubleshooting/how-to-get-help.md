@@ -3,7 +3,7 @@ title: Hoe om hulp te kry
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Hoe om hulp te kry {#how-to-get-help}
+# Hoe om hulp te kry
 
 Sodra jy jou geldige License key het, kom ook toegang tot ons span om jou te help met enige probleme wat jy kan ondervind terwyl jy Ultimate Multisite opstel.
 

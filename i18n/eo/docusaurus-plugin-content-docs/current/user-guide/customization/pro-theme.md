@@ -3,7 +3,7 @@ title: PRO Temo
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Ĉmiziigo de Via Administra Panelo kun PRO Temo {#customizing-your-admin-panel-with-pro-theme}
+# Ĉmiziigo de Via Administra Panelo kun PRO Temo
 
 Multaj foj estas necesas doni al via klientoj pli specialan sperton en la administran panelo de WordPress, kiam vi faras klientajn laborojn. Se vi serĉas pli profesian ŝtoncon kaj senton, PRO Temo povas helpi vin.
 

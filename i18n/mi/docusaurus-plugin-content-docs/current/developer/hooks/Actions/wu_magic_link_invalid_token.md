@@ -4,7 +4,7 @@ title: Hohenga - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Mahi: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Mahi: wu_magic_link_invalid_token
 
 Ka whakaohohia ina tūpono ki tētahi tohu hono mākutu muhu.
 

@@ -3,7 +3,7 @@ title: 'Lesson 4: Building Niche Templates'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ders 4: Niş Şablonlar Oluşturma {#lesson-4-building-niche-templates}
+# Ders 4: Niş Şablonlar Oluşturma
 
 Şablonlar, niş değer önerinizin temelini oluşturur. Kaydolup, zaten bir fitness sitesi gibi görünen (ders programları, eğitmen profilleri ve doğru görsellerle) bir site gören bir spor stüdyosu sahibi, boş bir tuvalle karşılaşan birine göre kalma olasılığı çok daha yüksektir.
 

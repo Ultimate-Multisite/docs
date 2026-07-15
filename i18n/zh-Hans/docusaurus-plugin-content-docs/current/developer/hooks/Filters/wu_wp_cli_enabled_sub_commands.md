@@ -4,7 +4,7 @@ title: 过滤器 - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# 过滤器: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# 过滤器: wu_wp_cli_enabled_sub_commands
 
 过滤器：此实体启用的 sub_commands。
 

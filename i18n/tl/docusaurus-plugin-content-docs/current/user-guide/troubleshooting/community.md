@@ -3,7 +3,7 @@ title: Komunidad
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Paano Sumali sa Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
+# Paano Sumali sa Ultimate Multisite Community
 
 Ang Ultimate Multisite Community ay isang lugar kung saan maaari kang makipag-ugnayan sa ibang mga Ultimate Multisite user at magbahagi ng mga tips, karanasan, at iba pa. Para ma-access ang Ultimate Multisite Community, pumunta ka sa https://community.ultimatemultisite.com/home.
 

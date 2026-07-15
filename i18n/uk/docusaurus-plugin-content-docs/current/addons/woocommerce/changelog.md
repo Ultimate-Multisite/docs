@@ -3,7 +3,7 @@ title: Журнал змін інтеграції WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Журнал змін інтеграції WooCommerce {#woocommerce-integration-changelog}
+# Журнал змін інтеграції WooCommerce
 
 Версія 2.2.0 - Випущено 2026-07-01
 * Нове: суми податків Ultimate Multisite тепер відображаються як окремі рядки зборів WooCommerce під час оформлення замовлення, що робить підсумки податків зрозумілішими перед оплатою.

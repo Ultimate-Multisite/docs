@@ -4,7 +4,7 @@ title: फिल्टर - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filter: mu_migration/export/user/data
 
 निर्यात/आयात गरिने प्रयोगकर्ता डाटाको पूर्वनिर्धारित सेटलाई फिल्टर गर्छ।
 

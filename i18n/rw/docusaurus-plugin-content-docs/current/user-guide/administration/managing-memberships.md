@@ -3,7 +3,7 @@ title: Gukomera Ubwumvikane
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gutangiro mu Ubwumuryango (Memberships) {#managing-memberships}
+# Gutangiro mu Ubwumuryango (Memberships)
 
 Mu Ultimate Multisite, uzi gukemura ubwumuryango n'ubwumuryango bwose bwa subscriptions ku rugendo rwawe. Uvugera kandi utera uburyo bwo gukoresha ibyerekezo by'ubwumuryango (subscription details) nk'ibyo bikurikira: amakuru y'ubwumuryango n'ibintu by'ubucuruzi (plans and products), nyumbura ya rugendo, igice cyo kwishyura no gihe cyo kwishyura, uburyo bwo gukoresha imi, no igihe cyo gushyura.
 

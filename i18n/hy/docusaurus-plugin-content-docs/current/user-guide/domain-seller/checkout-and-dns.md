@@ -3,7 +3,7 @@ title: Ավարտման դաշտ և հաճախորդի DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field և Հաճախորդի DNS-ի կառավարում {#checkout-field-and-customer-dns-management}
+# Checkout Field և Հաճախորդի DNS-ի կառավարում
 
 ## Դոմենի ընտրության checkout դաշտը {#the-domain-selection-checkout-field}
 

@@ -4,7 +4,7 @@ title: Ìṣe - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Ìṣe: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Ìṣe: wu_multi_tenancy_init
 
 A máa ṣiṣẹ́ lẹ́yìn tí addon Multi-Tenancy bá ti bẹ̀rẹ̀ patapata.
 

@@ -4,7 +4,7 @@ title: Nzacha - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Nyocha: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Nyocha: wu_rest_delete_item
 
 Na-enyocha ma a ga-ekwe ka ọ gaa n’ihu na arịrịọ ahụ ma ọ bụ na ọ bụghị.
 

@@ -4,7 +4,7 @@ title: Ficil - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Ficil: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# Ficil: wp_ultimo_payfast_activation
 
 U oggolow qaybaha kale ee plugin-ka inay ku xiraan habraacyadooda hawlgelinta
 

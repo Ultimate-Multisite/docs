@@ -3,7 +3,7 @@ title: 'Lesson 1: Niche''nin Kazanma Nedeni'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Ders 1: Niche Neden Kazanır {#lesson-1-why-niche-wins}
+# Ders 1: Niche Neden Kazanır
 
 Herhangi bir yazılıma geçmeden önce, belirli bir kitleye hitap ederek bir platform kurmanın yapacağınız en önemli karar olduğunu anlamanız gerekiyor.
 

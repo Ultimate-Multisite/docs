@@ -3,7 +3,7 @@ title: 'Lesona 12: Fitantanana ny Orinasa'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lesona 12: Fitantanana ny Orinasa {#lesson-12-running-the-business}
+# Lesona 12: Fitantanana ny Orinasa
 
 Ny sehatra iray dia tsy tetikasa vitanao fotsiny -- orinasa tantaninao izy. Ity lesona ity dia mandrakotra ny asa andavanandro amin'ny fitantanana ny FitSite: fanohanana, faktiora, fikojakojana, ary fitazonana ny hafalian'ny mpanjifa.
 

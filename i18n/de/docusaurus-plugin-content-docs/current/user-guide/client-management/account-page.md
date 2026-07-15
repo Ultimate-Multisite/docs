@@ -3,7 +3,7 @@ title: Kunden-Account-Seite
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Die Account-Seite deines Kunden (v2) {#your-clients-account-page-v2}
+# Die Account-Seite deines Kunden (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

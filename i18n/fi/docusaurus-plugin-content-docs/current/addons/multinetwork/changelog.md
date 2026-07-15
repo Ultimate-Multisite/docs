@@ -3,7 +3,7 @@ title: Moniverkoston muutosloki
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network-muutosloki {#multi-network-changelog}
+# Multi-Network-muutosloki
 
 ### 1.3.0 {#130}
 * Uusi: Verkkopohjien esikatselin — selaa ja esikatsele verkkopohjia live-paneelissa ennen ostamista.

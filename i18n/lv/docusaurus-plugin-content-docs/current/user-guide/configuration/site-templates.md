@@ -3,7 +3,7 @@ title: Siti šabloni
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Vietas šabloni (v2) {#site-templates-v2}
+# Vietas šabloni (v2)
 
 _**PĀRĶINĀJUMS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x. Ja jūs izmantojat versiju 1.x,**_ **skatieties šo rakstu.**_
 

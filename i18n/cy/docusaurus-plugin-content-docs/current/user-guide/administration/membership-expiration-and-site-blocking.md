@@ -3,7 +3,7 @@ title: Mae Cyflwyniadau Gynlltref a Blocio Ar Gwefan
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Mae Cynllunion a Chynllunio'r Safon {#membership-expiration-and-site-blocking}
+# Mae Cynllunion a Chynllunio'r Safon
 
 Mae hysbysiad hwn yn esbonio sut mae Ultimate Multisite yn gael ei ddefnyddio cynllunion (membership) sydd wedi cael eu cyflawni, diwedd y cyflymiau (trial endings), a blockio safon y cefndol. Mae'n gweld bydd y bywyd cynllunion o weithredol i ddefnyddio, y setegau sy'n reoli pwy fydd yn cael eu blocco, a beth ddylai chi gweld pan fod y safon yn parhau i'r cyffredinol ar ôl y cynllunion.
 

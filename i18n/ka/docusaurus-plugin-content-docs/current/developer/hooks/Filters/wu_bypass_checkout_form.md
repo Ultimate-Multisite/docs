@@ -4,7 +4,7 @@ title: ფილტრი - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# ფილტრი: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# ფილტრი: wu_bypass_checkout_form
 
 დეველოპერებს აძლევს გამოტანის გვერდის ავლისა და ახლის დაყენების საშუალებას
 

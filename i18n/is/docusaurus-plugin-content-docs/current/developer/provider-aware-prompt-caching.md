@@ -3,7 +3,7 @@ title: Samþætting við vísindamannar-áhrifsvatn
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
+# Provider-Aware Prompt Caching
 
 Superdav AI Agent v1.12.0 hefurð **provider-aware prompt caching**, sem betur fyrir API-kostna og hlutfall á hvísli með því að nota cache fyrir texta (prompts) yfir annar LLM veitiefyrirtæki. Hvert veitiefyrirtæki hefur annarra skilyrða og uppsetningum fyrir caching.
 

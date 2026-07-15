@@ -3,7 +3,7 @@ title: د پلگین مدیریت وړتیاوې
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# د پلګین مدیریت وړتیاوې {#plugin-management-abilities}
+# د پلګین مدیریت وړتیاوې
 
 Gratis AI Agent v1.5.0 له **۷ د پلګین مدیریت وړتیاوو** سره راځي چې AI مرستیال یې د خبرو اترو پر مهال رابللی شي. دا وړتیاوې د هغو WordPress پلګینونو پر سر پروګرامي کنټرول برابروي چې د [پلګین جوړوونکي او Sandbox سیسټم](../../user-guide/administration/plugin-builder-and-sandbox) له لارې نصب شوي وي.
 

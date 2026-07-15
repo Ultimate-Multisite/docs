@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_{$this->id}_before_render
 
 ప్లగిన్ డెవలపర్‌లు మేము పేజీని ప్రదర్శించడానికి (print) ముందు అదనపు కంటెంట్‌ను జోడ చేయడానికి దీనిని అనుమతిస్తుంది.
 

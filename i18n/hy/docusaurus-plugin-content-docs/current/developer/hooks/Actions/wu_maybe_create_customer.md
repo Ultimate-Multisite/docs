@@ -4,7 +4,7 @@ title: Գործողություն - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Գործողություն: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Գործողություն: wu_maybe_create_customer
 
 Թույլ է տալիս plugin-ի մշակողներին կատարել լրացուցիչ գործողություններ, երբ հաճախորդը ավելացվում է։
 

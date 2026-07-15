@@ -3,7 +3,7 @@ title: نکته ورکولې
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# د ریلیز یادونه (Release Notes) {#release-notes}
+# د ریلیز یادونه (Release Notes)
 
 ## نسخه ۲.۱۳.۰ — په ۲۰۲۶-۰۶-۰۵ را ریلیز شوې {#version-2130--released-on-2026-06-05}
 

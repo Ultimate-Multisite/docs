@@ -3,7 +3,7 @@ title: '12-nji sapak: Biznesi ýöretmek'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Sapak 12: Biznesi ýöretmek {#lesson-12-running-the-business}
+# Sapak 12: Biznesi ýöretmek
 
 Platforma tamamlaýan taslamaňyz däl -- ol ýöredýän biznesiňizdir. Bu sapak FitSite-i dolandyrmagyň gündelik amallaryny öz içine alýar: goldaw, hasaplaşyk, tehniki hyzmat we müşderileri razy saklamak.
 

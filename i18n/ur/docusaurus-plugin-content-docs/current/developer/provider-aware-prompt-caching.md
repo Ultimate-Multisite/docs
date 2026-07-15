@@ -3,7 +3,7 @@ title: فراہم کنندہ سے آگاہ پرامپٹ کیشنگ
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# فراہم کنندہ کے لحاظ سے پرامپٹ کیشنگ (Provider-Aware Prompt Caching) {#provider-aware-prompt-caching}
+# فراہم کنندہ کے لحاظ سے پرامپٹ کیشنگ (Provider-Aware Prompt Caching)
 
 Superdav AI Agent v1.12.0 میں **فراہم کنندہ کے لحاظ سے پرامپٹ کیشنگ** متعارف کرایا گیا ہے، جو مختلف LLM فراہم کنندگان میں پرامپٹ کیشنگ کے ذریعے API کے اخراجات اور لیٹنسی کو بہتر بناتا ہے۔ ہر فراہم کنندہ کیشنگ کے مختلف طریقے اور کنفیگریشن استعمال کرتا ہے۔
 

@@ -3,7 +3,7 @@ title: Tríocht ar Paymeanta agus Faoisnéisí
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Déanamh ar Peleáil agus Invoíce {#managing-payments-and-invoices}
+# Déanamh ar Peleáil agus Invoíce
 
 ## Caintar Peleála {#payment-settings}
 

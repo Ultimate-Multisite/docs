@@ -4,7 +4,7 @@ title: Action - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# অ্যাকশন: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# অ্যাকশন: wu_enqueue_extra_hooks
 
 প্লাগইন ডেভেলপারদের অতিরিক্ত হুক যোগ করার অনুমতি দেয়।
 

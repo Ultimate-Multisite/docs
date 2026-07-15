@@ -4,7 +4,7 @@ title: Parzûn - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Parzûn: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Parzûn: secure_logged_in_cookie
 
 Parzûn dike ka cookie ya têketî divê tenê bi HTTPS were şandin an na.
 

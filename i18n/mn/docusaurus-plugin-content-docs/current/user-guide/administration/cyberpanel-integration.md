@@ -3,7 +3,7 @@ title: CyberPanel-ийн нэгтгэл
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Энэхүү гарын авлага нь Ultimate Multisite-ийн CyberPanel интеграцийг хэрхэн тохируулахыг тайлж байна. Энэ нь таны сүлжээнд байгаа домен шүүлтүүр (mapped domains)-ийг CyberPanel дээр виртуальный хост болгон автоматаар нэмэх (багасах) боломжийг, мөн Let's Encrypt-ээр SSL-ийг автоматаар олгох сонголтыг багтаасан юм.
 

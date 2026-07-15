@@ -3,7 +3,7 @@ title: Agallamh Fionnachtana
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Agallamh Fionnachtana {#discovery-interview}
+# Agallamh Fionnachtana
 
 Is é an **tAgallamh Fionnachtana** an chéad chéim i bpróiseas deartha Theme Builder. Bailíonn sé eolas faoi do shuíomh, do ghnó, agus do roghanna deartha chun téama pearsantaithe a chruthú.
 

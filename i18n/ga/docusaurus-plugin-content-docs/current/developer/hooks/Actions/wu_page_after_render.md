@@ -4,7 +4,7 @@ title: Gníomh - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Gníomh: wu_page_after_render {#action-wupageafterrender}
+# Gníomh: wu_page_after_render
 
 Ligeann sé d’fhorbróirí plugin ábhar breise a chur leis tar éis dúinn an leathanach a phriontáil
 

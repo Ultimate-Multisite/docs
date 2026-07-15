@@ -3,7 +3,7 @@ title: ፕልጊን እና ቴም ማኔጀር
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# የፕልጊን እና የቴም መቆጣጠሪያ {#plugin-and-theme-manager}
+# የፕልጊን እና የቴም መቆጣጠሪያ
 
 ይህ ባህሪ የሚሰጠው በ**Plugin & Theme Manager** addon ነው።
 

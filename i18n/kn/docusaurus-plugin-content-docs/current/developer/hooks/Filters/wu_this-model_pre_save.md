@@ -4,7 +4,7 @@ title: 'Filter - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
+# Filter: wu_\{$this->model\}_pre_save
 
 ಇದು ಆಬ್ಜೆಕ್ಟ್ ಡೇಟಾವನ್ನು ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸುವ ಮೊದಲು ಫಿಲ್ಟರ್ (Filter) ಮಾಡುತ್ತದೆ.
 

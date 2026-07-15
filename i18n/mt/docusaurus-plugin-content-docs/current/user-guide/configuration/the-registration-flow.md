@@ -3,7 +3,7 @@ title: Il-Fluss tal Registrazzjoni
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Il Flusso di Registrazzjoni (v2) {#the-registration-flow-v2}
+# Il Flusso di Registrazzjoni (v2)
 
 _**NOTA IMPORTANTI: Dan il artikolu jiferix għall-versjon 2.x ta Ultimate Multisite.**_
 

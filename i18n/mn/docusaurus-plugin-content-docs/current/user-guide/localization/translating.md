@@ -3,7 +3,7 @@ title: Ultimate Multisite-ийг орчуулах
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-ийн орчуулга {#translating-ultimate-multisite}
+# Ultimate Multisite-ийн орчуулга
 
 Ultimate Multisite нь англиар хөгжсөн боловч, энэ плагин бүрэн орчуулалт хийгдэх боломжтой бөгөөд бид орчуулгын хувь нэмэр оруулахыг идэвхтэй урьдаг.
 

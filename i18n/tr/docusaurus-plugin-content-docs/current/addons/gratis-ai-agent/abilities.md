@@ -3,7 +3,7 @@ title: Yetenekler Referansı
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Abilities Referansı {#abilities-reference}
+# Abilities Referansı
 
 Abilities, Gratis AI Agent’ın WordPress kurulumunuzda çağırabileceği atomik eylemlerdir. Her ability, bir JSON şeması sunan kayıtlı bir PHP sınıfıdır — agent, hangi parametrelerin gerekli olduğunu ve ability’nin ne döndürdüğünü anlamak için bu şemayı çalışma zamanında okur.
 

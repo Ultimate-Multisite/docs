@@ -3,7 +3,7 @@ title: সাইট পরিচালনা
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# সাইট ব্যবস্থাপনা {#managing-sites}
+# সাইট ব্যবস্থাপনা
 
 সাইট (বা সাবসাইট) হলো আপনার WaaS ব্যবসার মূল ভিত্তি। Ultimate Multisite-এ ৩ ধরনের সাইট রয়েছে:
 

@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# کردار: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# کردار: wp_ultimo_support_agents_activation
 
 ڕێگە بدە بە بەشەکانی تری پێوەکراوەکە کە ڕووتینەکانیان بۆ چالاککردن پەیوەست بکەن
 

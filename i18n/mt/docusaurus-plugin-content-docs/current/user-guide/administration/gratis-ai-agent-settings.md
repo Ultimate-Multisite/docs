@@ -3,7 +3,7 @@ title: Issettjar ta’ Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Settings ta' Gratis AI Agent {#gratis-ai-agent-settings}
+# Settings ta' Gratis AI Agent
 
 L-iskrin **Settings → Advanced** f'Gratis AI Agent jipprovdi konfigurazzjoni fil-livell ta' amministratur għal integrazzjonijiet tal-backend. Din il-paġna tiddokumenta t-trażmissjoni ta' feedback, iċ-ċwievet tal-fornitur tat-tiftix, is-setup tas-servizz Superdav immaniġġjat, il-kontrolli ta' Google Calendar, is-settings tal-SMS ta' TextBee, u feature flags fuq in-network kollu.
 

@@ -3,7 +3,7 @@ title: Mukautetun verkkotunnusvälittäjäintegraation rakentaminen
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Mukautetun rekisteröijäintegraation rakentaminen {#building-a-custom-registrar-integration}
+# Mukautetun rekisteröijäintegraation rakentaminen
 
 Domain Seller -lisäosa käyttää **Integration Registry** -mallia. Jokainen rekisteröijä on PHP-luokka, joka toteuttaa `Domain_Selling_Capability`-rajapinnan ja rekisteröi itsensä `wu_domain_seller_register_capabilities`-action hookin kautta.
 

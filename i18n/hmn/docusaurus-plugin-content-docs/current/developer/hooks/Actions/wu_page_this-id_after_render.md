@@ -4,7 +4,7 @@ title: 'Kev ua - wu_page_{$this->id}_after_render'
 sidebar_label: 'wu_page_{$this->id}_after_render'
 _i18n_hash: 8366130ec913af612a31f8385db10a0b
 ---
-# Action: wu_page_\{$this->id\}_after_render {#action-wupagethis-idafterrender}
+# Action: wu_page_\{$this->id\}_after_render
 
 Tso cai rau cov neeg tsim plugin ntxiv cov ntsiab lus ntxiv tom qab peb luam nplooj ntawv
 

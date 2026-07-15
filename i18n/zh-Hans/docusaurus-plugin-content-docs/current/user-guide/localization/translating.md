@@ -3,7 +3,7 @@ title: 翻译 Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# 翻译 Ultimate Multisite {#translating-ultimate-multisite}
+# 翻译 Ultimate Multisite
 
 Ultimate Multisite 是用英文开发的，但插件完全可翻译，我们积极欢迎翻译贡献。
 

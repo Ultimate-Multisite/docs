@@ -3,7 +3,7 @@ title: Průvodce použitím hooků
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Průvodce použitím hooků {#hooks-usage-guide}
+# Průvodce použitím hooků
 
 Ultimate Multisite poskytuje více než 200 akčních hooků a více než 280 filtračních hooků. Tato stránka pokrývá nejpoužívanější hooky s praktickými příklady. Pro kompletní automaticky vygenerovaný seznam se podívejte na ostatní stránky v této sekci.
 

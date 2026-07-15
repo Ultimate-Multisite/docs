@@ -3,7 +3,7 @@ title: ഹുക്കുകളുടെ റഫറൻസ്
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks റഫറൻസ് {#hooks-reference}
+# Hooks റഫറൻസ്
 
 Ultimate Multisite-യിലെ എല്ലാ **59 actions**-ക്കും **118 filters**-ക്കും സ്വയം സൃഷ്ടിച്ച ഡോക്യുമെന്റേഷൻ.
 

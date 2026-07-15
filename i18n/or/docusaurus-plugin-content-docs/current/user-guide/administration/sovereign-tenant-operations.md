@@ -3,7 +3,7 @@ title: ସାରୋଭେନ୍ ଟେଣ୍ଟ୍ ଅପରେସନ୍ସ
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# ସୋଭରେନ୍ ଟେଣ୍ଟର ଅପରେସନ୍ସ (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# ସୋଭରେନ୍ ଟେଣ୍ଟର ଅପରେସନ୍ସ (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ରୁ ସୋଭରେନ୍ ଟେଣ୍ଟ୍‌ଗୁଡ଼ିକ ପାଇଁ କାର୍ଯ୍ୟକାରୀ ଉପକରଣ ଆସିଛି: ଏହା ଅସାଧାରଣ ଟେଣ୍ଟ୍‌ଗୁଡ଼ିକୁ ବ୍ୟବହାର କରିବା ପାଇଁ, ଯାହା ସେମାନଙ୍କର ନିଜର ଡାଟାବେସ୍ (database), ଫାଇଲସିଷ୍ଟମ୍ ରୁଟ୍ ଏବଂ ରାଉଟିଙ୍ଗ୍ କଣ୍ଟେକ୍ଷ୍ଟରେ ଚାଲିଥାଏ, ଭେଦ୍ୟ ମାଧ୍ୟମରେ ନେଟୱାର୍କ ଆଡମିନ୍ ଦ୍ୱାରା ଦେଖାଯାଇପାରିବ।
 

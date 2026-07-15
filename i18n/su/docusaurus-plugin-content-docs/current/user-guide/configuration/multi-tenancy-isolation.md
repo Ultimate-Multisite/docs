@@ -3,7 +3,7 @@ title: Isolasi Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolasi Multi-Tenancy {#multi-tenancy-isolation}
+# Isolasi Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ngabrugi isolasi database jeung filesystem per-subsite pikeun tenant anu mandiri (sovereign). Ieu ngajaga data tenant jadi pisah bari tetep ngajaga penyediaan jaringan, penagihan, jeung administrasi di tingkat jaringan.
 

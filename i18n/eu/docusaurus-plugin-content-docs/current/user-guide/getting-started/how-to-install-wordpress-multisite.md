@@ -3,7 +3,7 @@ title: WordPress Multisite-a nola instalatzen da?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hau in Instalatu WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Hau in Instalatu WordPress Multisite?
 
 WordPress Multisite-eku daite du talde batzueko web-sailak bat server-rakonarian. Hau in-built (berri) funtua da, baina default-ean ez dago aktibo.
 

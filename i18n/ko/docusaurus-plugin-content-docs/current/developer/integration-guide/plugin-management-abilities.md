@@ -3,7 +3,7 @@ title: 플러그인 관리 기능
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# 플러그인 관리 기능 {#plugin-management-abilities}
+# 플러그인 관리 기능
 
 Gratis AI Agent v1.5.0에는 AI 어시스턴트가 대화 중에 호출할 수 있는 **7가지 플러그인 관리 기능**이 포함되어 있습니다. 이 기능들은 [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox)을 통해 설치된 WordPress 플러그인에 대한 프로그래밍 방식의 제어 기능을 제공합니다.
 

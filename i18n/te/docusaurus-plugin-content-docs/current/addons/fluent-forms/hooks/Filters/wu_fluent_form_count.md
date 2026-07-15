@@ -4,7 +4,7 @@ title: ఫిల్టర్ - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count {#filter-wufluentformcount}
+# Filter: wu_fluent_form_count
 
 ప్లగిన్ డెవలపర్‌లు ఫారమ్ల సంఖ్య మొత్తం (form count total) మార్చడానికి వీలు కల్పిస్తుంది.
 

@@ -3,7 +3,7 @@ title: Formulaires de contact du constructeur de sites
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formulaires de contact du Site Builder {#site-builder-contact-forms}
+# Formulaires de contact du Site Builder
 
 Superdav AI Agent v1.10.0 ajoute la possibilité de créer des formulaires de contact directement depuis l'interface de chat en utilisant l'agent Site Builder. Cela vous permet d'ajouter des formulaires de contact entièrement fonctionnels à n'importe quelle page sans quitter le chat.
 

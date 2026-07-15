@@ -3,7 +3,7 @@ title: Uburyo bwo gukoresha uburyo bwo gufata umubare
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Uburyo ubutshobora w'ubwumvikane bwawe? {#how-can-i-cancel-my-subscription}
+# Uburyo ubutshobora w'ubwumvikane bwawe?
 
 Iyo ufite license ya Ultimate Multisite, ubutshobora kubyara ubwumvikane bwawe mu gihe cyose uvuga. Ibyo ni ibyako mu buryo bwo gukora:
 

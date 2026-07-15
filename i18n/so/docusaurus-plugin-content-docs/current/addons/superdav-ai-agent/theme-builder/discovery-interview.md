@@ -3,7 +3,7 @@ title: Wareysi Ogaansho
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wareysiga Ogaanshaha {#discovery-interview}
+# Wareysiga Ogaanshaha
 
 **Wareysiga Ogaanshaha** waa tallaabada koowaad ee habka naqshadaynta Theme Builder. Wuxuu ururiyaa macluumaad ku saabsan boggaaga, ganacsigaaga, iyo doorbidyada naqshadaynta si loo abuuro theme kuu gaar ah.
 

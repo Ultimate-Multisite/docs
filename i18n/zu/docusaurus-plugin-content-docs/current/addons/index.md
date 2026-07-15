@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Izengezo ze-Ultimate Multisite {#ultimate-multisite-addons}
+# Izengezo ze-Ultimate Multisite
 
 Izengezo zinweba Ultimate Multisite ngezici ezengeziwe nokuhlanganiswa. Izengezo eziningi ziyakhokhelwa futhi zingathengwa ku-[ultimatemultisite.com](https://ultimatemultisite.com).
 

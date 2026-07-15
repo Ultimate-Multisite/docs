@@ -4,7 +4,7 @@ title: Azzjoni - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Azzjoni: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Azzjoni: inpsyde.search_and_replace.error
 
 Jinjora li dan il-hook mhuwiex irreġistrat minn WP Ultimo.
 

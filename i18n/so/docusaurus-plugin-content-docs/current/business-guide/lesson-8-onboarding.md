@@ -3,7 +3,7 @@ title: 'Casharka 8: Soo-dhaweynta Macaamiisha'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Casharka 8: Soo-dhaweynta Macmiilka {#lesson-8-customer-onboarding}
+# Casharka 8: Soo-dhaweynta Macmiilka
 
 In macmiil la diiwaangeliyo waa kala bar shaqada oo keliya. Haddii ay galaan, dareemaan culays, oo aanay mar dambe soo noqon, waad wayday. Casharkani wuxuu naqshadaynayaa khibradda ka beddesha isdiiwaangelin cusub macmiil firfircoon oo ku xiran.
 

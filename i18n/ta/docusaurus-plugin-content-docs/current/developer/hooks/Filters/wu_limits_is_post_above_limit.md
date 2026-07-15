@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 கொடுக்கப்பட்ட போஸ்ட் வகை (post type) இந்த திட்டத்தில் அனுமதிக்கப்பட்டுள்ளதா என்பதை இது சரிபார்க்கிறது. Plugin உருவாக்குநர்கள் (developers) திரும்ப வரும் மதிப்பை (return value) ஃபில்டர் செய்ய இது அனுமதிக்கிறது.
 

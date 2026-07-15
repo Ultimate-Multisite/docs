@@ -3,7 +3,7 @@ title: Cloudflare ඒකාබද්ධ කිරීම
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare සම්බන්ධကူးမှု (Cloudflare Integration) {#cloudflare-integration}
+# Cloudflare සම්බන්ධကူးမှု (Cloudflare Integration)
 
 ## အကျဉ်းချုပ် (Overview) {#overview}
 Cloudflare ဆိုတာ ဝဘ်ဆိုဒ်တွေကို ကာကွယ်ပေးပြီး မြန်ဆန်စေတဲ့ ထိပ်တန်း Content Delivery Network (CDN) နဲ့ လုံခြုံရေး ပံ့ပိုးပေးသူတစ်ခု ဖြစ်ပါတယ်။ ဒီပေါင်းစပ်မှုက Ultimate Multisite နဲ့ Cloudflare တို့ကြားမှာ အလိုအလျောက် ဒိုမেইন စီမံခန့်ခွဲမှုကို လုပ်ဆောင်ပေးပြီး၊ အထူးသဖြင့် subdomain multisite တည်ဆောက်တဲ့အခါမျိုးတွေအတွက် အသုံးဝင်ပါတယ်။

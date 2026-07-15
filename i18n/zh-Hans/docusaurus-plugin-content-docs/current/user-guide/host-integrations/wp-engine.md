@@ -3,7 +3,7 @@ title: WP Engine 集成
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine 集成 {#wp-engine-integration}
+# WP Engine 集成
 
 ## 概述 {#overview}
 WP Engine 是一个高级托管 WordPress 主机平台，为 WordPress 网站提供优化的性能、安全性和可扩展性。此集成可实现 Ultimate Multisite 与 WP Engine 之间的自动域名同步。

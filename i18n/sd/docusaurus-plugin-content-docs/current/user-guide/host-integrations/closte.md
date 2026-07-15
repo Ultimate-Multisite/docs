@@ -3,7 +3,7 @@ title: کلوسٽ انٽيغريشن
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration {#closte-integration}
+# Closte Integration
 
 ## جائزہ (Overview) {#overview}
 Closte هڪ مانيجڊ WordPress هاستينگ پليٽ فارم آهي جيڪو Google Cloud انفرنس تي بنيو آهي. هي ان انٽيغريشن جي مدد ڪري ٿو ته Ultimate Multisite ۽ Closte جو بين ۾ دومين سنڪنگ (domain syncing) ۽ SSL سرٽيفڪيٽ جي مانيجمنت خودکار طور تي ٿئي ٿو.

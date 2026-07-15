@@ -3,7 +3,7 @@ title: Règleman Konstanta Solèy sou Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Mete konstan Sunrise a true sou Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Mete konstan Sunrise a true sou Closte
 
 Gen kèk fournisseur anjeneral bloke `wp-config.php` pou rezon sekirite. Sa vle di ke Ultimate Multisite pa ka otomatikman edite dos la pou mete konstante ki nesesè yo pou fè maper domain ak lòt fonksyon yo travay. Closte se yon gwo egzanp sa a.
 

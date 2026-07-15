@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ziada za Ultimate Multisite {#ultimate-multisite-addons}
+# Ziada za Ultimate Multisite
 
 Ziada hizi huimarisha Ultimate Multisite kwa kuongeza vipengele na uunganishaji mbalimbali. Ziada nyingi ni za kulipia na unaweza kuzinunua kutoka [ultimatemultisite.com](https://ultimatemultisite.com).
 

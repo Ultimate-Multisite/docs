@@ -3,7 +3,7 @@ title: 'Les 6: De Registratie-ervaring'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Les 6: De Aanmeldingservaring {#lesson-6-the-signup-experience}
+# Les 6: De Aanmeldingservaring
 
 Het afrekenproces is waar interesse omzet in inkomsten. Een verwarrend of algemeen aanmeldingsproces verliest klanten. Een niche-specifiek proces dat hun taal spreekt en moeiteloos aanvoelt, zet ze om in betalende klanten.
 

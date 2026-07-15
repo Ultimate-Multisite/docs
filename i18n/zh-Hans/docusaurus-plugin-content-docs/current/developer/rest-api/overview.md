@@ -3,7 +3,7 @@ title: REST API 概述
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 参考 {#rest-api-reference}
+# REST API 参考
 
 ## 基础配置 {#base-configuration}
 

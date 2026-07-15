@@ -3,7 +3,7 @@ title: 代码片段
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 的代码片段 {#code-snippets-for-v2}
+# v2 的代码片段
 
 基本上，**WordPress** 的代码片段用于执行某些操作，否则这些操作可能需要一个专门的小型 plugin。此类代码片段会放在 WordPress 核心文件或 theme 文件之一中（通常是你的 theme 的 functions.php 文件），也可以作为 MU plugin 使用。
 

@@ -3,7 +3,7 @@ title: Múta-tenancy ábyrgð
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Samræmi milli tenenta (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Samræmi milli tenenta (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 stendurð þýðir að við getum notað skýr samræmi fyrir hverja subsite í eiga database og kerfismiðli (filesystem) til að tryggja að tenentar sé séra. Þetta heldur data tenenta sé séra, en við haldum við nýtingu netverkans, reikninga og stjórnunarferlis áfram.
 

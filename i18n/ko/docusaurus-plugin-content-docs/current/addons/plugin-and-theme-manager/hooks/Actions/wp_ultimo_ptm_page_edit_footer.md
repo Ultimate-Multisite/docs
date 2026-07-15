@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_ptm_page_edit_footer
 sidebar_label: wp_ultimo_ptm_page_edit_footer
 _i18n_hash: b1aa07b1597b4cc3154884eed77d945d
 ---
-# 액션: wp_ultimo_ptm_page_edit_footer {#action-wpultimoptmpageeditfooter}
+# 액션: wp_ultimo_ptm_page_edit_footer
 
 플러그인 개발자가 페이지 하단에 스크립트를 추가할 수 있도록 허용합니다.
 

@@ -4,7 +4,7 @@ title: Action - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Action: wu_centered_content {#action-wucenteredcontent}
+# Action: wu_centered_content
 
 Permet aux développeurs de plugins d'ajouter du contenu supplémentaire dans la colonne centrée.
 

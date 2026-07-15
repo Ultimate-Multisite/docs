@@ -4,7 +4,7 @@ title: Acción - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Acción: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Acción: wu_domain_renewal_failed
 
 Dispárase despois de que falle un intento de renovación dun dominio.
 

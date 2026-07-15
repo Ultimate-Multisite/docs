@@ -3,7 +3,7 @@ title: Tarihin Canje-canje na Mai Sayar da Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Rajistar Canje-canje na Domain Seller {#domain-seller-changelog}
+# Rajistar Canje-canje na Domain Seller
 
 Version 1.3.0 - An fitar a 2026-06-02
 - Sabo: An ƙara gargaɗin network-admin lokacin da ma’aunin kuɗin HostAfrica reseller ya yi ƙasa sosai

@@ -3,7 +3,7 @@ title: Журнал змін тікетів підтримки
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Журнал змін плагіна Support Tickets {#support-tickets-changelog}
+# Журнал змін плагіна Support Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Покращено: Видалено каталог `vendor/` з відстеження Git (це вже покривається `.gitignore`), що зменшує розмір репозиторію.

@@ -3,7 +3,7 @@ title: Closte-da Şüryəni Düzəltmək
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Sunrise константы Closte-де включение {#setting-the-sunrise-constant-to-true-on-closte}
+# Sunrise константы Closte-де включение
 
 Некоторые хостинг провайдеры файл wp-config.php-и хакерlik (безопасность) sebäbi bloklayt. Это значит, что Ultimate Multisite avtomatiki fayly tahrir qila bilmasin, shunda domen xaritasi va boshqa funksiyalar ishlashi uchun zarur bo'lgan konstantalarni qo'shib bera olmaydi. Closte shunday hostlardan biridir.
 

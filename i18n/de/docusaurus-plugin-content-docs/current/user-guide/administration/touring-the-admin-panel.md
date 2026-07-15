@@ -3,7 +3,7 @@ title: Rundgang durch das Admin-Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Rundgang durch das Admin-Panel {#touring-the-admin-panel}
+# Rundgang durch das Admin-Panel
 
 Ultimate Multisite soll so einfach und selbsterklärend wie möglich sein, aber bei einem so leistungsstarken Tool kann eine geführte Tour hilfreich sein. Gehen wir die Admin-Seiten durch, damit du dich zurechtfindest.
 

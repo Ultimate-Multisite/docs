@@ -3,7 +3,7 @@ title: Jakoettavissa linkkien hallinta suunnitelmille
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Jaaettavissa olevien linkkien hallinta suunnitelmille {#managing-shareable-links-for-plans}
+# Jaaettavissa olevien linkkien hallinta suunnitelmille
 
 Ultimate Multisite antaa sinulle mahdollisuuden jakaa suunnitelmlinkkejä suoraan asiakkaillesi. Tekemiseksi siirry minkä tahansa suunnitelman muokkaussivulle ja napsauta _Click to copy the Shareable Link_ -painiketta.
 

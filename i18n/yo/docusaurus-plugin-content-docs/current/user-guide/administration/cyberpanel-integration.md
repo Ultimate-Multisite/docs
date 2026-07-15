@@ -3,7 +3,7 @@ title: Ìṣepọ̀ CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Ìṣepọ̀ CyberPanel {#cyberpanel-integration}
+# Ìṣepọ̀ CyberPanel
 
 Ìtọ́nisọ́nà yìí ṣàlàyé bí a ṣe lè ṣètò ìṣepọ̀ Ultimate Multisite CyberPanel kí àwọn domain tí a ṣe mapping sí nẹ́tíwọ́ọ̀kì rẹ lè jẹ́ fífi kún un (àti yíyọ kúrò) laifọwọyi gẹ́gẹ́ bí virtual hosts ní CyberPanel, pẹ̀lú ìpèsè auto-SSL aṣayan nípasẹ̀ Let's Encrypt.
 

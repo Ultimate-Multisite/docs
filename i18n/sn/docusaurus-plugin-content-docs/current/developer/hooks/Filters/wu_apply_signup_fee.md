@@ -4,7 +4,7 @@ title: Sefa - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Sefa: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# Sefa: wu_apply_signup_fee
 
 Inosefa kuti signup fee inofanira kushandiswa here kana kuti kwete.
 

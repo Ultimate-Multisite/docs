@@ -3,7 +3,7 @@ title: Թեմայի կառուցման մուտքի հոսք
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0-ը ներդրում է ուղորդված **Theme Builder onboarding flow**՝ ձեզ օգնելու ստեղծել հատուկ բլոկային թեմա (custom block theme) ձեր սկզբնական կարգավորման ընթացքում։ Սա հին Site Builder մոդիֆիկացիան փոխարինում է ավելի պլյունտ և օգնության մեջ գտնվող մոտեցմամբ։
 

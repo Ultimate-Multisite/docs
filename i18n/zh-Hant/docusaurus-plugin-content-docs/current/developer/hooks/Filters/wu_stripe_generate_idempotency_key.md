@@ -4,7 +4,7 @@ title: Filter - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Filter: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# Filter: wu_stripe_generate_idempotency_key
 
 用於篩選傳送給 Stripe 收費選項中的 `idempotency_key` 值。
 

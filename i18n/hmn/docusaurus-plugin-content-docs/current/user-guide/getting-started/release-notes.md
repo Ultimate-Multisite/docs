@@ -3,7 +3,7 @@ title: Lwm txoj kev tso cai
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ការចេញផ្សាយកំណែ (Release Notes) {#release-notes}
+# ការចេញផ្សាយកំណែ (Release Notes)
 
 ## កំណែ ២.១៣.០ — ចេញផ្សាយនៅថ្ងៃទី ៥ ខែមិថុនា ឆ្នាំ ២០២៦ {#version-2130--released-on-2026-06-05}
 

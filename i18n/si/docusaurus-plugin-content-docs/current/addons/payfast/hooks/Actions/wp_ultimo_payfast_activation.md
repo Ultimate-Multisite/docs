@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# ක්‍රියාව: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
+# ක්‍රියාව: wp_ultimo_payfast_activation
 
 සක්‍රිය කිරීම සඳහා ප්ලගිනයේ වෙනත් කොටස්වලට තම ක්‍රමවේද අමුණා ගැනීමට ඉඩ දෙයි
 

@@ -3,7 +3,7 @@ title: Material WP-wijzigingslog
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP Changelog {#material-wp-changelog}
+# Material WP Changelog
 
 Versie 1.1.15 - 01/26/2026
 * Verbeterd: Codestijl en opmaak;

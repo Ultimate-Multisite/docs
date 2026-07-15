@@ -3,7 +3,7 @@ title: 'Lezzjoni 10: Jum it-Tnedija'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lezzjoni 10: Jum it-Tnedija {#lesson-10-launch-day}
+# Lezzjoni 10: Jum it-Tnedija
 
 Kollox inbena. Qabel tiftaħ il-bibien, din il-lezzjoni tgħaddi mill-lista ta' kontroll ta' qabel it-tnedija biex tiżgura li xejn mhu miksur, nieqes, jew imbarazzanti.
 

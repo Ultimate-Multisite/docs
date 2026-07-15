@@ -3,7 +3,7 @@ title: Ultimate Multisite অনুবাদ করা
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite অনুবাদ করা {#translating-ultimate-multisite}
+# Ultimate Multisite অনুবাদ করা
 
 Ultimate Multisite ইংরেজিতে ডেভেলপ করা হয়েছে, তবে প্লাগইনটি সম্পূর্ণ অনুবাদযোগ্য এবং আমরা অনুবাদে অবদান রাখতে আগ্রহীদের সাদর স্বাগত জানাই।
 

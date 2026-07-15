@@ -3,7 +3,7 @@ title: የንድፍ ገንቢ የመግባቢያ ሂደት ፍሰት
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 አዲስ መመሪያ ያለው **Theme Builder onboarding flow** በማቅረብ፣ በመጀመሪያ ሲሰሩ የራሳችሁን ብሎክ ቴም (block theme) መፍጠር ይረዳዎታል። ይህ አዲሱ አካሄድ ከቀድሞው የ Site Builder ሁነታ ይልቅ የበለጠ ተጣጣፊ እና በኤጀንት የሚመራ አቀራረብ ነው።
 

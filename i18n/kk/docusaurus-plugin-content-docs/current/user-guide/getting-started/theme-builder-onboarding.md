@@ -3,7 +3,7 @@ title: Theme Builder Бағдарламаға Кіру Ағымы
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Бағдарламаға Кіру Процесі (Onboarding Flow) {#theme-builder-onboarding-flow}
+# Theme Builder Бағдарламаға Кіру Процесі (Onboarding Flow)
 
 Superdav AI Agent v1.12.0 сізге алғашқы орнату кезінде арнайы блок темасын жасауға көмектесетін бағытталған **Theme Builder onboarding flow**-ды енгізеді. Бұл ескі Site Builder режимін одан да икемді, агентті қолдау алатын тәсілмен ауыстырады.
 

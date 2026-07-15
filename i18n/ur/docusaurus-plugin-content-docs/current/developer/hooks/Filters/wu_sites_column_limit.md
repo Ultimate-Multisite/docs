@@ -4,7 +4,7 @@ title: Filter - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# فلٹر: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# فلٹر: wu_sites_column_limit
 
 یہ فلٹر نیٹ ورک کے اندر پلاگ ان سائٹس کے لیے ویلیو کو تبدیل کرنے کے لیے ہے۔
 

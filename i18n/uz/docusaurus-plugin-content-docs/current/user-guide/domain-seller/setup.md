@@ -3,7 +3,7 @@ title: Sozlash va Provayder Konfiguratsiyasi
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Sozlash va Providendorni Konfiguratsiya Qilish {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Sozlash va Providendorni Konfiguratsiya Qilish
 
 Domain Seller qo'shimchasi barcha kerakli bosqichlarni o'tish uchun sizga yo'l ko'rsatadigan yo'naltirilgan sozlash wizard (o'rnatish dasturi) bilan yetkaziladi. Bu sahifa wizardning oqimini va keyinchalik provayderlarni qanday sozlash yoki qayta sozlash haqida ma'lumot beradi.
 

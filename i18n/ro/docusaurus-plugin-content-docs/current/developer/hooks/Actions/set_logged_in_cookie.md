@@ -4,7 +4,7 @@ title: Acțiune - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Acțiune: set_logged_in_cookie {#action-setloggedincookie}
+# Acțiune: set_logged_in_cookie
 
 Se declanșează imediat înainte de stabilirea cookie-ului de autentificare pentru utilizatorul autentificat.
 

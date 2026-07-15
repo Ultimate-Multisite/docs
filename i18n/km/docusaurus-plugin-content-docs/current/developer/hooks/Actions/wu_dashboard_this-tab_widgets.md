@@ -4,7 +4,7 @@ title: 'សកម្មភាព - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_\{$this->tab\}_widgets
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍កម្មវិធីបន្ថែម បន្ថែមធាតុក្រាហ្វិកទៅកាន់ផ្ទាំង Dashboard បណ្ដាញ។
 

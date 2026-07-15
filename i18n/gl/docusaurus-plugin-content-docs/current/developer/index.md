@@ -3,7 +3,7 @@ title: Documentación para desenvolvedores
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Documentación para desenvolvedores {#developer-documentation}
+# Documentación para desenvolvedores
 
 Esta guía proporciona aos desenvolvedores todo o necesario para integrarse con Ultimate Multisite, estendelo ou desenvolver complementos para el. Ultimate Multisite transforma unha rede WordPress Multisite nunha plataforma Website-as-a-Service (WaaS).
 

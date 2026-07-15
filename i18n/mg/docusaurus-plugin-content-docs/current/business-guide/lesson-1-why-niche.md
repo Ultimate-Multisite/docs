@@ -3,7 +3,7 @@ title: 'Lesona 1: Nahoana no mandresy ny sehatra manokana'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesona 1: Nahoana no Mandresy ny Niche {#lesson-1-why-niche-wins}
+# Lesona 1: Nahoana no Mandresy ny Niche
 
 Alohan'ny hikasihantsika rindrambaiko, mila mahatakatra ianao hoe nahoana ny fananganana ho an'ny mpihaino manokana no fanapahan-kevitra tokana manan-danja indrindra horaisinao.
 

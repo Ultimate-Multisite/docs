@@ -3,7 +3,7 @@ title: Gid Entegrasyon
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gid Entegrasyon {#integration-guide}
+# Gid Entegrasyon
 
 Gid sa a kouvri modèl entegrasyon komen ak Ultimate Multisite, tankou konekte ak sèvis ekstèn, konstwi passerelles peman pèsonalize, epi jere webhooks.
 

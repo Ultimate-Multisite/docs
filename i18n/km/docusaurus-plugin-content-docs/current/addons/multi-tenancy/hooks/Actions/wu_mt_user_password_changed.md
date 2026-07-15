@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_mt_user_password_changed
 sidebar_label: wu_mt_user_password_changed
 _i18n_hash: 51406eea33adf293ae1d6fa7da6563e7
 ---
-# Action: wu_mt_user_password_changed {#action-wumtuserpasswordchanged}
+# Action: wu_mt_user_password_changed
 
 Action ត្រូវបានបញ្ចេញ នៅពេលពាក្យសម្ងាត់របស់អ្នកប្រើត្រូវបានផ្លាស់ប្តូរ។
 

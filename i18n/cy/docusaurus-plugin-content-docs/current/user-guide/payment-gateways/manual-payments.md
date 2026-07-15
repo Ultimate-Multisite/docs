@@ -3,7 +3,7 @@ title: Sefydlu Taliadau â Llaw
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Sefydlu Taliadau â Llaw (v2) {#setting-up-manual-payments-v2}
+# Sefydlu Taliadau â Llaw (v2)
 
 _**NODYN PWYSIG: Mae’r erthygl hon yn cyfeirio at Ultimate Multisite fersiwn 2.x.**_
 

@@ -3,7 +3,7 @@ title: 主机多租户
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger 多租户 {#hostinger-multi-tenancy}
+# Hostinger 多租户
 
 Ultimate Multisite 1.2.0 添加了 Hostinger 多租户功能，现在托管的域名可以与现有的 Hostinger 域名映射集成一起参与主权租户的配置。
 

@@ -3,7 +3,7 @@ title: Fanovozan-kevitra momba ny Fikirana
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Fanovozan-kevitry ny Settings {#settings-reference}
+# Fanovozan-kevitry ny Settings
 
 Ity pejy ity dia manara-maso ireo settings izay misy fiantraikany amin’ny fitantanana isan’andro sy ny fiovana vao haingana amin’ny fitondran-tena ao amin’ny Ultimate Multisite.
 

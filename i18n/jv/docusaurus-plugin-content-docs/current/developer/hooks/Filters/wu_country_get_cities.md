@@ -4,7 +4,7 @@ title: Saringan - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Saringan: wu_country_get_cities {#filter-wucountrygetcities}
+# Saringan: wu_country_get_cities
 
 Mbalèkaké dhaptar kutha kanggo sawijining negara bagian ing sawijining negara.
 

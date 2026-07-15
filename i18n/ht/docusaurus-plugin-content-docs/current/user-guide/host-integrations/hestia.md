@@ -3,7 +3,7 @@ title: Entegrasyon Panèl Kontwòl Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Entegrasyon Panel de Contrôle Hestia {#hestia-control-panel-integration}
+# Entegrasyon Panel de Contrôle Hestia
 
 Sa gidans sa tèks sa a, nou pral eksplike kijan pou configure entegrasyon Ultimate Multisite Hestia pou domèn ki mapé nan rezo ou yo otomatikman ajoute (e retire) kòm Alias Domèn Web nan Hestia.
 

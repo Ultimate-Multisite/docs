@@ -3,7 +3,7 @@ title: Aðskipti á skönnunarstefnum í design system
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skilna í Design System Aesthetics {#design-system-aesthetics-skill}
+# Skilna í Design System Aesthetics
 
 **Design System Aesthetics skíl** er leið til að leda þig í að finna fram á síðu þinni viskja. Það hjálpar þér að taka eins og sameina ákvörðum um typografi, lög, fjarska og hreyfingstölur sem eru lykilatriði fyrir design system þitt.
 

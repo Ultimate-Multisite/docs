@@ -3,7 +3,7 @@ title: Primeros pasos con el desarrollo de complementos
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Desarrollo de Addon {#addon-development}
+# Desarrollo de Addon
 
 ## Estructura de Addon {#addon-structure}
 

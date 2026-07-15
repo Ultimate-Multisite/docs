@@ -3,7 +3,7 @@ title: Gjenero logon SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Gjenero Logo SVG {#generate-logo-svg}
+# Gjenero Logo SVG
 
 Aftësia **Gjenero Logo SVG** i lejon Theme Builder të krijojë dhe të integrojë logo SVG të personalizuara drejtpërdrejt në faqen tuaj WordPress me sanitizim automatik të sigurt për namespace.
 

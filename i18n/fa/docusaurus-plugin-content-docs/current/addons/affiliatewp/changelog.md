@@ -3,7 +3,7 @@ title: AffiliateWP گزارش تغییرات
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# گزارش تغییرات AffiliateWP {#affiliatewp-changelog}
+# گزارش تغییرات AffiliateWP
 
 نسخه: 2.0.1 - تاریخ انتشار 2025-09-28
 

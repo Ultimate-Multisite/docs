@@ -3,7 +3,7 @@ title: Tarihin canje-canje na Mailster
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Tarihin Sauye-sauyen Mailster {#mailster-changelog}
+# Tarihin Sauye-sauyen Mailster
 
 ### 1.0.0 {#100}
 * Sakin farko

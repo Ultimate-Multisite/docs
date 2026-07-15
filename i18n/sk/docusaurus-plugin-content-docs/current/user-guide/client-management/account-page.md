@@ -3,7 +3,7 @@ title: Stránka účtu klienta
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Stránok účtu vášho klienta (v2) {#your-clients-account-page-v2}
+# Stránok účtu vášho klienta (v2)
 
 _**DÔLEŽITÉ UPOZORNENIE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 

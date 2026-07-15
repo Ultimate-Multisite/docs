@@ -3,7 +3,7 @@ title: Ukumisela iiNtlawulo ezenziwa ngesandla
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ukumisela Iintlawulo Zezandla (v2) {#setting-up-manual-payments-v2}
+# Ukumisela Iintlawulo Zezandla (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite version 2.x.**_
 

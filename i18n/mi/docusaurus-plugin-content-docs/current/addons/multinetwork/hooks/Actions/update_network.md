@@ -4,7 +4,7 @@ title: Hohenga - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Mahinga: update_network {#action-updatenetwork}
+# Mahinga: update_network
 
 Ka whakakāngia i muri i te whakahōutanga o tētahi whatunga tīariari.
 

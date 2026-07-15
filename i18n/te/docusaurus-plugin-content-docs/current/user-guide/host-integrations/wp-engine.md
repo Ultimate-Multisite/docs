@@ -3,7 +3,7 @@ title: WP Engine ఇంటిగ్రేషన్
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ఇంటిగ్రేషన్ {#wp-engine-integration}
+# WP Engine ఇంటిగ్రేషన్
 
 ## అవలోకనం {#overview}
 WP Engine అనేది WordPress సైట్‌లకు ఆప్టిమైజ్డ్ పనితీరు, భద్రత మరియు స్కేలబిలిటీని అందించే ప్రీమియం మేనేజ్డ్ WordPress హోస్టింగ్ ప్లాట్‌ఫారమ్. ఈ ఇంటిగ్రేషన్ Ultimate Multisite మరియు WP Engine మధ్య ఆటోమేటిక్ డొమైన్ సింకింగ్‌ను ప్రారంభిస్తుంది.

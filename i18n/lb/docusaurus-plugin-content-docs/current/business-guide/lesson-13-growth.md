@@ -3,7 +3,7 @@ title: 'Lektioun 13: Opskaléieren'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lektioun 13: Scaling Up {#lesson-13-scaling-up}
+# Lektioun 13: Scaling Up
 
 Du hues eng funktionéierend Plattform mat bezuelende Clienten. Dës Lektioun behandelt, wéi s du vun enger klenger Operatioun zu engem nohaltege Geschäft wiessels -- d'Infrastruktur skaléieren, Operatiounen automatiséieren an d'Recetten pro Client erhéijen.
 

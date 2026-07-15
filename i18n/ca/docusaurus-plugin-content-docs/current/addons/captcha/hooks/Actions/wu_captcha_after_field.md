@@ -4,7 +4,7 @@ title: Acció - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Acció: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Acció: wu_captcha_after_field
 
 S'executa després que el camp de captcha s'hagi renderitzat.
 

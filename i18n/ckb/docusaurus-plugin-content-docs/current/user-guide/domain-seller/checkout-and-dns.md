@@ -3,7 +3,7 @@ title: فیلد پایا و DNS کڕیار
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# فیلد پرداخت و مدیریت DNS مشتری {#checkout-field-and-customer-dns-management}
+# فیلد پرداخت و مدیریت DNS مشتری
 
 ## فیلد انتخاب دامنه در صفحه تسویه حساب {#the-domain-selection-checkout-field}
 

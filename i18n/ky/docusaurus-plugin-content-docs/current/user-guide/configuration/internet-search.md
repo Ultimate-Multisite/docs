@@ -3,7 +3,7 @@ title: Интернет издөө
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Интернет издөө {#internet-search}
+# Интернет издөө
 
 Gratis AI Agent v1.5.0-га сөздөрүнүн жүрүшүндө ИИ ассистендин интернеттен актуалдуу маалыматтарды алуусун мүмкүнчүлүк берген **Интернет издөө** (Internet Search) функциясын кошот. Бул [Brave Search API](https://brave.com/search/api/) же [Tavily API](https://tavily.com/) аркылуу ишке ашырылган.
 

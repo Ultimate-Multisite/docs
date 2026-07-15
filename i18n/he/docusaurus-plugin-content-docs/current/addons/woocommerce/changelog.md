@@ -3,7 +3,7 @@ title: יומן שינויים של אינטגרציית WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# יומן שינויים של שילוב WooCommerce {#woocommerce-integration-changelog}
+# יומן שינויים של שילוב WooCommerce
 
 גרסה 2.2.0 - שוחררה ב-2026-07-01
 * חדש: סכומי המס של Ultimate Multisite מופיעים כעת כשורות עמלה נפרדות של WooCommerce בתשלום, מה שהופך את סיכומי המס לברורים יותר לפני התשלום.

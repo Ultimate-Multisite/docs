@@ -3,7 +3,7 @@ title: WPMU DEV ஒருங்கிணைப்பு
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ஒருங்கிணைப்பு {#wpmu-dev-integration}
+# WPMU DEV ஒருங்கிணைப்பு
 
 ## மேலோட்டப் பார்வை {#overview}
 WPMU DEV என்பது WordPress தளங்களுக்கான ஹோஸ்டிங், plugins மற்றும் சேவைகளை வழங்கும் ஒரு முழுமையான WordPress தளமாகும். இந்த ஒருங்கிணைப்பு Ultimate Multisite மற்றும் WPMU DEV ஹோஸ்டிங் இடையே தானியங்கு domain ஒத்திசைவு மற்றும் SSL சான்றிதழ் மேலாண்மையை செயல்படுத்துகிறது.

@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Шүүлтүүр: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Шүүлтүүр: wu_checkout_field_types
 
 Манай API-ууд шинэ талбарын төрлүүд нэмэхийн тулд энд холбогддог.
 

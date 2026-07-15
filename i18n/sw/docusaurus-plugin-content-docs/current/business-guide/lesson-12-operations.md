@@ -3,7 +3,7 @@ title: 'Somada 12: Kuendesha Biashara'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Somo la 12: Kuendesha Biashara {#lesson-12-running-the-business}
+# Somo la 12: Kuendesha Biashara
 
 Platform si mradi unaoumalisha—ni biashara unayoiendesha. Somo hili linazungumzia shughuli za kila siku za kudhibiti FitSite: usaidizi, malipo, matengenezo, na kuwafanya wateja wajisikie kuridhika.
 

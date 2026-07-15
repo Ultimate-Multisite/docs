@@ -3,7 +3,7 @@ title: Latviski tulkot Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite tulkojums {#translating-ultimate-multisite}
+# Ultimate Multisite tulkojums
 
 Ultimate Multisite ir izstrādāts angļu valodā, bet šis plugin ir pilnīgi tulkojams un mēs aktīvi labprasa tulkojumus.
 

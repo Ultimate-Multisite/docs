@@ -3,7 +3,7 @@ title: GoCardless Ilogi Yezinguquko
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Ilogu yezinguquko ye-GoCardless {#gocardless-changelog}
+# Ilogu yezinguquko ye-GoCardless
 
 Inguqulo: 1.0.3 - Ikhishwe ngo-2026-05-05
 * Ukulungisa: Amasayithi ayizintandane asalindile manje ayahlanzwa lapho ubulungu be-GoCardless bukhanselwa busesimweni sokulinda noma sokumiswa okwesikhashana

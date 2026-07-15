@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 ଦିଆଯାଇଥିବା post type ଏହି planରେ ଅନୁମତିପ୍ରାପ୍ତ କି ନାହିଁ ଯାଞ୍ଚ କରେ। plugin ବିକାଶକମାନଙ୍କୁ ଫେରତ ମୂଲ୍ୟ filter କରିବାକୁ ଅନୁମତି ଦିଏ
 

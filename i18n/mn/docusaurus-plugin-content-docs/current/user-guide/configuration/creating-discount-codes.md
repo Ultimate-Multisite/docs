@@ -3,7 +3,7 @@ title: Хямдралын код үүсгэх
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Хямдралын код үүсгэх (v2) {#creating-discount-codes-v2}
+# Хямдралын код үүсгэх (v2)
 
 _**АНХААРУУЛГА: Энэ нийтлэл Ultimate Multisite-ийн 2.x хувилбарыг хэрэглэдэг.**_
 

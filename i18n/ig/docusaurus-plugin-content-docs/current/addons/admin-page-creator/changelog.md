@@ -3,7 +3,7 @@ title: Onye Okike Ibe Nchịkwa Ndekọ Mgbanwe
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Changelog nke Onye Mepụta Peeji Nchịkwa {#admin-page-creator-changelog}
+# Changelog nke Onye Mepụta Peeji Nchịkwa
 
 ### Ụdị 1.9.0 - E wepụtara na 2026-01-18 {#version-190---released-on-2026-01-18}
 

@@ -3,7 +3,7 @@ title: Registrer en konto via Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Registrer en konto via Zapier {#event-register-an-account-via-zapier}
+# Event: Registrer en konto via Zapier
 
 I artiklen [Integrating Ultimate Multisite with Zapier](zapier.md) har vi diskuteret, hvordan man bruger Zapier til at udføre forskellige handlinger i Ultimate Multisite baseret på triggers og events. I denne artikel vil vi vise dig, hvordan du kan integrere tredjepartsapplikationer. Vi vil bruge Google Sheets som datakilde og sende oplysningerne til Ultimate Multisite for at registrere en konto.
 

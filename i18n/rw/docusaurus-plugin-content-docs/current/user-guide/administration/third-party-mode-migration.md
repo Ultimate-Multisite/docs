@@ -3,7 +3,7 @@ title: Umuco w'Urugero rw'Ubwumvikane
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migération vers le mode Tiers (Third-Party Mode) {#third-party-mode-migration}
+# Migération vers le mode Tiers (Third-Party Mode)
 
 Superdav AI Agent v1.12.0 a changé la façon dont les capacités tierces sont gérées. **Le mode tiers passe désormais par défaut en "auto"**, ce qui permet l'intégration native de l'API des Capacités WordPress sur WordPress 7.0+ sans configuration manuelle.
 

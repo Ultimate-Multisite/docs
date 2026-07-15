@@ -3,7 +3,7 @@ title: Àkópọ̀ Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Akopọ Dashboard {#dashboard-overview}
+# Akopọ Dashboard
 
 Ultimate Multisite ní **Dashboard** tirẹ̀ lábẹ́ akojọ Ultimate Multisite, ó sì tún ń fi àwọn widgets kún Network Dashboard. Àpilẹ̀kọ yìí ṣàlàyé ohun tí ìwọ yóò rí ní ibi méjèèjì.
 

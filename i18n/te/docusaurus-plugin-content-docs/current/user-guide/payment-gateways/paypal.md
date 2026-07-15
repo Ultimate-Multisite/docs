@@ -3,7 +3,7 @@ title: PayPal ఏర్పాటు ಮಾಡడం
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal గేట్‌వేను సెటప్ చేయడం (v2) {#setting-up-the-paypal-gateway-v2}
+# PayPal గేట్‌వేను సెటప్ చేయడం (v2)
 
 _**ముఖ్య గమనిక: ఈ వ్యాసం Ultimate Multisite వెర్షన్ 2.x గురించి.**_
 

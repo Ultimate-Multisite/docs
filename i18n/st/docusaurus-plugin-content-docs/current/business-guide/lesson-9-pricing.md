@@ -3,7 +3,7 @@ title: 'Thuto ea 9: Ho beha litheko bakeng sa phaello'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Thuto 9: Ditheko bakeng sa Phaello {#lesson-9-pricing-for-profit}
+# Thuto 9: Ditheko bakeng sa Phaello
 
 Thutong ya 5 re behile ditheko tsa pele bakeng sa merero ya FitSite. Jwale re ntlafatsa leano la ditheko ka mekgwa e eketsang lekeno, e kgothalletsang dintlafatso, mme e fokotsa ho tlohela tshebeletso.
 

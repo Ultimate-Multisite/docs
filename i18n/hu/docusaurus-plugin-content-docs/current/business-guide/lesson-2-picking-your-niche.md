@@ -3,7 +3,7 @@ title: 'Összhang 2: Niszájuk kiválasztása'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# 2. Bölüm: A Niche Kiválasztása {#lesson-2-picking-your-niche}
+# 2. Bölüm: A Niche Kiválasztása
 
 Az 1. bölümde megértettük, hogy a niche (szegmens) miért jobb, mint az általános megközelítés. Most pedig Önnek kell kiválasztania a sajátját. Ez a rész egy keretrendszert ad Önnek, amellyel megtalálja és validálja egy niche-t, mielőtt időt és erőforrásokat fektetne bele.
 

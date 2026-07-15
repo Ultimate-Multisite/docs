@@ -4,7 +4,7 @@ title: Sía - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Sía: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Sía: wu_light_ajax_allowed_hooks
 
 Af öryggisástæðum takmörkum við fjölda aðgerða sem hægt er að tengjast með hooks. Þessi sía gerir forriturum kleift að stækka þann lista ef þörf krefur.
 

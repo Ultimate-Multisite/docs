@@ -3,7 +3,7 @@ title: 多站點設置嚮導
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# 多站網路設定精靈 {#multisite-setup-wizard}
+# 多站網路設定精靈
 
 Ultimate Multisite 內建一個設定精靈，可自動將標準的 WordPress 安裝轉換為 WordPress 多站網路。這讓您不需要手動編輯 `wp-config.php` 或執行資料庫指令。
 

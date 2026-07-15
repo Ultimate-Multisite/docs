@@ -3,7 +3,7 @@ title: Eklenti Sunrise Dosya Yükleyici
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise Dosya Yükleyici {#addon-sunrise-file-loader}
+# Addon Sunrise Dosya Yükleyici
 
 Ultimate Multisite 2.8.0, add-onlar ve özel MU-plugin entegrasyonları için bir sunrise uzantı yükleyicisi ekler. Bu yükleyici, `wp-content/sunrise.php` dosyasını düzenlemeden, WordPress'in sunrise başlangıç (bootstrapping) aşamasında çalışması gereken entegrasyonlar için kullanılır.
 

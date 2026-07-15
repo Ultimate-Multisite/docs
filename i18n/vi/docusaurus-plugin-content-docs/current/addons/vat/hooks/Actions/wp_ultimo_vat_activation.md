@@ -4,7 +4,7 @@ title: Hành động - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Action: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Action: wp_ultimo_vat_activation
 
 Cho phép các phần khác của plugin gắn các quy trình (routine) của chúng khi kích hoạt (activation).
 

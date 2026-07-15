@@ -3,7 +3,7 @@ title: Dilysu Cyferbyniad y Palet
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Dilysu Cyferbyniad Palet {#validate-palette-contrast}
+# Dilysu Cyferbyniad Palet
 
 Mae’r gallu **Dilysu Cyferbyniad Palet** yn gwirio parau lliw yn eich palet dylunio am gydymffurfiaeth â WCAG (Web Content Accessibility Guidelines) cyn eu cymhwyso i’ch thema.
 

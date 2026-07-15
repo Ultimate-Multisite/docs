@@ -3,7 +3,7 @@ title: Amakhono Okuphatha ama-Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Amakhono Okuphatha Ama-plugin {#plugin-management-abilities}
+# Amakhono Okuphatha Ama-plugin
 
 Gratis AI Agent v1.5.0 iza **namakhono angu-7 okuphatha ama-plugin** umsizi we-AI angawasebenzisa phakathi nengxoxo. Lawa makhono ahlinzeka ngokulawula kohlelo ama-plugin e-WordPress afakwe nge-[Uhlelo Lokwakha Ama-plugin ne-Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

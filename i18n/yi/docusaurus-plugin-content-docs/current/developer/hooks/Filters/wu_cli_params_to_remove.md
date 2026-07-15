@@ -4,7 +4,7 @@ title: פֿילטער - wu_cli_params_to_remove
 sidebar_label: wu_cli_params_to_remove
 _i18n_hash: a8c5fd0763e8c7dbbdd4ce507bfb8538
 ---
-# פֿילטער: wu_cli_params_to_remove {#filter-wucliparamstoremove}
+# פֿילטער: wu_cli_params_to_remove
 
 מאַכט אויס נישט־געוואונטשענע פּאַראַמעטערס.
 

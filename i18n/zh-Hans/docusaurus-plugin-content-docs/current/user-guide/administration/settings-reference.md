@@ -3,7 +3,7 @@ title: 设置参考
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# 设置参考 {#settings-reference}
+# 设置参考
 
 本页跟踪会影响日常管理以及 Ultimate Multisite 中近期行为变更的设置。
 

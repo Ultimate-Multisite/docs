@@ -3,7 +3,7 @@ title: Hoe om 'n Abonnement te Kanselleer
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hoe kan ek my lidmaatskap kanselleer? {#how-can-i-cancel-my-subscription}
+# Hoe kan ek my lidmaatskap kanselleer?
 
 As jy 'n Ultimate Multisite-lisensie het, kan jy die hernuwing enige tyd kanselleer wat jy wil. Volg net die stappe hieronder:
 

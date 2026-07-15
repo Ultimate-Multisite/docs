@@ -3,7 +3,7 @@ title: Notae Editio
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note de Sortie {#release-notes}
+# Note de Sortie
 
 ## Versio 2.13.0 — Liberata il 2026-06-05 {#version-2130--released-on-2026-06-05}
 

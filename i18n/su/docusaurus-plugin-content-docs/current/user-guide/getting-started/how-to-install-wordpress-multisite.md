@@ -3,7 +3,7 @@ title: Kumaha cara nginstal WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kumaha Cara Pasang WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kumaha Cara Pasang WordPress Multisite?
 
 WordPress Multisite membolehkeun anjeun ngabentuk jaringan situs dina hiji instalasi. Ieu fitur anu aya di jero, tapi biasana teu aktif.
 
@@ -61,7 +61,7 @@ Dan kode ini, juga disediakan oleh WordPress, ke file _**.htaccess**_ kamu:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# tambahkan garis miring di akhir /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# tambahkan garis miring di akhir /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

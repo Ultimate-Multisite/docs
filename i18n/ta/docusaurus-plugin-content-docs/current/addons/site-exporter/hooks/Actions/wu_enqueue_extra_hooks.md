@@ -4,7 +4,7 @@ title: செயல்பாடு - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# செயல்பாடு: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# செயல்பாடு: wu_enqueue_extra_hooks
 
 Plugin உருவாக்குநர்கள் கூடுதல் hooks-களைச் சேர்க்க இது அனுமதிக்கிறது.
 

@@ -3,7 +3,7 @@ title: Зууны шилжилтийн баталгаажуулалт
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Хариулалт хийх үеийн баталгаажуулалт (Sovereign Migration Verification) {#sovereign-migration-verification}
+# Хариулалт хийх үеийн баталгаажуулалт (Sovereign Migration Verification)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 нь өөрийн тусгай талбарын (sovereign tenant) шилжилт хийхэд WP-CLI-ийн баталгаажуулалт командыг агуулдаг. Таны талбар шилжих, SSO-той зочилж буй эсвэл тусгаар байрласан суулгалт хийх үед хүлээгдэж байгаагаас өөр хандлага гарвал эдгээрийг ашиглана уу.
 

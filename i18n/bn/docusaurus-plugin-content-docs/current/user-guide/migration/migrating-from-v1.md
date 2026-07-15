@@ -3,7 +3,7 @@ title: V1 থেকে মাইগ্রেট করা
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 থেকে মাইগ্রেশন {#migrating-from-v1}
+# V1 থেকে মাইগ্রেশন
 
 ## Ultimate Multisite তার মূল 1.x সিরিজ থেকে 2.x সিরিজে আপগ্রেড হয়েছে। {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

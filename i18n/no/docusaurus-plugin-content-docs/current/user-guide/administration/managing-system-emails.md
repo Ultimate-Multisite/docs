@@ -3,7 +3,7 @@ title: Administrering av system-e-poster
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Administrere system-e-poster {#managing-system-emails}
+# Administrere system-e-poster
 
 Ultimate Multisite sender ulike system-e-poster for hendelser som registreringsbekreftelser, betalingskvitteringer og medlemskapsendringer. Du kan tilpasse disse e-postmalene slik at de matcher merkevaren din.
 

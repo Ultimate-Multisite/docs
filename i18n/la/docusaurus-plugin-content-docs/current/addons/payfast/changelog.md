@@ -3,7 +3,7 @@ title: PayFast Acta mutationum
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast Index Mutationum {#payfast-changelog}
+# PayFast Index Mutationum
 
 Versio: 1.0.2 - Edita die 2025-09-28
 

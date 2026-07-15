@@ -4,7 +4,7 @@ title: Aksyon - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Aksyon: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Aksyon: wu_page_enqueue_scripts
 
 Ajoute yon aksyon pèsonalize isit la pou nou gen yon kote pou mete scripts ak styles nan keu jan sa nesesè\ epi asire yo chaje sèlman sou bon paj yo
 

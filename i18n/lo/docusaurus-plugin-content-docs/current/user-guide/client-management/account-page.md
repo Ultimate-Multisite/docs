@@ -3,7 +3,7 @@ title: ໜ້າບັນຊີລູກຄ້າ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# หน้าบัญชีลูกค้าของคุณ (v2) {#your-clients-account-page-v2}
+# หน้าบัญชีลูกค้าของคุณ (v2)
 
 _**ข้อควรระวัง: บทความนี้อ้างถึง Ultimate Multisite เวอร์ชัน 2.x.**_
 

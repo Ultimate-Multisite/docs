@@ -3,7 +3,7 @@ title: Plano لاءِ شيئربلنڪس جو انتظام
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# پلانز لاءِ شیئر ایبل لنکس سنڀالڻ {#managing-shareable-links-for-plans}
+# پلانز لاءِ شیئر ایبل لنکس سنڀالڻ
 
 Ultimate Multisite توهان کي پنهنجي ڪلائين سان پلان لينڪس direktly شيئر ڪرڻ جو چوڻ ڏئي ٿو. ان لاءِ، پنهنجي ڪنهن به پلان جي edit pages تي وڃو ۽ _Click to copy the Shareable Link_ بٽون تي ڪلڪ ڪريو.
 

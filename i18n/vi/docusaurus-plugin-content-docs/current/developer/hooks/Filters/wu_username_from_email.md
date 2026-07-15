@@ -4,7 +4,7 @@ title: Bộ lọc - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Bộ lọc: wu_username_from_email {#filter-wuusernamefromemail}
+# Bộ lọc: wu_username_from_email
 
 Bộ lọc này dùng để xác định tên người dùng (username) cho khách hàng mới.
 

@@ -4,7 +4,7 @@ title: الإجراء - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# الإجراء: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
+# الإجراء: wu_captcha_integrations_init
 
 يتم إطلاقه بعد تهيئة جميع التكاملات.
 

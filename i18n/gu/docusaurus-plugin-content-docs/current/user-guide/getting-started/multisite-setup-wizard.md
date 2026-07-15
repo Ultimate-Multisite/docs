@@ -3,7 +3,7 @@ title: મલ્ટિસાઇટ સેટઅપ વિઝાર્ડ
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite સેટઅપ વિઝાર્ડ {#multisite-setup-wizard}
+# Multisite સેટઅપ વિઝાર્ડ
 
 Ultimate Multisite માં એક બિલ્ટ-ઇન વિઝાર્ડ છે જે સ્ટાન્ડર્ડ WordPress ઇન્સ્ટોલેશનને આપોઆપ WordPress Multisite નેટવર્કમાં બદલી નાખે છે. આનાથી તમારે `wp-config.php` ને મેન્યુઅલી એડિટ કરવાની કે database commands ચલાવવાની જરૂર રહેતી નથી.
 

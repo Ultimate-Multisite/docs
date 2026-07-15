@@ -3,7 +3,7 @@ title: Uzliekšanās termiņš un vietnes bloku
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Uzstāvēšanu un vietnes bloku {#membership-expiration-and-site-blocking}
+# Uzstāvēšanu un vietnes bloku
 
 Šis ceļvedis iepina, kā Ultimate Multisite strādā ar pieejamības beigām, izmēģinājumu beigām un frontenda vietņu bloku. Tas apraksta pieejamības ciklu no aktīva līdz beigtajam, iestatījumus, kas kontrolē, vai vietnes ir bloku, un to pārbaudes, ko jāveic, ja vietnes paliek pieejamas pēc pieejamības beigām.
 

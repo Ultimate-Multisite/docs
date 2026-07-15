@@ -4,7 +4,7 @@ title: Ação - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Ação: wu_page_added {#action-wupageadded}
+# Ação: wu_page_added
 
 Permite que programadores de plugins executem ações adicionais quando páginas são registadas.
 

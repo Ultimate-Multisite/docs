@@ -3,7 +3,7 @@ title: 'Les 4: Bou Niche Templates'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Les 4: Die Bou van Nis-Templates {#lesson-4-building-niche-templates}
+# Les 4: Die Bou van Nis-Templates
 
 Templates is die kern van jou nis-waardeproposisie. 'n Eienaar van 'n fiksheidsstudio wat aanmeld en 'n webwerf sien wat reeds soos 'n fiksheidswebwerf lyk – met klasroosters, afrigterprofiele en die regte beeldmateriaal – is baie waarskynliker om te bly as iemand wat 'n blou sketsbord sien.
 

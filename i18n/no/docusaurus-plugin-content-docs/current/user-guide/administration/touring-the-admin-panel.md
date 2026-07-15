@@ -3,7 +3,7 @@ title: Omvisning i administrasjonspanelet
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Omvisning i adminpanelet {#touring-the-admin-panel}
+# Omvisning i adminpanelet
 
 Ultimate Multisite har som mål å være så enkelt og selvforklarende som mulig, men med et så kraftig verktøy kan det hjelpe med en guidet omvisning. La oss gå gjennom adminsidene for å hjelpe deg å komme i gang.
 

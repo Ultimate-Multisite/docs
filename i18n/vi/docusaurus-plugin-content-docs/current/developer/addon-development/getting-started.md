@@ -3,7 +3,7 @@ title: Bắt đầu phát triển tiện ích bổ sung
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Phát triển tiện ích bổ sung {#addon-development}
+# Phát triển tiện ích bổ sung
 
 ## Cấu trúc tiện ích bổ sung {#addon-structure}
 

@@ -3,7 +3,7 @@ title: د له V1 څخه د منتقلولو
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# له V1 څخه تر سhto (V2) ته گذار کول {#migrating-from-v1}
+# له V1 څخه تر سhto (V2) ته گذار کول
 
 ## Ultimate Multisite د اصلي 1.x سریز پرېښود او بهدایي 2.x سریزه ته بدل شوی دی. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

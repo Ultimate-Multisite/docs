@@ -3,7 +3,7 @@ title: Mailster ບັນທຶກການປ່ຽນແປງ
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster ບັນທຶກການປ່ຽນແປງ {#mailster-changelog}
+# Mailster ບັນທຶກການປ່ຽນແປງ
 
 ### 1.0.0 {#100}
 * ການປ່ອຍຄັ້ງທຳອິດ

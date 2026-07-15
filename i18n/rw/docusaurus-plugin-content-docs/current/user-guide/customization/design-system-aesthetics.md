@@ -3,7 +3,7 @@ title: Ubwumvikane bw'Uburyo bwo gukora Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kỹ năng Thẩm mỹ Hệ thống Thiết kế (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
+# Kỹ năng Thẩm mỹ Hệ thống Thiết kế (Design System Aesthetics Skill)
 
 **Kỹ năng Thẩm mỹ Hệ thống Thiết kế** là một phương pháp hướng dẫn để bạn hoàn thiện bản sắc hình ảnh của trang web mình. Nó giúp bạn đưa ra những quyết định nhất quán về kiểu chữ, màu sắc, khoảng cách và các giá trị chuyển động (motion tokens) định hình hệ thống thiết kế của bạn.
 

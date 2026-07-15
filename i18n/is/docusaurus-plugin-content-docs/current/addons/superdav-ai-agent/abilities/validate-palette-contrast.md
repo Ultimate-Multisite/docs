@@ -3,7 +3,7 @@ title: Staðfesta birtuskil litaspjalds
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Staðfesta birtuskil litatöflu {#validate-palette-contrast}
+# Staðfesta birtuskil litatöflu
 
 Getan **Validate Palette Contrast** athugar litapör í hönnunarlitatöflunni þinni með tilliti til samræmis við WCAG (Web Content Accessibility Guidelines) áður en þau eru notuð í þemað þitt.
 

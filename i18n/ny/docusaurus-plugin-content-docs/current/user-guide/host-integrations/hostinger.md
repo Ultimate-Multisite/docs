@@ -3,7 +3,7 @@ title: Kuthandiza kwa Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Usumbu wa Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Usumbu wa Hostinger (hPanel)
 
 ## Umuvuu {#overview}
 

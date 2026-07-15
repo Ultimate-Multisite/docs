@@ -3,7 +3,7 @@ title: 'Thuto 11: Ho fumana bareki'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Thuto 11: Ho Fumana Bareki {#lesson-11-finding-customers}
+# Thuto 11: Ho Fumana Bareki
 
 Sethala se setle se se nang bareki ke boithabiso feela. Thuto ena e akaretsa kamoo o ka fumanang bareki lekaleng le itseng la niche -- maano a sebetsang ka ho khetheha hobane o tsepamisitse maikutlo indastering e le nngwe.
 

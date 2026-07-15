@@ -3,7 +3,7 @@ title: Comprendre el Panell de Control
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Comprendre el Panell de Control d'Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Comprendre el Panell de Control d'Ultimate Multisite
 
 Abans de mergar-nos en opcions de configuració més avançades i els aspectes operacionals d'Ultimate Multisite, veiem el panell de control.
 

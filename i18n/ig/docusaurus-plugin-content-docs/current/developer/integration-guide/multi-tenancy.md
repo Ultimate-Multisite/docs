@@ -3,7 +3,7 @@ title: Njikọta Ọtụtụ Ndị Nwe Ojiji
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Njikọ Multi-Tenancy {#multi-tenancy-integration}
+# Njikọ Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 na-agbanwe ọtụtụ ebe njikọ maka ndị tenant nweere onwe ha, nyocha mbufe, na akpaaka nke usoro ndụ tenant.
 

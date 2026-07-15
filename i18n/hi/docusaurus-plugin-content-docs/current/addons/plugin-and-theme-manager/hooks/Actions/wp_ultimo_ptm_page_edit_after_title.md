@@ -4,7 +4,7 @@ title: Action - wp_ultimo_ptm_page_edit_after_title
 sidebar_label: wp_ultimo_ptm_page_edit_after_title
 _i18n_hash: 9026e26b91c7a308a9385127e7b834a4
 ---
-# Action: wp_ultimo_ptm_page_edit_after_title {#action-wpultimoptmpageeditaftertitle}
+# Action: wp_ultimo_ptm_page_edit_after_title
 
 प्लगइन डेवलपर्स को पेज एडिट करने के लिए अतिरिक्त बटन जोड़ने की अनुमति देता है।
 

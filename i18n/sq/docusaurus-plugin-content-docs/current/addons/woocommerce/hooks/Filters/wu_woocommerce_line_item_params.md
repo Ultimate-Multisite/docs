@@ -4,7 +4,7 @@ title: Filtër - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 Filtron parametrat e përdorur për të krijuar artikujt e rreshtit në Shportën WooCommerce, përpara se klienti të ridrejtohet te checkout-i WooCommerce.
 

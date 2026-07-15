@@ -3,7 +3,7 @@ title: Keterampilan Sadar Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Keterampilan Sadar Tema {#theme-aware-skills}
+# Keterampilan Sadar Tema
 
 Superdav AI Agent v1.10.0 ngirim empat keterampilan bawaan baru yang sadar tema (theme-aware) yang otomatis menyesuaikan diri dengan tema WordPress yang sedang aktif di situs kamu. Keterampilan ini memberikan panduan dan kemampuan khusus yang disesuaikan dengan arsitektur dan fitur tema kamu.
 

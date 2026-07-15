@@ -3,7 +3,7 @@ title: Referensi Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referensi Hooks {#hooks-reference}
+# Referensi Hooks
 
 Dokumentasi yang dibuat otomatis untuk semua **59 aksi** dan **118 filter** di Ultimate Multisite.
 

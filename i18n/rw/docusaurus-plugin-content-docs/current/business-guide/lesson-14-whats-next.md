@@ -3,7 +3,7 @@ title: 'Isomo rya 14: Ibikurikiraho'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Isomo rya 14: Ibikurikiraho {#lesson-14-what-comes-next}
+# Isomo rya 14: Ibikurikiraho
 
 Wubatse urubuga rwihariye rw'isoko runaka uhereye ku busa. FitSite iri gukora, ikorera studio za fitness, kandi yinjiza amafaranga agaruka buri gihe. Iri somo rya nyuma rireba aho wakwerekeza uhereye aha.
 

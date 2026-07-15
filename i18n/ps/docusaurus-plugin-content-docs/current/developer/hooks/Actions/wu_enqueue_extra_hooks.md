@@ -4,7 +4,7 @@ title: عمل - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# عمل: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# عمل: wu_enqueue_extra_hooks
 
 د plugin جوړوونکو ته اجازه ورکړئ چې اضافي hooks ورزیات کړي
 

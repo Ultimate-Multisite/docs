@@ -3,7 +3,7 @@ title: Integrationsguide
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrationsguide {#integration-guide}
+# Integrationsguide
 
 Den här guiden täcker vanliga integrationsmönster med Ultimate Multisite, inklusive att ansluta till externa tjänster, bygga anpassade betalningsgateways och hantera webhooks.
 

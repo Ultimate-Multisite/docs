@@ -4,7 +4,7 @@ title: පෙරහන - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# පෙරහන: wu_sso_url {#filter-wussourl}
+# පෙරහන: wu_sso_url
 
 හරස්-වසම් පාරිභෝගික ක්‍රියා සඳහා ආපසු ලබා දීමට පෙර සාදන ලද SSO URLs පෙරහන් කරයි.
 

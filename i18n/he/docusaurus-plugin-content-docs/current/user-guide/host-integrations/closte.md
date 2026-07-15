@@ -3,7 +3,7 @@ title: שילוב Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# אינטגרציה עם Closte {#closte-integration}
+# אינטגרציה עם Closte
 
 ## סקירה כללית {#overview}
 Closte היא פלטפורמת אחסון WordPress מנוהלת, הבנויה על תשתית Google Cloud. אינטגרציה זו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite לבין Closte.

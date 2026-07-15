@@ -3,7 +3,7 @@ title: Yakha ishishini lewebhusayithi yecandelo elikhethekileyo
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Yakha ishishini lewebhusayithi eligxile kwicandelo elikhethekileyo nge-Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Yakha ishishini lewebhusayithi eligxile kwicandelo elikhethekileyo nge-Ultimate Multisite
 
 Uninzi lwabantu abazama ukuthengisa iiwebhusayithi bakhuphisana ngexabiso no-Wix, Squarespace, kunye namawaka eefreelancer. Bayaphulukana. Abo baphumelelayo bakhetha abaphulaphuli abathile, bakhe isisombululo esilungiselelwe abo baphulaphuli, baze babize imali ngexabiso abalizisayo.
 

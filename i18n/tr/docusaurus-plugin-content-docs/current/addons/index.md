@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Eklentileri {#ultimate-multisite-addons}
+# Ultimate Multisite Eklentileri
 
 Eklentiler, Ultimate Multisite'ı ek özellikler ve entegrasyonlarla genişletir. Çoğu eklenti ücretlidir ve [ultimatemultisite.com](https://ultimatemultisite.com)'dan satın alınabilir.
 

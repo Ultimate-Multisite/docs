@@ -3,7 +3,7 @@ title: Daim ntawv teev kev hloov tshiab ntawm Tus Muag Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Keeb kwm hloov tshiab rau Domain Seller {#domain-seller-changelog}
+# Keeb kwm hloov tshiab rau Domain Seller
 
 Version 1.3.0 - Tso tawm rau 2026-06-02
 - Tshiab: Ntxiv lus ceeb toom hauv network-admin thaum HostAfrica reseller cov nyiaj tshuav qis dhau lawm

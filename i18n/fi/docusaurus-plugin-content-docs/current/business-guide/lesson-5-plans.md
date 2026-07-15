@@ -3,7 +3,7 @@ title: 'Oppitunti 5: Suunnitelmiesi suunnittelu'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Oppitunti 5: Suunnitelmiesi suunnittelu {#lesson-5-designing-your-plans}
+# Oppitunti 5: Suunnitelmiesi suunnittelu
 
 Suunnitelmatasosi eivät ole vain hinnoittelutasoja -- ne heijastavat sitä, miten markkinarakosi asiakkaat todellisuudessa toimivat. Tässä oppitunnissa suunnittelet tuotetasot, jotka vastaavat kuntoilualan yritysten todellisia tarpeita eri vaiheissa.
 

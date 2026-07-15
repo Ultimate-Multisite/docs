@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Mabadiliko ya Captcha {#captcha-changelog}
+# Mabadiliko ya Captcha
 
 Toleo: 1.5.0 - Tolewa tarehe 2026-05-22
 * Jipya: Kizuizi cha kiwango cha kasi (rate limiter) cha hali ya dharura — kinapanga kila GET na POST kwenye maeneo yaliyolindwa na captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) na kujibu kwa HTTP 429, kichwa cha `Retry-After`, na usingizi wa kubadilisha kasi (tarpit sleep) uliopangwa (sekunde 1–5, kwa kiwango cha juu cha sekunde 15).

@@ -4,7 +4,7 @@ title: Pansala - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices {#filter-wuadminnotices}
+# Filter: wu_admin_notices
 
 Payagan ang mga developer na salain ang mga admin notice na idinagdag ng Ultimate Multisite.
 

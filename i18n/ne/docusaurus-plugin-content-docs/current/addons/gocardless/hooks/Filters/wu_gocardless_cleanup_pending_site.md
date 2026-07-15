@@ -4,7 +4,7 @@ title: फिल्टर - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filter: wu_gocardless_cleanup_pending_site
 
 रद्द गरिएको GoCardless सदस्यताका लागि अनाथ पेन्डिङ साइट मेटाउनुअघि चल्छ।
 

@@ -4,7 +4,7 @@ title: فلټر - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# فلټر: wu_current_set_site {#filter-wucurrentsetsite}
+# فلټر: wu_current_set_site
 
 پراختیاکوونکو ته اجازه ورکوي چې تلواله چلند بدل کړي او اوسنۍ پاڼه په بېله توګه وټاکي.
 

@@ -4,7 +4,7 @@ title: Gnìomh - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# Gnìomh: wu_page_before_render {#action-wupagebeforerender}
+# Gnìomh: wu_page_before_render
 
 Thèid a chur an gnìomh mus tèid duilleag a renderadh.
 

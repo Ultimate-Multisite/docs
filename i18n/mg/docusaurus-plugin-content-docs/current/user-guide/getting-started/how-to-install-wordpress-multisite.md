@@ -3,7 +3,7 @@ title: Ahoana ny fametrahana WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ahoana ny fametrahana WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Ahoana ny fametrahana WordPress Multisite?
 
 Ny WordPress Multisite dia ahafahanao manana tambajotra (network) an'ireo tranokala maromaro ao anaty fampiasana iray. Ity dia tena azo atao fa tsy mandeha ho aktiva amin'ny fahataperana izany.
 

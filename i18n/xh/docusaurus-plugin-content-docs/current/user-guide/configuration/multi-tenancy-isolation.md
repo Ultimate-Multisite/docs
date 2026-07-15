@@ -3,7 +3,7 @@ title: Ukwahlukaniswa kwabaqeshi abaninzi
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Ukwahlulwa kwe-Multi-Tenancy {#multi-tenancy-isolation}
+# Ukwahlulwa kwe-Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ixhasa ukwahlulwa kwedatabase kunye nefayile-system ngokwe-subsite nganye kubahlali abazimeleyo. Oku kugcina idatha yomhlali yahlukene ngelixa kugcinwa ulungiselelo, intlawulo, nolawulo kwinqanaba lenethiwekhi.
 

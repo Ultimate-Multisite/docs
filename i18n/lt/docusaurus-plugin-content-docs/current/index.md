@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite dokumentacija {#ultimate-multisite-documentation}
+# Ultimate Multisite dokumentacija
 
 Sveiki atvykę į Ultimate Multisite dokumentaciją. Ultimate Multisite paverčia WordPress Multisite visaverte Website as a Service (WaaS) platforma.
 
@@ -18,7 +18,7 @@ Viskas, ko reikia jūsų WaaS platformai įdiegti, sukonfigūruoti ir valdyti. A
 
 Techninė nuoroda kūrėjams, kuriantiems su Ultimate Multisite. Apima hooks nuorodą, REST API dokumentaciją ir addon kūrimo vadovus.
 
-### [Addons](/addons) {#addons}
+### [Priedai](/addons) {#addons}
 
 Dokumentacija mokamiems addon plugins, kurie išplečia Ultimate Multisite papildomomis funkcijomis, tokiomis kaip WooCommerce integracija, analitika, domenų pardavimas ir daugiau.
 

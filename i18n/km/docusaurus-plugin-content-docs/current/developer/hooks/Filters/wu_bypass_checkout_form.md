@@ -4,7 +4,7 @@ title: តម្រង - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filter: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filter: wu_bypass_checkout_form
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍រំលងលទ្ធផល ហើយកំណត់លទ្ធផលថ្មីមួយ
 

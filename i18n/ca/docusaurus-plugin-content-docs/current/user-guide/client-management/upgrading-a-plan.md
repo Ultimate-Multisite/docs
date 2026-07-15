@@ -3,7 +3,7 @@ title: Actualització de pla
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Actualitzar un pla (v2) {#upgrading-a-plan-v2}
+# Actualitzar un pla (v2)
 
 _**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
 

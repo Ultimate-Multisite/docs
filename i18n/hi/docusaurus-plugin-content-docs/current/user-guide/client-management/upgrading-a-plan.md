@@ -3,7 +3,7 @@ title: प्लान अपग्रेड करना
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# योजना अपग्रेड करना (v2) {#upgrading-a-plan-v2}
+# योजना अपग्रेड करना (v2)
 
 _**महत्वपूर्ण नोट: यह लेख Ultimate Multisite संस्करण 2.x से संबंधित है।**_
 

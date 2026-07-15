@@ -3,7 +3,7 @@ title: Mtiririko wa Usajili
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Mtiririko wa Usajili (v2) {#the-registration-flow-v2}
+# Mtiririko wa Usajili (v2)
 
 _**KUMBUKA MUHIMU: Makala hii inarejelea Ultimate Multisite toleo la 2.x.**_
 

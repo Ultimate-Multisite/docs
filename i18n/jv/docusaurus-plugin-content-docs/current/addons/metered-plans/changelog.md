@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Paket Meteran
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Cathetan Owah-owahan Plan Miturut Panggunaan {#metered-plans-changelog}
+# Cathetan Owah-owahan Plan Miturut Panggunaan
 
 Versi 1.1.0 - Dirilis tanggal 2026-05-05
 - Anyar: tagihan AI token kanggo subsite multisite — lacak lan tagih panggunaan AI token ing sakabehing situs pelanggan nganggo tarif saben-token sing bisa dikonfigurasi

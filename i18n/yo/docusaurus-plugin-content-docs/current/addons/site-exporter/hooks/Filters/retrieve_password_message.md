@@ -4,7 +4,7 @@ title: Àlẹmọ - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Àlẹmọ: retrieve_password_message {#filter-retrievepasswordmessage}
+# Àlẹmọ: retrieve_password_message
 
 Ó ń ṣe àlẹmọ ara ìfiránṣẹ́ imeeli ìtúntò ọ̀rọ̀ aṣínà.
 

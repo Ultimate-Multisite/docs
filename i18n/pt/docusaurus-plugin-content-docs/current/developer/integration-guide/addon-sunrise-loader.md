@@ -3,7 +3,7 @@ title: Carregador de ficheiros Sunrise do complemento
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Carregador de ficheiros Sunrise de addon {#addon-sunrise-file-loader}
+# Carregador de ficheiros Sunrise de addon
 
 Ultimate Multisite 2.8.0 adiciona um carregador de extensões sunrise para add-ons e integrações personalizadas de MU-plugin que precisam de ser executadas durante o arranque sunrise do WordPress sem editar o ficheiro gerado `wp-content/sunrise.php`.
 

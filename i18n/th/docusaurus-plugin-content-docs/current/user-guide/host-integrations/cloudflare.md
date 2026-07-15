@@ -3,7 +3,7 @@ title: การผสานการทำงานกับ Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# การผสานรวม Cloudflare {#cloudflare-integration}
+# การผสานรวม Cloudflare
 
 ## ภาพรวม {#overview}
 Cloudflare เป็นผู้ให้บริการเครือข่ายส่งมอบเนื้อหา (CDN) และความปลอดภัยชั้นนำที่ช่วยปกป้องและเร่งความเร็วเว็บไซต์ การผสานรวมนี้ช่วยให้จัดการโดเมนอัตโนมัติระหว่าง Ultimate Multisite และ Cloudflare โดยเฉพาะสำหรับการติดตั้ง multisite แบบโดเมนย่อย

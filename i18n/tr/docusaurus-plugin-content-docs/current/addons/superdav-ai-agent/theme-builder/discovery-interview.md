@@ -3,7 +3,7 @@ title: Keşif Görüşmesi
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Keşif Görüşmesi {#discovery-interview}
+# Keşif Görüşmesi
 
 **Keşif Görüşmesi**, Theme Builder'ın tasarım sürecindeki ilk adımdır. Kişiselleştirilmiş bir tema oluşturmak için siteniz, işiniz ve tasarım tercihlerinize dair bilgi toplar.
 

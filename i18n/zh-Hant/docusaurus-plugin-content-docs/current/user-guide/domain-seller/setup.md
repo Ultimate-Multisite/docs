@@ -3,7 +3,7 @@ title: 設定與提供者組態
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller：設定與供應商配置 {#domain-seller-setup-and-provider-configuration}
+# Domain Seller：設定與供應商配置
 
 Domain Seller addon 隨附引導式設定精靈，會帶你完成每個必要步驟。本頁說明精靈流程，以及之後如何配置或重新配置供應商。
 

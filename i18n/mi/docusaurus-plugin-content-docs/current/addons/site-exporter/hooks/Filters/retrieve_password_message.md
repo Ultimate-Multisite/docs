@@ -4,7 +4,7 @@ title: Tātari - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Tātari: retrieve_password_message {#filter-retrievepasswordmessage}
+# Tātari: retrieve_password_message
 
 Ka tātari i te tinana karere o te mēra tautuhi kupuhipa.
 

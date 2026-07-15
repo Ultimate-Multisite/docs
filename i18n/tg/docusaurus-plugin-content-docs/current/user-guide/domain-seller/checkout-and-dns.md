@@ -3,7 +3,7 @@ title: Ҳатои коркард ва DNS муштариён
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Поле оформления заказа и управление DNS клиента {#checkout-field-and-customer-dns-management}
+# Поле оформления заказа и управление DNS клиента
 
 ## Поле выбора домена в оформлении заказа {#the-domain-selection-checkout-field}
 

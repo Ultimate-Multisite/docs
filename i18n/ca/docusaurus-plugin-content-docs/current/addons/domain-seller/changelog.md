@@ -3,7 +3,7 @@ title: Registre de canvis del venedor de dominis
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Registre de canvis de Domain Seller {#domain-seller-changelog}
+# Registre de canvis de Domain Seller
 
 Versió 1.3.0 - Publicada el 2026-06-02
 - Nou: S'ha afegit un avís d'administració de xarxa quan el saldo de revenedor de HostAfrica baixa massa

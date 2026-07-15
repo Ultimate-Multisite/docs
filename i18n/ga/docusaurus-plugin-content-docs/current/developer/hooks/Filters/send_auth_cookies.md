@@ -4,7 +4,7 @@ title: Scagaire - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Scagaire: send_auth_cookies {#filter-sendauthcookies}
+# Scagaire: send_auth_cookies
 
 Ligeann sé cosc a chur ar auth cookies a bheith seolta chuig an gcliant i ndáiríre.
 

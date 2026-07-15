@@ -3,7 +3,7 @@ title: Destpêkirin bi pêşxistina pêvekan
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Pêşxistina Addon {#addon-development}
+# Pêşxistina Addon
 
 ## Avahiya Addon {#addon-structure}
 

@@ -3,7 +3,7 @@ title: 테마 인식 스킬
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# 테마별 스킬 {#theme-aware-skills}
+# 테마별 스킬
 
 Superdav AI Agent v1.10.0에는 현재 사용 중인 WordPress 테마에 자동으로 맞춰지는 네 가지 새로운 테마별 내장 스킬이 탑재되었습니다. 이 스킬들은 테마의 구조와 기능에 맞춰진 전문적인 가이드와 기능을 제공합니다.
 

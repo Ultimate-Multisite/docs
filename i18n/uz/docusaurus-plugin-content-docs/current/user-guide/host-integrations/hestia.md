@@ -3,7 +3,7 @@ title: Hestia Kontrol Paneli Integratsiyasi
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Integratsiyasi {#hestia-control-panel-integration}
+# Hestia Control Panel Integratsiyasi
 
 Bu qo'llanma Ultimate Multisite Hestia integratsiyasini qanday sozlashni tushuntiradi, shunda sizning tarmoqdagi xaritalangan domenlar avtomatik ravishda Hestia'da Veb Domen Aliqlari sifatida qo'shiladi (va olib tashlanadi).
 

@@ -4,7 +4,7 @@ title: Filtrs - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# Filtrs: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
+# Filtrs: wp_should_rescue_orphaned_sites
 
 Filtrē, vai bāreņvietnes ir jāglābj.
 

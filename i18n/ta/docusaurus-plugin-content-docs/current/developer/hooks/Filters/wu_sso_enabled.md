@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 வேறு டொமைன்களில் ஒரே நேரத்தில் உள்நுழைவதற்கான (cross-domain single-sign-on) வசதியை இயக்கவும் அல்லது அணைக்கவும் இது உதவுகிறது.
 

@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# Filter: wu_membership_renewal_expiration_date
 
 यह फ़िल्टर गणना की गई समाप्ति तिथि (expiration date) को नवीनीकरण (renewal) के बाद सेट करने के लिए फ़िल्टर करता है।
 

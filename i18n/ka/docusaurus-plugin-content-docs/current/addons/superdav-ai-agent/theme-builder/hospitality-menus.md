@@ -3,7 +3,7 @@ title: მასპინძლობის მენიუები
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality მენიუები {#hospitality-menus}
+# Hospitality მენიუები
 
 **Hospitality მენიუები** ფუნქცია Theme Builder-ს საშუალებას აძლევს, შექმნას და ჩააშენოს სტრუქტურირებული საკვებისა და სასმელების მენიუს გვერდები პირდაპირ თქვენს WordPress საიტში.
 

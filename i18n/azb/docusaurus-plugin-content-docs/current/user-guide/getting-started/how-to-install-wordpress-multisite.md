@@ -3,7 +3,7 @@ title: How to Install WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite Nasıl Kurulur? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite Nasıl Kurulur?
 
 WordPress Multisite, tek bir kurulum üzerinde bir site ağı oluşturmanıza olanak tanır. Bu yerleşik bir özelliktir, ancak varsayılan olarak aktif değildir.
 
@@ -61,7 +61,7 @@ Ve WordPress tarafından sağlanan bu kodu, _**.htaccess**_ dosyanıza ekleyin:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

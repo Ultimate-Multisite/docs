@@ -3,7 +3,7 @@ title: Kuteteza Kufuna
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Kufunso kwa Intaneti (Internet Search) {#internet-search}
+# Kufunso kwa Intaneti (Internet Search)
 
 Gratis AI Agent v1.5.0 imapanga uwezo wa **Internet Search** ambao unaruhusu msaidizi wa AI kupata habari za kisasa kutoka kwenye mtandao wakati wa mazungumzo. Hii inafanywa na [Brave Search API](https://brave.com/search/api/) au [Tavily API](https://tavily.com/).
 

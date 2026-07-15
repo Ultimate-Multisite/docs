@@ -3,7 +3,7 @@ title: Eszközök és konfiguráció
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Eszközök és konfiguráció {#tools-and-configuration}
+# Eszközök és konfiguráció
 
 A Theme Builder eszközkészletet használ a WordPress oldalad elemzéséhez, megtervezéséhez és felépítéséhez. Az 1.16.0 verzióban az **sd-ai-agent/site-scrape mostantól Tier 1 eszköz**, így alapértelmezetten elérhető a Theme Builderben. A Superdav AI Agent v1.18.0 egy külön terjesztett Advanced kísérőcsomagot is bevezet megbízható fejlesztői munkafolyamatokhoz; ezek az eszközök nem részei a WordPress.org alapcsomagnak, és külön kell őket telepíteni és engedélyezni.
 

@@ -3,7 +3,7 @@ title: He aha te WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# He aha te Multisite o WordPress? {#what-is-wordpress-multisite}
+# He aha te Multisite o WordPress?
 
 I roto i te core o WordPress, he āhuatanga tino pai pēnei te 'Multisite' (Whānau Whainga), i whakatū i tō rā i 2010 i runga i te whakatū o WordPress 3.0. I tēnei wā, i pēnei i te whakamahi i āhuatanga hou me te tangihanga tika i te ao amanāhi.
 

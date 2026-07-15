@@ -4,7 +4,7 @@ title: Filter - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Szűrő: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
+# Szűrő: networks_user_is_network_admin
 
 Szűrőzi a hálózatokat, amelyek felhasználó adminja.
 

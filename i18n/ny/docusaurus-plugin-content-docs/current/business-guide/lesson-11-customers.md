@@ -3,7 +3,7 @@ title: 'Phunziro 11: Kupeza Makasitomala'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Phunziro 11: Kupeza Makasitomala {#lesson-11-finding-customers}
+# Phunziro 11: Kupeza Makasitomala
 
 Nsanja yabwino yopanda makasitomala ndi kungokhala chizolowezi. Phunziro ili likufotokoza mmene mungapezere makasitomala mu gawo lapadera la msika -- njira zomwe zimagwira ntchito makamaka chifukwa chakuti mwayang'ana pa bizinesi imodzi.
 

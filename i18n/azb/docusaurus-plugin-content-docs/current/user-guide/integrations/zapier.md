@@ -3,7 +3,7 @@ title: Zapier ایله بیرلشدیرمه
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite ایله Zapier اینتگراسیونی {#integrating-ultimate-multisite-with-zapier}
+# Ultimate Multisite ایله Zapier اینتگراسیونی
 
 مقاله‌لرین بیرین‌ده [Webhooks](webhooks.md) حاققیندا دانیشدیق و اونلارین 3rd party اویقولامالارلا اینتگراسیوندا نئجه ایشله‌نه بیله‌جه‌یینی آچیقلادیق.
 

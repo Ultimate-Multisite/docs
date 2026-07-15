@@ -3,7 +3,7 @@ title: Ihuriro ry'ibikorwa bya Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (yatangijwe muri Gratis AI Agent v1.4.0) ni moteri iha imbaraga irema ry’urubuga rw’intambwe nyinshi. Iyo usabye agent "kubaka urubuga rwa restaurant" cyangwa "gukora portfolio ifite blog", orchestrator igabanya iyo ntego rusange mo **gahunda** itunganijwe, ikavumbura plugins zikenewe kugira ngo iyuzuze, igakora buri ntambwe ku murongo, igakurikirana aho bigeze, kandi ikisubiza mu buryo bwikora iyo habaye amakosa.
 

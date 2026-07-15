@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 စာမျက်နှာများ မှတ်ပုံတင်သည့်အခါ ပလပ်အင် ဖန်တီးသူများ အပိုအလိုအလျောက် လုပ်ဆောင်မှုများ လုပ်ခိုင်းနိုင်စေရန်။
 

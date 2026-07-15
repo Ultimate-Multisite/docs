@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite qo‘shimchalari {#ultimate-multisite-addons}
+# Ultimate Multisite qo‘shimchalari
 
 Qo‘shimchalar Ultimate Multisite’ni qo‘shimcha funksiyalar va integratsiyalar bilan kengaytiradi. Aksariyat qo‘shimchalar pullik va ularni [ultimatemultisite.com](https://ultimatemultisite.com) saytidan xarid qilish mumkin.
 

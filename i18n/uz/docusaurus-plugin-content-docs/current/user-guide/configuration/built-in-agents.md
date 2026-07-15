@@ -3,7 +3,7 @@ title: Ichki o‘rnatilgan agentlar
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Ichki agentlar {#built-in-agents}
+# Ichki agentlar
 
 Gratis AI Agent v1.9.0 beshta ichki agent bilan keladi; ularning har biri muayyan vositalar to‘plami, moslashtirilgan tizim prompti va shu sohadagi keng tarqalgan vazifalarga mos boshlang‘ich takliflar bilan oldindan sozlangan. Agentlar o‘rtasida almashish yordamchi nima qila olishini va qanday javob berishini o‘zgartiradi — siz tomondan hech qanday sozlashsiz. Superdav AI Agent v1.18.0 tegishli integratsiyalar sozlanganda bu ish jarayonlariga jadvaldan xabardor vositalar, eslatma yozuvlari, tasdiqlash darvozalari va SMS bildirishnomalarini qo‘shishi mumkin.
 

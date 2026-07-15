@@ -3,7 +3,7 @@ title: Änderungsprotokoll der Sprachauswahl
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Änderungsprotokoll der Sprachauswahl {#language-selector-changelog}
+# Änderungsprotokoll der Sprachauswahl
 
 Version: 1.1.3 - Veröffentlicht am 2026-05-05
 * Korrektur: Eingabevariablen werden jetzt bereinigt und benutzerdefinierte Hook-Namen mit Präfixen versehen, um Konflikte mit Drittanbieter-Plugins zu verhindern

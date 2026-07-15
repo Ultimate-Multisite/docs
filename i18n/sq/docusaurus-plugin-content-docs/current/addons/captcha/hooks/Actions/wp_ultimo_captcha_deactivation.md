@@ -4,7 +4,7 @@ title: Veprim - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Veprimi: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Veprimi: wp_ultimo_captcha_deactivation
 
 Lejo pjesë të tjera të plugin të bashkëngjitin rutinat e tyre për çaktivizim
 

@@ -4,7 +4,7 @@ title: Дејство - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# Акција: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# Акција: wu_maybe_create_customer
 
 Им овозможува на развивачите на plugin-и да извршат дополнителни работи кога клиентот е додаден.
 

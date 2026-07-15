@@ -3,7 +3,7 @@ title: Dokumentacija za developere
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentacija za developere {#developer-documentation}
+# Dokumentacija za developere
 
 Ovaj vodič developerima pruža sve što je potrebno za integraciju s Ultimate Multisite, njegovo proširenje ili razvoj addona za njega. Ultimate Multisite pretvara WordPress Multisite mrežu u Website-as-a-Service (WaaS) platformu.
 

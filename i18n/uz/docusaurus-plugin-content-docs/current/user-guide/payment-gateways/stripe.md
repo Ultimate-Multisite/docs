@@ -3,7 +3,7 @@ title: Stripe'ni sozlash
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway'ni Sozlash (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway'ni Sozlash (v2)
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 

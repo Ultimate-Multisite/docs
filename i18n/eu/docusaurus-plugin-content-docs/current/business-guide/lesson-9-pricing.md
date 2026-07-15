@@ -3,7 +3,7 @@ title: 'Lezioa 9: Prezioa zaharrak'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ustea 9: Prezioak eta Gainara {#lesson-9-pricing-for-profit}
+# Ustea 9: Prezioak eta Gainara
 
 Eskaintza 5-ean FitSite plan-ek beste prezioak ezartu dugu. Orain, merkatuaren merkataritza estrategiak estaltzeko teknike batzuk erabilizuz, revenusak handitu, upgradeak emateko eta churn (irudiak aukeratzeko) azaltzeko.
 

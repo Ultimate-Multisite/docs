@@ -3,7 +3,7 @@ title: Gratis AI Agent Marongero
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Settings {#gratis-ai-agent-settings}
+# Gratis AI Agent Settings
 
 Chidzitiro che **Settings → Advanced** mu Gratis AI Agent chinopa kugadzirisa kwechikamu chemutungamiriri kwekubatanidzwa kwebackend. Peji rino rinotsanangura kutumira feedback, makiyi evanopa kutsvaga, kugadzwa kwesevhisi yeSuperdav inotarisirwa, zvidzoro zveGoogle Calendar, marongero eTextBee SMS, uye feature flags dzinoshanda panetwork yose.
 

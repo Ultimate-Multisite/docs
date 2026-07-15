@@ -4,7 +4,7 @@ title: 액션 - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# 액션: move_site {#action-movesite}
+# 액션: move_site
 
 새 네트워크로 사이트가 이동된 후에 발생합니다.
 

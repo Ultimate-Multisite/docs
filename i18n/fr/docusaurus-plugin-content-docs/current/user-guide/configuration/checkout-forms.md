@@ -3,7 +3,7 @@ title: Formulaires de paiement
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulaires de checkout {#checkout-forms}
+# Formulaires de checkout
 
 Les formulaires de checkout sont un moyen simple et flexible d’expérimenter différentes approches lorsque vous essayez de convertir de nouveaux clients.
 

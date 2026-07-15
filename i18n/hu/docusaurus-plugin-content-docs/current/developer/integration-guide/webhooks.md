@@ -3,7 +3,7 @@ title: Webhook kezelése
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Kezelése {#webhook-handling}
+# Webhook Kezelése
 
 Készítsen saját webhook végpontokat (endpoints), hogy külső szolgáltatásoktól érkező eseményeket fogadjon el, és szinkronizálja az adatokat az Ultimate Multisite-tal.
 

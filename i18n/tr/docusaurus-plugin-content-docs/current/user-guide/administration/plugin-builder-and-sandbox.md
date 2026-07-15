@@ -3,7 +3,7 @@ title: Eklenti Oluşturucu ve Kum Havuzu
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Oluşturucu ve Sandbox {#plugin-builder--sandbox}
+# Plugin Oluşturucu ve Sandbox
 
 Gratis AI Agent v1.5.0, **Plugin Oluşturucu ve Sandbox Sistemi**'ni tanıtıyor. Bu sistem sayesinde yapay zeka asistanı, ağınızdaki WordPress eklentilerini güvenli, izole bir sandbox ortamı üzerinden oluşturabilir, etkinleştirebilir ve yönetebilir.
 

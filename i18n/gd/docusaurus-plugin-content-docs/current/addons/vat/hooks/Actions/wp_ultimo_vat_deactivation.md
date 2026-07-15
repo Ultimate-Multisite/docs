@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Gnìomh: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Gnìomh: wp_ultimo_vat_deactivation
 
 Leig le pàirtean eile den plugan na gnàth-chùrsaichean aca airson dì-ghnìomhachadh a cheangal
 

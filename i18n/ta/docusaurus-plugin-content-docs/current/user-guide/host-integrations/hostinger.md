@@ -3,7 +3,7 @@ title: Hostinger (hPanel) ஒருங்கிணைப்பு
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) ஒருங்கிணைப்பு {#hostinger-hpanel-integration}
+# Hostinger (hPanel) ஒருங்கிணைப்பு
 
 ## கண்ணோட்டம் (Overview) {#overview}
 

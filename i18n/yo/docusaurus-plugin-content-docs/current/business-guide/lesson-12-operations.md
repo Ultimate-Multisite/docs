@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 12: Ṣíṣàkóso Ìṣòwò náà'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ẹ̀kọ́ 12: Ṣíṣe Ìṣòwò Náà {#lesson-12-running-the-business}
+# Ẹ̀kọ́ 12: Ṣíṣe Ìṣòwò Náà
 
 Pẹpẹ kì í ṣe iṣẹ́ akanṣe tí o parí -- ó jẹ́ ìṣòwò tí o ń ṣe. Ẹ̀kọ́ yìí ṣàlàyé àwọn iṣẹ́ ojoojúmọ́ ti ṣíṣàkóso FitSite: ìrànwọ́, ìsanwó, ìtọ́jú, àti mímú àwọn oníbàárà dùn.
 

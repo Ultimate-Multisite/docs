@@ -3,7 +3,7 @@ title: Tigbaligya og Domain nga Talaan sa mga Kausaban
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Changelog sa Domain Seller {#domain-seller-changelog}
+# Changelog sa Domain Seller
 
 Version 1.3.0 - Gipagawas niadtong 2026-06-02
 - Bag-o: Gidugang ang network-admin nga pahimangno kung ang balanse sa HostAfrica reseller moubos na kaayo

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite Dokumentācija {#ultimate-multisite-documentation}
+# Ultimate Multisite Dokumentācija
 
 Laipni lūdzam Ultimate Multisite dokumentācijā. Ultimate Multisite pārveido WordPress Multisite par pilnvērtīgu Tīmekļa vietne kā pakalpojums (WaaS) platformu.
 

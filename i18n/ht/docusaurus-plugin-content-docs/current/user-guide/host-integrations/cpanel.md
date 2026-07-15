@@ -3,7 +3,7 @@ title: Entegrasyon cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Entegrasyon akpanel (cPanel) {#cpanel-integration}
+# Entegrasyon akpanel (cPanel)
 
 ## Genel Bakış {#overview}
 cPanel, birçok paylaşımlı ve özel hosting sağlayıcısı tarafından kullanılan en popüler web barındırma kontrol panellerinden biridir. Bu entegrasyon, Ultimate Multisite ile cPanel arasında otomatik alan adı senkronizasyonu sağlar; böylece domain takma adlarını (aliases) ve alt alan adlarını (subdomains) cPanel hesabınıza otomatik olarak ekleyebilirsiniz.

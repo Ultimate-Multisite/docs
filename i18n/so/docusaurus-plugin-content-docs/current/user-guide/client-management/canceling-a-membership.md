@@ -3,7 +3,7 @@ title: Dalabka Xubsi
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# De-activation of Membership (v2) {#canceling-a-membership-v2}
+# De-activation of Membership (v2)
 
 _**Fadlan Muhiim Ah: Qoraalkan wuxuu la xiriira Ultimate Multisite version 2.x.**_
 

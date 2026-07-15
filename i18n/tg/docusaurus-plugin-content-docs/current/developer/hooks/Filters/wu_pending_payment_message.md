@@ -4,7 +4,7 @@ title: Филтр - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Филтр: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Филтр: wu_pending_payment_message
 
 Ба корбар иҷозат медиҳад, ки паёмро дар бораи пардохтҳои интизоршаванда тағйир диҳад.
 

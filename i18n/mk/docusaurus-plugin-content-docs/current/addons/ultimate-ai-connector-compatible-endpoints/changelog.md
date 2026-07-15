@@ -3,7 +3,7 @@ title: Дневник на измени за Ultimate AI Connector за комп
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector за компатибилни крајни точки Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector за компатибилни крајни точки Changelog
 
 ## Version 2.0.0 — Објавено на 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -3,7 +3,7 @@ title: Menaxhimi i Klientëve
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Menaxhimi i Klientëve {#managing-customers}
+# Menaxhimi i Klientëve
 
 Faqja **Customerë** tregon listën e anëtarëve të regjistruar në rrjetin tuaj. Kjo faqe shfaq informacion bazë të përdoruesit, duke përfshirë emrin, adresën e emailit, kohën e fundit të hyrjes dhe një link **për ndryshim** që ju lejon të hyeni në subsite-in e përdoruesit si administrator i faqes.
 

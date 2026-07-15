@@ -3,7 +3,7 @@ title: Membina Integrasi Pendaftar Tersuai
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Membina Integrasi Registrar Tersuai {#building-a-custom-registrar-integration}
+# Membina Integrasi Registrar Tersuai
 
 Addon Domain Seller menggunakan corak **Integration Registry**. Setiap registrar adalah kelas PHP yang melaksanakan `Domain_Selling_Capability` dan mendaftarkan dirinya melalui *action hook* `wu_domain_seller_register_capabilities`.
 

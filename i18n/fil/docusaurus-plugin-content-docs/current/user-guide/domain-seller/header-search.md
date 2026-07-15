@@ -3,7 +3,7 @@ title: Paghahanap ng Domain sa Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Paghahanap ng Domain sa Header {#header-domain-search}
+# Paghahanap ng Domain sa Header
 
 Gamitin ang setup na ito kapag gusto mo ng maliit na form sa header na nagsisimula ng paghahanap ng domain, pagkatapos ay hinahayaan ang customer na pumili mula sa mga available na domain sa loob ng pag-checkout ng Ultimate Multisite.
 

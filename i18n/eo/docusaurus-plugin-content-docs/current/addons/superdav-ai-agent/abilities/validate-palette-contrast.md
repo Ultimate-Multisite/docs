@@ -3,7 +3,7 @@ title: Validigi kontraston de paletro
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validigi Paletran Kontraston {#validate-palette-contrast}
+# Validigi Paletran Kontraston
 
 La kapablo **Validate Palette Contrast** kontrolas kolorparojn en via dezajna paletro pri konformeco al WCAG (Web Content Accessibility Guidelines) antaŭ ol apliki ilin al via etoso.
 

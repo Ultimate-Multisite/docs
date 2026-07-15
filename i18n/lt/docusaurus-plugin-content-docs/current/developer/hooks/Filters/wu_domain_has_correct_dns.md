@@ -4,7 +4,7 @@ title: Filtras - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filtras: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Filtras: wu_domain_has_correct_dns
 
 Leidžia įskiepių kūrėjams pridėti naujų patikrų, kad būtų galima apibrėžti rezultatus.
 

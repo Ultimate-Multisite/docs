@@ -3,7 +3,7 @@ title: Mailster дневник на промени
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster Дневник на измени {#mailster-changelog}
+# Mailster Дневник на измени
 
 ### 1.0.0 {#100}
 * Почетно издание

@@ -4,7 +4,7 @@ title: فیلتر - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# فیلتر: wu_billing_address_fields {#filter-wubillingaddressfields}
+# فیلتر: wu_billing_address_fields
 
 این فیلتر به توسعه‌دهندگان پلاگین اجازه می‌دهد تا فیلدهای آدرس صورت‌حساب (billing address) را تغییر دهند.
 

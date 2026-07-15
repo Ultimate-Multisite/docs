@@ -3,7 +3,7 @@ title: Multisite Postavljanje Čarobnik
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Ultimate Multisite Setup Wizard {#multisite-setup-wizard}
+# Ultimate Multisite Setup Wizard
 
 Ultimate Multisite uključuje ugrađeni wizard koji automatski pretvara standardnu WordPress instalaciju u WordPress Multisite mrežu. Time se eliminiše potreba da ručno uređujete `wp-config.php` ili pokrećete komande u bazi podataka.
 

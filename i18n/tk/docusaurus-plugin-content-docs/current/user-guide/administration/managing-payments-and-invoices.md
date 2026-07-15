@@ -3,7 +3,7 @@ title: Ödeme we faturasyny dolandyrmak
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödemeler we Fatura İşlerini Yönetmek {#managing-payments-and-invoices}
+# Ödemeler we Fatura İşlerini Yönetmek
 
 ## Ödeme Ayarları {#payment-settings}
 

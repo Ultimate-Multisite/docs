@@ -4,7 +4,7 @@ title: Գործողություն - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Գործողություն՝ wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Գործողություն՝ wp_ultimo_support_agents_deactivation
 
 Թույլ է տալիս plugin-ի այլ մասերին կցել իրենց անջատման ընթացակարգերը
 

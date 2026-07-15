@@ -3,7 +3,7 @@ title: Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill {#site-specification-skill}
+# Site Specification Skill
 
 Die **Site Specification Skill** ist ein strukturierter Ansatz, um die Ziele, die Zielgruppe und die Markenidentität Ihrer Website festzuhalten. Diese Informationen werden in Ihrem **site_brief** Speicher abgelegt, auf den die Agents sie über Sitzungen hinweg referenzieren, um eine konsistente, kontextbezogene Unterstützung zu gewährleisten.
 

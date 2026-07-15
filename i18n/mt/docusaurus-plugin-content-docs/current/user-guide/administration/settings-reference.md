@@ -3,7 +3,7 @@ title: Referenza tas-settings
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenza tas-Settings {#settings-reference}
+# Referenza tas-Settings
 
 Din il-paġna ssegwi settings li jaffettwaw l-amministrazzjoni ta’ kuljum u bidliet reċenti fl-imġiba f’Ultimate Multisite.
 

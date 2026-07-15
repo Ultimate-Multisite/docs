@@ -3,7 +3,7 @@ title: ഉയർന്ന കോഡ് ഉദാഹരണങ്ങൾ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples {#advanced-code-examples}
+# Advanced Code Examples
 
 ഈ ഉദാഹരണങ്ങൾ Ultimate Multisite-ൽ ഉപയോഗിക്കാവുന്ന അഡ്വാൻസ്ഡ് ഇന്റഗ്രേഷൻ പാറ്റേണുകൾ കാണിക്കുന്നു.
 

@@ -4,7 +4,7 @@ title: Sivana - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Sivana: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Sivana: wu_page_get_title_links
 
 Mamela ny mpamorona fanitarana, sy izahay, hanampy rohy hetsika amin'ny pejy fanovanay
 

@@ -4,7 +4,7 @@ title: Veiksmas - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Veiksmas: wu_cart_setup {#action-wucartsetup}
+# Veiksmas: wu_cart_setup
 
 Leidžia kūrėjams atlikti papildomus checkout objekto pakeitimus.
 

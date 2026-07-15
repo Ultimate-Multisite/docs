@@ -3,7 +3,7 @@ title: GoCardless יומן שינויים
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# יומן שינויים של GoCardless {#gocardless-changelog}
+# יומן שינויים של GoCardless
 
 Version: 1.0.3 - שוחרר ב-2026-05-05
 * תיקון: אתרי המתנה יתומים ינוקו כעת כאשר חברות GoCardless מבוטלת במצב המתנה או בהשהיה.

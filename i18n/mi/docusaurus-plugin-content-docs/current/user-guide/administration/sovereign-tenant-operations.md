@@ -3,7 +3,7 @@ title: Pākehā Whakawāhi Operatika Aotūroa
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Pātai Operatāinga Tenant Sovereign (Tenant Operations) {#sovereign-tenant-operations}
+# Pātai Operatāinga Tenant Sovereign (Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nui ana tūnga whakamahi mō tenant souverain: subsites (sub-sites) e maha i roto i te database, root filesystem, me te context routing o loro, engari e taea ai te whakaahua i ngā admin o te wāhi whenua (network admin).
 

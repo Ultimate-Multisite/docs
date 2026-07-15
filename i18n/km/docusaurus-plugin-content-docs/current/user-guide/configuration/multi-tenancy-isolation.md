@@ -3,7 +3,7 @@ title: ការបែងចែក Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# ការបែងចែក Tenant (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# ការបែងចែក Tenant (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 គាំទ្រការបែងចែក database និង filesystem សម្រាប់ subsite នីមួយៗ ដើម្បីរក្សាភាពឯករាជ្យរបស់ tenant។ វាធ្វើឱ្យទិន្នន័យរបស់ tenant នៅតែដាច់ពីគ្នា ខណៈពេលដែលនៅតែរក្សាបាននូវការផ្តល់សេវាលើបណ្តាញ (network-level provisioning) ការគិតថ្លៃ (billing) និងការគ្រប់គ្រង (administration)។
 

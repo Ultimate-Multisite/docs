@@ -3,7 +3,7 @@ title: Ro'yxatdan o'tish jarayoni
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ro'yxatdan O'tish Jarayoni (v2) {#the-registration-flow-v2}
+# Ro'yxatdan O'tish Jarayoni (v2)
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 

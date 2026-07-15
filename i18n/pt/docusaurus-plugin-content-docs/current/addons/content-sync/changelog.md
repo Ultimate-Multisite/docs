@@ -3,7 +3,7 @@ title: Registo de alterações da Sincronização de conteúdo
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Registo de alterações do Content Sync {#content-sync-changelog}
+# Registo de alterações do Content Sync
 
 ### Versão 1.1.0 - Lançada em 2025-12-31 {#version-110---released-on-2025-12-31}
 * Novo: Suporte para sincronizar todos os tipos de publicações (publicações, páginas, tipos de publicação personalizados)

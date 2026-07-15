@@ -3,7 +3,7 @@ title: 'Leson 2: Chwazi nich ou'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leson 2: Chwazi Nich Ou {#lesson-2-picking-your-niche}
+# Leson 2: Chwazi Nich Ou
 
 Nan Leson 1 nou te etabli poukisa nich pi bon pase jeneral. Kounye a ou bezwen chwazi pa w la. Leson sa a ba ou yon kad pou jwenn epi valide yon nich anvan ou envesti tan pou konstwi pou li.
 

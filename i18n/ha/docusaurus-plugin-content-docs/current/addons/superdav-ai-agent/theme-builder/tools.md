@@ -3,7 +3,7 @@ title: Kayan aiki da Saituna
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Kayan Aiki da Daidaitawa {#tools-and-configuration}
+# Kayan Aiki da Daidaitawa
 
 Theme Builder yana amfani da jerin kayan aiki don nazari, tsara, da gina shafin WordPress ɗinka. A sigar 1.16.0, **sd-ai-agent/site-scrape yanzu kayan aiki ne na Mataki na 1**, wanda ke sa ya kasance a shirye ta tsohuwa a Theme Builder. Superdav AI Agent v1.18.0 kuma yana gabatar da kunshin aboki na Advanced da ake rarrabawa dabam don amintattun hanyoyin aikin masu haɓakawa; waɗannan kayan aikin ba sa cikin ainihin kunshin WordPress.org kuma dole ne a girka su a ba su izini dabam.
 

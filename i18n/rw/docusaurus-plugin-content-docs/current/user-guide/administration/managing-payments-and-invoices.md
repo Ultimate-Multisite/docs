@@ -3,7 +3,7 @@ title: Gukomera Icyemezo n'Inyandiko
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gukoresha no Kwiboneka n'Inyandiko {#managing-payments-and-invoices}
+# Gukoresha no Kwiboneka n'Inyandiko
 
 ## Icyemezo cyo Guhindura Ukozi n'Inyandiko {#payment-settings}
 

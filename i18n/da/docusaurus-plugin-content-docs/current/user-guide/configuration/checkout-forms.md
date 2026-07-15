@@ -3,7 +3,7 @@ title: Kasseformularer
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout formular {#checkout-forms}
+# Checkout formular
 
 Checkout Forms er en nem og fleksibel måde at eksperimentere med forskellige tilgange på, når du prøver at konvertere nye kunder.
 

@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# Gnìomh: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# Gnìomh: wp_ultimo_payfast_deactivation
 
 Leig le pàirtean eile den plugin na gnàth-chleachdaidhean aca airson dì-ghnìomhachadh a cheangal ris
 

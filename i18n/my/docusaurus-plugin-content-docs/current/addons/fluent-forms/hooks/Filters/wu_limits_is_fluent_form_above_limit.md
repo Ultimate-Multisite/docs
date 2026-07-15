@@ -4,7 +4,7 @@ title: Filter - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 ပေးထားသော form အမျိုးအစားတစ်ခုသည် ဤအစီအစဉ် (plan) တွင် ခွင့်ပြုထားခြင်း ရှိ၊ မရှိ စစ်ဆေးသည်။ plugin developer များအား return value ကို စစ်ထုတ်ခွင့်ပြုသည်။
 

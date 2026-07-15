@@ -3,7 +3,7 @@ title: भुगतानों और चालानों का प्रब
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# भुगतान और इनवॉइस प्रबंधन {#managing-payments-and-invoices}
+# भुगतान और इनवॉइस प्रबंधन
 
 ## भुगतान सेटिंग्स {#payment-settings}
 

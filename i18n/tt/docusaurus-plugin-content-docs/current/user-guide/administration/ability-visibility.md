@@ -3,7 +3,7 @@ title: Күчелеклик Görünürlüğü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Қажеттілік Көрініруі (Ability Visibility) {#ability-visibility}
+# Қажеттілік Көрініруі (Ability Visibility)
 
 Superdav AI Agent v1.12.0-де **Ability Visibility** бақылаулары енгізілді, олар әр мүмкіндікті қандай беттерде көрсетуге реттейді. Бұл администраторларға REST API, MCP серверлері, WooCommerce интеграциялары және басқа интерфейстер арқылы қай агент қабілеттері қолжетімді екенін нақты реттеуге мүмкіндік береді.
 

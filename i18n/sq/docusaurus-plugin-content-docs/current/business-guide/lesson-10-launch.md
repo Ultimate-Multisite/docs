@@ -3,7 +3,7 @@ title: 'Mësimi 10: Dita e publikimit'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Mësimi 10: Dita e lançimit {#lesson-10-launch-day}
+# Mësimi 10: Dita e lançimit
 
 Gjithçka është ndërtuar. Para se të hapni dyert, ky mësim kalon nëpër listën e kontrollit para lançimit për t’u siguruar që asgjë nuk është e prishur, e munguar ose e sikletshme.
 

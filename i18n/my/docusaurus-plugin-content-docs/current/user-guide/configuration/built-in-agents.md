@@ -3,7 +3,7 @@ title: ပါရှိပြီးသား အေးဂျင့်များ
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# ပါဝင်ပြီးသား Agents {#built-in-agents}
+# ပါဝင်ပြီးသား Agents
 
 Gratis AI Agent v1.9.0 တွင် ပါဝင်ပြီးသား agents ငါးခု ပါဝင်ပြီး၊ တစ်ခုချင်းစီကို သတ်မှတ်ထားသော tools အစု၊ အထူးပြင်ဆင်ထားသော system prompt နှင့် ထိုနယ်ပယ်ရှိ အများသုံးလုပ်ငန်းများနှင့် ကိုက်ညီသော စတင်အသုံးပြုရန် suggestions များဖြင့် ကြိုတင်ပြင်ဆင်ထားသည်။ agents များအကြား ပြောင်းလဲခြင်းသည် assistant က ဘာလုပ်နိုင်သည်နှင့် မည်သို့တုံ့ပြန်သည်ကို ပြောင်းလဲစေသည် — သင့်ဘက်မှ configuration မလိုအပ်ပါ။ သက်ဆိုင်ရာ integrations များကို ပြင်ဆင်ထားပါက Superdav AI Agent v1.18.0 သည် ဤ workflows များသို့ schedule-aware tools၊ reminder records၊ approval gates နှင့် SMS notifications များကို ထည့်နိုင်သည်။
 

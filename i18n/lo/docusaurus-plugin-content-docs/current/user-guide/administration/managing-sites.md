@@ -3,7 +3,7 @@ title: ການຈັດການໄຊທ໌
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# ການຈັດການໄຊທ໌ {#managing-sites}
+# ການຈັດການໄຊທ໌
 
 ໄຊທ໌ (ຫຼື subsites) ແມ່ນຫົວໃຈຫຼັກຂອງທຸລະກິດ WaaS ຂອງທ່ານ. Ultimate Multisite ມີ 3 ປະເພດຂອງໄຊທ໌:
 

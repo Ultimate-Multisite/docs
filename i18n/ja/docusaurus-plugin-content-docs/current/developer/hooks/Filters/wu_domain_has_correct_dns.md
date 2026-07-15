@@ -4,7 +4,7 @@ title: フィルタ - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# フィルタ: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# フィルタ: wu_domain_has_correct_dns
 
 プラグイン開発者が新しいチェックを追加して結果を定義できるようにします。
 

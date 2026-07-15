@@ -3,7 +3,7 @@ title: Fahaizana mifanaraka amin'ny loha-baovao
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Fahaizana Miankina amin'ny Loha (Theme-Aware Skills) {#theme-aware-skills}
+# Fahaizana Miankina amin'ny Loha (Theme-Aware Skills)
 
 Ny Superdav AI Agent v1.10.0 dia mitondra fahaizana vaovao efatra izay miankina amin'ny loha (theme-aware skills) ary mampifanaraka ho azy ho an'ny WordPress theme iainao aho. Ireo fahaizana ireo dia manome torolalala sy fahaiza-manao manokana mifototra amin'ny firafitry ny theme sy ny fahaizany.
 

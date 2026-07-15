@@ -3,7 +3,7 @@ title: Pananganan Pajeg
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ngatur Pajeg {#tax-handling}
+# Ngatur Pajeg
 
 Ultimate Multisite boga modul pangumpulan pajeg anu geus diwangun kana plugin inti kami, jadi lamun anjeun kudu ngumpulkeun pajeg penjualan dina rencana, pakét, jeung jasa anjeun, anjeun bisa gampang ngalakukeunana tanpa kudu masang tambahan naon waé.
 

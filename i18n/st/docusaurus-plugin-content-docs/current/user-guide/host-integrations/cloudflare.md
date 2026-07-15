@@ -3,7 +3,7 @@ title: Ho-lapa le Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integration le Cloudflare {#cloudflare-integration}
+# Integration le Cloudflare
 
 ## Le Tšhobo (Overview) {#overview}
 Cloudflare ke mo le ntlha ya go thusa le website tsa go tsamaya ka metlha, e le sefapso sa go rona le go tsamaya. Ho fana ka ho na le management a domain automatic ho Ultimate Multisite le Cloudflare, ho feta moo ho na le installations tsa subdomain multisite.

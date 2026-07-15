@@ -3,7 +3,7 @@ title: Agenti integrati
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agent integrati {#built-in-agents}
+# Agent integrati
 
 Gratis AI Agent v1.9.0 include cinque agent integrati, ciascuno preconfigurato con un set mirato di strumenti, un prompt di sistema personalizzato e suggerimenti iniziali adatti alle attività comuni in quell’area. Passare da un agent all’altro cambia ciò che l’assistente può fare e come risponde — senza alcuna configurazione da parte tua. Superdav AI Agent v1.18.0 può aggiungere a questi flussi di lavoro strumenti consapevoli della pianificazione, record di promemoria, gate di approvazione e notifiche SMS quando le relative integrazioni sono configurate.
 

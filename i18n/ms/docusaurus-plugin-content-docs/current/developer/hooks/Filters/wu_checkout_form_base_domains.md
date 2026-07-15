@@ -4,7 +4,7 @@ title: Penapis - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Penapis: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Penapis: wu_checkout_form_base_domains
 
 Menapis domain asas borang checkout dikongsi yang tidak sepatutnya menjadi rekod domain dipetakan.
 

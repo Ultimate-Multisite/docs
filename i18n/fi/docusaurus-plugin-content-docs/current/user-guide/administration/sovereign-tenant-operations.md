@@ -3,7 +3,7 @@ title: Suvereenin vuokralaisen toiminnot
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Suvereenisten vuokralaisoperaatiot {#sovereign-tenant-operations}
+# Suvereenisten vuokralaisoperaatiot
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 tuo operatiivista työkaluja suvereenisille vuokralaisille: alialueille (subsites), jotka toimivat omalla tietokannallaan, tiedostonjuurilla ja reitityskontekstilla, mutta pysyvät näkyvissä verkko-adminilta.
 

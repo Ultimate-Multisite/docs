@@ -3,7 +3,7 @@ title: Hooks حوالو
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# هوڪس جو حوالو {#hooks-reference}
+# هوڪس جو حوالو
 
 Ultimate Multisite ۾ سڀني **59 عملن** ۽ **118 فلٽرن** لاءِ خودڪار طور تي تيار ڪيل دستاويز.
 

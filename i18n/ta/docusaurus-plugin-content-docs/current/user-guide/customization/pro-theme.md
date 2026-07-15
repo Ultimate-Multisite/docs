@@ -3,7 +3,7 @@ title: PRO தீம்
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme மூலம் உங்கள் Admin Panel-ஐ தனிப்பயனாக்குதல் {#customizing-your-admin-panel-with-pro-theme}
+# PRO Theme மூலம் உங்கள் Admin Panel-ஐ தனிப்பயனாக்குதல்
 
 வாடிக்கையாளர் வேலைகள் செய்யும்போது, WordPress-ன் admin dashboard-ல் அவர்களுக்கு தனித்துவமான அனுபவத்தை வழங்க வேண்டிய தேவை அடிக்கடி எழுகிறது. மேலும் தொழில்முறையான தோற்றமும் உணர்வும் தேவைப்பட்டால், PRO Theme உங்களுக்கு உதவியாக இருக்கும்.
 

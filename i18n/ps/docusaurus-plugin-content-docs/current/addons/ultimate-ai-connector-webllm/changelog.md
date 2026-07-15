@@ -3,7 +3,7 @@ title: د WebLLM لپاره د Ultimate AI Connector د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# د WebLLM لپاره Ultimate AI Connector بدلون‌لړ {#ultimate-ai-connector-for-webllm-changelog}
+# د WebLLM لپاره Ultimate AI Connector بدلون‌لړ
 
 ## نسخه 1.1.0 — په 2026-04-09 خپره شوه {#version-110--released-on-2026-04-09}
 

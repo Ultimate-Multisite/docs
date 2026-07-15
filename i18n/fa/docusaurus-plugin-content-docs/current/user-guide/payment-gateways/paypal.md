@@ -3,7 +3,7 @@ title: راه‌اندازی PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# راه‌اندازی درگاه PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# راه‌اندازی درگاه PayPal (v2)
 
 _**نکتهٔ مهم: این مقاله به Ultimate Multisite نسخهٔ 2.x اشاره دارد.**_
 

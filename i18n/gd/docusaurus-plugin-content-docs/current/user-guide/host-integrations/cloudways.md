@@ -3,7 +3,7 @@ title: Còmhlaidheachd Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Aims (Overview) {#overview}
 Cloudways is a platform where ye can deploy yer WordPress sites on different cloud providers like DigitalOcean, AWS, Google Cloud, and more. This integration lets you sync yer domain automatically and manage SSL certificates between Ultimate Multisite and Cloudways.

@@ -4,7 +4,7 @@ title: Hidlydd - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Hidlydd: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Hidlydd: wu_rest_delete_item
 
 Yn hidlo a ganiateir parhau â’r cais ai peidio.
 

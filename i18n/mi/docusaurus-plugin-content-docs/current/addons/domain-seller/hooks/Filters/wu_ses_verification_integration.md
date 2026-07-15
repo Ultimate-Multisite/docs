@@ -4,7 +4,7 @@ title: Tātari - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Tātari: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Tātari: wu_ses_verification_integration
 
 Tātari: tukua ētahi atu waehere ki te whakarato i te ahanoa integration SES.
 

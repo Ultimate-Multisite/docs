@@ -3,7 +3,7 @@ title: Պատվերով վճարային դարպասի մշակում
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Պատվերով Gateway-ի մշակում {#custom-gateway-development}
+# Պատվերով Gateway-ի մշակում
 
 Դուք կարող եք ստեղծել պատվերով վճարային gateway-ներ՝ ընդլայնելով `Base_Gateway` դասը։
 

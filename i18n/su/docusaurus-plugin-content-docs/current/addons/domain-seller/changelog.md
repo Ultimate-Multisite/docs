@@ -3,7 +3,7 @@ title: Log Parobahan Penjual Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Catetan Parobahan Domain Seller {#domain-seller-changelog}
+# Catetan Parobahan Domain Seller
 
 Vérsi 1.3.0 - Dileupaskeun dina 2026-06-02
 - Anyar: Nambahkeun pépéling network-admin nalika saldo reseller HostAfrica jadi teuing handap

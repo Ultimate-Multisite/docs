@@ -3,7 +3,7 @@ title: Material WP zapisnik promjena
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Dnevnik promjena Material WP {#material-wp-changelog}
+# Dnevnik promjena Material WP
 
 Verzija 1.1.15 - 01/26/2026
 * Poboljšano: stil i formatiranje koda;

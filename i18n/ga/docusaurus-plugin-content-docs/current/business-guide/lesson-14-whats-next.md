@@ -3,7 +3,7 @@ title: 'Ceacht 14: Cad a Thagann Ina Dhiaidh'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Ceacht 14: Cad a Thagann Ina Dhiaidh {#lesson-14-what-comes-next}
+# Ceacht 14: Cad a Thagann Ina Dhiaidh
 
 Tá ardán láithreán gréasáin nideoige tógtha agat ón tús. Tá FitSite beo, ag freastal ar stiúideonna aclaíochta, agus ag giniúint ioncaim athfhilltigh. Féachann an ceacht deiridh seo ar cá háit le dul as seo amach.
 

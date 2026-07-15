@@ -3,7 +3,7 @@ title: Գրանցել API ծայրակետը
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# The Ultimate Multisite Register API endpoint
 
 Այս տուտիում դուք կսովորեք, թե ինչպես օգտագործել Ultimate Multisite /register API ծայրակետը՝ ձեր ցանցի նոր հաճախորդի համար ամբողջ ներառման գործընթացը ստեղծելու համար և դա անել Zapier-ով։
 

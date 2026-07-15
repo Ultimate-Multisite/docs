@@ -4,7 +4,7 @@ title: Isihlungi - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Isihlungi: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Isihlungi: wu_password_require_number
 
 Hlunga ukuthi kudingeka yini izinombolo kumaphasiwedi.
 

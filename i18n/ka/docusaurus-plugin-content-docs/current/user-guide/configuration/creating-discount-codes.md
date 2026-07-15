@@ -3,7 +3,7 @@ title: 할인이 კოდების შექმნა
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ფასდაკლების კოდების შექმნა (v2) {#creating-discount-codes-v2}
+# ფასდაკლების კოდების შექმნა (v2)
 
 _**მნიშვნელოვანი შენიშვნა: ეს სტატია ეხება Ultimate Multisite-ის ვერსიას 2.x.**_
 

@@ -3,7 +3,7 @@ title: Tour del pannello di amministrazione
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tour del pannello Admin {#touring-the-admin-panel}
+# Tour del pannello Admin
 
 Ultimate Multisite mira a essere il più semplice e autoesplicativo possibile, ma con uno strumento così potente può essere utile avere una visita guidata. Esaminiamo le pagine admin per aiutarti a orientarti.
 

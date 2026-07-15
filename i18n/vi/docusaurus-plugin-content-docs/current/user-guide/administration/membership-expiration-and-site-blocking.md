@@ -3,7 +3,7 @@ title: Hết hạn thành viên và chặn trang web
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Hết hạn Thành viên và Chặn Trang Web {#membership-expiration-and-site-blocking}
+# Hết hạn Thành viên và Chặn Trang Web
 
 Hướng dẫn này giải thích cách Ultimate Multisite xử lý việc hết hạn thành viên, kết thúc thời gian dùng thử và chặn truy cập trang web ở frontend. Nó bao gồm toàn bộ vòng đời của một thành viên, từ trạng thái hoạt động đến hết hạn, các cài đặt kiểm soát việc có chặn trang web hay không, và những điều cần kiểm tra khi trang web vẫn truy cập được sau khi thành viên hết hạn.
 

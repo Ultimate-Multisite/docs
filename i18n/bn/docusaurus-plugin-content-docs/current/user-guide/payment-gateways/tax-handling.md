@@ -3,7 +3,7 @@ title: কর ব্যবস্থাপনা
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# কর পরিচালনা {#tax-handling}
+# কর পরিচালনা
 
 Ultimate Multisite-এর core plugin-এ কর সংগ্রহের মডিউল তৈরি করা আছে। তাই আপনার plan, package এবং service-এ sales tax সংগ্রহ করতে হলে কোনো add-on ইনস্টল না করেই সহজে তা করতে পারবেন।
 

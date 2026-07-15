@@ -3,7 +3,7 @@ title: Closte-da Gün şeşdirme konstantasy goýmak
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Sunrise konstanta Closte-de true etmegi {#setting-the-sunrise-constant-to-true-on-closte}
+# Sunrise konstanta Closte-de true etmegi
 
 Bazı hosting sağlayıcılar güvenlik sebäbiyle wp-config.php faylını bloklayarlar. Bu, Ultimate Multisite'ın alan adı eşleşmesi ve diğer özelliklerin çalışması için gerekli olan konstantaları eklemek üzere dosyayı avtomatik redaktə edeməməsi deməkdir. Closte bu tür bir hostdur.
 

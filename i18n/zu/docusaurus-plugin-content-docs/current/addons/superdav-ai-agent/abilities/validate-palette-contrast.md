@@ -3,7 +3,7 @@ title: Qinisekisa Ukugqama Kwephalethi
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Qinisekisa Ukugqama Kwe-Palette {#validate-palette-contrast}
+# Qinisekisa Ukugqama Kwe-Palette
 
 Ikhono le-**Validate Palette Contrast** lihlola amapheya emibala ku-palette yakho yokudizayina ukuze ahambisane ne-WCAG (Web Content Accessibility Guidelines) ngaphambi kokuwasebenzisa ku-theme yakho.
 

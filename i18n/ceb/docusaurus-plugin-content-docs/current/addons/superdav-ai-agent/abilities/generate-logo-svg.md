@@ -3,7 +3,7 @@ title: Paghimo og Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Paghimo og Logo SVG {#generate-logo-svg}
+# Paghimo og Logo SVG
 
 Ang **Paghimo og Logo SVG** nga abilidad nagtugot sa Theme Builder sa paghimo ug pag-embed og custom nga logo SVGs direkta sa imong WordPress site nga adunay awtomatikong namespace-safe nga sanitisation.
 

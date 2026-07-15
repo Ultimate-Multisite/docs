@@ -4,7 +4,7 @@ title: 抱歉，我没有收到需要翻译的具体内容。请将要翻译的 
 sidebar_label: wu_add_new_domain_modal_fields
 _i18n_hash: 82538b8033ce3cb1a2d4e59881ac1358
 ---
-# 过滤器：wu_add_new_domain_modal_fields {#filter-wuaddnewdomainmodalfields}
+# 过滤器：wu_add_new_domain_modal_fields
 
 过滤添加新域名模态框的字段。
 

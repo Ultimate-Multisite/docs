@@ -3,7 +3,7 @@ title: Cùinneas de dhèanamh a' chùisgeadh
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Cona chùinneachadh fìor airson co-dhùinn a tha thu a' tuigsinn de Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Cona chùinneachadh fìor airson co-dhùinn a tha thu a' tuigsinn de Codeable?
 
 Tha am cean, tha sinn a' faighinn co-dhùinn fìor airson a bhith a' tòiseachadh air a chùineamhan a tha sinn a' faicinn. Mar a tha sin a tha thu a' faicinn, rinn am fhaighinn [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), làimh le fhaighinn deiseil airson seòl-dhèanamh (Ultimate Multisite) a tha a' tuigsinn.
 

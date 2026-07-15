@@ -3,7 +3,7 @@ title: 'الدرس الثالث: إعداد شبكتك'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# الدرس 3: إعداد شبكتك {#lesson-3-setting-up-your-network}
+# الدرس 3: إعداد شبكتك
 
 حان الوقت للبناء. في هذا الدرس، ستقوم بتثبيت Ultimate Multisite وتكوين أساس شبكة FitSite. كل قرار تتخذه هنا يأخذ في الاعتبار تخصص اللياقة البدنية.
 

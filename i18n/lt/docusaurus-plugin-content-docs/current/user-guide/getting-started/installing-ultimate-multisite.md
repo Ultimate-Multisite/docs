@@ -3,7 +3,7 @@ title: Diegiant „Ultimate Multisite“
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# „Ultimate Multisite“ įdiegimas {#installing-ultimate-multisite}
+# „Ultimate Multisite“ įdiegimas
 
 :::note
 Šioje instrukcijoje daroma prielaida, kad „WordPress Multisite“ jau yra įdiegtas ir sukonfigūruotas. Norėdami sužinoti kaip tai padaryti, peržiūrėkite šią instrukciją [čia](https://www.wpbeginner.com/glossary/multisite/) (WP Beginner).

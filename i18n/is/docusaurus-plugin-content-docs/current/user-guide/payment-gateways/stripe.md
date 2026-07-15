@@ -3,7 +3,7 @@ title: Innstillingar fyrir Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Innstilling av Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Innstilling av Stripe Gateway (v2)
 
 _**VIKTIG MERKNAD: Þessi grein er tengd Ultimate Multisite útgáfu 2.x.**_
 

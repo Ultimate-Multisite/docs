@@ -3,7 +3,7 @@ title: 멀티사이트 سیٹ اپ ویزارد
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# מערणाली ترتیب ڏيندڙ ویزارد (Multisite Setup Wizard) {#multisite-setup-wizard}
+# מערणाली ترتیب ڏيندڙ ویزارد (Multisite Setup Wizard)
 
 Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي جيڪو هڪ عام WordPress installation کي خود بخود WordPress Multisite network ۾ تبديل ڪري ڇڏي ٿو. هي توهان کي `wp-config.php` جو مانيو ڪارن يا ڊيٽابيز كومانديون چلائڻ جي ضرورت ختم ڪري ڇڏيندو آهي.
 

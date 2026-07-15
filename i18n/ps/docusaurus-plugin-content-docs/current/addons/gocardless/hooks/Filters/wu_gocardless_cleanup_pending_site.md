@@ -4,7 +4,7 @@ title: فلټر - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# فلټر: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# فلټر: wu_gocardless_cleanup_pending_site
 
 د لغوه شوي GoCardless غړیتوب لپاره د بې‌سرپرسته پاتې سایټ تر ړنګولو مخکې اجرا کېږي.
 

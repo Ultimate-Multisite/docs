@@ -3,7 +3,7 @@ title: خطأ في ملف Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# خطأ عند تثبيت ملف Sunrise {#error-installing-the-sunrise-file}
+# خطأ عند تثبيت ملف Sunrise
 
 ملف sunrise.php هو ملف خاص يبحث عنه WordPress أثناء عملية التمهيد. لكي يتمكن WordPress من اكتشاف ملف sunrise.php، يجب أن يكون موجودًا داخل مجلد **wp-content**.
 

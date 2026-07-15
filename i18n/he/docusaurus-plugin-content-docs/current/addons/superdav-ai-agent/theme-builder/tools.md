@@ -3,7 +3,7 @@ title: כלים ותצורה
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# כלים ותצורה {#tools-and-configuration}
+# כלים ותצורה
 
 Theme Builder משתמש בערכת כלים כדי לנתח, לעצב ולבנות את אתר ה-WordPress שלך. בגרסה 1.16.0, **sd-ai-agent/site-scrape הוא כעת כלי Tier 1**, מה שהופך אותו לזמין כברירת מחדל ב-Theme Builder. Superdav AI Agent v1.18.0 מציג גם חבילת ליווי Advanced המופצת בנפרד עבור תהליכי עבודה של מפתחים מהימנים; כלים אלה אינם חלק מחבילת הליבה של WordPress.org ויש להתקין ולאשר אותם בנפרד.
 

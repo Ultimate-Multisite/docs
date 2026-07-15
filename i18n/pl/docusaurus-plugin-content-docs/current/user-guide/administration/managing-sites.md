@@ -3,7 +3,7 @@ title: Zarządzanie stronami
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Zarządzanie stronami {#managing-sites}
+# Zarządzanie stronami
 
 Strony (lub podstrony) to fundament Twojego biznesu WaaS. Ultimate Multisite obsługuje 3 typy stron:
 

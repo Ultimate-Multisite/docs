@@ -3,7 +3,7 @@ title: Dokumentacja dla deweloperów
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentacja dla deweloperów {#developer-documentation}
+# Dokumentacja dla deweloperów
 
 Ten przewodnik dostarcza deweloperom wszystkiego, czego potrzebują, aby integrować się, rozszerzać lub tworzyć dodatki dla Ultimate Multisite. Ultimate Multisite przekształca sieć WordPress Multisite w platformę Website-as-a-Service (WaaS).
 

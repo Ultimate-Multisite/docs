@@ -4,7 +4,7 @@ title: فلټر - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# فلټر: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# فلټر: wu_bypass_unset_current_user
 
 پرمخ‌وړونکو ته اجازه ورکوي چې د اوسني کارن د unset کولو کوډ څخه تېر شي.
 

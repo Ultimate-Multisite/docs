@@ -4,7 +4,7 @@ title: Сүзгі - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Сүзгі: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Сүзгі: wu_membership_update_forms
 
 Әзірлеушілерге жаңа жаңарту формасының slug-тарын қосуға мүмкіндік береді.
 

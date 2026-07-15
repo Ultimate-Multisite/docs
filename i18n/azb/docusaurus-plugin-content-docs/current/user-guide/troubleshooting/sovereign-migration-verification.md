@@ -3,7 +3,7 @@ title: Azb Migrasi Doğrulama
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification {#sovereign-migration-verification}
+# Sovereign Migration Verification
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-dağında egemen kiracılar için WP-CLI doğrulama komutları içerir. Bir kiracı taşıması, SSO ziyareti veya izole kurulumun beklediğiniz gibi çalışmadığı durumlarda bunları kullanın.
 

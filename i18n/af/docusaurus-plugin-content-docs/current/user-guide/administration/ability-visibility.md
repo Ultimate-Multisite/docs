@@ -3,7 +3,7 @@ title: Vermogtheidssigbaarheid
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Sigbaarheid van Vermoë {#ability-visibility}
+# Sigbaarheid van Vermoë
 
 Superdav AI Agent v1.12.0 stel **Sigbaarheid van Vermoë**-beheer bekend wat bepaal watter oppervlaktes watter vermoë beskikbaar stel. Dit laat administrateurs toe om te verfyn watter agent-vermoë beskikbaar is via REST APIs, MCP-bedienerwoorde, WooCommerce-integrasies en ander koppelvlakke.
 

@@ -4,7 +4,7 @@ title: Isenzo - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Isenzo: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Isenzo: wu_domain_mapping_register_filters
 
 Ezinye ii-plugin ziya kugcina i-URL ngaphambi kokuba mapping isebenze okanye ziya kwakha ii-URL ngendlela eyahlukileyo engabandakanywanga kwiifilter ezingentla.
 

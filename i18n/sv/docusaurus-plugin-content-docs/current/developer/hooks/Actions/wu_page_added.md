@@ -4,7 +4,7 @@ title: Action - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 Låter plugin-utvecklare köra extra kod när sidor registreras.
 

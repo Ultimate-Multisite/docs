@@ -3,7 +3,7 @@ title: Shigarwar WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Shigar WPMU DEV Integration {#wpmu-dev-integration}
+# Shigar WPMU DEV Integration
 
 ## Nazari {#overview}
 WPMU DEV wani WordPress platform ce mai girmawa ne dacewa da bayanan hosting, plugins, da ayyuka ga wuraren WordPress. Wannan haɗin yana ba damar samar da shigar domain da SSL certificate a kan Ultimate Multisite da hosting na WPMU DEV.

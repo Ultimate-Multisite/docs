@@ -3,7 +3,7 @@ title: 호스피탈리티 메뉴
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# 레스토랑 메뉴 {#hospitality-menus}
+# 레스토랑 메뉴
 
 **Hospitality Menus** 기능은 Theme Builder가 구조화된 음식 및 음료 메뉴 페이지를 워드프레스 사이트에 직접 생성하고 삽입할 수 있도록 합니다.
 

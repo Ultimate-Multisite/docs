@@ -3,7 +3,7 @@ title: Foomamka La Xiriirka Qaybaha Website-ga
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Foomamada La Xiriirka ee Sameynta Website-ga {#site-builder-contact-forms}
+# Foomamada La Xiriirka ee Sameynta Website-ga
 
 Superdav AI Agent v1.10.0 wuxuu ku siinayaa awoodda in la abuuro foomamada la xiriirka (contact forms) si toos ah iyadoo la isticmaalayo interface-ka qoraalka (chat interface) iyo agent-ka Site Builder. Tani waxay kuu oggolaanaysaa inaad ku dari foomamada la xiriirka oo si buuxda u shaqeeya qayb kasta oo bogga ah iyadoo aan la ka baxin chat-ka.
 

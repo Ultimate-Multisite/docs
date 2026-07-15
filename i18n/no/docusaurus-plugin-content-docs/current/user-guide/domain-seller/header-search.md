@@ -3,7 +3,7 @@ title: Overskrift for domenesøk
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 Bruk dette oppsettet når du vil ha et lite skjema i headeren som starter et domenesøk, og deretter lar kunden velge blant tilgjengelige domener inne i Ultimate Multisite checkout.
 

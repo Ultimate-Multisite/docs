@@ -3,7 +3,7 @@ title: Checkout-Formulare
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout-Formulare {#checkout-forms}
+# Checkout-Formulare
 
 Checkout-Formulare sind eine einfache und flexible Möglichkeit, mit verschiedenen Ansätzen zu experimentieren, wenn Sie neue Kunden konvertieren möchten.
 

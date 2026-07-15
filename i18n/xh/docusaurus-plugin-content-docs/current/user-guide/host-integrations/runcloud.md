@@ -3,7 +3,7 @@ title: Udibaniso lwe-RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Udibaniso lwe-RunCloud {#runcloud-integration}
+# Udibaniso lwe-RunCloud
 
 ## Isishwankathelo {#overview}
 RunCloud liqonga lolawulo lweeseva elisekelwe efini elikuvumela ukuba ufake kwaye ulawule ii-aplikeshini zewebhu ngokulula kwiiseva zakho zefu. Olu dibaniso luvumela ukuvumelanisa ngokuzenzekelayo kweedomeyini kunye nolawulo lwezatifikethi ze-SSL phakathi kwe-Ultimate Multisite ne-RunCloud.

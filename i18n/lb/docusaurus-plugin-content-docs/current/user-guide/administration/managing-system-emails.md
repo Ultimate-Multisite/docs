@@ -3,7 +3,7 @@ title: Management vo System E-Mails
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# System-E-Mails verwalte {#managing-system-emails}
+# System-E-Mails verwalte
 
 Ultimate Multisite schickt verschidni System-E-Mails für Ereignis wie Anmeldebestätigungen, Zahlungsbelege und Mitgliedschaftsänderige. Dir chasch die E-Mail-Vorlage a dini Marke apasse.
 

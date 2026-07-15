@@ -3,7 +3,7 @@ title: Disainisuund
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Disainisuund {#design-direction}
+# Disainisuund
 
 Samm **Disainisuund** võimaldab sul enne seda, kui Theme Builder loob täieliku teema, oma teema visuaalse kujunduse üle vaadata, seda viimistleda ja lõplikult kinnitada.
 

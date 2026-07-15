@@ -3,7 +3,7 @@ title: 能力參考
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# 能力參考 {#abilities-reference}
+# 能力參考
 
 能力是 Gratis AI Agent 可以在你的 WordPress 安裝中呼叫的原子動作。每項能力都是已註冊的 PHP 類別，會公開 JSON schema — agent 會在執行時讀取此 schema，以了解需要哪些參數以及該能力會回傳什麼。
 

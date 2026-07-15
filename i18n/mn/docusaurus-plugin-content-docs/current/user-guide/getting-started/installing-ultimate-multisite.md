@@ -3,7 +3,7 @@ title: Ultimate Multisite-ийг суулгах
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-ийг суулгах {#installing-ultimate-multisite}
+# Ultimate Multisite-ийг суулгах
 
 :::note
 Энэхүү заавар нь та WordPress Multisite-ийг аль хэдийнээ суулсан, тохируулсан гэж үздэг. Үүнийг хэрхэн хийхийг мэдэх бол WP Beginner-ийн [энэхүү зааврыг](https://www.wpbeginner.com/glossary/multisite/) үзээрэй.

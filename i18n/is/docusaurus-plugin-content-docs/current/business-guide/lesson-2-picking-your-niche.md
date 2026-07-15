@@ -3,7 +3,7 @@ title: 'Læoni 2: Val á nítryðingu'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Læoni 2: Val á Nísh {#lesson-2-picking-your-niche}
+# Læoni 2: Val á Nísh
 
 Í Læoni 1 settum upp það hvernig nýsh er sterkari en algeng. Í þessu læoni þarfir þú að velja þennan sjálfan þinn. Þessi læoni gefur þér ferli til að finna og staðfesta nísh fyrir því að þú byrjar að byggja á því.
 

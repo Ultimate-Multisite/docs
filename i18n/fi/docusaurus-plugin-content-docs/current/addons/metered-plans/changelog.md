@@ -3,7 +3,7 @@ title: Käyttöperusteisten tilausten muutosloki
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Mittaroitujen pakettien muutosloki {#metered-plans-changelog}
+# Mittaroitujen pakettien muutosloki
 
 Versio 1.1.0 - Julkaistu 2026-05-05
 - Uutta: AI-tokenien laskutus monisivuston alasivustoille — seuraa ja laskuta AI-tokenien käyttöä asiakassivustoilla määritettävillä tokenikohtaisilla hinnoilla

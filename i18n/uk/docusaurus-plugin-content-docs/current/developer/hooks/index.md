@@ -3,7 +3,7 @@ title: Довідник хуків
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Довідник хуків {#hooks-reference}
+# Довідник хуків
 
 Автоматично згенерована документація для всіх **59 actions** і **118 filters** в Ultimate Multisite.
 

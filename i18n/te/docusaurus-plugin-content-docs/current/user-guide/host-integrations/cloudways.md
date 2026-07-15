@@ -3,7 +3,7 @@ title: Cloudways అనుసంధానం
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways సమీకరణ {#cloudways-integration}
+# Cloudways సమీకరణ
 
 ## అవలోకనం {#overview}
 Cloudways అనేది నిర్వహిత క్లౌడ్ హోస్టింగ్ వేదిక. ఇది DigitalOcean, AWS, Google Cloud వంటి వివిధ క్లౌడ్ ప్రొవైడర్లపై WordPress సైట్‌లను అమలు చేయడానికి మిమ్మల్ని అనుమతిస్తుంది. ఈ సమీకరణ Ultimate Multisite మరియు Cloudways మధ్య ఆటోమేటిక్ డొమైన్ సమకాలీకరణను, SSL సర్టిఫికేట్ నిర్వహణను ప్రారంభిస్తుంది.

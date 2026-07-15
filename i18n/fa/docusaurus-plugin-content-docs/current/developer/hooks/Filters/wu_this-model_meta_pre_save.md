@@ -4,7 +4,7 @@ title: 'فیلتر - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
+# Filter: wu_\{$this->model\}_meta_pre_save
 
 این فیلتر، داده‌های متا را قبل از اینکه برای ذخیره در دیتابیس سریالایز (تبدیل به فرمت ذخیره‌سازی) شوند، فیلتر می‌کند.
 

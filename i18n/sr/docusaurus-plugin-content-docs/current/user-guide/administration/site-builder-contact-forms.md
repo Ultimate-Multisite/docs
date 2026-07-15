@@ -3,7 +3,7 @@ title: Kontakt forme za izgradnju sajta
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontakt forme za izgradnju sajta {#site-builder-contact-forms}
+# Kontakt forme za izgradnju sajta
 
 Superdav AI Agent v1.10.0 dodaje mogućnost kreiranja kontakt formulara direktno iz interfejsa chata pomoću Site Builder agenta. To vam omogućava da dodate potpuno funkcionalne kontakt forme na bilo koju stranicu bez napuštanja chata.
 

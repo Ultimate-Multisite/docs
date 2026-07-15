@@ -4,7 +4,7 @@ title: فلٽر - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# فلٽر: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# فلٽر: wp_ultimo_woocommerce_should_use_subscriptions
 
 ڊولپرز کي WooCommerce Subscriptions جي استعمال کي زبردستي لاڳو ڪرڻ جي اجازت ڏئي ٿو.
 

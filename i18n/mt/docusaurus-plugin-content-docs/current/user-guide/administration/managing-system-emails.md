@@ -3,7 +3,7 @@ title: Il-ġestjoni tal-email sistemi
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Aġġustament tal Email System {#managing-system-emails}
+# Aġġustament tal Email System
 
 Ultimate Multisite traddem email systemie biex japplikaw għal eventi bħal konfirmazzjonijiet taħtieqa, ricevitajiet tal-pagamenti u bidżi diġitali. Tista' tustomizza dan il-template ta l-email biex jidupika mal-brand tiegħek.
 

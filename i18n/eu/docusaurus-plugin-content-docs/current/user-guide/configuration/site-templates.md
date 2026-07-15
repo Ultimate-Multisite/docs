@@ -3,7 +3,7 @@ title: Itentzakoa
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**NOTIZIA: Ez artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du. Bertsio 1.x erabiltzen ari zete,**_ **horri artikuluak egiaitu.**_
 

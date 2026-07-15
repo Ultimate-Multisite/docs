@@ -3,7 +3,7 @@ title: المجتمع
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# كيف تنضم إلى مجتمع Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# كيف تنضم إلى مجتمع Ultimate Multisite
 
 مجتمع Ultimate Multisite هو مساحة يمكنك من خلالها التواصل مع مستخدمي Ultimate Multisite الآخرين ومشاركة النصائح والخبرات والمزيد. للوصول إلى مجتمع Ultimate Multisite، انتقل إلى https://community.ultimatemultisite.com/home.
 

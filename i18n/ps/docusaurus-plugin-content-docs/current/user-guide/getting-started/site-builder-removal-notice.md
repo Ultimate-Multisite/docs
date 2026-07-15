@@ -3,7 +3,7 @@ title: د سایت جوړولو مود د حذف اعلان
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode Removal Notice {#site-builder-mode-removal-notice}
+# Site Builder Mode Removal Notice
 
 **Site Builder mode Superdav AI Agent v1.12.0-এ সরিয়ে ফেলা হয়েছে।** আপনি যদি সাইট বিল্ডার মোড ব্যবহার করতেন, তবে থিম তৈরি এবং সাইট সেটআপের জন্য **Setup Assistant agent** এর দিকে যেতে পারেন।
 

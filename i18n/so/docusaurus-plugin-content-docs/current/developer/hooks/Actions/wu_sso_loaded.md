@@ -4,7 +4,7 @@ title: Ficil - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Ficil: wu_sso_loaded {#action-wussoloaded}
+# Ficil: wu_sso_loaded
 
 U oggolow horumariyeyaasha plugin-ka inay ku daraan hooks dheeraad ah, haddii loo baahdo.
 

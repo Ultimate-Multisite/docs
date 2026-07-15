@@ -3,7 +3,7 @@ title: Интернет іздеу
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Интернет із пошуком {#internet-search}
+# Интернет із пошуком
 
 Gratis AI Agent v1.5.0-де додає функцію **Internet Search**, яка дозволяє AI ассистенту під час розмови отримувати актуальну інформацію з інтернету. Це працює на базі [Brave Search API](https://brave.com/search/api/) або [Tavily API](https://tavily.com/).
 

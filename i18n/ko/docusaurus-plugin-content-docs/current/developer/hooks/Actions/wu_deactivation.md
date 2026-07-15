@@ -4,7 +4,7 @@ title: 액션 - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Action: wu_deactivation {#action-wudeactivation}
+# Action: wu_deactivation
 
 플러그인의 다른 부분이 비활성화 시 루틴을 연결하도록 허용합니다.
 

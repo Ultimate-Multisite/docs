@@ -3,7 +3,7 @@ title: Siparişli Alan we Müşderi DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Alany we Müşteri DNS Yöretmesi {#checkout-field-and-customer-dns-management}
+# Checkout Alany we Müşteri DNS Yöretmesi
 
 ## Domain Seçimi checkout alanı {#the-domain-selection-checkout-field}
 

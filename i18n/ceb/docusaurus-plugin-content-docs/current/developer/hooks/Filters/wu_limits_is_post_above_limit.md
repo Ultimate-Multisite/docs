@@ -4,7 +4,7 @@ title: Salain - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filter: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filter: wu_limits_is_post_above_limit
 
 Mosusi kung ang gihatag nga post type gitugotan niini nga plan Gitugotan ang mga plugin developer nga i-filter ang return value
 

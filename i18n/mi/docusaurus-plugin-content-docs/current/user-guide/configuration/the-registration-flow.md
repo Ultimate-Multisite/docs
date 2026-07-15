@@ -3,7 +3,7 @@ title: Te Whakaritenga
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Te Whakaritenga Registration (v2) {#the-registration-flow-v2}
+# Te Whakaritenga Registration (v2)
 
 _**TAHUINA WHAKANGA: Ko tēnei whakamārama he tino mō Ultimate Multisite version 2.x.**_
 

@@ -3,7 +3,7 @@ title: Çoklu sayt Kurulum Sihirbazı
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite راه‌اندازی راهنما {#multisite-setup-wizard}
+# Multisite راه‌اندازی راهنما
 
 Ultimate Multisite شامل یک راهنمای داخلی است که نصب استاندارد وردپرس شما را به طور خودکار به یک شبکه وردپرس Multisite تبدیل می‌کند. این کار نیاز به ویرایش دستی فایل `wp-config.php` یا اجرای دستورات دیتابیس را از بین می‌برد.
 

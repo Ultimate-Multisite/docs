@@ -3,7 +3,7 @@ title: Referensi Pengaturan
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referensi Settings {#settings-reference}
+# Referensi Settings
 
 Halaman ini melacak settings yang memengaruhi administrasi sehari-hari dan perubahan perilaku terbaru di Ultimate Multisite.
 

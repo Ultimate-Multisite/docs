@@ -3,7 +3,7 @@ title: Kādu WordPress Multisite instalēt?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kā kādu man ir jāinstalē WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kā kādu man ir jāinstalē WordPress Multisite?
 
 WordPress Multisite ļauj jums turēt tīklu vietnes vienā instalācijā. Tas ir iekļauts funkcija, bet pēc defaulta tā nav aktīva.
 

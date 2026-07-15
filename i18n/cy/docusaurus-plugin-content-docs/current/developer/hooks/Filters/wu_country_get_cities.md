@@ -4,7 +4,7 @@ title: Hidlydd - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Hidlydd: wu_country_get_cities {#filter-wucountrygetcities}
+# Hidlydd: wu_country_get_cities
 
 Yn dychwelyd y rhestr o ddinasoedd ar gyfer talaith mewn gwlad.
 

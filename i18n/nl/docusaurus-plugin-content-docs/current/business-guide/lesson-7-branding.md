@@ -3,7 +3,7 @@ title: 'Les 7: Het naar je hand zetten'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Les 7: Maak Het Jouw {#lesson-7-making-it-yours}
+# Les 7: Maak Het Jouw
 
 Je klanten mogen nooit het gevoel hebben dat ze "gewoon een WordPress plugin" gebruiken. Ze moeten het gevoel hebben dat ze FitSite gebruiken – een platform dat is gebouwd voor hun specifieke branche. In deze les behandelen we branding, white-labeling en hoe je het platform het gevoel geeft van een volwaardig product.
 

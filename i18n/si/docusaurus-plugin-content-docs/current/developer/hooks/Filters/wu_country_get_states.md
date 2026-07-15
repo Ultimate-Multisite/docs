@@ -4,7 +4,7 @@ title: පෙරහන - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# පෙරහන: wu_country_get_states {#filter-wucountrygetstates}
+# පෙරහන: wu_country_get_states
 
 මෙම රට සඳහා ප්‍රාන්ත ලැයිස්තුව ආපසු ලබා දෙයි.
 

@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# 动作: wu_page_{$this->id}_load {#action-wupagethis-idload}
+# 动作: wu_page_{$this->id}_load
 
 允许插件开发者为特定页面添加额外的钩子。
 

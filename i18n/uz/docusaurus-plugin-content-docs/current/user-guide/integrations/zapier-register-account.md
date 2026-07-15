@@ -3,7 +3,7 @@ title: Zapier orqali hisob ochish
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Tadbir: Zapier orqali akkaunt ochish {#event-register-an-account-via-zapier}
+# Tadbir: Zapier orqali akkaunt ochish
 
 [Ultimate Multisite bilan Zapierni integratsiya qilish] maqolasida biz Ultimate Multisite ichidagi turli harakatlarni triggerlar va voqealar asosida amalga oshirish uchun Zapierdan qanday foydalanishimiz haqida gaplashgan edik. Bu maqolada esa siz 3-party ilovalarni qanday integratsiya qilish mumkinligini ko'rsatamiz. Biz ma'lumot manbai sifatida Google Sheets dan foydalanamiz va bu ma'lumotlarni Ultimate Multisitega akkaunt ochish uchun yuboramiz.
 

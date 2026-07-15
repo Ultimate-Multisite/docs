@@ -3,7 +3,7 @@ title: 探索訪談
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# 探索訪談 {#discovery-interview}
+# 探索訪談
 
 **探索訪談 (Discovery Interview)** 是 Theme Builder 設計流程的第一步。它會收集關於您的網站、業務和設計偏好等資訊，從而為您打造一個個人化的主題。
 

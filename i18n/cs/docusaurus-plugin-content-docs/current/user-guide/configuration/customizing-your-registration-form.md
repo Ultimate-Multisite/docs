@@ -3,7 +3,7 @@ title: Přizpůsobení registračního formuláře
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Přizpůsobení vašeho registračního formuláře {#customizing-your-registration-form}
+# Přizpůsobení vašeho registračního formuláře
 
 Aby vaše síť vypadala jedinečně oproti všem ostatním SaaS postaveným na platformě WordPress, Ultimate Multisite vám umožňuje přizpůsobit registrační a přihlašovací stránky pomocí naší funkce **Checkout Forms**.
 

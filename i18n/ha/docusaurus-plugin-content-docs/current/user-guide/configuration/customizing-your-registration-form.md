@@ -3,7 +3,7 @@ title: Keɓance Fom ɗin Rajistarka
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Keɓance fom ɗin Rajistarka {#customizing-your-registration-form}
+# Keɓance fom ɗin Rajistarka
 
 Don sa hanyar sadarwarka ta zama ta musamman daga duk sauran SaaS da aka gina a kan dandamalin WordPress, Ultimate Multisite yana ba ka damar keɓance shafukan rajista da shiga ta amfani da fasalinmu na **Checkout Forms**.
 

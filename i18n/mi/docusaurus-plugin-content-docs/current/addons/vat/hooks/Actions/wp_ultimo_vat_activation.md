@@ -4,7 +4,7 @@ title: Hohenga - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Mahi: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Mahi: wp_ultimo_vat_activation
 
 Tukua ētahi atu wāhanga o te plugin kia tāpiri i ā rātou tukanga mō te whakahohe
 

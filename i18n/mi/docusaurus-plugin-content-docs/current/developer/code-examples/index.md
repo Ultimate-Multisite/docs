@@ -3,7 +3,7 @@ title: Ngā Tauira Waehere Matatau
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Ngā Tauira Waehere Arā Atu Anō {#advanced-code-examples}
+# Ngā Tauira Waehere Arā Atu Anō
 
 E whakaatu ana ēnei tauira i ngā tauira whakauru arā atu anō ki Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Pagsisimula sa Pag-develop ng Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Pagbuo ng Addon {#addon-development}
+# Pagbuo ng Addon
 
 ## Istruktura ng Addon {#addon-structure}
 

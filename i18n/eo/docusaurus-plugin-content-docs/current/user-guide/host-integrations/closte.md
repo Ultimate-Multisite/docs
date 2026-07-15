@@ -3,7 +3,7 @@ title: Integrado Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Integrado Closte {#closte-integration}
+# Integrado Closte
 
 ## Ĝenerala Informoj {#overview}
 Closte estas administrita WordPress-hosta platformo, konstruita sur Google Cloud infrastrukturo. Ĉi tiu integracio permesas aŭtomatan domen sincronigon kaj SSL-sertifikatoj laĉon inter Ultimate Multisite kaj Closte.

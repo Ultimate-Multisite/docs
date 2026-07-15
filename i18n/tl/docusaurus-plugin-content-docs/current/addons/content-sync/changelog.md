@@ -3,7 +3,7 @@ title: Talaan ng Pagbabago sa Pag-sync ng Nilalaman
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog ng Content Sync {#content-sync-changelog}
+# Changelog ng Content Sync
 
 ### Bersyon 1.1.0 - Inilabas noong 2025-12-31 {#version-110---released-on-2025-12-31}
 * Bago: Suporta para sa pagsi-sync ng lahat ng uri ng post (mga post, mga page, custom post types)

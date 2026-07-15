@@ -3,7 +3,7 @@ title: Eng Nischen-Websäit-Geschäft opbauen
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Baut e Nische-Website-Geschäft mat Ultimate Multisite op {#build-a-niche-website-business-with-ultimate-multisite}
+# Baut e Nische-Website-Geschäft mat Ultimate Multisite op
 
 Déi meescht Leit, déi probéieren Websäiten ze verkafen, konkurréiere beim Präis géint Wix, Squarespace an Dausende vu Freelancer. Si verléieren. Déi, déi gewannen, wielen eng spezifesch Zilgrupp, bauen eng Léisung, déi op dës Zilgrupp zougeschnidden ass, a verrechnen de Wäert, deen se liwweren.
 

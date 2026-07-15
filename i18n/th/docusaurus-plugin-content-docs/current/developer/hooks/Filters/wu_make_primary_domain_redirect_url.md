@@ -4,7 +4,7 @@ title: ตัวกรอง - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# ตัวกรอง: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# ตัวกรอง: wu_make_primary_domain_redirect_url
 
 ตัวกรอง URL สำหรับเปลี่ยนเส้นทางหลังจากตั้งค่าโดเมนให้เป็นโดเมนหลัก
 

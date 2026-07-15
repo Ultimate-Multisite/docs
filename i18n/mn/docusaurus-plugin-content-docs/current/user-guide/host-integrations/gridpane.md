@@ -3,7 +3,7 @@ title: GridPane-ийн нийлүүлэлт
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane-ийн нийлүүлэлт (Integration) {#gridpane-integration}
+# GridPane-ийн нийлүүлэлт (Integration)
 
 ## Ерөнхий ойлголт {#overview}
 GridPane нь зөвхөн WordPress мэргэжилтнүүдэд зориулсан, онцгой бүтээгдсэн WordPress хостинг удирдлагын панель юм. Энэхүү нийлүүлэлт нь Ultimate Multisite болон GridPane-ийн хооронд таны домен (domain) автоматаар синхрончлагдахаас гадна SSL сертификатын удирдлагыг хийх боломжийг олгодог.

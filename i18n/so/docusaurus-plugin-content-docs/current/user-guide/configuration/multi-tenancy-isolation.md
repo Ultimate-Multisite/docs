@@ -3,7 +3,7 @@ title: Iska-duubidda Waa-la-dhafan
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Iskaashiga Waa-soo-dhinta Badan Weyn (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Iskaashiga Waa-soo-dhinta Badan Weyn (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 waxay taageertaa iskaashiga database iyo fayl-qaadarka ee subsite-kasta si ay u ilaaliyaan qoysaska gaarka ah (sovereign tenants). Tani waxay hubisaa in macluumaadka qoysaska kala duwan ay si cad uga fogaadaan, intaas oo la ilaaliyo hababka diyaarinaya shirkadda (provisioning), la rabaa lacag bixinta (billing), iyo maamulka heerka shabakadaha.
 

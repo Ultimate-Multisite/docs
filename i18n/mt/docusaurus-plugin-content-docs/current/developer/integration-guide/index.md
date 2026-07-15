@@ -3,7 +3,7 @@ title: Gwida għall-Integrazzjoni
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gwida għall-Integrazzjoni {#integration-guide}
+# Gwida għall-Integrazzjoni
 
 Din il-gwida tkopri mudelli komuni ta' integrazzjoni ma' Ultimate Multisite, inkluż il-konnessjoni ma' servizzi esterni, il-bini ta' gateways tal-ħlas personalizzati, u l-immaniġġjar ta' webhooks.
 

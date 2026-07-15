@@ -4,7 +4,7 @@ title: Sefe - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Sesefe: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Sesefe: secure_logged_in_cookie
 
 Se sefa hore na khukhi ya ho kena e lokela ho romelwa feela ka HTTPS.
 

@@ -4,7 +4,7 @@ title: Filtër - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filtër: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Filtër: secure_logged_in_cookie
 
 Filtron nëse cookie i përdoruesit të kyçur duhet të dërgohet vetëm përmes HTTPS.
 

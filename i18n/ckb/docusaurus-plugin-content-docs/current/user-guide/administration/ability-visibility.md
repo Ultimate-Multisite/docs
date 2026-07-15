@@ -3,7 +3,7 @@ title: توانای بینراوێنان
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# دۆخی بینراوکردنەوەی تواناکان (Ability Visibility) {#ability-visibility}
+# دۆخی بینراوکردنەوەی تواناکان (Ability Visibility)
 
 Superdav AI Agent v1.12.0 تایبەتمەندی **Ability Visibility** دەهێنێت کە کۆنتڕۆڵ دەکات چ ڕووبەرێک (surface) ئەو تواناکانەی دەردەخات. ئەمە بەڕێوەبەران دەدات دیاری بکەن چ تواناکانی ئەژمارە لە ڕێگەی REST API، MCP servers، WooCommerce integrations و دیکە ئامرازەکاندا بێت.
 

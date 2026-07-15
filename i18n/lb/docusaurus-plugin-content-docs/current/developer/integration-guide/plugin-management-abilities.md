@@ -3,7 +3,7 @@ title: Plugin-Verwaltungsfäegkeeten
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin-Verwaltungsfäegkeeten {#plugin-management-abilities}
+# Plugin-Verwaltungsfäegkeeten
 
 Gratis AI Agent v1.5.0 kënnt mat **7 Plugin-Verwaltungsfäegkeeten**, déi de KI-Assistent wärend engem Gespréich opruffe kann. Dës Fäegkeete bidden programmatesch Kontroll iwwer WordPress-Pluginnen, déi iwwer de [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) installéiert goufen.
 

@@ -4,7 +4,7 @@ title: Filter - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filter: wu_rest_delete_item
 
 Filtert, ob die Anfrage fortgesetzt werden darf oder nicht.
 

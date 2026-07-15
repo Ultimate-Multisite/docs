@@ -3,7 +3,7 @@ title: A' chlàradh tairm
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan a' chùin (v2) {#downgrading-a-plan-v2}
+# Plan a' chùin (v2)
 
 _**NOTE CRÍTAL: Tha seann seo tha a' chluainn Ultimate Multisite version 2.x.**_
 

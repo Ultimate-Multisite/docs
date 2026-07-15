@@ -4,7 +4,7 @@ title: Filtru - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtru: retrieve_password_message {#filter-retrievepasswordmessage}
+# Filtru: retrieve_password_message
 
 Jiffiltra l-korp tal-messaġġ tal-email għar-reset tal-password.
 

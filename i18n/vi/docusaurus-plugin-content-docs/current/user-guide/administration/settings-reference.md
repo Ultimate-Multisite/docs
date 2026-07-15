@@ -3,7 +3,7 @@ title: Tham chiếu Cài đặt
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tham chiếu Settings {#settings-reference}
+# Tham chiếu Settings
 
 Trang này theo dõi các settings ảnh hưởng đến việc quản trị hằng ngày và các thay đổi hành vi gần đây trong Ultimate Multisite.
 

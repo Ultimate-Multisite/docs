@@ -3,7 +3,7 @@ title: Fanaovana Code Fandaharam-bola
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Famoronana Kodina (v2) {#creating-discount-codes-v2}
+# Famoronana Kodina (v2)
 
 _**FANAM-BAHANA MANAN-TENA: Io lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 

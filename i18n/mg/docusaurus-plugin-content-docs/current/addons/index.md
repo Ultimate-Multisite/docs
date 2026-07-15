@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Ny Addons dia manitatra ny Ultimate Multisite amin’ny endri-javatra sy fampifandraisana fanampiny. Ny ankamaroan’ny addons dia andoavam-bola ary azo vidiana ao amin’ny [ultimatemultisite.com](https://ultimatemultisite.com).
 

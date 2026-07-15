@@ -3,7 +3,7 @@ title: Страница учетной записи клиента
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Страница Account вашего клиента (v2) {#your-clients-account-page-v2}
+# Страница Account вашего клиента (v2)
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 

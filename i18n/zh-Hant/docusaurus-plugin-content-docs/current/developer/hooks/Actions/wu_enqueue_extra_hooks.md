@@ -4,7 +4,7 @@ title: 動作 - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# Action: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# Action: wu_enqueue_extra_hooks
 
 讓外掛開發者可以新增額外的鉤子
 

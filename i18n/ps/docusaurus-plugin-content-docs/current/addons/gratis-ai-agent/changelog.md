@@ -3,7 +3,7 @@ title: د بدلونونو ثبت
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# بدلون‌لیک {#changelog}
+# بدلون‌لیک
 
 ## 1.9.0 — په 2026-04-28 خپور شو {#190--released-on-2026-04-28}
 

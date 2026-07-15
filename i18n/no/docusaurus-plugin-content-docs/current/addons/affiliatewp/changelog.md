@@ -3,7 +3,7 @@ title: AffiliateWP endringslogg
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Endringslogg {#affiliatewp-changelog}
+# AffiliateWP Endringslogg
 
 Versjon: 2.0.1 - Utgitt den 2025-09-28
 

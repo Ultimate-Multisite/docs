@@ -3,7 +3,7 @@ title: Canllaw Defnyddio Bachau
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Canllaw Defnyddio Hooks {#hooks-usage-guide}
+# Canllaw Defnyddio Hooks
 
 Mae Ultimate Multisite yn darparu dros 200 o action hooks a dros 280 o filter hooks. Mae’r dudalen hon yn ymdrin â’r hooks a ddefnyddir amlaf gydag enghreifftiau ymarferol. Am gyfeirnod cyflawn a gynhyrchir yn awtomatig, porwch y tudalennau eraill yn yr adran hon.
 

@@ -3,7 +3,7 @@ title: Indawo yokugqiba ukuthenga kunye ne-DNS yoMthengi
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ulawulo lwe-Checkout Field kunye ne-DNS yabathengi {#checkout-field-and-customer-dns-management}
+# Ulawulo lwe-Checkout Field kunye ne-DNS yabathengi
 
 ## I-Checkout Field yokukhetha i-domain {#the-domain-selection-checkout-field}
 

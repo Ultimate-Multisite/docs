@@ -3,7 +3,7 @@ title: Інтеграція з панеллю керування Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Інтеграція з панеллю керування Hestia {#hestia-control-panel-integration}
+# Інтеграція з панеллю керування Hestia
 
 Цей посібник пояснює, як налаштувати інтеграцію Ultimate Multisite з Hestia, щоб прив'язані домени у вашій мережі автоматично додавалися (і видалялися) як Web Domain Aliases у Hestia.
 

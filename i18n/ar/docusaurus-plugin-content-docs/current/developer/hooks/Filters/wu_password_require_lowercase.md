@@ -4,7 +4,7 @@ title: مرشح - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# عامل التصفية: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# عامل التصفية: wu_password_require_lowercase
 
 تصفية ما إذا كان يجب أن تتطلب كلمات المرور أحرفًا صغيرة.
 

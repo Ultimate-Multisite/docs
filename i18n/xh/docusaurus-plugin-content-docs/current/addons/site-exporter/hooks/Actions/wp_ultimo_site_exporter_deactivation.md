@@ -4,7 +4,7 @@ title: Isenzo - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Isenzo: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Isenzo: wp_ultimo_site_exporter_deactivation
 
 Vumela amanye amacandelo esongezo ukuba aqhoboshele iinkqubo zawo zokucinywa.
 

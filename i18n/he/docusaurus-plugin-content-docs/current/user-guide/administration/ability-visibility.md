@@ -3,7 +3,7 @@ title: נראות יכולות
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# נראות יכולות {#ability-visibility}
+# נראות יכולות
 
 Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (Ability Visibility) השולטות באיזה ממשקים יחשפו כל יכולת. זה מאפשר למנהלים לכוונן בדיוק אילו יכולות של ה-agent יהיו זמינות דרך REST APIs, שרתי MCP, אינטגרציות WooCommerce וממשקים אחרים.
 

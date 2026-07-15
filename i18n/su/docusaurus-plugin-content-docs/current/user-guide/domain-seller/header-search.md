@@ -3,7 +3,7 @@ title: Lulugu Pilarian Domain
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pilarian Domain Header {#header-domain-search}
+# Pilarian Domain Header
 
 Paké setélan ieu nalika anjeun hoyong formulir header leutik anu ngamimitian pilarian domain, tuluy ngamungkinkeun palanggan milih tina domain anu sadia di jero checkout Ultimate Multisite.
 

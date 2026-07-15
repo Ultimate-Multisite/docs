@@ -4,7 +4,7 @@ title: Hohenga - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Hohenga: wu_activation {#action-wuactivation}
+# Hohenga: wu_activation
 
 Tukua ētahi atu wāhanga o te plugin kia tāpiri i ā rātou tukanga mō te whakahohe
 

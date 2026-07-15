@@ -3,7 +3,7 @@ title: Discovery Interview
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 Das **Discovery Interview** ist der erste Schritt im Designprozess von Theme Builder. Es sammelt Informationen über Ihre Website, Ihr Unternehmen und Ihre Designvorlieben, um ein personalisiertes Theme zu erstellen.
 

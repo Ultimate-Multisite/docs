@@ -4,7 +4,7 @@ title: 'କାର୍ଯ୍ୟ - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
+# Action: wu_page_\{$this->id\}_load
 
 ବିସ୍ତାରକ ବିକାଶକମାନଙ୍କୁ ନିର୍ଦ୍ଦିଷ୍ଟ ପୃଷ୍ଠାରେ ଅତିରିକ୍ତ ହୁକ୍ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।
 

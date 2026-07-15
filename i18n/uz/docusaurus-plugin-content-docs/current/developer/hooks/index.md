@@ -3,7 +3,7 @@ title: Hooklar ma’lumotnomasi
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooklar ma’lumotnomasi {#hooks-reference}
+# Hooklar ma’lumotnomasi
 
 Ultimate Multisite’dagi barcha **59 ta amal** va **118 ta filtr** uchun avtomatik yaratilgan hujjatlar.
 

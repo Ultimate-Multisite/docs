@@ -3,7 +3,7 @@ title: Xaqiiji Isbarbardhigga Paletka Midabbada
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Xaqiiji Isbarbardhigga Palette {#validate-palette-contrast}
+# Xaqiiji Isbarbardhigga Palette
 
 Awoodda **Validate Palette Contrast** waxay hubisaa lammaanaha midabbada ee palette-ka naqshaddaada si ay u waafaqaan WCAG (Web Content Accessibility Guidelines) ka hor inta aan lagu dabaqin theme-kaaga.
 

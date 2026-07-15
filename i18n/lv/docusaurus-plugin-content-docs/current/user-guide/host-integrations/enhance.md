@@ -3,7 +3,7 @@ title: Pālabdīt kontrol panelas integrāciju
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Uzlabot kontrol panelas integrāciju {#enhance-control-panel-integration}
+# Uzlabot kontrol panelas integrāciju
 
 ## Īsszums {#overview}
 Enhance ir mūsdienu kontrol panelas, kas sniedz spēcīgas hostings automātiskās un pārvaldības iespējas. Šī integrācija ļauj automātiski sincronizēt domānos un pārvaldīt SSL sertifikātu starp Ultimate Multisite un Enhance Control Panel.

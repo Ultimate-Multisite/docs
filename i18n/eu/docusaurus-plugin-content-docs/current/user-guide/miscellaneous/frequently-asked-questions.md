@@ -3,7 +3,7 @@ title: Distugu gailatu dituen jardutza-gailua
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Aipatzen Dutilaketa {#frequently-asked-questions}
+# Aipatzen Dutilaketa
 
 Hona da **Aipatzen Dutilaketa** (Frequently Asked Questions) hauek, zein irudien da hautatzen dituz beti.
 

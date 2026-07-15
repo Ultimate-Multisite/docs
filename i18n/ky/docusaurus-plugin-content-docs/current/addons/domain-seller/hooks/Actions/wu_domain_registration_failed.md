@@ -4,7 +4,7 @@ title: Аракет - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Аракет: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Аракет: wu_domain_registration_failed
 
 Доменди каттоо аракети ишке ашпай калгандан кийин иштейт.
 

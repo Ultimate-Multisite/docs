@@ -3,7 +3,7 @@ title: Kev sib txuas ua ke rau ntau tus neeg xauj siv
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Kev Sib Xyaw Rau Kev Muaj Ntau Tus Neeg Xauj {#multi-tenancy-integration}
+# Kev Sib Xyaw Rau Kev Muaj Ntau Tus Neeg Xauj
 
 Ultimate Multisite: Kev Muaj Ntau Tus Neeg Xauj 1.2.0 hloov ntau qhov chaw sib txuas rau cov neeg xauj ywj pheej, kev txheeb xyuas kev tsiv teb tsaws, thiab kev ua kom lub neej voj voog ntawm tus neeg xauj khiav tau nws tus kheej.
 

@@ -3,7 +3,7 @@ title: 'Dərslik 9: Mənfəət üçün qiymətləndirmə'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Dərs 9: Mənfəət üçün Qiymətləndirmə {#lesson-9-pricing-for-profit}
+# Dərs 9: Mənfəət üçün Qiymətləndirmə
 
 Dərs 5-də FitSite planları üçün ilkin qiymətlər təyin etmişdik. İndi isə gəlirə kömək edən, yüksəltmələri təşviq edən və müştərilərin platformadan ayrılmasının qarşısını alan texnikalarla qiymətləndirmə strategiyamızı təkmilləşdirəcəyik.
 

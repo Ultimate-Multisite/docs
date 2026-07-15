@@ -3,7 +3,7 @@ title: Gratis AI Agent تنظیمات‌لاری
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent تنظیمات {#gratis-ai-agent-settings}
+# Gratis AI Agent تنظیمات
 
 Gratis AI Agent ایچینده‌کی **تنظیمات → پیشرفته** صفحه‌سی، backend بیرلشمَه‌لری اوچون مدیر سَویه‌سینده قورولوش وئریر. بو صفحه feedback اؤتورمه‌سینی، آختاریش وئره‌نی‌نین آچاری‌لارینی، ایداره اولونان Superdav خیدمت قورولوشونو، Google Calendar کنترل‌لارینی، TextBee SMS تنظیماتینی و بوتون شَبَکه اوزره اؤزللیک بایراقلارینی سَنده‌له‌شدیریر.
 

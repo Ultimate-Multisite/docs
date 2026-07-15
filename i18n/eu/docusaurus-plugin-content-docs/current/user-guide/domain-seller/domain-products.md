@@ -3,7 +3,7 @@ title: Domainak eta prezioak
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Produkzio eta Prezioak {#domain-products-and-pricing}
+# Domain Produkzio eta Prezioak
 
 Domain produkzioak daude horrek kontrolatzen duzu prezioak, TLD-ak (Top-Level Domains), WHOIS gizaldia eta proveedorak (provider) aukeratu. Domain product batek Multisite Ultimate standard product bat da, baina bereziki **Domain Settings** tab bat ez du.
 

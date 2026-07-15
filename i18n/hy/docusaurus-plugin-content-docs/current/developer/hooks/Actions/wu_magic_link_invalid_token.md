@@ -4,7 +4,7 @@ title: Գործողություն - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Գործողություն՝ wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
+# Գործողություն՝ wu_magic_link_invalid_token
 
 Գործարկվում է, երբ հանդիպում է անվավեր magic link token։
 

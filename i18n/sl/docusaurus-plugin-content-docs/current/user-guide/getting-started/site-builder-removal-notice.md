@@ -3,7 +3,7 @@ title: Obvestilo o odstranitvi načina gradnje spletnega mesta
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Obvestilo o odstranitvi moči Site Builder Mode {#site-builder-mode-removal-notice}
+# Obvestilo o odstranitvi moči Site Builder Mode
 
 **Site Builder mode je odstranjen v Superdav AI Agent v verziji v1.12.0.** Če ste uporabljali Site Builder mode, morate prehoditi na **Setup Assistant agent** za ustvarjanje tem in urejanje spletnih strani.
 

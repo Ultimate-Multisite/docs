@@ -3,7 +3,7 @@ title: 'Lectio 13: Amplificatio'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lectio 13: Amplificatio {#lesson-13-scaling-up}
+# Lectio 13: Amplificatio
 
 Habes suggestum operans cum clientibus solventibus. Haec lectio explicat quomodo ex parva operatione in negotium sustinendum crescere possis -- infrastructuram amplificando, operationes automatizando, et reditum per clientem augendo.
 

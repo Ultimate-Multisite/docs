@@ -3,7 +3,7 @@ title: Penyimpanan Cache Prompt Sedar Penyedia
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Penyimpanan Cache Prompt Berdasarkan Provider {#provider-aware-prompt-caching}
+# Penyimpanan Cache Prompt Berdasarkan Provider
 
 Superdav AI Agent v1.12.0 memperkenalkan **penyimpanan cache prompt berdasarkan provider** (*provider-aware prompt caching*), yang mengoptimumkan kos API dan latensi dengan menyimpan cache prompt merentasi pelbagai provider LLM. Setiap provider mempunyai mekanisme dan konfigurasi caching yang berbeza.
 

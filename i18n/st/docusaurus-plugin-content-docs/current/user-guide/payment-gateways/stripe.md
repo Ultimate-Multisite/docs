@@ -3,7 +3,7 @@ title: Ho setse Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Setuping Le Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Setuping Le Stripe Gateway (v2)
 
 _**LIPOTSE: Le tsela le liti se thuto li fana ka Ultimate Multisite v2.x.**_
 

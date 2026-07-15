@@ -3,7 +3,7 @@ title: 'Pelajaran 8: Orientasi Pelanggan'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Pelajaran 8: Onboarding Pelanggan {#lesson-8-customer-onboarding}
+# Pelajaran 8: Onboarding Pelanggan
 
 Membuat pelanggan mendaftar hanyalah setengah dari pekerjaan. Jika mereka berhasil login, merasa kewalahan, dan akhirnya tidak kembali lagi, berarti Anda telah kehilangan mereka. Pelajaran ini merancang pengalaman yang mengubah pendaftaran baru menjadi pelanggan yang aktif dan terlibat.
 

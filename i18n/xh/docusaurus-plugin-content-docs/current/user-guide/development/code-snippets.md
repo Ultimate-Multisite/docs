@@ -3,7 +3,7 @@ title: Iziqwenga zekhowudi
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Iziqwengana zekhowudi ze-v2 {#code-snippets-for-v2}
+# Iziqwengana zekhowudi ze-v2
 
 Ngokusisiseko, iziqwengana zekhowudi ze-**WordPress** zisetyenziswa ukwenza izenzo ezithile ezinokuthi kungenjalo zifune iplagi encinane ezinikeleyo. Ezo ziqwengana zekhowudi zibekwa kwenye yeefayile ezingundoqo ze-WordPress okanye ze-theme (ngokuqhelekileyo ifayile functions.php ye-theme yakho) okanye zingasetyenziswa njenge-MU plugin.
 

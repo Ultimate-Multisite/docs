@@ -3,7 +3,7 @@ title: Kedvezménykódok létrehozása
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kedvezménykódok létrehozása (v2) {#creating-discount-codes-v2}
+# Kedvezménykódok létrehozása (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 

@@ -3,7 +3,7 @@ title: Përdorimi i Paneli Administrativ
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Përmbledhja e Panelit Admin {#touring-the-admin-panel}
+# Përmbledhja e Panelit Admin
 
 Ultimate Multisite synon të jetë sa më i thjeshtë dhe i kuptueshëm si mund të jetë, por me një mjet kaq fuqishëm ai mund të ndihmojë në këtë. Le të shkojmë përmes faqeve admin për t'ju ndihmuar të qenit gati.
 

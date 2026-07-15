@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# សកម្មភាព: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# សកម្មភាព: wu_domain_registration_failed
 
 ដំណើរការបន្ទាប់ពីការប៉ុនប៉ងចុះឈ្មោះដែនបរាជ័យ។
 

@@ -3,7 +3,7 @@ title: دکھاڻي جي صلاحيت
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# صلاحیت کی نظر (Ability Visibility) {#ability-visibility}
+# صلاحیت کی نظر (Ability Visibility)
 
 Superdav AI Agent v1.12.0 میں **Ability Visibility** کنٹرولز شامل کیے گئے ہیں جو یہ طے کرتے ہیں کہ کون سی سطحیں (surfaces) کس صلاحیت کو دکھائیں گی۔ اس سے ایڈمنز یہ ترتیب دے سکتے ہیں کہ REST APIs، MCP سرورز، WooCommerce انٹیگریشنز اور دیگر انٹرفیس کے ذریعے کون سی ایجنٹ کی صلاحیتیں دستیاب ہوں گی۔
 

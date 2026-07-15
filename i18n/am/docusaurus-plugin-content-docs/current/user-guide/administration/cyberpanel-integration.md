@@ -3,7 +3,7 @@ title: CyberPanel መዋሃድ
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# የCyberPanel ውህደት {#cyberpanel-integration}
+# የCyberPanel ውህደት
 
 ይህ መመሪያ በUltimate Multisite የCyberPanel ውህደት እንዴት ማዋቀር እንደሚቻል ያብራራል፤ ይህም በኔትዎርክዎ ውስጥ ያሉ የዶሜን ካርታዎች በCyberPanel ውስጥ እንደ ቨርቹዋል ሆስት በራስ-ሰር እንዲጨመሩ (እና እንዲወገዱ)፣ እንዲሁም በLet's Encrypt አማካይነት አማራጭ የauto-SSL አገልግሎት እንዲሰጥ ያደርጋል።
 

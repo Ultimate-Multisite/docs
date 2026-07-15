@@ -3,7 +3,7 @@ title: 'Dysgu 10: Dydd y Cyflwyniad'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leses 10: Dydd Cyflwyniad {#lesson-10-launch-day}
+# Leses 10: Dydd Cyflwyniad
 
 Mae pob hyn wedi'i guberddu. Trước ychwanegu'r drwsau, mae'r lesen hwn yn gwylio drwy'r rheol pre-launch i sicr y bydd dim ond rhywbeth anghyffredig, ddefnyddiol, neu anghyffredig.
 

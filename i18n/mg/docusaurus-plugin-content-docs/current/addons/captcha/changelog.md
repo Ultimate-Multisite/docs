@@ -3,7 +3,7 @@ title: Tantaran'ny fanovana Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Changelog Captcha {#captcha-changelog}
+# Changelog Captcha
 
 Version: 1.5.0 - Navoaka tamin'ny 2026-05-22
 * Vaovao: Hard-stop rate limiter — manisa ny GET sy POST rehetra amin'ireo faritra arovan'ny captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ary mamaly amin'ny HTTP 429, `Retry-After` header, ary tarpit sleep kisendrasendra (1–5s, voafetra mafy amin'ny 15s).

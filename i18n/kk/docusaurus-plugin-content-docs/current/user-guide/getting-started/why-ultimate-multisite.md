@@ -3,7 +3,7 @@ title: Неліктен Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Неліктен Ultimate Multisite {#why-ultimate-multisite}
+# Неліктен Ultimate Multisite
 
 Егер сіз бұл мақалаға келсеңіз, сірә, біздің плагін бизнесіңізді іске асырудың шешімі болуы мүмкін екенін естіген боларсыз. Біз осы мәтіннің соңына қажетті жауаптарды табаларыңызды тілейміз.
 

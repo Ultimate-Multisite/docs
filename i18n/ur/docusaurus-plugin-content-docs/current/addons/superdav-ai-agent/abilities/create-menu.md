@@ -3,7 +3,7 @@ title: مینیو بنائیں
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menu بنائیں {#create-menu}
+# Menu بنائیں
 
 **Menu بنانے** کی صلاحیت WordPress نیویگیشن مینیوز بناتی ہے، جس میں پیج کے ٹائٹل سے الگ نیویگیشن لیبلز (navigation labels) کو سپورٹ کیا جاتا ہے۔
 

@@ -3,7 +3,7 @@ title: Základní koncepty
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Základní pojmy {#basic-concepts}
+# Základní pojmy
 
 Pro nového uživatele WordPress Multisite a někoho, kdo právě začal používat Ultimate Multisite, může být zpočátku spousta nových slov a pojmů k naučení. Jejich pochopení je důležité, protože potřebujete rozumět platformě a tomu, jak funguje jako celek.
 

@@ -4,7 +4,7 @@ title: 필터 - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# 필터: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# 필터: wu_current_set_customer
 
 개발자가 기본 동작을 수정하고 현재 고객을 다르게 설정할 수 있도록 허용합니다.
 

@@ -4,7 +4,7 @@ title: مرشح - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# عامل التصفية: secure_auth_redirect {#filter-secureauthredirect}
+# عامل التصفية: secure_auth_redirect
 
 يحدد ما إذا كان يجب استخدام إعادة توجيه المصادقة الآمنة.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Filtru: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
+# Filtru: wu_password_require_lowercase
 
 Iffiltra jekk għandux ikun meħtieġ ittri żgħar fil-passwords.
 

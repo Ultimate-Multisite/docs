@@ -4,7 +4,7 @@ title: फिल्टर - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# फिल्टर: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# फिल्टर: wu_element_block_types_to_check
 
 हामीलाई पछि थप ब्लकहरू थप्न आवश्यक पर्न सक्छ।
 

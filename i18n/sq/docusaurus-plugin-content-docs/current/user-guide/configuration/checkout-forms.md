@@ -3,7 +3,7 @@ title: Forma e pagesës
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formular e Checkout {#checkout-forms}
+# Formular e Checkout
 
 Formularit e checkout janë një mënyrë e lehtë dhe fleksibël për të provuar arsyet e ndryshme kur po përpiqeni të konvertoni klientët e rinj.
 

@@ -3,7 +3,7 @@ title: Sites beheren
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Beheren van Sites {#managing-sites}
+# Beheren van Sites
 
 Sites (of subsites) zijn de kern van uw WaaS-bedrijf. Ultimate Multisite heeft 3 soorten sites:
 

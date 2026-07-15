@@ -4,7 +4,7 @@ title: Isihlungi - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filter: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filter: wu_stripe_checkout_subscription_data
 
 Hlunga idatha ye-Stripe Subscription. Kungashintsha i-success_url noma i-cancel_url.
 

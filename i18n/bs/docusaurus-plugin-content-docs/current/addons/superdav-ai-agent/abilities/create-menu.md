@@ -3,7 +3,7 @@ title: Kreiraj Izbornik
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kreiranje Menija {#create-menu}
+# Kreiranje Menija
 
 Moćnost **Kreiranje Menija** omogućava kreiranje WordPress navigacijskih menija sa podrškom za različite navigacijske naslove koji su odvojeni od naslova stranica.
 

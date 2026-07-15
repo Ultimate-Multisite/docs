@@ -4,7 +4,7 @@ title: Salain - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Filter: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Filter: wu_should_create_domain_record_for_site
 
 Sinasala kung dapat gumawa ang Ultimate Multisite ng domain record para sa bagong likhang site.
 

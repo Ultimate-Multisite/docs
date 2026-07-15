@@ -4,7 +4,7 @@ title: Actio - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Actio: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
+# Actio: mu_migration/import/user/custom_data_before
 
 Invocatur antequam data usoris propria exportantur.
 

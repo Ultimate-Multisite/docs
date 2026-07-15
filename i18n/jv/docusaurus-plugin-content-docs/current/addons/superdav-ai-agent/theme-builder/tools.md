@@ -3,7 +3,7 @@ title: Piranti lan Konfigurasi
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Piranti lan Konfigurasi {#tools-and-configuration}
+# Piranti lan Konfigurasi
 
 Theme Builder nggunakake sakumpulan piranti kanggo nganalisis, ngrancang, lan mbangun situs WordPress panjenengan. Ing versi 1.16.0, **sd-ai-agent/site-scrape saiki dadi piranti Tier 1**, saéngga kasedhiya kanthi gawan ing Theme Builder. Superdav AI Agent v1.18.0 uga ngenalaké paket pendamping Advanced sing disebaraké kanthi kapisah kanggo alur kerja pangembang sing dipercaya; piranti-piranti kuwi dudu bagéan saka paket inti WordPress.org lan kudu diinstal sarta diwènèhi wewenang kanthi kapisah.
 

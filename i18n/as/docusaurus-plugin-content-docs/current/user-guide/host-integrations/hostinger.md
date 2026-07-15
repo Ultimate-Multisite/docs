@@ -3,7 +3,7 @@ title: Hostinger (hPanel) ইন্টিগ্ৰেচন
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) ইন্টিগ্ৰেশ্যন {#hostinger-hpanel-integration}
+# Hostinger (hPanel) ইন্টিগ্ৰেশ্যন
 
 ## এক ঝলকে (Overview) {#overview}
 

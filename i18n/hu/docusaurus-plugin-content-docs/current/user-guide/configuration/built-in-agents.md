@@ -3,7 +3,7 @@ title: Beépített ügynökök
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Beépített agentek {#built-in-agents}
+# Beépített agentek
 
 A Gratis AI Agent v1.9.0 öt beépített agenttel érkezik, mindegyik előre konfigurálva egy célzott eszközkészlettel, testreszabott system prompttal és az adott terület gyakori feladataihoz illeszkedő kezdő javaslatokkal. Az agentek közötti váltás megváltoztatja, mire képes az asszisztens és hogyan válaszol — anélkül, hogy részedről bármilyen konfigurációra lenne szükség. A Superdav AI Agent v1.18.0 ütemezést figyelembe vevő eszközöket, emlékeztetőrekordokat, jóváhagyási kapukat és SMS-értesítéseket adhat ezekhez a munkafolyamatokhoz, ha a kapcsolódó integrációk konfigurálva vannak.
 

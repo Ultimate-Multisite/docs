@@ -3,7 +3,7 @@ title: തീം ബിൽഡർ കഴിവുകൾ
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: ബ്ലോക്ക് തീമുകൾ രൂപകൽപ്പന ചെയ്യുകയും സജീവമാക്കുകയും ചെയ്യുക {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Abilities: ബ്ലോക്ക് തീമുകൾ രൂപകൽപ്പന ചെയ്യുകയും സജീവമാക്കുകയും ചെയ്യുക
 
 Superdav AI Agent v1.12.0 രണ്ട് ശക്തമായ കഴിവുകൾ അവതരിപ്പിക്കുന്നു. ഇവ ചാറ്റ് ഇന്റർഫേസിൽ നിന്ന് തന്നെ കസ്റ്റം ബ്ലോക്ക് തീമുകൾ സൃഷ്ടിക്കാനും വിന്യസിക്കാനും നിങ്ങളെ സഹായിക്കുന്നു.
 

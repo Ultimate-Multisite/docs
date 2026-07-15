@@ -3,7 +3,7 @@ title: Registro delle modifiche di GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Changelog GoCardless {#gocardless-changelog}
+# Changelog GoCardless
 
 Versione: 1.0.3 - Rilasciata il 2026-05-05
 * Correzione: I siti in sospeso orfani vengono ora ripuliti quando una membership GoCardless viene annullata mentre è in stato in sospeso o on-hold

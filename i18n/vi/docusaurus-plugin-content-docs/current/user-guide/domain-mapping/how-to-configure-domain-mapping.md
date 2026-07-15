@@ -3,7 +3,7 @@ title: Cách cấu hình ánh xạ tên miền
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Cách cấu hình ánh xạ miền (v2) {#how-to-configure-domain-mapping-v2}
+# Cách cấu hình ánh xạ miền (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

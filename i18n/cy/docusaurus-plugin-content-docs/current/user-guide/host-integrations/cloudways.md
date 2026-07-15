@@ -3,7 +3,7 @@ title: Ymddygiad Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ymddianion Cloudways {#cloudways-integration}
+# Ymddianion Cloudways
 
 ## Cyflwyniadau {#overview}
 Mae Cloudways yn ffurf gweithredol (managed) o chwilio cloud sy'n sylw'r eich bod i ddefnyddio safon WordPress ar gyfer ychwanegau cloud fel DigitalOcean, AWS, Google Cloud, a mwy. Mae’r cyfathriadu hwn yn sylwi'r symudau domain (domain syncing) a'r rheoli certydd SSL rhwng Ultimate Multisite a Cloudways.

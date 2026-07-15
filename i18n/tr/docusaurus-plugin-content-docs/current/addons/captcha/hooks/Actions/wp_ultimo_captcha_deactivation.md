@@ -4,7 +4,7 @@ title: Eylem - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Aksiyon: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Aksiyon: wp_ultimo_captcha_deactivation
 
 Eklentinin diğer bölümlerinin devre dışı bırakma (deaktivasyon) işlemleri için rutinlerini bağlamasına olanak tanır.
 

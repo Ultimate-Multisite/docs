@@ -3,7 +3,7 @@ title: Yeme-İçme Menüleri
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Otel/Restoran Menüleri {#hospitality-menus}
+# Otel/Restoran Menüleri
 
 **Otel/Restoran Menüleri** özelliği, Theme Builder'ın yapılandırılmış yiyecek ve içecek menü sayfalarını doğrudan WordPress sitenize oluşturmasına ve yerleştirmesine olanak tanır.
 

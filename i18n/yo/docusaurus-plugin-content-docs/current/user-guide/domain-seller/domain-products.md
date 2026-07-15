@@ -3,7 +3,7 @@ title: Àwọn Ọjà Dóméènì àti Ìdíyelé
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Ọjà Domain àti Ìdíyelé {#domain-products-and-pricing}
+# Ọjà Domain àti Ìdíyelé
 
 Ọjà domain ni bí o ṣe ń ṣàkóso ìdíyelé, TLDs, àṣírí WHOIS, àti yíyan olupese. Ọjà domain kọọkan jẹ́ ọjà Multisite Ultimate boṣewa pẹ̀lú taabu **Ètò Domain** àfikún.
 

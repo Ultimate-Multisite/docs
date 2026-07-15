@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Placera annonser på ditt nätverk med Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Placera annonser på ditt nätverk med Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector är ett **gratis tillägg** som ger dig verktygen för att placera annonser på dina planer direkt från deras redigeringssida.
 

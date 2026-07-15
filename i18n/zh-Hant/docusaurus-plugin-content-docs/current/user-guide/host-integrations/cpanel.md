@@ -3,7 +3,7 @@ title: cPanel 整合
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel 整合 {#cpanel-integration}
+# cPanel 整合
 
 ## 概覽 {#overview}
 cPanel 是最受歡迎的網站主機控制面板之一，許多共享主機和專屬主機服務商都在使用。這個整合功能讓 Ultimate Multisite 與 cPanel 之間能夠自動同步網域，讓你可以自動將網域別名和子網域新增到你的 cPanel 帳戶。

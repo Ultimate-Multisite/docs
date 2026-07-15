@@ -3,7 +3,7 @@ title: Kuponide luomine
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kättemärkide luomine (v2) {#creating-discount-codes-v2}
+# Kättemärkide luomine (v2)
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioon 2.x.**_
 

@@ -3,7 +3,7 @@ title: 設定リファレンス
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# 設定リファレンス {#settings-reference}
+# 設定リファレンス
 
 このページでは、Ultimate Multisite の日常的な管理に影響する設定と、最近の動作変更を追跡します。
 

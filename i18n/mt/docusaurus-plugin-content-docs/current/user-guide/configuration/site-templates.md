@@ -3,7 +3,7 @@ title: Template siti
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelli Siti (v2) {#site-templates-v2}
+# Modelli Siti (v2)
 
 _**NOTA: Danestatshu huwa riferitu à Ultimate Multisite versjoni 2.x. Jekk qed tiffa bi versjoni 1.x,**_ **qri leqsa** _**.**_
 

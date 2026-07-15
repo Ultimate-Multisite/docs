@@ -3,7 +3,7 @@ title: 'Lección 10: Día de lanzamiento'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lección 10: Día del Lanzamiento {#lesson-10-launch-day}
+# Lección 10: Día del Lanzamiento
 
 Ya está todo construido. Antes de abrir las puertas, esta lección recorre la lista de verificación previa al lanzamiento para asegurarse de que nada esté roto, faltando o sea vergonzoso.
 

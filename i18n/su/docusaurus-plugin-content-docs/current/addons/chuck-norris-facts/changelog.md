@@ -3,7 +3,7 @@ title: Fakta Chuck Norris Catetan Parobahan
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Catetan Parobahan Fakta Chuck Norris {#chuck-norris-facts-changelog}
+# Catetan Parobahan Fakta Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Ditambahkeun: Fungsionalitas apdet otomatis ngaliwatan server apdet Ultimate Multisite

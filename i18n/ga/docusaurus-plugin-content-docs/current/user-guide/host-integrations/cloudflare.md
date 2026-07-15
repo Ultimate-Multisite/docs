@@ -3,7 +3,7 @@ title: Céadtaíocht Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Iompairte le Cloudflare {#cloudflare-integration}
+# Iompairte le Cloudflare
 
 ## Oibríocht {#overview}
 Is é Cloudflare cur leimeann de chuidaithe (CDN) agus cur chuile chuid de chuid website, ag cur isteach agus ag cur chuile. Féachfaidh an chéad seo a bheith iarracht ar chuid rialacha domáin idir Ultimate Multisite agus Cloudflare, go háirithe leat ar fáil leat do chuid installation multisite ar subdomain.

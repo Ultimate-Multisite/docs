@@ -3,7 +3,7 @@ title: Flux de onboarding pentru Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxul de Onboarding în Theme Builder {#theme-builder-onboarding-flow}
+# Fluxul de Onboarding în Theme Builder
 
 Superdav AI Agent v1.12.0 introduce un **flux de onboarding în Theme Builder** ghidat care vă ajută să creați o temă personalizată bazată pe blocuri în timpul configurării inițiale. Acest lucru înlocuiește modul Site Builder (cel vechi) cu o abordare mai flexibilă, asistată de un agent.
 

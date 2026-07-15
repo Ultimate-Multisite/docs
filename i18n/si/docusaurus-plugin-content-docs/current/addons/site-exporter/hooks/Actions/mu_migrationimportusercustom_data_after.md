@@ -4,7 +4,7 @@ title: ක්‍රියාව - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# ක්‍රියාව: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
+# ක්‍රියාව: mu_migration/import/user/custom_data_after
 
 අභිරුචි පරිශීලක දත්ත නිර්යාත කිරීමෙන් පසු ක්‍රියාත්මක වේ.
 

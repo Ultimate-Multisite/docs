@@ -3,7 +3,7 @@ title: AffiliateWP Jounal chanjman
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Jounal chanjman AffiliateWP {#affiliatewp-changelog}
+# Jounal chanjman AffiliateWP
 
 Vèsyon: 2.0.1 - Lage nan dat 2025-09-28
 

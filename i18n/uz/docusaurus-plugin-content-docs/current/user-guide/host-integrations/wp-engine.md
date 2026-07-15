@@ -3,7 +3,7 @@ title: WP Engine Integratsiyasi
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integratsiyasi {#wp-engine-integration}
+# WP Engine Integratsiyasi
 
 ## Umumiy Ko'rinish {#overview}
 WP Engine bu WordPress saytlari uchun optimallashtirilgan ish faoliyati, xavfsizlik va kengaytirish imkoniyatini taqdim etadigan premium boshqariladigan WordPress hosting platformasidir. Bu integratsiya Ultimate Multisite va WP Engine o'rtasida domenlarni avtomatik sinxronlashni imkon beradi.

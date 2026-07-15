@@ -3,7 +3,7 @@ title: থীম-সচেতন দক্ষতা
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills (থিম-সচেতন দক্ষতা) {#theme-aware-skills}
+# Theme-Aware Skills (থিম-সচেতন দক্ষতা)
 
 Superdav AI Agent v1.10.0 ত চাৰিটা নতুন theme-aware built-in skills যোগ কৰা হৈছে, যিবোৰ স্বয়ংক্রিয়ভাৱে আপোনাৰ active WordPress theme লৈ adapt কৰে। এই দক্ষতাসমূহে আপোনাৰ theme-ৰ architecture আৰু features অনুসৰি বিশেষ নির্দেশিকা আৰু ক্ষমতা প্ৰদান কৰে।
 

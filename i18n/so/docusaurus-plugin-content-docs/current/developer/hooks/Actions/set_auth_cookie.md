@@ -4,7 +4,7 @@ title: Ficil - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Ficil: set_auth_cookie {#action-setauthcookie}
+# Ficil: set_auth_cookie
 
 Waxay dhacdaa isla markiiba ka hor inta aan la dejin cookie-ga aqoonsiga.
 

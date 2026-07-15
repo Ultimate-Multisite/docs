@@ -3,7 +3,7 @@ title: Produk Domain lan Harga
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk Domain dan Harga {#domain-products-and-pricing}
+# Produk Domain dan Harga
 
 Produk domain itu cara sampeyan ngontrol harga, TLD (Top-Level Domains), privasi WHOIS, lan pilihan penyedia layanan. Saben produk domain iku produk standar Multisite Ultimate karo tab tambahan **Domain Settings**.
 

@@ -4,7 +4,7 @@ title: Action - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Action: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Action: wu_domain_seller_complete_registration
 
 এটি তখন ট্রিগার হয় যখন একটি পেমেন্ট এমন কোনো স্ট্যাটাসে পরিবর্তিত হয় যা ডোমেইন রেজিস্ট্রেশন শুরু করার জন্য ট্রিগার করে।
 

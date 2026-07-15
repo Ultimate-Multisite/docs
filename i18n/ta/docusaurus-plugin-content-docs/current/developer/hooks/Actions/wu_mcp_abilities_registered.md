@@ -4,7 +4,7 @@ title: Action - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
+# Action: wu_mcp_abilities_registered
 
 ஒரு நிறுவனத்திற்கு (entity) MCP திறன்கள் (abilities) பதிவு செய்யப்பட்ட பிறகு இது தூண்டப்படுகிறது.
 

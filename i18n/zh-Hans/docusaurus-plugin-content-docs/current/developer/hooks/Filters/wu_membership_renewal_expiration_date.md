@@ -4,7 +4,7 @@ title: 过滤器 - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# 过滤器: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+# 过滤器: wu_membership_renewal_expiration_date
 
 过滤已计算的到期日期，使其在续订后设置。
 

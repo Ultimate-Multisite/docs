@@ -3,7 +3,7 @@ title: Til aðilfargildi og ávarðtölur
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Samræmi og Tilbylgdir við Klientum {#customer-feedback--issue-reporting}
+# Samræmi og Tilbylgdir við Klientum
 
 Gratis AI Agent v1.5.0 hefur innbyggt kerfi fyrir tilbylgdir og tilbylgdir um það sem er ekki hlutverandi, sem leysir því að endvirkjafar geti merkt óhjákvæmilega svar og tilgreina vanda beint frá chat-menulinum. Þetta kerfi felur í sér stjórnun samþykki, sjálfskipta tilbylgdir kommando og AI-hjálpað sorteringu bak við skjalann.
 

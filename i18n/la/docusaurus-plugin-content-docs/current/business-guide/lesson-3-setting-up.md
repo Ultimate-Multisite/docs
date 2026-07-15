@@ -3,7 +3,7 @@ title: 'Lectio 3: Rete Tuum Configurare'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lectio 3: Rete Tuum Constituendum {#lesson-3-setting-up-your-network}
+# Lectio 3: Rete Tuum Constituendum
 
 Tempus est aedificandi. In hac lectione Ultimate Multisite installabis et fundamentum retis FitSite configurabis. Omne consilium hic cum provincia exercitationis corporis in mente capitur.
 

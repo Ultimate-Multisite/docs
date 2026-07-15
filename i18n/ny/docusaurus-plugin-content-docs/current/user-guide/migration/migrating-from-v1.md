@@ -3,7 +3,7 @@ title: Kuyenda ku V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Kufunsa ku Kufunsa ku V1 {#migrating-from-v1}
+# Kufunsa ku Kufunsa ku V1
 
 ## Ultimate Multisite yali kukhala ku family ya 1.x yali yakhala ku family ya 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

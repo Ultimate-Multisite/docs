@@ -3,7 +3,7 @@ title: Isdhexgalka cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Intégrasiya-da cPanel {#cpanel-integration}
+# Intégrasiya-da cPanel
 
 ## Aragtida {#overview}
 cPanel waa mid ka mid ah hababka ugu caansan ee maamulka web hosting-ka loo isticmaalo dad badan oo adeegsada hosting-ka wadaagga ah iyo kuwa gaarka ah. Isku xirnaanshaha (integration) kan waxay kuu oggolaanaysaa isdhaafsiga tooska ah ee domain-ka (domain syncing) inta u dhaxaysa Ultimate Multisite iyo cPanel, taasoo kuu ogolaanaysa inaad si toos ah u ku dari lahayd alias-yada domain-ka iyo subdomain-yada barnaamijkaaga cPanel.

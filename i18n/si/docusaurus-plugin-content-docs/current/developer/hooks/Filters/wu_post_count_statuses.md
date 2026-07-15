@@ -4,7 +4,7 @@ title: පෙරහන - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# පෙරහන: wu_post_count_statuses {#filter-wupostcountstatuses}
+# පෙරහන: wu_post_count_statuses
 
 ගණනය කළ යුතු පළ කිරීමේ තත්ත්වය වෙනස් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි. පෙරනිමියෙන්, පළ කළ සහ private පළ කිරීම් ගණනය කරයි
 

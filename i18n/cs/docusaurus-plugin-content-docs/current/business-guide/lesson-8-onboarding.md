@@ -3,7 +3,7 @@ title: 'Ukázka 8: Onboarding zákazníků'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lekce 8: Onboarding klientů {#lesson-8-customer-onboarding}
+# Lekce 8: Onboarding klientů
 
 Získat si klienta je jen polovina práce. Pokud se přihlásí, cítí se přetížený a nikdy se nevrátí, jste ho ztratili. Tato lekce navrhuje zážitek, který z nového registrace promění aktivního, zapojeného klienta.
 

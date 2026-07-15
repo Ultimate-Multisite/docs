@@ -3,7 +3,7 @@ title: 'Lekcja 10: Dzień startu'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekcja 10: Dzień Startu {#lesson-10-launch-day}
+# Lekcja 10: Dzień Startu
 
 Wszystko zostało zbudowane. Zanim otworzysz drzwi, ta lekcja przeprowadzi Cię przez listę kontrolną przed startem, aby upewnić się, że nic nie jest zepsute, brakujące ani żenujące.
 

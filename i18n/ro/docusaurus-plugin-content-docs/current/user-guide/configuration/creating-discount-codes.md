@@ -3,7 +3,7 @@ title: Crearea codurilor de reducere
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Crearea codurilor de reducere (v2) {#creating-discount-codes-v2}
+# Crearea codurilor de reducere (v2)
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 

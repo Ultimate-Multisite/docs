@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Ukuhlanganiswa kwe-RunCloud {#runcloud-integration}
+# Ukuhlanganiswa kwe-RunCloud
 
 ## Uhlolojikelele {#overview}
 RunCloud iyinkundla yokuphatha iseva esekelwe efwini ekuvumela ukuthi usabalalise futhi uphathe kalula izinhlelo zokusebenza zewebhu kumaseva akho efu. Lokhu kuhlanganiswa kunika amandla ukuvumelanisa okuzenzakalelayo kwama-domain nokuphathwa kwezitifiketi ze-SSL phakathi kwe-Ultimate Multisite ne-RunCloud.

@@ -3,7 +3,7 @@ title: מיומנות מפרט אתר
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# מיומנות אפיון האתר (Site Specification Skill) {#site-specification-skill}
+# מיומנות אפיון האתר (Site Specification Skill)
 
 **מיומנות אפיון האתר** היא גישה מובנית לאיסוף המטרות, קהל היעד ומותג של האתר שלך. מידע זה נשמר בזיכרון **site_brief** שלך, ואג'נטים (Agents) מתייחסים אליו לאורך סשנים שונים כדי לספק סיוע עקבי ומותאם להקשר.
 

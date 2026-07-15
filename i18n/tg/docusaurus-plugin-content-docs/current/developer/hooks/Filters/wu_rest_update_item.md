@@ -4,7 +4,7 @@ title: Филтр - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Филтр: wu_rest_update_item {#filter-wurestupdateitem}
+# Филтр: wu_rest_update_item
 
 Филтр мекунад, ки оё идома додани дархост иҷозат аст ё не.
 

@@ -3,7 +3,7 @@ title: Destkirina Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Sazkirina Ultimate Multisite {#installing-ultimate-multisite}
+# Sazkirina Ultimate Multisite
 
 :::note
 Ev perwerdehiyê texmîn dike ku hûn berê WordPress Multisite saz kirine û konfîgûr kiriye. Ji bo fêrkirina çawa, [ev perwerdehî](https://www.wpbeginner.com/glossary/multisite/) ji WP Beginner kontrol bikin.

@@ -3,7 +3,7 @@ title: હોસ્ટિંગર મલ્ટિ-ટેનન્સી
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 मध्ये Hostinger multi-tenancy क्षमता जोडली आहे, ज्यामुळे होस्ट केलेल्या डोमेन विद्यमान Hostinger डोमेन मॅपिंग इंटिग्रेशनसोबत सॉवरेन टेनंट प्रोविजिनेशनमध्ये सहभागी होऊ शकतात.
 

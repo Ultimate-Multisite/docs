@@ -4,7 +4,7 @@ title: 'Acció - wu_delete_{$this->object_id}'
 sidebar_label: 'wu_delete_{$this->object_id}'
 _i18n_hash: 8525ca1e747ac6a29314c90b0a52b3bb
 ---
-# Aquesta acció: wu_delete_\{$this->object_id\} {#action-wudeletethis-objectid}
+# Aquesta acció: wu_delete_\{$this->object_id\}
 
 Permet als desenvolupadors de plugins afegir accions al procés de eliminació.
 

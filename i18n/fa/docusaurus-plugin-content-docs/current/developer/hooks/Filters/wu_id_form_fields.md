@@ -4,7 +4,7 @@ title: 'فیلتر - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# فیلتر: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# فیلتر: wu_\{$id\}_form_fields
 
 فیلدهای یک فرم را فیلتر می‌کند. فرم با استفاده از ID موجود در نام فیلتر شناسایی می‌شود.
 

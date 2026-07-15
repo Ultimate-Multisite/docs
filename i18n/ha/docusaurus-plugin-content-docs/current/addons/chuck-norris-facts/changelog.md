@@ -3,7 +3,7 @@ title: Rajistar Canje-canje na Gaskiyoyin Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Tarihin Canje-canje na Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Tarihin Canje-canje na Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * An ƙara: Aikin sabuntawa ta atomatik ta hanyar sabar sabuntawa ta Ultimate Multisite

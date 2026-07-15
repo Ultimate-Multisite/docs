@@ -3,7 +3,7 @@ title: Ŝanĝoprotokolo de Ultimate AI Connector por WebLLM
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ŝanĝoprotokolo de Ultimate AI Connector por WebLLM {#ultimate-ai-connector-for-webllm-changelog}
+# Ŝanĝoprotokolo de Ultimate AI Connector por WebLLM
 
 ## Versio 1.1.0 — Eldonita je 2026-04-09 {#version-110--released-on-2026-04-09}
 

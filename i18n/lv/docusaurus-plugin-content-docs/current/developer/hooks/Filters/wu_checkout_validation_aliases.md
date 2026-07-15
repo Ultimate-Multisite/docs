@@ -4,7 +4,7 @@ title: Filtrs - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filtrs: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Filtrs: wu_checkout_validation_aliases
 
 Ļauj plugin izstrādātājiem pievienot pielāgotus aizstājvārdus veidlapas validatorā.
 

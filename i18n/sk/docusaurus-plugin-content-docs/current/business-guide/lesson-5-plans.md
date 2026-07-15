@@ -3,7 +3,7 @@ title: 'Lekcia 5: Navrhovanie vašich plánov'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcia 5: Navrhovanie vašich plánov {#lesson-5-designing-your-plans}
+# Lekcia 5: Navrhovanie vašich plánov
 
 Úrovne vašich plánov nie sú len cenové úrovne -- sú odrazom toho, ako vaši špecializovaní zákazníci skutočne fungujú. V tejto lekcii navrhnete úrovne produktov, ktoré zodpovedajú reálnym potrebám fitness podnikov v rôznych fázach.
 

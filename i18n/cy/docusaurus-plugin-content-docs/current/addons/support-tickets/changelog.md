@@ -3,7 +3,7 @@ title: Cofnod Newidiadau Tocynnau Cymorth
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Cofnod Newidiadau Tocynnau Cefnogaeth {#support-tickets-changelog}
+# Cofnod Newidiadau Tocynnau Cefnogaeth
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Wedi gwella: Tynnwyd cyfeiriadur vendor/ o olrhain Git (eisoes wedi'i gwmpasu gan .gitignore), gan leihau maint yr ystorfa

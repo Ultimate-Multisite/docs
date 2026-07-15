@@ -4,7 +4,7 @@ title: Filtre - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filtre: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filtre: wu_checkout_field_templates
 
 Nos API pour ajouter de nouveaux modèles de champs se déclenchent ici.
 

@@ -3,7 +3,7 @@ title: 'Összhang 1: Miért nyer a szegmensspecifikus'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Összehangolt tanítás 1: Miért nyer a niche (szegmens) {#lesson-1-why-niche-wins}
+# Összehangolt tanítás 1: Miért nyer a niche (szegmens)
 
 Mielőtt bármilyen szoftverrel foglalkoznánk, meg kell értened, hogy egy konkrét közönség számára építeni, az a legfontosabb döntés, amit meghozhatsz.
 

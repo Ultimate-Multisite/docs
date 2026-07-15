@@ -3,7 +3,7 @@ title: Karakia Email Whakamana
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kaha Whakamahinga Email System {#managing-system-emails}
+# Kaha Whakamahinga Email System
 
 Ultimate Multisite i whaiiroa email system mō ngā mahi pēnei i whakamārama i te whakapūmau o te whakatū, whakaotanga o rāhui, me ngā whakawhiti i te whānau. Kei te tino pai ki ahau ki te whakahou i ngā template email-i mō te whaiaro kia tutuki i te āhuatanga o koe.
 

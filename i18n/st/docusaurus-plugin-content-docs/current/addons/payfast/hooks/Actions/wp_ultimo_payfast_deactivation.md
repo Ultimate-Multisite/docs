@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# Ketso: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# Ketso: wp_ultimo_payfast_deactivation
 
 Dumella dikarolo tse ding tsa plugin ho hokela mekgwa ya tsona bakeng sa ho tima
 

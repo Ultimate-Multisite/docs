@@ -3,7 +3,7 @@ title: Kako instalirati WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kako namestiti WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kako namestiti WordPress Multisite?
 
 WordPress Multisite vam omogoča, da imate mrežno delo spletnih strani na eni instalaciji. To je vgrajen funkcija, vendar ni aktivna po podrazmerju.
 

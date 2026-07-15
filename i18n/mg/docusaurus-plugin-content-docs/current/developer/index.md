@@ -3,7 +3,7 @@ title: Antontan-taratasy ho an'ny Mpamorona
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Antontan-taratasy ho an’ny Developer {#developer-documentation}
+# Antontan-taratasy ho an’ny Developer
 
 Ity torolàlana ity dia manome ny developer ny zava-drehetra ilaina mba hifandray amin’i Ultimate Multisite, hanitatra azy, na hamolavola addon ho an’i Ultimate Multisite. Ultimate Multisite dia manova tambajotra WordPress Multisite ho sehatra Website-as-a-Service (WaaS).
 

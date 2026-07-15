@@ -3,7 +3,7 @@ title: Basisconcepten
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Basisconcepten {#basic-concepts}
+# Basisconcepten
 
 Voor een nieuwe WordPress Multisite-gebruiker en iemand die net is begonnen met Ultimate Multisite, kunnen er in het begin veel nieuwe woorden en zinnen zijn die je moet leren. Het leren ervan is een belangrijke taak omdat je het platform en hoe het als geheel werkt moet begrijpen.
 

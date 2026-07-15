@@ -4,7 +4,7 @@ title: Ação - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site {#action-movesite}
+# Action: move_site
 
 Disparada depois de um site ter sido movido para uma nova rede.
 

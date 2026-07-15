@@ -3,7 +3,7 @@ title: ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪ੍ਰਵਾਹ
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪ੍ਰਵਾਹ (v2) {#the-registration-flow-v2}
+# ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪ੍ਰਵਾਹ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਲਈ ਹੈ।**_
 

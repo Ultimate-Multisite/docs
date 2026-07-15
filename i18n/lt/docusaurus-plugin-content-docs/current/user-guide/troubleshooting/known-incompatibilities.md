@@ -3,7 +3,7 @@ title: Žinomos nekompatibilitės
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Žinomi nekompatybiai su kitais pluginais {#known-incompatibilities-with-other-plugins}
+# Žinomi nekompatybiai su kitais pluginais
 
 Po instalavimo ir aktyvuojame Ultimate Multisite, galite susitikti su problemomis dėl nereikalaujamų nekompatabilitietų su kitais pluginais.
 

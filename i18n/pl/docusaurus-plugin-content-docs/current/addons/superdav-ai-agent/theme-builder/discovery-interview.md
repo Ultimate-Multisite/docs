@@ -3,7 +3,7 @@ title: Wywiad odkrywczy
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Wywiad odkrywczy {#discovery-interview}
+# Wywiad odkrywczy
 
 **Wywiad odkrywczy** to pierwszy etap procesu projektowania w Theme Builder. Pozwala on zebrać informacje na temat Twojej witryny, biznesu i preferencji projektowych, aby stworzyć spersonalizowany motyw.
 

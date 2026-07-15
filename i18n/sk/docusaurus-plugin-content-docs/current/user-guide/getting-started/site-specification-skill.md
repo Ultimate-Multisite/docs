@@ -3,7 +3,7 @@ title: Špecifikácia webovej stránky
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skilna špecifikácia webu {#site-specification-skill}
+# Skilna špecifikácia webu
 
 **Skilna špecifikácia webu** je štruktúrovaný prístup k zachytávaniu cieľov vášho webu, publikum a identickosti značky. Táto informácia sa ukladá v vašej pamäti **site_brief**, ktorú agenti odkazujú počas všetkých sesíi na poskytnutie konzistentnej a kontextu-zameranej pomoci.
 

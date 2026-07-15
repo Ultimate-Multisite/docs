@@ -3,7 +3,7 @@ title: Cum să obții ajutor
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Cum să obții ajutor {#how-to-get-help}
+# Cum să obții ajutor
 
 Ai primit cheia de licență validă, iar împreună cu aceasta ai acces la echipa noastră care te poate ajuta să rezolvi problemele pe care le-ai putea întâmpina în timpul configurării Ultimate Multisite.
 

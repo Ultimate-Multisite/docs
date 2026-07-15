@@ -3,7 +3,7 @@ title: Whakamutunga o te Whakawhanaungatanga me te Whakaraupoko Aotūroa
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Whakamutunga o Membership me Bloking o Site {#membership-expiration-and-site-blocking}
+# Whakamutunga o Membership me Bloking o Site
 
 Ko tēnei whakatairanga ahau e whakamārama ana i te kaha o Ultimate Multisite ki te whakahaere i te whakatutuki o membership, te whawhai o trial, me te whakahokingi (blocking) o site frontend. E whakatakotoria ko te whakatika o te maere o te membership mai active ki expired, ngā whakaritenga e whakatō ana ahau mō ā whaiaro, me te mea hei whakamārama i te mea ka mau te site he tino whakahoki i roto i te wā e whawhai i te membership.
 

@@ -4,7 +4,7 @@ title: Զտիչ - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Զտիչ՝ wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Զտիչ՝ wu_element_maybe_extract_arguments
 
 Ավելացնում է ընդհանուր զտիչ, որը թույլ է տալիս մշակողներին ընդլայնել այս վերլուծիչը՝ լրացուցիչ կառուցողների կամ փլագինների հետ աշխատելու համար։
 

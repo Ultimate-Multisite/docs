@@ -4,7 +4,7 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie {#action-setloggedincookie}
+# Action: set_logged_in_cookie
 
 ലോഗിൻ ചെയ്ത യൂസർക്ക് വേണ്ട authentication cookie സജ്ജമാക്കുന്നതിന് തൊട്ടുമുമ്പ് ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

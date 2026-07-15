@@ -3,7 +3,7 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite tõlitud {#translating-ultimate-multisite}
+# Ultimate Multisite tõlitud
 
 Ultimate Multisite on ontwikkeld inglise keeles, kuid plugi on täielikult tõlgitav ja me tervitame aktiivselt tõlgitamise katkendusi.
 

@@ -3,7 +3,7 @@ title: ਡਿਜ਼ਾਈਨ ਦਿਸ਼ਾ
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction {#design-direction}
+# Design Direction
 
 **Design Direction** step aapko apne theme ke visual design ko review, refine, aur final karne deta hai, isse pehle ki Theme Builder poora theme generate kare.
 

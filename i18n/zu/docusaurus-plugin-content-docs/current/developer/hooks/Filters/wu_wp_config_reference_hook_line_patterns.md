@@ -4,7 +4,7 @@ title: Isihlungi - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Isihlungi: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Isihlungi: wu_wp_config_reference_hook_line_patterns
 
 Sihlola amaphethini amathathu lapho sizama ukuthola lapho singafaka khona ama-constants ethu:
 

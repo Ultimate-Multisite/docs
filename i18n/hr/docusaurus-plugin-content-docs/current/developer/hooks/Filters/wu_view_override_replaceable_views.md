@@ -4,7 +4,7 @@ title: Filtar - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtar: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtar: wu_view_override_replaceable_views
 
 Omogućuje programerima dodavanje dodatnih mapa na zamjenjivi popis.
 

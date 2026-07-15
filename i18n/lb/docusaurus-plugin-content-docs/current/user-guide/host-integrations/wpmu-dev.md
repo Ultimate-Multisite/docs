@@ -3,7 +3,7 @@ title: WPMU DEV Integration
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration mit WPMU DEV {#wpmu-dev-integration}
+# Integration mit WPMU DEV
 
 ## Überblick {#overview}
 WPMU DEV isch e umfassendi WordPress-Plattform, wo Hosting, Plugins und Service für WordPress-Sites aabietet. D'Integration ermöglicht automatisch Domain-Synchronisation und SSL-Zertifikat-Verwaltig zwüsche Ultimate Multisite und de WPMU DEV Hosting.

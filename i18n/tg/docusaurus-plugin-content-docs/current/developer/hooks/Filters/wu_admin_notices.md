@@ -4,7 +4,7 @@ title: Филтр - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Филтр: wu_admin_notices {#filter-wuadminnotices}
+# Филтр: wu_admin_notices
 
 Ба таҳиягарон иҷозат медиҳад, ки огоҳиҳои админро, ки аз ҷониби Ultimate Multisite илова шудаанд, филтр кунанд.
 

@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve i GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Changelog {#gocardless-changelog}
+# GoCardless Changelog
 
 Versioni: 1.0.3 - Publikuar më 2026-05-05
 * Rregullim: Sajtet pezull jetime tani pastrohen kur një membership GoCardless anulohet ndërsa është në gjendje pezull ose on-hold

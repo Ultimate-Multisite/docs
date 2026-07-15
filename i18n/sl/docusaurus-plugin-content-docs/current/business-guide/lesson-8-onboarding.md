@@ -3,7 +3,7 @@ title: 'Lekcija 8: Uvajanje strank'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lekcija 8: Uvajanje strank {#lesson-8-customer-onboarding}
+# Lekcija 8: Uvajanje strank
 
 Pridobiti stranko k registraciji je le polovica dela. Če se prijavi, se počuti preobremenjeno in se nikoli ne vrne, ste jo izgubili. Ta lekcija oblikuje izkušnjo, ki novo registracijo spremeni v aktivno, vključeno stranko.
 

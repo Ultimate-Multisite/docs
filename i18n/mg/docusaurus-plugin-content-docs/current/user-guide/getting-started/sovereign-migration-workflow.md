@@ -3,7 +3,7 @@ title: Fomba fiasa fifindrana Sovereignty
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Fomba Fi Mba Fifindrana (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# Fomba Fi Mba Fifindrana (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manome fefy fanamarinana fifindrana rehefa mandefa subsite tsotra ho ao anatin' ny fototra tenant sovereign.
 

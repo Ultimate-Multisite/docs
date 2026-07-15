@@ -3,7 +3,7 @@ title: Captcha-veranderingslogboek
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha-veranderingslog {#captcha-changelog}
+# Captcha-veranderingslog
 
 Version: 1.5.0 - Vrygestel op 2026-05-22
 * Nuut: Hard-stop rate limiter — tel elke GET en POST op captcha-beskermde oppervlaktes (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) en antwoord met HTTP 429, ’n `Retry-After` header, en ’n ewekansige tarpit-slaap (1–5s, hard beperk tot 15s).

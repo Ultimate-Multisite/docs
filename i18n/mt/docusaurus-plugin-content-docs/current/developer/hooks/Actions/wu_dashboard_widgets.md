@@ -4,7 +4,7 @@ title: Azzjoni - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# Azzjoni: wu_dashboard_widgets {#action-wudashboardwidgets}
+# Azzjoni: wu_dashboard_widgets
 
 Ippermetti lill-iżviluppaturi tal-plugin iżidu widgets mal-Panel tad-Dashboard tan-Netwerk.
 

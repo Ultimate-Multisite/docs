@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# ක්‍රියාව: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# ක්‍රියාව: wu_handle_user_meta_fields
 
 plugin සංවර්ධකයන්ට අවශ්‍ය නම් පරිශීලක meta දත්ත වෙනස් ආකාරවලින් සුරැකීමට ඉඩ දෙයි.
 

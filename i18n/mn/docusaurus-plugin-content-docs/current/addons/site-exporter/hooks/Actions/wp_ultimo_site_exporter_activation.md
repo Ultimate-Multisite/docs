@@ -4,7 +4,7 @@ title: Үйлдэл - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Үйлдэл: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Үйлдэл: wp_ultimo_site_exporter_activation
 
 Залгаасын бусад хэсгүүд идэвхжүүлэхэд зориулсан өөрсдийн үйлдлүүдийг холбох боломж олгоно.
 

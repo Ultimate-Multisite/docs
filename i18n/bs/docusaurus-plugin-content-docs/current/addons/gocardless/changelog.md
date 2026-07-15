@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Dnevnik promjena GoCardlessa {#gocardless-changelog}
+# Dnevnik promjena GoCardlessa
 
 Verzija: 1.0.3 - Objavljeno 2026-05-05
 * Popravak: Sajtovi koji su ostali u statusu čekanja sada se čiste kada se članstvo GoCardlessa otkaže dok je u statusu čekanja ili privremeno zaustavljeno.

@@ -4,7 +4,7 @@ title: Sía - wp_ultimo_woocommerce_should_use_subscriptions
 sidebar_label: wp_ultimo_woocommerce_should_use_subscriptions
 _i18n_hash: 9167c7b5a3151c5752b983f5c890606f
 ---
-# Sía: wp_ultimo_woocommerce_should_use_subscriptions {#filter-wpultimowoocommerceshouldusesubscriptions}
+# Sía: wp_ultimo_woocommerce_should_use_subscriptions
 
 Leyfðu þróunaraðilum að þvinga notkun WooCommerce Subscriptions.
 

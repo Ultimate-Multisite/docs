@@ -3,7 +3,7 @@ title: Деградиране на план
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Сваляне на план (v2) {#downgrading-a-plan-v2}
+# Сваляне на план (v2)
 
 _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до Ultimate Multisite версия 2.x.**_
 

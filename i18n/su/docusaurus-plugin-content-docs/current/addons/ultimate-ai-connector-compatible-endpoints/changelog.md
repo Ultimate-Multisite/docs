@@ -3,7 +3,7 @@ title: Log Parobahan Panyambung AI Pamungkas pikeun Endpoint anu Cocog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector pikeun Endpoint anu Cocog Changelog {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI Connector pikeun Endpoint anu Cocog Changelog
 
 ## Vérsi 2.0.0 — Dileupaskeun dina 2026-04-24 {#version-200--released-on-2026-04-24}
 

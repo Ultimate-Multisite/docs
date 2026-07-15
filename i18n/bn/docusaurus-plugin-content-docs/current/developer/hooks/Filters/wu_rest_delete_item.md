@@ -4,7 +4,7 @@ title: ফিল্টার - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filter: wu_rest_delete_item
 
 এটি ফিল্টার করে যে অনুরোধটি (request) চালিয়ে যাওয়া অনুমোদিত কিনা।
 

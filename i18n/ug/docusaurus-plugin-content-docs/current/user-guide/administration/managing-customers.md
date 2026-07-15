@@ -3,7 +3,7 @@ title: Muttalibni boshqarish
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Müşterileri Yönetme {#managing-customers}
+# Müşterileri Yönetme
 
 **Customers** sayfası ağınızda kayıtlı üyelerin listesini gösterir. Bu sayfa isim, e-posta adresi, son giriş zamanı ve kullanıcıyı site yöneticisi olarak alt sitesine giriş yapmanızı sağlayan bir **switch to** bağlantısı dahil olmak üzere temel kullanıcı bilgilerini görüntüler.
 

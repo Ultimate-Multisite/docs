@@ -4,7 +4,7 @@ title: Azzjoni - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Azzjoni: wp_ultimo_load {#action-wpultimoload}
+# Azzjoni: wp_ultimo_load
 
 Jiskatta meta d-dipendenzi kollha jkunu ġew mgħobbija
 

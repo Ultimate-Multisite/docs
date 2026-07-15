@@ -3,7 +3,7 @@ title: ڈیش بورڈ کا جائزہ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ڈیش بورڈ کا جائزہ {#dashboard-overview}
+# ڈیش بورڈ کا جائزہ
 
 Ultimate Multisite کا اپنا ایک مخصوص **Dashboard** ہے جو Ultimate Multisite مینو کے تحت ملتا ہے، اور یہ Network Dashboard میں بھی ویجٹس شامل کرتا ہے۔ اس مضمون میں ہم دونوں جگہوں پر موجود چیزوں کا جائزہ لیں گے۔
 

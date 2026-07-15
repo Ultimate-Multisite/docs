@@ -4,7 +4,7 @@ title: Филтр - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Филтр: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Филтр: wu_stripe_existing_plan_id
 
 ID-и нақшаро, ки бояд санҷида шавад, филтр мекунад. Агар ин вуҷуд дошта бошад, обунаи нав аз ин нақша истифода мекунад.
 

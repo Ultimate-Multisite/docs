@@ -3,7 +3,7 @@ title: Формы обратной связи для Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Контактные формы в Site Builder {#site-builder-contact-forms}
+# Контактные формы в Site Builder
 
 Superdav AI Agent v1.10.0 добавляет возможность создавать контактные формы прямо из чата с помощью агента Site Builder. Это позволяет добавить полностью функциональные контактные формы на любую страницу, не покидая чат.
 

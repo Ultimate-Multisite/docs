@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Filter: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# Filter: wu_search_models_functions
 
 ပလပ်အင် (plugin) တည်ဆောက်သူများအနေဖြင့် ရှာဖွေမှုပုံစံ (search models) လုပ်ဆောင်ချက်များကို ပိုမိုထည့်သွင်းနိုင်စေရန် ခွင့်ပြုသည့် filter တစ်ခုဖြစ်သည်။
 

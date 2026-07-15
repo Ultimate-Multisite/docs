@@ -4,7 +4,7 @@ title: Chiito - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Chiito: wu_model_post_save {#action-wumodelpostsave}
+# Chiito: wu_model_post_save
 
 Chinoitika mushure mekunge object yachengetwa mudatabase.
 

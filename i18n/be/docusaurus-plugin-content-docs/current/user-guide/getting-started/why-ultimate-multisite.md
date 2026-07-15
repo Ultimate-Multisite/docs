@@ -3,7 +3,7 @@ title: Паشيчклі ў Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Чаму Ultimate Multisite {#why-ultimate-multisite}
+# Чаму Ultimate Multisite
 
 Калі вы трапілі на гэты артыкул, верагодна, вы чулі, што наш plugin можа быць рашэннем, каб ваша бізнес- ідэя стала рэальнасцю. Мы паважаем, што вы знайцеце адказы, якія вам патрэбны, калі прачытаеце гэты тэкст.
 

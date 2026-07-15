@@ -3,7 +3,7 @@ title: Stadi ya Estetiki ya Mfumo wa Ubunifu
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ufundi wa Estetiki ya Design System {#design-system-aesthetics-skill}
+# Ufundi wa Estetiki ya Design System
 
 **Ufundi wa Estetiki ya Design System** ni njia iliyopangwa ya kuboresha utambulisho wa kuonekana wa tovuti yako. Inakusaidia kufanya maamuzi yanayolingana kuhusu fonti (typography), rangi, nafasi (spacing), na tokens za mwendo (motion tokens) ambazo huunda mfumo wako wa muundo (design system).
 

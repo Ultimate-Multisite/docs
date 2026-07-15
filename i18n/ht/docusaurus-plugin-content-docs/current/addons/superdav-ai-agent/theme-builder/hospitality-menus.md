@@ -3,7 +3,7 @@ title: Meni Ospitalite
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Meni Ospitalite {#hospitality-menus}
+# Meni Ospitalite
 
 Fonksyon **Meni Ospitalite** a pèmèt Theme Builder jenere epi entegre paj meni manje ak bwason ki estriktire dirèkteman nan site WordPress ou a.
 

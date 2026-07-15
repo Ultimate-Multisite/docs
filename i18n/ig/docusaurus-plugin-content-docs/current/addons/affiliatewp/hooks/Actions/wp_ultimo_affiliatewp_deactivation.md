@@ -4,7 +4,7 @@ title: Omume - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Omume: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Omume: wp_ultimo_affiliatewp_deactivation
 
 Mee ka akụkụ ndị ọzọ nke plugin jikọọ usoro ha maka imebi ọrụ
 

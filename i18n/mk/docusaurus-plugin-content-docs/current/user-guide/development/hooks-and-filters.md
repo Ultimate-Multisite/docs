@@ -3,7 +3,7 @@ title: Хукове и Филтри
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Хукови и филтри {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Хукови и филтри
 
 Ultimate Multisite е составен од многу функции и пребарувања во базата на податоци. Тој има хукови (hooks) и филтри кои ќе ви овозможат да ги промените или додадете нови кодови во постоечките функции.
 

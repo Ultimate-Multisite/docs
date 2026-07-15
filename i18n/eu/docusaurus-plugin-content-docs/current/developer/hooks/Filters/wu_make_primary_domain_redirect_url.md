@@ -4,7 +4,7 @@ title: Iragazkia - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Iragazkia: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Iragazkia: wu_make_primary_domain_redirect_url
 
 Domeinu bat nagusi bihurtu ondoren birbideratze-URLa iragazten du.
 

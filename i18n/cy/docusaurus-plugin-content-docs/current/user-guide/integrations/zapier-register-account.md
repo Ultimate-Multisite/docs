@@ -3,7 +3,7 @@ title: Reisglau un cyfrifolion drwy Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Gênyniad: Cyflwyno cyfrifolion drwy Zapier {#event-register-an-account-via-zapier}
+# Gênyniad: Cyflwyno cyfrifolion drwy Zapier
 
 Yn ylenniad [Integrating Ultimate Multisite with Zapier](zapier.md), ddebethau ni dysgu sut i'w defnyddio Zapier i gyflawni gweithredoedd gwahanol yn Ultimate Multisite ar adffrywiadau a digwyddiadau (triggers and events). Yn ylenniad hwn, byddwn yn dangos eich sut i chynllunio cyfathrebu â'r cyfathrebuion o'r trefn. Byddwn yn defnyddio Google Sheets fel ffynhonnell data a anfon y gairiadau i Ultimate Multisite i gyfrifolio cyfrifolion.
 

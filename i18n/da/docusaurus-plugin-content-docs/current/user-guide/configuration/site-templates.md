@@ -3,7 +3,7 @@ title: Sitetempler
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Hjemmeside-skabeloner (v2) {#site-templates-v2}
+# Hjemmeside-skabeloner (v2)
 
 _**OBS: Denne artikel henviser til Ultimate Multisite version 2.x. Hvis du bruger version 1.x, se denne artikel.**_
 

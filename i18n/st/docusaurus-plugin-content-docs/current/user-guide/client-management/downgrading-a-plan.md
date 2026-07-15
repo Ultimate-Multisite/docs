@@ -3,7 +3,7 @@ title: Ho lula le tšhobo
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Ho lapa le lapa (v2) {#downgrading-a-plan-v2}
+# Ho lapa le lapa (v2)
 
 _**LIPOTSE E KOTSI: Le tsela ea pele e hlalosang sehlopha sa Ultimate Multisite v2.x.**_
 

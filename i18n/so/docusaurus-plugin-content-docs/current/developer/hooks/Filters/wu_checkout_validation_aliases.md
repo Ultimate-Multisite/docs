@@ -4,7 +4,7 @@ title: Shaandhee - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Shaandho: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Shaandho: wu_checkout_validation_aliases
 
 U oggolow horumariyeyaasha plugin-ka inay ku daraan alias-yo gaar ah gudaha ansixiyaha foomka.
 

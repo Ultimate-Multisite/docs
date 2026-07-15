@@ -3,7 +3,7 @@ title: Մուլտիսայթ Կառուցման Գործիք
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Սահմանման Ալգորիթմ (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Multisite Սահմանման Ալգորիթմ (Multisite Setup Wizard)
 
 Ultimate Multisite-ը ներառում է ներկառուցված wizard, որը ավտոմատ կերպով փոխակերպում է ստանդարտ WordPress տեղադրումը WordPress Multisite ցանցի։ Սա հնարավորություն է տալիս խուսափել ձեռքով `wp-config.php`-ի խմբագրումից կամ բազայի հրամաններ գործարկելու անհրաժեշտությունից։
 

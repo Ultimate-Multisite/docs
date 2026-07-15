@@ -3,7 +3,7 @@ title: Ukuhlawulwa
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ukuhlawulwa (v2) {#getting-paid-v2}
+# Ukuhlawulwa (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa ku-Ultimate Multisite inguqulelo 2.x.**_
 

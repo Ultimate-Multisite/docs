@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities {#filter-wucountrygetcities}
+# Filter: wu_country_get_cities
 
 ਇੱਕ ਦੇਸ਼ ਵਿੱਚ ਇੱਕ ਸੂਬੇ ਦੇ ਸ਼ਹਿਰਾਂ ਦੀ ਸੂਚੀ ਵਾਪਸ ਕਰਦਾ ਹੈ।
 

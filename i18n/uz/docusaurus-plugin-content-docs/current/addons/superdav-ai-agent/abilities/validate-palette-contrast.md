@@ -3,7 +3,7 @@ title: Palitra kontrastini tekshirish
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palitra kontrastini tekshirish {#validate-palette-contrast}
+# Palitra kontrastini tekshirish
 
 **Validate Palette Contrast** qobiliyati dizayn palitrangizdagi rang juftliklarini theme'ingizga qo‘llashdan oldin WCAG (Web Content Accessibility Guidelines) talablariga muvofiqligini tekshiradi.
 

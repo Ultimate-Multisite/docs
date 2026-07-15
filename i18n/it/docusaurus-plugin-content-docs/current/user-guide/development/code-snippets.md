@@ -3,7 +3,7 @@ title: Frammenti di codice
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Snippet di codice per v2 {#code-snippets-for-v2}
+# Snippet di codice per v2
 
 In pratica, gli snippet di codice per **WordPress** vengono usati per eseguire determinate azioni che altrimenti potrebbero richiedere un plugin più piccolo dedicato. Tali snippet di codice vengono inseriti in uno dei file core di WordPress o del tema (generalmente il file functions.php del tuo tema) oppure possono essere usati come MU plugin.
 

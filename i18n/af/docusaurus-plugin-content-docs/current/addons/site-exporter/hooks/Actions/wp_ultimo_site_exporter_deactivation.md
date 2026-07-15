@@ -4,7 +4,7 @@ title: Action - wp_ultimo_site_exporter_deactivation
 sidebar_label: wp_ultimo_site_exporter_deactivation
 _i18n_hash: a8447c3f63a6d34be4aaf69565e07bfd
 ---
-# Aksie: wp_ultimo_site_exporter_deactivation {#action-wpultimositeexporterdeactivation}
+# Aksie: wp_ultimo_site_exporter_deactivation
 
 Laat ander dele van die plugin hul roetines vir deaktivering aanheg.
 

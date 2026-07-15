@@ -3,7 +3,7 @@ title: CyberPanel Интеграция
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Entegrasi {#cyberpanel-integration}
+# CyberPanel Entegrasi
 
 Bu dax, Ultimate Multisite CyberPanel entegrasyonunu nasıl yapılandıracağınızı açıklar ki ağınızdaki haritalanmış alan adları otomatik olarak CyberPanel'de sanal ana bilgisayar (virtual host) olarak eklenip çıkarılsın ve Let's Encrypt aracılığıyla isteğe bağlı otomatik SSL sağlanabilsin.
 

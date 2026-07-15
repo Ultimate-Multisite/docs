@@ -3,7 +3,7 @@ title: הגדרה ותצורת ספק
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: הגדרה ותצורת ספק {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: הגדרה ותצורת ספק
 
 התוסף Domain Seller מגיע עם אשף הגדרה מודרך שמוביל אותך דרך כל שלב נדרש. עמוד זה מכסה את זרימת האשף וכיצד להגדיר או להגדיר מחדש ספקים לאחר מכן.
 

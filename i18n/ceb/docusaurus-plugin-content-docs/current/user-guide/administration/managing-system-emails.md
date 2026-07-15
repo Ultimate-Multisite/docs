@@ -3,7 +3,7 @@ title: Pagdumala sa mga Email sa Sistema
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Pagdumala sa System Emails {#managing-system-emails}
+# Pagdumala sa System Emails
 
 Ang Ultimate Multisite nagpadala og lain-laing system emails para sa mga panghitabo sama sa signup confirmations, payment receipts, ug membership changes. Mahimo nimo i-customize kining email templates aron magmatch sa imong brand.
 

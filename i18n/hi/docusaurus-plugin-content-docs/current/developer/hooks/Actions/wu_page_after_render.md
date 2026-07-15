@@ -4,7 +4,7 @@ title: कार्य - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 यह प्लगइन डेवलपर्स को मौका देता है कि वे पेज को दिखाने के बाद अपना अतिरिक्त कंटेंट जोड़ सकें।
 

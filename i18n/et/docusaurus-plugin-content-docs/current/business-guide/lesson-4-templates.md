@@ -3,7 +3,7 @@ title: '4. õppetund: Nišimallide loomine'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Õppetund 4: Nišimallide loomine {#lesson-4-building-niche-templates}
+# Õppetund 4: Nišimallide loomine
 
 Mallid on sinu nišiväärtuspakkumise tuum. Fitness-stuudio omanik, kes registreerub ja näeb saiti, mis näeb juba välja nagu fitnessi veebisait -- koos treeningtundide ajakavade, treeneriprofiilide ja sobivate piltidega -- jääb palju tõenäolisemalt kasutajaks kui see, kes näeb tühja lõuendit.
 

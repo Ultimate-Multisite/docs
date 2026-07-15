@@ -4,7 +4,7 @@ title: Sefe - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Sefe: send_auth_cookies {#filter-sendauthcookies}
+# Sefe: send_auth_cookies
 
 E dumella ho thibela auth cookies hore li se ke tsa romeloa kannete ho client.
 

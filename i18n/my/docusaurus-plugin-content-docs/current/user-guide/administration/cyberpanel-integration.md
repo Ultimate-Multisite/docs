@@ -3,7 +3,7 @@ title: CyberPanel ပေါင်းစပ်မှု
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ပေါင်းစပ်မှု {#cyberpanel-integration}
+# CyberPanel ပေါင်းစပ်မှု
 
 ဤလမ်းညွှန်သည် Ultimate Multisite CyberPanel ပေါင်းစပ်မှုကို မည်သို့ဖွဲ့စည်းရမည်ကို ရှင်းပြထားပါသည်။ ၎င်းအားဖြင့် သင့် network အတွင်းရှိ domain များကို CyberPanel တွင် virtual hosts အဖြစ် အလိုအလျောက် ထည့်သွင်းခြင်း (နှင့် ဖယ်ရှားခြင်း) တို့ကို လုပ်ဆောင်နိုင်ပြီး၊ Let's Encrypt မှတစ်ဆင့် အလိုအလျောက် SSL စီစဉ်ပေးခြင်းကိုလည်း ရွေးချယ်နိုင်ပါသည်။
 

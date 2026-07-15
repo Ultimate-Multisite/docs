@@ -3,7 +3,7 @@ title: Kusaka Domain pa Header
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Kusaka Domain mu Header {#header-domain-search}
+# Kusaka Domain mu Header
 
 Gwiritsani ntchito setup iyi mukafuna form yaing'ono ya header yomwe imayambitsa kusaka domain, kenako imalola kasitomala kusankha kuchokera ku domains omwe alipo mkati mwa Ultimate Multisite checkout.
 

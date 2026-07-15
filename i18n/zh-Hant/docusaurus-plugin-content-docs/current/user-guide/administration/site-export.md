@@ -3,7 +3,7 @@ title: 網站匯出
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# 網站匯出 {#site-export}
+# 網站匯出
 
 **網站匯出 (Site Export)** 管理頁面讓網路管理員能夠將單一網站或整個網路打包成可下載的壓縮檔案 (archive)，用於遷移、備份或交接工作。
 

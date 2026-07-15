@@ -3,7 +3,7 @@ title: Cloudways انضمام
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways انضمام {#cloudways-integration}
+# Cloudways انضمام
 
 ## جائزہ {#overview}
 Cloudways ایک منظم cloud hosting platform ہے جو آپ کو DigitalOcean، AWS، Google Cloud، اور مزید جیسے مختلف cloud providers پر WordPress سائٹس deploy کرنے کی اجازت دیتا ہے۔ یہ انضمام Ultimate Multisite اور Cloudways کے درمیان خودکار domain syncing اور SSL certificate management کو فعال بناتا ہے۔

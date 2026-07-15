@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Àlẹ̀mọ́: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Àlẹ̀mọ́: wu_password_require_special
 
 Ṣe àlẹ̀mọ́ bóyá kí a nílò àwọn àmì àkànṣe nínú àwọn ọ̀rọ̀ aṣínà.
 

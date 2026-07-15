@@ -3,7 +3,7 @@ title: E-kirjade ja teadete saatmine
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-kirjade ja teadaannete saatmine (v2) {#sending-emails-and-broadcasts-v2}
+# E-kirjade ja teadaannete saatmine (v2)
 
 _**OLULINE MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 

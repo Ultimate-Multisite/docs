@@ -4,7 +4,7 @@ title: Action - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Action: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Action: wu_captcha_before_field
 
 यह एक्शन तब ट्रिगर होता है जब कैप्चा फ़ील्ड को रेंडर (render) किया जाना होता है, उससे ठीक पहले।
 

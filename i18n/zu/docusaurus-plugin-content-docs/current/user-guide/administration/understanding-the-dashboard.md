@@ -3,7 +3,7 @@ title: Ukuqonda i-Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ukuqonda i-Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
+# Ukuqonda i-Ultimate Multisite Dashboard
 
 Ngaphambi kokuba singene ngokujulile ezinkethweni zokuhlela ezithuthuke kakhulu nasezicini zokusebenza ze-Ultimate Multisite, ake sibheke i-dashboard.
 

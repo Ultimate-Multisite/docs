@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c3ef7f96b45f5b4175d13585a6cca368
 ---
-# Action: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
+# Action: wu_page_{$this->id}_before_render
 
 நாம் பக்கத்தை அச்சிடுவதற்கு முன், கூடுதல் உள்ளடக்கத்தைச் சேர்க்க plugin உருவாக்குநர்களுக்கு இது அனுமதிக்கிறது.
 

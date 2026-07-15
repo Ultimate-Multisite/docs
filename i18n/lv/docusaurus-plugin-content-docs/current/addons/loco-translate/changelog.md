@@ -3,7 +3,7 @@ title: Loco Translate izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate izmaiņu žurnāls {#loco-translate-changelog}
+# Loco Translate izmaiņu žurnāls
 
 ### 1.0.1 {#101}
 * Uzlabota saderība ar jaunāko Loco Translate versiju

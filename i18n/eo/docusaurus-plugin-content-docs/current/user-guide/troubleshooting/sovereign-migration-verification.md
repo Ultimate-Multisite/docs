@@ -3,7 +3,7 @@ title: Verifikado de Sovrana Migrado
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migra Verifikado {#sovereign-migration-verification}
+# Sovereign Migra Verifikado
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inkluz WP-CLI verifikacondos por migracio de tenant souverain. Uzuwch ilin, kun tenant migration, vizit SSO aŭ izolita instalado ne funkcias kiel esperas.
 

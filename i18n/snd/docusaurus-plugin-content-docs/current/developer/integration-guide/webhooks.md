@@ -3,7 +3,7 @@ title: Webhook سنڀال
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook سنڀال {#webhook-handling}
+# Webhook سنڀال
 
 ٻاهرين خدمتن کان واقعا حاصل ڪرڻ ۽ Ultimate Multisite سان ڊيٽا هم وقت ڪرڻ لاءِ ڪسٽم webhook آخري نقطا ٺاهيو.
 

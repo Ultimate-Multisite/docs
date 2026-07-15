@@ -4,7 +4,7 @@ title: Filtè - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filtre: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filtre: wu_is_development_mode
 
 Pèmèt devlopè ekstansyon ajoute tès anplis pou mòd devlopman.
 

@@ -3,7 +3,7 @@ title: Estética do Sistema de Diseño Habilidade
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Habilidad de Estética do Sistema de Design {#design-system-aesthetics-skill}
+# Habilidad de Estética do Sistema de Design
 
 A **habilidade de estética do sistema de design** é unha forma guiada de refinar a identidade visual do seu sitio. Axuda a tomar decisións consistentes sobre tipografía, cor, espaciamento e tokens de movimiento que definen o seu sistema de design.
 

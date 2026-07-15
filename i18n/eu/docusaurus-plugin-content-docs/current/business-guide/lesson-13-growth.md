@@ -3,7 +3,7 @@ title: 'Lehen Udalak: Eskala Uparra'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ustea 13: Eskala {#lesson-13-scaling-up}
+# Ustea 13: Eskala
 
 Esku-er plataforma dagoen, iragailariak (paying customers) dut. Hau eskaia da zerrendatutako operazio bat txiki operazio bat bizitoriko negozio batean transformatzeko aukera jakostea — infraestruktura eskala egin, operazio automatikatu eta iragailari pertsona erabilgararen handiagoa.
 

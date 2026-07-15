@@ -3,7 +3,7 @@ title: सेटिङ्स सन्दर्भ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# सेटिङ्स सन्दर्भ {#settings-reference}
+# सेटिङ्स सन्दर्भ
 
 यो पृष्ठले दैनिक प्रशासन र Ultimate Multisite मा हालैका व्यवहार परिवर्तनहरूलाई असर गर्ने सेटिङ्स ट्र्याक गर्छ।
 

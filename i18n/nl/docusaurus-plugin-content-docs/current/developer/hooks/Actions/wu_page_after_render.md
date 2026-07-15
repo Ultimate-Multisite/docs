@@ -4,7 +4,7 @@ title: Actie - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Actie: wu_page_after_render {#action-wupageafterrender}
+# Actie: wu_page_after_render
 
 Laat pluginontwikkelaars extra inhoud toevoegen na het afdrukken van de pagina
 

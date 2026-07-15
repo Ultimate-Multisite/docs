@@ -4,7 +4,7 @@ title: 操作 - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# 动作: update_network {#action-updatenetwork}
+# 动作: update_network
 
 在现有网络更新后触发。
 

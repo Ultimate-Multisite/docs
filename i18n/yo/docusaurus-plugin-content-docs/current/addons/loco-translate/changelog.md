@@ -3,7 +3,7 @@ title: Loco Translate Àkọsílẹ̀ Àwọn Àyípadà
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Àkọọlẹ Àyípadà Loco Translate {#loco-translate-changelog}
+# Àkọọlẹ Àyípadà Loco Translate
 
 ### 1.0.1 {#101}
 * Ìbámu pẹ̀lú ẹ̀yà Loco Translate tuntun ti ni ilọsiwaju

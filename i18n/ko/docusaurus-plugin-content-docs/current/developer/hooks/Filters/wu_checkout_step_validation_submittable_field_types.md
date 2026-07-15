@@ -4,7 +4,7 @@ title: 필터 - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# 필터: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# 필터: wu_checkout_step_validation_submittable_field_types
 
 개발자가 필드가 자동 제출 가능할 때 검사를 우회하도록 허용합니다.
 

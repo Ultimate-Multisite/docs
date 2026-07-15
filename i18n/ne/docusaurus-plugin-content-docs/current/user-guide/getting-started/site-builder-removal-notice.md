@@ -3,7 +3,7 @@ title: साइट बिल्डर मोड हटाउने सूचन
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# साइट बिल्डर मोड हटाउने सूचना {#site-builder-mode-removal-notice}
+# साइट बिल्डर मोड हटाउने सूचना
 
 **Superdav AI Agent v1.12.0 मा Site Builder mode हटाउन गरिएको छ।** यदि तपाईंले Site Builder mode प्रयोग गर्दै हुनुहुन्थ्यो भने, थीम निर्माण र साइट सेटअपका लागि **Setup Assistant agent** मा माइग्रेट गर्नुपर्नेछ।
 

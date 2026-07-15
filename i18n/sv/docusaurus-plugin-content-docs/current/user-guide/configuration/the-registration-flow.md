@@ -3,7 +3,7 @@ title: Registreringsflödet
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registreringsflödet (v2) {#the-registration-flow-v2}
+# Registreringsflödet (v2)
 
 _**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 

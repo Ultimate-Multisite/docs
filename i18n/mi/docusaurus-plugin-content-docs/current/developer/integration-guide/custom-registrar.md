@@ -3,7 +3,7 @@ title: Te Hanga i tētahi Tuituitanga Kairēhita Ritenga
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Te Hanga i tētahi Whakaurunga Registrar Ritenga {#building-a-custom-registrar-integration}
+# Te Hanga i tētahi Whakaurunga Registrar Ritenga
 
 Ka whakamahi te Domain Seller addon i tētahi tauira **Integration Registry**. He akomanga PHP ia registrar e whakatinana ana i `Domain_Selling_Capability`, ā, ka rēhita i a ia anō mā te action hook `wu_domain_seller_register_capabilities`.
 

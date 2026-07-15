@@ -3,7 +3,7 @@ title: Kaip atšaukti prenumeratą
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kaip šaltu savo prenumeratą? {#how-can-i-cancel-my-subscription}
+# Kaip šaltu savo prenumeratą?
 
 Jei turite Ultimate Multisite licenciją, galite atsisakyti jos atnaujinimo laiku, kur jums reikia. Sekite tik šiu žingsniems:
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite документациясы {#ultimate-multisite-documentation}
+# Ultimate Multisite документациясы
 
 Ultimate Multisite документациясына кош келиңиз. Ultimate Multisite WordPress Multisite’ты толук Website as a Service (WaaS) платформасына айландырат.
 
@@ -18,7 +18,7 @@ WaaS платформаңызды орнотуу, конфигурациялоо
 
 Ultimate Multisite негизинде иштеп чыгуучулар үчүн техникалык маалымдама. Hooks маалымдамасын, REST API документациясын жана addon иштеп чыгуу колдонмолорун камтыйт.
 
-### [Addons](/addons) {#addons}
+### [Кошумчалар](/addons) {#addons}
 
 Ultimate Multisite’ты WooCommerce интеграциясы, аналитика, домен сатуу жана башка кошумча мүмкүнчүлүктөр менен кеңейтүүчү акы төлөнүүчү addon plugin’дер үчүн документация.
 

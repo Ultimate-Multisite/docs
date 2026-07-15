@@ -4,7 +4,7 @@ title: Филтер - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Филтер: wu_country_get_cities {#filter-wucountrygetcities}
+# Филтер: wu_country_get_cities
 
 Враћа листу градова за савезну државу у земљи.
 

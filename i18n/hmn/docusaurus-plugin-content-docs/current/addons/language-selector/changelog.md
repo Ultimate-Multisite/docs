@@ -3,7 +3,7 @@ title: Daim ntawv teev kev hloov tshiab rau Tus Xaiv Lus
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Keeb kwm kev hloov ntawm Tus Xaiv Lus {#language-selector-changelog}
+# Keeb kwm kev hloov ntawm Tus Xaiv Lus
 
 Qib: 1.1.3 - Tso tawm rau 2026-05-05
 * Kho: Cov variable nkag tam sim no tau ntxuav kom nyab xeeb lawm, thiab cov npe hook tshwj xeeb tau ntxiv prefix kom tiv thaiv kev sib tsoo nrog cov plugin ntawm lwm tus

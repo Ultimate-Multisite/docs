@@ -4,7 +4,7 @@ title: Filtre - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filtè: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Filtè: wu_country_get_administrative_division_name
 
 Retounen bèl non sou-divizyon administratif peyi a.
 

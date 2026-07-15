@@ -3,7 +3,7 @@ title: การผสานรวม cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# การผสานรวม cPanel {#cpanel-integration}
+# การผสานรวม cPanel
 
 ## ภาพรวม {#overview}
 cPanel เป็นหนึ่งในแผงควบคุมเว็บโฮสติ้งที่ได้รับความนิยมมากที่สุด ซึ่งผู้ให้บริการโฮสติ้งแบบแชร์และแบบเฉพาะจำนวนมากใช้งานกัน การผสานรวมนี้ช่วยให้สามารถซิงค์โดเมนระหว่าง Ultimate Multisite และ cPanel ได้โดยอัตโนมัติ ทำให้คุณสามารถเพิ่ม domain alias และ subdomain ไปยังบัญชี cPanel ของคุณได้อัตโนมัติ

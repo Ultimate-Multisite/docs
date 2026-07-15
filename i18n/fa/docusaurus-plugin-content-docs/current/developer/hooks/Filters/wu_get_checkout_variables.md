@@ -4,7 +4,7 @@ title: فیلتر - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# فیلتر: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# فیلتر: wu_get_checkout_variables
 
 به توسعه‌دهندگان پلاگین اجازه می‌دهد تا تنظیمات از پیش تعیین شده یک صفحه تسویه حساب را فیلتر کنند.
 

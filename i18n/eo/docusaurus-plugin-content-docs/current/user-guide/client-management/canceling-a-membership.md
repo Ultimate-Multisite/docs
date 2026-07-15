@@ -3,7 +3,7 @@ title: Anulari Membroiron
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membro Canceli (v2) {#canceling-a-membership-v2}
+# Membro Canceli (v2)
 
 _**IMPORTANTE NOTA: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
 

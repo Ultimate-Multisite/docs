@@ -3,7 +3,7 @@ title: Predmemoriranje promptova s obzirom na pružatelja
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Predmemoriranje promptova svjesno pružatelja {#provider-aware-prompt-caching}
+# Predmemoriranje promptova svjesno pružatelja
 
 Superdav AI Agent v1.12.0 uvodi **predmemoriranje promptova svjesno pružatelja**, koje optimizira troškove API-ja i latenciju predmemoriranjem promptova kod različitih LLM pružatelja. Svaki pružatelj ima različite mehanizme i konfiguracije predmemoriranja.
 

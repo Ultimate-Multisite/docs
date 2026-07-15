@@ -3,7 +3,7 @@ title: Apakah WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Apakah WordPress Multisite? {#what-is-wordpress-multisite}
+# Apakah WordPress Multisite?
 
 Dalam teras WordPress, terdapat satu ciri yang dipanggil 'Multisite' yang bermula sejak tahun 2010 ketika pelancaran WordPress 3.0. Sejak itu, ia telah melalui beberapa pengemaskinian yang bertujuan untuk memperkenalkan ciri-ciri baharu dan memperketatkan keselamatan.
 

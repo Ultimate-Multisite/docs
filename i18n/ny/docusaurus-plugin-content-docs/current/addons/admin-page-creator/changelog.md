@@ -3,7 +3,7 @@ title: Wopanga Tsamba la Oyang'anira Mbiri ya Zosintha
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Mbiri ya Zosintha ya Wopanga Tsamba la Admin {#admin-page-creator-changelog}
+# Mbiri ya Zosintha ya Wopanga Tsamba la Admin
 
 ### Mtundu 1.9.0 - Watulutsidwa pa 2026-01-18 {#version-190---released-on-2026-01-18}
 

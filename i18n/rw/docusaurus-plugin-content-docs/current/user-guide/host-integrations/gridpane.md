@@ -3,7 +3,7 @@ title: Ubwumvikane bw'Integrasyon ya GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ubushobozi n'Ubwumelera (GridPane Integration) {#gridpane-integration}
+# Ubushobozi n'Ubwumelera (GridPane Integration)
 
 ## Umuhaka (Overview) {#overview}
 GridPane ni control panel yakwumelera yisibonelo siza kwi-WordPress, yashaka abafundi bafana n'abantu bakwenzile WordPress. Ubushobozi (integration) uyu hunika ukuhambisana kwedomain (domain syncing) no ukuqoqa i-SSL certificate ngaphandle kokuba umuntu ahlale ekhulunywa phakathi kweUltimate Multisite no GridPane.

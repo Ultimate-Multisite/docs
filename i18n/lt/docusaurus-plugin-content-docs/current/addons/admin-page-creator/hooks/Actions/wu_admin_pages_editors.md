@@ -4,7 +4,7 @@ title: Veiksmas - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Veiksmas: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Veiksmas: wu_admin_pages_editors
 
 Leidžia plugin kūrėjams pridėti naujų redaktoriaus parinkčių =)
 

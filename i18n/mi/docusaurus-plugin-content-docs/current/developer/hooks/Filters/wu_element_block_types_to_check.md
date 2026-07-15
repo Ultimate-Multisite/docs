@@ -4,7 +4,7 @@ title: Tātari - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Tātari: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Tātari: wu_element_block_types_to_check
 
 Tērā pea me tāpiri poraka anō ā muri ake.
 

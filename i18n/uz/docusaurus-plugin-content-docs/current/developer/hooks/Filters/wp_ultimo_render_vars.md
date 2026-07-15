@@ -4,7 +4,7 @@ title: Filtr - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filtr: wp_ultimo_render_vars {#filter-wpultimorendervars}
+# Filtr: wp_ultimo_render_vars
 
 Plagin dasturchilariga global tarzda render kontekstiga qo‘shimcha o‘zgaruvchi qo‘shishga ruxsat beradi.
 

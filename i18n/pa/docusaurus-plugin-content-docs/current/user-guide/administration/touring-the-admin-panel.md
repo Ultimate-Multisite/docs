@@ -3,7 +3,7 @@ title: Admin Panel ਦਾ ਦੌਰਾ
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel ਦਾ ਦੌਰਾ {#touring-the-admin-panel}
+# Admin Panel ਦਾ ਦੌਰਾ
 
 Ultimate Multisite ਦਾ ਉਦੇਸ਼ ਸੰਭਵ ਤੌਰ 'ਤੇ ਜਿੰਨਾ ਹੋ ਸਕੇ ਸਧਾਰਨ ਅਤੇ ਆਪਣੇ ਆਪ ਸਮਝ ਆਉਣ ਵਾਲਾ ਹੋਣਾ ਹੈ, ਪਰ ਇੰਨੇ ਤਾਕਤਵਰ ਔਜ਼ਾਰ ਨਾਲ ਇੱਕ ਮਾਰਗਦਰਸ਼ਿਤ ਦੌਰਾ ਮਦਦਗਾਰ ਹੋ ਸਕਦਾ ਹੈ। ਆਓ admin ਪੰਨਿਆਂ ਰਾਹੀਂ ਲੰਘੀਏ ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਸਮਝ ਆ ਜਾਵੇ ਕਿ ਕੀ ਕਿੱਥੇ ਹੈ।
 

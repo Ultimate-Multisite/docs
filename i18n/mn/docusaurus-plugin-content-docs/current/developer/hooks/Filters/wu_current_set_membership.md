@@ -4,7 +4,7 @@ title: Шүүлтүүр - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Шүүлтүүр: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Шүүлтүүр: wu_current_set_membership
 
 Хөгжүүлэгчдэд өгөгдмөл үйлдлийг өөрчилж, одоогийн гишүүнчлэлийг өөрөөр тохируулах боломж олгоно.
 

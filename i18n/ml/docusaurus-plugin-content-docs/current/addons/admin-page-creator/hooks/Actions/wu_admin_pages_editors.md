@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Action: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Action: wu_admin_pages_editors
 
 പ്ലഗിൻ ഡെവലപ്പർമാർക്ക് പുതിയ എഡിറ്റർ ഓപ്ഷനുകൾ ചേർക്കാൻ ഇത് അനുവദിക്കുന്നു =)
 

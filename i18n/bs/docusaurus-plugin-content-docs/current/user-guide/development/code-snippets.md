@@ -3,7 +3,7 @@ title: Kodni snipeti
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets za v2 {#code-snippets-for-v2}
+# Code Snippets za v2
 
 Ukratko, kodni snipeti za **WordPress** se koriste za obavljanje određenih radnji koje bi inače zahtijevale poseban, manji plugin. Takvi kodni snipeti se postavljaju u jednu od WordPress osnovnih ili tematskih datoteka (obično je to `functions.php` datoteka vaše teme) ili se mogu koristiti kao MU plugin.
 

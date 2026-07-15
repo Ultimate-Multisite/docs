@@ -3,7 +3,7 @@ title: Saytni eksport qilish
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Saytni Eksport {#site-export}
+# Saytni Eksport
 
 **Site Export** admin sahifasi tarmoq administratorlari bir saytni, yoki butun tarmoqni migratsiya, muvofiqlashtirish (backup) yoki topshirish ishlari uchun yuklab olish mumkin bo'lgan arxivga o'rab olish imkonini beradi.
 

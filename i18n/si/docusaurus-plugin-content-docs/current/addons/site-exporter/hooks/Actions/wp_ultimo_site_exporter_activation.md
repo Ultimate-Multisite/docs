@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# ක්‍රියාව: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# ක්‍රියාව: wp_ultimo_site_exporter_activation
 
 සක්‍රිය කිරීම සඳහා plugin එකේ අනෙකුත් කොටස්වලට තම ක්‍රියාමාර්ග අමුණීමට ඉඩ දෙන්න.
 

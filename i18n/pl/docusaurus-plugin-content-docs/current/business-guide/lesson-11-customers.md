@@ -3,7 +3,7 @@ title: 'Lekcja 11: Znajdowanie klientów'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lekcja 11: Znajdowanie Klientów {#lesson-11-finding-customers}
+# Lekcja 11: Znajdowanie Klientów
 
 Świetna platforma bez klientów to tylko hobby. Ta lekcja omawia, jak pozyskać klientów w konkretnej niszy branżowej – strategie, które działają specjalnie dlatego, że skupiasz się na jednej branży.
 

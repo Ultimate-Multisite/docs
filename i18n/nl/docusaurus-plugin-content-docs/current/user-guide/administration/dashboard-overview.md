@@ -3,7 +3,7 @@ title: Dashboard Overzicht
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview {#dashboard-overview}
+# Dashboard Overview
 
 Ultimate Multisite heeft een speciale **Dashboard** onder het Ultimate Multisite-menu, en voegt ook widgets toe aan het Netwerk Dashboard. Dit artikel behandelt wat je op beide plaatsen zult zien.
 

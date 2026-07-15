@@ -3,7 +3,7 @@ title: API এন্ডপয়েন্ট নিবন্ধন করুন
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API এন্ডপয়েন্ট {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API এন্ডপয়েন্ট
 
 এই টিউটোরিয়ালে আপনি শিখবেন কীভাবে Ultimate Multisite /register API এন্ডপয়েন্ট ব্যবহার করে আপনার নেটওয়ার্কে নতুন গ্রাহকদের জন্য সম্পূর্ণ অনবোর্ডিং প্রক্রিয়া তৈরি করবেন এবং Zapier দিয়ে এটি কীভাবে করবেন।
 

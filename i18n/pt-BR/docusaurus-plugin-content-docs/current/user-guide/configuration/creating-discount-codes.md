@@ -3,7 +3,7 @@ title: Criando códigos de desconto
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Criando códigos de desconto (v2) {#creating-discount-codes-v2}
+# Criando códigos de desconto (v2)
 
 _**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 

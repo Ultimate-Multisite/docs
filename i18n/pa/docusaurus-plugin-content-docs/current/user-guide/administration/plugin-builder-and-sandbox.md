@@ -3,7 +3,7 @@ title: ਪਲੱਗਇਨ ਬਿਲਡਰ ਅਤੇ ਸੈਂਡਬਾਕਸ
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder ਅਤੇ Sandbox {#plugin-builder--sandbox}
+# Plugin Builder ਅਤੇ Sandbox
 
 Gratis AI Agent v1.5.0 ਵਿੱਚ **Plugin Builder & Sandbox System** ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ ਹੈ, ਜੋ AI assistant ਨੂੰ ਤੁਹਾਡੇ network 'ਤੇ WordPress plugins ਬਣਾਉਣ, activate ਕਰਨ ਅਤੇ manage ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ — ਇਹ ਸਭ ਇੱਕ ਸੁਰੱਖਿਅਤ, isolated sandbox environment ਰਾਹੀਂ ਹੁੰਦਾ ਹੈ।
 

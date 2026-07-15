@@ -3,7 +3,7 @@ title: Multi-tenancy isolering
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolering mellan olika hyresgäster (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Isolering mellan olika hyresgäster (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 stöder per-subsite databas- och filsystemisolering för suveräna hyresgäster. Detta håller kunddata separerad samtidigt som det bevarar nätverksnivåprovisionering, fakturering och administration.
 

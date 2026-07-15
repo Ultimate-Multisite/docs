@@ -3,7 +3,7 @@ title: Fara wani tsari
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Tarinke Wani (v2) {#upgrading-a-plan-v2}
+# Tarinke Wani (v2)
 
 _**MUHIMMIYA MAIYAR: wannan makala tana nufin Ultimate Multisite vershon 2.x.**_
 

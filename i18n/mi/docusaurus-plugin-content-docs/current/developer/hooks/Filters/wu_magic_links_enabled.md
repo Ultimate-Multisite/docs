@@ -4,7 +4,7 @@ title: Tātari - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Tātari: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Tātari: wu_magic_links_enabled
 
 Tātari mēnā kua whakahohea ngā hononga mākutu.
 

@@ -4,7 +4,7 @@ title: តម្រង - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# តម្រង: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# តម្រង: wu_woocommerce_line_item_params
 
 តម្រងប៉ារ៉ាម៉ែត្រដែលប្រើដើម្បីបង្កើតធាតុបន្ទាត់នៅលើកន្ត្រក WooCommerce មុនពេលបញ្ជូនអតិថិជនទៅការទូទាត់ប្រាក់ WooCommerce។
 

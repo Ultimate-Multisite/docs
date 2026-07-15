@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Plác Adah na ọkụmụta gị na Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# Plác Adah na ọkụmụta gị na Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector bụ **plugin mai** nke na-eme ka ị nwere ihe ndị ahụ iji plác adah na ọkụmụta gị direkt na sahọdụ edit page ha.
 

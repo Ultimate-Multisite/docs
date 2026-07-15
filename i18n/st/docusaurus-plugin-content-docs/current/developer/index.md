@@ -3,7 +3,7 @@ title: Litokomane tsa Baqapi
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Litokomane tsa Bahlahisi {#developer-documentation}
+# Litokomane tsa Bahlahisi
 
 Tataiso ena e fa bahlahisi tsohle tse hlokahalang ho kopanya le, ho atolosa, kapa ho ntshetsa pele di-addon bakeng sa Ultimate Multisite. Ultimate Multisite e fetola marangrang a WordPress Multisite hore e be sethala sa Website-as-a-Service (WaaS).
 

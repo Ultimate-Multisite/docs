@@ -3,7 +3,7 @@ title: Historia ya Mabadiliko ya Ukweli wa Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Historia ya Mabadiliko ya Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Historia ya Mabadiliko ya Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Imeongezwa: Uwezo wa kusasisha kiotomatiki kupitia seva ya kusasisha ya Ultimate Multisite.

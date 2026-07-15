@@ -3,7 +3,7 @@ title: テーマビルダー機能
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: ブロックテーマの骨組み構築と有効化 {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Abilities: ブロックテーマの骨組み構築と有効化
 
 Superdav AI Agent v1.12.0 は、チャットインターフェースからカスタムのブロックテーマを生成し、デプロイするための2つの強力な機能（アビリティ）を導入しました。
 

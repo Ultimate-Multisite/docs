@@ -4,7 +4,7 @@ title: कृती - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Action: wu_template_previewer {#action-wutemplatepreviewer}
+# Action: wu_template_previewer
 
 जेव्हा टेम्पलेट प्रीव्ह्यूअर (template previewer) च्या संदर्भात (context) कोड चालतो, तेव्हा हा ॲक्शन (Action) ट्रिगर होतो.
 

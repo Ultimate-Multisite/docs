@@ -4,7 +4,7 @@ title: Filtru - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filtru: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filtru: wu_stripe_existing_plan_id
 
 Jiffiltra l-ID tal-pjan li għandu jiġi ċċekkjat. Jekk dan jeżisti, is-subscription il-ġdida tuża dan il-pjan.
 

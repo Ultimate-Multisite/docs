@@ -3,7 +3,7 @@ title: Admin paneli ilə tanışlıq
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panelə tur {#touring-the-admin-panel}
+# Admin Panelə tur
 
 Ultimate Multisite mümkün qədər sadə və özünü izah edən olmağı hədəfləyir, amma bu qədər güclü bir alətdə bələdçili tur faydalı ola bilər. Gəlin, yerləşməyinizə kömək etmək üçün admin səhifələrini nəzərdən keçirək.
 

@@ -3,7 +3,7 @@ title: Fragmenty kodu
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmenty kodu dla wersji v2 {#code-snippets-for-v2}
+# Fragmenty kodu dla wersji v2
 
 Fragmenty kodu w **WordPress** służą do wykonywania określonych działań, które w przeciwnym razie wymagałyby osobnej, mniejszej wtyczki. Takie fragmenty kodu umieszcza się w jednym z plików rdzenia WordPressa lub motywu (zazwyczaj w pliku functions.php Twojego motywu) lub można ich używać jako wtyczki MU.
 

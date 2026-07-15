@@ -3,7 +3,7 @@ title: Обработка на вебхукови
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ракување со webhook-и {#webhook-handling}
+# Ракување со webhook-и
 
 Создајте прилагодени webhook крајни точки за да примате настани од надворешни услуги и да синхронизирате податоци со Ultimate Multisite.
 

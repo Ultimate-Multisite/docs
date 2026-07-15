@@ -3,7 +3,7 @@ title: Onboarding Flow sa Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Ang Superdav AI Agent v1.12.0 nagpaila og giya nga **Theme Builder onboarding flow** nga motabang nimo sa paghimo og custom block theme atol sa imong unang setup. Kini nagpuli na sa daan nga Site Builder mode ug usa ka mas flexible, agent-assisted nga pamaagi.
 

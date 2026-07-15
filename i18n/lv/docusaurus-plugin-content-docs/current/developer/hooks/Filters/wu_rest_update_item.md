@@ -4,7 +4,7 @@ title: Filtrs - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filtrs: wu_rest_update_item {#filter-wurestupdateitem}
+# Filtrs: wu_rest_update_item
 
 Filtrē, vai ir atļauts turpināt pieprasījumu vai nē.
 

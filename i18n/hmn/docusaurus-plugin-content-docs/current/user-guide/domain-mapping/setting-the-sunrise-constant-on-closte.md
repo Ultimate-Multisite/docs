@@ -3,7 +3,7 @@ title: Tsom qab txhua Constant Sunrise ha Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-tse Sunrise constant-tse true-tse {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-tse Sunrise constant-tse true-tse
 
 Kua muaj ti host providers xav tseg khawv wp-config.php rau security. Neeg tsis tuajm Ultimate Multisite yuav tsim khoj file rau hais constants uam tsim domain mapping thiab lwm yam txawv ua haujlwm. Closte yog ib qho host chaw ntawd.
 

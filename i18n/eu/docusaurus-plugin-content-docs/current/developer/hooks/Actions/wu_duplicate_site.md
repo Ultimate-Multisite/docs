@@ -4,7 +4,7 @@ title: Ekintza - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Ekintza: wu_duplicate_site {#action-wuduplicatesite}
+# Ekintza: wu_duplicate_site
 
 Garatzaileei site bikoizketa bat gertatu ondoren hook egiteko aukera ematen die.
 

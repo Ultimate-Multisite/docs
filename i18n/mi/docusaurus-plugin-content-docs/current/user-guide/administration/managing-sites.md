@@ -3,7 +3,7 @@ title: Kaitiakitanga o ngā wāhi
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Whakawhanaungatanga Wāhi (Managing Sites) {#managing-sites}
+# Whakawhanaungatanga Wāhi (Managing Sites)
 
 Ngā Wāhi (or subsites) he te pito o te mahi i runga i te WaaS (WordPress as a Service) mō koe. He tino whānui ngā wāhi o Ultimate Multisite:
 

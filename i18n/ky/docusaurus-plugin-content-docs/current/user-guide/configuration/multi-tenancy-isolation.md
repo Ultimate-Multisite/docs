@@ -3,7 +3,7 @@ title: Көп ишенимдүү изоляция
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Көп аректалы изоляция (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Көп аректалы изоляция (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ар бир подсайт үчүн өзүнчө базалык жана файл системасы изоляциясын колдогон өлкөлөр (tenants) үчүн колдонулат. Бул подсайттардын маалыматтарын бөлүп турат, ал эми тармак деңгээлинен сунуштоо, төлөмдөр жана администрацияны сактап турат.
 

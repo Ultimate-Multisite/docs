@@ -3,7 +3,7 @@ title: Integracija sa Cloudflare-om
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integracija {#cloudflare-integration}
+# Cloudflare Integracija
 
 ## Pregled {#overview}
 Cloudflare je vodeći pružatelj usluga za dostavu sadržaja (CDN) i sigurnosti koji pomaže u zaštiti i ubrzavanju web stranica. Ova integracija omogućava automatsko upravljanje domenama između Ultimate Multisite-a i Cloudflare-a, posebno za instalacije multisite-a sa poddomenama.

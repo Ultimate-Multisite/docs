@@ -4,7 +4,7 @@ title: ფილტრი - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# ფილტრი: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# ფილტრი: wu_connector_enforcement_option_keys
 
 ფილტრავს AI პროვაიდერის პარამეტრების გასაღებების სიას, რომლებიც მთავარი საიტიდან იძულებით გამოიყენება.
 

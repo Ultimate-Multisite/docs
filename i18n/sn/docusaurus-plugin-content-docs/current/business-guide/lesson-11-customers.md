@@ -3,7 +3,7 @@ title: 'Chidzidzo 11: Kuwana Vatengi'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Chidzidzo 11: Kuwana Vatengi {#lesson-11-finding-customers}
+# Chidzidzo 11: Kuwana Vatengi
 
 Chikuva chikuru chisina vatengi ingori hobi. Chidzidzo ichi chinovhara nzira dzekuwana vatengi mu niche vertical -- mazano anoshanda chaizvo nokuti wakatarisa paindasitiri imwe chete.
 

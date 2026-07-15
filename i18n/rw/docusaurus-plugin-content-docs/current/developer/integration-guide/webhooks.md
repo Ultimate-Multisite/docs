@@ -3,7 +3,7 @@ title: Gutunganya Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gutunganya Webhook {#webhook-handling}
+# Gutunganya Webhook
 
 Kora ahakirwa Webhook hihariye kugira ngo wakire ibyabaye bivuye muri serivisi zo hanze kandi uhuze amakuru na Ultimate Multisite.
 

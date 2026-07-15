@@ -4,7 +4,7 @@ title: Nzacha - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Nzacha: wu_rest_get_items {#filter-wurestgetitems}
+# Nzacha: wu_rest_get_items
 
 Na-enyocha ma a kwadoro ịga n'ihu na arịrịọ ahụ ma ọ bụ mba.
 

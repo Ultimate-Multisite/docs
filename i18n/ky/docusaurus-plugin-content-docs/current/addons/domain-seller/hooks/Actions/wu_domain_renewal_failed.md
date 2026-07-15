@@ -4,7 +4,7 @@ title: Аракет - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Аракет: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Аракет: wu_domain_renewal_failed
 
 Доменди узартуу аракети ийгиликсиз болгондон кийин иштейт.
 

@@ -3,7 +3,7 @@ title: Ffyddau Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Ffrawdau Gweithredoedd: Scaffold a Actiwpio Theming Blocked {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Ffrawdau Gweithredoedd: Scaffold a Actiwpio Theming Blocked
 
 Mae Superdav AI Agent v1.12.0 yn cyflwyno ddau gweithredol sy'n sylweddol i chi gynhyrchu a chwarae theming block newydd o'r chat interface.
 

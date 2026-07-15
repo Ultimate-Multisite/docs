@@ -3,7 +3,7 @@ title: Pirkuma formātāri
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms ir viegls un labāma veids eksperimentēt ar dažādām pieejām metodēm, mēģinot konvertēt jaunas klientus.
 

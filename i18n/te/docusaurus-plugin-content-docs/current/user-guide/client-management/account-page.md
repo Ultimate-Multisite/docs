@@ -3,7 +3,7 @@ title: క్లయింట్ Account పేజీ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# మీ కస్టమర్ Account పేజీ (v2) {#your-clients-account-page-v2}
+# మీ కస్టమర్ Account పేజీ (v2)
 
 _**ముఖ్య గమనిక: ఈ వ్యాసం Ultimate Multisite వెర్షన్ 2.x గురించి.**_
 

@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Àlẹmọ: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
+# Àlẹmọ: wu_checkout_calculate_prorate_credits
 
 Gba àwọn olùdàgbàsókè àfikún laaye láti ṣe àtúnṣe iye kirẹditi náà.
 

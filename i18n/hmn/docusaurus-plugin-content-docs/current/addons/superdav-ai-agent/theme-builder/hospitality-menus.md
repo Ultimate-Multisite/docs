@@ -3,7 +3,7 @@ title: Cov Ntawv Qhia Rau Kev Tos Txais Qhua
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Cov Menu Rau Kev Tos Qhua {#hospitality-menus}
+# Cov Menu Rau Kev Tos Qhua
 
 Qhov feature **Cov Menu Rau Kev Tos Qhua** tso cai rau Theme Builder tsim thiab embed cov nplooj menu zaub mov thiab dej haus uas muaj qauv ncaj qha rau hauv koj lub WordPress site.
 

@@ -3,7 +3,7 @@ title: 'Ders 6: Tecrûbeya Tomarbûnê'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Ders 6: Tecrûbeya Tomarbûnê {#lesson-6-the-signup-experience}
+# Ders 6: Tecrûbeya Tomarbûnê
 
 Herika checkout cihê ku eleqe dibe dahat e. Pêvajoyeke tomarbûnê ya tevlihev an gelemperî mişteriyan winda dike. Herikeke taybet bi nişê, ku bi zimanê wan diaxive û hêsan xuya dike, wan diguherîne mişteriyên dayî.
 

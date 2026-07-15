@@ -3,7 +3,7 @@ title: Operacionet e Llogarës Sovranë
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operacioneve Tenantet Sovranë {#sovereign-tenant-operations}
+# Operacioneve Tenantet Sovranë
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 shtoi mjete operacionale për tenantet soverane: subsit që funksionojnë me bazën e tyre të të dhënave, rrënjën e sistemit të skedarëve dhe kontekstin e rutimit (routing), ndërsa mbeten të dukshëm nga administratorët e rrjetit.
 

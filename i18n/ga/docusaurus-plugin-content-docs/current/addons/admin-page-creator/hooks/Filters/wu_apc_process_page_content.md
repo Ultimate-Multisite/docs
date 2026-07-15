@@ -4,7 +4,7 @@ title: Scagaire - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Scagaire: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# Scagaire: wu_apc_process_page_content
 
 Ligeann sé d’fhorbróirí cur isteach ar an ábhar deiridh
 

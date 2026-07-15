@@ -3,7 +3,7 @@ title: دمج لوحة تحكم Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# لوحة تحكم هستيا {#hestia-control-panel-integration}
+# لوحة تحكم هستيا
 
 هذا الدليل يشرح كيفية تكوين تكامل Ultimate Multisite مع هستيا بحيث تُضاف النطاقات المعيّنة في شبكتك تلقائيًا (وتُحذف) كـ Web Domain Aliases في هستيا.
 

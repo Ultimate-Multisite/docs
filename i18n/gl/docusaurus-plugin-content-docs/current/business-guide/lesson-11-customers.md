@@ -3,7 +3,7 @@ title: 'Lección 11: Atopar clientes'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lección 11: Atopar clientes {#lesson-11-finding-customers}
+# Lección 11: Atopar clientes
 
 Unha gran plataforma sen clientes é só unha afección. Esta lección cobre como adquirir clientes nun vertical de nicho: estratexias que funcionan especificamente porque estás centrado nunha industria.
 

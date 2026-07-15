@@ -3,7 +3,7 @@ title: Fanatsarana ny Fampifandraisana amin'ny Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Fanatsiarahana ny Fampandrosoana ny Control Panel {#enhance-control-panel-integration}
+# Fanatsiarahana ny Fampandrosoana ny Control Panel
 
 ## Famarahabana (Overview) {#overview}
 Ny Enhance dia control panel maoderina izay manome fahaizana automatique amin'ny hosting sy fitantanana. Ity fampifandraisana ity dia ahafahana mifandray ho azy ny domain sy ny fitantanana ny SSL certificate eo anelanelan'i Ultimate Multisite sy ny Enhance Control Panel.

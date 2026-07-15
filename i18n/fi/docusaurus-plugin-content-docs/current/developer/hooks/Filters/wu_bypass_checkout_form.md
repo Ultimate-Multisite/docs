@@ -4,7 +4,7 @@ title: Suodatin - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Suodatin: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Suodatin: wu_bypass_checkout_form
 
 Salli kehittäjien ohittaa tuloste ja asettaa uusi
 

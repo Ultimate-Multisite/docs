@@ -3,7 +3,7 @@ title: ການແປ Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ການແປ Ultimate Multisite {#translating-ultimate-multisite}
+# ການແປ Ultimate Multisite
 
 Ultimate Multisite ຖືກພັດທະນາເປັນພາສາອັງກິດ ແຕ່ plugin ນີ້ສາມາດແປໄດ້ຢ່າງເຕັມທີ່ ແລະ ພວກເຮົາຍິນດີຕ້ອນຮັບການປະກອບສ່ວນແປຂອງທຸກທ່ານ.
 

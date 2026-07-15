@@ -3,7 +3,7 @@ title: WPMU DEV 整合
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV 整合 {#wpmu-dev-integration}
+# WPMU DEV 整合
 
 ## 概覽 {#overview}
 WPMU DEV 是一個完整的 WordPress 平台，提供 WordPress 網站的主機、外掛和各項服務。這項整合功能可在 Ultimate Multisite 和 WPMU DEV 主機之間，自動同步網域並管理 SSL 憑證。

@@ -3,7 +3,7 @@ title: હેડર ડોમેન શોધ
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header Domain Search {#header-domain-search}
+# Header Domain Search
 
 આ setup નો ઉપયોગ કરો જ્યારે તમે એક નાનું header form ઇચ્છો છો જે domain search શરૂ કરે, પછી customer ને Ultimate Multisite checkout ની અંદર ઉપલબ્ધ domains માંથી પસંદ કરવા દે.
 

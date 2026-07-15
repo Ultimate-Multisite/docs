@@ -3,7 +3,7 @@ title: Integrointiopas
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integraatio-opas {#integration-guide}
+# Integraatio-opas
 
 Tämä opas käsittelee yleisiä integraatiomalleja Ultimate Multisite kanssa, mukaan lukien yhdistäminen ulkoisiin palveluihin, mukautettujen maksuyhdyskäytävien rakentaminen ja webhookien käsittely.
 

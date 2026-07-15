@@ -4,7 +4,7 @@ title: පෙරහන - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# පෙරහන: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# පෙරහන: wu_magic_link_enforce_ip
 
 IP ලිපිනය සත්‍යාපනය ක්‍රියාත්මක කළ යුතුද යන්න පෙරහන්න.
 

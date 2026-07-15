@@ -3,7 +3,7 @@ title: '9. nodarbība: Cenu noteikšana peļņas gūšanai'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9. nodarbība: cenu noteikšana peļņai {#lesson-9-pricing-for-profit}
+# 9. nodarbība: cenu noteikšana peļņai
 
 5. nodarbībā mēs noteicām sākotnējās cenas FitSite plāniem. Tagad pilnveidojam cenu stratēģiju ar paņēmieniem, kas palielina ieņēmumus, veicina pāreju uz augstākiem plāniem un samazina klientu aizplūšanu.
 

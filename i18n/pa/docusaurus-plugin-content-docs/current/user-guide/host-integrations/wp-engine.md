@@ -3,7 +3,7 @@ title: WP Engine ਏਕੀਕਰਨ
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ਏਕੀਕਰਨ {#wp-engine-integration}
+# WP Engine ਏਕੀਕਰਨ
 
 ## ਸੰਖੇਪ ਜਾਣਕਾਰੀ {#overview}
 WP Engine ਇੱਕ ਪ੍ਰੀਮੀਅਮ ਮੈਨੇਜਡ WordPress ਹੋਸਟਿੰਗ ਪਲੇਟਫਾਰਮ ਹੈ ਜੋ WordPress ਸਾਈਟਾਂ ਲਈ ਬਿਹਤਰ ਪ੍ਰਦਰਸ਼ਨ, ਸੁਰੱਖਿਆ ਅਤੇ ਸਕੇਲੇਬਿਲਟੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ। ਇਹ ਏਕੀਕਰਨ Ultimate Multisite ਅਤੇ WP Engine ਵਿਚਕਾਰ ਆਟੋਮੈਟਿਕ ਡੋਮੇਨ ਸਿੰਕਿੰਗ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਂਦਾ ਹੈ।

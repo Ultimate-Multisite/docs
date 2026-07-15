@@ -3,7 +3,7 @@ title: WP Engine אינטגרציה
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# אינטגרציה עם WP Engine {#wp-engine-integration}
+# אינטגרציה עם WP Engine
 
 ## סקירה כללית {#overview}
 WP Engine היא פלטפורמת אירוח מנוהל פרימיום ל-WordPress, המספקת ביצועים מותאמים, אבטחה ויכולת התרחבות לאתרי WordPress. אינטגרציה זו מאפשרת סנכרון אוטומטי של דומיינים בין Ultimate Multisite ל-WP Engine.

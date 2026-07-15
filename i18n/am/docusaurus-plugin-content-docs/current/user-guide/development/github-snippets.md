@@ -3,7 +3,7 @@ title: GitHub አነስተኛ ክፍሎች
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# በGitHub repository ላይ Ultimate Multisite snippetsን ስለመጠቀም {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# በGitHub repository ላይ Ultimate Multisite snippetsን ስለመጠቀም
 
 በGitHub repository ውስጥ፣ Ultimate Multisite ተጠቃሚዎች በሰነድ ማስመጫ ገጾች ላይ የGoogle Analytics ስክሪፕት መጨመር ወይም ከአድሚን ዳሽቦርድ ውስጥ አንድ meta box መደበቅ የመሳሰሉ ትናንሽ ተግባራትን ለመጨመር በየጊዜው የሚጠይቋቸው የኮድ ቁርጥራጮች (snippets) አሉ።
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# በtheme's functions.php ፋይል ላይ snippetን ስለማከል {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# በtheme's functions.php ፋይል ላይ snippetን ስለማከል
 
   1. ወደ WordPress Network admin dashboard ይግቡና ወደ Themes > Theme Editor ይሂዱ (ስዕል ከታች ይመልከቱ)።
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins (mu-plugins) ስለመፍጠር {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins (mu-plugins) ስለመፍጠር
 
 WordPress "Must-Use Plugins" ወይም በአጭሩ "mu-plugins" ተብሎ የሚጠራ፣ ብጁ ተግባር (custom functionality) እንዲጫኑ የሚያስችል ባህሪ አለው።
 

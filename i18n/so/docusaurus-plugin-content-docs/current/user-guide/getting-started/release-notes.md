@@ -3,7 +3,7 @@ title: Warqaddii soo saarista
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Warbixinta Waxyaabaha La Soo Bixiyay (Release Notes) {#release-notes}
+# Warbixinta Waxyaabaha La Soo Bixiyay (Release Notes)
 
 ## Nooca 2.13.0 — La soo bixiyay 2026-06-05 {#version-2130--released-on-2026-06-05}
 

@@ -4,7 +4,7 @@ title: Аракет - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Аракет: wu_centered_content {#action-wucenteredcontent}
+# Аракет: wu_centered_content
 
 Plugin иштеп чыгуучуларына борборлоштурулган тилкенин ичине кошумча мазмун кошууга уруксат берет.
 

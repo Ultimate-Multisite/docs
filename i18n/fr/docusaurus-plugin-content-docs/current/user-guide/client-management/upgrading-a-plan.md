@@ -3,7 +3,7 @@ title: Mettre à niveau une offre
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Mettre à niveau un plan (v2) {#upgrading-a-plan-v2}
+# Mettre à niveau un plan (v2)
 
 _**NOTE IMPORTANTE : cet article concerne Ultimate Multisite version 2.x.**_
 

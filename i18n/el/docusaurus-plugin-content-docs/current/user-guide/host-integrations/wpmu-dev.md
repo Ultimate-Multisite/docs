@@ -3,7 +3,7 @@ title: Ενσωμάτωση WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Ενσωμάτωση WPMU DEV {#wpmu-dev-integration}
+# Ενσωμάτωση WPMU DEV
 
 ## Επισκόπηση {#overview}
 Το WPMU DEV είναι μια ολοκληρωμένη πλατφόρμα WordPress που προσφέρει φιλοξενία, plugins και υπηρεσίες για ιστοσελίδες WordPress. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και της φιλοξενίας WPMU DEV.

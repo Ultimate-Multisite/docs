@@ -3,7 +3,7 @@ title: 購入手続きフォーム
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms は、新規顧客の獲得を目指す際に、さまざまなアプローチを試すための簡単で柔軟な方法です。
 

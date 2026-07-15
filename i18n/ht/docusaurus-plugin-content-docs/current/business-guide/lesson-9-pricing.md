@@ -3,7 +3,7 @@ title: 'Leson 9: Fikse Pri pou Pwofi'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leson 9: Pri pou Pwofi {#lesson-9-pricing-for-profit}
+# Leson 9: Pri pou Pwofi
 
 Nan Leson 5 nou te mete pri inisyal pou plan FitSite yo. Kounye a nou rafine estrateji pri a ak teknik ki ogmante revni, ankouraje amelyorasyon, epi diminye churn.
 

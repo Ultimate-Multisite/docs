@@ -3,7 +3,7 @@ title: 'પાઠ ૩: તમારું નેટવર્ક સેટ કર
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesson 3: તમારું નેટવર્ક સેટ કરવું {#lesson-3-setting-up-your-network}
+# Lesson 3: તમારું નેટવર્ક સેટ કરવું
 
 બનાવવાનો સમય આવી ગયો છે. આ લેસનમાં તમે Ultimate Multisite ઇન્સ્ટોલ કરશો અને FitSite નેટવર્કનો પાયો તૈયાર કરશો. અહીં લેવાયેલો દરેક નિર્ણય ફિટનેસ (fitness) ક્ષેત્રને ધ્યાનમાં રાખીને લેવામાં આવ્યો છે.
 

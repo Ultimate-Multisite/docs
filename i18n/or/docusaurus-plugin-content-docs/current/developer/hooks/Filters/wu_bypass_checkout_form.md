@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# ଫିଲ୍ଟର: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# ଫିଲ୍ଟର: wu_bypass_checkout_form
 
 ଡେଭେଲପରମାନଙ୍କୁ ଆଉଟପୁଟ୍‌କୁ ଏଡ଼ାଇ ନୂଆ ଆଉଟପୁଟ୍ ସେଟ୍ କରିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ
 

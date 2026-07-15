@@ -3,7 +3,7 @@ title: Lisebelisoa le Tlhophiso
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Lisebelisoa le Tlhophiso {#tools-and-configuration}
+# Lisebelisoa le Tlhophiso
 
 Theme Builder e sebelisa sete ya lisebelisoa ho sekaseka, ho rala, le ho aha sebaka sa hao sa WordPress. Mofuteng wa 1.16.0, **sd-ai-agent/site-scrape jwale ke sesebediswa sa Tier 1**, se etsang hore se fumanehe ka kamehla ho Theme Builder. Superdav AI Agent v1.18.0 hape e hlahisa sephutheloana sa molekane sa Advanced se ajoang ka thoko bakeng sa mekgwa ya mosebetsi ya bahlahisi ba tsheptjwang; lisebelisoa tseo ha se karolo ya sephutheloana sa mantlha sa WordPress.org mme di lokela ho kenngwa le ho dumellwa ka thoko.
 

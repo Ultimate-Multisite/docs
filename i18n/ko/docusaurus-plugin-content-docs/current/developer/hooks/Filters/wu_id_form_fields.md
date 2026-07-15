@@ -4,7 +4,7 @@ title: '필터 - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# 필터: wu_\{$id\}_form_fields {#filter-wuidformfields}
+# 필터: wu_\{$id\}_form_fields
 
 폼의 필드를 필터링합니다. 필터 이름에 있는 ID로 폼을 식별합니다.
 

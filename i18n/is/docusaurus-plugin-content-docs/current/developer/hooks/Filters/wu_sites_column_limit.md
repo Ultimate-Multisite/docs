@@ -4,7 +4,7 @@ title: Sía - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Sía: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Sía: wu_sites_column_limit
 
 Sía til að breyta gildinu fyrir get pluginssites inni í netinu.
 

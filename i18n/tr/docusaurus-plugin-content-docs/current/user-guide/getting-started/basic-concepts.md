@@ -3,7 +3,7 @@ title: Temel Kavramlar
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Temel Kavramlar {#basic-concepts}
+# Temel Kavramlar
 
 WordPress Multisite'a yeni başlayan ve Ultimate Multisite kullanmaya henüz başlamış biri için, ilk başta öğrenilmesi gereken birçok yeni kelime ve ifade olabilir. Bunları öğrenmek önemli bir adımdır çünkü platformu ve nasıl çalıştığını bir bütün olarak anlamanız gerekecek.
 

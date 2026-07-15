@@ -3,7 +3,7 @@ title: ಇಂಟರ್ನೆಟ್ ಹುಡುಕಾಟ
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# ಇಂಟರ್ನೆಟ್ ಸರ್ಚ್ {#internet-search}
+# ಇಂಟರ್ನೆಟ್ ಸರ್ಚ್
 
 Gratis AI Agent v1.5.0 ಒಂದು **ಇಂಟರ್ನೆಟ್ ಸರ್ಚ್** ಸಾಮರ್ಥ್ಯವನ್ನು ಸೇರಿಸಿದೆ. ಇದು AI ಅಸಿಸ್ಟೆಂಟ್‌ಗೆ ಸಂಭಾಷಣೆಯ ಸಮಯದಲ್ಲಿ ವೆಬ್‌ನಿಂದ ನವೀಕೃತ ಮಾಹಿತಿಯನ್ನು ಪಡೆಯಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಇದು [Brave Search API](https://brave.com/search/api/) ಅಥವಾ [Tavily API](https://tavily.com/) ಮೂಲಕ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.
 

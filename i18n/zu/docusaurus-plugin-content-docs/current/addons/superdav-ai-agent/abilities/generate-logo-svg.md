@@ -3,7 +3,7 @@ title: Khiqiza i-Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Khiqiza i-Logo SVG {#generate-logo-svg}
+# Khiqiza i-Logo SVG
 
 Ikhono elithi **Khiqiza i-Logo SVG** livumela Theme Builder ukuthi yakhe futhi ifake ama-logo SVG enziwe ngokwezifiso ngqo kusayithi yakho ye-WordPress ngokuhlanzwa okuzenzakalelayo okuphephile kwe-namespace.
 

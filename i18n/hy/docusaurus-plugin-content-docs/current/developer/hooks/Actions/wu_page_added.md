@@ -4,7 +4,7 @@ title: Գործողություն - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Գործողություն: wu_page_added {#action-wupageadded}
+# Գործողություն: wu_page_added
 
 Թույլ է տալիս plugin մշակողներին գործարկել լրացուցիչ գործողություններ, երբ էջերը գրանցվում են։
 

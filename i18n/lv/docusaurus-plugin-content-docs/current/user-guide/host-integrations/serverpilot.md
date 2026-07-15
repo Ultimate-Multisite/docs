@@ -3,7 +3,7 @@ title: ServerPilot integrācija
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integrācija {#serverpilot-integration}
+# ServerPilot Integrācija
 
 ## Īskatsauce {#overview}
 ServerPilot ir viltas pakalpojums, kas hostē WordPress un citus PHP vietnes uz serveriem DigitalOcean, Amazon, Google vai jebkuru citu servera sniedzējam. Šī integrācija ļauj automātiskai domēnu sinhronizācijai un SSL sertifikāta pārvaldībai starp Ultimate Multisite un ServerPilot.

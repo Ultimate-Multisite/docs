@@ -3,7 +3,7 @@ title: Closte-da Quyosh ko'rsatkichini sozlash
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-da Sunrise constantni true qilish {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-da Sunrise constantni true qilish
 
 Ba'zi hosting provayderlari xavfsizlik sabablari bilan wp-config.php faylini bloklaydi. Bu esa Ultimate Multisite ning domen xaritasi va boshqa funksiyalar ishlamasligi uchun kerakli konstantalarni qo'shish uchun faylni avtomatik tahrirlashini cheklaydi. Closte shunday provayderlardan biridir.
 

@@ -3,7 +3,7 @@ title: Integratio RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integratio RunCloud {#runcloud-integration}
+# Integratio RunCloud
 
 ## Visio {#overview}
 RunCloud est platforma de management server in cloud quae te permittit facile applicationes web in serveribus tuis propriis cloud deployare et managere. Ha integratio permittit synchronisation automaticam domini et management certatorum SSL inter Ultimate Multisite et RunCloud.

@@ -3,7 +3,7 @@ title: Hooklardan foydalanish qo‘llanmasi
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks’dan foydalanish qo‘llanmasi {#hooks-usage-guide}
+# Hooks’dan foydalanish qo‘llanmasi
 
 Ultimate Multisite 200+ action hooks va 280+ filter hooks taqdim etadi. Bu sahifada amaliy misollar bilan eng ko‘p ishlatiladigan hooks yoritiladi. To‘liq avtomatik yaratilgan ma’lumotnoma uchun ushbu bo‘limdagi boshqa sahifalarni ko‘rib chiqing.
 

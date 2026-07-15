@@ -4,7 +4,7 @@ title: Filtrilo - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# Filtrilo: wu_sso_url {#filter-wussourl}
+# Filtrilo: wu_sso_url
 
 Filtras generitajn SSO URL-ojn antaŭ ol ili estas resenditaj por transdomajn klientajn agojn.
 

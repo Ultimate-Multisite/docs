@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# ଫିଲ୍ଟର: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# ଫିଲ୍ଟର: wu_magic_links_enabled
 
 ମ୍ୟାଜିକ୍ ଲିଙ୍କଗୁଡ଼ିକ ସକ୍ରିୟ କି ନୁହେଁ ଫିଲ୍ଟର କରନ୍ତୁ।
 

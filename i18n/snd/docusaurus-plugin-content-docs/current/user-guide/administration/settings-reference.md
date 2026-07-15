@@ -3,7 +3,7 @@ title: سيٽنگن جو حوالو
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# سيٽنگن جو حوالو {#settings-reference}
+# سيٽنگن جو حوالو
 
 هي صفحو انهن سيٽنگن کي ٽريڪ ڪري ٿو جيڪي روزمره جي انتظام ۽ Ultimate Multisite ۾ تازين رويي تبديلين تي اثر انداز ٿين ٿيون.
 

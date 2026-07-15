@@ -3,7 +3,7 @@ title: Mba fandikana ny Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Fanovana Ultimate Multisite {#translating-ultimate-multisite}
+# Fanovana Ultimate Multisite
 
 Ny Ultimate Multisite dia natao amin'ny teny anglisy, saingy azo adika tanteraka ny plugin ary manome fanohanana mavitrika antsika ho an'ny fampidirana fandikana.
 

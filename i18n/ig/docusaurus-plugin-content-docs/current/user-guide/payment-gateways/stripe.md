@@ -3,7 +3,7 @@ title: Nkwado Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ndem Nkwado Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Ndem Nkwado Stripe Gateway (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

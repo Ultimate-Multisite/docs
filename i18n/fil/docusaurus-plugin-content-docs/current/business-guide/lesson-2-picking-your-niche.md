@@ -3,7 +3,7 @@ title: 'Aralin 2: Pagpili ng Iyong Niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lesson 2: Pagpili ng Niche {#lesson-2-picking-your-niche}
+# Lesson 2: Pagpili ng Niche
 
 Sa Lesson 1, nalaman na natin kung bakit mas epektibo ang pagiging *niche* kaysa sa pagiging pangkalahatan (*generic*). Ngayon, kailangan mo nang pumili ng sarili mong *niche*. Ang lesson na ito ay magbibigay sa iyo ng isang balangkas (framework) para matukoy at mapatunayan ang isang *niche* bago ka maglaan ng oras at pondo para itayo ito.
 

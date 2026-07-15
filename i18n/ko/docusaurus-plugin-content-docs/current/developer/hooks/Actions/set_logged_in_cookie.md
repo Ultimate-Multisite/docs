@@ -4,7 +4,7 @@ title: 액션 - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# 액션: set_logged_in_cookie {#action-setloggedincookie}
+# 액션: set_logged_in_cookie
 
 로그인 인증 쿠키가 설정되기 직전에 즉시 발생합니다.
 

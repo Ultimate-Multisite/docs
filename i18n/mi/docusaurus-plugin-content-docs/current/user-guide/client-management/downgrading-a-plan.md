@@ -3,7 +3,7 @@ title: Whakawhanaungatanga i te Whakamutunga o te Rōpū
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Whakamutunga i te plan (v2) {#downgrading-a-plan-v2}
+# Whakamutunga i te plan (v2)
 
 _**Tohito WAIPA: Ko tēnei tikanga he tino whakamahinga mō Ultimate Multisite v2.x.**_
 

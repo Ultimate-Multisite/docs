@@ -4,7 +4,7 @@ title: Ekintza - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Ekintza: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Ekintza: wu_domain_mapping_register_filters
 
 Plugin batzuek URLa gordeko dute mapping-a aktibo egon aurretik, edo URLak goiko iragazkietan sartzen ez den beste modu batean eraikiko dituzte.
 

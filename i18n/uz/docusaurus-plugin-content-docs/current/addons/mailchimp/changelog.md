@@ -3,7 +3,7 @@ title: Mailchimp o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp o‘zgarishlar jurnali {#mailchimp-changelog}
+# Mailchimp o‘zgarishlar jurnali
 
 Versiya: 1.1.1 - 2025-09-28 da chiqarilgan
 

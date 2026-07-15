@@ -3,7 +3,7 @@ title: Зміни в логах Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Зміни в Captcha {#captcha-changelog}
+# Зміни в Captcha
 
 Версія: 1.5.0 - Випущено 2026-05-22
 * Нове: Обмеження частоти (rate limiter) з жорсткою зупинкою — тепер рахує кожен GET та POST на захищених від captcha поверхнях (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) та відповідає кодом HTTP 429, заголовком `Retry-After` та випадковою затримкою (tarpit sleep) (від 1 до 5 секунд, з жорстким обмеженням до 15 секунд).

@@ -3,7 +3,7 @@ title: Pa tsom nrhiav cách thib WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ինչպե՞ս ենք տեղադրում WordPress Multisite-ը։ {#how-do-i-install-wordpress-multisite}
+# Ինչպե՞ս ենք տեղադրում WordPress Multisite-ը։
 
 WordPress Multisite-ը թույլ է տալիս մեկ տեղադրման մեջ միացված կայքերի ցանց ստեղծել։ Սա ներկառուցված հնարավորություն է, բայց դեֆոլտով չի աշխատում։
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

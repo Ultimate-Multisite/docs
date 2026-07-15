@@ -3,7 +3,7 @@ title: ਛੂਟ ਕੋਡ ਬਣਾਉਣਾ
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# ਛੂਟ ਕੋਡ ਬਣਾਉਣਾ (v2) {#creating-discount-codes-v2}
+# ਛੂਟ ਕੋਡ ਬਣਾਉਣਾ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਲਈ ਹੈ।**_
 

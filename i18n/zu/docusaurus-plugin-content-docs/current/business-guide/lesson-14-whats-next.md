@@ -3,7 +3,7 @@ title: 'Isifundo 14: Yini Elandelayo'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Isifundo 14: Okulandelayo {#lesson-14-what-comes-next}
+# Isifundo 14: Okulandelayo
 
 Usuwakhe inkundla yamawebhusayithi e-niche kusukela ekuqaleni. I-FitSite isiyasebenza, isiza ama-studio okujima, futhi ikhiqiza imali engenayo ephindaphindayo. Lesi sifundo sokugcina sibheka ukuthi ungaya kuphi kusukela lapha.
 

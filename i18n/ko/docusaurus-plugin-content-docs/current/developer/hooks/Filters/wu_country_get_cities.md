@@ -4,7 +4,7 @@ title: 필터 - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# 필터: wu_country_get_cities {#filter-wucountrygetcities}
+# 필터: wu_country_get_cities
 
 상태의 도시 목록을 반환합니다.
 

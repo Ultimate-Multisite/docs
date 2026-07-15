@@ -4,7 +4,7 @@ title: Филтр - wu_apc_should_display_admin_menu
 sidebar_label: wu_apc_should_display_admin_menu
 _i18n_hash: f572495daf004aaa34faee72e426e05f
 ---
-# Филтр: wu_apc_should_display_admin_menu {#filter-wuapcshoulddisplayadminmenu}
+# Филтр: wu_apc_should_display_admin_menu
 
 Ба админҳо иҷозат диҳед, ки саҳифаҳои менюи админро пинҳон кунанд, агар онҳо раванди фармоиширо ба анҷом расонда бошанд.
 

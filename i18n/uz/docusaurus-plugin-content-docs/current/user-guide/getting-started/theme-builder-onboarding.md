@@ -3,7 +3,7 @@ title: Tema Qurilishi Oqimi
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 sizga dastlabki sozlash jarayonida maxsus blok temani yaratishingizda yordam beradigan yo‘naltirilgan **Theme Builder onboarding flow**ni taqdim etadi. Bu eski Site Builder rejimini yanada moslashuvchan, agent yordamida ishlaydigan yondashuv bilan almashtiradi.
 

@@ -3,7 +3,7 @@ title: Amelyore entegrasyon Panèl Kontwòl la
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Améliorer l'Intégration du Panneau de Contrôle {#enhance-control-panel-integration}
+# Améliorer l'Intégration du Panneau de Contrôle
 
 ## Vue d'ensemble {#overview}
 Enhance se pawe yon panèl kontwòl modèn ki bay kapasite otomatik pou fè wè (hosting automation) ak jere sit la. Intégrasyon sa a pèmèt sincronizasyon domèn otomatik ak jere sertifikat SSL ant Ultimate Multisite ak Enhance Control Panel.

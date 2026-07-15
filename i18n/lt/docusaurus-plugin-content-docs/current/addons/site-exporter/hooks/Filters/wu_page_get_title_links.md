@@ -4,7 +4,7 @@ title: Filtras - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filtras: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filtras: wu_page_get_title_links
 
 Leidžia plugin kūrėjams ir mums patiems pridėti veiksmų nuorodas į mūsų redagavimo puslapius.
 

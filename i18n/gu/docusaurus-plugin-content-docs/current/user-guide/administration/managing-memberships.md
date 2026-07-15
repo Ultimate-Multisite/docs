@@ -3,7 +3,7 @@ title: સભ્યપદોનું સંચાલન
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Membershipsનું સંચાલન {#managing-memberships}
+# Membershipsનું સંચાલન
 
 Ultimate Multisiteમાં તમે membershipsનું સંચાલન કરી શકો છો અને તમારા network પરની બધી subscriptions ઍક્સેસ કરી શકો છો. plans અને products, sitesની સંખ્યા, billing રકમ અને આવર્તન, payment ઇતિહાસ અને timestamps જેવી subscription વિગતોની સમીક્ષા અને ફેરફાર કરો.
 

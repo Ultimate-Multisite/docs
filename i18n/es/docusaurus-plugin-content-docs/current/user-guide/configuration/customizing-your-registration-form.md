@@ -3,7 +3,7 @@ title: Personalización de tu formulario de registro
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizar tu formulario de registro {#customizing-your-registration-form}
+# Personalizar tu formulario de registro
 
 Para hacer que tu red se vea única frente a todos los demás SaaS construidos sobre la plataforma WordPress, Ultimate Multisite te permite personalizar tus páginas de registro e inicio de sesión con nuestra función **Checkout Forms**.
 

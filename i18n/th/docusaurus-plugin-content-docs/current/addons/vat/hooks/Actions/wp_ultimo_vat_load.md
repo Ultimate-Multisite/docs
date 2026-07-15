@@ -4,7 +4,7 @@ title: การกระทำ - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Action: wp_ultimo_vat_load {#action-wpultimovatload}
+# Action: wp_ultimo_vat_load
 
 จะทำงานเมื่อมีการโหลด dependencies ทั้งหมดเรียบร้อยแล้ว
 

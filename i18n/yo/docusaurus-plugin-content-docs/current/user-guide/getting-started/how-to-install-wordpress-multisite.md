@@ -3,7 +3,7 @@ title: Bí a ṣe lè fi WordPress Multisite sori ẹrọ
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Báwo ni mo ṣe le Fi WordPress Multisite Sori Ẹrọ? {#how-do-i-install-wordpress-multisite}
+# Báwo ni mo ṣe le Fi WordPress Multisite Sori Ẹrọ?
 
 WordPress Multisite gba ọ laaye lati ní nẹ́tíwọ́ọ̀kì àwọn site lori fifi sori ẹrọ kan ṣoṣo. Èyí jẹ́ ẹ̀ya tí ó wà nínú rẹ̀, ṣùgbọ́n kò ṣiṣẹ́ ní aiyipada.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

@@ -3,7 +3,7 @@ title: 'Lección 14: Que vén despois'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lección 14: Que vén despois {#lesson-14-what-comes-next}
+# Lección 14: Que vén despois
 
 Construíches unha plataforma de sitios web de nicho desde cero. FitSite está en funcionamento, dando servizo a estudos de fitness e xerando ingresos recorrentes. Esta lección final analiza cara a onde ir a partir de aquí.
 

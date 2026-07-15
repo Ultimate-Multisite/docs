@@ -4,7 +4,7 @@ title: Aktioun - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Aktioun: update_network {#action-updatenetwork}
+# Aktioun: update_network
 
 Gëtt ausgeléist nodeems en existent Netzwierk aktualiséiert gouf.
 

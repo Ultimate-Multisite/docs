@@ -4,7 +4,7 @@ title: ການກະທຳ - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# ການດຳເນີນການ: add_network {#action-addnetwork}
+# ການດຳເນີນການ: add_network
 
 ເກີດຂຶ້ນຫຼັງຈາກ network ໃໝ່ຖືກເພີ່ມແລ້ວ.
 

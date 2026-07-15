@@ -3,7 +3,7 @@ title: Fassarar Bayanai na Haɗin Gida
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms da Gudanar Wurin Gidaite (Site Builder) {#site-builder-contact-forms}
+# Forms da Gudanar Wurin Gidaite (Site Builder)
 
 Superdav AI Agent v1.10.0 ya ƙara damar gina wajen samun saƙo (contact forms) kai tsaye daga cikin interface na tattaunawa ta amfani da Site Builder agent. Wannan yana ba ka damar ƙara wajen samun saƙo masu aiki kai tsaye a kowane shafi ba tare da tafiya daga tattaunawa ba.
 

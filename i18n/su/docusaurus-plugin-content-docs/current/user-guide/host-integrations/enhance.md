@@ -3,7 +3,7 @@ title: Ngaraksa Integrasi Control Panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Tingkatkan Integrasi Control Panel {#enhance-control-panel-integration}
+# Tingkatkan Integrasi Control Panel
 
 ## Gambaran Umum {#overview}
 Enhance téh mangrupakeun control panel modérn anu méré kamampuhan otomatisasi je ngatur hosting anu kuat. Integrasi ieu ngabantu sinkronisasi domain otomatis je ngaturan sertifikat SSL antara Ultimate Multisite je Enhance Control Panel.

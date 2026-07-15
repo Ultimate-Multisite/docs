@@ -3,7 +3,7 @@ title: Mene ne WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Menene WordPress Multisite ne ke? {#what-is-wordpress-multisite}
+# Menene WordPress Multisite ne ke?
 
 A cikin tsarin shi na asali, WordPress yana ba wani ƙwarewa mai suna ‘Multisite’ wanda ya fara daga shekarar 2010 da farawa da WordPress 3.0. Tun daga wannan lokacin ya samu wasu gyare-gyare ne don haɗa sabbin ƙwarewa da kuma inganta tsaro.
 

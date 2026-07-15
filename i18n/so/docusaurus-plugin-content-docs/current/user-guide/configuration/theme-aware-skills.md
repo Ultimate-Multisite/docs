@@ -3,7 +3,7 @@ title: Xirfadaha Dareenka Qaabka Qoraalka
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Xirfadaha Lagu Aqoonsan Tema (Theme-Aware Skills) {#theme-aware-skills}
+# Xirfadaha Lagu Aqoonsan Tema (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 wuxuu soo saaray afar xirfadood oo cusub oo la aqoonsan tema ah (theme-aware built-in skills) oo si toos ah ula jaanqaada tema WordPress-ka aad hadda isticmaalayso. Xirfadahan waxay bixiya talooyin iyo awoodo gaar ah oo ku habboon qaabdhismeedka iyo astaamaha theme-kaaga.
 

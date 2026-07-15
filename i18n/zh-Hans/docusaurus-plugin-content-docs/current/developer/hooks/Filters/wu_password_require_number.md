@@ -4,7 +4,7 @@ title: 过滤器 - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# 过滤器: wu_password_require_number {#filter-wupasswordrequirenumber}
+# 过滤器: wu_password_require_number
 
 过滤器，用于决定密码是否需要包含数字。
 

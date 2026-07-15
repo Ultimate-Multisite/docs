@@ -4,7 +4,7 @@ title: តម្រង - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# តម្រង៖ wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# តម្រង៖ wp_ultimo_skip_network_active_check
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍កាត់ខ្លីការត្រួតពិនិត្យនេះ។
 

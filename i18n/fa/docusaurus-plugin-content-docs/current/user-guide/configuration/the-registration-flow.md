@@ -3,7 +3,7 @@ title: جریان ثبت‌نام
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# جریان ثبت‌نام (v2) {#the-registration-flow-v2}
+# جریان ثبت‌نام (v2)
 
 _**نکته مهم: این مقاله به نسخه 2.x از Ultimate Multisite اشاره دارد.**_
 

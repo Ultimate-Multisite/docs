@@ -3,7 +3,7 @@ title: הערות גרסה
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# הערות מהדורה {#release-notes}
+# הערות מהדורה
 
 ## גרסה 2.13.0 — פורסמה ב-2026-06-05 {#version-2130--released-on-2026-06-05}
 

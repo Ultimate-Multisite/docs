@@ -3,7 +3,7 @@ title: Wax-soo-gaarsiinta iyo Isdiiwaangelinta Bixiyaha
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Bixiyaha Domainka: Dejinta iyo Isticmaalka Provider-ka {#domain-seller-setup-and-provider-configuration}
+# Bixiyaha Domainka: Dejinta iyo Isticmaalka Provider-ka
 
 Addon-ka Domain Seller wuxuu la socdaa qaab dejin (wizard) oo tilmaamaya tallaabo kasta oo loo baahan yahay. Boggan ayaa ka hadlaya habka dejinta iyo sida aad u hagaajin karto ama dib u dejin karto kuwa provider-kaas ka dib.
 

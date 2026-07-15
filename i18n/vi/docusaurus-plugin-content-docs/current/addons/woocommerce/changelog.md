@@ -3,7 +3,7 @@ title: Nhật ký thay đổi tích hợp WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Nhật ký thay đổi tích hợp WooCommerce {#woocommerce-integration-changelog}
+# Nhật ký thay đổi tích hợp WooCommerce
 
 Phiên bản 2.2.0 - Phát hành vào 2026-07-01
 * Mới: Các khoản thuế của Ultimate Multisite giờ đây xuất hiện dưới dạng các dòng phí WooCommerce riêng biệt tại checkout, giúp tổng thuế rõ ràng hơn trước khi thanh toán.

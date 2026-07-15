@@ -3,7 +3,7 @@ title: 'Chidzidzo 5: Kugadzira Zvirongwa Zvako'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Chidzidzo 5: Kugadzira Zvirongwa Zvako {#lesson-5-designing-your-plans}
+# Chidzidzo 5: Kugadzira Zvirongwa Zvako
 
 Matanho ezvirongwa zvako haasi mazinga emitengo chete -- anoratidza mashandiro chaiwo evatengi vemusika wako wakasarudzika. Muchidzidzo chino uchagadzira matanho ezvigadzirwa anoenderana nezvinodiwa chaizvo nemabhizinesi efitness pamatanho akasiyana.
 

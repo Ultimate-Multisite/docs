@@ -3,7 +3,7 @@ title: Дневник на промени за факти за Чак Норис
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Дневник на промени за Chuck Norris Facts {#chuck-norris-facts-changelog}
+# Дневник на промени за Chuck Norris Facts
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Додадено: Функционалност за автоматско ажурирање преку Ultimate Multisite сервер за ажурирања

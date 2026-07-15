@@ -3,7 +3,7 @@ title: 'Õppetund 14: Mis saab edasi'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Õppetund 14: Mis saab edasi {#lesson-14-what-comes-next}
+# Õppetund 14: Mis saab edasi
 
 Oled loonud nišiveebisaitide platvormi nullist. FitSite on live, teenindab fitnessistuudioid ja loob korduvat tulu. See viimane õppetund vaatab, kuhu siit edasi liikuda.
 

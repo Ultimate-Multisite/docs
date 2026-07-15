@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme ဖြင့် သင့် Admin Panel ကို စိတ်ကြိုက်ပြင်ဆင်ခြင်း {#customizing-your-admin-panel-with-pro-theme}
+# PRO Theme ဖြင့် သင့် Admin Panel ကို စိတ်ကြိုက်ပြင်ဆင်ခြင်း
 
 Client အတွက် အလုပ်လုပ်သောအခါ WordPress ၏ admin dashboard တွင် စိတ်ကြိုက် အတွေ့အကြုံတစ်ခုကို ပေးဖို့ လိုအပ်လေ့ရှိပါတယ်။ ပိုမိုပရော်ဖက်ရှင်နယ်ကျတဲ့ ပုံစံနဲ့ ခံစားမှုကို ရှာဖွေနေတယ်ဆိုရင် PRO Theme က သင့်ကို အထောက်အကူပြုနိုင်ပါတယ်။
 

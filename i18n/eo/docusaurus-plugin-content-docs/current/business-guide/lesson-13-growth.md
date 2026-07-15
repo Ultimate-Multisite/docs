@@ -3,7 +3,7 @@ title: 'Leciono 13: Skalado'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leciono 13: Pligrandiĝo {#lesson-13-scaling-up}
+# Leciono 13: Pligrandiĝo
 
 Vi havas funkciantan platformon kun pagantaj klientoj. Ĉi tiu leciono traktas kiel kreski de malgranda operacio al daŭripova komerco -- skalante infrastrukturon, aŭtomatigante operaciojn, kaj pliigante enspezon por ĉiu kliento.
 

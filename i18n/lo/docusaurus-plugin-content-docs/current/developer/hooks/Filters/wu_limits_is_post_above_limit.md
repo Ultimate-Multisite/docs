@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# ຕົວກັ່ນຕອງ: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# ຕົວກັ່ນຕອງ: wu_limits_is_post_above_limit
 
 ກວດສອບວ່າປະເພດໂພສທີ່ກຳນົດໄວ້ຖືກອະນຸຍາດໃນແຜນນີ້ຫຼືບໍ່ ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ກັ່ນຕອງຄ່າທີ່ສົ່ງກັບ
 

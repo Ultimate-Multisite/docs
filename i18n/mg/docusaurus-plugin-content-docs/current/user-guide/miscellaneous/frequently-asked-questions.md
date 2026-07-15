@@ -3,7 +3,7 @@ title: Fanontaniana matetika atao
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Fanontaniana Mahazava (Frequently Asked Questions) {#frequently-asked-questions}
+# Fanontaniana Mahazava (Frequently Asked Questions)
 
 Ity misy fanontaniana maromaro izay matetika tonga rehefa mangataka fanampiana.
 

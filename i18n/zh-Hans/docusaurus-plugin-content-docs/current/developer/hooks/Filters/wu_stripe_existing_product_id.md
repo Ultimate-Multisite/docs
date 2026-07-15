@@ -4,7 +4,7 @@ title: 过滤 - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# 过滤器: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# 过滤器: wu_stripe_existing_product_id
 
 过滤要检查的产品的 ID。如果存在，则新的订阅将使用此产品。
 

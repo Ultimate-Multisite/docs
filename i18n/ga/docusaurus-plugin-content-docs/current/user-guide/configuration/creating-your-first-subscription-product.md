@@ -65,7 +65,7 @@ title: >-
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creacht an t-aonacht (v2) {#creating-your-first-subscription-product-v2}
+# Creacht an t-aonacht (v2)
 
 _**NOTE CRUCIAL: An cur áire seo cheana féin do chuidiste Ultimate Multisite 2.x. Má tá tú ag úsáid ar version 1.x,**_ **_**faoi seo an cur áire**_**.
 

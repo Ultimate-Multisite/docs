@@ -3,7 +3,7 @@ title: Retours Kliyan ak Rapò Masseur
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Rapor Faisant Feedback Kliyan & Rapò Pwoblèm {#customer-feedback--issue-reporting}
+# Rapor Faisant Feedback Kliyan & Rapò Pwoblèm
 
 Gratis AI Agent v1.5.0 bay yon sistèm rapòman ak geri (feedback) ki vini avèk li, ki pèmèt itilizatè yo fè endikasyon sou repons ki pa ede epi rapò pwoblèm dirèkteman nan entèfas chat la. Sistèm sa a gen ladan jere konsantman (consent management), yon komand rapò otomatik, ak triaj asisté pa AI nan backend la.
 

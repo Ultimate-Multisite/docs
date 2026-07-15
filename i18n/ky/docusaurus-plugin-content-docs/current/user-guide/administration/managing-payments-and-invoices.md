@@ -3,7 +3,7 @@ title: Төлөмдөрдү жана сураныштары башкаруу
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Толуптарды жана сурамжылоолорду башкаруу {#managing-payments-and-invoices}
+# Толуптарды жана сурамжылоолорду башкаруу
 
 ## Төлөм 설정дору {#payment-settings}
 

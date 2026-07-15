@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Tantaran'ny fanovana ho an'ny Ultimate AI Connector ho an'ny teboka fiafarana mifanaraka {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Tantaran'ny fanovana ho an'ny Ultimate AI Connector ho an'ny teboka fiafarana mifanaraka
 
 ## Dika 2.0.0 — Navoaka tamin'ny 2026-04-24 {#version-200--released-on-2026-04-24}
 

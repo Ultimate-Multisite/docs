@@ -3,7 +3,7 @@ title: Mailchimp Mbiri ya Zosintha
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mbiri ya Zosintha ya Mailchimp {#mailchimp-changelog}
+# Mbiri ya Zosintha ya Mailchimp
 
 Mtundu: 1.1.1 - Watulutsidwa pa 2025-09-28
 

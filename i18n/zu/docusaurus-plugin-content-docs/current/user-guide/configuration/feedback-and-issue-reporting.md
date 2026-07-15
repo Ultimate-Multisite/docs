@@ -3,7 +3,7 @@ title: Impendulo yamakhasimende & Ukubika izinkinga
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Impendulo Yamakhasimende Nokubika Izinkinga {#customer-feedback--issue-reporting}
+# Impendulo Yamakhasimende Nokubika Izinkinga
 
 Gratis AI Agent v1.5.0 yethula uhlelo olwakhelwe ngaphakathi lwempendulo nokubika izinkinga oluvumela abasebenzisi bokugcina ukumaka izimpendulo ezingasizi nokubika izinkinga ngqo kusixhumi sengxoxo. Lolu hlelo luhlanganisa ukuphathwa kwemvume, umyalo wokubika ozenzakalelayo, kanye nokuhlunga okusizwa yi-AI ohlangothini lwangemuva.
 

@@ -3,7 +3,7 @@ title: Tippersonalizza l-Formola tar-Reġistrazzjoni Tiegħek
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tippersonalizza l-Formola tar-Reġistrazzjoni tiegħek {#customizing-your-registration-form}
+# Tippersonalizza l-Formola tar-Reġistrazzjoni tiegħek
 
 Biex in-network tiegħek jidher uniku meta mqabbel mas-SaaS l-oħra kollha mibnija fuq il-pjattaforma WordPress, Ultimate Multisite jippermettilek tippersonalizza l-paġni tar-reġistrazzjoni u tal-login tiegħek bil-karatteristika tagħna **Checkout Forms**.
 

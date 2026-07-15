@@ -3,7 +3,7 @@ title: Diarium mutationum Venditoris Dominiorum
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Index Mutationum Venditoris Dominiorum {#domain-seller-changelog}
+# Index Mutationum Venditoris Dominiorum
 
 Versio 1.3.0 - Edita die 2026-06-02
 - Novum: Addita est monitio administratoris retis cum statera venditoris HostAfrica nimis humilis fit

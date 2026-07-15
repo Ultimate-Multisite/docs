@@ -3,7 +3,7 @@ title: Guide d'utilisation des Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Guide d'utilisation des Hooks {#hooks-usage-guide}
+# Guide d'utilisation des Hooks
 
 Ultimate Multisite fournit plus de 200 hooks d'action et plus de 280 hooks de filtre. Cette page couvre les hooks les plus couramment utilisés avec des exemples pratiques. Pour une référence auto-générée complète, parcourez les autres pages de cette section.
 

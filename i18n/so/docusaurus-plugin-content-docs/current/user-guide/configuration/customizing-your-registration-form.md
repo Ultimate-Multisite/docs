@@ -3,7 +3,7 @@ title: Habeynta Foomkaaga Diiwaangelinta
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Habaynta Foomkaaga Diiwaangelinta {#customizing-your-registration-form}
+# Habaynta Foomkaaga Diiwaangelinta
 
 Si shabakaddaadu uga muuqato mid gaar ah marka loo eego dhammaan SaaS-yada kale ee lagu dhisay WordPress platform, Ultimate Multisite wuxuu kuu oggolaanayaa inaad habayso bogaggaaga diiwaangelinta iyo gelitaanka adigoo adeegsanaya astaantayada **Checkout Forms**.
 

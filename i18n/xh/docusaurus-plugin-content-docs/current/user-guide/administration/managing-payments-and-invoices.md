@@ -3,7 +3,7 @@ title: Ukulawula iintlawulo kunye nee-invoyisi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ukulawula Iintlawulo nee-Invoyisi {#managing-payments-and-invoices}
+# Ukulawula Iintlawulo nee-Invoyisi
 
 ## Iisetingi zeeNtlawulo {#payment-settings}
 

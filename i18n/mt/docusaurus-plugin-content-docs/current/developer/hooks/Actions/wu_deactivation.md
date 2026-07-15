@@ -4,7 +4,7 @@ title: Azzjoni - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Azzjoni: wu_deactivation {#action-wudeactivation}
+# Azzjoni: wu_deactivation
 
 Ħalli partijiet oħra tal-estensjoni jwaħħlu r-rutini tagħhom għad-diżattivazzjoni
 

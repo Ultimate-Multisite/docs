@@ -3,7 +3,7 @@ title: 'Lección 7: Hazlo Tuyo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lección 7: Personalizándolo para Ti {#lesson-7-making-it-yours}
+# Lección 7: Personalizándolo para Ti
 
 Tus clientes nunca deben sentir que están usando "un plugin de WordPress". Deben sentir que están usando FitSite, una plataforma construida para su industria. Esta lección cubre el *branding*, el *white-labeling* y cómo hacer que la plataforma se sienta como un producto propio.
 

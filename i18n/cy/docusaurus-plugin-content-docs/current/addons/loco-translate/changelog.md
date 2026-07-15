@@ -3,7 +3,7 @@ title: Loco Translate Cofnod newidiadau
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Cofnod Newidiadau Loco Translate {#loco-translate-changelog}
+# Cofnod Newidiadau Loco Translate
 
 ### 1.0.1 {#101}
 * Gwell cydnawsedd â'r fersiwn ddiweddaraf o Loco Translate

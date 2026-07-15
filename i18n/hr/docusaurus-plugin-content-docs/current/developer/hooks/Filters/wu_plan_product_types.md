@@ -4,7 +4,7 @@ title: Filtar - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtar: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtar: wu_plan_product_types
 
 Filtrira vrste proizvoda koje se trebaju tretirati kao planovi.
 

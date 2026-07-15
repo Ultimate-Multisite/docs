@@ -3,7 +3,7 @@ title: Hướng dẫn sử dụng Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hướng dẫn sử dụng Hooks {#hooks-usage-guide}
+# Hướng dẫn sử dụng Hooks
 
 Ultimate Multisite cung cấp hơn 200 action hooks và 280 filter hooks. Trang này tổng hợp các hooks được sử dụng phổ biến nhất kèm theo các ví dụ thực tế. Để xem tài liệu tham khảo đầy đủ, bạn hãy duyệt qua các trang khác trong mục này.
 

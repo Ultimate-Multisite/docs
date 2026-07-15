@@ -4,7 +4,7 @@ title: 过滤器 - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# 过滤器: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# 过滤器: get_site_url_for_previewer
 
 允许插件开发者过滤预览器中使用的 URL
 

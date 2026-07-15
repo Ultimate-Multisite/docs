@@ -4,7 +4,7 @@ title: පෙරහන - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# පෙරහන: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
+# පෙරහන: wu_minimum_password_strength
 
 අවශ්‍ය අවම මුරපද ශක්තිය පෙරහන් කරන්න (zxcvbn ලකුණ).
 

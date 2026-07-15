@@ -3,7 +3,7 @@ title: Site Builder Mode நீக்கம் அறிவிப்பு
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode நீக்கப்பட்ட அறிவிப்பு {#site-builder-mode-removal-notice}
+# Site Builder Mode நீக்கப்பட்ட அறிவிப்பு
 
 **Superdav AI Agent v1.12.0 இல் Site Builder mode நீக்கப்பட்டுள்ளது.** நீங்கள் Site Builder mode-ஐப் பயன்படுத்தியிருந்தால், தீம் உருவாக்கம் மற்றும் Site setup-க்கு **Setup Assistant agent**-க்கு மாற வேண்டும்.
 

@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Tùy chỉnh bảng quản trị với PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# Tùy chỉnh bảng quản trị với PRO Theme
 
 Khi làm việc với khách hàng, chúng ta thường cần mang đến cho họ một trải nghiệm riêng biệt trong bảng quản trị WordPress. Nếu bạn đang tìm kiếm một giao diện chuyên nghiệp và tinh tế hơn, PRO Theme có thể giúp bạn.
 

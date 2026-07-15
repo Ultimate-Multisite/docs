@@ -3,7 +3,7 @@ title: 'Lección 8: Incorporación de clientes'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lección 8: Incorporación de clientes {#lesson-8-customer-onboarding}
+# Lección 8: Incorporación de clientes
 
 Conseguir que un cliente se rexistre é só a metade do traballo. Se inicia sesión, se sente desbordado e nunca volve, perdíchelo. Esta lección deseña a experiencia que converte un novo rexistro nun cliente activo e implicado.
 

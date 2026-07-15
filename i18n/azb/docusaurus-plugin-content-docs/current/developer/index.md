@@ -3,7 +3,7 @@ title: Developer Documentation
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Geliştirici Dokümantasyonu {#developer-documentation}
+# Geliştirici Dokümantasyonu
 
 Bu rehber, geliştiricilerin Ultimate Multisite ile entegrasyon kurması, eklentiler geliştirmesi veya addon'lar oluşturması için gereken her şeyi sunar. Ultimate Multisite, bir WordPress Multisite ağını bir Web Sitesi Olarak Hizmet (WaaS) platformuna dönüştürür.
 

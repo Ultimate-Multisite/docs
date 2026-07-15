@@ -3,7 +3,7 @@ title: Gratis AI Agent Ezarpenak
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent ezarpenak {#gratis-ai-agent-settings}
+# Gratis AI Agent ezarpenak
 
 Gratis AI Agent-eko **Ezarpenak → Aurreratua** pantailak administratzaile-mailako konfigurazioa eskaintzen du backend integrazioetarako. Orrialde honek feedback birbidalketa, bilaketa-hornitzaileen gakoak, kudeatutako Superdav zerbitzuaren konfigurazioa, Google Calendar kontrolak, TextBee SMS ezarpenak eta sare osoko eginbide-banderak dokumentatzen ditu.
 

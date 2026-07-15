@@ -4,7 +4,7 @@ title: फिल्टर - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# Filter: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+# Filter: wu_apply_plan_limits
 
 plugin विकासकर्ताहरूलाई सीमाहरू short-circuit गर्न अनुमति दिनुहोस्।
 

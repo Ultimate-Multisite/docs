@@ -4,7 +4,7 @@ title: Filter - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# ഫിൽട്ടർ: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
+# ഫിൽട്ടർ: wp_should_rescue_orphaned_sites
 
 ഉപേക്ഷിക്കപ്പെട്ട സൈറ്റുകൾ രക്ഷിക്കണം എങ്കിൽ ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 

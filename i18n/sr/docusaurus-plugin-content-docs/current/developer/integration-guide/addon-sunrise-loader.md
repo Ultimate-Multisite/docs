@@ -3,7 +3,7 @@ title: Учитавач датотеке Sunrise додатка
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Учитавач Sunrise датотека за додатке {#addon-sunrise-file-loader}
+# Учитавач Sunrise датотека за додатке
 
 Ultimate Multisite 2.8.0 додаје учитавач sunrise проширења за додатке и прилагођене MU-plugin интеграције које морају да се извршавају током WordPress sunrise иницијализације без уређивања генерисане датотеке `wp-content/sunrise.php`.
 

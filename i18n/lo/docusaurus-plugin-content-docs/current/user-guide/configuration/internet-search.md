@@ -3,7 +3,7 @@ title: ການຄົ້ນຫາໃນອິນເຕີເນັດ
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# ການຄົ້ນຫາໃນອິນເຕີເນັດ {#internet-search}
+# ການຄົ້ນຫາໃນອິນເຕີເນັດ
 
 Gratis AI Agent v1.5.0 ເພີ່ມຄວາມສາມາດໃນການ **Internet Search** (ການຄົ້ນຫາໃນອິນເຕີເນັດ) ເຊິ່ງເຮັດໃຫ້ຜູ້ຊ່ວຍ AI ສາມາດດຶງຂໍ້ມູນທີ່ທັນສະໄໝຈາກເວັບໄດ້ໃນລະຫວ່າງການສົນທະນາ. ນີ້ແມ່ນໃຊ້ງານໂດຍ [Brave Search API](https://brave.com/search/api/) ຫຼື [Tavily API](https://tavily.com/).
 

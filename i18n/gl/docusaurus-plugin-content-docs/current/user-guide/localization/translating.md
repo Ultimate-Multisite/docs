@@ -3,7 +3,7 @@ title: Traducindo Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tradux Ultimate Multisite {#translating-ultimate-multisite}
+# Tradux Ultimate Multisite
 
 Ultimate Multisite está desenvolvido en inglés, pero o plugin é totalmente traducible e estamos a dar as boas vindas a todas as colaboracións de tradución.
 

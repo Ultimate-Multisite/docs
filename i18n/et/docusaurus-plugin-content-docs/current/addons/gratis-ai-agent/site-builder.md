@@ -3,7 +3,7 @@ title: Saidiehitaja orkestreerimine v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builderi orkestreerimine v2 {#site-builder-orchestration-v2}
+# Site Builderi orkestreerimine v2
 
 Site Builderi orkestreerimine v2 (kasutusele võetud Gratis AI Agent v1.4.0-s) on mootor, mis võimaldab mitmesammulist veebisaidi loomist. Kui palud agendil „luua restorani veebisait” või „luua portfoolio koos blogiga”, jagab orkestreerija selle kõrgetasemelise eesmärgi struktureeritud **plaaniks**, leiab selle täitmiseks vajalikud pluginad, käivitab iga sammu järjest, jälgib edenemist ja taastub vigadest autonoomselt.
 

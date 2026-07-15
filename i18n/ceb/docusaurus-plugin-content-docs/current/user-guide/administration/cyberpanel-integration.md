@@ -3,7 +3,7 @@ title: Integrasyon sa CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Kini ipasabot kung unsaon pag-configure sa Ultimate Multisite CyberPanel integration para awtomatikong madugang (ug gipahawa) ang mga domain nga gi-map sa imong network isip virtual hosts sa CyberPanel, uban sa opsyon nga auto-SSL provisioning pinaagi sa Let's Encrypt.
 

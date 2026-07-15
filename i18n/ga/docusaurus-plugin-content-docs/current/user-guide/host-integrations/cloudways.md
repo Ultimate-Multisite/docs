@@ -3,7 +3,7 @@ title: Cúplaíocht Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Intégrátiú le Cloudways {#cloudways-integration}
+# Intégrátiú le Cloudways
 
 ## Oibríocht {#overview}
 Is é Cloudways platform cloud managed a le fáil duit chun siti WordPress ar chuid deiridh cloud cosúil le DigitalOcean, AWS, Google Cloud, agus eile. Féachfaidh an intégráidiú seo ar bhealach authiú domáin agus ar chuid féachnaí SSL idir Ultimate Multisite agus Cloudways.

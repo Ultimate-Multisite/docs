@@ -4,7 +4,7 @@ title: Филтр - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Филтр: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# Филтр: get_site_url_for_previewer
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки URL-и истифодашаванда дар previewer-ро филтр кунанд
 

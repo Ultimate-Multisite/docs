@@ -3,7 +3,7 @@ title: Búa til valmynd
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Búa til valmynd {#create-menu}
+# Búa til valmynd
 
 Getan **Búa til valmynd** býr til WordPress-leiðsagnarvalmyndir með stuðningi við aðskilin leiðsagnarmerki sem eru ólík síðutitlum.
 

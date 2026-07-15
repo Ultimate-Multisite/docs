@@ -4,7 +4,7 @@ title: Aksie - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Aksie: wp_ultimo_load {#action-wpultimoload}
+# Aksie: wp_ultimo_load
 
 Word geaktiveer wanneer al die afhanklikhede gelaai is.
 

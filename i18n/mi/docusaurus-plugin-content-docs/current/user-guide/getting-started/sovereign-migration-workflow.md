@@ -3,7 +3,7 @@ title: Whakaaro Whakamāori o te Whakamāori o te Whakamāori
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Migrāte Sovereign {#sovereign-migration-workflow}
+# Workflow Migrāte Sovereign
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nui whakamārama (verification gates) mō te whakawhanake i te subsite standard ki te infrastructure o te tenant sovereign.
 

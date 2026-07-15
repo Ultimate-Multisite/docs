@@ -3,7 +3,7 @@ title: 'Lektioun 5: Är Pläng gestalten'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lektioun 5: Deng Pläng designen {#lesson-5-designing-your-plans}
+# Lektioun 5: Deng Pläng designen
 
 Deng Plan-Niveaue sinn net nëmme Präisniveauen -- si sinn eng Reflexioun dovun, wéi deng Nische-Clienten tatsächlech schaffen. An dëser Lektioun designs du Produit-Niveaue, déi de reelle Besoine vu Fitness-Betriber a verschiddene Phasen entspriechen.
 

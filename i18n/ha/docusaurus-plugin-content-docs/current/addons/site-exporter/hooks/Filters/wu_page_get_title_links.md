@@ -4,7 +4,7 @@ title: Tace - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Tacewa: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Tacewa: wu_page_get_title_links
 
 Ba wa masu haɓaka plugin, da mu kanmu, damar ƙara hanyoyin aiki zuwa shafukan gyaranmu.
 

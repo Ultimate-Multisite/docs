@@ -4,7 +4,7 @@ title: Action - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Kitendo: wu_cart_setup {#action-wucartsetup}
+# Kitendo: wu_cart_setup
 
 Inaruhusu watengenezaji kufanya mabadiliko zaidi kwenye kitu cha malipo (checkout object).
 

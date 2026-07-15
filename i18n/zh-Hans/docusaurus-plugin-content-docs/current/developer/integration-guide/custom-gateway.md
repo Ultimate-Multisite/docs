@@ -3,7 +3,7 @@ title: 自定义网关开发
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# 自定义网关开发 {#custom-gateway-development}
+# 自定义网关开发
 
 你可以通过扩展 `Base_Gateway` 类来创建自定义支付网关。
 

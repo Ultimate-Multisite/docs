@@ -3,7 +3,7 @@ title: Sende e-poster og utsendelser
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Sende e-poster og kringkastinger (v2) {#sending-emails-and-broadcasts-v2}
+# Sende e-poster og kringkastinger (v2)
 
 _**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 

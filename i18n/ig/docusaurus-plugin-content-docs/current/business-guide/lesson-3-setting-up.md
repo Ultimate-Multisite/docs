@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 3: Ịtọlite Netwọk Gị'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Nkuzi 3: Ịtọlite Netwọkụ Gị {#lesson-3-setting-up-your-network}
+# Nkuzi 3: Ịtọlite Netwọkụ Gị
 
 Oge eruola iwulite. Na nkuzi a, ị ga-etinye Ultimate Multisite ma hazie ntọala netwọkụ FitSite. A na-eme mkpebi ọ bụla ebe a n’uche niche mgbatị ahụ.
 

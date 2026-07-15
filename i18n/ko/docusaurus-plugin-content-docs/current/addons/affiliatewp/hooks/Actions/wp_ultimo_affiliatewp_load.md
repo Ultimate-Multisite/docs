@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# 액션: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# 액션: wp_ultimo_affiliatewp_load
 
 모든 종속성이 로드되었을 때 트리거됩니다
 

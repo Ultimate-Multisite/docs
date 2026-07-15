@@ -4,7 +4,7 @@ title: ফিল্টৰ - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filter: wu_limits_is_fluent_form_above_limit
 
 এটা দিয়া ফৰ্মৰ ধৰণ এই প্লেনত অনুমতি আছে নে তাৰ পৰীক্ষা কৰে। প্লাগইন ডেভেলপাৰসকলক তেওঁলোকৰ ৰিTurn মানক ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
 

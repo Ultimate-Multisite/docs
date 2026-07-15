@@ -3,7 +3,7 @@ title: Sgàilidhean a' chunnich an talamh
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills a' Chàir a' Chàir le Thiamh {#theme-aware-skills}
+# Skills a' Chàir a' Chàir le Thiamh
 
 Superdav AI Agent v1.10.0 ceann seachdain nòth faideach (theme-aware) ùr fhaighinn, a tha a' chlàradh gu math air do thiamh WordPress a' chlàradh. Seannachnan seo a' tolaidh le fhaisg agus eadar-dèan dìreach a' chlàradh a' thiamh a' chlàradh agus a' chlàradh.
 

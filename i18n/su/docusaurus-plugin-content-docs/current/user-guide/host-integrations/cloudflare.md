@@ -3,7 +3,7 @@ title: Integrasi Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integrasi Cloudflare {#cloudflare-integration}
+# Integrasi Cloudflare
 
 ## Gambaran Umum {#overview}
 Cloudflare téh mangrupa jaring pengiriman konten (CDN) jeung penyedia keamanan anu pang maju anu ngabantosan ngajaga jeur je website. Integrasi ieu ngabantu ngatur domain otomatis antara Ultimate Multisite je Cloudflare, utamana pikeun instalasi multisite subdomain.

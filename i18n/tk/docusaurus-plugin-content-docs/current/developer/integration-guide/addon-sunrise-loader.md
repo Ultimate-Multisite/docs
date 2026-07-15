@@ -3,7 +3,7 @@ title: Goşmaça Sunrise faýl ýükleýjisi
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Goşmaça Sunrise faýl ýükleýjisi {#addon-sunrise-file-loader}
+# Goşmaça Sunrise faýl ýükleýjisi
 
 Ultimate Multisite 2.8.0, döredilen `wp-content/sunrise.php` faýlyny redaktirlemezden WordPress sunrise başlangyç ýüklenişi wagtynda işlemeli goşmaçalar we ýörite MU-plugin integrasiýalary üçin sunrise giňeltme ýükleýjisini goşýar.
 

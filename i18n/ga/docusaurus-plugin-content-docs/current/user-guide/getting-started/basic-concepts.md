@@ -3,7 +3,7 @@ title: Céad-fháilte bunaitheachtaí
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Cúsaíocht Bhásach {#basic-concepts}
+# Cúsaíocht Bhásach
 
 Do chuidhe ar nudiú WordPress Multisite agus ar duine atá ag dul i gcónaí ar an t-amach ar Ultimate Multisite, is féidir leat go leor comhráir agus gnáthacha nua a laonadh ar an chéad. Is é sin tairbheintt ar cheart chun an fáil amach mar gheall ar an fáil ar an fáil ar an platform agus conas a bheith ag dul i gcónaí go léir.
 

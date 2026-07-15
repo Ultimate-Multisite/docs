@@ -3,7 +3,7 @@ title: Vergi İşleme
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Vergi Yönetimi {#tax-handling}
+# Vergi Yönetimi
 
 Ultimate Multisite, çekirdek plugin’imize yerleşik bir vergi tahsilat modülüne sahiptir; bu nedenle planlarınız, paketleriniz ve hizmetleriniz için satış vergisi tahsil etmeniz gerekiyorsa, herhangi bir add-on yüklemeye başvurmadan bunu kolayca yapabilirsiniz.
 

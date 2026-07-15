@@ -3,7 +3,7 @@ title: ਕਲਾਇੰਟ Account ਪੰਨਾ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# ਤੁਹਾਡੇ ਕਲਾਇੰਟ ਦਾ Account ਪੰਨਾ (v2) {#your-clients-account-page-v2}
+# ਤੁਹਾਡੇ ਕਲਾਇੰਟ ਦਾ Account ਪੰਨਾ (v2)
 
 _**ਮਹੱਤਵਪੂਰਨ ਨੋਟ: ਇਹ ਲੇਖ Ultimate Multisite ਵਰਜਨ 2.x ਨਾਲ ਸੰਬੰਧਿਤ ਹੈ।**_
 

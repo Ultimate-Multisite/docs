@@ -3,7 +3,7 @@ title: ವಿಷಯ ಸಿಂಕ್ ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync ಬದಲಾವಣೆಗಳ ವಿವರ {#content-sync-changelog}
+# Content Sync ಬದಲಾವಣೆಗಳ ವಿವರ
 
 ### Version 1.1.0 - ಬಿಡುಗಡೆ ದಿನಾಂಕ: 2025-12-31 {#version-110---released-on-2025-12-31}
 * ಹೊಸ: ಎಲ್ಲಾ ಪೋಸ್ಟ್ ಟೈಪ್‌ಗಳನ್ನು (posts, pages, custom post types) ಸಿಂಕ್ ಮಾಡಲು ಬೆಂಬಲ.

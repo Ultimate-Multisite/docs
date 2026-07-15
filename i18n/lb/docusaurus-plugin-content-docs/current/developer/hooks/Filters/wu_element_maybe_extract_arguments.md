@@ -4,7 +4,7 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Filter: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# Filter: wu_element_maybe_extract_arguments
 
 Füügt en generesche Filter derbäi, fir Entwéckler z’erlaben, dëse Parser z’erweideren, fir mat zousätzleche Builderen oder Plugins ëmzegoen.
 

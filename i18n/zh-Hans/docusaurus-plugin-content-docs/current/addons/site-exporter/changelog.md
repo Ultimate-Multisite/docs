@@ -3,7 +3,7 @@ title: 站点导出器更新日志
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# 站点导出器更新日志 {#site-exporter-changelog}
+# 站点导出器更新日志
 
 版本：1.0.6 - 发布于 2026-05-11
 * 新增：站点导出现在会打包一个可自启动的 index.php，因此 ZIP 可以安装到全新主机上，无需单独安装插件

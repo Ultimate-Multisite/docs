@@ -3,7 +3,7 @@ title: Reġistru tal-Bidliet tal-Pjanijiet Imkejla
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Reġistru tal-Bidliet tal-Pjanijiet bil-Kejl {#metered-plans-changelog}
+# Reġistru tal-Bidliet tal-Pjanijiet bil-Kejl
 
 Verżjoni 1.1.0 - Maħruġa fit-2026-05-05
 - Ġdid: ħlas tat-token AI għal subsites multisite — segwi u ċċarġja l-użu tat-token AI fuq is-siti tal-klijenti b’rati konfigurabbli għal kull token

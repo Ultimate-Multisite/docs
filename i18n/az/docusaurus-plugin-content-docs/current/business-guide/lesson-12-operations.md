@@ -3,7 +3,7 @@ title: 'Dərslik 12: Biznesin İşlənməsi'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Dərs 12: Biznesin İşləməsi {#lesson-12-running-the-business}
+# Dərs 12: Biznesin İşləməsi
 
 Bir platforma bitiriləcək bir layihə deyil — bu, idarə ediləcək bir biznesdir. Bu dərs FitSite-ı idarə etməyin gündəlik əməliyyatlarına toxunur: dəstək, fakturalar, texniki baxım və müştəriləri xoşbəxt saxlamaq.
 

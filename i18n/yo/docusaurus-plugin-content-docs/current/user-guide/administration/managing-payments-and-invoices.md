@@ -3,7 +3,7 @@ title: Ṣíṣàkóso Àwọn Ìsanwó àti Àwọn Ìwé Owó
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ṣíṣàkóso Ìsanwó àti Ìwé owó {#managing-payments-and-invoices}
+# Ṣíṣàkóso Ìsanwó àti Ìwé owó
 
 ## Ètò Ìsanwó {#payment-settings}
 

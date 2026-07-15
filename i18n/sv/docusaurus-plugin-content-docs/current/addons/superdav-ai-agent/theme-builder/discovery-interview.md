@@ -3,7 +3,7 @@ title: Upptäcktsintervju
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Upptäcktsintervju {#discovery-interview}
+# Upptäcktsintervju
 
 **Upptäcktintervjun** är det första steget i Theme Builders designprocess. Den samlar in information om din webbplats, ditt företag och dina designpreferenser för att skapa ett personligt tema.
 

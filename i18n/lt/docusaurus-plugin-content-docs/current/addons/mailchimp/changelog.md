@@ -3,7 +3,7 @@ title: Mailchimp pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp keitimų žurnalas {#mailchimp-changelog}
+# Mailchimp keitimų žurnalas
 
 Versija: 1.1.1 - Išleista 2025-09-28
 

@@ -4,7 +4,7 @@ title: فلتەر - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities {#filter-wucountrygetcities}
+# Filter: wu_country_get_cities
 
 لیستی شارەکان بۆ پارێزگایەک لە وڵاتێکدا دەگەڕێنێتەوە.
 

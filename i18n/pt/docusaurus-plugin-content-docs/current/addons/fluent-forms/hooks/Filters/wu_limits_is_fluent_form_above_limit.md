@@ -4,7 +4,7 @@ title: Filtro - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filtro: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filtro: wu_limits_is_fluent_form_above_limit
 
 Verifica se um determinado tipo de formulário é permitido neste plano. Permite que os programadores de plugin filtrem o valor devolvido
 

@@ -3,7 +3,7 @@ title: Migreerimine V1-ist
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migratsioon V1-istestest {#migrating-from-v1}
+# Migratsioon V1-istestest
 
 ## Ultimate Multisite on siinist V1.x versioon 2.x versioon. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

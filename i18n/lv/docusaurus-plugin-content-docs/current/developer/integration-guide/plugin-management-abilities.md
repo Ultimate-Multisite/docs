@@ -3,7 +3,7 @@ title: Spraudņu pārvaldības iespējas
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Spraudņu pārvaldības iespējas {#plugin-management-abilities}
+# Spraudņu pārvaldības iespējas
 
 Gratis AI Agent v1.5.0 tiek piegādāts ar **7 spraudņu pārvaldības iespējām**, kuras AI asistents var izsaukt sarunas laikā. Šīs iespējas nodrošina programmātisku kontroli pār WordPress spraudņiem, kas instalēti, izmantojot [Spraudņu veidotāja un Sandbox sistēmu](../../user-guide/administration/plugin-builder-and-sandbox).
 

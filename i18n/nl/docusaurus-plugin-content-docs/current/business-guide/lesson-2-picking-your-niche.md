@@ -3,7 +3,7 @@ title: 'Les 2: Je Niche Kiezen'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Les 2: Je Niche Kiezen {#lesson-2-picking-your-niche}
+# Les 2: Je Niche Kiezen
 
 In Les 1 hebben we vastgesteld waarom een niche beter is dan algemeen. Nu moet je de jouwe kiezen. Deze les geeft je een raamwerk om een niche te vinden en te valideren voordat je tijd investeert in het bouwen ervan.
 

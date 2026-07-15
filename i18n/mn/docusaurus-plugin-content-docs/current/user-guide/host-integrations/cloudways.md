@@ -3,7 +3,7 @@ title: Cloudways-ийн интеграц
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Нэгтгэл {#cloudways-integration}
+# Cloudways Нэгтгэл
 
 ## Ерөнхий өгүүлэл {#overview}
 Cloudways бол DigitalOcean, AWS, Google Cloud зэрэг янз бүрийн cloud провайдеруудад WordPress сайтуудыг байршуулах боломжийг олгодог менеждэх хостинг платформоор юм. Энэ нэгтгэл нь Ultimate Multisite ба Cloudways-ийн хоорондох домен синхронизуулалт, SSL сертификатын удирдлагыг автоматаар хийх боломжийг олгодог.

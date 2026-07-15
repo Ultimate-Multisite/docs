@@ -3,7 +3,7 @@ title: Kopfzeilen-Domain-Suche
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Header-Domain-Suche {#header-domain-search}
+# Header-Domain-Suche
 
 Verwende dieses Setup, wenn du ein kleines Header-Formular möchtest, das eine Domain-Suche startet und den Kunden anschließend im Ultimate Multisite Checkout aus verfügbaren Domains auswählen lässt.
 

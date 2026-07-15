@@ -3,7 +3,7 @@ title: Integratie van het Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Integratie {#hestia-control-panel-integration}
+# Hestia Control Panel Integratie
 
 Deze gids legt uit hoe je de Ultimate Multisite Hestia-integratie configureert zodat toegewezen domeinen in je netwerk automatisch worden toegevoegd (en verwijderd) als Web Domain Aliases in Hestia.
 

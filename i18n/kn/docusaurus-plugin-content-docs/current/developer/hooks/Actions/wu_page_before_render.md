@@ -4,7 +4,7 @@ title: ಕ್ರಿಯೆ - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳಿಗೆ ನಾವು ಪುಟವನ್ನು ಪ್ರಿಂಟ್ ಮಾಡುವ ಮೊದಲು ಹೆಚ್ಚುವರಿ ವಿಷಯವನ್ನು ಸೇರಿಸಲು ಇದು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

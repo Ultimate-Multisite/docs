@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (जो Gratis AI Agent v1.4.0 में पेश किया गया था) वह इंजन है जो मल्टी-स्टेप वेबसाइट बनाने की प्रक्रिया को शक्ति देता है। जब आप एजेंट से "एक रेस्टोरेंट की वेबसाइट बनाएं" या "ब्लॉग के साथ एक पोर्टफोलियो बनाएं" कहते हैं, तो ऑर्केस्ट्रेटर उस बड़े लक्ष्य को एक संरचित **प्लान** में तोड़ देता है, उसे पूरा करने के लिए आवश्यक प्लगइन्स का पता लगाता है, हर कदम को क्रम से चलाता है, प्रगति को ट्रैक करता है, और त्रुटियों से स्वायत्त रूप से उबरता है।
 

@@ -4,7 +4,7 @@ title: کړنه - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# کړنه: add_user_to_blog {#action-addusertoblog}
+# کړنه: add_user_to_blog
 
 سمدستي هغه مهال اجرا کېږي کله چې یو کارن یوې وېبپاڼې ته ورزیات شي.
 

@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# ການກະທຳ: wu_dashboard_widgets {#action-wudashboardwidgets}
+# ການກະທຳ: wu_dashboard_widgets
 
 ອະນຸຍາດໃຫ້ນັກພັດທະນາ plugin ເພີ່ມ widgets ໃສ່ Network Dashboard Panel.
 

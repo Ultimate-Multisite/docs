@@ -3,7 +3,7 @@ title: Rexistro de cambios dos plans con medición
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Rexistro de cambios de plans medidos {#metered-plans-changelog}
+# Rexistro de cambios de plans medidos
 
 Versión 1.1.0 - Publicada o 2026-05-05
 - Novo: facturación de tokens de AI para subsitios multisite — rastrexa e factura o uso de tokens de AI en todos os sitios de clientes con tarifas por token configurables

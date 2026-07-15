@@ -3,7 +3,7 @@ title: Migrarea de la V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrarea de la V1 {#migrating-from-v1}
+# Migrarea de la V1
 
 ## Ultimate Multisite a trecut de la seria de versiuni 1.x la seria de versiuni 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

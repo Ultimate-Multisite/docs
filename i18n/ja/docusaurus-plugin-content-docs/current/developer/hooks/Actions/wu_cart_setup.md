@@ -4,7 +4,7 @@ title: アクション - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# アクション: wu_cart_setup {#action-wucartsetup}
+# アクション: wu_cart_setup
 
 開発者がチェックアウトオブジェクトに追加の変更を行えるようにします。
 

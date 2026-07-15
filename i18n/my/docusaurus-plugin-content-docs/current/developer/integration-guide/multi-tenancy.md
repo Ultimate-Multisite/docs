@@ -3,7 +3,7 @@ title: အငှားသုံးစွဲသူများစွာ ပေါ
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy ပေါင်းစည်းမှု {#multi-tenancy-integration}
+# Multi-Tenancy ပေါင်းစည်းမှု
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 သည် ကိုယ်ပိုင်အုပ်ချုပ် tenant များ၊ migration အတည်ပြုစစ်ဆေးမှု၊ နှင့် tenant သက်တမ်းစက်ဝန်း အလိုအလျောက်လုပ်ဆောင်မှုများအတွက် ပေါင်းစည်းမှု touchpoint အချို့ကို ပြောင်းလဲထားသည်။
 

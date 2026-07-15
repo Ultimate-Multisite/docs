@@ -3,7 +3,7 @@ title: Bayanan WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Manazartar WP-CLI {#wp-cli-reference}
+# Manazartar WP-CLI
 
 Gratis AI Agent yana zuwa da dangin umarni na `wp gratis-ai-agent` don gwada aikin agent, sarrafa iyawa, da tambayar matsayin agent daga layin umarni. Duk umarni suna buƙatar WP-CLI 2.0 ko sama da haka.
 

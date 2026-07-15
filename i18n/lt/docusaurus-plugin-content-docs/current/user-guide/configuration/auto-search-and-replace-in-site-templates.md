@@ -3,7 +3,7 @@ title: Automatinis paieška ir keitimas svetainės šablonuose
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatinas ir keitimas svetainės šabloonu (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatinas ir keitimas svetainės šabloonu (v2)
 
 _**Šis tutorial reikalauja Ultimate Multisite versiją 2.x.**_
 

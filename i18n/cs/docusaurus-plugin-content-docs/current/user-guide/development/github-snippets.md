@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Jak používat fragmenty kódu Ultimate Multisite z našeho GitHub repozitáře {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Jak používat fragmenty kódu Ultimate Multisite z našeho GitHub repozitáře
 
 Na GitHubu jsou k dispozici fragmenty kódu, které často požadují uživatelé Ultimate Multisite. Tyto fragmenty umožňují přidat drobné funkce, jako je vložení skriptu Google Analytics na registrační stránky nebo skrytí meta boxu v administraci.
 
@@ -19,7 +19,7 @@ Kód můžete přidat dvěma způsoby:
 
   2. Pomocí Must-Use pluginů (mu-plugins)
 
-# Jak přidat fragment kódu do souboru functions.php vašeho motivu {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Jak přidat fragment kódu do souboru functions.php vašeho motivu
 
   1. Přihlaste se do administrace vaší WordPress multisite sítě a přejděte na Vzhled > Editor motivů (viz snímek obrazovky níže).
 
@@ -29,7 +29,7 @@ Kód můžete přidat dvěma způsoby:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Jak vytvořit Must-Use pluginy (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Jak vytvořit Must-Use pluginy (mu-plugins)
 
 WordPress má funkci, která umožňuje načítat vlastní funkcionalitu pomocí takzvaných „Must-Use pluginů", zkráceně „mu-plugins".
 

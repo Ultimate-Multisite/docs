@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item {#filter-wurestupdateitem}
+# Filter: wu_rest_update_item
 
 இந்த கோரிக்கையைத் தொடர அனுமதிக்கப்படுகிறதா இல்லையா என்பதை வடிகட்டுகிறது.
 

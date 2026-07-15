@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_register_capabilities
 sidebar_label: wu_register_capabilities
 _i18n_hash: 9b32e061f2a98a4c1bd30af0badd5760
 ---
-# ການກະທຳ: wu_register_capabilities {#action-wuregistercapabilities}
+# ການກະທຳ: wu_register_capabilities
 
 ເຮັດວຽກເພື່ອໃຫ້ສ່ວນເສີມສາມາດແນບໂມດູນຄວາມສາມາດເຂົ້າກັບການຜະສານງານໄດ້.
 

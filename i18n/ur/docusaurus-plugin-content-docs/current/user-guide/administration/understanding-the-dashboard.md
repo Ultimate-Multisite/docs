@@ -3,7 +3,7 @@ title: ڈیش بورڈ کو سمجھنا
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite ڈیش بورڈ کو سمجھنا {#understanding-the-ultimate-multisite-dashboard}
+# Ultimate Multisite ڈیش بورڈ کو سمجھنا
 
 اس سے پہلے کہ ہم Ultimate Multisite کی جدید ترتیبات اور آپریشنل پہلوؤں میں گہرائی سے جائیں، آئیے پہلے ڈیش بورڈ پر ایک نظر ڈالتے ہیں۔
 

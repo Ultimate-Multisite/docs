@@ -3,7 +3,7 @@ title: Tabbatar da Bambancin Tarin Launuka
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Tabbatar da Bambancin Palette {#validate-palette-contrast}
+# Tabbatar da Bambancin Palette
 
 Ƙwarewar **Validate Palette Contrast** tana duba ma'auratan launi a palette na ƙirarka don bin ƙa'idodin WCAG (Web Content Accessibility Guidelines) kafin a yi amfani da su a theme ɗinka.
 

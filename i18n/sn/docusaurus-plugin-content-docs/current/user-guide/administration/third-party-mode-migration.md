@@ -3,7 +3,7 @@ title: Kugadzirisa Mhando Yechitatu
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrasheni ku Modu ya Tatu (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrasheni ku Modu ya Tatu (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 inengei nzira sei zvinhu zvinogadzirwa nevanhu (third-party abilities). **Modu ya tatu (third-party mode) ndichibva inoshandiswa nekuti "auto" (kufanana nekuenda kwawo), izviro izvi zvinoita WordPress Abilities API integration yakaita WordPress 7.0+ pane kuita, uye haunoda kutaura kuti uingire configuration.**
 

@@ -3,7 +3,7 @@ title: Ultimate AI Connector для сумяшчальных эндпаінта�
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Журнал змены Ultimate AI Connector для сумяшчальных кінтпаінтаў {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Журнал змены Ultimate AI Connector для сумяшчальных кінтпаінтаў
 
 ## Версія 2.0.0 — Выпушчана 2026-04-24 {#version-200--released-on-2026-04-24}
 

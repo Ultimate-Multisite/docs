@@ -4,7 +4,7 @@ title: Φίλτρο - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Φίλτρο: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Φίλτρο: wu_checkout_field_types
 
 Εδώ συνδέονται οι API μας για την προσθήκη νέων τύπων πεδίων.
 

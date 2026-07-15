@@ -4,7 +4,7 @@ title: ማጣሪያ - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filter: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filter: wu_view_override_replaceable_views
 
 ገንቢዎች ሊተካ የሚችሉባቸው ቪውዎች ዝርዝር ውስጥ ተጨማሪ አቃፊዎችን እንዲጨምሩ የሚያስችል ነው።
 

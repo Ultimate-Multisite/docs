@@ -3,7 +3,7 @@ title: 插件与主题管理器更新日志
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# 插件和主题管理器更新日志 {#plugin--theme-manager-changelog}
+# 插件和主题管理器更新日志
 
 版本：2.0.8 - 发布于 2026-05-05
 * 改进：插件列表现在使用站点缓存，以减少数据库查询并提升性能

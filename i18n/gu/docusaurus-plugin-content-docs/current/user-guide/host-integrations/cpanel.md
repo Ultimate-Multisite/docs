@@ -3,7 +3,7 @@ title: cPanel એકીકરણ
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integration {#cpanel-integration}
+# cPanel Integration
 
 ## ઝાંખી {#overview}
 cPanel એ સૌથી લોકપ્રિય વેબ હોસ્ટિંગ કંટ્રોલ પેનલમાંનું એક છે જેનો ઉપયોગ ઘણા shared અને dedicated hosting પ્રદાતાઓ કરે છે. આ integration Ultimate Multisite અને cPanel વચ્ચે automatic domain syncing ને સક્ષમ બનાવે છે, જેનાથી તમે તમારા cPanel એકાઉન્ટમાં domain aliases અને subdomains આપોઆપ ઉમેરી શકો છો.

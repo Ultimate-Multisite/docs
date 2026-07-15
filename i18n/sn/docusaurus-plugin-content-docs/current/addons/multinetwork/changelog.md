@@ -3,7 +3,7 @@ title: Rondedzero yeShanduko dzeManetiweki Akawanda
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Chinyorwa cheShanduko cheMulti-Network {#multi-network-changelog}
+# Chinyorwa cheShanduko cheMulti-Network
 
 ### 1.3.0 {#130}
 * Chitsva: Muoni wepreview yema template enetiweki — bhurawuza uye ona preview yema template enetiweki nepaneli mhenyu usati watenga.

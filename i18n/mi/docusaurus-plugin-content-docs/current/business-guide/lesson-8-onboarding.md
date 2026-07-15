@@ -3,7 +3,7 @@ title: 'Akoranga 8: Te Whakauru Kiritaki'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Akoranga 8: Te Whakaurunga Kiritaki {#lesson-8-customer-onboarding}
+# Akoranga 8: Te Whakaurunga Kiritaki
 
 Ko te whakaawe i tētahi kiritaki kia rēhita mai he haurua noa iho o te mahi. Ki te takiuru rātou, ka taumaha te ngākau, ā, kāore e hoki mai anō, kua ngaro rātou i a koe. Ka hoahoa tēnei akoranga i te wheako e huri ai tētahi rēhitatanga hou hei kiritaki hohe, whai wāhi hoki.
 

@@ -3,7 +3,7 @@ title: جیاواکاریی مۆڵتی-تێنێنسى
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# جێبەجێکردنی جیاوازی بیناکان (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# جێبەجێکردنی جیاوازی بیناکان (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 پشتگیریک داتابەیس و فایلی سیستمیی تایبەت بۆ هەر subsite یەک بۆ بەکارهێنەرانی سەربەخۆ (sovereign tenants) پاشداری دەکات. ئەمە داتاکانی تانتر لە یەکەوە جیاواز دەدات، لەکاتێکدا پڕۆڤیزنکردنی تۆڕ، بڕین و بەڕێوەبردنی سیستەم پارێزراو دەبێت.
 

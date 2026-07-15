@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Filter: network_options_list {#filter-networkoptionslist}
+# Filter: network_options_list
 
 ಇದು ನೆಟ್‌ವರ್ಕ್‌ನ ಡೊಮೇನ್ ಮತ್ತು ಪಥವನ್ನು ಅವಲಂಬಿಸಿರುವ ನೆಟ್‌ವರ್ಕ್ ಆಯ್ಕೆಗಳ ಪಟ್ಟಿಯನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 

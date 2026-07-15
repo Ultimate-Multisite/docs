@@ -4,7 +4,7 @@ title: 过滤器 - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# 过滤器: wu_is_api_enabled {#filter-wuisapienabled}
+# 过滤器: wu_is_api_enabled
 
 允许插件开发者强制为 API 设置特定状态。
 

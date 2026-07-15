@@ -3,7 +3,7 @@ title: ພາບລວມແດෂ්ບອດ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ภาพรวมแดชบอร์ด {#dashboard-overview}
+# ภาพรวมแดชบอร์ด
 
 Ultimate Multisite มี **Dashboard** โดยเฉพาะอยู่ภายใต้เมนู Ultimate Multisite และยังเพิ่ม widget ต่างๆ เข้าไปใน Network Dashboard ด้วย บทความนี้จะอธิบายว่าคุณจะเห็นอะไรบ้างในทั้งสองที่
 

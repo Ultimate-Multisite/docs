@@ -3,7 +3,7 @@ title: ትምህርት 12፡ የንግድ ሥራ ማስኬድ
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# ትምህርት 12፡ ንግዱን ማስኬድ {#lesson-12-running-the-business}
+# ትምህርት 12፡ ንግዱን ማስኬድ
 
 ፕላትፎርም (Platform) የሚያበቃ ፕሮጀክት አይደለም—የሚሰሩበት ንግድ ነው። ይህ ትምህርት FitSiteን በየቀኑ እንዴት ማስተዳደር እንደሚቻል ይዳስሳል፡ ድጋፍ (support)፣ ክፍያ (billing)፣ ጥገና (maintenance) እና ደንበኞችን ደስተኛ ማድረግ።
 

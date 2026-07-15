@@ -3,7 +3,7 @@ title: Requisitos
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisitos do Ultimate Multisite {#ultimate-multisite-requirements}
+# Requisitos do Ultimate Multisite
 
 A primeira coisa que podes pensar antes de comprar o Ultimate Multisite é quais son son os requisitos para correr o nosso plugin. Bem, por sorte, só hai uns requisitos básicos para correr o Ultimate Multisite: un **nome de domínio**, un bon **provedor de alojamento** e unha instalación de WordPress **Multisite**. ¡Eso é todo o que necesitas!
 

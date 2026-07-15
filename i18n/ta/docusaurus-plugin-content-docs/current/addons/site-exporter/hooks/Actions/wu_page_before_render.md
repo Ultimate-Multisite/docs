@@ -4,7 +4,7 @@ title: செயல் - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: fc447057ea50e758d4cf83bef375f7e6
 ---
-# Action: wu_page_before_render {#action-wupagebeforerender}
+# Action: wu_page_before_render
 
 ஒரு பக்கத்தை ரெண்டர் செய்வதற்கு (காட்டுவதற்கு) முன் இது செயல்படும்.
 

@@ -3,7 +3,7 @@ title: Spesifikasi Situs Keterampilan
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Keterampilan Spesifikasi Situs {#site-specification-skill}
+# Keterampilan Spesifikasi Situs
 
 **Keterampilan Spesifikasi Situs (Site Specification skill)** téh cara terstruktur pikeun ngagambarkeun tujuan situs, audiens, jeung jati diri *brand* anjeun. Informasi ieu disimpen dina memori **site_brief** anjeun, nu dipaké ku agen-agen sanggeus sesi pikeun méré bantuan anu konsisten jeung ngarti konteks.
 

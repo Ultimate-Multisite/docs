@@ -3,7 +3,7 @@ title: Ebe Ọrụ Ịhụnanya
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Konsepts Cơ Bản {#basic-concepts}
+# Konsepts Cơ Bản
 
 Cho người dùng WordPress Multisite mới và ai vừa bắt đầu dùng Ultimate Multisite, ban đầu có thể có rất nhiều từ ngữ và cụm từ mới để tiếp thu. Học chúng là một việc quan trọng vì bạn sẽ cần hiểu nền tảng này và cách nó hoạt động như một tổng thể.
 

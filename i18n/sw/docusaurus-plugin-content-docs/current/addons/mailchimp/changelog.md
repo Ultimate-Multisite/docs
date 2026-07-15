@@ -3,7 +3,7 @@ title: Orodha ya Mabadiliko ya Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Historia ya Mabadiliko za Mailchimp {#mailchimp-changelog}
+# Historia ya Mabadiliko za Mailchimp
 
 Toleo: 1.1.1 - Ili kutolewa tarehe 2025-09-28
 

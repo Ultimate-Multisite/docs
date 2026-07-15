@@ -3,7 +3,7 @@ title: Denník zmien Ultimate AI Connector pre kompatibilné koncové body
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Zoznam zmien Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Zoznam zmien Ultimate AI Connector for Compatible Endpoints
 
 ## Verzia 2.0.0 — Vydané 2026-04-24 {#version-200--released-on-2026-04-24}
 

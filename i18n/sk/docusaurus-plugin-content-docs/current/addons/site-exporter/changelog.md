@@ -3,7 +3,7 @@ title: Zoznam zmien exportéra stránok
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Zoznam zmien Site Exporter {#site-exporter-changelog}
+# Zoznam zmien Site Exporter
 
 Verzia: 1.0.6 - Vydané 2026-05-11
 * Nové: Exporty stránok teraz obsahujú samospúšťací index.php, takže ZIP je možné nainštalovať na čerstvý hosting bez samostatnej inštalácie pluginu

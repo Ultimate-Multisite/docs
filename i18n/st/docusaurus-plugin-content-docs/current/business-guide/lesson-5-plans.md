@@ -3,7 +3,7 @@ title: 'Thuto ea 5: Ho rala merero ea hao'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Thuto ea 5: Ho Rala Merero ea Hao {#lesson-5-designing-your-plans}
+# Thuto ea 5: Ho Rala Merero ea Hao
 
 Mehato ea merero ea hao ha se maemo a litheko feela -- ke pontšo ea kamoo bareki ba niche ea hao ba sebetsang kateng ka nnete. Thutong ena o tla rala mehato ea sehlahisoa e lumellanang le litlhoko tsa sebele tsa likhoebo tsa boikoetliso maemong a fapaneng.
 

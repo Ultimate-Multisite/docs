@@ -4,7 +4,7 @@ title: فلتەر - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# فلتەر: wu_admin_notices {#filter-wuadminnotices}
+# فلتەر: wu_admin_notices
 
 ڕێگە بە پەرەپێدەران بدە بۆ فلتەرکردنی ئاگادارکردنەوەکانی بەڕێوەبەرایەتی کە لەلایەن Ultimate Multisite زیادکراون.
 

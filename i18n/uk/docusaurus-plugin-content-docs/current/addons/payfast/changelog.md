@@ -3,7 +3,7 @@ title: Журнал змін PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Журнал змін PayFast {#payfast-changelog}
+# Журнал змін PayFast
 
 Версія: 1.0.2 — Випущено 2025-09-28
 

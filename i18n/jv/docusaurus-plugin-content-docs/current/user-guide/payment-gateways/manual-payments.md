@@ -3,7 +3,7 @@ title: Ngatur Pembayaran Manual
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ngatur Pembayaran Manual (v2) {#setting-up-manual-payments-v2}
+# Ngatur Pembayaran Manual (v2)
 
 _**CATETHAN WIGATI: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
 

@@ -3,7 +3,7 @@ title: سائٹ بلڈر موڈ ہٹانے کا نوٹس
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# سائٹ بلڈر موڈ کی ہٹانے کی اطلاع {#site-builder-mode-removal-notice}
+# سائٹ بلڈر موڈ کی ہٹانے کی اطلاع
 
 **Superdav AI Agent v1.12.0 میں سائٹ بلڈر موڈ (Site Builder mode) کو ہٹا دیا گیا ہے۔** اگر آپ سائٹ بلڈر موڈ استعمال کر رہے تھے، تو تھیم بنانے اور سائٹ کی سیٹ اپ کے لیے آپ کو **سیٹ اپ اسسٹنٹ ایجنٹ (Setup Assistant agent)** پر منتقل (migrate) ہونا چاہیے۔
 

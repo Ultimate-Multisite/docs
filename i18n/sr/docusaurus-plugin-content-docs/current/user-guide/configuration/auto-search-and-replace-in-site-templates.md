@@ -3,7 +3,7 @@ title: Automatsko pretraživanje i zamena u šablonima sajtova
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatsko pretraživanje i zamena u šablonima sajtova (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automatsko pretraživanje i zamena u šablonima sajtova (v2)
 
 _**Ovaj tutorial zahteva WP Uitimo verziju 2.x.**_
 

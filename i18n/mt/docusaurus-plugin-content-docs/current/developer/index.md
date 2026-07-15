@@ -3,7 +3,7 @@ title: Dokumentazzjoni għall-Iżviluppaturi
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentazzjoni għall-Iżviluppaturi {#developer-documentation}
+# Dokumentazzjoni għall-Iżviluppaturi
 
 Din il-gwida tipprovdi lill-iżviluppaturi b’dak kollu meħtieġ biex jintegraw ma’, jestendu, jew jiżviluppaw addons għal Ultimate Multisite. Ultimate Multisite jittrasforma netwerk WordPress Multisite fi pjattaforma Website-as-a-Service (WaaS).
 

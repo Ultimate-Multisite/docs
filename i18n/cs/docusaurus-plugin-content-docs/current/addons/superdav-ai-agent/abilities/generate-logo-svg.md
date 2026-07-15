@@ -3,7 +3,7 @@ title: Generovat SVG logo
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generování SVG loga {#generate-logo-svg}
+# Generování SVG loga
 
 Funkce **Generování SVG loga** umožňuje Theme Builder vytvořit a vložit vlastní SVG logo přímo na váš WordPress web a zároveň provést automatickou sanitizaci, aby bylo bezpečné použití.
 

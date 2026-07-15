@@ -3,7 +3,7 @@ title: Розширені приклади коду
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Розширені приклади коду {#advanced-code-examples}
+# Розширені приклади коду
 
 Ці приклади демонструють розширені шаблони інтеграції з Ultimate Multisite.
 

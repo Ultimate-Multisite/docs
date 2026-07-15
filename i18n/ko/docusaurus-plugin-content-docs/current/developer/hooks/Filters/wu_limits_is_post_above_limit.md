@@ -4,7 +4,7 @@ title: 필터 - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# 필터: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# 필터: wu_limits_is_post_above_limit
 
 주어진 포스트 타입이 이 플랜에서 허용되는지 확인합니다. 플러그인 개발자가 반환 값을 필터링할 수 있도록 허용합니다.
 

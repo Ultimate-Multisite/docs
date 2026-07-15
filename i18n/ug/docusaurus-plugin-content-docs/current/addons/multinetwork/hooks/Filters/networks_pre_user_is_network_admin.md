@@ -4,7 +4,7 @@ title: سۈزگۈچ - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# سۈزگۈچ: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# سۈزگۈچ: networks_pre_user_is_network_admin
 
 ئىشلەتكۈچى باشقۇرغۇچىسى بولغان تورلارنى سۈزۈپ، جەرياننى قىسقا يول بىلەن توختىتىدۇ.
 

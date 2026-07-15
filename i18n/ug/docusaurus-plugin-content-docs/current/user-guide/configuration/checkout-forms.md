@@ -3,7 +3,7 @@ title: سورة نماشلار
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms، жаңы мизони кийинки мизони сатууда ян다рак тажмалар көрүү үчүн оңай ва мувофиқ йўлдирмишdir.
 

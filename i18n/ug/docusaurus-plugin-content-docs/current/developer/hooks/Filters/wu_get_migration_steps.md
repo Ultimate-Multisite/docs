@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_get_migration_steps
 sidebar_label: wu_get_migration_steps
 _i18n_hash: 72fb487202b062d0fceec5058b555b19
 ---
-# سۈزگۈچ: wu_get_migration_steps {#filter-wugetmigrationsteps}
+# سۈزگۈچ: wu_get_migration_steps
 
 ئىجادكارلار ۋە قوشۇمچىلارغا يېڭى كۆچۈرۈش باسقۇچلىرىنى قوشۇشقا رۇخسەت قىلىدۇ
 

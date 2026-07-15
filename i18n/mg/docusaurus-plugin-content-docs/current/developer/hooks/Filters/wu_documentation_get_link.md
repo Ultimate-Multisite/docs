@@ -4,7 +4,7 @@ title: Sivana - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Sivana: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Sivana: wu_documentation_get_link
 
 Avelao ny mpamorona plugin hanivana ireo rohy.
 

@@ -3,7 +3,7 @@ title: Провайдерді ескеретін промпт кэштеу
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Провайдерді ескеретін Prompt Caching {#provider-aware-prompt-caching}
+# Провайдерді ескеретін Prompt Caching
 
 Superdav AI Agent v1.12.0 әртүрлі LLM провайдерлері бойынша prompt-тарды кэштеу арқылы API шығындары мен кідірісті оңтайландыратын **провайдерді ескеретін prompt caching** мүмкіндігін енгізеді. Әр провайдердің кэштеу механизмдері мен конфигурациялары әртүрлі.
 

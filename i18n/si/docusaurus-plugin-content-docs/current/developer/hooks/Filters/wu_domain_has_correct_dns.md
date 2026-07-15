@@ -4,7 +4,7 @@ title: පෙරහන - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# පෙරහන: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# පෙරහන: wu_domain_has_correct_dns
 
 ප්‍රතිඵල නිර්වචනය කිරීම සඳහා නව පරීක්ෂා එක් කිරීමට ප්ලගින සංවර්ධකයින්ට ඉඩ දෙයි.
 

@@ -3,7 +3,7 @@ title: د Webhook سمبالول
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# د وېبهوک سمبالول {#webhook-handling}
+# د وېبهوک سمبالول
 
 د بهرنیو خدمتونو څخه د پېښو ترلاسه کولو او له Ultimate Multisite سره د معلوماتو هممهاله کولو لپاره دودیز وېبهوک پای ټکي جوړ کړئ.
 

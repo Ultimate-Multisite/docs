@@ -4,7 +4,7 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 যিটো প্লেনৰ ID পৰীক্ষা কৰিব লাগিব, তাৰ বাবে এই ফিল্টাৰটো ব্যৱহাৰ কৰে। যদি এই ID টি বিদ্যমান থাকে, তেন্তে নতুন সাবস্ক্রিপশ্যনটোৱে এই প্লেনটো ব্যৱহাৰ কৰিব।
 

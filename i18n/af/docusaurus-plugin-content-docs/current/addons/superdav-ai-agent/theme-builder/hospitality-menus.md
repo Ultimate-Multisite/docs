@@ -3,7 +3,7 @@ title: Gastvryheidsmenu's
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastgewerdesmenu's {#hospitality-menus}
+# Gastgewerdesmenu's
 
 Die **Gastgewerdesmenu's**-kenmerk laat Theme Builder toe om gestruktureerde kos- en drankmenu-bladsye direk in u WordPress-webwerf te genereer en in te bed.
 

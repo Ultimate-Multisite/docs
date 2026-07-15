@@ -3,7 +3,7 @@ title: Ìdàgbàsókè Ẹnu-ọ̀nà Àdáni
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Idagbasoke Gateway Aṣa {#custom-gateway-development}
+# Idagbasoke Gateway Aṣa
 
 O le ṣẹda àwọn gateway isanwo àṣà nípa fífi kún kilasi `Base_Gateway`.
 

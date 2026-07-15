@@ -3,7 +3,7 @@ title: Mokėjimų gavimas
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Mokėjimų gavimas (v2) {#getting-paid-v2}
+# Mokėjimų gavimas (v2)
 
 _**SVARBI PASTABA: šiame straipsnyje kalbama apie Ultimate Multisite 2.x versiją.**_
 

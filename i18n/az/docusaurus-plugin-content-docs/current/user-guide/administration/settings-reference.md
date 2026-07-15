@@ -3,7 +3,7 @@ title: Parametrlər üzrə arayış
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Ayarlar arayışı {#settings-reference}
+# Ayarlar arayışı
 
 Bu səhifə Ultimate Multisite-də gündəlik idarəetməyə təsir edən ayarları və son davranış dəyişikliklərini izləyir.
 

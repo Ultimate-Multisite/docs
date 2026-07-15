@@ -3,7 +3,7 @@ title: Журнал изменений Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Журнал изменений Captcha {#captcha-changelog}
+# Журнал изменений Captcha
 
 Version: 1.5.0 - Выпущено 2026-05-22
 * Новое: Жёсткий ограничитель частоты — считает каждый GET и POST на поверхностях, защищённых captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login), и отвечает HTTP 429, заголовком `Retry-After` и рандомизированной tarpit-задержкой (1–5 с, с жёстким пределом 15 с).

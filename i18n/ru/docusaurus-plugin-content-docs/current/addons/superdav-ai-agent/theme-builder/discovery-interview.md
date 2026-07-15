@@ -3,7 +3,7 @@ title: Интервью для выявления потребностей
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Интервью для сбора требований (Discovery Interview) {#discovery-interview}
+# Интервью для сбора требований (Discovery Interview)
 
 **Discovery Interview** — это первый этап процесса дизайна в Theme Builder. Он собирает информацию о вашем сайте, бизнесе и предпочтениях в дизайне, чтобы создать персонализированную тему.
 

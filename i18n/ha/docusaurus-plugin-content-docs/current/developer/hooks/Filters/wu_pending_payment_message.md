@@ -4,7 +4,7 @@ title: Tace - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Tace: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Tace: wu_pending_payment_message
 
 Ba wa mai amfani damar canza saƙon game da biyan kuɗin da ke jiran kammalawa.
 

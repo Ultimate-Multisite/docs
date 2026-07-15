@@ -3,7 +3,7 @@ title: ຮູກ ແລະ ຟิลເຕີ
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks ແລະ Filters {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Hooks ແລະ Filters
 
 Ultimate Multisite ມັນປະກອບດ້ວຍຟັງຊັນ (functions) ແລະ ຄຳສັ່ງຖານຂໍ້ມູນ (database queries) ຈຳນວນຫຼາຍ. ມັນມີ hooks ແລະ filters ເພື່ອໃຫ້ທ່ານສາມາດແກ້ໄຂ ຫຼື ເພີ່ມລະຫັດໃໝ່ເຂົ້າໃນຟັງຊັນທີ່ມີຢູ່ແລ້ວໄດ້.
 

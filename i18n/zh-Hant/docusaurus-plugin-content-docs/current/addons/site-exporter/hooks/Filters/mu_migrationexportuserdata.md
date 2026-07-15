@@ -4,7 +4,7 @@ title: 過濾器 - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# 過濾器：mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# 過濾器：mu_migration/export/user/data
 
 用來過濾預設的使用者資料，決定哪些資料需要被匯出或匯入。
 

@@ -3,7 +3,7 @@ title: Nadogradnja plana
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Nadogradnja plana (v2) {#upgrading-a-plan-v2}
+# Nadogradnja plana (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 

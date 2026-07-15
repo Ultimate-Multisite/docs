@@ -3,7 +3,7 @@ title: WordPress Multisite yog dab tsi?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite ຫຍັງ? {#what-is-wordpress-multisite}
+# WordPress Multisite ຫຍັງ?
 
 WordPress ຂອງມັນມີຟີເຈີຊື່ວ່າ ‘Multisite’ (ເວັບໄຊທ໌ຫຼາຍໂຕ), ເຊິ່ງມີຕົ້ນກຳເນີດກັບປີ 2010 ເມື່ອ WordPress 3.0 ເລີ່ມອອກມາ. ນັ້ນຕັ້ງແຕ່Vendors ໄດ້ມີການປັບປຸງໃໝ່ໆເລື້ອຍໆເພື່ອເພີ່ມຟີເຈີໃໝ່ໆ ແລະ ເພີ່ມຄວາມປອດໄພໃຫ້ດີຂຶ້ນ.
 

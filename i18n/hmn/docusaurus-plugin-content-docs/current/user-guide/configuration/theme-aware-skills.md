@@ -3,7 +3,7 @@ title: Kev txawv tsim neeg uas paub txog theme
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# ជំនាញដែលយល់ពី Theme (Theme-Aware Skills) {#theme-aware-skills}
+# ជំនាញដែលយល់ពី Theme (Theme-Aware Skills)
 
 Superdav AI Agent v1.10.0 មានជំនាញថ្មីបួនយ៉ាងដែលយល់ពី Theme ដែលនឹងមកជាមួយដោយស្វ័យប្រវត្តិ ហើយវាអាចសម្របខ្លួនទៅតាម WordPress theme ដែលអ្នកកំពុងប្រើ។ ជំនាញទាំងនេះផ្តល់នូវការណែនាំ និងសមត្ថភាពពិសេសៗដែលត្រូវបានរៀបចំឡើងសម្រាប់រចនាសម្ព័ន្ធ និងមុខងាររបស់ theme របស់អ្នក។
 

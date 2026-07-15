@@ -4,7 +4,7 @@ title: Sefe - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Sefe: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Sefe: wu_site_exporter_plugin_exclusion_list
 
 E dumella bahlahisi ho laola lenane la di-plugin tse ka qhelelwang thoko ho zip e hlahisitsweng.
 

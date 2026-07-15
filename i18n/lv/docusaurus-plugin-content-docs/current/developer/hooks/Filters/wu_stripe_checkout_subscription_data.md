@@ -4,7 +4,7 @@ title: Filtrs - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Filtrs: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Filtrs: wu_stripe_checkout_subscription_data
 
 Filtrē Stripe abonementa datus. Var pārrakstīt success_url vai cancel_url.
 

@@ -3,7 +3,7 @@ title: Automātiskais meklēšana un aizstāšana vietnes šabloniem
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automāts me aizstāšana vietnes šabloniem (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automāts me aizstāšana vietnes šabloniem (v2)
 
 _**Šis tutorial prasa Ultimate Multisite versiju 2.x.**_
 

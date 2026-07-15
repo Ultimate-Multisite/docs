@@ -3,7 +3,7 @@ title: 多網路變更日誌
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# 網路多站點更新日誌 {#multi-network-changelog}
+# 網路多站點更新日誌
 
 ### 1.3.0 {#130}
 * 新增：網路範本預覽器 — 在購買前，即可透過即時面板瀏覽和預覽網路範本。

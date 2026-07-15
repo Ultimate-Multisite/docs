@@ -4,7 +4,7 @@ title: Filtrs - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filtrs: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filtrs: wu_woocommerce_line_item_params
 
 Filtrē parametrus, kas tiek izmantoti, lai izveidotu rindas vienumus WooCommerce grozā, pirms klients tiek novirzīts uz WooCommerce norēķināšanos.
 

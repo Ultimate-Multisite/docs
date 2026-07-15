@@ -4,7 +4,7 @@ title: فلٽر - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# فلٽر: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# فلٽر: wu_get_site_domain_and_path
 
 ترقيڪارن کي ڊومين/رستي جي جوڙن ۾ ڦيرڦار ڪرڻ جي اجازت ڏئي ٿو.
 

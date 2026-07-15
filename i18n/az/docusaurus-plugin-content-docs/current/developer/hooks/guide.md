@@ -3,7 +3,7 @@ title: Hooks İstifadəsi Bələdçisi
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks İstifadəsi Təlimatı {#hooks-usage-guide}
+# Hooks İstifadəsi Təlimatı
 
 Ultimate Multisite 200-dən çox action hook və 280-dən çox filter hook təmin edir. Bu səhifə ən çox istifadə olunan hook-ları praktik nümunələrlə əhatə edir. Tam avtomatik yaradılmış istinad üçün, bu bölmənin digər səhifələrinə baxın.
 

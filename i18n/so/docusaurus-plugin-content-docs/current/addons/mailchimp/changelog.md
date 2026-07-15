@@ -3,7 +3,7 @@ title: Mailchimp Diiwaanka Isbeddellada
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Diiwaanka isbeddellada Mailchimp {#mailchimp-changelog}
+# Diiwaanka isbeddellada Mailchimp
 
 Nooca: 1.1.1 - La sii daayay 2025-09-28
 

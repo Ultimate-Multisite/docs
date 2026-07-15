@@ -3,7 +3,7 @@ title: Sazlamalar boýunça maglumatnama
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Sazlamalar boýunça salgylanma {#settings-reference}
+# Sazlamalar boýunça salgylanma
 
 Bu sahypa Ultimate Multisite-de gündelik dolandyryşa täsir edýän sazlamalary we soňky özüni alyp baryş üýtgeşmelerini yzarlaýar.
 

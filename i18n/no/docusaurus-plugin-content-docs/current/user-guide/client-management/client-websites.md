@@ -3,7 +3,7 @@ title: Klientnettsteder
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Kundens nettsteder (v2) {#your-clients-websites-v2}
+# Kundens nettsteder (v2)
 
 Etter registrering på nettverket ditt kan kundene dine få tilgang til sitt Dashboard.
 

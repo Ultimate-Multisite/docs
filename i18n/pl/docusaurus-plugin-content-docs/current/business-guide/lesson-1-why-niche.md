@@ -3,7 +3,7 @@ title: 'Lekcja 1: Dlaczego nisza wygrywa'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lekcja 1: Dlaczego nisza wygrywa {#lesson-1-why-niche-wins}
+# Lekcja 1: Dlaczego nisza wygrywa
 
 Zanim zajmiemy się jakimkolwiek oprogramowaniem, musisz zrozumieć, dlaczego budowanie platformy dla konkretnej grupy odbiorców to najważniejsza decyzja, jaką podejmiesz.
 

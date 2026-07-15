@@ -3,7 +3,7 @@ title: Ychwanegiad cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ymddianolwg cPanel {#cpanel-integration}
+# Ymddianolwg cPanel
 
 ## Cyflwyniadau {#overview}
 Mae cPanel yn un o'r cyfannau gwylio web (web hosting control panel) sydd yn hanfodol i lawer ychwanegwyr gweithredol a chwarae (shared and dedicated hosting providers). Mae’r cyfathriau hwn yn sylw'r cysylltiad domain yn awtomatig rhwng Ultimate Multisite a cPanel, gan gael eich cyflwyniadau alias a subdomains yn awtomatig i'ch cyfrifol cPanel.

@@ -3,7 +3,7 @@ title: Dịch Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Dịch Ultimate Multisite {#translating-ultimate-multisite}
+# Dịch Ultimate Multisite
 
 Ultimate Multisite được phát triển bằng tiếng Anh, nhưng plugin này hoàn toàn hỗ trợ dịch thuật và chúng tôi rất hoan nghênh các đóng góp bản dịch.
 

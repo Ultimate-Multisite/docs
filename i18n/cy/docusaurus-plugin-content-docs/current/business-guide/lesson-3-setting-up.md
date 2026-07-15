@@ -3,7 +3,7 @@ title: 'Dysgu 3: Ymddangos eich rheol'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lesiad 3: Ymddio'r Rheolwrch {#lesson-3-setting-up-your-network}
+# Lesiad 3: Ymddio'r Rheolwrch
 
 Mae hi'n amser i ddatblygu. Yn ystafell hwn Ultimate Multisite ac yn cyflwyno'r gweithrediad cynhwysedd o FitSite. Mae pob penderfyniad yma wedi'i gwneud gyda'r niche o ffitnes yn ôl.
 

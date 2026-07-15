@@ -4,7 +4,7 @@ title: Chochita - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Ntchito: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Ntchito: wu_domain_seller_complete_registration
 
 Imayambitsidwa pamene malipiro asintha kupita ku mkhalidwe umene uyenera kuyambitsa kulembetsa domeni.
 

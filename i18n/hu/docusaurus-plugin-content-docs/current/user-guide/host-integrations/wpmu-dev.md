@@ -3,7 +3,7 @@ title: WPMU DEV integráció
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV integráció {#wpmu-dev-integration}
+# WPMU DEV integráció
 
 ## Áttekintés {#overview}
 A WPMU DEV egy átfogó WordPress platform, amely tárhelyszolgáltatást, bővítményeket és egyéb szolgáltatásokat kínál WordPress oldalakhoz. Ez az integráció lehetővé teszi az automatikus domain szinkronizálást és SSL tanúsítványkezelést az Ultimate Multisite és a WPMU DEV tárhely között.

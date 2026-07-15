@@ -4,7 +4,7 @@ title: Çalakî - wp_ultimo_load
 sidebar_label: wp_ultimo_load
 _i18n_hash: 252e3bb879213d04300fee402a16cd08
 ---
-# Çalakî: wp_ultimo_load {#action-wpultimoload}
+# Çalakî: wp_ultimo_load
 
 Dema ku hemû girêdan hatin barkirin tê destpêkirin
 

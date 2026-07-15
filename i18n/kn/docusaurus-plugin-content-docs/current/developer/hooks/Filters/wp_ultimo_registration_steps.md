@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_registration_steps
 sidebar_label: wp_ultimo_registration_steps
 _i18n_hash: 7f93dcbd23061c23e9fb6355aabddd64
 ---
-# ಫಿಲ್ಟರ್: wp_ultimo_registration_steps {#filter-wpultimoregistrationsteps}
+# ಫಿಲ್ಟರ್: wp_ultimo_registration_steps
 
 ಫಿಲ್ಟರ್‌ಗಳನ್ನು ಬಳಸಿ ಹೆಚ್ಚುವರಿ ಹಂತಗಳನ್ನು ಸೇರಿಸುವುದು
 

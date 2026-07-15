@@ -3,7 +3,7 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0, add-ons కోసం మరియు కస్టమ్ MU-plugin ఇంటిగ్రేషన్స్ కోసం ఒక sunrise extension loader ని జోడిస్తుంది. ఈ ఇంటిగ్రేషన్స్ WordPress sunrise bootstrapping సమయంలో, `wp-content/sunrise.php` ఫైల్‌ను ఎడిట్ చేయకుండా రన్ అవ్వాల్సి ఉంటుంది.
 

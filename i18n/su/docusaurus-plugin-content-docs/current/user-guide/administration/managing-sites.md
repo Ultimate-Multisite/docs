@@ -3,7 +3,7 @@ title: Ngatur Situs
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ngelola Situs {#managing-sites}
+# Ngelola Situs
 
 Situs (atau subsitus) téh inti tina bisnis WaaS anjeun. Ultimate Multisite miboga 3 jenis situs:
 

@@ -4,7 +4,7 @@ title: فلټر - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# فلټر: wu_post_default_status {#filter-wupostdefaultstatus}
+# فلټر: wu_post_default_status
 
 د څیز معلومات مخکې له دې چې ډیټابېس ته وساتل شي، فلټر کوي.
 

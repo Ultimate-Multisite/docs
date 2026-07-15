@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# សកម្មភាព៖ wu_pending_network_published {#action-wupendingnetworkpublished}
+# សកម្មភាព៖ wu_pending_network_published
 
 ដំណើរការបន្ទាប់ពីបណ្តាញដែលកំពុងរង់ចាំត្រូវបានបោះពុម្ព។
 

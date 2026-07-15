@@ -3,7 +3,7 @@ title: Icyerekezo cy’Igishushanyo mbonera
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Icyerekezo cy’Igishushanyo {#design-direction}
+# Icyerekezo cy’Igishushanyo
 
 Intambwe ya **Design Direction** igufasha gusuzuma, kunoza, no kwemeza burundu igishushanyo kigaragara cya theme yawe mbere y’uko Theme Builder itanga theme yuzuye.
 

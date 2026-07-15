@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_mcp_include_ability
 sidebar_label: wu_mcp_include_ability
 _i18n_hash: 5925d523ccf0a8d9477e873ec3d891c0
 ---
-# سۈزگۈچ: wu_mcp_include_ability {#filter-wumcpincludeability}
+# سۈزگۈچ: wu_mcp_include_ability
 
 MCP ئىقتىدارىنى ئۆز ئىچىگە ئېلىش قارارىنى قاپلاپ يېزىش ئۈچۈن سۈزگۈچ.
 

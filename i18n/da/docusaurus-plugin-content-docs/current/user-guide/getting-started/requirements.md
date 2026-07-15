@@ -3,7 +3,7 @@ title: Krav
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Krav til Ultimate Multisite {#ultimate-multisite-requirements}
+# Krav til Ultimate Multisite
 
 Det første, du må spørge dig selv om, før du køber Ultimate Multisite, er hvilke krav der er for at køre vores plugin. Held og lykke, der er kun få grundlæggende krav til at køre Ultimate Multisite: et **domænenavn**, en god **hostingudbyder** og en WordPress **Multisite** installation. Det er alt, du skal bruge!
 

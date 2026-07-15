@@ -4,7 +4,7 @@ title: Дејство - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Дејство: wu_page_added {#action-wupageadded}
+# Дејство: wu_page_added
 
 Овозможува на развивачите на plugin-и да извршуваат дополнителни работи кога страниците се регистрираат.
 

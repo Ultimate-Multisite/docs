@@ -3,7 +3,7 @@ title: துணைப் பொருள் சூரிய உதயம் க
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader {#addon-sunrise-file-loader}
+# Addon Sunrise File Loader
 
 Ultimate Multisite 2.8.0, add-ons மற்றும் தனிப்பயன் MU-plugin ஒருங்கிணைப்புகளுக்காக ஒரு sunrise extension loader-ஐ சேர்க்கிறது. இந்த ஒருங்கிணைப்புகள், உருவாக்கப்பட்ட `wp-content/sunrise.php` கோப்பைத் திருத்தாமல், WordPress sunrise bootstrapping செயல்பாட்டின் போது இயங்க வேண்டியிருக்கும்.
 

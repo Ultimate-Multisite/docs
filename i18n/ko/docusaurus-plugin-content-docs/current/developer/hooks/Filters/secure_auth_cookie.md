@@ -4,7 +4,7 @@ title: 필터 - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# 필터: secure_auth_cookie {#filter-secureauthcookie}
+# 필터: secure_auth_cookie
 
 인증 쿠키가 HTTPS를 통해서만 전송되어야 하는지 여부를 필터링합니다.
 

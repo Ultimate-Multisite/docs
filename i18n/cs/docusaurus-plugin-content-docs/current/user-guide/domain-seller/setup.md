@@ -3,7 +3,7 @@ title: Nastavení a konfigurace poskytovatele
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Nastavení a konfigurace poskytovatele {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Nastavení a konfigurace poskytovatele
 
 Addon Domain Seller se dodává s průvodcem nastavením, který vás provede každým vyžadovaným krokem. Tato stránka popisuje průběh průvodce a jak později nakonfigurovat nebo znovu nakonfigurovat poskytovatele.
 

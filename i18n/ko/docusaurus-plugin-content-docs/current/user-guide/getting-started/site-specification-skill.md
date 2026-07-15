@@ -3,7 +3,7 @@ title: 사이트 사양 기술
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# 사이트 명세 기능 {#site-specification-skill}
+# 사이트 명세 기능
 
 **사이트 명세 기능(Site Specification skill)**은 사이트의 목표, 대상 고객, 브랜드 정체성을 체계적으로 파악하는 접근 방식입니다. 이 정보는 **site_brief** 메모리에 저장되며, 에이전트가 세션 전반에 걸쳐 이를 참조하여 일관성 있고 상황에 맞는 도움을 제공할 수 있게 합니다.
 

@@ -4,7 +4,7 @@ title: కార్యాచరణ - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Action: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Action: wp_ultimo_vat_activation
 
 ప్లగిన్ యొక్క ఇతర భాగాలు యాక్టివేషన్ కోసం వాటి రొటీన్‌లను (routines) దీని ద్వారా జతచేయడానికి వీలు కల్పిస్తుంది.
 

@@ -3,7 +3,7 @@ title: Situs Klien
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Website Klien Sampeyan (v2) {#your-clients-websites-v2}
+# Website Klien Sampeyan (v2)
 
 Sawise daftar ing jaringan sampeyan, pelanggan bisa ngakses dashboard-e.
 

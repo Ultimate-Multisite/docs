@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve të AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Regjistri i ndryshimeve i AffiliateWP {#affiliatewp-changelog}
+# Regjistri i ndryshimeve i AffiliateWP
 
 Versioni: 2.0.1 - Publikuar më 2025-09-28
 

@@ -3,7 +3,7 @@ title: سازنده صفحه مدیریت
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# سازنده صفحه مدیریت {#admin-page-creator}
+# سازنده صفحه مدیریت
 
 این قابلیت توسط افزونه **Admin Page Creator** ارائه می‌شود.
 

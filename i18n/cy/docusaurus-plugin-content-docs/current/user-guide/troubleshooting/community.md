@@ -3,7 +3,7 @@ title: Cymuned
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Sut i'rch chiw y Cymuned Ultima Multisite {#how-to-join-ultimate-multisite-community}
+# Sut i'rch chiw y Cymuned Ultima Multisite
 
 Mae'r Cyfathrebu Ultima Multisite yn lle i chi gael cyfathoghio â chwaraewyr Ultima Multisite bywera a rhannu cynlluniau, brofiadau a chwaraeon iawn. I fynd i'r Cyfathrebu Ultima Multisite gofynwch: https://community.ultimatemultisite.com/home.
 

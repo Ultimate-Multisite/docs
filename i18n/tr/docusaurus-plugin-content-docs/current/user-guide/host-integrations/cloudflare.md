@@ -3,7 +3,7 @@ title: Cloudflare Entegrasyonu
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Entegrasyonu {#cloudflare-integration}
+# Cloudflare Entegrasyonu
 
 ## Genel Bakış {#overview}
 Cloudflare, web sitelerini korumaya ve hızlandırmaya yardımcı olan önde gelen bir içerik dağıtım ağı (CDN) ve güvenlik sağlayıcısıdır. Bu entegrasyon, Ultimate Multisite ile Cloudflare arasında, özellikle alt alan adı multisite kurulumları için otomatik alan adı yönetimini etkinleştirir.

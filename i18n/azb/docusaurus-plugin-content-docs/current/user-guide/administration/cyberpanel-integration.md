@@ -3,7 +3,7 @@ title: CyberPanel Integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ইন্টিগ্রেশন {#cyberpanel-integration}
+# CyberPanel ইন্টিগ্রেশন
 
 এই গাইডটি ব্যাখ্যা করে কিভাবে আপনি Ultimate Multisite CyberPanel ইন্টিগ্রেশন কনফিগার করবেন, যাতে আপনার নেটওয়ার্কের ম্যাপ করা ডোমেইনগুলি স্বয়ংক্রিয়ভাবে CyberPanel-এ ভার্চুয়াল হোস্ট হিসেবে যুক্ত (এবং সরানো) হয়। এর সাথে Let's Encrypt এর মাধ্যমে ঐচ্ছিক অটো-SSL প্রোভিশনিংও করা যায়।
 

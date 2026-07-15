@@ -3,7 +3,7 @@ title: کارکردنی تەنهای ئۆتۆماتیک
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# کارکردن بەکارھاتە سوورین (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# کارکردن بەکارھاتە سوورین (Sovereign Tenant Operations)
 
 Ultimate Multisite 1.2.0 ئامادەکردنی ئامرازەکانی کار بۆ تەنە سوورینەکان (sovereign tenants): ئەو سایتە ساب-سایتانەی کە لەگەڵ داتابێس، ڕیشەی فایڵسیستم و پۆلێتی ڕێڕەوی خۆیان دەبنەوە، بەڵام لە ڕووی بینین لەلایەن ئیدارەی تۆڕەکەوە دەبینرێت.
 

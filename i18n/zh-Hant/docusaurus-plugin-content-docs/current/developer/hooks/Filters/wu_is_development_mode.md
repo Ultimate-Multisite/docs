@@ -4,7 +4,7 @@ title: 過濾器 - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# 過濾器：wu_is_development_mode {#filter-wuisdevelopmentmode}
+# 過濾器：wu_is_development_mode
 
 讓外掛開發者可以在開發模式下新增額外的測試邏輯。
 

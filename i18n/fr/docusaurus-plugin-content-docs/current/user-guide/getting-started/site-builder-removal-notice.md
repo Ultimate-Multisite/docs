@@ -3,7 +3,7 @@ title: Avis de suppression du mode constructeur de site
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Suppression du Mode Constructeur de site {#site-builder-mode-removal-notice}
+# Suppression du Mode Constructeur de site
 
 **Le mode Constructeur de site (Site Builder mode) a été supprimé dans Superdav AI Agent v1.12.0.** Si vous utilisiez ce mode, vous devez migrer vers l'**agent Assistant de configuration (Setup Assistant agent)** pour la création de thèmes et la configuration de votre site.
 

@@ -3,7 +3,7 @@ title: Registruoti API endpointą
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API skaitinklis Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API skaitinklis Ultimate Multisite
 
 Šiame tutoriale išmoksite, kaip naudoti Ultimate Multisite /register API endpointą, kad sukurotumėte visą įtraukimo procesą naujam klientui jūsų tinkluose ir kaip tai padaryti su Zapier.
 

@@ -3,7 +3,7 @@ title: Smjer dizajna
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Smjer dizajna {#design-direction}
+# Smjer dizajna
 
 Korak **Smjer dizajna** omogućuje vam pregled, doradu i finalizaciju vizualnog dizajna vaše teme prije nego što Theme Builder generira potpunu temu.
 

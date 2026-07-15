@@ -3,7 +3,7 @@ title: Stripe-ի կարգավորումներ
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-ի Կարգավորում (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway-ի Կարգավորում (v2)
 
 _**ԿԱՐԵՎՈՐ ՆՇՈՒՄ. Այս հոդվածը վերաբերում է Ultimate Multisite-ի 2.x տարբերակին։**_
 

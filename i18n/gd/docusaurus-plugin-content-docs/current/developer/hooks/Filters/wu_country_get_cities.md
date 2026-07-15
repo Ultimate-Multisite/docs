@@ -4,7 +4,7 @@ title: Sìoltachan - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Criathrag: wu_country_get_cities {#filter-wucountrygetcities}
+# Criathrag: wu_country_get_cities
 
 Tillidh seo liosta nam bailtean airson stàit ann an dùthaich.
 

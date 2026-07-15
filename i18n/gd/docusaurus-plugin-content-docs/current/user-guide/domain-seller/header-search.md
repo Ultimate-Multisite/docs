@@ -3,7 +3,7 @@ title: Rannsachadh àrainn a’ bhann-chinn
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Rannsachadh Raoin sa Header {#header-domain-search}
+# Rannsachadh Raoin sa Header
 
 Cleachd an rèiteachadh seo nuair a tha thu ag iarraidh foirm bheag sa header a thòisicheas rannsachadh raoin, agus an uair sin a leigeas leis a’ chustomer taghadh bho raointean a tha ri fhaighinn am broinn checkout Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: ClosteでSunrise定数を設定する
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte で Sunrise 定数を true に設定する {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte で Sunrise 定数を true に設定する
 
 一部のホストプロバイダーは、セキュリティ上の理由で wp-config.php をロックしています。つまり、Ultimate Multisite は、ドメインマッピングやその他の機能を動作させるために必要な定数を含めるよう、このファイルを自動編集できません。Closte はそのようなホストの一つです。
 

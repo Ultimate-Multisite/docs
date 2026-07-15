@@ -4,7 +4,7 @@ title: 过滤器 - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# 过滤器: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# 过滤器: wp_ultimo_site_exporter_get_option
 
 返回已slug化的网络选项值。
 

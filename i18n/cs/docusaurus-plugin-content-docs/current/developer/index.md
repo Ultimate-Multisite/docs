@@ -3,7 +3,7 @@ title: Dokumentace pro vývojáře
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentace pro vývojáře {#developer-documentation}
+# Dokumentace pro vývojáře
 
 Tento průvodce poskytuje vývojářům vše potřebné k integraci, rozšíření nebo vývoji addonů pro Ultimate Multisite. Ultimate Multisite transformuje WordPress Multisite síť na platformu typu Website-as-a-Service (WaaS).
 

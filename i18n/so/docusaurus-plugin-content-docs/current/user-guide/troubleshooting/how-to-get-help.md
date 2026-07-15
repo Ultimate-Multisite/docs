@@ -3,7 +3,7 @@ title: Sidee loo helo caawimaad
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Sida sida caawimaad {#how-to-get-help}
+# Sida sida caawimaad
 
 Waxaad haysataa furaha License-kaaga saxda ah, waxaana la xiriirayna fursad inaad la soo xiriirdo kooxda aanu si kaaga caawino dhibaatooyinka aad la kulmi karto inta aad samaynayso Ultimate Multisite.
 

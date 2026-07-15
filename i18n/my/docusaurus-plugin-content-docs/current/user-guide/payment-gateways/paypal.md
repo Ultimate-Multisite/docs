@@ -3,7 +3,7 @@ title: PayPal ကို စတင်ပြင်ဆင်ခြင်း
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway (v2) ကို စနစ်တကျ သတ်မှတ်ခြင်း {#setting-up-the-paypal-gateway-v2}
+# PayPal Gateway (v2) ကို စနစ်တကျ သတ်မှတ်ခြင်း
 
 _**အရေးကြီးသော မှတ်ချက် - ဤဆောင်းပါးသည် Ultimate Multisite ဗားရှင်း 2.x အတွက် ဖြစ်ပါသည်။**_
 

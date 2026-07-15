@@ -4,7 +4,7 @@ title: Filtru - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filtru: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Filtru: wu_get_membership_allowed_forms
 
 Ħalli lill-iżviluppaturi jżidu slugs ġodda ta' formoli biex jevitaw din l-imġiba.
 

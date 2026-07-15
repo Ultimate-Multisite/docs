@@ -4,7 +4,7 @@ title: Sefa - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Sefepi: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Sefepi: wu_checkout_field_templates
 
 APIs tsa rona tsa ho kenya dithempleite tse ntjha tsa masimo di hokahana mona.
 

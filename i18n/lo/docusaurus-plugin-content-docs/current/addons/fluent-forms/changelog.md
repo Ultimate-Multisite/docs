@@ -3,7 +3,7 @@ title: Fluent Forms ບັນທຶກການປ່ຽນແປງ
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# ບັນທຶກການປ່ຽນແປງ Fluent Forms {#fluent-forms-changelog}
+# ບັນທຶກການປ່ຽນແປງ Fluent Forms
 
 ເວີຊັນ: 2.0.1 - ປ່ອຍໃຊ້ໃນວັນທີ 2025-09-28
 

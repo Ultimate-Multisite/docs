@@ -3,7 +3,7 @@ title: Referansa Şiyanan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referansa Şiyanan {#abilities-reference}
+# Referansa Şiyanan
 
 Şiyan çalakiyên atomîk in ku Gratis AI Agent dikare li ser sazkirina te ya WordPress bixebitîne. Her şiyan klaseke PHP ya qeydkirî ye ku şemayek JSON derdixe — ajant vê şemayê di dema xebitandinê de dixwîne da ku bizane kîjan parametre pêwîst in û şiyan çi vedigerîne.
 

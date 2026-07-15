@@ -3,7 +3,7 @@ title: Mailchimp Catetan Parobahan
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Catetan Parobahan {#mailchimp-changelog}
+# Mailchimp Catetan Parobahan
 
 Vérsi: 1.1.1 - Dileupaskeun dina 2025-09-28
 

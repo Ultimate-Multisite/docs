@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# Filter: wu_enforce_password_rules
 
 အပိုဆောင်း စကားဝှက် စည်းကမ်းချက်များ အကောင်အထည်ဖော်ခြင်း ရှိ၊ မရှိ စစ်ထုတ်ပေးသည့် (Filter) လုပ်ဆောင်ချက် ဖြစ်ပါသည်။
 

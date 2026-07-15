@@ -3,7 +3,7 @@ title: Ekwerịrị & Ịkọrọ
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import {#export--import}
+# Export & Import
 
 Ultimate Multisite 2.9.0 n-afori oru **Export & Import** tool ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụọ. Ọ bụrụ na ịdị n'ime administrator onye nwere ike ịnwale menyu **Tools** na WordPress site a na-agbanye, iji amụta ahụ. Na mbụ akụkọ multisite, ri dịka aka aka administrator network (network administrator account) mgbe ịdị Export or Import subsites n'ime Ultimate Multisite tools na level network.
 

@@ -3,7 +3,7 @@ title: Ngā Rārangi Kai Manaaki
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Ngā Tahua Manaaki {#hospitality-menus}
+# Ngā Tahua Manaaki
 
 Mā te āhuatanga **Ngā Tahua Manaaki** e āhei ai a Theme Builder ki te waihanga me te tāmau i ngā whārangi tahua kai, inu hoki kua whakaraupapatia ki roto tonu i tō WordPress site.
 

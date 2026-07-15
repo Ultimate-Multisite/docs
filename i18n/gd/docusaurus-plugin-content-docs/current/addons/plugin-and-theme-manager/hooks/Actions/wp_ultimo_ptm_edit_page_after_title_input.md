@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_ptm_edit_page_after_title_input
 sidebar_label: wp_ultimo_ptm_edit_page_after_title_input
 _i18n_hash: 7a4980304b0ebf019e3d4044eb566adc
 ---
-# Gnìomh: wp_ultimo_ptm_edit_page_after_title_input {#action-wpultimoptmeditpageaftertitleinput}
+# Gnìomh: wp_ultimo_ptm_edit_page_after_title_input
 
 Leig le luchd-leasachaidh plugin fiosrachadh a bharrachd a chur ris fon ion-chur teacsa
 

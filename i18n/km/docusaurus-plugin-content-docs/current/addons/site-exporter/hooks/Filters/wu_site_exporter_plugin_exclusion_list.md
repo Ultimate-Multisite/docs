@@ -4,7 +4,7 @@ title: តម្រង - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# តម្រង: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# តម្រង: wu_site_exporter_plugin_exclusion_list
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍គ្រប់គ្រងបញ្ជីកម្មវិធីបន្ថែម ដែលអាចត្រូវបានដកចេញពី zip ដែលបានបង្កើត។
 

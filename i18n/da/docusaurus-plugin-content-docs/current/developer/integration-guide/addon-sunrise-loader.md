@@ -3,7 +3,7 @@ title: Tilføjelsesmodul til Sunrise-filindlæser
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Loader til sunrise-filer for tilføjelser {#addon-sunrise-file-loader}
+# Loader til sunrise-filer for tilføjelser
 
 Ultimate Multisite 2.8.0 tilføjer en sunrise-udvidelsesloader til tilføjelser og brugerdefinerede MU-plugin-integrationer, der skal køre under WordPress sunrise-bootstrapping uden at redigere den genererede `wp-content/sunrise.php`-fil.
 

@@ -3,7 +3,7 @@ title: Registro de alterações da integração com WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Changelog da integração com WooCommerce {#woocommerce-integration-changelog}
+# Changelog da integração com WooCommerce
 
 Versão 2.2.0 - Lançada em 2026-07-01
 * Novo: Os valores de imposto do Ultimate Multisite agora aparecem como linhas de taxa separadas do WooCommerce no checkout, tornando os totais de impostos mais claros antes do pagamento.

@@ -3,7 +3,7 @@ title: A' chlàradh plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan a' Chàrachadh (v2) {#upgrading-a-plan-v2}
+# Plan a' Chàrachadh (v2)
 
 _**NOTE CRÍCHIMH: Tha an article seo a' tighinn air Ultimate Multisite version 2.x.**_
 

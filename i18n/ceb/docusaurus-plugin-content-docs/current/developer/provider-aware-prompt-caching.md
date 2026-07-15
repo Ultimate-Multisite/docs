@@ -3,7 +3,7 @@ title: Pagtipig sa Prompt nga Nakaalam sa Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Pag-save sa Prompt Base sa Provider {#provider-aware-prompt-caching}
+# Pag-save sa Prompt Base sa Provider
 
 Ang Superdav AI Agent v1.12.0 nagpaila og **provider-aware prompt caching**, nga makapahimo og pag-optimize sa gasto sa API ug latency pinaagi sa pag-cache sa mga prompts gikan sa lainlaing LLM providers. Ang matag provider adunay lahi kaayo nga mekanismo ug configuration sa caching.
 

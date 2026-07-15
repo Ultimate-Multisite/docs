@@ -4,7 +4,7 @@ title: Isihlungi - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Isihlungi: retrieve_password_message {#filter-retrievepasswordmessage}
+# Isihlungi: retrieve_password_message
 
 Sihlunga umzimba womlayezo we-imeyili yokusetha kabusha iphasiwedi.
 

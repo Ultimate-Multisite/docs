@@ -4,7 +4,7 @@ title: কাৰ্য - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 চেকাউট সম্পন্ন হোৱাৰ পিছত ডোমেইন ক্ৰয় প্ৰক্ৰিয়াকৰণ কৰা হৈছে, তেতিয়া এই অ্যাকশনটো কলিছে।
 

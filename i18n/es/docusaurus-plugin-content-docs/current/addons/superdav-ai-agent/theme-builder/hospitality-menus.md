@@ -3,7 +3,7 @@ title: Menús de Hospitalidad
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menús de Hostelería {#hospitality-menus}
+# Menús de Hostelería
 
 La función **Menús de Hostelería** permite a Theme Builder generar e incrustar páginas de menús de comida y bebida estructurados directamente en su sitio de WordPress.
 

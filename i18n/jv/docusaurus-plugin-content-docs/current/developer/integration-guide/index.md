@@ -3,7 +3,7 @@ title: Pandhuan Integrasi
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Pandhuan Integrasi {#integration-guide}
+# Pandhuan Integrasi
 
 Pandhuan iki nyakup pola integrasi umum karo Ultimate Multisite, kalebu nyambung menyang layanan eksternal, mbangun payment gateway khusus, lan nangani webhooks.
 

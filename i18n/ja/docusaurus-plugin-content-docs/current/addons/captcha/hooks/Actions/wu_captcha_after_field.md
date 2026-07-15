@@ -4,7 +4,7 @@ title: アクション - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# アクション: wu_captcha_after_field {#action-wucaptchaafterfield}
+# アクション: wu_captcha_after_field
 
 キャプチャフィールドがレンダリングされた後に発火します。
 

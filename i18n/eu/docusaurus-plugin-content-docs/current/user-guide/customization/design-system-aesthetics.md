@@ -3,7 +3,7 @@ title: Disain-sistema estetikak gogorpen artea
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizain Systemaren Estetika Jain {#design-system-aesthetics-skill}
+# Dizain Systemaren Estetika Jain
 
 **Design Systemaren Estetika** da metodo garrantzatu bat da irudiari sitiatun estetikak hobetzeko. Design systemaren definizioa dela ematen tipografia, kolorrak, espazioak eta motion tokens (erreguntzak) bidez erabaki egitean laguntzen du.
 

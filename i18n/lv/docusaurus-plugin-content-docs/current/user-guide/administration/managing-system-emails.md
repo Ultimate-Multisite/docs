@@ -3,7 +3,7 @@ title: Sistēmas e-pastu pārvaldība
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistemu e-pastu pārvaldīšana {#managing-system-emails}
+# Sistemu e-pastu pārvaldīšana
 
 Ultimate Multisite sūta dažādus sistēmas e-pastus, piemēram, reģistrācijas apstiprinājumu, maksājuma pierādījumus un pievienošanos/izņemšanu no klubi. Jūs varat pielāgot šos e-pasta šabļus atbilstoši savai zīmdivam.
 

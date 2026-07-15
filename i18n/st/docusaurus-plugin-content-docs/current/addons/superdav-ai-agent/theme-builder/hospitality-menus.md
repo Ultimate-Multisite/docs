@@ -3,7 +3,7 @@ title: Dimenu tsa Kamohelo
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Dimenu tsa Hospitality {#hospitality-menus}
+# Dimenu tsa Hospitality
 
 Sebopeho sa **Hospitality Menus** se dumella Theme Builder ho hlahisa le ho kenya maqephe a dimenu tsa dijo le dino tse hlophisitsweng ka kotloloho kahara sebaka sa hao sa WordPress.
 

@@ -3,7 +3,7 @@ title: Dolandyryjy sahypasyny döredijiniň üýtgeşmeler žurnaly
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin sahypa döredijisiniň üýtgeşmeler taryhy {#admin-page-creator-changelog}
+# Admin sahypa döredijisiniň üýtgeşmeler taryhy
 
 ### Wersiýa 1.9.0 - 2026-01-18 senesinde çykaryldy {#version-190---released-on-2026-01-18}
 

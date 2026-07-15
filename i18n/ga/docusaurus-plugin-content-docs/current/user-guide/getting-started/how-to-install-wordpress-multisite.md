@@ -3,7 +3,7 @@ title: Conas aistriú WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Conas an WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Conas an WordPress Multisite?
 
 Leine WordPress Multisite leat faoi bhealach chun siomraithe (network) de shailte ar chuid isteach. Is éifeacht is éifeacht a bhí ag curtha go léir, ach níl é an-aontaithe go dtí.
 
@@ -55,7 +55,7 @@ Agus an code seo, a bhaineann le do _**.htaccess**_ file:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add an slash deiridh ar /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add an slash deiridh ar /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

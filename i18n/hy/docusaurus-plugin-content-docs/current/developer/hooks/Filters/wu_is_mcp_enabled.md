@@ -4,7 +4,7 @@ title: Զտիչ - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Զտիչ՝ wu_is_mcp_enabled {#filter-wuismcpenabled}
+# Զտիչ՝ wu_is_mcp_enabled
 
 Թույլ է տալիս հավելումների մշակողներին պարտադրել MCP ադապտերի նշված վիճակ։
 

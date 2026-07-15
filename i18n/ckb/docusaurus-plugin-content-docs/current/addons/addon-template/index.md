@@ -3,9 +3,9 @@ title: قاڵبی Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قاڵبی پێوەکراو {#addon-template}
+# قاڵبی پێوەکراو
 
-{{ADDON_DESCRIPTION}}
+قاڵبی Addon — Ultimate Multisite.
 
 ## پێداویستییەکان {#requirements}
 

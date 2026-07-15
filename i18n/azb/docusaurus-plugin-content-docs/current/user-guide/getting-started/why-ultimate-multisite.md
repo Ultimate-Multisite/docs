@@ -3,7 +3,7 @@ title: Kva Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ultimate Multisite Neden Önemli {#why-ultimate-multisite}
+# Ultimate Multisite Neden Önemli
 
 Bu makaleye ulaştıysanız, muhtemelen eklentimizin iş fikrinizi gerçeğe dönüştürmede çözüm olabileceğini duymuşsunuzdur. Umarım bu yazının sonunda ihtiyacınız olan tüm cevaplara kavuşmuş olursunuz.
 

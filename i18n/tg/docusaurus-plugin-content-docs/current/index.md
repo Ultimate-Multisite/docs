@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ҳуҷҷатгузории Ultimate Multisite {#ultimate-multisite-documentation}
+# Ҳуҷҷатгузории Ultimate Multisite
 
 Хуш омадед ба ҳуҷҷатгузории Ultimate Multisite. Ultimate Multisite WordPress Multisite-ро ба платформаи пурраи Website as a Service (WaaS) табдил медиҳад.
 
@@ -18,7 +18,7 @@ _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 
 Маълумоти техникии истинодӣ барои таҳиягароне, ки дар асоси Ultimate Multisite месозанд. Истиноди hooks, ҳуҷҷатгузории REST API ва дастурҳои таҳияи addon-ҳоро дар бар мегирад.
 
-### [Addons](/addons) {#addons}
+### [Иловаҳо](/addons) {#addons}
 
 Ҳуҷҷатгузорӣ барои plugin-ҳои пулакии addon, ки Ultimate Multisite-ро бо хусусиятҳои иловагӣ, ба монанди ҳамгироии WooCommerce, таҳлил, фурӯши домен ва бештар, васеъ мекунанд.
 

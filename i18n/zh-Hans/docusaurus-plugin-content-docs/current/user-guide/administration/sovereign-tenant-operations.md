@@ -3,7 +3,7 @@ title: 主租户操作
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# 主权租户操作 {#sovereign-tenant-operations}
+# 主权租户操作
 
 Ultimate Multisite 1.2.0 版本为主权租户（Sovereign Tenants）增加了操作工具：这些子站点拥有自己独立的数据库、文件系统根目录和路由上下文，但仍然可以从网络管理员那里被看到。
 

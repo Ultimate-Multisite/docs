@@ -4,7 +4,7 @@ title: Filter - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filter: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filter: wu_checkout_field_types
 
 हमारे APIs नए फ़ील्ड प्रकार जोड़ने के लिए यहाँ जुड़े (hook) होते हैं।
 

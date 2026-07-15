@@ -3,7 +3,7 @@ title: הגדרת PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# הגדרת שער PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# הגדרת שער PayPal (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
 

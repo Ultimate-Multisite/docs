@@ -4,7 +4,7 @@ title: Hidlydd - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Hidlydd: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Hidlydd: wu_checkout_form_base_domains
 
 Yn hidlo parthau sylfaen ffurflen checkout a rennir na ddylent ddod yn gofnodion parth wedi’u mapio.
 

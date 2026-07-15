@@ -3,7 +3,7 @@ title: Captcha-ŝanĝprotokolo
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Kapĉa ŝanĝprotokolo {#captcha-changelog}
+# Kapĉa ŝanĝprotokolo
 
 Versio: 1.5.0 - Eldonita je 2026-05-22
 * Nova: Strikta rapid-limigilo — kalkulas ĉiun GET kaj POST sur kapĉe protektitaj surfacoj (wp-login / register / lost-password / komentoj, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) kaj respondas per HTTP 429, `Retry-After` header, kaj hazardigita tarpit-dormo (1–5s, strikte limigita je 15s).

@@ -4,7 +4,7 @@ title: Akce - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Akce: wu_register_integrations {#action-wuregisterintegrations}
+# Akce: wu_register_integrations
 
 Spustí se, aby umožnil integracím zaregistrovat se.
 

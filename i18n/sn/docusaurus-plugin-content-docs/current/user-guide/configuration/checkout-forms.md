@@ -3,7 +3,7 @@ title: Mavhiki ekutanga
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms ndiyo njia yakapfuura na yenye kubadilika kuti utaona nzira dzakasiyana dzinobva kuenda nekuvaka makuberekwa vachikuru vatsavo.
 

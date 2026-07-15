@@ -3,7 +3,7 @@ title: Ukwenza iikhowudi zesaphulelo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ukudala iiKhowudi zeZaphulelo (v2) {#creating-discount-codes-v2}
+# Ukudala iiKhowudi zeZaphulelo (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite inguqulelo 2.x.**_
 

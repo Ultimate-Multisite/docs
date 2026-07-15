@@ -3,7 +3,7 @@ title: Tixraaca Awoodaha
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tixraaca Awoodaha {#abilities-reference}
+# Tixraaca Awoodaha
 
 Awooduhu waa falalka atomiga ah ee Gratis AI Agent ku fulin karo rakibiddaada WordPress. Awood kasta waa PHP class diiwaangashan oo soo bandhigta JSON schema — agent-ku wuxuu schema-kan akhriyaa waqtiga socodka si uu u fahmo parameters-ka loo baahan yahay iyo waxa awooddu soo celiso.
 

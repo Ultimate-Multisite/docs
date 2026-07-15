@@ -3,7 +3,7 @@ title: Dnevnik promjena planova s mjerenom naplatom
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Dnevnik promjena Metered Plans {#metered-plans-changelog}
+# Dnevnik promjena Metered Plans
 
 Verzija 1.1.0 - Objavljeno 2026-05-05
 - Novo: naplata AI tokena za multisite podstranice — pratite i naplaćujte upotrebu AI tokena na korisničkim stranicama uz podesive cijene po tokenu

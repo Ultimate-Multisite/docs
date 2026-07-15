@@ -3,7 +3,7 @@ title: 'Oppitunti 7: Tee siitä omasi'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Oppitunti 7: Tee siitä omasi {#lesson-7-making-it-yours}
+# Oppitunti 7: Tee siitä omasi
 
 Asiakkaidesi ei pitäisi koskaan tuntea käyttävänsä "jotain WordPress-lisäosaa." Heidän pitäisi tuntea käyttävänsä FitSitea -- heidän toimialalleen rakennettua alustaa. Tämä oppitunti käsittelee brändäystä, white-labelöintiä ja sitä, miten alustasta tehdään tuotteen tuntuinen.
 

@@ -4,7 +4,7 @@ title: Azione - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Azione: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Azione: wu_domain_mapping_register_filters
 
 Alcuni plugin salveranno l'URL prima che la mappatura fosse attiva o costruiranno gli URL in un modo diverso che non è incluso nei filtri sopra indicati.
 

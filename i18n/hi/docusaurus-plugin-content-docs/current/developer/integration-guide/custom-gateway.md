@@ -3,7 +3,7 @@ title: कस्टम गेटवे विकास
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# कस्टम Gateway विकास {#custom-gateway-development}
+# कस्टम Gateway विकास
 
 आप `Base_Gateway` क्लास को बढ़ाकर कस्टम भुगतान gateways बना सकते हैं।
 

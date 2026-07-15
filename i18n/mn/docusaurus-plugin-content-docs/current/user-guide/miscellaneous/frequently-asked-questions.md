@@ -3,7 +3,7 @@ title: Үечилсэн асуултууд
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Буйдан асуултууд (Frequently Asked Questions) {#frequently-asked-questions}
+# Буйдан асуултууд (Frequently Asked Questions)
 
 Энэ бол дэмжлэг шаардлага гарах үед их гардаг зарим **Буйдан асуултууд** юм.
 

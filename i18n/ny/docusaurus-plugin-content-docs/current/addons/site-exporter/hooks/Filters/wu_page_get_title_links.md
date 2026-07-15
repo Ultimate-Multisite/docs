@@ -4,7 +4,7 @@ title: Fyuluta - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Fyuluta: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Fyuluta: wu_page_get_title_links
 
 Lolani opanga plugin, komanso ife eni, kuwonjezera maulalo a zochita ku masamba athu osintha.
 

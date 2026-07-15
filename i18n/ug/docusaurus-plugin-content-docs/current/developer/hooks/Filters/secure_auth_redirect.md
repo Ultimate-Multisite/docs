@@ -4,7 +4,7 @@ title: سۈزگۈچ - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# سۈزگۈچ: secure_auth_redirect {#filter-secureauthredirect}
+# سۈزگۈچ: secure_auth_redirect
 
 بىخەتەر دەلىللەش قايتا نىشانلاشنى ئىشلىتىش-ئىشلەتمەسلىكنى سۈزۈپ بېكىتىدۇ.
 

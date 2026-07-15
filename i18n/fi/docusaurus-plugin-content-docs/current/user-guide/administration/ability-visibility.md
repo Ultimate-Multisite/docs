@@ -3,7 +3,7 @@ title: Näkyvyysominaisuus
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Mahdollisuuden näkyvyys (Ability Visibility) {#ability-visibility}
+# Mahdollisuuden näkyvyys (Ability Visibility)
 
 Superdav AI Agent v1.12.0 tuo uusia **Mahdollisuuden näkyvyys** -asetuksia, jotka säätelevät, mitkä ominaisuudet (abilities) ovat saatavilla eri käyttöliittymissä. Tämä antaa ylläpitäjille mahdollisuuden hienosäätää, mitkä agentin kyvyt ovat käytettävissä REST API:n, MCP-palvelimien, WooCommerce-integraatioiden ja muiden rajapintojen kautta.
 

@@ -3,7 +3,7 @@ title: Site Builder Mode Removal Notice
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builderモード廃止のお知らせ {#site-builder-mode-removal-notice}
+# Site Builderモード廃止のお知らせ
 
 **Superdav AI Agent v1.12.0にて、Site Builderモードが廃止されました。** Site Builderモードをご利用されていた場合は、テーマの作成やサイトのセットアップには、**Setup Assistantエージェント**への移行をお願いいたします。
 

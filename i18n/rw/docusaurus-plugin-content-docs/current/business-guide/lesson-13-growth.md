@@ -3,7 +3,7 @@ title: 'Isomo rya 13: Kwaguka'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Isomo rya 13: Kwagura Ubushobozi {#lesson-13-scaling-up}
+# Isomo rya 13: Kwagura Ubushobozi
 
 Ufite urubuga rukora rufite abakiriya bishyura. Iri somo risobanura uko wakura ukava ku bikorwa bito ukagera ku bucuruzi burambye -- kwagura ibikorwa remezo, gukora ibikorwa mu buryo bwikora, no kongera amafaranga ava kuri buri mukiriya.
 

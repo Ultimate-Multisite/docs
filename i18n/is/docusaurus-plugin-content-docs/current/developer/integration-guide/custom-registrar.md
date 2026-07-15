@@ -3,7 +3,7 @@ title: Að smíða sérsniðna registrar-samþættingu
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Að byggja sérsniðna samþættingu við skráningaraðila {#building-a-custom-registrar-integration}
+# Að byggja sérsniðna samþættingu við skráningaraðila
 
 Domain Seller-viðbótin notar **Integration Registry**-mynstur. Hver skráningaraðili er PHP-klasi sem útfærir `Domain_Selling_Capability` og skráir sig í gegnum `wu_domain_seller_register_capabilities` action hook.
 

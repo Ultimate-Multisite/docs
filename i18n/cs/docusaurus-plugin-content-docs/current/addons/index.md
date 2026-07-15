@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addony Ultimate Multisite {#ultimate-multisite-addons}
+# Addony Ultimate Multisite
 
 Addony rozšiřují Ultimate Multisite o další funkce a integrace. Většina addonů je placená a je k nákupu dostupná na [ultimatemultisite.com](https://ultimatemultisite.com).
 

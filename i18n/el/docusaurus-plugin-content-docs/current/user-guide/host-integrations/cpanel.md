@@ -3,7 +3,7 @@ title: Ενσωμάτωση cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ενσωμάτωση με cPanel {#cpanel-integration}
+# Ενσωμάτωση με cPanel
 
 ## Επισκόπηση {#overview}
 Το cPanel είναι ένας από τους πιο δημοφιλείς πίνακες ελέγχου web hosting που χρησιμοποιείται από πολλούς παρόχους shared και dedicated hosting. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains μεταξύ του Ultimate Multisite και του cPanel, δίνοντάς σας τη δυνατότητα να προσθέτετε αυτόματα domain aliases και subdomains στον λογαριασμό σας στο cPanel.

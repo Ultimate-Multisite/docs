@@ -3,7 +3,7 @@ title: Fanomezana an-tanana ny PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Fanamboana ny Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Fanamboana ny Gateway PayPal (v2)
 
 _**FANAMARIANA MANAN-DANJA: Ity lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 

@@ -3,7 +3,7 @@ title: សមត្ថភាពមើលឃើញ
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# ការមើលឃើញសមត្ថភាព (Ability Visibility) {#ability-visibility}
+# ការមើលឃើញសមត្ថភាព (Ability Visibility)
 
 Superdav AI Agent v1.12.0 បានណែនាំការគ្រប់គ្រង **Ability Visibility** ដែលគ្រប់គ្រងថាផ្ទៃ (surfaces) ណាខ្លះបង្ហាញសមត្ថភាពនីមួយៗ។ នេះអនុញ្ញាតឱ្យអ្នកគ្រប់គ្រងកែតម្រូវថាតើសមត្ថភាពរបស់ Agent ណាខ្លះដែលអាចប្រើបានតាមរយៈ REST APIs, MCP servers, WooCommerce integrations និងចំណុចប្រទាក់ផ្សេងទៀត។
 

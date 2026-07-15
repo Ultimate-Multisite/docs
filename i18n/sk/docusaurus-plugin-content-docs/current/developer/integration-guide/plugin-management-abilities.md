@@ -3,7 +3,7 @@ title: Možnosti správy pluginov
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Schopnosti správy pluginov {#plugin-management-abilities}
+# Schopnosti správy pluginov
 
 Gratis AI Agent v1.5.0 sa dodáva so **7 schopnosťami správy pluginov**, ktoré môže AI asistent vyvolať počas konverzácie. Tieto schopnosti poskytujú programové ovládanie WordPress pluginov nainštalovaných cez [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

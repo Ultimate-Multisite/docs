@@ -3,7 +3,7 @@ title: Követelmények
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Az Ultimate Multisite követelményei {#ultimate-multisite-requirements}
+# Az Ultimate Multisite követelményei
 
 Az első kérdés, amit az Ultimate Multisite megvásárlása előtt feltehetsz magadnak: milyen követelmények szükségesek a bővítményünk futtatásához? Szerencsére csak néhány alapvető követelmény van az Ultimate Multisite használatához: egy **domainnév**, egy jó **tárhelyszolgáltató** és egy WordPress **Multisite** telepítés. Ennyi az egész!
 

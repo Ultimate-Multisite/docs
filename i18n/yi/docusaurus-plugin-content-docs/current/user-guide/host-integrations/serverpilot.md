@@ -3,7 +3,7 @@ title: ServerPilot אינטעגראַציע
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot אינטעגראַציע {#serverpilot-integration}
+# ServerPilot אינטעגראַציע
 
 ## איבערבליק {#overview}
 ServerPilot איז אַ וואָלקן־דינסט פֿאַר האָסטינג WordPress און אַנדערע PHP וועבזײַטן אויף סערווערס בײַ DigitalOcean, Amazon, Google, אָדער יעדן אַנדערן סערווער־צושטעלער. די אינטעגראַציע ערמעגלעכט אויטאָמאַטישע דאָמיין־סינכראָניזאַציע און SSL סערטיפיקאַט־פֿאַרוואַלטונג צווישן Ultimate Multisite און ServerPilot.

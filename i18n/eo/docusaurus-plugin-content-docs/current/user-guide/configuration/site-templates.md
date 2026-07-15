@@ -3,7 +3,7 @@ title: Statoj de sita
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**NOTO: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x. Se vi uzas version 1.x,**_ **vidu ĉi tiun artikolon.**_**.**_
 

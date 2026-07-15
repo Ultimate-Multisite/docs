@@ -3,7 +3,7 @@ title: Fampivoarana vavahady namboarina manokana
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Fampivoarana Custom Gateway {#custom-gateway-development}
+# Fampivoarana Custom Gateway
 
 Afaka mamorona gateway fandoavam-bola manokana ianao amin'ny fanitarana ny class `Base_Gateway`.
 

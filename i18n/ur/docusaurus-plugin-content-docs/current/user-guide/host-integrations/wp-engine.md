@@ -3,7 +3,7 @@ title: WP Engine انٹیگریشن
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine انٹیگریشن {#wp-engine-integration}
+# WP Engine انٹیگریشن
 
 ## جائزہ {#overview}
 WP Engine ایک premium managed WordPress hosting پلیٹ فارم ہے جو WordPress سائٹس کے لیے بہترین کارکردگی، سیکیورٹی، اور scalability فراہم کرتا ہے۔ یہ انٹیگریشن Ultimate Multisite اور WP Engine کے درمیان خودکار ڈومین syncing کی سہولت دیتا ہے۔

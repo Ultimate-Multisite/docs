@@ -3,7 +3,7 @@ title: ServerPilot ပေါင်းစည်းမှု
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot ပေါင်းစပ်အသုံးပြုခြင်း {#serverpilot-integration}
+# ServerPilot ပေါင်းစပ်အသုံးပြုခြင်း
 
 ## ခြုံငုံသုံးသပ်ချက် {#overview}
 ServerPilot သည် DigitalOcean၊ Amazon၊ Google သို့မဟုတ် အခြား server provider များရှိ server များတွင် WordPress နှင့် အခြား PHP website များကို host လုပ်ရန်အတွက် cloud service တစ်ခုဖြစ်သည်။ ဤပေါင်းစပ်မှုသည် Ultimate Multisite နှင့် ServerPilot အကြား domain အလိုအလျောက် sync လုပ်ခြင်းနှင့် SSL certificate စီမံခန့်ခွဲမှုကို ဖွင့်ပေးပါသည်။

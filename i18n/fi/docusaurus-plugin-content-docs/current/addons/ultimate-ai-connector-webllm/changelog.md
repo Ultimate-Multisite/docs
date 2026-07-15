@@ -3,7 +3,7 @@ title: Ultimate AI Connector for WebLLM -muutosloki
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM -muutosloki {#ultimate-ai-connector-for-webllm-changelog}
+# Ultimate AI Connector for WebLLM -muutosloki
 
 ## Versio 1.1.0 — Julkaistu 2026-04-09 {#version-110--released-on-2026-04-09}
 

@@ -3,7 +3,7 @@ title: Nastavitve PayPal-a
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Uporaba PayPal vgateya (v2) {#setting-up-the-paypal-gateway-v2}
+# Uporaba PayPal vgateya (v2)
 
 _**POMEMBNO: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 

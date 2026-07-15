@@ -3,7 +3,7 @@ title: 'Nkuzi 12: Ijikwa Azụmahịa'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ihe Ọmụmụ 12: Iduzi Azụmahịa {#lesson-12-running-the-business}
+# Ihe Ọmụmụ 12: Iduzi Azụmahịa
 
 Platform abụghị project ị na-emecha -- ọ bụ azụmahịa ị na-eduzi. Ihe ọmụmụ a na-ekpuchi ọrụ kwa ụbọchị nke ijikwa FitSite: nkwado, billing, mmezi, na ime ka ndị ahịa nwee afọ ojuju.
 

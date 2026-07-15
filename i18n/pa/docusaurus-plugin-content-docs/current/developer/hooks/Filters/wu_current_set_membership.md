@@ -4,7 +4,7 @@ title: ਫਿਲਟਰ - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Filter: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Filter: wu_current_set_membership
 
 Developers کو ڈیفالٹ رویے کو تبدیل کرنے اور موجودہ ممبرشپ کو مختلف طریقے سے سیٹ کرنے کی اجازت دیتا ہے۔
 

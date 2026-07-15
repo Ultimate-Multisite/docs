@@ -3,7 +3,7 @@ title: Material WP Дневник на промени
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Дневник на измени на Material WP {#material-wp-changelog}
+# Дневник на измени на Material WP
 
 Верзија 1.1.15 - 01/26/2026
 * Подобрено: Стил и форматирање на кодот;

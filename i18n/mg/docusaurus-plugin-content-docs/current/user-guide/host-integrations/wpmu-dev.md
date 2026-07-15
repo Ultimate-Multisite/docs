@@ -3,7 +3,7 @@ title: Fandaharan'ny WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Fandahana ny Fandraisana amin'ny WPMU DEV {#wpmu-dev-integration}
+# Fandahana ny Fandraisana amin'ny WPMU DEV
 
 ## Famarahabana (Overview) {#overview}
 Ny WPMU DEV dia sehatra WordPress feno izay manolotra hosting, plugins ary serivisy ho an'ny tranonkala WordPress. Ity fandrindrana ity dia ahafahana mifandray mivantana ny domain sy mitantana ny sertifisikara SSL eo amin'ny Ultimate Multisite sy ny hosting an'ny WPMU DEV.

@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_support_agents_activation
 sidebar_label: wp_ultimo_support_agents_activation
 _i18n_hash: d687a5e881f6900250d8c0aaeedcda83
 ---
-# Ketso: wp_ultimo_support_agents_activation {#action-wpultimosupportagentsactivation}
+# Ketso: wp_ultimo_support_agents_activation
 
 Dumella dikarolo tse ding tsa plugin ho hokela ditsela tsa tsona tsa activation
 

@@ -4,7 +4,7 @@ title: Nzacha - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Nzacha: secure_auth_redirect {#filter-secureauthredirect}
+# Nzacha: secure_auth_redirect
 
 Na-enyocha ma a ga-eji redirect nkwenye njirimara echekwara.
 

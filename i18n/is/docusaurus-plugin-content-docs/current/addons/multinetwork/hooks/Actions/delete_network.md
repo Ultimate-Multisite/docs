@@ -4,7 +4,7 @@ title: Aðgerð - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Aðgerð: delete_network {#action-deletenetwork}
+# Aðgerð: delete_network
 
 Keyrist eftir að neti hefur verið eytt.
 

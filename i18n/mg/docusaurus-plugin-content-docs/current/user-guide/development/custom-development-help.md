@@ -3,7 +3,7 @@ title: Fanampiana Fandaharana Manokana
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ahoana ny fanampiana fampivelarana manokana avy amin'ny Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Ahoana ny fanampiana fampivelarana manokana avy amin'ny Codeable?
 
 Indra indray, mila fanamboarana tena tsara isika mba hahatonga ny lalana iainana (network flows) ho araka izay tianay. Raha mitady izany ianao, dia manoro anao ny [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), toerana ahafahanao mitady mpandrindra (developers) manam-petra sy manana fahaizana amin'ny Ultimate Multisite.
 

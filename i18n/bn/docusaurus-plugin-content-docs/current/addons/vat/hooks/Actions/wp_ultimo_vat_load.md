@@ -4,7 +4,7 @@ title: কার্যক্রম - wp_ultimo_vat_load
 sidebar_label: wp_ultimo_vat_load
 _i18n_hash: 1b236f5403f796963db12087ce2f535c
 ---
-# Action: wp_ultimo_vat_load {#action-wpultimovatload}
+# Action: wp_ultimo_vat_load
 
 যখন সমস্ত নির্ভরতা (dependencies) লোড হয়ে যায় তখন এটি ট্রিগার হয়।
 

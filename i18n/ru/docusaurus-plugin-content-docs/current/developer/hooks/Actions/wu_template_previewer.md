@@ -4,7 +4,7 @@ title: Действие - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Действие: wu_template_previewer {#action-wutemplatepreviewer}
+# Действие: wu_template_previewer
 
 Работает, когда находится в контексте предварительного просмотра шаблона.
 

@@ -4,7 +4,7 @@ title: Aktioun - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Aktioun: wu_register_integrations {#action-wuregisterintegrations}
+# Aktioun: wu_register_integrations
 
 Gëtt ausgeléist, fir Integratiounen z’erlaben, sech selwer ze registréieren.
 

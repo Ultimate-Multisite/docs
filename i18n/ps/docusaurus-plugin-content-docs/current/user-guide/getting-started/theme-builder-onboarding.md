@@ -3,7 +3,7 @@ title: د تھیم بیلر شروع کولو جریان
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 تاسو ته یو **Theme Builder onboarding flow** وړاندې کوي چې په پیل کې د تنظیم کولو په جریان کې ستاسو لپاره یو ځانګړی block theme جوړول کې مرسته کوي. دا پایلې (legacy) Site Builder mode بدلوي چې ډیر انعطاف وړ او له Agent سره مرسته olacak approach دی.
 

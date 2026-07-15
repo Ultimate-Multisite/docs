@@ -4,7 +4,7 @@ title: Acció - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Aquesta és la funció: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Aquesta és la funció: wu_domain_mapping_register_filters
 
 Alguns plugins poden guardar l'URL abans que el mape sigui actiu o construir les URLs d'una manera que no està inclosa en els filtres anteriors.
 

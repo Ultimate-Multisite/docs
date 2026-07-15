@@ -3,7 +3,7 @@ title: ਉੱਨਤ ਕੋਡ ਉਦਾਹਰਣਾਂ
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples {#advanced-code-examples}
+# Advanced Code Examples
 
 ਇਹ ਉਦਾਹਰਨਾਂ Ultimate Multisite ਨਾਲ ਉੱਨਤ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਪੈਟਰਨ ਦਿਖਾਉਂਦੀਆਂ ਹਨ।
 

@@ -4,7 +4,7 @@ title: Дејство - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Акција: wu_centered_content {#action-wucenteredcontent}
+# Акција: wu_centered_content
 
 Овозможува на развивачите на plugin-и да додаваат дополнителна содржина во центрираната колона.
 

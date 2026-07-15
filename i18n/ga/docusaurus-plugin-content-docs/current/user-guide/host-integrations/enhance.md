@@ -3,7 +3,7 @@ title: Níos éascaigh an t-aonach ar an chontail a bheith ag cur chuimhneacht
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Nádhús an Chonraithear na Panel {#enhance-control-panel-integration}
+# Nádhús an Chonraithear na Panel
 
 ## Oibríocht {#overview}
 Enhance is panel nua agus ceartas a thugann fáil ar athrúcháin agus ar chuid ar chuid rialúcháin hosting. Féachfaidh an chéad seo a bheith ag cur isteach sincontróir domáin agus cur chuimhneachán sertaic SSL go dtí chuid Ultimate Multisite agus Enhance Control Panel.

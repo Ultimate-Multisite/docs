@@ -3,7 +3,7 @@ title: Dalīgo saiti pārvaldīšana plāniem
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Uzlabojot dalījam saites planiem {#managing-shareable-links-for-plans}
+# Uzlabojot dalījam saites planiem
 
 Ultimate Multisite piedāvā jums iespēju tieši ar klientiem dalīt planu saites. Lai to darītu, dodieties uz jebkurām jūsu planu rediģēšanas lapām un noklikšķiniet uz pogas _Click to copy the Shareable Link_ (Noklikšķiniet kopēt saiti).
 

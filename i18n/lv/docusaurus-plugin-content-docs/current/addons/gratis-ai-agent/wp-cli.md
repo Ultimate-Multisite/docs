@@ -3,7 +3,7 @@ title: WP-CLI atsauce
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI atsauce {#wp-cli-reference}
+# WP-CLI atsauce
 
 Gratis AI Agent nodrošina `wp gratis-ai-agent` komandu saimi agenta veiktspējas testēšanai, spēju pārvaldībai un agenta statusa vaicāšanai no komandrindas. Visām komandām nepieciešams WP-CLI 2.0 vai jaunāks.
 

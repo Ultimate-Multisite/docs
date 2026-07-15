@@ -3,7 +3,7 @@ title: Ustvari meni
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Ustvari meni {#create-menu}
+# Ustvari meni
 
 Zmožnost **Ustvari meni** ustvari navigacijske menije WordPress s podporo za ločene navigacijske oznake, ki se razlikujejo od naslovov strani.
 

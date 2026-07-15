@@ -3,7 +3,7 @@ title: Design-Richtlinie
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction {#design-direction}
+# Design Direction
 
 Im Schritt **Design Direction** können Sie das visuelle Design Ihres Themes überprüfen, verfeinern und finalisieren, bevor Theme Builder das komplette Theme generiert.
 

@@ -4,7 +4,7 @@ title: Gníomh - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Gníomh: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Gníomh: wu_domain_mapping_register_filters
 
 Sábhálfaidh roinnt breiseán URL sula raibh an mhapáil gníomhach, nó tógfaidh siad URLanna ar bhealach difriúil nach bhfuil san áireamh sna scagairí thuas.
 

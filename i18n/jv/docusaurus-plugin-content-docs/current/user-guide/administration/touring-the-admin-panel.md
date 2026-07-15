@@ -3,7 +3,7 @@ title: Mlaku-mlaku ing Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ngelilingi Panel Admin {#touring-the-admin-panel}
+# Ngelilingi Panel Admin
 
 Ultimate Multisite tujuane supaya gampang lan ngerti dhewe, nanging karo alat sing kuat iki, bisa mbantu kanggo duwe tur panduan. Ayo kita mlaku-mlaku menyang halaman admin kanggo mbantu sampeyan ngrasakake kahanan.
 

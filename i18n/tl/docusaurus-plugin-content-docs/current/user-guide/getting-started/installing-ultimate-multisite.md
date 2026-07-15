@@ -3,7 +3,7 @@ title: Pag-i-install ng Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Pag-install ng Ultimate Multisite {#installing-ultimate-multisite}
+# Pag-install ng Ultimate Multisite
 
 :::note
 Ipinapalagay ng tutorial na ito na naka-install at nakakonfigura mo na ang WordPress Multisite. Para malaman kung paano, tingnan ang [tutorial na ito](https://www.wpbeginner.com/glossary/multisite/) mula sa WP Beginner.

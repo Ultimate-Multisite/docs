@@ -3,7 +3,7 @@ title: 'Lecția 12: Gestionarea Afacerii'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lecția 12: Rularea Afacerii {#lesson-12-running-the-business}
+# Lecția 12: Rularea Afacerii
 
 O platformă nu este un proiect pe care să-l termini, ci o afacere pe care o gestionezi. Această lecție acoperă operațiunile zilnice de management al FitSite: suport, facturare, mentenanță și menținerea clienților mulțumiți.
 

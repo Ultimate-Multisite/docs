@@ -3,7 +3,7 @@ title: Cúileanna WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integration le WPMU DEV {#wpmu-dev-integration}
+# Integration le WPMU DEV
 
 ## Oibríocht {#overview}
 Is é WPMU DEV platform WordPress ceart a bhfuil hosting, plugins agus serbhiseanna ar fáil do siti WordPress. Féachfaidh an chéad seo a bheith ag cur isteach sincontró domáin go dtí chuid (domain syncing) agus cur rialacha SSL certificate management idir Ultimate Multisite agus hosting WPMU DEV.

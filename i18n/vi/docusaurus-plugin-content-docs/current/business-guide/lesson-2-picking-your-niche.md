@@ -3,7 +3,7 @@ title: 'Bài học 2: Chọn ngách của bạn'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Bài 2: Chọn Ngách Của Bạn {#lesson-2-picking-your-niche}
+# Bài 2: Chọn Ngách Của Bạn
 
 Ở Bài 1, chúng ta đã xác định tại sao việc tập trung vào một ngách (niche) lại tốt hơn là làm sản phẩm chung chung. Bây giờ, bạn cần chọn ngách của riêng mình. Bài học này sẽ cung cấp cho bạn một khung làm việc để tìm kiếm và xác thực một ngách trước khi bạn đầu tư thời gian xây dựng sản phẩm cho nó.
 

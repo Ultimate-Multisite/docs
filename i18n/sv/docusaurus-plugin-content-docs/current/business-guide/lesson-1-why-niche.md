@@ -3,7 +3,7 @@ title: 'Lektion 1: Varför nisch vinner'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lektion 1: Varför en nisch vinner {#lesson-1-why-niche-wins}
+# Lektion 1: Varför en nisch vinner
 
 Innan vi rör oss mot någon programvara måste du förstå varför att bygga för en specifik målgrupp är det viktigaste beslut du kommer att fatta.
 

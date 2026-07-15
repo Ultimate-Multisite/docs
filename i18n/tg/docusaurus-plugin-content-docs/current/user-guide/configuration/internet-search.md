@@ -3,7 +3,7 @@ title: Таласни Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Поиска дар Интернет {#internet-search}
+# Поиска дар Интернет
 
 Gratis AI Agent v1.5.0 қобилияти **Internet Search** (Поиск в Интернете) -ро илова кун муошир иттилотни веб-сайтидан даровида гирифта омода месозад. Инчуна он аз [Brave Search API](https://brave.com/search/api/) ё [Tavily API](https://tavily.com/) дастгирӣ мекунад.
 

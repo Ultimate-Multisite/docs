@@ -4,7 +4,7 @@ title: Action - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog {#action-addusertoblog}
+# Action: add_user_to_blog
 
 ഒരു യൂസറെ ഒരു സൈറ്റിലേക്ക് ചേർത്ത ഉടൻ തന്നെ ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

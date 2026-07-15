@@ -3,7 +3,7 @@ title: Liisaska Cuntada ee Martigelinta
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu-yada Martigelinta {#hospitality-menus}
+# Menu-yada Martigelinta
 
 Astaanta **Menu-yada Martigelinta** waxay Theme Builder u oggolaanaysaa inuu abuuro oo si toos ah ugu dhex-daro bogag menu cunto iyo cabitaan oo qaabaysan gudaha WordPress site-kaaga.
 

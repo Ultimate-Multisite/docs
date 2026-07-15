@@ -4,7 +4,7 @@ title: Filtrum - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filtrum: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
+# Filtrum: wp_ultimo_site_exporter_get_option
 
 Redit valorem optionis retis slugfied.
 

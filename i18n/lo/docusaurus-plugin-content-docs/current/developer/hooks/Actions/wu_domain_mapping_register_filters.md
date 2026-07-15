@@ -4,7 +4,7 @@ title: ການກະທຳ - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# ການກະທຳ: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# ການກະທຳ: wu_domain_mapping_register_filters
 
 ບາງ plugin ຈະບັນທຶກ URL ກ່ອນທີ່ການ mapping ຈະເປີດໃຊ້ງານ ຫຼືຈະສ້າງ URL ໃນວິທີທີ່ແຕກຕ່າງ ເຊິ່ງບໍ່ໄດ້ຖືກລວມຢູ່ໃນ filters ຂ້າງເທິງ.
 

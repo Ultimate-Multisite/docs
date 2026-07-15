@@ -3,7 +3,7 @@ title: Mailster परिवर्तन विवरण
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster परिवर्तन विवरण {#mailster-changelog}
+# Mailster परिवर्तन विवरण
 
 ### 1.0.0 {#100}
 * प्रारम्भिक विमोचन

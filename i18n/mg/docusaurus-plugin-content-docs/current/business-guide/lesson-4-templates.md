@@ -3,7 +3,7 @@ title: 'Lesona 4: Fananganana Môdely ho an''ny Sehatra Manokana'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesona 4: Fananganana Templates ho an’ny sehatra manokana {#lesson-4-building-niche-templates}
+# Lesona 4: Fananganana Templates ho an’ny sehatra manokana
 
 Ny templates no fototry ny tolotra sanda ho an’ny sehatra manokana atolotrao. Tompona studio fanatanjahan-tena izay misoratra anarana ka mahita site efa mitovy amin’ny tranonkalan’ny fanatanjahan-tena -- misy fandaharam-pianarana, mombamomba ny mpanazatra, ary sary mifanaraka tsara -- dia azo inoana lavitra fa hijanona kokoa noho izay mahita takelaka banga.
 

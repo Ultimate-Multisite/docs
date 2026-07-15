@@ -3,7 +3,7 @@ title: Isku-duwidda Dhisaha Goobta v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Isku-dubaridka Site Builder v2 {#site-builder-orchestration-v2}
+# Isku-dubaridka Site Builder v2
 
 Isku-dubaridka Site Builder v2 (lagu soo bandhigay Gratis AI Agent v1.4.0) waa matoorka awood siiya abuurista website-ka ee tallaabooyin badan. Marka aad agent-ka ka codsato inuu "dhiso website makhaayad" ama "abuuro portfolio leh blog", orchestrator-ku wuxuu yoolkaas heerka sare ah u kala jebinayaa **qorshe** habaysan, wuxuu ogaadaa plugins-ka loo baahan yahay si loo fuliyo, tallaabo kasta ayuu si taxane ah u fuliyaa, horumarka ayuu la socdaa, khaladaadkana si iskiis ah ayuu uga soo kabtaa.
 

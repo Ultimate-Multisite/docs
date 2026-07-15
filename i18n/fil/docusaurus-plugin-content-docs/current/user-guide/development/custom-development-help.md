@@ -3,7 +3,7 @@ title: Tulong sa Custom na Development
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Paano Kumuha ng Custom Development Help mula sa Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Paano Kumuha ng Custom Development Help mula sa Codeable?
 
 Minsan, talagang kailangan natin ng magagandang customization para magawa natin ang ating network flows nang eksakto sa gusto natin. Kung ito ang hinahanap mo, inirerekomenda namin ang [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), isang lugar kung saan makakahanap ka ng mga bihasang developer na may kaalaman sa Ultimate Multisite.
 

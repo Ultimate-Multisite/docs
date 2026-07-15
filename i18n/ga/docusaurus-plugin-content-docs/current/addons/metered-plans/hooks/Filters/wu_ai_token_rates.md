@@ -4,7 +4,7 @@ title: Scagaire - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# Scagaire: wu_ai_token_rates {#filter-wuaitokenrates}
+# Scagaire: wu_ai_token_rates
 
 Scag rátaí billeála token AI.
 

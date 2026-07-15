@@ -3,7 +3,7 @@ title: Ṣíṣàkóso Àwọn Imeeli Eto
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ṣíṣàkóso Àwọn Imeeli Eto {#managing-system-emails}
+# Ṣíṣàkóso Àwọn Imeeli Eto
 
 Ultimate Multisite máa ń fi oríṣiríṣi imeeli eto ránṣẹ́ fún àwọn ìṣẹ̀lẹ̀ bí ìmúdájú ìforúkọsílẹ̀, rísíìtì ìsanwó, àti ìyípadà ọmọ ẹgbẹ́. O lè ṣàtúnṣe àwọn àdàkọ imeeli wọ̀nyí kí wọ́n bá àmì-ọjà rẹ mu.
 

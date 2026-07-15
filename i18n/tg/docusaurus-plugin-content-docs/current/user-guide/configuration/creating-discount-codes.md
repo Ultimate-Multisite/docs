@@ -3,7 +3,7 @@ title: Эҷоди коди камбудӣ
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Эҷоди коди камбуд (v2) {#creating-discount-codes-v2}
+# Эҷоди коди камбуд (v2)
 
 _**Эътибори муҳим: Ин мақола ба Ultimate Multisite версияи 2.x ишора мекунад.**_
 

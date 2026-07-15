@@ -3,7 +3,7 @@ title: فهم لوحة التحكم
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# فهم لوحة تحكم Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# فهم لوحة تحكم Ultimate Multisite
 
 قبل أن نغوص في خيارات التكوين المتقدمة والجوانب التشغيلية لـ Ultimate Multisite، دعونا نلقي نظرة على لوحة التحكم.
 

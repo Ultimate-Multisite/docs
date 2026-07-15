@@ -3,7 +3,7 @@ title: Landaslista
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Återordning af lista over land i Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Återordning af lista over land i Ultimate Multisite
 
 Nedtrekksmenyen til å velge et land er sortert alfabetisk basert på engelske varianter av landnavnene. Dette kan bety at hjemlandet til selskapet ditt og/eller de fleste av kundene dine noen ganger ligger gjemt midt i en veldig lang liste over landnavn.
 

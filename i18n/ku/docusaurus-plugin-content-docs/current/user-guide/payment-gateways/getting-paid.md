@@ -3,7 +3,7 @@ title: Pere wergirtin
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pere wergirtin (v2) {#getting-paid-v2}
+# Pere wergirtin (v2)
 
 _**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x ye.**_
 

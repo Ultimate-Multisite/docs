@@ -3,7 +3,7 @@ title: Переклад Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Переклад Ultimate Multisite {#translating-ultimate-multisite}
+# Переклад Ultimate Multisite
 
 Ultimate Multisite розробляється англійською мовою, але плагін повністю підтримує переклад, і ми активно вітаємо внески від перекладачів.
 

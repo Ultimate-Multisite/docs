@@ -3,7 +3,7 @@ title: Uburyo bwo kwibanda ku Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Urugerer Ubwumva W'Umuhanga (Theme Builder Onboarding Flow) {#theme-builder-onboarding-flow}
+# Urugerer Ubwumva W'Umuhanga (Theme Builder Onboarding Flow)
 
 Superdav AI Agent v1.12.0 yitangira **uwo muhanga w'ubwumva (Theme Builder onboarding flow)** uho muvugwa kandi ubufasha ukugira umuhere w'ubushobozi bwawe bwiza, uho gukora theme ya custom cyane mu gihe cyo gutangira. Iyo igihe cyo mbere, iyo ubanze Site Builder mode (mode y'ubwumva) n'uwo mu buryo ufite ubwoba kandi wibone ubufasha bw'agent.
 

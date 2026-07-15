@@ -4,7 +4,7 @@ title: Филтер - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Филтер: wu_plan_product_types {#filter-wuplanproducttypes}
+# Филтер: wu_plan_product_types
 
 Филтрирајте ги типовите производи што треба да се третираат како планови.
 

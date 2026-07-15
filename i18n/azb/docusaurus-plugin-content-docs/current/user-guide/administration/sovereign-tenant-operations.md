@@ -3,7 +3,7 @@ title: Müstəqil İcarəçi Əməliyyatları
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Sovereign Tenant Operasyonları {#sovereign-tenant-operations}
+# Sovereign Tenant Operasyonları
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, egemen kiracılar (sovereign tenants) için operasyonel araçlar ekler: bunlar kendi veritabanılarına, dosya sistemi köklerine ve yönlendirme bağlamlarına sahip olan ancak ağ yöneticisinden görünen alt sitelerdir.
 

@@ -3,7 +3,7 @@ title: שילוב ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# אינטגרציה עם ServerPilot {#serverpilot-integration}
+# אינטגרציה עם ServerPilot
 
 ## סקירה כללית {#overview}
 ServerPilot הוא שירות ענן לאירוח אתרי WordPress ואתרי PHP אחרים על שרתים ב-DigitalOcean, Amazon, Google או כל ספק שרתים אחר. אינטגרציה זו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite ל-ServerPilot.

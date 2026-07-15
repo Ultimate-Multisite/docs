@@ -4,7 +4,7 @@ title: Filtr - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filtr: wu_ses_verification_integration {#filter-wusesverificationintegration}
+# Filtr: wu_ses_verification_integration
 
 Filtr: boshqa kodga SES integratsiya obyektini taqdim etishga ruxsat beradi.
 

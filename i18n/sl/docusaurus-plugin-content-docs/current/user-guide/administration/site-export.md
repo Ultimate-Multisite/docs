@@ -3,7 +3,7 @@ title: Izvoz spletne strani
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Izvoz spletne strani {#site-export}
+# Izvoz spletne strani
 
 Administracijska stran **Site Export** omogoča administratorjem mreže, da paketirajo eno stran ali celotno mrežo v prenosni arhiv za migracijo, rezervno kopiranje ali delovanje.
 

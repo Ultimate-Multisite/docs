@@ -3,7 +3,7 @@ title: 'Leson 10: Jou Lansman'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Leson 10: Jou Lansman {#lesson-10-launch-day}
+# Leson 10: Jou Lansman
 
 Tout bagay konstwi. Anvan ou louvri pòt yo, leson sa a pase sou lis verifikasyon anvan lansman an pou asire pa gen anyen ki kase, ki manke, oswa ki anbarasan.
 

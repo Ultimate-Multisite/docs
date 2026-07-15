@@ -3,7 +3,7 @@ title: 'Leksyon 6: Ang Pag-sign Up nga Kasinatian'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: Ang Kasinatian sa Pagparehistro (Signup Experience) {#lesson-6-the-signup-experience}
+# Lesson 6: Ang Kasinatian sa Pagparehistro (Signup Experience)
 
 Ang *checkout flow* mao ang dapit diin ang interes mahimong kwarta o kita. Kon maglibog o kasagaran ra kaayo ang proseso sa pagparehistro, mawala ang mga kustomer. Ang usa ka *flow* nga espesipiko sa industriya (niche-specific) ug nagsulti sa ilang pinulongan, ug dali ra kaayo gamiton, makapalit kanila.
 

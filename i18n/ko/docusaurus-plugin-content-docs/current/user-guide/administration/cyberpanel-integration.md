@@ -3,7 +3,7 @@ title: CyberPanel 통합
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel 통합 {#cyberpanel-integration}
+# CyberPanel 통합
 
 이 가이드는 Ultimate Multisite CyberPanel 통합을 설정하는 방법을 설명합니다. 이 설정을 통해 네트워크에 매핑된 도메인이 CyberPanel의 가상 호스트로 자동으로 추가(및 제거)되며, 선택적으로 Let's Encrypt를 통한 자동 SSL 프로비저닝도 가능합니다.
 

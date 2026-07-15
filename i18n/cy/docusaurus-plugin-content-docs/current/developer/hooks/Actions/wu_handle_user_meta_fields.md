@@ -4,7 +4,7 @@ title: Gweithred - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Gweithred: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Gweithred: wu_handle_user_meta_fields
 
 Caniatáu i ddatblygwyr plugin gadw metadata defnyddwyr mewn ffyrdd gwahanol os oes angen.
 

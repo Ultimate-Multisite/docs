@@ -3,7 +3,7 @@ title: Сайт куруу режими алынышы жөнүндө эскер
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Сайт Билдир Модулу Жок Болоткуу Эскертүүсү {#site-builder-mode-removal-notice}
+# Сайт Билдир Модулу Жок Болоткуу Эскертүүсү
 
 **Site Builder modu Superdav AI Agent v1.12.0-да алынды.** Эгер сиз Site Builder modunu колдонуп жатсаңыз, темаларды жана сайттарды куруу үчүн **Setup Assistant agent**ге өтүшүңүз керек.
 

@@ -3,7 +3,7 @@ title: Resadresaka Fikarohana
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Resadresaka Fikarohana {#discovery-interview}
+# Resadresaka Fikarohana
 
 Ny **Resadresaka Fikarohana** no dingana voalohany amin'ny fizotry ny famolavolana ao amin'ny Theme Builder. Manangona fampahalalana momba ny tranokalanao, ny orinasanao, ary ny safidinao amin'ny famolavolana izy mba hamoronana theme voatokana ho anao.
 

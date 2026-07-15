@@ -3,7 +3,7 @@ title: Uhlanganiso lwe-Multi-Tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Udibaniso lwe-Multi-Tenancy {#multi-tenancy-integration}
+# Udibaniso lwe-Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 itshintsha iindawo ezininzi zonxibelelwano lodibaniso kubemqeshi abazimeleyo, ukuqinisekiswa kokufuduswa, kunye nokuzenzekela komjikelo wobomi bomqeshi.
 

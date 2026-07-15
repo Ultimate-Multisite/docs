@@ -3,7 +3,7 @@ title: 'Lektion 10: Launch Day'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lektion 10: Der Starttag {#lesson-10-launch-day}
+# Lektion 10: Der Starttag
 
 Alles ist fertiggestellt. Bevor Sie die Türen öffnen, führt diese Lektion durch die Pre-Launch-Checkliste, um sicherzustellen, dass nichts kaputt, fehlt oder peinlich ist.
 

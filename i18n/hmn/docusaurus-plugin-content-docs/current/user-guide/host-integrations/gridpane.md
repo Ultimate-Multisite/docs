@@ -3,7 +3,7 @@ title: Integration ntawm GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integration ກັບ GridPane {#gridpane-integration}
+# Integration ກັບ GridPane
 
 ## ພາບລວມ {#overview}
 GridPane ແມ່ນ control panel ທີ່ສ້າງຂຶ້ນມາພິເສດສຳລັບມືອາຊີບ WordPress. ການເຊື່ອມຕໍ່ນີ້ຊ່ວຍໃຫ້ການ đồng bộ domain ອັດຕະໂນມັດ ແລະ ການຈັດການ SSL certificate ລະຫວ່າງ Ultimate Multisite ແລະ GridPane ເຮັດໄດ້ໂດຍອັດຕະໂນມັດ.

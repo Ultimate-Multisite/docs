@@ -3,7 +3,7 @@ title: Nchegide Ụlọ Ọkụ Nkwado
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Nchegị Integracao Control Panel {#enhance-control-panel-integration}
+# Nchegị Integracao Control Panel
 
 ## Oghụ {#overview}
 Enhance na modern control panel bụ ihe na-eme automation na hosting na management nkwado. Integration a na-eme sync domain automatic na SSL certificate management ọkwaiche n'ime Ultimate Multisite na Enhance Control Panel.

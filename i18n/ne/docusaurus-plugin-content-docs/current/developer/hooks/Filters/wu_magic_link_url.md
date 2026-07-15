@@ -4,7 +4,7 @@ title: फिल्टर - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# फिल्टर: wu_magic_link_url {#filter-wumagiclinkurl}
+# फिल्टर: wu_magic_link_url
 
 उत्पन्न गरिएको magic link URL फिल्टर गर्नुहोस्।
 

@@ -4,7 +4,7 @@ title: 필터 - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# 필터: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# 필터: mu_migration/export/user/headers
 
 기본 사용자 헤더 세트를 내보내기/가져오기 대상으로 필터링합니다.
 

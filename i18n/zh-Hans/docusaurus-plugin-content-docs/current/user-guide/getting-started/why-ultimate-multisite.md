@@ -3,7 +3,7 @@ title: 为什么选择 Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# 为什么选择 Ultimate Multisite {#why-ultimate-multisite}
+# 为什么选择 Ultimate Multisite
 
 如果你来到这篇文章，可能已经听说我们的插件可能是实现你商业想法的解决方案。我们希望在本文结束时，你能得到所需的答案。
 

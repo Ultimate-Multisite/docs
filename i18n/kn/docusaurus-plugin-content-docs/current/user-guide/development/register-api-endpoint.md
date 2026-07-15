@@ -3,7 +3,7 @@ title: API ಎಂಡ್‌ಪಾಯಿಂಟ್ ನೋಂದಾಯಿಸಿ
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API ಎಂಡ್‌ಪಾಯಿಂಟ್ {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API ಎಂಡ್‌ಪಾಯಿಂಟ್
 
 ಈ ಟ್ಯುಟೋರಿಯಲ್‌ನಲ್ಲಿ, ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ಹೊಸ ಗ್ರಾಹಕರಿಗಾಗಿ ಸಂಪೂರ್ಣ ಆನ್‌ಬೋರ್ಡಿಂಗ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು ರಚಿಸಲು Ultimate Multisite /register API ಎಂಡ್‌ಪಾಯಿಂಟ್ ಅನ್ನು ಹೇಗೆ ಬಳಸುವುದು ಮತ್ತು Zapier ಮೂಲಕ ಇದನ್ನು ಹೇಗೆ ಮಾಡುವುದು ಎಂಬುದನ್ನು ನೀವು ಕಲಿಯುವಿರಿ.
 

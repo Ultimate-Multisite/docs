@@ -3,7 +3,7 @@ title: Espirienza tal Membership u Blokkazzjoni tal Sito
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Espirament tal Membership u Bloccjiet tal Sito {#membership-expiration-and-site-blocking}
+# Espirament tal Membership u Bloccjiet tal Sito
 
 Dan li guida tispjega kif jidiex l-Ultimate Multisite idirix il-espirament tal membership, il-finiti tal trial u il-bloccjiet tal frontend tal sito. Tispjega l-ciclu tal membership min aktiva għal espirata, il-setting li kontrollaw jew siti jiddukkju, u x'la tfittex meta siti jiddukkju biex jipprovvdu l-membership.
 

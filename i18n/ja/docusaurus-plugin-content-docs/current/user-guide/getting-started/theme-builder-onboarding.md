@@ -3,7 +3,7 @@ title: テーマビルダーのオンボーディングフロー
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder オンボーディングフロー {#theme-builder-onboarding-flow}
+# Theme Builder オンボーディングフロー
 
 Superdav AI Agent v1.12.0 は、初期設定時にカスタムブロックテーマを作成するのに役立つ、ガイド付きの**Theme Builder オンボーディングフロー**を導入しました。これは、従来の Site Builder モードに代わる、より柔軟でエージェント支援型のアプローチです。
 

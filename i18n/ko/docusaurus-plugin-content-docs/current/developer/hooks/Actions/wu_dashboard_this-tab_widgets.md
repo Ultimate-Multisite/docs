@@ -4,7 +4,7 @@ title: '작업 - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_${this->tab}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_${this->tab}_widgets
 
 플러그인 개발자가 네트워크 대시보드 패널에 위젯을 추가할 수 있도록 허용합니다.
 

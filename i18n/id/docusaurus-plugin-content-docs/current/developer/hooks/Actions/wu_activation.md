@@ -4,7 +4,7 @@ title: Aksi - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Action: wu_activation {#action-wuactivation}
+# Action: wu_activation
 
 Memungkinkan bagian lain dari plugin untuk menjalankan rutinitas mereka saat aktivasi
 

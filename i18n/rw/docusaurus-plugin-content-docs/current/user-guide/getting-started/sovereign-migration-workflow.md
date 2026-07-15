@@ -3,7 +3,7 @@ title: Uburyo bwo gukoresha uburyo bw'ubwujgwa
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow ya Kumenya Ubwujude {#sovereign-migration-workflow}
+# Workflow ya Kumenya Ubwujude
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yashyira imyitwarire (verification gates) yo gukora uburyo bwo gukoresha subsite yakoreshwa mu infrastructure ya tenant w'ubujude (sovereign).
 

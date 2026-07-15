@@ -4,7 +4,7 @@ title: Chiito - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Chiito: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Chiito: wu_domain_seller_complete_registration
 
 Chinotanga kana mubhadharo wachinja kuenda pastatus inofanira kutanga kunyoreswa kwedomain.
 

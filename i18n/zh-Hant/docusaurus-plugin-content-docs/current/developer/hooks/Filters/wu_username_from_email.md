@@ -4,7 +4,7 @@ title: 過濾器 - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# 篩選器：wu_username_from_email {#filter-wuusernamefromemail}
+# 篩選器：wu_username_from_email
 
 用於篩選新客戶的帳號名稱。
 

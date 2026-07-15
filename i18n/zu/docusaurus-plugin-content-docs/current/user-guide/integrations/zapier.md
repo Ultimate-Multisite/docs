@@ -3,7 +3,7 @@ title: Ukuhlanganiswa ne-Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ukuhlanganisa Ultimate Multisite ne-Zapier {#integrating-ultimate-multisite-with-zapier}
+# Ukuhlanganisa Ultimate Multisite ne-Zapier
 
 Kwesinye sezindatshana, sixoxe nge-[Webhooks](webhooks.md) nokuthi zingasetshenziswa kanjani ukuhlanganisa nezinhlelo zokusebenza zezinkampani zangaphandle.
 

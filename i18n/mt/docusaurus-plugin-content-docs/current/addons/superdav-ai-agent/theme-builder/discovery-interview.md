@@ -3,7 +3,7 @@ title: Intervista ta’ Skoperta
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Intervista ta' Skoperta {#discovery-interview}
+# Intervista ta' Skoperta
 
 L-**Intervista ta' Skoperta** hija l-ewwel pass fil-proċess tad-disinn ta' Theme Builder. Tiġbor informazzjoni dwar is-sit, in-negozju, u l-preferenzi tad-disinn tiegħek biex toħloq theme personalizzat.
 

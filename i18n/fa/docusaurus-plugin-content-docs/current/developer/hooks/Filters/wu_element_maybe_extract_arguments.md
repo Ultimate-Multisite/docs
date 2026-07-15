@@ -4,7 +4,7 @@ title: فیلتر - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# فیلتر: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
+# فیلتر: wu_element_maybe_extract_arguments
 
 یک فیلتر عمومی اضافه می‌کند تا به توسعه‌دهندگان اجازه دهد این پارسر را برای کار با سازنده‌ها یا پلاگین‌های اضافی گسترش دهند.
 

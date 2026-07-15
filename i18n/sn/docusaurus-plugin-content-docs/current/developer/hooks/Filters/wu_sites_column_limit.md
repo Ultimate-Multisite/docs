@@ -4,7 +4,7 @@ title: Sefa - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# Sefa: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# Sefa: wu_sites_column_limit
 
 Sefa rekuchinja kukosha kwe get pluginssites mukati menetwork.
 

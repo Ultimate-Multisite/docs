@@ -4,7 +4,7 @@ title: Aðgerð - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# Aðgerð: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# Aðgerð: wp_ultimo_support_agents_load
 
 Keyrist þegar allar ósjálfstæðurnar hafa verið hlaðnar
 

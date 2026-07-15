@@ -4,7 +4,7 @@ title: Filter - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Filter: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
+# Filter: ultimate_multisite_content_sync_url
 
 विकसकांना (developers) प्लगइनच्या मूळ जागेपासून (plugin root) सापेक्षित (relative) मार्गाचे व्यवस्थापन करण्याची परवानगी देतो.
 

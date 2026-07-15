@@ -4,7 +4,7 @@ title: Muyunguruzi - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Muyunguruzi: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
+# Muyunguruzi: wu_domain_has_correct_dns
 
 Emerera abategura amacomeka kongeramo igenzura rishya kugira ngo basobanure ibisubizo.
 

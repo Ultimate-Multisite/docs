@@ -3,7 +3,7 @@ title: Hook je Filter
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks and filters {#ultimate-multisite-hooks-and-filters}
+# Ultimate Multisite Hooks and filters
 
 Ultimate Multisite téh eusina loba pisan fungsi je query database. Aya hook je filter anu bakal ngajantenkeun anjeun bisa modifikasi atawa nambahan kode anyar kana fungsi anu geus aya.
 

@@ -4,7 +4,7 @@ title: Филтр - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Филтр: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Филтр: wu_page_get_title_links
 
 Ба таҳиягарони plugin ва ба худи мо иҷозат медиҳад, ки ба саҳифаҳои таҳрири мо пайвандҳои амал илова кунанд
 

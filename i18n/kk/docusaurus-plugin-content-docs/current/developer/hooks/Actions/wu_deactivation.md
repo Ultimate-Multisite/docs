@@ -4,7 +4,7 @@ title: Әрекет - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# Әрекет: wu_deactivation {#action-wudeactivation}
+# Әрекет: wu_deactivation
 
 Плагиннің басқа бөліктеріне өшіру үшін өз routine-дерін тіркеуге мүмкіндік береді
 

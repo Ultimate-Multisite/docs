@@ -4,7 +4,7 @@ title: Sefe - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Sefo: wu_admin_notices {#filter-wuadminnotices}
+# Sefo: wu_admin_notices
 
 Dumella bahlahisi ho sefa ditsebiso tsa admin tse ekeditsweng ke Ultimate Multisite.
 

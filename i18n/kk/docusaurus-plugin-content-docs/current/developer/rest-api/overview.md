@@ -3,7 +3,7 @@ title: REST API шолуы
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API анықтамалығы {#rest-api-reference}
+# REST API анықтамалығы
 
 ## Негізгі конфигурация {#base-configuration}
 

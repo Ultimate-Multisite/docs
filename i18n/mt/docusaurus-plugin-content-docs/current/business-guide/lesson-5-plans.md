@@ -3,7 +3,7 @@ title: 'Lezzjoni 5: Iddisinja l-Pjanijiet Tiegħek'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lezzjoni 5: Tfassal il-Pjanijiet Tiegħek {#lesson-5-designing-your-plans}
+# Lezzjoni 5: Tfassal il-Pjanijiet Tiegħek
 
 Il-livelli tal-pjanijiet tiegħek mhumiex biss livelli ta' prezzijiet -- huma riflessjoni ta' kif il-klijenti fin-niċċa tiegħek fil-fatt joperaw. F'din il-lezzjoni se tfassal livelli ta' prodott li jaqblu mal-bżonnijiet reali ta' negozji tal-fitness fi stadji differenti.
 

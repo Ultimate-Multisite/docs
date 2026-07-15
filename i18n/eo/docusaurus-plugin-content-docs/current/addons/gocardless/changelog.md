@@ -3,7 +3,7 @@ title: GoCardless ŝanĝregistro
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Ŝanĝoprotokolo {#gocardless-changelog}
+# GoCardless Ŝanĝoprotokolo
 
 Versio: 1.0.3 - Eldonita je 2026-05-05
 * Korekto: Orfigitaj pritraktataj retejoj nun estas purigataj kiam GoCardless membreco estas nuligita dum ĝi estas en pritraktata aŭ atendigita stato

@@ -3,7 +3,7 @@ title: Tsim cov neej txhua chaw ntawv uas muaj txoj kev txha thiab ua haujlwm
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# བཟོ་མཁན་གྱི་ནང་དོན་ཡོད་པའི་ Niche Website Business འ dựngབྱེད་པ། Ultimate Multisite དང་མཉམ་ལས་ {#build-a-niche-website-business-with-ultimate-multisite}
+# བཟོ་མཁན་གྱི་ནང་དོན་ཡོད་པའི་ Niche Website Business འ dựngབྱེད་པ། Ultimate Multisite དང་མཉམ་ལས་
 
 སྐྱེལ་མཁན་མང་པོ་ཚོས་ website བཀྲལ་བ་འགྲོ་བར་ Wix, Squarespace, དང་ freelance མང་པོ་རྣམས་དང་འགྲན་སྡོད་པ་ནི་དངོས་ཡོད་ཆེད། ཁོང་ཚོས་ရှုံးတယ်။ འགྲོ་ཐུབ་པའི་སྐྱེལ་མཁན་ཚོས་གཞན་ལས་གཞན་ཅིག་ལ་བལྟ་རྒྱུ་བྱེད་ཀྱི་ཡོད། ཁོང་ཚོས་དོན་དག་ཅིག་ལ་སྒྲིལ་བ་དང་，དེ་ལ་བརྟེན་ནས་བཟོ་ထားတဲ့ ལམ་སྟོན་ (solution) ཞིག་བཟོ་ပြီး သူတို့གང་བསྐྱལ་མི་བྱེད་པའི་ཕན་ཐོགས་ཀྱི་ཆ་ཚང་ལ་ລາຄາབཀལ་རྒྱུ་ཡིན།
 

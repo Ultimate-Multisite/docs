@@ -4,7 +4,7 @@ title: کړنه - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# کړنه: wu_deactivation {#action-wudeactivation}
+# کړنه: wu_deactivation
 
 د plugin نورو برخو ته اجازه ورکړئ چې د غیرفعالولو لپاره خپلې کړنلارې ونښلوي
 

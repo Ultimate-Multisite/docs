@@ -3,7 +3,7 @@ title: 'Thuto ea 13: Ho Atolosa'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Thuto 13: Ho Atolosa {#lesson-13-scaling-up}
+# Thuto 13: Ho Atolosa
 
 O na le sethala se sebetsang se nang le bareki ba lefang. Thuto ena e akaretsa kamoo o ka holang ho tloha tshebetsong e nyane ho ya kgwebong e tsitsitseng -- ho atolosa moralo wa motheo, ho iketsetsa ditshebetso, le ho eketsa lekeno ka moreki.
 

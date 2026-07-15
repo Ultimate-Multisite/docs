@@ -4,7 +4,7 @@ title: Dejanje - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# Dejanje: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# Dejanje: wp_ultimo_site_exporter_load
 
 Sproži se, ko so naložene vse odvisnosti.
 

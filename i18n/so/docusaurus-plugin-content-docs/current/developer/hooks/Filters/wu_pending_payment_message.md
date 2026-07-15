@@ -4,7 +4,7 @@ title: Shaandhee - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Shaandheeye: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Shaandheeye: wu_pending_payment_message
 
 U oggolow isticmaalaha inuu beddelo farriinta ku saabsan lacag-bixinnada sugaya.
 

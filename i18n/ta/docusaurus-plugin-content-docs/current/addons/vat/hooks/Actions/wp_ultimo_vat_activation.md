@@ -4,7 +4,7 @@ title: செயல்பாடு - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# செயல்: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# செயல்: wp_ultimo_vat_activation
 
 பிளகின்-இன் மற்ற பகுதிகளும், இது செயல்படுத்தப்படும்போது (activation) அவற்றின் செயல்பாடுகளை (routines) இணைக்க இது அனுமதிக்கிறது.
 

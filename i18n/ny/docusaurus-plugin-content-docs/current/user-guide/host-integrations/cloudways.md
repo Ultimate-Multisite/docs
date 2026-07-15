@@ -3,7 +3,7 @@ title: Kuteteza Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Zomwezi (Overview) {#overview}
 Cloudways ndi platforma ya ku host cloud yomwe imaphatira kuti mupereke WordPress sites pa zinthu zina za cloud monga DigitalOcean, AWS, Google Cloud, ndi zina. Kukhala kwa integration iyi kumaphatikiza synchronization ya domain ndi ulamulira SSL certificate mmodzi wopereka Ultimate Multisite ndi Cloudways.

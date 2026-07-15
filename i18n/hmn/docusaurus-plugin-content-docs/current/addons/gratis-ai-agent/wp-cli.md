@@ -3,7 +3,7 @@ title: WP-CLI Phau ntawv siv
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference {#wp-cli-reference}
+# WP-CLI Reference
 
 Gratis AI Agent xa nrog ib pab command `wp gratis-ai-agent` rau kev ntsuas agent, tswj abilities, thiab nug agent status ntawm command line. Txhua command yuav tsum muaj WP-CLI 2.0 lossis siab dua.
 

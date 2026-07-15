@@ -4,7 +4,7 @@ title: क्रिया - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# एक्शन: switch_network {#action-switchnetwork}
+# एक्शन: switch_network
 
 यह तब ट्रिगर होता है जब वर्तमान नेटवर्क संदर्भ बदला जाता है।
 

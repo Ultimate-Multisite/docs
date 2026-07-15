@@ -3,7 +3,7 @@ title: Mugwira
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kodiwera kuingilira Komuniti ya Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Kodiwera kuingilira Komuniti ya Ultimate Multisite
 
 Ultimate Multisite Community ndi malo omwe mungapeze kukhala ndi mwayi ndi anthu ena a Ultimate Multisite ndikupatsa zolemba, zokhudza kufunika, ndi zina. Mukupeza Ultimate Multisite Community m'malo: https://community.ultimatemultisite.com/home.
 

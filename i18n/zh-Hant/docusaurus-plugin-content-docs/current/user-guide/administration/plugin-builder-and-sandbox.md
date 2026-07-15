@@ -3,7 +3,7 @@ title: 外掛建構與沙盒
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder 與 Sandbox {#plugin-builder--sandbox}
+# Plugin Builder 與 Sandbox
 
 Gratis AI Agent v1.5.0 引入了 **Plugin Builder & Sandbox System**，讓 AI 助理能夠在一個安全、隔離的 sandbox 環境中，為您的網路生成、啟用和管理 WordPress plugins。
 

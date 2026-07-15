@@ -3,7 +3,7 @@ title: କଷ୍ଟମ୍ ଗେଟୱେ ବିକାଶ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# କଷ୍ଟମ Gateway ବିକାଶ {#custom-gateway-development}
+# କଷ୍ଟମ Gateway ବିକାଶ
 
 ଆପଣ `Base_Gateway` class କୁ ବିସ୍ତାର କରି କଷ୍ଟମ ପେମେଣ୍ଟ gateways ସୃଷ୍ଟି କରିପାରିବେ।
 

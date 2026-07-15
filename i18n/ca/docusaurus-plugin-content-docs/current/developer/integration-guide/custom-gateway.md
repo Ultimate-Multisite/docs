@@ -3,7 +3,7 @@ title: Desenvolupament de passarel·la personalitzada
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Desenvolupament de Custom Gateway {#custom-gateway-development}
+# Desenvolupament de Custom Gateway
 
 Pots crear passarel·les de pagament personalitzades ampliant la classe `Base_Gateway`.
 

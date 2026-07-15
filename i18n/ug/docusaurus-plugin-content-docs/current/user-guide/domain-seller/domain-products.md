@@ -3,7 +3,7 @@ title: دومين منتجләре һәм аркалары
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Ürünleri ve Fiyatlandırma {#domain-products-and-pricing}
+# Domain Ürünleri ve Fiyatlandırma
 
 Domain ürünleri, fiyatlandırmayı, TLD'leri (alan uzantıları), WHOIS gizliliğini ve sağlayıcı seçimini nasıl kontrol edeceğinizi gösterir. Her domain ürünü, ekstra bir **Domain Ayarları** sekmesine sahip standart bir Multisite Ultimate ürünüdür.
 

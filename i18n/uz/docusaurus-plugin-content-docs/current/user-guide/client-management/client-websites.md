@@ -3,7 +3,7 @@ title: Mijoz Saytlar
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Mijozlarning Saytlar (v2) {#your-clients-websites-v2}
+# Mijozlarning Saytlar (v2)
 
 Sizning tarmoqqa ro'yxatdan o'tganingizdan so'ng, mijozlar dashboardiga kirishi mumkin.
 

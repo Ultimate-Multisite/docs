@@ -3,7 +3,7 @@ title: Domain-Verkeefer Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Ännerungsprotokoll {#domain-seller-changelog}
+# Domain Seller Ännerungsprotokoll
 
 Versioun 1.3.0 - Verëffentlecht den 2026-06-02
 - Nei: Eng Warnung am Netzwierk-Admin bäigesat, wann de HostAfrica Reseller-Saldo ze niddereg gëtt

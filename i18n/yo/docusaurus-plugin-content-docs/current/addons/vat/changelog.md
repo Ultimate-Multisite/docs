@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ àwọn àyípadà VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Àkọsílẹ̀ Ìyípadà VAT {#vat-changelog}
+# Àkọsílẹ̀ Ìyípadà VAT
 
 Ẹ̀yà 1.0.7 - Tí a tu sílẹ̀ ní 2026-02-03
 

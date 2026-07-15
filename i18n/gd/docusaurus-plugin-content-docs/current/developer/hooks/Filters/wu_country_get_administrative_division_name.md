@@ -4,7 +4,7 @@ title: Criathrag - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Criathrag: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# Criathrag: wu_country_get_administrative_division_name
 
 Tillidh e ainm snasail airson fo-roinnean rianachd na dùthcha.
 

@@ -3,7 +3,7 @@ title: Formulare de contact pentru Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formulare de Contact cu Site Builder {#site-builder-contact-forms}
+# Formulare de Contact cu Site Builder
 
 Superdav AI Agent v1.10.0 adaugă posibilitatea de a crea formulare de contact direct din interfața de chat, folosind agentul Site Builder. Acest lucru îți permite să adaugi formulare de contact complet funcționale oricărei pagini, fără a părăsi chat-ul.
 

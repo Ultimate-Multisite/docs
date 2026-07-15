@@ -4,7 +4,7 @@ title: Hereket - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Hereket: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Hereket: wp_ultimo_affiliatewp_activation
 
 Plugin-iň beýleki böleklerine işjeňleşdirme üçin öz rutinlaryny dakmaga rugsat beriň
 

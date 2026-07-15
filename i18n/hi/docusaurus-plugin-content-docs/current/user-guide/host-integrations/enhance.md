@@ -3,7 +3,7 @@ title: कंट्रोल पैनल इंटीग्रेशन को 
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel Integration {#enhance-control-panel-integration}
+# Enhance Control Panel Integration
 
 ## अवलोकन {#overview}
 Enhance एक आधुनिक control panel है जो शक्तिशाली hosting automation और management क्षमताएं प्रदान करता है। यह integration Ultimate Multisite और Enhance Control Panel के बीच automatic domain syncing और SSL certificate management को सक्षम करता है।

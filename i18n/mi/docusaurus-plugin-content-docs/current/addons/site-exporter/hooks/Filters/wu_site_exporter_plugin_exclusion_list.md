@@ -4,7 +4,7 @@ title: Tātari - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# Tātari: wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# Tātari: wu_site_exporter_plugin_exclusion_list
 
 Ka āhei ngā kaiwhakawhanake ki te whakahaere i tētahi rārangi monomai tērā pea ka aukatihia mai i te kōnae zip kua hangaia.
 

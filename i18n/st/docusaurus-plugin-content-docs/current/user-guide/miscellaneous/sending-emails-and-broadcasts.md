@@ -3,7 +3,7 @@ title: Ho romela li-imeile le liphatlalatso
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ho Romela Di-imeile le Dikgaso (v2) {#sending-emails-and-broadcasts-v2}
+# Ho Romela Di-imeile le Dikgaso (v2)
 
 _**TLHOKOMELISO YA BOHLOKWA: Sengolwa sena se bua ka Ultimate Multisite mofuta wa 2.x.**_
 

@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# ଫିଲ୍ଟର: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# ଫିଲ୍ଟର: networks_pre_user_is_network_admin
 
 ଜଣେ ବ୍ୟବହାରକାରୀ ଯେଉଁ networks ର ପ୍ରଶାସକ, ପ୍ରକ୍ରିୟାକୁ ଆଗରୁ ବନ୍ଦ କରିବା ପାଇଁ ସେଗୁଡ଼ିକୁ ଫିଲ୍ଟର କରେ।
 

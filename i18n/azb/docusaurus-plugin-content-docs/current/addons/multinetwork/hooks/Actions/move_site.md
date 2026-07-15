@@ -4,7 +4,7 @@ title: Action - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Eylem: move_site {#action-movesite}
+# Eylem: move_site
 
 Bir site yeni bir ağa taşındıktan sonra tetiklenir.
 

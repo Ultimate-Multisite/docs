@@ -3,7 +3,7 @@ title: ຄຳຖາມທີ່ພົບເລື້ອຍ
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# ຄຳຖາມທີ່ພົບເລື້ອຍ (Frequently Asked Questions) {#frequently-asked-questions}
+# ຄຳຖາມທີ່ພົບເລື້ອຍ (Frequently Asked Questions)
 
 ນີ້ແມ່ນຄຳຖາມທີ່ມັກຈະຖືກຖາມມາໃນເວລາຮ້ອງຂໍການຊ່ວຍເຫຼືອຕ່າງໆ.
 

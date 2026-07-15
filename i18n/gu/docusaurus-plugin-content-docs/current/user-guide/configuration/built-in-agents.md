@@ -3,7 +3,7 @@ title: અંતર્નિર્મિત એજન્ટ્સ
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# બિલ્ટ-ઇન Agents {#built-in-agents}
+# બિલ્ટ-ઇન Agents
 
 Gratis AI Agent v1.9.0 પાંચ બિલ્ટ-ઇન agents સાથે આવે છે, દરેકને કેન્દ્રિત સાધનોના સેટ, અનુરૂપ system prompt, અને તે ક્ષેત્રના સામાન્ય કાર્યોને મળતી starter સૂચનો સાથે પહેલેથી રૂપરેખાંકિત કરવામાં આવ્યા છે. Agents વચ્ચે બદલવાથી assistant શું કરી શકે છે અને તે કેવી રીતે પ્રતિસાદ આપે છે તે બદલાય છે — તમારી તરફથી કોઈ configuration વિના. Superdav AI Agent v1.18.0 સંબંધિત integrations રૂપરેખાંકિત હોય ત્યારે આ workflowsમાં schedule-aware સાધનો, reminder records, approval gates, અને SMS notifications ઉમેરી શકે છે.
 

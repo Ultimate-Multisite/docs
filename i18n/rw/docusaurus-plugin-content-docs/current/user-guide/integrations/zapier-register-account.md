@@ -3,7 +3,7 @@ title: Gukoresha akaonto ku Ubwumvikane bwa Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Fani: Kumenya akaunti bishobora ku itangira bishobora n'amafunzo (Zapier) {#event-register-an-account-via-zapier}
+# Fani: Kumenya akaunti bishobora ku itangira bishobora n'amafunzo (Zapier)
 
 Mu ndimi y'urugero [Integrating Ultimate Multisite with Zapier](zapier.md), twagushoboraga uko utangira Zapier kugira ngo ugerageza ibisubizo bitandukanye mu Ultimate Multisite aho ugiye ku byerekezo n'ibindi byerekezo (triggers and events). Mu ndimi y'urugero iryo, twakwibanda uko wiyemo amafunzo y'abantu b'ibindi. Tworera gukoresha Google Sheets nk'ubushobozi bw'ubwoko kandi twagufi ibyerekezo ku Ultimate Multisite kugira ngo yitangire akaunti.
 

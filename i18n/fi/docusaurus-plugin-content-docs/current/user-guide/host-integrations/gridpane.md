@@ -3,7 +3,7 @@ title: GridPane-integraatio
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane Integrointi {#gridpane-integration}
+# GridPane Integrointi
 
 ## Yleiskatsaus {#overview}
 GridPane on erikoistun WordPress-isännöintäohjelmisto, joka on rakennettu vakaville WordPress-ammattilaisille. Tämä integrointi mahdollistaa automaattisen verkkotunnusten synkronoinnin ja SSL-sertifikaattien hallinnan Ultimate Multisiten ja GridPane välillä.

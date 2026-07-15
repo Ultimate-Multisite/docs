@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_woocommerce_checkout_fields_to_clean
 sidebar_label: wp_ultimo_woocommerce_checkout_fields_to_clean
 _i18n_hash: bf2093f846ebd66c6c959383edb1a766
 ---
-# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean {#filter-wpultimowoocommercecheckoutfieldstoclean}
+# Filter: wp_ultimo_woocommerce_checkout_fields_to_clean
 
 આ ડેવલપર્સને ડિફોલ્ટ WooCommerce બિલિંગ એડ્રેસ ફીલ્ડ્સને ફિલ્ટર કરવાની મંજૂરી આપે છે.
 

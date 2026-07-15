@@ -4,7 +4,7 @@ title: 过滤器 - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Filter: wu_gocardless_cleanup_pending_site
 
 此过滤器在删除因 GoCardless 会员资格取消而产生的孤立待定站点之前触发。
 

@@ -4,7 +4,7 @@ title: Sía - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Sía: wu_is_api_enabled {#filter-wuisapienabled}
+# Sía: wu_is_api_enabled
 
 Leyfir plugin-hönnuðum að þvinga tiltekið ástand fyrir API.
 

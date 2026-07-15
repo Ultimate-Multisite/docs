@@ -3,7 +3,7 @@ title: Cyfathrebu Cyflenau
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Cyfathriadau Membairiaethau (Managing Memberships) {#managing-memberships}
+# Cyfathriadau Membairiaethau (Managing Memberships)
 
 Yn Ultimate Multisite gallwch ddefnyddio a reoli'r cyfathriadau a cyffurfio'r holl gysbyriadau ar eich rheiniad. Reoli a redig ystoddiadau cyfathriadol fel cynlluniau (plans) a produsau, y nifer o safleoedd (sites), y amlurdau cyflog, y amlurdau cyflog, y hanes peidiadau a'r amserau.
 

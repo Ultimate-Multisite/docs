@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# سۈزگۈچ: wu_plan_product_types {#filter-wuplanproducttypes}
+# سۈزگۈچ: wu_plan_product_types
 
 پىلان سۈپىتىدە مۇئامىلە قىلىنىدىغان مەھسۇلات تۈرلىرىنى سۈزۈڭ.
 

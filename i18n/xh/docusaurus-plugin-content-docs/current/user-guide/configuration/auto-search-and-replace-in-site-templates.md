@@ -3,7 +3,7 @@ title: Ukukhangela nokutshintsha okuzenzekelayo kwiitempleyithi zesayithi
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Ukukhangela nokuTshintsha ngokuZenzekelayo kwiiTemplate zeSayithi (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Ukukhangela nokuTshintsha ngokuZenzekelayo kwiiTemplate zeSayithi (v2)
 
 _**Esi sifundo sifuna WP UItimo inguqulelo 2.x.**_
 

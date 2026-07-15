@@ -3,7 +3,7 @@ title: 'Lektion 9: Prissättning för vinst'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektion 9: Prissättning för vinst {#lesson-9-pricing-for-profit}
+# Lektion 9: Prissättning för vinst
 
 I Lektion 5 satte vi de initiala priserna för FitSite-planerna. Nu förfinar vi prissättningsstrategin med tekniker som ökar intäkterna, uppmuntrar till uppgraderingar och minskar kundavhopp.
 

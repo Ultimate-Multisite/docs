@@ -4,7 +4,7 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# 篩選器：wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
+# 篩選器：wu_country_get_administrative_division_name
 
 用於返回國家行政區劃的友善名稱。
 

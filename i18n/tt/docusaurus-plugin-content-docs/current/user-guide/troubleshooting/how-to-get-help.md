@@ -3,7 +3,7 @@ title: Көмекче ничек оらえる
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Nasıl Yardım Alınır {#how-to-get-help}
+# Nasıl Yardım Alınır
 
 Geçerli Lisans anahtarınız var ve bu anahtarla Ultimate Multisite kurulumu sırasında karşılaşabileceğiniz sorunları çözmenize yardımcı olacak ekibimize erişim hakkınız var.
 

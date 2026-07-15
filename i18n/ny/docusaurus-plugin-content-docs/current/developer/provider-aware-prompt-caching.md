@@ -3,7 +3,7 @@ title: Kusunga ma Prompt mu Cache Kodziwa Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Provider-Aware Prompt Caching {#provider-aware-prompt-caching}
+# Provider-Aware Prompt Caching
 
 Superdav AI Agent v1.12.0 imayambitsa **provider-aware prompt caching**, yomwe imakonza bwino mtengo wa API ndi kuchedwa poyika prompts mu cache kudutsa ma provider osiyanasiyana a LLM. Provider aliyense ali ndi njira ndi makonzedwe osiyanasiyana a caching.
 

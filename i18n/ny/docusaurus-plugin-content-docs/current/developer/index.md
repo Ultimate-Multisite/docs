@@ -3,7 +3,7 @@ title: Zolemba za Opanga
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Zolemba za Developer {#developer-documentation}
+# Zolemba za Developer
 
 Kalozerayu amapatsa ma developer zonse zofunikira kuti alumikizane ndi, awonjezere, kapena apange ma addon a Ultimate Multisite. Ultimate Multisite imasandutsa netiweki ya WordPress Multisite kukhala nsanja ya Website-as-a-Service (WaaS).
 

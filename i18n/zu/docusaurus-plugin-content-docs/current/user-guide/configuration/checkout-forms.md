@@ -3,7 +3,7 @@ title: Amafomu Okukhokha
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Amafomu Okukhokha {#checkout-forms}
+# Amafomu Okukhokha
 
 Amafomu Okukhokha ayindlela elula futhi eguquguqukayo yokuzama izindlela ezahlukene lapho uzama ukuguqula amakhasimende amasha.
 

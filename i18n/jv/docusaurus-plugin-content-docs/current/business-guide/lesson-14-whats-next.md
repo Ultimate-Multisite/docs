@@ -3,7 +3,7 @@ title: 'Piwulang 14: Apa Sabanjuré'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Piwulang 14: Apa Sabanjuré {#lesson-14-what-comes-next}
+# Piwulang 14: Apa Sabanjuré
 
 Sampeyan wis mbangun platform situs web niche saka nol. FitSite wis urip, nglayani studio fitness, lan ngasilaké penghasilan bola-bali. Piwulang pungkasan iki ndeleng menyang ngendi langkah sabanjuré.
 

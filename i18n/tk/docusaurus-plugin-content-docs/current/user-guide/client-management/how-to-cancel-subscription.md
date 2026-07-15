@@ -3,7 +3,7 @@ title: Abonamenty nädip beýleýji?
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Abonamentimi nädip bilip bilerim? {#how-can-i-cancel-my-subscription}
+# Abonamentimi nädip bilip bilerim?
 
 Eger sizde Ultimate Multisite lisensi bolsa, onu her wagt dowamlydyk döwülmegini isterseniz bejile bilersiňiz. Diňe aşakdaky ädimleri takip ediň:
 

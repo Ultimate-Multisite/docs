@@ -3,7 +3,7 @@ title: ການຫຼຸດລະດັບແຜນ
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# การลดระดับแผน (v2) {#downgrading-a-plan-v2}
+# การลดระดับแผน (v2)
 
 _**ข้อควรระวัง: บทความนี้อ้างถึง Ultimate Multisite เวอร์ชัน 2.x เท่านั้น**_
 

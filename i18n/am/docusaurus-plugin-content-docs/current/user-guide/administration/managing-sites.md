@@ -3,7 +3,7 @@ title: የጣቢያዎች አስተዳደር
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# የድረ-ገጾችን አያያዝ {#managing-sites}
+# የድረ-ገጾችን አያያዝ
 
 የድረ-ገጾች (Sites) ወይም የሰርጥ ድረ-ገጾች (subsites) የ WaaS ንግድዎ ዋና አካል ናቸው። Ultimate Multisite ሶስት ዓይነት የድረ-ገጾችን አለው፦
 

@@ -3,7 +3,7 @@ title: Kreye meni
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Kreye meni {#create-menu}
+# Kreye meni
 
 Kapasite **Kreye meni** a kreye meni navigasyon WordPress ak sipò pou etikèt navigasyon diferan ki separe ak tit paj yo.
 

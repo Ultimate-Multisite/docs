@@ -3,7 +3,7 @@ title: Инсталирање Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Инсталација Ultimate Multisite {#installing-ultimate-multisite}
+# Инсталација Ultimate Multisite
 
 :::note
 Овај туториал претпоставља да већ имате инсталиран и конфигурисан WordPress Multisite. Да бисте сазнали како то учинити, погледајте [овај туторијал](https://www.wpbeginner.com/glossary/multisite/) на WP Beginner-у.

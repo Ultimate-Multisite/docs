@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# କାର୍ଯ୍ୟ: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# କାର୍ଯ୍ୟ: wu_enqueue_extra_hooks
 
 ପ୍ଲଗିନ ବିକାଶକମାନଙ୍କୁ ଅତିରିକ୍ତ ହୁକ୍ ଯୋଡ଼ିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ
 

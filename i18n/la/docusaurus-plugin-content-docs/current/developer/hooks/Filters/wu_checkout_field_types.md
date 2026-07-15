@@ -4,7 +4,7 @@ title: Filtrum - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filtrum: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filtrum: wu_checkout_field_types
 
 Nostrae API ad nova genera camporum addenda huc se inserunt.
 

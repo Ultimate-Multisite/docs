@@ -3,7 +3,7 @@ title: Apa itu WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Apa itu WordPress Multisite? {#what-is-wordpress-multisite}
+# Apa itu WordPress Multisite?
 
 Di dalam intinya, WordPress menyediakan fitur bernama 'Multisite' yang berakar sejak tahun 2010 saat peluncuran WordPress 3.0. Sejak saat itu, fitur ini telah mengalami berbagai pembaruan untuk menambah fitur baru dan meningkatkan keamanan.
 

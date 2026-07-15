@@ -3,7 +3,7 @@ title: Taurifa da Shiga da Fitawa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# سارسل و گيرود {#export--import}
+# سارسل و گيرود
 
 Ultimate Multisite 2.9.0 یک ابزار **Export & Import** (سارسل و گيرود) تک سایت را زیر بخش **Tools > Export & Import** (ابزارها > سارسل و گيرود) اضافه کرده است. وقتی نیاز دارید یک سایت وردپرسی را به صورت فایل ZIP بسته‌بندی کنید، آن ZIP را بازیابی کنید، یا یک سایت را بین نصب‌های سازگار Ultimate Multisite و تک‌سایتی وردپرس منتقل کنید، از این ابزار استفاده کنید.
 

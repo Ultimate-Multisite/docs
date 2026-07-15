@@ -3,7 +3,7 @@ title: سنڌ جي فائل غلطي
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise File انسٹال ڪرڻ ۾ غلطي {#error-installing-the-sunrise-file}
+# Sunrise File انسٹال ڪرڻ ۾ غلطي
 
 sunrise.php فائل هڪ خاص فائل آهي جيڪا WordPress خود کي شروع (bootstrap) ڪندي تلاش ڪري ٿي. WordPress کي sunrise.php فائل کي محسوس ڪرڻ لاءِ، اهو **wp-content فولڊر** اندر موجود هجڻ گهرجي.
 

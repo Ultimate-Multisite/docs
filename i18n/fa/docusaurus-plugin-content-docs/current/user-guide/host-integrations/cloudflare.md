@@ -3,7 +3,7 @@ title: ادغام Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# یکپارچه‌سازی Cloudflare {#cloudflare-integration}
+# یکپارچه‌سازی Cloudflare
 
 ## نمای کلی {#overview}
 Cloudflare یک شبکهٔ تحویل محتوا (CDN) و ارائه‌دهندهٔ امنیتی پیشرو است که به محافظت و شتاب‌دهی وب‌سایت‌ها کمک می‌کند. این یکپارچه‌سازی مدیریت خودکار دامنه بین Ultimate Multisite و Cloudflare را فعال می‌کند، به‌ویژه برای نصب‌های چندسایتی زیر‌دامنه‌ای.

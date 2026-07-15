@@ -3,7 +3,7 @@ title: GitHub үзүндүлөр
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ultimate Multisite фрагменттерингини GitHub репозиторийде кантип колдонуу {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Ultimate Multisite фрагменттерингини GitHub репозиторийде кантип колдонуу
 
 Ultimate Multisite колдонуучулары көп сураган код фрагменттери (snippets) GitHub репозиторийде бар. Булар сиз жаңы каттоо эшілген сапта Google Analytics скриптинди кошуу же администратордун панелиндеги мета боксту жашыруу сыяктуу кичинекей функцияларды кошуу үчүн колдоно аласыз.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins).
 
-# Фрагменттерин темаңыздын functions.php файлына кантип кошуу керек. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Фрагменттерин темаңыздын functions.php файлына кантип кошуу керек.
 
   1. WordPress Network администратордук панелинде кириңиз жана Themes > Theme Editor (тистик четин төмөнкү скриншоту караңыз) багытынан өтүңүз.
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Скриншот жок: WordPress Theme Editor'дун functions.php файлына редакциялоосу -->
 
-# Must-Use Plugins (mu-plugins) кантип түзүү керек {#how-to-create-must-use-plugins-mu-plugins}
+# Must-Use Plugins (mu-plugins) кантип түзүү керек
 
 WordPressде "Must-Use Plugins" же кыскача "mu-plugins" деп аталган, кастомдык функцияларды жүктөөгө мүмкүндүк берген функция бар.
 

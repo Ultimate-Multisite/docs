@@ -3,7 +3,7 @@ title: Cache Cyflwyniadau gyda Gwybodol am y Cyflenwr
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching Promptau Gwyrddwr-Arallt {#provider-aware-prompt-caching}
+# Caching Promptau Gwyrddwr-Arallt
 
 Mae Superdav AI Agent v1.12.0 yn cyflwyno **caching promptau arallt-arallt** (provider-aware prompt caching), sy mae'n optimiast costau API a latens gan gael y promptau wedi'u cadw yn y cyflym drwy ei cadw mewn cache ar gyfer pwylliant LLM'r wahodil. Mae pob pwylliant gyda'i ddethau a chwaraeir cadw yn rhywfaint.
 

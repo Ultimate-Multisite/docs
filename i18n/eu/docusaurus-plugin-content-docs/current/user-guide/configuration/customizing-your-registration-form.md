@@ -3,7 +3,7 @@ title: Zure erregistro-inprimakia pertsonalizatzea
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Zure erregistro-inprimakia pertsonalizatzea {#customizing-your-registration-form}
+# Zure erregistro-inprimakia pertsonalizatzea
 
 Zure sarea WordPress plataforman eraikitako beste SaaS guztietatik berezia izan dadin, Ultimate Multisite-k zure erregistro- eta saio-hasiera orriak pertsonalizatzeko aukera ematen dizu gure **Checkout Forms** eginbidearekin.
 

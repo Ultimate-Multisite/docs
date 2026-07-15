@@ -3,7 +3,7 @@ title: Referenčná príručka schopností
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referencia schopností {#abilities-reference}
+# Referencia schopností
 
 Schopnosti sú atomické akcie, ktoré Gratis AI Agent môže vyvolať vo vašej inštalácii WordPress. Každá schopnosť je registrovaná PHP trieda, ktorá sprístupňuje JSON schému — agent túto schému číta za behu, aby pochopil, aké parametre sú povinné a čo schopnosť vracia.
 

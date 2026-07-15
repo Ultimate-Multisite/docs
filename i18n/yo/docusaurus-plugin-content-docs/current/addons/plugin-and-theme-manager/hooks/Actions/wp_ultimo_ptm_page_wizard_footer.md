@@ -4,7 +4,7 @@ title: Ìṣe - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
 _i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# Ìgbésẹ̀: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
+# Ìgbésẹ̀: wp_ultimo_ptm_page_wizard_footer
 
 Gba àwọn olùdàgbàsókè àfikún láyè láti fi àwọn script kún ìsàlẹ̀ ojúewé náà
 

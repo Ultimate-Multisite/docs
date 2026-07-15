@@ -3,7 +3,7 @@ title: ਮਹਿਮਾਨ-ਨਵਾਜ਼ੀ ਦੇ ਮੈਨੂਸ
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality Menus {#hospitality-menus}
+# Hospitality Menus
 
 **Hospitality Menus** feature Theme Builder nu madad karda hai ki tusi apne WordPress site 'te vyavasthit khane aur peene (food and beverage) de menu pages bana sako aur unhe embed kar sako.
 

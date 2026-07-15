@@ -3,7 +3,7 @@ title: Uhlolojikelele lwe-Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Ukubuka konke kwe-Dashboard {#dashboard-overview}
+# Ukubuka konke kwe-Dashboard
 
 Ultimate Multisite ine-**Dashboard** ezinikele ngaphansi kwemenyu ye-Ultimate Multisite, futhi ingeza namawijethi ku-Dashboard Yenethiwekhi. Lesi sihloko sichaza lokho ozokubona kuzo zombili izindawo.
 

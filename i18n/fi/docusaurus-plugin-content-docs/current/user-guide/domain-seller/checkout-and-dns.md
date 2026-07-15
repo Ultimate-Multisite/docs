@@ -3,7 +3,7 @@ title: Kassakenttä ja asiakkaan DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Kassapisteen ja asiakkaan DNS-hallinta {#checkout-field-and-customer-dns-management}
+# Kassapisteen ja asiakkaan DNS-hallinta
 
 ## Verkkotunnuksen valintakenttä checkoutissa {#the-domain-selection-checkout-field}
 

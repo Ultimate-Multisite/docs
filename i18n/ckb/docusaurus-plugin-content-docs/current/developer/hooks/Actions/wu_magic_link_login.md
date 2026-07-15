@@ -4,7 +4,7 @@ title: کردار - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# کردار: wu_magic_link_login {#action-wumagiclinklogin}
+# کردار: wu_magic_link_login
 
 دوای ئەوەی بەکارهێنەرێک لە ڕێگەی بەستەری جادوییەوە چووە ژوورەوە، کار دەکات.
 

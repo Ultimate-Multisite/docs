@@ -3,7 +3,7 @@ title: Custom Registrar एकीकरण निर्माण गर्दै
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# अनुकूल Registrar Integration निर्माण गर्दै {#building-a-custom-registrar-integration}
+# अनुकूल Registrar Integration निर्माण गर्दै
 
 Domain Seller addon ले **Integration Registry** ढाँचा प्रयोग गर्छ। प्रत्येक registrar एउटा PHP class हो जसले `Domain_Selling_Capability` implement गर्छ र `wu_domain_seller_register_capabilities` action hook मार्फत आफूलाई register गर्छ।
 

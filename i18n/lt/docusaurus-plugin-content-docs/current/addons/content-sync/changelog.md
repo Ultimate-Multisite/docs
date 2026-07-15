@@ -3,7 +3,7 @@ title: Turinio sinchronizavimo pakeitimų žurnalas
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync pakeitimų žurnalas {#content-sync-changelog}
+# Content Sync pakeitimų žurnalas
 
 ### Versija 1.1.0 - Išleista 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nauja: visų įrašų tipų sinchronizavimo palaikymas (įrašai, puslapiai, pasirinktiniai įrašų tipai)

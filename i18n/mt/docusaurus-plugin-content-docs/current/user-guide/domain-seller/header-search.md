@@ -3,7 +3,7 @@ title: Tiftix tad-Dominju tal-Intestatura
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Tiftixa tad-Domain fil-Header {#header-domain-search}
+# Tiftixa tad-Domain fil-Header
 
 Uża din is-setup meta trid formola żgħira fil-header li tibda tiftixa ta’ domain, imbagħad tħalli lill-klijent jagħżel minn domains disponibbli ġewwa ċ-checkout ta’ Ultimate Multisite.
 

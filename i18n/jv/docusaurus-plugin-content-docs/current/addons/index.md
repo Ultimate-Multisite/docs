@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addon Ultimate Multisite {#ultimate-multisite-addons}
+# Addon Ultimate Multisite
 
 Addon ngembangaké Ultimate Multisite nganggo fitur lan integrasi tambahan. Umume addon iku mbayar lan bisa dituku saka [ultimatemultisite.com](https://ultimatemultisite.com).
 

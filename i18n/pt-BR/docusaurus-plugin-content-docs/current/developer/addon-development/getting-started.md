@@ -3,7 +3,7 @@ title: Começando com o desenvolvimento de Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Desenvolvimento de complemento {#addon-development}
+# Desenvolvimento de complemento
 
 ## Estrutura do complemento {#addon-structure}
 

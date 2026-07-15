@@ -3,7 +3,7 @@ title: WPMU DEV samstarf
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Samning við WPMU DEV {#wpmu-dev-integration}
+# Samning við WPMU DEV
 
 ## Áhersla {#overview}
 WPMU DEV er nánast fullskalinn WordPress plattaforma sem býður upp á staðfesting (hosting), plugin-a og þjónustur fyrir WordPress vísítöf. Þessi samning gerir mögulega sjálfsviðandi samningu á domænum og stjórnun SSL-tækja milli Ultimate Multisite og WPMU DEV staðfestingar.

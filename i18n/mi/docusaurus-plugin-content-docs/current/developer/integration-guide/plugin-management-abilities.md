@@ -3,7 +3,7 @@ title: Ngā Āheinga Whakahaere Monomai
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ngā Āheinga Whakahaere Monomai {#plugin-management-abilities}
+# Ngā Āheinga Whakahaere Monomai
 
 Ka tukuna mai e Gratis AI Agent v1.5.0 **ngā āheinga whakahaere monomai e 7** ka taea e te kaiāwhina AI te karanga i te wā o tētahi kōrerorero. Ka whakarato ēnei āheinga i te mana hōtaka ki runga i ngā monomai WordPress kua tāutatia mā te [Pūnaha Kaihanga Monomai me te Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

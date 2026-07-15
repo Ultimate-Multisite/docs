@@ -3,7 +3,7 @@ title: 주권 마이그레이션 검증
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# 주권 마이그레이션 확인 {#sovereign-migration-verification}
+# 주권 마이그레이션 확인
 
 Ultimate Multisite 1.2.0 버전부터 소유권 테넌트(sovereign tenant) 마이그레이션을 위한 WP-CLI 확인 명령어가 포함되었습니다. 테넌트 마이그레이션, SSO 방문 또는 격리 설치가 예상대로 작동하지 않을 때 이 명령어들을 사용하세요.
 

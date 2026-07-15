@@ -3,7 +3,7 @@ title: یەکگرتووکردن لەگەڵ cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integration-awe cPanel {#cpanel-integration}
+# Integration-awe cPanel
 
 ## Overzicht {#overview}
 cPanel یەکێکە لە بەربڵاوترین کۆنترۆڵ پینلەکانی هاستکردنی وێب کە زۆرێک لە پڕۆفایڵە هاستکردنی هاوبەش و تایبەتان دەبن. ئەم یەکگرتووکارییە ڕێنوێنی دەکات بۆ هەڵگرتنی دۆمنەکان بە شێوەیەکی ئۆتۆماتیک لە نێوان Ultimate Multisite و cPanel، کە ئەمەش دەبێت بگەڕێنەوەی ناوەکانی (aliases) و subdomain-ەکان بە شێوەیەکی ئۆتۆماتیک بۆ هەژمارەکەت لە cPanel زیاد بکەیت.

@@ -3,7 +3,7 @@ title: WordPress Multisite എങ്ങനെ ഇൻസ്റ്റാൾ ചെ
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite എങ്ങനെ ഇൻസ്റ്റാൾ ചെയ്യാം? {#how-do-i-install-wordpress-multisite}
+# WordPress Multisite എങ്ങനെ ഇൻസ്റ്റാൾ ചെയ്യാം?
 
 WordPress Multisite ഉപയോഗിച്ച് നിങ്ങൾക്ക് ഒരൊറ്റ ഇൻസ്റ്റാളേഷനിൽ സൈറ്റുകളുടെ ഒരു നെറ്റ്‌വർക്ക് ഉണ്ടാക്കാം. ഇത് WordPress-ൽ built-in ആയി ഉള്ള ഒരു ഫീച്ചറാണ്, പക്ഷേ സ്വതവേ ഇത് active ആയിരിക്കില്ല.
 
@@ -61,7 +61,7 @@ WordPress നൽകുന്ന ഈ code നിങ്ങളുടെ _**.htacces
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin-ന് trailing slash ചേർക്കുക {#add-a-trailing-slash-to-wp-admin}
+# /wp-admin-ന് trailing slash ചേർക്കുക
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

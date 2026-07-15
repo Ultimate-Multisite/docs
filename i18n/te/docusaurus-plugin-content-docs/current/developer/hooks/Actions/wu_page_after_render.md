@@ -4,7 +4,7 @@ title: చర్య - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Action: wu_page_after_render {#action-wupageafterrender}
+# Action: wu_page_after_render
 
 మనం పేజీని ప్రదర్శించిన తర్వాత (print చేసిన తర్వాత) ప్లగిన్ డెవలపర్‌లు అదనపు కంటెంట్‌ను జోడించడానికి ఇది అనుమతిస్తుంది.
 

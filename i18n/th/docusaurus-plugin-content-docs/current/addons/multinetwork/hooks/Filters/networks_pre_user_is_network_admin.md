@@ -4,7 +4,7 @@ title: ตัวกรอง - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 ตัวกรองนี้ใช้สำหรับกรองรายการเครือข่ายที่ผู้ใช้คนนั้นเป็นผู้ดูแลระบบ เพื่อให้เราสามารถข้ามขั้นตอนการทำงานปกติได้
 

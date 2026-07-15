@@ -3,7 +3,7 @@ title: Closte-da Gün Doğumu Sabitini Qurmaq
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte-da Sunrise sabitini true olaraq təyin etmək {#setting-the-sunrise-constant-to-true-on-closte}
+# Closte-da Sunrise sabitini true olaraq təyin etmək
 
 Bəzi host provayderləri təhlükəsizlik səbəbləri ilə `wp-config.php` faylını kilidləyir. Bu o deməkdir ki, Ultimate Multisite, domen xəritələnməsi və digər xüsusiyyətlərin işləməsi üçün lazım olan sabitləri avtomatik olaraq redaktə edə bilmir. Closte belə hostlardan biridir.
 

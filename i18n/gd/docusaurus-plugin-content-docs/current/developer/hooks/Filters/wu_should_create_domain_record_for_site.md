@@ -4,7 +4,7 @@ title: Criathrag - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Criathrag: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Criathrag: wu_should_create_domain_record_for_site
 
 Criathraich a bheil Ultimate Multisite bu chòir dha clàr àrainn a chruthachadh airson làrach ùr-chruthaichte.
 

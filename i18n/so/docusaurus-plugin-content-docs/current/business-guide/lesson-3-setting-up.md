@@ -3,7 +3,7 @@ title: 'Casharka 3: Dejinta Shabakaddaada'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Casharka 3: Dejinta Shabakaddaada {#lesson-3-setting-up-your-network}
+# Casharka 3: Dejinta Shabakaddaada
 
 Waa waqtigii la dhisi lahaa. Casharkan waxaad ku rakibi doontaa Ultimate Multisite oo waxaad habayn doontaa aasaaska shabakadda FitSite. Go'aan kasta halkan waxaa lagu sameeyay iyadoo maskaxda lagu hayo niche-ka jirdhiska.
 

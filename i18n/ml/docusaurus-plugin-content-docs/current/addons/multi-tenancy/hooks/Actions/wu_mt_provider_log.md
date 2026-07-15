@@ -4,7 +4,7 @@ title: ആക്ഷൻ - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Action: wu_mt_provider_log {#action-wumtproviderlog}
+# Action: wu_mt_provider_log
 
 ഒരു പ്രൊവൈഡർ ഒരു സന്ദേശം രേഖപ്പെടുത്തുമ്പോൾ (log) ഇത് പ്രവർത്തിപ്പിക്കുന്നു.
 

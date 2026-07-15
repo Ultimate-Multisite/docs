@@ -3,7 +3,7 @@ title: Content Sync Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Talaan ng Pagbabago ng Content Sync {#content-sync-changelog}
+# Talaan ng Pagbabago ng Content Sync
 
 ### Bersyon 1.1.0 - Inilabas noong 2025-12-31 {#version-110---released-on-2025-12-31}
 * Bago: Suporta sa pag-sync ng lahat ng post type (posts, pages, custom post types)

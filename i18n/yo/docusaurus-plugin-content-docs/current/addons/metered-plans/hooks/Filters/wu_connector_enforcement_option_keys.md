@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Àlẹmọ: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Àlẹmọ: wu_connector_enforcement_option_keys
 
 Ṣe àlẹmọ àtòkọ àwọn option key ti olupèsè AI tí a fi múlẹ̀ láti ojúlé àkọ́kọ́.
 

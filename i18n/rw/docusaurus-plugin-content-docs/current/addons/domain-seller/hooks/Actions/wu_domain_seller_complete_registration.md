@@ -4,7 +4,7 @@ title: Igikorwa - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Igikorwa: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Igikorwa: wu_domain_seller_complete_registration
 
 Gitangira igihe ubwishyu buhindutse bukajya kuri status ikwiye gutuma domain yandikwa.
 

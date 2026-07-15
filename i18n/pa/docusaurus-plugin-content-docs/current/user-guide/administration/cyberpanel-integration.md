@@ -3,7 +3,7 @@ title: CyberPanel ਏਕੀਕਰਨ
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 ਇਹ ਗਾਈਡ ਦੱਸਦੀ ਹੈ ਕਿ Ultimate Multisite CyberPanel integration ਨੂੰ ਕਿਵੇਂ configure ਕਰਨਾ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਡੇ ਨੈਟਵਰਕ ਵਿੱਚ ਮੈਪ ਕੀਤੇ ਗਏ ਡੋਮੇਨ ਆਟੋਮੈਟਿਕਲੀ (ਅਤੇ ਹਟਾਏ ਜਾਣ 'ਤੇ) CyberPanel ਵਿੱਚ ਵਰਚੁਅਲ ਹੋਸਟ ਵਜੋਂ ਜੋੜੇ ਜਾ ਸਕਣ, ਜਿਸ ਵਿੱਚ Let's Encrypt ਰਾਹੀਂ ਆਪਸ਼ਨਲ auto-SSL ਪ੍ਰੋਵੀਜ਼ਨਿੰਗ ਵੀ ਸ਼ਾਮਲ ਹੈ।
 

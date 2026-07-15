@@ -4,7 +4,7 @@ title: පෙරහන - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# පෙරහන: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# පෙරහන: mu_migration/export/user/data
 
 අපනයනය/ආනයනය කිරීමට නියමිත පෙරනිමි පරිශීලක දත්ත කට්ටලය පෙරහන් කරයි.
 

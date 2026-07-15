@@ -3,7 +3,7 @@ title: Elektron xatlar va ommaviy xabarlarni yuborish
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Email va Broadcasts yuborish (v2) {#sending-emails-and-broadcasts-v2}
+# Email va Broadcasts yuborish (v2)
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 

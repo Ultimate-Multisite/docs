@@ -3,7 +3,7 @@ title: සංවර්ධක ලේඛන
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# සංවර්ධක ලේඛන {#developer-documentation}
+# සංවර්ධක ලේඛන
 
 මෙම මාර්ගෝපදේශය Ultimate Multisite සමඟ ඒකාබද්ධ කිරීමට, එය විස්තාරණය කිරීමට, හෝ එයට අතිරේක ප්ලගින සංවර්ධනය කිරීමට සංවර්ධකයන්ට අවශ්‍ය සියල්ල සපයයි. Ultimate Multisite, WordPress Multisite ජාලයක් වෙබ් අඩවිය-සේවාවක් ලෙස (WaaS) වේදිකාවක් බවට පරිවර්තනය කරයි.
 

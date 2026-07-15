@@ -4,7 +4,7 @@ title: 过滤器 - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# 筛选器： signup_get_available_languages {#filter-signupgetavailablelanguages}
+# 筛选器： signup_get_available_languages
 
 筛选前端站点注册可用语言列表。
 

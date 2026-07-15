@@ -4,7 +4,7 @@ title: Iragazkia - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Iragazkia: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Iragazkia: wu_woocommerce_line_item_params
 
 Iragazi WooCommerce Cart-en lerro-elementuak sortzeko erabilitako parametroak, bezeroa WooCommerce ordainketara birbideratu aurretik.
 

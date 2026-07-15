@@ -4,7 +4,7 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# 過濾器：wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# 過濾器：wu_stripe_existing_plan_id
 
 用於過濾要檢查的方案 ID。如果此 ID 存在，新的訂閱將會使用此方案。
 

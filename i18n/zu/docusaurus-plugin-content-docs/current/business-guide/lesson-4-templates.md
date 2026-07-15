@@ -3,7 +3,7 @@ title: 'Isifundo 4: Ukwakha Amathempulethi Akhethekile'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Isifundo 4: Ukwakha Izifanekiso Zomkhakha Othile {#lesson-4-building-niche-templates}
+# Isifundo 4: Ukwakha Izifanekiso Zomkhakha Othile
 
 Izifanekiso ziyisisekelo sesiphakamiso sakho senani lomkhakha othile. Umnikazi we-studio yokuzivocavoca obhalisayo abone isayithi esivele ibukeka njengewebhusayithi yokuzivocavoca -- enamashejuli amakilasi, amaphrofayela abaqeqeshi, nezithombe ezifanele -- maningi kakhulu amathuba okuthi ahlale kunalowo obona ikhasi elingenalutho.
 

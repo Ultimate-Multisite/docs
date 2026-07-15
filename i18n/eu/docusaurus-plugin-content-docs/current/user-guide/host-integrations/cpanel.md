@@ -3,7 +3,7 @@ title: cPanel Integrazioa
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel Integrazioa {#cpanel-integration}
+# cPanel Integrazioa
 
 ## Deskargunea (Overview) {#overview}
 cPanel da web hosteak gehiendu erabiltzen dituzten mezuetan bat da. Ultimate Multisite eta cPanel-a automatikoki sinkronizatzeko aukera ematen du, horrek domain alias eta subdomain-ek automaticoki zehatzeko prozesua egiten du zure cPanel kontuan.

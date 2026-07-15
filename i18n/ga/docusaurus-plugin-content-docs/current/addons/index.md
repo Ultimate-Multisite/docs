@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Breiseáin Ultimate Multisite {#ultimate-multisite-addons}
+# Breiseáin Ultimate Multisite
 
 Leathnaíonn breiseáin Ultimate Multisite le gnéithe agus comhtháthuithe breise. Tá formhór na mbreiseán íoctha agus is féidir iad a cheannach ó [ultimatemultisite.com](https://ultimatemultisite.com).
 

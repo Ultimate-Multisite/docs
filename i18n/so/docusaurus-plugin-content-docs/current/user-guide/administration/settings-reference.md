@@ -3,7 +3,7 @@ title: Tixraaca Dejinta
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Tixraaca Settings {#settings-reference}
+# Tixraaca Settings
 
 Boggan wuxuu la socdaa settings saameeya maamulka maalinlaha ah iyo isbeddellada hab-dhaqanka ee dhawaan ka dhacay Ultimate Multisite.
 

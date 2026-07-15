@@ -3,7 +3,7 @@ title: Jūsų registracijos formos tinkinimas
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Registracijos formos tinkinimas {#customizing-your-registration-form}
+# Registracijos formos tinkinimas
 
 Kad jūsų tinklas atrodytų išskirtinai tarp visų kitų SaaS, sukurtų WordPress platformoje, Ultimate Multisite leidžia tinkinti registracijos ir prisijungimo puslapius naudojant mūsų **Atsiskaitymo formų** funkciją.
 

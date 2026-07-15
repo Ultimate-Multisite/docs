@@ -3,7 +3,7 @@ title: Saites izveide
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Cita attērs {#site-export}
+# Cita attērs
 
 Administrētāja lapā **Cita attērs** (Site Export) tīkla administratorji var ielikt vienu vietni, vai visu tīklu, iecienīto arkīvā, lai to izmantotu migrācijām, backupiem vai pārdošanu darbiem.
 

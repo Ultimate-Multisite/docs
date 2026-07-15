@@ -3,7 +3,7 @@ title: কেনেকৈ Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ultimate Multisite किन? {#why-ultimate-multisite}
+# Ultimate Multisite किन?
 
 যদি আপুনি এই article ত আহিছে, তেন্তে হয়তো আপুনি শুনিছে যে আমাৰ plugin টো আপোনাৰ ব্যৱসায়িক ধাৰণাটো সঁচা কৰাৰ সমাধান হ'ব পাৰে। আমি আশা কৰোঁ যে এই article টো শেষ কৰাৰ লগে লগে আপোনাৰ সকলো প্ৰয়োজনীয় উত্তৰ পোৱা যাব।
 

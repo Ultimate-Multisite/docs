@@ -3,7 +3,7 @@ title: Ƙwarewar Gudanar da Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ƙwarewar Sarrafa Plugin {#plugin-management-abilities}
+# Ƙwarewar Sarrafa Plugin
 
 Gratis AI Agent v1.5.0 yana zuwa da **ƙwarewar sarrafa plugin guda 7** da mataimakin AI zai iya kira yayin tattaunawa. Waɗannan ƙwarewa suna ba da ikon sarrafawa ta hanyar shirye-shirye kan WordPress plugins da aka girka ta hanyar [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

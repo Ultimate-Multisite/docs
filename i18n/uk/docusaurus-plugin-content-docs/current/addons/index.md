@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Додатки для Ultimate Multisite {#ultimate-multisite-addons}
+# Додатки для Ultimate Multisite
 
 Додатки розширюють функціонал Ultimate Multisite, додаючи нові можливості та інтеграції. Більшість додатків є платними та їх можна придбати на [ultimatemultisite.com](https://ultimatemultisite.com).
 

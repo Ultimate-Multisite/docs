@@ -3,7 +3,7 @@ title: Còmhraidh CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 An tòran seo a sgrias a bhith a' chiall an robh a' sgrùdadh an seòl Ultimate Multisite CyberPanel sin gu robh a bhith ag suidheachadh (agus a' tòran) domain-nàthach anns a ghràdhdaichean agad mar virtual hosts san CyberPanel, agus cuideachd a' tòran auto-SSL optional trí Let's Encrypt.
 

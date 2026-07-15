@@ -4,7 +4,7 @@ title: Фильтр - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Фильтр: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Фильтр: wu_light_ajax_allowed_hooks
 
 Куркынычсызлык сәбәпләре аркасында, без бәйләнү өчен кулланыла ала торган гамәлләр санын чиклибез. Бу фильтр кирәк булганда эшләүчеләргә әлеге исемлекне киңәйтергә мөмкинлек бирә.
 

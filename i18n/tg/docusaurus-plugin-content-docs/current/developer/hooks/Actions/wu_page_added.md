@@ -4,7 +4,7 @@ title: Амал - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# Амал: wu_page_added {#action-wupageadded}
+# Амал: wu_page_added
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки ҳангоми сабти саҳифаҳо корҳои иловагӣ иҷро кунанд.
 

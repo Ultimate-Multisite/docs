@@ -4,7 +4,7 @@ title: Ekintza - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Ekintza: wu_cart_setup {#action-wucartsetup}
+# Ekintza: wu_cart_setup
 
 Garatzaileei ordainketa-prozesuko objektuan aldaketa gehigarriak egiteko aukera ematen die.
 

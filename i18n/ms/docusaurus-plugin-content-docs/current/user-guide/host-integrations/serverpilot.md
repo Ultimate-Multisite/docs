@@ -3,7 +3,7 @@ title: Integrasi ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Integrasi ServerPilot {#serverpilot-integration}
+# Integrasi ServerPilot
 
 ## Gambaran Keseluruhan {#overview}
 ServerPilot ialah perkhidmatan awan untuk mengehoskan WordPress dan laman web PHP lain pada pelayan di DigitalOcean, Amazon, Google, atau mana-mana penyedia pelayan lain. Integrasi ini membolehkan penyegerakan domain secara automatik dan pengurusan sijil SSL antara Ultimate Multisite dan ServerPilot.

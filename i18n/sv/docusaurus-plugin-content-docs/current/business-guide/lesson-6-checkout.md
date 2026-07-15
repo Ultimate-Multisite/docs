@@ -3,7 +3,7 @@ title: 'Lektion 6: Registreringsupplevelsen'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lektion 6: Registreringsupplevelsen {#lesson-6-the-signup-experience}
+# Lektion 6: Registreringsupplevelsen
 
 Kassaproceduren är där intresset blir intäkt. En förvirrande eller generisk registreringsprocess får bort kunder. Ett flöde som är nischspecifikt, talar deras språk och känns smärtfritt konverterar dem.
 

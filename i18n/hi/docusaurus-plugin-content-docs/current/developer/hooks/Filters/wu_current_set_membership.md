@@ -4,7 +4,7 @@ title: Filter - wu_current_set_membership
 sidebar_label: wu_current_set_membership
 _i18n_hash: f9dbf408f6f9eb6ad7f0a9303ce2c564
 ---
-# Filter: wu_current_set_membership {#filter-wucurrentsetmembership}
+# Filter: wu_current_set_membership
 
 डेवलपर्स को डिफ़ॉल्ट व्यवहार को संशोधित करने और वर्तमान सदस्यता को अलग तरह से सेट करने की अनुमति देता है।
 

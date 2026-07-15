@@ -4,7 +4,7 @@ title: 'តម្រង - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
+# Filter: wu_current_\{$type\}_get_manage_url
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍន៍កែប្រែប៉ារ៉ាម៉ែត្រ URL សម្រាប់គ្រប់គ្រងគេហទំព័រ។
 

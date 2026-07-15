@@ -3,7 +3,7 @@ title: 'Lezione 2: Scegliere la tua nicchia'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lezione 2: Scegliere la Tua Nicchia {#lesson-2-picking-your-niche}
+# Lezione 2: Scegliere la Tua Nicchia
 
 Nella Lezione 1 abbiamo stabilito perché la nicchia batte il generico. Ora devi sceglierne una. Questa lezione ti fornisce un quadro di riferimento per trovare e convalidare una nicchia prima di investire tempo nella sua costruzione.
 

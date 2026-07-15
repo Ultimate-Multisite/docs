@@ -3,7 +3,7 @@ title: Istoric de Modificări al Creatorului de Pagini Admin
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Jurnal de modificări Admin Page Creator {#admin-page-creator-changelog}
+# Jurnal de modificări Admin Page Creator
 
 ### Versiunea 1.9.0 - Lansată pe 2026-01-18 {#version-190---released-on-2026-01-18}
 

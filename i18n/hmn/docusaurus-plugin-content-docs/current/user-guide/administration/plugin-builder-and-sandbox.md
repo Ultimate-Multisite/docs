@@ -3,7 +3,7 @@ title: Khuul Tsim Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0  introduces **Plugin Builder & Sandbox System**, which lets the AI assistant generate, activate, and manage WordPress plugins on your network — all through a safe, isolated sandbox environment.
 

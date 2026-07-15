@@ -4,7 +4,7 @@ title: ফিল্টার - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 এটি নির্ধারণ করে যে একটি সুরক্ষিত প্রমাণীকরণ রিডাইরেক্ট ব্যবহার করা হবে কিনা।
 

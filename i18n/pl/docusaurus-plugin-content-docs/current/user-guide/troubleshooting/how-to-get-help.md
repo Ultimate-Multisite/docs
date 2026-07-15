@@ -3,7 +3,7 @@ title: Jak uzyskać pomoc
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Jak uzyskać pomoc {#how-to-get-help}
+# Jak uzyskać pomoc
 
 Masz już ważny klucz licencyjny, a wraz z nim dostęp do naszego zespołu, który pomoże Ci rozwiązać problemy, jakie mogą pojawić się podczas konfigurowania Ultimate Multisite.
 

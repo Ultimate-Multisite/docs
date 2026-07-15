@@ -3,7 +3,7 @@ title: Hestia Control Panel एकत्रीकरण
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Integration {#hestia-control-panel-integration}
+# Hestia Control Panel Integration
 
 हे मार्गदर्शक Ultimate Multisite Hestia integration कसे configure करायचे ते समजावून सांगते, जेणेकरून तुमच्या network मध्ये map केलेले domains आपोआप Hestia मध्ये Web Domain Aliases म्हणून जोडले (आणि काढले) जातील.
 

@@ -3,7 +3,7 @@ title: د تخفیف کوډونه جوړول
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Codes جوړول (v2) {#creating-discount-codes-v2}
+# Discount Codes جوړول (v2)
 
 _**مهم یادداشت: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 

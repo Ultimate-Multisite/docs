@@ -3,7 +3,7 @@ title: Ho fetola ho tsamaisang le bohlokoa la ho fana ka tsela e ntle
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verification ya Migrasheni ya Sovereign {#sovereign-migration-verification}
+# Verification ya Migrasheni ya Sovereign
 
 Ultimate Multisite 1.2.0 e na leme ka-commands tsa WP-CLI ho verification tsa migrasheni ya tenant sovereign. Usa li haholo ha tenant migration, SSO visit, kapa isolated install e se a tlhokotsa kae a leba.
 

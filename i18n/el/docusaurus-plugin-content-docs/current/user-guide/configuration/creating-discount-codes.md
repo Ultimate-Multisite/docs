@@ -3,7 +3,7 @@ title: Δημιουργία κωδικών έκπτωσης
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Δημιουργία Κωδικών Έκπτωσης (v2) {#creating-discount-codes-v2}
+# Δημιουργία Κωδικών Έκπτωσης (v2)
 
 _**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτό το άρθρο αναφέρεται στο Ultimate Multisite έκδοση 2.x.**_
 

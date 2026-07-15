@@ -4,7 +4,7 @@ title: Bộ lọc - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Bộ lọc: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Bộ lọc: wu_view_override_replaceable_views
 
 Cho phép các nhà phát triển thêm các thư mục bổ sung vào danh sách các thư mục có thể thay thế.
 

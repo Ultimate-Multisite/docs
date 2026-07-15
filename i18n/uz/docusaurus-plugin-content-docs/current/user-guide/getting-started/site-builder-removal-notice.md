@@ -3,7 +3,7 @@ title: Sayt Quruvchi Rejimdan Chiqarish Eslami
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Sayt Quruvchi Rejamsizligi Haqida Eslatma {#site-builder-mode-removal-notice}
+# Sayt Quruvchi Rejamsizligi Haqida Eslatma
 
 **Site Builder rejimi Superdav AI Agent v1.12.0 da olib tashlandi.** Agar siz Site Builder rejimidan foydalanayotgan bo'lsangiz, tema yaratish va sayt sozlamalari uchun **Setup Assistant agentiga** o'tishingiz kerak.
 

@@ -4,7 +4,7 @@ title: Aiki - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Aiki: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Aiki: wp_ultimo_site_exporter_activation
 
 Bari sauran sassan ƙarin manhajar su haɗa ayyukansu don kunnawa.
 

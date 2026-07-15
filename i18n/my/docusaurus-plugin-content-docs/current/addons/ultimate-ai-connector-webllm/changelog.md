@@ -3,7 +3,7 @@ title: WebLLM အတွက် Ultimate AI Connector Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM ပြောင်းလဲမှုမှတ်တမ်း {#ultimate-ai-connector-for-webllm-changelog}
+# Ultimate AI Connector for WebLLM ပြောင်းလဲမှုမှတ်တမ်း
 
 ## Version 1.1.0 — ၂၀၂၆-၀၄-၀၉ တွင် ထုတ်ဝေခဲ့သည် {#version-110--released-on-2026-04-09}
 

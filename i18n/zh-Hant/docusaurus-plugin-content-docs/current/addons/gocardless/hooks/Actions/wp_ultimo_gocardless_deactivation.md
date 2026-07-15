@@ -4,7 +4,7 @@ title: Action - wp_ultimo_gocardless_deactivation
 sidebar_label: wp_ultimo_gocardless_deactivation
 _i18n_hash: 817aa6df2884790583e17b7a47bb8f62
 ---
-# 動作：wp_ultimo_gocardless_deactivation {#action-wpultimogocardlessdeactivation}
+# 動作：wp_ultimo_gocardless_deactivation
 
 讓插件的其他部分可以在停用時掛載（hook）它們的邏輯。
 

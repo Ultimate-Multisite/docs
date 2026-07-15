@@ -3,7 +3,7 @@ title: د چک اوټ ډیټا او کستمر ډएनएस
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field او کسٹمر DNS مدیریت {#checkout-field-and-customer-dns-management}
+# Checkout Field او کسٹمر DNS مدیریت
 
 ## دامین انتخاب کی چیک آؤٹ فیلڈ {#the-domain-selection-checkout-field}
 

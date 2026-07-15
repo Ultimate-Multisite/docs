@@ -3,7 +3,7 @@ title: የደንበኛ Account ገጽ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# የእርስዎ ደንበኛ Account ገጽ (v2) {#your-clients-account-page-v2}
+# የእርስዎ ደንበኛ Account ገጽ (v2)
 
 _**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 

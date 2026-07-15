@@ -3,7 +3,7 @@ title: Mokho a leboha
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Le Tlhaloso le Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Le Tlhaloso le Webhooks (v2)
 
 _**Tlhokwa: Se fa tsela e fanaengang ka ho ba le bohlokoa le ba le fetogoloa.**_
 

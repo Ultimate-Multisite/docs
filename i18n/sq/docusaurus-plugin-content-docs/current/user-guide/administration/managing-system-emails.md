@@ -3,7 +3,7 @@ title: Menaxhimi i email-eve të sistemit
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Menaxhimi i Email-eve të Sistemit {#managing-system-emails}
+# Menaxhimi i Email-eve të Sistemit
 
 Ultimate Multisite dërgon disa email-e sistemore për ngjarje si konfirmimet e regjistrimit, marrjet e pagesave dhe ndryshimet e anëtarëve. Mund t'i personalizosh këto template email duke i përshtatur me markën tuaj.
 

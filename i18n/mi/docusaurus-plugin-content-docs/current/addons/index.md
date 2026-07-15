@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ngā Tāpiritanga Ultimate Multisite {#ultimate-multisite-addons}
+# Ngā Tāpiritanga Ultimate Multisite
 
 Ka whakawhānui ngā tāpiritanga i a Ultimate Multisite ki ngā āhuatanga me ngā whakaurunga tāpiri. Ko te nuinga o ngā tāpiritanga he mea utu, ā, ka taea te hoko mai i [ultimatemultisite.com](https://ultimatemultisite.com).
 

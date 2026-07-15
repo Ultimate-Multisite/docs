@@ -4,7 +4,7 @@ title: Bộ lọc - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filter: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filter: wu_connector_enforcement_option_keys
 
 Bộ lọc này dùng để áp dụng danh sách các khóa tùy chọn (option keys) của nhà cung cấp AI được buộc phải tuân theo từ trang chính (main site).
 

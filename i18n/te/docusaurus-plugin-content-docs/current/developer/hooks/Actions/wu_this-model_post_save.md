@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
+# Action: wu_\{$this->model\}_post_save
 
 ఒక ఆబ్జెక్ట్‌ను డేటాబేస్‌లో నిల్వ చేసిన తర్వాత ఇది ట్రిగ్గర్ అవుతుంది.
 

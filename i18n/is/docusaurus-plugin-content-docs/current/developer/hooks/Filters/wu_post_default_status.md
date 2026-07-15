@@ -4,7 +4,7 @@ title: Sía - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Sía: wu_post_default_status {#filter-wupostdefaultstatus}
+# Sía: wu_post_default_status
 
 Síar gögn hlutarins áður en þau eru vistuð í gagnagrunninn.
 

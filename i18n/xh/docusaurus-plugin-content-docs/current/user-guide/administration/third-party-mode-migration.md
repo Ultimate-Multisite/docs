@@ -3,7 +3,7 @@ title: Ufuduko lweMowudi yeQela lesiThathu
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Ukufuduswa kweNdlela yeQela Lesithathu {#third-party-mode-migration}
+# Ukufuduswa kweNdlela yeQela Lesithathu
 
 Superdav AI Agent v1.12.0 itshintsha indlela izakhono zamaqela esithathu eziphathwa ngayo. **Indlela yeqela lesithathu ngoku imiselwe ngokungagqibekanga ku-auto**, ivumela udibaniso lwendalo lwe-WordPress Abilities API kwi-WordPress 7.0+ ngaphandle koqwalaselo ngesandla.
 

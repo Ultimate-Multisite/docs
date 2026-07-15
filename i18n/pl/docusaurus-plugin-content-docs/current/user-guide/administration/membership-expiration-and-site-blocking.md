@@ -3,7 +3,7 @@ title: Wygaśnięcie członkostwa i blokowanie strony
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Wygaśnięcie członkostwa i blokowanie strony {#membership-expiration-and-site-blocking}
+# Wygaśnięcie członkostwa i blokowanie strony
 
 Ten przewodnik wyjaśnia, jak Ultimate Multisite obsługuje wygaśnięcie członkostwa, zakończenie okresów próbnych oraz blokowanie strony na froncie. Omówione zostaną cykl życia członkostwa – od aktywnego do wygaśniętego – ustawienia kontrolujące, czy strony są blokowane, oraz co sprawdzić, jeśli strony pozostają dostępne po wygaśnięciu członkostwa.
 

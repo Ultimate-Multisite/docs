@@ -3,7 +3,7 @@ title: መሳሪያዎች እና ውቅር
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# መሳሪያዎች እና ውቅር {#tools-and-configuration}
+# መሳሪያዎች እና ውቅር
 
 Theme Builder የWordPress ጣቢያዎን ለመተንተን፣ ለመንደፍ እና ለመገንባት የመሳሪያዎች ስብስብ ይጠቀማል። በስሪት 1.16.0፣ **sd-ai-agent/site-scrape አሁን Tier 1 መሳሪያ ነው**፣ ይህም በTheme Builder ውስጥ በነባሪነት እንዲገኝ ያደርገዋል። Superdav AI Agent v1.18.0 ለታመኑ የገንቢ የስራ ፍሰቶች በተለይ የሚሰራጭ Advanced ተጓዳኝ ጥቅልም ያስተዋውቃል፤ እነዚያ መሳሪያዎች የWordPress.org ዋና ጥቅል ክፍል አይደሉም እና በተለይ መጫን እና መፈቀድ አለባቸው።
 

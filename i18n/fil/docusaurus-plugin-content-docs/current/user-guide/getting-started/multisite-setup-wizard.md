@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard {#multisite-setup-wizard}
+# Multisite Setup Wizard
 
 May kasamang built-in wizard ang Ultimate Multisite na awtomatikong nagko-convert ng standard WordPress installation papuntang WordPress Multisite network. Hindi mo na kailangang mag-edit ng `wp-config.php` o mag-run ng database commands nang manu-mano.
 

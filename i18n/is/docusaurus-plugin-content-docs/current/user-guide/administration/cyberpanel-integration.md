@@ -3,7 +3,7 @@ title: Samþætting CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Samningur {#cyberpanel-integration}
+# CyberPanel Samningur
 
 Þessi leiðferð útskýrir hvernig þú getur sett upp samningu milli Ultimate Multisite og CyberPanel svo að mappaðir domænar í nýtingu þín séu sjálfvirkt viðbúa (og fjarlægja) sem virtual hosts í CyberPanel, með valfræð heimildar fyrir auto-SSL með Let's Encrypt.
 

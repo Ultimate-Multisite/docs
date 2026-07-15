@@ -3,7 +3,7 @@ title: CyberPanel ஒருங்கிணைப்பு
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ஒருங்கிணைப்பு {#cyberpanel-integration}
+# CyberPanel ஒருங்கிணைப்பு
 
 உங்கள் நெட்வொர்க்கில் உள்ள மேப் செய்யப்பட்ட டொமைன்கள் (mapped domains) CyberPanel-இல் virtual hosts ஆக தானாகச் சேர்க்கப்படவும் (மற்றும் நீக்கப்படவும்), விருப்பப்பட்டால் Let's Encrypt மூலம் auto-SSL வசதியையும் எப்படி கட்டமைப்பது என்பதை இந்தக் கையேடு விளக்குகிறது.
 

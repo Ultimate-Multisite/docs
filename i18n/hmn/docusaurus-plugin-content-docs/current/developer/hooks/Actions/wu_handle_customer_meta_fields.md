@@ -4,7 +4,7 @@ title: Kev nqis tes - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Kev ua: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Kev ua: wu_handle_customer_meta_fields
 
 Tso cai rau cov plugin developers khaws meta data rau ntau txoj kev txawv yog tias lawv xav tau.
 

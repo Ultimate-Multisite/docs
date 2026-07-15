@@ -3,7 +3,7 @@ title: Mtiririko wa Kuanzisha Muundo wa Mandhari
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Mchakato wa Kuanzisha Theme Builder {#theme-builder-onboarding-flow}
+# Mchakato wa Kuanzisha Theme Builder
 
 Superdav AI Agent v1.12.0 inatangulia **mchakato wa kuanzisha (onboarding flow) wa Theme Builder** unaowakutanisha kwa kuunda theme maalum wakati wa kuanzisha mradi wako wa kwanza. Hii inabadilisha mtindo wa zamani wa Site Builder na kuleta njia rahisi zaidi, inayosaidiwa na agent.
 

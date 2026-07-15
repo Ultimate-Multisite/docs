@@ -3,7 +3,7 @@ title: Hloka le liti la API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API Endpoint ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API Endpoint ya Ultimate Multisite
 
 Ha le tšhobo ea tutorial ena, o tla tseba hore na lefe o ka sebelisa Ultimate Multisite /register API endpoint ho fetola bohlelo ba tsotlhe ba ntlha e ntlha ea lona le ho etsa le ho etsa le Zapier.
 

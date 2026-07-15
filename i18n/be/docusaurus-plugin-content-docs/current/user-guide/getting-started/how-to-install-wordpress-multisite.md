@@ -3,7 +3,7 @@ title: Як усталяваць WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Як ўсталяваць WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Як ўсталяваць WordPress Multisite?
 
 WordPress Multisite дазваляе вам мець сетку сайтаў адныму ўстаноўленні. Гэта ўбудаваная функцыя, але па спецыя.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

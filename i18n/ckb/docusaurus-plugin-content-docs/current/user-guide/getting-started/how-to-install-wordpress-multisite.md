@@ -3,7 +3,7 @@ title: چۆنی چۆنی WordPress Multisite دامەزرێنن؟
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# چۆن WordPress Multisite دامەسازم؟ {#how-do-i-install-wordpress-multisite}
+# چۆن WordPress Multisite دامەسازم؟
 
 WordPress Multisite دەبێت بگەیت بە تۆڕێکی سایت لەسەر جێبەجێکردنی تاکێک. ئەمە تایبەتمەندییەکی ناوخۆییە، بەڵام بە شێوەیەکی پیش‌تەوا، چالاک نییە.
 
@@ -59,7 +59,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# paşî slash-e (/) ji bo /wp-admin e {#add-a-trailing-slash-to-wp-admin}
+# paşî slash-e (/) ji bo /wp-admin e
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d RewriteRule ^ - [L] RewriteRule ^(wp-(content|admin|includes)._) $1 [L] RewriteRule ^(._.php)$ $1 [L] RewriteRule . index.php [L]

@@ -4,7 +4,7 @@ title: Dejanje - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# Dejanje: wu_before_search_models {#action-wubeforesearchmodels}
+# Dejanje: wu_before_search_models
 
 Sproži se pred obdelavo zahteve za iskanje.
 

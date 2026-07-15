@@ -3,7 +3,7 @@ title: 'Lektioun 9: Präisgestaltung fir Gewënn'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lektioun 9: Präisgestaltung fir Gewënn {#lesson-9-pricing-for-profit}
+# Lektioun 9: Präisgestaltung fir Gewënn
 
 An der Lektioun 5 hu mir Ufankspräisser fir FitSite-Pläng festgeluecht. Elo verfeinere mir d'Präisstrategie mat Techniken, déi d'Recetten erhéijen, Upgrades encouragéieren an d'Kënnegungsquot reduzéieren.
 

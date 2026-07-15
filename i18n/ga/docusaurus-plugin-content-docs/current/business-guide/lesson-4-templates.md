@@ -3,7 +3,7 @@ title: 'Ceacht 4: Teimpléid Nideoige a Thógáil'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Ceacht 4: Teimpléid Nideoige a Thógáil {#lesson-4-building-niche-templates}
+# Ceacht 4: Teimpléid Nideoige a Thógáil
 
 Is iad teimpléid croílár do thairiscint luacha nideoige. Tá úinéir stiúideo aclaíochta a chláraíonn agus a fheiceann suíomh a bhfuil cuma shuímh gréasáin aclaíochta air cheana féin -- le sceidil ranganna, próifílí traenálaithe, agus an íomháineachas ceart -- i bhfad níos dóchúla fanacht ná duine a fheiceann canbhás bán.
 

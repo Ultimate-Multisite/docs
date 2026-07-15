@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Amaxwebhu e-Ultimate Multisite {#ultimate-multisite-documentation}
+# Amaxwebhu e-Ultimate Multisite
 
 Wamkelekile kumaxwebhu e-Ultimate Multisite. Ultimate Multisite iguqula WordPress Multisite ibe liqonga elipheleleyo leWebhusayithi njengeNkonzo (WaaS).
 

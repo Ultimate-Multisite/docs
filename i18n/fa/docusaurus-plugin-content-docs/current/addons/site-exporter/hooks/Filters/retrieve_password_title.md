@@ -4,7 +4,7 @@ title: فیلتر - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# فیلتر: retrieve_password_title {#filter-retrievepasswordtitle}
+# فیلتر: retrieve_password_title
 
 موضوع ایمیل بازنشانی رمز عبور را فیلتر می‌کند.
 

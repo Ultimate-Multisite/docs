@@ -3,7 +3,7 @@ title: WP Engine Integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Ενοποίηση με WP Engine {#wp-engine-integration}
+# Ενοποίηση με WP Engine
 
 ## Επισκόπηση {#overview}
 Το WP Engine είναι μια premium πλατφόρμα διαχειριζόμενης φιλοξενίας WordPress που προσφέρει βελτιστοποιημένη απόδοση, ασφάλεια και επεκτασιμότητα για ιστότοπους WordPress. Αυτή η ενοποίηση επιτρέπει τον αυτόματο συγχρονισμό domains μεταξύ του Ultimate Multisite και του WP Engine.

@@ -3,7 +3,7 @@ title: WPMU DEV تكامل
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV Integration {#wpmu-dev-integration}
+# WPMU DEV Integration
 
 ## گشتی (Overview) {#overview}
 WPMU DEV ووردپرس سایت‌ها برای میزبانی، پلاگین‌ها و خدمات ارائه می‌دهند یک پلتفرم جامع است. این ادغام امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و میزبانی WPMU DEV فراهم می‌کند.

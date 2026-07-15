@@ -3,7 +3,7 @@ title: డాష్‌బోర్డ్ అవలోకనం
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# డాష్‌బోర్డ్ అవలోకనం {#dashboard-overview}
+# డాష్‌బోర్డ్ అవలోకనం
 
 Ultimate Multisite మెనూ కింద ఒక ప్రత్యేక **Dashboard** ఉంటుంది, అలాగే Network Dashboard కు విడ్జెట్లను జోడిస్తుంది. ఈ ఆర్టికల్‌లో రెండు చోట్లా మీరు ఏమి చూస్తారో వివరిస్తాము.
 

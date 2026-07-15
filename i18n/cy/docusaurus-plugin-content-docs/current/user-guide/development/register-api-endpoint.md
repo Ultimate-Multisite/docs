@@ -3,7 +3,7 @@ title: Regystro'r cyfeiriad API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ymddyn API Register o'r Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Ymddyn API Register o'r Ultimate Multisite
 
 Yn yst tutorial, byddwch yn dysgu sut i ddefnyddio'r endpoint API /register o'r Ultimate Multisite i creu'r cyfnod gyfan o'r cyflwyniad am newyddol customer mewn rhwydwaith eich a sut i wneud hyn gyda Zapier.
 

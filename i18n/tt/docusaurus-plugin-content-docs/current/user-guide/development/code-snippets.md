@@ -3,7 +3,7 @@ title: Код фрагментлары
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 üçün Kod Kesitleri {#code-snippets-for-v2}
+# v2 üçün Kod Kesitleri
 
 Temelde, **WordPress** için kod kesitleri, normalde ayrı küçük bir eklenti gerektirebilecek belirli işlemleri yapmak için kullanılır. Bu tür kod kesitleri WordPress çekirdek dosyalarından veya temanızın (genellikle functions.php dosyası) içinde yer alabilir veya bir MU plugin olarak da kullanılabilirler.
 

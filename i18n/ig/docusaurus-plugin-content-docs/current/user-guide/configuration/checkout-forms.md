@@ -3,7 +3,7 @@ title: Nkwado Ọrụ
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms {#checkout-forms}
+# Checkout Forms
 
 Checkout Forms na ọ dị mma vàmụrị n'ụ ahụ ị chọpụta ihe ndị dị iche iche mgbe ị na ị chọpụta ndị khách nwere ike ịbụ.
 

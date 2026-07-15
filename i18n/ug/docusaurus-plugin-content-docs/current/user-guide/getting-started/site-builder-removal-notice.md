@@ -3,7 +3,7 @@ title: Sayt Quril Modusini Kaldırma Bildirimi
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# سايت بيلدر مود ازالدوغ نوتيس {#site-builder-mode-removal-notice}
+# سايت بيلدر مود ازالدوغ نوتيس
 
 **سايت بيلدر مود Superdav AI Agent v1.12.0-dağaldı.** Əgər siz Site Builder modunu istifadə edirdinizsə, tema yaratmaq və sayt qurmaq üçün **Setup Assistant agentine** keçməlisiniz.
 

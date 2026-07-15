@@ -3,7 +3,7 @@ title: প্ৰো থীম
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme ব্যৱহাৰ কৰি আপোনাৰ Admin Panel ক কাস্টমাইজ কৰক {#customizing-your-admin-panel-with-pro-theme}
+# PRO Theme ব্যৱহাৰ কৰি আপোনাৰ Admin Panel ক কাস্টমাইজ কৰক
 
 ক্লায়েন্টৰ কাম কৰোঁতে, কেতিয়াবা আমি আমাৰ ক্লায়েন্টলৈ WordPress-ৰ admin dashboard ত এটা কাস্টম অভিজ্ঞতা দিবলগীয়া হয়। যদি আপুনি এটা বেছি প্ৰফেশ্যনেল লুক আৰু ফিল বিচাৰিছে, তেন্তে PRO Theme আপোনাক সহায় কৰিব পাৰে।
 

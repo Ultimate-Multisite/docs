@@ -4,7 +4,7 @@ title: Dejanje - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Dejanje: wu_before_light_ajax {#action-wubeforelightajax}
+# Dejanje: wu_before_light_ajax
 
 V nekaterih primerih bomo morali naložiti dodatne vire za obravnavo dejanj.
 

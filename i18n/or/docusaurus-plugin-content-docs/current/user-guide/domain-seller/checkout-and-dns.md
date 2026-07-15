@@ -3,7 +3,7 @@ title: ଚେକ୍ଆଉଟ୍ ଫିଲ୍ଡ ଏବଂ କଷ୍ଟମର୍ 
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# ચેકઆઉટ ફિલ્ડ અને ગ્રાહક DNS મેનેજમેન્ટ {#checkout-field-and-customer-dns-management}
+# ચેકઆઉટ ફિલ્ડ અને ગ્રાહક DNS મેનેજમેન્ટ
 
 ## ડોમેન સિલેક્શન ચેકઆઉટ ફિલ્ડ {#the-domain-selection-checkout-field}
 

@@ -4,7 +4,7 @@ title: Филтер - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Филтер: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Филтер: wu_membership_update_forms
 
 Овозможува програмерите да додаваат нови slugs за формулари за ажурирање.
 

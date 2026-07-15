@@ -3,7 +3,7 @@ title: Paglakaw sa Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Pagpuyo sa Admin Panel {#touring-the-admin-panel}
+# Pagpuyo sa Admin Panel
 
 Ang Ultimate Multisite gusto nga maging simple ug dali masabtan, pero tungod kay gamhanan ni kini nga tool, makatabang kini nga adunay guided tour. Maglakaw kita sa mga admin pages aron matabangan ka nga komportable.
 

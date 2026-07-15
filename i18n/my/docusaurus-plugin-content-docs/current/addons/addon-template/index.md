@@ -3,9 +3,9 @@ title: အပိုထည့်သွင်းပုံစံ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template {#addon-template}
+# Addon Template
 
-{{ADDON_DESCRIPTION}}
+အပိုထည့်သွင်းပုံစံ — Ultimate Multisite.
 
 ## လိုအပ်ချက်များ (Requirements) {#requirements}
 

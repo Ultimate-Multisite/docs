@@ -3,7 +3,7 @@ title: プランをダウングレードする
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# プランのダウングレード（v2） {#downgrading-a-plan-v2}
+# プランのダウングレード（v2）
 
 _**重要な注記：この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 

@@ -3,7 +3,7 @@ title: Започнување со развој на додатоци
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Развој на додаток {#addon-development}
+# Развој на додаток
 
 ## Структура на додаток {#addon-structure}
 

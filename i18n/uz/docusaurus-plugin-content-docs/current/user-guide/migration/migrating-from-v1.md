@@ -3,7 +3,7 @@ title: V1 dan o'tkazish
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 dan o'tkazish (Migratsiya) {#migrating-from-v1}
+# V1 dan o'tkazish (Migratsiya)
 
 ## Ultimate Multisite dastlabki 1.x versiyasidan 2.x versiyasi bilan almashtirildi. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

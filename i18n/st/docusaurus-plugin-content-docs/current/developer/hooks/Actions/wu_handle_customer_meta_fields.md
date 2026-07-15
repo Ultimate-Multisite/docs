@@ -4,7 +4,7 @@ title: Ketso - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Ketso: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Ketso: wu_handle_customer_meta_fields
 
 Dumella baetsi ba dikatoloso ho boloka dintlha tsa meta ka ditsela tse fapaneng haeba ba hloka ho etsa jwalo.
 

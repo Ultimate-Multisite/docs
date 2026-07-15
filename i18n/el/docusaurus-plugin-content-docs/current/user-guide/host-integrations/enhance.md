@@ -3,7 +3,7 @@ title: Βελτίωση Ενσωμάτωσης Πίνακα Ελέγχου
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Ενσωμάτωση με το Enhance Control Panel {#enhance-control-panel-integration}
+# Ενσωμάτωση με το Enhance Control Panel
 
 ## Επισκόπηση {#overview}
 Το Enhance είναι ένα σύγχρονο control panel που προσφέρει ισχυρές δυνατότητες αυτοματισμού και διαχείρισης hosting. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του Enhance Control Panel.

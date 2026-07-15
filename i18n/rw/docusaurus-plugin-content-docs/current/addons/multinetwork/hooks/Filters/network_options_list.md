@@ -4,7 +4,7 @@ title: Yungurura - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Akayunguruzo: network_options_list {#filter-networkoptionslist}
+# Akayunguruzo: network_options_list
 
 Kayungurura urutonde rw’amahitamo y’urusobemiyoboro rushingiye kuri domain na path by’urusobemiyoboro.
 

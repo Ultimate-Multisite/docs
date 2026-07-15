@@ -3,7 +3,7 @@ title: Asistent de Configurare Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Asistentul de configurare Multisite {#multisite-setup-wizard}
+# Asistentul de configurare Multisite
 
 Ultimate Multisite include un asistent integrat care transformă automat o instalare WordPress standard într-o rețea WordPress Multisite. Astfel, nu mai trebuie să editezi manual fișierul `wp-config.php` sau să rulezi comenzi în baza de date.
 

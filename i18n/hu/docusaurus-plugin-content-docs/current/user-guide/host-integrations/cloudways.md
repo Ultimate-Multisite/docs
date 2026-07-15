@@ -3,7 +3,7 @@ title: Cloudways integráció
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways integráció {#cloudways-integration}
+# Cloudways integráció
 
 ## Áttekintés {#overview}
 A Cloudways egy felügyelt felhőalapú tárhelyplatform, amely lehetővé teszi WordPress oldalak telepítését különböző felhőszolgáltatókra, például DigitalOcean, AWS, Google Cloud és más platformokra. Ez az integráció automatikus domain-szinkronizálást és SSL-tanúsítvány-kezelést tesz lehetővé az Ultimate Multisite és a Cloudways között.

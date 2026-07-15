@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Změny GoCardless {#gocardless-changelog}
+# Změny GoCardless
 
 Verze: 1.0.3 - Vydáno dne 2026-05-05
 * Oprava: Zanedbané stránky v čekání jsou nyní automaticky vyčištěny, když je členství GoCardless zrušeno ve stavu čekání nebo pozastavení

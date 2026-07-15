@@ -4,7 +4,7 @@ title: فلٽر - wu_domain_seller_search_delay
 sidebar_label: wu_domain_seller_search_delay
 _i18n_hash: b0871b15059808a847875636d151245f
 ---
-# فلٽر: wu_domain_seller_search_delay {#filter-wudomainsellersearchdelay}
+# فلٽر: wu_domain_seller_search_delay
 
 ڊومين ڳولا جي debounce دير کي ملي سيڪنڊن ۾ فلٽر ڪري ٿو.
 

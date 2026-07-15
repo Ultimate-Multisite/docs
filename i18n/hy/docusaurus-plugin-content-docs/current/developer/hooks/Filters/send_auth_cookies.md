@@ -4,7 +4,7 @@ title: Զտիչ - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Զտիչ՝ send_auth_cookies {#filter-sendauthcookies}
+# Զտիչ՝ send_auth_cookies
 
 Թույլ է տալիս կանխել auth cookies-ի փաստացի ուղարկումը client-ին։
 

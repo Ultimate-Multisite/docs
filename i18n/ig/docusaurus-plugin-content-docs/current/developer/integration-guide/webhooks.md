@@ -3,7 +3,7 @@ title: Ijikwa Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Ijikwa Webhook {#webhook-handling}
+# Ijikwa Webhook
 
 Mepụta ebe njedebe webhook ahaziri iche iji nata mmemme site na ọrụ mpụga ma mekọrịta data na Ultimate Multisite.
 

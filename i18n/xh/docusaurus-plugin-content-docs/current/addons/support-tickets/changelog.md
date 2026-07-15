@@ -3,7 +3,7 @@ title: Ilogi yotshintsho yamaTikiti eNkxaso
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Ilogi yotshintsho yamatikiti enkxaso {#support-tickets-changelog}
+# Ilogi yotshintsho yamatikiti enkxaso
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Kuphuculwe: Kususiwe uvimba weefayile vendor/ ekulandelweni yi-Git (sele ugutyungelwe yi-.gitignore), kuncitshiswa ubungakanani bendawo yokugcina

@@ -4,7 +4,7 @@ title: פילטער - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# פילטער: network_options_list {#filter-networkoptionslist}
+# פילטער: network_options_list
 
 פילטערט די רשימה פֿון נעצווערק־אָפּציעס וואָס זענען אָפּהענגיק פֿון דעם דאָמיין און פּאַט פֿון אַ נעצווערק.
 

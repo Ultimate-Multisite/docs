@@ -3,7 +3,7 @@ title: Mogelijkheden van de Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Mogelijkheden: Skelet Opzetten en Activeren van Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder Mogelijkheden: Skelet Opzetten en Activeren van Block Themes
 
 Superdav AI Agent v1.12.0 introduceert twee krachtige mogelijkheden waarmee u aangepaste block themes kunt genereren en inzetten, rechtstreeks vanuit de chatinterface.
 

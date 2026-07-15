@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# ක්‍රියාව: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# ක්‍රියාව: wu_maybe_create_customer
 
 ගනුදෙනුකරු එක් කළ විට අමතර දේවල් කිරීමට දිගු සංවර්ධකයන්ට ඉඩ දෙන්න.
 

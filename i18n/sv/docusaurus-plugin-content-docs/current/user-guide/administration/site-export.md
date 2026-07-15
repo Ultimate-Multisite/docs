@@ -3,7 +3,7 @@ title: Webbplats-export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportera webbplats {#site-export}
+# Exportera webbplats
 
 Admin-sidan **Site Export** låter nätverksadministratörer packa en enskild webbplats, eller hela nätverket, i ett nedladdningsbart arkiv för migrering, backup eller överlämning.
 

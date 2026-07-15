@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# ຕົວກອງ: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# ຕົວກອງ: wu_pending_payment_message
 
 ອະນຸຍາດໃຫ້ຜູ້ໃຊ້ປ່ຽນຂໍ້ຄວາມກ່ຽວກັບການຊຳລະເງິນທີ່ຍັງຄ້າງຢູ່.
 

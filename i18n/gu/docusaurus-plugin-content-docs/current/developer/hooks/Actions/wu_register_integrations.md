@@ -4,7 +4,7 @@ title: Action - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations {#action-wuregisterintegrations}
+# Action: wu_register_integrations
 
 ઇન્ટિગ્રેશન્સને પોતાને રજીસ્ટર કરવાની મંજૂરી આપવા માટે આ એક્શન ટ્રિગર થાય છે.
 

@@ -4,7 +4,7 @@ title: Филтер - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Филтер: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Филтер: wu_bypass_checkout_form
 
 Омогућава програмерима да заобиђу излаз и поставе нови
 

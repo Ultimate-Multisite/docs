@@ -3,7 +3,7 @@ title: 'Pelajaran 3: Menyediakan Rangkaian Anda'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Pelajaran 3: Menyiapkan Rangkaian Anda {#lesson-3-setting-up-your-network}
+# Pelajaran 3: Menyiapkan Rangkaian Anda
 
 Sudah tiba masanya untuk membina. Dalam pelajaran ini, anda akan memasang Ultimate Multisite dan mengkonfigurasi asas rangkaian FitSite. Setiap keputusan di sini dibuat dengan mengambil kira bidang kecergasan (fitness niche).
 

@@ -4,7 +4,7 @@ title: Filtrilo - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Filtrilo: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Filtrilo: wu_view_override_replaceable_views
 
 Permesas al programistoj aldoni pliajn dosierujojn al la anstataŭigebla listo.
 

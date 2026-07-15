@@ -3,7 +3,7 @@ title: V1에서 마이그레이션
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1에서 마이그레이션하기 {#migrating-from-v1}
+# V1에서 마이그레이션하기
 
 ## Ultimate Multisite는 기존 1.x 릴리스 계열에서 2.x 릴리스 계열로 전환되었습니다. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

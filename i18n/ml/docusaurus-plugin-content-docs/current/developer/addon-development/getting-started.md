@@ -3,7 +3,7 @@ title: ആഡ്‌ഓൺ വികസനം ആരംഭിക്കൽ
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ആഡോൺ വികസനം {#addon-development}
+# ആഡോൺ വികസനം
 
 ## ആഡോൺ ഘടന {#addon-structure}
 

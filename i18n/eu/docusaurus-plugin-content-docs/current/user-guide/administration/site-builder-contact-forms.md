@@ -3,7 +3,7 @@ title: Site Builder kontakto formularioak
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontak-formak le Site Builderra {#site-builder-contact-forms}
+# Kontak-formak le Site Builderra
 
 Superdav AI Agent v1.10.0-ek gabe duleko kontak-formak direktu chat interface-n batzuk jartzeko aukera da Site Builder agentaren erabilera. Horrek ematen du, chat-n ez kalan sansiz, edoze page-n funtzionalki jakin dituzten kontak-formak leitzapena leitzapen.
 

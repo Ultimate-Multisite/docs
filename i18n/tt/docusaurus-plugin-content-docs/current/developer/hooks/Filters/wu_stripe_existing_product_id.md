@@ -4,7 +4,7 @@ title: Фильтр - wu_stripe_existing_product_id
 sidebar_label: wu_stripe_existing_product_id
 _i18n_hash: 92eb984fe341b1ce2d56ea2eccff8100
 ---
-# Сөзгеч: wu_stripe_existing_product_id {#filter-wustripeexistingproductid}
+# Сөзгеч: wu_stripe_existing_product_id
 
 Тикшереләчәк продуктның ID-сын сөзә. Әгәр бу бар икән, яңа язылу бу продуктны кулланачак.
 

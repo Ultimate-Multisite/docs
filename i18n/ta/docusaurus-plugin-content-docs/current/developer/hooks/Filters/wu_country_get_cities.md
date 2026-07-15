@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities {#filter-wucountrygetcities}
+# Filter: wu_country_get_cities
 
 ஒரு நாட்டில் உள்ள ஒரு மாநிலத்திற்கான நகரங்களின் பட்டியலைத் திருப்பி அளிக்கிறது.
 

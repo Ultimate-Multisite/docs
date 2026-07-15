@@ -3,7 +3,7 @@ title: GoCardless परिवर्तन लग
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless परिवर्तन लग {#gocardless-changelog}
+# GoCardless परिवर्तन लग
 
 संस्करण: 1.0.3 - 2026-05-05 मा जारी
 * सुधार: GoCardless सदस्यता पेन्डिङ वा अन-होल्ड अवस्थामा हुँदा रद्द गरिएमा, अब अनाथ पेन्डिङ साइटहरू सफा गरिन्छन्

@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Aksyon: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Aksyon: wp_ultimo_site_exporter_activation
 
 Pèmèt lòt pati nan ekstansyon an atache woutin yo pou aktivasyon.
 

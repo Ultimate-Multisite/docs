@@ -3,7 +3,7 @@ title: Asa ny Fandraisana Asa An'ny Mpanofa Mahery
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Fiasa ho Mpanjaka (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Fiasa ho Mpanjaka (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manampanarina fitaovana ho an'ny mpanjaka (sovereign tenants): ireo subsites izay miasa amin'ny database, root filesystem, ary routing context manokana azy nefa mbola hita avy amin'ny administrator an'ny tambajotra iainana.
 

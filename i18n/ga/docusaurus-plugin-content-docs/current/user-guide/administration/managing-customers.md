@@ -3,7 +3,7 @@ title: Cur agus leat leat
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Déanamh ar Oileúin {#managing-customers}
+# Déanamh ar Oileúin
 
 Leonaíonn an lús **Customers** an liosta oileáin a bhfostaithe i gceoladh duit. Taispeann an cur chuig níos éasca faoi bhealach, email, láithreachas achainn, agus link **switch to** a leagan duit logáil isteach i subsite an oileán mar site administrator.
 

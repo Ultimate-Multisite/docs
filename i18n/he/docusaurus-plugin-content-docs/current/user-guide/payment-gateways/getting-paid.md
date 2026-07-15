@@ -3,7 +3,7 @@ title: קבלת תשלום
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# קבלת תשלום (v2) {#getting-paid-v2}
+# קבלת תשלום (v2)
 
 _**הערה חשובה: מאמר זה מתייחס לגרסת Ultimate Multisite 2.x.**_
 

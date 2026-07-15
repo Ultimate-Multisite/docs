@@ -3,7 +3,7 @@ title: Přechod na nižší tarif
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Přechod na nižší tarif (v2) {#downgrading-a-plan-v2}
+# Přechod na nižší tarif (v2)
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
 

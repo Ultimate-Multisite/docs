@@ -3,7 +3,7 @@ title: GoCardless izmaiņu žurnāls
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless izmaiņu žurnāls {#gocardless-changelog}
+# GoCardless izmaiņu žurnāls
 
 Versija: 1.0.3 - Izlaista 2026-05-05
 * Labots: pamestas gaidošās vietnes tagad tiek notīrītas, kad GoCardless dalība tiek atcelta, kamēr tā ir gaidošā vai aizturētā stāvoklī

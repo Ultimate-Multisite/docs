@@ -3,7 +3,7 @@ title: සර්වොජන් මාරු කිරීමේ වැඩ ප්
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# ස්වෛරී සංක්‍රමණ වැඩ ප්‍රවාහය {#sovereign-migration-workflow}
+# ස්වෛරී සංක්‍රමණ වැඩ ප්‍රවාහය
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 මගින් සම්මත උපසයිට් එකක් ස්වෛරී ටෙනන්ට් යටිතල ව්‍යුහයන් තුළ ගෙන යාමේදී සංක්‍රමණ සත්‍යාපන දොරටු (migration verification gates) එක් කරයි.
 

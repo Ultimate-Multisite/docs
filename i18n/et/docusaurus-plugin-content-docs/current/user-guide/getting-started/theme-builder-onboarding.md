@@ -3,7 +3,7 @@ title: Teema ehitamise juhend
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 lisaboodi juhendatud **Theme Builder onboarding flow**, mis aitab teil luua oma eriti theme'i alguses seadistamise ajal. See asendab vanema Site Builder režiimi rohkem joustavaks, agentiga abitud lähenemiseks.
 

@@ -3,7 +3,7 @@ title: 'Aralin 2: Pagpili ng Iyong Angkop na Larangan'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Aralin 2: Pagpili ng Iyong Niche {#lesson-2-picking-your-niche}
+# Aralin 2: Pagpili ng Iyong Niche
 
 Sa Aralin 1, itinatag natin kung bakit mas mahusay ang niche kaysa generic. Ngayon kailangan mong piliin ang sa iyo. Binibigyan ka ng araling ito ng balangkas para sa paghahanap at pagpapatunay ng isang niche bago ka maglaan ng oras sa pagbuo para dito.
 

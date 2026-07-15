@@ -4,7 +4,7 @@ title: Hereket - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Hereket: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Hereket: wu_domain_mapping_register_filters
 
 Käbir pluginler kartalaşdyrma işjeň bolmazdan öň URL-i saklar ýa-da ýokardaky filtrelerde öz içine alynmadyk başga usulda URL-leri gurar.
 

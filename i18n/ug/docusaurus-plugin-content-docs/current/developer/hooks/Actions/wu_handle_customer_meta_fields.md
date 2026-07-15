@@ -4,7 +4,7 @@ title: ئەمەل - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# ھەرىكەت: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# ھەرىكەت: wu_handle_customer_meta_fields
 
 plugin ئاچقۇچىلار ئېھتىياجلىق بولسا، meta data نى ئوخشىمىغان ئۇسۇللاردا ساقلىشىغا يول قويىدۇ.
 

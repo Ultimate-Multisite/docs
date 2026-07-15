@@ -4,7 +4,7 @@ title: عمل - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# عمل: wu_duplicate_site {#action-wuduplicatesite}
+# عمل: wu_duplicate_site
 
 ڊولپرز کي اجازت ڏئي ٿو ته سائيٽ جي نقل ٿيڻ کان پوءِ ڳنڍجي سگهن.
 

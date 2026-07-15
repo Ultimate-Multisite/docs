@@ -3,7 +3,7 @@ title: Addon işläp taýýarlamaga başlamak
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Goşmaça işläp taýýarlamak {#addon-development}
+# Goşmaça işläp taýýarlamak
 
 ## Goşmaça gurluşy {#addon-structure}
 

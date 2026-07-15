@@ -3,7 +3,7 @@ title: Çokly site sozlamasy wizi
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Kurulum Sihirbazı {#multisite-setup-wizard}
+# Multisite Kurulum Sihirbazı
 
 Ultimate Multisite, standart bir WordPress kurulumunu otomatik olarak bir WordPress Multisite ağına çeviren yerleşik bir sihirbaz içerir. Bu, `wp-config.php` dosyasını manuel olarak düzenleme veya veritabanı komutları çalıştırma ihtiyacını ortadan kaldırır.
 

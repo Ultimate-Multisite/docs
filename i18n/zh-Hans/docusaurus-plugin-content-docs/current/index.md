@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Ultimate Multisite 文档 {#ultimate-multisite-documentation}
+# Ultimate Multisite 文档
 
 欢迎来到 Ultimate Multisite 文档。Ultimate Multisite 将 WordPress Multisite 转变为完整的网站即服务（WaaS）平台。
 

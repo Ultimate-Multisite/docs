@@ -3,7 +3,7 @@ title: Raziskovalni intervju
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Raziskovalni intervju {#discovery-interview}
+# Raziskovalni intervju
 
 **Raziskovalni intervju** je prvi korak v oblikovalskem procesu Theme Builder. Zbere informacije o vašem spletnem mestu, podjetju in oblikovalskih preferencah za ustvarjanje personalizirane teme.
 

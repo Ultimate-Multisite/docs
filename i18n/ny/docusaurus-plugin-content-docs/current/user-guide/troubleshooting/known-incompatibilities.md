@@ -3,7 +3,7 @@ title: Zikomo za Kutsana
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Zomweka ndi zinthu zomwe si yenera kuti m'malo ndi Plugins zina {#known-incompatibilities-with-other-plugins}
+# Zomweka ndi zinthu zomwe si yenera kuti m'malo ndi Plugins zina
 
 Pambuyo pa kukhazikitsa ndikhatuliza Ultimate Multisite, mumveza kukumbutsa mavuto omwe osalira m'malo ndi Plugins zina osalira.
 

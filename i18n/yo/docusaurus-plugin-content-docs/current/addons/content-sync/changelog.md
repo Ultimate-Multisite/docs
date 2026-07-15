@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ Ìyípadà Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Àkọsílẹ̀ Àyípadà Content Sync {#content-sync-changelog}
+# Àkọsílẹ̀ Àyípadà Content Sync
 
 ### Ẹ̀yà 1.1.0 - Tú jáde ní 2025-12-31 {#version-110---released-on-2025-12-31}
 * Tuntun: Àtìlẹ́yìn fún mímú gbogbo irú ìfìwéránṣẹ́ bá ara wọn mu (àwọn ìfìwéránṣẹ́, àwọn ojúewé, àwọn irú ìfìwéránṣẹ́ àkànṣe)

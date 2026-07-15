@@ -3,7 +3,7 @@ title: Tsoom qab tsoom ntawv
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# མཐུན་རིམ་དཔྱད་བརྟག་ (Dashboard Overview) {#dashboard-overview}
+# མཐུན་རིམ་དཔྱད་བརྟག་ (Dashboard Overview)
 
 Ultimate Multisite ལུ་ **Ultimate Multisite** ເມནུ་འོག་ལས་ **Dashboard** གཅིག་ཁར་ཡོད་པ་མ་ཚད་ Network Dashboard ལ་ widget ཚོ་ཡང་བཞག་ཆོག. དཔྱད་རྟག་འདི་ནང་ ཁྱེད་ཀྱིས་གཉིས་ཀ་ལས་ ဘာတွေເຫັນཚུགས་པའི་སྐོར་བཤད་ཡོད་པ་ཨིན།
 

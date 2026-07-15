@@ -3,7 +3,7 @@ title: Theme Builder Onboarding Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
+# Theme Builder Onboarding Flow
 
 Superdav AI Agent v1.12.0 ਇੱਕ ਗਾਈਡਡ **Theme Builder onboarding flow** ਪੇਸ਼ ਕਰਦਾ ਹੈ ਜੋ ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਸ਼ੁਰੂਆਤੀ ਸੈਟਅਪ ਦੌਰਾਨ ਇੱਕ ਕਸਟਮ ਬਲਾਕ تھیਮ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਇਹ ਪੁਰਾਣੇ Site Builder mode ਦੀ ਥਾਂ ਇੱਕ ਵਧੇਰੇ ਲਚਕੀਲੇ, agent-ਸਹਾਇਤਾ ਵਾਲੇ ਪਹੁੰਚ ਨਾਲ ਕੰਮ ਕਰਦਾ ਹੈ।
 

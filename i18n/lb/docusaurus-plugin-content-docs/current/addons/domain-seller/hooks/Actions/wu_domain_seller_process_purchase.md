@@ -4,7 +4,7 @@ title: Aktioun - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Aktioun: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Aktioun: wu_domain_seller_process_purchase
 
 Gëtt ausgeléist, wann en Domain-Kaf no der Ofschloss vum Checkout verschafft gëtt.
 

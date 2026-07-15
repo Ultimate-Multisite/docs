@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# አልቲሜት መልቲሳይት Addons {#ultimate-multisite-addons}
+# አልቲሜት መልቲሳይት Addons
 
 Addons የUltimate Multisiteን አቅም በተጨማሪ ባህሪያት እና ውህደቶች ያሰፋሉ። አብዛኛዎቹ Addons ክፍያ የሚጠይቁ ሲሆን ከ[ultimatemultisite.com](https://ultimatemultisite.com) ሊገዙ ይችላሉ።
 

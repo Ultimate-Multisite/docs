@@ -4,7 +4,7 @@ title: 필터 - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# 필터: wu_apply_signup_fee {#filter-wuapplysignupfee}
+# 필터: wu_apply_signup_fee
 
 가입 수수료를 적용할지 여부를 필터링합니다.
 

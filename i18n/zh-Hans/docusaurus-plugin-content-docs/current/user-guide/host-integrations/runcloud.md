@@ -3,7 +3,7 @@ title: RunCloud 集成
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud 集成 {#runcloud-integration}
+# RunCloud 集成
 
 ## 概述 {#overview}
 RunCloud 是一个基于云的服务器管理平台，允许您轻松在自己的云服务器上部署和管理 Web 应用程序。此集成实现了 Ultimate Multisite 与 RunCloud 之间的自动域名同步和 SSL 证书管理。

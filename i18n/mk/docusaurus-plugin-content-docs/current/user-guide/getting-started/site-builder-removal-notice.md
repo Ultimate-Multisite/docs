@@ -3,7 +3,7 @@ title: Уведомление за отстранување на режимот 
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Забелешка за прекирање на режим Site Builder {#site-builder-mode-removal-notice}
+# Забелешка за прекирање на режим Site Builder
 
 **Редот Site Builder е отстранет во Superdav AI Agent v1.12.0.** Ако сте користиле Site Builder режим, треба да мигрирате кон **Setup Assistant agent** за креирање теми и поставување на сайтови.
 

@@ -3,7 +3,7 @@ title: Yenza Imenyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Yila iMenyu {#create-menu}
+# Yila iMenyu
 
 Isakhono se-**Yila iMenyu** siyila iimenyu zokukhangela ze-WordPress ngenkxaso yeeleyibhile zokukhangela ezahlukileyo ezingafaniyo nezihloko zamaphepha.
 

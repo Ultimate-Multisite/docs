@@ -3,7 +3,7 @@ title: Iyakacin bayyana
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# دسترسی قابلیت‌ها (Ability Visibility) {#ability-visibility}
+# دسترسی قابلیت‌ها (Ability Visibility)
 
 Superdav AI Agent v1.12.0 شمول **دسترسی قابلیت‌ها** را معرفی می‌کند که کنترل می‌کنند کدام سطوح (surfaces) هر قابلیت را نمایش می‌دهند. این به مدیران اجازه می‌دهد تنظیمات دقیق کنند که چه قابلیت‌های ایجنت از طریق REST API، سرورهای MCP، ادغام‌های WooCommerce و سایر رابط‌ها در دسترس هستند.
 

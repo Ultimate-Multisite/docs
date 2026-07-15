@@ -4,7 +4,7 @@ title: مرشح - wu_independent_billing_cycle_product_types
 sidebar_label: wu_independent_billing_cycle_product_types
 _i18n_hash: 2b9bd3b68a53424272c1c93c6bdc3ef5
 ---
-# عامل التصفية: wu_independent_billing_cycle_product_types {#filter-wuindependentbillingcycleproducttypes}
+# عامل التصفية: wu_independent_billing_cycle_product_types
 
 تصفية أنواع المنتجات التي لها دورات فواتير مستقلة.
 

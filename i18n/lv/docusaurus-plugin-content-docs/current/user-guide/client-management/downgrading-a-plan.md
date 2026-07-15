@@ -3,7 +3,7 @@ title: Plāna samazināšana
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plāna atkarīšana (v2) {#downgrading-a-plan-v2}
+# Plāna atkarīšana (v2)
 
 _**SVITUMA ATMIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 

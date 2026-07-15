@@ -3,7 +3,7 @@ title: گەڕان لە ئینتەرنێت
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# جستجوی اینترنت {#internet-search}
+# جستجوی اینترنت
 
 Gratis AI Agent v1.5.0 یک قابلیت **جستجوی اینترنت (Internet Search)** اضافه کرده که به دستیار هوش مصنوعی اجازه می‌دهد در طول گفتگو اطلاعات به‌روز از وب بازیابی کند. این قابلیت توسط [Brave Search API](https://brave.com/search/api/) یا [Tavily API](https://tavily.com/) پشتیبانی می‌شود.
 

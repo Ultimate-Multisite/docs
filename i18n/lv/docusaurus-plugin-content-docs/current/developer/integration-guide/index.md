@@ -3,7 +3,7 @@ title: Integrācijas ceļvedis
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrācijas ceļvedis {#integration-guide}
+# Integrācijas ceļvedis
 
 Šis ceļvedis aptver biežākos integrācijas modeļus ar Ultimate Multisite, tostarp savienošanu ar ārējiem pakalpojumiem, pielāgotu maksājumu vārteju izveidi un webhook apstrādi.
 

@@ -3,7 +3,7 @@ title: Pregled zaslona
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pregled rasporeda (Dashboard Overview) {#dashboard-overview}
+# Pregled rasporeda (Dashboard Overview)
 
 Ultimate Multisite ima poseban **Dashboard** pod menijem Ultimate Multisite, a također dodaje widgetove na Network Dashboardu. Ovaj članak pokriva što ćete vidjeti u oba mjesta.
 

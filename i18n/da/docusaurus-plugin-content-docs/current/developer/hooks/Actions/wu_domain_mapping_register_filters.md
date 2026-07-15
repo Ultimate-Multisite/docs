@@ -4,7 +4,7 @@ title: Handling - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Handling: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Handling: wu_domain_mapping_register_filters
 
 Nogle plugins gemmer URL'en, før mappingen var aktiv, eller bygger URL'er på en anden måde, som ikke er inkluderet i filtrene ovenfor.
 

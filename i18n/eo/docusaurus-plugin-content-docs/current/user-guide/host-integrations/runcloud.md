@@ -3,7 +3,7 @@ title: Integriteco RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integrazione {#runcloud-integration}
+# RunCloud Integrazione
 
 ## Aŭvizio (Overview) {#overview}
 RunCloud estas cloud-bazita server-menĝa platformo, kiu permesas al vi facile deplopi kaj administra web-aplikojn sur viaj propraj cloud-serveroj. Ĉi tiu integriĝo permesas aŭtomatan domeno-sinkron kaj SSL-sertifikato-administrigon inter Ultimate Multisite kaj RunCloud.

@@ -3,7 +3,7 @@ title: Znalosti Theme Buildera
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Znalosti Téma Builderu: Štruktúrovanie a Aktivácia Blokových Tém {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Znalosti Téma Builderu: Štruktúrovanie a Aktivácia Blokových Tém
 
 Superdav AI Agent v1.12.0 predstavuje dve silné schopnosti, ktoré vám umožňujú generovať a nasadť prispôsobené blokové témy priamo z chatu.
 

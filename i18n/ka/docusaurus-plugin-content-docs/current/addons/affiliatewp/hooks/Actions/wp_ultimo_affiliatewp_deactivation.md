@@ -4,7 +4,7 @@ title: მოქმედება - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# ქმედება: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# ქმედება: wp_ultimo_affiliatewp_deactivation
 
 მიეცით plugin-ის სხვა ნაწილებს საშუალება, დეაქტივაციისთვის თავიანთი რუტინები მიაბან
 

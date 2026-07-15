@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# Filter: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# Filter: wu_checkout_field_types
 
 പുതിയ ഫീൽഡ് തരങ്ങൾ (field types) ചേർക്കുന്നതിനുള്ള ഞങ്ങളുടെ എപിഐകൾ (APIs) ഇവിടെയാണ് ബന്ധിപ്പിക്കുന്നത്.
 

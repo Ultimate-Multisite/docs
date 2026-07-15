@@ -4,7 +4,7 @@ title: Hidlydd - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Hidlydd: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Hidlydd: wu_checkout_step_validation_submittable_field_types
 
 Caniatáu i ddatblygwyr osgoi’r gwiriad os yw maes yn awto-gyflwynadwy.
 

@@ -3,7 +3,7 @@ title: Inkqubo yokuqalisa ye-Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Inkqubo Yokungeniswa ye-Theme Builder {#theme-builder-onboarding-flow}
+# Inkqubo Yokungeniswa ye-Theme Builder
 
 Superdav AI Agent v1.12.0 izisa inkqubo ekhokelwayo **yokungeniswa ye-Theme Builder** ekunceda wenze umxholo weebhloko olungiselelwe wena ngexesha loseto lwakho lokuqala. Oku kuthatha indawo yemowudi endala ye-Site Builder ngendlela ebhetyebhetye ngakumbi, encediswa yi-agent.
 

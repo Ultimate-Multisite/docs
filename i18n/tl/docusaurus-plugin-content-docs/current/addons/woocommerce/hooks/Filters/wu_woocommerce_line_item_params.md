@@ -4,7 +4,7 @@ title: Salain - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Filter: wu_woocommerce_line_item_params
 
 I-filter ang mga parameter na ginagamit upang gumawa ng mga line item sa WooCommerce Cart, bago i-redirect ang customer sa WooCommerce checkout.
 

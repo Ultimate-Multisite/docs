@@ -3,7 +3,7 @@ title: جداسازی چند مستأجری
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# جداسازی چند مستأجری (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# جداسازی چند مستأجری (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 از جداسازی پایگاه داده و فایل سیستم مخصوص هر زیرمجموعه سایت برای مستأجران حاکمیتی پشتیبانی می‌کند. این قابلیت باعث می‌شود داده‌های مستأجرها از هم جدا بمانند در حالی که امکان فراهم کردن منابع شبکه، صورت‌حساب و مدیریت حفظ می‌شود.
 

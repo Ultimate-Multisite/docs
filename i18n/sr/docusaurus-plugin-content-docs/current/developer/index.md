@@ -3,7 +3,7 @@ title: Документација за програмере
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Документација за програмере {#developer-documentation}
+# Документација за програмере
 
 Овај водич пружа програмерима све што је потребно за интеграцију са Ultimate Multisite, његово проширење или развој додатака за њега. Ultimate Multisite претвара WordPress Multisite мрежу у Website-as-a-Service (WaaS) платформу.
 

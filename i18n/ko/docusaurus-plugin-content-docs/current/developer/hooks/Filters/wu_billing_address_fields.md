@@ -4,7 +4,7 @@ title: 필터 - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# 필터: wu_billing_address_fields {#filter-wubillingaddressfields}
+# 필터: wu_billing_address_fields
 
 플러그인 개발자가 청구 주소 필드를 필터링할 수 있도록 허용합니다.
 

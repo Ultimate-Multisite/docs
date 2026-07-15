@@ -3,7 +3,7 @@ title: 'Leksjon 11: Finne kunder'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leksjon 11: Finne kunder {#lesson-11-finding-customers}
+# Leksjon 11: Finne kunder
 
 En flott plattform uten kunder er bare en hobby. Denne leksjonen handler om hvordan du skaffer kunder i en spesifikk nisje – strategier som fungerer spesielt fordi du fokuserer på én bransje.
 

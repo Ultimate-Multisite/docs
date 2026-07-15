@@ -3,7 +3,7 @@ title: 'Isifundo 9: Ukubeka amaxabiso ukuze kufumaneke inzuzo'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Isifundo 9: Amaxabiso eNzuzo {#lesson-9-pricing-for-profit}
+# Isifundo 9: Amaxabiso eNzuzo
 
 Kwisifundo 5 sabeka amaxabiso okuqala ezicwangciso ze-FitSite. Ngoku siphucula isicwangciso samaxabiso ngeendlela ezonyusa ingeniso, zikhuthaze ukunyuselwa kwisicwangciso esiphezulu, kwaye zinciphise ukuyeka kwabathengi.
 

@@ -3,7 +3,7 @@ title: Lohatenin’ny Fikarohana Domena
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Fikarohana Domain amin'ny Header {#header-domain-search}
+# Fikarohana Domain amin'ny Header
 
 Ampiasao ity fanamboarana ity rehefa mila endrika kely ao amin'ny header ianao izay manomboka fikarohana domain, avy eo mamela ny mpanjifa hisafidy amin'ireo domain misy ao anatin'ny fandoavana Ultimate Multisite.
 

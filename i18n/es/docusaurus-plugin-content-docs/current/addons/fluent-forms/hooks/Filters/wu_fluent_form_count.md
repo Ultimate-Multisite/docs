@@ -4,7 +4,7 @@ title: Filtro - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filtro: wu_fluent_form_count {#filter-wufluentformcount}
+# Filtro: wu_fluent_form_count
 
 Permitir a los desarrolladores de plugins cambiar el total del recuento de formularios
 

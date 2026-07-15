@@ -3,7 +3,7 @@ title: Còmhlaid an Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration {#cloudflare-integration}
+# Cloudflare Integration
 
 ## Aims (Overview) {#overview}
 Cloudflare is a leading content delivery network (CDN) agus curtha leat a thabhairt seachainn agus a chothromadh fáil ar na wailis. Is eolais seo a bheith ag tairgseánna mheánach ar an t-amachadh domáin beò (subdomain multisite) a bheith ag Ultimate Multisite agus Cloudflare, go sònraichte.

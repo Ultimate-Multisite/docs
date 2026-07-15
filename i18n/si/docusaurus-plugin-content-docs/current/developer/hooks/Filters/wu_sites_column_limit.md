@@ -4,7 +4,7 @@ title: පෙරහන - wu_sites_column_limit
 sidebar_label: wu_sites_column_limit
 _i18n_hash: aac04b14ed164bc146ca0ee05c0e28bd
 ---
-# පෙරහන: wu_sites_column_limit {#filter-wusitescolumnlimit}
+# පෙරහන: wu_sites_column_limit
 
 ජාලය තුළ get pluginssites සඳහා අගය වෙනස් කිරීමට පෙරහන.
 

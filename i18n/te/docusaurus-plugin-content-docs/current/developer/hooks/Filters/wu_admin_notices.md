@@ -4,7 +4,7 @@ title: ఫిల్టర్ - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices {#filter-wuadminnotices}
+# Filter: wu_admin_notices
 
 Ultimate Multisite ద్వారా జోడించబడిన అడ్మిన్ నోటిస్‌లను (admin notices) ఫిల్టర్ చేయడానికి డెవలపర్‌లకు ఇది అనుమతిస్తుంది.
 

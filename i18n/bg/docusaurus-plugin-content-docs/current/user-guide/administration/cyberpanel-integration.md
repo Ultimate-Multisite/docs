@@ -3,7 +3,7 @@ title: Интеграция с CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Интеграция с CyberPanel {#cyberpanel-integration}
+# Интеграция с CyberPanel
 
 Това ръководство обяснява как да конфигурирате интеграцията Ultimate Multisite CyberPanel, така че мапираните домейни в вашата мрежа автоматично да се добавят (и премахват) като виртуални хостове в CyberPanel, с опционално автоматично предоставяне на SSL сертификати чрез Let's Encrypt.
 

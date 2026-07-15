@@ -3,7 +3,7 @@ title: Dışa Aktarma ve İçe Aktarma
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Dışa Aktarma ve İçe Aktarma {#export--import}
+# Dışa Aktarma ve İçe Aktarma
 
 Ultimate Multisite 2.9.0, **Araçlar > Dışa Aktarma ve İçe Aktarma** altında tek bir site için **Dışa Aktarma ve İçe Aktarma** aracı ekler. Bu aracı, bir WordPress sitesini ZIP dosyası olarak paketlemeniz, bu ZIP dosyasını geri yüklemeniz veya bir siteyi uyumlu Ultimate Multisite ve tek site WordPress kurulumları arasında taşımanız gerektiğinde kullanın.
 

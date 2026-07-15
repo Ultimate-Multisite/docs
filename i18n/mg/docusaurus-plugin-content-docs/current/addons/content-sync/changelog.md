@@ -3,7 +3,7 @@ title: Tantaran'ny fanovana ny fampifanarahana votoaty
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog Content Sync {#content-sync-changelog}
+# Changelog Content Sync
 
 ### Version 1.1.0 - Navoaka tamin'ny 2025-12-31 {#version-110---released-on-2025-12-31}
 * Vaovao: Fanohanana ny fampifanarahana ny karazana lahatsoratra rehetra (lahatsoratra, pejy, karazana lahatsoratra namboarina)

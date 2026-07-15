@@ -3,7 +3,7 @@ title: Suunnittelujärjestelmän esteettinen taito
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Suunnittelujärjestelmän esteettinen taito {#design-system-aesthetics-skill}
+# Suunnittelujärjestelmän esteettinen taito
 
 **Suunnittelujärjestelmän esteettinen taito** on ohjattu lähestymistapa sivustosi visuaalisen identiteetin hienosäätöön. Se auttaa sinua tekemään johdonmukaisia päätöksiä typografioista, väreistä, välilyönneistä ja liikeskaaloista (motion tokens), jotka määrittelevät suunnittelujärjestelmääsi.
 

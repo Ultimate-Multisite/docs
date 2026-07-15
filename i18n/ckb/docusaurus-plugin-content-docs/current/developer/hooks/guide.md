@@ -3,7 +3,7 @@ title: ڕێنمایی بەکارهێنانی Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# ڕێبەری بەکارهێنانی Hooks {#hooks-usage-guide}
+# ڕێبەری بەکارهێنانی Hooks
 
 Ultimate Multisite زیاتر لە 200+ action hooks و 280+ filter hooks دابین دەکات. ئەم پەڕەیە باسترین hooks ـە بەکارهاتووەکان بە نموونەی پراکتیکی دەگرێتەوە. بۆ سەرچاوەیەکی تەواوی خۆکار دروستکراو، پەڕەکانی دیکەی ئەم بەشە بگەڕێ.
 

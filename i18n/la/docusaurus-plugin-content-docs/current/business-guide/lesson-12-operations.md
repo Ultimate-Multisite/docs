@@ -3,7 +3,7 @@ title: 'Lectio 12: Negotium administrare'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lectio 12: Negotium Gerere {#lesson-12-running-the-business}
+# Lectio 12: Negotium Gerere
 
 Suggestum non est propositum quod perficis -- est negotium quod geris. Haec lectio operationes cotidianas administrandi FitSite tractat: auxilium, rationes solvendi, sustentationem, et clientes laetos servandos.
 

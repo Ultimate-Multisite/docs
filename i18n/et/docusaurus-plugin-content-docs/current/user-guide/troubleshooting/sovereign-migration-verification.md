@@ -3,7 +3,7 @@ title: Võimendliku migratsiooni kinnitamine
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migratsiooni Kontrollimine {#sovereign-migration-verification}
+# Sovereign Migratsiooni Kontrollimine
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 sisaldab WP-CLI kontrolli käskeid suvereensete leasute migratsioonide jaoks. Kasutage neid, kui leasute migratsioon, SSO külastamine või eraldatud install ei käitu ootud tasemel.
 

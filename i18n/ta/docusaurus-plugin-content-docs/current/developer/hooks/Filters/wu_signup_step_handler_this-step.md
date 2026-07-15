@@ -4,7 +4,7 @@ title: 'வடிகட்டி - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# Filter: wu_signup_step_handler_\{$this->step\} {#filter-wusignupstephandlerthis-step}
+# Filter: wu_signup_step_handler_\{$this->step\}
 
 ஹேண்ட்லர் செயல்பாட்டை மாற்றியமைக்க இது அனுமதிக்கிறது.
 

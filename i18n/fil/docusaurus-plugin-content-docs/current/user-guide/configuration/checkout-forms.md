@@ -3,7 +3,7 @@ title: Mga Form sa Checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Mga Form ng Pag-checkout {#checkout-forms}
+# Mga Form ng Pag-checkout
 
 Ang Mga Form ng Pag-checkout ay isang madali at flexible na paraan para mag-eksperimento sa iba't ibang lapit kapag sinusubukang makakuha ng mga bagong customer.
 

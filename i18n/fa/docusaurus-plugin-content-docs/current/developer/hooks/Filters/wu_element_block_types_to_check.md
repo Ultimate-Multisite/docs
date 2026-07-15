@@ -4,7 +4,7 @@ title: فیلتر - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# فیلتر: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# فیلتر: wu_element_block_types_to_check
 
 ممکن است بعداً نیاز باشد بلاک‌های بیشتری اضافه کنیم.
 

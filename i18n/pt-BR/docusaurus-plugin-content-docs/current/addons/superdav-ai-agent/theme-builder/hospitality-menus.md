@@ -3,7 +3,7 @@ title: Cardápios de Hospitalidade
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menus de Hospitalidade {#hospitality-menus}
+# Menus de Hospitalidade
 
 O recurso **Menus de Hospitalidade** permite que o Theme Builder gere e incorpore páginas de menu de alimentos e bebidas estruturadas diretamente no seu site WordPress.
 

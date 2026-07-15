@@ -4,7 +4,7 @@ title: Filtru - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filtru: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filtru: mu_migration/export/user/data
 
 Filtrează setul implicit de date ale utilizatorilor care urmează a fi exportate sau importate.
 

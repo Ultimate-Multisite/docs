@@ -3,7 +3,7 @@ title: Site Specification Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sailaren Kontseilua Jainazioa {#site-specification-skill}
+# Sailaren Kontseilua Jainazioa
 
 **Sailaren kontseilua (Site Specification) jugakundia** da irudiatu, diseinatzeko eta marka-identitatea (brand identity) hartzeko estruktura bat. Horrek **site_brief** memori horretan ematen da, zehalduetan arteko agente-ek erabiltzen dute kontestu-eraketa eta ondo jakinarazten laguntzeko.
 

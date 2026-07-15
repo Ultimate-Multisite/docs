@@ -3,7 +3,7 @@ title: Gemeterde planne-veranderingslogboek
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans-veranderingslog {#metered-plans-changelog}
+# Metered Plans-veranderingslog
 
 Weergawe 1.1.0 - Vrygestel op 2026-05-05
 - Nuut: AI token-fakturering vir multisite-subwebwerwe — spoor AI token-gebruik oor kliëntwebwerwe na en faktureer dit met konfigureerbare per-token-tariewe

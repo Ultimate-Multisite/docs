@@ -4,7 +4,7 @@ title: 'តម្រង - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
+# Filter: wu_\{$this->model\}_meta_pre_save
 
 ច្រោះ meta នៃទិន្នន័យ មុនពេលវាត្រូវបានធ្វើ serialization ដើម្បីរក្សាទុកទៅក្នុងមូលដ្ឋានទិន្នន័យ។
 

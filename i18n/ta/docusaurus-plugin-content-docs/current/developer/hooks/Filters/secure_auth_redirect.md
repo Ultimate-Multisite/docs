@@ -4,7 +4,7 @@ title: வடிப்பான் - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect {#filter-secureauthredirect}
+# Filter: secure_auth_redirect
 
 பாதுகாப்பான அங்கீகார திருப்பிவிடுதலைப் (secure authentication redirect) பயன்படுத்த வேண்டுமா என்பதை இது வடிகட்டுகிறது.
 

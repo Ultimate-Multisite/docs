@@ -4,7 +4,7 @@ title: Чыпка - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Чыпка: wu_billing_address_fields {#filter-wubillingaddressfields}
+# Чыпка: wu_billing_address_fields
 
 Plugin иштеп чыгуучуларына эсептешүү дареги талааларын чыпкалоого уруксат берет.
 

@@ -3,7 +3,7 @@ title: Provider-Aware Prompt Caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Sağlayıcıya Özel Prompt Önbellekleme {#provider-aware-prompt-caching}
+# Sağlayıcıya Özel Prompt Önbellekleme
 
 Superdav AI Agent v1.12.0, farklı LLM sağlayıcıları arasında prompt'ları önbelleğe alarak API maliyetlerini ve gecikmeyi optimize eden **sağlayıcıya özel prompt önbellekleme** özelliğini getiriyor. Her sağlayıcının farklı önbellekleme mekanizmaları ve yapılandırmaları vardır.
 

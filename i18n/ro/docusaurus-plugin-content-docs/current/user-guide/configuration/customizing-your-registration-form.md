@@ -3,7 +3,7 @@ title: Personalizarea formularului dvs. de înregistrare
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalizarea formularului de înregistrare {#customizing-your-registration-form}
+# Personalizarea formularului de înregistrare
 
 Pentru ca rețeaua ta să arate unic față de toate celelalte SaaS construite pe platforma WordPress, Ultimate Multisite îți permite să personalizezi paginile de înregistrare și autentificare cu funcționalitatea noastră **Formulare de checkout**.
 

@@ -4,7 +4,7 @@ title: Azione - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Azione: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Azione: wp_ultimo_vat_deactivation
 
 Permetti ad altre parti del plugin di allegare le loro routine per la disattivazione
 

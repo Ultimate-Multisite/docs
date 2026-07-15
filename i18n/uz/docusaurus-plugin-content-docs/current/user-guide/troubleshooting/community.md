@@ -3,7 +3,7 @@ title: Jamoatchilik
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Jamoatiga Qanday Qo'shilish Kerak? {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Jamoatiga Qanday Qo'shilish Kerak?
 
 Ultimate Multisite Community — bu boshqa Ultimate Multisite foydalanuvchilari bilan bog'lanishingiz va maslahatlaringiz, tajribalaringizni ulashingiz mumkin bo'lgan joy. Ultimate Multisite Community ga kirish uchun https://community.ultimatemultisite.com/home manziliga kiring.
 

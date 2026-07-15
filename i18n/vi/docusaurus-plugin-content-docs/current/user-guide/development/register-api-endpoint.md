@@ -3,7 +3,7 @@ title: Đăng ký API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Điểm cuối API đăng ký Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Điểm cuối API đăng ký Ultimate Multisite
 
 Trong hướng dẫn này, bạn sẽ học cách sử dụng điểm cuối API /register của Ultimate Multisite để tạo toàn bộ quy trình onboarding cho một khách hàng mới trong mạng của bạn và cách thực hiện điều đó với Zapier.
 

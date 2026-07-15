@@ -3,7 +3,7 @@ title: Têketinên guhertinan
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Têguhertin {#changelog}
+# Têguhertin
 
 ## 1.18.0 — Di 2026-06-29 de hat berdan {#1180--released-on-2026-06-29}
 

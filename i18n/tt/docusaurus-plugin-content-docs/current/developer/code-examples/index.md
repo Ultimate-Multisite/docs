@@ -3,7 +3,7 @@ title: Алга киткән код үрнәкләре
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Алга киткән код мисаллары {#advanced-code-examples}
+# Алга киткән код мисаллары
 
 Бу мисаллар Ultimate Multisite белән алга киткән интеграция үрнәкләрен күрсәтә.
 

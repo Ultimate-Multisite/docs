@@ -3,7 +3,7 @@ title: Танзимоти Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Танзимоти Gratis AI Agent {#gratis-ai-agent-settings}
+# Танзимоти Gratis AI Agent
 
 Экрани **Settings → Advanced** дар Gratis AI Agent барои ҳамгироиҳои backend конфигуратсияи сатҳи мудирро фароҳам меорад. Ин саҳифа ирсоли feedback, калидҳои таъминкунандаи ҷустуҷӯ, танзими хидмати идорашавандаи Superdav, идораҳои Google Calendar, танзимоти SMS-и TextBee ва парчамҳои имкониятҳои сатҳи тамоми шабакаро ҳуҷҷатгузорӣ мекунад.
 

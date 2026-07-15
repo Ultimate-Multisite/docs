@@ -3,7 +3,7 @@ title: 'Lezione 1: Perché la nicchia vince'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lezione 1: Perché la Nicchia Vince {#lesson-1-why-niche-wins}
+# Lezione 1: Perché la Nicchia Vince
 
 Prima di toccare qualsiasi software, devi capire perché costruire per un pubblico specifico è la decisione più importante che prenderai.
 

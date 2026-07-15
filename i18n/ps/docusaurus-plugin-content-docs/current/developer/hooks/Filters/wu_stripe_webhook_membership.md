@@ -4,7 +4,7 @@ title: فلټر - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# فلټر: wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# فلټر: wu_stripe_webhook_membership
 
 له دې webhook سره تړلی د غړیتوب ریکارډ فلټر کوي.
 

@@ -4,7 +4,7 @@ title: Filtrs - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filtrs: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Filtrs: wu_is_development_mode
 
 Ļauj plugin izstrādātājiem pievienot papildu testus izstrādes režīmam.
 

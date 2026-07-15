@@ -4,7 +4,7 @@ title: Ketso - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Ketso: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Ketso: wu_domain_seller_complete_registration
 
 E sebetsa ha tefo e fetela boemong bo lokelang ho qala ngodiso ya domain.
 

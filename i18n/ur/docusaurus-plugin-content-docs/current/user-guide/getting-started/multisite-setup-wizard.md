@@ -3,7 +3,7 @@ title: ملٹی سائٹ سیٹ اپ وزرڈ
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# ملٹی سائٹ سیٹ اپ وزرڈ {#multisite-setup-wizard}
+# ملٹی سائٹ سیٹ اپ وزرڈ
 
 Ultimate Multisite میں ایک بلٹ ان وزرڈ شامل ہے جو ایک عام WordPress انسٹالیشن کو خودکار طریقے سے WordPress Multisite نیٹ ورک میں تبدیل کر دیتا ہے۔ اس سے آپ کو `wp-config.php` میں دستی طور پر ترمیم کرنے یا ڈیٹابیس کمانڈز چلانے کی ضرورت نہیں رہتی۔
 

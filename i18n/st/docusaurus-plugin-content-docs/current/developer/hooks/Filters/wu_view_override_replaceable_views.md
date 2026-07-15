@@ -4,7 +4,7 @@ title: Sefe - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# Sefe: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# Sefe: wu_view_override_replaceable_views
 
 E lumella bahlahisi ho eketsa difoldara tse ding lenaneng le ka nkelwang sebaka.
 

@@ -3,7 +3,7 @@ title: Genzura itandukaniro ry’amabara y’urutonde rw’amabara
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Kugenzura Itandukaniro ry'Amabara ya Palette {#validate-palette-contrast}
+# Kugenzura Itandukaniro ry'Amabara ya Palette
 
 Ubushobozi bwa **Validate Palette Contrast** bugenzura amabara abiri abiri muri palette y'igishushanyo cyawe kugira ngo bwemeze ko yubahiriza WCAG (Web Content Accessibility Guidelines) mbere yo kuyashyira kuri theme yawe.
 

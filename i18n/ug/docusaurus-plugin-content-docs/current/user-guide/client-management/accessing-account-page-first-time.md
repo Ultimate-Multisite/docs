@@ -3,7 +3,7 @@ title: Ҳисоб саҳифасига кириш
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# İlk mordan hesabım qanday girilir? {#how-can-i-access-my-account-page-for-the-first-time}
+# İlk mordan hesabım qanday girilir?
 
 Ultimate Multisite'a hoş geldiniz!
 

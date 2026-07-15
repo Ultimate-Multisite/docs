@@ -3,7 +3,7 @@ title: Domain Seller Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Änderungsprotokoll {#domain-seller-changelog}
+# Domain Seller Änderungsprotokoll
 
 Version 1.3.0 - Veröffentlicht am 2026-06-02
 - Neu: Eine network-admin-Warnung hinzugefügt, wenn das HostAfrica-Reseller-Guthaben zu niedrig wird

@@ -3,7 +3,7 @@ title: Tilvísun um getu
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Tilvísun fyrir getu {#abilities-reference}
+# Tilvísun fyrir getu
 
 Geta er grunnaðgerðirnar sem Gratis AI Agent getur kallað fram í WordPress uppsetningunni þinni. Hver geta er skráður PHP klasi sem birtir JSON schema — agentinn les þetta schema við keyrslu til að skilja hvaða breytur eru nauðsynlegar og hverju getan skilar.
 

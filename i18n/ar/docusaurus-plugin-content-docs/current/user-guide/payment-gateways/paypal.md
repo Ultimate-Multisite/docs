@@ -3,7 +3,7 @@ title: إعداد PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# إعداد بوابة PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# إعداد بوابة PayPal (v2)
 
 _**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 

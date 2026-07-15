@@ -3,7 +3,7 @@ title: V1 සිට සංක්‍රමණය කිරීම
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 සිට සංක්‍රමණය කිරීම {#migrating-from-v1}
+# V1 සිට සංක්‍රමණය කිරීම
 
 ## Ultimate Multisite එහි මුල් 1.x අනුවාද මාලාවෙන් 2.x අනුවාද මාලාවට වෙනස් කර ඇත. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

@@ -4,7 +4,7 @@ title: Әрекет - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Әрекет: set_logged_in_cookie {#action-setloggedincookie}
+# Әрекет: set_logged_in_cookie
 
 Жүйеге кірген аутентификация cookie орнатылмас бұрын бірден іске қосылады.
 

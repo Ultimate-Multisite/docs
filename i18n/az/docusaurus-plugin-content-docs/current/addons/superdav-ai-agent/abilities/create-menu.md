@@ -3,7 +3,7 @@ title: Menyu Yarat
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menyu Yaratmaq {#create-menu}
+# Menyu Yaratmaq
 
 **Menyu Yaratmaq** funksionallığı, səhifə başlıqlarından ayrı, fərqli naviqasiya etiketləri dəstəkləyən WordPress naviqasiya menyularının yaradılmasına imkan verir.
 

@@ -3,7 +3,7 @@ title: Վճարումների և հաշվիագրման կառավարում
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ապահովումների և հաշվարկների կառավարում {#managing-payments-and-invoices}
+# Ապահովումների և հաշվարկների կառավարում
 
 ## Իրավարձակման կարգավորումներ (Payment Settings) {#payment-settings}
 

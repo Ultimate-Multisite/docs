@@ -3,7 +3,7 @@ title: 'Leksyon 7: Paghimo Nimo Kining Imo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lesson 7: I-customize aron imo na {#lesson-7-making-it-yours}
+# Lesson 7: I-customize aron imo na
 
 Ang imong mga kustomer dili gayud angay magbati nga naggamit sila og "usa ra ka WordPress plugin." Kinahanglan nilang mabati nga naggamit sila sa FitSite — usa ka platform nga gilaraw alang sa ilang industriya. Kini nga leksyon naghisgot bahin sa branding, white-labeling, ug paghimo sa platform nga morag usa ka produkto mismo.
 

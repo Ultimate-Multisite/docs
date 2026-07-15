@@ -3,7 +3,7 @@ title: Sivuston rakentajan yhteydenottolomakkeet
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Sivuston rakentajan yhteydenottolomakkeet {#site-builder-contact-forms}
+# Sivuston rakentajan yhteydenottolomakkeet
 
 Superdav AI Agent v1.10.0 tuo uuden ominaisuuden, jonka avulla voit luoda yhteydenottolomakkeita suoraan chat-käyttöliittymän kautta Site Builder -agentilla. Tämä mahdollistaa toimivan yhteydenottolomakkeen lisäämisen mille tahansa sivulle ilman, että sinun tarvitsee poistua chatinäkymästä.
 

@@ -3,7 +3,7 @@ title: Utafutaji wa mtandao
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Utafutaji wa Mtandao {#internet-search}
+# Utafutaji wa Mtandao
 
 Gratis AI Agent v1.5.0 ina uwezo wa **Utafutaji wa Mtandao** ambao unaruhusu msaidizi wa AI kupata habari za kisasa kutoka kwenye mtandao wakati wa mazungumzo. Uwezo huu unatokana na [Brave Search API](https://brave.com/search/api/) au [Tavily API](https://tavily.com/).
 

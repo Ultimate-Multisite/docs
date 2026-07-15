@@ -3,7 +3,7 @@ title: Qonaqxanalar Menyuları
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Qonaqi Menüləri {#hospitality-menus}
+# Qonaqi Menüləri
 
 **Qonaqi Menüləri** funksionallığı Theme Builder-ə saytınızda strukturlaşdırılmış yemək və içki menyu səhifələri yaratmağa və yerləşdirməyə imkan verir.
 

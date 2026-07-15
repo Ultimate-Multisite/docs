@@ -3,7 +3,7 @@ title: Awtomatikong Paghahanap at Pagpapalit sa mga Template ng Site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Awtomatikong Search and Replace sa mga Template ng Site (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Awtomatikong Search and Replace sa mga Template ng Site (v2)
 
 _**Kinakailangan ng tutorial na ito ang WP UItimo bersyon 2.x.**_
 

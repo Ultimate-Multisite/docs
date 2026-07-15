@@ -3,7 +3,7 @@ title: د ډش‌بورد پریکړه
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ډش بورد اوورفيو {#dashboard-overview}
+# ډش بورد اوورفيو
 
 Ultimate Multisite د Ultimate Multisite منو کې یو ځانګړی **Dashboard** لري، او دا هم към Network Dashboard ته ویجټیکونه اضافه کوي. دا مقاله په دواړو ځایونو کې څه وګورئ، دا توضیحوي.
 

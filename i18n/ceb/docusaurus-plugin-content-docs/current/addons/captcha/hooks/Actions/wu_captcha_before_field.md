@@ -4,7 +4,7 @@ title: Aksyon - wu_captcha_before_field
 sidebar_label: wu_captcha_before_field
 _i18n_hash: cc5a0e4190ba583d6677451cb3e43234
 ---
-# Aksyon: wu_captcha_before_field {#action-wucaptchabeforefield}
+# Aksyon: wu_captcha_before_field
 
 Mopagana sa dili pa i-render ang captcha field.
 

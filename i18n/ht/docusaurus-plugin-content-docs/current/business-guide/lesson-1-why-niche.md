@@ -3,7 +3,7 @@ title: 'Leson 1: Poukisa nich ranpòte laviktwa'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Leson 1: Poukisa Nich Genyen {#lesson-1-why-niche-wins}
+# Leson 1: Poukisa Nich Genyen
 
 Anvan nou manyen nenpòt lojisyèl, ou bezwen konprann poukisa bati pou yon odyans espesifik se desizyon ki pi enpòtan ou pral pran.
 

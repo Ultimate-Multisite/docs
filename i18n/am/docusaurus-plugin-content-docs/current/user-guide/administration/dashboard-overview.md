@@ -3,7 +3,7 @@ title: ዳሽቦርድ አጠቃላይ እይታ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# የዳሽቦርድ አጠቃላይ እይታ {#dashboard-overview}
+# የዳሽቦርድ አጠቃላይ እይታ
 
 Ultimate Multisite በUltimate Multisite ሜኑ ስር የተለየ **Dashboard** አለው፣ እንዲሁም በNetwork Dashboard ላይ widgets ይጨምራል። ይህ ጽሑፍ በሁለቱም ቦታዎች ምን እንደሚመለከቱ ያብራራል።
 

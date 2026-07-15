@@ -3,7 +3,7 @@ title: Whakahaere Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Te Whakahaere Webhook {#webhook-handling}
+# Te Whakahaere Webhook
 
 Waihangatia he pito mutunga webhook ritenga hei whiwhi takahanga mai i ngā ratonga o waho, hei tukutahi raraunga hoki ki Ultimate Multisite.
 

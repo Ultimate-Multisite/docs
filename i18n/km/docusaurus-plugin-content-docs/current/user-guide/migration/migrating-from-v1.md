@@ -3,7 +3,7 @@ title: ការផ្លាស់ប្តូរពី V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# ការផ្លាស់ប្តូរពី V1 {#migrating-from-v1}
+# ការផ្លាស់ប្តូរពី V1
 
 ## Ultimate Multisite បានផ្លាស់ប្តូរពីជំនាន់នៃការចេញផ្សាយ 1.x ដំបូងរបស់ខ្លួន មកជាជំនាន់ 2.x។ {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

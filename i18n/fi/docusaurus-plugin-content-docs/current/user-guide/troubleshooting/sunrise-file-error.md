@@ -3,7 +3,7 @@ title: Auringonnousu tiedoston virhe
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Virhe WordPress-tiedoston asennuksessa {#error-installing-the-sunrise-file}
+# Virhe WordPress-tiedoston asennuksessa
 
 `sunrise.php`-tiedosto on erityinen tiedosto, jota WordPress etsii käynnistyessään. Jotta WordPress pystyy havaitsemaan `sunrise.php`-tiedoston, se täytyy sijaita **wp-content -kansioon**.
 

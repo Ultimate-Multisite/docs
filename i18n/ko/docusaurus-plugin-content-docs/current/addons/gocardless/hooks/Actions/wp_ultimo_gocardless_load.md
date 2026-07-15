@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Action: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Action: wp_ultimo_gocardless_load
 
 모든 종속 항목이 로드되면 트리거됩니다
 

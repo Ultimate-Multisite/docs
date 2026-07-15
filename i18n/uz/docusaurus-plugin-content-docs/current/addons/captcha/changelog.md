@@ -3,7 +3,7 @@ title: Captcha o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha o‘zgarishlar jurnali {#captcha-changelog}
+# Captcha o‘zgarishlar jurnali
 
 Versiya: 1.5.0 - 2026-05-22 da chiqarilgan
 * Yangi: Qat’iy to‘xtatuvchi tezlik cheklagichi — captcha bilan himoyalangan yuzalardagi har bir GET va POST ni sanaydi (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) va HTTP 429, `Retry-After` header hamda tasodifiy tarpit kutish vaqti (1–5s, qat’iy 15s bilan cheklangan) bilan javob beradi.

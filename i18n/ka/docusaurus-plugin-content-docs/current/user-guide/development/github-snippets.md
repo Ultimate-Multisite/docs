@@ -3,7 +3,7 @@ title: GitHub ნაჭრები
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# როგორ გამოვიყენოთ Ultimate Multisite სნიპეტები ჩვენს GitHub რეპოზიტორიუმზე {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# როგორ გამოვიყენოთ Ultimate Multisite სნიპეტები ჩვენს GitHub რეპოზიტორიუმზე
 
 GitHub რეპოზიტორიუმში არსებობს კოდის ნაჭრები, რომლებიც ხშირად მოითხოვება Ultimate Multisite მომხმარებლებისგან, რომლებსაც სურთ მცირე ფუნქციონალურობების დამატება, მაგალითად, Google Analytics-ის სკრიპტის დამატება რეგისტრაციის გვერდებზე ან მეტა ბოქსის დამალვა ადმინ პანელზე.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# როგორ დავამატოთ სნიპეტი თქვენი თემის functions.php ფაილში. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# როგორ დავამატოთ სნიპეტი თქვენი თემის functions.php ფაილში.
 
   1. შეხვიდით WordPress Network ადმინ პანელში და გადადით Themes > Theme Editor-ზე (გაიხედეთ ქვემოთ მოცემულ სურათზე).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- სურათი ხელმისაწვდომია: WordPress Theme Editor-ის ჩვენება functions.php ფაილის რედაქტირების შესახებ -->
 
-# როგორ შევქმნათ Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# როგორ შევქმნათ Must-Use Plugins (mu-plugins)
 
 WordPress-ს აქვს ფუნქცია, რომელიც საშუალებას გაძლევთ დატვირთოთ მორგებული ფუნქციონალი, რომელსაც "Must-Use Plugins" ან მოკლედ "mu-plugins" ეწოდება.
 

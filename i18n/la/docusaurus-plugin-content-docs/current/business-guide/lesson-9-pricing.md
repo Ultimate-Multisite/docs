@@ -3,7 +3,7 @@ title: 'Lectio 9: Pretium ad lucrum constituendum'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lectio 9: Pretium ad Lucrum {#lesson-9-pricing-for-profit}
+# Lectio 9: Pretium ad Lucrum
 
 In Lectione 5 pretia initialia pro rationibus FitSite constituimus. Nunc rationem pretiorum excolimus artibus quae reditus augent, promotiones ad rationes superiores incitant, et discessum clientium minuunt.
 

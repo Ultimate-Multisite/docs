@@ -3,7 +3,7 @@ title: CyberPanel integration
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration {#cyberpanel-integration}
+# CyberPanel Integration
 
 Denne guide forklarer, hvordan du opsætter Ultimate Multisite CyberPanel integrationen, så de kortede domæner i dit netværk automatisk tilføjes (og fjernes) som virtuelle hostingsservere i CyberPanel, med valgfri automatisk SSL-provisionering via Let's Encrypt.
 

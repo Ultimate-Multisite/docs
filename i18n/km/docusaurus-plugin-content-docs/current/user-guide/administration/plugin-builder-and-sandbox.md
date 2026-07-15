@@ -3,7 +3,7 @@ title: កម្មវិធីបង្កើត និងប្រអប់ស
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 ណែនាំ **Plugin Builder & Sandbox System** ដែលអនុញ្ញាតឱ្យជំនួយការ AI បង្កើត បើកដំណើរការ និងគ្រប់គ្រង WordPress plugins នៅលើបណ្តាញរបស់អ្នក — ទាំងអស់នេះតាមរយៈបរិយាកាស sandbox ដែលមានសុវត្ថិភាព និងដាច់ដោយឡែក។
 

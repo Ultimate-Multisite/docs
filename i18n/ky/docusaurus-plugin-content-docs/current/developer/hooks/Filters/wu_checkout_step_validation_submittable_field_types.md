@@ -4,7 +4,7 @@ title: Фильтр - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 Иштеп чыгуучуларга талаа автоматтык түрдө жөнөтүлө турган болсо, текшерүүнү өткөрүп жиберүүгө мүмкүндүк берет.
 

@@ -4,7 +4,7 @@ title: පෙරහන - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# පෙරහන: wu_plan_product_types {#filter-wuplanproducttypes}
+# පෙරහන: wu_plan_product_types
 
 සැලසුම් ලෙස සැලකිය යුතු product වර්ග පෙරහන් කරන්න.
 

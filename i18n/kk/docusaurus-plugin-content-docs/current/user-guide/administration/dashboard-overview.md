@@ -3,7 +3,7 @@ title: Панельді жалпы көрінісі
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Панельтураның жалпы көрінісі (Dashboard Overview) {#dashboard-overview}
+# Панельтураның жалпы көрінісі (Dashboard Overview)
 
 Ultimate Multisite менюі астында арнайы **Dashboard** бар және оны Сеть Басқарудағы (Network Dashboard) виджеттерімен де толықтырады. Бұл мақалада екі жерде не көрсететініңізді қамтимыз.
 

@@ -4,7 +4,7 @@ title: Omume - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Omume: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Omume: wu_captcha_after_field
 
 Na-arụ ọrụ mgbe egosipụtara captcha field.
 

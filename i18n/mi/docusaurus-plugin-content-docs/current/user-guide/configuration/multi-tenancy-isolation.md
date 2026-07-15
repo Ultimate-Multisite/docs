@@ -3,7 +3,7 @@ title: Whakawātea Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Whakamahi Whakawāhi (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Whakamahi Whakawāhi (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 e hoki i te whakatika database me te filesystem mō ngā tenant e tino tangata (sovereign tenants). Ko tēnei e pēnei i te whaiaro ai i ngā data o te tenant i roto i te whero, i roto i te whaiaro ana i te whakamahi whānui o te wāhi wāhi (network-level provisioning), te whero, me te whakahaere.
 

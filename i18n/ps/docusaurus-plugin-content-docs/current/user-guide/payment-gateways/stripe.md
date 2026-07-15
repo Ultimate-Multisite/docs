@@ -3,7 +3,7 @@ title: Stripe تنظیمول
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# ستراپ گیتوی تنظیم کردن (v2) {#setting-up-the-stripe-gateway-v2}
+# ستراپ گیتوی تنظیم کردن (v2)
 
 _**مهم نکته: این مقاله Ultimate Multisite نسخه ۲.x را می شناسد.**_
 

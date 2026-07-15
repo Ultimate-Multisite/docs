@@ -3,7 +3,7 @@ title: Content Sync Änderungsprotokoll
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Inhaltssynchronisierung Änderungsprotokoll {#content-sync-changelog}
+# Inhaltssynchronisierung Änderungsprotokoll
 
 ### Version 1.1.0 - Veröffentlicht am 2025-12-31 {#version-110---released-on-2025-12-31}
 * Neu: Unterstützung für die Synchronisierung aller Beitragstypen (Beiträge, Seiten, benutzerdefinierte Beitragstypen)

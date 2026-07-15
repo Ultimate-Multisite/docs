@@ -3,7 +3,7 @@ title: Käsitsi maksete seadistamine
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Käsitsi maksete seadistamine (v2) {#setting-up-manual-payments-v2}
+# Käsitsi maksete seadistamine (v2)
 
 _**TÄHTIS MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 

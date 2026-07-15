@@ -4,7 +4,7 @@ title: Aiki - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Aiki: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Aiki: wp_ultimo_gocardless_load
 
 Yana farawa lokacin da aka loda dukkan abubuwan dogaro
 

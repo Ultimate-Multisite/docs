@@ -3,7 +3,7 @@ title: බහු-ජාල වෙනස්කම් සටහන
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network වෙනස්කම් සටහන {#multi-network-changelog}
+# Multi-Network වෙනස්කම් සටහන
 
 ### 1.3.0 {#130}
 * නව: ජාල අච්චු පෙරදසුන්කරු — මිලදී ගැනීමට පෙර සජීවී පැනලයක් සමඟ ජාල අච්චු පිරික්සා පෙරදසුන් බලන්න.

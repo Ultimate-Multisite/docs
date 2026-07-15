@@ -3,7 +3,7 @@ title: Nhật ký thay đổi Bộ kết nối AI Ultimate dành cho các Điể
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Nhật ký thay đổi của Ultimate AI Connector cho các Điểm cuối Tương thích {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Nhật ký thay đổi của Ultimate AI Connector cho các Điểm cuối Tương thích
 
 ## Phiên bản 2.0.0 — Phát hành vào 2026-04-24 {#version-200--released-on-2026-04-24}
 

@@ -4,7 +4,7 @@ title: Bộ lọc - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Bộ lọc: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Bộ lọc: wu_stripe_checkout_subscription_data
 
 Bộ lọc này dùng để xử lý dữ liệu đăng ký (subscription) của Stripe. Bạn có thể ghi đè (override) các giá trị `success_url` hoặc `cancel_url`.
 

@@ -3,7 +3,7 @@ title: Zhvillimi i portës së personalizuar
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Zhvillimi i portave të personalizuara {#custom-gateway-development}
+# Zhvillimi i portave të personalizuara
 
 Mund të krijoni porta pagesash të personalizuara duke zgjeruar klasën `Base_Gateway`.
 

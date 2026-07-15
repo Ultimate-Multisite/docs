@@ -3,7 +3,7 @@ title: ลงทะเบียน API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API endpoint /register ของ Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# API endpoint /register ของ Ultimate Multisite
 
 ในบทแนะนำนี้ คุณจะได้เรียนรู้วิธีใช้ API endpoint /register ของ Ultimate Multisite เพื่อสร้างกระบวนการ onboarding ทั้งหมดสำหรับลูกค้าใหม่ในเครือข่ายของคุณ รวมถึงวิธีการทำผ่าน Zapier
 

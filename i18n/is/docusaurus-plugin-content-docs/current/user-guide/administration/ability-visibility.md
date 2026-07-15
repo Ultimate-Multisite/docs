@@ -3,7 +3,7 @@ title: Viðskiptaviliðskiljan
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Viðskiptaþátturviðsjá (Ability Visibility) {#ability-visibility}
+# Viðskiptaþátturviðsjá (Ability Visibility)
 
 Superdav AI Agent v1.12.0 hefur innført stjórnargildi **Viðskiptaþátturviðsjá** (Ability Visibility), sem stýra því hvar hverjar viðskiptaþættir eru sýndar. Þetta leyfir stjórnmenjum að finna nákvæm fyrirheimdu á því hvernig agenti geta verið til við mörgum yfirflutningum eins og REST API, MCP serverum, WooCommerce samstarfshópum og övrum myndum.
 

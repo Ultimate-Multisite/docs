@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Action: wu_handle_user_meta_fields
 
 ပလပ်အင် ဖန်တီးသူများအနေနဲ့ လိုအပ်ရင် အသုံးပြုသူရဲ့ meta data တွေကို အမျိုးမျိုး သိမ်းဆည်းနိုင်ဖို့ ခွင့်ပြုပါတယ်။
 

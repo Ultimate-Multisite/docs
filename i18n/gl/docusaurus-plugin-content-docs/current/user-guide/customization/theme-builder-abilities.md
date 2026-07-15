@@ -3,7 +3,7 @@ title: Capacidades do Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacidades do Theme Builder: Scaffold e Activar Temas de Bloco {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Capacidades do Theme Builder: Scaffold e Activar Temas de Bloco
 
 O Superdav AI Agent v1.12.0 introduce duas capacidades potentes que te permitem gerar e implantar themes de bloco personalizados directamente a partir da interface de chat.
 

@@ -3,7 +3,7 @@ title: CyberPanel Integráció
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integráció {#cyberpanel-integration}
+# CyberPanel Integráció
 
 Ez az útmutató elmagyarázza, hogyan kell beállítani az Ultimate Multisite CyberPanel integrációját, hogy a hálózatában mappolt domainek automatikusan hozzáadódjanak (és eltávolíthassák) virtuális hostként a CyberPanelben, opcionális Let's Encrypt auto-SSL biztosítással.
 

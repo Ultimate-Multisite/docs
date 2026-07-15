@@ -4,7 +4,7 @@ title: فلٽر - wu_maybe_redirect_to_admin_panel_exclusion_list
 sidebar_label: wu_maybe_redirect_to_admin_panel_exclusion_list
 _i18n_hash: 755b22dad504c5a766fea09628749060
 ---
-# فلٽر: wu_maybe_redirect_to_admin_panel_exclusion_list {#filter-wumayberedirecttoadminpanelexclusionlist}
+# فلٽر: wu_maybe_redirect_to_admin_panel_exclusion_list
 
 پيرا ميٽرن جي هڪ استثنائي فهرست ٺاهيو، جيڪي خودڪار ريڊائريڪٽ کي روڪين ٿا.
 

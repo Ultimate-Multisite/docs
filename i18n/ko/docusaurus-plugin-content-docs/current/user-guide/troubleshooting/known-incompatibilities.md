@@ -3,7 +3,7 @@ title: 알려진 호환성 문제
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# 다른 플러그인과의 알려진 호환성 문제 {#known-incompatibilities-with-other-plugins}
+# 다른 플러그인과의 알려진 호환성 문제
 
 Ultimate Multisite를 설치하고 활성화한 후, 다른 플러그인과의 해결되지 않은 호환성 문제로 인해 문제가 발생할 수 있습니다.
 

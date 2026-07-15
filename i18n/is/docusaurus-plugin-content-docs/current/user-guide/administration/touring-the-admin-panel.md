@@ -3,7 +3,7 @@ title: Við ferum í viðbótumstjórnarkortinn
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Áferð í Administrasjónuna {#touring-the-admin-panel}
+# Áferð í Administrasjónuna
 
 Ultimate Multisite stefir að vera eins einfaldur og sjálfvirkur sem mögulegt er, en með þessu styrkun getur hann hjálpa til við að hafa leiðarvið. Látum okkur skoða administrasjónunum til að hjálpa þér að finna þig í gangi.
 

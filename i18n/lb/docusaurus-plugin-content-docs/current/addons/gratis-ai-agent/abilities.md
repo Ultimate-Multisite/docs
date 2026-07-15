@@ -3,7 +3,7 @@ title: Fäegkeeten-Referenz
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referenz vun de Fäegkeeten {#abilities-reference}
+# Referenz vun de Fäegkeeten
 
 Fäegkeete sinn déi atomar Aktiounen, déi Gratis AI Agent op denger WordPress-Installatioun opruffe kann. All Fäegkeet ass eng registréiert PHP-Klass, déi e JSON-Schema bereetstellt — den agent liest dëst Schema wärend der Lafzäit, fir ze verstoen, wéi eng Parameteren erfuerderlech sinn a wat d'Fäegkeet zeréckgëtt.
 

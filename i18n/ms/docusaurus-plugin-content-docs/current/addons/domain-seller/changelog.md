@@ -3,7 +3,7 @@ title: Log Perubahan Penjual Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Log Perubahan Domain Seller {#domain-seller-changelog}
+# Log Perubahan Domain Seller
 
 Versi 1.3.0 - Dikeluarkan pada 2026-06-02
 - Baharu: Menambah amaran network-admin apabila baki penjual semula HostAfrica menjadi terlalu rendah

@@ -3,7 +3,7 @@ title: التحقق من الترحيل السيادي
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# التحقق من ترحيل السيادة (Sovereign Migration Verification) {#sovereign-migration-verification}
+# التحقق من ترحيل السيادة (Sovereign Migration Verification)
 
 تتضمن Ultimate Multisite الإصدار 1.2.0 أوامر تحقق عبر WP-CLI لترحيلات المستأجرين السياديين (sovereign tenant migrations). استخدم هذه الأوامر عندما لا يتصرف ترحيل مستأجر، أو زيارة SSO، أو تثبيت معزول كما هو متوقع.
 

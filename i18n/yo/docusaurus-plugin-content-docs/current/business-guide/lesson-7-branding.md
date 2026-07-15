@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 7: Ṣíṣe é di tìrẹ'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Ẹ̀kọ́ 7: Ṣíṣe É Di Tìrẹ {#lesson-7-making-it-yours}
+# Ẹ̀kọ́ 7: Ṣíṣe É Di Tìrẹ
 
 Kí àwọn oníbàárà rẹ má ṣe ní ìmọ̀lára pé wọ́n ń lo "plugin WordPress kan." Kí wọ́n ní ìmọ̀lára pé wọ́n ń lo FitSite -- pẹpẹ kan tí a kọ́ fún ilé-iṣẹ́ wọn. Ẹ̀kọ́ yìí bo ìṣàmì-ọjà, white-labeling, àti bí a ṣe ń mú kí pẹpẹ náà dà bí ọjà gidi.
 

@@ -3,7 +3,7 @@ title: Frekte demanditaj demandoj
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Frequenta Perguntaj {#frequently-asked-questions}
+# Frequenta Perguntaj
 
 Jen estas **Frequenta Perguntaj**, kiuj ofte survilas pri subteno petoj.
 

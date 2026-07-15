@@ -3,7 +3,7 @@ title: Kijan pou anile yon abònman
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kijan mwen ka ranpli abònman mwen? {#how-can-i-cancel-my-subscription}
+# Kijan mwen ka ranpli abònman mwen?
 
 Si ou gen lisans Ultimate Multisite, ou ka ranpli rannou li nan lè ou vle. Sen jis swiv etap sa a:
 

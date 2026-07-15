@@ -3,7 +3,7 @@ title: Kierunek projektowy
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Kierunek projektowy {#design-direction}
+# Kierunek projektowy
 
 Krok **Kierunek projektowy** pozwala Ci przejrzeć, dopracować i sfinalizować wizualny wygląd swojego motywu, zanim Theme Builder wygeneruje gotowy motyw.
 

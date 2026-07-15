@@ -3,7 +3,7 @@ title: Kreye Kòd Rabais
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kreye Kod Rabote (v2) {#creating-discount-codes-v2}
+# Kreye Kod Rabote (v2)
 
 _**NOTE KRITIK: Sa tèks sa a refere a Ultimate Multisite v2.x.**_
 

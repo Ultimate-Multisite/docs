@@ -3,7 +3,7 @@ title: چرا Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# چرا Ultimate Multisite {#why-ultimate-multisite}
+# چرا Ultimate Multisite
 
 اگر به این مقاله رسیده‌اید، احتمالاً شنیده‌اید که افزونه ما می‌تواند راه‌حلی برای تحقق ایده کسب‌وکارتان باشد. امیدواریم تا پایان این مطلب، پاسخ سؤالات خود را پیدا کنید.
 

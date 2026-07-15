@@ -3,7 +3,7 @@ title: CyberPanel ինտեգրում
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Ինտեգրում {#cyberpanel-integration}
+# CyberPanel Ինտեգրում
 
 Այս ուղեցույց բացատրում է, թե ինչպես կարելի է կազմաձևել Ultimate Multisite CyberPanel ინտեգրումը՝ համապատասխան տիրույթները (mapped domains) ձեր ցանցում ավտոմատ կերպով ավելացնելու (և հեռացնելու) որպես virtual host-եր CyberPanel-ում, ընդ որում՝ օպցիոնալ auto-SSL առաջարկման միջոցով Let's Encrypt-ից։
 

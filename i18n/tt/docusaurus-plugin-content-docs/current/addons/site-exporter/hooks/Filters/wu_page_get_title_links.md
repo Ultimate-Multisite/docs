@@ -4,7 +4,7 @@ title: Фильтр - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Фильтр: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Фильтр: wu_page_get_title_links
 
 Plugin ясаучыларга һәм үзебезгә редакцияләү битләребезгә гамәл сылтамалары өстәргә мөмкинлек бирә.
 

@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# ක්‍රියාව: wu_sso_loaded {#action-wussoloaded}
+# ක්‍රියාව: wu_sso_loaded
 
 අවශ්‍ය නම් plugin සංවර්ධකයන්ට අමතර hooks එක් කිරීමට ඉඩ දෙයි.
 

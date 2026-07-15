@@ -4,7 +4,7 @@ title: ຕົວກອງ - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# ຕົວກອງ: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
+# ຕົວກອງ: wu_generated_username_from_email
 
 ກອງຊື່ຜູ້ໃຊ້ຂອງລູກຄ້າທີ່ຖືກສ້າງຂຶ້ນ.
 

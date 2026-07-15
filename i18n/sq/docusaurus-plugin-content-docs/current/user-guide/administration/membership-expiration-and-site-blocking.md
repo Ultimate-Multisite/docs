@@ -3,7 +3,7 @@ title: Përfundimi i Veprimit dhe Bllokimi i Sitet
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Përfundimi i Veprimit dhe Bllokimi i Sitet {#membership-expiration-and-site-blocking}
+# Përfundimi i Veprimit dhe Bllokimi i Sitet
 
 Ky seksion tregon se si të menaxhoni kur një anëtar (membership) i WordPress-it përfundon vjetri dhe si mund ta bllokoni faqet e internetit nëse keni nevojë.
 
@@ -51,7 +51,7 @@ Ky udhëzues shpjegon se si Ultimate Multisite menaxhon skadimin e privatësisë
 
 :::note A privatësi falas është për gjatë jetës. Privatësitë falas nuk zvieh automatikisht. Ultimate Multisite i trajton ato si akses për gjatë jetës, kështu që nuk përfshihen në kontrollin e skadimit përveçse administratorja ndryshon statusin ose lëviz klientin te një produkt tjetër.
 
-# Përdorimi i WooCommerce me WordPress {#what-gets-blocked-and-when}
+# Përdorimi i WooCommerce me WordPress
 
 Ky dokument ju ndihmon të kuptoni se si të përdorni pluginin WooCommerce në një instalim WordPress. Kjo është një platformë fantastike për të krijuar dyqane online dhe tregime elektronike (e-commerce).
 

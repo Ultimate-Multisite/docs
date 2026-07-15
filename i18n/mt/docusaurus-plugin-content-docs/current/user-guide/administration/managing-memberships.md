@@ -3,7 +3,7 @@ title: Aġġustar il-Membrija
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Aġġiment tal Membri (Managing Memberships) {#managing-memberships}
+# Aġġiment tal Membri (Managing Memberships)
 
 F'Ultimate Multisite, puoi tal-istess wa tmexxi l-aġġimenti u tista' tmexxi l-kull is-sotteskunzi fuq la rete tiegħek. Tista' tinviżaw u tispira dettalji tal-sotteskunzi bħal il-planijiet u prodotti, l-numir tal-sites, l-import tal-billing u l-frequenza, l-istoria tal-pagamenti u l-timestamp.
 

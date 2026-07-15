@@ -3,7 +3,7 @@ title: 'Ders 14: Piştre çi tê?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Ders 14: Piştî Vê Çi Tê {#lesson-14-what-comes-next}
+# Ders 14: Piştî Vê Çi Tê
 
 Te ji sifirê platformeke malperên nişeyî ava kir. FitSite zindî ye, xizmetê ji studyoyên fitness re dike, û dahata dubare çêdike. Ev dersa dawî li vê dinêre ku ji vir ve bi ku derê ve biçî.
 

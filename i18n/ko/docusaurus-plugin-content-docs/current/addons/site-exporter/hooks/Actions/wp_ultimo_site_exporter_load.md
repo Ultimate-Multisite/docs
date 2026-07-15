@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# 액션: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
+# 액션: wp_ultimo_site_exporter_load
 
 모든 종속성이 로드되었을 때 트리거됩니다.
 

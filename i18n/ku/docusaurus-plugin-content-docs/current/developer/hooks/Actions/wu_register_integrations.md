@@ -4,7 +4,7 @@ title: Çalakî - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Çalakî: wu_register_integrations {#action-wuregisterintegrations}
+# Çalakî: wu_register_integrations
 
 Tê xebitandin da ku integrations karibin xwe tomar bikin.
 

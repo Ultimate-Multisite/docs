@@ -3,7 +3,7 @@ title: Captcha ಬದಲಾವಣೆಗಳ ದಾಖಲೆ
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha ಚೇಂಜ್‌ಲಾಗ್ {#captcha-changelog}
+# Captcha ಚೇಂಜ್‌ಲಾಗ್
 
 Version: 1.5.0 - ಬಿಡುಗಡೆ ದಿನಾಂಕ: 2026-05-22
 * ಹೊಸದಾಗಿ: ಹಾರ್ಡ್-ಸ್ಟಾಪ್ ರೇಟ್ ಲಿಮಿಟರ್ (Hard-stop rate limiter) — ಇದು captcha-ರಕ್ಷಿತ ಪುಟಗಳಲ್ಲಿ (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ಬರುವ ಪ್ರತಿ GET ಮತ್ತು POST ವಿನಂತಿಯನ್ನು ಎಣಿಕೆ ಮಾಡುತ್ತದೆ. ಇದು HTTP 429, ಒಂದು `Retry-After` ಹೆಡರ್, ಮತ್ತು ಯಾದೃಚ್ಛಿಕ ಟಾರ್ಪಿಟ್ ಸ್ಲೀಪ್ (1–5 ಸೆಕೆಂಡುಗಳು, ಗರಿಷ್ಠ 15 ಸೆಕೆಂಡುಗಳಿಗೆ ಮಿತಿಗೊಳಿಸಲಾಗಿದೆ) ಯೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆ.

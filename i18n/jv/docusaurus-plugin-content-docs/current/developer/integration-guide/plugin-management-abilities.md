@@ -3,7 +3,7 @@ title: Kapabilitas Pangelolaan Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Kabisan Manajemen Plugin {#plugin-management-abilities}
+# Kabisan Manajemen Plugin
 
 Gratis AI Agent v1.5.0 teka karo **7 kabisan manajemen plugin** sing bisa diundang dening asisten AI sajrone pacelathon. Kabisan iki nyedhiyakake kontrol programatik marang plugin WordPress sing dipasang liwat [Sistem Plugin Builder & Sandbox](../../user-guide/administration/plugin-builder-and-sandbox).
 

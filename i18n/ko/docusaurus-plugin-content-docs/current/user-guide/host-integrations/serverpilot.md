@@ -3,7 +3,7 @@ title: ServerPilot 통합
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot 통합 {#serverpilot-integration}
+# ServerPilot 통합
 
 ## 개요 {#overview}
 ServerPilot은 DigitalOcean, Amazon, Google 또는 다른 서버 제공업체의 서버에서 WordPress 및 기타 PHP 웹사이트를 호스팅하기 위한 클라우드 서비스입니다. 이 통합은 Ultimate Multisite와 ServerPilot 간에 자동 도메인 동기화 및 SSL 인증서 관리를 가능하게 합니다.

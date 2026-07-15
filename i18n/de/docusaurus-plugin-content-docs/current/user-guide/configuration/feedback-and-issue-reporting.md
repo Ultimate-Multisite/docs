@@ -3,7 +3,7 @@ title: Kundenfeedback & Problemmeldung
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundenfeedback und Problemmeldung {#customer-feedback--issue-reporting}
+# Kundenfeedback und Problemmeldung
 
 Gratis AI Agent v1.5.0 führt ein integriertes System zur Abgabe von Feedback und zur Meldung von Problemen ein. Dieses System ermöglicht es Endbenutzern, unbrauchbare Antworten zu kennzeichnen und Probleme direkt über die Chat-Oberfläche zu melden. Das System umfasst die Verwaltung der Zustimmung (Consent Management), einen automatisierten Meldebefehl und eine KI-gestützte Vorprüfung (Triage) im Backend.
 

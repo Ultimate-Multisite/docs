@@ -4,7 +4,7 @@ title: Filter - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Filter: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# Filter: wu_search_models_functions
 
 Umožňuje vývojářům pluginů přidat více funkcí pro modely vyhledávání.
 

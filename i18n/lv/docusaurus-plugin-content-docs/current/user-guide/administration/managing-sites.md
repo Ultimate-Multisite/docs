@@ -3,7 +3,7 @@ title: Saites pārvaldīšana
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Vietušu vietnes pārvaldība {#managing-sites}
+# Vietušu vietnes pārvaldība
 
 Vietnes (vai subvietnes) ir galvenais daļa no jūsu WaaS biznesa. Ultimate Multisite ir 3 veidiem vietņu:
 

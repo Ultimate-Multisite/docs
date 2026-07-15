@@ -3,7 +3,7 @@ title: तृतीय-पक्ष मोड स्थलांतरण
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# थर्ड-पार्टी मोड स्थलांतरण {#third-party-mode-migration}
+# थर्ड-पार्टी मोड स्थलांतरण
 
 Superdav AI Agent v1.12.0 ने थर्ड-पार्टी क्षमता (abilities) कशा हाताळल्या जातात यात बदल केला आहे. **थर्ड-पार्टी मोड आता आपोआप 'auto' वर सेट होतो**, ज्यामुळे मॅन्युअल कॉन्फिगरेशनशिवाय WordPress 7.0+ वर native WordPress Abilities API इंटिग्रेशन शक्य होते.
 

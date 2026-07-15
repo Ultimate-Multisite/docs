@@ -3,7 +3,7 @@ title: 사이트 템플릿
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# 사이트 템플릿 (v2) {#site-templates-v2}
+# 사이트 템플릿 (v2)
 
 _**참고: 이 글은 Ultimate Multisite 버전 2.x에 대한 내용입니다. 버전 1.x를 사용 중이라면,**_ **이 글을 참조하세요** _**.**_
 

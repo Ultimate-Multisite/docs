@@ -4,7 +4,7 @@ title: Aksie - wu_domain_became_primary
 sidebar_label: wu_domain_became_primary
 _i18n_hash: c7757c05c88e7b75f88777504426a970
 ---
-# Aksie: wu_domain_became_primary {#action-wudomainbecameprimary}
+# Aksie: wu_domain_became_primary
 
 Word geaktiveer wanneer 'n domein die primêre domein vir 'n webwerf word.
 

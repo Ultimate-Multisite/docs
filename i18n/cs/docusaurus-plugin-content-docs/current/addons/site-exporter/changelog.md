@@ -3,7 +3,7 @@ title: Změny v Site Exporteru
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Změnový deník Exporteru webu {#site-exporter-changelog}
+# Změnový deník Exporteru webu
 
 Verze: 1.0.6 - Vydáno dne 2026-05-11
 * Nové: Exporty webu nyní balí index.php, který se sám spustí, takže ZIP lze nainstalovat na novém hostingu bez samostatné instalace pluginu.

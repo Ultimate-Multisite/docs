@@ -4,7 +4,7 @@ title: Գործողություն - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Գործողություն՝ wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Գործողություն՝ wu_mt_providers_registered
 
 Գործարկվում է լռելյայն provider-ների գրանցումից հետո։
 

@@ -4,7 +4,7 @@ title: Gnìomh - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Gnìomh: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Gnìomh: wp_ultimo_affiliatewp_activation
 
 Leig le pàirtean eile den plugin na rùitinean aca airson gnìomhachadh a cheangal
 

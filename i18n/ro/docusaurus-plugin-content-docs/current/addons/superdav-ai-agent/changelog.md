@@ -3,7 +3,7 @@ title: Jurnal de modificări
 sidebar_position: 5
 _i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Jurnal de modificări {#changelog}
+# Jurnal de modificări
 
 ## 1.18.0 — Lansat pe 2026-06-29 {#1180--released-on-2026-06-29}
 

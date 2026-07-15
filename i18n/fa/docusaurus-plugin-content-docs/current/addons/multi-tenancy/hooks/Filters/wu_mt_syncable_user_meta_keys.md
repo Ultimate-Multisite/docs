@@ -4,7 +4,7 @@ title: فیلتر - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# فیلتر: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# فیلتر: wu_mt_syncable_user_meta_keys
 
 لیست کلیدهای متا کاربری که باید به نودهای از راه دور همگام‌سازی شوند را فیلتر می‌کند.
 

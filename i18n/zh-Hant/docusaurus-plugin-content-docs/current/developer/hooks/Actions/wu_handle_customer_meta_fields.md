@@ -4,7 +4,7 @@ title: Action - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# 動作: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# 動作: wu_handle_customer_meta_fields
 
 讓外掛開發者可以根據需要以不同的方式儲存中繼資料。
 

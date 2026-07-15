@@ -3,7 +3,7 @@ title: Cloudways אינטעגראַציע
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways אינטעגראַציע {#cloudways-integration}
+# Cloudways אינטעגראַציע
 
 ## איבערבליק {#overview}
 Cloudways איז אַ גערירטע קלאוד־האָסטינג פּלאַטפאָרמע וואָס ערלויבט אײַך אַרויסצושטעלן WordPress וועבזײַטן אויף פֿאַרשיידענע קלאוד־צושטעלער ווי DigitalOcean, AWS, Google Cloud, און מער. די אינטעגראַציע דערמעגלעכט אויטאָמאַטישע דאָמיין־סינכראָניזאַציע און SSL־סערטיפיקאַט־פֿאַרוואַלטונג צווישן Ultimate Multisite און Cloudways.

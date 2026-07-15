@@ -3,7 +3,7 @@ title: وەرگرتنی پارە
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# وەرگرتنی پارە (v2) {#getting-paid-v2}
+# وەرگرتنی پارە (v2)
 
 _**تێبینی گرنگ: ئەم وتارە ئاماژە بە وەشانی 2.x ـی Ultimate Multisite دەکات.**_
 

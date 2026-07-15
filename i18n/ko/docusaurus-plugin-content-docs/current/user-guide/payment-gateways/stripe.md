@@ -3,7 +3,7 @@ title: Stripe 설정하기
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway 설정하기 (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway 설정하기 (v2)
 
 _**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x에 관한 것입니다.**_
 

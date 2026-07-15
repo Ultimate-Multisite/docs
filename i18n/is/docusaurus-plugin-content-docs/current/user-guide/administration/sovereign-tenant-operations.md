@@ -3,7 +3,7 @@ title: Öryggisþjónustu leigandans
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Drifing við sjálfstæðan leita (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Drifing við sjálfstæðan leita (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 hefur lagt í bót verkfæri fyrir sjálfstæða leita (sovereign tenants): subsíti sem renna með sínum eiga upplýsingatabu, grunnstjörnu myndun (filesystem root) og leiðurstöðu viðskiptaflokksins (routing context), en eru framkvæmdar fyrir netkunarstjórnann.
 

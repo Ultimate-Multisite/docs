@@ -3,7 +3,7 @@ title: Moetsi oa Leqephe la Motsamaisi Lenane la Liphetoho
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Lenane la liphetoho la Moetsi oa Leqephe la Admin {#admin-page-creator-changelog}
+# Lenane la liphetoho la Moetsi oa Leqephe la Admin
 
 ### Mofuta 1.9.0 - E lokollotsoe ka 2026-01-18 {#version-190---released-on-2026-01-18}
 

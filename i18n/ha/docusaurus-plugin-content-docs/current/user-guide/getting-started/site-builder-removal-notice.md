@@ -3,7 +3,7 @@ title: Gwagwada kan wajen cire nau'in gudanar da shafi na wuri
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# اطلاع در suje Site Builder Mode {#site-builder-mode-removal-notice}
+# اطلاع در suje Site Builder Mode
 
 **Site Builder mode a cikin Superdav AI Agent v1.12.0 an cire shi.** Idan kake amfani da Site Builder mode, dole ne ka tura shi ga **Setup Assistant agent** don samar da theme da shirya site.
 

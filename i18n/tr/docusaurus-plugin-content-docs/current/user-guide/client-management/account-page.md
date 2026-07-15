@@ -3,7 +3,7 @@ title: Müşteri Account Sayfası
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Müşterinizin Account Sayfası (v2) {#your-clients-account-page-v2}
+# Müşterinizin Account Sayfası (v2)
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne atıfta bulunur.**_
 

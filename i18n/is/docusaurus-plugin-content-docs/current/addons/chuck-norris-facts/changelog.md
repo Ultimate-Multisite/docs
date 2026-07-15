@@ -3,7 +3,7 @@ title: Chuck Norris Facts breytingaskrá
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Breytingaskrá Chuck Norris-staðreynda {#chuck-norris-facts-changelog}
+# Breytingaskrá Chuck Norris-staðreynda
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Bætt við: Sjálfvirk uppfærsluvirkni í gegnum Ultimate Multisite update server

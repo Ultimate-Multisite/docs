@@ -3,7 +3,7 @@ title: Admin-Säit-Ersteller Ännerungsprotokoll
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin-Säiten-Ersteller Ännerungsprotokoll {#admin-page-creator-changelog}
+# Admin-Säiten-Ersteller Ännerungsprotokoll
 
 ### Versioun 1.9.0 - Verëffentlecht den 2026-01-18 {#version-190---released-on-2026-01-18}
 

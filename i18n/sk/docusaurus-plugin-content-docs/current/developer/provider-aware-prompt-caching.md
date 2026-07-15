@@ -3,7 +3,7 @@ title: Ukladanie promptov do vyrovnávacej pamäte s ohľadom na poskytovateľa
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt caching zohľadňujúci providera {#provider-aware-prompt-caching}
+# Prompt caching zohľadňujúci providera
 
 Superdav AI Agent v1.12.0 prináša **prompt caching zohľadňujúci providera**, ktorý optimalizuje náklady na API a latenciu ukladaním promptov do cache naprieč rôznymi LLM providermi. Každý provider má odlišné mechanizmy a konfigurácie cache.
 

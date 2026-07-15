@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# การเชื่อมต่อกับ WP Engine {#wp-engine-integration}
+# การเชื่อมต่อกับ WP Engine
 
 ## ภาพรวม {#overview}
 WP Engine เป็นแพลตฟอร์มโฮสติ้ง WordPress แบบพรีเมียมที่ให้ประสิทธิภาพสูงสุด ความปลอดภัย และความสามารถในการขยายตัวสำหรับเว็บไซต์ WordPress การเชื่อมต่อนี้ช่วยให้เกิดการซิงค์โดเมนโดยอัตโนมัติระหว่าง Ultimate Multisite กับ WP Engine

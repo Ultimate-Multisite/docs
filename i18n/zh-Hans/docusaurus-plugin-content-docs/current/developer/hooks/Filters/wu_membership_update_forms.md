@@ -4,7 +4,7 @@ title: ''
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# 过滤器: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# 过滤器: wu_membership_update_forms
 
 允许开发者添加新的更新表单 slugs。
 

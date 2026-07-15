@@ -4,7 +4,7 @@ title: Φίλτρο - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Φίλτρο: get_blogs_of_user {#filter-getblogsofuser}
+# Φίλτρο: get_blogs_of_user
 
 Αναπαράγει το αρχικό φίλτρο του WP εδώ, για πλήρη κάλυψη.
 

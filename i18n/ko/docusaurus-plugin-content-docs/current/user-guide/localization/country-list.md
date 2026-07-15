@@ -3,7 +3,7 @@ title: 국가 목록
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Re-ordering the Ultimate Multisite country list {#re-ordering-the-ultimate-multisite-country-list}
+# Re-ordering the Ultimate Multisite country list
 
 국가를 선택하는 드롭다운은 국가 이름의 영어 변형을 기준으로 알파벳순으로 정렬됩니다. 이로 인해 가끔 귀사의 본국 및/또는 대부분의 고객이 거대한 국가 목록의 중간에 숨어 있을 수 있습니다.
 

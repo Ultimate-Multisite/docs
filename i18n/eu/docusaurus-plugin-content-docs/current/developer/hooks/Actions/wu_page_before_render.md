@@ -4,7 +4,7 @@ title: Ekintza - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Ekintza: wu_page_before_render {#action-wupagebeforerender}
+# Ekintza: wu_page_before_render
 
 Orrialdea inprimatu aurretik pluginen garatzaileei eduki gehigarria gehitzeko aukera ematen die.
 

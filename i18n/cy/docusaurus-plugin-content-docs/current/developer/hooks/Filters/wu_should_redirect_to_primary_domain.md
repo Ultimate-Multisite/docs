@@ -4,7 +4,7 @@ title: Hidlydd - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Hidlydd: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Hidlydd: wu_should_redirect_to_primary_domain
 
 Caniatáu i ddatblygwyr dorri'r ailgyfeirio'n fyr, gan ei atal rhag digwydd.
 

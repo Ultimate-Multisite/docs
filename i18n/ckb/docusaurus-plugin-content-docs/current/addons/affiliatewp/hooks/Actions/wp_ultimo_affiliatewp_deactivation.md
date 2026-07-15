@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# کردار: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# کردار: wp_ultimo_affiliatewp_deactivation
 
 ڕێ بدە بە بەشەکانی تری plugin کە ڕووتینەکانیان بۆ ناچالاککردن پەیوەست بکەن
 

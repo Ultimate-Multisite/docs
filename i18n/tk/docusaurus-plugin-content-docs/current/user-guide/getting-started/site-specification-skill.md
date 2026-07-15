@@ -3,7 +3,7 @@ title: Sayt Spesifikasiýa Bilişi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Sayt Spesifikasi Biliş {#site-specification-skill}
+# Sayt Spesifikasi Biliş
 
 **Site Specification becerisi**, saytınızın hedeflerini, hedef kitlesini we brend kimliğini çäklemek üçin kurulan bir üsleriňdir. Bu maglumatlar **site_brief** hataryna saklanýar; bu hatar agentler tarapda seslenip, her bir sessiýada ýönekeý we konteksti bilýän kömek bermek üçin ulanylýar.
 

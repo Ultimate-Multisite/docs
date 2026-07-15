@@ -4,7 +4,7 @@ title: Acció - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Acció: move_site {#action-movesite}
+# Acció: move_site
 
 S'executa després que un lloc web hagi estat traslladat a una nova xarxa (network).
 

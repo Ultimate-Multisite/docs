@@ -3,7 +3,7 @@ title: Handmatige betalings opstel
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Stel handmatige betalings op (v2) {#setting-up-manual-payments-v2}
+# Stel handmatige betalings op (v2)
 
 _**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

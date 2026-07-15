@@ -3,7 +3,7 @@ title: Dziennik zmian Wielokompleksowy
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Zmiany w wersji Multi-Network {#multi-network-changelog}
+# Zmiany w wersji Multi-Network
 
 ### 1.3.0 {#130}
 * Nowość: Podgląd szablonu sieci — przeglądaj i podglądaj szablony sieci na panelu na żywo przed zakupem.

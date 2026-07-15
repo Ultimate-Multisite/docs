@@ -3,7 +3,7 @@ title: Sahkan Kontras Palet
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Sahkan Kontras Palet {#validate-palette-contrast}
+# Sahkan Kontras Palet
 
 Keupayaan **Sahkan Kontras Palet** menyemak pasangan warna dalam palet reka bentuk anda untuk pematuhan WCAG (Garis Panduan Kebolehcapaian Kandungan Web) sebelum menerapkannya pada tema anda.
 

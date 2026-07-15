@@ -3,7 +3,7 @@ title: Habilitat de Especificació de Lloc
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Habilitat de Especificació del Lloc {#site-specification-skill}
+# Habilitat de Especificació del Lloc
 
 L'**habilitat de Especificació del Lloc** és un enfoque estructurat per capturar els objectius, l'audiència i l'identitat de marca del teu lloc web. Aquesta informació es guareix a la teva memòria **site_brief**, a la qual els agents es refereixen durant les sessions per proporcionar una assistència consistent i contextualment adequada.
 

@@ -4,7 +4,7 @@ title: Hereket - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Hereket: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Hereket: wu_domain_renewal_failed
 
 Domeniň täzeleniş synanyşygy şowsuz bolandan soň işledilýär.
 

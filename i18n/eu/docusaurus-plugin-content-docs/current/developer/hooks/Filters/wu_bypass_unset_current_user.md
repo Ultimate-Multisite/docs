@@ -4,7 +4,7 @@ title: Iragazkia - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Iragazkia: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Iragazkia: wu_bypass_unset_current_user
 
 Garatzaileei aukera ematen die ezarrita ez dagoen uneko erabiltzailearen kodea saihesteko.
 

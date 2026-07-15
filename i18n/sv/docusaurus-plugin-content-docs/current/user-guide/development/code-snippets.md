@@ -3,7 +3,7 @@ title: Kodsnuttar
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodsnuttar för v2 {#code-snippets-for-v2}
+# Kodsnuttar för v2
 
 Kodsnuttar för **WordPress** används i grunden för att utföra vissa åtgärder som annars skulle kräva ett dedikerat mindre plugin. Sådana kodsnuttar placeras i någon av WordPress kärn- eller temafiler (vanligtvis functions.php-filen i ditt tema) eller så kan de användas som ett MU-plugin.
 

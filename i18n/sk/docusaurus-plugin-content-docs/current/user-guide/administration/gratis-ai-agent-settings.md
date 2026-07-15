@@ -3,7 +3,7 @@ title: Nastavenia Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Nastavenia Gratis AI Agent {#gratis-ai-agent-settings}
+# Nastavenia Gratis AI Agent
 
 Obrazovka **Nastavenia → Pokročilé** v Gratis AI Agent poskytuje konfiguráciu na úrovni administrátora pre backendové integrácie. Táto stránka dokumentuje preposielanie spätnej väzby, kľúče poskytovateľov vyhľadávania, nastavenie spravovanej služby Superdav, ovládacie prvky Google Calendar, nastavenia SMS TextBee a príznaky funkcií platné pre celú sieť.
 

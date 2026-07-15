@@ -4,7 +4,7 @@ title: Филтр - wu_get_site_domain_and_path
 sidebar_label: wu_get_site_domain_and_path
 _i18n_hash: 86384a14182db584d1b69aec8790ed07
 ---
-# Филтр: wu_get_site_domain_and_path {#filter-wugetsitedomainandpath}
+# Филтр: wu_get_site_domain_and_path
 
 Ба таҳиягарон имкон медиҳад, ки ҷуфтҳои домен/масирро тағйир диҳанд.
 

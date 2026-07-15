@@ -4,7 +4,7 @@ title: Амал - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Амал: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Амал: wp_ultimo_affiliatewp_activation
 
 Ба қисмҳои дигари plugin иҷозат диҳед, ки равандҳои худро барои фаъолсозӣ пайваст кунанд
 

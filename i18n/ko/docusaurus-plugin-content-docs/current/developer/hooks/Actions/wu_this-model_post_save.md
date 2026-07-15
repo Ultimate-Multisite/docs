@@ -4,7 +4,7 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# 액션: wu_${this->model}_post_save {#action-wuthis-modelpostsave}
+# 액션: wu_${this->model}_post_save
 
 데이터베이스에 객체가 저장된 후에 발생합니다.
 

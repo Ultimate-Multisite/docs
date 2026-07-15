@@ -3,7 +3,7 @@ title: Hooks 사용 가이드
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# 훅 사용 가이드 {#hooks-usage-guide}
+# 훅 사용 가이드
 
 Ultimate Multisite는 200개 이상의 액션 훅과 280개 이상의 필터 훅을 제공합니다. 이 페이지는 가장 자주 사용되는 훅을 실용적인 예시와 함께 다룹니다. 완전한 자동 생성된 참조를 보려면 이 섹션의 다른 페이지를 확인하세요.
 

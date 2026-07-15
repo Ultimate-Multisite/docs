@@ -3,7 +3,7 @@ title: تكامل WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# تكامل WPMU DEV {#wpmu-dev-integration}
+# تكامل WPMU DEV
 
 ## نظرة عامة {#overview}
 WPMU DEV هو منصة WordPress شاملة تقدم استضافة، ملحقات، وخدمات لمواقع WordPress. يتيح هذا التكامل مزامنة النطاقات تلقائيًا وإدارة شهادات SSL بين Ultimate Multisite واستضافة WPMU DEV.

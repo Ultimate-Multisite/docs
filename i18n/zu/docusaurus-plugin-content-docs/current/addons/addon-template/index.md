@@ -3,9 +3,9 @@ title: Isifanekiso Sesengezo
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Isifanekiso Sesengezo {#addon-template}
+# Isifanekiso Sesengezo
 
-{{ADDON_DESCRIPTION}}
+Isifanekiso Sesengezo — Ultimate Multisite.
 
 ## Izidingo {#requirements}
 

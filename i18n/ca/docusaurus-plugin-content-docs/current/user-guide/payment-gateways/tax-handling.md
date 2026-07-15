@@ -3,7 +3,7 @@ title: Gestió d’impostos
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestió d'impostos {#tax-handling}
+# Gestió d'impostos
 
 Ultimate Multisite té un mòdul de recaptació d'impostos integrat al nostre plugin principal, de manera que, si necessites recaptar impostos sobre les vendes dels teus plans, paquets i serveis, ho pots fer fàcilment sense haver de recórrer a instal·lar cap complement.
 

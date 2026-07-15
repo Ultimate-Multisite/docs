@@ -3,7 +3,7 @@ title: Scadenza dell'abbonamento e blocco del sito
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Scadenza dell'Abbonamento e Blocco del Sito {#membership-expiration-and-site-blocking}
+# Scadenza dell'Abbonamento e Blocco del Sito
 
 Questa guida spiega come Ultimate Multisite gestisce la scadenza degli abbonamenti, la fine dei periodi di prova e il blocco del sito sul frontend. Copre il ciclo di vita di un abbonamento, dallo stato attivo a quello scaduto, le impostazioni che controllano se i siti vengono bloccati e cosa controllare quando i siti rimangono accessibili dopo la scadenza di un abbonamento.
 

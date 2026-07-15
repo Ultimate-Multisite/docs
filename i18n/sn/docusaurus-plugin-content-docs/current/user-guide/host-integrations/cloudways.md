@@ -3,7 +3,7 @@ title: Kugadzirwa neCloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integration neCloudways {#cloudways-integration}
+# Integration neCloudways
 
 ## Zvinoro (Overview) {#overview}
 Cloudways ndiri platform yekubatsirwa (managed cloud hosting) inotenderera kuti uingane WordPress sites pamweche dzakare kubva kuproviders vecloud vese zvakaita DigitalOcean, AWS, Google Cloud, uye zvinhasi zvose. Integration iyi inokubatsira kuunganidza domain automatically nekuvashandisa SSL certificates pakati pe Ultimate Multisite neCloudways.

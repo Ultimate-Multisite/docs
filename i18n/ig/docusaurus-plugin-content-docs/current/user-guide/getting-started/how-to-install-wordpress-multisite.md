@@ -3,7 +3,7 @@ title: Kedu ihe na ịlanjiri WordPress Multisite?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Naa m ga-adị WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Naa m ga-adị WordPress Multisite?
 
 WordPress Multisite na-eme gị ịkwado mere site ndị dị n'ụ ha ọkụ ọkụ (single installation). O chebe bụ ihe a anọchịrị, mana ọ dịghịrụ ọrụ (not active) ma ọ bụ default.
 
@@ -60,7 +60,7 @@ Ma ọ bụ code a, nke WordPress ji gị gị file _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add a trailing slash to /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

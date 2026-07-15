@@ -3,7 +3,7 @@ title: Hestia ਕੰਟਰੋਲ ਪੈਨਲ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#hestia-control-panel-integration}
+# Hestia Control Panel ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 
 ਇਹ ਗਾਈਡ ਦੱਸਦੀ ਹੈ ਕਿ Ultimate Multisite Hestia ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਨੂੰ ਕਿਵੇਂ ਕੌਂਫਿਗਰ ਕਰਨਾ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਡੇ ਨੈੱਟਵਰਕ ਵਿੱਚ ਮੈਪ ਕੀਤੇ ਡੋਮੇਨ Hestia ਵਿੱਚ ਆਪਣੇ ਆਪ Web Domain Aliases ਵਜੋਂ ਜੋੜੇ (ਅਤੇ ਹਟਾਏ) ਜਾ ਸਕਣ।
 

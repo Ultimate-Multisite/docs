@@ -4,7 +4,7 @@ title: Akcija - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Akcija: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Akcija: wu_handle_user_meta_fields
 
 Omogućava programerima pluginova da sačuvaju podatke korisnika (meta podatke) na različite načine, ako je to potrebno.
 

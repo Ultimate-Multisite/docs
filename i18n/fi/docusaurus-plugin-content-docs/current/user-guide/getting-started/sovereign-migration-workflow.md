@@ -3,7 +3,7 @@ title: Suvereenisen siirto-työnkulku
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Suvereenisen siirtojen työnkulku {#sovereign-migration-workflow}
+# Suvereenisen siirtojen työnkulku
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lisää siirtovahvistusportteja standardisivuston siirtämiseen suvereenisiin vuokralaisinfrastruktuureihin.
 

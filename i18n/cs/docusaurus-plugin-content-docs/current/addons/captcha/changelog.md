@@ -3,7 +3,7 @@ title: Změny v Captce
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Změny v Captcha {#captcha-changelog}
+# Změny v Captcha
 
 Verze: 1.5.0 - Vydáno 22.05.2026
 * Nové: Přísný limitátor frekvence (Hard-stop rate limiter) — počítá každé GET a POST požadavky na stránkách chráněných Captchou (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) a odpovídá HTTP kódem 429, hlavičkou `Retry-After` a náhodně generovaným zdržováním (tarpit sleep) (1–5 sekund, s maximální hranicí 15 sekund).

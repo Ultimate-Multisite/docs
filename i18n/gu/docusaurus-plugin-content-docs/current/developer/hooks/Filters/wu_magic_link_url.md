@@ -4,7 +4,7 @@ title: ફિલ્ટર - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# Filter: wu_magic_link_url {#filter-wumagiclinkurl}
+# Filter: wu_magic_link_url
 
 આ ફિલ્ટરનો ઉપયોગ જનરેટ થયેલા મેજિક લિંક URL ને બદલવા અથવા તેમાં ફેરફાર કરવા માટે થાય છે.
 

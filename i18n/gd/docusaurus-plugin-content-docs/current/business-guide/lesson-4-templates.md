@@ -3,7 +3,7 @@ title: 'Leasan 4: A’ togail teamplaidean nideoige'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Leasan 4: A’ togail teamplaidean niche {#lesson-4-building-niche-templates}
+# Leasan 4: A’ togail teamplaidean niche
 
 ’S e teamplaidean cridhe do thairgse luach niche. Tha sealbhadair stiùidio fallaineachd a chlàraicheas agus a chì làrach a tha mar-thà coltach ri làrach-lìn fallaineachd -- le clàran-ama chlasaichean, pròifilean thrèanaichean, agus na h-ìomhaighean ceart -- fada nas dualtaiche fuireach na cuideigin a chì canabhas bàn.
 

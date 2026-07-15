@@ -3,7 +3,7 @@ title: Hantera systemmejl
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Hantera systemmejl {#managing-system-emails}
+# Hantera systemmejl
 
 Ultimate Multisite skickar olika systemmejl för händelser som registreringsbekräftelser, betalningskvitton och medlemskapsändringar. Du kan anpassa dessa mejlmallar så att de matchar ditt varumärke.
 

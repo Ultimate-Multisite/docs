@@ -3,7 +3,7 @@ title: 'Lesona 11: Fitadiavana mpanjifa'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesona 11: Fitadiavana mpanjifa {#lesson-11-finding-customers}
+# Lesona 11: Fitadiavana mpanjifa
 
 Sehatra tena tsara tsy misy mpanjifa dia fialamboly fotsiny. Ity lesona ity dia mandrakotra ny fomba hahazoana mpanjifa ao anatin'ny sehatra niche mitsangana -- paikady miasa manokana satria mifantoka amin'ny indostria iray ianao.
 

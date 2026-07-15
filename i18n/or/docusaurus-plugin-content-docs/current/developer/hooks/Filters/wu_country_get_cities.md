@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# ଫିଲ୍ଟର: wu_country_get_cities {#filter-wucountrygetcities}
+# ଫିଲ୍ଟର: wu_country_get_cities
 
 ଏକ ଦେଶର ଏକ ରାଜ୍ୟ ପାଇଁ ସହରଗୁଡ଼ିକର ତାଲିକା ଫେରାଇଦିଏ।
 

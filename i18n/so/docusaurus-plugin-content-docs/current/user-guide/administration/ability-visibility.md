@@ -3,7 +3,7 @@ title: Awoodda Muujinta
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Muujinta Aragtida (Ability Visibility) {#ability-visibility}
+# Muujinta Aragtida (Ability Visibility)
 
 Superdav AI Agent v1.12.0 waxay soo bandhigaysaa mareegga **Muujinta Awoodda (Ability Visibility)** kaas oo maamulaya waxa ay meelay u soo bandhiga awood kasta. Tani waxay u oggolaanaysaa maamulayaasha inay si fiican u hagaajiyaan noocyada awoodda ee agent-ka laga heli karo REST APIs, MCP servers, WooCommerce integrations, iyo interface kale oo la mid ah.
 

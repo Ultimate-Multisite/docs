@@ -3,7 +3,7 @@ title: Shigarwar RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Shigar RunCloud {#runcloud-integration}
+# Shigar RunCloud
 
 ## Bincike (Overview) {#overview}
 RunCloud wani wuri ne gudanarwar server na shiga da ke ba ka damar sauƙi don saka da sarrafa manhajoji na web a kan server-server daban-daban. Wannan haɗin yana ba ka damar yin sauyi na domain ko sarrafa SSL certificate tsakanin Ultimate Multisite da RunCloud cikin sauƙi.

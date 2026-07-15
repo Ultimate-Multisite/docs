@@ -3,7 +3,7 @@ title: แจ้งเตือนการลบโหมด Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# ประกาศยกเลิก Site Builder mode {#site-builder-mode-removal-notice}
+# ประกาศยกเลิก Site Builder mode
 
 **โหมด Site Builder ถูกยกเลิกแล้วใน Superdav AI Agent v1.12.0** หากคุณเคยใช้ Site Builder mode คุณควรย้ายไปใช้ **Setup Assistant agent** แทนสำหรับการสร้างธีมและการตั้งค่าเว็บไซต์
 

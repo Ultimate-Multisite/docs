@@ -3,7 +3,7 @@ title: 'Ders 9: Nirxdan ji bo Qezencê'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ders 9: Nirxdan ji bo Qezencê {#lesson-9-pricing-for-profit}
+# Ders 9: Nirxdan ji bo Qezencê
 
 Di Dersa 5 de me nirxên destpêkê ji bo planên FitSite danîn. Niha em stratejiya nirxdanê bi teknîkên ku dahatê zêde dikin, upgrade-an teşwîq dikin, û churn kêm dikin baştir dikin.
 

@@ -3,7 +3,7 @@ title: Kuanza na Uundaji wa Viongezi
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Utengenezaji wa Kiendelezi {#addon-development}
+# Utengenezaji wa Kiendelezi
 
 ## Muundo wa Kiendelezi {#addon-structure}
 

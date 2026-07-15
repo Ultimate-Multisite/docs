@@ -4,7 +4,7 @@ title: చర్య - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Action: wu_domain_ses_verified {#action-wudomainsesverified}
+# Action: wu_domain_ses_verified
 
 SES ద్వారా ఒక డొమైన్ DKIM-ధృవీకరించబడిందని (DKIM-verified) నిర్ధారించినప్పుడు ఇది ట్రిగ్గర్ అవుతుంది.
 

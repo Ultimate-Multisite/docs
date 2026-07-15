@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 13: Ìmúgbòòrò'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ẹ̀kọ́ 13: Mímú Un Tóbi Síi {#lesson-13-scaling-up}
+# Ẹ̀kọ́ 13: Mímú Un Tóbi Síi
 
 O ní pẹpẹ tó ń ṣiṣẹ́ pẹ̀lú àwọn oníbàárà tó ń sanwó. Ẹ̀kọ́ yìí ṣàlàyé bí a ṣe lè dagba láti iṣẹ́ kékeré sí iṣowo tó lè dúró pẹ́ -- mímú amáyédẹrùn tóbi síi, ṣíṣe àwọn iṣẹ́ laifọwọ́ṣe, àti fífi owó-wiwọle fún oníbàárà kọ̀ọ̀kan pọ̀ síi.
 

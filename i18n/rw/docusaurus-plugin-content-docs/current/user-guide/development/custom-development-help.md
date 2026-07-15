@@ -3,7 +3,7 @@ title: Ubufasha mu Gutangira Uburyo Bushya
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Uburyo Ubufasha Bwo Gutera Ubwumelera Bwa Customization ku Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Uburyo Ubufasha Bwo Gutera Ubwumelera Bwa Customization ku Codeable?
 
 Kugera ibintu runaka cyane, twifashishije uburyo bwo gutera ubwumelera bwacu kugira ngo bishobore mu buryo twifuza. Niba ari iki ushaka, twamukunda [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), umuryango uho utagira abanyamwuga bakoresha Ultimate Multisite, aho ushobora kugera abanyamwuga bafite uburyo bwiza bwo gukora ibyo.
 

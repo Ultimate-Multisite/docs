@@ -4,7 +4,7 @@ title: Филтър - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Филтър: wu_is_development_mode {#filter-wuisdevelopmentmode}
+# Филтър: wu_is_development_mode
 
 Позволява на разработчиците на плагини да добавят допълнителни тестове за режим на разработка.
 

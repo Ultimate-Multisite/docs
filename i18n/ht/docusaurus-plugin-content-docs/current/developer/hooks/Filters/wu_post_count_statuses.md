@@ -4,7 +4,7 @@ title: Filtre - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtè: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtè: wu_post_count_statuses
 
 Pèmèt devlopè plugin chanje ki estati pòs ki ta dwe konte. Pa default, pòs ki pibliye ak pòs prive yo konte
 

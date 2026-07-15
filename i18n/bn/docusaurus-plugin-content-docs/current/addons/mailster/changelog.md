@@ -3,7 +3,7 @@ title: Mailster পরিবর্তনের লগ
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster পরিবর্তন লগ {#mailster-changelog}
+# Mailster পরিবর্তন লগ
 
 ### 1.0.0 {#100}
 * প্রথম রিলিজ

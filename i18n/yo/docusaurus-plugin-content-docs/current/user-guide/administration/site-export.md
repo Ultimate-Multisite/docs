@@ -3,7 +3,7 @@ title: Ìkó Aaye Jáde
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Gbigbe Oju-ìlé Jáde {#site-export}
+# Gbigbe Oju-ìlé Jáde
 
 Ojú-ewé abojútó **Gbigbe Oju-ìlé Jáde** jẹ́ kí àwọn alábòójútó nẹ́tíwọ́ọ̀kì kó oju-ìlé kan, tàbí gbogbo nẹ́tíwọ́ọ̀kì, sínú àkójọpọ̀ fáìlì tí a lè ṣe igbasilẹ fún ìṣílọ, àfipamọ́, tàbí iṣẹ́ fífi lé ẹlòmíràn lọ́wọ́.
 

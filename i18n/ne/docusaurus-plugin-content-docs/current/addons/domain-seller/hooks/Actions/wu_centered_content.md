@@ -4,7 +4,7 @@ title: कार्य - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Action: wu_centered_content {#action-wucenteredcontent}
+# Action: wu_centered_content
 
 plugin विकासकर्ताहरूलाई केन्द्रित स्तम्भभित्र थप सामग्री थप्न अनुमति दिन्छ।
 

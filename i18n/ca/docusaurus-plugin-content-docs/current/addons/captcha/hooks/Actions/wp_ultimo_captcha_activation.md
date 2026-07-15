@@ -4,7 +4,7 @@ title: Acció - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# Acció: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# Acció: wp_ultimo_captcha_activation
 
 Permet que altres parts del plugin adjunten les seves funcionalitats per a l'activació.
 

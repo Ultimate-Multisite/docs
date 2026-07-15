@@ -4,7 +4,7 @@ title: Nzacha - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Filter: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Filter: wu_checkout_form_base_domains
 
 Na-enyocha ngalaba ntọala nke ụdị checkout e kekọrịtara ka ha ghara ịghọ ndekọ ngalaba e jikọtara.
 

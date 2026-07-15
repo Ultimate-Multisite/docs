@@ -3,7 +3,7 @@ title: 'Sapak 14: Indiki näme?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Sapak 14: Indiki ädim näme {#lesson-14-what-comes-next}
+# Sapak 14: Indiki ädim näme
 
 Siz ýörite ugra niýetlenen websaýt platformasyny noldan gurduňyz. FitSite işjeň, fitness studiýalaryna hyzmat edýär we gaýtalanýan girdeji döredýär. Bu jemleýji sapak mundan soň nirä gitmelidigine seredýär.
 

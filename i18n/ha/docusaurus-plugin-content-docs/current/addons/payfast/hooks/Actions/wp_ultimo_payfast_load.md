@@ -4,7 +4,7 @@ title: Aiki - wp_ultimo_payfast_load
 sidebar_label: wp_ultimo_payfast_load
 _i18n_hash: 4c516284f20b6af09dc6c62496cc07fc
 ---
-# Aiki: wp_ultimo_payfast_load {#action-wpultimopayfastload}
+# Aiki: wp_ultimo_payfast_load
 
 Yana faruwa lokacin da aka loda duk abubuwan dogaro
 

@@ -3,7 +3,7 @@ title: Mga Menu ng Hospitality
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality Menus {#hospitality-menus}
+# Hospitality Menus
 
 Ang feature na **Hospitality Menus** ay nagpapahintulot sa Theme Builder na bumuo at mag-embed ng nakaayos na mga pahina ng menu ng pagkain at inumin nang direkta sa iyong WordPress site.
 

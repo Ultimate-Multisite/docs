@@ -3,7 +3,7 @@ title: ការរួមបញ្ចូល WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# ការរួមបញ្ចូលជាមួយ WPMU DEV {#wpmu-dev-integration}
+# ការរួមបញ្ចូលជាមួយ WPMU DEV
 
 ## ទិដ្ឋភាពទូទៅ {#overview}
 WPMU DEV គឺជាវេទិកា WordPress ដ៏ពេញលេញ ដែលផ្តល់នូវការបង្ហោះ (hosting) ប្លុកបន្ថែម (plugins) និងសេវាកម្មសម្រាប់គេហទំព័រ WordPress។ ការរួមបញ្ចូលនេះអនុញ្ញាតឱ្យមានការធ្វើសមកាលកម្មដែន (domain syncing) ដោយស្វ័យប្រវត្តិ និងការគ្រប់គ្រងវិញ្ញាបនបត្រ SSL រវាង Ultimate Multisite និង hosting របស់ WPMU DEV។

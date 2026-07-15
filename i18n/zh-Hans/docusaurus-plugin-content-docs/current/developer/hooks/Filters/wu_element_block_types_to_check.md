@@ -4,7 +4,7 @@ title: 过滤 - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# 过滤器: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# 过滤器: wu_element_block_types_to_check
 
 我们可能需要稍后添加额外的块。
 

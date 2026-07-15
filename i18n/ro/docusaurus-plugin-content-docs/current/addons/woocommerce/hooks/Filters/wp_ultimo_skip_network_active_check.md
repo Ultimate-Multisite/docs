@@ -4,7 +4,7 @@ title: Filtru - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# Filtru: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Filtru: wp_ultimo_skip_network_active_check
 
 Permite dezvoltatorilor să scurtcircuiteze verificarea activării în rețea.
 

@@ -4,7 +4,7 @@ title: Aiki - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Aiki: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
+# Aiki: wu_domain_renewal_failed
 
 Yana kunna bayan ƙoƙarin sabunta domain ya gaza.
 

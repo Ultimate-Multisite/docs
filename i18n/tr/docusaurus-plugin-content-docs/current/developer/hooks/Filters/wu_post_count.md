@@ -4,7 +4,7 @@ title: Filtre - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Filtre: wu_post_count {#filter-wupostcount}
+# Filtre: wu_post_count
 
 Eklenti geliştiricilerinin toplam sayıyı değiştirmesine olanak tanır.
 

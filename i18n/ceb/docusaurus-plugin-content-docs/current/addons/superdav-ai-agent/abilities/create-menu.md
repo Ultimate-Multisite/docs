@@ -3,7 +3,7 @@ title: Paghimo og Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Paghimo og Menu {#create-menu}
+# Paghimo og Menu
 
 Ang abilidad nga **Paghimo og Menu** naghimo og mga menu sa nabigasyon sa WordPress nga adunay suporta para sa lain nga mga label sa nabigasyon nga lahi sa mga titulo sa panid.
 

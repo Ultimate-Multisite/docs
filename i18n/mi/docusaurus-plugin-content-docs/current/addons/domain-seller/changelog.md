@@ -3,7 +3,7 @@ title: Rangitaki Panonitanga Kaihoko Ingoa Rohe
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Rangitaki Huringa Domain Seller {#domain-seller-changelog}
+# Rangitaki Huringa Domain Seller
 
 Putanga 1.3.0 - I tukuna i te 2026-06-02
 - Hou: Kua tāpirihia he whakatūpato network-admin ina tino iti rawa te toenga reseller HostAfrica

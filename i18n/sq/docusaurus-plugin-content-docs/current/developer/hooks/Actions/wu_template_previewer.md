@@ -4,7 +4,7 @@ title: Veprim - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Veprim: wu_template_previewer {#action-wutemplatepreviewer}
+# Veprim: wu_template_previewer
 
 Ekzekutohet kur është brenda kontekstit të parashikuesit të shabllonit.
 

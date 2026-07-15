@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies {#filter-sendauthcookies}
+# Filter: send_auth_cookies
 
 ഓതന്റിമേഷൻ കുക്കികൾ (auth cookies) ക്ലയിന്റിന് യഥാർത്ഥത്തിൽ അയക്കുന്നത് തടയാൻ ഇത് സഹായിക്കുന്നു.
 

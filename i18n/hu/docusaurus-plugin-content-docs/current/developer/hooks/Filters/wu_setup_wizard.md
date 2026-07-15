@@ -4,7 +4,7 @@ title: Szűrő - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Szűrő: wu_setup_wizard {#filter-wusetupwizard}
+# Szűrő: wu_setup_wizard
 
 Ez lehetővé teszi a fejlesztők számára, hogy további beállítási mesterkategóriákat (setup wizard steps) adjanak hozzá.
 

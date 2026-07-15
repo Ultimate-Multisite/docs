@@ -3,7 +3,7 @@ title: የራስጌ ዶሜይን ፍለጋ
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# የራስጌ ዶሜይን ፍለጋ {#header-domain-search}
+# የራስጌ ዶሜይን ፍለጋ
 
 ትንሽ የራስጌ ቅጽ የዶሜይን ፍለጋን እንዲጀምር፣ ከዚያም ደንበኛው በUltimate Multisite ክፍያ መጨረሻ ውስጥ ካሉ ዶሜይኖች እንዲመርጥ ሲፈልጉ ይህን ማዋቀር ይጠቀሙ።
 

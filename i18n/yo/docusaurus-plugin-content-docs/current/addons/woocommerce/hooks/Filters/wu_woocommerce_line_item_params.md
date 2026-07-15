@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Àlẹmọ: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
+# Àlẹmọ: wu_woocommerce_line_item_params
 
 Ṣe àlẹmọ àwọn paramita tí a lò láti dá àwọn nkan ila sílẹ̀ lórí WooCommerce Cart, kí a tó darí alabara lọ sí ìsanwó WooCommerce.
 

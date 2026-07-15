@@ -4,7 +4,7 @@ title: פֿילטער - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# פילטער: secure_auth_cookie {#filter-secureauthcookie}
+# פילטער: secure_auth_cookie
 
 פילטערט צי דאָס אָטענטיפֿיקאַציע־קיכל זאָל נאָר געשיקט ווערן איבער HTTPS.
 

@@ -3,7 +3,7 @@ title: بەربرێژکردنی لینکە بەشدار بۆ پلاندانان
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Manage Shareable Links for Plans {#managing-shareable-links-for-plans}
+# Manage Shareable Links for Plans
 
 Ultimate Multisite به شما این امکان را می‌دهد که لینک‌های طرح‌ها را مستقیماً با مشتریانتان به اشتراک بگذارید. برای انجام این کار، به هر یک از صفحات ویرایش طرح‌های خود بروید و روی دکمه _Click to copy the Shareable Link_ کلیک کنید.
 

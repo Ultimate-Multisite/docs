@@ -3,7 +3,7 @@ title: ક્લાયન્ટ Account પૃષ્ઠ
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# તમારા ક્લાયન્ટનું Account પેજ (v2) {#your-clients-account-page-v2}
+# તમારા ક્લાયન્ટનું Account પેજ (v2)
 
 _**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite આવૃત્તિ 2.x નો ઉલ્લેખ કરે છે.**_
 

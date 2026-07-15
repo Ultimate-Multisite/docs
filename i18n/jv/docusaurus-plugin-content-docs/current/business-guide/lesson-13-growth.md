@@ -3,7 +3,7 @@ title: 'Piwulang 13: Ngembangake Skala'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Piwulang 13: Ngembangake Skala {#lesson-13-scaling-up}
+# Piwulang 13: Ngembangake Skala
 
 Sampeyan wis duwe platform sing mlaku karo pelanggan mbayar. Piwulang iki ngrembug carane tuwuh saka operasi cilik dadi bisnis sing lestari -- ngembangake skala infrastruktur, ngotomatisasi operasi, lan nambah pangentukan saben pelanggan.
 

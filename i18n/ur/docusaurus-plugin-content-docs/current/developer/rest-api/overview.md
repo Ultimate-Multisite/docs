@@ -3,7 +3,7 @@ title: REST API کا جائزہ
 sidebar_position: 1
 _i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API حوالہ {#rest-api-reference}
+# REST API حوالہ
 
 ## بنیادی ترتیب {#base-configuration}
 

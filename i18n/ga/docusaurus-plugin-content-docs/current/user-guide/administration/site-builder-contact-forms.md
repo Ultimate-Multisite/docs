@@ -3,7 +3,7 @@ title: Formais contact na Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Fóramháil Formanna Contact (Contact Forms) {#site-builder-contact-forms}
+# Fóramháil Formanna Contact (Contact Forms)
 
 Is é Superdav AI Agent v1.10.0 le cur áimeacht a chur i bhfeicim a dhéanamh ar fómarmanna contact go díreach ó chaint a bheith ag úsáid an Site Builder agent. Is féidir leis seo a chur i bhfeicim fómarmanna contact go léir le chéile ar aon lúsach without imnídhe ó chaint.
 

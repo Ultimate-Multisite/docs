@@ -3,7 +3,7 @@ title: Installatio Ultimi Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Installatio Ultimi Multisite {#installing-ultimate-multisite}
+# Installatio Ultimi Multisite
 
 :::note
 Hoc praeceptum supponit te iam habere WordPress Multisite installatum et configuratum. Ut discas quomodo, vide [hoc praeceptum](https://www.wpbeginner.com/glossary/multisite/) a WP Beginner.

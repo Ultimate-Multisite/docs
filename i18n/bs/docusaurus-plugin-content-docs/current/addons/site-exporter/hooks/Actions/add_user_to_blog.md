@@ -4,7 +4,7 @@ title: Akcija - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog {#action-addusertoblog}
+# Action: add_user_to_blog
 
 Pokreće se odmah nakon što se korisnik doda na sajt.
 

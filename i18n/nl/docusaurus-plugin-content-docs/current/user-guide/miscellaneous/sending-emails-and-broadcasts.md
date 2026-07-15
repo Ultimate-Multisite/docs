@@ -3,7 +3,7 @@ title: E-mails en broadcasts versturen
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mails en uitzendingen verzenden (v2) {#sending-emails-and-broadcasts-v2}
+# E-mails en uitzendingen verzenden (v2)
 
 _**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 

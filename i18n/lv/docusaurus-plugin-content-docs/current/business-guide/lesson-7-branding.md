@@ -3,7 +3,7 @@ title: '7. nodarbība: Padariet to par savu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7. nodarbība: Padariet to par savu {#lesson-7-making-it-yours}
+# 7. nodarbība: Padariet to par savu
 
 Jūsu klientiem nekad nevajadzētu justies tā, it kā viņi izmantotu "kādu WordPress plugin". Viņiem vajadzētu justies tā, it kā viņi izmantotu FitSite -- platformu, kas izveidota viņu nozarei. Šajā nodarbībā apskatīta zīmola veidošana, white-labeling un tas, kā panākt, lai platforma šķistu kā produkts.
 

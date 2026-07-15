@@ -4,7 +4,7 @@ title: مەشغۇلات - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# مەشغۇلات: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# مەشغۇلات: wp_ultimo_support_agents_deactivation
 
 plugin نىڭ باشقا بۆلەكلىرىنىڭ توختىتىش ئۈچۈن ئۆز routine لىرىنى باغلىشىغا يول قويىدۇ
 

@@ -3,7 +3,7 @@ title: Kontakt formuláre budov webových stránok
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformulá na budovateľom stránky {#site-builder-contact-forms}
+# Kontaktformulá na budovateľom stránky
 
 Superdav AI Agent v1.10.0 pridáva možnosť vytvárať kontaktné formulá priamo z chatu pomocou agenta Site Builder. To vám umožňuje pridať plne funkčné kontaktné formulá na akýkoľvek stránku bez toho, aby ste opustili chat.
 

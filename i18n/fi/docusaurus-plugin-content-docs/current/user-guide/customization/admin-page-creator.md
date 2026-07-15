@@ -3,7 +3,7 @@ title: Ylläpitäjäsivun luoja
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Ylläpitäjäsivun luoja {#admin-page-creator}
+# Ylläpitäjäsivun luoja
 
 Tämä ominaisuus tarjotaan **Admin Page Creator** -lisäosalla.
 

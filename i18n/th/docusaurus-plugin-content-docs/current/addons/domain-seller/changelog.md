@@ -3,7 +3,7 @@ title: บันทึกการเปลี่ยนแปลง Domain Selle
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# บันทึกการเปลี่ยนแปลง Domain Seller {#domain-seller-changelog}
+# บันทึกการเปลี่ยนแปลง Domain Seller
 
 Version 1.3.0 - เผยแพร่เมื่อ 2026-06-02
 - ใหม่: เพิ่มคำเตือนใน network-admin เมื่อยอดคงเหลือของตัวแทนจำหน่าย HostAfrica ต่ำเกินไป

@@ -4,7 +4,7 @@ title: Sía - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Sía: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Sía: wu_element_block_types_to_check
 
 Við gætum þurft að bæta við fleiri blokkum síðar.
 

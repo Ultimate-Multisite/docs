@@ -3,7 +3,7 @@ title: Pemberitahuan Penghapusan Mode Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Pemberitahuan Penghapusan Mode Site Builder {#site-builder-mode-removal-notice}
+# Pemberitahuan Penghapusan Mode Site Builder
 
 **Mode Site Builder telah dihapus di Superdav AI Agent v1.12.0.** Jika Anda menggunakan Mode Site Builder, Anda harus beralih ke **agent Setup Assistant** untuk pembuatan tema dan penyiapan situs.
 

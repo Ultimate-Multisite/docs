@@ -3,7 +3,7 @@ title: cPanel ማዋሃድ
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel ውህደት (Integration) {#cpanel-integration}
+# cPanel ውህደት (Integration)
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 cPanel ብዙ የዌብ ሆስቲንግ አገልግሎት ሰጪዎች (shared and dedicated hosting providers) የሚጠቀሙበት በጣም ታዋቂ የዌብ ሆስቲንግ ቁጥጥር ፓነል ነው። ይህ ውህደት (integration) Ultimate Multisite እና cPanel መካከል የዶሜን መመሳሰልን በራስ-ሰር ያደርጋል፤ ይህም የዶሜን አሊያሶች (domain aliases) እና ንዑስ ዶሜኖች (subdomains) ወደ cPanel አካውንትዎ በራስ-ሰር እንዲጨመሩ ያስችልዎታል።

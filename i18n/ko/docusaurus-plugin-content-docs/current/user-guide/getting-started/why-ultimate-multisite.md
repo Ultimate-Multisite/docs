@@ -3,7 +3,7 @@ title: Ultimate Multisite가 왜 좋은가
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ultimate Multisite를 선택한 이유 {#why-ultimate-multisite}
+# Ultimate Multisite를 선택한 이유
 
 이 글을 읽으시게 되었다면, 아마도 우리 플러그인이 비즈니스 아이디어를 실현할 수 있는 솔루션일 수 있다는 말을 들으셨을 것입니다. 이 글이 끝날 때쯤 필요한 답을 찾으셨길 바랍니다.
 

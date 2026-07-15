@@ -3,7 +3,7 @@ title: Internetutundus
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet otsing {#internet-search}
+# Internet otsing
 
 Gratis AI Agent v1.5.0 lisab **Internet otsing** võimalust, mis võimaldab AI assistentile jutust teada veebist suheldes. See on võimendatud [Brave Search API](https://brave.com/search/api/) või [Tavily API](https://tavily.com/) abil.
 

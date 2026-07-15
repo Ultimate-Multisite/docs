@@ -3,7 +3,7 @@ title: Operacije suverenog najmaka
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operacije suverenog najmesta (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Operacije suverenog najmesta (Sovereign Tenant Operations)
 
 Ultimate Multisite verzija 1.2.0 dodaje operativne alate za suverene najmove: subsajte koji rade sa sopstvenom bazom podataka, root sistemom fajlova i kontekstom rutiranja, dok ostaju vidljivi mrežnom administratoru.
 

@@ -4,7 +4,7 @@ title: Gweithred - wu_after_switch_template
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# Gweithred: wu_after_switch_template {#action-wuafterswitchtemplate}
+# Gweithred: wu_after_switch_template
 
 Caniatáu i ddatblygwyr plugin fachu swyddogaethau ar ôl i ddefnyddiwr neu super admin newid templed y safle
 

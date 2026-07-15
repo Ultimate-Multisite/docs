@@ -3,7 +3,7 @@ title: Nkwado Ụbọchị Ọzọ Na Ebe Ihe Ịchọ
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Tạo Sản Phẩm Đăng Ký Đầu Tiên Của Bạn (v2) {#creating-your-first-subscription-product-v2}
+# Tạo Sản Phẩm Đăng Ký Đầu Tiên Của Bạn (v2)
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này chỉ dành cho người dùng Ultimate Multisite phiên bản 2.x. Nếu bạn đang sử dụng phiên bản 1.x,**_ **_**hãy xem bài viết này**_**.
 

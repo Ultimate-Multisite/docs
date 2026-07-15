@@ -3,7 +3,7 @@ title: Fhàilte a' Chluas agus DNS an Chluasach
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Field agus Gorcha DNS a' chluarach {#checkout-field-and-customer-dns-management}
+# Field agus Gorcha DNS a' chluarach
 
 ## Fhàilteachadh an fhadail cheòrsaichean (Domain Selection checkout field) {#the-domain-selection-checkout-field}
 

@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_checkout_step_validation_submittable_field_typ
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Filter: wu_checkout_step_validation_submittable_field_types
 
 ಫೀಲ್ಡ್ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಲ್ಲಿಸಬಹುದಾದ (auto-submittable) ಆಗಿದ್ದರೆ, ವಿಕಸಕರು (developers) ಈ ಪರಿಶೀಲನೆಯನ್ನು ಬಿಟ್ಟುಹೋಗಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

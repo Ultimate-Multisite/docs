@@ -3,7 +3,7 @@ title: Regjistri i ndryshimeve të integrimit me WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Ditari i ndryshimeve të integrimit WooCommerce {#woocommerce-integration-changelog}
+# Ditari i ndryshimeve të integrimit WooCommerce
 
 Versioni 2.2.0 - Publikuar më 2026-07-01
 * E re: Shumat e taksave të Ultimate Multisite tani shfaqen si rreshta të veçantë tarifash të WooCommerce në checkout, duke i bërë totalet e taksave më të qarta para pagesës.

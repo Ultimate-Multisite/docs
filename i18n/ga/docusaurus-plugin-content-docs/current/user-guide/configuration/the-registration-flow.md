@@ -3,7 +3,7 @@ title: An Fhluint Róisiallaíocht
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# An Faocháir Registration (v2) {#the-registration-flow-v2}
+# An Faocháir Registration (v2)
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 

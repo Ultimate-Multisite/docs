@@ -3,7 +3,7 @@ title: Integrace Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Integrace Cloudflare {#cloudflare-integration}
+# Integrace Cloudflare
 
 ## Přehled {#overview}
 Cloudflare je přední síť pro doručování obsahu (CDN) a poskytovatel zabezpečení, který pomáhá chránit a zrychlovat weby. Tato integrace umožňuje automatickou správu domén mezi Ultimate Multisite a Cloudflare, zejména pro multisite instalace se subdoménami.

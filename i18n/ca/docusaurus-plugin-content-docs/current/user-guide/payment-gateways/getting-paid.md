@@ -3,7 +3,7 @@ title: Com cobrar
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Rebre pagaments (v2) {#getting-paid-v2}
+# Rebre pagaments (v2)
 
 _**NOTA IMPORTANT: Aquest article fa referència a Ultimate Multisite versió 2.x.**_
 

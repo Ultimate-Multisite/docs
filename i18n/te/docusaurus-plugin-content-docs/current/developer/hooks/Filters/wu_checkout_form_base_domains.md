@@ -4,7 +4,7 @@ title: ఫిల్టర్ - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# ఫిల్టర్: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# ఫిల్టర్: wu_checkout_form_base_domains
 
 మ్యాప్ చేసిన డొమైన్ రికార్డులుగా మారకూడని భాగస్వామ్య చెల్లింపు ఫారమ్ మూల డొమైన్‌లను ఫిల్టర్ చేస్తుంది.
 

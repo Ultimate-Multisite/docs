@@ -3,7 +3,7 @@ title: Uendelezaji wa Lango Maalum
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Utengenezaji wa Gateway Maalum {#custom-gateway-development}
+# Utengenezaji wa Gateway Maalum
 
 Unaweza kuunda malango maalum ya malipo kwa kupanua darasa la `Base_Gateway`.
 

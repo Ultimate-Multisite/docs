@@ -3,7 +3,7 @@ title: Ho na le litlhahlo tsa ho tsamaea le lits'e mo le system emails
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ho Fana a Emails ea Setso {#managing-system-emails}
+# Ho Fana a Emails ea Setso
 
 Ultimate Multisite e fana le emails e fapaneng tsa setso ho taba joalo ka lipa la tsamaiso, litswalo tsa khotso (confirmations), le litšomo tsa tšepo (receipts) le liphletso tsa bohloko. U ka u rata ho fetola templates ea emails ho fetolela li-brand la hau.
 

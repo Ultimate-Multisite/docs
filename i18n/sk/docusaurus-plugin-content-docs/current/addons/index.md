@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Doplnky Ultimate Multisite {#ultimate-multisite-addons}
+# Doplnky Ultimate Multisite
 
 Doplnky rozširujú Ultimate Multisite o ďalšie funkcie a integrácie. Väčšina doplnkov je platená a dá sa zakúpiť na [ultimatemultisite.com](https://ultimatemultisite.com).
 

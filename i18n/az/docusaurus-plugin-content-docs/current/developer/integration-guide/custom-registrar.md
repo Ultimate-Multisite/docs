@@ -3,7 +3,7 @@ title: Xüsusi bir Registrar inteqrasiyası qurmaq
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Xüsusi Registrar İntegrasiyası Qurmaq {#building-a-custom-registrar-integration}
+# Xüsusi Registrar İntegrasiyası Qurmaq
 
 Domain Seller addon-u **Integration Registry** (İnteqrasiya Qeydiyyatı) modelindən istifadə edir. Hər bir registrar, `Domain_Selling_Capability` interfeysini tətbiq edən və `wu_domain_seller_register_capabilities` action hook-u vasitəsilə özünü qeyd edən bir PHP sinifidir.
 

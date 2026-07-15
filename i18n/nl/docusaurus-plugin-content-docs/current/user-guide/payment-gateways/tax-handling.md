@@ -3,7 +3,7 @@ title: Belastingafhandeling
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Belastingafhandeling {#tax-handling}
+# Belastingafhandeling
 
 Ultimate Multisite heeft een module voor belastinginning ingebouwd in onze core plugin, dus als je verkoopbelastingen op je plannen, pakketten en diensten moet innen, kun je dat eenvoudig doen zonder add-ons te hoeven installeren.
 

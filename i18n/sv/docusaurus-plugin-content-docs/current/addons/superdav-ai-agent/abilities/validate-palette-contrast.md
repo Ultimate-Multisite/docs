@@ -3,7 +3,7 @@ title: Validera palettkontrast
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validera palettkontrast {#validate-palette-contrast}
+# Validera palettkontrast
 
 Funktionen **Validera palettkontrast** kontrollerar färgpar i din designpalett mot WCAG (Web Content Accessibility Guidelines) för att se till att de fungerar innan de tillämpas på ditt tema.
 

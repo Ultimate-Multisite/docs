@@ -3,7 +3,7 @@ title: Kontrasta paletê piştrast bike
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Berevajîtiya Paletê Erê Bike {#validate-palette-contrast}
+# Berevajîtiya Paletê Erê Bike
 
 Şiyana **Berevajîtiya Paletê Erê Bike** cotên rengî di paleta sêwirana te de ji bo lihevhatina WCAG (Rêbernameyên Gihîştinê yên Naveroka Webê) kontrol dike berî ku wan li theme-a te bi kar bîne.
 

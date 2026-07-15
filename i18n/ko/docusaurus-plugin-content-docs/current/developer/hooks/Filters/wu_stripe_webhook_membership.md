@@ -4,7 +4,7 @@ title: We need to output nothing.Filter - wu_stripe_webhook_membership
 sidebar_label: wu_stripe_webhook_membership
 _i18n_hash: b39da1f6b46f6ac7af6a5674c8b5d261
 ---
-# Filter: wu_stripe_webhook_membership {#filter-wustripewebhookmembership}
+# Filter: wu_stripe_webhook_membership
 
 멤버십 기록을 이 웹훅과 연결합니다.
 

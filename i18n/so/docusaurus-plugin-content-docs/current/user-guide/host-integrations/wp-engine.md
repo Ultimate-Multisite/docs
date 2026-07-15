@@ -3,7 +3,7 @@ title: Isdhaafinta WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Isku-dhaafinta WordPress (WP Engine Integration) {#wp-engine-integration}
+# Isku-dhaafinta WordPress (WP Engine Integration)
 
 ## Guudbixitaanka guud (Overview) {#overview}
 WP Engine waa platform hosting-ka WordPress oo heer sare ah oo maamul ah oo bixiya waxa ugu wanaagsan ee performance, amniga, iyo ballaaran (scalability) loona siiyo bogagga WordPress. Isku-dhaafinta (integration) kan ayaa kuu oggolaanaya isku-dubbaridda domain-ka (domain syncing) oo toos ah inta u dhaxaysa Ultimate Multisite iyo WP Engine.
@@ -53,7 +53,7 @@ Marka domain la dhigo Ultimate Multisite:
 
 ### Taageerada Subdomain-ka {#subdomain-support}
 
-# Install Multisite oo Subdomains: {#important-notes}
+# Install Multisite oo Subdomains:
 
 1. Isku-dhaafinta waxay ku dhex jirtaa inuu koox kasta oo subdomain ah u soo diri doono WP Engine marka website cusub la abuuro.
 2. WP Engine wuxuu maamulaa habka loo dejiyo subdomain-ka.

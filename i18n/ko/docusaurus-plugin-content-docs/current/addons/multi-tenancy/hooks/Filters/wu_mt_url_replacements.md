@@ -4,7 +4,7 @@ title: 필터 - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# 필터: wu_mt_url_replacements {#filter-wumturlreplacements}
+# 필터: wu_mt_url_replacements
 
 URL 대체 쌍을 필터링합니다.
 

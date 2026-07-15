@@ -4,7 +4,7 @@ title: Parzûn - wu_get_network_public_ip
 sidebar_label: wu_get_network_public_ip
 _i18n_hash: 129b6c2423c8d5af9f4314cc35715281
 ---
-# Parzûn: wu_get_network_public_ip {#filter-wugetnetworkpublicip}
+# Parzûn: wu_get_network_public_ip
 
 Li ser vî parzûnê zêdetir li jêr bibîne, li ser heman rêbazê.
 

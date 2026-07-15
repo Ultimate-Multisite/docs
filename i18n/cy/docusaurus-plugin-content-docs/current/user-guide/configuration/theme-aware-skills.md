@@ -3,7 +3,7 @@ title: Gwirioneddolau y Gymuned
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skillau Gwyrddol i'r Theim {#theme-aware-skills}
+# Skillau Gwyrddol i'r Theim
 
 Mae Superdav AI Agent v1.10.0 yn cyflwyno pedair newydd o thau gwrddol i'r theim sy mae'n gweithredol gyda'ch WordPress. Mae’r thau hyn yn ychwanegu gynnig a fyddu wedi'u cyfathoghio i'r argyngorthol, gan ei ddefnyddio'r argyllun a phatrwyddau'r theim.
 

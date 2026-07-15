@@ -4,7 +4,7 @@ title: ফিল্টার - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Filter: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Filter: wu_checkout_validation_aliases
 
 প্লাগইন ডেভেলপারদের ফর্ম ভ্যালিডেটর-এ কাস্টম Alias যোগ করার সুযোগ দেয়।
 

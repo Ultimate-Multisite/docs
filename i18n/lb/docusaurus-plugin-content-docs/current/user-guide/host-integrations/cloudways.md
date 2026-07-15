@@ -3,7 +3,7 @@ title: Cloudways Integratioun
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration {#cloudways-integration}
+# Cloudways Integration
 
 ## Überblick {#overview}
 Cloudways isch e verwalteti Cloud-Hosting-Plattform, wo dir erlaubt, WordPress-Sites uf verschidene Cloud-Provider wie DigitalOcean, AWS, Google Cloud und meh z'deploye. Dä Integration ermöglicht automatische Domain-Synchronisation und SSL-Zertifikat-Management zwüsche Ultimate Multisite und Cloudways.

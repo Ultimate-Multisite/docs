@@ -4,7 +4,7 @@ title: 필터 - wu_sso_url
 sidebar_label: wu_sso_url
 _i18n_hash: a369dcf0f4cab1f5941c82ac58286155
 ---
-# 필터: wu_sso_url {#filter-wussourl}
+# 필터: wu_sso_url
 
 도메인 간 고객 작업을 위해 반환되기 전에 생성된 SSO URL을 필터링합니다.
 

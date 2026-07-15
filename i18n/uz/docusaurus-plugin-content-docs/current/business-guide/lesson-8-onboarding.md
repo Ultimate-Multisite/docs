@@ -3,7 +3,7 @@ title: '8-dars: Mijozlarni ishga tushirish'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# 8-dars: Mijozni ishga moslashtirish {#lesson-8-customer-onboarding}
+# 8-dars: Mijozni ishga moslashtirish
 
 Mijozni ro‘yxatdan o‘tkazish ishning faqat yarmi. Agar ular tizimga kirib, o‘zini boshi qotgandek his qilsa va qaytib kelmasa, siz ularni yo‘qotgansiz. Bu dars yangi ro‘yxatdan o‘tgan foydalanuvchini faol va jalb qilingan mijozga aylantiradigan tajribani loyihalaydi.
 

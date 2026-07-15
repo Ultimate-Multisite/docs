@@ -3,7 +3,7 @@ title: Ṣíṣètò PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ṣíṣètò Ẹnu-ọna Isanwo PayPal (v2) {#setting-up-the-paypal-gateway-v2}
+# Ṣíṣètò Ẹnu-ọna Isanwo PayPal (v2)
 
 _**ÀKÍYÈSÍ PÀTÀKÌ: Àpilẹ̀kọ yìí tọ́ka sí Ultimate Multisite ẹ̀dà 2.x.**_
 

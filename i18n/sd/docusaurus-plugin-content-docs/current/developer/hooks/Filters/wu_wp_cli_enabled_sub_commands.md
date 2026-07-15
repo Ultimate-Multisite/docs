@@ -4,7 +4,7 @@ title: فلٽر - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# فلٽر: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# فلٽر: wu_wp_cli_enabled_sub_commands
 
 فلٽر ڪري ٿو ته هن ايڪائي لاءِ ڪهڙا sub_commands فعال آهن.
 

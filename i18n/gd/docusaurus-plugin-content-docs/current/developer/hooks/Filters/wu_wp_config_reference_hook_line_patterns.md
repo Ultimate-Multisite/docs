@@ -4,7 +4,7 @@ title: Sìoltachan - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Criathrag: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Criathrag: wu_wp_config_reference_hook_line_patterns
 
 Bidh sinn a’ sgrùdadh trì pàtranan nuair a tha sinn a’ feuchainn ri obrachadh a-mach càite an urrainn dhuinn na constants againn a chur a-steach:
 

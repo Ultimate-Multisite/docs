@@ -3,7 +3,7 @@ title: 開発者向けドキュメント
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# 開発者向けドキュメント {#developer-documentation}
+# 開発者向けドキュメント
 
 このガイドでは、Ultimate Multisite との連携、拡張、または Ultimate Multisite 向け addon の開発に必要な情報を開発者向けにまとめています。Ultimate Multisite は WordPress Multisite ネットワークを Website-as-a-Service（WaaS）プラットフォームに変換します。
 

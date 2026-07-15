@@ -3,7 +3,7 @@ title: ਇੱਕ ਨਿਸ਼ਾ ਵੈੱਬਸਾਈਟ ਕਾਰੋਬਾਰ 
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite ਨਾਲ ਇੱਕ Niche Website Business ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ {#build-a-niche-website-business-with-ultimate-multisite}
+# Ultimate Multisite ਨਾਲ ਇੱਕ Niche Website Business ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ
 
 ਜਿਹੜੇ ਲੋਕ ਵੈੱਬਸਾਈਟਾਂ ਵੇਚਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਨ, ਉਹ ਜ਼ਿਆਦਾਤਰ Wix, Squarespace, ਅਤੇ ਹਜ਼ਾਰਾਂ ਫ੍ਰੀਲਾਂਸਰਾਂ ਨਾਲ ਕੀਮਤ 'ਤੇ ਮੁਕਾਬਲਾ ਕਰਦੇ ਹਨ। ਉਹ ਹਾਰ ਜਾਂਦੇ ਹਨ। ਜਿਹੜੇ ਜਿੱਤਦੇ ਹਨ, ਉਹ ਇੱਕ ਖਾਸ ਸਰੋਤ (audience) ਚੁਣਦੇ ਹਨ, ਉਸ ਸਰੋਤ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੱਲ ਬਣਾਉਂਦੇ ਹਨ, ਅਤੇ ਉਸ ਮੁੱਲ (value) ਲਈ চার্জ ਕਰਦੇ ਹਨ ਜੋ ਉਹ ਪਹੁੰਚਾਉਂਦੇ ਹਨ।
 

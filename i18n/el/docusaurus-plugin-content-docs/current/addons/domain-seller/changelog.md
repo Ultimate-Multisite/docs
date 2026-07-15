@@ -3,7 +3,7 @@ title: Αρχείο αλλαγών Πωλητή Domain
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Καταγραφή αλλαγών Domain Seller {#domain-seller-changelog}
+# Καταγραφή αλλαγών Domain Seller
 
 Έκδοση 1.3.0 - Κυκλοφόρησε στις 2026-06-02
 - Νέο: Προστέθηκε προειδοποίηση network-admin όταν το υπόλοιπο μεταπωλητή HostAfrica γίνεται πολύ χαμηλό

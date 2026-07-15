@@ -3,7 +3,7 @@ title: Algemene Vrae
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Dikwilig Gestelde Vrae {#frequently-asked-questions}
+# Dikwilig Gestelde Vrae
 
 Hier is 'n paar **Dikwilig Gestelde Vrae** wat dikwels opkom tydens ondersteuningsversoeke.
 

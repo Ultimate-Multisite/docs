@@ -3,7 +3,7 @@ title: De Registrierigsfluss
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# De Registrierigsablauf (v2) {#the-registration-flow-v2}
+# De Registrierigsablauf (v2)
 
 _**WICHTIGE NOTIZ: Dä Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
 

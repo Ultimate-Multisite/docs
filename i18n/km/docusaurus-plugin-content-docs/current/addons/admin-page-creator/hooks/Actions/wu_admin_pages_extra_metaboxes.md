@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_admin_pages_extra_metaboxes
 sidebar_label: wu_admin_pages_extra_metaboxes
 _i18n_hash: cf2856dc65b72864b0a61dd1db526944
 ---
-# Action៖ wu_admin_pages_extra_metaboxes {#action-wuadminpagesextrametaboxes}
+# Action៖ wu_admin_pages_extra_metaboxes
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍកម្មវិធីបន្ថែម បន្ថែមជម្រើស metaboxes ថ្មី =)
 

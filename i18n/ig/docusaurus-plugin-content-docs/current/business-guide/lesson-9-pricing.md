@@ -3,7 +3,7 @@ title: 'Ihe ọmụmụ 9: Ịtọ ọnụahịa maka uru'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Ihe Ọmụmụ 9: Ịtọ Ọnụahịa Maka Uru {#lesson-9-pricing-for-profit}
+# Ihe Ọmụmụ 9: Ịtọ Ọnụahịa Maka Uru
 
 Na Ihe Ọmụmụ 5 anyị tọrọ ọnụahịa mbụ maka plan FitSite. Ugbu a anyị na-eme ka usoro ịtọ ọnụahịa ka mma site na teknụzụ ndị na-abawanye ego, na-akwalite upgrade, ma na-ebelata churn.
 

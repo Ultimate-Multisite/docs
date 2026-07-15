@@ -3,7 +3,7 @@ title: Cyflwyno'r Ddaetholwr
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Cyfrolio'r Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
+# Cyfrolio'r Dashboard Ultimate Multisite
 
 Yn ddiweddar i'r cyd-fydd yn fwy adeiladuol a'r cyfenau gweithredol o Ultimate Multisite, byddwn i'r dashboard gweld.
 

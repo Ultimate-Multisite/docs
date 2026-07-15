@@ -3,7 +3,7 @@ title: Мультисайт орнотуучу wizards
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Мультисайт Орносозу (Multisite Setup Wizard) {#multisite-setup-wizard}
+# Мультисайт Орносозу (Multisite Setup Wizard)
 
 Ultimate Multisite-та стандартный WordPress орносозундуктуну автоматтык түрдө WordPress Multisite тармагына айландырат. Бул сиздин `wp-config.php` файлына колдонуу же базалык буйруктарды аткаруунун кереги жок дегенди билдирет.
 

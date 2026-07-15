@@ -3,7 +3,7 @@ title: Cyfathrebu Safonau
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Cyfalu'r Safonau {#managing-sites}
+# Cyfalu'r Safonau
 
 Ynysion (neu subsites) yw cyd-fyddol o'r gweithrediad WaaS eich busnes. Mae Ultimate Multisite gyda 3 rheol o safonau:
 

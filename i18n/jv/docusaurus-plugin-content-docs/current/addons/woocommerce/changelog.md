@@ -3,7 +3,7 @@ title: Cathetan Owah-owahan Integrasi WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Changelog Integrasi WooCommerce {#woocommerce-integration-changelog}
+# Changelog Integrasi WooCommerce
 
 Versi 2.2.0 - Dirilis ing 2026-07-01
 * Anyar: Jumlah pajak Ultimate Multisite saiki katon minangka baris biaya WooCommerce kapisah ing checkout, nggawe total pajak luwih cetha sadurunge pembayaran.

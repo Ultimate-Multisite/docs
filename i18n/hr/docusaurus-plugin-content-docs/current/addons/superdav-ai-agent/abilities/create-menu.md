@@ -3,7 +3,7 @@ title: Stvori izbornik
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Stvori izbornik {#create-menu}
+# Stvori izbornik
 
 Sposobnost **Stvori izbornik** stvara WordPress navigacijske izbornike s podrškom za zasebne navigacijske oznake odvojene od naslova stranica.
 

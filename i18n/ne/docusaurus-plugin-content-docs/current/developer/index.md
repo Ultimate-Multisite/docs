@@ -3,7 +3,7 @@ title: विकासकर्ता दस्तावेजीकरण
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# विकासकर्ता दस्तावेज {#developer-documentation}
+# विकासकर्ता दस्तावेज
 
 यो मार्गदर्शिकाले विकासकर्ताहरूलाई Ultimate Multisite सँग एकीकृत गर्न, विस्तार गर्न, वा त्यसका लागि एडअनहरू विकास गर्न आवश्यक सबै कुरा प्रदान गर्छ। Ultimate Multisite ले WordPress Multisite नेटवर्कलाई Website-as-a-Service (WaaS) प्लेटफर्ममा रूपान्तरण गर्छ।
 

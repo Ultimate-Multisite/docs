@@ -4,7 +4,7 @@ title: Acțiune - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Acțiune: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Acțiune: wu_multi_tenancy_init
 
 Se declanșează după ce add-on-ul Multi-Tenancy a fost inițializat complet.
 

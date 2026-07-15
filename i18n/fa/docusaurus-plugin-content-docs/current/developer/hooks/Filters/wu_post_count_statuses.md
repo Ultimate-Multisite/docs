@@ -4,7 +4,7 @@ title: فیلتر - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# فیلتر: wu_post_count_statuses {#filter-wupostcountstatuses}
+# فیلتر: wu_post_count_statuses
 
 به توسعه‌دهندگان پلاگین اجازه می‌دهد تا تعیین کنند که کدام وضعیت پست باید شمارش شود. به طور پیش‌فرض، پست‌های منتشر شده (published) و خصوصی (private) شمارش می‌شوند.
 

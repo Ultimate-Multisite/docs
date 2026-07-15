@@ -3,7 +3,7 @@ title: 'Pangajaran 6: Pangalaman Signup'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Pangajaran 6: Pangalaman Pendaptaran {#lesson-6-the-signup-experience}
+# Pangajaran 6: Pangalaman Pendaptaran
 
 Alur pameseran nyaéta tempat minat robah jadi panghasilan. Prosés pendaptaran anu ngabingungkeun atawa umum teuing bakal kaleungitan palanggan. Alur anu husus pikeun nis anu nyarita ku basa maranéhna jeung karasa gampang bakal ngarobah maranéhna jadi palanggan.
 

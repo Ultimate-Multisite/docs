@@ -3,7 +3,7 @@ title: Ngatur Link Shareable Pikeun Rencana
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ngaturkeun Link Shareable Keur Rencana (Plans) {#managing-shareable-links-for-plans}
+# Ngaturkeun Link Shareable Keur Rencana (Plans)
 
 Ultimate Multisite nawiskeun pilihan pikeun ngabagikeun link rencana langsung ka pelanggan anjeun. Pikeun ngalakukeun éta, mindah ka sabab edit (edit page) salah sahiji rencana anjeun sareng klik tombol _Click to copy the Shareable Link_.
 

@@ -3,7 +3,7 @@ title: 'Összhang 11: Ügyfélnek találása'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Tanulmány 11: Ügyfélkeresés {#lesson-11-finding-customers}
+# Tanulmány 11: Ügyfélkeresés
 
 Egy platform, amelyen nincs ügyfél, csak hobbi. Ez a tanulmány arról szól, hogyan lehet ügyfeleket szerezni egy szűk, meghatározott területen (niche vertical) – olyan stratégiákról, amelyek akkor működnek, mert egyetlen iparágra koncentrálsz.
 

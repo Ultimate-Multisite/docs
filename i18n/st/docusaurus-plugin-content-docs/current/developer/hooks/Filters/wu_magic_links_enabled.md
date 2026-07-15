@@ -4,7 +4,7 @@ title: Sefe - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Sefehlo: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+# Sefehlo: wu_magic_links_enabled
 
 Sefa hore na lihokelo tsa boselamose li lumelletsoe.
 

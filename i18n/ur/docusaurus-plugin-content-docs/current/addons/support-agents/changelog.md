@@ -3,7 +3,7 @@ title: سپورٹ ایجنٹس چنج لاگ
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Support Agents کی تبدیلیوں کی فہرست {#support-agents-changelog}
+# Support Agents کی تبدیلیوں کی فہرست
 
 ورژن: 1.0.14 - ریلیز ہونے کی تاریخ: 2026-05-05
 * درست کیا گیا: صحیح ورڈپریس پلگ ان کی انحصار (dependency) کا اعلان کرنے کے لیے Requires Plugins ہیڈر شامل کیا گیا۔

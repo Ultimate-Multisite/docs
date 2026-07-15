@@ -4,7 +4,7 @@ title: Әрекет - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Әрекет: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Әрекет: wu_domain_mapping_register_filters
 
 Кейбір plugin-дер URL-ді mapping белсенді болғанға дейін сақтайды немесе URL-дерді жоғарыдағы filter-лерге кірмейтін басқа тәсілмен құрастырады.
 

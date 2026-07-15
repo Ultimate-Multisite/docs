@@ -3,7 +3,7 @@ title: 网站构建器联系表单
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# 网站构建器联系表单 {#site-builder-contact-forms}
+# 网站构建器联系表单
 
 Superdav AI Agent v1.10.0 新增了通过 Site Builder agent 直接从聊天界面创建联系表单的功能。这让您无需离开聊天界面，就能为任何页面添加功能完善的联系表单。
 

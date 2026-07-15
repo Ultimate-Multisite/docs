@@ -4,7 +4,7 @@ title: Action - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Noen plugins kan lagre URL-er før kartleggingen var aktiv, eller de kan bygge URL-er på en annen måte som ikke er inkludert i filtrene ovenfor.
 

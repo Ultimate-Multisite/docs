@@ -3,7 +3,7 @@ title: Экспорт жана импорт
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Экспорт жана импорт {#export--import}
+# Экспорт жана импорт
 
 Ultimate Multisite 2.9.0 дагы **Tools > Export & Import** (Чыгаруу жана импорт) деген бөлүмдө бир сайтты ZIP файлы катары пакеттештирүү, андан ошону калыбына келтирүү же бирCompatible Ultimate Multisite жана single-site WordPress орнотуулары арасында сайтты которуу керек болгон учурда колдонууга болот.
 

@@ -3,7 +3,7 @@ title: रिली नोटहरू
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# रिलीज नोटहरू {#release-notes}
+# रिलीज नोटहरू
 
 ## संस्करण २.१३.० — २०२६-०६-०५ मा जारी गरिएको {#version-2130--released-on-2026-06-05}
 

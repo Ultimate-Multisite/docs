@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Isdhexgalka WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Diiwaanka Isbeddellada Isdhexgalka WooCommerce {#woocommerce-integration-changelog}
+# Diiwaanka Isbeddellada Isdhexgalka WooCommerce
 
 Nooca 2.2.0 - La sii daayay 2026-07-01
 * Cusub: Qaddarrada canshuurta Ultimate Multisite hadda waxay ka muuqdaan checkout-ka sidii khadad fee WooCommerce oo kala gaar ah, taas oo wadarta canshuurta ka dhigaysa mid ka cad ka hor lacag-bixinta.

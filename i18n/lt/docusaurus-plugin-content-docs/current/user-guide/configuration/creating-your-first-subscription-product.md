@@ -3,7 +3,7 @@ title: Sukurti savo pirmąjį prekybos abonementą
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Jūsų Pirmo Mokesčių Produktų Sukurimas (v2) {#creating-your-first-subscription-product-v2}
+# Jūsų Pirmo Mokesčių Produktų Sukurimas (v2)
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis skirtas tik Ultimate Multisite versijos 2.x vartotojams. Jei naudojate versiją 1.x,**_ **_skirkite šį straipsnis**_.
 

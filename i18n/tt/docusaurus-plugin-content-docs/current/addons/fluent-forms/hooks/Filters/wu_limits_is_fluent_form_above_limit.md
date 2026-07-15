@@ -4,7 +4,7 @@ title: Фильтр - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Фильтр: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Фильтр: wu_limits_is_fluent_form_above_limit
 
 Бирелгән форма төренең бу планда рөхсәт ителгәнме-юкмы икәнен тикшерә. Plugin эшләүчеләргә кайтарылган кыйммәтне фильтрларга мөмкинлек бирә
 

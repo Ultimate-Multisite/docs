@@ -4,7 +4,7 @@ title: Action - wp_ultimo_affiliatewp_load
 sidebar_label: wp_ultimo_affiliatewp_load
 _i18n_hash: 91a44e5af84c5861edbed9ac2809136a
 ---
-# యాక్షన్: wp_ultimo_affiliatewp_load {#action-wpultimoaffiliatewpload}
+# యాక్షన్: wp_ultimo_affiliatewp_load
 
 అన్ని డిపెండెన్సీలు లోడ్ అయినప్పుడు ఇది ట్రిగ్గర్ అవుతుంది.
 

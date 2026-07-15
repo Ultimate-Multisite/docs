@@ -3,7 +3,7 @@ title: Ultimate Multisiten asentaminen
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisiten asentaminen {#installing-ultimate-multisite}
+# Ultimate Multisiten asentaminen
 
 :::note
 Tämä opas olettaa, että WordPress Multisite on jo asennettu ja määritetty. Lisätietoja löydät tästä oppaasta [this tutorial](https://www.wpbeginner.com/glossary/multisite/) WP Beginner -sivustolta.

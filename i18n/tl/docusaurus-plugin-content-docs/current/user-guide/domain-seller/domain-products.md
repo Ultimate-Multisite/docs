@@ -3,7 +3,7 @@ title: Mga Produkto at Presyo ng Domain
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Mga Produkto at Presyo ng Domain {#domain-products-and-pricing}
+# Mga Produkto at Presyo ng Domain
 
 Ang mga domain product ay kung paano mo kokontrol ang pagpepresyo, TLDs (Top-Level Domains), WHOIS privacy, at pagpili ng provider. Ang bawat domain product ay isang standard na Multisite Ultimate product na may dagdag na tab na **Domain Settings**.
 

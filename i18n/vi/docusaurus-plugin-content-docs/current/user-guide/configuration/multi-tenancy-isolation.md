@@ -3,7 +3,7 @@ title: Cách ly đa người thuê
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Cô lập Đa người thuê (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Cô lập Đa người thuê (Multi-Tenancy Isolation)
 
 Cô lập đa người thuê là một khái niệm quan trọng trong các hệ thống WordPress đa trang (multisite). Nó đề cập đến việc đảm bảo rằng dữ liệu, cấu hình và hoạt động của một trang web (site) không ảnh hưởng hay bị lẫn lộn với các trang web khác đang chạy trên cùng một nền tảng hoặc máy chủ. Nói cách khác, mỗi trang web phải hoạt động như một thực thể độc lập hoàn toàn về mặt dữ liệu.
 

@@ -4,7 +4,7 @@ title: Sefa - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Sefa: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Sefa: wu_checkout_form_base_domains
 
 Inosefa ma base domains akagovaniswa echeckout-form asingafaniri kuva marekodhi e mapped-domain.
 

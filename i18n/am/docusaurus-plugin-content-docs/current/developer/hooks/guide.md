@@ -3,7 +3,7 @@ title: የመንጠቆዎች አጠቃቀም መመሪያ
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# የHooks አጠቃቀም መመሪያ {#hooks-usage-guide}
+# የHooks አጠቃቀም መመሪያ
 
 Ultimate Multisite ከ200 በላይ action hooks እና ከ280 በላይ filter hooks አሉት። ይህ ገጽ በጣም በተደጋጋሚ ጥቅም ላይ የሚውሉ hooks ምሳሌዎችን በመስጠት ይሸፍናል። ሙሉ በሙሉ በራስ-የተፈጠረ ማጣቀሻ (reference) የሚያስፈልግ ከሆነ፣ በዚህ ክፍል ውስጥ ያሉትን ሌሎች ገጾች ይመልከቱ።
 

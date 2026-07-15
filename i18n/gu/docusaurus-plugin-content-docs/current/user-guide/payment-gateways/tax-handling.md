@@ -3,7 +3,7 @@ title: કર સંચાલન
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# કર સંભાળ {#tax-handling}
+# કર સંભાળ
 
 Ultimate Multisite માં અમારા મુખ્ય plugin માં જ કર વસૂલાત મોડ્યુલ બનાવેલું છે, તેથી જો તમને તમારા plans, packages અને સેવાઓ પર વેચાણ કર વસૂલવાની જરૂર હોય, તો તમે કોઈ add-ons ઇન્સ્ટોલ કર્યા વિના સરળતાથી તે કરી શકો છો.
 

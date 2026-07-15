@@ -3,7 +3,7 @@ title: Sisäänrakennetut agentit
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Sisäänrakennetut agentit {#built-in-agents}
+# Sisäänrakennetut agentit
 
 Gratis AI Agent v1.9.0 sisältää viisi sisäänrakennettua agenttia, joista jokainen on esikonfiguroitu kohdennetulla työkalujoukolla, räätälöidyllä järjestelmäkehotteella ja aloitusehdotuksilla, jotka sopivat kyseisen alueen yleisiin tehtäviin. Agenttien välillä vaihtaminen muuttaa sitä, mitä avustaja voi tehdä ja miten se vastaa — ilman mitään määrityksiä sinun puoleltasi. Superdav AI Agent v1.18.0 voi lisätä näihin työnkulkuihin aikataulutietoisia työkaluja, muistutustietueita, hyväksyntäportteja ja SMS-ilmoituksia, kun niihin liittyvät integraatiot on määritetty.
 

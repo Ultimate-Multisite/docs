@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Tuilleadain Ultimate Multisite {#ultimate-multisite-addons}
+# Tuilleadain Ultimate Multisite
 
 Leudaichidh tuilleadain Ultimate Multisite le feartan agus amalachaidhean a bharrachd. Tha a’ mhòr-chuid de thuilleadain pàighte agus faodar an ceannach bho [ultimatemultisite.com](https://ultimatemultisite.com).
 

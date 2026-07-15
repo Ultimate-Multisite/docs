@@ -3,7 +3,7 @@ title: زیادکراوی بارکەری پەڕگەی Sunrise
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# بارکەری پەڕگەی Sunriseی Addon {#addon-sunrise-file-loader}
+# بارکەری پەڕگەی Sunriseی Addon
 
 Ultimate Multisite 2.8.0 بارکەرێکی پاشکۆی sunrise زیاد دەکات بۆ add-on و یەکخستنە تایبەتەکانی MU-plugin کە پێویستیانە لە کاتی دەستپێکردنی sunriseی WordPressدا کار بکەن، بەبێ دەستکاریکردنی پەڕگەی دروستکراوی `wp-content/sunrise.php`.
 

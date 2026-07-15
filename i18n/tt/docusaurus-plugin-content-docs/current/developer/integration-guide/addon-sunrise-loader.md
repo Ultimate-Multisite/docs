@@ -3,7 +3,7 @@ title: Sunrise файл йөкләгеч өстәмә
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise файл йөкләгече {#addon-sunrise-file-loader}
+# Addon Sunrise файл йөкләгече
 
 Ultimate Multisite 2.8.0 өстәмә модульләр һәм махсус MU-plugin интеграцияләре өчен sunrise киңәйтү йөкләгечен өсти; алар WordPress sunrise башлангыч йөкләнеше вакытында, ясалган `wp-content/sunrise.php` файлын үзгәртмичә, эшләргә тиеш.
 

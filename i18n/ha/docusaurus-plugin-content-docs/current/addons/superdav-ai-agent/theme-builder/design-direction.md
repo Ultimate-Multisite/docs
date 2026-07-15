@@ -3,7 +3,7 @@ title: Jagorancin Zane
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Hanyar Zane {#design-direction}
+# Hanyar Zane
 
 Matakin **Hanyar Zane** yana ba ka damar duba, gyara, da kammala zanen gani na theme ɗinka kafin Theme Builder ya samar da cikakken theme.
 

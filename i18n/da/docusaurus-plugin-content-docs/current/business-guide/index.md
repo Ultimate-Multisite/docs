@@ -3,7 +3,7 @@ title: Byg en niche-websidevirksomhed
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Byg en Niche Hjemmeside Virksomhed med Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Byg en Niche Hjemmeside Virksomhed med Ultimate Multisite
 
 De fleste mennesker, der prøver at sælge hjemmesider, konkurrerer på pris mod Wix, Squarespace og tusindvis af freelancere. De taber. De, der vinder, vælger et specifikt publikum, bygger en løsning skræddersyet til det publikum og opkræver for den værdi, de leverer.
 

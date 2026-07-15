@@ -4,7 +4,7 @@ title: 過濾器 - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# 篩選器：wu_post_count_statuses {#filter-wupostcountstatuses}
+# 篩選器：wu_post_count_statuses
 
 允許外掛開發者更改計數文章時應包含哪些文章狀態。預設情況下，會計算已發佈和私人文章。
 

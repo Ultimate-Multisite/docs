@@ -3,7 +3,7 @@ title: Avis des clients et signalement de problèmes
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Commentaires et signalement de problèmes des utilisateurs {#customer-feedback--issue-reporting}
+# Commentaires et signalement de problèmes des utilisateurs
 
 Gratis AI Agent v1.5.0 introduit un système intégré de commentaires et de signalement de problèmes qui permet aux utilisateurs finaux de signaler des réponses inutiles et de rapporter des problèmes directement depuis l'interface de chat. Ce système comprend la gestion du consentement, une commande de signalement automatisée et un tri assisté par IA en arrière-plan.
 

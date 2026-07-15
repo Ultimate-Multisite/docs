@@ -3,7 +3,7 @@ title: 'Casharka 1: Sababta takhasuska gaar ahi u guulaysto'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Casharka 1: Sababta Niche-ku u Guuleysto {#lesson-1-why-niche-wins}
+# Casharka 1: Sababta Niche-ku u Guuleysto
 
 Ka hor inta aynaan taaban wax software ah, waxaad u baahan tahay inaad fahanto sababta dhisidda wax loogu talagalay dhagaystayaal gaar ah ay u tahay go'aanka keliya ee ugu muhiimsan ee aad qaadan doonto.
 

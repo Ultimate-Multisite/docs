@@ -3,7 +3,7 @@ title: GoCardless o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless o‘zgarishlar jurnali {#gocardless-changelog}
+# GoCardless o‘zgarishlar jurnali
 
 Versiya: 1.0.3 - 2026-05-05 da chiqarilgan
 * Tuzatildi: GoCardless a’zoligi pending yoki on-hold holatida bekor qilinganda, egasiz pending saytlar endi tozalanadi

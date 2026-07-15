@@ -4,7 +4,7 @@ title: Lim - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled {#filter-wussoenabled}
+# Filter: wu_sso_enabled
 
 Qhib/kaw peev xwm single-sign-on hla ntau domain.
 

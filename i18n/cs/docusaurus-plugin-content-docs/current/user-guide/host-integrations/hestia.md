@@ -3,7 +3,7 @@ title: Integrace s ovládacím panelem Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrace s Hestia Control Panel {#hestia-control-panel-integration}
+# Integrace s Hestia Control Panel
 
 Tento průvodce vysvětluje, jak nakonfigurovat integraci Ultimate Multisite s Hestia, aby se mapované domény ve vaší síti automaticky přidávaly (a odebíraly) jako aliasy webových domén v Hestia.
 

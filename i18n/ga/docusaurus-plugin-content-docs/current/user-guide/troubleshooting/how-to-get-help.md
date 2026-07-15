@@ -3,7 +3,7 @@ title: Conas faoi ghlúint an t-aid
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Conas aid {#how-to-get-help}
+# Conas aid
 
 Tá an chuid lisens agat, agus tá cur chuile ar é sin cur fáilte do chéadú leat leis an t-aimseartha a bhfáthach ag an t-amach chun feabhas a chur ar Ultimate Multisite.
 

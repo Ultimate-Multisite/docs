@@ -3,7 +3,7 @@ title: Palet Kontrastını Doğrula
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palet Kontrastını Doğrulama {#validate-palette-contrast}
+# Palet Kontrastını Doğrulama
 
 **Palet Kontrastını Doğrulama** özelliği, tasarım paletinizdeki renk çiftlerini temanıza uygulamadan önce WCAG (Web İçeriği Erişilebilirlik Yönergeleri) uyumluluğu açısından kontrol eder.
 

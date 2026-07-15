@@ -3,7 +3,7 @@ title: Closte-integraatio
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integrointi {#closte-integration}
+# Closte Integrointi
 
 ## Yleiskatsaus {#overview}
 Closte on hallittu WordPress-hostausalusta, joka on rakennettu Google Cloud -infrastruktuurille. Tämä integrointi mahdollistaa automaattisen verkkotunnusten synkronoinnin ja SSL-sertifikaattien hallinnan Ultimate Multisiten ja Closten välillä.

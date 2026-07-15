@@ -3,7 +3,7 @@ title: Verkkotunnusten myyjän muutosloki
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller -muutosloki {#domain-seller-changelog}
+# Domain Seller -muutosloki
 
 Versio 1.3.0 - Julkaistu 2026-06-02
 - Uusi: Lisätty network-admin-varoitus, kun HostAfrica-jälleenmyyjän saldo laskee liian alas

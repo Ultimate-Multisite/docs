@@ -3,7 +3,7 @@ title: Fragmentet GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Siç si përdorni snippetet Ultimate Multisite në repositorin tuaj të GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Siç si përdorni snippetet Ultimate Multisite në repositorin tuaj të GitHub
 
 Në repositorin e GitHub janë të disponueshme kode snippet që kërkohen shpesh nga përdoruesit e Ultimate Multisite që duan të shtojnë funksionalitete të vogla si shtimin e skriptës Google Analytics në faqet e regjistrimit ose fshehjen e një meta box-i nga dashboard-i i adminit.
 
@@ -19,7 +19,7 @@ Ka 2 mënyra për t'u shtuar kodin:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Si të shtoni snippet-in në skedarin functions.php të temës suaj. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Si të shtoni snippet-in në skedarin functions.php të temës suaj.
 
   1. Logojuni në dashboard-in tuaj admin i rrjetit WordPress dhe shkoni te Themes > Theme Editor (Shikoni ekranin e poshtë).
 
@@ -29,7 +29,7 @@ Ka 2 mënyra për t'u shtuar kodin:
 
 <!-- Ekran i shfaqur jo i disponueshëm: WordPress Theme Editor duke treguar redaktimin e skedarit functions.php -->
 
-# Si të krijoni Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Si të krijoni Must-Use Plugins (mu-plugins)
 
 WordPress ka një veçori që ju lejon të ngarkoni funksionalitet të veçantë të quajtur "Must-Use Plugins", ose shkurtimisht "mu-plugins".
 

@@ -4,7 +4,7 @@ title: Sivana - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Sivana: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Sivana: wu_light_ajax_allowed_hooks
 
 Noho ny antony fiarovana, feranay ny isan'ny actions azo hanaovana hooking into. Ity sivana ity dia mamela ny developers hanitatra izany lisitra izany raha ilaina.
 

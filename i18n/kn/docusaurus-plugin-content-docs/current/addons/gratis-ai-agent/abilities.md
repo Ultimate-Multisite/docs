@@ -3,7 +3,7 @@ title: ಸಾಮರ್ಥ್ಯಗಳ ಉಲ್ಲೇಖ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# ಸಾಮರ್ಥ್ಯಗಳ ಉಲ್ಲೇಖ {#abilities-reference}
+# ಸಾಮರ್ಥ್ಯಗಳ ಉಲ್ಲೇಖ
 
 ಸಾಮರ್ಥ್ಯಗಳು Gratis AI Agent ನಿಮ್ಮ WordPress ಸ್ಥಾಪನೆಯಲ್ಲಿ ಕರೆಯಬಹುದಾದ ಮೂಲ ಕ್ರಿಯೆಗಳು. ಪ್ರತಿಯೊಂದು ಸಾಮರ್ಥ್ಯವೂ ನೋಂದಾಯಿತ PHP class ಆಗಿದ್ದು, JSON schema ಅನ್ನು ಬಹಿರಂಗಪಡಿಸುತ್ತದೆ — ಯಾವ parameters ಅಗತ್ಯವಿದೆ ಮತ್ತು ಸಾಮರ್ಥ್ಯ ಏನು ಮರಳಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ತಿಳಿಯಲು agent runtime ನಲ್ಲಿ ಈ schema ಅನ್ನು ಓದುತ್ತದೆ.
 

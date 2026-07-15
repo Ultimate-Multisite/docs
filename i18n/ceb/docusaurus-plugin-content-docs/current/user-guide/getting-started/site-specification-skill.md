@@ -3,7 +3,7 @@ title: Mga Kinahanglanon sa Site nga Kahanas
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kahan ang Skill sa Site Specification {#site-specification-skill}
+# Kahan ang Skill sa Site Specification
 
 Ang **Site Specification skill** usa ka estruktura nga pamaagi para ma-capture ang mga tumong, audience, ug brand identity sa imong site. Kini nga impormasyon gi-store sa imong **site_brief memory**, diin ang mga agent nagrefer aron maghatag og pareho ug konteksto-aware nga tabang bisan unsa pa ka taas nga session.
 

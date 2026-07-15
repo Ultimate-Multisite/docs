@@ -4,7 +4,7 @@ title: Kichujio - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Kichujio: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Kichujio: wu_should_create_domain_record_for_site
 
 Huchuja ikiwa Ultimate Multisite inapaswa kuunda rekodi ya domain kwa tovuti iliyoundwa upya.
 

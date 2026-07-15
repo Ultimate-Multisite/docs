@@ -3,7 +3,7 @@ title: Përkthimi i Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Përkthimi i Ultimate Multisite {#translating-ultimate-multisite}
+# Përkthimi i Ultimate Multisite
 
 Ultimate Multisite është zhvilluar në anglisht, por plugin-i është plotësisht përkthyes dhe ne aktivisht mirësojmë kontributet e përkthimeve.
 

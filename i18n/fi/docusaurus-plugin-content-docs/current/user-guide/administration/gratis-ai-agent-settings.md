@@ -3,7 +3,7 @@ title: Gratis AI Agent -asetukset
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent -asetukset {#gratis-ai-agent-settings}
+# Gratis AI Agent -asetukset
 
 **Asetukset → Lisäasetukset** -näkymä Gratis AI Agentissa tarjoaa ylläpitäjätason määritykset backend-integraatioille. Tämä sivu dokumentoi palautteen välittämisen, hakupalveluntarjoajan avaimet, hallinnoidun Superdav-palvelun käyttöönoton, Google Calendar -hallinnat, TextBee SMS -asetukset ja verkonlaajuiset ominaisuusliput.
 

@@ -3,7 +3,7 @@ title: ການເຂົ້າເຖິງໜ້າບັນຊີ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# ວິທີເຂົ້າເຖິງໜ້າບັນຊີຂອງເຈົ້າເປັນຄັ້ງທຳອິດ? {#how-can-i-access-my-account-page-for-the-first-time}
+# ວິທີເຂົ້າເຖິງໜ້າບັນຊີຂອງເຈົ້າເປັນຄັ້ງທຳອິດ?
 
 ຍິນດີຕ້ອນຮັບສູ່ Ultimate Multisite!
 

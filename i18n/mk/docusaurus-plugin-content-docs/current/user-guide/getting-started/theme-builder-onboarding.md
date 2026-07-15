@@ -3,7 +3,7 @@ title: Поток на вградување на Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Поток за почетно наставување за Theme Builder {#theme-builder-onboarding-flow}
+# Поток за почетно наставување за Theme Builder
 
 Superdav AI Agent v1.12.0 воведува насочен **поток за почетно наставување за Theme Builder** кој ви помага да креирате кастомна тема со блокови во време на вашата првична поставка. Ова го заменува старата модален режим Site Builder со пофлексибилен пристап под асистент на агентот.
 

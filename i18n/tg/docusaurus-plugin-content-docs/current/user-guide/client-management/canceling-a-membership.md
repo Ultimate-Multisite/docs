@@ -3,7 +3,7 @@ title: Истеҳзори аъзоият
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Латтир кардани узавирӣ (v2) {#canceling-a-membership-v2}
+# Латтир кардани узавирӣ (v2)
 
 _**Эътибори муҳим: Ин мақола ба Ultimate Multisite версияи 2.x ишора мекунад.**_
 

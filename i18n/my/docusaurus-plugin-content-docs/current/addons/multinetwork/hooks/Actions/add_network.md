@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Action: add_network {#action-addnetwork}
+# Action: add_network
 
 ကွန်ရက်အသစ်တစ်ခု ထပ်မံထည့်သွင်းပြီးနောက် အလိုအလျောက် ခေါ်ဆောင်သည့် လုပ်ဆောင်ချက် (Action) ဖြစ်ပါသည်။
 

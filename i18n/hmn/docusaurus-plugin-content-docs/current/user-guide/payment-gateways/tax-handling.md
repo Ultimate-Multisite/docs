@@ -3,7 +3,7 @@ title: Kev tswj se
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Kev Tswj Se {#tax-handling}
+# Kev Tswj Se
 
 Ultimate Multisite muaj ib module sau se tsim nyob rau hauv peb core plugin lawm, yog li yog koj yuav tsum sau se muag khoom ntawm koj cov plans, pob khoom thiab kev pabcuam, koj ua tau yooj yim yam tsis tas yuav mus nruab add-ons ntxiv.
 

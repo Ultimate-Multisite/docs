@@ -3,7 +3,7 @@ title: Design System Esztétikai Képesség
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetika Képesség {#design-system-aesthetics-skill}
+# Design System Estetika Képesség
 
 A **Design System Estetika képesség** egy útmutatott megközelítés, amely segíti abban, hogy finomítsa az oldal vizuális identitását. Segít abban, hogy konzisztens döntéseket hozhasson a tipográfia, a szín, a távolság és a mozgás (motion) tokenekkel kapcsolatban, amelyek meghatározzák a design system-ét.
 

@@ -3,7 +3,7 @@ title: Gateway PayFast
 sidebar_position: 18
 _i18n_hash: 522faa86d920457375203119d78650a7
 ---
-# Gateway de PayFast {#payfast-gateway}
+# Gateway de PayFast
 
 Aquesta funció és proporcionada pel plugin **PayFast**.
 

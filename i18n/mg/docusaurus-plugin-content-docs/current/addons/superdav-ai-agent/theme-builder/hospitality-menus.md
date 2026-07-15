@@ -3,7 +3,7 @@ title: Menio ho an'ny Fandraisam-bahiny
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menio ho an'ny fandraisam-bahiny {#hospitality-menus}
+# Menio ho an'ny fandraisam-bahiny
 
 Ny endri-javatra **Menio ho an'ny fandraisam-bahiny** dia mamela ny Theme Builder hamorona sy hampiditra pejy menio sakafo sy zava-pisotro voarafitra mivantana ao amin'ny site WordPress-nao.
 

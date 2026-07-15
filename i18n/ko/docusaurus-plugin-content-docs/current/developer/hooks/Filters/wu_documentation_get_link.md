@@ -4,7 +4,7 @@ title: 필터 - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# 필터: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# 필터: wu_documentation_get_link
 
 플러그인 개발자가 링크를 필터링할 수 있도록 합니다.
 

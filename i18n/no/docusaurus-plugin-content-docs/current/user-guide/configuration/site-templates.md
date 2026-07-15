@@ -3,7 +3,7 @@ title: Nettstedsmaler
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Nettstedsmaler (v2) {#site-templates-v2}
+# Nettstedsmaler (v2)
 
 _**MERK: Denne artikkelen viser til Ultimate Multisite versjon 2.x. Hvis du bruker versjon 1.x,**_ **se denne artikkelen** _**.**_
 

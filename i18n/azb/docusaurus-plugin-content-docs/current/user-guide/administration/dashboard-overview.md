@@ -3,7 +3,7 @@ title: Kontrol Paneli Genel Bakış
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview {#dashboard-overview}
+# Dashboard Overview
 
 Ultimate Multisite-da Ultimate Multisite menüsü altında özel bir **Dashboard** bulunur ve ayrıca Network Dashboard'a widget'lar ekler. Bu makale, her iki yerde neler göreceğinizi anlatıyor.
 

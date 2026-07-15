@@ -3,7 +3,7 @@ title: Hvordan installerer man WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hvordan installerer jeg WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Hvordan installerer jeg WordPress Multisite?
 
 WordPress Multisite giver dig mulighed for at have et netværk af sider på én enkelt installation. Dette er en indbygget funktion, men den er ikke aktiv som standard.
 

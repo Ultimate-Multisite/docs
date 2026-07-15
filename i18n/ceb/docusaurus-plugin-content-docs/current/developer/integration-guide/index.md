@@ -3,7 +3,7 @@ title: Giya sa Integrasyon
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Giya sa Integration {#integration-guide}
+# Giya sa Integration
 
 Kini nga giya naglangkob sa kasagarang mga pattern sa integration uban sa Ultimate Multisite, lakip ang pagkonektar sa gawas nga mga serbisyo, paghimo og custom nga mga payment gateway, ug pagdumala sa mga webhook.
 

@@ -3,7 +3,7 @@ title: AffiliateWP Àkọọlẹ̀ Ìyípadà
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Àkọsílẹ̀ ìyípadà AffiliateWP {#affiliatewp-changelog}
+# Àkọsílẹ̀ ìyípadà AffiliateWP
 
 Ẹ̀yà: 2.0.1 - Tu sílẹ̀ ní 2025-09-28
 

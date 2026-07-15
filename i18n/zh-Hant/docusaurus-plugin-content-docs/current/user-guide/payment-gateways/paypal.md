@@ -3,7 +3,7 @@ title: 設定 PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# 設定 PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
+# 設定 PayPal Gateway (v2)
 
 _**重要注意事項：本文適用於 Ultimate Multisite 2.x 版本。**_
 

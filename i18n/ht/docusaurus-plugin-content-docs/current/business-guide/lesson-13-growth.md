@@ -3,7 +3,7 @@ title: 'Leson 13: Ogmante echèl la'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Leson 13: Monte Echèl {#lesson-13-scaling-up}
+# Leson 13: Monte Echèl
 
 Ou gen yon platfòm k ap mache ak kliyan k ap peye. Leson sa a kouvri kijan pou grandi soti nan yon ti operasyon pou vin yon biznis dirab -- monte echèl enfrastrikti, otomatize operasyon yo, epi ogmante revni pa kliyan.
 

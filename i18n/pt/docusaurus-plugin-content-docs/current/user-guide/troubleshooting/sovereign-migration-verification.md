@@ -3,7 +3,7 @@ title: Verificação de Migração Soberana
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verificação de Migração Soberana {#sovereign-migration-verification}
+# Verificação de Migração Soberana
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inclui comandos de verificação WP-CLI para migrações de inquilinos soberanos. Use-os quando uma migração de inquilino, visita SSO ou instalação isolada não se comportarem como esperado.
 

@@ -3,7 +3,7 @@ title: Export & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# निर्यात ۽ درآمد (Export & Import) {#export--import}
+# निर्यात ۽ درآمد (Export & Import)
 
 Ultimate Multisite 2.9.0 ۾ **Tools > Export & Import** تحت هڪ سڪل-سايت (single-site) جو **Export & Import** ٽول شامل ڪيو آهي. ان جو استعمال تڏهن ڪريو جڏهن توهان کي هڪ WordPress سائيٽ کي ZIP فائل جي صورت ۾ پيڪيج ڪرڻ، ان ZIP کي بحال ڪرڻ يا ڪنهن Compatible Ultimate Multisite ۽ single-site WordPress installation بابت سائيٽ کي منتقل ڪرڻ جي ضرورت هجي.
 

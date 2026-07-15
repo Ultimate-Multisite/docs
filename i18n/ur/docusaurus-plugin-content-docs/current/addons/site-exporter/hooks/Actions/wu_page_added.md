@@ -4,7 +4,7 @@ title: Action - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 پلگ ان بنانے والے ڈویلپرز کو یہ موقع ملتا ہے کہ جب صفحات رجسٹر کیے جائیں تو وہ اضافی کام کر سکیں۔
 

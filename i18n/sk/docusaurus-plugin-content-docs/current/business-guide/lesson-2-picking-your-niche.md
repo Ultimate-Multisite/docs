@@ -3,7 +3,7 @@ title: 'Lekcia 2: Výber vášho zamerania'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekcia 2: Výber vašej niky {#lesson-2-picking-your-niche}
+# Lekcia 2: Výber vašej niky
 
 V Lekcii 1 sme si ukázali, prečo nika poráža všeobecné riešenie. Teraz si musíte vybrať tú svoju. Táto lekcia vám poskytne rámec na nájdenie a overenie niky skôr, než investujete čas do budovania riešenia pre ňu.
 

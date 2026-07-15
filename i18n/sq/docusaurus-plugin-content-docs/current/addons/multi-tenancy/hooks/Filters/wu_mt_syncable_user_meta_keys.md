@@ -4,7 +4,7 @@ title: Filtër - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Filtër: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# Filtër: wu_mt_syncable_user_meta_keys
 
 Filtron listën e çelësave meta të përdoruesit që duhet të sinkronizohen me nyjet e largëta.
 

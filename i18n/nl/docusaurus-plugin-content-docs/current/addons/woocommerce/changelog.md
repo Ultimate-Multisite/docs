@@ -3,7 +3,7 @@ title: Wijzigingslog voor WooCommerce-integratie
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integratiechangelog {#woocommerce-integration-changelog}
+# WooCommerce Integratiechangelog
 
 Versie 2.2.0 - Uitgebracht op 2026-07-01
 * Nieuw: Ultimate Multisite belastingbedragen verschijnen nu als afzonderlijke WooCommerce kostenregels bij checkout, waardoor belastingtotalen vóór betaling duidelijker zijn.

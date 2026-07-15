@@ -3,7 +3,7 @@ title: Export stránky
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportování webu {#site-export}
+# Exportování webu
 
 Administrativní stránka **Exportování webu** umožňuje administrátorům sítě balíkovat jeden web, nebo celou síť, do stahovatelného archivu pro migraci, zálohování nebo předání.
 

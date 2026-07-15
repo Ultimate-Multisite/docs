@@ -3,7 +3,7 @@ title: ਸੋਵਰੇਨ ਮਾਈਗ੍ਰੇਸ਼ਨ ਵਰਕਫਲੋ
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# संप्रभु माइग्रेशन वर्कफ़्लो (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# संप्रभु माइग्रेशन वर्कफ़्लो (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ने एक स्टैंडर्ड सबसाइट को सॉवरेन टेनेंट इंफ्रास्ट्रक्चर में ले जाने के लिए माइग्रेशन वेरिफिकेशन गेट्स जोड़े हैं।
 

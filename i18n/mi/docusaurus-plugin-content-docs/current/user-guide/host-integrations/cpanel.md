@@ -3,7 +3,7 @@ title: Whakawhanaungatanga cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Whakawhanaungatanga me cPanel {#cpanel-integration}
+# Whakawhanaungatanga me cPanel
 
 ## Whakataki {#overview}
 cPanel he tākaro nui i whānui i panelau whakahaere web hosting, e whakamahia e ngā pahi shared me dedicated hosting marama. He tino whaiaro tēnei integration ki te whakamahi domain syncing automatically i antara Ultimate Multisite me cPanel, e hoki ai i te whero (alias) domain me subdomain ki te account cPanel mo koe automatically.

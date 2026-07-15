@@ -3,7 +3,7 @@ title: Umlando Wezinguquko Wesikhiphi Sesayithi
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Ilogu yezinguquko ze-Site Exporter {#site-exporter-changelog}
+# Ilogu yezinguquko ze-Site Exporter
 
 Inguqulo: 1.0.6 - Ikhishwe ngo-2026-05-11
 * Okusha: Ukuthunyelwa kwamasayithi manje kufaka i-index.php eziziqalelayo ukuze i-ZIP ifakwe ku-host entsha ngaphandle kokufaka i-plugin ehlukile

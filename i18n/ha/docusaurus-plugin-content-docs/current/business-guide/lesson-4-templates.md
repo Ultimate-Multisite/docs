@@ -3,7 +3,7 @@ title: 'Darasi na 4: Gina Samfuran Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Darasi na 4: Gina Templates na Musamman {#lesson-4-building-niche-templates}
+# Darasi na 4: Gina Templates na Musamman
 
 Templates su ne ginshiƙin tayin ƙimarka na musamman. Mai studio na motsa jiki da ya yi rajista kuma ya ga shafin da tuni yake kama da gidan yanar gizon motsa jiki -- tare da jadawalin darussa, bayanan trainers, da hotunan da suka dace -- ya fi yiwuwa ya ci gaba da amfani fiye da wanda ya ga farar takarda babu komai.
 

@@ -3,7 +3,7 @@ title: Integration ntawm ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ការរួមបញ្ចូល ServerPilot {#serverpilot-integration}
+# ការរួមបញ្ចូល ServerPilot
 
 ## ພາບລວມ {#overview}
 ServerPilot ແມ່ນບໍລິການໃນ cloud ເພື່ອໂຮດ WordPress ແລະ ເທິງເວັບໄຊ PHP ອື່ນໆ ຢູ່ເທິງ server ຕ່າງໆ ເຊັ່ນ DigitalOcean, Amazon, Google, ຫຼືຜູ້ໃຫ້ບໍລິການ server ອື່ນໆ. ການເຊື່ອມຕໍ່ນີ້ຈະເຮັດໃຫ້ການ đồng bộ domain (domain syncing) ແລະ ການຈັດການ SSL certificate ລະຫວ່າງ Ultimate Multisite ກັບ ServerPilot ເປັນແບບອັດຕະໂນມັດ.

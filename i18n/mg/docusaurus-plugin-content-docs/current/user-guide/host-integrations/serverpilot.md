@@ -3,7 +3,7 @@ title: Fandefasana ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Fandraisana ServerPilot {#serverpilot-integration}
+# Fandraisana ServerPilot
 
 ## Famaritrerana (Overview) {#overview}
 ServerPilot dia serivisy cloud iray ahafahanao mitazona WordPress sy ireo tranonkala PHP hafa eo amin'ny server ao amin'ny DigitalOcean, Amazon, Google, na mpanome server hafa. Ity fandraisana ity dia mamela ny fametrahana (syncing) automatique an'ny domain sy ny fitantanana ny SSL certificate eo amin'ny Ultimate Multisite sy ServerPilot.

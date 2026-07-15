@@ -4,7 +4,7 @@ title: مرشح - wu_view_override_replaceable_views
 sidebar_label: wu_view_override_replaceable_views
 _i18n_hash: 04b3647f9de6bedf22b3533d39f13ecb
 ---
-# مرشح: wu_view_override_replaceable_views {#filter-wuviewoverridereplaceableviews}
+# مرشح: wu_view_override_replaceable_views
 
 يسمح للمطورين بإضافة مجلدات إضافية إلى القائمة القابلة للاستبدال. احذر، إذ قد يؤدي السماح بالمجلدات الإضافية إلى تحميل نسخ غير محدثة بدلاً من نسخ Ultimate Multisite.
 

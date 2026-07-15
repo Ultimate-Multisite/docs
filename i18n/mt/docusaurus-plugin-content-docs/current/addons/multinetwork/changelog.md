@@ -3,7 +3,7 @@ title: Reġistru tal-bidliet ta’ Multi-Netwerk
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Reġistru tal-Bidliet Multi-Network {#multi-network-changelog}
+# Reġistru tal-Bidliet Multi-Network
 
 ### 1.3.0 {#130}
 * Ġdid: Previewer tal-mudelli tan-netwerk — ibbrawżja u ara preview tal-mudelli tan-netwerk b'panel dirett qabel tixtri.

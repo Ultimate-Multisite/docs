@@ -3,7 +3,7 @@ title: Usetzungs- und Anbieterkonfiguratioun
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Irichtigsetze und Providerkonfigurierig {#domain-seller-setup-and-provider-configuration}
+# Domain Seller: Irichtigsetze und Providerkonfigurierig
 
 De Domain Seller Addon schickt mit eme geführte Setup-Wizard, wo Sie Schritt für Schritt dur all die nötige Schritte führt. Dësi Seite deckt de Wizard-Fluss ab und wie Sie d'Provider anschriit oder neu konfigurierä chönne.
 

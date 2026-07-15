@@ -3,7 +3,7 @@ title: Cerca a Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Cerca a Internet {#internet-search}
+# Cerca a Internet
 
 Gratis AI Agent v1.5.0 afegeix una capacitat de **Cerca a Internet** que permet a l'assistència AI recuperar informació actual de la web durant una conversa. Això està alimentat per [Brave Search API](https://brave.com/search/api/) o la [Tavily API](https://tavily.com/).
 

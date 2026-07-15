@@ -4,7 +4,7 @@ title: 액션 - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# 액션: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# 액션: wp_ultimo_support_agents_load
 
 모든 종속 항목이 로드되었을 때 트리거됩니다.
 

@@ -3,7 +3,7 @@ title: Pag-set sa Sunrise Constant sa Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Pag-set sa Sunrise constant para maging true sa Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Pag-set sa Sunrise constant para maging true sa Closte
 
 May mga host provider nga nag-lock sa wp-config.php para sa seguridad. Nagpasabot ni nga ang Ultimate Multisite dili makapag-edit sa file dayon aron maglakip sa kinahanglanon nga constants para ma-work ang domain mapping ug uban pang features. Ang Closte usa niini nga host.
 

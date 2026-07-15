@@ -3,7 +3,7 @@ title: 钩子参考
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# 钩子参考 {#hooks-reference}
+# 钩子参考
 
 Ultimate Multisite 中所有 **59 个动作** 和 **118 个过滤器** 的自动生成文档。
 

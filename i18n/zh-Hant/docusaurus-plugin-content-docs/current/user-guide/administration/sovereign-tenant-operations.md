@@ -3,7 +3,7 @@ title: 主權租戶運營
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# 主權租戶操作 (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# 主權租戶操作 (Sovereign Tenant Operations)
 
 Ultimate Multisite 1.2.0 為主權租戶（即運行在獨立資料庫、檔案系統根目錄和路由上下文中的子網站，但仍可從網路管理員視角看到）增加了運營工具。
 

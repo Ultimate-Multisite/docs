@@ -4,7 +4,7 @@ title: Ago - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Ago: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Ago: wu_page_enqueue_scripts
 
 Aldonante propran agon ĉi tie por ke ni havu lokon por envicigi la skriptojn kaj stilojn laŭbezone\ kaj certigi, ke ili ŝargiĝas nur sur la ĝustaj paĝoj
 

@@ -4,7 +4,7 @@ title: Action - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Action: wu_page_added {#action-wupageadded}
+# Action: wu_page_added
 
 பக்கங்கள் பதிவு செய்யப்படும்போது கூடுதல் செயல்பாடுகளை இயக்க plugin உருவாக்குநர்கள் அனுமதிக்கப்படுகிறார்கள்.
 

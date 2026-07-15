@@ -3,7 +3,7 @@ title: 'Lecția 2: Alegerea Nișei Tale'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lecția 2: Alegerea Nișei {#lesson-2-picking-your-niche}
+# Lecția 2: Alegerea Nișei
 
 În Lecția 1 am stabilit de ce nișa este mai puternică decât abordarea generală. Acum trebuie să-ți alegi și tu nișa. Această lecție îți oferă un cadru de lucru pentru a găsi și valida o nișă înainte de a investi timp în dezvoltarea unei soluții pentru ea.
 

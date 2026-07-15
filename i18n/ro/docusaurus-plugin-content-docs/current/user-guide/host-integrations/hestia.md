@@ -3,7 +3,7 @@ title: Integrare cu Panoul de Control Hestia
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrarea cu Panoul de Control Hestia {#hestia-control-panel-integration}
+# Integrarea cu Panoul de Control Hestia
 
 Acest ghid explică cum să configurezi integrarea Ultimate Multisite cu Hestia, astfel încât domeniile mapate în rețeaua ta să fie adăugate (și eliminate) automat ca Aliasuri de Domeniu Web în Hestia.
 

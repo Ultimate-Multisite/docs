@@ -3,7 +3,7 @@ title: Site Export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export {#site-export}
+# Site Export
 
 Die Admin-Seite **Site Export** ermöglicht es Netzwerkadministratoren, eine einzelne Website oder das gesamte Netzwerk in ein herunterladbares Archiv zu verpacken. Dies ist nützlich für Migrationen, Backups oder wenn Sie die Daten an einen Dritten übergeben müssen.
 

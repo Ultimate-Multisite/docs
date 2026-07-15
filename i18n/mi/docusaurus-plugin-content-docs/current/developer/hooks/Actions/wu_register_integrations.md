@@ -4,7 +4,7 @@ title: Mahi - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Mahi: wu_register_integrations {#action-wuregisterintegrations}
+# Mahi: wu_register_integrations
 
 Ka whakakāngia kia āhei ai ngā whakaurunga ki te rēhita i a rātou anō.
 

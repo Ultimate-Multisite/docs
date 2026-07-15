@@ -4,7 +4,7 @@ title: 过滤器 - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# 过滤器: wu_return_url {#filter-wureturnurl}
+# 过滤器: wu_return_url
 
 允许开发者在结账流程后更改使用的网关返回 URL。
 

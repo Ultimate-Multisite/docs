@@ -3,7 +3,7 @@ title: Registo de alterações do Vendedor de domínios
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Registo de alterações do Vendedor de Domínios {#domain-seller-changelog}
+# Registo de alterações do Vendedor de Domínios
 
 Versão 1.3.0 - Lançada em 2026-06-02
 - Novo: Adicionado um aviso no administrador da rede quando o saldo de revendedor da HostAfrica fica demasiado baixo

@@ -3,7 +3,7 @@ title: Magparehistro og Account pinaagi sa Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Mag-register og account pinaagi gamit ang Zapier {#event-register-an-account-via-zapier}
+# Event: Mag-register og account pinaagi gamit ang Zapier
 
 Sa artikulo nga [Integrating Ultimate Multisite with Zapier](zapier.md), gihisgutan nato kung unsaon paggamit sa Zapier para maghimo og lain-laing mga aksyon sulod sa Ultimate Multisite base sa triggers ug events. Niining artikulo, ipakita nato kung paano nimo i-integrate ang mga third-party application. Gamiton nato ang Google Sheets isip source sa data ug ipadala kini sa Ultimate Multisite para mag-register og account.
 

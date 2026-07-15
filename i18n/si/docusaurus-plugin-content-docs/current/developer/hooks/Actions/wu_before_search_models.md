@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_before_search_models
 sidebar_label: wu_before_search_models
 _i18n_hash: 48be1bde6dde106ab09f563a8e0fa44d
 ---
-# ක්‍රියාව: wu_before_search_models {#action-wubeforesearchmodels}
+# ක්‍රියාව: wu_before_search_models
 
 සෙවීම් ඉල්ලීම සැකසීමට පෙර ක්‍රියාත්මක වේ.
 

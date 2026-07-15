@@ -3,7 +3,7 @@ title: 了解儀表板
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# 瞭解 Ultimate Multisite 控制台 {#understanding-the-ultimate-multisite-dashboard}
+# 瞭解 Ultimate Multisite 控制台
 
 在深入探討 Ultimate Multisite 的進階設定選項和操作功能之前，讓我們先來看看控制台的介面。
 

@@ -4,7 +4,7 @@ title: Akcja - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# Akcja: wu_before_light_ajax {#action-wubeforelightajax}
+# Akcja: wu_before_light_ajax
 
 W niektórych przypadkach będziemy musieli załadować dodatkowe zasoby, aby obsłużyć akcje.
 

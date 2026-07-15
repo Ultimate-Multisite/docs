@@ -3,7 +3,7 @@ title: Kassaportaalit
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Kassapulomakkeet {#checkout-forms}
+# Kassapulomakkeet
 
 Kassapulomakkeet ovat helppo ja joustava tapa kokeilla erilaisia lähestymistapoja uuden asiakkaan hankkimisessa.
 

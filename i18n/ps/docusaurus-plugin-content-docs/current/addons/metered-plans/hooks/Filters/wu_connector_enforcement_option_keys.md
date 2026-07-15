@@ -4,7 +4,7 @@ title: فلټر - wu_connector_enforcement_option_keys
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# فلټر: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# فلټر: wu_connector_enforcement_option_keys
 
 د AI برابروونکي د option keys لړ فلټر کړئ چې له اصلي سایټ څخه پلي کېږي.
 

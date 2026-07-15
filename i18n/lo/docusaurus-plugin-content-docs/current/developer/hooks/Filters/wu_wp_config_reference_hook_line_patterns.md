@@ -4,7 +4,7 @@ title: ຕົວກັ່ນຕອງ - wu_wp_config_reference_hook_line_pattern
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# ຕົວກັ່ນຕອງ: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# ຕົວກັ່ນຕອງ: wu_wp_config_reference_hook_line_patterns
 
 ພວກເຮົາກວດຫາສາມຮູບແບບເມື່ອພະຍາຍາມຊອກຫາວ່າພວກເຮົາສາມາດແຊກຄ່າຄົງທີ່ຂອງພວກເຮົາໄດ້ຢູ່ບ່ອນໃດ:
 

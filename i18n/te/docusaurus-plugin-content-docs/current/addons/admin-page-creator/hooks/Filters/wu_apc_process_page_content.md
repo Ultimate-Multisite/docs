@@ -4,7 +4,7 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
+# Filter: wu_apc_process_page_content
 
 డెవలపర్‌లు ఫైనల్ కంటెంట్‌తో మార్పులు చేయడానికి (mess with) ఇది అనుమతిస్తుంది.
 

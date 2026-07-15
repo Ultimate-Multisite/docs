@@ -4,7 +4,7 @@ title: 액션 - wu_flush_known_caches
 sidebar_label: wu_flush_known_caches
 _i18n_hash: bfe84286e3bd8d31846f6800c0954148
 ---
-# 액션: wu_flush_known_caches {#action-wuflushknowncaches}
+# 액션: wu_flush_known_caches
 
 추가 정리를 위한 후크
 

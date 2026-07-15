@@ -4,7 +4,7 @@ title: Iragazkia - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Iragazkia: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
+# Iragazkia: wp_ultimo_site_exporter_url
 
 Garatzaileei pluginaren errorako bide erlatiboa kudeatzeko aukera ematen die.
 

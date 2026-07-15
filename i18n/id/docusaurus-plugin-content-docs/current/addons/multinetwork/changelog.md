@@ -3,7 +3,7 @@ title: Catatan Perubahan Multi-Jaringan
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Catatan Perubahan Multi-Network {#multi-network-changelog}
+# Catatan Perubahan Multi-Network
 
 ### 1.3.0 {#130}
 * Baru: Pratinjau template jaringan — jelajahi dan pratinjau template jaringan dengan panel langsung sebelum membeli.

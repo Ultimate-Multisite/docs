@@ -3,7 +3,7 @@ title: การเชื่อมต่อ ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# การผสานการทำงานกับ ServerPilot {#serverpilot-integration}
+# การผสานการทำงานกับ ServerPilot
 
 ## ภาพรวม {#overview}
 ServerPilot เป็นบริการคลาวด์สำหรับโฮสต์เว็บไซต์ WordPress และเว็บไซต์ PHP อื่นๆ บนเซิร์ฟเวอร์ของ DigitalOcean, Amazon, Google หรือผู้ให้บริการเซิร์ฟเวอร์รายอื่นๆ การผสานการทำงานนี้ช่วยให้สามารถซิงค์โดเมนและจัดการใบรับรอง SSL ระหว่าง Ultimate Multisite และ ServerPilot ได้โดยอัตโนมัติ

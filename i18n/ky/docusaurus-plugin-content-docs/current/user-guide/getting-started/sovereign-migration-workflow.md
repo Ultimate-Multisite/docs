@@ -3,7 +3,7 @@ title: Суверейн миграциянын иш катыштары
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Суверенитеттегирүү Workflow {#sovereign-migration-workflow}
+# Суверенитеттегирүү Workflow
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 стандарт подсайтты суверенитет теңдеме инфраструктурасына которуу үчүн миграцияны текшерүү барьерлерин кошот.
 

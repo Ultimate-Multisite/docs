@@ -4,7 +4,7 @@ title: Sefe - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Sefe: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Sefe: wu_checkout_validation_aliases
 
 Lumella bahlahisi ba plugin ho eketsa aliases tse ikgethileng ho form validator.
 

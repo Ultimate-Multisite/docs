@@ -4,7 +4,7 @@ title: 액션 - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# 액션: wu_dashboard_widgets {#action-wudashboardwidgets}
+# 액션: wu_dashboard_widgets
 
 플러그인 개발자가 네트워크 대시보드 패널에 위젯을 추가할 수 있도록 허용합니다.
 

@@ -3,7 +3,7 @@ title: Помош при кастом развој
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Како да добиете кајдење за развивање од Codeable? {#how-to-get-custom-development-help-from-codeable}
+# Како да добиете кајдење за развивање од Codeable?
 
 Понема пак ви е потребно некоја супер персонализација за да го направиме нашите работни процеси точно како што сакаме. Ако тоа е на што барате, препорачуваме [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), место каде можете да најдете искусени развивачи со експертиза во Ultimate Multisite.
 

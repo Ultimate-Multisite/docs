@@ -3,7 +3,7 @@ title: Webhook-håndtering
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Håndtering af webhooks {#webhook-handling}
+# Håndtering af webhooks
 
 Opret tilpassede webhook-slutpunkter for at modtage hændelser fra eksterne tjenester og synkronisere data med Ultimate Multisite.
 

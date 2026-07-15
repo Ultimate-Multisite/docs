@@ -4,7 +4,7 @@ title: Aksi - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Aksi: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Aksi: wp_ultimo_host_providers_load
 
 Ngidini pangembang nambah integrasi panyedhiya host dhewe liwat plugin WordPress.
 

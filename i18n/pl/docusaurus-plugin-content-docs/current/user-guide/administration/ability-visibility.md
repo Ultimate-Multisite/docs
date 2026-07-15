@@ -3,7 +3,7 @@ title: Widoczność uprawnień
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Widoczność Zdolności {#ability-visibility}
+# Widoczność Zdolności
 
 Superdav AI Agent v1.12.0 wprowadza kontrole **Widoczności Zdolności** (Ability Visibility), które określają, na jakich interfejsach dana zdolność jest dostępna. Pozwala to administratorom precyzyjnie określić, które możliwości agenta są dostępne przez REST API, serwery MCP, integracje WooCommerce i inne interfejsy.
 

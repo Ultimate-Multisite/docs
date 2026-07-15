@@ -3,7 +3,7 @@ title: କ୍ଲାଉଡୱେଜ୍ ଇଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ସହିତ ଏକତ୍ରୀକରଣ (Integration) {#cloudways-integration}
+# Cloudways ସହିତ ଏକତ୍ରୀକରଣ (Integration)
 
 ## ସମୀକ୍ଷା (Overview) {#overview}
 Cloudways ହେଉଛି ଏକ ମ୍ୟାନେଜ୍ଡ କ୍ଲାଉଡ ହୋଷ୍ଟିଂ ପ୍ଲାଟଫର୍ମ, ଯାହା ଆପଣଙ୍କୁ DigitalOcean, AWS, Google Cloud ଏବଂ ଅନ୍ୟାନ୍ୟ ବିଭିନ୍ନ କ୍ଲାଉଡ ପ୍ରଡାଭର୍ଦକକୀ ଭଳି ବିଭିନ୍ନ କ୍ଲାଉଡ ପ୍ରୋବାଇଡରରେ WordPress साईट ଡିପ୍ଲଏପ୍ କରିବାକୁ ସୁବିଧା ଦିଏ। ଏହି ଏକତ୍ରୀକରଣ Ultimate Multisite ଏବଂ Cloudways ମଧ୍ୟରେ ଅଟୋମେଟିକ୍ ଡୋमेन ସିଙ୍କିଂ (automatic domain syncing) ଏବଂ SSL ସର୍ଟିଫିକେଟ୍ ମାନେଜମେଣ୍ଟକୁ ସମ୍ପାଦନ କରେ।

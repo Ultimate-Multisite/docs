@@ -3,7 +3,7 @@ title: کارکردنی تەنهای کارمەندە باوەر
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# کارオペاسیونەکانی تەنە بەڕێوەبەری (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# کارオペاسیونەکانی تەنە بەڕێوەبەری (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 نوێکارییەک بۆ ئامرازەکانی کارکردن لەلایەن تەنە بەڕێوەبەرانی سۆڤرین (سۆڤرین)، وای لێدەکات کە زیرەکی ناوخۆکان (subsites) بە داتابەیس، ڕیشەی فایڵسیستم، و پۆلێمی ڕێڕەوی خۆیان کار بکەن، لەکاتێکدا لەلایەن ئیدارەی تۆڕیەوە دەبینرێن.
 

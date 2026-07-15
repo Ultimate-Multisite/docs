@@ -4,7 +4,7 @@ title: عمل - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# عمل: wu_before_light_ajax {#action-wubeforelightajax}
+# عمل: wu_before_light_ajax
 
 ڪجهه حالتن ۾، اسان کي عملن کي سنڀالڻ لاءِ اضافي توانائي لوڊ ڪرڻي پوندي.
 

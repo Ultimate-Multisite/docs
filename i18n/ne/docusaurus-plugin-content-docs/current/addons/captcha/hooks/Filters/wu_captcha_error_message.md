@@ -4,7 +4,7 @@ title: फिल्टर - wu_captcha_error_message
 sidebar_label: wu_captcha_error_message
 _i18n_hash: 218bbe8831cb78babe17f698a72282ea
 ---
-# फिल्टर: wu_captcha_error_message {#filter-wucaptchaerrormessage}
+# फिल्टर: wu_captcha_error_message
 
 क्याप्चा त्रुटि सन्देशलाई फिल्टर गर्नुहोस्।
 

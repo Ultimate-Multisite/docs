@@ -4,7 +4,7 @@ title: 過濾器 - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# 過濾器：wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# 過濾器：wu_captcha_whitelisted
 
 用來判斷當前使用者或請求是否應該被列入白名單。
 

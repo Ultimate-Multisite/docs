@@ -3,7 +3,7 @@ title: Validace kontrastu palety
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validace kontrastu palety {#validate-palette-contrast}
+# Validace kontrastu palety
 
 Funkce **Validace kontrastu palety** kontroluje, zda jsou barevné kombinace v vaší designové paletě shodu s WCAG (Web Content Accessibility Guidelines) předtím, než je aplikujete na svou tému.
 

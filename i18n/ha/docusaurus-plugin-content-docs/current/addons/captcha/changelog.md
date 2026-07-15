@@ -3,7 +3,7 @@ title: Tarihin canje-canje na Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Tarihin Canje-canje na Captcha {#captcha-changelog}
+# Tarihin Canje-canje na Captcha
 
 Siga: 1.5.0 - An fitar a 2026-05-22
 * Sabo: Mai takaita yawan buƙatu mai tsayarwa gaba ɗaya — yana ƙirga kowane GET da POST a wuraren da captcha ke karewa (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) kuma yana amsawa da HTTP 429, `Retry-After` header, da barcin tarpit na bazuwar (1–5s, an iyakance shi da ƙarfi zuwa 15s).

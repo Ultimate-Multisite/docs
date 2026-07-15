@@ -3,7 +3,7 @@ title: Fluent Forms Rangitaki Panonitanga
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Rārangi Panonitanga Fluent Forms {#fluent-forms-changelog}
+# Rārangi Panonitanga Fluent Forms
 
 Putanga: 2.0.1 - I tukuna i 2025-09-28
 

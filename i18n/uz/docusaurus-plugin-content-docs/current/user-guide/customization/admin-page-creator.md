@@ -3,7 +3,7 @@ title: Administrator Sahifasi Yaratuvchi
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Административная страница создатель {#admin-page-creator}
+# Административная страница создатель
 
 Эта функция предоставляется аддоном **Admin Page Creator**.
 

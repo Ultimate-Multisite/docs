@@ -3,7 +3,7 @@ title: การสร้างระบบเชื่อมต่อกับ 
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# การสร้างระบบเชื่อมต่อ Registrar แบบกำหนดเอง {#building-a-custom-registrar-integration}
+# การสร้างระบบเชื่อมต่อ Registrar แบบกำหนดเอง
 
 Addon Domain Seller ใช้รูปแบบที่เรียกว่า **Integration Registry** (ทะเบียนระบบเชื่อมต่อ) โดย Registrar แต่ละตัวจะเป็นคลาส PHP ที่ต้อง implement `Domain_Selling_Capability` และลงทะเบียนตัวเองผ่าน action hook ที่ชื่อว่า `wu_domain_seller_register_capabilities`
 

@@ -3,7 +3,7 @@ title: Dashboard איבערבליק
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard איבערבליק {#dashboard-overview}
+# Dashboard איבערבליק
 
 Ultimate Multisite האָט אַ באַזונדערן **Dashboard** אונטער דעם Ultimate Multisite מעניו, און לייגט אויך צו ווידזשעטן צום נעץ־Dashboard. דער אַרטיקל באַהאַנדלט וואָס איר וועט זען אין ביידע ערטער.
 

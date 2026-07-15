@@ -3,7 +3,7 @@ title: Ażwina l-Konstanta Sunrise fuq Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Aħedda l-konstanta Sunrise biex tkun aktiva fuq Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Aħedda l-konstanta Sunrise biex tkun aktiva fuq Closte
 
 Certaini fornitori ta host jlockaw il `wp-config.php` għall-sigurtà. Dan significa li Ultimate Multisite ma jistax jidittifikaw l-file awtomatik biex jinkludu l-konstanti nepreża biex jgħinaw mapping tal-domeni u oħra funksjonalitajiet jgħaddu b'opera. Closte huwa wieħed minn dan fornitori.
 

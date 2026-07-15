@@ -3,7 +3,7 @@ title: Material WP Ilogi yeenguqu
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Utshintsho lwe-Material WP {#material-wp-changelog}
+# Utshintsho lwe-Material WP
 
 Version 1.1.15 - 01/26/2026
 * Kuphuculwe: Isimbo sekhowudi nokufomatha;

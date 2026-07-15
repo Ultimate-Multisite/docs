@@ -4,7 +4,7 @@ title: Filtro - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Filtro: retrieve_password_title {#filter-retrievepasswordtitle}
+# Filtro: retrieve_password_title
 
 Filtra o assunto do email de redefinição de palavra-passe.
 

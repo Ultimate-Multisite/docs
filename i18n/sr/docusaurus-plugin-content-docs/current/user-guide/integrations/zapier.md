@@ -3,7 +3,7 @@ title: Integracija Zapiera
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integracija Ultimate Multisite sa Zapierom {#integrating-ultimate-multisite-with-zapier}
+# Integracija Ultimate Multisite sa Zapierom
 
 U jednom članku razgovarali smo o [Webhooks](webhooks.md) i kako se mogu koristiti za integraciju sa aplikacijama treće strane.
 

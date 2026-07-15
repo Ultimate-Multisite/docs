@@ -4,7 +4,7 @@ title: Filtrs - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# Filtrs: wu_ai_token_rates {#filter-wuaitokenrates}
+# Filtrs: wu_ai_token_rates
 
 Filtrē AI tokenu norēķinu likmes.
 

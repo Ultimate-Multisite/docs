@@ -4,7 +4,7 @@ title: Parzûn - wu_domain_seller_search_delay
 sidebar_label: wu_domain_seller_search_delay
 _i18n_hash: b0871b15059808a847875636d151245f
 ---
-# Parzûn: wu_domain_seller_search_delay {#filter-wudomainsellersearchdelay}
+# Parzûn: wu_domain_seller_search_delay
 
 Derengiya debounce a lêgerîna domainê bi millisecondan parzûn dike.
 

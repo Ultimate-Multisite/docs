@@ -3,7 +3,7 @@ title: שמירת מטמון פרומפט מודעת ספק
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# מטמון פרומפטים מודע לספק (Provider-Aware Prompt Caching) {#provider-aware-prompt-caching}
+# מטמון פרומפטים מודע לספק (Provider-Aware Prompt Caching)
 
 Superdav AI Agent v1.12.0 מציג **מטמון פרומפטים מודע לספק** (provider-aware prompt caching), המבצע אופטימיזציה של עלויות ה-API וזמני ההשהיה (latency) על ידי שמירת פרומפטים במטמון בין ספקי LLM שונים. לכל ספק יש מנגנוני תצורה ומטמון שונים.
 

@@ -3,7 +3,7 @@ title: Az Ultimate Multisite fordítása
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Az Ultimate Multisite fordítása {#translating-ultimate-multisite}
+# Az Ultimate Multisite fordítása
 
 Az Ultimate Multisite fejlesztése angolul történik, de a bővítmény teljes mértékben lefordítható, és örömmel fogadjuk a fordítási hozzájárulásokat.
 

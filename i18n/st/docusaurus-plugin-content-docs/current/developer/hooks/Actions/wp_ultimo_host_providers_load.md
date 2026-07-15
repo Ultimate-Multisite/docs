@@ -4,7 +4,7 @@ title: Ketso - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Ketso: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
+# Ketso: wp_ultimo_host_providers_load
 
 Lumella baetsi ba mananeo ho eketsa likhokahanyo tsa bona tsa mofani oa host ka li-tlatsetso tsa WordPress.
 

@@ -3,7 +3,7 @@ title: API Endpoint မှတ်ပုံတင်ခြင်း
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API endpoint အကြောင်း {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API endpoint အကြောင်း
 
 ဒီ tutorial မှာ Ultimate Multisite /register API endpoint ကို သုံးပြီး သင့် network မှာ customer အသစ်အတွက် onboarding လုပ်ငန်းစဉ်တစ်ခုလုံးကို ဘယ်လိုဖန်တီးမလဲ၊ Zapier နဲ့ ဘယ်လိုလုပ်မလဲဆိုတာ လေ့လာရပါမယ်။
 

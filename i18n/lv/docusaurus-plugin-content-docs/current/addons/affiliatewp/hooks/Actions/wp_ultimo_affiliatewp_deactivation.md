@@ -4,7 +4,7 @@ title: Darbība - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# Darbība: wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
+# Darbība: wp_ultimo_affiliatewp_deactivation
 
 Ļaujiet citām plugin daļām piesaistīt savas deaktivizēšanas rutīnas
 

@@ -3,7 +3,7 @@ title: Bestuur van Sisteem-E-posse
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Bestuur van Sisteem-E-posse {#managing-system-emails}
+# Bestuur van Sisteem-E-posse
 
 Ultimate Multisite stuur verskeie sisteme-e-posse vir gebeure soos registrasiebevestigings, betalingskwitansies en lidmaatskapswissigings. Jy kan hierdie e-pos-templates aanpas om by jou handelsmerk te pas.
 

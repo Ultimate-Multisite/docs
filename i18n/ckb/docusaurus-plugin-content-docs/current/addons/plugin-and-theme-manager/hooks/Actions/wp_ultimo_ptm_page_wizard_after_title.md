@@ -4,7 +4,7 @@ title: کردار - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
 _i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# کردار: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
+# کردار: wp_ultimo_ptm_page_wizard_after_title
 
 ڕێگا بدە بە گەشەپێدەرانی plugin دوگمەی زیاتر بۆ پەڕەکانی لیست زیاد بکەن
 

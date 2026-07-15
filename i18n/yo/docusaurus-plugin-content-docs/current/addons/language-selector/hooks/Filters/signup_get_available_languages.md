@@ -4,7 +4,7 @@ title: Àlẹmọ - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Àlẹmọ: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# Àlẹmọ: signup_get_available_languages
 
 Ó ń ṣe àlẹmọ àkójọ àwọn èdè tó wà fún àwọn ìforúkọsílẹ̀ ojúlé front-end.
 

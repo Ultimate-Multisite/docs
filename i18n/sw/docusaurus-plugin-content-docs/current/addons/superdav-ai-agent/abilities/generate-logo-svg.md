@@ -3,7 +3,7 @@ title: Tengeneza Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Kutengeneza Logo ya SVG {#generate-logo-svg}
+# Kutengeneza Logo ya SVG
 
 Uwezo wa **Kutengeneza Logo ya SVG** unaruhusu Theme Builder kutengeneza na kuingiza logo za SVG za kipekee moja kwa moja kwenye tovuti yako ya WordPress, huku ukifanya usafishaji wa kiotomatiki ili kuhakikisha usalama wa jina (namespace-safe sanitisation).
 

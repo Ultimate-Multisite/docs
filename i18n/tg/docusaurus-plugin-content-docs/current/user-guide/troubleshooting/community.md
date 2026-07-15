@@ -3,7 +3,7 @@ title: Ҷамъият
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Чӣ тавр ба ҷои ҷамъияти Ultimate Multisite пайвастшавӣ кардан {#how-to-join-ultimate-multisite-community}
+# Чӣ тавр ба ҷои ҷамъияти Ultimate Multisite пайвастшавӣ кардан
 
 Ҷамъияти Ultimate Multisite — ин макони мувофиқ аст, ки дар он шумо метавонед бо дигар корбарони Ultimate Multisite богузорешӣ кунед ва тасвирҳо, таҷрибаҳо ва дигаронро бахшад. Барои дастрасӣ ба ҷои ҷамъияти Ultimate Multisite равед ба https://community.ultimatemultisite.com/home.
 

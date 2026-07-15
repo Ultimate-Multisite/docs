@@ -4,7 +4,7 @@ title: Süzgüç - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filtr: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filtr: wu_password_require_special
 
 Parollarda ýörite nyşanlaryň talap edilmelidigini filtrleýär.
 

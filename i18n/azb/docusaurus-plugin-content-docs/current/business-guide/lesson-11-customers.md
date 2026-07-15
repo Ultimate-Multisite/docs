@@ -11,7 +11,7 @@ title: >-
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lesson 11: Müşteri Bulma {#lesson-11-finding-customers}
+# Lesson 11: Müşteri Bulma
 
 Müşterisi olmayan harika bir platform sadece bir hobi. Bu derste, niş bir alanda müşteri edinme yollarını ele alıyoruz; bu stratejiler, sadece tek bir sektöre odaklandığınız için işe yarar.
 

@@ -3,7 +3,7 @@ title: Trechos de código
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Trechos de Código para v2 {#code-snippets-for-v2}
+# Trechos de Código para v2
 
 Basicamente, os trechos de código para **WordPress** são usados para realizar certas ações que, de outra forma, poderiam exigir um plugin menor dedicado. Tais trechos de código são colocados em um dos arquivos principais do WordPress ou do tema (geralmente o arquivo functions.php do seu tema) ou podem ser usados como um MU plugin.
 

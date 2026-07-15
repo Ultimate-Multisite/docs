@@ -4,7 +4,7 @@ title: Action - wp_ultimo_site_exporter_activation
 sidebar_label: wp_ultimo_site_exporter_activation
 _i18n_hash: 665638a6c1cb74cae60dfa3ff3be99fa
 ---
-# Action: wp_ultimo_site_exporter_activation {#action-wpultimositeexporteractivation}
+# Action: wp_ultimo_site_exporter_activation
 
 ਪਲੱਗਇਨ ਦੇ ਹੋਰ ਹਿੱਸਿਆਂ ਨੂੰ ਐਕਟੀਵੇਸ਼ਨ ਲਈ ਆਪਣੀਆਂ ਲੋੜੀਂਦੀਆਂ ਕਾਰਵਾਈਆਂ (routines) ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 

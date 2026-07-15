@@ -3,7 +3,7 @@ title: Iskrivi l-endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint API Register ta l-Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint API Register ta l-Ultimate Multisite
 
 F'dieturja li t-tutorial dan, tmur impiegaw l-endpoint API /register tal-Ultimate Multisite biex tgħin il proċess kollu ta onboarding għal magħrupp ġdid fil-network tiegħek u kif tista tfarmi dan ma' Zapier.
 

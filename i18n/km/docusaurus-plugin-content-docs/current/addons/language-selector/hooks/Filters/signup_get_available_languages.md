@@ -4,7 +4,7 @@ title: តម្រង - signup_get_available_languages
 sidebar_label: signup_get_available_languages
 _i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# តម្រង: signup_get_available_languages {#filter-signupgetavailablelanguages}
+# តម្រង: signup_get_available_languages
 
 តម្រងបញ្ជីភាសាដែលមាន សម្រាប់ការចុះឈ្មោះគេហទំព័រផ្នែកខាងមុខ។
 

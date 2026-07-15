@@ -3,7 +3,7 @@ title: 'Leson 5: Konsepsyon plan ou yo'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leson 5: Konsepsyon Plan Ou yo {#lesson-5-designing-your-plans}
+# Leson 5: Konsepsyon Plan Ou yo
 
 Nivo plan ou yo pa sèlman nivo pri -- yo se yon refleksyon sou fason kliyan nan nich ou yo fonksyone toutbon. Nan leson sa a ou pral konsevwa nivo pwodwi ki koresponn ak bezwen reyèl biznis kondisyon fizik yo nan diferan etap.
 

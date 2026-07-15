@@ -3,7 +3,7 @@ title: Admin panelni ko'rib chiqish
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panelni Ko Aylanib Bo'lish {#touring-the-admin-panel}
+# Admin Panelni Ko Aylanib Bo'lish
 
 Ultimate Multisite eng oddiy va o'zini tushuntiradigan bo'lishni maqsad qilgan, lekin bunday kuchli vosita bilan yo'l ko'rsatish (guided tour) qilish mumkin. Sizga joylashishingiz uchun admin sahifalaridan o'tamiz.
 

@@ -3,7 +3,7 @@ title: WPMU DEV ಏಕೀಕರಣ
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ಇಂಟಿಗ್ರೇಶನ್ {#wpmu-dev-integration}
+# WPMU DEV ಇಂಟಿಗ್ರೇಶನ್
 
 ## ಅವಲೋಕನ {#overview}
 WPMU DEV ಒಂದು ಸಮಗ್ರ WordPress ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಆಗಿದ್ದು, WordPress ಸೈಟ್‌ಗಳಿಗೆ ಹೋಸ್ಟಿಂಗ್, ಪ್ಲಗಿನ್‌ಗಳು ಮತ್ತು ಸೇವೆಗಳನ್ನು ನೀಡುತ್ತದೆ. ಈ ಇಂಟಿಗ್ರೇಶನ್ Ultimate Multisite ಮತ್ತು WPMU DEV ಹೋಸ್ಟಿಂಗ್ ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ಸಿಂಕಿಂಗ್ ಮತ್ತು SSL ಸರ್ಟಿಫಿಕೇಟ್ ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.

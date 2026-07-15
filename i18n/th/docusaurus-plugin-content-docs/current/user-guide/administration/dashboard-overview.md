@@ -3,7 +3,7 @@ title: ภาพรวมแดชบอร์ด
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ภาพรวม Dashboard {#dashboard-overview}
+# ภาพรวม Dashboard
 
 Ultimate Multisite มี **Dashboard** เฉพาะอยู่ภายใต้เมนู Ultimate Multisite และยังเพิ่ม widget ไปยัง Network Dashboard ด้วย บทความนี้จะอธิบายสิ่งที่คุณจะเห็นในทั้งสองส่วน
 

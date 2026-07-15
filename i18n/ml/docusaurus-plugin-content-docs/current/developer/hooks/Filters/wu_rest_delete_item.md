@@ -4,7 +4,7 @@ title: Filter - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filter: wu_rest_delete_item {#filter-wurestdeleteitem}
+# Filter: wu_rest_delete_item
 
 ഈ റിക്വസ്റ്റ് മുന്നോട്ട് പോകാൻ അനുവദിക്കപ്പെട്ടതാണോ അല്ലയോ എന്ന് ഫിൽട്ടർ ചെയ്യുന്നു.
 

@@ -4,7 +4,7 @@ title: Veprim - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# Veprimi: wu_mt_provider_log {#action-wumtproviderlog}
+# Veprimi: wu_mt_provider_log
 
 Aktivizohet kur një provider regjistron një mesazh.
 

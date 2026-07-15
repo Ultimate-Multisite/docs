@@ -3,7 +3,7 @@ title: Mchakato wa Kuhamia wa Ufalme
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Mchakato wa Kuhamishwa kwa Utawala wa Uhuru (Sovereign Migration Workflow) {#sovereign-migration-workflow}
+# Mchakato wa Kuhamishwa kwa Utawala wa Uhuru (Sovereign Migration Workflow)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 imeweka milango ya uthibitishaji wa kuhamisha ili kubadilisha subsite ya kawaida kwenda kwenye miundo ya mteja mwenyewe (sovereign tenant).
 

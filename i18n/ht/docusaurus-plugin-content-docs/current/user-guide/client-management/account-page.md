@@ -3,7 +3,7 @@ title: Paj Kont Kliyan
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagyan Akontman Kliyan Ou (v2) {#your-clients-account-page-v2}
+# Pagyan Akontman Kliyan Ou (v2)
 
 _**NOTE KRITIK: Sa tèks sa a se refere a Ultimate Multisite v2.x.**_
 

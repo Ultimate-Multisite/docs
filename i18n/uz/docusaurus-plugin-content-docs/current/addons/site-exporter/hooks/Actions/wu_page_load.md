@@ -4,7 +4,7 @@ title: Amal - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: 5033e5832dd8b614f857f0cad7b79fc3
 ---
-# Amal: wu_page_load {#action-wupageload}
+# Amal: wu_page_load
 
 Plugin ishlab chiquvchilariga sahifalarimizga qo‘shimcha hooklar qo‘shishga ruxsat beradi.
 

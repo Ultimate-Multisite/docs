@@ -3,7 +3,7 @@ title: Entrevista de descobriment
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Entrevista de Descobriment {#discovery-interview}
+# Entrevista de Descobriment
 
 La **Entrevista de Descobriment** és el primer pas en el procés de disseny del Theme Builder. Reparte informació sobre el teu lloc web, negoci i preferències de disseny per crear un tema personalitzat.
 

@@ -3,7 +3,7 @@ title: Arah Reka Bentuk
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Reka Bentuk {#design-direction}
+# Arah Reka Bentuk
 
 Langkah **Arah Reka Bentuk** membolehkan anda menyemak, memperhalusi, dan memuktamadkan reka bentuk visual tema anda sebelum Theme Builder menjana tema yang lengkap.
 

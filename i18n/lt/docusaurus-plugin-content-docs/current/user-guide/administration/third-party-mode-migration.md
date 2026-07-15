@@ -3,7 +3,7 @@ title: Migracija į trečias pusę režimą
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migracija do tryktojinio režimo (Third-Party Mode) {#third-party-mode-migration}
+# Migracija do tryktojinio režimo (Third-Party Mode)
 
 Superdav AI Agent v1.12.0 keičia, kaip tryktojiniai galimybes bus valdomi. **Tryktojiniai režimas dabar beprastai nustatytas į "auto",** leidžiant integraciją su nativiumu WordPress Abilities API versijose 7.0+ be reikalinga manulinkos konfigūracijos.
 

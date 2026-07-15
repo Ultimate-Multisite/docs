@@ -3,7 +3,7 @@ title: 'Lekcija 13: Skaliranje'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekcija 13: Skaliranje {#lesson-13-scaling-up}
+# Lekcija 13: Skaliranje
 
 Imate funkcionalnu platformu s kupcima koji plaćaju. Ova lekcija obrađuje kako prerasti iz male operacije u održivo poslovanje -- skaliranje infrastrukture, automatizaciju operacija i povećanje prihoda po kupcu.
 

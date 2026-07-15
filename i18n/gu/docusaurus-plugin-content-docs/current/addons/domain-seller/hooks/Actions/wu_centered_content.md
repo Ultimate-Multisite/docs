@@ -4,7 +4,7 @@ title: ક્રિયા - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# Action: wu_centered_content {#action-wucenteredcontent}
+# Action: wu_centered_content
 
 પ્લગઇન ડેવલપર્સને કેન્દ્રિત કૉલમની અંદર વધારાની સામગ્રી ઉમેરવાની મંજૂરી આપે છે.
 

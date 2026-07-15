@@ -3,7 +3,7 @@ title: 'Pelajaran 6: Pengalaman Pendaftaran'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Pelajaran 6: Pengalaman Pendaftaran {#lesson-6-the-signup-experience}
+# Pelajaran 6: Pengalaman Pendaftaran
 
 Proses pembayaran adalah titik di mana minat bertukar menjadi pendapatan. Proses pendaftaran yang mengelirukan atau terlalu umum akan menyebabkan kehilangan pelanggan. Alur yang khusus untuk niche tertentu, yang menggunakan bahasa mereka dan terasa mudah, akan meningkatkan kadar penukaran mereka.
 

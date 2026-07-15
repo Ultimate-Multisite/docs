@@ -3,7 +3,7 @@ title: قدرات إدارة الإضافات
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# إمكانيات إدارة الإضافات {#plugin-management-abilities}
+# إمكانيات إدارة الإضافات
 
 تأتي أداة Gratis AI Agent v1.5.0 مزودة بـ **7 إمكانيات لإدارة الإضافات** يمكن للمساعد الذكي استدعاؤها أثناء المحادثة. توفر هذه الإمكانيات تحكمًا برمجيًا في إضافات WordPress المثبتة عبر [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 

@@ -3,7 +3,7 @@ title: Comunidade
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Como unirse a la Comunidad Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Como unirse a la Comunidad Ultimate Multisite
 
 A Ultimate Multisite Community é un espacio donde podes ponerte en contacto con outros usuarios de Ultimate Multisite e compartir dicas, experiencias e moito. Para aceder à Ultimate Multisite Community, dirxe para https://community.ultimatemultisite.com/home.
 

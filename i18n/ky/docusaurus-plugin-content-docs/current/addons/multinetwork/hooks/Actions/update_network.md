@@ -4,7 +4,7 @@ title: Аракет - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Аракет: update_network {#action-updatenetwork}
+# Аракет: update_network
 
 Учурдагы тармак жаңыртылгандан кийин иштейт.
 

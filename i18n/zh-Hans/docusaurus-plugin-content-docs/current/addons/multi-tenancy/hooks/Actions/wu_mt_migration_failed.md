@@ -4,7 +4,7 @@ title: 操作 - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# 动作: wu_mt_migration_failed {#action-wumtmigrationfailed}
+# 动作: wu_mt_migration_failed
 
 当迁移失败时触发。
 

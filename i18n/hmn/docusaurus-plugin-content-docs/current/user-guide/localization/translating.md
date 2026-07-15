@@ -3,7 +3,7 @@ title: Tłj Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite བསྒྱུར་བ། (Ultimate Multisite Translation) {#translating-ultimate-multisite}
+# Ultimate Multisite བསྒྱུར་བ། (Ultimate Multisite Translation)
 
 Ultimate Multisite нь English-ལས་བརྩམས་ཆོག, ແຕ່ plugin འདི་ཡག་པོ་བསྒྱུར་ཆོག་པ་དང་། ང་ཚོས་བསྒྱུར་བའི་བཅའ་ལ་དངོས་སུ་བཀྲོལ་བ་ཡོད་པ་རེད།
 

@@ -3,7 +3,7 @@ title: Sisu sünkroonimise muudatuste logi
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync muudatuste logi {#content-sync-changelog}
+# Content Sync muudatuste logi
 
 ### Versioon 1.1.0 - välja antud 2025-12-31 {#version-110---released-on-2025-12-31}
 * Uus: kõigi postitusetüüpide sünkroonimise tugi (postitused, lehed, kohandatud postitusetüübid)

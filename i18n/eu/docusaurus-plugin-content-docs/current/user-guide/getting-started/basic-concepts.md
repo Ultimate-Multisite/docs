@@ -3,7 +3,7 @@ title: Konseputu batzak
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Baser Konseputuak {#basic-concepts}
+# Baser Konseputuak
 
 WordPress-en leku bat newUser bati eta bat erabiltzaile guztia Ultimate Multisitea erabiltzen hasten duenari, hasieran oso argi eta irudiak daude adierazten dituzten. Horren jakinarazpena ezberdina importante garrantzi dira, koska plataforma eta ondo jakin nahi duzu funtzionatzen mundua gabelitzen.
 

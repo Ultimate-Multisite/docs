@@ -3,7 +3,7 @@ title: ServerPilot ինտեգրում
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Ինտեգրումը (Integration) {#serverpilot-integration}
+# ServerPilot Ինտեգրումը (Integration)
 
 ## Ընդհանուր տեսքը (Overview) {#overview}
 ServerPilot-ը Cloud հարթակ է, որը թույլ է տալիս WordPress և այլ PHP կայքեր հենվել սերվերների վրա՝ DigitalOcean, Amazon, Google կամ ցանկացած այլ սերվեր պրովայդերի սերվերներում։ Այս ინտեգրումը թույլ է տալիս ավտոմատ ենթադիր անունների (domain) սինխրոնիզացիա և SSL վկայագրականների կառավարում Ultimate Multisite-ի և ServerPilot-ի միջև։

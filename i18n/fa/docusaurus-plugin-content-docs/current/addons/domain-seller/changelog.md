@@ -3,7 +3,7 @@ title: گزارش تغییرات Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# گزارش تغییرات فروشنده دامنه {#domain-seller-changelog}
+# گزارش تغییرات فروشنده دامنه
 
 نسخه 1.3.0 - منتشرشده در 2026-06-02
 - جدید: یک هشدار network-admin اضافه شد وقتی موجودی نماینده HostAfrica بیش از حد پایین می‌آید

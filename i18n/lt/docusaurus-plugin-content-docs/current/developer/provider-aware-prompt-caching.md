@@ -3,7 +3,7 @@ title: Į teikėją atsižvelgiantis raginimų talpinimas podėlyje
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Teikėją atpažįstantis promptų podėlio naudojimas {#provider-aware-prompt-caching}
+# Teikėją atpažįstantis promptų podėlio naudojimas
 
 Superdav AI Agent v1.12.0 pristato **teikėją atpažįstantį promptų podėlio naudojimą**, kuris optimizuoja API sąnaudas ir delsą talpindamas promptus podėlyje skirtinguose LLM teikėjuose. Kiekvienas teikėjas turi skirtingus podėlio mechanizmus ir konfigūracijas.
 

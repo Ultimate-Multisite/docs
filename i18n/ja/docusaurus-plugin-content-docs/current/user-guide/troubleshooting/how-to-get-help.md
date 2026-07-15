@@ -3,7 +3,7 @@ title: ヘルプの取得方法
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# ヘルプの取得方法 {#how-to-get-help}
+# ヘルプの取得方法
 
 有効なライセンスキーを取得すると、Ultimate Multisite の設定中に遭遇する可能性のある問題を解決するために、当社のチームへのアクセスが付随します。
 

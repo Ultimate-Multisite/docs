@@ -3,7 +3,7 @@ title: Ho Hloboho le Ho Re-baetsa ka Template tsa Site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Auto Search and Replace in Site Templates (v2)
 
 _**O tšhobo o fana ka ho fetola le ho fetola.**_
 

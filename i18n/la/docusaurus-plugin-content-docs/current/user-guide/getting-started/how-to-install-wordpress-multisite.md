@@ -3,7 +3,7 @@ title: Quomodo instalare WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Quommodo Installō WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Quommodo Installō WordPress Multisite?
 
 WordPress Multisite te permittit habere network sitium in una sola installation. Hoc est factor inclusus, sed non est activus per default.
 
@@ -61,7 +61,7 @@ Et hoc codicem, etiam a WordPress praebet, ad filum tuum _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add trailing slash in /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# add trailing slash in /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

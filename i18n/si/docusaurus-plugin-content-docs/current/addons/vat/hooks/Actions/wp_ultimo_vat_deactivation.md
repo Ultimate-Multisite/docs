@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# ක්‍රියාව: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# ක්‍රියාව: wp_ultimo_vat_deactivation
 
 අක්‍රිය කිරීම සඳහා ප්ලගිනයේ අනෙකුත් කොටස්වලට තම ක්‍රියාවලි සම්බන්ධ කිරීමට ඉඩ දෙයි
 

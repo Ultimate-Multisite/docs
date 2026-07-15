@@ -4,7 +4,7 @@ title: Gweithred - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Action: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Action: wu_domain_mapping_register_filters
 
 Bydd rhai plugins yn cadw URL cyn i’r mapio fod yn weithredol neu byddant yn adeiladu URLs mewn modd gwahanol nad yw wedi’i gynnwys yn y filters uchod.
 

@@ -3,7 +3,7 @@ title: Kā kā saņemt palīdzību
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Kā kādu palīdzību saņemt {#how-to-get-help}
+# Kā kādu palīdzību saņemt
 
 Jums ir veiksmīga licenču atslēga, un ar to jums ir piekļuve mūsu komandai, kas var jums palīdzēt risināt problēmas, ko jūs varat saskarties laikā, kad iestatāt Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Kontentni sinxronlash o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync o‘zgarishlar jurnali {#content-sync-changelog}
+# Content Sync o‘zgarishlar jurnali
 
 ### Versiya 1.1.0 - 2025-12-31 da chiqarilgan {#version-110---released-on-2025-12-31}
 * Yangi: Barcha post turlarini sinxronlashni qo‘llab-quvvatlash (postlar, sahifalar, maxsus post turlari)

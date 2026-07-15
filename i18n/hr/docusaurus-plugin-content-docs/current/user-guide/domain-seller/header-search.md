@@ -3,7 +3,7 @@ title: Pretraživanje domena u zaglavlju
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Pretraživanje domena u zaglavlju {#header-domain-search}
+# Pretraživanje domena u zaglavlju
 
 Koristite ovu postavku kada želite mali obrazac u zaglavlju koji pokreće pretraživanje domena, a zatim omogućuje korisniku odabir dostupnih domena unutar Ultimate Multisite checkouta.
 

@@ -3,7 +3,7 @@ title: ምናሌ ፍጠር
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# ምናሌ ይፍጠሩ (Create Menu) {#create-menu}
+# ምናሌ ይፍጠሩ (Create Menu)
 
 የ**ምናሌ መፍጠር** ችሎታ የWordPress የ navigation ምናሌዎችን የመፍጠር አቅም ሲሆን፣ ከየገጽ ርዕሶች የተለየ የ navigation መለያዎችን (navigation labels) ድጋፍ ይሰጣል።
 

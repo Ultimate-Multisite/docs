@@ -3,7 +3,7 @@ title: Kódové fragmenty
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kód fragmenty pre v2 {#code-snippets-for-v2}
+# Kód fragmenty pre v2
 
 V podstate sa kód fragmenty pre **WordPress** používa na vykonávanie určitých akcí, ktoré by inak mohli vyžadovať samostatný menší plugin. Takýkoli kód fragmenty sa umiestňuje do jedného z základných súborov WordPressu alebo témy (obvykle do súboru functions.php vašej témy) alebo sa môže použiť ako MU plugin.
 

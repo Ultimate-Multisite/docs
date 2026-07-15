@@ -4,7 +4,7 @@ title: ການດຳເນີນການ - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# ການກະທຳ: wu_register_integrations {#action-wuregisterintegrations}
+# ການກະທຳ: wu_register_integrations
 
 ເຮັດວຽກເພື່ອອະນຸຍາດໃຫ້ integrations ລົງທະບຽນຕົນເອງ.
 

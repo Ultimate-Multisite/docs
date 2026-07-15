@@ -3,7 +3,7 @@ title: Upravljanje strank
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Upravljanje strankami {#managing-customers}
+# Upravljanje strankami
 
 Stranica **Customers** prikazuje seznam članov, ki so se v vaš omrežje prijavili. Ta stran prikazuje osnovne podatke o uporabniku, vključno z imenom, e-pošoto, zadnjim prijavo in povezavo **switch to**, ki vam omogoča, da se prijavite na podstran uporabnika kot administrator strani.
 

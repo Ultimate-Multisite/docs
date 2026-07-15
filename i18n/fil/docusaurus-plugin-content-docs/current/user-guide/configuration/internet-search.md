@@ -3,7 +3,7 @@ title: Paghahanap sa Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Paghahanap sa Internet {#internet-search}
+# Paghahanap sa Internet
 
 Nagdaragdag ang Gratis AI Agent v1.5.0 ng kakayahang **Internet Search** na nagpapahintulot sa AI assistant na kumuha ng napapanahong impormasyon mula sa web habang nag-uusap. Pinapagana ito ng [Brave Search API](https://brave.com/search/api/) o ng [Tavily API](https://tavily.com/).
 

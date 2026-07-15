@@ -4,7 +4,7 @@ title: Filtru - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Filtru: wu_is_api_enabled {#filter-wuisapienabled}
+# Filtru: wu_is_api_enabled
 
 Ħalli lill-iżviluppaturi tal-estensjonijiet jisfurzaw stat partikolari għall-API.
 

@@ -4,7 +4,7 @@ title: Akce - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Akce: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Akce: wu_page_enqueue_scripts
 
 Přidáváme vlastní akci, aby byl místo, kde můžeme enqueuovat skripty a styly podle potřeby, a zajistit, že se načtou pouze na správných stránkách.
 

@@ -3,7 +3,7 @@ title: Kutanga kuV1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Kuuta ku V1 {#migrating-from-v1}
+# Kuuta ku V1
 
 ## Ultimate Multisite yakagadzirwa kubva kune familia ya chidzidzo chechinhu 1.x kune familia ya chidzidzo chechinhu 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

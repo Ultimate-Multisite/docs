@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - switch_network
 sidebar_label: switch_network
 _i18n_hash: 40e813a787afb90d335c7dd7b8c93eb2
 ---
-# କାର୍ଯ୍ୟ: switch_network {#action-switchnetwork}
+# କାର୍ଯ୍ୟ: switch_network
 
 ବର୍ତ୍ତମାନର ନେଟୱାର୍କ ପରିପ୍ରେକ୍ଷ୍ୟ ବଦଳିଲେ ଚାଲୁ ହୁଏ।
 

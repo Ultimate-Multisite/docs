@@ -3,7 +3,7 @@ title: Hooken erabilera-gida
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Hooks erabilera-gida {#hooks-usage-guide}
+# Hooks erabilera-gida
 
 Ultimate Multisite-k 200+ action hooks eta 280+ filter hooks eskaintzen ditu. Orri honek gehien erabiltzen diren hooks-ak lantzen ditu, adibide praktikoekin. Automatikoki sortutako erreferentzia osoa ikusteko, arakatu atal honetako gainerako orriak.
 

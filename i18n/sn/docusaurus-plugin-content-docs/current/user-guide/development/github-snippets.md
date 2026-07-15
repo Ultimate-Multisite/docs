@@ -3,7 +3,7 @@ title: Mufanzo weGitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ndiri kuenda kutaura Ultimate Multisite snippets pa GitHub repository yedu {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Ndiri kuenda kutaura Ultimate Multisite snippets pa GitHub repository yedu
 
 Kune kuna code snippets kubva kunoita zvinhu zvakakosha kuti Ultimate Multisite users vanogona kuita, zvichiri kuita zvinhu zvakaipa zvakakura, se kuita Google Analytics script pamwe nepages dzakare (sign-up pages) kana kuita kuti meta box yakaita admin dashboard isave inotarisirwa.
 
@@ -19,7 +19,7 @@ Kune nzira kubiri dzinogona kuita code iye:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Sei kunoita snippet pamusoro pe file functions.php ya theme yako. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Sei kunoita snippet pamusoro pe file functions.php ya theme yako.
 
   1. Ingira mu WordPress Network admin dashboard uye enda ku Themes > Theme Editor (Ongorora screenshot pano).
 

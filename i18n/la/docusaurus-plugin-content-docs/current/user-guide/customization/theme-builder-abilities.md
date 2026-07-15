@@ -3,7 +3,7 @@ title: Abilitates Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacitates Thematic Builder: Scaffolding and Activating Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Capacitates Thematic Builder: Scaffolding and Activating Block Themes
 
 Superdav AI Agent v1.12.0 introduce duos potentiae quae te permittunt generare et deployare themas bloc customibus directum ex interface chat.
 

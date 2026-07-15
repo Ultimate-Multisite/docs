@@ -3,7 +3,7 @@ title: Desbaixar un pla
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Reduinar un pla (v2) {#downgrading-a-plan-v2}
+# Reduinar un pla (v2)
 
 _**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
 

@@ -3,7 +3,7 @@ title: Isdhexgalka Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Iskuulka Ultimate Multisite iyo Zapierka Lagu Xiriirayo {#integrating-ultimate-multisite-with-zapier}
+# Iskuulka Ultimate Multisite iyo Zapierka Lagu Xiriirayo
 
 Maqaallo ka mid ah, waxaan ka warrabixiyay [Webhooks](webhooks.md) sida loo isticmaali karo si loo xiriirayo barnaamijyada saddexaad (3rd party applications).
 

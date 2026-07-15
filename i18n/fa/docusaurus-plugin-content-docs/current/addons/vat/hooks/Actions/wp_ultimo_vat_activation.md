@@ -4,7 +4,7 @@ title: Action - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# اکشن: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# اکشن: wp_ultimo_vat_activation
 
 این اکشن به بخش‌های دیگر پلاگین اجازه می‌دهد که کدهای لازم برای فعال‌سازی خود را به آن متصل کنند.
 

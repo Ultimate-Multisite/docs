@@ -3,7 +3,7 @@ title: Orkestracija alata za izradu web-mjesta v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder orkestracija v2 {#site-builder-orchestration-v2}
+# Site Builder orkestracija v2
 
 Site Builder orkestracija v2 (uvedena u Gratis AI Agent v1.4.0) je mehanizam koji pokreće izradu web-stranica u više koraka. Kada od agenta zatražite da "izradi web-stranicu restorana" ili "stvori portfolio s blogom", orkestrator razlaže taj cilj visoke razine u strukturirani **plan**, otkriva pluginove potrebne za njegovo ispunjenje, izvršava svaki korak redom, prati napredak i autonomno se oporavlja od pogrešaka.
 

@@ -4,7 +4,7 @@ title: Filter - wu_add_menu_page_slug_url
 sidebar_label: wu_add_menu_page_slug_url
 _i18n_hash: 8f4d638285fc2ad67313b1b730e776f6
 ---
-# ഫിൽട്ടർ: wu_add_menu_page_slug_url {#filter-wuaddmenupageslugurl}
+# ഫിൽട്ടർ: wu_add_menu_page_slug_url
 
 ഡെവലപ്പർമാർക്ക് URL-കളിൽ മാറ്റങ്ങൾ വരുത്താൻ (അല്ലെങ്കിൽ നിയന്ത്രിക്കാൻ) ഇത് അനുവദിക്കുന്നു.
 

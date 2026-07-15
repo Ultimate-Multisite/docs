@@ -4,7 +4,7 @@ title: Azzjoni - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 91c9f283f9b26c81310bdb787db88fec
 ---
-# Azzjoni: wu_page_added {#action-wupageadded}
+# Azzjoni: wu_page_added
 
 Ħalli lill-iżviluppaturi tal-estensjonijiet iħaddmu affarijiet addizzjonali meta l-paġni jiġu rreġistrati.
 

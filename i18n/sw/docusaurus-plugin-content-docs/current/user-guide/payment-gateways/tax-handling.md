@@ -3,7 +3,7 @@ title: Ushughulikiaji wa Kodi
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ushughulikiaji wa Kodi {#tax-handling}
+# Ushughulikiaji wa Kodi
 
 Ultimate Multisite ina moduli ya ukusanyaji kodi iliyojengwa ndani ya plugin yetu kuu, kwa hivyo ikiwa unahitaji kukusanya kodi za mauzo kwenye mipango, vifurushi na huduma zako, unaweza kufanya hivyo kwa urahisi bila kulazimika kusakinisha nyongeza zozote.
 

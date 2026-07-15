@@ -3,7 +3,7 @@ title: Ujumuishaji wa WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Uunganishaji wa WP Engine {#wp-engine-integration}
+# Uunganishaji wa WP Engine
 
 ## Muhtasari {#overview}
 WP Engine ni jukwaa la hali ya juu la hosting ya WordPress linalodhibitiwa ambalo linatoa utendaji bora, usalama, na uwezo wa kukua kwa tovuti za WordPress. Uunganishaji huu unawezesha usawazishaji wa kiotomatiki wa domain kati ya Ultimate Multisite na WP Engine.

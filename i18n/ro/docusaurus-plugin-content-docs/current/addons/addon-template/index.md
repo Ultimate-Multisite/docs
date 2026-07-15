@@ -3,9 +3,9 @@ title: Șablon de Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Șablon de Addon {#addon-template}
+# Șablon de Addon
 
-{{ADDON_DESCRIPTION}}
+Șablon de Addon — Ultimate Multisite.
 
 ## Cerințe {#requirements}
 

@@ -3,7 +3,7 @@ title: 驗證色盤對比度
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# 驗證調色盤對比度 {#validate-palette-contrast}
+# 驗證調色盤對比度
 
 **驗證調色盤對比度**功能會檢查您設計調色盤中的顏色組合，以確保其符合 WCAG（網頁內容無障礙指南）標準，然後再將這些顏色應用到您的主題上。
 

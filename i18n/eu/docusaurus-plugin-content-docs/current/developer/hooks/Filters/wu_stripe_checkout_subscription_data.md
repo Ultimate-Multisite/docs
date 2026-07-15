@@ -4,7 +4,7 @@ title: Iragazkia - wu_stripe_checkout_subscription_data
 sidebar_label: wu_stripe_checkout_subscription_data
 _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
-# Iragazkia: wu_stripe_checkout_subscription_data {#filter-wustripecheckoutsubscriptiondata}
+# Iragazkia: wu_stripe_checkout_subscription_data
 
 Iragazi Stripe harpidetza-datuak. success_url edo cancel_url gainidatz ditzake.
 

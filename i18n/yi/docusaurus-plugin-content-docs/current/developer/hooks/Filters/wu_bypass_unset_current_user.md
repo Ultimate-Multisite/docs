@@ -4,7 +4,7 @@ title: פֿילטער - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# פילטער: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# פילטער: wu_bypass_unset_current_user
 
 דערלויבט דעוועלאָפּערס צו אַרומגיין דעם קאָד וואָס נעמט אַוועק דעם איצטיקן באַניצער.
 

@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_connector_enforcement_option_ke
 sidebar_label: wu_connector_enforcement_option_keys
 _i18n_hash: d6beae90e3f1bf32a08ce35257fb0dfc
 ---
-# Filter: wu_connector_enforcement_option_keys {#filter-wuconnectorenforcementoptionkeys}
+# Filter: wu_connector_enforcement_option_keys
 
 အဓိက ဝက်ဘ်ဆိုက်မှ အသုံးပြုရန် သတ်မှတ်ထားသော AI ပံ့ပိုးပေးသူ (provider) ရွေးချယ်မှု သော့များစာရင်းကို စစ်ထုတ်ပေးသည်။
 

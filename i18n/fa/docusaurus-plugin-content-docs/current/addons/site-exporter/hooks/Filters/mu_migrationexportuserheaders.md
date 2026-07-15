@@ -4,7 +4,7 @@ title: فیلتر - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Filter: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Filter: mu_migration/export/user/headers
 
 این فیلتر، مجموعه پیش‌فرض هدرهای کاربر که قرار است خروجی گرفته یا وارد شوند را فیلتر می‌کند.
 

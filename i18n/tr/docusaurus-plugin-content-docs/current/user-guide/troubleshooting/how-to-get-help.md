@@ -3,7 +3,7 @@ title: Nasıl Yardım Alınır
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Nasıl yardım alabilirsiniz {#how-to-get-help}
+# Nasıl yardım alabilirsiniz
 
 Geçerli Lisans anahtarınızı aldınız ve bu anahtarla birlikte Ultimate Multisite kurulumu sırasında karşılaşabileceğiniz sorunları çözmenize yardımcı olacak ekibimize erişim hakkı kazandınız.
 

@@ -3,7 +3,7 @@ title: 'Lecția 3: Configurarea Rețelei Tale'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lecția 3: Configurarea Rețelei Tale {#lesson-3-setting-up-your-network}
+# Lecția 3: Configurarea Rețelei Tale
 
 E timpul să construim. În această lecție, veți instala Ultimate Multisite și veți configura fundația rețelei FitSite. Fiecare decizie aici este luată având în vedere nișa fitness.
 

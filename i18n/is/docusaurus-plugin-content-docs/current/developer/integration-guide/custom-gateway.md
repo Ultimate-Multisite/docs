@@ -3,7 +3,7 @@ title: Þróun sérsniðinnar greiðslugáttar
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Sérsniðin þróun greiðslugáttar {#custom-gateway-development}
+# Sérsniðin þróun greiðslugáttar
 
 Þú getur búið til sérsniðnar greiðslugáttir með því að útvíkka `Base_Gateway` klasann.
 

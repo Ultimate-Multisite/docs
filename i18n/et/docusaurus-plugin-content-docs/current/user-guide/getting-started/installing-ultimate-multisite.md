@@ -3,7 +3,7 @@ title: Ultimate Multisite'i installimine
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite'i paigaldamine {#installing-ultimate-multisite}
+# Ultimate Multisite'i paigaldamine
 
 :::note
 See juhend eeldab, et WordPress Multisite on juba installitud ja konfigureeritud. Selle kohta lisateabe saamiseks vaadake WP Beginneri [seda juhendit](https://www.wpbeginner.com/glossary/multisite/).

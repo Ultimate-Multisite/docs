@@ -3,7 +3,7 @@ title: Material WP ပြောင်းလဲမှု မှတ်တမ်း
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP ပြောင်းလဲမှုမှတ်တမ်း {#material-wp-changelog}
+# Material WP ပြောင်းလဲမှုမှတ်တမ်း
 
 Version 1.1.15 - 01/26/2026
 * ပိုမိုကောင်းမွန်စေသည်- Code style နှင့် formatting များ;

@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filter: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filter: wu_checkout_field_templates
 
 പുതിയ ഫീൽഡ് ടെംപ്ലേറ്റുകൾ ചേർക്കുന്നതിനുള്ള ഞങ്ങളുടെ API-കൾ ഇവിടെ ബന്ധിപ്പിക്കുന്നു (hook into).
 

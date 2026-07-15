@@ -3,7 +3,7 @@ title: יצירת לוגו SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# יצירת לוגו SVG {#generate-logo-svg}
+# יצירת לוגו SVG
 
 היכולת **Generate Logo SVG** מאפשרת ל-Theme Builder ליצור ולהטמיע לוגואים מותאמים אישית בפורמט SVG ישירות באתר ה-WordPress שלכם, עם ניקוי אוטומטי ובטוח (namespace-safe sanitisation).
 

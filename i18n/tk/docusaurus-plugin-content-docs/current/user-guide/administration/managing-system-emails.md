@@ -3,7 +3,7 @@ title: Sistem E-poçtlarını Yönetmek
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-postalaryny Dolandyrýan {#managing-system-emails}
+# Sistem E-postalaryny Dolandyrýan
 
 Ultimate Multisite size giňden-giň e-postalar göndýar, mysal, katnaşygy anyklamak üçin, tölemek hasapyny bildirmek üçin we üje üyşikleri üýtgetmek üçin. Bu e-postanyň şablonlaryny öz brandaňyz bilen sazlap bilersiňiz.
 

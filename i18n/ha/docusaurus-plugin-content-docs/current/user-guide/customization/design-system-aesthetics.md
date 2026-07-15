@@ -3,7 +3,7 @@ title: Fannin Zane na Tsarin Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# مهارت‌های زیبایی سیستم طراحی (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
+# مهارت‌های زیبایی سیستم طراحی (Design System Aesthetics Skill)
 
 **مهارت زیبایی سیستم طراحی** یک روش هدایت‌شده برای بهتر کردن هویت بصری سایت شماست. این مهارت به شما کمک می‌کند در مورد تایپوگرافی، رنگ، فاصله و توکن‌های حرکت که سیستم طراحی شما را تعریف می‌کنند، تصمیمات سازگار بگیرید.
 

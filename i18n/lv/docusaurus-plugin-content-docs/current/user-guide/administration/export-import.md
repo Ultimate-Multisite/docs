@@ -3,7 +3,7 @@ title: Izpilde un ievadi
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Izvēles un Importeri {#export--import}
+# Izvēles un Importeri
 
 Ultimate Multisite 2.9.0 ieviesta vienu vietnes **Izvēles un Importeru** (Export & Import) rīku, kas atrodas menu **Tools > Export & Import**. Izmantojiet to, ja jums ir nepieciešams pakaļpakot WordPress vietni ZIP failā, atkārtoti šo ZIP failu vai pārvietot vietni starp saistītiem Ultimate Multisite un vienotas WordPress instalācijām.
 

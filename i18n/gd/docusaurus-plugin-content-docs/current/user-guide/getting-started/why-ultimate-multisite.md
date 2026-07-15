@@ -3,7 +3,7 @@ title: Rinn a' chùis Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Cuimh a'Ultimate Multisite {#why-ultimate-multisite}
+# Cuimh a'Ultimate Multisite
 
 Tha thu an tòiseachadh air an article seo, is e cudrom gu bheil thu a ghuinn a bhith a' chluich a tha a' sgaidh a' chùineachadh a' chuid a' chùineachadh. Tha sinn a' faicinn gu bheil thu a' chùineamhan a tha thu a' ginn a' chùineachadh gu deimialach air an deugh.
 

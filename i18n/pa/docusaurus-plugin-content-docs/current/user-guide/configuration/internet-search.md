@@ -3,7 +3,7 @@ title: ਇੰਟਰਨੈਟ ਸਰਚ
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# ਇੰਟਰਨੈਟ ਸਰਚ {#internet-search}
+# ਇੰਟਰਨੈਟ ਸਰਚ
 
 Gratis AI Agent v1.5.0 ਇੱਕ **Internet Search** ਯੋਗਤਾ ਜੋੜਦਾ ਹੈ, ਜਿਸ ਨਾਲ AI ਅਸਿਸਟੈਂਟ ਗੱਲਬਾਤ ਦੌਰਾਨ ਵੈੱਬ ਤੋਂ ਤਾਜ਼ਾ ਜਾਣਕਾਰੀ ਕੱਢ ਸਕਦਾ ਹੈ। ਇਹ [Brave Search API](https://brave.com/search/api/) ਜਾਂ [Tavily API](https://tavily.com/) ਦੁਆਰਾ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ।
 

@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_should_create_domain_record_for_site
 sidebar_label: wu_should_create_domain_record_for_site
 _i18n_hash: d97b52f157228e570818c153e96a609c
 ---
-# Ajọ: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+# Ajọ: wu_should_create_domain_record_for_site
 
 Ó ń ṣàjọ bóyá Ultimate Multisite yẹ kí ó dá igbasilẹ domain fún site tí a ṣẹ̀ṣẹ̀ dá.
 

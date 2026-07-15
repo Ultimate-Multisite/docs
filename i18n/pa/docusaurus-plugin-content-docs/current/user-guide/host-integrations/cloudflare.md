@@ -3,7 +3,7 @@ title: Cloudflare ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#cloudflare-integration}
+# Cloudflare ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 
 ## ਝਲਕ {#overview}
 Cloudflare ਇੱਕ ਅਗੇਤਰੀ ਸਮੱਗਰੀ ਡਿਲਿਵਰੀ ਨੈੱਟਵਰਕ (CDN) ਅਤੇ ਸੁਰੱਖਿਆ ਪ੍ਰਦਾਤਾ ਹੈ ਜੋ ਵੈੱਬਸਾਈਟਾਂ ਦੀ ਰੱਖਿਆ ਕਰਨ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਤੇਜ਼ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਇਹ ਇੰਟੀਗ੍ਰੇਸ਼ਨ Ultimate Multisite ਅਤੇ Cloudflare ਵਿਚਕਾਰ ਆਟੋਮੈਟਿਕ ਡੋਮੇਨ ਪ੍ਰਬੰਧਨ ਸਮਰੱਥ ਕਰਦਾ ਹੈ, ਖ਼ਾਸ ਕਰਕੇ ਸਬਡੋਮੇਨ ਮਲਟੀਸਾਈਟ ਇੰਸਟਾਲੇਸ਼ਨਾਂ ਲਈ।

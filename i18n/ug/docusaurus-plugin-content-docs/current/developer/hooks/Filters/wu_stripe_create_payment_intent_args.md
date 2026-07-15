@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_stripe_create_payment_intent_args
 sidebar_label: wu_stripe_create_payment_intent_args
 _i18n_hash: 519a54fb6c4994ea3e7584a952f39239
 ---
-# سۈزگۈچ: wu_stripe_create_payment_intent_args {#filter-wustripecreatepaymentintentargs}
+# سۈزگۈچ: wu_stripe_create_payment_intent_args
 
 چىقىم قىلىش نىيىتىنىڭ argumentلىرىنى سۈزگۈچتىن ئۆتكۈزىدۇ.
 

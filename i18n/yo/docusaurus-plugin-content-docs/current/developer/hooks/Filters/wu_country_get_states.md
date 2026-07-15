@@ -4,7 +4,7 @@ title: Àlẹmọ - wu_country_get_states
 sidebar_label: wu_country_get_states
 _i18n_hash: 9e44d60beddbc5fddcd7b1883c72bb2c
 ---
-# Àlẹmọ: wu_country_get_states {#filter-wucountrygetstates}
+# Àlẹmọ: wu_country_get_states
 
 Ó dá àtòjọ àwọn ìpínlẹ̀ padà fún orílẹ̀-èdè yìí.
 

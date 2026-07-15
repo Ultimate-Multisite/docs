@@ -3,7 +3,7 @@ title: Webhook හැසිරවීම
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook හැසිරවීම {#webhook-handling}
+# Webhook හැසිරවීම
 
 බාහිර සේවාවලින් සිදුවීම් ලබාගෙන දත්ත Ultimate Multisite සමඟ සමමුහුර්ත කිරීමට අභිරුචි webhook අවසන් ලක්ෂ්‍ය සාදන්න.
 

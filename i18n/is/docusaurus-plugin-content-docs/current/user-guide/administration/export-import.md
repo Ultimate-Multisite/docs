@@ -3,7 +3,7 @@ title: Útlunni og innluni
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exporter og Importer {#export--import}
+# Exporter og Importer
 
 Ultimate Multisite 2.9.0 leggur ein enkelt-site **Export & Import** verktúfn undir menyn **Tools > Export & Import**. Bruk það þegar þú þarft að pakka eina WordPress síti í ZIP-file, að skila því upp, eða flytja síti milli samræmdra Ultimate Multisite og single-site WordPress innreiðslum.
 

@@ -3,7 +3,7 @@ title: Dizayn tizimi estetikasi ko'nikmasi
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizayn Tizimi Estetika Ko'nikmasi {#design-system-aesthetics-skill}
+# Dizayn Tizimi Estetika Ko'nikmasi
 
 **Dizayn Tizimi Estetika ko'nikmasi** — bu saytingiz vizual identifikatorini takomillashtirish uchun yo'naltirilgan yondashuvdir. U sizga dizayn tizimingizni belgilaydigan tipografiya, ranglar, bo'shliq va harakat (motion) tokenlari haqida bir xil qaror qabul qilishda yordam beradi.
 

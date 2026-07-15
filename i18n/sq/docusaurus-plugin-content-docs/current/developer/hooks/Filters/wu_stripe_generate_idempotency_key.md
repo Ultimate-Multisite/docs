@@ -4,7 +4,7 @@ title: Filtër - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# Filtër: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# Filtër: wu_stripe_generate_idempotency_key
 
 Filtron vlerën idempotency_key të dërguar me opsionet e pagesës Stripe.
 

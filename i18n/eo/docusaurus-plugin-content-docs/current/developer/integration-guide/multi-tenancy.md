@@ -3,7 +3,7 @@ title: Integriĝo de plurluanteco
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Plurluanteca Integriĝo {#multi-tenancy-integration}
+# Plurluanteca Integriĝo
 
 Ultimate Multisite: Plurluanteco 1.2.0 ŝanĝas plurajn integriĝajn kontaktopunktojn por suverenaj luantoj, migra kontrolado, kaj aŭtomatigo de la vivociklo de luantoj.
 

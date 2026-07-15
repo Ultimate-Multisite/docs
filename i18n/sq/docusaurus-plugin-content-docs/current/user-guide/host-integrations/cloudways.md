@@ -3,7 +3,7 @@ title: Integrimi me Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrimi me Cloudways {#cloudways-integration}
+# Integrimi me Cloudways
 
 ## Përmbledhje {#overview}
 Cloudways është një platform hosting në cloud të menaxhuar që ju lejon të vendosni (deployoni) faqe WordPress në ndryshme ofrues cloud si DigitalOcean, AWS, Google Cloud dhe më shumë. Kjo integrim lejon synkronizimin automatik të domenit dhe menaxhimin e sertifikatëve SSL midis Ultimate Multisite dhe Cloudways.

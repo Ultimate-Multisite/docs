@@ -3,7 +3,7 @@ title: Насозгузори плагин ва сандбокс
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 тавассути **Система созидания и песочницы плагинов (Plugin Builder & Sandbox System)**-роҳбарият мерасонад, ки ба ӯ имкон медиҳад, ки ассисти помощью плагини WordPress-ро дар шарои муайян ва аз дигар ҷузъҳо ҷудошудаи песочӣ таҳия кунад, фаъол карда тасдиқ намояд ва идора намояд.
 

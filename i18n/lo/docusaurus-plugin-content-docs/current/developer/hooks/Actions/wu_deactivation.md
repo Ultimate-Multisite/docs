@@ -4,7 +4,7 @@ title: ການດຳເນີນການ - wu_deactivation
 sidebar_label: wu_deactivation
 _i18n_hash: 414b79d7126ceba371431650c2fa8209
 ---
-# ການກະທຳ: wu_deactivation {#action-wudeactivation}
+# ການກະທຳ: wu_deactivation
 
 ໃຫ້ສ່ວນອື່ນໆຂອງ plugin ຕິດຕັ້ງ routine ຂອງພວກເຂົາສຳລັບການປິດໃຊ້ງານ
 

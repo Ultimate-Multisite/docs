@@ -3,7 +3,7 @@ title: Referans Kapasite yo
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referans Kapasite yo {#abilities-reference}
+# Referans Kapasite yo
 
 Kapasite yo se aksyon atomik Gratis AI Agent ka envoke sou enstalasyon WordPress ou a. Chak kapasite se yon klas PHP ki anrejistre epi ki ekspoze yon chema JSON — ajan an li chema sa a pandan ekzekisyon pou konprann ki paramèt ki obligatwa ak sa kapasite a retounen.
 

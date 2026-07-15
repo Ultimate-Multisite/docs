@@ -3,7 +3,7 @@ title: ການຕັ້ງຄ່າ PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# ການຕັ້ງຄ່າ PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
+# ການຕັ້ງຄ່າ PayPal Gateway (v2)
 
 _**ໝາຍເຫດສຳຄັນ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite ເພື່ອໃຊ້ໃນເວີຊັນ 2.x.**_
 

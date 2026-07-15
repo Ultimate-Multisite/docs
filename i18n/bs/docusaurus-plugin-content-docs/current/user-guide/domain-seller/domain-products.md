@@ -3,7 +3,7 @@ title: Domenska proizvodi i cijene
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Proizvodi i Cjenovna Struktura {#domain-products-and-pricing}
+# Domain Proizvodi i Cjenovna Struktura
 
 Domain proizvodi su način na koji kontrolišete cijene, TLD-ove, WHOIS privatnost i izbor provajdera. Svaki domain proizvod je standardni Multisite Ultimate proizvod sa dodatnom **Domain Settings** karticom.
 

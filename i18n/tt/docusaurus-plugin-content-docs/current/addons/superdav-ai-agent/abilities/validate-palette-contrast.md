@@ -3,7 +3,7 @@ title: Палитра контрастын тикшерү
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Палитра контрастын тикшерү {#validate-palette-contrast}
+# Палитра контрастын тикшерү
 
 **Validate Palette Contrast** мөмкинлеге дизайн палитрагыздагы төс парларын темагызга кулланганчы WCAG (Web Content Accessibility Guidelines) таләпләренә туры килүен тикшерә.
 

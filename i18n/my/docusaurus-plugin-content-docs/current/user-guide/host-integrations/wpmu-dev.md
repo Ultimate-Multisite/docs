@@ -3,7 +3,7 @@ title: WPMU DEV ပေါင်းစည်းမှု
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ပေါင်းစပ်ချိတ်ဆက်ခြင်း {#wpmu-dev-integration}
+# WPMU DEV ပေါင်းစပ်ချိတ်ဆက်ခြင်း
 
 ## အကျဉ်းချုပ် {#overview}
 WPMU DEV သည် WordPress site များအတွက် hosting၊ plugin များနှင့် ဝန်ဆောင်မှုများကို ပေးဆောင်သော ပြည့်စုံသော WordPress platform တစ်ခုဖြစ်သည်။ ဤပေါင်းစပ်ချိတ်ဆက်မှုသည် Ultimate Multisite နှင့် WPMU DEV hosting အကြား domain များ အလိုအလျောက် sync လုပ်ခြင်းနှင့် SSL certificate စီမံခန့်ခွဲခြင်းတို့ကို ဆောင်ရွက်ပေးနိုင်သည်။

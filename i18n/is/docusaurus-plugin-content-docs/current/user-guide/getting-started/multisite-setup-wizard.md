@@ -3,7 +3,7 @@ title: Stjórnaraferð fyrir multisítuuppsetning
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Uppsetar {#multisite-setup-wizard}
+# Multisite Uppsetar
 
 Ultimate Multisite hefur innbyggt uppsetar sem sjálfskiptir breytur almenna WordPress-innstallsannferð í nýja WordPress Multisite netverk. Þetta fjölstyrkir þarf manulega að breyta `wp-config.php` eða framkvæma skjalaskiljanlegar fyrirmönnum í MySQL.
 

@@ -3,7 +3,7 @@ title: A’ togail amalachadh clàraiche gnàthaichte
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# A’ togail amalachadh Registrar gnàthaichte {#building-a-custom-registrar-integration}
+# A’ togail amalachadh Registrar gnàthaichte
 
 Tha tuilleadan Domain Seller a’ cleachdadh pàtran **Integration Registry**. ’S e clas PHP a th’ anns gach registrar a chuireas `Domain_Selling_Capability` an gnìomh agus a chlàraicheas e fhèin tron action hook `wu_domain_seller_register_capabilities`.
 

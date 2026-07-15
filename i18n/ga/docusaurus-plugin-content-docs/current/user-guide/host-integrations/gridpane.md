@@ -3,7 +3,7 @@ title: Cothromadh Pane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Intégráisi le GridPane {#gridpane-integration}
+# Intégráisi le GridPane
 
 ## Oibríocht {#overview}
 Is é GridPane curteáil control panel hosting WordPress a thugtar do phroesionail WordPress leatach. Féachfaidh an chéad seo a bheith i gcónaí domáin agus a bhaint ar cert feidhm SSL idir Ultimate Multisite agus GridPane.

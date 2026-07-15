@@ -3,7 +3,7 @@ title: Migrasyon Mod Pwovizyon Twa
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrasyon Mod Pwòtè (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrasyon Mod Pwòtè (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 chanje kijan yo jere abitye pwòtè (third-party abilities). **Mod pwòtè kounye a default pou "auto",** sa ki pèmèt integrasyon natif ak WordPress Abilities API sou WordPress 7.0+ san bezwen okenn konfigirasyon manmanèl.
 

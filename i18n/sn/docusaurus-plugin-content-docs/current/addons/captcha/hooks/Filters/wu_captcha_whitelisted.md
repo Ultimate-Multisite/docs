@@ -4,7 +4,7 @@ title: Sefa - wu_captcha_whitelisted
 sidebar_label: wu_captcha_whitelisted
 _i18n_hash: ffccaaf25dd7a6a35a45213f82674e80
 ---
-# Sefa: wu_captcha_whitelisted {#filter-wucaptchawhitelisted}
+# Sefa: wu_captcha_whitelisted
 
 Sefa kuti mushandisi/chikumbiro chazvino chinofanira kuiswa pawhitelist here.
 

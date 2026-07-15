@@ -3,7 +3,7 @@ title: ആതിഥേയ വിഭവങ്ങൾ
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# ഹോസ്പിറ്റാലിറ്റി മെനുകൾ {#hospitality-menus}
+# ഹോസ്പിറ്റാലിറ്റി മെനുകൾ
 
 **Hospitality Menus** ഫീച്ചർ ഉപയോഗിച്ച്, നിങ്ങളുടെ WordPress സൈറ്റിലേക്ക് ഘടനാപരമായ ഭക്ഷണ, പാനീയ മെനു പേജുകൾ Theme Builder വഴി സൃഷ്ടിക്കാനും ഉൾപ്പെടുത്താനും സാധിക്കും.
 

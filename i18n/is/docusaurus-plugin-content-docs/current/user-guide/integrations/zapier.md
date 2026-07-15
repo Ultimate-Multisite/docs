@@ -3,7 +3,7 @@ title: Zapier samþætting
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Samning Ultima Multisite við Zapier {#integrating-ultimate-multisite-with-zapier}
+# Samning Ultima Multisite við Zapier
 
 Í einum af greininum ræfum við [Webhooks](webhooks.md) og hvernig þeir geta verið notað til að tengja þessar við þriðja þjónustur.
 

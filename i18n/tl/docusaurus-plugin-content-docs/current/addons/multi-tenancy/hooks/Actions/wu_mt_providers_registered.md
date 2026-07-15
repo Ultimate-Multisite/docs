@@ -4,7 +4,7 @@ title: Aksyon - wu_mt_providers_registered
 sidebar_label: wu_mt_providers_registered
 _i18n_hash: 20d07d793895ff5da997696e1fc94f5d
 ---
-# Aksyon: wu_mt_providers_registered {#action-wumtprovidersregistered}
+# Aksyon: wu_mt_providers_registered
 
 Pinapagana pagkatapos mairehistro ang mga default na tagapagbigay.
 

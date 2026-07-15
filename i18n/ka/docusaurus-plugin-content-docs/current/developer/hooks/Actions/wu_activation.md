@@ -4,7 +4,7 @@ title: მოქმედება - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# მოქმედება: wu_activation {#action-wuactivation}
+# მოქმედება: wu_activation
 
 საშუალება მიეცით plugin-ის სხვა ნაწილებს, აქტივაციისთვის თავიანთი routines მიამაგრონ
 

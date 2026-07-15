@@ -3,7 +3,7 @@ title: 'Leson 12: Jere Biznis la'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leson 12: Jere Biznis la {#lesson-12-running-the-business}
+# Leson 12: Jere Biznis la
 
 Yon platfòm se pa yon pwojè ou fini -- se yon biznis ou jere. Leson sa a kouvri operasyon chak jou pou jere FitSite: sipò, faktirasyon, antretyen, epi kenbe kliyan yo kontan.
 

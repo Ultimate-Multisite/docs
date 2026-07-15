@@ -3,7 +3,7 @@ title: தேவைகள்
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite தேவைகள் {#ultimate-multisite-requirements}
+# Ultimate Multisite தேவைகள்
 
 Ultimate Multisite வாங்குவதற்கு முன் நீங்கள் முதலில் கேட்கக்கூடிய கேள்வி என்னவென்றால், எங்கள் plugin-ஐ இயக்க என்ன தேவைகள் என்பதுதான். அதிர்ஷ்டவசமாக, Ultimate Multisite-ஐ இயக்க சில அடிப்படை தேவைகள் மட்டுமே உள்ளன: ஒரு **domain பெயர்**, ஒரு நல்ல **hosting வழங்குநர்** மற்றும் WordPress **Multisite** நிறுவல். இவ்வளவுதான் உங்களுக்குத் தேவை!
 

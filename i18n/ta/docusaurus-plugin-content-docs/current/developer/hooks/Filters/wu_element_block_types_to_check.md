@@ -4,7 +4,7 @@ title: வடிகட்டி - wu_element_block_types_to_check
 sidebar_label: wu_element_block_types_to_check
 _i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
 ---
-# Filter: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+# Filter: wu_element_block_types_to_check
 
 நாங்கள் எதிர்காலத்தில் கூடுதல் பிளாக்குகளைச் சேர்க்க வேண்டியிருக்கலாம்.
 

@@ -4,7 +4,7 @@ title: कार्य - wp_ultimo_plugin_and_theme_manager_activation
 sidebar_label: wp_ultimo_plugin_and_theme_manager_activation
 _i18n_hash: 06cc47bbacfd82bd483bd15d9c8c9d10
 ---
-# कार्य: wp_ultimo_plugin_and_theme_manager_activation {#action-wpultimopluginandthememanageractivation}
+# कार्य: wp_ultimo_plugin_and_theme_manager_activation
 
 प्लगइनका अन्य भागहरूलाई सक्रियणका लागि आफ्ना कार्यविधिहरू जोड्न दिनुहोस्
 

@@ -3,7 +3,7 @@ title: ការកំណត់រចនាសម្ព័ន្ធ Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# ការตั้งค่า Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# ការตั้งค่า Stripe Gateway (v2)
 
 _**ចំណាំសំខាន់: អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
 

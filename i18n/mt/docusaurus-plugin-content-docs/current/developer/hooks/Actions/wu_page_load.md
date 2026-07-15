@@ -4,7 +4,7 @@ title: Azzjoni - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Azzjoni: wu_page_load {#action-wupageload}
+# Azzjoni: wu_page_load
 
 Ħalli lill-iżviluppaturi tal-plugin iżidu hooks addizzjonali mal-paġni tagħna.
 

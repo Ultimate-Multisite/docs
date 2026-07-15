@@ -3,7 +3,7 @@ title: Integrasiی RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# یەکگرتوود (RunCloud) یەکپارێزی {#runcloud-integration}
+# یەکگرتوود (RunCloud) یەکپارێزی
 
 ## گشتیارییەکە {#overview}
 RunCloud سیستەمێکی بەڕێوەبردنی خەرجکارە لە نێوان ئاڵۆز و پڕۆگرامەکانی وێب، کە ڕێنوێنی دەکات بۆ جێبەجێکردن و بەڕێوەبردنی ئەپڵیکەیشنی وێبی لەسەر خەرجی کارەکانت. ئەم یەکپارێزییە دەبێتە هۆی هەماهەنی ئۆتۆماتیکی ناوچەکانی (domain syncing) و بەڕێوەبردنی پڕۆتۆکۆڵی SSL نێوان Ultimate Multisite و RunCloud.

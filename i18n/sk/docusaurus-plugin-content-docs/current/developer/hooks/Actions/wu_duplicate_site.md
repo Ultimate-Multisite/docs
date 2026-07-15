@@ -4,7 +4,7 @@ title: Akcia - wu_duplicate_site
 sidebar_label: wu_duplicate_site
 _i18n_hash: cd19d9143fd4fe620581ea362caa7fe9
 ---
-# Akcia: wu_duplicate_site {#action-wuduplicatesite}
+# Akcia: wu_duplicate_site
 
 Umožňuje vývojárom napojiť sa po tom, čo dôjde k duplikácii lokality.
 

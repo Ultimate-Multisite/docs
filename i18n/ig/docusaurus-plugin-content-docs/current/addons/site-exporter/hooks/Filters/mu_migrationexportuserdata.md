@@ -4,7 +4,7 @@ title: Nzacha - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
+# Filter: mu_migration/export/user/data
 
 Na-enyocha setị ndabara nke data onye ọrụ a ga-ebupụ/bubata.
 

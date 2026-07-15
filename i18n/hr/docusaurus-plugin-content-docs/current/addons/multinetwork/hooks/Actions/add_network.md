@@ -4,7 +4,7 @@ title: Radnja - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Radnja: add_network {#action-addnetwork}
+# Radnja: add_network
 
 Pokreće se nakon što je dodana nova mreža.
 

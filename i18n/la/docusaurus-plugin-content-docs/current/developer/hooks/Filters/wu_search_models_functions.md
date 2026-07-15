@@ -4,7 +4,7 @@ title: Filtrum - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Filtrum: wu_search_models_functions {#filter-wusearchmodelsfunctions}
+# Filtrum: wu_search_models_functions
 
 Sine plugin excultoribus plura functiones exemplorum quaerendi addere.
 

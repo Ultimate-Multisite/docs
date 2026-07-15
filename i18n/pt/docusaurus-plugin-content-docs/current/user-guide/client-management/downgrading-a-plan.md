@@ -3,7 +3,7 @@ title: Downgradendo um Plano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgradendo um plano (v2) {#downgrading-a-plan-v2}
+# Downgradendo um plano (v2)
 
 _**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
 

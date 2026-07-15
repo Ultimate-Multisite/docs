@@ -3,7 +3,7 @@ title: Ultimate Multisite ස්ථාපනය කිරීම
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite ස්ථාපනය කිරීම {#installing-ultimate-multisite}
+# Ultimate Multisite ස්ථාපනය කිරීම
 
 :::note
 මෙම උපදෙස් මාලාවෙන්, ඔබට දැනටමත් WordPress Multisite ස්ථාපිත කර සකසා ඇති බව උපකල්පනය කෙරේ. එය කරන්නේ කෙසේදැ යි ඉගෙන ගැනීමට, WP Beginner විසින් ඉදිරිපත් කරන [මෙම උපදෙස් මාලාව](https://www.wpbeginner.com/glossary/multisite/) බලන්න.

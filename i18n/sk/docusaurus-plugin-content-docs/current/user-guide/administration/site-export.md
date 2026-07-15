@@ -3,7 +3,7 @@ title: Export stránky
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportovanie siete {#site-export}
+# Exportovanie siete
 
 Administratívna stránka **Site Export** vám umožňuje balíť jednu sieti, alebo celú sieti, do stiahnutelného archívu na migrácie, zálohy alebo pre odovzdanie práce.
 

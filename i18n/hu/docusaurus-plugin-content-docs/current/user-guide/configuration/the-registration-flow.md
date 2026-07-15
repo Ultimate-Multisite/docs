@@ -3,7 +3,7 @@ title: A regisztrációs folyamat
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# A regisztrációs folyamat (v2) {#the-registration-flow-v2}
+# A regisztrációs folyamat (v2)
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 

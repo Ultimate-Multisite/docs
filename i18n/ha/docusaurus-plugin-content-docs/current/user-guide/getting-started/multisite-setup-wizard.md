@@ -3,7 +3,7 @@ title: Wazancin Shiga Wurin Samar da Shafuka
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# ڕێنمایی دامەزراندنی Multisite {#multisite-setup-wizard}
+# ڕێنمایی دامەزراندنی Multisite
 
 Ultimate Multisite یەکێکە لە ئەوەی کە بە شێوەیەکی ئۆتۆماتیک جێبەجێ دەکات وردبینی WordPressێکی ستاندارد بۆ تۆڕێکی WordPress Multisite. ئەمە پێویستی بە دەستکاری دستی `wp-config.php` یان دانانی ئەو کارامە لەسەر داتابەیس (database) نییە.
 

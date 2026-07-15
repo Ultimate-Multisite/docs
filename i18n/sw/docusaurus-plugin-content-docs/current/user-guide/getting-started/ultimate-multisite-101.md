@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Mwongozo wa Msingi wa Ultimate Multisite {#ultimate-multisite-101}
+# Mwongozo wa Msingi wa Ultimate Multisite
 
 Ultimate Multisite ni programu-jalizi ya WordPress Multisite inayokuwezesha kutoa WaaS au Tovuti kama Huduma kwa wateja. Kabla ya kuanza kujifunza jinsi Ultimate Multisite inavyoweza kusaidia biashara yako na wateja wako, kuna maarifa ya msingi tunayohitaji kupata kwanza.
 

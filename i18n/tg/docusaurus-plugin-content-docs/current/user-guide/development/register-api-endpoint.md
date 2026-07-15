@@ -3,7 +3,7 @@ title: Баъди қайд кардани хонандаи API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Нкоти API конечной точки Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Нкоти API конечной точки Ultimate Multisite
 
 В этом руководстве вы узнаете, как использовать конечную точку API /register от Ultimate Multisite для создания всего процесса адаптации нового клиента в вашей сети и как сделать это с помощью Zapier.
 

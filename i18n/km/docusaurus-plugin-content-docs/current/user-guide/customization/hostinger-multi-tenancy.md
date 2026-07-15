@@ -3,7 +3,7 @@ title: ការគ្រប់គ្រងពហុអ្នកប្រើប�
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
+# Hostinger Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 បានបន្ថែមសមត្ថភាព multi-tenancy របស់ Hostinger ដែលអនុញ្ញាតឱ្យដែនដែលបានបង្ហោះ (hosted domains) ចូលរួមក្នុងការផ្តល់ tenant sovereign alongside integration ការបែងចែកឈ្មោះដែនដែលមានស្រាប់របស់ Hostinger។
 

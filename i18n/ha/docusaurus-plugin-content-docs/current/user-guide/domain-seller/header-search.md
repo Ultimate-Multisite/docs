@@ -3,7 +3,7 @@ title: Binciken Yankin Kan Kai
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Neman Domain na Header {#header-domain-search}
+# Neman Domain na Header
 
 Yi amfani da wannan saitin idan kana son ƙaramin form a header wanda zai fara neman domain, sannan ya bar abokin ciniki ya zaɓa daga domains da suke samuwa a cikin Ultimate Multisite checkout.
 

@@ -4,7 +4,7 @@ title: Lim - mu_migration/export/user/headers
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# Lim: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
+# Lim: mu_migration/export/user/headers
 
 Lim cov headers qub rau user uas yuav raug export/import.
 

@@ -3,7 +3,7 @@ title: Domain Mapping-i nädip sazlamaly
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domen kartalaşdyrmany nädip sazlamaly (v2) {#how-to-configure-domain-mapping-v2}
+# Domen kartalaşdyrmany nädip sazlamaly (v2)
 
 _**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 

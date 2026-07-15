@@ -4,7 +4,7 @@ title: Ago - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Ago: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
+# Ago: wu_handle_user_meta_fields
 
 Permesas al plugin-programistoj konservi uzantajn metadatumojn en malsamaj manieroj, se ili bezonas.
 

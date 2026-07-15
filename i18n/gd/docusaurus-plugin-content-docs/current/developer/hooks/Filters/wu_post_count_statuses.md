@@ -4,7 +4,7 @@ title: Criathrag - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Criathrag: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Criathrag: wu_post_count_statuses
 
 Leig le luchd-leasachaidh plugin atharrachadh dè an inbhe puist a bu chòir a chunntadh. Gu bunaiteach, thèid puist fhoillsichte agus phrìobhaideach a chunntadh
 

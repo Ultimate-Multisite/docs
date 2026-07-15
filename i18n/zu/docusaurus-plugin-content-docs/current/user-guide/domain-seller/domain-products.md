@@ -3,7 +3,7 @@ title: Imikhiqizo Yezizinda kanye Namanani
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Imikhiqizo Yama-domain Namanani {#domain-products-and-pricing}
+# Imikhiqizo Yama-domain Namanani
 
 Imikhiqizo yama-domain iyindlela olawula ngayo amanani, ama-TLD, ubumfihlo be-WHOIS, nokukhethwa komhlinzeki. Umkhiqizo ngamunye we-domain ungumkhiqizo ojwayelekile we-Multisite Ultimate onethebhu eyengeziwe ethi **Izilungiselelo Ze-domain**.
 

@@ -3,7 +3,7 @@ title: Changelog ng Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Talaan ng Pagbabago ng Mailchimp {#mailchimp-changelog}
+# Talaan ng Pagbabago ng Mailchimp
 
 Bersyon: 1.1.1 - Inilabas noong 2025-09-28
 

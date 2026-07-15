@@ -3,7 +3,7 @@ title: Ìṣètò àti Ìṣàgbékalẹ̀ Olùpèsè
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Olùtà Orúkọ Àgbègbè: Ìṣètò àti Ìṣàtúnṣe Olùpèsè {#domain-seller-setup-and-provider-configuration}
+# Olùtà Orúkọ Àgbègbè: Ìṣètò àti Ìṣàtúnṣe Olùpèsè
 
 Àfikún Olùtà Orúkọ Àgbègbè wá pẹ̀lú wizard ìṣètò tí ń tọ́ ọ kọjá gbogbo ìgbésẹ̀ tí ó nílò. Ojú-ewé yìí ṣàlàyé ìṣàn wizard náà àti bí a ṣe lè ṣètò tàbí tún àwọn olùpèsè ṣètò lẹ́yìn náà.
 

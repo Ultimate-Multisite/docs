@@ -3,7 +3,7 @@ title: Integrasi CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integrasi CyberPanel {#cyberpanel-integration}
+# Integrasi CyberPanel
 
 Panduan ini menjelaskan cara mengatur integrasi Ultimate Multisite CyberPanel agar domain yang sudah dipetakan di jaringan Anda otomatis ditambahkan (dan dihapus) sebagai virtual host di CyberPanel, dengan opsi penyediaan auto-SSL melalui Let's Encrypt.
 

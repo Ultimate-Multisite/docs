@@ -3,7 +3,7 @@ title: Cloudflare Integrazioa
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integrazioa {#cloudflare-integration}
+# Cloudflare Integrazioa
 
 ## Deskuntzua {#overview}
 Cloudflare da lider CDN (Content Delivery Network) eta segurtasun prozesua nagusia da, zehatz egiten du webstei geraketa eta azkarrak. Hau integrazioak Ultimate Multisite eta Cloudflare-ren artean automatikoa domainer administrazioa gogoratzen du, batez ere subdomain multisite instalazioetan.

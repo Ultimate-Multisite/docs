@@ -4,7 +4,7 @@ title: 'Action - wu_delete_{$this->object_id}'
 sidebar_label: 'wu_delete_{$this->object_id}'
 _i18n_hash: 8525ca1e747ac6a29314c90b0a52b3bb
 ---
-# Action: wu_delete_{$this->object_id} {#action-wudeletethis-objectid}
+# Action: wu_delete_{$this->object_id}
 
 প্লাগইন ডেভেলপাৰসকলক ডিলিট কৰাৰ প্ৰক্ৰিয়াত কাৰ্য (actions) যোগ কৰিবলৈ অনুমতি দিয়ে।
 

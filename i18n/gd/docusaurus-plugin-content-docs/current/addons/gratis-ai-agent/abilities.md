@@ -3,7 +3,7 @@ title: Iomradh air Comasan
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Iomradh air Comasan {#abilities-reference}
+# Iomradh air Comasan
 
 Is e comasan na gnìomhan atamach as urrainn do Gratis AI Agent a ghairm air an stàladh WordPress agad. Tha gach comas na chlas PHP clàraichte a tha a’ foillseachadh sgeama JSON — leughaidh an t-àidseant an sgeama seo aig àm-ruith gus tuigsinn dè na paramadairean a tha riatanach agus dè a thilleas an comas.
 

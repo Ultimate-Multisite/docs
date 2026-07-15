@@ -3,7 +3,7 @@ title: Verwaltung von Websites
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Sites verwalten {#managing-sites}
+# Sites verwalten
 
 Sites (oder Unterseiten) sind das Herzstück Ihres WaaS-Geschäfts. Ultimate Multisite verfügt über 3 Arten von Sites:
 

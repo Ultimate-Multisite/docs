@@ -3,7 +3,7 @@ title: Keeb Kwm Kev Hloov ntawm Tus Tsim Nplooj Tswj Hwm
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Daim ntawv teev kev hloov ntawm Tus Tsim Admin Page {#admin-page-creator-changelog}
+# Daim ntawv teev kev hloov ntawm Tus Tsim Admin Page
 
 ### Qauv 1.9.0 - Tso tawm rau 2026-01-18 {#version-190---released-on-2026-01-18}
 

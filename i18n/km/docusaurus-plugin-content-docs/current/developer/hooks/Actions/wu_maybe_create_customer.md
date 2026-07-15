@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_maybe_create_customer
 sidebar_label: wu_maybe_create_customer
 _i18n_hash: 15899be650099dafaf0ec1f5095861a6
 ---
-# សកម្មភាព: wu_maybe_create_customer {#action-wumaybecreatecustomer}
+# សកម្មភាព: wu_maybe_create_customer
 
 អនុញ្ញាតឱ្យអ្នកអភិវឌ្ឍ plugin ធ្វើកិច្ចការបន្ថែម នៅពេលអតិថិជនត្រូវបានបន្ថែម។
 

@@ -3,7 +3,7 @@ title: Cúram na WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Intégráisi le WP Engine {#wp-engine-integration}
+# Intégráisi le WP Engine
 
 ## Oibríocht {#overview}
 Is é WP Engine platform host WordPress leatúil agus curtha chuid, a leonaimníonn foirmeacht, séurtiúil agus scálaí ar fáil do siti WordPress. Cén fáth go bhfuil an chéad seo ag teacht ar ais: leasú domáin go hiomlán (automatic domain syncing) idir Ultimate Multisite agus WP Engine.

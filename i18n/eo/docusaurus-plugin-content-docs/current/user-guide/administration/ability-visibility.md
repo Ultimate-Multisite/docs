@@ -3,7 +3,7 @@ title: Vizaibilitas de la abilidad
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Kapacita Vizuilibile {#ability-visibility}
+# Kapacita Vizuilibile
 
 Superdav AI Agent v1.12.0 introducit **Ability Visibility** kontrollon, kiuj regas, ki surfoj (surfaces) ekpozas ĉion kapaciton. Tio permesas administratorojn finajni, kiu agent kapabilitate estas disponibile per REST API, MCP serveroj, WooCommerce integrioj kaj aliaj interfacoj.
 

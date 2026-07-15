@@ -4,7 +4,7 @@ title: 过滤器 - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# 过滤器: retrieve_password_title {#filter-retrievepasswordtitle}
+# 过滤器: retrieve_password_title
 
 过滤密码重置邮件的主题。
 

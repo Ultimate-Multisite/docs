@@ -3,7 +3,7 @@ title: Formulir Kontak Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formulir Kontak Site Builder {#site-builder-contact-forms}
+# Formulir Kontak Site Builder
 
 Superdav AI Agent v1.10.0 menambahkan kemampuan untuk membuat formulir kontak langsung dari antarmuka obrolan menggunakan agen Site Builder. Ini memungkinkan Anda menambahkan formulir kontak yang berfungsi penuh ke halaman mana pun tanpa harus meninggalkan obrolan.
 

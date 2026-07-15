@@ -4,7 +4,7 @@ title: Filtru - wu_site_list_get_bulk_actions
 sidebar_label: wu_site_list_get_bulk_actions
 _i18n_hash: 0a18ab4a09da0089d688b72198c51711
 ---
-# Filtru: wu_site_list_get_bulk_actions {#filter-wusitelistgetbulkactions}
+# Filtru: wu_site_list_get_bulk_actions
 
 Iffiltra l-azzjonijiet tal-massa disponibbli għas-siti.
 

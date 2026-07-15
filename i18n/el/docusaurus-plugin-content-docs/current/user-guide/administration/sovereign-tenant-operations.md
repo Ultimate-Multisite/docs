@@ -8,7 +8,7 @@ title: >-
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Λειτουργίες Tenant Εξουσιώδους (Sovereign Tenant Operations) {#sovereign-tenant-operations}
+# Λειτουργίες Tenant Εξουσιώδους (Sovereign Tenant Operations)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 προσθέτει εργαλεία λειτουργίας για εξουσιώδη tenants: υποσύλλογları που τρέχουν με τη δική τους βάση δεδομένων, ρίζα συστήματος αρχείων και πλαίσιο διαρροής (routing context), ενώ παραμένουν ορατοί από τον διαχειριστή δικτύου.
 

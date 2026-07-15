@@ -3,7 +3,7 @@ title: Maxsus shlyuz ishlab chiqish
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Maxsus Gateway ishlab chiqish {#custom-gateway-development}
+# Maxsus Gateway ishlab chiqish
 
 `Base_Gateway` klassini kengaytirish orqali maxsus toʻlov gatewaylarini yaratishingiz mumkin.
 

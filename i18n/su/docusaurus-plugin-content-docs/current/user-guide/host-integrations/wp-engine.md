@@ -3,7 +3,7 @@ title: Integrasi WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrasi WP Engine {#wp-engine-integration}
+# Integrasi WP Engine
 
 ## Gambaran Umum {#overview}
 WP Engine téh platform hosting WordPress premium anu ngajamin kinerja nu optimal, keamanan, jeung skalabilitas pikeun situs WordPress anjeun. Integrasi ieu ngabantu sinkronisasi domain otomatis antara Ultimate Multisite jeung WP Engine.

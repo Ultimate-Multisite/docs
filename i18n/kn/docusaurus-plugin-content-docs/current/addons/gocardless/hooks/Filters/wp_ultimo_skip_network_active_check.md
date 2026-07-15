@@ -4,7 +4,7 @@ title: Filter - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 9061f073ee77c38afc3cecfabe5edb50
 ---
-# ಫಿಲ್ಟರ್: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# ಫಿಲ್ಟರ್: wp_ultimo_skip_network_active_check
 
 ಈ ಚೆಕ್‌ ಅನ್ನು ನೇರವಾಗಿ ದಾಟಲು (short-circuit) 개발ರ್‌ಗಳಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 

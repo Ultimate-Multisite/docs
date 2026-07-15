@@ -3,7 +3,7 @@ title: Kode-snippets
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kode-snippets vir v2 {#code-snippets-for-v2}
+# Kode-snippets vir v2
 
 Basies word kode-snippets vir **WordPress** gebruik om sekere aksies uit te voer wat andersins 'n toegewyde, kleiner plugin sou vereis. Sulke kode-snippets word in een van die WordPress-kern- of tema-lêre geplaas (gewoonlik die `functions.php` lêer van jou tema) of hulle kan as 'n MU plugin gebruik word.
 

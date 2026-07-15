@@ -3,7 +3,7 @@ title: Paghawak ng Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Pag-handle ng Webhook {#webhook-handling}
+# Pag-handle ng Webhook
 
 Gumawa ng custom webhook endpoints para makatanggap ng mga event mula sa mga external services at ma-sync ang data sa Ultimate Multisite.
 

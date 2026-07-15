@@ -3,7 +3,7 @@ title: Kea leboha ho saho WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# O ka na le ho installa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# O ka na le ho installa WordPress Multisite?
 
 WordPress Multisite e le sehlopha se fanaang le sehlopha se fapaneng sa sitšhōpho (installation). E le sehlopha se fanaang, empa se se fanaang ka tsela e fapaneng.
 

@@ -4,7 +4,7 @@ title: Filtre - wu_bypass_checkout_form
 sidebar_label: wu_bypass_checkout_form
 _i18n_hash: ad57eddbc5463e999d4896a31ed368a3
 ---
-# Filtre: wu_bypass_checkout_form {#filter-wubypasscheckoutform}
+# Filtre: wu_bypass_checkout_form
 
 Permet als desenvolupadors ometre la sortida i establir-ne una de nova
 

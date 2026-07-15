@@ -3,7 +3,7 @@ title: Féileacht Fhíneachta
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Fhéil Fhíneacht (Ability Visibility) {#ability-visibility}
+# Fhéil Fhíneacht (Ability Visibility)
 
 Tá **Fhéil Fhíneacht (Ability Visibility)** ag Superdav AI Agent v1.12.0, a bhfuil rathúil ar na ruthaithe a léiríonn conairtí a gcurraíonn an fhéil fhíneacht a bheith agat ar chuid dearmada. Cén fáth go bhfuil sé seo ag fáil ar chuid fhéileachtaí an agenta trí REST APIs, MCP servers, WooCommerce integrations, agus fáil eile.
 

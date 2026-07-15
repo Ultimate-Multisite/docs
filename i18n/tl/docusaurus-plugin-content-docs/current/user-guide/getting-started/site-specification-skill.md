@@ -3,7 +3,7 @@ title: Mga Espesipikasyon ng Site Kasanayan
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kasan ng Kakayahan sa Site Specification {#site-specification-skill}
+# Kasan ng Kakayahan sa Site Specification
 
 Ang **Site Specification skill** ay isang structured na paraan para makuha ang mga layunin, audience, at pagkakakilanlan ng brand ng iyong site. Ang impormasyong ito ay naka-store sa iyong **site_brief memory**, na ginagamit ng mga agent sa iba't ibang sesyon para magbigay ng pare-pareho at kontekstwal na tulong.
 

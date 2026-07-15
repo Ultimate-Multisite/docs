@@ -3,7 +3,7 @@ title: Ellenőrizze a paletta kontrasztját
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Paletta Kontrasztának Ellenőrzése {#validate-palette-contrast}
+# Paletta Kontrasztának Ellenőrzése
 
 A **Paletta Kontraszt Ellenőrző** funkció ellenőrzi a tervezési palettájukban lévő színek párokat WCAG (Web Content Accessibility Guidelines) megfelelőség szempontjából, mielőtt azok a témájára kerülnek.
 

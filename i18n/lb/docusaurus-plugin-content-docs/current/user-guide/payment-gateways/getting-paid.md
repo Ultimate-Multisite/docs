@@ -3,7 +3,7 @@ title: Bezuelt ginn
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Bezuelt ginn (v2) {#getting-paid-v2}
+# Bezuelt ginn (v2)
 
 _**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 

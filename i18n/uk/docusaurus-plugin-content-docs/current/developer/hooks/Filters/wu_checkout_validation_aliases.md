@@ -4,7 +4,7 @@ title: Фільтр - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Фільтр: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Фільтр: wu_checkout_validation_aliases
 
 Дозволяє розробникам плагінів додавати власні псевдоніми (аліаси) у валідатор форм.
 

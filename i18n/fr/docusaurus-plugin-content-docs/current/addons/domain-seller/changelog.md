@@ -3,7 +3,7 @@ title: Journal des modifications de Domain Seller
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Journal des modifications de Domain Seller {#domain-seller-changelog}
+# Journal des modifications de Domain Seller
 
 Version 1.3.0 - Publiée le 2026-06-02
 - Nouveau : ajout d’un avertissement network-admin lorsque le solde revendeur HostAfrica devient trop faible

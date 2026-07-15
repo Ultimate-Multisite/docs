@@ -3,7 +3,7 @@ title: Միգրացիա V1-ից
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-ից անցում {#migrating-from-v1}
+# V1-ից անցում
 
 ## Ultimate Multisite-ը իր սկզբնական 1.x հաջորդականությունից 2.x հաջորդականության վերածվել է։ {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

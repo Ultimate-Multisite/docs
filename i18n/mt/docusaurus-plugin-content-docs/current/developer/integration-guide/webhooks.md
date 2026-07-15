@@ -3,7 +3,7 @@ title: Ġestjoni tal-Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Immaniġġjar tal-Webhook {#webhook-handling}
+# Immaniġġjar tal-Webhook
 
 Oħloq punti tat-tmiem webhook personalizzati biex tirċievi avvenimenti minn servizzi esterni u tissinkronizza d-dejta ma’ Ultimate Multisite.
 

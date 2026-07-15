@@ -3,7 +3,7 @@ title: Concetti di base
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Concetti di base {#basic-concepts}
+# Concetti di base
 
 Per un nuovo utente di WordPress Multisite e per chi ha appena iniziato a usare Ultimate Multisite, può esserci un sacco di nuove parole e frasi da assimilare all'inizio. Impararle è un compito importante perché dovrai comprendere la piattaforma e il suo funzionamento nel suo complesso.
 

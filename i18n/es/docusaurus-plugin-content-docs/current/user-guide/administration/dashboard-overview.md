@@ -3,7 +3,7 @@ title: Resumen del Panel
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Visión general del Panel {#dashboard-overview}
+# Visión general del Panel
 
 Ultimate Multisite tiene un **Panel** dedicado bajo el menú Ultimate Multisite, y también agrega widgets al Panel de la Red. Este artículo cubre lo que verás en ambos lugares.
 

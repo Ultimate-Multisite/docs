@@ -3,7 +3,7 @@ title: Keteroki Tohuaki e Mōhio ana ki te Kaiwhakarato
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Keteroki Tohuaki e Mōhio ana ki te Kaiwhakarato {#provider-aware-prompt-caching}
+# Keteroki Tohuaki e Mōhio ana ki te Kaiwhakarato
 
 Ka whakauru a Superdav AI Agent v1.12.0 i te **keteroki tohuaki e mōhio ana ki te kaiwhakarato**, e arotau ana i ngā utu API me te tōmuri mā te keteroki i ngā tohuaki puta noa i ngā kaiwhakarato LLM rerekē. He rerekē ngā tikanga keteroki me ngā whirihoranga a ia kaiwhakarato.
 

@@ -3,7 +3,7 @@ title: Komunitas
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kumaha Gabung ka Komunitas Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Kumaha Gabung ka Komunitas Ultimate Multisite
 
 Ultimate Multisite Community téh tempat di mana anjeun bisa ngobrol jeung pengguna Ultimate Multisite séjén sarta berbagi tips, pengalaman, jeung hal-hal séjénna. Pikeun akses ka Ultimate Multisite Community, silaturahkeun ka https://community.ultimatemultisite.com/home.
 

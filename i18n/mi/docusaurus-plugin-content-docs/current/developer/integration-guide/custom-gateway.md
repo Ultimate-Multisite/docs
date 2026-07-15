@@ -3,7 +3,7 @@ title: Whakawhanaketanga Kuwaha Ritenga
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Whakawhanake Kuaha Ritenga {#custom-gateway-development}
+# Whakawhanake Kuaha Ritenga
 
 Ka taea e koe te waihanga kuaha utu ritenga mā te whakawhānui i te akomanga `Base_Gateway`.
 

@@ -3,7 +3,7 @@ title: Қобилиятҳои идоракунии плагинҳо
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Қобилиятҳои идоракунии plugin {#plugin-management-abilities}
+# Қобилиятҳои идоракунии plugin
 
 Gratis AI Agent v1.5.0 бо **7 қобилияти идоракунии plugin** меояд, ки AI assistant метавонад онҳоро ҳангоми суҳбат фаро хонад. Ин қобилиятҳо назорати барномавиро бар WordPress plugin-ҳое, ки тавассути [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) насб шудаанд, таъмин мекунанд.
 

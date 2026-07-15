@@ -3,7 +3,7 @@ title: Conceptus ad primum
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Concepti Fundamentali {#basic-concepts}
+# Concepti Fundamentali
 
 Pentru un nou utilizator WordPress Multisite și pentru cineva care începe să folosească Ultimate Multisite, există multe cuvinte și expresii noi pe care trebuie să le înveți la început. Învățarea lor este o sarcină importantă deoarece vei avea nevoie de înțelegerea platformei și a modului în care funcționează ca întreg.
 

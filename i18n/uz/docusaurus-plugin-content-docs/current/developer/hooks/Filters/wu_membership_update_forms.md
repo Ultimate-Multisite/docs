@@ -4,7 +4,7 @@ title: Filtr - wu_membership_update_forms
 sidebar_label: wu_membership_update_forms
 _i18n_hash: b6890286b21a639011b037b0b06a11b6
 ---
-# Filtr: wu_membership_update_forms {#filter-wumembershipupdateforms}
+# Filtr: wu_membership_update_forms
 
 Dasturchilarga yangi yangilash forma sluglarini qo‘shishga ruxsat beradi.
 

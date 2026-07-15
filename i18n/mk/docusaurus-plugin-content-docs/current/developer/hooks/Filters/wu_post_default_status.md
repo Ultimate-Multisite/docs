@@ -4,7 +4,7 @@ title: Филтер - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Филтер: wu_post_default_status {#filter-wupostdefaultstatus}
+# Филтер: wu_post_default_status
 
 Ги филтрира податоците на објектот пред да се зачуваат во базата на податоци.
 

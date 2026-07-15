@@ -3,7 +3,7 @@ title: Pangkalahatang Tan-aw sa Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview {#dashboard-overview}
+# Dashboard Overview
 
 Ang Ultimate Multisite nagkinahanglan og dedikadong **Dashboard** sa ilalom sa Ultimate Multisite menu, ug nagdadagpan usab og mga widgets sa Network Dashboard. Kining article naghisgot kung unsa ang makita nimo sa duha ka lugar.
 

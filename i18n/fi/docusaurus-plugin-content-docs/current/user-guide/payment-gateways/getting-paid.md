@@ -3,7 +3,7 @@ title: Maksujen vastaanottaminen
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Maksujen vastaanottaminen (v2) {#getting-paid-v2}
+# Maksujen vastaanottaminen (v2)
 
 _**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 

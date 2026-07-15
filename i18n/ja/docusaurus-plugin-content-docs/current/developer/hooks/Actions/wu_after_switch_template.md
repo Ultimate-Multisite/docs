@@ -25,7 +25,7 @@ title: |
 sidebar_label: wu_after_switch_template
 _i18n_hash: c3465157d5bf0ff10c2cd77dbd97981c
 ---
-# アクション: wu_after_switch_template {#action-wuafterswitchtemplate}
+# アクション: wu_after_switch_template
 
 ユーザーまたはスーパー管理者がサイトテンプレートを切り替えた後に、プラグイン開発者が関数をフックできるようにします。
 

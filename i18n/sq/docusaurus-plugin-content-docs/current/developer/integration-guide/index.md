@@ -3,7 +3,7 @@ title: Udhëzuesi i integrimit
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Udhëzues Integrimi {#integration-guide}
+# Udhëzues Integrimi
 
 Ky udhëzues mbulon modelet e zakonshme të integrimit me Ultimate Multisite, duke përfshirë lidhjen me shërbime të jashtme, ndërtimin e portave të personalizuara të pagesave dhe trajtimin e webhooks.
 

@@ -4,7 +4,7 @@ title: Filtru - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filtru: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
+# Filtru: wp_ultimo_site_exporter_url
 
 Jippermetti lill-iżviluppaturi jimmaniġġjaw il-mogħdija relattiva għall-għerq tal-estensjoni.
 

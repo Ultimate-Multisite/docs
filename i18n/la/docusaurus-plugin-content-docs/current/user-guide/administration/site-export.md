@@ -3,7 +3,7 @@ title: Exportatio situs
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportare il Sito {#site-export}
+# Exportare il Sito
 
 La pagina di amministrazione **Export del Sito** ti permette, come amministratore della rete, di impacchettare un sito o l'intera rete in un archivio scaricabile per lavori di migrazione, backup o passaggio di consegne.
 

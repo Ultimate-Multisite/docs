@@ -4,7 +4,7 @@ title: Akcija - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Akcija: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Akcija: wu_domain_seller_process_purchase
 
 Pokreće se kada se obrađuje kupnja domena nakon završetka naplate (checkout-a).
 

@@ -3,9 +3,9 @@ title: Thempleite ea Tlatsetso
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Thempleite ya Tlatsetso {#addon-template}
+# Thempleite ya Tlatsetso
 
-{{ADDON_DESCRIPTION}}
+Thempleite ea Tlatsetso — Ultimate Multisite.
 
 ## Ditlhoko {#requirements}
 

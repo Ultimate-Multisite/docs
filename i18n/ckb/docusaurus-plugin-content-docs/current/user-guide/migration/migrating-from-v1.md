@@ -3,7 +3,7 @@ title: 'گواستن لە V1ەوە بۆ [ultimate multisite]'
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# گواستن لە V1ەوە بۆ 2.x {#migrating-from-v1}
+# گواستن لە V1ەوە بۆ 2.x
 
 ## Ultimate Multisite لە خێزانی سەرەکی 1.xی خۆی گۆڕاو بۆ خێزانی 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

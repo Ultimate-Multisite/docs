@@ -4,7 +4,7 @@ title: Амал - add_network
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Амал: add_network {#action-addnetwork}
+# Амал: add_network
 
 Пас аз илова шудани шабакаи нав иҷро мешавад.
 

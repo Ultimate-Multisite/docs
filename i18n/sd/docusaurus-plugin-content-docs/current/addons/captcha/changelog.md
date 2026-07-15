@@ -3,7 +3,7 @@ title: ڪيپچا تبديلي لاگ
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha تبديلين جو رڪارڊ {#captcha-changelog}
+# Captcha تبديلين جو رڪارڊ
 
 Version: 1.5.0 - 2026-05-22 تي جاري ٿيو
 * نئون: سخت-روڪ شرح محدود ڪندڙ — captcha-محفوظ سطحن تي هر GET ۽ POST ڳڻي ٿو (wp-login / register / lost-password / comments، WooCommerce my-account / checkout / pay-for-order، Ultimate Multisite checkout / inline-login) ۽ HTTP 429، هڪ `Retry-After` header، ۽ بي ترتيب tarpit sleep (1–5s، سخت حد 15s) سان جواب ڏئي ٿو.

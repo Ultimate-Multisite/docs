@@ -3,7 +3,7 @@ title: ਕੰਟੈਂਟ ਸਿੰਕ ਚੇਂਜਲੌਗ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync Changelog {#content-sync-changelog}
+# Content Sync Changelog
 
 ### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * ਨਵਾਂ: ਸਾਰੇ ਪੋਸਟ ਟਾਈਪਸ (ਪੋਸਟਸ, ਪੇਜਸ, ਕਸਟਮ ਪੋਸਟ ਟਾਈਪਸ) ਨੂੰ ਸਿੰਕ ਕਰਨ ਦਾ ਸਹਾਰਾ

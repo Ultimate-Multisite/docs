@@ -3,7 +3,7 @@ title: Forstå dashbordet
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Forstå Ultimate Multisite-dashboardet {#understanding-the-ultimate-multisite-dashboard}
+# Forstå Ultimate Multisite-dashboardet
 
 Før vi dykker ned i mer avanserte konfigurasjonsalternativer og de operative aspektene ved Ultimate Multisite, la oss ta en titt på dashboardet.
 

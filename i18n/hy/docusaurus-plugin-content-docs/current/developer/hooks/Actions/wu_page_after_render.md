@@ -4,7 +4,7 @@ title: Գործողություն - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Գործողություն՝ wu_page_after_render {#action-wupageafterrender}
+# Գործողություն՝ wu_page_after_render
 
 Թույլ է տալիս plugin մշակողներին ավելացնել լրացուցիչ բովանդակություն այն բանից հետո, երբ մենք տպում ենք էջը
 

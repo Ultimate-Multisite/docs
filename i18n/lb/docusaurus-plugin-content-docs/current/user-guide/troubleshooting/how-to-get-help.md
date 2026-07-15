@@ -3,7 +3,7 @@ title: Wie chan ich Hilf finde?
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Wie Sie Hilfe bekommen {#how-to-get-help}
+# Wie Sie Hilfe bekommen
 
 Sie haben Ihre gültige Lizenzschlüssel und damit Zugang zu unserem Team, das Ihnen helfen kann, Probleme zu lösen, die Sie beim Einrichten von Ultimate Multisite auftreten könnten.
 

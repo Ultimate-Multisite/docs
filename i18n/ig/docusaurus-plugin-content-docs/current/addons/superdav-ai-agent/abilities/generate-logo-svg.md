@@ -3,7 +3,7 @@ title: Mepụta akara ngosi SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Mepụta Akara Njirimara SVG {#generate-logo-svg}
+# Mepụta Akara Njirimara SVG
 
 Ikike **Mepụta Akara Njirimara SVG** na-enye Theme Builder ohere ịmepụta ma tinye akara njirimara SVG ahaziri ahazi ozugbo n'ime saịtị WordPress gị, yana nhicha akpaka dị nchebe maka namespace.
 

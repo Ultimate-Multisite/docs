@@ -3,7 +3,7 @@ title: Gestion des Webhooks
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gestion des Webhooks {#webhook-handling}
+# Gestion des Webhooks
 
 Créer des points de terminaison de webhook personnalisés pour recevoir des événements de services externes et synchroniser les données avec Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Hva er WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Hva er WordPress Multisite? {#what-is-wordpress-multisite}
+# Hva er WordPress Multisite?
 
 Innan kjarninn í WordPress finnur þú eiginleika nefndu „Multisite“ sem spyrst upp að áttum til 2010 með formögnum WordPress 3.0. Ís sem þá hefur tekið fleiri uppáhald og breytingar til að innleiða nýja eiginleika og styrkja öryggisendur.
 

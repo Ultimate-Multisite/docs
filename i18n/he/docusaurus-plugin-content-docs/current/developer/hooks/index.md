@@ -3,7 +3,7 @@ title: מדריך הוקים
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# מדריך Hooks {#hooks-reference}
+# מדריך Hooks
 
 תיעוד שנוצר אוטומטית עבור כל **59 הפעולות** ו-**118 המסננים** ב-Ultimate Multisite.
 

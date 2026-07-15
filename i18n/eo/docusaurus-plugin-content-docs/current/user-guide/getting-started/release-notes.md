@@ -3,7 +3,7 @@ title: Elirenotoj
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Versi 2.13.0 — Elire la 5-a de Junon 2026 {#release-notes}
+# Versi 2.13.0 — Elire la 5-a de Junon 2026
 
 - Nova: Aggiunti suporto per tenant sovrèni (sovereign-tenant) por la conta del cliente, il checkout, la fatturazione, il sito, lo scambio di template e la mappatura dei domini, così le reti dei tenant possono indirizzare i clienti indietro al sito principale per azioni gestite.
 - Nova: Aggiunti controlli di credenziali per il rinnovo delle abbonamenti ricorrenti, in modo che i gateway possano disabilitare il rinnovo automatico quando manca un accordo di fatturazione salvato, un abbonamento o un token vault.

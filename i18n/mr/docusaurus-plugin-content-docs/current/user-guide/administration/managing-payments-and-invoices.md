@@ -3,7 +3,7 @@ title: देयके आणि चलने व्यवस्थापित 
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# पेमेंट्स आणि इनव्हॉइसेस व्यवस्थापित करणे {#managing-payments-and-invoices}
+# पेमेंट्स आणि इनव्हॉइसेस व्यवस्थापित करणे
 
 ## पेमेंट सेटिंग्ज {#payment-settings}
 

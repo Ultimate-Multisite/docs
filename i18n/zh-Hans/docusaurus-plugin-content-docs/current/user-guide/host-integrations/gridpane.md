@@ -3,7 +3,7 @@ title: GridPane 集成
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane 集成 {#gridpane-integration}
+# GridPane 集成
 
 ## 概述 {#overview}
 GridPane 是一个专为严肃的 WordPress 专业人士打造的专用 WordPress 托管控制面板。此集成实现了 Ultimate Multisite 与 GridPane 之间的自动域名同步和 SSL 证书管理。

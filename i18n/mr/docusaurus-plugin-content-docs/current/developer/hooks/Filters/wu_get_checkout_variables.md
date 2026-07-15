@@ -4,7 +4,7 @@ title: गाळणी - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filter: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
+# Filter: wu_get_checkout_variables
 
 प्लगइन डेव्हलपर्सना चेकआउट पेजच्या प्री-सेट व्हेरिएबल्स (pre-sets of a checkout page) फिल्टर करण्याची परवानगी देतो.
 

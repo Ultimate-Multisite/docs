@@ -4,7 +4,7 @@ title: 'Hetsika - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
+# Action: wu_dashboard_\{$this->tab\}_widgets
 
 Hamela ny mpamorona fanitarana hanampy widget ao amin'ny Tontonana Dashboard an'ny Tambajotra.
 

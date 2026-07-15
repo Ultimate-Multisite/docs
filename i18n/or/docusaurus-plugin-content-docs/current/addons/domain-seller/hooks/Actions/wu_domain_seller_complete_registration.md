@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# କାର୍ଯ୍ୟ: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# କାର୍ଯ୍ୟ: wu_domain_seller_complete_registration
 
 ଡୋମେନ ପଞ୍ଜୀକରଣ ଆରମ୍ଭ କରିବା ଉଚିତ ଏମିତି ସ୍ଥିତିକୁ ଏକ ଦେୟ ପରିବର୍ତ୍ତିତ ହେଲେ ଚାଲୁ ହୁଏ।
 

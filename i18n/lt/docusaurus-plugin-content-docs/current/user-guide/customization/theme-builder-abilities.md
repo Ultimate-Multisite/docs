@@ -3,7 +3,7 @@ title: Tema buvimo galimybės
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Możliwości Theme Builder: Szkieletowanie i Aktywacja Tematów Blokowych {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Możliwości Theme Builder: Szkieletowanie i Aktywacja Tematów Blokowych
 
 Superdav AI Agent v1.12.0 wprowadza dwie potężne możliwości, które pozwalają generować i wdrażać niestandardowe tematy blokowe bezpośrednio z interfejsu czatu.
 

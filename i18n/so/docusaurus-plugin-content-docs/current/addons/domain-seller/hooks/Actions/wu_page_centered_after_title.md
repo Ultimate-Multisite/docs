@@ -4,7 +4,7 @@ title: Ficil - wu_page_centered_after_title
 sidebar_label: wu_page_centered_after_title
 _i18n_hash: e00e718846a29b24c7032dec188e557b
 ---
-# Fal: wu_page_centered_after_title {#action-wupagecenteredaftertitle}
+# Fal: wu_page_centered_after_title
 
 U oggolow horumariyeyaasha kordhinta inay ku daraan badhamo dheeraad ah.
 

@@ -4,7 +4,7 @@ title: Igikorwa - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Igikorwa: set_logged_in_cookie {#action-setloggedincookie}
+# Igikorwa: set_logged_in_cookie
 
 Gitangira ako kanya mbere y’uko cookie y’iyemeza ry’uwinjiye ishyirwaho.
 

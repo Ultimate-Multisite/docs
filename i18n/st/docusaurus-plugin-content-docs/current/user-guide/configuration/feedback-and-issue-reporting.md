@@ -3,7 +3,7 @@ title: Lipa leboha la morao le ho bua ka matlae a sebopeang
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Le Letsatsi la Boitsoalo le Ho Ikhotso {#customer-feedback--issue-reporting}
+# Le Letsatsi la Boitsoalo le Ho Ikhotso
 
 Ho fana ka boitsoalo ba mantsi a ba ntlha le ho ithuta litlhoko tsa hau, ke tla re bolela ka tsela efe o tla go thusa.
 

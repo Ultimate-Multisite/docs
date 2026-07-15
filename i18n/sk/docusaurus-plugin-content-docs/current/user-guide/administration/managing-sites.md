@@ -3,7 +3,7 @@ title: Správa sítí
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Správa sítí {#managing-sites}
+# Správa sítí
 
 Sité (alebo subsity) sú základom vášho WaaS biznessu. Ultimate Multisite má 3 typy sítí:
 

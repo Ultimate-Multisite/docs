@@ -4,7 +4,7 @@ title: Salain - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Payagan ang mga developer ng plugin na baguhin kung aling post status ang dapat bilangin. Bilang default, binibilang ang mga published at private na post
 

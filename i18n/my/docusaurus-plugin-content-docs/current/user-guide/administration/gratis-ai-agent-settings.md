@@ -3,7 +3,7 @@ title: Gratis AI Agent ဆက်တင်များ
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent ဆက်တင်များ {#gratis-ai-agent-settings}
+# Gratis AI Agent ဆက်တင်များ
 
 Gratis AI Agent ရှိ **Settings → Advanced** မျက်နှာပြင်သည် backend ပေါင်းစည်းမှုများအတွက် စီမံခန့်ခွဲသူအဆင့် ပြင်ဆင်သတ်မှတ်မှုများကို ပေးသည်။ ဤစာမျက်နှာတွင် feedback ပို့ဆောင်ခြင်း၊ ရှာဖွေရေး provider key များ၊ စီမံထားသော Superdav ဝန်ဆောင်မှု တပ်ဆင်ခြင်း၊ Google Calendar ထိန်းချုပ်မှုများ၊ TextBee SMS ဆက်တင်များနှင့် network တစ်ခုလုံးအတွက် feature flag များကို မှတ်တမ်းတင်ထားသည်။
 

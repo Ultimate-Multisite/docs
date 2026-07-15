@@ -3,7 +3,7 @@ title: Comhordú Tógálaí Suímh v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orchestrú Tógálaí Suíomh v2 {#site-builder-orchestration-v2}
+# Orchestrú Tógálaí Suíomh v2
 
 Is é Orchestrú Tógálaí Suíomh v2 (a tugadh isteach in Gratis AI Agent v1.4.0) an t-inneall a chumhachtaíonn cruthú suíomhanna gréasáin ilchéime. Nuair a iarrann tú ar an agent "suíomh gréasáin bialainne a thógáil" nó "punann le blag a chruthú", briseann an t-orchestrator an sprioc ardleibhéil sin síos ina **phlean** struchtúrtha, aimsíonn sé na breiseáin atá ag teastáil chun é a chomhlíonadh, ritheann sé gach céim in ord, rianaíonn sé dul chun cinn, agus téann sé i mbun téarnaimh ó earráidí go huathrialach.
 

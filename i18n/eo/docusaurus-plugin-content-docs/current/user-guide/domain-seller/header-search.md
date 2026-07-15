@@ -3,7 +3,7 @@ title: Serĉo de domajno en kaplinio
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Serĉo de domajno en kaplinio {#header-domain-search}
+# Serĉo de domajno en kaplinio
 
 Uzu ĉi tiun agordon kiam vi volas malgrandan formularon en la kaplinio, kiu komencas domajnan serĉon, poste lasas la klienton elekti el disponeblaj domajnoj ene de la Ultimate Multisite checkout.
 

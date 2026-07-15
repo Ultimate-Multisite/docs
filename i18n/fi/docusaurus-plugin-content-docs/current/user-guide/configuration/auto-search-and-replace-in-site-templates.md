@@ -3,7 +3,7 @@ title: Automaattinen haku ja korvauksen vaihtaminen sivustokopioissa
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automaattinen haku ja korvauksen teksti sivustokopioissa (v2) {#auto-search-and-replace-in-site-templates-v2}
+# Automaattinen haku ja korvauksen teksti sivustokopioissa (v2)
 
 _**Tämä opas vaatii WP UItimo version 2.x.**_
 

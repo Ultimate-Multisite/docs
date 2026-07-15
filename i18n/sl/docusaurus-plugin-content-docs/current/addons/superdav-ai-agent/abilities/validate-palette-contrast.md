@@ -3,7 +3,7 @@ title: Preveri kontrast palete
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Preverjanje kontrasta palete {#validate-palette-contrast}
+# Preverjanje kontrasta palete
 
 Zmožnost **Validate Palette Contrast** preveri barvne pare v vaši oblikovalski paleti glede skladnosti z WCAG (Web Content Accessibility Guidelines), preden jih uporabite v svoji temi.
 

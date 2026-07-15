@@ -3,7 +3,7 @@ title: تۆماری گۆڕانکاریی تێکەڵکردنی WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# تۆماری گۆڕانکاریی یەکخستنی WooCommerce {#woocommerce-integration-changelog}
+# تۆماری گۆڕانکاریی یەکخستنی WooCommerce
 
 وەشانی 2.2.0 - بڵاوکرایەوە لە 2026-07-01
 * نوێ: بڕەکانی باجی Ultimate Multisite ئێستا وەک هێڵی تێچووی جیاوازی WooCommerce لە کاتی تەواوکردنی کڕین دەردەکەون، کە کۆی گشتی باجەکان پێش پارەدان ڕوونتر دەکاتەوە.

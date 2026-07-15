@@ -4,7 +4,7 @@ title: Tātari - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Tātari: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
+# Tātari: wp_ultimo_site_exporter_url
 
 Ka āhei ngā kaiwhakawhanake ki te whakahaere i te ara pātahi ki te pūtake o te mono.
 

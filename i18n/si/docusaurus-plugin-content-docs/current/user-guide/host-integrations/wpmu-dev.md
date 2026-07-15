@@ -3,7 +3,7 @@ title: WPMU DEV ඒකාබද්ධ කිරීම
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV සමඟ ඒකාබද්ධ කිරීම (Integration) {#wpmu-dev-integration}
+# WPMU DEV සමඟ ඒකාබද්ධ කිරීම (Integration)
 
 ## දළ විශ්ලේෂණය (Overview) {#overview}
 WPMU DEV කියන්නේ WordPress වෙබ් අඩවි සඳහා හොස්ටිං, plugins සහ සේවාවන් ලබා දෙන පුළුල් වේදිකාවක්. මේකෙන් Ultimate Multisite එක සහ WPMU DEV hosting අතර automatically domain syncing සහ SSL certificate management සිදු කරන්න පුළුවන්.

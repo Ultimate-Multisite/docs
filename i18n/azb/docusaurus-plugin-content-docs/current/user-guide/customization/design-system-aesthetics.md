@@ -3,7 +3,7 @@ title: Design System Aesthetics Skill
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetiği Becerisi {#design-system-aesthetics-skill}
+# Design System Estetiği Becerisi
 
 **Design System Estetiği becerisi**, sitenizin görsel kimliğini iyileştirmek için rehberli bir yaklaşımdır. Bu beceri, tasarım sisteminizi tanımlayan tipografi, renk, boşluk ve hareket tokenları hakkında tutarlı kararlar almanıza yardımcı olur.
 

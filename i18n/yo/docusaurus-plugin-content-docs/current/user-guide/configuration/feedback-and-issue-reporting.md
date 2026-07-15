@@ -3,7 +3,7 @@ title: Ìdáhùn Oníbàárà & Ìjábọ̀ Ìṣòro
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Esi Oníbàárà & Ìjabọ Ìṣòro {#customer-feedback--issue-reporting}
+# Esi Oníbàárà & Ìjabọ Ìṣòro
 
 Gratis AI Agent v1.5.0 ṣàgbékalẹ̀ ètò esi àti ìjabọ ìṣòro tí a kọ sínú rẹ̀, tí ó jẹ́ kí àwọn olumulo opin lè tọ́ka sí àwọn ìdáhùn tí kò wúlò kí wọ́n sì jabo àwọn ìṣòro tààrà láti inú wiwo ìfọ̀rọ̀wérọ̀. Ètò yìí ní ìṣàkóso ìfọwọ́sí, àṣẹ ìjabọ aládàáṣiṣẹ́, àti ìtúpalẹ̀ ìpele-àkọ́kọ́ tí AI ràn lọ́wọ́ ní backend.
 

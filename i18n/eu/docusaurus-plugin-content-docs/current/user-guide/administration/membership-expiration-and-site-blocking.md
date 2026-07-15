@@ -3,7 +3,7 @@ title: Membership Expirazioa eta Saila Bloqueoak
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Membershiparen eta Saila Blokatu {#membership-expiration-and-site-blocking}
+# Membershiparen eta Saila Blokatu
 
 Hau gure gidaioa esaltzen du zer batekin Ultimate Multisite-ek membershiparen amaierdia, trialaren amaierdia eta frontend site blokatzea onartzen jakin. Membershiparen bizitza duten erantzunak (aktibo batzuk gabe amaituta) gurean dagozkatu, siteak blokeatuta edo ez dagoela kontrolatzen dituen aukerak eta membershiparen amaierriren ondoren siteak erabilera jarraitzen duenean zer eskatzen duzu jakin.
 

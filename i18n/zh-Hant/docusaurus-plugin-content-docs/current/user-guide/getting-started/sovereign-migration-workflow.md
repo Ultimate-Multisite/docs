@@ -3,7 +3,7 @@ title: 主權遷移工作流程
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# 主權遷移工作流程 {#sovereign-migration-workflow}
+# 主權遷移工作流程
 
 Ultimate Multisite 1.2.0 版本增加了將標準子網站遷移到主權租戶基礎設施時的遷移驗證門。
 

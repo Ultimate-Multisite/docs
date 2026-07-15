@@ -3,7 +3,7 @@ title: Orquestração do Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orquestração do Site Builder v2 {#site-builder-orchestration-v2}
+# Orquestração do Site Builder v2
 
 Site Builder Orchestration v2 (introduzido no Gratis AI Agent v1.4.0) é o motor que impulsiona a criação de sites em múltiplos passos. Quando pede ao agente para "criar um site de restaurante" ou "criar um portefólio com um blog", o orquestrador divide esse objetivo de alto nível num **plano** estruturado, descobre os plugins necessários para o cumprir, executa cada passo em sequência, acompanha o progresso e recupera de erros autonomamente.
 

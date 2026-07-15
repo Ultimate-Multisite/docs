@@ -4,7 +4,7 @@ title: Scagaire - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Scagaire: wu_is_api_enabled {#filter-wuisapienabled}
+# Scagaire: wu_is_api_enabled
 
 Lig d’fhorbróirí breiseán staid ar leith a chur i bhfeidhm don API.
 

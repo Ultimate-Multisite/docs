@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Action: delete_network {#action-deletenetwork}
+# Action: delete_network
 
 ကွန်ရက်တစ်ခုကို ဖျက်ပြီးတဲ့အခါမှာ အကျိုးသက်ရောက်မှုရှိတဲ့ hook တစ်ခု ဖြစ်ပါတယ်။
 

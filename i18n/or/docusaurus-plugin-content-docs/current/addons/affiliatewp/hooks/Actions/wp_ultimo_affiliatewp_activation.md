@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# କାର୍ଯ୍ୟ: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# କାର୍ଯ୍ୟ: wp_ultimo_affiliatewp_activation
 
 plugin ର ଅନ୍ୟ ଅଂଶଗୁଡ଼ିକୁ ସକ୍ରିୟକରଣ ପାଇଁ ସେମାନଙ୍କ ନିୟମିତ କାର୍ଯ୍ୟଗୁଡ଼ିକ ଯୋଡ଼ିବାକୁ ଦିଅନ୍ତୁ
 

@@ -4,7 +4,7 @@ title: Амал - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup {#action-wucartaftersetup}
+# Action: wu_cart_after_setup
 
 Ба таҳиягарон иҷозат медиҳад, ки ба объекти checkout тағйироти иловагӣ ворид кунанд.
 

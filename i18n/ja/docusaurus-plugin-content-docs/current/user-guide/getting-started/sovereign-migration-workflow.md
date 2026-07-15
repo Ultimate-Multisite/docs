@@ -3,7 +3,7 @@ title: 主権移行ワークフロー
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# 主権移行ワークフロー {#sovereign-migration-workflow}
+# 主権移行ワークフロー
 
 Ultimate Multisite 1.2.0では、標準サブサイトを主権テナントインフラストラクチャに移行する際の移行検証ゲートが追加されました。
 

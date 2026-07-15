@@ -3,7 +3,7 @@ title: An t-aistriú an Chonstant Órra ar Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Déanáil an constant Sunrise ar fáil ar Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Déanáil an constant Sunrise ar fáil ar Closte
 
 Tá curteoirí host chuidithe a laithreacha i bhfáine seo mar chuid de chuid séurtiúil. Is é sin, ní féidir le Ultimate Multisite a bheith ag éidíochtadh an cilg (file) chun an constantí ag fáil ar fáil chun mapáil domáin agus feichar eile a bheith ag eanglaigh. Closte is curteoir sin.
 

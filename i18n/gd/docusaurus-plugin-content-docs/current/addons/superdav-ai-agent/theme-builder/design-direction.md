@@ -3,7 +3,7 @@ title: Stiùireadh Dealbhaidh
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Stiùireadh Dealbhaidh {#design-direction}
+# Stiùireadh Dealbhaidh
 
 Leigidh an ceum **Stiùireadh Dealbhaidh** leat dealbhadh lèirsinneach an theme agad ath-sgrùdadh, gleusadh, agus crìochnachadh mus gine Theme Builder an theme iomlan.
 

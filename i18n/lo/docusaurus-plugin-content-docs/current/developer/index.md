@@ -3,7 +3,7 @@ title: ເອກະສານສຳລັບນັກພັດທະນາ
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# ເອກະສານສຳລັບ Developer {#developer-documentation}
+# ເອກະສານສຳລັບ Developer
 
 ຄູ່ມືນີ້ໃຫ້ທຸກຢ່າງທີ່ Developer ຕ້ອງການເພື່ອເຊື່ອມຕໍ່, ຂະຫຍາຍ, ຫຼືພັດທະນາ addons ສຳລັບ Ultimate Multisite. Ultimate Multisite ປ່ຽນເຄືອຂ່າຍ WordPress Multisite ໃຫ້ເປັນແພລດຟອມ Website-as-a-Service (WaaS).
 

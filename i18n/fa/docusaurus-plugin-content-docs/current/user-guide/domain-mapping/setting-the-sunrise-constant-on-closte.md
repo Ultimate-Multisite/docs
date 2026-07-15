@@ -3,7 +3,7 @@ title: تنظیم ثابت Sunrise در Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# تنظیم ثابت Sunrise روی true در Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# تنظیم ثابت Sunrise روی true در Closte
 
 برخی از ارائه‌دهندگان هاست، فایل wp-config.php را به دلایل امنیتی قفل می‌کنند. این یعنی Ultimate Multisite نمی‌تواند به صورت خودکار این فایل را ویرایش کند تا ثابت‌های لازم برای عملکرد صحیح نگاشت دامنه و سایر قابلیت‌ها را اضافه کند. Closte یکی از این هاست‌هاست.
 

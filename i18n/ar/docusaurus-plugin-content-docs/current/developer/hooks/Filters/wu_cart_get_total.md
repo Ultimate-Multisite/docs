@@ -4,7 +4,7 @@ title: فلتر - wu_cart_get_total
 sidebar_label: wu_cart_get_total
 _i18n_hash: 72d9429a9eaa08472baafef395dd7138
 ---
-# تصفية: wu_cart_get_total {#filter-wucartgettotal}
+# تصفية: wu_cart_get_total
 
 تصفية إجمالي "المبلغ الأولي".
 

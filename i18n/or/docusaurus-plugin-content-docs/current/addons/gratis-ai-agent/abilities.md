@@ -3,7 +3,7 @@ title: କ୍ଷମତା ସନ୍ଦର୍ଭ
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# କ୍ଷମତା ସନ୍ଦର୍ଭ {#abilities-reference}
+# କ୍ଷମତା ସନ୍ଦର୍ଭ
 
 କ୍ଷମତାଗୁଡ଼ିକ ହେଉଛି ସେହି ପରମାଣୁ କାର୍ଯ୍ୟ, ଯାହା Gratis AI Agent ଆପଣଙ୍କ WordPress ସ୍ଥାପନାରେ ଆହ୍ୱାନ କରିପାରେ। ପ୍ରତ୍ୟେକ କ୍ଷମତା ଏକ ପଞ୍ଜୀକୃତ PHP class, ଯାହା ଏକ JSON schema ଦେଖାଏ — agent ରନଟାଇମରେ ଏହି schema ପଢ଼ି କେଉଁ parameters ଆବଶ୍ୟକ ଏବଂ କ୍ଷମତା କଣ ଫେରାଏ ବୁଝେ।
 

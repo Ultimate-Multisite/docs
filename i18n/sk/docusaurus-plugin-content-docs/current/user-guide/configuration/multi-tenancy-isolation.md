@@ -3,7 +3,7 @@ title: Izolácia multi-tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolácia v rámci multi-tenancy {#multi-tenancy-isolation}
+# Izolácia v rámci multi-tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 podporuje izoláciu databázy a dosierokového systému na úrovni podsubdomény pre suverénne klientov. To udržiavať údaje klienta oddelené, zároveň zachová sieťové konfigurácie, fakturáciu a administráciu.
 

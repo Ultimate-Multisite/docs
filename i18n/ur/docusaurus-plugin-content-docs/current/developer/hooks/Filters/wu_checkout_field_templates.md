@@ -4,7 +4,7 @@ title: فلٹر - wu_checkout_field_templates
 sidebar_label: wu_checkout_field_templates
 _i18n_hash: 671ffecc9abb1f5b1b609109ffa5cb97
 ---
-# Filter: wu_checkout_field_templates {#filter-wucheckoutfieldtemplates}
+# Filter: wu_checkout_field_templates
 
 ہماری وہ APIs جو نئے فیلڈ ٹیمپلیٹس شامل کرتی ہیں، وہ یہاں سے منسلک ہوتی ہیں۔
 

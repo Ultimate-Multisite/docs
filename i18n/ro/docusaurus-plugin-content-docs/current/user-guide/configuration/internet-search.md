@@ -3,7 +3,7 @@ title: Căutare pe internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Căutare pe Internet {#internet-search}
+# Căutare pe Internet
 
 Gratis AI Agent v1.5.0 adaugă o capacitate de **Căutare pe Internet** care îi permite asistentului AI să recupereze informații actualizate de pe web în timpul unei conversații. Aceasta este alimentată de [Brave Search API](https://brave.com/search/api/) sau de [Tavily API](https://tavily.com/).
 

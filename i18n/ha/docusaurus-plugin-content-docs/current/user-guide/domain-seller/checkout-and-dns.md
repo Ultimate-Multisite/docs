@@ -3,7 +3,7 @@ title: Wurin Bayarwa da DNS na Abokan Ciniki
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Management na Bayanin da Checkout da DNS {#checkout-field-and-customer-dns-management}
+# Management na Bayanin da Checkout da DNS
 
 ## Bayaninta da Zaɓar Domain {#the-domain-selection-checkout-field}
 

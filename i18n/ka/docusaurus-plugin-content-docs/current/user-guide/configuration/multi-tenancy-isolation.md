@@ -3,7 +3,7 @@ title: მულტიტენანcyjული იზოლაცია
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# მრავალ-ტენანcyjული იზოლაცია (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# მრავალ-ტენანcyjული იზოლაცია (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 მხარს უჭერს თითოეული სუბსაიტის მონაცემთა ბაზას და ფაილის სისტემის იზოლაციას სუვერენული ტენანტებისთვის. ეს ინარჩუნებს ტენანტის მონაცემების ცალკეობას, đồng thời ინარჩუნებს ქსელის დონის პრო비ჯენინგს (provisioning), ბილინგს (billing) და ადმინისტრირებას.
 

@@ -3,7 +3,7 @@ title: Daftarkan Titik Akhir API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Titik akhir API Register Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Titik akhir API Register Ultimate Multisite
 
 Dalam tutorial ini, anda akan mempelajari cara menggunakan titik akhir API /register Ultimate Multisite untuk mencipta keseluruhan proses onboarding bagi pelanggan baharu dalam rangkaian anda dan cara melakukannya dengan Zapier.
 

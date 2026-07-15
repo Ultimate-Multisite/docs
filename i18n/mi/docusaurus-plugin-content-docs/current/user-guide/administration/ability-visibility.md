@@ -3,7 +3,7 @@ title: Whakawhiti Whakaaro
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Whakarongo A2 (Ability Visibility) {#ability-visibility}
+# Whakarongo A2 (Ability Visibility)
 
 Te Superdav AI Agent v1.12.0 e te whakamōhaka **Whakarongo A2** (Ability Visibility) ki te tikanga, he whai tikanga tino nui ana i roto i te whakahaere i te mea ko te mana o ngā ability (ngā kaha/whakawāhi) kua whakarite ahau. Ko te whakatika i tēnei e kitea ai ngā administrator he taea ai te whakatika i te mea ko ngā kaha o te agent kua whakamahinga i roto i REST APIs, MCP servers, WooCommerce integrations, me ngā interface hou.
 

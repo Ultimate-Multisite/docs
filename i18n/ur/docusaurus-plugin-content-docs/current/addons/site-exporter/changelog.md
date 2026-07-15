@@ -3,7 +3,7 @@ title: Site Exporter Changelog
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# سائٹ ایکسپورٹر کا Changelog {#site-exporter-changelog}
+# سائٹ ایکسپورٹر کا Changelog
 
 Version: 1.0.6 - ریلیز ہوا 2026-05-11
 * نیا: اب سائٹ ایکسپورٹس میں ایک خودکار آغاز کرنے والا index.php شامل ہوتا ہے تاکہ ZIP کو الگ سے plugin انسٹال کیے بغیر نئے ہوسٹ پر انسٹال کیا جا سکے۔

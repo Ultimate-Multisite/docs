@@ -4,7 +4,7 @@ title: Sefe - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Sefe: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# Sefe: wu_documentation_get_link
 
 Lumella bahlahisi ba likatoloso ho sefa lihokelo.
 

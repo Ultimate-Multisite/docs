@@ -4,7 +4,7 @@ title: 'Action - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_\{$this->id\}_register_widgets {#action-wupagethis-idregisterwidgets}
+# Action: wu_page_\{$this->id\}_register_widgets
 
 આ પેજ માટે વિજેટ્સ રજીસ્ટર થયા પછી આ એક્શન ટ્રિગર થાય છે.
 

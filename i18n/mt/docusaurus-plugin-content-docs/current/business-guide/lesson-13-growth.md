@@ -3,7 +3,7 @@ title: 'Lezzjoni 13: Tkabbar'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lezzjoni 13: Tkabbir fuq Skala Akbar {#lesson-13-scaling-up}
+# Lezzjoni 13: Tkabbir fuq Skala Akbar
 
 Għandek pjattaforma li taħdem b'klijenti li jħallsu. Din il-lezzjoni tkopri kif tikber minn operazzjoni żgħira għal negozju sostenibbli -- tkabbir tal-infrastruttura, awtomatizzazzjoni tal-operazzjonijiet, u żieda fid-dħul għal kull klijent.
 

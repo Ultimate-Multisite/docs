@@ -3,7 +3,7 @@ title: Społeczność
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Jak dołączyć do społeczności Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Jak dołączyć do społeczności Ultimate Multisite
 
 Społeczność Ultimate Multisite to miejsce, w którym możesz nawiązać kontakt z innymi użytkownikami Ultimate Multisite oraz dzielić się wskazówkami, doświadczeniami i nie tylko. Aby przejść do społeczności Ultimate Multisite, odwiedź stronę https://community.ultimatemultisite.com/home.
 

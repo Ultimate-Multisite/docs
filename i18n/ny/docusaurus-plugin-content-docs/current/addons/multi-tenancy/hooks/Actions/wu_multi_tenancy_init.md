@@ -4,7 +4,7 @@ title: Chochita - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Chochita: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Chochita: wu_multi_tenancy_init
 
 Imayambitsidwa chowonjezera cha Multi-Tenancy chikamaliza kuyambitsidwa kwathunthu.
 

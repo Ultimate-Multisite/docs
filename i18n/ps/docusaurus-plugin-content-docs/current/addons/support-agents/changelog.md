@@ -3,7 +3,7 @@ title: د ملاتړ استازو د بدلونونو ثبت
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# د Support Agents بدلونونو تاریخچه {#support-agents-changelog}
+# د Support Agents بدلونونو تاریخچه
 
 نسخه: 1.0.14 - په 2026-05-05 خپره شوه
 * سمونه: د WordPress plugin د تړاو د سم اعلان لپاره Requires Plugins header ورزیات شو

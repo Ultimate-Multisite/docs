@@ -3,7 +3,7 @@ title: Udibaniso lwe-CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Udibaniso lweCyberPanel {#cyberpanel-integration}
+# Udibaniso lweCyberPanel
 
 Esi sikhokelo sichaza indlela yokumisela udibaniso lweUltimate Multisite CyberPanel ukuze ii-domain ezimaphwe kwinethiwekhi yakho zongezwe ngokuzenzekelayo (kwaye zisuswe) njengee-virtual host kwiCyberPanel, ngokubonelelwa kwe-auto-SSL ngokuzikhethela ngeLet's Encrypt.
 

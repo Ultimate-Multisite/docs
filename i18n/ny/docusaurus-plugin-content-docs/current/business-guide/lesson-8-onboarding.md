@@ -3,7 +3,7 @@ title: 'Phunziro 8: Kuyambitsa Kasitomala'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Phunziro 8: Kulowetsa Makasitomala {#lesson-8-customer-onboarding}
+# Phunziro 8: Kulowetsa Makasitomala
 
 Kupangitsa kasitomala kulembetsa ndi theka lokha la ntchito. Ngati alowa, amva kuti zasokoneza kwambiri, ndipo sabwereranso, mwawataya. Phunziro ili limapanga chokumana nacho chomwe chimasandutsa kulembetsa kwatsopano kukhala kasitomala wogwira ntchito komanso wotenga nawo mbali.
 

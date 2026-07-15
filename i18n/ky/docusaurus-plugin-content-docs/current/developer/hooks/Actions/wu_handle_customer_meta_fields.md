@@ -4,7 +4,7 @@ title: Аракет - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Аракет: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
+# Аракет: wu_handle_customer_meta_fields
 
 Плагин иштеп чыгуучуларына, керек болсо, мета дайындарды ар кандай жолдор менен сактоого мүмкүндүк берет.
 

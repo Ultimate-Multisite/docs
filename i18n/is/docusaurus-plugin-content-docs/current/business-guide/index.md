@@ -3,7 +3,7 @@ title: Byggu nisch-vitiðvarðarferli
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Byggðu Niche-Vefurinn fyrir Fyrirtæki með Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Byggðu Niche-Vefurinn fyrir Fyrirtæki með Ultimate Multisite
 
 Þær flestir sem reyna selja vefsíður, kveðja sig við prísins gegn Wix, Squarespace og þúsundir fréðlinda. Þeir lygi. Þær sem gagnast eru þeir sem velja sérstaka miðað viðskiptavini, byggja lausn sem er sniðin fyrir þennan miðað viðskiptivið, og setja fínlaun á verð fyrir það sem þeir bjóða.
 

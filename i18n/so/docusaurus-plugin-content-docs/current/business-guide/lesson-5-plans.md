@@ -3,7 +3,7 @@ title: 'Casharka 5: Naqshadaynta Qorshayaashaaga'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Casharka 5: Naqshadaynta Qorshayaashaada {#lesson-5-designing-your-plans}
+# Casharka 5: Naqshadaynta Qorshayaashaada
 
 Heerarka qorshayaashaadu ma aha kaliya heerar qiimeyn -- waa muujin sida macaamiishaada suuq-gaarka ahi dhab ahaan u shaqeeyaan. Casharkan waxaad ku naqshadayn doontaa heerar alaab oo la jaanqaadaya baahiyaha dhabta ah ee ganacsiyada jirdhiska ee marxalado kala duwan ku jira.
 

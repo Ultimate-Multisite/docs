@@ -4,7 +4,7 @@ title: Аракет - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Аракет: wu_captcha_after_field {#action-wucaptchaafterfield}
+# Аракет: wu_captcha_after_field
 
 Captcha талаасы көрсөтүлгөндөн кийин иштейт.
 

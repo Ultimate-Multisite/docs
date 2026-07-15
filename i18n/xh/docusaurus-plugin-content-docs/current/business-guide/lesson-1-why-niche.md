@@ -3,7 +3,7 @@ title: 'Isifundo 1: Kutheni icandelo elikhethekileyo liphumelela'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Isifundo 1: Kutheni i-Niche iphumelela {#lesson-1-why-niche-wins}
+# Isifundo 1: Kutheni i-Niche iphumelela
 
 Ngaphambi kokuba sichukumise nayiphi na isoftware, kufuneka uqonde ukuba kutheni ukwakhela abaphulaphuli abathile sisigqibo esinye esibaluleke kakhulu oza kusenza.
 

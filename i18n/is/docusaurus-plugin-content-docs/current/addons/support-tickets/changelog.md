@@ -3,7 +3,7 @@ title: Breytingaskrá þjónustubeiðna
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Breytingaskrá Support Tickets {#support-tickets-changelog}
+# Breytingaskrá Support Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Bætt: Fjarlægði vendor/ möppuna úr Git-rakningu (þegar fjallað um í .gitignore), sem minnkar stærð geymslu

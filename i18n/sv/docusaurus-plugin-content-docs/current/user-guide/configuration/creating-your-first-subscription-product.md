@@ -3,7 +3,7 @@ title: Skapa din första prenumerationsprodukt
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Skapa din första prenumerationsprodukt (v2) {#creating-your-first-subscription-product-v2}
+# Skapa din första prenumerationsprodukt (v2)
 
 _**VIKTIGT MEDDELANDE: Den här artikeln är endast för användare av Ultimate Multisite version 2.x. Om du använder version 1.x,**_ **_**se den här artikeln**_**.
 

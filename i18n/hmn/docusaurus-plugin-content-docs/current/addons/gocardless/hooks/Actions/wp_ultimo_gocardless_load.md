@@ -4,7 +4,7 @@ title: Kev ua - wp_ultimo_gocardless_load
 sidebar_label: wp_ultimo_gocardless_load
 _i18n_hash: caf03c7933927aed70709b302556e8b1
 ---
-# Kev nqis tes ua: wp_ultimo_gocardless_load {#action-wpultimogocardlessload}
+# Kev nqis tes ua: wp_ultimo_gocardless_load
 
 Tshwm sim thaum txhua qhov dependencies raug load lawm
 

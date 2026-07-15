@@ -3,7 +3,7 @@ title: Cloudflare 통합
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# همکارۍ د Cloudflare سره {#cloudflare-integration}
+# همکارۍ د Cloudflare سره
 
 ## پرمختنه {#overview}
 Cloudflare یو لوی محتوا رسولو شبکه (CDN) او امنیتي وړاندې ده چې ویب پاڼې ساتنه او تیاو ورکването کې مرسته کوي. دا همکارۍ Ultimate Multisite او Cloudflare ترمنځ د دیمین مدیریت اتوماتیکوي، په ځانګړې حال کې چې تاسو د subdomain multisite نصب کړی یاست.

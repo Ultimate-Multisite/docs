@@ -4,7 +4,7 @@ title: فلٹر - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# Filter: wu_current_set_site {#filter-wucurrentsetsite}
+# Filter: wu_current_set_site
 
 یہ ڈویلپرز کو ڈیفالٹ رویے کو تبدیل کرنے اور موجودہ سائٹ کو مختلف طریقے سے سیٹ کرنے کی اجازت دیتا ہے۔
 

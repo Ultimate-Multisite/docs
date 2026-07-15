@@ -3,7 +3,7 @@ title: Whakahaere Tāke
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Whakahaere Tāke {#tax-handling}
+# Whakahaere Tāke
 
 Kei roto i Ultimate Multisite tētahi kōwae kohinga tāke kua hangaia ki tā mātou plugin matua, nō reira mēnā me kohi koe i ngā tāke hoko mō ō mahere, mōkī me ngā ratonga, ka taea māmā e koe me te kore e whakauru i ētahi tāpiri.
 

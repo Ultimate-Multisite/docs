@@ -3,7 +3,7 @@ title: Control Panel Integrazioa hobetzea
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kontrol Panelaren Integrazioa Hobatzea {#enhance-control-panel-integration}
+# Kontrol Panelaren Integrazioa Hobatzea
 
 ## Deskuntzua {#overview}
 Enhance da modern kontrol panel bat dauden potente hostizazio automatizazio eta administrazio funtunalitatea ematen du. Horrek Ultimate Multisite eta Enhance Control Panel-a gitelako domainerak automatican sinxetzeko eta SSL bidegiturak administrazio egiteko espezialitate ematen du.

@@ -3,7 +3,7 @@ title: Biểu mẫu liên hệ của Trình xây dựng trang web
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Biểu mẫu Liên hệ trong Trình Xây dựng Trang (Site Builder) {#site-builder-contact-forms}
+# Biểu mẫu Liên hệ trong Trình Xây dựng Trang (Site Builder)
 
 Superdav AI Agent v1.10.0 bổ sung khả năng tạo biểu mẫu liên hệ trực tiếp từ giao diện chat bằng agent Site Builder. Tính năng này cho phép bạn thêm các biểu mẫu liên hệ hoạt động đầy đủ vào bất kỳ trang nào mà không cần rời khỏi cửa sổ chat.
 

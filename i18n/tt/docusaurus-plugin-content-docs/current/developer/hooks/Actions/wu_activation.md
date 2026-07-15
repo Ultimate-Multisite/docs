@@ -4,7 +4,7 @@ title: Гамәл - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Гамәл: wu_activation {#action-wuactivation}
+# Гамәл: wu_activation
 
 Плагинның башка өлешләренә activation өчен үз routine-нарын беркетергә мөмкинлек бирә
 

@@ -3,7 +3,7 @@ title: Construirea unei Integrari de Registrar Personalizate
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Crearea unei Integrari Custom de Registrare de Domenii {#building-a-custom-registrar-integration}
+# Crearea unei Integrari Custom de Registrare de Domenii
 
 Addon-ul Domain Seller folosește un model numit **Integration Registry**. Fiecare registrar este o clasă PHP care implementează `Domain_Selling_Capability` și se înregistrează prin hook-ul de acțiune `wu_domain_seller_register_capabilities`.
 

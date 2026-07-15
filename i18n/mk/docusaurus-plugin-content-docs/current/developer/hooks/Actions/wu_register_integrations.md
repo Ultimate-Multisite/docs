@@ -4,7 +4,7 @@ title: Дејство - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Акција: wu_register_integrations {#action-wuregisterintegrations}
+# Акција: wu_register_integrations
 
 Се активира за да им овозможи на интеграциите да се регистрираат.
 

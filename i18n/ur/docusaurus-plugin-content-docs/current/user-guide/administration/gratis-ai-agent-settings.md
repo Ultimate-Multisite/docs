@@ -3,7 +3,7 @@ title: Gratis AI Agent ترتیبات
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent کی ترتیبات {#gratis-ai-agent-settings}
+# Gratis AI Agent کی ترتیبات
 
 Gratis AI Agent میں **ترتیبات → اعلیٰ** اسکرین بیک اینڈ انٹیگریشنز کے لیے منتظم سطح کی تشکیل فراہم کرتی ہے۔ یہ صفحہ فیڈبیک فارورڈنگ، تلاش فراہم کنندہ keys، منظم Superdav سروس سیٹ اپ، Google Calendar کنٹرولز، TextBee SMS ترتیبات، اور پورے نیٹ ورک کے feature flags کو دستاویزی شکل دیتا ہے۔
 

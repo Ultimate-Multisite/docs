@@ -3,7 +3,7 @@ title: Ukuseta i-PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ukuseta i-PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
+# Ukuseta i-PayPal Gateway (v2)
 
 _**INQAKU ELIBALULEKILEYO: Eli nqaku libhekisa kwi-Ultimate Multisite version 2.x.**_
 

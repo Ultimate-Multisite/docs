@@ -3,7 +3,7 @@ title: 'Lektioun 14: Wat kënnt als Nächst'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lektioun 14: Wat als Nächst kënnt {#lesson-14-what-comes-next}
+# Lektioun 14: Wat als Nächst kënnt
 
 Du hues eng Nische-Websäit-Plattform vun Null opgebaut. FitSite ass live, zerwéiert Fitnessstudioen a generéiert widderhuelend Akommes. Dës lescht Lektioun kuckt, wou et vun hei aus higeet.
 

@@ -4,7 +4,7 @@ title: Azzjoni - wu_cart_setup
 sidebar_label: wu_cart_setup
 _i18n_hash: ec36c18b7d1768c50f77256594b7137b
 ---
-# Azzjoni: wu_cart_setup {#action-wucartsetup}
+# Azzjoni: wu_cart_setup
 
 Ħalli lill-iżviluppaturi jagħmlu bidliet addizzjonali fl-oġġett checkout.
 

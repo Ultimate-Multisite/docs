@@ -3,7 +3,7 @@ title: ธีม PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# การปรับแต่ง Admin Panel ด้วย PRO Theme {#customizing-your-admin-panel-with-pro-theme}
+# การปรับแต่ง Admin Panel ด้วย PRO Theme
 
 บ่อยครั้งเวลาทำงานให้ลูกค้า เรามักต้องการมอบประสบการณ์ที่ปรับแต่งเฉพาะใน admin dashboard ของ WordPress ให้กับลูกค้า หากคุณกำลังมองหารูปลักษณ์ที่ดูเป็นมืออาชีพมากขึ้น PRO Theme อาจช่วยคุณได้
 

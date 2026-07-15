@@ -4,7 +4,7 @@ title: 작업 - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# 액션: wu_mt_migration_completed {#action-wumtmigrationcompleted}
+# 액션: wu_mt_migration_completed
 
 마이그레이션이 완료될 때 발생합니다.
 

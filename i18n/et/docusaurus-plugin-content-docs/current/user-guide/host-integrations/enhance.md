@@ -3,7 +3,7 @@ title: Parandage kontrollplaani integreerimist
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kontrollpaneli integreerimise parandamine {#enhance-control-panel-integration}
+# Kontrollpaneli integreerimise parandamine
 
 ## Üldine ülevaade {#overview}
 Enhance on moderni kontrollpaneel, mis pakub võimlikku hoitjaautomaatika ja haldamise võimalusi. See integreerimine võimaldab domeenide automaatselt synkronida ja SSL-sertifikaate halda Ultimate Multisite'i ja Enhance Control Panel vahel.

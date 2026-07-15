@@ -3,7 +3,7 @@ title: Maareynta Goobaha
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Maareyntaalka Sawirrada (Sites) {#managing-sites}
+# Maareyntaalka Sawirrada (Sites)
 
 Sawirrada (ama subsites-ka) waa qaybta ugu muhiimsan ganacsigaaga WaaS. Ultimate Multisite waxay leedahay 3 nooc oo sawirro ah:
 

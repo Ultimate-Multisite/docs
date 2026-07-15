@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_checkout_field_types
 sidebar_label: wu_checkout_field_types
 _i18n_hash: ee19b0fa9b28a762f2d5504d67555ea9
 ---
-# ଫିଲ୍ଟର: wu_checkout_field_types {#filter-wucheckoutfieldtypes}
+# ଫିଲ୍ଟର: wu_checkout_field_types
 
 ନୂତନ କ୍ଷେତ୍ର ପ୍ରକାର ଯୋଡିବା ପାଇଁ ଆମ APIଗୁଡ଼ିକ ଏଠାରେ ସଂଯୁକ୍ତ ହୁଏ।
 

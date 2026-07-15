@@ -4,7 +4,7 @@ title: Filtar - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filtar: wu_rest_get_items {#filter-wurestgetitems}
+# Filtar: wu_rest_get_items
 
 Filtrira je li dopušteno nastaviti sa zahtjevom ili nije.
 

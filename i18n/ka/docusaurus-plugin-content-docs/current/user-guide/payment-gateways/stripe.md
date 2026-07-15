@@ -3,7 +3,7 @@ title: Stripe-ის დაყენება
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe გეითის დაყენება (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe გეითის დაყენება (v2)
 
 _**მნიშვნელოვანი შენიშვნა: ეს სტატია მომზადებული Ultimate Multisite-ის ვერსია 2.x-ისთვის.**_
 

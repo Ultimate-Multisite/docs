@@ -3,7 +3,7 @@ title: Überblick del pannelli di controllo
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Vistas de la Pizarra (Dashboard Overview) {#dashboard-overview}
+# Vistas de la Pizarra (Dashboard Overview)
 
 Ultimate Multisite tiene una **Dashboard** dedicada bajo el menú de Ultimate Multisite, y también añade widgets a la Network Dashboard. Este artículo cubre lo que verás en ambos lugares.
 

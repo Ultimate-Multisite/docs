@@ -3,7 +3,7 @@ title: Gwaro reMano
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Gwaro reAbilities {#abilities-reference}
+# Gwaro reAbilities
 
 Abilities ndiwo zviito zvidiki-diki zvinogona kushevedzwa neGratis AI Agent paWordPress yako. Ability imwe neimwe ikirasi yePHP yakanyoreswa inoburitsa JSON schema — agent inoverenga schema iyi panguva yekushanda kuti inzwisise kuti ma parameters api anodiwa uye kuti ability inodzosa chii.
 

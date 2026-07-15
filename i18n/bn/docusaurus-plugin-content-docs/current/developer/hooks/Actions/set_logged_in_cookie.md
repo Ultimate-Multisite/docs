@@ -4,7 +4,7 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# অ্যাকশন: set_logged_in_cookie {#action-setloggedincookie}
+# অ্যাকশন: set_logged_in_cookie
 
 এই অ্যাকশনটি লগইন করা প্রমাণীকরণ কুকি সেট করার ঠিক আগে ট্রিগার হয়।
 

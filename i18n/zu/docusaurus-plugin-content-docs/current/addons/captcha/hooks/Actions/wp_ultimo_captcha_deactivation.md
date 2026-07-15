@@ -4,7 +4,7 @@ title: Isenzo - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Isenzo: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Isenzo: wp_ultimo_captcha_deactivation
 
 Vumela ezinye izingxenye zesengezo zinamathisele izinqubo zazo zokuyekiswa ukusebenza
 

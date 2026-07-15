@@ -3,7 +3,7 @@ title: Ho aha kopanyo e ikhethileng ea mongodisi
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Ho aha Khokahanyo ea Registrar e Iketselitsoeng {#building-a-custom-registrar-integration}
+# Ho aha Khokahanyo ea Registrar e Iketselitsoeng
 
 Addon ea Domain Seller e sebelisa paterone ea **Integration Registry**. Registrar ka ’ngoe ke class ea PHP e sebelisang `Domain_Selling_Capability` mme e ingolisa ka action hook ea `wu_domain_seller_register_capabilities`.
 

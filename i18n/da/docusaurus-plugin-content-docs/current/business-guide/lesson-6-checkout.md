@@ -3,7 +3,7 @@ title: 'Lektion 6: Tilmeldingsoplevelsen'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lektion 6: Tilmeldingsoverblikket {#lesson-6-the-signup-experience}
+# Lektion 6: Tilmeldingsoverblikket
 
 Kassen er det sted, hvor interesse bliver til indtægt. En forvirrende eller generisk tilmeldingsproces mister kunder. En niche-specifik proces, der taler deres sprog og føles ubesværet, konverterer dem.
 

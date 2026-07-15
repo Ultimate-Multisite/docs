@@ -4,7 +4,7 @@ title: 動作 - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# Action: wu_mt_migration_completed {#action-wumtmigrationcompleted}
+# Action: wu_mt_migration_completed
 
 當遷移完成時觸發。
 

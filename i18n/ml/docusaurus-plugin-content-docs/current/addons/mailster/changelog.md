@@ -3,7 +3,7 @@ title: Mailster മാറ്റങ്ങളുടെ വിവരണം
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster മാറ്റങ്ങളുടെ പട്ടിക (Changelog) {#mailster-changelog}
+# Mailster മാറ്റങ്ങളുടെ പട്ടിക (Changelog)
 
 ### 1.0.0 {#100}
 * ആദ്യ റിലീസ് (Initial release)

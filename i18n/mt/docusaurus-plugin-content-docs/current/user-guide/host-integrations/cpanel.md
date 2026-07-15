@@ -3,7 +3,7 @@ title: Integrazzjoni cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrà cPanel {#cpanel-integration}
+# Integrà cPanel
 
 ## Panoramika {#overview}
 Il cPanel huwa wieħed mill-popolari pannell tal kontroll web li jinkludi l-web hosting għal ħafna fornituri ta hosting, sia shared (komuni) u dedicated (dedikati). Dan l-integrazzjoni tispjega is-sync awtomatiku tal-domain bejn Ultimate Multisite u cPanel, li jagħti possibilja li ti aġġixxi awtomatik alias tal-domain u subdomain għall-account tiegħek f'cPanel.

@@ -4,7 +4,7 @@ title: Филтер - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Филтер: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Филтер: wu_checkout_form_base_domains
 
 Ги филтрира споделените основни домени од формуларот за наплата што не треба да станат записи за мапирани домени.
 

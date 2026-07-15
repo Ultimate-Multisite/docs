@@ -4,7 +4,7 @@ title: Фильтр - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Фильтр: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
+# Фильтр: wu_generated_username_from_email
 
 Фильтр генерируемого имени пользователя клиента.
 

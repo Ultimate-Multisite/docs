@@ -3,7 +3,7 @@ title: Riferimenti delle capacità
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Referència d'abilitats {#abilities-reference}
+# Referència d'abilitats
 
 Les habilitats són les accions atòmiques que l'Agent AI Gratis pot invocat en la teva instal·lació de WordPress. Cada habilitat és una classe PHP registrada que exposa un esquema JSON —l'agent lee aquest esquema al temps d'execució per entendre quins paràmetres són necessaris i què retorna la habilitat.
 

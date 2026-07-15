@@ -3,7 +3,7 @@ title: Migliora l'integrazione del pannello di controllo
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Control Panel Integration {#enhance-control-panel-integration}
+# Enhance Control Panel Integration
 
 ## Panoramica {#overview}
 Enhance è un moderno pannello di controllo che fornisce potenti capacità di automazione e gestione dell'hosting. Questa integrazione consente la sincronizzazione automatica dei domini e la gestione dei certificati SSL tra Ultimate Multisite e Enhance Control Panel.

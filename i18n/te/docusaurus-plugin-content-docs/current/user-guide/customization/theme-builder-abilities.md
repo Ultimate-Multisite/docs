@@ -3,7 +3,7 @@ title: థీమ్ బిల్డర్ సామర్థ్యాలు
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder సామర్థ్యాలు: Block Themes ను Scaffold చేయడం మరియు Activate చేయడం {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Theme Builder సామర్థ్యాలు: Block Themes ను Scaffold చేయడం మరియు Activate చేయడం
 
 Superdav AI Agent v1.12.0 రెండు శక్తివంతమైన సామర్థ్యాలను పరిచయం చేసింది. వీటి ద్వారా మీరు చాట్ ఇంటర్‌ఫేస్ నుండి నేరుగా కస్టమ్ block themes ను రూపొందించగలిగే మరియు deploy చేయగలిగే సామర్థ్యం మీకు లభిస్తుంది.
 

@@ -4,7 +4,7 @@ title: Ìgbésẹ - wu_register_rest_routes
 sidebar_label: wu_register_rest_routes
 _i18n_hash: 3c9e8b366ec6074bb0c6cdbd0327f31a
 ---
-# Ìṣe: wu_register_rest_routes {#action-wuregisterrestroutes}
+# Ìṣe: wu_register_rest_routes
 
 Gba àwọn ipa-ọ̀nà afikun laaye láti forúkọsílẹ̀.
 

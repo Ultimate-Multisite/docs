@@ -3,7 +3,7 @@ title: 'Õppetund 10: Käivitamispäev'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Õppetund 10: Käivitamispäev {#lesson-10-launch-day}
+# Õppetund 10: Käivitamispäev
 
 Kõik on valmis. Enne kui uksed avad, käib see õppetund läbi käivitamiseelse kontrollnimekirja, et veenduda, et miski pole katki, puudu ega piinlik.
 

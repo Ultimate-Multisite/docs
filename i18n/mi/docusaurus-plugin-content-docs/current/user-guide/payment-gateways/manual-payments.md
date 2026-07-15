@@ -3,7 +3,7 @@ title: Te Whakarite Utu ā-Ringa
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Te Whirihora i ngā Utu ā-Ringa (v2) {#setting-up-manual-payments-v2}
+# Te Whirihora i ngā Utu ā-Ringa (v2)
 
 _**TUHIPOKA NUI: E kōrero ana tēnei tuhinga mō Ultimate Multisite putanga 2.x.**_
 

@@ -3,7 +3,7 @@ title: Ustvarjanje vaše prve pretplatne izdelke
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ustvarjanje vaše Prve Predskupne Produktne Ponudbe (v2) {#creating-your-first-subscription-product-v2}
+# Ustvarjanje vaše Prve Predskupne Produktne Ponudbe (v2)
 
 _**POMEMBNE NAPOMOTE: Ta članek je namenjen le uporabnikom Ultimate Multisite verzije 2.x. Če uporabljate verzijo 1.x,**_ **_ _glejte ta članek_**.
 

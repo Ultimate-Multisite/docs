@@ -3,7 +3,7 @@ title: Kutendeka kwa Upozi wa Uwanja na Kuzuia Uwanja
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kufufu kwa Ufupi wa Ufanisi na Kuzuia Tovuti {#membership-expiration-and-site-blocking}
+# Kufufu kwa Ufupi wa Ufanisi na Kuzuia Tovuti
 
 Ili kufahamu jinsi Ultimate Multisite inavyoshughulikia kuisha kwa uwezo (membership expiration), kukataliwa kwa majaribio (trial endings), na kuzuia tovuti mbele ya wateja (frontend site blocking). Hii itakueleza maisha ya membership kutoka kuwa hai hadi kuisha, mipangilio inayodhibiti kama tovuti zinazotolewa inapaswa kukataliwa, na unachopaswa kuangalia wakati tovuti bado zinaweza kufikiwa baada ya uwezo kuisha.
 

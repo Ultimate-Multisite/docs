@@ -4,7 +4,7 @@ title: Actio - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Actio: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Actio: wu_domain_transfer_completed
 
 Excitatur postquam translatio dominii completa est.
 

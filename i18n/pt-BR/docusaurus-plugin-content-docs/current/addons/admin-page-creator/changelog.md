@@ -3,7 +3,7 @@ title: Admin Page Creator Registro de alterações
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Registro de Alterações do Criador de Página Administrativa {#admin-page-creator-changelog}
+# Registro de Alterações do Criador de Página Administrativa
 
 ### Versão 1.9.0 - Lançado em 2026-01-18 {#version-190---released-on-2026-01-18}
 

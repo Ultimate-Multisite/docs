@@ -4,7 +4,7 @@ title: 필터 - wu_bypass_unset_current_user
 sidebar_label: wu_bypass_unset_current_user
 _i18n_hash: fc4c248df410793da1754944250d8b11
 ---
-# Filter: wu_bypass_unset_current_user {#filter-wubypassunsetcurrentuser}
+# Filter: wu_bypass_unset_current_user
 
 개발자가 현재 사용자 해제 코드를 우회하도록 허용합니다.
 

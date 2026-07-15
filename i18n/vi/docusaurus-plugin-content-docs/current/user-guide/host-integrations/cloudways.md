@@ -3,7 +3,7 @@ title: Tích hợp Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Tích hợp Cloudways {#cloudways-integration}
+# Tích hợp Cloudways
 
 ## Tổng quan {#overview}
 Cloudways là một nền tảng lưu trữ đám mây được quản lý, cho phép bạn triển khai các trang WordPress trên nhiều nhà cung cấp đám mây khác nhau như DigitalOcean, AWS, Google Cloud, và nhiều dịch vụ khác. Tích hợp này cho phép đồng bộ tên miền tự động và quản lý chứng chỉ SSL giữa Ultimate Multisite và Cloudways.

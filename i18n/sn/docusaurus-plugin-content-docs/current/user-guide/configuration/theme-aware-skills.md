@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Zenye Ndiri Kuti Theme {#theme-aware-skills}
+# Skills Zenye Ndiri Kuti Theme
 
 Superdav AI Agent v1.10.0 inosha mhinduro chete ne-theme (theme-aware) chetatu chinoripa zvinoreva kuti zvinhu zvakaita sei kune WordPress theme yako inoshandiswa. Zvinonipa matsvaka anokosha uye zvinhu zvakakosha zvinogadzirwa kune hutano hwako nekuvimbiso uye zvinhu zvakawanda dzine hutano rako.
 

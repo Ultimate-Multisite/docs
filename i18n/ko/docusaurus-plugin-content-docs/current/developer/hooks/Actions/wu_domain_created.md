@@ -4,7 +4,7 @@ title: 작업 - wu_domain_created
 sidebar_label: wu_domain_created
 _i18n_hash: 1a266393a53b3c92ffd42975dd94f338
 ---
-# 액션: wu_domain_created {#action-wudomaincreated}
+# 액션: wu_domain_created
 
 새 도메인 매핑이 추가될 때 트리거됩니다.
 

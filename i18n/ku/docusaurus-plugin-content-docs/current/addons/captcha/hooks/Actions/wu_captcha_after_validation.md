@@ -4,7 +4,7 @@ title: Çalakî - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Çalakî: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
+# Çalakî: wu_captcha_after_validation
 
 Piştî rastandina captcha dixebite.
 

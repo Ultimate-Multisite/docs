@@ -3,7 +3,7 @@ title: ছাইট টেমপ্লেটসমূহ
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2) {#site-templates-v2}
+# Site Templates (v2)
 
 _**টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x সম্পৰ্কে। যদি আপুনি সংস্কৰণ 1.x ব্যৱহাৰ কৰি আছে,**_ **এই প্ৰবন্ধটো চাওক** _**।**_
 

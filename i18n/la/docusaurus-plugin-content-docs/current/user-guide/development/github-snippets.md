@@ -3,7 +3,7 @@ title: Fragmenta GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Quommodo uti snippets Ultimate Multisite in repository GitHub nostro {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Quommodo uti snippets Ultimate Multisite in repository GitHub nostro
 
 In repository GitHub sunt snippet codicis quae saepe solicitantur ab utilisateur Ultimate Multisite qui parvum operationes addere desiderant, sicut additionis scripti Google Analytics in paginis sign-up vel occulsi meta box a dashboard admin.
 
@@ -19,7 +19,7 @@ Duo modi ad codicem addere sunt:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Quommodo snippet in filem functions.php temi tuo addere debet. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Quommodo snippet in filem functions.php temi tuo addere debet.
 
   1. Accede ad dashboard admin Network WordPress tuum et ad Theme > Theme Editor (Vide screenshot inferior).
 
@@ -29,7 +29,7 @@ Duo modi ad codicem addere sunt:
 
 <!-- Screenshot non est disponibile: WordPress Theme Editor ostendens editio filem functions.php -->
 
-# Quommodo Must-Use Plugins (mu-plugins) creare debet. {#how-to-create-must-use-plugins-mu-plugins}
+# Quommodo Must-Use Plugins (mu-plugins) creare debet.
 
 WordPress habet modum qui tibi permittit carere operationes custom, quae vocant "Must-Use Plugins", vel "mu-plugins" breviter.
 

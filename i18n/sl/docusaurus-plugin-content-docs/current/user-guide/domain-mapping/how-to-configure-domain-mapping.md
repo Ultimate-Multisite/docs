@@ -3,7 +3,7 @@ title: Kako konfigurirati preslikavo domen
 sidebar_position: 6
 _i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kako konfigurirati preslikavo domen (v2) {#how-to-configure-domain-mapping-v2}
+# Kako konfigurirati preslikavo domen (v2)
 
 _**POMEMBNA OPOMBA: Ta članek se nanaša na Ultimate Multisite različice 2.x.**_
 

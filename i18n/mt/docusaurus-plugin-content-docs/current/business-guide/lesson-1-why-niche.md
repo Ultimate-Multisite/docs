@@ -3,7 +3,7 @@ title: 'Lezzjoni 1: Għaliex in-Niċċa Tirbaħ'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lezzjoni 1: Għaliex Niche Jirbaħ {#lesson-1-why-niche-wins}
+# Lezzjoni 1: Għaliex Niche Jirbaħ
 
 Qabel ma mmissu xi software, trid tifhem għaliex il-bini għal udjenza speċifika huwa l-iktar deċiżjoni importanti li se tieħu.
 

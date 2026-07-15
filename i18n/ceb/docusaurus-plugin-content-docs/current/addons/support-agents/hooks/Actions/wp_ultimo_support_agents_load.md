@@ -4,7 +4,7 @@ title: Aksyon - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# Aksyon: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# Aksyon: wp_ultimo_support_agents_load
 
 Mo-trigger kung na-load na ang tanang mga pagsaligan
 

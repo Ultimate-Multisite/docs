@@ -3,7 +3,7 @@ title: Ahoana no ahafahanao mitady fanampiana
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Ahoana ny fanampiana {#how-to-get-help}
+# Ahoana ny fanampiana
 
 Manana ny Licence key marina ianao, ary mifandray amin'izany dia misy fidirana amin'ny ekintsika mba hanampiana anao hamaha ny olana mety hitantsika mandritra ny fotoana fanamboarana Ultimate Multisite.
 

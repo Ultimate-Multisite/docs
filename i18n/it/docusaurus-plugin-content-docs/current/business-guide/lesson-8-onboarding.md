@@ -3,7 +3,7 @@ title: 'Lezione 8: Onboarding del cliente'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lezione 8: Onboarding del Cliente {#lesson-8-customer-onboarding}
+# Lezione 8: Onboarding del Cliente
 
 Far iscrivere un cliente è solo metà del lavoro. Se accede, si sente sopraffatto e non torna più, l'hai perso. Questa lezione ti guiderà nella creazione dell'esperienza che trasforma una nuova iscrizione in un cliente attivo e coinvolto.
 

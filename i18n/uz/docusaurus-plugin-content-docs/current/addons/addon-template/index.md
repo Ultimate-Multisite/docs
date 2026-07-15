@@ -3,9 +3,9 @@ title: Qo‘shimcha shabloni
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Qo‘shimcha shabloni {#addon-template}
+# Qo‘shimcha shabloni
 
-{{ADDON_DESCRIPTION}}
+Qo‘shimcha shabloni — Ultimate Multisite.
 
 ## Talablar {#requirements}
 

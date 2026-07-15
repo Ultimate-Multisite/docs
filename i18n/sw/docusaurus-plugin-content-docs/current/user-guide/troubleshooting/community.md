@@ -3,7 +3,7 @@ title: Jamii
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Jinsi ya kujiunga na Jumuiya ya Ultimate Multisite {#how-to-join-ultimate-multisite-community}
+# Jinsi ya kujiunga na Jumuiya ya Ultimate Multisite
 
 Jumuiya ya Ultimate Multisite ni sehemu ambapo unaweza kuwasiliana na watumiaji wengine wa Ultimate Multisite na kushiriki vidokezo, uzoefu na mengineyo. Ili kufikia Jumuiya ya Ultimate Multisite nenda https://community.ultimatemultisite.com/home.
 

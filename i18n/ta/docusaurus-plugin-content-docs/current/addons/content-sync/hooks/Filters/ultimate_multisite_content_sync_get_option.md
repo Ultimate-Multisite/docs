@@ -4,7 +4,7 @@ title: வடிகட்டி - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
+# Filter: ultimate_multisite_content_sync_get_option
 
 ஸ்லக் செய்யப்பட்ட நெட்வொர்க் ஆப்ஷன் மதிப்பைத் திருப்பி அளிக்கிறது.
 

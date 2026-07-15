@@ -3,7 +3,7 @@ title: WooCommerce-integraation muutosloki
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce-integraation muutosloki {#woocommerce-integration-changelog}
+# WooCommerce-integraation muutosloki
 
 Versio 2.2.0 - Julkaistu 2026-07-01
 * Uutta: Ultimate Multisite -verosummat näkyvät nyt erillisinä WooCommerce-maksuriveinä kassalla, mikä tekee verojen kokonaissummista selkeämmät ennen maksua.

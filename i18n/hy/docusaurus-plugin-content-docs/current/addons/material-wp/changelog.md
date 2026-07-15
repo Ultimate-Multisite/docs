@@ -3,7 +3,7 @@ title: Material WP փոփոխությունների մատյան
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP փոփոխությունների մատյան {#material-wp-changelog}
+# Material WP փոփոխությունների մատյան
 
 Տարբերակ 1.1.15 - 01/26/2026
 * Բարելավված է՝ կոդի ոճը և ձևաչափումը;

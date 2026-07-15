@@ -4,7 +4,7 @@ title: Action - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Action: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
+# Action: wp_ultimo_captcha_deactivation
 
 డియాక్టివేషన్ కోసం ప్లగిన్ యొక్క ఇతర భాగాలు వాటి రొటీన్‌లను జోడించడానికి దీనిని ఉపయోగించవచ్చు.
 

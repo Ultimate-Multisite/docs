@@ -3,7 +3,7 @@ title: Captcha மாற்றப் பதிவேடு
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog {#captcha-changelog}
+# Captcha Changelog
 
 Version: 1.5.0 - Released on 2026-05-22
 * New: Hard-stop rate limiter — captcha-பாதுகாக்கப்பட்ட பக்கங்களில் (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) உள்ள ஒவ்வொரு GET மற்றும் POST கோரிக்கையையும் கணக்கிட்டு, HTTP 429, ஒரு `Retry-After` header, மற்றும் சீரற்ற tarpit sleep (1–5 வினாடிகள், அதிகபட்சம் 15 வினாடிகளுக்கு மேல் இருக்காது) மூலம் பதிலளிக்கும் ஒரு கடுமையான வரம்பு கட்டுப்படுத்தி.

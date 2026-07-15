@@ -3,7 +3,7 @@ title: Whakawhanaungatanga Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Whakarite i Ultimate Multisite me Zapier {#integrating-ultimate-multisite-with-zapier}
+# Whakarite i Ultimate Multisite me Zapier
 
 I roto i taroa, te whakataki, i korero mātou mō [Webhooks](webhooks.md) ā, ka taea te whakamahi i ahau ki te whai wāhi me ngā mea e hoki mai ana (3rd party applications).
 

@@ -3,7 +3,7 @@ title: Qauv Tshiab
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# ປ່ຽນລຳດັບຂອງລາຍຊື່ປະເທດໃນ Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# ປ່ຽນລຳດັບຂອງລາຍຊື່ປະເທດໃນ Ultimate Multisite
 
 Dropdown ທີ່ໃຊ້ເລືອກປະເທດ ຈະຖືກຈັດລຽງຕາມຕົວອັກສອນພາສາອັງກິດຂອງຊື່ປະເທດ. ອັນນີ້ອາດເຮັດໃຫ້ບາງຄັ້ງ, ປະເທດຕົ້ນທາງຂອງບໍລິສັດເຈົ້າ ແລະ/ຫຼື ລູກຄ້າສ່ວນໃຫຍ່ ຖືກເຊື່ອງໄວ້ຢູ່ກາງລາຍຊື່ປະເທດທີ່ຍາວຫຼາຍ.
 

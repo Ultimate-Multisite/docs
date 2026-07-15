@@ -3,7 +3,7 @@ title: ڈویلپر ڈاکومنٹیشن
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Developer Documentation {#developer-documentation}
+# Developer Documentation
 
 یہ گائیڈ ڈویلپرز کو وہ سب کچھ فراہم کرتی ہے جو Ultimate Multisite کے ساتھ انٹیگریٹ کرنے، اسے بڑھانے، یا اس کے لیے ایڈ آنز تیار کرنے کے لیے ضروری ہے۔ Ultimate Multisite ایک WordPress Multisite network کو Website-as-a-Service (WaaS) پلیٹ فارم میں تبدیل کرتا ہے۔
 

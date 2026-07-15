@@ -4,7 +4,7 @@ title: אַקציע - wu_before_light_ajax
 sidebar_label: wu_before_light_ajax
 _i18n_hash: 6940449776f4104c4f208386dde34af5
 ---
-# אַקציע: wu_before_light_ajax {#action-wubeforelightajax}
+# אַקציע: wu_before_light_ajax
 
 אין געוויסע פאַלן וועלן מיר דאַרפֿן לאָדן עקסטרע זאַפט צו באַהאַנדלען אַקציעס.
 

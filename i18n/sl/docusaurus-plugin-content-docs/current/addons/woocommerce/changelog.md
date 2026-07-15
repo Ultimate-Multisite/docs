@@ -3,7 +3,7 @@ title: Dnevnik sprememb integracije WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Dnevnik sprememb integracije WooCommerce {#woocommerce-integration-changelog}
+# Dnevnik sprememb integracije WooCommerce
 
 Različica 2.2.0 - izdana dne 2026-07-01
 * Novo: Zneski davkov Ultimate Multisite so zdaj prikazani kot ločene vrstice pristojbin WooCommerce ob zaključku nakupa, zaradi česar so skupni zneski davkov jasnejši pred plačilom.

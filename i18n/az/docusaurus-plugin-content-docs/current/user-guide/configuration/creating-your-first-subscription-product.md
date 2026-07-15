@@ -3,7 +3,7 @@ title: İlk Abunəlik Məhsulunuzu Yaratmaq
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# İlk Abunə Məhsulunuzu Yaratmaq (v2) {#creating-your-first-subscription-product-v2}
+# İlk Abunə Məhsulunuzu Yaratmaq (v2)
 
 _**MÜHİM QEYD: Bu məqalə yalnız Ultimate Multisite 2.x versiyası istifadəçiləri üçün nəzərdə tutulub. Əgər 1.x versiyasını istifadə edirsinizsə,**_ **_**bu məqaləyə baxın**_**.
 

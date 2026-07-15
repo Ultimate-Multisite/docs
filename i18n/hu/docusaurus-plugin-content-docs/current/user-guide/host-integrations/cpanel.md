@@ -3,7 +3,7 @@ title: cPanel integráció
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel integráció {#cpanel-integration}
+# cPanel integráció
 
 ## Áttekintés {#overview}
 A cPanel az egyik legnépszerűbb webtárhely-kezelő felület, amelyet számos osztott és dedikált tárhelyszolgáltató használ. Ez az integráció lehetővé teszi az automatikus domain-szinkronizálást az Ultimate Multisite és a cPanel között, így automatikusan hozzáadhatsz domain aliasokat és aldomaineket a cPanel fiókodhoz.

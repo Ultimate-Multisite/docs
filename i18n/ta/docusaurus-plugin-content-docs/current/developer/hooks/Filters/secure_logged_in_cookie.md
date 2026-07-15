@@ -4,7 +4,7 @@ title: வடிகட்டி - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
+# Filter: secure_logged_in_cookie
 
 உள்நுழைவு குக்கி (logged in cookie) HTTPS மூலமாக மட்டுமே அனுப்பப்பட வேண்டுமா என்பதை இது தீர்மானிக்கிறது.
 

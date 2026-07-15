@@ -4,7 +4,7 @@ title: តម្រង - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# តម្រង៖ wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
+# តម្រង៖ wu_magic_link_enforce_ip
 
 តម្រងថាតើត្រូវអនុវត្តការផ្ទៀងផ្ទាត់អាសយដ្ឋាន IP ឬអត់។
 

@@ -3,7 +3,7 @@ title: Extraits de code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Extraits de code pour v2 {#code-snippets-for-v2}
+# Extraits de code pour v2
 
 En gros, les extraits de code pour **WordPress** sont utilisés pour effectuer certaines actions qui nécessiteraient autrement une petite extension dédiée. Ces extraits de code sont placés dans l’un des fichiers du cœur de WordPress ou du thème (généralement le fichier functions.php de votre thème), ou ils peuvent être utilisés comme MU plugin.
 

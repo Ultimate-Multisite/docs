@@ -3,7 +3,7 @@ title: એકાઉન્ટ પેજ એક્સેસ કરવું
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# હું મારા એકાઉન્ટ પેજને પ્રથમ વખત કેવી રીતે એક્સેસ કરી શકું? {#how-can-i-access-my-account-page-for-the-first-time}
+# હું મારા એકાઉન્ટ પેજને પ્રથમ વખત કેવી રીતે એક્સેસ કરી શકું?
 
 Ultimate Multisite માં આપનું સ્વાગત છે!
 

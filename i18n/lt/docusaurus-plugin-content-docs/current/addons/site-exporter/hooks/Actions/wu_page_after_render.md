@@ -4,7 +4,7 @@ title: Veiksmas - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Veiksmas: wu_page_after_render {#action-wupageafterrender}
+# Veiksmas: wu_page_after_render
 
 Suveikia po puslapio atvaizdavimo.
 

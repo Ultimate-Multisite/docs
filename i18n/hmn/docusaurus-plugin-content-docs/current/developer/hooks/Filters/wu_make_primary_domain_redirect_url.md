@@ -4,7 +4,7 @@ title: Lim - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Lim: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
+# Lim: wu_make_primary_domain_redirect_url
 
 Lim qhov redirect URL tom qab teeb ib domain ua primary.
 

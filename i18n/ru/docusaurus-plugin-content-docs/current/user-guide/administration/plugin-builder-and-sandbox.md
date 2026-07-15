@@ -3,7 +3,7 @@ title: Конструктор плагинов и песочница
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox {#plugin-builder--sandbox}
+# Plugin Builder & Sandbox
 
 Gratis AI Agent v1.5.0 представляет **Plugin Builder & Sandbox System** — систему, которая позволяет AI-помощнику генерировать, активировать и управлять плагинами WordPress на вашей сети через безопасную, изолированную среду sandbox.
 

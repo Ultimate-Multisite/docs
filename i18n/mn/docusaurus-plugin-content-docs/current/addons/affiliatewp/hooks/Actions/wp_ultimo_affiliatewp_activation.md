@@ -4,7 +4,7 @@ title: Үйлдэл - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# Үйлдэл: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
+# Үйлдэл: wp_ultimo_affiliatewp_activation
 
 plugin-ийн бусад хэсгүүд идэвхжүүлэлтийн өөрсдийн горимуудыг холбох боломжийг олгоно
 

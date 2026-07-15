@@ -3,7 +3,7 @@ title: マルチテナンシー統合
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# マルチテナンシー統合 {#multi-tenancy-integration}
+# マルチテナンシー統合
 
 Ultimate Multisite: マルチテナンシー 1.2.0 では、独立テナント、移行検証、テナントライフサイクル自動化に関する複数の統合接点が変更されています。
 

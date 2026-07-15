@@ -3,7 +3,7 @@ title: Indlela yokurhoxisa umrhumo
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Ndingawurhoxisa njani umrhumo wam? {#how-can-i-cancel-my-subscription}
+# Ndingawurhoxisa njani umrhumo wam?
 
 Ukuba unelayisensi ye-Ultimate Multisite, ungakurhoxisa ukuvuselelwa kwayo nangaliphi na ixesha olifunayo. Landela nje amanyathelo angezantsi:
 

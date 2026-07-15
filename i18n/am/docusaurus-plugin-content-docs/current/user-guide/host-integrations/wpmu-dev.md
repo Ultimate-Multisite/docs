@@ -3,7 +3,7 @@ title: WPMU DEV Integration
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# WPMU DEV ማገናኛ (Integration) {#wpmu-dev-integration}
+# WPMU DEV ማገናኛ (Integration)
 
 ## አጠቃላይ እይታ (Overview) {#overview}
 WPMU DEV ለWordPress ድረ-ገጾች አስተናጋጅ (hosting)፣ ፕልጊን (plugins) እና አገልግሎቶችን የሚያቀርብ ሰፊ የWordPress መድረክ ነው። ይህ ማገናኛ (integration) በUltimate Multisite እና በWPMU DEV hosting መካከል የዶሜይን መመሳሰልን (domain syncing) እና የSSL ሰርተፍኬት አስተዳደርን በራስ-ሰር ያደርጋል።

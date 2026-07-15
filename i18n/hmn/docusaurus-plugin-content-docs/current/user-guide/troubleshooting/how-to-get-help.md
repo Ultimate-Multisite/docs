@@ -3,7 +3,7 @@ title: Yiwm tau txais kev pabcuam
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-#  איך  Úm tshawb (How to get help) {#how-to-get-help}
+#  איך  Úm tshawb (How to get help)
 
 Kuv tshawb license key chu koj muaj, thiab hais txog ntawd yog tus kaus los ntawm peev xim rau peev xim los tsim Ultimate Multisite. Kuv yuav pab koj tsim kom zoo thiab tsim kom koj tshawb sau txhua yam uas koj tuaj yeem thiaj paub thaum koj tsim Ultimate Multisite.
 

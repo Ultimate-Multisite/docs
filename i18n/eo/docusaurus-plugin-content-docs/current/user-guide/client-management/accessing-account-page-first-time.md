@@ -3,7 +3,7 @@ title: Aliri la Konta Paĝo
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kiel mi la vôtre konta paĝon pri valoro fton? {#how-can-i-access-my-account-page-for-the-first-time}
+# Kiel mi la vôtre konta paĝon pri valoro fton?
 
 Bienvenue en Ultimate Multisite!
 

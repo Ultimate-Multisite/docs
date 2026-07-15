@@ -4,7 +4,7 @@ title: Filtrs - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filtrs: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
+# Filtrs: wu_limits_is_fluent_form_above_limit
 
 Pārbauda, vai dotais veidlapas tips ir atļauts šajā plānā. Ļauj plugin izstrādātājiem filtrēt atgriezto vērtību
 

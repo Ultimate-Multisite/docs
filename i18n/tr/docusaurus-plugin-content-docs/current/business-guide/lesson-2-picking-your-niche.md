@@ -3,7 +3,7 @@ title: 'Ders 2: Nişinizi Seçmek'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ders 2: Nişinizi Seçmek {#lesson-2-picking-your-niche}
+# Ders 2: Nişinizi Seçmek
 
 Ders 1'de nişin neden genel olmaktan daha iyi olduğunu öğrendik. Şimdi sıra sizin nişinizi seçmekte. Bu ders, zaman harcayıp bir şey inşa etmeden önce bir niş bulmanız ve bu nişi doğrulamanız için bir çerçeve sunuyor.
 

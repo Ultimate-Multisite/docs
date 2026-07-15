@@ -3,7 +3,7 @@ title: Tsarawa da Gudanar da Mai Gina Shafin Yanar Gizo v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (wanda aka gabatar a Gratis AI Agent v1.4.0) shi ne injin da ke ba da ƙarfin ƙirƙirar gidan yanar gizo mai matakai da yawa. Lokacin da ka nemi agent ya "gina gidan yanar gizo na gidan abinci" ko "ƙirƙiri portfolio tare da blog", orchestrator yana raba wannan babban buri zuwa **tsari** mai tsari, yana gano plugins da ake buƙata don cika shi, yana aiwatar da kowane mataki a jere, yana bin diddigin ci gaba, kuma yana murmurewa daga kurakurai kai tsaye.
 

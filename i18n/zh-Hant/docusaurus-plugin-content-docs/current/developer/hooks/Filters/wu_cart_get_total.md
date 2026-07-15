@@ -4,7 +4,7 @@ title: 過濾器 - wu_cart_get_total
 sidebar_label: wu_cart_get_total
 _i18n_hash: 72d9429a9eaa08472baafef395dd7138
 ---
-# 篩選器：wu_cart_get_total {#filter-wucartgettotal}
+# 篩選器：wu_cart_get_total
 
 用於篩選「初始金額」總額。
 

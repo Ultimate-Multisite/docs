@@ -3,7 +3,7 @@ title: Siti mallid
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Veebilehedid (v2) {#site-templates-v2}
+# Veebilehedid (v2)
 
 _**MÄÄRKE: See artikli viitab Ultimate Multisite versioon 2.x. Kui kasutate versiooni 1.x,**_ **vaata seda artiklit.**_
 

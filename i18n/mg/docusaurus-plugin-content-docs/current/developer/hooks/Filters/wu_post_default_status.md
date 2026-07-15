@@ -4,7 +4,7 @@ title: Sivana - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Sivana: wu_post_default_status {#filter-wupostdefaultstatus}
+# Sivana: wu_post_default_status
 
 Manivana ny angon-drakitra an’ilay zavatra alohan’ny hitahirizana azy ao amin’ny tahiry angona.
 

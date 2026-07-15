@@ -3,7 +3,7 @@ title: Diiwaanka Isbeddellada Iibiyaha Domain-ka
 sidebar_position: 99
 _i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Diiwaanka Isbeddellada {#domain-seller-changelog}
+# Domain Seller Diiwaanka Isbeddellada
 
 Nooca 1.3.0 - La sii daayay 2026-06-02
 - Cusub: Waxaa lagu daray digniin network-admin ah marka hadhaaga reseller-ka HostAfrica uu aad u hooseeyo

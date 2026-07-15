@@ -3,7 +3,7 @@ title: ادغام با هاستینگر (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# ادغام با Hostinger (hPanel) {#hostinger-hpanel-integration}
+# ادغام با Hostinger (hPanel)
 
 ## نمای کلی {#overview}
 

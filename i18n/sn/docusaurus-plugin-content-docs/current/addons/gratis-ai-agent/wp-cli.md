@@ -3,7 +3,7 @@ title: WP-CLI Chirevo
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Referensi yeWP-CLI {#wp-cli-reference}
+# Referensi yeWP-CLI
 
 Gratis AI Agent inouya nemhuri yemirairo ye`wp gratis-ai-agent` yekuyera mashandiro eajenti, kutarisira hunyanzvi, uye kubvunza chimiro cheajenti kubva pamutsetse wemirairo. Mirairo yose inoda WP-CLI 2.0 kana yepamusoro.
 

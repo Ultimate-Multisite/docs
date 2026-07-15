@@ -3,7 +3,7 @@ title: GoCardless Lenane la liphetoho
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Changelog ea GoCardless {#gocardless-changelog}
+# Changelog ea GoCardless
 
 Mofuta: 1.0.3 - E lokollotsoe ka 2026-05-05
 * Tokiso: Libaka tse emetseng tse se nang mong’a tsona joale lia hloekisoa ha membership ea GoCardless e hlakoloa ha e ntse e le boemong ba ho emela kapa ba ho emisoa

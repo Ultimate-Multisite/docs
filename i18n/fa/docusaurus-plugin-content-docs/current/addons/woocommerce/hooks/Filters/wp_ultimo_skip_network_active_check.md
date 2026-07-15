@@ -4,7 +4,7 @@ title: فیلتر - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: e2f5feea7c780608ddb520691a69fea8
 ---
-# فیلتر: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# فیلتر: wp_ultimo_skip_network_active_check
 
 این فیلتر به توسعه‌دهندگان اجازه می‌دهد تا بررسی فعال بودن شبکه (network activation check) را نادیده بگیرند (short-circuit کنند).
 

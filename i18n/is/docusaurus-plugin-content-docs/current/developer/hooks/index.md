@@ -3,7 +3,7 @@ title: Tilvísun fyrir hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tilvísun fyrir hooks {#hooks-reference}
+# Tilvísun fyrir hooks
 
 Sjálfvirkt búin til skjölun fyrir allar **59 aðgerðir** og **118 síur** í Ultimate Multisite.
 

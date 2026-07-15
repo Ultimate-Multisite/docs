@@ -3,7 +3,7 @@ title: ڕێگای سەرەتایی Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flowa Yeknîna Theme Builder-e {#theme-builder-onboarding-flow}
+# Flowa Yeknîna Theme Builder-e
 
 Superdav AI Agent v1.12.0 introduces një **flow të udhëhequr të onboarding-it për Theme Builder** që ju ndihmon të krijoni një temë bloku të personalizuar gjatë konfigurimit fillestar. Kjo zëvendëson modin e mëparshëm Site Builder me një qasje më fleksibël, mbështetur nga agenti.
 

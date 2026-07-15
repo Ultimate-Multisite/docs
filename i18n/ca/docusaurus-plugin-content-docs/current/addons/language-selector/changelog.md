@@ -3,7 +3,7 @@ title: Registre de canvis del Selector de Llengua
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Diari de canvis del Selector de Idiomes {#language-selector-changelog}
+# Diari de canvis del Selector de Idiomes
 
 Versió: 1.1.3 - Publicat el 2026-05-05
 * Correcció: Les variables d'entrada estan ara sanejades i els noms de hooks personalitzats estan prefixats per prevenir conflictes amb plugins de terceres parts.

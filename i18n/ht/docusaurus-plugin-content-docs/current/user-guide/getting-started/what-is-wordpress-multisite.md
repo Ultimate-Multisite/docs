@@ -3,7 +3,7 @@ title: Ki sa se WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Ki sa WordPress Multisite? {#what-is-wordpress-multisite}
+# Ki sa WordPress Multisite?
 
 Nan kòrè WordPress la gen yon fonksyon ki rele ‘Multisite’ (Multisite). Fonksyon sa a te vini nan 2010 lè lansman WordPress 3.0. Depi la, li te gen plizyè revizyon pou ajoute nouvo fonksyon epi fè sekirite pi fò.
 

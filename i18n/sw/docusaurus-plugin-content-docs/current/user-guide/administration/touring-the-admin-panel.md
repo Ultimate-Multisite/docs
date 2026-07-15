@@ -3,7 +3,7 @@ title: Kutembelea Paneli ya Msimamizi
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Kutembelea Paneli ya Admin {#touring-the-admin-panel}
+# Kutembelea Paneli ya Admin
 
 Ultimate Multisite inalenga kuwa rahisi na inayoeleweka yenyewe kadiri iwezekanavyo, lakini kwa zana yenye nguvu hivi inaweza kusaidia kuwa na ziara iliyoongozwa. Hebu tupitie kurasa za admin ili kukusaidia kuelewa mahali ulipo.
 

@@ -3,7 +3,7 @@ title: ସାଇବରପାନେଲ୍ ଏଣ୍ଟିଗ୍ରେସନ୍
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel ସହିତ ଏକୀକରଣ (Integration) {#cyberpanel-integration}
+# CyberPanel ସହିତ ଏକୀକରଣ (Integration)
 
 ଏହି ଗାଇଡ୍‌ରେ ଆପଣଙ୍କ ନେଟୱାର୍କରେ ମ୍ୟାପ୍ କରାଯାଇଥିବା ଡୋମେନ୍ଗୁଡ଼ିକୁ ଅଟୋମେଟିକ୍ ଭାବରେ CyberPanel-ରେ ବର୍ଚୁଆଲ୍ ହୋଷ୍ଟ (virtual host) ଭାବରେ ଯୋଡ଼ିବା ଏବଂ ଉପଯୁକ୍ତ ସ୍ୱୟଂଚାଳିତ SSL ପ୍ରଭେସନ (Let's Encrypt ମାଧ୍ୟମରେ) କରିବା ପାଇଁ Ultimate Multisite CyberPanel integration କିପରି କନଫିଗ୍ୟୁରେଟ କରିବ ବୋଲି ବୁଝାଏ।
 

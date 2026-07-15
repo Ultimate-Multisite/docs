@@ -3,7 +3,7 @@ title: Inkompatibilite Konnen
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Inkompatibilite Konnè ak lòt Plugins {#known-incompatibilities-with-other-plugins}
+# Inkompatibilite Konnè ak lòt Plugins
 
 Malgre ou mete epi aktive Ultimate Multisite, ou ka jwenn pwoblèm paske gen inkompatibilite ki pa rezoud avèk lòt plugins.
 

@@ -3,7 +3,7 @@ title: Panel ko'rinishi umumiy ko'rinishi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Ko'rinishi {#dashboard-overview}
+# Dashboard Ko'rinishi
 
 Ultimate Multisite menyusi ostida maxsus **Dashboard** mavjud bo'ladi, shuningdek, Network Dashboardga widgetlar qo'shadi. Bu maqolada siz ikkala joyda nimalarni ko'rishingiz mumkinligi haqida ma'lumot beriladi.
 

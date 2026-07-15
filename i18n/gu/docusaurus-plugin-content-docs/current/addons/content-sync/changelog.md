@@ -3,7 +3,7 @@ title: સામગ્રી સિંક ફેરફારની નોંધ
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# કન્ટેન્ટ Sync ફેરફારની નોંધ {#content-sync-changelog}
+# કન્ટેન્ટ Sync ફેરફારની નોંધ
 
 ### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * નવું: બધા પોસ્ટ પ્રકારો (posts, pages, custom post types) sync કરવા માટે સપોર્ટ.

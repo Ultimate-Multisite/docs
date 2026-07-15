@@ -3,7 +3,7 @@ title: Mga Produkto at Pagpepresyo ng Domain
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Products at Pagpepresyo {#domain-products-and-pricing}
+# Domain Products at Pagpepresyo
 
 Ang mga domain product ay kung paano mo kokontrolin ang pagpepresyo, TLDs, WHOIS privacy, at ang pagpili ng provider. Ang bawat domain product ay isang standard Multisite Ultimate product na may dagdag na tab na **Domain Settings**.
 

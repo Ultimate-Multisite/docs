@@ -3,7 +3,7 @@ title: Unsa ang WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Unsa ang WordPress Multisite? {#what-is-wordpress-multisite}
+# Unsa ang WordPress Multisite?
 
 Sa sulod sa core ni WordPress, adunay feature nga gitawag og ‘Multisite’ nga nag-ugat kini pa balik sa 2010 paglunsad sa WordPress 3.0. Sukad niadto, nakadawat kini og daghang revisions aron magdala og bag-ong features ug mas kusog nga seguridad.
 

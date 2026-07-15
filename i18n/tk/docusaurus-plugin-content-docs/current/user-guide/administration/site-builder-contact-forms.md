@@ -3,7 +3,7 @@ title: Sayt Qurýjy Kontakt Formalary
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Sayt Qurýjy Formalary {#site-builder-contact-forms}
+# Sayt Qurýjy Formalary
 
 Superdav AI Agent v1.10.0, Site Builder agentini ulanyp chat arxalygyndan (chat interface) ýüzlenip sazlaşykly kontakt formalar döretmek mümkinçiligini goşdirýär. Bu, chatdan çykmasa hem her bir sahka üçin toly işje edýän kontakt formalary goşmaga bolýar.
 

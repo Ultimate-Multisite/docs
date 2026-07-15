@@ -3,7 +3,7 @@ title: Kugira ngo Umeze Umuco w'Ubutumwa?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Nini Ubuto mu Ultimate Multisite {#why-ultimate-multisite}
+# Nini Ubuto mu Ultimate Multisite
 
 Uziye yifite ubutumwa bwo kumenya ko plugin yetu yashobora kuba ari usobanuro kugira ngo ubucuruzi bwawe bukurirwe. Turakoze ko wari ufite ibyo ukeneye ku gikorwa cy'ibindi byo mu gihe cy'ikiwe.
 

@@ -3,7 +3,7 @@ title: Ymddygiad ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Ymddianol ServerPilot {#serverpilot-integration}
+# Ymddianol ServerPilot
 
 ## Cyflwyniadau {#overview}
 ServerPilot yw serfys o fylfach ar gyfer cyflenwi WordPress a wefan PHP eraill ar serverau DigitalOcean, Amazon, Google neu unrhyw darparwr server. Mae'r y cyflenwi hwn yn sylfaenu'r synchiad domenaidd a'r rheoli certysydd SSL rhwng Ultimate Multisite a ServerPilot.

@@ -3,7 +3,7 @@ title: Referenca postavki
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenca postavki {#settings-reference}
+# Referenca postavki
 
 Ova stranica prati postavke koje utiču na svakodnevnu administraciju i nedavne promjene ponašanja u Ultimate Multisite.
 

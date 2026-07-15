@@ -4,7 +4,7 @@ title: कार्य - wu_page_added
 sidebar_label: wu_page_added
 _i18n_hash: 47cfb26ef6002a24fecf13a0771771ce
 ---
-# कार्य: wu_page_added {#action-wupageadded}
+# कार्य: wu_page_added
 
 प्लगइन विकासकर्ताहरूलाई पृष्ठहरू दर्ता हुँदा थप कुराहरू चलाउन अनुमति दिन्छ।
 

@@ -3,7 +3,7 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (jo Gratis AI Agent v1.4.0 vich introduce hoya hai) woh engine hai jo multi-step website banane ki shakti deta hai. Jadon tusi agent nu "restaurant di website banao" ya "blog naal portfolio banao" kehnde ho, taan orchestrator us bade lakshya nu ek sanrachit **plan** vich tod dinda hai, oh plugins khojda hai jo us nu poora karan layi zaroori ne, har step nu kram (sequence) vich chalaunda hai, progress track karda hai, ate galti hone te khud-ba-khud theek karda hai.
 

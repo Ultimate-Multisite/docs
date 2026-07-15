@@ -4,7 +4,7 @@ title: ක්‍රියාව - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# ක්‍රියාව: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
+# ක්‍රියාව: wp_ultimo_captcha_activation
 
 ප්ලගිනයේ අනෙකුත් කොටස්ට සක්‍රිය කිරීම සඳහා තම රූටීන අමුණා ගැනීමට ඉඩ දෙන්න
 

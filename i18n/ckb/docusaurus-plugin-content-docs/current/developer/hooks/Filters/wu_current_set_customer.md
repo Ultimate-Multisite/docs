@@ -4,7 +4,7 @@ title: پاڵێوەر - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# فلتەر: wu_current_set_customer {#filter-wucurrentsetcustomer}
+# فلتەر: wu_current_set_customer
 
 ڕێگە بە گەشەپێدەران دەدات هەڵسوکەوتی بنەڕەتی بگۆڕن و کڕیاری ئێستا بە شێوەیەکی جیاواز دابنێن.
 

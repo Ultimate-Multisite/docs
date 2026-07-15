@@ -4,7 +4,7 @@ title: Tallaabo - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Fal: update_network {#action-updatenetwork}
+# Fal: update_network
 
 Waxay dhacdaa ka dib marka shabakad jirta la cusboonaysiiyo.
 

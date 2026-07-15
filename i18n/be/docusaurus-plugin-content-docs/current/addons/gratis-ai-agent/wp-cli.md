@@ -3,7 +3,7 @@ title: WP-CLI Указальнік
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference {#wp-cli-reference}
+# WP-CLI Reference
 
 Plugin gratis AI Agent прадугледжвае сям'ю каманд `wp gratis-ai-agent` для праводзіння тэставання агента, кіравання яго здольнасцямі (abilities) і азначэння яго статусу з каманднай кропкі. Усе каманды патрабуюць WP-CLI 2.0 або больш высокай версіі.
 

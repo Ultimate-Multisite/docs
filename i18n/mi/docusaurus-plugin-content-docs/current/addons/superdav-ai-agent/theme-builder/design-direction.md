@@ -3,7 +3,7 @@ title: Aronga Hoahoa
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Aronga Hoahoa {#design-direction}
+# Aronga Hoahoa
 
 Mā te taahiraa **Aronga Hoahoa** koe e āhei ai ki te arotake, ki te whakapai, ki te whakaoti hoki i te hoahoa ā-kanohi o tō theme i mua i tā Theme Builder whakaputa i te theme katoa.
 

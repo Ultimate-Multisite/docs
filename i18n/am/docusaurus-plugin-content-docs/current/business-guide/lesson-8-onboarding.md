@@ -3,7 +3,7 @@ title: ትምህርት 8፡ የደንበኛ መጀመርያ
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# ትምህርት 8፡ የደንበኛ መግባቢያ ሂደት (Customer Onboarding) {#lesson-8-customer-onboarding}
+# ትምህርት 8፡ የደንበኛ መግባቢያ ሂደት (Customer Onboarding)
 
 ደንበኛን መመዝገብ ግማሽ ስራ ብቻ ነው። ሲገባ፣ ሲጨናነቅ፣ እና እንደገና ካልመጣዎት፣ አጥተዋል። ይህ ትምህርት አዲስ መመዝገቢያን ወደ ንቁ እና ተሳታፊ ደንበኛነት የሚቀይር ተሞክሮን ይቀርጻል።
 

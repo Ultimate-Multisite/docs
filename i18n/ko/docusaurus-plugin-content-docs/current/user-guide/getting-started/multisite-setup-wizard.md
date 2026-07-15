@@ -3,7 +3,7 @@ title: 멀티사이트 설정 마법사
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# 멀티사이트 설정 마법사 {#multisite-setup-wizard}
+# 멀티사이트 설정 마법사
 
 Ultimate Multisite에는 기본 내장 마법사가 포함되어 있어 일반 WordPress 설치를 WordPress 멀티사이트 네트워크로 자동 변환합니다. 이를 통해 `wp-config.php`를 수동으로 편집하거나 데이터베이스 명령을 실행할 필요가 없습니다.
 

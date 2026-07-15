@@ -3,7 +3,7 @@ title: Nkwado na Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Tour Through Admin Panel {#touring-the-admin-panel}
+# Tour Through Admin Panel
 
 Ultimate Multisite na-akọrọ ịbụkọchịta dị kama ọpụrụ ego ma a-akọrọ ihe bụ ihe ndị ahụ, onye na-agba n'ime ihe a dị nwere ike ịkpọka okwu. Ka anyị gidi ya n'ime akụkọchịta admin ahụ ka maka gị ịbụ n'ime ihe ndị a.
 

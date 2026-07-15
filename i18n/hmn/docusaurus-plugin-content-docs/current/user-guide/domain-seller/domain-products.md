@@ -3,7 +3,7 @@ title: Tswv thiab Txoj Hauj Coj thiab Txoj Txhais
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# ຜະລິດຕະພັນລາຄາໂດເມນ (Domain Products and Pricing) {#domain-products-and-pricing}
+# ຜະລິດຕະພັນລາຄາໂດເມນ (Domain Products and Pricing)
 
 ຜະລິດຕະພັນໂດເມນແມ່ນວິທີທີ່ເຈົ້າຄວບຄຸມລາຄາ, TLDs (Top-Level Domains), ຄວາມເປັນສ່ວນຕົວຂອງ WHOIS, ແລະ ການເລືອກຜູ້ໃຫ້ບໍລິການ. ຜະລິດຕະພັນໂດເມນແຕ່ລະຢ່າງແມ່ນຜະລິດຕະພັນ Multisite Ultimate ມາດຕະຖານທີ່ມີ tab ເພີ່ມເຕີມຊື່ວ່າ **Domain Settings**.
 

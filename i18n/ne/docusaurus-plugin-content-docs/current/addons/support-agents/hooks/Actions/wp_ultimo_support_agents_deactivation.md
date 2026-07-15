@@ -4,7 +4,7 @@ title: कार्य - wp_ultimo_support_agents_deactivation
 sidebar_label: wp_ultimo_support_agents_deactivation
 _i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
 ---
-# Action: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+# Action: wp_ultimo_support_agents_deactivation
 
 plugin का अन्य भागहरूलाई निष्क्रियकरणका लागि आफ्ना routines संलग्न गर्न दिनुहोस्
 

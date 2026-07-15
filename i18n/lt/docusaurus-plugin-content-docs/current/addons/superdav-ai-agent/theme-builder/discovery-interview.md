@@ -3,7 +3,7 @@ title: Pažintinis interviu
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Atradimo interviu {#discovery-interview}
+# Atradimo interviu
 
 **Atradimo interviu** yra pirmasis žingsnis Theme Builder dizaino procese. Jis surenka informaciją apie jūsų svetainę, verslą ir dizaino pageidavimus, kad būtų sukurta suasmeninta tema.
 

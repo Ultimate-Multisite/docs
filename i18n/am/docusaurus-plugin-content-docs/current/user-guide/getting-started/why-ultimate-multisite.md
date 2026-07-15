@@ -3,7 +3,7 @@ title: የUltimate Multisite ለምን?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# የUltimate Multisite አስፈላጊነት {#why-ultimate-multisite}
+# የUltimate Multisite አስፈላጊነት
 
 ወደዚህ ጽሑፍ የመጡ ከሆነ፣ የፕልጊኑአችን የእርስዎን የንግድ ሀሳብ እውን ለማድረግ መፍትሔ ሊሆን እንደሚችል ሰምተዋል ምናልባት። በዚህ ክፍል መጨረሻ ላይ የሚያስፈልጉዎትን መልሶች ተስፋ እናደርጋለን።
 

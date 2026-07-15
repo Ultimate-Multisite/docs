@@ -3,7 +3,7 @@ title: Kreiranje kodova popusta
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kreiranje popusta (v2) {#creating-discount-codes-v2}
+# Kreiranje popusta (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 

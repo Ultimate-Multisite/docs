@@ -3,7 +3,7 @@ title: Prevođenje Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Prevođenje Ultimate Multisite-a {#translating-ultimate-multisite}
+# Prevođenje Ultimate Multisite-a
 
 Ultimate Multisite je razvijen na engleskom, ali je plugin potpuno prevediv i rado prihvatamo doprinose prevoda.
 

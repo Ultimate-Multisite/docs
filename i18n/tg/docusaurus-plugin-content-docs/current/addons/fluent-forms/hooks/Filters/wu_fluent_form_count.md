@@ -4,7 +4,7 @@ title: Филтр - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Филтр: wu_fluent_form_count {#filter-wufluentformcount}
+# Филтр: wu_fluent_form_count
 
 Ба таҳиягарони plugin иҷозат медиҳад, ки шумораи умумии формаҳоро тағйир диҳанд
 

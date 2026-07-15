@@ -3,7 +3,7 @@ title: ग्रिडपेन एकीकरण
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane एकीकरण {#gridpane-integration}
+# GridPane एकीकरण
 
 ## अवलोकन {#overview}
 GridPane भनेको गम्भीर वर्डप्रेस प्रफेशनल्सका लागि बनाइएको एउटा विशेष वर्डप्रेस होस्टिङ कन्ट्रोल प्यानल हो। यो एकीकरणले Ultimate Multisite र GridPane बीच डोमेन सिङ्क्रनाइजेसन (automatic domain syncing) र SSL प्रमाणपत्र व्यवस्थापनलाई स्वचालित बनाउँछ।

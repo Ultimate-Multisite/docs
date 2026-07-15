@@ -3,7 +3,7 @@ title: Material WP Változatok Jegyzéke
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP Changelog {#material-wp-changelog}
+# Material WP Changelog
 
 Verzió 1.1.15 - 2026. 01. 26.
 * Jobbított: A kód stílusa és formázása;

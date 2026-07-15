@@ -3,7 +3,7 @@ title: Gadzira Menyu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Gadzira Menyu {#create-menu}
+# Gadzira Menyu
 
 Kugona kwe **Gadzira Menyu** kunogadzira menyu dzekufambisa dzeWordPress dzine rutsigiro rwemazita ekufambisa akasiyana nemisoro yemapeji.
 

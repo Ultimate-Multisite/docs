@@ -3,7 +3,7 @@ title: Webhookien käsittely
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook-käsittely {#webhook-handling}
+# Webhook-käsittely
 
 Luo mukautettuja webhook-päätepisteitä vastaanottamaan tapahtumia ulkoisista palveluista ja synkronoimaan dataa Ultimate Multisite kanssa.
 

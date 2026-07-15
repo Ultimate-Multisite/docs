@@ -3,7 +3,7 @@ title: MailChimp интеграциясы
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# MailChimp Интеграция {#mailchimp-integration}
+# MailChimp Интеграция
 
 Бул функция **Mailchimp** плагини аркылуу камсыз кылынат.
 

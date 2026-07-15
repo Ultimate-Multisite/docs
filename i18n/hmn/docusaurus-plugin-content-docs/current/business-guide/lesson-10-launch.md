@@ -3,7 +3,7 @@ title: 'Loj 10: Ngau Txhais'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lesson 10: Launch Day {#lesson-10-launch-day}
+# Lesson 10: Launch Day
 
 Txhua yam tsis muaj. Haiv neeg tshawb, le lesson no 10 no tshawb txog pre-launch checklist kom tshawb ti tsis muaj yam tsis zoo, tsis muaj yam tsis muaj, lossis tsis zoo li.
 

@@ -4,7 +4,7 @@ title: Filtru - wu_get_membership_allowed_forms
 sidebar_label: wu_get_membership_allowed_forms
 _i18n_hash: b8668343a54b36b05c907d4bf02a8ae9
 ---
-# Filtru: wu_get_membership_allowed_forms {#filter-wugetmembershipallowedforms}
+# Filtru: wu_get_membership_allowed_forms
 
 Permite dezvoltatorilor să adauge noi *slug*-uri de formular pentru a ocoli acest comportament.
 

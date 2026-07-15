@@ -3,7 +3,7 @@ title: 'Ẹ̀kọ́ 3: Ṣíṣètò Nẹ́tíwọ́ọ̀kì Rẹ'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Ẹ̀kọ́ 3: Ṣíṣètò Nẹ́tíwọ́ọ̀kì Rẹ {#lesson-3-setting-up-your-network}
+# Ẹ̀kọ́ 3: Ṣíṣètò Nẹ́tíwọ́ọ̀kì Rẹ
 
 Àkókò láti kọ́ ọ. Nínú ẹ̀kọ́ yìí, ìwọ yóò fi Ultimate Multisite sílẹ̀, kí o sì ṣètò ìpìlẹ̀ nẹ́tíwọ́ọ̀kì FitSite. Gbogbo ìpinnu níbí ni a ṣe pẹ̀lú niche amọdájú ara ní lokàn.
 

@@ -3,7 +3,7 @@ title: Àkọsílẹ̀ àwọn ìyípadà Ọ̀pọ̀-Nẹ́tíwọ́ọ̀kì
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Àkọsílẹ̀ Àyípadà Ọ̀pọ̀-Nẹ́tíwọ́ọ̀kì {#multi-network-changelog}
+# Àkọsílẹ̀ Àyípadà Ọ̀pọ̀-Nẹ́tíwọ́ọ̀kì
 
 ### 1.3.0 {#130}
 * Tuntun: Olùṣàfihàn àwòkọ́ṣe nẹ́tíwọ́ọ̀kì — ṣàwárí kí o sì ṣàfihàn àkọ́kọ́ àwọn àwòkọ́ṣe nẹ́tíwọ́ọ̀kì pẹ̀lú panel alààyè ṣáájú rírà.

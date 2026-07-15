@@ -3,7 +3,7 @@ title: Ujuzi wa Mahitaji ya Tovuti
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Ujuzi wa Kuainisha Tovuti (Site Specification Skill) {#site-specification-skill}
+# Ujuzi wa Kuainisha Tovuti (Site Specification Skill)
 
 **Ujuzi wa Kuainisha Tovuti** ni mbinu iliyo mpangiliwa ya kukamata malengo ya tovuti yako, wateja wako, na utambulisho wa chapa yako. Taarifa hizi hihifadhiwa katika kumbukumbu yako ya **site_brief**, ambayo agents hutumia katika vipindi mbalimbali ili kutoa msaada unaoendana na muktadha na unaoendelea kuwa thabiti.
 

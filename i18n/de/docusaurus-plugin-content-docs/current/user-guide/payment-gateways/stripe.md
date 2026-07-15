@@ -3,7 +3,7 @@ title: Stripe einrichten
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Einrichten des Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
+# Einrichten des Stripe Gateway (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

@@ -3,7 +3,7 @@ title: Kassafält och kund-DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout-fält och kundens DNS-hantering {#checkout-field-and-customer-dns-management}
+# Checkout-fält och kundens DNS-hantering
 
 ## Checkout-fältet Domain Selection {#the-domain-selection-checkout-field}
 

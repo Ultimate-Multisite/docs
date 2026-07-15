@@ -3,7 +3,7 @@ title: Migrað í þriðja markaðarmiðli
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrað til þriðja markaðsmiði (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrað til þriðja markaðsmiði (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 breytir hámarkshátt að því að þriðja markaðsmiðil sé skipt á. **Þriðja markaðsmiður eru nú sett á "auto" með default**, sem gerir mögulega nákvæma samþættingar við WordPress Abilities API í WordPress 7.0+ án þess að þarf manuelle uppsetningu.
 

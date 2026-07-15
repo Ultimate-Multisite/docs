@@ -3,7 +3,7 @@ title: 'Lección 7: Facéndoo teu'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lección 7: Facelo teu {#lesson-7-making-it-yours}
+# Lección 7: Facelo teu
 
 Os teus clientes nunca deberían sentir que están usando "algún plugin de WordPress." Deberían sentir que están usando FitSite: unha plataforma creada para o seu sector. Esta lección cobre a marca, o white-labeling e como facer que a plataforma se sinta como un produto.
 

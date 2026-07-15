@@ -3,7 +3,7 @@ title: Giya sa Paggamit sa Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Giya sa Paggamit sa Hooks {#hooks-usage-guide}
+# Giya sa Paggamit sa Hooks
 
 Ang Ultimate Multisite naghatag og labaw pa sa 200+ action hooks ug 280+ filter hooks. Kini nga page naghisgot sa mga hook nga kasagarang gamiton uban ang praktikal nga mga pananglitan. Para sa kompleto nga reference nga gi-generate awtomatiko, palihog magtan-aw sa ubang mga pahina niini nga seksyon.
 

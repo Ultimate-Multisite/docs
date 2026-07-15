@@ -3,7 +3,7 @@ title: Дневник измена интеграције са WooCommerce
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Евиденција измена WooCommerce интеграције {#woocommerce-integration-changelog}
+# Евиденција измена WooCommerce интеграције
 
 Верзија 2.2.0 - Објављено 2026-07-01
 * Ново: Ultimate Multisite износи пореза сада се приказују као засебне WooCommerce ставке накнада при плаћању, чинећи укупне износе пореза јаснијим пре плаћања.

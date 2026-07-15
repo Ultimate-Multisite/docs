@@ -3,7 +3,7 @@ title: Pleniĝu la integradon kun la kontrolpaneli
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Pleni Kontrolpanel Integracion {#enhance-control-panel-integration}
+# Pleni Kontrolpanel Integracion
 
 ## Rezumi {#overview}
 Enhance estas moderna kontrolpanel, kiu donas potentes funkciojnajn aŭtomataj kaj administrajn kapablitajn. Ĉi tiu integracio permesas aŭtomatan domen sincronigon kaj SSL-sertifikatoj laĉon inter Ultimate Multisite kaj Enhance Control Panel.

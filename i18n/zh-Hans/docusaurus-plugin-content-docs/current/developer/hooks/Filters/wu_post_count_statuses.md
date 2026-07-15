@@ -4,7 +4,7 @@ title: 过滤 - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# 过滤器: wu_post_count_statuses {#filter-wupostcountstatuses}
+# 过滤器: wu_post_count_statuses
 
 允许插件开发者更改应计数的文章状态。默认情况下，已发布和私有文章会被计数。
 

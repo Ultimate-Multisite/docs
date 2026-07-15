@@ -3,7 +3,7 @@ title: GitHub-udsnit
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Sådan bruger du Ultimate Multisite snippets i dit GitHub repository {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
+# Sådan bruger du Ultimate Multisite snippets i dit GitHub repository
 
 Der findes kodeudsnit i GitHub repository, som ofte bliver anmodet af brugere af Ultimate Multisite, der ønsker at tilføje små funktioner som f.eks. at indsætte Google Analytics script på registreringssider eller skjule en meta box fra admin-dashboardet.
 
@@ -19,7 +19,7 @@ Der er 2 måder, du kan tilføje koden på:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Sådan tilføjer du udskriften i din themes functions.php fil. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
+# Sådan tilføjer du udskriften i din themes functions.php fil.
 
   1. Log ind på dit WordPress Network admin dashboard og gå til Themes > Theme Editor (se skærmbillede nedenfor).
 
@@ -29,7 +29,7 @@ Der er 2 måder, du kan tilføje koden på:
 
 <!-- Skærmbillede utilgængeligt: WordPress Theme Editor der viser redigering af functions.php fil -->
 
-# Sådan opretter du Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
+# Sådan opretter du Must-Use Plugins (mu-plugins)
 
 WordPress har en funktion, der lader dig indlæse specialfunktionalitet kaldet "Must-Use Plugins", eller forkortet "mu-plugins".
 

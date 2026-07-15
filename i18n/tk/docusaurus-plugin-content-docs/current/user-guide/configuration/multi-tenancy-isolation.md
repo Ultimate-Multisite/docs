@@ -3,7 +3,7 @@ title: Çoklu-tenant izolýasiýa
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Çoklu Kiracılar Arasından Ayırma (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Çoklu Kiracılar Arasından Ayırma (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, öz bağımsız kiracılar (sovereign tenants) için her alt siteye özel veritabanı ve dosya sistemi izolasyonunu destekler. Bu, kiracı verilerini birbirinden ayırırken ağ düzeyindeki sağlama (provisioning), faturalandırma ve yönetim özelliklerini korur.
 

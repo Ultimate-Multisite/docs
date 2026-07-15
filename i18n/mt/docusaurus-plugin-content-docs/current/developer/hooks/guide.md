@@ -3,7 +3,7 @@ title: Gwida għall-Użu tal-Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gwida għall-Użu tal-Hooks {#hooks-usage-guide}
+# Gwida għall-Użu tal-Hooks
 
 Ultimate Multisite jipprovdi aktar minn 200 action hooks u aktar minn 280 filter hooks. Din il-paġna tkopri l-hooks l-aktar użati b’eżempji prattiċi. Għal referenza kompluta ġġenerata awtomatikament, ibbrawżja l-paġni l-oħra f’din it-taqsima.
 

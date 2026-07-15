@@ -3,7 +3,7 @@ title: یەکگرتووکردنی پۆلێپەری ھێستییا
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integration with Control Panel Hestia {#hestia-control-panel-integration}
+# Integration with Control Panel Hestia
 
 ئەم ڕێنماییە دەڵێت چۆن تنظیم بکەیت یەکگرتوویی Ultimate Multisite و Hestia بە شێوەیەکی ئۆتۆماتیک کاریگەریی دۆمنەکان لە تۆڕەکەت (هەڵگرتن و نەهەڵگرتن) وەکو Web Domain Aliases لە Hestia زیاد بکات.
 

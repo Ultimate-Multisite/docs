@@ -4,7 +4,7 @@ title: פילטר - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# מסנן: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
+# מסנן: get_site_url_for_previewer
 
 מאפשר למפתחי תוספים לסנן את ה-URL המשמש במציג המקדים (Previewer).
 

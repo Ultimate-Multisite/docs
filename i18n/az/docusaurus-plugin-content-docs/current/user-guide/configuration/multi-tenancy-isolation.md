@@ -3,7 +3,7 @@ title: ÇoxMənzilli İzolasiya
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Çox-Mənzillik İzolasiyası (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
+# Çox-Mənzillik İzolasiyası (Multi-Tenancy Isolation)
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 müstəqil mənzillər üçün hər alt sayt üçün verilənlər bazası və fayl sisteminin izolasiyasını dəstəkləyir. Bu, mənzilin məlumatlarını ayırara və şəbəkə səviyyəsində təminat, fatura və idarəetməni qoruyaraq saxlayır.
 

@@ -3,7 +3,7 @@ title: Addasu eich ffurflen gofrestru
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Addasu eich Ffurflen Gofrestru {#customizing-your-registration-form}
+# Addasu eich Ffurflen Gofrestru
 
 I wneud i’ch rhwydwaith edrych yn unigryw o’i gymharu â’r holl SaaS eraill sydd wedi’u hadeiladu ar blatfform WordPress, mae Ultimate Multisite yn caniatáu i chi addasu eich tudalennau cofrestru a mewngofnodi gyda’n nodwedd **Checkout Forms**.
 

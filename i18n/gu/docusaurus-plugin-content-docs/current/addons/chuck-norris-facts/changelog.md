@@ -3,7 +3,7 @@ title: ચક નોર્સ ફેક્ટ્સ ચેન્જલોગ
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# ચક નોર્સ ફેક્ટ્સ ચેન્જલોગ {#chuck-norris-facts-changelog}
+# ચક નોર્સ ફેક્ટ્સ ચેન્જલોગ
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * ઉમેર્યું: Ultimate Multisite update server દ્વારા સ્વચાલિત અપડેટ કાર્યક્ષમતા

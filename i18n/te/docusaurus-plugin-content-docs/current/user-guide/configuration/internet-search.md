@@ -3,7 +3,7 @@ title: ఇంటర్నెట్ శోధన
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# ఇంటర్నెట్ సెర్చ్ {#internet-search}
+# ఇంటర్నెట్ సెర్చ్
 
 Gratis AI Agent v1.5.0 లో **ఇంటర్నెట్ సెర్చ్** సామర్థ్యం జోడించబడింది. ఇది AI అసిస్టెంట్‌కు సంభాషణ సమయంలో వెబ్ నుండి తాజా సమాచారాన్ని తిరిగి పొందే (retrieve) సామర్థ్యాన్ని ఇస్తుంది. ఇది [Brave Search API](https://brave.com/search/api/) లేదా [Tavily API](https://tavily.com/) ద్వారా నడుస్తుంది.
 

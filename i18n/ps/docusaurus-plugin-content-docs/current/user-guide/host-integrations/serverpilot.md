@@ -3,7 +3,7 @@ title: سرورپایلوټ همغږي
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integration {#serverpilot-integration}
+# ServerPilot Integration
 
 ## مروری (Overview) {#overview}
 ServerPilot دا سټورینګ لپاره یو cloud service دی چې WordPress او نورو PHP ویب سائټहरू د DigitalOcean، Amazon، Google یا هر بل سرور پر سرورونه کې ځای ورکوي. دا همغږي کار تاسو ته Ultimate Multisite او ServerPilot ترمنځ خودکار د دامین syncing او SSL certificate management اجازه ورکوي.

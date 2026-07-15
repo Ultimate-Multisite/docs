@@ -3,7 +3,7 @@ title: Kev teeb tsa kev them nyiaj ua los ntawm tes
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Teeb Tsa Kev Them Nyiaj Ntawm Tes (v2) {#setting-up-manual-payments-v2}
+# Teeb Tsa Kev Them Nyiaj Ntawm Tes (v2)
 
 _**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 

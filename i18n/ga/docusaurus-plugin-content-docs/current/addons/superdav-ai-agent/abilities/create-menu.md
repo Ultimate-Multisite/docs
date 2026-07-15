@@ -3,7 +3,7 @@ title: Cruthaigh Roghchlár
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Cruthaigh Roghchlár {#create-menu}
+# Cruthaigh Roghchlár
 
 Cruthaíonn cumas **Cruthaigh Roghchlár** roghchláir nascleanúna WordPress le tacaíocht do lipéid nascleanúna ar leith atá scartha ó theidil leathanach.
 

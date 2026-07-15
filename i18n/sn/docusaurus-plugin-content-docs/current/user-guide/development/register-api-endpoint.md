@@ -3,7 +3,7 @@ title: Rendera API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint ya Register API ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
+# Endpoint ya Register API ya Ultimate Multisite
 
 Muviri wechinyorwa uyu tutorial, munaona kuti ndikubatsira kuenda sei nemashoko anogona kuita onboarding wese wekudzidzwa kwemutauro wekudzidzwa (onboarding process) kwemumbe wedu wekufamba neUltimate Multisite /register API endpoint uye sei kunoita iye neZapier.
 

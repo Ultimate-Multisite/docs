@@ -3,7 +3,7 @@ title: Keeb Kwm Hloov Tshiab ntawm Daim Pib Txhawb Nqa
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Daim Ntawv Hloov Pauv Support Tickets {#support-tickets-changelog}
+# Daim Ntawv Hloov Pauv Support Tickets
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Txhim kho: Tshem vendor/ directory tawm ntawm Git tracking (twb muaj nyob hauv .gitignore lawm), pab txo repository loj

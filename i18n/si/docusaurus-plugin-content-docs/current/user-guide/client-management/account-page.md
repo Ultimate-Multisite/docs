@@ -3,7 +3,7 @@ title: සේවාදායක ගිණුම් පිටුව
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# ඔබගේ සේවාදායකයාගේ ගිණුම් පිටුව (v2) {#your-clients-account-page-v2}
+# ඔබගේ සේවාදායකයාගේ ගිණුම් පිටුව (v2)
 
 _**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite version 2.x සම්බන්ධ වේ.**_
 

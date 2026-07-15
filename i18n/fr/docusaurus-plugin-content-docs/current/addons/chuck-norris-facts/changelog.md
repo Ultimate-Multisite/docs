@@ -3,7 +3,7 @@ title: Changelog des faits Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts Journal des modifications {#chuck-norris-facts-changelog}
+# Chuck Norris Facts Journal des modifications
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Ajouté : Fonctionnalité de mise à jour automatique via Ultimate Multisite update server

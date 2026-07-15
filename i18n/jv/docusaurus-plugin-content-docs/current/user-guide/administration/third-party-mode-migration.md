@@ -3,7 +3,7 @@ title: Migrasi Mode Pihak Ketiga
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrasi Mode Pihak Ketiga (Third-Party Mode Migration) {#third-party-mode-migration}
+# Migrasi Mode Pihak Ketiga (Third-Party Mode Migration)
 
 Superdav AI Agent v1.12.0 ngubah cara kemampuan pihak ketiga ditangani. **Mode pihak ketiga saiki otomatis**, ngaktifkan integrasi WordPress Abilities API asli di WordPress 7.0+ tanpa perlu konfigurasi manual.
 

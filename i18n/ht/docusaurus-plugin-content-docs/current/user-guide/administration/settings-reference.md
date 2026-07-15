@@ -3,7 +3,7 @@ title: Referans Anviwònman
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referans Settings {#settings-reference}
+# Referans Settings
 
 Paj sa a swiv settings ki afekte administrasyon chak jou ak chanjman resan nan konpòtman nan Ultimate Multisite.
 

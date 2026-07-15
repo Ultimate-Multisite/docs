@@ -4,7 +4,7 @@ title: Suodatin - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Suodatin: wu_country_get_cities {#filter-wucountrygetcities}
+# Suodatin: wu_country_get_cities
 
 Palauttaa maan osavaltion kaupunkien luettelon.
 

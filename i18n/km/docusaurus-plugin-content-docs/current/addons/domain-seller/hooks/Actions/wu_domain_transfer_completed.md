@@ -4,7 +4,7 @@ title: សកម្មភាព - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# សកម្មភាព: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# សកម្មភាព: wu_domain_transfer_completed
 
 ដំណើរការបន្ទាប់ពីការផ្ទេរ domain ត្រូវបានបញ្ចប់។
 

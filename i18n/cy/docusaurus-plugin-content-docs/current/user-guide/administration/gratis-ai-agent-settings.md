@@ -3,7 +3,7 @@ title: Gosodiadau Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gosodiadau Gratis AI Agent {#gratis-ai-agent-settings}
+# Gosodiadau Gratis AI Agent
 
 Mae’r sgrin **Settings → Advanced** yn Gratis AI Agent yn darparu ffurfweddiad lefel gweinyddwr ar gyfer integreiddiadau backend. Mae’r dudalen hon yn dogfennu anfon adborth ymlaen, allweddi darparwyr chwilio, gosod gwasanaeth Superdav a reolir, rheolyddion Google Calendar, gosodiadau SMS TextBee, a baneri nodwedd ar draws y rhwydwaith.
 

@@ -3,7 +3,7 @@ title: Aboqalar ro'yxatini boshqarish
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# A'zolarning Boshqarilishi (Managing Memberships) {#managing-memberships}
+# A'zolarning Boshqarilishi (Managing Memberships)
 
 Ultimate Multisite orqali siz tarmohingizdagi barcha obunalar va a'zoliklar haqida ma'lumot olishingiz mumkin. Obuna rejalar va mahsulotlar, saytlar soni, hisob-kitob miqdori va chastotasiga, to'lov tarixi va vaqt belgilarini ko'rib chiqing va tahrirlang.
 

@@ -3,7 +3,7 @@ title: Endirim Kodları Yaratmaq
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Endirim Kodları Yaratmaq (v2) {#creating-discount-codes-v2}
+# Endirim Kodları Yaratmaq (v2)
 
 _**MÜHİM QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 

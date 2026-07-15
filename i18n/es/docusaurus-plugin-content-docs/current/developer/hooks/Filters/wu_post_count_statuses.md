@@ -4,7 +4,7 @@ title: Filtro - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtro: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filtro: wu_post_count_statuses
 
 Permitir a los desarrolladores de plugins cambiar qué estado de publicación debe contarse. Por defecto, se cuentan las publicaciones publicadas y privadas.
 

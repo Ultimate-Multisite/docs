@@ -3,7 +3,7 @@ title: PayPal ସେଟଅପ୍ କରିବା
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# পেপাল গেটওয়ে সেটআপ করা (v2) {#setting-up-the-paypal-gateway-v2}
+# পেপাল গেটওয়ে সেটআপ করা (v2)
 
 _**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite ভার্সন ২.x-কে নির্দেশ করে।**_
 

@@ -3,7 +3,7 @@ title: අපනයන සහ ආනයන
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# අපනයන සහ ආනයන (Export & Import) {#export--import}
+# අපනයන සහ ආනයන (Export & Import)
 
 Ultimate Multisite 2.9.0 හි **Tools > Export & Import** යටතේ තනි-සයිට් සඳහා එක් මෙවලමක් වන **Export & Import** එකක් එකතු කර ඇත. ඔබ එක් WordPress සයිට් එක ZIP ගොනුවක් ලෙස පැකේජ් කිරීමට, එම ZIP ප්‍රතිස්ථාපනය කිරීමට හෝ අනුකූල Ultimate Multisite සහ තනි-සයිට් WordPress ස්ථාපනයන් අතර සයිට් එකක් මාරු කිරීමට අවශ්‍ය වූ විට එය භාවිතා කරන්න.
 

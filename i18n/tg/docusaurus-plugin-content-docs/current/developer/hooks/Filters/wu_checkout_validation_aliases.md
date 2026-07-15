@@ -4,7 +4,7 @@ title: Филтр - wu_checkout_validation_aliases
 sidebar_label: wu_checkout_validation_aliases
 _i18n_hash: e081aa9a71c29c9afde90759a29ab237
 ---
-# Филтр: wu_checkout_validation_aliases {#filter-wucheckoutvalidationaliases}
+# Филтр: wu_checkout_validation_aliases
 
 Ба таҳиягарони плагин иҷозат медиҳад, ки дар санҷишгари форма тахаллусҳои фармоишӣ илова кунанд.
 

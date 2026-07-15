@@ -3,7 +3,7 @@ title: Rabattcodes erstellen
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Rabattcodes erstellen (v2) {#creating-discount-codes-v2}
+# Rabattcodes erstellen (v2)
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 

@@ -4,7 +4,7 @@ title: Filtro - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filtro: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filtro: mu-migration/all_posts/default_args
 
 Filtra os argumentos predeterminados para consultar publicacións no método all_posts.
 

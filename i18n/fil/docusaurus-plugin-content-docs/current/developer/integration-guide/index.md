@@ -3,7 +3,7 @@ title: Gabay sa Integrasyon
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Gabay sa Integrasyon {#integration-guide}
+# Gabay sa Integrasyon
 
 Saklaw ng gabay na ito ang karaniwang mga pattern ng integrasyon sa Ultimate Multisite, kabilang ang pagkonekta sa mga panlabas na serbisyo, pagbuo ng mga custom na payment gateway, at paghawak ng mga webhook.
 

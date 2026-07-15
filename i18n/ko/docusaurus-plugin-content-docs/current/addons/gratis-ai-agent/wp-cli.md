@@ -3,7 +3,7 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI 레퍼런스 {#wp-cli-reference}
+# WP-CLI 레퍼런스
 
 Gratis AI Agent는 `wp gratis-ai-agent` 명령어 패밀리를 제공하여 커맨드 라인에서 에이전트를 벤치마킹하고, 에이빌리티를 관리하며, 에이전트 상태를 조회할 수 있게 합니다. 모든 명령어는 WP-CLI 2.0 이상이 필요합니다.
 

@@ -3,7 +3,7 @@ title: Ìtọ́nisọ́nà Ìṣepọ̀
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Itọsọna Integration {#integration-guide}
+# Itọsọna Integration
 
 Itọsọna yii bo awọn ilana integration wọpọ pẹlu Ultimate Multisite, pẹlu sisopọ mọ awọn iṣẹ ita, kikọ awọn payment gateways adani, ati mimu awọn webhooks ṣiṣẹ.
 

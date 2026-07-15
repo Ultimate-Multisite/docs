@@ -3,7 +3,7 @@ title: Tablo supervizo
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panparto da Dashboard'a {#dashboard-overview}
+# Panparto da Dashboard'a
 
 Ultimate Multisite havas **Dashboard** dedikitan sub menuko Ultimate Multisite, kaj ankaŭ aĉas widget'ojn al la Network Dashboard. Ĉi tiu artikolo mastriĝas, kion vi vidos en amba tioj lokoj.
 

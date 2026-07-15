@@ -3,7 +3,7 @@ title: Vybudujte podnikanie s tematickými webmi
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Vybudujte špecializovaný webový biznis s Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
+# Vybudujte špecializovaný webový biznis s Ultimate Multisite
 
 Väčšina ľudí, ktorí sa snažia predávať webové stránky, súťaží cenou proti Wix, Squarespace a tisícom freelancerov. Prehrajú. Tí, ktorí vyhrajú, si vyberú konkrétne publikum, vytvoria riešenie prispôsobené tomuto publiku a účtujú si za hodnotu, ktorú prinášajú.
 

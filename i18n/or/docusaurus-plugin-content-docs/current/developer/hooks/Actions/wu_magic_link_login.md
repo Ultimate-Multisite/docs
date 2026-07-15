@@ -4,7 +4,7 @@ title: କାର୍ଯ୍ୟ - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# କାର୍ଯ୍ୟ: wu_magic_link_login {#action-wumagiclinklogin}
+# କାର୍ଯ୍ୟ: wu_magic_link_login
 
 ମ୍ୟାଜିକ୍ ଲିଙ୍କ୍ ମାଧ୍ୟମରେ ଜଣେ ବ୍ୟବହାରକାରୀ ଲଗ୍ ଇନ୍ ହେବା ପରେ ଚାଲୁ ହୁଏ।
 

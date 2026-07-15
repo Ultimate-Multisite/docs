@@ -4,7 +4,7 @@ title: ક્રિયા - wu_multi_tenancy_init
 sidebar_label: wu_multi_tenancy_init
 _i18n_hash: d36b0a14ef482ff6731ffe6c85582c6a
 ---
-# Action: wu_multi_tenancy_init {#action-wumultitenancyinit}
+# Action: wu_multi_tenancy_init
 
 જ્યારે મલ્ટી-ટેનન્સી એડઓન સંપૂર્ણ રીતે શરૂ (initialize) થઈ જાય છે, ત્યારે આ એક્શન ટ્રિગર થાય છે.
 

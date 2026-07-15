@@ -3,7 +3,7 @@ title: Tohutoro Hooks
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tohutoro Hooks {#hooks-reference}
+# Tohutoro Hooks
 
 He tuhinga i hanga-aunoa mō ngā **action 59** katoa me ngā **filter 118** katoa i Ultimate Multisite.
 

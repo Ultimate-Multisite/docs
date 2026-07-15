@@ -3,7 +3,7 @@ title: Dəyişikliklər siyahısı
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Dəyişikliklər siyahısı {#changelog}
+# Dəyişikliklər siyahısı
 
 ## 1.9.0 — 2026-04-28 tarixində buraxıldı {#190--released-on-2026-04-28}
 

@@ -4,7 +4,7 @@ title: فلٹر - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# Filter: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
+# Filter: mu-migration/all_posts/default_args
 
 یہ `all_posts` میتھڈ میں پوسٹس کو کوئری کرنے کے لیے ڈیفالٹ آرگومنٹ کو فلٹر کرتا ہے۔
 

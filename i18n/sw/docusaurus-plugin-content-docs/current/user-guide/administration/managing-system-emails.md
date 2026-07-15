@@ -3,7 +3,7 @@ title: Kusimamia Barua Pepe za Mfumo
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kusimamia Barua Pepe za Mfumo {#managing-system-emails}
+# Kusimamia Barua Pepe za Mfumo
 
 Ultimate Multisite hutuma barua pepe mbalimbali za mfumo kwa matukio kama uthibitisho wa usajili, risiti za malipo, na mabadiliko ya uanachama. Unaweza kubinafsisha templates hizi za barua pepe ili zilingane na chapa yako.
 

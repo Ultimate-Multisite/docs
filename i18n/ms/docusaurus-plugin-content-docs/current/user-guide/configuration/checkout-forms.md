@@ -3,7 +3,7 @@ title: Borang Pembayaran
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Borang Pembayaran {#checkout-forms}
+# Borang Pembayaran
 
 Borang Pembayaran ialah cara yang mudah dan fleksibel untuk bereksperimen dengan pendekatan yang berbeza apabila cuba menukar pelanggan baharu.
 

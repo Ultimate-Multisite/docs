@@ -3,7 +3,7 @@ title: ಅಂತರ್ನಿರ್ಮಿತ ಏಜೆಂಟ್‌ಗಳು
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# ಅಂತರ್ನಿರ್ಮಿತ Agents {#built-in-agents}
+# ಅಂತರ್ನಿರ್ಮಿತ Agents
 
 Gratis AI Agent v1.9.0 ಐದು ಅಂತರ್ನಿರ್ಮಿತ agents ಅನ್ನು ಒದಗಿಸುತ್ತದೆ. ಪ್ರತಿಯೊಂದೂ ಕೇಂದ್ರೀಕೃತ tools ಸಮೂಹ, ಹೊಂದಿಸಿದ system prompt, ಮತ್ತು ಆ ಕ್ಷೇತ್ರದ ಸಾಮಾನ್ಯ ಕಾರ್ಯಗಳಿಗೆ ಹೊಂದುವ starter suggestions ಗಳೊಂದಿಗೆ ಮುಂಚಿತವಾಗಿ ಸಂರಚಿಸಲಾಗಿದೆ. Agents ನಡುವೆ ಬದಲಿಸಿದರೆ assistant ಏನು ಮಾಡಬಹುದು ಮತ್ತು ಹೇಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತದೆ ಎಂಬುದು ಬದಲಾಗುತ್ತದೆ — ನಿಮ್ಮಿಂದ ಯಾವುದೇ configuration ಅಗತ್ಯವಿಲ್ಲ. ಸಂಬಂಧಿತ integrations ಸಂರಚಿಸಲ್ಪಟ್ಟಾಗ Superdav AI Agent v1.18.0 ಈ workflows ಗೆ schedule-aware tools, reminder records, approval gates, ಮತ್ತು SMS notifications ಸೇರಿಸಬಹುದು.
 

@@ -3,7 +3,7 @@ title: Primanje uplata
 sidebar_position: 15
 _i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Primanje uplata (v2) {#getting-paid-v2}
+# Primanje uplata (v2)
 
 _**VAŽNA NAPOMENA: Ovaj se članak odnosi na Ultimate Multisite verziju 2.x.**_
 

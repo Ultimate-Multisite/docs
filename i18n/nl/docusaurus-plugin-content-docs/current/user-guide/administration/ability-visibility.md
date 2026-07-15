@@ -3,7 +3,7 @@ title: Mogelijkheidszichtbaarheid
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Zichtbaarheid van Functionaliteiten (Ability Visibility) {#ability-visibility}
+# Zichtbaarheid van Functionaliteiten (Ability Visibility)
 
 Superdav AI Agent v1.12.0 introduceert **Ability Visibility** (Zichtbaarheid van Functionaliteiten) besturingselementen die bepalen welke interfaces elke functionaliteit blootstellen. Dit stelt beheerders in staat om nauwkeurig in te stellen welke agent-mogelijkheden beschikbaar zijn via REST APIs, MCP servers, WooCommerce-integraties en andere interfaces.
 

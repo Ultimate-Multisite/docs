@@ -4,7 +4,7 @@ title: Filtras - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filtras: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Filtras: wu_should_redirect_to_primary_domain
 
 Leidžia kūrėjams trumpuoju keliu nutraukti peradresavimą, neleidžiant jam įvykti.
 

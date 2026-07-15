@@ -4,7 +4,7 @@ title: 필터 - wu_stripe_generate_idempotency_key
 sidebar_label: wu_stripe_generate_idempotency_key
 _i18n_hash: 0868609b646589822aead3d4a5201088
 ---
-# 필터: wu_stripe_generate_idempotency_key {#filter-wustripegenerateidempotencykey}
+# 필터: wu_stripe_generate_idempotency_key
 
 Stripe 결제 옵션과 함께 전송되는 idempotency_key 값을 필터링합니다.
 

@@ -3,7 +3,7 @@ title: Captcha Changes Log
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Değişiklik Geçmişi {#captcha-changelog}
+# Captcha Değişiklik Geçmişi
 
 Sürüm: 1.5.0 - Yayınlanma Tarihi: 2026-05-22
 * Yeni: Sert durdurmalı rate limiter — captcha korumalı tüm sayfalardaki (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) her GET ve POST isteğini sayar ve HTTP 429, bir `Retry-After` başlığı ve rastgele bir tarpit beklemesi (1–5 saniye, maksimum 15 saniye) ile yanıt verir.

@@ -3,7 +3,7 @@ title: 'Leciono 8: Enkonduko de klientoj'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Leciono 8: Klienta Enkonduko {#lesson-8-customer-onboarding}
+# Leciono 8: Klienta Enkonduko
 
 Igi klienton registriĝi estas nur duono de la laboro. Se ili ensalutas, sentas sin superŝutitaj, kaj neniam revenas, vi perdis ilin. Ĉi tiu leciono desegnas la sperton, kiu transformas novan registriĝon en aktivan, engaĝitan klienton.
 

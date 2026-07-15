@@ -3,7 +3,7 @@ title: WooCommerce انضمام کی تبدیلیوں کی فہرست
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration تبدیلیوں کا ریکارڈ {#woocommerce-integration-changelog}
+# WooCommerce Integration تبدیلیوں کا ریکارڈ
 
 Version 2.2.0 - 2026-07-01 کو جاری کیا گیا
 * نیا: Ultimate Multisite ٹیکس رقوم اب checkout پر علیحدہ WooCommerce fee لائنوں کے طور پر ظاہر ہوتی ہیں، جس سے payment سے پہلے ٹیکس کے مجموعے زیادہ واضح ہو جاتے ہیں۔

@@ -3,7 +3,7 @@ title: Validiraj kontrast palete
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validacija Kontrasta Palete {#validate-palette-contrast}
+# Validacija Kontrasta Palete
 
 Funkcionalnost **Validacija Kontrasta Palete** provjerava parove boja u vašoj dizajnerskoj paleti radi usklađenosti sa WCAG (Web Content Accessibility Guidelines) prije nego što ih primenite na vašu temu.
 

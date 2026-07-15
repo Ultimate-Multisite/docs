@@ -4,7 +4,7 @@ title: Kev nqis tes - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Kev ua: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Kev ua: wp_ultimo_vat_activation
 
 Cia lwm feem ntawm qhov khoom txuas ntxiv txuas lawv cov txheej txheem rau kev qhib siv
 

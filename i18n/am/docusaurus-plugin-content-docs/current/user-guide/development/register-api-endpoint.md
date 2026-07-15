@@ -3,7 +3,7 @@ title: API Endpointን መመዝገብ
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# የUltimate Multisite መመዝገቢያ API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# የUltimate Multisite መመዝገቢያ API endpoint
 
 በዚህ ትምህርት፣ በZapier እንዴት እንደሚሰራ በመጠቀም በአዲስ ደንበኛዎ (customer) ወደ ኔትዎ (network) ሙሉ የመመዝገቢያ ሂደት (onboarding process) የሚፈጥሩበትን የUltimate Multisite /register API endpoint አጠቃቀም ይማራሉ።
 

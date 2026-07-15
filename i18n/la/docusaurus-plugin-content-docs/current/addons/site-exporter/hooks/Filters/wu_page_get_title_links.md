@@ -4,7 +4,7 @@ title: Filtrum - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# Filtrum: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filtrum: wu_page_get_title_links
 
 Sine evolutoribus plugin, atque nobis ipsis, nexus actionum ad paginas nostras recensendas addere.
 

@@ -4,7 +4,7 @@ title: Filter - networks_pre_user_is_network_admin
 sidebar_label: networks_pre_user_is_network_admin
 _i18n_hash: f8e04e42fb6f7c1f20a1280c46bf53b5
 ---
-# Filter: networks_pre_user_is_network_admin {#filter-networkspreuserisnetworkadmin}
+# Filter: networks_pre_user_is_network_admin
 
 একটি ব্যবহারকারী কোন নেটওয়ার্কগুলোর অ্যাডমিনিস্ট্রেটর, তা ফিল্টার করে প্রক্রিয়াটিকে দ্রুত সম্পন্ন (short-circuit) করে।
 

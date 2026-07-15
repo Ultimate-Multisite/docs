@@ -3,7 +3,7 @@ title: Orquestació de Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
+# Site Builder Orchestration v2
 
 Site Builder Orchestration v2 (introduït en Gratis AI Agent v1.4.0) és el motor que alimenta la creació de llocs web amb múltiples passos. Quan demanes a l'agent que "crei un lloc web de restaurant" o "crei un portefoli amb un blog", l'orquestador desglossaria aquest objectiu de nivell superior en un **pla** estructurat, descobreix els plugins necessaris per complir-lo, executa cada pas en seqüència, fa un seguiment del progrés i es recupera d'errors de manera autònoma.
 

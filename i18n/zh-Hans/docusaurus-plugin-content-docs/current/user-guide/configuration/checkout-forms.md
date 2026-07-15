@@ -3,7 +3,7 @@ title: 结账表单
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# 结账表单 {#checkout-forms}
+# 结账表单
 
 结账表单是一种简单而灵活的方式，可用于在尝试转化新客户时试验不同的方法。
 

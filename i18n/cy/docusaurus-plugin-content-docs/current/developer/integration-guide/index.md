@@ -3,7 +3,7 @@ title: Canllaw Integreiddio
 sidebar_position: 1
 _i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Canllaw Integreiddio {#integration-guide}
+# Canllaw Integreiddio
 
 Mae’r canllaw hwn yn ymdrin â phatrymau integreiddio cyffredin gyda Ultimate Multisite, gan gynnwys cysylltu â gwasanaethau allanol, adeiladu pyrth talu personol, a thrin webhooks.
 

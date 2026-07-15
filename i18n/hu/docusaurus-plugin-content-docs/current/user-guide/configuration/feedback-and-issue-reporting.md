@@ -3,7 +3,7 @@ title: Ügyfél visszajelzése és problémajelzés
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Ügyfél visszajelzése és problémajelentés {#customer-feedback--issue-reporting}
+# Ügyfél visszajelzése és problémajelentés
 
 A Gratis AI Agent v1.5.0 bevezet egy beépített visszajelzési és problémajelentési rendszert, amely lehetővé teszi az end-user-ek számára, hogy jelöljék ki a nem hasznos válaszokat, és közvetlenül a chat felületéről jelentek problémákat. Ez a rendszer magában foglalja a hozzájáruláskezelést, egy automatizált jelentési parancsot, és AI-segített szűrést (triage) a háttérben.
 

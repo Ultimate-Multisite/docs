@@ -3,7 +3,7 @@ title: 'Ders 13: Ölçeklendirme'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ders 13: Ölçeklenmek {#lesson-13-scaling-up}
+# Ders 13: Ölçeklenmek
 
 Ödeme yapan müşterileri olan çalışan bir platformunuz var. Bu ders, küçük bir operasyondan sürdürülebilir bir işletmeye nasıl büyüneceğinizi ele alıyor: altyapıyı ölçeklendirmek, operasyonları otomatikleştirmek ve müşteri başına geliri artırmak.
 

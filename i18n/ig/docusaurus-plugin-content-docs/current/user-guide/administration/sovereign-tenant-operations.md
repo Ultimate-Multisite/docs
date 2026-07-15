@@ -3,7 +3,7 @@ title: Nkwado Ndu Operative
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operations Tenant Sovereignty {#sovereign-tenant-operations}
+# Operations Tenant Sovereignty
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nwere add operational tooling fɛ sovereign tenants: subsites na-eme run with their own database, filesystem root, and routing context while still visible from the network admin.
 

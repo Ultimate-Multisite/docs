@@ -4,7 +4,7 @@ title: പ്രവർത്തനം - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
+# Action: wu_domain_transfer_completed
 
 ഒരു ഡൊമെയ്ൻ കൈമാറ്റം പൂർത്തിയാകുമ്പോൾ ഇത് പ്രവർത്തിപ്പിക്കുന്നു (Fires).
 

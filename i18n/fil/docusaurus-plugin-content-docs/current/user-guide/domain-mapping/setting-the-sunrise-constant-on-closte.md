@@ -3,7 +3,7 @@ title: Pagtakda ng Sunrise Constant sa Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Pagtatakda ng Sunrise Constant sa True sa Closte {#setting-the-sunrise-constant-to-true-on-closte}
+# Pagtatakda ng Sunrise Constant sa True sa Closte
 
 Ang ibang mga hosting provider ay nagla-lock ng wp-config.php para sa seguridad. Ibig sabihin nito, hindi maaaring awtomatikong i-edit ng Ultimate Multisite ang file para maidagdag ang mga kinakailangang constant para gumana ang domain mapping at iba pang mga feature. Ang Closte ay isa sa mga ganitong host.
 

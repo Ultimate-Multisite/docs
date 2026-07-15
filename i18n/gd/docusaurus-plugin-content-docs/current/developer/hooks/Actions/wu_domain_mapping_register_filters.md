@@ -4,7 +4,7 @@ title: Gnìomh - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# Gnìomh: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# Gnìomh: wu_domain_mapping_register_filters
 
 Sàbhalaidh cuid de plugins URL mus robh am mapadh gnìomhach, no togaidh iad URLan ann an dòigh eadar-dhealaichte nach eil air a ghabhail a-steach anns na criathragan gu h-àrd.
 

@@ -3,7 +3,7 @@ title: Nustatymų žinynas
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Nustatymų nuoroda {#settings-reference}
+# Nustatymų nuoroda
 
 Šiame puslapyje sekami nustatymai, kurie veikia kasdienį administravimą ir naujausius elgsenos pakeitimus Ultimate Multisite.
 

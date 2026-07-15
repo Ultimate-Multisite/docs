@@ -3,7 +3,7 @@ title: API-végpont regisztrálása
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Az Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
+# Az Ultimate Multisite Register API endpoint
 
 Ebben az útmutatóban megtanulod, hogyan használd az Ultimate Multisite /register API endpointot, hogy létrehozd egy új ügyfél teljes onboarding folyamatát a hálózatodban, és hogyan tedd ezt meg Zapierrel.
 

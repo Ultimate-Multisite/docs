@@ -3,7 +3,7 @@ title: Köp kärendeçili integrasiýasy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Multi-Tenancy integrasiýasy {#multi-tenancy-integration}
+# Multi-Tenancy integrasiýasy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 özbaşdak tenantlar, migrasiýa barlagy we tenant ýaşaýyş sikliniň awtomatlaşdyrylmagy üçin birnäçe integrasiýa nokadyny üýtgedýär.
 

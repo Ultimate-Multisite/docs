@@ -4,7 +4,7 @@ title: ක්‍රියාව - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# ක්‍රියාව: update_network {#action-updatenetwork}
+# ක්‍රියාව: update_network
 
 පවතින ජාලයක් යාවත්කාලීන කළ පසු ක්‍රියාත්මක වේ.
 

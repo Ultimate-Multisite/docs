@@ -4,7 +4,7 @@ title: Filtrační funkce - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filtrační hook: wu_username_from_email {#filter-wuusernamefromemail}
+# Filtrační hook: wu_username_from_email
 
 Filtruje uživatelské jméno nového zákazníka.
 

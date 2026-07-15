@@ -3,7 +3,7 @@ title: Koodinpätkät
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koodinpätkiä v2:lle {#code-snippets-for-v2}
+# Koodinpätkiä v2:lle
 
 Perusidea on, että **WordPress** -koodinpätkiä käytetään tekemään tiettyjä toimintoja, jotka muuten vaatisivat erillistä pienempää pluginia. Tällaisia koodinpätkiä sijoitetaan joko WordPressin ydintoimintojen tai teeman tiedostoihin (yleensä teeman `functions.php`-tiedostoon) tai ne voidaan käyttää MU-pluginina.
 

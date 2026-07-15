@@ -3,7 +3,7 @@ title: Zapier를 통해 Account 등록
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# 이벤트: Zapier를 통해 Account 등록하기 {#event-register-an-account-via-zapier}
+# 이벤트: Zapier를 통해 Account 등록하기
 
 [Ultimate Multisite와 Zapier 통합](zapier.md) 문서에서는 트리거와 이벤트를 기반으로 Ultimate Multisite 내에서 다양한 작업을 수행하기 위해 Zapier를 사용하는 방법을 다루었습니다. 이 문서에서는 3rd party 애플리케이션을 통합하는 방법을 보여드립니다. Google Sheets를 데이터 소스로 사용하고 정보를 Ultimate Multisite로 보내 Account를 등록하겠습니다.
 

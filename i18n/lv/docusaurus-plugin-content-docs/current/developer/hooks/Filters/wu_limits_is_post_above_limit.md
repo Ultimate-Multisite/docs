@@ -4,7 +4,7 @@ title: Filtrs - wu_limits_is_post_above_limit
 sidebar_label: wu_limits_is_post_above_limit
 _i18n_hash: df08e327eb253d479b9d2222e2867c77
 ---
-# Filtrs: wu_limits_is_post_above_limit {#filter-wulimitsispostabovelimit}
+# Filtrs: wu_limits_is_post_above_limit
 
 Pārbauda, vai dotais ziņas tips ir atļauts šajā plānā. Ļauj plugin izstrādātājiem filtrēt atgriezto vērtību
 

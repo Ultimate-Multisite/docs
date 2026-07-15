@@ -3,7 +3,7 @@ title: Plugin ug Theme Manager Changelog
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Changelog sa Plugin ug Theme Manager {#plugin--theme-manager-changelog}
+# Changelog sa Plugin ug Theme Manager
 
 Bersyon: 2.0.8 - Gipagawas niadtong 2026-05-05
 * Gipaayo: Ang listahan sa plugin karon naggamit na og site cache aron maminus ang pagpangutana sa database (database queries) ug makapauswag sa performance.

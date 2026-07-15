@@ -3,7 +3,7 @@ title: آلٹیمیٽ ملٹی سائيٽ 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite هڪ ووردبريس (WordPress) هم پلاتين (plugin) آهي جيڪو توهان کي ڪلائين کي WaaS يا વેબસيتس ايز ا سيرفس (Websites as a Service) ڏيڻ جي اجازت ڏئي ٿو. ان ۾ گهريان ۽ سکون ڪرڻ کان اڳ، اسان کي ڪجهه بنيادي علم حاصل ڪرڻو پوندو آهي ته Ultimate Multisite توهان جي ڪاروبار ۽ ڪلائين کي ڪيئن مدد ڪري سگهي ٿو.
 

@@ -3,7 +3,7 @@ title: Rekisteröintivirta
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Rekisteröintoprosessi (v2) {#the-registration-flow-v2}
+# Rekisteröintoprosessi (v2)
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 

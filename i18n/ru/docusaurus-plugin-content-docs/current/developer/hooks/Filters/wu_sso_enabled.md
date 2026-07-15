@@ -4,7 +4,7 @@ title: Фильтр - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Фильтр: wu_sso_enabled {#filter-wussoenabled}
+# Фильтр: wu_sso_enabled
 
 Включить/выключить кросс-доменную функцию единого входа.
 

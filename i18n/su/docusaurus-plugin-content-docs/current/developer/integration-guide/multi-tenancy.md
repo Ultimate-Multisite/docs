@@ -3,7 +3,7 @@ title: Integrasi Multi-Tenancy
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Integrasi Multi-Tenancy {#multi-tenancy-integration}
+# Integrasi Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ngarobah sababaraha titik sentuh integrasi pikeun panyewa berdaulat, verifikasi migrasi, jeung otomatisasi daur hirup panyewa.
 

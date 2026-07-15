@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Yon Première Vue sur Webhooks (v2) {#a-first-look-on-webhooks-v2}
+# Yon Première Vue sur Webhooks (v2)
 
 _**ATTENTION: Note ke sa fonksyon ou oswa sa tèks sa a se pou moun ki gen konnen avanse.**_
 

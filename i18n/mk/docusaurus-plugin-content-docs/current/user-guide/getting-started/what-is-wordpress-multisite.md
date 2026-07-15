@@ -3,7 +3,7 @@ title: Што е WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Што е WordPress Multisite? {#what-is-wordpress-multisite}
+# Што е WordPress Multisite?
 
 Во свој суштински дел, WordPress нуди функција наречена „Multisite“ која се враќа на своите пореколу до 2010 година со пуштање на WordPress 3.0. Од тогаш добила неколку ревизии со цел да се внаправат нови функции и засилени безбедност.
 

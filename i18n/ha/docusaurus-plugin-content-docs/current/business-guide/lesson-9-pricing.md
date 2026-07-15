@@ -3,7 +3,7 @@ title: 'Darasi na 9: Tsara Farashi don Samun Riba'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Darasi 9: Saita Farashi don Riba {#lesson-9-pricing-for-profit}
+# Darasi 9: Saita Farashi don Riba
 
 A Darasi 5 mun saita farashin farko na tsare-tsaren FitSite. Yanzu za mu inganta dabarar farashi da dabaru da ke ƙara kuɗin shiga, ƙarfafa haɓakawa, da rage barin sabis.
 

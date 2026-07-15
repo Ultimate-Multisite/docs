@@ -3,7 +3,7 @@ title: Operace suverénního nájemce
 sidebar_position: 15
 _i18n_hash: bcde2032a685b60e17f1944b5b588f25
 ---
-# Operace s suverénními nájemci {#sovereign-tenant-operations}
+# Operace s suverénními nájemci
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 přidává operativní nástroje pro suverénní nájemce: subsity, které běží se svým vlastním databází, kořenovým systémem souborů a kontextem routování, zatímco zůstávají viditelné pro administrátory sítě.
 

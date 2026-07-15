@@ -4,7 +4,7 @@ title: 动作 - wp_ultimo_support_agents_load
 sidebar_label: wp_ultimo_support_agents_load
 _i18n_hash: 1f67d67c4a32b3689d7da16c5cc7ba41
 ---
-# 动作: wp_ultimo_support_agents_load {#action-wpultimosupportagentsload}
+# 动作: wp_ultimo_support_agents_load
 
 当所有依赖项加载完成时触发
 

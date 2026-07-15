@@ -3,7 +3,7 @@ title: Die Registrasieproses
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Die Registrasieproses (v2) {#the-registration-flow-v2}
+# Die Registrasieproses (v2)
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

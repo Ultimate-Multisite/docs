@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 _i18n_hash: 5108a5cdaa326510f4052ff815110a1e
 ---
-# Belgekirina Ultimate Multisite {#ultimate-multisite-documentation}
+# Belgekirina Ultimate Multisite
 
 Bi xêr hatî belgekirina Ultimate Multisite. Ultimate Multisite, WordPress Multisite vediguhere platformeke temam a Malper wek Xizmet (WaaS).
 
@@ -18,7 +18,7 @@ Hemû tiştên ku ji bo sazkirin, mîhengkirin û rêvebirina platforma WaaS-a x
 
 Çavkaniya teknîkî ji bo pêşvebirên ku li ser Ultimate Multisite dixebitin. Çavkaniya hooks, belgekirina REST API û rêberên pêşxistina addon dihewîne.
 
-### [Addons](/addons) {#addons}
+### [Pêvek](/addons) {#addons}
 
 Belgekirin ji bo pluginên addon ên dravî ku Ultimate Multisite bi taybetmendiyên zêde dirêj dikin, wekî entegrasyona WooCommerce, analytics, firotina domain û zêdetir.
 

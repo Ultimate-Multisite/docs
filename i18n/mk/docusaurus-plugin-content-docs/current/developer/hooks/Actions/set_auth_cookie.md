@@ -4,7 +4,7 @@ title: Дејство - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Дејство: set_auth_cookie {#action-setauthcookie}
+# Дејство: set_auth_cookie
 
 Се активира веднаш пред да се постави колачето за автентикација.
 

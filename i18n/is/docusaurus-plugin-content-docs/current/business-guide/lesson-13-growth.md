@@ -3,7 +3,7 @@ title: 'Læoni 13: Skala upp'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Læra 13: Skala Upp {#lesson-13-scaling-up}
+# Læra 13: Skala Upp
 
 Þú hefur þjónustu sem virkar og betalande viðskiptavinar. Þessi lærð vegur um hvernig þú getur vaxa frá smá verkefni í halandi fyrirtenskap – skalning upp í kerfi, sjálfshagning á starfsemi og aukning á skekkum per viðskiptavini.
 

@@ -4,7 +4,7 @@ title: Aksi - delete_network
 sidebar_label: delete_network
 _i18n_hash: 129d7c146bbf2774e00886fb57ff239e
 ---
-# Tumindak: delete_network {#action-deletenetwork}
+# Tumindak: delete_network
 
 Kedadeyan sawisé sawijining jaringan wis dibusak.
 

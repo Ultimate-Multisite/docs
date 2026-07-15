@@ -3,7 +3,7 @@ title: Kepiye carane nginstall WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kepiye Carane Aku Nginstall WordPress Multisite? {#how-do-i-install-wordpress-multisite}
+# Kepiye Carane Aku Nginstall WordPress Multisite?
 
 WordPress Multisite iku ngidamel sampeyan bisa duwe jaringan situs-situs ing siji instalasi. Iki wis ana saka awal, nanging ora aktif otomatis.
 
@@ -61,7 +61,7 @@ Lan kode iki, uga diwenehake dening WordPress, menyang file _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# tambahi garis miring akhir (trailing slash) kanggo /wp-admin {#add-a-trailing-slash-to-wp-admin}
+# tambahi garis miring akhir (trailing slash) kanggo /wp-admin
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 

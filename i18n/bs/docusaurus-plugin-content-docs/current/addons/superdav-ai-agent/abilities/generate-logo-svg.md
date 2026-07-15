@@ -3,7 +3,7 @@ title: Generiraj Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generisanje Logo SVG-a {#generate-logo-svg}
+# Generisanje Logo SVG-a
 
 Funkcionalnost **Generisanje Logo SVG-a** omogućava Theme Builder-u da kreira i ugradi prilagođene logo SVG-ove direktno na vaš WordPress sajt, uz automatsku sanitizaciju koja je sigurna za namespace.
 

@@ -3,7 +3,7 @@ title: ድረገጽ ገንቢ የእውቂያ ቅጾች
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Contact Forms {#site-builder-contact-forms}
+# Site Builder Contact Forms
 
 Superdav AI Agent v1.10.0 በSite Builder agent አማካኝነት በቀጥታ ከቻት በይነገጽ (chat interface) የኮንታክት ፎርም የመፍጠር ችሎታን ይጨምራል። ይህ ደግሞ ቻቱን ሳይለቁ በማንኛውም ገጽ ላይ ሙሉ በሙሉ የሚሰራ የኮንታክት ፎርም እንዲጨምሩ ያስችላል።
 

@@ -4,7 +4,7 @@ title: Aksyon - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Aksyon: wu_register_integrations {#action-wuregisterintegrations}
+# Aksyon: wu_register_integrations
 
 Deklanche pou pèmèt entegrasyon yo anrejistre tèt yo.
 

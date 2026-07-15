@@ -4,7 +4,7 @@ title: Tallaabo - inpsyde.search_and_replace.error
 sidebar_label: inpsyde.search_and_replace.error
 _i18n_hash: cd4caf3bd595530b3d92a9c8454b98c2
 ---
-# Ficil: inpsyde.search_and_replace.error {#action-inpsydesearchandreplaceerror}
+# Ficil: inpsyde.search_and_replace.error
 
 Wuu iska indha-tiraa hook-kan ma diiwaangashana WP Ultimo.
 

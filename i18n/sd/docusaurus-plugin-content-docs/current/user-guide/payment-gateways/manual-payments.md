@@ -3,7 +3,7 @@ title: دستي ادائيگيون سيٽ اپ ڪرڻ
 sidebar_position: 20
 _i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# دستي ادائيگيون سيٽ اپ ڪرڻ (v2) {#setting-up-manual-payments-v2}
+# دستي ادائيگيون سيٽ اپ ڪرڻ (v2)
 
 _**اهم نوٽ: هي مضمون Ultimate Multisite ورزن 2.x بابت آهي.**_
 

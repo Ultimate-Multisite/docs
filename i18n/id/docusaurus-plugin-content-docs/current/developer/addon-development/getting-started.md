@@ -3,7 +3,7 @@ title: Memulai Pengembangan Addon
 sidebar_position: 1
 _i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Pengembangan Addon {#addon-development}
+# Pengembangan Addon
 
 ## Struktur Addon {#addon-structure}
 

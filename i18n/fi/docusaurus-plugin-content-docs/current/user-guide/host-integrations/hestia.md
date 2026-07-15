@@ -3,7 +3,7 @@ title: Hestian hallintapaneelin integrointi
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel -Integraatio {#hestia-control-panel-integration}
+# Hestia Control Panel -Integraatio
 
 Tämä opas selittää, miten konfiguroidaan Ultimate Multisite Hestia -integraation siten, että verkossasi kartoitettuja domeeneja lisätään (ja poistetaan) automaattisesti Web Domain Aliaseiksi Hestiassa.
 

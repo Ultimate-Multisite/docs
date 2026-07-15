@@ -4,7 +4,7 @@ title: 过滤器 - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# 过滤: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
+# 过滤: wu_enforce_password_rules
 
 过滤是否强制执行额外的密码规则。
 

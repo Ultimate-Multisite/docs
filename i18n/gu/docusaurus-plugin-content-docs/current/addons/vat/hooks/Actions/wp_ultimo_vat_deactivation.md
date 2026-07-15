@@ -4,7 +4,7 @@ title: Action - wp_ultimo_vat_deactivation
 sidebar_label: wp_ultimo_vat_deactivation
 _i18n_hash: 51595acea5e87e1869fb208577734cfd
 ---
-# Action: wp_ultimo_vat_deactivation {#action-wpultimovatdeactivation}
+# Action: wp_ultimo_vat_deactivation
 
 પ્લગઇનનાં અન્ય ભાગોને નિષ્ક્રિયકરણ (deactivation) માટે તેમની પ્રક્રિયાઓ જોડવા દે છે.
 

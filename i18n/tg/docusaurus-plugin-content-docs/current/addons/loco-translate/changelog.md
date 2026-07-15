@@ -3,7 +3,7 @@ title: Сабти тағйироти Loco Translate
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Таърихи тағйироти Loco Translate {#loco-translate-changelog}
+# Таърихи тағйироти Loco Translate
 
 ### 1.0.1 {#101}
 * Мутобиқат бо версияи охирини Loco Translate беҳтар карда шуд

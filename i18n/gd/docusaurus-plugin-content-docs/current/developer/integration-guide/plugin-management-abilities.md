@@ -3,7 +3,7 @@ title: Comasan Rianachd Phlugan
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Comasan Riaghlaidh Phlugan {#plugin-management-abilities}
+# Comasan Riaghlaidh Phlugan
 
 Tha Gratis AI Agent v1.5.0 a’ tighinn le **7 comasan riaghlaidh phlugan** as urrainn don neach-cuideachaidh AI a ghairm rè còmhraidh. Bheir na comasan seo smachd prògramaichte air plugain WordPress a chaidh a stàladh tron [t-Siostam Togail Phlugan & Bogsa-gainmhich](../../user-guide/administration/plugin-builder-and-sandbox).
 

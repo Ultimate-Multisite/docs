@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ƙarin Fasali na Ultimate Multisite {#ultimate-multisite-addons}
+# Ƙarin Fasali na Ultimate Multisite
 
 Ƙarin fasali suna faɗaɗa Ultimate Multisite da ƙarin siffofi da haɗe-haɗe. Yawancin ƙarin fasali ana biyan su kuma ana iya saya daga [ultimatemultisite.com](https://ultimatemultisite.com).
 

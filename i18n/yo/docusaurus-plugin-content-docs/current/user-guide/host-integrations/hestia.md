@@ -3,7 +3,7 @@ title: Ìṣepọ̀ Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Ìṣepọ̀ Hestia Control Panel {#hestia-control-panel-integration}
+# Ìṣepọ̀ Hestia Control Panel
 
 Ìtọ́sọ́nà yìí ṣàlàyé bí a ṣe lè ṣètò ìṣepọ̀ Ultimate Multisite Hestia kí àwọn orúkọ àgbègbè tí a ti so mọ́ nẹ́tíwọ́ọ̀kì rẹ lè jẹ́ fífi kún (àti yíyọ kúrò) láìfọwọ́ṣe gẹ́gẹ́ bí Àwọn Orúkọ Àfikún Web Domain nínú Hestia.
 

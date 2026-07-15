@@ -3,7 +3,7 @@ title: Hooks යොමුව
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks යොමුව {#hooks-reference}
+# Hooks යොමුව
 
 Ultimate Multisite හි සියලු **ක්‍රියා 59** සහ **පෙරහන් 118** සඳහා ස්වයංක්‍රීයව ජනනය කළ ලේඛන.
 

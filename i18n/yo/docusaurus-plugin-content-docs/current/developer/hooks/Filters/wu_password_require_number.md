@@ -4,7 +4,7 @@ title: Àlẹ́mọ́ - wu_password_require_number
 sidebar_label: wu_password_require_number
 _i18n_hash: 358a8fc28a947392f763b07ef807dab7
 ---
-# Àlẹmọ: wu_password_require_number {#filter-wupasswordrequirenumber}
+# Àlẹmọ: wu_password_require_number
 
 Ṣe àlẹmọ bóyá kí a beere àwọn nọ́mbà nínú àwọn ọ̀rọ̀ aṣínà.
 

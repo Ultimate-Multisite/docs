@@ -3,7 +3,7 @@ title: 访问账户页面
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# 我如何首次访问我的账户页面？ {#how-can-i-access-my-account-page-for-the-first-time}
+# 我如何首次访问我的账户页面？
 
 欢迎来到 Ultimate Multisite！
 

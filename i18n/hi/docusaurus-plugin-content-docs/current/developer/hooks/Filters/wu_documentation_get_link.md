@@ -4,7 +4,7 @@ title: फ़िल्टर - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# फ़िल्टर: wu_documentation_get_link {#filter-wudocumentationgetlink}
+# फ़िल्टर: wu_documentation_get_link
 
 प्लगइन डेवलपर्स को लिंक को फ़िल्टर करने की अनुमति देता है।
 

@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# ක්‍රියාව: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# ක්‍රියාව: wu_domain_seller_process_purchase
 
 ගෙවීම් ක්‍රියාවලිය සම්පූර්ණ වූ පසු ඩොමේන් මිලදී ගැනීමක් සැකසෙන විට ක්‍රියාත්මක වේ.
 

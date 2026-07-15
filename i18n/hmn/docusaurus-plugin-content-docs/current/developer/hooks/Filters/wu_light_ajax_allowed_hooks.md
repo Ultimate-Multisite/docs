@@ -4,7 +4,7 @@ title: Lim - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Lim: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
+# Lim: wu_light_ajax_allowed_hooks
 
 Vim kev ruaj ntseg, peb txwv tus naj npawb ntawm cov action uas siv tau rau kev hook rau hauv. Qhov filter no tso cai rau cov developer nthuav daim ntawv teev ntawd yog tsim nyog.
 

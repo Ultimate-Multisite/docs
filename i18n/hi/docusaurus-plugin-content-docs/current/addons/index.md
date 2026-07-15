@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# अल्टीमेट मल्टीसाइट ऐडऑन {#ultimate-multisite-addons}
+# अल्टीमेट मल्टीसाइट ऐडऑन
 
 ऐडऑन अल्टीमेट मल्टीसाइट को अतिरिक्त फीचर्स और इंटीग्रेशन के साथ बढ़ाते हैं। ज़्यादातर ऐडऑन पेड होते हैं और इन्हें [ultimatemultisite.com](https://ultimatemultisite.com) से खरीदा जा सकता है।
 

@@ -4,7 +4,7 @@ title: Ajọ - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Àlẹmọ: wu_rest_get_items {#filter-wurestgetitems}
+# Àlẹmọ: wu_rest_get_items
 
 Ó n ṣe àlẹmọ bóyá a gba ọ laaye láti tẹ̀síwájú pẹ̀lú ìbéèrè náà tàbí bẹ́ẹ̀ kọ́.
 

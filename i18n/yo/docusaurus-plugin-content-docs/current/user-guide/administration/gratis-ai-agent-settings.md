@@ -3,7 +3,7 @@ title: Àwọn ìṣètò Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Àwọn Ètò Gratis AI Agent {#gratis-ai-agent-settings}
+# Àwọn Ètò Gratis AI Agent
 
 Ojú-ìbojú **Àwọn Ètò → To ti ni ilọsiwaju** ninu Gratis AI Agent ń pèsè ìṣètò ìpele-alákóso fún àwọn ìṣepọ̀ backend. Ojú-ìwé yìí ṣàkọsílẹ̀ fífi feedback ránṣẹ́ síwájú, àwọn kọ́kọ́rọ́ olupèsè ìṣàwárí, ìṣètò iṣẹ́ Superdav tí a ń ṣàkóso, àwọn ìṣàkóso Google Calendar, àwọn ètò SMS TextBee, àti àwọn àmì ẹya ka gbogbo nẹ́tíwọ́ọ̀kì.
 

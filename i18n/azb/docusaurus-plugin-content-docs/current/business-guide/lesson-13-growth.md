@@ -3,7 +3,7 @@ title: 'Dars 13: Wus''ul Kardan'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Ders 13: Büyümek {#lesson-13-scaling-up}
+# Ders 13: Büyümek
 
 Artık ödeme yapan müşterileri olan çalışan bir platformunuz var. Bu derste, küçük bir operasyondan sürdürülebilir bir işletmeye nasıl geçileceği anlatılıyor: altyapıyı büyütmek, operasyonları otomatikleştirmek ve müşteri başına geliri artırmak.
 

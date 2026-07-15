@@ -4,7 +4,7 @@ title: ''
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Action: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
+# Action: mu_migration/import/user/custom_data_after
 
 在导出自定义用户数据后触发。
 

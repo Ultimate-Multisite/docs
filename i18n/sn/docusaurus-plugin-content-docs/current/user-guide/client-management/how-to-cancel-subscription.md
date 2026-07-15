@@ -3,7 +3,7 @@ title: Ndiri kuenda kuitira chibvumirano
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Unguva sei chibvumiro? (How can I cancel my subscription?) {#how-can-i-cancel-my-subscription}
+# Unguva sei chibvumiro? (How can I cancel my subscription?)
 
 Kana uri Ultimate Multisite license, unogona kuva kufamba nekuvuma kuti uunyangwe (renew) mupfungwa yako. Ramba unenge utsvaka zvakanaka:
 

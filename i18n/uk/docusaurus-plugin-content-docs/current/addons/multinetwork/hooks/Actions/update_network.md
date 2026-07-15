@@ -4,7 +4,7 @@ title: Дія - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Дія: update_network {#action-updatenetwork}
+# Дія: update_network
 
 Викликається після оновлення існуючої мережі.
 

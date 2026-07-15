@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 ಪ್ಲಗ್ಇನ್ developers ಗಳಿಗೆ, ಮತ್ತು ನಮಗೂ, ನಮ್ಮ ಎಡಿಟ್ ಪುಟಗಳಿಗೆ ಆಕ್ಷನ್ ಲಿಂಕ್‌ಗಳನ್ನು ಸೇರಿಸಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

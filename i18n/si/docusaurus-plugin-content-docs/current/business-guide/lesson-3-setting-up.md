@@ -3,7 +3,7 @@ title: 'පාඩම 3: ඔබේ ජාලය පිහිටුවීම'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# පාඩම 3: ඔබේ ජාලය සකසීම {#lesson-3-setting-up-your-network}
+# පාඩම 3: ඔබේ ජාලය සකසීම
 
 දැන් ගොඩනඟන වේලාවයි. මෙම පාඩමේදී ඔබ Ultimate Multisite ස්ථාපනය කර FitSite ජාලයේ පදනම වින්‍යාස කරනු ඇත. මෙහි සෑම තීරණයක්ම fitness niche එක සිහි තබාගෙන ගනු ලැබේ.
 

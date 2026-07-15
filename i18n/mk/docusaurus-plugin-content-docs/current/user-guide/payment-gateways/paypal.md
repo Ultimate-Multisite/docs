@@ -3,7 +3,7 @@ title: Поставување на PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Поставување на PayPal штетови (v2) {#setting-up-the-paypal-gateway-v2}
+# Поставување на PayPal штетови (v2)
 
 _**ВАЖНА НАПОМЕНА: Ова приложување се однесува на Ultimate Multisite верзија 2.x.**_
 

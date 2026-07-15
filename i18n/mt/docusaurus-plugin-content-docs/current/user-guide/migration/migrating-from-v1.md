@@ -3,7 +3,7 @@ title: Migrazzja min V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrazz tal-V1 {#migrating-from-v1}
+# Migrazz tal-V1
 
 ## Ultimate Multisite għandu mħolq mill-famija orizzontali biex jkun 1.x għall-famija ta l-rilizzijiet 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 

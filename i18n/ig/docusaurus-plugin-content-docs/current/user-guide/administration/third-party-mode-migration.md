@@ -3,7 +3,7 @@ title: Nkwupụta Mode Migration
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Chuyema Migraçao Modu Third-Party {#third-party-mode-migration}
+# Chuyema Migraçao Modu Third-Party
 
 Superdav AI Agent v1.12.0 inye gị na ị chọrọ ahụ dị ka ọ dị. **Modu third-party (third-party mode) onwe ya bụ "auto" (tụrụ),** nke na-agbanwe ike ịnweta WordPress Abilities API native na WordPress 7.0+ anọ n'ime, ebe a na-agbanwe ihe ndị ahụ ọ dịghị na-akwado.
 

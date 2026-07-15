@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Sut gallaf i cyrraedd y peidiard eich cyfrifau am y tro cyntaf? {#how-can-i-access-my-account-page-for-the-first-time}
+# Sut gallaf i cyrraedd y peidiard eich cyfrifau am y tro cyntaf?
 
 Barchonch yn fawr!
 

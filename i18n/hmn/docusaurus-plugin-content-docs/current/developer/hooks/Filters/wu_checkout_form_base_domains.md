@@ -4,7 +4,7 @@ title: Lim - wu_checkout_form_base_domains
 sidebar_label: wu_checkout_form_base_domains
 _i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
 ---
-# Lim: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+# Lim: wu_checkout_form_base_domains
 
 Lim cov base domain ntawm checkout-form uas siv koom ua ke kom tsis txhob dhau los ua mapped-domain records.
 

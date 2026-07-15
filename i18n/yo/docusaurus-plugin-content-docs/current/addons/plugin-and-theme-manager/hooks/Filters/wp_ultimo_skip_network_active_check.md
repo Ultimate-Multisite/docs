@@ -4,7 +4,7 @@ title: Àlẹmọ - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0eef99879a6634b6dd604ef90235090e
 ---
-# Àlẹmọ: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Àlẹmọ: wp_ultimo_skip_network_active_check
 
 Fàyè gba àwọn developer láti short-circuit ìṣàyẹ̀wò yìí.
 

@@ -3,7 +3,7 @@ title: Expiration de l'adhésion et blocage du site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiration des adhésions et blocage du site {#membership-expiration-and-site-blocking}
+# Expiration des adhésions et blocage du site
 
 Ce guide explique comment Ultimate Multisite gère l'expiration des adhésions, la fin des périodes d'essai et le blocage du site sur le frontend. Il couvre le cycle de vie d'une adhésion, de l'état actif à l'état expiré, les paramètres qui contrôlent si les sites sont bloqués, et ce qu'il faut vérifier lorsque les sites restent accessibles après l'expiration d'une adhésion.
 

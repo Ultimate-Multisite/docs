@@ -4,7 +4,7 @@ title: ଫିଲ୍ଟର - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# ଫିଲ୍ଟର୍: wu_sso_enabled {#filter-wussoenabled}
+# ଫିଲ୍ଟର୍: wu_sso_enabled
 
 କ୍ରସ୍-ଡୋମେନ୍ ସିଙ୍ଗଲ୍-ସାଇନ୍-ଅନ୍ କ୍ଷମତାକୁ ଚାଲୁ/ବନ୍ଦ କରନ୍ତୁ।
 

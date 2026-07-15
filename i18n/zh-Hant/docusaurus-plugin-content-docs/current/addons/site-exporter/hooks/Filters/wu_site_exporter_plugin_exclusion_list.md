@@ -4,7 +4,7 @@ title: 過濾器 - wu_site_exporter_plugin_exclusion_list
 sidebar_label: wu_site_exporter_plugin_exclusion_list
 _i18n_hash: 547f26a2bdb1117cc1616485ef4525e6
 ---
-# 過濾器：wu_site_exporter_plugin_exclusion_list {#filter-wusiteexporterpluginexclusionlist}
+# 過濾器：wu_site_exporter_plugin_exclusion_list
 
 允許開發人員管理一個可能需要從生成 zip 檔案中排除的外掛清單。
 

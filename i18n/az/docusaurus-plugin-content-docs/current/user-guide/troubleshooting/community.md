@@ -3,7 +3,7 @@ title: Cəmiyyət
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community-yə necə qoşulmaq olar {#how-to-join-ultimate-multisite-community}
+# Ultimate Multisite Community-yə necə qoşulmaq olar
 
 Ultimate Multisite Community, digər Ultimate Multisite istifadəçiləri ilə əlaqə saxlaya, məsləhətlər, təcrübələr və daha çox şey bölüşə biləcəyiniz bir platformadır. Ultimate Multisite Community-yə daxil olmaq üçün https://community.ultimatemultisite.com/home ünvanına keçin.
 

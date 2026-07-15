@@ -3,7 +3,7 @@ title: Stillingar Gratis AI Agent
 sidebar_position: 22
 _i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Stillingar Gratis AI Agent {#gratis-ai-agent-settings}
+# Stillingar Gratis AI Agent
 
 Skjárinn **Stillingar → Ítarlegt** í Gratis AI Agent veitir stillingar á stjórnandastigi fyrir bakendatengingar. Þessi síða skjalfestir áframsendingu endurgjafar, lykla fyrir leitaraðila, uppsetningu á stýrðri Superdav þjónustu, stýringar fyrir Google Calendar, TextBee SMS-stillingar og eiginleikafána fyrir allt netið.
 

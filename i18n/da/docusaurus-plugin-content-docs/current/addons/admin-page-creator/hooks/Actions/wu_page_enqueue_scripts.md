@@ -4,7 +4,7 @@ title: Handling - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
 _i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
+# Action: wu_page_enqueue_scripts
 
 Tilføjer en brugerdefineret action her, så vi har et sted at enqueue scripts og styles efter behov\ og sikre, at de kun bliver indlæst på de rigtige sider
 

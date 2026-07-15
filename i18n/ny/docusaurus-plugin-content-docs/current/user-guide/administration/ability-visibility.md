@@ -3,7 +3,7 @@ title: Kufuna Kutsogolera
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Uvwe Wopse (Ability Visibility) {#ability-visibility}
+# Uvwe Wopse (Ability Visibility)
 
 Superdav AI Agent v1.12.0 imapira **Ability Visibility** controls zomwe zikufuna kuti m'moyo wamene (surfaces) zimene zikufuna kudzera ndi chiyembekezo chomwe (ability). Izi zimapangitsa administrators kuti zikufunse bwino kuti zipi za zochitika za agent zikuperekedwa m'moyo wamene wosiyanasiyana, monga REST API, MCP servers, WooCommerce integrations, ndi m'moyo wosiyanasiyana.
 

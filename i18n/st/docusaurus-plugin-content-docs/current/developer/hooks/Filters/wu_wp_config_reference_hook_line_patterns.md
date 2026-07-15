@@ -4,7 +4,7 @@ title: Sefe - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# Sefe: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
+# Sefe: wu_wp_config_reference_hook_line_patterns
 
 Re hlahloba lipaterone tse tharo ha re leka ho fumana moo re ka kenyang constants tsa rona:
 

@@ -3,7 +3,7 @@ title: Integuation í Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Samning við Hestia Control Panel {#hestia-control-panel-integration}
+# Samning við Hestia Control Panel
 
 Þessi leiðferð útskýrir hvernig þú getur sett upp samning með Ultimate Multisite og Hestia svo að dómagnir sem eru mappa í nýtingu þín séu sjálfvirkt sagt í (og fjarlægð) sem Web Domain Aliases í Hestia.
 

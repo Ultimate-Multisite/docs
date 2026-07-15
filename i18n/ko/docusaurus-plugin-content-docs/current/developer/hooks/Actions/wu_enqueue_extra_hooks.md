@@ -4,7 +4,7 @@ title: 액션 - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: 083fc8652d1f1d0bd5abd99da2021106
 ---
-# 작업: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
+# 작업: wu_enqueue_extra_hooks
 
 플러그인 개발자가 추가 훅을 추가할 수 있도록 허용합니다.
 

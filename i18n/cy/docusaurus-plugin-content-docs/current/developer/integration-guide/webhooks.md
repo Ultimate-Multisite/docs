@@ -3,7 +3,7 @@ title: Trin Webhookau
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Trin Webhook {#webhook-handling}
+# Trin Webhook
 
 Crëwch bwyntiau terfyn webhook personol i dderbyn digwyddiadau gan wasanaethau allanol a chysoni data ag Ultimate Multisite.
 

@@ -3,7 +3,7 @@ title: Aliran Orientasi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Aliran Onboarding Pembina Tema {#theme-builder-onboarding-flow}
+# Aliran Onboarding Pembina Tema
 
 Superdav AI Agent v1.12.0 memperkenalkan **aliran onboarding Theme Builder** berpandu yang membantu anda mencipta tema blok tersuai semasa persediaan awal. Ini menggantikan mod Site Builder yang lama dengan pendekatan yang lebih fleksibel dan dibantu oleh agent.
 

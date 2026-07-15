@@ -3,7 +3,7 @@ title: Tarihin Canje-canje na Tikitin Tallafi
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Rajistar Canje-canje na Tikitin Tallafi {#support-tickets-changelog}
+# Rajistar Canje-canje na Tikitin Tallafi
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * An inganta: An cire kundin vendor/ daga bin diddigin Git (tuni .gitignore ya rufe shi), don rage girman ma’ajiyar lamba

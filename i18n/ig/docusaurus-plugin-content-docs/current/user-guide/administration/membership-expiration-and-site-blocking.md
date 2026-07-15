@@ -3,7 +3,7 @@ title: Nchegbu Membership na Nkwupụta Isite
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Fading Membership and Site Blocking {#membership-expiration-and-site-blocking}
+# Fading Membership and Site Blocking
 
 A guide this one explains how Ultimate Multisite handles when memberships end, trial periods finish, and how it blocks sites on the front end. We'll look at what happens to a membership from being active all the way to expired, the settings that decide if sites get blocked or not, and what you need to check if sites are still open even after a membership has ended.
 

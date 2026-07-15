@@ -3,7 +3,7 @@ title: 結帳表單
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# 結帳表單 {#checkout-forms}
+# 結帳表單
 
 結帳表單是在嘗試轉換新客戶時，用來實驗不同做法的簡單且彈性的方式。
 

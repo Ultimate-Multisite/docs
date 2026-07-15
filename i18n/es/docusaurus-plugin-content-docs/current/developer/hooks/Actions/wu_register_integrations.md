@@ -4,7 +4,7 @@ title: Acción - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Acción: wu_register_integrations {#action-wuregisterintegrations}
+# Acción: wu_register_integrations
 
 Se dispara para permitir que las integraciones se registren a sí mismas.
 

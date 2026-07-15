@@ -3,7 +3,7 @@ title: Hostinger Çoklu Kiracılık
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Çoklu Kiracılık {#hostinger-multi-tenancy}
+# Hostinger Çoklu Kiracılık
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, barındırılan alan adlarının mevcut Hostinger alan eşleştirme entegrasyonunun yanı sıra egemen kiracı sağlama (sovereign tenant provisioning) ile birlikte katılması için bir Hostinger çoklu kiracılık yeteneği ekler.
 

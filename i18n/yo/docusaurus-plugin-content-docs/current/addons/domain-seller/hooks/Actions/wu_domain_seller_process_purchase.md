@@ -4,7 +4,7 @@ title: Ìṣe - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 Ó máa ń ṣiṣẹ́ nígbà tí ìrà domain bá ń ṣe lẹ́yìn ìparí checkout.
 

@@ -3,7 +3,7 @@ title: बारम्बार सोधिने प्रश्नहरू
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# बारम्बार सोधिने प्रश्न (Frequently Asked Questions) {#frequently-asked-questions}
+# बारम्बार सोधिने प्रश्न (Frequently Asked Questions)
 
 यहाँ समर्थन अनुरोधहरूमा प्रायः उठ्ने केही **बारम्बार सोधिने प्रश्नहरू** छन्।
 

@@ -3,7 +3,7 @@ title: Ултимативни AI конектор за компатибилне 
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI конектор за компатибилне крајње тачке — евиденција измена {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# Ultimate AI конектор за компатибилне крајње тачке — евиденција измена
 
 ## Верзија 2.0.0 — Објављено 2026-04-24 {#version-200--released-on-2026-04-24}
 

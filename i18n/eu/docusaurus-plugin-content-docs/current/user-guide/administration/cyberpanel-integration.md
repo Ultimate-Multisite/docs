@@ -3,7 +3,7 @@ title: CyberPanel Integrazioa
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integrazioa {#cyberpanel-integration}
+# CyberPanel Integrazioa
 
 Hau erantzun hau irakurri duzu Ultimate Multisite CyberPanel integrazioa konfiguratzeko, nahiz domain-ek network-an mapatutakoak automatikoki CyberPanel-eko virtual host-ek (aurretik eta ondoreko) jokatzen (eta haren aldokia) da, Let's Encrypt-eko auto-SSL provizionamendua opsionala izanik.
 

@@ -3,7 +3,7 @@ title: Notis Pembuangan Mod Pembina Laman
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Notis Penyingkiran Mode Site Builder {#site-builder-mode-removal-notice}
+# Notis Penyingkiran Mode Site Builder
 
 **Mode Site Builder telah dikeluarkan dalam Superdav AI Agent v1.12.0.** Jika anda menggunakan Mode Site Builder, anda harus beralih ke **Setup Assistant agent** untuk penciptaan tema dan persediaan tapak.
 

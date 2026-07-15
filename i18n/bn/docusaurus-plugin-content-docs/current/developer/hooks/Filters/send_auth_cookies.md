@@ -4,7 +4,7 @@ title: ফিল্টার - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies {#filter-sendauthcookies}
+# Filter: send_auth_cookies
 
 এই ফিল্টারটি ব্যবহার করে অথ কুকি ক্লায়েন্টের কাছে পাঠানো বন্ধ করা যায়।
 

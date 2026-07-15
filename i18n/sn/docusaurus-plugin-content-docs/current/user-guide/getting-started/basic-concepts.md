@@ -3,7 +3,7 @@ title: Mavato anokubva
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Dzidziso Zvinhu {#basic-concepts}
+# Dzidziso Zvinhu
 
 Kune mutsva wenyu we WordPress Multisite uye munhu anowanikwa kunge achatanga kuenda nekuita zvinhu zvakawanda. Kuti unzwisise zvinhu izvi, ndiyo zvinotora nguva yakawanda nekuti uchida kuona kuti uri kuona platformi iyo inogara sei kumusoro wose.
 

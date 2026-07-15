@@ -3,7 +3,7 @@ title: Cloudflare 통합
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare 통합 {#cloudflare-integration}
+# Cloudflare 통합
 
 ## 개요 {#overview}
 Cloudflare는 웹사이트를 보호하고 가속하는 데 도움이 되는 선도적인 콘텐츠 전송 네트워크(CDN) 및 보안 제공업체입니다. 이 통합은 Ultimate Multisite와 Cloudflare 간의 자동 도메인 관리를 가능하게 하며, 특히 하위 도메인 멀티사이트 설치에 유용합니다.

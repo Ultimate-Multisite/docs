@@ -3,7 +3,7 @@ title: רעקלאַמע־אינדזשעקטאָר
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# שטעלן רעקלאַמעס אויף אייער נעץ מיט Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
+# שטעלן רעקלאַמעס אויף אייער נעץ מיט Ultimate Multisite: Ad Injector
 
 Ultimate Multisite: Ad Injector איז אַ **פרייער add-on** וואָס גיט אייך די געצייג צו שטעלן רעקלאַמעס אויף אייערע פּלענער גלייך פֿון זייער רעדאַגיר־בלאַט.
 

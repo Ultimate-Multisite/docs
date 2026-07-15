@@ -3,7 +3,7 @@ title: 'Lección 1: Por que gaña o nicho'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lección 1: Por que gaña o nicho {#lesson-1-why-niche-wins}
+# Lección 1: Por que gaña o nicho
 
 Antes de tocar ningún software, tes que entender por que crear para unha audiencia específica é a decisión máis importante que tomarás.
 

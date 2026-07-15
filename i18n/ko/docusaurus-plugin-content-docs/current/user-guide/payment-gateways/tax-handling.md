@@ -3,7 +3,7 @@ title: 세금 처리
 sidebar_position: 4
 _i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# 세금 처리 {#tax-handling}
+# 세금 처리
 
 Ultimate Multisite에는 핵심 플러그인에 세금 징수 모듈이 내장되어 있으므로, 플랜, 패키지 및 서비스에 판매세를 징수해야 하는 경우 애드온을 설치하지 않고도 쉽게 처리할 수 있습니다.
 

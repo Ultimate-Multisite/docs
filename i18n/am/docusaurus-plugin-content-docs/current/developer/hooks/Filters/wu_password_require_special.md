@@ -4,7 +4,7 @@ title: ማጣሪያ - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
+# Filter: wu_password_require_special
 
 በየይለፍ ቃላት ውስጥ ልዩ ምልክቶችን ማስገደድ መቻል አለመቻልን የሚቆጣጠር ማጣሪያ።
 

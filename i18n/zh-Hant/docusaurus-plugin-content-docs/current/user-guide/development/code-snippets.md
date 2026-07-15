@@ -3,7 +3,7 @@ title: 程式碼片段
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 程式碼片段 {#code-snippets-for-v2}
+# v2 程式碼片段
 
 基本上，**WordPress** 的程式碼片段是用來執行某些原本可能需要專用小型 plugin 才能完成的動作。這類程式碼片段通常會放在 WordPress 核心或佈景主題的檔案中（通常是佈景主題的 functions.php 檔案），或者也可以作為 MU plugin 使用。
 

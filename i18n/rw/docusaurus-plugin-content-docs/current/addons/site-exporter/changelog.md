@@ -3,7 +3,7 @@ title: Urutonde rw’impinduka za Kohereza Urubuga
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Ikurikiranyampinduka rya Site Exporter {#site-exporter-changelog}
+# Ikurikiranyampinduka rya Site Exporter
 
 Version: 1.0.6 - Ryasohotse ku wa 2026-05-11
 * Gishya: Ibikurwa muri site ubu bipakira index.php yitangiza ubwayo, bityo ZIP ishobora gushyirwa kuri host nshya hatabayeho gushyira plugin ukwaho

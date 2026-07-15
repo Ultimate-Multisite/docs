@@ -3,7 +3,7 @@ title: 割引コードの作成
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 割引コードの作成（v2） {#creating-discount-codes-v2}
+# 割引コードの作成（v2）
 
 _**重要な注意: この記事は Ultimate Multisite バージョン 2.x に関するものです。**_
 

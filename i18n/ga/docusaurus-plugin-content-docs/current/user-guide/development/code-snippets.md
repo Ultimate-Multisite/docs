@@ -3,7 +3,7 @@ title: Cúpla Clios Code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets para v2 {#code-snippets-for-v2}
+# Code Snippets para v2
 
 An gcuid code snippets ar used chun eol chuid áiteann atá fáil ag cur isteach, a bhphiú mar atá ag iarraidh plugin eile a bheith ar fáil. Is gcinneann code snippets a chur iad sa chuid core WordPress nó an t-theme (goinnte functions.php dearg), nó is féidir a úsáid mar MU plugin.
 

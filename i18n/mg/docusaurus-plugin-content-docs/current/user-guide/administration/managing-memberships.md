@@ -3,7 +3,7 @@ title: Fitantanana ny Fandraisana Anjara
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Idinara Fitantarana (Managing Memberships) {#managing-memberships}
+# Idinara Fitantarana (Managing Memberships)
 
 Ao an'ny Ultimate Multisite ianao dia afaka mitantana ny fandraisana anjara (memberships) sy ny fidirana amin'ireo subscription rehetra ao amin'ny tambajakao. Jereo sy hanova ireo antsipiriany momba ny subscription toy ny plan sy ny vokatra, ny isan'ny toerana, ny vola ho alika sy ny fepetra, ny tantaran'ny famatsiana (payment history), ary ny fotoana (timestamps).
 

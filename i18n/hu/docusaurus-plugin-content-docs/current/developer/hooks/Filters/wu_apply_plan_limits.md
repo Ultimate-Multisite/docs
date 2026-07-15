@@ -4,7 +4,7 @@ title: Szűrő - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# Szűrő: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+# Szűrő: wu_apply_plan_limits
 
 Ez a szűrő lehetővé teszi a plugin fejlesztők számára, hogy rövidkörűen leállítsák a korlátozásokat.
 

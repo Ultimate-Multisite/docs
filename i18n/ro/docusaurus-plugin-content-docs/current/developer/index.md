@@ -3,7 +3,7 @@ title: Documentație pentru Dezvoltatori
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Documentație pentru Dezvoltatori {#developer-documentation}
+# Documentație pentru Dezvoltatori
 
 Acest ghid oferă dezvoltatorilor tot ce este necesar pentru a se integra, extinde sau a dezvolta add-on-uri pentru Ultimate Multisite. Ultimate Multisite transformă o rețea WordPress Multisite într-o platformă Website-as-a-Service (WaaS).
 

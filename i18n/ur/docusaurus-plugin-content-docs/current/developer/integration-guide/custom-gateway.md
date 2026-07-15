@@ -3,7 +3,7 @@ title: حسبِ ضرورت گیٹ وے کی تیاری
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# Custom Gateway ڈیولپمنٹ {#custom-gateway-development}
+# Custom Gateway ڈیولپمنٹ
 
 آپ `Base_Gateway` کلاس کو extend کر کے custom payment gateways بنا سکتے ہیں۔
 

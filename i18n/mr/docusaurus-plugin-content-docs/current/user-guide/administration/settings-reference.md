@@ -3,7 +3,7 @@ title: सेटिंग्ज संदर्भ
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# सेटिंग्ज संदर्भ {#settings-reference}
+# सेटिंग्ज संदर्भ
 
 हे पृष्ठ Ultimate Multisite मधील दैनंदिन प्रशासनावर परिणाम करणाऱ्या सेटिंग्ज आणि अलीकडील वर्तनातील बदलांचा मागोवा ठेवते.
 

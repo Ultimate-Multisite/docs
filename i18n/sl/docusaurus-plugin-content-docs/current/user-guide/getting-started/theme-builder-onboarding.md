@@ -3,7 +3,7 @@ title: Potok vvoja za Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Potok za vdrožanje Theme Builderja {#theme-builder-onboarding-flow}
+# Potok za vdrožanje Theme Builderja
 
 Superdav AI Agent v1.12.0 predstavlja usmerjen **potek za vdrožanje Theme Builderja**, ki vam pomaga ustvariti prilagodljiv temo blokov, med vašo začetno nastavitvijo. To zamenja staro način Site Builderja s bolj fleksibilnim pristopom, ki ga pomaga agent.
 

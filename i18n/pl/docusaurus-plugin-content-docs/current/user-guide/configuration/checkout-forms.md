@@ -3,7 +3,7 @@ title: Formularze realizacji transakcji
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularze checkout {#checkout-forms}
+# Formularze checkout
 
 Formularze checkout to łatwy i elastyczny sposób eksperymentowania z różnymi podejściami podczas prób pozyskiwania nowych klientów.
 

@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_independent_billing_cycle_produ
 sidebar_label: wu_independent_billing_cycle_product_types
 _i18n_hash: 2b9bd3b68a53424272c1c93c6bdc3ef5
 ---
-# Filter: wu_independent_billing_cycle_product_types {#filter-wuindependentbillingcycleproducttypes}
+# Filter: wu_independent_billing_cycle_product_types
 
 ကိုယ်ပိုင် ဘေလ်ကာလ (independent billing cycles) ရှိတဲ့ ထုတ်ကုန်အမျိုးအစားတွေကို စစ်ထုတ်ပေးပါတယ်။
 

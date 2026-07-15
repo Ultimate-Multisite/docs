@@ -3,7 +3,7 @@ title: Teadaud yhteensõjutamata probleemid
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Teadmisedi võidakse vastavat teised pluginidega {#known-incompatibilities-with-other-plugins}
+# Teadmisedi võidakse vastavat teised pluginidega
 
 Ultimate Multisite paigaldamise ja aktiveerimise pärast saata saate probleemid teise pluginidega, mida ei ole lahendatud.
 

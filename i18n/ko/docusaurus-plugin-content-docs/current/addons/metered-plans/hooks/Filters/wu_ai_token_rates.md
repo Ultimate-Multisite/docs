@@ -4,7 +4,7 @@ title: Filter - wu_ai_token_rates
 sidebar_label: wu_ai_token_rates
 _i18n_hash: a0f0f33bd18809e2bafb6fe5995ecf7c
 ---
-# 필터: wu_ai_token_rates {#filter-wuaitokenrates}
+# 필터: wu_ai_token_rates
 
 AI 토큰 청구 요율을 필터링합니다.
 

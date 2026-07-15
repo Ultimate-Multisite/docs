@@ -3,7 +3,7 @@ title: Llwythwr Ffeil Gwawr yr Ychwanegyn
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Llwythwr Ffeil Sunrise Addon {#addon-sunrise-file-loader}
+# Llwythwr Ffeil Sunrise Addon
 
 Mae Ultimate Multisite 2.8.0 yn ychwanegu llwythwr estyniad sunrise ar gyfer ychwanegion ac integreiddiadau MU-plugin personol sydd angen rhedeg yn ystod cychwyniad sunrise WordPress heb olygu’r ffeil `wp-content/sunrise.php` a gynhyrchir.
 

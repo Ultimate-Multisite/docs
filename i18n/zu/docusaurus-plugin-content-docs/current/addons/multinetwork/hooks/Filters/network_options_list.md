@@ -4,7 +4,7 @@ title: Isihlungi - network_options_list
 sidebar_label: network_options_list
 _i18n_hash: 52507c67ffd280dae6a934a8eb9f8b7b
 ---
-# Isihlungi: network_options_list {#filter-networkoptionslist}
+# Isihlungi: network_options_list
 
 Sihlungisisa uhlu lwezinketho zenethiwekhi ezincike ku-domain nendlela yenethiwekhi.
 

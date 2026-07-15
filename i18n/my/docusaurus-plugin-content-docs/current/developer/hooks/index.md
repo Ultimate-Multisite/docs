@@ -3,7 +3,7 @@ title: Hooks ကိုးကားချက်
 sidebar_position: 1
 _i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks ကိုးကားချက် {#hooks-reference}
+# Hooks ကိုးကားချက်
 
 Ultimate Multisite ရှိ **59 actions** နှင့် **118 filters** အားလုံးအတွက် အလိုအလျောက်ထုတ်လုပ်ထားသော စာရွက်စာတမ်း။
 

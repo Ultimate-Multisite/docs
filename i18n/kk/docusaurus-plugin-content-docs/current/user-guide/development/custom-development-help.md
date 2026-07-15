@@ -3,7 +3,7 @@ title: Құрылымдық дамуға көмек
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-дан арқылы жеке дамыту көмегін қалай алуға болады? {#how-to-get-custom-development-help-from-codeable}
+# Codeable-дан арқылы жеке дамыту көмегін қалай алуға болады?
 
 Кейде біздің желі ағындарын дәл қалағандай істеу үшін керемет өзгерістерді қажет етеміз. Егер сіз осыны іздесеңіз, біз [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) платформасын ұсынамыз. Бұл жерде Сіз Ultimate Multisite тәжірибесі бар тәжірибелі дамытушыларды таба аласыз.
 

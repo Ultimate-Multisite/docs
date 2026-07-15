@@ -3,7 +3,7 @@ title: Ngano ang Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ngano sa Ultimate Multisite {#why-ultimate-multisite}
+# Ngano sa Ultimate Multisite
 
 Kung naa ka diri ni article, siguro nadungog nimo nga ang among plugin mahimong solusyon para ma-realize ang imong business idea. Naglaum mi nga makahatag kami sa mga tubag nga imong kinahanglan sa katapusan ni nga bahin.
 

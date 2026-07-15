@@ -3,7 +3,7 @@ title: Com de obtenir ajuda
 sidebar_position: 8
 _i18n_hash: 1369f11d01254b57aef6922f4b5c6a14
 ---
-# Com a ajuda {#how-to-get-help}
+# Com a ajuda
 
 Teniu la teva clau de llicència i adjunta a ella l'accés al nostre equip per ajudar-te a solucionar qualsevol problema que puguis trobar durant el configuració d'Ultimate Multisite.
 

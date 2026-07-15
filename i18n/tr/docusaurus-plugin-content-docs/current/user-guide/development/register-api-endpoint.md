@@ -3,7 +3,7 @@ title: API Uç Noktasını Kaydet
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API uç noktası {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API uç noktası
 
 Bu eğitimde, ağınızdaki yeni bir müşteri için tüm onboarding sürecini oluşturmak üzere Ultimate Multisite /register API uç noktasını nasıl kullanacağınızı ve bunu Zapier ile nasıl yapacağınızı öğreneceksiniz.
 

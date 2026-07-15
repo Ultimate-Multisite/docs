@@ -3,7 +3,7 @@ title: Webhook apstrāde
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook apstrāde {#webhook-handling}
+# Webhook apstrāde
 
 Izveidojiet pielāgotus webhook galapunktus, lai saņemtu notikumus no ārējiem pakalpojumiem un sinhronizētu datus ar Ultimate Multisite.
 

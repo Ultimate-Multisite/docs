@@ -4,7 +4,7 @@ title: Omume - wp_ultimo_vat_activation
 sidebar_label: wp_ultimo_vat_activation
 _i18n_hash: a91f8df2e81413cb0fb355ffc4101b8c
 ---
-# Omume: wp_ultimo_vat_activation {#action-wpultimovatactivation}
+# Omume: wp_ultimo_vat_activation
 
 Kwe ka akụkụ ndị ọzọ nke plugin tinye usoro ha maka activation
 

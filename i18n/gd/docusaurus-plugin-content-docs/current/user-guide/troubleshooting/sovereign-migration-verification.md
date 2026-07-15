@@ -3,7 +3,7 @@ title: Thine aithrisachadh na mion-raidhean
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Verifikeach Mòradh Sovereigne {#sovereign-migration-verification}
+# Verifikeach Mòradh Sovereigne
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ma tha commandaichean de WP-CLI airson miorraichean (migrations) de tenant sovereignty. Rinn an t-earrach nan commandaichean seo gu robh a' chluarachd a' tòiseachadh air a' cheann, a' fhaighinn SSO, no a' sgaidh a' chluarachd a' tha a' gineall.
 

@@ -3,7 +3,7 @@ title: Tsoom qhia khoom tsoom ntawv loog hais rau Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# ព្រឹត្តិការណ៍៖ ចុះឈ្មោះគណនីតាមរយៈ Zapier {#event-register-an-account-via-zapier}
+# ព្រឹត្តិការណ៍៖ ចុះឈ្មោះគណនីតាមរយៈ Zapier
 
 នៅក្នុងអត្ថបទ [Integrating Ultimate Multisite with Zapier](zapier.md) យើងបានពិភាក្សាអំពីរបៀបប្រើ Zapier ដើម្បីធ្វើសកម្មភាពផ្សេងៗក្នុង Ultimate Multisite ដោយផ្អែកលើ trigger និង event។ នៅក្នុងអត្ថបទនេះ យើងនឹងបង្ហាញពីរបៀបដែលអ្នកអាចភ្ជាប់កម្មវិធីភាគីទីបី (3rd party applications)។ យើងនឹងប្រើ Google Sheets ជាប្រភពទិន្នន័យ ហើយបញ្ជូនព័ត៌មានទៅកាន់ Ultimate Multisite ដើម្បីចុះឈ្មោះគណនី។
 

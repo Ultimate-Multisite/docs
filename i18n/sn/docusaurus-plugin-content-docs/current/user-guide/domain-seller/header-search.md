@@ -3,7 +3,7 @@ title: Kutsvaga Domain yeMusoro
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Kutsvaga Domain muHeader {#header-domain-search}
+# Kutsvaga Domain muHeader
 
 Shandisa setup iyi kana uchida fomu diki reheader rinotanga kutsvaga domain, wobva warega mutengi asarudze kubva kuma domain aripo mukubhadhara kweUltimate Multisite.
 

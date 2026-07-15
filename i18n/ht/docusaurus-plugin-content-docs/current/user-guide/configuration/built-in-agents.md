@@ -3,7 +3,7 @@ title: Ajan ki entegre
 sidebar_position: 12
 _i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents entegre yo {#built-in-agents}
+# Agents entegre yo
 
 Gratis AI Agent v1.9.0 vini ak senk agents entegre, chak youn pre-konfigire ak yon seri zouti ki konsantre, yon system prompt ki adapte, ak sijesyon pou kòmanse ki koresponn ak travay komen nan zòn sa a. Lè w chanje ant agents yo, sa chanje sa asistan an ka fè ak fason li reponn — san okenn konfigirasyon bò kote pa w. Superdav AI Agent v1.18.0 ka ajoute zouti ki pran orè an konsiderasyon, dosye rapèl, pòtay apwobasyon, ak notifikasyon SMS nan workflow sa yo lè entegrasyon ki gen rapò yo konfigire.
 

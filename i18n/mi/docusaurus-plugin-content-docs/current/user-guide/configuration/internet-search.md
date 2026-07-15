@@ -3,7 +3,7 @@ title: Pōwhiri i te whakatūpāpāke o te pūrere wāhi i te rāhui
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Pātai i te Raukura (Internet Search) {#internet-search}
+# Pātai i te Raukura (Internet Search)
 
 Ko te Gratis AI Agent v1.5.0 e whānui i te kaha o **Internet Search**, e hiahia ana ki te tino pai, e hiahia ana ki te whai i mōhio hou mai i te wāhi hou (web) akorua i roto i te whaikōrero. Ko tēnei e whakamahinga ana i te [Brave Search API](https://brave.com/search/api/) heta ko te [Tavily API](https://tavily.com/).
 

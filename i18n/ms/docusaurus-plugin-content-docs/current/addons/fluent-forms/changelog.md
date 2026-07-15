@@ -3,7 +3,7 @@ title: Fluent Forms Log Perubahan
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Log Perubahan Fluent Forms {#fluent-forms-changelog}
+# Log Perubahan Fluent Forms
 
 Versi: 2.0.1 - Dilancar pada 2025-09-28
 

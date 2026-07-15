@@ -4,7 +4,7 @@ title: Aiki - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Aiki: wu_sso_loaded {#action-wussoloaded}
+# Aiki: wu_sso_loaded
 
 Ba masu haɓaka ƙari damar ƙara ƙarin hooks, idan ana buƙata.
 

@@ -3,7 +3,7 @@ title: Temu Bual Penemuan
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Temu Bual Penemuan {#discovery-interview}
+# Temu Bual Penemuan
 
 **Temu Bual Penemuan** adalah langkah pertama dalam proses reka bentuk Theme Builder. Ia mengumpulkan maklumat mengenai laman web, perniagaan, dan keutamaan reka bentuk anda untuk mencipta tema yang diperibadikan.
 

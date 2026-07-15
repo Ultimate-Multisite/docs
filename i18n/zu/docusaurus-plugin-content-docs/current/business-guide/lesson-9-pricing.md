@@ -3,7 +3,7 @@ title: 'Isifundo 9: Ukubeka amanani ukuze kube nenzuzo'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Isifundo 9: Ukubeka Amanani Enzuzo {#lesson-9-pricing-for-profit}
+# Isifundo 9: Ukubeka Amanani Enzuzo
 
 Esifundweni 5 sabeka amanani okuqala ezinhlelo ze-FitSite. Manje sithuthukisa isu lamanani ngamasu akhulisa imali engenayo, akhuthaza ukuthuthukela ezinhlelweni eziphezulu, futhi anciphise ukushiya kwamakhasimende.
 

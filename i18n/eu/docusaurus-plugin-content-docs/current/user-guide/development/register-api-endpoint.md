@@ -3,7 +3,7 @@ title: API Endpoint-a emateko
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API-ko Endpointa {#the-ultimate-multisite-register-api-endpoint}
+# Ultimate Multisite Register API-ko Endpointa
 
 Hauzuaren tutorial-an, Ultimate Multisite /register API endpointa erabiliziek, network-ek berri kliunturari (customer) irudi behar duen guztia bereizten eta Zapier-rekin ondo egin dezakezu.
 

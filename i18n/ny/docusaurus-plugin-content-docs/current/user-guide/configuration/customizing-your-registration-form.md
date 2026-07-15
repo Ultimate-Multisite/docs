@@ -3,7 +3,7 @@ title: Kusintha Fomu Yanu Yolembetsa
 sidebar_position: 17
 _i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kusintha Fomu yanu Yolembetsa {#customizing-your-registration-form}
+# Kusintha Fomu yanu Yolembetsa
 
 Kuti network yanu iwoneke yapadera kuposa ma SaaS ena onse omangidwa pa WordPress platform, Ultimate Multisite imakulolani kusintha masamba anu olembetsa ndi olowera pogwiritsa ntchito mbali yathu ya **Checkout Forms**.
 

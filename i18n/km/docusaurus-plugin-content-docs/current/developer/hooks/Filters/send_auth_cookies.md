@@ -4,7 +4,7 @@ title: តម្រង - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies {#filter-sendauthcookies}
+# Filter: send_auth_cookies
 
 អនុញ្ញាតឱ្យទប់ស្កាត់ auth cookies មិនឱ្យត្រូវបានផ្ញើទៅកាន់ client ពិតប្រាកដ។
 

@@ -3,7 +3,7 @@ title: ການເຊື່ອມຕໍ່ກັບ Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# ການເຊື່ອມຕໍ່ກັບ Hestia Control Panel {#hestia-control-panel-integration}
+# ການເຊື່ອມຕໍ່ກັບ Hestia Control Panel
 
 ຄູ່ມືນີ້ຈະອະທິບາຍວິທີການຕັ້ງຄ່າການເຊື່ອມຕໍ່ຂອງ Ultimate Multisite Hestia ເພື່ອໃຫ້ໂດເມນທີ່ຖືກแมપຢູ່ໃນເຄືອຂ່າຍຂອງທ່ານຖືກເພີ່ມ (ແລະ ລຶບ) ອັດຕະໂນມັດເປັນ Web Domain Aliases ໃນ Hestia.
 

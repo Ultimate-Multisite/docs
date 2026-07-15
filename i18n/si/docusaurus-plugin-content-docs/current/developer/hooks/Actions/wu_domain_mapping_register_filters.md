@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_domain_mapping_register_filters
 sidebar_label: wu_domain_mapping_register_filters
 _i18n_hash: 835b5df60eb33048fe4159fb4243176c
 ---
-# ක්‍රියාව: wu_domain_mapping_register_filters {#action-wudomainmappingregisterfilters}
+# ක්‍රියාව: wu_domain_mapping_register_filters
 
 සිතියම්කරණය සක්‍රිය වීමට පෙර සමහර plugins URL සුරකිනු ඇත, නැතහොත් ඉහත පෙරහන්වලට ඇතුළත් නොවන වෙනත් ක්‍රමයකින් URLs සාදනු ඇත.
 

@@ -3,7 +3,7 @@ title: Form Checkout
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulir Checkout {#checkout-forms}
+# Formulir Checkout
 
 Formulir Checkout iku cara sing gampang lan fleksibel kanggo nyoba pendekatan beda nalika arep ngubah pelanggan anyar dadi pembeli.
 

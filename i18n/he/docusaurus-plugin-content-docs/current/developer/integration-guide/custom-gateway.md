@@ -3,7 +3,7 @@ title: פיתוח שער מותאם אישית
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# פיתוח Gateway מותאם אישית {#custom-gateway-development}
+# פיתוח Gateway מותאם אישית
 
 אפשר ליצור שערי תשלום מותאמים אישית על ידי הרחבת המחלקה `Base_Gateway`.
 

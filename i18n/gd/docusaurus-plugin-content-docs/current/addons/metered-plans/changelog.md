@@ -3,7 +3,7 @@ title: Loga atharrachaidhean nam planaichean meataichte
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Loga Atharrachaidhean nam Planaichean Meataichte {#metered-plans-changelog}
+# Loga Atharrachaidhean nam Planaichean Meataichte
 
 Tionndadh 1.1.0 - Air fhoillseachadh air 2026-05-05
 - Ùr: Cunntasachadh thòcan AI airson fo-làraichean ioma-làraich — lorg agus cuir cunntas air cleachdadh thòcan AI thar làraichean luchd-ceannach le reataichean gach tòcan a ghabhas rèiteachadh

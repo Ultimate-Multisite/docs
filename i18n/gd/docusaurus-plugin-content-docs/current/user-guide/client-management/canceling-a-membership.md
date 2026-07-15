@@ -3,7 +3,7 @@ title: A' chlàradh a' chàirbhinn a' chàirbhinn
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# A' Chlàradh a Mòrraidh (v2) {#canceling-a-membership-v2}
+# A' Chlàradh a Mòrraidh (v2)
 
 _**NOTE CRUCIAL: An tòiseil a' chluinn an article seo ar Ultimate Multisite version 2.x.**_
 

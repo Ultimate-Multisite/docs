@@ -3,7 +3,7 @@ title: Integrasi cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrasi cPanel {#cpanel-integration}
+# Integrasi cPanel
 
 ## Gambaran Umum {#overview}
 cPanel iku salah satu panel kontrol hosting paling populer sing digunakake akeh penyedia hosting shared lan dedicated. Integrasi iki bisa nggawe sinkronisasi domain otomatis antara Ultimate Multisite lan cPanel, ngidini sampeyan nambah alias domain lan subdomain ing akun cPanel-mu kanthi otomatis.

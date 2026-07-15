@@ -4,7 +4,7 @@ title: Ketso - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Ketso: set_logged_in_cookie {#action-setloggedincookie}
+# Ketso: set_logged_in_cookie
 
 E sebetsa hang-hang pele cookie ea netefatso ea motho ea kene e behoa.
 

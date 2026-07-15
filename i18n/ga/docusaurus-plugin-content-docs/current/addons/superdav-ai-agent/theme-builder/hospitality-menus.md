@@ -3,7 +3,7 @@ title: Biachláir Fáilteachais
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Biachláir Fáilteachais {#hospitality-menus}
+# Biachláir Fáilteachais
 
 Ligeann an ghné **Biachláir Fáilteachais** do Theme Builder leathanaigh struchtúrtha bia agus dí a ghiniúint agus a leabú go díreach isteach i do shuíomh WordPress.
 

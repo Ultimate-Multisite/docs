@@ -3,7 +3,7 @@ title: Gach-a-steach a' chluainn
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search {#internet-search}
+# Internet Search
 
 Ais Eilean (Gratis AI Agent) v1.5.0 a sgilidh **Internet Search** fhaighinn a leas a tha a' bheachd an AI assistant a faighinn fiosrachadh a tha a' chluich air an t-àite a' chluich a dhèanamh anns an seann. Tha seo a' chluichdaidh de [Brave Search API](https://brave.com/search/api/) no [Tavily API](https://tavily.com/).
 

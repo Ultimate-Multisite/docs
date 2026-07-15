@@ -4,7 +4,7 @@ title: Filter - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filter: wu_page_get_title_links {#filter-wupagegettitlelinks}
+# Filter: wu_page_get_title_links
 
 플러ഗിన్ உருவாக்குநர்கள் மற்றும் நமக்கே, எங்கள் திருத்தும் பக்கங்களில் செயல் இணைப்புகளைச் சேர்க்க இது அனுமதிக்கிறது.
 

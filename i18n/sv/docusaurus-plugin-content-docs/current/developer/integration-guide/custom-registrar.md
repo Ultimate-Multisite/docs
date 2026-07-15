@@ -3,7 +3,7 @@ title: Bygga en anpassad registrar-integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Bygga en anpassad registrar-integration {#building-a-custom-registrar-integration}
+# Bygga en anpassad registrar-integration
 
 Domain Seller-addonet använder ett mönster som kallas **Integration Registry**. Varje registrar är en PHP-klass som implementerar `Domain_Selling_Capability` och registrerar sig via action-hooken `wu_domain_seller_register_capabilities`.
 

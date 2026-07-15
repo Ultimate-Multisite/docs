@@ -3,7 +3,7 @@ title: Whakapapa Whakawhanaungatanga
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# He aha te whakamahi i a Codeable mō āhuatanga whakawhanake tino pai? {#how-to-get-custom-development-help-from-codeable}
+# He aha te whakamahi i a Codeable mō āhuatanga whakawhanake tino pai?
 
 Māroaho, he tino kitea ki te wakamana ahau ki te whai i ngā kaha whakawhanake tino pai kia tika ai ngā mihi o tātou. Ko te mea e tino kitea ana, he tino pai tō [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) mō atu, he wāhi i taea ai koe te whai i whānau whānau whai mana me ngā whai whakawhanake e tino whai hoatu i te manawa o Ultimate Multisite.
 

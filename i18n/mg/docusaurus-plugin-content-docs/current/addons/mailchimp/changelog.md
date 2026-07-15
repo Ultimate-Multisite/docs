@@ -3,7 +3,7 @@ title: Mailchimp Tantaran'ny fanovana
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Tantaran'ny fanovana Mailchimp {#mailchimp-changelog}
+# Tantaran'ny fanovana Mailchimp
 
 Dika: 1.1.1 - Navoaka tamin'ny 2025-09-28
 

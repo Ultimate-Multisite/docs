@@ -3,7 +3,7 @@ title: Smanjivanje plana
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Smanjenje plana (v2) {#downgrading-a-plan-v2}
+# Smanjenje plana (v2)
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 

@@ -4,7 +4,7 @@ title: 過濾器 - wu_mcp_include_ability
 sidebar_label: wu_mcp_include_ability
 _i18n_hash: 5925d523ccf0a8d9477e873ec3d891c0
 ---
-# 過濾器：wu_mcp_include_ability {#filter-wumcpincludeability}
+# 過濾器：wu_mcp_include_ability
 
 用於覆寫 MCP 能力是否包含的決定。
 

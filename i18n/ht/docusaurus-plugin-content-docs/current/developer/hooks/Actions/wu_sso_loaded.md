@@ -4,7 +4,7 @@ title: Aksyon - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Aksyon: wu_sso_loaded {#action-wussoloaded}
+# Aksyon: wu_sso_loaded
 
 Pèmèt devlopè plugin yo ajoute hooks anplis, si sa nesesè.
 

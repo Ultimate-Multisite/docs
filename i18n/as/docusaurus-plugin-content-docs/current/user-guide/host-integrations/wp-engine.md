@@ -3,7 +3,7 @@ title: WP Engine একীকরণ
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine Integration {#wp-engine-integration}
+# WP Engine Integration
 
 ## সামগ্ৰিক ব্যৱস্থা (Overview) {#overview}
 WP Engine হৈছে এটা প্ৰিমিয়াম ম্যনেজড WordPress হোস্টিং প্লেটফৰ্ম যিয়ে WordPress সাইটসমূহৰ বাবে অপটিমাইজড প্ৰফৰমেঞ্চ, সুৰক্ষা আৰু স্কেলিবিলিটি প্ৰদান কৰে। এই ইন্টিগ্ৰেচনটোৱে Ultimate Multisite আৰু WP Engine ৰ মাজত ডোমেইন স্বয়ংক্রিয়ভাৱে Sync কৰাত সহায় কৰে।

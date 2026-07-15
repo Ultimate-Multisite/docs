@@ -4,7 +4,7 @@ title: سۈزگۈچ - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# سۈزگۈچ: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
+# سۈزگۈچ: wu_mt_syncable_user_meta_keys
 
 يىراقتىكى nodes غا ماسقەدەملەش كېرەك بولغان ئىشلەتكۈچى meta keys تىزىملىكىنى سۈزۈپ بېرىدۇ.
 

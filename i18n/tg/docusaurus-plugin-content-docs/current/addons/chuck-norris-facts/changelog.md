@@ -3,7 +3,7 @@ title: Сабти тағйироти Chuck Norris Facts
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Тағйироти Далелҳои Chuck Norris {#chuck-norris-facts-changelog}
+# Тағйироти Далелҳои Chuck Norris
 
 ### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Илова шуд: Функсияи навсозии худкор тавассути сервери навсозии Ultimate Multisite

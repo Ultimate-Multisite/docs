@@ -4,7 +4,7 @@ title: Saringan - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Saringan: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Saringan: wu_pending_payment_message
 
 Ngidinan pamaké pikeun ngarobah pesen ngeunaan pamayaran nu keur ngantosan.
 

@@ -3,7 +3,7 @@ title: 'Aula 8: Incorporació del Client'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Aula 8: Incorporació del Client {#lesson-8-customer-onboarding}
+# Aula 8: Incorporació del Client
 
 Faire que un client es registri és només la meitat del treball. Si es connecta, es sent sobrebordat i no torna mai més, l'has perdut. Aquesta aula disenya l'experiència que transforma un nou registre en un client actiu i comprometut.
 

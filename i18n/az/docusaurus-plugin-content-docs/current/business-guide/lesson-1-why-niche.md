@@ -3,7 +3,7 @@ title: 'Dərslik 1: Nişin Niyə Qalib Gəldiyi'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Dərs 1: Niş Niyə Üstün Görünür {#lesson-1-why-niche-wins}
+# Dərs 1: Niş Niyə Üstün Görünür
 
 Heç bir proqram təminatına toxunmadan əvvəl, müəyyən bir auditoriya üçün qurmağın sizin verə biləcəyiniz ən vacib qərar olduğunu anlamalısınız.
 

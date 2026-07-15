@@ -4,7 +4,7 @@ title: 액션 - wu_mt_provider_log
 sidebar_label: wu_mt_provider_log
 _i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
 ---
-# 작업: wu_mt_provider_log {#action-wumtproviderlog}
+# 작업: wu_mt_provider_log
 
 프로바이더가 메시지를 기록할 때 발생합니다.
 

@@ -3,7 +3,7 @@ title: ማዋቀር እና የአቅራቢ ውቅር
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# የDomain ሻጭ፦ ማዋቀር እና የአቅራቢ ውቅር {#domain-seller-setup-and-provider-configuration}
+# የDomain ሻጭ፦ ማዋቀር እና የአቅራቢ ውቅር
 
 የDomain ሻጭ addon በሚያስፈልጉ ደረጃዎች ሁሉ የሚመራዎትን የማዋቀር wizard ይዞ ይመጣል። ይህ ገጽ የwizard ፍሰትን እና በኋላ አቅራቢዎችን እንዴት ማዋቀር ወይም እንደገና ማዋቀር እንደሚቻል ይሸፍናል።
 

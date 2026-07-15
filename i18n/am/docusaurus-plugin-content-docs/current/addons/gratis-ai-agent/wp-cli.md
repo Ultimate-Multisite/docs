@@ -3,7 +3,7 @@ title: WP-CLI ማጣቀሻ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ማጣቀሻ {#wp-cli-reference}
+# WP-CLI ማጣቀሻ
 
 Gratis AI Agent የኤጀንቱን ለማጥኛ (benchmarking)፣ ችሎታዎችን ለማስተዳደር እና የኤጀንቱን ሁኔታ ከኮማንድ መስመር (command line) ላይ ለመጠየቅ `wp gratis-ai-agent` የኮማንድ ቤተሰብን ያቀርባል። ሁሉም የኮማንድዎች ስብስብ WP-CLI 2.0 ወይም ከዚያ በላይ ያስፈልጋል።
 

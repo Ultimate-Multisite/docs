@@ -4,7 +4,7 @@ title: Nzacha - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Nzacha: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Nzacha: wu_post_count_statuses
 
 Kwe ka ndị mmepe ngwa mgbakwunye gbanwee ọnọdụ mbipụta a ga-agụta. Na ndabara, a na-agụta mbipụta e bipụtara na mbipụta nkeonwe
 

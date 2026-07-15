@@ -4,7 +4,7 @@ title: Sefe - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Sefe: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
+# Sefe: wu_checkout_step_validation_submittable_field_types
 
 Lumella bahlahisi ho tlola tlhahlobo haeba lebala le ka romelloa ka boiketsetso.
 

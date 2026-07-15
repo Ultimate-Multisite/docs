@@ -3,7 +3,7 @@ title: Uququzelelo loMakhi weSayithi v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Ulungelelwaniso Lomakhi Wesayithi v2 {#site-builder-orchestration-v2}
+# Ulungelelwaniso Lomakhi Wesayithi v2
 
 Ulungelelwaniso Lomakhi Wesayithi v2 (olwaziswa kwi Gratis AI Agent v1.4.0) yinjini enika amandla ukwenziwa kweewebhusayithi ngamanyathelo amaninzi. Xa ucela i-agent ukuba "yakha iwebhusayithi yerestyu" okanye "dala ipotifoliyo enebhlog", umlungelelanisi wahlula loo njongo ikwinqanaba eliphezulu ibe **sisicwangciso** esakhiweyo, afumanise ii-plugin ezifunekayo ukuyizalisekisa, enze inyathelo ngalinye ngokulandelelana, alandele inkqubela, kwaye aphinde achache kwiimpazamo ngokuzenzekelayo.
 

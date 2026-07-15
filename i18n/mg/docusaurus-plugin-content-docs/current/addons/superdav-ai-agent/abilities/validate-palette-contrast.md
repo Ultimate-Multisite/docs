@@ -3,7 +3,7 @@ title: Hamarino ny fifanoheran'ny paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Hamarino ny Fifanoheran’ny Paleta {#validate-palette-contrast}
+# Hamarino ny Fifanoheran’ny Paleta
 
 Ny fahaiza-manao **Validate Palette Contrast** dia manamarina ny tsiroaroan-loko ao amin’ny paletan’ny endrikao raha mifanaraka amin’ny WCAG (Web Content Accessibility Guidelines) alohan’ny hampiharana azy amin’ny theme-nao.
 

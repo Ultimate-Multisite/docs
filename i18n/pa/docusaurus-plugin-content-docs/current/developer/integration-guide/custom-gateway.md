@@ -3,7 +3,7 @@ title: ਕਸਟਮ Gateway ਵਿਕਾਸ
 sidebar_position: 2
 _i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# ਕਸਟਮ ਗੇਟਵੇ ਵਿਕਾਸ {#custom-gateway-development}
+# ਕਸਟਮ ਗੇਟਵੇ ਵਿਕਾਸ
 
 ਤੁਸੀਂ `Base_Gateway` ਕਲਾਸ ਨੂੰ ਵਧਾ ਕੇ ਕਸਟਮ ਭੁਗਤਾਨ ਗੇਟਵੇ ਬਣਾ ਸਕਦੇ ਹੋ।
 

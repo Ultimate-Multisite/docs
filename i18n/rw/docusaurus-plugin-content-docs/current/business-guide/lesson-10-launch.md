@@ -3,7 +3,7 @@ title: 'Isomo rya 10: Umunsi wo gutangiza'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Isomo rya 10: Umunsi wo Gutangiza {#lesson-10-launch-day}
+# Isomo rya 10: Umunsi wo Gutangiza
 
 Byose byarubatswe. Mbere yo gufungura imiryango, iri somo rikunyura ku rutonde rwo kugenzura mbere yo gutangiza kugira ngo wizere ko nta kintu cyangiritse, kibuze, cyangwa giteye isoni.
 

@@ -4,7 +4,7 @@ title: Veprim - wu_domain_seller_process_purchase
 sidebar_label: wu_domain_seller_process_purchase
 _i18n_hash: af00bd289685ee01ed7a15275fa410c6
 ---
-# Action: wu_domain_seller_process_purchase {#action-wudomainsellerprocesspurchase}
+# Action: wu_domain_seller_process_purchase
 
 Aktivizohet kur një blerje domeni po përpunohet pas përfundimit të checkout.
 

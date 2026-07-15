@@ -4,7 +4,7 @@ title: 필터 - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# 필터: secure_logged_in_cookie {#filter-secureloggedincookie}
+# 필터: secure_logged_in_cookie
 
 로그인 쿠키가 HTTPS를 통해서만 전송되어야 하는지 여부를 필터링합니다.
 

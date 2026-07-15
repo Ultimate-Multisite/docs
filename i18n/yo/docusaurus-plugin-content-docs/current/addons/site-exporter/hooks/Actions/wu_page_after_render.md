@@ -4,7 +4,7 @@ title: Ìṣe - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: 77cf47ec19b13c20beb0aa2d61dcf857
 ---
-# Ìgbésẹ̀: wu_page_after_render {#action-wupageafterrender}
+# Ìgbésẹ̀: wu_page_after_render
 
 Ó máa ń ṣiṣẹ́ lẹ́yìn fífi ojú-ewé hàn.
 

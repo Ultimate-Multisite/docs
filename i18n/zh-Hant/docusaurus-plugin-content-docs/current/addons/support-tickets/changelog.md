@@ -3,7 +3,7 @@ title: 支援單變更日誌
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# 支援票務更新日誌 {#support-tickets-changelog}
+# 支援票務更新日誌
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * 改進：移除了 vendor/ 目錄的 Git 追蹤 (此目錄已由 .gitignore 排除)，從而減小了儲存庫大小

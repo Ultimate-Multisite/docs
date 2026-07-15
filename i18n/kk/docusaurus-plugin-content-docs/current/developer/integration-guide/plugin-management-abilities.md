@@ -3,7 +3,7 @@ title: Плагиндерді басқару мүмкіндіктері
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin басқару қабілеттері {#plugin-management-abilities}
+# Plugin басқару қабілеттері
 
 Gratis AI Agent v1.5.0 нұсқасында AI көмекшісі әңгіме барысында шақыра алатын **7 plugin басқару қабілеті** бар. Бұл қабілеттер [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) арқылы орнатылған WordPress plugin-дерін бағдарламалық түрде басқаруды қамтамасыз етеді.
 

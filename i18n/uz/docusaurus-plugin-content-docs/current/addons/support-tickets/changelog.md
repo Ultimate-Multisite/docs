@@ -3,7 +3,7 @@ title: Qo‘llab-quvvatlash chiptalari o‘zgarishlar jurnali
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Qo‘llab-quvvatlash tiketlari o‘zgarishlar jurnali {#support-tickets-changelog}
+# Qo‘llab-quvvatlash tiketlari o‘zgarishlar jurnali
 
 ### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Yaxshilandi: vendor/ katalogi Git kuzatuvidan olib tashlandi (.gitignore tomonidan allaqachon qamrab olingan), repository hajmi kamaytirildi

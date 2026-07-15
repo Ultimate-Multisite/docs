@@ -3,7 +3,7 @@ title: 第九课：盈利定价
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 第 9 课：盈利定价策略 {#lesson-9-pricing-for-profit}
+# 第 9 课：盈利定价策略
 
 在第 5 课中，我们为 FitSite 规划了初始价格。现在，我们将使用提高收入、鼓励升级和降低客户流失率等技术来完善定价策略。
 

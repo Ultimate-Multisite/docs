@@ -3,7 +3,7 @@ title: Kontrol Paneli Entegrasyonunu Geliştir
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance Kontrol Paneli Entegrasyonu {#enhance-control-panel-integration}
+# Enhance Kontrol Paneli Entegrasyonu
 
 ## Genel Bakış {#overview}
 Enhance, güçlü hosting otomasyonu ve yönetim özellikleri sunan modern bir kontrol panelidir. Bu entegrasyon, Ultimate Multisite ile Enhance Kontrol Paneli arasında otomatik domain senkronizasyonu ve SSL sertifika yönetimi sağlar.

@@ -3,7 +3,7 @@ title: 'Lecția 8: Onboarding-ul clienților'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lecția 8: Onboarding-ul Clientului {#lesson-8-customer-onboarding}
+# Lecția 8: Onboarding-ul Clientului
 
 A face ca un client să se înscrie este doar prima etapă. Dacă se autentifică, se simte copleșit și nu mai revine, l-ai pierdut. Această lecție proiectează experiența care transformă o înscriere nouă într-un client activ și implicat.
 

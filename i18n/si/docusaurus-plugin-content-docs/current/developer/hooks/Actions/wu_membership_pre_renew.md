@@ -4,7 +4,7 @@ title: ක්‍රියාව - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# ක්‍රියාව: wu_membership_pre_renew {#action-wumembershipprerenew}
+# ක්‍රියාව: wu_membership_pre_renew
 
 සාමාජිකත්වය අලුත් කිරීමට පෙර ක්‍රියාත්මක වේ.
 

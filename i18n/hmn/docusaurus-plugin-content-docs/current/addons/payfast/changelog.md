@@ -3,7 +3,7 @@ title: PayFast Cov Ntaub Ntawv Hloov Tshiab
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast Daim ntawv teev kev hloov pauv {#payfast-changelog}
+# PayFast Daim ntawv teev kev hloov pauv
 
 Qauv: 1.0.2 - Tso tawm rau 2025-09-28
 

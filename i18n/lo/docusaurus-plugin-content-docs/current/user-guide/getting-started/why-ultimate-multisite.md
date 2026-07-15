@@ -3,7 +3,7 @@ title: ເປັນຫຍັງຕ້ອງໃຊ້ Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# ເປັນຫຍັງຕ້ອງໃຊ້ Ultimate Multisite {#why-ultimate-multisite}
+# ເປັນຫຍັງຕ້ອງໃຊ້ Ultimate Multisite
 
 ຖ້າທ່ານໄດ້ມາຮອດບົດຄວາມນີ້, ອາດຈະໄດ້ຍິນວ່າ plugin ຂອງພວກເຮົາອາດເປັນຄຳຕອບທີ່ຈະເຮັດໃຫ້ແນວຄິດທຸລະກິດຂອງທ່ານເປັນຈິງ. ພວກເຮົາຫວັງວ່າທ່ານຈະໄດ້ຮັບຄຳຕອບທີ່ຕ້ອງການໃນທ້າຍບົດຄວາມນີ້.
 

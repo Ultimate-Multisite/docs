@@ -3,7 +3,7 @@ title: 'Phunziro 10: Tsiku Loyambitsa'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Phunziro 10: Tsiku Loyambitsa {#lesson-10-launch-day}
+# Phunziro 10: Tsiku Loyambitsa
 
 Chilichonse chamangidwa. Musanatsegule zitseko, phunziroli limadutsa mndandanda wofunikira musanayambitse kuti mutsimikize kuti palibe chosweka, chosowa, kapena chochititsa manyazi.
 

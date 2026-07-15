@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Addons Ultimate Multisite {#ultimate-multisite-addons}
+# Addons Ultimate Multisite
 
 Addons yo elaji Ultimate Multisite ak fonksyonalite ak entegrasyon anplis. Pifò addons yo peye epi yo ka achte yo sou [ultimatemultisite.com](https://ultimatemultisite.com).
 

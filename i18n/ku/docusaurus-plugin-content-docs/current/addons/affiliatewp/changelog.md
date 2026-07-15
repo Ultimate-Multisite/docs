@@ -3,7 +3,7 @@ title: Tomara guhertinan a AffiliateWP
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Tomara guhertinên AffiliateWP {#affiliatewp-changelog}
+# Tomara guhertinên AffiliateWP
 
 Guherto: 2.0.1 - Di 2025-09-28 de hat berdan
 

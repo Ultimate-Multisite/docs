@@ -3,7 +3,7 @@ title: E-poçtlar və Yayım mesajları göndərilməsi
 sidebar_position: 11
 _i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-poçtların və yayımların göndərilməsi (v2) {#sending-emails-and-broadcasts-v2}
+# E-poçtların və yayımların göndərilməsi (v2)
 
 _**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 

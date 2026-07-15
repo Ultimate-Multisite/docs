@@ -4,7 +4,7 @@ title: Gnìomh - wu_page_before_render
 sidebar_label: wu_page_before_render
 _i18n_hash: 80ace5356783d6d6ad2789d77480ace2
 ---
-# Gnìomh: wu_page_before_render {#action-wupagebeforerender}
+# Gnìomh: wu_page_before_render
 
 Leig le luchd-leasachaidh phlugan susbaint a bharrachd a chur ris mus clò-bhuail sinn an duilleag.
 

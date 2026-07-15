@@ -3,7 +3,7 @@ title: Integrace Hostinger (hPanel)
 sidebar_position: 7
 _i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrace Hostinger (hPanel) {#hostinger-hpanel-integration}
+# Integrace Hostinger (hPanel)
 
 ## Přehled {#overview}
 

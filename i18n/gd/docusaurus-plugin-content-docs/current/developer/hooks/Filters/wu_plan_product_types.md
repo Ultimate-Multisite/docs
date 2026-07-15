@@ -4,7 +4,7 @@ title: Criathrag - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Criathrag: wu_plan_product_types {#filter-wuplanproducttypes}
+# Criathrag: wu_plan_product_types
 
 Criathraich na seòrsaichean toraidh a bu chòir a làimhseachadh mar phlanaichean.
 

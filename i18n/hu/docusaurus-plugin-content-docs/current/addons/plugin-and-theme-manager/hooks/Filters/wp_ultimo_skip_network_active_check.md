@@ -4,7 +4,7 @@ title: Szűrő - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 0eef99879a6634b6dd604ef90235090e
 ---
-# Szűrő: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+# Szűrő: wp_ultimo_skip_network_active_check
 
 Ez a szűrő lehetővé teszi a fejlesztők számára, hogy kihagyják (short-circuit) ezt az ellenőrzést.
 

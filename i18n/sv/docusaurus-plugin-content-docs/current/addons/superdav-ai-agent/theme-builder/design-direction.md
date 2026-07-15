@@ -3,7 +3,7 @@ title: Designriktning
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Designriktning {#design-direction}
+# Designriktning
 
 Steget **Designriktning** låter dig granska, förfina och slutföra din temas visuella design innan Theme Builder genererar det kompletta temat.
 

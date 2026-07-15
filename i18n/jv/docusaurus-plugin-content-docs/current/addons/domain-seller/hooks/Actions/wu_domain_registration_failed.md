@@ -4,7 +4,7 @@ title: Tumindak - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Tumindak: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# Tumindak: wu_domain_registration_failed
 
 Kepicu sawisé upaya ndhaptar domain gagal.
 

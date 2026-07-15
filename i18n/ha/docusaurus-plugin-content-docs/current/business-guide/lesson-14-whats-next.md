@@ -3,7 +3,7 @@ title: 'Darasi na 14: Me ke zuwa gaba'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Darasi na 14: Me Zai Biyo Baya {#lesson-14-what-comes-next}
+# Darasi na 14: Me Zai Biyo Baya
 
 Kun gina wani dandalin gidan yanar gizo na niche daga tushe. FitSite yana aiki, yana hidimtawa dakunan motsa jiki, kuma yana samar da kudaden shiga masu maimaituwa. Wannan darasi na ƙarshe yana duba inda za a dosa daga nan.
 

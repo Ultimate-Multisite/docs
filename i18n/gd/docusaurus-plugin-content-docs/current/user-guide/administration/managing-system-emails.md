@@ -3,7 +3,7 @@ title: Ceannach air comharrachadh e-mailtean sistemaichean
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# A' chùlnaidhean e-mailan siseanta {#managing-system-emails}
+# A' chùlnaidhean e-mailan siseanta
 
 Rinn a' chùlnaidhean e-mailan siseanta a' Ultimate Multisite airson eirbhaidh sin sin, mar faighneachadh a' chluichd, fhaighneachadh bràth, agus atharrachadh àmras. Is e luach a tha thu a' chùlnaidhean e-mailan seo a' chluichd gu sgaidhlig a' chùlnaidhean agad.
 

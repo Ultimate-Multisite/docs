@@ -3,7 +3,7 @@ title: Ho lula le tšepo ea ho hlalosa Design System Aesthetika
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Fikiso ea Hoetso la Design System Aesthetics {#design-system-aesthetics-skill}
+# Fikiso ea Hoetso la Design System Aesthetics
 
 **Fikiso ea Hoetso la Design System Aesthetics** ke setso se fetang se fanaang ho hloboha le tšepo ea tsamo ea hau. Ke fana ka tsela e fetang ho ba le litšepo tse kholo ka tsela ea lipoto, llikolo, bohlokoa (spacing), le tokens ea motion tse di fanaang ho setso sa hau sa design system.
 

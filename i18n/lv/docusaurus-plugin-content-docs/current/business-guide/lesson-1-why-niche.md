@@ -3,7 +3,7 @@ title: '1. nodarbība: Kāpēc niša uzvar'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Nodarbība 1: Kāpēc niša uzvar {#lesson-1-why-niche-wins}
+# Nodarbība 1: Kāpēc niša uzvar
 
 Pirms mēs pieskaramies jebkādai programmatūrai, tev jāsaprot, kāpēc veidošana konkrētai auditorijai ir pats svarīgākais lēmums, ko pieņemsi.
 

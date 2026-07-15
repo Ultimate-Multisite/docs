@@ -3,7 +3,7 @@ title: Maxsus registrator integratsiyasini yaratish
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Maxsus Registrar integratsiyasini yaratish {#building-a-custom-registrar-integration}
+# Maxsus Registrar integratsiyasini yaratish
 
 Domain Seller addon **Integration Registry** patternidan foydalanadi. Har bir registrar `Domain_Selling_Capability` ni implementatsiya qiladigan va `wu_domain_seller_register_capabilities` action hook orqali o‘zini ro‘yxatdan o‘tkazadigan PHP class hisoblanadi.
 

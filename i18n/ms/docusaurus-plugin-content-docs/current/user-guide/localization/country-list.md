@@ -3,7 +3,7 @@ title: Senarai Negara
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Menyusun semula senarai negara Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
+# Menyusun semula senarai negara Ultimate Multisite
 
 Dropdown untuk memilih negara disusun mengikut abjad berdasarkan nama negara dalam bahasa Inggeris. Ini bermakna kadangkala, negara asal syarikat anda dan/atau kebanyakan pelanggan anda mungkin terselit di tengah-tengah senarai nama negara yang panjang.
 

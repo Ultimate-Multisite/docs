@@ -3,7 +3,7 @@ title: Kemampuan Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Kemampuan Theme Builder: Membuat Kerangka dan Mengaktifkan Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
+# Kemampuan Theme Builder: Membuat Kerangka dan Mengaktifkan Block Themes
 
 Superdav AI Agent v1.12.0 ngeniake rong kemampuan gedhe sing bisa mbok gawe lan pasang custom block themes langsung saka antarmuka obrolan.
 

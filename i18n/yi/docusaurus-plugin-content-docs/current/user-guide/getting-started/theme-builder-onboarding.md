@@ -3,7 +3,7 @@ title: Theme Builder אײַנפֿירונג־פּראָצעס
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder אַרײַנפֿיר־פֿלוס {#theme-builder-onboarding-flow}
+# Theme Builder אַרײַנפֿיר־פֿלוס
 
 Superdav AI Agent v1.12.0 פֿירט אַרײַן אַ געפֿירטן **Theme Builder אַרײַנפֿיר־פֿלוס** וואָס העלפֿט אײַך שאַפֿן אַ קאַסטאַם בלאָק־טעמע בעת אײַער ערשט־אײַנשטעלונג. דאָס פֿאַרבײַט דעם אַלטן Site Builder מאָדוס מיט אַ מער בייגזאַמען, אַגענט־באַגלייטן צוגאַנג.
 

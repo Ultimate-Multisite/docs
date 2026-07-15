@@ -3,7 +3,7 @@ title: cPanel-integraatio
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel-integraatio {#cpanel-integration}
+# cPanel-integraatio
 
 ## Yleiskatsaus {#overview}
 cPanel on yksi suosituimmista verkkohostauksen hallintapaneeleista, jota monilla jaettujen sekä omistettujen hostattorien käytössä on. Tämä integraatio mahdollistaa automaattisen domeenin synkronoinnin Ultimate Multisiten ja cPanel välillä, jonka avulla voit lisätä domeenialueita ja alavalikoita cPanel-tilillesi automaattisesti.

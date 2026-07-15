@@ -3,7 +3,7 @@ title: Log newidiadau TAW
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Cofnod Newidiadau VAT {#vat-changelog}
+# Cofnod Newidiadau VAT
 
 Fersiwn 1.0.7 - Rhyddhawyd ar 2026-02-03
 

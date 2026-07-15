@@ -3,7 +3,7 @@ title: Ukuhlanganiswa kwe-Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Ukuhlanganiswa kwe-Cloudflare {#cloudflare-integration}
+# Ukuhlanganiswa kwe-Cloudflare
 
 ## Ukubuka konke {#overview}
 I-Cloudflare ingumhlinzeki ohamba phambili wenethiwekhi yokulethwa kokuqukethwe (CDN) nokuphepha osiza ukuvikela nokusheshisa amawebhusayithi. Lokhu kuhlanganiswa kunika amandla ukuphathwa kwezizinda ngokuzenzakalelayo phakathi kwe-Ultimate Multisite ne-Cloudflare, ikakhulukazi ekufakweni kwe-subdomain multisite.

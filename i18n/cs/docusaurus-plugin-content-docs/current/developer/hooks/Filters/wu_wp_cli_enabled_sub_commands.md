@@ -4,7 +4,7 @@ title: Filter - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filtrační metoda: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
+# Filtrační metoda: wu_wp_cli_enabled_sub_commands
 
 Filtruje, které podkómaní (sub\_commands) jsou pro tuto entitu povolena.
 

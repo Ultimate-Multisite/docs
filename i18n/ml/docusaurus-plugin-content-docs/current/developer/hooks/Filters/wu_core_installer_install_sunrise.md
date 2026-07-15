@@ -4,7 +4,7 @@ title: ഫിൽട്ടർ - wu_core_installer_install_sunrise
 sidebar_label: wu_core_installer_install_sunrise
 _i18n_hash: 9750f0fbfe9f02249e4e1d17e585bdb6
 ---
-# Filter: wu_core_installer_install_sunrise {#filter-wucoreinstallerinstallsunrise}
+# Filter: wu_core_installer_install_sunrise
 
 ഹോസ്റ്റ് പ്രൊവൈഡർമാർക്ക് ഈ കോൺസ്റ്റന്റ് വ്യത്യസ്തമായി ഇൻസ്റ്റാൾ ചെയ്യാൻ ഇത് അനുവദിക്കുന്നു.
 

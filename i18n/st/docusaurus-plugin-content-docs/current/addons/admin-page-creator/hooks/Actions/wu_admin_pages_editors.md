@@ -4,7 +4,7 @@ title: Ketso - wu_admin_pages_editors
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Ketso: wu_admin_pages_editors {#action-wuadminpageseditors}
+# Ketso: wu_admin_pages_editors
 
 Lumella baetsi ba ditlatsetso ho eketsa dikgetho tse ntjha tsa mohlophisi =)
 

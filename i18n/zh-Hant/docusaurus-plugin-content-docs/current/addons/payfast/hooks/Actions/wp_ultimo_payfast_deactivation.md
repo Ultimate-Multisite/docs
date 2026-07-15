@@ -4,7 +4,7 @@ title: Action - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# 動作：wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
+# 動作：wp_ultimo_payfast_deactivation
 
 讓插件的其他部分可以在此處掛載它們在停用時需要執行的邏輯。
 

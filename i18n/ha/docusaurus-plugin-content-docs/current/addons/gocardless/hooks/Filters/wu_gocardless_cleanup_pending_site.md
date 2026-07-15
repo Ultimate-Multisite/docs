@@ -4,7 +4,7 @@ title: Tacewa - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Tacewa: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
+# Tacewa: wu_gocardless_cleanup_pending_site
 
 Yana aiki kafin share rukunin yanar gizo mai jiran aiki maraya don membobincin GoCardless da aka soke.
 

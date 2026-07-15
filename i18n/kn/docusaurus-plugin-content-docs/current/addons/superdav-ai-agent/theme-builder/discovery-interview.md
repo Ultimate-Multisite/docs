@@ -3,7 +3,7 @@ title: ಕೋಜ್ ಸक्षात्कार
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 **Discovery Interview** ಎಂಬುದು Theme Builder ನ ವಿನ್ಯಾಸ ಪ್ರಕ್ರಿಯೆಯ ಮೊದಲ ಹಂತವಾಗಿದೆ. ಇದು ನಿಮ್ಮ ಸೈಟ್, ವ್ಯಾಪಾರ ಮತ್ತು ವಿನ್ಯಾಸ ಆದ್ಯತೆಗಳ ಕುರಿತು ಮಾಹಿತಿ ಕumpulkan ಮಾಡಿ, ನಿಮಗೆ ವೈಯಕ್ತಿಕವಾದ ಥೀಮ್ ಅನ್ನು ರಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
 

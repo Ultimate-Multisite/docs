@@ -3,7 +3,7 @@ title: Yekgirtina Pir-Kirêdariyê
 sidebar_position: 6
 _i18n_hash: 3cf63ea3f0dba9dcf2a8fc74478aedbb
 ---
-# Yekgirtina Multi-Tenancy {#multi-tenancy-integration}
+# Yekgirtina Multi-Tenancy
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 çend xalên yekgirtinê ji bo tenantên serwer, piştrastkirina koçberiyê, û otomasyona jiyana tenantê diguherîne.
 

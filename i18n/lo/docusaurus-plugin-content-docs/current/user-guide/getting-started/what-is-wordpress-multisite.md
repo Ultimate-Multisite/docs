@@ -3,7 +3,7 @@ title: WordPress Multisite ແມ່ນຫຍັງ?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite ແມ່ນຫຍັງ? {#what-is-wordpress-multisite}
+# WordPress Multisite ແມ່ນຫຍັງ?
 
 ໃນສ່ວນຫຼັກຂອງມັນ, WordPress ມີຟີເຈີທີ່ເອີ້ນວ່າ ‘Multisite’ (ເວັບໄຊທ໌ຫຼາຍໂຄງການ) ເຊິ່ງມີຕົ້ນກຳເນີດຍ້ອນກັບປີ 2010 ໃນເວລາທີ່ WordPress 3.0 ເລີ່ມອອກມາ. ນັບຕັ້ງແຕ່ពេលນັ້ນ, ມັນໄດ້ຮັບການປັບປຸງຫຼາຍຄັ້ງເພື່ອເພີ່ມຟີເຈີໃໝ່ໆ ແລະ ເພື່ອເຮັດໃຫ້ຄວາມປອດໄພດີຂຶ້ນ.
 

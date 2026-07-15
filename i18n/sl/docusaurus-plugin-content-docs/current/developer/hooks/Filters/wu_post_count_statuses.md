@@ -4,7 +4,7 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
+# Filter: wu_post_count_statuses
 
 Omogoča razvijalcem pluginov, da spremenijo, katero stanje objave naj se šteje. Privzeto se štejejo objavljene in zasebne objave
 

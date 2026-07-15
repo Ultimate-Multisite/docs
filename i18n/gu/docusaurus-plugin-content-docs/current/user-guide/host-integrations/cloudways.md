@@ -3,7 +3,7 @@ title: Cloudways એકીકરણ
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ઇન્ટિગ્રેશન {#cloudways-integration}
+# Cloudways ઇન્ટિગ્રેશન
 
 ## સરવાળો {#overview}
 Cloudways એક મેનેજ્ડ ક્લાઉડ હોસ્ટિંગ પ્લેટફોર્મ છે જે તમને DigitalOcean, AWS, Google Cloud અને વધુ જેવા વિવિધ ક્લાઉડ પ્રોવાઇડર્સ પર WordPress સાઇટ્સ ડિપ્લોય કરવાની મંજૂરી આપે છે. આ ઇન્ટિગ્રેશન Ultimate Multisite અને Cloudways વચ્ચે ઓટોમેટિક ડોમેન સિંકિંગ અને SSL સર્ટિફિકેટ મેનેજમેન્ટ સક્ષમ કરે છે.

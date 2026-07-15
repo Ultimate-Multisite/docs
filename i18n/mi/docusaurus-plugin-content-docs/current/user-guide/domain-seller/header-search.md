@@ -3,7 +3,7 @@ title: Rapu Rohe Pane
 sidebar_position: 4
 _i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
 ---
-# Rapu Rohe Pane {#header-domain-search}
+# Rapu Rohe Pane
 
 Whakamahia tēnei whakaritenga ina hiahia koe ki tētahi puka pane iti e tīmata ana i te rapu rohe, kātahi ka tuku i te kiritaki kia kōwhiri i ngā rohe e wātea ana i roto i te takiutu Ultimate Multisite.
 

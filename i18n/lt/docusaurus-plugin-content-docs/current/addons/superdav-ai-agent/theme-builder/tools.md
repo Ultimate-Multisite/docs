@@ -3,7 +3,7 @@ title: Įrankiai ir konfigūracija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Įrankiai ir konfigūracija {#tools-and-configuration}
+# Įrankiai ir konfigūracija
 
 Theme Builder naudoja įrankių rinkinį jūsų WordPress svetainei analizuoti, projektuoti ir kurti. 1.16.0 versijoje **sd-ai-agent/site-scrape dabar yra 1 lygio įrankis**, todėl jis pagal numatytuosius nustatymus pasiekiamas Theme Builder. Superdav AI Agent v1.18.0 taip pat pristato atskirai platinamą Advanced papildomą paketą patikimoms kūrėjų darbo eigoms; šie įrankiai nėra WordPress.org pagrindinio paketo dalis ir turi būti įdiegti bei autorizuoti atskirai.
 

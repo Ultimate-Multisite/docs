@@ -4,7 +4,7 @@ title: စစ်ထုတ်ခြင်း - wu_should_redirect_to_primary_doma
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filter: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Filter: wu_should_redirect_to_primary_domain
 
 Developer တွေအနေနဲ့ ဒီ redirection လုပ်ငန်းစဉ်ကို ခဏရပ်တန့်စေနိုင်ပြီး၊ redirection မဖြစ်အောင် တားမြစ်နိုင်ပါတယ်။
 

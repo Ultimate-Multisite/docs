@@ -3,7 +3,7 @@ title: Amafomu Okuxhumana Omakhi Wesayithi
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Amafomu Okuxhumana Omakhi Wesayithi {#site-builder-contact-forms}
+# Amafomu Okuxhumana Omakhi Wesayithi
 
 Superdav AI Agent v1.10.0 yengeza ikhono lokudala amafomu okuxhumana ngokuqondile kusixhumi sengxoxo usebenzisa i-agent Yomakhi Wesayithi. Lokhu kukuvumela ukuthi ungeze amafomu okuxhumana asebenza ngokugcwele kunoma yiliphi ikhasi ngaphandle kokushiya ingxoxo.
 

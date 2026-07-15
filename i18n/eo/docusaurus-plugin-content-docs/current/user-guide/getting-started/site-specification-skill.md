@@ -3,7 +3,7 @@ title: Specifo de la sitio skilo
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skil {#site-specification-skill}
+# Site Specification Skil
 
 La **Site Specification skil** estas struktura alproach por kapti la celojn de viajaj, la publikon kaj la markbrand identeco de viaja. Ĉi tiu informeco estas apartigita en via **site_brief** memoro, ki agentoj referas inter sesiojn por doni konstanta, kontekst-komita asiston.
 

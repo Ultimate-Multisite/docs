@@ -3,7 +3,7 @@ title: शोध मुलाखत
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview {#discovery-interview}
+# Discovery Interview
 
 **Discovery Interview** ही Theme Builder च्या डिझाइन प्रक्रियेतील पहिली पायरी आहे. तुमच्या साइट, व्यवसायाबद्दल आणि डिझाइनच्या आवडीनिवडीबद्दल माहिती गोळा करून एक खास (personalized) थीम तयार केली जाते.
 

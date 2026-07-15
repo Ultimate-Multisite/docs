@@ -3,7 +3,7 @@ title: Rekisteröi tili Zapierin kautta
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Tapahtuma: Rekisteri käyttäjä Zapierillä {#event-register-an-account-via-zapier}
+# Tapahtuma: Rekisteri käyttäjä Zapierillä
 
 Artikkelissa [Integrating Ultimate Multisite with Zapier](zapier.md) kävimme läpi, miten voit käyttää Zapieriä suorittamaan erilaisia toimintoja Ultimate Multisite -alustalla laukaisimien ja tapahtumien perusteella. Tässä artikkelissa näyttämme sinulle, kuinka voit integroida kolmannen osapuolen sovelluksia. Käytämme Google Sheetsiä datan lähteenä ja lähetämme tiedot Ultimate Multisiteen käyttäjän rekisteröintiin.
 

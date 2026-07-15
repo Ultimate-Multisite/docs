@@ -4,7 +4,7 @@ title: Bộ lọc - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filter: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
+# Filter: wu_stripe_existing_plan_id
 
 Bộ lọc này dùng để kiểm tra ID của một gói (plan) cụ thể. Nếu ID này tồn tại, gói đăng ký mới sẽ sử dụng gói đó.
 

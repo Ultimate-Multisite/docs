@@ -4,7 +4,7 @@ title: Scagaire - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Scagaire: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Scagaire: wu_should_redirect_to_primary_domain
 
 Ceadaíonn sé d’fhorbróirí an t-atreorú a ghearradh gearr, rud a choisceann air tarlú.
 

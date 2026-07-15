@@ -4,7 +4,7 @@ title: Filtrilo - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Filtro: wu_plan_product_types {#filter-wuplanproducttypes}
+# Filtro: wu_plan_product_types
 
 Filtras la produktotipojn kiuj estu traktataj kiel planoj.
 

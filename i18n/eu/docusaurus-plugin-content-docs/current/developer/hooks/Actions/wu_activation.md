@@ -4,7 +4,7 @@ title: Ekintza - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Ekintza: wu_activation {#action-wuactivation}
+# Ekintza: wu_activation
 
 Utzi pluginaren beste zatiei aktibaziorako beren errutinak eransten
 

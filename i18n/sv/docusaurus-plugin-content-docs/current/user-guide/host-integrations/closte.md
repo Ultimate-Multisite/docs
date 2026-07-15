@@ -3,7 +3,7 @@ title: Closte-integration
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte-integration {#closte-integration}
+# Closte-integration
 
 ## Översikt {#overview}
 Closte är en hanterad WordPress-värdplattform byggd på Google Cloud-infrastruktur. Denna integration möjliggör automatisk domänsynkronisering och SSL-certifikathantering mellan Ultimate Multisite och Closte.

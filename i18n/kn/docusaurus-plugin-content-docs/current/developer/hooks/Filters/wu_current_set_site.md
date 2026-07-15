@@ -4,7 +4,7 @@ title: ಫಿಲ್ಟರ್ - wu_current_set_site
 sidebar_label: wu_current_set_site
 _i18n_hash: 13336523c48b4af40cc2d8f58c4fe219
 ---
-# ಫಿಲ್ಟರ್: wu_current_set_site {#filter-wucurrentsetsite}
+# ಫಿಲ್ಟರ್: wu_current_set_site
 
 ಡೆವಲಪರ್‌ಗಳು ಡಿಫಾಲ್ಟ್ ನಡವಳಿಕೆಯನ್ನು ಬದಲಾಯಿಸಲು ಮತ್ತು ಪ್ರಸ್ತುತ ಸೈಟ್ ಅನ್ನು ವಿಭಿನ್ನವಾಗಿ ಸೆಟ್ ಮಾಡಲು ಇದು ಅನುಮತಿಸುತ್ತದೆ.
 

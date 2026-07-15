@@ -3,7 +3,7 @@ title: 了解仪表盘
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# 了解 Ultimate Multisite 仪表盘 {#understanding-the-ultimate-multisite-dashboard}
+# 了解 Ultimate Multisite 仪表盘
 
 在深入更高级的配置选项和 Ultimate Multisite 的运营方面之前，让我们先来看看仪表盘。
 

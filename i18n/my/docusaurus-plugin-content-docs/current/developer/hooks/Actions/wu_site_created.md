@@ -4,7 +4,7 @@ title: လုပ်ဆောင်ချက် - wu_site_created
 sidebar_label: wu_site_created
 _i18n_hash: 0f7bc337be7a1f9c47c1e442fe04b9ae
 ---
-# Action: wu_site_created {#action-wusitecreated}
+# Action: wu_site_created
 
 ဝက်ဘ်ဆိုဒ်တစ်ခုကို ပထမဆုံးအကြိမ် ဖန်တီးပြီးသည့်အခါ အလုပ်လုပ်သည့် Action တစ်ခု ဖြစ်ပါသည်။
 

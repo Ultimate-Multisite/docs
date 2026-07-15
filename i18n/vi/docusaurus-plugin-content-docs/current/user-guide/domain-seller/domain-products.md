@@ -3,7 +3,7 @@ title: Sản phẩm và Giá cả Tên miền
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Sản phẩm Tên miền và Bảng giá {#domain-products-and-pricing}
+# Sản phẩm Tên miền và Bảng giá
 
 Sản phẩm tên miền là nơi bạn kiểm soát giá cả, các TLD, quyền riêng tư WHOIS và việc lựa chọn nhà cung cấp. Mỗi sản phẩm tên miền là một sản phẩm tiêu chuẩn của Ultimate Multisite với một tab bổ sung là **Domain Settings**.
 

@@ -3,7 +3,7 @@ title: 'Õppetund 1: miks nišš võidab'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Õppetund 1: Miks nišš võidab {#lesson-1-why-niche-wins}
+# Õppetund 1: Miks nišš võidab
 
 Enne kui puudutame mis tahes tarkvara, pead mõistma, miks konkreetsele sihtrühmale ehitamine on kõige olulisem otsus, mille teed.
 

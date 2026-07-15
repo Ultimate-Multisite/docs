@@ -3,7 +3,7 @@ title: WooCommerce एकीकरण परिवर्तनलग
 sidebar_position: 99
 _i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce एकीकरण परिवर्तन विवरण {#woocommerce-integration-changelog}
+# WooCommerce एकीकरण परिवर्तन विवरण
 
 संस्करण 2.2.0 - 2026-07-01 मा जारी गरियो
 * नयाँ: Ultimate Multisite कर रकमहरू अब checkout मा अलग WooCommerce शुल्क पङ्क्तिहरूका रूपमा देखा पर्छन्, जसले भुक्तानी अघि कर कुलहरू अझ स्पष्ट बनाउँछ।

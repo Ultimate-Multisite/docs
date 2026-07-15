@@ -4,7 +4,7 @@ title: Filtras - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Filtras: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Filtras: wu_pending_payment_message
 
 Leidžia vartotojui pakeisti pranešimą apie laukiančius mokėjimus.
 

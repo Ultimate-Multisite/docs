@@ -4,7 +4,7 @@ title: Дејство - wu_domain_seller_complete_registration
 sidebar_label: wu_domain_seller_complete_registration
 _i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
 ---
-# Дејство: wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+# Дејство: wu_domain_seller_complete_registration
 
 Се активира кога плаќање преминува во статус што треба да иницира регистрација на домен.
 

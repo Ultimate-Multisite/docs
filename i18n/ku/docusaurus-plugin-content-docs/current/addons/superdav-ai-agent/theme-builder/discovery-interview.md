@@ -3,7 +3,7 @@ title: Hevpeyvîna vedîtinê
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Hevpeyvîna Vedîtinê {#discovery-interview}
+# Hevpeyvîna Vedîtinê
 
 **Hevpeyvîna Vedîtinê** gava yekem e di pêvajoya sêwirandinê ya Theme Builder de. Ew agahiyan derbarê malpera te, karûbarê te, û tercîhên sêwirandinê berhev dike da ku themeeke şexsî biafirîne.
 

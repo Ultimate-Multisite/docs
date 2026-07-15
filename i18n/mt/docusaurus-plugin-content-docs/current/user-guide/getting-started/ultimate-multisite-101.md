@@ -3,7 +3,7 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101 {#ultimate-multisite-101}
+# Ultimate Multisite 101
 
 Ultimate Multisite huwa plugin WordPress Multisite li jippermek li toffri WaaS (Web as a Service) jew Websites għall kliementi. Qabel ma niddir l-għoti u nifhmu kif Ultimate Multisite jistax jgħin lil biznis tiegħek u lil kliementi, għandna xi għarfien fundamentali li għandna li nisvolvi.
 

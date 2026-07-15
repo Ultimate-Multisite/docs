@@ -3,7 +3,7 @@ title: Naraa Email System
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ọrụ na Email-ị System {#managing-system-emails}
+# Ọrụ na Email-ị System
 
 Ultimate Multisite ọtụtụ ihe email system dịbi maka ndị a bụ events dịka nwere confirmation signup, receipt payment, na change membership. ị ga-agbanye (customize) email templates ndị a ka ọ gba aka gị.
 

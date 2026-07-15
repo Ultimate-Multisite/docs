@@ -3,7 +3,7 @@ title: Zahtjevi
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Zahtjevi za Ultimate Multisite {#ultimate-multisite-requirements}
+# Zahtjevi za Ultimate Multisite
 
 Prva stvar koju bi se mogli zapitati prije kupnje Ultimate Multisite-a je kakvi su zahtjevi za pokretanje našeg plugin-a. Na sreću, postoji samo nekoliko osnovnih zahtjeva za pokretanje Ultimate Multisite-a: **domena ime**, dobar **hosting provajder** i instalacija WordPress **Multisite-a**. To je sve što vam treba!
 

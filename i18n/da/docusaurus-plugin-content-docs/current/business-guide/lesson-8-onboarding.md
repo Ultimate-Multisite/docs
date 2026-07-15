@@ -3,7 +3,7 @@ title: 'Lektion 8: Kunde onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lektion 8: Kundebegivenhed (Customer Onboarding) {#lesson-8-customer-onboarding}
+# Lektion 8: Kundebegivenhed (Customer Onboarding)
 
 At at få en kunde til at registrere sig er kun halvdelen af jobbet. Hvis de logger ind, føler sig overvældede og aldrig kommer tilbage, har du mistet dem. Denne lektion designer oplevelsen, der forvandler en ny registrering til en aktiv, engageret kunde.
 

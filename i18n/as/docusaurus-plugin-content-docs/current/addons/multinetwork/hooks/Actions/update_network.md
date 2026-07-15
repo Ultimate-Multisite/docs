@@ -4,7 +4,7 @@ title: Action - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network {#action-updatenetwork}
+# Action: update_network
 
 বিদ্যমান কোনো নেটৱৰ্ক আপডেট হোৱাৰ পিছত এই Action টি কল হয়।
 

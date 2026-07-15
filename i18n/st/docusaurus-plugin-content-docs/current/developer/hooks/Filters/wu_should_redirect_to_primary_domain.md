@@ -4,7 +4,7 @@ title: Sefe - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Sefe: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
+# Sefe: wu_should_redirect_to_primary_domain
 
 Lumella bahlahisi ho emisa phetisetso pele ho nako, ho e thibela hore e se ke ea etsahala.
 

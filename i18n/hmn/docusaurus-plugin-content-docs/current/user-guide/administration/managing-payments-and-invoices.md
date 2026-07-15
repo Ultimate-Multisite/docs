@@ -5,7 +5,7 @@ title: >-
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ការគ្រប់គ្រងការទូទាត់ និងវិក្កយបត្រ {#managing-payments-and-invoices}
+# ការគ្រប់គ្រងការទូទាត់ និងវិក្កយបត្រ
 
 ## ការកំណត់ការទូទាត់ (Payment Settings) {#payment-settings}
 

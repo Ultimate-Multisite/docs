@@ -3,7 +3,7 @@ title: ماس كېلىدىغان Endpoints ئۈچۈن Ultimate AI Connector ئۆ
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# ماس كېلىدىغان ئاخىرقى نۇقتىلار ئۈچۈن Ultimate AI ئۇلىغۇچىنىڭ ئۆزگىرىش خاتىرىسى {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+# ماس كېلىدىغان ئاخىرقى نۇقتىلار ئۈچۈن Ultimate AI ئۇلىغۇچىنىڭ ئۆزگىرىش خاتىرىسى
 
 ## 2.0.0 نەشرى — 2026-04-24 كۈنى ئېلان قىلىندى {#version-200--released-on-2026-04-24}
 

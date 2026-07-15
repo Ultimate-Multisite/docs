@@ -4,7 +4,7 @@ title: Iragazkia - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Iragazkia: wu_sso_enabled {#filter-wussoenabled}
+# Iragazkia: wu_sso_enabled
 
 Gaitu/desgaitu domeinuen arteko single-sign-on gaitasuna.
 

@@ -3,7 +3,7 @@ title: Alati i konfiguracija
 sidebar_position: 4
 _i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Alati i konfiguracija {#tools-and-configuration}
+# Alati i konfiguracija
 
 Theme Builder koristi skup alata za analizu, dizajn i izgradnju vaše WordPress stranice. U verziji 1.16.0, **sd-ai-agent/site-scrape je sada alat Nivoa 1**, što ga čini dostupnim po zadanim postavkama u Theme Builderu. Superdav AI Agent v1.18.0 također uvodi odvojeno distribuiran napredni prateći paket za pouzdane razvojne tokove rada; ti alati nisu dio osnovnog WordPress.org paketa i moraju se instalirati i autorizovati odvojeno.
 

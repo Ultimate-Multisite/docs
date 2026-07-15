@@ -3,7 +3,7 @@ title: Ireferensi Yezilungiselelo
 sidebar_position: 11
 _i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Inkomba Yezilungiselelo {#settings-reference}
+# Inkomba Yezilungiselelo
 
 Leli khasi lilandelela izilungiselelo ezithinta ukuphathwa kwansuku zonke nezinguquko zakamuva zokuziphatha ku-Ultimate Multisite.
 

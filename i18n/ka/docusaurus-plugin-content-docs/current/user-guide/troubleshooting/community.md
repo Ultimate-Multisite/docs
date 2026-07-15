@@ -3,7 +3,7 @@ title: კომუნითეტი
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# როგორ შევიწროთ Ultimate Multisite Community-ში {#how-to-join-ultimate-multisite-community}
+# როგორ შევიწროთ Ultimate Multisite Community-ში
 
 Ultimate Multisite Community არის ადგილი, სადაც შეგიძლიათ დაუკავშირდეთ სხვა Ultimate Multisite მომხმარებლებს და გაუზიაროთ რჩევები, გამოცდილება და სხვა. Ultimate Multisite Community-ზე შესასვლელად გადადით https://community.ultimatemultisite.com/home-ზე.
 

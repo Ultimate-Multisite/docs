@@ -3,7 +3,7 @@ title: 'Palajaran 4: Ngawangun Citakan Ceruk'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Palajaran 4: Ngawangun Citakan Niche {#lesson-4-building-niche-templates}
+# Palajaran 4: Ngawangun Citakan Niche
 
 Citakan téh inti tina proposisi nilai niche anjeun. Pamilik studio fitness anu ngadaptar tuluy ningali situs anu geus katingali siga ramatloka fitness -- kalayan jadwal kelas, profil palatih, jeung gambar anu luyu -- jauh leuwih kamungkinan tetep ngagunakeun tibatan anu ningali kanvas kosong.
 

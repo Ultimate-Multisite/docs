@@ -3,7 +3,7 @@ title: Cov ntaub ntawv rau cov neeg tsim kho
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Ntaub Ntawv Qhia Rau Developer {#developer-documentation}
+# Ntaub Ntawv Qhia Rau Developer
 
 Phau ntawv qhia no muab txhua yam uas cov developer xav tau los txuas nrog, nthuav ntxiv, lossis tsim addon rau Ultimate Multisite. Ultimate Multisite hloov ib lub WordPress Multisite network mus ua ib lub Website-as-a-Service (WaaS) platform.
 

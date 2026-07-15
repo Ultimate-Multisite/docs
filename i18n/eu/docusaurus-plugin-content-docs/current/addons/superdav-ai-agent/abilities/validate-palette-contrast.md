@@ -3,7 +3,7 @@ title: Baliozkotu paletaren kontrastea
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Balioztatu paletaren kontrastea {#validate-palette-contrast}
+# Balioztatu paletaren kontrastea
 
 **Validate Palette Contrast** gaitasunak zure diseinu-paletan dauden kolore-bikoteak WCAG (Web Content Accessibility Guidelines) betetzen duten egiaztatzen du, zure theme-n aplikatu aurretik.
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons {#ultimate-multisite-addons}
+# Ultimate Multisite Addons
 
 Addons は、追加機能と連携で Ultimate Multisite を拡張します。ほとんどの Addons は有料で、[ultimatemultisite.com](https://ultimatemultisite.com) から購入できます。
 

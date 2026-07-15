@@ -4,7 +4,7 @@ title: Զտիչ - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# Filter: wu_return_url {#filter-wureturnurl}
+# Filter: wu_return_url
 
 Թույլ է տալիս մշակողներին փոխել վճարային դարպասի վերադարձի URL-ը, որն օգտագործվում է checkout գործընթացներից հետո։
 

@@ -4,7 +4,7 @@ title: کردار - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# کردار: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+# کردار: wu_domain_registration_failed
 
 دوای ئەوەی هەوڵێکی تۆمارکردنی دۆمەین شکستی هێنا، کاردەکات.
 

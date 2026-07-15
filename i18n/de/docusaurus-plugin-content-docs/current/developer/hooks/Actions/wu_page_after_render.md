@@ -4,7 +4,7 @@ title: Aktion - wu_page_after_render
 sidebar_label: wu_page_after_render
 _i18n_hash: df5c3e7ef27ab39b167189e082ed729b
 ---
-# Aktion: wu_page_after_render {#action-wupageafterrender}
+# Aktion: wu_page_after_render
 
 Ermöglicht Plugin-Entwicklern, zusätzlichen Inhalt hinzuzufügen, nachdem wir die Seite ausgegeben haben.
 

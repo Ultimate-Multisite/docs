@@ -3,7 +3,7 @@ title: Systeem-e-mails beheren
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Systeem-e-mails beheren {#managing-system-emails}
+# Systeem-e-mails beheren
 
 Ultimate Multisite stuurt verschillende systeem-e-mails voor gebeurtenissen zoals aanmeldbevestigingen, betalingsbewijzen en wijzigingen in lidmaatschappen. Je kunt deze e-mailtemplates aanpassen aan je merk.
 

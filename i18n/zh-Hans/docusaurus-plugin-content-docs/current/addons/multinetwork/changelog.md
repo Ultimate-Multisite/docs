@@ -3,7 +3,7 @@ title: 多网络更新日志
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Multi-Network 更新日志 {#multi-network-changelog}
+# Multi-Network 更新日志
 
 ### 1.3.0 {#130}
 * 新增：网络模板预览器 — 购买前可通过实时面板浏览并预览网络模板。

@@ -3,7 +3,7 @@ title: Loco Translate aldaketa-erregistroa
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate aldaketa-erregistroa {#loco-translate-changelog}
+# Loco Translate aldaketa-erregistroa
 
 ### 1.0.1 {#101}
 * Bateragarritasuna hobetu da Loco Translate-ren azken bertsioarekin

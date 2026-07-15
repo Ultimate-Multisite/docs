@@ -4,7 +4,7 @@ title: فلټر - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# فلټر: wu_country_get_cities {#filter-wucountrygetcities}
+# فلټر: wu_country_get_cities
 
 په یوه هېواد کې د یوه ایالت لپاره د ښارونو لړلیک راګرځوي.
 

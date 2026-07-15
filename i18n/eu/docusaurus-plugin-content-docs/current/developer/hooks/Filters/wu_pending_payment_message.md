@@ -4,7 +4,7 @@ title: Iragazkia - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# Iragazkia: wu_pending_payment_message {#filter-wupendingpaymentmessage}
+# Iragazkia: wu_pending_payment_message
 
 Erabiltzaileari zain dauden ordainketei buruzko mezua aldatzeko aukera ematen dio.
 

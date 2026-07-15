@@ -3,7 +3,7 @@ title: Borang Hubungi Pembina Laman
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Borang Kontak Site Builder {#site-builder-contact-forms}
+# Borang Kontak Site Builder
 
 Superdav AI Agent v1.10.0 menambah keupayaan untuk mencipta borang kontak terus dari antara muka sembang menggunakan agen Site Builder. Ini membolehkan anda menambah borang kontak yang berfungsi sepenuhnya ke mana-mana halaman tanpa perlu meninggalkan sembang.
 

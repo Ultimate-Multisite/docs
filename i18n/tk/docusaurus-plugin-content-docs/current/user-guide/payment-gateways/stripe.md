@@ -3,7 +3,7 @@ title: Stripe-y goýdyp bilmek
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway'i Kurmak (v2) {#setting-up-the-stripe-gateway-v2}
+# Stripe Gateway'i Kurmak (v2)
 
 _**ÖNEMLİ QAYDAMA: Bu makale Ultimate Multisite versiyasının 2.x sürümünü nəzərdə tutur.**_
 

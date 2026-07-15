@@ -3,7 +3,7 @@ title: Sortu logotipoaren SVGa
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Sortu logoaren SVG {#generate-logo-svg}
+# Sortu logoaren SVG
 
 **Generate Logo SVG** gaitasunak Theme Builder-i logo SVG pertsonalizatuak sortu eta zuzenean zure WordPress gunean txertatzeko aukera ematen dio, namespace-ari dagokionez segurua den garbiketa automatikoarekin.
 

@@ -3,7 +3,7 @@ title: Obniżanie planu
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Obniżanie planu (v2) {#downgrading-a-plan-v2}
+# Obniżanie planu (v2)
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 

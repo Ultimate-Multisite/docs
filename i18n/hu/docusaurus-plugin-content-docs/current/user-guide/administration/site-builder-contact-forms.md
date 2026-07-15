@@ -3,7 +3,7 @@ title: Oldaltíró kapcsolatfelvételi űrlapok
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Oldaltíró Kapcsolatfelvételi Űrlapok {#site-builder-contact-forms}
+# Oldaltíró Kapcsolatfelvételi Űrlapok
 
 A Superdav AI Agent v1.10.0 funkciója lehetővé teszi, hogy a Site Builder agent segítségével közvetlenül a chat felületéről hozzak létre kapcsolatfelvételi űrlapokat. Ez lehetővé teszi, hogy funkcionális kapcsolatfelvételi űrlapokat adjanak hozzá bármilyen oldalhoz anélkül, hogy elhagynák a chatet.
 

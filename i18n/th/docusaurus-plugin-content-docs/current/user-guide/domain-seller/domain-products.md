@@ -3,7 +3,7 @@ title: ผลิตภัณฑ์โดเมนและราคา
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# ผลิตภัณฑ์โดเมนและราคา {#domain-products-and-pricing}
+# ผลิตภัณฑ์โดเมนและราคา
 
 ผลิตภัณฑ์โดเมนคือส่วนที่คุณใช้ควบคุมเรื่องราคา, TLDs, WHOIS privacy, และการเลือกผู้ให้บริการ (provider) ผลิตภัณฑ์โดเมนแต่ละรายการเป็นผลิตภัณฑ์มาตรฐานของ Ultimate Multisite ที่มีแท็บ **Domain Settings** เพิ่มเติม
 
