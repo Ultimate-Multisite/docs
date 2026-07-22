@@ -114,6 +114,7 @@ const sidebars = {
       label: 'Client Management',
       items: [
         'user-guide/client-management/account-page',
+        'user-guide/client-management/shortcodes',
         'user-guide/client-management/client-websites',
         'user-guide/client-management/upgrading-a-plan',
         'user-guide/client-management/downgrading-a-plan',
