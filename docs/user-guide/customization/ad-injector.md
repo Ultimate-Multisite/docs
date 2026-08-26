@@ -23,7 +23,7 @@ Go to **Ultimate Multisite > Settings > Ads** and select a provider:
 
 Set **Ads per page** to limit how many ads the addon can inject during one request. A value of `0` removes the limit.
 
-![Network Ads settings](/img/addons/ads-network-settings.png)
+![Network Ads settings](/img/addons/ads-network-settings-en.png)
 
 ## Enable ads on a plan
 
@@ -31,7 +31,7 @@ Edit the plan and open **Product Options > Ads**. Enable **Inject ads on this pl
 
 Leave **Inject ads on this plan** disabled when the plan should always be ad-free.
 
-![Ads options on an ad-supported plan](/img/addons/ads-plan-settings.png)
+![Ads options on an ad-supported plan](/img/addons/ads-plan-settings-en.png)
 
 ## Offer a paid "Remove Ads" choice
 
@@ -46,11 +46,11 @@ Use one recurring package or service product for the ad-free choice. Its billing
 
 When this product is part of a membership, the addon skips all advertising for that membership.
 
-![A recurring package configured to remove ads](/img/addons/ads-remove-ads-product.png)
+![A recurring package configured to remove ads](/img/addons/ads-remove-ads-product-en.png)
 
 Next, edit the ad-supported plan. Open **Product Options > Up & Downgrades** and add the new product under **Offer Add-ons**.
 
-![Remove Ads selected under Offer Add-ons](/img/addons/ads-offer-add-on.png)
+![Remove Ads selected under Offer Add-ons](/img/addons/ads-offer-add-on-en.png)
 
 ## Add the choice to checkout
 
@@ -58,7 +58,7 @@ Edit the checkout form used by the plan and add an **Order Bump** field before t
 
 The checkout form should contain one pricing table for the base plan and one Order Bump field for the optional ad-removal product. This keeps the pricing table simple and lets the customer make the choice during checkout.
 
-![Order Bump field in the checkout form](/img/addons/ads-checkout-order-bump.png)
+![Order Bump field in the checkout form](/img/addons/ads-checkout-order-bump-en.png)
 
 ## Test both outcomes
 
