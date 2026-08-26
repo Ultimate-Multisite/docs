@@ -11,7 +11,7 @@ To start running your network and begin selling your services to potential users
 
 ## Product Type
 
-With Ultimate Multisite you can offer two categories of products to your clients: **plans** and **add-ons** **(Order Bump)**. Add-ons can be divided into two types:**packages** and **services**. We will see their differences and particularities next.
+With Ultimate Multisite you can offer two categories of products to your clients: **plans** and **add-ons**. An **Order Bump** is a checkout field used to offer an add-on. Add-ons can be either **packages** or **services**.
 
   * **Plans** : the fundamental product of Ultimate Multisite. Your client can only have a membership if it's attached to a plan. A plan provides your clients with one or more sites (it depends on the configurations of your plan) with the limitations you set on your product editing page.
 
@@ -141,7 +141,7 @@ Thus to restrict the path of the customer and to prevent incidents the network a
 
 To define a plan group specify the compatible plans within the **plan group** list. The **product order** determines how the plans are ordered and displayed from the lowest to the highest.
 
-Ultimate Multisite also includes an **order bump** feature where appropriate add-on products and services can be added to plans. These are offered to the customer as additional items which can be added to plans on checkout or during an upgrade.
+Ultimate Multisite can offer packages and services during checkout or an upgrade. Select the products under the plan's **Offer Add-ons** setting, then add an **Order Bump** field to the relevant checkout form.
 
 #### Price Variations
 

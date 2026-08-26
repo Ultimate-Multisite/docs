@@ -1,7 +1,7 @@
 ---
 title: Creare il tuo primo prodotto in abbonamento
 sidebar_position: 6
-_i18n_hash: a4a36ed896f6691eebb099208a746cd7
+_i18n_hash: 7a7d2757a44e0abd4e86992236f6c7a1
 ---
 # Creare il tuo primo prodotto in abbonamento (v2)
 
@@ -11,7 +11,7 @@ Per iniziare a gestire la tua rete e cominciare a vendere i tuoi servizi a poten
 
 ## Tipo di prodotto {#product-type}
 
-Con Ultimate Multisite puoi offrire due categorie di prodotti ai tuoi clienti: **piani** e **add-on** **(Order Bump)**. Gli add-on possono essere divisi in due tipi:**pacchetti** e **servizi**. Vedremo di seguito le loro differenze e particolarità.
+Con Ultimate Multisite puoi offrire due categorie di prodotti ai tuoi clienti: **piani** e **add-on**. Un **Order Bump** è un campo del checkout che propone un add-on. Gli add-on possono essere **pacchetti** o **servizi**.
 
   * **Piani** : il prodotto fondamentale di Ultimate Multisite. Il tuo cliente può avere una membership solo se è collegata a un piano. Un piano fornisce ai tuoi clienti uno o più siti (dipende dalle configurazioni del tuo piano) con le limitazioni che imposti nella pagina di modifica del prodotto.
 
@@ -141,7 +141,7 @@ Pertanto, per limitare il percorso del cliente e prevenire incidenti, l’ammini
 
 Per definire un gruppo di piani, specifica i piani compatibili nell’elenco **gruppo di piani**. L’**ordine del prodotto** determina come i piani vengono ordinati e visualizzati dal più basso al più alto.
 
-Ultimate Multisite include anche una funzionalità di **aumento dell’ordine** con cui prodotti e servizi aggiuntivi appropriati possono essere aggiunti ai piani. Questi vengono offerti al cliente come elementi aggiuntivi che possono essere aggiunti ai piani durante il pagamento o durante un upgrade.
+Ultimate Multisite può proporre pacchetti e servizi durante il checkout o un upgrade. Seleziona i prodotti nel campo **Offerta add-ons** del piano, quindi aggiungi un campo **Order Bump** al modulo di checkout interessato.
 
 #### Variazioni di prezzo {#price-variations}
 

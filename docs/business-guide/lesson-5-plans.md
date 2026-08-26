@@ -126,7 +126,9 @@ Order bumps are add-on products offered during checkout. For FitSite, consider:
 - **Priority Support** ($29/month) -- faster response times
 - **Additional Site** ($39/month) -- for customers who need more sites than their plan allows
 
-Create these as **Package** type products in Ultimate Multisite and associate them with the relevant plans.
+Create each add-on as a **Package** or **Service** product. Then edit the relevant plan, open **Up & Downgrades**, and select the product under **Offer Add-ons**. In Lesson 6, you will add an **Order Bump** field to the checkout form so customers can choose it.
+
+For example, the [Ultimate Multisite: Ads guide](/user-guide/customization/ad-injector#offer-a-paid-remove-ads-choice) explains how to sell one recurring **Remove Ads** package without creating a second plan.
 
 ## Why This Structure Works
 

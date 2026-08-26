@@ -1,50 +1,70 @@
 ---
-title: "Ad Injector"
+title: "Ads"
 sidebar_position: 10
 ---
 
-# Placing Ads on your network with Ultimate Multisite: Ad Injector
+# Add advertising to customer sites
 
-Ultimate Multisite: Ad Injector is a **free add-on** that gives you the tools to place ads on your plans right from their edit page.
+Ultimate Multisite: Ads, formerly called Ad Injector, adds network advertising to selected plans. You can use custom HTML or shortcodes, Google AdSense, or Google Ad Manager. A plan can use the network defaults or its own provider code.
 
-After installing Ultimate Multisite: Ad Injector, go to your _Plugins_ page to activate it.
+The addon also supports a simple paid choice: customers can subscribe to an ad-supported plan and add a recurring product that removes the ads. You do not need to create a second plan.
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Ad Injector addon -->
+## Install and activate the addon
 
-_Click the Network Activate button_
+Install **Ultimate Multisite: Ads** from **Ultimate Multisite > Addons**, or upload the plugin ZIP from **Plugins > Add New**. Network activate it when the installation finishes.
 
-Once the add-on is active, the _Advanced Options_ meta box on the plan edit screen will have a new option called _Ad Settings_.
+## Configure the network ad provider
 
-![Ad Settings on the plan edit screen](/img/config/product-edit-full.png)
+Go to **Ultimate Multisite > Settings > Ads** and select a provider:
 
-_Now you can edit ad settings for each of your plans_
+- **Custom HTML / Shortcode** accepts trusted HTML, JavaScript, or a WordPress shortcode.
+- **Google AdSense** uses your publisher and ad slot details.
+- **Google Ad Manager** uses your network and ad unit details.
 
-On that tab, you’ll be able to add the ad codes for posts and pages in the front-end, before and after the content.
+Set **Ads per page** to limit how many ads the addon can inject during one request. A value of `0` removes the limit.
 
-<!-- Screenshot unavailable: Ad code fields for posts and pages before content -->
+![Network Ads settings](/img/addons/ads-network-settings.png)
 
-<!-- Screenshot unavailable: Example of ad displayed on a post page for a specific plan -->
+## Enable ads on a plan
 
-_After inserting your ad's code, it will show on the posts and pages of that specific plan._
+Edit the plan and open **Product Options > Ads**. Enable **Inject ads on this plan**, then choose the provider and placements. The available placements include public content before or after the post, and notices in the customer site's WordPress admin area.
 
-You can also have ads included on the header of Admin Pages for users of that plan.
+Leave **Inject ads on this plan** disabled when the plan should always be ad-free.
 
-<!-- Screenshot unavailable: Admin Panel Ad Code option in plan settings -->
+![Ads options on an ad-supported plan](/img/addons/ads-plan-settings.png)
 
-<!-- Screenshot unavailable: Example of ad displayed on the user admin panel -->
+## Offer a paid "Remove Ads" choice
 
-_Go to the Admin Panel Ad Code option if you want to display ads on your user's back-end_
+Use one recurring package or service product for the ad-free choice. Its billing interval should normally match the plan's billing interval.
 
-### Beyond Advertising
+1. Go to **Ultimate Multisite > Products > Add Product**.
+2. Name the product **Remove Ads**, or use the label your customers will see.
+3. Set **Product Type** to **Package** or **Service**.
+4. Set the recurring price and billing interval.
+5. Open **Product Options > Ads** and enable **This package removes ads**.
+6. Save the product.
 
-You can also use Ultimate Multisite: Ad Injector to offer support to high-tier plans.
+When this product is part of a membership, the addon skips all advertising for that membership.
 
-Just go to _Admin Panel Ads_ option and add the HTML code for your support tool.
+![A recurring package configured to remove ads](/img/addons/ads-remove-ads-product.png)
 
-<!-- Screenshot unavailable: Admin Panel Ads option with support tool HTML code -->
+Next, edit the ad-supported plan. Open **Product Options > Up & Downgrades** and add the new product under **Offer Add-ons**.
 
-<!-- Screenshot unavailable: Customer support widget displayed on the admin panel for a specific plan -->
+![Remove Ads selected under Offer Add-ons](/img/addons/ads-offer-add-on.png)
 
-_Add customer support to specific plans_
+## Add the choice to checkout
 
-This way people can reach you right from their Admin Panel!
+Edit the checkout form used by the plan and add an **Order Bump** field before the payment field. Select the **Remove Ads** product and use a direct customer-facing label, such as "Remove network advertising".
+
+The checkout form should contain one pricing table for the base plan and one Order Bump field for the optional ad-removal product. This keeps the pricing table simple and lets the customer make the choice during checkout.
+
+![Order Bump field in the checkout form](/img/addons/ads-checkout-order-bump.png)
+
+## Test both outcomes
+
+Complete two test checkouts before publishing the form:
+
+1. Buy the base plan without the add-on and confirm that ads appear in the enabled placements.
+2. Buy the same plan with **Remove Ads** selected and confirm that no frontend or subsite admin ads appear.
+
+Also confirm that the order summary shows the add-on price and recurring interval. If the ad-free choice does not appear, check that the package is active, listed under the plan's **Offer Add-ons**, and selected in the checkout form's **Order Bump** field.

@@ -1,7 +1,7 @@
 ---
 title: 'Lezione 6: L''esperienza di registrazione'
 sidebar_position: 7
-_i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
+_i18n_hash: 53032f5ded16cd078e700d981a664c14
 ---
 # Lezione 6: L'Esperienza di Registrazione
 
@@ -64,7 +64,7 @@ Non chiedere informazioni che non ti servono al momento della registrazione. Ogn
 
 - Aggiungi il campo **Payment**
 - Configura il tuo gateway di pagamento ([Stripe](/user-guide/payment-gateways/stripe) è consigliato per la fatturazione in abbonamento)
-- Se hai creato *order bumps* nella Lezione 5, aggiungi un campo **Order Bump** prima del passaggio di pagamento
+- Se hai creato prodotti opzionali nella Lezione 5, aggiungi un campo **Order Bump** prima del pagamento e seleziona il prodotto da offrire
 
 ### Passo 6: Conferma {#step-6-confirmation}
 
@@ -93,8 +93,9 @@ Prima di passare oltre, completa un test di registrazione completo:
 2. Seleziona un piano
 3. Scegli un template
 4. Crea un account
-5. Completa il pagamento (usa la modalità test)
-6. Verifica che il sito sia stato creato con il template corretto
+5. Prova ogni Order Bump sia selezionato sia non selezionato
+6. Completa il pagamento (usa la modalità test)
+7. Verifica che il sito sia stato creato con il template e gli add-on corretti
 
 Controlla che:
 
@@ -102,6 +103,7 @@ Controlla che:
 - [ ] Le anteprime dei template mostrino design appropriati per il settore fitness
 - [ ] L'URL del sito venga generato correttamente dal nome dello studio
 - [ ] Il pagamento venga elaborato con successo
+- [ ] Gli add-on selezionati compaiano nel riepilogo dell'ordine con il prezzo e il periodo di fatturazione corretti
 - [ ] Il cliente atterri su un sito funzionante con il template selezionato
 - [ ] Le email di conferma utilizzino un linguaggio specifico per il settore fitness
 

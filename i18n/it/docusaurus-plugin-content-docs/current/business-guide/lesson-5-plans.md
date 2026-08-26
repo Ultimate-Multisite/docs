@@ -1,7 +1,7 @@
 ---
 title: 'Lezione 5: Progettare i tuoi piani'
 sidebar_position: 6
-_i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
+_i18n_hash: 5e6b30ea9d8c5c7d1bb318cb767a1ed5
 ---
 # Lezione 5: Progettare i tuoi piani
 
@@ -118,22 +118,24 @@ Il gruppo piani assicura che i clienti possano effettuare upgrade o downgrade so
 
 Questo crea un percorso di upgrade chiaro: Starter → Growth → Pro.
 
-## Aggiungere Aggiunte all'Ordine (Order Bumps) {#adding-order-bumps}
+## Aggiungere prodotti opzionali (Order Bump) {#adding-order-bumps}
 
-Le aggiunte all'ordine sono prodotti extra offerti durante il checkout. Per FitSite, considera:
+Gli Order Bump sono prodotti opzionali offerti durante il checkout. Per FitSite, considera:
 
 - **Pacchetto archiviazione extra** ($19/mese) -- 5 GB di spazio su disco aggiuntivi
 - **Supporto prioritario** ($29/mese) -- tempi di risposta più rapidi
 - **Sito aggiuntivo** ($39/mese) -- per i clienti che necessitano di più siti di quanti ne consenta il loro piano
 
-Crea questi come prodotti di tipo **Package** in Ultimate Multisite e associali ai piani pertinenti.
+Crea ogni add-on come prodotto di tipo **Pacchetto** o **Servizio**. Modifica quindi il piano interessato, apri **Up & Downgrades** e seleziona il prodotto nel campo **Offerta add-ons**. Nella Lezione 6 aggiungerai un campo **Order Bump** al modulo di checkout, così il cliente potrà sceglierlo.
+
+Per esempio, la [guida di Ultimate Multisite: Ads](/user-guide/customization/ad-injector#offer-a-paid-remove-ads-choice) spiega come vendere un solo pacchetto ricorrente **Senza banner** senza creare un secondo piano.
 
 ## Perché questa struttura funziona {#why-this-structure-works}
 
 - **Starter** rimuove le barriere all'ingresso -- prezzo basso, offerta semplice, permette agli istruttori di andare online rapidamente
 - **Growth** aggiunge le funzionalità che le palestre richiedono realmente -- prenotazioni, gallerie, domini personalizzati
 - **Pro** serve il segmento ad alto valore che necessita di supporto multi-sede
-- **Aggiunte all'ordine** permettono ai clienti di personalizzare senza complicare i piani principali
+- **Prodotti opzionali** permettono ai clienti di personalizzare l'abbonamento senza complicare i piani principali
 - **Percorso di upgrade chiaro** significa che i clienti crescono con te anziché andarsene
 
 ## La Rete FitSite finora {#the-fitsite-network-so-far}
@@ -148,7 +150,7 @@ FitSite Network
 │   ├── FitSite Starter ($49/mese) → modello Studio Essential
 │   ├── FitSite Growth ($99/mese) → modelli Studio Essential + Gym Pro
 │   ├── FitSite Pro ($199/mese) → tutti i modelli
-│   └── Aggiunte all'ordine (Extra Storage, Priority Support, Additional Site)
+│   └── Prodotti opzionali (Extra Storage, Priority Support, Additional Site)
 └── Pronto per la configurazione del checkout (prossima lezione)
 ```
 
@@ -157,7 +159,7 @@ FitSite Network
 - **Tre livelli di piani** collegati a reali segmenti di attività di fitness
 - **Controllo delle funzionalità** utilizzando i controlli di plugin e modello di Ultimate Multisite
 - **Un gruppo piani** con un percorso di upgrade chiaro
-- **Prodotti aggiuntivi all'ordine** per entrate extra
+- **Prodotti opzionali** per aumentare le entrate
 - **Una struttura di prezzi** basata sul valore per il cliente, non sulle specifiche tecniche
 
 ---

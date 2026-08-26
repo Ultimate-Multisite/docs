@@ -64,7 +64,7 @@ Do not ask for information you do not need at signup. Every extra field reduces 
 
 - Add the **Payment** field
 - Configure your payment gateway ([Stripe](/user-guide/payment-gateways/stripe) is recommended for subscription billing)
-- If you created order bumps in Lesson 5, add an **Order Bump** field before the payment step
+- If you created add-ons in Lesson 5, add an **Order Bump** field before the payment step and select the product it should offer
 
 ### Step 6: Confirmation
 
@@ -93,8 +93,9 @@ Before moving on, complete a full test signup:
 2. Select a plan
 3. Choose a template
 4. Create an account
-5. Complete payment (use test mode)
-6. Verify the site is created with the correct template
+5. Test each Order Bump once selected and once unselected
+6. Complete payment (use test mode)
+7. Verify the site is created with the correct template and add-ons
 
 Check that:
 
@@ -102,6 +103,7 @@ Check that:
 - [ ] Template previews show fitness-appropriate designs
 - [ ] The site URL generates correctly from the studio name
 - [ ] Payment processes successfully
+- [ ] Selected add-ons appear in the order summary with the correct price and billing period
 - [ ] The customer lands on a working site with the selected template
 - [ ] Confirmation emails use fitness-specific language
 
