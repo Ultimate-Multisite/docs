@@ -1,8 +1,13 @@
 import React, {useEffect} from 'react';
 
 const API_BASE = 'https://ultimatemultisite.com/wp-json/sd-ai-agent/v1';
-const SCRIPT_SRC = 'https://ultimatemultisite.com/app/plugins/superdav-ai-agent/build/embed-widget.js';
-const STYLE_HREF = 'https://ultimatemultisite.com/app/plugins/superdav-ai-agent/build/style-embed-widget.css';
+// SHA-256 of the deployed assets. Immutable caches need a new URL when content
+// changes; update these hashes and rebuild the docs after a widget deployment.
+const SCRIPT_VERSION = '8e7753cbc04f25f810bce3203cc1cc7b36dd2a4e53cafecb3a41be938a95ed01';
+const STYLE_VERSION = '61b442d0e8edac2be1d94c52e42245c9db06aa22c05c4f8ef67d5f5e719f0ac3';
+const ASSET_BASE = 'https://ultimatemultisite.com/app/plugins/superdav-ai-agent/build';
+const SCRIPT_SRC = `${ASSET_BASE}/embed-widget.js?ver=${SCRIPT_VERSION}`;
+const STYLE_HREF = `${ASSET_BASE}/style-embed-widget.css?ver=${STYLE_VERSION}`;
 const SCRIPT_ID = 'ums-docs-assistant-script';
 const STYLE_ID = 'ums-docs-assistant-style';
 

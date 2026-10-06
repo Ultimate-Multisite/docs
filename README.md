@@ -75,3 +75,20 @@ node scripts/translate.js --provider ollama-native --base-url http://localhost:1
 ## Deployment
 
 Pushes to `main` trigger the Deploy Documentation workflow, which builds the site and deploys via rsync.
+
+### Docs assistant asset versions
+
+`src/theme/Root.js` loads the deployed AI widget JavaScript and stylesheet with
+their SHA-256 content hashes in the `ver` query parameter. Both assets have
+long-lived immutable cache headers, so an unversioned URL can retain an older
+widget even after the WordPress plugin is deployed.
+
+After a widget deployment, obtain SHA-256 hashes of the **deployed build files**
+`embed-widget.js` and `style-embed-widget.css`, update `SCRIPT_VERSION` and
+`STYLE_VERSION`, and rebuild/deploy the docs across all locales. Do not use the
+docs commit or a timestamp as a substitute for the widget's content version.
+
+Verify that the published script URL includes the expected hash and its response
+bytes match that hash. On a fresh docs page, no public-chat configuration or
+session request should occur until the visitor opens the assistant. Route changes
+must reuse the existing widget rather than append another script/session.
