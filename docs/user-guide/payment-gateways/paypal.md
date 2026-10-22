@@ -17,7 +17,7 @@ Note that you need to have a **PayPal Business account** to obtain the API crede
 
 To enable PayPal as an available payment method on your network, go to **Ultimate Multisite > Settings > Payments** tab and tick the box next to PayPal.
 
-![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
+![Enabling PayPal in active payment gateways](/img/payment-gateways/paypal/um-enable-gateway.png)
 
 ## Using the guided setup wizard
 
@@ -38,7 +38,7 @@ You can get this by logging in to your PayPal [Live](https://www.paypal.com/home
 
 (Remember that you can use the **sandbox mode** to test payments and see if the gateway is correctly setup. Just toggle on the correspondent section.)
 
-![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/payment-gateways/paypal/um-api-credentials-form.png)
 
 To request API Signature or Certificate credentials for your PayPal account:
 
