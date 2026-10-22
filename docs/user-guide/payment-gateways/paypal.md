@@ -28,8 +28,6 @@ The wizard supports two setup paths:
 * **Manual credential entry**: Use this path when you already have PayPal API credentials, when OAuth setup is not available for your account, or when you prefer to copy credentials from PayPal yourself. Enter the API Username, API Password, and API Signature in the PayPal fields, then save the payment settings.
 * **OAuth connection gate**: Use this path only when the OAuth option is available and enabled for your install. The wizard shows the OAuth flow behind a feature flag, so networks without the flag continue to use the manual credential entry fields.
 
-![PayPal setup wizard sandbox credential fields](/img/payment-gateways/paypal/um-api-credentials-form.png)
-
 If you do not see the OAuth option in the wizard, complete the manual credential entry flow below. The gateway works with the same PayPal Business API credentials as previous Ultimate Multisite 2.x releases.
 
 ## Getting the PayPal API credentials
@@ -40,7 +38,7 @@ You can get this by logging in to your PayPal [Live](https://www.paypal.com/home
 
 (Remember that you can use the **sandbox mode** to test payments and see if the gateway is correctly setup. Just toggle on the correspondent section.)
 
-![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
+![PayPal API credentials fields and sandbox mode toggle](/img/payment-gateways/paypal/um-api-credentials-form.png)
 
 To request API Signature or Certificate credentials for your PayPal account:
 
