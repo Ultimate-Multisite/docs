@@ -17,13 +17,14 @@ body.ums-account-canvas { margin: 0; background: #f7f8f5; }
 .ums-nav { display: grid; gap: 6px; }
 .ums-nav a { display: flex; gap: 15px; align-items: center; min-height: 48px; border-radius: 8px; padding: 10px 12px; margin-left: -12px; text-decoration: none; font-size: 14px; font-weight: 600; }
 .ums-nav a:hover { background: #e7ecdf; }
+.ums-workspace:not(:has(:target)) .ums-nav a[href="#overview"], .ums-workspace:has(#overview:target) .ums-nav a[href="#overview"], .ums-workspace:has(#sites:target) .ums-nav a[href="#sites"], .ums-workspace:has(#billing:target) .ums-nav a[href="#billing"], .ums-workspace:has(#settings:target) .ums-nav a[href="#settings"] { background: #e3ead8; color: #25452b; }
 .ums-nav span { color: #697960; font-size: 11px; font-variant-numeric: tabular-nums; }
 .ums-sidebar-note { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
 .ums-note-dot { display: block; width: 8px; height: 8px; background: #7c994a; border-radius: 50%; }
 .ums-content { min-width: 0; }
-.ums-intro { position: relative; padding: 38px 42px 36px; margin-bottom: 42px; background: #e9eedf; border: 1px solid #dce4cc; border-radius: 16px; }
-.ums-portal h1 { font: 500 clamp(40px, 4.4vw, 62px)/1.04 Georgia, "Times New Roman", serif; letter-spacing: -.045em; margin: 0 0 22px; color: var(--ink); }
-.ums-intro > p:not(.ums-eyebrow) { max-width: 520px; margin-bottom: 24px; color: #465640; font-size: 16px; }
+.ums-intro { position: relative; padding: 28px 36px; margin-bottom: 30px; background: #e9eedf; border: 1px solid #dce4cc; border-radius: 16px; }
+.ums-portal h1 { font: 500 clamp(40px, 4vw, 54px)/1.04 Georgia, "Times New Roman", serif; letter-spacing: -.045em; margin: 0 0 16px; color: var(--ink); }
+.ums-intro > p:not(.ums-eyebrow) { max-width: 520px; margin-bottom: 12px; color: #465640; font-size: 16px; }
 .ums-text-link { display: inline-flex; align-items: center; gap: 24px; min-height: 44px; font-weight: 650; font-size: 14px; text-decoration: none; border-bottom: 1px solid currentColor; }
 .ums-text-link:hover { color: #162f1a; }
 .ums-section { margin-top: 38px; scroll-margin-top: 28px; }
@@ -50,6 +51,7 @@ body.ums-account-canvas { margin: 0; background: #f7f8f5; }
 .ums-portal .wu-styling .wu-font-bold, .ums-portal .wu-styling .wu-font-semibold { font-weight: 650; }
 .ums-portal .wu-styling .wu-text-xs { font-size: 12px; }
 .ums-portal .wu-styling .wu-text-sm { font-size: 14px; }
+.ums-portal .wu-styling .wu-text-gray-600, .ums-portal .wu-styling .wu-text-gray-500 { color: #59675d; }
 .ums-portal .wu-styling table { font-variant-numeric: tabular-nums; }
 .ums-footer { border-top: 1px solid var(--line); max-width: 1216px; margin: auto; padding: 24px 0 36px; display: flex; justify-content: space-between; gap: 24px; color: var(--muted); font-size: 12px; }
 .ums-guest, .ums-plans { max-width: 940px; margin: 64px auto 96px; padding: 0 32px; }
