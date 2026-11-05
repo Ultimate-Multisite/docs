@@ -7,7 +7,11 @@ sidebar_position: 16
 
 Use these exact files with the [complete setup guide](frontend-account-page.md). [Download the installable ZIP](/downloads/frontend-account-example.zip).
 
-This page is generated from the downloadable example. PHP belongs in the example plugin folder; paste the HTML into the page block editor’s Code editor. Do not put PHP in page content or edit Ultimate Multisite itself.
+These seven files are the complete shared presentation layer and both page variants.
+Follow the [native blocks guide](frontend-account-blocks.md) for the visual-editor
+version. PHP belongs in the example plugin folder; paste HTML exports into the
+page block editor’s Code editor, then return to visual editing. No generator or
+build step is required. Do not put PHP in page content or edit Ultimate Multisite.
 
 ### `ums-account-example.php`
 
@@ -291,6 +295,160 @@ body.ums-account-canvas { margin: 0; background: #f7f8f5; }
   </div>
 </div>
 <!-- /wp:html -->
+```
+
+### `account-blocks.html`
+
+```html
+<!-- wp:group {"className":"ums-workspace"} -->
+<div class="wp-block-group ums-workspace"><!-- wp:group {"className":"ums-sidebar"} -->
+<div class="wp-block-group ums-sidebar"><!-- wp:paragraph {"className":"ums-sidebar-label"} -->
+<p class="ums-sidebar-label">YOUR WORKSPACE</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"ums-nav"} -->
+<div class="wp-block-group ums-nav"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<p style="margin-top:0;margin-bottom:0"><a href="#overview">01 Overview</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<p style="margin-top:0;margin-bottom:0"><a href="#sites">02 My sites</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<p style="margin-top:0;margin-bottom:0"><a href="#billing">03 Billing &amp; invoices</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<p style="margin-top:0;margin-bottom:0"><a href="#settings">04 Account settings</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-content","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-group ums-content" style="margin-top:0;margin-bottom:0"><!-- wp:group {"className":"ums-intro","anchor":"overview"} -->
+<div id="overview" class="wp-block-group ums-intro"><!-- wp:paragraph {"className":"ums-eyebrow"} -->
+<p class="ums-eyebrow">MAKE YOURSELF AT HOME</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Your next chapter<br>starts here.</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Everything you need to keep your sites moving. Manage your plan, your billing and what comes next.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"ums-section","anchor":"membership"} -->
+<section id="membership" class="wp-block-group ums-section"><!-- wp:group {"className":"ums-section-heading"} -->
+<div class="wp-block-group ums-section-heading"><!-- wp:heading -->
+<h2 class="wp-block-heading">Your membership</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/current-membership {"title":"","display_images":false} /--></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"ums-section","anchor":"sites"} -->
+<section id="sites" class="wp-block-group ums-section"><!-- wp:group {"className":"ums-section-heading"} -->
+<div class="wp-block-group ums-section-heading"><!-- wp:heading -->
+<h2 class="wp-block-heading">Made by you.</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"ums-section-copy"} -->
+<p class="ums-section-copy">Choose Manage to see a site’s details, usage and available actions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/my-sites {"columns":2,"display_images":false} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-site-detail"} -->
+<div class="wp-block-group ums-site-detail"><!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/current-site {"display_image":false} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-detail-grid"} -->
+<div class="wp-block-group ums-detail-grid"><!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/account-summary /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/limits /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"ums-section","anchor":"billing"} -->
+<section id="billing" class="wp-block-group ums-section"><!-- wp:group {"className":"ums-section-heading"} -->
+<div class="wp-block-group ums-section-heading"><!-- wp:heading -->
+<h2 class="wp-block-heading">The practical details.</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-detail-grid"} -->
+<div class="wp-block-group ums-detail-grid"><!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/billing-info /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/payment-methods /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/invoices /--></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"ums-section","anchor":"settings"} -->
+<section id="settings" class="wp-block-group ums-section"><!-- wp:group {"className":"ums-section-heading"} -->
+<div class="wp-block-group ums-section-heading"><!-- wp:heading -->
+<h2 class="wp-block-heading">You’re in control.</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"ums-section-copy"} -->
+<p class="ums-section-copy">Keep your account up to date. Site-specific actions appear after choosing a site.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/site-actions /--></div>
+<!-- /wp:group --></section>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+```
+
+### `plans-blocks.html`
+
+```html
+<!-- wp:group {"className":"ums-plans"} -->
+<div class="wp-block-group ums-plans"><!-- wp:paragraph -->
+<p><a href="/account-blocks/">← Back to your account</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"ums-eyebrow"} -->
+<p class="ums-eyebrow">ROOM TO GROW</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">A plan for your<br>next chapter.</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Choose the plan that fits your sites. Review the total before confirming.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"ums-card"} -->
+<div class="wp-block-group ums-card"><!-- wp:wp-ultimo/checkout {"slug":"wu-checkout"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 ```
 
 ### `plans-page.html`

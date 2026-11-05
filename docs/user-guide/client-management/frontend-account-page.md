@@ -10,6 +10,11 @@ Give your customers one place to manage their membership, sites, billing and acc
 
 This guide builds a real account page, not a static mockup. The example uses **Ollie 1.6.0**, native Ultimate Multisite shortcodes, and a small optional presentation plugin. The theme supplies the WordPress foundation; the downloadable example supplies the account canvas and its scoped styling. No page builder, external fonts, paid theme or custom billing API is required.
 
+Prefer visual editing without shortcode text? Follow the separate
+[native block editor example](frontend-account-blocks.md). It builds the same
+account sections with real Ultimate Multisite blocks inside editable layout
+blocks, plus a native Checkout block page.
+
 ![Desktop customer account workspace with sidebar navigation, membership and plan controls](/img/frontend-account/01-overview.png)
 
 :::important Compatibility and release status
@@ -73,6 +78,21 @@ The native Change link carries the selected membership into checkout. A plain na
 
 If you want your current theme's normal header and footer, use separate **Shortcode blocks** in the Account page:
 
+1. Open **Pages → Add Page** on the main site and enter your account page title.
+2. Click the **+ Block Inserter**, search for **Shortcode**, and insert WordPress's
+   **Shortcode** block—not Code or Custom HTML.
+3. Paste `[wu_current_membership]` into its text box. Add another Shortcode block
+   for each remaining widget below. Use List View to reorder them and Heading
+   or Group blocks to organize your sections.
+4. Publish, then view the page as a real customer. Shortcode blocks show shortcode
+   text in the editor; they do not show the customer's live account there.
+
+![Searching for the Shortcode block in the actual WordPress page editor](/img/frontend-account/19-shortcode-inserter.png)
+
+![A newly inserted Shortcode block with the membership shortcode entered](/img/frontend-account/24-add-shortcode-text.png)
+
+![Membership shortcode entered into a Shortcode block in the actual account page](/img/frontend-account/18-shortcode-editor-settings.png)
+
 ```text
 [wu_current_membership]
 [wu_my_sites]
@@ -101,7 +121,9 @@ ums-account-example/
 ├── canvas.php               # Header, guest state, page content and footer
 ├── portal.css               # Scoped desktop/mobile design
 ├── account-page.html        # Complete Gutenberg Account page markup
-└── plans-page.html          # Complete Gutenberg Membership page markup
+├── plans-page.html          # Shortcode-based Membership page
+├── account-blocks.html      # Native blocks alternative; no Shortcode/HTML blocks
+└── plans-blocks.html        # Native Checkout block alternative
 ```
 
 1. Back up your staging site and note its current theme and membership-update page.
@@ -237,13 +259,14 @@ The example canvas does not render account widgets for guests. Instead, it shows
 
 ## Full source code
 
-The complete source reference is generated directly from the five downloadable files, so the example package and displayed source stay identical. It is separate from this walkthrough for easier reading; no code is omitted. The PHP goes in the example plugin folder—not a page's content editor or the Ultimate Multisite plugin. The HTML goes in the block editor's **Code editor**, and the CSS remains in `portal.css`.
+The source reference contains all seven presentation and page files, including
+both [native block page exports](frontend-account-blocks.md). All seven are also
+in the ZIP. No Python script, generator or
+build step is needed to install or use either example. PHP goes in the example
+plugin folder—not the page editor or Ultimate Multisite itself. Paste the HTML
+exports into the block editor's **Code editor**, then switch back to visual editing.
 
-<!-- BEGIN ACCOUNT EXAMPLE SOURCE -->
-
-[Open the complete five-file source reference](frontend-account-example-source.md).
-
-<!-- END ACCOUNT EXAMPLE SOURCE -->
+[Open the complete source reference](frontend-account-example-source.md).
 
 ## Removing the example
 

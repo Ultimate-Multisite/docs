@@ -35,7 +35,13 @@ page markup and scoped CSS together in the downloadable package.
 Screenshot assets show synthetic data and actual rendered product states,
 not reconstructed UI. Use viewport captures (at most 1568px on the longest
 side), with separate views for content below the fold. Never capture passwords,
-reset/magic tokens or hosted payment session URLs. Keep all source files, the
-guide's complete source reference and its ZIP synchronized with
-`python3 scripts/build-account-example.py --write`; verify with the same command
-without `--write`.
+reset/magic tokens or hosted payment session URLs. Keep the seven downloadable
+files, complete inline source reference and ZIP identical. The docs do not ship
+custom generation tooling; the example needs no build step.
+
+The native-block alternative uses editable WordPress Group, Heading and
+Paragraph layouts and nine Ultimate Multisite account blocks, not Shortcode or
+Custom HTML wrappers. Preserve Group classes and section anchors when restyling.
+Show actual inserter, shortcode-entry, block-inspector and List View screenshots,
+not just the rendered account. Preview data is illustrative; saved customer
+actions are verified on the published page in a separate browser.

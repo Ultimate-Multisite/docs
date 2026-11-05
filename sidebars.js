@@ -115,6 +115,7 @@ const sidebars = {
       items: [
         'user-guide/client-management/account-page',
         'user-guide/client-management/frontend-account-page',
+        'user-guide/client-management/frontend-account-blocks',
         'user-guide/client-management/frontend-account-example-source',
         'user-guide/client-management/shortcodes',
         'user-guide/client-management/client-websites',
