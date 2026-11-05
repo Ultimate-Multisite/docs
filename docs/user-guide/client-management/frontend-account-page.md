@@ -45,13 +45,19 @@ The customer's subsite **wp-admin Account** screen is an alternative interface t
 
 ## 2. Create the pages and connect plan changes
 
+Before starting, make sure Ultimate Multisite is active on a working WordPress
+Multisite network, your products and checkout form are configured, and your
+test WordPress user is linked to an Ultimate Multisite customer, membership
+and owned site. Use a disposable customer on staging, not a live customer's
+account, for cancellation, deletion or payment tests.
+
 On a staging network, create these **published main-site pages**:
 
 | Page | Suggested slug | Content |
 | --- | --- | --- |
 | Account | `account` | Account shortcodes, or the complete example below |
 | Choose your plan | `membership` | `[wu_checkout slug="wu-checkout"]` or the example plans page |
-| Login | `login` | `[wu_login]`, if using Ultimate Multisite's custom login page |
+| Login | `login` | `[wu_login_form]`, if using Ultimate Multisite's custom login page |
 
 `wu-checkout` is the checkout-form slug used in this example, **not a universal requirement**. Replace it with your actual published form's slug, found under **Ultimate Multisite → Checkout Forms**. The form must expose the products/plans the customer is allowed to choose. See [Checkout Forms](../configuration/checkout-forms.md).
 
@@ -181,6 +187,20 @@ Membership cancellation requires a reason and the confirmation phrase shown by t
 
 Delete Site, template switching/reset and other site-specific actions appear only when a site is selected and the feature is allowed. Template replacement/reset can overwrite site content. Keep native confirmations and backups; do not turn these into one-click custom links. Site deletion is distinct from membership cancellation and must return to a valid account page afterward.
 
+### Optional domain management and new-site signup
+
+If your plans allow customer domains, you can add `[wu_domain_mapping]` in a
+separate Shortcode block beside the selected-site controls. Enable domain
+mapping at the network and product levels, and test ownership, DNS instructions
+and verification on staging. This optional widget is not included in the nine-
+widget screenshot example. See [Domain Mapping](../domain-mapping/how-to-configure-domain-mapping.md).
+
+The example is an account-management page, not a replacement signup funnel.
+Adding another site must follow your network's permitted new-site checkout
+flow. Do not reuse an existing membership's Change or Resubscribe link as an
+"Add site" button, and do not hard-code a template-change URL: use the native
+site action, which may legitimately open the selected site's admin interface.
+
 ### Signed-out customers
 
 The example canvas does not render account widgets for guests. Instead, it shows the configured sign-in URL and password-recovery link. Sign out after testing to verify this state in a separate browser.
@@ -269,7 +289,7 @@ defined('ABSPATH') || exit;
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta charset="<?php echo esc_attr(get_bloginfo('charset')); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
 </head>
@@ -278,7 +298,7 @@ defined('ABSPATH') || exit;
 <a class="ums-skip" href="#ums-main"><?php esc_html_e('Skip to account', 'ums-account-example'); ?></a>
 <div class="ums-portal">
 	<header class="ums-topbar">
-		<a class="ums-brand" href="<?php echo esc_url(home_url('/')); ?>"><span class="ums-mark" aria-hidden="true">u</span><span><?php bloginfo('name'); ?></span></a>
+		<a class="ums-brand" href="<?php echo esc_url(home_url('/')); ?>"><span class="ums-mark" aria-hidden="true">u</span><span><?php echo esc_html(get_bloginfo('name')); ?></span></a>
 		<span class="ums-topbar-label"><?php esc_html_e('Customer workspace', 'ums-account-example'); ?></span>
 		<?php if (is_user_logged_in()) : ?>
 			<a class="ums-signout" href="<?php echo esc_url(wp_logout_url(get_permalink())); ?>"><?php esc_html_e('Sign out', 'ums-account-example'); ?></a>
@@ -295,7 +315,7 @@ defined('ABSPATH') || exit;
 			<a class="ums-quiet" href="<?php echo esc_url(wp_lostpassword_url(get_permalink())); ?>"><?php esc_html_e('Forgot your password?', 'ums-account-example'); ?></a>
 		</main>
 	<?php endif; ?>
-	<footer class="ums-footer"><span><?php bloginfo('name'); ?></span><span><?php esc_html_e('Your sites. Your next chapter.', 'ums-account-example'); ?></span></footer>
+	<footer class="ums-footer"><span><?php echo esc_html(get_bloginfo('name')); ?></span><span><?php esc_html_e('Your sites. Your next chapter.', 'ums-account-example'); ?></span></footer>
 </div>
 <?php wp_footer(); ?>
 </body>
