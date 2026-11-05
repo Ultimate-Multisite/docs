@@ -115,11 +115,11 @@ Use the [shared installation steps](frontend-account-page.md#4-install-the-compl
 for the optional canvas plugin and Ollie theme. Then:
 
 1. Create the Account page and switch the editor to **Options → Code editor**.
-2. Paste the entire contents of [account-blocks.html](/downloads/frontend-account/account-blocks.html),
+2. Paste the entire contents of `account-blocks.html` from the ZIP,
    including the block comments. Switch back to **Visual editor**. WordPress
    recognizes the saved blocks; this is a one-time import, not a Code block.
 3. Choose **Account workspace (example)** as the page template, then save.
-4. Repeat for the plans page using [plans-blocks.html](/downloads/frontend-account/plans-blocks.html)
+4. Repeat for the plans page using `plans-blocks.html` from the ZIP
    and the same template. Change its Back to your account link if your account
    slug or WordPress installation directory differs.
 5. Configure the Checkout block's form and the shared membership-update setting.
