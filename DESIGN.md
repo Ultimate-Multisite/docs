@@ -36,6 +36,6 @@ Screenshot assets show synthetic data and actual rendered product states,
 not reconstructed UI. Use viewport captures (at most 1568px on the longest
 side), with separate views for content below the fold. Never capture passwords,
 reset/magic tokens or hosted payment session URLs. Keep all source files, the
-guide's source appendix and its ZIP synchronized with
+guide's complete source reference and its ZIP synchronized with
 `python3 scripts/build-account-example.py --write`; verify with the same command
 without `--write`.
