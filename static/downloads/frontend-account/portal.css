@@ -33,10 +33,8 @@ body.ums-account-canvas { margin: 0; background: #f7f8f5; }
 .ums-section-heading > span { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .13em; }
 .ums-section-copy { color: var(--muted); margin: -4px 0 20px; font-size: 14px; max-width: 640px; }
 .ums-card { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; overflow-wrap: anywhere; min-width: 0; }
-.ums-card:empty { display: none; }
 .ums-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .ums-site-detail { display: grid; gap: 20px; margin-top: 20px; }
-.ums-site-detail > .ums-card:not(:has(.wu-current-site)), .ums-detail-grid > .ums-card:not(:has(.wu-styling)), .ums-invoices:not(:has(.wu-invoices)) { display: none; }
 .ums-invoices { margin-top: 20px; }
 .ums-portal .wu-styling { font-family: inherit; font-size: 14px; line-height: 1.6; }
 .ums-portal .wu-styling h3 { font-size: 16px; color: var(--ink); }

@@ -20,7 +20,7 @@ build step is required. Do not put PHP in page content or edit Ultimate Multisit
 /**
  * Plugin Name: Ultimate Multisite Account Page Example
  * Description: An optional presentation layer for native Ultimate Multisite shortcodes.
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: GPL-2.0-or-later
  * Text Domain: ums-account-example
  */
@@ -47,9 +47,18 @@ add_action('template_redirect', function () {
 
 add_action('wp_enqueue_scripts', function () {
 	if (ums_account_example_is_page()) {
-		wp_enqueue_style('ums-account-example', plugins_url('portal.css', __FILE__), [], '1.0.0');
+		wp_enqueue_style('ums-account-example', plugins_url('portal.css', __FILE__), [], '1.0.1');
 	}
 });
+
+add_filter('the_content', function ($content) {
+	if (!ums_account_example_is_page()) {
+		return $content;
+	}
+
+	// After blocks/shortcodes render, omit only our own completely empty cards.
+	return preg_replace('/<div\b[^>]*\sclass="[^"]*\bums-card\b[^"]*"[^>]*>\s*<\/div>/', '', $content);
+}, 20);
 ```
 
 ### `canvas.php`
@@ -79,12 +88,13 @@ defined('ABSPATH') || exit;
 	<?php if (is_user_logged_in()) : ?>
 		<main id="ums-main" tabindex="-1"><?php while (have_posts()) : the_post(); the_content(); endwhile; ?></main>
 	<?php else : ?>
+		<?php $return_url = wp_validate_redirect(wp_unslash($_SERVER['REQUEST_URI'] ?? ''), get_permalink()); ?>
 		<main id="ums-main" class="ums-guest" tabindex="-1">
 			<p class="ums-eyebrow"><?php esc_html_e('Your workspace, in one place', 'ums-account-example'); ?></p>
 			<h1><?php esc_html_e('Welcome back.', 'ums-account-example'); ?></h1>
 			<p><?php esc_html_e('Sign in to manage your sites, membership and billing.', 'ums-account-example'); ?></p>
-			<a class="ums-button" href="<?php echo esc_url(wp_login_url(get_permalink())); ?>"><?php esc_html_e('Sign in to your account', 'ums-account-example'); ?></a>
-			<a class="ums-quiet" href="<?php echo esc_url(wp_lostpassword_url(get_permalink())); ?>"><?php esc_html_e('Forgot your password?', 'ums-account-example'); ?></a>
+			<a class="ums-button" href="<?php echo esc_url(wp_login_url($return_url)); ?>"><?php esc_html_e('Sign in to your account', 'ums-account-example'); ?></a>
+			<a class="ums-quiet" href="<?php echo esc_url(wp_lostpassword_url($return_url)); ?>"><?php esc_html_e('Forgot your password?', 'ums-account-example'); ?></a>
 		</main>
 	<?php endif; ?>
 	<footer class="ums-footer"><span><?php echo esc_html(get_bloginfo('name')); ?></span><span><?php esc_html_e('Your sites. Your next chapter.', 'ums-account-example'); ?></span></footer>
@@ -132,10 +142,8 @@ body.ums-account-canvas { margin: 0; background: #f7f8f5; }
 .ums-section-heading > span { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .13em; }
 .ums-section-copy { color: var(--muted); margin: -4px 0 20px; font-size: 14px; max-width: 640px; }
 .ums-card { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; overflow-wrap: anywhere; min-width: 0; }
-.ums-card:empty { display: none; }
 .ums-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .ums-site-detail { display: grid; gap: 20px; margin-top: 20px; }
-.ums-site-detail > .ums-card:not(:has(.wu-current-site)), .ums-detail-grid > .ums-card:not(:has(.wu-styling)), .ums-invoices:not(:has(.wu-invoices)) { display: none; }
 .ums-invoices { margin-top: 20px; }
 .ums-portal .wu-styling { font-family: inherit; font-size: 14px; line-height: 1.6; }
 .ums-portal .wu-styling h3 { font-size: 16px; color: var(--ink); }
