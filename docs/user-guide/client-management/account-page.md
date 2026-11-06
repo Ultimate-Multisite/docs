@@ -11,6 +11,15 @@ When customers subscribe to a plan on your network, they get access to a website
 
 In this tutorial, we will guide you through the customer's account page and you will see what your customers can see and do inside it.
 
+:::tip Prefer a frontend account page?
+This article describes the customer dashboard's Account screen. To build a
+main-site frontend workspace with native shortcodes, see
+[Build a Frontend Customer Account](frontend-account-page.md). It includes the
+required membership-update configuration, a complete styled example, every
+source file and desktop/mobile screenshots. You do not need to duplicate account
+records or install an account page on each customer subsite.
+:::
+
 ## The Account Page
 
 The account page is accessible by clicking on **Account** inside your customer's dashboard.

@@ -68,3 +68,17 @@ Next is to select an **Event** *.* Under this option, you just simply need to ch
 ![Selecting all events and adding the Stripe endpoint](/img/config/settings-payment-gateways.png)
 
 That’s it, your Stripe payment integration is complete!
+
+## Let customers update their payment method
+
+Enable **Use Stripe Billing Portal** for the gateway used by the membership.
+The membership must have valid Stripe customer/subscription references, and
+its credentials and test/live mode must match those records. A frontend page
+can expose the native action through `[wu_payment_methods]` or
+`[wu_site_actions]`; unsupported gateways do not show an online card-change link.
+
+See [Build a Frontend Customer Account](../client-management/frontend-account-page.md)
+for the complete page, source code, screenshots and release compatibility note.
+Test the full portal journey in a sandbox: replace the default card, return to
+the account page and verify the effective card shown there. Do not publish
+portal-session URLs or credentials in example content.

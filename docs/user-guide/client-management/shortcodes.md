@@ -11,6 +11,10 @@ The shortcode and its matching block provide the same feature and settings. Sett
 
 ## Building custom customer dashboards and account pages
 
+For a complete main-site account recipe, membership-update settings, a styled
+Ollie example, full source and desktop/mobile screenshots, see
+[Build a Frontend Customer Account](frontend-account-page.md).
+
 Create a WordPress page and combine the account-focused blocks or shortcodes in the order that suits your customer journey. For example, a compact customer dashboard might contain:
 
 ```text
@@ -106,7 +110,7 @@ Displays the current membership, including its plan, status, and billing cycle.
 
 ### Account Summary — `[wu_account_summary]`
 
-Displays a summary of the customer account, including membership and site information.
+Displays the selected site's plan, storage and trial information. Choose an owned site through My Sites first; the frontend-account fixes add sign-in, site-selection and recovery guidance when no site is selected. This is not a single all-in-one account landing-page shortcode.
 
 | Parameter | Description | Accepted values | Default |
 | --- | --- | --- | --- |
