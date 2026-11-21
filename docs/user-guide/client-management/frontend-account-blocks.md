@@ -23,6 +23,14 @@ styled iframe previews, correctly typed settings, and early detection of setting
 inside Groups/Columns. Use a release that includes them on production.
 The block editor shows sample preview data, not the account of the administrator
 editing the page. Test the published page as a customer before launch.
+
+**Payment Methods fatal error on v2.4.12 through v2.19.0.** The Payment Methods
+block calls a gateway method that does not exist. The editor preview looks normal,
+because its sample membership has no gateway, but the published page breaks with
+`Call to undefined method WP_Ultimo\Gateways\Free_Gateway::get_title()` for any
+customer whose membership has a payment gateway, including Free. Plugin PR #2133
+fixes it. Until you run a release that includes it, leave the Payment Methods block
+off the page.
 :::
 
 ## 1. Insert the native account blocks

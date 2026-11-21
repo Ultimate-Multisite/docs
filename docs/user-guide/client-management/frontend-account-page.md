@@ -19,6 +19,8 @@ blocks, plus a native Checkout block page.
 
 :::important Compatibility and release status
 The screenshots were captured on a local WordPress Multisite installation with the frontend-account fixes from [plugin PR #2133](https://github.com/Ultimate-Multisite/ultimate-multisite/pull/2133). That PR is merged to `main` after v2.19.0 and ships in the next release, so v2.19.0 and earlier do not include it. The version string alone does not establish that those fixes are installed. Until you run a release that includes it, some installations may not provide the same recovery states, Manage focus, resubscription, cancellation validation or Stripe return behavior. Do not install an unreleased development branch on a live network.
+
+**Payment Methods fatal error on v2.4.12 through v2.19.0.** The Payment Methods widget (`[wu_payment_methods]` or the Payment Methods block) calls a gateway method that does not exist. It breaks the page with `Call to undefined method WP_Ultimo\Gateways\Free_Gateway::get_title()` for any customer whose membership has a payment gateway, which includes the Free gateway used by free plans and trials without a card. Plugin PR #2133 fixes it. Until you run a release that includes it, leave the Payment Methods widget off the account page.
 :::
 
 ## 1. Understand the two account views
