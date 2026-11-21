@@ -18,7 +18,7 @@ blocks, plus a native Checkout block page.
 ![Desktop customer account workspace with sidebar navigation, membership and plan controls](/img/frontend-account/01-overview.png)
 
 :::important Compatibility and release status
-The screenshots were captured on a local WordPress Multisite installation with the frontend-account fixes proposed in [plugin PR #2086](https://github.com/Ultimate-Multisite/ultimate-multisite/pull/2086). The version string alone does not establish that those fixes are installed. Until that PR is released, some older installations may not provide the same recovery states, Manage focus, resubscription, cancellation validation or Stripe return behavior. Use the release containing those fixes for production; do not install an unreviewed development branch on a live network.
+The screenshots were captured on a local WordPress Multisite installation with the frontend-account fixes from [plugin PR #2133](https://github.com/Ultimate-Multisite/ultimate-multisite/pull/2133). That PR is merged to `main` after v2.19.0 and ships in the next release, so v2.19.0 and earlier do not include it. The version string alone does not establish that those fixes are installed. Until you run a release that includes it, some installations may not provide the same recovery states, Manage focus, resubscription, cancellation validation or Stripe return behavior. Do not install an unreleased development branch on a live network.
 :::
 
 ## 1. Understand the two account views
@@ -185,7 +185,7 @@ Billing Address opens the native address form. Payment Method shows the actual c
 
 ![Native billing-address form opened from the frontend page](/img/frontend-account/05-billing-form.png)
 
-**Manual/Free:** an online card-change link is not expected for a gateway that does not support it. Manual paid upgrades/reactivations can remain On Hold until an administrator confirms payment and explicitly activates the membership in the payment editor.
+**Manual/Free:** an online card-change link is not expected for a gateway that does not support it. A Manual paid upgrade stays On Hold, and a reactivation stays Cancelled, until an administrator confirms the payment and explicitly activates the membership in the payment editor. A reactivation is not restored before then, because On Hold counts as an active membership. An add-on payment is confirmed the same way, but it only lifts the hold: it does not extend the plan's period.
 
 **Stripe:** enable **Use Stripe Billing Portal** for the membership's Stripe gateway and configure the correct test/live credentials. The membership needs valid Stripe customer/subscription references. The portal opens on Stripe's own domain and returns to the originating account page. The card display must respect a subscription-specific card when set, or the customer's default when the portal removes that override. See [Stripe](../payment-gateways/stripe.md).
 
@@ -253,7 +253,7 @@ The example canvas does not render account widgets for guests. Instead, it shows
 | Checkout asks for a new site during resubscription | Preserve the native membership-context link and use the release containing the corrected resubscription flow. |
 | No Change link under Payment Method | Check gateway support, Stripe Billing Portal setting, credentials and membership gateway references. Manual/Free do not have an online card-change flow. |
 | Card changes in Stripe but the widget loses card details | Use the fixed gateway that reads the effective customer default when there is no subscription override. |
-| Manual payment says Completed but membership is On Hold | In the administrator payment editor, explicitly activate the membership when confirming the offline payment. |
+| Manual payment says Completed but the membership is still On Hold (upgrade) or Cancelled (reactivation) | In the administrator payment editor, set the payment to Completed and turn on **Activate Membership?** when confirming the offline payment. |
 | CSS/layout differs from these screenshots | Confirm the example plugin is active, the Account workspace template is selected and cached CSS is cleared. Inspect inherited theme styles. |
 | A previous customer's information appears | Stop using the cached page, purge it and repair the cache/ownership issue before reopening access. Do not hide the symptom with CSS. |
 
