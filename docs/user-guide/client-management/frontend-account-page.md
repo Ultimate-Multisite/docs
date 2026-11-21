@@ -187,7 +187,10 @@ Billing Address opens the native address form. Payment Method shows the actual c
 
 ![Native billing-address form opened from the frontend page](/img/frontend-account/05-billing-form.png)
 
-**Manual/Free:** an online card-change link is not expected for a gateway that does not support it. A Manual paid upgrade stays On Hold, and a reactivation stays Cancelled, until an administrator confirms the payment and explicitly activates the membership in the payment editor. A reactivation is not restored before then, because On Hold counts as an active membership. An add-on payment is confirmed the same way, but it only lifts the hold: it does not extend the plan's period.
+**Manual/Free:** an online card-change link is not expected for a gateway that does not support it. A Manual paid upgrade stays On Hold, and a reactivation stays Cancelled, until an administrator confirms the payment. How the administrator activates the membership depends on the release:
+
+- **Releases that include plugin PR #2133:** set the payment to Completed in the payment editor and turn on **Activate Membership?** when you save. A reactivation is not restored earlier, because On Hold counts as an active membership. An add-on payment is confirmed the same way, but it only lifts the hold: it does not extend the plan's period.
+- **v2.19.0 and earlier:** the payment editor offers **Activate Membership?** only while the membership is Pending, so it never appears for an On Hold upgrade or a Cancelled reactivation. Activate the membership in the membership editor instead, as described in the troubleshooting table below.
 
 **Stripe:** enable **Use Stripe Billing Portal** for the membership's Stripe gateway and configure the correct test/live credentials. The membership needs valid Stripe customer/subscription references. The portal opens on Stripe's own domain and returns to the originating account page. The card display must respect a subscription-specific card when set, or the customer's default when the portal removes that override. See [Stripe](../payment-gateways/stripe.md).
 
@@ -255,7 +258,8 @@ The example canvas does not render account widgets for guests. Instead, it shows
 | Checkout asks for a new site during resubscription | Preserve the native membership-context link and use the release containing the corrected resubscription flow. |
 | No Change link under Payment Method | Check gateway support, Stripe Billing Portal setting, credentials and membership gateway references. Manual/Free do not have an online card-change flow. |
 | Card changes in Stripe but the widget loses card details | Use the fixed gateway that reads the effective customer default when there is no subscription override. |
-| Manual payment says Completed but the membership is still On Hold (upgrade) or Cancelled (reactivation) | In the administrator payment editor, set the payment to Completed and turn on **Activate Membership?** when confirming the offline payment. |
+| Manual payment is still Pending but the membership is On Hold (upgrade) or Cancelled (reactivation) | On a release that includes plugin PR #2133, set the payment to Completed and turn on **Activate Membership?** before you save. |
+| Manual payment is already Completed, or you run v2.19.0 or earlier, and the membership is still On Hold or Cancelled | The payment editor does not offer **Activate Membership?** in this case. Open the membership under **Memberships** in the network admin and set **Status** to Active. For a reactivation, also set **Expires at** in the Important Timestamps box to the end of the period the customer paid for, clear **Cancelled at**, and set **Gateway** to `manual` so the account page shows how it was paid. If **Expires at** is left more than three days (the default grace period) in the past, the daily expiry check marks the membership Expired again. |
 | CSS/layout differs from these screenshots | Confirm the example plugin is active, the Account workspace template is selected and cached CSS is cleared. Inspect inherited theme styles. |
 | A previous customer's information appears | Stop using the cached page, purge it and repair the cache/ownership issue before reopening access. Do not hide the symptom with CSS. |
 
