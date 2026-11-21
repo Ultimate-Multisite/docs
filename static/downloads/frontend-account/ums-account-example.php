@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Ultimate Multisite Account Page Example
  * Description: An optional presentation layer for native Ultimate Multisite shortcodes.
- * Version: 1.0.0
+ * Version: 1.0.1
  * License: GPL-2.0-or-later
  * Text Domain: ums-account-example
  */
@@ -29,6 +29,15 @@ add_action('template_redirect', function () {
 
 add_action('wp_enqueue_scripts', function () {
 	if (ums_account_example_is_page()) {
-		wp_enqueue_style('ums-account-example', plugins_url('portal.css', __FILE__), [], '1.0.0');
+		wp_enqueue_style('ums-account-example', plugins_url('portal.css', __FILE__), [], '1.0.1');
 	}
 });
+
+add_filter('the_content', function ($content) {
+	if (!ums_account_example_is_page()) {
+		return $content;
+	}
+
+	// After blocks/shortcodes render, omit only our own completely empty cards.
+	return preg_replace('/<div\b[^>]*\sclass="[^"]*\bums-card\b[^"]*"[^>]*>\s*<\/div>/', '', $content);
+}, 20);

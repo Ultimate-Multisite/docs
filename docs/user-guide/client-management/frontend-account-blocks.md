@@ -16,10 +16,11 @@ The page content remains editable block by block: change headings, move account
 widgets, adjust their settings, or replace the surrounding layout with your own.
 
 :::important Release compatibility
-The screenshots and verification use the native-block repairs proposed in
-[plugin PR #2086](https://github.com/Ultimate-Multisite/ultimate-multisite/pull/2086):
+The screenshots and verification use the native-block repairs from
+[plugin PR #2133](https://github.com/Ultimate-Multisite/ultimate-multisite/pull/2133),
+merged to `main` after v2.19.0 and shipping in the next release:
 styled iframe previews, correctly typed settings, and early detection of settings
-inside Groups/Columns. Use the release containing these fixes on production.
+inside Groups/Columns. Use a release that includes them on production.
 The block editor shows sample preview data, not the account of the administrator
 editing the page. Test the published page as a customer before launch.
 :::
