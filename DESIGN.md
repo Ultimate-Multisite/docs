@@ -31,6 +31,10 @@ page markup and scoped CSS together in the downloadable package.
 - Guests see sign-in/recovery guidance, not empty private widgets. Exclude all
   account/checkout routes from upstream caching as well as sending no-cache
   headers. Presentation gating never replaces model ownership checks.
+- Guest sign-in and recovery preserve the validated local request path and query,
+  including selected-site and membership context; do not accept external returns.
+- Remove only completely empty example-owned card wrappers after native content
+  renders. Never hide populated cards based on internal widget class names.
 
 Screenshot assets show synthetic data and actual rendered product states,
 not reconstructed UI. Use viewport captures (at most 1568px on the longest
