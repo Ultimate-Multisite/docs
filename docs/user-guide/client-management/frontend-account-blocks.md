@@ -18,9 +18,8 @@ widgets, adjust their settings, or replace the surrounding layout with your own.
 :::important Release compatibility
 The screenshots and verification use the native-block repairs from
 [plugin PR #2133](https://github.com/Ultimate-Multisite/ultimate-multisite/pull/2133),
-merged to `main` after v2.19.0 and shipping in the next release:
-styled iframe previews, correctly typed settings, and early detection of settings
-inside Groups/Columns. Use a release that includes them on production.
+released in v2.20.0: styled iframe previews, correctly typed settings, and early
+detection of settings inside Groups/Columns. Use v2.20.0 or later on production.
 The block editor shows sample preview data, not the account of the administrator
 editing the page. Test the published page as a customer before launch.
 
@@ -28,9 +27,9 @@ editing the page. Test the published page as a customer before launch.
 block calls a gateway method that does not exist. The editor preview looks normal,
 because its sample membership has no gateway, but the published page breaks with
 `Call to undefined method WP_Ultimo\Gateways\Free_Gateway::get_title()` for any
-customer whose membership has a payment gateway, including Free. Plugin PR #2133
-fixes it. Until you run a release that includes it, leave the Payment Methods block
-off the page.
+customer whose membership has a payment gateway, including Free. It is fixed in
+v2.20.0. On v2.19.0 or earlier, update, or leave the Payment Methods block off the
+page until you do.
 :::
 
 ## 1. Insert the native account blocks
