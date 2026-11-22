@@ -165,6 +165,8 @@ After selection, Current Site shows the site's actual URL and native Visit Site,
 
 ![Readable site usage limits in the mobile single-column layout](/img/frontend-account/14-mobile-limits.png)
 
+The selected site is part of the page's URL (`/account/site/<hash>` with pretty permalinks, `?site=<hash>` without them), so it applies to that page only and is not remembered on other pages. If you spread the account area over several pages, for example one page per tab in a frontend dashboard, put `[wu_my_sites]` or `[wu_account_summary]` on every page that has site-specific widgets, or keep those widgets together on one page. Limits, Current Site, Domain Mapping and Site Maintenance show nothing until a site is selected, and Site Actions then shows only the account-level actions.
+
 An empty site list is a data/context issue, not something to fill with static cards: check the customer's site ownership, membership assignment and provisioning state. A signed-in WordPress user without an Ultimate Multisite customer/membership will not automatically receive account data.
 
 ### Change the membership plan
@@ -251,10 +253,10 @@ The example canvas does not render account widgets for guests. Instead, it shows
 | Symptom | Check |
 | --- | --- |
 | A shortcode displays literally on a subsite | Move the frontend account pages to the main site; check that it is a Shortcode block and the plugin is active. |
-| Summary or limits are empty | Select an owned site using My Sites → Manage. Check the customer/site/membership relationship, including migrated records. |
+| Summary or limits are empty | Select an owned site using My Sites → Manage. If the same widgets work on another page, the selected site applies to one page only: see [Choose and manage a site](#choose-and-manage-a-site). Check the customer/site/membership relationship, including migrated records. |
 | Most widgets are empty for a signed-in user | Check that the WordPress user has a corresponding Ultimate Multisite customer and usable membership. |
 | Manage seems to do nothing | Keep Current Site or Account Summary on the same page. Check the selected-site URL and focus/fragment behavior; use a release with the frontend-account fixes. |
-| Change opens admin or bounces to a dashboard | Select a published main-site Default Membership Update Page containing a valid checkout shortcode; inspect redirect/custom-login plugins too. |
+| Change opens admin or bounces to a dashboard | Select a published main-site Default Membership Update Page containing a valid checkout shortcode. Without it, Change falls back to the customer site's wp-admin checkout, and frontend-admin plugins such as WP Frontend Admin redirect customer wp-admin URLs to their own dashboard. Inspect redirect/custom-login plugins too. |
 | Checkout asks for a new site during resubscription | Preserve the native membership-context link and use the release containing the corrected resubscription flow. |
 | No Change link under Payment Method | Check gateway support, Stripe Billing Portal setting, credentials and membership gateway references. Manual/Free do not have an online card-change flow. |
 | Card changes in Stripe but the widget loses card details | Use the fixed gateway that reads the effective customer default when there is no subscription override. |
